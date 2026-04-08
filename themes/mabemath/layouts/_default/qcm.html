@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $sntData := .Site.Params.snt }}
+{{ $lc := "" }}
+{{ if $levelData }}{{ $lc = $levelData.color }}{{ else if $sntData }}{{ $lc = $sntData.color }}{{ else }}{{ $lc = "#758467" }}{{ end }}
+
+{{ $levelURL := .Parent.RelPermalink }}
+{{ $levelLabel := $section | upper }}
+<a class="back-link" href="{{ $levelURL }}">&#8592; {{ $levelLabel }}</a>
+
+<div class="qcm-page">
+  <h1 style="color: {{ $lc }};">{{ .Title }}</h1>
+  <div class="qcm-container">
+    {{ .Content }}
+  </div>
+  <a class="back-link" style="margin-top: 1.5rem;" href="{{ $levelURL }}">&#8592; Retour en {{ $levelLabel }}</a>
+</div>
+{{ end }}
