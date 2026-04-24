@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM — Variables et affectation — MaBémath</title>
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <nav>
+  <div class="nav-inner">
+    <a href="http://localhost:1313/mabemat/" class="logo-mabe">
+      <span class="logo-m">M</span><span class="logo-rest">aBémat</span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      
+      <li><a href="/mabemat/6e/">6e</a></li>
+      
+      <li><a href="/mabemat/3e/">3e</a></li>
+      
+      <li><a href="/mabemat/2nde/">2nde</a></li>
+      
+      <li><a href="/mabemat/1re/">1re</a></li>
+      
+      <li><a href="/mabemat/snt/">Python</a></li>
+      
+      <li><a href="/mabemat/liens/">Liens</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container">
+    
+
+
+
+
+
+
+  
+  
+
+
+
+<a class="back-link" href="/mabemat/snt/">&#8592; Python</a>
+
+<div class="qcm-page">
+  <h1 style="color: #8A9CC1;">QCM — Variables et affectation</h1>
+  <div class="qcm-container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>message <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020">print</span>(message)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>message</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Bonjour</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>&quot;Bonjour&quot;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th><code>message</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td><code>&quot;Bonjour&quot;</code></td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td><code>&quot;Bonjour&quot;</code></td>
+          <td><strong><code>Bonjour</code></strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>print()</code> affiche la <strong>valeur</strong> de la variable, sans les guillemets. <br>
+Écrire <code>print(message)</code> n&rsquo;affiche pas le mot <code>message</code>, mais ce que contient la variable.</p>
+<p><strong>Réponse : <code>Bonjour</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    Quel est le type de la variable <code>n</code> après <code>n = 42</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>int</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>float</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>str</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>bool</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Valeur</th>
+          <th>Type</th>
+          <th>Explication</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>42</code></td>
+          <td><code>int</code></td>
+          <td>Nombre entier, sans virgule</td>
+      </tr>
+      <tr>
+          <td><code>42.0</code></td>
+          <td><code>float</code></td>
+          <td>Nombre décimal (point décimal présent)</td>
+      </tr>
+      <tr>
+          <td><code>&quot;42&quot;</code></td>
+          <td><code>str</code></td>
+          <td>Texte (entre guillemets)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Un nombre entier sans guillemets et sans point décimal est toujours de type <code>int</code>.</p>
+<p><strong>Réponse : <code>int</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    Quel est le type de la variable <code>t</code> après <code>t = &quot;17:30&quot;</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>int</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>float</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>bool</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>str</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Exemples</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>int</code></td>
+          <td>Nombre entier</td>
+          <td><code>42</code>, <code>-5</code></td>
+      </tr>
+      <tr>
+          <td><code>float</code></td>
+          <td>Nombre décimal</td>
+          <td><code>3.14</code>, <code>17.5</code></td>
+      </tr>
+      <tr>
+          <td><code>bool</code></td>
+          <td>Vrai ou faux</td>
+          <td><code>True</code>, <code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>str</code></td>
+          <td>Texte (entre guillemets)</td>
+          <td><code>&quot;bonjour&quot;</code>, <code>&quot;17:30&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Tout ce qui est entre guillemets <code>&quot; &quot;</code> est un <code>str</code>, même si ça ressemble à un nombre ou une heure.</p>
+<p><strong>Réponse : <code>str</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Quelle est la valeur de <code>z</code> après ce code ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#40a070">6</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>y <span style="color:#666">=</span> <span style="color:#40a070">4</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>z <span style="color:#666">=</span> x <span style="color:#666">*</span> y
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>24</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>x</code></th>
+          <th style="text-align: right"><code>y</code></th>
+          <th style="text-align: right"><code>z</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">6</td>
+          <td style="text-align: right">—</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">6</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right">6</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">6×4 = <strong>24</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>z = x * y</code> signifie : <code>z</code> prend la valeur de <code>x</code> multiplié par <code>y</code>, soit 6 × 4 = <strong>24</strong>.</p>
+<p><strong>Réponse : <code>24</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Quelle est la valeur finale de <code>score</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>score <span style="color:#666">=</span> <span style="color:#40a070">100</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>score <span style="color:#666">=</span> score <span style="color:#666">-</span> <span style="color:#40a070">30</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>score <span style="color:#666">=</span> score <span style="color:#666">+</span> <span style="color:#40a070">10</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>100</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>80</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>70</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>130</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>score</code></th>
+          <th>Opération</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">100</td>
+          <td>On affecte 100 à <code>score</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right"><strong>70</strong></td>
+          <td><code>score = 100 − 30</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right"><strong>80</strong></td>
+          <td><code>score = 70 + 10</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Réponse : <code>80</code></strong></p>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>b <span style="color:#666">=</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>c <span style="color:#666">=</span> a <span style="color:#666">**</span> b
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(c)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>25</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>7</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>52</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th style="text-align: right"><code>c</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">5</td>
+          <td style="text-align: right">—</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">5</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right">5</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">5² = <strong>25</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>L&rsquo;opérateur <code>**</code> signifie <strong>puissance</strong>. Donc <code>a ** b</code> = 5² = 5 × 5 = <strong>25</strong>.</p>
+<p><strong>Réponse : <code>25</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Quelle est la valeur de <code>resultat</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>b <span style="color:#666">=</span> <span style="color:#40a070">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>resultat <span style="color:#666">=</span> a <span style="color:#666">//</span> b
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3.33</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>30</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th style="text-align: right"><code>resultat</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">10</td>
+          <td style="text-align: right">—</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">10</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right">10</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">10//3 = <strong>3</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>L&rsquo;opérateur <code>//</code> est la <strong>division entière</strong> (sans la partie décimale). 10 ÷ 3 = 3,33… donc <code>10 // 3 = 3</code>.</p>
+<p><strong>Réponse : <code>3</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>nom <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Marie&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>ville <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Lyon&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(nom <span style="color:#666">+</span> <span style="color:#4070a0">&#34; habite à &#34;</span> <span style="color:#666">+</span> ville)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>nomville</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Marie ville Lyon</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Marie habite à Lyon</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th><code>nom</code></th>
+          <th><code>ville</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td><code>&quot;Marie&quot;</code></td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td><code>&quot;Marie&quot;</code></td>
+          <td><code>&quot;Lyon&quot;</code></td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td><code>&quot;Marie&quot;</code></td>
+          <td><code>&quot;Lyon&quot;</code></td>
+          <td><code>&quot;Marie&quot;</code> + <code>&quot; habite à &quot;</code> + <code>&quot;Lyon&quot;</code> = <strong><code>&quot;Marie habite à Lyon&quot;</code></strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>La <strong>concaténation</strong> avec <code>+</code> assemble les chaînes bout à bout.</p>
+<p><strong>Réponse : <code>Marie habite à Lyon</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prenom <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Ali&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020">print</span>(<span style="color:#40a070">3</span> <span style="color:#666">*</span> prenom)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3Ali</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>AliAliAli</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Ali3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th><code>prenom</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td><code>&quot;Ali&quot;</code></td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td><code>&quot;Ali&quot;</code></td>
+          <td><code>3 * &quot;Ali&quot;</code> = <strong><code>&quot;AliAliAli&quot;</code></strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>En Python, <code>3 * &quot;Ali&quot;</code> répète la chaîne 3 fois : <code>&quot;Ali&quot;</code> + <code>&quot;Ali&quot;</code> + <code>&quot;Ali&quot;</code> = <strong><code>&quot;AliAliAli&quot;</code></strong>.</p>
+<p><strong>Réponse : <code>AliAliAli</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    Lequel de ces noms de variable est <strong>valide</strong> en Python ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>nb_points</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1er_score</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>mon score</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>score:total</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Nom</th>
+          <th style="text-align: center">✓/✗</th>
+          <th>Raison</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>nb_points</code></td>
+          <td style="text-align: center">✓</td>
+          <td>Lettres et tiret bas uniquement</td>
+      </tr>
+      <tr>
+          <td><code>1er_score</code></td>
+          <td style="text-align: center">✗</td>
+          <td>Commence par un chiffre</td>
+      </tr>
+      <tr>
+          <td><code>mon score</code></td>
+          <td style="text-align: center">✗</td>
+          <td>Contient un espace</td>
+      </tr>
+      <tr>
+          <td><code>score:total</code></td>
+          <td style="text-align: center">✗</td>
+          <td>Le caractère <code>:</code> est interdit</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Réponse : <code>nb_points</code></strong></p>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    Lequel de ces noms de variable est <strong>valide</strong> en Python ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>_age</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>age!</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2age</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>age maths</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Nom</th>
+          <th style="text-align: center">✓/✗</th>
+          <th>Raison</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>_age</code></td>
+          <td style="text-align: center">✓</td>
+          <td>Le tiret bas <code>_</code> est autorisé en début de nom</td>
+      </tr>
+      <tr>
+          <td><code>age!</code></td>
+          <td style="text-align: center">✗</td>
+          <td><code>!</code> est un caractère spécial interdit</td>
+      </tr>
+      <tr>
+          <td><code>2age</code></td>
+          <td style="text-align: center">✗</td>
+          <td>Commence par un chiffre</td>
+      </tr>
+      <tr>
+          <td><code>age maths</code></td>
+          <td style="text-align: center">✗</td>
+          <td>Contient un espace</td>
+      </tr>
+  </tbody>
+</table>
+<p>Un nom de variable peut commencer par une <strong>lettre</strong> (a–z, A–Z) <strong>ou un tiret bas</strong> (<code>_</code>).</p>
+<p><strong>Réponse : <code>_age</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que vaut <code>n</code> à la fin de ce code ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>111</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>n</code></th>
+          <th>Opération</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right"><strong>1</strong></td>
+          <td>On affecte 1 à <code>n</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right"><strong>2</strong></td>
+          <td><code>n = 1 + 1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right"><strong>3</strong></td>
+          <td><code>n = 2 + 1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: right"><strong>4</strong></td>
+          <td><code>n = 3 + 1</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Chaque ligne <code>n = n + 1</code> <strong>incrémente</strong> <code>n</code> de 1. On part de 1 et on ajoute 1 trois fois → <strong>4</strong>.</p>
+<p><strong>Réponse : <code>4</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>b <span style="color:#666">=</span> <span style="color:#40a070">4</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(a, b)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>34</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>a b</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3 4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3+4</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">4</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right">4</td>
+          <td><strong><code>3 4</code></strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Quand <code>print()</code> reçoit <strong>plusieurs valeurs séparées par des virgules</strong>, il les affiche séparées par un <strong>espace</strong>. C&rsquo;est différent de <code>print(a + b)</code> qui afficherait <code>7</code>, ou de <code>print(str(a) + str(b))</code> qui afficherait <code>34</code>.</p>
+<p><strong>Réponse : <code>3 4</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Quel est le <strong>type</strong> de la variable <code>x</code> après ce code ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#40a070">7</span> <span style="color:#666">/</span> <span style="color:#40a070">2</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>int</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>float</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>str</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>bool</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Opération</th>
+          <th>Résultat</th>
+          <th>Type</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>7 / 2</code></td>
+          <td><code>3.5</code></td>
+          <td><code>float</code></td>
+      </tr>
+      <tr>
+          <td><code>7 // 2</code></td>
+          <td><code>3</code></td>
+          <td><code>int</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>En Python, <code>/</code> est toujours une <strong>division décimale</strong> : le résultat est <strong>toujours un <code>float</code></strong>, même quand le résultat est entier (<code>4 / 2</code> donne <code>2.0</code>, pas <code>2</code>).</p>
+<p><strong>Réponse : <code>float</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Quelle est la valeur de <code>r</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">17</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>r <span style="color:#666">=</span> a <span style="color:#666">%</span> <span style="color:#40a070">5</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>r</code></th>
+          <th>Calcul</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">17</td>
+          <td style="text-align: right">—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">17</td>
+          <td style="text-align: right"><strong>2</strong></td>
+          <td>17 = 3 × 5 + <strong>2</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>L&rsquo;opérateur <code>%</code> s&rsquo;appelle le <strong>modulo</strong> : il donne le <strong>reste</strong> de la division entière.
+17 ÷ 5 = 3 avec un reste de <strong>2</strong> (car 3 × 5 = 15, et 17 − 15 = 2).</p>
+<p><strong>Réponse : <code>2</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quel est le type de la variable <code>x</code> après <code>x = 6.0</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>int</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>float</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>str</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>nombre</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Valeur</th>
+          <th>Type</th>
+          <th>Pourquoi</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>6</code></td>
+          <td><code>int</code></td>
+          <td>Pas de virgule → entier</td>
+      </tr>
+      <tr>
+          <td><code>6.0</code></td>
+          <td><code>float</code></td>
+          <td>Le <code>.0</code> suffit à en faire un décimal</td>
+      </tr>
+      <tr>
+          <td><code>6.5</code></td>
+          <td><code>float</code></td>
+          <td>Décimal classique</td>
+      </tr>
+  </tbody>
+</table>
+<p>Même si <code>6.0</code> est mathématiquement un entier, Python le considère comme un <code>float</code> à cause du point décimal. <code>type(6.0)</code> retourne <code>&lt;class 'float'&gt;</code>.</p>
+<p><strong>Réponse : <code>float</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Que vaut <code>b</code> à la fin de ce code ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>b <span style="color:#666">=</span> a
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">10</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>15</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th>Ce qui se passe</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right"><strong>5</strong></td>
+          <td style="text-align: right">—</td>
+          <td><code>a</code> vaut 5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">5</td>
+          <td style="text-align: right"><strong>5</strong></td>
+          <td><code>b</code> reçoit une <strong>copie</strong> de la valeur de <code>a</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right"><strong>10</strong></td>
+          <td style="text-align: right">5</td>
+          <td><code>a</code> change, mais <code>b</code> <strong>ne change pas</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Quand on écrit <code>b = a</code>, Python copie la <strong>valeur</strong> de <code>a</code> dans <code>b</code>. Les deux variables sont ensuite <strong>indépendantes</strong> : modifier <code>a</code> n&rsquo;affecte pas <code>b</code>.</p>
+<p><strong>Réponse : <code>5</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#4070a0">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>y <span style="color:#666">=</span> <span style="color:#4070a0">&#34;4&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>z <span style="color:#666">=</span> x <span style="color:#666">+</span> y
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(z)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>7</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>34</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3 + 4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th><code>x</code></th>
+          <th><code>y</code></th>
+          <th><code>z</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td><code>&quot;3&quot;</code></td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td><code>&quot;3&quot;</code></td>
+          <td><code>&quot;4&quot;</code></td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td><code>&quot;3&quot;</code></td>
+          <td><code>&quot;4&quot;</code></td>
+          <td><code>&quot;3&quot;</code> + <code>&quot;4&quot;</code> = <strong><code>&quot;34&quot;</code></strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>&quot;3&quot;</code> et <code>&quot;4&quot;</code> sont des <code>str</code> (entre guillemets), pas des <code>int</code>. Le <code>+</code> fait donc une <strong>concaténation</strong> (mise bout à bout), pas une addition. Pour additionner, il faudrait écrire <code>x = 3</code> et <code>y = 4</code> (sans guillemets).</p>
+<p><strong>Réponse : <code>34</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Que vaut <code>b</code> à la fin de ce code ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>b <span style="color:#666">=</span> <span style="color:#40a070">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>a <span style="color:#666">=</span> b
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>b <span style="color:#666">=</span> a
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th>Ce qui se passe</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right"><strong>10</strong></td>
+          <td style="text-align: right">—</td>
+          <td><code>a</code> vaut 10</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">10</td>
+          <td style="text-align: right"><strong>3</strong></td>
+          <td><code>b</code> vaut 3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right"><strong>3</strong></td>
+          <td style="text-align: right">3</td>
+          <td><code>a</code> prend la valeur de <code>b</code> → <code>a = 3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: right">3</td>
+          <td style="text-align: right"><strong>3</strong></td>
+          <td><code>b</code> prend la valeur de <code>a</code>… qui vaut déjà 3 !</td>
+      </tr>
+  </tbody>
+</table>
+<p>On pourrait croire que c&rsquo;est un échange entre <code>a</code> et <code>b</code>, mais non : à la ligne 3, <code>a</code> est déjà écrasé à 3. Donc ligne 4, <code>b = a = 3</code>. <br>
+Pour échanger correctement deux variables, il faut une variable temporaire.</p>
+<p><strong>Réponse : <code>3</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>age <span style="color:#666">=</span> <span style="color:#40a070">17</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;J&#39;ai &#34;</span> <span style="color:#666">+</span> age <span style="color:#666">+</span> <span style="color:#4070a0">&#34; ans&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>J'ai 17 ans</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>J'ai age ans</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>J'ai  ans</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Ce programme provoque une <strong>TypeError</strong> : on ne peut pas concaténer directement un <code>str</code> et un <code>int</code> avec <code>+</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Variable</th>
+          <th>Type</th>
+          <th>Valeur</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&quot;J'ai &quot;</code></td>
+          <td><code>str</code></td>
+          <td>texte</td>
+      </tr>
+      <tr>
+          <td><code>age</code></td>
+          <td><code>int</code></td>
+          <td><code>17</code></td>
+      </tr>
+      <tr>
+          <td><code>&quot; ans&quot;</code></td>
+          <td><code>str</code></td>
+          <td>texte</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pour que ça fonctionne, il faut convertir <code>age</code> en texte :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;J&#39;ai &#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(age) <span style="color:#666">+</span> <span style="color:#4070a0">&#34; ans&#34;</span>)
+</span></span></code></pre></div><p>ou utiliser une f-string :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">f</span><span style="color:#4070a0">&#34;J&#39;ai </span><span style="color:#70a0d0">{</span>age<span style="color:#70a0d0">}</span><span style="color:#4070a0"> ans&#34;</span>)
+</span></span></code></pre></div><p><strong>Réponse : Erreur</strong></p>
+
+  </div>
+  
+</div>
+
+
+  </div>
+  <a class="back-link" style="margin-top: 1.5rem;" href="/mabemat/snt/">&#8592; Retour en Python</a>
+</div>
+
+  </div>
+  
+    <footer>
+  <p>MaBémat · Mme Bertail · Collège &amp; Lycée</p>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script>
+    
+    const logoColors = {
+      '1re': { m: '#758467', rest: '#B85C5C' },
+      '2nde': { m: '#4A5D7A', rest: '#8A9CC1' },
+      '3e': { m: '#C5607A', rest: '#8B3C52' },
+      '6e': { m: '#D36740', rest: '#C5607A' },
+      'snt': { m: '#8A9CC1', rest: '#4A5D7A' },
+      'home': { m: '#D36740', rest: '#758467' }
+    };
+    const path = window.location.pathname;
+    const match = path.match(/\/(6e|3e|2nde|1re|snt)\//);
+    const level = match ? match[1] : 'home';
+    const c = logoColors[level] || logoColors.home;
+    const lm = document.querySelector('.logo-m');
+    const lr = document.querySelector('.logo-rest');
+    if (lm) lm.style.color = c.m;
+    if (lr) lr.style.color = c.rest;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

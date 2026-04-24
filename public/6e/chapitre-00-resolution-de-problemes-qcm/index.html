@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM — Résolution de problèmes — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+
+  
+    <a href="/mabemat/6e/">6ème</a>
+    <span class="sep">/</span>
+  
+
+  
+    <a href="/mabemat/6e/chapitre-00-resolution-de-problemes/">
+      
+        Résolution de problèmes
+      
+    </a>
+    <span class="sep">/</span>
+  
+
+  <span>QCM — Résolution de problèmes</span>
+</div>
+
+
+<div class="qcm-page">
+  <h1 style="color: #D36740;">QCM — Résolution de problèmes</h1>
+  <div class="qcm-container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Pedro a dépensé <strong>72 €</strong> pour un pantalon à <strong>45 €</strong> et une chemise. Quel type de problème est-ce ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème multiplicatif</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème additif</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème de proportionnalité</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème de géométrie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>C&rsquo;est un <strong>problème additif</strong> : on cherche le complément qui s&rsquo;ajoute à 45 € pour obtenir 72 €.</p>
+<p>Chemise = 72 € − 45 € = <strong>27 €</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    Djema a acheté <strong>6 livres identiques</strong> pour <strong>24 €</strong> au total. Quel type de problème est-ce ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème additif</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème de statistiques</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème multiplicatif</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Un problème de géométrie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>C&rsquo;est un <strong>problème multiplicatif</strong> : le prix total est le prix d&rsquo;un livre multiplié par 5.</p>
+<p>Prix d&rsquo;un livre = 24 € ÷ 5 = <strong>4,00 €</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    Dans un schéma en barres, à quoi sert la représentation par des barres ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À donner une image visuelle des quantités et de leurs relations</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À calculer le résultat directement</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À remplacer tous les calculs</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À dessiner une figure géométrique</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    Un schéma en barres permet de <strong>représenter visuellement</strong> les quantités et leurs relations. La longueur des barres n&rsquo;est pas forcément proportionnelle aux valeurs, mais la situation devient plus claire.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    Une balance de Roberval est en équilibre. On retire <strong>75 g</strong> d&rsquo;un côté. Que faut-il faire pour rétablir l&rsquo;équilibre ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Ajouter 75 g du même côté</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Retirer 175 g de l&rsquo;autre côté</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Ne rien faire</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Retirer 75 g de l&rsquo;autre côté</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Une balance de Roberval fonctionne comme une égalité : pour qu&rsquo;elle reste en équilibre, toute opération faite d&rsquo;un côté doit être <strong>répétée de l&rsquo;autre côté</strong>.</p>
+<p>On retire donc <strong>75 g de l&rsquo;autre côté</strong> aussi.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Voici un motif évolutif : n°1 → 1 carré, n°2 → 4 carrés, n°3 → 9 carrés. Combien le motif n°5 a-t-il de carrés ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>16</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>36</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>20</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>36</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Le motif n°$k$ contient $k^2$ carrés :</p>
+<ul>
+<li>n°1 : $1^2 = 1$, n°2 : $2^2 = 4$, n°3 : $3^2 = 9$</li>
+<li>n°5 : $5^2 =$ <strong>36</strong></li>
+</ul>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    Quelle est la <strong>première</strong> étape d&rsquo;une démarche de résolution ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Lire l&rsquo;énoncé et identifier les données et la question</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Poser les calculs</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rédiger la phrase réponse</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Vérifier le résultat</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>La démarche complète est :</p>
+<ol>
+<li><strong>Lire et comprendre</strong> l&rsquo;énoncé — identifier les données et ce que l&rsquo;on cherche</li>
+<li>Choisir une stratégie et effectuer les calculs</li>
+<li>Rédiger la phrase réponse</li>
+<li>Vérifier la solution</li>
+</ol>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    Comment vérifie-t-on qu&rsquo;une solution est correcte ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>En recommençant le calcul de la même façon</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>En demandant à un camarade</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>En substituant la réponse dans les conditions de l&rsquo;énoncé</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>En arrondissant le résultat</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    Pour vérifier, on <strong>substitue la réponse trouvée</strong> dans l&rsquo;énoncé et on contrôle que toutes les conditions sont satisfaites.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    Ali a <strong>4 fois plus</strong> de billes que Bea. Bea a <strong>12 billes</strong>. Combien Ali en a-t-il ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>11</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>5</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>3</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>24</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>« 4 fois plus » correspond à une <strong>multiplication</strong> :</p>
+<p>$3 	imes 8 =$ <strong>412 billes</strong></p>
+
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

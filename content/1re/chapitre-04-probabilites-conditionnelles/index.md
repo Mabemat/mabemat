@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 4 — Probabilités conditionnelles"
+title: "Probabilités conditionnelles"
 level: "1re"
 chapter_number: 4
 weight: 4

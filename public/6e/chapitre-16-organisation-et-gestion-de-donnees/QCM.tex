@@ -1,0 +1,672 @@
+% @see : https://coopmaths.fr/alea/?uuid=1957a&id=auto6P1A-flash1&alea=e6vK&uuid=adac4&id=auto6P1A-1&n=1&d=10&s=3&s2=5&cd=1&alea=T0on&uuid=adac4&id=auto6P1A-1&n=1&d=10&s=3&s2=1&cd=1&alea=YXJV&uuid=adac4&id=auto6P1A-1&n=1&d=10&s=3&s2=3&cd=1&alea=1fVY&uuid=99d95&id=CM2D1A-1&n=4&d=10&s=false&s2=3&s3=2&s4=false&cd=1&alea=kE0S&pdfParam=eyJ0aXRsZSI6IiIsInJlZmVyZW5jZSI6IiIsInN1YnRpdGxlIjoiIiwic3R5bGUiOiJDb29wbWF0aHMiLCJmb250T3B0aW9uIjoiU3RhbmRhcmRGb250IiwidGFpbGxlRm9udE9wdGlvbiI6MTIsImR5c1RhaWxsZUZvbnRPcHRpb24iOjE0LCJjb3JyZWN0aW9uT3B0aW9uIjoiQXZlY0NvcnJlY3Rpb24iLCJxcmNvZGVPcHRpb24iOiJTYW5zUXJjb2RlIiwidHlwZUZpY2hlIjoiRmljaGUiLCJkdXJhdGlvbkNhbk9wdGlvbiI6IjkgbWluIiwidGl0bGVPcHRpb24iOiJTYW5zVGl0cmUiLCJuYlZlcnNpb25zIjoxLCJleG9zIjp7fX0\%3D&v=eleve
+\documentclass[a4paper,11pt,fleqn]{article}
+
+%%% COULEURS %%%
+\usepackage[table,svgnames]{xcolor}
+\definecolor{nombres}{cmyk}{0,.8,.95,0}
+\definecolor{gestion}{cmyk}{.75,1,.11,.12}
+\definecolor{gestionbis}{cmyk}{.75,1,.11,.12}
+\definecolor{grandeurs}{cmyk}{.02,.44,1,0}
+\definecolor{geo}{cmyk}{.62,.1,0,0}
+\definecolor{algo}{cmyk}{.69,.02,.36,0}
+\definecolor{correction}{cmyk}{.63,.23,.93,.06}
+\arrayrulecolor{couleur_theme} % Couleur des filets des tableaux
+
+\usepackage[most]{tcolorbox} % Supprimé à cause de conflits avec ProfCollege
+\tcbuselibrary{documentation}
+
+%%%%%%%% Modification paramétrage pour footnotes
+% Le paquet semble déjà appelé en amont, curieux qu'il n'y ait pas eu de clash
+% avec l'appel ci-dessous mais seulement quand j'ai essayé de l'inclure avec l'option lualatex
+
+% \usepackage{hyperref}
+% Parametrages
+\hypersetup{
+    colorlinks=true,% On active la couleur pour les liens. Couleur par défaut rouge
+    linkcolor=black,% On définit la couleur pour les liens internes
+    % filecolor=magenta,% On définit la couleur pour les liens vers les fichiers locaux      
+    urlcolor=black,% On définit la couleur pour les liens vers des sites web
+    % pdftitle={Puissance Quatre},% On définit un titre pour le document pdf
+    % pdfpagemode=FullScreen,% On fixe l'affichage par défaut à plein écran
+    }
+% Pour avoir les numérotations arabic y compris dans les environnements tcolorbox
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%%%%%%%%
+
+\usepackage{multicol} 
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tablvar}
+
+\setlength{\parindent}{0mm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}
+\setlength{\fboxsep}{3mm}
+
+\setlength{\headheight}{14.5pt}
+
+\setlength{\premulticols}{0pt}
+
+\newcounter{ExoMA}
+
+\newlength{\parindentMA}%
+\setlength{\parindentMA}{\parindent}
+\addtolength{\parindentMA}{30pt}
+
+\usepackage{simplekv}
+
+\setKVdefault[Theme]{Coopmath,Classiques=false,CANs=false}
+\defKV[Theme]{Classique=\setKV[Theme]{Coopmath=false}\setKV[Theme]{Classiques}}
+\defKV[Theme]{CAN=\setKV[Theme]{Coopmath=false}\setKV[Theme]{CANs}}
+
+\usepackage{fancyhdr}
+\fancyhead[C]{}
+\fancyfoot{}
+
+\def\bla{}
+
+\NewDocumentCommand\Theme{o m m m m}{%
+  \useKVdefault[Theme]%
+  \setKV[Theme]{#1}%
+  \ifboolKV[Theme]{CANs}{%
+    \usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}%
+    \fancypagestyle{premierePage}{%
+      \fancyhead[C]{\textsc{\ifx\bla#2\bla Course aux nombres\else#2\fi}}%
+      \fancyfoot[R]{\scriptsize Coopmaths.fr -- CC-BY-SA}%
+      \setlength{\headheight}{14.5pt}%
+      \NewDocumentCommand\dureeCan{}{\ifx\bla#4\bla 9 minutes\else #4\fi}
+      \NewDocumentCommand\titreSujetCan{}{\ifx\bla#3\bla\else\textbf{#3}\fi}
+    }%
+    \pagestyle{premierePage}
+    \colorlet{couleur_theme}{black}%
+    \colorlet{couleur_numerotation}{couleur_theme}%
+    \let\EXO\EXOCan\let\endEXO\endEXOCan%
+  }{%
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \pagestyle{fancy}
+    \ifboolKV[Theme]{Classiques}{%
+      \usepackage[left=0.65cm,right=0.65cm,top=2cm,bottom=1.5cm]{geometry}
+      \let\EXO\EXOlibre\let\endEXO\endEXOlibre%
+      \colorlet{couleur_theme}{black}%
+      \colorlet{couleur_numerotation}{couleur_theme}%
+      \fancyhead[C]{\bfseries #3}
+      \fancyhead[L]{\bfseries #4}
+      \fancyfoot[R]{#5}
+    }{%
+      \usepackage[left=1.5cm,right=1.5cm,top=4cm,bottom=2cm]{geometry}
+      \theme{#2}{#3}{#4}{#5}%
+      \let\EXO\EXOcoop\let\endEXO\endEXOcoop%
+    }%
+  }%
+}%
+
+\NewDocumentEnvironment{EXOCan}{m m +b}{%
+  #3
+}
+
+\NewDocumentEnvironment{EXOcoop}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,
+    coltitle=black,
+    title=\IfNoValueTF{#1}{}{\textmd{#1}},%
+    overlay unbroken and first={%
+      \IfNoValueTF{#2}{}{%
+        \node[%
+        fill=white,
+        anchor=east,
+        xshift=10pt,
+        text=black
+        ]
+        at (frame.north east)
+        {\scriptsize #2};
+      }
+      \node[anchor=west,xshift=-20pt,yshift=-15pt] at (frame.north west) {\stepcounter{ExoMA}\numb{\arabic{ExoMA}}};
+    }
+    ]
+    #3
+  \end{tcolorbox}
+}
+
+\NewDocumentEnvironment{EXOlibre}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,%couleur_theme,
+    coltitle=black,
+    title=\stepcounter{ExoMA}\textbf{Exercice \arabic{ExoMA}},%
+    ]
+    \IfNoValueTF{#1}{}{#1\par}%
+    #3
+  \end{tcolorbox}%
+}
+
+
+%%% MISE EN PAGE %%%
+\usepackage{setspace}
+\usepackage{pgf}%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel,arrows, arrows.meta,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\spaceskip=2\fontdimen2\font plus 3\fontdimen3\font minus3\fontdimen4\font\relax %Pour doubler l'espace entre les mots
+\newcommand\numb[1]{ % Dessin autour du numéro d'exercice
+  \begin{tikzpicture}[overlay,scale=.8]%,yshift=-.3cm
+    \draw[fill=couleur_numerotation,couleur_numerotation](-.4,-0.1)rectangle($(-0.4,.8)+(2em,0)$);
+    \draw (-.4,.8) node[white,anchor=north west,inner sep=0.5pt]{\bfseries EX}; 
+    \draw[line width=.05cm,couleur_numerotation,fill=white] (0,0)--(.5,.5)--(1,0)--(.5,-.5)--cycle;
+    \draw (0.5,0) node[anchor=center,couleur_numerotation]{\large\bfseries#1};
+  \end{tikzpicture}
+}
+
+% echelle pour le dé
+\def\globalscale {0.04}
+% abscisse initiale pour les chevrons
+\def\xini {3}
+
+\newcommand\theme[4]{%
+  \fancyhead[C]{%
+    % Tracé du dé
+    \begin{tikzpicture}[y=0.80pt, x=0.80pt, yscale=-\globalscale, xscale=\globalscale,remember picture, overlay,transform canvas={xshift=-0.5\linewidth,yshift=2.7cm},fill=couleur_theme]%,xshift=17cm,yshift=9.5cm
+      %%%% Arc supérieur gauche%%%%
+      \path[fill](523,1424)..controls(474,1413)and(404,1372)..(362,1333)..controls(322,1295)and(313,1272)..(331,1254)..controls(348,1236)and(369,1245)..(410,1283)..controls(458,1328)and(517,1356)..(575,1362)..controls(635,1368)and(646,1375)..(643,1404)..controls(641,1428)and(641,1428)..(596,1430)..controls(571,1431)and(538,1428)..(523,1424)--cycle;
+      %%%% Dé face supérieur%%%%
+      \path[fill](512,1272)..controls(490,1260)and(195,878)..(195,861)..controls(195,854)and(198,846)..(202,843)..controls(210,838)and(677,772)..(707,772)..controls(720,772)and(737,781)..(753,796)..controls(792,833)and(1057,1179)..(1057,1193)..controls(1057,1200)and(1053,1209)..(1048,1212)..controls(1038,1220)and(590,1283)..(551,1282)..controls(539,1282)and(521,1278)..(512,1272)--cycle;
+      %%%% Dé faces gauche et droite%%%%
+      \path[fill](1061,1167)..controls(1050,1158)and(978,1068)..(900,967)..controls(792,829)and(756,777)..(753,756)--(748,729)--(724,745)..controls(704,759)and(660,767)..(456,794)..controls(322,813)and(207,825)..(200,822)..controls(193,820)and(187,812)..(187,804)..controls(188,797)and(229,688)..(279,563)..controls(349,390)and(376,331)..(391,320)..controls(406,309)and(462,299)..(649,273)..controls(780,254)and(897,240)..(907,241)..controls(918,243)and(927,249)..(928,256)..controls(930,264)and(912,315)..(889,372)..controls(866,429)and(848,476)..(849,477)..controls(851,479)and(872,432)..(897,373)..controls(936,276)and(942,266)..(960,266)..controls(975,266)and(999,292)..(1089,408)..controls(1281,654)and(1290,666)..(1290,691)..controls(1290,720)and(1104,1175)..(1090,1180)..controls(1085,1182)and (1071,1176)..(1061,1167)--cycle;
+      %%%% Arc inférieur bas%%%%
+      \path[fill](1329,861)..controls(1316,848)and(1317,844)..(1339,788)..controls(1364,726)and(1367,654)..(1347,591)..controls(1330,539)and(1338,522)..(1375,526)..controls(1395,528)and(1400,533)..(1412,566)..controls(1432,624)and(1426,760)..(1401,821)..controls(1386,861)and(1380,866)..(1361,868)..controls(1348,870)and(1334,866)..(1329,861)--cycle;
+      %%%% Arc inférieur gauche%%%%
+      \path[fill](196,373)..controls(181,358)and(186,335)..(213,294)..controls(252,237)and(304,190)..(363,161)..controls(435,124)and(472,127)..(472,170)..controls(472,183)and(462,192)..(414,213)..controls(350,243)and(303,283)..(264,343)..controls(239,383)and(216,393)..(196,373)--cycle;
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay, shift={(current page.north west)},yshift=-8.5cm]
+      \fill[fill=couleur_theme] (0,5) rectangle (21,6);
+      \fill[fill=couleur_theme] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=couleur_theme] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=couleur_theme] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;   
+      \node[color=white] at (10.5,5.5) {\LARGE \bfseries{ \MakeUppercase{#4}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=west, fill=white, inner sep = 0pt] at ($(current page.north west)+(0.2,-2.3cm)$) {\footnotesize \bfseries{MathALÉA}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=east, fill=white] at ($(current page.north east)+(-2,-1.5cm)$) {\Huge \textcolor{couleur_theme}{\bfseries{\#}} \bfseries{#2} \textcolor{couleur_theme}{\bfseries \MakeUppercase{#3}}};
+    \end{tikzpicture}
+  }%
+  \fancyfoot[R]{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south east] at ($(current page.south east)+(-2,0.25cm)$) {\scriptsize {\bfseries \href{https://coopmaths.fr/}{Coopmaths.fr} -- \href{http://creativecommons.fr/licences/}{CC-BY-SA}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay,xscale=0.5,yscale=0.5, shift={(current page.south west)},xshift=35.7cm,yshift=-6cm]
+      \fill[fill=couleur_theme] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=couleur_theme] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=couleur_theme] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;  
+    \end{tikzpicture}
+  }
+  \fancyfoot[C]{}
+  \colorlet{couleur_theme}{#1}
+  \colorlet{couleur_numerotation}{couleur_theme}
+  \def\iconeobjectif{icone-objectif-#1}
+  \def\urliconeomethode{icone-methode-#1}
+}%
+
+\newcommand*\tikzfootMA{%
+  \ifboolKV[Theme]{CANs}{
+    \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+      \begin{scope}[x=\textwidth-\oddsidemargin,y=\textheight+5pt]
+        \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt,shift={(-\oddsidemargin,\topmargin)}] (0,0) rectangle (1,-1);
+      \end{scope}
+    \end{tikzpicture} 
+  }{%
+  \ifboolKV[Theme]{Classiques}{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1cm)$) rectangle ($(1,1)+(-5mm,-1.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1.5cm)$) rectangle ($(1,1)+(-5mm,-3.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }%
+  }
+}
+
+\newenvironment{Correction}{%
+  \setcounter{ExoMA}{0}%
+  \cfoot{\tikzfootMA}
+}{}%
+
+\newcommand\version[1]{
+  \fancyhead[R]{
+    \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(-.5,-.5cm)$) {\large \textcolor{couleur_theme}{\bfseries V#1}};
+    \end{tikzpicture}
+  }
+}
+
+\usepackage[french]{babel}
+% loadPackagesFromContent
+\usepackage{tikz}
+\newcommand{\e}{\mathrm{e}}
+\usepackage{amssymb}
+\usepackage{colortbl}
+\usetikzlibrary{patterns,patterns.meta}
+\usetikzlibrary{arrows.meta}
+\usepackage{etoolbox}
+\newbool{dys}
+\setbool{dys}{false}          
+\ifbool{dys}{
+% POLICE DYS
+% ===== VARIABLE =====
+\def\FontChoisie{Fira} % valeurs possibles : Fira, lmodern, tgheros
+\newcommand{\choiceFontsDys}[1]{
+\ifstrequal{#1}{Fira}{%
+  % Fira Sans + Fira Math
+  % Description : Fira Sans est une police moderne, et Fira Math est une version mathématique compatible qui maintient le style sans-serif.
+  % Utilisation : Fonctionne bien avec XeLaTeX et LuaLaTeX.
+  \usepackage{fontspec}
+  \setmainfont{Fira Sans}
+  \setsansfont{Fira Sans}
+  \usepackage{unicode-math}
+  \setmathfont{Fira Math}
+}{}
+\ifstrequal{#1}{lmodern}{%
+  % Latin Modern Sans
+  % Description : Une version sans-serif de la célèbre police Latin Modern, qui est compatible avec mathastext.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX et LuaLaTeX.
+  \usepackage{lmodern}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+\ifstrequal{#1}{tgheros}{%
+  % TeX Gyre Heros + mathastext
+  % Description : TeX Gyre Heros est une alternative à Helvetica, et le package mathastext permet d'utiliser la même police pour les mathématiques.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX, ou LuaLaTeX.
+  \usepackage{tgheros}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+}
+% Fira ou lmodern ou tgheros
+\choiceFontsDys{\FontChoisie}
+
+%\usepackage{unicode-math}
+%\usepackage{fontspec}
+%\setmainfont{TeX Gyre Schola}
+%\setsansfont{TeX Gyre Schola}
+%\setmathfont{TeX Gyre Schola Math}
+%\setmainfont{OpenDyslexic}[Scale=1.0]
+%\setsansfont{OpenDyslexic}[Scale=1.0]
+%\setmathfont{OpenDyslexic}[Scale=1.0,range=up/{Latin,latin,num}]
+\usepackage[fontsize=14]{scrextend}
+\usepackage{setspace}
+\setstretch{1.7}
+% Une valeur d'environ 1.2 à 1.7 est souvent recommandée. Cela permet d'augmenter l'espace entre les lignes tout en offrant un léger espacement entre les mots.
+\setlength{\spaceskip}{1.2em}  
+% Une valeur d'environ 1.2em à 1.5em est couramment conseillée. Cela crée un espace plus ample entre les mots, ce qui peut aider à réduire la fatigue visuelle et à améliorer la fluidité de la lecture.
+}{
+% POLICE STANDARD
+\usepackage[T1]{fontenc} 
+\usepackage[scaled=1]{helvet}
+\usepackage[fontsize=12]{scrextend}
+}
+
+\Theme[Coopmaths]{nombres}{}{}{}
+\begin{document}
+
+% @see : https://coopmaths.fr/alea?uuid=1957a&id=auto6P1A-flash1&n=1&d=10&alea=e6vK&cd=1&cols=1
+\begin{EXO}{}{auto6P1A-flash1}
+
+ Rémi a compté les vêtements dans une armoire. Les effectifs sont représentés sur le diagramme ci-dessous.\\
+    \begin{tikzpicture}[baseline,scale = 0.4]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-5,-1) rectangle (17,6);
+    	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (0,0)--(11,0);
+	\draw[color ={black},line width = 1.2] (0,0)--(0,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (1,0)--(1,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (2,0)--(2,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (3,0)--(3,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (4,0)--(4,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (5,0)--(5,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (6,0)--(6,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (7,0)--(7,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (8,0)--(8,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (9,0)--(9,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (10,0)--(10,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (11,0)--(11,5);
+	\draw[color ={black},line width = 1.2] (1,-0.13)--(1,0.13);
+	\draw[color ={black},line width = 1.2] (2,-0.13)--(2,0.13);
+	\draw[color ={black},line width = 1.2] (3,-0.13)--(3,0.13);
+	\draw[color ={black},line width = 1.2] (4,-0.13)--(4,0.13);
+	\draw[color ={black},line width = 1.2] (5,-0.13)--(5,0.13);
+	\draw[color ={black},line width = 1.2] (6,-0.13)--(6,0.13);
+	\draw[color ={black},line width = 1.2] (7,-0.13)--(7,0.13);
+	\draw[color ={black},line width = 1.2] (8,-0.13)--(8,0.13);
+	\draw[color ={black},line width = 1.2] (9,-0.13)--(9,0.13);
+	\draw[color ={black},line width = 1.2] (10,-0.13)--(10,0.13);
+	\draw[opacity=0.8] (1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$1$};
+	\draw[opacity=0.8] (2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$2$};
+	\draw[opacity=0.8] (3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$3$};
+	\draw[opacity=0.8] (4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$4$};
+	\draw[opacity=0.8] (5,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$5$};
+	\draw[opacity=0.8] (6,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$6$};
+	\draw[opacity=0.8] (7,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$7$};
+	\draw[opacity=0.8] (8,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$8$};
+	\draw[opacity=0.8] (9,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$9$};
+	\draw[opacity=0.8] (10,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$10$};
+	\draw[opacity=0.8] (-2,1.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{chemises}$};
+	\draw[opacity=0.8] (-2,2.6) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{T-shirts}$};
+	\draw[opacity=0.8] (-2,4.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{pulls}$};
+	\draw [color={black}] (13,0.5) node[anchor = east,scale=1, rotate = 0] {vêtements};
+	\draw[color={black},preaction={fill,color = {blue}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0,0.5)--(0,1.5)--(6,1.5)--(6,0.5)--cycle;
+\draw [color={black}] (-0.2,1) node[anchor = west,scale=1, rotate = 0] {};
+	\draw[color={black},preaction={fill,color = {red}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0,2)--(0,3)--(2,3)--(2,2)--cycle;
+\draw [color={black}] (-0.2,2.5) node[anchor = west,scale=1, rotate = 0] {};
+	\draw[color={black},preaction={fill,color = {green}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0,3.5)--(0,4.5)--(10,4.5)--(10,3.5)--cycle;
+\draw [color={black}] (-0.2,4) node[anchor = west,scale=1, rotate = 0] {};
+
+\end{tikzpicture}\\
+ Combien y a-t-il de vêtements en tout ?
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=adac4&id=auto6P1A-1&n=1&d=10&s=3&s2=5&alea=T0on&cd=1&cols=1
+\begin{EXO}{}{auto6P1A-1}
+
+ Dans le parc naturel de Secai, il y a beaucoup d'animaux.\\ Voici un diagramme qui représente les effectifs de quelques espèces.
+
+\medskip
+\begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-9,-5.567727288213004) rectangle (10.5,11.3);
+    	\draw [color={black}] (2,-0.2) node[anchor = west,scale=1, rotate = -66] {Gazelles};
+	\draw[color ={black}] (2,-0.1)--(2,0.1);
+	\draw [color={black}] (4,-0.2) node[anchor = west,scale=1, rotate = -66] {Crocodiles};
+	\draw[color ={black}] (4,-0.1)--(4,0.1);
+	\draw [color={black}] (6,-0.2) node[anchor = west,scale=1, rotate = -66] {Hyènes};
+	\draw[color ={black}] (6,-0.1)--(6,0.1);
+	\draw [color={black}] (8,-0.2) node[anchor = west,scale=1, rotate = -66] {Girafes};
+	\draw[color ={black}] (8,-0.1)--(8,0.1);
+	\draw[color ={black},line width = 1.2] (0,0)--(10,0);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (0,0)--(0,10);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,1)--(10,1);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,2)--(10,2);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,3)--(10,3);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,4)--(10,4);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,5)--(10,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,6)--(10,6);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,7)--(10,7);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,8)--(10,8);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,9)--(10,9);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,10)--(10,10);
+	\draw[color ={black},line width = 1.2] (-0.13,1)--(0.13,1);
+	\draw[color ={black},line width = 1.2] (-0.13,2)--(0.13,2);
+	\draw[color ={black},line width = 1.2] (-0.13,3)--(0.13,3);
+	\draw[color ={black},line width = 1.2] (-0.13,4)--(0.13,4);
+	\draw[color ={black},line width = 1.2] (-0.13,5)--(0.13,5);
+	\draw[color ={black},line width = 1.2] (-0.13,6)--(0.13,6);
+	\draw[color ={black},line width = 1.2] (-0.13,7)--(0.13,7);
+	\draw[color ={black},line width = 1.2] (-0.13,8)--(0.13,8);
+	\draw[color ={black},line width = 1.2] (-0.13,9)--(0.13,9);
+	\draw[opacity=0.8] (-0.75,1.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$10$};
+	\draw[opacity=0.8] (-0.75,2.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$20$};
+	\draw[opacity=0.8] (-0.75,3.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$30$};
+	\draw[opacity=0.8] (-0.75,4.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$40$};
+	\draw[opacity=0.8] (-0.75,5.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$50$};
+	\draw[opacity=0.8] (-0.75,6.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$60$};
+	\draw[opacity=0.8] (-0.75,7.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$70$};
+	\draw[opacity=0.8] (-0.75,8.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$80$};
+	\draw[opacity=0.8] (-0.75,9.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$90$};
+	\draw [color={black}] (0.5,10.5) node[anchor = east,scale=1, rotate = 0] {Nombre d'individus};
+	\draw[color={red},opacity = 0.8,fill opacity = 0.4,preaction={fill,color = {red},opacity = 0.4}] (2,3.3000000000000003) circle (0.2);
+	\draw[color={red},opacity = 0.8,fill opacity = 0.4,preaction={fill,color = {red},opacity = 0.4}] (4,1.4000000000000001) circle (0.2);
+	\draw[color={red},opacity = 0.8,fill opacity = 0.4,preaction={fill,color = {red},opacity = 0.4}] (6,2.7) circle (0.2);
+	\draw[color={red},opacity = 0.8,fill opacity = 0.4,preaction={fill,color = {red},opacity = 0.4}] (8,9.3) circle (0.2);
+	\draw[color={lightgray}] (2,3.3)--(4,1.4)--(6,2.7)--(8,9.3);
+
+\end{tikzpicture}\\
+\textbf {a.}  Quelle est l'espèce la moins nombreuse ? 
+    
+    	$\square\;$ Gazelles\qquad $\square\;$ Crocodiles\qquad $\square\;$ Hyènes\qquad $\square\;$ Girafes\qquad \\
+\\\textbf {b.}  Quelle est l'espèce la plus nombreuse ? 
+    
+    	$\square\;$ Hyènes\qquad $\square\;$ Girafes\qquad $\square\;$ Gazelles\qquad $\square\;$ Crocodiles\qquad \\
+\\\textbf {c.}  L'espèce la plus nombreuse représente ... 
+    
+    	$\square\;$ Plus de la moitié des animaux\qquad $\square\;$ Moins de la moitié des animaux\qquad $\square\;$ La moitié des animaux\qquad \\
+
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=adac4&id=auto6P1A-1&n=1&d=10&s=3&s2=1&alea=YXJV&cd=1&cols=1
+\begin{EXO}{}{auto6P1A-1}
+
+ Dans le parc naturel de Cigel, il y a beaucoup d'animaux.\\ Voici un diagramme qui représente les effectifs de quelques espèces.
+
+\medskip
+\begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-6.599376982139838,-6.57121420234855) rectangle (15,6.6);
+    	\draw[color={black},fill opacity = 1.1] (0,0) circle (6);
+	\draw[color ={black},opacity = 0.8] (0,0.2)--(0,-0.2);\draw[color ={black},opacity = 0.8] (-0.2,0)--(0.2,0);
+	\draw  [color={black},preaction={fill,color = {blue},opacity = 0.7},pattern color = {blue}, pattern = crosshatch dots] (-5.984431021743165,0.43195525925500305) -- (0,0) -- (3.6739403974420594e-16,6) arc (90:175.87155963302752:6) ;
+	\draw[color={black},preaction={fill,color = {blue}, opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (7,0)--(8,0)--(8,1)--(7,1)--cycle;
+	\draw [color={black}] (8.5,0.5) node[anchor = west,scale=1.5, rotate = 0] {Servals};
+	\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (-4.2119605197347205,-4.2731005815679115) -- (0,0) -- (-5.984431021743165,0.43195525925500433) arc (175.87:225.41128440366973:6) ;
+	\draw[color={black},preaction={fill,color = {GreenYellow}, opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (7,1.5)--(8,1.5)--(8,2.5)--(7,2.5)--cycle;
+	\draw [color={black}] (8.5,2) node[anchor = west,scale=1.5, rotate = 0] {Guépards};
+	\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {brown}, pattern = dots] (5.924771266515311,-0.9471459441261234) -- (0,0) -- (-4.21196051973472,-4.273100581567913) arc (-134.59:-9.085412844036696:6) ;
+	\draw[color={black},preaction={fill,color = {brown}, opacity = 0.7},pattern color = {brown}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (7,3)--(8,3)--(8,4)--(7,4)--cycle;
+	\draw [color={black}] (8.5,3.5) node[anchor = west,scale=1.5, rotate = 0] {Zèbres};
+	\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {LightSlateBlue}, pattern = grid] (5.551115123125783e-16,6) -- (0,0) -- (5.92477126651531,-0.9471459441261261) arc (-9.08:90.00256880733946:6) ;
+	\draw[color={black},preaction={fill,color = {LightSlateBlue}, opacity = 0.7},pattern color = {LightSlateBlue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (7,4.5)--(8,4.5)--(8,5.5)--(7,5.5)--cycle;
+	\draw [color={black}] (8.5,5) node[anchor = west,scale=1.5, rotate = 0] {Lycaons};
+
+\end{tikzpicture}\\
+\textbf {a.}  Quelle est l'espèce la moins nombreuse ? 
+    
+    	$\square\;$ Servals\qquad $\square\;$ Lycaons\qquad $\square\;$ Zèbres\qquad $\square\;$ Guépards\qquad \\
+\\\textbf {b.}  Quelle est l'espèce la plus nombreuse ? 
+    
+    	$\square\;$ Guépards\qquad $\square\;$ Lycaons\qquad $\square\;$ Servals\qquad $\square\;$ Zèbres\qquad \\
+\\\textbf {c.}  L'espèce la plus nombreuse représente ... 
+    
+    	$\square\;$ Moins de la moitié des animaux\qquad $\square\;$ Plus de la moitié des animaux\qquad $\square\;$ La moitié des animaux\qquad \\
+
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=adac4&id=auto6P1A-1&n=1&d=10&s=3&s2=3&alea=1fVY&cd=1&cols=1
+\begin{EXO}{}{auto6P1A-1}
+
+ Dans le parc naturel de Barmwich, il y a beaucoup d'animaux.\\ Voici un diagramme qui représente les effectifs de quelques espèces.
+
+\medskip
+\begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-9,-4.197409101749103) rectangle (10.5,6.3);
+    	\draw[color={black},preaction={fill,color = {blue}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (1.7,0)--(1.7,3.8)--(2.3,3.8)--(2.3,0)--cycle;
+\draw [color={black}] (2,-0.2) node[anchor = west,scale=1, rotate = -66] {Lycaons};
+	\draw[color={black},preaction={fill,color = {GreenYellow}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (3.7,0)--(3.7,2.3)--(4.3,2.3)--(4.3,0)--cycle;
+\draw [color={black}] (4,-0.2) node[anchor = west,scale=1, rotate = -66] {Girafes};
+	\draw[color={black},preaction={fill,color = {brown}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (5.7,0)--(5.7,0.9)--(6.3,0.9)--(6.3,0)--cycle;
+\draw [color={black}] (6,-0.2) node[anchor = west,scale=1, rotate = -66] {Servals};
+	\draw[color={black},preaction={fill,color = {LightSlateBlue}, opacity = 0.3},pattern color = {black}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (7.7,0)--(7.7,1.5)--(8.3,1.5)--(8.3,0)--cycle;
+\draw [color={black}] (8,-0.2) node[anchor = west,scale=1, rotate = -66] {Hyènes};
+	\draw[color ={black},line width = 1.2] (0,0)--(10,0);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (0,0)--(0,5);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,1)--(10,1);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,2)--(10,2);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,3)--(10,3);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,4)--(10,4);
+	\draw[color ={black},opacity = 0.4, dashed ] (0,5)--(10,5);
+	\draw[color ={black},line width = 1.2] (-0.13,1)--(0.13,1);
+	\draw[color ={black},line width = 1.2] (-0.13,2)--(0.13,2);
+	\draw[color ={black},line width = 1.2] (-0.13,3)--(0.13,3);
+	\draw[color ={black},line width = 1.2] (-0.13,4)--(0.13,4);
+	\draw[opacity=0.8] (-0.75,1.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$10$};
+	\draw[opacity=0.8] (-0.75,2.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$20$};
+	\draw[opacity=0.8] (-0.75,3.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$30$};
+	\draw[opacity=0.8] (-0.75,4.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$40$};
+	\draw [color={black}] (0.5,5.5) node[anchor = east,scale=1, rotate = 0] {Nombre d'individus};
+
+\end{tikzpicture}\\
+\textbf {a.}  Quelle est l'espèce la moins nombreuse ? 
+    
+    	$\square\;$ Girafes\qquad $\square\;$ Hyènes\qquad $\square\;$ Servals\qquad $\square\;$ Lycaons\qquad \\
+\\\textbf {b.}  Quelle est l'espèce la plus nombreuse ? 
+    
+    	$\square\;$ Lycaons\qquad $\square\;$ Hyènes\qquad $\square\;$ Servals\qquad $\square\;$ Girafes\qquad \\
+\\\textbf {c.}  L'espèce la plus nombreuse représente ... 
+    
+    	$\square\;$ Moins de la moitié des animaux\qquad $\square\;$ La moitié des animaux\qquad $\square\;$ Plus de la moitié des animaux\qquad \\
+
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=99d95&id=CM2D1A-1&n=4&d=10&s=false&s2=3&s3=2&s4=false&alea=kE0S&cd=1&cols=1
+\begin{EXO}{Répondre aux questions à l'aide du texte.}{CM2D1A-1}
+
+ Plusieurs amis reviennent du marché. Il s'agit de Albert et Océane.\\Albert rapporte $2$ kiwis, $5$ pêches et $7$ coings. \\Océane rapporte $4$ kiwis et $1$ coing. 
+
+\medskip
+\textbf {a.}  Remplir le tableau suivant. \\\textbf {b.}  Quel est le nombre total de fruits achetés par les amis ?\\\textbf {c.}  Qui a rapporté le plus de fruits ?\\\textbf {d.}  Quel fruit a été rapporté en la plus grosse quantité ?\\$\renewcommand{\arraystretch}{1}
+\begin{array}{|c|c|c|c|c|}
+\hline
+\cellcolor{lightgray} \text{Amis\textbackslash fruits} & \cellcolor{lightgray} \text{Coing} & \cellcolor{lightgray} \text{Kiwi} & \cellcolor{lightgray} \text{Pêche} & \cellcolor{lightgray} \text{TOTAL}\\
+\hline
+\cellcolor{lightgray} \text{Albert} &  &  &  & \\
+\hline
+ \cellcolor{lightgray} \text{Océane} &  &  &  & \\
+\hline
+ \cellcolor{lightgray} \text{TOTAL} &  &  &  & \\
+\hline
+ \end{array}
+\renewcommand{\arraystretch}{1}$
+
+\end{EXO}
+
+
+\clearpage
+
+\begin{Correction}
+\begin{EXO}{}{}
+
+ Il y a $6+2+10 = 18$ vêtements en tout.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ \textbf {a.}  L'animal le moins nombreux parmi ces espèces est :  
+    
+    	$\square\;$ Gazelles\qquad $\blacksquare\;$ Crocodiles\qquad $\square\;$ Hyènes\qquad $\square\;$ Girafes\qquad \\
+\\\textbf {b.}  L'animal le plus nombreux parmi ces espèces est :  
+    
+    	$\square\;$ Hyènes\qquad $\blacksquare\;$ Girafes\qquad $\square\;$ Gazelles\qquad $\square\;$ Crocodiles\qquad \\
+\\\textbf {c.}  L'animal le plus nombreux parmi ces espèces représente :  
+    
+    	$\blacksquare\;$ Plus de la moitié des animaux\qquad $\square\;$ Moins de la moitié des animaux\qquad $\square\;$ La moitié des animaux\qquad \\
+
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ \textbf {a.}  L'animal le moins nombreux parmi ces espèces est :  
+    
+    	$\square\;$ Servals\qquad $\square\;$ Lycaons\qquad $\square\;$ Zèbres\qquad $\blacksquare\;$ Guépards\qquad \\
+\\\textbf {b.}  L'animal le plus nombreux parmi ces espèces est :  
+    
+    	$\square\;$ Guépards\qquad $\square\;$ Lycaons\qquad $\square\;$ Servals\qquad $\blacksquare\;$ Zèbres\qquad \\
+\\\textbf {c.}  L'animal le plus nombreux parmi ces espèces représente :  
+    
+    	$\blacksquare\;$ Moins de la moitié des animaux\qquad $\square\;$ Plus de la moitié des animaux\qquad $\square\;$ La moitié des animaux\qquad \\
+
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ \textbf {a.}  L'animal le moins nombreux parmi ces espèces est :  
+    
+    	$\square\;$ Girafes\qquad $\square\;$ Hyènes\qquad $\blacksquare\;$ Servals\qquad $\square\;$ Lycaons\qquad \\
+\\\textbf {b.}  L'animal le plus nombreux parmi ces espèces est :  
+    
+    	$\blacksquare\;$ Lycaons\qquad $\square\;$ Hyènes\qquad $\square\;$ Servals\qquad $\square\;$ Girafes\qquad \\
+\\\textbf {c.}  L'animal le plus nombreux parmi ces espèces représente :  
+    
+    	$\blacksquare\;$ Moins de la moitié des animaux\qquad $\square\;$ La moitié des animaux\qquad $\square\;$ Plus de la moitié des animaux\qquad \\
+
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ \textbf {a.}  Voici le tableau complet. \\$\renewcommand{\arraystretch}{1}
+\begin{array}{|c|c|c|c|c|}
+\hline
+\cellcolor{lightgray} \text{Amis\textbackslash fruits} & \cellcolor{lightgray} \text{Coing} & \cellcolor{lightgray} \text{Kiwi} & \cellcolor{lightgray} \text{Pêche} & \cellcolor{lightgray} \text{TOTAL}\\
+\hline
+\cellcolor{lightgray} \text{Albert} & 7 & 2 & 5 & 14\\
+\hline
+ \cellcolor{lightgray} \text{Océane} & 1 & 4 & 0 & 5\\
+\hline
+ \cellcolor{lightgray} \text{TOTAL} & 8 & 6 & 5 & 19\\
+\hline
+ \end{array}
+\renewcommand{\arraystretch}{1}$
+\\\textbf {b.}  Le nombre total de fruits est : $19$.\\\textbf {c.}  On regarde la dernière colonne du tableau. La personne qui a rapporté le plus de fruits est Albert. Ce nombre maximal de fruits est de $14$.\\\textbf {d.}  On regarde la dernière ligne du tableau. Il y a plus de coings que d'autres fruits. Il y en a $8$.
+\end{EXO}
+
+\clearpage
+\end{Correction}
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:

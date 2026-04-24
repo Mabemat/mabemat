@@ -1,0 +1,327 @@
+/* ==========================================================
+   lecon.css — Styles des leçons MaBémath
+   Les couleurs d'environnement sont scopées par niveau :
+   .niveau-6e / .niveau-3e / .niveau-2nde / .niveau-1re
+   ========================================================== */
+
+/* --- Variables globales (palette de base, ne pas modifier) --- */
+:root {
+    --couleur1: #8b1f30;
+    --couleur2: #725E74;
+    --couleur3: #78985b;
+    --couleur4: #db3e56;
+    --couleur5: #487C4B;
+    --couleur6: #CF6876;
+    --couleur7: #A5C03F;
+    --couleur8: #D36740;
+    --couleur9: #7BB48A;
+    --couleur10: #EA8556;
+    --couleur11: #E6B459;
+
+    /* Variables d'environnement — valeurs par défaut = 6e */
+    --env-definition:     #CF6876;
+    --env-definition-bg:  rgba(207, 104, 118, 0.10);
+    --env-propriete:      #8b1f30;
+    --env-propriete-bg:   rgba(139, 31, 48, 0.05);
+    --env-theoreme:       #8b1f30;
+    --env-theoreme-bg:    rgba(139, 31, 48, 0.05);
+    --env-methode:        #A5C03F;
+    --env-methode-bg:     rgba(165, 192, 63, 0.10);
+    --env-exemple:        #D36740;
+    --env-exemple-bg:     transparent;
+    --env-remarque:       #A5C03F;
+    --env-notation:       #D36740;
+    --env-notation-bg:    rgba(211, 103, 64, 0.10);
+    --env-titre:          #D36740;
+    --env-tableau:        #D36740;   /* bordure tableau */
+    --env-tableau-bg:     rgba(211, 103, 64, 0.08);
+}
+
+
+
+
+
+/* --- Surcharges pour les pages 3e --- */
+.niveau-3e {
+    --env-definition:     #A4485F;
+    --env-definition-bg:  rgba(164, 72, 95, 0.05);
+    --env-propriete:      #C5607A;
+    --env-propriete-bg:   rgba(139, 60, 82, 0.05);
+    --env-theoreme:       #8B3C52;
+    --env-theoreme-bg:    rgba(197, 96, 122, 0.05);
+    --env-methode:        #cf90a2;
+    --env-methode-bg:     rgba(207, 144, 162, 0.05);
+    --env-exemple:        #EB7F73;
+    --env-exemple-bg:     transparent;
+    --env-remarque:       #A5C03F;   /* identique 6e */
+    --env-notation:       #EB7F73;
+    --env-notation-bg:    rgba(235, 127, 115, 0.10);
+    --env-titre:          #D36740;   /* 3e couleur primaire */
+    --env-tableau:        #EB7F73;   /* bordure tableau */
+    --env-tableau-bg:     rgba(235, 127, 115, 0.08);
+}
+
+
+/* --- Surcharges pour les pages 2nde --- */
+.niveau-2nde {
+    --env-definition:     #8A9CC1;   /* Couleur6 — bleu moyen */
+    --env-definition-bg:  rgba(138, 156, 193, 0.05);
+    --env-propriete:      #A5B5D6;   /* Couleur2 — bleu clair */
+    --env-propriete-bg:   rgba(165, 181, 214, 0.05);
+    --env-theoreme:       #4A5D7A;   /* Couleur1 — bleu foncé */
+    --env-theoreme-bg:    rgba(74, 93, 122, 0.05);
+    --env-methode:        #A8C68A;   /* Couleur3 — vert sauge */
+    --env-methode-bg:     rgba(168, 198, 138, 0.05);
+    --env-exemple:        #EA8556;   /* Couleur10 — orange clair */
+    --env-exemple-bg:     transparent;
+    --env-remarque:       #E6B459;   /* Couleur7 — jaune */
+    --env-notation:       #EA8556;   /* Couleur10 */
+    --env-notation-bg:    rgba(234, 133, 86, 0.10);
+    --env-titre:          #D36740;   /* Couleur8 — orange */
+    --env-tableau:        #8A9CC1;   /* bordure tableau — bleu */
+    --env-tableau-bg:     rgba(138, 156, 193, 0.05);
+}
+
+/* --- Surcharges pour les pages 1re --- */
+.niveau-1re {
+    --env-definition:     #819171;   /* Couleur6 — kaki moyen */
+    --env-definition-bg:  rgba(129, 145, 113, 0.05);
+    --env-propriete:      #B8C5A6;   /* Couleur2 — kaki clair */
+    --env-propriete-bg:   rgba(184, 197, 166, 0.05);
+    --env-theoreme:       #758467;   /* Couleur1 — kaki foncé */
+    --env-theoreme-bg:    rgba(117, 132, 103, 0.05);
+    --env-methode:        #78985b;   /* Couleur3 — vert */
+    --env-methode-bg:     rgba(120, 152, 91, 0.05);
+    --env-exemple:        #B85C5C;   /* Couleur8 — terracotta */
+    --env-exemple-bg:     transparent;
+    --env-remarque:       #D36740;   /* Couleur7 — orange */
+    --env-notation:       #B85C5C;   /* Couleur8 */
+    --env-notation-bg:    rgba(184, 92, 92, 0.10);
+    --env-titre:          #B85C5C;   /* Couleur10 */
+    --env-tableau:        #819171;   /* bordure tableau — kaki */
+    --env-tableau-bg:     rgba(129, 145, 113, 0.05);
+}
+/* ==========================================================
+   Styles des environnements
+   ========================================================== */
+
+.environment {
+    margin: 15px 0;
+    padding: 3px 8px;
+    border-left: 4px solid;
+    border-radius: 0;
+    position: relative;
+}
+
+.environment-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+/* Définition */
+.definition {
+    border-left-color: var(--env-definition);
+    background-color: var(--env-definition-bg);
+}
+.definition .environment-title { color: var(--env-definition); }
+
+/* Théorème */
+.theoreme {
+    border-left-color: var(--env-theoreme);
+    background-color: var(--env-theoreme-bg);
+}
+.theoreme .environment-title { color: var(--env-theoreme); }
+
+/* Propriété */
+.propriete {
+    border-left-color: var(--env-propriete);
+    background-color: var(--env-propriete-bg);
+}
+.propriete .environment-title { color: var(--env-propriete); }
+
+/* Règle (= Définition) */
+.regle {
+    border-left-color: var(--env-definition);
+    background-color: var(--env-definition-bg);
+}
+.regle .environment-title { color: var(--env-definition); }
+
+/* Méthode */
+.methode {
+    border-left-color: var(--env-methode);
+    background-color: var(--env-methode-bg);
+}
+.methode .environment-title { color: var(--env-methode); }
+.methode::after {
+    content: "■";
+    color: var(--env-methode);
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Exemple */
+.exemple {
+    border-left-color: var(--env-exemple);
+    border-left-width: 2.5px;
+    background-color: var(--env-exemple-bg);
+    margin-top: 25px;
+}
+.exemple .environment-title {
+    color: var(--env-exemple);
+    position: absolute;
+    top: -20px;
+    left: -4px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+.exemple::after {
+    content: "■";
+    color: var(--env-exemple);
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Exercice */
+.exercice {
+    border-left-color: var(--env-exemple);
+    border-left-width: 2.5px;
+    background-color: transparent;
+}
+.exercice .environment-title { color: var(--env-exemple); }
+.exercice::after {
+    content: "■";
+    color: var(--couleur4);
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Notation */
+.notation {
+    border-left-color: var(--env-notation);
+    border-left-width: 2px;
+    background-color: var(--env-notation-bg);
+}
+.notation .environment-title { color: var(--env-notation); }
+
+/* Vocabulaire */
+.vocabulaire {
+    border-left-color: var(--couleur3);
+    border-left-width: 2px;
+    background-color: transparent;
+}
+.vocabulaire .environment-title { color: var(--couleur3); }
+
+/* Remarque */
+.remarque {
+    background-color: transparent;
+    border: none;
+    padding-left: 50px;
+    position: relative;
+    font-size: 14px;
+    margin: 10px 35px 10px 25px;
+}
+.remarque::before {
+    content: "R";
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--env-remarque);
+    border-radius: 50%;
+    background-color: white;
+    color: var(--env-remarque);
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================
+   Listes
+   ========================================================== */
+.environment ul,
+.environment ol {
+    margin: 0px 15px;
+    padding-left: 1.5em;
+}
+.environment li {
+    margin: 0px 15px;
+    padding-left: 0.3em;
+    text-indent: -0.3em;
+}
+.environment li::marker        { color: var(--env-definition); }
+.exemple li::marker,
+.notation li::marker           { color: var(--env-exemple); }
+.methode li::marker           { color: var(--env-methode); }
+.propriete li::marker           { color: var(--env-propriete); }
+.vocabulaire li::marker {color: var(--couleur3);}
+.remarque li::marker {color: var(--env-remarque);}
+
+.exemple ol > li::marker       { color: var(--env-exemple); font-weight: bold; }
+
+/* ==========================================================
+   Tableaux
+   ========================================================== */
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid var(--env-tableau);
+}
+th, td {
+    padding: 5px 10px;
+    text-align: center;
+}
+th {
+    background-color: var(--env-tableau-bg);
+}
+
+/* ==========================================================
+   Couleurs utilitaires
+   ========================================================== */
+.couleur-orange { color: var(--couleur8); font-weight: bold; }
+.couleur-vert   { color: var(--couleur7); font-weight: bold; }
+
+/* ==========================================================
+   Titres de section / subsection
+   ========================================================== */
+.section-title {
+    color: var(--env-titre);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0 20px 0;
+}
+
+/* h2 — section principale (ex. "1.1 Distributivité simple") */
+.subsection-title {
+    color: var(--env-titre);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+    padding-left: 50px;
+}
+
+/* h3 — sous-section (ex. "1.1.1 Développer une expression") */
+.subsubsection-title {
+    color: var(--env-titre);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 8px 0;
+    padding-left: 100px;   /* indenté par rapport au h2 */
+    opacity: 0.85;
+}
+
+/* Paragraphes */
+.full-lesson p { margin: 10px 0; }
+

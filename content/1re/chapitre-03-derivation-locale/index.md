@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 3 — Dérivation locale"
+title: "Dérivation locale"
 level: "1re"
 chapter_number: 3
 weight: 3

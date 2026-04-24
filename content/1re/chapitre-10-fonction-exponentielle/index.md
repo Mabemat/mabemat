@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 10 — Fonction exponentielle"
+title: "Fonction exponentielle"
 level: "1re"
 chapter_number: 10
 weight: 10

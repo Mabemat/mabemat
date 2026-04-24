@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 8 — Variables aléatoires discrètes"
+title: "Variables aléatoires discrètes"
 level: "1re"
 chapter_number: 8
 weight: 8

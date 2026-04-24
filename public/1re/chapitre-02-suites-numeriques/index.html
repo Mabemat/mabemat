@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-1re">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapitre 2 — Suites numériques — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/" class="active">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/1re/">1ère Spécialité</a>
+    <span class="sep">/</span>
+    <span>Chapitre 02</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#758467;">02</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 02 · 1ère Spécialité
+      </div>
+      
+      <h1 class="fade-up d2">Chapitre 2 — Suites numériques</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Algèbre
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#758467;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#758467;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/1re/chapitre-02-suites-numeriques/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-02-suites-numeriques/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/1re/">
+    <div><div class="adj-lbl">← 1ère</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/1re/chapitre-03-derivation-locale/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/1re/chapitre-02-suites-numeriques/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/1re/chapitre-02-suites-numeriques/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/">1ère Spécialité</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/chapitre-02-suites-numeriques/">Chapitre 2 — Suites numériques</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 02 - Leçon
+      </div>
+      <h1 class="lesson-h1">Chapitre 2 — Suites numériques</h1>
+
+      <div class="full-lesson niveau-1re">
+        <h2 class="subsection-title">2.1 Généralités sur les suites</h2>
+<h3 class="subsubsection-title">2.1.1 Définitions</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Une <strong>suite numérique $u$</strong> est une fonction de $\N$ dans $\R$, qui a tout entier naturel $n$, associe son image $u(n)$, souvent notée $u_n$.<br>
+$u_n$ est le terme de rang $n$ ; on lit « $u$ indice $n$ ».<br>
+La suite est notée $(u_n)$ ou parfois $(u_n)_{n\in\N}$.
+</div>
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $n_0$ un entier naturel donné. Si une suite $(u_n)$ est définie uniquement pour les entiers naturels $n$ tels que $n\geq n_0$, on dit que $u_{n_0}$ est le <strong>terme initial</strong> de la suite $(u_n)$.
+</div>
+</div>
+<div class="remarque">
+<ul>
+<li>En général, $n_0$ vaut $0$ ou $1$.</li>
+<li>Si $u_n$ est le terme de rang $n$ d'une suite, alors $u_{n-1}$ est son <strong>terme précédent</strong> et $u_{n+1}$ est son <strong>terme suivant</strong>.</li>
+</ul>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+La suite des nombres entiers impairs est une suite numérique. <br>
+Le $1^{\text{er}}$ terme est $1$, le $2^{\text{ème}}$ terme est $3$, le $5^{\text{ème}}$ terme est $9$.
+</div>
+</div>
+<h3 class="subsubsection-title">2.1.2 Suite définie par une relation de récurrence</h3>
+<p>Une suite $(u_n)$ est définie par <strong>récurrence</strong> si elle est définie par la donnée de son <strong>premier terme</strong> et par une relation permettant de calculer <strong>chaque terme à partir du terme précédent</strong> (ou parfois des précédents).</p>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $f$ une fonction définie sur un intervalle $I$, à valeurs dans $I$, $a$ un réel de $I$ et $n_0$ un entier naturel.<br>
+La suite $(u_n)$ définie pour tout entier $n \geq n_0$ par : 
+$\left\{
+\begin{array}{ll}
+u_{n_0}=a \qquad &\text{ (terme initial de la suite)} \\
+u_{n+1}=f(u_n) \qquad &\text{ (relation de récurrence)} 
+\end{array}
+\right.$
+est une <strong>suite récurrente</strong> associée à la fonction $f$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit la suite $(u_n)$ définie par : $\left\{
+\begin{array}{ll}
+&u_0 =5 \\
+&u_{n+1}=(u_n)^2 -1 
+\end{array}
+\right.$ <br>
+C'est une suite récurrente associée à la fonction $f:x\mapsto x^2-1$ <br>[1em]
+<div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+On a $u_1=(u_0)^2-1=5^2-1=24$ ;<br> $u_2=(u_1)^2-1=24^2-1=575$ ;<br> $u_3=(u_2)^2-1=575^2-1=330624$ ...
+</div><div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+<table>
+<tr>
+<th>$u_0$</th>
+<th>$u_1$</th>
+<th>$u_2$</th>
+<th>$u_3$</th>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$24$</td>
+<td>$575$</td>
+<td>$330624$</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="remarque">
+Ce type de définition ne permet pas de calculer rapidement des termes d'indices élevés car chaque terme se calcule à l'aide du précédent.
+</div>
+<h3 class="subsubsection-title">2.1.3 Suite définie par une formule explicite</h3>
+<div class="remarque">
+On peut calculer directement n'importe quel terme de la suite en remplaçant $n$ par la valeur voulue. Il s'agit dans ce cas d'un calcul d'image.
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Si $f$ est une fonction définie sur un intervalle $[a;+\infty[$ avec $a$ réel positif ou nul, on peut définir une suite numérique $(u_n)$, associée à la fonction $f$, en posant pour tout entier $n\geq a$ : $u_n = f(n)$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Les suites $(u_n)_{n\geq 0}$ et $(v_n)_{n\geq 2}$ définies par $u_n=2n+5$ et $v_n=\sqrt{2n-4}$ sont définies explicitement (pour la première $f:x\mapsto 2x+5$ et pour la seconde $f:x\mapsto \sqrt{2x-4}$.<br>
+Alors $u_0=2\times 0 +5=5$, $u_7=2\times 7 +5=19$ et 
+$v_2=\sqrt{2\times 2-4}=\sqrt{0}=0$, $v_{10}=\sqrt{2\times 10 -4}=\sqrt{16}=4$.
+</div>
+</div>
+<h2 class="subsection-title">2.2 Représentation graphique des termes d'une suite</h2>
+<h3 class="subsubsection-title">2.2.1 Suites définies explicitement</h3>
+<p>Lorsqu&rsquo;une suite $(u_n)$ est définie par $u_n = f(n)$, la représentation graphique de cette suite est l&rsquo;ensemble des points de la courbe $\mathcal{C}_f$ ayant pour abscisse un nombre entier.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Pour représenter la suite $(u_n)_{n\geq 2}$ définie par $u_n = \sqrt{2n - 4}$ , on peut construire un tableau de valeurs en se limitant aux images des nombres entiers naturels.<br>
+On place alors les points de coordonnées $(n;\sqrt{2n - 4})$.
+</div>
+</div>
+<div class="remarque">
+Surtout on ne relie pas ces points : on ne représente pas la fonction définie sur $[2;+\infty[$ mais un nuage de points car une suite n'est définie que pour les entiers naturels.
+</div>
+<p style="text-align:center;">
+<img src="/mabemat/figures/1re/chapitre-02/fig1.svg" alt="figure 1" style="max-height:400px; max-width:100%;">
+</p>
+<h3 class="subsubsection-title">2.2.2 Suites définies par récurrence</h3>
+<p>Pour une suite récurrente définie par $u_{n + 1} = f(u_n)$ , on représente les différents termes de la suite sur l&rsquo;axe des abscisses.</p>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+On suppose ici que $n_0 =0$ (il faut suivre la même méthode si $n_0 =1$).<br>
+Pour représenter graphiquement une suite récurrente définie par $u_{n + 1} = f(u_n)$ il faut :
+<ol>
+<li>Tracer sur un même graphique la courbe de la fonction $f $ et la droite d'équation $y=x$.</li>
+<li>Placer le premier terme $u_0$ sur l'axe des abscisses et considérer le point $A_0$ de la courbe $\mathcal{C}_f$ d'abscisse $u_0$ : son ordonnée est $u_1 = f(u_0) $.</li>
+<li>Pour obtenir $u_1$ sur l'axe des abscisses, on utilise la droite d'équation $y = x$ : on « rabat » $u_1$ sur l'axe des abscisses.</li>
+<li>On répète le procédé avec $u_1$ pour obtenir $u_2$ etc...</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit $(u_n)$ la suite définie pour tout entier naturel $n$ par : $\left\{
+\begin{array}{ll}
+&u_0=1 \\
+& u_{n+1}=-0,1(u_n)^2+2u_n+0,8
+\end{array}
+\right.$<br>
+$(u_n)$ est une suite définie par récurrence associée à la fonction $f(x)=-0,1x^2+2x+0,8$.<br>
+<p style="text-align:center;">
+<img src="/mabemat/figures/1re/chapitre-02/fig2.svg" alt="figure 2" style="max-height:400px; max-width:100%;">
+</p>
+</div>
+</div>
+<h2 class="subsection-title">2.3 Sens de variation d'une suite</h2>
+<div class="environment definition">
+<div class="environment-title">Définition : $ $</div>
+<div class="environment-content">
+<ul>
+<li>Une suite $(u_n)$ est <strong>croissante</strong> si pour tout entier naturel $n$, $u_{n+1}\geq u_n$.</li>
+<li>Une suite $(u_n)$ est <strong>décroissante</strong> si pour tout entier naturel $n$, $u_{n+1}\leq u_n$.</li>
+<li>Une suite $(u_n)$ est <strong>constante</strong> si pour tout entier naturel $n$, $u_{n+1}=u_n$.</li>
+</ul>
+Si $(u_n)$ est croissante ou décroissante, on dit qu'elle est <strong>monotone</strong>.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $(u_n)_{n\geq n_0}$ une suite définie par $u_n=f(n)$ où $f$ est une fonction définie sur $I=[a;+\infty[$ avec $n_0\geq a$. Si la fonction $f$ est croissante (resp. décroissante) sur $I$, alors $(u_n)$ est croissante (resp. décroissante).
+</div>
+</div>
+<div class="remarque">
+<ul>
+<li>Graphiquement, on peut émettre une conjecture sur le sens de variation de la suite.</li>
+<li>Certaines suites ne sont ni croissante, ni décroissante. Par exemple, la suite $u_n=(-1)^n$, a ses termes consécutifs de signes contraires. 
+<p style="text-align:center;">
+<img src="/mabemat/figures/1re/chapitre-02/fig3.svg" alt="figure 3" style="max-height:200px; max-width:100%;">
+</p>
+</li>
+<li>On parle aussi de suite croissante (ou décroissante) à partir d'un certain rang $p$ :
+on dit qu'une suite $(u_n)$ est croissante (resp. décroissante) à partir d'un rang $p$, si pour tout entier naturel $n\geq p$, $u_{n+1} \geq u_n$ (resp. $u_{n+1} \leq u_n$).</li>
+<li>Comme pour les fonctions, on définit la notion de suite strictement croissante et strictement décroissante en remplaçant les inégalités larges de la définition, par des inégalités strictes.</li>
+</ul>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour étudier le sens de variation d'une suite, une méthode consiste à étudier <strong>le signe de $u_{n+1}-u_n$</strong>.
+<ul>
+<li>Si pour tout $n\in \N$, $u_{n+1}-u_n\geq 0$, la suite $(u_n)$ est <strong>croissante</strong>.</li>
+<li>Si pour tout $n\in \N$, $u_{n+1}-u_n\leq 0$, la suite $(u_n)$ est <strong>décroissante</strong>.</li>
+<li>Si pour tout $n\in \N$, $u_{n+1}-u_n= 0$, la suite $(u_n)$ est <strong>constante</strong>.</li>
+</ul>
+<p>Si la suite est à termes strictement positifs et si la formule définissant la suite comporte des produits et des quotients, il est souvent facile de calculer le rapport $\dfrac{u_{n+1}}{u_n}$.</p>
+<ul>
+<li>Si $\dfrac{u_{n+1}}{u_n}\geq 1$, la suite $(u_n)$ est <strong>croissante</strong>.</li>
+<li>Si $\dfrac{u_{n+1}}{u_n}\leq 1$, la suite $(u_n)$ est <strong>décroissante</strong>.</li>
+<li>Si $\dfrac{u_{n+1}}{u_n}=1$, la suite $(u_n)$ est <strong>constante</strong>.</li>
+</ul>
+<ol>
+<li>
+On considère la suite $(u_n)$ définie pour tout entier naturel $n$ par
+$\left\{
+\begin{array}{ll}
+&u_0 =1 \\
+&u_{n+1}=2+u_n
+\end{array}
+\right.$
+<br>
+<span style="color:#78985b;">$u_{n+1}-u_n=2+u_n-u_n=2>0$ pour tout $n\in \N$, donc la suite $(u_n)$ est <strong>croissante</strong>.</span>
+</li>
+<li>
+On considère la suite $(u_n)$ définie pour tout entier naturel $n$ par $u_n=4-3n$.
+<br>
+<span style="color:#78985b;">Pour tout $n\in \N$, $u_{n}=f(n)$ où $f:x\mapsto 4-3x$ est décroissante donc la suite $(u_n)$ est <strong>décroissante</strong>.</span>
+</li>
+<li>
+On considère la suite $(u_n)$ définie pour tout entier naturel non nul $n$ par $u_{n}=\dfrac{1}{n(n+1)}$.
+<br>
+<span style="color:#78985b;">Pour tout $n\in \N$, $\dfrac{u_{n+1}}{u_n}=\dfrac{\dfrac{1}{(n+1)(n+2)}}{\dfrac{1}{n(n+1)}}=\dfrac{n(n+1)}{(n+1)(n+2)}=\dfrac{n}{n+2}$. Or, $0\leq n\leq n+2$, on a $\dfrac{u_{n+1}}{u_n}\leq 1$ et donc $u_{n+1}\leq u_n$, donc la suite $(u_n)$ est <strong>décroissante</strong>.</span>
+</li>
+</ol>
+</div>
+</div>
+<h2 class="subsection-title">2.4 Notion de limite d'une suite</h2>
+<h3 class="subsubsection-title">2.4.1 Suite convergente</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Pour tout $n\in \N^*$, on considère la suite $(u_n)$ définie par $u_n=\dfrac{2n+1}{n}$.<br>
+On construit le tableau de valeurs avec des termes de la suite : <table>
+<tr>
+<th>$n$</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$3$</th>
+<th>$4$</th>
+<th>$5$</th>
+<th>$10$</th>
+<th>$15$</th>
+<th>$50$</th>
+<th>$500$</th>
+</tr>
+<tr>
+<td>$u_n$</td>
+<td>$3$</td>
+<td>$2,5$</td>
+<td>$2,333$</td>
+<td>$2,25$</td>
+<td>$2,2$</td>
+<td>$2,1$</td>
+<td>$2,067$</td>
+<td>$2,02$</td>
+<td>$2,002$</td>
+</tr>
+</table>
+Plus $n$, devient grand, plus les termes de la suite semblent se rapprocher de $2$.<br>
+On dit que la suite $(u_n)$ converge vers $2$ et on note : $\underset{n\rightarrow +\infty}{\lim} u_n=2$.
+</div>
+</div>
+<h3 class="subsubsection-title">2.4.2 Suite divergente</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>Pour tout $n\in \N$, on considère la suite $(u_n)$ définie par $u_n=n^2+1$. <br>
+Calculons quelques termes de cette suite : <br>
+$u_0=0^2+1=1$, $u_1=1^2+1=2$, $u_2=2^2+1=5$, $u_{10}=10^2+1=101$, $u_{100}=100^2+1=10001$.<br>
+Plus $n$ devient grand, plus les termes de la suite semblent devenir grand.<br>
+On dit que la suite $(u_n)$ diverge vers $+\infty$ et on note : $\underset{n\rightarrow +\infty}{\lim} u_n=+\infty$.</li>
+<li>Pour tout $n\in \N$, on considère la suite $(v_n)$ définie par $v_{n+1}=(-1)^nv_n$ et $v_0=2$. <br> Calculons les premiers termes de cette suite : <br>
+$v_1=(-1)^0v_0=2$, $v_2=(-1)^1v_1=-2$, $v_3=(-1)^2v_2=2$, $v_4=(-1)^3v_3=-2$, $v_5=(-1)^4v_4=2$.<br>
+Plus $n$ devient grand, les termes de la suite ne semblent pas se rapprocher vers une valeur unique. On dit que la suite $(v_n)$ diverge.</li>
+</ul>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/1re/chapitre-02-suites-numeriques/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-02-suites-numeriques/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

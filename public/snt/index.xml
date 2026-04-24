@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SNT on MaBémath</title>
+    <link>http://localhost:1313/mabemat/snt/</link>
+    <description>Recent content in SNT on MaBémath</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/mabemat/snt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Séance 01 — Variables et affectation</title>
+      <link>http://localhost:1313/mabemat/snt/seance-01-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mabemat/snt/seance-01-variables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Séance 02 · Les fonctions</title>
+      <link>http://localhost:1313/mabemat/snt/seance-02-fonctions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mabemat/snt/seance-02-fonctions/</guid>
+      <description>&lt;h2 id=&#34;-compétences-à-maîtriser&#34;&gt;🎯 Compétences à maîtriser&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Définir une fonction&lt;/strong&gt; — Utiliser &lt;code&gt;def&lt;/code&gt; et indenter le code&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Appeler une fonction&lt;/strong&gt; — Passer des arguments&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Utiliser &lt;code&gt;return&lt;/code&gt;&lt;/strong&gt; — Renvoyer une valeur&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Comprendre la portée&lt;/strong&gt; — Variables locales vs globales&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-notebook-capytale&#34;&gt;📓 Notebook Capytale&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;https://capytale.ac/notebook/...&#34; target=&#34;_blank&#34; style=&#34;color:#4A5D7A; border-color:#4A5D7A;&#34;&gt;📓 Ouvrir le notebook&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Correction et QCM à venir.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Séance 03 · Instructions conditionnelles</title>
+      <link>http://localhost:1313/mabemat/snt/seance-03-conditionnelles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mabemat/snt/seance-03-conditionnelles/</guid>
+      <description>&lt;h2 id=&#34;-compétences-à-maîtriser&#34;&gt;🎯 Compétences à maîtriser&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Utiliser &lt;code&gt;if&lt;/code&gt;&lt;/strong&gt; — Tester une condition&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chaîner avec &lt;code&gt;elif&lt;/code&gt;&lt;/strong&gt; — Plusieurs cas&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Utiliser &lt;code&gt;else&lt;/code&gt;&lt;/strong&gt; — Cas par défaut&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Opérateurs de comparaison&lt;/strong&gt; — &lt;code&gt;==&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt;, &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-notebook-capytale&#34;&gt;📓 Notebook Capytale&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;https://capytale.ac/notebook/...&#34; target=&#34;_blank&#34; style=&#34;color:#4A5D7A; border-color:#4A5D7A;&#34;&gt;📓 Ouvrir le notebook&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Correction et QCM à venir.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Séance 04 · Boucles bornées</title>
+      <link>http://localhost:1313/mabemat/snt/seance-04-boucles-bornees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mabemat/snt/seance-04-boucles-bornees/</guid>
+      <description>&lt;h2 id=&#34;-compétences-à-maîtriser&#34;&gt;🎯 Compétences à maîtriser&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Utiliser &lt;code&gt;for&lt;/code&gt;&lt;/strong&gt; — Itérer sur une séquence&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Utiliser &lt;code&gt;range()&lt;/code&gt;&lt;/strong&gt; — Générer des entiers&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Accumulateurs&lt;/strong&gt; — Somme, produit, compteur&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-notebook-capytale&#34;&gt;📓 Notebook Capytale&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;https://capytale.ac/notebook/...&#34; target=&#34;_blank&#34; style=&#34;color:#4A5D7A; border-color:#4A5D7A;&#34;&gt;📓 Ouvrir le notebook&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Correction et QCM à venir.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Séance 05 · Boucles non bornées</title>
+      <link>http://localhost:1313/mabemat/snt/seance-05-boucles-non-bornees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mabemat/snt/seance-05-boucles-non-bornees/</guid>
+      <description>&lt;h2 id=&#34;-compétences-à-maîtriser&#34;&gt;🎯 Compétences à maîtriser&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Utiliser &lt;code&gt;while&lt;/code&gt;&lt;/strong&gt; — Répéter tant qu&amp;rsquo;une condition est vraie&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Éviter les boucles infinies&lt;/strong&gt; — Assurer la terminaison&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Comparer &lt;code&gt;for&lt;/code&gt; et &lt;code&gt;while&lt;/code&gt;&lt;/strong&gt; — Choisir la bonne boucle&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-notebook-capytale&#34;&gt;📓 Notebook Capytale&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;https://capytale.ac/notebook/...&#34; target=&#34;_blank&#34; style=&#34;color:#4A5D7A; border-color:#4A5D7A;&#34;&gt;📓 Ouvrir le notebook&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Correction et QCM à venir.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Séance 06 · Bilan</title>
+      <link>http://localhost:1313/mabemat/snt/seance-06-bilan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mabemat/snt/seance-06-bilan/</guid>
+      <description>&lt;h2 id=&#34;-compétences-à-mobiliser&#34;&gt;🎯 Compétences à mobiliser&lt;/h2&gt;&#xA;&lt;p&gt;Toutes les compétences vues en SNT Python :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Variables, types, affectation&lt;/li&gt;&#xA;&lt;li&gt;Fonctions&lt;/li&gt;&#xA;&lt;li&gt;Conditions&lt;/li&gt;&#xA;&lt;li&gt;Boucles bornées et non bornées&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-notebook-capytale&#34;&gt;📓 Notebook Capytale&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a class=&#34;btn&#34; href=&#34;https://capytale.ac/notebook/...&#34; target=&#34;_blank&#34; style=&#34;color:#4A5D7A; border-color:#4A5D7A;&#34;&gt;📓 Ouvrir le notebook&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Correction à venir.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

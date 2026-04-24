@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Résolution de problèmes — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/6e/">6ème</a>
+    <span class="sep">/</span>
+    <span>Résolution de problèmes</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div>
+      
+      <h1 class="fade-up d2">Résolution de problèmes</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#D36740;"></span>Leçon disponible</span>
+        
+        
+        
+        <span><span class="dot" style="background:#D36740;"></span>Pixel Art</span>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/6e/chapitre-00-resolution-de-problemes/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  <a class="res-card fade-up d4" href="/mabemat/6e/chapitre-00-resolution-de-problemes/pixelart.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">▦</div>
+      <div class="res-kind">Pixel Art</div>
+      <h3>Pause <em>créative</em></h3>
+      <p class="res-desc">Résous les calculs, colorie les cases - une œuvre d'art à la fin.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">3</div>
+      <div class="step-t">Pixel art final</div>
+      <div class="step-s">pour finir</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/6e/">
+    <div><div class="adj-lbl">← 6ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  <div></div>
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/6e/chapitre-00-resolution-de-problemes/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/6e/">6ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/6e/chapitre-00-resolution-de-problemes/">Résolution de problèmes</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Leçon
+      </div>
+      <h1 class="lesson-h1">Résolution de problèmes</h1>
+
+      <div class="full-lesson niveau-6e">
+        <h2 class="subsection-title">I. Modélisation en barre</h2>
+<h3 style="color: var(--couleur-principale, #D36740); margin: 1em 0 0.5em;">I.1. Problèmes additifs</h3>
+<p>Le schéma en barres permet de modéliser un problème en illustrant les différentes relations entre les données de l&rsquo;énoncé.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Pedro a dépensé 50 € pour s'acheter un pantalon à 30 € et une chemise. Combien coûte la chemise ?
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;">Même pour un problème simple comme celui-ci, on peut modéliser la situation à l'aide de barres. La longueur des barres n'est pas nécessairement proportionnelle à la valeur qu'elle représente mais il peut être utile de les faire de longueurs différentes si elles représentent des valeurs différentes.</div>
+<div style="flex:0 0 auto;">% Schéma en barres pour l'exemple 1
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-00/fig1.svg" alt="figure 1" style="max-height:140px; max-width:100%;"></div>
+</div></div>
+</div>
+<p>$ $<br>
+Finalement, on voit à l&rsquo;aide des barres que le prix de la chemise est le complément qu&rsquo;il faut ajouter à 30 € pour obtenir 50 €. La chemise coûte 50 € – 30 € soit 20 €.</p>
+</div>
+</div>
+<h3 style="color: var(--couleur-principale, #D36740); margin: 1em 0 0.5em;">I.2. Problèmes multiplicatifs</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Djema vient d'acheter cinq livres identiques pour un coût total de 18 €. Combien coûte chaque livre ?
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;">Ce problème est de type multiplicatif car on doit multiplier le prix d'un livre par 5 pour obtenir 18 €. Ainsi, chaque livre coûte 18 € ÷ 5 soit 3,60 €. C'est un exemple de résolution de problème mettant en œuvre de la proportionnalité.</div>
+<div style="flex:0 0 auto;">% Schéma en barres pour l'exemple 2
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-00/fig2.svg" alt="figure 2" style="max-height:140px; max-width:100%;"></div>
+</div></div>
+</div>
+</div>
+</div>
+<h3 style="color: var(--couleur-principale, #D36740); margin: 1em 0 0.5em;">I.3. Problèmes avec des fractions</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Pour aller jouer avec mes amis, j'ai pris toutes mes billes. Durant la partie, j'en ai perdu les trois septièmes et maintenant, il m'en reste 20. Combien avais-je de billes au départ ?
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;">Les billes perdues représentent trois septièmes de ce que j'avais au départ. Je peux donc diviser le total des billes en sept parts identiques.</div>
+<div style="flex:0 0 auto;">% Schéma en barres pour l'exemple 3
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-00/fig3.svg" alt="figure 3" style="max-height:140px; max-width:100%;"></div>
+</div></div>
+</div>
+<p>$ $<br>
+On constate que les 20 billes qui restent correspondent à quatre parts. 20 ÷ 4 = 5. <br>
+Chaque part représente donc cinq billes. J&rsquo;ai perdu trois parts, ce qui représente 15 billes (3 × 5).</p>
+<p>15 + 20 = 35. Au total, j&rsquo;avais donc 35 billes.</p>
+</div>
+</div>
+<h3 style="color: var(--couleur-principale, #D36740); margin: 1em 0 0.5em;">I.4. Pour aller plus loin...</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Une mère distribue 75 € à ses trois enfants en fonction de leur âge : l'aîné aura 10 € de plus que le cadet et le benjamin aura 10 € de moins que le cadet. Combien donne-t-elle à chacun de ses enfants ?
+<p>Pour réaliser un schéma en barres, on peut décider d&rsquo;une barre unité : par exemple, le montant reçu par l&rsquo;enfant le plus jeune sera le montant unité. Voilà ce qu&rsquo;on obtient.</p>
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-00/fig4.svg" alt="figure 4" style="max-height:140px; max-width:100%;"></div>
+</div>
+<p>À partir de là, on peut imaginer une nouvelle modélisation car on constate que le total de 75 € est obtenu en prenant trois fois le montant unité du benjamin ajouté à trois fois 10 €.</p>
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-00/fig5.svg" alt="figure 5" style="max-height:140px; max-width:100%;"></div>
+</div>
+<p>Par conséquent, trois unités ensemble valent 75 € - 30 € = 45 € et ainsi une unité vaut 45 € ÷ 3 soit 15 €. Le benjamin aura 15 €, le cadet 25 € et l&rsquo;aîné 35 €.</p>
+<p>15 + 25 + 35 = 75. Le total est bien égal à 75 €.</p>
+</div>
+</div>
+<h2 class="subsection-title">II. Les balances de Roberval</h2>
+<p>Les balances Roberval sont composées de deux plateaux. Lorsque les masses posées sur chaque plateau sont identiques, alors les plateaux sont en équilibre. On peut se servir des balances Roberval pour modéliser et résoudre des problèmes mathématiques.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;">Deux pommes et une orange pèsent ensemble 130 g.
+<p>Une pomme et une orange pèsent ensemble 90 g.</p>
+<p>Combien pèse chaque fruit individuellement ?</div></p>
+<div style="flex:0 0 auto;">% Première balance
+<div style="text-align:center;">
+</div></div>
+</div>
+<p><strong>Résolution :</strong> On considère la balance n°2 et on ajoute une pomme de chaque côté pour conserver l&rsquo;équilibre <strong>(a)</strong> Puis, grâce à l&rsquo;information de la balance n°1, on peut remplacer les fruits du plateau de gauche par une masse de 130 g <strong>(b)</strong> Et enfin, on retire de chaque côté de la balance 90 g. Les plateaux sont toujours équilibrés donc une pomme pèse 40 g <strong>(c)</strong>.</p>
+<div style="text-align:center;">
+</div>
+<p>Grâce à la balance n°2 initiale, on en déduit qu&rsquo;une orange pèse 90 g — 40 g soit 50 g.</p>
+</div>
+</div>
+<h2 class="subsection-title">III. Motifs évolutifs</h2>
+<p>Certains motifs admettent une structure qui se répète. On peut alors prévoir la forme d&rsquo;un motif au bout de plusieurs répétitions.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;">On considère le motif ci-contre.
+<p>On souhaite connaître le nombre d&rsquo;allumettes nécessaires à l&rsquo;étape 32.</div></p>
+<div style="flex:0 0 auto;">% Figure avec les trois étapes
+<div style="text-align:center;">
+</div></div>
+</div>
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;"><strong>Méthode :</strong> Dans ce genre de problème, il ne faut surtout pas écrire toutes les étapes une par une pour répondre à la question, mais repérer la structure qui se répète dans le motif.
+<p>Dans cet exemple, on remarque que pour passer de l&rsquo;étape 1 à l&rsquo;étape 2, on ajoute cinq allumettes qui correspondent à la structure ci-contre.</div></p>
+<div style="flex:0 0 auto;">% Figure avec la structure répétitive
+<div style="text-align:center;">
+</div></div>
+</div>
+<div style="display:flex; align-items:center; gap:1.5rem; flex-wrap:wrap;">
+<div style="flex:1;">On ajoute à nouveau cette même structure pour passer de l'étape 2 à l'étape 3.
+<p>Donc, entre l&rsquo;étape 1 et l&rsquo;étape 3, on a ajouté deux fois cinq allumettes.</p>
+<p>Sans faire tous les calculs, on peut résumer la situation lors de chaque étape à l&rsquo;aide du tableau suivant. On calcule que l&rsquo;étape 32 nécessite 161 allumettes car $6 + 31 \times 5 = 161$.</div></p>
+<div style="flex:0 0 auto;">% Tableau avec les étapes et calculs
+<div style="text-align:center;">
+<table style="border-collapse:collapse; margin: 0 auto;">
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>Étape</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;">  <strong>Nombre d'allumettes</strong></td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>1</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;">6</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>2</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;">$6 + \textcolor{#EA8556}{\textbf{1}} \times 5$</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>3</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;">$6 + 5 + 5 = 6 + \textcolor{#EA8556}{\textbf{2}} \times 5$</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>4</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;">$6 + 5 + 5 + 5 = 6 + \textcolor{#EA8556}{\textbf{3}} \times 5$</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>...</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;"></td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:4px 8px;"><strong>32</strong></td>
+<td style="border:1px solid #ccc; padding:4px 8px;">$6 + 5 + \ldots = 6 + \textcolor{#EA8556}{\textbf{31}} \times 5$</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/6e/chapitre-00-resolution-de-problemes/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

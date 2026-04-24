@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 1 — Polynôme du second degré"
+title: "Polynôme du second degré"
 level: "1re"
 chapter_number: 1
 weight: 1

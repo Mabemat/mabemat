@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Racines carrées et valeurs absolues — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/2nde/">2nde</a>
+    <span class="sep">/</span>
+    <span>Chapitre 11</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#4A5D7A;">11</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 11 · 2nde
+      </div>
+      
+      <h1 class="fade-up d2">Racines carrées et valeurs absolues</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Fonctions
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#4A5D7A;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#4A5D7A;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/2nde/chapitre-11-racines-carrees/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/2nde/chapitre-11-racines-carrees/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/2nde/">
+    <div><div class="adj-lbl">← 2nde</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/2nde/chapitre-12-probabilites/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/2nde/chapitre-11-racines-carrees/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/2nde/chapitre-11-racines-carrees/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/">2nde</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/chapitre-11-racines-carrees/">Racines carrées et valeurs absolues</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 11 - Leçon
+      </div>
+      <h1 class="lesson-h1">Racines carrées et valeurs absolues</h1>
+
+      <div class="full-lesson niveau-2nde">
+        <h2 class="subsection-title">11.1 Calculs sur les racines carrées</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+La racine carrée d'un nombre réel positif $a$ est l'unique réel positif dont le carré vaut $a$. <br> On la note $\sqrt{a}$ , et on a donc $\sqrt{a}\geq 0$ .
+</div>
+</div>
+<div class="remarque">
+<ul>
+<li>Par définition, on a $\left(\sqrt{a}\right)^2=a$.</li>
+<li>$\sqrt{-5}$ n'existe pas ! En effet, il n'existe aucun nombre dont le carré vaut $-5$.</li>
+</ul>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:grid; grid-template-columns:repeat(7, 1fr); gap:1rem;">
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{0}=0$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{1}=1$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{4}=2$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{9}=3$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{16}=4$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{25}=5$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{36}=6$</li>
+</ul>
+</div>
+<div style="display:grid; grid-template-columns:repeat(7, 1fr); gap:1rem; margin-top:1rem;">
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{49}=7$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{64}=8$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{81}=9$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{100}=10$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{121}=11$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{144}=12$</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{169}=13$</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="remarque">
+$\sqrt{2}\approx 1,4142$ et $\sqrt{3}\approx 1,732$ sont des nombres irrationnels.
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tous réels positifs $a$ et $b$, on a $\sqrt{ab}=\sqrt{a}\sqrt{b}$.
+</div>
+</div>
+<p>Démonstration. <br>
+D&rsquo;une part, $\left(\sqrt{a}\times \sqrt{b}\right)^2=\left(\sqrt{a}\right)^2\times \left(\sqrt{b}\right)^2=a\times b$ par définition de la racine carrée ($a$ et $b$ positifs).<br>
+D&rsquo;autre part, $\left(\sqrt{a\times b}\right)^2=a\times b$ par définition de la racine carrée ($a$ et $b$ positifs, donc $a\times b$ aussi).<br>
+Donc, $\left(\sqrt{a}\times \sqrt{b}\right)^2=\left(\sqrt{a\times b}\right)^2$. <br>
+Or, $\sqrt{a}\times \sqrt{b}$ et $\sqrt{a\times b}$ sont positifs et de carrés égaux, ils sont donc égaux.<br> Ainsi, $\sqrt{ab}=\sqrt{a}\sqrt{b}$.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Réduire au maximum les nombres suivants :
+<ul>
+<li>$\sqrt{98}=\sqrt{49\times 2}=\sqrt{49}\times \sqrt{2}=7\sqrt{2}$.</li>
+<li>$2\sqrt{2}\times 4\sqrt{18}=8\sqrt{2\times 18}=8\sqrt{36}=8\times 6=48$.</li>
+<li>$\left(4\sqrt{5}\right)^2=4^2\times\left(\sqrt{5}\right)^2=16\times 5=80$.</li>
+<li>$3\sqrt{125}=3\times \sqrt{25\times 5}=3\times 5\sqrt{5}=15\sqrt{5}$.</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tous réels positifs $a$ et $b$ avec $b\neq 0$, on a $\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\dfrac{\sqrt{32}\times\sqrt{10}}{\sqrt{80}}=\sqrt{\dfrac{32\times 10}{80}}=\sqrt{4}=2$.</li>
+</ul>
+<ul style="list-style:disc inside; margin:0; padding:0;">
+<li>$\sqrt{\dfrac{50}{242}}=\sqrt{\dfrac{25}{121}}=\dfrac{\sqrt{25}}{\sqrt{121}}=\dfrac{5}{11}$.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode : Simplifier une écriture contenant des racines carrées.</div>
+<div class="environment-content">
+<ol>
+<li>Écrire le plus simplement possible :
+<ul>
+<li>$A=4\sqrt{3}-2\sqrt{3}+6\sqrt{3}$</li>
+<li>$B=(3-2\sqrt{5})-(4-6\sqrt{5})$</li>
+</ul></li>
+<li>Écrire les expressions suivantes sous la forme $a\sqrt{b}$, où $a$ et $b$ sont des entiers et $b$ le plus petit possible :
+<ul>
+<li>$C=\sqrt{12}+7\sqrt{3}-\sqrt{27}$</li>
+<li>$D=\sqrt{125}-2\sqrt{20}+6\sqrt{80}$</li>
+</ul></li>
+<li>Écrire les expressions suivantes sous la forme $\dfrac{a\sqrt{b}}{c}$, où $a$, $b$ et $c$ sont des entiers et $b$ le plus petit possible :
+<ul>
+<li>$E=\dfrac{-5}{\sqrt{2}}$</li>
+<li>$F=\dfrac{1}{3+\sqrt{5}}$</li>
+</ul></li>
+</ol>
+<ol>
+<li>$A=4\sqrt{3}-2\sqrt{3}+6\sqrt{3}=(4-2+6)\sqrt{3}=8\sqrt{3}$.<br>
+$B=(3-2\sqrt{5})-(4-6\sqrt{5})=3-2\sqrt{5}-4+6\sqrt{5}=-1+4\sqrt{5}$.</li>
+<li>$C=\sqrt{12}+7\sqrt{3}-\sqrt{27}=\sqrt{4\times 3}+7\sqrt{3}-\sqrt{9\times 3}=2\sqrt{ 3}+7\sqrt{3}-3\sqrt{ 3}=6\sqrt{3}$.<br>
+$D=\sqrt{125}-2\sqrt{20}+6\sqrt{80}=\sqrt{25\times 5}-2\sqrt{4\times 5}+6\sqrt{16\times 5}=5\sqrt{5}-4\sqrt{5}+24\sqrt{5}=25\sqrt{5}$.</li>
+<li>$E=\dfrac{-5}{\sqrt{2}}=\dfrac{-5\times \sqrt{2}}{\sqrt{2}\times \sqrt{2}}=\dfrac{-5\times \sqrt{2}}{2}$. <br>
+$F=\dfrac{1}{3+\sqrt{5}}=\dfrac{1\times (3-\sqrt{5})}{(3+\sqrt{5})\times (3-\sqrt{5})}=\dfrac{3-\sqrt{5}}{9+3\sqrt{5}-3\sqrt{5}+\sqrt{5}\times \sqrt{5}}=\dfrac{3-\sqrt{5}}{9+5}=\dfrac{3-\sqrt{5}}{14}$.</li>
+</ol>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tous réels $a$ et $b$ strictement positifs, on a $\sqrt{a+b} < \sqrt{a} +\sqrt{b}$.
+</div>
+</div>
+<p>Démonstration.<br>
+Comme $a$ et $b$ sont strictement positifs, $\sqrt{a+b}$ et $ \sqrt{a} +\sqrt{b}$ sont positifs. <br>
+Donc montrer que $\sqrt{a+b} < \sqrt{a} +\sqrt{b}$, revient à montrer que $\left(\sqrt{a+b}\right)^2 < \left(\sqrt{a} +\sqrt{b}\right)^2$. <br>
+C&rsquo;est à dire, montrer que $\left(\sqrt{a+b}\right)^2 -\left(\sqrt{a} +\sqrt{b}\right)^2 <0$.</p>
+<div class="math-display">
+$$
+\begin{aligned}
+\left(\sqrt{a+b}\right)^2 -\left(\sqrt{a} +\sqrt{b}\right)^2 &= a+b -(a+2\sqrt{a}\sqrt{b}+b) \\
+&=a+b -a-2\sqrt{a}\sqrt{b}-b \\
+&=-2\sqrt{a}\sqrt{b}
+\end{aligned}
+$$
+</div>
+<p>Or, $\sqrt{a}>0$ et $\sqrt{b}>0$ car $a$ et $b$ sont strictement positifs. Donc, $-2\sqrt{a}\sqrt{b}<0$.<br>
+Finalement, $\left(\sqrt{a+b}\right)^2 -\left(\sqrt{a} +\sqrt{b}\right)^2 <0$ et donc $\sqrt{a+b} < \sqrt{a} +\sqrt{b}$.</p>
+<h2 class="subsection-title">11.2 La fonction racine carrée</h2>
+<h3 class="subsubsection-title">11.2.1 Définition, représentation graphique et propriété</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+La fonction racine carrée est la fonction définie sur $[0;+\infty[$ par $f:x\mapsto \sqrt{x}$.
+</div>
+</div>
+<table>
+<tr>
+<th>$x$</th>
+<th>$0$</th>
+<th>$0,25$</th>
+<th>$1$</th>
+<th>$2,25$</th>
+<th>$4$</th>
+<th>$6,25$</th>
+<th>$9$</th>
+</tr>
+<tr>
+<td>$f(x)=\sqrt{x}$</td>
+<td>$0$</td>
+<td>$0,5$</td>
+<td>$1$</td>
+<td>$1,5$</td>
+<td>$2$</td>
+<td>$2,5$</td>
+<td>$3$</td>
+</tr>
+</table>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-11/fig1.svg" alt="figure 1" style="max-height:300px; max-width:100%;">
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+La fonction racine carrée est croissante sur $[0;+\infty[$.
+</div>
+</div>
+<p>On peut donc dresser le tableau de variation de la fonction racine carrée.</p>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-11/t1.png" alt="figure 2" style="max-height:150px; max-width:100%;">
+</div>
+<p>Démonstration.<br>
+Soient $a$ et $b$ deux réels positifs distincts tels que $a< b$.<br>
+On veut montrer que $f(a)<f(b)$, c&rsquo;est-à-dire que $\sqrt{a}<\sqrt{b}$. Cela revient à montrer que $\sqrt{a}-\sqrt{b}<0$. <br></p>
+<div class="math-display">
+$$
+\begin{aligned}
+\sqrt{a}-\sqrt{b} &= \dfrac{(\sqrt{a}-\sqrt{b})(\sqrt{a}+\sqrt{b})}{\sqrt{a}+\sqrt{b}} \\
+&= \dfrac{a-b}{\sqrt{a}+\sqrt{b}}
+\end{aligned}
+$$
+</div>
+<p>Or, comme $a$ et $b$ sont positifs et différents, $\sqrt{a}+\sqrt{b}>0$ et $a-b<0$ car $a<b$. <br>
+Ainsi, $\sqrt{a}<\sqrt{b}$.<br>
+$a$ et $b$ étant deux réels quelconques de $[0;+\infty[$, la fonction racine carrée est croissante sur $[0;+\infty[$.</p>
+<h3 class="subsubsection-title">11.2.2 Équations et inéquations</h3>
+<div style="display:inline-block;vertical-align:middle;width:calc(72% - 12px);">
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout réel $a$, l'équation $\sqrt{x}=a$ admet pour ensemble de solutions :
+<ul>
+<li>$S=\{a^2\}$ si $a\geq 0$</li>
+<li>$S=\emptyset$ si $a<0$.</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+L'équation $\sqrt{x}=3$ a pour ensemble de solutions $S=\{9\}$.
+</div>
+</div>
+</div><img src="/mabemat/figures/2nde/chapitre-11/fig3.svg" alt="figure 3" style="display:inline-block;vertical-align:middle;width:calc(26% - 12px);max-height:200px;max-width:100%;">
+<br>
+<div style="display:inline-block;vertical-align:middle;width:calc(72% - 12px);">
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout réel $a$, l'inéquation $\sqrt{x}\leq a$ admet pour ensemble de solutions :
+<ul>
+<li>$S=[0;a^2]$ si $a\geq 0$</li>
+<li>$S=\emptyset$ si $a<0$.</li>
+</ul>
+Pour tout réel $a$, l'inéquation $\sqrt{x}\geq a$ admet pour ensemble de solutions :
+<ul>
+<li>$S=[a^2;+\infty[$ si $a\geq 0$</li>
+<li>$S=[0;+\infty[$ si $a<0$.</li>
+</ul>
+</div>
+</div>
+</div><img src="/mabemat/figures/2nde/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block;vertical-align:middle;width:calc(26% - 12px);max-height:200px;max-width:100%;">
+<br>
+<div style="display:inline-block;vertical-align:middle;width:calc(72% - 12px);">
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>L'inéquation $\sqrt{x}\leq 4$ a pour ensemble de solutions $S=[0;16]$.</li>
+<li>L'inéquation $\sqrt{x}>5$ a pour ensemble de solutions $S=]25;+\infty[$.</li>
+<li>L'inéquation $-4\sqrt{x}-5<7$ qui s'écrit aussi $\sqrt{x}>-3$ a pour ensemble de solutions $S=[0;+\infty[$.</li>
+</ul>
+</div>
+</div>
+</div><img src="/mabemat/figures/2nde/chapitre-11/fig5.svg" alt="figure 5" style="display:inline-block;vertical-align:middle;width:calc(26% - 12px);max-height:200px;max-width:100%;">
+<h2 class="subsection-title">11.3 Valeur absolue et distance entre deux réels</h2>
+<h3 class="subsubsection-title">11.3.1 Valeur absolue d'un nombre réel</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $x$ un nombre réel.<br>
+On appelle valeur absolue de $x$, notée $\vert x \vert$, le nombre égal à $\left\{
+\begin{array}{ll}
+x & \text{ si } x\geq 0 \\
+-x & \text{ si } x\leq 0
+\end{array}
+\right.$
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:flex; justify-content:space-around; flex-wrap:wrap; gap:1rem;">
+<span>$\vert 24 \vert =24$</span>
+<span>$\vert -19{,}2 \vert =19{,}2$</span>
+<span>$\vert x-5 \vert =\left\{
+\begin{array}{ll}
+x-5 & \text{ si } x\geq 5 \\
+5-x & \text{ si } x\leq 5
+\end{array}
+\right.$</span>
+</div>
+</div>
+</div>
+<div class="remarque">
+Pour un réel $x$, on a : $\vert -x \vert =\vert x \vert$.
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout réel $x$, $\sqrt{x^2}=\vert x\vert $
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+$\sqrt{(5{,}1)^2}=5{,}1$
+<br>
+$\sqrt{ (-2)^2} =2$<br>
+$$\sqrt{(12-2x)^2}=\vert 12-2x \vert =\begin{cases}
+12-2x & \text{ si } x\leq 6 \\\\
+2x-12 & \text{ si } x\geq 6
+\end{cases}$$
+</div>
+</div>
+<h3 class="subsubsection-title">11.3.2 Distance entre deux réels</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $a$ et $b$ deux nombres réels.<br>
+On appelle distance entre $a$ et $b$ le nombre $\vert a-b \vert$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+La distance entre $-3$ et $7$ est $\vert -3 -7\vert =\vert -10\vert =10$.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $a$ et $r$ deux réels avec $r \geq 0$.<br>
+L'intervalle $[a-r\,;\,a+r]$ est l'ensemble des réels $x$ tels que $\vert x-a \vert \leq r$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit un réel $x$ tel que $\vert x-8 \vert \leq 3$. Cela signifie que $x\in [8-3;8+3]=[5;11]$.<br>
+Sur une droite graduée, cela veut dire que la distance du point d'abscisse $x$ au point d'abscisse $8$ est inférieure ou égale à $3$.
+</div>
+</div>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-11/fig6.svg" alt="figure 6" style="max-height:200px; max-width:100%;">
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/2nde/chapitre-11-racines-carrees/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/2nde/chapitre-11-racines-carrees/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

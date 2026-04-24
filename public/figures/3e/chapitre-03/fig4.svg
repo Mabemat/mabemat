@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290" width="400" height="290">
+<defs>
+  <marker id="arr_ax" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#888888"/>
+  </marker>
+  <marker id="arr_ay" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L8,3 z" fill="#888888"/>
+  </marker>
+  <clipPath id="clip">
+    <rect x="-45.0" y="-12.5"
+          width="490.0" height="315.0"/>
+  </clipPath>
+</defs>
+<line x1="60.0" y1="302.5" x2="60.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="95.0" y1="302.5" x2="95.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="130.0" y1="302.5" x2="130.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="165.0" y1="302.5" x2="165.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="235.0" y1="302.5" x2="235.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="270.0" y1="302.5" x2="270.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="305.0" y1="302.5" x2="305.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="340.0" y1="302.5" x2="340.0" y2="-12.5" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="250.0" x2="375.0" y2="250.0" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="215.0" x2="375.0" y2="215.0" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="180.0" x2="375.0" y2="180.0" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="110.0" x2="375.0" y2="110.0" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="75.0" x2="375.0" y2="75.0" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="40.0" x2="375.0" y2="40.0" stroke="#888888" stroke-width="0.5" opacity="0.35"/>
+<line x1="25.0" y1="145.0" x2="382.0" y2="145.0" stroke="#888888" stroke-width="1.5" marker-end="url(#arr_ax)"/>
+<line x1="200.0" y1="302.5" x2="200.0" y2="-2.0" stroke="#888888" stroke-width="1.5" marker-end="url(#arr_ay)"/>
+<line x1="60.0" y1="140.0" x2="60.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="60.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-4</text>
+<line x1="95.0" y1="140.0" x2="95.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="95.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-3</text>
+<line x1="130.0" y1="140.0" x2="130.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="130.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-2</text>
+<line x1="165.0" y1="140.0" x2="165.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="165.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-1</text>
+<line x1="235.0" y1="140.0" x2="235.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="235.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">1</text>
+<line x1="270.0" y1="140.0" x2="270.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="270.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">2</text>
+<line x1="305.0" y1="140.0" x2="305.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="305.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">3</text>
+<line x1="340.0" y1="140.0" x2="340.0" y2="150.0" stroke="#888888" stroke-width="1.5"/>
+<text x="340.0" y="162.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">4</text>
+<line x1="195.0" y1="250.0" x2="205.0" y2="250.0" stroke="#888888" stroke-width="1.5"/>
+<text x="186.0" y="254.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-3</text>
+<line x1="195.0" y1="215.0" x2="205.0" y2="215.0" stroke="#888888" stroke-width="1.5"/>
+<text x="186.0" y="219.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-2</text>
+<line x1="195.0" y1="180.0" x2="205.0" y2="180.0" stroke="#888888" stroke-width="1.5"/>
+<text x="186.0" y="184.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">-1</text>
+<line x1="195.0" y1="110.0" x2="205.0" y2="110.0" stroke="#888888" stroke-width="1.5"/>
+<text x="186.0" y="114.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">1</text>
+<line x1="195.0" y1="75.0" x2="205.0" y2="75.0" stroke="#888888" stroke-width="1.5"/>
+<text x="186.0" y="79.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">2</text>
+<line x1="195.0" y1="40.0" x2="205.0" y2="40.0" stroke="#888888" stroke-width="1.5"/>
+<text x="186.0" y="44.0" text-anchor="middle" font-family="serif" font-size="12" fill="#888888">3</text>
+<polyline points="158.00,10.60 159.29,16.25 160.59,21.80 161.88,27.25 163.18,32.61 164.47,37.87 165.76,43.04 167.06,48.11 168.35,53.09 169.65,57.97 170.94,62.76 172.24,67.45 173.53,72.04 174.82,76.54 176.12,80.94 177.41,85.25 178.71,89.46 180.00,93.57 181.29,97.59 182.59,101.51 183.88,105.34 185.18,109.07 186.47,112.71 187.76,116.25 189.06,119.70 190.35,123.05 191.65,126.30 192.94,129.46 194.24,132.52 195.53,135.49 196.82,138.36 198.12,141.13 199.41,143.81 200.71,146.40 202.00,148.89 203.29,151.28 204.59,153.57 205.88,155.78 207.18,157.88 208.47,159.89 209.76,161.81 211.06,163.62 212.35,165.35 213.65,166.97 214.94,168.50 216.24,169.94 217.53,171.28 218.82,172.52 220.12,173.67 221.41,174.72 222.71,175.68 224.00,176.54 225.29,177.31 226.59,177.98 227.88,178.55 229.18,179.03 230.47,179.41 231.76,179.70 233.06,179.89 234.35,179.99 235.65,179.99 236.94,179.89 238.24,179.70 239.53,179.41 240.82,179.03 242.12,178.55 243.41,177.98 244.71,177.31 246.00,176.54 247.29,175.68 248.59,174.72 249.88,173.67 251.18,172.52 252.47,171.28 253.76,169.94 255.06,168.50 256.35,166.97 257.65,165.35 258.94,163.62 260.24,161.81 261.53,159.89 262.82,157.88 264.12,155.78 265.41,153.57 266.71,151.28 268.00,148.89 269.29,146.40 270.59,143.81 271.88,141.13 273.18,138.36 274.47,135.49 275.76,132.52 277.06,129.46 278.35,126.30 279.65,123.05 280.94,119.70 282.24,116.25 283.53,112.71 284.82,109.07 286.12,105.34 287.41,101.51 288.71,97.59 290.00,93.57 291.29,89.46 292.59,85.25 293.88,80.94 295.18,76.54 296.47,72.04 297.76,67.45 299.06,62.76 300.35,57.97 301.65,53.09 302.94,48.11 304.24,43.04 305.53,37.87 306.82,32.61 308.12,27.25 309.41,21.80 310.71,16.25 312.00,10.60" fill="none" stroke="#C5607A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#clip)"/>
+<circle cx="165.0" cy="40.0" r="1.8" fill="#C5607A"/>
+<circle cx="200.0" cy="145.0" r="1.8" fill="#C5607A"/>
+<circle cx="235.0" cy="180.0" r="1.8" fill="#C5607A"/>
+<circle cx="270.0" cy="145.0" r="1.8" fill="#C5607A"/>
+<circle cx="305.0" cy="40.0" r="1.8" fill="#C5607A"/>
+</svg>

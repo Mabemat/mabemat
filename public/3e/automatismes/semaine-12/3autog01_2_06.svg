@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="326" height="326" style="display:block;margin:0.8rem auto;">
+<line x1="31" y1="5" x2="31" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="31" x2="321" y2="31" stroke="#ddd" stroke-width="0.6"/>
+<line x1="53" y1="5" x2="53" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="53" x2="321" y2="53" stroke="#ddd" stroke-width="0.6"/>
+<line x1="75" y1="5" x2="75" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="75" x2="321" y2="75" stroke="#ddd" stroke-width="0.6"/>
+<line x1="97" y1="5" x2="97" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="97" x2="321" y2="97" stroke="#ddd" stroke-width="0.6"/>
+<line x1="119" y1="5" x2="119" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="119" x2="321" y2="119" stroke="#ddd" stroke-width="0.6"/>
+<line x1="141" y1="5" x2="141" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="141" x2="321" y2="141" stroke="#ddd" stroke-width="0.6"/>
+<line x1="163" y1="5" x2="163" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="163" x2="321" y2="163" stroke="#ddd" stroke-width="0.6"/>
+<line x1="185" y1="5" x2="185" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="185" x2="321" y2="185" stroke="#ddd" stroke-width="0.6"/>
+<line x1="207" y1="5" x2="207" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="207" x2="321" y2="207" stroke="#ddd" stroke-width="0.6"/>
+<line x1="229" y1="5" x2="229" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="229" x2="321" y2="229" stroke="#ddd" stroke-width="0.6"/>
+<line x1="251" y1="5" x2="251" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="251" x2="321" y2="251" stroke="#ddd" stroke-width="0.6"/>
+<line x1="273" y1="5" x2="273" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="273" x2="321" y2="273" stroke="#ddd" stroke-width="0.6"/>
+<line x1="295" y1="5" x2="295" y2="321" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="295" x2="321" y2="295" stroke="#ddd" stroke-width="0.6"/>
+<line x1="5" y1="163" x2="321" y2="163" stroke="#555" stroke-width="1.5"/>
+<line x1="163" y1="5" x2="163" y2="321" stroke="#555" stroke-width="1.5"/>
+<polygon points="321,163 315,159 315,167" fill="#555"/>
+<polygon points="163,5 159,11 167,11" fill="#555"/>
+<line x1="31" y1="159" x2="31" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="295" x2="167" y2="295" stroke="#555" stroke-width="1.2"/>
+<line x1="53" y1="159" x2="53" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="273" x2="167" y2="273" stroke="#555" stroke-width="1.2"/>
+<text x="53" y="179" text-anchor="middle" font-size="9" fill="#777">-5</text>
+<text x="150" y="277" text-anchor="end" font-size="9" fill="#777">-5</text>
+<line x1="75" y1="159" x2="75" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="251" x2="167" y2="251" stroke="#555" stroke-width="1.2"/>
+<text x="75" y="179" text-anchor="middle" font-size="9" fill="#777">-4</text>
+<text x="150" y="255" text-anchor="end" font-size="9" fill="#777">-4</text>
+<line x1="97" y1="159" x2="97" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="229" x2="167" y2="229" stroke="#555" stroke-width="1.2"/>
+<text x="97" y="179" text-anchor="middle" font-size="9" fill="#777">-3</text>
+<text x="150" y="233" text-anchor="end" font-size="9" fill="#777">-3</text>
+<line x1="119" y1="159" x2="119" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="207" x2="167" y2="207" stroke="#555" stroke-width="1.2"/>
+<text x="119" y="179" text-anchor="middle" font-size="9" fill="#777">-2</text>
+<text x="150" y="211" text-anchor="end" font-size="9" fill="#777">-2</text>
+<line x1="141" y1="159" x2="141" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="185" x2="167" y2="185" stroke="#555" stroke-width="1.2"/>
+<text x="141" y="179" text-anchor="middle" font-size="9" fill="#777">-1</text>
+<text x="150" y="189" text-anchor="end" font-size="9" fill="#777">-1</text>
+<line x1="185" y1="159" x2="185" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="141" x2="167" y2="141" stroke="#555" stroke-width="1.2"/>
+<text x="185" y="179" text-anchor="middle" font-size="9" fill="#777">1</text>
+<text x="150" y="145" text-anchor="end" font-size="9" fill="#777">1</text>
+<line x1="207" y1="159" x2="207" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="119" x2="167" y2="119" stroke="#555" stroke-width="1.2"/>
+<text x="207" y="179" text-anchor="middle" font-size="9" fill="#777">2</text>
+<text x="150" y="123" text-anchor="end" font-size="9" fill="#777">2</text>
+<line x1="229" y1="159" x2="229" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="97" x2="167" y2="97" stroke="#555" stroke-width="1.2"/>
+<text x="229" y="179" text-anchor="middle" font-size="9" fill="#777">3</text>
+<text x="150" y="101" text-anchor="end" font-size="9" fill="#777">3</text>
+<line x1="251" y1="159" x2="251" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="75" x2="167" y2="75" stroke="#555" stroke-width="1.2"/>
+<text x="251" y="179" text-anchor="middle" font-size="9" fill="#777">4</text>
+<text x="150" y="79" text-anchor="end" font-size="9" fill="#777">4</text>
+<line x1="273" y1="159" x2="273" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="53" x2="167" y2="53" stroke="#555" stroke-width="1.2"/>
+<text x="273" y="179" text-anchor="middle" font-size="9" fill="#777">5</text>
+<text x="150" y="57" text-anchor="end" font-size="9" fill="#777">5</text>
+<line x1="295" y1="159" x2="295" y2="167" stroke="#555" stroke-width="1.2"/>
+<line x1="159" y1="31" x2="167" y2="31" stroke="#555" stroke-width="1.2"/>
+<text x="153" y="178" text-anchor="end" font-size="9" fill="#777">O</text>
+<line x1="158" y1="224" x2="168" y2="234" stroke="#C5607A" stroke-width="2.2"/>
+<line x1="158" y1="234" x2="168" y2="224" stroke="#C5607A" stroke-width="2.2"/>
+<text x="172" y="223" font-size="11" font-weight="bold" fill="#C5607A" text-anchor="start">O</text>
+<line x1="114" y1="158" x2="124" y2="168" stroke="#EB7F73" stroke-width="2.2"/>
+<line x1="114" y1="168" x2="124" y2="158" stroke="#EB7F73" stroke-width="2.2"/>
+<text x="110" y="157" font-size="11" font-weight="bold" fill="#EB7F73" text-anchor="end">N</text>
+<line x1="114" y1="246" x2="124" y2="256" stroke="#758467" stroke-width="2.2"/>
+<line x1="114" y1="256" x2="124" y2="246" stroke="#758467" stroke-width="2.2"/>
+<text x="110" y="245" font-size="11" font-weight="bold" fill="#758467" text-anchor="end">M</text>
+</svg>

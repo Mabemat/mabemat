@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-1re">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1ère — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/" class="active">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+<a class="back-link" href="http://localhost:1313/mabemat/">← Accueil</a>
+
+
+
+
+  
+    
+
+    
+    
+    <div class="level-header" style="--lc:#758467;">
+      <div class="bar" style="background:#758467;"></div>
+      <div>
+        <h1>1ère Spécialité</h1>
+        <p>Se préparer au bac</p>
+      </div>
+      <div class="lvl-tag" style="margin-left:auto;">
+        <div class="lvl-swatch">
+          <span style="background:#758467;"></span>
+          <span style="background:#B85C5C;"></span>
+        </div>
+        <div>12 chapitres</div>
+        <div>année 2026–2027</div>
+      </div>
+    </div>
+    
+    <div class="lvl-sub">
+        <div class="col">
+          <h4>Ce qu'on va faire</h4>
+          <p>Préparer le bac.</p>
+          
+        </div>
+        <div class="col">
+          <h4>Comment ça marche</h4>
+          <p>Un cours complet, le polycopié et des exercices par chapitre.</p>
+          
+        </div>
+        
+        <div class="col">
+          <h4>Automatismes</h4>
+          <p>Des séances régulières pour entretenir les réflexes et préparer la partie automatismes du bac. <a href="/mabemat/1re/automatismes/" style="color:#758467;">Voir les séances →</a></p>
+          
+        </div>
+        
+      </div>
+    
+    
+    
+    
+    
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    <div class="filter-bar fade-up d3">
+      <div class="tabs">
+        <button class="active" data-filter="*">Tous</button>
+        <button data-filter="Algèbre">Algèbre</button><button data-filter="Analyse">Analyse</button><button data-filter="Géométrie">Géométrie</button><button data-filter="Probabilités et statistiques">Probabilités et statistiques</button>
+      </div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="chap-search" placeholder="chercher un chapitre…" autocomplete="off" />
+      </div>
+    </div>
+    
+    <div class="chap-list fade-up d4" id="chap-list">
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-01-polynome-second-degre/" data-cat="Algèbre">
+          <div class="chap-num">
+            
+              01
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 1 — Polynôme du second degré
+          <span class="sub">Algèbre</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-02-suites-numeriques/" data-cat="Algèbre">
+          <div class="chap-num">
+            
+              02
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 2 — Suites numériques
+          <span class="sub">Algèbre</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-03-derivation-locale/" data-cat="Analyse">
+          <div class="chap-num">
+            
+              03
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 3 — Dérivation locale
+          <span class="sub">Analyse</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-04-probabilites-conditionnelles/" data-cat="Probabilités et statistiques">
+          <div class="chap-num">
+            
+              04
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 4 — Probabilités conditionnelles
+          <span class="sub">Probabilités et statistiques</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-05-derivation-globale/" data-cat="Analyse">
+          <div class="chap-num">
+            
+              05
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 5 — Dérivation globale
+          <span class="sub">Analyse</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-06-suites-arithmetiques-geometriques/" data-cat="Algèbre">
+          <div class="chap-num">
+            
+              06
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 6 — Suites arithmétiques et géométriques
+          <span class="sub">Algèbre</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-07-produit-scalaire/" data-cat="Géométrie">
+          <div class="chap-num">
+            
+              07
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 7 — Produit scalaire
+          <span class="sub">Géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-08-variables-aleatoires/" data-cat="Probabilités et statistiques">
+          <div class="chap-num">
+            
+              08
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 8 — Variables aléatoires discrètes
+          <span class="sub">Probabilités et statistiques</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-09-applications-derivation/" data-cat="Analyse">
+          <div class="chap-num">
+            
+              09
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 9 — Applications de la dérivation
+          <span class="sub">Analyse</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-10-fonction-exponentielle/" data-cat="Analyse">
+          <div class="chap-num">
+            
+              10
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 10 — Fonction exponentielle
+          <span class="sub">Analyse</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-11-trigonometrie/" data-cat="Analyse">
+          <div class="chap-num">
+            
+              11
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 11 — Trigonométrie
+          <span class="sub">Analyse</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/1re/chapitre-12-applications-produit-scalaire/" data-cat="Géométrie">
+          <div class="chap-num">
+            
+              12
+            
+          </div>
+
+        <div class="chap-title">
+          Chapitre 12 — Applications du produit scalaire
+          <span class="sub">Géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          <span class="res on">Exos</span>
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+    </div>
+    
+
+  
+
+
+
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.filter-bar .tabs button');
+  var searchInput = document.getElementById('chap-search');
+  var rows = document.querySelectorAll('#chap-list .chap-row');
+  var activeFilter = '*';
+  var searchQuery = '';
+
+  function applyFilters() {
+    rows.forEach(function(row) {
+      var cat = row.dataset.cat || '';
+      var title = row.querySelector('.chap-title') ? row.querySelector('.chap-title').textContent.toLowerCase() : '';
+      var num = row.querySelector('.chap-num') ? row.querySelector('.chap-num').textContent.trim().replace(/^0+/, '') : '';
+      var matchCat = activeFilter === '*' || cat.split('|').indexOf(activeFilter) !== -1;
+      var matchSearch = !searchQuery || title.indexOf(searchQuery) !== -1 || num === searchQuery.replace(/^0+/, '');
+      row.style.display = (matchCat && matchSearch) ? '' : 'none';
+    });
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      applyFilters();
+    });
+  }
+})();
+</script>
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

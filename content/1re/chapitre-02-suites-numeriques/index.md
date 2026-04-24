@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 2 — Suites numériques"
+title: "Suites numériques"
 level: "1re"
 chapter_number: 2
 weight: 2

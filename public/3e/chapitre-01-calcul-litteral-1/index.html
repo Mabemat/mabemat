@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcul littéral (1) — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/3e/">3ème</a>
+    <span class="sep">/</span>
+    <span>Chapitre 01</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#8B3C52;">01</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 01 · 3ème
+      </div>
+      
+      <h1 class="fade-up d2">Calcul littéral (1)</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#8B3C52;"></span>Leçon disponible</span>
+        <span><span class="dot" style="background:#8B3C52;"></span>Brevet</span>
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/3e/chapitre-01-calcul-litteral-1/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+  <a class="res-card res-card-brevet fade-up d4" href="/mabemat/3e/chapitre-01-calcul-litteral-1-brevet/">
+    <div class="res-corner">Brevet</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Entraînement brevet</div>
+      <h3>Prépare <em>l'examen</em></h3>
+      <p class="res-desc">Exercices type brevet des collèges avec correction détaillée.</p>
+    </div>
+    <div class="res-open">Commencer <span class="res-arrow">→</span></div>
+  </a>
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">3</div>
+      <div class="step-t">Entraînement brevet</div>
+      <div class="step-s">Type brevet</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/3e/">
+    <div><div class="adj-lbl">← 3ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/3e/chapitre-02-pythagore-et-thales/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/3e/chapitre-01-calcul-litteral-1/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        <a href="/mabemat/3e/chapitre-01-calcul-litteral-1-brevet/"><span>Passer aux exercices type Brevet</span><span>→</span></a>
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/">3ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/chapitre-01-calcul-litteral-1/">Calcul littéral (1)</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 01 - Leçon
+      </div>
+      <h1 class="lesson-h1">Calcul littéral (1)</h1>
+
+      <div class="full-lesson niveau-3e">
+        <h2 class="subsection-title">1.1 Distributivité simple</h2>
+<h3 class="subsubsection-title">1.1.1 Développer une expression littérale</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Développer une expression, c'est transformer un produit en somme.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Cela peut aider pour calculer astucieusement : <br>
+${\color{#EB7F73}\boldsymbol{24}} \times 101 = {\color{#EB7F73}\boldsymbol{24}} \times (100 + 1) = {\color{#EB7F73}\boldsymbol{24}} \times 100 + {\color{#EB7F73}\boldsymbol{24}} \times 1 = 2400 + 24 = 2424$
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété - Distributivité simple</div>
+<div class="environment-content">
+On considère $a, b, k$ trois nombres.
+<ul style="column-count:2; column-gap:2rem;">
+<li>$ k \times (a + b) = k \times a + k \times b $</li>
+<li>$ k \times (a - b) = k \times a - k \times b $</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div class="math-display" style="display:inline-block; vertical-align:top; width:calc(49% - 10px); margin:0 5px 5px 0;">
+$$
+\begin{align*}
+\quad {\textcolor{#EB7F73}{\bullet}} \quad {\color{#EB7F73}\boldsymbol{2}}(x + 3) &= {\color{#EB7F73}\boldsymbol{2}} \times x + {\color{#EB7F73}\boldsymbol{2}} \times 3 &\\
+&= 2x + 6 &\end{align*}
+$$
+</div><div class="math-display" style="display:inline-block; vertical-align:top; width:calc(49% - 10px); margin:0 5px 5px 0;">
+$$
+\begin{align*}
+\quad {\textcolor{#EB7F73}{\bullet}} \quad {\color{#EB7F73}\boldsymbol{8y}}(2y - 3) &= {\color{#EB7F73}\boldsymbol{8y}} \times 2y - {\color{#EB7F73}\boldsymbol{8y}} \times 3& \\
+&= 16y^2 - 24& \end{align*}
+$$
+</div>
+</div>
+</div>
+<h3 class="subsubsection-title">1.1.2 Factoriser une expression</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Factoriser une expression, c'est transformer une somme en un produit.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété - Factorisation</div>
+<div class="environment-content">
+On considère $a, b, k$ trois nombres.
+<ul style="column-count:2; column-gap:2rem;">
+<li>$ k \times a + k \times b = k \times (a + b) $</li>
+<li>$ k \times a - k \times b = k \times (a - b) $</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div class="math-display" style="display:inline-block; vertical-align:top; width:calc(49% - 10px); margin:0 5px 5px 0;">
+$$
+\begin{align*}
+\quad {\textcolor{#EB7F73}{\bullet}} \quad  20x + 15x^2 &= {\color{#EB7F73}\boldsymbol{5}} \times 4 \times {\color{#EB7F73}\boldsymbol{x}} + {\color{#EB7F73}\boldsymbol{5}} \times 3 \times {\color{#EB7F73}\boldsymbol{x}} \times x &\\
+&= \color{#EB7F73}\boldsymbol{5x}(4 + 3x) &\end{align*}
+$$
+</div><div class="math-display" style="display:inline-block; vertical-align:top; width:calc(49% - 10px); margin:0 5px 5px 0;">
+$$
+\begin{align*}
+\quad \textcolor{#EB7F73}{\bullet} \quad  28y - 7 &= {\color{#EB7F73}\boldsymbol{7}} \times 4y - {\color{#EB7F73}\boldsymbol{7}} \times 1 &\\
+&= {\color{#EB7F73}\boldsymbol{7}}(4y - 1) &\end{align*}
+$$
+</div>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div style="display:inline-block; width:calc(50% - 1rem); vertical-align:top;">
+<ul>
+<li>
+$A={{x}}{\color{#EB7F73}\boldsymbol{(x-4)}}-{{5}}{ \color{#EB7F73}\boldsymbol{(x-4)}}$<br>
+$\phantom{A}={ \color{#EB7F73}\boldsymbol{(x-4)}}{ {(x-5)}}$
+</li>
+</ul>
+</div>
+<div style="display:inline-block; width:calc(50% - 1rem); vertical-align:top;">
+<ul>
+<li>
+$A={ \color{#EB7F73}\boldsymbol{(2x-4)}}{ {(5x-3)}}-{ \color{#EB7F73}\boldsymbol{(2x-4)}}{ {(2x+2)}}$<br>
+$\phantom{A}={ \color{#EB7F73}\boldsymbol{(2x-4)}}{ {(5x-3-(2x+2))}}$<br>
+$\phantom{A}={ \color{#EB7F73}\boldsymbol{(2x-4)}}{ {(5x-3-2x-2)}}$<br>
+$\phantom{A}={ \color{#EB7F73}\boldsymbol{(2x-4)}}{ {(3x-5)}}$
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 class="subsection-title">1.2 Double distributivité</h2>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+On considère $a, b, c, d$ quatre nombres.
+$$(a + b)(c + d) = ac + ad + bc + bd$$</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div class="math-display">
+$$
+\begin{align*}
+\quad\quad \textcolor{#EB7F73}{\bullet} \quad (2x + 5)(3x + 7) &= 2x \times 3x + 2x \times 7 + 5 \times 3x + 5 \times 7 &\\
+&= 6x^2 + 14x + 15x + 35 &\\
+&= 6x^2 + 29x + 35 &
+\end{align*}
+$$
+</div>
+<div class="math-display">
+$$
+\begin{align*}
+\quad\quad \textcolor{#EB7F73}{\bullet} \quad (3x - 5)^2 &= (3x - 5)(3x - 5) &\\
+&= 3x \times 3x + 3x \times (-5) + (-5) \times 3x + (-5) \times (-5) &\\
+&= 9x^2 - 15x - 15x + 25 &\\
+&= 9x^2 - 30x + 25 &
+\end{align*}
+$$
+</div>
+<div class="math-display">
+$$
+\begin{align*}
+\quad\quad \textcolor{#EB7F73}{\bullet} \quad (2y - 3)(y - 5) &= 2y \times y + 2y \times (-5) + (-3) \times y + (-3) \times (-5) &\\
+&= 2y^2 - 10y - 3y + 15 &\\
+&= 2y^2 - 13y + 15 &
+\end{align*}
+$$
+</div>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/3e/chapitre-01-calcul-litteral-1/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

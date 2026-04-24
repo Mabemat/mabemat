@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puissances — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/3e/">3ème</a>
+    <span class="sep">/</span>
+    <span>Chapitre 06</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#8B3C52;">06</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 06 · 3ème
+      </div>
+      
+      <h1 class="fade-up d2">Puissances</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#8B3C52;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/3e/chapitre-06-puissances/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/3e/">
+    <div><div class="adj-lbl">← 3ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/3e/chapitre-07-calcul-litteral-2/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/3e/chapitre-06-puissances/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/">3ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/chapitre-06-puissances/">Puissances</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 06 - Leçon
+      </div>
+      <h1 class="lesson-h1">Puissances</h1>
+
+      <div class="full-lesson niveau-3e">
+        <h2 class="subsection-title">6.1 Calculer avec les puissances</h2>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+$ $
+<ul style="column-count:2; column-gap:2rem;">
+<li>Pour $ n\geq 1, a^n=a\times ... \times a $</li>
+<li>$ a^1=a $</li>
+<li>Si $ a\neq 0, a^0=1 $</li>
+<li>Si $ a\neq 0$ et $n\neq 0$, l'inverse $\dfrac{1}{a^n}$ du nombre $a^n$ est noté $a^{-n}$</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
+<ul>
+  <li>$10^3 = 1000$</li>
+  <li>$2^1 = 2$</li>
+</ul>
+<ul>
+  <li>$(-3)^4 = 81$</li>
+  <li>$2^0 = 1$</li>
+</ul>
+<ul>
+  <li>$10^{-4} = 0{,}0001$</li>
+  <li>$(-3)^{-2} = \dfrac{1}{9}$</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs. <br>
+Produit de puissances : $ a^n \times a^m = a^{n+m} $
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
+  <li>$4^2 \times 4^3 = 4^5$</li>
+  <li>$5^{11}=5^3 \times 5^8$</li>
+  <li>$(2x)^{-5} \times (2x)^7 = (2x)^2$</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs. <br>
+Quotient de puissances : $ \dfrac{a^n}{a^m} = a^{n-m} $
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
+<li>$\dfrac{2^5}{2^3} = 2^2$</li>
+<li>$7^3 = \dfrac{7^8}{7^5}$</li>
+<li>$\dfrac{(5y)^{10}}{(5y)^4} = (5y)^6$</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs. <br>
+Puissance de puissance : $ (a^n)^m = a^{n \times m} $
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
+<li>$(5^2)^4 = 5^8 $</li>
+<li>$ 3^8 = (3^4)^2 $</li>
+<li>$((-3z)^5)^3 = (-3z)^{15}$</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs.<br>
+Puissance d'un produit : $ (a \times b)^n = a^n \times b^n $
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
+<li>$3^4 \times 5^4 = 15^4$</li>
+<li>$(14)^3 = 2^3 \times 7^3$</li>
+<li>$(xy)^5 = x^5y^5$</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs.<br>Puissance d'un quotient : $ \left( \dfrac{a}{b} \right)^n = \dfrac{a^n}{b^n} $
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
+<li>$\left(  \dfrac{2}{3 }\right)  ^4 = \dfrac{2^4}{3^4}$</li>
+<li>$\left(  \dfrac{5}{7 }\right)  ^2 = \dfrac{25}{49}$</li>
+<li>$\left(  \dfrac{4x}{7y }\right)  ^3 = \dfrac{4x^3}{7y^3}$</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div class="math-display" style="display:inline-block; vertical-align:top; width:calc(49% - 10px); margin:0 5px 5px 0;">
+$$
+\begin{align*} \quad \quad \textcolor{#EB7F73}{\bullet}\quad 
+\dfrac{5\times 5^3}{25} &= \dfrac{5^{1+3}}{5^2} &\\
+&= \dfrac{5^{4}}{5^2} &\\
+&= 5^{4-2} &\\
+&= 5^{2}&
+\end{align*}
+$$
+</div><div class="math-display" style="display:inline-block; vertical-align:top; width:calc(49% - 10px); margin:0 5px 5px 0;">
+$$
+\begin{align*}\quad \quad \textcolor{#EB7F73}{\bullet} \quad 
+\dfrac{a^{4}\times a^3}{a^{-3}} &= \dfrac{a^{4+3}}{a^{-3}} &\\
+&= \dfrac{a^{7}}{a^{-3}} &\\
+&= a^{7-(-3)} &\\
+&= a^{10}&
+\end{align*}
+$$
+</div>
+</div>
+</div>
+<h2 class="subsection-title">6.2 Notation scientifique</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+La notation scientifique d'un nombre décimal positif est l'écriture de ce nombre sous la forme $a \times 10^n$ avec :
+<ul>
+<li>$a$ est un nombre décimal tel que $1 \leq a < 10$.</li>
+<li>$n$ est un nombre entier relatif.</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>La notation scientifique de $8\,600\,000\,000$ est : $8,6 \times 10^9$.</li>
+<li>La notation scientifique de $0,000\,065$ est : $6,5 \times 10^{-5}$.</li>
+</ul>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/3e/chapitre-06-puissances/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

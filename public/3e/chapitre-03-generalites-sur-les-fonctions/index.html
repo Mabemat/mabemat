@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Généralités sur les fonctions — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/3e/">3ème</a>
+    <span class="sep">/</span>
+    <span>Chapitre 03</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#8B3C52;">03</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 03 · 3ème
+      </div>
+      
+      <h1 class="fade-up d2">Généralités sur les fonctions</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Proportionnalité, fonctions
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#8B3C52;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/3e/chapitre-03-generalites-sur-les-fonctions/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/3e/">
+    <div><div class="adj-lbl">← 3ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/3e/chapitre-04-triangles-semblables/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/3e/chapitre-03-generalites-sur-les-fonctions/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/">3ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/chapitre-03-generalites-sur-les-fonctions/">Généralités sur les fonctions</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 03 - Leçon
+      </div>
+      <h1 class="lesson-h1">Généralités sur les fonctions</h1>
+
+      <div class="full-lesson niveau-3e">
+        <h2 class="subsection-title">3.1 Vocabulaire sur les fonctions</h2>
+<h3 class="subsubsection-title">3.1.1 Définition</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Une fonction est un procédé qui permet, à partir d'un nombre de départ, d'obtenir un unique nombre d'arrivée.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Voici un programme de calcul : 
+<ul>
+<li>Choisir un nombre</li>
+<li>Multiplier par 6</li>
+<li>Ajouter 11</li>
+<li>Multiplier par 7</li>
+</ul>Si on note $x$ le nombre de départ, quel est le résultat du programme de calcul ? <br>
+$$x\xrightarrow{\times  6} 6x\xrightarrow{+11}6x+11 \xrightarrow{\times  7}(6x+11)\times 7=42x+77$$<br>
+Le résultat du programme est donc $42x+77$. <br>
+<p>On dit que $f(x)=42x+77$ est une fonction.</p>
+</div>
+</div>
+<h3 class="subsubsection-title">3.1.2 Image et antécédent</h3>
+<div class="environment vocabulaire">
+<div class="environment-title">Vocabulaire</div>
+<div class="environment-content">
+Soit $f$ une fonction telle que $f(4) = 8$.
+<ul>
+<li>8 est l'image de 4 par la fonction $f$.</li>
+<li>4 est un antécédent de 8 par la fonction $f$.</li>
+</ul>
+</div>
+</div>
+<h2 class="subsection-title">3.2 Calculer l'image et les antécédents</h2>
+<h3 class="subsubsection-title">3.2.1 Calcul de l'image</h3>
+<div class="environment methode">
+<div class="environment-title">Méthode - Calculer l'image d'un nombre par une fonction revient à remplacer $x$ par ce nombre.</div>
+<div class="environment-content">
+Calculer l'image de 3 par la fonction $f$ où $f(x) = 5x - 2$. On remplace $x$ par 3.
+<div class="math-display">
+$$
+\begin{align*}
+f(3) &= 5 \times 3 - 2 \\
+f(3) &= 15 - 2 \\
+f(3) &= 13
+\end{align*}
+$$
+</div>
+<p>L&rsquo;image de 3 par la fonction $f$ est 13.</p>
+</div>
+</div>
+<div class="remarque">
+On obtient toujours un seul nombre à l'arrivée : l'image d'un nombre par une fonction est donc <strong>unique</strong> !
+</div>
+<h3 class="subsubsection-title">3.2.2 Calcul des antécédents</h3>
+<div class="environment methode">
+<div class="environment-title">Méthode - Calculer le ou les antécédent(s) d'un nombre par une fonction revient à résoudre une équation.</div>
+<div class="environment-content">
+Calculer le ou les antécédent(s) de 8 par la fonction $f$ définie par $f(x) = 5x - 2$. <br>
+On résout l'équation $f(x) = 8$.
+<div class="math-display">
+$$
+\begin{align*}
+f(x) &= 8 \\
+5x - 2 &= 8 \\
+5x &= 10 \\
+x &= 2
+\end{align*}
+$$
+</div>
+<p>L&rsquo;antécédent de 8 par la fonction $f$ est 2.</p>
+</div>
+</div>
+<div class="remarque">
+Un nombre peut posséder plusieurs antécédents par une fonction.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On considère la fonction $g$ définie par $g(x) = x^2 - 4$.
+<ul>
+<li>$g(3) = 3^2 - 4 = 5$ ; 3 est un antécédent de 5 par $g$.</li>
+<li>$g(-3) = (-3)^2 - 4 = 9 - 4 = 5$ ; -3 est un antécédent de 5 par $g$.</li>
+</ul>
+Donc 5 a deux antécédents par $g$ !
+</div>
+</div>
+<h2 class="subsection-title">3.3 Tableau de valeurs</h2>
+<p>Un tableau de valeurs d&rsquo;une fonction est un tableau à deux lignes qui contient :</p>
+<ul>
+<li>des valeurs de $x$ sur la 1ère ligne ;</li>
+<li>les valeurs de $f(x)$ sur la 2ème ligne (les images de la 1ère ligne).</li>
+</ul>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Compléter le tableau de valeurs de la fonction $f$ définie par $f(x) = 5x - 2$.
+<table>
+<tr>
+<th>
+$ x $</th>
+<th>$ -2 $</th>
+<th>$ 2 $</th>
+<th>$ 3 $</th>
+</tr>
+<tr>
+<td>$ f(x) $</td>
+<td>$ -12 $</td>
+<td>$ 8 $</td>
+<td>$ 13 $</td>
+</tr>
+</table>
+<ul>
+<li>On cherche la valeur de la 2ème ligne, donc l'image de -2 par $f$ : $f(-2) = 5 \times (-2) - 2 = -12$.</li>
+<li>On cherche la valeur de la 1ère ligne, donc un antécédent de 8 par la fonction $f$ : il s'agit de 2 (déjà calculé).</li>
+<li>On cherche la valeur de la 2ème ligne, donc l'image de 3 par la fonction $f$ : $f(3) = 13$ (déjà calculé).</li>
+</ul>
+</div>
+</div>
+<h2 class="subsection-title">3.4 Représentation graphique d'une fonction</h2>
+<h3 class="subsubsection-title">3.4.1 Courbe représentative</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Dans un repère, la courbe représentative d'une fonction $f$ (notée $C_f$) est l'ensemble des points de coordonnées $(x; f(x))$ où $x$ est un nombre.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Ci-dessous, on a tracé la courbe représentative de la fonction $f$.
+<ol>
+<li>Sachant que $f(0)=-1$, donnez les coordonnées d'un point de la courbe $C_f$ ?</li>
+<li>Est ce que $f(-2)=1$ ?</li>
+<li>Est ce que $f(3)=-1$ ?</li>
+</ol>
+<img src="/mabemat/figures/3e/chapitre-03/fig1.svg" alt="figure 1" style="height:400px; max-width:100%; display:block; margin:auto;">
+<ol>
+<li>Comme $f(0)=-1$, on a $(0;-1) \in C_F$.</li>
+<li>Pour savoir si $f(-2)=1$, il suffit de regarder sur le graphique sir le point qui a pour coordonnées $(-2;1)$ appartient à la courbe de $f$. <br>
+Ici, $(-2;1)\in C_f$ donc $f(-2)=1$.</li>
+<li>Pour savoir si $f(3)=-1$, il suffit de regarder sur le graphique sir le point qui a pour coordonnées $(3;-1)$ appartient à la courbe de $f$. <br>
+Ici, $(3;-1)\notin C_f$ donc $f(3)\neq -1$.</li>
+</ol>
+</div>
+</div>
+<h3 class="subsubsection-title">3.4.2 Lectures graphiques</h3>
+<div class="environment methode">
+<div class="environment-title">Méthode - Lire graphiquement une image.</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+<br><br><br><strong>Image de $-2$ par la fonction $f$</strong>
+<ul>
+<li>Partir de $-2$ sur l'axe des abscisses</li>
+<li>Se déplacer verticalement jusqu'à $C_f$</li>
+<li>Lire l'ordonnée du point rencontré</li>
+</ul>
+<strong>L'image de $-2$ par $f$ est $1$</strong>
+</div><img src="/mabemat/figures/3e/chapitre-03/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:top; width:calc(49% - 12px); maw-height:300px; max-width:100%;">
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Lire graphiquement des antécédents.</div>
+<div class="environment-content"> 
+<div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+<br><br><br><strong>Antécédents de $-1$ par la fonction $f$.</strong>
+<ul>
+<li>Tracer une droite passant par le $-1$ de l'axe des ordonnées</li>
+<li>Marquer les points d'intersection de cette droite avec $C_f$</li>
+<li>Lire les abscisses des points d'intersection</li>
+</ul>
+<strong>Les antécédents de $-1$ par $f$ sont $0$ et $4$</strong>
+</div><img src="/mabemat/figures/3e/chapitre-03/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:top; width:calc(49% - 12px); height:300px; max-width:100%;">
+<br>
+</div>
+</div>
+<h3 class="subsubsection-title">3.4.3 Construire la courbe représentative d'une fonction</h3>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Construire la courbe représentative de la fonction $g$ définie par $g(x) = x^2 - 2x$.<br>
+<div style="display:inline-block; vertical-align:top; width:calc(60% - 12px);">
+<br><br><br><ol>
+<li>On construit un tableau de valeurs de la fonction.
+<table>
+<tr>
+<th>$x$</th>
+<th>-1</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+<tr>
+<td>$g(x)$</td>
+<td>3</td>
+<td>0</td>
+<td>-1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+</table>
+</li>
+<li>On place les points dans un repère : $(-1; 3)$, $(0; 0)$, $(1; -1)$, $(2; 0)$, $(3; 3)$.</li>
+<li>On relie les points à la main (et on prolonge si nécessaire).</li>
+</ol>
+</div><img src="/mabemat/figures/3e/chapitre-03/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:top; width:calc(39% - 12px); max-height:400px; max-width:100%;">
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/3e/chapitre-03-generalites-sur-les-fonctions/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

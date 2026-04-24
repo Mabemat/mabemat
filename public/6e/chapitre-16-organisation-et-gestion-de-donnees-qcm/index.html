@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM — Organisation et gestion de données — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+
+  
+    <a href="/mabemat/6e/">6ème</a>
+    <span class="sep">/</span>
+  
+
+  
+    <a href="/mabemat/6e/chapitre-16-organisation-et-gestion-de-donnees/">
+      
+        Chapitre 16
+      
+    </a>
+    <span class="sep">/</span>
+  
+
+  <span>QCM — Organisation et gestion de données</span>
+</div>
+
+
+<div class="qcm-page">
+  <h1 style="color: #D36740;">QCM — Organisation et gestion de données</h1>
+  <div class="qcm-container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Rémi a compté les vêtements dans son armoire. Les effectifs sont représentés sur le diagramme ci-dessous.</p>
+<div style="text-align:center;">
+<img src="/mabemat/figures/6e/chapitre-16/QCM-Fig1.png" alt="Diagramme en bâtons — vêtements" style="max-width:55%; height:auto;">
+</div>
+Combien y a-t-il de vêtements en tout ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>8</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>16</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>18</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>On lit les effectifs sur le diagramme :  6 chemises ,  2 T-shirts ,  10 pulls .</p>
+$$6 + 2 + 10 = \mathbf{18}$$<p>Il y a  18 vêtements  en tout.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Dans le parc naturel de Secai, voici un diagramme représentant les effectifs de quelques espèces animales.</p>
+<div style="text-align:center;">
+<img src="/mabemat/figures/6e/chapitre-16/QCM-Fig12.png" alt="Diagramme en ligne brisée — animaux Secai" style="max-width:50%; height:auto;">
+</div>
+Quelle est l'espèce  la plus nombreuse  ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Gazelles</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Girafes</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Hyènes</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>On repère le point le plus haut sur le diagramme en ligne brisée : il correspond aux  Girafes  (environ 93 individus), bien au-dessus des autres espèces.</p>
+<p>L&rsquo;espèce la plus nombreuse est  les Girafes .</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Dans le parc naturel de Cigel, voici un diagramme circulaire représentant les effectifs de quelques espèces animales.</p>
+<div style="text-align:center;">
+<img src="/mabemat/figures/6e/chapitre-16/QCM-Fig13.png" alt="Diagramme circulaire — animaux Cigel" style="max-width:40%; height:auto;">
+</div>
+L'espèce la plus nombreuse (les Zèbres) représente…
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Plus de la moitié des animaux</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>La moitié des animaux</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Moins de la moitié des animaux</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Dans un diagramme circulaire, « la moitié » correspond à un demi-cercle (180°). Le secteur des  Zèbres  est le plus grand, mais il occupe  moins d&rsquo;un demi-cercle .</p>
+<p>Les Zèbres représentent donc  moins de la moitié  des animaux.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Dans le parc naturel de Barmwich, voici un diagramme en bâtons représentant les effectifs de quelques espèces animales.</p>
+<div style="text-align:center;">
+<img src="/mabemat/figures/6e/chapitre-16/QCM-Fig14.png" alt="Diagramme en bâtons — animaux Barmwich" style="max-width:50%; height:auto;">
+</div>
+Quelle est l'espèce  la plus nombreuse  ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Girafes</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Hyènes</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Lycaons</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>On lit la hauteur de chaque bâton :  Lycaons ≈ 38 , Girafes ≈ 23, Hyènes ≈ 15, Servals ≈ 9.</p>
+<p>Le bâton le plus haut correspond aux  Lycaons .</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    <p>Voici un tableau à double entrée sur les fruits rapportés du marché.</p>
+<div style="text-align:center;margin:0.8em 0;">
+<table style="border-collapse:collapse;margin:0 auto;">
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Coing</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Kiwi</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Pêche</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Albert</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">7</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">2</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">14</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Océane</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">1</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">4</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">0</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">5</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">8</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">6</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">19</td>
+</tr>
+</table>
+</div>
+Quel est le  nombre de kiwi  rapportés par Albert ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>5</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>6</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>14</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    On lit le nombre sur la ligne d&rsquo;Albert et sur la colonne kiwi :  2 fruits .
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Voici un tableau à double entrée sur les fruits rapportés du marché.</p>
+<div style="text-align:center;margin:0.8em 0;">
+<table style="border-collapse:collapse;margin:0 auto;">
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Coing</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Kiwi</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Pêche</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Albert</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">7</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">2</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">14</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Océane</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">1</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">4</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">0</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">5</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">8</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">6</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">19</td>
+</tr>
+</table>
+</div>
+Quel est le  nombre total  de fruits achetés par les deux amis ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>14</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>5</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>19</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    On lit la case en bas à droite du tableau, à l&rsquo;intersection de la ligne TOTAL et de la colonne TOTAL :  19 fruits .
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Voici un tableau à double entrée sur les fruits rapportés du marché.</p>
+<div style="text-align:center;margin:0.8em 0;">
+<table style="border-collapse:collapse;margin:0 auto;">
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Coing</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Kiwi</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Pêche</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Albert</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">7</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">2</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">14</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Océane</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">1</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">4</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">0</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">5</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">8</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">6</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">19</td>
+</tr>
+</table>
+</div>
+Qui a rapporté  le plus de fruits  ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Albert</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Océane</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À égalité</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>On compare les totaux dans la colonne TOTAL : Albert =  14 , Océane =  5 .</p>
+<p>Comme $14 > 5$, c&rsquo;est  Albert  qui a rapporté le plus de fruits.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Voici un tableau à double entrée sur les fruits rapportés du marché.</p>
+<div style="text-align:center;margin:0.8em 0;">
+<table style="border-collapse:collapse;margin:0 auto;">
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Coing</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Kiwi</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Pêche</td>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Albert</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">7</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">2</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">14</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Océane</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">1</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">4</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">0</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">5</td>
+</tr>
+<tr>
+<td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">TOTAL</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">8</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">6</td>
+<td style="border:1px solid #D36740;padding:5px 16px;">5</td>
+<td style="border:1px solid #D36740;padding:5px 16px;font-weight:bold;">19</td>
+</tr>
+</table>
+</div>
+Quel fruit a été rapporté  en la plus grande quantité  ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Kiwis</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Pêches</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Coings</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Aucune réponse</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>On lit la ligne TOTAL : Coings =  8 , Kiwis = 6, Pêches = 5.</p>
+<p>C&rsquo;est le  coing  qui a été rapporté en plus grande quantité.</p>
+
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

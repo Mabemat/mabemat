@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-1re">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapitre 12 — Applications du produit scalaire — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/" class="active">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/1re/">1ère Spécialité</a>
+    <span class="sep">/</span>
+    <span>Chapitre 12</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#758467;">12</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 12 · 1ère Spécialité
+      </div>
+      
+      <h1 class="fade-up d2">Chapitre 12 — Applications du produit scalaire</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Géométrie
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#758467;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#758467;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/1re/chapitre-12-applications-produit-scalaire/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-12-applications-produit-scalaire/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/1re/">
+    <div><div class="adj-lbl">← 1ère</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  <div></div>
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/1re/chapitre-12-applications-produit-scalaire/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/1re/chapitre-12-applications-produit-scalaire/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/">1ère Spécialité</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/chapitre-12-applications-produit-scalaire/">Chapitre 12 — Applications du produit scalaire</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 12 - Leçon
+      </div>
+      <h1 class="lesson-h1">Chapitre 12 — Applications du produit scalaire</h1>
+
+      <div class="full-lesson niveau-1re">
+        <h2 class="subsection-title">12.1 Relations dans le triangle</h2>
+<h3 class="subsubsection-title">12.1.1 Théorème de la médiane</h3>
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(66% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Soit deux points $A$ et $B$ et $I$ milieu de $[AB]$.<br>
+Alors pour tout point $M$ du plan, on a $MA^2+MB^2=2MI^2+\dfrac{AB^2}{2}$.
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:top; width:calc(32% - 12px); max-height:200px; max-width:100%;">
+<p>Démonstration. <br></p>
+<div class="math-display">
+$$
+\begin{align*}MA^2+MB^2&=(\overrightarrow{MA})^2+(\overrightarrow{MB})^2=(\overrightarrow{MI}+\overrightarrow{IA})^2+(\overrightarrow{MI}+\overrightarrow{IB})^2=(MI^2+2\overrightarrow{MI}
+.\overrightarrow{IA}+IA^2)+(MI^2+2\overrightarrow{MI}
+.\overrightarrow{IB}+IB^2)\\
+&=2MI^2+2\overrightarrow{MI}
+.(\overrightarrow{IA}+\overrightarrow{IB})+IA^2+IB^2=2MI^2+2\overrightarrow{MI}
+.\overrightarrow{0}+\left(\dfrac{1}{2}AB\right)^2+\left(\dfrac{1}{2}AB\right)^2=2MI^2+\dfrac{AB^2}{2}
+\end{align*}
+$$
+</div>
+<div class="environment theoreme">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Soit deux points $A$ et $B$ et $I$ milieu de $[AB]$.<br>
+Alors pour tout point $M$ du plan, on a $\overrightarrow{MA}.\overrightarrow{MB}=MI^2-\dfrac{AB^2}{4}$.
+</div>
+</div>
+<p>Démonstration. <br><br>
+$\overrightarrow{MA}.\overrightarrow{MB}=(\overrightarrow{MI}+\overrightarrow{IA})+(\overrightarrow{MI}+\overrightarrow{IB})=MI^2+\overrightarrow{MI}
+.\overrightarrow{IB}+\overrightarrow{IA}
+.\overrightarrow{MI}+\overrightarrow{IA}
+.\overrightarrow{IB}
+=2MI^2+\overrightarrow{MI}
+.(\overrightarrow{IB}+\overrightarrow{IA})+\left(-\dfrac{1}{2}\overrightarrow{AB}\right).\left(\dfrac{1}{2}\overrightarrow{AB}\right)=2MI^2-\dfrac{AB^2}{4}$</p>
+<h3 class="subsubsection-title">12.1.2 Formules d'Al Kashi</h3>
+<p>Ces formules permettent de calculer la longueur du côté d&rsquo;un triangle lorsqu&rsquo;on connaît l&rsquo;angle opposé et les deux autres longueurs des côtés, ou de calculer les angles d&rsquo;un triangle dont on connaît les longueurs des trois côtés.</p>
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(55% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+On pose $AB = c$, $BC = a$ et $CA = b$. Alors :
+<ul>
+<li>$a^2=b^2+c^2-2bc\cos(\widehat{A})$</li>
+<li>$b^2=a^2+c^2-2ac\cos(\widehat{B})$</li>
+<li>$c^2=a^2+b^2-2ab\cos(\widehat{C})$</li>
+</ul>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:top; width:calc(43% - 12px); max-height:200px; max-width:100%;">
+<p>Démonstration. <br>
+D&rsquo;après la relation de Chasles, $\overrightarrow{BC}=\overrightarrow{BA}+\overrightarrow{AC}=\overrightarrow{AC}-\overrightarrow{AB}$ <br>
+donc $ \overrightarrow{BC}^2=  \left(\overrightarrow{AC}-\overrightarrow{AB}\right)^2=\overrightarrow{AC}^2+\overrightarrow{AB}^2-2\overrightarrow{AC}.\overrightarrow{AB}$ or, $\overrightarrow{AC}.\overrightarrow{AB}=AC\times AB\times \cos(\widehat{A})$. D&rsquo;où, $a^2=b^2+c^2-2bc\cos(\widehat{A})$.</p>
+<h3 class="subsubsection-title">12.1.3 Formules des sinus</h3>
+<div class="environment theoreme">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+En gardant les mêmes notations et en notant $S$ l'aire du triangle $ABC$ :<br>
+$S=\dfrac{1}{2}bc\sin(\widehat{A})=\dfrac{1}{2}ac\sin(\widehat{B})=\dfrac{1}{2}ab\sin(\widehat{C})$ et $\dfrac{\sin(\widehat{A})}{a}=\dfrac{\sin(\widehat{B})}{b}=\dfrac{\sin(\widehat{C})}{c}=\dfrac{2S}{abc}$.
+</div>
+</div>
+<p>Démonstration. <br>
+Formule de l&rsquo;aire $A_{ABC}=\dfrac{a.h}{2}$, or $h=b\sin(\widehat{C})$.<br> Donc, $A_{ABC}=\dfrac{a.b.\sin(\widehat{C})}{2}$.<br>
+<u>Formule des sinus</u> : Il suffit de multiplier la formule précédente par $\dfrac{2}{abc}$.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>$AB=3, AC=4$ et $\widehat{A}=\dfrac{\pi}{6}$. Calculer $BC$ puis l'aire de $ABC$.
+<br>On a $BC^2=AC^2+AB^2-2AC.AB\cos(\widehat{A})=4^2+3^2-2\times4\times 3\cos\left(\dfrac{\pi}{6}\right)=25-24\times \dfrac{\sqrt{3}}{2}=-12\sqrt{3}+25$ d'où $BC\approx 2,1$ et $\mathcal{A}_{ABC}=\dfrac{1}{2}AB\times AC\times \sin(\widehat{A})=6\sin\left(\dfrac{\pi}{6}\right)=6\times \dfrac{1}{2}=3$.</li>
+<li>$AB=5, AC=9$ et $BC=8$. Calculer les angles de $ABC$ (en degrés arrondi à l'unité) et déterminer la valeur exacte de l'aire de $ABC$.<br>
+<br> On a $\cos(\widehat{A})=\dfrac{AB^2+AC^2-BC^2}{2AB.AC}=\dfrac{25+81-64}{90}=\dfrac{7}{15}$ d'où $\widehat{A}\approx 62^\circ$.<br>
+De même, $\widehat{B}\approx 84^\circ$ et $\widehat{C}\approx 34^\circ$. <br>
+Alors $\mathcal{A}_{ABC}=\dfrac{1}{2}AB\times AC\times \sin(\widehat{A})=22,5\times \sin\left(\cos^{-1}\left(\dfrac{7}{15}\right)\right)\approx 19,9$.</li>
+</ul>
+</div>
+</div>
+<h2 class="subsection-title">12.2 Droite et produit scalaire</h2>
+<div style="display:inline-block; vertical-align:top; width:calc(64% - 12px);">
+On munit le plan d'un repère <u>orthonormé</u>.
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On considère une droite $(AB)$.<br>
+On appelle vecteur normal à $(AB)$ tout vecteur orthogonal à $\overrightarrow{AB}$.
+</div>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:top; width:calc(34% - 12px); max-height:200px; max-width:100%;">
+<div class="environment propriete">
+<div class="environment-title">Corollaire :</div>
+<div class="environment-content">
+Deux droites sont perpendiculaires si et seulement si leurs vecteurs normaux sont orthogonaux (ont un produit scalaire nul).<br>
+Dire qu'un point $M$ appartient à la droite $(d)$ passant par $A$ et de vecteur normal $\overrightarrow{n}$ équivaut à dire que $\overrightarrow{AM}.\overrightarrow{n}=0$. On obtient donc :
+</div>
+</div>
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(74% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Le plan est muni d'un repère orthonormé.
+Soient $a$ et $b$ deux réels tels qu'au moins l'un des deux soit non nul.<br>
+<ul>
+<li>Une droite $(d)$ de vecteur normal $\overrightarrow{n}\begin{pmatrix}
+a \\
+b
+\end{pmatrix}$ a une équation de la forme $ax+by+c=0$, où $c$ est un réel.<br></li>
+<li>Réciproquement, si une droite $(d)$ admet pour équation $ax+by+c=0$, alors le vecteur $\overrightarrow{n}\begin{pmatrix}
+a \\
+b
+\end{pmatrix}$ est un vecteur normal à cette droite.</li>
+</ul>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:top; width:calc(24% - 12px); max-height:200px; max-width:100%;">
+<p>Démonstration. <br>
+<u>Première partie du théorème</u> :
+Soit $A(x_A;y_A)$ un point de la droite $(d)$ de vecteur normal $\overrightarrow{n}\begin{pmatrix}
+a \\\\
+b
+\end{pmatrix}$.<br>
+Un point $M(x;y)$ appartient à $(d)$ si et seulement si $\overrightarrow{AM}.\overrightarrow{n}=0$.<br>
+Or, $\overrightarrow{AM}\begin{pmatrix}
+x-x_A \\\\
+y-y_A
+\end{pmatrix}$ donc $\overrightarrow{AM}.\overrightarrow{n}=(x-x_A)a+(y-y_A)b=ax+by-ax_A-by_A$.<br>
+Ainsi, $M$ appartient à $(d)$ si et seulement si : $ax+by+c=0$ avec $c=-ax_A-by_A$.</p>
+<h2 class="subsection-title">12.3 Cercle et produit scalaire</h2>
+<h3 class="subsubsection-title">12.3.1 Cercle défini par son centre et son rayon</h3>
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(73% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Dans un repère orthonormé, le cercle de centre $A ( x_A ; y_A )$ et de rayon $r \geq 0$ est l'ensemble des points $M(x;y)$ vérifiant l'équation :
+$$( x - x_A )^2 + ( y - y_A )^2 = r^2$$
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig5.svg" alt="figure 5" style="display:inline-block; vertical-align:top; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+<p>Démonstration. <br>
+Par définition, $M ( x ; y )$ appartient à $(C)$ si et seulement si $AM = r$.<br>
+Comme les distances sont des nombres positifs : $M\in (C) \Leftrightarrow AM^2=r^2$. Or, $AM^2=( x - x_A )^2 + ( y - y_A )^2$.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>Dans un repère orthonormé, on a $A ( 0 ; 4 )$ et $B ( 4 ; 0 )$. <br>Déterminer l'équation du cercle $(C)$ de diamètre $[AB]$.
+<br> Le centre est le point de coordonnées $( 2 ; 2 )$. Le rayon vaut $2\sqrt{2}$.
+Donc $(C)$ a pour équation : <br> $(x-2)^2+(y-2)^2=\left(2\sqrt{2}\right)^2$, soit : $(x^2-4x+4)+(y^2-4y+4)=8$ ,donc : $x^2+y^2-4x-4y=0$</li>
+<li>Dans un repère orthonormé du plan, on considère l'ensemble $E$ d'équation : $x^2+y^2-2x-10y+17=0$. Démontrer que l'ensemble $E$ est un cercle dont on déterminera les caractéristiques (centre, rayon).
+<div class="math-display">
+$$
+\begin{align*}
+&x^2+y^2-2x-10y+17=0 \Leftrightarrow (x^2-2x)+(y^2-10y)+17=0 \\
+\Leftrightarrow&(x-1)^2-1+(y-5)^2-25+17=0 \Leftrightarrow(x-1)^2+(y-5)^2=9=3^2 
+\end{align*}
+$$
+</div>
+<p>L&rsquo;ensemble $E$ est le cercle de centre le point de coordonnées $(1 ; 5)$ et de rayon $3$.</li></p>
+<li>Montrer que $x^2+y^2-x-3y+3=0$ n'est pas l'équation d'un cercle.
+$$x^2+y^2-x-3y+3=0 \\
+\Leftrightarrow\left(x^2-\dfrac{1}{2}\right)^2-\dfrac{1}{4}+\left(y^2-\dfrac{3}{2}\right)^2-\dfrac{9}{4}+3=0 
+\Leftrightarrow\left(x^2-\dfrac{1}{2}\right)^2+\left(y^2-\dfrac{3}{2}\right)^2=-\dfrac{1}{2} $$<p>
+Ce qui est impossible ; l&rsquo;ensemble des points vérifiant cette relation est donc l&rsquo;ensemble vide.</li></p>
+</ul>
+</div>
+</div>
+<h3 class="subsubsection-title">12.3.2 Cercle défini par son diamètre</h3>
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(73% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Le cercle $(C)$ de diamètre $[AB]$ est l'ensemble des points $M$ tels que $[AM]$ et $[MB]$ soient perpendiculaires, ie tels que $\overrightarrow{MA}.\overrightarrow{MB}=0$.
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:top; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+<p>Démonstration. <br>
+Soit $O$ le milieu du segment $[AB]$. On a $\overrightarrow{MA}.\overrightarrow{MB}=0 \Leftrightarrow (\overrightarrow{MO}+\overrightarrow{OA}). (\overrightarrow{MO}+\overrightarrow{OB})=0$.<br>
+Comme $O$ est le milieu de $[AB]$, on a $\overrightarrow{OB}=-\overrightarrow{OA}$. <br>
+Soit : $(\overrightarrow{MO}+\overrightarrow{OA}). (\overrightarrow{MO}-\overrightarrow{OA})=0 \Leftrightarrow \overrightarrow{MO}^2-\overrightarrow{OA}^2=0 \Leftrightarrow MO^2-OA^2=0 \Leftrightarrow MO^2=OA^2 \Leftrightarrow MO=OA$ (car ce sont des distances).<br>
+$M$ appartient donc au cercle de centre $O$ et de rayon $OA$, c&rsquo;est-à-dire le cercle de diamètre $[AB]$.</p>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/1re/chapitre-12-applications-produit-scalaire/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-12-applications-produit-scalaire/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

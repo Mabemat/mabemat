@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 6 — Suites arithmétiques et géométriques"
+title: "Suites arithmétiques et géométriques"
 level: "1re"
 chapter_number: 6
 weight: 6

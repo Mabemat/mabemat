@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 5 — Dérivation globale"
+title: "Dérivation globale"
 level: "1re"
 chapter_number: 5
 weight: 5

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Probabilités — MaBémath</title>
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+</head>
+<body>
+  <nav>
+  <div class="nav-inner">
+    <a href="http://localhost:1313/mabemat/" class="logo-mabe">
+      <span class="logo-m">M</span><span class="logo-rest">aBémat</span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      
+      <li><a href="/mabemat/6e/">6e</a></li>
+      
+      <li><a href="/mabemat/3e/" class="active">3e</a></li>
+      
+      <li><a href="/mabemat/2nde/">2nde</a></li>
+      
+      <li><a href="/mabemat/1re/">1re</a></li>
+      
+      <li><a href="/mabemat/python/">Python</a></li>
+      
+      <li><a href="/mabemat/liens/">Liens</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container">
+    
+
+
+
+
+
+
+
+<a class="back-link" href="/mabemat/3e/">← Troisième</a>
+
+
+
+<div class="chapter-page">
+  <h1 style="color: #C5607A;">Probabilités</h1>
+
+  
+
+  
+
+</div>
+
+
+
+  </div>
+  <footer>
+  <p>MaBémat · Mme Bertail · Collège &amp; Lycée</p>
+</footer>
+
+  <script src="/mabemat/js/qcm.js"></script>
+  <script>
+    
+    const logoColors = {
+      '1re': { m: '#758467', rest: '#B85C5C' },
+      '2nde': { m: '#4A5D7A', rest: '#8A9CC1' },
+      '3e': { m: '#C5607A', rest: '#8B3C52' },
+      '6e': { m: '#D36740', rest: '#C5607A' },
+      'snt': { m: '#D4A028', rest: '#D36740' },
+      'home': { m: '#D36740', rest: '#758467' }
+    };
+    const path = window.location.pathname;
+    const match = path.match(/\/(6e|3e|2nde|1re|snt)\//);
+    const level = match ? match[1] : 'home';
+    const c = logoColors[level] || logoColors.home;
+    const lm = document.querySelector('.logo-m');
+    const lr = document.querySelector('.logo-rest');
+    if (lm) lm.style.color = c.m;
+    if (lr) lr.style.color = c.rest;
+  </script>
+</body>
+</html>

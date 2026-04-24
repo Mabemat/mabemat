@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vecteurs et repérage — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/2nde/">2nde</a>
+    <span class="sep">/</span>
+    <span>Chapitre 09</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#4A5D7A;">09</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 09 · 2nde
+      </div>
+      
+      <h1 class="fade-up d2">Vecteurs et repérage</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Géométrie
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#4A5D7A;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#4A5D7A;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/2nde/">
+    <div><div class="adj-lbl">← 2nde</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/2nde/chapitre-10-arithmetique/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/">2nde</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/">Vecteurs et repérage</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 09 - Leçon
+      </div>
+      <h1 class="lesson-h1">Vecteurs et repérage</h1>
+
+      <div class="full-lesson niveau-2nde">
+        <h2 class="subsection-title">9.1 Repère du plan</h2>
+<div style="display:inline-block; vertical-align:middle; width:calc(70% - 12px);">
+Trois points distincts deux à deux $O$, $I$ et $J$ du plan forment un repère, que l'on peut noter $(O,I,J)$.<br>
+L'origine $O$ et les unités $OI$ et $OJ$ permettent de graduer les axes $(OI)$ et $(OJ)$.<br>
+Si on pose $\overrightarrow{i}=\overrightarrow{OI}$ et $\overrightarrow{j}=\overrightarrow{OJ}$, alors ce repère se note aussi $(O,\overrightarrow{i},\overrightarrow{j})$.
+</div><img src="/mabemat/figures/2nde/chapitre-09/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(28% - 12px); max-height:300px; max-width:100%;">
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<ul>
+<li>On appelle <strong>repère du plan</strong> tout triplet $(O,\overrightarrow{i},\overrightarrow{j})$, où $O$ est un point et $\overrightarrow{i}$ et $\overrightarrow{j}$ sont deux vecteurs non colinéaires.</li>
+<li>Un repère est dit <strong>orthogonal</strong> si $\overrightarrow{i}$ et $\overrightarrow{j}$ ont des directions perpendiculaires.</li>
+<li>Un repère est dit <strong>orthonormé</strong> s'il est orthogonal et si $\overrightarrow{i}$ et $\overrightarrow{j}$ sont de norme $1$.</li>
+</ul>
+</div>
+</div>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-09/fig2.svg" alt="figure 2" style="max-height:300px; max-width:100%;">
+</div>
+<h3 class="subsubsection-title">9.1.1 Coordonnées d'un vecteur</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(61% - 12px);">
+Soit $M$ un point quelconque d'un repère $(O,\overrightarrow{i},\overrightarrow{j})$ et un vecteur $\overrightarrow{u}$ tel que $\overrightarrow{OM}=\overrightarrow{u}$.<br>
+Les <strong>coordonnées du vecteur</strong> $\overrightarrow{u}$ sont les coordonnées du point $M$ à savoir $(x_M,y_M)$.<br>
+On note $\overrightarrow{u}\begin{pmatrix} x_M \\ y_M \end{pmatrix}$.<br>
+On a $\overrightarrow{OM}=x_M\overrightarrow{i}+y_M\overrightarrow{j}$.
+</div><img src="/mabemat/figures/2nde/chapitre-09/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(37% - 12px); max-height:250px; max-width:100%;">
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Déterminer les coordonnées d'un vecteur par lecture graphique.</div>
+<div class="environment-content">
+Déterminer les coordonnées des vecteurs $\overrightarrow{AB}$, $\overrightarrow{CD}$, $\overrightarrow{EF}$ par lecture graphique :
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-09/fig4.svg" alt="figure 4" style="max-height:300px; max-width:100%;">
+</div>
+Pour aller de $A$ vers $B$, on effectue une translation de $4$ carreaux vers la droite $(+4)$ et une translation de $3$ carreaux vers le haut $(+3)$. <br>
+On trace ainsi un « chemin » de vecteurs $\overrightarrow{i}$ et $\overrightarrow{j}$ mis bout à bout reliant l'origine et l'extrémité du vecteur $\overrightarrow{AB}$. <br>
+Ainsi, $\overrightarrow{AB}=4\overrightarrow{i}+3\overrightarrow{j}$. Les coordonnées de $\overrightarrow{AB}$ sont donc $\begin{pmatrix} 4 \\ 3 \end{pmatrix}$. <br>
+De même, $\overrightarrow{CD}\begin{pmatrix} -2 \\ 5 \end{pmatrix}$ et $\overrightarrow{EF}\begin{pmatrix} 4 \\ 3 \end{pmatrix}$.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $A$ et $B$ deux points de coordonnées $(x_A,y_A)$ et $(x_B,y_B)$ dans un repère $(O,\overrightarrow{i},\overrightarrow{j})$.<br>
+Le vecteur $\overrightarrow{AB}$ a pour coordonnées $\begin{pmatrix} x_B-x_A \\ y_B-y_A \end{pmatrix}$.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Déterminer les coordonnées d'un vecteur par calcul.</div>
+<div class="environment-content">
+Soit $A(1;1)$, $B(5;4)$, $C(-1;-2)$, $D(-3;3)$, $E(2;-5)$ et $F(6;-2)$.<br>
+Déterminer les coordonnées des vecteurs $\overrightarrow{AB}$, $\overrightarrow{CD}$ et $\overrightarrow{EF}$.<br>
+$\overrightarrow{AB}\begin{pmatrix} x_B-x_A \\ y_B-y_A \end{pmatrix}=\begin{pmatrix} 5-1 \\ 4-1 \end{pmatrix}=\begin{pmatrix} 4 \\ 3 \end{pmatrix}$,
+$\overrightarrow{CD}\begin{pmatrix} -3-(-1) \\ 3-(-2) \end{pmatrix}=\begin{pmatrix} -2 \\ 5 \end{pmatrix}$, $\overrightarrow{EF}\begin{pmatrix} 6-2 \\ -2-(-5) \end{pmatrix}=\begin{pmatrix} 4 \\ 3 \end{pmatrix}$.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs de coordonnées $\begin{pmatrix} x \\ y \end{pmatrix}$ et  $\begin{pmatrix} x' \\ y' \end{pmatrix}$ dans un repère $(O,\overrightarrow{i},\overrightarrow{j})$ et un réel $k$.
+<ul>
+<li>$\overrightarrow{u}=\overrightarrow{v}$ équivaut à $x=x'$ et $y=y'$ autrement dit $\overrightarrow{u}$ et $\overrightarrow{v}$ ont les mêmes coordonnées.</li>
+<li>Le vecteur $\overrightarrow{u}+\overrightarrow{v}$ a pour coordonnées $\begin{pmatrix} x+x' \\ y+y' \end{pmatrix}$.</li>
+<li>Le vecteur $k\overrightarrow{u}$ a pour coordonnées $\begin{pmatrix} kx \\ ky \end{pmatrix}$.</li>
+</ul>
+</div>
+</div>
+<div class="remarque">
+Si $\overrightarrow{u}$ a pour coordonnées $\begin{pmatrix} x \\ y \end{pmatrix}$ alors $-\overrightarrow{u}$ a pour coordonnées $\begin{pmatrix} -x \\ -y \end{pmatrix}$.
+</div>
+<p><strong>Retour sur la propriété coordonnées d&rsquo;un vecteur.</strong></p>
+<div class="environment methode">
+<div class="environment-title">Méthode - Appliquer les formules sur les coordonnées des vecteurs.</div>
+<div class="environment-content">
+En reprenant l'exemple précédent, calculer les coordonnées des vecteurs $4\overrightarrow{AB}$, $3\overrightarrow{CD}$, et $4\overrightarrow{AB}-3\overrightarrow{CD}$. <br>
+On a $\overrightarrow{AB}\begin{pmatrix} 4 \\ 3 \end{pmatrix}$ et
+$\overrightarrow{CD}\begin{pmatrix} -2 \\ 5 \end{pmatrix}$.<br> Donc $4\overrightarrow{AB}\begin{pmatrix} 4\times 4 \\ 4\times 3 \end{pmatrix}=\begin{pmatrix} 16 \\ 12 \end{pmatrix}$ et $3\overrightarrow{CD}\begin{pmatrix} 3\times (-2) \\ 3\times 5 \end{pmatrix}=\begin{pmatrix} -6 \\ 15 \end{pmatrix}$. <br>
+Enfin, $4\overrightarrow{AB}-3\overrightarrow{CD}\begin{pmatrix} 16-(-6) \\ 12-15 \end{pmatrix}=\begin{pmatrix} 22 \\ -3 \end{pmatrix}$.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Calculer les coordonnées d'un point défini par une égalité vectorielle.</div>
+<div class="environment-content">
+Dans un repère, soit les points $A(-1;2)$, $B(3;-4)$ et $C(-3,2)$.<br>
+Déterminer les coordonnées du point $D$ tel que $ABCD$ soit un parallélogramme.
+<br>
+$ABCD$ est un parallélogramme si et seulement si $\overrightarrow{AB}=\overrightarrow{DC}$. <br>
+On a $\overrightarrow{AB}\begin{pmatrix} -3-(-1) \\ -4-2 \end{pmatrix}=\begin{pmatrix} -2 \\ -6 \end{pmatrix}$ et $\overrightarrow{DC}\begin{pmatrix} -3-x_D \\ 2-y_D \end{pmatrix}$. <br>
+Donc $-3-x_D=-2$ et $2-y_D=-6$.<br>
+Soit $x_D=-1$ et $y_D=8$.
+</div>
+</div>
+<h2 class="subsection-title">9.2 Colinéarité de deux vecteurs</h2>
+<h3 class="subsubsection-title">9.2.1 Définitions et premières propriétés</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Dire que deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires signifie qu'il existe un réel $k$ tel que $\overrightarrow{v}=k\overrightarrow{u}$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-09/fig5.svg" alt="figure 5" style="max-height:300px; max-width:100%;">
+</div>
+On a $\overrightarrow{v}=-3\overrightarrow{u}$. <br>
+Donc $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires.
+</div>
+</div>
+<div class="remarque">
+${\color{#E6B459}{\bullet}}$ Par convention, le vecteur $\overrightarrow{0}$ est colinéaire à tout vecteur du plan.<br>
+${\color{#E6B459}{\bullet}}$ Deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont <strong>colinéaires</strong> lorsqu'ils ont la <strong>même direction</strong>.
+</div>
+<h3 class="subsubsection-title">9.2.2 Critère de colinéarité</h3>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs de coordonnées $\begin{pmatrix} x \\ y \end{pmatrix}$ et  $\begin{pmatrix} x' \\ y' \end{pmatrix}$ dans un repère $(O,\overrightarrow{i},\overrightarrow{j})$. <br>
+Dire que $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires revient à dire que les coordonnées des deux vecteurs sont proportionnelles soit : $xy'-yx'=0$.
+</div>
+</div>
+<p>Démonstration :</p>
+<div class="environment-content">
+Nous allons procéder par double implication.
+<ul>
+<li>Si l'un des vecteurs est nul alors l'équivalence est évidente.</li>
+<li>Supposons maintenant que les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ soient non nuls.</li>
+</ul>
+Dire que les vecteurs $\overrightarrow{u}\begin{pmatrix} x \\ y \end{pmatrix}$ et $\overrightarrow{v}\begin{pmatrix} x' \\ y' \end{pmatrix}$ sont colinéaires équivaut à dire qu'il existe un nombre réel $k$ tel que $\overrightarrow{u}=k\overrightarrow{v}$.<br>
+Les coordonnées des vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont donc proportionnelles et le tableau ci-dessous est un tableau de proportionnalité :
+<table>
+<tr>
+<th>$x$</th>
+<th>$x'$</th>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$y'$</td>
+</tr>
+</table>
+Donc : $xy'=yx'$ soit encore $xy'-yx'=0$.<br>
+<table>
+<tr>
+<th>$x$</th>
+<th>$x'$</th>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$y'$</td>
+</tr>
+</table>
+Réciproquement, si $xy' - yx' = 0$.
+Le vecteur $\overrightarrow{v}$ étant non nul, l'une de ses coordonnées est non nulle. <br>Supposons que
+$x'\neq 0$. Posons alors $k = \dfrac{x}{x'}$. L'égalité $xy' – yx' = 0$ s'écrit : $yx' = xy'$ <br>
+Soit $y=\dfrac{xy'}{x'}=ky'$.
+Comme on a déjà $x=kx'$, on en déduit que $\overrightarrow{u}=k\overrightarrow{v}$.
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $\overrightarrow{u}\begin{pmatrix} x \\ y \end{pmatrix}$ et $\overrightarrow{v}\begin{pmatrix} x' \\ y' \end{pmatrix}$ deux vecteurs dans un repère $(O,\overrightarrow{i},\overrightarrow{j})$.<br>
+Le nombre $xy'-yx'$ est appelé déterminant des vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$.<br>
+On note : $\det(\overrightarrow{u};\overrightarrow{v})=\begin{vmatrix} x & x' \\ y & y' \end{vmatrix}=xy'-yx'$.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Dire que $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires, revient à dire que $\det(\overrightarrow{u};\overrightarrow{v})=0$.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Vérifier si deux vecteurs sont colinéaires.</div>
+<div class="environment-content">
+Dans chaque cas, vérifier si les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires : $\overrightarrow{u}\begin{pmatrix} 4 \\ 9 \end{pmatrix}$ et $\overrightarrow{v}\begin{pmatrix} 11 \\ 23 \end{pmatrix}$ puis $\overrightarrow{u}\begin{pmatrix} 20 \\ 6 \end{pmatrix}$ et $\overrightarrow{v}\begin{pmatrix} 30 \\ 9 \end{pmatrix}$<br>
+<ul>
+<li>$\det(\overrightarrow{u};\overrightarrow{v})=\begin{vmatrix} 4 & 11 \\ 9 & 23 \end{vmatrix}=4\times 23 -9\times 11=92-99=-7\neq 0$. <br>
+Les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ ne sont pas colinéaires.</li>
+<li>$\det(\overrightarrow{u};\overrightarrow{v})=\begin{vmatrix} 20 & 30 \\ 6 & 9 \end{vmatrix}=20\times 9 -6\times 30=180-180=0$.<br>
+Les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires.<br>
+Nous pouvons trouver le réel $k$ tel que $\overrightarrow{u}=k\overrightarrow{v}$. On a donc $20=30k$ et $6=9k$, <br>d'où, $k=\dfrac{20}{30}=\dfrac{2}{3}$ et $k=\dfrac{6}{9}=\dfrac{2}{3}$. Ainsi, $\overrightarrow{u}=\dfrac{2}{3}\overrightarrow{v}$.</li>
+</ul>
+</div>
+</div>
+<h3 class="subsubsection-title">9.2.3 Applications</h3>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<ol>
+<li>Dire que les droites $(AB)$ et $(CD)$ sont <strong>parallèles</strong> équivaut à dire que les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ sont <strong>colinéaires</strong>.
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-09/fig6.svg" alt="figure 6" style="max-height:200px; max-width:100%;">
+</div>
+</li>
+<li>Dire que $3$ points $A$, $B$ et $C$ sont <strong>alignés</strong> équivaut à dire que les vecteurs $\overrightarrow{AC}$ et $\overrightarrow{AB}$ (par exemple) sont <strong>colinéaires</strong>.
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-09/fig7.svg" alt="figure 7" style="max-height:300px; max-width:100%;">
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Dans le repère $(O,\overrightarrow{i},\overrightarrow{j})$, $A(-3;0)$, $B(-3;4)$, $C(5;0)$, $D(1;-2)$ et $E(9;-2)$.<br>
+Montrer que $ABCD$ est un trapèze et que les points $B,C$ et $E$ sont alignés.
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-09/fig8.svg" alt="figure 8" style="max-height:200px; max-width:100%;">
+</div>
+<ul>
+<li>$\overrightarrow{AD}\begin{pmatrix} x_D-x_A \\ y_D-y_A \end{pmatrix}=\begin{pmatrix} 1-(-3) \\ -2-0 \end{pmatrix}=\begin{pmatrix} 4 \\ -2 \end{pmatrix}$ et  $\overrightarrow{BC}\begin{pmatrix} 5-(-3) \\ 0-4 \end{pmatrix}=\begin{pmatrix} 8 \\ -4 \end{pmatrix}$. <br>Donc $\overrightarrow{BC}=2\overrightarrow{AD}$ donc $\overrightarrow{BC}$ et $\overrightarrow{AD}$ sont colinéaires donc $(BC) \parallel (AD)$ donc $ABCD$ est un trapèze.</li>
+<li>$\overrightarrow{BC}\begin{pmatrix} 8 \\ -4 \end{pmatrix}$ et $\overrightarrow{BE}\begin{pmatrix} 9-(-3) \\ -2-4 \end{pmatrix}=\begin{pmatrix} 12 \\ -6 \end{pmatrix}$. <br>
+$\det(\overrightarrow{BC};\overrightarrow{BE})=\begin{vmatrix} 8 & 12 \\ -4 & -6 \end{vmatrix}=8\times (-6)-(-4)\times 12=-48+48=0$.<br> Donc $\overrightarrow{BC}$ et $\overrightarrow{BE}$ sont colinéaires. Les points $B,C$ et $E$ sont donc alignés.</li>
+</ul>
+</div>
+</div>
+<h2 class="subsection-title">9.3 Calculs dans un repère orthonormé</h2>
+<p>Pour toute cette partie, on se place dans un repère <strong>orthonormé</strong> $(O,\overrightarrow{i},\overrightarrow{j})$ du plan.</p>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit un vecteur $\overrightarrow{u}\begin{pmatrix} x \\ y \end{pmatrix}$. La norme du vecteur $\overrightarrow{u}$ est $\Vert \overrightarrow{u} \Vert=\sqrt{x^2+y^2}$.
+</div>
+</div>
+<p>Démonstration :</p>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(64% - 12px);">
+Dans le repère orthonormé $(O,\overrightarrow{i},\overrightarrow{j})$, on a $\overrightarrow{u}=x\overrightarrow{i}+y\overrightarrow{j}$. <br>Le théorème de Pythagore assure, dans le triangle de la figure que <br>$\Vert \overrightarrow{u} \Vert ^2=x^2\Vert \overrightarrow{i} \Vert^2+y^2\Vert \overrightarrow{j} \Vert^2$. <br>
+Le repère étant orthonormé, $\Vert \overrightarrow{i} \Vert^2=1=\Vert \overrightarrow{j} \Vert^2$, d'où $\Vert \overrightarrow{u} \Vert ^2=x^2+y^2$.<br> Ainsi, $x^2+y^2\geq 0$, $\Vert \overrightarrow{u} \Vert=\sqrt{x^2+y^2}$.
+</div><img src="/mabemat/figures/2nde/chapitre-09/fig9.svg" alt="figure 9" style="display:inline-block; vertical-align:middle; width:calc(34% - 12px); max-height:200px; max-width:100%;">
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $A$ et $B$ deux points du plan.<br>
+La distance $AB$ est égale à la norme du vecteur $\Vert \overrightarrow{AB}\Vert$. Ainsi, $$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(66% - 12px);">
+Soient $A(3;-2)$ et $B(2;4)$. On a :
+<div class="math-display">
+$$
+\begin{aligned}
+AB &= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2} \\
+&= \sqrt{(2-3)^2+(4-(-2))^2} \\
+&= \sqrt{(-1)^2+6^2} \\
+&= \sqrt{37} \\
+&\approx 6{,}08
+\end{aligned}
+$$
+</div>
+</div><img src="/mabemat/figures/2nde/chapitre-09/fig10.svg" alt="figure 10" style="display:inline-block; vertical-align:middle; width:calc(32% - 12px); max-height:300px; max-width:100%;">
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $A(x_A;y_A)$ et $B(x_B;y_B)$ deux points du plan. <br>
+Les coordonnées du milieu $I$ du segment $[AB]$ sont $I=\left(\dfrac{x_A+x_B}{2};\dfrac{y_A+y_B}{2}\right)$.
+</div>
+</div>
+<p>Démonstration :</p>
+<div class="environment-content">
+$I$ est le milieu de $[AB]$ donc $\overrightarrow{AI}=\overrightarrow{IB}$. On a donc, $\overrightarrow{AI}=\begin{pmatrix} x_I-x_A \\ y_I-y_A \end{pmatrix}$ et $\overrightarrow{IB}=\begin{pmatrix} x_B-x_I \\ y_B-y_I \end{pmatrix}$. <br>Ces vecteurs sont égaux, donc $x_I-x_A=x_B-x_I$ et $y_I-y_A=y_B-y_I$.<br>
+D'où $2x_I=x_A+x_B$ et $2y_I=y_A+y_B$. <br>
+<br>
+Finalement, on a bien $x_I=\dfrac{x_A+x_B}{2}$ et $y_I=\dfrac{y_A+y_B}{2}$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(67% - 12px);">
+Soient $A(3;-2)$ et $B(2;4)$ et $I$ le milieu de $[AB]$.<br>
+On a $x_I=\dfrac{x_A+x_B}{2}=\dfrac{3+2}{2}=\dfrac{5}{2}$ et $y_I=\dfrac{y_A+y_B}{2} =\dfrac{-2+4}{2}=1$.<br>
+Le point $I$ a donc pour coordonnées $\left(\dfrac{5}{2};1\right)$.
+</div><img src="/mabemat/figures/2nde/chapitre-09/fig11.svg" alt="figure 11" style="display:inline-block; vertical-align:middle; width:calc(31% - 12px); max-height:300px; max-width:100%;">
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/2nde/chapitre-09-vecteurs-et-reperage/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

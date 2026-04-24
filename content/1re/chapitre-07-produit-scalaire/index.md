@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 7 — Produit scalaire"
+title: "Produit scalaire"
 level: "1re"
 chapter_number: 7
 weight: 7

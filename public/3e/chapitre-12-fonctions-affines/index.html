@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fonctions affines — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/3e/">3ème</a>
+    <span class="sep">/</span>
+    <span>Chapitre 12</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#8B3C52;">12</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 12 · 3ème
+      </div>
+      
+      <h1 class="fade-up d2">Fonctions affines</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Proportionnalité, fonctions
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#8B3C52;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/3e/chapitre-12-fonctions-affines/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/3e/">
+    <div><div class="adj-lbl">← 3ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/3e/chapitre-13-probabilites/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/3e/chapitre-12-fonctions-affines/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/">3ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/3e/chapitre-12-fonctions-affines/">Fonctions affines</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 12 - Leçon
+      </div>
+      <h1 class="lesson-h1">Fonctions affines</h1>
+
+      <div class="full-lesson niveau-3e">
+        <h2 class="subsection-title">12.1 Généralités sur les fonctions affines</h2>
+<h3 class="subsubsection-title">12.1.1 Forme générale d'une fonction affine</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soient $a$ et $b$ deux réels donnés. La fonction $f$ définie sur $\mathbb{R}$ par $f(x) = ax + b$ est appelée fonction affine, elle est représentée par une droite où :
+<ul>
+<li>le réel $a$ est le coefficient directeur de cette droite</li>
+<li>le réel $b$ est l'ordonnée à l'origine</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>$f(x) = 2x + 1$ : fonction affine avec $a = 2$ et $b = 1$</li>
+<li>$g(x) = -3x + 5$ : fonction affine avec $a = -3$ et $b = 5$</li>
+<li>$h(x) = 8x$ : fonction affine avec $a = 8$ et $b = 0$</li>
+<li>$i(x) = 3$ : fonction affine avec $a = 0$ et $b = 3$</li>
+<li>$j(x) = \dfrac{3}{x} + 2$ : fonction non affine</li>
+<li>$k(x) = x^2 + 2x + 9$ : fonction non affine</li>
+</ul>
+</div>
+</div>
+<h3 class="subsubsection-title">12.1.2 Représentation graphique</h3>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+La représentation graphique d'une fonction affine est une droite non verticale.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+$f(x) = 2x + 1$. <br>
+<div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+La représentation graphique de $f$ est une droite, donc seuls deux points sont nécessaires.
+<table>
+<tr>
+<th>$x$</th>
+<th>0</th>
+<th>2</th>
+</tr>
+<tr>
+<td>$f(x)$</td>
+<td>1</td>
+<td>5</td>
+</tr>
+</table>
+</div><img src="/mabemat/figures/3e/chapitre-12/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:top; width:calc(49% - 12px); max-height:300px; max-width:100%;">
+</div>
+</div>
+<div class="remarque">
+On a choisi $0$ et $2$ mais on aurait pu choisir deux autres nombres.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:top; width:calc(65% - 12px);">
+<br><br>Représenter graphiquement les fonctions suivantes :
+<ul>
+<li>$\mathcal{C}_1: f(x) = x + 1$</li>
+<li>$\mathcal{C}_2: g(x) = 2$</li>
+<li>$\mathcal{C}_3: h(x) = -3x - 2$</li>
+<li>$\mathcal{C}_4: i(x) = \dfrac{3}{4}x - 3$</li>
+</ul>
+</div><div style="display:inline-block; vertical-align:top; width:calc(35% - 12px);">
+<img src="/mabemat/figures/3e/chapitre-12/fig2.png" alt="figure 2" style="max-height:300px; max-width:100%;">
+</div>
+</div>
+</div>
+<h2 class="subsection-title">12.2 Détermination des coefficients</h2>
+<h3 class="subsubsection-title">12.2.1 Graphiquement</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Donner l'expression de la fonction affine $f$ à partir de sa représentation graphique.<br>
+<div style="display:inline-block; vertical-align:top; width:calc(59% - 12px);">
+<ol>
+<li>Détermination de $b$ : ordonnée à l'origine.<br>
+L'ordonnée à l'origine est l'ordonnée du point d'abscisse $0$. Ainsi, $b = 1$.</li>
+<li>Détermination de $a$ : coefficient directeur.
+<ul>
+<li>Placer deux points de la droite aux coordonnées faciles à lire.</li>
+<li>Compter le nombre de carreau pour le déplacement vertical, puis horizontal pour pour aller d'un de ces deux points à l'autre.</li>
+<li>$a = \dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}}$</li>
+</ul>
+Ainsi, $a =\dfrac{+2}{+1} =2$.</li>
+</ol>
+Donc $f(x) = 2x + 1$.
+</div><img src="/mabemat/figures/3e/chapitre-12/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:top; width:calc(39% - 12px); max-height:250px; max-width:100%;">
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Donner l'expression de la fonction affine $f$ à partir de sa représentation graphique.<br>
+<div style="display:inline-block; vertical-align:top; width:calc(64% - 12px);">
+<ol>
+<li>Détermination de $b$ : ordonnée à l'origine.<br>
+L'ordonnée à l'origine est l'ordonnée du point d'abscisse $0$. <br>
+Ainsi, $b = -1$.</li>
+<li>Détermination de $a$ : coefficient directeur. <br>
+$a = \dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}}=\dfrac{1}{3}$</li>
+</ol>
+Donc $f(x) = \dfrac{1}{3}x - 1$.
+</div><img src="/mabemat/figures/3e/chapitre-12/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:top; width:calc(34% - 12px); max-height:200px; max-width:100%;">
+</div>
+</div>
+<h3 class="subsubsection-title">12.2.2 Algébriquement</h3>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Cas particulier : Une des valeurs données est $f(0)$.
+<ol>
+<li><strong>Écris</strong> la forme générale : $f(x) = ax + b$.</li>
+<li><strong>Utilise</strong> $f(0)$ pour trouver $b$ directement car $f(0) = a \times 0 + b = b$.</li>
+<li><strong>Remplace</strong> $b$ par sa valeur dans l'expression : $f(x) = ax + b$.</li>
+<li><strong>Utilise</strong> la deuxième donnée pour calculer $a$, en faisant une équation.</li>
+<li><strong>Conclus</strong> avec l'expression finale.</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+La fonction $f$ est une fonction affine et on sait que $f(0)=3$ et $f(-2)=-1$.<br>
+Déterminer la forme algébrique de la fonction $f$. <br>
+<p>Soit $f(x)=ax+b$. Nous savons que $f(0)=3=b$.<br>
+Donc $f(x)=ax+3$. <br>
+En utilisant la donnée $f(-2)=-1$ on obtient : $a \times (-2)+3=-1$ d&rsquo;où $a \times (-2)=-1-3=-4$.<br>
+Donc $a=\dfrac{-4}{-2}=2$.<br>
+Ainsi $f(x)=2x+3$.</p>
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Cas général.
+<ol>
+<li><strong>Écris</strong> la forme générale : $f(x) = ax + b$.</li>
+<li><strong>Traduis</strong> chaque donnée en équation.</li>
+<li><strong>Exprime</strong> $b$ en fonction de $a$ dans chaque équation.</li>
+<li><strong>Égalise</strong> les deux expressions de $b$ (identification).</li>
+<li><strong>Résous</strong> l'équation pour trouver $a$.</li>
+<li><strong>Calcule</strong> $b$ en remplaçant $a$ par sa valeur dans une des deux expressions.</li>
+<li><strong>Conclus</strong> avec l'expression finale.</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+La fonction $f$ est une fonction affine et on sait que $f(4)=3$ et $f(-1)=-7$.<br>Déterminer la forme algébrique de la fonction $f$. <br>
+<p>Soit $f(x)=ax+b$. En utilisant les données de l&rsquo;énoncé, on obtient : <br>
+$f(4)=3=a \times 4+b$ et $f(-1)=-7=a \times (-1)+b$<br>Donc d&rsquo;une part : $b=3+a\times (-4)$ et d&rsquo;autre part : $b=-7+a\times 1$.<br>Par identification, on obtient : $3+a\times (-4)=-7+a\times 1$.<br>On en déduit que $3+7=a(4+1)$ soit $10=5a$.<br>Donc $a=\dfrac{10}{5}=2$.<br>Donc $b=3+2\times (-4)=3-8=-5$.<br>Ainsi $f(x)=2x-5$.</p>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/3e/chapitre-12-fonctions-affines/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

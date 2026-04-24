@@ -1,0 +1,695 @@
+% @see : https://coopmaths.fr/alea/?uuid=a17c6&id=auto6M2C-flash1&n=1&d=10&s=1&s2=false&s3=2&qcm=0&cd=1&alea=Ggek&uuid=b486a&id=auto6M2C-flash2&n=1&d=10&s=1&s2=false&s3=4&s4=2&qcm=0&cd=1&alea=OM6x&uuid=a17d6&id=auto6M2C-flash3&alea=drm2&uuid=83be9&id=auto6M2C-1&n=1&d=10&s=3&s2=false&s3=2&s4=1&cd=1&alea=GAxI&uuid=026d9&id=6M2A&n=1&d=10&s=1&s2=true&cd=1&alea=BOdr&uuid=026d9&id=6M2A&n=1&d=10&s=3&s2=true&cd=1&alea=gNak&uuid=026d9&id=6M2A&n=1&d=10&s=2&s2=true&cd=1&alea=oCF4&uuid=c6fb2&id=6M2C&n=1&d=10&s=1&cd=1&alea=EpJe&uuid=c6fb2&id=6M2C&n=1&d=10&s=2&cd=1&alea=XVGT&uuid=c6fb2&id=6M2C&n=1&d=10&s=3&cd=1&alea=RD7u&uuid=bae27&id=6M2C-flash1&alea=8VtO&uuid=90e79&id=6M2C-flash2&n=1&d=10&cd=1&alea=8N1g&pdfParam=eyJ0aXRsZSI6IiIsInJlZmVyZW5jZSI6IiIsInN1YnRpdGxlIjoiIiwic3R5bGUiOiJDb29wbWF0aHMiLCJmb250T3B0aW9uIjoiU3RhbmRhcmRGb250IiwidGFpbGxlRm9udE9wdGlvbiI6MTIsImR5c1RhaWxsZUZvbnRPcHRpb24iOjE0LCJjb3JyZWN0aW9uT3B0aW9uIjoiQXZlY0NvcnJlY3Rpb24iLCJxcmNvZGVPcHRpb24iOiJTYW5zUXJjb2RlIiwidHlwZUZpY2hlIjoiRmljaGUiLCJkdXJhdGlvbkNhbk9wdGlvbiI6IjkgbWluIiwidGl0bGVPcHRpb24iOiJTYW5zVGl0cmUiLCJuYlZlcnNpb25zIjoxLCJleG9zIjp7fX0\%3D&v=eleve
+\documentclass[a4paper,11pt,fleqn]{article}
+
+%%% COULEURS %%%
+\usepackage[table,svgnames]{xcolor}
+\definecolor{nombres}{cmyk}{0,.8,.95,0}
+\definecolor{gestion}{cmyk}{.75,1,.11,.12}
+\definecolor{gestionbis}{cmyk}{.75,1,.11,.12}
+\definecolor{grandeurs}{cmyk}{.02,.44,1,0}
+\definecolor{geo}{cmyk}{.62,.1,0,0}
+\definecolor{algo}{cmyk}{.69,.02,.36,0}
+\definecolor{correction}{cmyk}{.63,.23,.93,.06}
+\arrayrulecolor{couleur_theme} % Couleur des filets des tableaux
+
+\usepackage[most]{tcolorbox} % Supprimé à cause de conflits avec ProfCollege
+\tcbuselibrary{documentation}
+
+%%%%%%%% Modification paramétrage pour footnotes
+% Le paquet semble déjà appelé en amont, curieux qu'il n'y ait pas eu de clash
+% avec l'appel ci-dessous mais seulement quand j'ai essayé de l'inclure avec l'option lualatex
+
+% \usepackage{hyperref}
+% Parametrages
+\hypersetup{
+    colorlinks=true,% On active la couleur pour les liens. Couleur par défaut rouge
+    linkcolor=black,% On définit la couleur pour les liens internes
+    % filecolor=magenta,% On définit la couleur pour les liens vers les fichiers locaux      
+    urlcolor=black,% On définit la couleur pour les liens vers des sites web
+    % pdftitle={Puissance Quatre},% On définit un titre pour le document pdf
+    % pdfpagemode=FullScreen,% On fixe l'affichage par défaut à plein écran
+    }
+% Pour avoir les numérotations arabic y compris dans les environnements tcolorbox
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%%%%%%%%
+
+\usepackage{multicol} 
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tablvar}
+
+\setlength{\parindent}{0mm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}
+\setlength{\fboxsep}{3mm}
+
+\setlength{\headheight}{14.5pt}
+
+\setlength{\premulticols}{0pt}
+
+\newcounter{ExoMA}
+
+\newlength{\parindentMA}%
+\setlength{\parindentMA}{\parindent}
+\addtolength{\parindentMA}{30pt}
+
+\usepackage{simplekv}
+
+\setKVdefault[Theme]{Coopmath,Classiques=false,CANs=false}
+\defKV[Theme]{Classique=\setKV[Theme]{Coopmath=false}\setKV[Theme]{Classiques}}
+\defKV[Theme]{CAN=\setKV[Theme]{Coopmath=false}\setKV[Theme]{CANs}}
+
+\usepackage{fancyhdr}
+\fancyhead[C]{}
+\fancyfoot{}
+
+\def\bla{}
+
+\NewDocumentCommand\Theme{o m m m m}{%
+  \useKVdefault[Theme]%
+  \setKV[Theme]{#1}%
+  \ifboolKV[Theme]{CANs}{%
+    \usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}%
+    \fancypagestyle{premierePage}{%
+      \fancyhead[C]{\textsc{\ifx\bla#2\bla Course aux nombres\else#2\fi}}%
+      \fancyfoot[R]{\scriptsize Coopmaths.fr -- CC-BY-SA}%
+      \setlength{\headheight}{14.5pt}%
+      \NewDocumentCommand\dureeCan{}{\ifx\bla#4\bla 9 minutes\else #4\fi}
+      \NewDocumentCommand\titreSujetCan{}{\ifx\bla#3\bla\else\textbf{#3}\fi}
+    }%
+    \pagestyle{premierePage}
+    \colorlet{couleur_theme}{black}%
+    \colorlet{couleur_numerotation}{couleur_theme}%
+    \let\EXO\EXOCan\let\endEXO\endEXOCan%
+  }{%
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \pagestyle{fancy}
+    \ifboolKV[Theme]{Classiques}{%
+      \usepackage[left=0.65cm,right=0.65cm,top=2cm,bottom=1.5cm]{geometry}
+      \let\EXO\EXOlibre\let\endEXO\endEXOlibre%
+      \colorlet{couleur_theme}{black}%
+      \colorlet{couleur_numerotation}{couleur_theme}%
+      \fancyhead[C]{\bfseries #3}
+      \fancyhead[L]{\bfseries #4}
+      \fancyfoot[R]{#5}
+    }{%
+      \usepackage[left=1.5cm,right=1.5cm,top=4cm,bottom=2cm]{geometry}
+      \theme{#2}{#3}{#4}{#5}%
+      \let\EXO\EXOcoop\let\endEXO\endEXOcoop%
+    }%
+  }%
+}%
+
+\NewDocumentEnvironment{EXOCan}{m m +b}{%
+  #3
+}
+
+\NewDocumentEnvironment{EXOcoop}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,
+    coltitle=black,
+    title=\IfNoValueTF{#1}{}{\textmd{#1}},%
+    overlay unbroken and first={%
+      \IfNoValueTF{#2}{}{%
+        \node[%
+        fill=white,
+        anchor=east,
+        xshift=10pt,
+        text=black
+        ]
+        at (frame.north east)
+        {\scriptsize #2};
+      }
+      \node[anchor=west,xshift=-20pt,yshift=-15pt] at (frame.north west) {\stepcounter{ExoMA}\numb{\arabic{ExoMA}}};
+    }
+    ]
+    #3
+  \end{tcolorbox}
+}
+
+\NewDocumentEnvironment{EXOlibre}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,%couleur_theme,
+    coltitle=black,
+    title=\stepcounter{ExoMA}\textbf{Exercice \arabic{ExoMA}},%
+    ]
+    \IfNoValueTF{#1}{}{#1\par}%
+    #3
+  \end{tcolorbox}%
+}
+
+
+%%% MISE EN PAGE %%%
+\usepackage{setspace}
+\usepackage{pgf}%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel,arrows, arrows.meta,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\spaceskip=2\fontdimen2\font plus 3\fontdimen3\font minus3\fontdimen4\font\relax %Pour doubler l'espace entre les mots
+\newcommand\numb[1]{ % Dessin autour du numéro d'exercice
+  \begin{tikzpicture}[overlay,scale=.8]%,yshift=-.3cm
+    \draw[fill=couleur_numerotation,couleur_numerotation](-.4,-0.1)rectangle($(-0.4,.8)+(2em,0)$);
+    \draw (-.4,.8) node[white,anchor=north west,inner sep=0.5pt]{\bfseries EX}; 
+    \draw[line width=.05cm,couleur_numerotation,fill=white] (0,0)--(.5,.5)--(1,0)--(.5,-.5)--cycle;
+    \draw (0.5,0) node[anchor=center,couleur_numerotation]{\large\bfseries#1};
+  \end{tikzpicture}
+}
+
+% echelle pour le dé
+\def\globalscale {0.04}
+% abscisse initiale pour les chevrons
+\def\xini {3}
+
+\newcommand\theme[4]{%
+  \fancyhead[C]{%
+    % Tracé du dé
+    \begin{tikzpicture}[y=0.80pt, x=0.80pt, yscale=-\globalscale, xscale=\globalscale,remember picture, overlay,transform canvas={xshift=-0.5\linewidth,yshift=2.7cm},fill=couleur_theme]%,xshift=17cm,yshift=9.5cm
+      %%%% Arc supérieur gauche%%%%
+      \path[fill](523,1424)..controls(474,1413)and(404,1372)..(362,1333)..controls(322,1295)and(313,1272)..(331,1254)..controls(348,1236)and(369,1245)..(410,1283)..controls(458,1328)and(517,1356)..(575,1362)..controls(635,1368)and(646,1375)..(643,1404)..controls(641,1428)and(641,1428)..(596,1430)..controls(571,1431)and(538,1428)..(523,1424)--cycle;
+      %%%% Dé face supérieur%%%%
+      \path[fill](512,1272)..controls(490,1260)and(195,878)..(195,861)..controls(195,854)and(198,846)..(202,843)..controls(210,838)and(677,772)..(707,772)..controls(720,772)and(737,781)..(753,796)..controls(792,833)and(1057,1179)..(1057,1193)..controls(1057,1200)and(1053,1209)..(1048,1212)..controls(1038,1220)and(590,1283)..(551,1282)..controls(539,1282)and(521,1278)..(512,1272)--cycle;
+      %%%% Dé faces gauche et droite%%%%
+      \path[fill](1061,1167)..controls(1050,1158)and(978,1068)..(900,967)..controls(792,829)and(756,777)..(753,756)--(748,729)--(724,745)..controls(704,759)and(660,767)..(456,794)..controls(322,813)and(207,825)..(200,822)..controls(193,820)and(187,812)..(187,804)..controls(188,797)and(229,688)..(279,563)..controls(349,390)and(376,331)..(391,320)..controls(406,309)and(462,299)..(649,273)..controls(780,254)and(897,240)..(907,241)..controls(918,243)and(927,249)..(928,256)..controls(930,264)and(912,315)..(889,372)..controls(866,429)and(848,476)..(849,477)..controls(851,479)and(872,432)..(897,373)..controls(936,276)and(942,266)..(960,266)..controls(975,266)and(999,292)..(1089,408)..controls(1281,654)and(1290,666)..(1290,691)..controls(1290,720)and(1104,1175)..(1090,1180)..controls(1085,1182)and (1071,1176)..(1061,1167)--cycle;
+      %%%% Arc inférieur bas%%%%
+      \path[fill](1329,861)..controls(1316,848)and(1317,844)..(1339,788)..controls(1364,726)and(1367,654)..(1347,591)..controls(1330,539)and(1338,522)..(1375,526)..controls(1395,528)and(1400,533)..(1412,566)..controls(1432,624)and(1426,760)..(1401,821)..controls(1386,861)and(1380,866)..(1361,868)..controls(1348,870)and(1334,866)..(1329,861)--cycle;
+      %%%% Arc inférieur gauche%%%%
+      \path[fill](196,373)..controls(181,358)and(186,335)..(213,294)..controls(252,237)and(304,190)..(363,161)..controls(435,124)and(472,127)..(472,170)..controls(472,183)and(462,192)..(414,213)..controls(350,243)and(303,283)..(264,343)..controls(239,383)and(216,393)..(196,373)--cycle;
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay, shift={(current page.north west)},yshift=-8.5cm]
+      \fill[fill=couleur_theme] (0,5) rectangle (21,6);
+      \fill[fill=couleur_theme] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=couleur_theme] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=couleur_theme] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;   
+      \node[color=white] at (10.5,5.5) {\LARGE \bfseries{ \MakeUppercase{#4}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=west, fill=white, inner sep = 0pt] at ($(current page.north west)+(0.2,-2.3cm)$) {\footnotesize \bfseries{MathALÉA}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=east, fill=white] at ($(current page.north east)+(-2,-1.5cm)$) {\Huge \textcolor{couleur_theme}{\bfseries{\#}} \bfseries{#2} \textcolor{couleur_theme}{\bfseries \MakeUppercase{#3}}};
+    \end{tikzpicture}
+  }%
+  \fancyfoot[R]{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south east] at ($(current page.south east)+(-2,0.25cm)$) {\scriptsize {\bfseries \href{https://coopmaths.fr/}{Coopmaths.fr} -- \href{http://creativecommons.fr/licences/}{CC-BY-SA}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay,xscale=0.5,yscale=0.5, shift={(current page.south west)},xshift=35.7cm,yshift=-6cm]
+      \fill[fill=couleur_theme] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=couleur_theme] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=couleur_theme] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;  
+    \end{tikzpicture}
+  }
+  \fancyfoot[C]{}
+  \colorlet{couleur_theme}{#1}
+  \colorlet{couleur_numerotation}{couleur_theme}
+  \def\iconeobjectif{icone-objectif-#1}
+  \def\urliconeomethode{icone-methode-#1}
+}%
+
+\newcommand*\tikzfootMA{%
+  \ifboolKV[Theme]{CANs}{
+    \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+      \begin{scope}[x=\textwidth-\oddsidemargin,y=\textheight+5pt]
+        \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt,shift={(-\oddsidemargin,\topmargin)}] (0,0) rectangle (1,-1);
+      \end{scope}
+    \end{tikzpicture} 
+  }{%
+  \ifboolKV[Theme]{Classiques}{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1cm)$) rectangle ($(1,1)+(-5mm,-1.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1.5cm)$) rectangle ($(1,1)+(-5mm,-3.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }%
+  }
+}
+
+\newenvironment{Correction}{%
+  \setcounter{ExoMA}{0}%
+  \cfoot{\tikzfootMA}
+}{}%
+
+\newcommand\version[1]{
+  \fancyhead[R]{
+    \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(-.5,-.5cm)$) {\large \textcolor{couleur_theme}{\bfseries V#1}};
+    \end{tikzpicture}
+  }
+}
+
+\usepackage[french]{babel}
+% loadPackagesFromContent
+\usepackage{tikz}
+\newcommand{\e}{\mathrm{e}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usetikzlibrary{patterns,patterns.meta}
+\usepackage{etoolbox}
+\newbool{dys}
+\setbool{dys}{false}          
+\ifbool{dys}{
+% POLICE DYS
+% ===== VARIABLE =====
+\def\FontChoisie{Fira} % valeurs possibles : Fira, lmodern, tgheros
+\newcommand{\choiceFontsDys}[1]{
+\ifstrequal{#1}{Fira}{%
+  % Fira Sans + Fira Math
+  % Description : Fira Sans est une police moderne, et Fira Math est une version mathématique compatible qui maintient le style sans-serif.
+  % Utilisation : Fonctionne bien avec XeLaTeX et LuaLaTeX.
+  \usepackage{fontspec}
+  \setmainfont{Fira Sans}
+  \setsansfont{Fira Sans}
+  \usepackage{unicode-math}
+  \setmathfont{Fira Math}
+}{}
+\ifstrequal{#1}{lmodern}{%
+  % Latin Modern Sans
+  % Description : Une version sans-serif de la célèbre police Latin Modern, qui est compatible avec mathastext.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX et LuaLaTeX.
+  \usepackage{lmodern}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+\ifstrequal{#1}{tgheros}{%
+  % TeX Gyre Heros + mathastext
+  % Description : TeX Gyre Heros est une alternative à Helvetica, et le package mathastext permet d'utiliser la même police pour les mathématiques.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX, ou LuaLaTeX.
+  \usepackage{tgheros}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+}
+% Fira ou lmodern ou tgheros
+\choiceFontsDys{\FontChoisie}
+
+%\usepackage{unicode-math}
+%\usepackage{fontspec}
+%\setmainfont{TeX Gyre Schola}
+%\setsansfont{TeX Gyre Schola}
+%\setmathfont{TeX Gyre Schola Math}
+%\setmainfont{OpenDyslexic}[Scale=1.0]
+%\setsansfont{OpenDyslexic}[Scale=1.0]
+%\setmathfont{OpenDyslexic}[Scale=1.0,range=up/{Latin,latin,num}]
+\usepackage[fontsize=14]{scrextend}
+\usepackage{setspace}
+\setstretch{1.7}
+% Une valeur d'environ 1.2 à 1.7 est souvent recommandée. Cela permet d'augmenter l'espace entre les lignes tout en offrant un léger espacement entre les mots.
+\setlength{\spaceskip}{1.2em}  
+% Une valeur d'environ 1.2em à 1.5em est couramment conseillée. Cela crée un espace plus ample entre les mots, ce qui peut aider à réduire la fatigue visuelle et à améliorer la fluidité de la lecture.
+}{
+% POLICE STANDARD
+\usepackage[T1]{fontenc} 
+\usepackage[scaled=1]{helvet}
+\usepackage[fontsize=12]{scrextend}
+}
+
+\Theme[Coopmaths]{nombres}{}{}{}
+\begin{document}
+
+% @see : https://coopmaths.fr/alea?uuid=a17c6&id=auto6M2C-flash1&n=1&d=10&s=1&s2=false&s3=2&alea=Ggek&cd=1&cols=1
+\begin{EXO}{}{auto6M2C-flash1}
+
+ \begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.1,-0.1) rectangle (8.85,4.1);
+    	\draw[color={red},line width = 2,preaction={fill,color = {orange}, opacity = 0.5}] (0,1)--(0,2)--(2,2)--(2,4)--(3,4)--(3,1)--(6,1)--(6,0)--(2,0)--(2,1)--cycle;
+	\draw[color={black},preaction={fill,color = {gray}, opacity = 0.5}] (7,3)--(8,3)--(8,4)--(7,4)--cycle;
+	\draw [color={black}] (7.5,2.2) node[anchor = center,scale=1, rotate = 0] {1 cm²};
+
+\end{tikzpicture}\\Quelle est l'aire de la figure ci-dessus ?
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=b486a&id=auto6M2C-flash2&n=1&d=10&s=1&s2=false&s3=4&s4=2&alea=OM6x&cd=1&cols=1
+\begin{EXO}{}{auto6M2C-flash2}
+
+ \begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.10000000000000045,-0.1) rectangle (6.85,4.1);
+    	\draw[color ={gray},opacity = 0.6] (0,0)--(0,5);
+	\draw[color ={gray},opacity = 0.6] (1,0)--(1,5);
+	\draw[color ={gray},opacity = 0.6] (2,0)--(2,5);
+	\draw[color ={gray},opacity = 0.6] (3,0)--(3,5);
+	\draw[color ={gray},opacity = 0.6] (4,0)--(4,5);
+	\draw[color ={gray},opacity = 0.6] (5,0)--(5,5);
+	\draw[color ={gray},opacity = 0.6] (6,0)--(6,5);
+	\draw[color ={gray},opacity = 0.6] (7,0)--(7,5);
+	\draw[color ={gray},opacity = 0.6] (8,0)--(8,5);
+	\draw[color ={gray},opacity = 0.6] (0,0)--(8,0);
+	\draw[color ={gray},opacity = 0.6] (0,1)--(8,1);
+	\draw[color ={gray},opacity = 0.6] (0,2)--(8,2);
+	\draw[color ={gray},opacity = 0.6] (0,3)--(8,3);
+	\draw[color ={gray},opacity = 0.6] (0,4)--(8,4);
+	\draw[color ={gray},opacity = 0.6] (0,5)--(8,5);
+	\draw[color={black},preaction={fill,color = {gray}, opacity = 0.5}] (6,3)--(6.5,3)--(6.5,3.5)--(6,3.5)--cycle;
+	\draw[opacity=1] (6.5,2.5) node[anchor = center, rotate=0] {\scriptsize \color{black}$1 \text{cm}^2$};
+	\draw[color={black},preaction={fill,color = {orange}, opacity = 0.5}] (0,0)--(4,0)--(4,4)--(0,4)--cycle;
+
+\end{tikzpicture}\\
+ Quelle est l'aire de la figure ci-dessus ?
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=a17d6&id=auto6M2C-flash3&n=1&d=10&s=2&s2=true&alea=drm2&cd=1&cols=1
+\begin{EXO}{}{auto6M2C-flash3}
+
+ L'aire du rectangle est de $35$ cm².\\
+            \begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.10000000000000012,-0.1) rectangle (9.85,5.1);
+    	\draw[color={black},preaction={fill,color = {white}},pattern color = {gray}, pattern = {Lines[angle=45, distance=5pt, line width=0.3pt]}] (0,0)--(7,0)--(7,5)--(0,5)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (3,3)--(4,3)--(4,4)--(3,4)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (3,2)--(4,2)--(4,3)--(3,3)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (2,2)--(3,2)--(3,3)--(2,3)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (4,2)--(5,2)--(5,3)--(4,3)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (1,2)--(2,2)--(2,3)--(1,3)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (4,3)--(5,3)--(5,4)--(4,4)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (0,2)--(1,2)--(1,3)--(0,3)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (1,1)--(2,1)--(2,2)--(1,2)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (3,1)--(4,1)--(4,2)--(3,2)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (2,1)--(3,1)--(3,2)--(2,2)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (1,0)--(2,0)--(2,1)--(1,1)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (5,3)--(6,3)--(6,4)--(5,4)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (6,3)--(7,3)--(7,4)--(6,4)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}}] (5,4)--(6,4)--(6,5)--(5,5)--cycle;
+	\draw[color={black},preaction={fill,color = {gray}, opacity = 0.5}] (8,4)--(9,4)--(9,5)--(8,5)--cycle;
+	\draw [color={black}] (8.5,3.2) node[anchor = center,scale=1, rotate = 0] {1 cm²};
+
+\end{tikzpicture}\\
+       Quelle est l'aire de la zone hachurée ?
+      
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=83be9&id=auto6M2C-1&n=1&d=10&s=3&s2=false&s3=2&s4=1&alea=GAxI&cd=1&cols=1
+\begin{EXO}{}{auto6M2C-1}
+
+ \begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,-1) rectangle (18,8);
+    	\draw[color ={gray},opacity = 0.6] (-1,-1)--(-1,8);
+	\draw[color ={gray},opacity = 0.6] (0,-1)--(0,8);
+	\draw[color ={gray},opacity = 0.6] (1,-1)--(1,8);
+	\draw[color ={gray},opacity = 0.6] (2,-1)--(2,8);
+	\draw[color ={gray},opacity = 0.6] (3,-1)--(3,8);
+	\draw[color ={gray},opacity = 0.6] (4,-1)--(4,8);
+	\draw[color ={gray},opacity = 0.6] (5,-1)--(5,8);
+	\draw[color ={gray},opacity = 0.6] (6,-1)--(6,8);
+	\draw[color ={gray},opacity = 0.6] (7,-1)--(7,8);
+	\draw[color ={gray},opacity = 0.6] (8,-1)--(8,8);
+	\draw[color ={gray},opacity = 0.6] (9,-1)--(9,8);
+	\draw[color ={gray},opacity = 0.6] (10,-1)--(10,8);
+	\draw[color ={gray},opacity = 0.6] (11,-1)--(11,8);
+	\draw[color ={gray},opacity = 0.6] (12,-1)--(12,8);
+	\draw[color ={gray},opacity = 0.6] (13,-1)--(13,8);
+	\draw[color ={gray},opacity = 0.6] (14,-1)--(14,8);
+	\draw[color ={gray},opacity = 0.6] (15,-1)--(15,8);
+	\draw[color ={gray},opacity = 0.6] (16,-1)--(16,8);
+	\draw[color ={gray},opacity = 0.6] (17,-1)--(17,8);
+	\draw[color ={gray},opacity = 0.6] (18,-1)--(18,8);
+	\draw[color ={gray},opacity = 0.6] (-1,-1)--(18,-1);
+	\draw[color ={gray},opacity = 0.6] (-1,0)--(18,0);
+	\draw[color ={gray},opacity = 0.6] (-1,1)--(18,1);
+	\draw[color ={gray},opacity = 0.6] (-1,2)--(18,2);
+	\draw[color ={gray},opacity = 0.6] (-1,3)--(18,3);
+	\draw[color ={gray},opacity = 0.6] (-1,4)--(18,4);
+	\draw[color ={gray},opacity = 0.6] (-1,5)--(18,5);
+	\draw[color ={gray},opacity = 0.6] (-1,6)--(18,6);
+	\draw[color ={gray},opacity = 0.6] (-1,7)--(18,7);
+	\draw[color ={gray},opacity = 0.6] (-1,8)--(18,8);
+	\draw[color={black},preaction={fill,color = {orange}, opacity = 0.5}] (0,0)--(6,0)--(0,3)--cycle;
+	\draw[color={black},preaction={fill,color = {orange}, opacity = 0.5}] (7,0)--(14,0)--(14,4)--cycle;
+	\draw [color={black}] (3.5,-0.5) node[anchor = center,scale=1, rotate = 0] {Figure 1};
+	\draw [color={black}] (10.5,-0.5) node[anchor = center,scale=1, rotate = 0] {Figure 2};
+	\draw[color={black},preaction={fill,color = {gray}, opacity = 0.5}] (16,6)--(17,6)--(17,6.5)--(16,6.5)--cycle;
+	\draw [color={black}] (16.5,5.5) node[anchor = center,scale=1, rotate = 0] {1 u.a};
+
+\end{tikzpicture}\\\medskip
+
+      Calculer l'aire de la figure 1 et l'aire de la figure 2 en écrivant les calculs.
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=026d9&id=6M2A&n=1&d=10&s=1&s2=true&alea=BOdr&cd=1&cols=1
+\begin{EXO}{Convertir.}{6M2A}
+
+ $0{,}05 \text{ m}^2 = \ldots\ldots\ldots\ldots ~\text{dm}^2$
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=026d9&id=6M2A&n=1&d=10&s=3&s2=true&alea=gNak&cd=1&cols=1
+\begin{EXO}{Convertir.}{6M2A}
+
+ $0{,}02 ~\text{dm}^2 = \ldots\ldots\ldots\ldots \text{ cm}^2$
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=026d9&id=6M2A&n=1&d=10&s=2&s2=true&alea=oCF4&cd=1&cols=1
+\begin{EXO}{Convertir.}{6M2A}
+
+ $0{,}04 ~\text{dm}^2 = \ldots\ldots\ldots\ldots \text{ m}^2$
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=c6fb2&id=6M2C&n=1&d=10&s=1&alea=EpJe&cd=1&cols=1
+\begin{EXO}{\begin{tikzpicture}[baseline,scale = 0.75]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-3) rectangle (22,7);
+    	\draw[color={black}] (0,0)--(3.978088,-0.418114)--(4.396201,3.559974)--(0.418114,3.978088)--cycle;
+	\draw [color={black}] (-0.389795,-0.31565) node[anchor = center,scale=1, rotate = 0] {F};
+	\draw [color={black}] (4.293738,-0.807909) node[anchor = center,scale=1, rotate = 0] {G};
+	\draw [color={black}] (4.785997,3.875624) node[anchor = center,scale=1, rotate = 0] {H};
+	\draw [color={black}] (0.102464,4.367883) node[anchor = center,scale=1, rotate = 0] {I};
+	\draw[color={black},line width = 0.5] (3.978088,-0.418114)--(3.580279,-0.376302)--(3.62209,0.021506)--(4.019899,-0.020305)--cycle;
+	\draw[color={black},line width = 0.5] (0.418114,3.978088)--(0.376302,3.580279)--(0.774111,3.538467)--(0.815923,3.936276)--cycle;
+	\draw[color={black},line width = 0.5] (4.396201,3.559974)--(3.998393,3.601785)--(3.956581,3.203976)--(4.35439,3.162165)--cycle;
+	\draw[color={black},line width = 0.5] (0,0)--(0.397809,-0.041811)--(0.43962,0.355997)--(0.041811,0.397809)--cycle;
+	\draw [color={blue}] (1.989044,-0.209057) node[anchor = center,scale=1, rotate = -6] {//};
+\draw [color={blue}] (4.187145,1.57093) node[anchor = center,scale=1, rotate = 84] {//};
+\draw [color={blue}] (2.407158,3.769031) node[anchor = center,scale=1, rotate = -6] {//};
+\draw [color={blue}] (0.209057,1.989044) node[anchor = center,scale=0.5, rotate = -276] {//};
+
+	\draw [color={black}] (1.93678,-0.706318) node[anchor = center,scale=1, rotate = -6.023989999999998] {4 cm};
+
+\end{tikzpicture}\\
+}{6M2C}
+
+ Calculer l'aire du carré.
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=c6fb2&id=6M2C&n=1&d=10&s=2&alea=XVGT&cd=1&cols=1
+\begin{EXO}{\begin{tikzpicture}[baseline,scale = 0.75]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-3) rectangle (22,7);
+    	\draw[color={black}] (8,0)--(9.980536,-0.278346)--(10.676402,4.672994)--(8.695866,4.95134)--cycle;
+	\draw [color={black}] (7.752786,-0.431636) node[anchor = center,scale=1, rotate = 0] {J};
+	\draw [color={black}] (10.099199,-0.761403) node[anchor = center,scale=1, rotate = 0] {K};
+	\draw [color={black}] (10.923616,5.10463) node[anchor = center,scale=1, rotate = 0] {L};
+	\draw [color={black}] (8.577203,5.434397) node[anchor = center,scale=1, rotate = 0] {M};
+	\draw[color={black},line width = 0.5] (9.980536,-0.278346)--(9.584429,-0.222677)--(9.640098,0.17343)--(10.036205,0.117761)--cycle;
+	\draw[color={black},line width = 0.5] (10.676402,4.672994)--(10.620732,4.276887)--(10.224625,4.332556)--(10.280294,4.728663)--cycle;
+	\draw[color={black},line width = 0.5] (8.695866,4.95134)--(9.091973,4.895671)--(9.036303,4.499564)--(8.640196,4.555233)--cycle;
+	\draw[color={black},line width = 0.5] (8,0)--(8.055669,0.396107)--(8.451776,0.340438)--(8.396107,-0.055669)--cycle;
+	\draw [color={red}] (8.990268,-0.139173) node[anchor = center,scale=1, rotate = -8] {/};
+\draw [color={red}] (9.686134,4.812167) node[anchor = center,scale=1, rotate = -8] {/};
+
+	\draw [color={blue}] (10.328469,2.197324) node[anchor = center,scale=1, rotate = 82] {||};
+\draw [color={blue}] (8.347933,2.47567) node[anchor = center,scale=1, rotate = -278] {||};
+
+	\draw [color={black}] (8.920682,-0.634307) node[anchor = center,scale=1, rotate = -8.049059999999997] {2 cm};
+	\draw [color={black}] (10.823603,2.127737) node[anchor = center,scale=1, rotate = -278.04906] {5 cm};
+
+\end{tikzpicture}\\
+}{6M2C}
+
+ Calculer l'aire du rectangle.
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=c6fb2&id=6M2C&n=1&d=10&s=3&alea=RD7u&cd=1&cols=1
+\begin{EXO}{\begin{tikzpicture}[baseline,scale = 0.75]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-3) rectangle (22,7);
+    	\draw[color={black}] (15,0)--(17.963065,-0.469303)--(18.745237,4.469138)--cycle;
+	\draw [color={black}] (14.573479,-0.254313) node[anchor = center,scale=1, rotate = 0] {N};
+	\draw [color={black}] (18.14871,-0.929628) node[anchor = center,scale=1, rotate = 0] {O};
+	\draw [color={black}] (18.962017,4.919588) node[anchor = center,scale=1, rotate = 0] {P};
+	\draw[color={black},line width = 0.5] (17.963065,-0.469303)--(17.56799,-0.40673)--(17.630563,-0.011654)--(18.025639,-0.074228)--cycle;
+	\draw [color={black}] (16.403315,-0.728496) node[anchor = center,scale=1, rotate = -9.022320000000008] {3 cm};
+	\draw [color={black}] (18.847995,1.9217) node[anchor = center,scale=1, rotate = -279.08575] {5 cm};
+	\draw [color={black}] (16.489393,2.555721) node[anchor = center,scale=1, rotate = 50.00583] {5,8 cm};
+
+\end{tikzpicture}\\
+}{6M2C}
+
+ Calculer l'aire du triangle rectangle.
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=bae27&id=6M2C-flash1&n=1&d=10&alea=8VtO&cd=1&cols=1
+\begin{EXO}{}{6M2C-flash1}
+
+ Un carré de côté $8\text{ cm}$ et un rectangle de largeur $7\text{ cm}$ et de longueur $8\text{ cm}$ ont une aire qui diffère de $8\text{ cm}^2$. 
+    
+    	$\square\;$ Vrai\qquad $\square\;$ Faux\qquad \\
+
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=90e79&id=6M2C-flash2&n=1&d=10&alea=8N1g&cd=1&cols=1
+\begin{EXO}{}{6M2C-flash2}
+
+ Quelle est la longueur du côté d'un carré de $49\text{ cm}^2$ d'aire ?
+\end{EXO}
+
+
+\clearpage
+
+\begin{Correction}
+\begin{EXO}{}{}
+
+ L'aire de cette figure est : ${\color[HTML]{F15929}\boldsymbol{9}}$ cm².
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ L'aire de cette figure est : ${\color[HTML]{F15929}\boldsymbol{4\times4\times4}}\text{ soit }{\color[HTML]{F15929}\boldsymbol{64}}\text{cm}^2$.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ L'aire de la zone hachurée est $35$ cm² - $14$ cm² = ${\color[HTML]{F15929}\boldsymbol{21}}$ cm²
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ L'aire de la figure 1 est donnée par : ${\color[HTML]{F15929}\boldsymbol{6\times3\div2\times2}}\text{ soit }{\color[HTML]{F15929}\boldsymbol{18}}$ u.a, et l'aire de la figure 2 est donnée par : ${\color[HTML]{F15929}\boldsymbol{7\times4\div2\times2}}\text{ soit }{\color[HTML]{F15929}\boldsymbol{28}}$ u.a.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $1\text{ m}^2 = 100 ~\text{dm}^2$ et donc la mesure en $~\text{dm}^2$ est $100$ fois plus grande que la mesure en $\text{ m}^2$ ($1 \text{ m}^2$ est une centaine de $1 ~\text{dm}^2$).\\$0{,}05 \text{ m}^2 = 0{,}05 {\color[HTML]{216D9A}\boldsymbol{\times 1\,\textbf{ m}^2}}$ = $0{,}05 {\color[HTML]{216D9A}\boldsymbol{~\times~ 100\,~\textbf{dm}^2}} = {\color[HTML]{F15929}\boldsymbol{5}} ~\text{dm}^2$
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $1~\text{dm}^2 = 100 \text{ cm}^2$ et donc la mesure en $\text{ cm}^2$ est $100$ fois plus grande que la mesure en $~\text{dm}^2$ ($1 ~\text{dm}^2$ est une centaine de $1 \text{ cm}^2$).\\$0{,}02 ~\text{dm}^2 = 0{,}02 {\color[HTML]{216D9A}\boldsymbol{\times 1\,~\textbf{dm}^2}}$ = $0{,}02 {\color[HTML]{216D9A}\boldsymbol{~\times~ 100\,\textbf{ cm}^2}} = {\color[HTML]{F15929}\boldsymbol{2}} \text{ cm}^2$
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $1~\text{dm}^2 = \dfrac{1}{100} \text{ m}^2$ et donc la mesure en $\text{ m}^2$ est $100$ fois plus petite que la mesure en $~\text{dm}^2$ ($1 ~\text{dm}^2$ est un centième de $1 \text{ m}^2$).\\$0{,}04 ~\text{dm}^2 = 0{,}04 {\color[HTML]{216D9A}\boldsymbol{\times 1\,~\textbf{dm}^2}}$ = $0{,}04 {\color[HTML]{216D9A}\boldsymbol{\times \dfrac{1}{100}\,\textbf{ m}^2}}$ = $0{,}04 {\color[HTML]{216D9A}\boldsymbol{~\div~ 100\,\textbf{ m}^2}} = {\color[HTML]{F15929}\boldsymbol{0{,}000\,4}} \text{ m}^2$
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $\mathcal{A}_{FGHI}=4\text{ cm}\times4\text{ cm}={\color[HTML]{F15929}\boldsymbol{16}}\text{ cm}^2$
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $\mathcal{A}_{JKLM}=2\text{ cm}\times5\text{ cm}={\color[HTML]{F15929}\boldsymbol{10}}\text{ cm}^2$
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $\mathcal{A}_{NOP}=3\text{ cm}\times5\text{ cm}\div2={\color[HTML]{F15929}\boldsymbol{7{,}5}}\text{ cm}^2$
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ {\bfseries \color[HTML]{f15929}Vrai}\\ $\bullet$  Le carré a une aire de $8\times 8=64\text{ cm}^2$.\\
+    $\bullet$  Le rectangle a une aire de $8\times 7=56\text{ cm}^2$.\\Ce qui fait bien  une différence de $64 - 56=8\text{ cm}^2$ .
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ On sait que $49\text{ cm}^2 = 7\text{ cm} \times 7\text{ cm}$.\\Donc la longueur du côté du carré est de ${\color[HTML]{F15929}\boldsymbol{7}}\text{ cm}$.
+\end{EXO}
+
+\clearpage
+\end{Correction}
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:

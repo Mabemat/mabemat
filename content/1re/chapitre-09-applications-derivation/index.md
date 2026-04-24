@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 9 — Applications de la dérivation"
+title: "Applications de la dérivation"
 level: "1re"
 chapter_number: 9
 weight: 9

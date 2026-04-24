@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6ème — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+<a class="back-link" href="http://localhost:1313/mabemat/">← Accueil</a>
+
+
+
+
+  
+    
+
+    
+    
+    <div class="level-header" style="--lc:#D36740;">
+      <div class="bar" style="background:#D36740;"></div>
+      <div>
+        <h1>6ème</h1>
+        <p>Bien débuter au collège</p>
+      </div>
+      <div class="lvl-tag" style="margin-left:auto;">
+        <div class="lvl-swatch">
+          <span style="background:#D36740;"></span>
+          <span style="background:#C5607A;"></span>
+        </div>
+        <div>20 chapitres</div>
+        <div>année 2026–2027</div>
+      </div>
+    </div>
+    
+    <div class="lvl-sub">
+        <div class="col">
+          <h4>Ce qu'on va faire</h4>
+          <p>Reprendre les notions vues tout au long du cycle 3.</p>
+          
+        </div>
+        <div class="col">
+          <h4>Comment ça marche</h4>
+          <p>Une leçon, un polycopié distribué en cours mais imprimable, un QCM corrigé par chapitre - et un pixel-art pour certains.</p>
+          
+        </div>
+        
+      </div>
+    
+    
+    
+    
+    
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    <div class="filter-bar fade-up d3">
+      <div class="tabs">
+        <button class="active" data-filter="*">Tous</button>
+        <button data-filter="Espace et géométrie">Espace et géométrie</button><button data-filter="Grandeurs et mesures">Grandeurs et mesures</button><button data-filter="Nombres et calculs">Nombres et calculs</button><button data-filter="Organisation et gestion de données et probabilités">Organisation et gestion de données et probabilités</button><button data-filter="Proportionnalité">Proportionnalité</button>
+      </div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="chap-search" placeholder="chercher un chapitre…" autocomplete="off" />
+      </div>
+    </div>
+    
+    <div class="chap-list fade-up d4" id="chap-list">
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-01-nombres-entiers/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              01
+            
+          </div>
+
+        <div class="chap-title">
+          Nombres entiers
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-02-droites-et-segments/" data-cat="Espace et géométrie">
+          <div class="chap-num">
+            
+              02
+            
+          </div>
+
+        <div class="chap-title">
+          Droites et segments
+          <span class="sub">Espace et géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-03-notion-de-fraction/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              03
+            
+          </div>
+
+        <div class="chap-title">
+          Notion de fraction
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-04-comparer-ranger-et-reperer-les-nombres/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              04
+            
+          </div>
+
+        <div class="chap-title">
+          Comparer, ranger et repérer les nombres
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-05-angles/" data-cat="Espace et géométrie">
+          <div class="chap-num">
+            
+              05
+            
+          </div>
+
+        <div class="chap-title">
+          Angles
+          <span class="sub">Espace et géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-06-operations-sur-les-fractions/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              06
+            
+          </div>
+
+        <div class="chap-title">
+          Opérations sur les fractions
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-07-nombres-decimaux/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              07
+            
+          </div>
+
+        <div class="chap-title">
+          Nombres décimaux
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-08-triangles/" data-cat="Espace et géométrie">
+          <div class="chap-num">
+            
+              08
+            
+          </div>
+
+        <div class="chap-title">
+          Triangles
+          <span class="sub">Espace et géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-09-operations-sur-les-nombres-decimaux/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              09
+            
+          </div>
+
+        <div class="chap-title">
+          Opérations sur les nombres décimaux
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-10-distance-et-compas/" data-cat="Espace et géométrie">
+          <div class="chap-num">
+            
+              10
+            
+          </div>
+
+        <div class="chap-title">
+          Distance et compas
+          <span class="sub">Espace et géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-11-perimetre/" data-cat="Grandeurs et mesures">
+          <div class="chap-num">
+            
+              11
+            
+          </div>
+
+        <div class="chap-title">
+          Périmètre
+          <span class="sub">Grandeurs et mesures</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-12-divisions/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              12
+            
+          </div>
+
+        <div class="chap-title">
+          Divisions
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-13-symetrie-axiale/" data-cat="Espace et géométrie">
+          <div class="chap-num">
+            
+              13
+            
+          </div>
+
+        <div class="chap-title">
+          Symétrie axiale
+          <span class="sub">Espace et géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-14-proportionnalite/" data-cat="Proportionnalité">
+          <div class="chap-num">
+            
+              14
+            
+          </div>
+
+        <div class="chap-title">
+          Proportionnalité
+          <span class="sub">Proportionnalité</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-15-durees/" data-cat="Grandeurs et mesures">
+          <div class="chap-num">
+            
+              15
+            
+          </div>
+
+        <div class="chap-title">
+          Durées
+          <span class="sub">Grandeurs et mesures</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-16-organisation-et-gestion-de-donnees/" data-cat="Organisation et gestion de données et probabilités">
+          <div class="chap-num">
+            
+              16
+            
+          </div>
+
+        <div class="chap-title">
+          Organisation et gestion de données
+          <span class="sub">Organisation et gestion de données et probabilités</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-17-aires/" data-cat="Grandeurs et mesures">
+          <div class="chap-num">
+            
+              17
+            
+          </div>
+
+        <div class="chap-title">
+          Aires
+          <span class="sub">Grandeurs et mesures</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-18-probabilites/" data-cat="Organisation et gestion de données et probabilités">
+          <div class="chap-num">
+            
+              18
+            
+          </div>
+
+        <div class="chap-title">
+          Probabilités
+          <span class="sub">Organisation et gestion de données et probabilités</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-19-solides-de-lespace/" data-cat="Grandeurs et mesures|Espace et géométrie">
+          <div class="chap-num">
+            
+              19
+            
+          </div>
+
+        <div class="chap-title">
+          Solides de l&#39;espace
+          <span class="sub">Grandeurs et mesures · Espace et géométrie</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          <span class="res on">QCM</span>
+          
+          
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+      
+      <a class="chap-row" href="/mabemat/6e/chapitre-00-resolution-de-problemes/" data-cat="Nombres et calculs">
+          <div class="chap-num">
+            
+              00
+            
+          </div>
+
+        <div class="chap-title">
+          Résolution de problèmes
+          <span class="sub">Nombres et calculs</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on">Leçon</span><span class="res on">Polycopié</span>
+          
+          
+          <span class="res on">Pixel</span>
+          
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      
+    </div>
+    
+
+  
+
+
+
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.filter-bar .tabs button');
+  var searchInput = document.getElementById('chap-search');
+  var rows = document.querySelectorAll('#chap-list .chap-row');
+  var activeFilter = '*';
+  var searchQuery = '';
+
+  function applyFilters() {
+    rows.forEach(function(row) {
+      var cat = row.dataset.cat || '';
+      var title = row.querySelector('.chap-title') ? row.querySelector('.chap-title').textContent.toLowerCase() : '';
+      var num = row.querySelector('.chap-num') ? row.querySelector('.chap-num').textContent.trim().replace(/^0+/, '') : '';
+      var matchCat = activeFilter === '*' || cat.split('|').indexOf(activeFilter) !== -1;
+      var matchSearch = !searchQuery || title.indexOf(searchQuery) !== -1 || num === searchQuery.replace(/^0+/, '');
+      row.style.display = (matchCat && matchSearch) ? '' : 'none';
+    });
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      applyFilters();
+    });
+  }
+})();
+</script>
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

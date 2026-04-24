@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fonction inverse — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/2nde/">2nde</a>
+    <span class="sep">/</span>
+    <span>Chapitre 14</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#4A5D7A;">14</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 14 · 2nde
+      </div>
+      
+      <h1 class="fade-up d2">Fonction inverse</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Fonctions
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#4A5D7A;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#4A5D7A;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/2nde/chapitre-14-fonction-inverse/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/2nde/chapitre-14-fonction-inverse/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/2nde/">
+    <div><div class="adj-lbl">← 2nde</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  <div></div>
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/2nde/chapitre-14-fonction-inverse/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/2nde/chapitre-14-fonction-inverse/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/">2nde</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/chapitre-14-fonction-inverse/">Fonction inverse</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 14 - Leçon
+      </div>
+      <h1 class="lesson-h1">Fonction inverse</h1>
+
+      <div class="full-lesson niveau-2nde">
+        <h2 class="subsection-title">14.1 La fonction inverse</h2>
+<h3 class="subsubsection-title">14.1.1 Définition</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+La fonction <strong>inverse</strong> est la fonction $f$ définie sur $\mathbb{R}^\ast=]-\infty ; 0 [ \cup ]0 ; +\infty[$ par :
+$$f(x)=\frac{1}{x}$$
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>$f(2)=\dfrac{1}{2}=0,5$</li>
+<li>$f(-4)=\dfrac{1}{-4}=-0,25$</li>
+</ul>
+</div>
+</div>
+<div class="remarque">
+Pour que la fonction inverse soit définie, il faut que le dénominateur soit différent de $0$, c'est-à-dire que $x\neq 0$. On dit que $0$ est une valeur interdite.
+</div>
+<h3 class="subsubsection-title">14.1.2 Représentation graphique</h3>
+<table>
+<tr>
+<th>$x$</th>
+<th>$-5$</th>
+<th>$-4$</th>
+<th>$-3$</th>
+<th>$-2$</th>
+<th>$-1$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$3$</th>
+<th>$4$</th>
+<th>$5$</th>
+</tr>
+<tr>
+<td>$f(x)=\dfrac{1}{x}$</td>
+<td>$-\dfrac{1}{5}=-0,2$</td>
+<td>$-\dfrac{1}{4}=-0,25$</td>
+<td>$-\dfrac{1}{3}$</td>
+<td>$-\dfrac{1}{2}=-0,5$</td>
+<td>$-\dfrac{1}{1} =-1$</td>
+<td style="background-color:#ddd; text-align:center;"></td>
+<td>$\dfrac{1}{1}=1$</td>
+<td>$\dfrac{1}{2}=0,5$</td>
+<td>$\dfrac{1}{3}$</td>
+<td>$\dfrac{1}{4}=0,25$</td>
+<td>$\dfrac{1}{5}=0,2$</td>
+</tr>
+</table>
+<br>
+<img src="/mabemat/figures/2nde/chapitre-14/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(41% - 12px); max-height:300px; max-width:100%;"><div style="display:inline-block; vertical-align:middle; width:calc(57% - 12px);">
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+La représentation graphique de la fonction inverse s'appelle une <strong>hyperbole</strong>.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<ul>
+<li>La courbe représentative de la fonction inverse admet <br>l'origine $O(0;0)$ comme centre de symétrie.<br></li>
+<li>Pour tout $x\in \mathbb{R}^\ast$, $\dfrac{1}{(-x)}=-\dfrac{1}{x}$ donc $f(-x)=-f(x)$, on dit que la fonction inverse est impaire.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 class="subsubsection-title">14.1.3 Variations de la fonction inverse</h3>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+La fonction inverse est décroissante sur $]-\infty ; 0 [ $ et sur $]0 ; +\infty [$.
+</div>
+</div>
+<p>On peut dresser le tableau de variations.</p>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-14/t1.png" alt="figure 2" style="max-height:100px; max-width:100%;">
+</div>
+<div class="remarque">
+On ne peut pas dire que la fonction inverse est décroissante sur $\mathbb{R}^\ast$. <br>En effet, l'affirmation : « Lorsque les valeurs de $x$ augmentent sur $\mathbb{R}^\ast$, leurs inverses diminuent » est fausse. <br>Par exemple, $1$ est plus grand que $-2$, et $1$ (l'inverse de $1$) est plus grand que $-\dfrac{1}{2}$ (l'inverse de $-2$).
+</div>
+<p>Démonstration . <br>
+La fonction inverse étant impaire, il nous suffit de montrer qu&rsquo;elle est décroissante sur l&rsquo;intervalle $]0;+\infty[$. <br>
+En effet, on obtiendra automatiquement la décroissance sur l&rsquo;intervalle $]-\infty;0[$ par symétrie de l&rsquo;hyperbole par rapport à l&rsquo;origine du repère.<br>
+Montrons donc que $f$ est décroissante sur $]0;+\infty[$.<br>
+Soient $a$ et $b$ deux réels distincts de l&rsquo;intervalle $]0;+\infty[$ tels que $a<b$.<br>
+On veut montrer que $f(a)>f(b)$, c&rsquo;est à dire $\dfrac{1}{a}>\dfrac{1}{b}$.<br>
+Montrons que $\dfrac{1}{a}-\dfrac{1}{b}>0$.
+</p>
+$$\dfrac{1}{a}-\dfrac{1}{b}=\dfrac{b}{ab}-\dfrac{a}{ab}=\dfrac{b-a}{ab}$$<p>
+$a$ et $b$ sont strictement positifs donc $ab>0$. Par ailleurs, $a<b$, donc $b-a>0$. Par quotient, on a $\dfrac{b-a}{ab}>0$. <br>Ainsi, $\dfrac{1}{a}>\dfrac{1}{b}$. $a$ et $b$ étant quelconques, on a donc montré que la fonction inverse est décroissante sur $]0;+\infty[$.</p>
+<h2 class="subsection-title">14.2 Équations et inéquations</h2>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<ul>
+<li>Si on multiplie un nombre réel $x$ par son inverse, on obtient $1$ : $x\times \dfrac{1}{x}=1$.</li>
+<li>Pour tout nombre réel $x$ non nul, l'inverse de $\dfrac{1}{x}$ est $\dfrac{1}{\frac{1}{x}}=x$.</li>
+</ul>
+</div>
+</div>
+<h3 class="subsubsection-title">14.2.1 Résolution d'équations</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Pour tout réel non nul $a$, l'équation $\dfrac{1}{x}=a$ admet pour unique solution $x=\dfrac{1}{a}$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+L'équation $\dfrac{1}{x}=7$ a pour unique solution $x=\dfrac{1}{7}$.
+</div>
+</div>
+<h3 class="subsubsection-title">14.2.2 Résolution d'inéquations</h3>
+<div class="environment propriete" style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ admet pour ensemble de solutions :
+<ul>
+<li>$S=\left[\dfrac{1}{a}\,;\,0\right[$ si $a<0$ ;</li>
+<li>$S=\left]-\infty\,;\,0\right[$ si $a=0$ ;</li>
+<li>$S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{a}\,;\,+\infty\right[$ si $a>0$.</li>
+</ul>
+</div>
+</div><div class="environment propriete" style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ admet pour ensemble de solutions :
+<ul>
+<li>$S=\left]-\infty\,;\,\dfrac{1}{a}\right]\cup \left]0\,;\,+\infty\right[$ si $a<0$ ;</li>
+<li>$S=\left]0\,;\,+\infty\right[$ si $a=0$ ;</li>
+<li>$S=\left]0\,;\,\dfrac{1}{a}\right]$ si $a>0$.</li>
+</ul>
+</div>
+</div>
+<div style="display:inline-block; vertical-align:middle; width:calc(48% - 12px);">
+Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ a pour solution <br> $$S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{a}\,;\,+\infty\right[$$ 
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-14/fig3.svg" alt="figure 3" style="max-height:300px; max-width:100%;">
+</div>
+</div><div style="display:inline-block; vertical-align:middle; width:calc(50% - 12px);">
+Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ a pour solution $$S=\left]0\,;\,\dfrac{1}{a}\right]$$ 
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-14/fig4.svg" alt="figure 4" style="max-height:300px; max-width:100%;">
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/2nde/chapitre-14-fonction-inverse/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/2nde/chapitre-14-fonction-inverse/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

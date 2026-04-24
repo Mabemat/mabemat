@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="185" viewBox="0 0 320 185">
+<path d="M142.00,135.00 L87.00,135.00 A55.00,55.00 0 0,1 180.89,96.11 Z" fill="#F2D1C6" stroke="none"/>
+<path d="M142.00,135.00 L197.00,135.00 A55.00,55.00 0 0,0 180.89,96.11 Z" fill="#F1D2D6" stroke="none"/>
+<line x1="32.00" y1="135.00" x2="279.50" y2="135.00" stroke="#D36740" stroke-width="2.5"/>
+<line x1="142.00" y1="135.00" x2="142.00" y2="52.50" stroke="#D36740" stroke-width="1.5" stroke-dasharray="8,4"/>
+<line x1="142.00" y1="135.00" x2="224.50" y2="52.50" stroke="#D36740" stroke-width="2.5"/>
+<text x="59.50" y="96.50" text-anchor="middle" fill="#D36740" font-size="12" font-family="sans-serif">Obtus</text>
+<text x="224.50" y="96.50" text-anchor="middle" fill="#CF6876" font-size="12" font-family="sans-serif">Aigu</text>
+</svg>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-snt">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Séance 02 · Les fonctions — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+<a class="back-link" href="/mabemat/snt/">← SNT</a>
+
+<div class="level-header" style="--lc: #8A9CC1;">
+  <div class="bar" style="background: #8A9CC1;"></div>
+  <div>
+    <h1 style="color: #8A9CC1;">Séance 02 · Les fonctions</h1>
+    <p>Définir et appeler ses propres fonctions en Python</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="acts" style="margin-bottom: 2rem;">
+  
+  <a class="btn" href="https://capytale.ac/notebook/..." target="_blank"
+     style="color: #8A9CC1; border-color: #8A9CC1;">
+    📓 Notebook Capytale
+  </a>
+  
+
+</div>
+
+
+
+
+<div class="snt-section">
+  <button class="snt-toggle" onclick="this.parentElement.classList.toggle('open')" style="--lc: #8A9CC1;">
+    <span>Correction</span>
+    <span class="snt-arr">▾</span>
+  </button>
+  <div class="snt-body">
+    <div class="snt-inner">
+      <h3 id="exercice-1--révisions">Exercice 1 — Révisions</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prix_unitaire <span style="color:#666">=</span> <span style="color:#40a070">1.5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>quantite <span style="color:#666">=</span> <span style="color:#40a070">4</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>prix_total <span style="color:#666">=</span> prix_unitaire <span style="color:#666">*</span> quantite
+</span></span></code></pre></div><p><strong>Question 1 :</strong> Ce programme utilise <strong>3 variables</strong> : <code>prix_unitaire</code>, <code>quantite</code> et <code>prix_total</code>.</p>
+<p><strong>Question 2 :</strong> À l&rsquo;exécution, <code>prix_total</code> reçoit la valeur <code>1.5 × 4 = 6.0</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: right"><code>prix_unitaire</code></th>
+          <th style="text-align: right"><code>quantite</code></th>
+          <th style="text-align: right"><code>prix_total</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: right">1.5</td>
+          <td style="text-align: right">—</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: right">1.5</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: right">1.5</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">1.5×4=<strong>6.0</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Réponse :</strong> <code>prix_total = 6.0</code> ✓</p>
+<hr>
+<h3 id="exercice-2--analyse-dune-fonction">Exercice 2 — Analyse d&rsquo;une fonction</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prix_a_afficher</span>(prix_unitaire, quantite):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    prix_total <span style="color:#666">=</span> prix_unitaire <span style="color:#666">*</span> quantite
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> prix_total
+</span></span></code></pre></div><p><strong>Question 1 :</strong></p>
+<ul>
+<li>Nom de la fonction : <code>prix_a_afficher</code></li>
+<li>Paramètres : <code>prix_unitaire</code> et <code>quantite</code></li>
+</ul>
+<p><strong>Question 2 :</strong> La première ligne se termine par <code>:</code> (deux-points). Ce caractère est <strong>indispensable</strong> pour annoncer le début du bloc d&rsquo;instructions.</p>
+<p><strong>Question 3 :</strong> Les deux lignes du bloc d&rsquo;instructions commencent par des espaces — ce sont des <strong>indentations</strong> (4 espaces). Elles sont obligatoires pour que Python sache quelles instructions appartiennent à la fonction.</p>
+<p><strong>Question 4 :</strong> La fonction renvoie <strong>1 variable</strong> : <code>prix_total</code>.</p>
+<p><strong>Question 5 :</strong> Pour un article à 3 € acheté en 2 exemplaires :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prix_a_afficher(<span style="color:#40a070">3</span>, <span style="color:#40a070">2</span>)
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th style="text-align: right">Valeur</th>
+          <th>Calcul</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>prix_unitaire</code></td>
+          <td style="text-align: right">3</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td><code>quantite</code></td>
+          <td style="text-align: right">2</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td><code>prix_total</code></td>
+          <td style="text-align: right"><strong>6.0</strong></td>
+          <td>3 × 2</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Résultat renvoyé :</strong> <code>6.0</code> ✓</p>
+<p><strong>Question 6 :</strong> Pour un article à 1,15 € acheté en 3 exemplaires :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prix_a_afficher(<span style="color:#40a070">1.15</span>, <span style="color:#40a070">3</span>)
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th style="text-align: right">Valeur</th>
+          <th>Calcul</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>prix_unitaire</code></td>
+          <td style="text-align: right">1.15</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td><code>quantite</code></td>
+          <td style="text-align: right">3</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td><code>prix_total</code></td>
+          <td style="text-align: right"><strong>3.45</strong></td>
+          <td>1.15 × 3</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Résultat renvoyé :</strong> <code>3.45</code> ✓</p>
+<hr>
+<h3 id="exercice-3--truc_muche">Exercice 3 — <code>truc_muche</code></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">truc_muche</span>(a, b, c):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> a <span style="color:#666">+</span> b <span style="color:#666">+</span> c
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> s
+</span></span></code></pre></div><p><strong>Question 1 :</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Réponse</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>a. Nom</strong></td>
+          <td><code>truc_muche</code></td>
+      </tr>
+      <tr>
+          <td><strong>b. Paramètres</strong></td>
+          <td><code>a</code>, <code>b</code>, <code>c</code></td>
+      </tr>
+      <tr>
+          <td><strong>c. Bloc d&rsquo;instructions</strong></td>
+          <td><code>s = a + b + c</code> et <code>return s</code> (2 lignes)</td>
+      </tr>
+      <tr>
+          <td><strong>d. Valeurs renvoyées</strong></td>
+          <td>1 valeur : <code>s</code></td>
+      </tr>
+      <tr>
+          <td><strong>e. <code>truc_muche(2, 5, 1)</code></strong></td>
+          <td><code>2 + 5 + 1 = 8</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Question 2 :</strong> Code de la fonction (à écrire et exécuter) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">truc_muche</span>(a, b, c):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> a <span style="color:#666">+</span> b <span style="color:#666">+</span> c
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> s
+</span></span></code></pre></div><p>Après exécution, il ne se passe rien à l&rsquo;écran — c&rsquo;est normal : la fonction est simplement mémorisée.</p>
+<p><strong>Question 3 :</strong> Appel <code>truc_muche(2, 5, 1)</code> :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th style="text-align: right"><code>c</code></th>
+          <th style="text-align: right"><code>s</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">5</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">2+5+1=<strong>8</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Résultat renvoyé :</strong> <code>8</code> ✓</p>
+<p><strong>Question 4 :</strong> Pour des paramètres 1, 2, 4 :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>truc_muche(<span style="color:#40a070">1</span>, <span style="color:#40a070">2</span>, <span style="color:#40a070">4</span>)
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: right"><code>a</code></th>
+          <th style="text-align: right"><code>b</code></th>
+          <th style="text-align: right"><code>c</code></th>
+          <th style="text-align: right"><code>s</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: right">1</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">4</td>
+          <td style="text-align: right">1+2+4=<strong>7</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Résultat renvoyé :</strong> <code>7</code> ✓</p>
+<hr>
+<h3 id="exercice-4--définition-dune-image">Exercice 4 — Définition d&rsquo;une image</h3>
+<p><strong>Question 1 :</strong> L&rsquo;image d&rsquo;illustration (960 pixels de large, 720 pixels de haut) :</p>
+$$\text{Définition} = 960 \times 720 = \mathbf{691\ 200 \text{ pixels}}$$<p><strong>Question 2 :</strong> Fonction complétée :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">definition_image</span>(L, H):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    d <span style="color:#666">=</span> L <span style="color:#666">*</span> H
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> d
+</span></span></code></pre></div><p><strong>Question 3 :</strong> Pour une image 800 × 600 :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>definition_image(<span style="color:#40a070">800</span>, <span style="color:#40a070">600</span>)
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: right"><code>L</code></th>
+          <th style="text-align: right"><code>H</code></th>
+          <th style="text-align: right"><code>d</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: right">800</td>
+          <td style="text-align: right">600</td>
+          <td style="text-align: right">800×600=<strong>480 000</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Résultat renvoyé :</strong> <code>480000</code> ✓</p>
+<p><strong>Question 4 :</strong> Pour l&rsquo;image d&rsquo;illustration (960 × 720) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>definition_image(<span style="color:#40a070">960</span>, <span style="color:#40a070">720</span>)
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: right"><code>L</code></th>
+          <th style="text-align: right"><code>H</code></th>
+          <th style="text-align: right"><code>d</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: right">960</td>
+          <td style="text-align: right">720</td>
+          <td style="text-align: right">960×720=<strong>691 200</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Résultat renvoyé :</strong> <code>691200</code> ✓ — cohérent avec la réponse à la question 1.</p>
+<hr>
+<h3 id="exercice-5--dessiner-avec-la-tortue">Exercice 5 — Dessiner avec la tortue</h3>
+<p><strong>Question 1 :</strong> Les fonctions <code>forward</code>, <code>right</code> et <code>left</code> possèdent chacune <strong>1 paramètre</strong> :</p>
+<ul>
+<li><code>forward(x)</code> → <code>x</code> est le nombre de pixels à avancer</li>
+<li><code>right(a)</code> et <code>left(a)</code> → <code>a</code> est l&rsquo;angle de rotation en degrés</li>
+</ul>
+<p><strong>Question 2 :</strong> Carré de 50 pixels de côté (tourner 4 fois à 90°) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">turtle</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>forward(<span style="color:#40a070">50</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>forward(<span style="color:#40a070">50</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>forward(<span style="color:#40a070">50</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>forward(<span style="color:#40a070">50</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>done()
+</span></span></code></pre></div><p><strong>Question 3 :</strong> Carré de 100 pixels de côté (mêmes instructions, taille × 2) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">turtle</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>done()
+</span></span></code></pre></div><p><strong>Question 4 :</strong> Fonction <code>carre</code> avec paramètre <code>taille</code> :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">carre</span>(taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    forward(taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    forward(taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    forward(taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    forward(taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span></code></pre></div><p><strong>⚠️ Point clé :</strong> Toutes les lignes du bloc d&rsquo;instructions sont indentées de 4 espaces. Pas de <code>done()</code> à l&rsquo;intérieur de la fonction — il ne faut le mettre qu&rsquo;après les appels.</p>
+<p><strong>Question 5 :</strong> Pour obtenir la figure avec plusieurs carrés imbriqués (par exemple de tailles 10, 20, 30, 40, 50, 60, 70, 80) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">turtle</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>carre(<span style="color:#40a070">10</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>carre(<span style="color:#40a070">20</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>carre(<span style="color:#40a070">30</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>carre(<span style="color:#40a070">40</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>carre(<span style="color:#40a070">50</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>carre(<span style="color:#40a070">60</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>carre(<span style="color:#40a070">70</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>carre(<span style="color:#40a070">80</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>done()
+</span></span></code></pre></div><hr>
+<h3 id="défi--fonction-rectangle">Défi — Fonction <code>rectangle</code></h3>
+<p>Un rectangle a deux dimensions : une longueur et une largeur. On avance alternativement de <code>longueur</code> et de <code>largeur</code> en tournant à 90° à chaque fois :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">rectangle</span>(longueur, largeur):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    forward(longueur)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    forward(largeur)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    forward(longueur)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    forward(largeur)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>    right(<span style="color:#40a070">90</span>)
+</span></span></code></pre></div><p>Pour dessiner un court de tennis (dimensions approximatives : 23,77 m × 10,97 m — on utilisera des pixels proportionnels, par exemple 238 × 110) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">turtle</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>rectangle(<span style="color:#40a070">238</span>, <span style="color:#40a070">110</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>done()
+</span></span></code></pre></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

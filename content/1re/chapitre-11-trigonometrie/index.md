@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 11 — Trigonométrie"
+title: "Trigonométrie"
 level: "1re"
 chapter_number: 11
 weight: 11

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercices type brevet - Calcul littéral (1) — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+<a class="back-link" href="/mabemat/3e/">← Retour au chapitre</a>
+
+
+<div class="brevet-page niveau-3e">
+  <div class="brevet-page-header" style="--lc: #8B3C52; border-left-color: #8B3C52;">
+    <div>
+      <h1 style="color: #8B3C52;">Exercices type brevet - Calcul littéral (1)</h1>
+      
+    </div>
+  </div>
+
+
+  <div class="brevet-content">
+    
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+<div class="brevet-exo">
+
+  <div class="brevet-exo-header">
+    <span class="brevet-exo-num">Exercice 1</span>
+    
+      <span class="brevet-exo-origine">— DNB Janvier 2026 Sujet 0 Version A</span>
+    
+  </div>
+
+  
+  <div class="brevet-exo-intro"><br>
+
+On donne un programme de calcul :
+
+pspicture(-3,0)(3,4.2)
+
+(0,4)<div class="brevet-fbox">choisir un nombre</div>[linewidth=1.5pt]->(0,3.7)(0,3.2)
+(0,3)<div class="brevet-fbox">le multiplier par 2</div>[linewidth=1.5pt]->(0,2.7)(0,2.2)
+(0,2)<div class="brevet-fbox">élever le résultat au carré</div>[linewidth=1.5pt]->(0,1.7)(0,1.2)
+(0,1)<div class="brevet-fbox">retrancher 9</div>[linewidth=1.5pt]->(0,0.7)(0,0.2)
+(0,0)<div class="brevet-fbox">afficher le résultat</div>
+pspicture</div>
+  
+
+  
+
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">1.</span>
+      Lorsque le nombre choisi est 4, vérifier le programme affiche 55, en précisant chacune des
+étapes de calcul.
+    </div>
+
+    
+    
+
+    
+    
+
+  </div>
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">2.</span>
+      On appelle $x$ le nombre choisi au départ.
+    </div>
+
+    
+    
+
+    
+    
+    <div class="brevet-sub-list">
+      
+      
+      <div class="brevet-sub-q">
+        <span class="brevet-sub-num">a.</span>
+        <div class="brevet-sub-enonce-wrap">
+          <div class="brevet-sub-enonce">Écrire, en fonction de $x$, le résultat obtenu par le programme.</div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="brevet-sub-q">
+        <span class="brevet-sub-num">b.</span>
+        <div class="brevet-sub-enonce-wrap">
+          <div class="brevet-sub-enonce">Parmi les quatre expressions suivantes, laquelle correspond au résultat obtenu par le
+programme ?
+
+tabularx*4X
+$A = 55$ &$B= (2x +3)^2$ &$C= (2x - 3)(2x +3)$ &$D = (2x — 3)^2$<br>
+tabularx</div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+
+  </div>
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+<div class="brevet-exo">
+
+  <div class="brevet-exo-header">
+    <span class="brevet-exo-num">Exercice 2</span>
+    
+      <span class="brevet-exo-origine">— DNB Juin 2025 Amérique du Nord</span>
+    
+  </div>
+
+  
+  <div class="brevet-exo-intro">On considère les deux programmes de calcul suivants :
+
+tabularxm6.cm|X
+<strong>Programme A</strong>&<strong>Programme B</strong><br>
+<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>Choisir un nombre</li><li>Multiplier par 3</li><li>Ajouter 15</li><li>Diviser par 3</li><li>Soustraire le nombre de départ</li></ul>&unit=0.825cm,arrowsize=2pt 3
+-2cm
+pspicture(-4,0)(4,6)
+(0,5)Choisir un nombre(-1.9,5.4)(1.9,4.6)
+->(-1.9,5)(-2.6,5)(-2.6,4.1)
+(-2.6,3.7)Soustraire 1(-3.8,4.1)(-1.4,3.3)->(1.9,5)(2.6,5)(2.6,4.1)
+(2.6,3.7)Soustraire 6(1.4,4.1)(3.8,3.3)
+->(-1.4,3.7)(-0.6,3.7)(-0.6,2.3)->(1.4,3.7)(0.6,3.7)(0.6,2.3)
+(0,1.9)Multiplier les deux résultats obtenus(-3.3,2.3)(3.3,1.5)
+->(0,1.5)(0,0.8)
+(0,0.5)Ajouter 5(-1,0.8)(1,0.2)
+
+pspicture
+tabularx</div>
+  
+
+  
+
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">1.</span>
+      Montrer que, lorsque le nombre choisi est 4, le résultat obtenu avec le programme A est 5.
+    </div>
+
+    
+    
+    <button class="brevet-btn" onclick="toggleBrevet(this)">
+      &#9658; Voir la correction
+    </button>
+    <div class="brevet-corr" style="display:none">
+      On obtient successivement :
+
+$4 \overset{\times 3}{\longmapsto} \quad12 \quad \overset{+ 15}{\longmapsto} \quad27 \quad \overset{\div 3}{\longmapsto} \quad 9 \quad \overset{- 4}{\longmapsto} \quad 5$
+    </div>
+    
+
+    
+    
+
+  </div>
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">2.</span>
+      Montrer que, lorsque le nombre choisi est $- 2$, le résultat obtenu avec le programme A est 5.
+    </div>
+
+    
+    
+    <button class="brevet-btn" onclick="toggleBrevet(this)">
+      &#9658; Voir la correction
+    </button>
+    <div class="brevet-corr" style="display:none">
+      $-2 \overset{\times 3}{\longmapsto} \quad - 6 \quad \overset{+ 15}{\longmapsto} \quad 9 \quad \overset{\div 3}{\longmapsto} \quad 3 \quad \overset{- (- 2)}{\longmapsto} \quad 5$
+    </div>
+    
+
+    
+    
+
+  </div>
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">3.</span>
+      Justifier que l'affirmation suivante est vraie :
+
+« Le programme A donne toujours le même résultat.  »
+    </div>
+
+    
+    
+    <button class="brevet-btn" onclick="toggleBrevet(this)">
+      &#9658; Voir la correction
+    </button>
+    <div class="brevet-corr" style="display:none">
+      « Le programme A donne toujours le même résultat.  »
+
+En effet $a \overset{\times 3}{\longmapsto} \quad 3a \quad \overset{+ 15}{\longmapsto} \quad 3a + 15 = 3(a + 5) \quad \overset{\div 3}{\longmapsto} \quad a + 5\quad \overset{- a}{\longmapsto} \quad 5$.
+
+Quel que soit le nombre de départ $a$, le nombre trouvé à la fin est 5.
+    </div>
+    
+
+    
+    
+
+  </div>
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">4.</span>
+      Lorsque le nombre choisi est 10, quel résultat obtient-on avec le programme B ?
+    </div>
+
+    
+    
+    <button class="brevet-btn" onclick="toggleBrevet(this)">
+      &#9658; Voir la correction
+    </button>
+    <div class="brevet-corr" style="display:none">
+      On calcule d'une part $10 - 1 = 9$, de l'autre $10 - 6 = 4$ ; le produit de ces deux nombres est égal à $9 \times 4 = 36$ et enfin $36 + 5 = 41$.
+    </div>
+    
+
+    
+    
+
+  </div>
+  
+  
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">5.</span>
+      Il existe exactement deux nombres pour lesquels les programmes A et B fournissent à chaque fois des résultats identiques.
+
+Quels sont ces deux nombres?
+    </div>
+
+    
+    
+    <button class="brevet-btn" onclick="toggleBrevet(this)">
+      &#9658; Voir la correction
+    </button>
+    <div class="brevet-corr" style="display:none">
+      En partant de $x$ le programme A donne le résultat 5 et avec le programme B, on obtient le nombre $(x - 1)(x - 6) + 5$.
+Les résultats sont identiques si :
+
+$5 = (x - 1)(x - 6) + 5$ autrement dit si $(x - 1)(x - 6) = 0$ cettez équation produit a pour solution 1 et 6
+
+1 et 6 sont bien les deux seuls nombres qui donnent comme résultat 5 par les deux programmes.
+    </div>
+    
+
+    
+    
+
+  </div>
+  
+
+</div>
+
+  </div>
+
+  <a class="back-link" style="margin-top: 2rem;" href="/mabemat/3e/">← Retour au chapitre</a>
+</div>
+
+<script>
+function toggleBrevet(btn) {
+  var corr = btn.nextElementSibling;
+  var hidden = corr.style.display === 'none';
+  corr.style.display = hidden ? 'block' : 'none';
+  btn.innerHTML = hidden ? '&#9660; Masquer la correction' : '&#9658; Voir la correction';
+  btn.classList.toggle('brevet-btn--open', hidden);
+}
+</script>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

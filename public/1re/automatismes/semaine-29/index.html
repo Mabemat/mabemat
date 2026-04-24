@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatismes — Semaine 29 — MaBémath</title>
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body class="page-lecon">
+  <nav>
+  <div class="nav-inner">
+    <a href="http://localhost:1313/mabemat/" class="logo-mabe">
+      <span class="logo-m">M</span><span class="logo-rest">aBémat</span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      
+      <li><a href="/mabemat/6e/">6e</a></li>
+      
+      <li><a href="/mabemat/3e/">3e</a></li>
+      
+      <li><a href="/mabemat/2nde/">2nde</a></li>
+      
+      <li><a href="/mabemat/1re/" class="active">1re</a></li>
+      
+      <li><a href="/mabemat/snt/">Python</a></li>
+      
+      <li><a href="/mabemat/liens/">Liens</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container">
+    
+
+
+
+
+
+
+  
+  
+
+
+
+<a class="back-link" href="/mabemat/1re/">&#8592; 1ère Spécialité</a>
+
+<div class="qcm-page">
+  <h1 style="color: #758467;">Automatismes — Semaine 29</h1>
+  <div class="qcm-container" data-no-score="true">
+<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Séance 29 — Proportions et équations
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Pour le petit déjeuner, Joachim a acheté des brioches et des croissants.
+Il a acheté $2$ fois plus de croissants que de brioches.
+Le prix d&rsquo;un croissant est $1,3$,\euro~et celui d&rsquo;une brioche est $2,7$,\euro.
+Il a payé au total $10,6$,\euro.
+On désigne par $x$ le nombre de brioches achetées.
+Parmi les équations suivantes, une seule modélise la situation. Laquelle ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$x+2,6=10,6$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$2,7x+2,6x=10,6$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$2x+x=10,6$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$2x \times 1,3 + 2,7=10,6$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    Nombre de brioches : $x$
+Nombre de croissants : $2x$
+Prix des brioches : $x \times 2,7 = 2,7x$
+Prix des croissants : $2x \times 1,3 = 2,6x$
+L&rsquo;équation qui modélise la situation est $**2,**7x+2,6x=10,6$.
+La bonne réponse est la réponse B.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Voici deux séries de valeurs :
+<strong>série A :</strong> $~~14~~; ~~1~~; ~~6~~$.
+<strong>série B :</strong> $~~4~~; ~~12~~; ~~6~~$.
+Laquelle des ces 4 propositions est vraie ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Les deux séries ont la même médiane mais pas la même moyenne.</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    On calcule la moyenne de la série A :
+$\overlinex_A=\dfrac1 + 6 + 143 = \dfrac213$ $= 7$
+et sa médiane, qui est la valeur centrale de la série classée : $\mathrmm_A=6$ .
+On calcule la moyenne de la série B :$\overlinex_B=\dfrac4 + 6 + 123 = \dfrac223 $
+et sa médiane, qui est aussi la valeur centrale de la série classée : $\mathrmm_B=6$ .
+On constate que les deux séries ont la même médiane mais pas la même moyenne.
+La bonne réponse est la réponse D.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    On interroge un groupe de $500$ personnes sur leurs habitudes sportives. Les réponses sont consignées dans le tableau ci-dessous :
+$\renewcommand\arraystretch1
+\beginarray|c|c|c|c|
+\hline
+\cellcolorlightgray  & \cellcolorlightgray \textPratique un sport & \cellcolorlightgray \textNe pratique pas de sport & \cellcolorlightgray \textTotal
+\hline
+\cellcolorlightgray \textMoins de 25 ans & 80 & 40 & 120
+\hline
+\cellcolorlightgray \textEntre 25 et 45 ans & 90 & 70 & 160
+\hline
+\cellcolorlightgray \textPlus de 45 ans & 100 & 120 & 220
+\hline
+\cellcolorlightgray \textTotal & 270 & 230 & 500
+\hline
+\endarray
+\renewcommand\arraystretch1$
+On choisit une personne de ce groupe au hasard et on définit les événements suivants : $S$ \og la personne pratique un sport », $A_1$ \og la personne a moins de 25 ans », $A_2$ \og la personne a entre 25 et 45 ans » et $A_3$ \og la personne a plus de 45 ans ».
+$P(A_1)$ est égal à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac625$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac310$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac320$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac1120$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    L&rsquo;événement $A_1$ correspond à la ligne \og Moins de 25 ans ».
+Il y a $120$ personnes dans cette catégorie sur un total de $500$ personnes.
+Donc : $P(A_1)=\dfrac120500=**\dfrac6**25$.
+La bonne réponse est la réponse A.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Dans un repère du plan, on a représenté une droite $(D)$.
+L&rsquo;ordonnée du point de $(D)$ dont l&rsquo;abscisse est $80$ est :
+<img src="graphe_f02_16.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:500px;border:1px solid #e8e0d8;border-radius:4px">
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$32$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-29$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$35$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$203$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    On commence par déterminer l&rsquo;équation réduite de la droite $(D)$.
+Son coefficient directeur est $\dfrac25$ et son ordonnée à l&rsquo;origine est $3$.
+L&rsquo;équation réduite de $(D)$ est : $y=\dfrac25x+3$.
+L&rsquo;ordonnée du point de $(D)$ d&rsquo;abscisse $80$ est donnée par : $y=\dfrac25\times 80+3$,
+ce qui donne $y=\dfrac1605+3=\dfrac1755=\dfrac35**\times5** 1**\times5**=35$.
+L&rsquo;ordonnée du point de $(D)$ d&rsquo;abscisse $80$ est $**35**$.
+La bonne réponse est la réponse C.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    L&rsquo;épaisseur d&rsquo;une feuille de papier est égale à $8 \times 10^-2$ mm.
+L&rsquo;épaisseur d&rsquo;une pile de $1\,000$ feuilles est égale à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$80\text cm$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$0,8\text cm$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$800\text mm$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$80\text mm$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    L&rsquo;épaisseur d&rsquo;une feuille est $8 \times 10^-2$ mm.
+Pour $1\,000$ feuilles, il faut multiplier par $1\,000$.
+L&rsquo;épaisseur de la pile en $**mm**$ est donc :
+$\beginaligned8 \times 1\,000 \times 10^-2&=8\,000 \times 10^-2
+&=8 \times 10^1 
+&=80\endaligned$
+L&rsquo;épaisseur de la pile est donc de $**80 ** mm****$.
+La bonne réponse est la réponse D.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    La solution de l&rsquo;équation $(9x-1)-(3x+5)=0$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$-\dfrac23$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-\dfrac53$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$1$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac19$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    On se ramène à une équation du type $ax=b$ en isolant les  \og $x$ » dans le membre de gauche et les \og non $x$ » dans le membre de droite.
+$\beginaligned
+    (9x-1)-(3x+5)&=0
+9x-1-3x-5&=0
+6x-6&=0
+6x&=6
+x&= 1
+\endaligned$
+La solution de cette équation est  $**1**$.
+La bonne réponse est la réponse C.
+  </div>
+  
+</div>
+
+</div>
+<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Devoirs — Séance 29 — Proportions et équations
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Pour le petit déjeuner, Nicolas a acheté $4$ brioches et $7$ croissants.
+Le prix d&rsquo;une brioche est $30$ centimes plus cher que celui d&rsquo;un croissant.
+Il a payé au total $14,4$,\euro.
+On désigne par $x$ le prix d&rsquo;un croissant.
+Parmi les équations suivantes, une seule modélise la situation. Laquelle ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$11x+0,3=14,4$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$11x+1,2=14,4$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$4(x+0,3)+7=14,4$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$4x+7(x+0,3)=14,4$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Voici deux séries de valeurs :
+<strong>série A :</strong> $~~2~~; ~~5~~; ~~7~~$.
+<strong>série B :</strong> $~~2,5~~; ~~6~~; ~~5,5~~$.
+Laquelle des ces 4 propositions est vraie ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Les deux séries n&rsquo;ont ni la même moyenne, ni la même médiane.</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    On interroge un groupe de $500$ personnes sur leurs habitudes sportives. Les réponses sont consignées dans le tableau ci-dessous :
+$\renewcommand\arraystretch1
+\beginarray|c|c|c|c|
+\hline
+\cellcolorlightgray  & \cellcolorlightgray \textPratique un sport & \cellcolorlightgray \textNe pratique pas de sport & \cellcolorlightgray \textTotal
+\hline
+\cellcolorlightgray \textMoins de 25 ans & 80 & 40 & 120
+\hline
+\cellcolorlightgray \textEntre 25 et 45 ans & 90 & 70 & 160
+\hline
+\cellcolorlightgray \textPlus de 45 ans & 100 & 120 & 220
+\hline
+\cellcolorlightgray \textTotal & 270 & 230 & 500
+\hline
+\endarray
+\renewcommand\arraystretch1$
+On choisit une personne de ce groupe au hasard et on définit les événements suivants : $S$ \og la personne pratique un sport », $A_1$ \og la personne a moins de 25 ans », $A_2$ \og la personne a entre 25 et 45 ans » et $A_3$ \og la personne a plus de 45 ans ».
+$P(A_3)$ est égal à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac1125$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac14$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac310$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac1120$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Dans un repère du plan, on a représenté une droite $(D)$.
+L&rsquo;ordonnée du point de $(D)$ dont l&rsquo;abscisse est $-60$ est :
+<img src="graphe_f02_16_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:500px;border:1px solid #e8e0d8;border-radius:4px">
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$26$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-22$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$24$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$152$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    L&rsquo;épaisseur d&rsquo;une feuille de papier est égale à $80 \times 10^-3$ mm.
+L&rsquo;épaisseur d&rsquo;une pile de $1\,000$ feuilles est égale à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$0,8\text cm$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$800\text mm$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$800\text cm$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$80\text mm$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    La solution de l&rsquo;équation $(10x+7)-(3x-3)=0$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$1$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-\dfrac107$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$-\dfrac710$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$-\dfrac47$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+</div>
+
+  <a class="back-link" style="margin-top: 1.5rem;" href="/mabemat/1re/">&#8592; Retour en 1ère Spécialité</a>
+</div>
+
+  </div>
+  
+    <footer>
+  <p>MaBémat · Mme Bertail · Collège &amp; Lycée</p>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script>
+    
+    const logoColors = {
+      '1re': { m: '#758467', rest: '#B85C5C' },
+      '2nde': { m: '#4A5D7A', rest: '#8A9CC1' },
+      '3e': { m: '#C5607A', rest: '#8B3C52' },
+      '6e': { m: '#D36740', rest: '#C5607A' },
+      'snt': { m: '#8A9CC1', rest: '#4A5D7A' },
+      'home': { m: '#D36740', rest: '#758467' }
+    };
+    const path = window.location.pathname;
+    const match = path.match(/\/(6e|3e|2nde|1re|snt)\//);
+    const level = match ? match[1] : 'home';
+    const c = logoColors[level] || logoColors.home;
+    const lm = document.querySelector('.logo-m');
+    const lr = document.querySelector('.logo-rest');
+    if (lm) lm.style.color = c.m;
+    if (lr) lr.style.color = c.rest;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

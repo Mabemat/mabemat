@@ -1,5 +1,5 @@
 ---
-title: "Chapitre 12 — Applications du produit scalaire"
+title: "Applications du produit scalaire"
 level: "1re"
 chapter_number: 12
 weight: 12

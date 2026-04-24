@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arithmétique — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/2nde/">2nde</a>
+    <span class="sep">/</span>
+    <span>Chapitre 10</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#4A5D7A;">10</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 10 · 2nde
+      </div>
+      
+      <h1 class="fade-up d2">Arithmétique</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#4A5D7A;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#4A5D7A;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/2nde/chapitre-10-arithmetique/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/2nde/chapitre-10-arithmetique/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/2nde/">
+    <div><div class="adj-lbl">← 2nde</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/2nde/chapitre-11-racines-carrees/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/2nde/chapitre-10-arithmetique/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/2nde/chapitre-10-arithmetique/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/">2nde</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/chapitre-10-arithmetique/">Arithmétique</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 10 - Leçon
+      </div>
+      <h1 class="lesson-h1">Arithmétique</h1>
+
+      <div class="full-lesson niveau-2nde">
+        <h2 class="subsection-title">10.1 Rappels : nombres entiers</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+L'ensemble des nombres <strong>entiers naturels</strong>, noté $\mathbb{N}$, est l'ensemble des nombres entiers positifs ou
+nul.<br>
+L'ensemble des nombres <strong>entiers relatifs</strong>, noté $\mathbb{Z}$, est l'ensemble des nombres entiers positifs,
+négatifs ou nul.
+</div>
+</div>
+<div class="remarque" style="display:inline-block; vertical-align:middle; width:calc(52% );">
+Tout nombre entier naturel est un entier relatif. <br>On a $\mathbb{N}\subset\mathbb{Z}$.
+</div><img src="/mabemat/figures/2nde/chapitre-10/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(30%); max-height:100px; max-width:100%;">
+<h2 class="subsection-title">10.2 Multiples et diviseurs</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soient $a$ et $b$ deux entiers. <br>On dit que $a$ est un <strong>multiple</strong> de $b$ s'il existe un entier $k$
+tel que $a = k\times b$. On dit alors que $b$ est un <strong>diviseur</strong> de $a$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>$15$ est un multiple de $3$, car $15 = 5 \times 3$.</li>
+<li>$10$ est un diviseur de $80$, car $80 = 8 \times 10$.</li>
+<li>Par contre, $13$ n'est pas un multiple de $3$ car il n'existe pas d'entier $k$ tel que $13 = k \times 3$.</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $a$, $n$ et $m$ trois entiers relatifs.
+<br>Si $n$ et $m$ sont deux multiples de $a$, alors leur somme $(n+m)$, leur différence $(n-m)$ et leur
+produit $n\times m$ sont aussi des multiples de $a$.
+</div>
+</div>
+<p>Démonstration :</p>
+<div class="environment-content">
+Pour la somme : $n$ et $m$ sont des multiples de $a$. Donc il existe $k$ et $q$ des entiers relatifs tel que $m=k\times a$ et $n=q\times a$. <br>Alors $m+n=k\times a+q\times a=(k+q)\times a$. Or, $k+q\in \mathbb{Z}$, donc $m+n$ est un multiple de $a$.
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+$54$ et $90$ sont des multiples de $9$. Donc $54+90=144$ est un multiple de $9$. En effet, $144=16\times 9$.
+</div>
+</div>
+<p><strong>Retour sur la propriété : $\dfrac{1}{3}$ n&rsquo;est pas décimal.</strong></p>
+<p>Démonstration :</p>
+<div class="environment-content">
+Démontrons que le nombre rationnel $\dfrac{1}{3}$ n'est pas décimal.<br>
+On va effectuer une démonstration par l'absurde en supposant que $\dfrac{1}{3}$ est décimal.<br>
+Si notre démonstration aboutit à une absurdité, cela prouvera que notre hypothèse de départ est fausse. <br>
+<p>Supposons donc que $\dfrac{1}{3}$ est décimal.
+Alors il s&rsquo;écrit sous la forme $\dfrac{1}{3}=\dfrac{a}{10^p}$ avec $a$ entier et $p$ entier naturel. <br></p>
+<p>Donc $10^p = 3a$ et donc $10^p$ est divisible par $3$.
+Un nombre est divisible par $3$ lorsque la somme de ses chiffres est divisible par $3$.
+Or, ceci est impossible car la somme des chiffres de $10^p$ est $1$, et $1$ n&rsquo;est pas divisible par $3$.<br>
+Donc l&rsquo;hypothèse posée au départ est fausse et donc $\dfrac{1}{3}$ n&rsquo;est pas décimal.</p>
+<h2 class="subsection-title">10.3 Nombres pairs et impairs</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On considère un entier relatif $n$.
+On dit que $n$ est <strong>pair s'il est divisible par</strong> $2$, alors il existe $k\in \mathbb{Z}$ tel que $n=2\times k$.
+Sinon on dit que $n$ est <strong>impair</strong>, alors il existe $k\in \mathbb{Z}$ tel que $n=2\times k +1$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul style="column-count:2; column-gap:2rem;">
+<li>$18$ est pair car $18=2\times 9$.</li>
+<li>$0$ est pair car $0=2\times 0$.</li>
+<li>$17$ est impair car $17=2\times 8+1$.</li>
+<li>$1$ est impair car $1=2\times 0 +1$.</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+La somme (ou la différence) de deux nombres pairs est un nombre pair.<br>
+La somme (ou la différence) de deux nombres impairs est un nombre pair.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+$46$ et $28$ sont des nombres pairs et $46+28=64$ et $46-28=18$ sont aussi des nombres pairs.<br>
+$15$ et $37$ sont des nombres impairs et $37+15=52$ et $15-37=-22$ sont des nombres pairs.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $n\in \mathbb{Z}$. <br>
+Si $n$ est pair, alors le carré $n^2$ est pair.<br>
+Si $n$ est impair, alors le carré $n^2$ est impair.
+</div>
+</div>
+<p>Démonstration :</p>
+<div class="environment-content">
+Pour le carré d'un nombre impair :<br>
+$n$ est un nombre impair, donc il existe $k\in \mathbb{Z}$ tel que $n=2k+1$. <br>Alors $n^2=(2k+1)^2=(2k)^2+2\times 2k\times 1 +1^2=4k^2+4k+1=2\times (2k^2+2k)+1=2K+1$, avec $K=2k^2+2k \in \mathbb{Z}$. <br>Donc $n^2$ est impair.
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>$11$ est impair et $11^2=121$ est impair.</li>
+<li>$12$ est pair et $12^2=144$ est pair.</li>
+</ul>
+</div>
+</div>
+<h2 class="subsection-title">10.4 Nombres premiers</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Un nombre entier naturel est premier s'il possède que deux diviseurs positifs distincts qui sont $1$ et lui-même.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>$2,3,5,7,11,13,17,19,23,...$ sont des nombres premiers, cette liste est infinie.</li>
+<li>$1$ n'est pas premier car son seul diviseur positif est $1$.</li>
+</ul>
+</div>
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On dit que deux nombres sont premiers entre eux lorsque leur seul
+diviseur commun est $1$.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Tout nombre supérieur ou égal à $2$ peut se décomposer en produits de facteurs premiers. Cette décomposition est unique à l'ordre des facteurs près.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+$300=2\times 2\times 3\times 5\times 5$ et $77=7\times 11$. <br>Ainsi, le seul diviseur commun à $300$ et $77$ est $1$ donc $300$ et $77$ sont premiers entre eux.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+On dit qu'une fraction est irréductible, lorsque son numérateur et son dénominateur sont premiers entre eux.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode : Rendre une fraction irréductible.</div>
+<div class="environment-content">
+Rendre irréductible la fraction $\dfrac{210}{196}$.<br>
+Décomposons d'abord le numérateur et le dénominateur en produits de facteurs premiers.<br>
+<img src="/mabemat/figures/2nde/chapitre-10/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(32% - 12px); max-height:200px; max-width:100%;"><div style="display:inline-block; vertical-align:middle; width:calc(66% - 12px);">
+Ainsi, $210=2\times 3\times 5 \times 7$ et $196=2\times 2\times 7\times 7$. <br>
+Donc $\dfrac{210}{196}=\dfrac{{\color{orange}{2}}\times 3\times 5 \times {\color{orange}{7}}}{{\color{orange}{2}}\times 2\times {\color{orange}{7}}\times 7}=\dfrac{3\times 5}{2\times 7}=\dfrac{15}{14}$. <br>
+$15$ et $14$ sont premiers entre eux donc, $\dfrac{15}{14}$ est la fraction irréductible de $\dfrac{210}{196}$.
+</div>
+</div>
+</div>
+<p><strong>Retour sur la propriété : $\sqrt{2}$ est un nombre irrationnel.</strong><br></p>
+<p>Démonstration :</p>
+<div class="environment-content">
+On va effectuer une démonstration par l'absurde en supposant que $\sqrt{2}$ est rationnel. <br>Si notre démonstration aboutit à une absurdité, cela prouvera que notre hypothèse de départ est fausse.
+Supposons donc que $\sqrt{2}$ est un rationnel.
+Il s'écrit alors $\sqrt{2}=\dfrac{p}{q}$ avec $p$ et $q$ entiers naturels premiers entre eux, $q$ non nul.<br>
+Ainsi, $\dfrac{p^2}{q^2}=\left(\sqrt{2}\right)^2=2$ soit $p^2=2q^2$.
+On en déduit que $p^2$ est pair, ce qui entraîne que $p$ est pair.
+<br>En effet, si $p$ était impair, alors $p^2$ serait impair.
+Puisque $p$ est pair, il existe un entier naturel $k$ tel que $p = 2k$. <br>Comme, $p^2=2q^2$, on a $(2k)^2=2q^2$, soit $4k^2=2q^2$, qui se simplifie en $q^2=2k^2$. On en déduit que $q^2$ est pair, ce qui entraîne que $q$ est pair. Or, $p$ et $q$ sont premiers entre eux, donc ils ne peuvent pas être pairs simultanément. <br>On aboutit à une absurdité. Donc, $\sqrt{2}$ n'est pas un rationnel. Finalement, $\sqrt{2}$ est un irrationnel.
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/2nde/chapitre-10-arithmetique/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/2nde/chapitre-10-arithmetique/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

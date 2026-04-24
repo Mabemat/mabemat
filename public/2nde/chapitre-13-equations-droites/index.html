@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Équations de droites et systèmes — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/2nde/">2nde</a>
+    <span class="sep">/</span>
+    <span>Chapitre 13</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#4A5D7A;">13</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 13 · 2nde
+      </div>
+      
+      <h1 class="fade-up d2">Équations de droites et systèmes</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Géométrie
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#4A5D7A;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#4A5D7A;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/2nde/chapitre-13-equations-droites/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/2nde/chapitre-13-equations-droites/exercices.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/2nde/">
+    <div><div class="adj-lbl">← 2nde</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/2nde/chapitre-14-fonction-inverse/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/2nde/chapitre-13-equations-droites/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/2nde/chapitre-13-equations-droites/exercices.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/">2nde</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/chapitre-13-equations-droites/">Équations de droites et systèmes</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 13 - Leçon
+      </div>
+      <h1 class="lesson-h1">Équations de droites et systèmes</h1>
+
+      <div class="full-lesson niveau-2nde">
+        <h2 class="subsection-title">13.1 Équation cartésienne d'une droite</h2>
+<p>Dans tout le chapitre, le plan est muni d&rsquo;un repère orthonormé $(O;\overrightarrow{i},\overrightarrow{j})$.</p>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On appelle vecteur directeur d'une droite $d$ tout vecteur non nul dont la direction est celle de $d$.
+</div>
+</div>
+<div class="remarque">
+Une droite a une infinité de vecteurs directeurs, tous colinéaires.<br>
+Si $A$ et $B$ sont deux points distincts de la droite $d$, alors le vecteur $\overrightarrow{AB}$ est un vecteur directeur de $d$.
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Toute droite $d$ a une équation de la forme $ax+by+c=0$, avec $(a;b)\neq(0;0)$ appelée <strong>équation cartésienne</strong> de $d$.
+Le vecteur $\overrightarrow{u}\begin{pmatrix} -b \\ a \end{pmatrix}$ est un vecteur directeur de $d$.
+</div>
+</div>
+<p>Démonstration. <br>
+Soit $d$ la droite passant par le point $A(x_A;y_A)$ et de vecteur directeur $\overrightarrow{u}\begin{pmatrix} \alpha \\ \beta \end{pmatrix}$.<br>
+Le point $M$ de coordonnées $(x;y)$ appartient à $d$ si, et seulement si, $\overrightarrow{AM}$ et $\overrightarrow{u}$ sont colinéaires, ce qui équivaut à $\begin{vmatrix} x-x_A & \alpha \\ y-y_A & \beta \end{vmatrix}=0$. Cela équivaut à $\beta(x-x_A)-\alpha(y-y_A)=0$, soit $\beta x -\alpha y -\beta x_A +\alpha y_A=0$. <br>
+Cette équation est de la forme $ax+by+c=0$ avec $a=\beta$, $b=-\alpha$ et $c=-\beta x_A +\alpha y_A$. <br>
+Ainsi, $\begin{pmatrix} \alpha \\ \beta \end{pmatrix}=\begin{pmatrix} -b \\ a \end{pmatrix}$ ; donc un vecteur directeur de $d$ est $\overrightarrow{u}\begin{pmatrix} -b \\ a \end{pmatrix}$. <br>Or, un vecteur directeur est non nul, donc $(a;b)\neq(0;0)$.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On considère la droite $(d)$ qui passe par le point $A$ de coordonnées $(5\,;\,-1)$ et qui a le vecteur $\vec u \begin{pmatrix}1\\2\end{pmatrix}$ comme vecteur directeur. Déterminer une équation cartésienne de la droite $(d)$.<br>
+<p>Avec les données de l&rsquo;énoncé, $\vec u \begin{pmatrix}1\\2\end{pmatrix}$, on en déduit donc que : $-b = 1$ (soit $b=-1$) et $a=2$. <br>L&rsquo;équation cartésienne est donc de la forme : $ 2 x - y + c=0$. <br>Comme $A\in (d)$, ses coordonnées $(5\,;\,-1)$ vérifient l&rsquo;équation de la droite $(d)$. <br>
+</p>
+$$\begin{aligned} 2 \times 5 -1 \times (-1)+ c&=0 \\ 10 +1 + c&=0 \\ c&= -11 \end{aligned}$$<p>
+Une équation cartésienne de la droite $(d)$ est donc de la forme : $\boldsymbol{2x-y-11=0}$.</p>
+</div>
+</div>
+<div class="remarque">
+Une droite a une infinité d'équations cartésiennes. À partir d'une, on peut obtenir les autres en multipliant par le même réel non nul les coefficients $a$, $b$, et $c$.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+L'ensemble des points $M(x;y)$ tels que $2x-3y+1=0$ est une droite $d$ de vecteur directeur $\overrightarrow{u}\begin{pmatrix} 3 \\ 2 \end{pmatrix}$. <br>Une autre équation cartésienne de $d$ est, par exemple, $-2(2x-3y+1)=0$ c'est à dire $-4x+6y-2=0$.<br> On trouve donc que $\overrightarrow{v}\begin{pmatrix} -6 \\ -4 \end{pmatrix}=-2\overrightarrow{u}$ est aussi un vecteur directeur de la droite $d$.
+</div>
+</div>
+<p><strong>Cas particuliers : $a=0$ et $b=0$</strong></p>
+<ul>
+<li>Une droite d'équation $y=k$ est une droite parallèle à l'axe des abscisses. <br>Un de ses vecteurs directeurs est $\overrightarrow{i}\begin{pmatrix} 1 \\ 0 \end{pmatrix}$.</li>
+<li>Une droite d'équation $x=k$ est une droite parallèle à l'axe des ordonnées. <br>Un de ses vecteurs directeurs est $\overrightarrow{j}\begin{pmatrix} 0 \\ 1 \end{pmatrix}$.</li>
+</ul>
+<h2 class="subsection-title">13.2 Équation réduite d'une droite</h2>
+<h3 class="subsubsection-title">13.2.1 Rappels</h3>
+<div style="display:inline-block; vertical-align:middle; width:calc(65% - 12px);">
+Soit $d$ une droite d'équation réduite $y=mx+p$. <br>
+Soit $A(x_A;y_A)$ et $B(x_B;y_B)$.<br>
+$m$ est le coefficient directeur et $m=\dfrac{y_B-y_A}{x_B-x_A}$.<br>
+$p$ est l'ordonnée à l'origine.
+</div><img src="/mabemat/figures/2nde/chapitre-13/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(30% - 12px); max-height:250px; max-width:100%;">
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Déterminer une équation réduite de la droite $(AB)$ avec $A(3\,;\,4)$ et $B(7\,;\,-5)$. <br>
+On commence par calculer le coefficient directeur $m$ :<br> $m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{-5-4}{7-3}=\dfrac{-9}{4}=-\dfrac{9}{4}$. <br>
+<p>L&rsquo;équation de la droite $(AB)$ est donc de la forme : $y=-\dfrac{9}{4} \times x+p$<br></p>
+<p>Comme $A \in (AB)$, les coordonnées du point $A$ vérifient l&rsquo;équation, donc :<br>
+$4=-\dfrac{9}{4} \times 3 +p\iff p=4+\dfrac{9}{4} \times 3\iff p=\dfrac{43}{4}$<br>
+Au final, $(AB) : y = {\boldsymbol{-\dfrac{9}{4}x+\dfrac{43}{4}}}$.</p>
+</div>
+</div>
+<h3 class="subsubsection-title">13.2.2 Lien entre l'équation cartésienne et l'équation réduite</h3>
+<div class="environment methode">
+<div class="environment-title">Méthode - Passer d'une équation à l'autre.</div>
+<div class="environment-content">
+Soit $d$ une droite non parallèle à l'axe des ordonnées d'équation cartésienne $ax+by+c=0$ et d'équation réduite $y=mx+p$. <br>
+On a donc $b\neq 0$ (non parallèle à l'axe des ordonnées).<br>
+Alors $y=\dfrac{-a}{b}x+\dfrac{-c}{b}$. Ainsi, $m=\dfrac{-a}{b}$ et $p=\dfrac{-c}{b}$.<br>
+Si $b=0$, alors $ax+c=0$ donc $x=\dfrac{-c}{a}$ est une droite parallèle à l'axe des ordonnées.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $d$ une droite d'équation réduite $y=mx+p$ alors $\overrightarrow{u}\begin{pmatrix} 1 \\ m \end{pmatrix}$ est un vecteur directeur de la droite $d$.
+</div>
+</div>
+<p>Démonstration. <br>
+On a $d$ qui s&rsquo;écrit aussi $ax+by+c=0$ avec $b\neq 0$ et $m=\dfrac{-a}{b}$ et $p=\dfrac{-c}{b}$.<br>
+Or, $\overrightarrow{v}\begin{pmatrix} -b \\ a \end{pmatrix}$ est un vecteur directeur de la droite $d$. <br>
+Comme $b\neq 0$, $\overrightarrow{u}=\dfrac{-1}{b}\times\overrightarrow{v}\begin{pmatrix} 1 \\ \dfrac{-a}{b} \end{pmatrix}=\begin{pmatrix} 1 \\ m \end{pmatrix}$ est aussi un vecteur directeur de la droite $d$.</p>
+<h2 class="subsection-title">13.3 Systèmes de deux équations linéaires à deux inconnues</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Un système de deux équations linéaires du premier degré à deux inconnues $x$ et $y$ est de la forme $\left\{ \begin{array}{ll} ax+by=c \\ a'x+b'y=c' \end{array} \right.$, où $a,b,c,a',b'$ et $c'$ sont des réels et $(x;y)$ le couple des inconnues.
+</div>
+</div>
+<div class="remarque">
+<strong>Résoudre</strong> ce système revient à <strong>déterminer tous les couples solutions</strong>, c'est à dire tous les couples vérifiant <strong>simultanément</strong> les deux équations du système.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit le système $\left\{ \begin{array}{ll} 3x-2y=6 \\ -4x+5y=-1 \end{array} \right.$. <br>Puisque $3\times {\color{#EA8556}{4}}-2\times {\color{#8A9CC1}{3}} =6 $ et $-4\times {\color{#EA8556}{4}}+5\times {\color{#8A9CC1}{3}}=-1$, le couple $({\color{#EA8556}{4}};{\color{#8A9CC1}{3}})$ est une solution de ce système.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Par substitution.</div>
+<div class="environment-content">
+Résoudre le système
+$(S)\left\{ \begin{array}{ll} 3x-y=5 \\ 2x+3y=7 \end{array} \right.$<br>
+La première équation permet d'exprimer $y$ en fonction de $x$. <br>Le système $(S)$ est donc équivalent à $\left\{ \begin{array}{ll} {\color{#EA8556}{y=3x-5}} \\ 2x+3y=7 \end{array} \right.$.<br>
+On substitue l'expression de $y$ dans la deuxième équation, et le système $(S)$ équivaut à
+$\left\{ \begin{array}{ll} {\color{#EA8556}{y=3x-5}} \\ 2x+3( {\color{#EA8556}{3x-5}} )=7 \end{array} \right.$. On résout la deuxième équation où ne figure que l'inconnue $x$ : $2x+3( {\color{#EA8556}{3x-5}} )=7$ équivaut à $2x+9x-15=7$, soit à $11x=22$, c'est à dire à $x=2$.<br>
+On remplace $x$ par sa valeur dans l'expression de $y$. On a donc $y=3\times 2-5=1$.<br>
+<u>Vérification</u> : $3\times 2-1=6-1=5$ et $2\times 2+3\times 1=4+3=7$ <br>
+Le système $(S)$ admet donc une unique solution le couple $(2;1)$.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode : Par combinaison.</div>
+<div class="environment-content">
+Résoudre le système
+$(S)\left\{ \begin{array}{ll} 2x-5y=1 \\ 3x+2y=11 \end{array} \right.$ <br>
+On multiplie la première équation par ${\color{#EA8556}{2}}$ et la seconde par ${\color{#8A9CC1}{5}}$.<br>
+Le système $(S)$ équivaut à $(S)\left\{ \begin{array}{ll} 4x-10y=2 \\ 15x+10y=55 \end{array} \right.$. <br>On additionne les deux équations membre à membre pour éliminer $y$.<br>
+On obtient $4x-10y+(15x+10y)=2+55$, soit $19x=57$, c'est à dire $x=3$.<br>
+On remplace $x$ par sa valeur dans la première équation. On obtient $2\times 3-5y=1$, c'est à dire $6-1=5y$, soit $y=1$.<br>
+<u>Vérification</u> : $2\times 3 -5\times 1=6-5=1$ et $3\times 3 +2\times 1=9+2=11$<br>
+Le système $(S)$ admet donc une unique solution le couple $(3;1)$.<br>
+<div class="remarque">
+On peut aussi soustraire les deux équations termes à termes en multipliant par exemple, la première équation par $3$ et la deuxième par $2$ et en faisant la première moins la deuxième pour supprimer les $x$.
+</div>
+</div>
+</div>
+<h2 class="subsection-title">13.4 Parallélisme et intersection de deux droites</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<ul>
+<li>Deux droites $d$ et $d'$ sont <strong>parallèles</strong> quand elles ont la même direction.</li>
+<li>Deux droites non parallèles sont dites <strong>sécantes</strong>.</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Deux droites $d$ et $d'$ sont parallèles si, et seulement si, deux de leurs vecteurs directeurs sont colinéaires.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit $d$ et $d'$ des droites d'équations respectives $4x-2y=0$ et $-12x+6y-3=0$.
+<br>
+Alors $\overrightarrow{u}\begin{pmatrix} 2 \\ 4 \end{pmatrix}$ est un vecteur directeur de $d$ et  $\overrightarrow{v}\begin{pmatrix} -6 \\ -12 \end{pmatrix}$ est un vecteur directeur de $d'$.<br>
+$\det(\overrightarrow{u},\overrightarrow{v})=\begin{vmatrix} 2 & -6 \\ 4 & -12 \end{vmatrix}=2\times (-12)-4\times(-6)=-24+24=0$. <br>
+Puisque leur déterminant est nul, $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires, donc les droites $d$ et $d'$ sont parallèles.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Deux droites $d$ et $d'$ d'équations réduites $y=mx+p$ et $y=m'x+p'$ sont parallèles si, et seulement si, leurs pentes sont égales $m=m'$.
+</div>
+</div>
+<p>Démonstration. <br>
+$\overrightarrow{u}\begin{pmatrix} 1 \\\\ m \end{pmatrix}$ est un vecteur directeur de $d$ et  $\overrightarrow{v}\begin{pmatrix} 1 \\\\ m' \end{pmatrix}$ est un vecteur directeur de $d'$.<br>
+Ainsi, les droites $d$ et $d'$ sont parallèles si, et seulement si, les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires, ce qui équivaut à $\det(\overrightarrow{u},\overrightarrow{v})=\begin{vmatrix} 1 & 1 \\\\ m & m' \end{vmatrix}= m'-m=0$, c&rsquo;est à dire $m'=m$.</p>
+<div class="remarque">
+Deux droites confondues sont parallèles et elles ont des équations cartésiennes multiples l'une de l'autre.<br>
+$x-2y+1=0$ et $4x-8y+4=0$ sont les équations cartésiennes de 2 droites confondues, car $4(x-2y+1)=4x-8y+4$.
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<ul>
+<li>Si deux droites $d$ et $d'$ sont sécantes, alors les coordonnées de leur point d'intersection est l'unique couple solution du système formé par une équation de $d$ et une équation de $d'$.</li>
+<li>Résoudre le système $(S)\left\{ \begin{array}{ll} ax+by=c \\ a'x+b'y=c' \end{array} \right.$, revient à étudier l'intersection de deux droites du plan.<br>
+Le système $(S)$ admet soit une unique solution, soit aucune solution, soit une infinité de solutions.</li>
+</ul>
+</div>
+</div>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-13/intersection_chap_11.png" alt="intersection_chap_11" style="max-height:300px; max-width:100%;">
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/2nde/chapitre-13-equations-droites/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/2nde/chapitre-13-equations-droites/exercices.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nombres décimaux — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = 'none';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/6e/">6ème</a>
+    <span class="sep">/</span>
+    <span>Chapitre 07</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#D36740;">07</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 07 · 6ème
+      </div>
+      
+      <h1 class="fade-up d2">Nombres décimaux</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#D36740;"></span>Leçon disponible</span>
+        
+        
+        <span><span class="dot" style="background:#D36740;"></span>QCM interactif</span>
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/6e/chapitre-07-nombres-decimaux/cours.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/6e/chapitre-07-nombres-decimaux-qcm/">
+    <div class="res-corner">QCM</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">QCM interactif</div>
+      <h3>Teste&#8209;toi</h3>
+      <p class="res-desc">Questions à choix multiples avec correction immédiate et explication.</p>
+    </div>
+    <div class="res-open">Démarrer le QCM <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire le QCM</div>
+      <div class="step-s">≈ 10 min</div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">3</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/6e/">
+    <div><div class="adj-lbl">← 6ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/6e/chapitre-08-triangles/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/6e/chapitre-07-nombres-decimaux/cours.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        <a href="/mabemat/6e/chapitre-07-nombres-decimaux-qcm/"><span>Passer au QCM</span><span>→</span></a>
+        
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/6e/">6ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/6e/chapitre-07-nombres-decimaux/">Nombres décimaux</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 07 - Leçon
+      </div>
+      <h1 class="lesson-h1">Nombres décimaux</h1>
+
+      <div class="full-lesson niveau-6e">
+        <h2 class="subsection-title">I. Définitions et différentes écritures</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Un <strong>nombre décimal</strong> est un nombre qui peut s'écrire sous la forme d'une fraction décimale, c'est-à-dire une fraction dont le numérateur est un nombre entier et le dénominateur est 1, 10, 100, 1 000, etc.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>Le nombre $\dfrac{4826}{1000}$ est un nombre décimal : le numérateur est le nombre entier 4 826 et le dénominateur est 1 000.</li>
+<li>Le nombre entier 27 est aussi un nombre décimal car $27 = 27 \div 1 = \dfrac{35}{1}$.</li>
+<li>Le pourcentage 36 % est un nombre décimal car $36\% = \dfrac{36}{100}$.</li>
+</ul>
+</div>
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Lorsqu'un nombre décimal est écrit comme un nombre mixte, l'entier est la <strong>partie entière</strong> et la fraction décimale inférieure à 1 est la <strong>partie décimale</strong>.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Le nombre décimal $\dfrac{76294}{100}$ s'écrit sous forme d'un nombre mixte :<br><br>
+$\dfrac{76294}{100} = \dfrac{76200}{100} + \dfrac{94}{100} = 762 + \dfrac{94}{100}$ donc 762 est la partie entière et $ \dfrac{94}{100}$ est la partie décimale.<br><br>
+Pour finir, puisque $\dfrac{94}{100} = 94 \div 100 = 0,94$, on a alors $\dfrac{76294}{100} = 762 + 0,94 = 762,94$.
+</div>
+</div>
+<div class="remarque">
+Certains nombres ne peuvent pas s'écrire sous forme de fraction décimale. Ce ne sont donc pas des nombres décimaux. C'est le cas, par exemple, du nombre $\dfrac{1}{3}$ et du nombre $\pi$.
+<p>Ils possèdent une infinité de chiffres après la virgule.</p>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Un nombre décimal admet différentes décompositions.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Voici différentes façons de décomposer le nombre 762,94 en s'aidant du tableau de numération :
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-07/fig1.svg" alt="figure 1" style="max-height:250px; max-width:100%;"></div>
+</div>
+<div style="text-align:center;">
+<div style="text-align:center; margin:0.5em 0;"><img src="/mabemat/figures/6e/chapitre-07/fig2.svg" alt="figure 2" style="max-height:300px; max-width:100%;"></div>
+</div>
+</div>
+</div>
+<div class="remarque">
+Dans 762,94 le chiffre 6 est le <strong>chiffre des dizaines</strong> mais 76 est le <strong>nombre de dizaines</strong> car $762,94 = 76 \times 10 + 0,294$, alors 7 629 est le <strong>nombre de dixièmes</strong> alors que le <strong>chiffre des dixièmes</strong> est 9.
+</div>
+<h2 class="subsection-title">II. Comparaison et arrondis</h2>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour comparer deux nombres décimaux, on compare d'abord leur partie entière :
+<ul>
+<li>si elles sont différentes, alors le nombre le plus grand est celui qui a la plus grande partie entière ;</li>
+<li>si elles sont égales, on compare les décimales de chaque nombre en commençant par le chiffre des dixièmes, puis celui des centièmes, etc. On peut ajouter des zéros inutiles si besoin.</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>Comparons 13,79 et 11,21. Puisque 13 > 11 alors 13,79 > 11,21.</li>
+<li>Comparons 11,2 et 11,201. Les parties entières de 11,2 et 11,201 sont égales. On remarque que 11,2 = 11,200 et 11,201. Le chiffre des dixièmes et 2 pour ces deux nombres. Le chiffre des centièmes est différent et 0 < 1. On conclut donc que 11,2 < 11,201.</li>
+</ul>
+</div>
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<strong>Arrondir</strong> un nombre à un rang donné, c'est trouver le nombre le plus proche du nombre initial dont l'écriture s'arrête à ce rang. On utilise le symbole « environ égal : $\simeq$ » entre le nombre et son arrondi.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>L'arrondi à l'unité de 23,7 est 24 : c'est le nombre entier le plus proche de celui-ci. On note 23,7 $\simeq$ 24.</li>
+<li>L'arrondi au dixième de 91,42 est 91,4 : c'est le nombre décimal le plus proche de 91,42 au dixième près. On note 91,42 $\simeq$ 91,4.</li>
+<li>L'arrondi au millième de $\dfrac{1}{3}$ est 0,333. On note $\dfrac{1}{3}$ $\simeq$ 0,333.</li>
+<li>L'arrondi au centième de $\pi$ est 3,14. On note $\pi$ $\simeq$ 3,14.</li>
+</ul>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/6e/chapitre-07-nombres-decimaux/cours.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          <a class="btn btn-accent" href="/mabemat/6e/chapitre-07-nombres-decimaux-qcm/">Passer au QCM →</a>
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay = document.getElementById('lesson-overlay');
+  var btn = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+
+  function buildTOC() {
+    if (!tocList) return;
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    tocList.innerHTML = '';
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      var li = document.createElement('li');
+      if (h.tagName === 'H3') li.classList.add('toc-sub');
+      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+      tocList.appendChild(li);
+    });
+  }
+
+  function updateProgress() {
+    var el = overlay;
+    var top = el.scrollTop;
+    var max = el.scrollHeight - el.clientHeight;
+    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp) lpRp.style.width = pct + '%';
+    if (lpBar) lpBar.style.width = pct + '%';
+    if (lpPct) lpPct.textContent = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    links.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (btn) btn.focus();
+  }
+
+  if (btn) btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) {
+        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>
