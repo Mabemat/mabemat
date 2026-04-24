@@ -1,0 +1,213 @@
+{{ define "main" }}
+{{ $isSNT := eq .Section "snt" }}
+{{ $isRessources := eq .Section "liens" }}
+{{ $levelData := index .Site.Params.levels .Section }}
+{{ $sntData := .Site.Params.snt }}
+
+{{ if not $isRessources }}
+<a class="back-link" href="{{ .Site.BaseURL }}">← Accueil</a>
+{{ end }}
+
+{{ if $isRessources }}
+  <div class="level-header" style="--lc:#9A8D91;">
+    <div class="bar" style="background:#9A8D91;"></div>
+    <div><h1>Ressources</h1><p>Liens et outils utiles pour les maths</p></div>
+  </div>
+  <div class="ressources-content">{{ .Content }}</div>
+
+{{ else if $isSNT }}
+  <div class="level-header" style="--lc:{{ $sntData.color }};">
+    <div class="bar" style="background:{{ $sntData.color }};"></div>
+    <div><h1>{{ $sntData.name }}</h1><p>SNT · Apprendre à coder</p></div>
+  </div>
+  {{ if .Pages }}
+  <div class="snt-grid">
+    {{ range (where .Pages "Params.layout" "ne" "qcm").ByWeight }}
+    <div class="snt-card">
+      <h3>{{ .Title }}</h3>
+      {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+      <div class="acts">
+        {{ if .Params.has_notebook }}<a class="btn" href="{{ .RelPermalink }}" style="color:{{ $sntData.color }};border-color:{{ $sntData.color }};">📓 Notebook</a>{{ end }}
+        {{ if .Params.has_qcm }}<a class="btn btn-qcm" href="{{ .RelPermalink }}qcm/" style="color:{{ $sntData.color2 }};border-color:{{ $sntData.color2 }};">🎯 QCM</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div class="empty-state"><p>Les notebooks SNT seront disponibles prochainement.</p></div>
+  {{ end }}
+
+{{ else if $levelData }}
+
+  {{ if .Params.has_automatismes }}
+    {{/* ── Automatismes ── */}}
+    <a class="back-link" href="{{ .Parent.RelPermalink }}">← {{ $levelData.name }}</a>
+    <div class="level-header" style="--lc:{{ $levelData.color }};">
+      <div class="bar" style="background:{{ $levelData.color }};"></div>
+      <div><h1>Automatismes</h1><p>Entraînement hebdomadaire · {{ $levelData.name }}</p></div>
+    </div>
+    {{ if .Pages }}
+    <div class="auto-index-list">
+      {{ range .Pages.ByWeight }}
+      <a class="auto-index-item" href="{{ .RelPermalink }}" style="--lc:{{ $levelData.color }};border-left-color:{{ $levelData.color }};">
+        <span class="ch-n">{{ if .Params.auto_number }}{{ printf "%02d" .Params.auto_number }}{{ else }}⚡{{ end }}</span>
+        <span class="auto-index-title">{{ .Title }}</span>
+        <span class="auto-index-arrow">→</span>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="empty-state"><p>Les séances d'automatismes seront disponibles prochainement.</p></div>
+    {{ end }}
+
+  {{ else }}
+    {{/* ── Page de niveau : nouveau design ── */}}
+
+    {{/* Hero */}}
+    {{ $chapitres2 := where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.has_automatismes" "ne" true }}
+    <div class="level-header" style="--lc:{{ $levelData.color }};">
+      <div class="bar" style="background:{{ $levelData.color }};"></div>
+      <div>
+        <h1>{{ $levelData.name }}</h1>
+        <p>{{ $levelData.description }}</p>
+      </div>
+      <div class="lvl-tag" style="margin-left:auto;">
+        <div class="lvl-swatch">
+          <span style="background:{{ $levelData.color }};"></span>
+          <span style="background:{{ $levelData.color2 }};"></span>
+        </div>
+        <div>{{ len $chapitres2 }} chapitres</div>
+        <div>{{ now.Year | printf "%d" | printf "année %s" }}–{{ now.Year | add 1 }}</div>
+      </div>
+    </div>
+    {{ $autoPage := index (where .Pages "Params.has_automatismes" true) 0 }}
+    <div class="lvl-sub">
+        <div class="col">
+          <h4>Ce qu'on va faire</h4>
+          {{ if eq .Section "6e" }}<p>Reprendre les notions vues tout au long du cycle 3.</p>
+          {{ else if eq .Section "3e" }}<p>Préparer le brevet et consolider les bases en vue du lycée.</p>
+          {{ else if eq .Section "2nde" }}<p>Poser les bases pour la suite du lycée.</p>
+          {{ else if eq .Section "1re" }}<p>Préparer le bac.</p>
+          {{ end }}
+        </div>
+        <div class="col">
+          <h4>Comment ça marche</h4>
+          {{ if eq .Section "6e" }}<p>Une leçon, un polycopié distribué en cours mais imprimable, un QCM corrigé par chapitre - et un pixel-art pour certains.</p>
+          {{ else if eq .Section "3e" }}<p>Une leçon en ligne, un polycopié - et des exercices type brevet pour certains chapitres.</p>
+          {{ else if eq .Section "2nde" }}<p>Une leçon, un polycopié et des exercices par chapitre.</p>
+          {{ else if eq .Section "1re" }}<p>Un cours complet, le polycopié et des exercices par chapitre.</p>
+          {{ end }}
+        </div>
+        {{ with $autoPage }}
+        <div class="col">
+          <h4>Automatismes</h4>
+          {{ if eq $.Section "3e" }}<p>Trois séances de quatre exercices par semaine pour aborder le brevet avec confiance. <br><a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
+          {{ else if eq $.Section "2nde" }}<p>Des entraînements hebdomadaires pour ancrer les automatismes du lycée, en vue du bac de 1re. <a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
+          {{ else if eq $.Section "1re" }}<p>Des séances régulières pour entretenir les réflexes et préparer la partie automatismes du bac. <a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
+          {{ else }}<p>Des séances d'entraînement hebdomadaire pour ancrer les réflexes. <a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    {{/* Liste des chapitres */}}
+    {{ $chapitres := where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.has_automatismes" "ne" true }}
+    {{ if $chapitres }}
+    {{/* Collect unique categories */}}
+    {{ $cats := slice }}
+    {{ range $chapitres }}
+      {{ if .Params.categorie }}
+        {{ if reflect.IsSlice .Params.categorie }}
+          {{ range .Params.categorie }}{{ $cats = $cats | append . }}{{ end }}
+        {{ else }}
+          {{ $cats = $cats | append .Params.categorie }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $cats = $cats | uniq | sort }}
+    {{ if $cats }}
+    <div class="filter-bar fade-up d3">
+      <div class="tabs">
+        <button class="active" data-filter="*">Tous</button>
+        {{ range $cats }}<button data-filter="{{ . }}">{{ . }}</button>{{ end }}
+      </div>
+      <div class="search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="chap-search" placeholder="chercher un chapitre…" autocomplete="off" />
+      </div>
+    </div>
+    {{ end }}
+    <div class="chap-list fade-up d4" id="chap-list">
+      {{ range $chapitres.ByWeight }}
+      {{ $c := . }}
+      <a class="chap-row" href="{{ .RelPermalink }}" data-cat="{{ if reflect.IsSlice .Params.categorie }}{{ delimit .Params.categorie "|" }}{{ else }}{{ .Params.categorie }}{{ end }}">
+          <div class="chap-num">
+            {{ if isset .Params "chapter_number" }}
+              {{ printf "%02d" .Params.chapter_number }}
+            {{ end }}
+          </div>
+
+        <div class="chap-title">
+          {{ .Title }}
+          {{ if .Params.categorie }}<span class="sub">{{ if reflect.IsSlice .Params.categorie }}{{ delimit .Params.categorie " · " }}{{ else }}{{ .Params.categorie }}{{ end }}</span>{{ end }}
+        </div>
+        <div class="chap-resources">
+          {{ if .Params.has_cours }}<span class="res on">Leçon</span><span class="res on">Polycopié</span>{{ end }}
+          {{ if .Params.has_qcm }}<span class="res on">QCM</span>{{ end }}
+          {{ if .Params.has_exercices }}<span class="res on">Exos</span>{{ end }}
+          {{ if .Params.has_pixelart }}<span class="res on">Pixel</span>{{ end }}
+          {{ if .Params.has_brevet }}<span class="res on res-brevet">Brevet</span>{{ end }}
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="empty-state"><p>Les chapitres seront disponibles prochainement.</p></div>
+    {{ end }}
+
+  {{ end }}
+{{ end }}
+
+
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.filter-bar .tabs button');
+  var searchInput = document.getElementById('chap-search');
+  var rows = document.querySelectorAll('#chap-list .chap-row');
+  var activeFilter = '*';
+  var searchQuery = '';
+
+  function applyFilters() {
+    rows.forEach(function(row) {
+      var cat = row.dataset.cat || '';
+      var title = row.querySelector('.chap-title') ? row.querySelector('.chap-title').textContent.toLowerCase() : '';
+      var num = row.querySelector('.chap-num') ? row.querySelector('.chap-num').textContent.trim().replace(/^0+/, '') : '';
+      var matchCat = activeFilter === '*' || cat.split('|').indexOf(activeFilter) !== -1;
+      var matchSearch = !searchQuery || title.indexOf(searchQuery) !== -1 || num === searchQuery.replace(/^0+/, '');
+      row.style.display = (matchCat && matchSearch) ? '' : 'none';
+    });
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      applyFilters();
+    });
+  }
+})();
+</script>
+
+{{ end }}

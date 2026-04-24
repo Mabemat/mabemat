@@ -1,0 +1,15 @@
+{{ $num := .Get "num" }}
+{{ $raw := .Inner }}
+
+{{ $parts := split $raw "---Q---" }}
+{{ $afterQ := index $parts 1 }}
+{{ $parts2 := split $afterQ "---CORR---" }}
+{{ $question := index $parts2 0 }}
+{{ $correction := index $parts2 1 }}
+
+<div class="auto3-exo">
+  <div class="auto3-num">{{ $num }}</div>
+  <div class="auto3-enonce">{{ $question | safeHTML }}</div>
+  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
+  <div class="auto3-corr" style="display:none">{{ $correction | safeHTML }}</div>
+</div>

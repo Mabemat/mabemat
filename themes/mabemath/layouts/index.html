@@ -1,0 +1,116 @@
+{{ define "main" }}
+
+{{/* ── Hero ── */}}
+<section class="hero-home">
+  <div class="hero-home-inner">
+    <div class="eyebrow fade-up">{{ .Site.Params.author }} · Collège &amp; Lycée · {{ now.Year }}</div>
+    <h1>
+      <span class="fade-up d1">Les <em style="color:#FDD835;">maths</em>,</span><br>
+      <span class="w2 fade-up d2">à ton rythme.</span>
+    </h1>
+
+    <p class="hero-home-sub fade-up d3">
+      Toutes mes leçons, polycopiés, QCM et pixel&#8209;arts - rangés par niveau, prêts à être révisés.
+    </p>
+  </div>
+</section>
+
+{{/* ── Ticker ── */}}
+<div class="ticker">
+  <div class="ticker-track">
+    <span>{{ (index .Site.Params.levels "6e").name }} · {{ (index .Site.Params.levels "6e").description }}</span>
+    <span>{{ (index .Site.Params.levels "3e").name }} · {{ (index .Site.Params.levels "3e").description }}</span>
+    <span>{{ (index .Site.Params.levels "2nde").name }} · {{ (index .Site.Params.levels "2nde").description }}</span>
+    <span>Python · SNT · coder depuis zéro</span>
+    <span>{{ (index .Site.Params.levels "1re").name }} · {{ (index .Site.Params.levels "1re").description }}</span>
+    <span>{{ (index .Site.Params.levels "6e").name }} · {{ (index .Site.Params.levels "6e").description }}</span>
+    <span>{{ (index .Site.Params.levels "3e").name }} · {{ (index .Site.Params.levels "3e").description }}</span>
+    <span>{{ (index .Site.Params.levels "2nde").name }} · {{ (index .Site.Params.levels "2nde").description }}</span>
+    <span>Python · SNT · coder depuis zéro</span>
+    <span>{{ (index .Site.Params.levels "1re").name }} · {{ (index .Site.Params.levels "1re").description }}</span>
+  </div>
+</div>
+
+{{/* ── Grille des niveaux ── */}}
+<section class="levels-section">
+  <div class="levels-head">
+    <h2>Choisis ton <em>niveau</em>.</h2>
+    <p>{{ len .Site.Params.levels }} niveaux · Du Collège au Lycée · Et Python</p>
+  </div>
+
+  <div class="level-grid">
+    {{ $levels := slice "6e" "3e" "2nde" }}
+    {{ range $levels }}
+      {{ $val := index $.Site.Params.levels . }}
+      {{ if $val }}
+      <a class="lvl-card fade-up" style="--c1:{{ $val.color }};" href="{{ . | relURL }}/">
+        <div class="lvl-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <div class="lvl-num">
+          {{ if eq . "6e" }}6<sup>e</sup>{{ end }}
+          {{ if eq . "3e" }}3<sup>e</sup>{{ end }}
+          {{ if eq . "2nde" }}2<sup>de</sup>{{ end }}
+        </div>
+        <div>
+          <div class="lvl-title">{{ $val.name }}</div>
+          <div class="lvl-meta">{{ $val.description }}</div>
+        </div>
+      </a>
+      {{ end }}
+    {{ end }}
+
+    {{/* Python / SNT */}}
+    {{ with .Site.Params.snt }}
+    <a class="lvl-card fade-up" style="--c1:{{ .color }};" href="{{ "snt" | relURL }}/">
+      <div class="lvl-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 5l7 7-7 7"/>
+        </svg>
+      </div>
+      <div class="lvl-num" style="font-family:var(--font-mono);font-size:clamp(40px,5vw,64px);font-style:normal;line-height:1.1;">&gt;_</div>
+      <div>
+        <div class="lvl-title">{{ .name }} · SNT</div>
+        <div class="lvl-meta">{{ .description }}</div>
+      </div>
+    </a>
+    {{ end }}
+
+    {{/* 1re */}}
+    {{ $val1re := index .Site.Params.levels "1re" }}
+    {{ if $val1re }}
+    <a class="lvl-card fade-up" style="--c1:{{ $val1re.color }};" href="{{ "1re" | relURL }}/">
+      <div class="lvl-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 5l7 7-7 7"/>
+        </svg>
+      </div>
+      <div class="lvl-num">1<sup>re</sup></div>
+      <div>
+        <div class="lvl-title">{{ $val1re.name }}</div>
+        <div class="lvl-meta">{{ $val1re.description }}</div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ── Manifeste ── */}}
+<section class="manifest-home">
+  <div>
+    <div class="eyebrow">— Pourquoi ce site —</div>
+    <br>
+    <h3>Tout est là,<br><em>quand tu en as besoin.</em></h3>
+  </div>
+  <div>
+    <p class="manifest-body">
+      Tu as été absent·e ? Pas de panique. <br>
+      Cours, polycopiés, exercices - tout est centralisé ici, par niveau et par chapitre. Retrouve ce que tu as manqué, révise à ton rythme, rattrape facilement.
+    </p>
+   
+  </div>
+</section>
+
+{{ end }}

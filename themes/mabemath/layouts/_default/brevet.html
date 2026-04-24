@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ $section   := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $lc        := "" }}
+{{ if $levelData }}{{ $lc = $levelData.color }}{{ end }}
+
+{{ if .Parent }}
+<a class="back-link" href="{{ .Parent.RelPermalink }}">← Retour au chapitre</a>
+{{ end }}
+
+<div class="brevet-page niveau-{{ $section }}">
+  <div class="brevet-page-header" style="--lc: {{ $lc }}; border-left-color: {{ $lc }};">
+    <div>
+      <h1 style="color: {{ $lc }};">{{ .Title }}</h1>
+      {{ if .Params.description }}<p class="brevet-page-desc">{{ .Params.description }}</p>{{ end }}
+    </div>
+  </div>
+
+
+  <div class="brevet-content">
+    {{ .Content }}
+  </div>
+
+  <a class="back-link" style="margin-top: 2rem;" href="{{ .Parent.RelPermalink }}">← Retour au chapitre</a>
+</div>
+
+<script>
+function toggleBrevet(btn) {
+  var corr = btn.nextElementSibling;
+  var hidden = corr.style.display === 'none';
+  corr.style.display = hidden ? 'block' : 'none';
+  btn.innerHTML = hidden ? '&#9660; Masquer la correction' : '&#9658; Voir la correction';
+  btn.classList.toggle('brevet-btn--open', hidden);
+}
+</script>
+{{ end }}

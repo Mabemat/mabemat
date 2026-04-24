@@ -1,0 +1,627 @@
+% @see : https://coopmaths.fr/alea/?uuid=ec781&id=6P3A-1&n=1&d=10&s=1&cd=1&alea=Sagp&uuid=05763&id=6P3B&alea=OSdp&uuid=850d5&id=6P3B-1&n=1&d=10&s=6&s2=true&cd=1&alea=HU04&uuid=5e28d&id=6P3C-flash1&alea=r6AL&uuid=b0f1a&id=6P3C-flash2&alea=7biC&uuid=b0f4e&id=6P3C-2&n=1&d=10&s=false&s2=7&cd=1&alea=dQvw&uuid=51d14&id=6P3D-1&n=1&d=10&s=1&s2=2&cd=1&alea=AUyP&uuid=51d14&id=6P3D-1&n=1&d=10&s=1&s2=3&cd=1&alea=oC7M&uuid=f7a15&id=6P3D-2&n=1&d=10&s=true&s2=2&s3=3&s4=true&cd=1&alea=SprD&uuid=9c78f&id=6P3E&n=1&d=10&s=1&s2=true&cd=1&alea=QYtq&uuid=9c78f&id=6P3E&n=1&d=10&s=2&s2=true&cd=1&alea=t4Z3&uuid=1651d&id=6P3E-1&n=1&d=10&s=3&cd=1&alea=3oD9&pdfParam=eyJ0aXRsZSI6IiIsInJlZmVyZW5jZSI6IiIsInN1YnRpdGxlIjoiIiwic3R5bGUiOiJDbGFzc2lxdWUiLCJmb250T3B0aW9uIjoiU3RhbmRhcmRGb250IiwidGFpbGxlRm9udE9wdGlvbiI6MTIsImR5c1RhaWxsZUZvbnRPcHRpb24iOjE0LCJjb3JyZWN0aW9uT3B0aW9uIjoiQXZlY0NvcnJlY3Rpb24iLCJxcmNvZGVPcHRpb24iOiJTYW5zUXJjb2RlIiwidHlwZUZpY2hlIjoiRmljaGUiLCJkdXJhdGlvbkNhbk9wdGlvbiI6IjkgbWluIiwidGl0bGVPcHRpb24iOiJTYW5zVGl0cmUiLCJuYlZlcnNpb25zIjoxLCJleG9zIjp7fX0\%3D&v=eleve
+\documentclass[a4paper,11pt,fleqn]{article}
+
+%%% COULEURS %%%
+\usepackage[table,svgnames]{xcolor}
+\definecolor{nombres}{cmyk}{0,.8,.95,0}
+\definecolor{gestion}{cmyk}{.75,1,.11,.12}
+\definecolor{gestionbis}{cmyk}{.75,1,.11,.12}
+\definecolor{grandeurs}{cmyk}{.02,.44,1,0}
+\definecolor{geo}{cmyk}{.62,.1,0,0}
+\definecolor{algo}{cmyk}{.69,.02,.36,0}
+\definecolor{correction}{cmyk}{.63,.23,.93,.06}
+\arrayrulecolor{couleur_theme} % Couleur des filets des tableaux
+
+\usepackage[most]{tcolorbox} % Supprimé à cause de conflits avec ProfCollege
+\tcbuselibrary{documentation}
+
+%%%%%%%% Modification paramétrage pour footnotes
+% Le paquet semble déjà appelé en amont, curieux qu'il n'y ait pas eu de clash
+% avec l'appel ci-dessous mais seulement quand j'ai essayé de l'inclure avec l'option lualatex
+
+% \usepackage{hyperref}
+% Parametrages
+\hypersetup{
+    colorlinks=true,% On active la couleur pour les liens. Couleur par défaut rouge
+    linkcolor=black,% On définit la couleur pour les liens internes
+    % filecolor=magenta,% On définit la couleur pour les liens vers les fichiers locaux      
+    urlcolor=black,% On définit la couleur pour les liens vers des sites web
+    % pdftitle={Puissance Quatre},% On définit un titre pour le document pdf
+    % pdfpagemode=FullScreen,% On fixe l'affichage par défaut à plein écran
+    }
+% Pour avoir les numérotations arabic y compris dans les environnements tcolorbox
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%%%%%%%%
+
+\usepackage{multicol} 
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{tablvar}
+
+\setlength{\parindent}{0mm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}
+\setlength{\fboxsep}{3mm}
+
+\setlength{\headheight}{14.5pt}
+
+\setlength{\premulticols}{0pt}
+
+\newcounter{ExoMA}
+
+\newlength{\parindentMA}%
+\setlength{\parindentMA}{\parindent}
+\addtolength{\parindentMA}{30pt}
+
+\usepackage{simplekv}
+
+\setKVdefault[Theme]{Coopmath,Classiques=false,CANs=false}
+\defKV[Theme]{Classique=\setKV[Theme]{Coopmath=false}\setKV[Theme]{Classiques}}
+\defKV[Theme]{CAN=\setKV[Theme]{Coopmath=false}\setKV[Theme]{CANs}}
+
+\usepackage{fancyhdr}
+\fancyhead[C]{}
+\fancyfoot{}
+
+\def\bla{}
+
+\NewDocumentCommand\Theme{o m m m m}{%
+  \useKVdefault[Theme]%
+  \setKV[Theme]{#1}%
+  \ifboolKV[Theme]{CANs}{%
+    \usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}%
+    \fancypagestyle{premierePage}{%
+      \fancyhead[C]{\textsc{\ifx\bla#2\bla Course aux nombres\else#2\fi}}%
+      \fancyfoot[R]{\scriptsize Coopmaths.fr -- CC-BY-SA}%
+      \setlength{\headheight}{14.5pt}%
+      \NewDocumentCommand\dureeCan{}{\ifx\bla#4\bla 9 minutes\else #4\fi}
+      \NewDocumentCommand\titreSujetCan{}{\ifx\bla#3\bla\else\textbf{#3}\fi}
+    }%
+    \pagestyle{premierePage}
+    \colorlet{couleur_theme}{black}%
+    \colorlet{couleur_numerotation}{couleur_theme}%
+    \let\EXO\EXOCan\let\endEXO\endEXOCan%
+  }{%
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \pagestyle{fancy}
+    \ifboolKV[Theme]{Classiques}{%
+      \usepackage[left=0.65cm,right=0.65cm,top=2cm,bottom=1.5cm]{geometry}
+      \let\EXO\EXOlibre\let\endEXO\endEXOlibre%
+      \colorlet{couleur_theme}{black}%
+      \colorlet{couleur_numerotation}{couleur_theme}%
+      \fancyhead[C]{\bfseries #3}
+      \fancyhead[L]{\bfseries #4}
+      \fancyfoot[R]{#5}
+    }{%
+      \usepackage[left=1.5cm,right=1.5cm,top=4cm,bottom=2cm]{geometry}
+      \theme{#2}{#3}{#4}{#5}%
+      \let\EXO\EXOcoop\let\endEXO\endEXOcoop%
+    }%
+  }%
+}%
+
+\NewDocumentEnvironment{EXOCan}{m m +b}{%
+  #3
+}
+
+\NewDocumentEnvironment{EXOcoop}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,
+    coltitle=black,
+    title=\IfNoValueTF{#1}{}{\textmd{#1}},%
+    overlay unbroken and first={%
+      \IfNoValueTF{#2}{}{%
+        \node[%
+        fill=white,
+        anchor=east,
+        xshift=10pt,
+        text=black
+        ]
+        at (frame.north east)
+        {\scriptsize #2};
+      }
+      \node[anchor=west,xshift=-20pt,yshift=-15pt] at (frame.north west) {\stepcounter{ExoMA}\numb{\arabic{ExoMA}}};
+    }
+    ]
+    #3
+  \end{tcolorbox}
+}
+
+\NewDocumentEnvironment{EXOlibre}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,%couleur_theme,
+    coltitle=black,
+    title=\stepcounter{ExoMA}\textbf{Exercice \arabic{ExoMA}},%
+    ]
+    \IfNoValueTF{#1}{}{#1\par}%
+    #3
+  \end{tcolorbox}%
+}
+
+
+%%% MISE EN PAGE %%%
+\usepackage{setspace}
+\usepackage{pgf}%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel,arrows, arrows.meta,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\spaceskip=2\fontdimen2\font plus 3\fontdimen3\font minus3\fontdimen4\font\relax %Pour doubler l'espace entre les mots
+\newcommand\numb[1]{ % Dessin autour du numéro d'exercice
+  \begin{tikzpicture}[overlay,scale=.8]%,yshift=-.3cm
+    \draw[fill=couleur_numerotation,couleur_numerotation](-.4,-0.1)rectangle($(-0.4,.8)+(2em,0)$);
+    \draw (-.4,.8) node[white,anchor=north west,inner sep=0.5pt]{\bfseries EX}; 
+    \draw[line width=.05cm,couleur_numerotation,fill=white] (0,0)--(.5,.5)--(1,0)--(.5,-.5)--cycle;
+    \draw (0.5,0) node[anchor=center,couleur_numerotation]{\large\bfseries#1};
+  \end{tikzpicture}
+}
+
+% echelle pour le dé
+\def\globalscale {0.04}
+% abscisse initiale pour les chevrons
+\def\xini {3}
+
+\newcommand\theme[4]{%
+  \fancyhead[C]{%
+    % Tracé du dé
+    \begin{tikzpicture}[y=0.80pt, x=0.80pt, yscale=-\globalscale, xscale=\globalscale,remember picture, overlay,transform canvas={xshift=-0.5\linewidth,yshift=2.7cm},fill=couleur_theme]%,xshift=17cm,yshift=9.5cm
+      %%%% Arc supérieur gauche%%%%
+      \path[fill](523,1424)..controls(474,1413)and(404,1372)..(362,1333)..controls(322,1295)and(313,1272)..(331,1254)..controls(348,1236)and(369,1245)..(410,1283)..controls(458,1328)and(517,1356)..(575,1362)..controls(635,1368)and(646,1375)..(643,1404)..controls(641,1428)and(641,1428)..(596,1430)..controls(571,1431)and(538,1428)..(523,1424)--cycle;
+      %%%% Dé face supérieur%%%%
+      \path[fill](512,1272)..controls(490,1260)and(195,878)..(195,861)..controls(195,854)and(198,846)..(202,843)..controls(210,838)and(677,772)..(707,772)..controls(720,772)and(737,781)..(753,796)..controls(792,833)and(1057,1179)..(1057,1193)..controls(1057,1200)and(1053,1209)..(1048,1212)..controls(1038,1220)and(590,1283)..(551,1282)..controls(539,1282)and(521,1278)..(512,1272)--cycle;
+      %%%% Dé faces gauche et droite%%%%
+      \path[fill](1061,1167)..controls(1050,1158)and(978,1068)..(900,967)..controls(792,829)and(756,777)..(753,756)--(748,729)--(724,745)..controls(704,759)and(660,767)..(456,794)..controls(322,813)and(207,825)..(200,822)..controls(193,820)and(187,812)..(187,804)..controls(188,797)and(229,688)..(279,563)..controls(349,390)and(376,331)..(391,320)..controls(406,309)and(462,299)..(649,273)..controls(780,254)and(897,240)..(907,241)..controls(918,243)and(927,249)..(928,256)..controls(930,264)and(912,315)..(889,372)..controls(866,429)and(848,476)..(849,477)..controls(851,479)and(872,432)..(897,373)..controls(936,276)and(942,266)..(960,266)..controls(975,266)and(999,292)..(1089,408)..controls(1281,654)and(1290,666)..(1290,691)..controls(1290,720)and(1104,1175)..(1090,1180)..controls(1085,1182)and (1071,1176)..(1061,1167)--cycle;
+      %%%% Arc inférieur bas%%%%
+      \path[fill](1329,861)..controls(1316,848)and(1317,844)..(1339,788)..controls(1364,726)and(1367,654)..(1347,591)..controls(1330,539)and(1338,522)..(1375,526)..controls(1395,528)and(1400,533)..(1412,566)..controls(1432,624)and(1426,760)..(1401,821)..controls(1386,861)and(1380,866)..(1361,868)..controls(1348,870)and(1334,866)..(1329,861)--cycle;
+      %%%% Arc inférieur gauche%%%%
+      \path[fill](196,373)..controls(181,358)and(186,335)..(213,294)..controls(252,237)and(304,190)..(363,161)..controls(435,124)and(472,127)..(472,170)..controls(472,183)and(462,192)..(414,213)..controls(350,243)and(303,283)..(264,343)..controls(239,383)and(216,393)..(196,373)--cycle;
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay, shift={(current page.north west)},yshift=-8.5cm]
+      \fill[fill=couleur_theme] (0,5) rectangle (21,6);
+      \fill[fill=couleur_theme] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=couleur_theme] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=couleur_theme] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;   
+      \node[color=white] at (10.5,5.5) {\LARGE \bfseries{ \MakeUppercase{#4}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=west, fill=white, inner sep = 0pt] at ($(current page.north west)+(0.2,-2.3cm)$) {\footnotesize \bfseries{MathALÉA}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=east, fill=white] at ($(current page.north east)+(-2,-1.5cm)$) {\Huge \textcolor{couleur_theme}{\bfseries{\#}} \bfseries{#2} \textcolor{couleur_theme}{\bfseries \MakeUppercase{#3}}};
+    \end{tikzpicture}
+  }%
+  \fancyfoot[R]{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south east] at ($(current page.south east)+(-2,0.25cm)$) {\scriptsize {\bfseries \href{https://coopmaths.fr/}{Coopmaths.fr} -- \href{http://creativecommons.fr/licences/}{CC-BY-SA}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay,xscale=0.5,yscale=0.5, shift={(current page.south west)},xshift=35.7cm,yshift=-6cm]
+      \fill[fill=couleur_theme] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=couleur_theme] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=couleur_theme] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;  
+    \end{tikzpicture}
+  }
+  \fancyfoot[C]{}
+  \colorlet{couleur_theme}{#1}
+  \colorlet{couleur_numerotation}{couleur_theme}
+  \def\iconeobjectif{icone-objectif-#1}
+  \def\urliconeomethode{icone-methode-#1}
+}%
+
+\newcommand*\tikzfootMA{%
+  \ifboolKV[Theme]{CANs}{
+    \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+      \begin{scope}[x=\textwidth-\oddsidemargin,y=\textheight+5pt]
+        \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt,shift={(-\oddsidemargin,\topmargin)}] (0,0) rectangle (1,-1);
+      \end{scope}
+    \end{tikzpicture} 
+  }{%
+  \ifboolKV[Theme]{Classiques}{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1cm)$) rectangle ($(1,1)+(-5mm,-1.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1.5cm)$) rectangle ($(1,1)+(-5mm,-3.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }%
+  }
+}
+
+\newenvironment{Correction}{%
+  \setcounter{ExoMA}{0}%
+  \cfoot{\tikzfootMA}
+}{}%
+
+\newcommand\version[1]{
+  \fancyhead[R]{
+    \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(-.5,-.5cm)$) {\large \textcolor{couleur_theme}{\bfseries V#1}};
+    \end{tikzpicture}
+  }
+}
+
+\usepackage[french]{babel}
+% loadPackagesFromContent
+\usepackage[gen]{eurosym}
+\usepackage{tikz}
+\newcommand{\e}{\mathrm{e}}
+\usepackage{amsmath}
+\usetikzlibrary{arrows.meta}
+\usepackage{etoolbox}
+\newbool{dys}
+\setbool{dys}{false}          
+\ifbool{dys}{
+% POLICE DYS
+% ===== VARIABLE =====
+\def\FontChoisie{Fira} % valeurs possibles : Fira, lmodern, tgheros
+\newcommand{\choiceFontsDys}[1]{
+\ifstrequal{#1}{Fira}{%
+  % Fira Sans + Fira Math
+  % Description : Fira Sans est une police moderne, et Fira Math est une version mathématique compatible qui maintient le style sans-serif.
+  % Utilisation : Fonctionne bien avec XeLaTeX et LuaLaTeX.
+  \usepackage{fontspec}
+  \setmainfont{Fira Sans}
+  \setsansfont{Fira Sans}
+  \usepackage{unicode-math}
+  \setmathfont{Fira Math}
+}{}
+\ifstrequal{#1}{lmodern}{%
+  % Latin Modern Sans
+  % Description : Une version sans-serif de la célèbre police Latin Modern, qui est compatible avec mathastext.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX et LuaLaTeX.
+  \usepackage{lmodern}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+\ifstrequal{#1}{tgheros}{%
+  % TeX Gyre Heros + mathastext
+  % Description : TeX Gyre Heros est une alternative à Helvetica, et le package mathastext permet d'utiliser la même police pour les mathématiques.
+  % Utilisation : Fonctionne avec pdfLaTeX, XeLaTeX, ou LuaLaTeX.
+  \usepackage{tgheros}
+  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{mathastext}
+}{}
+}
+% Fira ou lmodern ou tgheros
+\choiceFontsDys{\FontChoisie}
+
+%\usepackage{unicode-math}
+%\usepackage{fontspec}
+%\setmainfont{TeX Gyre Schola}
+%\setsansfont{TeX Gyre Schola}
+%\setmathfont{TeX Gyre Schola Math}
+%\setmainfont{OpenDyslexic}[Scale=1.0]
+%\setsansfont{OpenDyslexic}[Scale=1.0]
+%\setmathfont{OpenDyslexic}[Scale=1.0,range=up/{Latin,latin,num}]
+\usepackage[fontsize=14]{scrextend}
+\usepackage{setspace}
+\setstretch{1.7}
+% Une valeur d'environ 1.2 à 1.7 est souvent recommandée. Cela permet d'augmenter l'espace entre les lignes tout en offrant un léger espacement entre les mots.
+\setlength{\spaceskip}{1.2em}  
+% Une valeur d'environ 1.2em à 1.5em est couramment conseillée. Cela crée un espace plus ample entre les mots, ce qui peut aider à réduire la fatigue visuelle et à améliorer la fluidité de la lecture.
+}{
+% POLICE STANDARD
+\usepackage[T1]{fontenc} 
+\usepackage[scaled=1]{helvet}
+\usepackage[fontsize=12]{scrextend}
+}
+
+\Theme[Classique]{nombres}{}{}{}
+\begin{document}
+
+% @see : https://coopmaths.fr/alea?uuid=ec781&id=6P3A-1&n=1&d=10&s=1&alea=Sagp&cd=1&cols=1
+\begin{EXO}{Identifier les grandeurs dans chaque situation.}{6P3A-1}
+
+ Une pizza coûte $12$\,\euro{}~plus $1$\,\euro{}~par ingrédient supplémentaire.
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=05763&id=6P3B&n=1&d=10&s=false&alea=OSdp&cd=1&cols=1
+\begin{EXO}{Dire si cette affirmation est vraie ou fausse.}{6P3B}
+
+ Si Sophie fait $22$ pompes par jour, alors son nombre total de pompes est proportionnel au nombre de jours.
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=850d5&id=6P3B-1&n=1&d=10&s=6&s2=true&alea=HU04&cd=1&cols=1
+\begin{EXO}{Répondre à la question posée en justifiant.}{6P3B-1}
+
+ Une épidémie se répand dans la ville de Paris. Le nombre de malades est multiplié par 6 tous les 6 jours.\\Le nombre de malades est-il proportionnel au nombre de jours passés depuis le début de l'épidémie ?\\
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=5e28d&id=6P3C-flash1&n=1&d=10&alea=r6AL&cd=1&cols=1
+\begin{EXO}{}{6P3C-flash1}
+
+ $7$ kg de citrons coûtent $13{,}65$\,\euro{}.\\ $12$ kg de ces mêmes citrons coûtent $23{,}40$\,\euro{}.\\
+    Combien coûtent $5$ kg de ces citrons ?
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=b0f1a&id=6P3C-flash2&n=1&d=10&alea=7biC&cd=1&cols=1
+\begin{EXO}{}{6P3C-flash2}
+
+ Une voiture roule à une vitesse constante de $100\text{ km/h}$. \\
+    
+    Combien de kilomètres parcourt-elle en $5$ h et $30$ min ?
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=b0f4e&id=6P3C-2&n=1&d=10&s=false&s2=7&alea=dQvw&cd=1&cols=1
+\begin{EXO}{Répondre à la question posée en justifiant.}{6P3C-2}
+
+ Il est indiqué sur la bouteille de nettoyant pour sol qu'il faut  $30$ cL de  nettoyant pour sol pour $6$ L d'eau.\\ On veut utiliser $13$ L d'eau.\\ Quel volume de nettoyant pour sol doit-on prévoir ? 
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=51d14&id=6P3D-1&n=1&d=10&s=1&s2=2&alea=AUyP&cd=1&cols=1
+\begin{EXO}{On considère que les situations suivantes sont des situations de proportionnalités. Compléter.}{6P3D-1}
+
+ \begin{tabular}[t]{ccc}
+                       $5$ cartons & $\rightarrow$ & $107~\text{L}$ \\
+                       $25$ cartons & $\rightarrow$ & .... \\
+                       \end{tabular}
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=51d14&id=6P3D-1&n=1&d=10&s=1&s2=3&alea=oC7M&cd=1&cols=1
+\begin{EXO}{On considère que les situations suivantes sont des situations de proportionnalités. Compléter.}{6P3D-1}
+
+ \begin{tabular}[t]{ccc}
+                       $4$ cartons & $\rightarrow$ & $108~\text{kg}$ \\
+                       .... & $\rightarrow$ & $432 \text{ kg}$ \\
+                       \end{tabular}
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=f7a15&id=6P3D-2&n=1&d=10&s=true&s2=2&s3=3&s4=true&alea=SprD&cd=1&cols=1
+\begin{EXO}{Compléter le tableau de proportionnalité ci dessous.}{6P3D-2}
+
+ \begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ $\text{Paquets de madeleines de Commercy}$ &  $3$ &  $5$ &   &  $50$ &  $9$\\
+\hline
+ $\text{Prix en euros}$ &  $12$ &  $20$ &  $32$ &   &  \\
+\hline
+\end{tabular}
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=9c78f&id=6P3E&n=1&d=10&s=1&s2=true&alea=QYtq&cd=1&cols=1
+\begin{EXO}{Résoudre ce problème, lié à une échelle sur un plan.}{6P3E}
+
+ Sur le plan de la maison de  son père, Joachim constate que $7$ mm sur le plan correspond à $1{,}4$ m dans la réalité.\\ Quelle est l'échelle du plan ? 
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=9c78f&id=6P3E&n=1&d=10&s=2&s2=true&alea=t4Z3&cd=1&cols=1
+\begin{EXO}{Résoudre ce problème, lié à une échelle sur un plan.}{6P3E}
+
+ Le plan de la maison de la cousine de Valérie a une échelle de $\dfrac{1}{250}$.\\
+          Valérie mesure, sur ce plan, un segment de $1{,}1$ cm.\\
+            À quelle distance réelle, ce segment correspond-il ?
+\end{EXO}
+
+% @see : https://coopmaths.fr/alea?uuid=1651d&id=6P3E-1&n=1&d=10&s=3&alea=3oD9&cd=1&cols=1
+\begin{EXO}{}{6P3E-1}
+
+Pour tout l'exercice, l'échelle graphique est la suivante : \\
+\begin{tikzpicture}[baseline={(current bounding box.north)}]
+\clip(-1, -0.3) rectangle (2, 1.366667);
+%Segment 1
+\draw[color=black, |-|] (0, 0) -- (1, 0);
+\node[] at (0.5,0.6) {10 m};
+\end{tikzpicture}
+ Quelles sont les dimensions réelles d'un terrain de football représenté par un rectangle de longueur $10{,}5$ cm et de largeur $6{,}8$ cm ?
+\end{EXO}
+
+
+\clearpage
+
+\begin{Correction}
+\begin{EXO}{}{}
+
+ Attention, \og{} ingrédients \fg{} et \og{}\,\euro{}~\fg{} sont des unités.\\
+      Les grandeurs sont \og{} {\bfseries \color[HTML]{f15929}nombre d'ingrédients} \fg{} et \og{} {\bfseries \color[HTML]{f15929}prix} \fg{}.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ L'affirmation est {\bfseries \color[HTML]{f15929}vraie}.\\Le nombre de pompes effectué par Sophie est proportionnel au nombre de jours car, par exemple, si le nombre de jours double, le total de pompes double aussi.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ Admettons qu'il y ait 10 malades le 1er jour. Le 7e jour il y aura $10 \times 6 = 60$ malades.\\Entre le 1er jour et le 7e jour, le nombre de malades est multiplié par 6 mais le nombre de jours est multiplié par 7.\\Donc le nombre de malades n'est pas proportionnel au nombre de jours passés.\\
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ On reconnaît une situation de proportionnalité. \\
+    La masse de fruits est proportionnelle au prix payé.\\
+    On remarque que le prix demandé est celui qui correspond à la différence des deux masses données dans la question. \\
+    Ainsi, le prix est alors donné par la différence des deux prix. \\
+      On a  $5$ kg $= 12$ kg $-$ $7$ kg, donc les $5$ kg de citrons coûteront $23{,}40$\,\euro{}~$ - 13{,}65$\,\euro{}~$ ={\color[HTML]{F15929}\boldsymbol{9{,}75}}$\,\euro{}.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $100\times 5{,}5 = {\color[HTML]{F15929}\boldsymbol{550}}${\color[HTML]{216D9A}\\ Mentalement : \\
+    La voiture roule à une vitesse constante de $100\text{ km/h}$, cela signifie qu'elle parcourt $100\text{ km}$ en $1$ heure.\\
+    En $5$ heures, elle parcourt $100\times 5=500\text{ km}$.\\
+    En $30$ minutes, elle parcourt la moitié de $100\text{ km}$, soit $50\text{ km}$.\\
+    Au total, elle a parcouru $500+50 $, soit $550\text{ km}$. }
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ Commençons par trouver combien est-ce qu'il faut de nettoyant pour sol pour $1$ L d'eau. \\ 6 L d'eau, c'est ${\color[HTML]{216D9A}\boldsymbol{6}}$ fois $1$ L d'eau. Pour $1$ L d'eau, il faut donc ${\color[HTML]{216D9A}\boldsymbol{6}}$ fois moins que $30$ cL.\\$30$ cL $\div {\color[HTML]{216D9A}\boldsymbol{6}} = 5$ cL \\{\bfseries \color{black} Conclusion intermédiaire :} il faut ${\color[HTML]{216D9A}\boldsymbol{5}}$ cL de nettoyant pour sol pour $1$ L d'eau. \\ Cherchons maintenant la quantité nécessaire pour $13$ L d'eau. \\ $13$ L d'eau, c'est ${\color[HTML]{216D9A}\boldsymbol{13}}$ fois $1$ L d'eau. Il faut donc ${\color[HTML]{216D9A}\boldsymbol{13}}$ fois plus de nettoyant pour sol que $5$ cL :\\ ${\color[HTML]{216D9A}\boldsymbol{5}}$ cL $\times {\color[HTML]{216D9A}\boldsymbol{13}} = 65$ cL\\{\bfseries \color{black}Conclusion :} il faut prévoir ${\color[HTML]{F15929}\boldsymbol{65}}$ cL de  nettoyant pour sol.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $5~\text{cartons} \times 5 = 25~\text{cartons}$\\$107~\text{L} \times 5 = 535~\text{L}$\\Donc le résultat est ${\color[HTML]{F15929}\boldsymbol{535}}$ L.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ $108~\text{kg} \times 4 = 432~\text{kg}$\\$4~\text{cartons} \times 4 = 16~\text{cartons}$\\Donc le résultat est ${\color[HTML]{F15929}\boldsymbol{16}}$ cartons.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ \begin{tabular}{|c|c|c|c|c|c|}
+\hline
+ $\text{Paquets de madeleines de Commercy}$ &  $3$ &  $5$ &  ${\color[HTML]{F15929}\boldsymbol{8}}$ &  $50$ &  $9$\\
+\hline
+ $\text{Prix en euros}$ &  $12$ &  $20$ &  $32$ &  ${\color[HTML]{F15929}\boldsymbol{200}}$ &  ${\color[HTML]{F15929}\boldsymbol{36}}$\\
+\hline
+\end{tabular}\\Comme $32 = {\color{blue}\boldsymbol{20}} + {\color[HTML]{008002}\boldsymbol{12}}$, on a ${\color{blue}\boldsymbol{5}} + {\color[HTML]{008002}\boldsymbol{3}} = {\color[HTML]{F15929}\boldsymbol{8}}$.\\Comme $50 = {\color{blue}\boldsymbol{10}}\times 5$, on a ${\color{blue}\boldsymbol{10}}\times 20={\color[HTML]{F15929}\boldsymbol{200}}$.\\Comme $9 = {\color{blue}\boldsymbol{3}}\times 3$, on a ${\color{blue}\boldsymbol{3}}\times 12={\color[HTML]{F15929}\boldsymbol{36}}$.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ Trouver l'échelle, cela peut se faire en calculant le coefficient de proportionnalité d'un tableau de proportionnalité, comme celui ci-dessous.\\\begin{tikzpicture}[baseline,scale = 0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.5,-0.5) rectangle (20.45,4.5);
+    	\draw[color={black}] (0,0)--(15,0)--(15,4)--(0,4)--cycle;
+	\draw[color ={black}] (0,2)--(15,2);
+	\draw[color ={black}] (11,0)--(11,4);
+	\draw[opacity=1] (13,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$$};
+	\draw[opacity=1] (13,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$$};
+	\draw[color ={black}] (15,0)--(15,4);
+	\draw[opacity=1] (5.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance sur le plan (en \ldots)}$};
+	\draw[opacity=1] (5.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance réelle (en mm)}$};
+	\draw[color={black}] (15.2,3)--(16.2,3)--(16.2,1);
+	\draw[color ={black},-{Stealth[width=4mm]}] (16.2,1)--(15.2,1);
+	\draw (18,2) node[anchor = center] {\normalsize \color{blue}{$\times \ldots$}};
+
+\end{tikzpicture}Pour la distance sur le plan, par habitude, on indique $1$.\\Le remplissage de ce tableau de proportionnalité nécessite que la distance réelle  et la distance sur le plan soit exprimée dans la même unité.\\Choisissons le mm et convertissons alors la distance réelle en mm : $1{,}4$ m = $1\,400$ mm.\\On remplit le tableau avec ces informations et on calcule le coefficient de proportionnalité.\\\begin{tikzpicture}[baseline,scale = 0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.5,-2.9) rectangle (28.95,6.6000000000000005);
+    	\draw[color={black}] (0,0)--(21,0)--(21,4)--(0,4)--cycle;
+	\draw[color ={black}] (0,2)--(21,2);
+	\draw[color ={black}] (11,0)--(11,4);
+	\draw[opacity=1] (13.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$1$};
+	\draw[opacity=1] (13.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{blue}$\boldsymbol{200}$};
+	\draw[color ={black}] (16,0)--(16,4);
+	\draw[opacity=1] (18.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$7$};
+	\draw[opacity=1] (18.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\boldsymbol{1\,400}$};
+	\draw[color ={black}] (21,0)--(21,4);
+	\draw[opacity=1] (5.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance sur le plan (en mm)}$};
+	\draw[opacity=1] (5.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance réelle (en mm)}$};
+	\draw[color={black}] (19,4.2)--(19,5.2)--(13,5.2);
+	\draw[color ={black},-{Stealth[width=4mm]}] (13,5.2)--(13,4.2);
+	\draw (16,5.7) node[anchor = center] {\normalsize \color{blue}{$\div7$}};
+	\draw[color={black}] (19,-0.2)--(19,-1.2)--(13,-1.2);
+	\draw[color ={black},-{Stealth[width=4mm]}] (13,-1.2)--(13,-0.2);
+	\draw (16,-2) node[anchor = center] {\normalsize \color{blue}{$\div7$}};
+	\draw[color={black}] (21.2,3)--(22.2,3)--(22.2,1);
+	\draw[color ={black},-{Stealth[width=4mm]}] (22.2,1)--(21.2,1);
+	\draw (25,2) node[anchor = center] {\normalsize \color{blue}{$\times\dfrac{1\,400}{7}$}};
+
+\end{tikzpicture}En effet, $1\,400 \div 7 = 200$.\\Donc, l'échelle du plan de la maison  du père de Joachim est de : ${\color[HTML]{F15929}\boldsymbol{\dfrac{1}{200}}}$.\\Remarque : cela signifie que, sur le plan de la maison  du père de Joachim, $1$ mm représente $200$ mm en réalité, et donc, $1$ mm représente $2$ m en réalité.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ En utilisant un tableau de proportionnalité, on pourrait obtenir un tableau comme celui ci-dessous.\\\begin{tikzpicture}[baseline,scale = 0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.5,-0.5) rectangle (19.5,4.5);
+    	\draw[color={black}] (0,0)--(19,0)--(19,4)--(0,4)--cycle;
+	\draw[color ={black}] (0,2)--(19,2);
+	\draw[color ={black}] (11,0)--(11,4);
+	\draw[opacity=1] (13,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$1$};
+	\draw[opacity=1] (13,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$250$};
+	\draw[color ={black}] (15,0)--(15,4);
+	\draw[opacity=1] (17,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$1{,}1$};
+	\draw[opacity=1] (17,0.8) node[anchor = center, rotate=0] {\normalsize \color{blue}$\boldsymbol{?}$};
+	\draw[color ={black}] (19,0)--(19,4);
+	\draw[opacity=1] (5.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance sur le plan (en cm)}$};
+	\draw[opacity=1] (5.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance réelle (en cm)}$};
+
+\end{tikzpicture}Ce tableau de proportionnalité peut être rempli par linéarité multiplicative ou par le coefficient de proportionnalité comme ci-dessous.\\\begin{tikzpicture}[baseline,scale = 0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.5,-2.9) rectangle (25.45,6.6000000000000005);
+    	\draw[color={black}] (0,0)--(21,0)--(21,4)--(0,4)--cycle;
+	\draw[color ={black}] (0,2)--(21,2);
+	\draw[color ={black}] (11,0)--(11,4);
+	\draw[opacity=1] (13.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$1$};
+	\draw[opacity=1] (13.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$250$};
+	\draw[color ={black}] (16,0)--(16,4);
+	\draw[opacity=1] (18.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$1{,}1$};
+	\draw[opacity=1] (18.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{blue}$\boldsymbol{275}$};
+	\draw[color ={black}] (21,0)--(21,4);
+	\draw[opacity=1] (5.5,2.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance sur le plan (en cm)}$};
+	\draw[opacity=1] (5.5,0.8) node[anchor = center, rotate=0] {\normalsize \color{black}$\text{Distance réelle (en cm)}$};
+	\draw[color={black}] (14,4.2)--(14,5.2)--(18,5.2);
+	\draw[color ={black},-{Stealth[width=4mm]}] (18,5.2)--(18,4.2);
+	\draw (16,5.7) node[anchor = center] {\normalsize \color{blue}{$\times1{,}1$}};
+	\draw[color={black}] (14,-0.2)--(14,-1.2)--(18,-1.2);
+	\draw[color ={black},-{Stealth[width=4mm]}] (18,-1.2)--(18,-0.2);
+	\draw (16,-2) node[anchor = center] {\normalsize \color{blue}{$\times1{,}1$}};
+	\draw[color={black}] (21.2,3)--(22.2,3)--(22.2,1);
+	\draw[color ={black},-{Stealth[width=4mm]}] (22.2,1)--(21.2,1);
+	\draw (23.599999999999998,2) node[anchor = center] {\normalsize \color{blue}{$\times250$}};
+
+\end{tikzpicture}En effet, $250 \times 1{,}1 = 275$.\\La distance réelle est donc, de ${\color[HTML]{F15929}\boldsymbol{275}}$ {\bfseries \color[HTML]{f15929}cm}. Ce peut être une réponse acceptée mais ce n'est sans doute pas dans l'unité la plus adaptée pour la réalité.\\Convertissons dans une unité plus adaptée : $275$ cm = $2{,}75$ m.\\Le segment de $1{,}1$ cm mesuré par Valérie sur le plan de la maison de sa cousine correspond donc, à une distance réelle de {\bfseries \color[HTML]{f15929}2,75} {\bfseries \color[HTML]{f15929}m}.
+\end{EXO}
+
+\begin{EXO}{}{}
+
+ On sait que l'échelle graphique est de 1 cm pour 10 m.\\Donc, la longueur réelle d'un terrain de football est $10{,}5~\text{cm} \times 10~\text{m/cm} = {\color[HTML]{F15929}\boldsymbol{105}}~\text{m}$ et sa largeur réelle est $6{,}8~\text{cm} \times 10~\text{m/cm} = {\color[HTML]{F15929}\boldsymbol{68}}~\text{m}$.
+\end{EXO}
+
+\clearpage
+\end{Correction}
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:

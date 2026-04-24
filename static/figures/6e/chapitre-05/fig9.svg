@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="205" height="210" viewBox="0 0 205 210">
+<line x1="30.00" y1="182.00" x2="63.60" y2="60.20" stroke="#000000" stroke-width="2.0"/>
+<line x1="30.00" y1="182.00" x2="156.00" y2="182.00" stroke="#000000" stroke-width="2.0"/>
+<line x1="30.00" y1="182.00" x2="130.80" y2="106.40" stroke="#000000" stroke-width="2.0"/>
+<path d="M63.60,182.00 A33.60,33.60 0 0,0 56.83,161.78" fill="none" stroke="#A5C03F" stroke-width="2.5"/>
+<path d="M56.83,161.78 A33.60,33.60 0 0,0 39.26,149.70" fill="none" stroke="#D36740" stroke-width="2.5"/>
+<path d="M59.40,182.00 A29.40,29.40 0 0,0 53.48,164.31" fill="none" stroke="#A5C03F" stroke-width="2.5"/>
+<path d="M53.48,164.31 A29.40,29.40 0 0,0 38.10,153.74" fill="none" stroke="#D36740" stroke-width="2.5"/>
+<text x="30.00" y="194.00" text-anchor="end" fill="#000000" font-size="12" font-family="sans-serif">A</text>
+<text x="63.60" y="56.20" text-anchor="start" fill="#000000" font-size="12" font-family="sans-serif">B</text>
+<text x="156.00" y="194.00" text-anchor="start" fill="#000000" font-size="12" font-family="sans-serif">C</text>
+<text x="130.80" y="102.40" text-anchor="start" fill="#000000" font-size="12" font-family="sans-serif">D</text>
+<text x="67.80" y="133.70" text-anchor="middle" fill="#D36740" font-size="11" font-family="sans-serif">37°</text>
+<text x="93.00" y="161.00" text-anchor="middle" fill="#A5C03F" font-size="11" font-family="sans-serif">37°</text>
+</svg>

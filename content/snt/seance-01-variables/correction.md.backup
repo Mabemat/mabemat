@@ -1,0 +1,96 @@
+---
+title: "Correction"
+---
+
+### Exercice 1
+
+```python
+a = 15
+b = 10
+c = a + b   # c = 25
+d = c / 2   # d = 12.5
+```
+
+- Ligne 3 : `c = 25`
+- Ligne 4 : `d = 12.5`
+
+### Exercice 2
+
+```python
+a = 8
+b = 3
+a = a - 4   # a = 4
+b = 2 * b   # b = 6
+a = a + b   # a = 10
+```
+
+- Ligne 3 : `a = 4`
+- Ligne 4 : `b = 6`
+- Ligne 5 : `a = 10`
+
+> `a = a - 4` signifie : la nouvelle valeur de `a` est l'ancienne valeur de `a` moins 4.
+
+### Exercice 4 — Types de variables
+
+| Information | Type |
+|---|---|
+| Nom d'un contact | `str` |
+| Numéro de téléphone | `str` |
+| SMS | `str` |
+| Heure du réveil | `str` ou `float` |
+| Code Wi-Fi | `str` |
+| % batterie | `int` |
+| Notes de maths | `float` |
+
+### Exercice 5 — Noms de variables
+
+| Nom | Verdict | Raison |
+|---|---|---|
+| `prix achat` | ✗ | Espace interdit |
+| `prix_achat` | ✓ | Correct |
+| `2ndeG` | ✗ | Commence par un chiffre |
+| `SecondeG` | ✓ | Correct |
+| `Seconde:G` | ✗ | Caractère `:` interdit |
+| `dix-huit` | ✗ | Tiret = soustraction |
+
+Propositions : `nb_filles`, `prix_repas`, `aire`, `note_anglais`
+
+### Exercice 6 — Moyenne
+
+```python
+note1 = 14
+note2 = 15
+note3 = 18
+note4 = 13.5
+moyenne = (note1 + note2 + note3 + note4) / 4
+print(moyenne)   # 15.125
+```
+
+### Exercice 7 — Programme d'achat
+
+```python
+nb_oeufs  = 2
+nb_lait   = 1
+nb_farine = 0.5
+total = nb_oeufs * 3.50 + nb_lait * 1.00 + nb_farine * 1.50
+print(total)
+```
+
+### Exercice 8 — Programme de calcul
+
+```python
+A = 5
+A = A * 3    # 15
+A = A - 4    # 11
+A = A ** 2   # 121
+print(A)
+```
+
+### Complément — Chaînes de caractères
+
+```python
+chaine1 = "Lou"
+chaine2 = "ane"
+print(chaine1 + chaine2)   # Louane   → concaténation
+print(3 * chaine1)         # LouLouLou → répétition
+```

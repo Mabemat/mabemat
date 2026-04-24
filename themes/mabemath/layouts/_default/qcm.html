@@ -3,17 +3,50 @@
 {{ $levelData := index .Site.Params.levels $section }}
 {{ $sntData := .Site.Params.snt }}
 {{ $lc := "" }}
-{{ if $levelData }}{{ $lc = $levelData.color }}{{ else if $sntData }}{{ $lc = $sntData.color }}{{ else }}{{ $lc = "#758467" }}{{ end }}
+{{ $levelLabel := $section | upper }}
+{{ if $levelData }}
+  {{ $lc = $levelData.color }}
+  {{ $levelLabel = $levelData.name }}
+{{ else if $sntData }}
+  {{ $lc = $sntData.color }}
+  {{ $levelLabel = $sntData.name }}
+{{ else }}
+  {{ $lc = "#758467" }}
+{{ end }}
 
 {{ $levelURL := .Parent.RelPermalink }}
-{{ $levelLabel := $section | upper }}
-<a class="back-link" href="{{ $levelURL }}">&#8592; {{ $levelLabel }}</a>
+{{/* Trouver le chapitre correspondant */}}
+{{ $chapterSlug := replace .File.ContentBaseName "-qcm" "" }}
+{{ $chapter := site.GetPage (printf "%s/%s" .Section $chapterSlug) }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+
+  {{ if $levelData }}
+    <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+    <span class="sep">/</span>
+  {{ end }}
+
+  {{ if $chapter }}
+    <a href="{{ $chapter.RelPermalink }}">
+      {{ if $chapter.Params.chapter_number }}
+        Chapitre {{ printf "%02d" $chapter.Params.chapter_number }}
+      {{ else }}
+        {{ $chapter.Title }}
+      {{ end }}
+    </a>
+    <span class="sep">/</span>
+  {{ end }}
+
+  <span>{{ .Title }}</span>
+</div>
+
 
 <div class="qcm-page">
   <h1 style="color: {{ $lc }};">{{ .Title }}</h1>
   <div class="qcm-container">
     {{ .Content }}
   </div>
-  <a class="back-link" style="margin-top: 1.5rem;" href="{{ $levelURL }}">&#8592; Retour en {{ $levelLabel }}</a>
 </div>
 {{ end }}

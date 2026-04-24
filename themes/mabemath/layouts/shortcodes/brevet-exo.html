@@ -1,0 +1,120 @@
+{{/* ───────────────────────────────────────────────
+     PARAMÈTRES
+──────────────────────────────────────────────── */}}
+{{ $num    := .Get "num" }}
+{{ $source := .Get "source" }}
+{{ $raw    := .Inner }}
+
+{{/* ───────────────────────────────────────────────
+     EXTRACTION INTRO + QUESTIONS
+──────────────────────────────────────────────── */}}
+
+{{ $intro := "" }}
+{{ $questions := slice }}
+
+{{ if strings.Contains $raw "---INTRO---" }}
+  {{ $parts := split $raw "---INTRO---" }}
+  {{ $afterIntro := index $parts 1 }}
+
+  {{ $introParts := split $afterIntro "---Q---" }}
+  {{ $intro = strings.TrimSpace (index $introParts 0) }}
+
+  {{ $qRaw := strings.TrimSpace (replace $afterIntro (print $intro) "") }}
+  {{ $blocs := split $qRaw "---Q---" }}
+
+  {{ range $bloc := $blocs }}
+    {{ $trimmed := strings.TrimSpace $bloc }}
+    {{ if $trimmed }}
+
+      {{ if strings.Contains $trimmed "---SUB-Q---" }}
+        {{/* ── Question avec sous-questions ── */}}
+        {{ $mainAndSubs := split $trimmed "---SUB-Q---" }}
+        {{ $qEnonce := strings.TrimSpace (index $mainAndSubs 0) }}
+
+        {{ $subQs := slice }}
+        {{ range $si, $spart := after 1 $mainAndSubs }}
+          {{ $strimmed := strings.TrimSpace $spart }}
+          {{ if $strimmed }}
+            {{ $scparts := split $strimmed "---SUB-CORR---" }}
+            {{ $senonce := strings.TrimSpace (index $scparts 0) }}
+            {{ $scorr   := "" }}
+            {{ if gt (len $scparts) 1 }}{{ $scorr = strings.TrimSpace (index $scparts 1) }}{{ end }}
+            {{ $subQs = $subQs | append (dict "enonce" $senonce "corr" $scorr) }}
+          {{ end }}
+        {{ end }}
+        {{ $questions = $questions | append (dict "enonce" $qEnonce "corr" "" "sub_questions" $subQs) }}
+
+      {{ else }}
+        {{/* ── Question simple ── */}}
+        {{ $qparts := split $trimmed "---CORR---" }}
+        {{ $enonce := strings.TrimSpace (index $qparts 0) }}
+        {{ $corr := "" }}
+        {{ if gt (len $qparts) 1 }}{{ $corr = strings.TrimSpace (index $qparts 1) }}{{ end }}
+        {{ $questions = $questions | append (dict "enonce" $enonce "corr" $corr "sub_questions" slice) }}
+      {{ end }}
+
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="brevet-exo">
+
+  <div class="brevet-exo-header">
+    <span class="brevet-exo-num">Exercice {{ $num }}</span>
+    {{ if $source }}
+      <span class="brevet-exo-origine">— {{ $source }}</span>
+    {{ end }}
+  </div>
+
+  {{ if $intro }}
+  <div class="brevet-exo-intro">{{ $intro | safeHTML }}</div>
+  {{ end }}
+
+  {{ $letters := slice "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" }}
+
+  {{ range $i, $q := $questions }}
+  {{ $qNum := add $i 1 }}
+  <div class="brevet-q">
+
+    <div class="brevet-q-enonce">
+      <span class="brevet-q-num">{{ $qNum }}.</span>
+      {{ $q.enonce | safeHTML }}
+    </div>
+
+    {{/* ── Correction question simple ── */}}
+    {{ if $q.corr }}
+    <button class="brevet-btn" onclick="toggleBrevet(this)">
+      &#9658; Voir la correction
+    </button>
+    <div class="brevet-corr" style="display:none">
+      {{ $q.corr | safeHTML }}
+    </div>
+    {{ end }}
+
+    {{/* ── Sous-questions ── */}}
+    {{ if $q.sub_questions }}
+    <div class="brevet-sub-list">
+      {{ range $si, $sq := $q.sub_questions }}
+      {{ $letter := index $letters $si }}
+      <div class="brevet-sub-q">
+        <span class="brevet-sub-num">{{ $letter }}.</span>
+        <div class="brevet-sub-enonce-wrap">
+          <div class="brevet-sub-enonce">{{ $sq.enonce | safeHTML }}</div>
+          {{ if $sq.corr }}
+          <button class="brevet-btn" onclick="toggleBrevet(this)">
+            &#9658; Voir la correction
+          </button>
+          <div class="brevet-corr" style="display:none">
+            {{ $sq.corr | safeHTML }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+  {{ end }}
+
+</div>

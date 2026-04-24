@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr"{{ with .Section }} class="lvl-{{ . }}"{{ end }}>
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "nav.html" . }}
+  {{ if .IsHome }}
+    <div class="page-home">
+      {{ block "main" . }}{{ end }}
+    </div>
+  {{ else }}
+    <div class="container">
+      {{ block "main" . }}{{ end }}
+    </div>
+  {{ end }}
+  {{ if .IsHome }}
+    {{ partial "footer-home.html" . }}
+  {{ else }}
+    {{ partial "footer.html" . }}
+  {{ end }}
+  <script src="{{ "js/qcm.js" | relURL }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

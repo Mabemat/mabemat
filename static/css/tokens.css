@@ -1,0 +1,252 @@
+/* ============================================
+   MABÉMAT — Design tokens v2
+   Fraunces · Inter · JetBrains Mono
+   ============================================ */
+
+@font-face {
+  font-family: 'Tan Nimbus';
+  src: url('../fonts/tan-nimbus.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Typographie */
+  --font-serif: "Fraunces", "Times New Roman", serif;
+  --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:  "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Neutres — papier chaud */
+  --paper:   #FBF8F3;
+  --paper-2: #F4EFE6;
+  --paper-3: #E8E1D3;
+  --ink:     #2A2A2A;
+  --ink-2:   #3A342B;
+  --ink-3:   #6B6356;
+  --ink-4:   #9A9084;
+  --rule:    #D9D2C3;
+
+  /* Accent par défaut (accueil = neutre) */
+  --accent:     #1A1713;
+  --accent-2:   #6B6356;
+  --accent-ink: #FBF8F3;
+
+  /* Rayons */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 32px;
+
+  /* Ombres */
+  --shadow-1:    0 1px 2px rgba(26,23,19,.06), 0 2px 6px rgba(26,23,19,.04);
+  --shadow-2:    0 2px 8px rgba(26,23,19,.08), 0 12px 32px rgba(26,23,19,.08);
+  --shadow-lift: 0 6px 18px rgba(26,23,19,.10), 0 24px 60px rgba(26,23,19,.10);
+
+  /* Spacing */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+  --s-9: 96px; --s-10: 128px;
+
+  /* Easings */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ── Aliases de compatibilité (styles QCM / SNT existants) ── */
+  --bg:           var(--paper);
+  --bgLecon:      #FFFFFF;
+  --surface:      #FFFFFF;
+  --border:       var(--rule);
+  --border-light: var(--paper-3);
+  --text:         var(--ink);
+  --text-sec:     var(--ink-2);
+  --text-light:   var(--ink-3);
+  --radius:       var(--r-sm);
+  --max-w:        1200px;
+  --font-title:   var(--font-serif);
+  --font-body:    var(--font-sans);
+}
+
+/* ── Couleurs par niveau ── */
+.lvl-6e     { --accent: #D36740; --accent-2: #C5607A; --accent-ink: #FFF; }
+.lvl-3e     { --accent: #8B3C52; --accent-2: #C5607A; --accent-ink: #FFF; }
+.lvl-2nde   { --accent: #4A5D7A; --accent-2: #8A9CC1; --accent-ink: #FFF; }
+.lvl-1re    { --accent: #758467; --accent-2: #B85C5C; --accent-ink: #FFF; }
+.lvl-snt    { --accent: #8A9CC1; --accent-2: #4A5D7A; --accent-ink: #FFF; }
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "cv11";
+}
+
+a { color: inherit; text-decoration: none; }
+
+html { scroll-behavior: smooth; }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Utilitaires typo ── */
+.serif { font-family: var(--font-serif); font-optical-sizing: auto; }
+.mono  { font-family: var(--font-mono); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* ── Wrappers ── */
+.wrap    { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+.wrap-sm { max-width: 760px;  margin: 0 auto; padding: 0 32px; }
+
+/* ── Topbar navigation ── */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--rule);
+  background: color-mix(in oklab, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Tan Nimbus', var(--font-serif);
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+.topbar .brand-mark {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Tan Nimbus', var(--font-serif);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+.topbar .brand-text {
+  font-family: 'Tan Nimbus', var(--font-serif);
+  font-weight: normal;
+}
+.topbar nav { display: flex; gap: 24px; font-size: 14px; color: var(--ink-2); }
+.topbar nav a { padding: 6px 0; position: relative; transition: color .2s; }
+.topbar nav a:hover { color: var(--ink); }
+.topbar nav a.active { color: var(--ink); }
+.topbar nav a.active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 2px; background: var(--accent);
+}
+
+/* ── Fil d'Ariane ── */
+.crumbs {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: var(--ink-3);
+  font-family: var(--font-mono);
+}
+.crumbs a {
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in oklab, var(--ink-3) 40%, transparent);
+  transition: color .2s;
+}
+.crumbs a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+.crumbs .sep { opacity: .5; }
+
+/* ── Boutons ── */
+.btn-new {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform .2s var(--ease-out), background .2s, box-shadow .2s;
+  text-decoration: none;
+}
+.btn-new:hover { transform: translateY(-1px); box-shadow: var(--shadow-2); }
+.btn-new.ghost {
+  background: transparent; color: var(--ink); border-color: var(--rule);
+}
+.btn-new.ghost:hover { border-color: var(--ink); background: var(--paper-2); }
+.btn-new.accent {
+  background: var(--accent); border-color: var(--accent); color: var(--accent-ink);
+}
+
+/* ── Chip ── */
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px;
+  background: var(--paper-2); border: 1px solid var(--rule);
+  font-size: 12px; color: var(--ink-2);
+  font-family: var(--font-mono);
+}
+.chip-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--accent); }
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+.fade-up          { animation: fadeUp .7s var(--ease-out) both; }
+.fade-up.d1       { animation-delay: 0.05s; }
+.fade-up.d2       { animation-delay: 0.12s; }
+.fade-up.d3       { animation-delay: 0.20s; }
+.fade-up.d4       { animation-delay: 0.28s; }
+.fade-up.d5       { animation-delay: 0.36s; }
+
+/* ── Footer ── */
+.site-footer {
+  margin-top: 120px;
+  border-top: 1px solid var(--rule);
+  padding: 40px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+}
+.site-footer a:hover { color: var(--ink); }
+
+/* ── Couleurs du logo par niveau ── */
+/* Accueil : pas de bicolore */
+:root { --logo-ma: var(--ink); --logo-bemat: var(--ink); }
+
+/* html.lvl-Xe (0,1,1) > :root (0,1,0) — pas d'ambiguïté de cascade */
+html.lvl-6e   { --logo-ma: #D36740; --logo-bemat: #C5607A; }
+html.lvl-3e   { --logo-ma: #8B3C52; --logo-bemat: #C5607A; }
+html.lvl-2nde { --logo-ma: #4A5D7A; --logo-bemat: #8A9CC1; }
+html.lvl-1re  { --logo-ma: #758467; --logo-bemat: #B85C5C; }
+html.lvl-snt  { --logo-ma: #8A9CC1; --logo-bemat: #4A5D7A; } /* 2nde inversé */
+
+.brand-ma    { color: var(--logo-ma);    transition: color 0.4s ease; }
+.brand-bemat { color: var(--logo-bemat); transition: color 0.4s ease; }

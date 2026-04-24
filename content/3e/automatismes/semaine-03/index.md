@@ -1,0 +1,120 @@
+---
+title: "Semaine 3 - Séances 7 à 9"
+layout: "automatismes"
+level: "3e"
+auto_number: 3
+weight: 3
+---
+
+{{< auto3-seance titre="Séance 7" >}}
+
+{{< auto3-exo num="Exercice 1" >}}
+---Q---
+Calculer : $ (-4) + (+4) $
+---CORR---
+$  {\color{#008002}\boldsymbol{(-4)}} + {\color{blue}\boldsymbol{(+4)}} = {\color{#f15929}\boldsymbol{0}} $
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 2 " >}}
+---Q---
+Résoudre l'équations suivante : $-8m-2=11$
+---CORR---
+$-8m-2=11$<br>$-8m-2{\color{blue}\boldsymbol{\,\,+\,\,2}}=11{\color{blue}\boldsymbol{\,\,+\,\,2}}$<br>$-8m=13$<br>$-8m{\color{blue}\boldsymbol{\,\div\,(-8)}}=13{\color{blue}\boldsymbol{\,\div\,(-8)}}$<br>$m=-\dfrac{13}{8}$<br> La solution de l'équation $-8m-2=11$ est ${\color{#F15929}\boldsymbol{-\dfrac{13}{8}}}$.
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 3 " >}}
+---Q---
+Pour chacune des figures suivantes, tracées à main levée, préciser s'il s'agit d'un parallélogramme.<br><img src="3autog02_2_01.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+On sait que $FG = HI$ et $GH = IF$.<br>Or, « si un quadrilatère a ses côtés opposés de même longueur, alors c'est un parallélogramme  ».<br>Donc ${FGHI}$ <span class="rep">est un parallélogramme</span>.
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 4 " >}}
+---Q---
+On choisit au hasard un ticket parmi contenant $6$ tickets gagnants et $15$ tickets perdants.<br>             Quelle est la probabilité d'obtenir un ticket gagnant ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
+---CORR---
+Dans une situation d'équiprobabilité,
+        on calcule la probabilité d'un événement par le quotient : 
+        $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
+        La probabilité est donc donnée par :   $\dfrac{\text{Nombre de boules gagnants}}{\text{Nombre total de boules}}
+             =\dfrac{6}{21}  =\dfrac{2{\color{#2563a5}\boldsymbol{\times3}} }{7{\color{#2563a5}\boldsymbol{\times3}}}={\color{#F15929}\boldsymbol{\dfrac{2}{7}}}$.
+{{< /auto3-exo >}}
+{{< /auto3-seance >}}
+
+{{< auto3-seance titre="Séance 8" >}}
+
+{{< auto3-exo num="Exercice 1 " >}}
+---Q---
+Dans un collège, $25\%$ des 500 élèves participent à une opération de nettoyage.<br>
+    Combien d'élèves ne participent pas à cette opération ?
+---CORR---
+Le nombre d'élèves participant à cette opération est égal à :<br>
+    $500 \times \dfrac{25}{100} = 125$.<br>
+    Le nombre d'élèves ne participant pas à cette opération est donc égal à :<br>
+    $500 - 125 = {\color{#F15929}\boldsymbol{375}}$.
+
+<br>
+Une autre méthode consiste à calculer le pourcentage d'élèves ne participant pas à cette opération, qui est égal à $100\% - 25\% = 75\%$.<br>
+    Le nombre d'élèves ne participant pas à cette opération est donc égal à :<br>
+    $500 \times \dfrac{75}{100} = {\color{#F15929}\boldsymbol{375}}$.
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 2 " >}}
+---Q---
+Placer les points : $A(-2{,}3), B(-0{,}2), C(0{,}2)$.
+
+<br><img src="3auton15_2_enonce.svg" alt="3auton15_2" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+<img src="3auton15_2_corr.svg" alt="3auton15_2" style="display:block;margin:0.8rem auto;max-width:100%">
+
+<br>
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 3 " >}}
+---Q---
+Calculer le périmètre d'un cercle de diamètre $2\text{ cm}$
+---CORR---
+$\mathcal{P}_\text{cercle} = d \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#F15929}\boldsymbol{2\pi}}\text{ cm}$
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 4 " >}}
+---Q---
+$10\,\, ; \,\, 10 \,\, ; \,\,6\,\, ; \,\,2 \,\, ; \,\,17$<br>
+       
+        La moyenne de cette série est :
+
+<br>
+ 
+    
+    	<strong>A</strong>. $9$&emsp;&emsp; <strong>B</strong>. $11$&emsp;&emsp; <strong>C</strong>. $10$&emsp;&emsp; <strong>D</strong>. $8{,}5$&emsp;&emsp; <br>
+---CORR---
+La somme des $5$ valeurs est : $10+10+6+2+17= 45$.<br>
+         La moyenne est donc $\dfrac{45}{5}=9$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
+{{< /auto3-exo >}}
+{{< /auto3-seance >}}
+
+{{< auto3-seance titre="Séance 9" >}}
+
+{{< auto3-exo num="Exercice 1 " >}}
+---Q---
+Donner la notation scientifique des nombres suivants.<br>$10\,000$$\,=$$\,\dots$
+---CORR---
+$10\,000 = {\color{#F15929}\boldsymbol{1\times 10^{4}}}$
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 2 " >}}
+---Q---
+Magalie lit sur sa recette de gâteau au citron pour $11$ personnes qu'il faut $220$ g de farine. <br>Elle veut adapter sa recette pour $13$ personnes.<br> Quelle masse de farine doit-elle prévoir ?
+---CORR---
+Commençons par trouver la masse de farine pour une personne. <br> $11$ personnes, c'est ${\color{#216D9A}\boldsymbol{11}}$ fois $1$ personne. il faut donc ${\color{#216D9A}\boldsymbol{11}}$ fois moins que $220$ g pour $1$ personne.<br>$220$ g $\div {\color{#216D9A}\boldsymbol{11}} = 20$ g <br> il faut ${\color{#216D9A}\boldsymbol{20}}$ g de farine pour $1$ personne. <br> Cherchons maintenant la quantité nécessaire pour 13 personnes. <br> $13$ personnes, c'est ${\color{#216D9A}\boldsymbol{13}}$ fois $1$ personne. <br>Donc, il faut ${\color{#216D9A}\boldsymbol{13}}$ fois plus que 20 g de farine que pour $1$ personne pour faire sa recette.<br> ${\color{#216D9A}\boldsymbol{20}}$ g $\times {\color{#216D9A}\boldsymbol{13}} = 260$ g <br>
+ Magalie doit utiliser ${\color{#F15929}\boldsymbol{260}}$ g de farine pour $13$ personnes.
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 3 " >}}
+---Q---
+Calculer le volume, arrondi au $\text{ dm}^3$ près, d'une pyramide de hauteur $2\text{ dm}$ et dont la base est un triangle. <br>
+La base du triangle mesure $8\text{ dm}$ et la hauteur associée à cette base mesure $4\text{ dm}$.
+---CORR---
+$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{8\text{ dm} \times 4\text{ dm}}{2}\times2\text{ dm}=\dfrac{8 \times 4 \times 2}{6}\text{ dm}^3\approx{\color{#F15929}\boldsymbol{11\mathbf{ dm}^3}}$
+{{< /auto3-exo >}}
+{{< auto3-exo num="Exercice 4 " >}}
+---Q---
+Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ? <br>
+<img src="scratch.png" alt="3auton15_2" style="display:block;margin:0.8rem auto;max-width:200px">
+---CORR---
+C'est la figure $\color{#F15929}\boldsymbol{4}$
+{{< /auto3-exo >}}
+{{< /auto3-seance >}}
+

@@ -1,0 +1,119 @@
+baseURL = "https://mabemat.github.io/mabemat/"
+languageCode = "fr"
+title = "MaBémath"
+theme = "mabemath"
+
+[params]
+  description = "Cours de maths — Mme Bertail — Collège & Lycée"
+  author = "Mme Bertail"
+
+[params.levels]
+  [params.levels.6e]
+    name = "6ème"
+    color = "#D36740"
+    color2 = "#C5607A"
+    bouton1 = "#DB3E56"
+    bouton2 = "#CF6876"
+    bouton3 = "#8B1F30"
+    bouton4 = "#D36740"
+    bg = "#FDF5F0"
+    description = "Bien débuter au collège"
+    has_exercices = false
+
+  [params.levels.3e]
+    name = "3ème"
+    color = "#8B3C52"
+    color2 = "#C5607A"
+    bouton1 = "#8B3C52"
+    bouton2 = "#9E485F"
+    bouton3 = "#B2546D"
+    bouton4 = "#C5607A"
+    bg = "#FDF2F4"
+    description = "Consolider les bases du collège"
+    has_exercices = false
+
+  [params.levels.2nde]
+    name = "2nde"
+    color = "#4A5D7A"
+    color2 = "#8A9CC1"
+    bouton1 = "#4A5D7A"
+    bouton2 = "#5F7292"
+    bouton3 = "#7587A9"
+    bouton4 = "#8A9CC1"
+    bg = "#F2F4F8"
+    description = "Bien démarrer au lycée"
+    has_exercices = true
+
+  [params.levels.1re]
+    name = "1ère Spécialité"
+    color = "#758467"
+    color2 = "#B85C5C"
+    bouton1 = "#758467"
+    bouton2 = "#8B7763"
+    bouton3 = "#A26960"
+    bouton4 = "#B85C5C"
+    bg = "#F4F6F1"
+    description = "Se préparer au bac"
+    has_exercices = true
+
+[params.snt]
+  name = "Python"
+  color = "#8A9CC1"
+  color2 = "#4A5D7A"
+  bg = "#FBF7EE"
+  description = "Commencer à coder"
+
+[params.logo]
+  home_m = "#D36740"
+  home_rest = "#758467"
+
+[menu]
+  [[menu.main]]
+    name = "6e"
+    url = "/6e/"
+    weight = 1
+  [[menu.main]]
+    name = "3e"
+    url = "/3e/"
+    weight = 2
+  [[menu.main]]
+    name = "2nde"
+    url = "/2nde/"
+    weight = 3
+  [[menu.main]]
+    name = "Python"
+    url = "/snt/"
+    weight = 4
+  [[menu.main]]
+    name = "1re"
+    url = "/1re/"
+    weight = 5
+  [[menu.main]]
+    name = "Liens"
+    url = "/liens/"
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
+
+[markup.highlight]
+  anchorLineNos = false
+  codeFences = true
+  guessSyntax = false
+  hl_Lines = ""
+  hl_inline = false
+  lineAnchors = ""
+  lineNos = true
+  lineNumbersInTable = false
+  noClasses = true
+  noHl = false
+  style = "friendly"
+  tabWidth = 4

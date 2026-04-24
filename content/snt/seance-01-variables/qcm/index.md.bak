@@ -1,0 +1,146 @@
+---
+title: "QCM — Variables et affectation"
+layout: "qcm"
+---
+
+{{< qcm correct="2" >}}
+---Q---
+Quelle est la valeur de `z` après ce code ?
+```python
+x = 6
+y = 4
+z = x * y
+```
+- `6`
+- `4`
+- `24`
+- `10`
+---CORR---
+**Réponse : `24`**
+
+`z = x * y` signifie : z prend la valeur de x multiplié par y, soit 6 × 4 = **24**.
+{{< /qcm >}}
+
+{{< qcm correct="1" >}}
+---Q---
+Quelle est la valeur finale de `score` ?
+```python
+score = 100
+score = score - 30
+score = score + 10
+```
+- `100`
+- `80`
+- `70`
+- `130`
+---CORR---
+**Réponse : `80`**
+
+Étape par étape :
+- Ligne 1 : `score = 100`
+- Ligne 2 : `score = 100 - 30 = 70`
+- Ligne 3 : `score = 70 + 10 = 80`
+{{< /qcm >}}
+
+{{< qcm correct="0" >}}
+---Q---
+Lequel de ces noms de variable est **valide** en Python ?
+- `nb_points`
+- `1er_score`
+- `mon score`
+- `score:total`
+---CORR---
+**Réponse : `nb_points`**
+
+- `1er_score` ✗ → commence par un chiffre
+- `mon score` ✗ → contient un espace
+- `score:total` ✗ → le caractère `:` est interdit
+- `nb_points` ✓ → lettres et tiret bas uniquement
+{{< /qcm >}}
+
+{{< qcm correct="3" >}}
+---Q---
+Quel est le type de la variable `t` après `t = "17:30"` ?
+- `int`
+- `float`
+- `bool`
+- `str`
+---CORR---
+**Réponse : `str`**
+
+Tout ce qui est entre guillemets `" "` est une chaîne de caractères (`str`), même si ça ressemble à un nombre ou une heure.
+{{< /qcm >}}
+
+{{< qcm correct="2" >}}
+---Q---
+Qu'affiche ce programme ?
+```python
+prenom = "Ali"
+print(3 * prenom)
+```
+- `3Ali`
+- `AliAliAli`
+- `Ali3`
+- Erreur
+---CORR---
+**Réponse : `AliAliAli`**
+
+En Python, `3 * "Ali"` répète la chaîne 3 fois : "Ali" + "Ali" + "Ali" = **"AliAliAli"**.
+{{< /qcm >}}
+
+{{< qcm correct="0" >}}
+---Q---
+Qu'affiche ce programme ?
+```python
+a = 5
+b = 2
+c = a ** b
+print(c)
+```
+- `25`
+- `10`
+- `7`
+- `52`
+---CORR---
+**Réponse : `25`**
+
+L'opérateur `**` signifie **puissance**. Donc `a ** b` = 5² = 5 × 5 = **25**.
+{{< /qcm >}}
+
+{{< qcm correct="1" >}}
+---Q---
+Quelle est la valeur de `resultat` ?
+```python
+a = 10
+b = 3
+resultat = a // b
+```
+- `3.33`
+- `3`
+- `1`
+- `30`
+---CORR---
+**Réponse : `3`**
+
+L'opérateur `//` est la **division entière** (sans la partie décimale). 10 ÷ 3 = 3.33... donc `10 // 3 = 3`.
+{{< /qcm >}}
+
+{{< qcm correct="2" >}}
+---Q---
+Qu'affiche ce programme ?
+```python
+nom = "Marie"
+ville = "Lyon"
+print(nom + " habite à " + ville)
+```
+- `nomville`
+- `Marie ville Lyon`
+- `Marie habite à Lyon`
+- Erreur
+---CORR---
+**Réponse : `Marie habite à Lyon`**
+
+La **concaténation** avec `+` assemble les chaînes bout à bout :
+`"Marie"` + `" habite à "` + `"Lyon"` = **`"Marie habite à Lyon"`**
+{{< /qcm >}}
+

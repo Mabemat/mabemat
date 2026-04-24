@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $sntData := .Site.Params.snt }}
+{{ $lc := "" }}
+{{ $levelLabel := $section | upper }}
+{{ if $levelData }}
+  {{ $lc = $levelData.color }}
+  {{ $levelLabel = $levelData.name }}
+{{ else if $sntData }}
+  {{ $lc = $sntData.color }}
+  {{ $levelLabel = $sntData.name }}
+{{ else }}
+  {{ $lc = "#758467" }}
+{{ end }}
+
+{{ $levelURL := .Parent.RelPermalink }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+
+  {{ if $levelData }}
+    <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+    <span class="sep">/</span>
+  {{ end }}
+
+  {{/* Page Automatismes du niveau */}}
+  {{ $auto := site.GetPage (printf "%s/automatismes" .Section) }}
+  {{ if $auto }}
+    <a href="{{ $auto.RelPermalink }}">Automatismes</a>
+    <span class="sep">/</span>
+  {{ end }}
+
+  <span>{{ .Title }}</span>
+</div>
+
+
+<div class="qcm-page">
+  <h1 style="color: {{ $lc }};">{{ .Title }}</h1>
+  {{ .Content }}
+</div>
+{{ end }}

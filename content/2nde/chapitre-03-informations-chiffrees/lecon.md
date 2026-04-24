@@ -1,0 +1,224 @@
+---
+title: "Leçon complète"
+---
+
+<h2 class="subsection-title">3.1 Proportion et pourcentage</h2>
+
+<h3 class="subsubsection-title">3.1.1 Proportion d'une sous-population</h3>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(73% - 12px);">
+Sur les $150$ élèves inscrits en classe de seconde,
+$36$ d'entre eux sont externes.<br>
+La <strong>population totale</strong> des élèves de seconde, notée $\color{#4A5D7A}{N}$, est égale à $\color{#4A5D7A}{150}$. C'est la population de référence.<br>
+La <strong>sous-population</strong> des élèves externes, notée $\color{#EA8556}{n}$, est égale à $\color{#EA8556}{36}$.<br>
+La <strong>proportion</strong> d'élèves externes parmi tous les élèves de seconde, notée $p$, est :
+$p=\dfrac{\color{#EA8556}{n}}{\color{#4A5D7A}{N}}=\dfrac{\color{#EA8556}{36}}{\color{#4A5D7A}{150}}=\dfrac{6}{25}=0,24$
+Cette proportion peut s'exprimer en <strong>pourcentage</strong> : $p = 24\%$.
+</div><img src="/mabemat/figures/2nde/chapitre-03/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+</div>
+</div>
+
+<h3 class="subsubsection-title">3.1.2 Pourcentage d'un nombre</h3>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Parmi les $150$ élèves de seconde, $12\%$ ont choisi comme deuxième langue l'allemand. <br>
+$12\% \quad \color{#A8C68A}{\text{de}} \quad \color{#4A5D7A}{150}$  ont choisi l'allemand, soit : $12\%  {\color{#A8C68A}{\times}} {\color{#4A5D7A}{150}}=\dfrac{12}{100}{\color{#A8C68A}{\times}}  {\color{#4A5D7A}{150}} =18 $ élèves.
+</div>
+</div>
+
+<div class="environment methode">
+<div class="environment-title">Méthode - Associer effectif, proportion et pourcentage.</div>
+<div class="environment-content">
+Une société de $75$ employés compte $12 \%$ de cadres et le reste d'ouvriers. $35$ employés de cette société sont des femmes et $5$ d'entre elles sont cadres.
+<ol>
+<li>Calculer l'effectif des cadres.
+
+$12\%$ de $75$= $\dfrac{12}{100} \times 75=9$. Cette société compte 9 cadres.</li>
+<li>Calculer la proportion de femmes dans cette société.
+
+$n = 35$ femmes et $N = 75$ employés.<br>
+La proportion de femmes est donc égale à $p=\dfrac{35}{75}=\dfrac{7}{15}\approx 0,47$</li>
+<li>Calculer la proportion, en $\%$, de cadres parmi les femmes. Les femmes cadres sont-elles sous ou sur-représentées dans cette société ?
+
+$n = 5$ femmes cadres et $N = 35$ femmes. La population de référence n'est plus la même.<br>
+La proportion de cadres parmi les femmes est égale à $p=\dfrac{5}{35}=\dfrac{1}{7}\approx 0,14 = 14\%$.<br>
+$14 \% > 12 \%$ donc les femmes cadres sont sur-représentées dans cette société.</li>
+</ol>
+</div>
+</div>
+
+<h3 class="subsubsection-title">3.1.3 Proportions échelonnées</h3>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(49% - 12px);">
+Dans un car, il y a ${\color{#4A5D7A}{35\%}}$ de scolaires. Parmi les scolaires, ${\color{#EA8556}{60\%}}$ sont des filles. <br>
+L'ensemble ${\color{#EA8556}{F}}$ est inclus dans l'ensemble ${\color{#4A5D7A}{S}}$ et on a <br>
+${\color{#EA8556}{p_F}}={\color{#EA8556}{60\%}}$ de ${\color{#4A5D7A}{S}}$.<br>
+L'ensemble ${\color{#4A5D7A}{S}}$ est inclus dans l'ensemble $CAR$ et
+on a <br>
+${\color{#4A5D7A}{p_S}}={\color{#4A5D7A}{35\%}}$ de $CAR$.<br>
+La proportion de scolaires filles dans le $CAR$ est donc égale à :
+$${\color{#EA8556}{60\%}} \text{ de } {\color{#4A5D7A}{35\%}} ={\color{#EA8556}{60\%}} \times {\color{#4A5D7A}{35\%}} = {\color{#EA8556}{0,6}}\times {\color{#4A5D7A}{0,35}} =0,21 =21\%$$
+</div><img src="/mabemat/figures/2nde/chapitre-03/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(49% - 12px); max-height:200px; max-width:100%;">
+</div>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété : $ $</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(55% - 12px);">
+$A\subset B$ et $B \subset C$.<br>
+$p_1$ est la proportion de $A$ dans $B$.<br>
+$p_2$ est la proportion de $B$ dans $C$.<br>
+Alors $p=p_1\times p_2$ est la proportion de $A$ dans $C$.
+</div><img src="/mabemat/figures/2nde/chapitre-03/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(43% - 12px); max-height:200px; max-width:100%;">
+</div>
+</div>
+
+<div class="environment methode">
+<div class="environment-title">Méthode - Calculer des pourcentages de pourcentages.</div>
+<div class="environment-content">
+Sur $67$ millions d'habitants en France, $66 \%$ de la population est en âge de travailler ($15$- $64$ ans).<br>
+La population active représente $70 \%$ de la population en âge de travailler.
+<ol>
+<li>Calculer la proportion de population active par rapport à la population totale.
+
+$F$ est la population française.<br>
+$T$ est la population en âge de travailler.<br> $A$ est la population active.<br>
+La proportion de $A$ dans $T$ est $70\%$.<br>
+La proportion de $T$ dans $F$ est $66\%$.<br>
+La proportion de $A$ dans $F$ est donc égale à :
+$70$% $\times$ $66$% $= 0{,}7 \times 0{,}66 = 0{,}462 =$ $46{,}2$% <br>
+$46{,}2\%$ des français sont actifs.</li>
+<li>Combien de français compte la population active ?
+
+$46{,}2$% $\text{ de } 67 = 0{,}462 \times 67 = 30{,}954$ <br>
+La France compte environ $31$ millions d'actifs.</li>
+</ol>
+</div>
+</div>
+
+<h2 class="subsection-title">3.2 Évolution exprimée en pourcentage</h2>
+
+<h3 class="subsubsection-title">3.2.1 Calculer une évolution</h3>
+
+<div class="environment propriete">
+<div class="environment-title">Propriétés : $ $</div>
+<div class="environment-content">
+<ul>
+<li>Augmenter une valeur de $t\%$ revient à la multiplier par $1+\dfrac{t}{100}$.</li>
+<li>Diminuer une valeur de $t\%$ revient à la multiplier par $1-\dfrac{t}{100}$.</li>
+<li>$1+\dfrac{t}{100}$ et $1-\dfrac{t}{100}$ sont appelés les <strong>coefficients multiplicateurs</strong>.</li>
+</ul>
+</div>
+</div>
+
+<div class="remarque">
+Si on augmente une valeur $V_0$ de $t\%$ alors sa valeur $V_1$ après augmentation est égale à : $V_1=V_0+V_0\times \dfrac{t}{100}=V_0\left(1+\dfrac{t}{100}\right)$<br>
+Si on diminue une valeur $V_0$ de $t\%$ alors sa valeur $V_1$ après diminution est égale à : $V_1=V_0-V_0\times \dfrac{t}{100}=V_0\left(1-\dfrac{t}{100}\right)$
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>Le prix d'un survêtement est de $49$€. Il augmente de $8\%$. <br>
+Son nouveau prix est égal à : $\left(1+\dfrac{8}{100}\right)\times 49=1,08\times 49= 52,25$€.</li>
+<li>Le prix d'un polo est de $21$€. Il est soldé de $20\%$. <br>
+Son nouveau prix est égal à : $\left(1-\dfrac{20}{100}\right)\times 21=0,8\times 21= 16,8$€.</li>
+</ul>
+</div>
+</div>
+
+<h3 class="subsubsection-title">3.2.2 Calculer un taux d'évolution</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On considère une valeur $V_0$ qui subit une évolution pour arriver à une valeur $V_1$.<br>
+Le <strong>taux d'évolution</strong> est égal à : $t=\dfrac{V_1-V_0}{V_0}$.
+</div>
+</div>
+
+<div class="remarque">
+<ul>
+<li>Si $t>0$, l'évolution est une augmentation.</li>
+<li>Si $t<0$, l'évolution est une diminution.</li>
+</ul>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>La population d'un village est passé de $8\,500$ à $10\,400$ entre $2008$ et $2012$.
+$$t=\dfrac{10\,400-8\,500}{8\,500}\approx 0,224$$
+La population a augmenté de $22,4\%$.</li>
+<li>Le prix d'une console passe de $399$€ à $349$€.
+$$t=\dfrac{349-399}{399}\approx -0,125$$
+Le prix de la console a donc diminué de $12,5\%$.</li>
+</ul>
+</div>
+</div>
+
+<h3 class="subsubsection-title">3.2.3 Évolutions successives</h3>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<ul>
+<li>Lors de $n$ évolutions successives à des taux $t_1$,$t_2,\ldots,t_n$ (augmentations et/ou diminutions) entre une valeur $V_0$ et une valeur $V_n$, on appelle <strong>taux d'évolution global</strong> le taux noté $T$, qu'il faut appliquer à la valeur $V_0$ pour obtenir la valeur $V_n$.
+
+<img src="/mabemat/figures/2nde/chapitre-03/fig4.svg" alt="figure 4" style="max-height:300px; max-width:100%; display:block; margin:auto;">
+
+</li>
+<li>Le <strong>taux d'évolution global</strong> $T$ est donc tel que $(1+T)=(1+t_1)(1+t_2)\ldots(1+t_n)$
+
+<div style="display:inline-block; vertical-align:middle; width:calc(59% - 12px);">
+</li>
+<li>Dans le cas de deux évolutions successives, en nommant
+respectivement $t_1$ et $t_2$ les taux de la première et de la seconde évolution. Alors la quantité $V_0$ a subi une évolution globale de taux $T$ tel que $1+T=(1+t_1)\times (1+t_2)$ .
+<img src="/mabemat/figures/2nde/chapitre-03/fig5.svg" alt="figure 5" style="max-height:300px; max-width:100%; display:block; margin:auto;">
+</li>
+</ul>
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Un site marchand décide d'augmenter tous ses prix de $20 \%$ avant Noël, puis de les baisser de $25 \%$ pour les soldes de mi-janvier.
+À la mi-janvier combien coûte un jouet qui coûtait $80$€ en octobre ?
+
+On a $1+T=\left(1+\dfrac{20}{100}\right)\left(1-\dfrac{25}{100}\right)=1,2\times 0,75=0,9=1-\dfrac{10}{100}$. Le jouet au global a subi une diminution de $10\%$. <br>
+Donc le nouveau prix est de : $80\times (1+T)=80\times 0,9= 72$€
+</div>
+</div>
+
+<h3 class="subsubsection-title">3.2.4 Évolutions réciproques</h3>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<div style="display:inline-block; vertical-align:middle; width:calc(63% - 12px);">
+Une quantité $V_0$ subit une évolution au taux $t$ pour obtenir une quantité $V_1$. On désigne par $t'$ le taux d'évolution réciproque de $V_1$ à $V_0$ . Alors $1+t '=\dfrac{1}{1+t}$.
+</div><img src="/mabemat/figures/2nde/chapitre-03/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(35% - 12px); max-height:150px; max-width:100%;">
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Une station essence augmente tous ses tarifs de $11\%$ avant un long week-end. Le prix du SP95 E10 est de $1,359$€. Combien coûtait-il avant l'augmentation ?
+
+On a $1+t=\left(1+\dfrac{11}{100}\right)=1,11$. Le taux réciproque est de $t'=\dfrac{1}{1,11}-1$. <br>
+Donc le prix initial du SP95 E10 était de : $1,359\times \dfrac{1}{1,11}\approx 1,224$€
+</div>
+</div>
