@@ -742,6 +742,20 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   .full-lesson .environment li {
     margin: 0 4px !important;
   }
+  /* Tableaux : scroll horizontal si trop larges */
+  .full-lesson table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  .full-lesson .environment table {
+    transform: none;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
 }
 
 /* Fin de leçon */
