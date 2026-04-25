@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 25 - Séances 73 à 75</span>
+  <span>Semaine 25</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>25</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 25 - Séances 73 à 75</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 73</div>
+<section class="seance-panel" data-titre="Séance 73">
 
 
 
@@ -132,18 +127,30 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans une association de 300 membres, $25\%$ des membres ont une taille supérieure à 1,75 m.<br>
     Combien de membres ont une taille supérieure à 1,75 m ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le nombre de membres qui ont une taille supérieure à 1,75 m est égal à :<br>
     $300 \times \dfrac{25}{100} = \dfrac{7\,500}{100}={\color{#F15929}\boldsymbol{75}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -154,22 +161,34 @@ Le nombre de membres qui ont une taille supérieure à 1,75 m est égal à :<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur chaque droite graduée, déterminer l’abscisse du point $E$.<br><br> <strong>A</strong>. $\dfrac{13}{8}$ &emsp;
     <strong>B</strong>. $\dfrac{17}{8}$ &emsp;
     <strong>C</strong>. $\dfrac{7}{4}$ &emsp;
     <strong>D</strong>. $\dfrac{3}{2}$<br><img src="3auton15_3_01.svg" alt="3auton15_3" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On remarque qu'il y a 4 divisions entre $1$ et $2$, donc chaque division vaut $\dfrac{1}{4}$.<br>
     Le point $E$ est situé après $7$ divisions à partir de l'origine.<br>
     Donc l'abscisse de $E$ est $\dfrac{7}{4}$.<br>
     Bonne réponse : <span class="rep">C</span>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -180,16 +199,28 @@ On remarque qu'il y a 4 divisions entre $1$ et $2$, donc chaque division vaut $\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer l'aire d'un disque de rayon $2\text{ cm}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{A}_\text{disque} = r \times r \times \pi$<br>$\mathcal{A}_\text{disque} = 2\text{ cm} \times 2\text{ cm} \times \pi$<br>$\mathcal{A}_\text{disque} = {\color{#F15929}\boldsymbol{4\pi}}\text{ cm}^2$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -200,9 +231,17 @@ $\mathcal{A}_\text{disque} = r \times r \times \pi$<br>$\mathcal{A}_\text{disque
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Parmi les 4 réponses ci-dessous, une seule est correcte.<br>
 Donner la lettre correspondante.<br>Une voiture roule à $100$ km/h. Combien de temps met-elle pour parcourir $110$ km ?
 
@@ -212,23 +251,23 @@ Donner la lettre correspondante.<br>Une voiture roule à $100$ km/h. Combien de 
     <strong>C</strong>. 33 min&emsp;&emsp; 
     <strong>D</strong>. 2 h 12 min
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Pour parcourir $110$ km à $100$ km/h, il faut :<br>
     $\dfrac{110}{100}\text{h}=\dfrac{11}{10}\text{h}=\dfrac{10}{10}+\dfrac{1}{10}\text{h}=1+\dfrac{1}{10}\text{h}={\color{#F15929}\boldsymbol{1\mathbf{h }06\mathbf{ min}}}$.<br>
     La bonne réponse est la réponse <span class="rep">A</span>.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 74</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 74">
 
 
 
@@ -237,16 +276,31 @@ Pour parcourir $110$ km à $100$ km/h, il faut :<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner l'écriture décimale de $3{,}32 \times 10^{-1}$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $3{,}32 \times 10^{-1} = {\color{#F15929}\mathbf{0{,}332}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -257,16 +311,28 @@ $3{,}32 \times 10^{-1} = {\color{#F15929}\mathbf{0{,}332}}$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Il est indiqué sur la bouteille de nettoyant pour sol qu'il faut  $48$ cL de  nettoyant pour sol pour $6$ L d'eau.<br> On veut utiliser $7$ L d'eau.<br> Quel volume de nettoyant pour sol doit-on prévoir ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Commençons par trouver combien est-ce qu'il faut de nettoyant pour sol pour $1$ L d'eau. <br> 6 L d'eau, c'est ${\color{#216D9A}\boldsymbol{6}}$ fois $1$ L d'eau. Pour $1$ L d'eau, il faut donc ${\color{#216D9A}\boldsymbol{6}}$ fois moins que $48$ cL.<br>$48$ cL $\div {\color{#216D9A}\boldsymbol{6}} = 8$ cL <br> il faut ${\color{#216D9A}\boldsymbol{8}}$ cL de nettoyant pour sol pour $1$ L d'eau. <br> Cherchons maintenant la quantité nécessaire pour $7$ L d'eau. <br> $7$ L d'eau, c'est ${\color{#216D9A}\boldsymbol{7}}$ fois $1$ L d'eau. Il faut donc ${\color{#216D9A}\boldsymbol{7}}$ fois plus de nettoyant pour sol que $8$ cL :<br> ${\color{#216D9A}\boldsymbol{8}}$ cL $\times {\color{#216D9A}\boldsymbol{7}} = 56$ cL<br> il faut prévoir ${\color{#F15929}\boldsymbol{56}}$ cL de  nettoyant pour sol.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -277,16 +343,28 @@ Commençons par trouver combien est-ce qu'il faut de nettoyant pour sol pour $1$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner le nom de chacun des solides.<br><br><br><img src="3autog07_1_17.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Pyramide avec une base ayant $5$ sommets.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -297,9 +375,17 @@ Pyramide avec une base ayant $5$ sommets.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans le parc naturel de Genser, il y a beaucoup d'animaux.<br> Voici un diagramme qui représente les effectifs de quelques espèces.
 
 <br>
@@ -314,8 +400,11 @@ Dans le parc naturel de Genser, il y a beaucoup d'animaux.<br> Voici un diagramm
     
     	$\square\;$ Plus de la moitié des animaux&emsp;&emsp; $\square\;$ La moitié des animaux&emsp;&emsp; $\square\;$ Moins de la moitié des animaux&emsp;&emsp; <br><br><img src="3autop05_1_03.svg" alt="3autop05_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <strong>a.</strong>  L'animal le moins nombreux parmi ces espèces est :  
     
     	$\square\;$ Servals&emsp;&emsp; $\square\;$ Lycaons&emsp;&emsp; $\square\;$ Guépards&emsp;&emsp; $\blacksquare\;$ Zèbres&emsp;&emsp; <br>
@@ -326,17 +415,14 @@ Dans le parc naturel de Genser, il y a beaucoup d'animaux.<br> Voici un diagramm
     
     	$\square\;$ Plus de la moitié des animaux&emsp;&emsp; $\square\;$ La moitié des animaux&emsp;&emsp; $\blacksquare\;$ Moins de la moitié des animaux&emsp;&emsp; <br>
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 75</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 75">
 
 
 
@@ -345,9 +431,20 @@ Dans le parc naturel de Genser, il y a beaucoup d'animaux.<br> Voici un diagramm
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}{|l|c|c|c|c|}
     \hline
     \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
@@ -356,8 +453,11 @@ Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}
     \hline
     \end{array}$$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $$\begin{array}{|l|c|c|c|c|}
     \hline
     \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
@@ -366,7 +466,8 @@ $$\begin{array}{|l|c|c|c|c|}
     \hline
     \end{array}$$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -377,16 +478,28 @@ $$\begin{array}{|l|c|c|c|c|}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur le graphique ci-dessus, on a représenté le prix en euros en fonction de la masse en kilogrammes de bananes achetés.<br>Quel est le prix à payer pour l'achat de $1{,}7$ kg de bananes ?<br><img src="3autop09_5_04.svg" alt="3autop09_5" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le prix à payer pour l'achat de $1{,}7$ kg de bananes est de ${\color{#F15929}\boldsymbol{2{,}20}}$ €.<br><img src="3autop09_5_corr_05.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -397,16 +510,28 @@ Le prix à payer pour l'achat de $1{,}7$ kg de bananes est de ${\color{#F15929}\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $1$ $\ldots$ = $24$ heures
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $1$ <span class="rep">jour</span> = $24$ heures
 </div>
-</div>
+  
+</article>
 
 
 
@@ -417,24 +542,70 @@ $1$ <span class="rep">jour</span> = $24$ heures
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Une élève souhaite réaliser un programme pour dessiner un carré.  
     Par quelles valeurs doit-elle compléter les lignes 3 et 5 ?<br><img src="scratch_3autoi01_06.svg" alt="scratch_3autoi01" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Pour obtenir un carré, il faut répéter ${\color{#F15929}\mathbf{4}}$ fois  
     et tourner de $\dfrac{360}{4} = {\color{#F15929}\mathbf{90}}$ degrés.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-26/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-24/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -285,7 +285,7 @@ pre[style*="background-color"] {
       <div class="eyebrow" style="margin-bottom:14px;">
         Chapitre 14 - Leçon
       </div>
-      <h1 class="lesson-h1">Proportionnalité</h1>
+      <h1 class="lesson-h1" style="color:#D36740;">Proportionnalité</h1>
 
       <div class="full-lesson niveau-6e">
         <h2 class="subsection-title">I. Situation de proportionnalité</h2>

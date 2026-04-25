@@ -1,5 +1,4 @@
 {{ $titre := .Get "titre" }}
-<div class="auto3-seance">
-<div class="auto3-header">{{ $titre }}</div>
+<section class="seance-panel" data-titre="{{ $titre }}">
 {{ .Inner }}
-</div>
+</section>

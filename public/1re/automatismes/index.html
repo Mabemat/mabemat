@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -87,229 +87,378 @@ pre[style*="background-color"] {
 
 
 
-
-
-
-<a class="back-link" href="http://localhost:1313/mabemat/">← Accueil</a>
-
-
-
-
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
   
-    
-    <a class="back-link" href="/mabemat/1re/">← 1ère Spécialité</a>
-    <div class="level-header" style="--lc:#758467;">
-      <div class="bar" style="background:#758467;"></div>
-      <div><h1>Automatismes</h1><p>Entraînement hebdomadaire · 1ère Spécialité</p></div>
-    </div>
-    
-    <div class="auto-index-list">
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-01/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">01</span>
-        <span class="auto-index-title">Semaine 1 — Fonctions, puissances et algèbre</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-02/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">02</span>
-        <span class="auto-index-title">Semaine 2 — Calcul, algèbre et pourcentages</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-03/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">03</span>
-        <span class="auto-index-title">Semaine 3 — Fractions, formules et fonctions affines</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-04/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">04</span>
-        <span class="auto-index-title">Semaine 4 — Puissances, équations et pourcentages</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-05/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">05</span>
-        <span class="auto-index-title">Semaine 5 — Signes, évolutions et calcul</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-06/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">06</span>
-        <span class="auto-index-title">Semaine 6 — Pourcentages, droites et algèbre</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-07/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">07</span>
-        <span class="auto-index-title">Semaine 7 — Fonctions, évolutions et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-08/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">08</span>
-        <span class="auto-index-title">Semaine 8 — Équations, pourcentages et évolutions</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-09/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">09</span>
-        <span class="auto-index-title">Semaine 9 — Équations-produits, évolutions et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-10/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">10</span>
-        <span class="auto-index-title">Semaine 10 — Conversions, variations et fonctions</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-11/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">11</span>
-        <span class="auto-index-title">Semaine 11 — Expressions algébriques et fonctions</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-12/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">12</span>
-        <span class="auto-index-title">Semaine 12 — Équations, suites et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-13/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">13</span>
-        <span class="auto-index-title">Semaine 13 — Algèbre, fonctions et puissances</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-14/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">14</span>
-        <span class="auto-index-title">Semaine 14 — Calculs en contexte et pourcentages</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-15/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">15</span>
-        <span class="auto-index-title">Semaine 15 — Fonctions, variations et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-16/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">16</span>
-        <span class="auto-index-title">Semaine 16 — Puissances, équations et probabilités</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-17/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">17</span>
-        <span class="auto-index-title">Semaine 17 — Calcul, équations et fonctions</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-18/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">18</span>
-        <span class="auto-index-title">Semaine 18 — Calcul en contexte et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-19/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">19</span>
-        <span class="auto-index-title">Semaine 19 — Fractions, algèbre et probabilités</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-20/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">20</span>
-        <span class="auto-index-title">Semaine 20 — Formules, fonctions et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-21/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">21</span>
-        <span class="auto-index-title">Semaine 21 — Probabilités, fonctions et calcul</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-22/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">22</span>
-        <span class="auto-index-title">Semaine 22 — Probabilités et calculs</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-23/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">23</span>
-        <span class="auto-index-title">Semaine 23 — Fonctions, équations et statistiques</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-24/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">24</span>
-        <span class="auto-index-title">Semaine 24 — Droites, probabilités et puissances</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-25/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">25</span>
-        <span class="auto-index-title">Semaine 25 — Probabilités conditionnelles et algèbre</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-26/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">26</span>
-        <span class="auto-index-title">Semaine 26 — Équations, statistiques et probabilités</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/1re/automatismes/semaine-27/" style="--lc:#758467;border-left-color:#758467;">
-        <span class="ch-n">27</span>
-        <span class="auto-index-title">Semaine 27 — Équations, fonctions et pourcentages</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-    </div>
-    
-
+  <a href="/mabemat/1re/">1ère Spécialité</a>
+  <span class="sep">/</span>
   
+  <span>Automatismes</span>
+</div>
+
+<section class="auto-hero fade-up d1">
+  <div class="auto-hero-grid">
+    <div>
+      <h1>Auto<em>matismes</em></h1>
+    </div>
+    <div class="auto-tag">
+      <div class="auto-swatch">
+        <span style="background:var(--accent);"></span>
+        <span style="background:var(--accent-2);"></span>
+      </div>
+      <div>27 semaines</div>
+      <div>année 2025–2026</div>
+    </div>
+  </div>
+  <div class="auto-sub">
+    <div class="col">
+      <h4>Ce qu'on fait</h4>
+      <p>Trois séances courtes par semaine, pour ancrer les réflexes de calcul, de géométrie et de lecture graphique en vue du brevet.</p>
+    </div>
+    <div class="col">
+      <h4>Comment ça marche</h4>
+      <p>Chaque séance propose quatre exercices rapides. L'énoncé s'affiche ; la correction détaillée se déplie d'un clic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="auto-progress fade-up d2">
+  <h2>Les <em>séances</em></h2>
+  <div class="count">
+    <strong>27</strong>
+    semaines publiées
+  </div>
+</section>
 
 
-
-<script>
-(function(){
-  var tabs = document.querySelectorAll('.filter-bar .tabs button');
-  var searchInput = document.getElementById('chap-search');
-  var rows = document.querySelectorAll('#chap-list .chap-row');
-  var activeFilter = '*';
-  var searchQuery = '';
-
-  function applyFilters() {
-    rows.forEach(function(row) {
-      var cat = row.dataset.cat || '';
-      var title = row.querySelector('.chap-title') ? row.querySelector('.chap-title').textContent.toLowerCase() : '';
-      var num = row.querySelector('.chap-num') ? row.querySelector('.chap-num').textContent.trim().replace(/^0+/, '') : '';
-      var matchCat = activeFilter === '*' || cat.split('|').indexOf(activeFilter) !== -1;
-      var matchSearch = !searchQuery || title.indexOf(searchQuery) !== -1 || num === searchQuery.replace(/^0+/, '');
-      row.style.display = (matchCat && matchSearch) ? '' : 'none';
-    });
-  }
-
-  tabs.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      tabs.forEach(function(b){ b.classList.remove('active'); });
-      btn.classList.add('active');
-      activeFilter = btn.dataset.filter;
-      applyFilters();
-    });
-  });
-
-  if (searchInput) {
-    searchInput.addEventListener('input', function() {
-      searchQuery = searchInput.value.trim().toLowerCase();
-      applyFilters();
-    });
-  }
-})();
-</script>
+<div class="weeks-grid fade-up d3">
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-01/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">01</div>
+    <div class="wk-foot">
+      <span>Séances 1–3</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-02/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">02</div>
+    <div class="wk-foot">
+      <span>Séances 4–6</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-03/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">03</div>
+    <div class="wk-foot">
+      <span>Séances 7–9</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-04/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">04</div>
+    <div class="wk-foot">
+      <span>Séances 10–12</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-05/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">05</div>
+    <div class="wk-foot">
+      <span>Séances 13–15</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-06/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">06</div>
+    <div class="wk-foot">
+      <span>Séances 16–18</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-07/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">07</div>
+    <div class="wk-foot">
+      <span>Séances 19–21</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-08/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">08</div>
+    <div class="wk-foot">
+      <span>Séances 22–24</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-09/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">09</div>
+    <div class="wk-foot">
+      <span>Séances 25–27</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-10/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">10</div>
+    <div class="wk-foot">
+      <span>Séances 28–30</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-11/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">11</div>
+    <div class="wk-foot">
+      <span>Séances 31–33</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-12/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">12</div>
+    <div class="wk-foot">
+      <span>Séances 34–36</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-13/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">13</div>
+    <div class="wk-foot">
+      <span>Séances 37–39</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-14/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">14</div>
+    <div class="wk-foot">
+      <span>Séances 40–42</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-15/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">15</div>
+    <div class="wk-foot">
+      <span>Séances 43–45</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-16/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">16</div>
+    <div class="wk-foot">
+      <span>Séances 46–48</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-17/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">17</div>
+    <div class="wk-foot">
+      <span>Séances 49–51</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-18/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">18</div>
+    <div class="wk-foot">
+      <span>Séances 52–54</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-19/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">19</div>
+    <div class="wk-foot">
+      <span>Séances 55–57</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-20/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">20</div>
+    <div class="wk-foot">
+      <span>Séances 58–60</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-21/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">21</div>
+    <div class="wk-foot">
+      <span>Séances 61–63</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-22/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">22</div>
+    <div class="wk-foot">
+      <span>Séances 64–66</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-23/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">23</div>
+    <div class="wk-foot">
+      <span>Séances 67–69</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-24/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">24</div>
+    <div class="wk-foot">
+      <span>Séances 70–72</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-25/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">25</div>
+    <div class="wk-foot">
+      <span>Séances 73–75</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-26/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">26</div>
+    <div class="wk-foot">
+      <span>Séances 76–78</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/1re/automatismes/semaine-27/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">27</div>
+    <div class="wk-foot">
+      <span>Séances 79–81</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+</div>
 
 
     </div>

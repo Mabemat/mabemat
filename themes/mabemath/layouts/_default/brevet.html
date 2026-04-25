@@ -1,36 +1,48 @@
 {{ define "main" }}
-{{ $section   := .Section }}
-{{ $levelData := index .Site.Params.levels $section }}
-{{ $lc        := "" }}
-{{ if $levelData }}{{ $lc = $levelData.color }}{{ end }}
-
-{{ if .Parent }}
-<a class="back-link" href="{{ .Parent.RelPermalink }}">← Retour au chapitre</a>
+{{ $section    := .Section }}
+{{ $levelData  := index .Site.Params.levels $section }}
+{{ $chapterKey := .Params.chapter }}
+{{ $chapterPage := "" }}
+{{ if $chapterKey }}
+  {{ $chapterPage = site.GetPage (printf "/%s/%s" $section $chapterKey) }}
 {{ end }}
 
-<div class="brevet-page niveau-{{ $section }}">
-  <div class="brevet-page-header" style="--lc: {{ $lc }}; border-left-color: {{ $lc }};">
-    <div>
-      <h1 style="color: {{ $lc }};">{{ .Title }}</h1>
-      {{ if .Params.description }}<p class="brevet-page-desc">{{ .Params.description }}</p>{{ end }}
-    </div>
-  </div>
+{{/* Titre affiché : après le " - " s'il existe, sinon le titre brut */}}
+{{ $titleParts   := split .Title " - " }}
+{{ $displayTitle := index $titleParts (sub (len $titleParts) 1) }}
 
-
-  <div class="brevet-content">
-    {{ .Content }}
-  </div>
-
-  <a class="back-link" style="margin-top: 2rem;" href="{{ .Parent.RelPermalink }}">← Retour au chapitre</a>
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  {{ if $chapterPage }}
+  <a href="{{ $chapterPage.RelPermalink }}">{{ $chapterPage.Title }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Exercices type brevet</span>
 </div>
 
-<script>
-function toggleBrevet(btn) {
-  var corr = btn.nextElementSibling;
-  var hidden = corr.style.display === 'none';
-  corr.style.display = hidden ? 'block' : 'none';
-  btn.innerHTML = hidden ? '&#9660; Masquer la correction' : '&#9658; Voir la correction';
-  btn.classList.toggle('brevet-btn--open', hidden);
-}
-</script>
+<section class="br-hero fade-up d1">
+  {{ if $chapterPage }}
+  <div class="eyebrow">{{ $chapterPage.Title }} · Exercices type brevet</div>
+  {{ end }}
+  <h1>{{ $displayTitle }}</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>DNB 2025–2026</span>
+    <span><span class="dot"></span>Corrections détaillées</span>
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  {{ .Content }}
+</div>
+
+{{ if $chapterPage }}
+<div class="br-adjacent fade-up">
+  <a class="adj-link" href="{{ $chapterPage.RelPermalink }}">← Retour au chapitre</a>
+</div>
+{{ end }}
 {{ end }}

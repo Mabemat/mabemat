@@ -378,26 +378,35 @@
      AUTOMATISMES 3e — toggle correction
      ══════════════════════════════════════════════════ */
   window.toggleCorr = function (btn) {
-    var exo = btn.closest('.auto3-exo');
-    if (!exo) return;
-    var corr = exo.querySelector('.auto3-corr');
+    /* Nouveau design : correction = nextElementSibling avec classe .open */
+    var corr = btn.nextElementSibling;
+    /* Fallback ancien design .auto3-exo / .auto3-corr */
+    if (!corr || (!corr.classList.contains('exo-corr') && !corr.classList.contains('corr-box'))) {
+      var exo = btn.closest('.auto3-exo');
+      if (exo) corr = exo.querySelector('.auto3-corr');
+    }
     if (!corr) return;
-    var visible = corr.style.display !== 'none';
-    if (visible) {
-      corr.style.display = 'none';
-      btn.innerHTML = '&#9658; Voir la correction';
+
+    var open = corr.classList.toggle('open');
+    btn.classList.toggle('open', open);
+
+    /* Mettre a jour le libelle du bouton */
+    var lbl = btn.querySelector('.lbl');
+    if (lbl) {
+      lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
     } else {
-      corr.style.display = 'block';
-      btn.innerHTML = '&#9660; Masquer la correction';
-      if (window.renderMathInElement) {
-        renderMathInElement(corr, {
-          delimiters: [
-            { left: '$$', right: '$$', display: true },
-            { left: '$', right: '$', display: false }
-          ],
-          throwOnError: false
-        });
-      }
+      btn.innerHTML = open ? '&#9660; Masquer la correction' : '&#9658; Voir la correction';
+    }
+
+    /* Rendre le KaTeX si la correction vient d'etre ouverte */
+    if (open && window.renderMathInElement) {
+      renderMathInElement(corr, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false }
+        ],
+        throwOnError: false
+      });
     }
   };
 

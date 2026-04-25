@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -87,247 +87,414 @@ pre[style*="background-color"] {
 
 
 
-
-
-
-<a class="back-link" href="http://localhost:1313/mabemat/">← Accueil</a>
-
-
-
-
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
   
-    
-    <a class="back-link" href="/mabemat/3e/">← 3ème</a>
-    <div class="level-header" style="--lc:#8B3C52;">
-      <div class="bar" style="background:#8B3C52;"></div>
-      <div><h1>Automatismes</h1><p>Entraînement hebdomadaire · 3ème</p></div>
-    </div>
-    
-    <div class="auto-index-list">
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-01/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">01</span>
-        <span class="auto-index-title">Semaine 1 - Séances 1 à 3</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-02/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">02</span>
-        <span class="auto-index-title">Semaine 2 - Séances 4 à 6</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-03/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">03</span>
-        <span class="auto-index-title">Semaine 3 - Séances 7 à 9</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-04/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">04</span>
-        <span class="auto-index-title">Semaine 4 - Séances 10 à 12</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-05/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">05</span>
-        <span class="auto-index-title">Semaine 5 - Séances 13 à 15</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-06/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">06</span>
-        <span class="auto-index-title">Semaine 6 - Séances 16 à 18</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-07/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">07</span>
-        <span class="auto-index-title">Semaine 7 - Séances 19 à 21</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-08/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">08</span>
-        <span class="auto-index-title">Semaine 8 - Séances 22 à 24</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-09/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">09</span>
-        <span class="auto-index-title">Semaine 9 - Séances 25 à 27</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-10/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">10</span>
-        <span class="auto-index-title">Semaine 10 - Séances 28 à 30</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-11/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">11</span>
-        <span class="auto-index-title">Semaine 11 - Séances 31 à 33</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-12/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">12</span>
-        <span class="auto-index-title">Semaine 12 - Séances 34 à 36</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-13/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">13</span>
-        <span class="auto-index-title">Semaine 13 - Séances 37 à 39</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-14/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">14</span>
-        <span class="auto-index-title">Semaine 14 - Séances 40 à 42</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-15/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">15</span>
-        <span class="auto-index-title">Semaine 15 - Séances 43 à 45</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-16/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">16</span>
-        <span class="auto-index-title">Semaine 16 - Séances 46 à 48</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-17/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">17</span>
-        <span class="auto-index-title">Semaine 17 - Séances 49 à 51</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-18/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">18</span>
-        <span class="auto-index-title">Semaine 18 - Séances 52 à 54</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-19/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">19</span>
-        <span class="auto-index-title">Semaine 19 - Séances 55 à 57</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-20/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">20</span>
-        <span class="auto-index-title">Semaine 20 - Séances 58 à 60</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-21/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">21</span>
-        <span class="auto-index-title">Semaine 21 - Séances 61 à 63</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-22/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">22</span>
-        <span class="auto-index-title">Semaine 22 - Séances 64 à 66</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-23/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">23</span>
-        <span class="auto-index-title">Semaine 23 - Séances 67 à 69</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-24/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">24</span>
-        <span class="auto-index-title">Semaine 24 - Séances 70 à 72</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-25/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">25</span>
-        <span class="auto-index-title">Semaine 25 - Séances 73 à 75</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-26/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">26</span>
-        <span class="auto-index-title">Semaine 26 - Séances 76 à 78</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-27/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">27</span>
-        <span class="auto-index-title">Semaine 27 - Séances 79 à 81</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-28/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">28</span>
-        <span class="auto-index-title">Semaine 28 - Séances 82 à 84</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-29/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">29</span>
-        <span class="auto-index-title">Semaine 29 - Séances 85 à 87</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-      <a class="auto-index-item" href="/mabemat/3e/automatismes/semaine-30/" style="--lc:#8B3C52;border-left-color:#8B3C52;">
-        <span class="ch-n">30</span>
-        <span class="auto-index-title">Semaine 30 - Séances 88 à 90</span>
-        <span class="auto-index-arrow">→</span>
-      </a>
-      
-    </div>
-    
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
+  <span>Automatismes</span>
+</div>
+
+<section class="auto-hero fade-up d1">
+  <div class="auto-hero-grid">
+    <div>
+      <h1>Auto<em>matismes</em></h1>
+    </div>
+    <div class="auto-tag">
+      <div class="auto-swatch">
+        <span style="background:var(--accent);"></span>
+        <span style="background:var(--accent-2);"></span>
+      </div>
+      <div>30 semaines</div>
+      <div>année 2025–2026</div>
+    </div>
+  </div>
+  <div class="auto-sub">
+    <div class="col">
+      <h4>Ce qu'on fait</h4>
+      <p>Trois séances courtes par semaine, pour ancrer les réflexes de calcul, de géométrie et de lecture graphique en vue du brevet.</p>
+    </div>
+    <div class="col">
+      <h4>Comment ça marche</h4>
+      <p>Chaque séance propose quatre exercices rapides. L'énoncé s'affiche ; la correction détaillée se déplie d'un clic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="auto-progress fade-up d2">
+  <h2>Les <em>séances</em></h2>
+  <div class="count">
+    <strong>30</strong>
+    semaines publiées
+  </div>
+</section>
 
 
-
-<script>
-(function(){
-  var tabs = document.querySelectorAll('.filter-bar .tabs button');
-  var searchInput = document.getElementById('chap-search');
-  var rows = document.querySelectorAll('#chap-list .chap-row');
-  var activeFilter = '*';
-  var searchQuery = '';
-
-  function applyFilters() {
-    rows.forEach(function(row) {
-      var cat = row.dataset.cat || '';
-      var title = row.querySelector('.chap-title') ? row.querySelector('.chap-title').textContent.toLowerCase() : '';
-      var num = row.querySelector('.chap-num') ? row.querySelector('.chap-num').textContent.trim().replace(/^0+/, '') : '';
-      var matchCat = activeFilter === '*' || cat.split('|').indexOf(activeFilter) !== -1;
-      var matchSearch = !searchQuery || title.indexOf(searchQuery) !== -1 || num === searchQuery.replace(/^0+/, '');
-      row.style.display = (matchCat && matchSearch) ? '' : 'none';
-    });
-  }
-
-  tabs.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      tabs.forEach(function(b){ b.classList.remove('active'); });
-      btn.classList.add('active');
-      activeFilter = btn.dataset.filter;
-      applyFilters();
-    });
-  });
-
-  if (searchInput) {
-    searchInput.addEventListener('input', function() {
-      searchQuery = searchInput.value.trim().toLowerCase();
-      applyFilters();
-    });
-  }
-})();
-</script>
+<div class="weeks-grid fade-up d3">
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-01/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">01</div>
+    <div class="wk-foot">
+      <span>Séances 1–3</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-02/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">02</div>
+    <div class="wk-foot">
+      <span>Séances 4–6</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-03/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">03</div>
+    <div class="wk-foot">
+      <span>Séances 7–9</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-04/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">04</div>
+    <div class="wk-foot">
+      <span>Séances 10–12</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-05/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">05</div>
+    <div class="wk-foot">
+      <span>Séances 13–15</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-06/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">06</div>
+    <div class="wk-foot">
+      <span>Séances 16–18</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-07/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">07</div>
+    <div class="wk-foot">
+      <span>Séances 19–21</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-08/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">08</div>
+    <div class="wk-foot">
+      <span>Séances 22–24</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-09/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">09</div>
+    <div class="wk-foot">
+      <span>Séances 25–27</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-10/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">10</div>
+    <div class="wk-foot">
+      <span>Séances 28–30</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-11/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">11</div>
+    <div class="wk-foot">
+      <span>Séances 31–33</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-12/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">12</div>
+    <div class="wk-foot">
+      <span>Séances 34–36</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-13/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">13</div>
+    <div class="wk-foot">
+      <span>Séances 37–39</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-14/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">14</div>
+    <div class="wk-foot">
+      <span>Séances 40–42</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-15/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">15</div>
+    <div class="wk-foot">
+      <span>Séances 43–45</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-16/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">16</div>
+    <div class="wk-foot">
+      <span>Séances 46–48</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-17/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">17</div>
+    <div class="wk-foot">
+      <span>Séances 49–51</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-18/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">18</div>
+    <div class="wk-foot">
+      <span>Séances 52–54</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-19/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">19</div>
+    <div class="wk-foot">
+      <span>Séances 55–57</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-20/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">20</div>
+    <div class="wk-foot">
+      <span>Séances 58–60</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-21/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">21</div>
+    <div class="wk-foot">
+      <span>Séances 61–63</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-22/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">22</div>
+    <div class="wk-foot">
+      <span>Séances 64–66</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-23/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">23</div>
+    <div class="wk-foot">
+      <span>Séances 67–69</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-24/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">24</div>
+    <div class="wk-foot">
+      <span>Séances 70–72</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-25/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">25</div>
+    <div class="wk-foot">
+      <span>Séances 73–75</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-26/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">26</div>
+    <div class="wk-foot">
+      <span>Séances 76–78</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-27/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">27</div>
+    <div class="wk-foot">
+      <span>Séances 79–81</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-28/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">28</div>
+    <div class="wk-foot">
+      <span>Séances 82–84</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-29/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">29</div>
+    <div class="wk-foot">
+      <span>Séances 85–87</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+  
+  
+  
+  <a class="week-card" href="/mabemat/3e/automatismes/semaine-30/">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">30</div>
+    <div class="wk-foot">
+      <span>Séances 88–90</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  
+</div>
 
 
     </div>

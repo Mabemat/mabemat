@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 9 - Séances 25 à 27</span>
+  <span>Semaine 9</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>9</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 9 - Séances 25 à 27</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 25</div>
+<section class="seance-panel" data-titre="Séance 25">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le carré de $8$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $8^2={\color{#F15929}\boldsymbol{64}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,16 +159,28 @@ $8^2={\color{#F15929}\boldsymbol{64}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur le graphique ci-dessus, on a représenté le prix en euros en fonction de la masse en kilogrammes d'ananas achetés.<br>Quel est le prix à payer pour l'achat de $1{,}5$ kg d'ananas ?<br><img src="3autop09_5_01.svg" alt="3autop09_5" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le prix à payer pour l'achat de $1{,}5$ kg d'ananas est de ${\color{#F15929}\boldsymbol{3{,}90}}$ €.<br><img src="3autop09_5_corr_02.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -172,16 +191,28 @@ Le prix à payer pour l'achat de $1{,}5$ kg d'ananas est de ${\color{#F15929}\bo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Convertir $1\,472\,\text{h}$  en semaines, jours et heures.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $1\,472\,\text{h} = (61\times24\,\text{h}) + 8\,\text{h} = 61\,\text{j}\,8\,\text{h} = (8\times7\,\text{j}) + 5\,\text{j} + 8\,\text{h} = {\color{#F15929}\boldsymbol{8\,\mathbf{semaines}\,5\,\mathbf{j}\,8\,\mathbf{h}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -192,9 +223,17 @@ $1\,472\,\text{h} = (61\times24\,\text{h}) + 8\,\text{h} = 61\,\text{j}\,8\,\tex
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans une collection comptant 250 disques, on a noté leur style de musique.<br>On a consigné les résultats dans le tableau suivant :<br>
  
 $$\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
@@ -210,8 +249,11 @@ $$\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
 <strong>a.</strong> Déterminer l'effectif manquant.<br>
 <strong>b.</strong> Déterminer les fréquences pour chaque style de musique (en pourcentage, arrondir au dixième si besoin).<br>
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <strong>a.</strong> L'effectif manquant est celui du soul. Soit $e$ cet effectif.<br>$e=250-( 18 + 7 + 16 + 5 + 42 + 56 + 34 + 38 )$<br>$e=250-216$<br>$e={\color{#F15929}\boldsymbol{34}}$<br>
 <strong>b.</strong> Calculs des fréquences.<br>On rappelle que pour la fréquence relative à une valeur est donnée par le quotient : $\dfrac{\text{effectif de la valeur}}{\text{effectif total}}$<br>
 
@@ -232,17 +274,14 @@ $$ \def\arraystretch{2}
  $$
 <br>
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 26</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 26">
 
 
 
@@ -251,9 +290,20 @@ $$ \def\arraystretch{2}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans chaque colonne de ce tableau, il y a un unique nombre exprimé sous 3 formes différentes.<br>Compléter ce tableau.<br>
 $$\def\arraystretch{2}
     \begin{array}{|c|c|c|c|c|c|c|}
@@ -267,8 +317,11 @@ $$\def\arraystretch{2}
     \end{array}
     $$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $$\def\arraystretch{2}
     \begin{array}{|c|c|c|c|c|c|c|}
     \hline
@@ -293,7 +346,8 @@ $$\def\arraystretch{2}
     \end{array}
     $$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -304,16 +358,28 @@ $$\def\arraystretch{2}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $c$ étant un nombre entier, exprimer l'entier précédent en fonction de $c$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le prédécesseur de $c$ peut se noter : ${\color{#F15929}\boldsymbol{c-1}}$ ou ${\color{#F15929}\boldsymbol{c+(-1)}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -324,16 +390,28 @@ Le prédécesseur de $c$ peut se noter : ${\color{#F15929}\boldsymbol{c-1}}$ ou 
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer les coordonnées respectives des points $F$, $C$, $D$, $G$ et $E$<br><br><img src="3autog01_2_03.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les coordonnées respectives des points sont :<br> $F({\color{#F15929}\boldsymbol{-3}};{\color{#F15929}\boldsymbol{-4}})$, $C({\color{#F15929}\boldsymbol{-4}};{\color{#F15929}\boldsymbol{-3}})$, $D({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{0}})$, $G({\color{#F15929}\boldsymbol{-4}};{\color{#F15929}\boldsymbol{2}})$ et $E({\color{#F15929}\boldsymbol{-2}};{\color{#F15929}\boldsymbol{-1}})$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -344,30 +422,38 @@ Les coordonnées respectives des points sont :<br> $F({\color{#F15929}\boldsymbo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Le graphique ci-dessous donne l’évolution de la température (en degrés Celsius) en
 fonction de l’horaire (en heures).<br>
 Entre $4$h et $12$h, de combien de degrés la température a-t-elle augmenté ?<br>
 <br><br><img src="3autop05_04.svg" alt="3autop05" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 D’après le graphique, à $4$h, la température est de $10$$^\circ$ C et à $12$h, elle est de $27{,}5$$^\circ$ C.<br>
     L’augmentation de la température entre $4$h et $12$h est donc de : $27{,}5-10={\color{#F15929}\boldsymbol{17{,}5}}$$^\circ$ C.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 27</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 27">
 
 
 
@@ -376,16 +462,31 @@ D’après le graphique, à $4$h, la température est de $10$$^\circ$ C et à $1
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer.<br>$ (+3)  \times (-10)$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $ {\color{blue}\boldsymbol{(+3)}} \times {\color{#008002}\boldsymbol{(-10)}}  = {\color{#f15929}\boldsymbol{(-30)}} $
 </div>
-</div>
+  
+</article>
 
 
 
@@ -396,16 +497,28 @@ $ {\color{blue}\boldsymbol{(+3)}} \times {\color{#008002}\boldsymbol{(-10)}}  = 
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Résoudre l'équation suivante : $\dfrac{x}{10}=13$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\dfrac{x}{10}=13$<br>$\dfrac{x}{10}{\color{blue}\boldsymbol{\times\,10}}=13{\color{blue}\boldsymbol{\times\,10}}$<br>$x=130$<br> La solution de l'équation $\dfrac{x}{10}=13$ est ${\color{#F15929}\boldsymbol{130}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -416,20 +529,32 @@ $\dfrac{x}{10}=13$<br>$\dfrac{x}{10}{\color{blue}\boldsymbol{\times\,10}}=13{\co
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>
             L'angle $\widehat{xOy}$ mesure $76^\circ$ et l'angle $\widehat{yOz}$ mesure $104^\circ$.<br>
             Que sont-ils l'un pour l'autre ? <br>
     
     	$\square\;$ complémentaires&emsp;&emsp; $\square\;$ supplémentaires&emsp;&emsp; $\square\;$ ni l'un, ni l'autre&emsp;&emsp; <br>
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\widehat{xOy}+\widehat{yOz}=76^\circ+104^\circ=180^\circ$.<br>Les deux angles sont supplémentaires car leurs côtés non communs forment un angle plat.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -440,9 +565,17 @@ $\widehat{xOy}+\widehat{yOz}=76^\circ+104^\circ=180^\circ$.<br>Les deux angles s
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
 <div style="display:flex; justify-content:space-between; gap:1rem; text-align:center;">
 
@@ -470,17 +603,55 @@ Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
 
 <br><img src="scratch_3autoi01_1_05.svg" alt="scratch_3autoi01_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
     Figure 2
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-10/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-08/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

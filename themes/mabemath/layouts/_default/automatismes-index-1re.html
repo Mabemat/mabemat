@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Automatismes</span>
+</div>
+
+<section class="auto-hero fade-up d1">
+  <div class="auto-hero-grid">
+    <div>
+      <h1>Auto<em>matismes</em></h1>
+    </div>
+    <div class="auto-tag">
+      <div class="auto-swatch">
+        <span style="background:var(--accent);"></span>
+        <span style="background:var(--accent-2);"></span>
+      </div>
+      <div>{{ len .Pages }} semaines</div>
+      <div>année 2025–2026</div>
+    </div>
+  </div>
+  <div class="auto-sub">
+    <div class="col">
+      <h4>Ce qu'on fait</h4>
+      <p>Chaque semaine, une séance de QCM pour ancrer les réflexes : fonctions, algèbre, dérivées, suites, probabilités — toute la mécanique du programme de Première.</p>
+    </div>
+    <div class="col">
+      <h4>Comment ça marche</h4>
+      <p>Six questions à choix multiples en séance, puis six autres en devoir maison. La correction détaillée se déplie d'un clic, question par question.</p>
+    </div>
+  </div>
+</section>
+
+<section class="auto-progress fade-up d2">
+  <h2>Les <em>semaines</em></h2>
+  <div class="count">
+    <strong>{{ len .Pages }}</strong>
+    semaines publiées
+  </div>
+</section>
+
+{{ if .Pages }}
+<div class="weeks-grid fade-up d3">
+  {{ range $i, $p := .Pages.ByWeight }}
+  {{ $n := $p.Params.auto_number | default 0 }}
+  {{ $theme := "" }}
+  {{ $rawTitle := $p.Title }}
+  {{ if strings.Contains $rawTitle " — " }}
+    {{ $parts := split $rawTitle " — " }}
+    {{ $theme = index $parts 1 }}
+  {{ else if strings.Contains $rawTitle " - " }}
+    {{ $parts := split $rawTitle " - " }}
+    {{ $theme = index $parts 1 }}
+  {{ end }}
+  {{ $shortTheme := $theme }}
+  {{ if gt (len $theme) 22 }}{{ $shortTheme = printf "%s…" (substr $theme 0 20) }}{{ end }}
+  <a class="week-card{{ if eq $i 0 }} featured{{ end }}" href="{{ $p.RelPermalink }}">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">{{ printf "%02d" $n }}</div>
+    <div class="wk-foot">
+      <span>{{ $shortTheme }}</span>
+      <span class="dots"><span></span><span></span></span>
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<div class="empty-state" style="padding: 60px 0; color: var(--ink-3); font-family: var(--font-mono); font-size: 13px;">
+  Les séances seront disponibles prochainement.
+</div>
+{{ end }}
+{{ end }}

@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 16 - Séances 46 à 48</span>
+  <span>Semaine 16</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>16</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 16 - Séances 46 à 48</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 46</div>
+<section class="seance-panel" data-titre="Séance 46">
 
 
 
@@ -132,17 +127,29 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Effectuer le calcul suivant en donnant le résultat sous forme d'une fraction. <br>
 $B = \dfrac{7}{5} \times \dfrac{3}{4}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $B = \dfrac{7}{5} \times \dfrac{3}{4}$<br>$B =$ ${\color{#F15929}\boldsymbol{ \dfrac{21}{20}}}$<br>
 </div>
-</div>
+  
+</article>
 
 
 
@@ -153,16 +160,28 @@ $B = \dfrac{7}{5} \times \dfrac{3}{4}$<br>$B =$ ${\color{#F15929}\boldsymbol{ \d
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Factoriser :  $B=55k-66k^2$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $B=55k-66k^2$<br>$\phantom{B}=11k\times5-11k\times6k$<br>$\phantom{B}=$ ${\color{#F15929}\boldsymbol{11k(5-6k)}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -173,16 +192,28 @@ $B=55k-66k^2$<br>$\phantom{B}=11k\times5-11k\times6k$<br>$\phantom{B}=$ ${\color
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer les coordonnées respectives des points $O$, $P$, $Q$ et $N$<br><img src="3autog01_2_01.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les coordonnées respectives des points sont :<br> $O({\color{#F15929}\boldsymbol{-1{,}5}};{\color{#F15929}\boldsymbol{0}})$, $P({\color{#F15929}\boldsymbol{-0{,}5}};{\color{#F15929}\boldsymbol{3{,}5}})$, $Q({\color{#F15929}\boldsymbol{2}};{\color{#F15929}\boldsymbol{-3}})$ et $N({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{4}})$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -193,13 +224,24 @@ Les coordonnées respectives des points sont :<br> $O({\color{#F15929}\boldsymbo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer la valeur exacte de $VW$.<br><img src="3autog11_2_02.svg" alt="3autog11_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On utilise le théorème de Pythagore dans le triangle $UVW$,  rectangle en $V$.<br>
       On obtient :
 
@@ -219,17 +261,14 @@ On utilise le théorème de Pythagore dans le triangle $UVW$,  rectangle en $V$.
     Cette différence vaut $49-25=24$. <br>
     La valeur cherchée est donc : $\sqrt{24}=2\sqrt{6}$.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 47</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 47">
 
 
 
@@ -238,16 +277,31 @@ On utilise le théorème de Pythagore dans le triangle $UVW$,  rectangle en $V$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer.<br>$ (-10) + (-6) $
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $  {\color{#008002}\boldsymbol{(-10)}} + {\color{#008002}\boldsymbol{(-6)}} = {\color{#f15929}\boldsymbol{(-16)}} $
 </div>
-</div>
+  
+</article>
 
 
 
@@ -258,16 +312,28 @@ $  {\color{#008002}\boldsymbol{(-10)}} + {\color{#008002}\boldsymbol{(-6)}} = {\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Résoudre l'équation suivante : $5z+6=-8z+9$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $5z+6=-8z+9$<br>$5z+6{\color{blue}\boldsymbol{\,\,+\,\,8z}}=-8z+9{\color{blue}\boldsymbol{\,\,+\,\,8z}}$<br>$13z+6=9$<br>$13z+6{\color{blue}\boldsymbol{\,\,-\,\,6}}=9{\color{blue}\boldsymbol{\,\,-\,\,6}}$<br>$13z=3$<br>$13z{\color{blue}\boldsymbol{\,\div\,13}}=3{\color{blue}\boldsymbol{\,\div\,13}}$<br>$z=\dfrac{3}{13}$<br> La solution de l'équation $5z+6=-8z+9$ est ${\color{#F15929}\boldsymbol{\dfrac{3}{13}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -278,16 +344,28 @@ $5z+6=-8z+9$<br>$5z+6{\color{blue}\boldsymbol{\,\,+\,\,8z}}=-8z+9{\color{blue}\b
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Préciser s'il s'agit d'un parallélogramme.<br>$(JK) // (LM)$<br><img src="3autog02_2_03.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $JKLM$ a deux côtés opposés parallèles, ${\color{#F15929}\boldsymbol{JKLM}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un trapèze).<br><img src="3autog02_2_corr_04.svg" alt="3autog02_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -298,15 +376,26 @@ $JKLM$ a deux côtés opposés parallèles, ${\color{#F15929}\boldsymbol{JKLM}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur la figure suivante : 
         <br> $\leadsto J$ est sur $[IG]$,
         <br> $\leadsto K$ est sur $[IH]$,<br> $\leadsto$ les droites $(GH)$ et $(JK)$ sont parallèles.<br>Écrire la double égalité de Thalès.<br><img src="3autog12_1_05.svg" alt="3autog12_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $GHI$ :
        <br> $\leadsto$ $J\in[IG]$,
        <br> $\leadsto$ $K\in[IH]$,
@@ -316,17 +405,14 @@ Dans le triangle $GHI$ :
 <br>
 $\dfrac{IJ}{IG}=\dfrac{IK}{IH}=\dfrac{JK}{GH}$<br><strong>Remarque</strong><br>On pourrait aussi écrire : $\dfrac{IG}{IJ}=\dfrac{IH}{IK}=\dfrac{GH}{JK}$
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 48</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 48">
 
 
 
@@ -335,14 +421,28 @@ $\dfrac{IJ}{IG}=\dfrac{IK}{IH}=\dfrac{JK}{GH}$<br><strong>Remarque</strong><br>O
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans une association, $25\%$ des 150 membres participent à une olympiade de mathématiques.<br>
     Combien de membres ne participent pas à cette olympiade ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le nombre de membres participant à cette olympiade est égal à :<br>
     $150 \times \dfrac{25}{100} = 38$.<br>
     Le nombre de membres ne participant pas à cette olympiade est donc égal à :<br>
@@ -353,7 +453,8 @@ Une autre méthode consiste à calculer le pourcentage de membres ne participant
     Le nombre de membres ne participant pas à cette olympiade est donc égal à :<br>
     $150 \times \dfrac{75}{100} = {\color{#F15929}\boldsymbol{112}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -364,16 +465,28 @@ Une autre méthode consiste à calculer le pourcentage de membres ne participant
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_06.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <img src="3auton15_1_corr_07.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>$\ G $ <span class="rep">$(-3{,}2)$</span> &emsp; $\ H $ <span class="rep">$(-1{,}2)$</span> &emsp; $\ I $ <span class="rep">$(0{,}3)$</span>
 </div>
-</div>
+  
+</article>
 
 
 
@@ -384,21 +497,33 @@ Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_06
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le périmètre du carré $ABCD$ représenté ci-dessous :<br>
 
 <br><img src="equilateral_08.svg" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 	Le polygone a $4$ côtés de longueur $2{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
 $4 \times 2{,}5 = {\color{#F15929}\boldsymbol{10}}$ cm.
 
 </div>
-</div>
+  
+</article>
 
 
 
@@ -409,22 +534,68 @@ $4 \times 2{,}5 = {\color{#F15929}\boldsymbol{10}}$ cm.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans le triangle $GHI$ rectangle en $G$,<br> $HI=11\text{ cm}$ et $\widehat{GHI}=38^\circ$.<br>Calculer $GH$ à $0,1\text{ cm}$ près.<br><img src="3autog13_1_09.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $GHI$ rectangle en $G$,<br> le cosinus de l'angle $\widehat{GHI}$ est défini par :<br>$\cos\left(\widehat{GHI}\right)=\dfrac{GH}{HI}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(38^\circ\right)}{\color{red}{1}}=\dfrac{GH}{11}$<br>$GH=11 \times \cos\left(38^\circ\right)$<br>soit $GH\approx{\color{#F15929}\boldsymbol{8{,}7}}\text{ cm}$.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-17/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-15/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercices type brevet - Probabilités — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/mabemat/css/tokens.css">
+<link rel="stylesheet" href="/mabemat/css/style.css">
+<link rel="stylesheet" href="/mabemat/css/lecon.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position = 'absolute';
+        d.style.display = 'block';
+      }
+    });
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display = '';
+        d.style.visibility = '';
+        d.style.position = '';
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/chapitre-13-probabilites/">Probabilités</a>
+  <span class="sep">/</span>
+  
+  <span>Exercices type brevet</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  
+  <div class="eyebrow">Probabilités · Exercices type brevet</div>
+  
+  <h1>Probabilités</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>DNB 2025–2026</span>
+    <span><span class="dot"></span>Corrections détaillées</span>
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Décembre 2013 Nouvelle Calédonie
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><br><br>
+ 
+Un restaurant propose cinq variétés de pizzas, voici leur carte :
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:none"><strong>CLASSIQUE :</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:none;border-right:1px solid #8B3C52">tomate, jambon, oeuf, champignons</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:none"><strong>MONTAGNARDE :</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:none;border-right:1px solid #8B3C52">crème, jambon, pomme de terre, champignons</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:none"><strong>LAGON :</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:none;border-right:1px solid #8B3C52">crème, crevettes, fromage</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:none"><strong>BROUSSARDE :</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:none;border-right:1px solid #8B3C52">crème, chorizo, champignons, salami</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:none"><strong>PLAGE :</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:none;border-right:1px solid #8B3C52">tomate, poivrons, chorizo</td>
+</tr>
+</table></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Je commande une pizza au hasard, quelle est la probabilité qu'il y ait des champignons dedans ?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Sur les cinq variétés trois contiennent des champignons ; la probabilité est donc égale à $\dfrac{3}{5} = \dfrac{6}{10} = 0,6$.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        J'ai commandé une pizza à la crème, quelle est la probabilité d'avoir du jambon?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Sur les trois variété à la crème, une seule contient du jambon : la probabilité est donc égale à $\dfrac{1}{3}$.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Il est possible de commander une grande pizza composée à moitié d'une variété et à moitié d'une autre. Quelle est la probabilité d'avoir des champignons sur toute la pizza ? On pourra s'aider d'un arbre des possibles.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">&nbsp;
+
+	m*
+	l
+	b*
+	p
+	
+
+	c*
+	l
+	b*
+	p
+	
+
+	c*
+	m*
+	b
+	p
+	
+
+	c*
+	m*
+	l
+	p
+	
+
+	c*
+	m*
+	l
+	b*
+	
+
+On a marqué d'une étoile les variété qui contiennent des champignons. Sur les $5 \times 4 = 20$ choix possibles il y en a 6  qui contiennent chacune des champignons : la probabilité est donc de $\dfrac{6}{20} = \dfrac{3}{10} = 0,3$.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        On suppose que les pizzas sont de forme circulaire. La pizzeria propose deux tailles :
+
+8mm 
+<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>moyenne : 30&nbsp;cm de diamètre</li><li>grande  : 44&nbsp;cm de diamètre.</li></ul>
+0mm 
+ 
+Si je commande deux pizzas moyennes, aurai-je plus à manger que si j'en commande une grande ? Justifier la réponse.
+
+<br><br>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Aire de deux moyennes : $2 \times \pi \times 15^2 = 450\pi$.
+
+Aire d'une grande $\pi \times 22^2 = 484\pi$. La grande donne plus à manger que deux moyennes.
+
+<br><br></div>
+        
+
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Juin 2014 Polynésie
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><br>
+
+On place des boules toutes indiscernables au toucher dans un sac. Sur chaque boule colorée est inscrite une lettre. Le tableau suivant présente la répartition des boules :
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">LettreCouleur</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Rouge</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Vert</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Bleu</td>
+</tr>
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">A</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">5</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
+</tr>
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">B</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">6</td>
+</tr>
+</table></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Combien y a-t-il de boules dans le sac ?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Il y a :
+
+$3 + 5 + 2 + 2 + 2 + 6 = 20$ boules dans le sac.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        On tire une boule au hasard, on note sa couleur et sa lettre.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Vérifier qu'il y a une chance sur dix de tirer une boule bleue portant la lettre A.</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a 2 boules bleues portant la lettre A sur les 20, la probabilité est donc égale à 
+
+$\dfrac{2}{20} = \dfrac{1}{10} = 0,1$.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Quelle est la probabilité de tirer une boule rouge ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a 5 boules rouges, donc la probabilité est égale à $\dfrac{5}{20} = \dfrac{1}{4}$.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">c.</span>
+            <div>
+              <div class="sub-enonce">A-t-on autant de chance de tirer une boule portant la lettre A que de tirer une boule portant la lettre B ?
+<br><br></div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a 10 boules portant la lettre A et donc autant portant la lettre B. On a donc effectivement autant de chance de tirer une boule portant la lettre A que de tirer une boule portant la lettre B.
+
+<br><br></div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Juin 2013 Amérique du Nord
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><br>
+
+Caroline souhaite s'équiper pour faire du roller.
+ 
+Elle a le choix entre une paire de rollers gris à 87&nbsp;€ ? et une paire de rollers noirs à 99&nbsp;€.
+ 
+Elle doit aussi acheter un casque et hésite entre trois modèles qui coûtent respectivement 45&nbsp;€, 22&nbsp;€ et 29&nbsp;€.
+
+<br></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Si elle choisit son équipement (un casque et une paire de rollers) au hasard, quelle est la probabilité pour que l'ensemble lui coûte moins de 130&nbsp;€?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">&nbsp;
+
+	45 $\to$ 132
+	22   $\to$ 109
+	29 $\to$ 116
+	
+
+	45  $\to$ 144
+	22  $\to$ 121
+	29  $\to$ 128
+	
+
+Sur les six possibilités quatre reviennent à moins de 130&nbsp;€. La probabilité est donc égale à : $\dfrac{4}{6} = \dfrac{2}{3}$.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Elle s'aperçoit qu'en achetant la paire de rollers noirs et le casque à 45&nbsp;€, elle bénéficie d'une réduction de 20&thinsp;% sur l'ensemble.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Calculer le prix en euros et centimes de cet ensemble après réduction.</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Avoir 20&thinsp;% de réduction c'est payer 80&thinsp;% du prix initial soit : 
+
+$0,80 \times 144 = 115,20$&nbsp;€.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Cela modifie-t-il la probabilité obtenue à la question 1 ? Justifier la réponse.
+<br><br></div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Avec cette réduction le prix passe en dessous de 130&nbsp;€ ; la probabilité est donc maintenant égale à  $\dfrac{5}{6}$.
+
+<br><br></div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2013 Métropole
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><br>
+
+Tom lance cinquante fois deux dés à six faces parfaitement équilibrés. Il note dans une feuille de calcul les sommes obtenues à chaque lancer. Il obtient le tableau suivant : 
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2|c|B3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">13l|=B2/M2</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">A</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">B</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">C</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">D</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">E</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">F</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">G</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">H</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">I</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">J</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">K</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">L</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">M</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">N</td>
+</tr>
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">somme obtenue</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">4</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">5</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">6</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">7</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">8</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">9</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">10</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">11</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">12</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">total</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">nombre d'apparitions</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">4</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">6</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">9</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">9</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">7</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">5</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">0</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">50</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">3</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">fréquence d'apparition</td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">0,06</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:center;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+</table></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Quelle formule a-t-il saisie dans la cellule M2 pour vérifier qu'il a bien relevé 50 résultats?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">=SOMME(B2:L2)</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Tom a saisi dans la cellule B3 la formule $<div class="brevet-fbox">=B2/M2</div>$. Il obtient un message d'erreur quand il la tire dans la cellule C3. Pourquoi ?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Il devrait avoir dans C3 : B3/M3 ; or il y a 0 dans M3 et la division par 0 n'existe pas.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Tom déduit de la lecture de ce tableau que s'il lance ces deux dés, il n'a aucune chance d'obtenir la somme 12. A-t-il tort ou raison ?
+
+<br><br>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Il a tort car la sortie d'un double 6 est tout à fait possible. Il se trouve que sur les 50 lancers il n'y a pas eu ce tirage.
+
+<br><br></div>
+        
+
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-5">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">05</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Novembre 2013 Amérique du sud
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><br>
+
+Un jeu<sup>1</sup> est constitué des dix étiquettes suivantes toutes identiques au toucher qui sont mélangées dans un sac totalement opaque.
+
+<br><br>
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Deux angles droits seulement</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Quatre angles droits</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+3c&nbsp;</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Côtés égaux deux à deux</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Deux côtés égaux seulement</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+3c&nbsp;</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Quatre côtés égaux</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Côtés opposés parallèles</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3 
+3c&nbsp;</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Deux côtés parallèles seulement</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Diagonales égales</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3 
+3c&nbsp;</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Diagonales qui se coupent en leur milieu</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Diagonales perpendiculaires</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+</table> 
+
+<br><br></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        On choisit au hasard une étiquette parmi les dix.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Quelle est la probabilité de tirer l'étiquette « Diagonales égales » ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a une chance sur dix : $\dfrac{1}{10} = 0,1$.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Quelle est la probabilité de tirer une étiquette sur laquelle est inscrit le mot « diagonales  » ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a trois chances sur dix : $\dfrac{3}{10} = 0,3$.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">c.</span>
+            <div>
+              <div class="sub-enonce">Quelle est la probabilité de tirer une étiquette qui porte à la fois le mot « côtés » et le mot « diagonales  » ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il n'y a aucune étiquette qui comporte les deux mots. La probabilité est nulle.</div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        On choisit cette fois au hasard deux étiquettes parmi les dix et on doit essayer de dessiner un quadrilatère qui a ces deux propriétés.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Madjid tire les deux étiquettes suivantes : 
+		
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Diagonales perpendiculaires</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Diagonales égales</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+</table>
+
+Julie affirme que la figure obtenue est toujours un carré. Madjid a des doutes. Qui a raison ? Justifier la réponse.</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Les diagonales sont perpendiculaires en leur milieu ; chacune est donc la médiatrice de l'autre ; on a donc un losange ; comme les diagonales ont la même longueur c'est aussi un rectangle ; c'est donc un carré : Julie a raison.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Julie tire les deux étiquettes suivantes :
+		 
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Côtés opposés parallèles</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Quatre côtés égaux</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+</table>
+
+Quel type de figure Julie est-elle sûre d'obtenir ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Les côtés opposés sont parallèles : on a un parallélogramme ;
+
+Les quatre côtés ont la même longueur : c'est un losange. On ne peut rien conclure de plus.</div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Lionel tire les deux étiquettes suivantes :
+		 
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3
+Deux côtés égaux seulement</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Quatre angles droits</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1-13-3</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"></td>
+</tr>
+</table>
+
+Lionel est déçu. Expliquer pourquoi. 
+
+<br>
+
+1 D'après « Géométrie à l'Ecole » de François Boule. Savoir dire et savoir-faire, IREM de Bourgogne.
+
+<br><br>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Si le quadrilatère a quatre angles droits, c'est un rectangle ; mais il ne peut avoir alors que deux côtés de même longueur. Un tel quadrilatère n'existe pas. Lionel ne peut rien dessiner.
+
+<br><br></div>
+        
+
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-6">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">06</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Juillet 2019 Métropole
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><br>
+
+On veut réaliser un dessin constitué de deux types
+d'éléments (tirets et carrés) mis bout à bout.<br>
+Chaque script ci-contre trace un élément, et déplace le stylo.<br>
+On rappelle que « s'orienter à 90  » signifie qu'on
+oriente le stylo vers la droite.
+
+<span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span>
+
+<span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        En prenant 1 cm pour 2 pixels, représenter la figure obtenue si on exécute le script Carré.
+
+Préciser les positions de départ et d'arrivée du stylo sur votre figure.
+
+<br>
+
+Pour tracer le dessin complet, on a réalisé 2 scripts qui se servent des blocs « Carré » et « Tiret  ».
+ci-dessus :
+
+Script 1<br> <br> <br> <br>
+
+<span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span>
+
+Script 2<br>
+<span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span>
+
+<br>
+ 
+On exécute les deux scripts et on obtient les deux dessins ci-dessous.
+
+<br>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le script carré trace un carré en traçant 4 fois deux demi-côtés de 5 pixels, donc chaque côté du carré correspond à 10 pixels, donc à 5 cm.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Attribuer à chaque script la figure dessinée. Justifier votre choix.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le script 1 dessine 23 fois un carré suivi d'un tiret, donc le dessin B.
+
+Le script 2 dessine 46 fois de manière aléatoire un carré ou un tiret, donc le dessin A.</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        On exécute le script 2.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Quelle est la probabilité que le premier élément tracé soit un carré ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">En exécutant le script 2, le premier élément tracé est un carré si le nombre aléatoire prend l'un des deux valeurs possible. La probabilité est $0,5$.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Quelle est la probabilité que les deux premiers éléments soient des carrés ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Pour les deux premiers éléments dessinés, il y a 4 possibilités équiprobables :
+		
+carré – carré ; carré – tiret ; tiret – carré ; tiret – tiret.
+
+La probabilité que les deux premiers éléments dessinés soient des carrés est $\dfrac{1}{4}$, soit $0,25$.</div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Dans le script 2, on aimerait que la couleur des différents éléments, tirets ou carrés, soit aléatoire, avec à chaque fois $50$&thinsp;% de chance d'avoir un élément noir et $50$&thinsp;% de chance d'avoir un élément rouge.
+	
+Écrire la suite d'instructions qu'il faut alors créer et préciser où l'insérer dans le script 2.
+	
+<strong>Indication </strong>: on pourra utiliser les instructions <span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span> 
+
+et <span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span> pour choisir la couleur du stylo.
+
+<br><br>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Au niveau de la ligne 7 du script 2, on peut insérer :
+
+si nombre aléatoire entre 1 et 2 = 1 alors mettre la couleur du stylo à rouge
+sinon 
+
+mettre la couleur du stylo à noir.
+
+<br><br></div>
+        
+
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+</div>
+
+
+<div class="br-adjacent fade-up">
+  <a class="adj-link" href="/mabemat/3e/chapitre-13-probabilites/">← Retour au chapitre</a>
+</div>
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+</body>
+</html>

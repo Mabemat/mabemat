@@ -1,43 +1,70 @@
 {{ define "main" }}
 {{ $section := .Section }}
 {{ $levelData := index .Site.Params.levels $section }}
-{{ $sntData := .Site.Params.snt }}
-{{ $lc := "" }}
-{{ $levelLabel := $section | upper }}
-{{ if $levelData }}
-  {{ $lc = $levelData.color }}
-  {{ $levelLabel = $levelData.name }}
-{{ else if $sntData }}
-  {{ $lc = $sntData.color }}
-  {{ $levelLabel = $sntData.name }}
-{{ else }}
-  {{ $lc = "#758467" }}
-{{ end }}
-
-{{ $levelURL := .Parent.RelPermalink }}
+{{ $n := .Params.auto_number | default 0 }}
+{{ $autoIdx := site.GetPage (printf "%s/automatismes" .Section) }}
 
 <div class="crumbs fade-up">
   <a href="{{ .Site.BaseURL }}">Accueil</a>
   <span class="sep">/</span>
-
   {{ if $levelData }}
-    <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
-    <span class="sep">/</span>
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
   {{ end }}
-
-  {{/* Page Automatismes du niveau */}}
-  {{ $auto := site.GetPage (printf "%s/automatismes" .Section) }}
-  {{ if $auto }}
-    <a href="{{ $auto.RelPermalink }}">Automatismes</a>
-    <span class="sep">/</span>
+  {{ if $autoIdx }}
+  <a href="{{ $autoIdx.RelPermalink }}">Automatismes</a>
+  <span class="sep">/</span>
   {{ end }}
-
-  <span>{{ .Title }}</span>
+  <span>Semaine {{ $n }}</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>{{ $n }}</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: {{ $lc }};">{{ .Title }}</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   {{ .Content }}
 </div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    {{ if .PrevInSection }}
+    <a class="adj-link" href="{{ .PrevInSection.RelPermalink }}">← Semaine précédente</a>
+    {{ else if $autoIdx }}
+    <a class="adj-link" href="{{ $autoIdx.RelPermalink }}">← Retour au planning</a>
+    {{ end }}
+  </div>
+  <div>
+    {{ if .NextInSection }}
+    <a class="adj-link" href="{{ .NextInSection.RelPermalink }}">Semaine suivante →</a>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 {{ end }}

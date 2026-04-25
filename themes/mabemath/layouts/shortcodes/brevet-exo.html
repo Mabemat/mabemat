@@ -27,10 +27,8 @@
     {{ if $trimmed }}
 
       {{ if strings.Contains $trimmed "---SUB-Q---" }}
-        {{/* ── Question avec sous-questions ── */}}
         {{ $mainAndSubs := split $trimmed "---SUB-Q---" }}
         {{ $qEnonce := strings.TrimSpace (index $mainAndSubs 0) }}
-
         {{ $subQs := slice }}
         {{ range $si, $spart := after 1 $mainAndSubs }}
           {{ $strimmed := strings.TrimSpace $spart }}
@@ -45,7 +43,6 @@
         {{ $questions = $questions | append (dict "enonce" $qEnonce "corr" "" "sub_questions" $subQs) }}
 
       {{ else }}
-        {{/* ── Question simple ── */}}
         {{ $qparts := split $trimmed "---CORR---" }}
         {{ $enonce := strings.TrimSpace (index $qparts 0) }}
         {{ $corr := "" }}
@@ -57,64 +54,67 @@
   {{ end }}
 {{ end }}
 
-<div class="brevet-exo">
+{{/* ───────────────────────────────────────────────
+     RENDU HTML — nouveau design maquette
+──────────────────────────────────────────────── */}}
 
-  <div class="brevet-exo-header">
-    <span class="brevet-exo-num">Exercice {{ $num }}</span>
+{{ $numFmt := printf "%02d" (int $num) }}
+{{ $letters := slice "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" }}
+
+<article class="exo-brevet" id="exo-{{ $num }}">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">{{ $numFmt }}</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
     {{ if $source }}
-      <span class="brevet-exo-origine">— {{ $source }}</span>
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> {{ $source }}
+    </div>
     {{ end }}
-  </div>
+  </header>
 
   {{ if $intro }}
-  <div class="brevet-exo-intro">{{ $intro | safeHTML }}</div>
+  <div class="exo-intro">{{ $intro | safeHTML }}</div>
   {{ end }}
 
-  {{ $letters := slice "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" }}
+  <ol class="q-list">
+    {{ range $i, $q := $questions }}
+    <li class="q-item">
+      <div class="q-enonce">
+        {{ $q.enonce | safeHTML }}
 
-  {{ range $i, $q := $questions }}
-  {{ $qNum := add $i 1 }}
-  <div class="brevet-q">
+        {{ if $q.corr }}
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">{{ $q.corr | safeHTML }}</div>
+        {{ end }}
 
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">{{ $qNum }}.</span>
-      {{ $q.enonce | safeHTML }}
-    </div>
-
-    {{/* ── Correction question simple ── */}}
-    {{ if $q.corr }}
-    <button class="brevet-btn" onclick="toggleBrevet(this)">
-      &#9658; Voir la correction
-    </button>
-    <div class="brevet-corr" style="display:none">
-      {{ $q.corr | safeHTML }}
-    </div>
-    {{ end }}
-
-    {{/* ── Sous-questions ── */}}
-    {{ if $q.sub_questions }}
-    <div class="brevet-sub-list">
-      {{ range $si, $sq := $q.sub_questions }}
-      {{ $letter := index $letters $si }}
-      <div class="brevet-sub-q">
-        <span class="brevet-sub-num">{{ $letter }}.</span>
-        <div class="brevet-sub-enonce-wrap">
-          <div class="brevet-sub-enonce">{{ $sq.enonce | safeHTML }}</div>
-          {{ if $sq.corr }}
-          <button class="brevet-btn" onclick="toggleBrevet(this)">
-            &#9658; Voir la correction
-          </button>
-          <div class="brevet-corr" style="display:none">
-            {{ $sq.corr | safeHTML }}
+        {{ if $q.sub_questions }}
+        <div class="sub-list">
+          {{ range $si, $sq := $q.sub_questions }}
+          {{ $letter := index $letters $si }}
+          <div class="sub-q">
+            <span class="sub-letter">{{ $letter }}.</span>
+            <div>
+              <div class="sub-enonce">{{ $sq.enonce | safeHTML }}</div>
+              {{ if $sq.corr }}
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">{{ $sq.corr | safeHTML }}</div>
+              {{ end }}
+            </div>
           </div>
           {{ end }}
         </div>
+        {{ end }}
+
       </div>
-      {{ end }}
-    </div>
+    </li>
     {{ end }}
+  </ol>
 
-  </div>
-  {{ end }}
-
-</div>
+</article>

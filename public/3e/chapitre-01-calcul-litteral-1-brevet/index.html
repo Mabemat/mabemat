@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,459 +89,431 @@ pre[style*="background-color"] {
 
 
 
-
-<a class="back-link" href="/mabemat/3e/">← Retour au chapitre</a>
-
-
-<div class="brevet-page niveau-3e">
-  <div class="brevet-page-header" style="--lc: #8B3C52; border-left-color: #8B3C52;">
-    <div>
-      <h1 style="color: #8B3C52;">Exercices type brevet - Calcul littéral (1)</h1>
-      
-    </div>
-  </div>
-
-
-  <div class="brevet-content">
-    
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-    
-    
-  
-    
-    
-
-      
-        
-        
-        
-        
-        
-        
-      
-
-    
-  
-    
-    
-
-      
-        
-        
-        
-
-        
-        
-          
-          
-            
-            
-            
-            
-            
-          
-        
-          
-          
-            
-            
-            
-            
-            
-          
-        
-        
-
-      
-
-    
   
 
 
-<div class="brevet-exo">
 
-  <div class="brevet-exo-header">
-    <span class="brevet-exo-num">Exercice 1</span>
-    
-      <span class="brevet-exo-origine">— DNB Janvier 2026 Sujet 0 Version A</span>
-    
-  </div>
 
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
   
-  <div class="brevet-exo-intro"><br>
-
-On donne un programme de calcul :
-
-pspicture(-3,0)(3,4.2)
-
-(0,4)<div class="brevet-fbox">choisir un nombre</div>[linewidth=1.5pt]->(0,3.7)(0,3.2)
-(0,3)<div class="brevet-fbox">le multiplier par 2</div>[linewidth=1.5pt]->(0,2.7)(0,2.2)
-(0,2)<div class="brevet-fbox">élever le résultat au carré</div>[linewidth=1.5pt]->(0,1.7)(0,1.2)
-(0,1)<div class="brevet-fbox">retrancher 9</div>[linewidth=1.5pt]->(0,0.7)(0,0.2)
-(0,0)<div class="brevet-fbox">afficher le résultat</div>
-pspicture</div>
-  
-
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
-  <div class="brevet-q">
-
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">1.</span>
-      Lorsque le nombre choisi est 4, vérifier le programme affiche 55, en précisant chacune des
-étapes de calcul.
-    </div>
-
-    
-    
-
-    
-    
-
-  </div>
+  <a href="/mabemat/3e/chapitre-01-calcul-litteral-1/">Calcul littéral (1)</a>
+  <span class="sep">/</span>
   
-  
-  <div class="brevet-q">
-
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">2.</span>
-      On appelle $x$ le nombre choisi au départ.
-    </div>
-
-    
-    
-
-    
-    
-    <div class="brevet-sub-list">
-      
-      
-      <div class="brevet-sub-q">
-        <span class="brevet-sub-num">a.</span>
-        <div class="brevet-sub-enonce-wrap">
-          <div class="brevet-sub-enonce">Écrire, en fonction de $x$, le résultat obtenu par le programme.</div>
-          
-        </div>
-      </div>
-      
-      
-      <div class="brevet-sub-q">
-        <span class="brevet-sub-num">b.</span>
-        <div class="brevet-sub-enonce-wrap">
-          <div class="brevet-sub-enonce">Parmi les quatre expressions suivantes, laquelle correspond au résultat obtenu par le
-programme ?
-
-tabularx*4X
-$A = 55$ &$B= (2x +3)^2$ &$C= (2x - 3)(2x +3)$ &$D = (2x — 3)^2$<br>
-tabularx</div>
-          
-        </div>
-      </div>
-      
-    </div>
-    
-
-  </div>
-  
-
+  <span>Exercices type brevet</span>
 </div>
 
-
-
-
-
-
-
-
-
-
-
+<section class="br-hero fade-up d1">
   
+  <div class="eyebrow">Calcul littéral (1) · Exercices type brevet</div>
   
-
-  
-  
-
-  
-  
-
-  
-    
-    
-  
-    
-    
-
-      
-        
-        
-        
-        
-        
-        
-      
-
-    
-  
-    
-    
-
-      
-        
-        
-        
-        
-        
-        
-      
-
-    
-  
-    
-    
-
-      
-        
-        
-        
-        
-        
-        
-      
-
-    
-  
-    
-    
-
-      
-        
-        
-        
-        
-        
-        
-      
-
-    
-  
-    
-    
-
-      
-        
-        
-        
-        
-        
-        
-      
-
-    
-  
-
-
-<div class="brevet-exo">
-
-  <div class="brevet-exo-header">
-    <span class="brevet-exo-num">Exercice 2</span>
-    
-      <span class="brevet-exo-origine">— DNB Juin 2025 Amérique du Nord</span>
-    
+  <h1>Calcul littéral (1)</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>DNB 2025–2026</span>
+    <span><span class="dot"></span>Corrections détaillées</span>
   </div>
+</section>
 
-  
-  <div class="brevet-exo-intro">On considère les deux programmes de calcul suivants :
-
-tabularxm6.cm|X
-<strong>Programme A</strong>&<strong>Programme B</strong><br>
-<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>Choisir un nombre</li><li>Multiplier par 3</li><li>Ajouter 15</li><li>Diviser par 3</li><li>Soustraire le nombre de départ</li></ul>&unit=0.825cm,arrowsize=2pt 3
--2cm
-pspicture(-4,0)(4,6)
-(0,5)Choisir un nombre(-1.9,5.4)(1.9,4.6)
-->(-1.9,5)(-2.6,5)(-2.6,4.1)
-(-2.6,3.7)Soustraire 1(-3.8,4.1)(-1.4,3.3)->(1.9,5)(2.6,5)(2.6,4.1)
-(2.6,3.7)Soustraire 6(1.4,4.1)(3.8,3.3)
-->(-1.4,3.7)(-0.6,3.7)(-0.6,2.3)->(1.4,3.7)(0.6,3.7)(0.6,2.3)
-(0,1.9)Multiplier les deux résultats obtenus(-3.3,2.3)(3.3,1.5)
-->(0,1.5)(0,0.8)
-(0,0.5)Ajouter 5(-1,0.8)(1,0.2)
-
-pspicture
-tabularx</div>
+<div class="exercices-brevet fade-up d2">
   
 
+
+
+
+
+
+
+
+
+
+  
   
 
   
   
-  <div class="brevet-q">
 
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">1.</span>
-      Montrer que, lorsque le nombre choisi est 4, le résultat obtenu avec le programme A est 5.
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
     </div>
-
     
-    
-    <button class="brevet-btn" onclick="toggleBrevet(this)">
-      &#9658; Voir la correction
-    </button>
-    <div class="brevet-corr" style="display:none">
-      On obtient successivement :
-
-$4 \overset{\times 3}{\longmapsto} \quad12 \quad \overset{+ 15}{\longmapsto} \quad27 \quad \overset{\div 3}{\longmapsto} \quad 9 \quad \overset{- 4}{\longmapsto} \quad 5$
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Janvier 2026 Sujet 0 Version A
     </div>
     
+  </header>
 
+  
+  <div class="exo-intro"><br>
+
+On donne un programme de calcul :</div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Lorsque le nombre choisi est 4, vérifier le programme affiche 55, en précisant chacune des
+étapes de calcul.
+
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        On appelle $x$ le nombre choisi au départ.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Écrire, en fonction de $x$, le résultat obtenu par le programme.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Parmi les quatre expressions suivantes, laquelle correspond au résultat obtenu par le
+programme ?
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$A = 55$</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$B= (2x +3)^2$</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$C= (2x - 3)(2x +3)$</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$D = (2x — 3)^2$</td>
+</tr>
+</table>
+
+<br><br></div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
     
     
 
-  </div>
-  
-  
-  <div class="brevet-q">
+      
+        
+        
+        
+        
+        
+      
 
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">2.</span>
-      Montrer que, lorsque le nombre choisi est $- 2$, le résultat obtenu avec le programme A est 5.
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
     </div>
-
     
-    
-    <button class="brevet-btn" onclick="toggleBrevet(this)">
-      &#9658; Voir la correction
-    </button>
-    <div class="brevet-corr" style="display:none">
-      $-2 \overset{\times 3}{\longmapsto} \quad - 6 \quad \overset{+ 15}{\longmapsto} \quad 9 \quad \overset{\div 3}{\longmapsto} \quad 3 \quad \overset{- (- 2)}{\longmapsto} \quad 5$
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Juin 2025 Amérique du Nord
     </div>
     
+  </header>
 
-    
-    
-
-  </div>
   
-  
-  <div class="brevet-q">
+  <div class="exo-intro">On considère les deux programmes de calcul suivants :
 
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">3.</span>
-      Justifier que l'affirmation suivante est vraie :
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:1px solid #8B3C52"><strong>Programme A</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:none"><strong>Programme B</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:1px solid #8B3C52"><ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>Choisir un nombre</li><li>Multiplier par 3</li><li>Ajouter 15</li><li>Diviser par 3</li><li>Soustraire le nombre de départ</li></ul></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:none">-2cm</td>
+</tr>
+</table></div>
+  
+
+  <ol class="q-list">
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Montrer que, lorsque le nombre choisi est 4, le résultat obtenu avec le programme A est 5.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">On obtient successivement :
+
+$4 \overset{\times 3}{\longmapsto} \quad12 \quad \overset{+ 15}{\longmapsto} \quad27 \quad \overset{\div 3}{\longmapsto} \quad 9 \quad \overset{- 4}{\longmapsto} \quad 5$</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Montrer que, lorsque le nombre choisi est $- 2$, le résultat obtenu avec le programme A est 5.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">$-2 \overset{\times 3}{\longmapsto} \quad - 6 \quad \overset{+ 15}{\longmapsto} \quad 9 \quad \overset{\div 3}{\longmapsto} \quad 3 \quad \overset{- (- 2)}{\longmapsto} \quad 5$</div>
+        
+
+        
+
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Justifier que l'affirmation suivante est vraie :
 
 « Le programme A donne toujours le même résultat.  »
-    </div>
 
-    
-    
-    <button class="brevet-btn" onclick="toggleBrevet(this)">
-      &#9658; Voir la correction
-    </button>
-    <div class="brevet-corr" style="display:none">
-      « Le programme A donne toujours le même résultat.  »
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">« Le programme A donne toujours le même résultat.  »
 
 En effet $a \overset{\times 3}{\longmapsto} \quad 3a \quad \overset{+ 15}{\longmapsto} \quad 3a + 15 = 3(a + 5) \quad \overset{\div 3}{\longmapsto} \quad a + 5\quad \overset{- a}{\longmapsto} \quad 5$.
 
-Quel que soit le nombre de départ $a$, le nombre trouvé à la fin est 5.
-    </div>
-    
+Quel que soit le nombre de départ $a$, le nombre trouvé à la fin est 5.</div>
+        
 
-    
-    
+        
 
-  </div>
-  
-  
-  <div class="brevet-q">
-
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">4.</span>
-      Lorsque le nombre choisi est 10, quel résultat obtient-on avec le programme B ?
-    </div>
-
+      </div>
+    </li>
     
-    
-    <button class="brevet-btn" onclick="toggleBrevet(this)">
-      &#9658; Voir la correction
-    </button>
-    <div class="brevet-corr" style="display:none">
-      On calcule d'une part $10 - 1 = 9$, de l'autre $10 - 6 = 4$ ; le produit de ces deux nombres est égal à $9 \times 4 = 36$ et enfin $36 + 5 = 41$.
-    </div>
-    
+    <li class="q-item">
+      <div class="q-enonce">
+        Lorsque le nombre choisi est 10, quel résultat obtient-on avec le programme B ?
 
-    
-    
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">On calcule d'une part $10 - 1 = 9$, de l'autre $10 - 6 = 4$ ; le produit de ces deux nombres est égal à $9 \times 4 = 36$ et enfin $36 + 5 = 41$.</div>
+        
 
-  </div>
-  
-  
-  <div class="brevet-q">
+        
 
-    <div class="brevet-q-enonce">
-      <span class="brevet-q-num">5.</span>
-      Il existe exactement deux nombres pour lesquels les programmes A et B fournissent à chaque fois des résultats identiques.
+      </div>
+    </li>
+    
+    <li class="q-item">
+      <div class="q-enonce">
+        Il existe exactement deux nombres pour lesquels les programmes A et B fournissent à chaque fois des résultats identiques.
 
 Quels sont ces deux nombres?
-    </div>
 
-    
-    
-    <button class="brevet-btn" onclick="toggleBrevet(this)">
-      &#9658; Voir la correction
-    </button>
-    <div class="brevet-corr" style="display:none">
-      En partant de $x$ le programme A donne le résultat 5 et avec le programme B, on obtient le nombre $(x - 1)(x - 6) + 5$.
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">En partant de $x$ le programme A donne le résultat 5 et avec le programme B, on obtient le nombre $(x - 1)(x - 6) + 5$.
 Les résultats sont identiques si :
 
 $5 = (x - 1)(x - 6) + 5$ autrement dit si $(x - 1)(x - 6) = 0$ cettez équation produit a pour solution 1 et 6
 
-1 et 6 sont bien les deux seuls nombres qui donnent comme résultat 5 par les deux programmes.
-    </div>
-    
+1 et 6 sont bien les deux seuls nombres qui donnent comme résultat 5 par les deux programmes.</div>
+        
 
-    
-    
+        
 
-  </div>
-  
+      </div>
+    </li>
+    
+  </ol>
+
+</article>
+
 
 </div>
 
-  </div>
 
-  <a class="back-link" style="margin-top: 2rem;" href="/mabemat/3e/">← Retour au chapitre</a>
+<div class="br-adjacent fade-up">
+  <a class="adj-link" href="/mabemat/3e/chapitre-01-calcul-litteral-1/">← Retour au chapitre</a>
 </div>
 
-<script>
-function toggleBrevet(btn) {
-  var corr = btn.nextElementSibling;
-  var hidden = corr.style.display === 'none';
-  corr.style.display = hidden ? 'block' : 'none';
-  btn.innerHTML = hidden ? '&#9660; Masquer la correction' : '&#9658; Voir la correction';
-  btn.classList.toggle('brevet-btn--open', hidden);
-}
-</script>
 
     </div>
   

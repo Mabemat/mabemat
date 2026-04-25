@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 23 - Séances 67 à 69</span>
+  <span>Semaine 23</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>23</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 23 - Séances 67 à 69</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 67</div>
+<section class="seance-panel" data-titre="Séance 67">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer.<br>$ (-4) - (+3) $
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $  {\color{#008002}\boldsymbol{(-4)}} - {\color{blue}\boldsymbol{(+3)}} = {\color{#f15929}\boldsymbol{(-7)}} $
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,16 +159,28 @@ $  {\color{#008002}\boldsymbol{(-4)}} - {\color{blue}\boldsymbol{(+3)}} = {\colo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Résoudre les équations suivantes.<br>$7y-11=-9y-1$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $7y-11=-9y-1$<br>On ajoute $9y$ aux deux membres.<br>$7y-11{\color{#216D9A}\boldsymbol{\,\,+\,\,9y}}=-9y-1{\color{#216D9A}\boldsymbol{\,\,+\,\,9y}}$<br>$16y-11=-1$<br>On ajoute $11$ aux deux membres.<br>$16y-11{\color{#216D9A}\boldsymbol{\,\,+\,\,11}}=-1{\color{#216D9A}\boldsymbol{\,\,+\,\,11}}$<br>$16y=10$<br>On divise les deux membres par $16$.<br>$16y{\color{#216D9A}\boldsymbol{\,\div\,16}}=10{\color{#216D9A}\boldsymbol{\,\div\,16}}$<br>$y=\dfrac{10}{16}$<br>$y=\dfrac{5}{8}$<br> La solution de l'équation $7y-11=-9y-1$ est ${\color{#F15929}\boldsymbol{\dfrac{5}{8}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -172,19 +191,31 @@ $7y-11=-9y-1$<br>On ajoute $9y$ aux deux membres.<br>$7y-11{\color{#216D9A}\bold
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>
           L'angle $\widehat{xOy}$ mesure $44^\circ$.<br>
           Combien mesure l'angle $\widehat{yOz}$ s'ils sont complémentaires l'un de l'autre ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Deux angles adjacents complémentaires sont deux angles dont les côtés non communs forment un angle droit.<br>
           Alors $\widehat{yOz}=90^\circ-44^\circ={\color{#F15929}\boldsymbol{46^\circ}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -195,9 +226,17 @@ Deux angles adjacents complémentaires sont deux angles dont les côtés non com
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans un salon européen de esport comptant 150 visiteurs, on a noté leur pays d'origine.<br>On a représenté ces données à l'aide du diagramme ci-dessous.<br>
 
  
@@ -205,8 +244,11 @@ Dans un salon européen de esport comptant 150 visiteurs, on a noté leur pays d
 <strong>a.</strong> Déterminer l'effectif manquant.<br>
 <strong>b.</strong> Déterminer les fréquences pour chaque pays d'origine (en pourcentage, arrondir au dixième si besoin).<br><img src="3autop02_2_01.svg" alt="3autop02_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <strong>a.</strong> L'effectif manquant est celui du allemagne. Soit $e$ cet effectif.<br>$e=150-( 16 + 1 + 11 + 22 + 32 + 5 + 34 + 23 )$<br>$e=150-144$<br>$e={\color{#F15929}\boldsymbol{6}}$<br>
 <strong>b.</strong> Calculs des fréquences.<br>On rappelle que pour la fréquence relative à une valeur est donnée par le quotient : $\dfrac{\text{effectif de la valeur}}{\text{effectif total}}$<br>
 
@@ -227,17 +269,14 @@ $$
  $$
 <br>
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 68</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 68">
 
 
 
@@ -246,14 +285,28 @@ $$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans une ville, $25\%$ des 10000 habitants participent à une campagne de vaccination.<br>
     Combien d'habitants ne participent pas à cette campagne ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le nombre d'habitants participant à cette campagne est égal à :<br>
     $10\,000 \times \dfrac{25}{100} = 2\,500$.<br>
     Le nombre d'habitants ne participant pas à cette campagne est donc égal à :<br>
@@ -264,7 +317,8 @@ Une autre méthode consiste à calculer le pourcentage d'habitants ne participan
     Le nombre d'habitants ne participant pas à cette campagne est donc égal à :<br>
     $10\,000 \times \dfrac{75}{100} = {\color{#F15929}\boldsymbol{7\,500}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -275,18 +329,30 @@ Une autre méthode consiste à calculer le pourcentage d'habitants ne participan
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Placer les points : $M(-0{,}09), N(0{,}17), O(0{,}23)$.
 
 <br><img src="3auton15_2_enonce_02.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <img src="3auton15_2_corr_03.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -297,16 +363,28 @@ Placer les points : $M(-0{,}09), N(0{,}17), O(0{,}23)$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le périmètre exact des figures suivantes.<br>Cercle de diamètre $9\text{ cm}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{P}_\text{cercle} = d \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#F15929}\boldsymbol{9\pi}}\text{ cm}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -317,30 +395,38 @@ $\mathcal{P}_\text{cercle} = d \times \pi$<br>$\mathcal{P}_\text{cercle} = {\col
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Le graphique ci-dessous donne l’évolution de la température (en degrés Celsius) en
 fonction de l’horaire (en heures).<br>
 Entre $4$h et $10$h, de combien de degrés la température a-t-elle augmenté ?<br>
 <br><br><img src="3autop05_04.svg" alt="3autop05" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 D’après le graphique, à $4$h, la température est de $5$$^\circ$ C et à $10$h, elle est de $17{,}5$$^\circ$ C.<br>
     L’augmentation de la température entre $4$h et $10$h est donc de : $17{,}5-5={\color{#F15929}\boldsymbol{12{,}5}}$$^\circ$ C.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 69</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 69">
 
 
 
@@ -349,16 +435,31 @@ D’après le graphique, à $4$h, la température est de $5$$^\circ$ C et à $10
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner l'écriture scientifique de $-8\,800$$\,=$$\,\dots$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $-8\,800 = {\color{#F15929}\boldsymbol{-8{,}8\times 10^{3}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -369,17 +470,29 @@ $-8\,800 = {\color{#F15929}\boldsymbol{-8{,}8\times 10^{3}}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Nathalie doit acheter du carrelage. <br>Sur la notice, il est indiqué de prévoir $25$ carreaux pour $2\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $1{,}5\text{ m}^2$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Commençons par trouver combien de carreaux il faut prévoir pour $1\text{ m}^2$. <br>
  $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{2}}$ fois moins que 2$\text{ m}^2$.<br>$25$ carreaux $\div {\color{#216D9A}\boldsymbol{2}} = 12{,}5$ carreaux <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{12{,}5}}$ carreaux pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de carreaux nécessaire pour recouvrir $1{,}5\text{ m}^2$.<br> $1{,}5\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{1{,}5}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{12{,}5}}$ carreaux $\times {\color{#216D9A}\boldsymbol{1{,}5}} = 18{,}75$ carreaux<br> Nathalie aura besoin de ${\color{#F15929}\boldsymbol{18{,}75}}$ carreaux pour recouvrir $1{,}5\text{ m}^2$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -390,16 +503,28 @@ Commençons par trouver combien de carreaux il faut prévoir pour $1\text{ m}^2$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le volume, arrondi au $\text{ dm}^3$ près, d'une boule de $3\text{ dm}$ de rayon.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{V}=\dfrac{4}{3} \times \pi \times R^3=\dfrac{4}{3}\times\pi\times\left(3\text{ dm}\right)^3=\dfrac{108}{3}\pi\text{ dm}^3\approx{\color{#F15929}\boldsymbol{113\mathbf{ dm}^3}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -410,30 +535,76 @@ $\mathcal{V}=\dfrac{4}{3} \times \pi \times R^3=\dfrac{4}{3}\times\pi\times\left
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On considère l’algorithme suivant :
 
     
 
     Qu’obtient‑on si on choisit $1$ comme nombre de départ ?<br><img src="scratch_3autoi01_2_05.svg" alt="scratch_3autoi01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Si on choisit $1$ comme nombre de départ, alors variable prend la valeur $1$.<br>
     Ensuite, resultat prend la valeur $4 \times 1 = 4$.<br>
     Puis, resultat prend la valeur $4 + 18 = 22$.<br>
     Enfin, resultat prend la valeur $\dfrac{22}{2} = 11$.<br>
     Résultat final : ${\color{#F15929}\mathbf{11}}$.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-24/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-22/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

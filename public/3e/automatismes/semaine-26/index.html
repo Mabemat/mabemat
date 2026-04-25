@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 26 - Séances 76 à 78</span>
+  <span>Semaine 26</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>26</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 26 - Séances 76 à 78</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 76</div>
+<section class="seance-panel" data-titre="Séance 76">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Simplifier le plus possible la fraction suivante  $\dfrac{21}{14}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\dfrac{21}{14}=\dfrac{3\times\cancel{7}}{2\times\cancel{7}}={\color{#F15929}\boldsymbol{\dfrac{3}{2}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,16 +159,28 @@ $\dfrac{21}{14}=\dfrac{3\times\cancel{7}}{2\times\cancel{7}}={\color{#F15929}\bo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $b$ étant un nombre entier, exprimer l'entier suivant en fonction de $b$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le successeur de $b$ peut se noter : ${\color{#F15929}\boldsymbol{b+1}}$ ou ${\color{#F15929}\boldsymbol{1+b}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -172,16 +191,28 @@ Le successeur de $b$ peut se noter : ${\color{#F15929}\boldsymbol{b+1}}$ ou ${\c
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer les coordonnées respectives des points $H$, $I$, $G$ et $J$<br><br><img src="3autog01_2_01.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les coordonnées respectives des points sont :<br> $H({\color{#F15929}\boldsymbol{-3}};{\color{#F15929}\boldsymbol{0}})$, $I({\color{#F15929}\boldsymbol{3{,}25}};{\color{#F15929}\boldsymbol{2{,}75}})$, $G({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{-4}})$ et $J({\color{#F15929}\boldsymbol{2{,}75}};{\color{#F15929}\boldsymbol{-4{,}5}})$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -192,15 +223,26 @@ Les coordonnées respectives des points sont :<br> $H({\color{#F15929}\boldsymbo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $MNO$ est un triangle rectangle en $M$ dans lequel
       $MN=2$ et $MO=\sqrt{8}$.<br>
        Calculer la valeur exacte de $NO$ .
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On utilise le théorème de Pythagore dans le triangle $MNO$,  rectangle en $M$.<br>
 On obtient :<br>
 $\begin{aligned}
@@ -212,17 +254,14 @@ NO&={\color{#F15929}\boldsymbol{\sqrt{12}}}
 \end{aligned}$
 
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 77</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 77">
 
 
 
@@ -231,16 +270,31 @@ NO&={\color{#F15929}\boldsymbol{\sqrt{12}}}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer.<br>$ (+6)  \times (-4)$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $ {\color{blue}\boldsymbol{(+6)}} \times {\color{#008002}\boldsymbol{(-4)}}  = {\color{#f15929}\boldsymbol{(-24)}} $
 </div>
-</div>
+  
+</article>
 
 
 
@@ -251,16 +305,28 @@ $ {\color{blue}\boldsymbol{(+6)}} \times {\color{#008002}\boldsymbol{(-4)}}  = {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Résoudre les équations suivantes.<br>$-5a+4=6$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $-5a+4=6$<br>On soustrait $4$ aux deux membres.<br>$-5a+4{\color{#216D9A}\boldsymbol{\,\,-\,\,4}}=6{\color{#216D9A}\boldsymbol{\,\,-\,\,4}}$<br>$-5a=2$<br>On divise les deux membres par $-5$.<br>$-5a{\color{#216D9A}\boldsymbol{\,\div\,(-5)}}=2{\color{#216D9A}\boldsymbol{\,\div\,(-5)}}$<br>$a=-\dfrac{2}{5}$<br> La solution de l'équation $-5a+4=6$ est ${\color{#F15929}\boldsymbol{-\dfrac{2}{5}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -271,16 +337,28 @@ $-5a+4=6$<br>On soustrait $4$ aux deux membres.<br>$-5a+4{\color{#216D9A}\boldsy
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $EXW$ est un triangle rectangle en $X$ et l'angle $\widehat{XEW}$ mesure $49^\circ$.<br>Quelle est la mesure de l'angle $\widehat{XWE}$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le triangle $EXW$ étant rectangle en $X$, les angles $\widehat{XEW}$ et $\widehat{XWE}$ sont complémentaires (leur somme est égale à $90^\circ$).<br>D'où : $\widehat{XWE}+ \widehat{XEW}=90^\circ$<br>D'où : $\widehat{XWE}=90^\circ-49^\circ=41^\circ$<br>L'angle ${\color{black}\boldsymbol{\widehat{XWE}}}$ mesure ${\color{#F15929}\boldsymbol{41}}^\circ$.<br>
 </div>
-</div>
+  
+</article>
 
 
 
@@ -291,14 +369,25 @@ Le triangle $EXW$ étant rectangle en $X$, les angles $\widehat{XEW}$ et $\wideh
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 <br>
 Sur la figure ci-dessus, dans le triangle $RPA$, les droites $(PA)$ et $(SL)$ sont parallèles. Déterminer la longueur $RP$.<br><img src="3autog12_02.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $RPA$, les droites $(PA)$ et $(SL)$ sont parallèles. <br>
     D'après le théorème de Thalès, on a : <br>
     $\dfrac{RP}{RL} =
@@ -308,17 +397,14 @@ Dans le triangle $RPA$, les droites $(PA)$ et $(SL)$ sont parallèles. <br>
     On en déduit que : <br>
     $RP = 2{,}5 \times 8 = {\color{#F15929}\boldsymbol{20}}$ cm.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 78</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 78">
 
 
 
@@ -327,16 +413,31 @@ Dans le triangle $RPA$, les droites $(PA)$ et $(SL)$ sont parallèles. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Depuis 2025 le nombre d'élèves d'un collège a augmenté de $15\,\%$. Il y a maintenant $1\,357$ élèves. Calculer le nombre d'élèves en 2025 dans cet établissement.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Une augmentation de $15\,\%$ revient à multiplier par $100\,\% + 15\,\% = 115\,\% = 1{,}15$.<br>Pour retrouver le nombre initial d'élèves, on va donc diviser le nombre actuel d'élèves par $1{,}15$.<br>$1\,357\div 1{,}15 = 1\,180$<br>En 2025, il y avait ${\color{#F15929}\boldsymbol{1\,180}}$ élèves dans ce collège.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -347,16 +448,28 @@ Une augmentation de $15\,\%$ revient à multiplier par $100\,\% + 15\,\% = 115\,
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_03.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <img src="3auton15_1_corr_04.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>
 </div>
-</div>
+  
+</article>
 
 
 
@@ -367,18 +480,30 @@ Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_03
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous :<br><img src="equilateral_05.svg" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 	Le polygone a $8$ côtés de longueur $7{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
 $8 \times 7{,}5 = {\color{#F15929}\boldsymbol{60}}$ cm.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -389,24 +514,70 @@ $8 \times 7{,}5 = {\color{#F15929}\boldsymbol{60}}$ cm.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans le triangle $SNZ$, rectangle en $N$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{NSZ}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La bonne formule est : <br>
     $\text{cosinus}(\widehat{NSZ}) = 
     \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{NSZ}}{\text{longueur de l’hypoténuse }}=\dfrac{SN}{SZ}$.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-27/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-25/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

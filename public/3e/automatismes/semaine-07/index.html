@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 7 - Séances 19 à 21</span>
+  <span>Semaine 7</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>7</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 7 - Séances 19 à 21</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 19</div>
+<section class="seance-panel" data-titre="Séance 19">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner l'écriture scientifique de $2\,300$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $2\,300 = {\color{#F15929}\boldsymbol{2{,}3\times 10^{3}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,18 +159,30 @@ $2\,300 = {\color{#F15929}\boldsymbol{2{,}3\times 10^{3}}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Béatrice a repéré, à l'épicerie, des melons qui l'intéressent.<br>
   Elle lit que $6$ melons coûtent $12{,}60$ €. Elle veut en acheter $13$.<br>
   Combien va-t-elle dépenser ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Commençons par trouver le prix d'un seul melon. <br>Si $6$ melons coûtent $12{,}60$ €, alors un seul melon coûte ${\color{#216D9A}\boldsymbol{6}}$ fois moins cher.<br>$12{,}60$ € $ \div {\color{#216D9A}\boldsymbol{6}} = 2{,}10 $ € <br>un seul melon coûte ${\color{#216D9A}\boldsymbol{2{,}10}}$ €.<br>Cherchons maintenant le prix de $13$ melons. <br>$13$ melons, c'est ${\color{#216D9A}\boldsymbol{13}}$ fois plus qu'un seul melon. <br>$13$ melons coûtent donc ${\color{#216D9A}\boldsymbol{13}}$ fois plus que ${\color{blue}\boldsymbol{2{,}10}}$ €, le prix d'un seul melon.<br> ${\color{#216D9A}\boldsymbol{2{,}10}}$ € $\times {\color{#216D9A}\boldsymbol{13}} = 27{,}30$ €<br>  $13$ melons coûtent ${\color{#F15929}\boldsymbol{27{,}30}}$ €.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -174,16 +193,28 @@ Commençons par trouver le prix d'un seul melon. <br>Si $6$ melons coûtent $12{
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le volume d'une pyramide de hauteur $6\text{ m}$ et dont la base est un triangle. La base du triangle mesure $3\text{ m}$ et la hauteur associée à cette base mesure $2\text{ m}$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{3\text{ m} \times 2\text{ m}}{2}\times6\text{ m}=\dfrac{3 \times 2 \times 6}{6}\text{ m}^3={\color{#F15929}\boldsymbol{6\mathbf{ m}^3}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -194,9 +225,17 @@ $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{3
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On a réalisé $1000$ lancers d’un dé à $4$ faces.  
     Les résultats sont inscrits dans le tableau ci‑dessous.
 
@@ -215,23 +254,23 @@ $$
 
     Calculer la fréquence de la valeur $4$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La valeur $4$ apparaît $256$ fois.<br>
     Le nombre total de lancers est $1\,000$.<br>
     La fréquence de la valeur $4$ est ${\color{#F15929}\boldsymbol{\dfrac{256}{1\,000}}}={\color{#F15929}\boldsymbol{0{,}256}}$, soit $25{,}6\thickspace\%$.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 20</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 20">
 
 
 
@@ -240,16 +279,31 @@ La valeur $4$ apparaît $256$ fois.<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Quel est le carré de $14$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le carré d'un nombre est ce nombre multiplié par lui-même : $14\times14=196$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -260,16 +314,28 @@ Le carré d'un nombre est ce nombre multiplié par lui-même : $14\times14=196$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur le graphique ci-dessus, on a représenté la hauteur de la valve d'une roue de vélo en fonction de la distance parcourue en $\text{cm}$ lors d'un tour complet.<br>Quelle est la hauteur de la valve lorsque la distance parcourue est de $155\text{ cm}$ ?<br><img src="3autop09_4_01.svg" alt="3autop09_4" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La hauteur de la valve lorsque la distance parcourue est de $155\text{ cm}$ est de $89\text{ cm}$.<br><img src="3autop09_4_corr_02.svg" alt="3autop09_4_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -280,13 +346,24 @@ La hauteur de la valve lorsque la distance parcourue est de $155\text{ cm}$ est 
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter.<br>$ 70\,\text{ dam}^3 = \ldots \,\text{m}^3$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $ 70\,\text{ dam}^3 =  70\times1000\,\text{m}^3 = 70\,000\,\text{m}^3$<br>
 $$\def\arraystretch{1.5}
 \begin{array}{|c|c|c|c|c|c|c|}
@@ -331,7 +408,8 @@ $$\def\arraystretch{1.5}
 \hline
 \end{array}$$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -342,9 +420,17 @@ $$\def\arraystretch{1.5}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On donne la série statistique suivante : 
     $20$ ; $16$ ; $10$ ; $4$ ; $19$.<br>
     Parmi ces propositions, laquelle peut être la médiane de la série ?
@@ -352,24 +438,24 @@ On donne la série statistique suivante :
      
     <br> <strong>A</strong>. $10$&emsp;&emsp; <strong>B</strong>. $11$&emsp;&emsp; <strong>C</strong>. $19$&emsp;&emsp; <strong>D</strong>. $16$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La série triée dans l'ordre croissant est : $4$ ; $10$ ; $16$ ; $19$ ; $20$.<br>
     La série comporte $5$ valeurs, qui est un nombre impair, donc la médiane est le terme de rang $3$.<br>
     La médiane est donc $16$.<br>
     La bonne réponse est la réponse <span class="rep">D</span>.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 21</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 21">
 
 
 
@@ -378,19 +464,34 @@ La série triée dans l'ordre croissant est : $4$ ; $10$ ; $16$ ; $19$ ; $20$.<b
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer $\dfrac{1}{2} \text{ de } 140 \text{ L}$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\dfrac{1}{2}$ de $140$ L = ${\color{#F15929}\boldsymbol{70}}$ L<br>
     <br> Mentalement : <br>
     Prendre $\dfrac{1}{2}$ d'une quantité revient à la diviser par $2$.<br>
     Ainsi, $\dfrac{1}{2}$ de $140=140\div 2=70$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -401,16 +502,28 @@ $\dfrac{1}{2}$ de $140$ L = ${\color{#F15929}\boldsymbol{70}}$ L<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Factoriser :  $A=-3b+9c$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $A=-3b+9c$<br>$\phantom{A}=-3b+3\times3c$<br>$\phantom{A}=$ ${\color{#F15929}\boldsymbol{3(-b+3c)}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -421,18 +534,30 @@ $A=-3b+9c$<br>$\phantom{A}=-3b+3\times3c$<br>$\phantom{A}=$ ${\color{#F15929}\bo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Placer les points suivants : $A(0\;;\;-2)$ ; $B(-3\;;\;0)$ ; $C(6\;;\;2)$ et $D(4\;;\;-3)$.
 
     <br><br><img src="3autog01_1_03.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_04.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -443,24 +568,70 @@ Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_co
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Une élève souhaite réaliser un programme pour dessiner un triangle équilatéral.  
     Par quelles valeurs doit-elle compléter les lignes 3 et 5 ?<br><img src="scratch_3autoi01_05.svg" alt="scratch_3autoi01" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Pour obtenir un triangle équilatéral, il faut répéter ${\color{#F15929}\mathbf{3}}$ fois  
     et tourner de $\dfrac{360}{3} = {\color{#F15929}\mathbf{120}}$ degrés.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-08/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-06/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

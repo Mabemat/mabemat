@@ -1,30 +1,70 @@
 {{ define "main" }}
-{{ $levelData := index .Site.Params.levels .Section }}
-{{ $lc := $levelData.color }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
 
-<a class="back-link" href="{{ .Parent.RelPermalink }}">← {{ $levelData.name }}</a>
-
-<div class="level-header" style="--lc: {{ $lc }};">
-  <div class="bar" style="background: {{ $lc }};"></div>
-  <div>
-    <h1>Automatismes</h1>
-    <p>Entraînement hebdomadaire · 1ère Spécialité</p>
-  </div>
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Automatismes</span>
 </div>
 
+<section class="auto-hero fade-up d1">
+  <div class="auto-hero-grid">
+    <div>
+      <h1>Auto<em>matismes</em></h1>
+    </div>
+    <div class="auto-tag">
+      <div class="auto-swatch">
+        <span style="background:var(--accent);"></span>
+        <span style="background:var(--accent-2);"></span>
+      </div>
+      <div>{{ len .Pages }} semaines</div>
+      <div>année 2025–2026</div>
+    </div>
+  </div>
+  <div class="auto-sub">
+    <div class="col">
+      <h4>Ce qu'on fait</h4>
+      <p>Trois séances courtes par semaine, pour ancrer les réflexes de calcul, de géométrie et de lecture graphique en vue du brevet.</p>
+    </div>
+    <div class="col">
+      <h4>Comment ça marche</h4>
+      <p>Chaque séance propose quatre exercices rapides. L'énoncé s'affiche ; la correction détaillée se déplie d'un clic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="auto-progress fade-up d2">
+  <h2>Les <em>séances</em></h2>
+  <div class="count">
+    <strong>{{ len .Pages }}</strong>
+    semaines publiées
+  </div>
+</section>
+
 {{ if .Pages }}
-<div class="auto-index-list">
+<div class="weeks-grid fade-up d3">
   {{ range .Pages.ByWeight }}
-  <a class="auto-index-item" href="{{ .RelPermalink }}" style="--lc: {{ $lc }}; border-left-color: {{ $lc }};">
-    <span class="auto-index-title">{{ .Title }}</span>
-    <span class="auto-index-arrow">→</span>
+  {{ $n := .Params.auto_number | default 0 }}
+  {{ $start := add (mul (sub $n 1) 3) 1 }}
+  {{ $end := mul $n 3 }}
+  <a class="week-card" href="{{ .RelPermalink }}">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">{{ printf "%02d" $n }}</div>
+    <div class="wk-foot">
+      <span>Séances {{ $start }}–{{ $end }}</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
   </a>
   {{ end }}
 </div>
 {{ else }}
-<div class="empty-state">
-  <p>Les séances d'automatismes seront disponibles prochainement.</p>
+<div class="empty-state" style="padding: 60px 0; color: var(--ink-3); font-family: var(--font-mono); font-size: 13px;">
+  Les séances seront disponibles prochainement.
 </div>
 {{ end }}
-
 {{ end }}

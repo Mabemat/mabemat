@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 24 - Séances 70 à 72</span>
+  <span>Semaine 24</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>24</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 24 - Séances 70 à 72</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 70</div>
+<section class="seance-panel" data-titre="Séance 70">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le carré de $5$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $5^2={\color{#F15929}\boldsymbol{25}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,16 +159,28 @@ $5^2={\color{#F15929}\boldsymbol{25}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur le graphique ci-dessus, on a représenté la hauteur de la valve d'une roue de vélo en fonction de la distance parcourue en $\text{cm}$ lors d'un tour complet.<br>Quelle est la hauteur de la valve lorsque la distance parcourue est de $190\text{ cm}$ ?<br><img src="3autop09_4_01.svg" alt="3autop09_4" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La hauteur de la valve lorsque la distance parcourue est de $190\text{ cm}$ est de $83\text{ cm}$.<br><img src="3autop09_4_corr_02.svg" alt="3autop09_4_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -172,16 +191,28 @@ La hauteur de la valve lorsque la distance parcourue est de $190\text{ cm}$ est 
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Convertir $9\,851\,\text{s}$ en heures, minutes et secondes.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $9\,851\,\text{s} = (2\times3\,600\,\text{s})+2\,651\,\text{s} =2\,\text{h}+(44\times60\,\text{s})+11\,\text{s}= {\color{#F15929}\boldsymbol{2\,\mathbf{h}\,44\,\mathbf{min}\,11\,\mathbf{s}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -192,13 +223,24 @@ $9\,851\,\text{s} = (2\times3\,600\,\text{s})+2\,651\,\text{s} =2\,\text{h}+(44\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer la valeur exacte de $XY$.<br><br><img src="3autog11_2_03.svg" alt="3autog11_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $X$.<br>
       On obtient :
 
@@ -213,17 +255,14 @@ On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $X$.
         XY&={\color{#F15929}\boldsymbol{\sqrt{91}}}
         \end{aligned}$
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 71</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 71">
 
 
 
@@ -232,18 +271,33 @@ On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $X$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner la valeur décimale de  $\dfrac{5}{2}$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\dfrac{5}{2}={\color{#F15929}\boldsymbol{2{,}5}}$<br>
           <br> Mentalement : <br>
           $\dfrac{5}{2}=5\div 2=2{,}5$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -254,16 +308,28 @@ $\dfrac{5}{2}={\color{#F15929}\boldsymbol{2{,}5}}$<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Factoriser :  $C=11n+22k$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $C=11n+22k$<br>$\phantom{C}=11n+11\times2k$<br>$\phantom{C}=$ ${\color{#F15929}\boldsymbol{11(n+2k)}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -274,18 +340,30 @@ $C=11n+22k$<br>$\phantom{C}=11n+11\times2k$<br>$\phantom{C}=$ ${\color{#F15929}\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Placer les points suivants : $A(3\;;\;-6)$ ; $B(1\;;\;1)$ ; $C(-5\;;\;0)$ et $D(0\;;\;6)$.
 
     <br><br><img src="3autog01_1_04.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_05.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -296,15 +374,26 @@ Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_co
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur la figure suivante : 
         <br> $\leadsto O$ est sur $[NL]$,
         <br> $\leadsto P$ est sur $[NM]$,<br> $\leadsto$ les droites $(LM)$ et $(OP)$ sont parallèles.<br>Écrire la double égalité de Thalès.<br><br><img src="3autog12_1_06.svg" alt="3autog12_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $LMN$ :
        <br> $\leadsto$ $O\in[NL]$,
        <br> $\leadsto$ $P\in[NM]$,
@@ -314,17 +403,14 @@ Dans le triangle $LMN$ :
 <br>
 $\dfrac{NO}{NL}=\dfrac{NP}{NM}=\dfrac{OP}{LM}$<br><br><strong>Remarque</strong><br>On pourrait aussi écrire : $\dfrac{NL}{NO}=\dfrac{NM}{NP}=\dfrac{LM}{OP}$
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 72</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 72">
 
 
 
@@ -333,16 +419,31 @@ $\dfrac{NO}{NL}=\dfrac{NP}{NM}=\dfrac{OP}{LM}$<br><br><strong>Remarque</strong><
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter avec le signe < ou >.<br>$7{,}21 \quad \ldots\ldots   \quad7{,}4$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $7{,}21 \quad {\color{#F15929}\boldsymbol{<}} \quad 7{,}4$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -353,9 +454,17 @@ $7{,}21 \quad {\color{#F15929}\boldsymbol{<}} \quad 7{,}4$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Choisis le calcul qui permet de résoudre l'équation suivante : <br>
 Pour résoudre $4x-9=10$ :
 
@@ -364,14 +473,18 @@ Pour résoudre $4x-9=10$ :
     <strong>C</strong>. $10\times 4+9$&emsp;&emsp; 
     <strong>D</strong>. $(10-4)+9$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $4x-9=10$  <br>
     On ajoute $9$ : $4x=10+9$.  <br>
     Puis on divise par $4$ : $x=\dfrac{10+9}{4}$.  <br>
     Bonne réponse : <br> <strong>A</strong>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -382,16 +495,28 @@ $4x-9=10$  <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter.<br>Un angle droit mesure … $^\circ$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Un angle droit mesure ${\color{#F15929}\boldsymbol{90}}^\circ$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -402,9 +527,17 @@ Un angle droit mesure ${\color{#F15929}\boldsymbol{90}}^\circ$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Exprimer $\cos(\widehat{VUW})$ de deux manières :  
     
 
@@ -414,8 +547,11 @@ $$
     \cos(\widehat{VUW})=\dfrac{\ldots}{\ldots}
     $$<br><img src="3autog13_2_07.svg" alt="3autog13_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $VUW$ est rectangle en $V$ donc :
     
 
@@ -432,13 +568,48 @@ $$
     = {\color{#F15929}\mathbf{\dfrac{UT}{VU}}}.
     $$
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-25/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-23/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

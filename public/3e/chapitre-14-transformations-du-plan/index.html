@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -120,7 +120,7 @@ pre[style*="background-color"] {
       
       <div class="chap-meta-row fade-up d4">
         <span><span class="dot" style="background:#8B3C52;"></span>Leçon disponible</span>
-        
+        <span><span class="dot" style="background:#8B3C52;"></span>Brevet</span>
         
         
         
@@ -158,6 +158,17 @@ pre[style*="background-color"] {
   
   
   
+  <a class="res-card res-card-brevet fade-up d4" href="/mabemat/3e/chapitre-14-transformations-du-plan-brevet/">
+    <div class="res-corner">Brevet</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Entraînement brevet</div>
+      <h3>Prépare <em>l'examen</em></h3>
+      <p class="res-desc">Exercices type brevet des collèges avec correction détaillée.</p>
+    </div>
+    <div class="res-open">Commencer <span class="res-arrow">→</span></div>
+  </a>
+  
 
   
 </div>
@@ -171,6 +182,8 @@ pre[style*="background-color"] {
 
 
 
+  
+
 
 
 
@@ -180,7 +193,7 @@ pre[style*="background-color"] {
     <h2>Ton parcours <em>idéal</em></h2>
     <p>dans l'ordre, à ton rythme</p>
   </div>
-  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+  <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
     
     <div class="step available">
       <div class="step-dot">1</div>
@@ -192,6 +205,12 @@ pre[style*="background-color"] {
       <div class="step-dot">2</div>
       <div class="step-t">Faire / Refaire les exercices</div>
       <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">3</div>
+      <div class="step-t">Entraînement brevet</div>
+      <div class="step-s">Type brevet</div>
     </div>
     
   </div>
@@ -244,6 +263,8 @@ pre[style*="background-color"] {
         
         
         
+        <a href="/mabemat/3e/chapitre-14-transformations-du-plan-brevet/"><span>Passer aux exercices type Brevet</span><span>→</span></a>
+        
         
         
         
@@ -264,7 +285,7 @@ pre[style*="background-color"] {
       <div class="eyebrow" style="margin-bottom:14px;">
         Chapitre 14 - Leçon
       </div>
-      <h1 class="lesson-h1">Transformations du plan</h1>
+      <h1 class="lesson-h1" style="color:#8B3C52;">Transformations du plan</h1>
 
       <div class="full-lesson niveau-3e">
         <h2 class="subsection-title">14.1 Rotation</h2>

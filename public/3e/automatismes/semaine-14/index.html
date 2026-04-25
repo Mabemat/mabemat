@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 14 - Séances 40 à 42</span>
+  <span>Semaine 14</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>14</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 14 - Séances 40 à 42</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 40</div>
+<section class="seance-panel" data-titre="Séance 40">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le carré de $13$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $13^2={\color{#F15929}\boldsymbol{169}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,16 +159,28 @@ $13^2={\color{#F15929}\boldsymbol{169}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur le graphique ci-dessus, on a représenté la relation entre la longueur $AD$ et l'aire du rectangle $ADEF$.<br>Quelle est l'aire du rectangle $ADEF$ lorsque la longueur $AD$ vaut $2\text{ cm}$ ?<br><img src="3autop09_3_01.svg" alt="3autop09_3" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On cherche $Aire_{ADEF}$ lorsque $AD = 2\text{ cm}$.<br>On trouve $Aire_{ADEF}={\color{#F15929}\boldsymbol{24}}\text{ cm}^2$.<br><img src="3autop09_3_corr_02.svg" alt="3autop09_3_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -172,18 +191,30 @@ On cherche $Aire_{ADEF}$ lorsque $AD = 2\text{ cm}$.<br>On trouve $Aire_{ADEF}={
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Convertir $136$ secondes en minutes ($\text{min}$) et secondes ($\text{s}$).
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Mentalement : <br>
       On cherche le multiple de $60$ inférieur à $136$ le plus grand possible. C'est $2\times 60 = 120$.<br>
       Ainsi $136 = 120 + 16$ donc $136\text{\,s\,}= 2\text{\,min\,}16\text{\,s}$.<br>$136 = (2 \times 60) + 16$ donc $136$ s = ${\color{#F15929}\boldsymbol{2\mathbf{\,min\,}16\mathbf{\,s}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -194,15 +225,26 @@ Mentalement : <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $KLM$ est un triangle rectangle en $K$ dans lequel
       $KL=3$ et $KM=\sqrt{3}$.<br>
        Calculer la valeur exacte de $LM$ .
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On utilise le théorème de Pythagore dans le triangle $KLM$,  rectangle en $K$.<br>
 On obtient :<br>
 $\begin{aligned}
@@ -214,17 +256,14 @@ LM&={\color{#F15929}\boldsymbol{\sqrt{12}}}
 \end{aligned}$<br>
 
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 41</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 41">
 
 
 
@@ -233,16 +272,31 @@ LM&={\color{#F15929}\boldsymbol{\sqrt{12}}}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Simplifier le plus possible la fraction suivante  $\dfrac{4}{70}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\dfrac{4}{70}=\dfrac{\cancel{2}\times2}{\cancel{2}\times5\times7}={\color{#F15929}\boldsymbol{\dfrac{2}{35}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -253,16 +307,28 @@ $\dfrac{4}{70}=\dfrac{\cancel{2}\times2}{\cancel{2}\times5\times7}={\color{#F159
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Développer et réduire : $B=-7c(2c-4)$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $B=-7c(2c-4)$<br>$B={\color{blue}\boldsymbol{-7c\times 2c + (-7c)\times (-4)}}$<br>En réduisant l'expression, on obtient : <br> $B=$ ${\color{#f15929}\boldsymbol{-14c^2+28c}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -273,18 +339,30 @@ $B=-7c(2c-4)$<br>$B={\color{blue}\boldsymbol{-7c\times 2c + (-7c)\times (-4)}}$<
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Placer les points suivants : $A(-6\;;\;-4)$ ; $B(5\;;\;-5)$ ; $C(1\;;\;0)$ et $D(0\;;\;6)$.
 
     <br><br><img src="3autog01_1_03.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_04.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -295,14 +373,25 @@ Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_co
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 <br>
 Sur la figure ci-dessus, dans le triangle $BVW$, les droites $(VW)$ et $(YF)$ sont parallèles. Déterminer la longueur $BV$.<br><img src="3autog12_05.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $BVW$, les droites $(VW)$ et $(YF)$ sont parallèles. <br>
     D'après le théorème de Thalès, on a : <br>
     $\dfrac{BV}{BF} =
@@ -312,17 +401,14 @@ Dans le triangle $BVW$, les droites $(VW)$ et $(YF)$ sont parallèles. <br>
     On en déduit que : <br>
     $BV = 1{,}5 \times 8 = {\color{#F15929}\boldsymbol{12}}$ cm.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 42</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 42">
 
 
 
@@ -331,16 +417,31 @@ Dans le triangle $BVW$, les droites $(VW)$ et $(YF)$ sont parallèles. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter avec le signe < ou >.<br>$$-1{,}4 \quad \ldots   \quad-1{,}8$$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $-1{,}4 \quad {\color{#F15929}\boldsymbol{>}} \quad -1{,}8$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -351,9 +452,17 @@ $-1{,}4 \quad {\color{#F15929}\boldsymbol{>}} \quad -1{,}8$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Choisis le calcul qui permet de résoudre l'équation suivante : <br>
 Pour résoudre $8x+1=23$ :<br>
 
@@ -362,14 +471,18 @@ Pour résoudre $8x+1=23$ :<br>
     <strong>C</strong>. $\dfrac{23}{8}-1$&emsp;&emsp; 
     <strong>D</strong>. $\dfrac{23-1}{8}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $8x+1=23$  <br>
     On enlève $1$ : $8x=23-1$. <br> 
     Puis on divise par $8$ : $x=\dfrac{23-1}{8}$.  <br>
     Bonne réponse : <strong>D</strong>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -380,16 +493,28 @@ $8x+1=23$  <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $SRTW$ est un carré et $WTV$ est un triangle équilatéral ($V$ est à l'intérieur du carré $SRTW$).<br> $RTU$ est un triangle isocèle en $U$ ($U$ est à l'extérieur du carré $SRTW$).<br>Représenter cette configuration par un schéma à main levée et ajouter les codages nécessaires.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Voilà ci-dessous un schéma qui pourrait convenir à la situation.<br><img src="figure.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -400,24 +525,70 @@ Voilà ci-dessous un schéma qui pourrait convenir à la situation.<br><img src=
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans le triangle $MLJ$, rectangle en $L$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{LMJ}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La bonne formule est : <br>
     $\text{cosinus}(\widehat{LMJ}) = 
     \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{LMJ}}{\text{longueur de l’hypoténuse }}=\dfrac{ML}{MJ}$.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-15/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-13/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

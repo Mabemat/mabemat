@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 10 - Séances 28 à 30</span>
+  <span>Semaine 10</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>10</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 10 - Séances 28 à 30</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 28</div>
+<section class="seance-panel" data-titre="Séance 28">
 
 
 
@@ -132,14 +127,25 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans une association, $40\%$ des 400 membres participent à une campagne de vaccination.<br>
     Combien de membres ne participent pas à cette campagne ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le nombre de membres participant à cette campagne est égal à :<br>
     $400 \times \dfrac{40}{100} = 160$.<br>
     Le nombre de membres ne participant pas à cette campagne est donc égal à :<br>
@@ -150,7 +156,8 @@ Une autre méthode consiste à calculer le pourcentage de membres ne participant
     Le nombre de membres ne participant pas à cette campagne est donc égal à :<br>
     $400 \times \dfrac{60}{100} = {\color{#F15929}\boldsymbol{240}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -161,22 +168,34 @@ Une autre méthode consiste à calculer le pourcentage de membres ne participant
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur chaque droite graduée, déterminer l’abscisse du point $E$.<br> <strong>A</strong>. $\dfrac{1}{4}$ &emsp;
     <strong>B</strong>. $\dfrac{3}{2}$ &emsp;
     <strong>C</strong>. $\dfrac{3}{4}$ &emsp;
     <strong>D</strong>. $\dfrac{1}{2}$<br><img src="3auton15_3_01.svg" alt="3auton15_3" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On remarque qu'il y a 8 divisions entre $0$ et $2$, donc chaque division vaut $\dfrac{1}{4}$.<br>
     Le point $E$ est situé après $3$ divisions à partir de l'origine.<br>
     Donc l'abscisse de $E$ est $\dfrac{3}{4}$.<br>
     Bonne réponse : <span class="rep">C</span>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -187,16 +206,28 @@ On remarque qu'il y a 8 divisions entre $0$ et $2$, donc chaque division vaut $\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer l'aire d'un carré de côté $2\text{ cm}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{A}_\text{carré} = c \times c$<br>$\mathcal{A}_\text{carré} = 2\text{ cm}  \times 2\text{ cm}$<br>$\mathcal{A}_\text{carré} = {\color{#F15929}\boldsymbol{4}}\text{ cm}^2$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -207,13 +238,24 @@ $\mathcal{A}_\text{carré} = c \times c$<br>$\mathcal{A}_\text{carré} = 2\text{
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur cette figure, calculer la valeur exacte de $FH$.<br><img src="3autog11_1_02.svg" alt="3autog11_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On utilise le théorème de Pythagore dans le triangle $FGH$,  rectangle en $G$.<br>
       On obtient :<br>
       $\begin{aligned}
@@ -229,17 +271,14 @@ La longueur $FH$ est donnée par la racine carrée de la somme des carrés de $4
 Cette somme vaut $16+25=41$. <br>
 La valeur cherchée est donc : $\sqrt{41}$.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 29</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 29">
 
 
 
@@ -248,16 +287,31 @@ La valeur cherchée est donc : $\sqrt{41}$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner l'écriture scientifique de $570\,000$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $570\,000 = {\color{#F15929}\boldsymbol{5{,}7\times 10^{5}}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -268,17 +322,29 @@ $570\,000 = {\color{#F15929}\boldsymbol{5{,}7\times 10^{5}}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
  $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -289,16 +355,28 @@ Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le volume d'une pyramide de hauteur $6\text{ m}$ et dont la base est un triangle. La base du triangle mesure $6\text{ m}$ et la hauteur associée à cette base mesure $4\text{ m}$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{6\text{ m} \times 4\text{ m}}{2}\times6\text{ m}=\dfrac{6 \times 4 \times 6}{6}\text{ m}^3={\color{#F15929}\boldsymbol{24\mathbf{ m}^3}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -309,14 +387,25 @@ $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{6
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 <br>
 Sur la figure ci-dessus, dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. Déterminer la longueur $TM$.<br><img src="3autog12_03.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. <br>
     D'après le théorème de Thalès, on a : <br>
     $\dfrac{TM}{TO} =
@@ -326,17 +415,14 @@ Dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. <br>
     On en déduit que : <br>
     $TM = 2{,}1 \times 30 = {\color{#F15929}\boldsymbol{63}}$ cm.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 30</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 30">
 
 
 
@@ -345,9 +431,20 @@ Dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}{|l|c|c|c|c|}
     \hline
     \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
@@ -356,8 +453,11 @@ Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}
     \hline
     \end{array}$$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $$\begin{array}{|l|c|c|c|c|}
     \hline
     \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
@@ -366,7 +466,8 @@ $$\begin{array}{|l|c|c|c|c|}
     \hline
     \end{array}$$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -377,9 +478,17 @@ $$\begin{array}{|l|c|c|c|c|}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On a représenté ci-dessous la trajectoire d'un projectile lancé depuis le sol.<br> 
              À l'aide de ce graphique, répondre aux questions suivantes :
 
@@ -393,13 +502,17 @@ $\mathbf{a)}$ À quelle distance le projectile est-il retombé au sol ?
           
           
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 T
 $\mathbf{a)}$ Le projectile retombe au sol à une distance de ${\color{#F15929}\boldsymbol{52\,\mathbf{m}}}$, car la courbe passe par le point de coordonnées $(52 ;0)$.<br>
 $\mathbf{b)}$ Le point le plus haut de la courbe a pour abscisse $26$ et pour ordonnée $13$ donc la hauteur maximale est de ${\color{#F15929}\boldsymbol{13\,\mathbf{m}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -410,16 +523,28 @@ $\mathbf{b)}$ Le point le plus haut de la courbe a pour abscisse $26$ et pour or
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $1$ $\ldots$ = $60$ secondes
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $1$ <span class="rep">minute</span> = $60$ secondes
 </div>
-</div>
+  
+</article>
 
 
 
@@ -430,22 +555,68 @@ $1$ <span class="rep">minute</span> = $60$ secondes
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans le triangle $MNO$ rectangle en $M$,<br> $NO=15\text{ m}$ et $\widehat{MNO}=50^\circ$.<br>Calculer $MN$ à $0,1\text{ m}$ près.<br><img src="3autog13_1_05.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $MNO$ rectangle en $M$,<br> le cosinus de l'angle $\widehat{MNO}$ est défini par :<br>$\cos\left(\widehat{MNO}\right)=\dfrac{MN}{NO}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(50^\circ\right)}{\color{red}{1}}=\dfrac{MN}{15}$<br>$MN=15 \times \cos\left(50^\circ\right)$<br>soit $MN\approx{\color{#F15929}\boldsymbol{9{,}6}}\text{ m}$.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-11/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-09/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

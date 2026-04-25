@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 18 - Séances 52 à 54</span>
+  <span>Semaine 18</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>18</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 18 - Séances 52 à 54</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 52</div>
+<section class="seance-panel" data-titre="Séance 52">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter avec le signe < ou >.<br>$-9{,}67 \quad \ldots\ldots   \quad9{,}51$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $-9{,}67 \quad {\color{#F15929}\boldsymbol{<}} \quad 9{,}51$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,9 +159,17 @@ $-9{,}67 \quad {\color{#F15929}\boldsymbol{<}} \quad 9{,}51$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Choisis le calcul qui permet de résoudre l'équation suivante : <br>
 Pour résoudre $7x+1=23$ :
 
@@ -163,14 +178,18 @@ Pour résoudre $7x+1=23$ :
     <strong>C</strong>. $\dfrac{23}{7}-1$&emsp;&emsp; 
     <strong>D</strong>. $\dfrac{23-1}{7}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $7x+1=23$  <br>
     On enlève $1$ : $7x=23-1$.  <br>
     Puis on divise par $7$ : $x=\dfrac{23-1}{7}$.  <br>
     Bonne réponse : <strong>D</strong>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -181,17 +200,29 @@ $7x+1=23$  <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $ZRSB$ est un parallélogramme tel que ses diagonales $[ZS]$ et $[RB]$ ont la même longueur et sont perpendiculaires.<br>Déterminer la nature de $ZRSB$ en justifiant la réponse.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les segments de même couleur sont parallèles sur le schéma suivant :<br>
 On sait que $[ZS]\perp[RB]$ et $ZS=RB$.<br>Si un parallélogramme a des diagonales perpendiculaires et de même longueur, alors c'est un carré.<br>$ZRSB$ est donc un carré.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -202,15 +233,26 @@ On sait que $[ZS]\perp[RB]$ et $ZS=RB$.<br>Si un parallélogramme a des diagonal
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 $WXY$ est un triangle rectangle en $W$ dans lequel
       $WX=6$ et $WY=\sqrt{10}$.<br>
        Calculer la valeur exacte de $XY$ .
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $W$.<br>
 On obtient :<br>
 $\begin{aligned}
@@ -222,17 +264,14 @@ XY&={\color{#F15929}\boldsymbol{\sqrt{46}}}
 \end{aligned}$
 
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 53</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 53">
 
 
 
@@ -241,18 +280,33 @@ XY&={\color{#F15929}\boldsymbol{\sqrt{46}}}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Dans une école de 1100 étudiants, $25\%$ des étudiants portent des lunettes.<br>
     Combien d'étudiants portent des lunettes ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Le nombre d'étudiants qui portent des lunettes est égal à :<br>
     $1\,100 \times \dfrac{25}{100} = \dfrac{27\,500}{100}={\color{#F15929}\boldsymbol{275}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -263,18 +317,30 @@ Le nombre d'étudiants qui portent des lunettes est égal à :<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Placer les points : $J(-0{,}066), K(-0{,}038), L(-0{,}028)$.
 
 <br><br><img src="3auton15_2_enonce_01.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 <img src="3auton15_2_corr_02.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -285,16 +351,28 @@ Placer les points : $J(-0{,}066), K(-0{,}038), L(-0{,}028)$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le périmètre exact d'un rectangle de longueur $7{,}3\text{ cm}$ et de largeur $2{,}4\text{ cm}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangle} = 2 \times (7{,}3 + 2{,}4)\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = 2 \times 9{,}7\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = {\color{#F15929}\boldsymbol{19{,}4}}\text{ cm}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -305,14 +383,25 @@ $\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangl
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 <br>
 Sur la figure ci-dessus, dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. Déterminer la longueur $YX$.<br><img src="3autog12_03.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
     D'après le théorème de Thalès, on a : <br>
     $\dfrac{YX}{YV} =
@@ -322,17 +411,14 @@ Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
     On en déduit que : <br>
     $YX = 1{,}5 \times 24 = {\color{#F15929}\boldsymbol{36}}$ cm.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 54</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 54">
 
 
 
@@ -341,16 +427,31 @@ Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner l'écriture scientifique de $7\,290$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $7\,290 = {\color{#F15929}\mathbf{7{,}29 \times 10^{3}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -361,17 +462,29 @@ $7\,290 = {\color{#F15929}\mathbf{7{,}29 \times 10^{3}}}$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
  $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -382,16 +495,28 @@ Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner le nom de chacun des solides.<br><br><br><img src="3autog07_1_16.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Prisme droit avec une base ayant $4$ sommets.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -402,9 +527,17 @@ Prisme droit avec une base ayant $4$ sommets.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter à l'aide des longueurs $WT$, $WV$ et $TV$ :  
     
 
@@ -412,8 +545,11 @@ $$
     \cos\left(\widehat{WTV}\right)=\dfrac{\ldots}{\ldots}
     $$<br><img src="3autog13_2_05.svg" alt="3autog13_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $WTV$ est rectangle en $W$ donc :
     
 
@@ -422,13 +558,48 @@ $$
     = {\color{#F15929}\mathbf{\dfrac{WT}{TV}}}.
     $$
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-19/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-17/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

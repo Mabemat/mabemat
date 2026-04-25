@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -237,7 +237,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 1 — Polynôme du second degré
+          Polynôme du second degré
           <span class="sub">Algèbre</span>
         </div>
         <div class="chap-resources">
@@ -263,7 +263,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 2 — Suites numériques
+          Suites numériques
           <span class="sub">Algèbre</span>
         </div>
         <div class="chap-resources">
@@ -289,7 +289,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 3 — Dérivation locale
+          Dérivation locale
           <span class="sub">Analyse</span>
         </div>
         <div class="chap-resources">
@@ -315,7 +315,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 4 — Probabilités conditionnelles
+          Probabilités conditionnelles
           <span class="sub">Probabilités et statistiques</span>
         </div>
         <div class="chap-resources">
@@ -341,7 +341,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 5 — Dérivation globale
+          Dérivation globale
           <span class="sub">Analyse</span>
         </div>
         <div class="chap-resources">
@@ -367,7 +367,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 6 — Suites arithmétiques et géométriques
+          Suites arithmétiques et géométriques
           <span class="sub">Algèbre</span>
         </div>
         <div class="chap-resources">
@@ -393,7 +393,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 7 — Produit scalaire
+          Produit scalaire
           <span class="sub">Géométrie</span>
         </div>
         <div class="chap-resources">
@@ -419,7 +419,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 8 — Variables aléatoires discrètes
+          Variables aléatoires discrètes
           <span class="sub">Probabilités et statistiques</span>
         </div>
         <div class="chap-resources">
@@ -445,7 +445,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 9 — Applications de la dérivation
+          Applications de la dérivation
           <span class="sub">Analyse</span>
         </div>
         <div class="chap-resources">
@@ -471,7 +471,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 10 — Fonction exponentielle
+          Fonction exponentielle
           <span class="sub">Analyse</span>
         </div>
         <div class="chap-resources">
@@ -497,7 +497,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 11 — Trigonométrie
+          Trigonométrie
           <span class="sub">Analyse</span>
         </div>
         <div class="chap-resources">
@@ -523,7 +523,7 @@ pre[style*="background-color"] {
           </div>
 
         <div class="chap-title">
-          Chapitre 12 — Applications du produit scalaire
+          Applications du produit scalaire
           <span class="sub">Géométrie</span>
         </div>
         <div class="chap-resources">

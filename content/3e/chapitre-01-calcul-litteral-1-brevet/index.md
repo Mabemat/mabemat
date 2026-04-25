@@ -9,15 +9,6 @@ chapter: "chapitre-01-calcul-litteral-1"
 <br>
 
 On donne un programme de calcul :
-
-pspicture(-3,0)(3,4.2)
-
-(0,4)<div class="brevet-fbox">choisir un nombre</div>[linewidth=1.5pt]->(0,3.7)(0,3.2)
-(0,3)<div class="brevet-fbox">le multiplier par 2</div>[linewidth=1.5pt]->(0,2.7)(0,2.2)
-(0,2)<div class="brevet-fbox">élever le résultat au carré</div>[linewidth=1.5pt]->(0,1.7)(0,1.2)
-(0,1)<div class="brevet-fbox">retrancher 9</div>[linewidth=1.5pt]->(0,0.7)(0,0.2)
-(0,0)<div class="brevet-fbox">afficher le résultat</div>
-pspicture
 ---Q---
 Lorsque le nombre choisi est 4, vérifier le programme affiche 55, en précisant chacune des
 étapes de calcul.
@@ -28,32 +19,32 @@ On appelle $x$ le nombre choisi au départ.
 ---SUB-Q---
 Parmi les quatre expressions suivantes, laquelle correspond au résultat obtenu par le
 programme ?
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$A = 55$</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$B= (2x +3)^2$</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$C= (2x - 3)(2x +3)$</td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">$D = (2x — 3)^2$</td>
+</tr>
+</table>
 
-tabularx*4X
-$A = 55$ &$B= (2x +3)^2$ &$C= (2x - 3)(2x +3)$ &$D = (2x — 3)^2$<br>
-tabularx
+<br><br>
 {{< /brevet-exo >}}
 
 {{< brevet-exo num="2" source="DNB Juin 2025 Amérique du Nord" >}}
 ---INTRO---
 On considère les deux programmes de calcul suivants :
 
-tabularxm6.cm|X
-<strong>Programme A</strong>&<strong>Programme B</strong><br>
-<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>Choisir un nombre</li><li>Multiplier par 3</li><li>Ajouter 15</li><li>Diviser par 3</li><li>Soustraire le nombre de départ</li></ul>&unit=0.825cm,arrowsize=2pt 3
--2cm
-pspicture(-4,0)(4,6)
-(0,5)Choisir un nombre(-1.9,5.4)(1.9,4.6)
-->(-1.9,5)(-2.6,5)(-2.6,4.1)
-(-2.6,3.7)Soustraire 1(-3.8,4.1)(-1.4,3.3)->(1.9,5)(2.6,5)(2.6,4.1)
-(2.6,3.7)Soustraire 6(1.4,4.1)(3.8,3.3)
-->(-1.4,3.7)(-0.6,3.7)(-0.6,2.3)->(1.4,3.7)(0.6,3.7)(0.6,2.3)
-(0,1.9)Multiplier les deux résultats obtenus(-3.3,2.3)(3.3,1.5)
-->(0,1.5)(0,0.8)
-(0,0.5)Ajouter 5(-1,0.8)(1,0.2)
-
-pspicture
-tabularx
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:1px solid #8B3C52"><strong>Programme A</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:none"><strong>Programme B</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:1px solid #8B3C52"><ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>Choisir un nombre</li><li>Multiplier par 3</li><li>Ajouter 15</li><li>Diviser par 3</li><li>Soustraire le nombre de départ</li></ul></td>
+<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:none">-2cm</td>
+</tr>
+</table>
 ---Q---
 Montrer que, lorsque le nombre choisi est 4, le résultat obtenu avec le programme A est 5.
 ---CORR---

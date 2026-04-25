@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 15 - Séances 43 à 45</span>
+  <span>Semaine 15</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>15</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 15 - Séances 43 à 45</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 43</div>
+<section class="seance-panel" data-titre="Séance 43">
 
 
 
@@ -132,18 +127,30 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer la valeur de $10\,\%$ de $25$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $10\,\%$ de $25$ :  <br>
     $\dfrac{10 \times 25}{100} = 0{,}1 \times 25 = 2{,}5$.   <br>
     Donc la valeur est <strong>2</strong>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -154,22 +161,34 @@ $10\,\%$ de $25$ :  <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur chaque droite graduée, déterminer l’abscisse du point $E$.<br> <strong>A</strong>. $\dfrac{9}{4}$ &emsp;
     <strong>B</strong>. $\dfrac{13}{4}$ &emsp;
     <strong>C</strong>. $2$ &emsp;
     <strong>D</strong>. $\dfrac{5}{2}$<br><img src="3auton15_3_01.svg" alt="3auton15_3" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 On remarque qu'il y a 8 divisions entre $1$ et $3$, donc chaque division vaut $\dfrac{1}{4}$.<br>
     Le point $E$ est situé après $10$ divisions à partir de l'origine.<br>
     Donc l'abscisse de $E$ est $\dfrac{5}{2}$.<br>
     Bonne réponse : <span class="rep">D</span>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -180,16 +199,28 @@ On remarque qu'il y a 8 divisions entre $1$ et $3$, donc chaque division vaut $\
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer l'aire d'un rectangle de longueur $5\text{ cm}$ et de largeur $2{,}4\text{ cm}$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\mathcal{A}_\text{rectangle} = L \times l$<br>$\mathcal{A}_\text{rectangle} = 5\text{ cm} \times 2{,}4\text{ cm}$<br>$\mathcal{A}_\text{rectangle} = {\color{#F15929}\boldsymbol{12}}\text{ cm}^2$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -200,13 +231,24 @@ $\mathcal{A}_\text{rectangle} = L \times l$<br>$\mathcal{A}_\text{rectangle} = 5
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On tire une boule au hasard dans une urne contenant $8$ boules noires et $6$ boules blanches.<br>             Quelle est la probabilité d'obtenir une boule blanche ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans une situation d'équiprobabilité,
         on calcule la probabilité d'un événement par le quotient :
         $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
@@ -214,17 +256,14 @@ Dans une situation d'équiprobabilité,
         $\dfrac{\text{Nombre de boules blanches}}{\text{Nombre total de boules}}
              =\dfrac{6}{14}  =\dfrac{3{\color{#2563a5}\boldsymbol{\times2}} }{7{\color{#2563a5}\boldsymbol{\times2}}}={\color{#F15929}\boldsymbol{\dfrac{3}{7}}}$
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 44</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 44">
 
 
 
@@ -233,16 +272,31 @@ Dans une situation d'équiprobabilité,
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner l'écriture scientifique de $0{,}919$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $0{,}919 = {\color{#F15929}\mathbf{9{,}19 \times 10^{-1}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -253,17 +307,29 @@ $0{,}919 = {\color{#F15929}\mathbf{9{,}19 \times 10^{-1}}}$.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
  $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -274,16 +340,28 @@ Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Donner le nom du solide suivant :<br><img src="3autog07_1_02.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Pyramide avec une base ayant $8$ sommets.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -294,9 +372,17 @@ Pyramide avec une base ayant $8$ sommets.
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Voici une série de 4 notes : $10, 6, 14, 8$.  <br>
     Quelle est la moyenne de cette série ?
 
@@ -306,8 +392,11 @@ Voici une série de 4 notes : $10, 6, 14, 8$.  <br>
     <strong>C</strong>. $8{,}5$ &emsp;
     <strong>D</strong>. $10$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La moyenne de cette série est :
     
 
@@ -317,17 +406,14 @@ $$
 
     Bonne réponse : <span class="rep">B</span>.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 45</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 45">
 
 
 
@@ -336,9 +422,20 @@ $$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}{|l|c|c|c|c|}
     \hline
     \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
@@ -347,8 +444,11 @@ Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}
     \hline
     \end{array}$$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $$\begin{array}{|l|c|c|c|c|}
     \hline
     \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
@@ -357,7 +457,8 @@ $$\begin{array}{|l|c|c|c|c|}
     \hline
     \end{array}$$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -368,16 +469,28 @@ $$\begin{array}{|l|c|c|c|c|}
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Sur le graphique ci-dessus, on a représenté la hauteur de la valve d'une roue de vélo en fonction de la distance parcourue en $\text{cm}$ lors d'un tour complet.<br>Quelle est la hauteur de la valve lorsque la distance parcourue est de $125\text{ cm}$ ?<br><img src="3autop09_4_03.svg" alt="3autop09_4" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La hauteur de la valve lorsque la distance parcourue est de $125\text{ cm}$ est de $89\text{ cm}$.<br><img src="3autop09_4_corr_04.svg" alt="3autop09_4_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -388,17 +501,29 @@ La hauteur de la valve lorsque la distance parcourue est de $125\text{ cm}$ est 
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Un concours dure $470$ minutes. Quelle est sa durée en heures et minutes ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Une heure contient 60 minutes. <br>
     $470=420+50=7\times 60+50$, donc dans $470$ minutes il y a <span class="rep">7 h 50 min</span>.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -409,9 +534,17 @@ Une heure contient 60 minutes. <br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
 <div style="display:flex; justify-content:space-between; gap:1rem; text-align:center;">
 
@@ -439,17 +572,55 @@ Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
 
 <br><img src="scratch_3autoi01_1_05.svg" alt="scratch_3autoi01_1" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 C'est la figure 2.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-16/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-14/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   

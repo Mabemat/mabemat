@@ -7,9 +7,21 @@
 {{ $question := index $parts2 0 }}
 {{ $correction := index $parts2 1 }}
 
-<div class="auto3-exo">
-  <div class="auto3-num">{{ $num }}</div>
-  <div class="auto3-enonce">{{ $question | safeHTML }}</div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">{{ $correction | safeHTML }}</div>
-</div>
+{{/* Extraire le chiffre du paramètre num (ex: "Exercice 1 " → "01") */}}
+{{ $numClean := replaceRE "[^0-9]" "" $num }}
+{{ $numFmt := "??" }}
+{{ if $numClean }}{{ $numFmt = printf "%02d" (int $numClean) }}{{ end }}
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">{{ $numFmt }}</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">{{ $question | safeHTML }}</div>
+  {{ if $correction }}
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">{{ $correction | safeHTML }}</div>
+  {{ end }}
+</article>

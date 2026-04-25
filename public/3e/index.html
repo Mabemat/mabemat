@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -497,7 +497,7 @@ pre[style*="background-color"] {
           
           
           
-          
+          <span class="res on res-brevet">Brevet</span>
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -523,7 +523,7 @@ pre[style*="background-color"] {
           
           
           
-          
+          <span class="res on res-brevet">Brevet</span>
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -549,7 +549,7 @@ pre[style*="background-color"] {
           
           
           
-          
+          <span class="res on res-brevet">Brevet</span>
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -575,7 +575,7 @@ pre[style*="background-color"] {
           
           
           
-          
+          <span class="res on res-brevet">Brevet</span>
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -601,7 +601,7 @@ pre[style*="background-color"] {
           
           
           
-          
+          <span class="res on res-brevet">Brevet</span>
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -627,7 +627,7 @@ pre[style*="background-color"] {
           
           
           
-          
+          <span class="res on res-brevet">Brevet</span>
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

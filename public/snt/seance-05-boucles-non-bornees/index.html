@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -88,35 +88,25 @@ pre[style*="background-color"] {
 
 
 
-<a class="back-link" href="/mabemat/snt/">← SNT</a>
-
-<div class="level-header" style="--lc: #8A9CC1;">
-  <div class="bar" style="background: #8A9CC1;"></div>
-  <div>
-    <h1 style="color: #8A9CC1;">Séance 05 · Boucles non bornées</h1>
-    <p>Répéter des actions jusqu&#39;à une condition avec while</p>
-  </div>
-</div>
 
 
 
 
-
-<div class="acts" style="margin-bottom: 2rem;">
-  
-  <a class="btn" href="https://capytale.ac/notebook/..." target="_blank"
-     style="color: #8A9CC1; border-color: #8A9CC1;">
-    📓 Notebook Capytale
-  </a>
-  
+<div class="static-page">
+  <h1>Séance 05 · Boucles non bornées</h1>
+  <h2 id="-compétences-à-maîtriser">🎯 Compétences à maîtriser</h2>
+<ul>
+<li><strong>Utiliser <code>while</code></strong> — Répéter tant qu&rsquo;une condition est vraie</li>
+<li><strong>Éviter les boucles infinies</strong> — Assurer la terminaison</li>
+<li><strong>Comparer <code>for</code> et <code>while</code></strong> — Choisir la bonne boucle</li>
+</ul>
+<hr>
+<h2 id="-notebook-capytale">📓 Notebook Capytale</h2>
+<p><a class="btn" href="https://capytale.ac/notebook/..." target="_blank" style="color:#4A5D7A; border-color:#4A5D7A;">📓 Ouvrir le notebook</a></p>
+<hr>
+<p><em>Correction et QCM à venir.</em></p>
 
 </div>
-
-
-
-
-
-
 
 
     </div>

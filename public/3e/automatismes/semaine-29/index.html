@@ -21,7 +21,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
   onload="
-    var corrDivs = document.querySelectorAll('.auto3-corr');
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
     corrDivs.forEach(function(d) {
       if (d.style.display === 'none' || d.style.display === '') {
         d.dataset.katexHide = '1';
@@ -38,7 +38,7 @@
     });
     corrDivs.forEach(function(d) {
       if (d.dataset.katexHide) {
-        d.style.display = 'none';
+        d.style.display = '';
         d.style.visibility = '';
         d.style.position = '';
       }
@@ -89,38 +89,33 @@ pre[style*="background-color"] {
 
 
 
-
-  
-  
-
-
-
-
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
-
   
-    <a href="/mabemat/3e/">3ème</a>
-    <span class="sep">/</span>
-  
-
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
   
   
+  <a href="/mabemat/3e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
   
-    <a href="/mabemat/3e/automatismes/">Automatismes</a>
-    <span class="sep">/</span>
-  
-
-  <span>Semaine 29 - Séances 85 à 87</span>
+  <span>Semaine 29</span>
 </div>
 
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>29</em></h1>
+  <div class="wk-meta">
+    <span><span class="dot"></span>3 séances</span>
+    <span><span class="dot"></span>12 exercices</span>
+  </div>
+</section>
 
-<div class="qcm-page">
-  <h1 style="color: #8B3C52;">Semaine 29 - Séances 85 à 87</h1>
+<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+
+<div id="auto-seance-content" class="fade-up d3">
   
-<div class="auto3-seance">
-<div class="auto3-header">Séance 85</div>
+<section class="seance-panel" data-titre="Séance 85">
 
 
 
@@ -132,16 +127,28 @@ pre[style*="background-color"] {
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer le carré de $11$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $11^2={\color{#F15929}\boldsymbol{121}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -152,17 +159,29 @@ $11^2={\color{#F15929}\boldsymbol{121}}$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Une voiture freine sur une route sèche et parcourt $100\text{ m}$.<br>
     En utilisant le graphique ci-dessous, dire à quelle vitesse elle roulait ?<br><img src="3autop09_2_01.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Pour une distance de freinage de $100\text{ m}$, la vitesse est d'environ ${\color{#F15929}\boldsymbol{110}}\text{ km/h}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -173,18 +192,30 @@ Pour une distance de freinage de $100\text{ m}$, la vitesse est d'environ ${\col
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Convertir $153$ minutes en heures ($\text{h}$) et minutes ($\text{min}$).
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Mentalement : <br>
 On cherche le multiple de $60$ inférieur à $153$ le plus grand possible. C'est $2\times 60 = 120$.<br>
 Ainsi $153 = 120 + 33$ donc $153\text{\,min\,}= 2\text{\,h\,}33\text{\,min}$.<br>$153 = (2 \times 60) + 33$ donc $153$ minutes = ${\color{#F15929}\boldsymbol{2\,\mathbf{h}\,33\,\mathbf{min}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -195,13 +226,24 @@ Ainsi $153 = 120 + 33$ donc $153\text{\,min\,}= 2\text{\,h\,}33\text{\,min}$.<br
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On tire une boule au hasard dans une urne contenant $7$ boules noires et $7$ boules blanches.<br>             Quelle est la probabilité d'obtenir une boule noire ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Dans une situation d'équiprobabilité,
         on calcule la probabilité d'un événement par le quotient :
         $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
@@ -209,17 +251,14 @@ Dans une situation d'équiprobabilité,
         $\dfrac{\text{Nombre de boules noires}}{\text{Nombre total de boules}}
              =\dfrac{7}{14}  =\dfrac{1{\color{#2563a5}\boldsymbol{\times7}} }{2{\color{#2563a5}\boldsymbol{\times7}}}={\color{#F15929}\boldsymbol{\dfrac{1}{2}}}$
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 86</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 86">
 
 
 
@@ -228,17 +267,32 @@ Dans une situation d'équiprobabilité,
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Combien valent les trois quarts de $20$ ?
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Un quart de $20$ est égal à $20 \div 4$, soit 5.<br>
         Donc les trois quarts de $20$ valent $3 \times 5 = 15$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -249,16 +303,28 @@ Un quart de $20$ est égal à $20 \div 4$, soit 5.<br>
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer $B = x^2 + 6x$, pour $x = 10$.
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $B = 10 \times 10 + 6 \times 10$<br>$B = 100 + 60$<br>$B = {\color{#F15929}\boldsymbol{160}}$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -269,16 +335,28 @@ $B = 10 \times 10 + 6 \times 10$<br>$B = 100 + 60$<br>$B = {\color{#F15929}\bold
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer les coordonnées respectives des points $N$, $O$, $L$, $K$ et $M$<br><br><img src="3autog01_2_03.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Les coordonnées respectives des points sont :<br> $N({\color{#F15929}\boldsymbol{4}};{\color{#F15929}\boldsymbol{2{,}75}})$, $O({\color{#F15929}\boldsymbol{-0{,}25}};{\color{#F15929}\boldsymbol{4{,}25}})$, $L({\color{#F15929}\boldsymbol{-1{,}5}};{\color{#F15929}\boldsymbol{0}})$, $K({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{-3}})$ et $M({\color{#F15929}\boldsymbol{-0{,}5}};{\color{#F15929}\boldsymbol{3}})$
 </div>
-</div>
+  
+</article>
 
 
 
@@ -289,9 +367,17 @@ Les coordonnées respectives des points sont :<br> $N({\color{#F15929}\boldsymbo
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Déterminer la moyenne, de cette série de note :
 Voici une série de 4 notes : $5, 6, 14, 5$.  <br>
     Quelle est la moyenne de cette série ?
@@ -302,8 +388,11 @@ Voici une série de 4 notes : $5, 6, 14, 5$.  <br>
     <strong>C</strong>. $7$ &emsp;
     <strong>D</strong>. $6$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 La moyenne de cette série est :
     
 
@@ -313,17 +402,14 @@ $$
 
     Bonne réponse : <span class="rep">B</span>.
 </div>
-</div>
+  
+</article>
 
 
-</div>
+</section>
 
 
-<div class="auto3-seance">
-<div class="auto3-header">Séance 87</div>
-
-
-
+<section class="seance-panel" data-titre="Séance 87">
 
 
 
@@ -332,16 +418,31 @@ $$
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 1</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Calculer.<br>$ (-4) - (-2) $
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $  {\color{#008002}\boldsymbol{(-4)}} - {\color{#008002}\boldsymbol{(-2)}} = {\color{#f15929}\boldsymbol{(-2)}} $
 </div>
-</div>
+  
+</article>
 
 
 
@@ -352,16 +453,28 @@ $  {\color{#008002}\boldsymbol{(-4)}} - {\color{#008002}\boldsymbol{(-2)}} = {\c
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 2</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Résoudre les équations suivantes.<br>$\dfrac{4z}{5}=-5$
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 $\dfrac{4z}{5}=-5$<br>On multiplie les deux membres par $\dfrac{5}{4}$.<br>$\dfrac{4z}{5}{\color{#216D9A}\boldsymbol{\,\times\,\dfrac{5}{4}}}=-5{\color{#216D9A}\boldsymbol{\,\times\,\dfrac{5}{4}}}$<br>$z=\dfrac{-25}{4}$<br> La solution de l'équation $\dfrac{4z}{5}=-5$ est ${\color{#F15929}\boldsymbol{-\dfrac{25}{4}}}$.
 </div>
-</div>
+  
+</article>
 
 
 
@@ -372,16 +485,28 @@ $\dfrac{4z}{5}=-5$<br>On multiplie les deux membres par $\dfrac{5}{4}$.<br>$\dfr
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 3</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 Préciser s'il s'agit d'un parallélogramme.<br><br><img src="3autog02_2_04.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Seulement deux côtés opposés sont de même longueur, ${\color{#F15929}\boldsymbol{UVWX}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant.<br><br><img src="3autog02_2_corr_05.svg" alt="3autog02_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-</div>
+  
+</article>
 
 
 
@@ -392,30 +517,76 @@ Seulement deux côtés opposés sont de même longueur, ${\color{#F15929}\boldsy
 
 
 
-<div class="auto3-exo">
-  <div class="auto3-num">Exercice 4</div>
-  <div class="auto3-enonce">
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
 On considère l’algorithme suivant :
 
     
 
     Qu’obtient‑on si on choisit $2$ comme nombre de départ ?<br><img src="scratch_3autoi01_2_06.svg" alt="scratch_3autoi01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
-  <button class="auto3-btn" onclick="toggleCorr(this)">&#9658; Voir la correction</button>
-  <div class="auto3-corr" style="display:none">
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
 Si on choisit $2$ comme nombre de départ, alors variable prend la valeur $2$.<br>
     Ensuite, resultat prend la valeur $4 \times 2 = 8$.<br>
     Puis, resultat prend la valeur $8 + 16 = 24$.<br>
     Enfin, resultat prend la valeur $\dfrac{24}{4} = 6$.<br>
     Résultat final : ${\color{#F15929}\mathbf{6}}$.
 </div>
-</div>
+  
+</article>
+
+
+</section>
 
 
 </div>
 
-
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-30/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-28/">Semaine suivante →</a>
+    
+  </div>
 </div>
+
+<script>
+(function() {
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('.seance-panel');
+  if (!tabsEl || !panels.length) return;
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
 
     </div>
   
