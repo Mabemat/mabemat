@@ -389,25 +389,6 @@
     });
   }
 
-  /* ── Scale des formules KaTeX display pour qu'elles rentrent sur mobile ── */
-  function fitKatexDisplay() {
-    var main = document.getElementById('lesson-main');
-    if (!main) return;
-    main.querySelectorAll('.katex-display').forEach(function(el) {
-      el.style.transform    = '';
-      el.style.marginBottom = '';
-      var available = el.parentElement.clientWidth;
-      var needed    = el.scrollWidth;
-      if (needed > available && available > 0) {
-        var ratio = available / needed;
-        el.style.transformOrigin = 'left center';
-        el.style.transform       = 'scale(' + ratio + ')';
-        // Compenser la hauteur perdue par le scale
-        el.style.marginBottom    = (el.offsetHeight * (ratio - 1)) + 'px';
-      }
-    });
-  }
-
   /* ── Ouverture / fermeture de l'overlay ── */
   function openLecon(e) {
     if (e) e.preventDefault();
@@ -416,7 +397,6 @@
     overlay.scrollTop = 0;
     buildTOC();
     updateProgress();
-    fitKatexDisplay();
     overlay.focus();
   }
 
@@ -473,10 +453,6 @@
     });
   }
 
-  // Recalcul au resize (rotation téléphone)
-  window.addEventListener('resize', function() {
-    if (overlay.classList.contains('open')) fitKatexDisplay();
-  });
 })();
 </script>
 {{ end }}
