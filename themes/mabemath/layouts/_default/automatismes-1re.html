@@ -1,0 +1,261 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $n := .Params.auto_number | default 0 }}
+{{ $autoIdx := site.GetPage (printf "%s/automatismes" .Section) }}
+
+{{ $subtitle := "" }}
+{{ $rawTitle := .Title }}
+{{ if strings.Contains $rawTitle " — " }}
+  {{ $parts := split $rawTitle " — " }}
+  {{ $subtitle = index $parts 1 }}
+{{ else if strings.Contains $rawTitle " - " }}
+  {{ $parts := split $rawTitle " - " }}
+  {{ $subtitle = index $parts 1 }}
+{{ end }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  {{ if $autoIdx }}
+  <a href="{{ $autoIdx.RelPermalink }}">Automatismes</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Semaine {{ $n }}</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>{{ $n }}</em></h1>
+  {{ if $subtitle }}<p class="wk-subtitle">{{ $subtitle }}</p>{{ end }}
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séance + Devoirs</span>
+    <span><span class="dot"></span>12 questions</span>
+    <span><span class="dot"></span>≈ 25 min</span>
+  </div>
+</section>
+
+<div class="mode-tabs fade-up d2" role="tablist">
+  <button class="active" data-tab="seance">
+    <span class="tab-idx">Mode 01</span>
+    <em>Séance</em>
+  </button>
+  <button data-tab="devoir">
+    <span class="tab-idx">Mode 02</span>
+    <em>Devoirs</em>
+  </button>
+</div>
+
+<section id="auto-panel-seance" class="mode-panel active fade-up d3">
+  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-seance"></div></div>
+    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
+  </div>
+  <div id="seance-cards"></div>
+</section>
+
+<section id="auto-panel-devoir" class="mode-panel">
+  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
+    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
+  </div>
+  <div id="devoir-cards"></div>
+  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
+</section>
+
+<!-- Contenu source rendu par Hugo (shortcodes résolus) — masqué -->
+<div id="auto1re-src" style="display:none">
+  {{ .Content }}
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    {{ if .PrevInSection }}
+    <a class="adj-link" href="{{ .PrevInSection.RelPermalink }}">← Semaine précédente</a>
+    {{ else if $autoIdx }}
+    <a class="adj-link" href="{{ $autoIdx.RelPermalink }}">← Retour au planning</a>
+    {{ end }}
+  </div>
+  <div>
+    {{ if .NextInSection }}
+    <a class="adj-link" href="{{ .NextInSection.RelPermalink }}">Semaine suivante →</a>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+(function () {
+  var LETTERS = ['A', 'B', 'C', 'D'];
+  var src = document.getElementById('auto1re-src');
+  if (!src) return;
+
+  var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
+  var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
+
+  buildSeance(seanceBox);
+  buildDevoir(devoirBox);
+
+  /* ── MODE SÉANCE : correction immédiate + bon/mauvais ── */
+  function buildSeance(box) {
+    if (!box) return;
+    var target = document.getElementById('seance-cards');
+    var fill   = document.getElementById('fill-seance');
+    var cur    = document.getElementById('cur-seance');
+    var rawCards = box.querySelectorAll('.qcm-q.qcm-auto');
+    var total  = rawCards.length;
+    var score  = 0, answered = 0;
+
+    rawCards.forEach(function (old, i) {
+      var card    = makeCard(old, i, 'Question');
+      var correct = parseInt(old.dataset.correct, 10);
+      var choices = card.querySelectorAll('.auto1re-choice');
+      var corrDiv = card.querySelector('.auto1re-corr');
+      target.appendChild(card);
+
+      choices.forEach(function (choice, ci) {
+        choice.addEventListener('click', function () {
+          if (card.classList.contains('answered')) return;
+          card.classList.add('answered');
+          choice.classList.add('picked');
+
+          if (ci === correct) {
+            choice.classList.add('correct');
+            score++;
+          } else {
+            choice.classList.add('wrong');
+            choices[correct].classList.add('correct');
+          }
+
+          answered++;
+          cur.textContent = score;
+          if (fill) fill.style.width = Math.round(answered / total * 100) + '%';
+          corrDiv.classList.add('open');
+        });
+      });
+    });
+  }
+
+  /* ── MODE DEVOIRS : réponse grisée, pas de bon/mauvais, score à la fin ── */
+  function buildDevoir(box) {
+    if (!box) return;
+    var target  = document.getElementById('devoir-cards');
+    var fill    = document.getElementById('fill-devoir');
+    var cur     = document.getElementById('cur-devoir');
+    var totEl   = document.getElementById('tot-devoir');
+    var result  = document.getElementById('devoir-result');
+    var rawCards = box.querySelectorAll('.qcm-q.qcm-auto');
+    var total   = rawCards.length;
+    var score   = 0, answered = 0;
+
+    if (totEl) totEl.textContent = '/' + total;
+
+    rawCards.forEach(function (old, i) {
+      var card    = makeCard(old, i, 'Devoir');
+      var correct = parseInt(old.dataset.correct, 10);
+      var choices = card.querySelectorAll('.auto1re-choice');
+      target.appendChild(card);
+
+      choices.forEach(function (choice, ci) {
+        choice.addEventListener('click', function () {
+          if (card.classList.contains('answered')) return;
+          card.classList.add('answered');
+          /* Juste griser la réponse choisie — aucune info correct/faux */
+          choice.classList.add('picked-devoir');
+
+          /* Mémoriser si c'est juste pour le score final */
+          if (ci === correct) score++;
+
+          answered++;
+          if (fill) fill.style.width = Math.round(answered / total * 100) + '%';
+
+          /* Score affiché seulement quand tout est répondu */
+          if (answered === total) {
+            cur.textContent = score;
+            if (result) {
+              var msg = score === total
+                ? 'Parfait — ' + score + '/' + total + ' !'
+                : score >= Math.ceil(total / 2)
+                  ? score + '/' + total + ' — bien joué !'
+                  : score + '/' + total;
+              result.textContent = msg;
+              result.style.display = 'block';
+            }
+          }
+        });
+      });
+    });
+  }
+
+  /* ── Construction d'une carte ── */
+  function makeCard(old, index, label) {
+    var correct    = parseInt(old.dataset.correct, 10);
+    var questionEl = old.querySelector('.qcm-question');
+    var opts       = old.querySelectorAll('.qcm-o');
+    var corrEl     = old.querySelector('.qcm-correction');
+
+    var article = document.createElement('article');
+    article.className = 'auto1re-card';
+    article.dataset.correct = correct;
+
+    var numStr = String(index + 1).padStart(2, '0');
+
+    var head = document.createElement('div');
+    head.className = 'auto1re-head';
+    head.innerHTML = '<div class="auto1re-num">' + numStr + '</div>'
+                   + '<div class="auto1re-label">' + label + '</div>';
+    article.appendChild(head);
+
+    var enonce = document.createElement('div');
+    enonce.className = 'auto1re-enonce';
+    enonce.innerHTML = questionEl ? questionEl.innerHTML : '';
+    article.appendChild(enonce);
+
+    var choicesDiv = document.createElement('div');
+    choicesDiv.className = 'auto1re-choices';
+    opts.forEach(function (opt, i) {
+      var btn = document.createElement('button');
+      btn.className = 'auto1re-choice';
+      var spans = opt.querySelectorAll('span');
+      var bodyHTML = spans.length >= 2 ? spans[spans.length - 1].innerHTML : opt.innerHTML;
+      btn.innerHTML = '<span class="auto1re-bullet">' + LETTERS[i] + '</span>'
+                    + '<span class="auto1re-body">' + bodyHTML + '</span>';
+      choicesDiv.appendChild(btn);
+    });
+    article.appendChild(choicesDiv);
+
+    /* Correction (utilisée seulement en mode séance) */
+    var corr = document.createElement('div');
+    corr.className = 'auto1re-corr';
+    var corrLabel = document.createElement('span');
+    corrLabel.className = 'auto1re-corr-label';
+    corrLabel.textContent = 'Correction';
+    corr.appendChild(corrLabel);
+    if (corrEl) {
+      var body = document.createElement('div');
+      body.innerHTML = corrEl.innerHTML;
+      corr.appendChild(body);
+    }
+    article.appendChild(corr);
+
+    return article;
+  }
+
+  /* ── Onglets mode ── */
+  document.querySelectorAll('.mode-tabs button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.mode-tabs button').forEach(function (b) { b.classList.remove('active'); });
+      document.querySelectorAll('.mode-panel').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('auto-panel-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+})();
+</script>
+{{ end }}

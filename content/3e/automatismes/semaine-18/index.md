@@ -12,7 +12,7 @@ weight: 18
 ---Q---
 Compléter avec le signe < ou >.<br>$-9{,}67 \quad \ldots\ldots   \quad9{,}51$
 ---CORR---
-$-9{,}67 \quad {\color{#F15929}\boldsymbol{<}} \quad 9{,}51$
+$-9{,}67 \quad {\color{#8B3C52}\boldsymbol{<}} \quad 9{,}51$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -49,7 +49,7 @@ XY^2&=WX^2+WY^2\\
 XY^2&=\sqrt{10}^2+6^2\\
 XY^2&=10+36\\
 XY^2&=46\\
-XY&={\color{#F15929}\boldsymbol{\sqrt{46}}}
+XY&={\color{#8B3C52}\boldsymbol{\sqrt{46}}}
 \end{aligned}$
 
 {{< /auto3-exo >}}
@@ -63,7 +63,7 @@ Dans une école de 1100 étudiants, $25\%$ des étudiants portent des lunettes.<
     Combien d'étudiants portent des lunettes ?
 ---CORR---
 Le nombre d'étudiants qui portent des lunettes est égal à :<br>
-    $1\,100 \times \dfrac{25}{100} = \dfrac{27\,500}{100}={\color{#F15929}\boldsymbol{275}}$.
+    $1\,100 \times \dfrac{25}{100} = \dfrac{27\,500}{100}={\color{#8B3C52}\boldsymbol{275}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -77,7 +77,7 @@ Placer les points : $J(-0{,}066), K(-0{,}038), L(-0{,}028)$.
 ---Q---
 Calculer le périmètre exact d'un rectangle de longueur $7{,}3\text{ cm}$ et de largeur $2{,}4\text{ cm}$
 ---CORR---
-$\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangle} = 2 \times (7{,}3 + 2{,}4)\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = 2 \times 9{,}7\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = {\color{#F15929}\boldsymbol{19{,}4}}\text{ cm}$
+$\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangle} = 2 \times (7{,}3 + 2{,}4)\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = 2 \times 9{,}7\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = {\color{#8B3C52}\boldsymbol{19{,}4}}\text{ cm}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -91,7 +91,7 @@ Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
     En remplaçant par les longueurs, on obtient : <br>
     $\dfrac{YX}{YV} = \dfrac{18}{12}=1{,}5$.<br>
     On en déduit que : <br>
-    $YX = 1{,}5 \times 24 = {\color{#F15929}\boldsymbol{36}}$ cm.
+    $YX = 1{,}5 \times 24 = {\color{#8B3C52}\boldsymbol{36}}$ cm.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -101,14 +101,14 @@ Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
 ---Q---
 Donner l'écriture scientifique de $7\,290$.
 ---CORR---
-$7\,290 = {\color{#F15929}\mathbf{7{,}29 \times 10^{3}}}$.
+$7\,290 = {\color{#8B3C52}\mathbf{7{,}29 \times 10^{3}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 ---CORR---
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+ $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -130,7 +130,7 @@ $WTV$ est rectangle en $W$ donc :
 
 $$
     \cos\left(\widehat{WTV}\right)
-    = {\color{#F15929}\mathbf{\dfrac{WT}{TV}}}.
+    = {\color{#8B3C52}\mathbf{\dfrac{WT}{TV}}}.
     $$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}

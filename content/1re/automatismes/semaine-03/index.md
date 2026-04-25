@@ -1,6 +1,6 @@
 ---
 title: "Semaine 3 — Fractions, formules et fonctions affines"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 3
 weight: 3

@@ -1,6 +1,6 @@
 ---
 title: "Semaine 21 — Probabilités, fonctions et calcul"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 21
 weight: 21

@@ -1,6 +1,6 @@
 ---
 title: "Semaine 16 — Puissances, équations et probabilités"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 16
 weight: 16

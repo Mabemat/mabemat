@@ -12,20 +12,20 @@ weight: 4
 ---Q---
 Calculer le carré de $12$
 ---CORR---
-$12^2={\color{#F15929}\boldsymbol{144}}$
+$12^2={\color{#8B3C52}\boldsymbol{144}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
 Une voiture roule à la vitesse de $110\text{ km/h}$ sur une route sèche.<br>
     En utilisant le graphique ci-dessous, quelle est la distance de freinage en mètres ?<br><img src="3autop09_2_01.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Pour une vitesse de $110\text{ km/h}$, la distance de freinage est d'environ ${\color{#F15929}\boldsymbol{104}}\text{ m}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Pour une vitesse de $110\text{ km/h}$, la distance de freinage est d'environ ${\color{#8B3C52}\boldsymbol{104}}\text{ m}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---
 Compléter.<br>$8\,100\,\text{cm}^3=\ldots\,\text{L}$
 ---CORR---
-$8\,100\,\text{cm}^3=8\,100\div 1\,000\,\text{dm}^3={\color{#F15929}\boldsymbol{8{,}1\,\mathbf{L}}}$
+$8\,100\,\text{cm}^3=8\,100\div 1\,000\,\text{dm}^3={\color{#8B3C52}\boldsymbol{8{,}1\,\mathbf{L}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4 " >}}
 ---Q---
@@ -42,7 +42,7 @@ On utilise le théorème de Pythagore dans le triangle $TUV$,  rectangle en $U$.
         UV^2&=9^2-4^2\\
         UV^2&=81-16\\
         UV^2&=65\\
-        UV&={\color{#F15929}\boldsymbol{\sqrt{65}}}
+        UV&={\color{#8B3C52}\boldsymbol{\sqrt{65}}}
         \end{aligned}$
 
 <br>
@@ -59,13 +59,13 @@ Mentalement : <br>
 ---Q---
 Effectuer les calculs suivants en donnant le résultat sous forme d'une fraction.<br>$A = 2 + \dfrac{6}{3} $
 ---CORR---
-$A = 2 + \dfrac{6}{3} $<br><br>$A = \dfrac{6}{3} + \dfrac{6}{3}$<br><br>$A = \dfrac{12}{3}$<br><br>$A  ={\color{#F15929}\boldsymbol{4}}$<br>
+$A = 2 + \dfrac{6}{3} $<br><br>$A = \dfrac{6}{3} + \dfrac{6}{3}$<br><br>$A = \dfrac{12}{3}$<br><br>$A  ={\color{#8B3C52}\boldsymbol{4}}$<br>
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
 Calculer $A = x \times x + 7$, pour $x = 10$.
 ---CORR---
-$A = 10 \times 10 + 7$<br>$A = 100 + 7$<br>$A = {\color{#F15929}\boldsymbol{107}}$
+$A = 10 \times 10 + 7$<br>$A = 100 + 7$<br>$A = {\color{#8B3C52}\boldsymbol{107}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---
@@ -100,7 +100,7 @@ $\dfrac{TU}{TR}=\dfrac{TV}{TS}=\dfrac{UV}{RS}$<br><br><strong>Remarque</strong><
 ---Q---
 Compléter avec le signe < ou >.<br>$0{,}7 \quad \ldots   \quad-0{,}9$
 ---CORR---
-$0{,}7 \quad {\color{#F15929}\boldsymbol{>}} \quad -0{,}9$
+$0{,}7 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -0{,}9$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 — Identifier la démarche de résolution" >}}
 ---Q---
@@ -126,7 +126,7 @@ On sait que $[CE]\perp[EJ]$ et $[CJ]\perp[EI]$.<br>Si un parallélogramme a deux
 ---Q---
 Dans le triangle $WXY$ rectangle en $W$,<br> $WX=8\text{ cm}$ et $\widehat{WXY}=45^\circ$.<br>Calculer $XY$ à $0,1\text{ cm}$ près.<br><br><br><img src="3autog13_1_05.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans le triangle $WXY$ rectangle en $W$,<br> le cosinus de l'angle $\widehat{WXY}$ est défini par :<br>$\cos\left(\widehat{WXY}\right)=\dfrac{WX}{XY}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(45^\circ\right)}{\color{red}{1}}=\dfrac{8}{XY}$<br><br>$XY=\dfrac{8 \times\color{red}{1}}{\cos\left(45^\circ\right)}$<br>soit $XY\approx{\color{#F15929}\boldsymbol{11{,}3}}\text{ cm}$.
+Dans le triangle $WXY$ rectangle en $W$,<br> le cosinus de l'angle $\widehat{WXY}$ est défini par :<br>$\cos\left(\widehat{WXY}\right)=\dfrac{WX}{XY}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(45^\circ\right)}{\color{red}{1}}=\dfrac{8}{XY}$<br><br>$XY=\dfrac{8 \times\color{red}{1}}{\cos\left(45^\circ\right)}$<br>soit $XY\approx{\color{#8B3C52}\boldsymbol{11{,}3}}\text{ cm}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

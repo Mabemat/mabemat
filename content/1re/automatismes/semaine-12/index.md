@@ -1,6 +1,6 @@
 ---
 title: "Semaine 12 — Équations, suites et statistiques"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 12
 weight: 12

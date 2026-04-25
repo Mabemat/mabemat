@@ -12,7 +12,7 @@ weight: 20
 ---Q---
 En 12 ans, la population d'une ville est passée de $270\,000$ habitants à $221\,400$. Exprimer cette diminution en pourcentage.
 ---CORR---
-$221\,400\div 270\,000 = 0{,}82 =  82\,\% = 100\,\%-18\,\%$<br>La population a été multipliée par $0{,}82$ elle a donc diminué de ${\color{#F15929}\boldsymbol{18}}\,\%$.
+$221\,400\div 270\,000 = 0{,}82 =  82\,\% = 100\,\%-18\,\%$<br>La population a été multipliée par $0{,}82$ elle a donc diminué de ${\color{#8B3C52}\boldsymbol{18}}\,\%$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -30,7 +30,7 @@ On remarque qu'il y a 8 divisions entre $1$ et $3$, donc chaque division vaut $\
 ---Q---
 Calculer l'aire d'un disque de diamètre $10\text{ cm}$
 ---CORR---
-$\mathcal{A}_\text{disque} = r \times r \times \pi$<br>$\mathcal{A}_\text{disque} = 5\text{ cm} \times 5\text{ cm} \times \pi$<br>$\mathcal{A}_\text{disque} = {\color{#F15929}\boldsymbol{25\pi}}\text{ cm}^2$
+$\mathcal{A}_\text{disque} = r \times r \times \pi$<br>$\mathcal{A}_\text{disque} = 5\text{ cm} \times 5\text{ cm} \times \pi$<br>$\mathcal{A}_\text{disque} = {\color{#8B3C52}\boldsymbol{25\pi}}\text{ cm}^2$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -47,7 +47,7 @@ $\begin{aligned}
         FG^2&=6^2-3^2\\
         FG^2&=36-9\\
         FG^2&=27\\
-        FG&={\color{#F15929}\boldsymbol{\sqrt{27}}}
+        FG&={\color{#8B3C52}\boldsymbol{\sqrt{27}}}
         \end{aligned}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
@@ -58,20 +58,20 @@ $\begin{aligned}
 ---Q---
 Donner l'écriture scientifique de $100$
 ---CORR---
-$100 = {\color{#F15929}\boldsymbol{1\times 10^{2}}}$
+$100 = {\color{#8B3C52}\boldsymbol{1\times 10^{2}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 ---CORR---
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+ $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Calculer le volume d'un prisme droit de hauteur $0{,}8\text{ m}$ et dont les bases sont des triangles de base $6\text{ dm}$ et de hauteur correspondante $36\text{ cm}$.
 ---CORR---
-$\mathcal{V}=\mathcal{B} \times h=\dfrac{6\text{ dm}\times36\text{ cm}}{2}\times0{,}8\text{ m}=\dfrac{6\text{ dm}\times3{,}6\text{ dm}}{2}\times8\text{ dm}={\color{#F15929}\boldsymbol{86{,}4\mathbf{ dm}^3}}$
+$\mathcal{V}=\mathcal{B} \times h=\dfrac{6\text{ dm}\times36\text{ cm}}{2}\times0{,}8\text{ m}=\dfrac{6\text{ dm}\times3{,}6\text{ dm}}{2}\times8\text{ dm}={\color{#8B3C52}\boldsymbol{86{,}4\mathbf{ dm}^3}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -115,7 +115,7 @@ $$\begin{array}{|l|c|c|c|c|}
 Une voiture roule à la vitesse de $70\text{ km/h}$ sur une route sèche.<br>
     En utilisant le graphique ci-dessous, quelle est la distance de freinage en mètres ?<br><img src="3autop09_2_04.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Pour une vitesse de $70\text{ km/h}$, la distance de freinage est d'environ ${\color{#F15929}\boldsymbol{39}}\text{ m}$.<br><img src="3autop09_2_corr_05.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Pour une vitesse de $70\text{ km/h}$, la distance de freinage est d'environ ${\color{#8B3C52}\boldsymbol{39}}\text{ m}$.<br><img src="3autop09_2_corr_05.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---

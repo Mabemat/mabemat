@@ -1,6 +1,6 @@
 ---
 title: "Semaine 1 — Fonctions, puissances et algèbre"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 1
 weight: 1

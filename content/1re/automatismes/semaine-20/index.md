@@ -1,6 +1,6 @@
 ---
 title: "Semaine 20 — Formules, fonctions et statistiques"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 20
 weight: 20

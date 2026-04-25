@@ -12,7 +12,7 @@ weight: 7
 ---Q---
 Donner l'écriture scientifique de $2\,300$
 ---CORR---
-$2\,300 = {\color{#F15929}\boldsymbol{2{,}3\times 10^{3}}}$
+$2\,300 = {\color{#8B3C52}\boldsymbol{2{,}3\times 10^{3}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -20,13 +20,13 @@ Béatrice a repéré, à l'épicerie, des melons qui l'intéressent.<br>
   Elle lit que $6$ melons coûtent $12{,}60$ €. Elle veut en acheter $13$.<br>
   Combien va-t-elle dépenser ?
 ---CORR---
-Commençons par trouver le prix d'un seul melon. <br>Si $6$ melons coûtent $12{,}60$ €, alors un seul melon coûte ${\color{#216D9A}\boldsymbol{6}}$ fois moins cher.<br>$12{,}60$ € $ \div {\color{#216D9A}\boldsymbol{6}} = 2{,}10 $ € <br>un seul melon coûte ${\color{#216D9A}\boldsymbol{2{,}10}}$ €.<br>Cherchons maintenant le prix de $13$ melons. <br>$13$ melons, c'est ${\color{#216D9A}\boldsymbol{13}}$ fois plus qu'un seul melon. <br>$13$ melons coûtent donc ${\color{#216D9A}\boldsymbol{13}}$ fois plus que ${\color{blue}\boldsymbol{2{,}10}}$ €, le prix d'un seul melon.<br> ${\color{#216D9A}\boldsymbol{2{,}10}}$ € $\times {\color{#216D9A}\boldsymbol{13}} = 27{,}30$ €<br>  $13$ melons coûtent ${\color{#F15929}\boldsymbol{27{,}30}}$ €.
+Commençons par trouver le prix d'un seul melon. <br>Si $6$ melons coûtent $12{,}60$ €, alors un seul melon coûte ${\color{#C5607A}\boldsymbol{6}}$ fois moins cher.<br>$12{,}60$ € $ \div {\color{#C5607A}\boldsymbol{6}} = 2{,}10 $ € <br>un seul melon coûte ${\color{#C5607A}\boldsymbol{2{,}10}}$ €.<br>Cherchons maintenant le prix de $13$ melons. <br>$13$ melons, c'est ${\color{#C5607A}\boldsymbol{13}}$ fois plus qu'un seul melon. <br>$13$ melons coûtent donc ${\color{#C5607A}\boldsymbol{13}}$ fois plus que ${\color{blue}\boldsymbol{2{,}10}}$ €, le prix d'un seul melon.<br> ${\color{#C5607A}\boldsymbol{2{,}10}}$ € $\times {\color{#C5607A}\boldsymbol{13}} = 27{,}30$ €<br>  $13$ melons coûtent ${\color{#8B3C52}\boldsymbol{27{,}30}}$ €.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Calculer le volume d'une pyramide de hauteur $6\text{ m}$ et dont la base est un triangle. La base du triangle mesure $3\text{ m}$ et la hauteur associée à cette base mesure $2\text{ m}$.
 ---CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{3\text{ m} \times 2\text{ m}}{2}\times6\text{ m}=\dfrac{3 \times 2 \times 6}{6}\text{ m}^3={\color{#F15929}\boldsymbol{6\mathbf{ m}^3}}$
+$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{3\text{ m} \times 2\text{ m}}{2}\times6\text{ m}=\dfrac{3 \times 2 \times 6}{6}\text{ m}^3={\color{#8B3C52}\boldsymbol{6\mathbf{ m}^3}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -50,7 +50,7 @@ $$
 ---CORR---
 La valeur $4$ apparaît $256$ fois.<br>
     Le nombre total de lancers est $1\,000$.<br>
-    La fréquence de la valeur $4$ est ${\color{#F15929}\boldsymbol{\dfrac{256}{1\,000}}}={\color{#F15929}\boldsymbol{0{,}256}}$, soit $25{,}6\thickspace\%$.
+    La fréquence de la valeur $4$ est ${\color{#8B3C52}\boldsymbol{\dfrac{256}{1\,000}}}={\color{#8B3C52}\boldsymbol{0{,}256}}$, soit $25{,}6\thickspace\%$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -138,7 +138,7 @@ La série triée dans l'ordre croissant est : $4$ ; $10$ ; $16$ ; $19$ ; $20$.<b
 ---Q---
 Calculer $\dfrac{1}{2} \text{ de } 140 \text{ L}$.
 ---CORR---
-$\dfrac{1}{2}$ de $140$ L = ${\color{#F15929}\boldsymbol{70}}$ L<br>
+$\dfrac{1}{2}$ de $140$ L = ${\color{#8B3C52}\boldsymbol{70}}$ L<br>
     <br> Mentalement : <br>
     Prendre $\dfrac{1}{2}$ d'une quantité revient à la diviser par $2$.<br>
     Ainsi, $\dfrac{1}{2}$ de $140=140\div 2=70$.
@@ -147,7 +147,7 @@ $\dfrac{1}{2}$ de $140$ L = ${\color{#F15929}\boldsymbol{70}}$ L<br>
 ---Q---
 Factoriser :  $A=-3b+9c$
 ---CORR---
-$A=-3b+9c$<br>$\phantom{A}=-3b+3\times3c$<br>$\phantom{A}=$ ${\color{#F15929}\boldsymbol{3(-b+3c)}}$
+$A=-3b+9c$<br>$\phantom{A}=-3b+3\times3c$<br>$\phantom{A}=$ ${\color{#8B3C52}\boldsymbol{3(-b+3c)}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -162,8 +162,8 @@ Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_co
 Une élève souhaite réaliser un programme pour dessiner un triangle équilatéral.  
     Par quelles valeurs doit-elle compléter les lignes 3 et 5 ?<br><img src="scratch_3autoi01_05.svg" alt="scratch_3autoi01" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Pour obtenir un triangle équilatéral, il faut répéter ${\color{#F15929}\mathbf{3}}$ fois  
-    et tourner de $\dfrac{360}{3} = {\color{#F15929}\mathbf{120}}$ degrés.
+Pour obtenir un triangle équilatéral, il faut répéter ${\color{#8B3C52}\mathbf{3}}$ fois  
+    et tourner de $\dfrac{360}{3} = {\color{#8B3C52}\mathbf{120}}$ degrés.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

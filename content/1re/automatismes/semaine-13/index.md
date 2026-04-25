@@ -1,6 +1,6 @@
 ---
 title: "Semaine 13 — Algèbre, fonctions et puissances"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 13
 weight: 13

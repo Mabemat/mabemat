@@ -8,6 +8,7 @@ has_cours: true
 has_exercices: false
 has_qcm: false
 has_brevet: false
+has_brevetImpr : false
 competences:
   - "Développer et factoriser des expressions du second degré"
   - "Utiliser les identités remarquables"

@@ -7,7 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: false
 has_qcm: false
-has_brevet: true
+has_brevet: false
+has_brevetImpr : false
 competences:
   - "Développer et factoriser des expressions"
   - "Utiliser les identités remarquables"

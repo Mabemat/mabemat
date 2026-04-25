@@ -1,6 +1,6 @@
 ---
 title: "Semaine 22 — Probabilités et calculs"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 22
 weight: 22

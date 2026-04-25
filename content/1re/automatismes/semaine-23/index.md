@@ -1,6 +1,6 @@
 ---
 title: "Semaine 23 — Fonctions, équations et statistiques"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 23
 weight: 23

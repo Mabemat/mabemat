@@ -12,7 +12,7 @@ weight: 1
 ---Q---
 Donner la valeur décimale de  $\dfrac{11}{10}$.
 ---CORR---
-$\dfrac{11}{10}={\color{#F15929}\boldsymbol{1{,}1}}$<br>
+$\dfrac{11}{10}={\color{#8B3C52}\boldsymbol{1{,}1}}$<br>
           <br> Mentalement : <br>
           $\dfrac{11}{10}=11\times \dfrac{1}{10}=
           11\times 0,1=1{,}1$.
@@ -21,7 +21,7 @@ $\dfrac{11}{10}={\color{#F15929}\boldsymbol{1{,}1}}$<br>
 ---Q---
 Exprimer le triple de $m$  en fonction de $m$.
 ---CORR---
-Le triple de $m$ peut s’écrire de plusieurs façons : ${\color{#F15929}\boldsymbol{3\times m}}$, ${\color{#F15929}\boldsymbol{m+2m}}$ ou encore ${\color{#F15929}\boldsymbol{3m}}$.
+Le triple de $m$ peut s’écrire de plusieurs façons : ${\color{#8B3C52}\boldsymbol{3\times m}}$, ${\color{#8B3C52}\boldsymbol{m+2m}}$ ou encore ${\color{#8B3C52}\boldsymbol{3m}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---
@@ -41,7 +41,7 @@ Dans une situation d'équiprobabilité,
         $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
         La probabilité est donc donnée par : 
         $\dfrac{\text{Nombre de boules noires}}{\text{Nombre total de boules}}
-             =\dfrac{4}{10}  =\dfrac{2{\color{#2563a5}\boldsymbol{\times2}} }{5{\color{#2563a5}\boldsymbol{\times2}}}={\color{#F15929}\boldsymbol{\dfrac{2}{5}}}$
+             =\dfrac{4}{10}  =\dfrac{2{\color{#C5607A}\boldsymbol{\times2}} }{5{\color{#C5607A}\boldsymbol{\times2}}}={\color{#8B3C52}\boldsymbol{\dfrac{2}{5}}}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -52,7 +52,7 @@ Dans une situation d'équiprobabilité,
 Compléter avec le signe < ou >.
 $$-3{,}3 \quad \ldots \quad-3{,}4$$
 ---CORR---
-$-3{,}3 \quad {\color{#F15929}\boldsymbol{>}} \quad -3{,}4$
+$-3{,}3 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -3{,}4$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
@@ -92,7 +92,7 @@ La moyenne de cette série de notes est : $\dfrac{5+9+10+8}{4}=\dfrac{32}{4}=8$.
 Déterminer la valeur de $10~\%$ de $138$.
 ---CORR---
 Pour calculer $10~\%$ de $138$, on calcule $\dfrac{10 \times 138}{100} = \dfrac{10}{100} \times 138=0{,}1\times 138 = 13{,}8$.<br>
-    Donc $10~\%$ de $138$ est égal à ${\color{#F15929}\boldsymbol{13{,}8}}$.
+    Donc $10~\%$ de $138$ est égal à ${\color{#8B3C52}\boldsymbol{13{,}8}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
@@ -108,7 +108,7 @@ Calculer le périmètre du triangle équilatéral $ABC$ représenté ci-dessous 
 ---CORR---
 Le polygone a $3$ côtés de longueur $6{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
-$3 \times 6{,}5 = {\color{#F15929}\boldsymbol{19{,}5}}$ cm.
+$3 \times 6{,}5 = {\color{#8B3C52}\boldsymbol{19{,}5}}$ cm.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4 " >}}
 ---Q---
@@ -124,7 +124,7 @@ $\text{Ligne 3 : }\ldots\quad \text{Ligne 5 : }\ldots$<br>
 
 
 ---CORR---
-Pour obtenir un octogone régulier, il faut répéter ${\color{#F15929}\boldsymbol{8}}$ fois et tourner de $\dfrac{360}{8}={\color{#F15929}\boldsymbol{45}}$ degrés.<br>
+Pour obtenir un octogone régulier, il faut répéter ${\color{#8B3C52}\boldsymbol{8}}$ fois et tourner de $\dfrac{360}{8}={\color{#8B3C52}\boldsymbol{45}}$ degrés.<br>
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

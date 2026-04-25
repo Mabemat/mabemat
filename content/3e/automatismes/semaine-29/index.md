@@ -12,14 +12,14 @@ weight: 29
 ---Q---
 Calculer le carré de $11$
 ---CORR---
-$11^2={\color{#F15929}\boldsymbol{121}}$
+$11^2={\color{#8B3C52}\boldsymbol{121}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Une voiture freine sur une route sèche et parcourt $100\text{ m}$.<br>
     En utilisant le graphique ci-dessous, dire à quelle vitesse elle roulait ?<br><img src="3autop09_2_01.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Pour une distance de freinage de $100\text{ m}$, la vitesse est d'environ ${\color{#F15929}\boldsymbol{110}}\text{ km/h}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Pour une distance de freinage de $100\text{ m}$, la vitesse est d'environ ${\color{#8B3C52}\boldsymbol{110}}\text{ km/h}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -27,7 +27,7 @@ Convertir $153$ minutes en heures ($\text{h}$) et minutes ($\text{min}$).
 ---CORR---
 Mentalement : <br>
 On cherche le multiple de $60$ inférieur à $153$ le plus grand possible. C'est $2\times 60 = 120$.<br>
-Ainsi $153 = 120 + 33$ donc $153\text{\,min\,}= 2\text{\,h\,}33\text{\,min}$.<br>$153 = (2 \times 60) + 33$ donc $153$ minutes = ${\color{#F15929}\boldsymbol{2\,\mathbf{h}\,33\,\mathbf{min}}}$.
+Ainsi $153 = 120 + 33$ donc $153\text{\,min\,}= 2\text{\,h\,}33\text{\,min}$.<br>$153 = (2 \times 60) + 33$ donc $153$ minutes = ${\color{#8B3C52}\boldsymbol{2\,\mathbf{h}\,33\,\mathbf{min}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -38,7 +38,7 @@ Dans une situation d'équiprobabilité,
         $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
         La probabilité est donc donnée par : 
         $\dfrac{\text{Nombre de boules noires}}{\text{Nombre total de boules}}
-             =\dfrac{7}{14}  =\dfrac{1{\color{#2563a5}\boldsymbol{\times7}} }{2{\color{#2563a5}\boldsymbol{\times7}}}={\color{#F15929}\boldsymbol{\dfrac{1}{2}}}$
+             =\dfrac{7}{14}  =\dfrac{1{\color{#C5607A}\boldsymbol{\times7}} }{2{\color{#C5607A}\boldsymbol{\times7}}}={\color{#8B3C52}\boldsymbol{\dfrac{1}{2}}}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -55,13 +55,13 @@ Un quart de $20$ est égal à $20 \div 4$, soit 5.<br>
 ---Q---
 Calculer $B = x^2 + 6x$, pour $x = 10$.
 ---CORR---
-$B = 10 \times 10 + 6 \times 10$<br>$B = 100 + 60$<br>$B = {\color{#F15929}\boldsymbol{160}}$
+$B = 10 \times 10 + 6 \times 10$<br>$B = 100 + 60$<br>$B = {\color{#8B3C52}\boldsymbol{160}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Déterminer les coordonnées respectives des points $N$, $O$, $L$, $K$ et $M$<br><br><img src="3autog01_2_03.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Les coordonnées respectives des points sont :<br> $N({\color{#F15929}\boldsymbol{4}};{\color{#F15929}\boldsymbol{2{,}75}})$, $O({\color{#F15929}\boldsymbol{-0{,}25}};{\color{#F15929}\boldsymbol{4{,}25}})$, $L({\color{#F15929}\boldsymbol{-1{,}5}};{\color{#F15929}\boldsymbol{0}})$, $K({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{-3}})$ et $M({\color{#F15929}\boldsymbol{-0{,}5}};{\color{#F15929}\boldsymbol{3}})$
+Les coordonnées respectives des points sont :<br> $N({\color{#8B3C52}\boldsymbol{4}};{\color{#8B3C52}\boldsymbol{2{,}75}})$, $O({\color{#8B3C52}\boldsymbol{-0{,}25}};{\color{#8B3C52}\boldsymbol{4{,}25}})$, $L({\color{#8B3C52}\boldsymbol{-1{,}5}};{\color{#8B3C52}\boldsymbol{0}})$, $K({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{-3}})$ et $M({\color{#8B3C52}\boldsymbol{-0{,}5}};{\color{#8B3C52}\boldsymbol{3}})$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -92,19 +92,19 @@ $$
 ---Q---
 Calculer.<br>$ (-4) - (-2) $
 ---CORR---
-$  {\color{#008002}\boldsymbol{(-4)}} - {\color{#008002}\boldsymbol{(-2)}} = {\color{#f15929}\boldsymbol{(-2)}} $
+$  {\color{#A4485F}\boldsymbol{(-4)}} - {\color{#A4485F}\boldsymbol{(-2)}} = {\color{#8B3C52}\boldsymbol{(-2)}} $
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Résoudre les équations suivantes.<br>$\dfrac{4z}{5}=-5$
 ---CORR---
-$\dfrac{4z}{5}=-5$<br>On multiplie les deux membres par $\dfrac{5}{4}$.<br>$\dfrac{4z}{5}{\color{#216D9A}\boldsymbol{\,\times\,\dfrac{5}{4}}}=-5{\color{#216D9A}\boldsymbol{\,\times\,\dfrac{5}{4}}}$<br>$z=\dfrac{-25}{4}$<br> La solution de l'équation $\dfrac{4z}{5}=-5$ est ${\color{#F15929}\boldsymbol{-\dfrac{25}{4}}}$.
+$\dfrac{4z}{5}=-5$<br>On multiplie les deux membres par $\dfrac{5}{4}$.<br>$\dfrac{4z}{5}{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{5}{4}}}=-5{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{5}{4}}}$<br>$z=\dfrac{-25}{4}$<br> La solution de l'équation $\dfrac{4z}{5}=-5$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{25}{4}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Préciser s'il s'agit d'un parallélogramme.<br><br><img src="3autog02_2_04.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Seulement deux côtés opposés sont de même longueur, ${\color{#F15929}\boldsymbol{UVWX}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant.<br><br><img src="3autog02_2_corr_05.svg" alt="3autog02_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Seulement deux côtés opposés sont de même longueur, ${\color{#8B3C52}\boldsymbol{UVWX}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant.<br><br><img src="3autog02_2_corr_05.svg" alt="3autog02_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -118,7 +118,7 @@ Si on choisit $2$ comme nombre de départ, alors variable prend la valeur $2$.<b
     Ensuite, resultat prend la valeur $4 \times 2 = 8$.<br>
     Puis, resultat prend la valeur $8 + 16 = 24$.<br>
     Enfin, resultat prend la valeur $\dfrac{24}{4} = 6$.<br>
-    Résultat final : ${\color{#F15929}\mathbf{6}}$.
+    Résultat final : ${\color{#8B3C52}\mathbf{6}}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

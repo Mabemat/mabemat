@@ -14,7 +14,7 @@ Dans une école de 1500 étudiants, $40\%$ des étudiants aiment la musique pop.
     Combien d'étudiants aiment la musique pop ?
 ---CORR---
 Le nombre d'étudiants qui aiment la musique pop est égal à :<br>
-    $1\,500 \times \dfrac{40}{100} = \dfrac{60\,000}{100}={\color{#F15929}\boldsymbol{600}}$.
+    $1\,500 \times \dfrac{40}{100} = \dfrac{60\,000}{100}={\color{#8B3C52}\boldsymbol{600}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
@@ -32,13 +32,13 @@ On remarque qu'il y a 4 divisions entre $1$ et $2$, donc chaque division vaut $\
 ---Q---
 Calculer l'aire exacte d'un triangle de base $5\text{ cm}$ et de hauteur $3\text{ cm}$
 ---CORR---
-$\mathcal{A}_\text{triangle} = (b \times h) \div 2$<br>$\mathcal{A}_\text{triangle} = (5\text{ cm} \times 3\text{ cm}) \div 2$<br>$\mathcal{A}_\text{triangle} = 15\text{ cm}^2 \div 2$<br>$\mathcal{A}_\text{triangle} = {\color{#F15929}\boldsymbol{7{,}5}}\text{ cm}^2$
+$\mathcal{A}_\text{triangle} = (b \times h) \div 2$<br>$\mathcal{A}_\text{triangle} = (5\text{ cm} \times 3\text{ cm}) \div 2$<br>$\mathcal{A}_\text{triangle} = 15\text{ cm}^2 \div 2$<br>$\mathcal{A}_\text{triangle} = {\color{#8B3C52}\boldsymbol{7{,}5}}\text{ cm}^2$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4 " >}}
 ---Q---
 On choisit un film au hasard parmi ceux à l'affiche proposant $9$ comédies et $81$ drames.<br>Quelle est la probabilité de choisir une comédie ?
 ---CORR---
-Il y a en tout : $9 + 81 = 90$ .<br>La probabilité de choisir une comédie est de ${\color{#F15929}\boldsymbol{\dfrac{9}{90}}}$, soit ${\color{#F15929}\boldsymbol{\dfrac{1}{10}}}$.
+Il y a en tout : $9 + 81 = 90$ .<br>La probabilité de choisir une comédie est de ${\color{#8B3C52}\boldsymbol{\dfrac{9}{90}}}$, soit ${\color{#8B3C52}\boldsymbol{\dfrac{1}{10}}}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -48,14 +48,14 @@ Il y a en tout : $9 + 81 = 90$ .<br>La probabilité de choisir une comédie est 
 ---Q---
 Donner l'écriture décimale de $1{,}26 \times 10^{4}$.
 ---CORR---
- L'écriture décimale de $1{,}26 \times 10^{4}$ est ${\color{#F15929}\boldsymbol{12\,600}}$.
+ L'écriture décimale de $1{,}26 \times 10^{4}$ est ${\color{#8B3C52}\boldsymbol{12\,600}}$.
 
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
 Il est indiqué sur la bouteille de sirop qu'il faut  $60$ cL de  sirop pour $3$ L d'eau.<br> On veut utiliser $7$ L d'eau.<br> Quel volume de sirop doit-on prévoir ?
 ---CORR---
-Commençons par trouver combien est-ce qu'il faut de sirop pour $1$ L d'eau. <br> 3 L d'eau, c'est ${\color{#216D9A}\boldsymbol{3}}$ fois $1$ L d'eau. Pour $1$ L d'eau, il faut donc ${\color{#216D9A}\boldsymbol{3}}$ fois moins que $60$ cL.<br>$60$ cL $\div {\color{#216D9A}\boldsymbol{3}} = 20$ cL <br> il faut ${\color{#216D9A}\boldsymbol{20}}$ cL de sirop pour $1$ L d'eau. <br> Cherchons maintenant la quantité nécessaire pour $7$ L d'eau. <br> $7$ L d'eau, c'est ${\color{#216D9A}\boldsymbol{7}}$ fois $1$ L d'eau. Il faut donc ${\color{#216D9A}\boldsymbol{7}}$ fois plus de sirop que $20$ cL :<br> ${\color{#216D9A}\boldsymbol{20}}$ cL $\times {\color{#216D9A}\boldsymbol{7}} = 140$ cL<br> il faut prévoir ${\color{#F15929}\boldsymbol{140}}$ cL de  sirop.
+Commençons par trouver combien est-ce qu'il faut de sirop pour $1$ L d'eau. <br> 3 L d'eau, c'est ${\color{#C5607A}\boldsymbol{3}}$ fois $1$ L d'eau. Pour $1$ L d'eau, il faut donc ${\color{#C5607A}\boldsymbol{3}}$ fois moins que $60$ cL.<br>$60$ cL $\div {\color{#C5607A}\boldsymbol{3}} = 20$ cL <br> il faut ${\color{#C5607A}\boldsymbol{20}}$ cL de sirop pour $1$ L d'eau. <br> Cherchons maintenant la quantité nécessaire pour $7$ L d'eau. <br> $7$ L d'eau, c'est ${\color{#C5607A}\boldsymbol{7}}$ fois $1$ L d'eau. Il faut donc ${\color{#C5607A}\boldsymbol{7}}$ fois plus de sirop que $20$ cL :<br> ${\color{#C5607A}\boldsymbol{20}}$ cL $\times {\color{#C5607A}\boldsymbol{7}} = 140$ cL<br> il faut prévoir ${\color{#8B3C52}\boldsymbol{140}}$ cL de  sirop.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---
@@ -70,7 +70,7 @@ Les notes obtenues par un élève sont : $18{,}5 ; 15{,}5 ; 13{,}5 ; 16{,}5 ; 14
     Que vaut la médiane de cette série de notes ?
 ---CORR---
 Rangeons les notes dans l'ordre croissant : $13{,}5 ; 14{,}5 ; 15{,}5 ; 16{,}5 ; 18{,}5$.<br>
-    Comme il y a 5 notes (nombre impair), la médiane est la note du milieu, c'est-à-dire la 3e note : ${\color{#F15929}\boldsymbol{15{,}5}}$.
+    Comme il y a 5 notes (nombre impair), la médiane est la note du milieu, c'est-à-dire la 3e note : ${\color{#8B3C52}\boldsymbol{15{,}5}}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -110,7 +110,7 @@ $\begin{array}{|l|c|c|c|c|}
 ---Q---
 Sur le graphique ci-dessus, on a représenté la relation entre la longueur $AD$ et l'aire du rectangle $ADEF$.<br>Quelle est l'aire du rectangle $ADEF$ lorsque la longueur $AD$ vaut $11\text{ cm}$ ?<br><img src="3autop09_3_03.svg" alt="3autop09_3" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-On cherche $Aire_{ADEF}$ lorsque $AD = 11\text{ cm}$.<br>On trouve $Aire_{ADEF}={\color{#F15929}\boldsymbol{11}}\text{ cm}^2$.
+On cherche $Aire_{ADEF}$ lorsque $AD = 11\text{ cm}$.<br>On trouve $Aire_{ADEF}={\color{#8B3C52}\boldsymbol{11}}\text{ cm}^2$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---

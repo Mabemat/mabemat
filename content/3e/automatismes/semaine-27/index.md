@@ -12,7 +12,7 @@ weight: 27
 ---Q---
 Donner l'écriture scientifique de $-0{,}502$$\,=$$\,\dots$
 ---CORR---
-$-0{,}502 = {\color{#F15929}\boldsymbol{-5{,}02\times 10^{-1}}}$
+$-0{,}502 = {\color{#8B3C52}\boldsymbol{-5{,}02\times 10^{-1}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -20,14 +20,14 @@ Un camion parcourt en moyenne $442{,}8\text{ km}$ en $3$ heures.
   <br> Quelle distance va-t-il parcourir, à la même vitesse, en $10$ heures ?
 ---CORR---
 Commençons par trouver quelle est la distance parcourue en 1h. <br>
-  $1$ h, c'est ${\color{#216D9A}\boldsymbol{3}}$ fois moins que $3$ h.
-   En $1$ h, le camion parcourt donc une distance ${\color{#216D9A}\boldsymbol{3}}$ fois moins grande qu'en $3$ h.<br>$442{,}8\text{ km} \div {\color{#216D9A}\boldsymbol{3}} = 147{,}6 \text{ km}$ <br> en 1h, le camion parcourt ${\color{#216D9A}\boldsymbol{147{,}6}}\text{ km}$. <br> Cherchons maintenant la distance parcourue en $10$ h. <br> $10$ h, c'est ${\color{#216D9A}\boldsymbol{10}}$ fois $1$ h. Le camion parcourt donc ${\color{#216D9A}\boldsymbol{10}}$ fois plus de distance qu'en $1$ h.<br> ${\color{#216D9A}\boldsymbol{147{,}6}}\text{ km} \times {\color{#216D9A}\boldsymbol{10}} = 1\,476\text{ km}$ <br> le camion parcourra en moyenne ${\color{#F15929}\boldsymbol{1\,476}}\text{ km}$ en $10$ h.
+  $1$ h, c'est ${\color{#C5607A}\boldsymbol{3}}$ fois moins que $3$ h.
+   En $1$ h, le camion parcourt donc une distance ${\color{#C5607A}\boldsymbol{3}}$ fois moins grande qu'en $3$ h.<br>$442{,}8\text{ km} \div {\color{#C5607A}\boldsymbol{3}} = 147{,}6 \text{ km}$ <br> en 1h, le camion parcourt ${\color{#C5607A}\boldsymbol{147{,}6}}\text{ km}$. <br> Cherchons maintenant la distance parcourue en $10$ h. <br> $10$ h, c'est ${\color{#C5607A}\boldsymbol{10}}$ fois $1$ h. Le camion parcourt donc ${\color{#C5607A}\boldsymbol{10}}$ fois plus de distance qu'en $1$ h.<br> ${\color{#C5607A}\boldsymbol{147{,}6}}\text{ km} \times {\color{#C5607A}\boldsymbol{10}} = 1\,476\text{ km}$ <br> le camion parcourra en moyenne ${\color{#8B3C52}\boldsymbol{1\,476}}\text{ km}$ en $10$ h.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Calculer le volume d'une pyramide de hauteur $5\text{ m}$ et dont la base  est un carré de $9\text{ dm}$  de côté.
 ---CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\left(9\text{ dm}\right)^2\times5\text{ m}=\dfrac{1}{3}\times81\text{ dm}^2\times50\text{ dm}={\color{#F15929}\boldsymbol{1\,350\mathbf{ dm}^3}}$
+$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\left(9\text{ dm}\right)^2\times5\text{ m}=\dfrac{1}{3}\times81\text{ dm}^2\times50\text{ dm}={\color{#8B3C52}\boldsymbol{1\,350\mathbf{ dm}^3}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -62,14 +62,14 @@ $\mathbf{b)}$ Pendant combien de temps, Léa, a-t-elle fait réellement du vélo
 $\mathbf{c)}$ Quelle distance a-t-elle parcourue au total ?<br><img src="3autop09_1_01.svg" alt="3autop09_1" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 <strong>a.</strong>  Après 10 minutes de vélo, Léa fait une pause car la courbe devient horizontale.<br>
-            <strong>b.</strong>  Léa est partie 40 min et a fait une pause de 10 min donc elle a fait réellement du vélo pendant ${\color{#F15929}\boldsymbol{30\,\mathbf{min}}}$.<br>
-              <strong>c.</strong>  Le point le plus loin de sa maison est à 5 $\text{km}$ et ensuite elle revient chez elle, donc la distance totale est de ${\color{#F15929}\boldsymbol{10\,\mathbf{km}}}$.
+            <strong>b.</strong>  Léa est partie 40 min et a fait une pause de 10 min donc elle a fait réellement du vélo pendant ${\color{#8B3C52}\boldsymbol{30\,\mathbf{min}}}$.<br>
+              <strong>c.</strong>  Le point le plus loin de sa maison est à 5 $\text{km}$ et ensuite elle revient chez elle, donc la distance totale est de ${\color{#8B3C52}\boldsymbol{10\,\mathbf{km}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 $1$ jour = $\ldots$ heures
 ---CORR---
-$1$ jour = ${\color{#F15929}\boldsymbol{24}}$ heures
+$1$ jour = ${\color{#8B3C52}\boldsymbol{24}}$ heures
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -153,13 +153,13 @@ Effectuer le calcul suivant en donnant le résultat sous forme d'une fraction. $
 $C = \dfrac{6}{8}+4$<br><br>
 $C = \dfrac{6}{8}+\dfrac{32}{8}$<br><br>
 $C = \dfrac{38}{8}$<br><br>
-$C  =\dfrac{19{\color{blue}\boldsymbol{\times2}}}{4{\color{blue}\boldsymbol{\times2}}}={\color{#F15929}\boldsymbol{\dfrac{19}{4}}}$<br>
+$C  =\dfrac{19{\color{blue}\boldsymbol{\times2}}}{4{\color{blue}\boldsymbol{\times2}}}={\color{#8B3C52}\boldsymbol{\dfrac{19}{4}}}$<br>
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Réduire cette expression, si cela est possible : $D=-1\times 9x$
 ---CORR---
-$D = -1\times 9x$<br>$D = {\color{#F15929}\boldsymbol{-9x}}$<br>
+$D = -1\times 9x$<br>$D = {\color{#8B3C52}\boldsymbol{-9x}}$<br>
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---

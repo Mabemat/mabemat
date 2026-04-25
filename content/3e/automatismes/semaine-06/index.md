@@ -18,7 +18,7 @@ $\dfrac{3}{4}$ de $16 = \dfrac{3}{4} \times 16 = \dfrac{3 \times 16 }{4}= \dfrac
 ---Q---
 Développer et réduire $A=-7+6(-8c-2)$
 ---CORR---
-$A=-7+6(-8c-2)$<br>$A=-7+6\times (-8c)+6\times (-2)$<br>En réduisant l'expression, on obtient : <br> $A=$ ${\color{#f15929}\boldsymbol{-48c-19}}$.
+$A=-7+6(-8c-2)$<br>$A=-7+6\times (-8c)+6\times (-2)$<br>En réduisant l'expression, on obtient : <br> $A=$ ${\color{#8B3C52}\boldsymbol{-48c-19}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---
@@ -27,7 +27,7 @@ Déterminer les coordonnées respectives des points $A$,  $B$ et $C$.
 <br>
 <br><br><img src="Ex3.png" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:300px">
 ---CORR---
-Les coordonnées respectives des points sont :<br> $A({\color{#F15929}\boldsymbol{0}};{\color{F15929}\boldsymbol{1{,}5}})$, $C({\color{#F15929}\boldsymbol{-4{,}5}};{\color{F15929}\boldsymbol{-2}})$ et $B({\color{#F15929}\boldsymbol{1}};{\color{F15929}\boldsymbol{0}})$.
+Les coordonnées respectives des points sont :<br> $A({\color{#8B3C52}\boldsymbol{0}};{\color{F15929}\boldsymbol{1{,}5}})$, $C({\color{#8B3C52}\boldsymbol{-4{,}5}};{\color{F15929}\boldsymbol{-2}})$ et $B({\color{#8B3C52}\boldsymbol{1}};{\color{F15929}\boldsymbol{0}})$.
 
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4 " >}}
@@ -44,7 +44,7 @@ TU^2&=ST^2+SU^2\\
 TU^2&=\sqrt{3}^2+9^2\\
 TU^2&=3+81\\
 TU^2&=84\\
-TU&={\color{#F15929}\boldsymbol{\sqrt{84}}}
+TU&={\color{#8B3C52}\boldsymbol{\sqrt{84}}}
 \end{aligned}$<br>
 En simplifiant, on obtient : $TU = 2\sqrt{21}$
 {{< /auto3-exo >}}
@@ -56,7 +56,7 @@ En simplifiant, on obtient : $TU = 2\sqrt{21}$
 ---Q---
 Calculer.<br>$ (+7) - (-8) $
 ---CORR---
-$  {\color{blue}\boldsymbol{(+7)}} - {\color{#008002}\boldsymbol{(-8)}} = 7+8 = {\color{#f15929}\boldsymbol{15}} $
+$  {\color{blue}\boldsymbol{(+7)}} - {\color{#A4485F}\boldsymbol{(-8)}} = 7+8 = {\color{#8B3C52}\boldsymbol{15}} $
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -65,7 +65,7 @@ Résoudre les équations suivantes.<br>$\dfrac{4x}{5}=-3$
 $\dfrac{4x}{5}=-3$<br><br> 
 $\dfrac{4x}{5}{\color{blue}\boldsymbol{\,\times\,\dfrac{5}{4}}}=-3{\color{blue}\boldsymbol{\,\times\,\dfrac{5}{4}}}$<br><br> 
 $x=\dfrac{-15}{4}$<br><br> 
- La solution de l'équation $\dfrac{4x}{5}=-3$ est ${\color{#F15929}\boldsymbol{-\dfrac{15}{4}}}$.
+ La solution de l'équation $\dfrac{4x}{5}=-3$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{15}{4}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3 " >}}
 ---Q---
@@ -77,7 +77,7 @@ On sait que la somme des angles d'un triangle est égale à $180^\circ$. <br>
     $\widehat{A} + \widehat{B} + \widehat{C} = 180^\circ$. <br>
     Or, comme le triangle est rectangle en $B$, on a $\widehat{B} = 90^\circ$. <br>
     Donc, $26^\circ + 90^\circ + \widehat{C} = 180^\circ$. <br>
-    D'où $\widehat{C} = 180^\circ - 90^\circ - 26^\circ = 90^\circ - 26^\circ = {\color{#F15929}\boldsymbol{64}}^\circ$.
+    D'où $\widehat{C} = 180^\circ - 90^\circ - 26^\circ = 90^\circ - 26^\circ = {\color{#8B3C52}\boldsymbol{64}}^\circ$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4 " >}}
 ---Q---
@@ -90,7 +90,7 @@ Dans le triangle $CEN$, les droites $(EN)$ et $(YR)$ sont parallèles. <br>
     En remplaçant par les longueurs, on obtient : <br>
     $\dfrac{CE}{CR} = \dfrac{12}{8}=1{,}5$.<br>
     On en déduit que : <br>
-    $CE = 1{,}5 \times 24 = {\color{#F15929}\boldsymbol{36}}$ cm.
+    $CE = 1{,}5 \times 24 = {\color{#8B3C52}\boldsymbol{36}}$ cm.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -100,7 +100,7 @@ Dans le triangle $CEN$, les droites $(EN)$ et $(YR)$ sont parallèles. <br>
 ---Q---
 Après une augmentation de $2~\%$ le prix de mon ordinateur est maintenant $1\,238{,}28$ €. Calculer son prix avant l'augmentation.
 ---CORR---
-Une augmentation de $2$ % revient à multiplier par $100~\% + 2~\%=102~\% = 1{,}02$.<br>Pour retrouver le prix initial, on va donc diviser le prix final par $1{,}02$.<br>$1\,238{,}28\div1{,}02 = 1\,214$<br>Avant l'augmentation le prix de mon ordinateur était de ${\color{#F15929}\boldsymbol{1\,214}}$€.
+Une augmentation de $2$ % revient à multiplier par $100~\% + 2~\%=102~\% = 1{,}02$.<br>Pour retrouver le prix initial, on va donc diviser le prix final par $1{,}02$.<br>$1\,238{,}28\div1{,}02 = 1\,214$<br>Avant l'augmentation le prix de mon ordinateur était de ${\color{#8B3C52}\boldsymbol{1\,214}}$€.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2 " >}}
 ---Q---
@@ -115,13 +115,13 @@ Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous
 ---CORR---
 Le polygone a $8$ côtés de longueur $3{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
-$8 \times 3{,}5 = {\color{#F15929}\boldsymbol{28}}$ cm.
+$8 \times 3{,}5 = {\color{#8B3C52}\boldsymbol{28}}$ cm.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4 " >}}
 ---Q---
 Compléter à l'aide des longueurs $WV$, $WX$ et $VX$ : <br>$\cos\left(\widehat{WVX}\right)=$$\dfrac{\ldots}{\ldots}$<br><img src="3autog13_2_08.svg" alt="3autog13_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-$WVX$ est rectangle en $W$ donc :<br>$\cos\left(\widehat{WVX}\right)={\color{#F15929}\boldsymbol{\dfrac{WV}{VX}}}$
+$WVX$ est rectangle en $W$ donc :<br>$\cos\left(\widehat{WVX}\right)={\color{#8B3C52}\boldsymbol{\dfrac{WV}{VX}}}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

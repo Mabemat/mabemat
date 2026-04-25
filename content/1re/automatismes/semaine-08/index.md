@@ -1,6 +1,6 @@
 ---
 title: "Semaine 8 — Équations, pourcentages et évolutions"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 8
 weight: 8

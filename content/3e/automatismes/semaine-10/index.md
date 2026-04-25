@@ -16,12 +16,12 @@ Dans une association, $40\%$ des 400 membres participent à une campagne de vacc
 Le nombre de membres participant à cette campagne est égal à :<br>
     $400 \times \dfrac{40}{100} = 160$.<br>
     Le nombre de membres ne participant pas à cette campagne est donc égal à :<br>
-    $400 - 160 = {\color{#F15929}\boldsymbol{240}}$.<br>
+    $400 - 160 = {\color{#8B3C52}\boldsymbol{240}}$.<br>
 
  
 Une autre méthode consiste à calculer le pourcentage de membres ne participant pas à cette campagne, qui est égal à $100\% - 40\% = 60\%$.<br>
     Le nombre de membres ne participant pas à cette campagne est donc égal à :<br>
-    $400 \times \dfrac{60}{100} = {\color{#F15929}\boldsymbol{240}}$.
+    $400 \times \dfrac{60}{100} = {\color{#8B3C52}\boldsymbol{240}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -39,7 +39,7 @@ On remarque qu'il y a 8 divisions entre $0$ et $2$, donc chaque division vaut $\
 ---Q---
 Calculer l'aire d'un carré de côté $2\text{ cm}$
 ---CORR---
-$\mathcal{A}_\text{carré} = c \times c$<br>$\mathcal{A}_\text{carré} = 2\text{ cm}  \times 2\text{ cm}$<br>$\mathcal{A}_\text{carré} = {\color{#F15929}\boldsymbol{4}}\text{ cm}^2$
+$\mathcal{A}_\text{carré} = c \times c$<br>$\mathcal{A}_\text{carré} = 2\text{ cm}  \times 2\text{ cm}$<br>$\mathcal{A}_\text{carré} = {\color{#8B3C52}\boldsymbol{4}}\text{ cm}^2$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -53,7 +53,7 @@ On utilise le théorème de Pythagore dans le triangle $FGH$,  rectangle en $G$.
         FH^2&=4^2+5^2\\
         FH^2&=16+25\\
         FH^2&=41\\
-        FH&={\color{#F15929}\boldsymbol{\sqrt{41}}}
+        FH&={\color{#8B3C52}\boldsymbol{\sqrt{41}}}
         \end{aligned}$
         <br> Mentalement : <br>
 La longueur $FH$ est donnée par la racine carrée de la somme des carrés de $4$ et de $5$.<br>
@@ -68,20 +68,20 @@ La valeur cherchée est donc : $\sqrt{41}$.
 ---Q---
 Donner l'écriture scientifique de $570\,000$
 ---CORR---
-$570\,000 = {\color{#F15929}\boldsymbol{5{,}7\times 10^{5}}}$
+$570\,000 = {\color{#8B3C52}\boldsymbol{5{,}7\times 10^{5}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 ---CORR---
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+ $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Calculer le volume d'une pyramide de hauteur $6\text{ m}$ et dont la base est un triangle. La base du triangle mesure $6\text{ m}$ et la hauteur associée à cette base mesure $4\text{ m}$.
 ---CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{6\text{ m} \times 4\text{ m}}{2}\times6\text{ m}=\dfrac{6 \times 4 \times 6}{6}\text{ m}^3={\color{#F15929}\boldsymbol{24\mathbf{ m}^3}}$
+$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{6\text{ m} \times 4\text{ m}}{2}\times6\text{ m}=\dfrac{6 \times 4 \times 6}{6}\text{ m}^3={\color{#8B3C52}\boldsymbol{24\mathbf{ m}^3}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -95,7 +95,7 @@ Dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. <br>
     En remplaçant par les longueurs, on obtient : <br>
     $\dfrac{TM}{TO} = \dfrac{21}{10}=2{,}1$.<br>
     On en déduit que : <br>
-    $TM = 2{,}1 \times 30 = {\color{#F15929}\boldsymbol{63}}$ cm.
+    $TM = 2{,}1 \times 30 = {\color{#8B3C52}\boldsymbol{63}}$ cm.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -135,8 +135,8 @@ $\mathbf{a)}$ À quelle distance le projectile est-il retombé au sol ?
           
 ---CORR---
 T
-$\mathbf{a)}$ Le projectile retombe au sol à une distance de ${\color{#F15929}\boldsymbol{52\,\mathbf{m}}}$, car la courbe passe par le point de coordonnées $(52 ;0)$.<br>
-$\mathbf{b)}$ Le point le plus haut de la courbe a pour abscisse $26$ et pour ordonnée $13$ donc la hauteur maximale est de ${\color{#F15929}\boldsymbol{13\,\mathbf{m}}}$.
+$\mathbf{a)}$ Le projectile retombe au sol à une distance de ${\color{#8B3C52}\boldsymbol{52\,\mathbf{m}}}$, car la courbe passe par le point de coordonnées $(52 ;0)$.<br>
+$\mathbf{b)}$ Le point le plus haut de la courbe a pour abscisse $26$ et pour ordonnée $13$ donc la hauteur maximale est de ${\color{#8B3C52}\boldsymbol{13\,\mathbf{m}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -148,7 +148,7 @@ $1$ <span class="rep">minute</span> = $60$ secondes
 ---Q---
 Dans le triangle $MNO$ rectangle en $M$,<br> $NO=15\text{ m}$ et $\widehat{MNO}=50^\circ$.<br>Calculer $MN$ à $0,1\text{ m}$ près.<br><img src="3autog13_1_05.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans le triangle $MNO$ rectangle en $M$,<br> le cosinus de l'angle $\widehat{MNO}$ est défini par :<br>$\cos\left(\widehat{MNO}\right)=\dfrac{MN}{NO}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(50^\circ\right)}{\color{red}{1}}=\dfrac{MN}{15}$<br>$MN=15 \times \cos\left(50^\circ\right)$<br>soit $MN\approx{\color{#F15929}\boldsymbol{9{,}6}}\text{ m}$.
+Dans le triangle $MNO$ rectangle en $M$,<br> le cosinus de l'angle $\widehat{MNO}$ est défini par :<br>$\cos\left(\widehat{MNO}\right)=\dfrac{MN}{NO}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(50^\circ\right)}{\color{red}{1}}=\dfrac{MN}{15}$<br>$MN=15 \times \cos\left(50^\circ\right)$<br>soit $MN\approx{\color{#8B3C52}\boldsymbol{9{,}6}}\text{ m}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

@@ -14,7 +14,7 @@ Dans une association de 300 membres, $25\%$ des membres ont une taille supérieu
     Combien de membres ont une taille supérieure à 1,75 m ?
 ---CORR---
 Le nombre de membres qui ont une taille supérieure à 1,75 m est égal à :<br>
-    $300 \times \dfrac{25}{100} = \dfrac{7\,500}{100}={\color{#F15929}\boldsymbol{75}}$.
+    $300 \times \dfrac{25}{100} = \dfrac{7\,500}{100}={\color{#8B3C52}\boldsymbol{75}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -32,7 +32,7 @@ On remarque qu'il y a 4 divisions entre $1$ et $2$, donc chaque division vaut $\
 ---Q---
 Calculer l'aire d'un disque de rayon $2\text{ cm}$
 ---CORR---
-$\mathcal{A}_\text{disque} = r \times r \times \pi$<br>$\mathcal{A}_\text{disque} = 2\text{ cm} \times 2\text{ cm} \times \pi$<br>$\mathcal{A}_\text{disque} = {\color{#F15929}\boldsymbol{4\pi}}\text{ cm}^2$
+$\mathcal{A}_\text{disque} = r \times r \times \pi$<br>$\mathcal{A}_\text{disque} = 2\text{ cm} \times 2\text{ cm} \times \pi$<br>$\mathcal{A}_\text{disque} = {\color{#8B3C52}\boldsymbol{4\pi}}\text{ cm}^2$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -46,7 +46,7 @@ Donner la lettre correspondante.<br>Une voiture roule à $100$ km/h. Combien de 
     <strong>D</strong>. 2 h 12 min
 ---CORR---
 Pour parcourir $110$ km à $100$ km/h, il faut :<br>
-    $\dfrac{110}{100}\text{h}=\dfrac{11}{10}\text{h}=\dfrac{10}{10}+\dfrac{1}{10}\text{h}=1+\dfrac{1}{10}\text{h}={\color{#F15929}\boldsymbol{1\mathbf{h }06\mathbf{ min}}}$.<br>
+    $\dfrac{110}{100}\text{h}=\dfrac{11}{10}\text{h}=\dfrac{10}{10}+\dfrac{1}{10}\text{h}=1+\dfrac{1}{10}\text{h}={\color{#8B3C52}\boldsymbol{1\mathbf{h }06\mathbf{ min}}}$.<br>
     La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
@@ -57,13 +57,13 @@ Pour parcourir $110$ km à $100$ km/h, il faut :<br>
 ---Q---
 Donner l'écriture décimale de $3{,}32 \times 10^{-1}$.
 ---CORR---
-$3{,}32 \times 10^{-1} = {\color{#F15929}\mathbf{0{,}332}}$.
+$3{,}32 \times 10^{-1} = {\color{#8B3C52}\mathbf{0{,}332}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Il est indiqué sur la bouteille de nettoyant pour sol qu'il faut  $48$ cL de  nettoyant pour sol pour $6$ L d'eau.<br> On veut utiliser $7$ L d'eau.<br> Quel volume de nettoyant pour sol doit-on prévoir ?
 ---CORR---
-Commençons par trouver combien est-ce qu'il faut de nettoyant pour sol pour $1$ L d'eau. <br> 6 L d'eau, c'est ${\color{#216D9A}\boldsymbol{6}}$ fois $1$ L d'eau. Pour $1$ L d'eau, il faut donc ${\color{#216D9A}\boldsymbol{6}}$ fois moins que $48$ cL.<br>$48$ cL $\div {\color{#216D9A}\boldsymbol{6}} = 8$ cL <br> il faut ${\color{#216D9A}\boldsymbol{8}}$ cL de nettoyant pour sol pour $1$ L d'eau. <br> Cherchons maintenant la quantité nécessaire pour $7$ L d'eau. <br> $7$ L d'eau, c'est ${\color{#216D9A}\boldsymbol{7}}$ fois $1$ L d'eau. Il faut donc ${\color{#216D9A}\boldsymbol{7}}$ fois plus de nettoyant pour sol que $8$ cL :<br> ${\color{#216D9A}\boldsymbol{8}}$ cL $\times {\color{#216D9A}\boldsymbol{7}} = 56$ cL<br> il faut prévoir ${\color{#F15929}\boldsymbol{56}}$ cL de  nettoyant pour sol.
+Commençons par trouver combien est-ce qu'il faut de nettoyant pour sol pour $1$ L d'eau. <br> 6 L d'eau, c'est ${\color{#C5607A}\boldsymbol{6}}$ fois $1$ L d'eau. Pour $1$ L d'eau, il faut donc ${\color{#C5607A}\boldsymbol{6}}$ fois moins que $48$ cL.<br>$48$ cL $\div {\color{#C5607A}\boldsymbol{6}} = 8$ cL <br> il faut ${\color{#C5607A}\boldsymbol{8}}$ cL de nettoyant pour sol pour $1$ L d'eau. <br> Cherchons maintenant la quantité nécessaire pour $7$ L d'eau. <br> $7$ L d'eau, c'est ${\color{#C5607A}\boldsymbol{7}}$ fois $1$ L d'eau. Il faut donc ${\color{#C5607A}\boldsymbol{7}}$ fois plus de nettoyant pour sol que $8$ cL :<br> ${\color{#C5607A}\boldsymbol{8}}$ cL $\times {\color{#C5607A}\boldsymbol{7}} = 56$ cL<br> il faut prévoir ${\color{#8B3C52}\boldsymbol{56}}$ cL de  nettoyant pour sol.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -123,7 +123,7 @@ $$\begin{array}{|l|c|c|c|c|}
 ---Q---
 Sur le graphique ci-dessus, on a représenté le prix en euros en fonction de la masse en kilogrammes de bananes achetés.<br>Quel est le prix à payer pour l'achat de $1{,}7$ kg de bananes ?<br><img src="3autop09_5_04.svg" alt="3autop09_5" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Le prix à payer pour l'achat de $1{,}7$ kg de bananes est de ${\color{#F15929}\boldsymbol{2{,}20}}$ €.<br><img src="3autop09_5_corr_05.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Le prix à payer pour l'achat de $1{,}7$ kg de bananes est de ${\color{#8B3C52}\boldsymbol{2{,}20}}$ €.<br><img src="3autop09_5_corr_05.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -136,8 +136,8 @@ $1$ <span class="rep">jour</span> = $24$ heures
 Une élève souhaite réaliser un programme pour dessiner un carré.  
     Par quelles valeurs doit-elle compléter les lignes 3 et 5 ?<br><img src="scratch_3autoi01_06.svg" alt="scratch_3autoi01" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Pour obtenir un carré, il faut répéter ${\color{#F15929}\mathbf{4}}$ fois  
-    et tourner de $\dfrac{360}{4} = {\color{#F15929}\mathbf{90}}$ degrés.
+Pour obtenir un carré, il faut répéter ${\color{#8B3C52}\mathbf{4}}$ fois  
+    et tourner de $\dfrac{360}{4} = {\color{#8B3C52}\mathbf{90}}$ degrés.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

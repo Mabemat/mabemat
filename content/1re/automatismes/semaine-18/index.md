@@ -1,6 +1,6 @@
 ---
 title: "Semaine 18 — Calcul en contexte et statistiques"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 18
 weight: 18

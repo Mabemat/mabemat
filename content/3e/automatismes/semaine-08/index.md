@@ -12,7 +12,7 @@ weight: 8
 ---Q---
 Compléter avec le signe < ou >.<br>$$-0{,}3 \quad \ldots   \quad-0{,}8$$
 ---CORR---
-$-0{,}3 \quad {\color{#F15929}\boldsymbol{>}} \quad -0{,}8$
+$-0{,}3 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -0{,}8$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -56,7 +56,7 @@ On utilise le théorème de Pythagore dans le triangle $IJK$,  rectangle en $J$.
         JK^2&=6^2-5^2\\
         JK^2&=36-25\\
         JK^2&=11\\
-        JK&={\color{#F15929}\boldsymbol{\sqrt{11}}}
+        JK&={\color{#8B3C52}\boldsymbol{\sqrt{11}}}
         \end{aligned}$
 
 <br>
@@ -89,7 +89,7 @@ Placer les points : $D(-0{,}049), E(-0{,}037), F(-0{,}019)$.
 ---Q---
 Calculer le périmètre exact d'un cercle de rayon $3\text{ cm}$
 ---CORR---
-$\mathcal{P}_\text{cercle} = 2 \times r \times \pi$<br>$\mathcal{P}_\text{cercle} = 2 \times 3\text{ cm} \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#F15929}\boldsymbol{6\pi}}\text{ cm}$
+$\mathcal{P}_\text{cercle} = 2 \times r \times \pi$<br>$\mathcal{P}_\text{cercle} = 2 \times 3\text{ cm} \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#8B3C52}\boldsymbol{6\pi}}\text{ cm}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -114,7 +114,7 @@ $\dfrac{MN}{MK}=\dfrac{MO}{ML}=\dfrac{NO}{KL}$<br><strong>Remarque</strong><br>O
 ---Q---
 Donner l'écriture décimale de $8{,}67 \times 10^{-1}$.
 ---CORR---
-$8{,}67 \times 10^{-1} = {\color{#F15929}\mathbf{0{,}867}}$.
+$8{,}67 \times 10^{-1} = {\color{#8B3C52}\mathbf{0{,}867}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -122,7 +122,7 @@ Sur une carte sur laquelle $6\text{ cm}$ représente $15{,}6\text{ km}$ dans la 
   Béatrice mesure son trajet et elle trouve une distance de $7\text{ cm}$. <br>À quelle distance cela correspond dans la réalité ?
 ---CORR---
 Commençons par trouver à combien de $\text{km}$ dans la réalité, $1\text{ cm}$ sur la carte correspond. <br>
-  $1\text{ cm}$, c'est ${\color{#216D9A}\boldsymbol{6}}$ fois moins que $6\text{ cm}$.<br>$15{,}6\text{ km}\div {\color{#216D9A}\boldsymbol{6}} = 2{,}6\text{ km}$ <br> $1\text{ cm}$ sur la carte correspond donc à ${\color{#216D9A}\boldsymbol{2{,}6}}\text{ km}$ dans la réalité. <br> Cherchons maintenant la distance réelle de son trajet. <br> $7\text{ cm}$, c'est ${\color{#216D9A}\boldsymbol{7}}$ fois $1\text{ cm}$.<br> ${\color{#216D9A}\boldsymbol{2{,}6}}\text{ km}\times {\color{#216D9A}\boldsymbol{7}} = 18{,}2\text{ km}$<br> son trajet correspond en réalité à une distance de ${\color{#F15929}\boldsymbol{18{,}2}}\text{ km}$.
+  $1\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{6}}$ fois moins que $6\text{ cm}$.<br>$15{,}6\text{ km}\div {\color{#C5607A}\boldsymbol{6}} = 2{,}6\text{ km}$ <br> $1\text{ cm}$ sur la carte correspond donc à ${\color{#C5607A}\boldsymbol{2{,}6}}\text{ km}$ dans la réalité. <br> Cherchons maintenant la distance réelle de son trajet. <br> $7\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{7}}$ fois $1\text{ cm}$.<br> ${\color{#C5607A}\boldsymbol{2{,}6}}\text{ km}\times {\color{#C5607A}\boldsymbol{7}} = 18{,}2\text{ km}$<br> son trajet correspond en réalité à une distance de ${\color{#8B3C52}\boldsymbol{18{,}2}}\text{ km}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---

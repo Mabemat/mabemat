@@ -1,6 +1,6 @@
 ---
 title: "Semaine 4 — Puissances, équations et pourcentages"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 4
 weight: 4

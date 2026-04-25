@@ -12,7 +12,7 @@ weight: 28
 ---Q---
 Compléter avec le signe < ou >.<br>$4{,}711 \quad \ldots\ldots   \quad-4{,}465$
 ---CORR---
-$4{,}711 \quad {\color{#F15929}\boldsymbol{>}} \quad -4{,}465$
+$4{,}711 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -4{,}465$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -50,7 +50,7 @@ On utilise le théorème de Pythagore dans le triangle $IJK$,  rectangle en $J$.
         JK^2&=10^2-2^2\\
         JK^2&=100-4\\
         JK^2&=96\\
-        JK&={\color{#F15929}\boldsymbol{\sqrt{96}}}
+        JK&={\color{#8B3C52}\boldsymbol{\sqrt{96}}}
         \end{aligned}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
@@ -77,7 +77,7 @@ Placer les points : $P(-3{,}5), Q(-2{,}2), R(0{,}3)$.
 ---Q---
 Calculer le périmètre exact des figures suivantes.<br>Cercle de rayon $4\text{ cm}$
 ---CORR---
-$\mathcal{P}_\text{cercle} = 2 \times r \times \pi$<br>$\mathcal{P}_\text{cercle} = 2 \times 4\text{ cm} \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#F15929}\boldsymbol{8\pi}}\text{ cm}$
+$\mathcal{P}_\text{cercle} = 2 \times r \times \pi$<br>$\mathcal{P}_\text{cercle} = 2 \times 4\text{ cm} \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#8B3C52}\boldsymbol{8\pi}}\text{ cm}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -102,7 +102,7 @@ $\dfrac{LM}{LJ}=\dfrac{LN}{LK}=\dfrac{MN}{JK}$<br><br><strong>Remarque</strong><
 ---Q---
 Donner l'écriture décimale de $9{,}1 \times 10^{3}$.
 ---CORR---
-$9{,}1 \times 10^{3} = {\color{#F15929}\mathbf{9\,100}}$.
+$9{,}1 \times 10^{3} = {\color{#8B3C52}\mathbf{9\,100}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -110,7 +110,7 @@ Sur une carte sur laquelle $3\text{ cm}$ représente $14{,}4\text{ km}$ dans la 
   Wendy mesure son trajet et elle trouve une distance de $10\text{ cm}$. <br>À quelle distance cela correspond dans la réalité ?
 ---CORR---
 Commençons par trouver à combien de $\text{km}$ dans la réalité, $1\text{ cm}$ sur la carte correspond. <br>
-  $1\text{ cm}$, c'est ${\color{#216D9A}\boldsymbol{3}}$ fois moins que $3\text{ cm}$.<br>$14{,}4\text{ km}\div {\color{#216D9A}\boldsymbol{3}} = 4{,}8\text{ km}$ <br> $1\text{ cm}$ sur la carte correspond donc à ${\color{#216D9A}\boldsymbol{4{,}8}}\text{ km}$ dans la réalité. <br> Cherchons maintenant la distance réelle de son trajet. <br> $10\text{ cm}$, c'est ${\color{#216D9A}\boldsymbol{10}}$ fois $1\text{ cm}$.<br> ${\color{#216D9A}\boldsymbol{4{,}8}}\text{ km}\times {\color{#216D9A}\boldsymbol{10}} = 48\text{ km}$<br> son trajet correspond en réalité à une distance de ${\color{#F15929}\boldsymbol{48}}\text{ km}$.
+  $1\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{3}}$ fois moins que $3\text{ cm}$.<br>$14{,}4\text{ km}\div {\color{#C5607A}\boldsymbol{3}} = 4{,}8\text{ km}$ <br> $1\text{ cm}$ sur la carte correspond donc à ${\color{#C5607A}\boldsymbol{4{,}8}}\text{ km}$ dans la réalité. <br> Cherchons maintenant la distance réelle de son trajet. <br> $10\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{10}}$ fois $1\text{ cm}$.<br> ${\color{#C5607A}\boldsymbol{4{,}8}}\text{ km}\times {\color{#C5607A}\boldsymbol{10}} = 48\text{ km}$<br> son trajet correspond en réalité à une distance de ${\color{#8B3C52}\boldsymbol{48}}\text{ km}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -122,7 +122,7 @@ Cône de révolution
 ---Q---
 Dans le triangle $HIJ$ rectangle en $H$,<br> $HI=7\text{ cm}$ et $\widehat{HIJ}=49^\circ$.<br>Calculer $IJ$ à $0,1\text{ cm}$ près.<br><br><br><img src="3autog13_1_07.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans le triangle $HIJ$ rectangle en $H$,<br> le cosinus de l'angle $\widehat{HIJ}$ est défini par :<br>$\cos\left(\widehat{HIJ}\right)=\dfrac{HI}{IJ}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(49^\circ\right)}{\color{red}{1}}=\dfrac{7}{IJ}$<br><br>$IJ=\dfrac{7 \times\color{red}{1}}{\cos\left(49^\circ\right)}$<br>soit $IJ\approx{\color{#F15929}\boldsymbol{10{,}7}}\text{ cm}$.
+Dans le triangle $HIJ$ rectangle en $H$,<br> le cosinus de l'angle $\widehat{HIJ}$ est défini par :<br>$\cos\left(\widehat{HIJ}\right)=\dfrac{HI}{IJ}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(49^\circ\right)}{\color{red}{1}}=\dfrac{7}{IJ}$<br><br>$IJ=\dfrac{7 \times\color{red}{1}}{\cos\left(49^\circ\right)}$<br>soit $IJ\approx{\color{#8B3C52}\boldsymbol{10{,}7}}\text{ cm}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

@@ -1,6 +1,6 @@
 ---
 title: "Semaine 9 — Équations-produits, évolutions et statistiques"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 9
 weight: 9

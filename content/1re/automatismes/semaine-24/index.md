@@ -1,6 +1,6 @@
 ---
 title: "Semaine 24 — Droites, probabilités et puissances"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 24
 weight: 24

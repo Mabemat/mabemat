@@ -12,7 +12,7 @@ weight: 24
 ---Q---
 Calculer le carré de $5$
 ---CORR---
-$5^2={\color{#F15929}\boldsymbol{25}}$
+$5^2={\color{#8B3C52}\boldsymbol{25}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -24,7 +24,7 @@ La hauteur de la valve lorsque la distance parcourue est de $190\text{ cm}$ est 
 ---Q---
 Convertir $9\,851\,\text{s}$ en heures, minutes et secondes.
 ---CORR---
-$9\,851\,\text{s} = (2\times3\,600\,\text{s})+2\,651\,\text{s} =2\,\text{h}+(44\times60\,\text{s})+11\,\text{s}= {\color{#F15929}\boldsymbol{2\,\mathbf{h}\,44\,\mathbf{min}\,11\,\mathbf{s}}}$
+$9\,851\,\text{s} = (2\times3\,600\,\text{s})+2\,651\,\text{s} =2\,\text{h}+(44\times60\,\text{s})+11\,\text{s}= {\color{#8B3C52}\boldsymbol{2\,\mathbf{h}\,44\,\mathbf{min}\,11\,\mathbf{s}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -41,7 +41,7 @@ On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $X$.
         XY^2&=10^2-3^2\\
         XY^2&=100-9\\
         XY^2&=91\\
-        XY&={\color{#F15929}\boldsymbol{\sqrt{91}}}
+        XY&={\color{#8B3C52}\boldsymbol{\sqrt{91}}}
         \end{aligned}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
@@ -52,7 +52,7 @@ On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $X$.
 ---Q---
 Donner la valeur décimale de  $\dfrac{5}{2}$.
 ---CORR---
-$\dfrac{5}{2}={\color{#F15929}\boldsymbol{2{,}5}}$<br>
+$\dfrac{5}{2}={\color{#8B3C52}\boldsymbol{2{,}5}}$<br>
           <br> Mentalement : <br>
           $\dfrac{5}{2}=5\div 2=2{,}5$.
 {{< /auto3-exo >}}
@@ -60,7 +60,7 @@ $\dfrac{5}{2}={\color{#F15929}\boldsymbol{2{,}5}}$<br>
 ---Q---
 Factoriser :  $C=11n+22k$
 ---CORR---
-$C=11n+22k$<br>$\phantom{C}=11n+11\times2k$<br>$\phantom{C}=$ ${\color{#F15929}\boldsymbol{11(n+2k)}}$
+$C=11n+22k$<br>$\phantom{C}=11n+11\times2k$<br>$\phantom{C}=$ ${\color{#8B3C52}\boldsymbol{11(n+2k)}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -93,7 +93,7 @@ $\dfrac{NO}{NL}=\dfrac{NP}{NM}=\dfrac{OP}{LM}$<br><br><strong>Remarque</strong><
 ---Q---
 Compléter avec le signe < ou >.<br>$7{,}21 \quad \ldots\ldots   \quad7{,}4$
 ---CORR---
-$7{,}21 \quad {\color{#F15929}\boldsymbol{<}} \quad 7{,}4$
+$7{,}21 \quad {\color{#8B3C52}\boldsymbol{<}} \quad 7{,}4$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -114,7 +114,7 @@ $4x-9=10$  <br>
 ---Q---
 Compléter.<br>Un angle droit mesure … $^\circ$.
 ---CORR---
-Un angle droit mesure ${\color{#F15929}\boldsymbol{90}}^\circ$.
+Un angle droit mesure ${\color{#8B3C52}\boldsymbol{90}}^\circ$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -132,7 +132,7 @@ $VUW$ est rectangle en $V$ donc :
 
 $$
     \cos\left(\widehat{VUW}\right)
-    = {\color{#F15929}\mathbf{\dfrac{VU}{UW}}}.
+    = {\color{#8B3C52}\mathbf{\dfrac{VU}{UW}}}.
     $$
 
     $VUT$ est rectangle en $T$ donc :
@@ -140,7 +140,7 @@ $$
 
 $$
     \cos\left(\widehat{VUW}\right)
-    = {\color{#F15929}\mathbf{\dfrac{UT}{VU}}}.
+    = {\color{#8B3C52}\mathbf{\dfrac{UT}{VU}}}.
     $$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}

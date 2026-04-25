@@ -12,19 +12,19 @@ weight: 26
 ---Q---
 Simplifier le plus possible la fraction suivante  $\dfrac{21}{14}$
 ---CORR---
-$\dfrac{21}{14}=\dfrac{3\times\cancel{7}}{2\times\cancel{7}}={\color{#F15929}\boldsymbol{\dfrac{3}{2}}}$
+$\dfrac{21}{14}=\dfrac{3\times\cancel{7}}{2\times\cancel{7}}={\color{#8B3C52}\boldsymbol{\dfrac{3}{2}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 $b$ étant un nombre entier, exprimer l'entier suivant en fonction de $b$.
 ---CORR---
-Le successeur de $b$ peut se noter : ${\color{#F15929}\boldsymbol{b+1}}$ ou ${\color{#F15929}\boldsymbol{1+b}}$.
+Le successeur de $b$ peut se noter : ${\color{#8B3C52}\boldsymbol{b+1}}$ ou ${\color{#8B3C52}\boldsymbol{1+b}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Déterminer les coordonnées respectives des points $H$, $I$, $G$ et $J$<br><br><img src="3autog01_2_01.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Les coordonnées respectives des points sont :<br> $H({\color{#F15929}\boldsymbol{-3}};{\color{#F15929}\boldsymbol{0}})$, $I({\color{#F15929}\boldsymbol{3{,}25}};{\color{#F15929}\boldsymbol{2{,}75}})$, $G({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{-4}})$ et $J({\color{#F15929}\boldsymbol{2{,}75}};{\color{#F15929}\boldsymbol{-4{,}5}})$
+Les coordonnées respectives des points sont :<br> $H({\color{#8B3C52}\boldsymbol{-3}};{\color{#8B3C52}\boldsymbol{0}})$, $I({\color{#8B3C52}\boldsymbol{3{,}25}};{\color{#8B3C52}\boldsymbol{2{,}75}})$, $G({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{-4}})$ et $J({\color{#8B3C52}\boldsymbol{2{,}75}};{\color{#8B3C52}\boldsymbol{-4{,}5}})$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -39,7 +39,7 @@ NO^2&=MN^2+MO^2\\
 NO^2&=\sqrt{8}^2+2^2\\
 NO^2&=8+4\\
 NO^2&=12\\
-NO&={\color{#F15929}\boldsymbol{\sqrt{12}}}
+NO&={\color{#8B3C52}\boldsymbol{\sqrt{12}}}
 \end{aligned}$
 
 {{< /auto3-exo >}}
@@ -51,19 +51,19 @@ NO&={\color{#F15929}\boldsymbol{\sqrt{12}}}
 ---Q---
 Calculer.<br>$ (+6)  \times (-4)$
 ---CORR---
-$ {\color{blue}\boldsymbol{(+6)}} \times {\color{#008002}\boldsymbol{(-4)}}  = {\color{#f15929}\boldsymbol{(-24)}} $
+$ {\color{blue}\boldsymbol{(+6)}} \times {\color{#A4485F}\boldsymbol{(-4)}}  = {\color{#8B3C52}\boldsymbol{(-24)}} $
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Résoudre les équations suivantes.<br>$-5a+4=6$
 ---CORR---
-$-5a+4=6$<br>On soustrait $4$ aux deux membres.<br>$-5a+4{\color{#216D9A}\boldsymbol{\,\,-\,\,4}}=6{\color{#216D9A}\boldsymbol{\,\,-\,\,4}}$<br>$-5a=2$<br>On divise les deux membres par $-5$.<br>$-5a{\color{#216D9A}\boldsymbol{\,\div\,(-5)}}=2{\color{#216D9A}\boldsymbol{\,\div\,(-5)}}$<br>$a=-\dfrac{2}{5}$<br> La solution de l'équation $-5a+4=6$ est ${\color{#F15929}\boldsymbol{-\dfrac{2}{5}}}$.
+$-5a+4=6$<br>On soustrait $4$ aux deux membres.<br>$-5a+4{\color{#C5607A}\boldsymbol{\,\,-\,\,4}}=6{\color{#C5607A}\boldsymbol{\,\,-\,\,4}}$<br>$-5a=2$<br>On divise les deux membres par $-5$.<br>$-5a{\color{#C5607A}\boldsymbol{\,\div\,(-5)}}=2{\color{#C5607A}\boldsymbol{\,\div\,(-5)}}$<br>$a=-\dfrac{2}{5}$<br> La solution de l'équation $-5a+4=6$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{2}{5}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 $EXW$ est un triangle rectangle en $X$ et l'angle $\widehat{XEW}$ mesure $49^\circ$.<br>Quelle est la mesure de l'angle $\widehat{XWE}$ ?
 ---CORR---
-Le triangle $EXW$ étant rectangle en $X$, les angles $\widehat{XEW}$ et $\widehat{XWE}$ sont complémentaires (leur somme est égale à $90^\circ$).<br>D'où : $\widehat{XWE}+ \widehat{XEW}=90^\circ$<br>D'où : $\widehat{XWE}=90^\circ-49^\circ=41^\circ$<br>L'angle ${\color{black}\boldsymbol{\widehat{XWE}}}$ mesure ${\color{#F15929}\boldsymbol{41}}^\circ$.<br>
+Le triangle $EXW$ étant rectangle en $X$, les angles $\widehat{XEW}$ et $\widehat{XWE}$ sont complémentaires (leur somme est égale à $90^\circ$).<br>D'où : $\widehat{XWE}+ \widehat{XEW}=90^\circ$<br>D'où : $\widehat{XWE}=90^\circ-49^\circ=41^\circ$<br>L'angle ${\color{black}\boldsymbol{\widehat{XWE}}}$ mesure ${\color{#8B3C52}\boldsymbol{41}}^\circ$.<br>
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -77,7 +77,7 @@ Dans le triangle $RPA$, les droites $(PA)$ et $(SL)$ sont parallèles. <br>
     En remplaçant par les longueurs, on obtient : <br>
     $\dfrac{RP}{RL} = \dfrac{10}{4}=2{,}5$.<br>
     On en déduit que : <br>
-    $RP = 2{,}5 \times 8 = {\color{#F15929}\boldsymbol{20}}$ cm.
+    $RP = 2{,}5 \times 8 = {\color{#8B3C52}\boldsymbol{20}}$ cm.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -87,7 +87,7 @@ Dans le triangle $RPA$, les droites $(PA)$ et $(SL)$ sont parallèles. <br>
 ---Q---
 Depuis 2025 le nombre d'élèves d'un collège a augmenté de $15\,\%$. Il y a maintenant $1\,357$ élèves. Calculer le nombre d'élèves en 2025 dans cet établissement.
 ---CORR---
-Une augmentation de $15\,\%$ revient à multiplier par $100\,\% + 15\,\% = 115\,\% = 1{,}15$.<br>Pour retrouver le nombre initial d'élèves, on va donc diviser le nombre actuel d'élèves par $1{,}15$.<br>$1\,357\div 1{,}15 = 1\,180$<br>En 2025, il y avait ${\color{#F15929}\boldsymbol{1\,180}}$ élèves dans ce collège.
+Une augmentation de $15\,\%$ revient à multiplier par $100\,\% + 15\,\% = 115\,\% = 1{,}15$.<br>Pour retrouver le nombre initial d'élèves, on va donc diviser le nombre actuel d'élèves par $1{,}15$.<br>$1\,357\div 1{,}15 = 1\,180$<br>En 2025, il y avait ${\color{#8B3C52}\boldsymbol{1\,180}}$ élèves dans ce collège.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -101,7 +101,7 @@ Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous
 ---CORR---
 	Le polygone a $8$ côtés de longueur $7{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
-$8 \times 7{,}5 = {\color{#F15929}\boldsymbol{60}}$ cm.
+$8 \times 7{,}5 = {\color{#8B3C52}\boldsymbol{60}}$ cm.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---

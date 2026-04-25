@@ -12,19 +12,19 @@ weight: 9
 ---Q---
 Calculer le carré de $8$
 ---CORR---
-$8^2={\color{#F15929}\boldsymbol{64}}$
+$8^2={\color{#8B3C52}\boldsymbol{64}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Sur le graphique ci-dessus, on a représenté le prix en euros en fonction de la masse en kilogrammes d'ananas achetés.<br>Quel est le prix à payer pour l'achat de $1{,}5$ kg d'ananas ?<br><img src="3autop09_5_01.svg" alt="3autop09_5" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Le prix à payer pour l'achat de $1{,}5$ kg d'ananas est de ${\color{#F15929}\boldsymbol{3{,}90}}$ €.<br><img src="3autop09_5_corr_02.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Le prix à payer pour l'achat de $1{,}5$ kg d'ananas est de ${\color{#8B3C52}\boldsymbol{3{,}90}}$ €.<br><img src="3autop09_5_corr_02.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Convertir $1\,472\,\text{h}$  en semaines, jours et heures.
 ---CORR---
-$1\,472\,\text{h} = (61\times24\,\text{h}) + 8\,\text{h} = 61\,\text{j}\,8\,\text{h} = (8\times7\,\text{j}) + 5\,\text{j} + 8\,\text{h} = {\color{#F15929}\boldsymbol{8\,\mathbf{semaines}\,5\,\mathbf{j}\,8\,\mathbf{h}}}$
+$1\,472\,\text{h} = (61\times24\,\text{h}) + 8\,\text{h} = 61\,\text{j}\,8\,\text{h} = (8\times7\,\text{j}) + 5\,\text{j} + 8\,\text{h} = {\color{#8B3C52}\boldsymbol{8\,\mathbf{semaines}\,5\,\mathbf{j}\,8\,\mathbf{h}}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -43,7 +43,7 @@ $$\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
 <strong>a.</strong> Déterminer l'effectif manquant.<br>
 <strong>b.</strong> Déterminer les fréquences pour chaque style de musique (en pourcentage, arrondir au dixième si besoin).<br>
 ---CORR---
-<strong>a.</strong> L'effectif manquant est celui du soul. Soit $e$ cet effectif.<br>$e=250-( 18 + 7 + 16 + 5 + 42 + 56 + 34 + 38 )$<br>$e=250-216$<br>$e={\color{#F15929}\boldsymbol{34}}$<br>
+<strong>a.</strong> L'effectif manquant est celui du soul. Soit $e$ cet effectif.<br>$e=250-( 18 + 7 + 16 + 5 + 42 + 56 + 34 + 38 )$<br>$e=250-216$<br>$e={\color{#8B3C52}\boldsymbol{34}}$<br>
 <strong>b.</strong> Calculs des fréquences.<br>On rappelle que pour la fréquence relative à une valeur est donnée par le quotient : $\dfrac{\text{effectif de la valeur}}{\text{effectif total}}$<br>
 
  
@@ -57,7 +57,7 @@ $$ \def\arraystretch{2}
 \hline
   \mathbf{Fréquences} & \dfrac{18}{250} & \dfrac{7}{250} & \dfrac{16}{250} & \dfrac{5}{250} & \dfrac{42}{250} & \dfrac{56}{250} & \dfrac{34}{250} & \dfrac{34}{250} & \dfrac{38}{250}\\
 \hline
-   \mathbf{Fréquences\, en\, pourcentages} & {\color{#F15929}\boldsymbol{7{,}2 \,\%}} & {\color{#F15929}\boldsymbol{2{,}8 \,\%}} & {\color{#F15929}\boldsymbol{6{,}4 \,\%}} & {\color{#F15929}\boldsymbol{2 \,\%}} & {\color{#F15929}\boldsymbol{16{,}8 \,\%}} & {\color{#F15929}\boldsymbol{22{,}4 \,\%}} & {\color{#F15929}\boldsymbol{13{,}6 \,\%}} & {\color{#F15929}\boldsymbol{13{,}6 \,\%}} & {\color{#F15929}\boldsymbol{15{,}2 \,\%}}\\
+   \mathbf{Fréquences\, en\, pourcentages} & {\color{#8B3C52}\boldsymbol{7{,}2 \,\%}} & {\color{#8B3C52}\boldsymbol{2{,}8 \,\%}} & {\color{#8B3C52}\boldsymbol{6{,}4 \,\%}} & {\color{#8B3C52}\boldsymbol{2 \,\%}} & {\color{#8B3C52}\boldsymbol{16{,}8 \,\%}} & {\color{#8B3C52}\boldsymbol{22{,}4 \,\%}} & {\color{#8B3C52}\boldsymbol{13{,}6 \,\%}} & {\color{#8B3C52}\boldsymbol{13{,}6 \,\%}} & {\color{#8B3C52}\boldsymbol{15{,}2 \,\%}}\\
 \hline
  \end{array}
  $$
@@ -110,13 +110,13 @@ $$\def\arraystretch{2}
 ---Q---
 $c$ étant un nombre entier, exprimer l'entier précédent en fonction de $c$.
 ---CORR---
-Le prédécesseur de $c$ peut se noter : ${\color{#F15929}\boldsymbol{c-1}}$ ou ${\color{#F15929}\boldsymbol{c+(-1)}}$.
+Le prédécesseur de $c$ peut se noter : ${\color{#8B3C52}\boldsymbol{c-1}}$ ou ${\color{#8B3C52}\boldsymbol{c+(-1)}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Déterminer les coordonnées respectives des points $F$, $C$, $D$, $G$ et $E$<br><br><img src="3autog01_2_03.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Les coordonnées respectives des points sont :<br> $F({\color{#F15929}\boldsymbol{-3}};{\color{#F15929}\boldsymbol{-4}})$, $C({\color{#F15929}\boldsymbol{-4}};{\color{#F15929}\boldsymbol{-3}})$, $D({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{0}})$, $G({\color{#F15929}\boldsymbol{-4}};{\color{#F15929}\boldsymbol{2}})$ et $E({\color{#F15929}\boldsymbol{-2}};{\color{#F15929}\boldsymbol{-1}})$
+Les coordonnées respectives des points sont :<br> $F({\color{#8B3C52}\boldsymbol{-3}};{\color{#8B3C52}\boldsymbol{-4}})$, $C({\color{#8B3C52}\boldsymbol{-4}};{\color{#8B3C52}\boldsymbol{-3}})$, $D({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{0}})$, $G({\color{#8B3C52}\boldsymbol{-4}};{\color{#8B3C52}\boldsymbol{2}})$ et $E({\color{#8B3C52}\boldsymbol{-2}};{\color{#8B3C52}\boldsymbol{-1}})$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -126,7 +126,7 @@ Entre $4$h et $12$h, de combien de degrés la température a-t-elle augmenté ?<
 <br><br><img src="3autop05_04.svg" alt="3autop05" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 D’après le graphique, à $4$h, la température est de $10$$^\circ$ C et à $12$h, elle est de $27{,}5$$^\circ$ C.<br>
-    L’augmentation de la température entre $4$h et $12$h est donc de : $27{,}5-10={\color{#F15929}\boldsymbol{17{,}5}}$$^\circ$ C.
+    L’augmentation de la température entre $4$h et $12$h est donc de : $27{,}5-10={\color{#8B3C52}\boldsymbol{17{,}5}}$$^\circ$ C.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -136,13 +136,13 @@ D’après le graphique, à $4$h, la température est de $10$$^\circ$ C et à $1
 ---Q---
 Calculer.<br>$ (+3)  \times (-10)$
 ---CORR---
-$ {\color{blue}\boldsymbol{(+3)}} \times {\color{#008002}\boldsymbol{(-10)}}  = {\color{#f15929}\boldsymbol{(-30)}} $
+$ {\color{blue}\boldsymbol{(+3)}} \times {\color{#A4485F}\boldsymbol{(-10)}}  = {\color{#8B3C52}\boldsymbol{(-30)}} $
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Résoudre l'équation suivante : $\dfrac{x}{10}=13$
 ---CORR---
-$\dfrac{x}{10}=13$<br>$\dfrac{x}{10}{\color{blue}\boldsymbol{\times\,10}}=13{\color{blue}\boldsymbol{\times\,10}}$<br>$x=130$<br> La solution de l'équation $\dfrac{x}{10}=13$ est ${\color{#F15929}\boldsymbol{130}}$.
+$\dfrac{x}{10}=13$<br>$\dfrac{x}{10}{\color{blue}\boldsymbol{\times\,10}}=13{\color{blue}\boldsymbol{\times\,10}}$<br>$x=130$<br> La solution de l'équation $\dfrac{x}{10}=13$ est ${\color{#8B3C52}\boldsymbol{130}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---

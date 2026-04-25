@@ -8,6 +8,7 @@ has_cours: true
 has_exercices: false
 has_qcm: false
 has_brevet: false
+has_brevetImpr : false
 competences:
   - "Comprendre la notion de fonction"
   - "Calculer images et antécédents"

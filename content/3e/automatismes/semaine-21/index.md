@@ -56,7 +56,7 @@ $$
 ---Q---
 Calculer $A = (x + 13)(x + 9)$, pour $x = -3$.
 ---CORR---
-$A = (-3 + 13) \times (-3 + 9)$<br>$A = 10 \times 6$<br>$A = {\color{#F15929}\boldsymbol{60}}$
+$A = (-3 + 13) \times (-3 + 9)$<br>$A = 10 \times 6$<br>$A = {\color{#8B3C52}\boldsymbol{60}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -79,7 +79,7 @@ $$
 ---CORR---
 La note $13$ a été obtenue $1$ fois.<br>
     Il y a $10$ notes.<br>
-    Donc la fréquence de la note $13$ est : ${\color{#F15929}\boldsymbol{\dfrac{1}{10}}}={\color{#F15929}\boldsymbol{0{,}1}}$, soit $10\thickspace\%$.
+    Donc la fréquence de la note $13$ est : ${\color{#8B3C52}\boldsymbol{\dfrac{1}{10}}}={\color{#8B3C52}\boldsymbol{0{,}1}}$, soit $10\thickspace\%$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -89,7 +89,7 @@ La note $13$ a été obtenue $1$ fois.<br>
 ---Q---
 Compléter avec le signe < ou >.<br>$-7{,}291 \quad \ldots\ldots   \quad-7{,}777$
 ---CORR---
-$-7{,}291 \quad {\color{#F15929}\boldsymbol{>}} \quad -7{,}777$
+$-7{,}291 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -7{,}777$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -158,7 +158,7 @@ Calculer le périmètre du carré $ABCD$ représenté ci-dessous :<br><img src="
 
 	Le polygone a $4$ côtés de longueur $7{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
-$4 \times 7{,}5 = {\color{#F15929}\boldsymbol{30}}$ cm.
+$4 \times 7{,}5 = {\color{#8B3C52}\boldsymbol{30}}$ cm.
 
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}

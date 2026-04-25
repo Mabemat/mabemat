@@ -27,12 +27,16 @@
 
 <section class="br-hero fade-up d1">
   {{ if $chapterPage }}
-  <div class="eyebrow">{{ $chapterPage.Title }} · Exercices type brevet</div>
+  <div class="eyebrow">Chapitre {{ $chapterPage.Params.chapter_number }} · Exercices type brevet</div>
   {{ end }}
   <h1>{{ $displayTitle }}</h1>
   <div class="br-meta">
     <span><span class="dot"></span>DNB 2025–2026</span>
     <span><span class="dot"></span>Corrections détaillées</span>
+    {{ if .Params.chapter }}
+    {{ $chapNum := int (index (split .Params.chapter "-") 1) }}
+    <a href="{{ .RelPermalink }}brevet{{ $chapNum }}.pdf" target="_blank" class="br-print-link"><span class="dot"></span>Exercices imprimables</a>
+    {{ end }}
   </div>
 </section>
 

@@ -8,6 +8,7 @@ has_cours: true
 has_exercices: false
 has_qcm: false
 has_brevet: true
+has_brevetImpr : false
 competences:
   - "Calculer des probabilités"
   - "Utiliser la loi des probabilités complémentaires"

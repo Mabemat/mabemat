@@ -12,13 +12,13 @@ weight: 11
 ---Q---
 Écrire sous la forme de la somme d'un nombre entier et d'une fraction inférieure à 1 puis donner l'écriture décimale.<br>$ \dfrac{11}{10} = \phantom{00}\text{........}\phantom{00} + \dfrac{\phantom{00}\text{........}\phantom{00}}{\phantom{00}\text{........}\phantom{00}} = \phantom{00}\text{........}\phantom{00}  $
 ---CORR---
-$ \dfrac{11}{10} = {\color{#F15929}\boldsymbol{1}}+\dfrac{{\color{#F15929}\boldsymbol{1}}}{{\color{#F15929}\boldsymbol{10}}} = {\color{#F15929}\boldsymbol{1,1}} $
+$ \dfrac{11}{10} = {\color{#8B3C52}\boldsymbol{1}}+\dfrac{{\color{#8B3C52}\boldsymbol{1}}}{{\color{#8B3C52}\boldsymbol{10}}} = {\color{#8B3C52}\boldsymbol{1,1}} $
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Réduire cette expression, si cela est possible : $B=2x+2+x$
 ---CORR---
-$B = 2x+2+x$<br>$B = {\color{#F15929}\boldsymbol{3x+2}}$<br>
+$B = 2x+2+x$<br>$B = {\color{#8B3C52}\boldsymbol{3x+2}}$<br>
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -40,7 +40,7 @@ Donner la lettre correspondante.<br>Une voiture roule à $60$ km/h. Combien de t
     <strong>D</strong>. 2 h 30 min
 ---CORR---
 Pour parcourir $75$ km à $60$ km/h, il faut :<br>
-    $\dfrac{75}{60}\text{h}=\dfrac{5}{4}\text{h}=1+\dfrac{1}{4}\text{h}={\color{#F15929}\boldsymbol{1\mathbf{h }15\mathbf{min}}}$.<br>
+    $\dfrac{75}{60}\text{h}=\dfrac{5}{4}\text{h}=1+\dfrac{1}{4}\text{h}={\color{#8B3C52}\boldsymbol{1\mathbf{h }15\mathbf{min}}}$.<br>
     La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
@@ -51,7 +51,7 @@ Pour parcourir $75$ km à $60$ km/h, il faut :<br>
 ---Q---
 Compléter avec le signe < ou >.<br>$$3{,}4 \quad \ldots   \quad3{,}2$$
 ---CORR---
-$3{,}4 \quad {\color{#F15929}\boldsymbol{>}} \quad 3{,}2$
+$3{,}4 \quad {\color{#8B3C52}\boldsymbol{>}} \quad 3{,}2$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -72,7 +72,7 @@ $4x-8=14$  <br>
 ---Q---
 Compléter.<br>Un angle plein mesure … $^\circ$.
 ---CORR---
-Un angle plein mesure ${\color{#F15929}\boldsymbol{360}}^\circ$.
+Un angle plein mesure ${\color{#8B3C52}\boldsymbol{360}}^\circ$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -110,7 +110,7 @@ Dans une ville de 10000 habitants, $30\%$ des habitants consomment plus de 2 lit
     Combien d'habitants consomment plus de 2 litres d'eau par jour ?
 ---CORR---
 Le nombre d'habitants qui consomment plus de 2 litres d'eau par jour est égal à :<br>
-    $10\,000 \times \dfrac{30}{100} = \dfrac{300\,000}{100}={\color{#F15929}\boldsymbol{3\,000}}$.
+    $10\,000 \times \dfrac{30}{100} = \dfrac{300\,000}{100}={\color{#8B3C52}\boldsymbol{3\,000}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
@@ -126,7 +126,7 @@ Calculer le périmètre du décagone régulier $ABCDEFGHIJ$ représenté ci-dess
 
 	Le polygone a $10$ côtés de longueur $6{,}5$ cm.<br>
 Le périmètre est donc égal à :<br>
-$10 \times 6{,}5 = {\color{#F15929}\boldsymbol{65}}$ cm.
+$10 \times 6{,}5 = {\color{#8B3C52}\boldsymbol{65}}$ cm.
 
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
@@ -141,7 +141,7 @@ Si on choisit $3$ comme nombre de départ, alors variable prend la valeur $3$.<b
     Ensuite, resultat prend la valeur $4 \times 3 = 12$.<br>
     Puis, resultat prend la valeur $12 + 20 = 32$.<br>
     Enfin, resultat prend la valeur $\dfrac{32}{2} = 16$.<br>
-    Résultat final : ${\color{#F15929}\mathbf{16}}$.
+    Résultat final : ${\color{#8B3C52}\mathbf{16}}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

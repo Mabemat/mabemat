@@ -1,6 +1,6 @@
 ---
 title: "Semaine 14 — Calculs en contexte et pourcentages"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 14
 weight: 14

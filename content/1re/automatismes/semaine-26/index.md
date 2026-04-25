@@ -1,6 +1,6 @@
 ---
 title: "Semaine 26 — Équations, statistiques et probabilités"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 26
 weight: 26

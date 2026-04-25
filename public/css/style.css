@@ -140,7 +140,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   background: var(--paper-2); border: 1px solid var(--rule);
   border-radius: 999px; padding: 8px 16px;
   font-family: var(--font-mono); font-size: 11px; color: var(--ink-3);
-  width: 220px;
+  width: 220px; margin-left: auto;
 }
 .filter-bar .search input {
   border: 0; background: transparent; outline: 0;
@@ -1203,6 +1203,14 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 }
 .br-meta span { display: inline-flex; gap: 6px; align-items: center; }
 .br-meta .dot { width: 5px; height: 5px; border-radius: 999px; background: var(--accent); }
+.br-print-link {
+  display: inline-flex; gap: 6px; align-items: center;
+  font-family: var(--font-mono); font-size: 11px;
+  color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; transition: opacity .2s;
+}
+.br-print-link:hover { opacity: 0.7; }
+.br-print-link .dot { background: var(--accent) !important; width: 5px; height: 5px; border-radius: 999px; display: inline-block; }
 .exercices-brevet { margin-top: 48px; }
 .exo-brevet { margin-bottom: 48px; }
 .exo-brevet-head {
@@ -1280,3 +1288,231 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 .corr-box p:last-child { margin-bottom: 0; }
 .corr-box .rep { color: var(--accent); font-weight: 600; }
 .br-adjacent { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--rule); }
+
+/* ═══════════════════════════════════════════════════════
+   AUTOMATISMES 1RE — mode-tabs · barre progression · cartes QCM
+   ═══════════════════════════════════════════════════════ */
+
+/* Sous-titre thématique sous le numéro de semaine */
+.wk-subtitle {
+  font-family: var(--font-serif); font-weight: 300; font-style: italic;
+  font-size: 22px; color: var(--ink-2); margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+
+/* Onglets Séance / Devoirs */
+.mode-tabs {
+  margin-top: 40px;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  display: flex;
+}
+.mode-tabs button {
+  flex: 1; border: 0; background: transparent;
+  padding: 22px 28px; text-align: left;
+  font-family: var(--font-serif); font-weight: 300; font-size: 24px;
+  color: var(--ink-3); cursor: pointer; letter-spacing: -0.01em;
+  position: relative; transition: color .2s, background .2s;
+  border-right: 1px solid var(--rule);
+}
+.mode-tabs button:last-child { border-right: 0; }
+.mode-tabs button em { font-style: italic; color: var(--accent); }
+.mode-tabs button:hover { background: var(--paper-2); color: var(--ink); }
+.mode-tabs button.active { color: var(--ink); background: var(--paper-2); }
+.mode-tabs button.active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px;
+  height: 2px; background: var(--accent);
+}
+.mode-tabs .tab-idx {
+  display: block; font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-4); margin-bottom: 6px;
+}
+.mode-tabs button.active .tab-idx { color: var(--accent); }
+
+/* Panneau actif */
+.mode-panel { display: none; padding-top: 32px; }
+.mode-panel.active { display: block; animation: fadeUp .5s var(--ease-out) both; }
+.mode-intro {
+  font-family: var(--font-serif); font-weight: 300; font-style: italic;
+  font-size: 18px; color: var(--ink-2); margin: 0 0 24px;
+  max-width: 720px; line-height: 1.5;
+}
+
+/* Barre de progression */
+.auto1re-progress {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 28px; padding: 14px 20px;
+  background: var(--paper-2); border-radius: 4px; border: 1px solid var(--rule);
+}
+.auto1re-progress .lbl {
+  font-family: var(--font-mono); font-size: 11px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-3); white-space: nowrap;
+}
+.auto1re-progress .bar {
+  flex: 1; height: 4px; background: var(--paper-3); border-radius: 2px; overflow: hidden;
+}
+.auto1re-progress .bar .fill {
+  height: 100%; background: var(--accent); width: 0;
+  transition: width .4s var(--ease-out);
+}
+.auto1re-progress .score {
+  font-family: var(--font-serif); font-style: italic; font-weight: 300;
+  font-size: 22px; color: var(--accent); letter-spacing: -0.02em; white-space: nowrap;
+}
+.auto1re-progress .score .tot { color: var(--ink-3); font-size: 16px; }
+
+/* Carte QCM */
+.auto1re-card {
+  position: relative; border: 1px solid var(--rule); background: var(--paper);
+  border-radius: 4px; padding: 0 32px 28px; margin-bottom: 16px;
+  transition: border-color .25s; width: 100%; box-sizing: border-box;
+}
+.auto1re-card:hover { border-color: color-mix(in oklab, var(--accent) 30%, var(--rule)); }
+.auto1re-card.answered { border-color: color-mix(in oklab, var(--accent) 50%, var(--rule)); }
+
+.auto1re-head {
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 22px; padding: 28px 0 18px; border-bottom: 1px solid var(--rule);
+}
+.auto1re-num {
+  font-family: var(--font-serif); font-style: italic; font-weight: 300;
+  font-size: 44px; line-height: 0.85; color: var(--accent);
+  letter-spacing: -0.03em; flex-shrink: 0;
+}
+.auto1re-label {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+
+.auto1re-enonce {
+  font-size: 16px; line-height: 1.7; color: var(--ink-2); margin-bottom: 20px;
+}
+.auto1re-enonce img { max-width: 100%; height: auto; display: block; margin: 12px auto; }
+.auto1re-enonce .katex-display { overflow-x: auto; overflow-y: hidden; }
+
+/* Choix */
+.auto1re-choices { display: flex; flex-direction: column; gap: 10px; }
+.auto1re-choice {
+  display: flex; align-items: center; gap: 14px; padding: 14px 18px;
+  border: 1px solid var(--rule); background: var(--paper); border-radius: 4px;
+  cursor: pointer; transition: border-color .2s, background .2s;
+  font-size: 15px; line-height: 1.5; color: var(--ink-2);
+  text-align: left; font-family: inherit; width: 100%;
+}
+.auto1re-choice:hover { border-color: var(--accent-2); background: var(--paper-2); }
+.auto1re-bullet {
+  width: 28px; height: 28px; border-radius: 999px; border: 1px solid var(--rule);
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500;
+  color: var(--ink-3); background: var(--paper); transition: all .2s;
+}
+.auto1re-choice:hover .auto1re-bullet { border-color: var(--accent); color: var(--accent); }
+.auto1re-body { flex: 1; }
+
+/* États après réponse */
+.auto1re-card.answered .auto1re-choice { cursor: default; }
+.auto1re-card.answered .auto1re-choice:hover {
+  border-color: var(--rule); background: var(--paper);
+}
+.auto1re-card.answered .auto1re-choice:hover .auto1re-bullet {
+  border-color: var(--rule); color: var(--ink-3);
+}
+.auto1re-choice.correct {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 8%, var(--paper));
+}
+.auto1re-choice.correct .auto1re-bullet {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+}
+.auto1re-choice.wrong {
+  border-color: color-mix(in oklab, #C14A4A 60%, var(--rule));
+  background: color-mix(in oklab, #C14A4A 5%, var(--paper));
+  opacity: 0.85;
+}
+.auto1re-choice.wrong .auto1re-bullet { background: #C14A4A; border-color: #C14A4A; color: #fff; }
+.auto1re-card.answered .auto1re-choice:not(.picked):not(.correct) { opacity: 0.55; }
+
+/* Correction */
+.auto1re-corr {
+  margin-top: 18px; padding: 20px 24px;
+  border-left: 3px solid var(--accent);
+  font-size: 15px; line-height: 1.7; color: var(--ink-2);
+  display: none;
+}
+.auto1re-corr.open { display: block; animation: fadeUp .35s var(--ease-out) both; }
+.auto1re-corr-label {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px; display: block;
+}
+
+/* Bouton toggle correction (mode devoir) */
+.auto1re-toggle {
+  margin-top: 14px; display: flex; align-items: center; gap: 8px;
+  padding: 0; border: 0; background: transparent;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3); cursor: pointer; transition: color .2s;
+}
+.auto1re-toggle:hover { color: var(--accent); }
+.auto1re-toggle .arrow { display: inline-block; transition: transform .3s; }
+.auto1re-toggle.open { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .auto1re-card { padding: 0 16px 22px; }
+  .auto1re-head { padding: 20px 0 14px; }
+  .auto1re-num { font-size: 36px; }
+  .mode-tabs button { padding: 16px 20px; font-size: 18px; }
+}
+
+/* ── Mode Devoirs : réponse grisée (pas de bon/mauvais) ── */
+.auto1re-choice.picked-devoir {
+  background: var(--paper-2);
+  border-color: var(--ink-3);
+  opacity: 0.65;
+  cursor: default;
+}
+.auto1re-choice.picked-devoir .auto1re-bullet {
+  background: var(--ink-3);
+  border-color: var(--ink-3);
+  color: #fff;
+}
+.auto1re-card.answered .auto1re-choice:not(.picked-devoir) {
+  opacity: 0.4;
+  cursor: default;
+}
+.auto1re-card.answered .auto1re-choice:not(.picked-devoir):hover {
+  border-color: var(--rule);
+  background: var(--paper);
+}
+.auto1re-card.answered .auto1re-choice:not(.picked-devoir):hover .auto1re-bullet {
+  border-color: var(--rule);
+  color: var(--ink-3);
+}
+
+/* ── Score final (mode devoirs) ── */
+.auto1re-result {
+  margin-top: 32px;
+  padding: 24px 32px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: color-mix(in oklab, var(--accent) 8%, var(--paper));
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(22px, 3vw, 32px);
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  text-align: center;
+  animation: fadeUp .5s var(--ease-out) both;
+}
+
+/* ═══════════════════════════════════════════════════════
+   IMPRESSION — Exercices imprimables (sans corrections)
+═══════════════════════════════════════════════════════ */
+@media print {
+  nav, footer, .crumbs, .br-adjacent, .br-print-link,
+  .corr-btn, .corr-box { display: none !important; }
+  .br-hero { padding: 20px 0 16px; }
+  .exo-brevet { break-inside: avoid; page-break-inside: avoid; }
+  body { background: white !important; }
+  .exercices-brevet { margin-top: 24px; }
+}

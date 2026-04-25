@@ -1,6 +1,6 @@
 ---
 title: "Semaine 25 — Probabilités conditionnelles et algèbre"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 25
 weight: 25

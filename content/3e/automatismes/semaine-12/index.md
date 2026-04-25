@@ -12,14 +12,14 @@ weight: 12
 ---Q---
 Donner l'écriture scientifique de $0{,}69$.
 ---CORR---
-$0{,}69 = {\color{#F15929}\mathbf{6{,}9 \times 10^{-1}}}$.
+$0{,}69 = {\color{#8B3C52}\mathbf{6{,}9 \times 10^{-1}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 ---CORR---
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+ $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
@@ -42,9 +42,9 @@ On utilise le théorème de Pythagore dans le triangle $MNO$,  rectangle en $N$.
         NO^2&=7^2-5^2\\
         NO^2&=49-25\\
         NO^2&=24\\
-        NO&={\color{#F15929}\boldsymbol{\sqrt{24}}}
+        NO&={\color{#8B3C52}\boldsymbol{\sqrt{24}}}
         \end{aligned}$<br>
-        En simplifiant, on obtient : $NO = {\color{#F15929}\boldsymbol{2\sqrt{6}}}$.
+        En simplifiant, on obtient : $NO = {\color{#8B3C52}\boldsymbol{2\sqrt{6}}}$.
         <br>Mentalement : <br>
     La longueur $NO$ est donnée par la racine carrée de la différence des carrés de $7$ et de $5$.<br>
     Cette différence vaut $49-25=24$. <br>
@@ -65,13 +65,13 @@ Le carré d'un nombre est ce nombre multiplié par lui-même : $9\times9=81$
 Une voiture roule à la vitesse de $90\text{ km/h}$ sur une route mouillée.<br>
     En utilisant le graphique ci-dessous, quelle est la distance de freinage en mètres ?<br><img src="3autop09_2_03.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Pour une vitesse de $90\text{ km/h}$, la distance de freinage est d'environ ${\color{#F15929}\boldsymbol{118}}\text{ m}$.<br><img src="3autop09_2_corr_04.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Pour une vitesse de $90\text{ km/h}$, la distance de freinage est d'environ ${\color{#8B3C52}\boldsymbol{118}}\text{ m}$.<br><img src="3autop09_2_corr_04.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 $1$ minute = $\ldots$ secondes
 ---CORR---
-$1$ minute = ${\color{#F15929}\boldsymbol{60}}$ secondes
+$1$ minute = ${\color{#8B3C52}\boldsymbol{60}}$ secondes
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -96,7 +96,7 @@ $\dfrac{WX}{WU}=\dfrac{WY}{WV}=\dfrac{XY}{UV}$<br><strong>Remarque</strong><br>O
 ---Q---
 Donner la valeur décimale de  $\dfrac{9}{4}$.
 ---CORR---
-$\dfrac{9}{4}={\color{#F15929}\boldsymbol{2{,}25}}$<br>
+$\dfrac{9}{4}={\color{#8B3C52}\boldsymbol{2{,}25}}$<br>
           <br> Mentalement : <br>
           $\dfrac{9}{4}=\dfrac{8}{4}+\dfrac{1}{4}=
           2+0{,}25=2{,}25$.
@@ -105,13 +105,13 @@ $\dfrac{9}{4}={\color{#F15929}\boldsymbol{2{,}25}}$<br>
 ---Q---
 Calculer $B = 8 \times x + 7$, pour $x = 15$.
 ---CORR---
-$B = 8 \times 15 + 7$<br>$B = {\color{#F15929}\boldsymbol{127}}$
+$B = 8 \times 15 + 7$<br>$B = {\color{#8B3C52}\boldsymbol{127}}$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
 Déterminer les coordonnées respectives des points $O$, $N$ et $M$<br><img src="3autog01_2_06.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Les coordonnées respectives des points sont :<br> $O({\color{#F15929}\boldsymbol{0}};{\color{#F15929}\boldsymbol{-3}})$, $N({\color{#F15929}\boldsymbol{-2}};{\color{#F15929}\boldsymbol{0}})$ et $M({\color{#F15929}\boldsymbol{-1{,}5}};{\color{#F15929}\boldsymbol{-4}})$
+Les coordonnées respectives des points sont :<br> $O({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{-3}})$, $N({\color{#8B3C52}\boldsymbol{-2}};{\color{#8B3C52}\boldsymbol{0}})$ et $M({\color{#8B3C52}\boldsymbol{-1{,}5}};{\color{#8B3C52}\boldsymbol{-4}})$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -127,7 +127,7 @@ $HGE$ est rectangle en $H$ donc :
 
 $$
     \cos\left(\widehat{HGE}\right)
-    = {\color{#F15929}\mathbf{\dfrac{HG}{GE}}}.
+    = {\color{#8B3C52}\mathbf{\dfrac{HG}{GE}}}.
     $$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}

@@ -32,7 +32,7 @@ On remarque qu'il y a 8 divisions entre $1$ et $3$, donc chaque division vaut $\
 ---Q---
 Calculer l'aire d'un rectangle de longueur $5\text{ cm}$ et de largeur $2{,}4\text{ cm}$
 ---CORR---
-$\mathcal{A}_\text{rectangle} = L \times l$<br>$\mathcal{A}_\text{rectangle} = 5\text{ cm} \times 2{,}4\text{ cm}$<br>$\mathcal{A}_\text{rectangle} = {\color{#F15929}\boldsymbol{12}}\text{ cm}^2$
+$\mathcal{A}_\text{rectangle} = L \times l$<br>$\mathcal{A}_\text{rectangle} = 5\text{ cm} \times 2{,}4\text{ cm}$<br>$\mathcal{A}_\text{rectangle} = {\color{#8B3C52}\boldsymbol{12}}\text{ cm}^2$
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
@@ -43,7 +43,7 @@ Dans une situation d'équiprobabilité,
         $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
         La probabilité est donc donnée par : 
         $\dfrac{\text{Nombre de boules blanches}}{\text{Nombre total de boules}}
-             =\dfrac{6}{14}  =\dfrac{3{\color{#2563a5}\boldsymbol{\times2}} }{7{\color{#2563a5}\boldsymbol{\times2}}}={\color{#F15929}\boldsymbol{\dfrac{3}{7}}}$
+             =\dfrac{6}{14}  =\dfrac{3{\color{#C5607A}\boldsymbol{\times2}} }{7{\color{#C5607A}\boldsymbol{\times2}}}={\color{#8B3C52}\boldsymbol{\dfrac{3}{7}}}$
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 
@@ -53,14 +53,14 @@ Dans une situation d'équiprobabilité,
 ---Q---
 Donner l'écriture scientifique de $0{,}919$.
 ---CORR---
-$0{,}919 = {\color{#F15929}\mathbf{9{,}19 \times 10^{-1}}}$.
+$0{,}919 = {\color{#8B3C52}\mathbf{9{,}19 \times 10^{-1}}}$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
 ---CORR---
 Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#216D9A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#216D9A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#216D9A}\boldsymbol{0{,}2}}$ kg $\times {\color{#216D9A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#F15929}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+ $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
 {{< /auto3-exo >}}
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---

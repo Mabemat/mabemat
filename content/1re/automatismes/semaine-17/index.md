@@ -1,6 +1,6 @@
 ---
 title: "Semaine 17 — Calcul, équations et fonctions"
-layout: "automatismes"
+layout: "automatismes-1re"
 level: "1re"
 auto_number: 17
 weight: 17

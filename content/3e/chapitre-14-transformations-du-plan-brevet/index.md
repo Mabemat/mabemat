@@ -6,8 +6,6 @@ chapter: "chapitre-14-transformations-du-plan"
 ---
 {{< brevet-exo num="1" source="DNB Septembre 2022 Métropole" >}}
 ---INTRO---
-<br><br>
-
 La figure ci-dessous est un pavage constitué de cerfs-volants.
 
 Les triangles SLP et PLA ainsi formés sont des triangles équilatéraux.
@@ -31,8 +29,6 @@ On ne demande pas de justification.
 ---CORR---
 Le cerf-volant 1 devient le cerf-volant 6  par la symétrie de centre J.
 ---Q---
-<br><br>
-
 <strong>PARTIE B :</strong>
 
 <br>
