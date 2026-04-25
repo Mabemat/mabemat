@@ -669,11 +669,11 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 .full-lesson .vocabulaire .environment-title { color: #78985b; }
 .full-lesson .remarque {
   background-color: transparent; border: none;
-  padding-left: 50px; position: relative;
-  font-size: 14px; margin: 10px 35px 10px 25px;
+  padding-left: 38px; position: relative;
+  font-size: 14px; margin: 10px 35px 10px 4px;
 }
 .full-lesson .remarque::before {
-  content: "R"; position: absolute; left: -25px; top: 0;
+  content: "R"; position: absolute; left: 0; top: 0;
   width: 25px; height: 25px;
   border: 1px solid var(--env-remarque); border-radius: 50%;
   background-color: white; color: var(--env-remarque);
@@ -709,6 +709,39 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 }
 @media (max-width: 400px) {
   .full-lesson { zoom: 0.75; }
+}
+
+/* ─── full-lesson MOBILE : colonnes et puces ─── */
+@media (max-width: 700px) {
+  /* Repasser en 1 colonne les listes multicol */
+  .full-lesson ul[style*="column-count"],
+  .full-lesson ol[style*="column-count"] {
+    column-count: 1 !important;
+  }
+  /* Repasser en bloc les grids inline */
+  .full-lesson div[style*="grid-template-columns"],
+  .full-lesson ul[style*="grid-template-columns"],
+  .full-lesson ol[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  /* Repasser en bloc les inline-blocks côte à côte (ex: deux alignements) */
+  .full-lesson div[style*="inline-block"] {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Puces : réduire les marges dans les environnements */
+  .full-lesson .environment ul,
+  .full-lesson .environment ol {
+    margin: 0 4px !important;
+    padding-left: 1em !important;
+  }
+  .full-lesson .environment li {
+    margin: 0 4px !important;
+  }
 }
 
 /* Fin de leçon */
