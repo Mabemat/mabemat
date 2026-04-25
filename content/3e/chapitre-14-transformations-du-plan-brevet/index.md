@@ -10,9 +10,10 @@ La figure ci-dessous est un pavage constitué de cerfs-volants.
 
 Les triangles SLP et PLA ainsi formés sont des triangles équilatéraux.
 
-<strong>PARTIE A :</strong>
-
 <br>
+---Q---
+---PART---
+Partie A
 ---Q---
 Déterminer la mesure de l'angle $\widehat{\text{PSL}}$.
 ---CORR---
@@ -29,10 +30,9 @@ On ne demande pas de justification.
 ---CORR---
 Le cerf-volant 1 devient le cerf-volant 6  par la symétrie de centre J.
 ---Q---
-<strong>PARTIE B :</strong>
-
-<br>
-
+---PART---
+Partie B
+---Q---
 Dans cette partie, on se propose de construire le cerf-volant ci-dessous.
 
 Essya, Nicolas et Tiago souhaitent construire cette figure à l'aide d'un logiciel de programmation.
@@ -55,10 +55,6 @@ Ils écrivent tous un programme « Cerf-volant  » différent.
 Tracer le programme « Cerf-Volant  » de Nicolas, en prenant $1$&nbsp;cm pour $100$ pas.
 ---CORR---
 <br><br>
-
-<strong>PARTIE B :</strong>
-
-<br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>

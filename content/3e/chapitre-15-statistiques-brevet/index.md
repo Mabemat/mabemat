@@ -142,10 +142,9 @@ Pour que la moyenne soit exactement d'une heure sur les 21 jours, il faut que pe
 <strong>Les deux parties sont indépendantes</strong>
 
 <br>
-
-<strong>Partie A : évolution du nombre de visiteurs sur un site touristique</strong>
-
-<br>
+---Q---
+---PART---
+Partie A — Évolution du nombre de visiteurs sur un site touristique
 ---Q---
 Le diagramme ci-dessous représente le nombre de visiteurs par an de 2010 à 2021 sur ce site.
 ---SUB-Q---
@@ -184,12 +183,9 @@ Or cette valeur est inférieure à la valeur 219&thinsp;042 atteinte en $2021$.
 
 Donc l'objectif du maire a bien été atteint.
 ---Q---
-<br>
-
-<strong>Partie B :  étude des prix des hôtels de cette ville</strong>
-
-<br>
-
+---PART---
+Partie B — Étude des prix des hôtels de cette ville
+---Q---
 Sur une période donnée, on relève les prix facturés pour une nuit par les hôtels de cette ville.
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
@@ -219,12 +215,6 @@ Sur une période donnée, on relève les prix facturés pour une nuit par les h�
 
 Déterminer l'étendue des prix facturés.
 ---CORR---
-<br><br>
-
-<strong>PARTIE B</strong>
-
-<br>
-
 L'étendue de cette série vaut : $ Max. - Min. = 500 - 60 = 440 $. Soit $ 440 $ euros.
 ---Q---
 Quelle est la moyenne des prix facturés pour une nuit ? Arrondir à l'euro près.
@@ -543,23 +533,16 @@ $24 - (1 + 1 + 1) = 24 - 3 = 21$.
 
 Le pourcentage de briques pouvant être vendues est donc : $\dfrac{21}{24} \times 100 = \dfrac78 \times 100$ soit  87,5&thinsp;%.
 ---Q---
-<br><br>
-
-<strong>PARTIE B : Briques de jus de raisin</strong>
-
-<br>
-
+---PART---
+Partie B — Briques de jus de raisin
+---Q---
 L'entreprise souhaite commercialiser une nouvelle brique en forme de pavé droit pour le jus de raisin. Sa base est un rectangle de longueur $6,4$ cm et de largeur $5$ cm.
 
 <br>
 
-Calculer l'aire de la base de cette brique
+Calculer l'aire de la base de cette brique.
 ---CORR---
-<strong>Partie B</strong>
-
-<br>
-
-Aire base  $6,4 \times 5 = 32$ cm?
+Aire base $= 6,4 \times 5 = 32$ cm²
 ---Q---
 Quelle doit être la hauteur de cette brique pour que son volume soit de $400$&nbsp;cm$^3$ ?
 
