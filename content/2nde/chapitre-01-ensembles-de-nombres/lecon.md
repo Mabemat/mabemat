@@ -173,7 +173,8 @@ Ensembles des réels $x$ tels que</th>
 
 <div class="remarque">
 Voici quelques notations très utiles. <br>
- $$]-\infty \mathpunct{} ; +\infty [ =\R \qquad [ 0 \mathpunct{} ; +\infty [ = \R^+ \qquad ]-\infty \mathpunct{} ; 0 ] =\R^- \qquad] 0 \mathpunct{} ; +\infty [ = \R^{\ast+} \qquad ]-\infty \mathpunct{} ; 0 [ =\R^{\ast-}$$
+$$]-\infty \mathpunct{} ; +\infty [ =\R \qquad [ 0 \mathpunct{} ; +\infty [ = \R^+ \qquad ]-\infty \mathpunct{} ; 0 ] =\R^-$$
+$$] 0 \mathpunct{} ; +\infty [ = \R^{\ast+} \qquad ]-\infty \mathpunct{} ; 0 [ =\R^{\ast-}$$
 
 </div>
 

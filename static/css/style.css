@@ -742,6 +742,12 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   .full-lesson .environment li {
     margin: 0 4px !important;
   }
+  /* Formules display trop larges : scroll horizontal en dernier recours */
+  .full-lesson .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
   /* Tableaux : scroll horizontal si trop larges */
   .full-lesson table {
     display: block;
