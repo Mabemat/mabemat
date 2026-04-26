@@ -134,7 +134,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 <li>$\sin(\pi-x)=\sin(x)$ </li>
 <li>$\cos(\pi-x)=-\cos(x)$</li>
 </ul>
- 
+  
 <strong>Avec l'angle diamétralement opposé :</strong> <br>
 $\quad \textcolor{#B8C5A6}{\bullet} \quad  \sin(\pi+x)=-\sin(x) \quad\quad\quad\quad \textcolor{#B8C5A6}{\bullet} \cos(\pi+x)=-\cos(x)$
 </div>
