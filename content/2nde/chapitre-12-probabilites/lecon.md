@@ -189,7 +189,7 @@ On lance un dé à six faces et on regarde le nombre de points inscrits sur la f
 On considère les évènements suivants :<br>
 $A$ : « On obtient un nombre impair »
 et $B$ : « On obtient un multiple de $3$ ».<br>
-Calculer la probabilité des évènements $A\cup B$ et $\overline{B}$.
+Calculer la probabilité des évènements $A\cup B$ et $\overline{B}$.<br>
 
 $P(A)=\dfrac{1}{2}$ et $P(B)=\dfrac{2}{6}=\dfrac{1}{3}$.<br>
 $A\cap B$ est l'évènement élémentaire « On obtient un $3$ », donc $P(A\cap B)=\dfrac{1}{6}$.<br>
