@@ -251,6 +251,23 @@ pre[style*="background-color"] {
   
   <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
 
+  
+  <div class="lesson-mobile-bar" id="lesson-mobile-bar">
+    <button id="mb-close-btn">← Fermer</button>
+    <span class="mb-pct" id="mb-pct">0 %</span>
+    <button id="mb-toc-btn">≡ Plan</button>
+  </div>
+
+  
+  <div class="lesson-toc-backdrop" id="lesson-toc-backdrop"></div>
+  <div class="lesson-toc-drawer" id="lesson-toc-drawer">
+    <div class="lesson-toc-drawer-header">
+      <div class="eyebrow">Dans cette leçon</div>
+      <button class="lesson-toc-drawer-close" id="lesson-toc-drawer-close" aria-label="Fermer le plan">✕</button>
+    </div>
+    <ol id="lesson-toc-drawer-list"></ol>
+  </div>
+
   <div class="lesson-layout">
 
     
@@ -452,56 +469,86 @@ Cette méthode graphique n'est pas précise mais permet d'avoir un ordre de gran
 
 <script>
 (function(){
-  var overlay = document.getElementById('lesson-overlay');
-  var btn = document.getElementById('btn-lecon');
+  var overlay  = document.getElementById('lesson-overlay');
+  var btn      = document.getElementById('btn-lecon');
   var closeBtn = document.getElementById('lesson-close');
   var doneClose = document.getElementById('lesson-done-close');
-  var lpRp = document.getElementById('lp-rp');
+  var lpRp  = document.getElementById('lp-rp');
   var lpBar = document.getElementById('lp-bar');
   var lpPct = document.getElementById('lp-pct');
+  var mbPct = document.getElementById('mb-pct');
   var tocList = document.getElementById('lesson-toc-list');
+  
+  var mbCloseBtn  = document.getElementById('mb-close-btn');
+  var mbTocBtn    = document.getElementById('mb-toc-btn');
+  var drawer      = document.getElementById('lesson-toc-drawer');
+  var drawerList  = document.getElementById('lesson-toc-drawer-list');
+  var drawerClose = document.getElementById('lesson-toc-drawer-close');
+  var backdrop    = document.getElementById('lesson-toc-backdrop');
 
-  function buildTOC() {
-    if (!tocList) return;
-    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
-    tocList.innerHTML = '';
-    headings.forEach(function(h, i) {
-      var id = 'ls' + i;
-      h.id = id;
-      var li = document.createElement('li');
-      if (h.tagName === 'H3') li.classList.add('toc-sub');
-      li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
-      tocList.appendChild(li);
+   
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
     });
   }
 
+   
+  function buildTOC() {
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    var listsToFill = [];
+    if (tocList) { tocList.innerHTML = ''; listsToFill.push(tocList); }
+    if (drawerList) { drawerList.innerHTML = ''; listsToFill.push(drawerList); }
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      listsToFill.forEach(function(list) {
+        var li = document.createElement('li');
+        if (h.tagName === 'H3') li.classList.add('toc-sub');
+        li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+        list.appendChild(li);
+      });
+    });
+  }
+
+   
   function updateProgress() {
-    var el = overlay;
-    var top = el.scrollTop;
-    var max = el.scrollHeight - el.clientHeight;
-    var p = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var top = overlay.scrollTop;
+    var max = overlay.scrollHeight - overlay.clientHeight;
+    var p   = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
     var pct = Math.round(p * 100);
-    if (lpRp) lpRp.style.width = pct + '%';
-    if (lpBar) lpBar.style.width = pct + '%';
-    if (lpPct) lpPct.textContent = pct + ' %';
+    if (lpRp)  lpRp.style.width      = pct + '%';
+    if (lpBar) lpBar.style.width     = pct + '%';
+    if (lpPct) lpPct.textContent     = pct + ' %';
+    if (mbPct) mbPct.textContent     = pct + ' %';
     
     var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
-    var links = tocList ? tocList.querySelectorAll('a') : [];
+    var allLinks = [];
+    if (tocList)    tocList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    if (drawerList) drawerList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
     var current = null;
     headings.forEach(function(h) {
       if (h.getBoundingClientRect().top <= 140) current = h.id;
     });
-    links.forEach(function(a) {
+    allLinks.forEach(function(a) {
       a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });
   }
 
+   
   function openLecon(e) {
     if (e) e.preventDefault();
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
     overlay.scrollTop = 0;
     buildTOC();
+    wrapTables();
     updateProgress();
     overlay.focus();
   }
@@ -509,16 +556,34 @@ Cette méthode graphique n'est pas précise mais permet d'avoir un ordre de gran
   function closeLecon() {
     overlay.classList.remove('open');
     document.body.style.overflow = '';
+    closeDrawer();
     if (btn) btn.focus();
   }
 
-  if (btn) btn.addEventListener('click', openLecon);
+   
+  function openDrawer() {
+    if (drawer)   drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+  }
+  function closeDrawer() {
+    if (drawer)   drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+  }
+
+   
+  if (btn)      btn.addEventListener('click', openLecon);
   if (closeBtn) closeBtn.addEventListener('click', closeLecon);
   if (doneClose) doneClose.addEventListener('click', closeLecon);
+  if (mbCloseBtn) mbCloseBtn.addEventListener('click', closeLecon);
+  if (mbTocBtn)   mbTocBtn.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (backdrop)    backdrop.addEventListener('click', closeDrawer);
+
   overlay.addEventListener('scroll', updateProgress, { passive: true });
   overlay.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeLecon();
   });
+
   
   if (tocList) {
     tocList.addEventListener('click', function(e) {
@@ -526,11 +591,21 @@ Cette méthode graphique n'est pas précise mais permet d'avoir un ordre de gran
       if (!a) return;
       e.preventDefault();
       var target = overlay.querySelector(a.getAttribute('href'));
-      if (target) {
-        overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
-      }
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
     });
   }
+  
+  if (drawerList) {
+    drawerList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      closeDrawer();
+    });
+  }
+
 })();
 </script>
 

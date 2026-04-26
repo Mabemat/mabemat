@@ -563,6 +563,19 @@ $$
   var backdrop    = document.getElementById('lesson-toc-backdrop');
 
    
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
+   
   function buildTOC() {
     var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
     var listsToFill = [];
@@ -605,33 +618,14 @@ $$
   }
 
    
-  function fitKatexDisplay() {
-    var main = document.getElementById('lesson-main');
-    if (!main) return;
-    main.querySelectorAll('.katex-display').forEach(function(el) {
-      el.style.transform    = '';
-      el.style.marginBottom = '';
-      var available = el.parentElement.clientWidth;
-      var needed    = el.scrollWidth;
-      if (needed > available && available > 0) {
-        var ratio = available / needed;
-        el.style.transformOrigin = 'left center';
-        el.style.transform       = 'scale(' + ratio + ')';
-        
-        el.style.marginBottom    = (el.offsetHeight * (ratio - 1)) + 'px';
-      }
-    });
-  }
-
-   
   function openLecon(e) {
     if (e) e.preventDefault();
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
     overlay.scrollTop = 0;
     buildTOC();
+    wrapTables();
     updateProgress();
-    fitKatexDisplay();
     overlay.focus();
   }
 
@@ -688,10 +682,6 @@ $$
     });
   }
 
-  
-  window.addEventListener('resize', function() {
-    if (overlay.classList.contains('open')) fitKatexDisplay();
-  });
 })();
 </script>
 

@@ -347,6 +347,19 @@
   var drawerClose = document.getElementById('lesson-toc-drawer-close');
   var backdrop    = document.getElementById('lesson-toc-backdrop');
 
+  /* ── Enveloppe chaque tableau dans un div scrollable ── */
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
   /* ── Construction du TOC (desktop + mobile) ── */
   function buildTOC() {
     var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
@@ -396,6 +409,7 @@
     document.body.style.overflow = 'hidden';
     overlay.scrollTop = 0;
     buildTOC();
+    wrapTables();
     updateProgress();
     overlay.focus();
   }

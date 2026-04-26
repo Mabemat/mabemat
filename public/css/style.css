@@ -366,7 +366,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 
 /* Layout deux colonnes */
 .lesson-layout {
-  max-width: 1350px; margin: 0 auto; padding: 32px 32px 80px 0;
+  max-width: 1350px; margin: 0 auto; padding: 32px 32px 80px 24px;
   display: grid; grid-template-columns: 220px 1fr; gap: 40px;
 }
 @media (max-width: 960px) {
@@ -413,16 +413,17 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 @media (max-width: 960px) {
   .lesson-toc-drawer {
     display: block; position: fixed;
-    bottom: -100%; left: 0; right: 0;
+    bottom: 0; left: 0; right: 0;
     max-height: 70vh; overflow-y: auto;
     background: #fff;
     border-top-left-radius: 16px; border-top-right-radius: 16px;
     border-top: 1px solid var(--rule);
     z-index: 1004;
-    transition: bottom .3s var(--ease-out);
+    transform: translateY(100%);
+    transition: transform .3s var(--ease-out);
     padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0));
   }
-  .lesson-toc-drawer.open { bottom: 0; }
+  .lesson-toc-drawer.open { transform: translateY(0); }
   .lesson-toc-drawer-header {
     display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 16px;
@@ -668,11 +669,11 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 .full-lesson .vocabulaire .environment-title { color: #78985b; }
 .full-lesson .remarque {
   background-color: transparent; border: none;
-  padding-left: 50px; position: relative;
-  font-size: 14px; margin: 10px 35px 10px 25px;
+  padding-left: 38px; position: relative;
+  font-size: 14px; margin: 10px 35px 10px 4px;
 }
 .full-lesson .remarque::before {
-  content: "R"; position: absolute; left: -25px; top: 0;
+  content: "R"; position: absolute; left: 0; top: 0;
   width: 25px; height: 25px;
   border: 1px solid var(--env-remarque); border-radius: 50%;
   background-color: white; color: var(--env-remarque);
@@ -680,8 +681,8 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   display: flex; align-items: center; justify-content: center;
 }
 /* Listes dans les environnements */
-.full-lesson .environment ul, .full-lesson .environment ol { margin: 0 15px; padding-left: 1.5em; }
-.full-lesson .environment li { margin: 0 15px; padding-left: 0.3em; text-indent: -0.3em; }
+.full-lesson .environment ul, .full-lesson .environment ol { margin: 0 6px; padding-left: 1.2em; }
+.full-lesson .environment li { margin: 0; padding-left: 0.3em; text-indent: -0.3em; }
 .full-lesson .environment li::marker { color: var(--env-definition); }
 .full-lesson .exemple li::marker, .full-lesson .notation li::marker { color: var(--env-exemple); }
 .full-lesson .methode li::marker { color: var(--env-methode); }
@@ -692,6 +693,12 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 /* Tableaux */
 .full-lesson table { border-collapse: collapse; margin: 10px auto; }
 .full-lesson table, .full-lesson th, .full-lesson td { border: 1px solid var(--env-tableau); }
+/* Wrapper scroll pour les tableaux trop larges (ajouté par JS) */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
 .full-lesson th, .full-lesson td { padding: 5px 10px; text-align: center; }
 .full-lesson th { background-color: var(--env-tableau-bg); }
 
@@ -701,36 +708,56 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   display: inline-block;
 }
 
-/* ─── full-lesson MOBILE ─── */
+/* ─── full-lesson MOBILE : zoom global ─── */
+/* zoom scale tout proportionnellement : texte, KaTeX, images, tableaux */
 @media (max-width: 600px) {
-  /* Indentations réduites */
-  .full-lesson h2, .full-lesson h2.subsection-title, .full-lesson .subsection-title {
-    padding-left: 12px; font-size: 19px;
+  .full-lesson { zoom: 0.82; }
+}
+@media (max-width: 400px) {
+  .full-lesson { zoom: 0.75; }
+}
+
+/* ─── full-lesson MOBILE : colonnes et puces ─── */
+@media (max-width: 700px) {
+  /* Repasser en 1 colonne les listes multicol */
+  .full-lesson ul[style*="column-count"],
+  .full-lesson ol[style*="column-count"] {
+    column-count: 1 !important;
   }
-  .full-lesson h3, .full-lesson .subsubsection-title {
-    padding-left: 20px; font-size: 17px;
+  /* Repasser en bloc les grids inline */
+  .full-lesson div[style*="grid-template-columns"],
+  .full-lesson ul[style*="grid-template-columns"],
+  .full-lesson ol[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
   }
-  .full-lesson .remarque {
-    padding-left: 36px; margin: 10px 4px;
+  /* Repasser en bloc les inline-blocks côte à côte (ex: deux alignements) */
+  .full-lesson div[style*="inline-block"] {
+    display: block !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
-  /* Tableaux scrollables plutôt que transformés */
+  /* Puces : marges minimales sur mobile */
+  .full-lesson .environment ul,
+  .full-lesson .environment ol {
+    margin: 0 2px !important;
+    padding-left: 1em !important;
+  }
+  .full-lesson .environment li {
+    margin: 0 !important;
+  }
+  /* Formules display trop larges : scroll horizontal en dernier recours */
+  .full-lesson .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* Tableaux : scroll horizontal via wrapper JS (.table-scroll) */
   .full-lesson .environment table {
     transform: none;
-    display: block;
-    overflow-x: auto;
-    max-width: 100%;
-    -webkit-overflow-scrolling: touch;
   }
-  .full-lesson table {
-    display: block;
-    overflow-x: auto;
-    max-width: 100%;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-/* KaTeX display : le JS gère le scale, pas de overflow-x forcé */
-.full-lesson .katex-display {
-  max-width: 100%;
 }
 
 /* Fin de leçon */

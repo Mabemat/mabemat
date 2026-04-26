@@ -693,6 +693,12 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 /* Tableaux */
 .full-lesson table { border-collapse: collapse; margin: 10px auto; }
 .full-lesson table, .full-lesson th, .full-lesson td { border: 1px solid var(--env-tableau); }
+/* Wrapper scroll pour les tableaux trop larges (ajouté par JS) */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
 .full-lesson th, .full-lesson td { padding: 5px 10px; text-align: center; }
 .full-lesson th { background-color: var(--env-tableau-bg); }
 
@@ -748,19 +754,9 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
   }
-  /* Tableaux : scroll horizontal si trop larges */
-  .full-lesson table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
-  }
+  /* Tableaux : scroll horizontal via wrapper JS (.table-scroll) */
   .full-lesson .environment table {
     transform: none;
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
   }
 }
 
