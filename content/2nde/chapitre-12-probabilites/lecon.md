@@ -207,7 +207,12 @@ La probabilité de ne pas obtenir un multiple de $3$ est donc de $\dfrac{2}{3}$,
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
 Dans un lycée, sur les $150$ élèves de secondes, $48$ élèves se sont inscrits dans les clubs photos ou théâtre. On en compte $32$ dans le club théâtre et $24$ dans le club photo. On sort au hasard la fiche d'un élève inscrit. <br>
-Soit les évènements $T$ : « être adhérent au club théâtre », $F$ : « être adhérent au club photo » et $N$ : « n'être adhérent à aucun club ».
+Soit les évènements 
+<ul>
+<li>$T$ : « être adhérent au club théâtre », </li>
+<li>$F$ : « être adhérent au club photo », </li> 
+<li>$N$ : « n'être adhérent à aucun club ».</li>
+</ul>
 
 Déterminer $P(T)$ ; $P(F)$ ; $P(T\cup F)$ et en déduire $P(N)$.
 <div style="display:inline-block;vertical-align:top;width:calc(70% - 12px);">
