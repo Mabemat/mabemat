@@ -196,7 +196,7 @@ Pour tout réel $a$ et $b$, on a :
 
 <ul style="column-count:2; column-gap:2rem;">
 <li>$e^{a}=e^b \Leftrightarrow a=b$</li>
-<li>$e^{a}$&lt;$ e^b \Leftrightarrow a$&lt;$b$ car $\exp$ est croissante sur $\R$.</li>
+<li>$e^{a}$FF&lt;$ e^b \Leftrightarrow a$&lt;$b$ car $\exp$ est croissante sur $\R$.</li>
 </ul>
 
 </div>
