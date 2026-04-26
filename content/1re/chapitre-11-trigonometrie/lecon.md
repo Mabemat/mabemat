@@ -119,7 +119,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 <h3 class="subsubsection-title">11.2.2 Propriétés</h3>
 
 <div style="display:inline-block; vertical-align:middle; width:calc(54% - 12px);">
-<strong>Relation de symétrie</strong>
+<strong>Relation de symétrie</strong> 
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
