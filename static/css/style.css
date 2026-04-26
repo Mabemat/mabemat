@@ -710,17 +710,33 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 }
 
 /* ─── full-lesson MOBILE : réduction globale ─── */
-/* font-size utilisé à la place de zoom : KaTeX aligne ses fractions via
-   vertical-align en em, ce qui ne se propage pas correctement sous zoom
-   (le dénominateur se retrouvait sur la ligne de base au lieu du trait).
-   font-size scale texte + formules KaTeX + valeurs en em ;
-   les images sont contraintes par max-width ci-dessous. */
+/* On scale explicitement les tailles en px ET on laisse font-size hériter
+   pour que KaTeX (qui utilise 1.21em) suive proportionnellement le texte.
+   Cela évite le bug zoom (fractions désalignées) tout en gardant texte
+   et formules à la même échelle relative. */
 @media (max-width: 600px) {
-  .full-lesson { font-size: 82%; }
+  /* Texte courant */
+  .full-lesson p,
+  .full-lesson .remarque                { font-size: 13px; }   /* 16×0.82 */
+  .full-lesson .environment-title       { font-size: 13px; }
+  /* Titres */
+  .full-lesson .section-title           { font-size: 20px; }   /* 24×0.82 */
+  .full-lesson h2,
+  .full-lesson .subsection-title        { font-size: 18px; }   /* 22×0.82 */
+  .full-lesson h3,
+  .full-lesson .subsubsection-title     { font-size: 16px; }   /* 20×0.82 */
+  /* Images */
   .full-lesson img { max-width: 100%; height: auto; }
 }
 @media (max-width: 400px) {
-  .full-lesson { font-size: 75%; }
+  .full-lesson p,
+  .full-lesson .remarque                { font-size: 12px; }   /* 16×0.75 */
+  .full-lesson .environment-title       { font-size: 12px; }
+  .full-lesson .section-title           { font-size: 18px; }   /* 24×0.75 */
+  .full-lesson h2,
+  .full-lesson .subsection-title        { font-size: 16.5px; } /* 22×0.75 */
+  .full-lesson h3,
+  .full-lesson .subsubsection-title     { font-size: 15px; }   /* 20×0.75 */
 }
 
 /* ─── full-lesson MOBILE : colonnes et puces ─── */
