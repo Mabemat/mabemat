@@ -773,14 +773,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
     max-width: 100% !important;
     margin: 0.75rem auto !important;
   }
-  /* Flex row image+texte (ex: fig7 + propriété) → empiler en colonne */
-  .full-lesson div[style*="display:flex"] {
-    flex-direction: column !important;
-  }
-  .full-lesson div[style*="display:flex"] > img,
-  .full-lesson div[style*="display:flex"] > div[style*="width"] {
-    width: 100% !important;
-  }
+
   /* Puces : marges minimales sur mobile */
   .full-lesson .environment ul,
   .full-lesson .environment ol {
