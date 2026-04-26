@@ -118,7 +118,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 
 <h3 class="subsubsection-title">11.2.2 Propriétés</h3>
 
-<div style="display:inline-block; vertical-align:middle; width:calc(64% - 12px);">
+<div style="display:inline-block; vertical-align:middle; width:calc(54% - 12px);">
 <strong>Relation de symétrie</strong>
 
 <div class="environment propriete">
@@ -135,11 +135,14 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 <li>$\cos(\pi-x)=-\cos(x)$</li>
 </ul>
   
-<strong>Avec l'angle diamétralement opposé :</strong> <br>
-$\quad \textcolor{#B8C5A6}{\bullet} \quad  \sin(\pi+x)=-\sin(x) \quad\quad\quad\quad \textcolor{#B8C5A6}{\bullet} \cos(\pi+x)=-\cos(x)$
+<strong>Avec l'angle diamétralement opposé :</strong> 
+<ul>
+<li>$\sin(\pi+x)=-\sin(x)$ </li>
+<li>$\cos(\pi+x)=-\cos(x)$</li>
+</ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(34% - 12px); max-height:300px; max-width:100%;">
+</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(45% - 12px); max-height:300px; max-width:100%;">
 <br>
 
 <div style="display:flex; align-items:center; gap:20px;">
