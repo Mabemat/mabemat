@@ -27,7 +27,7 @@ $2{,}4\text{ h} =2 \text{ h} + 0{,}4 \text{ h}$, soit $2\text{ h} + \dfrac{2}{5}
 
  Ainsi, $2{,}4$ heures correspond à $144$ minutes.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -76,7 +76,7 @@ $\bullet$ Soit $k\in]1\ ;\ 2[$.
 
 Si $k\in]1\ ;\ 2&#91$, la droite d'équation $y=k$ coupe bien deux fois la courbe.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -133,7 +133,7 @@ On a donc : $6{,}554\ 6\times 10^{26}$ $>$ $1{,}898\times 10^{26}$ $>$ $3{,}619\
 
 Donc il s'agit de la **Planète 3** qui a la masse la plus importante.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -153,7 +153,7 @@ $10^{-22}$ est très petit devant $15$.
 
  On en déduit que $15+10^{-22}$ est environ égal à $15$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -177,7 +177,7 @@ Le coefficient multiplicateur associé à une augmentation de $300\ $% est $1+3=
 
  On en déduit qu'il faut une baisse de $75\ $%.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -197,7 +197,7 @@ Si un prix a doublé, cela signifie que le coefficient multiplicateur est $CM = 
 
  Le prix a donc augmenté de $100\ $%.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

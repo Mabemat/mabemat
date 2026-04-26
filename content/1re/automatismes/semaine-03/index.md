@@ -33,7 +33,7 @@ A &= \dfrac{4}{5-\dfrac{2}{3}} \\\\
 &= \dfrac{12}{13}
 \end{aligned}$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -59,7 +59,7 @@ On isole $L$ dans un membre de l'égalité :
 
 Une expression de $L$ en fonction de $K$, $I$ et $J$ est $L = J \times K - I$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -84,7 +84,7 @@ Déterminer les antécédents de $2$ revient à déterminer les nombres qui ont 
 
 On en trouve $3$ : $-6\ ;\ -1\ ;\ 3$.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -103,7 +103,7 @@ Augmenter de $40~\%$ revient à multiplier par $1+\dfrac{40}{100}$.
  Ainsi, le coefficient multiplicateur associé à une augmentation de $40~\%$ est $1+0{,}4$, soit $1{,}4$.
 
  
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -129,7 +129,7 @@ Le coefficient directeur $m$ de la droite $(AE)$ est donnée par la formule : $\
     &=\dfrac{10}{7}
     \end{aligned}$
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -153,7 +153,7 @@ Comme $f(x)=\dfrac{2}{3}x-4$, on a :
         &=-\dfrac{8}{3}
         \end{aligned}$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

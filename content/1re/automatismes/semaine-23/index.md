@@ -23,7 +23,7 @@ Parmi les quatre propositions, laquelle est un ordre de grandeur de la contenanc
 
 ---CORR---
 Une baignoire contient environ $200$ $\text{L}$, soit $200\,000\textbf{ mL}$. <br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -56,7 +56,7 @@ On cherche d'abord la valeur de $b$ en utilisant la condition donnée dans l'én
     &=-10
     \end{aligned}$$
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -74,7 +74,7 @@ L'ensemble des solutions de l'inéquation $f(x)< g(x)$ est :
 
 ---CORR---
 Les solutions de l'inéquation sont les abscisses des points de $C_f$ qui se situent en dessous de $C_g$, soit $]-1\,;\,1[\cup ]2\,;\,3]$.<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -92,7 +92,7 @@ $$\begin{aligned}
           0{,}63a-2a  &=(0{,}63-2)a\\        
       &=-1{,}37a
       \end{aligned}$$
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -117,7 +117,7 @@ On développe, puis on isole l'inconnue dans le membre de gauche :
  \\x&=\dfrac{11}{15}\end{aligned}$$
  
  La solution est $\dfrac{11}{15}$.<br>
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -163,7 +163,7 @@ x &= \dfrac{38}{2}\\
 x&= 19.
 \end{aligned}$$
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 </div>

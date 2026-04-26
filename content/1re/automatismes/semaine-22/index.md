@@ -33,7 +33,7 @@ Dans l'urne B, les issues favorables sont : $17, 19$.<br>
 $P_B = \dfrac26 = \dfrac13$<br>
 On a $\dfrac12 = \dfrac36$ et $\dfrac13 = \dfrac26$ et comme $\dfrac12 > \dfrac13$, donc :<br>
 La probabilité d'obtenir une boule portant un nombre premier est plus grande en choisissant l'urne A.<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -52,7 +52,7 @@ On note $A$ l'événement "obtenir au moins un 6" et $B$ l'événement "n'obteni
 Les événements $A$ et $B$ sont contraires.<br>
 Donc : $P(B) = 1 - P(A)$.<br>
 $P(B) = 1 - 0,518 = 0,482$<br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -67,7 +67,7 @@ Soit $n$ un entier non nul.
 
 ---CORR---
 $4^n+4^n=2\times 4^n$<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -82,7 +82,7 @@ Combien de solutions réelles possède l'équation $4=-x^2+15$ ?
 ---CORR---
 L'équation est équivalente à $-x^2=4-15$, soit $x^2=11$.<br>
 $11$ étant strictement positif, cette équation a $2$ solutions : $\sqrt11$ et  $-\sqrt11$.<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -97,7 +97,7 @@ L'aire en $\text{hm}^2$ d'un carré de côté $300$ $\text{m}$ est égale à :
 ---CORR---
 $300$ $\text {m}$ $= 3$ $\text{hm}$<br>
 L'aire du carré est : $3 \text { hm}\times 3 \text { hm} = 9 \text{ hm}^2$ .<br>
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -117,7 +117,7 @@ Ici, on trouve un effectif total de $20$ élèves.<br>
 L'effectif des élèves ayant obtenu la note 5 est de $12$.<br>
 $\dfrac1220 \times 100 = 60$<br>
 Donc le pourcentage est de $60$ %.<br>
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 

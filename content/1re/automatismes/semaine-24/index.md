@@ -28,7 +28,7 @@ Le point $A$ est le point d'intersection entre la droite $D$ et l'axe des ordonn
 Comme le coefficient directeur de la droite $D$ est $0{,}6$, l'équation réduite de la droite $D$ est $y=0{,}6x-5$.<br>
 L'ordonnée du point $B$ est donnée par $y=0{,}6\times 2-5=-3{,}8$.<br>
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -43,7 +43,7 @@ La moitié d'un cinquième correspond à la fraction :
 ---CORR---
 La moitié d'un cinquième est égal à $\dfrac{1}{2}\times \dfrac{1}{5}$ soit $\dfrac{1}{10}$.<br>
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -66,7 +66,7 @@ Exprimons chaque proportion sous forme de fraction :<br>
 En comparant les fractions : $\dfrac{4}{60} < \dfrac{12}{60} < \dfrac{20}{60} < \dfrac{24}{60}$<br><br>
 Le candidat ayant recueilli le moins de votes est donc le candidat D.<br>
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -83,7 +83,7 @@ Quelle est la probabilité de choisir une carte rouge ?
 Il y a en tout : $7 + 21 = 28$ cartes.<br>
 La probabilité de choisir une carte rouge est de $\dfrac{7}{28}$.<br>
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -108,7 +108,7 @@ $$\begin{aligned}
 \end{aligned}$$
 En conséquence, pour tout entier $n$, on a $\dfrac{1}{\left(-1\right)^{n+5}}=-\left(-1\right)^{n}$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -129,7 +129,7 @@ La durée d'utilisation est de $10$ minutes, soit $\dfrac{1}{6}$ heure.<br>
 L'énergie consommée est donc : $3\times \dfrac{1}{6}=0{,}5$ kWh.<br>
 Le coût de la consommation est : $0{,}5\times 0{,}2=0{,}1\,\text{€}$.<br>
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 </div>

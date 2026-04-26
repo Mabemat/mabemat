@@ -1129,11 +1129,6 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 .qcm-correction td { padding: 0.35rem 0.6rem; border-bottom: 1px solid var(--border-light); color: var(--text-sec); text-align: center; }
 .qcm-correction tr:last-child td { border-bottom: none; }
 .qcm-correction td:first-child { color: var(--text-light); font-size: 0.8rem; }
-.qcm-correction .rep {
-  color: var(--accent); font-weight: 700;
-  background: color-mix(in oklab, var(--accent) 10%, transparent);
-  padding: 1px 6px; border-radius: 4px;
-}
 
 /* ═══════════════════════════════════════════════════
    AUTOMATISMES INDEX — nouveau design (maquette 01)

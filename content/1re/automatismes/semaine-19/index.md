@@ -31,7 +31,7 @@ $\dfrac{49}{36}=\left(\dfrac{7}{6}\right)^2\neq \dfrac{7}{6}$<br><br>
 $\bullet$ L'égalité $\dfrac{\dfrac{7}{6}}{5}=\dfrac{35}{6}$ est fausse.<br>
 $\dfrac{\dfrac{7}{6}}{5}=\dfrac{7}{6\times 5}=\dfrac{7}{30}$<br><br>
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -45,7 +45,7 @@ Une simplification de $8x-\dfrac{x}{8}$ est :
 
 ---CORR---
 $8x-\dfrac{x}{8}=\dfrac{8x\times 8}{8}-\dfrac{x}{8}=\dfrac{64x}{8}-\dfrac{x}{8}=\dfrac{64x-x}{8}=\dfrac{63x}{8}=$ $\boldsymbol{\dfrac{63}{8}x}$<br>
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -64,7 +64,7 @@ $V=\pi r^2h$
 On part de la formule : $V = \pi r^2 h$.
 
 En isolant $h$, on obtient : $\boldsymbol{h = \dfrac{V}{\pi r^2}}$.<br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -78,7 +78,7 @@ L'opération qui permet de calculer $90\ $% de $260$ est :
 
 ---CORR---
 Pour calculer $90\ $% de $260$, on effectue le calcul $0{,}9 \times 260$, soit encore $\boldsymbol{\dfrac{90 \times 260}{100}}$.<br>
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -98,7 +98,7 @@ Diminuer de $19\ $% revient à multiplier par $1 - 0{,}19$ (coefficient multipli
 Si $V_I$ est le prix initial, on a : $ V_I \times \left(1 - 0{,}19\right)=298$.
 
 Ainsi, le prix initial est donné par : $\boldsymbol{\dfrac{298}{1 - 0{,}19}}$.<br>
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -140,7 +140,7 @@ On note $A$ l'événement " choisir l'urne A " et $B$ l'événement " choisir l'
  $P(M) = \dfrac{1}{10} + \dfrac{3}{16}$<br><br>
 
  $P(M) = \boldsymbol{\dfrac{23}{80}}$<br><br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 </div>

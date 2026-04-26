@@ -31,7 +31,7 @@ L'équation $-4x+24=0$ a pour solution $x=6$.
 
 <img src="corr_c14-2_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:400px">
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -65,7 +65,7 @@ Les images se lisent sur l'axe des ordonnées et les antécédents sur l'axe des
 
  $\bullet$ $0$ a pour antécédent $-3$.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -90,7 +90,7 @@ Le taux d'évolution $t$ est donné par la formule :
 
  Le taux d'évolution est donc de $50 \ $%.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -112,7 +112,7 @@ L'écart interquartile est la différence entre le troisième quartile et le pre
 
  Donc l'écart interquartile est $Q_3 - Q_1 = 55 - 30 = 25$.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -132,7 +132,7 @@ La proportion des filles internes par rapport à l'ensemble des élèves du lyc�
 
  $\dfrac{1}{2}\times \dfrac{3}{5}=\dfrac{3}{10}$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -158,7 +158,7 @@ On applique la propriété des puissances de puissances d'un réel :
     &=16^{n}
     \end{aligned}$
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 

@@ -26,7 +26,7 @@ L'équation $\dfrac{x}{7}=126$ est équivalente à $x=7\times 126$.
 
 Ainsi, la solution de l'équation est $7\times 126$.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -53,7 +53,7 @@ $$\dfrac{16}{25} \times 100 = 64$$
 
 Donc le pourcentage est de $64~\%$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -80,7 +80,7 @@ De plus, son sommet a une abscisse positive et une ordonnée positive, donc $\al
 
 On en déduit que la seule fonction susceptible de représenter $\mathscr{P}$ est : $x\longmapsto -1{,}4(x-5)^2+4$.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -114,7 +114,7 @@ $$\dfrac{3\times 5 + 1\times 9}{3+1} = \dfrac{15+9}{4} = \dfrac{24}{4} = 6$$
 
 La taille moyenne des plants est donc de $6$ cm.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -139,7 +139,7 @@ P(A \cap C) &= P(A) \times P_A(C)\\\\
 &= \dfrac{18}{25}
 \end{aligned}$$
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -160,7 +160,7 @@ $$\begin{aligned}
 &= 4x^{8}
 \end{aligned}$$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 </div>

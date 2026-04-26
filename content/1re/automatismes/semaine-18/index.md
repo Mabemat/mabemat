@@ -41,7 +41,7 @@ Alice doit donc donner à Louis la somme de $\dfrac{1}{2}D - \dfrac{2}{9}D = \df
 
 La fraction de la dépense totale que Alice doit donner à Louis est donc $\boldsymbol{\dfrac{5}{18}}$.<br>
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -62,7 +62,7 @@ On cherche parmi les propositions, lesquelles peuvent donner, après développem
  &=-8x^2-16x-6\\\\
  \end{aligned}$
   <br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -81,7 +81,7 @@ Le carré de $2$ est $2^2 = 4$.
 
  Le double du carré de $2$ est égal à $\boldsymbol{8}$.
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -112,7 +112,7 @@ $\bullet$ $5$ pour la note $12$<br>
 $\bullet$ $1$ pour la note $13$.<br>
 
  Ici, on trouve un effectif total de $\boldsymbol{27}$ élèves.<br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -159,7 +159,7 @@ Comme $0{,}3=\dfrac{3}{10}$, on a :
  x&=\boldsymbol{\dfrac{1}{3}}
  \end{aligned}$ 
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -188,7 +188,7 @@ Ici, $x_D$ est négatif et $f(x_D)$ est négatif. Aussi, $x_R$ est positif et $f
 L'inéquation est donc vérifiée pour $\boldsymbol{x_D \text{ et } x_R}$.
 
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 </div>

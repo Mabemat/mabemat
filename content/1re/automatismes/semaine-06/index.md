@@ -31,7 +31,7 @@ $20\ $% de $1\ 000  = 0{,}2 \times 1\ 000 = 200$
 
  Donc $200$ élèves étudient l'Espagnol.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -51,7 +51,7 @@ Dans un repère du plan, on a représenté une droite.
 ---CORR---
 La droite est horizontale. On en déduit que son coefficient directeur est $m=0$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -79,7 +79,7 @@ On a donc : $0{,}28 < 0{,}3 < 0{,}31 < 0{,}32$.
 
 Le plus petit nombre est donc : $\dfrac{28}{100}$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -105,7 +105,7 @@ $\begin{aligned}
 
 $\phantom{\dfrac{1}{6}-\dfrac{5x+3}{x}}=-\dfrac{29x +18}{6x}$
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -130,7 +130,7 @@ On isole $u$ dans le premier membre :
               u&= \dfrac{5y}{x+2y} 
               \end{aligned}$
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -154,7 +154,7 @@ On note $CM_1 = 1 + \dfrac{10}{100}=1{,}1$ et $CM_2 = 1 + \dfrac{20}{100}=1{,}2$
 
 Or, multiplier par $1{,}32$ revient à avoir **une** **augmentation** **de** $32\ $%.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

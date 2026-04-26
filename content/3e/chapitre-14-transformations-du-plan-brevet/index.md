@@ -6,27 +6,25 @@ chapter: "chapitre-14-transformations-du-plan"
 ---
 {{< brevet-exo num="1" source="DNB Septembre 2022 Métropole" >}}
 ---INTRO---
-La figure ci-dessous est un pavage constitué de cerfs-volants.
+La figure ci-dessous est un pavage constitué de cerfs-volants. <br>
 
 Les triangles SLP et PLA ainsi formés sont des triangles équilatéraux.
 
-<br>
+<img src="/mabemat/figures/3e/chapitre-14/brevet1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+
 ---Q---
 ---PART---
 Partie A
 ---Q---
 Déterminer la mesure de l'angle $\widehat{\text{PSL}}$.
 ---CORR---
-Tous les angles d'un triangle équilatéral ont pour mesure $\dfrac{180}{3} = 60\degres{}$&nbsp;C.
+Tous les angles d'un triangle équilatéral ont pour mesure $\dfrac{180}{3} = 60°$C.
 ---Q---
-Quelle est l'image du cerf-volant 2 par la symétrie d'axe (PL)? On ne demande pas de
-justification.
+Quelle est l'image du cerf-volant 2 par la symétrie d'axe $(PL)$? On ne demande pas de justification.
 ---CORR---
 L'image du cerf-volant 2 par la symétrie d'axe (PL) est le cerf-volant 5.
 ---Q---
-Déterminer par quelle transformation du plan le cerf-volant 1 devient le cerf-volant 6 ? 
-
-On ne demande pas de justification.
+Déterminer par quelle transformation du plan le cerf-volant 1 devient le cerf-volant 6 ? On ne demande pas de justification.
 ---CORR---
 Le cerf-volant 1 devient le cerf-volant 6  par la symétrie de centre J.
 ---Q---
@@ -34,8 +32,10 @@ Le cerf-volant 1 devient le cerf-volant 6  par la symétrie de centre J.
 Partie B
 ---Q---
 Dans cette partie, on se propose de construire le cerf-volant ci-dessous.
+<img src="/mabemat/figures/3e/chapitre-14/brevet2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
 
-Essya, Nicolas et Tiago souhaitent construire cette figure à l'aide d'un logiciel de programmation.
+
+Essya, Nicolas et Tiago souhaitent construire cette figure à l'aide d'un logiciel de programmation. <br>
 
 Ils écrivent tous un programme « Cerf-volant  » différent.
 
@@ -46,9 +46,9 @@ Ils écrivent tous un programme « Cerf-volant  » différent.
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Tyago</td>
 </tr>
 <tr>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-14/scratch1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-14/scratch2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-14/scratch3.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></td>
 </tr>
 </table>
 
@@ -73,7 +73,6 @@ Le programme de Nicolas permet de dessiner un triangle équilatéral de côté 3
 ---Q---
 Un élève a écrit le script correct. Donner le nom de cet élève en justifiant la réponse.
 
-<br><br>
 ---CORR---
 Le programme de Tyago ne convient pas car après avoir dessiné un petit côté et tourner de $60\degres{}$ on avance de 300 pas au lieu de 173 pas à nouveau.
 
@@ -84,13 +83,11 @@ Ce n'est pas le programme de Nicolas : il ne reste plus que le programme d'Essya
 
 {{< brevet-exo num="2" source="DNB Septembre 2022 Polynésie" >}}
 ---INTRO---
-<br>
+On utilise un logiciel de programmation.  <br>
 
-On utilise un logiciel de programmation.
+On rappelle que « s'orienter à $0\degres{}$  » signifie qu'on oriente le stylo vers le haut. <br>
 
-On rappelle que « s'orienter à $0\degres{}$  » signifie qu'on oriente le stylo vers le haut.
-
-On considère les deux scripts suivants:
+On considère les deux scripts suivants: <br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>
@@ -105,34 +102,33 @@ On considère les deux scripts suivants:
 
 <br>
 ---Q---
-On exécute le script 1 ci-dessus.
+On exécute le script 1 ci-dessus. <br>
 
-Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie.
+Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie. <br>
 
-<br>
-<br>
 
-Chaque côté de carreau mesure 20 pixels.
+
+Chaque côté de carreau mesure 20 pixels. <br>
 
 La position de départ du stylo est indiquée sur la figure ci-contre.
 ---CORR---
-On exécute le script 1 ci-dessus.
+On exécute le script 1 ci-dessus. <br>
 
-Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie.
+Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie. <br>
 
-Le tracé est en rouge.
+Le tracé est en rouge. <br>
 
-<br>
 
-Chaque côté de carreau mesure 20 pixels.
+
+Chaque côté de carreau mesure 20 pixels. <br>
 
 La position de départ du stylo est indiquée sur la figure ci-contre.
 ---Q---
-Quel dessin parmi les trois ci-dessous correspond au script 2 ? 
+Quel dessin parmi les trois ci-dessous correspond au script 2 ?  <br>
 
-On expliquera pourquoi les deux autres dessins ne correspondent pas au script 2.
+On expliquera pourquoi les deux autres dessins ne correspondent pas au script 2. <br>
 
-Chaque côté de carreau mesure 20 pixels.
+Chaque côté de carreau mesure 20 pixels. <br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>
@@ -147,11 +143,11 @@ Chaque côté de carreau mesure 20 pixels.
 </tr>
 </table>
 ---CORR---
-Le dessin 1  n'est  pas correct car après avoir avancé deux fois de 20 on doit avancer de 40.
+Le dessin 1  n'est  pas correct car après avoir avancé deux fois de 20 on doit avancer de 40. <br>
 
 Le dessin 3  n'est  pas correct car on ne sedirige pas au départ vers le haut.
-
-Il reste donc le dessin 2 seul correct.
+ <br>
+Il reste donc le dessin 2 seul correct. <br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>
@@ -166,19 +162,13 @@ Il reste donc le dessin 2 seul correct.
 </tr>
 </table>
 ---Q---
-rrr
-
-On souhaite maintenant obtenir le motif représenté sur le dessin 4 : 
+On souhaite maintenant obtenir le motif représenté sur le dessin 4 :  <br>
 
 Compléter sans justifier les trois cases du script 3 donné en document à rendre avec la copie, permettant d'obtenir le dessin 4.
 
 	
-
-30mm
 ---CORR---
-rrr
-
-	On souhaite maintenant obtenir le motif représenté sur le dessin 4 : 
+On souhaite maintenant obtenir le motif représenté sur le dessin 4 : 
 
 	
 	
@@ -190,11 +180,9 @@ rrr
 	Les compléments sont en rouge.
 
 	
-	
 
-35mm
 ---Q---
-À partir du motif représenté sur le dessin 4, on peut obtenir le pavage ci-dessous :
+À partir du motif représenté sur le dessin 4, on peut obtenir le pavage ci-dessous : <br>
 
 Répondre aux questions suivantes sur votre copie en indiquant le numéro du motif qui convient (on ne demande pas de justifier la réponse) :
 ---SUB-Q---

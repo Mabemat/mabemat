@@ -39,7 +39,7 @@ Pour résoudre graphiquement cette inéquation :
  <img src="graphe_c10_3_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 
  On en déduit que l'inéquation $(I)$ est équivalente à : **$ -\sqrt{5} \leqslant x \leqslant \sqrt{5}$.**
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -61,7 +61,7 @@ On développe en utilisant la simple distributivité :
  \end{aligned}$
  
  
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -78,7 +78,7 @@ On a :
 $\dfrac{1}{C}=4-\dfrac{9}{10} = \dfrac{4 \times 10}{10} - \dfrac{9}{10} = \dfrac{40}{10} - \dfrac{9}{10} =\dfrac{31}{10}$ <br> <br>
 
  L'inverse de $C$ vaut $\dfrac{31}{10}$, donc $C=\boldsymbol{\dfrac{10}{31}}$.<br>
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -101,7 +101,7 @@ Diminuer de $90\ $% revient à multiplier par $0{,}1$ et augmenter de $20\ $% re
  Multiplier par $0{,}12$ revient à multiplier par $1-0{,}88$. <br>
 
  Le taux d'évolution global est donc : $\boldsymbol{-88\ } $%.<br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -123,7 +123,7 @@ D'après le graphique, on lit :
  $f(-1) = -3$.
 
  Donc $f(-3) - f(-1) = -4 - (-3) = \boldsymbol{-1}$.<br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -144,7 +144,7 @@ La médiane est la valeur qui partage la série statistique en deux parties éga
  D'après le diagramme en boite, on a $Q_1=10$ et $Q_3=40$. La médiane se trouve au niveau du trait intermédiaire.<br>
 
  La médiane de la série est donc : $\boldsymbol{30}$.<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 </div>

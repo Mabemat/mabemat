@@ -43,7 +43,7 @@ $$\begin{aligned}
     &=\dfrac{\dfrac{2}{5}}{\dfrac{3}{5}}\\
     &=\dfrac{2}{3}
      \end{aligned}$$
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -62,7 +62,7 @@ $10\,$ % du prix représente $24$ €, donc $100$ % du prix représente $10$ foi
 
 Le prix de l'article était donc : $10\times24=240$ €.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -90,7 +90,7 @@ D'où, $a\times 1^2-2=1$, soit $a=3$.
 Ainsi, $f(x)=3x^2-2$.
 
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -113,7 +113,7 @@ $$\begin{aligned}
         &=-4x^2 -32x-62\\
           \end{aligned}$$
           
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -140,7 +140,7 @@ On écrit les équations qui ne sont pas forme réduite, sous forme réduite :
 • $y=x^2-(x+1)^2+4$ s'écrit $y=-2x+3$.<br>
 
 La seule équation ayant un coefficient directeur positif et une ordonnée à l'origine positive est : $y=3x+3$.<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -155,7 +155,7 @@ Quelle est l'écriture décimale du nombre dont l'écriture scientifique est $2{
 ---CORR---
 Multiplier par  $10^{-3}$ revient à multiplier par $0{,}001$,  donc l'écriture décimale de $2{,}14\times 10^{-3}$ est : $0{,}002\,14$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 </div>

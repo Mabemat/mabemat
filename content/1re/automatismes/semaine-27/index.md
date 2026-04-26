@@ -26,7 +26,7 @@ On multiplie par $9$ chacun des deux membres de l'équation pour obtenir $x=0$.<
 C'est bien $0\div 9$ qui est égal à $0$.<br>
 Ainsi, la solution de l'équation est **0**.<br>
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -60,7 +60,7 @@ $a = 21 - 2 \times 6 = 21 - 12 = 9$ €.<br>
 
 Le montant de l'abonnement mensuel est donc de **9 €**.<br>
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -80,7 +80,7 @@ A &= 100 + 0{,}1 + \dfrac{1}{1\,000}\\
 &= \dfrac{100\,101}{1\,000}
 \end{aligned}$$
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -105,7 +105,7 @@ Les racines de la parabole (intersections avec l'axe des abscisses) sont toutes 
 
 On en déduit que la seule fonction susceptible de représenter $\mathscr{P}$ est : $x\longmapsto -0{,}8(x+2)(x+4)$.<br>
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -128,7 +128,7 @@ Prendre $20\,$ % d'une valeur revient à en prendre deux fois $10\,$ %, donc $20
 
 Le plus grand résultat est donc donné par **20 % de 115** $= 23$.<br>
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -155,7 +155,7 @@ On a $? = 10\times 50 = \mathbf{500}$.<br>
 
 Vérification : $6\times 500 = 3\,000$ et $50\times 60 = 3\,000$. ✓<br>
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 </div>

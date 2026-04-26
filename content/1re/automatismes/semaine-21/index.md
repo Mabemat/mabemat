@@ -29,7 +29,7 @@ $a - b < 0$ : Faux. Comme $a > b$, on a $a - b > 0$.
 $\sqrt{a} < \sqrt{b}$ : Faux. La fonction racine carrée est croissante sur $[0\,;+\infty[$, donc $\sqrt{a} > \sqrt{b}$.
 $a^2 < b^2$ : Faux. La fonction carré est croissante sur $[0\,;+\infty[$, donc $a^2 > b^2$.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -46,7 +46,7 @@ La relation entre la probabilité d'un événement $A$ et celle de son contraire
 
 Ainsi : $P(\overline{A})=1-\dfrac{5}{8}=\dfrac{3}{8}$.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -75,7 +75,7 @@ $$\begin{array}{|c|c|c|c|}
 
 Le bon diagramme est le seul avec trois angles égaux de $120^{\circ}$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -92,7 +92,7 @@ L'ordonnée de ce point est $0$ puisqu'il se situe sur l'axe des abscisses. Son 
 
 Les coordonnées de ce point sont donc $(45\,;\,0)$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -112,7 +112,7 @@ $$\begin{aligned}
 a &= \dfrac{373{,}36-50{,}80}{3{,}84}
 \end{aligned}$$
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -139,7 +139,7 @@ On obtient alors :
 
 $$P_A(\overline{C})=1-P_A(C)=1-\dfrac{2}{5}=\dfrac{3}{5}$$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 </div>

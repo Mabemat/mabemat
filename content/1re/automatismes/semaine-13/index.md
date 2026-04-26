@@ -25,7 +25,7 @@ Le produit de $3$ par la somme de $x$ et de $6$ est égal à :
 Le produit de $3$ par la somme de $x$ et de $6$ s'écrit : $\boldsymbol{(x+6)\times 3}$.
 
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -47,7 +47,7 @@ En isolant $C$, on obtient : $F - 32 = \dfrac{9}{5}C$.
 
 En multipliant les deux membres par $\dfrac{5}{9}$, on obtient : $\boldsymbol{C = \dfrac{5}{9}(F - 32)}$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" layout="grid">}}
@@ -71,7 +71,7 @@ Elle atteint un maximum en $x=1$.
 
 <img src="graphe_f05_2_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -101,7 +101,7 @@ On remplace $x$ par $-\dfrac{3}{5}$ dans l'expression de $f$ :
  L'image de $-\dfrac{3}{5}$ par la fonction $f$ est : $\boldsymbol{\dfrac{17}{25}}$.
  
  
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -119,7 +119,7 @@ Les deux exposants sont égaux, ainsi :
 $\begin{aligned}
  a^4\times b^4&=\boldsymbol{\left(ab\right)^4}\end{aligned}$
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -141,7 +141,7 @@ Prendre $10\ $% d'une quantité revient à la diviser par $10$.
  
  Ainsi $p=\boldsymbol{90}$.
  
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 </div>

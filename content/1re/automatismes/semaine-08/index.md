@@ -29,7 +29,7 @@ L'équation est de la forme $X^2=k$ avec $X=(x-3)$ et $k=-3$.
 
  Ainsi, l'ensemble des solutions de l'équation est $S=\emptyset$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -47,7 +47,7 @@ $72\text{ min}= 60 \text{ min}+12\text{ min}=1\text{ h}+\dfrac{2}{10}\text{ h}=1
 
  Ainsi, $72$ min correspond à $1{,}2$ heure.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -65,7 +65,7 @@ $39\ $% est proche de $40\ $% et $100\ 817$ est proche de $100\ 000$.
 
  Ainsi, le calcul de $39\ $% de $100\ 817$ est proche de $40\ $% de $100\ 000$ soit $40\ 000$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -87,7 +87,7 @@ Après une augmentation de $70\ $%, le nouveau prix est $P \times 1{,}7$.
 
  $(P \times 1{,}7) \times 1{,}7 = P \times \left(1 + \dfrac{70}{100}\right)^2=P \times  \left(1 + \dfrac{7}{10}\right)^2 = P \times 1{,}7^2$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -109,7 +109,7 @@ Le coefficient multiplicateur associé à une baisse de $20\ $% est $0{,}8$.
 
  L'évolution globale est donnée par $0{,}64-1=-0{,}36=-36\ $%.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -133,7 +133,7 @@ Le coefficient multiplicateur associé à une augmentation de $47\ $% est $1+0{,
 
  Le taux réciproque est donc $\dfrac{-0{,}47}{1{,}47}$.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

@@ -40,7 +40,7 @@ Pour déterminer un ordre de grandeur, on cherche à comparer la remise avec des
 
  Le pourcentage le plus proche parmi les propositions est $0{,}1$%.
  
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -63,7 +63,7 @@ Diminuer de $15~$% revient à multiplier par $1-\dfrac{15}{100}=0{,}85$.
 
  Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{20}{17}}$.
  
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -89,7 +89,7 @@ On applique la propriété du produit des puissances d'un réel :
  &=\boldsymbol{a^{7n}}
  \end{aligned}$
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -123,7 +123,7 @@ Pour résoudre graphiquement cette inéquation :
  Comme la fonction inverse est définie sur $\mathbb{R}^*$, $0$ est une valeur interdite et donc l'ensemble des solutions de l'inéquation $(I)$ est : $S = \left]-\infty\ ;\ -\dfrac{1}{2}\right[ \cup ]0\ ;\ +\infty[$.
  
  
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -145,7 +145,7 @@ Une seule de ces propositions est exacte :
 Il y a un point d'intersection entre la courbe et l'axe des abscisses.
 
  Par conséquent, **l'équation $f(x)=0$ admet exactement une solution.**.
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -179,7 +179,7 @@ On a :
  \end{aligned}$
  
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 </div>

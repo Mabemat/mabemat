@@ -32,7 +32,7 @@ $$\begin{aligned}
           &=14
           \end{aligned}$$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -52,7 +52,7 @@ $$\begin{aligned}
     &=10^2\times 2^{2}\\\\
     &=4\times 10^{2}
     \end{aligned}$$
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -69,7 +69,7 @@ On reconnaît le développement de l'égalité remarquable : <br>
 $(a+b)(a-b)=a^2-b^2$ avec $a=3x$ et $b=10$. <br>
 On a donc :
       $9x^2-100=(3x-10)(3x+10)$
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -91,7 +91,7 @@ $$\begin{aligned}
     &=0{,}027+2{,}67\\\\
     &=2{,}697
     \end{aligned}$$
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -108,7 +108,7 @@ Son coefficient directeur est :
 ---CORR---
 On reconnaît l'équation réduite d'une droite de la forme $y=mx+p$ où $m$ est son coefficient directeur.<br>
 Ici, $m=0$ et $p=5$.<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -126,7 +126,7 @@ L'image de $-3$ est :
 Pour lire l'image de $-3$, on place la valeur de $-3$ sur l'axe des abscisses (axe de lecture  des antécédents) et on lit
     son image  sur l'axe des ordonnées (axe de lecture des images).<br>
      On obtient :  $f(-3)=-2$<br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 </div>

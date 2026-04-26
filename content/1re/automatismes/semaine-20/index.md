@@ -33,7 +33,7 @@ F &= \dfrac{2}{\dfrac{1}{7}} +4 \times \dfrac{3}{5} \\\\
 \end{aligned}$
 
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -71,7 +71,7 @@ On cherche si les fonctions $f$ peuvent s'écrire sous la forme $f(x)=mx+p$.
 
  **Uniquement la fonction $f_1$ est affine.**
  
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -90,7 +90,7 @@ $\begin{aligned} \left(-1\right)^{n+4}&=\left(-1\right)^{4} \times \left(-1\righ
  &=\boldsymbol{\left(-1\right)^{n}} 
  \end{aligned}$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -121,7 +121,7 @@ Pour résoudre graphiquement cette inéquation :
 
  Comme la fonction racine carrée est définie sur $[0\ ;\ +\infty[$, l'ensemble des solutions de l'inéquation $(I)$ est : **$S = [4\ ;\ +\infty[$**.
  
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -159,7 +159,7 @@ On peut calculer sa moyenne avec l'expression : $\dfrac{45 + x}{6}$
 $x = \boldsymbol{15}$
 
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -183,7 +183,7 @@ Ainsi, $N=4\times 160$ élèves soit
  $\boldsymbol{640}$ élèves au total.
  
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 </div>

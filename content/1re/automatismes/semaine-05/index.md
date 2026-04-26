@@ -35,7 +35,7 @@ La fonction $f(x) = 6x+48$ est une fonction affine de coefficient directeur $a =
 
 <img src="corr_c14-1_1.svg" alt="Graphique" style="display:block;margin:0.5rem auto;max-width:340px">
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -55,7 +55,7 @@ Le prix a baissé de $5$ €, ce qui correspond à $10\   $% de $50$ €.
 
  Le prix du sweat a donc baissé de $10\   $%.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -75,7 +75,7 @@ Zacharie consacre $50\  $% de sa journée de dimanche à faire ses devoirs.
 ---CORR---
 Le pourcentage du temps consacré à l’exposé par rapport à la journée de dimanche est égal à $50\  $% de $70\  $%, soit $0{,}5\times 70\  $%.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -95,7 +95,7 @@ Comme $p(x)=-4x-6$, on a :
 
 $\begin{aligned}p\left(-\dfrac{3}{5}\right)&=-4\times \left(-\dfrac{3}{5}\right)-6\\\\&=\dfrac{12}{5}-6\\\\&=-\dfrac{18}{5}\end{aligned}$
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -120,7 +120,7 @@ Le matin, Marie a bu $\dfrac{3}{10}$ de la bouteille. Il reste alors $\dfrac{7}{
  Comme $\dfrac{1}{3}\times \dfrac{7}{10}=\dfrac{7}{30}$, elle a bu $\dfrac{7}{30}$ 
  de la bouteille à midi.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -145,7 +145,7 @@ Le terme en $x$ vient de la somme de $x \times (-1)$ et de $-4 \times x$.
 
 Le terme constant vient de $-4\times (-1)= 4$.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

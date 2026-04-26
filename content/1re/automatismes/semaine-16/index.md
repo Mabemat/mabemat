@@ -32,7 +32,7 @@ On applique la propriété du quotient des puissances d'un réel :
  &=\boldsymbol{a^{-n(n^{2}-1)}}
  \end{aligned}$
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -65,7 +65,7 @@ Pour résoudre graphiquement cette inéquation :
  <img src="graphe_c10_4_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 
  On en déduit que l'ensemble des solutions de l'inéquation $(I)$ est : $S = [-\sqrt{6}\ ;\ \sqrt{6}]$.
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -86,7 +86,7 @@ Comme $25\ $%$ > 20\ $%, la baisse appliquée est plus forte que celle nécessai
 
  **Le prix final sera donc strictement inférieur au prix initial.** <br>
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -113,7 +113,7 @@ La droite $(D)$ est strictement au-dessus de la droite $(D')$ lorsque $-3x+5>x-2
 
  La droite $(D)$ est donc strictement au-dessus de la droite $(D')$ sur : 
  $\boldsymbol{\left]-\infty\ ;\ \dfrac{7}{4}\right[}$. <br>
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -147,7 +147,7 @@ Comme $A$ et $\overline A$ fonrment une partition de l'univers, on applique la f
  \end{aligned}$
  
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -179,7 +179,7 @@ Sans calculatrice, on peut estimer la valeur en approchant $16{,}56$ par $17$ et
 On obtient alors : $\dfrac{17}{4} = 4{,}25$, ce qui nous indique que le résultat est proche de $4{,}25$.<br>
 
 La seule réponse possible est $\boldsymbol{4{,}6}$ $\text{kWh}$.<br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 </div>

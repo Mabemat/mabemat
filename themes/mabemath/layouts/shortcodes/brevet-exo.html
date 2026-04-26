@@ -29,7 +29,7 @@
 
       {{/* Séparateur de partie (PARTIE A / PARTIE B …) */}}
       {{ if strings.HasPrefix $trimmed "---PART---" }}
-        {{ $partLabel := strings.TrimSpace (strings.TrimPrefix $trimmed "---PART---") }}
+        {{ $partLabel := strings.TrimSpace (strings.TrimPrefix "---PART---" $trimmed) }}
         {{ $questions = $questions | append (dict "type" "part" "label" $partLabel "enonce" "" "corr" "" "sub_questions" slice) }}
 
       {{ else if strings.Contains $trimmed "---SUB-Q---" }}

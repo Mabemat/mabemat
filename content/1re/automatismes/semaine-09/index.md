@@ -39,7 +39,7 @@ On obtient $k=\dfrac{90}{100} = \dfrac{9}{10}=0{,}9$.
 
  On peut dire que le prix a été multiplié par $0{,}9$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -59,7 +59,7 @@ La valeur $15$ correspond au minimum et la valeur $75$ au maximum.
 
  Donc, la proportion de valeurs comprises entre $15$ et $75$ est de $100$%.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -86,7 +86,7 @@ x=-3 &\text{ ou } x=-5
 
 Le produit de ces soltions est donc égal à : $(-3)\times (-5)=15$.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -110,7 +110,7 @@ $\begin{aligned}
 
  L'image de $2$ par la fonction $f$ est : $7$.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -138,7 +138,7 @@ Prenons la moyenne de ces deux valeurs :
 
 La médiane est donc $12{,}5$.
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -160,7 +160,7 @@ On a :
      &=0{,}050\ 5
      \end{aligned}$
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

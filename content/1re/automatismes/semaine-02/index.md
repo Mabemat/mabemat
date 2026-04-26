@@ -29,7 +29,7 @@ La somme de $-1$ et $7$ est $6$.
 
  Son inverse est : $\dfrac{1}{6}$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -50,7 +50,7 @@ De la relation $9a+10y=5$, on déduit en ajoutant $-10y$ dans chaque membre :
 
  Puis, en divisant par $9$, on obtient : $ a=\dfrac{5-10y}{9}$.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -94,7 +94,7 @@ $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.
     &=-27
     \end{aligned}$
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -115,7 +115,7 @@ On utilise l'égalité remarquable $(a+b)^2=a^2+2ab+b^2$ avec $a=3a$ et $b=2$.
             &=9a^2+12a+4
             \end{aligned}$
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -135,7 +135,7 @@ On reconnaît la droite grâce à son ordonnée à l'origine ($-5<0$) et son coe
 
  Il s'agit de la droite $D_1$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -168,7 +168,7 @@ Mentalement :
 
  Le nouveau prix est : $35-7= 28$ €.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 

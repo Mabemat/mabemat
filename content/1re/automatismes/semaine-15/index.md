@@ -40,7 +40,7 @@ $\bullet$ L'inéquation $f(x) \leqslant 0$ a pour ensemble de solutions $[-3\ ;\
  Cette affirmation est fausse : <br>
 Les solutions de l'inéquation $f(x) \leqslant 0$ sont les abscisses des points de la courbe situés en dessous ou sur l'axe des abscissses.<br>
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -65,7 +65,7 @@ $C = \dfrac{7}{20} = \dfrac{7 \times 5}{20\times 5} = \dfrac{35}{100}=0,35$<br><
 
 On a donc : $0,35 < 0,375 < 0,38$.
 Finalement : $\boldsymbol{C < A < B}$.
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -81,7 +81,7 @@ Une simplification de $a \times 1$ est :
 Tout nombre multiplié par $1$ est égal à lui-même.
 
 $a \times 1 = \boldsymbol{a}$
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -105,7 +105,7 @@ $(x+7)(x-2)$ est un produit de deux fonctions affines.
 <img src="graphe_c14_4_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 
 On en déduit que l'ensemble des solutions est $\boldsymbol{]-7\ ;\ 2[}.$
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -122,7 +122,7 @@ $h(-3)+h(1)$ est égal à :
 On a : $h(-3)=-6\times (-3)+3=21$ et $h(1)=-6\times 1+3=-3$. <br>
 
  On en déduit que $h(-3)+h(1)=21-3=\boldsymbol{18}$. <br>
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -145,7 +145,7 @@ La série contient $9$ valeurs. <br>
  $\dfrac{9}{4}=2{,}25$ <br>
 On arrondit à l'entier supérieur qui vaut $3$. <br>
  Le premier quartile est donc la valeur de rang $3$ de la série classée : $Q_1=8$. <br>
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 </div>

@@ -26,7 +26,7 @@ On obtient :
 On additionne d'abord $x$ avec son triple $3x$ : $x + 3x = 4x$.
 
  Puis on élève le résultat au carré : $\boldsymbol{(4x)^2}$.
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -47,7 +47,7 @@ Parmi les réponses proposées, on cherche la fonction affine qui s'annule en $1
  la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d'après le tableau de signes.
 
  Il s'agit de la fonction $f$ définie par $\boldsymbol{f(x)=3x-3}$.
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -67,7 +67,7 @@ L'équation $2x^2+3x-5=-5$ s'écrit $2x^2+3x=0$.
  On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{-3}{2}=-\dfrac{3}{2}$.
 
  $\mathscr{S}=\boldsymbol{\lbrace 0;-\dfrac{3}{2}\rbrace}$
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" layout="grid">}}
@@ -89,7 +89,7 @@ La fonction $g$ s'annule en $-4$ et la fonction $h$ s'annule en $3$.
 
  On en déduit le tableau de signes de leur produit :<img src="graphe_f05_1_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -109,7 +109,7 @@ L'équation $f(x)=3$ a :
 Le nombre de solutions de l'équation $f(x)=3$ est le nombre d'antécédents de $3$ par la fonction $f$.
 
  Puisque la droite d'équation $y = 3$ (droite hrizontale) coupe $3$ fois la courbe, on en déduit que l'équation $f(x)=3$ admet $\boldsymbol{3}$ **solutions**.
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -129,7 +129,7 @@ $m=\dfrac{\boldsymbol{2}}{\boldsymbol{2}}=1$. <br>
 Son ordonnée à l'origine est $4$, ainsi l'équation réduite de la droite est $\boldsymbol{y=x+4}$.
 <img src="graphe_f07_4_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 </div>

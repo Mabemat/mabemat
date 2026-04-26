@@ -38,7 +38,7 @@ En février, elle rembourse $\dfrac{1}{6}$ de ce qu'elle a remboursé en janvier
  
  Il lui restera à rembourser en mars : $1 - \dfrac{35}{54} = \boldsymbol{\dfrac{19}{54}}$ du crédit.<br><br>
  
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -58,7 +58,7 @@ Dans une $1$ heure, il y a $4\times 15$ minutes.
 
  Sa vitesse moyenne est donc $\boldsymbol{7{,}5}\text{ km/h}$. 
  
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -77,7 +77,7 @@ On arrondit $217$ à $200$ et $277$ à $300$.
 
  Un ordre de grandeur de $217 \times 277$ est donc $\boldsymbol{60\ 000}$.
  
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -96,7 +96,7 @@ On obtient $P(n+1)$ en diminuant $P(n)$ de $10\ $% de $P(n)$.
 
  On a donc : $\boldsymbol{P(n + 1) = P(n)-\dfrac{10\times P(n)}{100}}$.
  
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -117,7 +117,7 @@ Diminuer de $38~$% revient à multiplier par de $1-\dfrac{38}{100}=0{,}62$.
 
  Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{1}{0{,}62}}$.
  
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -140,7 +140,7 @@ Pour passer de $25\ $% à $100\ $%, on multiplie par $4$.
  $N=\boldsymbol{70}$
 
  
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /qcm >}}
 
 </div>

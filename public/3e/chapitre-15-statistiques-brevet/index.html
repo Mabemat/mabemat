@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.9ad105fbcc92eecc1043b738fac11ce3bb8087cf052b14f30f0ed752b294f086.css" integrity="sha256-mtEF&#43;8yS7swQQ7c4&#43;sEc47uAh88FKxTzDw7XUrKU8IY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.4cb492f884b897d7af18aedf08ad5ef66e32eea211c46e1316fad61c3c8ebc6c.css" integrity="sha256-TLSS&#43;IS4l9evGK7fCK1e9m4y7qIRxG4TFvrWHDyOvGw=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -125,6 +125,7 @@ pre[style*="background-color"] {
 
 <div class="exercices-brevet fade-up d2">
   
+
 
 
 
@@ -271,13 +272,6 @@ pre[style*="background-color"] {
         Sur les $1,6$ million d'adolescents de 11 à 17 ans interrogés, combien ne respectent pas cette recommandation ?
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">D'après le communiqué de presse, 81&thinsp;% des $1,6$ million d'adolescents de 11 à 17 ans interrogés ne respectent pas cette recommandation.
-
-Cela représente : $0,81\times 1,6 \times 10^{6} = 1\,296\,000$ personnes, soit 1,296 million d'adolescents.</div>
-        
 
         
 
@@ -348,13 +342,6 @@ Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quo
             <div>
               <div class="sub-enonce">Quelle est l'étendue des 14 durées quotidiennes notées dans le calendrier ?</div>
               
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">La valeur maximale de la série est celle du jour 4, pour 1 h 40 min, et la valeur minimale est celle du jour 14 pour 0 min.
-
-		L'étendue des 14 durées quotidiennes notées dans le calendrier est donc la différence entre les deux, soit 1 h 40 min.</div>
-              
             </div>
           </div>
           
@@ -363,15 +350,6 @@ Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quo
             <span class="sub-letter">b.</span>
             <div>
               <div class="sub-enonce">Donner une médiane de ces 14 durées quotidiennes.</div>
-              
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">Pour donner une médiane de ces 14 durées quotidiennes, il nous faut commencer par ranger les valeurs dans l'ordre croissant :
-
-		0 min; 15 min; 15 min; 30 min; 30 min; 40 min; <strong>50 min</strong>; <strong>1 h</strong>; 1 h; 1 h; 1 h; <br> 1&nbsp;h&nbsp;30&nbsp;min; 1 h 30 min ; 1 h 40 min.
-
-		Il y a 14 valeurs en tout, donc la médiane est la moyenne des deux valeurs centrales, (écrites en gras, ci- dessus). La médiane est donc de 55 min.</div>
               
             </div>
           </div>
@@ -401,44 +379,6 @@ Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quo
             <div>
               <div class="sub-enonce">Montrer que, sur les 14 premiers jours, cet adolescent n'a pas atteint son objectif.</div>
               
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">Calculons la durée moyenne de pratique physique pour cet  adolescent. Pour simplifier les calculs, convertissons toutes les durées en minutes, et établissons un tableau d'effectif :
-
-	
-		<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Durée (min)</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">0</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">15</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">30</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">40</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">50</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">60</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">90</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">100</td>
-</tr>
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">effectif</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">4</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">2</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
-</tr>
-</table>
-	
-
-		La durée moyenne est donc de :
-
-		$\dfrac{0\times 1 + 15 \times 2 + 30 \times 2 + 40 \times 1 + 50 \times 1 + 60 \times 4 + 90\times 2+100\times1}{14} = \dfrac{700}{14} = 50$.
-
-		En moyenne, l'adolescent a eu une pratique physique de 50 minutes par jour, donc l'objectif n'est pas atteint.</div>
-              
             </div>
           </div>
           
@@ -449,15 +389,6 @@ Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quo
               <div class="sub-enonce">Pendant les 7 jours suivants, cet adolescent décide alors de consacrer plus de temps au sport pour atteindre son objectif sur l'ensemble des $21$ jours.
 
 Sur ces 7 derniers jours, quelle est la durée totale de pratique physique qu'il doit au minimum prévoir pour atteindre son objectif?
-<br><br></div>
-              
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">Pour que la moyenne soit exactement d'une heure sur les 21 jours, il faut que pendant ces 21 jours, il ait eu $21 \times 60 = \np[min]{1260}$ de pratique physique.
-
-		Comme il en a déjà effectué 700 pendant les 14 premiers jours, cela lui laisse 560 minutes à effectuer pendant les 7 jours suivants (donc $560\div 7 = 80$&nbsp;min par jour, en moyenne.)
-
 <br><br></div>
               
             </div>
@@ -474,6 +405,7 @@ Sur ces 7 derniers jours, quelle est la durée totale de pratique physique qu'il
   </div>
 
 </article>
+
 
 
 
@@ -645,7 +577,7 @@ Sur ces 7 derniers jours, quelle est la durée totale de pratique physique qu'il
     
 
     
-    <div class="partie-header">---PART---</div>
+    <div class="partie-header">Partie A — Évolution du nombre de visiteurs sur un site touristique</div>
 
     
 
@@ -667,11 +599,6 @@ Sur ces 7 derniers jours, quelle est la durée totale de pratique physique qu'il
             <div>
               <div class="sub-enonce">Quel a été le nombre de visiteurs en 2010 ? Aucune justification n'est attendue.</div>
               
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">Le nombre de visiteurs en 2010 est $ 300~000 $.</div>
-              
             </div>
           </div>
           
@@ -680,11 +607,6 @@ Sur ces 7 derniers jours, quelle est la durée totale de pratique physique qu'il
             <span class="sub-letter">b.</span>
             <div>
               <div class="sub-enonce">En quelle année le nombre de visiteurs a-t-il été le plus élevé ? Aucune justification n'est attendue.</div>
-              
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">Le nombre de visiteurs a été le plus élevé en $ 2019 $.</div>
               
             </div>
           </div>
@@ -721,17 +643,6 @@ Le maire de cette ville avait pour objectif que le nombre de visiteurs progresse
 L'objectif a-t-il été atteint ?
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Une augmentation de $ 15\% $ revient à un nombre de visiteurs égal à :
-
-$\displaystyle	V_{\text{finale}}=\left(1+\dfrac{15}{100}\right)\times V_{\text{initiale}}= 1,15 \times 187\,216 = 215\,298{,}4 $.
-
-Or cette valeur est inférieure à la valeur 219&thinsp;042 atteinte en $2021$.
-
-Donc l'objectif du maire a bien été atteint.</div>
-        
 
         
 
@@ -742,7 +653,7 @@ Donc l'objectif du maire a bien été atteint.</div>
     
 
     
-    <div class="partie-header">---PART---</div>
+    <div class="partie-header">Partie B — Étude des prix des hôtels de cette ville</div>
 
     
 
@@ -781,11 +692,6 @@ Donc l'objectif du maire a bien été atteint.</div>
 Déterminer l'étendue des prix facturés.
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">L'étendue de cette série vaut : $ Max. - Min. = 500 - 60 = 440 $. Soit $ 440 $ euros.</div>
-        
 
         
 
@@ -800,15 +706,6 @@ Déterminer l'étendue des prix facturés.
       <div class="q-enonce">
         Quelle est la moyenne des prix facturés pour une nuit ? Arrondir à l'euro près.
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">On calcule la moyenne de la série :<br>
-		$\displaystyle \dfrac{60\times 1\,200 + 80 \times 1\,350 + 85\times 1\,000 + 90\times 1\,100 + 110\times 1\,200 + 120\times 1\,300 + 350 \times 900 + 500 \times 300}{8\,350}$<br>
-$\approx 134$.
-
-La moyenne des prix facturés pour une nuit est donc de $134$&nbsp;euros.</div>
         
 
         
@@ -827,23 +724,6 @@ La moyenne des prix facturés pour une nuit est donc de $134$&nbsp;euros.</div>
 <br><br>
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Il y a $8\,350$ nuits au total.
-
-Or, $\displaystyle \dfrac{8\,350}{2}= 4\,175$. On calcule les effectifs cumulés, jusqu'à la valeur $ 90 $ euros incluse (dernière valeur inférieure à $ 100 $) : $1\,200 + 1\,350 + 1\,000 + 1\,100 = 4\,650$.
-
-$ 4~650 > 4~175 $ donc l'affirmation de l'association est vraie.
-
-<strong>OU</strong>
-
-On cherche la médiane de la série. Il y a $ 8~350 $	 nuits au total.
-
-Or, $\displaystyle \dfrac{8~350}{2}=4~175$. La médiane de la série est donc entre la 4&thinsp;175-ième et la 4&thinsp;176-ième valeur. Par lecture dans le tableau, on trouve que la médiane vaut $ 90 $ euros. Donc la moitié des valeurs de la série sont inférieures ou égales à $ 90 $, donc l'affirmation de l'association est vraie.
-
-<br><br></div>
-        
 
         
 
@@ -855,6 +735,7 @@ Or, $\displaystyle \dfrac{8~350}{2}=4~175$. La médiane de la série est donc en
   </div>
 
 </article>
+
 
 
 
@@ -1142,11 +1023,6 @@ fonction de la répartition des médailles obtenues. Voici le classement obtenu 
         Combien de médailles d'argent l'Australie a-t-elle obtenues ?
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">L'Australie a obtenu $29$ médailles d'argent.</div>
-        
 
         
 
@@ -1162,13 +1038,6 @@ fonction de la répartition des médailles obtenues. Voici le classement obtenu 
         Calculer le nombre de médailles de bronze obtenues par l'Italie.
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">On a $69 - 29 - 14 = 40 - 14 = 26$.
-
-L'Italie a obtenu 26 médailles de bronze.</div>
-        
 
         
 
@@ -1183,11 +1052,6 @@ L'Italie a obtenu 26 médailles de bronze.</div>
       <div class="q-enonce">
         Quelle formule a pu être saisie en F2 avant d'être étirée vers le bas ?
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">La formule à insérer est : = somme(C2 : E2).</div>
         
 
         
@@ -1216,21 +1080,6 @@ L'Italie a obtenu 26 médailles de bronze.</div>
 	« La médiane du nombre de médailles d'argent obtenues par ces 15 pays est 29.  »
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">&nbsp;
-
-<strong>Affirmation 1</strong> Le pourcentage est : $\dfrac{11}{54} \times 100 \approx 20,4$ soit à l'unité près 20&thinsp;%.
-
-L'affirmation 1 est donc vraie à l'arrondi près.
-
-<br>
-
-<strong>Affirmation 2</strong> Il y a 15 données, la médiane est donc la 8<sup>e</sup> donnée de la série rangée dans l'ordre croissant, (1&thinsp;11 &thinsp;12 &thinsp;15 &thinsp;15 &thinsp;15 &thinsp;17 &thinsp;20 &thinsp;29) à savoir 20.
-
-L'affirmation 2 est donc fausse.</div>
-        
 
         
 
@@ -1248,15 +1097,6 @@ L'affirmation 2 est donc fausse.</div>
 Quel est le pourcentage d'augmentation de cette prime entre 2016 et 2021 ?
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">On calcule $\dfrac{65\,000}{50\,000} = 1,30$.
-
-La prime a augmenté de 30&thinsp;% entre 2016 et 2021.
-
-<br><br></div>
-        
 
         
 
@@ -1268,6 +1108,7 @@ La prime a augmenté de 30&thinsp;% entre 2016 et 2021.
   </div>
 
 </article>
+
 
 
 
@@ -1474,11 +1315,6 @@ Le tableau ci-dessous donne le volume de jus de pomme (en mL) contenu dans ces b
         Déterminer la médiane des volumes de cette série. Interpréter ce résultat
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Il y a $24$ données  ; la médiane est donc la moyenne entre la 12<sup>e</sup> et 13<sup>e</sup> données de la série rangées dans l'ordre croissant. D'après l'effectif cumulé croissant du tableau donné la 12<sup>e</sup> et la 13<sup>e</sup> donnée sont $350$, donc la médiane est de $350$ mL. Ce qui signifie que 50&thinsp;% des données sont des volumes inférieurs à $350$&nbsp;mL et que 50&thinsp;% sont des volumes supérieurs à $350$&nbsp;mL.</div>
-        
 
         
 
@@ -1494,11 +1330,6 @@ Le tableau ci-dessous donne le volume de jus de pomme (en mL) contenu dans ces b
         Calculer l'étendue de cette série
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">L'étendue est égale à : $357 - 344 = 13$ mL.</div>
-        
 
         
 
@@ -1513,11 +1344,6 @@ Le tableau ci-dessous donne le volume de jus de pomme (en mL) contenu dans ces b
       <div class="q-enonce">
         On prélève au hasard une brique parmi celles contrôlées, quelle est la probabilité qu'elle contienne exactement $350$&nbsp;mL de jus de pomme ?
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">On a trouvé 2 briques de $350$&nbsp;mL.La probabilité d'obtenir une brique contenant exactement $350$ mL est donc égale à $\dfrac{2}{24} = \dfrac{1}{12}$ soit environ 8,3&thinsp;%.</div>
         
 
         
@@ -1536,14 +1362,6 @@ Le tableau ci-dessous donne le volume de jus de pomme (en mL) contenu dans ces b
 Quel est le pourcentage de briques que l'entreprise peut vendre parmi les briques contrôlées ?
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Nombre de briques ayant un volume compris entre $345$mL et $355$ mL :
-$24 - (1 + 1 + 1) = 24 - 3 = 21$.
-
-Le pourcentage de briques pouvant être vendues est donc : $\dfrac{21}{24} \times 100 = \dfrac78 \times 100$ soit  87,5&thinsp;%.</div>
-        
 
         
 
@@ -1554,7 +1372,7 @@ Le pourcentage de briques pouvant être vendues est donc : $\dfrac{21}{24} \time
     
 
     
-    <div class="partie-header">---PART---</div>
+    <div class="partie-header">Partie B — Briques de jus de raisin</div>
 
     
 
@@ -1569,11 +1387,6 @@ Le pourcentage de briques pouvant être vendues est donc : $\dfrac{21}{24} \time
 
 Calculer l'aire de la base de cette brique.
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Aire base $= 6,4 \times 5 = 32$ cm²</div>
         
 
         
@@ -1591,17 +1404,6 @@ Calculer l'aire de la base de cette brique.
 
 <br><br>
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">$V_{\text{pavé}} = L \times l \times h$.
-
-Soit $400 = 6,4 \times 5 \times  h$ ou $400 = 32h$, d'où $h = \dfrac{400}{32} = 12,5$ cm.
-
-Il faut une hauteur de 12,5&nbsp;cm pour obtenir une brique de $400$&nbsp;cm$^3$.
-
-<br><br></div>
         
 
         

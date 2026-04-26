@@ -27,7 +27,7 @@ On utilise la formule $a^n\times a^m=a^{n+m}$ avec $a=2$, $n=-3$ et $p=3$.
 
  $2^{-3}\times 2^{3}=2^{-3+3}=2^{0}$
 
-La bonne réponse est la réponse **C**.
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -49,7 +49,7 @@ On isole le carré pour se ramener à une équation du type $x^2=k$.
 
 Ainsi, $S=${$-9\ ;\ 9$}.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -75,7 +75,7 @@ La réduction est de $15$ euros sur un total de $50$ euros.
 
 La réduction est un multiple de $10\  $%.
 
-La bonne réponse est la réponse **D**.
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -103,7 +103,7 @@ La seule inégalité vraie est : $\left(\dfrac{1}{6{,}42}\right)^2<\left(\dfrac{
 
  $5{,}49^2>5{,}81^2$ est fausse car la fonction carré est strictement croissante sur $[0\ ;\ +\infty[$, donc $5{,}49^2<5{,}81^2$ car $5{,}49<5{,}81$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -125,7 +125,7 @@ En effet, $15\ $%$ = \dfrac{15}{100} = 0{,}15$.
 
 Ainsi, le nouveau prix est donné par : $274 \times \left(1 - 0{,}15\right)$.
 
-La bonne réponse est la réponse **A**.
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -153,7 +153,7 @@ Multiplier par $0{,}2$ revient à multiplier par $1-\dfrac{80}{100}$.
 
  Le taux d'évolution est donc $- 80\  $%.
 
-La bonne réponse est la réponse **B**.
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
