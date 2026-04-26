@@ -77,7 +77,6 @@
           <span style="background:{{ $levelData.color2 }};"></span>
         </div>
         <div>{{ len $chapitres2 }} chapitres</div>
-        <div>{{ now.Year | printf "%d" | printf "année %s" }}–{{ now.Year | add 1 }}</div>
       </div>
     </div>
     {{ $autoPage := index (where .Pages "Params.has_automatismes" true) 0 }}
