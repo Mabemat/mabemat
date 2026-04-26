@@ -118,7 +118,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 
 <h3 class="subsubsection-title">11.2.2 Propriétés</h3>
 
-<div style="display:inline-block; vertical-align:middle; width:calc(54% - 12px);">
+<div style="display:inline-block; vertical-align:middle; width:calc(50% - 12px);">
 <strong>Relation de symétrie</strong>  
 
 <div class="environment propriete">
@@ -147,17 +147,24 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-<img src="/mabemat/figures/1re/chapitre-11/fig7.svg" alt="figure 7" style="width:28%; max-height:300px; max-width:100%;">
+<img src="/mabemat/figures/1re/chapitre-11/fig7.svg" alt="figure 7" style="width:45%; max-height:300px; max-width:100%;">
 
-<div style="width:70%;">
+<div style="width:50%;">
 <strong>Relation de déphasage</strong>
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-<strong>Avec le complémentaire :</strong> <br>
-$\quad \textcolor{#B8C5A6}{\bullet} \quad \sin\left(\dfrac{\pi}{2}-x\right)=\cos(x) \quad\quad\quad\quad \textcolor{#B8C5A6}{\bullet} \cos\left(\dfrac{\pi}{2}-x\right)=\sin(x)$<br>
-<strong>Avec un déphasage d'un quart de tour :</strong> <br>
-$\quad \textcolor{#B8C5A6}{\bullet} \quad \sin\left(\dfrac{\pi}{2}+x\right)=\cos(x) \quad\quad\quad\quad \textcolor{#B8C5A6}{\bullet} \cos\left(\dfrac{\pi}{2}+x\right)=-\sin(x)$
+<strong>Avec le complémentaire :</strong> 
+<ul>
+<li>$\sin\left(\dfrac{\pi}{2}-x\right)=\cos(x)$ </li>
+<li>$\cos\left(\dfrac{\pi}{2}-x\right)=\sin(x)$</li>
+</ul>
+
+<strong>Avec un déphasage d'un quart de tour :</strong> 
+<ul>
+<li>$\sin\left(\dfrac{\pi}{2}+x\right)=\cos(x)$ </li>
+<li>$\cos\left(\dfrac{\pi}{2}+x\right)=-\sin(x)$</li>
+</ul>
 </div>
 </div>
 </div>
