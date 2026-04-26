@@ -5,7 +5,7 @@ title: "Leçon complète"
 <h2 class="subsection-title">11.1 Cercle trigonométrique et radian</h2>
 
 <h3 class="subsubsection-title">11.1.1 Cercle trigonométrique</h3>
-
+<div style="display:flex; align-items:center; gap:20px;">
 <div style="display:inline-block; vertical-align:middle; width:calc(59% - 12px);">
 Sur un cercle, deux sens de parcours sont possibles.<br>
 On appelle <strong>plan orienté</strong>, un plan dans lequel tous les cercles sont orientés dans le sens contraire des aiguilles d'une montre, appelé <strong>sens direct ou sens trigonométrique</strong>. L'autre sens (celui des aiguilles d'une montre) est appelé sens indirect ou sens anti-trigonométrique.
@@ -17,9 +17,9 @@ Un <strong>cercle trigonométrique</strong> est un cercle de centre $O$, de rayo
 </div>
 </div>
 </div><img src="/mabemat/figures/1re/chapitre-11/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(39% - 12px); max-height:300px; max-width:100%;">
-
+</div>
 <h3 class="subsubsection-title">11.1.2 Enroulement de la droite des réels et radian</h3>
-
+<div style="display:flex; align-items:center; gap:20px;">
 <div style="display:inline-block; vertical-align:middle; width:calc(73% - 12px);">
 Soit $(O,I,J)$ un repère orthonormé du plan.
 $\mathcal{C}$ est le cercle trigonométrique de centre $O$.
@@ -32,7 +32,8 @@ Les réels positifs s'enroulent dans le sens de rotation direct et les réels n�
 <li>$M$ est l'image de $x$ par enroulement de la droite réelle sur le cercle trigonométrique</li>
 </ul>
 </div><img src="/mabemat/figures/1re/chapitre-11/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(25% - 12px); max-height:200px; max-width:100%;">
-
+</div>
+<div style="display:flex; align-items:center; gap:20px;">
 <div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(83% - 12px);">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
@@ -40,7 +41,7 @@ Dans un cercle trigonométrique, la <strong>mesure d'un angle en radian</strong>
 En particulier, 1 radian est la mesure de l'angle $\widehat{IOM}$ si la longueur de l'arc $\overset{\frown}{IM}$ est égal à $1$ (dans le sens direct).
 </div>
 </div><img src="/mabemat/figures/1re/chapitre-11/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(15% - 12px); max-height:200px; max-width:100%;">
-
+</div>
 <div class="remarque">
 Si le réel $x$ repère un point $M$, la longueur du cercle étant de $2\pi$, il est clair que les réels $x + 2\pi, x + 4\pi, x + 6\pi, x + 8\pi, ... ,$ ainsi que $x- 2\pi, x- 4\pi, ... $, repèrent le même point $M$.<br>
 Par conséquent, si $x$ repère $M$ sur le cercle trigonométrique, alors tous les nombres de la forme $x + 2k\pi$, avec $k$ appartenant à $\Z$, repèrent le même point $M$.
@@ -71,7 +72,8 @@ On a donc le tableau de proportionnalité :
 </div>
 
 
-Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonométrique <br>
+Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonométrique 
+<div style="display:flex; align-items:center; gap:20px;">
 <div style="display:inline-block; vertical-align:middle; width:calc(55% - 12px);">
 <table>
 <tr>
@@ -98,14 +100,14 @@ Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonom
 </tr>
 </table>
 </div><img src="/mabemat/figures/1re/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(43% - 12px); max-height:400px; max-width:100%;">
-
+</div>
 
 
 <h2 class="subsection-title">11.2 Cosinus et sinus d'un réel</h2>
 
 <h3 class="subsubsection-title">11.2.1 Définition</h3>
-
-<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(60% - 12px);">
+<div style="display:flex; align-items:center; gap:20px;">
+<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(69% - 12px);">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
 Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonométrique. Alors dans le repère $(O,I,J)$ :
@@ -115,9 +117,9 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 </ul>
 </div>
 </div><img src="/mabemat/figures/1re/chapitre-11/fig5.svg" alt="figure 5" style="display:inline-block; vertical-align:middle; width:calc(29% - 12px); max-height:300px; max-width:100%;">
-
+</div>
 <h3 class="subsubsection-title">11.2.2 Propriétés</h3>
-
+<div style="display:flex; align-items:center; gap:20px;">
 <div style="display:inline-block; vertical-align:middle; width:calc(50% - 12px);">
 <strong>Relation de symétrie</strong>  
 
@@ -137,13 +139,13 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
   
 <strong>Avec l'angle diamétralement opposé :</strong> 
 <ul>
-<li>$\sin(\pi+x)=-\sin(x)$</li>
+<li>$\sin(\pi+x)=-\sin(x)$ </li>
 <li>$\cos(\pi+x)=-\cos(x)$</li>
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="figure 7" style="width:45%; max-height:300px; max-width:100%;">
-<br>
+</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(45% - 12px); max-height:300px; max-width:100%;">
+</div>
 
 <div style="display:flex; align-items:center; gap:20px;">
 
