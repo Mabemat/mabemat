@@ -194,7 +194,8 @@ Calculer la probabilité des évènements $A\cup B$ et $\overline{B}$.<br>
 $P(A)=\dfrac{1}{2}$ et $P(B)=\dfrac{2}{6}=\dfrac{1}{3}$.<br>
 $A\cap B$ est l'évènement élémentaire « On obtient un $3$ », donc $P(A\cap B)=\dfrac{1}{6}$.<br>
 Ainsi, $P(A\cup B)=P(A)+P(B)-P(A\cap B)=\dfrac{1}{2}+\dfrac{1}{3}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2}{3}$<br>
-Et $P(\overline{B})=1-P(B)=1-\dfrac{1}{3}=\dfrac{2}{3}$. La probabilité de ne pas obtenir un multiple de $3$ est donc de $\dfrac{2}{3}$, tout comme la probabilité d'« obtenir un nombre impair ou un multiple de $3$ ».
+Et $P(\overline{B})=1-P(B)=1-\dfrac{1}{3}=\dfrac{2}{3}$. <br>
+La probabilité de ne pas obtenir un multiple de $3$ est donc de $\dfrac{2}{3}$, tout comme la probabilité d'« obtenir un nombre impair ou un multiple de $3$ ».
 </div>
 </div>
 
