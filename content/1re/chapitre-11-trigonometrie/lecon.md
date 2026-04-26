@@ -156,7 +156,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 <div class="environment-content">
 <strong>Avec le complémentaire :</strong> 
 <ul>
-<li>$\sin\left(\dfrac{\pi}{2}-x\right)=\cos(x)$ </li>
+<li>$\sin\left(\dfrac{\pi}{2}-x\right)=\cos(x)$</li>
 <li>$\cos\left(\dfrac{\pi}{2}-x\right)=\sin(x)$</li>
 </ul>
 
