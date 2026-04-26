@@ -105,7 +105,7 @@ Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonom
 
 <h3 class="subsubsection-title">11.2.1 Définition</h3>
 
-<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(69% - 12px);">
+<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(60% - 12px);">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
 Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonométrique. Alors dans le repère $(O,I,J)$ :
