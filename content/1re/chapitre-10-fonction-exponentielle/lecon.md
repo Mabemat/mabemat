@@ -7,7 +7,7 @@ title: "Leçon complète"
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-On admet qu'il existe une fonction dérivable sur $\R$ telle que $f'=f$ et $f(0) = 1$.
+On admet qu'il existe une fonction dérivable sur $\R$ telle que $f'=f$ et $f(0) = 1$. 
 </div>
 </div>
 
