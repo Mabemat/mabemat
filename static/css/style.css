@@ -698,6 +698,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   max-width: 100%;
+  text-align: center;
 }
 .full-lesson th, .full-lesson td { padding: 5px 10px; text-align: center; }
 .full-lesson th { background-color: var(--env-tableau-bg); }
@@ -708,13 +709,18 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   display: inline-block;
 }
 
-/* ─── full-lesson MOBILE : zoom global ─── */
-/* zoom scale tout proportionnellement : texte, KaTeX, images, tableaux */
+/* ─── full-lesson MOBILE : réduction globale ─── */
+/* font-size utilisé à la place de zoom : KaTeX aligne ses fractions via
+   vertical-align en em, ce qui ne se propage pas correctement sous zoom
+   (le dénominateur se retrouvait sur la ligne de base au lieu du trait).
+   font-size scale texte + formules KaTeX + valeurs en em ;
+   les images sont contraintes par max-width ci-dessous. */
 @media (max-width: 600px) {
-  .full-lesson { zoom: 0.82; }
+  .full-lesson { font-size: 82%; }
+  .full-lesson img { max-width: 100%; height: auto; }
 }
 @media (max-width: 400px) {
-  .full-lesson { zoom: 0.75; }
+  .full-lesson { font-size: 75%; }
 }
 
 /* ─── full-lesson MOBILE : colonnes et puces ─── */
