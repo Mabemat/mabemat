@@ -149,7 +149,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 
 <img src="/mabemat/figures/1re/chapitre-11/fig7.svg" alt="figure 7" style="width:45%; max-height:300px; max-width:100%;">
 
-<div style="width:50%;">
+<div style="width:50%;"> 
 <strong>Relation de déphasage</strong>
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
