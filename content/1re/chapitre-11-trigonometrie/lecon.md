@@ -20,7 +20,7 @@ Un <strong>cercle trigonométrique</strong> est un cercle de centre $O$, de rayo
 </div>
 <h3 class="subsubsection-title">11.1.2 Enroulement de la droite des réels et radian</h3>
 <div style="display:flex; align-items:center; gap:20px;">
-<div style="display:inline-block; vertical-align:middle; width:calc(73% - 12px);">
+<div style="display:inline-block; vertical-align:middle; width:calc(60% - 12px);">
 Soit $(O,I,J)$ un repère orthonormé du plan.
 $\mathcal{C}$ est le cercle trigonométrique de centre $O$.
 $d$ est la tangente au cercle $\mathcal{C}$ en $I$.
@@ -31,16 +31,16 @@ Les réels positifs s'enroulent dans le sens de rotation direct et les réels n�
 <li>le réel $x$ repère le point</li>
 <li>$M$ est l'image de $x$ par enroulement de la droite réelle sur le cercle trigonométrique</li>
 </ul>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+</div><img src="/mabemat/figures/1re/chapitre-11/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(35%); max-height:400px; max-width:100%;">
 </div>
 <div style="display:flex; align-items:center; gap:20px;">
-<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(83% - 12px);">
+<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(70% - 12px);">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
 Dans un cercle trigonométrique, la <strong>mesure d'un angle en radian</strong> est donnée par la longueur de l'arc qu'il intercepte.<br>
 En particulier, 1 radian est la mesure de l'angle $\widehat{IOM}$ si la longueur de l'arc $\overset{\frown}{IM}$ est égal à $1$ (dans le sens direct).
 </div>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(15% - 12px); max-height:200px; max-width:100%;">
+</div><img src="/mabemat/figures/1re/chapitre-11/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(25% - 12px); max-height:200px;min-height:200px; max-width:100%;">
 </div>
 <div class="remarque">
 Si le réel $x$ repère un point $M$, la longueur du cercle étant de $2\pi$, il est clair que les réels $x + 2\pi, x + 4\pi, x + 6\pi, x + 8\pi, ... ,$ ainsi que $x- 2\pi, x- 4\pi, ... $, repèrent le même point $M$.<br>
@@ -74,7 +74,7 @@ On a donc le tableau de proportionnalité :
 
 Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonométrique 
 <div style="display:flex; align-items:center; gap:20px;">
-<div style="display:inline-block; vertical-align:middle; width:calc(45%);">
+<div style="display:inline-block; vertical-align:middle; width:calc(75%);">
 <table>
 <tr>
 <th><strong>Mesure en degrés</strong></th>
@@ -99,7 +99,7 @@ Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonom
 <td>$2\pi$</td>
 </tr>
 </table>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(50%; max-height:400px; max-width:100%;">
+</div><img src="/mabemat/figures/1re/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(25%); max-height:400px; max-width:100%;">
 </div>
 
 
