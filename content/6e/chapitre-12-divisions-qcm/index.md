@@ -145,7 +145,7 @@ $$6\ 330{,}1 \div 7$$
 - Aucune réponse
 ---CORR---
 On effectue la division décimale :
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-12/Q1.png" alt="Figure 1" style="max-width:20%; height:auto;">
 </div> 
 

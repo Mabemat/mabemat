@@ -17,7 +17,7 @@ Pour poser $15{,}8 + 3{,}128$, il faut :
 ---CORR---
 Avec des décimaux, on aligne **les virgules** (et donc les chiffres des unités). On complète avec des zéros si nécessaire :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-09/Q1.png" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 
@@ -37,7 +37,7 @@ Calcule : $504{,}6 + 169{,}8$
 ---CORR---
 On additionne colonne par colonne :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-09/Q2.png" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 {{< /qcm >}}
@@ -56,7 +56,7 @@ Calcule : $99{,}22 - 33{,}35$
 On aligne les virgules :
 
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-09/Q3.png" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 {{< /qcm >}}
@@ -179,7 +179,7 @@ Quel est le résultat de $714{,}9 \times 0{,}77$ ?
 Le produit exact est :
 
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-09/Q4.png" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 {{< /qcm >}}

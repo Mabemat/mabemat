@@ -111,7 +111,7 @@ Un angle **rentrant** est un angle :
 ---Q---
 Comment peut-on nommer l'angle gris dans la figure ci-dessous ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4a-angle.svg" alt="Angle gris">
 </div>
 
@@ -130,7 +130,7 @@ $\widehat{MRI}$ est donc un nom valide (parmi d'autres : $\widehat{IRM}$, $\wide
 ---Q---
 Dans la figure ci-dessous, $\widehat{XEJ}$ est :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4a1-angle.svg" alt="Angle XEJ">
 </div>
 
@@ -149,7 +149,7 @@ Le nom correct de l'angle est $\widehat{JXE}$ (sommet $X$).
 ---Q---
 Dans la même figure, $X$ est :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4a1-angle.svg" alt="Angle XEJ">
 </div>
 
@@ -166,7 +166,7 @@ Le **sommet** d'un angle est l'origine commune des deux demi-droites qui le form
 ---Q---
 Dans la même figure, $[XE)$ est :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4a1-angle.svg" alt="Angle XEJ">
 </div>
 
@@ -183,7 +183,7 @@ Les **côtés** d'un angle sont les deux demi-droites qui le forment. $[XE)$ est
 ---Q---
 Dans la même figure, $\widehat{JXE}$ est :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4a1-angle.svg" alt="Angle XEJ">
 </div>
 
@@ -200,7 +200,7 @@ $\widehat{JXE}$ est le **nom de l'angle** : la lettre centrale $X$ est le sommet
 ---Q---
 Dans la figure ci-dessous, $\widehat{JCL}$ est un angle :
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4a2-angle.svg" alt="Angle JCL">
 </div>
 
@@ -217,7 +217,7 @@ Un angle **obtus** mesure entre $90°$ et $180°$. L'arc de l'angle $\widehat{JC
 ---Q---
 Estimer la mesure de l'angle $\widehat{tLs}$ sans instrument.
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-05/qcm-6g4b-angle.svg" alt="Angle tLs">
 </div>
 

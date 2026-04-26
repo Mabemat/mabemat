@@ -95,7 +95,7 @@ $$PA = PB$$
 ---Q---
 Les points V, K et X sont alignés.  
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-10/figure1_cercle_K.svg" alt="Figure 1" style="max-width:25%; height:auto;">
 </div>
 
@@ -116,7 +116,7 @@ Donc **[KQ] est un rayon**.
 ---Q---
 Quel est le centre du cercle ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-10/figure1_cercle_K.svg" alt="Figure 1" style="max-width:25%; height:auto;">
 </div>
 
@@ -134,7 +134,7 @@ Le centre du cercle est **le point K**.
 ---Q---
 Le segment [NS] est…
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-10/figure1_cercle_K.svg" alt="Figure 1" style="max-width:25%; height:auto;">
 </div>
 
@@ -155,7 +155,7 @@ Donc **[NS] est une corde**.
 ---Q---
 Le point M appartient à la zone grisée.  
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-10/figure2_cercles_RD.svg" alt="Figure 1" style="max-width:25%; height:auto;">
 </div>
 

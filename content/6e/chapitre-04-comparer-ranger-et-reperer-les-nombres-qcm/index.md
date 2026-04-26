@@ -130,7 +130,7 @@ $$\dfrac{9}{7} > \dfrac{7}{7} > \dfrac{4}{7} > \dfrac{1}{7}$$
 ---Q---
 Sur la droite numérique ci-dessous, quelle est l'abscisse du point $A$ ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-04/qcm-6n1c1-droite.svg" alt="Droite numérique">
 </div>
 
@@ -156,7 +156,7 @@ $A$ est à $1\ 000 + 13 \times 100 = \mathbf{2\ 300}$.
 ---Q---
 Sur la droite numérique ci-dessous graduée de $0$ à $4$, quelle est l'abscisse du point $A$ ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-04/qcm-cm2n2f1-droite.svg" alt="Droite numérique avec fractions">
 </div>
 
@@ -177,7 +177,7 @@ $A$ est à 2 graduations → $\dfrac{2}{7}$.
 ---Q---
 Sur la même droite numérique, quelle est l'abscisse du point $B$ ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
 <img src="/mabemat/figures/6e/chapitre-04/qcm-cm2n2f1-droite.svg" alt="Droite numérique avec fractions">
 </div>
 

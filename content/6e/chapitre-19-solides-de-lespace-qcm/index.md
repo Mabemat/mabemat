@@ -9,7 +9,7 @@ chapter: "chapitre-19-solides-de-lespace"
 ---Q---
 Quel est le nom de ce solide ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q1.png" alt="Solide 1" style="max-width:30%; height:auto;">
 </div>
 
@@ -26,7 +26,7 @@ C'est un **prisme droit** dont la base est un quadrilatère (4 sommets). On reco
 ---Q---
 Quel est le nom de ce solide ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q2.png" alt="Solide 2" style="max-width:30%; height:auto;">
 </div>
 
@@ -43,7 +43,7 @@ C'est une **pyramide à base pentagonale** (base à 5 sommets). Toutes les faces
 ---Q---
 Quel est le nom de ce solide ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q3.png" alt="Solide 3" style="max-width:30%; height:auto;">
 </div>
 
@@ -60,7 +60,7 @@ C'est un **cône de révolution** : sa base est un disque (cercle) et sa surface
 ---Q---
 Quel est le nom de ce solide ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q4.png" alt="Solide 4" style="max-width:30%; height:auto;">
 </div>
 
@@ -77,7 +77,7 @@ C'est un **pavé droit** (aussi appelé parallélépipède rectangle). Ses 6 fac
 ---Q---
 Quel est le nom de ce solide ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q5.png" alt="Solide 5" style="max-width:30%; height:auto;">
 </div>
 
@@ -94,7 +94,7 @@ C'est un **cube** : toutes ses faces sont des carrés et toutes ses arêtes ont 
 ---Q---
 Quel est le nom de ce solide ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q6.png" alt="Solide 6" style="max-width:30%; height:auto;">
 </div>
 
@@ -112,7 +112,7 @@ C'est une **sphère** : c'est le solide dont tous les points de la surface sont 
 Ci-dessous, un empilement de cubes est représenté sous deux angles différents, et un pavé droit est représenté à côté. <br>
 Quel est celui qui a le plus petit volume ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q7.png" alt="Empilement et pavé droit" style="max-width:60%; height:auto;">
 </div>
 
@@ -133,7 +133,7 @@ Les deux solides ont donc **le même volume**.
 ---Q---
 Quel est le volume de ce pavé droit, exprimé en nombre de petits cubes ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-19/Q8.png" alt="Pavé droit à dénombrer" style="max-width:40%; height:auto;">
 </div>
 

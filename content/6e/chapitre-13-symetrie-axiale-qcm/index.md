@@ -107,7 +107,7 @@ Un triangle équilatéral possède **3 axes de symétrie** : chaque axe passe pa
 ---Q---
 Quel est le numéro de la figure symétrique de la figure 88 dans la symétrie d'axe $(d_1)$ ?
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-13/Q1.svg" alt="Figure 1" style="max-width:30%; height:auto;">
 </div> 
 
@@ -127,7 +127,7 @@ C'est la figure 22.
 ---Q---
 Donner le symétrique du point 27 par rapport à $(d)$ 
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-13/Q2.svg" alt="Figure 1" style="max-width:30%; height:auto;">
 </div> 
 
@@ -145,7 +145,7 @@ C'est le point 3.
 ---Q---
 Quelle est l'image de la figure 13 dans la symétrie d'axe $(d)$ 
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-13/Q3.svg" alt="Figure 1" style="max-width:30%; height:auto;">
 </div> 
 
@@ -157,7 +157,7 @@ Quelle est l'image de la figure 13 dans la symétrie d'axe $(d)$
 ---CORR---
 C'est la figure 21.
 
-<div style="text-align:center;">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
   <img src="/mabemat/figures/6e/chapitre-13/Q3C.svg" alt="Figure 1" style="max-width:30%; height:auto;">
 </div> 
 {{< /qcm >}}
