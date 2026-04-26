@@ -1,9 +1,10 @@
 {{/* ───────────────────────────────────────────────
      PARAMÈTRES
 ──────────────────────────────────────────────── */}}
-{{ $num    := .Get "num" }}
-{{ $source := .Get "source" }}
-{{ $raw    := .Inner }}
+{{ $num      := .Get "num" }}
+{{ $source   := .Get "source" }}
+{{ $raw      := .Inner }}
+{{ $showCorr := .Page.Params.has_brevetCorr | default false }}
 
 {{/* ───────────────────────────────────────────────
      EXTRACTION INTRO + QUESTIONS
@@ -95,7 +96,7 @@
       <div class="q-enonce">
         {{ $q.enonce | safeHTML }}
 
-        {{ if $q.corr }}
+        {{ if and $showCorr $q.corr }}
         <button class="corr-btn" onclick="toggleCorr(this)">
           <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
         </button>
@@ -110,7 +111,7 @@
             <span class="sub-letter">{{ $letter }}.</span>
             <div>
               <div class="sub-enonce">{{ $sq.enonce | safeHTML }}</div>
-              {{ if $sq.corr }}
+              {{ if and $showCorr $sq.corr }}
               <button class="corr-btn" onclick="toggleCorr(this)">
                 <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
               </button>
