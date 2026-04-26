@@ -710,33 +710,38 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
 }
 
 /* ─── full-lesson MOBILE : réduction globale ─── */
-/* On scale explicitement les tailles en px ET on laisse font-size hériter
-   pour que KaTeX (qui utilise 1.21em) suive proportionnellement le texte.
-   Cela évite le bug zoom (fractions désalignées) tout en gardant texte
-   et formules à la même échelle relative. */
+/* Stratégie à deux niveaux :
+   1. font-size: 82% sur .full-lesson → tous les éléments sans px explicite
+      héritent de la réduction (dont KaTeX via 1.21em → fractions alignées ✓)
+   2. Overrides explicites pour chaque sélecteur qui a un font-size en px
+      dans le CSS source (px ne se réduit pas par héritage).            */
 @media (max-width: 600px) {
-  /* Texte courant */
-  .full-lesson p,
-  .full-lesson .remarque                { font-size: 13px; }   /* 16×0.82 */
-  .full-lesson .environment-title       { font-size: 13px; }
-  /* Titres */
-  .full-lesson .section-title           { font-size: 20px; }   /* 24×0.82 */
+  /* ① Héritage global */
+  .full-lesson                          { font-size: 82%; }
+  /* ② Overrides des valeurs px explicites (×0.82) */
+  .full-lesson p                        { font-size: 13px; }   /* 16→13 */
+  .full-lesson .environment-title       { font-size: 13px; }   /* 16→13 */
+  .full-lesson .remarque                { font-size: 11.5px; } /* 14→11.5 */
+  .full-lesson .section-title           { font-size: 20px; }   /* 24→20 */
   .full-lesson h2,
-  .full-lesson .subsection-title        { font-size: 18px; }   /* 22×0.82 */
+  .full-lesson .subsection-title        { font-size: 18px; }   /* 22→18 */
   .full-lesson h3,
-  .full-lesson .subsubsection-title     { font-size: 16px; }   /* 20×0.82 */
+  .full-lesson .subsubsection-title     { font-size: 16.5px; } /* 20→16.5 */
   /* Images */
-  .full-lesson img { max-width: 100%; height: auto; }
+  .full-lesson img                      { max-width: 100%; height: auto; }
 }
 @media (max-width: 400px) {
-  .full-lesson p,
-  .full-lesson .remarque                { font-size: 12px; }   /* 16×0.75 */
-  .full-lesson .environment-title       { font-size: 12px; }
-  .full-lesson .section-title           { font-size: 18px; }   /* 24×0.75 */
+  /* ① Héritage global */
+  .full-lesson                          { font-size: 75%; }
+  /* ② Overrides des valeurs px explicites (×0.75) */
+  .full-lesson p                        { font-size: 12px; }   /* 16→12 */
+  .full-lesson .environment-title       { font-size: 12px; }   /* 16→12 */
+  .full-lesson .remarque                { font-size: 10.5px; } /* 14→10.5 */
+  .full-lesson .section-title           { font-size: 18px; }   /* 24→18 */
   .full-lesson h2,
-  .full-lesson .subsection-title        { font-size: 16.5px; } /* 22×0.75 */
+  .full-lesson .subsection-title        { font-size: 16.5px; } /* 22→16.5 */
   .full-lesson h3,
-  .full-lesson .subsubsection-title     { font-size: 15px; }   /* 20×0.75 */
+  .full-lesson .subsubsection-title     { font-size: 15px; }   /* 20→15 */
 }
 
 /* ─── full-lesson MOBILE : colonnes et puces ─── */
