@@ -5,7 +5,7 @@ chapter_number: 14
 weight: 14
 show_lecon: true
 has_cours: true
-has_exercices: false
+has_exercices: false 
 has_qcm: false
 has_brevet: true
 has_brevetImpr : false
