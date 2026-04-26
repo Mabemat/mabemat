@@ -196,7 +196,7 @@ Pour tout réel $a$ et $b$, on a :
 
 <ul style="column-count:2; column-gap:2rem;">
 <li>$e^{a}=e^b \Leftrightarrow a=b$</li>
-<li>$e^{a}<e^b \Leftrightarrow a<b$ car $\exp$ est croissante sur $\R$.</li>
+<li>$e^{a}$&lt;$ e^b \Leftrightarrow a$&lt;$b$ car $\exp$ est croissante sur $\R$.</li>
 </ul>
 
 </div>
@@ -213,7 +213,7 @@ Pour tout réel $a$ et $b$, on a :
 </div>
 </div>
 
-<h2 class="subsection-title">10.4 Fonctions de la forme $e^{ax+b$}</h2>
+<h2 class="subsection-title">10.4 Fonctions de la forme $e^{ax+b}$</h2>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
