@@ -142,7 +142,7 @@ Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonom�
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(45% - 12px); max-height:300px; max-width:100%;">
+</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="figure 7" style="width:45%; max-height:300px; max-width:100%;">
 <br>
 
 <div style="display:flex; align-items:center; gap:20px;">
