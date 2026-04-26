@@ -25,7 +25,7 @@ On considère l'expérience aléatoire suivante : on lance un dé équilibré à
 $\Omega=\{1;2;3;4;5;6\}$ est l'ensemble des issues.<br>
 On regarde l'évènement $E$ : « obtenir un chiffre pair ». On a alors $E=\{2;4;6\}$.<br>
 Ainsi, $\overline{E}$ : « obtenir un chiffre impair » et $\overline{E}=\{1;3;5\}$.<br>
-On regarde l'évènement $A$ : « obtenir un chiffre supérieur à $3$ ». On a alors $A=\{3;4;5;6\}$.<br>
+On regarde l'évènement $A$ : « obtenir un chiffre supérieur à $3$ ». <br>On a alors $A=\{3;4;5;6\}$.<br>
 Ainsi, $\overline{A}$ : « obtenir un chiffre strictement inférieur à $3$ » et $\overline{A}=\{1;2\}$.
 </div>
 </div>
@@ -132,14 +132,14 @@ $$P(E)=\dfrac{\text{Nombres d'issues de }E}{\text{Nombres total d'issues}}$$
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-On considère l'expérience aléatoire suivante :
+On considère l'expérience aléatoire suivante : <br>
 On tire une carte dans un jeu de $32$ cartes.<br>
-Soit $E$ l'évènement : « On tire un as ».
+Soit $E$ l'évènement : « On tire un as ».<br>
 Quelle est la probabilité que l'évènement $E$ se réalise ? <br>
 
 C'est une situation d'équiprobabilité (autant de chance de tirer chacune des $32$ cartes).<br>
 Il a $32$ issues possibles car il existe $32$ façon différentes de tirer une carte. <br>L'évènement $E$ a $4$ issues possibles : As de cœur, as de carreau, as de trèfle et as de pique.<br>
-La probabilité que l'évènement $E$ se réalise est donc égale à : $P(E) = \dfrac{4}{32}=\dfrac{1}{8}$.
+La probabilité que l'évènement $E$ se réalise est donc égale à : $$P(E) = \dfrac{4}{32}=\dfrac{1}{8}$$
 </div>
 </div>
 
@@ -207,7 +207,7 @@ La probabilité de ne pas obtenir un multiple de $3$ est donc de $\dfrac{2}{3}$,
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
 Dans un lycée, sur les $150$ élèves de secondes, $48$ élèves se sont inscrits dans les clubs photos ou théâtre. On en compte $32$ dans le club théâtre et $24$ dans le club photo. On sort au hasard la fiche d'un élève inscrit. <br>
-Soit les évènements 
+Soit les évènements :
 <ul>
 <li>$T$ : « être adhérent au club théâtre », </li>
 <li>$F$ : « être adhérent au club photo », </li> 
@@ -228,7 +228,8 @@ Finalement, $P(N)=1-P(T\cup F)=\dfrac{102}{150}$.
 
 <h3 class="subsubsection-title">12.3.2 Le tableau à double entrée</h3>
 
-Une maison de retraite abrite $80$ pensionnaires. $55$ pensionnaires suivent un traitement contre les maladies cardio-vasculaires, $34$ pensionnaires suivent un traitement pour réduire leur taux de cholestérol et $18$ pensionnaires suivent les deux traitements. Pour représenter cette expérience, on peut représenter un tableau à double-entrée.
+Une maison de retraite abrite $80$ pensionnaires. $55$ pensionnaires suivent un traitement contre les maladies cardio-vasculaires, $34$ pensionnaires suivent un traitement pour réduire leur taux de cholestérol et $18$ pensionnaires suivent les deux traitements. <br>
+Pour représenter cette expérience, on peut représenter un tableau à double-entrée.
 <ol>
 <li>Déterminer la valeur exacte de la probabilité de l'évènement $A$ : « la personne prend un traitement pour le cholestérol ».</li>
 <li>Déterminer la valeur exacte de la probabilité de l'évènement $B$ : « la personne prend un traitement pour le cholestérol, mais pas pour les maladies cardio-vasculaire ».</li>
@@ -279,7 +280,7 @@ On joue à pile ou face en lançant une pièce 3 fois de suite. On s'intéresse 
 </div>
 
 <ol>
-<li>Il y a $8$ issues possibles, donc $\Omega=\{PPP ;PPF;PFP; PFF; FPP; FPF; FFP; FFF\}$.</li>
+<li>Il y a $8$ issues possibles, donc : $$\Omega=\{PPP ;PPF;PFP; PFF; FPP; FPF; FFP; FFF\}$$</li>
 <li>$A=\{PPF;PFP;FPP\}$ donc $3$ issues réalisent l'évènement $A$.<br>
 Ainsi, $$P(A)=\dfrac{\text{Nombres d'issues de }A}{\text{Nombres total d'issues}}=\dfrac{3}{8}=0,375$$</li>
 </ol>
