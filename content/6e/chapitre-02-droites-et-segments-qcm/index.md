@@ -93,11 +93,10 @@ Deux droites sont **parallèles** lorsqu'elles ne se coupent jamais.
 ---Q---
 Parmi ces quatre figures, laquelle représente **la droite** passant par les points $G$ et $H$ ?
 
-<div style="text-align:center;">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q1-opt0.svg" alt="Figure 1">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q1-opt1.svg" alt="Figure 2">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q1-opt2.svg" alt="Figure 3">
-
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q1-opt0.svg" alt="Figure 1" style="max-width:28%; height:auto;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q1-opt1.svg" alt="Figure 2" style="max-width:28%; height:auto;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q1-opt2.svg" alt="Figure 3" style="max-width:28%; height:auto;">
 </div>
 
 - Figure 1
@@ -115,10 +114,10 @@ Les figures 1 est un segment $[GH]$, la figure 2 est une demi-droite $[HG)$, la 
 ---Q---
 Parmi ces quatre figures, laquelle représente **la demi-droite** d'origine $K$ passant par $L$ ?
 
-<div style="text-align:center;">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q2-opt0.svg" alt="Figure 1">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q2-opt1.svg" alt="Figure 2">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q2-opt2.svg" alt="Figure 3">
+<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q2-opt0.svg" alt="Figure 1" style="max-width:28%; height:auto;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q2-opt1.svg" alt="Figure 2" style="max-width:28%; height:auto;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g04-q2-opt2.svg" alt="Figure 3" style="max-width:28%; height:auto;">
 </div>
 
 - Figure 1
@@ -139,8 +138,8 @@ La figure 1 est un segment $[KL]$, la figure 2 est une demi-droite $[LK)$, la fi
 ---Q---
 On considère la figure suivante, où les points $G$, $M$, $N$, $O$, $P$ et $H$ sont alignés sur la droite bleue.
 
-<div style="text-align:center;">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g05-grille.svg" alt="Figure avec grille">
+<div style="display:flex; justify-content:center;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g05-grille.svg" alt="Figure avec grille" style="max-width:60%; height:auto;">
 </div>
 
 $G \ldots [NH)$
@@ -158,8 +157,8 @@ $G$ est situé **avant** $N$ sur la droite (du côté opposé à $H$), donc $G \
 ---Q---
 On considère la figure suivante, où les points $G$, $M$, $N$, $O$, $P$ et $H$ sont alignés sur la droite bleue.
 
-<div style="text-align:center;">
-<img src="/mabemat/figures/6e/chapitre-02/qcm-6g05-grille.svg" alt="Figure avec grille">
+<div style="display:flex; justify-content:center;">
+<img src="/mabemat/figures/6e/chapitre-02/qcm-6g05-grille.svg" alt="Figure avec grille" style="max-width:60%; height:auto;">
 </div>
 
 $O \ldots (NH)$
