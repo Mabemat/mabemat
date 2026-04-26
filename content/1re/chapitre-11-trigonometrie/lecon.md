@@ -74,7 +74,7 @@ On a donc le tableau de proportionnalité :
 
 Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonométrique 
 <div style="display:flex; align-items:center; gap:20px;">
-<div style="display:inline-block; vertical-align:middle; width:calc(55% - 12px);">
+<div style="display:inline-block; vertical-align:middle; width:calc(45%);">
 <table>
 <tr>
 <th><strong>Mesure en degrés</strong></th>
@@ -99,7 +99,7 @@ Quelques mesures d'angles remarquables et leurs positions sur le cercle trigonom
 <td>$2\pi$</td>
 </tr>
 </table>
-</div><img src="/mabemat/figures/1re/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(43% - 12px); max-height:400px; max-width:100%;">
+</div><img src="/mabemat/figures/1re/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(50%; max-height:400px; max-width:100%;">
 </div>
 
 
