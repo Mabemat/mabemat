@@ -26,7 +26,7 @@ $\mathcal{C}$ est le cercle trigonométrique de centre $O$.
 $d$ est la tangente au cercle $\mathcal{C}$ en $I$.
 On considère la droite graduée $d$ comme la droite des réels avec pour origine $I$.<br>
 À tout réel de la droite $d$, on fait correspondre un point sur le cercle trigonométrique en \og enroulant \fg{} la droite sur le cercle (comme une bobine de fil).
-Les réels positifs s'enroulent dans le sens de rotation direct et les réels négatifs dans le sens indirect. L'association entre $x$ et $M$ s'exprime en disant :
+Les réels positifs s'enroulent dans le sens de rotation direct et les réels négatifs dans le sens indirect. L'association entre $x$ et $M$ s'exprime en disant : 
 <ul>
 <li>le réel $x$ repère le point</li>
 <li>$M$ est l'image de $x$ par enroulement de la droite réelle sur le cercle trigonométrique</li>
