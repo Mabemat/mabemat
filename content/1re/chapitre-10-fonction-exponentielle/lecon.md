@@ -196,7 +196,7 @@ Pour tout réel $a$ et $b$, on a :
 
 <ul style="column-count:2; column-gap:2rem;">
 <li>$e^{a}=e^b \Leftrightarrow a=b$</li>
-<li>$e^{a}$FF&lt;$ e^b \Leftrightarrow a$&lt;$b$ car $\exp$ est croissante sur $\R$.</li>
+<li>$e^{a}$ &lt; $ e^b \Leftrightarrow a$ &lt; $b$ car $\exp$ est croissante sur $\R$.</li>
 </ul>
 
 </div>
@@ -208,7 +208,7 @@ Pour tout réel $a$ et $b$, on a :
 <ul>
 <li>$e^{x^2-3}-e^{-2x}=0$.
 <br> $e^{x^2-3}-e^{-2x}=0\Leftrightarrow e^{x^2-3}=e^{-2x} \Leftrightarrow x^2-3=-2x \Leftrightarrow x^2+2x-3=0 \Leftrightarrow x=-3 \text{ ou } x=1$. <br> L'ensemble des solutions est $S=\{-3;1\}$.</li>
-<li>$e^{-4x-1}\geq 1\Leftrightarrow e^{-4x-1}\geq e^0 \Leftrightarrow -4x-1 \geq 0 \text { car } \exp \text{ est croissante } \Leftrightarrow x \leq \dfrac{-1}{4} \text { car } -4<0$. <br>L'ensemble des solutions est $S=]-\infty;\dfrac{-1}{4}]$.</li>
+<li>$e^{-4x-1}\geq 1\Leftrightarrow e^{-4x-1}\geq e^0 \Leftrightarrow -4x-1 \geq 0  \Leftrightarrow x \leq \dfrac{-1}{4} \text { car } -4$ &lt; $0$. <br>L'ensemble des solutions est $S=]-\infty;\dfrac{-1}{4}]$.</li>
 </ul>
 </div>
 </div>
