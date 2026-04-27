@@ -3,6 +3,7 @@ title: "Exercices type brevet - Statistiques"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-15-statistiques"
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Juin 2022 Amérique du Nord" >}}
 ---INTRO---
@@ -15,21 +16,18 @@ chapter: "chapitre-15-statistiques"
 </table>
 <em>D'après un communiqué de presse sur la santé</em>
 
-<br>
 ---Q---
 Sur les $1,6$ million d'adolescents de 11 à 17 ans interrogés, combien ne respectent pas cette recommandation ?
 ---CORR---
-D'après le communiqué de presse, 81&thinsp;% des $1,6$ million d'adolescents de 11 à 17 ans interrogés ne respectent pas cette recommandation.
+D'après le communiqué de presse, 81&thinsp;% des $1,6$ million d'adolescents de 11 à 17 ans interrogés ne respectent pas cette recommandation.<br>
 
 Cela représente : $0,81\times 1,6 \times 10^{6} = 1\,296\,000$ personnes, soit 1,296 million d'adolescents.
 ---Q---
-<br>
+Après la lecture de ce communiqué, un adolescent se donne un objectif.<br>
 
-Après la lecture de ce communiqué, un adolescent se donne un objectif.
+ <strong>Objectif: « <em>Faire au moins une heure de pratique physique par jour en moyenne.</strong>  »</em> <br>
 
- <strong>Objectif: « <em>Faire au moins une heure de pratique physique par jour en moyenne.</strong>  »</em>
-
-Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quotidienne qu'il consacre à sa pratique physique:
+Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quotidienne qu'il consacre à sa pratique physique:<br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>
@@ -38,8 +36,8 @@ Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quo
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour 3</strong></td>
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour 4</strong></td>
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour 5</strong></td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour</strong> 6</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour</strong> 7</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour 6</strong></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><strong>Jour 7</strong></td>
 </tr>
 <tr>
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">50 min</td>
@@ -72,17 +70,18 @@ Pendant 14 jours consécutifs, il note dans le calendrier suivant, la durée quo
 ---SUB-Q---
 Quelle est l'étendue des 14 durées quotidiennes notées dans le calendrier ?
 ---SUB-CORR---
-La valeur maximale de la série est celle du jour 4, pour 1 h 40 min, et la valeur minimale est celle du jour 14 pour 0 min.
+La valeur maximale de la série est celle du jour 4, pour 1 h 40 min, et la valeur minimale est celle du jour 14 pour 0 min.<br>
 
 		L'étendue des 14 durées quotidiennes notées dans le calendrier est donc la différence entre les deux, soit 1 h 40 min.
 ---SUB-Q---
 Donner une médiane de ces 14 durées quotidiennes.
 ---SUB-CORR---
-Pour donner une médiane de ces 14 durées quotidiennes, il nous faut commencer par ranger les valeurs dans l'ordre croissant :
+Pour donner une médiane de ces 14 durées quotidiennes, il nous faut commencer par ranger les valeurs dans l'ordre croissant :<br>
 
-		0 min; 15 min; 15 min; 30 min; 30 min; 40 min; <strong>50 min</strong>; <strong>1 h</strong>; 1 h; 1 h; 1 h; <br> 1&nbsp;h&nbsp;30&nbsp;min; 1 h 30 min ; 1 h 40 min.
+		0 min; 15 min; 15 min; 30 min; 30 min; 40 min; <strong>50 min</strong>; <strong>1 h</strong>; 1 h; 1 h; 1 h; <br> 1&nbsp;h&nbsp;30&nbsp;min; 1 h 30 min ; 1 h 40 min.<br>
 
-		Il y a 14 valeurs en tout, donc la médiane est la moyenne des deux valeurs centrales, (écrites en gras, ci- dessus). La médiane est donc de 55 min.
+		Il y a 14 valeurs en tout, donc la médiane est la moyenne des deux valeurs centrales, (écrites en gras, ci- dessus). <br>
+        La médiane est donc de 55 min.
 ---Q---
 
 ---SUB-Q---
@@ -91,7 +90,7 @@ Montrer que, sur les 14 premiers jours, cet adolescent n'a pas atteint son objec
 Calculons la durée moyenne de pratique physique pour cet  adolescent. Pour simplifier les calculs, convertissons toutes les durées en minutes, et établissons un tableau d'effectif :
 
 	
-		<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Durée (min)</td>
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">0</td>
@@ -117,36 +116,34 @@ Calculons la durée moyenne de pratique physique pour cet  adolescent. Pour simp
 </table>
 	
 
-		La durée moyenne est donc de :
+La durée moyenne est donc de :<br>
 
-		$\dfrac{0\times 1 + 15 \times 2 + 30 \times 2 + 40 \times 1 + 50 \times 1 + 60 \times 4 + 90\times 2+100\times1}{14} = \dfrac{700}{14} = 50$.
+$\dfrac{0\times 1 + 15 \times 2 + 30 \times 2 + 40 \times 1 + 50 \times 1 + 60 \times 4 + 90\times 2+100\times1}{14} = \dfrac{700}{14} = 50$.<br>
 
-		En moyenne, l'adolescent a eu une pratique physique de 50 minutes par jour, donc l'objectif n'est pas atteint.
+En moyenne, l'adolescent a eu une pratique physique de 50 minutes par jour, donc l'objectif n'est pas atteint.
 ---SUB-Q---
 Pendant les 7 jours suivants, cet adolescent décide alors de consacrer plus de temps au sport pour atteindre son objectif sur l'ensemble des $21$ jours.
 
 Sur ces 7 derniers jours, quelle est la durée totale de pratique physique qu'il doit au minimum prévoir pour atteindre son objectif?
-<br><br>
+
 ---SUB-CORR---
-Pour que la moyenne soit exactement d'une heure sur les 21 jours, il faut que pendant ces 21 jours, il ait eu $21 \times 60 = \np[min]{1260}$ de pratique physique.
+Pour que la moyenne soit exactement d'une heure sur les 21 jours, il faut que pendant ces 21 jours, il ait eu $21 \times 60 = 1260$  min de pratique physique.<br>
 
-		Comme il en a déjà effectué 700 pendant les 14 premiers jours, cela lui laisse 560 minutes à effectuer pendant les 7 jours suivants (donc $560\div 7 = 80$&nbsp;min par jour, en moyenne.)
+Comme il en a déjà effectué 700 pendant les 14 premiers jours, cela lui laisse 560 minutes à effectuer pendant les 7 jours suivants (donc $560\div 7 = 80$&nbsp;min par jour, en moyenne.)
 
-<br><br>
 {{< /brevet-exo >}}
 
 {{< brevet-exo num="2" source="DNB Mai 2023 Amérique du Nord" >}}
 ---INTRO---
-<br>
 
 <strong>Les deux parties sont indépendantes</strong>
 
-<br>
 ---Q---
 ---PART---
 Partie A — Évolution du nombre de visiteurs sur un site touristique
 ---Q---
 Le diagramme ci-dessous représente le nombre de visiteurs par an de 2010 à 2021 sur ce site.
+<img src="/mabemat/figures/3e/chapitre-15/15-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
 ---SUB-Q---
 Quel a été le nombre de visiteurs en 2010 ? Aucune justification n'est attendue.
 ---SUB-CORR---
@@ -171,15 +168,15 @@ Le tableau ci-dessous indique le nombre de visiteurs sur le site touristique de 
 </tr>
 </table>
 
-Le maire de cette ville avait pour objectif que le nombre de visiteurs progresse d'au moins 15&thinsp;% entre 2020 et 2021.
+Le maire de cette ville avait pour objectif que le nombre de visiteurs progresse d'au moins 15&thinsp;% entre 2020 et 2021.<br>
 
 L'objectif a-t-il été atteint ?
 ---CORR---
-Une augmentation de $ 15\% $ revient à un nombre de visiteurs égal à :
+Une augmentation de $ 15\% $ revient à un nombre de visiteurs égal à :<br>
 
-$\displaystyle	V_{\text{finale}}=\left(1+\dfrac{15}{100}\right)\times V_{\text{initiale}}= 1,15 \times 187\,216 = 215\,298{,}4 $.
+$\displaystyle	V_{\text{finale}}=\left(1+\dfrac{15}{100}\right)\times V_{\text{initiale}}= 1,15 \times 187\,216 = 215\,298{,}4 $.<br>
 
-Or cette valeur est inférieure à la valeur 219&thinsp;042 atteinte en $2021$.
+Or cette valeur est inférieure à la valeur 219&thinsp;042 atteinte en $2021$.<br>
 
 Donc l'objectif du maire a bien été atteint.
 ---Q---
@@ -215,33 +212,34 @@ Sur une période donnée, on relève les prix facturés pour une nuit par les h�
 
 Déterminer l'étendue des prix facturés.
 ---CORR---
-L'étendue de cette série vaut : $ Max. - Min. = 500 - 60 = 440 $. Soit $ 440 $ euros.
+L'étendue de cette série vaut : $ Max. - Min. = 500 - 60 = 440 $. <br>
+Soit $ 440 $ euros.
 ---Q---
 Quelle est la moyenne des prix facturés pour une nuit ? Arrondir à l'euro près.
 ---CORR---
 On calcule la moyenne de la série :<br>
-		$\displaystyle \dfrac{60\times 1\,200 + 80 \times 1\,350 + 85\times 1\,000 + 90\times 1\,100 + 110\times 1\,200 + 120\times 1\,300 + 350 \times 900 + 500 \times 300}{8\,350}$<br>
-$\approx 134$.
+		$\displaystyle \dfrac{60\times 1\,200 + 80 \times 1\,350 + 85\times 1\,000 + 90\times 1\,100 + 110\times 1\,200 + 120\times 1\,300 + 350 \times 900 + 500 \times 300}{8\,350} \approx 134$.<br>
 
 La moyenne des prix facturés pour une nuit est donc de $134$&nbsp;euros.
 ---Q---
 L'association des hôteliers de cette ville cherche à attirer des touristes et annonce : « Dans les hôtels de notre ville, au moins la moitié des nuits est facturée à moins de $100$&nbsp;€  ». Est-ce vrai ?
 
-<br><br>
 ---CORR---
-Il y a $8\,350$ nuits au total.
+Il y a $8\,350$ nuits au total.<br>
 
-Or, $\displaystyle \dfrac{8\,350}{2}= 4\,175$. On calcule les effectifs cumulés, jusqu'à la valeur $ 90 $ euros incluse (dernière valeur inférieure à $ 100 $) : $1\,200 + 1\,350 + 1\,000 + 1\,100 = 4\,650$.
+Or, $\displaystyle \dfrac{8\,350}{2}= 4\,175$. <br>
+On calcule les effectifs cumulés, jusqu'à la valeur $ 90 $ euros incluse (dernière valeur inférieure à $ 100 $) : $1\,200 + 1\,350 + 1\,000 + 1\,100 = 4\,650$.<br>
 
-$ 4~650 > 4~175 $ donc l'affirmation de l'association est vraie.
+$ 4~650 > 4~175 $ donc l'affirmation de l'association est vraie.<br>
 
-<strong>OU</strong>
+<strong>OU</strong><br>
 
-On cherche la médiane de la série. Il y a $ 8~350 $	 nuits au total.
+On cherche la médiane de la série. Il y a $ 8~350 $	 nuits au total.<br>
 
-Or, $\displaystyle \dfrac{8~350}{2}=4~175$. La médiane de la série est donc entre la 4&thinsp;175-ième et la 4&thinsp;176-ième valeur. Par lecture dans le tableau, on trouve que la médiane vaut $ 90 $ euros. Donc la moitié des valeurs de la série sont inférieures ou égales à $ 90 $, donc l'affirmation de l'association est vraie.
+Or, $\displaystyle \dfrac{8~350}{2}=4~175$. La médiane de la série est donc entre la 4&thinsp;175-ième et la 4&thinsp;176-ième valeur. Par lecture dans le tableau, on trouve que la médiane vaut $ 90 $ euros. <br>
+Donc la moitié des valeurs de la série sont inférieures ou égales à $ 90 $, donc l'affirmation de l'association est vraie.
 
-<br><br>
+
 {{< /brevet-exo >}}
 
 {{< brevet-exo num="3" source="DNB Juin 2022 Asie" >}}
@@ -412,7 +410,7 @@ L'Australie a obtenu $29$ médailles d'argent.
 ---Q---
 Calculer le nombre de médailles de bronze obtenues par l'Italie.
 ---CORR---
-On a $69 - 29 - 14 = 40 - 14 = 26$.
+On a $69 - 29 - 14 = 40 - 14 = 26$.<br>
 
 L'Italie a obtenu 26 médailles de bronze.
 ---Q---
@@ -420,62 +418,57 @@ Quelle formule a pu être saisie en F2 avant d'être étirée vers le bas ?
 ---CORR---
 La formule à insérer est : = somme(C2 : E2).
 ---Q---
-Pour chacune des deux affirmations suivantes, indiquer si elle est vraie ou fausse.
+Pour chacune des deux affirmations suivantes, indiquer si elle est vraie ou fausse.<br>
 
-	<em>On rappelle que les réponses doivent être justifiées.</em>
+<em>On rappelle que les réponses doivent être justifiées.</em><br>
 
-	<strong>Affirmation 1:</strong>
+<strong>Affirmation 1:</strong><br>
 
-	« 20&thinsp;% des médailles obtenues par l'équipe de France sont en or.  »
+« 20&thinsp;% des médailles obtenues par l'équipe de France sont en or.  »<br>
 
 	
 
-	<strong>Affirmation 2:</strong>
+<strong>Affirmation 2:</strong><br>
 
-	« La médiane du nombre de médailles d'argent obtenues par ces 15 pays est 29.  »
+« La médiane du nombre de médailles d'argent obtenues par ces 15 pays est 29.  »
 ---CORR---
-&nbsp;
-
-<strong>Affirmation 1</strong> Le pourcentage est : $\dfrac{11}{54} \times 100 \approx 20,4$ soit à l'unité près 20&thinsp;%.
+<strong>Affirmation 1</strong> <br>
+Le pourcentage est : $\dfrac{11}{54} \times 100 \approx 20,4$ soit à l'unité près 20&thinsp;%.<br>
 
 L'affirmation 1 est donc vraie à l'arrondi près.
 
 <br>
 
-<strong>Affirmation 2</strong> Il y a 15 données, la médiane est donc la 8<sup>e</sup> donnée de la série rangée dans l'ordre croissant, (1&thinsp;11 &thinsp;12 &thinsp;15 &thinsp;15 &thinsp;15 &thinsp;17 &thinsp;20 &thinsp;29) à savoir 20.
+<strong>Affirmation 2</strong> <br>
+Il y a 15 données, la médiane est donc la 8<sup>e</sup> donnée de la série rangée dans l'ordre croissant, (1&thinsp;11 &thinsp;12 &thinsp;15 &thinsp;15 &thinsp;15 &thinsp;17 &thinsp;20 &thinsp;29) à savoir 20.<br>
 
 L'affirmation 2 est donc fausse.
 ---Q---
-Aux Jeux paralympiques de Rio en 2016, la prime pour une médaille d'or française était de 50&thinsp;000 euros. Pour ceux de Tokyo en 2021, cette prime était de 65&thinsp;000 euros.
+Aux Jeux paralympiques de Rio en 2016, la prime pour une médaille d'or française était de 50&thinsp;000 euros. <br>
+Pour ceux de Tokyo en 2021, cette prime était de 65&thinsp;000 euros.<br>
 
 Quel est le pourcentage d'augmentation de cette prime entre 2016 et 2021 ?
 ---CORR---
-On calcule $\dfrac{65\,000}{50\,000} = 1,30$.
+On calcule $\dfrac{65\,000}{50\,000} = 1,30$.<br>
 
 La prime a augmenté de 30&thinsp;% entre 2016 et 2021.
 
-<br><br>
 {{< /brevet-exo >}}
 
 {{< brevet-exo num="4" source="DNB Juin 2022 Polynésie" >}}
 ---INTRO---
-<br>
-
 <em>Les deux parties de cet exercice sont indépendantes</em>
 
 <br>
 
 Une entreprise produit et vend des jus de fruit contenus dans des briques en carton qui ont la forme d'un pavé droit.
 
-<br><br>
+---PART---
+<strong>PARTIE A : Briques de jus de pomme</strong><br>
 
-<strong>PARTIE A : Briques de jus de pomme</strong>
+Ces briques sont fabriquées pour contenir 350 mL de jus de pomme.<br>
 
-<br>
-
-Ces briques sont fabriquées pour contenir 350 mL de jus de pomme.
-
-Lors d'un contrôle, 24 briques sont prélevées au hasard et analysées.
+Lors d'un contrôle, 24 briques sont prélevées au hasard et analysées.<br>
 
 Le tableau ci-dessous donne le volume de jus de pomme (en mL) contenu dans ces briques :
 
@@ -509,12 +502,12 @@ Le tableau ci-dessous donne le volume de jus de pomme (en mL) contenu dans ces b
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">1</td>
 </tr>
 </table>
-
-<br>
 ---Q---
-Déterminer la médiane des volumes de cette série. Interpréter ce résultat
+Déterminer la médiane des volumes de cette série. Interpréter ce résultat.
 ---CORR---
-Il y a $24$ données  ; la médiane est donc la moyenne entre la 12<sup>e</sup> et 13<sup>e</sup> données de la série rangées dans l'ordre croissant. D'après l'effectif cumulé croissant du tableau donné la 12<sup>e</sup> et la 13<sup>e</sup> donnée sont $350$, donc la médiane est de $350$ mL. Ce qui signifie que 50&thinsp;% des données sont des volumes inférieurs à $350$&nbsp;mL et que 50&thinsp;% sont des volumes supérieurs à $350$&nbsp;mL.
+Il y a $24$ données  ; la médiane est donc la moyenne entre la 12<sup>e</sup> et 13<sup>e</sup> données de la série rangées dans l'ordre croissant. <br>
+D'après l'effectif cumulé croissant du tableau donné la 12<sup>e</sup> et la 13<sup>e</sup> donnée sont $350$, donc la médiane est de $350$ mL. <br>
+Ce qui signifie que 50&thinsp;% des données sont des volumes inférieurs à $350$&nbsp;mL et que 50&thinsp;% sont des volumes supérieurs à $350$&nbsp;mL.
 ---Q---
 Calculer l'étendue de cette série
 ---CORR---
@@ -522,14 +515,15 @@ L'étendue est égale à : $357 - 344 = 13$ mL.
 ---Q---
 On prélève au hasard une brique parmi celles contrôlées, quelle est la probabilité qu'elle contienne exactement $350$&nbsp;mL de jus de pomme ?
 ---CORR---
-On a trouvé 2 briques de $350$&nbsp;mL.La probabilité d'obtenir une brique contenant exactement $350$ mL est donc égale à $\dfrac{2}{24} = \dfrac{1}{12}$ soit environ 8,3&thinsp;%.
+On a trouvé 2 briques de $350$&nbsp;mL.<br>
+La probabilité d'obtenir une brique contenant exactement $350$ mL est donc égale à $\dfrac{2}{24} = \dfrac{1}{12}$ soit environ 8,3&thinsp;%.
 ---Q---
-Lorsque le volume de jus de pomme contenu dans une brique est compris entre $345$&nbsp;mL et $355$&nbsp;mL, cette brique peut être vendue. 
+Lorsque le volume de jus de pomme contenu dans une brique est compris entre $345$&nbsp;mL et $355$&nbsp;mL, cette brique peut être vendue. <br>
 
 Quel est le pourcentage de briques que l'entreprise peut vendre parmi les briques contrôlées ?
 ---CORR---
 Nombre de briques ayant un volume compris entre $345$mL et $355$ mL :
-$24 - (1 + 1 + 1) = 24 - 3 = 21$.
+$24 - (1 + 1 + 1) = 24 - 3 = 21$.<br>
 
 Le pourcentage de briques pouvant être vendues est donc : $\dfrac{21}{24} \times 100 = \dfrac78 \times 100$ soit  87,5&thinsp;%.
 ---Q---
@@ -546,13 +540,11 @@ Aire base $= 6,4 \times 5 = 32$ cm²
 ---Q---
 Quelle doit être la hauteur de cette brique pour que son volume soit de $400$&nbsp;cm$^3$ ?
 
-<br><br>
 ---CORR---
-$V_{\text{pavé}} = L \times l \times h$.
+$V_{\text{pavé}} = L \times l \times h$.<br>
 
-Soit $400 = 6,4 \times 5 \times  h$ ou $400 = 32h$, d'où $h = \dfrac{400}{32} = 12,5$ cm.
+Soit $400 = 6,4 \times 5 \times  h$ ou $400 = 32h$, d'où $h = \dfrac{400}{32} = 12,5$ cm.<br>
 
 Il faut une hauteur de 12,5&nbsp;cm pour obtenir une brique de $400$&nbsp;cm$^3$.
 
-<br><br>
 {{< /brevet-exo >}}
