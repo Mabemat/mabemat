@@ -24,7 +24,8 @@ Une expérience est **aléatoire** lorsqu'on ne peut pas en prévoir le résulta
 
 {{< qcm correct="2" >}}
 ---Q---
-On lance un dé équilibré à 6 faces. L'ensemble des **issues** de l'expérience est :
+On lance un dé équilibré à 6 faces. <br>
+L'ensemble des **issues** de l'expérience est :
 
 - $\{0,\ 1,\ 2,\ 3,\ 4,\ 5\}$
 - $\{1,\ 2,\ 3\}$
@@ -74,7 +75,8 @@ Elle n'est jamais supérieure à $1$, même pour un événement très probable.
 
 {{< qcm correct="2" >}}
 ---Q---
-On lance un dé équilibré à 6 faces. Quelle est la probabilité d'obtenir un nombre **pair** ?
+On lance un dé équilibré à 6 faces. <br>
+Quelle est la probabilité d'obtenir un nombre **pair** ?
 
 - $\dfrac{2}{6}$
 - $\dfrac{4}{6}$
@@ -89,7 +91,7 @@ $$p = \frac{3}{6} = \frac{1}{2}$$
 
 {{< qcm correct="0" >}}
 ---Q---
-On tire une carte au hasard dans les **13 cartes** du mot **MATHÉMATIQUES**. Quelle est la probabilité de tirer la lettre **M** ?
+On tire une carte au hasard dans les **13 cartes** du mot **MATHÉMATIQUES**.<br> Quelle est la probabilité de tirer la lettre **M** ?
 
 - $\dfrac{2}{13}$
 - $\dfrac{1}{13}$
@@ -106,7 +108,8 @@ Attention : $\dfrac{1}{13}$ est l'erreur de l'élève qui oublie que M est en do
 
 {{< qcm correct="1" >}}
 ---Q---
-Un événement a une probabilité de $0{,}9$. On peut dire qu'il est :
+Un événement a une probabilité de $0{,}9$. <br>
+On peut dire qu'il est :
 
 - Impossible
 - Très probable
@@ -142,7 +145,8 @@ $$p = \frac{3}{6} = \frac{1}{2}$$
 
 {{< qcm correct="0" >}}
 ---Q---
-On lance un dé équilibré à 6 faces. Quelle est la probabilité d'obtenir un nombre **supérieur ou égal à 5** ?
+On lance un dé équilibré à 6 faces. <br>
+Quelle est la probabilité d'obtenir un nombre **supérieur ou égal à 5** ?
 
 - $\dfrac{2}{6}$
 - $\dfrac{1}{6}$

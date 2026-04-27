@@ -24,7 +24,8 @@ $$(2\text{ h} + 1\text{ h}) + (15\text{ min} + 25\text{ min}) = \mathbf{3\text{ 
 
 {{< qcm correct="0" >}}
 ---Q---
-Quentin est parti à $14\text{ h }20$ de son domicile et est arrivé à $15\text{ h }52$. Combien de temps a duré son trajet ?
+Quentin est parti à $14\text{ h }20$ de son domicile et est arrivé à $15\text{ h }52$. <br>
+Combien de temps a duré son trajet ?
 
 - $1\text{ h }32\text{ min}$
 - $38\text{ min}$
@@ -195,7 +196,7 @@ Quelle fraction d'heure est égale à $45$ minutes ?
 ---CORR---
 On cherche la fraction telle que : fraction $\times\, 60 = 45$.
 
-$$\frac{45}{60} = \frac{3}{4} \quad \Rightarrow \quad 45\text{ min} = \mathbf{\frac{3}{4}\text{ h}}$$
+$$\frac{45}{60} = \frac{3}{4} \quad \text{donc}\quad 45\text{ min} = \mathbf{\frac{3}{4}\text{ h}}$$
 
 
 {{< /qcm >}}

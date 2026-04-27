@@ -101,8 +101,8 @@
         <div class="col">
           <h4>Automatismes</h4>
           {{ if eq $.Section "3e" }}<p>Trois séances de quatre exercices par semaine pour aborder le brevet avec confiance. <br><a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
-          {{ else if eq $.Section "2nde" }}<p>Des entraînements hebdomadaires pour ancrer les automatismes du lycée, en vue du bac de 1re. <a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
-          {{ else if eq $.Section "1re" }}<p>Des séances régulières pour entretenir les réflexes et préparer la partie automatismes du bac. <a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
+          {{ else if eq $.Section "2nde" }}<p>Des entraînements hebdomadaires pour ancrer les automatismes du lycée, en vue du bac de 1re. <br><a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
+          {{ else if eq $.Section "1re" }}<p>Des séances régulières pour préparer la partie automatismes du bac. <br><a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
           {{ else }}<p>Des séances d'entraînement hebdomadaire pour ancrer les réflexes. <a href="{{ .RelPermalink }}" style="color:{{ $levelData.color }};">Voir les séances →</a></p>
           {{ end }}
         </div>

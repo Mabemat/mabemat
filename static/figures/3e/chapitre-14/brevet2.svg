@@ -1,24 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.596pt" height="86.588pt" viewBox="0 0 103.596 86.588">
-<defs>
-<clipPath id="clip-0">
-<path clip-rule="nonzero" d="M 0 0 L 103.597656 0 L 103.597656 86 L 0 86 Z M 0 0 "/>
-</clipPath>
-<clipPath id="clip-1">
-<path clip-rule="nonzero" d="M 90 48 L 103.597656 48 L 103.597656 64 L 90 64 Z M 90 48 "/>
-</clipPath>
-</defs>
-<g clip-path="url(#clip-0)">
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 5.668406 5.669469 L 102.047313 5.669469 L 102.047313 53.856969 L 61.512156 83.622594 Z M 5.668406 5.669469 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-</g>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 63.586375 75.880406 L 68.496531 73.044469 L 65.6645 68.134312 L 60.754344 70.97025 Z M 63.586375 75.880406 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 96.379344 11.337437 L 90.711375 11.337437 L 90.711375 17.009312 L 96.379344 17.009312 Z M 96.379344 11.337437 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 77.953563 68.03275 L 83.621531 73.700719 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-<g clip-path="url(#clip-1)">
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 99.215281 28.34525 L 104.88325 31.181187 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-</g>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 56.691844 1.415562 L 56.691844 9.923375 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 59.527781 1.415562 L 59.527781 9.923375 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 32.598094 51.024937 L 38.269969 45.356969 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
-<path fill="none" stroke-width="0.3985" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 34.016062 53.856969 L 39.684031 48.189 " transform="matrix(1, 0, 0, -1, -3.477, 85.814)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 410" width="420" height="410">
+
+  <!-- Quadrilatère principal : (0.2,0.2) (3.6,0.2) (3.6,1.9) (2.17,2.95) -->
+  <!-- Transformation : x_svg = x_ps*100+20 ; y_svg = (3.6-y_ps)*100+20 -->
+  <polygon
+    points="40,360 380,360 380,190 237,85"
+    fill="none" stroke="black" stroke-width="1.5" stroke-linejoin="miter"/>
+
+  <!-- Marque d'angle droit en (3.6, 0.2) : \rput{90}(3.6,0.2){\psframe(0.2,0.2)} -->
+  <!-- Rotation 90° : coins PS : (3.6,0.2)(3.6,0.4)(3.4,0.4)(3.4,0.2) -->
+  <polygon
+    points="380,360 380,340 360,340 360,360"
+    fill="white" stroke="black" stroke-width="1.5"/>
+
+  <!-- Marque d'angle droit en (2.17, 2.95) : \rput{-120}(2.17,2.95){\psframe(0.2,0.2)} -->
+  <!-- Rotation -120° : cos=-0.5, sin=-0.866 -->
+  <polygon
+    points="237,85 227,102.32 244.32,112.32 254.32,95"
+    fill="white" stroke="black" stroke-width="1.5"/>
+
+  <!-- Tiret simple sur le côté supérieur-droit -->
+  <!-- \psline(2.75,2.4)(2.95,2.6) -->
+  <line x1="295" y1="140" x2="315" y2="120" stroke="black" stroke-width="1.5"/>
+
+  <!-- Tiret simple sur le côté droit (vertical) -->
+  <!-- \psline(3.5,1.)(3.7,1.1) -->
+  <line x1="370" y1="280" x2="390" y2="270" stroke="black" stroke-width="1.5"/>
+
+  <!-- Double tiret sur le côté bas (horizontal) -->
+  <!-- \psline(2,0.05)(2,0.35) -->
+  <line x1="220" y1="375" x2="220" y2="345" stroke="black" stroke-width="1.5"/>
+  <!-- \psline(2.1,0.05)(2.1,0.35) -->
+  <line x1="230" y1="375" x2="230" y2="345" stroke="black" stroke-width="1.5"/>
+
+  <!-- Double tiret sur le côté diagonal gauche -->
+  <!-- \psline(1.15,1.8)(1.35,1.6) -->
+  <line x1="135" y1="200" x2="155" y2="220" stroke="black" stroke-width="1.5"/>
+  <!-- \psline(1.2,1.9)(1.4,1.7) -->
+  <line x1="140" y1="190" x2="160" y2="210" stroke="black" stroke-width="1.5"/>
+
 </svg>

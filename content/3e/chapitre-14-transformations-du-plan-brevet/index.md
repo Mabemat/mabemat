@@ -3,6 +3,7 @@ title: "Exercices type brevet - Transformations du plan"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-14-transformations-du-plan"
+has_brevetcorr: true
 ---
 {{< brevet-exo num="1" source="DNB Septembre 2022 Métropole" >}}
 ---INTRO---
@@ -54,29 +55,14 @@ Ils écrivent tous un programme « Cerf-volant  » différent.
 
 Tracer le programme « Cerf-Volant  » de Nicolas, en prenant $1$&nbsp;cm pour $100$ pas.
 ---CORR---
-<br><br>
-
-<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Essya</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Nicolas</td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Tyago</td>
-</tr>
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-</tr>
-</table>
-
 Le programme de Nicolas permet de dessiner un triangle équilatéral de côté 300 pas.
 ---Q---
 Un élève a écrit le script correct. Donner le nom de cet élève en justifiant la réponse.
 
 ---CORR---
-Le programme de Tyago ne convient pas car après avoir dessiné un petit côté et tourner de $60\degres{}$ on avance de 300 pas au lieu de 173 pas à nouveau.
+Le programme de Tyago ne convient pas car après avoir dessiné un petit côté et tourner de $60°$ on avance de 300 pas au lieu de 173 pas à nouveau.<br>
 
-Si on part du petit côté supérieur il faut ensuite tourner à gauche de $90\degres{}$ et non de $60\degres{}$.
+Si on part du petit côté supérieur il faut ensuite tourner à gauche de $90°$ et non de $60°$.<br>
 
 Ce n'est pas le programme de Nicolas : il ne reste plus que le programme d'Essya.
 {{< /brevet-exo >}}
@@ -85,44 +71,58 @@ Ce n'est pas le programme de Nicolas : il ne reste plus que le programme d'Essya
 ---INTRO---
 On utilise un logiciel de programmation.  <br>
 
-On rappelle que « s'orienter à $0\degres{}$  » signifie qu'on oriente le stylo vers le haut. <br>
+On rappelle que « s'orienter à $0°$  » signifie qu'on oriente le stylo vers le haut. <br>
 
 On considère les deux scripts suivants: <br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">1cScript 1</td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none">1cScript 2</td>
-</tr>
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><span class="brevet-scratch">[Bloc Scratch — voir l'énoncé PDF]</span></td>
-</tr>
+  <tr>
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      Script 1
+    </td>
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      Script 2
+    </td>
+  </tr>
+
+  <tr>
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      <img src="/mabemat/figures/3e/chapitre-14/2-1.svg"
+           alt="figure 1"
+           style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
+    </td>
+
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      <img src="/mabemat/figures/3e/chapitre-14/2-2.svg"
+           alt="figure 1"
+           style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
+    </td>
+  </tr>
 </table>
 
-<br>
+
 ---Q---
 On exécute le script 1 ci-dessus. <br>
 
 Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie. <br>
+<div style="display:flex; align-items:center;">
+  <img src="/mabemat/figures/3e/chapitre-14/2-3.svg"
+       alt="figure 1"
+       style="max-height:300px; max-width:100%; margin-right:10px;">
+  <div>
+    Chaque côté de carreau mesure 20 pixels. <br>
+    La position de départ du stylo est indiquée sur la figure ci‑contre.
+  </div>
+</div>
 
-
-
-Chaque côté de carreau mesure 20 pixels. <br>
-
-La position de départ du stylo est indiquée sur la figure ci-contre.
 ---CORR---
 On exécute le script 1 ci-dessus. <br>
 
 Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie. <br>
 
 Le tracé est en rouge. <br>
+<img src="/mabemat/figures/3e/chapitre-14/2c-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
 
-
-
-Chaque côté de carreau mesure 20 pixels. <br>
-
-La position de départ du stylo est indiquée sur la figure ci-contre.
 ---Q---
 Quel dessin parmi les trois ci-dessous correspond au script 2 ?  <br>
 
@@ -132,16 +132,38 @@ Chaque côté de carreau mesure 20 pixels. <br>
 
 <table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
 <tr>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><strong>Dessin 1</strong></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><strong>Dessin 2</strong></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><strong>Dessin 3</strong></td>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <strong>Dessin 1</strong>
+  </td>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <strong>Dessin 2</strong>
+  </td>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <strong>Dessin 3</strong>
+  </td>
 </tr>
+
 <tr>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"></td>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <img src="/mabemat/figures/3e/chapitre-14/2-4.svg"
+         alt="figure 1"
+         style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+  </td>
+
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <img src="/mabemat/figures/3e/chapitre-14/2-5.svg"
+         alt="figure 1"
+         style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+  </td>
+
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <img src="/mabemat/figures/3e/chapitre-14/2-6.svg"
+         alt="figure 1"
+         style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+  </td>
 </tr>
 </table>
+
 ---CORR---
 Le dessin 1  n'est  pas correct car après avoir avancé deux fois de 20 on doit avancer de 40. <br>
 
@@ -149,40 +171,26 @@ Le dessin 3  n'est  pas correct car on ne sedirige pas au départ vers le haut.
  <br>
 Il reste donc le dessin 2 seul correct. <br>
 
-<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><strong>Dessin 1</strong></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><strong>Dessin 2</strong></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><strong>Dessin 3</strong></td>
-</tr>
-<tr>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"></td>
-</tr>
-</table>
 ---Q---
 On souhaite maintenant obtenir le motif représenté sur le dessin 4 :  <br>
+
+<div style="display:flex; align-items:center; gap:1rem;">
+
+<img src="/mabemat/figures/3e/chapitre-14/2-7.svg";alt="figure 1";style="max-height:200px;">
+<img src="/mabemat/figures/3e/chapitre-14/2-8.svg";alt="figure 2";style="max-height:300px;">
+         
+</div>
 
 Compléter sans justifier les trois cases du script 3 donné en document à rendre avec la copie, permettant d'obtenir le dessin 4.
 
 	
 ---CORR---
-On souhaite maintenant obtenir le motif représenté sur le dessin 4 : 
+Les compléments sont en rouge : <br>
 
-	
-	
-	
-	
-
-	Compléter sans justifier les trois cases du script 3 donné à rendre avec la copie, permettant d'obtenir le dessin 4.
-
-	Les compléments sont en rouge.
-
-	
-
+<img src="/mabemat/figures/3e/chapitre-14/2c-2.svg";alt="figure 2";style="max-height:300px;">
 ---Q---
 À partir du motif représenté sur le dessin 4, on peut obtenir le pavage ci-dessous : <br>
+<img src="/mabemat/figures/3e/chapitre-14/2-9.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
 
 Répondre aux questions suivantes sur votre copie en indiquant le numéro du motif qui convient (on ne demande pas de justifier la réponse) :
 ---SUB-Q---
