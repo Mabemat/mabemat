@@ -3,6 +3,7 @@ title: "Exercices type brevet - Probabilités"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-13-probabilites"
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Décembre 2013 Nouvelle Calédonie" >}}
 ---INTRO---

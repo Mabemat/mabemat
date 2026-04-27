@@ -3,7 +3,7 @@ title: "Exercices type brevet - Transformations du plan"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-14-transformations-du-plan"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Septembre 2022 Métropole" >}}
 ---INTRO---
@@ -196,86 +196,91 @@ Répondre aux questions suivantes sur votre copie en indiquant le numéro du mot
 ---SUB-Q---
 Quelle est l'image du motif 1 par la translation qui transforme le point B en E ?
 ---SUB-CORR---
-Quelle est l'image du motif 1 par la translation qui transforme le point B en E ? Le motif 5.
+Le motif 5.
 ---SUB-Q---
 Quelle est l'image du motif 1 par la symétrie de centre B ?
 ---SUB-CORR---
-Quelle est l'image du motif 1 par la symétrie de centre B ? Le motif 9.
+Le motif 9.
 ---SUB-Q---
 Quelle est l'image du motif 16 par la symétrie de centre G ?
 ---SUB-CORR---
-Quelle est l'image du motif 16 par la symétrie de centre G ? Le motif 12.
+Le motif 12.
 ---SUB-Q---
 Quelle est l'image du motif 2 par la symétrie d'axe (CG) ?
-<br><br>
----SUB-CORR---
-Quelle est l'image du motif 2 par la symétrie d'axe (CG) ? Le motif 5.
 
-<br><br>
+---SUB-CORR---
+Le motif 5.
+
 {{< /brevet-exo >}}
 
 {{< brevet-exo num="3" source="DNB Juin 2021 Amérique du Nord" >}}
 ---INTRO---
-<em>Dans cet exercice, aucune justification n'est demandée.</em>
-		
-		On a construit un carré ABCD. 
-		
-		
-		
-		On a construit le point O sur la droite (DB), à
-		l'extérieur du segment [DB] et tel que : OB = AB.
-		
-		
-		
-		Le point H est le symétrique de D par rapport à O.
-		
-		<br><br>
-		
-		On a obtenu la figure ci-contre en utilisant plusieurs
-		fois la même rotation de centre O et d'angle $45^{\circ}$.
-		
-		<br><br>
-		
-		La figure obtenue est symétrique par rapport à l'axe
-		(DB) et par rapport au point O.
+<div style="display:flex; align-items:flex-start; gap:1rem; width:auto; margin:0 auto;">
+
+    <div style="flex:1;">
+        <em>Dans cet exercice, aucune justification n'est demandée.</em><br>
+
+        On a construit un carré ABCD.<br>
+
+        On a construit le point O sur la droite (DB), à
+        l'extérieur du segment [DB] et tel que : OB = AB.<br>
+
+        Le point H est le symétrique de D par rapport à O.<br>
+
+        On a obtenu la figure ci-contre en utilisant plusieurs
+        fois la même rotation de centre O et d'angle 45°.<br>
+
+        La figure obtenue est symétrique par rapport à l'axe
+        (DB) et par rapport au point O.
+    </div>
+
+    <img src="/mabemat/figures/3e/chapitre-14/3-1.svg"
+         alt="figure 1"
+         style="max-height:250px; margin-left:1rem;">
+</div>
+ 
 ---Q---
 Donner deux carrés différents, images l'un de l'autre par la symétrie axiale d'axe (DB).
 ---CORR---
-Les carrés 8 et 2,  les carrés 6 et 4, les carrés 7 et 3 sont symétriques autour de l'axe (DB).
+Les carrés 8 et 2  les carrés 6 et 4 les carrés 7 et 3 sont symétriques autour de l'axe (DB).
 ---Q---
-Le carré [baseline=(x.base)](0,0) circle (7pt) node (x) 3; est-il l'image du carré [baseline=(x.base)](0,0) circle (7pt) node (x) 8; par la symétrie centrale de centre O ?
+Le carré  3 est-il l'image du carré  8 par la symétrie centrale de centre O ?
 ---CORR---
 Les carrés 8 et 3 ne sont pas symétriques autour de O (leurs centres ne sont pas alignés avec O).
 ---Q---
-On considère la rotation de centre O qui transforme le carré [baseline=(x.base)](0,0) circle (7pt) node (x) 1; en le carré [baseline=(x.base)](0,0) circle (7pt) node (x) 2;.
+On considère la rotation de centre O qui transforme le carré 1 en le carré 2. <br>
 		
-		Quelle est l'image du carré [baseline=(x.base)](0,0) circle (7pt) node (x) 8; par cette rotation ?
+Quelle est l'image du carré 8 par cette rotation ?
 ---CORR---
 L'image du carré 8 par la rotation de centre O et d'angle $45^{\circ}$ est le carré 1.
 ---Q---
-On considère la rotation de centre O qui transforme le carré [baseline=(x.base)](0,0) circle (7pt) node (x) 2; en le carré [baseline=(x.base)](0,0) circle (7pt) node (x) 5;.
+On considère la rotation de centre O qui transforme le carré 2 en le carré 5.<br>
 		
-		Préciser l'image du segment [EF] par cette rotation.
+Préciser l'image du segment [EF] par cette rotation.
 
-<br><br>
+
 ---CORR---
 La rotation est la rotation de centre O et d'angle $135^{\circ}$. E donne H et F donne I, donc l'image de [EF] est le segment [HI].
-
-<br><br>
 {{< /brevet-exo >}}
 
 {{< brevet-exo num="4" source="DNB Septembre 2020 Antilles - Guyane" >}}
 ---INTRO---
-<br>
+<div style="display:flex; align-items:flex-start; gap:1rem; width:auto; margin:0 auto;">
 
-Dans cet exercice, le carré ABCD n'est pas représenté en vraie grandeur.
+<div style="flex:1;">
+Dans cet exercice, le carré ABCD n'est pas représenté en vraie grandeur. <br>
 
-Aucune justification n'est attendue pour les questions 1. et 2. On attend des réponses justifiées pour la question 3.
+Aucune justification n'est attendue pour les questions 1. et 2. 
+<br> 
+On attend des réponses justifiées pour la question 3.
+    </div>
 
-<br>
+    <img src="/mabemat/figures/3e/chapitre-14/4-1.svg"
+         alt="figure 1"
+         style="max-height:250px; margin-left:1rem;">
+</div>
+
 ---Q---
-&nbsp;
-
 On considère le carré ABCD de centre O représenté ci-contre, partagé en quatre polygones superposables, numérotés 1, 2, 3, et 4.
 ---SUB-Q---
 Quelle est l'image du polygone 1 par la symétrie centrale de centre O ?
@@ -284,38 +289,35 @@ L'image du polygone 1 par la symétrie centrale de centre O est le polygone 3.
 ---SUB-Q---
 Quelle est l'image du polygone 4 par la rotation de centre O qui transforme le polygone 1 en le polygone 2 ?
 
-0.5cm
 ---SUB-CORR---
 L'image du polygone 4 par la rotation de centre O qui transforme le polygone 1 en le polygone 2 est le polygone 1.
 ---Q---
 La figure ci-dessous est une partie de pavage dont un motif de base est le carré ABCD de la question 1.
+<img src="/mabemat/figures/3e/chapitre-14/4-2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
 
 Quelle transformation partant du polygone 1 permet d'obtenir le polygone 5 ?
 ---CORR---
 On passe du polygone 1 au  polygone 5 par la translation qui transforme $A$ en $B$.
 ---Q---
-On souhaite faire imprimer ces motifs sur un tissu rectangulaire de longueur $315$ cm et de largeur $270$ cm.
+On souhaite faire imprimer ces motifs sur un tissu rectangulaire de longueur $315$ cm et de largeur $270$ cm. <br>
 
 On souhaite que le tissu soit entièrement recouvert par les carrés identiques à ABCD, sans découpe et de sorte que le côté du carré mesure un nombre entier de centimètres.
 ---SUB-Q---
 Montrer qu'on peut choisir des carrés de 9&nbsp;cm de côté.
 ---SUB-CORR---
-Il faut que la longueur côté du carré divise 315 et aussi 270.
+Il faut que la longueur côté du carré divise 315 et aussi 270.<br>
 
-Or $315 = 5 \times 63 = 5 \times 7 \times 9 = 3^2 \times 5 \times 7$ et 
-
-$270 = 27 \times 10 = 3^3 \times 2 \times 5 = 2 \times 3^3 \times 5$.
+Or $315 = 5 \times 63 = 5 \times 7 \times 9 = 3^2 \times 5 \times 7$ et $270 = 27 \times 10 = 3^3 \times 2 \times 5 = 2 \times 3^3 \times 5$.<br>
 
 On constate que $3^2 = 9$ est un diviseur commun à 315 et à 270 : on peut donc imprimer des carrés de côté 9&nbsp;cm.
 ---SUB-Q---
-Dans ce cas, combien de carrés de 9&nbsp;cm de côté seront imprimés sur le tissu?
-<br><br>
----SUB-CORR---
-On a $315 = 9 \times 35$ : il rentre 35 carrés dans la longueur ;
+Dans ce cas, combien de carrés de 9&nbsp;cm de côté seront imprimés sur le tissu ?
 
-$270 = 9 \times 30$ : il rentre 30 carrés dans la largeur.
+---SUB-CORR---
+On a $315 = 9 \times 35$ : il rentre 35 carrés dans la longueur. <br>
+
+$270 = 9 \times 30$ : il rentre 30 carrés dans la largeur.<br>
 
 Il y a donc $35 \times 30 = 1\,050$ motifs imprimés sur le tissu.
 
-<br><br>
 {{< /brevet-exo >}}
