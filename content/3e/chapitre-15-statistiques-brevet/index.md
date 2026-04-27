@@ -3,7 +3,7 @@ title: "Exercices type brevet - Statistiques"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-15-statistiques"
-has_brevetcorr: false
+has_brevetcorr: true
 ---
 {{< brevet-exo num="1" source="DNB Juin 2022 Amérique du Nord" >}}
 ---INTRO---

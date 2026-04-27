@@ -3,6 +3,7 @@ title: "QCM — Probabilités"
 layout: "qcm"
 level: "3e"
 chapter: "chapitre-13-probabilites"
+has_brevetcorr: true
 ---
 
 {{< qcm question="La probabilité d'un événement est un nombre entre :" correct="0" >}}
