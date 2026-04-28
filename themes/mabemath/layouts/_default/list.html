@@ -64,7 +64,7 @@
     {{/* ── Page de niveau : nouveau design ── */}}
 
     {{/* Hero */}}
-    {{ $chapitres2 := where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.has_automatismes" "ne" true }}
+    {{ $chapitres2 := where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.has_automatismes" "ne" true }}
     <div class="level-header" style="--lc:{{ $levelData.color }};">
       <div class="bar" style="background:{{ $levelData.color }};"></div>
       <div>
@@ -109,7 +109,7 @@
         {{ end }}
       </div>
     {{/* Liste des chapitres */}}
-    {{ $chapitres := where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.has_automatismes" "ne" true }}
+    {{ $chapitres := where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.has_automatismes" "ne" true }}
     {{ if $chapitres }}
     {{/* Collect unique categories */}}
     {{ $cats := slice }}
@@ -155,6 +155,7 @@
           {{ if .Params.has_exercices }}<span class="res on">Exos</span>{{ end }}
           {{ if .Params.has_pixelart }}<span class="res on">Pixel</span>{{ end }}
           {{ if .Params.has_brevet }}<span class="res on res-brevet">Brevet</span>{{ end }}
+          {{ if .Params.has_lycee }}<span class="res on res-brevet">Lycée</span>{{ end }}
         </div>
         <div class="chap-go">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
