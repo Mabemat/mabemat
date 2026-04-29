@@ -26,7 +26,18 @@
   </div>
 </section>
 
-<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
+<div class="seance-tabs-wrap fade-up d2">
+  <div class="seance-tabs" id="auto-seance-tabs" role="tablist"></div>
+{{ if ne .Params.has_projection false }}
+  <button class="proj-toggle" id="projToggle" type="button" aria-pressed="false" title="Affichage projection (Échap pour quitter)">
+    <span class="check" aria-hidden="true">
+      <svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6.5 5,9 10,3"/></svg>
+    </span>
+    <span class="icon" aria-hidden="true"></span>
+    <span class="lbl-txt">Projection</span>
+  </button>
+{{ end }}
+</div>
 
 <div id="auto-seance-content" class="fade-up d3">
   {{ .Content }}
@@ -47,11 +58,54 @@
   </div>
 </div>
 
+<div class="proj-help">
+  <span><kbd>Esc</kbd> Quitter</span>
+  <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> Séance</span>
+  <span><kbd>C</kbd> Corrections</span>
+</div>
+
 <script>
 (function() {
+  /* ── Projection (défini EN PREMIER, avant tout return) ── */
+  var projBtn     = document.getElementById('projToggle');
+
+  function setProj(on) {
+    document.body.classList.toggle('proj', on);
+    if (projBtn) projBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (on) document.body.classList.remove('show-corr');
+    try {
+      if (window.renderMathInElement) {
+        window.renderMathInElement(document.body, {
+          delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]
+        });
+      }
+    } catch(e) {}
+  }
+
+  if (projBtn) projBtn.addEventListener('click', function() {
+    setProj(!document.body.classList.contains('proj'));
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.body.classList.contains('proj')) {
+      setProj(false); return;
+    }
+    if (!document.body.classList.contains('proj')) return;
+    if (e.target.matches('input, textarea')) return;
+    if (e.key === '1' || e.key === '2' || e.key === '3') {
+      var tabs = document.querySelectorAll('#auto-seance-tabs button');
+      var idx = parseInt(e.key) - 1;
+      if (tabs[idx]) tabs[idx].click();
+    } else if (e.key === 'c' || e.key === 'C') {
+      document.body.classList.toggle('show-corr');
+    }
+  });
+
+  /* ── Onglets séance ── */
   var tabsEl = document.getElementById('auto-seance-tabs');
-  var panels = document.querySelectorAll('.seance-panel');
+  var panels = document.querySelectorAll('#auto-seance-content .seance-panel');
   if (!tabsEl || !panels.length) return;
+
   panels.forEach(function(panel, i) {
     var titre = panel.dataset.titre || ('Séance ' + (i + 1));
     var btn = document.createElement('button');

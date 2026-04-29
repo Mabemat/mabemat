@@ -147,6 +147,18 @@
     <div class="res-open">Commencer <span class="res-arrow">→</span></div>
   </a>
   {{ end }}
+  {{ if .Params.has_lycee }}
+  <a class="res-card res-card-brevet fade-up d4" href="{{ strings.TrimSuffix "/" .RelPermalink }}-lycee/">
+    <div class="res-corner">Lycée</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Objectif lycée</div>
+      <h3>Pour aller plus <em>loin</em></h3>
+      <p class="res-desc">Prépare ton entrée en classe de 2nde, avec des exercices importants pour le lycée.</p>
+    </div>
+    <div class="res-open">Commencer <span class="res-arrow">→</span></div>
+  </a>
+  {{ end }}
 
   {{ if .Params.has_revisions }}
   <a class="res-card fade-up d4" href="{{ .Params.lien_revisions }}" target="_blank">

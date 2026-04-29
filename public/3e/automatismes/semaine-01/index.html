@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.89d0aac97b5bdf1f02f5ca0bb1fe712a38219c1cbe7c1cd13689241ac57af8b3.css" integrity="sha256-idCqyXtb3x8C9coLsf5xKjghnBy&#43;fBzRNokkGsV6&#43;LM=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.84793801dfcb3ed254ffe293e4cf59288bf46775bf76036baa829a8aa3d92ac4.css" integrity="sha256-hHk4Ad/LPtJU/&#43;KT5M9ZKIv0Z3W/dgNrqoKaiqPZKsQ=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -112,471 +112,55 @@ pre[style*="background-color"] {
   </div>
 </section>
 
-<div class="seance-tabs fade-up d2" id="auto-seance-tabs" role="tablist"></div>
 
-<div id="auto-seance-content" class="fade-up d3">
-  
-<section class="seance-panel" data-titre="Séance 1">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Donner la valeur décimale de  $\dfrac{11}{10}$.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$\dfrac{11}{10}={\color{#8B3C52}\boldsymbol{1{,}1}}$<br>
-          <br> Mentalement : <br>
-          $\dfrac{11}{10}=11\times \dfrac{1}{10}=
-          11\times 0,1=1{,}1$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Exprimer le triple de $m$  en fonction de $m$.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Le triple de $m$ peut s’écrire de plusieurs façons : ${\color{#8B3C52}\boldsymbol{3\times m}}$, ${\color{#8B3C52}\boldsymbol{m+2m}}$ ou encore ${\color{#8B3C52}\boldsymbol{3m}}$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Placer les points suivants : $A(-6\;;\;0)$ ; $B(0\;;\;-4)$ ; $C(5\;;\;-6)$ et $D(-1\;;\;6)$.
-
-<br>
-<img src="3autog01_1_enonce.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_01.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-On tire une boule au hasard dans une urne contenant $4$ boules noires et $6$ boules blanches.<br>             Quelle est la probabilité d'obtenir une boule noire ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Dans une situation d'équiprobabilité,
-        on calcule la probabilité d'un événement par le quotient :
-        $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
-        La probabilité est donc donnée par : 
-        $\dfrac{\text{Nombre de boules noires}}{\text{Nombre total de boules}}
-             =\dfrac{4}{10}  =\dfrac{2{\color{#C5607A}\boldsymbol{\times2}} }{5{\color{#C5607A}\boldsymbol{\times2}}}={\color{#8B3C52}\boldsymbol{\dfrac{2}{5}}}$
-</div>
-  
-</article>
-
-
-</section>
-
-
-<section class="seance-panel" data-titre="Séance 2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Compléter avec le signe < ou >.
-$$-3{,}3 \quad \ldots \quad-3{,}4$$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$-3{,}3 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -3{,}4$
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Pour résoudre l'équation $5x-1=18$, on effectue le calcul :
-
-<br>
- 
-    
-    	<strong>A</strong>. $\dfrac{18+1}{5}$&emsp;&emsp; <strong>B</strong>. $18\times 5+1$&emsp;&emsp; <strong>C</strong>. $(18-5)+1$&emsp;&emsp; <strong>D</strong>. $\dfrac{18}{5}+1$&emsp;&emsp; <br>
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Pour résoudre l'équation $5x-1=18$, on commence par soustraire $-1$ des deux membres de l'équation, ce qui donne $5x=18+1$.<br>
-    Ensuite, on divise les deux membres par $5$ pour obtenir $x=\dfrac{18+1}{5}$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-À l'aide du schéma ci-dessous, déterminer :<br>- deux segments de même longueur ;<br>- le milieu d'un segment ;<br>- un triangle rectangle ;<br>- un triangle isocèle.<br><br><br><img src="3autog02_1_02.svg" alt="3autog02_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-- Deux segments de même mesure : [$YV$] et $[VW]$ ou $[YU]$ et $[UW]$ ou $[XT]$ et $[TW]$.<br>- $V$ est le milieu du segment $[YW]$.<br>- $YXW$ est un triangle rectangle en $Y$, $YVU$ est un triangle rectangle en $V$ et $WVU$ est un triangle rectangle en $V$.<br>- $YUW$ est un triangle isocèle en $U$ et $XTW$ est un triangle isocèle en $T$.<br>
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Voici une série de 4 notes : $5, 9, 10, 8$.<br>Quelle est la moyenne de cette série de notes ?
-
-<br>
- 
-    
-    	<strong>A</strong>. $6{,}5$&emsp;&emsp; <strong>B</strong>. $8$&emsp;&emsp; <strong>C</strong>. $5{,}5$&emsp;&emsp; <strong>D</strong>. $7$&emsp;&emsp; <br>
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-La moyenne de cette série de notes est : $\dfrac{5+9+10+8}{4}=\dfrac{32}{4}=8$.<br>La bonne réponse est la réponse <span class="rep">B</span>.
-</div>
-  
-</article>
-
-
-</section>
-
-
-<section class="seance-panel" data-titre="Séance 3">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Déterminer la valeur de $10~\%$ de $138$.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Pour calculer $10~\%$ de $138$, on calcule $\dfrac{10 \times 138}{100} = \dfrac{10}{100} \times 138=0{,}1\times 138 = 13{,}8$.<br>
-    Donc $10~\%$ de $138$ est égal à ${\color{#8B3C52}\boldsymbol{13{,}8}}$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Donner l'abscisse des points $A$, $B$ et $C$.
-<img src="3auton15_1_enonce_03.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-<img src="3auton15_1_corr_04.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>$\ A $ <span class="rep">$(-0{,}023)$</span> &emsp; $\ B $ <span class="rep">$(0{,}005)$</span> &emsp; $\ C $ <span class="rep">$(0{,}032)$</span>
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Calculer le périmètre du triangle équilatéral $ABC$ représenté ci-dessous :<br>
-<br><br><img src="equilateral_05.svg" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Le polygone a $3$ côtés de longueur $6{,}5$ cm.<br>
-Le périmètre est donc égal à :<br>
-$3 \times 6{,}5 = {\color{#8B3C52}\boldsymbol{19{,}5}}$ cm.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Une élève souhaite réaliser un programme avec un logiciel de
-programmation pour dessiner un octogone régulier.<br>Par quelles valeurs doit-il compléter les lignes 3 et 5 du bloc personnalisé ci-contre 
-pour obtenir un octogone régulier ?
-    
-    <img src="scratch.png" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:200px">
-    
-<br>
-$\text{Ligne 3 : }\ldots\quad \text{Ligne 5 : }\ldots$<br>
-
-
-
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Pour obtenir un octogone régulier, il faut répéter ${\color{#8B3C52}\boldsymbol{8}}$ fois et tourner de $\dfrac{360}{8}={\color{#8B3C52}\boldsymbol{45}}$ degrés.<br>
-</div>
-  
-</article>
-
-
-</section>
-
-
-</div>
-
-<div class="wk-adjacent fade-up">
-  <div>
-    
-    <a class="adj-link" href="/mabemat/3e/automatismes/semaine-02/">← Semaine précédente</a>
-    
-  </div>
-  <div>
-    
-  </div>
+<div class="proj-help">
+  <span><kbd>Esc</kbd> Quitter</span>
+  <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> Séance</span>
+  <span><kbd>C</kbd> Corrections</span>
 </div>
 
 <script>
 (function() {
+   
+  var projBtn     = document.getElementById('projToggle');
+
+  function setProj(on) {
+    document.body.classList.toggle('proj', on);
+    if (projBtn) projBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (on) document.body.classList.remove('show-corr');
+    try {
+      if (window.renderMathInElement) {
+        window.renderMathInElement(document.body, {
+          delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]
+        });
+      }
+    } catch(e) {}
+  }
+
+  if (projBtn) projBtn.addEventListener('click', function() {
+    setProj(!document.body.classList.contains('proj'));
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.body.classList.contains('proj')) {
+      setProj(false); return;
+    }
+    if (!document.body.classList.contains('proj')) return;
+    if (e.target.matches('input, textarea')) return;
+    if (e.key === '1' || e.key === '2' || e.key === '3') {
+      var tabs = document.querySelectorAll('#auto-seance-tabs button');
+      var idx = parseInt(e.key) - 1;
+      if (tabs[idx]) tabs[idx].click();
+    } else if (e.key === 'c' || e.key === 'C') {
+      document.body.classList.toggle('show-corr');
+    }
+  });
+
+   
   var tabsEl = document.getElementById('auto-seance-tabs');
-  var panels = document.querySelectorAll('.seance-panel');
+  var panels = document.querySelectorAll('#auto-seance-content .seance-panel');
   if (!tabsEl || !panels.length) return;
+
   panels.forEach(function(panel, i) {
     var titre = panel.dataset.titre || ('Séance ' + (i + 1));
     var btn = document.createElement('button');

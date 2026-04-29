@@ -1,0 +1,133 @@
+{{/* ───────────────────────────────────────────────
+     PARAMÈTRES
+──────────────────────────────────────────────── */}}
+{{ $num      := .Get "num" }}
+{{ $source   := .Get "source" }}
+{{ $raw      := .Inner }}
+{{ $showCorr := .Page.Params.has_lyceeCorr | default false }}
+
+{{/* ───────────────────────────────────────────────
+     EXTRACTION INTRO + QUESTIONS
+──────────────────────────────────────────────── */}}
+
+{{ $intro := "" }}
+{{ $questions := slice }}
+
+{{ if strings.Contains $raw "---INTRO---" }}
+  {{ $parts := split $raw "---INTRO---" }}
+  {{ $afterIntro := index $parts 1 }}
+
+  {{ $introParts := split $afterIntro "---Q---" }}
+  {{ $intro = strings.TrimSpace (index $introParts 0) }}
+
+  {{ $qRaw := strings.TrimSpace (replace $afterIntro (print $intro) "") }}
+  {{ $blocs := split $qRaw "---Q---" }}
+
+  {{ range $bloc := $blocs }}
+    {{ $trimmed := strings.TrimSpace $bloc }}
+    {{ if $trimmed }}
+
+      {{/* Séparateur de partie (PARTIE A / PARTIE B …) */}}
+      {{ if strings.HasPrefix $trimmed "---PART---" }}
+        {{ $partLabel := strings.TrimSpace (strings.TrimPrefix "---PART---" $trimmed) }}
+        {{ $questions = $questions | append (dict "type" "part" "label" $partLabel "enonce" "" "corr" "" "sub_questions" slice) }}
+
+      {{ else if strings.Contains $trimmed "---SUB-Q---" }}
+        {{ $mainAndSubs := split $trimmed "---SUB-Q---" }}
+        {{ $qEnonce := strings.TrimSpace (index $mainAndSubs 0) }}
+        {{ $subQs := slice }}
+        {{ range $si, $spart := after 1 $mainAndSubs }}
+          {{ $strimmed := strings.TrimSpace $spart }}
+          {{ if $strimmed }}
+            {{ $scparts := split $strimmed "---SUB-CORR---" }}
+            {{ $senonce := strings.TrimSpace (index $scparts 0) }}
+            {{ $scorr   := "" }}
+            {{ if gt (len $scparts) 1 }}{{ $scorr = strings.TrimSpace (index $scparts 1) }}{{ end }}
+            {{ $subQs = $subQs | append (dict "enonce" $senonce "corr" $scorr) }}
+          {{ end }}
+        {{ end }}
+        {{ $questions = $questions | append (dict "type" "q" "enonce" $qEnonce "corr" "" "sub_questions" $subQs) }}
+
+      {{ else }}
+        {{ $qparts := split $trimmed "---CORR---" }}
+        {{ $enonce := strings.TrimSpace (index $qparts 0) }}
+        {{ $corr := "" }}
+        {{ if gt (len $qparts) 1 }}{{ $corr = strings.TrimSpace (index $qparts 1) }}{{ end }}
+        {{ $questions = $questions | append (dict "type" "q" "enonce" $enonce "corr" $corr "sub_questions" slice) }}
+      {{ end }}
+
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* ───────────────────────────────────────────────
+     RENDU HTML — nouveau design maquette
+──────────────────────────────────────────────── */}}
+
+{{ $numFmt := printf "%02d" (int $num) }}
+{{ $letters := slice "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" }}
+
+<article class="exo-brevet" id="exo-{{ $num }}">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">{{ $numFmt }}</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    {{ if $source }}
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> {{ $source }}
+    </div>
+    {{ end }}
+  </header>
+
+  {{ if $intro }}
+  <div class="exo-intro">{{ $intro | safeHTML }}</div>
+  {{ end }}
+
+  <div class="q-list">
+    {{ range $i, $q := $questions }}
+
+    {{ if eq $q.type "part" }}
+    <div class="partie-header">{{ $q.label | safeHTML }}</div>
+
+    {{ else }}
+    <div class="q-item">
+      <div class="q-enonce">
+        {{ $q.enonce | safeHTML }}
+
+        {{ if and $showCorr $q.corr }}
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">{{ $q.corr | safeHTML }}</div>
+        {{ end }}
+
+        {{ if $q.sub_questions }}
+        <div class="sub-list">
+          {{ range $si, $sq := $q.sub_questions }}
+          {{ $letter := index $letters $si }}
+          <div class="sub-q">
+            <span class="sub-letter">{{ $letter }}.</span>
+            <div>
+              <div class="sub-enonce">{{ $sq.enonce | safeHTML }}</div>
+              {{ if and $showCorr $sq.corr }}
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">{{ $sq.corr | safeHTML }}</div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+    {{ end }}
+
+    {{ end }}
+  </div>
+
+</article>

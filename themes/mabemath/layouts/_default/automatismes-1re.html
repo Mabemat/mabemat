@@ -38,15 +38,26 @@
   </div>
 </section>
 
-<div class="mode-tabs fade-up d2" role="tablist">
-  <button class="active" data-tab="seance">
-    <span class="tab-idx">Séance</span>
-    <em>Classique</em>
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+{{ if ne .Params.has_projection false }}
+  <button class="proj-toggle" id="projToggle" type="button" aria-pressed="false" title="Affichage projection (Échap pour quitter)">
+    <span class="check" aria-hidden="true">
+      <svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6.5 5,9 10,3"/></svg>
+    </span>
+    <span class="icon" aria-hidden="true"></span>
+    <span class="lbl-txt">Projection</span>
   </button>
-  <button data-tab="devoir">
-    <span class="tab-idx">Séance</span>
-    <em>Devoirs</em>
-  </button>
+{{ end }}
 </div>
 
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
@@ -70,7 +81,6 @@
   <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
-<!-- Contenu source rendu par Hugo (shortcodes résolus) — masqué -->
 <div id="auto1re-src" style="display:none">
   {{ .Content }}
 </div>
@@ -90,9 +100,76 @@
   </div>
 </div>
 
+<div class="proj-help">
+  <span><kbd>Esc</kbd> Quitter</span>
+  <span><kbd>C</kbd> Corrections</span>
+</div>
+
 <script>
 (function () {
   var LETTERS = ['A', 'B', 'C', 'D'];
+
+  /* ── Projection (EN PREMIER, avant tout return) ── */
+  var projBtn     = document.getElementById('projToggle');
+
+  function markCorrectChoices() {
+    document.querySelectorAll('.auto1re-card').forEach(function(card) {
+      var correct = parseInt(card.dataset.correct, 10);
+      card.querySelectorAll('.auto1re-choice').forEach(function(c, i) {
+        c.classList.toggle('proj-correct', i === correct);
+      });
+    });
+  }
+
+  function setProj(on) {
+    document.body.classList.toggle('proj', on);
+    if (projBtn) projBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    if (on) {
+      document.body.classList.remove('show-corr');
+      document.querySelectorAll('.mode-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      document.querySelectorAll('.mode-panel').forEach(function(p) { p.classList.remove('active'); });
+      var seanceBtn = document.querySelector('.mode-tabs button[data-tab="seance"]');
+      if (seanceBtn) seanceBtn.classList.add('active');
+      var seancePanel = document.getElementById('auto-panel-seance');
+      if (seancePanel) seancePanel.classList.add('active');
+      markCorrectChoices();
+    }
+    try {
+      if (window.renderMathInElement) {
+        window.renderMathInElement(document.body, {
+          delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]
+        });
+      }
+    } catch(e) {}
+  }
+
+  if (projBtn) projBtn.addEventListener('click', function() {
+    setProj(!document.body.classList.contains('proj'));
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.body.classList.contains('proj')) {
+      setProj(false); return;
+    }
+    if (!document.body.classList.contains('proj')) return;
+    if (e.target.matches('input, textarea')) return;
+    if (e.key === 'c' || e.key === 'C') {
+      document.body.classList.toggle('show-corr');
+    }
+  });
+
+  /* ── Onglets mode ── */
+  document.querySelectorAll('.mode-tabs button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.mode-tabs button').forEach(function (b) { b.classList.remove('active'); });
+      document.querySelectorAll('.mode-panel').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById('auto-panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  /* ── Construction des cartes QCM ── */
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
@@ -102,7 +179,6 @@
   buildSeance(seanceBox);
   buildDevoir(devoirBox);
 
-  /* ── MODE SÉANCE : correction immédiate + bon/mauvais ── */
   function buildSeance(box) {
     if (!box) return;
     var target = document.getElementById('seance-cards');
@@ -124,7 +200,6 @@
           if (card.classList.contains('answered')) return;
           card.classList.add('answered');
           choice.classList.add('picked');
-
           if (ci === correct) {
             choice.classList.add('correct');
             score++;
@@ -132,7 +207,6 @@
             choice.classList.add('wrong');
             choices[correct].classList.add('correct');
           }
-
           answered++;
           cur.textContent = score;
           if (fill) fill.style.width = Math.round(answered / total * 100) + '%';
@@ -142,7 +216,6 @@
     });
   }
 
-  /* ── MODE DEVOIRS : réponse grisée, pas de bon/mauvais, score à la fin ── */
   function buildDevoir(box) {
     if (!box) return;
     var target  = document.getElementById('devoir-cards');
@@ -166,16 +239,10 @@
         choice.addEventListener('click', function () {
           if (card.classList.contains('answered')) return;
           card.classList.add('answered');
-          /* Juste griser la réponse choisie — aucune info correct/faux */
           choice.classList.add('picked-devoir');
-
-          /* Mémoriser si c'est juste pour le score final */
           if (ci === correct) score++;
-
           answered++;
           if (fill) fill.style.width = Math.round(answered / total * 100) + '%';
-
-          /* Score affiché seulement quand tout est répondu */
           if (answered === total) {
             cur.textContent = score;
             if (result) {
@@ -193,7 +260,6 @@
     });
   }
 
-  /* ── Construction d'une carte ── */
   function makeCard(old, index, label) {
     var correct    = parseInt(old.dataset.correct, 10);
     var questionEl = old.querySelector('.qcm-question');
@@ -205,7 +271,6 @@
     article.dataset.correct = correct;
 
     var numStr = String(index + 1).padStart(2, '0');
-
     var head = document.createElement('div');
     head.className = 'auto1re-head';
     head.innerHTML = '<div class="auto1re-num">' + numStr + '</div>'
@@ -230,7 +295,6 @@
     });
     article.appendChild(choicesDiv);
 
-    /* Correction (utilisée seulement en mode séance) */
     var corr = document.createElement('div');
     corr.className = 'auto1re-corr';
     var corrLabel = document.createElement('span');
@@ -246,16 +310,6 @@
 
     return article;
   }
-
-  /* ── Onglets mode ── */
-  document.querySelectorAll('.mode-tabs button').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('.mode-tabs button').forEach(function (b) { b.classList.remove('active'); });
-      document.querySelectorAll('.mode-panel').forEach(function (p) { p.classList.remove('active'); });
-      btn.classList.add('active');
-      document.getElementById('auto-panel-' + btn.dataset.tab).classList.add('active');
-    });
-  });
 })();
 </script>
 {{ end }}

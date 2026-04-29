@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ $section    := .Section }}
+{{ $levelData  := index .Site.Params.levels $section }}
+{{ $chapterKey := .Params.chapter }}
+{{ $chapterPage := "" }}
+{{ if $chapterKey }}
+  {{ $chapterPage = site.GetPage (printf "/%s/%s" $section $chapterKey) }}
+{{ end }}
+
+{{/* Titre affiché : après le " - " s'il existe, sinon le titre brut */}}
+{{ $titleParts   := split .Title " - " }}
+{{ $displayTitle := index $titleParts (sub (len $titleParts) 1) }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  {{ if $chapterPage }}
+  <a href="{{ $chapterPage.RelPermalink }}">{{ $chapterPage.Title }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Objectif lycée</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  {{ if $chapterPage }}
+  <div class="eyebrow">Chapitre {{ $chapterPage.Params.chapter_number }} · Objectif Lycée</div>
+  {{ end }}
+  <h1>{{ $displayTitle }}</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>Aller plus loin</span>
+    <span><span class="dot"></span>Corrections détaillées</span>
+    {{ if and $chapterPage $chapterPage.Params.has_lyceeImpr }}
+    {{ $chapNum := int (index (split .Params.chapter "-") 1) }}
+    {{ end }}
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  {{ .Content }}
+</div>
+
+{{ if $chapterPage }}
+<div class="br-adjacent fade-up">
+  <a class="adj-link" href="{{ $chapterPage.RelPermalink }}">← Retour au chapitre</a>
+</div>
+{{ end }}
+{{ end }}
