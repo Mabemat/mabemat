@@ -34,7 +34,7 @@
     <span><span class="dot"></span>DNB</span>
     <span><span class="dot"></span>Corrections détaillées</span>
     {{ if and $chapterPage $chapterPage.Params.has_brevetImpr }}
-    {{ $chapNum := int (index (split .Params.chapter "-") 1) }}
+    {{ $chapNum := int (replace (index (split .Params.chapter "-") 1) "0" "" ) }}
     <a href="{{ .RelPermalink }}brevet{{ $chapNum }}.pdf" target="_blank" class="br-print-link"><span class="dot"></span>Exercices imprimables</a>
     {{ end }}
   </div>

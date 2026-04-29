@@ -8,7 +8,7 @@ has_cours: true
 has_exercices: false
 has_qcm: false
 has_brevet: true
-has_brevetImpr : false
+has_brevetImpr : true
 competences:
   - "Utiliser les rapports trigonométriques"
   - "Calculer des angles et des longueurs"
