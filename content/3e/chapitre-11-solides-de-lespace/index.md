@@ -7,7 +7,7 @@ show_lecon: true
 has_cours: true
 has_exercices: false
 has_qcm: false
-has_brevet: false
+has_brevet: true
 has_brevetImpr : false
 competences:
   - "Reconnaître et décrire des solides"

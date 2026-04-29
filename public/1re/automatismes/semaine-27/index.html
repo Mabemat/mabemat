@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.84793801dfcb3ed254ffe293e4cf59288bf46775bf76036baa829a8aa3d92ac4.css" integrity="sha256-hHk4Ad/LPtJU/&#43;KT5M9ZKIv0Z3W/dgNrqoKaiqPZKsQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.6da80158b3f6addfcb68950d3f163e103431164a9936d52ffb081f5b14f3b511.css" integrity="sha256-bagBWLP2rd/LaJUNPxY&#43;EDQxFkqZNtUv&#43;wgfWxTztRE=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -121,6 +121,1557 @@ pre[style*="background-color"] {
   </div>
 </section>
 
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+
+</div>
+
+<section id="auto-panel-seance" class="mode-panel active fade-up d3">
+  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-seance"></div></div>
+    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
+  </div>
+  <div id="seance-cards"></div>
+</section>
+
+<section id="auto-panel-devoir" class="mode-panel">
+  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
+    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
+  </div>
+  <div id="devoir-cards"></div>
+  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
+</section>
+
+<div id="auto1re-src" style="display:none">
+  <div class="qcm-container" data-no-score="true">
+<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Séance 27 — Équations, fonctions et pourcentages
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    La solution de l&rsquo;équation $\dfrac{x}{9}=0$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$x=\dfrac{1}{9}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$x=-\dfrac{1}{9}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$x=-9$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$x=0$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>On multiplie par $9$ chacun des deux membres de l&rsquo;équation pour obtenir $x=0$.<br>
+C&rsquo;est bien $0\div 9$ qui est égal à $0$.<br>
+Ainsi, la solution de l&rsquo;équation est <strong>0</strong>.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Pour s&rsquo;entraîner dans une salle de sport, on règle chaque mois un abonnement pour une carte d&rsquo;adhérent.<br>
+Cette carte donne droit à un tarif préférentiel pour chaque séance.<br>
+Un client ne se souvient pas du montant du forfait mensuel ni du tarif préférentiel, mais il a retrouvé ses deux derniers tickets de caisse.<br>
+Le premier ticket indique qu&rsquo;il a payé $21$ euros pour $2$ séances d&rsquo;entraînement.<br>
+Le second ticket indique qu&rsquo;il a payé $33$ euros pour $4$ séances d&rsquo;entraînement.<br>
+Quel est le montant de l&rsquo;abonnement mensuel ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$4$ €</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$9$ €</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$10$ €</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$6$ €</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>On note $a$ le montant de l&rsquo;abonnement mensuel et $p$ le prix d&rsquo;une séance.<br></p>
+<p>D&rsquo;après le premier ticket : $a + 2p = 21$.<br></p>
+<p>D&rsquo;après le second ticket : $a + 4p = 33$.<br></p>
+<p>En faisant la différence entre ces deux montants, on obtient :
+$4p - 2p = 12$ soit $2p=12$. <br></p>
+<p>Donc le montant pour $1$ séance est : $p = 6$ €.<br></p>
+<p>On peut alors calculer le montant de l&rsquo;abonnement mensuel :
+$a = 21 - 2 \times 6 = 21 - 12 = 9$ €.<br></p>
+<p>Le montant de l&rsquo;abonnement mensuel est donc de <strong>9 €</strong>.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    On considère $A = 100 + 0{,}1 + \dfrac{1}{1\,000}$. On a :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$A = \dfrac{100\,010}{1\,000}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$A = 101$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$A = \dfrac{100\,101}{1\,000}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$A = 100{,}2$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>On a :
+</p>
+$$\begin{aligned}
+A &= 100 + 0{,}1 + \dfrac{1}{1\,000}\\
+&= \dfrac{100\,000}{1\,000} + \dfrac{100}{1\,000} + \dfrac{1}{1\,000}\\
+&= \dfrac{100\,101}{1\,000}
+\end{aligned}$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    On a représenté ci-contre une parabole $\mathscr{P}$.<br>
+Une seule des quatre fonctions ci-dessous est susceptible d&rsquo;être représentée par la parabole $\mathscr{P}$. Laquelle ?
+<img src="graphe_f02_14.svg" alt="Graphe de la parabole" style="display:block;margin:1rem auto;max-width:360px">
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$x\longmapsto -0{,}8(x+2)(x+4)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$x\longmapsto -0{,}8(x-2)(x+4)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$x\longmapsto 0{,}8(x+2)(x+4)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$x\longmapsto 0{,}8(x+2)(x-4)$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Les paraboles proposées ont des équations de la forme $y=a(x-x_1)(x-x_2)$ où $x_1$ et $x_2$ sont les racines.<br></p>
+<p>La parabole $\mathscr{P}$ a les bras tournés vers le bas, on en déduit que $a < 0$.<br></p>
+<p>Les racines de la parabole (intersections avec l&rsquo;axe des abscisses) sont toutes les deux négatives.<br></p>
+<p>On en déduit que la seule fonction susceptible de représenter $\mathscr{P}$ est : $x\longmapsto -0{,}8(x+2)(x+4)$.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Parmi les nombres suivants, lequel est le plus grand ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$10\,$ % de $190$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$25\,$ % de $72$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$5\,$ % de $390$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$20\,$ % de $115$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Prendre $10\,$ % d&rsquo;une valeur revient à la diviser par $10$, donc $10\,$ % de $190 = 19$.<br></p>
+<p>Prendre $25\,$ % d&rsquo;une valeur revient à la diviser par $4$, donc $25\,$ % de $72 = 18$.<br></p>
+<p>Prendre $5\,$ % d&rsquo;une valeur revient à en prendre la moitié de $10\,$ %, donc $5\,$ % de $390 = \dfrac{39}{2} = 19{,}5$.<br></p>
+<p>Prendre $20\,$ % d&rsquo;une valeur revient à en prendre deux fois $10\,$ %, donc $20\,$ % de $115 = 2\times 11{,}5 = 23$.<br></p>
+<p>Le plus grand résultat est donc donné par <strong>20 % de 115</strong> $= 23$.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    <p>Les valeurs de $y$ sont proportionnelles à celles de $x$. <br>Déterminer la valeur manquante (?) dans le tableau ci-dessous.</p>
+<table style="border-collapse:collapse;margin:0.7rem 0;text-align:center">
+<tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$x$</td><td style="border:1px solid #888;padding:4px 14px">$6$</td><td style="border:1px solid #888;padding:4px 14px">$50$</td></tr>
+<tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$y$</td><td style="border:1px solid #888;padding:4px 14px">$60$</td><td style="border:1px solid #888;padding:4px 14px">$?$</td></tr>
+</table>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$5$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$7{,}2$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$110$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$500$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>On a $y = k\times x$.<br></p>
+<p><em>Méthode 1 – avec le coefficient de proportionnalité</em> : on calcule $k$ avec une colonne connue : $k = \dfrac{60}{6} = 10$.<br>
+On a $? = 10\times 50 = \mathbf{500}$.<br></p>
+<p><em>Méthode 2 – les produits en croix sont égaux</em> : $6 \times ? = 50\times 60$, donc $? = \dfrac{50\times 60}{6} = \mathbf{500}$.<br></p>
+<p>Vérification : $6\times 500 = 3\,000$ et $50\times 60 = 3\,000$. ✓<br></p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
+  </div>
+  
+</div>
+
+</div>
+<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Devoirs — Séance 27 — Équations, fonctions et pourcentages
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    La solution de l&rsquo;équation $\dfrac{-9}{x}=-9$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$x=9$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$x=\dfrac{1}{9}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$x=1$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$x=-9$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Pour s&rsquo;entraîner dans une salle de sport, on règle chaque mois un abonnement pour une carte d&rsquo;adhérent.<br>
+Cette carte donne droit à un tarif préférentiel pour chaque séance.<br>
+Un client ne se souvient pas du montant du forfait mensuel ni du tarif préférentiel, mais il a retrouvé ses deux derniers tickets de caisse.<br>
+Le premier ticket indique qu&rsquo;il a payé $20$ euros pour $2$ séances d&rsquo;entraînement.<br>
+Le second ticket indique qu&rsquo;il a payé $32$ euros pour $4$ séances d&rsquo;entraînement.<br>
+Quel est le montant de l&rsquo;abonnement mensuel ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$9$ €</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$4$ €</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$6$ €</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$8$ €</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    On considère $A = 100 + 0{,}001 + \dfrac{1}{1\,000}$. On a :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$A = 100{,}002$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$A = \dfrac{100\,001}{1\,000}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$A = 100{,}011$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$A = \dfrac{100\,010}{1\,000}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    On a représenté ci-contre une parabole $\mathscr{P}$.<br>
+Une seule des quatre fonctions ci-dessous est susceptible d&rsquo;être représentée par la parabole $\mathscr{P}$. Laquelle ?
+<img src="graphe_f02_14_devoir.svg" alt="Graphe de la parabole" style="display:block;margin:1rem auto;max-width:360px">
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$x\longmapsto 0{,}6(x+2)(x+5)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$x\longmapsto -0{,}6(x-2)(x+5)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$x\longmapsto -0{,}6(x+2)(x+5)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$x\longmapsto 0{,}6(x+2)(x-5)$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Parmi les nombres suivants, lequel est le plus grand ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$20\,$ % de $82$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$5\,$ % de $330$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$25\,$ % de $72$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$10\,$ % de $160$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    <p>Les valeurs de $y$ sont proportionnelles à celles de $x$. <br>
+Déterminer la valeur manquante (?) dans le tableau ci-dessous.</p>
+<table style="border-collapse:collapse;margin:0.7rem 0;text-align:center">
+<tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$x$</td><td style="border:1px solid #888;padding:4px 14px">$8$</td><td style="border:1px solid #888;padding:4px 14px">$30$</td></tr>
+<tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$y$</td><td style="border:1px solid #888;padding:4px 14px">$40$</td><td style="border:1px solid #888;padding:4px 14px">$?$</td></tr>
+</table>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$10{,}7$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$150$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$6$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$70$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/">← Retour au planning</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-26/">Semaine suivante →</a>
+    
+  </div>
+</div>
 
 <div class="proj-help">
   <span><kbd>Esc</kbd> Quitter</span>

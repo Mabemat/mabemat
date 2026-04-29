@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.84793801dfcb3ed254ffe293e4cf59288bf46775bf76036baa829a8aa3d92ac4.css" integrity="sha256-hHk4Ad/LPtJU/&#43;KT5M9ZKIv0Z3W/dgNrqoKaiqPZKsQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.6da80158b3f6addfcb68950d3f163e103431164a9936d52ffb081f5b14f3b511.css" integrity="sha256-bagBWLP2rd/LaJUNPxY&#43;EDQxFkqZNtUv&#43;wgfWxTztRE=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -121,6 +121,1440 @@ pre[style*="background-color"] {
   </div>
 </section>
 
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+
+</div>
+
+<section id="auto-panel-seance" class="mode-panel active fade-up d3">
+  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-seance"></div></div>
+    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
+  </div>
+  <div id="seance-cards"></div>
+</section>
+
+<section id="auto-panel-devoir" class="mode-panel">
+  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
+    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
+  </div>
+  <div id="devoir-cards"></div>
+  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
+</section>
+
+<div id="auto1re-src" style="display:none">
+  <div class="qcm-container" data-no-score="true">
+<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Séance 8 — Équations, pourcentages et évolutions
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    L&rsquo;ensemble $S$ des solutions de l&rsquo;équation $(x-3)^2=-3$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$S=${$0$}</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$S=${$-\sqrt{3}\ ;\ \sqrt{3}$}</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$S=\emptyset$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$S=${$-\sqrt{3}+3\ ;\ \sqrt{3}+3$}</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>L&rsquo;équation est de la forme $X^2=k$ avec $X=(x-3)$ et $k=-3$.</p>
+<p>Comme $k<0$, l&rsquo;équation n&rsquo;a pas de solution.</p>
+<p>Ainsi, l&rsquo;ensemble des solutions de l&rsquo;équation est $S=\emptyset$.</p>
+<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Une durée de $72$ minutes correspond à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$1{,}3$ heure</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$1{,}2$ heure</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$0{,}72$ heure</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$1{,}12$ heure</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>$72\text{ min}= 60 \text{ min}+12\text{ min}=1\text{ h}+\dfrac{2}{10}\text{ h}=1{,}2\text{ h}$.</p>
+<p>Ainsi, $72$ min correspond à $1{,}2$ heure.</p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    La valeur la plus proche de $39\ $% de $100\ 817$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$61\ 000$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$20\ 000$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$40\ 000$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$4\ 000$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>$39\ $% est proche de $40\ $% et $100\ 817$ est proche de $100\ 000$.</p>
+<p>Ainsi, le calcul de $39\ $% de $100\ 817$ est proche de $40\ $% de $100\ 000$ soit $40\ 000$.</p>
+<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Le prix d&rsquo;un article est noté $P$. Il connaît deux augmentations successives de $70\ $%.
+Le prix après ces augmentations est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$P \times \left(1 + \dfrac{7}{10}\right)^2$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac{P}{2{,}89}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$P \times 1{,}4$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$P \times \left(1{,}7 + 0{,}7\right)$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Après une augmentation de $70\ $%, le nouveau prix est $P \times 1{,}7$.</p>
+<p>Après une deuxième augmentation de $70\ $%, le prix devient :</p>
+<p>$(P \times 1{,}7) \times 1{,}7 = P \times \left(1 + \dfrac{70}{100}\right)^2=P \times  \left(1 + \dfrac{7}{10}\right)^2 = P \times 1{,}7^2$</p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Le prix d’un article connait deux baisses successives de $20\ $%.
+Le taux d&rsquo;évolution global associé est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$-36\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-31\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$40\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$20\ $%</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Le coefficient multiplicateur associé à une baisse de $20\ $% est $0{,}8$.</p>
+<p>Le coefficient multiplicateur associé à deux baisses successives de $20\ $% est le produit des coefficients multiplicateurs, soit $0{,}8\times 0{,}8=0{,}64$.</p>
+<p>L&rsquo;évolution globale est donnée par $0{,}64-1=-0{,}36=-36\ $%.</p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Le prix d’un article a subi une augmentation de $47\ $%.
+Le taux à appliquer pour que cet article retrouve son prix initial est donné par :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{1}{0{,}53}-1$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac{-0{,}47}{1{,}47}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$1-\dfrac{1}{0{,}47}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac{1}{0{,}47}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Le coefficient multiplicateur associé à une augmentation de $47\ $% est $1+0{,}47=1{,}47$.</p>
+<p>Le coefficient multiplicateur réciproque est donc $\dfrac{1}{1{,}47}$.</p>
+<p>On en déduit que le taux réciproque est $\dfrac{1}{1{,}47}-1$ ou $\dfrac{-0{,}47}{1{,}47}$.</p>
+<p>Le taux réciproque est donc $\dfrac{-0{,}47}{1{,}47}$.</p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
+  </div>
+  
+</div>
+
+</div>
+<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Devoirs — Séance 8 — Équations, pourcentages et évolutions
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    L&rsquo;ensemble $S$ des solutions de l&rsquo;équation $(x+2)^2=13$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$S=${$-15\ ;\ 11$}</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$S=${$-\sqrt{13}-2;-\sqrt{13}-2$}</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$S=${$\-\sqrt{13}-2\ ;\ \sqrt{13}-2$}</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$S=${$-\sqrt{13}+2;\sqrt{13}+2$}</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Une durée de $84$ minutes correspond à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$1{,}4$ heure</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$1{,}24$ heure</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$0{,}84$ heure</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$1{,}5$ heure</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    La valeur la plus proche de $21\ $% de $102\ 533$ est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$20\ 000$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$2\ 000$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$83\ 000$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$10\ 000$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Le prix d&rsquo;un article est noté $P$. Il connaît deux augmentations successives de $50\ $%.
+Le prix après ces augmentations est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$P \times \left(\dfrac{50}{100}\right)^2$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$P \times \left(1 + \left(\dfrac{50}{100}\right)^2\right)$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$P \times \left(1 + \dfrac{1}{2}\right)^2$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$P \times 1$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Le prix d’un article connait deux baisses successives de $20\ $%.
+Le taux d&rsquo;évolution global associé est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$20\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-36\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$40\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$-31\ $%</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Le prix d’un article a subi une augmentation de $23\ $%.
+Le taux à appliquer pour que cet article retrouve son prix initial est donné par :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{-0{,}23}{1{,}23}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$1-\dfrac{1}{0{,}23}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac{1}{0{,}23}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac{1}{0{,}77}-1$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-09/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-07/">Semaine suivante →</a>
+    
+  </div>
+</div>
 
 <div class="proj-help">
   <span><kbd>Esc</kbd> Quitter</span>

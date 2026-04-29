@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.84793801dfcb3ed254ffe293e4cf59288bf46775bf76036baa829a8aa3d92ac4.css" integrity="sha256-hHk4Ad/LPtJU/&#43;KT5M9ZKIv0Z3W/dgNrqoKaiqPZKsQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.6da80158b3f6addfcb68950d3f163e103431164a9936d52ffb081f5b14f3b511.css" integrity="sha256-bagBWLP2rd/LaJUNPxY&#43;EDQxFkqZNtUv&#43;wgfWxTztRE=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -121,6 +121,1506 @@ pre[style*="background-color"] {
   </div>
 </section>
 
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+
+</div>
+
+<section id="auto-panel-seance" class="mode-panel active fade-up d3">
+  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-seance"></div></div>
+    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
+  </div>
+  <div id="seance-cards"></div>
+</section>
+
+<section id="auto-panel-devoir" class="mode-panel">
+  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
+    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
+  </div>
+  <div id="devoir-cards"></div>
+  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
+</section>
+
+<div id="auto1re-src" style="display:none">
+  <div class="qcm-container" data-no-score="true">
+<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Séance 7 — Fonctions, évolutions et statistiques
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=(-4x+24)(8x+56)$ admet pour tableau de signes :
+  </div>
+
+  <div class="qcm-opts qcm-opts-grid">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span><img src="graphe_c14-2_1.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span><img src="graphe_c14-2_2.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span><img src="graphe_c14-2_3.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span><img src="graphe_c14-2_4.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>L&rsquo;équation $-4x+24=0$ a pour solution $x=6$.</p>
+<p>L&rsquo;équation $8x+56=0$ a pour solution $x=-7$.</p>
+<p>Le tableau de signe du produit $(-4x+24)(8x+56)$ est :</p>
+<img src="corr_c14-2_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:400px">
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    On considère une fonction $f$ dont la représentation graphique $\mathscr{C}$ est tracée dans un repère ci-dessous.
+<img src="graphe_f01-3_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+Une seule affirmation est correcte :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Un antécédent de $-3$ est $0$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$0$ est un antécédent de $-3$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$0$ a pour image $-3$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>L&rsquo;image de $-3$ est $0$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Les images se lisent sur l&rsquo;axe des ordonnées et les antécédents sur l&rsquo;axe des abscisses.</p>
+<p>Ainsi, on peut dire que :</p>
+<p>$\bullet$ $0$ est l&rsquo;image de $-3$,</p>
+<p>$\bullet$ un antécédent de $0$ est $-3$,</p>
+<p>$\bullet$ $-3$ est un antécédent de $0$,</p>
+<p>$\bullet$ <strong>l&rsquo;image de $-3$ est $0$</strong>,</p>
+<p>$\bullet$ $-3$ a pour image $0$,</p>
+<p>$\bullet$ $0$ a pour antécédent $-3$.</p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Une grandeur passe de $600$ à $900$.
+L&rsquo;évolution est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Une augmentation de $33\  $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Une augmentation de $300\  $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>Une augmentation de $50\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>Une augmentation de $55\  $%</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Le taux d&rsquo;évolution $t$ est donné par la formule :</p>
+<p>$t = \dfrac{\text{valeur finale} - \text{valeur initiale}}{\text{valeur initiale}}$</p>
+<p>Ici :
+$t=\dfrac{900 - 600}{600}  = 0{,}5$</p>
+<p>Le taux d&rsquo;évolution est donc de $50 \ $%.</p>
+<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Une série statistique est résumée par le diagramme en boite ci-dessous, utilisez-le pour donner la valeur de l&rsquo;écart interquartile de cette série.
+<img src="graphe_s03-1_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$15$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$25$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$80$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$65$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>L&rsquo;écart interquartile est la différence entre le troisième quartile et le premier quartile.</p>
+<p>D&rsquo;après le diagramme en boite, on a $Q_3 = 55$ et $Q_1 = 30$.</p>
+<p>Donc l&rsquo;écart interquartile est $Q_3 - Q_1 = 55 - 30 = 25$.</p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Dans un lycée, la moitié des élèves sont internes, parmi eux, trois cinquièmes sont des filles. <br>
+La proportion des filles internes par rapport à l&rsquo;ensemble des élèves du lycée est égale à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{11}{10}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$3$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac{3}{10}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$50\ $%</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>La proportion des filles internes par rapport à l&rsquo;ensemble des élèves du lycée est donnée par :</p>
+<p>$\dfrac{1}{2}\times \dfrac{3}{5}=\dfrac{3}{10}$.</p>
+<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Soit $n$ un entier.
+À quelle expression est égale $\left(4^n\right)^{2}$ ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$4^{n^{2}}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Aucune de ces propositions</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$8^{n}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$16^{n}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>On applique la propriété des puissances de puissances d&rsquo;un réel :</p>
+<p>Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a :
+$\left(a^{n}\right)^{p}=a^{np}$</p>
+<p>$\begin{aligned}\left(4^{n}\right)^{2}&=4^{2n}\\\\
+    &=\left(4^{2}\right)^{n}\\\\
+    &=16^{n}
+    \end{aligned}$</p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
+  </div>
+  
+</div>
+
+</div>
+<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Devoirs — Séance 7 — Fonctions, évolutions et statistiques
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=(5x-20)(-5x+5)$ admet pour tableau de signes :
+  </div>
+
+  <div class="qcm-opts qcm-opts-grid">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span><img src="graphe_c14-2_1_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span><img src="graphe_c14-2_2_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span><img src="graphe_c14-2_3_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span><img src="graphe_c14-2_4_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle"></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    On considère une fonction $f$ dont la représentation graphique $\mathscr{C}$ est tracée dans un repère ci-dessous.
+<img src="graphe_f01-3_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+Une seule affirmation est correcte :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$3$ a pour image $-5$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Un antécédent de $3$ est $-5$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$3$ est un antécédent de $-5$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$-5$ est l&rsquo;image de $3$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Une grandeur passe de $300$ à $600$.
+L&rsquo;évolution est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Une augmentation de $300\  $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Une augmentation de $50\  $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>Une augmentation de $100\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>Une augmentation de $110\  $%</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Une série statistique est résumée par le diagramme en boite ci-dessous, utilisez-le pour donner la valeur de l&rsquo;écart interquartile de cette série.
+<img src="graphe_s03-1_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$50$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$70$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$35$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$15$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Dans un lycée, un cinquième des élèves sont internes, parmi eux, un quart sont des filles. <br>
+La proportion des filles internes par rapport à l&rsquo;ensemble des élèves du lycée est égale à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{9}{20}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$5\ $%</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$0{,}5$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$20\ $%</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Soit $n$ un entier.
+À quelle expression est égale $\left(4^n\right)^{2}$ ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$8^{n}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Aucune de ces propositions</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$4^{n^{2}}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$16^{n}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-08/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-06/">Semaine suivante →</a>
+    
+  </div>
+</div>
 
 <div class="proj-help">
   <span><kbd>Esc</kbd> Quitter</span>

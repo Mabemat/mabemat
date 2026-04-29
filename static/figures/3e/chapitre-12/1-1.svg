@@ -1,0 +1,160 @@
+<svg viewBox="0 0 700 530" xmlns="http://www.w3.org/2000/svg" font-family="serif" font-size="12">
+
+  <!--
+    Mapping :
+    x : 0..110 km  →  px_x = 80 + x * (550/110) = 80 + 5x
+    y : 0..16 units (1 unit = 2000 F)  →  px_y = 470 - y * (450/16) = 470 - 28.125y
+    
+    Droite rouge  : y = 450x/2000 = 0.225x
+      x=0  → (80, 470)
+      clippe à y=16 : x=16/0.225=71.11 km → px=(435.6, 20)
+    
+    Droite bleue  : y = (8400+250x)/2000 = 4.2 + 0.125x
+      x=0  → px_y=470-4.2*28.125=351.9 → (80, 351.9)
+      clippe à y=16 : x=(16-4.2)/0.125=94.4 km → px=(552, 20)
+  -->
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="black"/>
+    </marker>
+  </defs>
+
+  <!-- Grille secondaire (lightgray) -->
+  <g stroke="#d3d3d3" stroke-width="0.6">
+    <!-- Verticales tous les 10 km -->
+    <line x1="135" y1="20" x2="135" y2="470"/>
+    <line x1="190" y1="20" x2="190" y2="470"/>
+    <line x1="245" y1="20" x2="245" y2="470"/>
+    <line x1="300" y1="20" x2="300" y2="470"/>
+    <line x1="355" y1="20" x2="355" y2="470"/>
+    <line x1="410" y1="20" x2="410" y2="470"/>
+    <line x1="465" y1="20" x2="465" y2="470"/>
+    <line x1="520" y1="20" x2="520" y2="470"/>
+    <line x1="575" y1="20" x2="575" y2="470"/>
+    <line x1="630" y1="20" x2="630" y2="470"/>
+    <!-- Horizontales tous les 2000 F (1 unit) -->
+    <line x1="80" y1="441.9" x2="630" y2="441.9"/>
+    <line x1="80" y1="413.8" x2="630" y2="413.8"/>
+    <line x1="80" y1="385.6" x2="630" y2="385.6"/>
+    <line x1="80" y1="357.5" x2="630" y2="357.5"/>
+    <line x1="80" y1="329.4" x2="630" y2="329.4"/>
+    <line x1="80" y1="301.3" x2="630" y2="301.3"/>
+    <line x1="80" y1="273.1" x2="630" y2="273.1"/>
+    <line x1="80" y1="245.0" x2="630" y2="245.0"/>
+    <line x1="80" y1="216.9" x2="630" y2="216.9"/>
+    <line x1="80" y1="188.8" x2="630" y2="188.8"/>
+    <line x1="80" y1="160.6" x2="630" y2="160.6"/>
+    <line x1="80" y1="132.5" x2="630" y2="132.5"/>
+    <line x1="80" y1="104.4" x2="630" y2="104.4"/>
+    <line x1="80" y1="76.3" x2="630" y2="76.3"/>
+    <line x1="80" y1="48.1" x2="630" y2="48.1"/>
+    <line x1="80" y1="20.0" x2="630" y2="20.0"/>
+  </g>
+
+  <!-- Droite rouge : y = 450x/2000 -->
+  <line x1="80" y1="470" x2="435.6" y2="20" stroke="red" stroke-width="2"/>
+
+  <!-- Droite bleue : y = (8400+250x)/2000 -->
+  <line x1="80" y1="351.9" x2="552" y2="20" stroke="blue" stroke-width="2"/>
+
+  <!-- Axe X -->
+  <line x1="80" y1="470" x2="640" y2="470" stroke="black" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Axe Y -->
+  <line x1="80" y1="470" x2="80" y2="10" stroke="black" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Graduation X : tous les 10 km -->
+  <g font-size="11" text-anchor="middle" fill="black">
+    <line x1="135" y1="467" x2="135" y2="473" stroke="black"/>
+    <text x="135" y="484">10</text>
+    <line x1="190" y1="467" x2="190" y2="473" stroke="black"/>
+    <text x="190" y="484">20</text>
+    <line x1="245" y1="467" x2="245" y2="473" stroke="black"/>
+    <text x="245" y="484">30</text>
+    <line x1="300" y1="467" x2="300" y2="473" stroke="black"/>
+    <text x="300" y="484">40</text>
+    <line x1="355" y1="467" x2="355" y2="473" stroke="black"/>
+    <text x="355" y="484">50</text>
+    <line x1="410" y1="467" x2="410" y2="473" stroke="black"/>
+    <text x="410" y="484">60</text>
+    <line x1="465" y1="467" x2="465" y2="473" stroke="black"/>
+    <text x="465" y="484">70</text>
+    <line x1="520" y1="467" x2="520" y2="473" stroke="black"/>
+    <text x="520" y="484">80</text>
+    <line x1="575" y1="467" x2="575" y2="473" stroke="black"/>
+    <text x="575" y="484">90</text>
+    <line x1="630" y1="467" x2="630" y2="473" stroke="black"/>
+    <text x="630" y="484">100</text>
+  </g>
+
+  <!-- Graduation Y : tous les 2000 F -->
+  <g font-size="10" text-anchor="end" fill="black">
+    <!-- 0 F -->
+    <text x="74" y="474">0</text>
+    <!-- 2000 F : y=441.9 -->
+    <line x1="77" y1="441.9" x2="83" y2="441.9" stroke="black"/>
+    <text x="74" y="445">2 000</text>
+    <!-- 4000 -->
+    <line x1="77" y1="413.8" x2="83" y2="413.8" stroke="black"/>
+    <text x="74" y="417">4 000</text>
+    <!-- 6000 -->
+    <line x1="77" y1="385.6" x2="83" y2="385.6" stroke="black"/>
+    <text x="74" y="389">6 000</text>
+    <!-- 8000 -->
+    <line x1="77" y1="357.5" x2="83" y2="357.5" stroke="black"/>
+    <text x="74" y="361">8 000</text>
+    <!-- 10000 -->
+    <line x1="77" y1="329.4" x2="83" y2="329.4" stroke="black"/>
+    <text x="74" y="333">10 000</text>
+    <!-- 12000 -->
+    <line x1="77" y1="301.3" x2="83" y2="301.3" stroke="black"/>
+    <text x="74" y="305">12 000</text>
+    <!-- 14000 -->
+    <line x1="77" y1="273.1" x2="83" y2="273.1" stroke="black"/>
+    <text x="74" y="277">14 000</text>
+    <!-- 16000 -->
+    <line x1="77" y1="245.0" x2="83" y2="245.0" stroke="black"/>
+    <text x="74" y="249">16 000</text>
+    <!-- 18000 -->
+    <line x1="77" y1="216.9" x2="83" y2="216.9" stroke="black"/>
+    <text x="74" y="221">18 000</text>
+    <!-- 20000 -->
+    <line x1="77" y1="188.8" x2="83" y2="188.8" stroke="black"/>
+    <text x="74" y="193">20 000</text>
+    <!-- 22000 -->
+    <line x1="77" y1="160.6" x2="83" y2="160.6" stroke="black"/>
+    <text x="74" y="165">22 000</text>
+    <!-- 24000 -->
+    <line x1="77" y1="132.5" x2="83" y2="132.5" stroke="black"/>
+    <text x="74" y="137">24 000</text>
+    <!-- 26000 -->
+    <line x1="77" y1="104.4" x2="83" y2="104.4" stroke="black"/>
+    <text x="74" y="109">26 000</text>
+    <!-- 28000 -->
+    <line x1="77" y1="76.3" x2="83" y2="76.3" stroke="black"/>
+    <text x="74" y="81">28 000</text>
+    <!-- 30000 -->
+    <line x1="77" y1="48.1" x2="83" y2="48.1" stroke="black"/>
+    <text x="74" y="53">30 000</text>
+    <!-- 32000 -->
+    <line x1="77" y1="20.0" x2="83" y2="20.0" stroke="black"/>
+    <text x="74" y="25">32 000</text>
+  </g>
+
+  <!-- Légende axe X -->
+  <text x="360" y="505" text-anchor="middle" font-size="13" font-style="italic">Distance (en km)</text>
+
+  <!-- Légende axe Y -->
+  <text x="20" y="250" text-anchor="middle" font-size="13" font-style="italic"
+        transform="rotate(-90,20,250)">Prix (en F)</text>
+
+  <!-- Étiquettes sur les droites (rput*) -->
+  <!-- Rouge : vers x=45km → px=305, y_unit=0.225*45=10.125 → py=470-10.125*28.125≈185 -->
+  <rect x="283" y="172" width="44" height="20" fill="white"/>
+  <text x="305" y="186" text-anchor="middle" font-size="13" fill="red">&#8230;</text>
+
+  <!-- Bleue : vers x=82km → px=490, y_unit=4.2+0.125*82=14.45 → py=470-14.45*28.125≈63 -->
+  <rect x="468" y="50" width="44" height="20" fill="white"/>
+  <text x="490" y="64" text-anchor="middle" font-size="13" fill="blue">&#8230;</text>
+
+</svg>

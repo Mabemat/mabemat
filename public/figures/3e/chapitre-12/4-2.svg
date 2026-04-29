@@ -1,0 +1,73 @@
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" font-family="serif" font-size="13">
+  <!--
+    PSTricks : unit=0.8cm → 1 unité = 0.8cm ≈ 30px dans ce SVG
+    Mapping : px = x*80, py = 340 - y*80   (origine bas-gauche)
+
+    Points principaux (unités PSTricks → SVG) :
+      (0.5, 0.9) → (40,  268)
+      (3.5, 0.5) → (280, 300)   A
+      (7,   1)   → (560, 260)   B
+      (7,   2.5) → (560, 140)
+      (3.5, 2)   → (280, 180)
+      (3.9, 4.1) → (312,  12)
+      (0.5, 3.6) → (40,   52)
+      (0.5, 2.7) → (40,  124)
+      (4,   1.4) → (320, 228)
+      (4,   4.1) → (320,  12)
+  -->
+
+  <rect width="600" height="360" fill="white"/>
+
+  <defs>
+    <marker id="a1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#333"/>
+    </marker>
+    <marker id="a1r" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- === Arêtes pleines === -->
+  <!-- Face avant basse : (0.5,0.9)→(3.5,0.5)→(7,1)→(7,2.5)→(3.5,2)→(3.5,0.5) -->
+  <polyline points="40,268 280,300 560,260 560,140 280,180 280,300"
+            fill="none" stroke="black" stroke-width="1.5"/>
+  <!-- Arête du dessus arrière : (7,2.5)→(3.9,4.1)→(0.5,3.6)→(3.5,2) -->
+  <polyline points="560,140 312,12 40,52 280,180"
+            fill="none" stroke="black" stroke-width="1.5"/>
+  <!-- Arête verticale gauche : (0.5,0.9)→(0.5,3.6) -->
+  <line x1="40" y1="268" x2="40" y2="52" stroke="black" stroke-width="1.5"/>
+
+  <!-- === Arêtes pointillées === -->
+  <!-- (3.5,2)→(0.5,2.7) -->
+  <line x1="280" y1="180" x2="40" y2="124" stroke="black" stroke-width="1.25" stroke-dasharray="5,4"/>
+  <!-- (7,1)→(4,1.4)→(4,4.1) -->
+  <polyline points="560,260 320,228 320,12"
+            fill="none" stroke="black" stroke-width="1.25" stroke-dasharray="5,4"/>
+  <!-- (0.5,0.9)→(4,1.4) -->
+  <line x1="40" y1="268" x2="320" y2="228" stroke="black" stroke-width="1.25" stroke-dasharray="5,4"/>
+
+  <!-- === Labels === -->
+  <!-- A sous (3.5,0.5) -->
+  <text x="280" y="316" text-anchor="middle" font-size="13">A</text>
+  <!-- B sous (7,1) -->
+  <text x="560" y="276" text-anchor="middle" font-size="13">B</text>
+  <!-- x sous milieu AB : (5.25, 0.75) → (420, 280) -->
+  <text x="420" y="292" text-anchor="middle" font-size="13" font-style="italic">x</text>
+  <!-- "5 m" sous milieu (0.5,0.9)→(3.5,0.5) : milieu ≈ (2, 0.7) → (160, 284) -->
+  <text x="160" y="296" text-anchor="middle" font-size="12">5 m</text>
+  <!-- "2 m" à gauche entre y=0.9 et y=2.7 : milieu y=1.8 → py=196 -->
+  <text x="15" y="200" text-anchor="middle" font-size="12">2 m</text>
+  <!-- "1 m" à gauche entre y=2.7 et y=3.6 : milieu y=3.15 → py=89 -->
+  <text x="15" y="92" text-anchor="middle" font-size="12">1 m</text>
+
+  <!-- === Double flèches verticales à gauche === -->
+  <!-- {<->} (0.3,0.9)→(0.3,2.7) : x=0.3→24, y: 268→124 -->
+  <line x1="24" y1="268" x2="24" y2="124"
+        stroke="#333" stroke-width="1"
+        marker-start="url(#a1r)" marker-end="url(#a1)"/>
+  <!-- {<->} (0.3,3.6)→(0.3,2.7) : x=0.3→24, y: 52→124 -->
+  <line x1="24" y1="52" x2="24" y2="124"
+        stroke="#333" stroke-width="1"
+        marker-start="url(#a1r)" marker-end="url(#a1)"/>
+
+</svg>

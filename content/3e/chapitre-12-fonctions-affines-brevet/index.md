@@ -23,8 +23,7 @@ $f(x) = 450 x \text{ et } g(x) = 250 x + 8\,400$&nbsp;</li></ul>
 
 Les fonctions $f$ et $g$ sont représentées graphiquement ci-dessous.
 
-<img src="/mabemat/figures/3e/chapitre-12/1-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
-
+<img src="/mabemat/figures/3e/chapitre-12/1-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
 
 Indiquer le nom de chaque fonction représentée dans le graphique précédent.
 ---CORR---
@@ -71,23 +70,9 @@ On déduit que, pour une distance inférieure à 42&nbsp;km c'est l'entreprise A
 
 Void deux programmes de calcul :
 
-<div style="display:flex; align-items:flex-start; gap:2rem; width:auto; margin:0 auto;">
+<img src="/mabemat/figures/3e/chapitre-12/2-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
 
-    <!-- Colonne gauche -->
-    <div>
-        <strong>Programme 1 :</strong><br>
-        <img src="/mabemat/figures/3e/chapitre-12/2-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
 
-    </div>
-
-    <!-- Colonne droite -->
-    <div>
-        <strong>Programme 2 :</strong><br>
-        <img src="/mabemat/figures/3e/chapitre-12/2-2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
-
-    </div>
-
-</div>
 
 ---Q---
 Vérifier que si on choisit 5 comme nombre de départ.
@@ -157,7 +142,7 @@ Une mère et sa fille rentrent chez elles à pied en empruntant le même trajet 
 
 Le graphique ci-dessous modélise les parcours de la mère et de la fille depuis leur départ.
 
-<img src="/mabemat/figures/3e/chapitre-12/3-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+<img src="/mabemat/figures/3e/chapitre-12/3-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
 
 ---Q---
 
@@ -215,23 +200,22 @@ Les dimensions sont données sur les figures suivantes.<br>
 
 $x$ représente à la fois le diamètre de la case et la longueur AB du prisme droit.
 
-<div style="display:flex; align-items:flex-start; gap:2rem; width:auto; margin:0 auto;">
+<div style="display:flex; align-items:flex-start; gap:2rem; width:fit-content; margin:0 auto;">
 
-    <!-- Colonne gauche -->
     <div>
-        <strong>Programme 1 :</strong><br>
-        <img src="/mabemat/figures/3e/chapitre-12/4-1.svg"
+        <img src="/mabemat/figures/3e/chapitre-12/4-1.png"
              alt="figure 1"
              style="max-height:200px; max-width:100%;">
     </div>
 
-    <!-- Colonne droite -->
     <div>
-        <strong>Programme 2 :</strong><br>
-        <img src="/mabemat/figures/3e/chapitre-12/4-2.svg";alt="figure 2";style="max-height:200px; max-width:100%;">
+        <img src="/mabemat/figures/3e/chapitre-12/4-2.png"
+             alt="figure 2"
+             style="max-height:200px; max-width:100%;">
     </div>
 
 </div>
+
 ---Q---
 ---PART---
 <strong>Partie 1 :</strong>
@@ -264,12 +248,7 @@ En déduire que le volume total de la case est environ $66$&nbsp;m$^3$.
 <td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:none;border-left:none;border-right:1px solid #8B3C52">Cône
 rayon de base $r$ et de hauteur $h$</td>
 </tr>
-<tr>
-<td style="text-align:center;padding:4px 10px;border-top:none;border-bottom:none;border-left:1px solid #8B3C52;border-right:none"></td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:none"><img src="/mabemat/figures/3e/chapitre-12/4-3.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
-</td>
-<td style="text-align:left;padding:4px 10px;border-top:none;border-bottom:none;border-left:none;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-12/4-4.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
-</td>
+
 </tr>
 <tr>
 <td style="text-align:center;padding:4px 10px;border-top:none;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:none"></td>
@@ -291,7 +270,7 @@ Dans cette partie, le diamètre est exprimé en mètre, le volume en m$^3$.
 ---Q---
 Sur le graphique ci-dessous, on a représenté la fonction qui donne le volume total de la case en fonction de son diamètre $x$.<br>
     <strong>Volume de la case en fonction de</strong> $x$ :
-<img src="/mabemat/figures/3e/chapitre-12/4-5.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+<img src="/mabemat/figures/3e/chapitre-12/4-5.png" alt="figure 1" style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
 
 Par lecture graphique, donner une valeur approchée du volume d'une case de $7$ m de diamètre.<br>
 
@@ -314,6 +293,7 @@ La fonction $V$ est une fonction linéaire.
 Sur le graphique ci-dessus, tracer la représentation graphique de la fonction $V$.
 ---CORR---
 La représentation graphique de la fonction linéaire $V$ est une droite contenant l'origine.
+<img src="/mabemat/figures/3e/chapitre-12/4c-1.png" alt="figure 1" style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
 ---Q---
 Pour des raisons pratiques, la valeur maximale de $x$ est de $6$ m. Nolan souhaite choisir la construction qui lui offre le plus grand volume.<br>
 

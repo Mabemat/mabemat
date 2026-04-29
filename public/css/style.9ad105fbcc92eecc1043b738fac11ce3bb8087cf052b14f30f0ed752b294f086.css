@@ -600,7 +600,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   margin: 10px 0 8px 0; padding-left: clamp(20px, 8vw, 100px); opacity: 0.85;
   font-family: inherit; letter-spacing: normal;
 }
-.full-lesson p { font-size: 16px; line-height: 1.7; color: var(--ink-2); margin: 10px 0; }
+.full-lesson p { font-size: 14px; line-height: 1.7; color: var(--ink-2); margin: 10px 0; } .full-lesson .environment-content{font-size:14px;line-height:1.7}.full-lesson .environment-content { font-size: 14px; line-height: 1.7; }
 .full-lesson p strong { color: var(--ink); font-weight: 600; }
 
 /* ── Boîtes environnement — style exact ancien ── */
@@ -719,7 +719,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   /* ① Héritage global */
   .full-lesson                          { font-size: 82%; }
   /* ② Overrides des valeurs px explicites (×0.82) */
-  .full-lesson p                        { font-size: 13px; }   /* 16→13 */
+  .full-lesson p                        { font-size: 11px; } .full-lesson .environment-content{font-size:11px;line-height:1.7} .full-lesson .environment-content{font-size:11px}   /* 16→13 */
   .full-lesson .environment-title       { font-size: 13px; }   /* 16→13 */
   .full-lesson .remarque                { font-size: 11.5px; } /* 14→11.5 */
   .full-lesson .section-title           { font-size: 20px; }   /* 24→20 */
@@ -734,7 +734,7 @@ body { min-height: 100vh; display: flex; flex-direction: column; background: var
   /* ① Héritage global */
   .full-lesson                          { font-size: 75%; }
   /* ② Overrides des valeurs px explicites (×0.75) */
-  .full-lesson p                        { font-size: 12px; }   /* 16→12 */
+  .full-lesson p                        { font-size: 10px; } .full-lesson .environment-content{font-size:10px;line-height:1.7} .full-lesson .environment-content{font-size:10px}   /* 16→12 */
   .full-lesson .environment-title       { font-size: 12px; }   /* 16→12 */
   .full-lesson .remarque                { font-size: 10.5px; } /* 14→10.5 */
   .full-lesson .section-title           { font-size: 18px; }   /* 24→18 */
@@ -1384,7 +1384,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 }
 .br-print-link:hover { opacity: 0.7; }
 .br-print-link .dot { background: var(--accent) !important; width: 5px; height: 5px; border-radius: 999px; display: inline-block; }
-.exercices-brevet { margin-top: 48px; }
+.exercices-brevet { margin-top: 48px; font-size: clamp(10px, 0.9vw, 13px); }
 .exo-brevet { margin-bottom: 48px; }
 .exo-brevet-head {
   display: flex; align-items: flex-end; gap: 20px;
@@ -1407,7 +1407,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3);
 }
 .exo-brevet-chip .dot { width: 5px; height: 5px; border-radius: 999px; background: var(--accent); }
-.exo-intro { font-size: 16px; line-height: 1.75; color: var(--ink-2); margin-bottom: 24px; }
+.exo-intro { font-size: clamp(10px, 0.9vw, 13px); line-height: 1.75; color: var(--ink-2); margin-bottom: 24px; }
 .exo-intro .program {
   display: flex; flex-direction: column; align-items: center; gap: 4px;
   margin: 18px 0; padding: 20px;
@@ -1437,7 +1437,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   border-top: 1px solid var(--rule); margin-top: 8px;
 }
 .partie-header:first-child { border-top: none; padding-top: 6px; margin-top: 0; }
-.q-enonce { font-size: 16px; line-height: 1.75; color: var(--ink-2); }
+.q-enonce { font-size: clamp(10px, 0.9vw, 13px); line-height: 1.75; color: var(--ink-2); }
 .sub-list {
   margin-top: 16px; border-left: 2px solid var(--rule);
   padding-left: 20px; display: flex; flex-direction: column; gap: 14px;
@@ -1447,7 +1447,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   font-family: var(--font-serif); font-style: italic; font-weight: 400;
   font-size: 18px; color: var(--accent-2); line-height: 1.6;
 }
-.sub-enonce { font-size: 15px; line-height: 1.7; color: var(--ink-2); }
+.sub-enonce { font-size: clamp(10px, 0.9vw, 13px); line-height: 1.7; color: var(--ink-2); }
 .corr-btn {
   margin-top: 14px; display: flex; align-items: center; gap: 8px;
   padding: 0; border: 0; background: transparent;
@@ -1461,7 +1461,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 .corr-box {
   margin-top: 14px; padding: 18px 22px;
   border-left: 3px solid var(--accent);
-  font-size: 15px; line-height: 1.75; color: var(--ink-2); display: none;
+  font-size: clamp(10px, 0.9vw, 13px); line-height: 1.75; color: var(--ink-2); display: none;
 }
 .corr-box.open { display: block; animation: fadeUp .35s var(--ease-out) both; }
 .corr-box p { margin: 0 0 8px; }
