@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180">
+<rect width="200" height="180" fill="#FDF5F0" rx="8"/>
+<line x1="30" y1="20" x2="126" y2="20" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="30" y1="44" x2="126" y2="44" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="30" y1="68" x2="126" y2="68" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="30" y1="92" x2="126" y2="92" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="30" y1="116" x2="126" y2="116" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="30" y1="20" x2="30" y2="116" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="54" y1="20" x2="54" y2="116" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="78" y1="20" x2="78" y2="116" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="102" y1="20" x2="102" y2="116" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="126" y1="20" x2="126" y2="116" stroke="#E8E0D8" stroke-width="0.8"/>
+<rect x="79" y="21" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="79" y="45" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="31" y="69" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="55" y="69" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="79" y="69" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="31" y="93" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="55" y="93" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="79" y="93" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<rect x="103" y="93" width="22" height="22" fill="#F4C49A" opacity="0.9"/>
+<path d="M 78 20 L 102 20 L 102 68 L 126 68 L 126 116 L 30 116 L 30 68 L 78 68 Z" fill="none" stroke="#8b1f30" stroke-width="2"/>
+<text x="78" y="134" text-anchor="middle" font-family="Arial" font-size="10" fill="#6B5D62">1 cm par carreau</text>

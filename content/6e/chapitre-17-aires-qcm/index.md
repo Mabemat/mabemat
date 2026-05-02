@@ -10,7 +10,7 @@ chapter: "chapitre-17-aires"
 Quelle est l'aire de la figure ci-dessous ?
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q1.png" alt="Figure en L sur quadrillage" style="max-width:35%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q1.svg" alt="Figure en L sur quadrillage" style="max-width:35%; height:auto;">
 </div>
 
 - $9 \text{ cm}^2$
@@ -33,7 +33,7 @@ $$\mathcal{A} = 4 + 2 + 3 = \mathbf{9 \text{ cm}^2}$$
 Quelle est l'aire de la figure ci-dessous ? (Le petit carré grisé représente $1 \text{ cm}^2$.)
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q2.png" alt="Grand carré sur quadrillage avec unité" style="max-width:35%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q2.svg" alt="Grand carré sur quadrillage avec unité" style="max-width:35%; height:auto;">
 </div>
 
 - $16 \text{ cm}^2$
@@ -54,7 +54,7 @@ Attention : il ne faut pas compter les $4 \times 4 = 16$ cases du quadrillage af
 L'aire du rectangle ci-dessous est de $35 \text{ cm}^2$. Quelle est l'aire de la **zone hachurée** ?
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q3.png" alt="Rectangle avec zone hachurée et zone orange" style="max-width:35%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q3.svg" alt="Rectangle avec zone hachurée et zone orange" style="max-width:35%; height:auto;">
 </div>
 
 - $35 \text{ cm}^2$
@@ -73,7 +73,7 @@ $$\mathcal{A}_{\text{hachurée}} = 35 - 14 = \mathbf{21 \text{ cm}^2}$$
 Calculer l'aire de la Figure 1 et l'aire de la Figure 2 ci-dessous. (Le petit rectangle grisé représente $1$ u.a.)
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q4.png" alt="Deux triangles sur quadrillage" style="max-width:45%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q4.svg" alt="Deux triangles sur quadrillage" style="max-width:45%; height:auto;">
 </div>
 
 - Fig. 1 : $18$ u.a. $\ $; Fig. 2 : $28$ u.a.
@@ -145,7 +145,7 @@ $$0{,}04 \text{ dm}^2 = 0{,}04 \div 100 = \mathbf{0{,}0004 \text{ m}^2}$$
 Calcule l'aire du carré $FGHI$ ci-dessous.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q5.png" alt="Carré FGHI de côté 4 cm" style="max-width:30%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q5.svg" alt="Carré FGHI de côté 4 cm" style="max-width:30%; height:auto;">
 </div>
 
 - $4 \text{ cm}^2$
@@ -162,7 +162,7 @@ $$\mathcal{A}_{FGHI} = 4  \times 4  = \mathbf{16 \text{ cm}^2}$$
 Calcule l'aire du rectangle $JKLM$ ci-dessous.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q6.png" alt="Rectangle JKLM, 2 cm × 5 cm" style="max-width:30%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q6.svg" alt="Rectangle JKLM, 2 cm × 5 cm" style="max-width:30%; height:auto;">
 </div>
 
 - $14 \text{ cm}^2$
@@ -179,7 +179,7 @@ $$\mathcal{A}_{JKLM} = 2  \times 5  = \mathbf{10 \text{ cm}^2}$$
 Calcule l'aire du triangle rectangle $NOP$ ci-dessous.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q7.png" alt="Triangle rectangle NOP, base 3 cm, hauteur 5 cm" style="max-width:30%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/Q7.svg" alt="Triangle rectangle NOP, base 3 cm, hauteur 5 cm" style="max-width:30%; height:auto;">
 </div>
 
 - $15 \text{ cm}^2$

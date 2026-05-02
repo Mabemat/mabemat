@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 200" width="260" height="200">
+<rect width="260" height="200" fill="#FDF5F0" rx="8"/>
+<rect x="25" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="47" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="69" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="91" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="113" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="135" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="157" y="96" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="25" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="47" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="69" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="91" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="113" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="135" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<rect x="157" y="118" width="22" height="22" fill="#F4C49A" opacity="0.85"/>
+<defs><pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6"><line x1="0" y1="6" x2="6" y2="0" stroke="#758467" stroke-width="1" opacity="0.6"/></pattern></defs>
+<rect x="25" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="47" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="69" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="91" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="113" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="135" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="157" y="30" width="22" height="22" fill="url(#hatch)"/>
+<rect x="25" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="47" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="69" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="91" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="113" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="135" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="157" y="52" width="22" height="22" fill="url(#hatch)"/>
+<rect x="25" y="74" width="22" height="22" fill="url(#hatch)"/>
+<rect x="47" y="74" width="22" height="22" fill="url(#hatch)"/>
+<rect x="69" y="74" width="22" height="22" fill="url(#hatch)"/>
+<rect x="91" y="74" width="22" height="22" fill="url(#hatch)"/>
+<rect x="113" y="74" width="22" height="22" fill="url(#hatch)"/>
+<rect x="135" y="74" width="22" height="22" fill="url(#hatch)"/>
+<rect x="157" y="74" width="22" height="22" fill="url(#hatch)"/>
+<line x1="25" y1="30" x2="179" y2="30" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="25" y1="52" x2="179" y2="52" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="25" y1="74" x2="179" y2="74" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="25" y1="96" x2="179" y2="96" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="25" y1="118" x2="179" y2="118" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="25" y1="140" x2="179" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="25" y1="30" x2="25" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="47" y1="30" x2="47" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="69" y1="30" x2="69" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="91" y1="30" x2="91" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="113" y1="30" x2="113" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="135" y1="30" x2="135" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="157" y1="30" x2="157" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<line x1="179" y1="30" x2="179" y2="140" stroke="#E8E0D8" stroke-width="0.8"/>
+<rect x="25" y="30" width="154" height="110" fill="none" stroke="#8b1f30" stroke-width="2"/>
+<text x="102" y="22" text-anchor="middle" font-family="Arial" font-size="10" fill="#6B5D62">7 cm</text>
+<text x="17" y="85" text-anchor="middle" font-family="Arial" font-size="10" fill="#6B5D62" transform="rotate(-90,17,85)">5 cm</text>
+<text x="102" y="68.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#758467" font-weight="bold">Haché : 21 cm²</text>
+<text x="102" y="112.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#8b1f30" font-weight="bold">14 cm²</text>

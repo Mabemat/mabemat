@@ -146,7 +146,7 @@ $$6\ 330{,}1 \div 7$$
 ---CORR---
 On effectue la division décimale :
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-12/Q1.png" alt="Figure 1" style="max-width:20%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-12/Q1.svg" alt="Figure 1" style="max-width:20%; height:auto;">
 </div> 
 
 Le quotient exact est donc **$904{,}3$**.

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 200" width="180" height="200">
+<defs><radialGradient id="sphereGrad" cx="40%" cy="35%" r="60%"><stop offset="0%" stop-color="#FFD4A8"/><stop offset="60%" stop-color="#F4C49A" stop-opacity="0.9"/><stop offset="100%" stop-color="#8b1f30" stop-opacity="0.8"/></radialGradient></defs>
+<rect width="180" height="200" fill="#FDF5F0" rx="8"/>
+<circle cx="90" cy="100" r="70" fill="url(#sphereGrad)" stroke="#8b1f30" stroke-width="2"/>
+<ellipse cx="90" cy="100" rx="70" ry="17" fill="none" stroke="#8b1f30" stroke-width="1.5"/>
+<path d="M 20 100 A 70 17 0 0 0 160 100" fill="none" stroke="#8b1f30" stroke-width="1" stroke-dasharray="4,3"/>
+<ellipse cx="90" cy="100" rx="17" ry="70" fill="none" stroke="#8b1f30" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+<text x="90" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#6B5D62" font-weight="normal" font-style="italic">Sphère</text>
+</svg>

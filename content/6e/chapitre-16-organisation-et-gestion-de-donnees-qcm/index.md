@@ -10,7 +10,7 @@ chapter: "chapitre-16-organisation-et-gestion-de-donnees"
 Rémi a compté les vêtements dans son armoire. Les effectifs sont représentés sur le diagramme ci-dessous.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig1.png" alt="Diagramme en bâtons — vêtements" style="max-width:55%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig1.svg" alt="Diagramme en bâtons — vêtements" style="max-width:55%; height:auto;">
 </div>
 
 Combien y a-t-il de vêtements en tout ?
@@ -33,7 +33,7 @@ Il y a  18 vêtements  en tout.
 Dans le parc naturel de Secai, voici un diagramme représentant les effectifs de quelques espèces animales.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig12.png" alt="Diagramme en ligne brisée — animaux Secai" style="max-width:50%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig12.svg" alt="Diagramme en ligne brisée — animaux Secai" style="max-width:50%; height:auto;">
 </div>
 
 Quelle est l'espèce  la plus nombreuse  ?
@@ -54,7 +54,7 @@ L'espèce la plus nombreuse est  les Girafes .
 Dans le parc naturel de Cigel, voici un diagramme circulaire représentant les effectifs de quelques espèces animales.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig13.png" alt="Diagramme circulaire — animaux Cigel" style="max-width:40%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig13.svg" alt="Diagramme circulaire — animaux Cigel" style="max-width:40%; height:auto;">
 </div>
 
 L'espèce la plus nombreuse (les Zèbres) représente…
@@ -75,7 +75,7 @@ Les Zèbres représentent donc  moins de la moitié  des animaux.
 Dans le parc naturel de Barmwich, voici un diagramme en bâtons représentant les effectifs de quelques espèces animales.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig14.png" alt="Diagramme en bâtons — animaux Barmwich" style="max-width:50%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig14.svg" alt="Diagramme en bâtons — animaux Barmwich" style="max-width:50%; height:auto;">
 </div>
 
 Quelle est l'espèce  la plus nombreuse  ?

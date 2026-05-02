@@ -18,7 +18,7 @@ Pour poser $15{,}8 + 3{,}128$, il faut :
 Avec des décimaux, on aligne **les virgules** (et donc les chiffres des unités). On complète avec des zéros si nécessaire :
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-09/Q1.png" alt="Figure 1" style="max-width:20%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-09/Q1.svg" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 
 
@@ -38,7 +38,7 @@ Calcule : $504{,}6 + 169{,}8$
 On additionne colonne par colonne :
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-09/Q2.png" alt="Figure 1" style="max-width:20%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-09/Q2.svg" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 {{< /qcm >}}
 
@@ -57,7 +57,7 @@ On aligne les virgules :
 
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-09/Q3.png" alt="Figure 1" style="max-width:20%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-09/Q3.svg" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 {{< /qcm >}}
 
@@ -180,7 +180,7 @@ Le produit exact est :
 
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-09/Q4.png" alt="Figure 1" style="max-width:20%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-09/Q4.svg" alt="Figure 1" style="max-width:20%; height:auto;">
 </div>
 {{< /qcm >}}
 
