@@ -1015,7 +1015,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 }
 .result .score .sep {
   font-family: var(--font-mono); font-style: normal;
-  font-size: 28px; color: var(--ink-3); align-self: center;
+  font-size: clamp(60px, 11vw, 120px); color: var(--ink-3); align-self: center;
 }
 .result h2 {
   font-family: var(--font-serif); font-weight: 300;
