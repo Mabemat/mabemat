@@ -8,7 +8,7 @@ has_cours: true
 has_exercices: false
 has_qcm: false
 has_brevet: true
-has_brevetImpr : false
+has_brevetImpr : true
 competences:
   - "Reconnaître et décrire des solides"
   - "Calculer des volumes"
