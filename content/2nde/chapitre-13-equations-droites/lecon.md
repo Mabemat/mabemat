@@ -63,13 +63,15 @@ L'ensemble des points $M(x;y)$ tels que $2x-3y+1=0$ est une droite $d$ de vecteu
 <h2 class="subsection-title">13.2 Équation réduite d'une droite</h2>
 
 <h3 class="subsubsection-title">13.2.1 Rappels</h3>
-
-<div style="display:inline-block; vertical-align:middle; width:calc(65% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 Soit $d$ une droite d'équation réduite $y=mx+p$. <br>
 Soit $A(x_A;y_A)$ et $B(x_B;y_B)$.<br>
 $m$ est le coefficient directeur et $m=\dfrac{y_B-y_A}{x_B-x_A}$.<br>
 $p$ est l'ordonnée à l'origine.
-</div><img src="/mabemat/figures/2nde/chapitre-13/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(30% - 12px); max-height:250px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-13/fig1.svg" alt="figure 1" style="flex:3 1 0; min-width:0; max-height:250px; object-fit:contain;">
+</div>
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>

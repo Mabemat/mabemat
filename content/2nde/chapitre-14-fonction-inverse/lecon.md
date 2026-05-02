@@ -138,8 +138,8 @@ L'équation $\dfrac{1}{x}=7$ a pour unique solution $x=\dfrac{1}{7}$.
 </div>
 
 <h3 class="subsubsection-title">14.2.2 Résolution d'inéquations</h3>
-
-<div class="environment propriete" style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<div class="environment propriete" style="flex:1 1 0; min-width:0;">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
 Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ admet pour ensemble de solutions :
@@ -149,7 +149,8 @@ Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ admet pour ensemble de s
 <li>$S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{a}\,;\,+\infty\right[$ si $a>0$.</li>
 </ul>
 </div>
-</div><div class="environment propriete" style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
+</div>
+<div class="environment propriete" style="flex:1 1 0; min-width:0;">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
 Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ admet pour ensemble de solutions :
@@ -160,15 +161,19 @@ Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ admet pour ensemble de s
 </ul>
 </div>
 </div>
+</div>
 
-<div style="display:inline-block; vertical-align:middle; width:calc(48% - 12px);">
-Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ a pour solution <br> $$S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{a}\,;\,+\infty\right[$$ 
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:1 1 0; min-width:0;">
+Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ a pour solution <br> $$S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{a}\,;\,+\infty\right[$$
 <div style="text-align:center;">
 <img src="/mabemat/figures/2nde/chapitre-14/fig3.svg" alt="figure 3" style="max-height:300px; max-width:100%;">
 </div>
-</div><div style="display:inline-block; vertical-align:middle; width:calc(50% - 12px);">
-Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ a pour solution $$S=\left]0\,;\,\dfrac{1}{a}\right]$$ 
+</div>
+<div style="flex:1 1 0; min-width:0;">
+Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ a pour solution $$S=\left]0\,;\,\dfrac{1}{a}\right]$$
 <div style="text-align:center;">
 <img src="/mabemat/figures/2nde/chapitre-14/fig4.svg" alt="figure 4" style="max-height:300px; max-width:100%;">
+</div>
 </div>
 </div>

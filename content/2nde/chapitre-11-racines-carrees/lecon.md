@@ -247,7 +247,8 @@ $a$ et $b$ étant deux réels quelconques de $[0;+\infty[$, la fonction racine c
 
 <h3 class="subsubsection-title">11.2.2 Équations et inéquations</h3>
 
-<div style="display:inline-block;vertical-align:middle;width:calc(72% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -264,11 +265,13 @@ Pour tout réel $a$, l'équation $\sqrt{x}=a$ admet pour ensemble de solutions :
 L'équation $\sqrt{x}=3$ a pour ensemble de solutions $S=\{9\}$.
 </div>
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-11/fig3.svg" alt="figure 3" style="display:inline-block;vertical-align:middle;width:calc(26% - 12px);max-height:200px;max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-11/fig3.svg" alt="figure 3" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 <br>
 
-<div style="display:inline-block;vertical-align:middle;width:calc(72% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -284,11 +287,13 @@ Pour tout réel $a$, l'inéquation $\sqrt{x}\geq a$ admet pour ensemble de solut
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-11/fig4.svg" alt="figure 4" style="display:inline-block;vertical-align:middle;width:calc(26% - 12px);max-height:200px;max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-11/fig4.svg" alt="figure 4" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 <br>
 
-<div style="display:inline-block;vertical-align:middle;width:calc(72% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
@@ -299,8 +304,9 @@ Pour tout réel $a$, l'inéquation $\sqrt{x}\geq a$ admet pour ensemble de solut
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-11/fig5.svg" alt="figure 5" style="display:inline-block;vertical-align:middle;width:calc(26% - 12px);max-height:200px;max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-11/fig5.svg" alt="figure 5" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 <h2 class="subsection-title">11.3 Valeur absolue et distance entre deux réels</h2>
 
 <h3 class="subsubsection-title">11.3.1 Valeur absolue d'un nombre réel</h3>

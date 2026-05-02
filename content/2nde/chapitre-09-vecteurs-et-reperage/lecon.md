@@ -3,12 +3,14 @@ title: "Leçon complète"
 ---
 
 <h2 class="subsection-title">9.1 Repère du plan</h2>
-
-<div style="display:inline-block; vertical-align:middle; width:calc(70% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 Trois points distincts deux à deux $O$, $I$ et $J$ du plan forment un repère, que l'on peut noter $(O,I,J)$.<br>
 L'origine $O$ et les unités $OI$ et $OJ$ permettent de graduer les axes $(OI)$ et $(OJ)$.<br>
 Si on pose $\overrightarrow{i}=\overrightarrow{OI}$ et $\overrightarrow{j}=\overrightarrow{OJ}$, alors ce repère se note aussi $(O,\overrightarrow{i},\overrightarrow{j})$.
-</div><img src="/mabemat/figures/2nde/chapitre-09/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(28% - 12px); max-height:300px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-09/fig1.svg" alt="figure 1" style="flex:3 1 0; min-width:0; max-height:300px; object-fit:contain;">
+</div>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -30,12 +32,15 @@ Si on pose $\overrightarrow{i}=\overrightarrow{OI}$ et $\overrightarrow{j}=\over
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(61% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:6 1 0; min-width:0;">
 Soit $M$ un point quelconque d'un repère $(O,\overrightarrow{i},\overrightarrow{j})$ et un vecteur $\overrightarrow{u}$ tel que $\overrightarrow{OM}=\overrightarrow{u}$.<br>
 Les <strong>coordonnées du vecteur</strong> $\overrightarrow{u}$ sont les coordonnées du point $M$ à savoir $(x_M,y_M)$.<br>
 On note $\overrightarrow{u}\begin{pmatrix} x_M \\ y_M \end{pmatrix}$.<br>
 On a $\overrightarrow{OM}=x_M\overrightarrow{i}+y_M\overrightarrow{j}$.
-</div><img src="/mabemat/figures/2nde/chapitre-09/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(37% - 12px); max-height:250px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-09/fig3.svg" alt="figure 3" style="flex:4 1 0; min-width:0; max-height:250px; object-fit:contain;">
+</div>
 </div>
 </div>
 
@@ -265,10 +270,13 @@ Soit un vecteur $\overrightarrow{u}\begin{pmatrix} x \\ y \end{pmatrix}$. La nor
 
 Démonstration :
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(64% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:6 1 0; min-width:0;">
 Dans le repère orthonormé $(O,\overrightarrow{i},\overrightarrow{j})$, on a $\overrightarrow{u}=x\overrightarrow{i}+y\overrightarrow{j}$. <br>Le théorème de Pythagore assure, dans le triangle de la figure que <br>$\Vert \overrightarrow{u} \Vert ^2=x^2\Vert \overrightarrow{i} \Vert^2+y^2\Vert \overrightarrow{j} \Vert^2$. <br>
 Le repère étant orthonormé, $\Vert \overrightarrow{i} \Vert^2=1=\Vert \overrightarrow{j} \Vert^2$, d'où $\Vert \overrightarrow{u} \Vert ^2=x^2+y^2$.<br> Ainsi, $x^2+y^2\geq 0$, $\Vert \overrightarrow{u} \Vert=\sqrt{x^2+y^2}$.
-</div><img src="/mabemat/figures/2nde/chapitre-09/fig9.svg" alt="figure 9" style="display:inline-block; vertical-align:middle; width:calc(34% - 12px); max-height:200px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-09/fig9.svg" alt="figure 9" style="flex:4 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 </div>
 
 <div class="environment propriete">
@@ -278,11 +286,11 @@ Soient $A$ et $B$ deux points du plan.<br>
 La distance $AB$ est égale à la norme du vecteur $\Vert \overrightarrow{AB}\Vert$. Ainsi, $$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$
 </div>
 </div>
-
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(66% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 Soient $A(3;-2)$ et $B(2;4)$. On a :
 <div class="math-display">
 $$
@@ -295,7 +303,9 @@ AB &= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2} \\
 \end{aligned}
 $$
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-09/fig10.svg" alt="figure 10" style="display:inline-block; vertical-align:middle; width:calc(32% - 12px); max-height:300px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-09/fig10.svg" alt="figure 10" style="flex:3 1 0; min-width:0; max-height:300px; object-fit:contain;">
+</div>
 </div>
 </div>
 
@@ -314,15 +324,18 @@ D'où $2x_I=x_A+x_B$ et $2y_I=y_A+y_B$. <br>
 <br>
 Finalement, on a bien $x_I=\dfrac{x_A+x_B}{2}$ et $y_I=\dfrac{y_A+y_B}{2}$.
 </div>
-</div>
+
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(67% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 Soient $A(3;-2)$ et $B(2;4)$ et $I$ le milieu de $[AB]$.<br>
 On a $x_I=\dfrac{x_A+x_B}{2}=\dfrac{3+2}{2}=\dfrac{5}{2}$ et $y_I=\dfrac{y_A+y_B}{2} =\dfrac{-2+4}{2}=1$.<br>
 Le point $I$ a donc pour coordonnées $\left(\dfrac{5}{2};1\right)$.
-</div><img src="/mabemat/figures/2nde/chapitre-09/fig11.svg" alt="figure 11" style="display:inline-block; vertical-align:middle; width:calc(31% - 12px); max-height:300px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-09/fig11.svg" alt="figure 11" style="flex:3 1 0; min-width:0; max-height:300px; object-fit:contain;">
+</div>
 </div>
 </div>

@@ -6,10 +6,13 @@ title: "Leçon complète"
 
 <h3 class="subsubsection-title">5.1.1 Translation de vecteur $\overrightarrow{AB}$</h3>
 
-<div style="display:inline-block; vertical-align:middle; width:calc(66% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 Sur la figure ci-contre, on a construit l'image $(F_2)$ de la figure $(F_1)$ par la translation qui transforme $A$ en $B$. <br>
 La flèche que l'on a tracée allant de $A$ jusqu'à $B$ indique la direction, le sens et la longueur du déplacement que l'on doit effectuer pour construire l'image d'un point.
-</div><img src="/mabemat/figures/2nde/chapitre-05/drapeau.png" alt="drapeau" style="display:inline-block; vertical-align:middle; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-05/drapeau.png" alt="drapeau" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -22,7 +25,8 @@ La translation qui transforme $A$ en $B$ est appelée <strong>translation de vec
 <div class="environment propriete">
 <div class="environment-title">Propriété : $ $</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(77% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:8 1 0; min-width:0;">
 Lorsque $A$ et $B$ sont distincts, le vecteur $\overrightarrow{AB}$ est caractérisé par :
 <ul>
 <li>sa <strong>direction</strong> : celle de la droite $(AB)$ ;</li>
@@ -30,7 +34,9 @@ Lorsque $A$ et $B$ sont distincts, le vecteur $\overrightarrow{AB}$ est caracté
 <li>sa <strong>longueur</strong> : la longueur $AB$.</li>
 </ul>
 Cette longueur est appelée <strong>norme</strong> du vecteur $\overrightarrow{AB}$. On la note $\left\Vert\overrightarrow{AB}\right\Vert$.
-</div><img src="/mabemat/figures/2nde/chapitre-05/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(21% - 12px); max-height:200px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-05/fig1.svg" alt="figure 1" style="flex:2 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 </div>
 </div>
 
@@ -46,8 +52,8 @@ Construire l'image $M'N'O'P'$ du trapèze $MNOP$ la translation de vecteur $\ove
 
 <h3 class="subsubsection-title">5.1.2 Égalité de deux vecteurs</h3>
 
-<div style="display:inline-block; vertical-align:middle; width:calc(69% - 12px);">
-
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
@@ -57,7 +63,6 @@ $D$ est l'image de $C$ par la translation de vecteur $\overrightarrow{AB}$.<br>
 On note $\overrightarrow{AB}=\overrightarrow{CD}$.
 </div>
 </div>
-
 <div class="environment propriete" style="margin-top:12px;">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -68,9 +73,9 @@ On note $\overrightarrow{AB}=\overrightarrow{CD}$.
 </ol>
 </div>
 </div>
-
-</div><img src="/mabemat/figures/2nde/chapitre-05/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(29% - 12px); max-height:200px; max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-05/fig3.svg" alt="figure 3" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain; align-self:center;">
+</div>
 <div class="remarque">
 Dans la propriété $\color{#8A9CC1}{3.}$, $ABDC$ peut être un parallélogramme aplati.<br>
 D'après la propriété $\color{#8A9CC1}{2.}$, $\overrightarrow{AI}=\overrightarrow{IB}$ si, et seulement si, $[AB]$ et $[II]$ ont le même milieu. En convenant que le milieu de $[II]$ est le point $I$, on obtient la propriété suivante.
@@ -79,10 +84,13 @@ D'après la propriété $\color{#8A9CC1}{2.}$, $\overrightarrow{AI}=\overrightar
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(66% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 Soit $A$ et $B$ deux points distincts.<br>
 Le point $I$ est le milieu de $[AB]$ si, et seulement si, $\overrightarrow{AI}=\overrightarrow{IB}$.
-</div><img src="/mabemat/figures/2nde/chapitre-05/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(32% - 12px); max-height:100px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-05/fig4.svg" alt="figure 4" style="flex:3 1 0; min-width:0; max-height:100px; object-fit:contain;">
+</div>
 </div>
 </div>
 
@@ -110,11 +118,14 @@ On le note $\overrightarrow{0}$.
 <h2 class="subsection-title">5.2 Somme de deux vecteurs</h2>
 
 <div class="environment definition">
-<div class="environment-title">Définition : $ $</div>
+<div class="environment-title">Définition : </div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(71% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 La somme de deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ est le vecteur associé à la translation résultant de l'enchaînement des translations de vecteur $\overrightarrow{u}$ et de vecteur $\overrightarrow{v}$. <br>On note ce vecteur $\overrightarrow{u}+\overrightarrow{v}$
-</div><img src="/mabemat/figures/2nde/chapitre-05/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(27% - 12px); max-height:200px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-05/fig6.svg" alt="figure 6" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 </div>
 </div>
 
@@ -222,8 +233,11 @@ Soit $\overrightarrow{u}$, $\overrightarrow{v}$ deux vecteurs.
 <div class="environment propriete">
 <div class="environment-title">Propriété : $ $</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(66% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 $I$ est le milieu du segment $[AB]$ si, et seulement si, $\overrightarrow{AI}=\dfrac{1}{2}\overrightarrow{AB}$
-</div><img src="/mabemat/figures/2nde/chapitre-05/fig11.svg" alt="figure 11" style="display:inline-block; vertical-align:middle; width:calc(32% - 12px); max-height:100px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-05/fig11.svg" alt="figure 11" style="flex:3 1 0; min-width:0; max-height:100px; object-fit:contain;">
+</div>
 </div>
 </div>

@@ -173,7 +173,8 @@ On peut dresser le tableau de variations.
 
 <h3 class="subsubsection-title">7.3.1 Résolution d'équations</h3>
 
-<div style="display:inline-block;vertical-align:middle;width:calc(74% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -185,7 +186,9 @@ Pour tout réel $a$, l'équation $x^2=a$ admet :
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-07/fig5.svg" alt="figure 5" style="display:inline-block;vertical-align:middle;width:calc(24% - 12px);max-height:200px;max-width:100%;">
+</div>
+<img src="/mabemat/figures/2nde/chapitre-07/fig5.svg" alt="figure 5" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -196,7 +199,8 @@ Pour tout réel $a$, l'équation $x^3=a$ admet une unique solution, appelée rac
 
 <h3 class="subsubsection-title">7.3.2 Résolutions d'inéquations</h3>
 
-<div style="display:inline-block;vertical-align:middle;width:calc(73% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -213,8 +217,9 @@ Pour tout réel $a$, l'inéquation $\color{pink}{x^2\geq a}$ admet pour ensemble
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-07/fig6.svg" alt="figure 6" style="display:inline-block;vertical-align:middle;width:calc(25% - 12px);max-height:200px;max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-07/fig6.svg" alt="figure 6" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 <div style="display:inline-block;vertical-align:middle;width:calc(73% - 12px);">
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -229,6 +234,8 @@ Pour tout réel $a$,
 
 <h3 class="subsubsection-title">7.3.3 Position relative des courbes $y=x$, $y=x^2$ et $y=x^3$</h3>
 
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:7 1 0; min-width:0;">
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -238,8 +245,9 @@ Pour tout réel $a$,
 </ul>
 </div>
 </div>
-</div><img src="/mabemat/figures/2nde/chapitre-07/fig7.svg" alt="figure 7" style="display:inline-block;vertical-align:middle;width:calc(25% - 12px);max-height:200px;max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-07/fig7.svg" alt="figure 7" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 Démonstration.
 <br>
 <div style="display:inline-block;vertical-align:top;width:calc(55% - 12px);">

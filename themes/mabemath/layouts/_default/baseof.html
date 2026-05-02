@@ -32,5 +32,13 @@
       }
     });
   </script>
+  <script>
+    /* Cache-busting automatique des SVG : timestamp injecté par Hugo au moment du build */
+    const BUILD_TS = '{{ now.Unix }}';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
 </body>
 </html>

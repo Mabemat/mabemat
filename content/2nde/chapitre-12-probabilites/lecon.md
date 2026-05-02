@@ -157,10 +157,10 @@ On considère $A$ et $B$ deux évènements d'un même univers $\Omega$.
 </ul>
 </div>
 </div>
-
-<div style="text-align:center;">
-<img src="/mabemat/figures/2nde/chapitre-12/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(30% - 12px); max-height:200px; max-width:100%;"><img src="/mabemat/figures/2nde/chapitre-12/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(30% - 12px); max-height:200px; max-width:100%;">
-<img src="/mabemat/figures/2nde/chapitre-12/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(30% - 12px); max-height:200px; max-width:100%;">
+<div style="display:flex; gap:12px; justify-content:center; align-items:center;">
+<img src="/mabemat/figures/2nde/chapitre-12/fig1.svg" alt="figure 1" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/2nde/chapitre-12/fig2.svg" alt="figure 2" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/2nde/chapitre-12/fig3.svg" alt="figure 3" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
 </div>
 
 <div class="environment theoreme">
@@ -210,19 +210,20 @@ Dans un lycée, sur les $150$ élèves de secondes, $48$ élèves se sont inscri
 Soit les évènements :
 <ul>
 <li>$T$ : « être adhérent au club théâtre », </li>
-<li>$F$ : « être adhérent au club photo », </li> 
+<li>$F$ : « être adhérent au club photo », </li>
 <li>$N$ : « n'être adhérent à aucun club ».</li>
 </ul>
-
 Déterminer $P(T)$ ; $P(F)$ ; $P(T\cup F)$ et en déduire $P(N)$.
-<div style="display:inline-block;vertical-align:top;width:calc(70% - 12px);">
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<div style="flex:7 1 0; min-width:0;">
 $32+24=56$ et $56-48={\color{pink}{8}}$ sont dans les deux clubs.
 $$P(T)=\dfrac{32}{150}
 \qquad \qquad P(F)=\dfrac{24}{150} \qquad \qquad P(T\cap F)= \dfrac{8}{150}$$
 Donc $P(T\cup F)=P(T)+P(F)- P(T\cap F)=\dfrac{32+24-8}{150} = \dfrac{48}{150}$ (on retrouve les $48$ inscrits en club).<br>
 Finalement, $P(N)=1-P(T\cup F)=\dfrac{102}{150}$.
-</div><img src="/mabemat/figures/2nde/chapitre-12/fig4.svg" alt="figure 4" style="display:inline-block;vertical-align:top;width:calc(28% - 12px);max-height:300px;max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/2nde/chapitre-12/fig4.svg" alt="figure 4" style="flex:3 1 0; min-width:0; max-height:300px; object-fit:contain;">
+</div>
 </div>
 </div>
 
