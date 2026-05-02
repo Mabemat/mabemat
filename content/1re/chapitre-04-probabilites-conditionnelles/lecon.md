@@ -80,8 +80,11 @@ On considère $A$ et $B$ deux événements d'un même univers $\Omega$.
 </ul>
 </div>
 </div>
-<p style="text-align:center;">
-<img src="/mabemat/figures/1re/chapitre-04/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:top; width:calc(30% - 12px); max-height:200px; max-width:100%;"><img src="/mabemat/figures/1re/chapitre-04/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:top; width:calc(30% - 12px); max-height:200px; max-width:100%;"><img src="/mabemat/figures/1re/chapitre-04/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:top; width:calc(30% - 12px); max-height:200px; max-width:100%;"></p>
+<div style="display:flex; gap:12px; justify-content:center; align-items:flex-start;">
+<img src="/mabemat/figures/1re/chapitre-04/fig1.svg" alt="figure 1" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/1re/chapitre-04/fig2.svg" alt="figure 2" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/1re/chapitre-04/fig3.svg" alt="figure 3" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 
 <div class="environment theoreme">
 <div class="environment-title">Théorème : $ $</div>

@@ -275,9 +275,12 @@ x-5 & \text{si } x\ge 5 \\
 </div>
 </div>
 
-<div style="display:inline-block; vertical-align:middle; width:calc(49% - 12px);">
+<div style="display:flex; gap:12px; align-items:center;">
+<div style="flex:1 1 0; min-width:0;">
 La représentation graphique de la fonction valeur absolue dans un repère $(O;\vec{i};\vec{j})$ d'origine $O$ est la réunion de deux demi-droites $d_1$ et $d_2$ d'origine $O$ et situées au-dessus de l'axe des abscisses.
-</div><img src="/mabemat/figures/1re/chapitre-05/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(49% - 12px); max-height:200px; max-width:100%;">
+</div>
+<img src="/mabemat/figures/1re/chapitre-05/fig1.svg" alt="figure 1" style="flex:1 1 0; min-width:0; max-height:200px; object-fit:contain;">
+</div>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>

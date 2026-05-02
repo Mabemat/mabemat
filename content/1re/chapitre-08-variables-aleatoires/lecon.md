@@ -170,7 +170,7 @@ $V(X)= (-4)^2\times \dfrac{1}{3} +2^2 \times \dfrac{1}{2}+ 3^2 \times \dfrac{1}{
 <div class="remarque">
 
 <ul>
-<li>L'espérance est la valeur qu'on peut \og espérer \fg{} obtenir en moyenne quand on répète un grand nombre de fois l'expérience (cf moyenne en statistique)</li>
+<li>L'espérance est la valeur qu'on peut "espérer" obtenir en moyenne quand on répète un grand nombre de fois l'expérience (cf moyenne en statistique)</li>
 <li>La variance, comme en statistique, caractérise la dispersion des valeurs autour de l'espérance.</li>
 </ul>
 </div>

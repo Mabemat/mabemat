@@ -26,12 +26,14 @@ Si $\vert \vert \overrightarrow{u} \vert \vert=1$, le vecteur est unitaire.
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
 $ $<br>
-<div style="display:inline-block; vertical-align:top; width:calc(67% - 12px);">
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<div style="flex:7 1 0; min-width:0;">
 Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs non nuls.<br>
 Le <strong>projeté orthogonal</strong> de $\overrightarrow{u}$ sur $\overrightarrow{v}$ est le vecteur obtenu en projetant les extrémités de $\overrightarrow{u}$ sur une droite de vecteur directeur $\overrightarrow{v}$.<br>
 Dans ce cours, on le notera souvent $\overrightarrow{u_p}$.
-</div><img src="/mabemat/figures/1re/chapitre-07/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:top; width:calc(31% - 12px); max-height:200px; max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/1re/chapitre-07/fig1.svg" alt="figure 1" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain; align-self:flex-start;">
+</div>
 </div>
 </div>
 
@@ -83,17 +85,18 @@ De même $\overrightarrow{AB}^2=\overrightarrow{AB}.\overrightarrow{AB}=AB^2$.
 <div class="environment theoreme">
 <div class="environment-title">Théorème : $ $</div>
 <div class="environment-content">
-
-<div style="display:inline-block; vertical-align:top; width:calc(62% - 12px);">
-Soient $\overrightarrow{u}$ et $\overrightarrow{v}$, on a : 
+<div style="display:flex; gap:12px; align-items:flex-start;">
+<div style="flex:6 1 0; min-width:0;">
+Soient $\overrightarrow{u}$ et $\overrightarrow{v}$, on a :
 <ul>
 <li>(Cosinus) $\overrightarrow{u}.\overrightarrow{v}=\vert \vert \overrightarrow{u} \vert \vert\times \vert \vert \overrightarrow{v} \vert \vert \times \cos\left(\overrightarrow{u};\overrightarrow{v}\right)$.</li>
 <li>(Normes) $\overrightarrow{u}.\overrightarrow{v}=\dfrac{1}{2}\left(\vert \vert \overrightarrow{u}+\overrightarrow{v} \vert \vert^2-\vert \vert \overrightarrow{u} \vert \vert^2-\vert \vert \overrightarrow{v} \vert \vert^2\right)$ ou <br>
 $\overrightarrow{u}.\overrightarrow{v}=\dfrac{1}{2}\left( \vert \vert \overrightarrow{u} \vert \vert^2+\vert \vert \overrightarrow{v} \vert \vert^2 - \vert \vert \overrightarrow{u}-\overrightarrow{v} \vert \vert^2\right)$.</li>
 <li>(Analytique) Dans un repère <strong>orthonormé</strong>, on a : <br>$\overrightarrow{u}.\overrightarrow{v}=x_{\overrightarrow{u}}x_{\overrightarrow{v}}+y_{\overrightarrow{u}}y_{\overrightarrow{v}}$.</li>
 </ul>
-</div><img src="/mabemat/figures/1re/chapitre-07/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:top; width:calc(36% - 12px); max-height:200px; max-width:100%;">
-
+</div>
+<img src="/mabemat/figures/1re/chapitre-07/fig3.svg" alt="figure 3" style="flex:4 1 0; min-width:0; max-height:200px; object-fit:contain; align-self:flex-start;">
+</div>
 </div>
 </div>
 

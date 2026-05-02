@@ -1649,5 +1649,13 @@ $$7 \times 7 = 49 \text{ cm}^2$$<p>Donc le côté du carré mesure $\mathbf{7 \t
       }
     });
   </script>
+  <script>
+     
+    const BUILD_TS = '1777723837';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
 </body>
 </html>

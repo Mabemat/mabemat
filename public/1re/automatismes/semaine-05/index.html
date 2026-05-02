@@ -1871,5 +1871,13 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
       }
     });
   </script>
+  <script>
+     
+    const BUILD_TS = '1777723837';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
 </body>
 </html>
