@@ -56,12 +56,12 @@ theme = "mabemath"
     description = "Se préparer au bac"
     has_exercices = true
 
-[params.snt]
-  name = "Python"
-  color = "#8A9CC1"
-  color2 = "#4A5D7A"
-  bg = "#FBF7EE"
-  description = "Commencer à coder"
+# [params.snt]  ← caché temporairement (pages Python en cours de préparation)
+#   name = "Python"
+#   color = "#8A9CC1"
+#   color2 = "#4A5D7A"
+#   bg = "#FBF7EE"
+#   description = "Commencer à coder"
 
 [params.logo]
   home_m = "#D36740"
@@ -80,10 +80,6 @@ theme = "mabemath"
     name = "2nde"
     url = "/2nde/"
     weight = 3
-  [[menu.main]]
-    name = "Python"
-    url = "/snt/"
-    weight = 4
   [[menu.main]]
     name = "1re"
     url = "/1re/"
