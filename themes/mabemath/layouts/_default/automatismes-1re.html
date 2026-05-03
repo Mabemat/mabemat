@@ -49,15 +49,6 @@
       <em>Devoirs</em>
     </button>
   </div>
-{{ if ne .Params.has_projection false }}
-  <button class="proj-toggle" id="projToggle" type="button" aria-pressed="false" title="Affichage projection (Échap pour quitter)">
-    <span class="check" aria-hidden="true">
-      <svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6.5 5,9 10,3"/></svg>
-    </span>
-    <span class="icon" aria-hidden="true"></span>
-    <span class="lbl-txt">Projection</span>
-  </button>
-{{ end }}
 </div>
 
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
@@ -100,63 +91,10 @@
   </div>
 </div>
 
-<div class="proj-help">
-  <span><kbd>Esc</kbd> Quitter</span>
-  <span><kbd>C</kbd> Corrections</span>
-</div>
 
 <script>
 (function () {
   var LETTERS = ['A', 'B', 'C', 'D'];
-
-  /* ── Projection (EN PREMIER, avant tout return) ── */
-  var projBtn     = document.getElementById('projToggle');
-
-  function markCorrectChoices() {
-    document.querySelectorAll('.auto1re-card').forEach(function(card) {
-      var correct = parseInt(card.dataset.correct, 10);
-      card.querySelectorAll('.auto1re-choice').forEach(function(c, i) {
-        c.classList.toggle('proj-correct', i === correct);
-      });
-    });
-  }
-
-  function setProj(on) {
-    document.body.classList.toggle('proj', on);
-    if (projBtn) projBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
-    if (on) {
-      document.body.classList.remove('show-corr');
-      document.querySelectorAll('.mode-tabs button').forEach(function(b) { b.classList.remove('active'); });
-      document.querySelectorAll('.mode-panel').forEach(function(p) { p.classList.remove('active'); });
-      var seanceBtn = document.querySelector('.mode-tabs button[data-tab="seance"]');
-      if (seanceBtn) seanceBtn.classList.add('active');
-      var seancePanel = document.getElementById('auto-panel-seance');
-      if (seancePanel) seancePanel.classList.add('active');
-      markCorrectChoices();
-    }
-    try {
-      if (window.renderMathInElement) {
-        window.renderMathInElement(document.body, {
-          delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]
-        });
-      }
-    } catch(e) {}
-  }
-
-  if (projBtn) projBtn.addEventListener('click', function() {
-    setProj(!document.body.classList.contains('proj'));
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && document.body.classList.contains('proj')) {
-      setProj(false); return;
-    }
-    if (!document.body.classList.contains('proj')) return;
-    if (e.target.matches('input, textarea')) return;
-    if (e.key === 'c' || e.key === 'C') {
-      document.body.classList.toggle('show-corr');
-    }
-  });
 
   /* ── Onglets mode ── */
   document.querySelectorAll('.mode-tabs button').forEach(function (btn) {
