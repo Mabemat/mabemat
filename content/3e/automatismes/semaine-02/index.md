@@ -128,8 +128,7 @@ Les coordonnées respectives des points sont :<br> $N({\color{#8B3C52}\boldsymbo
 Dans le triangle $ISV$, rectangle en $S$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{SIV}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 La bonne formule est : <br>
-    $\text{cosinus}(\widehat{SIV}) = 
-    \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{SIV}}{\text{longueur de l’hypoténuse }}=\dfrac{IS}{IV}$.
+    $\text{cosinus}(\widehat{SIV}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{SIV}}{\text{longueur de l’hypoténuse }}=\dfrac{IS}{IV}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

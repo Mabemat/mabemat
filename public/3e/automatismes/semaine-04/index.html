@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.022e58d60c0964a82b5f8e5757878447e993807016b49d97274e8b8d7c9418c8.css" integrity="sha256-Ai5Y1gwJZKgrX45XV4eER&#43;mTgHAWtJ2XJ06LjXyUGMg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.e4ad1528da9d425e45708489596bf262326e3ed6bc53600c380078b6ece3f9bc.css" integrity="sha256-5K0VKNqdQl5FcISJWWvyYjJuPta8U2AMOAB4tuzj&#43;bw=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -73,8 +73,6 @@ pre[style*="background-color"] {
     
     <a href="/mabemat/2nde/">2nde</a>
     
-    <a href="/mabemat/snt/">Python</a>
-    
     <a href="/mabemat/1re/">1re</a>
     
     <a href="/mabemat/liens/">Liens</a>
@@ -114,6 +112,14 @@ pre[style*="background-color"] {
 
 <div class="seance-tabs-wrap fade-up d2">
   <div class="seance-tabs" id="auto-seance-tabs" role="tablist"></div>
+
+  <button class="proj-toggle" id="projToggle" type="button" aria-pressed="false" title="Affichage projection (Échap pour quitter)">
+    <span class="check" aria-hidden="true">
+      <svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,6.5 5,9 10,3"/></svg>
+    </span>
+    <span class="icon" aria-hidden="true"></span>
+    <span class="lbl-txt">Projection</span>
+  </button>
 
 </div>
 
@@ -582,7 +588,7 @@ Dans le triangle $WXY$ rectangle en $W$,<br> le cosinus de l'angle $\widehat{WXY
 <div class="proj-help">
   <span><kbd>Esc</kbd> Quitter</span>
   <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> Séance</span>
-  <span><kbd>C</kbd> Corrections</span>
+  <span><kbd>C</kbd> Énoncés ⇄ Corrections</span>
 </div>
 
 <script>
@@ -620,6 +626,66 @@ Dans le triangle $WXY$ rectangle en $W$,<br> le cosinus de l'angle $\widehat{WXY
     } else if (e.key === 'c' || e.key === 'C') {
       document.body.classList.toggle('show-corr');
     }
+  });
+
+   
+  document.querySelectorAll('.exo').forEach(function(exo) {
+    var enonce = exo.querySelector('.exo-enonce');
+    var corr   = exo.querySelector('.exo-corr');
+    if (!enonce) return;
+
+     
+    var numEl = exo.querySelector('.exo-num');
+    var num   = numEl ? numEl.textContent.trim() : '';
+    if (num) {
+      enonce.setAttribute('data-num', num);
+      if (corr) corr.setAttribute('data-num', num);
+    }
+
+     
+    var figure     = enonce.querySelector('img, svg, div[style*="dashed"]');
+    var corrFigure = corr ? corr.querySelector('img, svg, div[style*="dashed"]') : null;
+    if (figure || corrFigure) exo.classList.add('has-figure');
+
+     
+    if (figure && !enonce.querySelector(':scope > .exo-text')) {
+      var wrap = document.createElement('div');
+      wrap.className = 'exo-text';
+      if (num) wrap.setAttribute('data-num', num);
+      var nodes = [];
+      for (var n = enonce.firstChild; n && n !== figure; n = n.nextSibling) {
+        nodes.push(n);
+      }
+      nodes.forEach(function(n) { wrap.appendChild(n); });
+      enonce.insertBefore(wrap, figure);
+    }
+
+     
+    if (corr && corrFigure && !corr.querySelector(':scope > .corr-text')) {
+      var wrapC = document.createElement('div');
+      wrapC.className = 'corr-text';
+      if (num) wrapC.setAttribute('data-num', num);
+      var nodesC = [];
+      for (var nc = corr.firstChild; nc && nc !== corrFigure; nc = nc.nextSibling) {
+        nodesC.push(nc);
+      }
+      nodesC.forEach(function(n) { wrapC.appendChild(n); });
+      corr.insertBefore(wrapC, corrFigure);
+    }
+  });
+
+   
+  document.querySelectorAll('#auto-seance-content .seance-panel').forEach(function(panel) {
+    var exos = panel.querySelectorAll('.exo');
+    var row1HasFig = (exos[0] && exos[0].classList.contains('has-figure')) ||
+                    (exos[1] && exos[1].classList.contains('has-figure'));
+    var row2HasFig = (exos[2] && exos[2].classList.contains('has-figure')) ||
+                    (exos[3] && exos[3].classList.contains('has-figure'));
+    var r1 = '1fr', r2 = '1fr';
+    if (row1HasFig && !row2HasFig) { r1 = '2fr'; r2 = '1fr'; }
+    else if (!row1HasFig && row2HasFig) { r1 = '1fr'; r2 = '2fr'; }
+    panel.style.setProperty('--row1', r1);
+    panel.style.setProperty('--row2', r2);
   });
 
    
@@ -671,7 +737,7 @@ Dans le triangle $WXY$ rectangle en $W$,<br> le cosinus de l'angle $\widehat{WXY
   </script>
   <script>
      
-    const BUILD_TS = '1777723837';
+    const BUILD_TS = '1777815183';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

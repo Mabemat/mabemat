@@ -119,8 +119,7 @@ Voilà ci-dessous un schéma qui pourrait convenir à la situation.<br><img src=
 Dans le triangle $MLJ$, rectangle en $L$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{LMJ}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 La bonne formule est : <br>
-    $\text{cosinus}(\widehat{LMJ}) = 
-    \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{LMJ}}{\text{longueur de l’hypoténuse }}=\dfrac{ML}{MJ}$.
+    $\text{cosinus}(\widehat{LMJ}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{LMJ}}{\text{longueur de l’hypoténuse }}=\dfrac{ML}{MJ}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

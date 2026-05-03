@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}MaBémath{{ else }}{{ .Title }} — MaBémath{{ end }}</title>
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "favicon.svg" | relURL }}">
+<meta name="description" content="{{ .Site.Params.description }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+{{- $tokens := resources.Get "css/tokens.css" | resources.Fingerprint "sha256" -}}
+{{- $style  := resources.Get "css/style.css"  | resources.Fingerprint "sha256" -}}
+{{- $lecon  := resources.Get "css/lecon.css"  | resources.Fingerprint "sha256" -}}
+<link rel="stylesheet" href="{{ $tokens.RelPermalink }}" integrity="{{ $tokens.Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ $style.RelPermalink  }}" integrity="{{ $style.Data.Integrity  }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ $lecon.RelPermalink  }}" integrity="{{ $lecon.Data.Integrity  }}" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        hiddenPanels.push(p);
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        d.dataset.katexHide = '1';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+      }
+    });
+  "></script>
+
+<style>
+/* Numéros de ligne : fond supprimé + ligne verticale fine */
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>

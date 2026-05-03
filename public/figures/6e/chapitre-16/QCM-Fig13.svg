@@ -1,19 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" width="280" height="240">
-<text x="140.0" y="20" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8b1f30" font-weight="bold">Parc de Cigel — espèces animales</text>
-<path d="M 120 125 L 120.00 40.00 A 85 85 0 0 1 169.96 193.77 Z" fill="#D36740" stroke="white" stroke-width="2"/>
-<text x="172.54587252530723" y="107.92681106078416" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white" font-weight="bold">40%</text>
-<path d="M 120 125 L 169.96 193.77 A 85 85 0 0 1 51.23 174.96 Z" fill="#758467" stroke="white" stroke-width="2"/>
-<text x="111.35699580652725" y="179.56978081788137" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white" font-weight="bold">25%</text>
-<path d="M 120 125 L 51.23 174.96 A 85 85 0 0 1 51.23 75.04 Z" fill="#C5607A" stroke="white" stroke-width="2"/>
-<text x="64.75" y="125.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white" font-weight="bold">20%</text>
-<path d="M 120 125 L 51.23 75.04 A 85 85 0 0 1 120.00 40.00 Z" fill="#4A5D7A" stroke="white" stroke-width="2"/>
-<text x="94.91702488939004" y="75.77188953859269" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white" font-weight="bold">15%</text>
-<rect x="210" y="60" width="12" height="12" fill="#D36740" rx="2"/>
-<text x="226" y="70" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#2D2226" font-weight="normal">Zèbres</text>
-<rect x="210" y="88" width="12" height="12" fill="#758467" rx="2"/>
-<text x="226" y="98" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#2D2226" font-weight="normal">Lions</text>
-<rect x="210" y="116" width="12" height="12" fill="#C5607A" rx="2"/>
-<text x="226" y="126" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#2D2226" font-weight="normal">Éléphants</text>
-<rect x="210" y="144" width="12" height="12" fill="#4A5D7A" rx="2"/>
-<text x="226" y="154" text-anchor="start" font-family="Arial,sans-serif" font-size="9" fill="#2D2226" font-weight="normal">Antilopes</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 280" width="380" height="280">
+<defs>
+<pattern id="p_white" patternUnits="userSpaceOnUse" width="1" height="1"><rect width="1" height="1" fill="white"/></pattern>
+<pattern id="p_p1dot" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><circle cx="4" cy="4" r="2" fill="#D36740"/></pattern>
+<pattern id="p_p4hatch" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><line x1="0" y1="2" x2="8" y2="2" stroke="#758467" stroke-width="2"/><line x1="0" y1="6" x2="8" y2="6" stroke="#758467" stroke-width="2"/></pattern>
+<pattern id="p_p2dot" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><circle cx="4" cy="4" r="2" fill="#C5607A"/></pattern>
+</defs>
+<path d="M 140 145 L 140.00 35.00 A 110 110 0 0 1 249.18 158.41 Z" fill="url(#p_white)" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M 140 145 L 249.18 158.41 A 110 110 0 0 1 59.55 220.02 Z" fill="url(#p_p1dot)" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M 140 145 L 59.55 220.02 A 110 110 0 0 1 32.02 124.01 Z" fill="url(#p_p4hatch)" stroke="#1a1a1a" stroke-width="2"/>
+<path d="M 140 145 L 32.02 124.01 A 110 110 0 0 1 140.00 35.00 Z" fill="url(#p_p2dot)" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="265" y="80" width="20" height="20" fill="url(#p_white)" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="293" y="95" text-anchor="start" font-family="Arial,sans-serif" font-size="14" fill="#1a1a1a">Lycaons</text>
+<rect x="265" y="118" width="20" height="20" fill="url(#p_p1dot)" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="293" y="133" text-anchor="start" font-family="Arial,sans-serif" font-size="14" fill="#1a1a1a">Zèbres</text>
+<rect x="265" y="156" width="20" height="20" fill="url(#p_p4hatch)" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="293" y="171" text-anchor="start" font-family="Arial,sans-serif" font-size="14" fill="#1a1a1a">Guépards</text>
+<rect x="265" y="194" width="20" height="20" fill="url(#p_p2dot)" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="293" y="209" text-anchor="start" font-family="Arial,sans-serif" font-size="14" fill="#1a1a1a">Servals</text>
 </svg>

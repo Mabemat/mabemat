@@ -135,8 +135,7 @@ Cône de révolution
 Dans le triangle $SBY$, rectangle en $B$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{BSY}$ ?<br><img src="3autog13_08.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 La bonne formule est : <br>
-    $\text{cosinus}(\widehat{BSY}) = 
-    \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{BSY}}{\text{longueur de l’hypoténuse }}=\dfrac{SB}{SY}$.
+    $\text{cosinus}(\widehat{BSY}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{BSY}}{\text{longueur de l’hypoténuse }}=\dfrac{SB}{SY}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

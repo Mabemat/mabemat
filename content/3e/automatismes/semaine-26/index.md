@@ -108,8 +108,7 @@ $8 \times 7{,}5 = {\color{#8B3C52}\boldsymbol{60}}$ cm.
 Dans le triangle $SNZ$, rectangle en $N$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{NSZ}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 La bonne formule est : <br>
-    $\text{cosinus}(\widehat{NSZ}) = 
-    \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{NSZ}}{\text{longueur de l’hypoténuse }}=\dfrac{SN}{SZ}$.
+    $\text{cosinus}(\widehat{NSZ}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{NSZ}}{\text{longueur de l’hypoténuse }}=\dfrac{SN}{SZ}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

@@ -61,7 +61,7 @@
 <div class="proj-help">
   <span><kbd>Esc</kbd> Quitter</span>
   <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> Séance</span>
-  <span><kbd>C</kbd> Corrections</span>
+  <span><kbd>C</kbd> Énoncés ⇄ Corrections</span>
 </div>
 
 <script>
@@ -73,13 +73,9 @@
     document.body.classList.toggle('proj', on);
     if (projBtn) projBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
     if (on) document.body.classList.remove('show-corr');
-    try {
-      if (window.renderMathInElement) {
-        window.renderMathInElement(document.body, {
-          delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]
-        });
-      }
-    } catch(e) {}
+    /* KaTeX déjà rendu au chargement via le trick visibility:hidden dans head.html.
+       Un second appel ici rendrait les formules avec des métriques incorrectes
+       (éléments display:none en mode proj → \widehat, \cancel mal positionnés). */
   }
 
   if (projBtn) projBtn.addEventListener('click', function() {
@@ -99,6 +95,66 @@
     } else if (e.key === 'c' || e.key === 'C') {
       document.body.classList.toggle('show-corr');
     }
+  });
+
+  /* ── Détection figures + data-num + hauteurs de rangée ── */
+  document.querySelectorAll('.exo').forEach(function(exo) {
+    var enonce = exo.querySelector('.exo-enonce');
+    var corr   = exo.querySelector('.exo-corr');
+    if (!enonce) return;
+
+    /* Injecte data-num depuis l'en-tête */
+    var numEl = exo.querySelector('.exo-num');
+    var num   = numEl ? numEl.textContent.trim() : '';
+    if (num) {
+      enonce.setAttribute('data-num', num);
+      if (corr) corr.setAttribute('data-num', num);
+    }
+
+    /* Détecte une figure dans l'énoncé ou la correction */
+    var figure     = enonce.querySelector('img, svg, div[style*="dashed"]');
+    var corrFigure = corr ? corr.querySelector('img, svg, div[style*="dashed"]') : null;
+    if (figure || corrFigure) exo.classList.add('has-figure');
+
+    /* Enveloppe le texte d'énoncé dans .exo-text si figure présente */
+    if (figure && !enonce.querySelector(':scope > .exo-text')) {
+      var wrap = document.createElement('div');
+      wrap.className = 'exo-text';
+      if (num) wrap.setAttribute('data-num', num);
+      var nodes = [];
+      for (var n = enonce.firstChild; n && n !== figure; n = n.nextSibling) {
+        nodes.push(n);
+      }
+      nodes.forEach(function(n) { wrap.appendChild(n); });
+      enonce.insertBefore(wrap, figure);
+    }
+
+    /* Enveloppe le texte de correction dans .corr-text si figure présente */
+    if (corr && corrFigure && !corr.querySelector(':scope > .corr-text')) {
+      var wrapC = document.createElement('div');
+      wrapC.className = 'corr-text';
+      if (num) wrapC.setAttribute('data-num', num);
+      var nodesC = [];
+      for (var nc = corr.firstChild; nc && nc !== corrFigure; nc = nc.nextSibling) {
+        nodesC.push(nc);
+      }
+      nodesC.forEach(function(n) { wrapC.appendChild(n); });
+      corr.insertBefore(wrapC, corrFigure);
+    }
+  });
+
+  /* Calcule les hauteurs --row1 / --row2 pour chaque panneau */
+  document.querySelectorAll('#auto-seance-content .seance-panel').forEach(function(panel) {
+    var exos = panel.querySelectorAll('.exo');
+    var row1HasFig = (exos[0] && exos[0].classList.contains('has-figure')) ||
+                    (exos[1] && exos[1].classList.contains('has-figure'));
+    var row2HasFig = (exos[2] && exos[2].classList.contains('has-figure')) ||
+                    (exos[3] && exos[3].classList.contains('has-figure'));
+    var r1 = '1fr', r2 = '1fr';
+    if (row1HasFig && !row2HasFig) { r1 = '2fr'; r2 = '1fr'; }
+    else if (!row1HasFig && row2HasFig) { r1 = '1fr'; r2 = '2fr'; }
+    panel.style.setProperty('--row1', r1);
+    panel.style.setProperty('--row2', r2);
   });
 
   /* ── Onglets séance ── */

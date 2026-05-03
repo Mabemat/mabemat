@@ -1,36 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 240" width="340" height="240">
-<text x="170.0" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8b1f30" font-weight="bold">Parc de Barmwich — espèces animales</text>
-<line x1="45" y1="36" x2="45" y2="180" stroke="#6B5D62" stroke-width="1.5"/>
-<line x1="45" y1="180" x2="320" y2="180" stroke="#6B5D62" stroke-width="1.5"/>
-<line x1="41" y1="180.0" x2="45" y2="180.0" stroke="#6B5D62" stroke-width="1"/>
-<line x1="45" y1="180.0" x2="320" y2="180.0" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="39" y="184.0" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal">0</text>
-<line x1="41" y1="152.57142857142858" x2="45" y2="152.57142857142858" stroke="#6B5D62" stroke-width="1"/>
-<line x1="45" y1="152.57142857142858" x2="320" y2="152.57142857142858" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="39" y="156.57142857142858" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal">8</text>
-<line x1="41" y1="125.14285714285714" x2="45" y2="125.14285714285714" stroke="#6B5D62" stroke-width="1"/>
-<line x1="45" y1="125.14285714285714" x2="320" y2="125.14285714285714" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="39" y="129.14285714285714" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal">16</text>
-<line x1="41" y1="97.71428571428572" x2="45" y2="97.71428571428572" stroke="#6B5D62" stroke-width="1"/>
-<line x1="45" y1="97.71428571428572" x2="320" y2="97.71428571428572" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="39" y="101.71428571428572" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal">24</text>
-<line x1="41" y1="70.28571428571429" x2="45" y2="70.28571428571429" stroke="#6B5D62" stroke-width="1"/>
-<line x1="45" y1="70.28571428571429" x2="320" y2="70.28571428571429" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="39" y="74.28571428571429" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal">32</text>
-<line x1="41" y1="42.85714285714286" x2="45" y2="42.85714285714286" stroke="#6B5D62" stroke-width="1"/>
-<line x1="45" y1="42.85714285714286" x2="320" y2="42.85714285714286" stroke="#E8E0D8" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="39" y="46.85714285714286" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal">40</text>
-<text x="12" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" transform="rotate(-90, 12, 108)">Effectif</text>
-<rect x="62.2" y="49.7" width="34.4" height="130.3" fill="#D36740" rx="2" opacity="0.85"/>
-<text x="79.375" y="46.71428571428572" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8b1f30" font-weight="bold">38</text>
-<text x="79.375" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2D2226" font-weight="normal">Lycaons</text>
-<rect x="130.9" y="101.1" width="34.4" height="78.9" fill="#D36740" rx="2" opacity="0.85"/>
-<text x="148.125" y="98.14285714285714" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8b1f30" font-weight="bold">23</text>
-<text x="148.125" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2D2226" font-weight="normal">Girafes</text>
-<rect x="199.7" y="128.6" width="34.4" height="51.4" fill="#D36740" rx="2" opacity="0.85"/>
-<text x="216.875" y="125.57142857142856" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8b1f30" font-weight="bold">15</text>
-<text x="216.875" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2D2226" font-weight="normal">Hyènes</text>
-<rect x="268.4" y="149.1" width="34.4" height="30.9" fill="#D36740" rx="2" opacity="0.85"/>
-<text x="285.625" y="146.14285714285714" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8b1f30" font-weight="bold">9</text>
-<text x="285.625" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#2D2226" font-weight="normal">Servals</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" width="310" height="310">
+<defs>
+<pattern id="b_p1" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><line x1="0" y1="8" x2="8" y2="0" stroke="#D36740" stroke-width="2"/></pattern>
+<pattern id="b_p4" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><line x1="0" y1="8" x2="8" y2="0" stroke="#758467" stroke-width="2"/></pattern>
+<pattern id="b_p2" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><line x1="0" y1="8" x2="8" y2="0" stroke="#C5607A" stroke-width="2"/></pattern>
+<pattern id="b_p3" patternUnits="userSpaceOnUse" width="8" height="8"><rect width="8" height="8" fill="white"/><line x1="0" y1="8" x2="8" y2="0" stroke="#8b1f30" stroke-width="2"/></pattern>
+</defs>
+<text x="12" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#1a1a1a" transform="rotate(-90,12,130)">Nombre d'individus</text>
+<line x1="50" y1="180.0" x2="290" y2="180.0" stroke="#888888" stroke-width="0.8" stroke-dasharray="5,4"/>
+<line x1="46" y1="180.0" x2="50" y2="180.0" stroke="#333333" stroke-width="1"/>
+<text x="43" y="184.0" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a">10</text>
+<line x1="50" y1="130.0" x2="290" y2="130.0" stroke="#888888" stroke-width="0.8" stroke-dasharray="5,4"/>
+<line x1="46" y1="130.0" x2="50" y2="130.0" stroke="#333333" stroke-width="1"/>
+<text x="43" y="134.0" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a">20</text>
+<line x1="50" y1="80.0" x2="290" y2="80.0" stroke="#888888" stroke-width="0.8" stroke-dasharray="5,4"/>
+<line x1="46" y1="80.0" x2="50" y2="80.0" stroke="#333333" stroke-width="1"/>
+<text x="43" y="84.0" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a">30</text>
+<line x1="50" y1="30.0" x2="290" y2="30.0" stroke="#888888" stroke-width="0.8" stroke-dasharray="5,4"/>
+<line x1="46" y1="30.0" x2="50" y2="30.0" stroke="#333333" stroke-width="1"/>
+<text x="43" y="34.0" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a">40</text>
+<line x1="50" y1="30" x2="50" y2="230" stroke="#333333" stroke-width="2"/>
+<line x1="50" y1="230" x2="290" y2="230" stroke="#333333" stroke-width="2"/>
+<rect x="63.5" y="40.0" width="33.0" height="190.0" fill="url(#b_p1)" stroke="#D36740" stroke-width="1.2"/>
+<text x="80.0" y="236" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" transform="rotate(-45,80.0,236)">Lycaons</text>
+<rect x="123.5" y="115.0" width="33.0" height="115.0" fill="url(#b_p4)" stroke="#758467" stroke-width="1.2"/>
+<text x="140.0" y="236" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" transform="rotate(-45,140.0,236)">Girafes</text>
+<rect x="183.5" y="185.0" width="33.0" height="45.0" fill="url(#b_p2)" stroke="#C5607A" stroke-width="1.2"/>
+<text x="200.0" y="236" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" transform="rotate(-45,200.0,236)">Servals</text>
+<rect x="243.5" y="155.0" width="33.0" height="75.0" fill="url(#b_p3)" stroke="#8b1f30" stroke-width="1.2"/>
+<text x="260.0" y="236" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" transform="rotate(-45,260.0,236)">Hyènes</text>
 </svg>

@@ -1,4 +1,5 @@
 {{ $num := .Get "num" }}
+{{ $large := .Get "large" }}
 {{ $raw := .Inner }}
 
 {{ $parts := split $raw "---Q---" }}
@@ -12,7 +13,7 @@
 {{ $numFmt := "??" }}
 {{ if $numClean }}{{ $numFmt = printf "%02d" (int $numClean) }}{{ end }}
 
-<article class="exo">
+<article class="exo{{ if eq $large `true` }} has-figure{{ end }}">
   <div class="exo-head">
     <div class="exo-num">{{ $numFmt }}</div>
     <div class="exo-label">Question</div>

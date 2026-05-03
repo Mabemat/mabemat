@@ -128,8 +128,7 @@ $ 30\,\text{m}^2 =  30\times100\,\text{dm}^2 = 3\,000\,\text{dm}^2$<br>$$\def\ar
 Dans le triangle $LUZ$, rectangle en $U$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{ULZ}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 La bonne formule est : <br>
-    $\text{cosinus}(\widehat{ULZ}) = 
-    \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{ULZ}}{\text{longueur de l’hypoténuse }}=\dfrac{LU}{LZ}$.
+    $\text{cosinus}(\widehat{ULZ}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{ULZ}}{\text{longueur de l’hypoténuse }}=\dfrac{LU}{LZ}$.
 {{< /auto3-exo >}}
 {{< /auto3-seance >}}
 

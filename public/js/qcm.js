@@ -174,7 +174,7 @@
 
       var hint = document.createElement('div');
       hint.className = 'hint';
-      hint.textContent = locked ? '' : 'choisis une réponse pour continuer';
+      hint.textContent = locked ? '' : 'Choisis une réponse pour continuer';
 
       var nextBtn = document.createElement('button');
       if (locked) {
