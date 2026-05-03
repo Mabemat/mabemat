@@ -62,7 +62,7 @@
     {{ end }}
 
     {{/* Python / SNT */}}
-    {{ with .Site.Params.snt }}
+    {{ with .Site.Params.snt }}{{ if not .hidden }}
     <a class="lvl-card fade-up" style="--c1:{{ .color }};" href="{{ "snt" | relURL }}/">
       <div class="lvl-arrow">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -75,7 +75,7 @@
         <div class="lvl-meta">{{ .description }}</div>
       </div>
     </a>
-    {{ end }}
+    {{ end }}{{ end }}
 
     {{/* 1re */}}
     {{ $val1re := index .Site.Params.levels "1re" }}

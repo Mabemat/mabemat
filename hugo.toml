@@ -56,12 +56,13 @@ theme = "mabemath"
     description = "Se préparer au bac"
     has_exercices = true
 
-# [params.snt]  ← caché temporairement (pages Python en cours de préparation)
-#   name = "Python"
-#   color = "#8A9CC1"
-#   color2 = "#4A5D7A"
-#   bg = "#FBF7EE"
-#   description = "Commencer à coder"
+[params.snt]  # hidden = true → carte masquée, pages non publiées
+  hidden = true
+  name = "Python"
+  color = "#8A9CC1"
+  color2 = "#4A5D7A"
+  bg = "#FBF7EE"
+  description = "Commencer à coder"
 
 [params.logo]
   home_m = "#D36740"
