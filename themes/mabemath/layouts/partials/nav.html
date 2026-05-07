@@ -4,7 +4,8 @@
   </a>
   <nav>
     {{ range .Site.Menus.main }}
-    <a href="{{ .URL | relURL }}"{{ if eq $.Section .Name }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ $active := or (eq $.Section .Name) (strings.HasPrefix $.RelPermalink (.URL | relURL)) }}
+    <a href="{{ .URL | relURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
     {{ end }}
   </nav>
 </header>

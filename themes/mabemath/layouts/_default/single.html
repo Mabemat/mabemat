@@ -33,6 +33,208 @@
   </div>
 </div>
 
+{{ else if eq .Section "snt" }}
+{{/* ════════════════════════════════
+     PAGE SÉANCE SNT / PYTHON
+     ════════════════════════════════ */}}
+{{ $capytaleURL := .Params.capytale_url | default "#" }}
+{{ $seanceNum := printf "%02d" (.Params.weight | default 0) }}
+
+{{/* ── Breadcrumb ── */}}
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  <a href="{{ "snt" | relURL }}/">Python</a>
+  <span class="sep">/</span>
+  <span>{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") }}</span>
+</div>
+
+{{/* ── Hero ── */}}
+<section class="sn-hero fade-up d1">
+  <div class="eyebrow">Python · Séance {{ $seanceNum }}</div>
+  <h1>{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") | safeHTML }}</h1>
+  {{ if .Params.description }}<p class="desc">{{ .Params.description }}</p>{{ end }}
+  <div class="meta">
+    {{ if .Params.nb_exercices }}<span><span class="dot"></span>{{ .Params.nb_exercices }} exercices</span>{{ end }}
+    {{ if .Params.nb_qcm }}<span><span class="dot"></span>QCM · {{ .Params.nb_qcm }} questions</span>{{ end }}
+    {{ if .Params.has_notebook }}<span><span class="dot"></span>Notebook Capytale</span>{{ end }}
+  </div>
+</section>
+
+{{/* ── Barre notebook ── */}}
+{{ if .Params.has_notebook }}
+<div class="sn-notebook fade-up d1">
+  <div class="ico">NB</div>
+  <div class="info">
+    <strong>Notebook de la séance</strong>
+    <span>Hébergé sur Capytale · accès avec votre identifiant ENT</span>
+  </div>
+  <a href="{{ $capytaleURL }}" class="nb-btn" target="_blank" rel="noopener">Ouvrir →</a>
+</div>
+{{ end }}
+
+{{/* ── Compétences ── */}}
+{{ if .Params.competences }}
+<section class="sn-comp fade-up d2">
+  <h3>Compétences travaillées</h3>
+  <ul>
+    {{ range .Params.competences }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{/* ── Onglets ── */}}
+{{ $corrRes := .Resources.GetMatch "correction.md" }}
+{{ $qcmPages := where .Pages "Params.layout" "qcm" }}
+{{ $hasCorr := ne $corrRes nil }}
+{{ $hasQCM := gt (len $qcmPages) 0 }}
+
+<div class="tab-bar fade-up d2" role="tablist">
+  {{ if $hasCorr }}
+  <button class="active" data-tab="exos" role="tab">Exercices{{ if .Params.nb_exercices }} <span class="count">{{ .Params.nb_exercices }}</span>{{ end }}</button>
+  {{ end }}
+  {{ if $hasQCM }}
+  <button{{ if not $hasCorr }} class="active"{{ end }} data-tab="qcm" role="tab">QCM{{ if .Params.nb_qcm }} <span class="count">{{ .Params.nb_qcm }}</span>{{ end }}</button>
+  {{ end }}
+  <button{{ if and (not $hasCorr) (not $hasQCM) }} class="active"{{ end }} data-tab="editor" role="tab">Éditeur Python</button>
+</div>
+
+{{/* ── Panneau Exercices ── */}}
+{{ with $corrRes }}
+<section id="exos" class="tab-panel active snt-seance-content fade-up d3">
+  {{ $.Page.RenderString .Content }}
+</section>
+{{ end }}
+
+{{/* ── Panneau QCM ── */}}
+{{ if $hasQCM }}
+<section id="qcm" class="tab-panel{{ if not $hasCorr }} active{{ end }}">
+  <div class="snt-qcm-intro">
+    <span class="badge">Validation immédiate</span>
+    <span>Chaque réponse est validée dès que tu cliques. La correction apparaît ensuite. Tu peux refaire le QCM en rechargeant la page.</span>
+  </div>
+  <div class="qcm-wrap" style="max-width:100%;padding:0 0 40px;">
+    {{ range $qcmPages }}
+    <div class="qcm-container">{{ .Content }}</div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Panneau Éditeur Python ── */}}
+<section id="editor" class="tab-panel{{ if and (not $hasCorr) (not $hasQCM) }} active{{ end }}">
+  <div class="snt-qcm-intro">
+    <span class="badge">Bac à sable</span>
+    <span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span>
+  </div>
+  <div class="py-editor">
+    <div class="py-editor-head">
+      <span class="dot"></span>
+      <span>Python · main.py</span>
+    </div>
+    <textarea id="pyCode" spellcheck="false" rows="8">a = 15
+b = 10
+c = a + b
+print(c)</textarea>
+    <div class="py-editor-foot">
+      <button onclick="runPython()">▸ Exécuter</button>
+    </div>
+    <div class="py-editor-out empty" id="pyOut">Sortie du programme…</div>
+  </div>
+  <p class="py-editor-note">
+    Cet éditeur utilise <strong>Pyodide</strong> (Python en WebAssembly). Le premier lancement peut prendre quelques secondes.
+  </p>
+</section>
+
+{{/* ── Navigation entre séances ── */}}
+{{ if .Parent }}
+<div class="chap-adjacent" style="margin-top:64px;">
+  <a class="adj-link prev" href="{{ .Parent.RelPermalink }}">
+    <div><div class="adj-lbl">← Toutes les séances</div></div>
+    <span></span>
+  </a>
+  {{ $siblings := where .Parent.Pages "Params.coming_soon" "ne" true }}
+  {{ $currentWeight := .Weight }}
+  {{ $next := first 1 (where $siblings "Weight" "gt" $currentWeight) }}
+  {{ range $next }}
+  <a class="adj-link next" href="{{ .RelPermalink }}">
+    <div><div class="adj-lbl">Séance suivante →</div></div>
+    <span></span>
+  </a>
+  {{ else }}<div></div>{{ end }}
+</div>
+{{ end }}
+
+<script>
+/* ── Onglets ── */
+(function() {
+  var buttons = document.querySelectorAll('.tab-bar button');
+  var panels  = document.querySelectorAll('.tab-panel');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.dataset.tab;
+      buttons.forEach(function(b) { b.classList.toggle('active', b === btn); });
+      panels.forEach(function(p) { p.classList.toggle('active', p.id === target); });
+      if (target === 'editor') {
+        var ta = document.getElementById('pyCode');
+        if (ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+      }
+    });
+  });
+
+  /* Auto-resize textarea */
+  var pyCodeEl = document.getElementById('pyCode');
+  if (pyCodeEl) {
+    function autoResize(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+    autoResize(pyCodeEl);
+    pyCodeEl.addEventListener('input', function() { autoResize(pyCodeEl); });
+  }
+})();
+
+/* ── Éditeur Pyodide ── */
+var pyodideReady = null;
+async function getPyodide() {
+  if (!pyodideReady) {
+    pyodideReady = (async () => {
+      var out = document.getElementById('pyOut');
+      out.classList.add('empty');
+      out.textContent = 'Chargement de Python…';
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js';
+      document.head.appendChild(script);
+      await new Promise(function(r) { script.onload = r; });
+      var py = await loadPyodide();
+      out.textContent = '';
+      return py;
+    })();
+  }
+  return pyodideReady;
+}
+
+async function runPython() {
+  var code = document.getElementById('pyCode').value;
+  var out  = document.getElementById('pyOut');
+  out.classList.remove('empty');
+  out.textContent = 'Exécution…';
+  try {
+    var py = await getPyodide();
+    var buf = '';
+    py.setStdout({ batched: function(s) { buf += s + '
+'; } });
+    py.setStderr({ batched: function(s) { buf += s + '
+'; } });
+    await py.runPythonAsync(code);
+    out.textContent = buf || '(Pas de sortie)';
+    if (!buf) out.classList.add('empty');
+  } catch(e) {
+    out.textContent = String(e);
+    out.classList.remove('empty');
+  }
+}
+</script>
+
 {{ else if $levelData }}
 {{/* ════════════════════════════════
      PAGE CHAPITRE

@@ -1,9 +1,12 @@
 ---
 title: "Séance 01 — Variables et affectation"
-description: "Déclarer des variables, comprendre les types et les opérations de base"
+short_title: "Variables et affectation"
+description: "Déclarer des variables, comprendre les types int/float/str, calculer et manipuler des chaînes."
 weight: 1
 has_notebook: true
 has_qcm: true
+nb_exercices: 8
+nb_qcm: 20
 capytale_url: "https://capytale.ac/notebook/..."
 competences:
   - "Comprendre ce qu'est une variable et son rôle en mémoire"

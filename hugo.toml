@@ -56,13 +56,13 @@ theme = "mabemath"
     description = "Se préparer au bac"
     has_exercices = true
 
-[params.snt]  # hidden = true → carte masquée, pages non publiées
-  hidden = true
+[params.snt]
+  hidden = false
   name = "Python"
-  color = "#8A9CC1"
-  color2 = "#4A5D7A"
+  color = "#4A5D7A"
+  color2 = "#8A9CC1"
   bg = "#FBF7EE"
-  description = "Commencer à coder"
+  description = "Apprendre les bases de l'algorithmique et de la programmation en Python."
 
 [params.logo]
   home_m = "#D36740"
@@ -86,6 +86,11 @@ theme = "mabemath"
     url = "/1re/"
     weight = 5
   [[menu.main]]
+  [[menu.main]]
+    name = "Python"
+    url = "/snt/"
+    weight = 5
+
     name = "Liens"
     url = "/liens/"
     weight = 6

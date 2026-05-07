@@ -16,25 +16,49 @@
   <div class="ressources-content">{{ .Content }}</div>
 
 {{ else if $isSNT }}
-  <div class="level-header" style="--lc:{{ $sntData.color }};">
-    <div class="bar" style="background:{{ $sntData.color }};"></div>
-    <div><h1>{{ $sntData.name }}</h1><p>SNT · Apprendre à coder</p></div>
-  </div>
-  {{ if .Pages }}
-  <div class="snt-grid">
-    {{ range (where .Pages "Params.layout" "ne" "qcm").ByWeight }}
-    <div class="snt-card">
-      <h3>{{ .Title }}</h3>
-      {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
-      <div class="acts">
-        {{ if .Params.has_notebook }}<a class="btn" href="{{ .RelPermalink }}" style="color:{{ $sntData.color }};border-color:{{ $sntData.color }};">📓 Notebook</a>{{ end }}
-        {{ if .Params.has_qcm }}<a class="btn btn-qcm" href="{{ .RelPermalink }}qcm/" style="color:{{ $sntData.color2 }};border-color:{{ $sntData.color2 }};">🎯 QCM</a>{{ end }}
-      </div>
+
+  {{/* ── Hero SNT ── */}}
+  <section class="snt-hero fade-up">
+    <div class="eyebrow">Python · Sciences numériques</div>
+    <h1>Programmer en <em>Python</em></h1>
+    <p class="desc">{{ $sntData.description }}</p>
+    <div class="meta">
+      {{ $published := where .Pages "Params.coming_soon" "ne" true }}
+      <span><span class="dot">●</span> {{ len .Pages }} séances au programme</span>
+      <span><span class="dot">●</span> Notebook + QCM + correction</span>
+      <span><span class="dot">●</span> Capytale</span>
     </div>
+  </section>
+
+  {{/* ── Grille des séances ── */}}
+  {{ if .Pages }}
+  <section class="snt-grid fade-up d1">
+    {{ range .Pages.ByWeight }}
+    {{ if .Params.coming_soon }}
+    <div class="snt-card locked">
+      <div class="lock-badge">À venir</div>
+      <div class="num">{{ printf "%02d" .Params.weight }}</div>
+      <div class="titre">{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") }}</div>
+      <div class="sous">{{ .Params.description }}</div>
+      <div class="tags"><span>Bientôt disponible</span></div>
+    </div>
+    {{ else }}
+    <a class="snt-card" href="{{ .RelPermalink }}">
+      <div class="num">{{ printf "%02d" .Params.weight }}</div>
+      <div class="titre">{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") }}</div>
+      <div class="sous">{{ .Params.description }}</div>
+      <div class="tags">
+        {{ if .Params.nb_exercices }}<span>{{ .Params.nb_exercices }} exercices</span>{{ end }}
+        {{ if .Params.has_qcm }}<span>QCM · {{ .Params.nb_qcm }} questions</span>{{ end }}
+        {{ if .Params.has_notebook }}<span>Notebook Capytale</span>{{ end }}
+      </div>
+      <div class="arrow">→</div>
+    </a>
     {{ end }}
-  </div>
+    {{ end }}
+  </section>
   {{ else }}
-  <div class="empty-state"><p>Les notebooks SNT seront disponibles prochainement.</p></div>
+  <div class="empty-state"><p>Les séances SNT seront disponibles prochainement.</p></div>
   {{ end }}
 
 {{ else if $levelData }}
