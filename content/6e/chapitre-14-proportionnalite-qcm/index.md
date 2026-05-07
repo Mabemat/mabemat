@@ -7,7 +7,7 @@ chapter: "chapitre-14-proportionnalite"
 
 {{< qcm correct="2" >}}
 ---Q---
-Une pizza coûte **12 €** plus **1 € par ingrédient** supplémentaire. Quelles sont les deux **grandeurs** en jeu dans cette situation ?
+Une pizza coûte 12 € plus 1 € par ingrédient supplémentaire. Quelles sont les deux grandeurs en jeu dans cette situation ?
 
 - Ingrédients et euros
 - Nombre de pizzas et prix
@@ -15,12 +15,12 @@ Une pizza coûte **12 €** plus **1 € par ingrédient** supplémentaire. Quel
 - Aucune réponse
 
 ---CORR---
-Attention, « ingrédients » et « € » sont des **unités**, pas des grandeurs. Les grandeurs sont **« nombre d'ingrédients »** et **« prix »**.
+Attention, « ingrédients » et « € » sont des unités, pas des grandeurs. Les grandeurs sont « nombre d'ingrédients » et « prix ».
 {{< /qcm >}}
 
 {{< qcm correct="1" >}}
 ---Q---
-Si Sophie fait **22 pompes** par jour, son nombre total de pompes est-il **proportionnel** au nombre de jours ?
+Si Sophie fait 22 pompes par jour, son nombre total de pompes est-il proportionnel au nombre de jours ?
 
 - Non, car elle fait toujours le même nombre de pompes chaque jour
 - Oui, le coefficient de proportionnalité est $22$
@@ -28,12 +28,12 @@ Si Sophie fait **22 pompes** par jour, son nombre total de pompes est-il **propo
 - Aucune réponse
 
 ---CORR---
-L'affirmation est **vraie**. Le nombre de pompes effectué par Sophie est proportionnel au nombre de jours car, par exemple, si le nombre de jours double, le total de pompes double aussi.
+L'affirmation est vraie. Le nombre de pompes effectué par Sophie est proportionnel au nombre de jours car, par exemple, si le nombre de jours double, le total de pompes double aussi.
 {{< /qcm >}}
 
 {{< qcm correct="2" >}}
 ---Q---
-Une épidémie se répand à Paris. Le nombre de malades est **multiplié par 6** tous les **6 jours**. Le nombre de malades est-il **proportionnel** au nombre de jours ?
+Une épidémie se répand à Paris. Le nombre de malades est multiplié par 6 tous les 6 jours. Le nombre de malades est-il proportionnel au nombre de jours ?
 
 - Oui, car le nombre de malades augmente régulièrement
 - Oui, le coefficient de proportionnalité est $6$
@@ -41,12 +41,12 @@ Une épidémie se répand à Paris. Le nombre de malades est **multiplié par 6*
 - Aucune réponse
 
 ---CORR---
-Admettons qu'il y ait 10 malades le 1er jour. Le 7e jour il y aura $10 \times 6 = 60$ malades. Entre le 1er jour et le 7e jour, le nombre de malades est multiplié par 6 **mais** le nombre de jours est multiplié par 7. Donc le nombre de malades **n'est pas proportionnel** au nombre de jours passés.
+Admettons qu'il y ait 10 malades le 1er jour. Le 7e jour il y aura $10 \times 6 = 60$ malades. Entre le 1er jour et le 7e jour, le nombre de malades est multiplié par 6 mais le nombre de jours est multiplié par 7. Donc le nombre de malades n'est pas proportionnel au nombre de jours passés.
 {{< /qcm >}}
 
 {{< qcm correct="1" >}}
 ---Q---
-**7 kg** de citrons coûtent **13,65 €** et **12 kg** coûtent **23,40 €**. Combien coûtent **5 kg** de ces citrons ?
+7 kg de citrons coûtent 13,65 € et 12 kg coûtent 23,40 €. Combien coûtent 5 kg de ces citrons ?
 
 - $7{,}80$ €
 - $9{,}75$ €
@@ -54,7 +54,7 @@ Admettons qu'il y ait 10 malades le 1er jour. Le 7e jour il y aura $10 \times 6 
 - Aucune réponse
 
 ---CORR---
-On reconnaît une situation de proportionnalité. On remarque que $5 = 12 - 7$ : le prix demandé correspond à la **différence** des deux masses. Le prix est donc donné par la différence des deux prix :
+On reconnaît une situation de proportionnalité. On remarque que $5 = 12 - 7$ : le prix demandé correspond à la différence des deux masses. Le prix est donc donné par la différence des deux prix :
 
 $$23{,}40 - 13{,}65 = \mathbf{9{,}75 \text{ €}}$$
 
@@ -63,7 +63,7 @@ $$23{,}40 - 13{,}65 = \mathbf{9{,}75 \text{ €}}$$
 
 {{< qcm correct="2" >}}
 ---Q---
-Une voiture roule à une vitesse constante de **100 km/h**. Quelle distance parcourt-elle en **5 h 30 min** ?
+Une voiture roule à une vitesse constante de 100 km/h. Quelle distance parcourt-elle en 5 h 30 min ?
 
 - $530$ km
 - $500$ km
@@ -71,7 +71,7 @@ Une voiture roule à une vitesse constante de **100 km/h**. Quelle distance parc
 - Aucune réponse
 
 ---CORR---
-En **5 heures**, la voiture parcourt $100 \times 5 = 500$ km. En **30 minutes** (la moitié d'une heure), elle parcourt la moitié de 100 km, soit 50 km. Au total :
+En 5 heures, la voiture parcourt $100 \times 5 = 500$ km. En 30 minutes (la moitié d'une heure), elle parcourt la moitié de 100 km, soit 50 km. Au total :
 
 $$500 + 50 = \mathbf{550 \text{ km}}$$
 
@@ -79,7 +79,7 @@ $$500 + 50 = \mathbf{550 \text{ km}}$$
 
 {{< qcm correct="2" >}}
 ---Q---
-Il faut **30 cL** de nettoyant pour **6 L** d'eau. Quel volume de nettoyant faut-il pour **13 L** d'eau ?
+Il faut 30 cL de nettoyant pour 6 L d'eau. Quel volume de nettoyant faut-il pour 13 L d'eau ?
 
 - $60$ cL
 - $39$ cL
@@ -91,7 +91,7 @@ Il faut **30 cL** de nettoyant pour **6 L** d'eau. Quel volume de nettoyant faut
 
 $$30 \div 6 = 5 \text{ cL}$$
 
-**Conclusion intermédiaire :** il faut 5 cL de nettoyant pour 1 L d'eau.
+Conclusion intermédiaire : il faut 5 cL de nettoyant pour 1 L d'eau.
 
 13 L d'eau, c'est 13 fois 1 L d'eau. Il faut donc 13 fois plus :
 
@@ -131,7 +131,7 @@ $5 \times 5 = 25$ cartons, donc on multiplie aussi le volume par 5 :
 
 $$107 \times 5 = \mathbf{535 \text{ L}}$$
 
-La bonne réponse est **535 L**, absente des options → **Aucune réponse**.
+La bonne réponse est 535 L, absente des options → Aucune réponse.
 
 {{< /qcm >}}
 
@@ -154,7 +154,7 @@ On considère la situation de proportionnalité suivante :
 </table>
 </div>
 
-Combien faut-il de cartons pour obtenir **432 kg** ?
+Combien faut-il de cartons pour obtenir 432 kg ?
 
 - $16$ cartons
 - $12$ cartons
@@ -195,7 +195,7 @@ Voici un tableau de proportionnalité sur les paquets de madeleines de Commercy 
 </table>
 </div>
 
-Combien de paquets correspondent à **32 €** ?
+Combien de paquets correspondent à 32 € ?
 
 - $8$ paquets
 - $11$ paquets
@@ -215,7 +215,7 @@ Pour info, les autres valeurs manquantes : comme $50 = 10 \times 5$, on a $10 \t
 
 {{< qcm correct="0" >}}
 ---Q---
-Sur le plan de sa maison, Joachim constate que **7 mm** sur le plan correspondent à **1,4 m** dans la réalité. Quelle est l'**échelle** de ce plan ?
+Sur le plan de sa maison, Joachim constate que 7 mm sur le plan correspondent à 1,4 m dans la réalité. Quelle est l'échelle de ce plan ?
 
 - $\dfrac{1}{200}$
 - $\dfrac{1}{20}$
@@ -246,7 +246,7 @@ En effet, $1\ 400 \div 7 = 200$. L'échelle du plan est donc $\mathbf{\dfrac{1}{
 
 {{< qcm correct="2" >}}
 ---Q---
-Le plan de la maison de la cousine de Valérie a une échelle de $\dfrac{1}{250}$. Valérie mesure sur ce plan un segment de **1,1 cm**. À quelle **distance réelle** correspond ce segment ?
+Le plan de la maison de la cousine de Valérie a une échelle de $\dfrac{1}{250}$. Valérie mesure sur ce plan un segment de 1,1 cm. À quelle distance réelle correspond ce segment ?
 
 - $27{,}5$ m
 - $0{,}044$ m
@@ -275,7 +275,7 @@ En effet, $250 \times 1{,}1 = 275$ cm. Soit en convertissant : $275 \text{ cm} =
 
 {{< qcm correct="1" >}}
 ---Q---
-L'échelle graphique d'un plan est **1 cm pour 10 m**. Un terrain de football est représenté par un rectangle de longueur **10,5 cm** et de largeur **6,8 cm**. Quelle est la **longueur réelle** du terrain ?
+L'échelle graphique d'un plan est 1 cm pour 10 m. Un terrain de football est représenté par un rectangle de longueur 10,5 cm et de largeur 6,8 cm. Quelle est la longueur réelle du terrain ?
 
 - $10{,}5$ m
 - $105$ m
