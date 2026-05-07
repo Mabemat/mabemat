@@ -68,8 +68,8 @@
     }
 
     /* Détecte une figure dans l'énoncé ou la correction */
-    var figure     = enonce.querySelector('img, svg, div[style*="dashed"]');
-    var corrFigure = corr ? corr.querySelector('img, svg, div[style*="dashed"]') : null;
+    var figure     = enonce.querySelector(':scope > img, :scope > svg, :scope > div[style*="dashed"]');
+    var corrFigure = corr ? corr.querySelector(':scope > img, :scope > svg, :scope > div[style*="dashed"]') : null;
     if (figure || corrFigure) exo.classList.add('has-figure');
 
     /* Enveloppe le texte d'énoncé dans .exo-text si figure présente */
