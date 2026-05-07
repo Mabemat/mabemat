@@ -36,15 +36,15 @@
 
 <div class="wk-adjacent fade-up">
   <div>
-    {{ if .PrevInSection }}
-    <a class="adj-link" href="{{ .PrevInSection.RelPermalink }}">← Semaine précédente</a>
+    {{ if .NextInSection }}
+    <a class="adj-link" href="{{ .NextInSection.RelPermalink }}">← Semaine précédente</a>
     {{ else if $autoIdx }}
     <a class="adj-link" href="{{ $autoIdx.RelPermalink }}">← Retour au planning</a>
     {{ end }}
   </div>
   <div>
-    {{ if .NextInSection }}
-    <a class="adj-link" href="{{ .NextInSection.RelPermalink }}">Semaine suivante →</a>
+    {{ if .PrevInSection }}
+    <a class="adj-link" href="{{ .PrevInSection.RelPermalink }}">Semaine suivante →</a>
     {{ end }}
   </div>
 </div>
