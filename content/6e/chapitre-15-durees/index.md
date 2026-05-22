@@ -4,7 +4,7 @@ level: "6e"
 chapter_number: 15
 weight: 15
 has_cours: true
-has_pixelart: false
+has_pixelart: true
 has_exercices: false
 has_qcm: true
 competences:
