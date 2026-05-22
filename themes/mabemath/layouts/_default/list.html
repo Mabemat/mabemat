@@ -23,34 +23,34 @@
     <h1>Programmer en <em>Python</em></h1>
     <p class="desc">{{ $sntData.description }}</p>
     <div class="meta">
-      {{ $published := where .Pages "Params.coming_soon" "ne" true }}
-      <span><span class="dot">●</span> {{ len .Pages }} séances au programme</span>
-      <span><span class="dot">●</span> Notebook + QCM + correction</span>
-      <span><span class="dot">●</span> Capytale</span>
+      {{ $seances := where .Pages "Params.layout" "ne" "qcm" }}
+      <span><span class="dot">●</span> {{ len $seances }} séances au programme</span>
+      <span><span class="dot">●</span> Notebook Capytale + correction</span>
+      <span><span class="dot">●</span> QCM intéractif</span>
     </div>
   </section>
 
   {{/* ── Grille des séances ── */}}
-  {{ if .Pages }}
+  {{ $seancePages := where .Pages "Params.layout" "ne" "qcm" }}
+  {{ if $seancePages }}
   <section class="snt-grid fade-up d1">
-    {{ range .Pages.ByWeight }}
+    {{ range $seancePages.ByWeight }}
     {{ if .Params.coming_soon }}
     <div class="snt-card locked">
       <div class="lock-badge">À venir</div>
       <div class="num">{{ printf "%02d" .Params.weight }}</div>
-      <div class="titre">{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") }}</div>
+      <div class="titre">{{ .Params.short_title | default (.Title | replaceRE "^Séance [0-9]+ — " "") }}</div>
       <div class="sous">{{ .Params.description }}</div>
       <div class="tags"><span>Bientôt disponible</span></div>
     </div>
     {{ else }}
     <a class="snt-card" href="{{ .RelPermalink }}">
       <div class="num">{{ printf "%02d" .Params.weight }}</div>
-      <div class="titre">{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") }}</div>
+      <div class="titre">{{ .Params.short_title | default (.Title | replaceRE "^Séance [0-9]+ — " "") }}</div>
       <div class="sous">{{ .Params.description }}</div>
       <div class="tags">
         {{ if .Params.nb_exercices }}<span>{{ .Params.nb_exercices }} exercices</span>{{ end }}
         {{ if .Params.has_qcm }}<span>QCM · {{ .Params.nb_qcm }} questions</span>{{ end }}
-        {{ if .Params.has_notebook }}<span>Notebook Capytale</span>{{ end }}
       </div>
       <div class="arrow">→</div>
     </a>
@@ -88,7 +88,7 @@
     {{/* ── Page de niveau : nouveau design ── */}}
 
     {{/* Hero */}}
-    {{ $chapitres2 := where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.has_automatismes" "ne" true }}
+    {{ $chapitres2 := where (where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.layout" "ne" "courses") "Params.has_automatismes" "ne" true }}
     <div class="level-header" style="--lc:{{ $levelData.color }};">
       <div class="bar" style="background:{{ $levelData.color }};"></div>
       <div>
@@ -104,6 +104,7 @@
       </div>
     </div>
     {{ $autoPage := index (where .Pages "Params.has_automatismes" true) 0 }}
+    {{ $coursesPage := index (where .Pages "Params.layout" "courses") 0 }}
     <div class="lvl-sub">
         <div class="col">
           <h4>Ce qu'on va faire</h4>
@@ -133,7 +134,7 @@
         {{ end }}
       </div>
     {{/* Liste des chapitres */}}
-    {{ $chapitres := where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.has_automatismes" "ne" true }}
+    {{ $chapitres := where (where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.layout" "ne" "courses") "Params.has_automatismes" "ne" true }}
     {{ if $chapitres }}
     {{/* Collect unique categories */}}
     {{ $cats := slice }}
@@ -155,11 +156,28 @@
       </div>
       <div class="search">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
-        <input type="text" id="chap-search" placeholder="chercher un chapitre…" autocomplete="off" />
+        <input type="text" id="chap-search" placeholder="Chercher un chapitre…" autocomplete="off" />
       </div>
     </div>
     {{ end }}
     <div class="chap-list fade-up d4" id="chap-list">
+      {{ with $coursesPage }}
+      <a class="chap-row chap-pinned" href="{{ .RelPermalink }}" data-cat="*">
+        <div class="chap-num"></div>
+        <div class="chap-title">
+          {{ .Title }}
+          <span class="sub">Rituel hebdomadaire &middot; Calcul mental</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on res-pinned">Hebdo</span>
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      {{ end }}
       {{ range $chapitres.ByWeight }}
       {{ $c := . }}
       <a class="chap-row" href="{{ .RelPermalink }}" data-cat="{{ if reflect.IsSlice .Params.categorie }}{{ delimit .Params.categorie "|" }}{{ else }}{{ .Params.categorie }}{{ end }}">

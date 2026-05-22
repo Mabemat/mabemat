@@ -16,10 +16,18 @@
 {{ $lines := split $questionBlock "\n" }}
 {{ $options := slice }}
 {{ $questionText := "" }}
+{{ $inFence := false }}
 
 {{ range $lines }}
-  {{ $trim := trim . " \t\r\n" }}
-  {{ if hasPrefix $trim "- " }}
+  {{ $rstripped := trim . "\r\n" }}
+  {{ $trim := trim $rstripped " \t" }}
+  {{ if hasPrefix $trim "```" }}
+    {{ $inFence = not $inFence }}
+    {{ $questionText = printf "%s\n%s" $questionText $rstripped }}
+  {{ else if $inFence }}
+    {{/* Préserver l'indentation à l'intérieur d'un bloc de code */}}
+    {{ $questionText = printf "%s\n%s" $questionText $rstripped }}
+  {{ else if hasPrefix $trim "- " }}
     {{ $options = $options | append (strings.TrimPrefix "- " $trim) }}
   {{ else if ne $trim "" }}
     {{ $questionText = printf "%s\n%s" $questionText $trim }}
@@ -28,7 +36,7 @@
 
 <div class="qcm-q{{ if $isAuto }} qcm-auto{{ end }}" data-correct="{{ .Get "correct" }}">
   <div class="qcm-question">
-    {{ $questionText | markdownify }}
+    {{ .Page.RenderString $questionText }}
   </div>
 
   <div class="qcm-opts{{ if $isGrid }} qcm-opts-grid{{ end }}">

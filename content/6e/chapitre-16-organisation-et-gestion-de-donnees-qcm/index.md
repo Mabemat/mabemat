@@ -57,7 +57,7 @@ Dans le parc naturel de Cigel, voici un diagramme circulaire représentant les e
   <img src="/mabemat/figures/6e/chapitre-16/QCM-Fig13.svg" alt="Diagramme circulaire — animaux Cigel" style="max-width:40%; height:auto;">
 </div>
 
-L'espèce la plus nombreuse (les Zèbres) représente…
+L'espèce la plus nombreuse représente…
 
 - Plus de la moitié des animaux
 - La moitié des animaux
@@ -95,7 +95,7 @@ Le bâton le plus haut correspond aux  Lycaons .
 ---Q---
 Voici un tableau à double entrée sur les fruits rapportés du marché.
 
-<div style="text-align:center;margin:0.8em 0;">
+<div style="text-align:center;margin:0.8em 0;font-size:0.85rem;">
 <table style="border-collapse:collapse;margin:0 auto;">
 <tr>
 <td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
@@ -136,14 +136,14 @@ Quel est le  nombre de kiwi  rapportés par Albert ?
 - Aucune réponse
 
 ---CORR---
-On lit le nombre sur la ligne d'Albert et sur la colonne kiwi :  2 fruits .
+On lit le nombre sur la ligne d'Albert et sur la colonne kiwi :  2.
 {{< /qcm >}}
 
 {{< qcm correct="2" >}}
 ---Q---
 Voici un tableau à double entrée sur les fruits rapportés du marché.
 
-<div style="text-align:center;margin:0.8em 0;">
+<div style="text-align:center;margin:0.8em 0;font-size:0.85rem;">
 <table style="border-collapse:collapse;margin:0 auto;">
 <tr>
 <td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
@@ -184,14 +184,14 @@ Quel est le  nombre total  de fruits achetés par les deux amis ?
 - Aucune réponse
 
 ---CORR---
-On lit la case en bas à droite du tableau, à l'intersection de la ligne TOTAL et de la colonne TOTAL :  19 fruits .
+On lit la case en bas à droite du tableau, à l'intersection de la ligne TOTAL et de la colonne TOTAL :  19 fruits.
 {{< /qcm >}}
 
 {{< qcm correct="0" >}}
 ---Q---
 Voici un tableau à double entrée sur les fruits rapportés du marché.
 
-<div style="text-align:center;margin:0.8em 0;">
+<div style="text-align:center;margin:0.8em 0;font-size:0.85rem;">
 <table style="border-collapse:collapse;margin:0 auto;">
 <tr>
 <td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>
@@ -241,7 +241,7 @@ Comme $14 > 5$, c'est  Albert  qui a rapporté le plus de fruits.
 ---Q---
 Voici un tableau à double entrée sur les fruits rapportés du marché.
 
-<div style="text-align:center;margin:0.8em 0;">
+<div style="text-align:center;margin:0.8em 0;font-size:0.85rem;">
 <table style="border-collapse:collapse;margin:0 auto;">
 <tr>
 <td style="border:1px solid #D36740;padding:5px 16px;background:#FDF5F0;font-weight:bold;">Amis \ fruits</td>

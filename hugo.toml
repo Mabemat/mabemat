@@ -86,11 +86,10 @@ theme = "mabemath"
     url = "/1re/"
     weight = 5
   [[menu.main]]
-  [[menu.main]]
     name = "Python"
     url = "/snt/"
     weight = 5
-
+  [[menu.main]]
     name = "Liens"
     url = "/liens/"
     weight = 6

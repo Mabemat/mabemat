@@ -46,14 +46,14 @@
   <span class="sep">/</span>
   <a href="{{ "snt" | relURL }}/">Python</a>
   <span class="sep">/</span>
-  <span>{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") }}</span>
+  <span>{{ .Params.short_title | default (.Title | replaceRE "^Séance [0-9]+ — " "") }}</span>
 </div>
 
 {{/* ── Hero ── */}}
 <section class="sn-hero fade-up d1">
   <div class="eyebrow">Python · Séance {{ $seanceNum }}</div>
-  <h1>{{ .Params.short_title | default (.Title | replaceRE "^Séance \d+ — " "") | safeHTML }}</h1>
-  {{ if .Params.description }}<p class="desc">{{ .Params.description }}</p>{{ end }}
+  <h1>{{ .Params.short_title | default (.Title | replaceRE "^Séance [0-9]+ — " "") | safeHTML }}</h1>
+
   <div class="meta">
     {{ if .Params.nb_exercices }}<span><span class="dot"></span>{{ .Params.nb_exercices }} exercices</span>{{ end }}
     {{ if .Params.nb_qcm }}<span><span class="dot"></span>QCM · {{ .Params.nb_qcm }} questions</span>{{ end }}
@@ -64,67 +64,64 @@
 {{/* ── Barre notebook ── */}}
 {{ if .Params.has_notebook }}
 <div class="sn-notebook fade-up d1">
-  <div class="ico">NB</div>
   <div class="info">
-    <strong>Notebook de la séance</strong>
-    <span>Hébergé sur Capytale · accès avec votre identifiant ENT</span>
+    <strong>Capytale</strong>
+    <span>Accès avec votre identifiant MonLycée.net</span>
   </div>
   <a href="{{ $capytaleURL }}" class="nb-btn" target="_blank" rel="noopener">Ouvrir →</a>
 </div>
 {{ end }}
 
-{{/* ── Compétences ── */}}
-{{ if .Params.competences }}
-<section class="sn-comp fade-up d2">
-  <h3>Compétences travaillées</h3>
-  <ul>
-    {{ range .Params.competences }}
-    <li>{{ . }}</li>
-    {{ end }}
-  </ul>
-</section>
-{{ end }}
+
 
 {{/* ── Onglets ── */}}
 {{ $corrRes := .Resources.GetMatch "correction.md" }}
-{{ $qcmPages := where .Pages "Params.layout" "qcm" }}
+{{ $enoRes  := .Resources.GetMatch "exercices.md" }}
+{{/* .Pages est vide pour un leaf bundle — on passe par Site.GetPage pour le QCM */}}
+{{ $qcmPath := printf "/%s/%s-qcm" .Section .File.ContentBaseName }}
+{{ $qcmPage := .Site.GetPage $qcmPath }}
 {{ $hasCorr := ne $corrRes nil }}
-{{ $hasQCM := gt (len $qcmPages) 0 }}
+{{ $hasEnos := ne $enoRes nil }}
+{{ $hasExos := or $hasCorr $hasEnos }}
+{{ $hasQCM := and .Params.has_qcm (ne $qcmPage nil) }}
 
 <div class="tab-bar fade-up d2" role="tablist">
-  {{ if $hasCorr }}
+  {{ if $hasExos }}
   <button class="active" data-tab="exos" role="tab">Exercices{{ if .Params.nb_exercices }} <span class="count">{{ .Params.nb_exercices }}</span>{{ end }}</button>
   {{ end }}
   {{ if $hasQCM }}
-  <button{{ if not $hasCorr }} class="active"{{ end }} data-tab="qcm" role="tab">QCM{{ if .Params.nb_qcm }} <span class="count">{{ .Params.nb_qcm }}</span>{{ end }}</button>
+  <button{{ if not $hasExos }} class="active"{{ end }} data-tab="qcm" role="tab">QCM{{ if .Params.nb_qcm }} <span class="count">{{ .Params.nb_qcm }}</span>{{ end }}</button>
   {{ end }}
-  <button{{ if and (not $hasCorr) (not $hasQCM) }} class="active"{{ end }} data-tab="editor" role="tab">Éditeur Python</button>
+  <button{{ if and (not $hasExos) (not $hasQCM) }} class="active"{{ end }} data-tab="editor" role="tab">Éditeur Python</button>
 </div>
 
 {{/* ── Panneau Exercices ── */}}
-{{ with $corrRes }}
-<section id="exos" class="tab-panel active snt-seance-content fade-up d3">
-  {{ $.Page.RenderString .Content }}
+{{ if $hasExos }}
+<section id="exos" class="tab-panel active fade-up d3">
+  {{- /* Conteneurs cachés : JS construit les cartes .exo en combinant les deux */ -}}
+  {{ with $enoRes }}<div id="exo-enonces" hidden>{{ $.Page.RenderString .Content }}</div>{{ end }}
+  {{ with $corrRes }}<div id="exo-corrs" hidden>{{ $.Page.RenderString .Content }}</div>{{ end }}
+  <div id="exo-list"></div>
 </section>
 {{ end }}
 
 {{/* ── Panneau QCM ── */}}
 {{ if $hasQCM }}
-<section id="qcm" class="tab-panel{{ if not $hasCorr }} active{{ end }}">
+<section id="qcm" class="tab-panel{{ if not $hasExos }} active{{ end }}">
   <div class="snt-qcm-intro">
     <span class="badge">Validation immédiate</span>
     <span>Chaque réponse est validée dès que tu cliques. La correction apparaît ensuite. Tu peux refaire le QCM en rechargeant la page.</span>
   </div>
   <div class="qcm-wrap" style="max-width:100%;padding:0 0 40px;">
-    {{ range $qcmPages }}
-    <div class="qcm-container">{{ .Content }}</div>
-    {{ end }}
+    <div class="qcm-container" data-engine="snt" data-chapter-url="{{ $.RelPermalink }}">
+      {{ $qcmPage.Content }}
+    </div>
   </div>
 </section>
 {{ end }}
 
 {{/* ── Panneau Éditeur Python ── */}}
-<section id="editor" class="tab-panel{{ if and (not $hasCorr) (not $hasQCM) }} active{{ end }}">
+<section id="editor" class="tab-panel{{ if and (not $hasExos) (not $hasQCM) }} active{{ end }}">
   <div class="snt-qcm-intro">
     <span class="badge">Bac à sable</span>
     <span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span>
@@ -168,8 +165,13 @@ print(c)</textarea>
 {{ end }}
 
 <script>
-/* ── Onglets ── */
-(function() {
+/* ── Exercices déverrouillés (injecté depuis Hugo) ── */
+var UNLOCKED = {{ .Params.unlocked_exercises | default (slice) | jsonify }};
+function isUnlocked(n) { return UNLOCKED.indexOf(n) !== -1; }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* ── Onglets ── */
   var buttons = document.querySelectorAll('.tab-bar button');
   var panels  = document.querySelectorAll('.tab-panel');
   buttons.forEach(function(btn) {
@@ -184,14 +186,221 @@ print(c)</textarea>
     });
   });
 
-  /* Auto-resize textarea */
+  /* ── Auto-resize textarea ── */
   var pyCodeEl = document.getElementById('pyCode');
   if (pyCodeEl) {
     function autoResize(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
     autoResize(pyCodeEl);
     pyCodeEl.addEventListener('input', function() { autoResize(pyCodeEl); });
   }
-})();
+
+  /* ── Construction des cartes exercices ── */
+  (function buildExoCards() {
+    var enoDiv  = document.getElementById('exo-enonces');
+    var corrDivSrc = document.getElementById('exo-corrs');
+    var listDiv = document.getElementById('exo-list');
+    if (!listDiv) return;
+
+    /* Extraire les blocs h3 + contenu suivant d'un conteneur */
+    function parseBlocks(container) {
+      if (!container) return [];
+      var blocks = [];
+      var h3s = Array.from(container.querySelectorAll('h3'));
+      h3s.forEach(function(h3) {
+        var m = h3.textContent.match(/Exercice\s+(\d+)/i);
+        var num = m ? parseInt(m[1]) : 0;
+        var title = h3.textContent.replace(/^Exercice\s+\d+\s*[\u2014\u2013-]\s*/i, '').trim();
+        var body = document.createElement('div');
+        var next = h3.nextElementSibling;
+        while (next && next.tagName !== 'H3') {
+          /* Ignorer les <hr> séparateurs générés par --- */
+          if (next.tagName !== 'HR') body.appendChild(next.cloneNode(true));
+          next = next.nextElementSibling;
+        }
+        blocks.push({ num: num, title: title, html: body.innerHTML });
+      });
+      return blocks;
+    }
+
+    var enonces = parseBlocks(enoDiv);
+    var corrMap = {};
+    parseBlocks(corrDivSrc).forEach(function(b) { corrMap[b.num] = b.html; });
+
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+    enonces.forEach(function(eno) {
+      var unlocked = isUnlocked(eno.num);
+      var corrHtml = corrMap[eno.num] || '';
+      var hasCorr  = corrHtml.length > 0;
+
+      var art = document.createElement('article');
+      art.className = 'exo';
+      art.dataset.id = 'ex' + eno.num;
+      art.dataset.unlocked = unlocked ? 'true' : 'false';
+
+      var html =
+        '<div class="exo-head">' +
+          '<div class="exo-num">' + pad2(eno.num) + '</div>' +
+          '<div class="exo-label">Exercice</div>' +
+          '<div class="exo-titre">' + eno.title + '</div>' +
+        '</div>' +
+        '<div class="exo-body"><div class="exo-enonce">' + eno.html + '</div></div>';
+
+      if (hasCorr) {
+        html +=
+          '<div class="exo-actions">' +
+            '<span class="exo-status">' +
+              (unlocked ? 'Correction publi\u00e9e' : 'Correction non publi\u00e9e') +
+            '</span>' +
+            '<button class="exo-btn" type="button"' + (unlocked ? '' : ' disabled') + '>' +
+              '<span class="arrow">&#9658;</span> <span>Voir la correction</span>' +
+            '</button>' +
+          '</div>';
+        if (!unlocked) {
+          html +=
+            '<div class="exo-corr-locked">' +
+              '<span class="icon">&#9747;</span>' +
+              '<span>La correction sera disponible quand votre enseignante l\'aura publi\u00e9e.</span>' +
+            '</div>';
+        }
+        html +=
+          '<div class="exo-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      art.innerHTML = html;
+
+      /* Attacher le toggle sur la correction */
+      if (hasCorr && unlocked) {
+        var btn  = art.querySelector('.exo-btn');
+        var corr = art.querySelector('.exo-corr');
+        btn.addEventListener('click', function() {
+          var open = corr.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          btn.querySelector('span:last-child').textContent =
+            open ? 'Masquer la correction' : 'Voir la correction';
+        });
+      }
+
+      listDiv.appendChild(art);
+    });
+  })();
+
+
+  /* ── QCM SNT — moteur maquette ── */
+  (function initSNTQcm() {
+    var container = document.querySelector('#qcm .qcm-container[data-engine="snt"]');
+    if (!container) return;
+
+    var rawQs = container.querySelectorAll('.qcm-q');
+    if (!rawQs.length) return;
+
+    var letters = ['A', 'B', 'C', 'D', 'E'];
+    var articles = [];
+
+    rawQs.forEach(function(qEl, i) {
+      var correct = parseInt(qEl.dataset.correct, 10);
+      var qHtml = qEl.querySelector('.qcm-question') ? qEl.querySelector('.qcm-question').innerHTML.trim() : '';
+      var opts = [];
+      qEl.querySelectorAll('.qcm-o').forEach(function(o) {
+        var span = o.querySelector('span:not(.qcm-letter):not(.rd)');
+        opts.push(span ? span.innerHTML.trim() : o.innerHTML.trim());
+      });
+      var corrEl = qEl.querySelector('.qcm-correction');
+      var corrHtml = corrEl ? corrEl.innerHTML.trim() : '';
+
+      var num = String(i + 1).padStart(2, '0');
+      var html =
+        '<div class="qcm-head">' +
+          '<div class="qcm-num">' + num + '</div>' +
+          '<div class="qcm-label">Question</div>' +
+          '<div class="qcm-status"></div>' +
+        '</div>' +
+        '<div class="qcm-enonce">' + qHtml + '</div>' +
+        '<div class="qcm-choices">';
+
+      opts.forEach(function(opt, j) {
+        html += '<button class="qcm-choice">' +
+          '<span class="bullet">' + letters[j] + '</span>' +
+          '<span>' + opt + '</span>' +
+        '</button>';
+      });
+      html += '</div>';
+
+      if (corrHtml) {
+        html +=
+          '<div class="qcm-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      articles.push({ html: html, correct: correct });
+    });
+
+    /* Barre de progression */
+    var total = articles.length;
+    var progressHtml =
+      '<div class="qcm-progress">' +
+        '<span class="qcm-prog-label">Progression</span>' +
+        '<div class="qcm-prog-bar"><div class="qcm-prog-fill" id="sntQcmFill" style="width:0%"></div></div>' +
+        '<span class="qcm-prog-stats" id="sntQcmStats">0 / ' + total + ' répondue' + (total > 1 ? 's' : '') + '</span>' +
+      '</div>';
+
+    var articlesHtml = articles.map(function(a, i) {
+      return '<article class="qcm" data-correct="' + a.correct + '">' + a.html + '</article>';
+    }).join('');
+
+    container.innerHTML = progressHtml + articlesHtml;
+
+    function updateProgress() {
+      var all = container.querySelectorAll('article.qcm');
+      var answered = container.querySelectorAll('article.qcm.locked');
+      var ok = container.querySelectorAll('article.qcm .qcm-status.ok').length;
+      var ko = container.querySelectorAll('article.qcm .qcm-status.ko').length;
+      var fill = document.getElementById('sntQcmFill');
+      var stats = document.getElementById('sntQcmStats');
+      if (fill) fill.style.width = (answered.length / all.length * 100) + '%';
+      if (stats) stats.innerHTML =
+        answered.length + ' / ' + all.length + ' répondue' + (all.length > 1 ? 's' : '') +
+        (answered.length > 0
+          ? ' · <span class="ok">' + ok + ' ✓</span> · <span class="ko">' + ko + ' ✕</span>'
+          : '');
+    }
+
+    container.querySelectorAll('article.qcm').forEach(function(qcm) {
+      var idx = parseInt(qcm.dataset.correct, 10);
+      var choices = Array.from(qcm.querySelectorAll('.qcm-choice'));
+      var status = qcm.querySelector('.qcm-status');
+      if (!isNaN(idx) && choices[idx]) choices[idx].classList.add('is-correct');
+      choices.forEach(function(choice, i) {
+        choice.addEventListener('click', function() {
+          if (qcm.classList.contains('locked')) return;
+          choice.classList.add('selected');
+          var isCorrect = (i === idx);
+          choice.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+          qcm.classList.add('locked');
+          status.textContent = isCorrect ? '✓ Correct' : '✕ Incorrect';
+          status.classList.add(isCorrect ? 'ok' : 'ko');
+          /* KaTeX dans la correction */
+          if (window.renderMathInElement) {
+            var corr = qcm.querySelector('.qcm-corr');
+            if (corr) renderMathInElement(corr, {
+              delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],
+              throwOnError: false
+            });
+          }
+          updateProgress();
+        });
+      });
+    });
+
+    updateProgress();
+  })();
+
+});
 
 /* ── Éditeur Pyodide ── */
 var pyodideReady = null;
@@ -221,10 +430,8 @@ async function runPython() {
   try {
     var py = await getPyodide();
     var buf = '';
-    py.setStdout({ batched: function(s) { buf += s + '
-'; } });
-    py.setStderr({ batched: function(s) { buf += s + '
-'; } });
+    py.setStdout({ batched: function(s) { buf += s + '\n'; } });
+    py.setStderr({ batched: function(s) { buf += s + '\n'; } });
     await py.runPythonAsync(code);
     out.textContent = buf || '(Pas de sortie)';
     if (!buf) out.classList.add('empty');

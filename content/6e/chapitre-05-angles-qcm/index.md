@@ -225,7 +225,6 @@ Estimer la mesure de l'angle $\widehat{tLs}$ sans instrument.
 - $100°$
 - $145°$
 - $55°$
-- $90°$
 - Aucune réponse
 
 ---CORR---

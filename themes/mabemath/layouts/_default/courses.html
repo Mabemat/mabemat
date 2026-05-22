@@ -1,0 +1,136 @@
+{{ define "main" }}
+{{ $section   := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $pdfBase   := .RelPermalink }}
+
+{{ $css := resources.Get "css/courses-au-nombres.css" | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+
+<a class="back-link" href="{{ $section | relURL }}/">← {{ with $levelData }}{{ .name }}{{ else }}Retour{{ end }}</a>
+
+<div class="level-header" style="--lc:{{ with $levelData }}{{ .color }}{{ end }};">
+  <div class="bar" style="background: {{ with $levelData }}{{ .color }}{{ end }};"></div>
+  <div>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+  </div>
+  <div class="lvl-tag" style="margin-left: auto;">
+    <div class="lvl-swatch">
+      <span style="background: {{ with $levelData }}{{ .color }}{{ end }};"></span>
+      <span style="background: {{ with $levelData }}{{ .color2 }}{{ end }};"></span>
+    </div>
+  </div>
+</div>
+
+{{ if .Params.courses }}
+<div class="filter-bar">
+  <div class="tabs" role="tablist">
+    <button class="active" data-filter="*">Toutes</button>
+    <button data-filter="todo">À faire</button>
+    <button data-filter="done">Avec correction</button>
+  </div>
+</div>
+
+<div class="course-list" id="course-list">
+  {{/* Ordre : dernière corrigée en haut · sans correction · anciennes corrigées en bas */}}
+  {{ $done := sort (where .Params.courses "has_correction" true)  "num" "asc" }}
+  {{ $todo := sort (where .Params.courses "has_correction" false) "num" "asc" }}
+  {{ $ordered := slice }}
+  {{ if $done }}
+    {{ $lastDone  := last 1 $done }}
+    {{ $olderDone := first (sub (len $done) 1) $done }}
+    {{ range $lastDone  }}{{ $ordered = $ordered | append . }}{{ end }}
+    {{ range $todo      }}{{ $ordered = $ordered | append . }}{{ end }}
+    {{ range $olderDone }}{{ $ordered = $ordered | append . }}{{ end }}
+  {{ else }}
+    {{ range $todo }}{{ $ordered = $ordered | append . }}{{ end }}
+  {{ end }}
+  {{ range $ordered }}
+  {{ $num     := .num }}
+  {{ $numPad  := printf "%02d" $num }}
+  {{ $enonce  := or .enonce_pdf (printf "CAN 6e V%d (glissés).pdf" $num) }}
+  {{ $correc  := or .correction_pdf (printf "CAN 6e V%d (glissés) 2.pdf" $num) }}
+  {{ $hasCorr := .has_correction }}
+
+  <div class="course-row" data-state="{{ if $hasCorr }}done{{ else }}todo{{ end }}">
+    <div class="course-num">{{ $numPad }}</div>
+    <div class="course-info">
+      <div class="course-title">{{ with .title }}{{ . }}{{ else }}Course n°{{ $num }}{{ end }}</div>
+      <div class="course-meta">
+        {{ with .date }}
+        {{ $d := time . }}
+        {{ $mois := slice "" "janv." "févr." "mars" "avr." "mai" "juin" "juil." "août" "sept." "oct." "nov." "déc." }}
+        <span>{{ $d.Day }} {{ index $mois (int $d.Month) }} {{ $d.Year }}</span><span class="sep">·</span>
+        {{ end }}
+        {{ if $hasCorr }}<span class="tag-done">Corrigée</span>{{ else }}<span class="tag-todo">À venir</span>{{ end }}
+      </div>
+    </div>
+    <div class="course-actions">
+      {{ $enonceEnc := replace $enonce " " "%20" }}
+      {{ $enonceEnc = replace $enonceEnc "é" "%C3%A9" }}
+      {{ $enonceEnc = replace $enonceEnc "(" "%28" }}
+      {{ $enonceEnc = replace $enonceEnc ")" "%29" }}
+      <a class="pdf-btn enonce" href="{{ printf "%s%s" $pdfBase $enonceEnc }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Énoncé
+      </a>
+      {{ if $hasCorr }}
+      {{ $correcEnc := replace $correc " " "%20" }}
+      {{ $correcEnc = replace $correcEnc "é" "%C3%A9" }}
+      {{ $correcEnc = replace $correcEnc "(" "%28" }}
+      {{ $correcEnc = replace $correcEnc ")" "%29" }}
+      <a class="pdf-btn correction" href="{{ printf "%s%s" $pdfBase $correcEnc }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Correction
+      </a>
+      {{ else }}
+      <span class="pdf-btn disabled" title="La correction sera publiée bientôt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Correction à venir
+      </span>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<div class="empty-state" id="empty-state" style="display:none;">
+  <div class="glyph">~</div>
+  <p>Aucune course pour ce filtre.</p>
+</div>
+
+{{ else }}
+<div class="empty-state">
+  <div class="glyph">~</div>
+  <p>Les courses au nombres seront disponibles prochainement.</p>
+</div>
+{{ end }}
+
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.filter-bar .tabs button');
+  var rows = document.querySelectorAll('#course-list .course-row');
+  var empty = document.getElementById('empty-state');
+  if (!tabs.length) return;
+
+  function apply(filter) {
+    var visible = 0;
+    rows.forEach(function(row) {
+      var state = row.dataset.state;
+      var show = filter === '*' || filter === state;
+      row.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (empty) empty.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      apply(btn.dataset.filter);
+    });
+  });
+})();
+</script>
+{{ end }}

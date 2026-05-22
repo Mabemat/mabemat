@@ -1,0 +1,4044 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-snt">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM — Boucles non bornées — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.882ff8074cb0d6b3cdf2c8e8020dc4ee25a5f2edb8d475b4c3ff0d8030264884.css" integrity="sha256-iC/4B0yw1rPN8sjoAg3E7iWl8u241HW0w/8NgDAmSIQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/" class="active">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+
+  
+
+  
+    <a href="/mabemat/snt/seance-05-boucles-non-bornees/">
+      
+        Séance 05 — Boucles non bornées
+      
+    </a>
+    <span class="sep">/</span>
+  
+
+  <span>QCM — Boucles non bornées</span>
+</div>
+
+
+<div class="qcm-page">
+  <h1 style="color: #4A5D7A;">QCM — Boucles non bornées</h1>
+  <div class="qcm-container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    Quel mot-clé permet de répéter un bloc <strong>tant qu&rsquo;une condition est vraie</strong> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>for</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>repeat</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>while</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>until</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Mot-clé</th>
+          <th>Rôle en Python</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>for</code></td>
+          <td>Répète un nombre <strong>connu</strong> de fois (boucle bornée)</td>
+      </tr>
+      <tr>
+          <td><code>while</code></td>
+          <td>Répète <strong>tant que</strong> la condition est vraie (boucle non bornée)</td>
+      </tr>
+      <tr>
+          <td><code>repeat</code>, <code>until</code></td>
+          <td>N&rsquo;existent pas en Python</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Réponse : <code>while</code></strong></p>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Par quel caractère doit se terminer la <strong>première ligne</strong> d&rsquo;une boucle <code>while</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">10</span><span style="">?</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>.</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>:</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>,</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Comme pour <code>def</code>, <code>if</code> et <code>for</code>, la ligne <code>while</code> se termine obligatoirement par <strong>deux-points</strong> : ils annoncent le bloc à répéter.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">10</span>:       <span style="color:#60a0b0;font-style:italic"># ← deux-points obligatoires</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div><p>Sans les <code>:</code>, Python signale une <code>SyntaxError</code>.</p>
+<p><strong>Réponse : <code>:</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quelle est la <strong>différence essentielle</strong> entre une boucle <code>for</code> et une boucle <code>while</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il n&rsquo;y en a aucune</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>for</code> répète un nombre <strong>connu</strong> de fois ; <code>while</code> répète tant qu&rsquo;une <strong>condition</strong> est vraie</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>while</code> est plus rapide que <code>for</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>for</code> est pour les listes, <code>while</code> pour les fonctions</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Quand l&rsquo;utiliser ?</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>for</code></td>
+          <td>On connaît à l&rsquo;avance le <strong>nombre</strong> de répétitions</td>
+          <td>« Répète 10 fois »</td>
+      </tr>
+      <tr>
+          <td><code>while</code></td>
+          <td>On ignore le nombre de tours, on a un <strong>critère d&rsquo;arrêt</strong></td>
+          <td>« Tant que la batterie est ≥ 20 % »</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Réponse : <code>for</code> est bornée, <code>while</code> répète tant qu&rsquo;une condition est vraie</strong></p>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    Dans quel cas vaut-il <strong>mieux</strong> utiliser une boucle <code>while</code> qu&rsquo;une boucle <code>for</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Pour afficher les nombres de 1 à 10</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Pour parcourir une liste de 5 éléments</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Pour s&rsquo;arrêter quand un capital dépasse 3 000 € (on ne sait pas combien d&rsquo;années)</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Pour répéter exactement 100 fois</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th style="text-align: center"><code>for</code> ou <code>while</code> ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Nombre de tours <strong>connu</strong> (1 à 10, 100 fois, liste donnée)</td>
+          <td style="text-align: center"><code>for</code></td>
+      </tr>
+      <tr>
+          <td>Nombre de tours <strong>inconnu</strong> (jusqu&rsquo;à un seuil, dépassement, arrêt conditionnel)</td>
+          <td style="text-align: center"><code>while</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Dès qu&rsquo;on ne sait pas combien de répétitions seront nécessaires, on utilise <code>while</code>.</p>
+<p><strong>Réponse : Pour s&rsquo;arrêter quand un capital dépasse 3 000 €</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">3</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code> puis <code>2</code> puis <code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>1</code> puis <code>2</code> puis <code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>1</code> puis <code>2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant test</th>
+          <th style="text-align: center"><code>n &lt; 3</code></th>
+          <th style="text-align: center">Affichage</th>
+          <th style="text-align: center"><code>n</code> après</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>0</code></td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>1</code></td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>2</code></td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p>La boucle s&rsquo;arrête <strong>avant</strong> d&rsquo;afficher 3 : la condition <code>3 &lt; 3</code> est fausse.</p>
+<p><strong>Réponse : <code>0</code> puis <code>1</code> puis <code>2</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;fin&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code> puis <code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code> puis <code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Étape</th>
+          <th style="text-align: center"><code>n</code></th>
+          <th style="text-align: center"><code>n &lt; 5</code></th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Test initial</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">✗ Fausse (10 n&rsquo;est pas &lt; 5)</td>
+          <td>Le bloc n&rsquo;est <strong>jamais</strong> exécuté</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Après boucle</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">—</td>
+          <td><code>print(&quot;fin&quot;)</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Si la condition est fausse <strong>dès le départ</strong>, la boucle est complètement sautée — elle peut tourner <strong>zéro fois</strong>.</p>
+<p><strong>Réponse : <code>fin</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Quel problème pose ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&gt;</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(n)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur de syntaxe</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><strong>Boucle infinie</strong> : <code>n</code> n&rsquo;est jamais modifié, la condition reste toujours vraie</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il ne s&rsquo;exécute pas</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il affiche <code>10</code> une seule fois</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code></th>
+          <th style="text-align: center"><code>n &gt; 0</code></th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">✓</td>
+          <td><code>print(10)</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">✓</td>
+          <td><code>print(10)</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">∞</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">toujours ✓</td>
+          <td>…</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>n</code> n&rsquo;est <strong>jamais modifié</strong> dans la boucle → la condition reste vraie indéfiniment. Pour corriger, il faut ajouter <code>n = n - 1</code> dans le bloc.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&gt;</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">-</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div><p><strong>Réponse : Boucle infinie (n n&rsquo;est jamais modifié)</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Combien de fois s&rsquo;exécute ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">16</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code> tours</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code> tours</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code> tours</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>16</code> tours</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant test</th>
+          <th style="text-align: center"><code>n &lt; 16</code></th>
+          <th style="text-align: center"><code>n</code> après</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>16</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center">✗ (16 n&rsquo;est pas &lt; 16)</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p>La boucle fait <strong>4 tours</strong> : <code>n</code> passe de 1 à 16 par doublements successifs (1, 2, 4, 8, 16), puis le test devient faux.</p>
+<p><strong>Réponse : 4 tours</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que vaut <code>n</code> à la fin de ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">50</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> n
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>25</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>32</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>64</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>50</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant</th>
+          <th style="text-align: center"><code>n &lt; 50</code></th>
+          <th style="text-align: center"><code>n</code> après (<code>n + n</code> = doubler)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">16</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">32</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">32</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>64</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">64</td>
+          <td style="text-align: center">✗ (64 ≥ 50)</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>n + n</code> double la valeur de <code>n</code>. On dépasse 50 quand <code>n</code> vaut 64.</p>
+<p><strong>Réponse : <code>64</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme (compte à rebours) ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&gt;=</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(n)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">-</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Décollage !&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code> puis <code>2</code> puis <code>1</code> puis <code>Décollage !</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code> puis <code>2</code> puis <code>1</code> puis <code>0</code> puis <code>-1</code> puis <code>Décollage !</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code> puis <code>2</code> puis <code>1</code> puis <code>0</code> puis <code>Décollage !</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>Décollage !</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant test</th>
+          <th style="text-align: center"><code>n &gt;= 0</code></th>
+          <th style="text-align: center">Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><code>0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">-1</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">(après boucle)</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center"><code>Décollage !</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Avec <code>n &gt;= 0</code>, la valeur 0 est <strong>incluse</strong> dans la boucle (≥ et non &gt;).</p>
+<p><strong>Réponse : <code>3 2 1 0 Décollage !</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Combien d&rsquo;heures faut-il pour que la batterie passe <strong>strictement sous 20 %</strong> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>charge <span style="color:#666">=</span> <span style="color:#40a070">95</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>heures <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020;font-weight:bold">while</span> charge <span style="color:#666">&gt;=</span> <span style="color:#40a070">20</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    charge <span style="color:#666">=</span> charge <span style="color:#666">-</span> <span style="color:#40a070">8</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    heures <span style="color:#666">=</span> heures <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>8</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>9</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>11</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Heures</th>
+          <th style="text-align: center"><code>charge</code> avant test</th>
+          <th style="text-align: center"><code>charge &gt;= 20</code></th>
+          <th style="text-align: center"><code>charge</code> après</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">95</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">87</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">87</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">79</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">…</td>
+          <td style="text-align: center">…</td>
+          <td style="text-align: center">…</td>
+          <td style="text-align: center">…</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">31</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">23</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">9</td>
+          <td style="text-align: center">23</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>15</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">15</td>
+          <td style="text-align: center">✗ (15 &lt; 20)</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p>On boucle tant que la charge <strong>reste ≥ 20 %</strong>. La charge passe en dessous au tour où elle vaut 23 → 15, soit <strong>10 heures</strong>.</p>
+<p><strong>Réponse : <code>10</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Que renvoie cette fonction ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">annees</span>(capital, objectif):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    n <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">while</span> capital <span style="color:#666">&lt;</span> objectif:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> <span style="color:#40a070">1.025</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">return</span> n
+</span></span></code></pre></div><p>Que renvoie <code>annees(2000, 3000)</code> ?</p>
+
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>16</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>17</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>25</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Année</th>
+          <th style="text-align: center"><code>capital</code> (avant test)</th>
+          <th style="text-align: center"><code>capital &lt; 3000</code></th>
+          <th style="text-align: center"><code>capital</code> (après)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">2 000</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">2 050</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2 050</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">2 101.25</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">…</td>
+          <td style="text-align: center">…</td>
+          <td style="text-align: center">…</td>
+          <td style="text-align: center">…</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center">2 967.30</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>3 041.49</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">3 041.49</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le capital dépasse 3 000 € au bout de <strong>17 ans</strong> (2 000 × 1.025¹⁷ ≈ 3 041).</p>
+<p><strong>Réponse : <code>17</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    <p>Quel <strong>problème</strong> pose ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>compteur <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> compteur <span style="color:#666">&lt;</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Bonjour&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il affiche <code>Bonjour</code> 5 fois</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il manque les <code>:</code> après <code>while</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il y a une <code>SyntaxError</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><strong>Boucle infinie</strong> : <code>compteur = compteur + 1</code> est hors de la boucle</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Ligne</th>
+          <th style="text-align: center">Indentation</th>
+          <th style="text-align: center">Dans la boucle ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>print(&quot;Bonjour&quot;)</code></td>
+          <td style="text-align: center">4 espaces</td>
+          <td style="text-align: center">✓ Oui</td>
+      </tr>
+      <tr>
+          <td><code>compteur = compteur + 1</code></td>
+          <td style="text-align: center">0 espace</td>
+          <td style="text-align: center">✗ <strong>Non</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Comme <code>compteur</code> n&rsquo;est jamais modifié dans la boucle, la condition reste vraie indéfiniment → la boucle affiche <code>Bonjour</code> à l&rsquo;infini. Il faut <strong>indenter</strong> la ligne d&rsquo;incrément :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">while</span> compteur <span style="color:#666">&lt;</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Bonjour&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>     <span style="color:#60a0b0;font-style:italic"># ← 4 espaces : dans la boucle</span>
+</span></span></code></pre></div><p><strong>Réponse : Boucle infinie (incrément hors de la boucle)</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Combien de fois <code>print(&quot;ok&quot;)</code> s&rsquo;exécute-t-il ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&gt;</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;ok&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Étape</th>
+          <th style="text-align: center"><code>n</code></th>
+          <th style="text-align: center"><code>n &gt; 5</code></th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Test initial</td>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">✗ Fausse (5 n&rsquo;est pas &gt; 5)</td>
+          <td>Le bloc n&rsquo;est <strong>jamais</strong> exécuté</td>
+      </tr>
+  </tbody>
+</table>
+<p>Avec une <strong>inégalité stricte</strong>, 5 n&rsquo;est pas &gt; 5 : la condition est fausse dès le départ, la boucle ne tourne <strong>pas du tout</strong>.</p>
+<p><strong>Réponse : <code>0</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme (suite de Syracuse à partir de 6) ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">6</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">!=</span> <span style="color:#40a070">1</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        n <span style="color:#666">=</span> n <span style="color:#666">//</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        n <span style="color:#666">=</span> <span style="color:#40a070">3</span> <span style="color:#666">*</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020">print</span>(n)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6 3 10 5 16 8 4 2 1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3 10 5 16 8 4 2 1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6 3 10 5 16 8 4 2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3 10 5 16 8 4 2</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>n</code> (avant test)</th>
+          <th style="text-align: center">Pair/Impair</th>
+          <th>Opération</th>
+          <th style="text-align: center">Nouvelle valeur</th>
+          <th style="text-align: center">Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">pair</td>
+          <td>6 // 2</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center"><code>3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">impair</td>
+          <td>3×3 + 1</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center"><code>10</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">pair</td>
+          <td>10 // 2</td>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center"><code>5</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">impair</td>
+          <td>3×5 + 1</td>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center"><code>16</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center">pair</td>
+          <td>16 // 2</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center"><code>8</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">pair</td>
+          <td>8 // 2</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center"><code>4</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">pair</td>
+          <td>4 // 2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center"><code>2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">pair</td>
+          <td>2 // 2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center"><code>1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">—</td>
+          <td>(stop)</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le <code>print(n)</code> est <strong>après</strong> la modification : la première valeur affichée est <code>3</code> (pas <code>6</code>). Et <code>1</code> est bien affiché avant la sortie.</p>
+<p><strong>Réponse : <code>3 10 5 16 8 4 2 1</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">100</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&gt;</span> <span style="color:#40a070">1</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">//</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(n)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>50</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant test</th>
+          <th style="text-align: center"><code>n &gt; 1</code></th>
+          <th style="text-align: center"><code>n</code> après (<code>n // 2</code>)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">100</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">50</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">50</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">25</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">25</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">12</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">6</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">6</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>1</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✗ (1 n&rsquo;est pas &gt; 1)</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>//</code> est la <strong>division entière</strong> (pas de virgule). Le <code>print(n)</code> est <strong>hors</strong> boucle, il n&rsquo;affiche <code>n</code> qu&rsquo;une seule fois à la sortie : <strong>1</strong>.</p>
+<p><strong>Réponse : <code>1</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    <p>Quel est le problème de ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>capital <span style="color:#666">=</span> <span style="color:#40a070">1000</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> capital <span style="color:#666">&gt;=</span> <span style="color:#40a070">1000</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> <span style="color:#40a070">1.05</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(capital)
+</span></span></code></pre></div><p><em>(Objectif : faire grossir le capital jusqu&rsquo;à dépasser 2 000 €.)</em></p>
+
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Le <code>1.05</code> est faux</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il manque les <code>:</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il faut écrire <code>capital = capital + 1.05</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><strong>Boucle infinie</strong> : la condition <code>&gt;= 1000</code> reste toujours vraie quand le capital grossit</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>capital</code></th>
+          <th style="text-align: center"><code>capital &gt;= 1000</code></th>
+          <th style="text-align: center"><code>capital</code> après</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1 000</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">1 050</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1 050</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">1 102.5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">∞</td>
+          <td style="text-align: center">↑</td>
+          <td style="text-align: center">toujours ✓</td>
+          <td style="text-align: center">…</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le capital ne fait qu&rsquo;<strong>augmenter</strong> : la condition <code>capital &gt;= 1000</code> ne deviendra <strong>jamais</strong> fausse → boucle infinie. Il faut inverser la logique : on boucle <strong>tant qu&rsquo;on n&rsquo;a pas atteint l&rsquo;objectif</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">while</span> capital <span style="color:#666">&lt;</span> <span style="color:#40a070">2000</span>:       <span style="color:#60a0b0;font-style:italic"># ← condition inversée</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> <span style="color:#40a070">1.05</span>
+</span></span></code></pre></div><p><strong>Réponse : Boucle infinie (la condition reste toujours vraie)</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Combien de fois la boucle s&rsquo;exécute-t-elle ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">100</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">*</span> <span style="color:#40a070">3</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code> fois</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code> fois</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6</code> fois</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant test</th>
+          <th style="text-align: center"><code>n &lt; 100</code></th>
+          <th style="text-align: center"><code>n</code> après (<code>n × 3</code>)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">9</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">9</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">27</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">27</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">81</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">81</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>243</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">243</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>n</code> triple à chaque tour : 1 → 3 → 9 → 27 → 81 → 243. La boucle s&rsquo;exécute <strong>5 fois</strong> (le dernier tour faisant passer <code>n</code> au-dessus de 100).</p>
+<p><strong>Réponse : <code>5</code> fois</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Que renvoie cette fonction ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">f</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> n
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>9</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>11</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>n</code> avant test</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td><code>n = 1 + 2</code> = 3, puis <code>return 3</code> → <strong>fin</strong> de la fonction</td>
+      </tr>
+  </tbody>
+</table>
+<p>Piège classique d&rsquo;<strong>indentation</strong> : la ligne <code>return n</code> est dans le bloc de la boucle (8 espaces), donc elle s&rsquo;exécute dès le <strong>premier tour</strong> et interrompt la fonction. La boucle ne fait qu&rsquo;un seul tour.</p>
+<p>Pour boucler correctement jusqu&rsquo;à <code>n ≥ 10</code>, il faut placer <code>return n</code> <strong>après</strong> la boucle :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">f</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> n            <span style="color:#60a0b0;font-style:italic"># ← 4 espaces, hors de la boucle</span>
+</span></span></code></pre></div><p><strong>Réponse : <code>3</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Que renvoie cette fonction ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">cible</span>(c):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    n <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">while</span> c <span style="color:#666">&lt;</span> <span style="color:#40a070">10000</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        c <span style="color:#666">=</span> c <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        n <span style="color:#666">=</span> n <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">return</span> n
+</span></span></code></pre></div><p>Que renvoie <code>cible(1000)</code> ?</p>
+
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Boucle infinie</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>c</code> avant test</th>
+          <th style="text-align: center"><code>c &lt; 10 000</code></th>
+          <th style="text-align: center"><code>c</code> après (<code>×2</code>)</th>
+          <th style="text-align: center"><code>n</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1 000</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">2 000</td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2 000</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">4 000</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">4 000</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">8 000</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">8 000</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center"><strong>16 000</strong></td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Stop</td>
+          <td style="text-align: center">16 000</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">—</td>
+      </tr>
+  </tbody>
+</table>
+<p>Il faut <strong>4 doublements</strong> pour passer de 1 000 à 16 000 (premier multiple de 2 ≥ 10 000).
+1 000 × 2⁴ = 16 000 ≥ 10 000 ✓, mais 1 000 × 2³ = 8 000 &lt; 10 000.</p>
+<p><strong>Réponse : <code>4</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1779183430';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

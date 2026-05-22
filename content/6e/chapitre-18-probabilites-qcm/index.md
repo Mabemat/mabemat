@@ -91,7 +91,7 @@ $$p = \frac{3}{6} = \frac{1}{2}$$
 
 {{< qcm correct="0" >}}
 ---Q---
-On tire une carte au hasard dans les **13 cartes** du mot **MATHÉMATIQUES**.<br> Quelle est la probabilité de tirer la lettre **M** ?
+On tire une carte au hasard dans les **13 cartes** du mot **MATHÉMATIQUES**.<br> Quelle est la probabilité de tirer la lettre **T** ?
 
 - $\dfrac{2}{13}$
 - $\dfrac{1}{13}$
@@ -99,7 +99,8 @@ On tire une carte au hasard dans les **13 cartes** du mot **MATHÉMATIQUES**.<br
 - Aucune réponse
 
 ---CORR---
-La lettre M apparaît **2 fois** dans MATHÉMATIQUES (en 1ère et 6e position). Il y a 13 cartes au total.
+La lettre T apparaît **2 fois** dans MATHÉMATIQUES (en 1ère et 6e position). <br>
+Il y a 13 cartes au total.
 
 $$p = \frac{2}{13}$$
 
@@ -108,8 +109,8 @@ Attention : $\dfrac{1}{13}$ est l'erreur de l'élève qui oublie que M est en do
 
 {{< qcm correct="1" >}}
 ---Q---
-Un événement a une probabilité de $0{,}9$. <br>
-On peut dire qu'il est :
+Soit A l'évènement : "Il ne neigera pas demain" <br>
+Si nous sommes le 14 Juillet, on peut dire qu'il est :
 
 - Impossible
 - Très probable
@@ -117,20 +118,13 @@ On peut dire qu'il est :
 - Aucune réponse
 
 ---CORR---
-On se repère sur l'échelle des probabilités :
-
-- $0$ → impossible
-- Proche de $0$ → improbable
-- $0{,}5$ → une chance sur deux
-- Proche de $1$ → **très probable**
-- $1$ → certain
-
-$0{,}9$ est proche de $1$ mais pas égal à $1$, donc l'événement est **très probable** (pas certain).
+L'événement est **très probable** (pas certain).
 {{< /qcm >}}
 
 {{< qcm correct="2" >}}
 ---Q---
-Un sac contient **3 billes rouges**, **2 billes bleues** et **1 bille verte**. On tire une bille au hasard. Quelle est la probabilité de tirer une bille **rouge** ?
+Un sac contient **3 billes rouges**, **2 billes bleues** et **1 bille verte**. On tire une bille au hasard. <br>
+Quelle est la probabilité de tirer une bille **rouge** ?
 
 - $\dfrac{1}{6}$
 - $\dfrac{2}{6}$
@@ -143,10 +137,10 @@ Il y a $3 + 2 + 1 = 6$ billes au total. Il y a **3 billes rouges**.
 $$p = \frac{3}{6} = \frac{1}{2}$$
 {{< /qcm >}}
 
-{{< qcm correct="0" >}}
+{{< qcm correct="3" >}}
 ---Q---
 On lance un dé équilibré à 6 faces. <br>
-Quelle est la probabilité d'obtenir un nombre **supérieur ou égal à 5** ?
+Quelle est la probabilité d'obtenir un nombre **inférieur ou égal à 5** ?
 
 - $\dfrac{2}{6}$
 - $\dfrac{1}{6}$
@@ -154,9 +148,9 @@ Quelle est la probabilité d'obtenir un nombre **supérieur ou égal à 5** ?
 - Aucune réponse
 
 ---CORR---
-Les nombres supérieurs ou égaux à 5 sur un dé sont : **5 et 6** → 2 issues favorables.
+Les nombres supérieurs ou égaux à 5 sur un dé sont : **1, 2, 3, 4 et 5** → 5 issues favorables.
 
-$$p = \frac{2}{6} = \frac{1}{3}$$
+$$p = \frac{5}{6} $$
 
-C'est l'exemple traité dans le cours !
+
 {{< /qcm >}}

@@ -945,6 +945,9 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   letter-spacing: -0.015em; line-height: 1.25;
   margin: 0 0 24px; color: var(--ink); max-width: 88%; overflow-wrap: break-word; word-break: break-word;
 }
+.lvl-6e .q-card h2 {
+  font-size: clamp(16px, 2vw, 18px);
+}
 
 /* Options */
 .options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; width: 100%; box-sizing: border-box; }

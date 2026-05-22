@@ -1,0 +1,62 @@
+{{ $type := .Get "type" }}
+{{ $isAuto := eq $type "auto" }}
+{{ $layout := .Get "layout" }}
+{{ $isGrid := eq $layout "grid" }}
+{{ $letters := slice "A" "B" "C" "D" }}
+
+{{ $raw := .Inner }}
+
+{{ $parts := split $raw "---Q---" }}
+{{ $afterQ := index $parts 1 }}
+
+{{ $parts2 := split $afterQ "---CORR---" }}
+{{ $questionBlock := index $parts2 0 }}
+{{ $correctionRaw := index $parts2 1 }}
+
+{{ $lines := split $questionBlock "\n" }}
+{{ $options := slice }}
+{{ $questionText := "" }}
+
+{{ range $lines }}
+  {{ $trim := trim . " \t\r\n" }}
+  {{ if hasPrefix $trim "- " }}
+    {{ $options = $options | append (strings.TrimPrefix "- " $trim) }}
+  {{ else if ne $trim "" }}
+    {{ $questionText = printf "%s\n%s" $questionText $trim }}
+  {{ end }}
+{{ end }}
+
+<div class="qcm-q{{ if $isAuto }} qcm-auto{{ end }}" data-correct="{{ .Get "correct" }}">
+  <div class="qcm-question">
+    {{ $questionText | markdownify }}
+  </div>
+
+  <div class="qcm-opts{{ if $isGrid }} qcm-opts-grid{{ end }}">
+    {{ $i := 0 }}
+    {{ range $options }}
+      {{ if $isAuto }}
+      <div class="qcm-o" data-index="{{ $i }}" onclick="qcmCheck(this)">
+        <span class="qcm-letter">{{ index $letters $i }}.</span>
+        <span>{{ . | markdownify }}</span>
+      </div>
+      {{ else }}
+      <div class="qcm-o" data-index="{{ $i }}" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>{{ . | markdownify }}</span>
+      </div>
+      {{ end }}
+      {{ $i = add $i 1 }}
+    {{ end }}
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  {{ if $isAuto }}
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    {{ .Page.RenderString $correctionRaw }}
+  </div>
+  {{ else }}
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    {{ .Page.RenderString $correctionRaw }}
+  </div>
+  {{ end }}
+</div>

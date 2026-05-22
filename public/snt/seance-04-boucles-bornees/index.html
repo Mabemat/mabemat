@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Séance 04 · Boucles bornées — MaBémath</title>
+<title>Séance 04 — Boucles bornées — MaBémath</title>
 <link rel="icon" href="/mabemat/favicon.ico" sizes="any">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/mabemat/favicon.svg">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.283f3ed042649f04a6c1cbbf6cc404249c5138eb46d77067a18d515eac3e6140.css" integrity="sha256-KD8&#43;0EJknwSmwcu/bMQEJJxROOtG13BnoY1RXqw&#43;YUA=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.ebf465600767090adb588a4670b8842195a20793e6cc6e38aac476598c54a54a.css" integrity="sha256-6/RlYAdnCQrbWIpGcLiEIZWiB5PmzG44qsR2WYxUpUo=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -126,13 +126,21 @@ pre[style*="background-color"] {
   </a>
   <nav>
     
+    
     <a href="/mabemat/6e/">6e</a>
+    
     
     <a href="/mabemat/3e/">3e</a>
     
+    
     <a href="/mabemat/2nde/">2nde</a>
     
+    
     <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/" class="active">Python</a>
+    
     
     <a href="/mabemat/liens/">Liens</a>
     
@@ -159,21 +167,766 @@ pre[style*="background-color"] {
 
 
 
-<div class="static-page">
-  <h1>Séance 04 · Boucles bornées</h1>
-  <h2 id="-compétences-à-maîtriser">🎯 Compétences à maîtriser</h2>
-<ul>
-<li><strong>Utiliser <code>for</code></strong> — Itérer sur une séquence</li>
-<li><strong>Utiliser <code>range()</code></strong> — Générer des entiers</li>
-<li><strong>Accumulateurs</strong> — Somme, produit, compteur</li>
-</ul>
-<hr>
-<h2 id="-notebook-capytale">📓 Notebook Capytale</h2>
-<p><a class="btn" href="https://capytale.ac/notebook/..." target="_blank" style="color:#4A5D7A; border-color:#4A5D7A;">📓 Ouvrir le notebook</a></p>
-<hr>
-<p><em>Correction et QCM à venir.</em></p>
 
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  <a href="/mabemat/snt/">Python</a>
+  <span class="sep">/</span>
+  <span>Boucles bornées</span>
 </div>
+
+
+<section class="sn-hero fade-up d1">
+  <div class="eyebrow">Python · Séance 04</div>
+  <h1>Boucles bornées</h1>
+
+  <div class="meta">
+    <span><span class="dot"></span>10 exercices</span>
+    <span><span class="dot"></span>QCM · 20 questions</span>
+    <span><span class="dot"></span>Notebook Capytale</span>
+  </div>
+</section>
+
+
+
+<div class="sn-notebook fade-up d1">
+  <div class="info">
+    <strong>Capytale</strong>
+    <span>Accès avec votre identifiant MonLycée.net</span>
+  </div>
+  <a href="https://capytale2.ac-paris.fr/web/c/4e4e-11081666" class="nb-btn" target="_blank" rel="noopener">Ouvrir →</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab-bar fade-up d2" role="tablist">
+  
+  <button class="active" data-tab="exos" role="tab">Exercices <span class="count">10</span></button>
+  
+  
+  <button data-tab="editor" role="tab">Éditeur Python</button>
+</div>
+
+
+
+<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="exercice-1--population-dun-village">Exercice 1 — Population d&rsquo;un village</h3>
+<p>Un village compte aujourd&rsquo;hui <strong>2 300 habitants</strong>. Sa population augmente de <strong>150 habitants par an</strong>.</p>
+<p><strong>Q1.</strong> Exécuter l&rsquo;algorithme suivant avec n = 3 en donnant la valeur de P à chaque étape de la boucle :</p>
+<pre tabindex="0"><code>P ← 2300
+Pour k variant de 0 à n-1 :
+    P ← P + 150
+Fin Pour
+</code></pre><p><strong>Q2.</strong> Compléter la fonction Python <code>population(n)</code> qui renvoie le nombre d&rsquo;habitants dans n années.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">population</span>(<span style="color:#666">...</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    P <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#666">...</span> :
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        P <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#666">...</span>
+</span></span></code></pre></div><p><strong>Q3.</strong> Appeler la fonction pour vérifier la réponse de la question 1.</p>
+<hr>
+<h3 id="exercice-2--somme-des-entiers">Exercice 2 — Somme des entiers</h3>
+<p>On considère l&rsquo;algorithme suivant :</p>
+<pre tabindex="0"><code>s ← 0
+Pour k variant de 1 à n :
+    s ← s + k
+Fin Pour
+</code></pre><p><strong>Q1.</strong> Exécuter cet algorithme avec n = 5 en donnant la valeur de s à chaque étape.</p>
+<p><strong>Q2.</strong> Programmer cet algorithme dans une fonction Python <code>som(n)</code> qui renvoie s.</p>
+<hr>
+<h3 id="exercice-3--analyse-de-programme">Exercice 3 — Analyse de programme</h3>
+<p>On considère le programme suivant :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    a <span style="color:#666">=</span> a <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">2</span> <span style="color:#666">*</span> a
+</span></span></code></pre></div><p><strong>Q1.</strong> Quel est le bloc d&rsquo;instructions répété dans la boucle <code>for</code> ? Combien de fois est-il répété ?</p>
+<p><strong>Q2.</strong> Quelle est la valeur finale de la variable <code>a</code> ?</p>
+<p><strong>Q3.</strong> Recopiez ce programme en ajoutant <code>print(a)</code> à la fin. Exécutez-le et vérifiez votre réponse.</p>
+<hr>
+<h3 id="exercice-4--code-puzzle-interactif">Exercice 4 — Code puzzle (interactif)</h3>
+<p>Cet exercice est interactif : ouvrir le notebook et exécuter les cellules de l&rsquo;exercice 4 pour répondre aux questions.</p>
+<hr>
+<h3 id="exercice-5--prédire-lexécution">Exercice 5 — Prédire l&rsquo;exécution</h3>
+<p>Voici quatre programmes avec des boucles <code>for</code>. <strong>Sans les exécuter</strong>, prédisez ce que chacun affiche (ou l&rsquo;erreur produite).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#60a0b0;font-style:italic"># Programme A</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(i)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Fin&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#60a0b0;font-style:italic"># Programme B  (contient une erreur)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(i)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Fin&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#60a0b0;font-style:italic"># Programme C</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(i)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;---&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Fin&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#60a0b0;font-style:italic"># Programme D</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;dans la boucle&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;hors de la boucle&#34;</span>)
+</span></span></code></pre></div><hr>
+<h3 id="exercice-6--réseau-social">Exercice 6 — Réseau social</h3>
+<p>Un réseau social avait <strong>25 000 utilisateurs en 2021</strong>. Son nombre d&rsquo;utilisateurs <strong>double chaque année</strong>.</p>
+<p><strong>Q1.</strong> Compléter la fonction <code>users()</code> qui renvoie le nombre d&rsquo;utilisateurs en 2025.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">users</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    u <span style="color:#666">=</span> <span style="color:#40a070">25000</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#666">...</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        u <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#666">...</span>
+</span></span></code></pre></div><p><strong>Q2.</strong> Appeler cette fonction pour connaître le nombre d&rsquo;utilisateurs en 2025. Vérifier le calcul.</p>
+<p><strong>Q3.</strong> Quelle modification faut-il faire pour connaître le nombre d&rsquo;utilisateurs en <strong>2030</strong> ?</p>
+<p><strong>Q4. (plus difficile)</strong> Modifier la fonction <code>users</code> pour qu&rsquo;elle prenne un paramètre <code>annee</code> et renvoie le nombre d&rsquo;utilisateurs cette année-là. Par exemple, <code>users(2030)</code> doit renvoyer la valeur estimée pour 2030.</p>
+<hr>
+<h3 id="exercice-7--le-blob">Exercice 7 — Le blob</h3>
+<p>Un blob est un organisme unicellulaire qui <strong>double son nombre de cellules chaque jour</strong> s&rsquo;il se nourrit correctement.</p>
+<p>Compléter la fonction <code>blob(n, j)</code> qui renvoie le nombre de cellules du blob au bout de <code>j</code> jours, en partant de <code>n</code> cellules.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">blob</span>(n, j):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    P <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#666">...</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        P <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> P
+</span></span></code></pre></div><hr>
+<h3 id="exercice-8--épargne-de-gaspard">Exercice 8 — Épargne de Gaspard</h3>
+<p>Les parents de Gaspard ont déposé <strong>1 500 €</strong> sur son livret d&rsquo;épargne à un taux d&rsquo;intérêt de <strong>2 %</strong> par an (c&rsquo;est-à-dire que la somme est multipliée par 1.02 chaque année).</p>
+<p><strong>Q1.</strong> Écrire un programme Python pour savoir combien Gaspard aura au bout de <strong>10 ans</strong>.</p>
+<p><strong>Q2.</strong> Modifier le programme pour que l&rsquo;utilisateur puisse choisir le nombre d&rsquo;années et la somme initiale.</p>
+<p><strong>Q3.</strong> Modifier le programme pour que l&rsquo;utilisateur puisse également choisir le taux d&rsquo;intérêt (en pourcentage).</p>
+<hr>
+<h3 id="exercice-9--tortue-python">Exercice 9 — Tortue Python</h3>
+<p>Le module <code>turtle</code> permet de dessiner avec Python. La fonction <code>carre()</code> ci-dessous trace un carré en répétant 4 fois les mêmes instructions.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">turtle</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">carre</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    left(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    left(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    left(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    left(<span style="color:#40a070">90</span>)
+</span></span></code></pre></div><p><strong>Q2.</strong> Réécrire la fonction <code>carre()</code> en utilisant une boucle <code>for</code>.</p>
+<p><strong>Q3.</strong> Créer une fonction <code>triangle()</code> qui trace un triangle équilatéral avec une boucle <code>for</code>. (Pour un triangle équilatéral, on tourne de 120° à chaque coin.)</p>
+<p><strong>Q4.</strong> Modifier <code>carre</code> et <code>triangle</code> pour qu&rsquo;elles aient un paramètre <code>cote</code> (longueur d&rsquo;un côté). Par exemple, <code>carre(50)</code> trace un carré de côté 50.</p>
+<hr>
+<h3 id="exercice-10--notes-de-classe">Exercice 10 — Notes de classe</h3>
+<p>On dispose des notes d&rsquo;une classe de 10 élèves :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>notes <span style="color:#666">=</span> [<span style="color:#40a070">14</span>, <span style="color:#40a070">7</span>, <span style="color:#40a070">18</span>, <span style="color:#40a070">5</span>, <span style="color:#40a070">12</span>, <span style="color:#40a070">9</span>, <span style="color:#40a070">16</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">11</span>, <span style="color:#40a070">8</span>]
+</span></span></code></pre></div><p><strong>Q1.</strong> Exécuter le programme ci-dessous et observer comment la boucle <code>for</code> et le <code>if</code> coopèrent.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> note <span style="color:#007020;font-weight:bold">in</span> notes:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020">print</span>(note, <span style="color:#4070a0">&#34;→ reçu ✓&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020">print</span>(note, <span style="color:#4070a0">&#34;→ recalé ✗&#34;</span>)
+</span></span></code></pre></div><p><strong>Q2.</strong> Expliquer pourquoi <code>print(note, &quot;→ recalé ✗&quot;)</code> s&rsquo;exécute pour la note 7 mais pas pour la note 14. Quel rôle joue l&rsquo;indentation dans ce programme ?</p>
+<p><strong>Q3.</strong> Compléter le programme ci-dessous pour qu&rsquo;il compte et affiche le <strong>nombre d&rsquo;élèves reçus</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>notes <span style="color:#666">=</span> [<span style="color:#40a070">14</span>, <span style="color:#40a070">7</span>, <span style="color:#40a070">18</span>, <span style="color:#40a070">5</span>, <span style="color:#40a070">12</span>, <span style="color:#40a070">9</span>, <span style="color:#40a070">16</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">11</span>, <span style="color:#40a070">8</span>]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>compteur <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">for</span> note <span style="color:#007020;font-weight:bold">in</span> notes:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">...</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        compteur <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Nombre d&#39;élèves reçus :&#34;</span>, compteur)
+</span></span></code></pre></div><p><strong>Q4.</strong> Sans l&rsquo;exécuter, combien d&rsquo;élèves sont reçus ? Vérifiez ensuite en exécutant.</p>
+</div>
+  <div id="exo-corrs" hidden><h3 id="exercice-1--population-dun-village">Exercice 1 — Population d&rsquo;un village</h3>
+<p><strong>Q1.</strong> Tableau de trace pour n = 3 :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Étape</th>
+          <th>k</th>
+          <th>P</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Initialisation</td>
+          <td>—</td>
+          <td>2300</td>
+      </tr>
+      <tr>
+          <td>Tour 1</td>
+          <td>0</td>
+          <td>2300 + 150 = <strong>2450</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 2</td>
+          <td>1</td>
+          <td>2450 + 150 = <strong>2600</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 3</td>
+          <td>2</td>
+          <td>2600 + 150 = <strong>2750</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Dans 3 ans, le village aura <strong>2750 habitants</strong>.</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">population</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    P <span style="color:#666">=</span> <span style="color:#40a070">2300</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        P <span style="color:#666">=</span> P <span style="color:#666">+</span> <span style="color:#40a070">150</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> P
+</span></span></code></pre></div><p><strong>Q3.</strong> <code>population(3)</code> → <code>2750</code> ✓</p>
+<hr>
+<h3 id="exercice-2--somme-des-entiers">Exercice 2 — Somme des entiers</h3>
+<p><strong>Q1.</strong> Tableau de trace pour n = 5 :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Étape</th>
+          <th>k</th>
+          <th>s</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Initialisation</td>
+          <td>—</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td>Tour 1</td>
+          <td>1</td>
+          <td>0 + 1 = <strong>1</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 2</td>
+          <td>2</td>
+          <td>1 + 2 = <strong>3</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 3</td>
+          <td>3</td>
+          <td>3 + 3 = <strong>6</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 4</td>
+          <td>4</td>
+          <td>6 + 4 = <strong>10</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 5</td>
+          <td>5</td>
+          <td>10 + 5 = <strong>15</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">som</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>, n <span style="color:#666">+</span> <span style="color:#40a070">1</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        s <span style="color:#666">=</span> s <span style="color:#666">+</span> k
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> s
+</span></span></code></pre></div><p><code>som(5)</code> → <code>15</code></p>
+<hr>
+<h3 id="exercice-3--analyse-de-programme">Exercice 3 — Analyse de programme</h3>
+<p><strong>Q1.</strong> Le bloc répété est <code>a = a + 1</code>. Il est répété <strong>4 fois</strong> (range(4) génère 0, 1, 2, 3).</p>
+<p><strong>Q2.</strong> Tableau de trace :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Étape</th>
+          <th>i</th>
+          <th>a</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Avant boucle</td>
+          <td>—</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Tour 1</td>
+          <td>0</td>
+          <td>2 + 1 = <strong>3</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 2</td>
+          <td>1</td>
+          <td>3 + 1 = <strong>4</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 3</td>
+          <td>2</td>
+          <td>4 + 1 = <strong>5</strong></td>
+      </tr>
+      <tr>
+          <td>Tour 4</td>
+          <td>3</td>
+          <td>5 + 1 = <strong>6</strong></td>
+      </tr>
+      <tr>
+          <td>Après boucle</td>
+          <td>—</td>
+          <td>2 × 6 = <strong>12</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>La valeur finale de <code>a</code> est <strong>12</strong>.</p>
+<hr>
+<h3 id="exercice-4--code-puzzle-interactif">Exercice 4 — Code puzzle (interactif)</h3>
+<p>Exercice à réaliser directement dans le notebook.</p>
+<hr>
+<h3 id="exercice-5--prédire-lexécution">Exercice 5 — Prédire l&rsquo;exécution</h3>
+<p><strong>Programme A</strong> — Affiche :</p>
+<pre tabindex="0"><code>0
+1
+2
+Fin
+</code></pre><p><code>range(3)</code> génère 0, 1, 2. <code>print(&quot;Fin&quot;)</code> est hors de la boucle (non indenté), il s&rsquo;exécute une seule fois à la fin.</p>
+<p><strong>Programme B</strong> — Erreur <code>IndentationError</code> : <code>print(i)</code> n&rsquo;est pas indenté dans le bloc du <code>for</code>.</p>
+<p><strong>Programme C</strong> — Affiche :</p>
+<pre tabindex="0"><code>0
+---
+1
+---
+2
+---
+Fin
+</code></pre><p>Les deux <code>print</code> sont dans la boucle (tous les deux indentés), ils s&rsquo;exécutent à chaque tour.</p>
+<p><strong>Programme D</strong> — Affiche :</p>
+<pre tabindex="0"><code>dans la boucle
+dans la boucle
+dans la boucle
+dans la boucle
+hors de la boucle
+</code></pre><p><code>range(4)</code> → 4 tours. <code>print(&quot;hors de la boucle&quot;)</code> n&rsquo;est pas indenté, il s&rsquo;exécute une seule fois après la boucle.</p>
+<hr>
+<h3 id="exercice-6--réseau-social">Exercice 6 — Réseau social</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">users</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    u <span style="color:#666">=</span> <span style="color:#40a070">25000</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):   <span style="color:#60a0b0;font-style:italic"># 4 années : 2021→2022→2023→2024→2025</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        u <span style="color:#666">=</span> u <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> u
+</span></span></code></pre></div><p><strong>Q2.</strong> <code>users()</code> → <code>400000</code></p>
+<p>Vérification : 25 000 × 2⁴ = 25 000 × 16 = <strong>400 000</strong> ✓</p>
+<p><strong>Q3.</strong> Pour 2030 (9 années depuis 2021), il faut <code>range(9)</code> au lieu de <code>range(4)</code>.</p>
+<p><code>users()</code> avec <code>range(9)</code> → 25 000 × 2⁹ = 25 000 × 512 = <strong>12 800 000</strong></p>
+<p><strong>Q4.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">users</span>(annee):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    u <span style="color:#666">=</span> <span style="color:#40a070">25000</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(annee <span style="color:#666">-</span> <span style="color:#40a070">2021</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        u <span style="color:#666">=</span> u <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> u
+</span></span></code></pre></div><p><code>users(2030)</code> → <code>12800000</code> ✓</p>
+<hr>
+<h3 id="exercice-7--le-blob">Exercice 7 — Le blob</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">blob</span>(n, j):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    P <span style="color:#666">=</span> n
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(j):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        P <span style="color:#666">=</span> P <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> P
+</span></span></code></pre></div><p>Exemple : <code>blob(100, 3)</code> → 100 × 2³ = <strong>800</strong> cellules.</p>
+<hr>
+<h3 id="exercice-8--épargne-de-gaspard">Exercice 8 — Épargne de Gaspard</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>capital <span style="color:#666">=</span> <span style="color:#40a070">1500</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">10</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> <span style="color:#40a070">1.02</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(capital)
+</span></span></code></pre></div><p>Résultat : environ <strong>1828.49 €</strong> (1500 × 1.02¹⁰ ≈ 1828.49).</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>capital <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Somme initiale (€) : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>nb_annees <span style="color:#666">=</span> <span style="color:#007020">int</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Nombre d&#39;années : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(nb_annees):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> <span style="color:#40a070">1.02</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Capital final :&#34;</span>, <span style="color:#007020">round</span>(capital, <span style="color:#40a070">2</span>), <span style="color:#4070a0">&#34;€&#34;</span>)
+</span></span></code></pre></div><p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>capital <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Somme initiale (€) : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>nb_annees <span style="color:#666">=</span> <span style="color:#007020">int</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Nombre d&#39;années : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>taux <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Taux d&#39;intérêt (%) : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(nb_annees):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> (<span style="color:#40a070">1</span> <span style="color:#666">+</span> taux <span style="color:#666">/</span> <span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Capital final :&#34;</span>, <span style="color:#007020">round</span>(capital, <span style="color:#40a070">2</span>), <span style="color:#4070a0">&#34;€&#34;</span>)
+</span></span></code></pre></div><hr>
+<h3 id="exercice-9--tortue-python">Exercice 9 — Tortue Python</h3>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">carre</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        left(<span style="color:#40a070">90</span>)
+</span></span></code></pre></div><p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">triangle</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        forward(<span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        left(<span style="color:#40a070">120</span>)
+</span></span></code></pre></div><p><strong>Q4.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">carre</span>(cote):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        forward(cote)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        left(<span style="color:#40a070">90</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">triangle</span>(cote):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>        forward(cote)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>        left(<span style="color:#40a070">120</span>)
+</span></span></code></pre></div><hr>
+<h3 id="exercice-10--notes-de-classe">Exercice 10 — Notes de classe</h3>
+<p><strong>Q2.</strong> Pour la note 7 : <code>7 &gt;= 10</code> est <strong>faux</strong>, donc Python entre dans le <code>else</code> et exécute <code>print(note, &quot;→ recalé ✗&quot;)</code>. Pour la note 14 : <code>14 &gt;= 10</code> est <strong>vrai</strong>, Python entre dans le <code>if</code> et exécute <code>print(note, &quot;→ reçu ✓&quot;)</code>.</p>
+<p>L&rsquo;indentation détermine quelle instruction appartient au <code>if</code> et laquelle appartient au <code>else</code>.</p>
+<p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>notes <span style="color:#666">=</span> [<span style="color:#40a070">14</span>, <span style="color:#40a070">7</span>, <span style="color:#40a070">18</span>, <span style="color:#40a070">5</span>, <span style="color:#40a070">12</span>, <span style="color:#40a070">9</span>, <span style="color:#40a070">16</span>, <span style="color:#40a070">3</span>, <span style="color:#40a070">11</span>, <span style="color:#40a070">8</span>]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>compteur <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">for</span> note <span style="color:#007020;font-weight:bold">in</span> notes:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">if</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Nombre d&#39;élèves reçus :&#34;</span>, compteur)
+</span></span></code></pre></div><p><strong>Q4.</strong> Notes ≥ 10 : 14 ✓, 18 ✓, 12 ✓, 16 ✓, 11 ✓ → <strong>5 élèves reçus</strong>.</p>
+</div>
+  <div id="exo-list"></div>
+</section>
+
+
+
+
+
+
+<section id="editor" class="tab-panel">
+  <div class="snt-qcm-intro">
+    <span class="badge">Bac à sable</span>
+    <span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span>
+  </div>
+  <div class="py-editor">
+    <div class="py-editor-head">
+      <span class="dot"></span>
+      <span>Python · main.py</span>
+    </div>
+    <textarea id="pyCode" spellcheck="false" rows="8">a = 15
+b = 10
+c = a + b
+print(c)</textarea>
+    <div class="py-editor-foot">
+      <button onclick="runPython()">▸ Exécuter</button>
+    </div>
+    <div class="py-editor-out empty" id="pyOut">Sortie du programme…</div>
+  </div>
+  <p class="py-editor-note">
+    Cet éditeur utilise <strong>Pyodide</strong> (Python en WebAssembly). Le premier lancement peut prendre quelques secondes.
+  </p>
+</section>
+
+
+
+<div class="chap-adjacent" style="margin-top:64px;">
+  <a class="adj-link prev" href="/mabemat/snt/">
+    <div><div class="adj-lbl">← Toutes les séances</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/snt/seance-05-boucles-non-bornees/">
+    <div><div class="adj-lbl">Séance suivante →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+<script>
+ 
+var UNLOCKED = "[]";
+function isUnlocked(n) { return UNLOCKED.indexOf(n) !== -1; }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+   
+  var buttons = document.querySelectorAll('.tab-bar button');
+  var panels  = document.querySelectorAll('.tab-panel');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.dataset.tab;
+      buttons.forEach(function(b) { b.classList.toggle('active', b === btn); });
+      panels.forEach(function(p) { p.classList.toggle('active', p.id === target); });
+      if (target === 'editor') {
+        var ta = document.getElementById('pyCode');
+        if (ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+      }
+    });
+  });
+
+   
+  var pyCodeEl = document.getElementById('pyCode');
+  if (pyCodeEl) {
+    function autoResize(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+    autoResize(pyCodeEl);
+    pyCodeEl.addEventListener('input', function() { autoResize(pyCodeEl); });
+  }
+
+   
+  (function buildExoCards() {
+    var enoDiv  = document.getElementById('exo-enonces');
+    var corrDivSrc = document.getElementById('exo-corrs');
+    var listDiv = document.getElementById('exo-list');
+    if (!listDiv) return;
+
+     
+    function parseBlocks(container) {
+      if (!container) return [];
+      var blocks = [];
+      var h3s = Array.from(container.querySelectorAll('h3'));
+      h3s.forEach(function(h3) {
+        var m = h3.textContent.match(/Exercice\s+(\d+)/i);
+        var num = m ? parseInt(m[1]) : 0;
+        var title = h3.textContent.replace(/^Exercice\s+\d+\s*[\u2014\u2013-]\s*/i, '').trim();
+        var body = document.createElement('div');
+        var next = h3.nextElementSibling;
+        while (next && next.tagName !== 'H3') {
+           
+          if (next.tagName !== 'HR') body.appendChild(next.cloneNode(true));
+          next = next.nextElementSibling;
+        }
+        blocks.push({ num: num, title: title, html: body.innerHTML });
+      });
+      return blocks;
+    }
+
+    var enonces = parseBlocks(enoDiv);
+    var corrMap = {};
+    parseBlocks(corrDivSrc).forEach(function(b) { corrMap[b.num] = b.html; });
+
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+    enonces.forEach(function(eno) {
+      var unlocked = isUnlocked(eno.num);
+      var corrHtml = corrMap[eno.num] || '';
+      var hasCorr  = corrHtml.length > 0;
+
+      var art = document.createElement('article');
+      art.className = 'exo';
+      art.dataset.id = 'ex' + eno.num;
+      art.dataset.unlocked = unlocked ? 'true' : 'false';
+
+      var html =
+        '<div class="exo-head">' +
+          '<div class="exo-num">' + pad2(eno.num) + '</div>' +
+          '<div class="exo-label">Exercice</div>' +
+          '<div class="exo-titre">' + eno.title + '</div>' +
+        '</div>' +
+        '<div class="exo-body"><div class="exo-enonce">' + eno.html + '</div></div>';
+
+      if (hasCorr) {
+        html +=
+          '<div class="exo-actions">' +
+            '<span class="exo-status">' +
+              (unlocked ? 'Correction publi\u00e9e' : 'Correction non publi\u00e9e') +
+            '</span>' +
+            '<button class="exo-btn" type="button"' + (unlocked ? '' : ' disabled') + '>' +
+              '<span class="arrow">&#9658;</span> <span>Voir la correction</span>' +
+            '</button>' +
+          '</div>';
+        if (!unlocked) {
+          html +=
+            '<div class="exo-corr-locked">' +
+              '<span class="icon">&#9747;</span>' +
+              '<span>La correction sera disponible quand votre enseignante l\'aura publi\u00e9e.</span>' +
+            '</div>';
+        }
+        html +=
+          '<div class="exo-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      art.innerHTML = html;
+
+       
+      if (hasCorr && unlocked) {
+        var btn  = art.querySelector('.exo-btn');
+        var corr = art.querySelector('.exo-corr');
+        btn.addEventListener('click', function() {
+          var open = corr.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          btn.querySelector('span:last-child').textContent =
+            open ? 'Masquer la correction' : 'Voir la correction';
+        });
+      }
+
+      listDiv.appendChild(art);
+    });
+  })();
+
+
+   
+  (function initSNTQcm() {
+    var container = document.querySelector('#qcm .qcm-container[data-engine="snt"]');
+    if (!container) return;
+
+    var rawQs = container.querySelectorAll('.qcm-q');
+    if (!rawQs.length) return;
+
+    var letters = ['A', 'B', 'C', 'D', 'E'];
+    var articles = [];
+
+    rawQs.forEach(function(qEl, i) {
+      var correct = parseInt(qEl.dataset.correct, 10);
+      var qHtml = qEl.querySelector('.qcm-question') ? qEl.querySelector('.qcm-question').innerHTML.trim() : '';
+      var opts = [];
+      qEl.querySelectorAll('.qcm-o').forEach(function(o) {
+        var span = o.querySelector('span:not(.qcm-letter):not(.rd)');
+        opts.push(span ? span.innerHTML.trim() : o.innerHTML.trim());
+      });
+      var corrEl = qEl.querySelector('.qcm-correction');
+      var corrHtml = corrEl ? corrEl.innerHTML.trim() : '';
+
+      var num = String(i + 1).padStart(2, '0');
+      var html =
+        '<div class="qcm-head">' +
+          '<div class="qcm-num">' + num + '</div>' +
+          '<div class="qcm-label">Question</div>' +
+          '<div class="qcm-status"></div>' +
+        '</div>' +
+        '<div class="qcm-enonce">' + qHtml + '</div>' +
+        '<div class="qcm-choices">';
+
+      opts.forEach(function(opt, j) {
+        html += '<button class="qcm-choice">' +
+          '<span class="bullet">' + letters[j] + '</span>' +
+          '<span>' + opt + '</span>' +
+        '</button>';
+      });
+      html += '</div>';
+
+      if (corrHtml) {
+        html +=
+          '<div class="qcm-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      articles.push({ html: html, correct: correct });
+    });
+
+     
+    var total = articles.length;
+    var progressHtml =
+      '<div class="qcm-progress">' +
+        '<span class="qcm-prog-label">Progression</span>' +
+        '<div class="qcm-prog-bar"><div class="qcm-prog-fill" id="sntQcmFill" style="width:0%"></div></div>' +
+        '<span class="qcm-prog-stats" id="sntQcmStats">0 / ' + total + ' répondue' + (total > 1 ? 's' : '') + '</span>' +
+      '</div>';
+
+    var articlesHtml = articles.map(function(a, i) {
+      return '<article class="qcm" data-correct="' + a.correct + '">' + a.html + '</article>';
+    }).join('');
+
+    container.innerHTML = progressHtml + articlesHtml;
+
+    function updateProgress() {
+      var all = container.querySelectorAll('article.qcm');
+      var answered = container.querySelectorAll('article.qcm.locked');
+      var ok = container.querySelectorAll('article.qcm .qcm-status.ok').length;
+      var ko = container.querySelectorAll('article.qcm .qcm-status.ko').length;
+      var fill = document.getElementById('sntQcmFill');
+      var stats = document.getElementById('sntQcmStats');
+      if (fill) fill.style.width = (answered.length / all.length * 100) + '%';
+      if (stats) stats.innerHTML =
+        answered.length + ' / ' + all.length + ' répondue' + (all.length > 1 ? 's' : '') +
+        (answered.length > 0
+          ? ' · <span class="ok">' + ok + ' ✓</span> · <span class="ko">' + ko + ' ✕</span>'
+          : '');
+    }
+
+    container.querySelectorAll('article.qcm').forEach(function(qcm) {
+      var idx = parseInt(qcm.dataset.correct, 10);
+      var choices = Array.from(qcm.querySelectorAll('.qcm-choice'));
+      var status = qcm.querySelector('.qcm-status');
+      if (!isNaN(idx) && choices[idx]) choices[idx].classList.add('is-correct');
+      choices.forEach(function(choice, i) {
+        choice.addEventListener('click', function() {
+          if (qcm.classList.contains('locked')) return;
+          choice.classList.add('selected');
+          var isCorrect = (i === idx);
+          choice.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+          qcm.classList.add('locked');
+          status.textContent = isCorrect ? '✓ Correct' : '✕ Incorrect';
+          status.classList.add(isCorrect ? 'ok' : 'ko');
+           
+          if (window.renderMathInElement) {
+            var corr = qcm.querySelector('.qcm-corr');
+            if (corr) renderMathInElement(corr, {
+              delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],
+              throwOnError: false
+            });
+          }
+          updateProgress();
+        });
+      });
+    });
+
+    updateProgress();
+  })();
+
+});
+
+ 
+var pyodideReady = null;
+async function getPyodide() {
+  if (!pyodideReady) {
+    pyodideReady = (async () => {
+      var out = document.getElementById('pyOut');
+      out.classList.add('empty');
+      out.textContent = 'Chargement de Python…';
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js';
+      document.head.appendChild(script);
+      await new Promise(function(r) { script.onload = r; });
+      var py = await loadPyodide();
+      out.textContent = '';
+      return py;
+    })();
+  }
+  return pyodideReady;
+}
+
+async function runPython() {
+  var code = document.getElementById('pyCode').value;
+  var out  = document.getElementById('pyOut');
+  out.classList.remove('empty');
+  out.textContent = 'Exécution…';
+  try {
+    var py = await getPyodide();
+    var buf = '';
+    py.setStdout({ batched: function(s) { buf += s + '\n'; } });
+    py.setStderr({ batched: function(s) { buf += s + '\n'; } });
+    await py.runPythonAsync(code);
+    out.textContent = buf || '(Pas de sortie)';
+    if (!buf) out.classList.add('empty');
+  } catch(e) {
+    out.textContent = String(e);
+    out.classList.remove('empty');
+  }
+}
+</script>
+
 
 
     </div>
@@ -204,7 +957,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1778154897';
+    const BUILD_TS = '1779462281';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
-<text x="100" y="18" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8b1f30" font-weight="bold" font-style="normal">Empilement de cubes</text>
-<text x="300" y="18" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#8b1f30" font-weight="bold" font-style="normal">Pavé droit 4×2×2</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 175" width="400" height="175">
+
+
 <polygon points="100.0,144.0 114.0,136.0 100.0,128.0 86.0,136.0" fill="#F4C49A" stroke="#8b1f30" stroke-width="1"/>
 <polygon points="100.0,160.0 86.0,152.0 86.0,136.0 100.0,144.0" fill="#C5875A" stroke="#8b1f30" stroke-width="1"/>
 <polygon points="114.0,152.0 100.0,144.0 100.0,128.0 114.0,136.0" fill="#D9A882" stroke="#8b1f30" stroke-width="1"/>
@@ -61,5 +61,5 @@
 <line x1="235.0" y1="104.0" x2="307.0" y2="64.0" stroke="#8b1f30" stroke-width="1.5"/>
 <line x1="307.0" y1="64.0" x2="419.0" y2="64.0" stroke="#8b1f30" stroke-width="1.5"/>
 <line x1="347.0" y1="160.0" x2="419.0" y2="120.0" stroke="#8b1f30" stroke-width="1.5"/>
-<text x="200" y="195" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#6B5D62" font-weight="normal" font-style="italic">Les deux solides ont le même volume (16 cubes)</text>
+
 </svg>

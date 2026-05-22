@@ -1,0 +1,3745 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-snt">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM — Boucles bornées — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.882ff8074cb0d6b3cdf2c8e8020dc4ee25a5f2edb8d475b4c3ff0d8030264884.css" integrity="sha256-iC/4B0yw1rPN8sjoAg3E7iWl8u241HW0w/8NgDAmSIQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/" class="active">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+
+  
+
+  
+    <a href="/mabemat/snt/seance-04-boucles-bornees/">
+      
+        Séance 04 — Boucles bornées
+      
+    </a>
+    <span class="sep">/</span>
+  
+
+  <span>QCM — Boucles bornées</span>
+</div>
+
+
+<div class="qcm-page">
+  <h1 style="color: #4A5D7A;">QCM — Boucles bornées</h1>
+  <div class="qcm-container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quel mot-clé permet de <strong>répéter</strong> un nombre fixé de fois un bloc d&rsquo;instructions ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>repeat</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>for</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>loop</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>while</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Mot-clé</th>
+          <th>Rôle en Python</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>for</code></td>
+          <td>Répète un bloc un <strong>nombre donné</strong> de fois (boucle bornée)</td>
+      </tr>
+      <tr>
+          <td><code>while</code></td>
+          <td>Répète tant qu&rsquo;une condition est vraie (boucle non bornée)</td>
+      </tr>
+      <tr>
+          <td><code>repeat</code>, <code>loop</code></td>
+          <td>N&rsquo;existent pas en Python</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Réponse : <code>for</code></strong></p>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Par quel caractère doit se terminer la <strong>première ligne</strong> d&rsquo;une boucle <code>for</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">5</span>)<span style="">?</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(i)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>.</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>:</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>,</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Comme pour <code>def</code> et <code>if</code>, la ligne <code>for</code> se termine obligatoirement par <strong>deux-points</strong> : ils annoncent le bloc d&rsquo;instructions à répéter.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">5</span>):       <span style="color:#60a0b0;font-style:italic"># ← deux-points obligatoires</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(i)
+</span></span></code></pre></div><p>Sans les <code>:</code>, Python signale une <code>SyntaxError</code>.</p>
+<p><strong>Réponse : <code>:</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Quelle est la suite des valeurs prises par <code>i</code> dans cette boucle ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">5</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(i)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1, 2, 3, 4, 5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0, 1, 2, 3, 4, 5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0, 1, 2, 3, 4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5, 4, 3, 2, 1, 0</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Suite générée</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>range(5)</code></td>
+          <td><strong>0, 1, 2, 3, 4</strong></td>
+      </tr>
+      <tr>
+          <td><code>range(3)</code></td>
+          <td>0, 1, 2</td>
+      </tr>
+      <tr>
+          <td><code>range(1)</code></td>
+          <td>0</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>range(n)</code> commence à <strong>0</strong> et s&rsquo;arrête <strong>avant</strong> <code>n</code> : la valeur <code>n</code> n&rsquo;est <strong>jamais</strong> atteinte.</p>
+<p><strong>Réponse : <code>0, 1, 2, 3, 4</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Combien de fois la boucle <code>for i in range(7):</code> répète-t-elle son bloc ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>7</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>8</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>range(n)</code></th>
+          <th>Valeurs</th>
+          <th style="text-align: center">Nombre de tours</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>range(7)</code></td>
+          <td>0, 1, 2, 3, 4, 5, 6</td>
+          <td style="text-align: center"><strong>7</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>range(10)</code></td>
+          <td>0…9</td>
+          <td style="text-align: center">10</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>range(n)</code> produit exactement <strong>n</strong> valeurs, donc la boucle fait <strong>n</strong> tours.</p>
+<p><strong>Réponse : <code>7</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(i)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>1</code> puis <code>2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code> puis <code>2</code> puis <code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>1</code> puis <code>2</code> puis <code>3</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center">Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center"><code>0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center"><code>1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center"><code>2</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>range(3)</code> parcourt <strong>0, 1, 2</strong> — la valeur 3 elle-même n&rsquo;est pas atteinte.</p>
+<p><strong>Réponse : <code>0</code> puis <code>1</code> puis <code>2</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;dans&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;hors&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>dans</code> (1 fois) puis <code>hors</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>dans</code> (4 fois) puis <code>hors</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>hors</code> puis <code>dans</code> (4 fois)</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center">Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center"><code>dans</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center"><code>dans</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center"><code>dans</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center"><code>dans</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">(après boucle)</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center"><code>hors</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>print(&quot;dans&quot;)</code> est <strong>indenté</strong> → il fait partie de la boucle (4 répétitions). <code>print(&quot;hors&quot;)</code> est <strong>hors</strong> de la boucle → il s&rsquo;exécute <strong>une seule fois</strong> à la fin.</p>
+<p><strong>Réponse : <code>dans</code> (4 fois) puis <code>hors</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Quelle est l&rsquo;erreur dans ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020">print</span>(i)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il manque les <code>:</code> à la fin du <code>for</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>print(i)</code> n&rsquo;est <strong>pas indenté</strong></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>range(3)</code> n&rsquo;existe pas en Python</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il n&rsquo;y a pas d&rsquo;erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Le corps d&rsquo;une boucle <code>for</code> doit être <strong>indenté</strong> (4 espaces). Sans indentation, Python ne sait pas quelles instructions doivent être répétées → <code>IndentationError</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(i)        <span style="color:#60a0b0;font-style:italic"># ← 4 espaces</span>
+</span></span></code></pre></div><p><strong>Réponse : <code>print(i)</code> n&rsquo;est pas indenté</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quelle est la suite des valeurs prises par <code>i</code> dans <code>for i in range(2, 6):</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2, 3, 4, 5, 6</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2, 3, 4, 5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2, 4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0, 1, 2, 3, 4, 5</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Suite générée</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>range(2, 6)</code></td>
+          <td><strong>2, 3, 4, 5</strong></td>
+      </tr>
+      <tr>
+          <td><code>range(0, 6)</code></td>
+          <td>0, 1, 2, 3, 4, 5</td>
+      </tr>
+      <tr>
+          <td><code>range(6)</code></td>
+          <td>0, 1, 2, 3, 4, 5</td>
+      </tr>
+  </tbody>
+</table>
+<p>Avec deux arguments, <code>range(début, fin)</code> commence à <code>début</code> et s&rsquo;arrête <strong>avant</strong> <code>fin</code> : la valeur <code>fin</code> n&rsquo;est jamais atteinte.</p>
+<p><strong>Réponse : <code>2, 3, 4, 5</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>s <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    s <span style="color:#666">=</span> s <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(s)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>k</code></th>
+          <th style="text-align: center"><code>s</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">0 + 1 = <strong>1</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1 + 1 = <strong>2</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2 + 1 = <strong>3</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3 + 1 = <strong>4</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>On ajoute 1 à <code>s</code> à chaque tour, et il y a <strong>4 tours</strong> → <code>s</code> finit à <strong>4</strong>.</p>
+<p><strong>Réponse : <code>4</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>s <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>, <span style="color:#40a070">5</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    s <span style="color:#666">=</span> s <span style="color:#666">+</span> k
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(s)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>15</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>k</code></th>
+          <th style="text-align: center"><code>s</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0 + 1 = <strong>1</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1 + 2 = <strong>3</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3 + 3 = <strong>6</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">6 + 4 = <strong>10</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>range(1, 5)</code> parcourt 1, 2, 3, 4. On calcule donc 1 + 2 + 3 + 4 = <strong>10</strong>.</p>
+<p><strong>Réponse : <code>10</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que renvoie cette fonction ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">f</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    u <span style="color:#666">=</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">3</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        u <span style="color:#666">=</span> u <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> u
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>8</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center"><code>u</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">1 × 2 = <strong>2</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2 × 2 = <strong>4</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">4 × 2 = <strong>8</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>À chaque tour, <code>u</code> est <strong>doublé</strong>. Après 3 tours : 1 × 2³ = <strong>8</strong>.</p>
+<p><strong>Réponse : <code>8</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">5</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    a <span style="color:#666">=</span> a <span style="color:#666">+</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(a)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>12</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>20</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>25</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center"><code>a</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">10</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">12</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">14</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">16</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">18</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">20</td>
+      </tr>
+  </tbody>
+</table>
+<p>On ajoute 2 à <code>a</code> <strong>5 fois</strong> : 10 + 5 × 2 = <strong>20</strong>.</p>
+<p><strong>Réponse : <code>20</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">2</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(i)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;ok&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>ok</code> puis <code>1</code> puis <code>ok</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>1</code> puis <code>ok</code> puis <code>ok</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>ok</code> puis <code>ok</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code> puis <code>ok</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center">Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center"><code>0</code> puis <code>ok</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center"><code>1</code> puis <code>ok</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Les <strong>deux</strong> <code>print</code> sont indentés → ils appartiennent tous les deux à la boucle. À chaque tour, Python exécute le bloc <strong>dans l&rsquo;ordre</strong>, ligne par ligne.</p>
+<p><strong>Réponse : <code>0</code> puis <code>ok</code> puis <code>1</code> puis <code>ok</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que renvoie <code>population(3)</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">population</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    P <span style="color:#666">=</span> <span style="color:#40a070">2300</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        P <span style="color:#666">=</span> P <span style="color:#666">+</span> <span style="color:#40a070">150</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> P
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2450</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2600</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2750</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2900</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>k</code></th>
+          <th style="text-align: center"><code>P</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">2300</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">2300 + 150 = <strong>2450</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2450 + 150 = <strong>2600</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">2600 + 150 = <strong>2750</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>La boucle ajoute 150 trois fois : 2300 + 3 × 150 = <strong>2750</strong>.</p>
+<p><strong>Réponse : <code>2750</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>compteur <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> n <span style="color:#007020;font-weight:bold">in</span> [<span style="color:#40a070">14</span>, <span style="color:#40a070">7</span>, <span style="color:#40a070">18</span>, <span style="color:#40a070">5</span>, <span style="color:#40a070">12</span>]:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(compteur)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>n</code></th>
+          <th style="text-align: center"><code>n &gt;= 10</code></th>
+          <th style="text-align: center"><code>compteur</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">14</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">0 → <strong>1</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">18</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">1 → <strong>2</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">✗</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">✓</td>
+          <td style="text-align: center">2 → <strong>3</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Compteur incrémenté uniquement quand la note est ≥ 10 : 14, 18 et 12 → <strong>3 notes</strong>.</p>
+<p><strong>Réponse : <code>3</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quelle est la suite des valeurs prises par <code>i</code> dans <code>for i in range(0, 10, 2):</code> ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0, 1, 2, 3, …, 9</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0, 2, 4, 6, 8</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0, 2, 4, 6, 8, 10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2, 4, 6, 8, 10</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Suite générée</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>range(0, 10, 2)</code></td>
+          <td><strong>0, 2, 4, 6, 8</strong></td>
+      </tr>
+      <tr>
+          <td><code>range(0, 10, 3)</code></td>
+          <td>0, 3, 6, 9</td>
+      </tr>
+      <tr>
+          <td><code>range(1, 10, 2)</code></td>
+          <td>1, 3, 5, 7, 9</td>
+      </tr>
+  </tbody>
+</table>
+<p>Avec trois arguments, <code>range(début, fin, pas)</code> ajoute <code>pas</code> à chaque tour, en s&rsquo;arrêtant <strong>avant</strong> d&rsquo;atteindre <code>fin</code>. Ici 10 n&rsquo;est jamais inclus.</p>
+<p><strong>Réponse : <code>0, 2, 4, 6, 8</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="3">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    a <span style="color:#666">=</span> a <span style="color:#666">+</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">2</span> <span style="color:#666">*</span> a
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(a)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>3</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>6</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>8</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>12</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Étape</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center"><code>a</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center"><strong>6</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Après boucle</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">2 × 6 = <strong>12</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>La ligne <code>a = 2 * a</code> est <strong>hors</strong> de la boucle (non indentée) : elle ne s&rsquo;exécute qu&rsquo;<strong>une seule fois</strong>, après les 4 tours.</p>
+<p><strong>Réponse : <code>12</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Que renvoie cette fonction ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">f</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">5</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        s <span style="color:#666">=</span> s <span style="color:#666">+</span> k
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> s
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>15</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>25</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>k</code></th>
+          <th style="text-align: center"><code>s</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">0</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center"><strong>0</strong></td>
+          <td style="text-align: center">0 + 0 = 0</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0 + 1 = 1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1 + 2 = 3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3 + 3 = 6</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">6 + 4 = <strong>10</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Piège classique : <code>range(5)</code> commence à <strong>0</strong>, donc on additionne 0 + 1 + 2 + 3 + 4 = <strong>10</strong> (pas 1 + 2 + 3 + 4 + 5 = 15).</p>
+<p><strong>Réponse : <code>10</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que renvoie cette fonction ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">users</span>():
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    u <span style="color:#666">=</span> <span style="color:#40a070">25000</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">4</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        u <span style="color:#666">=</span> u <span style="color:#666">*</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> u
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>100000</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>200000</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>400000</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>800000</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>i</code></th>
+          <th style="text-align: center"><code>u</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Initialisation</td>
+          <td style="text-align: center">—</td>
+          <td style="text-align: center">25 000</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">50 000</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">100 000</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">200 000</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center"><strong>400 000</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>u</code> est doublé 4 fois : 25 000 × 2⁴ = 25 000 × 16 = <strong>400 000</strong>.</p>
+<p><strong>Réponse : <code>400000</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Que renvoie <code>somme_jusqu_a(4)</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">somme_jusqu_a</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>, n <span style="color:#666">+</span> <span style="color:#40a070">1</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        s <span style="color:#666">=</span> s <span style="color:#666">+</span> k
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> s
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>4</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>k</code></th>
+          <th style="text-align: center"><code>s</code></th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">0 + 1 = 1</td>
+          <td><code>return s</code> → <strong>fin de la fonction</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Piège d&rsquo;<strong>indentation</strong> très classique : la ligne <code>return s</code> est indentée <strong>dans la boucle</strong> (8 espaces), donc elle s&rsquo;exécute dès le <strong>premier tour</strong> et interrompt immédiatement la fonction. La boucle ne fait qu&rsquo;un seul tour.</p>
+<p>Pour calculer correctement la somme 1 + 2 + 3 + 4 = 10, il faut placer <code>return s</code> <strong>après</strong> la boucle :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">somme_jusqu_a</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(<span style="color:#40a070">1</span>, n <span style="color:#666">+</span> <span style="color:#40a070">1</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        s <span style="color:#666">=</span> s <span style="color:#666">+</span> k
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> s                <span style="color:#60a0b0;font-style:italic"># ← 4 espaces, hors de la boucle</span>
+</span></span></code></pre></div><p><strong>Réponse : <code>1</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1779183430';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

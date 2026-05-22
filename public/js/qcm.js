@@ -20,6 +20,8 @@
   /* ── Initialisation ── */
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.qcm-container').forEach(function (container) {
+      /* Les conteneurs SNT ont leur propre moteur (design maquette) */
+      if (container.dataset.engine === 'snt') return;
       var auto = container.querySelector('.qcm-auto');
       if (auto) {
         initLegacy(container);   // automatismes — ancien comportement conservé
@@ -226,13 +228,20 @@
       var res = document.createElement('div');
       res.className = 'result';
 
+      var pct = Math.round((correctCount / total) * 100);
+
       var scoreDiv = document.createElement('div');
       scoreDiv.className = 'score';
       scoreDiv.innerHTML =
         '<span>' + correctCount + '</span>' +
-        '<span class="sep">/</span>' +
+        '<span style="font-family:inherit;font-style:inherit;font-size:inherit;font-weight:inherit;color:var(--ink-3);">/</span>' +
         '<span style="color:var(--ink-3)">' + total + '</span>';
       res.appendChild(scoreDiv);
+
+      var pctDiv = document.createElement('div');
+      pctDiv.className = 'score-pct';
+      pctDiv.textContent = pct + ' %';
+      res.appendChild(pctDiv);
 
       var h2 = document.createElement('h2');
       h2.innerHTML = msg;

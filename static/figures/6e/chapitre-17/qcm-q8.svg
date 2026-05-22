@@ -1,0 +1,29 @@
+<svg viewBox="-15 -15 345 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- hauteur C → H (tiretée) -->
+  <line x1="50.0" y1="53.0" x2="50.0" y2="165.0"
+        stroke="#666" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <!-- extension de base H → A (tiretée) -->
+  <line x1="50.0" y1="165.0" x2="281.3" y2="165.0"
+        stroke="#666" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <!-- angle droit en H -->
+  <path d="M 50.0,165.0 l 11,0 l 0,-11 l -11,0 z"
+        fill="none" stroke="#333" stroke-width="1.2"/>
+  <!-- triangle A–B–C -->
+  <polygon points="281.3,165.0 85.3,165.0 50.0,53.0"
+           fill="none" stroke="#333" stroke-width="2"/>
+  <!-- base : 7 cm -->
+  <text x="183.3" y="179.0"
+        text-anchor="middle" font-size="14" font-family="sans-serif" fill="#333">7 cm</text>
+  <!-- hauteur : 4 cm (vertical) -->
+  <text x="36.0" y="109.0"
+        text-anchor="middle" font-size="14" font-family="sans-serif" fill="#333"
+        transform="rotate(-90 36.0 109.0)">4 cm</text>
+  <!-- côté AC : 9,2 cm (angle +25.8°) -->
+  <text x="172.1" y="96.4"
+        text-anchor="middle" font-size="13" font-family="sans-serif" fill="#555"
+        transform="rotate(25.8 172.1 96.4)">9,2 cm</text>
+  <!-- côté BC : 4,2 cm (angle +72.5°) -->
+  <text x="81.1" y="104.8"
+        text-anchor="middle" font-size="13" font-family="sans-serif" fill="#555"
+        transform="rotate(72.5 81.1 104.8)">4,2 cm</text>
+</svg>

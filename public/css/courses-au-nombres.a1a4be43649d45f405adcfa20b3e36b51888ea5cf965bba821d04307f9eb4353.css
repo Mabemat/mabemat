@@ -1,0 +1,117 @@
+/* ============================================
+   Courses au nombres — styles
+   (s'appuie sur tokens.css déjà chargé)
+   ============================================ */
+
+/* ── Back link ── */
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.85rem; color: var(--ink-3); font-family: var(--font-mono);
+  letter-spacing: 0.04em; margin-bottom: 2rem; transition: color .2s;
+}
+.back-link:hover { color: var(--ink); }
+
+/* ── Level header ── */
+.level-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1rem; }
+.level-header .bar { width: 4px; height: 100px; border-radius: 4px; flex-shrink: 0; }
+.level-header h1 { font-family: var(--font-serif); font-weight: 300; font-size: clamp(32px,5vw,52px); letter-spacing: -0.02em; margin: 0 0 4px; }
+.level-header p { color: var(--ink-3); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; }
+.lvl-tag { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.06em; text-align: right; }
+.lvl-swatch { display: flex; gap: 4px; margin-bottom: 6px; justify-content: flex-end; }
+.lvl-swatch span { width: 20px; height: 20px; border-radius: 4px; display: inline-block; }
+
+/* ── Lvl sub ── */
+.lvl-sub { margin-top: 28px; display: flex; gap: 40px; flex-wrap: wrap; padding-top: 28px; border-top: 1px solid var(--rule); }
+.lvl-sub .col { flex: 1; min-width: 200px; }
+.lvl-sub h4 { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-3); margin: 0 0 10px; font-weight: 500; }
+.lvl-sub p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+
+/* ── Filter bar ── */
+.filter-bar {
+  margin-top: 56px; display: flex; justify-content: space-between; align-items: center;
+  gap: 20px; flex-wrap: wrap; padding-bottom: 20px;
+}
+.filter-bar .tabs { display: flex; gap: 4px; }
+.filter-bar .tabs button {
+  font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  background: transparent; border: 1px solid transparent; color: var(--ink-3);
+  padding: 8px 14px; border-radius: 999px; cursor: pointer; transition: all .2s;
+}
+.filter-bar .tabs button:hover { color: var(--ink); }
+.filter-bar .tabs button.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* ── Course list ── */
+.course-list { margin: 0 auto; border-top: 1px solid var(--rule); }
+.course-row {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 24px; align-items: center;
+  padding: 24px 8px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+  transition: background .25s, padding .25s;
+}
+.course-row::before {
+  content: ""; position: absolute; left: 0; top: 50%;
+  width: 0; height: 60%; transform: translateY(-50%);
+  background: var(--lc, var(--accent)); transition: width .25s var(--ease-out);
+}
+.course-row:hover { background: var(--paper-2); padding-left: 20px; padding-right: 20px; }
+.course-row:hover::before { width: 4px; }
+
+.course-num {
+  font-family: var(--font-serif); font-style: italic; font-weight: 400;
+  font-size: 48px; letter-spacing: -0.03em; color: var(--lc, var(--accent)); line-height: 1;
+}
+.course-info { min-width: 0; }
+.course-title {
+  font-family: var(--font-serif); font-weight: 400;
+  font-size: 24px; letter-spacing: -0.01em; line-height: 1.15; color: var(--ink);
+}
+.course-meta {
+  display: block; font-family: var(--font-mono); font-size: 12px;
+  color: var(--ink-3); margin-top: 6px; letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.course-meta .sep { opacity: .4; margin: 0 6px; }
+.course-meta .tag-todo { color: var(--lc, var(--accent)); }
+.course-meta .tag-done { color: var(--ink-3); }
+
+.course-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.pdf-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 999px;
+  font-family: var(--font-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  border: 1px solid var(--rule); background: var(--paper);
+  color: var(--ink-3); cursor: pointer; transition: all .2s;
+  text-decoration: none;
+}
+.pdf-btn:hover { transform: translateY(-1px); }
+.pdf-btn.enonce { border-color: var(--lc, var(--accent)); color: var(--lc, var(--accent)); }
+.pdf-btn.enonce:hover { background: var(--lc, var(--accent)); color: #FFF; }
+.pdf-btn.correction { border-color: var(--ink-2); color: var(--ink-2); }
+.pdf-btn.correction:hover { background: var(--ink-2); color: var(--paper); }
+.pdf-btn.disabled { color: var(--ink-4); border-color: var(--paper-3); background: transparent; cursor: not-allowed; }
+.pdf-btn.disabled:hover { transform: none; background: transparent; color: var(--ink-4); }
+.pdf-btn svg { width: 14px; height: 14px; }
+
+.empty-state {
+  background: #FFFFFF; border: 1px solid var(--paper-3); border-radius: var(--r-sm, 6px);
+  padding: 3rem 2rem; text-align: center; color: var(--ink-3); font-size: 14px;
+  margin-top: 24px;
+}
+.empty-state .glyph {
+  font-family: var(--font-serif); font-style: italic; font-size: 64px;
+  color: var(--lc, var(--accent)); opacity: .5; margin-bottom: 8px; line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .course-row { grid-template-columns: 60px 1fr; gap: 12px; }
+  .course-num { font-size: 32px; }
+  .course-title { font-size: 18px; }
+  .course-actions { grid-column: 1 / -1; justify-content: flex-start; }
+  .level-header { flex-wrap: wrap; }
+  .lvl-tag { display: none; }
+  .filter-bar { margin-top: 32px; }
+}

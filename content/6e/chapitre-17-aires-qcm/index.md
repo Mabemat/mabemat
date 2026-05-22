@@ -10,221 +10,197 @@ chapter: "chapitre-17-aires"
 Quelle est l'aire de la figure ci-dessous ?
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q1.svg" alt="Figure en L sur quadrillage" style="max-width:35%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/qcm-q1.svg" alt="Figure en escalier sur quadrillage — unité 1 cm²" style="max-width:55%; height:auto;">
 </div>
 
-- $9 \text{ cm}^2$
-- $7 \text{ cm}^2$
-- $8 \text{ cm}^2$
+- $18 \text{ cm}^2$
+- $14 \text{ cm}^2$
+- $20 \text{ cm}^2$
 - Aucune réponse
 
 ---CORR---
-On décompose la figure en rectangles :
+On compte les cases sur le quadrillage (le petit carré grisé = 1 cm²). 
 
-- Rectangle du bas : $4 \times 1 = 4 \text{ cm}^2$
-- Rectangle gauche : $2 \times 1 = 2 \text{ cm}^2$
-- Rectangle vertical central : $1 \times 3 = 3 \text{ cm}^2$
-
-$$\mathcal{A} = 4 + 2 + 3 = \mathbf{9 \text{ cm}^2}$$
+$$\mathcal{A} = \mathbf{18 \text{ cm}^2}$$
 {{< /qcm >}}
 
 {{< qcm correct="2" >}}
 ---Q---
-Quelle est l'aire de la figure ci-dessous ? (Le petit carré grisé représente $1 \text{ cm}^2$.)
+L'aire du rectangle ci-dessous est de $18$ u.a. <br>
+
+Quelle est l'aire de la **zone non hachurée** (en orange) ?
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q2.svg" alt="Grand carré sur quadrillage avec unité" style="max-width:35%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/qcm-q2.svg" alt="Rectangle hachuré avec zone orange non hachurée" style="max-width:55%; height:auto;">
 </div>
 
-- $16 \text{ cm}^2$
-- $32 \text{ cm}^2$
-- $64 \text{ cm}^2$
+- $6$ u.a.
+- $18$ u.a.
+- $12$ u.a.
 - Aucune réponse
 
 ---CORR---
-Le carré de référence (grisé) mesure $1 \text{ cm}^2$. Le grand carré orange a un côté de $8$ cm (il contient 8 petits carrés par côté).
+On compte les unités d'aire hachurées : $6$ u.a.
 
-$$\mathcal{A} = 8 \times 8 = \mathbf{64 \text{ cm}^2}$$
-
-Attention : il ne faut pas compter les $4 \times 4 = 16$ cases du quadrillage affiché comme si chacune valait $1 \text{ cm}^2$. Ici, chaque case du quadrillage vaut $4 \text{ cm}^2$.
+$$\mathcal{A}_{\text{orange}} = 18 - 6 = \mathbf{12 \text{ u.a.}}$$
 {{< /qcm >}}
 
 {{< qcm correct="1" >}}
 ---Q---
-L'aire du rectangle ci-dessous est de $35 \text{ cm}^2$. Quelle est l'aire de la **zone hachurée** ?
+Quelle est l'aire de la figure ci-dessous ? <br>
+
+(Le petit triangle grisé représente $1 \text{ cm}^2$.)
 
 <div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q3.svg" alt="Rectangle avec zone hachurée et zone orange" style="max-width:35%; height:auto;">
+  <img src="/mabemat/figures/6e/chapitre-17/qcm-q3.svg" alt="Rectangle orange sur quadrillage avec triangle-unité 1 cm²" style="max-width:55%; height:auto;">
 </div>
+
+- $12 \text{ cm}^2$
+- $24 \text{ cm}^2$
+- $6 \text{ cm}^2$
+- Aucune réponse
+
+---CORR---
+Le triangle de référence vaut $1 \text{ cm}^2$. Chaque carré du quadrillage (formé de 2 triangles) vaut donc $2 \text{ cm}^2$.
+
+Le rectangle orange occupe $6 \times 2 = 12$ carrés.
+
+$$\mathcal{A} = 6 \times 2 \times 2 = \mathbf{24 \text{ cm}^2}$$
+{{< /qcm >}}
+
+{{< qcm correct="3" >}}
+---Q---
+Calcule l'aire exacte d'un **disque de rayon $8$ cm**.
+
+- $16\pi \text{ cm}^2$
+- $8\pi \text{ cm}^2$
+- $128\pi \text{ cm}^2$
+- Aucune réponse
+
+---CORR---
+Aucune des trois propositions n'est correcte.
+
+$$\mathcal{A}_{\text{disque}} = r \times r \times \pi = 8 \times 8 \times \pi = \mathbf{64\pi \text{ cm}^2}$$
+
+- $16\pi$ : erreur — c'est $2 \times r \times \pi$, c'est-à-dire le **périmètre** du disque.
+- $8\pi$ : erreur — on a juste multiplié $r$ par $\pi$.
+- $128\pi$ : erreur — on a calculé $2 \times r^2 \times \pi$.
+{{< /qcm >}}
+
+{{< qcm correct="0" >}}
+---Q---
+Calcule l'aire exacte d'un **rectangle de longueur $9$ cm et de largeur $1{,}4$ cm**.
+
+- $12{,}6 \text{ cm}^2$
+- $10{,}4 \text{ cm}^2$
+- $6{,}3 \text{ cm}^2$
+- Aucune réponse
+
+---CORR---
+$$\mathcal{A}_{\text{rectangle}} = L \times l = 9 \times 1{,}4 = \mathbf{12{,}6 \text{ cm}^2}$$
+
+Attention : $10{,}4$ cm correspond au demi-périmètre, pas à l'aire.
+{{< /qcm >}}
+
+{{< qcm correct="1" >}}
+---Q---
+Calcule l'aire exacte d'un **disque de diamètre $14$ cm**.
+
+- $196\pi \text{ cm}^2$
+- $49\pi \text{ cm}^2$
+- $14\pi \text{ cm}^2$
+- Aucune réponse
+
+---CORR---
+Le diamètre est $14$ cm, donc le **rayon** est $r = 14 \div 2 = 7$ cm.
+
+$$\mathcal{A}_{\text{disque}} = r \times r \times \pi = 7 \times 7 \times \pi = \mathbf{49\pi \text{ cm}^2}$$
+
+L'erreur classique est d'utiliser le diamètre à la place du rayon, ce qui donnerait $196\pi$ cm².
+{{< /qcm >}}
+
+{{< qcm correct="2" >}}
+---Q---
+Calcule l'aire exacte d'un **triangle rectangle de base $7$ cm et de hauteur $5$ cm**.
 
 - $35 \text{ cm}^2$
-- $21 \text{ cm}^2$
 - $14 \text{ cm}^2$
+- $17{,}5 \text{ cm}^2$
 - Aucune réponse
 
 ---CORR---
-On compte $14$ petits carrés oranges (non hachurés). La zone hachurée est donc :
+$$\mathcal{A}_{\text{triangle}} = \frac{b \times h}{2} = \frac{7 \times 5}{2} = \frac{35}{2} = \mathbf{17{,}5 \text{ cm}^2}$$
 
-$$\mathcal{A}_{\text{hachurée}} = 35 - 14 = \mathbf{21 \text{ cm}^2}$$
 {{< /qcm >}}
 
-{{< qcm correct="0" >}}
+
+
+{{< qcm correct="1" >}}
 ---Q---
-Calculer l'aire de la Figure 1 et l'aire de la Figure 2 ci-dessous. (Le petit rectangle grisé représente $1$ u.a.)
+Un carré de côté $2$ cm et un rectangle de largeur $2$ cm et de longueur $7$ cm ont une aire qui diffère de $13 \text{ cm}^2$.
 
-<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q4.svg" alt="Deux triangles sur quadrillage" style="max-width:45%; height:auto;">
-</div>
-
-- Fig. 1 : $18$ u.a. $\ $; Fig. 2 : $28$ u.a.
-- Fig. 1 : $9$ u.a. $\ $; Fig. 2 : $14$ u.a.
-- Fig. 1 : $18$ u.a. $\ $; Fig. 2 : $14$ u.a.
+- Vrai
+- Faux
+- Impossible à déterminer
 - Aucune réponse
 
 ---CORR---
-$$\mathcal{A}_1 = \frac{6 \times 3}{2} \times 2 = \mathbf{18} \text{ u.a.}$$
+**Faux.**
 
-$$\mathcal{A}_2 = \frac{7 \times 4}{2} \times 2 = \mathbf{28} \text{ u.a.}$$
+- Aire du carré : $2 \times 2 = 4 \text{ cm}^2$
+- Aire du rectangle : $2 \times 7 = 14 \text{ cm}^2$
+- Différence : $14 - 4 = \mathbf{10 \text{ cm}^2}$
 
-Le $\times 2$ en fin de calcul vient du fait qu'une unité d'aire (u.a.) correspond à un demi-carré du quadrillage.
+La différence est de $10 \text{ cm}^2$, et non de $13 \text{ cm}^2$.
 {{< /qcm >}}
 
-{{< qcm correct="3" >}}
+{{< qcm correct="1" >}}
+---Q---
+Quelle est la longueur du côté d'un carré d'aire $81 \text{ cm}^2$ ?
+
+- $40{,}5 \text{ cm}$
+- $9 \text{ cm}$
+- $27 \text{ cm}$
+- Aucune réponse
+
+---CORR---
+On cherche un nombre dont le carré vaut $81$ :
+
+$$9 \times 9 = 81$$
+
+Donc la longueur du côté est $\mathbf{9 \text{ cm}}$.
+{{< /qcm >}}
+
+{{< qcm correct="2" >}}
 ---Q---
 Convertis :
 
-$$0{,}05 \text{ m}^2 = \ldots\ldots \text{ dm}^2$$
+$$92 \text{ dm}^2 = ... \text{ dam}^2$$
 
-- $0{,}5 \text{ dm}^2$
-- $500 \text{ dm}^2$
-- $50 \text{ dm}^2$
+- $0{,}92 \text{ dam}^2$
+- $920\,000 \text{ dam}^2$
+- $0{,}0092 \text{ dam}^2$
 - Aucune réponse
 
 ---CORR---
-$1 \text{ m}^2 = 100 \text{ dm}^2$, donc la mesure en dm² est **100 fois plus grande** que la mesure en m².
+Entre dm² et dam², il y a **2 cases** dans le tableau des unités d'aire (chaque passage = ÷ 100) :
 
-$$0{,}05 \text{ m}^2 = 0{,}05 \times 100 = \mathbf{5 \text{ dm}^2}$$
+$$92 \text{ dm}^2 = 92 \div 10\,000 = \mathbf{0{,}0092 \text{ dam}^2}$$
 {{< /qcm >}}
 
 {{< qcm correct="1" >}}
 ---Q---
 Convertis :
 
-$$0{,}02 \text{ dm}^2 = \ldots\ldots \text{ cm}^2$$
+$$400 \text{ km}^2 = ... \text{ m}^2$$
 
-- $0{,}2 \text{ cm}^2$
-- $2 \text{ cm}^2$
-- $200 \text{ cm}^2$
+- $40\,000 \text{ m}^2$
+- $400\,000\,000 \text{ m}^2$
+- $4\,000\,000 \text{ m}^2$
 - Aucune réponse
 
 ---CORR---
-$1 \text{ dm}^2 = 100 \text{ cm}^2$, donc la mesure en cm² est **100 fois plus grande** que la mesure en dm².
+Entre km² et m², il y a **3 cases** dans le tableau (chaque passage = × 100) :
 
-$$0{,}02 \text{ dm}^2 = 0{,}02 \times 100 = \mathbf{2 \text{ cm}^2}$$
-{{< /qcm >}}
-
-{{< qcm correct="0" >}}
----Q---
-Convertis :
-
-$$0{,}04 \text{ dm}^2 = \ldots\ldots \text{ m}^2$$
-
-- $0{,}0004 \text{ m}^2$
-- $0{,}04 \text{ m}^2$
-- $4 \text{ m}^2$
-- Aucune réponse
-
----CORR---
-$1 \text{ dm}^2 = \dfrac{1}{100} \text{ m}^2$, donc la mesure en m² est **100 fois plus petite** que la mesure en dm².
-
-$$0{,}04 \text{ dm}^2 = 0{,}04 \div 100 = \mathbf{0{,}0004 \text{ m}^2}$$
-{{< /qcm >}}
-
-{{< qcm correct="2" >}}
----Q---
-Calcule l'aire du carré $FGHI$ ci-dessous.
-
-<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q5.svg" alt="Carré FGHI de côté 4 cm" style="max-width:30%; height:auto;">
-</div>
-
-- $4 \text{ cm}^2$
-- $8 \text{ cm}^2$
-- $16 \text{ cm}^2$
-- Aucune réponse
-
----CORR---
-$$\mathcal{A}_{FGHI} = 4  \times 4  = \mathbf{16 \text{ cm}^2}$$
-{{< /qcm >}}
-
-{{< qcm correct="1" >}}
----Q---
-Calcule l'aire du rectangle $JKLM$ ci-dessous.
-
-<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q6.svg" alt="Rectangle JKLM, 2 cm × 5 cm" style="max-width:30%; height:auto;">
-</div>
-
-- $14 \text{ cm}^2$
-- $10 \text{ cm}^2$
-- $3{,}5 \text{ cm}^2$
-- Aucune réponse
-
----CORR---
-$$\mathcal{A}_{JKLM} = 2  \times 5  = \mathbf{10 \text{ cm}^2}$$
-{{< /qcm >}}
-
-{{< qcm correct="2" >}}
----Q---
-Calcule l'aire du triangle rectangle $NOP$ ci-dessous.
-
-<div style="display:flex; justify-content:center; align-items:center; gap:1.5rem;">
-  <img src="/mabemat/figures/6e/chapitre-17/Q7.svg" alt="Triangle rectangle NOP, base 3 cm, hauteur 5 cm" style="max-width:30%; height:auto;">
-</div>
-
-- $15 \text{ cm}^2$
-- $8{,}7 \text{ cm}^2$
-- $7{,}5 \text{ cm}^2$
-- Aucune réponse
-
----CORR---
-La base est $NO = 3$ cm et la hauteur est $OP = 5$ cm (les deux côtés de l'angle droit).
-
-$$\mathcal{A}_{NOP} = \frac{3 \times 5}{2} = \frac{15}{2} = \mathbf{7{,}5 \text{ cm}^2}$$
-
-Attention : il ne faut pas utiliser l'hypoténuse $NP = 5{,}8$ cm dans la formule de l'aire.
-{{< /qcm >}}
-
-{{< qcm correct="0" >}}
----Q---
-Un carré de côté $8$ cm et un rectangle de largeur $7$ cm et de longueur $8$ cm ont une aire qui diffère de $8 \text{ cm}^2$.
-
-- Vrai, la différence est bien $8 \text{ cm}^2$
-- Faux, la différence est $56 \text{ cm}^2$
-- Faux, les deux figures ont la même aire
-- Aucune réponse
-
----CORR---
-- Aire du carré : $8 \times 8 = 64 \text{ cm}^2$
-- Aire du rectangle : $8 \times 7 = 56 \text{ cm}^2$
-- Différence : $64 - 56 = \mathbf{8 \text{ cm}^2}$
-
-L'affirmation est donc **vraie**.
-{{< /qcm >}}
-
-{{< qcm correct="3" >}}
----Q---
-Quelle est la longueur du côté d'un carré d'aire $49 \text{ cm}^2$ ?
-
-- $24{,}5 \text{ cm}$
-- $12{,}25 \text{ cm}$
-- On ne peut pas savoir
-- Aucune réponse
-
----CORR---
-On cherche un nombre dont le carré vaut $49$ :
-
-$$7 \times 7 = 49 \text{ cm}^2$$
-
-Donc le côté du carré mesure $\mathbf{7 \text{ cm}}$.
+$$400 \text{ km}^2 = 400 \times 100 \times 100 \times 100 = \mathbf{400\,000\,000 \text{ m}^2}$$
 {{< /qcm >}}

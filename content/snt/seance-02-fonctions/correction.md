@@ -4,131 +4,61 @@ title: "Correction"
 
 ### Exercice 1 — Révisions
 
-```python
-prix_unitaire = 1.5
-quantite = 4
-prix_total = prix_unitaire * quantite
-```
+**Q1.** 3 variables : `prix_unitaire`, `quantite`, `prix_total`.
 
-**Question 1 :** Ce programme utilise **3 variables** : `prix_unitaire`, `quantite` et `prix_total`.
+| N° ligne | Instruction | `prix_unitaire` | `quantite` | `prix_total` |
+|:---:|:---|:---:|:---:|:---:|
+| 1 | `prix_unitaire = 1.5` | **1.5** | − | − |
+| 2 | `quantite = 4` | 1.5 | **4** | − |
+| 3 | `prix_total = prix_unitaire * quantite` | 1.5 | 4 | **6.0** |
 
-**Question 2 :** À l'exécution, `prix_total` reçoit la valeur `1.5 × 4 = 6.0`.
-
-| Ligne | `prix_unitaire` | `quantite` | `prix_total` |
-|:---:|---:|---:|---:|
-| 1 | 1.5 | — | — |
-| 2 | 1.5 | 4 | — |
-| 3 | 1.5 | 4 | 1.5×4=**6.0** |
-
-**Réponse :** `prix_total = 6.0` ✓
+`prix_total` vaut **6.0** (1.5 × 4).
 
 ---
 
 ### Exercice 2 — Analyse d'une fonction
 
-```python
-def prix_a_afficher(prix_unitaire, quantite):
-    prix_total = prix_unitaire * quantite
-    return prix_total
-```
+**Q1** : Nom → `prix_a_afficher` · Arguments → `prix_unitaire` et `quantite`.
 
-**Question 1 :**
-- Nom de la fonction : `prix_a_afficher`
-- Paramètres : `prix_unitaire` et `quantite`
+**Q2** : La première ligne se termine par `:` (deux-points). Ce caractère annonce le début du bloc d'instructions — Python le réclame obligatoirement.
 
-**Question 2 :** La première ligne se termine par `:` (deux-points). Ce caractère est **indispensable** pour annoncer le début du bloc d'instructions.
+**Q3** : Les deux lignes du bloc commencent par 4 espaces : c'est l'**indentation**. Elle est obligatoire pour que Python sache quelles instructions appartiennent à la fonction.
 
-**Question 3 :** Les deux lignes du bloc d'instructions commencent par des espaces — ce sont des **indentations** (4 espaces). Elles sont obligatoires pour que Python sache quelles instructions appartiennent à la fonction.
+**Q4** : La fonction renvoie **1 valeur** : `prix_total`.
 
-**Question 4 :** La fonction renvoie **1 variable** : `prix_total`.
+**Q5** : `prix_a_afficher(3, 2)`
 
-**Question 5 :** Pour un article à 3 € acheté en 2 exemplaires :
+| Paramètre | `prix_unitaire` | `quantite` | `prix_total` |
+|:---:|:---:|:---:|:---:|
+| Valeurs | 3 | 2 | 3 × 2 = **6.0** |
 
-```python
-prix_a_afficher(3, 2)
-```
+**Q6** : `prix_a_afficher(1.15, 3)`
 
-| Paramètre | Valeur | Calcul |
-|---|---:|---|
-| `prix_unitaire` | 3 | — |
-| `quantite` | 2 | — |
-| `prix_total` | **6.0** | 3 × 2 |
-
-**Résultat renvoyé :** `6.0` ✓
-
-**Question 6 :** Pour un article à 1,15 € acheté en 3 exemplaires :
-
-```python
-prix_a_afficher(1.15, 3)
-```
-
-| Paramètre | Valeur | Calcul |
-|---|---:|---|
-| `prix_unitaire` | 1.15 | — |
-| `quantite` | 3 | — |
-| `prix_total` | **3.45** | 1.15 × 3 |
-
-**Résultat renvoyé :** `3.45` ✓
+| Paramètre | `prix_unitaire` | `quantite` | `prix_total` |
+|:---:|:---:|:---:|:---:|
+| Valeurs | 1.15 | 3 | 1.15 × 3 = **3.45** |
 
 ---
 
-### Exercice 3 — `truc_muche`
+### Exercice 3 — Fonction `truc_muche`
 
-```python
-def truc_muche(a, b, c):
-    s = a + b + c
-    return s
-```
+**Q1** : a. `truc_muche` · b. `a`, `b`, `c` · c. 2 lignes · d. 1 valeur · e. `truc_muche(2, 5, 1)` = 2 + 5 + 1 = **8**
 
-**Question 1 :**
-
-| | Réponse |
-|---|---|
-| **a. Nom** | `truc_muche` |
-| **b. Paramètres** | `a`, `b`, `c` |
-| **c. Bloc d'instructions** | `s = a + b + c` et `return s` (2 lignes) |
-| **d. Valeurs renvoyées** | 1 valeur : `s` |
-| **e. `truc_muche(2, 5, 1)`** | `2 + 5 + 1 = 8` |
-
-**Question 2 :** Code de la fonction (à écrire et exécuter) :
-
-```python
-def truc_muche(a, b, c):
-    s = a + b + c
-    return s
-```
-
-Après exécution, il ne se passe rien à l'écran — c'est normal : la fonction est simplement mémorisée.
-
-**Question 3 :** Appel `truc_muche(2, 5, 1)` :
+**Q3** :
 
 | Paramètre | `a` | `b` | `c` | `s` |
-|:---:|---:|---:|---:|---:|
-| Valeurs | 2 | 5 | 1 | 2+5+1=**8** |
+|:---:|:---:|:---:|:---:|:---:|
+| Valeurs | 2 | 5 | 1 | 2 + 5 + 1 = **8** |
 
-**Résultat renvoyé :** `8` ✓
-
-**Question 4 :** Pour des paramètres 1, 2, 4 :
-
-```python
-truc_muche(1, 2, 4)
-```
-
-| Paramètre | `a` | `b` | `c` | `s` |
-|:---:|---:|---:|---:|---:|
-| Valeurs | 1 | 2 | 4 | 1+2+4=**7** |
-
-**Résultat renvoyé :** `7` ✓
+**Q4** : `truc_muche(1, 2, 4)` → 1 + 2 + 4 = **7**
 
 ---
 
 ### Exercice 4 — Définition d'une image
 
-**Question 1 :** L'image d'illustration (960 pixels de large, 720 pixels de haut) :
+**Q1** : 960 × 720 = **691 200 pixels**
 
-$$\text{Définition} = 960 \times 720 = \mathbf{691\ 200 \text{ pixels}}$$
-
-**Question 2 :** Fonction complétée :
+**Q2** : Fonction complétée :
 
 ```python
 def definition_image(L, H):
@@ -136,129 +66,177 @@ def definition_image(L, H):
     return d
 ```
 
-**Question 3 :** Pour une image 800 × 600 :
+**Q3** : `definition_image(800, 600)` → **480 000**
 
-```python
-definition_image(800, 600)
-```
-
-| Paramètre | `L` | `H` | `d` |
-|:---:|---:|---:|---:|
-| Valeurs | 800 | 600 | 800×600=**480 000** |
-
-**Résultat renvoyé :** `480000` ✓
-
-**Question 4 :** Pour l'image d'illustration (960 × 720) :
-
-```python
-definition_image(960, 720)
-```
-
-| Paramètre | `L` | `H` | `d` |
-|:---:|---:|---:|---:|
-| Valeurs | 960 | 720 | 960×720=**691 200** |
-
-**Résultat renvoyé :** `691200` ✓ — cohérent avec la réponse à la question 1.
+**Q4** : `definition_image(960, 720)` → **691 200** — cohérent avec la question 1.
 
 ---
 
-### Exercice 5 — Dessiner avec la tortue
-
-**Question 1 :** Les fonctions `forward`, `right` et `left` possèdent chacune **1 paramètre** :
-- `forward(x)` → `x` est le nombre de pixels à avancer
-- `right(a)` et `left(a)` → `a` est l'angle de rotation en degrés
-
-**Question 2 :** Carré de 50 pixels de côté (tourner 4 fois à 90°) :
+### Exercice 5 — Tableau de prédiction
 
 ```python
-from turtle import *
-
-forward(50)
-right(90)
-forward(50)
-right(90)
-forward(50)
-right(90)
-forward(50)
-right(90)
-
-done()
+def triple(n):        return 3 * n
+def score_bonus(b,p): return b * 3 + p
+def convertir(km):    return km * 0.621
 ```
 
-**Question 3 :** Carré de 100 pixels de côté (mêmes instructions, taille × 2) :
+| Appel | Valeur |
+|:---|:---:|
+| `triple(4)` | **12** |
+| `triple(triple(2))` | `triple(6)` = **18** |
+| `score_bonus(2, 3)` | 2×3 + 3 = **9** |
+| `score_bonus(0, 5)` | 0 + 5 = **5** |
+| `score_bonus(1, 0) + score_bonus(0, 2)` | 3 + 2 = **5** |
+| `convertir(10)` | **6.21** |
+| `convertir(0)` | **0.0** |
 
-```python
-from turtle import *
+**Q3** : `convertir` convertit des **kilomètres en miles** (1 km ≈ 0,621 mile).
 
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-
-done()
-```
-
-**Question 4 :** Fonction `carre` avec paramètre `taille` :
-
-```python
-def carre(taille):
-    forward(taille)
-    right(90)
-    forward(taille)
-    right(90)
-    forward(taille)
-    right(90)
-    forward(taille)
-    right(90)
-```
-
-**⚠️ Point clé :** Toutes les lignes du bloc d'instructions sont indentées de 4 espaces. Pas de `done()` à l'intérieur de la fonction — il ne faut le mettre qu'après les appels.
-
-**Question 5 :** Pour obtenir la figure avec plusieurs carrés imbriqués (par exemple de tailles 10, 20, 30, 40, 50, 60, 70, 80) :
-
-```python
-from turtle import *
-
-carre(10)
-carre(20)
-carre(30)
-carre(40)
-carre(50)
-carre(60)
-carre(70)
-carre(80)
-
-done()
-```
+**Q4** : `score_bonus(3, 5)` = 3×3 + 5 = **14**
 
 ---
 
-### Défi — Fonction `rectangle`
+### Exercice 6 — `print` ou `return` ?
 
-Un rectangle a deux dimensions : une longueur et une largeur. On avance alternativement de `longueur` et de `largeur` en tournant à 90° à chaque fois :
+**Q1 — Prédictions** :
+- `duree_trajet_A(300, 100)` : **affiche** `3.0` (car la fonction utilise `print`)
+- `duree_trajet_B(300, 100)` : **n'affiche rien** (car la fonction utilise `return`)
 
-```python
-def rectangle(longueur, largeur):
-    forward(longueur)
-    right(90)
-    forward(largeur)
-    right(90)
-    forward(longueur)
-    right(90)
-    forward(largeur)
-    right(90)
-```
-
-Pour dessiner un court de tennis (dimensions approximatives : 23,77 m × 10,97 m — on utilisera des pixels proportionnels, par exemple 238 × 110) :
+**Q3 — Stocker le résultat** :
 
 ```python
-from turtle import *
-
-rectangle(238, 110)
-
-done()
+resultat_A = duree_trajet_A(300, 100)  # affiche 3.0, puis stocke None
+resultat_B = duree_trajet_B(300, 100)  # n'affiche rien, stocke 3.0
+print(resultat_A)  # affiche : None
+print(resultat_B)  # affiche : 3.0
 ```
+
+`resultat_A` vaut `None` car `duree_trajet_A` ne renvoie rien avec `return`.
+
+**Q4** : `print()` affiche une valeur à l'écran mais **ne la transmet pas** au reste du programme. `return` **renvoie** la valeur pour qu'elle puisse être stockée ou réutilisée.
+
+---
+
+### Exercice 7 — Débogage
+
+**Fonction 1 — `celsius_vers_fahrenheit` (2 erreurs)** :
+
+| Erreur | Ligne | Description |
+|:---:|:---:|:---|
+| 1 | 1 | Manque `:` à la fin de `def celsius_vers_fahrenheit(c)` |
+| 2 | 3 | `Return` avec majuscule → doit être `return` (minuscule) |
+
+Fonction corrigée :
+
+```python
+def celsius_vers_fahrenheit(c):
+    f = c * 9/5 + 32
+    return f
+```
+
+Vérifications : `celsius_vers_fahrenheit(0)` → **32.0** · `celsius_vers_fahrenheit(100)` → **212.0**
+
+---
+
+**Fonction 2 — `imc` (3 erreurs)** :
+
+| Erreur | Ligne | Description |
+|:---:|:---:|:---|
+| 1 | 2 | `resultat = ...` non indenté (doit être dans le bloc de la fonction) |
+| 2 | 3 | `return` non indenté (doit être dans le bloc de la fonction) |
+| 3 | 3 | `return` sans valeur → doit être `return resultat` |
+
+Fonction corrigée :
+
+```python
+def imc(poids, taille):
+    resultat = poids / (taille**2)
+    return resultat
+```
+
+Vérification : `imc(70, 1.75)` = 70 ÷ 1.75² = 70 ÷ 3.0625 ≈ **22.86**
+
+---
+
+### Exercice 8 — Écrire des fonctions
+
+```python
+def aire_triangle(base, hauteur):
+    return base * hauteur / 2
+```
+`aire_triangle(6, 4)` = 6 × 4 ÷ 2 = **12.0** ✓
+
+```python
+def convertir_km_miles(km):
+    return km * 0.621
+```
+`convertir_km_miles(10)` = **6.21** ✓
+
+```python
+def prix_reduit(prix, remise):
+    return prix * (1 - remise / 100)
+```
+`prix_reduit(80, 25)` = 80 × 0.75 = **60.0** ✓
+
+```python
+def pourboire(addition, pourcentage):
+    return addition * pourcentage / 100
+```
+`pourboire(35, 15)` = 35 × 15 ÷ 100 = **5.25** ✓
+
+```python
+def score_basket(un_pt, deux_pts, trois_pts):
+    return un_pt + deux_pts * 2 + trois_pts * 3
+```
+`score_basket(2, 5, 3)` = 2 + 10 + 9 = **21** ✓
+
+---
+
+### Exercice 9 — Carrelage
+
+```python
+def aire_piece(longueur, largeur):
+    return longueur * largeur
+
+def nb_carreaux(longueur, largeur, cote):
+    return aire_piece(longueur, largeur) / (cote * cote)
+
+def cout_chantier(longueur, largeur, cote, prix_carreau):
+    return nb_carreaux(longueur, largeur, cote) * prix_carreau
+```
+
+**Q4** : Pièce 5 m × 4 m, carreaux 0,25 m, 2 €/carreau
+
+| Calcul | Valeur |
+|:---|:---:|
+| Aire pièce | 5 × 4 = 20 m² |
+| Aire d'un carreau | 0,25 × 0,25 = 0,0625 m² |
+| Nombre de carreaux | 20 ÷ 0,0625 = **320** |
+| Coût total | 320 × 2 = **640 €** |
+
+`cout_chantier(5, 4, 0.25, 2)` → **640.0**
+
+---
+
+### Exercice 10 — Cantine scolaire
+
+```python
+def prix_repas(nb_adultes, nb_eleves):
+    return 7.5 * nb_adultes + 3.2 * nb_eleves
+
+def prix_semaine(nb_adultes, nb_eleves):
+    return 5 * prix_repas(nb_adultes, nb_eleves)
+
+def devis(nom_groupe, nb_adultes, nb_eleves):
+    total = prix_semaine(nb_adultes, nb_eleves)
+    return "Devis pour " + nom_groupe + " : " + str(total) + " euros pour la semaine"
+```
+
+Vérifications :
+- `prix_repas(2, 15)` = 7,5×2 + 3,2×15 = 15 + 48 = **63.0** ✓
+- `prix_semaine(2, 15)` = 5 × 63 = **315.0** ✓
+
+**Q4** : `prix_semaine(3, 28)` = 5 × (7,5×3 + 3,2×28) = 5 × (22,5 + 89,6) = 5 × 112,1 = **560.5 €**
+
+`devis("3e A", 3, 28)` → `"Devis pour 3e A : 560.5 euros pour la semaine"`
+

@@ -2,231 +2,323 @@
 title: "Correction"
 ---
 
-### Exercice 1 — Affectations simples et opérations
+### Exercice 1 — Tableau de trace
 
-```python
-a = 15
-b = 10
-c = a + b   # c = 25
-d = c / 2   # d = 12.5
-```
+**Q1.** 
 
-**Traçage des variables étape par étape :**
+| N° ligne | Instruction | `a` | `b` | `c` | `d` |
+|:---:|:---|:---:|:---:|:---:|:---:|
+| 1 | `a = 7` | **7** | − | − | − |
+| 2 | `b = 14` | 7 | **14** | − | − |
+| 3 | `c = a + b` | 7 | 14 | **21** | − |
+| 4 | `d = c / 3` | 7 | 14 | 21 | **7.0** |
 
-| Ligne | `a` | `b` | `c` | `d` |
-|:---:|---:|---:|---:|---:|
-| 1 | 15 | — | — | — |
-| 2 | 15 | 10 | — | — |
-| 3 | 15 | 10 | 15+10=**25** | — |
-| 4 | 15 | 10 | 25 | 25÷2=**12.5** |
-
-**Réponses :**
-- Ligne 3 : `c = 25` ✓
-- Ligne 4 : `d = 12.5` ✓
+`c` vaut 21 (7 + 14) et `d` vaut 7.0 (21 ÷ 3). Le résultat de `/` est toujours un `float` en Python.
 
 ---
 
-### Exercice 2 — Réaffectations (modifications de variables)
+### Exercice 2 — Réaffectations
 
-```python
-a = 8
-b = 3
-a = a - 4   # a = 4
-b = 2 * b   # b = 6
-a = a + b   # a = 10
-```
 
-**⚠️ Point clé :** Quand on écrit `a = a - 4`, cela signifie :
-> *"Prendre l'ancienne valeur de `a`, soustraire 4, et stocker le résultat dans `a`"*
 
-**Traçage détaillé :**
+| N° ligne | Instruction | `x` | `y` |
+|:---:|:---|:---:|:---:|
+| 1 | `x = 12` | **12** | − |
+| 2 | `y = 5` | 12 | **5** |
+| 3 | `x = x - 3` | **9** | 5 |
+| 4 | `y = 3 * y` | 9 | **15** |
+| 5 | `x = x + y` | **24** | 15 |
 
-| Ligne | `a` | `b` | Opération |
-|:---:|---:|---:|---|
-| 1 | 8 | — | On affecte 8 à `a` |
-| 2 | 8 | 3 | On affecte 3 à `b` |
-| 3 | **4** | 3 | `a = 8 - 4` → `a` devient 4 |
-| 4 | 4 | **6** | `b = 2 × 3` → `b` devient 6 |
-| 5 | **10** | 6 | `a = 4 + 6` → `a` devient 10 |
+Ligne 3 : `x = 12 − 3 = 9` - l'ancienne valeur de `x` est utilisée à droite, puis remplacée à gauche.
+Ligne 5 : `x = 9 + 15 = 24`.
 
-**Réponses :**
-- Ligne 3 : `a = 4` ✓
-- Ligne 4 : `b = 6` ✓
-- Ligne 5 : `a = 10` ✓
+---
+
+### Exercice 3 — Entraînement interactif
+
+Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écrite — les exercices codepuzzle vérifient automatiquement vos réponses.
 
 ---
 
 ### Exercice 4 — Types de variables
 
-Une **variable** a toujours un **type** selon sa valeur :
-- `str` = **texte** (entre guillemets)
-- `int` = **nombre entier** (sans virgule)
-- `float` = **nombre décimal** (avec virgule)
-
 | Information | Type | Justification |
-|---|---|---|
-| Nom d'un contact | `str` | Texte : "Marie", "Ali", etc. |
-| Numéro de téléphone | `str` | Même si c'est des chiffres, c'est du texte |
-| SMS | `str` | C'est du texte |
-| Heure du réveil | `str` ou `float` | `str` : "07:30" | `float` : 7.5 |
-| Code Wi-Fi | `str` | Lettres et chiffres mélangés |
-| % batterie | `int` | Nombre entier (0-100) |
-| Notes de maths | `float` | Nombres décimaux (14.5, 18.75, etc.) |
+|:---|:---:|:---|
+| le prénom d'un(e) élève | `str` | texte entre guillemets |
+| le nombre d'élèves | `int` | entier, sans virgule |
+| la distance en km (avec décimales) | `float` | nombre décimal |
+| un SMS | `str` | texte |
+| le code PIN (ex : 1234) | `str` | on n'effectue pas de calcul dessus ; peut commencer par 0 |
+| la température (ex : 18,5 °C) | `float` | nombre décimal |
+| le nombre de paniers | `int` | entier |
+| le fait d'être majeur ou non | `bool` | vrai ou faux |
+| le fait qu'une lampe soit allumée | `bool` | vrai ou faux |
 
 ---
 
-### Exercice 5 — Noms de variables : règles Python
+### Exercice 5 — Booléens en pratique
 
-**Règles pour nommer une variable :**
-1. ✓ Lettres, chiffres, tirets bas `_`
-2. ✓ Doit **commencer par une lettre** (ou `_`)
-3. ✗ Pas d'espace
-4. ✗ Pas de caractères spéciaux
-
-| Nom | ✓/✗ | Raison | Correction |
-|---|:---:|---|---|
-| `prix achat` | ✗ | Espace interdit | `prix_achat` |
-| `prix_achat` | ✓ | Correct |  |
-| `2ndeG` | ✗ | Commence par un chiffre | `classe_2ndeG` |
-| `SecondeG` | ✓ | Correct |  |
-| `Seconde:G` | ✗ | `:` interdit | `Seconde_G` |
-| `dix-huit` | ✗ | `-` signifie soustraction | `dix_huit` |
-
-**Propositions valides :** `nb_filles`, `prix_repas`, `aire`, `note_anglais` ✓
+| Variable | Situation | Valeur |
+|:---|:---|:---:|
+| `est_connecte` | l'utilisateur vient de se déconnecter | `False` |
+| `son_coupe` | l'utilisateur vient de couper le son | `True` |
+| `est_en_pause` | la lecture est en cours | `False` |
+| `abonnement_actif` | l'abonnement a expiré | `False` |
 
 ---
 
-### Exercice 6 — Calculer une moyenne
+### Exercice 6 — Noms de variables
+
+**Q1.**
+
+| Nom | Valide ? | Raison | Correction |
+|:---|:---:|:---|:---|
+| `mon score` | ✗ | espace interdit | `mon_score` |
+| `mon_score` | ✓ | — | — |
+| `vitesse` | ✓ | — | — |
+| `3points` | ✗ | commence par un chiffre | `nb_points` |
+| `distance_m` | ✓ | — | — |
+| `note/20` | ✗ | `/` interdit (opérateur) | `note_sur_20` |
+| `dix_huit` | ✓ | — | — |
+
+**Q2.**
+
+- nombre de spectateurs : `nb_spectateurs`
+- durée d'un trajet : `duree_trajet`
+- périmètre d'un rectangle : `perimetre`
+- score d'un jeu vidéo : `score`
+
+---
+
+### Exercice 7 — Débogage
+
+Les 4 erreurs :
+
+- Ligne 1 : `nb articles` → espace interdit dans un nom de variable
+- Ligne 2 : `prix unitaire` → espace interdit dans un nom de variable
+- Ligne 3 : `prix-total` → le tiret `-` est l'opérateur de soustraction, pas un caractère de nom valide
+- Ligne 4 : `Prix_total` → mauvaise casse (`P` majuscule) ; la variable avait été définie avec `prix` minuscule
+
+Programme corrigé :
 
 ```python
-note1 = 14
-note2 = 15
-note3 = 18
-note4 = 13.5
+nb_articles = 3
+prix_unitaire = 8.50
+prix_total = nb_articles * prix_unitaire
+print(prix_total)
+```
+
+Résultat : `26.5`
+
+---
+
+### Exercice 8 — Calculer une moyenne
+
+```python
+note1 = 11
+note2 = 14.5
+note3 = 9
+note4 = 16
 moyenne = (note1 + note2 + note3 + note4) / 4
 print(moyenne)
 ```
 
-**Traçage des variables étape par étape :**
-
 | Ligne | `note1` | `note2` | `note3` | `note4` | `moyenne` |
-|:---:|---:|---:|---:|---:|---:|
-| 1 | 14 | — | — | — | — |
-| 2 | 14 | 15 | — | — | — |
-| 3 | 14 | 15 | 18 | — | — |
-| 4 | 14 | 15 | 18 | 13.5 | — |
-| 5 | 14 | 15 | 18 | 13.5 | (14+15+18+13.5)÷4 = **15.125** |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 1 | 11 | − | − | − | − |
+| 2 | 11 | 14.5 | − | − | − |
+| 3 | 11 | 14.5 | 9 | − | − |
+| 4 | 11 | 14.5 | 9 | 16 | − |
+| 5 | 11 | 14.5 | 9 | 16 | **(11 + 14.5 + 9 + 16) ÷ 4 = 12.625** |
 
-**Réponse :**
-```
-15.125
-```
+La moyenne est **12.625**.
 
 ---
 
-### Exercice 7 — Programme d'achat
-
-Prix unitaires :
-- Œufs : 3€50 → `3.50`
-- Lait : 1€ → `1.00`
-- Farine : 1€50 → `1.50`
+### Exercice 9 — Programme d'achat
 
 ```python
-nb_oeufs  = 2
-nb_lait   = 1
-nb_farine = 0.5
+prix_maillot = 29
+prix_echarpe = 12.50
+prix_casquette = 15
 
-total = nb_oeufs * 3.50 + nb_lait * 1.00 + nb_farine * 1.50
+qte_maillots = 2
+qte_echarpes = 1
+qte_casquettes = 3
+
+total = qte_maillots * prix_maillot + qte_echarpes * prix_echarpe + qte_casquettes * prix_casquette
 print(total)
 ```
 
-**Traçage des variables étape par étape :**
+| Ligne | Calcul | Valeur |
+|:---|:---|:---:|
+| maillots | 2 × 29 | 58 |
+| écharpe | 1 × 12,50 | 12.5 |
+| casquettes | 3 × 15 | 45 |
+| **total** | 58 + 12,5 + 45 | **115.5** |
 
-| Ligne | `nb_oeufs` | `nb_lait` | `nb_farine` | `total` |
-|:---:|---:|---:|---:|---:|
-| 1 | 2 | — | — | — |
-| 2 | 2 | 1 | — | — |
-| 3 | 2 | 1 | 0.5 | — |
-| 5 | 2 | 1 | 0.5 | 2×3.50 + 1×1.00 + 0.5×1.50 = **8.75** |
+Le coût total est **115,50 €**.
 
-**Réponse :**
+---
+
+### Exercice 10 — Programme de calcul
+
+```python
+B = 4
+B = B * 2    # B = 8
+B = B + 7    # B = 15
+B = B ** 2   # B = 225
+print(B)
 ```
-8.75
+
+| N° ligne | Instruction | `B` |
+|:---:|:---|:---:|
+| 1 | `B = 4` | **4** |
+| 2 | `B = B * 2` | **8** |
+| 3 | `B = B + 7` | **15** |
+| 4 | `B = B ** 2` | **225** |
+
+Le programme affiche `225`.
+
+---
+
+### Exercice 11 — Racine carrée
+
+**Hypoténuse :**
+
+```python
+from math import *
+a = 3
+b = 4
+c = sqrt(a**2 + b**2)
+print(c)
+```
+
+$c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$
+
+Le programme affiche `5.0`. Le triplet (3, 4, 5) est un triplet pythagoricien classique.
+
+**Bonus — Distance A(1, 2) et B(4, 6) :**
+
+```python
+from math import *
+x1, y1 = 1, 2
+x2, y2 = 4, 6
+d = sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print(d)
+```
+
+$d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$
+
+---
+
+### Exercice 12 — Comprendre et compléter un programme
+
+```python
+x = 2
+y = 6
+z = x + y + x * y   # = 2 + 6 + 2×6 = 2 + 6 + 12 = 20
+z = z ** 2           # = 400
+y = z / 2            # = 200.0
+```
+
+| N° ligne | Instruction | `x` | `y` | `z` |
+|:---:|:---|:---:|:---:|:---:|
+| 1 | `x = 2` | **2** | − | − |
+| 2 | `y = 6` | 2 | **6** | − |
+| 3 | `z = x + y + x * y` | 2 | 6 | **20** |
+| 4 | `z = z ** 2` | 2 | 6 | **400** |
+| 5 | `y = z / 2` | 2 | **200.0** | 400 |
+
+Ligne 3 : priorité des opérations — la multiplication `x * y` est calculée en premier : `2 + 6 + 12 = 20`.
+
+**Q2. — `z_est_pair`**
+
+```python
+z_est_pair = (z % 2 == 0)
+```
+
+`400 % 2 = 0`, donc `z_est_pair` vaut `True`. C'est prévisible : tout carré d'un nombre pair est pair.
+
+---
+
+### Exercice 13 — Programme interactif
+
+```python
+n1 = int(input("Premier nombre : "))
+n2 = int(input("Deuxième nombre : "))
+somme = n1 + n2
+print(somme)
+```
+
+Sans `int()`, `input()` renvoie une `str` et l'opérateur `+` ferait une **concaténation** au lieu d'une addition (ex : `"3" + "5"` → `"35"` et non `8`).
+
+---
+
+### Exercice 14 — Prédire et vérifier
+
+```python
+a = "Bon"
+b = "soir"
+c = " !"
+r1 = a + b + c
+r2 = 2 * a + " " + b
+r3 = b + c + " " + b + c
+```
+
+| Variable | Valeur |
+|:---:|:---|
+| `r1` | `"Bonsoir !"` |
+| `r2` | `"BonBon soir"` |
+| `r3` | `"soir ! soir !"` |
+
+Pour afficher exactement `Bonsoir Bonsoir !` :
+
+```python
+print(a + b + " " + a + b + c)
 ```
 
 ---
 
-### Exercice 8 — Programme de calcul
+### Exercice 15 — Ma carte d'identité
 
-Programme :
-1. `A` prend la valeur 5
-2. Multiplier `A` par 3
-3. Soustraire 4 au résultat
-4. Élever le résultat au carré
-5. Afficher le résultat
+La méthode `.upper()` convertit tous les caractères d'une chaîne en **majuscules**.
 
-```python
-A = 5
-A = A * 3      # 15
-A = A - 4      # 11
-A = A ** 2     # 121
-print(A)
-```
+Exemple : si `nom = "Dupont"`, alors `nom.upper()` renvoie `"DUPONT"`.
 
-**Traçage des variables étape par étape :**
-
-| Ligne | `A` |
-|:---:|---:|
-| 1 | **5** |
-| 2 | 5×3 = **15** |
-| 3 | 15−4 = **11** |
-| 4 | 11² = **121** |
-
-**Réponse :**
-```
-121
-```
+Ainsi `print(nom.upper() + " " + prenom)` affiche le nom en majuscules suivi du prénom (ex : `DUPONT Alice`).
 
 ---
 
-### Complément — Opérations sur les chaînes de caractères
-
-Deux opérations possibles sur les `str` :
-
-#### 1️⃣ **Concaténation** avec `+` (joindre)
+### Exercice 16 — Chaînes de caractères et indices
 
 ```python
-chaine1 = "Lou"
-chaine2 = "ane"
-chaine3 = chaine1 + chaine2
-print(chaine3)
+A = 'lu'
+B = A + A       # B = 'lulu'
+C = B + 'ne'    # C = 'lulune'
+D = A + 'miere' # D = 'lumiere'
 ```
 
-**Traçage des variables étape par étape :**
+**Q1.**
 
-| Ligne | `chaine1` | `chaine2` | `chaine3` |
-|:---:|---|---|---|
-| 1 | `"Lou"` | — | — |
-| 2 | `"Lou"` | `"ane"` | — |
-| 3 | `"Lou"` | `"ane"` | `"Lou" + "ane"` = **`"Louane"`** |
+| Variable | Valeur |
+|:---:|:---:|
+| `B` | `'lulu'` |
+| `C` | `'lulune'` |
 
-#### 2️⃣ **Répétition** avec `*` (reproduire)
+**Q2.** `D = 'lumiere'` (7 caractères)
 
-```python
-chaine1 = "Lou"
-chaine4 = 3 * chaine1
-print(chaine4)
-```
+| | `l` | `u` | `m` | `i` | `e` | `r` | `e` |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Indice positif | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+| Indice négatif | −7 | −6 | −5 | −4 | −3 | −2 | −1 |
 
-**Traçage des variables étape par étape :**
+- `len(D)` → **7**
+- `D[0]` → **`'l'`**
+- `D[2]` → **`'m'`**
 
-| Ligne | `chaine1` | `chaine4` |
-|:---:|---|---|
-| 1 | `"Lou"` | — |
-| 2 | `"Lou"` | 3 × `"Lou"` = **`"LouLouLou"`** |
+**Q3.**
 
----
+- `D[-1]` → **`'e'`** (dernier caractère)
+- `D[-3]` → **`'e'`** (indice 4, le `e` de `lumiere`)
 
-Crédits : exercices 6 et 7 inspirés du travail (licence CC BY-SA) de Thomas WOLFF, Lycée Fabert, Metz.
-
-Les enseignants de SNT du lycée Emmanuel Mounier, ANGERS

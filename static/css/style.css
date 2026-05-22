@@ -942,6 +942,9 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   letter-spacing: -0.015em; line-height: 1.25;
   margin: 0 0 24px; color: var(--ink); max-width: 88%; overflow-wrap: break-word; word-break: break-word;
 }
+.lvl-6e .q-card h2 {
+  font-size: clamp(16px, 2vw, 18px);
+}
 
 /* Options */
 .options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; width: 100%; box-sizing: border-box; }
@@ -1014,8 +1017,15 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   display: flex; justify-content: center; align-items: baseline; gap: 6px;
 }
 .result .score .sep {
-  font-family: var(--font-mono); font-style: normal;
-  font-size: clamp(60px, 11vw, 120px); color: var(--ink-3); align-self: center;
+  font-family: var(--font-serif); font-style: italic; font-weight: 400;
+  font-size: clamp(120px, 22vw, 240px); color: var(--ink-3); align-self: baseline;
+  line-height: 1; margin: 0 -0.05em;
+}
+.result .score-pct {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: clamp(22px, 4vw, 36px); font-weight: 300;
+  color: var(--ink-3); letter-spacing: -0.02em;
+  margin-top: 6px;
 }
 .result h2 {
   font-family: var(--font-serif); font-weight: 300;
@@ -1349,8 +1359,8 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 .choix-letter { color: #8B3C52; font-weight: 700; margin-right: 0.25rem; }
 .nl-label { font-size: 0.9rem; color: #666; margin-bottom: 0.2rem; font-style: italic; }
 .qcm-correction table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.6rem 0; }
-.qcm-correction th { text-align: center; font-size: 0.78rem; font-weight: 600; color: var(--text-light); padding: 0.35rem 0.6rem; border-bottom: 2px solid var(--border); background: rgba(0,0,0,0.02); }
-.qcm-correction th code { text-transform: none; letter-spacing: 0; font-size: 0.82rem; }
+.qcm-correction th { text-align: center; font-size: 0.78rem; font-weight: 600; color: var(--text-light); padding: 0.35rem 0.6rem; border-bottom: 2px solid var(--border); background: rgba(0,0,0,0.02); text-transform: none !important; letter-spacing: 0 !important; }
+.qcm-correction th code { text-transform: none; letter-spacing: 0; font-size: 0.82rem; font-family: "Courier New", Courier, monospace; }
 .qcm-correction td { padding: 0.35rem 0.6rem; border-bottom: 1px solid var(--border-light); color: var(--text-sec); text-align: center; }
 .qcm-correction tr:last-child td { border-bottom: none; }
 .qcm-correction td:first-child { color: var(--text-light); font-size: 0.8rem; }
