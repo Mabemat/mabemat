@@ -1,3 +1,3 @@
 ---
-title: "MaBémath"
+title: "MaBémat"
 ---
