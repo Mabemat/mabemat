@@ -1,0 +1,29 @@
+<svg viewBox="-5 -5 450 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1. main shape (fill under grid) -->
+  <polygon points="40,200 0,200 0,120 80,120 80,0 120,0 120,120 160,120 160,40 200,40 200,120 240,120 240,160 320,160 320,200 240,200 240,240 200,240 200,200 160,200 160,160 120,160 120,200 80,200 80,160 40,160" fill="#FFA500" fill-opacity="0.5" stroke="none"/>
+  <!-- 2. grid on top -->
+  <line x1="0" y1="0" x2="0" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="40" y1="0" x2="40" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="80" y1="0" x2="80" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="120" y1="0" x2="120" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="160" y1="0" x2="160" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="200" y1="0" x2="200" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="240" y1="0" x2="240" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="280" y1="0" x2="280" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="320" y1="0" x2="320" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="360" y1="0" x2="360" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="400" y1="0" x2="400" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="440" y1="0" x2="440" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="240" x2="440" y2="240" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="200" x2="440" y2="200" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="160" x2="440" y2="160" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="120" x2="440" y2="120" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="80" x2="440" y2="80" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="40" x2="440" y2="40" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <line x1="0" y1="0" x2="440" y2="0" stroke="#999" stroke-width="0.7" opacity="0.5"/>
+  <!-- 3. shape outline on top of grid -->
+  <polygon points="40,200 0,200 0,120 80,120 80,0 120,0 120,120 160,120 160,40 200,40 200,120 240,120 240,160 320,160 320,200 240,200 240,240 200,240 200,200 160,200 160,160 120,160 120,200 80,200 80,160 40,160" fill="none" stroke="#CC0000" stroke-width="2" stroke-linejoin="round"/>
+  <!-- 4. reference square -->
+  <polygon points="360,40 400,40 400,0 360,0" fill="#888" fill-opacity="0.5" stroke="#333" stroke-width="1"/>
+  <text x="380" y="68" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#333">1 cm²</text>
+</svg>

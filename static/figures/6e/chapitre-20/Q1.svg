@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 165" width="200" height="165">
+<polygon points="40,140 150,140 130,90 60,90" fill="#F4C49A" stroke="#8b1f30" stroke-width="1.5" opacity="0.85"/>
+<polygon points="65,110 175,110 155,60 85,60" fill="#F0B080" stroke="#8b1f30" stroke-width="1.5" opacity="0.9"/>
+<polygon points="60,90 40,140 65,110 85,60" fill="#D9904A" stroke="#8b1f30" stroke-width="1.5" opacity="0.85"/>
+<polygon points="150,140 130,90 155,60 175,110" fill="#C87040" stroke="#8b1f30" stroke-width="1.5" opacity="0.8"/>
+<line x1="40" y1="140" x2="65" y2="110" stroke="#8b1f30" stroke-width="1.5"/>
+<line x1="150" y1="140" x2="175" y2="110" stroke="#8b1f30" stroke-width="1.5"/>
+<line x1="130" y1="90" x2="155" y2="60" stroke="#8b1f30" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="60" y1="90" x2="85" y2="60" stroke="#8b1f30" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="40" y1="140" x2="150" y2="140" stroke="#8b1f30" stroke-width="2"/>
+<line x1="150" y1="140" x2="130" y2="90" stroke="#8b1f30" stroke-width="2"/>
+<line x1="130" y1="90" x2="60" y2="90" stroke="#8b1f30" stroke-width="2"/>
+<line x1="60" y1="90" x2="40" y2="140" stroke="#8b1f30" stroke-width="2"/>
+<line x1="65" y1="110" x2="175" y2="110" stroke="#8b1f30" stroke-width="1.5"/>
+<line x1="175" y1="110" x2="155" y2="60" stroke="#8b1f30" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="155" y1="60" x2="85" y2="60" stroke="#8b1f30" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="85" y1="60" x2="65" y2="110" stroke="#8b1f30" stroke-width="1.5"/>
+</svg>

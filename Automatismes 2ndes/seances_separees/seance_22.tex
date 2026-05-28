@@ -1,0 +1,147 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+%\newboolean{prof}\setboolean{prof}{false}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Séance 22 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenum}{22}
+\newpage
+\begin{seance}{} %22
+
+\begin{enumerate}
+\item   $5$ est bien dans l'ensemble de définition de $f$ et :\\ 
+                $f(x_A)=f(5)=-3\times 5^2+2\times5-9
+                =-75+10-9=-74\neq-75$.\\
+                L'image de $5$ n'est pas l'ordonnée du point $A$, donc le point $A$ n'est pas sur $\mathscr{C}_f$
+                
+\item  Comme $-2$ et $7$ n'appartiennent pas à un intervalle sur lequel $f$ est monotone, on ne peut pas utiliser le sens de variations de $f$ pour comparer $f(-2)$ et $f(7)$.\\
+                Mais, d'après le tableau de variations :\\
+                $\bullet$ Comme $-2\in [-3\,;\,-1]$, alors $4 < f(-2) < 10$. \\
+                $\bullet$ Comme $7\in [3\,;\,8]$, alors $-15 < f(7) < -14$. \\
+                On en déduit que {\bfseries \color[HTML]{f15929}$f(-2) > f(7)$}.\\
+                En effet, $f(-2)$ est un nombre compris entre  $4$ et $10$, il sera donc supérieur à  $f(7)$ qui est un nombre compris entre $-15$ et $-14$.
+
+\item On applique la formule aux données de l'énoncé :
+
+\medskip
+$\phantom{On applique la formule  : } TU=\sqrt{\left(x_U-x_T\right)^{2}+\left(y_U-y_T\right)^{2}}$\\$\phantom{On applique la formule  : }TU=\sqrt{\left(-4-10\right)^{2}+\left(-3-1\right)^{2}}$\\$\phantom{On applique la formule :        } TU=\sqrt{196+16}$\\$\phantom{On applique la formule  :        } TU={\color[HTML]{f15929}\boldsymbol{\sqrt{212}}}$\\$\phantom{On applique la formule  :     } TU={\color[HTML]{f15929}\boldsymbol{2\sqrt{53}}}$\\
+
+\item  $JKLM$ est un parallélogramme si et seulement si $\overrightarrow{JK} = \overrightarrow{ML}$.\\En notant $(x\;;\;y)$ les coordonnées du point $M$, on a :\\Le vecteur $\overrightarrow{JK}$ a pour coordonnées : $\dbinom{x_K - x_J}{y_K - y_J }=\dbinom{10-2}{3-(-10)} = \dbinom{8}{13}$.\\Le vecteur $\overrightarrow{ML}$ a pour coordonnées : $\dbinom{x_L - x_M}{y_L - y_M }=\dbinom{-2 - x}{0 - y}$.\\L'égalité $\overrightarrow{JK} = \overrightarrow{ML}$ se traduit donc par : $\begin{cases}-2 - x &= 8 \\ 0 - y &= 13\end{cases}\quad$ soit $\quad\begin{cases}x &= -10 \\ y &= -13\end{cases}$.\\Les coordonnées du point $M$ sont donc ${\color[HTML]{f15929}\boldsymbol{(-10\;;\;-13)}}$.
+
+\item Pour déterminer le taux d'évolution global, on commence par calculer le coefficient multiplicateur global.\\Si une grandeur subit des évolutions successives, le coefficient multiplicateur global est le produit des coefficients multiplicateurs de chaque évolution :
+
+\medskip
+\textbf{Première évolution :} \\
+          Diminuer de $60~\%$ revient à multiplier par $CM_1 = 1 - \dfrac{60}{100} = 0{,}4$.
+
+\medskip
+\textbf{Deuxième évolution :}\\ Augmenter de $63~\%$ revient à multiplier par $CM_2 = 1 + \dfrac{63}{100} = 1{,}63$.\\Le coefficient multiplicateur global est égal à $CM = CM_1 \times CM_2 = 0{,}4 \times 1{,}63 =0{,}652$.
+
+\medskip
+\textbf{Évolution globale :}\\Le taux d'évolution global est égal à : $T=CM-1=0{,}652-1=-0{,}348=-34{,}8~\%$.
+
+\medskip
+Le prix de l'article a subi une baisse globale de ${\color[HTML]{f15929}\boldsymbol{34{,}8}}~\%$.
+
+\end{enumerate}
+
+\end{seance}
+
+\end{document}

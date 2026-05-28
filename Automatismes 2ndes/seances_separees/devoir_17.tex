@@ -1,0 +1,154 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+\newboolean{prof}\setboolean{prof}{true}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Devoirs - Séance 17 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenumD}{17}
+\newpage
+\begin{seanceD}{} %17
+
+\begin{enumerate}
+\item $\dfrac{-7x+5}{(-3x-6)(4x-5)} > 0$\\
+On commence par chercher les éventuelles valeurs interdites :\\
+$(-3x-6)(4x-5) = 0$ si et seulement si $-3x-6 = 0$ ou $4x-5 = 0$.\\
+$-3x -6 = 0$ donc $x = -2$\\
+$4x -5 = 0$ donc $x = \dfrac{5}{4}$\\
+Le quotient est défini sur $\mathbb{R} \smallsetminus \{-2; \dfrac{5}{4}\}$.\\
+
+On peut donc en déduire le tableau de signes suivant :\\
+
+\begin{tikzpicture}[baseline, scale=0.35]
+\tkzTabInit[lgt=9,deltacl=0.8,espcl=3.5]{ $x$ / 2.5, $-7x+5$ / 2, $-3x-6$ / 2, $4x-5$ / 2, $\dfrac{-7x+5}{(-3x-6)(4x-5)}$ / 4}{ $-\infty$, $-2$, $\dfrac{5}{7}$, $\dfrac{5}{4}$, $+\infty$}
+\tkzTabLine{  , +, t, +, z, -, t, -}
+\tkzTabLine{  , +, z, -, t, -, t, -}
+\tkzTabLine{  , -, t, -, t, -, z, +}
+\tkzTabLine{  , -, d, +, z, -, d, +}
+\end{tikzpicture}
+
+L'ensemble de solutions de l'inéquation est $S = \bigg] -2 ; \dfrac{5}{7} \bigg[ \cup \bigg] \dfrac{5}{4}; +\infty \bigg[$.
+
+\item $0{,}25\text{ h} = \dfrac{1}{4} \text{ h} = 15 \text{ min}$.\\
+Ainsi, $0{,}25$ heure correspond à ${\color{correction}\boldsymbol{15}}$ {\color{correction}minutes}.
+
+\item L'équation $9x^2-x-5=-5$ s'écrit $9x^2-x=0$.\\
+En factorisant le premier membre (facteur commun $x$), on obtient $x(9x-1)=0$.\\
+On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{1}{9}$.\\
+$\mathscr{S}={\color{correction}\boldsymbol{\{0;\dfrac{1}{9}\}}}$
+
+\item On applique la propriété des puissances de puissances d'un réel :\\
+Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a : $\left(a^{n}\right)^{p}=a^{np}$\\
+$\left(4^{n}\right)^{2}=4^{2n}=\left(4^{2}\right)^{n}={\color{correction}\boldsymbol{16^{n}}}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item On note $a$ le montant de l'abonnement mensuel et $p$ le prix d'une séance.\\
+D'après le premier ticket : $a + 6 \times p = 44$ soit $a + 6p = 44$.\\
+D'après le second ticket : $a + 3 \times p = 26$ soit $a + 3 p = 26$\\
+En faisant la différence entre ces deux montants, on obtient :\\
+$(a + 6p) - (a + 3p) = 44-26$ soit $3p=18$.\\
+Donc le montant pour $1$ séance est : $p = 6$\,\euro{}.\\
+On peut alors calculer le montant de l'abonnement mensuel :\\
+$a = 44 - 6 \times 6 = 44 - 36 = {\color{correction}\boldsymbol{8\,\,\euro{}}}$.
+
+\end{enumerate}
+
+\end{seanceD}
+
+\end{document}

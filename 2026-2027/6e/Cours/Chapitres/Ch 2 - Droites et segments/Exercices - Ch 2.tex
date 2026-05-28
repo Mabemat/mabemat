@@ -1,0 +1,677 @@
+\documentclass[10pt,a4paper]{article}
+
+% ----- Encodage & langue -----
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+% ----- Mise en page -----
+\usepackage{geometry}
+\geometry{top=1.5cm,bottom=1.5cm,left=1.5cm,right=1.5cm}
+
+% Colonnes
+\usepackage{multicol}
+\setlength{\columnsep}{0.75cm}            % espace entre colonnes
+\setlength{\columnseprule}{0.2pt}      % épaisseur de la ligne
+\def\columnseprulecolor{\color{Couleur8}} % couleur de la ligne
+
+% Maths et figures
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usetikzlibrary{babel,arrows,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\usetikzlibrary{calc}
+
+% Listes compactes
+\usepackage{enumitem}
+\setlist{nosep, itemsep=0.4em, parsep=0pt}
+\setlist[enumerate,1]{label=\alph*.}
+
+% Couleurs
+\usepackage{xcolor}
+\definecolor{exoblue}{HTML}{005F73}
+
+%----------------------------------------------------------------------------------------
+%	 COULEURS
+%----------------------------------------------------------------------------------------
+
+\definecolor{Couleur1}{HTML}{8b1f30}
+\definecolor{Couleur2}{HTML}{725E74}
+\definecolor{Couleur3}{HTML}{78985b}
+\definecolor{Couleur4}{HTML}{db3e56}
+\definecolor{Couleur5}{HTML}{487C4B}
+\definecolor{Couleur6}{HTML}{CF6876}
+\definecolor{Couleur7}{HTML}{A5C03F} %Vert
+\definecolor{Couleur8}{HTML}{D36740} %Orange
+\definecolor{Couleur9}{HTML}{7BB48A} %Bleu-Vert
+\definecolor{Couleur10}{HTML}{EA8556} %Orange
+\definecolor{Couleur11}{HTML}{E6B459} %Jaune
+\definecolor{Couleur12}{HTML}{9AC8EB} %Bleu
+
+\definecolor{Bord1}{HTML}{302635}
+\definecolor{Bord2}{HTML}{725E74}
+\definecolor{Bord3}{HTML}{938999}
+\definecolor{Bord4}{HTML}{817888}
+\definecolor{Bord5}{HTML}{487C4B}
+\definecolor{Bord6}{HTML}{8C436B}
+\definecolor{Bord7}{HTML}{A5C03F} %Vert
+\definecolor{Bord8}{HTML}{D36740} %Orange
+
+% ----- Police sans serif -----
+\renewcommand{\familydefault}{\sfdefault}
+
+% ----- Exercice -----
+\newcounter{exo}
+\newcommand{\exo}[1][]{%
+  \refstepcounter{exo}%
+  \textbf{\textcolor{Couleur8}{\\[0.3cm]\theexo.}}%
+  \if\relax\detokenize{#1}\relax\else\ \textbf{#1}\fi\ %
+}
+
+\begin{document}
+\begin{Large}\textbf{\textcolor{Couleur8}{EXERCICES - Chapitre 2 - Droites et segments}} \end{Large}
+\begin{multicols}{2}
+%1
+\exo Compléter les phrases avec les mots : droite, segment, demi-droite.
+
+\begin{enumerate}[itemsep=1em]
+    \item La figure [AB) est une ..................
+    \item La figure (CD) est une ..................
+    \item La figure [EF] est un ..................
+    \item Une ............ n'a pas d'extrémité.
+    \item Un ............ a deux extrémités.
+    \item Une ............ a une extrémité.
+\end{enumerate}
+
+%2
+% @see : https://coopmaths.fr/alea?uuid=d81c6&id=6G0-2&n=6&d=10&alea=3Vek&cd=1&cols=2
+\exo Décrire précisément, avec des mots, la figure et donner sa notation mathématique.
+\begin{multicols}{2}
+\vspace{-0.5cm}
+\begin{enumerate}
+\item \begin{tikzpicture}[baseline,scale = 0.3]
+    \clip (-2,-1) rectangle (7,3.5);
+    \draw[color ={black}] (0,1.7)--(4,0.8);
+    \draw[color ={black}] (0.04,1.9)--(-0.04,1.5);
+    \draw[color ={black}] (3.96,0.6)--(4.04,1);
+    \draw [color={black}] (0,2.2) node[anchor = south,scale=1, rotate = 0] {X};
+    \draw [color={black}] (4,1.3) node[anchor = south,scale=1, rotate = 0] {Y};
+\end{tikzpicture}
+
+\item \begin{tikzpicture}[baseline,scale = 0.3]
+    \clip (-2,-1) rectangle (7,3.5);
+    \draw[color={black}] (-50,3.2)--(54,-2);
+    \draw[color ={black}] (0.01,0.9)--(-0.01,0.5);
+    \draw[color ={black}] (3.99,0.3)--(4.01,0.7);
+    \draw [color={black}] (0,1.2) node[anchor = south,scale=1, rotate = 0] {R};
+    \draw [color={black}] (4,1) node[anchor = south,scale=1, rotate = 0] {S};
+\end{tikzpicture}
+
+\item \begin{tikzpicture}[baseline,scale = 0.3]
+    \clip (-2,-1) rectangle (7,3.5);
+    \draw[color ={black}] (0,0.6)--(13.8,3.36);
+    \draw[color ={black}] (-0.04,0.8)--(0.04,0.4);
+    \draw[color ={black}] (4.04,1.2)--(3.96,1.6);
+    \draw [color={black}] (0,1.1) node[anchor = south,scale=1, rotate = 0] {I};
+    \draw [color={black}] (4,1.9) node[anchor = south,scale=1, rotate = 0] {J};
+\end{tikzpicture}
+
+\item \begin{tikzpicture}[baseline,scale = 0.3]
+    \clip (-2,-1) rectangle (7,3.5);
+    \draw[color ={black}] (0,0.5)--(13.64,4.25);
+    \draw[color ={black}] (-0.05,0.69)--(0.05,0.31);
+    \draw[color ={black}] (4.05,1.41)--(3.95,1.79);
+    \draw [color={black}] (0,1) node[anchor = south,scale=1, rotate = 0] {K};
+    \draw [color={black}] (4,2.1) node[anchor = south,scale=1, rotate = 0] {L};
+\end{tikzpicture}
+
+\item \begin{tikzpicture}[baseline,scale = 0.3]
+    \clip (-2,-1) rectangle (7,3.5);
+    \draw[color ={black}] (0,1.4)--(4,1.6);
+    \draw[color ={black}] (-0.01,1.6)--(0.01,1.2);
+    \draw[color ={black}] (4.01,1.4)--(3.99,1.8);
+    \draw [color={black}] (0,1.9) node[anchor = south,scale=1, rotate = 0] {O};
+    \draw [color={black}] (4,2.1) node[anchor = south,scale=1, rotate = 0] {P};
+\end{tikzpicture}
+
+\item \begin{tikzpicture}[baseline,scale = 0.3]
+    \clip (-2,-1) rectangle (7,3.5);
+    \draw[color={black}] (-50,0.45)--(54,3.05);
+    \draw[color ={black}] (-0.01,1.9)--(0.01,1.5);
+    \draw[color ={black}] (4,1.6)--(4,2);
+    \draw [color={black}] (0,2.2) node[anchor = south,scale=1, rotate = 0] {A};
+    \draw [color={black}] (4,2.3) node[anchor = south,scale=1, rotate = 0] {B};
+\end{tikzpicture}
+	
+\end{enumerate}
+\end{multicols}
+
+%3
+% @see : https://coopmaths.fr/alea?uuid=83763&id=6G0-4&n=3&d=10&alea=L7GK&cd=1&cols=1
+\exo Entourer la bonne figure.
+
+\begin{enumerate}
+	\item La droite passant par les points $K$ et $L$.\\\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {K};
+	\draw [color={black}] (4,2.5) node[anchor = south,scale=1, rotate = 0] {L};
+	\draw[color ={black},|-|] (0,0)--(4,2);
+	\draw[color={black}] (-44.74,-22.37)--(48.74,24.37);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {K};
+	\draw [color={black}] (4,2.5) node[anchor = south,scale=1, rotate = 0] {L};
+	\draw[color ={black},|-|] (0,0)--(4,2);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {K};
+	\draw [color={black}] (4,2.5) node[anchor = south,scale=1, rotate = 0] {L};
+	\draw[color ={black},|-|] (0,0)--(4,2);
+	\draw[color ={black}] (0,0)--(12.95,6.47);
+
+\end{tikzpicture}
+	\item La demi-droite d'origine $H$ passant par $I$.\\\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {H};
+	\draw [color={black}] (4,-0.5) node[anchor = south,scale=1, rotate = 0] {I};
+	\draw[color ={black},|-|] (0,0)--(4,-1);
+	\draw[color ={black}] (0,0)--(13.71,-3.43);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {H};
+	\draw [color={black}] (4,-0.5) node[anchor = south,scale=1, rotate = 0] {I};
+	\draw[color ={black},|-|] (0,0)--(4,-1);
+	\draw[color ={black}] (4,-1)--(-9.71,2.43);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {H};
+	\draw [color={black}] (4,-0.5) node[anchor = south,scale=1, rotate = 0] {I};
+	\draw[color ={black},|-|] (0,0)--(4,-1);
+	\draw[color={black}] (-48.54,12.14)--(52.54,-13.14);
+
+\end{tikzpicture}
+	\item La demi-droite d'origine $B$ passant par $A$.\\\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {A};
+	\draw [color={black}] (4,1.5) node[anchor = south,scale=1, rotate = 0] {B};
+	\draw[color ={black},|-|] (0,0)--(4,1);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {A};
+	\draw [color={black}] (4,1.5) node[anchor = south,scale=1, rotate = 0] {B};
+	\draw[color ={black},|-|] (0,0)--(4,1);
+	\draw[color ={black}] (4,1)--(-9.71,-2.43);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {A};
+	\draw [color={black}] (4,1.5) node[anchor = south,scale=1, rotate = 0] {B};
+	\draw[color ={black},|-|] (0,0)--(4,1);
+	\draw[color ={black}] (0,0)--(13.71,3.43);
+
+\end{tikzpicture}
+\item Le segment d'extrémités $K$ et $L$.\\\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {K};
+	\draw [color={black}] (4,1.5) node[anchor = south,scale=1, rotate = 0] {L};
+	\draw[color ={black},|-|] (0,0)--(4,1);
+	\draw[color ={black}] (4,1)--(-9.71,-2.43);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {K};
+	\draw [color={black}] (4,1.5) node[anchor = south,scale=1, rotate = 0] {L};
+	\draw[color ={black},|-|] (0,0)--(4,1);
+	\draw[color={black}] (-48.54,-12.14)--(52.54,13.14);
+
+\end{tikzpicture}\begin{tikzpicture}[baseline,scale = 0.3]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-2,-2) rectangle (6,6);
+    	\draw [color={black}] (0,0.5) node[anchor = south,scale=1, rotate = 0] {K};
+	\draw [color={black}] (4,1.5) node[anchor = south,scale=1, rotate = 0] {L};
+	\draw[color ={black},|-|] (0,0)--(4,1);
+
+\end{tikzpicture}
+\end{enumerate}
+
+\columnbreak
+
+% Exercice de la photo ajouté
+\exo Compléter les figures.
+
+\begin{enumerate}[itemsep=1em]
+\item Tracer (AB), [BC] et [CA).
+
+\begin{tikzpicture}[baseline,scale = 0.8]
+    \draw [color={black}] (0,0) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (-0.3,-0.3) node[anchor = south,scale=1] {A};
+    \draw [color={black}] (3,0) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (3.3,-0.3) node[anchor = south,scale=1] {B};
+    \draw [color={black}] (1.5,2.5) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (1.2,2.8) node[anchor = south,scale=1] {C};
+\end{tikzpicture}
+
+\item Tracer [BA), (BC) et [CA].
+
+\begin{tikzpicture}[baseline,scale = 0.8]
+    \draw [color={black}] (0,0) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (-0.3,-0.3) node[anchor = south,scale=1] {A};
+    \draw [color={black}] (3,0) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (3.3,-0.3) node[anchor = south,scale=1] {B};
+    \draw [color={black}] (1.5,2.5) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (1.2,2.8) node[anchor = south,scale=1] {C};
+\end{tikzpicture}
+
+\item Tracer [AB), [CB) et (AC).
+
+\begin{tikzpicture}[baseline,scale = 0.8]
+    \draw [color={black}] (0,0) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (-0.3,-0.3) node[anchor = south,scale=1] {A};
+    \draw [color={black}] (3,0) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (3.3,-0.3) node[anchor = south,scale=1] {B};
+    \draw [color={black}] (1.5,2.5) node[anchor = south,scale=1] {$\times$};
+    \draw [color={black}] (1.2,2.8) node[anchor = south,scale=1] {C};
+\end{tikzpicture}
+\end{enumerate}
+
+% @see : https://coopmaths.fr/alea?uuid=9af23&id=6G0-5&n=1&d=10&s=3&s2=8&alea=KAeM&cd=1&cols=1
+\exo Observer la figure et compléter avec $\in$ ou $\notin$.
+
+\begin{tikzpicture}[baseline,scale = 0.5]
+    \clip (-1,-8) rectangle (12,6);
+    \draw [color={black}] (-0.5,0.5) node[anchor = south,scale=1] {J};
+    \draw [color={black}] (11.5,-1.5) node[anchor = south,scale=1] {K};
+    \draw [color={black}] (1.5,4.5) node[anchor = north,scale=1] {L};
+    \draw [color={black}] (7,-6.5) node[anchor = south,scale=1] {M};
+    \draw [color={black}] (1,-0.68) node[anchor = north,scale=1] {P};
+    \draw [color={black}] (3,-1.05) node[anchor = north,scale=1] {Q};
+    \draw [color={black}] (7,-1.77) node[anchor = north,scale=1] {R};
+    \draw [color={black}] (9,-2.14) node[anchor = north,scale=1] {S};
+    \draw[color={black}] (-49.19,8.94)--(60.19,-10.94);
+    % Points marqués par des croix
+    \foreach \x/\y in {0/0, 11/-2, 2/4, 7/-7, 1/-0.18, 3/-0.55, 7/-1.27, 9/-1.64} {
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y+0.19)--(\x+0.19,\y-0.19);
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y-0.19)--(\x+0.19,\y+0.19);
+    }
+\end{tikzpicture}
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=1em]
+\item $K\,\,\,\ldots\ldots\ldots\,\,\,[PK)$
+\item $Q\,\,\,\ldots\ldots\ldots\,\,\,(PK)$
+\item $R\,\,\,\ldots\ldots\ldots\,\,\,[SK)$
+\item $L\,\,\,\ldots\ldots\ldots\,\,\,[SK]$
+\item $K\,\,\,\ldots\ldots\ldots\,\,\,[QS]$
+\item $S\,\,\,\ldots\ldots\ldots\,\,\,(JP)$
+\item $K\,\,\,\ldots\ldots\ldots\,\,\,[PR)$
+\item $P\,\,\,\ldots\ldots\ldots\,\,\,[SK)$
+\end{enumerate}
+\end{multicols}
+
+\newpage
+
+% @see : https://coopmaths.fr/alea?uuid=a8f1f&id=6G0-8&n=8&d=10&alea=aAmc&cd=1&cols=2
+\exo Compléter en utilisant les symboles $\in$ et $\notin$.
+\vspace{-0.7cm}
+\begin{center}
+\begin{tikzpicture}[baseline,scale=0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-4.88,-4.08) rectangle (2,2.83);
+    	\draw [color={black}] (-2.92,-0.74) node[anchor = center,scale=1, rotate = 0] {Q};
+	\draw [color={black}] (-1.6,-0.36) node[anchor = center,scale=1, rotate = 0] {G};
+	\draw [color={black}] (-2.37,-2.53) node[anchor = center,scale=1, rotate = 0] {X};
+	\draw [color={black}] (0.5,-0.06) node[anchor = center,scale=1, rotate = 0] {P};
+	\draw [color={black}] (-3.34,1.03) node[anchor = center,scale=1, rotate = 0] {M};
+	\draw [color={black}] (-0.73,-0.8) node[anchor = north,scale=1, rotate = 0] {A};
+	\draw[color ={black}] (0,0)--(-2.88,0.83);
+	\draw[color ={black}] (-2.88,0.83)--(-2.45,-0.92);
+	\draw[color ={black}] (0,0)--(-2.45,-0.92);
+	\draw[color ={black}] (-2.88,0.83)--(7.46,-5.7);
+	\draw[color ={black}] (0,0)--(-7.83,-7.58);
+	\draw[color ={black}] (-2.88,0.83)--(-0.06,-10.64);
+
+\end{tikzpicture}
+\end{center}
+\vspace{0.2cm}
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=1em]
+\item $Q$ ........ $(GA)$
+\item $P$ ........ $[GX)$
+\item $A$ ........ $[MG]$
+\item $Q$ ........ $[XM]$
+\item $P$ ........ $(AQ)$
+\item $X$ ........ $[PG]$
+\item $A$ ........ $[PQ]$
+\item $X$ ........ $[PG)$
+\end{enumerate}
+\end{multicols}
+
+% @see : https://coopmaths.fr/alea?uuid=8f5d3&id=6G0-1&n=4&d=10&alea=HrBw&cd=1&cols=3
+\exo Compléter les programmes de construction qui ont permis d'obtenir ces figures.
+
+\begin{enumerate}[itemsep=1em]
+\item Placer 3 points R, S et T non alignés puis tracer...
+
+\begin{center}
+\begin{tikzpicture}[baseline,scale = 0.5]
+    \clip (-1,-1) rectangle (5,4.5);
+    \draw[color={black}] (-33.67,-37.04)--(35.67,39.24);
+    \draw[color ={black}] (2,2.2)--(4.2,-0.6);
+    \draw[color={black}] (-49.53,7.08)--(53.73,-7.68);
+    \draw [color={black}] (-0.5,0.5) node[anchor = south,scale=1] {R};
+    \draw [color={black}] (2,2.7) node[anchor = south,scale=1] {S};
+    \draw [color={black}] (4.7,-0.1) node[anchor = south,scale=1] {T};
+    % Points
+    \foreach \x/\y in {0/0, 2/2.2, 4.2/-0.6} {
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y+0.19)--(\x+0.19,\y-0.19);
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y-0.19)--(\x+0.19,\y+0.19);
+    }
+\end{tikzpicture}
+\end{center}
+
+\item Placer 3 points L, M et N non alignés puis tracer...
+
+\begin{center}
+\begin{tikzpicture}[baseline,scale = 0.5]
+    \clip (-1,-1) rectangle (5,4.5);
+    \draw[color ={black}] (0,0)--(2,2.2);
+    \draw[color ={black}] (4.2,-0.6)--(-4.18,10.07);
+    \draw[color ={black}] (0,0)--(14.11,-2.02);
+    \draw [color={black}] (-0.5,0.5) node[anchor = south,scale=1] {L};
+    \draw [color={black}] (2,2.7) node[anchor = south,scale=1] {M};
+    \draw [color={black}] (4.7,-0.1) node[anchor = south,scale=1] {N};
+    % Points
+    \foreach \x/\y in {0/0, 2/2.2, 4.2/-0.6} {
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y+0.19)--(\x+0.19,\y-0.19);
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y-0.19)--(\x+0.19,\y+0.19);
+    }
+\end{tikzpicture}
+\end{center}
+
+\item Placer 3 points U, V et W non alignés puis tracer...
+
+\begin{center}
+\begin{tikzpicture}[baseline,scale = 0.5]
+    \clip (-1,-1) rectangle (5.2,4.5);
+    \draw[color ={black}] (0,0)--(2,2.2);
+    \draw[color={black}] (-28.9,41.53)--(35.1,-39.93);
+    \draw[color ={black}] (4.2,-0.6)--(-9.91,1.42);
+    \draw [color={black}] (-0.5,0.5) node[anchor = south,scale=1] {U};
+    \draw [color={black}] (2,2.7) node[anchor = south,scale=1] {V};
+    \draw [color={black}] (4.7,-0.1) node[anchor = south,scale=1] {W};
+    % Points
+    \foreach \x/\y in {0/0, 2/2.2, 4.2/-0.6} {
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y+0.19)--(\x+0.19,\y-0.19);
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y-0.19)--(\x+0.19,\y+0.19);
+    }
+\end{tikzpicture}
+\end{center}
+
+\item Placer 3 points G, H et I non alignés puis tracer...
+
+\begin{center}
+\begin{tikzpicture}[baseline,scale = 0.5]
+    \clip (-1,-1) rectangle (5,4.5);
+    \draw[color={black}] (-33.67,-37.04)--(35.67,39.24);
+    \draw[color ={black}] (2,2.2)--(4.2,-0.6);
+    \draw[color ={black}] (0,0)--(14.11,-2.02);
+    \draw [color={black}] (-0.5,0.5) node[anchor = south,scale=1] {G};
+    \draw [color={black}] (2,2.7) node[anchor = south,scale=1] {H};
+    \draw [color={black}] (4.7,-0.1) node[anchor = south,scale=1] {I};
+    % Points
+    \foreach \x/\y in {0/0, 2/2.2, 4.2/-0.6} {
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y+0.19)--(\x+0.19,\y-0.19);
+        \draw[color ={black},line width = 0.625] (\x-0.19,\y-0.19)--(\x+0.19,\y+0.19);
+    }
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+
+\exo Complète.
+\vspace{0.5cm}
+
+\begin{tikzpicture}[baseline,scale = 1.2]
+
+    % Droite d2 (horizontale): y = 2
+    \draw[color={black}] (-3,2)--(4,2);
+    \draw [color={black}] (-2.7,1.6) node[anchor = center,scale=1] {$(d_2)$};
+    
+    % Droite d1: y = 0.73x + 0.45 (pente ≈ 4/5.5)
+    \draw[color={black}] (-3,-1.74)--(4,3.37);
+    \draw [color={black}] (3.7,2.8) node[anchor = center,scale=1] {$(d_1)$};
+    
+    % Droite d3: y = 0.75x + 2.25 (pente = 3/4)
+    \draw[color={black}] (-3,0)--(2.33,4);
+    \draw [color={black}] (-2.7,0.6) node[anchor = center,scale=1] {$(d_3)$};
+    
+    % Droite d4: y = -1.5x + 1.5 (pente = -3/2)
+    \draw[color={black}] (-1,3)--(2.33,-2);
+    \draw [color={black}] (1.7,-1.7) node[anchor = center,scale=1] {$(d_4)$};
+    
+    % Point A: intersection d1 ∩ d2 en x = 2.13, y = 2 (sur d2 horizontale)
+    \draw[color=black, line width=1pt] (2.13,1.9) -- (2.13,2.1);
+    \draw [color={black}] (2.13,2.3) node[anchor = center,scale=1] {A};
+    
+    % Point B: intersection d3 ∩ d4 ∩ d2 en x = -0.33, y = 2 (sur d2 horizontale)
+    \draw[color=black, line width=1pt] (-0.33,1.9) -- (-0.33,2.1);
+    \draw [color={black}] (-0.33,2.3) node[anchor = center,scale=1] {B};
+    
+    % Point C: sur d2 à droite (d2 horizontale)
+    \draw[color=black, line width=1pt] (3,1.9) -- (3,2.1);
+    \draw [color={black}] (3,2.3) node[anchor = center,scale=1] {C};
+    
+    % Point D: sur d1 à droite de F (pente d1 ≈ 0.73, perpendiculaire ≈ -1/0.73 ≈ -1.37)
+    \draw[color=black, line width=1pt] (1.42,1.66) -- (1.58,1.44);
+    \draw [color={black}] (1.8,1.45) node[anchor = center,scale=1] {D};
+    
+    % Point E: sur d3 à gauche de F (pente d3 = 0.75, perpendiculaire = -4/3)
+    \draw[color=black, line width=1pt] (-0.86,1.73) -- (-0.74,1.57);
+    \draw [color={black}] (-1.1,1.65) node[anchor = east,scale=1] {E};
+    
+    % Point F: intersection d1 ∩ d4 en x = 0.47, y = 0.80 (sur d4, pente = -1.5)
+    \draw[color=black, line width=0.5pt] (0.47,0.92) -- (0.47,0.68);
+    \draw [color={black}] (0.47,0.5) node[anchor = center,scale=1] {F};
+
+\end{tikzpicture}
+
+\begin{enumerate}[itemsep=1em]
+\item Les droites $(d_1)$ et $(d_2)$ se coupent en \dotfill .
+
+\item Le point d'intersection de $(d_1)$ et $(d_3)$ est \dotfill .
+
+\item C est le point d'intersection de \dotfill et \dotfill .
+
+\item Le point B est à l'intersection de \dotfill et \dotfill .
+
+\item D est \dotfill
+
+\dotfill
+\end{enumerate}
+
+\exo Complète la figure selon chaque phrase.
+% Image 2
+
+\vspace{0.5cm}
+% Figure 2 - Droites avec deux parallèles et une perpendiculaire
+\begin{tikzpicture}[baseline,scale = 1.0]
+    \clip (-3,-3) rectangle (4.5,3);
+    
+    % Droite d1: y = -0.75x + 1.75 - de x=-2.5 à x=4
+    \draw[color={black}] (-2.5,2.625)--(4,-2.25);
+    \draw [color={black}] (3.5,-1.3) node[anchor = center,scale=1] {$(d_2)$};
+    
+    % Droite d2: y = 0.60x + 0.20 - de x=-2.5 à x=4
+    \draw[color={black}] (-2.5,-1.3)--(4,2.6);
+    \draw [color={black}] (3.5,1.9) node[anchor = center,scale=1] {$(d_3)$};
+    
+    % Droite d3: y = -0.75x + 3.50 - parallèle à d1 - de x=-2.5 à x=4
+    \draw[color={black}] (-2.5,4.375)--(4,-0.5);
+    \draw [color={black}] (3.5,0.5) node[anchor = center,scale=1] {$(d_1)$};
+    
+    % Droite d4: verticale x = 1 - de y=-2.5 à y=3.5
+    \draw[color={black}] (0,-2.5)--(0,3.5);
+    \draw [color={black}] (0.4,-2.2) node[anchor = center,scale=1] {$(d_4)$};
+
+\end{tikzpicture}
+\begin{enumerate}[itemsep=1em]
+\item A est le point d'intersection de $(d_2)$ et $(d_4)$.
+
+\item $(d_1)$ et $(d_3)$ sont sécantes en T.
+
+\item Le point d'intersection de $(d_3)$ et $(d_4)$ est H.
+
+\item M est le point d'intersection de $(d_4)$ et de $(d_1)$.
+
+\item Le seul point d'intersection qui n'est pas nommé est celui de \dotfill et \dotfill .
+\end{enumerate}
+
+\end{multicols}
+
+
+\end{document}

@@ -1,0 +1,3480 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+%\newboolean{prof}\setboolean{prof}{false}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+% CORRECTION SÉANCE 1
+
+\newpage \begin{seance}{} %1
+
+\begin{enumerate}
+\item $\dfrac{2}{6}-\dfrac{3}{9}=\dfrac{2{\color{Couleur1}\boldsymbol{\times 3}}}{6{\color{Couleur1}\boldsymbol{\times 3}}}-\dfrac{3{\color{Couleur1}\boldsymbol{\times 2}}}{9{\color{Couleur1}\boldsymbol{\times 2}}}=\dfrac{6-6}{18}=\dfrac{0}{18}=$ ${\color{correction}\boldsymbol{0}}$
+
+On a réduit les fractions au même dénominateur (18), puis effectué la soustraction.
+
+\item $\dfrac{8}{6}-\dfrac{2}{21}=\dfrac{8{\color{Couleur1}\boldsymbol{\times 7}}}{6{\color{Couleur1}\boldsymbol{\times 7}}}-\dfrac{2{\color{Couleur1}\boldsymbol{\times 2}}}{21{\color{Couleur1}\boldsymbol{\times 2}}}=\dfrac{56-4}{42}=\dfrac{52}{42}=\dfrac{26\times2}{21\times2}=$ ${\color{correction}\boldsymbol{\dfrac{26}{21}}}$
+
+Le dénominateur commun est 42. On simplifie ensuite par 2.
+
+\item $\dfrac{11}{10} \div \dfrac{77}{-30} = \dfrac{11}{10} \times \dfrac{-30}{77} = \dfrac{11 \times (-30)}{10 \times 77} = \dfrac{-330}{770}$
+
+On décompose : $\dfrac{(-11) \times 30}{10 \times 77} = \dfrac{(-11) \times 3 \times 10}{10 \times 7 \times 11} = \dfrac{-3 \times \cancel{10} \times \cancel{11}}{\cancel{10} \times 7 \times \cancel{11}} = {\color{correction}\boldsymbol{\dfrac{3}{7}}}$
+
+Pour diviser par une fraction, on multiplie par son inverse.
+
+\item $\dfrac{-15}{55}\times\dfrac{-77}{40}=\dfrac{(-15)\times(-77)}{55\times40} = \dfrac{15 \times 77}{55 \times 40}$
+
+On décompose : $\dfrac{3 \times 5 \times 7 \times 11}{5 \times 11 \times 8 \times 5} = \dfrac{3 \times \cancel{5} \times 7 \times \cancel{11}}{8 \times 5 \times \cancel{5} \times \cancel{11}} = {\color{correction}\boldsymbol{\dfrac{21}{40}}}$
+
+Le produit de deux nombres négatifs est positif.
+
+\item Le matin, Aude a bu $\dfrac{5}{7}$ de la bouteille. Il reste alors $1 - \dfrac{5}{7} = \dfrac{7}{7} - \dfrac{5}{7} = \dfrac{2}{7}$ de la bouteille.
+
+À midi, elle a bu $\dfrac{1}{6}$ du reste, soit : $\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{correction}\boldsymbol{\dfrac{1}{21}}}$ de la bouteille.
+
+\item $A = \dfrac{1}{2-\dfrac{1}{2}} = \dfrac{1}{\dfrac{4}{2}-\dfrac{1}{2}} = \dfrac{1}{\dfrac{3}{2}} = 1 \times \dfrac{2}{3} = {\color{correction}\boldsymbol{\dfrac{2}{3}}}$
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 1 - Seulement en version professeur
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %1
+
+\begin{enumerate}
+\item $\dfrac{9}{2}+\dfrac{4}{20}=\dfrac{9{\color{Couleur1}\boldsymbol{\times 10}}}{2{\color{Couleur1}\boldsymbol{\times 10}}}+\dfrac{4}{20}=\dfrac{90+4}{20}=\dfrac{94}{20}=\dfrac{47\times2}{10\times2}=$ ${\color{correction}\boldsymbol{\dfrac{47}{10}}}$
+
+On réduit au même dénominateur (20), puis on simplifie par 2.
+
+\item $\dfrac{2}{6}-\dfrac{2}{9}=\dfrac{2{\color{Couleur1}\boldsymbol{\times 3}}}{6{\color{Couleur1}\boldsymbol{\times 3}}}-\dfrac{2{\color{Couleur1}\boldsymbol{\times 2}}}{9{\color{Couleur1}\boldsymbol{\times 2}}}=\dfrac{6-4}{18}=\dfrac{2}{18}=\dfrac{1\times2}{9\times2}=$ ${\color{correction}\boldsymbol{\dfrac{1}{9}}}$
+
+Le dénominateur commun est 18, puis on simplifie par 2.
+
+\item $\dfrac{\dfrac{14}{9}}{\dfrac{-63}{12}} = \dfrac{14}{9} \times \dfrac{12}{-63} = \dfrac{14 \times 12}{9 \times (-63)}$
+
+On décompose : $\dfrac{2 \times 7 \times 3 \times 4}{9 \times (-9) \times 7} = \dfrac{2 \times \cancel{7} \times 3 \times 4}{9 \times (-9) \times \cancel{7}} = \dfrac{24}{-81} = {\color{correction}\boldsymbol{-\dfrac{8}{27}}}$
+
+\item $\dfrac{14}{9}\times\dfrac{-3}{-35}=\dfrac{14\times(-3)}{9\times(-35)} = \dfrac{-42}{-315} = \dfrac{42}{315}$
+
+On décompose : $\dfrac{2 \times 3 \times 7}{9 \times 5 \times 7} = \dfrac{2 \times 3 \times \cancel{7}}{9 \times 5 \times \cancel{7}} = \dfrac{6}{45} = {\color{correction}\boldsymbol{\dfrac{2}{15}}}$
+
+\item Le matin, Fiona a bu $\dfrac{1}{3}$ de la bouteille. Il reste alors $1 - \dfrac{1}{3} = \dfrac{2}{3}$ de la bouteille.
+
+À midi, elle a bu $\dfrac{1}{4}$ du reste, soit : $\dfrac{1}{4} \times \dfrac{2}{3} = {\color{correction}\boldsymbol{\dfrac{2}{12} = \dfrac{1}{6}}}$ de la bouteille.
+
+\item $A= \dfrac{3}{4-\dfrac{6}{7}} = \dfrac{3}{\dfrac{28}{7}-\dfrac{6}{7}} = \dfrac{3}{\dfrac{22}{7}} = 3 \times \dfrac{7}{22} = {\color{correction}\boldsymbol{\dfrac{21}{22}}}$
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 2
+\newpage \begin{seance}{} %2
+
+\begin{enumerate}
+\item $\dfrac{1}{2a}+\dfrac{6}{b}=\dfrac{1 \times b}{2a \times b}+\dfrac{6 \times 2a}{b \times 2a}={\color{correction}\boldsymbol{\dfrac{b+12a}{2ab}}}$
+
+\item $\dfrac{x}{8}\times \dfrac{3}{y}=\dfrac{x\times 3}{8\times y}={\color{correction}\boldsymbol{\dfrac{3x}{8y}}}$
+
+\item $\dfrac{1}{U}=1+\dfrac{5}{7} = \dfrac{1 \times 7}{7} + \dfrac{5}{7} = \dfrac{7}{7} + \dfrac{5}{7} =\dfrac{12}{7}$
+
+L'inverse de $U$ vaut $\dfrac{12}{7}$, donc $U={\color{correction}\boldsymbol{\dfrac{7}{12}}}$.
+
+\item La somme de $-4$ et $-1$ est : $-5$. \\
+Le carré de cette somme est : $(-5)^2=25$. \\
+L'inverse de ce carré est : ${\color{correction}\boldsymbol{\dfrac{1}{25}}}$.
+
+\item $\dfrac{5x-35}{5}=\dfrac{5(x-7)}{5}={\color{correction}\boldsymbol{x-7}}$.
+
+\item $-8{,}59$ est un nombre décimal (il s'écrit avec un nombre fini de chiffres après la virgule). Le plus petit ensemble de nombres auquel il appartient est donc ${\color{correction}\boldsymbol{\mathbb{D}}}$.
+
+Rappel de la hiérarchie des ensembles : $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q} \subset \mathbb{R}$
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 2 - Seulement en version professeur
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %2
+
+\begin{enumerate}
+\item $\dfrac{x}{7}\times \dfrac{10}{y}=\dfrac{x\times 10}{7\times y}={\color{correction}\boldsymbol{\dfrac{10x}{7y}}}$
+
+\item $\dfrac{3}{8a}+\dfrac{1}{b}=\dfrac{3 \times b}{8a \times b}+\dfrac{1 \times 8a}{b \times 8a}={\color{correction}\boldsymbol{\dfrac{3b+8a}{8ab}}}$
+
+\item $\dfrac{1}{y}=4-\dfrac{1}{9} = \dfrac{4 \times 9}{9} - \dfrac{1}{9} = \dfrac{36}{9} - \dfrac{1}{9} =\dfrac{35}{9}$
+
+L'inverse de $y$ vaut $\dfrac{35}{9}$, donc $y={\color{correction}\boldsymbol{\dfrac{9}{35}}}$.
+
+\item La somme de $4$ et $-1$ est $3$. \\
+Son inverse est : ${\color{correction}\boldsymbol{\dfrac{1}{3}}}$.
+
+\item $\dfrac{9x+36}{9}=\dfrac{9(x+4)}{9}={\color{correction}\boldsymbol{x+4}}$.
+
+
+\item $14$ est un entier naturel (nombre entier positif). Le plus petit ensemble de nombres auquel il appartient est donc ${\color{correction}\boldsymbol{\mathbb{N}}}$.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 3
+\newpage \begin{seance}{} %3
+
+\begin{enumerate}
+\item De la relation $-4a+5b=5$, on déduit en ajoutant $4a$ dans chaque membre :
+$5b=5+4a$
+Puis, en divisant par $5$, on obtient : ${\color{correction}\boldsymbol{b=\dfrac{5+4a}{5}}}$.
+
+
+
+\item On met l'expression au même dénominateur : \\$   \dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4\times \left(3x+3\right)}{4x}=\dfrac{x -12x -12}{4x}=\dfrac{-11x -12}{4x}=-\dfrac{11x +12}{4x}$\\La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item On remplace $a$, $b$, $c$ et $d$ par les valeurs données : \\
+$F=\dfrac{1}{3}+\dfrac{4}{9\times \dfrac{1}{9}}=\dfrac{1}{3}+\dfrac{4}{1}=\dfrac{1}{3}+4={\color{correction}\boldsymbol{\dfrac{13}{3}}}$
+
+
+\item Un terme de la suite peut s'exprimer sous la forme $2 \times n$ avec $n$ le rang du terme.
+Par exemple, le $4^{\text{e}}$ terme est $2\times 4=8$.
+Le $21^{\text{e}}$ nombre est donc $2\times 21={\color{correction}\boldsymbol{42}}$.
+
+\item Il y a ${\color{correction}\boldsymbol{8}}$ entiers dans l'intervalle $\bigg[-4\, ; \,3\bigg]$.
+Mentalement : Comptez-les ! Ou bien en calculant la différence des bornes et en ajoutant $1$ puisque les bornes de l'intervalle sont "comprises".
+On trouve : $3-(-4)+1=8$.
+
+\item L'intersection $[-6\,;\,1]\,\cap \,[ -7\,;\,2[$ = ${\color{correction}\boldsymbol{[-6\,;\,1]}}$.
+Les nombres de l'intervalle $[-6\,;\,1]$ appartiennent à l'intervalle $[ -7\,;\,2[$ et à l'intervalle $[-6\,;\,1]$.
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 3 - Seulement en version professeur
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %3
+
+\begin{enumerate}
+\item De la relation $-4x-5y=8$, on déduit en ajoutant $4x$ dans chaque membre :
+$-5y=8+4x$
+Puis, en divisant par $-5$, on obtient : $y=\dfrac{8+4x}{-5}$ ou ${\color{correction}\boldsymbol{y=\dfrac{-8-4x}{5}}}$.
+
+
+\item  On met l'expression au même dénominateur : \\$
+        \dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7\times \left(7x+5\right)}{7x}=\dfrac{x -49x -35}{7x}=\dfrac{-48x -35}{7x}=-\dfrac{48x +35}{7x}$\\La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item On remplace $a$, $b$, $c$ et $d$ par les valeurs données : \\
+$F=\dfrac{1}{7}+\dfrac{2}{-5\times \dfrac{1}{5}}=\dfrac{1}{7}+\dfrac{2}{-1}=\dfrac{1}{7}-2={\color{correction}\boldsymbol{-\dfrac{13}{7}}}$
+
+\item Un terme de la suite peut s'exprimer sous la forme $2\times n-1$ avec $n$ le rang du terme.
+Par exemple, le $4^{\text{e}}$ terme est $2\times 4-1=7$.
+Le $17^{\text{e}}$ nombre est donc $2\times 17-1={\color{correction}\boldsymbol{33}}$.
+
+\item Il y a ${\color{correction}\boldsymbol{6}}$ entiers dans l'intervalle $\bigg[-3{,}4\, ; \,2\bigg]$.
+Mentalement : Comptez-les ! Ce sont : $-3, -2, -1, 0, 1, 2$.
+
+\item L'intersection $]-\infty\,;\, 8[\,\cap \,]-\infty\,;\,9]$ = ${\color{correction}\boldsymbol{]-\infty\,;\,8[}}$.
+Les nombres de l'intervalle $]-\infty\,;\,8[$ appartiennent à l'intervalle $]-\infty\,;\, 8[$ et à l'intervalle $]-\infty\,;\,9]$.
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 4
+\newpage \begin{seance}{} %4
+
+\begin{enumerate}
+\item La seule égalité vraie est : ${\color{correction}\boldsymbol{\dfrac{15^{-7}}{15^{11}}=15^{-18}}}$.
+En effet, $\dfrac{15^{-7}}{15^{11}}=15^{-7-11}=15^{-18}$
+
+Concernant les autres propositions :
+$20\times \dfrac{1}{20^{5}}=20^{-4}\neq 20^{4}$
+$\left(40^{-5}\right)^4=40^{-20}\neq 40^{-1}$
+$7^{-5}\times 5^{-5}=35^{-5}\neq 35^{-10}$
+
+\item $N=\dfrac{6^5}{2^3}=\dfrac{2^5\times 3^5 }{2^3}=3^5\times 2^{2}=6^2\times 3^{3}={\color{correction}\boldsymbol{27\times 6^{2}}}$
+
+\item  On utilise la formule $\dfrac{a^n}{b^n}=\left(\dfrac{a}{b}\right)^{n}$ avec
+        $a=6$,  $b=3$ et $n=-8$.\\
+        $\dfrac{6^{-8}}{3^{-8}}=\left(\dfrac{6}{3}\right)^{-8}={\color{correction}\boldsymbol{2^{-8}}}$
+        
+
+
+\item On applique la propriété des puissances de puissances d'un réel : \\
+    Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a : \\
+     $\left(a^{n}\right)^{p}=a^{np}$\\
+    $\begin{aligned}\left(3^{n}\right)^{3}&=\left(3\right)^{3n}\\
+    &=\left(3^{3}\right)^{n}\\
+    &=27^{n}
+    \end{aligned}$\\La bonne réponse est la réponse {\bfseries \color{correction}C}.
+
+
+\item De la relation $6a+5y=4$, on déduit en ajoutant $-5y$ dans chaque membre :
+$6a=4-5y$
+Puis, en divisant par $6$, on obtient : ${\color{correction}\boldsymbol{a=\dfrac{4-5y}{6}}}$.
+
+
+
+
+
+
+\item La réunion $]-3\,;\,3[\,\cup \,] -6\,;\,5]$ = ${\color{correction}\boldsymbol{]-6\,;\,5]}}$ car l'intervalle $] -6\,;\,5]$ contient entièrement l'intervalle $]-3\,;\,3[$.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 4 - Seulement en version professeur
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %4
+
+\begin{enumerate}
+\item La seule égalité vraie est : ${\color{correction}\boldsymbol{7^{-4}\times 4^{-4}=28^{-4}}}$.
+En effet, $7^{-4}\times 4^{-4}=(7\times 4)^{-4}=28^{-4}$
+
+Concernant les autres propositions :
+$\dfrac{3^{-5}}{3^{12}}=3^{-17}\neq 3^{7}$
+$20\times \dfrac{1}{20^{3}}=20^{-2}\neq 20^{2}$
+$\left(20^{-4}\right)^4=20^{-16}\neq 20^{0}$
+
+\item $N=\dfrac{10^5}{2^2}=\dfrac{2^5\times 5^5 }{2^2}=5^5\times 2^{3}=10^3\times 5^{2}={\color{correction}\boldsymbol{25\times 10^{3}}}$
+
+\item On utilise la formule $a^n\times a^m=a^{n+m}$ avec $a=-6$, $n=-2$ et $p=-9$.
+$(-6)^{-2}\times (-6)^{-9}=(-6)^{-2+(-9)}={\color{correction}\boldsymbol{(-6)^{-11}}}$
+
+\item On applique la propriété des puissances de puissances d'un réel : \\
+    Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a :  \\
+     $\left(a^{n}\right)^{p}=a^{np}$\\
+    $\begin{aligned}\left(4^{n}\right)^{3}&=\left(4\right)^{3n}\\
+    &=\left(4^{3}\right)^{n}\\
+    &=64^{n}
+    \end{aligned}$\\La bonne réponse est la réponse {\bfseries \color{correction}C}.
+
+\item De la relation $7z+8c=7$, on déduit en ajoutant $-8c$ dans chaque membre :
+$7z=7-8c$
+Puis, en divisant par $7$, on obtient : ${\color{correction}\boldsymbol{z=\dfrac{7-8c}{7}}}$.
+
+
+\item La réunion $]-21\,;\,14]\,\cup \,[ -28\,;\,-6]$ = ${\color{correction}\boldsymbol{[-28\,;\,14]}}$ car les deux intervalles se chevauchent.
+
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 5
+\newpage \begin{seance}{} %5
+
+\begin{enumerate}
+\item On a : \\
+$f(-1)=((-1)+1)((-1)-1)=(-1+1)(-1-1)=0\times(-2)={\color{correction}\boldsymbol{0}}$
+
+Mentalement : On commence par "calculer" la première parenthèse : $(-1)+1=0$.
+Puis la deuxième : $(-1)-1=-2$.
+On fait le produit des nombres obtenus : $0\times -2=0$.
+
+\item Comme $u(x)=\dfrac{2}{3}x+1$, on a : \\
+$u(4)=\dfrac{2}{3}\times 4+1=\dfrac{8}{3}+1={\color{correction}\boldsymbol{\dfrac{11}{3}}}$
+
+\item Comme $w(x)=5x+3$, on a : \\
+$w\left(-\dfrac{4}{5}\right)=5\times \left(-\dfrac{4}{5}\right)+3=-4+3={\color{correction}\boldsymbol{-1}}$
+
+\item Pour lire l'image de $-4$, on place la valeur de $-4$ sur l'axe des abscisses (axe de lecture des antécédents) et on lit
+son image sur l'axe des ordonnées (axe de lecture des images). On obtient : $f(-4)={\color{correction}\boldsymbol{-3}}$
+
+\item On a : $k(-2)= (-2)-2=-4$ et $k(1)= 1-2=-1$.\\
+On en déduit que $k(-2)-k(1)=-4-(-1)={\color{correction}\boldsymbol{-3}}$.
+
+\item $\bullet$ La somme des solutions de l'équation $f(x)=2$ est égal à $-4$.\\  
+Cette affirmation est correcte : L'équation $f(x)=2$ a trois solutions : $-6$, $-1$ et $3$.\\
+La somme de ces solutions est $-6+ (-1)+3= -4$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 5 - Seulement en version professeur
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %5
+
+\begin{enumerate}
+\item On a : \\
+$f(-3)=2\times(-3)^2+(-3)+3=2\times 9-3+3=18-3+3={\color{correction}\boldsymbol{18}}$
+
+Mentalement : On commence par calculer le carré de $-3$, soit $(-3)^2=9$.
+On multiplie ensuite cette valeur par le coefficient devant $x^2$, soit $2\times 9=18$.
+On ajoute $-3$ soit $18+(-3)=15$.
+Pour finir, on ajoute $3$, ce qui donne $15+3$, soit $18$.
+
+\item Comme $g(x)=\dfrac{2}{5}x+6$, on a : \\
+$g(-10)=\dfrac{2}{5}\times (-10)+6=2\times \dfrac{-10}{5}+6=-4+6={\color{correction}\boldsymbol{2}}$
+
+\item Comme $u(x)=-2x+1$, on a : \\
+$u\left(\dfrac{4}{3}\right)=-2\times \dfrac{4}{3}+1=-\dfrac{8}{3}+1={\color{correction}\boldsymbol{-\dfrac{5}{3}}}$
+
+\item Pour lire l'image de $-3$, on place la valeur de $-3$ sur l'axe des abscisses (axe de lecture des antécédents) et on lit
+son image sur l'axe des ordonnées (axe de lecture des images). On obtient : $f(-3)={\color{correction}\boldsymbol{3}}$
+
+\item On a : $g(-1)=-3\times (-1)-6=3-6=-3$ et $g(1)=-3\times 1-6=-3-6=-9$.\\
+On en déduit que $g(-1)-g(1)=-3-(-9)={\color{correction}\boldsymbol{6}}$.
+
+\item $\bullet$ Le produit des solutions de l'équation $f(x)=-1$ est égal à $8$.\\  
+Cette affirmation est correcte : L'équation $f(x)=-1$ a deux solutions : $-4$ et $-2$.\\
+Le produit de ces solutions est $-4\times (-2)= 8$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 6
+\newpage \begin{seance}{} %6
+
+\begin{enumerate}
+\item Le nombre de solutions de l'équation $f(x)=0$ est le nombre d'antécédents de $0$ par la fonction $f$.\\
+Puisque la droite d'équation $y = 0$ (droite horizontale) coupe $1$ fois la courbe, on en déduit que l'équation $f(x)=0$ admet ${\color{correction}\boldsymbol{1}}$ {\bfseries \color{correction}solution}.
+
+\item On a :\\
+          $f(-3)=1- 2\times (-3)^2={\color{correction}\boldsymbol{-17}}$\\{\color{Couleur1} Mentalement : \\
+    On commence par "calculer" le carré de $-3$ :  $(-3)^2=9$.\\
+    Puis on multiplie le résultat par $2$ : $2\times 9=18$.\\
+    On calcule alors : $1-18=-17$.}
+
+\item On remplace $x$ par $x+3$ dans l'expression de $u$ : \\
+$u(x+3)=-3(x+3)-10=-3x-9-10={\color{correction}\boldsymbol{-3x-19}}$
+
+\item $(-1)^{n+5}=(-1)^{4}\times (-1)^{n+1}=1\times (-1)^{n+1} = {\color{correction}\boldsymbol{(-1)^{n+1}}}$
+
+La bonne réponse est la réponse {\bfseries \color{correction}C}.
+
+\item $N=\dfrac{15^7}{5^4}=\dfrac{5^7\times 3^7 }{5^4}=3^7\times 5^{3}=3^4\times3^3\times5^3=3^4\times(3\times5)^3=3^{4}\times15^3 ={\color{correction}\boldsymbol{81\times 15^{3}}}$
+
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item $A = \dfrac{1}{1-\dfrac{3}{5}} = \dfrac{1}{\dfrac{5}{5}-\dfrac{3}{5}} = \dfrac{1}{\dfrac{2}{5}} = 1 \times \dfrac{5}{2} = {\color{correction}\boldsymbol{\dfrac{5}{2}}}$
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 6 - Seulement en version professeur
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %6
+
+\begin{enumerate}
+\item Le nombre de solutions de l'équation $f(x)=-1$ est le nombre d'antécédents de $-1$ par la fonction $f$.\\
+Puisque la droite d'équation $y = -1$ (droite horizontale) coupe $3$ fois la courbe, on en déduit que l'équation $f(x)=-1$ admet ${\color{correction}\boldsymbol{3}}$ {\bfseries \color{correction}solutions}.
+
+\item On a :\\
+          $f(-3)=\left(-2\times(-3)+2\right)^2= (6+2)^2=8^2={\color{correction}\boldsymbol{64}}$\\{\color{Couleur1} Mentalement : \\
+          On commence par "calculer" l'intérieur de la parenthèse, puis on élève le résultat au carré.
+    }
+
+\item On remplace $x$ par $x+1$ dans l'expression de $t$ :
+$t(x+1)=-3(x+1)-6 =-3x-3-6={\color{correction}\boldsymbol{-3x-9}}$
+
+\item $(-1)^{n+6}=(-1)^{6} \times (-1)^{n} =1\times (-1)^{n} = {\color{correction}\boldsymbol{(-1)^{n}}}$
+
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item $N=\dfrac{15^5}{5^2}=\dfrac{5^5\times 3^5 }{5^2}=3^5\times 5^{3}=15^3\times 3^{2}={\color{correction}\boldsymbol{9\times 15^{3}}}$
+
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item $A = \dfrac{1}{5-\dfrac{3}{5}} = \dfrac{1}{\dfrac{25}{5}-\dfrac{3}{5}} = \dfrac{1}{\dfrac{22}{5}} = 1 \times \dfrac{5}{22} = {\color{correction}\boldsymbol{\dfrac{5}{22}}}$
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 7
+\newpage \begin{seance}{} %7
+
+\begin{enumerate}
+\item Pour passer de $20\,\%$ à $100\,\%$, on multiplie par $5$. \\
+$\begin{aligned}
+20\,\% \text{ de } 150 &= 30\\
+100\,\% \text{ de } 150 &= 5 \times 30\\
+N &= 150
+\end{aligned}$
+
+Donc $p = {\color{correction}\boldsymbol{20}}$.
+
+\item Pour calculer $25\,\%$ de $240$, on effectue le calcul $0{,}25 \times 240$ soit encore ${\color{correction}\boldsymbol{\dfrac{25 \times 240}{100}}}$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item $15\,\%$ de $400 = 0{,}15 \times 400 = {\color{correction}\boldsymbol{60}}$
+
+Donc ${\color{correction}\boldsymbol{60}}$ élèves étudient l'Italien.
+
+\item Pour passer de $30\,\%$ à $100\,\%$, on divise par $30$ puis on multiplie par $100$ (ou on multiplie par $\dfrac{100}{30} = \dfrac{10}{3}$).
+$\begin{aligned}
+30\,\% \text{ de } N &= 45\\
+100\,\% \text{ de } N &= \dfrac{100}{30} \times 45\\
+N &= \dfrac{10}{3} \times 45 = {\color{correction}\boldsymbol{150}}
+\end{aligned}$
+
+\item Augmenter de $8\,\%$ revient à multiplier par $1 + \dfrac{8}{100}$.
+Ainsi, le coefficient multiplicateur associé à une augmentation de $8\,\%$ est $1 + 0{,}08$, soit ${\color{correction}\boldsymbol{1{,}08}}$.
+
+\item L'augmentation est de $21$ euros sur un total de $60$ euros.
+Le pourcentage d'augmentation est donné par le quotient : $\dfrac{21}{60} = \dfrac{7}{20} = 0{,}35 = {\color{correction}\boldsymbol{35}}\,\%$.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 7
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %7
+
+\begin{enumerate}
+\item Pour passer de $30\,\%$ à $100\,\%$, on divise par $30$ puis on multiplie par $100$ (ou on multiplie par $\dfrac{100}{30} = \dfrac{10}{3}$).
+$30\,\%$ de $80 = 24$, donc $p = {\color{correction}\boldsymbol{30}}$.
+
+\item Pour calculer $35\,\%$ de $180$, on effectue le calcul $0{,}35 \times 180$ soit encore ${\color{correction}\boldsymbol{\dfrac{35 \times 180}{100}}}$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}C}.
+
+\item $12\,\%$ de $600 = 0{,}12 \times 600 = {\color{correction}\boldsymbol{72}}$
+
+Donc ${\color{correction}\boldsymbol{72}}$ élèves étudient l'Allemand.
+
+\item Pour passer de $40\,\%$ à $100\,\%$, on multiplie par $\dfrac{100}{40} = 2{,}5$.
+$\begin{aligned}
+40\,\% \text{ de } N &= 60\\
+100\,\% \text{ de } N &= 2{,}5 \times 60\\
+N &= {\color{correction}\boldsymbol{150}}
+\end{aligned}$
+
+\item Diminuer de $12\,\%$ revient à multiplier par $1 - \dfrac{12}{100}$.
+Ainsi, le coefficient multiplicateur associé à une diminution de $12\,\%$ est $1 - 0{,}12$, soit ${\color{correction}\boldsymbol{0{,}88}}$.
+
+\item L'augmentation est de $32$ euros sur un total de $80$ euros.
+Le pourcentage d'augmentation est donné par le quotient : $\dfrac{32}{80} = \dfrac{2}{5} = 0{,}4 = {\color{correction}\boldsymbol{40}}\,\%$.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 8
+\newpage \begin{seance}{} %8
+
+\begin{enumerate}
+\item Multiplier par $0{,}75$ revient à multiplier par $1 - \dfrac{25}{100}$.
+Cela revient donc à diminuer de $25\,\%$.
+Ainsi, le taux d'évolution associé au coefficient multiplicateur $0{,}75$ est ${\color{correction}\boldsymbol{-25}}\,\%$.
+
+\item Le nouveau prix est : $50 \times (1 - 0{,}2) = 50 \times 0{,}8 = {\color{correction}\boldsymbol{40}}$ €.
+
+\item Diminuer de $25\,\%$ revient à multiplier par $0{,}75$ (coefficient multiplicateur).
+Ainsi, le nouveau prix est donné par : $120 \times (1 - \dfrac{25}{100}) = 120 \times (1 - 0{,}25) = {\color{correction}\boldsymbol{120 \times (1 - \dfrac{25}{100})}}$
+
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item Le prix a baissé de $8$ €, ce qui correspond à $20\,\%$ de $40$ €.
+Le prix du sweat a donc baissé de ${\color{correction}\boldsymbol{20}}\,\%$.
+
+\item Le taux d'évolution $t$ est donné par la formule :
+$t = \dfrac{\text{valeur finale} - \text{valeur initiale}}{\text{valeur initiale}}$
+
+Ici : $t = \dfrac{225 - 150}{150} = \dfrac{75}{150} = 0{,}5$
+
+Le taux d'évolution est donc de ${\color{correction}\boldsymbol{50}}\,\%$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item Le coefficient multiplicateur associé à une augmentation de $10\,\%$ est $1{,}1$.
+Le coefficient multiplicateur associé à deux augmentations successives de $10\,\%$ est le produit des coefficients multiplicateurs, soit $1{,}1 \times 1{,}1 = 1{,}21$.
+L'évolution globale est donnée par $1{,}21 - 1 = 0{,}21 = {\color{correction}\boldsymbol{+21}}\,\%$.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 8
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %8
+
+\begin{enumerate}
+\item Multiplier par $1{,}15$ revient à multiplier par $1 + \dfrac{15}{100}$.
+Cela revient donc à augmenter de $15\,\%$.
+Ainsi, le taux d'évolution associé au coefficient multiplicateur $1{,}15$ est ${\color{correction}\boldsymbol{+15}}\,\%$.
+
+\item Le nouveau prix est : $80 \times (1 + 0{,}15) = 80 \times 1{,}15 = {\color{correction}\boldsymbol{92}}$ €.
+
+\item Augmenter de $12\,\%$ revient à multiplier par $1{,}12$ (coefficient multiplicateur).
+Ainsi, le nouveau prix est donné par : $25 \times (1 + \dfrac{12}{100})$
+
+La bonne réponse est la réponse {\bfseries \color{correction}C} (et aussi D car $1 + \dfrac{12}{100} = 1{,}12$).
+
+\item Le prix a augmenté de $15$ €, ce qui correspond à $25\,\%$ de $60$ €.
+Le prix de la veste a donc augmenté de ${\color{correction}\boldsymbol{25}}\,\%$.
+
+\item Le taux d'évolution $t$ est donné par la formule :
+$t = \dfrac{\text{valeur finale} - \text{valeur initiale}}{\text{valeur initiale}}$
+
+Ici : $t = \dfrac{160 - 200}{200} = \dfrac{-40}{200} = -0{,}2$
+
+Le taux d'évolution est donc de ${\color{correction}\boldsymbol{-20}}\,\%$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item Le coefficient multiplicateur associé à une baisse de $15\,\%$ est $0{,}85$.
+Le coefficient multiplicateur associé à deux baisses successives de $15\,\%$ est le produit des coefficients multiplicateurs, soit $0{,}85 \times 0{,}85 = 0{,}7225$.
+L'évolution globale est donnée par $0{,}7225 - 1 = -0{,}2775 = {\color{correction}\boldsymbol{-27{,}75}}\,\%$.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+\begin{seance}{} %9
+\begin{enumerate}
+ \item Diminuer de $20\,\%$ revient à multiplier par $0{,}8$ et augmenter de $20\,\%$ revient à multiplier par $1{,}2$.\\
+  Globalement cela revient donc à multiplier par $0{,}8\times 1{,}2=0{,}96$.\\
+  Multiplier par $0{,}96$ revient à multiplier par  $1-0{,}04$. \\
+          Le taux d'évolution global est donc : ${\color[HTML]{f15929}\boldsymbol{-4\,}} \%$.
+
+
+\item Le coefficient multiplicateur associé à une baisse de $75\,\%$ est $1-0{,}75=0{,}25$.\\
+    Comme $0{,}25\times 4=1$, il faut donc multiplier par $4$ (coefficient multiplicateur réciproque) pour revenir au prix initial.\\
+      Un coefficient multiplicateur de $4$ correspond à un taux d'évolution de $300\,\%$.\\
+      On en déduit qu'il faut une augmentation de ${\color[HTML]{f15929}\boldsymbol{300\,\%}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{f15929}B}.
+
+
+\item Il s'agit d'un problème additif. Il va être nécessaire de réduire les fractions au même dénominateur pour les additionner, les soustraire ou les comparer.\\Réduisons les fractions de l'énoncé au même dénominateur :  $\dfrac{3}{10}$ $= \dfrac{12}{40}$ ; $\dfrac{1}{4}$ $= \dfrac{10}{40}$ et $\dfrac{7}{40}$ .\\Calculons d'abord la fraction du jardin occupée par une serre servant aux semis : \\$1-\dfrac{3}{10}-\dfrac{1}{4}-\dfrac{7}{40} = \dfrac{40}{40}-\dfrac{12}{40}-\dfrac{10}{40}-\dfrac{7}{40} = \dfrac{40-12-10-7}{40} = \dfrac{11}{40}$\\Le jardin est donc occupé de la façon suivante : $\dfrac{3}{10}$ par la culture des légumes, $\dfrac{1}{4}$ par la culture des plantes aromatiques, $\dfrac{7}{40}$ par une serre servant aux semis et $\dfrac{11}{40}$ par la culture des fraisiers.\\ Avec les mêmes dénominateurs pour pouvoir comparer, le jardin est donc occupé de la façon suivante : $\dfrac{12}{40}$ par la culture des légumes, $\dfrac{10}{40}$ par la culture des plantes aromatiques, $\dfrac{7}{40}$ par une serre servant aux semis et $\dfrac{11}{40}$ par la culture des fraisiers.\\Nous pouvons alors ranger ces fractions dans l'ordre croissant : $\dfrac{7}{40}$, $\dfrac{10}{40}$, $\dfrac{11}{40}$, $\dfrac{12}{40}$.\\Enfin, nous pouvons ranger les fractions de l'énoncé et la fraction calculée dans l'ordre croissant : ${\color[HTML]{f15929}\boldsymbol{\dfrac{7}{40}}} < {\color[HTML]{f15929}\boldsymbol{\dfrac{1}{4}}} < {\color[HTML]{f15929}\boldsymbol{\dfrac{11}{40}}} < {\color[HTML]{f15929}\boldsymbol{\dfrac{3}{10}}}$.\\ 
+                      C'est donc par {\bfseries \color[HTML]{f15929}la culture des légumes} que le jardin est le plus occupé.
+
+
+\item
+            Pour $x\in \mathbb{R}\smallsetminus\left\{\dfrac{-1}{2}\,;\,\dfrac{1}{3}\right\}$, \\
+            $\begin{aligned}
+            \dfrac{3}{9x-3}+\dfrac{1}{2x+1}
+            &= \dfrac{3(2x+1)}{(9x-3)(2x+1)}+\dfrac{1(9x-3)}{(9x-3)(2x+1)}\\
+            &=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}\\
+            &=\dfrac{15x}{(9x-3)(2x+1)}
+            \end{aligned}$
+
+
+\item $4(-2x-7)=-9x-3$\\On développe le membre de gauche.\\$-8x-28=-9x-3$\\On ajoute $9x$ aux deux membres.\\$-8x-28{\color[HTML]{216D9A}\boldsymbol{+9x}}=-9x-3{\color[HTML]{216D9A}\boldsymbol{+9x}}$\\$x-28=-3$\\On ajoute $28$ aux deux membres.\\$x-28{\color[HTML]{216D9A}\boldsymbol{+28}}=-3{\color[HTML]{216D9A}\boldsymbol{+28}}$\\$x=25$\\On divise les deux membres par $1$.\\$x{\color[HTML]{216D9A}\boldsymbol{\div1}}=25{\color[HTML]{216D9A}\boldsymbol{\div1}}$\\$x=25$\\La solution de l'équation $4(-2x-7)=-9x-3$ est ${\color[HTML]{f15929}\boldsymbol{25}}$.
+
+\end{enumerate}
+\end{seance}
+
+
+
+
+
+
+\ifthenelse{\boolean{prof}}{\begin{seanceD}{} %9
+\begin{enumerate}
+\item Diminuer de $80\,\%$ revient à multiplier par $0{,}2$ et augmenter de $10\,\%$ revient à multiplier par $1{,}1$.\\
+  Globalement cela revient donc à multiplier par $0{,}2\times 1{,}1=0{,}22$.\\
+  Multiplier par $0{,}22$ revient à multiplier par  $1-0{,}78$. \\
+          Le taux d'évolution global est donc : ${\color[HTML]{f15929}\boldsymbol{-78\,}} \%$.
+          
+\item  Le coefficient multiplicateur associé à une baisse de $50\,\%$ est $1-0{,}5=0{,}5$.\\
+    Comme $0{,}5\times 2=1$, il faut donc multiplier par $2$ (coefficient multiplicateur réciproque) pour revenir au prix initial.\\
+      Un coefficient multiplicateur de $2$ correspond à un taux d'évolution de $100\,\%$.\\
+      On en déduit qu'il faut une augmentation de ${\color[HTML]{f15929}\boldsymbol{100\,\%}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{f15929}D}.
+
+
+\item Il s'agit d'un problème additif. Il va être nécessaire de réduire les fractions au même dénominateur pour les additionner, les soustraire ou les comparer.\\Réduisons les fractions de l'énoncé au même dénominateur :  $\dfrac{11}{40}$  et $\dfrac{1}{4}$ $= \dfrac{10}{40}$.\\Calculons d'abord la distance en course à pied : \\$1-\dfrac{11}{40}-\dfrac{1}{4} = \dfrac{40}{40}-\dfrac{11}{40}-\dfrac{10}{40} = \dfrac{40-11-10}{40} = \dfrac{19}{40}$\\Gaspard fait donc $\dfrac{11}{40}$ en VTT, $\dfrac{1}{4}$ en ski de fond et $\dfrac{19}{40}$ en course à pied.\\ Avec les mêmes dénominateurs pour pouvoir comparer, Gaspard fait donc $\dfrac{11}{40}$ en VTT, $\dfrac{10}{40}$ en ski de fond et $\dfrac{19}{40}$ en course à pied.\\Nous pouvons alors ranger ces fractions dans l'ordre croissant : $\dfrac{10}{40}$ < $\dfrac{11}{40}$ < $\dfrac{19}{40}$.\\Enfin, nous pouvons ranger les fractions de l'énoncé et la fraction calculée dans l'ordre croissant : ${\color[HTML]{f15929}\boldsymbol{\dfrac{1}{4}}}$ < ${\color[HTML]{f15929}\boldsymbol{\dfrac{11}{40}}}$ < ${\color[HTML]{f15929}\boldsymbol{\dfrac{19}{40}}}$.\\ 
+                      C'est donc en {\bfseries \color[HTML]{f15929}course à pied} que Gaspard fait la plus grande distance.
+
+\item Pour $x\in \mathbb{R}\smallsetminus\left\{-1\right\}$, \\
+            $\begin{aligned}
+            4x+5+\dfrac{2}{3x+3}
+           & = \dfrac{(4x+5)(3x+3)}{3x+3}+\dfrac{2}{3x+3}\\
+            &=\dfrac{(12x^2+27x+15)+2}{3x+3}\\
+           & =\dfrac{12x^2+27x+17}{3x+3}
+           \end{aligned}$
+\item $2-(-6x-6)=x-5$\\On développe le membre de gauche.\\$2+6x+6=x-5$\\$6x+8=x-5$\\On soustrait $x$ aux deux membres.\\$6x+8{\color[HTML]{216D9A}\boldsymbol{-x}}=1x+-5{\color[HTML]{216D9A}\boldsymbol{-x}}$\\$5x+8=-5$\\On soustrait $8$ aux deux membres.\\$5x+8{\color[HTML]{216D9A}\boldsymbol{-8}}=-5{\color[HTML]{216D9A}\boldsymbol{-8}}$\\$5x=-13$\\On divise les deux membres par $5$.\\$5x{\color[HTML]{216D9A}\boldsymbol{\div5}}=-13{\color[HTML]{216D9A}\boldsymbol{\div5}}$\\$x=-\dfrac{13}{5}$\\La solution de l'équation $2-(-6x-6)=x-5$ est ${\color[HTML]{f15929}\boldsymbol{-\dfrac{13}{5}}}$.
+\end{enumerate}
+\end{seanceD}}
+
+
+
+
+
+
+
+
+\begin{seance}{} %10
+\begin{enumerate}
+ \item On remplace $x$ par $-\dfrac{2}{5}$ dans l'expression de $f$ :\\
+     
+    $\begin{aligned}
+    f\left(-\dfrac{2}{5}\right)&=-2\times \left(-\dfrac{2}{5}\right)^2+5\times \left(-\dfrac{2}{5}\right)-1\\
+    &=-2\times\dfrac{4}{25}-\dfrac{10}{5}-1\\
+    &=-\dfrac{8}{25}-\dfrac{10}{5}-1\\
+    &=\dfrac{-8-50-25}{25}\\
+    &=-\dfrac{83}{25}
+    \end{aligned}$\\
+    
+    L'image de $-\dfrac{2}{5}$ par la fonction $f$ est : ${\color[HTML]{f15929}\boldsymbol{-\dfrac{83}{25}}}$.
+\item En prenant deux points sur la droite, on obtient :\\
+     
+    $m=\dfrac{{\color{blue}\boldsymbol{-2}}}{{\color{red}\boldsymbol{5}}}={\color[HTML]{f15929}\boldsymbol{-\dfrac{2}{5}}}$\\\begin{tikzpicture}[baseline,scale = 0.75]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-6,-1) rectangle (6,6.25);
+    	\draw[color={blue},line width = 2] (-51.42,21.57)--(46.42,-17.57);
+	\draw[color ={black},line width = 1.2,->] (-6,0)--(6,0);
+	\draw[color ={black},line width = 1.2,->] (0,-1)--(0,6);
+	\draw[color ={black},opacity = 0.4] (-6,1)--(6,1);
+	\draw[color ={black},opacity = 0.4] (-6,-1)--(6,-1);
+	\draw[color ={black},opacity = 0.4] (-6,2)--(6,2);
+	\draw[color ={black},opacity = 0.4] (-6,3)--(6,3);
+	\draw[color ={black},opacity = 0.4] (-6,4)--(6,4);
+	\draw[color ={black},opacity = 0.4] (-6,5)--(6,5);
+	\draw[color ={black},opacity = 0.4] (1,-1)--(1,6);
+	\draw[color ={black},opacity = 0.4] (-1,-1)--(-1,6);
+	\draw[color ={black},opacity = 0.4] (2,-1)--(2,6);
+	\draw[color ={black},opacity = 0.4] (-2,-1)--(-2,6);
+	\draw[color ={black},opacity = 0.4] (3,-1)--(3,6);
+	\draw[color ={black},opacity = 0.4] (-3,-1)--(-3,6);
+	\draw[color ={black},opacity = 0.4] (4,-1)--(4,6);
+	\draw[color ={black},opacity = 0.4] (-4,-1)--(-4,6);
+	\draw[color ={black},opacity = 0.4] (5,-1)--(5,6);
+	\draw[color ={black},opacity = 0.4] (-5,-1)--(-5,6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0)--(6.1,0);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.1)--(6.1,0.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.1)--(6.1,-0.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.2)--(6.1,0.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.2)--(6.1,-0.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.3)--(6.1,0.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.3)--(6.1,-0.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.4)--(6.1,0.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.4)--(6.1,-0.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.5)--(6.1,0.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.5)--(6.1,-0.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.6)--(6.1,0.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.6)--(6.1,-0.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.7)--(6.1,0.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.7)--(6.1,-0.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.8)--(6.1,0.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.8)--(6.1,-0.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.9)--(6.1,0.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.9)--(6.1,-0.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1)--(6.1,1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-1)--(6.1,-1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.1)--(6.1,1.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-1.1)--(6.1,-1.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.2)--(6.1,1.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.3)--(6.1,1.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.4)--(6.1,1.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.5)--(6.1,1.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.6)--(6.1,1.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.7)--(6.1,1.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.8)--(6.1,1.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.9)--(6.1,1.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2)--(6.1,2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.1)--(6.1,2.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.2)--(6.1,2.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.3)--(6.1,2.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.4)--(6.1,2.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.5)--(6.1,2.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.6)--(6.1,2.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.7)--(6.1,2.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.8)--(6.1,2.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.9)--(6.1,2.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3)--(6.1,3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.1)--(6.1,3.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.2)--(6.1,3.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.3)--(6.1,3.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.4)--(6.1,3.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.5)--(6.1,3.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.6)--(6.1,3.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.7)--(6.1,3.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.8)--(6.1,3.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.9)--(6.1,3.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4)--(6.1,4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.1)--(6.1,4.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.2)--(6.1,4.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.3)--(6.1,4.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.4)--(6.1,4.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.5)--(6.1,4.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.6)--(6.1,4.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.7)--(6.1,4.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.8)--(6.1,4.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.9)--(6.1,4.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5)--(6.1,5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.1)--(6.1,5.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.2)--(6.1,5.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.3)--(6.1,5.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.4)--(6.1,5.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.5)--(6.1,5.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.6)--(6.1,5.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.7)--(6.1,5.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.8)--(6.1,5.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.9)--(6.1,5.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,6)--(6.1,6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,6.1)--(6.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (0,-1.1)--(0,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.1,-1.1)--(0.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.1,-1.1)--(-0.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.2,-1.1)--(0.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.2,-1.1)--(-0.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.3,-1.1)--(0.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.3,-1.1)--(-0.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.4,-1.1)--(0.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.4,-1.1)--(-0.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.5,-1.1)--(0.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.5,-1.1)--(-0.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.6,-1.1)--(0.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.6,-1.1)--(-0.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.7,-1.1)--(0.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.7,-1.1)--(-0.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.8,-1.1)--(0.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.8,-1.1)--(-0.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.9,-1.1)--(0.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.9,-1.1)--(-0.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (1,-1.1)--(1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1,-1.1)--(-1,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.1,-1.1)--(1.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.1,-1.1)--(-1.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.2,-1.1)--(1.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.2,-1.1)--(-1.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.3,-1.1)--(1.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.3,-1.1)--(-1.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.4,-1.1)--(1.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.4,-1.1)--(-1.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.5,-1.1)--(1.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.5,-1.1)--(-1.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.6,-1.1)--(1.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.6,-1.1)--(-1.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.7,-1.1)--(1.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.7,-1.1)--(-1.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.8,-1.1)--(1.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.8,-1.1)--(-1.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.9,-1.1)--(1.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.9,-1.1)--(-1.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (2,-1.1)--(2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2,-1.1)--(-2,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.1,-1.1)--(2.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.1,-1.1)--(-2.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.2,-1.1)--(2.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.2,-1.1)--(-2.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.3,-1.1)--(2.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.3,-1.1)--(-2.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.4,-1.1)--(2.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.4,-1.1)--(-2.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.5,-1.1)--(2.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.5,-1.1)--(-2.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.6,-1.1)--(2.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.6,-1.1)--(-2.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.7,-1.1)--(2.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.7,-1.1)--(-2.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.8,-1.1)--(2.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.8,-1.1)--(-2.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.9,-1.1)--(2.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.9,-1.1)--(-2.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (3,-1.1)--(3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3,-1.1)--(-3,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.1,-1.1)--(3.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.1,-1.1)--(-3.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.2,-1.1)--(3.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.2,-1.1)--(-3.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.3,-1.1)--(3.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.3,-1.1)--(-3.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.4,-1.1)--(3.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.4,-1.1)--(-3.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.5,-1.1)--(3.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.5,-1.1)--(-3.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.6,-1.1)--(3.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.6,-1.1)--(-3.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.7,-1.1)--(3.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.7,-1.1)--(-3.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.8,-1.1)--(3.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.8,-1.1)--(-3.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.9,-1.1)--(3.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.9,-1.1)--(-3.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (4,-1.1)--(4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4,-1.1)--(-4,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.1,-1.1)--(4.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.1,-1.1)--(-4.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.2,-1.1)--(4.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.2,-1.1)--(-4.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.3,-1.1)--(4.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.3,-1.1)--(-4.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.4,-1.1)--(4.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.4,-1.1)--(-4.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.5,-1.1)--(4.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.5,-1.1)--(-4.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.6,-1.1)--(4.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.6,-1.1)--(-4.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.7,-1.1)--(4.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.7,-1.1)--(-4.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.8,-1.1)--(4.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.8,-1.1)--(-4.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.9,-1.1)--(4.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.9,-1.1)--(-4.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (5,-1.1)--(5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5,-1.1)--(-5,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.1,-1.1)--(5.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.1,-1.1)--(-5.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.2,-1.1)--(5.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.2,-1.1)--(-5.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.3,-1.1)--(5.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.3,-1.1)--(-5.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.4,-1.1)--(5.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.4,-1.1)--(-5.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.5,-1.1)--(5.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.5,-1.1)--(-5.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.6,-1.1)--(5.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.6,-1.1)--(-5.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.7,-1.1)--(5.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.7,-1.1)--(-5.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.8,-1.1)--(5.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.8,-1.1)--(-5.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.9,-1.1)--(5.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.9,-1.1)--(-5.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (6,-1.1)--(6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-6,-1.1)--(-6,6.1);
+	\draw[color ={gray},opacity = 0.1] (6.1,-1.1)--(6.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-1.1)--(-6.1,6.1);
+	\draw[color ={black},line width = 1.2] (0,-0.1)--(0,0.1);
+	\draw[color ={black},line width = 1.2] (1,-0.1)--(1,0.1);
+	\draw[color ={black},line width = 1.2] (-1,-0.1)--(-1,0.1);
+	\draw[color ={black},line width = 1.2] (2,-0.1)--(2,0.1);
+	\draw[color ={black},line width = 1.2] (-2,-0.1)--(-2,0.1);
+	\draw[color ={black},line width = 1.2] (3,-0.1)--(3,0.1);
+	\draw[color ={black},line width = 1.2] (-3,-0.1)--(-3,0.1);
+	\draw[color ={black},line width = 1.2] (4,-0.1)--(4,0.1);
+	\draw[color ={black},line width = 1.2] (-4,-0.1)--(-4,0.1);
+	\draw[color ={black},line width = 1.2] (-0.1,0)--(0.1,0);
+	\draw[color ={black},line width = 1.2] (-0.1,1)--(0.1,1);
+	\draw[color ={black},line width = 1.2] (-0.1,2)--(0.1,2);
+	\draw[color ={black},line width = 1.2] (-0.1,3)--(0.1,3);
+	\draw[color ={black},line width = 1.2] (-0.1,4)--(0.1,4);
+	\draw[color ={black},line width = 1.2] (-0.1,5)--(0.1,5);
+	\draw (1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$1$}};
+	\draw (2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$2$}};
+	\draw (3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$3$}};
+	\draw (4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$4$}};
+	\draw (5,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$5$}};
+	\draw (-1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-1$}};
+	\draw (-2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-2$}};
+	\draw (-3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-3$}};
+	\draw (-4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-4$}};
+	\draw (-5,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-5$}};
+	\draw (-0.3,1.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$1$}};
+	\draw (-0.3,2.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$2$}};
+	\draw (-0.3,3.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$3$}};
+	\draw (-0.3,4.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$4$}};
+	\draw (-0.3,5.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$5$}};
+	\draw[color ={black},line width = 1.25,opacity = 0.8] (-0.19,1.19)--(0.19,0.81);\draw[color ={black},line width = 1.25,opacity = 0.8] (-0.19,0.81)--(0.19,1.19);
+	\draw (0,1.5) node[anchor = center, rotate=0] {\scriptsize \color{black}{$B$}};
+	\draw (-5,3.5) node[anchor = center, rotate=0] {\scriptsize \color{black}{$A$}};
+	\draw[color ={black},line width = 1.25,opacity = 0.8] (-5.19,3.19)--(-4.81,2.81);\draw[color ={black},line width = 1.25,opacity = 0.8] (-5.19,2.81)--(-4.81,3.19);
+	\draw (-0.3,-0.3) node[anchor = center, rotate=0] {\scriptsize \color{black}{$\text{O}$}};
+	\draw[color ={black},line width = 2, dashed ] (0,1)--(-5,1);
+	\draw[color ={black},line width = 2, dashed ] (-5,3)--(-5,1);
+	\draw (-2.5,1.3) node[anchor = center, rotate=0] {\scriptsize \color{red}{$5$}};
+	\draw (-4.5,2) node[anchor = center, rotate=0] {\scriptsize \color{blue}{$-2$}};
+
+\end{tikzpicture}
+
+\item Multiplier par  $10^{3}$ revient à multiplier par $1\,000$,  donc l'écriture décimale de $1{,}686\times 10^{3}$ est : ${\color[HTML]{f15929}\boldsymbol{1\,686}}$.
+\item  $A            =-5 \times ( {\color{blue}\boldsymbol{(-2)^3}} +2\times(-2))$\\$A=-5 \times ( -8 + {\color{blue}\boldsymbol{2\times(-2)}})$\\$A=-5\times ( {\color{blue}\boldsymbol{-8-4}})$\\$A=-5\times (-12)$\\$A = {\color[HTML]{f15929}\boldsymbol{60}}$
+\item  $-7x+3> -8x+13$\\On ajoute $8x$ aux deux membres.\\$-7x+3{\color{blue}\boldsymbol{+8x}}
+          >-8x+13{\color{blue}\boldsymbol{+8x}}$\\$x+3>13$\\On soustrait $3$ aux deux membres.\\$x+3{\color{blue}\boldsymbol{-3}}
+          >13{\color{blue}\boldsymbol{-3}}$\\$x>10$\\On divise les deux membres par $1$.\\$x{\color{blue}\boldsymbol{\div1}}
+            >10{\color{blue}\boldsymbol{\div1}}$\\$x>10$\\ L'ensemble de solutions de l'inéquation est $S = {\color[HTML]{f15929}\boldsymbol{\left]10\,;\,+\infty\right[}}$.
+\end{enumerate}
+\end{seance}
+
+\ifthenelse{\boolean{prof}}{\begin{seanceD}{} %10
+\begin{enumerate}
+\item On remplace $x$ par $-\dfrac{2}{3}$ dans l'expression de $f$ :\\
+     
+    $\begin{aligned}
+    f\left(-\dfrac{2}{3}\right)&=-2\times \left(-\dfrac{2}{3}\right)^2-2\times \left(-\dfrac{2}{3}\right)+1\\
+    &=-2\times\dfrac{4}{9}+\dfrac{4}{3}+1\\
+    &=-\dfrac{8}{9}+\dfrac{4}{3}+1\\
+    &=\dfrac{-8+12+9}{9}\\
+    &=\dfrac{13}{9}
+    \end{aligned}$\\
+    
+    L'image de $-\dfrac{2}{3}$ par la fonction $f$ est : ${\color[HTML]{f15929}\boldsymbol{\dfrac{13}{9}}}$.
+
+\item En prenant deux points sur la droite, on obtient :\\
+     
+    $m=\dfrac{{\color{blue}\boldsymbol{4}}}{{\color{red}\boldsymbol{3}}}={\color[HTML]{f15929}\boldsymbol{\dfrac{4}{3}}}$\\\begin{tikzpicture}[baseline,scale = 0.75]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-6,-1) rectangle (6,6.25);
+    	\draw[color={blue},line width = 2] (-33,-40)--(30,44);
+	\draw[color ={black},line width = 1.2,->] (-6,0)--(6,0);
+	\draw[color ={black},line width = 1.2,->] (0,-1)--(0,6);
+	\draw[color ={black},opacity = 0.4] (-6,1)--(6,1);
+	\draw[color ={black},opacity = 0.4] (-6,-1)--(6,-1);
+	\draw[color ={black},opacity = 0.4] (-6,2)--(6,2);
+	\draw[color ={black},opacity = 0.4] (-6,3)--(6,3);
+	\draw[color ={black},opacity = 0.4] (-6,4)--(6,4);
+	\draw[color ={black},opacity = 0.4] (-6,5)--(6,5);
+	\draw[color ={black},opacity = 0.4] (1,-1)--(1,6);
+	\draw[color ={black},opacity = 0.4] (-1,-1)--(-1,6);
+	\draw[color ={black},opacity = 0.4] (2,-1)--(2,6);
+	\draw[color ={black},opacity = 0.4] (-2,-1)--(-2,6);
+	\draw[color ={black},opacity = 0.4] (3,-1)--(3,6);
+	\draw[color ={black},opacity = 0.4] (-3,-1)--(-3,6);
+	\draw[color ={black},opacity = 0.4] (4,-1)--(4,6);
+	\draw[color ={black},opacity = 0.4] (-4,-1)--(-4,6);
+	\draw[color ={black},opacity = 0.4] (5,-1)--(5,6);
+	\draw[color ={black},opacity = 0.4] (-5,-1)--(-5,6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0)--(6.1,0);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.1)--(6.1,0.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.1)--(6.1,-0.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.2)--(6.1,0.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.2)--(6.1,-0.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.3)--(6.1,0.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.3)--(6.1,-0.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.4)--(6.1,0.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.4)--(6.1,-0.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.5)--(6.1,0.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.5)--(6.1,-0.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.6)--(6.1,0.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.6)--(6.1,-0.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.7)--(6.1,0.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.7)--(6.1,-0.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.8)--(6.1,0.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.8)--(6.1,-0.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,0.9)--(6.1,0.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-0.9)--(6.1,-0.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1)--(6.1,1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-1)--(6.1,-1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.1)--(6.1,1.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-1.1)--(6.1,-1.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.2)--(6.1,1.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.3)--(6.1,1.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.4)--(6.1,1.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.5)--(6.1,1.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.6)--(6.1,1.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.7)--(6.1,1.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.8)--(6.1,1.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,1.9)--(6.1,1.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2)--(6.1,2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.1)--(6.1,2.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.2)--(6.1,2.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.3)--(6.1,2.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.4)--(6.1,2.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.5)--(6.1,2.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.6)--(6.1,2.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.7)--(6.1,2.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.8)--(6.1,2.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,2.9)--(6.1,2.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3)--(6.1,3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.1)--(6.1,3.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.2)--(6.1,3.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.3)--(6.1,3.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.4)--(6.1,3.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.5)--(6.1,3.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.6)--(6.1,3.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.7)--(6.1,3.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.8)--(6.1,3.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,3.9)--(6.1,3.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4)--(6.1,4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.1)--(6.1,4.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.2)--(6.1,4.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.3)--(6.1,4.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.4)--(6.1,4.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.5)--(6.1,4.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.6)--(6.1,4.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.7)--(6.1,4.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.8)--(6.1,4.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,4.9)--(6.1,4.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5)--(6.1,5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.1)--(6.1,5.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.2)--(6.1,5.2);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.3)--(6.1,5.3);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.4)--(6.1,5.4);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.5)--(6.1,5.5);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.6)--(6.1,5.6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.7)--(6.1,5.7);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.8)--(6.1,5.8);
+	\draw[color ={gray},opacity = 0.1] (-6.1,5.9)--(6.1,5.9);
+	\draw[color ={gray},opacity = 0.1] (-6.1,6)--(6.1,6);
+	\draw[color ={gray},opacity = 0.1] (-6.1,6.1)--(6.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (0,-1.1)--(0,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.1,-1.1)--(0.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.1,-1.1)--(-0.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.2,-1.1)--(0.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.2,-1.1)--(-0.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.3,-1.1)--(0.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.3,-1.1)--(-0.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.4,-1.1)--(0.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.4,-1.1)--(-0.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.5,-1.1)--(0.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.5,-1.1)--(-0.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.6,-1.1)--(0.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.6,-1.1)--(-0.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.7,-1.1)--(0.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.7,-1.1)--(-0.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.8,-1.1)--(0.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.8,-1.1)--(-0.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (0.9,-1.1)--(0.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-0.9,-1.1)--(-0.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (1,-1.1)--(1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1,-1.1)--(-1,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.1,-1.1)--(1.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.1,-1.1)--(-1.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.2,-1.1)--(1.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.2,-1.1)--(-1.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.3,-1.1)--(1.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.3,-1.1)--(-1.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.4,-1.1)--(1.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.4,-1.1)--(-1.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.5,-1.1)--(1.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.5,-1.1)--(-1.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.6,-1.1)--(1.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.6,-1.1)--(-1.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.7,-1.1)--(1.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.7,-1.1)--(-1.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.8,-1.1)--(1.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.8,-1.1)--(-1.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (1.9,-1.1)--(1.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-1.9,-1.1)--(-1.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (2,-1.1)--(2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2,-1.1)--(-2,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.1,-1.1)--(2.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.1,-1.1)--(-2.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.2,-1.1)--(2.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.2,-1.1)--(-2.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.3,-1.1)--(2.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.3,-1.1)--(-2.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.4,-1.1)--(2.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.4,-1.1)--(-2.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.5,-1.1)--(2.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.5,-1.1)--(-2.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.6,-1.1)--(2.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.6,-1.1)--(-2.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.7,-1.1)--(2.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.7,-1.1)--(-2.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.8,-1.1)--(2.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.8,-1.1)--(-2.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (2.9,-1.1)--(2.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-2.9,-1.1)--(-2.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (3,-1.1)--(3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3,-1.1)--(-3,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.1,-1.1)--(3.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.1,-1.1)--(-3.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.2,-1.1)--(3.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.2,-1.1)--(-3.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.3,-1.1)--(3.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.3,-1.1)--(-3.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.4,-1.1)--(3.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.4,-1.1)--(-3.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.5,-1.1)--(3.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.5,-1.1)--(-3.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.6,-1.1)--(3.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.6,-1.1)--(-3.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.7,-1.1)--(3.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.7,-1.1)--(-3.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.8,-1.1)--(3.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.8,-1.1)--(-3.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (3.9,-1.1)--(3.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-3.9,-1.1)--(-3.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (4,-1.1)--(4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4,-1.1)--(-4,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.1,-1.1)--(4.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.1,-1.1)--(-4.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.2,-1.1)--(4.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.2,-1.1)--(-4.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.3,-1.1)--(4.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.3,-1.1)--(-4.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.4,-1.1)--(4.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.4,-1.1)--(-4.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.5,-1.1)--(4.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.5,-1.1)--(-4.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.6,-1.1)--(4.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.6,-1.1)--(-4.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.7,-1.1)--(4.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.7,-1.1)--(-4.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.8,-1.1)--(4.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.8,-1.1)--(-4.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (4.9,-1.1)--(4.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-4.9,-1.1)--(-4.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (5,-1.1)--(5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5,-1.1)--(-5,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.1,-1.1)--(5.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.1,-1.1)--(-5.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.2,-1.1)--(5.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.2,-1.1)--(-5.2,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.3,-1.1)--(5.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.3,-1.1)--(-5.3,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.4,-1.1)--(5.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.4,-1.1)--(-5.4,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.5,-1.1)--(5.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.5,-1.1)--(-5.5,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.6,-1.1)--(5.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.6,-1.1)--(-5.6,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.7,-1.1)--(5.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.7,-1.1)--(-5.7,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.8,-1.1)--(5.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.8,-1.1)--(-5.8,6.1);
+	\draw[color ={gray},opacity = 0.1] (5.9,-1.1)--(5.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (-5.9,-1.1)--(-5.9,6.1);
+	\draw[color ={gray},opacity = 0.1] (6,-1.1)--(6,6.1);
+	\draw[color ={gray},opacity = 0.1] (-6,-1.1)--(-6,6.1);
+	\draw[color ={gray},opacity = 0.1] (6.1,-1.1)--(6.1,6.1);
+	\draw[color ={gray},opacity = 0.1] (-6.1,-1.1)--(-6.1,6.1);
+	\draw[color ={black},line width = 1.2] (0,-0.1)--(0,0.1);
+	\draw[color ={black},line width = 1.2] (1,-0.1)--(1,0.1);
+	\draw[color ={black},line width = 1.2] (-1,-0.1)--(-1,0.1);
+	\draw[color ={black},line width = 1.2] (2,-0.1)--(2,0.1);
+	\draw[color ={black},line width = 1.2] (-2,-0.1)--(-2,0.1);
+	\draw[color ={black},line width = 1.2] (3,-0.1)--(3,0.1);
+	\draw[color ={black},line width = 1.2] (-3,-0.1)--(-3,0.1);
+	\draw[color ={black},line width = 1.2] (4,-0.1)--(4,0.1);
+	\draw[color ={black},line width = 1.2] (-4,-0.1)--(-4,0.1);
+	\draw[color ={black},line width = 1.2] (-0.1,0)--(0.1,0);
+	\draw[color ={black},line width = 1.2] (-0.1,1)--(0.1,1);
+	\draw[color ={black},line width = 1.2] (-0.1,2)--(0.1,2);
+	\draw[color ={black},line width = 1.2] (-0.1,3)--(0.1,3);
+	\draw[color ={black},line width = 1.2] (-0.1,4)--(0.1,4);
+	\draw[color ={black},line width = 1.2] (-0.1,5)--(0.1,5);
+	\draw (1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$1$}};
+	\draw (2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$2$}};
+	\draw (3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$3$}};
+	\draw (4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$4$}};
+	\draw (5,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$5$}};
+	\draw (-1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-1$}};
+	\draw (-2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-2$}};
+	\draw (-3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-3$}};
+	\draw (-4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-4$}};
+	\draw (-5,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}{$-5$}};
+	\draw (-0.3,1.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$1$}};
+	\draw (-0.3,2.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$2$}};
+	\draw (-0.3,3.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$3$}};
+	\draw (-0.3,4.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$4$}};
+	\draw (-0.3,5.1) node[anchor = center, rotate=0] {\scriptsize \color{black}{$5$}};
+	\draw[color ={black},line width = 1.25,opacity = 0.8] (-0.19,4.19)--(0.19,3.81);\draw[color ={black},line width = 1.25,opacity = 0.8] (-0.19,3.81)--(0.19,4.19);
+	\draw (0,4.5) node[anchor = center, rotate=0] {\scriptsize \color{black}{$B$}};
+	\draw (-3,0.5) node[anchor = center, rotate=0] {\scriptsize \color{black}{$A$}};
+	\draw[color ={black},line width = 1.25,opacity = 0.8] (-3.19,0.19)--(-2.81,-0.19);\draw[color ={black},line width = 1.25,opacity = 0.8] (-3.19,-0.19)--(-2.81,0.19);
+	\draw (-0.3,-0.3) node[anchor = center, rotate=0] {\scriptsize \color{black}{$\text{O}$}};
+	\draw[color ={black},line width = 2, dashed ] (0,4)--(-3,4);
+	\draw[color ={black},line width = 2, dashed ] (-3,0)--(-3,4);
+	\draw (-1.5,4.3) node[anchor = center, rotate=0] {\scriptsize \color{red}{$-3$}};
+	\draw (-2.5,2) node[anchor = center, rotate=0] {\scriptsize \color{blue}{$-4$}};
+
+\end{tikzpicture}
+
+
+\item  Multiplier par  $10^{-4}$ revient à multiplier par $0{,}000\,1$,  donc l'écriture décimale de $2{,}35\times 10^{-4}$ est : ${\color[HTML]{f15929}\boldsymbol{0{,}000\,235}}$.
+
+
+\item  $A          =-4 + {\color{blue}\boldsymbol{3^3}} \times 3$\\$A=-4 + {\color{blue}\boldsymbol{27\times3}}$\\$A=-4+81$\\$A = {\color[HTML]{f15929}\boldsymbol{77}}$
+
+
+\item 
+ $-4x-6\geqslant -3x-3$\\On ajoute $3x$ aux deux membres.\\$-4x-6{\color{blue}\boldsymbol{+3x}}
+          \geqslant-3x-3{\color{blue}\boldsymbol{+3x}}$\\$-x-6\geqslant-3$\\On ajoute $6$ aux deux membres.\\$-x-6{\color{blue}\boldsymbol{+6}}
+          \geqslant-3{\color{blue}\boldsymbol{+6}}$\\$-x\geqslant3$\\On divise les deux membres par $-1$.\\Comme $-1$ est négatif, l'inégalité change de sens.\\$-x{\color{blue}\boldsymbol{\div(-1)\leqslant}}3{\color{blue}\boldsymbol{\div(-1)}}$\\$x\leqslant\dfrac{3}{-1}$\\$x\leqslant-3$\\ L'ensemble de solutions de l'inéquation est $S = {\color[HTML]{f15929}\boldsymbol{\left] -\infty\,;\,-3\right]}}$.
+
+\end{enumerate}
+\end{seanceD}}
+
+\begin{seance}{} %11
+\begin{enumerate}
+\item  Puisque $f$ est une fonction affine, on a : $f(x)=ax+b$.\\$\bullet$ $b$ est l'ordonnée à l'origine de la droite. On lit $b=3$.\\$\bullet$ $a$ est le coefficient directeur de la droite.\\
+          Il est donné par le déplacement vertical correspondant à un déplacement horizontal d'une unité. On lit $a=-1$.\\ On peut en déduire que l'expression de la fonction $f$ est $f(x)={\color[HTML]{f15929}\boldsymbol{-x+3}}$.
+
+\item $f(x)$ est de la forme $ax+b$, $f$ est donc une fonction affine avec pour coefficient directeur  $a=-2$  (négatif).\\
+             D'où, $f$ est une fonction  décroissante, c'est-à-dire que lorsque $x$ augmente, $f(x)$  diminue. \\
+             Par conséquent, les valeurs de $f(x)$ sont d'abord positives puis négatives.
+
+\medskip
+
+             Aussi, $-2x+3=0 \iff x=\dfrac{3}{2}$.
+
+\medskip
+ D'où le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 3, $f(x)=-2x+3$ / 2}{ $-\infty$, $\dfrac{3}{2}$, $+\infty$}
+	\tkzTabLine{  , +, z, -}
+	\end{tikzpicture}
+
+\item  Pour déterminer le taux d'évolution réciproque, on commence par calculer le coefficient multiplicateur associé :\\Diminuer de $40\,\%$ revient à multiplier par $ 1 - \dfrac{40}{100} = 0{,}6$ 
+
+\medskip
+Le coefficient multiplicateur réciproque est donc : \\$CM_R=\dfrac{1}{0{,}6} \approx 1{,}666\,7$.{\color[HTML]{f15929}\\Remarque : Il faut arrondir les valeurs à $10^{-4}$ pour avoir un arrondi en pourcentage à $10^{-2}$.}
+
+\medskip
+ Le taux d'évolution réciproque est donc : \\$T_R=CM_R-1=1{,}666\,7-1=0{,}666\,7=66{,}67\,\%$ ce qui correspond à une hausse de $66{,}67\,\%$.
+
+\medskip
+Il faut donc appliquer une hausse d'environ $66{,}67\,\%$ pour revenir au niveau de départ.
+
+
+\item  $x\xrightarrow{\times  5} 5x\xrightarrow{+5}5x+5 \xrightarrow{\times  10}(5x+5)\times  10=50x+50\xrightarrow{-3}50x+47$\\Le résultat du programme est donc $50x+47$.
+
+\medskip
+Le programme de calcul est équivalent à :	\begin{itemize}
+		\item Multiplier par $50$
+		\item Ajouter $47$
+	\end{itemize}
+
+
+\item $
+\dfrac{9x-9}{-8}=\dfrac{-10}{8}\\
+8( 9x-9 )=-8 \times (-10)\\
+72x-72=80\\
+72x=80+72\\
+72x=152\\
+x=\dfrac{152}{72}=\dfrac{19}{9}
+$\\
+L'équation a donc pour unique solution : ${\color[HTML]{f15929}\boldsymbol{\dfrac{19}{9}}}$.
+
+\end{enumerate}
+\end{seance}
+
+
+\ifthenelse{\boolean{prof}}{\begin{seanceD}{} %11
+\begin{enumerate}
+\item  Puisque $f$ est une fonction affine, on a : $f(x)=ax+b$.\\$\bullet$ $b$ est l'ordonnée à l'origine de la droite. On lit $b=-4$.\\$\bullet$ $a$ est le coefficient directeur de la droite.\\
+          Il est donné par le déplacement vertical correspondant à un déplacement horizontal d'une unité. On lit $a=3$.\\ On peut en déduire que l'expression de la fonction $f$ est $f(x)={\color[HTML]{f15929}\boldsymbol{3x-4}}$.
+
+\item  $f(x)$ est de la forme $ax+b$, $f$ est donc une fonction affine avec pour coefficient directeur  $a=3$  (positif).\\
+             D'où, $f$ est une fonction  croissante, c'est-à-dire que lorsque $x$ augmente, $f(x)$  augmente. \\
+             Par conséquent, les valeurs de $f(x)$ sont d'abord négatives puis positives.
+
+\medskip
+
+             Aussi, $3x-3=0 \iff x=1$.
+
+\medskip
+ D'où le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 3, $f(x)=3x-3$ / 2}{ $-\infty$, $1$, $+\infty$}
+	\tkzTabLine{  , -, z, +}
+	\end{tikzpicture}
+
+\item  Pour déterminer le taux d'évolution réciproque, on commence par calculer le coefficient multiplicateur associé :\\Diminuer de $26\,\%$ revient à multiplier par $ 1 - \dfrac{26}{100} = 0{,}74$ 
+
+\medskip
+Le coefficient multiplicateur réciproque est donc : \\$CM_R=\dfrac{1}{0{,}74} \approx 1{,}351\,4$.{\color[HTML]{f15929}\\Remarque : Il faut arrondir les valeurs à $10^{-4}$ pour avoir un arrondi en pourcentage à $10^{-2}$.}
+
+\medskip
+ Le taux d'évolution réciproque est donc : \\$T_R=CM_R-1=1{,}351\,4-1=0{,}351\,4=35{,}14\,\%$ ce qui correspond à une hausse de $35{,}14\,\%$.
+
+\medskip
+Il faut donc appliquer une hausse d'environ $35{,}14\,\%$ pour revenir au niveau de départ.
+
+\item  $t\xrightarrow{\times  4} 4t\xrightarrow{+3}4t+3 \xrightarrow{+3t}4t+3+3t=7t+3$\\Le résultat du programme est donc $7t+3$.
+
+\medskip
+Le programme de calcul est équivalent à :	\begin{itemize}
+		\item Multiplier par $7$
+		\item Ajouter $3$
+	\end{itemize}
+
+
+\item $\dfrac{2x-8}{4}=\dfrac{-8}{5}\\
+5( 2x-8 )=4 \times (-8)\\
+10x-40=-32\\
+10x=-32+40\\
+10x=8\\
+x=\dfrac{8}{10}=\dfrac{4}{5}$
+\\L'équation a donc pour unique solution : ${\color[HTML]{f15929}\boldsymbol{\dfrac{4}{5}}}$.
+
+\end{enumerate}
+\end{seanceD}}
+
+\begin{seance}{} %12
+\begin{enumerate}
+\item $f$ est une fonction affine, elle a donc une expression de la forme  $f(x)=ax+b$ avec $a$ et $b$ des nombres réels.
+D'après le cours, on sait que pour $u\neq v$, $a=\dfrac{f(u)-f(v)}{u-v}$ Avec $u=9$ et  $v=8$, on obtient  :  $a=\dfrac{f(9)-f(8)}{9-8}=\dfrac{-27-(-25)}{9-8}=\dfrac{-2}{1}=-2$. On en déduit que la fonction $f$ s'écrit sous la forme :    $f(x)=-2 x +b.$\\On obtient $b$ en utilisant (au choix) une des deux données de l'énoncé, par exemple $f(9)=-27$.Comme $f(x)=-2x +b$, alors $f(9)=
+              -2\times9+b=-18+b$ . On en déduit :\\$\begin{aligned}f(9)=-27&\iff -18+b=-27\\&\iff b=-9\\\end{aligned}$\\On en déduit $f(x)=$ ${\color[HTML]{f15929}\boldsymbol{-2x-9}}$.
+
+
+\item 
+
+\begin{enumerate}
+\item On cherche les réels qui sont dans  $]11;25]$ ou bien  $[33;43]$ , ou dans les deux.\\On regarde donc la partie de l'intervalle qui est coloriée, soit en bleu, soit en rouge, soit en bleu et rouge.
+Les deux ensembles sont disjoints, ils n'ont aucun élément en commun.\\
+                    On ne peut pas simplifier l'écriture de $I$ qui s'écrit donc $I={\color[HTML]{f15929}\boldsymbol{]11;25]\cup[33;43]}}$.
+                   \begin{tikzpicture}
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=2pt,
+        minimum height=2pt,
+      },
+    }
+    \clip (-2,-0.7) rectangle (15,0.5);
+    	\draw[color ={black},line width = 3] (0,0)--(12,0);
+	\draw[color ={red},line width = 3] (2,0)--(5,0);
+	\draw[color ={blue},line width = 3] (6,0)--(9,0);
+	\draw[very thick,color={red}] (1.8,0.2)--(2,0.2)--(2,-0.2)--(1.8,-0.2);
+	\draw[color={red}] (2,-0.2) node[below] {$11$};
+	\draw[very thick,color={red}] (4.8,0.2)--(5,0.2)--(5,-0.2)--(4.8,-0.2);
+	\draw[color={red}] (5,-0.2) node[below] {$25$};
+	\draw[very thick,color={blue}] (6.2,0.2)--(6,0.2)--(6,-0.2)--(6.2,-0.2);
+	\draw[color={blue}] (6,-0.2) node[below] {$33$};
+	\draw[very thick,color={blue}] (8.8,0.2)--(9,0.2)--(9,-0.2)--(8.8,-0.2);
+	\draw[color={blue}] (9,-0.2) node[below] {$43$};
+
+\end{tikzpicture}
+
+\item On cherche les réels qui sont à la fois dans $[12;28]$ et dans $[14;17]$.\\On regarde la partie de l'intervalle qui est coloriée à la fois en bleu et en rouge.\\On observe que $[14;17]\subset [12;28]$ donc $I={\color[HTML]{f15929}\boldsymbol{[14;17]}}$.
+
+\begin{tikzpicture}[baseline]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=2pt,
+        minimum height=2pt,
+      },
+    }
+    \clip (-2,-0.7) rectangle (15,0.5);
+    	\draw[color ={black},line width = 3] (0,0)--(12,0);
+	\draw[color ={red},line width = 3] (2,-0.1)--(9,-0.1);
+	\draw[color ={blue},line width = 3] (5,0.1)--(7,0.1);
+	\draw[very thick,color={red}] (2.2,0.2)--(2,0.2)--(2,-0.2)--(2.2,-0.2);
+	\draw[color={red}] (2,-0.2) node[below] {$12$};
+	\draw[very thick,color={red}] (8.8,0.2)--(9,0.2)--(9,-0.2)--(8.8,-0.2);
+	\draw[color={red}] (9,-0.2) node[below] {$28$};
+	\draw[very thick,color={blue}] (5.2,0.2)--(5,0.2)--(5,-0.2)--(5.2,-0.2);
+	\draw[color={blue}] (5,-0.2) node[below] {$14$};
+	\draw[very thick,color={blue}] (6.8,0.2)--(7,0.2)--(7,-0.2)--(6.8,-0.2);
+	\draw[color={blue}] (7,-0.2) node[below] {$17$};
+
+\end{tikzpicture}
+\end{enumerate}
+
+
+\item 
+ \textbf {a.}  Résolution de l'inéquation :\\
+              $\begin{aligned}
+              -7x-1&<-2x+3\\
+              -7x-1\,{\color[HTML]{f15929}\boldsymbol{+2x}}&<-2x+3\,{\color[HTML]{f15929}\boldsymbol{+2x}}\\
+              -5x-1&<3\\
+              -5x&<4\\
+            x&>\dfrac{4}{-5}
+              \end{aligned}$
+              \\
+              Comme $\dfrac{4}{-5}=-\dfrac{4}{5}$, l'  ensemble $S$ des solutions de l'inéquation est
+              $S= \left]-\dfrac{4}{5}\,;\,+\infty\right[$.\\\textbf {b.}  
+              La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur l'intervalle $\left]-\dfrac{4}{5}\,;\,+\infty\right[$.
+
+
+
+\item  $A =  (7y-6)(-3y-5)$ \\$A =  7y\times (-3y) + 
+  7y\times (-5) +
+  (-6) \times (-3y)  +
+  (-6) \times (-5)$ \\$A = -21y^2 + 
+  (-35y) +
+  18y +
+  30$ \\$A =$ ${\color[HTML]{f15929}\boldsymbol{ -21y^2-17y+30 }}$
+
+
+\item 
+\begin{enumerate}
+\item On utilise la formule du cours qui exprime le taux d'évolution $t$ en fonction de la valeur initiale $V_i$ et la valeur finale $V_f$ : $t=\dfrac{V_f-V_i}{V_i}=\dfrac{264\,600-270\,000}{270\,000}=-0{,}02=\dfrac{-2}{100}$.\\Le taux d'évolution du chiffre d'affaires est ${\color[HTML]{f15929}\boldsymbol{-2}}~\%$.
+
+\medskip
+Méthode $2$ : On arrive aussi au même résultat en passant par le coefficient multiplicateur : \\$CM=\dfrac{V_f}{V_i}=\dfrac{264\,600}{270\,000} = 0{,}98$ donc $t = 0{,}98-1= -2~\%$
+\item Diminuer de $6~\%$ revient à multiplier par $1 - \dfrac{6}{100} = 1- 0{,}06 = 0{,}94$.\\Pour retrouver le prix initial, on va donc diviser le prix final par $0{,}94$. $\dfrac{922{,}14}{0{,}94}  = 981$.\\Avant la diminution le prix de mon vélo électrique était de ${\color[HTML]{f15929}\boldsymbol{981}}$\,\euro{}.
+\end{enumerate}
+
+
+
+\end{enumerate}
+\end{seance}
+
+
+\ifthenelse{\boolean{prof}}{\begin{seanceD}{} %12
+\begin{enumerate}
+\item
+ $f$ est une fonction affine, elle a donc une expression de la forme  $f(x)=ax+b$ avec $a$ et $b$ des nombres réels. D'après le cours, on sait que pour $u\neq v$, $a=\dfrac{f(u)-f(v)}{u-v}$. Avec $u=9$ et  $v=7$, on obtient  :  $a=\dfrac{f(9)-f(7)}{9-7}=\dfrac{32-26}{9-7}=\dfrac{6}{2}=3$. On en déduit que la fonction $f$ s'écrit sous la forme :    $f(x)=3 x +b.$\\On obtient $b$ en utilisant (au choix) une des deux données de l'énoncé, par exemple $f(9)=32$. Comme $f(x)=3x +b$, alors $f(9)=
+              3\times9+b=27+b$ . On en déduit :\\$\begin{aligned}f(9)=32&\iff 27+b=32\\&\iff b=5\\\end{aligned}$\\On en déduit $f(x)=$ ${\color[HTML]{f15929}\boldsymbol{3x+5}}$.
+
+
+\item \begin{enumerate}
+\item On cherche les réels qui sont dans  $]1;27]$ ou bien  $]6;13[$, ou dans les deux. On regarde donc la partie de l'intervalle qui est coloriée, soit en bleu, soit en rouge, soit en bleu et rouge :\\On a $]6;13]\subset ]1;27]$ donc $I={\color[HTML]{f15929}\boldsymbol{]1;27]}}$.\\\begin{tikzpicture}
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=2pt,
+        minimum height=2pt,
+      },
+    }
+    \clip (-2,-0.7) rectangle (15,0.5);
+    	\draw[color ={black},line width = 3] (0,0)--(12,0);
+	\draw[color ={red},line width = 3] (2,-0.1)--(9,-0.1);
+	\draw[color ={blue},line width = 3] (5,0.1)--(7,0.1);
+	\draw[very thick,color={red}] (1.8,0.2)--(2,0.2)--(2,-0.2)--(1.8,-0.2);
+	\draw[color={red}] (2,-0.2) node[below] {$1$};
+	\draw[very thick,color={red}] (8.8,0.2)--(9,0.2)--(9,-0.2)--(8.8,-0.2);
+	\draw[color={red}] (9,-0.2) node[below] {$27$};
+	\draw[very thick,color={blue}] (4.8,0.2)--(5,0.2)--(5,-0.2)--(4.8,-0.2);
+	\draw[color={blue}] (5,-0.2) node[below] {$6$};
+	\draw[very thick,color={blue}] (6.8,0.2)--(7,0.2)--(7,-0.2)--(6.8,-0.2);
+	\draw[color={blue}] (7,-0.2) node[below] {$13$};
+
+\end{tikzpicture}
+\item On cherche les réels qui sont à la fois dans $]-\infty;22]$ et dans $]31;40]$.On regarde la partie de l'intervalle qui est coloriée à la fois en bleu et en rouge. On observe que les deux intervalles sont disjoints donc aucun réel n'appartient aux deux ensembles.\\$I={\color[HTML]{f15929}\boldsymbol{\emptyset}}$.\\\begin{tikzpicture}
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=2pt,
+        minimum height=2pt,
+      },
+    }
+    \clip (-2,-0.7) rectangle (15,0.5);
+    	\draw[color ={black},line width = 3] (0,0)--(12,0);
+	\draw[color ={red},line width = 3] (0,0)--(5,0);
+	\draw[color ={blue},line width = 3] (6,0)--(10,0);
+	
+	\draw[very thick,color={red}] (4.8,0.2)--(5,0.2)--(5,-0.2)--(4.8,-0.2);
+	\draw[color={red}] (5,-0.2) node[below] {$22$};
+	\draw[very thick,color={blue}] (5.8,0.2)--(6,0.2)--(6,-0.2)--(5.8,-0.2);
+	\draw[color={blue}] (6,-0.2) node[below] {$31$};
+	\draw[very thick,color={blue}] (9.8,0.2)--(10,0.2)--(10,-0.2)--(9.8,-0.2);
+	\draw[color={blue}] (10,-0.2) node[below] {$40$};
+
+\end{tikzpicture}
+\end{enumerate}
+
+\item  \textbf {a.}  Résolution de l'inéquation :\\
+              $\begin{aligned}
+              6x+3&<x+5\\
+              6x+3\,{\color[HTML]{f15929}\boldsymbol{-x}}&<x+5\,{\color[HTML]{f15929}\boldsymbol{-x}}\\
+              5x+3&<5\\
+              5x+3\,{\color[HTML]{f15929}\boldsymbol{-3}}&<5\,{\color[HTML]{f15929}\boldsymbol{-3}}\\
+              5x&<2\\
+            x&<\dfrac{2}{5}
+              \end{aligned}$
+              \\
+              L'  ensemble $S$ des solutions de l'inéquation est
+              $S= \left]-\infty\,;\,\dfrac{2}{5}\right[$.\\\textbf {b.}  
+              La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur l'intervalle $\left]-\infty\,;\,\dfrac{2}{5}\right[$.
+
+
+
+\item  $A =  (9k+4)(-7k-3)$ \\$A =  9k\times (-7k) + 
+  9k\times (-3) +
+  4 \times (-7k)  +
+  4 \times (-3)$ \\$A = -63k^2 + 
+  (-27k) +
+  (-28k) +
+  (-12)$ \\$A =$ ${\color[HTML]{f15929}\boldsymbol{ -63k^2-55k-12 }}$
+
+
+\item \begin{enumerate}
+\item On utilise la formule du cours qui exprime le taux d'évolution $t$ en fonction de la valeur initiale $V_i$ et la valeur finale $V_f$ : $t=\dfrac{V_f-V_i}{V_i}=\dfrac{43\,680-52\,000}{52\,000}=-0{,}16=\dfrac{-16}{100}$.\\Le taux d'évolution de la population est ${\color[HTML]{f15929}\boldsymbol{-16}}~\%$
+
+\medskip
+Méthode $2$ : On arrive aussi au même résultat en passant par le coefficient multiplicateur : \\$CM=\dfrac{V_f}{V_i}=\dfrac{43\,680}{52\,000} = 0{,}84$ donc $t = 0{,}84-1= -16~\%$
+\item Augmenter de $60~\%$ revient à multiplier par $1 + \dfrac{60}{100} = 1+ 0{,}6 = 1{,}6$.\\Pour retrouver le prix initial, on va donc diviser le prix final par $1{,}6$ donc $\dfrac{15{,}84}{1{,}6}  = 9{,}90$\\Avant l'augmentation cet article coûtait ${\color[HTML]{f15929}\boldsymbol{9{,}90}}$\,\euro{}.
+\end{enumerate}
+
+
+
+\end{enumerate}
+\end{seanceD}}
+
+
+\newpage
+
+\begin{seance}{} %13
+\begin{enumerate}
+\item  $1{,}7\text{ h} =1 \text{ h} + 0{,}7 \text{ h}$, soit $1\text{ h} + \dfrac{7}{10} \text{ h} = 60 \text{ min} + 42\text{ min} = 102 \text{ min}$.\\
+          Ainsi, $1{,}7$ heures correspond à ${\color[HTML]{f15929}\boldsymbol{102}}$ {\color[HTML]{f15929}minutes}.
+
+
+\item Dans une $1$ heure, il y a $3\times 20$ minutes.\\
+    Ainsi, en $1$ heure, elle parcourt $20$ fois plus de distance, soit $0{,}9\times 20=18\text{ km}$.\\
+    Sa vitesse moyenne est donc ${\color[HTML]{f15929}\boldsymbol{18}}\text{ km/h}$.
+
+\item 
+ On remplace $x$ par $x+2$ dans l'expression de $v$ :\\
+         $\begin{aligned}
+        v(x+2)&=-2(x+2)-10 \\
+        &=-2x-4-10\\
+        &={\color[HTML]{f15929}\boldsymbol{-2x-14}}
+        \end{aligned}$
+
+
+\item  On se ramène à une équation du type $ax=b$ en isolant les  \og{} $x$ \fg{} dans le membre de gauche et les \og{} non $x$ \fg{} dans le membre de droite.\\
+    $\begin{aligned}
+    (6x-1)-(4x+4)&=0\\
+   6x-1-4x-4&=0\\
+ 2x-5&=0\\
+ 2x&=5\\
+x&= \dfrac{5}{2}
+\end{aligned}$\\
+    
+   La solution de cette équation est  ${\color[HTML]{f15929}\boldsymbol{\dfrac{5}{2}}}$.
+
+
+\item  La fonction $f(x) = -3x-6$ est une fonction affine de coefficient directeur $a = -3$ et d'ordonnée à l'origine $b = -6$.\\
+    • La fonction s'annule quand $-3x-6 = 0$, soit $x = -2$.\\
+    • Comme $a = -3 < 0$, la fonction est décroissante : elle est positive avant la racine et négative après.\\
+    Le tableau de signes de la fonction $f$ est donc le suivant :\\
+    \begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=3,deltacl=0.8,espcl=2.1]{ $x$ / 1.5, $f(x)$ / 1.5}{ $-\infty$, $-2$, $+\infty$}
+	\tkzTabLine{  , +, z, -}
+	\end{tikzpicture}
+
+
+\item 
+ En notant $D$ la dépense totale, Alice a dépensé $\dfrac{1}{9}D$ et Louis, $\dfrac{8}{9}D$.\\
+Leur participation équilibrée doit être de $\dfrac{1}{2}D$ chacun.\\
+Alice doit donc donner à Louis la somme de $\dfrac{1}{2}D - \dfrac{1}{9}D = \dfrac{7}{18}D$.\\
+La fraction de la dépense totale que Alice doit donner à Louis est donc ${\color[HTML]{f15929}\boldsymbol{\dfrac{7}{18}}}$.
+
+
+
+\end{enumerate}
+\end{seance}
+
+
+\ifthenelse{\boolean{prof}}{\begin{seanceD}{} %13
+\begin{enumerate}
+\item  $2{,}1\text{ h} =2 \text{ h} + 0{,}1 \text{ h}$, soit $2\text{ h} + \dfrac{1}{10} \text{ h} = 120 \text{ min} + 6\text{ min} = 126 \text{ min}$.\\
+          Ainsi, $2{,}1$ heures correspond à ${\color[HTML]{f15929}\boldsymbol{126}}$ {\color[HTML]{f15929}minutes}.
+
+\item  Dans une $1$ heure, il y a $5\times 12$ minutes.\\
+      Ainsi, en $1$ heure, elle parcourt $12$ fois plus de distance, soit $0{,}6\times 12=7{,}2\text{ km}$.\\
+      Sa vitesse moyenne est donc ${\color[HTML]{f15929}\boldsymbol{7{,}2}}\text{ km/h}$. 
+
+\item 
+ On remplace $x$ par $x-1$ dans l'expression de $m$ :\\
+         $\begin{aligned}
+        m(x-1)&=-(x-1)+1 \\
+        &=-x+1+1\\
+        &={\color[HTML]{f15929}\boldsymbol{-x+2}}
+        \end{aligned}$
+
+
+\item  On se ramène à une équation du type $ax=b$ en isolant les  \og{} $x$ \fg{} dans le membre de gauche et les \og{} non $x$ \fg{} dans le membre de droite.\\
+    $\begin{aligned}
+    (8x-6)-(3x+1)&=0\\
+   8x-6-3x-1&=0\\
+ 5x-7&=0\\
+ 5x&=7\\
+x&= \dfrac{7}{5}
+\end{aligned}$\\
+    
+   La solution de cette équation est  ${\color[HTML]{f15929}\boldsymbol{\dfrac{7}{5}}}$.
+
+
+\item 
+ La fonction $f(x) = 5x+1{,}5$ est une fonction affine de coefficient directeur $a = 5$ et d'ordonnée à l'origine $b = 1.5$.\\
+    • La fonction s'annule quand $5x+1{,}5 = 0$, soit $x = \dfrac{-3}{10}$.\\
+    • Comme $a = 5 > 0$, la fonction est croissante : elle est négative avant la racine et positive après.\\
+    Le tableau de signes de la fonction $f$ est donc le suivant :\\
+    \begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=3,deltacl=0.8,espcl=2.1]{ $x$ / 1.5, $f(x)$ / 1.5}{ $-\infty$, ${-0,3}$, $+\infty$}
+	\tkzTabLine{  , -, z, +}
+	\end{tikzpicture}
+
+\item 
+ En notant $D$ la dépense totale, Alice a dépensé $\dfrac{2}{7}D$ et Louis, $\dfrac{5}{7}D$.\\
+Leur participation équilibrée doit être de $\dfrac{1}{2}D$ chacun.\\
+Alice doit donc donner à Louis la somme de $\dfrac{1}{2}D - \dfrac{2}{7}D = \dfrac{3}{14}D$.\\
+La fraction de la dépense totale que Alice doit donner à Louis est donc ${\color[HTML]{f15929}\boldsymbol{\dfrac{3}{14}}}$.
+
+
+\end{enumerate}
+\end{seanceD}}
+
+% CORRECTION SÉANCE 14
+\newpage \begin{seance}{} %14
+
+\begin{enumerate}
+\item On reconnaît une équation produit-nul, donc on applique la propriété :\\
+{\color{correction}Un produit est nul si et seulement si au moins un de ses facteurs est nul.}\\
+$(6x-5)(2x+5)=0$\\
+$\iff 6x-5=0$ ou $2x+5=0$\\
+$\iff 6x=5$ ou $2x=-5$\\
+$\iff x=\dfrac{5}{6}$ ou $x=\dfrac{-5}{2}$\\
+On en déduit : $S={\color{correction}\boldsymbol{\left\{-\dfrac{5}{2};\dfrac{5}{6}\right\}}}$.
+
+\item On met l'expression au même dénominateur :\\
+$\begin{aligned}
+\dfrac{1}{6}-\dfrac{2x+4}{x}&=\dfrac{x-6\times \left(2x+4\right)}{6x}\\
+&=\dfrac{x -12x -24}{6x}\\
+&=\dfrac{-11x -24}{6x}\\
+\end{aligned}$\\
+$\phantom{\dfrac{1}{6}-\dfrac{2x+4}{x}}=-\dfrac{11x +24}{6x}$\\
+
+
+\item Déterminer les antécédents de $0$ revient à déterminer les nombres qui ont pour image $0$.\\
+On part de $0$ sur l'axe des ordonnées et on lit les antécédents (éventuels) sur l'axe des abscisses.\\
+On en trouve $2$ : ${\color{correction}\boldsymbol{-5\,;\,-3}}$.
+
+\item On reconnaît le développement de l'égalité remarquable :\\
+$(a+b)^2=a^2+2ab+b^2$ avec $a=2x$ et $b=1$.\\
+On a donc :\\
+$4x+1+4x^2={\color{correction}\boldsymbol{(2x+1)^2}}$
+
+\item $\bullet$ La seule égalité correcte est : ${\color{correction}\boldsymbol{\dfrac{2}{3}\times\dfrac{36}{37}= \dfrac{24}{37}}}$.\\
+$\dfrac{2}{3}\times\dfrac{36}{37}=\dfrac{2\times 36}{3\times 37}=\dfrac{72}{111}=\dfrac{24}{37}$\\
+$\bullet$ L'égalité $\dfrac{2+5}{3+5}=\dfrac{2}{3}$ est fausse.\\
+On ne peut pas simplifier une fraction en ajoutant un même nombre au numérateur et au dénominateur.\\
+$\bullet$ L'égalité $\dfrac{2}{3}-5=\dfrac{13}{3}$ est fausse.\\
+$\dfrac{2}{3}-5=\dfrac{2}{3}-\dfrac{5}{1}=\dfrac{2-15}{3}=-\dfrac{13}{3}$\\
+$\bullet$ L'égalité $\dfrac{7}{6}=\dfrac{49}{36}$ est fausse.\\
+$\dfrac{49}{36}=\left(\dfrac{7}{6}\right)^2\neq \dfrac{7}{6}$\\
+
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 14
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %14
+
+\begin{enumerate}
+\item On reconnaît une équation produit-nul, donc on applique la propriété :\\
+{\color{correction}Un produit est nul si et seulement si au moins un de ses facteurs est nul.}\\
+$(x-4)(7x+5)=0$\\
+$x-4=0$ ou $7x+5=0$\\
+$ x=4$ ou $7x=-5$\\
+$ x=4$ ou $x=\dfrac{-5}{7}$\\
+On en déduit : $S={\color{correction}\boldsymbol{\left\{-\dfrac{5}{7};4\right\}}}$.
+
+\item On met l'expression au même dénominateur :\\
+$\begin{aligned}
+\dfrac{1}{2}-\dfrac{3x+3}{x}&=\dfrac{x-2\times \left(3x+3\right)}{2x}\\
+&=\dfrac{x -6x -6}{2x}\\
+&=\dfrac{-5x -6}{2x}\\
+\end{aligned}$\\
+$\phantom{\dfrac{1}{2}-\dfrac{3x+3}{x}}=-\dfrac{5x +6}{2x}$\\
+
+
+\item Déterminer les antécédents de $2$ revient à déterminer les nombres qui ont pour image $2$.\\
+On part de $2$ sur l'axe des ordonnées et on lit les antécédents (éventuels) sur l'axe des abscisses.\\
+On en trouve $2$ : ${\color{correction}\boldsymbol{3\,;\,5}}$.
+
+\item On reconnaît le développement de l'égalité remarquable :\\
+$(a-b)^2=a^2-2ab+b^2$ avec $a=x$ et $b=2$.\\
+On a donc :\\
+$-4x+4+x^2={\color{correction}\boldsymbol{(x-2)^2}}$
+
+\item $\bullet$ La seule égalité correcte est : ${\color{correction}\boldsymbol{\dfrac{\dfrac{3}{4}}{5}= \dfrac{3}{20}}}$.\\
+$\dfrac{\dfrac{3}{4}}{5}=\dfrac{3}{4}\times \dfrac{1}{5}=\dfrac{3}{4\times 5}=\dfrac{3}{20}$\\
+$\bullet$ L'égalité $\dfrac{\dfrac{5}{6}}{5}=\dfrac{25}{6}$ est fausse.\\
+$\dfrac{\dfrac{5}{6}}{5}=\dfrac{5}{6\times 5}=\dfrac{5}{30}$\\
+$\bullet$ L'égalité $\dfrac{5}{6}=\dfrac{25}{36}$ est fausse.\\
+$\dfrac{25}{36}=\left(\dfrac{5}{6}\right)^2\neq \dfrac{5}{6}$\\
+$\bullet$ L'égalité $5\div \dfrac{5}{6}=\dfrac{5}{30}$ est fausse.\\
+$5\div \dfrac{5}{6}=5\times \dfrac{6}{5}=\dfrac{5\times 6}{5}=\dfrac{30}{5}$\\
+
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 15
+\newpage \begin{seance}{} %15
+
+\begin{enumerate}
+\item Déterminer les valeurs interdites revient à déterminer les valeurs qui annulent le dénominateur du quotient, puisque la division par $0$ n'existe pas.\\
+Or $4x-6=0$ si et seulement si $x=\dfrac{3}{2}$.\\
+Donc l'ensemble des valeurs interdites est $\left\{\dfrac{3}{2}\right\}$.\\
+Pour tout $x\in \mathbb{R}\smallsetminus\left\{\dfrac{3}{2}\right\}$,\\
+$\begin{aligned}
+\dfrac{-5+9x}{4x-6}&=0\\
+-5+9x&=0\\
+\end{aligned}$\\
+$\dfrac{5}{9}$ n'est pas une valeur interdite, donc l'ensemble des solutions de cette équation est ${\color{correction}\boldsymbol{\mathscr{S}=\left\{\dfrac{5}{9}\right\}}}$.
+
+\item $f$ est une fonction affine. Elle s'annule en $x_0=\dfrac{3}{4}$.\\
+Comme $-4<0$, $f(x)$ est négatif pour $x>\dfrac{3}{4}$ et positif pour $x<\dfrac{3}{4}$.\\
+
+\begin{tikzpicture}[baseline, scale=0.75]
+\tkzTabInit[lgt=5,deltacl=0.8,espcl=3.5]{ $x$ / 2, $f(x)$ / 2}{ $-\infty$, $\dfrac{3}{4}$, $+\infty$}
+\tkzTabLine{  , +, z, -}
+\end{tikzpicture}
+
+\item On utilise la formule $\dfrac{a^n}{a^p}=a^{n-p}$ avec $a=9$, $n=7$ et $p=2$.\\
+$\dfrac{9^{7}}{9^{2}}=9^{7- 2}={\color{correction}\boldsymbol{9^{5}}}$
+
+\item $66\text{ min}= 60 \text{ min}+6\text{ min}=1\text{ h}+\dfrac{1}{10}\text{ h}=1{,}1\text{ h}$.\\
+Ainsi, $66$ min correspond à ${\color{correction}\boldsymbol{1{,}1}}$ {\color{correction}heure}.
+
+\item Après une augmentation de $10\,\%$, le nouveau prix est $P \times 1{,}1$.\\
+Après une deuxième augmentation de $10\,\%$, le prix devient :\\
+$(P \times 1{,}1) \times 1{,}1 = {\color{correction}\boldsymbol{P \times \left(1 + \dfrac{10}{100}\right)^2}}={\color{correction}\boldsymbol{P \times  \left(1 + \dfrac{1}{10}\right)^2}} $\\
+La bonne réponse est la réponse {\bfseries \color{correction}C}.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 15
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %15
+
+\begin{enumerate}
+\item Déterminer les valeurs interdites revient à déterminer les valeurs qui annulent le dénominateur du quotient, puisque la division par $0$ n'existe pas.\\
+Or $-x+8=0$ si et seulement si $x=8$.\\
+Donc l'ensemble des valeurs interdites est $\left\{8\right\}$.\\
+Pour tout $x\in \mathbb{R}\smallsetminus\left\{8\right\}$,\\
+$\begin{aligned}
+\dfrac{5x+2}{-x+8}&=0\\
+5x+2&=0\\
+x&= -\dfrac{2}{5}
+\end{aligned}$\\
+$-\dfrac{2}{5}$ n'est pas une valeur interdite, donc l'ensemble des solutions de cette équation est ${\color{correction}\boldsymbol{\mathscr{S}=\left\{-\dfrac{2}{5}\right\}}}$.
+
+\item $f$ est une fonction affine. Elle s'annule en $x_0=\dfrac{5}{3}$.\\
+Comme $-3<0$, $f(x)$ est négatif pour $x>\dfrac{5}{3}$ et positif pour $x<\dfrac{5}{3}$.\\
+
+\begin{tikzpicture}[baseline, scale=0.75]
+\tkzTabInit[lgt=5,deltacl=0.8,espcl=3.5]{ $x$ / 2, $f(x)$ / 2}{ $-\infty$, $\dfrac{5}{3}$, $+\infty$}
+\tkzTabLine{  , +, z, -}
+\end{tikzpicture}
+
+\item On utilise la formule $\left(a^n\right)^p=a^{n\times p}$ avec $a=6$, $n=6$ et $p=6$.\\
+$\left(6^{6}\right)^{6}=6^{6\times 6}={\color{correction}\boldsymbol{6^{36}}}$
+
+\item $102\text{ min}= 60 \text{ min}+42\text{ min}=1\text{ h}+\dfrac{7}{10}\text{ h}=1{,}7\text{ h}$.\\
+Ainsi, $102$ min correspond à ${\color{correction}\boldsymbol{1{,}7}}$ {\color{correction}heure}.
+
+\item Après une augmentation de $25\,\%$, le nouveau prix est $P \times 1{,}25$.\\
+Après une deuxième augmentation de $25\,\%$, le prix devient :\\
+$(P \times 1{,}25) \times 1{,}25 = {\color{correction}\boldsymbol{P \times \left(1 + \dfrac{25}{100}\right)^2}}={\color{correction}\boldsymbol{P \times  \left(1 + \dfrac{1}{4}\right)^2}} = {\color{correction}\boldsymbol{P \times 1{,}25^2}}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 16
+\newpage \begin{seance}{} %16
+
+\begin{enumerate}
+\item $(7x+11)(9x-9)\geqslant0$\\
+
+\begin{tikzpicture}[baseline, scale=0.5]
+\tkzTabInit[lgt=10,deltacl=0.8,espcl=2.5]{ $x$ / 2.5, $7x+11$ / 2, $9x-9$ / 2, $(7x+11)(9x-9)$ / 2}{ $-\infty$, $-\dfrac{11}{7}$, $1$, $+\infty$}
+\tkzTabLine{  , -, z, +, t, +}
+\tkzTabLine{  , -, t, -, z, +}
+\tkzTabLine{  , +, z, -, z, +}
+\end{tikzpicture}
+
+L'ensemble de solutions de l'inéquation est $S ={\color{correction}\boldsymbol{ \bigg] -\infty ; -\dfrac{11}{7} \bigg] \cup \bigg[ 1; +\infty \bigg[ }}$.
+
+\item $36x^2-24x+4=(6x)^2-2 \times 6x \times 2 + 2^2=(6x-2)^2$\\
+Il est possible de mettre tout d'abord $4$ en facteur avant d'utiliser une identité remarquable :\\
+$36x^2-24x+4=4\left(9x^2-6x+1\right)=4\left((3x)^2-2 \times 3x  + 1^2\right)={\color{correction}\boldsymbol{4(3x-1)^2}}$
+
+\item L'épaisseur d'une feuille est $6 \times 10^{-2}$ mm.\\
+Pour $1\,000$ feuilles, il faut multiplier par $1\,000$.\\
+L'épaisseur de la pile en mm est donc :\\
+$\begin{aligned}6 \times 1\,000 \times 10^{-2}&=6\,000 \times 10^{-2}\\&=6 \times 10^{1} \\&=60\end{aligned}$\\
+L'épaisseur de la pile est donc de ${\color{correction}\boldsymbol{60 \text{ mm}}}$.
+
+\item On cherche le plus petit entier naturel $n$ vérifiant $h(n)>0$.\\
+Comme $2n-17>0$ équivaut à $n>\dfrac{17}{2}$, le plus petit entier naturel $n$ est donc ${\color{correction}\boldsymbol{9}}$ car $\dfrac{17}{2} = 8,5$.
+
+\item On met l'expression au même dénominateur :\\
+$\begin{aligned}
+\dfrac{1}{4}-\dfrac{3x+2}{x}&=\dfrac{x-4\times \left(3x+2\right)}{4x}\\
+&=\dfrac{x -12x -8}{4x}\\
+&=\dfrac{-11x -8}{4x}\\
+\end{aligned}$\\
+$\phantom{\dfrac{1}{4}-\dfrac{3x+2}{x}}=-\dfrac{11x +8}{4x}$
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 16
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %16
+
+\begin{enumerate}
+\item $(-4x-12)(-9x+4)>0$\\
+
+
+\begin{tikzpicture}[baseline, scale=0.5]
+\tkzTabInit[lgt=10,deltacl=0.8,espcl=2.5]{ $x$ / 2.5, $-4x-12$ / 2, $-9x+4$ / 2, $(-4x-12)(-9x+4)$ / 2}{ $-\infty$, $-3$, $\dfrac{4}{9}$, $+\infty$}
+\tkzTabLine{  , +, z, -, t, -}
+\tkzTabLine{  , +, t, +, z, -}
+\tkzTabLine{  , +, z, -, z, +}
+\end{tikzpicture}
+
+L'ensemble de solutions de l'inéquation est $S ={\color{correction}\boldsymbol{ \bigg] -\infty ; -3 \bigg[ \cup \bigg] \dfrac{4}{9}; +\infty \bigg[ }}$.
+
+\item $64x^2-80x+25=(8x)^2-2 \times 8x \times 5 + 5^2={\color{correction}\boldsymbol{(8x-5)^2}}$
+
+\item L'épaisseur de $10$ feuilles est $60 \times 10^{-3}$ cm.\\
+Pour $1\,000$ feuilles, il faut multiplier par $100$.\\
+L'épaisseur de la pile en cm est donc :\\
+$\begin{aligned}60 \times 100 \times 10^{-3}&=6\,000 \times 10^{-3}\\&=6 \times 10^{0} \\&=6\end{aligned}$\\
+L'épaisseur de la pile est donc de ${\color{correction}\boldsymbol{6 \text{ cm}}}$.
+
+\item On cherche le plus petit entier naturel $n$ vérifiant $h(n)>0$.\\
+Comme $5n-38>0$ équivaut à $n>\dfrac{38}{5}$, le plus petit entier naturel $n$ est donc ${\color{correction}\boldsymbol{8}}$ car $\dfrac{38}{5} = 7,6$.
+
+\item On met l'expression au même dénominateur :\\
+$\begin{aligned}
+\dfrac{1}{3}-\dfrac{2x+3}{x}&=\dfrac{x-3\times \left(2x+3\right)}{3x}\\
+&=\dfrac{x -6x -9}{3x}\\
+&=\dfrac{-5x -9}{3x}\\
+\end{aligned}$\\
+$\phantom{\dfrac{1}{3}-\dfrac{2x+3}{x}}=-\dfrac{5x +9}{3x}$
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 17
+\newpage \begin{seance}{} %17
+
+\begin{enumerate}
+\item $\dfrac{12x-13}{(8x+6)(13x-4)} > 0$\\
+
+On commence par chercher les éventuelles valeurs interdites :\\
+$(8x+6)(13x-4) = 0$ si et seulement si $8x+6 = 0$ ou $13x-4 = 0$.\\
+$8x +6 = 0$ donc $x = -\dfrac{3}{4}$\\
+$13x -4 = 0$ donc $x = \dfrac{4}{13}$\\
+Le quotient est défini sur $\mathbb{R} \smallsetminus \{-\dfrac{3}{4}; \dfrac{4}{13}\}$.
+
+
+
+
+On peut donc en déduire le tableau de signes suivant :\\
+
+\begin{tikzpicture}[baseline, scale=0.35]
+\tkzTabInit[lgt=9,deltacl=0.8,espcl=3.5]{ $x$ / 2.5, $12x-13$ / 2, $8x+6$ / 2, $13x-4$ / 2, $\dfrac{12x-13}{(8x+6)(13x-4)}$ / 4}{ $-\infty$, $-\dfrac{3}{4}$, $\dfrac{4}{13}$, $\dfrac{13}{12}$, $+\infty$}
+\tkzTabLine{  , -, t, -, t, -, z, +}
+\tkzTabLine{  , -, z, +, t, +, t, +}
+\tkzTabLine{  , -, t, -, z, +, t, +}
+\tkzTabLine{  , -, d, +, d, -, z, +}
+\end{tikzpicture}
+
+L'ensemble de solutions de l'inéquation est $S = \bigg] -\dfrac{3}{4} ; \dfrac{4}{13} \bigg[ \cup \bigg] \dfrac{13}{12}; +\infty \bigg[$.
+
+\item $2{,}8\text{ h} =2 \text{ h} + 0{,}8 \text{ h}$, soit $2\text{ h} + \dfrac{4}{5} \text{ h} = 120 \text{ min} + 48\text{ min} = 168 \text{ min}$.\\
+Ainsi, $2{,}8$ heures correspond à ${\color{correction}\boldsymbol{168}}$ {\color{correction}minutes}.
+
+\item L'équation $10x^2-7x+8=8$ s'écrit $10x^2-7x=0$.\\
+En factorisant le premier membre (facteur commun $x$), on obtient $x(10x-7)=0$.\\
+On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{7}{10}$.\\
+$\mathscr{S}={\color{correction}\boldsymbol{\{0;\dfrac{7}{10}\}}}$
+
+\item On applique la propriété des puissances de puissances d'un réel :\\
+Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a : $\left(a^{n}\right)^{p}=a^{np}$\\
+$\left(3^{n}\right)^{3}=3^{3n}=\left(3^{3}\right)^{n}={\color{correction}\boldsymbol{27^{n}}}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item On note $a$ le montant de l'abonnement mensuel et $p$ le prix d'une séance.\\
+D'après le premier ticket : $a + 6 \times p = 40$ soit $a + 6p = 40$.\\
+D'après le second ticket : $a + 4 \times p = 30$ soit $a + 4 p = 30$\\
+En faisant la différence entre ces deux montants, on obtient :\\
+$6p - 4 p = 40-30$ soit $2p=10$.\\
+Donc le montant pour $1$ séance est : $p = 5$\,\euro{}.\\
+On peut alors calculer le montant de l'abonnement mensuel :\\
+$a = 40 - 6 \times 5 = 40 - 30 = {\color{correction}\boldsymbol{10}}$ €.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 17
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %17
+
+\begin{enumerate}
+\item $\dfrac{-7x+5}{(-3x-6)(4x-5)} > 0$\\
+On commence par chercher les éventuelles valeurs interdites :\\
+$(-3x-6)(4x-5) = 0$ si et seulement si $-3x-6 = 0$ ou $4x-5 = 0$.\\
+$-3x -6 = 0$ donc $x = -2$\\
+$4x -5 = 0$ donc $x = \dfrac{5}{4}$\\
+Le quotient est défini sur $\mathbb{R} \smallsetminus \{-2; \dfrac{5}{4}\}$.\\
+
+On peut donc en déduire le tableau de signes suivant :\\
+
+\begin{tikzpicture}[baseline, scale=0.35]
+\tkzTabInit[lgt=9,deltacl=0.8,espcl=3.5]{ $x$ / 2.5, $-7x+5$ / 2, $-3x-6$ / 2, $4x-5$ / 2, $\dfrac{-7x+5}{(-3x-6)(4x-5)}$ / 4}{ $-\infty$, $-2$, $\dfrac{5}{7}$, $\dfrac{5}{4}$, $+\infty$}
+\tkzTabLine{  , +, t, +, z, -, t, -}
+\tkzTabLine{  , +, z, -, t, -, t, -}
+\tkzTabLine{  , -, t, -, t, -, z, +}
+\tkzTabLine{  , -, d, +, z, -, d, +}
+\end{tikzpicture}
+
+L'ensemble de solutions de l'inéquation est $S = \bigg] -2 ; \dfrac{5}{7} \bigg[ \cup \bigg] \dfrac{5}{4}; +\infty \bigg[$.
+
+\item $0{,}25\text{ h} = \dfrac{1}{4} \text{ h} = 15 \text{ min}$.\\
+Ainsi, $0{,}25$ heure correspond à ${\color{correction}\boldsymbol{15}}$ {\color{correction}minutes}.
+
+\item L'équation $9x^2-x-5=-5$ s'écrit $9x^2-x=0$.\\
+En factorisant le premier membre (facteur commun $x$), on obtient $x(9x-1)=0$.\\
+On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{1}{9}$.\\
+$\mathscr{S}={\color{correction}\boldsymbol{\{0;\dfrac{1}{9}\}}}$
+
+\item On applique la propriété des puissances de puissances d'un réel :\\
+Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a : $\left(a^{n}\right)^{p}=a^{np}$\\
+$\left(4^{n}\right)^{2}=4^{2n}=\left(4^{2}\right)^{n}={\color{correction}\boldsymbol{16^{n}}}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item On note $a$ le montant de l'abonnement mensuel et $p$ le prix d'une séance.\\
+D'après le premier ticket : $a + 6 \times p = 44$ soit $a + 6p = 44$.\\
+D'après le second ticket : $a + 3 \times p = 26$ soit $a + 3 p = 26$\\
+En faisant la différence entre ces deux montants, on obtient :\\
+$(a + 6p) - (a + 3p) = 44-26$ soit $3p=18$.\\
+Donc le montant pour $1$ séance est : $p = 6$\,\euro{}.\\
+On peut alors calculer le montant de l'abonnement mensuel :\\
+$a = 44 - 6 \times 6 = 44 - 36 = {\color{correction}\boldsymbol{8\,\,\euro{}}}$.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 18
+\newpage \begin{seance}{} %18
+
+\begin{enumerate}
+\item On écrit les masses en écriture scientifique pour les comparer :\\
+- Planète 1 : $891{,}33\times 10^{23} = 8{,}913\,3\times 10^{25}$ kg\\
+- Planète 2 : $449{,}85\times 10^{23} = 4{,}498\,5\times 10^{25}$ kg\\
+- Planète 3 : $106{,}959\,6\times 10^{24} = 1{,}069\,596\times 10^{26}$ kg\\
+- Planète 4 : $945{,}99\times 10^{21} = 9{,}459\,9\times 10^{23}$ kg\\
+
+On a donc : $1{,}069\,596\times 10^{26} > 8{,}913\,3\times 10^{25} > 4{,}498\,5\times 10^{25} > 9{,}459\,9\times 10^{23}$\\
+Donc il s'agit de la {\bfseries \color{correction}Planète 3} qui a la masse la plus importante.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item Le coefficient multiplicateur associé à une baisse de $27\,\%$ est $1-0{,}27=0{,}73$.\\
+Le coefficient multiplicateur réciproque est donc $\dfrac{1}{0{,}73}$.\\
+On en déduit que le taux réciproque est $\dfrac{1}{0{,}73}-1$ ou $\dfrac{0{,}27}{0{,}73}$.\\
+Le taux à appliquer pour que cet article retrouve son prix initial est donné par ${\color{correction}\boldsymbol{\dfrac{1}{0{,}73}-1}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item  $(-5{,}78)^2< (-5{,}8)^2$ car $5,8 > 5,78$
+
+\item On peut simplifier l'expression :\\
+$\begin{aligned}
+\dfrac{35x^{5}}{\dfrac{7}{x^2}}&=35x^{5} \times \dfrac{x^2}{7}\\
+&=\dfrac{35x^{7}}{7}\\
+&=5x^{7}.
+\end{aligned}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item On a :\\
+$\begin{aligned}
+A&=\dfrac{286}{100}+\dfrac{29}{1\,000}\\
+&=2{,}86+0{,}029\\
+&={\color{correction}\boldsymbol{2{,}889}}
+\end{aligned}$
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 18
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %18
+
+\begin{enumerate}
+\item On écrit les tailles en écriture scientifique pour les comparer :\\
+- Cellule 1 : $39{,}18\times 10^{-7} = 3{,}918\times 10^{-6}$ mm\\
+- Cellule 2 : $470{,}16\times 10^{-8} = 4{,}7016\times 10^{-6}$ mm\\
+- Cellule 3 : $322{,}02\times 10^{-6} = 3{,}2202\times 10^{-4}$ mm\\
+- Cellule 4 : $505{,}2\times 10^{-9} = 5{,}052\times 10^{-7}$ mm\\
+
+On a donc : $3{,}2202\times 10^{-4} > 4{,}7016\times 10^{-6} > 3{,}918\times 10^{-6} > 5{,}052\times 10^{-7}$\\
+Donc il s'agit de la {\bfseries \color{correction}Cellule 3} qui a la taille la plus importante.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item Le coefficient multiplicateur associé à une baisse de $5\,\%$ est $1-0{,}05=0{,}95$.\\
+Le coefficient multiplicateur réciproque est donc $\dfrac{1}{0{,}95}$.\\
+On en déduit que le taux réciproque est $\dfrac{1}{0{,}95}-1$ ou $\dfrac{0{,}05}{0{,}95}$.\\
+Le taux à appliquer pour que cet article retrouve son prix initial est donné par ${\color{correction}\boldsymbol{\dfrac{0{,}05}{0{,}95}}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item $(20{,}1)^2>(20,05)^2$ car $20,10 > 20,05$
+
+\item On peut simplifier l'expression :\\
+$\begin{aligned}
+\dfrac{8x^{3}}{\dfrac{2}{x^5}}&=8x^{3} \times \dfrac{x^5}{2}\\
+&=\dfrac{8x^{8}}{2}\\
+&=4x^{8}.
+\end{aligned}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item On a :\\
+$\begin{aligned}
+A&=\dfrac{7}{10}+\dfrac{45}{100}\\
+&=0{,}7+0{,}45\\
+&={\color{correction}\boldsymbol{1{,}15}}
+\end{aligned}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 19
+\newpage \begin{seance}{} %19
+
+\begin{enumerate}
+\item Dans $1$ heure, il y a $5\times 12$ minutes.\\
+Ainsi, en $1$ heure, elle parcourt $12$ fois plus de distance, soit $0{,}8\times 12=9{,}6\text{ km}$.\\
+Sa vitesse moyenne est donc ${\color{correction}\boldsymbol{9{,}6}}\text{ km/h}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item Diminuer de $10~\%$ revient à multiplier par $1-\dfrac{10}{100}$.\\
+Ainsi, le coefficient multiplicateur associé à une réduction de $10~\%$ est $1-0{,}1$, soit ${\color{correction}\boldsymbol{0{,}9}}$.
+
+\item Pour comparer ces quatre nombres, on les écrit sous forme décimale :\\
+$\dfrac{9}{4} = 2{,}25$\\
+$\dfrac{22}{10} = 2{,}2$\\
+$228 \times 10^{-2} = 2{,}28$\\
+$2{,}24$\\
+On a donc : $2{,}2 < 2{,}24 < 2{,}25 < 2{,}28$\\
+Le plus petit nombre est donc : ${\color{correction}\boldsymbol{\dfrac{22}{10}}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item $9\,\%$ est proche de $10\,\%$ et $816$ est proche de $800$.\\
+Ainsi, le calcul de $9\,\%$ de $816$ est proche de $10\,\%$ de $800$ soit ${\color{correction}\boldsymbol{80}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item On isole le carré pour se ramener à une équation du type $x^2=k$.\\
+Résoudre l'équation revient à résoudre $x^2=1$.\\
+Puisque $1$ est strictement positif, l'équation a deux solutions : $-\sqrt{1}=-1$ et $\sqrt{1}=1$.\\
+Ainsi, $S={\color{correction}\boldsymbol{\{-1\,;\,1\}}}$.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 19
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %19
+
+\begin{enumerate}
+\item Dans $1$ heure, il y a $4\times 15$ minutes.\\
+Ainsi, en $1$ heure, elle parcourt $15$ fois plus de distance, soit $0{,}5\times 15=7{,}5\text{ km}$.\\
+Sa vitesse moyenne est donc ${\color{correction}\boldsymbol{7{,}5}}\text{ km/h}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item Diminuer de $70~\%$ revient à multiplier par $1-\dfrac{70}{100}$.\\
+Ainsi, le coefficient multiplicateur associé à une réduction de $70~\%$ est $1-0{,}7$, soit ${\color{correction}\boldsymbol{0{,}3}}$.
+
+\item Pour comparer ces quatre nombres, on les écrit sous forme décimale :\\
+$\dfrac{17}{10} = 1{,}7$\\
+$\dfrac{1695}{1\,000} = 1{,}695$\\
+$172 \times 10^{-2} = 1{,}72$\\
+$1{,}71$\\
+On a donc : $1{,}695 < 1{,}7 < 1{,}71 < 1{,}72$\\
+Le plus grand nombre est donc : ${\color{correction}\boldsymbol{172 \times 10^{-2}}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item $39\,\%$ est proche de $40\,\%$ et $411$ est proche de $400$.\\
+Ainsi, le calcul de $39\,\%$ de $411$ est proche de $40\,\%$ de $400$ soit ${\color{correction}\boldsymbol{160}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item On isole le carré pour se ramener à une équation du type $x^2=k$.\\
+Résoudre l'équation revient à résoudre $x^2=5$.\\
+Puisque $5$ est strictement positif, l'équation a deux solutions : $-\sqrt{5}$ et $\sqrt{5}$.\\
+Ainsi, $S={\color{correction}\boldsymbol{\{-\sqrt{5}\,;\,\sqrt{5}\}}}$.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 20
+\newpage \begin{seance}{} %20
+
+\begin{enumerate}
+\item On cherche s'il existe $x\in \mathbb{R}$ tel que $f(x)=54$.\\
+On résout cette équation en isolant le carré.\\
+$\begin{aligned}
+8x^2-2&=54\\
+8x^2&=56\\
+x^2&=\dfrac{56}{8}\\
+x^2&=7
+\end{aligned}$\\
+Cette équation a deux solutions : $-\sqrt{7}$ et $\sqrt{7}$.\\
+Les antécédents de $54$ sont : ${\color{correction}\boldsymbol{-\sqrt{7}}}$ et ${\color{correction}\boldsymbol{\sqrt{7}}}$.
+
+\item On arrondit $590$ à $600$ et $379$ à $400$.\\
+On obtient : $600 \times 400 = 240\,000$.\\
+Un ordre de grandeur de $590 \times 379$ est donc ${\color{correction}\boldsymbol{240\,000}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item Dans $1$ heure, il y a $4\times 15$ minutes.\\
+Ainsi, en $1$ heure, elle parcourt $15$ fois plus de distance, soit $0{,}4\times 15=6\text{ km}$.\\
+Sa vitesse moyenne est donc ${\color{correction}\boldsymbol{6}}\text{ km/h}$.
+
+\item $\dfrac{16}{49}x^2+\dfrac{40}{7}x+25=\left(\dfrac{4}{7}x\right)^2+2 \times \dfrac{4}{7}x \times 5 + 5^2={\color{correction}\boldsymbol{\left(\dfrac{4}{7}x+5\right)^2}}$
+
+\item Pour résoudre graphiquement cette inéquation :\\
+$\bullet$ On trace la parabole d'équation $y=x^2$.\\
+$\bullet$ On trace la droite horizontale d'équation $y=12$. Cette droite coupe la parabole en $-\sqrt{12}$ et $\sqrt{12}$.\\
+$\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent sur ou au-dessus de la droite.\\
+On en déduit que l'ensemble des solutions de l'inéquation est : {\bfseries \color{correction}$S = ]-\infty\,;\,-\sqrt{12}] \cup [\sqrt{12}\,;\,+\infty[$}.
+
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 20
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %20
+
+\begin{enumerate}
+\item On cherche s'il existe $x\in \mathbb{R}$ tel que $h(x)=-24$.\\
+On résout cette équation en isolant le carré.\\
+$\begin{aligned}
+-4x^2-4&=-24\\
+-4x^2&=-20\\
+x^2&=\dfrac{-20}{-4}\\
+x^2&=5
+\end{aligned}$\\
+Cette équation a deux solutions : $-\sqrt{5}$ et $\sqrt{5}$.\\
+Les antécédents de $-24$ sont : ${\color{correction}\boldsymbol{-\sqrt{5}}}$ et ${\color{correction}\boldsymbol{\sqrt{5}}}$.
+
+\item On arrondit $87$ à $90$ et $2\,950$ à $3\,000$.\\
+On obtient : $90 \times 3\,000 = 270\,000$.\\
+Un ordre de grandeur de $87 \times 2\,950$ est donc ${\color{correction}\boldsymbol{270\,000}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\item Dans $1$ heure, il y a $12\times 5$ minutes.\\
+Ainsi, en $1$ heure, elle parcourt $5$ fois plus de distance, soit $15\text{ km}$.\\
+Sa vitesse moyenne est donc ${\color{correction}\boldsymbol{15}}\text{ km/h}$.
+
+\item $\dfrac{16}{81}x^2-\dfrac{24}{9}x+9=\left(\dfrac{4}{9}x\right)^2-2 \times \dfrac{4}{9}x \times 3 + 3^2={\color{correction}\boldsymbol{\left(\dfrac{4}{9}x-3\right)^2}}$
+
+\item Pour résoudre graphiquement cette inéquation :\\
+$\bullet$ On trace la parabole d'équation $y=x^2$.\\
+$\bullet$ On trace la droite horizontale d'équation $y=8$. Cette droite coupe la parabole en $-\sqrt{8}$ et $\sqrt{8}$.\\
+$\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent sur ou sous la droite.\\
+On en déduit que l'ensemble des solutions de l'inéquation est : {\bfseries \color{correction}$S = [-\sqrt{8}\,;\,\sqrt{8}]$}.\\
+La bonne réponse est la réponse {\bfseries \color{correction}A}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+
+% CORRECTION SÉANCE 21
+\newpage \begin{seance}{} %21
+
+\begin{enumerate}
+\item  Développons l'expression :\\
+  $\begin{aligned}A &=\left(-\dfrac{4}{5}c+4\right)\left(-\dfrac{6}{7}c+2\right)-\left(-\dfrac{2}{7}c-5\right)^2\\&=\left({\color{red}\boldsymbol{\dfrac{-6c}{7}}}\times {\color{red}\boldsymbol{\dfrac{-4c}{5}}}
+    +{\color{blue}\boldsymbol{\dfrac{-6c}{7}}}\times {\color{blue}\boldsymbol{4}}
+    +{\color{blue}\boldsymbol{2}}\times {\color{blue}\boldsymbol{\dfrac{-4c}{5}}}
+    +{\color[HTML]{008002}\boldsymbol{2}}\times {\color[HTML]{008002}\boldsymbol{4}}\right)-\left({\color{red}\boldsymbol{\left( \dfrac{-2c}{7}\right) ^2}}+{\color{blue}\boldsymbol{2\times \left( \dfrac{-2c}{7}\right) \times \left( -5\right) }}+{\color[HTML]{008002}\boldsymbol{\left( -5\right) ^2}}\right)\\&={\color{red}\boldsymbol{\frac{24c^2}{35}}}{\color{blue}\boldsymbol{+\frac{-24c}{7}}}{\color{blue}\boldsymbol{+\frac{-8c}{5}}}{\color[HTML]{008002}\boldsymbol{+8}}{\color{red}\boldsymbol{+\frac{-4c^2}{49}}}{\color{blue}\boldsymbol{+\frac{-20c}{7}}}{\color[HTML]{008002}\boldsymbol{-25}}\\&=({\color{red}\boldsymbol{\frac{24c^2}{35}+\frac{-4c^2}{49}}})+({\color{blue}\boldsymbol{\frac{-24c}{7}+\frac{-8c}{5}+\frac{-20c}{7}}})+({\color[HTML]{008002}\boldsymbol{8-25}})\\&={\color[HTML]{f15929}\boldsymbol{\dfrac{148}{245}c^2-\dfrac{276}{35}c-17}}\end{aligned}$
+
+\item  ${\color[HTML]{f15929}\boldsymbol{10^{1}}} \leqslant 84{,}074 \leqslant {\color[HTML]{f15929}\boldsymbol{10^{2}}}$ car $10^{1} = 10$ et $10^{2} = 100.$
+
+\item  $\overrightarrow{u}=\overrightarrow{AB}$ $\Leftrightarrow\begin{cases}1=x_B-6\\-3=y_B-(-4)\end{cases}$ $\Leftrightarrow\begin{cases}1+6=x_B\\-3-4=y_B\end{cases}$ $\Leftrightarrow\begin{cases}x_B=7\\y_B=-7\end{cases}$, soit $B({\color[HTML]{f15929}\boldsymbol{7}}\,;\,{\color[HTML]{f15929}\boldsymbol{-7}})$.
+
+\item  Comme $f(15)=60$, le coefficient $a$ tel que de $f(x)=ax$ est :\\$a=\dfrac{60}{15}=4$.\\Donc $f(x)=$ ${\color[HTML]{f15929}\boldsymbol{4x.}}$
+
+\item \begin{enumerate}[itemsep=1em]
+	\item L'équation est de la forme $x^3=k$ avec $k=125$. \\
+              Le nombre dont le cube est $125$ est $5$ car $5^3=125$.\\
+              Ainsi,   $S=\{5\}$.
+              
+	\item L'équation est de la forme $x^2=k$ avec $k=16$. Comme  $16>0$ alors l'équation admet deux solutions : $-\sqrt{16}$ et $\sqrt{16}$.\\
+                Comme $-\sqrt{16}=-4$ et $\sqrt{16}=4$ alors
+                les solutions de l'équation peuvent s'écrire plus simplement : $-4$ et $4$.\\
+                Ainsi,  $S={\color[HTML]{f15929}\boldsymbol{\{-4\,;\,4\}}}$.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 21
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %20
+
+\begin{enumerate}
+\item Développons l'expression :\\
+ $\begin{aligned}A &=\left(-\dfrac{6}{7}y-4\right)^2-\left(\dfrac{4}{7}y+3\right)^2\\&=\left({\color{red}\boldsymbol{\left( \dfrac{-6y}{7}\right) ^2}}+{\color{blue}\boldsymbol{2\times \left( \dfrac{-6y}{7}\right) \times \left( -4\right) }}+{\color[HTML]{008002}\boldsymbol{\left( -4\right) ^2}}\right)-\left({\color{red}\boldsymbol{\left( \dfrac{4y}{7}\right) ^2}}+{\color{blue}\boldsymbol{2\times \left( \dfrac{4y}{7}\right) \times 3}}+{\color[HTML]{008002}\boldsymbol{3^2}}\right)\\&={\color{red}\boldsymbol{\frac{36y^2}{49}}}{\color{blue}\boldsymbol{+\frac{48y}{7}}}{\color[HTML]{008002}\boldsymbol{+16}}{\color{red}\boldsymbol{+\frac{-16y^2}{49}}}{\color{blue}\boldsymbol{+\frac{-24y}{7}}}{\color[HTML]{008002}\boldsymbol{-9}}\\&=({\color{red}\boldsymbol{\frac{36y^2}{49}+\frac{-16y^2}{49}}})+({\color{blue}\boldsymbol{\frac{48y}{7}+\frac{-24y}{7}}})+({\color[HTML]{008002}\boldsymbol{16-9}})\\&={\color[HTML]{f15929}\boldsymbol{\dfrac{20}{49}y^2+\dfrac{24}{7}y+7}}\end{aligned}$
+
+\item  ${\color[HTML]{f15929}\boldsymbol{10^{-3}}} \leqslant 0{,}009\,4 \leqslant {\color[HTML]{f15929}\boldsymbol{10^{-2}}}$ car $10^{-3} = 0{,}001$ et $10^{-2} = 0{,}01.$
+
+\item  $\overrightarrow{u}=\overrightarrow{BA}$ $\Leftrightarrow\begin{cases}-7=7-x_B\\-3=-5-y_B\end{cases}$ $\Leftrightarrow\begin{cases}x_B=7-(-7)\\y_B=-5-(-3)\end{cases}$ $\Leftrightarrow\begin{cases}x_B=14\\y_B=-2\end{cases}$, soit $B({\color[HTML]{f15929}\boldsymbol{14}}\,;\,{\color[HTML]{f15929}\boldsymbol{-2}})$.
+
+\item  Comme $f(0)=10$, la fonction $f(x)=ax+b$ vérifie $a\times 0 + b = b = 10$ et par suite $f(x)=ax+10$.\\Comme $f(7)=-4$, le coefficient $a$ tel que de $f(x)=ax+10$ vérifie $a\times 7+10 = -4$ soit $7a=-14$.\\On en déduit $a=\dfrac{-14}{7}=-2$ et ainsi que $f(x)=-2x+10$.\\Posons $b$ l'antécédent de $-2$, alors $f(b)=-2\times b+10=-2$.\\On en déduit $-2b=-2-10=-12$.\\Donc $b=\dfrac{-12}{-2}=$ ${\color[HTML]{f15929}\boldsymbol{6}}$.
+
+\item \begin{enumerate}[itemsep=1em]
+	\item L'équation est de la forme $x^3=k$ avec $k=-27$. \\
+              Le nombre dont le cube est $-27$ est $-3$ car $(-3)^3=-27$.\\
+              Ainsi,   $S=\{-3\}$.
+              
+	\item L'équation est de la forme $x^2=k$ avec $k=121$. Comme  $121>0$ alors l'équation admet deux solutions : $-\sqrt{121}$ et $\sqrt{121}$.\\
+                Comme $-\sqrt{121}=-11$ et $\sqrt{121}=11$ alors
+                les solutions de l'équation peuvent s'écrire plus simplement : $-11$ et $11$.\\
+                Ainsi,  $S={\color[HTML]{f15929}\boldsymbol{\{-11\,;\,11\}}}$.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 22
+\newpage \begin{seance}{} %22
+
+\begin{enumerate}
+\item   $5$ est bien dans l'ensemble de définition de $f$ et :\\ 
+                $f(x_A)=f(5)=-3\times 5^2+2\times5-9
+                =-75+10-9=-74\neq-75$.\\
+                L'image de $5$ n'est pas l'ordonnée du point $A$, donc le point $A$ n'est pas sur $\mathscr{C}_f$
+                
+\item  Comme $-2$ et $7$ n'appartiennent pas à un intervalle sur lequel $f$ est monotone, on ne peut pas utiliser le sens de variations de $f$ pour comparer $f(-2)$ et $f(7)$.\\
+                Mais, d'après le tableau de variations :\\
+                $\bullet$ Comme $-2\in [-3\,;\,-1]$, alors $4 < f(-2) < 10$. \\
+                $\bullet$ Comme $7\in [3\,;\,8]$, alors $-15 < f(7) < -14$. \\
+                On en déduit que {\bfseries \color[HTML]{f15929}$f(-2) > f(7)$}.\\
+                En effet, $f(-2)$ est un nombre compris entre  $4$ et $10$, il sera donc supérieur à  $f(7)$ qui est un nombre compris entre $-15$ et $-14$.
+
+\item On applique la formule aux données de l'énoncé :
+
+\medskip
+$\phantom{On applique la formule  : } TU=\sqrt{\left(x_U-x_T\right)^{2}+\left(y_U-y_T\right)^{2}}$\\$\phantom{On applique la formule  : }TU=\sqrt{\left(-4-10\right)^{2}+\left(-3-1\right)^{2}}$\\$\phantom{On applique la formule :        } TU=\sqrt{196+16}$\\$\phantom{On applique la formule  :        } TU={\color[HTML]{f15929}\boldsymbol{\sqrt{212}}}$\\$\phantom{On applique la formule  :     } TU={\color[HTML]{f15929}\boldsymbol{2\sqrt{53}}}$\\
+
+\item  $JKLM$ est un parallélogramme si et seulement si $\overrightarrow{JK} = \overrightarrow{ML}$.\\En notant $(x\;;\;y)$ les coordonnées du point $M$, on a :\\Le vecteur $\overrightarrow{JK}$ a pour coordonnées : $\dbinom{x_K - x_J}{y_K - y_J }=\dbinom{10-2}{3-(-10)} = \dbinom{8}{13}$.\\Le vecteur $\overrightarrow{ML}$ a pour coordonnées : $\dbinom{x_L - x_M}{y_L - y_M }=\dbinom{-2 - x}{0 - y}$.\\L'égalité $\overrightarrow{JK} = \overrightarrow{ML}$ se traduit donc par : $\begin{cases}-2 - x &= 8 \\ 0 - y &= 13\end{cases}\quad$ soit $\quad\begin{cases}x &= -10 \\ y &= -13\end{cases}$.\\Les coordonnées du point $M$ sont donc ${\color[HTML]{f15929}\boldsymbol{(-10\;;\;-13)}}$.
+
+\item Pour déterminer le taux d'évolution global, on commence par calculer le coefficient multiplicateur global.\\Si une grandeur subit des évolutions successives, le coefficient multiplicateur global est le produit des coefficients multiplicateurs de chaque évolution :
+
+\medskip
+\textbf{Première évolution :} \\
+          Diminuer de $60~\%$ revient à multiplier par $CM_1 = 1 - \dfrac{60}{100} = 0{,}4$.
+
+\medskip
+\textbf{Deuxième évolution :}\\ Augmenter de $63~\%$ revient à multiplier par $CM_2 = 1 + \dfrac{63}{100} = 1{,}63$.\\Le coefficient multiplicateur global est égal à $CM = CM_1 \times CM_2 = 0{,}4 \times 1{,}63 =0{,}652$.
+
+\medskip
+\textbf{Évolution globale :}\\Le taux d'évolution global est égal à : $T=CM-1=0{,}652-1=-0{,}348=-34{,}8~\%$.
+
+\medskip
+Le prix de l'article a subi une baisse globale de ${\color[HTML]{f15929}\boldsymbol{34{,}8}}~\%$.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 22
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %22
+
+\begin{enumerate}
+\item  $-1$ est bien dans l'ensemble de définition de $f$ et :\\ 
+                $f(x_A)=f(-1)=-8\times (-1)^2+7\times(-1)-2
+                =-8-7-2=-17\neq-18$.\\
+                L'image de $-1$ n'est pas l'ordonnée du point $A$, donc le point $A$ n'est pas sur $\mathscr{C}_f$
+
+\item  Comme $-1$ et $7$ n'appartiennent pas à un intervalle sur lequel $f$ est monotone, on ne peut pas utiliser le sens de variations de $f$ pour comparer $f(-1)$ et $f(7)$.\\
+                Mais, d'après le tableau de variations : \\
+                $\bullet$ Comme $-1\in [-2\,;\,2]$, alors $-15 < f(-1) < -2$. \\
+                $\bullet$ Comme $7\in [6\,;\,9]$, alors $-14 < f(7) < -1$. \\
+                Ces deux encadrements ne permettent pas de comparer  $f(-1)$ et  $f(7)$.\\
+                Ainsi, {\bfseries \color[HTML]{f15929}on ne peut pas comparer} $f(-1)$ et  $f(7)$.  
+
+\item  On applique la formule aux données de l'énoncé :
+
+\medskip
+$\phantom{On applique la formule  : } ST=\sqrt{\left(x_T-x_S\right)^{2}+\left(y_T-y_S\right)^{2}}$\\$\phantom{On applique la formule  : }ST=\sqrt{\left(-3-(-8)\right)^{2}+\left(4-(-10)\right)^{2}}$\\$\phantom{On applique la formule :        } ST=\sqrt{25+196}$\\$\phantom{On applique la formule  :        } ST={\color[HTML]{f15929}\boldsymbol{\sqrt{221}}}$\\
+
+\item  $STUV$ est un parallélogramme si et seulement si $\overrightarrow{ST} = \overrightarrow{VU}$.\\En notant $(x\;;\;y)$ les coordonnées du point $V$, on a :\\Le vecteur $\overrightarrow{ST}$ a pour coordonnées : $\dbinom{x_T - x_S}{y_T - y_S }=\dbinom{-3-6}{3-(-8)} = \dbinom{-9}{11}$.\\Le vecteur $\overrightarrow{VU}$ a pour coordonnées : $\dbinom{x_U - x_V}{y_U - y_V }=\dbinom{-5 - x}{-10 - y}$.\\L'égalité $\overrightarrow{ST} = \overrightarrow{VU}$ se traduit donc par : $\begin{cases}-5 - x &= -9 \\ -10 - y &= 11\end{cases}\quad$ soit $\quad\begin{cases}x &= 4 \\ y &= -21\end{cases}$.\\Les coordonnées du point $V$ sont donc ${\color[HTML]{f15929}\boldsymbol{(4\;;\;-21)}}$.
+
+\item Pour déterminer le taux d'évolution global, on commence par calculer le coefficient multiplicateur global.\\Si une grandeur subit des évolutions successives, le coefficient multiplicateur global est le produit des coefficients multiplicateurs de chaque évolution :
+
+\medskip
+\textbf{Première évolution :} \\
+          Augmenter de $57~\%$ revient à multiplier par $CM_1 = 1 + \dfrac{57}{100} = 1{,}57$.
+
+\medskip
+\textbf{Deuxième évolution :}\\ Diminuer de $1~\%$ revient à multiplier par $CM_2 = 1 - \dfrac{1}{100} = 0{,}99$.\\Le coefficient multiplicateur global est égal à $CM = CM_1 \times CM_2 = 1{,}57 \times 0{,}99 =1{,}554\,3$.
+
+\medskip
+\textbf{Évolution globale :}\\
+          Le taux d'évolution global est égal à : $T=CM-1=1{,}554\,3-1=0{,}554\,3=55{,}43~\%$.
+
+\medskip
+Le prix de l'article a subi une hausse globale de ${\color[HTML]{f15929}\boldsymbol{55{,}43}}~\%$.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 23
+\newpage \begin{seance}{} %23
+
+\begin{enumerate}
+	\item $0{,}9 \times 6={\color[HTML]{f15929}\boldsymbol{5{,}4}}$
+	\item $15-6\times6={\color[HTML]{f15929}\boldsymbol{-21}}$
+	\item $(x+8)(x-3)=x^2-3x+8x-24={\color[HTML]{f15929}\boldsymbol{x^2+5x-24}}$
+	\item $25\,\%$ de $36 = {\color[HTML]{f15929}\boldsymbol{9}}$\\ Prendre $25\,\%$  de $36$ revient à prendre le quart de $36$.\\
+      Ainsi, $25\,\%$ de $36$ est égal à $36\div 4 =9$.
+     
+	\item On ordonne la série :  $3$\,;\,$7$\,;\,$15$\,;\,$18$\,;\,$23$.\\
+      La série comporte $5$ valeurs donc la médiane est la troisième valeur : ${\color[HTML]{f15929}\boldsymbol{15}}$.
+	\item $\dfrac{5}{6}\times \dfrac{-7}{5}=-\dfrac{7{\color[HTML]{2563a5}\boldsymbol{\times5}} }{6{\color[HTML]{2563a5}\boldsymbol{\times5}}}={\color[HTML]{f15929}\boldsymbol{-\dfrac{7}{6}}}$
+	\item $(-6)^{-5}=\dfrac{1}{(-6)^{5}}$\\
+     Comme  $(-6)^{5}$ est  négatif (puissance impaire d'un nombnre négatif), on en déduit que  $\dfrac{1}{(-6)^{5}}$ est négatif.
+    Ainsi, $(-6)^{-5}$ est {\bfseries \color[HTML]{f15929}négatif}.
+	\item On utilise la formule $\dfrac{a^n}{a^p}=a^{n - p}$
+        avec $a=2$,  $n=3$ et $p=4$.\\
+        $\dfrac{2^{3}}{2^{4}}=2^{3-4}=2^{{\color[HTML]{f15929}\boldsymbol{-1}}}$
+	\item On utilise l'égalité remarquable ${\color{red} a}^2-{\color{blue} b}^2=({\color{red} a}-{\color{blue} b})({\color{red} a}+{\color{blue} b})$ avec $a={\color{red} 3}$ et $b={\color{blue} x}$.\\$\begin{aligned}
+  9-x^2&=\underbrace{{\color{red} 3}^2-{\color{blue} x}^2}_{a^2-b^2}\\
+  &=\underbrace{({\color{red} 3}-{\color{blue} x})({\color{red} 3}+{\color{blue} x})}_{(a-b)(a+b)}
+  \end{aligned}$ \\
+    Une expression factorisée de $9-x^2$ est ${\color[HTML]{f15929}\boldsymbol{(3-x)(3+x)}}$.
+	\item On a : \\$
+      1+\dfrac{5}{8} = \dfrac{1 \times 8}{8} - \dfrac{5}{8} 
+      = \dfrac{8}{8} - \dfrac{5}{8}
+        ={\color[HTML]{f15929}\boldsymbol{\dfrac{3}{8}}}$
+	\item Les coordonnées du milieu $M$ sont données par la moyenne des abscisses et la moyenne des ordonnées : \\
+      $x_M=\dfrac{-10+-6}{2}={\color[HTML]{f15929}\boldsymbol{-8}}$ et $y_M=\dfrac{3+9}{2}={\color[HTML]{f15929}\boldsymbol{6}}$.\\
+      Ainsi,  $M({\color[HTML]{f15929}\boldsymbol{-8\,;\,6}})$.
+	\item  L'algorithme retourne $(2\times7\times7)+7={\color[HTML]{f15929}\boldsymbol{105}}$. 
+	\item L'image de $2$ se lit sur l'axe des ordonnées. \\
+              On lit $f(2)={\color[HTML]{f15929}\boldsymbol{-1}}$. 
+	\item Les solutions de l'inéquation sont les abscisses des points de $\mathscr{C}_f$ qui se trouvent au-dessus de la droite horizontale d'équation $y=1$.\\
+    $S={\color[HTML]{f15929}\boldsymbol{]-1\,;\,1[}}$ 
+    \item Les vecteurs $\overrightarrow{DE}$ et $\overrightarrow{AB}$ sont colinéaires de sens contraire.\\
+   La norme du vecteur  $\overrightarrow{DE}$ est deux fois plus grande que celle du vecteur  $\overrightarrow{AB}$. \\
+    Ainsi, $\overrightarrow{DE}={\color[HTML]{f15929}\boldsymbol{-2}}\overrightarrow{AB}$.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 23
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %23
+
+\begin{enumerate}
+\item $4 \times 1{,}5={\color[HTML]{f15929}\boldsymbol{6}}$
+	\item $45-50+8={\color[HTML]{f15929}\boldsymbol{3}}$
+	\item $
+      (x+1)(x+4)=x^2+4x+x+4
+      ={\color[HTML]{f15929}\boldsymbol{x^2+5x+4}}$\\Le terme en $x^2$ vient de $x\times 1x=x^2$.\\Le terme en $x$ vient de la somme de $x \times 4$ et de $1 \times 1x$.\\Le terme constant vient de $1\times 4= 4$.
+	\item $
+      2+\dfrac{5}{3} = \dfrac{2 \times 3}{3} + \dfrac{5}{3} = \dfrac{6}{3} + \dfrac{5}{3}  ={\color[HTML]{f15929}\boldsymbol{\dfrac{11}{3}}}$
+	\item $20\,\%$ de $40 = {\color[HTML]{f15929}\boldsymbol{8}}$\\ Prendre $20\,\%$  de $40$ revient à prendre $2\times 10\,\%$  de $40$.\\
+      Comme $10\,\%$  de $40$ vaut $4$ (pour prendre $10\,\%$  d'une quantité, on la divise par $10$), alors
+      $20\,\%$ de $40=2\times 4=8$.
+     
+	\item On décompose le calcul pour le rendre plus simple mentalement :\\  $ 0{,}4\times0{,}5 =4\times 0,1\times 5\times 0,1= 20\times 0,01
+= {\color[HTML]{f15929}\boldsymbol{0{,}2}}$
+	\item Comme $1{,}11=1+0{,}11$, multiplier par $1{,}11$ revient à augmenter de ${\color[HTML]{f15929}\boldsymbol{11}}\,\%$. 
+	\item La somme des $3$ nombres est : $4+12+11 =27$.\\
+            La moyenne est donc $\dfrac{27}{3}={\color[HTML]{f15929}\boldsymbol{9}}$.
+	\item $\sqrt{49}={\color[HTML]{f15929}\boldsymbol{7}}$
+	\item  L'algorithme retourne $2+(-4)={\color[HTML]{f15929}\boldsymbol{-2}}$. 
+	\item Le nombre qui multiplié par $6$ donne $13$ est ${\color[HTML]{f15929}\boldsymbol{\dfrac{13}{6}}}$.
+      
+	\item L'abscisse du point $A$ est $\dfrac{6}{4}={\color[HTML]{f15929}\boldsymbol{1{,}5}}$.
+	\item L'aire est donnée par le produit des deux plus petits côtés divisé par $2$, soit : $\dfrac{3\times 4}{2}={\color[HTML]{f15929}\boldsymbol{6}}\text{ cm}^2$.
+	\item  $10\,\%$ de  $1\,000$\,\euro{}~est égal à $100$\,\euro{}. \\
+        Après la hausse de $10\,\%$, le prix est de $1\,000$\,\euro{}~$+$ $100$\,\euro{}~$=1\,100$\,\euro{}.\\
+        $10\,\%$ de  $1\,100$\,\euro{}~est égal à $110$\,\euro{}. \\
+        Après la baisse de $10\,\%$, le prix est de  $1\,100$\,\euro{}~$-$ $110$\,\euro{}~$=990$\,\euro{}.\\
+        Le nouveau prix est ${\color[HTML]{f15929}\boldsymbol{990}}$\,\euro{}. \\
+        \textbf{Autre méthode :\\ }
+        Augmenter de $10\,\%$ revient à multiplier par $1{,}1$.\\
+Diminuer de $10\,\%$ revient à multiplier par $0{,}9$.\\
+Donc le prix est multiplié par $1{,}1\times 0{,}9$, c'est-à-dire par $0{,}99$.\\
+Le prix final est donc inférieur au prix initial (car on multiplie par un nombre inférieur à $1$).
+        
+	\item $
+      10^{-2}+10^{3}=0{,}01 +1\,000
+      ={\color[HTML]{f15929}\boldsymbol{1\,000{,}01}}$
+
+\end{enumerate}
+
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 24
+\newpage \begin{seance}{} %24
+
+\begin{enumerate}
+\item Les solutions sont les abscisses des points d'intersection entre les deux courbes :
+   $S=\{{\color[HTML]{f15929}\boldsymbol{-1\,;\,2}}\}$. 
+	\item En mettant les fractions au même dénominateur, on a bien $\dfrac{3}{5}+\dfrac{1}{10}=\dfrac{7}{10}$.
+    Réponse : {\bfseries \color[HTML]{f15929}Vrai}
+	\item On sait d'après le cours que le coefficient directeur $m$ est donné par : $m=\dfrac{y_L-y_K}{x_-x_A}$.\\On applique avec les données de l'énoncé :
+        $m=\dfrac{2-1}{-1-10}=
+        {\color[HTML]{f15929}\boldsymbol{\dfrac{-1}{11}}}$.
+	\item Comme $1{,}28=1+0{,}28=1+\dfrac{28}{100}$, multiplier par $1{,}28$ revient à augmenter de ${\color[HTML]{f15929}\boldsymbol{28}}\,\%$. 
+	\item Augmenter de $100\,\%$ revient à multiplier par $2$. Augmenter de $60\,\%$ revient à multiplier par $1{,}6$.\\
+        Le coefficient multiplicateur global est donc $2\times 1{,}6=3{,}2$.\\
+        Ainsi, le taux global est donné par $3{,}2-1={\color[HTML]{f15929}\boldsymbol{220}}\,\%$.
+	\item $f(-5)=\left(-5 \right)^2 +5 \times \left(-5\right) +1 = 1$. 
+    On a donc $f(-5)={\color[HTML]{f15929}\boldsymbol{1}}$.
+	\item On calcule la moyenne $m$ en faisant le quotient de la somme des notes coefficientées par la somme des coefficients. \\
+	\medskip
+	
+        $m=\dfrac{12+10+2\times 9}{1+1+2}=\dfrac{40}{4}={\color[HTML]{f15929}\boldsymbol{10}}$
+	\item La relation entre la probabilité d'un événement $A$ et celle de son contraire $\overline{A}$ est :  $P(\overline{A})=1-P(A)$.\\
+          Ainsi : $P(\overline{A})=1-\dfrac{3}{10}={\color[HTML]{f15929}\boldsymbol{\dfrac{7}{10}}}$.
+	\item Le vecteur d'origine $B$ égal au  vecteur $\overrightarrow{AB}$ est le vecteur $\overrightarrow{BG}$. 
+    Ainsi, $\overrightarrow{AB}=\overrightarrow{B{\color[HTML]{f15929}\boldsymbol{G}}}$.
+	
+	\item $10$ stylos coûtent $15$\,\euro{} donc $5$ stylos coûtent  $7{,}50$\,\euro{}.Ainsi,   $15$ stylos coûtent $15+ 7{,}50 ={\color[HTML]{f15929}\boldsymbol{22{,}50}}$\,\euro{}.
+	\item Le coefficient directeur $m$ de la droite $(AB)$ est donné par : $m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{-1-(-3)}{3-0}=\dfrac{{\color{blue}\boldsymbol{2}}}{{\color{red}\boldsymbol{3}}}{\color[HTML]{f15929}\boldsymbol{}}$.
+
+\medskip
+\begin{tikzpicture}[baseline,scale = 0.6]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-5,-5.25) rectangle (5,1);
+    	\draw[color={blue},line width = 2] (-41.60251471689219,-30.735009811261456)--(44.60251471689219,26.735009811261456);
+	\draw[color ={black},line width = 1.2] (-5,0)--(5,0);
+	\draw[color ={black},line width = 1.2] (0,-5)--(0,5);
+	\draw[color ={black},opacity = 0.4] (-5,1)--(5,1);
+	\draw[color ={black},opacity = 0.4] (-5,-1)--(5,-1);
+	\draw[color ={black},opacity = 0.4] (-5,2)--(5,2);
+	\draw[color ={black},opacity = 0.4] (-5,-2)--(5,-2);
+	\draw[color ={black},opacity = 0.4] (-5,3)--(5,3);
+	\draw[color ={black},opacity = 0.4] (-5,-3)--(5,-3);
+	\draw[color ={black},opacity = 0.4] (-5,4)--(5,4);
+	\draw[color ={black},opacity = 0.4] (-5,-4)--(5,-4);
+	\draw[color ={black},opacity = 0.4] (-5,5)--(5,5);
+	\draw[color ={black},opacity = 0.4] (-5,-5)--(5,-5);
+	\draw[color ={black},opacity = 0.4] (1,-5)--(1,5);
+	\draw[color ={black},opacity = 0.4] (-1,-5)--(-1,5);
+	\draw[color ={black},opacity = 0.4] (2,-5)--(2,5);
+	\draw[color ={black},opacity = 0.4] (-2,-5)--(-2,5);
+	\draw[color ={black},opacity = 0.4] (3,-5)--(3,5);
+	\draw[color ={black},opacity = 0.4] (-3,-5)--(-3,5);
+	\draw[color ={black},opacity = 0.4] (4,-5)--(4,5);
+	\draw[color ={black},opacity = 0.4] (-4,-5)--(-4,5);
+	\draw[color ={black},opacity = 0.4] (5,-5)--(5,5);
+	\draw[color ={black},opacity = 0.4] (-5,-5)--(-5,5);
+	\draw[color ={black},line width = 1.2] (0,-0.1)--(0,0.1);
+	\draw[color ={black},line width = 1.2] (1,-0.1)--(1,0.1);
+	\draw[color ={black},line width = 1.2] (-1,-0.1)--(-1,0.1);
+	\draw[color ={black},line width = 1.2] (2,-0.1)--(2,0.1);
+	\draw[color ={black},line width = 1.2] (-2,-0.1)--(-2,0.1);
+	\draw[color ={black},line width = 1.2] (3,-0.1)--(3,0.1);
+	\draw[color ={black},line width = 1.2] (-3,-0.1)--(-3,0.1);
+	\draw[color ={black},line width = 1.2] (-0.1,0)--(0.1,0);
+	\draw[color ={black},line width = 1.2] (-0.1,1)--(0.1,1);
+	\draw[color ={black},line width = 1.2] (-0.1,-1)--(0.1,-1);
+	\draw[color ={black},line width = 1.2] (-0.1,2)--(0.1,2);
+	\draw[color ={black},line width = 1.2] (-0.1,-2)--(0.1,-2);
+	\draw[color ={black},line width = 1.2] (-0.1,3)--(0.1,3);
+	\draw[color ={black},line width = 1.2] (-0.1,-3)--(0.1,-3);
+	\draw[opacity=0.8] (1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$1$};
+	\draw[opacity=0.8] (2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$2$};
+	\draw[opacity=0.8] (3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$3$};
+	\draw[opacity=0.8] (4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$4$};
+	\draw[opacity=0.8] (-1,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$-1$};
+	\draw[opacity=0.8] (-2,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$-2$};
+	\draw[opacity=0.8] (-3,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$-3$};
+	\draw[opacity=0.8] (-4,-0.4) node[anchor = center, rotate=0] {\scriptsize \color{black}$-4$};
+	\draw[opacity=0.8] (-0.6,1.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$1$};
+	\draw[opacity=0.8] (-0.6,2.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$2$};
+	\draw[opacity=0.8] (-0.6,3.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$3$};
+	\draw[opacity=0.8] (-0.6,4.1) node[anchor = center, rotate=0] {\scriptsize \color{black}$4$};
+	\draw[opacity=0.8] (-0.6,-0.9) node[anchor = center, rotate=0] {\scriptsize \color{black}$-1$};
+	\draw[opacity=0.8] (-0.6,-1.9) node[anchor = center, rotate=0] {\scriptsize \color{black}$-2$};
+	\draw[opacity=0.8] (-0.6,-2.9) node[anchor = center, rotate=0] {\scriptsize \color{black}$-3$};
+	\draw[opacity=0.8] (-0.6,-3.9) node[anchor = center, rotate=0] {\scriptsize \color{black}$-4$};
+	\draw[color ={black},line width = 1.25,opacity = 0.8] (-0.13,-2.88)--(0.13,-3.13);\draw[color ={black},line width = 1.25,opacity = 0.8] (-0.13,-3.13)--(0.13,-2.88);
+	\draw[opacity=1] (0.1,-3.2) node[anchor = center, rotate=0] {\normalsize \color{black}$A$};
+	\draw[opacity=1] (3,-0.5) node[anchor = center, rotate=0] {\normalsize \color{black}$B$};
+	\draw[color ={black},line width = 1.25,opacity = 0.8] (2.88,-0.88)--(3.13,-1.13);\draw[color ={black},line width = 1.25,opacity = 0.8] (2.88,-1.13)--(3.13,-0.88);
+	\draw[opacity=1] (-0.2,-0.3) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{O}$};
+	\draw[color ={black},line width = 2, dashed ] (0,-3)--(3,-3);
+	\draw[color ={black},line width = 2, dashed ] (3,-1)--(3,-3);
+	\draw[opacity=1] (1.5,-3.3) node[anchor = center, rotate=0] {\normalsize \color{red}$3$};
+	\draw[opacity=1] (3.5,-2) node[anchor = center, rotate=0] {\normalsize \color{blue}$2$};
+
+\end{tikzpicture}
+	\item L'antécédent de $8$ est le nombre $x$ qui a pour image $8$. On cherche donc $x$ tel que : $2x-2=8$ \\Soit $x=\dfrac{8+2}{2}={\color[HTML]{f15929}\boldsymbol{5}}$.
+	\item  On reconnaît une équation du type $x^2=k$ avec $k=-11$.\\Puisque $-11$ est strictement négatif, l'équation n'a pas de solution. Ainsi, $S={\color[HTML]{f15929}\boldsymbol{\emptyset}}$.
+	\item On utilise l'égalité remarquable $(a-b)^2=a^2-2ab+b^2$ avec $a=5$ et $b=3x$.\\$
+       (5-3x)^2=5^2-2\times 5\times 3x+ (3x)^2={\color[HTML]{f15929}\boldsymbol{9x^2-30x+25}}$
+	\item On utilise le triangle rectangle représenté ci-dessous et on applique le théorème de Pythagore : \\
+    $AB^2=AC^2+BC^2$ donc 
+         $AB^2= 4^2+3^2$ donc 
+         $AB=\sqrt{25}$ donc 
+$AB=5$
+
+             La valeur exacte de $AB$ est ${\color[HTML]{f15929}\boldsymbol{\sqrt{25}}}$ u.l.\begin{tikzpicture}[baseline,scale = 0.5]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,0) rectangle (8,5.3);
+    	\draw[color ={gray}] (0,0)--(0,5);
+	\draw[color ={gray}] (1,0)--(1,5);
+	\draw[color ={gray}] (2,0)--(2,5);
+	\draw[color ={gray}] (3,0)--(3,5);
+	\draw[color ={gray}] (4,0)--(4,5);
+	\draw[color ={gray}] (5,0)--(5,5);
+	\draw[color ={gray}] (6,0)--(6,5);
+	\draw[color ={gray}] (7,0)--(7,5);
+	\draw[color ={gray}] (8,0)--(8,5);
+	\draw[color ={gray}] (0,0)--(8,0);
+	\draw[color ={gray}] (0,1)--(8,1);
+	\draw[color ={gray}] (0,2)--(8,2);
+	\draw[color ={gray}] (0,3)--(8,3);
+	\draw[color ={gray}] (0,4)--(8,4);
+	\draw[color ={gray}] (0,5)--(8,5);
+	\draw[color ={blue},line width = 3] (1,4)--(5,1);
+	\draw[color ={black},line width = 2] (6,4)--(7,4);
+	\draw[color ={blue},line width = 2, dashed ] (1,4)--(5,4);
+	\draw[color ={blue},line width = 2, dashed ] (5,4)--(5,1);
+	\draw[opacity=1] (6.5,4.5) node[anchor = center, rotate=0] {\scriptsize \color{black}$1 \text{u.l.}$};
+	\draw[color ={black},line width = 0.625,opacity = 0.8] (0.81,4.19)--(1.19,3.81);\draw[color ={black},line width = 0.625,opacity = 0.8] (0.81,3.81)--(1.19,4.19);\draw[color ={black},line width = 0.625,opacity = 0.8] (4.81,1.19)--(5.19,0.81);\draw[color ={black},line width = 0.625,opacity = 0.8] (4.81,0.81)--(5.19,1.19);\draw[color ={black},line width = 0.625,opacity = 0.8] (4.81,4.19)--(5.19,3.81);\draw[color ={black},line width = 0.625,opacity = 0.8] (4.81,3.81)--(5.19,4.19);
+	\draw [color={black}] (1,4.5) node[anchor = center,scale=1, rotate = 0] {A};
+	\draw [color={black}] (5,0.5) node[anchor = center,scale=1, rotate = 0] {B};
+	\draw [color={black}] (5,4.5) node[anchor = center,scale=1, rotate = 0] {C};
+
+\end{tikzpicture}
+\end{enumerate}
+
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 24
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %24
+
+\begin{enumerate}
+\item On procède par étapes successives :\\
+      On commence par isoler $-4x$ dans le membre de gauche en ajoutant
+      $-25$ dans chacun des membres, puis on divise
+      par $-4$ pour obtenir la solution : \\
+       $\begin{aligned}
+       -4x+25&=-7\\
+      -4x&=-7-25\\
+      -4x&=-32\\
+      x&=\dfrac{-32}{-4}\\
+      x&=8
+      \end{aligned}$\\
+      La solution de l'équation est : ${\color[HTML]{f15929}\boldsymbol{8}}$.
+      
+	\item $ \dfrac{25}{35}=\dfrac{5\times 5}{7\times 5}
+      ={\color[HTML]{f15929}\boldsymbol{\dfrac{5}{7}}}$
+	\item La notation scientifique est de la forme $a\times 10^{n}$ avec $1\leqslant a <10$ et $n$ un entier relatif.\\
+              Ici : $0{,}002\,53=\underbrace{{\color[HTML]{f15929}\boldsymbol{2{,}53}}}_{1\leqslant 2{,}53 <10}{\color[HTML]{f15929}\boldsymbol{\times}} {\color[HTML]{f15929}\boldsymbol{10^{-3}}}$. 
+	\item On utilise la formule $a^n\times a^m=a^{n+m}$ avec $a=2$, $n=4$ et $p=2$.\\
+            $2^{4}\times 2^{2}=2^{4+2}=2^{{\color[HTML]{f15929}\boldsymbol{6}}}$
+	\item Pour $x=-3$, on obtient : 
+            $3+4x=3+4\times(-3)={\color[HTML]{f15929}\boldsymbol{-9}}$.
+            
+	\item Une unité correspond à $4$ carreaux, la ligne brisée mesure $7$ carreaux, soit $\dfrac{{\color[HTML]{f15929}\boldsymbol{7}}}{{\color[HTML]{f15929}\boldsymbol{4}}}$ u.l. 
+	\item Comme il y a $1$ multiple de $5$, la probabilité d'obtenir un multiple de $5$ est ${\color[HTML]{f15929}\boldsymbol{\dfrac{1}{6}}}$.
+	\item L'équation de la droite est de la forme $y=mx+p$.\\
+       Le coefficient directeur est $m$ et l'ordonnée à l'origine est $p$. \\
+      Le coefficient directeur de la droite est donc $m={\color[HTML]{f15929}\boldsymbol{-3}}$.
+	\item Les coordonnées du milieu sont données par la moyenne des abscisses et la moyenne des ordonnées : \\
+      $x_M=\dfrac{4+6}{2}={\color[HTML]{f15929}\boldsymbol{5}}$ et $y_M=\dfrac{4+8}{2}={\color[HTML]{f15929}\boldsymbol{6}}$.\\
+      Ainsi,  $M({\color[HTML]{f15929}\boldsymbol{5\,;\,6}})$.
+	\item On utilise l'égalité remarquable $(a+b)^2=a^2+2ab+b^2$ avec $a=x$ et $b=4$.\\
+      $(x+4)^2=x^2+2 \times 4 \times x+4^2={\color[HTML]{f15929}\boldsymbol{x^2+8x+16}}$
+	\item On utilise l'égalité remarquable $a^2-b^2=(a+b)(a-b)$ avec $a=x$ et $b=4$.\\
+      $x^2-16=x^2-4^2={\color[HTML]{f15929}\boldsymbol{(x-4)(x+4)}}$
+	\item $10$ viennent au lycée à vélo, donc $13$ ne viennent pas au lycée à vélo.\\
+      La proportion d’élèves de cette classe qui ne viennent pas à vélo est donc ${\color[HTML]{f15929}\boldsymbol{\dfrac{13}{23}}}$.
+	\item Le nombre de solution de l'équation $f(x)=4$ est le nombre de points d'intersection entre la droite d'équation $y=4$ et la courbe de $f$. \\La droite horizontale d'équation $y=4$ n'a aucun point d'intersection avec la courbe de $f$. \\
+          Ainsi l'équation $f(x)=4$ a ${\color[HTML]{f15929}\boldsymbol{0}}$ solution.
+	\item Pour lire l'image de $3$, on place la valeur de $3$ sur l'axe des abscisses (axe de lecture  des antécédents) et on lit
+           son image  sur l'axe des ordonnées (axe de lecture des images). \\
+           On obtient :  $f(3)={\color[HTML]{f15929}\boldsymbol{1}}$.
+	\item La fonction est positive ou nulle lorsque les images sont positives ou nulles.\\
+        Graphiquement, les images sont positives ou nulles  lorsque la courbe se situe sur ou au-dessus  de l'axe des abscisses, soit sur l'intervalle  
+        ${\color[HTML]{f15929}\boldsymbol{[0\,;\,3]}}$
+        
+\end{enumerate}
+
+
+\end{seanceD}
+}{}
+
+% CORRECTION SÉANCE 25
+\newpage \begin{seance}{} %25
+
+\begin{enumerate}
+\item $x-\dfrac{x}{5}=\dfrac{x\times 5}{5}-\dfrac{x}{5}=\dfrac{5x}{5}-\dfrac{x}{5}=\dfrac{5x-x}{5}=\dfrac{4x}{5}=$ ${\color[HTML]{f15929}\boldsymbol{\dfrac{4}{5}x}}$
+
+\item On utilise l'égalité remarquable ${\color{red} a}^2-{\color{blue} b}^2=({\color{red} a}-{\color{blue} b})({\color{red} a}+{\color{blue} b})$ avec $a={\color{red} x}$  et $b={\color{blue} \sqrt{7}}$.\\$\begin{aligned}
+         x^2-7&=\underbrace{{\color{red} x}^2-({\color{blue} \sqrt{7}})^2}_{a^2-b^2}\\
+         &=\underbrace{({\color{red} x}-{\color{blue} \sqrt{7}})({\color{red} x}+{\color{blue} \sqrt{7}})}_{(a-b)(a+b)}
+         \end{aligned}$ 
+
+\item  Diminuer de $22\,\%$ revient à multiplier par $\dfrac{78}{100}$.\\
+Si $V_I$ est le prix initial, on a : $V_I \times \dfrac{78}{100}=132$.\\
+Ainsi, le prix initial est donné par : ${\color[HTML]{f15929}\boldsymbol{132 \times \dfrac{100}{78}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{f15929}A}.
+
+\item $3\,000$ $\text{ m}$ $= 3$ $\text{km}$\\
+L'aire du carré est : $3 \text{ km}\times 3 \text{ km} = {\color[HTML]{f15929}\boldsymbol{9\text{ km}^2}}$ .
+
+\item  On a $4=2^{2}$ donc :\\
+    $
+    \text{Le double de  } 4^{50}  = 2 \times 4^{50} 
+     = 2\times  \left(2^{2}\right)^{50} 
+    =2\times  2^{100} 
+    ={\color[HTML]{f15929}\boldsymbol{2^{101}}} 
+$
+
+\item $\dfrac{x-4}{x+12} \leqslant 0$\\
+\medskip
+
+$\bullet$ On commence par chercher les éventuelles valeurs interdites :\\$x +12 = 0$ \\$x +12 {\color[HTML]{f15929}\boldsymbol{-12}} = {\color[HTML]{f15929}\boldsymbol{-12}}$\\$x = -12$\\Le quotient est défini sur $\mathbb{R} \smallsetminus \{-12\}$.\\$\bullet$ On résout l'inéquation sur $\mathbb{R} \smallsetminus \{-12\}$.\\$x -4 > 0$ si et seulement si $x > 4$.\\$x+12 > 0$ si et seulement si $x > -12$.\\On peut donc en déduire le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 2, $x-4$ / 2, $x+12$ / 2, $\dfrac{x-4}{x+12}$ / 4}{ $-\infty$, $-12$, $4$, $+\infty$}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , +, d, -, z, +}
+	\end{tikzpicture}
+\\ L'ensemble de solutions de l'inéquation est $S = \left] -12 ; 4 \right] $.
+
+
+\end{enumerate}
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 25
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %25
+
+\begin{enumerate}
+\item $\dfrac{5}{8}x+2x=\dfrac{5}{8}x+\dfrac{2\times8}{8}x=\dfrac{5}{8}x+\dfrac{16}{8}x=\dfrac{5+16}{8}x=$ ${\color[HTML]{f15929}\boldsymbol{\dfrac{21}{8}x}}$
+
+\item On utilise l'égalité remarquable ${\color{red} a}^2-{\color{blue} b}^2=({\color{red} a}-{\color{blue} b})({\color{red} a}+{\color{blue} b})$ avec $a={\color{red} 4(3x+5)}$ et $b={\color{blue} 3(8x-1))}$.\\
+  $\begin{aligned}16(3x+5)^2-9(8x-1)^2
+  &=\underbrace{({\color{red} 4(3x+5)})^2-({\color{blue} 3(8x-1)})^2}_{a^2-b^2}\\
+  &=\underbrace{[({\color{red} 4(3x+5)})-({\color{blue} 3(8x-1)})][({\color{red} 4(3x+5)})+({\color{blue} 3(8x-1)})]}_{(a-b)(a+b)}\\
+  &= (12x+20-24x+3)(12x+20+24x-3)\\ &={\color[HTML]{f15929}\boldsymbol{(-12x+23)(36x+17)}}\end{aligned}$
+
+\item Diminuer de $34\,\%$ revient à multiplier par $1 - 0{,}34$ (coefficient multiplicateur).\\
+Si $V_I$ est le prix initial, on a : $ V_I \times \left(1 - 0{,}34\right)=160$.\\
+Ainsi, le prix initial est donné par : ${\color[HTML]{f15929}\boldsymbol{\dfrac{160}{1 - 0{,}34}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{f15929}A}.
+
+\item  $9$ $\text{ m}$ $= 0{,}9$ $\text{dam}$\\
+L'aire du carré est : $0{,}9 \text{ dam}\times 0{,}9 \text{ dam} = {\color[HTML]{f15929}\boldsymbol{0{,}81\text{ dam}^2}}$.
+
+\item On a $9=3^{2}$ donc :\\
+    $
+    \text{Le triple de  } 9^{50}  = 3 \times 9^{50} 
+     = 3\times  \left(3^{2}\right)^{50} 
+    =3\times  3^{100} 
+    ={\color[HTML]{f15929}\boldsymbol{3^{101}}} 
+$
+   
+\item $\dfrac{x-12}{x+1} > 0$\\$\bullet$ On commence par chercher les éventuelles valeurs interdites :\\$x +1 = 0$ \\$x +1 {\color[HTML]{f15929}\boldsymbol{-1}} = {\color[HTML]{f15929}\boldsymbol{-1}}$\\$x = -1$\\Le quotient est défini sur $\mathbb{R} \smallsetminus \{-1\}$.\\$\bullet$ On résout l'inéquation sur $\mathbb{R} \smallsetminus \{-1\}$.\\$x -12 > 0$ si et seulement si $x > 12$.\\$x+1 > 0$ si et seulement si $x > -1$.\\On peut donc en déduire le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 2, $x-12$ / 2, $x+1$ / 2, $\dfrac{x-12}{x+1}$ / 4}{ $-\infty$, $-1$, $12$, $+\infty$}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , +, d, -, z, +}
+	\end{tikzpicture}
+\\ L'ensemble de solutions de l'inéquation est $S = \left] -\infty ; -1 \right[ \cup \left] 12; +\infty \right[ $.
+\end{enumerate}
+\end{seanceD}
+}{}
+
+
+% CORRECTION SÉANCE 26
+\newpage \begin{seance}{} %26
+
+\begin{enumerate}
+\item $20 \times 2+6=40+6={\color[HTML]{f15929}\boldsymbol{46}}$
+	\item $2-2\,026=2+(-2\,026)={\color[HTML]{f15929}\boldsymbol{-2\,024}}$
+	\item Le nombre cherché vérifie  l'égalité : 
+       $\ldots -1=2\,028$ .\\
+       On cherche donc le nombre qui, diminué de $1$, est égal à   $2\,028$. \\
+       Ce nombre est ${\color[HTML]{f15929}\boldsymbol{2\,029}}$. \\
+       On a bien : ${\color[HTML]{f15929}\boldsymbol{2\,029}} -1=2\,026+2 $.
+	\item Entre $2\,026$ et $2\,027$, il y a un écart de $1$ et il y a $5$ intervalles.\\
+       $1 \div 5 = 0,2$\\
+            Une graduation correspond donc à $0,2$ unité. \\$2$ graduations correspondent donc à ${\color[HTML]{f15929}\boldsymbol{0{,}4}}$ unité car $2\times 0,2 = {\color[HTML]{f15929}\boldsymbol{0{,}4}}$. \\Ainsi, pour obtenir l'abscisse du point $A$, il faut ajouter ${\color[HTML]{f15929}\boldsymbol{0{,}4}}$.
+	\item $2\,026 + 20 -  6=2\,046 -  6={\color[HTML]{f15929}\boldsymbol{2\,040}}$
+	\item $2\,026$ a pour chiffre des unités $6$ qui est pair. \\
+      Donc $2\,026$ est un multiple de $2$.
+	\item On ajoute $14$ minutes à chaque fois, donc l'heure qui suit est ${\color[HTML]{f15929}\boldsymbol{21\,\text{h}\,08\,\text{min}}}$.
+	\item On utilise la propriété $\sqrt{a}\times \sqrt{a} =a$ valable pour $a$ positif.\\
+        Ainsi, $\sqrt{2\,026}\times{\color[HTML]{f15929}\boldsymbol{\sqrt{2\,026}}}=2\,026$
+	\item Comme $5\times 405 =2\,025 < 2\,026$ et
+  $ 5\times406=2\,030 > 2\,026$,
+  alors le plus grand multiple cherché est ${\color[HTML]{f15929}\boldsymbol{2\,025}}$.
+	\item $2{,}026$ est $1\,000$ fois plus petit que $2\,026$.\\
+        Comme $\dfrac{1}{1\,000}=0{,}001=10^{-3}$, 
+        alors l'égalité est : $2\,026 \times 10^{{\color[HTML]{f15929}\boldsymbol{-3}}} =2{,}026$.
+	\item $\dfrac{2\,000}{10}+\dfrac{26}{100}=200+0{,}26={\color[HTML]{f15929}\boldsymbol{200{,}26}}$\\
+	\item $\dfrac{2\,026}{-1}=-\dfrac{2\,026}{1}={\color[HTML]{f15929}\boldsymbol{-2\,026}}$
+	\item Le triangle est isocèle, il possède donc deux longueurs égales.\\
+            Puisque le périmètre est  $4\,226\text{ cm}$, on obtient la somme des deux longueurs égales  du triangle en effectuant la différence $4\,226-2\,026=2\,200\text{ cm}$.\\
+            On obtient la longueur cherchée en divisant par $2$, soit $2\,200\div 2={\color[HTML]{f15929}\boldsymbol{1\,100}}\text{ cm}$.
+	\item $4 \times 2{,}026\times 25=100 \times 2{,}026={\color[HTML]{f15929}\boldsymbol{202{,}6}}$
+	\item $2\,026x -6x= (2\,026 -6)x={\color[HTML]{f15929}\boldsymbol{2\,020x}}$ 
+	\item Le premier crochet  étant ouvert, c'est ${\color[HTML]{f15929}\boldsymbol{-2\,025}}$.
+	\item  Jusqu'au $29$ décembre minuit, il y a $23$ heures.  \\
+        Du $30$ (0 h) au $31$ décembre (minuit), il y a $2$ jours, soit $48$ heures car $2\times 24 = 48$. \\
+        Il faudra donc attendre $48+23$ heures, soit ${\color[HTML]{f15929}\boldsymbol{71}}$ heures avant de se souhaiter la bonne année.
+       
+	\item  $\sqrt{2\,026}\times \sqrt{2\,026}=2\,026$.\\
+            Le nombre est donc ${\color[HTML]{f15929}\boldsymbol{\sqrt{2\,026}}}$.
+            \end{enumerate}
+            \end{seance}
+            
+             \newpage    
+      \setcounter{seancenum}{26}  
+            \begin{seance}{} %26
+            \begin{enumerate}[start=19]
+	\item $\dfrac{1}{R}=1-\dfrac{2}{2\,026} = \dfrac{1 \times 2\,026}{2\,026} - \dfrac{2}{2\,026} = \dfrac{2\,026}{2\,026} - \dfrac{2}{2\,026}  =\dfrac{2\,024}{2\,026}$. Ainsi, $R={\color[HTML]{f15929}\boldsymbol{\dfrac{2\,026}{2\,024}}}$.
+	\item  $\dfrac{2}{2\,026} +\dfrac{1}{4\,052}=\dfrac{4}{4\,052} +\dfrac{1}{4\,052}={\color[HTML]{f15929}\boldsymbol{\dfrac{5}{4\,052}}}$
+	\item  On utilise le théorème de Pythagore dans le triangle $ABC$,  rectangle en $B$.\\
+              On obtient :\\
+              $\begin{aligned}
+                AC^2&=BC^2+AB^2\\
+                AB^2&=AC^2-BC^2\\
+                AB^2&=(\sqrt{2\,026})^2-6^2\\
+                AB^2&=2\,026-36\\
+                AB^2&=1\,990\\
+                AB&= {\color[HTML]{f15929}\boldsymbol{\sqrt{1\,990}}}\\
+                \end{aligned}$ 
+	\item Pour obtenir $2\,026$, on a ajouté $1\,700$ à $326$. Ensuite, le nombre qui, multiplié par $100$, donne $1\,700$ est $17$.\\
+    Le nombre choisi au départ est donc ${\color[HTML]{f15929}\boldsymbol{17}}$.
+	\item Une fonction linéaire est une fonction de la forme $f(x)=ax$.\\
+    Comme $f(2\,026)=-4\,052$, on a $-4\,052=a\times 2\,026$, soit $a=-2$.\\
+    On obtient donc : $f(x)={\color[HTML]{f15929}\boldsymbol{-2x}}$.
+	\item La somme de $a$ et $2\,026$ en fonction de $a$ est donnée par ${\color[HTML]{f15929}\boldsymbol{2\,026+a}}$
+	\item On obtient l'antécédent de $2026$ en résolvant l'équation $f(x)=2026$.\\
+      $\begin{aligned}
+      -3x+2\,023&=2\,026\\
+      -3x&=3\\
+      x&={\color[HTML]{f15929}\boldsymbol{-1}}
+      \end{aligned}$
+	\item $f(-5)=(-5)^2+2\,026 =25+2\,026 ={\color[HTML]{f15929}\boldsymbol{2\,051}}$
+	\item On procède par étapes successives.\\
+        On commence par isoler $-3x$ dans le membre de gauche en ajoutant
+        $-1\,999$ dans chacun des membres, puis on divise
+        par $-3$ pour obtenir la solution : \\
+        $\begin{aligned}
+        -3x+1\,999&=2\,026\\
+       -3x&=2\,026-1\,999\\
+       -3x&=27\\
+       x&=\dfrac{27}{-3}\\
+       x&=-9
+       \end{aligned}$\\
+       La solution de l'équation $-3x+1\,999=2\,026$ est ${\color[HTML]{f15929}\boldsymbol{-9}}$.
+       
+	\item  Si $n$ est pair, $(-1)^n=1$ et si $n$ est impair, $(-1)^n=-1$. \\
+        Ainsi, $(-1)^{2\,026}+(-1)^{2\,025}=1+(-1)={\color[HTML]{f15929}\boldsymbol{0}}$.
+	\item $f({\color[HTML]{f15929}\boldsymbol{2\,025}}) ={\color[HTML]{f15929}\boldsymbol{2\,026}}$
+	\item Pour remplir $20$ bouteilles d'huile d'olive, Stéphane utilise $100$ kg d'olives.\\ Cela signifie que pour remplir $1$ bouteille d'huile, il utilise $5$ kg d'olives car $100 \div  20 = 5$.\\On a :\\ 
+      $\begin{aligned}
+      2\,026&=2\,000+26\\
+      &=400\times 5+5\times 5+1\\
+      &=405\times 5+1
+      \end{aligned}$\\
+      Il peut remplir ${\color[HTML]{f15929}\boldsymbol{405}}$ bouteilles d'huile d'olive.
+\end{enumerate}
+\end{seance}
+
+% CORRECTION DEVOIRS SÉANCE 26
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %26
+
+Bonnes vacances
+\end{seanceD}
+}{}
+
+
+\newpage
+% CORRECTION SÉANCE 27
+\begin{seance}{} %27
+
+\begin{enumerate}
+\item On met l'expression au même dénominateur : \\$\begin{aligned}
+        \dfrac{1}{6}-\dfrac{3x+5}{x}&=\dfrac{x-6\times \left(3x+5\right)}{6x}\\
+        &=\dfrac{x -18x -30}{6x}\\
+        &=\dfrac{-17x -30}{6x}\\
+     \end{aligned}$\\$\phantom{\dfrac{1}{6}-\dfrac{3x+5}{x}}=-\dfrac{17x +30}{6x}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On applique la propriété du quotient des puissances d'un réel : \\
+      Soit $n$ et $p$ deux entiers et $a$ un réel :  $\dfrac{a^n}{a^p}=a^{n-p}$\\
+      $\begin{aligned} \dfrac{a^{n}}{a^{n^{2}}}&=a^{n-n^{2}}\\
+      &=a^{-n(-1+n^{})}\\
+      &={\color[HTML]{F15929}\boldsymbol{a^{-n(n^{}-1)}}}
+      \end{aligned}$
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On reconnaît une différence de deux carrés $A^2-B^2$ avec $A=6x+7$ et $B=3x+5$, qui se factorise en $(A-B)(A+B)$ .\\
+    $\begin{aligned}
+    \left(6x+7\right)^2-\left(3x+5\right)^2&=\left[\left(6x+7\right)-\left(3x+5\right)\right]\left[\left(6x+7\right)+\left(3x+5\right)\right]\\
+    &={\color[HTML]{F15929}\boldsymbol{\left(3x+2\right)\left(9x+12\right)}}\\
+    &=27x^{2}+54x+24.
+    \end{aligned}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On a :\\
+          $\begin{aligned}
+          f(-3)&=1- 2\times (-3)^2\\
+          &={\color[HTML]{F15929}\boldsymbol{-17}}
+          \end{aligned}$\\{\color[HTML]{216D9A} Mentalement : \\
+    On commence par "calculer" le carré de $-3$ :  $(-3)^2=9$.\\
+    Puis on multiplie le résultat par $2$ : $2\times 9=18$.\\
+    On calcule alors : $1-18=-17$.}\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item La droite $(D)$ est strictement au-dessus de la droite $(D')$ lorsque $6x-8>-3x+3$.\\
+     $\begin{aligned}
+     6x-8&>-3x+3\\
+     9x&>11\\
+     x&>\dfrac{11}{9}
+     \end{aligned}$\\
+     La droite $(D)$ est donc strictement au-dessus de la droite $(D')$ sur : 
+     ${\color[HTML]{F15929}\boldsymbol{\left]\dfrac{11}{9}\,;\, +\infty\right[}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item On note $A$ l'événement \og{} obtenir au moins un Pile \fg{} et $B$ l'événement \og{} n'obtenir aucun Pile \fg{}.\\
+Les événements $A$ et $B$ sont contraires.\\
+Donc : $P(A) = 1 - P(B)$.\\
+$P(A) = 1 - 0{,}027 = 0{,}973$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 27
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %27
+
+\begin{enumerate}
+\item On met l'expression au même dénominateur : \\$\begin{aligned}
+        \dfrac{1}{2}-\dfrac{2x+5}{x}&=\dfrac{x-2\times \left(2x+5\right)}{2x}\\
+        &=\dfrac{x -4x -10}{2x}\\
+        &=\dfrac{-3x -10}{2x}\\
+     \end{aligned}$\\$\phantom{\dfrac{1}{2}-\dfrac{2x+5}{x}}=-\dfrac{3x +10}{2x}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item On applique la propriété du quotient des puissances d'un réel : \\
+      Soit $n$ et $p$ deux entiers et $a$ un réel :  $\dfrac{a^n}{a^p}=a^{n-p}$\\
+      $\begin{aligned} \dfrac{a^{n}}{a^{n^{5}}}&=a^{n-n^{5}}\\
+      &=a^{-n(-1+n^{4})}\\
+      &={\color[HTML]{F15929}\boldsymbol{a^{-n(n^{4}-1)}}}
+      \end{aligned}$
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On reconnaît une différence de deux carrés $A^2-B^2$ avec $A=7x+4$ et $B=5x-1$, qui se factorise en $(A-B)(A+B)$ .\\
+    $\begin{aligned}
+    \left(7x+4\right)^2-\left(5x-1\right)^2&=\left[\left(7x+4\right)-\left(5x-1\right)\right]\left[\left(7x+4\right)+\left(5x-1\right)\right]\\
+    &=\left(2x+5\right)\left(12x+3\right)\\
+    &={\color[HTML]{F15929}\boldsymbol{24x^{2}+66x+15}}.
+    \end{aligned}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item On a :\\
+          $\begin{aligned}
+          f(-5)&=3- 2\times (-5)^2\\
+          &={\color[HTML]{F15929}\boldsymbol{-47}}
+          \end{aligned}$\\{\color[HTML]{216D9A} Mentalement : \\
+    On commence par "calculer" le carré de $-5$ :  $(-5)^2=25$.\\
+    Puis on multiplie le résultat par $2$ : $2\times 25=50$.\\
+    On calcule alors : $3-50=-47$.}\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item La droite $(D)$ est strictement au-dessus de la droite $(D')$ lorsque $5x+5>8x+1$.\\
+     $\begin{aligned}
+     5x+5&>8x+1\\
+     -3x&>-4\\
+     x&<\dfrac{4}{3}
+     \end{aligned}$\\
+     La droite $(D)$ est donc strictement au-dessus de la droite $(D')$ sur : 
+     ${\color[HTML]{F15929}\boldsymbol{\left]-\infty\,;\,\dfrac{4}{3}\right[}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item On note $A$ l'événement \og{} réussir au moins une fois un tir \fg{} et $B$ l'événement \og{} rater tous les tirs \fg{}.\\
+Les événements $A$ et $B$ sont contraires.\\
+Donc : $P(B) = 1 - P(A)$.\\
+$P(B) = 1 - 0{,}992 = 0{,}008$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+\newpage
+% CORRECTION SÉANCE 28
+\begin{seance}{} %28
+
+\begin{enumerate}
+\item La série triée par ordre croissant est : $7  ;  12  ;  20  ;  23  ;  25  ;  28$.\\La série contient $6$ valeurs.\\
+      Pour trouver le rang de $Q_3$, on calcule les trois quarts de $6$ qui vaut
+       $\dfrac{3\times6}{4}=4{,}5$.\\On arrondit à l'entier supérieur qui vaut $5$ .\\ Le troisième quartile est donc la valeur de rang $5$ de la série classée : $Q_3=25$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}E}.
+
+\item La somme des probabilités doit être égale à 1.  \\Comme $0{,}3=\dfrac{3}{10}$, on a : \\
+        $\begin{aligned}
+        x&=1-\left(\dfrac{1}{6}+\dfrac{3}{10}+\dfrac{1}{5}\right)\\
+        x&=1-\left(\dfrac{5}{30}+\dfrac{9}{30}+\dfrac{6}{30}\right)\\
+        x&=1-\dfrac{2}{3}\\
+        x&={\color[HTML]{F15929}\boldsymbol{\dfrac{1}{3}}}
+        \end{aligned}$ 
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On reconnaît la droite grâce à son ordonnée à l'origine ($-9<0$) et son coefficient directeur ($4>0$).\\
+    Il s'agit de la droite coupant l'axe des ordonnées en-dessous de l'axe des abscisses et qui monte.\\
+    Il s'agit de la droite ${\color[HTML]{F15929}\boldsymbol{D_4}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item À partir des évolutions en pourcentage, on déduit les coefficients multiplicateurs : \\On note $CM_1 = 1 + \dfrac{50}{100}=1{,}5$ et  $CM_2 = 1 - \dfrac{40}{100}=0{,}6$.\\ Le coefficient multiplicateur global est : \\ $CM = CM_1 \times CM_2 = 1{,}5 \times 0{,}6 = 0{,}9$ \\Or, multiplier par $0{,}9$ revient à avoir {\bfseries \color[HTML]{F15929}une} {\bfseries \color[HTML]{F15929}réduction} {\bfseries \color[HTML]{F15929}de} ${\color[HTML]{F15929}\boldsymbol{10\,\%}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}A}.
+
+\item L'équation $-8x^2+4x-1=-1$ s'écrit $-8x^2+4x=0$.\\
+          En factorisant le premier membre (facteur commun $x$), on obtient $x(-8x+4)=0$.\\
+          On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{-4}{-8}=\dfrac{1{\color[HTML]{2563a5}\boldsymbol{\times4}} }{2{\color[HTML]{2563a5}\boldsymbol{\times4}}}=\dfrac{1}{2}$.\\
+          $\mathscr{S}={\color[HTML]{F15929}\boldsymbol{\{0;\dfrac{1}{2}\}}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item De la relation $8z-7c=5$, on déduit en ajoutant $-8z$ dans chaque membre :
+          $-7c=5-8z$\\ Puis, en divisant par $-7$, on obtient : $c=\dfrac{5-8z}{-7}$ que l'on peut écrire également : ${\color[HTML]{F15929}\boldsymbol{ c=\dfrac{-5+8z}{7}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 28
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %28
+
+\begin{enumerate}
+\item La série triée par ordre croissant est : $2  ;  6  ;  7  ;  10  ;  16  ;  30$.\\La série contient $6$ valeurs.\\
+      Pour trouver le rang de $Q_3$, on calcule les trois quarts de $6$ qui vaut
+       $\dfrac{3\times6}{4}=4{,}5$.\\On arrondit à l'entier supérieur qui vaut $5$ .\\ Le troisième quartile est donc la valeur de rang $5$ de la série classée : $Q_3=16$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}E}.
+
+\item La somme des probabilités doit être égale à 1.  \\Comme $0{,}3=\dfrac{3}{10}$, on a : \\
+        $\begin{aligned}
+        x&=1-\left(\dfrac{1}{6}+\dfrac{3}{10}+\dfrac{1}{5}\right)\\
+        x&=1-\left(\dfrac{5}{30}+\dfrac{9}{30}+\dfrac{6}{30}\right)\\
+        x&=1-\dfrac{2}{3}\\
+        x&={\color[HTML]{F15929}\boldsymbol{\dfrac{1}{3}}}
+        \end{aligned}$ 
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On reconnaît la droite grâce à son ordonnée à l'origine ($-1<0$) et son coefficient directeur ($1>0$).\\
+    Il s'agit de la droite coupant l'axe des ordonnées en-dessous de l'axe des abscisses et qui monte.\\
+    Il s'agit de la droite ${\color[HTML]{F15929}\boldsymbol{D_2}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item À partir des évolutions en pourcentage, on déduit les coefficients multiplicateurs : \\On note $CM_1 = 1 + \dfrac{10}{100}=1{,}1$ et $CM_2 = 1 + \dfrac{40}{100}=1{,}4$.\\ Le coefficient multiplicateur global est : \\ $CM = CM_1 \times CM_2 = 1{,}1 \times 1{,}4 = 1{,}54$ \\Or, multiplier par $1{,}54$ revient à avoir {\bfseries \color[HTML]{F15929}une} {\bfseries \color[HTML]{F15929}augmentation} {\bfseries \color[HTML]{F15929}de} ${\color[HTML]{F15929}\boldsymbol{54\,\%}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}A}.
+
+\item L'équation $-9x^2-8x+1=1$ s'écrit $-9x^2-8x=0$.\\
+          En factorisant le premier membre (facteur commun $x$), on obtient $x(-9x-8)=0$.\\
+          On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{8}{-9}=-\dfrac{8}{9}$.\\
+          $\mathscr{S}={\color[HTML]{F15929}\boldsymbol{\{0;-\dfrac{8}{9}\}}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item De la relation $-7x-6c=2$, on déduit en ajoutant $7x$ dans chaque membre :
+          $-6c=2+7x$\\ Puis, en divisant par $-6$, on obtient : $c=\dfrac{2+7x}{-6}$ que l'on peut écrire également : ${\color[HTML]{F15929}\boldsymbol{ c=\dfrac{-2-7x}{6}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}A}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+\newpage
+% CORRECTION SÉANCE 29
+\begin{seance}{} %29
+
+\begin{enumerate}
+\item L'ordonnée de ce point est $0$ puisque le point d'intersection se situe sur l'axe des abscisses.\\
+      Son abscisse est donc donnée par la solution de l'équation  $3x+6=0$, c'est-à-dire $x=-2$.
+    \\Les coordonnées de ce   point sont donc : $({\color[HTML]{F15929}\boldsymbol{-2\,;\,0}})$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item On commence par déterminer l'équation réduite de la droite $(D)$.\\
+    Son coefficient directeur est $-\dfrac{1}{5}$ et son ordonnée à l'origine est $1$.\\
+    L'équation réduite de $(D)$ est : $y=-\dfrac{1}{5}x+1$.\\
+    L'ordonnée du point de $(D)$ d'abscisse $60$ est donnée par : $y=-\dfrac{1}{5}\times 60+1$, ce qui donne\\
+    $y=\dfrac{-60}{5}+1=-12+1=-11$.\\
+    L'ordonnée du point de $(D)$ d'abscisse $60$ est $-11$.\\On a $-14<-11$, donc {\bfseries \color[HTML]{F15929}le point $A$ est situé en dessous de la droite $(D)$}.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Pour vérifier si un point $(x\,;\,y)$ appartient à la courbe d'équation $y=\dfrac{3}{x}$, on vérifie si les coordonnées satisfont l'équation.\\$\bullet$ Pour le point $Q$ :\\On calcule $\dfrac{3}{\dfrac{6}{5}}=3\times \dfrac{5}{6}=\dfrac{5}{2}$.\\On a $y_{Q}=\dfrac{18}{5}\neq \dfrac{5}{2}$ donc {\bfseries \color[HTML]{F15929}$Q$ n'appartient pas à la courbe}.\\$\bullet$ Pour le point $W$ :\\On calcule $\dfrac{3}{\dfrac{4}{5}}=3\times \dfrac{5}{4}=\dfrac{15}{4}$.\\On a $y_{W}=\dfrac{15}{4}$ donc $W$ appartient à la courbe.\\$\bullet$ Pour le point $X$ :\\On calcule $\dfrac{3}{\dfrac{2}{3}}=3\times \dfrac{3}{2}=\dfrac{9}{2}$.\\On a $y_{X}=\dfrac{9}{2}$ donc $X$ appartient à la courbe.\\$\bullet$ Pour le point $V$ :\\On calcule $\dfrac{3}{\dfrac{12}{7}}=3\times \dfrac{7}{12}=\dfrac{7}{4}$.\\On a $y_{V}=\dfrac{7}{4}$ donc $V$ appartient à la courbe.
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item L'équation est de la forme $X^2=k$ avec $X=(x+3)$ et $k=10$.\\
+        Comme $k>0$, les solutions de $(x+3)^2=10$ sont données par les solutions de chacune des équations :         $x+3=-\sqrt{10}$ et $x+3=\sqrt{10}$.\\
+        $x+3=-\sqrt{10}$ a pour solution $-\sqrt{10}-3$ et 
+        $x+3=\sqrt{10}$ a pour solution $\sqrt{10}-3$.\\
+        Ainsi, l'ensemble des solutions de l'équation est $S={\color[HTML]{F15929}\boldsymbol{\{-\sqrt{10}-3\,;\,\sqrt{10}-3\}}}$.
+         \\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Dans une $1$ heure, il y a $5\times 12$ minutes.\\
+      Ainsi, en $1$ heure, elle parcourt $12$ fois plus de distance, soit $0{,}5\times 12=6\text{ km}$.\\
+      Sa vitesse moyenne est donc ${\color[HTML]{F15929}\boldsymbol{6}}\text{ km/h}$. \\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}A}.
+
+\item La distance Paris-Lyon est d'environ $465$ ${\color[HTML]{F15929}\boldsymbol{\textbf{km}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 29
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %29
+
+\begin{enumerate}
+\item L'ordonnée de ce point est $0$ puisque le point d'intersection se situe sur l'axe des abscisses.\\
+      Son abscisse est donc donnée par la solution de l'équation  $\dfrac{x}{2}-10=0$, c'est-à-dire $x=20$.
+    \\Les coordonnées de ce   point sont donc : $({\color[HTML]{F15929}\boldsymbol{20\,;\,0}})$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item On commence par déterminer l'équation réduite de la droite $(D)$.\\
+    Son coefficient directeur est $-\dfrac{2}{3}$ et son ordonnée à l'origine est $1$.\\
+    L'équation réduite de $(D)$ est : $y=-\dfrac{2}{3}x+1$.\\
+    L'ordonnée du point de $(D)$ d'abscisse $36$ est donnée par : $y=-\dfrac{2}{3}\times 36+1$, ce qui donne\\
+    $y=\dfrac{-72}{3}+1=-24+1=-23$.\\
+    L'ordonnée du point de $(D)$ d'abscisse $36$ est $-23$.\\On a $-20>-23$, donc {\bfseries \color[HTML]{F15929}le point $A$ est situé au-dessus de la droite $(D)$}.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Pour vérifier si un point $(x\,;\,y)$ appartient à la courbe d'équation $y=\dfrac{4}{x}$, on vérifie si les coordonnées satisfont l'équation.\\$\bullet$ Pour le point $S$ :\\On calcule $\dfrac{4}{2}=2$.\\On a $y_{S}=3\neq 2$ donc {\bfseries \color[HTML]{F15929}$S$ n'appartient pas à la courbe}.\\$\bullet$ Pour le point $Z$ :\\On calcule $\dfrac{4}{4}=1$.\\On a $y_{Z}=1$ donc $Z$ appartient à la courbe.\\$\bullet$ Pour le point $Y$ :\\On calcule $\dfrac{4}{2}=2$.\\On a $y_{Y}=2$ donc $Y$ appartient à la courbe.\\$\bullet$ Pour le point $W$ :\\On calcule $\dfrac{4}{\dfrac{6}{5}}=4\times \dfrac{5}{6}=\dfrac{10}{3}$.\\On a $y_{W}=\dfrac{10}{3}$ donc $W$ appartient à la courbe.
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item L'équation est de la forme $X^2=k$ avec $X=(x+4)$ et $k=5$.\\
+        Comme $k>0$, les solutions de $(x+4)^2=5$ sont données par les solutions de chacune des équations :         $x+4=-\sqrt{5}$ et $x+4=\sqrt{5}$.\\
+        $x+4=-\sqrt{5}$ a pour solution $-\sqrt{5}-4$ et 
+        $x+4=\sqrt{5}$ a pour solution $\sqrt{5}-4$.\\
+        Ainsi, l'ensemble des solutions de l'équation est $S={\color[HTML]{F15929}\boldsymbol{\{-\sqrt{5}-4\,;\,\sqrt{5}-4\}}}$.
+         \\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Dans une $1$ heure, il y a $4\times 15$ minutes.\\
+    Ainsi, en $1$ heure, elle parcourt $15$ fois plus de distance, soit $0{,}4\times 15=6\text{ km}$.\\
+    Sa vitesse moyenne est donc ${\color[HTML]{F15929}\boldsymbol{6}}\text{ km/h}$. \\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Un verre de jus d'orange contient environ $25$ ${\color[HTML]{F15929}\boldsymbol{\textbf{cL}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+\newpage
+% CORRECTION SÉANCE 30
+\begin{seance}{} %30
+
+\begin{enumerate}
+\item $\dfrac{x}{3}-2x=\dfrac{x}{3}-\dfrac{2x\times 3}{3}=\dfrac{x}{3}-\dfrac{6x}{3}=\dfrac{x-6x}{3}=\dfrac{-5x}{3}=$ ${\color[HTML]{F15929}\boldsymbol{\dfrac{-5}{3}x}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On supprime les parenthèses en changeant les signes dans la deuxième parenthèse (précédée du signe $-$) :\\$A= -5z+2 -8z^2-7z-5$\\On réduit :\\$A={\color[HTML]{F15929}\boldsymbol{-8z^2-12z-3}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item La fonction $g$ s'annule en $-3$ et la fonction $h$ s'annule en $1$.\\
+    Quand la droite est en-dessous de l'axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.\\
+    On en déduit le tableau de signes de leur produit :\\
+    \begin{center}
+    \begin{tikzpicture}[baseline, scale=0.5]
+    \tkzTabInit[lgt=5,deltacl=1,espcl=3]{ $x$ / 2, $g(x)$ / 2, $h(x)$ / 2, $f(x)$ / 2}{ $-\infty$, $-3$, $1$, $+\infty$}
+	\tkzTabLine{  , +, z, -, t, -}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , -, z, +, z, -}
+	\end{tikzpicture}
+    \end{center}
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item Après avoir tiré un jeton rouge, il reste $8$ jetons rouges et $8$ jetons noirs, soit $16$ jetons au total.\\La probabilité que le deuxième jeton soit noir sachant que le premier est rouge est : $\dfrac{8}{16}={\color[HTML]{F15929}\boldsymbol{\dfrac{1}{2}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item L'écart interquartile est la différence entre le troisième quartile et le premier quartile.\\
+      D'après le diagramme en boite, on a $Q_3 = 55$ et $Q_1 = 20$.\\
+      Donc l'écart interquartile est $Q_3 - Q_1 = 55 - 20 = {\color[HTML]{F15929}\boldsymbol{35}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item On observe sur le graphique que le coefficient directeur est positif ($D$ représente une fonction affine croissante) et que l'ordonnée à l'origine est strictement positive ($D$ coupe l'axe des ordonnées au-dessus de l'origine).\\On écrit les équations qui ne sont pas forme réduite, sous forme réduite :\\$\bullet\:$ $y=x^2-(x-3)^2+12$ s'écrit $y=3x+3$.\\$\bullet\:$ $y=-3x+3$ est  sous forme réduite.\\$\bullet\:$ $6x+2y-6=0$ s'écrit $y=-3x+3$.\\$\bullet\:$ $y=3x-3$ est  sous forme réduite.
+
+\medskip
+La seule équation ayant un coefficient directeur positif et une ordonnée à l'origine positive est : ${\color[HTML]{F15929}\boldsymbol{y=x^2-(x-3)^2+12}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 30
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %30
+
+\begin{enumerate}
+\item $\dfrac{x}{3}-6x=\dfrac{x}{3}-\dfrac{6x\times 3}{3}=\dfrac{x}{3}-\dfrac{18x}{3}=\dfrac{x-18x}{3}=\dfrac{-17x}{3}=$ ${\color[HTML]{F15929}\boldsymbol{\dfrac{-17}{3}x}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item On supprime les parenthèses en changeant les signes dans la deuxième parenthèse (précédée du signe $-$) :\\$A= -5b-2 +2b^2+4b-6$\\On réduit :\\$A={\color[HTML]{F15929}\boldsymbol{2b^2-b-8}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item La fonction $g$ s'annule en $-4$ et la fonction $h$ s'annule en $-3$.\\
+    Quand la droite est en-dessous de l'axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.\\
+    On en déduit le tableau de signes de leur produit :\\
+   \begin{center}
+    \begin{tikzpicture}[baseline, scale=0.5]
+    \tkzTabInit[lgt=5,deltacl=1,espcl=3]{ $x$ / 2, $g(x)$ / 2, $h(x)$ / 2, $f(x)$ / 2}{ $-\infty$, $-4$, $-3$, $+\infty$}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , +, z, -, z, +}
+	\end{tikzpicture}
+   \end{center}
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Après avoir tiré un jeton rouge, il reste $3$ jetons rouges et $3$ jetons noirs, soit $6$ jetons au total.\\La probabilité que le deuxième jeton soit noir sachant que le premier est rouge est : $\dfrac{3}{6}={\color[HTML]{F15929}\boldsymbol{\dfrac{1}{2}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item L'écart interquartile est la différence entre le troisième quartile et le premier quartile.\\
+      D'après le diagramme en boite, on a $Q_3 = 50$ et $Q_1 = 25$.\\
+      Donc l'écart interquartile est $Q_3 - Q_1 = 50 - 25 = {\color[HTML]{F15929}\boldsymbol{25}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l'ordonnée à l'origine est strictement négative ($D$ coupe l'axe des ordonnées en dessous de l'origine).\\On écrit les équations qui ne sont pas forme réduite, sous forme réduite :\\$\bullet\:$ $y=-x-2$ est  sous forme réduite.\\$\bullet\:$ $y=x-2$ est  sous forme réduite.\\$\bullet\:$ $3x-3y-6=0$ s'écrit $y=x-2$.\\$\bullet\:$ $y=x^2-(x-3)^2+7$ s'écrit $y=6x-2$.
+
+\medskip
+La seule équation ayant un coefficient directeur négatif et une ordonnée à l'origine négative est : ${\color[HTML]{F15929}\boldsymbol{y=-x-2}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+\newpage
+% CORRECTION SÉANCE 31
+\begin{seance}{} %31
+
+\begin{enumerate}
+\item La bonne réponse est ${\color[HTML]{F15929}\boldsymbol{a^2 > a}}$.\\
+En multipliant $a > 1$ par $a > 0$ : $a^2 > a$.
+
+\medskip
+
+Pour les autres propositions :\\
+$\dfrac{1}{a} > 1$ : Faux. La fonction inverse est décroissante : comme $a > 1$, on a $\dfrac{1}{a} < 1$.\\
+$a^2 < 1$ : Faux. Comme $a^2 > a > 1$, on a $a^2 > 1$.\\
+$a^2 < a$ : Faux. En multipliant $a > 1$ par $a > 0$ : $a^2 > a$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item $ N=\dfrac{10^5}{2^3}=\dfrac{2^5\times 5^5 }{2^3}=5^5\times 2^{2}=10^2\times 5^{3}={\color[HTML]{F15929}\boldsymbol{125\times 10^{2}}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item \begin{minipage}[c]{0.6\textwidth}
+Pour résoudre graphiquement cette inéquation : \\
+            $\bullet$ On trace la courbe d'équation $y=\sqrt{x}$. \\
+            $\bullet$ On trace la droite horizontale d'équation $y=3$. Cette droite coupe la courbe en $3^2=9$. \\
+            $\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent sur ou sous la droite.
+          
+
+\end{minipage} \hfill \begin{minipage}[c]{0.4\textwidth}
+            \begin{tikzpicture}[baseline,scale=0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,-1) rectangle (5,4);
+    	\draw[color={rgb,255:red,33;green,109;blue,154},line width = 2] (0,0)--(0.05,0.223607)--(0.1,0.316228)--(0.15,0.387298)--(0.2,0.447214)--(0.25,0.5)--(0.3,0.547723)--(0.35,0.591608)--(0.4,0.632456)--(0.45,0.67082)--(0.5,0.707107)--(0.55,0.74162)--(0.6,0.774597)--(0.65,0.806226)--(0.7,0.83666)--(0.75,0.866025)--(0.8,0.894427)--(0.85,0.921954)--(0.9,0.948683)--(0.95,0.974679)--(1,1)--(1.05,1.024695)--(1.1,1.048809)--(1.15,1.072381)--(1.2,1.095445)--(1.25,1.118034)--(1.3,1.140175)--(1.35,1.161895)--(1.4,1.183216)--(1.45,1.204159)--(1.5,1.224745)--(1.55,1.24499)--(1.6,1.264911)--(1.65,1.284523)--(1.7,1.30384)--(1.75,1.322876)--(1.8,1.341641)--(1.85,1.360147)--(1.9,1.378405)--(1.95,1.396424)--(2,1.414214)--(2.05,1.431782)--(2.1,1.449138)--(2.15,1.466288)--(2.2,1.48324)--(2.25,1.5)--(2.3,1.516575)--(2.35,1.532971)--(2.4,1.549193)--(2.45,1.565248)--(2.5,1.581139)--(2.55,1.596872)--(2.6,1.612452)--(2.65,1.627882)--(2.7,1.643168)--(2.75,1.658312)--(2.8,1.67332)--(2.85,1.688194)--(2.9,1.702939)--(2.95,1.717556)--(3,1.732051)--(3.05,1.746425)--(3.1,1.760682)--(3.15,1.774824)--(3.2,1.788854)--(3.25,1.802776)--(3.3,1.81659)--(3.35,1.830301)--(3.4,1.843909)--(3.45,1.857418)--(3.5,1.870829)--(3.55,1.884144)--(3.6,1.897367)--(3.65,1.910497)--(3.7,1.923538)--(3.75,1.936492)--(3.8,1.949359)--(3.85,1.962142)--(3.9,1.974842)--(3.95,1.987461)--(4,2)--(4.05,2.012461)--(4.1,2.024846)--(4.15,2.037155)--(4.2,2.04939)--(4.25,2.061553)--(4.3,2.073644)--(4.35,2.085665)--(4.4,2.097618)--(4.45,2.109502)--(4.5,2.12132)--(4.55,2.133073)--(4.6,2.144761)--(4.65,2.156386)--(4.7,2.167948)--(4.75,2.179449)--(4.8,2.19089)--(4.85,2.202272)--(4.9,2.213594)--(4.95,2.22486)--(5,2.236068);
+	\draw[color={green},line width = 2] (-50,1.5)--(51,1.5);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (-1,0)--(5,0);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (0,-1)--(0,4);
+	\draw[color ={black},line width = 1.2] (0,-0.13)--(0,0.13);
+	\draw[color ={black},line width = 1.2] (-0.13,0)--(0.13,0);
+	\draw[opacity=1] (-0.2,-0.3) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{O}$};
+	\draw[color ={black},line width = 2, dashed ] (2.25,1.5)--(2.25,0);
+	\draw[color ={red},line width = 2] (0,0)--(2.25,0);
+	\draw[very thick,color={red}] (0.2,0.2)--(0,0.2)--(0,-0.2)--(0.2,-0.2);
+	\draw[color={red}] (0,-0.2) node[below] {$$};
+	\draw[very thick,color={red}] (2.05,0.2)--(2.25,0.2)--(2.25,-0.2)--(2.05,-0.2);
+	\draw[color={red}] (2.25,-0.2) node[below] {$$};
+	\draw[opacity=1] (4,1.2) node[anchor = center, rotate=0] {\scriptsize \color{green}$y=3$};
+	\draw[opacity=1] (3,2.3) node[anchor = center, rotate=0] {\scriptsize \color[HTML]{216D9A}$y=\sqrt{x}$};
+	\draw[opacity=1] (2.25,-0.6) node[anchor = center, rotate=0] {\scriptsize \color{black}$9$};
+
+\end{tikzpicture}
+\end{minipage} 
+            Comme la fonction racine carrée est définie sur $[0\,;\,+\infty[$, l'ensemble des solutions de l'inéquation $(I)$ est : {\bfseries \color[HTML]{F15929}$S = [0\,;\,9]$}.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item L'équation $x-4=0$ a pour solution $x=4$.\\
+  L'équation $8x-56=0$ a pour solution $x=7$.\\
+  Le tableau de signe du produit $(x-4)(8x-56)$ est : \\
+  \begin{tikzpicture}[baseline, scale=0.3]
+    \tkzTabInit[lgt=8,deltacl=1,espcl=3]{ $x$ / 2, $x-4$ / 2, $8x-56$ / 2, $(x-4)(8x-56)$ / 2}{ $-\infty$, $4$, $7$, $+\infty$}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , +, z, -, z, +}
+	\end{tikzpicture}
+
+
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item $\bullet$ {\bfseries \color[HTML]{F15929}La somme des solutions de l'équation $f(x)=0$ est égal à $-8$.}\\  Cette affirmation est correcte : \\L'équation $f(x)=0$ a deux solutions : $-5$ et $-3$.\\
+          La somme de ces solutions est $-5+ (-3)= -8$.\\
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}A}.
+
+\item On cherche si les fonctions $f$ peuvent s'écrire sous la forme $f(x)=mx+p$.\\ $\bullet$ En développant, on obtient :\\ 
+        $\begin{aligned}
+        f_1(x)&=2x^2-(2x+4)(x-3)\\
+        &=2x^2-(2x^2-6x+4x-12)\\
+        &=2x^2-2x^2+6x-4x+12\\
+        &=2x+12
+        \end{aligned}$\\
+        On retrouve une forme $mx+p$, donc $f_1$ est une fonction affine.\\
+        
+         $\bullet$ $f_2(x)=\dfrac{12x+5}{4}=3x+\dfrac{5}{4}$\\
+        $f_2$ est une fonction affine.\\        $\bullet$ $f_3(x)=\dfrac{3-\dfrac{1}{3}x}{0{,}9}=-\dfrac{1}{2{,}7}x+\dfrac{3}{0{,}9}$\\
+        $f_3$ est une fonction affine.\\
+{\bfseries \color[HTML]{F15929}Toutes ces fonctions sont affines.}\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}A}.
+
+\end{enumerate}
+
+\end{seance}
+
+
+% CORRECTION DEVOIRS SÉANCE 31
+\ifthenelse{\boolean{prof}}{
+\begin{seanceD}{} %31
+
+\begin{enumerate}
+\item La bonne réponse est ${\color[HTML]{F15929}\boldsymbol{a^2 < a}}$.\\
+En multipliant $0 < a < 1$ par $a > 0$, on obtient $0 < a^2 < a$, donc $a^2 < a$.
+
+\medskip
+
+Pour les autres propositions :\\
+$\sqrt{a} < a$ : Faux. Comme $0 < \sqrt{a} < 1$, on a $(\sqrt{a})^2 = a < \sqrt{a}$, donc $\sqrt{a} > a$.\\
+$\dfrac{1}{a} < a$ : Faux. Comme $\dfrac{1}{a} > 1 > a$, on a $\dfrac{1}{a} > a$.\\
+$a^2 > a$ : Faux. En multipliant $0 < a < 1$ par $a > 0$ : $a^2 < a$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item $N=\dfrac{6^4}{3^2}=\dfrac{3^4\times 2^4 }{3^2}=2^4\times 3^{2}=6^2\times 2^{2}={\color[HTML]{F15929}\boldsymbol{4\times 6^{2}}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item \begin{minipage}[c]{0.6\textwidth}Pour résoudre graphiquement cette inéquation : \\
+            $\bullet$ On trace la courbe d'équation $y=\sqrt{x}$. \\
+            $\bullet$ On trace la droite horizontale d'équation $y=12$. Cette droite coupe la courbe en $12^2=144$. \\
+            $\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent sur ou sous la droite.
+            \end{minipage} \hfill \begin{minipage}[c]{0.4\textwidth}
+            \begin{tikzpicture}[baseline,scale=0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,-1) rectangle (5,4);
+    	\draw[color={rgb,255:red,33;green,109;blue,154},line width = 2] (0,0)--(0.05,0.223607)--(0.1,0.316228)--(0.15,0.387298)--(0.2,0.447214)--(0.25,0.5)--(0.3,0.547723)--(0.35,0.591608)--(0.4,0.632456)--(0.45,0.67082)--(0.5,0.707107)--(0.55,0.74162)--(0.6,0.774597)--(0.65,0.806226)--(0.7,0.83666)--(0.75,0.866025)--(0.8,0.894427)--(0.85,0.921954)--(0.9,0.948683)--(0.95,0.974679)--(1,1)--(1.05,1.024695)--(1.1,1.048809)--(1.15,1.072381)--(1.2,1.095445)--(1.25,1.118034)--(1.3,1.140175)--(1.35,1.161895)--(1.4,1.183216)--(1.45,1.204159)--(1.5,1.224745)--(1.55,1.24499)--(1.6,1.264911)--(1.65,1.284523)--(1.7,1.30384)--(1.75,1.322876)--(1.8,1.341641)--(1.85,1.360147)--(1.9,1.378405)--(1.95,1.396424)--(2,1.414214)--(2.05,1.431782)--(2.1,1.449138)--(2.15,1.466288)--(2.2,1.48324)--(2.25,1.5)--(2.3,1.516575)--(2.35,1.532971)--(2.4,1.549193)--(2.45,1.565248)--(2.5,1.581139)--(2.55,1.596872)--(2.6,1.612452)--(2.65,1.627882)--(2.7,1.643168)--(2.75,1.658312)--(2.8,1.67332)--(2.85,1.688194)--(2.9,1.702939)--(2.95,1.717556)--(3,1.732051)--(3.05,1.746425)--(3.1,1.760682)--(3.15,1.774824)--(3.2,1.788854)--(3.25,1.802776)--(3.3,1.81659)--(3.35,1.830301)--(3.4,1.843909)--(3.45,1.857418)--(3.5,1.870829)--(3.55,1.884144)--(3.6,1.897367)--(3.65,1.910497)--(3.7,1.923538)--(3.75,1.936492)--(3.8,1.949359)--(3.85,1.962142)--(3.9,1.974842)--(3.95,1.987461)--(4,2)--(4.05,2.012461)--(4.1,2.024846)--(4.15,2.037155)--(4.2,2.04939)--(4.25,2.061553)--(4.3,2.073644)--(4.35,2.085665)--(4.4,2.097618)--(4.45,2.109502)--(4.5,2.12132)--(4.55,2.133073)--(4.6,2.144761)--(4.65,2.156386)--(4.7,2.167948)--(4.75,2.179449)--(4.8,2.19089)--(4.85,2.202272)--(4.9,2.213594)--(4.95,2.22486)--(5,2.236068);
+	\draw[color={green},line width = 2] (-50,1.5)--(51,1.5);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (-1,0)--(5,0);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (0,-1)--(0,4);
+	\draw[color ={black},line width = 1.2] (0,-0.13)--(0,0.13);
+	\draw[color ={black},line width = 1.2] (-0.13,0)--(0.13,0);
+	\draw[opacity=1] (-0.2,-0.3) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{O}$};
+	\draw[color ={black},line width = 2, dashed ] (2.25,1.5)--(2.25,0);
+	\draw[color ={red},line width = 2] (0,0)--(2.25,0);
+	\draw[very thick,color={red}] (0.2,0.2)--(0,0.2)--(0,-0.2)--(0.2,-0.2);
+	\draw[color={red}] (0,-0.2) node[below] {$$};
+	\draw[very thick,color={red}] (2.05,0.2)--(2.25,0.2)--(2.25,-0.2)--(2.05,-0.2);
+	\draw[color={red}] (2.25,-0.2) node[below] {$$};
+	\draw[opacity=1] (4,1.2) node[anchor = center, rotate=0] {\scriptsize \color{green}$y=12$};
+	\draw[opacity=1] (3,2.3) node[anchor = center, rotate=0] {\scriptsize \color[HTML]{216D9A}$y=\sqrt{x}$};
+	\draw[opacity=1] (2.25,-0.6) node[anchor = center, rotate=0] {\scriptsize \color{black}$144$};
+
+\end{tikzpicture}\end{minipage} 
+            Comme la fonction racine carrée est définie sur $[0\,;\,+\infty[$, l'ensemble des solutions de l'inéquation $(I)$ est : {\bfseries \color[HTML]{F15929}$S = [0\,;\,144]$}.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item L'équation $2x+20=0$ a pour solution $x=-10$.\\
+  L'équation $x-10=0$ a pour solution $x=10$.\\
+  Le tableau de signe du produit $(2x+20)(x-10)$ est : \\\begin{tikzpicture}[baseline, scale=0.3]
+    \tkzTabInit[lgt=8,deltacl=1,espcl=3]{ $x$ / 2, $2x+20$ / 2, $x-10$ / 2, $(2x+20)(x-10)$ / 2}{ $-\infty$, $-10$, $10$, $+\infty$}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , +, z, -, z, +}
+	\end{tikzpicture}
+\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item $\bullet$ {\bfseries \color[HTML]{F15929}Le produit des solutions de l'équation $f(x)=2$ est égal à $0$.}\\  Cette affirmation est correcte : \\L'équation $f(x)=2$ a trois solutions : $-7$, $0$ et $2$.\\
+          Le produit de ces solutions est $-7\times 0\times 2= 0$.\\$\bullet$ Soit $k\in[1\,;\,2]$. \\
+          L'équation $f(x)=k$ admet exactement deux solutions.\\  Cette affirmation est fausse : \\Si $k\in[1\,;\,2]$ la droite d'équation $y=k$ coupe trois fois la courbe et donc l'équation a trois solutions.\\$\bullet$ Soit $k\in\mathbb{R}$. \\
+          Il n'existe que deux valeurs de $k$ pour lesquelles l'équation $f(x)=k$ ait exactement trois solutions.\\  Cette affirmation est fausse : \\Pour toutes les valeurs de $k$ comprises entre $1$ et $2$, l'équation $f(x)=k$ admet exactement trois solutions.\\$\bullet$ Soit $k\in]2\,;\,3[$. \\
+          L'équation $f(x)=k$ admet exactement trois solutions.\\  Cette affirmation est fausse : \\Si $k\in]2\,;\,3[$,  la droite d'équation $y=k$ coupe bien deux fois la courbe.
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On cherche si les fonctions $f$ peuvent s'écrire sous la forme $f(x)=mx+p$.\\ $\bullet$ $f_1(x)=\dfrac{2x+4}{x}=2+\dfrac{4}{x}$\\
+        Après simplification, cette fonction contient un terme en $\dfrac{1}{x}$, elle n'est donc pas affine.\\
+        
+         $\bullet$ $f_2(x)=6\sqrt{x}-6$\\
+        Cette fonction contient un terme en $\sqrt{x}$, elle n'est donc pas affine.\\        $\bullet$ $f_3(x)=\dfrac{2}{x}+4$\\
+        Cette fonction contient un terme en $\dfrac{1}{x}$, elle n'est donc pas affine.\\
+{\bfseries \color[HTML]{F15929}Aucune de ces fonctions n'est affine.}\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\end{enumerate}
+
+\end{seanceD}
+}{}
+
+\end{document}

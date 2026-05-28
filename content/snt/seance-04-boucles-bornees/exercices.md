@@ -69,11 +69,24 @@ a = 2 * a
 
 Cet exercice est interactif : ouvrir le notebook et exécuter les cellules de l'exercice 4 pour répondre aux questions.
 
+**Q1.** Question interactive 1 — réaliser dans le notebook.
+
+**Q2.** Question interactive 2 — réaliser dans le notebook.
+
 ---
 
 ### Exercice 5 — Prédire l'exécution
 
-Voici quatre programmes avec des boucles `for`. **Sans les exécuter**, prédisez ce que chacun affiche (ou l'erreur produite).
+Voici quatre programmes avec des boucles `for`.
+
+**Q1.** **Sans les exécuter**, prédisez ce que chacun affiche (ou l'erreur produite). Complétez le tableau.
+
+| Programme | Résultat prédit | Résultat réel |
+|:---:|:---|:---|
+| A | *à compléter* | |
+| B | *à compléter* | |
+| C | *à compléter* | |
+| D | *à compléter* | |
 
 ```python
 # Programme A
@@ -103,6 +116,8 @@ for i in range(4):
     print("dans la boucle")
 print("hors de la boucle")
 ```
+
+**Q2.** Exécutez chaque programme dans le notebook et complétez la colonne « Résultat réel ».
 
 ---
 
@@ -216,3 +231,5 @@ print("Nombre d'élèves reçus :", compteur)
 ```
 
 **Q4.** Sans l'exécuter, combien d'élèves sont reçus ? Vérifiez ensuite en exécutant.
+
+**Q5 — Bonus.** Modifiez le programme pour qu'il affiche également le nombre d'élèves **recalés**, en utilisant un deuxième compteur dans la même boucle.

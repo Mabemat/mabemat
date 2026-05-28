@@ -71,15 +71,32 @@ def som(n):
 
 La valeur finale de `a` est **12**.
 
+**Q3.** Vérifier par exécution en ajoutant `print(a)` à la fin.
+
 ---
 
 ### Exercice 4 — Code puzzle (interactif)
 
-Exercice à réaliser directement dans le notebook.
+**Q1.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+
+**Q2.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
 
 ---
 
 ### Exercice 5 — Prédire l'exécution
+
+**Q1 — Résultats prédits :**
+
+| Programme | Résultat |
+|:---:|:---|
+| A | 0, 1, 2 puis `Fin` (hors boucle) |
+| B | `IndentationError` |
+| C | 0, ---, 1, ---, 2, ---, `Fin` |
+| D | `dans la boucle` (×4) puis `hors de la boucle` |
+
+**Q2.** Vérifier par exécution.
+
+---
 
 **Programme A** — Affiche :
 ```
@@ -230,6 +247,8 @@ def triangle(cote):
 
 ### Exercice 10 — Notes de classe
 
+**Q1.** Vérifier par exécution. Observer comment `if`/`else` dans la boucle `for` affiche des messages différents selon la note.
+
 **Q2.** Pour la note 7 : `7 >= 10` est **faux**, donc Python entre dans le `else` et exécute `print(note, "→ recalé ✗")`. Pour la note 14 : `14 >= 10` est **vrai**, Python entre dans le `if` et exécute `print(note, "→ reçu ✓")`.
 
 L'indentation détermine quelle instruction appartient au `if` et laquelle appartient au `else`.
@@ -247,3 +266,21 @@ print("Nombre d'élèves reçus :", compteur)
 ```
 
 **Q4.** Notes ≥ 10 : 14 ✓, 18 ✓, 12 ✓, 16 ✓, 11 ✓ → **5 élèves reçus**.
+
+**Q5 — Bonus.**
+```python
+notes = [14, 7, 18, 5, 12, 9, 16, 3, 11, 8]
+compteur_recus = 0
+compteur_recales = 0
+
+for note in notes:
+    if note >= 10:
+        compteur_recus = compteur_recus + 1
+    else:
+        compteur_recales = compteur_recales + 1
+
+print("Nombre d'élèves reçus :", compteur_recus)
+print("Nombre d'élèves recalés :", compteur_recales)
+```
+
+Notes < 10 : 7 ✗, 5 ✗, 9 ✗, 3 ✗, 8 ✗ → **5 élèves recalés**. Les deux compteurs progressent dans la même boucle grâce au `if`/`else`.

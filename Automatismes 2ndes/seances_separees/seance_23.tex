@@ -1,0 +1,149 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+%\newboolean{prof}\setboolean{prof}{false}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Séance 23 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenum}{23}
+\newpage
+\begin{seance}{} %23
+
+\begin{enumerate}
+	\item $0{,}9 \times 6={\color[HTML]{f15929}\boldsymbol{5{,}4}}$
+	\item $15-6\times6={\color[HTML]{f15929}\boldsymbol{-21}}$
+	\item $(x+8)(x-3)=x^2-3x+8x-24={\color[HTML]{f15929}\boldsymbol{x^2+5x-24}}$
+	\item $25\,\%$ de $36 = {\color[HTML]{f15929}\boldsymbol{9}}$\\ Prendre $25\,\%$  de $36$ revient à prendre le quart de $36$.\\
+      Ainsi, $25\,\%$ de $36$ est égal à $36\div 4 =9$.
+     
+	\item On ordonne la série :  $3$\,;\,$7$\,;\,$15$\,;\,$18$\,;\,$23$.\\
+      La série comporte $5$ valeurs donc la médiane est la troisième valeur : ${\color[HTML]{f15929}\boldsymbol{15}}$.
+	\item $\dfrac{5}{6}\times \dfrac{-7}{5}=-\dfrac{7{\color[HTML]{2563a5}\boldsymbol{\times5}} }{6{\color[HTML]{2563a5}\boldsymbol{\times5}}}={\color[HTML]{f15929}\boldsymbol{-\dfrac{7}{6}}}$
+	\item $(-6)^{-5}=\dfrac{1}{(-6)^{5}}$\\
+     Comme  $(-6)^{5}$ est  négatif (puissance impaire d'un nombnre négatif), on en déduit que  $\dfrac{1}{(-6)^{5}}$ est négatif.
+    Ainsi, $(-6)^{-5}$ est {\bfseries \color[HTML]{f15929}négatif}.
+	\item On utilise la formule $\dfrac{a^n}{a^p}=a^{n - p}$
+        avec $a=2$,  $n=3$ et $p=4$.\\
+        $\dfrac{2^{3}}{2^{4}}=2^{3-4}=2^{{\color[HTML]{f15929}\boldsymbol{-1}}}$
+	\item On utilise l'égalité remarquable ${\color{red} a}^2-{\color{blue} b}^2=({\color{red} a}-{\color{blue} b})({\color{red} a}+{\color{blue} b})$ avec $a={\color{red} 3}$ et $b={\color{blue} x}$.\\$\begin{aligned}
+  9-x^2&=\underbrace{{\color{red} 3}^2-{\color{blue} x}^2}_{a^2-b^2}\\
+  &=\underbrace{({\color{red} 3}-{\color{blue} x})({\color{red} 3}+{\color{blue} x})}_{(a-b)(a+b)}
+  \end{aligned}$ \\
+    Une expression factorisée de $9-x^2$ est ${\color[HTML]{f15929}\boldsymbol{(3-x)(3+x)}}$.
+	\item On a : \\$
+      1+\dfrac{5}{8} = \dfrac{1 \times 8}{8} - \dfrac{5}{8} 
+      = \dfrac{8}{8} - \dfrac{5}{8}
+        ={\color[HTML]{f15929}\boldsymbol{\dfrac{3}{8}}}$
+	\item Les coordonnées du milieu $M$ sont données par la moyenne des abscisses et la moyenne des ordonnées : \\
+      $x_M=\dfrac{-10+-6}{2}={\color[HTML]{f15929}\boldsymbol{-8}}$ et $y_M=\dfrac{3+9}{2}={\color[HTML]{f15929}\boldsymbol{6}}$.\\
+      Ainsi,  $M({\color[HTML]{f15929}\boldsymbol{-8\,;\,6}})$.
+	\item  L'algorithme retourne $(2\times7\times7)+7={\color[HTML]{f15929}\boldsymbol{105}}$. 
+	\item L'image de $2$ se lit sur l'axe des ordonnées. \\
+              On lit $f(2)={\color[HTML]{f15929}\boldsymbol{-1}}$. 
+	\item Les solutions de l'inéquation sont les abscisses des points de $\mathscr{C}_f$ qui se trouvent au-dessus de la droite horizontale d'équation $y=1$.\\
+    $S={\color[HTML]{f15929}\boldsymbol{]-1\,;\,1[}}$ 
+    \item Les vecteurs $\overrightarrow{DE}$ et $\overrightarrow{AB}$ sont colinéaires de sens contraire.\\
+   La norme du vecteur  $\overrightarrow{DE}$ est deux fois plus grande que celle du vecteur  $\overrightarrow{AB}$. \\
+    Ainsi, $\overrightarrow{DE}={\color[HTML]{f15929}\boldsymbol{-2}}\overrightarrow{AB}$.
+
+\end{enumerate}
+
+\end{seance}
+
+\end{document}

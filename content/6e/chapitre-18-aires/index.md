@@ -1,0 +1,12 @@
+---
+title: "Aires"
+level: "6e"
+chapter_number: 18
+weight: 18
+has_cours: true
+has_pixelart: false
+has_exercices: false
+has_qcm: false
+show_lecon: true
+categorie: Grandeurs et mesures
+---

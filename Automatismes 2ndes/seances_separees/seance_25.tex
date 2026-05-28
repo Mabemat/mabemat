@@ -1,0 +1,146 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+%\newboolean{prof}\setboolean{prof}{false}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Séance 25 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenum}{25}
+\newpage
+\begin{seance}{} %25
+
+\begin{enumerate}
+\item $x-\dfrac{x}{5}=\dfrac{x\times 5}{5}-\dfrac{x}{5}=\dfrac{5x}{5}-\dfrac{x}{5}=\dfrac{5x-x}{5}=\dfrac{4x}{5}=$ ${\color[HTML]{f15929}\boldsymbol{\dfrac{4}{5}x}}$
+
+\item On utilise l'égalité remarquable ${\color{red} a}^2-{\color{blue} b}^2=({\color{red} a}-{\color{blue} b})({\color{red} a}+{\color{blue} b})$ avec $a={\color{red} x}$  et $b={\color{blue} \sqrt{7}}$.\\$\begin{aligned}
+         x^2-7&=\underbrace{{\color{red} x}^2-({\color{blue} \sqrt{7}})^2}_{a^2-b^2}\\
+         &=\underbrace{({\color{red} x}-{\color{blue} \sqrt{7}})({\color{red} x}+{\color{blue} \sqrt{7}})}_{(a-b)(a+b)}
+         \end{aligned}$ 
+
+\item  Diminuer de $22\,\%$ revient à multiplier par $\dfrac{78}{100}$.\\
+Si $V_I$ est le prix initial, on a : $V_I \times \dfrac{78}{100}=132$.\\
+Ainsi, le prix initial est donné par : ${\color[HTML]{f15929}\boldsymbol{132 \times \dfrac{100}{78}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{f15929}A}.
+
+\item $3\,000$ $\text{ m}$ $= 3$ $\text{km}$\\
+L'aire du carré est : $3 \text{ km}\times 3 \text{ km} = {\color[HTML]{f15929}\boldsymbol{9\text{ km}^2}}$ .
+
+\item  On a $4=2^{2}$ donc :\\
+    $
+    \text{Le double de  } 4^{50}  = 2 \times 4^{50} 
+     = 2\times  \left(2^{2}\right)^{50} 
+    =2\times  2^{100} 
+    ={\color[HTML]{f15929}\boldsymbol{2^{101}}} 
+$
+
+\item $\dfrac{x-4}{x+12} \leqslant 0$\\
+\medskip
+
+$\bullet$ On commence par chercher les éventuelles valeurs interdites :\\$x +12 = 0$ \\$x +12 {\color[HTML]{f15929}\boldsymbol{-12}} = {\color[HTML]{f15929}\boldsymbol{-12}}$\\$x = -12$\\Le quotient est défini sur $\mathbb{R} \smallsetminus \{-12\}$.\\$\bullet$ On résout l'inéquation sur $\mathbb{R} \smallsetminus \{-12\}$.\\$x -4 > 0$ si et seulement si $x > 4$.\\$x+12 > 0$ si et seulement si $x > -12$.\\On peut donc en déduire le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 2, $x-4$ / 2, $x+12$ / 2, $\dfrac{x-4}{x+12}$ / 4}{ $-\infty$, $-12$, $4$, $+\infty$}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , +, d, -, z, +}
+	\end{tikzpicture}
+\\ L'ensemble de solutions de l'inéquation est $S = \left] -12 ; 4 \right] $.
+
+
+\end{enumerate}
+\end{seance}
+
+\end{document}

@@ -1,0 +1,66 @@
+<svg viewBox="-5 -5 410 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="rectclip2">
+      <rect x="0" y="0" width="240" height="120"/>
+    </clipPath>
+  </defs>
+  <!-- full rectangle background (hatched) -->
+  <rect x="0" y="0" width="240" height="120" fill="white" fill-opacity="0.5" stroke="#555" stroke-width="1"/>
+  <line x1="-120" y1="0" x2="0" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-108" y1="0" x2="12" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-96" y1="0" x2="24" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-84" y1="0" x2="36" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-72" y1="0" x2="48" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-60" y1="0" x2="60" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-48" y1="0" x2="72" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-36" y1="0" x2="84" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-24" y1="0" x2="96" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="-12" y1="0" x2="108" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="0" y1="0" x2="120" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="12" y1="0" x2="132" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="24" y1="0" x2="144" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="36" y1="0" x2="156" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="48" y1="0" x2="168" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="60" y1="0" x2="180" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="72" y1="0" x2="192" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="84" y1="0" x2="204" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="96" y1="0" x2="216" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="108" y1="0" x2="228" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="120" y1="0" x2="240" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="132" y1="0" x2="252" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="144" y1="0" x2="264" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="156" y1="0" x2="276" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="168" y1="0" x2="288" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="180" y1="0" x2="300" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="192" y1="0" x2="312" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="204" y1="0" x2="324" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="216" y1="0" x2="336" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="228" y1="0" x2="348" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="240" y1="0" x2="360" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="252" y1="0" x2="372" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="264" y1="0" x2="384" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="276" y1="0" x2="396" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="288" y1="0" x2="408" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="300" y1="0" x2="420" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="312" y1="0" x2="432" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="324" y1="0" x2="444" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="336" y1="0" x2="456" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <line x1="348" y1="0" x2="468" y2="120" stroke="#999" stroke-width="0.5" opacity="0.4" clip-path="url(#rectclip2)"/>
+  <!-- orange (non-hatched) zone -->
+  <polygon points="0,80 0,40 80,40 80,0 240,0 240,80 200,80 200,120 120,120 120,80 80,80" fill="#FFA500" fill-opacity="0.9" stroke="#CC0000" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="0" y1="0" x2="0" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="40" y1="0" x2="40" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="80" y1="0" x2="80" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="120" y1="0" x2="120" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="160" y1="0" x2="160" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="200" y1="0" x2="200" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="240" y1="0" x2="240" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="0" y1="120" x2="240" y2="120" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="0" y1="80" x2="240" y2="80" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="0" y1="40" x2="240" y2="40" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <line x1="0" y1="0" x2="240" y2="0" stroke="#999" stroke-width="0.6" opacity="0.4"/>
+  <!-- reference unit square -->
+  <polygon points="280,40 320,40 320,0 280,0" fill="#888" fill-opacity="0.5" stroke="#333" stroke-width="1"/>
+  <!-- label -->
+  <text x="380" y="25" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#333">1 u.a.</text>
+</svg>

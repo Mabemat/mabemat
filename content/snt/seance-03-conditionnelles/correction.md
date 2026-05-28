@@ -4,7 +4,9 @@ title: "Correction — Séance 03 Conditionnelles"
 
 ### Exercice 1 — Qui a gagné ?
 
-**Q1.**
+**Q1.** Nom : `gagnant` — Paramètres : 2 (`scoreA`, `scoreB`) — Valeur renvoyée : 1 (`"équipe A"`, `"équipe B"` ou `"Match nul"`).
+
+**Q2.**
 ```python
 def gagnant(scoreA, scoreB):
     if scoreA > scoreB:
@@ -15,91 +17,103 @@ def gagnant(scoreA, scoreB):
         return "Match nul"
 ```
 
-**Q2.**
+**Q3.** `gagnant(4, 1)` → `"équipe A"` ✓
 
-| Appel | Résultat |
-|---|---|
-| `gagnant(4, 1)` | `"équipe A"` |
-| `gagnant(2, 3)` | `"équipe B"` |
-| `gagnant(2, 2)` | `"Match nul"` |
+**Q4.** `gagnant(2, 3)` → `"équipe B"` ✓
+
+**Q5.** `gagnant(2, 2)` → `"Match nul"` ✓
 
 ---
 
-### Exercice 2 — Code puzzle
+### Exercice 2 — Vérifier sa compréhension
+
+**Q1.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+
+**Q2.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+
+**Q3.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+
+**Q4.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+
+---
+
+### Exercice 3 — Jeu d'indentation
+
+**Q1.**
+
+| Programme | Résultat |
+|:---:|:---|
+| A | `x est grand` puis `Fin` |
+| B | `IndentationError` |
+| C | `Fin` |
+| D | `Troisième message` |
 
 **Programme A** — Affiche :
 ```
 x est grand
 Fin
 ```
-x vaut 12, donc 12 > 10 est vrai → le bloc du `if` s'exécute. `print("Fin")` n'est pas indenté donc il s'exécute toujours.
+x vaut 12, donc `12 > 10` est vrai → le bloc du `if` s'exécute. `print("Fin")` n'est pas indenté donc il s'exécute toujours.
 
-**Programme B** — Erreur `IndentationError` : le `print` après le `if` n'est pas indenté, Python ne sait pas quel bloc il appartient.
+**Programme B** — Erreur `IndentationError` : le `print` après le `if` n'est pas indenté, Python ne sait pas à quel bloc il appartient.
 
 **Programme C** — Affiche :
 ```
 Fin
 ```
-x vaut 3, donc 3 > 10 est faux → le bloc du `if` est ignoré. `print("Fin")` s'exécute quand même car il n'est pas dans le `if`.
+x vaut 3, donc `3 > 10` est faux → le bloc du `if` est ignoré. `print("Fin")` s'exécute quand même car il n'est pas dans le `if`.
 
 **Programme D** — Affiche :
 ```
 Troisième message
 ```
-x vaut 3 : `3 > 5` est faux (on passe), `3 > 2` est vrai → on entre dans le `elif` et on affiche les deux lignes de ce bloc. Donc les deux lignes affichées sont "Deuxième message" et "Troisième message".
+x vaut 3 : `3 > 5` est faux → les deux `print` indentés ("Premier message" et "Deuxième message") sont ignorés. Seul `print("Troisième message")`, non indenté, s'exécute toujours.
+
+**Q2.** Vérifier par exécution.
 
 ---
 
-### Exercice 3 — Indentation et branchements
+### Exercice 4 — Inscription sur un réseau social
 
-```python
-x = 5
-if x > 3:
-    print("x est supérieur à 3")
-print("Fin")
-```
+**Q1.** Exercice CodePuzzle interactif — identifier le code correct parmi les propositions. Pas de correction écrite.
 
-Python utilise l'indentation (espaces ou tabulations) pour délimiter les blocs de code. Contrairement à d'autres langages qui utilisent des accolades `{}`, Python exige que tout ce qui est dans un `if`, un `elif`, un `else` ou une fonction soit décalé d'exactement un niveau vers la droite.
-
----
-
-### Exercice 4 — Âge requis
-
+**Q2.**
 ```python
 def age_requis(age):
-    if age >= 18:
+    if age >= 13:
         return True
     else:
         return False
 ```
 
+**Q3.** Vérifications :
+
 | Appel | Résultat |
 |---|---|
-| `age_requis(17)` | `False` |
-| `age_requis(18)` | `True` |
+| `age_requis(12)` | `False` |
+| `age_requis(13)` | `True` |
 
 ---
 
-### Exercice 5 — IMC
+### Exercice 5 — Application de fitness
 
 **Q1.**
 ```python
 def imc(masse, taille):
-    return round(masse / taille**2, 1)
+    indice = masse / (taille ** 2)
+    return indice
 ```
 
-**Q2.**
+**Q2.** Diagnostic simple (dans la norme ou non) — résultat du CodePuzzle :
 ```python
 def diagnostic(masse, taille):
     valeur = imc(masse, taille)
     if valeur < 18.5:
         return "Insuffisance pondérale"
-    elif valeur < 25:
+    elif valeur <= 25:
         return "Corpulence normale"
-    elif valeur < 30:
-        return "Surpoids"
     else:
-        return "Obésité"
+        return "Hors norme"
 ```
 
 | Appel | IMC | Résultat |
@@ -107,45 +121,64 @@ def diagnostic(masse, taille):
 | `diagnostic(70, 1.75)` | 22.9 | `"Corpulence normale"` |
 | `diagnostic(50, 1.75)` | 16.3 | `"Insuffisance pondérale"` |
 
+**Q3.** Vérifier par exécution pour les 3 personnages.
+
+**Q4.** Diagnostic précis (4 catégories) :
+```python
+def diagnostic(masse, taille):
+    valeur = imc(masse, taille)
+    if valeur < 18.5:
+        return "Insuffisance pondérale"
+    elif valeur <= 25:
+        return "Corpulence normale"
+    elif valeur <= 30:
+        return "Surpoids"
+    else:
+        return "Obésité"
+```
+
+**Q5.** Vérifier par exécution pour les 3 personnages avec la nouvelle fonction `diagnostic`.
+
 ---
 
-### Exercice 6 — Tarif cinéma
+### Exercice 6 — Prix au cinéma
 
 ```python
 def place(age):
-    if age < 14:
-        return 5.50
-    elif age <= 25:
-        return 7.80
+    if age < 18:
+        return 7
     else:
-        return 10.20
+        return 11
 ```
 
 | Appel | Résultat |
 |---|---|
-| `place(10)` | `5.5` |
-| `place(18)` | `7.8` |
-| `place(30)` | `10.2` |
+| `place(10)` | `7` |
+| `place(17)` | `7` |
+| `place(18)` | `11` |
+| `place(30)` | `11` |
 
 ---
 
 ### Exercice 7 — Location de voiture
 
-**Q1.**
+**Q1.** 125 km ≤ 250 km : pas de surcoût. Tarif = 52,16 € × 1 jour = **52,16 €**.
+
+**Q2.** 300 km > 250 km : surcoût sur 50 km. Tarif = 52,16 + (300 − 250) × 0,31 = 52,16 + 15,50 = **67,66 €**.
+
+**Q3.**
 ```python
 def tarif(j, d):
     if d <= 250:
-        return 40 * j + 0.15 * d
+        return 52.16 * j
     else:
-        return 40 * j + 0.31 * d
+        return 52.16 * j + (d - 250) * 0.31
 ```
-
-**Q2.**
 
 | Appel | Calcul | Résultat |
 |---|---|---|
-| `tarif(1, 125)` | 40×1 + 0.15×125 | `58.75` |
-| `tarif(1, 300)` | 40×1 + 0.31×300 | `133.0` |
+| `tarif(1, 125)` | 52.16 × 1 | `52.16` |
+| `tarif(1, 300)` | 52.16 × 1 + 50 × 0.31 | `67.66` |
 
 ---
 
@@ -181,11 +214,14 @@ def mention_bac(moy):
 
 ---
 
-### Exercice 9 — Semestre validé ?
+### Exercice 9 — Combiner des conditions
 
+**Q1.** Exercice CodePuzzle interactif — mettre les lignes dans le bon ordre. Pas de correction écrite.
+
+**Q2.**
 ```python
-def semestre_valide(moyenne, note_min):
-    if moyenne >= 10 and note_min >= 5:
+def semestre_valide(noteA, noteB, noteC):
+    if noteA >= 10 and noteB >= 10 and noteC >= 10:
         return True
     else:
         return False
@@ -193,13 +229,13 @@ def semestre_valide(moyenne, note_min):
 
 | Appel | Résultat | Raison |
 |---|---|---|
-| `semestre_valide(11, 6)` | `True` | 11≥10 et 6≥5 |
-| `semestre_valide(11, 4)` | `False` | 4 < 5 |
-| `semestre_valide(9, 7)` | `False` | 9 < 10 |
+| `semestre_valide(11, 12, 10)` | `True` | les trois notes ≥ 10 |
+| `semestre_valide(11, 8, 10)` | `False` | noteB = 8 < 10 |
+| `semestre_valide(9, 12, 11)` | `False` | noteA = 9 < 10 |
 
 ---
 
-### Exercice 10 — Pair ou impair / Bilan de score
+### Exercice 10 — Fonctions avec conditions
 
 **Q1.**
 ```python
@@ -218,52 +254,73 @@ def est_pair(n):
 **Q2.**
 ```python
 def bilan_score(score):
-    if score >= 90:
-        return "Excellent"
-    elif score >= 70:
-        return "Bien"
-    elif score >= 50:
-        return "Moyen"
+    if score >= 10:
+        return "Félicitations !"
     else:
-        return "Insuffisant"
+        return "Continue comme ça !"
 ```
+
+| Appel | Résultat |
+|---|---|
+| `bilan_score(12)` | `"Félicitations !"` |
+| `bilan_score(7)` | `"Continue comme ça !"` |
 
 ---
 
-### Exercice 11 — Piscine municipale
+### Exercice 11 — La piscine municipale
 
 **Q1.**
 ```python
 def tarif_entree(age):
-    if age < 6:
-        return 0
-    elif age <= 17:
-        return 2.50
+    if age < 12:
+        return 3.0
+    elif age <= 25:
+        return 4.0
+    elif age <= 64:
+        return 6.0
     else:
-        return 4.00
+        return 4.5
 ```
+
+| Appel | Résultat |
+|---|---|
+| `tarif_entree(8)` | `3.0` |
+| `tarif_entree(17)` | `4.0` |
+| `tarif_entree(40)` | `6.0` |
+| `tarif_entree(70)` | `4.5` |
 
 **Q2.**
-```python
-def tarif_famille(age1, age2, age3, age4):
-    return tarif_entree(age1) + tarif_entree(age2) + tarif_entree(age3) + tarif_entree(age4)
-```
-
-**Q3.**
 
 | Personne | Âge | Tarif |
 |---|---|---|
-| Adulte 1 | 35 ans | 4.00 € |
-| Adulte 2 | 38 ans | 4.00 € |
-| Enfant 1 | 10 ans | 2.50 € |
-| Enfant 2 | 4 ans | 0.00 € |
-| **Total** | | **10.50 €** |
+| Adulte 1 | 35 ans | 6,00 € |
+| Adulte 2 | 38 ans | 6,00 € |
+| Enfant 1 | 7 ans | 3,00 € |
+| Enfant 2 | 10 ans | 3,00 € |
+| Grand-parent | 68 ans | 4,50 € |
+| **Total** | | **22,50 €** |
 
-`tarif_famille(35, 38, 10, 4)` → `10.5`
+```python
+adulte1 = tarif_entree(35)   # 6.0
+adulte2 = tarif_entree(38)   # 6.0
+enfant1 = tarif_entree(7)    # 3.0
+enfant2 = tarif_entree(10)   # 3.0
+grandparent = tarif_entree(68)  # 4.5
+total = adulte1 + adulte2 + enfant1 + enfant2 + grandparent
+print(total)   # 22.5
+```
+
+**Q3 — Défi.**
+```python
+def ticket(nom, age):
+    return "Ticket de " + nom + " (" + str(age) + " ans) : " + str(tarif_entree(age)) + " €"
+```
+
+Exemple : `ticket("Léa", 17)` → `"Ticket de Léa (17 ans) : 4.0 €"`
 
 ---
 
-### Exercice 12 — Bulletin scolaire
+### Exercice 12 — Le bulletin scolaire
 
 **Q1.**
 ```python
@@ -274,15 +331,23 @@ def moyenne(n1, n2, n3, n4):
 **Q2.**
 ```python
 def mention(moy):
-    if moy < 10:
-        return "Insuffisant"
-    elif moy < 12:
-        return "Assez bien"
-    elif moy < 14:
-        return "Bien"
-    else:
+    if moy >= 16:
         return "Très bien"
+    elif moy >= 14:
+        return "Bien"
+    elif moy >= 12:
+        return "Assez bien"
+    elif moy >= 10:
+        return "Passable"
+    else:
+        return "Insuffisant"
 ```
+
+| Appel | Résultat |
+|---|---|
+| `mention(16.5)` | `"Très bien"` |
+| `mention(11)` | `"Assez bien"` |
+| `mention(8)` | `"Insuffisant"` |
 
 **Q3.**
 ```python
@@ -294,5 +359,7 @@ def bulletin(prenom, n1, n2, n3, n4):
 
 Vérification : `bulletin("Alice", 14, 12, 16, 10)`
 - `moyenne(14, 12, 16, 10)` = (14+12+16+10)/4 = 52/4 = **13.0**
-- `mention(13.0)` → 13.0 ≥ 12 et < 14 → **"Bien"**
-- Résultat : `"Bilan d'Alice - Moyenne : 13.0/20 - Mention : Bien"`
+- `mention(13.0)` → 13.0 ≥ 12 et < 14 → **"Assez bien"**
+- Résultat : `"Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien"`
+
+**Q4.** Tester `bulletin` pour trois élèves (résultats personnels, pas de correction type). Vérifier qu'on obtient au moins un "Très bien" (≥ 16), un "Passable" (10–12) et un "Bien" (14–16).

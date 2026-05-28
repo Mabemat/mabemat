@@ -2,26 +2,7 @@
 title: "Correction — Séance 05 Boucles non bornées"
 ---
 
-### Exercice 1 — Tableau de suivi
-
-Programme : `p = 1; while p < 100: print(p); p = p * 2`
-
-| Tour | `p` avant test | `p < 100` | Affiché ? | Nouvelle valeur de `p` |
-|:---:|:---:|:---:|:---:|:---:|
-| Départ | 1 | ✅ | Oui | 2 |
-| Tour 1 | 2 | ✅ | Oui | 4 |
-| Tour 2 | 4 | ✅ | Oui | 8 |
-| Tour 3 | 8 | ✅ | Oui | 16 |
-| Tour 4 | 16 | ✅ | Oui | 32 |
-| Tour 5 | 32 | ✅ | Oui | 64 |
-| Tour 6 | 64 | ✅ | Oui | 128 |
-| Tour 7 | 128 | ❌ | Non — arrêt | — |
-
-Le programme affiche : `1  2  4  8  16  32  64`
-
----
-
-### Exercice 2 — Analyser une boucle while
+### Exercice 1 — Lecture d'un programme
 
 **Q1.** Condition : `n < 50`. Bloc répété : `n = n + n`.
 
@@ -38,9 +19,9 @@ Le programme affiche : `1  2  4  8  16  32  64`
 | Tour 6 | 32 | 64 |
 | Arrêt | 64 ≥ 50 → stop | — |
 
-`print(n)` affiche **64**.
+`print(n)` après la boucle affiche **64**.
 
-**Q3.** `print(n)` après la boucle affiche 64.
+**Q3.** Vérifier par exécution.
 
 **Q4.** Dans la variante, `print(n)` est **à l'intérieur** de la boucle. Il s'exécute après chaque mise à jour de `n`. Le programme affiche :
 ```
@@ -55,7 +36,7 @@ Le programme affiche : `1  2  4  8  16  32  64`
 
 ---
 
-### Exercice 3 — Compte à rebours
+### Exercice 2 — Compte à rebours
 
 **Q1.**
 ```
@@ -85,7 +66,7 @@ print("Décollage !")
 
 ---
 
-### Exercice 4 — Déboguer des boucles while
+### Exercice 3 — Déboguer des boucles while
 
 **Programme A**
 
@@ -128,7 +109,7 @@ while compteur < 5:
 
 ---
 
-### Exercice 5 — Batterie de Chloé
+### Exercice 4 — Batterie de téléphone
 
 **Q1.** 95 − 8×n < 20 → n > 75/8 = 9.375 → environ **9 à 10 heures**.
 
@@ -176,7 +157,7 @@ def heures_batterie(charge_initiale, consommation_horaire, seuil_alerte):
 
 ---
 
-### Exercice 6 — Épargne de Léa
+### Exercice 5 — Capital et intérêts
 
 **Q1.**
 - Après 1 an : 2 000 × 1.025 = **2 050 €**
@@ -212,7 +193,7 @@ def annee(capital_initial, taux, objectif):
 
 ---
 
-### Exercice 7 — Abonnés de Lucas
+### Exercice 6 — Influence sur les réseaux
 
 **Q1.**
 - Après 1 semaine : 150 × 1.12 = **168 abonnés**
@@ -253,6 +234,49 @@ On peut vérifier : `semaines_pour_atteindre(322, 12, 1000)` → 10 semaines.
 Lucas (150 abonnés, +12 %/semaine) → **17 semaines**
 
 L'autre créateur atteint 1 000 abonnés en premier (15 semaines contre 17).
+
+---
+
+### Exercice 7 — Population d'une ville
+
+**Q1.**
+```python
+pop = 80000
+annee = 2024
+while pop >= 70000:
+    pop = pop * (1 - 0.015)
+    annee = annee + 1
+print(annee)
+```
+
+| Année | Population |
+|---|---|
+| 2024 | 80 000 |
+| 2025 | 78 800 |
+| 2026 | 77 618 |
+| 2027 | 76 453.7 |
+| 2028 | 75 306.9 |
+| 2029 | 74 177.3 |
+| 2030 | 73 064.7 |
+| 2031 | 71 968.7 |
+| 2032 | 70 889.2 |
+| 2033 | **69 825.8** → première année < 70 000 |
+
+La population passe sous 70 000 habitants en **2033**.
+
+**Q2.**
+```python
+def annee_seuil(pop_initiale, taux_variation, seuil, annee_debut):
+    pop = pop_initiale
+    annee = annee_debut
+    while pop >= seuil:
+        pop = pop * (1 + taux_variation)
+        annee = annee + 1
+    return annee
+```
+
+**Q3.** `annee_seuil(80000, -0.015, 50000, 2024)` → **2056**  
+(la population atteint ≈ 49 323 habitants cette année-là)
 
 ---
 

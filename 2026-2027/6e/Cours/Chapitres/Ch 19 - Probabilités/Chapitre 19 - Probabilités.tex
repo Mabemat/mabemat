@@ -1,0 +1,99 @@
+\section*{Chapitre 19 - Probabilités}
+ \addcontentsline{toc}{section}{Chapitre 19 - Probabilités}
+ 
+\subsection*{I. Vocabulaire}
+\addcontentsline{toc}{subsection}{I. Vocabulaire}
+
+\begin{Définitions*}[c]
+\leavevmode\vspace{-\baselineskip}
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item Une expérience est \textbf{aléatoire} lorsqu'on ne peut pas en prévoir le résultat.
+\item Une \textbf{issue} est un résultat possible d'une expérience aléatoire.
+\item Un \textbf{événement} d'une expérience aléatoire est un ensemble d'issues.
+\end{itemize}
+\end{Définitions*}
+
+\vspace{0.3cm}
+
+\begin{Exemple}  Sur un jeu de 13 cartes indiscernables au toucher, on écrit sur chaque carte une lettre du mot \\
+\og mathématiques \fg{} : M A T H E M A T I Q U E S. \\
+On retourne toutes les cartes et demande à une personne d'en piocher une au hasard.
+\begin{itemize}[label=\textcolor{Couleur8}{$\bullet$}]
+\item Cette expérience est aléatoire car on ne sait pas la lettre qui sera piochée (puisque les cartes sont retournées).
+\item Les issues de l'expérience sont : M, A, T, H, E, I, Q, U, S
+\item Un événement possible est : \og Tirer une voyelle \fg{}. Il y a plusieurs issues qui réalisent cet événement : \og A ; E ; I ; U \fg{}.
+\end{itemize}
+\end{Exemple}
+
+
+\subsection*{II. Probabilité d'un événement}
+\addcontentsline{toc}{subsection}{II. Probabilité d'un événement}
+
+\vspace{0.3cm}
+
+\begin{Définition}[c]
+Dans une expérience aléatoire, la \textbf{probabilité} d'un évènement donne une mesure de la \og chance \fg{} que cet évènement se produise. \\La probabilité d'un évènement est un nombre compris entre 0 et 1.
+
+\end{Définition}
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+	\coordinate (A) at (0,0);
+	\coordinate (B) at (4,0);
+	\coordinate (C) at (8,0);
+ 	\coordinate (D) at (12,0);
+	\coordinate (E) at (16,0); 	   
+
+
+    \draw[line width=4pt, Couleur8] (A) -- (B);  
+    \draw[line width=4pt, Couleur7] (B) -- (C);  
+    \draw[line width=4pt, Couleur11] (C) -- (D);  
+    \draw[line width=4pt, Couleur9] (D) -- (E);    
+    \draw[line width=0.5pt,gray] (A) -- (E); 
+    \draw[line width=1.5pt, Couleur12] (0,-0.2) -- (0,0.2);  
+    \draw[line width=1.5pt, Couleur6] (8,-0.2) -- (8,0.2);  
+    \draw[line width=1.5pt, Couleur4] (16,-0.2) -- (16,0.2);  
+
+
+    
+    
+    % Labels des points
+    \node[Couleur12,below] at (0,-0.25) {\textbf{0}};
+    \node[Couleur6,below] at (8,-0.25) {\textbf{0,5}};
+    \node[Couleur4,below] at (16,-0.25) {\textbf{1}};
+    
+
+    \node[Couleur12,above] at (0,0.3) {\textbf{Impossible}};
+    \node[Couleur8,above] at (2,-1) {\textbf{Improbable}};
+    \node[Couleur7,above] at (6,-1) {\textbf{Peu porbable}};
+    \node[Couleur6,above] at (8,0.3) {\textbf{Une chance sur deux}};
+    \node[Couleur11,above] at (10,-1) {\textbf{Probable}};
+    \node[Couleur9,above] at (14,-1) {\textbf{Très probable}};
+    \node[Couleur4,above] at (16,0.3) {\textbf{Certain}};
+
+
+\end{tikzpicture}
+\end{center}
+
+
+
+\vspace{0.3cm}
+\begin{Propriété}
+Dans une situation d'équiprobabilité, la probabilité d'un évènement est la proportion du nombre d'issues favorables par rapport au nombre total d'issues possibles. \\
+La probabilité est donc égale à la fraction : 
+\begin{center}
+$\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issues possibles}}$
+\end{center}
+
+
+\end{Propriété}
+
+\vspace{0.3cm}
+
+\begin{Exemple}  On lance un dé équilibré à 6 faces. \\
+Quelle est la probabilité d'obtenir un nombre supérieur ou égal à 5 ? \\
+Cet événement possède 2 issues possibles sur 6 issues (\og 5 \fg{} et \og 6 \fg{}). \\
+On a donc 2 chances sur 6, c'est-à-dire une probabilité égale à $\dfrac{2}{6}=\dfrac{1}{3}$.
+\end{Exemple}
+

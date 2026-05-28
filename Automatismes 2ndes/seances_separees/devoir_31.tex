@@ -1,0 +1,190 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+\newboolean{prof}\setboolean{prof}{true}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Devoirs - Séance 31 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenumD}{31}
+\newpage
+\begin{seanceD}{} %31
+
+\begin{enumerate}
+\item La bonne réponse est ${\color[HTML]{F15929}\boldsymbol{a^2 < a}}$.\\
+En multipliant $0 < a < 1$ par $a > 0$, on obtient $0 < a^2 < a$, donc $a^2 < a$.
+
+\medskip
+
+Pour les autres propositions :\\
+$\sqrt{a} < a$ : Faux. Comme $0 < \sqrt{a} < 1$, on a $(\sqrt{a})^2 = a < \sqrt{a}$, donc $\sqrt{a} > a$.\\
+$\dfrac{1}{a} < a$ : Faux. Comme $\dfrac{1}{a} > 1 > a$, on a $\dfrac{1}{a} > a$.\\
+$a^2 > a$ : Faux. En multipliant $0 < a < 1$ par $a > 0$ : $a^2 < a$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item $N=\dfrac{6^4}{3^2}=\dfrac{3^4\times 2^4 }{3^2}=2^4\times 3^{2}=6^2\times 2^{2}={\color[HTML]{F15929}\boldsymbol{4\times 6^{2}}}$\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item \begin{minipage}[c]{0.6\textwidth}Pour résoudre graphiquement cette inéquation : \\
+            $\bullet$ On trace la courbe d'équation $y=\sqrt{x}$. \\
+            $\bullet$ On trace la droite horizontale d'équation $y=12$. Cette droite coupe la courbe en $12^2=144$. \\
+            $\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent sur ou sous la droite.
+            \end{minipage} \hfill \begin{minipage}[c]{0.4\textwidth}
+            \begin{tikzpicture}[baseline,scale=0.7]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-1,-1) rectangle (5,4);
+    	\draw[color={rgb,255:red,33;green,109;blue,154},line width = 2] (0,0)--(0.05,0.223607)--(0.1,0.316228)--(0.15,0.387298)--(0.2,0.447214)--(0.25,0.5)--(0.3,0.547723)--(0.35,0.591608)--(0.4,0.632456)--(0.45,0.67082)--(0.5,0.707107)--(0.55,0.74162)--(0.6,0.774597)--(0.65,0.806226)--(0.7,0.83666)--(0.75,0.866025)--(0.8,0.894427)--(0.85,0.921954)--(0.9,0.948683)--(0.95,0.974679)--(1,1)--(1.05,1.024695)--(1.1,1.048809)--(1.15,1.072381)--(1.2,1.095445)--(1.25,1.118034)--(1.3,1.140175)--(1.35,1.161895)--(1.4,1.183216)--(1.45,1.204159)--(1.5,1.224745)--(1.55,1.24499)--(1.6,1.264911)--(1.65,1.284523)--(1.7,1.30384)--(1.75,1.322876)--(1.8,1.341641)--(1.85,1.360147)--(1.9,1.378405)--(1.95,1.396424)--(2,1.414214)--(2.05,1.431782)--(2.1,1.449138)--(2.15,1.466288)--(2.2,1.48324)--(2.25,1.5)--(2.3,1.516575)--(2.35,1.532971)--(2.4,1.549193)--(2.45,1.565248)--(2.5,1.581139)--(2.55,1.596872)--(2.6,1.612452)--(2.65,1.627882)--(2.7,1.643168)--(2.75,1.658312)--(2.8,1.67332)--(2.85,1.688194)--(2.9,1.702939)--(2.95,1.717556)--(3,1.732051)--(3.05,1.746425)--(3.1,1.760682)--(3.15,1.774824)--(3.2,1.788854)--(3.25,1.802776)--(3.3,1.81659)--(3.35,1.830301)--(3.4,1.843909)--(3.45,1.857418)--(3.5,1.870829)--(3.55,1.884144)--(3.6,1.897367)--(3.65,1.910497)--(3.7,1.923538)--(3.75,1.936492)--(3.8,1.949359)--(3.85,1.962142)--(3.9,1.974842)--(3.95,1.987461)--(4,2)--(4.05,2.012461)--(4.1,2.024846)--(4.15,2.037155)--(4.2,2.04939)--(4.25,2.061553)--(4.3,2.073644)--(4.35,2.085665)--(4.4,2.097618)--(4.45,2.109502)--(4.5,2.12132)--(4.55,2.133073)--(4.6,2.144761)--(4.65,2.156386)--(4.7,2.167948)--(4.75,2.179449)--(4.8,2.19089)--(4.85,2.202272)--(4.9,2.213594)--(4.95,2.22486)--(5,2.236068);
+	\draw[color={green},line width = 2] (-50,1.5)--(51,1.5);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (-1,0)--(5,0);
+	\draw[color ={black},line width = 1.2,-{Stealth[width=4mm]}] (0,-1)--(0,4);
+	\draw[color ={black},line width = 1.2] (0,-0.13)--(0,0.13);
+	\draw[color ={black},line width = 1.2] (-0.13,0)--(0.13,0);
+	\draw[opacity=1] (-0.2,-0.3) node[anchor = center, rotate=0] {\scriptsize \color{black}$\text{O}$};
+	\draw[color ={black},line width = 2, dashed ] (2.25,1.5)--(2.25,0);
+	\draw[color ={red},line width = 2] (0,0)--(2.25,0);
+	\draw[very thick,color={red}] (0.2,0.2)--(0,0.2)--(0,-0.2)--(0.2,-0.2);
+	\draw[color={red}] (0,-0.2) node[below] {$$};
+	\draw[very thick,color={red}] (2.05,0.2)--(2.25,0.2)--(2.25,-0.2)--(2.05,-0.2);
+	\draw[color={red}] (2.25,-0.2) node[below] {$$};
+	\draw[opacity=1] (4,1.2) node[anchor = center, rotate=0] {\scriptsize \color{green}$y=12$};
+	\draw[opacity=1] (3,2.3) node[anchor = center, rotate=0] {\scriptsize \color[HTML]{216D9A}$y=\sqrt{x}$};
+	\draw[opacity=1] (2.25,-0.6) node[anchor = center, rotate=0] {\scriptsize \color{black}$144$};
+
+\end{tikzpicture}\end{minipage} 
+            Comme la fonction racine carrée est définie sur $[0\,;\,+\infty[$, l'ensemble des solutions de l'inéquation $(I)$ est : {\bfseries \color[HTML]{F15929}$S = [0\,;\,144]$}.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item L'équation $2x+20=0$ a pour solution $x=-10$.\\
+  L'équation $x-10=0$ a pour solution $x=10$.\\
+  Le tableau de signe du produit $(2x+20)(x-10)$ est : \\\begin{tikzpicture}[baseline, scale=0.3]
+    \tkzTabInit[lgt=8,deltacl=1,espcl=3]{ $x$ / 2, $2x+20$ / 2, $x-10$ / 2, $(2x+20)(x-10)$ / 2}{ $-\infty$, $-10$, $10$, $+\infty$}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , +, z, -, z, +}
+	\end{tikzpicture}
+\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item $\bullet$ {\bfseries \color[HTML]{F15929}Le produit des solutions de l'équation $f(x)=2$ est égal à $0$.}\\  Cette affirmation est correcte : \\L'équation $f(x)=2$ a trois solutions : $-7$, $0$ et $2$.\\
+          Le produit de ces solutions est $-7\times 0\times 2= 0$.\\$\bullet$ Soit $k\in[1\,;\,2]$. \\
+          L'équation $f(x)=k$ admet exactement deux solutions.\\  Cette affirmation est fausse : \\Si $k\in[1\,;\,2]$ la droite d'équation $y=k$ coupe trois fois la courbe et donc l'équation a trois solutions.\\$\bullet$ Soit $k\in\mathbb{R}$. \\
+          Il n'existe que deux valeurs de $k$ pour lesquelles l'équation $f(x)=k$ ait exactement trois solutions.\\  Cette affirmation est fausse : \\Pour toutes les valeurs de $k$ comprises entre $1$ et $2$, l'équation $f(x)=k$ admet exactement trois solutions.\\$\bullet$ Soit $k\in]2\,;\,3[$. \\
+          L'équation $f(x)=k$ admet exactement trois solutions.\\  Cette affirmation est fausse : \\Si $k\in]2\,;\,3[$,  la droite d'équation $y=k$ coupe bien deux fois la courbe.
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\item On cherche si les fonctions $f$ peuvent s'écrire sous la forme $f(x)=mx+p$.\\ $\bullet$ $f_1(x)=\dfrac{2x+4}{x}=2+\dfrac{4}{x}$\\
+        Après simplification, cette fonction contient un terme en $\dfrac{1}{x}$, elle n'est donc pas affine.\\
+        
+         $\bullet$ $f_2(x)=6\sqrt{x}-6$\\
+        Cette fonction contient un terme en $\sqrt{x}$, elle n'est donc pas affine.\\        $\bullet$ $f_3(x)=\dfrac{2}{x}+4$\\
+        Cette fonction contient un terme en $\dfrac{1}{x}$, elle n'est donc pas affine.\\
+{\bfseries \color[HTML]{F15929}Aucune de ces fonctions n'est affine.}\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\end{enumerate}
+
+\end{seanceD}
+
+\end{document}

@@ -1,0 +1,138 @@
+
+\section*{Chapitre 10 - Divisions}
+\addcontentsline{toc}{section}{Chapitre 10 - Divisions}
+
+\subsection*{I. Division euclidienne}
+\addcontentsline{toc}{subsection}{I. Division euclidienne}
+
+\begin{Définition*}
+On se donne deux nombres entiers $a$ et $b \neq 0$. On dit que $a$ est \textbf{divisible} par $b$ lorsqu'il existe un nombre entier $q$ tel que $a = b \times q$. On appelle le nombre $q$ le \textbf{quotient} de la division de $a$ par $b$. On dit alors que $a$ est un \textbf{multiple} de $b$ et que $b$ est un \textbf{diviseur} de $a$.
+\end{Définition*}
+
+\begin{Exemple}
+$56 = 7 \times 8$ donc \ligne
+
+\ligne
+
+\end{Exemple}
+
+\begin{Propriété}[c] Un nombre entier est divisible par :
+
+\begin{itemize}[label=\textcolor{Couleur1}{$\bullet$}]
+\item $2$ si, et seulement si, son chiffre des unités est $0$, $2$, $4$, $6$ ou $8$ ;
+\item $3$ si, et seulement si, la somme des chiffres qui le composent est un multiple de $3$ ;
+\item $4$ si, et seulement si, le nombre formé par ses deux derniers chiffres est un multiple de $4$ ;
+\item $5$ si, et seulement si, son chiffre des unités est $0$ ou $5$ ;
+\item $9$ si, et seulement si, la somme des chiffres qui le composent est un multiple de $9$ ;
+\item $10$ si, et seulement si, son chiffre des unités est $0$.
+\end{itemize}
+\end{Propriété}
+
+\begin{Exemples}
+\begin{itemize}[label=\textcolor{Couleur8}{$\bullet$}]
+\item $432$ : \ligne
+
+\ligne
+
+\ligne
+
+\item $25$ : \ligne
+
+\item $80$ : \ligne
+
+\end{itemize}
+\end{Exemples}
+
+\begin{Définition*}[c]
+Effectuer la \textbf{division euclidienne} d'un nombre entier (le \textbf{dividende}) par un nombre entier différent de $0$ (le \textbf{diviseur}), c'est déterminer les deux uniques nombres entiers, le \textbf{quotient} et le \textbf{reste}, tels que \textcolor{Couleur6}{\textbf{dividende = diviseur $\times$ quotient + reste}}, avec reste < diviseur.
+\end{Définition*}
+
+\begin{Exemple}
+\begin{minipage}{0.6\textwidth}
+\begin{enumerate}
+\item Poser la division $3875 \div 13$.
+\item En déduire l'égalité correspondante. 
+
+\ligne
+
+\ligne
+
+\ligne
+
+
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\scalebox{0.8}{% ou 1.5, selon vos besoins
+  \Division[CouleurCadre=white,CouleurSolution=black]{3875}{13}
+}
+\end{center}
+\end{minipage}
+
+\end{Exemple}
+
+
+
+\newpage
+
+\subsection*{II. Division décimale}
+\addcontentsline{toc}{subsection}{II. Division décimale}
+
+\begin{Définition*}
+Effectuer la \textbf{division décimale} d'un nombre décimal (le \textbf{dividende}) par un nombre entier différent de $0$ (le \textbf{diviseur}), c'est effectuer l'algorithme qui détermine, jusqu'à l'arrêt, l'unique nombre (le \textbf{quotient décimal}) tel que : \textcolor{Couleur6}{\textbf{dividende = diviseur $\times$ quotient décimal}}.\\
+Lorsque l'algorithme ne s'arrête pas, la division décimale permet de déterminer une valeur approchée du quotient à n'importe quel rang.
+\end{Définition*}
+
+
+\begin{Exemples}
+\begin{minipage}[c]{0.55\textwidth}
+\begin{itemize}[label=\textcolor{Couleur8}{$\bullet$}]
+\item $4,5 = 3 \times 1,5$ donc le quotient décimal de $4,5$ par $3$ est $1,5$.
+\item Il peut être nécessaire de rajouter des $0$ dans la partie décimale de l'écriture du dividende afin de pouvoir terminer la division. Ci-contre, l'algorithme de la division euclidienne de $194$ par $8$ s'arrête.\\
+$194 = 8 \times 24,25$ donc la fraction $\dfrac{194}{8}$ est un nombre décimal : $\dfrac{194}{8} = 24,25$.
+\end{itemize}
+\end{minipage} \hfill \begin{minipage}[c]{0.45\textwidth}
+\begin{center}
+\scalebox{0.8}{% ou 1.5, selon vos besoins
+\DivisionD[CouleurCadre=white,CouleurSolution=black]{194}{8}
+}
+\end{center}
+\end{minipage}
+
+\begin{itemize}[label=\textcolor{Couleur8}{$\bullet$}]
+\item Quand on obtient un reste qu'on avait déjà obtenu, cela signifie que les opérations vont toujours se répéter et que les restes vont se répéter. La division ne se terminera jamais : il est donc inutile de continuer.\\
+
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+% Ligne horizontale principale
+\draw[thick,  black] (2.5,2) -- (4.2,2);
+% Ligne verticale principale
+\draw[thick,  black] (2.5,2.5) -- (2.5,-1.5);
+
+% Dividende 166,0
+\node[ black] at (0.5,2.3) { $1$};
+\node[ black] at (1,2.3) { $6$};
+\node[ black] at (1.5,2.3) { $6$};
+
+
+% Diviseur 3
+\node[ black] at (3,2.3) { $3$};
+
+
+
+\draw[->, thick, black] (6,0) to[out=180, in=30] (2.7,-1.3);
+\node[right, black] at (6.2,0) { On obtient une deuxième fois le reste \textcolor{Couleur7}{\textbf{1}}.};
+\node[right, black] at (6.2,-0.5) { On peut arrêter l'algorithme};
+
+
+\end{tikzpicture}
+\end{center}
+
+Cette division ne se termine jamais, le quotient de $166$ par $3$ a une infinité de chiffres après la virgule : ce n'est pas un nombre décimal. La fraction $\dfrac{166}{3}$ n'est pas un nombre décimal.\\
+On peut dire en revanche que $166 \div 3 \approx 55$. Le nombre $55$ est une valeur approchée à l'unité du quotient de $166$ par $3$.
+\end{itemize}
+\end{Exemples}
+

@@ -48,7 +48,7 @@ x = x + y
 
 Une ligne comme `x = x - 3` signifie : « la variable `x` prend la valeur `x − 3` ». La *nouvelle* valeur de `x` est l'*ancienne* valeur de `x` moins 3.
 
-Complétez ce tableau *sans exécuter le programme*.
+**Q1.** Complétez ce tableau *sans exécuter le programme*.
 
 | N° ligne | Instruction | `x` | `y` |
 |:---:|:---|:---:|:---:|
@@ -57,6 +57,10 @@ Complétez ce tableau *sans exécuter le programme*.
 | 3 | `x = x - 3` | *?* | *?* |
 | 4 | `y = 3 * y` | *?* | *?* |
 | 5 | `x = x + y` | *?* | *?* |
+
+**Q2.** Recopiez ce programme (*sans copier-coller*) et ajoutez l'instruction pour afficher la valeur finale de `x`. Vérifiez votre tableau.
+
+**Q3.** Modifiez la dernière ligne pour afficher les valeurs finales de `x` **et** `y` avec `print(x, y)`.
 
 ---
 
@@ -93,7 +97,11 @@ est_en_pause = True
 abonnement_actif = True
 ```
 
-Quelle valeur (`True` ou `False`) donneriez-vous à chaque variable dans les situations suivantes ?
+**Q1.** Sans exécuter, quel est le type de chacune de ces variables ?
+
+**Q2.** Exécutez la cellule ci-dessus pour vérifier. Ajoutez ensuite les instructions pour afficher le type de `son_coupe` et de `abonnement_actif`.
+
+**Q3.** Quelle valeur (`True` ou `False`) donneriez-vous à chaque variable dans les situations suivantes ?
 
 - `est_connecte` si l'utilisateur vient de se déconnecter
 - `son_coupe` si l'utilisateur vient de couper le son
@@ -128,7 +136,9 @@ prix-total = nb articles * prix unitaire
 print(Prix_total)
 ```
 
-Identifiez les 4 erreurs (une par ligne), puis réécrivez le programme corrigé.
+**Q1.** Lisez le programme et identifiez les 4 erreurs *avant* d'exécuter quoi que ce soit.
+
+**Q2.** Corrigez le programme dans la cellule ci-dessous et exécutez-le pour vérifier.
 
 ---
 
@@ -136,13 +146,13 @@ Identifiez les 4 erreurs (une par ligne), puis réécrivez le programme corrigé
 
 Un élève a obtenu les notes suivantes : **11**, **14,5**, **9** et **16**.
 
-Écrivez un programme Python contenant :
+**Q2.** Écrivez un programme Python contenant :
 
 - 4 variables **bien nommées** pour les 4 notes
 - une variable `moyenne` contenant la moyenne
 - une instruction `print` pour afficher la moyenne
 
-Quelle est la moyenne de cet élève ?
+**Q3.** Quelle est la moyenne de cet élève ?
 
 ---
 
@@ -178,11 +188,17 @@ On veut écrire un programme de calcul avec une variable `B` :
 
 Pour calculer $\sqrt{a}$ en Python, on utilise `sqrt(a)` du module `math` en ajoutant `from math import *` en début de programme.
 
-D'après le **théorème de Pythagore**, l'hypoténuse $c$ d'un triangle rectangle de côtés $a$ et $b$ vérifie $c = \sqrt{a^2 + b^2}$.
+**Q1.** Exécutez le programme ci-dessous et observez les résultats.
 
-Écrivez un programme Python qui calcule et affiche l'hypoténuse d'un triangle rectangle de côtés `a = 3` et `b = 4`. Vérifiez votre résultat à la main.
+**Q2.** D'après le **théorème de Pythagore**, l'hypoténuse $c$ d'un triangle rectangle de côtés $a$ et $b$ vérifie $c = \sqrt{a^2 + b^2}$. Écrivez un programme Python qui calcule et affiche l'hypoténuse d'un triangle rectangle de côtés `a = 3` et `b = 4`.
 
-**Bonus** : La distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Calculez la distance entre $A(1, 2)$ et $B(4, 6)$.
+*Rappel : en Python, `a**2` donne $a^2$, et `sqrt()` calcule la racine carrée.*
+
+**Q3.** Vérifiez votre résultat à la main. Quelle est la valeur exacte de l'hypoténuse ?
+
+*Astuce : 3, 4, 5 est un triplet pythagoricien connu.*
+
+**Q4 — Bonus.** La distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Calculez la distance entre $A(1, 2)$ et $B(4, 6)$.
 
 ---
 
@@ -208,23 +224,25 @@ y = z / 2
 | 4 | `z = z ** 2` | 2 | 6 | *?* |
 | 5 | `y = z / 2` | 2 | *?* | *?* |
 
-**Q2.** Ajoutez **une ligne** qui crée une variable booléenne `z_est_pair` valant `True` si `z` est pair, `False` sinon.
+**Q2.** Recopiez ce programme (*sans copier-coller*) et ajoutez les instructions pour afficher les valeurs finales de `x`, `y` et `z`. Vérifiez votre tableau.
+
+**Q3.** Ajoutez **une ligne** qui crée une variable booléenne `z_est_pair` valant `True` si `z` est pair, `False` sinon.
 
 *Rappel : un entier est pair si son reste dans la division par 2 est 0 (`z % 2 == 0`).*
+
+**Q4.** Quelle est la valeur de `z_est_pair` ? Était-ce prévisible d'après votre tableau ?
 
 ---
 
 ### Exercice 13 — Programme interactif
 
-Utilisez `input()` pour écrire un programme qui :
+**Q1.** Exécutez le programme ci-dessous. Que se passe-t-il ?
 
-1. Demande **deux nombres entiers** à l'utilisateur
-2. Calcule leur **somme**
-3. Affiche le résultat
+**Q2.** Complétez le programme pour qu'il demande deux **nombres entiers**, calcule leur **somme** et l'affiche.
 
 *Rappel : `input()` renvoie toujours une chaîne (`str`). Utilisez `int()` pour convertir en entier.*
 
-**Bonus** : Adaptez le programme de la moyenne (exercice 8) pour que les 4 notes soient **demandées à l'utilisateur** avec `input()`.
+**Q3 — Défi.** Adaptez le programme de la moyenne (exercice 8) pour que les 4 notes soient **demandées à l'utilisateur** avec `input()`.
 
 ---
 
@@ -242,7 +260,7 @@ r2 = 2 * a + " " + b
 r3 = b + c + " " + b + c
 ```
 
-Prédisez **sans exécuter** la valeur de `r1`, `r2` et `r3`, puis vérifiez en exécutant.
+**Q1.** Prédisez **sans exécuter** la valeur de `r1`, `r2` et `r3`. Complétez le tableau ci-dessous.
 
 | Variable | Valeur prédite | Valeur réelle |
 |:---:|:---|:---:|
@@ -250,13 +268,15 @@ Prédisez **sans exécuter** la valeur de `r1`, `r2` et `r3`, puis vérifiez en 
 | `r2` | *?* | |
 | `r3` | *?* | |
 
-En utilisant uniquement les variables `a`, `b` et `c`, écrivez l'instruction qui affiche exactement : `Bonsoir Bonsoir !`
+**Q2.** Recopiez le programme et ajoutez les instructions `print` pour afficher `r1`, `r2` et `r3`. Complétez la colonne "Valeur réelle" du tableau.
+
+**Q3.** En utilisant uniquement les variables `a`, `b` et `c`, écrivez l'instruction qui affiche exactement : `Bonsoir Bonsoir !`
 
 ---
 
 ### Exercice 15 — Ma carte d'identité
 
-Complétez et exécutez le programme suivant avec vos vraies informations :
+**Q1.** Complétez et exécutez le programme suivant avec vos vraies informations :
 
 ```python
 prenom = "..."       # votre prénom
@@ -266,7 +286,11 @@ classe = "..."       # votre classe
 print("Je m'appelle " + prenom + " " + nom + " et je suis en " + classe + ".")
 ```
 
-Que se passe-t-il si on remplace la dernière ligne par `print(nom.upper() + " " + prenom)` ? Expliquez ce que fait `.upper()`.
+**Q2.** Que se passe-t-il si on remplace la dernière ligne par `print(nom.upper() + " " + prenom)` ? Expliquez ce que fait `.upper()`.
+
+**Q3 — Défi.** Écrivez un programme qui demande à l'utilisateur son prénom et un nombre entier `n`, puis affiche ce prénom répété `n` fois, séparé par des tirets.
+
+*Exemple : si prénom = `"Léa"` et n = 3, le programme affiche `Léa-Léa-Léa`.*
 
 ---
 

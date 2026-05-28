@@ -1,0 +1,443 @@
+\documentclass[10pt,a4paper]{article}
+
+% ----- Encodage & langue -----
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+% ----- Mise en page -----
+\usepackage{geometry}
+\geometry{top=1.5cm,bottom=1.5cm,left=1.5cm,right=1.5cm}
+
+% Colonnes
+\usepackage{multicol}
+\setlength{\columnsep}{0.75cm}            % espace entre colonnes
+\setlength{\columnseprule}{0.2pt}      % épaisseur de la ligne
+\def\columnseprulecolor{\color{Couleur8}} % couleur de la ligne
+
+% Maths et figures
+\usepackage{amsmath, amssymb}
+\usepackage{tikz}
+\usetikzlibrary{babel,arrows,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+
+\usetikzlibrary{calc}
+
+% Listes compactes
+\usepackage{enumitem}
+\setlist{nosep, itemsep=0.4em, parsep=0pt}
+\setlist[enumerate,1]{label=\alph*.}
+
+% Couleurs
+\usepackage{xcolor}
+\definecolor{exoblue}{HTML}{005F73}
+
+%----------------------------------------------------------------------------------------
+%	 COULEURS
+%----------------------------------------------------------------------------------------
+
+\definecolor{Couleur1}{HTML}{8b1f30}
+\definecolor{Couleur2}{HTML}{725E74}
+\definecolor{Couleur3}{HTML}{78985b}
+\definecolor{Couleur4}{HTML}{db3e56}
+\definecolor{Couleur5}{HTML}{487C4B}
+\definecolor{Couleur6}{HTML}{CF6876}
+\definecolor{Couleur7}{HTML}{A5C03F} %Vert
+\definecolor{Couleur8}{HTML}{D36740} %Orange
+\definecolor{Couleur9}{HTML}{7BB48A} %Bleu-Vert
+\definecolor{Couleur10}{HTML}{EA8556} %Orange
+\definecolor{Couleur11}{HTML}{E6B459} %Jaune
+\definecolor{Couleur12}{HTML}{9AC8EB} %Bleu
+
+\definecolor{Bord1}{HTML}{302635}
+\definecolor{Bord2}{HTML}{725E74}
+\definecolor{Bord3}{HTML}{938999}
+\definecolor{Bord4}{HTML}{817888}
+\definecolor{Bord5}{HTML}{487C4B}
+\definecolor{Bord6}{HTML}{8C436B}
+\definecolor{Bord7}{HTML}{A5C03F} %Vert
+\definecolor{Bord8}{HTML}{D36740} %Orange
+
+% ----- Police sans serif -----
+\renewcommand{\familydefault}{\sfdefault}
+
+% ----- Exercice -----
+\newcounter{exo}
+\newcommand{\exo}[1][]{%
+  \refstepcounter{exo}%
+  \textbf{\textcolor{Couleur8}{\\[0.3cm]\theexo.}}%
+  \if\relax\detokenize{#1}\relax\else\ \textbf{#1}\fi\ %
+}
+
+
+\newcommand{\pointille}[1]{\makebox[#1]{\dotfill}}
+\newcommand{\ligne}{\noindent\dotfill\vspace{0.4em}}
+
+\begin{document}
+\begin{Large}\textbf{\textcolor{Couleur8}{EXERCICES - Chapitre 5 - Calculer astucieusement}} \end{Large}
+
+\begin{multicols}{2}
+
+% @see : https://coopmaths.fr/alea?uuid=c8078&id=can6C05&n=6&d=10&alea=t25Y&cd=1&cols=3
+\exo Calculer.
+
+\begin{enumerate}[itemsep=1em]
+	\item \begin{minipage}[t]{\linewidth} $5 \times 3{,}98\times 2 = $ \ligne
+	
+	 \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $4 \times 9{,}23\times 25= $ \ligne
+	
+	  \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $2 \times 1{,}47\times 5= $ \ligne
+	
+	  \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $4 \times 7{,}36\times 25= $ \ligne
+	
+	  \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $2 \times 6{,}81\times 50= $ \ligne
+	
+	  \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $50 \times 7{,}13\times 2= $ \ligne
+	
+	  \end{minipage}
+\end{enumerate}
+
+ 
+
+% @see : https://coopmaths.fr/alea?uuid=47a54&id=6N2B-1&n=4&d=10&s=false&alea=WKjA&cd=1&cols=1
+\exo Les calculs suivants sont faux. \\
+Placer la virgule correctement dans le résultat pour que le calcul soit juste.
+
+\begin{enumerate}[itemsep=1em]
+	\item $70\,855{,}7 \times 0{,}001$$~~ = ~~\phantom{......}708\,557$\\
+	\item $14{,}3 \times 0{,}1$$~~ = ~~\phantom{......}143$\\
+	\item $0{,}025 \times 0{,}1$$~~ = ~~\phantom{......}25$\\
+	\item $91{,}1 \times 0{,}1$$~~ = ~~\phantom{......}911$\\
+\end{enumerate}
+ 
+
+% @see : https://coopmaths.fr/alea?uuid=5df6e&id=6N2B&n=4&d=10&s=false&s2=3&alea=bB7l&cd=1&cols=1
+\exo Compléter les pointillés.
+
+\begin{enumerate}[itemsep=1em]
+	\item $0{,}165 \times 0{,}1\,\,=\ldots\ldots$
+	\item $9{,}73 \times 0{,}01\,\,=\ldots\ldots$
+	\item $7{,}65 \times 0{,}001\,\,=\ldots\ldots$
+	\item $82\,551{,}2 \times 0{,}1\,\,=\ldots\ldots$
+\end{enumerate}
+ 
+
+% @see : https://coopmaths.fr/alea?uuid=5df6e&id=6N2B&n=4&d=10&s=false&s2=2&alea=IWKj&cd=1&cols=1
+\exo Compléter les pointillés.
+
+\begin{enumerate}[itemsep=1em]
+	\item $897{,}095 \times \ldots\ldots\,\,=\,\,89{,}709\,5$
+	\item $423{,}538 \times \ldots\ldots\,\,=\,\,0{,}423\,538$
+	\item $60\,397 \times \ldots\ldots\,\,=\,\,603{,}97$
+	\item $3\,346{,}56 \times \ldots\ldots\,\,=\,\,33{,}465\,6$
+\end{enumerate}
+ 
+
+
+% @see : https://coopmaths.fr/alea?uuid=5df6e&id=6N2B&n=4&d=10&s=false&s2=1&alea=sW2h&cd=1&cols=1
+\exo Compléter les pointillés.
+
+\begin{enumerate}[itemsep=1em]
+	\item $\ldots\ldots\times 0{,}001\,\,=\,\,0{,}009\,5$
+	\item $\ldots \ldots\times 0{,}01\,\,=\,\,0{,}111$
+	\item $\ldots \ldots\times 0{,}1\,\,=\,\,7\,779{,}96$
+	\item $\ldots \ldots\times 0{,}01\,\,=\,\,621{,}262$
+\end{enumerate}
+ 
+  \columnbreak
+
+% @see : https://coopmaths.fr/alea?uuid=53034&id=can6C24&n=5&d=10&s=2&alea=home&cd=1&cols=1
+\exo Calculer
+
+\begin{enumerate}[itemsep=1em]
+	\item $839\div 0{,}1 = \ldots\ldots$
+	\item $564\div 0{,}001= \ldots\ldots$
+	\item $516\div 0{,}01= \ldots\ldots$
+	\item $142\div 0{,}001= \ldots\ldots$
+	\item $452\div 0{,}01= \ldots\ldots$
+\end{enumerate}
+ 
+
+% @see : https://coopmaths.fr/alea?uuid=16ea9&id=can6C30&n=9&d=10&alea=vLiK&cd=1&cols=3
+\exo Calculer
+\begin{multicols}{2}
+\begin{enumerate}[itemsep=1em]
+	\item \begin{minipage}[t]{\linewidth} $0{,}06\times 3= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}5\times 0{,}02= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}6\times 4= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}9\times 7= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}6\times 0{,}03= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}02\times 6= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}4\times 4= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}7\times 0{,}03= \ldots\ldots$ \end{minipage}
+	\item \begin{minipage}[t]{\linewidth} $0{,}8\times 0{,}08= \ldots\ldots$ \end{minipage}
+	
+\end{enumerate}
+\end{multicols}
+ 
+
+% @see : https://coopmaths.fr/alea?uuid=625c0&id=6N2D&n=3&d=10&s=1&alea=8ALX&cd=1&cols=1
+\exo 
+
+\begin{enumerate}[itemsep=1em]
+	\item 
+          Sachant que $51\times 51 = 2\,601$,
+          calculer $51\times 51\,000$. \\
+ 
+          
+\ligne
+            
+	\item 
+            Sachant que $94\times 85 = 7\,990$,
+            calculer $9{,}4\times 85$. \\
+         
+           
+           \ligne
+           
+            
+	\item 
+          Sachant que $78\times 88 = 6\,864$,
+          calculer $7{,}8\times 88\,000$. \\
+         
+          
+          \ligne
+          
+\end{enumerate}
+ 
+
+% @see : https://coopmaths.fr/alea?uuid=81a00&id=can6C25&n=1&d=10&alea=jtIp&cd=1&cols=1
+\exo 
+
+ À la boulangerie, Valérie achète $4$ pains au chocolat.\\
+     Elle paie avec un billet de $10$ euros.\\
+     On lui rend $5{,}60$ euros.\\
+     
+    Quel est le prix d'un pain au chocolat ?
+ 
+\ligne
+
+\ligne
+
+\ligne
+
+
+% @see : https://coopmaths.fr/alea?uuid=b40d5&id=can6C48&n=1&d=10&alea=MeHb&cd=1&cols=1
+\exo 
+
+ Dans la station A, le prix du litre d'essence est $6$ centimes moins cher que dans la station B.\\
+    Quelle économie réalise-t-on en se servant dans la station A si on prend $50$ litres ?
+ 
+ \ligne
+
+\ligne
+
+\ligne
+
+
+
+\end{multicols}
+
+
+\newpage 
+
+\begin{Large}\textbf{\textcolor{Couleur8}{Correction - Chapitre 9 - Calculer astucieusement}} \end{Large}
+
+\exo  
+
+\begin{enumerate}[itemsep=1em]
+	\item $5 \times 3{,}98\times 2 = 10 \times 3{,}98 = 39{,}8${\color[HTML]{f15929}\\ Mentalement : \\
+    On remarque dans $5 \times 3{,}98\times 2$ le produit $5\times 2$ qui donne $10$.\\
+    Il reste alors à multiplier par $10$ le nombre $3{,}98$ : le chiffre des unités ($3$) devient le chiffre des dizaines, etc ...
+    on obtient ainsi comme résultat : $39{,}8$.
+      }
+	\item $4 \times 9{,}23\times 25 = 100 \times 9{,}23 = {\color[HTML]{f15929}\boldsymbol{923}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  On remarque dans $4 \times 9{,}23\times 25$ le produit $4\times 25$ qui donne $100$.\\
+  Il reste alors à multiplier par $100$ le nombre $9{,}23$ : le chiffre des unités ($9$) devient le chiffre des centaines, etc ...
+  on obtient ainsi comme résultat : $923$.
+    }
+	\item $2 \times 1{,}47\times 5 = 10 \times 1{,}47 = 14{,}7${\color[HTML]{f15929}\\ Mentalement : \\
+    On remarque dans $2 \times 1{,}47\times 5$ le produit $2\times 5$ qui donne $10$.\\
+    Il reste alors à multiplier par $10$ le nombre $1{,}47$ : le chiffre des unités ($1$) devient le chiffre des dizaines, etc ...
+    on obtient ainsi comme résultat : $14{,}7$.
+      }
+	\item $4 \times 7{,}36\times 25 = 100 \times 7{,}36 = {\color[HTML]{f15929}\boldsymbol{736}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  On remarque dans $4 \times 7{,}36\times 25$ le produit $4\times 25$ qui donne $100$.\\
+  Il reste alors à multiplier par $100$ le nombre $7{,}36$ : le chiffre des unités ($7$) devient le chiffre des centaines, etc ...
+  on obtient ainsi comme résultat : $736$.
+    }
+	\item $2 \times 6{,}81\times 50 = 100 \times 6{,}81 = 681${\color[HTML]{f15929}\\ Mentalement : \\
+  On remarque dans $2 \times 6{,}81\times 50$ le produit $2\times 50$ qui donne $100$.\\
+  Il reste alors à multiplier par $100$ le nombre $6{,}81$ : le chiffre des unités ($6$) devient le chiffre des centaines, etc ...
+  on obtient ainsi comme résultat : $681$.
+    }
+	\item $50 \times 7{,}13\times 2 = 100 \times 7{,}13 = 713${\color[HTML]{f15929}\\ Mentalement : \\
+  On remarque dans $50 \times 7{,}13\times 2$ le produit $2\times 50$ qui donne $100$.\\
+  Il reste alors à multiplier par $100$ le nombre $7{,}13$ : le chiffre des unités ($7$) devient le chiffre des centaines, etc ...
+  on obtient ainsi comme résultat : $713$.
+    }
+\end{enumerate}
+ 
+
+\exo  
+
+\begin{enumerate}[itemsep=1em]
+	\item Quand on multiplie par $0{,}001=\dfrac{1}{1\,000}$, chaque chiffre prend une valeur $1\,000$ fois plus petite.\\Le chiffre des unités se positionne donc dans les millièmes :\\$70\,855{,}7 \times 0{,}001 = 70{,}855\,7$
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\$14{,}3 \times 0{,}1 = 1{,}43$
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\$0{,}025 \times 0{,}1 = 0{,}002\,5$
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\$91{,}1 \times 0{,}1 = 9{,}11$
+\end{enumerate}
+ 
+
+\exo  
+
+\begin{enumerate}[itemsep=1em]
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\$0{,}165 \times 0{,}1\,\,=\,\,{\color[HTML]{f15929}\boldsymbol{0{,}016\,5}}$
+	\item Quand on multiplie par $0{,}01=\dfrac{1}{100}$, chaque chiffre prend une valeur $100$ fois plus petite.\\Le chiffre des unités se positionne donc dans les centièmes :\\$9{,}73 \times 0{,}01\,\,=\,\,{\color[HTML]{f15929}\boldsymbol{0{,}097\,3}}$
+	\item Quand on multiplie par $0{,}001=\dfrac{1}{1\,000}$, chaque chiffre prend une valeur $1\,000$ fois plus petite.\\Le chiffre des unités se positionne donc dans les millièmes :\\$7{,}65 \times 0{,}001\,\,=\,\,{\color[HTML]{f15929}\boldsymbol{0{,}007\,65}}$
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\$82\,551{,}2 \times 0{,}1\,\,=\,\,{\color[HTML]{f15929}\boldsymbol{8\,255{,}12}}$
+\end{enumerate}
+ 
+
+\exo  
+
+\begin{enumerate}[itemsep=1em]
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\$897{,}095 \times {\color[HTML]{f15929}\boldsymbol{0{,}1}}\,\,=\,\,89{,}709\,5$
+	\item Quand on multiplie par $0{,}001=\dfrac{1}{1\,000}$, chaque chiffre prend une valeur $1\,000$ fois plus petite.\\Le chiffre des unités se positionne donc dans les millièmes :\\$423{,}538 \times {\color[HTML]{f15929}\boldsymbol{0{,}001}}\,\,=\,\,0{,}423\,538$
+	\item Quand on multiplie par $0{,}01=\dfrac{1}{100}$, chaque chiffre prend une valeur $100$ fois plus petite.\\Le chiffre des unités se positionne donc dans les centièmes :\\$60\,397 \times {\color[HTML]{f15929}\boldsymbol{0{,}01}}\,\,=\,\,603{,}97$
+	\item Quand on multiplie par $0{,}01=\dfrac{1}{100}$, chaque chiffre prend une valeur $100$ fois plus petite.\\Le chiffre des unités se positionne donc dans les centièmes :\\$3\,346{,}56 \times {\color[HTML]{f15929}\boldsymbol{0{,}01}}\,\,=\,\,33{,}465\,6$
+\end{enumerate}
+ 
+
+\exo  
+
+\begin{enumerate}[itemsep=1em]
+	\item Quand on multiplie par $0{,}001=\dfrac{1}{1\,000}$, chaque chiffre prend une valeur $1\,000$ fois plus petite.\\Le chiffre des unités se positionne donc dans les millièmes :\\${\color[HTML]{f15929}\boldsymbol{9{,}5}} \times 0{,}001\,\,=\,\,0{,}009\,5$
+	\item Quand on multiplie par $0{,}01=\dfrac{1}{100}$, chaque chiffre prend une valeur $100$ fois plus petite.\\Le chiffre des unités se positionne donc dans les centièmes :\\${\color[HTML]{f15929}\boldsymbol{11{,}1}} \times 0{,}01\,\,=\,\,0{,}111$
+	\item Quand on multiplie par $0{,}1=\dfrac{1}{10}$, chaque chiffre prend une valeur $10$ fois plus petite.\\Le chiffre des unités se positionne donc dans les dixièmes :\\${\color[HTML]{f15929}\boldsymbol{77\,799{,}6}} \times 0{,}1\,\,=\,\,7\,779{,}96$
+	\item Quand on multiplie par $0{,}01=\dfrac{1}{100}$, chaque chiffre prend une valeur $100$ fois plus petite.\\Le chiffre des unités se positionne donc dans les centièmes :\\${\color[HTML]{f15929}\boldsymbol{62\,126{,}2}} \times 0{,}01\,\,=\,\,621{,}262$
+\end{enumerate}
+ 
+
+\exo  
+
+\begin{enumerate}[itemsep=1em]
+	\item $839\div 0{,}1={\color[HTML]{f15929}\boldsymbol{8\,390}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  Diviser par $0,1$ revient à multiplier par $10$. \\
+  Quand on multiplie par $10$, le chiffre des unités (chiffre souligné) dans le nombre  $83\underline{9}$
+  devient le chiffre des dizaines. On obtient alors :\\
+  $839\div 0{,}1=839\times 10=8\,3\underline{9}0$.\\
+  Remarque : En divisant un nombre par $0,1$, le résultat doit être plus grand que le nombre divisé.
+     }
+	\item $564\div 0{,}001={\color[HTML]{f15929}\boldsymbol{564\,000}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  Diviser par $0,001$ revient à multiplier par $1000$. \\
+  Quand on multiplie par $1000$, le chiffre des unités (chiffre souligné) dans le nombre  $56\underline{4}$
+  devient le chiffre des unités de mille. On obtient alors :\\
+  $564\div 0{,}001=564\times 1000=56\underline{4}\,000$.\\
+  Remarque : En divisant un nombre par $0,001$, le résultat doit être plus grand que le nombre divisé.
+     }
+	\item $516\div 0{,}01={\color[HTML]{f15929}\boldsymbol{51\,600}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  Diviser par $0,01$ revient à multiplier par $100$. \\
+  Quand on multiplie par $100$, le chiffre des unités (chiffre souligné) dans le nombre  $51\underline{6}$
+  devient le chiffre des centaines. On obtient alors :\\
+  $516\div 0{,}01=516\times 100=51\,\underline{6}00$.\\
+  Remarque : En divisant un nombre par $0,01$, le résultat doit être plus grand que le nombre divisé.
+     }
+	\item $142\div 0{,}001={\color[HTML]{f15929}\boldsymbol{142\,000}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  Diviser par $0,001$ revient à multiplier par $1000$. \\
+  Quand on multiplie par $1000$, le chiffre des unités (chiffre souligné) dans le nombre  $14\underline{2}$
+  devient le chiffre des unités de mille. On obtient alors :\\
+  $142\div 0{,}001=142\times 1000=14\underline{2}\,000$.\\
+  Remarque : En divisant un nombre par $0,001$, le résultat doit être plus grand que le nombre divisé.
+     }
+	\item $452\div 0{,}01={\color[HTML]{f15929}\boldsymbol{45\,200}}$\\{\color[HTML]{216D9A}\\ Mentalement : \\
+  Diviser par $0,01$ revient à multiplier par $100$. \\
+  Quand on multiplie par $100$, le chiffre des unités (chiffre souligné) dans le nombre  $45\underline{2}$
+  devient le chiffre des centaines. On obtient alors :\\
+  $452\div 0{,}01=452\times 100=45\,\underline{2}00$.\\
+  Remarque : En divisant un nombre par $0,01$, le résultat doit être plus grand que le nombre divisé.
+     }
+\end{enumerate}
+ 
+
+\exo  
+\begin{enumerate}[itemsep=1em]
+	\item $0{,}06\times 3={\color[HTML]{f15929}\boldsymbol{0{,}18}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}06=6\times 0,01$, alors $0{,}06\times 3=6\times 0,01\times 3 =
+   18\times 0,01=0{,}18$ }
+	\item $0{,}5\times 0{,}02={\color[HTML]{f15929}\boldsymbol{0{,}01}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}5=5\times 0,1$ et $0{,}02=2\times 0,01$,
+    alors $0{,}5\times 0{,}02=5\times 2\times 0,01 \times 0,1=10\times 0,001=0{,}01$ }
+	\item $0{,}6\times 4={\color[HTML]{f15929}\boldsymbol{2{,}4}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}6=6\times 0,1$, alors $0{,}6\times 4=6\times 0,1\times 4 =
+   24\times 0,1=2{,}4$ }
+	\item $0{,}9\times 7={\color[HTML]{f15929}\boldsymbol{6{,}3}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}9=9\times 0,1$, alors $0{,}9\times 7=9\times 0,1\times 7 =
+   63\times 0,1=6{,}3$ }
+	\item $0{,}6\times 0{,}03={\color[HTML]{f15929}\boldsymbol{0{,}018}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}6=6\times 0,1$ et $0{,}03=3\times 0,01$,
+    alors $0{,}6\times 0{,}03=6\times 3\times 0,01 \times 0,1=18\times 0,001=0{,}018$ }
+	\item $0{,}02\times 6={\color[HTML]{f15929}\boldsymbol{0{,}12}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}02=2\times 0,01$, alors $0{,}02\times 6=2\times 0,01\times 6 =
+   12\times 0,01=0{,}12$ }
+	\item $0{,}4\times 4={\color[HTML]{f15929}\boldsymbol{1{,}6}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}4=4\times 0,1$, alors $0{,}4\times 4=4\times 0,1\times 4 =
+   16\times 0,1=1{,}6$ }
+	\item $0{,}7\times 0{,}03={\color[HTML]{f15929}\boldsymbol{0{,}021}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}7=7\times 0,1$ et $0{,}03=3\times 0,01$,
+    alors $0{,}7\times 0{,}03=7\times 3\times 0,01 \times 0,1=21\times 0,001=0{,}021$ }
+	\item $0{,}8\times 0{,}08={\color[HTML]{f15929}\boldsymbol{0{,}064}}$\\{\color[HTML]{216D9A}
+    \\ Mentalement : \\
+   Comme $0{,}8=8\times 0,1$ et $0{,}08=8\times 0,01$,
+    alors $0{,}8\times 0{,}08=8\times 8\times 0,01 \times 0,1=64\times 0,001=0{,}064$ }
+\end{enumerate}
+ 
+
+\exo  
+\begin{enumerate}[itemsep=1.5em]
+	\item 
+          $51\times 51\,000 = 51\times 51\times 1\,000 = 2\,601\times 1\,000 = {\color[HTML]{f15929}\boldsymbol{2\,601\,000}}$
+          
+	\item 
+          $9{,}4\times 85 = 94\times 0{,}1 \times 85 = 94\times 85\times 0{,}1 =  7\,990\times 0{,}1 = {\color[HTML]{f15929}\boldsymbol{799}}$
+          
+	\item 
+          $7{,}8\times 88\,000 = 78\times 0{,}1 \times 88\times 1\,000 = 78\times 88\times 0{,}1\times 1\,000 = 6\,864\times 0{,}1\times 1\,000 = {\color[HTML]{f15929}\boldsymbol{686\,400}}$
+          
+\end{enumerate}
+ 
+
+\exo  Valérie achète $4$ pains au chocolat. Comme on lui rend $5{,}60$ euros sur son billet de $10$ euros,
+    ses pains au chocolat lui ont coûté : $10-5{,}6=4{,}40$ euros.\\
+    Le prix d'un pain au chocolat est donc donné par :  $4{,}4\div 4={\color[HTML]{f15929}\boldsymbol{1{,}10}}$ euros. 
+ 
+
+\exo  On  calcule l'économie par le produit du nombre de litres achetés par l'économie par litre réalisée. \\
+     Comme $6$ centimes est égal à $0{,}06$\, €, on obtient :\\ $0{,}06\times 50={\color[HTML]{f15929}\boldsymbol{3}}$\, €.
+    
+ 
+
+
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:
+
+
+
+
+
+
+\end{document}

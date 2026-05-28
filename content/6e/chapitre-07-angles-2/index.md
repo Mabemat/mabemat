@@ -1,0 +1,12 @@
+---
+title: "Angles (2)"
+level: "6e"
+chapter_number: 7
+weight: 7
+has_cours: true
+has_pixelart: false
+has_exercices: false
+has_qcm: false
+show_lecon: true
+categorie: Espace et géométrie
+---

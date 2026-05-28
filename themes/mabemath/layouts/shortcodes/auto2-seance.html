@@ -1,0 +1,12 @@
+{{ $type := .Get "type" | default "classique" }}
+{{ if eq $type "classique" }}
+<section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
+  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  {{ .Inner | safeHTML }}
+</section>
+{{ else }}
+<section id="panel-devoir" class="mode-panel panel-devoir">
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
+  {{ .Inner | safeHTML }}
+</section>
+{{ end }}

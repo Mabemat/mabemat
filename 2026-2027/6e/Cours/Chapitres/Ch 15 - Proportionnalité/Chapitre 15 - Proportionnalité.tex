@@ -1,0 +1,266 @@
+\section*{Chapitre 15 - Proportionnalité}
+\addcontentsline{toc}{section}{Chapitre 15 - Proportionnalité}
+
+\subsection*{I. Situation de proportionnalité}
+\addcontentsline{toc}{subsection}{I. Situation de proportionnalité}
+
+\begin{Définition}[c]
+Deux grandeurs sont \textbf{proportionnelles} lorsque l'on peut passer des valeurs de l'une aux valeurs de l'autre en multipliant par \textbf{un même nombre non nul}, appelé \textbf{coefficient de proportionnalité}. Pour les représenter, on utilise un \textbf{tableau de proportionnalité}.
+\end{Définition}
+
+\begin{Exemples}
+\begin{enumerate}
+\item À 10 ans, Jade mesurait 1,20 m. Aujourd'hui, elle a 20 ans et elle mesure 1,70 m.\\
+La taille de Jade est-elle proportionnelle à son âge ? \\
+Comme $2 \times 10\text{ ans}= 20\text{ ans}$ mais $2 \times 1,20\text{ m}= 2,40\text{ m} \neq 1,70\text{ m}$. \\
+La taille de Jade n'est pas proportionnelle à son âge.
+\item Au marché, 2 kg de bananes coûtent 5 € et 6 kg coûtent 15 €.\\
+Le prix des bananes est-il proportionnel à la quantité achetée ?\\
+Comme $3 \times 2 \text{ kg} = 6 \text{ kg}$ et que $3 \times 5 \text{ €}= 15 \text{ €}$\\
+Le prix des bananes est proportionnel à la quantité achetée.
+\end{enumerate}
+\end{Exemples}
+
+\begin{Exemple}
+Le tableau donne le prix par kilo de pommes achetées. \\
+Le prix est-il proportionnel à la masse de pommes achetées ?
+\begin{center}
+\begin{tikzpicture}
+    % Tableau principal  
+    \node at (0,0) { \arrayrulecolor{Couleur8}
+        \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}p{1cm}|>{\centering\arraybackslash}p{1cm}|>{\centering\arraybackslash}p{1cm}|>{\centering\arraybackslash}p{1cm}|}
+            \hline
+            \cellcolor{Couleur8!10} Masse (en kg) & 1 & 2 & 6 \\
+            \hline
+            \cellcolor{Couleur8!10}Prix (en €) & 2,50 & 5 & 15  \\
+            \hline
+        \end{tabular}
+    };
+    
+    % Flèches et annotations
+    \draw[->, thick] (4.5, 0.3) to[bend left=45] (4.5, -0.3);
+    \node at (5.5, 0) {$\times 2,5$};
+    
+    \draw[->, thick] (-4.5, -0.3) to[bend left=45] (-4.5, 0.3);
+    \node at (-5.5, 0) {$\div 2,5$};
+    
+\end{tikzpicture}
+\end{center}
+$\dfrac{2,50}{1}=2,50$ ; $\dfrac{5}{2}=2,50$ et $\dfrac{15}{6}=2,50$.\\
+
+TOUS les rapports étant égaux, le prix est bien proportionnel à la masse de pommes achetées. On dit que 2,5 est le \textbf{coefficient de proportionnalité}. 
+\end{Exemple}
+
+\begin{Définition}[c]
+La \textbf{proportion} d'une partie d'un ensemble est définie par le quotient :
+$$\text{Proportion} = \dfrac{\text{Nombre d'éléments de la partie}}{\text{Nombre total d'éléments}}$$
+\end{Définition}
+
+\begin{Exemple}
+Dans un sac, il y a deux boules blanches et huit boules noires. \\
+Quelle est la proportion de boules blanches ?\\
+La proportion de boules blanches dans le sac est donc $\dfrac{2}{10} = 0,2 = 20\,\%$.
+\end{Exemple}
+
+\begin{Remarque}
+Une proportion est toujours inférieure ou égale à 1.
+\end{Remarque}
+
+\newpage
+
+\subsection*{II. Résoudre des problèmes}
+\addcontentsline{toc}{subsection}{II. Résoudre des problèmes}
+
+\begin{Méthode}
+$ $ \\ 
+$ $ \\ 
+\begin{minipage}[c]{.6\textwidth}
+Dans un magasin, on vend des crayons à l'unité.
+Pour trois crayons, on paie 3,60 €.\\
+Combien paiera-t-on pour cinq crayons ?\\
+Pour résoudre ce problème, on peut chercher le prix d'un seul crayon : c'est le \textbf{passage à l'unité}.
+\begin{itemize}[label=\textcolor{Couleur7}{$\bullet$}]
+\item $3,60 \div 3 = 1,20$ : un crayon coûte 1,20 €.
+\item $1,20 \times 5 = 6$ : cinq crayons coûtent au total 6 €.
+\end{itemize}
+\end{minipage} \hfill \begin{minipage}[c]{.40\textwidth}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+% Dessins de crayons
+\node at (-0.5,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node at (0,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node at (0.5,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node[below] at (0.5,1.8) {3,60 €};
+
+
+\node at (2.5,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node[below] at (3,1.8) {1,20 €};
+
+\node at (4,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node at (4.5,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node at (5,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node at (5.5,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node at (6,2.4) {\includegraphics[scale=.05]{IMG/crayon}};
+\node[below] at (5.5,1.8) {6,00 €};
+
+
+\draw[->, thick] (0.6,0.7) to[bend left=-35] (2.9,0.7);
+    \node at (1.6,-0.2) {$\div 3$};
+
+
+\draw[->, thick] (3.1,0.7) to[bend left=-35] (5.4,0.7);
+	\node at (4.1,-0.2) {$\times 5$};
+
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+
+\end{Méthode}
+
+
+
+
+\begin{Méthode}
+
+Zélie participe à une session de karting. En faisant trois tours de piste, elle parcourt une distance totale de 4,95 km. Aujourd'hui, elle décide de faire douze tours de piste. \\
+Quelle distance va-t-elle parcourir ? Quelle distance parcourrait-elle en quinze tours ?\\
+\textbf{Douze tours :} Comme $3 \times 4 = 12$ et que $4,95 \times 4 = 19,8$.\\ Zélie parcourra 19,8 km en douze tours.\\ 
+\textbf{Quinze tours :} Comme $3 + 12 = 15$ et que  $ 4,95 + 19,8 = 24,75$. \\Zélie parcourra 24,75 km en quinze tours.\\
+
+On pouvait aussi s'aider d'un tableau de proportionnalité : 
+\begin{center}
+\begin{tikzpicture}
+
+    
+    \node at (-3, 0) { \arrayrulecolor{Couleur7}
+        \begin{tabular}{|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{0.8cm}|>{\centering\arraybackslash}p{0.8cm}|}
+            \hline
+           \textbf{Nombre de tours} & 3 & 12 \\
+            \hline
+          \textbf{Distance parcourue (en km)} & 4,95 & 19,8 \\
+            \hline
+        \end{tabular}
+    };
+    
+    % Flèches pour tableau a)
+    \draw[->, thick] (-1.5, 0.9) to[bend left=30] (0, 0.9);
+    \node at (-0.8, 1.4) {$\times 4$};
+    
+    \draw[->, thick] (-1.5, -0.9) to[bend left=-30] (0, -0.9);
+    \node at (-0.8, -1.4) {$\times 4$};
+    
+    % Tableau b)
+
+    
+    \node at (5, 0) {
+        \begin{tabular}{|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{0.9cm}|>{\centering\arraybackslash}p{0.9cm}|>{\centering\arraybackslash}p{0.9cm}|}
+            \hline
+            \textbf{Nombre de tours} & 3 & 12 & 15 \\
+            \hline
+            \textbf{Distance parcourue (en km)} & \textbf{\textcolor{Couleur7}{4,95}} & \textbf{\textcolor{Couleur7}{19,8}} & \textbf{\textcolor{Couleur7}{24,75}} \\
+            \hline
+        \end{tabular}
+    };
+    
+    % Annotations pour tableau b)
+    % Flèche horizontale au-dessus
+    \draw[thick] (5.85, 0.8) -- (5.85, 1.2);
+    \draw[thick] (7.2, 0.8) -- (7.2, 1.2);
+    \draw[thick] (5.85, 1.2) -- (6.25, 1.2);
+    \draw[thick] (6.8, 1.2) -- (7.2, 1.2);
+    \node[above] at (6.55,0.9) {$+$};
+        \draw[thick] (6.55, 1.4) -- (6.55, 1.6);
+         \draw[thick] (6.55, 1.6) -- (7.1, 1.6);
+                  \draw[thick] (7.8, 1.6) -- (8.5, 1.6);
+    \node[right] at (7.2, 1.6) {$=$};
+        \draw[->, thick] (8.5, 1.6) -- (8.5, 0.8);
+ 
+        % Flèche horizontale au-dessous
+    \draw[thick] (5.85, -0.8) -- (5.85, -1.2);
+    \draw[thick] (7.2,-0.8) -- (7.2, -1.2);
+    \draw[thick] (5.85, -1.2) -- (6.25, -1.2);
+    \draw[thick] (6.8, -1.2) -- (7.2, -1.2);
+    \node[above] at (6.55,-1.45) {$+$};
+        \draw[thick] (6.55, -1.4) -- (6.55, -1.6);
+         \draw[thick] (6.55, -1.6) -- (7.1, -1.6);
+                  \draw[thick] (7.8, -1.6) -- (8.5, -1.6);
+    \node[right] at (7.2, -1.6) {$=$};
+        \draw[->, thick] (8.5, -1.6) -- (8.5, -0.8);
+\end{tikzpicture}
+\end{center}
+\end{Méthode}
+
+\subsection*{III. Utiliser une échelle}
+\addcontentsline{toc}{subsection}{III. Utiliser une échelle}
+
+\begin{Définition}
+L'\textbf{échelle} d'un plan est le coefficient de proportionnalité entre les distances représentées sur un plan et les distances réelles, \textbf{exprimées dans la même unité}.
+$$\text{Échelle} = \dfrac{\text{Distance sur le plan}}{\text{Distance réelle}}$$
+\end{Définition}
+
+\begin{Exemple}
+Sur un plan à l'échelle $\dfrac{1}{100\,000}$, une longueur de 3,4 cm représente quelle distance dans la vraie vie ?\\
+\begin{center}
+\begin{tikzpicture}
+\arrayrulecolor{Couleur10}
+    % Tableau principal avec fond bleu clair
+    \node[draw=none, inner sep=0pt, outer sep=0pt, anchor=center] at (0,0) {
+        \begin{tabular}{|>{\centering\arraybackslash}m{7cm}|>{\centering\arraybackslash}m{1.5cm}|>{\centering\arraybackslash}m{1.5cm}|}
+            \hline
+            \cellcolor{Couleur8!10}Distance sur la carte (en cm) & 1 & 3,4 \\
+            \hline
+            \cellcolor{Couleur8!10}Distance dans la réalité (en cm) & 100\,000 & 340\,000 \\
+            \hline
+        \end{tabular}
+    };
+    
+    % Flèches et annotations
+    \draw[->, thick] (5.8, 0.3) to[bend left=45] (5.8, -0.3);
+    \node at (7, 0) {$\times 100\,000$};
+    
+    \draw[->, thick] (-5.8, -0.3) to[bend left=45] (-5.8, 0.3);
+    \node at (-7, 0) {$\div 100\,000$};
+    
+\end{tikzpicture}
+\end{center}
+3,4 cm carte correspondent alors à 340 000 cm dans la réalité, soit 3,4 km.
+
+\end{Exemple}
+\vspace{-0.3cm}
+%\begin{Remarque}
+%Une échelle peut se noter de manière graphique en mesurant la longueur du segment correctement donné.
+%\vspace{-0.3cm}
+%\begin{center}
+%\begin{tikzpicture}[scale=.8]
+    % Première échelle (trait noir)
+ %   \draw[line width=1pt] (0,0) -- (2,0);
+  %  \draw[line width=1pt] (0,-0.2) -- (0,0.2);
+   % \draw[line width=1pt] (2,-0.2) -- (2,0.2);
+    %\node[below] at (1,-0.3) {1 km};
+    
+    % Deuxième échelle (trait noir avec graduations)
+%    \begin{scope}[xshift=4cm]
+ %       \draw[line width=1pt] (0,0) -- (2,0);
+  %      \draw[line width=1pt] (0,-0.2) -- (0,0.2);
+   %     \draw[line width=1pt] (2,-0.2) -- (2,0.2);
+    %    \node[below] at (0,-0.3) {0};
+     %   \node[below] at (2,-0.3) {1 km};
+   % \end{scope}
+    
+    % Troisième échelle (trait blanc et noir)
+%    \begin{scope}[xshift=8cm]
+ %       % Partie blanche
+  %      \draw[line width=1pt, white, fill=white] (0,0) rectangle (1,0.15);
+
+%        \draw[line width=0.5pt] (0,0) rectangle (1,0.15);
+        % Partie noire
+ %       \fill[black] (1,0) rectangle (2,0.15);
+
+  %      \node[below] at (0,-0.3) {0};
+   %     \node[below] at (2,-0.3) {1 km};
+ %   \end{scope}
+    
+%\end{tikzpicture}
+%\end{center}
+%\end{Remarque}

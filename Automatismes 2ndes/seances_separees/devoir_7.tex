@@ -1,0 +1,137 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+\newboolean{prof}\setboolean{prof}{true}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Devoirs - Séance 7 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenumD}{7}
+\newpage
+\begin{seanceD}{} %7
+
+\begin{enumerate}
+\item Pour passer de $30\,\%$ à $100\,\%$, on divise par $30$ puis on multiplie par $100$ (ou on multiplie par $\dfrac{100}{30} = \dfrac{10}{3}$).
+$30\,\%$ de $80 = 24$, donc $p = {\color{correction}\boldsymbol{30}}$.
+
+\item Pour calculer $35\,\%$ de $180$, on effectue le calcul $0{,}35 \times 180$ soit encore ${\color{correction}\boldsymbol{\dfrac{35 \times 180}{100}}}$.
+
+La bonne réponse est la réponse {\bfseries \color{correction}C}.
+
+\item $12\,\%$ de $600 = 0{,}12 \times 600 = {\color{correction}\boldsymbol{72}}$
+
+Donc ${\color{correction}\boldsymbol{72}}$ élèves étudient l'Allemand.
+
+\item Pour passer de $40\,\%$ à $100\,\%$, on multiplie par $\dfrac{100}{40} = 2{,}5$.
+$\begin{aligned}
+40\,\% \text{ de } N &= 60\\
+100\,\% \text{ de } N &= 2{,}5 \times 60\\
+N &= {\color{correction}\boldsymbol{150}}
+\end{aligned}$
+
+\item Diminuer de $12\,\%$ revient à multiplier par $1 - \dfrac{12}{100}$.
+Ainsi, le coefficient multiplicateur associé à une diminution de $12\,\%$ est $1 - 0{,}12$, soit ${\color{correction}\boldsymbol{0{,}88}}$.
+
+\item L'augmentation est de $32$ euros sur un total de $80$ euros.
+Le pourcentage d'augmentation est donné par le quotient : $\dfrac{32}{80} = \dfrac{2}{5} = 0{,}4 = {\color{correction}\boldsymbol{40}}\,\%$.
+
+\end{enumerate}
+
+\end{seanceD}
+
+\end{document}

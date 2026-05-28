@@ -3,10 +3,11 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ if .IsHome }}MaBémath{{ else }}{{ .Title }} — MaBémath{{ end }}</title>
-<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="512x512" href="{{ "favicon-512.png" | relURL }}">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-<link rel="apple-touch-icon" href="{{ "favicon.svg" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 <meta name="description" content="{{ .Site.Params.description }}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">

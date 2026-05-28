@@ -1,0 +1,146 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+%\newboolean{prof}\setboolean{prof}{false}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Séance 18 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenum}{18}
+\newpage
+\begin{seance}{} %18
+
+\begin{enumerate}
+\item On écrit les masses en écriture scientifique pour les comparer :\\
+- Planète 1 : $891{,}33\times 10^{23} = 8{,}913\,3\times 10^{25}$ kg\\
+- Planète 2 : $449{,}85\times 10^{23} = 4{,}498\,5\times 10^{25}$ kg\\
+- Planète 3 : $106{,}959\,6\times 10^{24} = 1{,}069\,596\times 10^{26}$ kg\\
+- Planète 4 : $945{,}99\times 10^{21} = 9{,}459\,9\times 10^{23}$ kg\\
+
+On a donc : $1{,}069\,596\times 10^{26} > 8{,}913\,3\times 10^{25} > 4{,}498\,5\times 10^{25} > 9{,}459\,9\times 10^{23}$\\
+Donc il s'agit de la {\bfseries \color{correction}Planète 3} qui a la masse la plus importante.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item Le coefficient multiplicateur associé à une baisse de $27\,\%$ est $1-0{,}27=0{,}73$.\\
+Le coefficient multiplicateur réciproque est donc $\dfrac{1}{0{,}73}$.\\
+On en déduit que le taux réciproque est $\dfrac{1}{0{,}73}-1$ ou $\dfrac{0{,}27}{0{,}73}$.\\
+Le taux à appliquer pour que cet article retrouve son prix initial est donné par ${\color{correction}\boldsymbol{\dfrac{1}{0{,}73}-1}}$.\\
+La bonne réponse est la réponse {\bfseries \color{correction}B}.
+
+\item  $(-5{,}78)^2< (-5{,}8)^2$ car $5,8 > 5,78$
+
+\item On peut simplifier l'expression :\\
+$\begin{aligned}
+\dfrac{35x^{5}}{\dfrac{7}{x^2}}&=35x^{5} \times \dfrac{x^2}{7}\\
+&=\dfrac{35x^{7}}{7}\\
+&=5x^{7}.
+\end{aligned}$\\
+La bonne réponse est la réponse {\bfseries \color{correction}D}.
+
+\item On a :\\
+$\begin{aligned}
+A&=\dfrac{286}{100}+\dfrac{29}{1\,000}\\
+&=2{,}86+0{,}029\\
+&={\color{correction}\boldsymbol{2{,}889}}
+\end{aligned}$
+
+\end{enumerate}
+
+\end{seance}
+
+\end{document}

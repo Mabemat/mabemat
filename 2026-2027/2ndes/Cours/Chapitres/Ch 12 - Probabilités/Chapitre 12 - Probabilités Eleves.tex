@@ -1,0 +1,763 @@
+
+
+\arrayrulecolor{Couleur6}
+
+\chapter{Probabilités}
+
+
+
+
+\section{Expérience aléatoire}
+\subsection{Vocabulaire}
+\begin{Définition}
+Une {\bf{expérience}} est dite {\bf{aléatoire}} si on ne peut pas en prévoir le résultat à l'avance.\\
+Chaque résultat possible d'une expérience aléatoire est appelée une {\bf{issue}}.\\
+L'ensemble des issues d'une expérience aléatoire est appelé l'{\bf{univers}}, on le note $\Omega$.\\
+Un {\bf{évènement $E$}} est un ensemble d'issues, c'est donc une partie (sous ensemble) de $\Omega$. \\
+{\bf{L'évènement contraire}} de $E$, noté $\overline{E}$, est l'évènement formé par toutes les issues qui ne réalisent
+pas $E$.
+
+\end{Définition}
+
+\begin{Exemple}
+On considère l'expérience aléatoire suivante : on lance un dé équilibré à $6$ faces et on observe le résultat.
+\vspace{0.3cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\end{Exemple}
+
+\begin{Définition}
+Un évènement qui se réalise toujours est $\Omega$ lui-même, on l'appelle {\bf{évènement certain}}. \\
+Un évènement qui ne peut se réaliser est appelé {\bf{évènement impossible}}, on le note $\emptyset$ . \\
+Un évènement qui ne contient qu'une seule issue est appelé {\bf{évènement élémentaire}}.\\
+Deux évènements sont dits {\bf{incompatibles}} s'ils ne peuvent pas être réalisés en même temps.
+\end{Définition}
+
+\begin{Exemple}
+Dans le tirage d'une carte au hasard dans un jeu classique de 32 cartes :
+\begin{itemize}[label=\textcolor{Couleur8}{$\bullet$}]
+\item L'évènement : \og le roi de c{\oe}ur est tiré \fg{} est un évènement \ligne
+
+\item L'évènement : \og un trois est tiré \fg{} est un évènement \ligne
+
+\item L'évènement : \og une carte du jeu est tirée \fg{} est un évènement \ligne
+
+\item L'évènement contraire de : \og le 10 de c{\oe}ur est tiré \fg{} est : \ligne
+
+\item Un évènement non élémentaire est par exemple : \ligne
+
+\item Deux évènements incompatibles sont par exemple : \ligne
+
+\end{itemize}
+
+
+\end{Exemple}
+
+\newpage
+
+\subsection{Loi de probabilité-modèle}
+\vspace{0.3cm}
+\begin{Définition}
+Définir une loi de probabilité pour une expérience aléatoire dont l'univers est $\Omega=\{\omega_1,\cdots,\omega_n\}$, c'est associer à chaque issue $\omega_i$ un nombre $p_i\in \intff{0}{1}$ tel que $p_1+\cdots+ p_n=1$.\\
+Le nombre $p_i$ est appelé probabilité de l'issue $\omega_i$.\\
+La probabilité d'un évènement $E$, notée $P(E)$, est la somme des probabilités des issues qui le réalisent.
+
+\end{Définition}
+\vspace{0.3cm}
+\begin{Propriété}
+Pour tout évènement $E$ d'une expérience aléatoire dont l'univers est $\Omega$, on a :
+$$0\leq P(E)\leq 1 \quad\quad\quad\quad\quad P(\Omega)=1 \quad\quad\quad\quad\quad P(\emptyset)=0$$
+\end{Propriété}
+\vspace{0.3cm}
+
+\begin{Exemple}
+\begin{minipage}[c]{0.5\linewidth}
+En reprenant l'exemple du dé, la loi de probabilité est :
+\vspace{0.2cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\end{minipage} \hfill
+\begin{minipage}[c]{0.4\linewidth}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+Issues & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ \\
+\hline
+Probabilité & \phantom{$\dfrac{1}{6}$} & &  &  &  &  \\
+\hline
+\end{tabular}
+\end{minipage}
+
+
+\end{Exemple}
+\vspace{0.3cm}
+
+\begin{Remarque}
+Quand on répète un grand nombre de fois une expérience aléatoire, la fréquence d'apparition de chaque issue se stabilise autour d’une valeur. On prend alors cette valeur comme probabilité de l'issue. (Loi des grands nombres).
+\end{Remarque}
+
+
+\vspace{0.5cm}
+
+\section{Calculs de probabilités}
+\subsection{Situation d'équiprobabilité}
+
+\vspace{0.3cm}
+
+\begin{Définition}
+On dit qu'on est dans une situation d'équiprobabilité lorsque toutes les issues ont la même probabilité.
+\end{Définition}
+
+\vspace{0.3cm}
+
+\begin{Propriété}
+Dans une situation d'équiprobabilité, pour tout évènement $E$ de l'univers, on a : 
+$$P(E)=\dfrac{\text{Nombres d'issues de }E}{\text{Nombres total d'issues}}$$
+\end{Propriété}
+\vspace{0.3cm}
+
+\begin{Exemple}
+On considère l'expérience aléatoire suivante : 
+On tire une carte dans un jeu de $32$ cartes.\\
+Soit $E$ l'évènement : \og On tire un as \fg{}.
+Quelle est la probabilité que l'évènement $E$ se réalise ? 
+\vspace{0.3cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+
+\end{Exemple}
+\newpage
+
+\subsection{Opérations sur les évènements}
+\noindent On considère $A$ et $B$ deux évènements d'un même univers $\Omega$.
+\begin{Définition} $ $\\
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item L'évènement \og $A$ et $B$ \fg{}, noté $A\cap B$, est constitué des issues qui appartiennent à ces deux évènements.
+\item  L'évènement \og $A$ ou $B$ \fg{}, noté $A\cup B$, est constitué des issues qui appartiennent à au moins un de ces deux évènements.
+\item Les évènements $A$ et $B$ sont incompatibles si $A\cap B=\emptyset$.
+\end{itemize}
+
+\end{Définition}
+
+\begin{minipage}[c]{0.3\linewidth}
+\begin{center} \begin{tikzpicture}[scale=.75] 
+\def\C{ (0,0) rectangle (6,4) };
+\def\A{(2,2) circle[x radius=2cm, y radius=1.2cm, rotate=40]} ;
+\def\B{(4,2) circle[x radius=1.5cm, y radius=1cm, rotate=-20]} ;
+
+
+\begin{scope}
+\clip \A ;
+\fill[Couleur8] \B;
+\end{scope}
+
+\draw \C ;  \draw (0,0) node[above right]{$\Omega$} ; 
+\draw \A ;
+\draw (0.7,3.3) node{$A$} ; \draw \B ;
+\draw (4.5,0.4) node{$B$} ; 
+
+\draw[Couleur8] (5,3.5) node{$A\cap B$} ; 
+\end{tikzpicture} 
+\end{center}
+
+
+
+\end{minipage} \hfill
+\begin{minipage}[c]{0.3\linewidth}
+\begin{center} \begin{tikzpicture}[scale=.75] 
+\def\C{ (0,0) rectangle (6,4) };
+\def\A{(2,2) circle[x radius=2cm, y radius=1.2cm, rotate=40]} ;
+\def\B{(4,2) circle[x radius=1.5cm, y radius=1cm, rotate=-20]} ;
+
+\begin{scope}
+\clip \A ;
+\fill[Couleur3] \B ;
+\end{scope}
+
+\begin{scope}
+\clip \A ;
+\fill[Couleur3] \B \C;
+\end{scope}
+
+\begin{scope}
+\clip \B ;
+\fill[Couleur3] \A \C;
+\end{scope}
+
+
+\draw \C ;  \draw (0,0) node[above right]{$\Omega$} ; 
+
+\draw \A ;
+\draw (0.7,3.3) node{$A$} ; \draw \B ;
+\draw (4.5,0.4) node{$B$} ; 
+\draw[Couleur3] (5,3.5) node{$A\cup B$} ; 
+\end{tikzpicture} 
+\end{center}
+
+\end{minipage}\hfill
+\begin{minipage}[c]{0.3\linewidth}
+\begin{center} \begin{tikzpicture}[scale=.75] 
+\def\C{ (0,0) rectangle (6,4) };
+\def\A{(2,2) circle[x radius=2cm, y radius=1.2cm, rotate=40]} ;
+\def\B{(4,2) circle[x radius=1.5cm, y radius=1cm, rotate=-20]} ;
+
+\begin{scope}
+\clip \C ;
+\fill[Couleur6!35!white] \C\A ;
+\end{scope}
+
+\draw \C ;  \draw (0,0) node[above right]{$\Omega$} ; 
+\draw \A ;
+\draw (0.7,3.3) node{$A$} ; \draw \B ;
+\draw (4.5,0.4) node{$B$} ; 
+\draw[Couleur6] (4.8,3.5) node{$\Omega\setminus A=\overline{A}$} ; 
+\end{tikzpicture} 
+\end{center}
+
+\end{minipage}
+
+
+\begin{Théorème}
+\leavevmode\vspace{-\baselineskip}
+\begin{multicols}{2}
+\begin{itemize}[label=\textcolor{Couleur1}{$\bullet$}]
+\item $P(A\cup B)+P(A\cap B)=P(A)+P(B)$.
+\item $P(\overline{A})=1-P(A)$.
+\end{itemize}
+\end{multicols}
+\end{Théorème}
+
+\begin{Exemple}
+On considère l'expérience aléatoire suivante :
+On lance un dé à six faces et on regarde le nombre de points inscrits sur la face du dessus.\\
+On considère les évènements suivants :\\
+$A$ : \og On obtient un nombre impair \fg{}
+et $B$ : \og On obtient un multiple de $3$ \fg{} \\
+Calculer la probabilité de des évènements $A\cup B$ et $\overline{B}$.
+
+\vspace{0.3cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\end{Exemple}
+
+\newpage
+
+\section{Représentations d'une expérience aléatoire}
+\subsection{Le diagramme de Venn}
+\begin{Exemple}
+Dans un lycée, sur les $150$ élèves de secondes, $48$ élèves se sont inscrits dans les clubs photos ou théâtre. On en compte $32$ dans le club théâtre et $24$ dans le club photo. On sort au hasard la fiche d'un élève inscrit. Soit les évènements $T$ : \og être adhérent au club théâtre \fg{}, $F$ : \og être adhérent au club photo \fg{} et $N$ : \og n'être adhérent à aucun club \fg{}.
+
+\noindent Déterminer $P(T)$ ; $P(F)$ ;  $P(T\cup F)$ et en déduire $P(N)$.
+
+\begin{minipage}[c]{0.6\linewidth}
+
+\vspace{0.3cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\end{minipage} \hfill
+\begin{minipage}[c]{0.4\linewidth}
+\begin{center} \begin{tikzpicture}[scale=.75] 
+\def\C{ (-1,0) rectangle (5.9,4) };
+\def\A{(2,2) circle[x radius=2cm, y radius=1.2cm]} ;
+\def\B{(4,2) circle[x radius=1.5cm, y radius=1cm]} ;
+\draw[Couleur3] \A ;
+\draw[Couleur3] (0.7,3.3) node{$T$} ; \draw[Couleur8] \B ;
+\draw[Couleur8] (4.5,0.7) node{$F$} ; 
+\draw (3,0.4) node{$150$} ; \draw \C;
+\draw[Couleur3] (0.9,2) node{$24$} ;
+\draw[Couleur8] (4.7,2) node{$16$} ; 
+\draw[pink] (3,2) node{$8$} ; 
+\end{tikzpicture} 
+\end{center}
+\end{minipage}
+
+\end{Exemple}
+\subsection{Le tableau à double entrée}
+\noindent Une maison de retraite abrite $80$ pensionnaires. $55$ pensionnaires suivent un traitement contre les maladies cardio-vasculaires, $34$ pensionnaires suivent un traitement pour réduire leur taux de cholestérol et $18$ pensionnaires suivent les deux traitements. Pour représenter cette expérience, on peut représenter un tableau à double-entrée.
+\begin{enumerate}
+\item Déterminer la valeur exacte de la probabilité de l'évènement $A$ : \og la personne prend un traitement pour le cholestérol \fg{}. 
+\item Déterminer la valeur exacte de la probabilité de l'évènement $B$ : \og la personne prend un traitement pour le cholestérol, mais pas pour les maladies cardio-vasculaire\fg{}.
+\end{enumerate}
+\begin{center}\begin{tabular}{|c|c|c|c|} 
+\cline{2-4}  
+\multicolumn{1}{c|}{} &\phantom{ Cardio-vasculaire} & \phantom{Non cardio-vasculaire} & Total \\  
+\hline 
+\phantom{Cholestérol} &  &  &  \\  
+\hline 
+\phantom{Non cholestérol} &  &  &  \\  
+\hline 
+Total &  &  &  \\ 
+\hline
+\end{tabular}
+\end{center}
+\vspace{0.3cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\newpage
+
+\subsection{L'arbre des possibles}
+
+\noindent On joue à pile ou face en lançant une pièce 3 fois de suite. On s'intéresse aux faces obtenues dans l'ordre d'apparition. À chaque lancer correspondent deux possibilités : pile ( notée $P$) ou face
+( notée $F$). Par Exemple, lorsque l'on a obtenu pile aux deux premiers lancers, puis face au dernier, on note $PPF$.
+\begin{enumerate}
+\item À l'aide d'un arbre des possibles, déterminer toutes les issues possibles de cette expérience.
+\item Combien d'issues réalisent l'évènement $A$ : \og on a obtenu exactement deux fois pile \fg{}. En déduire $P(A)$.
+\end{enumerate}
+
+\vspace{6cm}
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\ligne
+
+\bigskip
+
+\arrayrulecolor{Couleur6}
+\newpage
+
+\section*{Exercices - Probabilités}
+\addcontentsline{toc}{section}{Exercices}
+{\setlength{\columnseprule}{0pt}
+\setcounter{NumEx}{1}
+
+\subsection*{Expérience aléatoire - Vocabulaire}
+
+\begin{Exercice}
+On tire une main de cinq cartes au hasard dans un jeu de 52 cartes.\\
+Énoncer les évènements contraires des évènements :
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item A:  "Obtenir au moins un Roi".
+\item B:  "Toutes les cartes sont des cœurs".
+\end{itemize}
+\end{Exercice}
+
+\begin{Exercice}
+On pioche une carte au hasard dans un jeu de 32 cartes et on s'intéresse à sa valeur.
+\begin{enumerate}
+\item Donner l'univers associé à cette expérience aléatoire.
+\item Quelle est la probabilité de tirer un 10 ?
+\item Quelle est la probabilité de tirer une figure ?
+\end{enumerate}
+\end{Exercice}
+
+\begin{Exercice}
+On lance un dé icosaédrique équilibré, dont les faces sont numérotées de 1 à 20.
+On note les évènements :
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item A:  "on obtient un nombre pair"
+\item B:  "on obtient un diviseur de 20"
+\item C:  "on obtient un multiple de 4"
+\end{itemize}
+Écrire chaque évènement sous forme d'ensemble puis calculer leur probabilité.
+\end{Exercice}
+
+\begin{Exercice}
+On lance un dé équilibré dont les six faces portent respectivement les numéros :
+3; 3; 7; 8; 9 et 9.\\
+On note les évènements :
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item A:  "le résultat est un multiple de 2"
+\item B:  "le résultat est un multiple de 3"
+\end{itemize}
+\begin{enumerate}
+\item Quelles sont les issues de cette expérience?
+\item Déterminer la loi de probabilité de cette expérience aléatoire.
+\item Énoncer les évènement $ A \cup B $ et $ A\cap B $ puis les écrire sous forme d'ensembles.
+\item Ces deux évènements sont-ils incompatibles? Justifier.
+\item Ces deux évènements sont-ils contraires? Justifier.
+\item On note E l'évènement  "le nombre est multiple de 2 ou de 3". Énoncez l'évènement $ \overline{E} $.
+\end{enumerate}
+\end{Exercice}
+
+\begin{Exercice}
+Dans une urne, on place huit jetons sur lesquels sont inscrites les lettres du mot  "ECOLOGIE".\\
+On pioche un jeton au hasard. On considère les évènements suivants :
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item A:  "on obtient une voyelle";
+\item B:  "on obtient une lettre du mot PROPRE";
+\item C:  "on obtient une lettre du mot VOYAGE";
+\item D:  "on obtient une lettre du mot BRUN"
+\end{itemize}
+\end{multicols}
+Écrire chaque évènement sous forme d'un ensemble des issues possibles et calculer leur probabilité.
+\end{Exercice}
+
+\subsection*{Situation d'équiprobabilité}
+
+\begin{Exercice}
+\leavevmode\vspace{-\baselineskip}
+\begin{enumerate}[itemsep=1em]
+	\item \begin{minipage}[t]{\linewidth}Dans un paquet de bonbons il y a 19 nounours. 4 sont rouges, 4 sont verts, 6 sont bleus, 3 sont noirs et 2 sont jaunes.\\ Nawel choisit au hasard l'un d'entre eux.\\ \textbf {a.}  Quelle est la probabilité que son choix tombe sur l'un des nounours jaunes ?\\\textbf {b.}  Quelle est la probabilité que son choix tombe sur l'un des nounours verts ?\\\textbf {c.}  Quelle est la probabilité que son choix ne tombe pas sur l'un des nounours noirs ?\\\textbf {d.}  Quelle est la probabilité que son choix tombe sur l'un des nounours jaunes ou verts ?\\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Dans le frigo il y a 25 desserts lactés. 5 sont au chocolat, 5 sont à la vanille, 4 sont au café, 6 sont à la pistache et 5 sont au caramel.\\ Yasmine choisit au hasard l'un d'entre eux.\\ \textbf {a.}  Quelle est la probabilité que son choix tombe sur l'un des desserts lactés au café ?\\\textbf {b.}  Quelle est la probabilité que son choix tombe sur l'un des desserts lactés au chocolat ?\\\textbf {c.}  Quelle est la probabilité que son choix ne tombe pas sur l'un des desserts lactés au caramel ?\\\textbf {d.}  Quelle est la probabilité que son choix tombe sur l'un des desserts lactés au café ou au chocolat ?\\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Dans une urne il y a 19 boules. 3 sont rouges, 5 sont vertes, 4 sont bleues, 5 sont noires et 2 sont blanches.\\ Vanessa choisit au hasard l'une d'entre elles.\\ \textbf {a.}  Quelle est la probabilité que son choix tombe sur l'une des boules noires ?\\\textbf {b.}  Quelle est la probabilité que son choix tombe sur l'une des boules blanches ?\\\textbf {c.}  Quelle est la probabilité que son choix ne tombe pas sur l'une des boules rouges ?\\\textbf {d.}  Quelle est la probabilité que son choix tombe sur l'une des boules noires ou blanches ?\\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Dans une urne il y a 20 jetons. 2 sont oranges, 4 sont cyans, 6 sont roses, 3 sont jaunes et 5 sont violets.\\ Yasmine choisit au hasard l'un d'entre eux.\\ \textbf {a.}  Quelle est la probabilité que son choix tombe sur l'un des jetons violets ?\\\textbf {b.}  Quelle est la probabilité que son choix tombe sur l'un des jetons cyans ?\\\textbf {c.}  Quelle est la probabilité que son choix ne tombe pas sur l'un des jetons roses ?\\\textbf {d.}  Quelle est la probabilité que son choix tombe sur l'un des jetons violets ou cyans ?\\\end{minipage}
+\end{enumerate}
+\end{Exercice}
+
+\begin{Exercice}
+\leavevmode\vspace{-\baselineskip}
+\begin{enumerate}[itemsep=1em]
+	\item \begin{minipage}[t]{\linewidth}Lors d'un match de basket, l'équipe qui reçoit un adversaire a une probabilité de $0{,}62$ de gagner son match et $0{,}17$ de faire un match nul.\\Quelle est la probabilité, pour cette équipe, de perdre le match ?\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Une urne contient $32$  boules numérotées de $1$ à $32$. \\
+        On choisit une boule au hasard. \\
+        Quelle est la probabilité d'obtenir  un nombre premier ? \end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Dans une urne contenant des boules vertes et des boules bleues, on tire au hasard
+          une boule et on regarde sa couleur. \\
+          La probabilité d'obtenir une boule verte est $\dfrac{3}{11}$.\\
+          Déterminer le nombre de boules bleues dans cette urne sachant qu'il y a $18$
+          boules vertes.\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}On lance deux fois de suite une pièce de monnaie parfaitement équilibrée.\\Quelle est la probabilité  de l'événement : "On obtient deux fois piles "?\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Une urne contient $4$ boules rouges et $5$ boules bleues. \\
+                On tire une boule au hasard. \\
+              Quelle est la probabilité de tirer une boule rouge ? \end{minipage}
+\end{enumerate}
+\end{Exercice}
+
+\begin{Exercice}
+On lance deux dés cubiques équilibrés numérotés de 1 à 6 et on s'intéresse à la somme obtenue.\\
+Déterminer la loi de probabilité de cette expérience aléatoire.
+\end{Exercice}
+
+\begin{Exercice}
+On lance 4 fois de suite une pièce équilibrée.\\
+Sur quel nombre d'apparitions de  "pile"vaut-il mieux parier? Justifier.
+\end{Exercice}
+
+\subsection*{Opérations sur les événements}
+
+\begin{Exercice}
+\leavevmode\vspace{-\baselineskip}
+\begin{enumerate}[itemsep=1em]
+	\item \begin{minipage}[t]{\linewidth}Soient $A$ et $B$ deux événements vérifiant :  \\
+         $\bullet$  $P(A)=0{,}3$  \,\,\,\, $\bullet$  $P(B)=0{,}2$  \,\,\,\, $\bullet$  $P(A\cup B)=0{,}39$.\\
+          Calculer $P(A\cap B)$.
+         \\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Soient $A$ et $B$ deux événements incompatibles vérifiant :  \\
+          $\bullet$  $P(A)=0{,}08$ \,\,\,\, $\bullet$  $P(B)=0{,}12$.\\
+           Calculer $P(A\cup B)$.\\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Soient $A$ et $B$ deux événements  vérifiant :  \\
+             $\bullet$  $P(\bar{A})=0{,}28$  \,\,\,\, $\bullet$  $P(\bar{B})=0{,}48$  \,\,\,\, $\bullet$  $P(A\cap B)=0{,}5$.\\
+              Calculer $P(A\cup B)$.\\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Soient $A$ et $B$ deux événements vérifiant :  \\
+           $\bullet$  $P(B)=0{,}36$  \,\,\,\, $\bullet$  $P(A\cap B)=0{,}28$  \,\,\,\,$\bullet$  $P(A\cup B)=0{,}85$.\\
+            Calculer $P(A)$.
+           \\\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Soient $A$ et $B$ deux événements vérifiant :  \\
+           $\bullet$  $P(A)=0{,}13$ \,\,\,\, $\bullet$  $P(B)=0{,}27$ \,\,\,\,
+           $\bullet$  $P(A\cap B)=0{,}03$.\\
+            Calculer $P(A\cup B)$.
+           \\\end{minipage}
+\end{enumerate}
+\end{Exercice}
+
+\begin{Exercice}
+Une usine fabrique des objets destinés à être commercialisés.
+Sur 100 objets qui sortent de l'usine, en moyenne, 15 ont le défaut A, 7 ont le défaut B et 6 ont les deux défauts.\\
+Calculer la probabilité qu'un objet n'ait aucun défaut.
+\end{Exercice}
+
+\newpage
+
+\subsection*{Représentations d'une expérience aléatoire}
+
+\subsubsection*{Le diagramme de Venn}
+
+\begin{Exercice}
+Dans un restaurant, sur 170 clients servis, 100 on pris une entrée et un plat, 110 ont pris un plat et un dessert. Parmi ces derniers, 80 ont pris l'entrée, le plat et le dessert. Certains n'ont pris qu'un plat sans entrée ni dessert.\\
+On choisit au hasard une personne qui a mangé dans ce restaurant et on considère les évènements :
+
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item A:  "le client a pris une entrée"
+\item B:  "le client a pris un dessert"
+\end{itemize} 
+
+\begin{enumerate}
+\item Déterminer $ P(A) $, $  P(B) $.
+\item Décrire $A \cap B$ puis calculer $ P(A \cap B) $.
+\item Décrire $ A\cup B $ puis calculer $ P(A\cup B) $.
+\item En déduire la probabilité qu'un client ait pris un plat seul.
+\end{enumerate}
+\end{Exercice}
+
+\begin{Exercice}
+Dans un restaurant, sur 170 clients servis, tous ont pris un plat. De plus :
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item 100 ont pris une entrée et un plat
+\item 110 ont pris un plat et un dessert  
+\item Parmi ces derniers, 80 ont pris l'entrée, le plat et le dessert
+\item Certains n'ont pris qu'un plat sans entrée ni dessert
+\end{itemize}
+On choisit au hasard une personne qui a mangé dans ce restaurant et on considère les évènements :
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item A: "le client a pris une entrée"
+\item B: "le client a pris un dessert"
+\end{itemize} 
+\begin{enumerate}
+\item Créer un diagramme de Venn en indiquant le nombre de clients dans chaque zone.
+\item Déterminer $P(A)$, $P(B)$ et $P(A \cap B)$.
+\item Calculer $P(A \cup B)$ et interpréter ce résultat.
+\item En déduire la probabilité qu'un client ait pris seulement un plat.
+\end{enumerate}
+\end{Exercice}
+
+\newpage
+
+\subsubsection*{Le tableau à double entrée}
+
+\begin{Exercice}
+\begin{minipage}[t]{\linewidth}Le personnel d'une entreprise est constitué de $120$ personnes qui se répartissent de
+          la manière suivante :  \\
+\begin{center}
+            $\renewcommand{\arraystretch}{1}
+\begin{array}{|c|c|c|c|}
+\hline
+   &   \text{Femmes} &   \text{Hommes} &   \text{Total}\\
+\hline
+  \text{Cadres} & 15 & 13 & 28\\
+\hline
+  \text{Employés} & 16 & 76 & 92\\
+\hline
+  \text{Total} & 31 & 89 & 120\\
+\hline
+\end{array}
+\renewcommand{\arraystretch}{1}$
+\end{center}
+
+Au cours de la fête de fin d'année, le comité d'entreprise offre un séjour à la
+montagne à une personne choisie au hasard parmi les $120$ personnes de cette
+entreprise. On définit les évènements suivants : \\
+C : "la personne choisie fait partie des cadres" ;
+               F :  "la personne choisie est une femme".
+
+\medskip
+\textbf {a.}   Calculer la probabilité de l'événement :  "la personne choisie est une femme qui fait partie des employés".
+
+\medskip
+\textbf {b.}   Calculer la probabilité de l'événement $F\cup \overline{C}$.
+
+\medskip
+\textbf {c.}   On sait que la personne choisie  est un homme. Quelle est la probabilité qu'il soit cadre ?
+\end{minipage}
+
+\end{Exercice}
+
+\begin{Exercice} 
+\begin{minipage}[t]{\linewidth}Le personnel d'une entreprise est constitué de $120$ personnes qui se répartissent de
+          la manière suivante :  \\
+\begin{center}
+            $\renewcommand{\arraystretch}{1}
+\begin{array}{|c|c|c|c|}
+\hline
+   &   \text{Femmes} &   \text{Hommes} &   \text{Total}\\
+\hline
+  \text{Cadres} & 10 & 32 & 42\\
+\hline
+  \text{Employés} & 40 & 38 & 78\\
+\hline
+  \text{Total} & 50 & 70 & 120\\
+\hline
+\end{array}
+\renewcommand{\arraystretch}{1}$
+\end{center}
+
+Au cours de la fête de fin d'année, le comité d'entreprise offre un séjour à la
+               montagne à une personne choisie au hasard parmi les $120$ personnes de cette entreprise. On définit les évènements suivants : \\
+               C : "la personne choisie fait partie des cadres" ;
+               F :  "la personne choisie est une femme".
+
+\medskip
+\textbf {a.}   Calculer la probabilité de l'événement :  "la personne choisie est une femme qui fait partie des cadres".
+
+\medskip
+\textbf {b.}   Calculer la probabilité de l'événement $\overline{F}\cup C$.
+
+\medskip
+\textbf {c.}   On sait que la personne choisie  fait partie des cadres. Quelle est la probabilité que ce soit une femme ?
+\end{minipage}
+
+\end{Exercice}
+
+
+
+\begin{Exercice}
+On lance une pièce équilibrée.\\Si la pièce tombe sur \og{}Pile\fg{}, on tire une boule dans une urne contenant 3 boules bleues, 2 boules rouges,  et 1 boule verte.\\Si la pièce tombe sur  "Face», on tire une boule dans une urne contenant 3 boules bleues, 1 boule rouge,  et 2 boules vertes.\\\textbf {a.}  Construire un tableau à double entrée des issues de cette expérience aléatoire.\\\textbf {b.}  La pièce vient de tomber sur  "Face». Donner la probabilité d'obtenir une boule verte.\\\textbf {c.}  On recommence l'expérience au début. Donner la probabilité d'obtenir une boule bleue.
+\end{Exercice}
+
+\newpage
+
+\subsubsection*{L'arbre des possibles}
+
+\begin{Exercice}
+\leavevmode\vspace{-\baselineskip}
+\begin{enumerate}[itemsep=2em]
+	\item \begin{minipage}[t]{\linewidth}Dans le frigo, il y a 16 yaourts. 5 sont à l'abricot, 7 sont à la vanille et 4 sont à la banane.\\Marina en choisit un au hasard. Son frère Guillaume en choisit un au hasard à son tour.\\\textbf {a.}  Combien d'issues possède cette experience aléatoire ? Donner un exemple d'issue.\\\textbf {b.}  Est-ce une expérience en situation d'équiprobabilité ? Justifier.\\\textbf {c.}  Calculer la probabilité que Marina et Guillaume aient choisi tous les deux un yaourt à l'abricot.\\\textbf {d.}  Calculer la probabilité qu'ils aient choisi des yaourts aux parfums identiques.\\\textbf {e.}  Calculer la probabilité qu'ils aient choisi des yaourts aux parfums différents.\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Dans sa commode, Fernando a mis dans le premier tiroir des paires de chaussettes. Il y a 3 paires de chaussettes rouges, 2 paires de chaussettes vertes, 4 paires de chaussettes bleues, 3 paires de chaussettes noires et 5 paires de chaussettes blanches.\\Dans le deuxième tiroir, Fernando a mis des T-shirt. Il y a 5 T-shirt rouges, 6 T-shirt verts, 6 T-shirt bleus, 4 T-shirt noirs et 3 T-shirt blancs.\\Un matin, il y a une panne de courant et Fernando prend au hasard une paire de chaussettes dans le premier tiroir et un T-shirt dans le deuxième.\\\textbf {a.}  Quelle est la probabilité que Fernando ait choisi des chaussettes et un T-shirt noirs ?\\\textbf {b.}  Quelle est la probabilité que Fernando ait choisi des chaussettes et un T-shirt de la même couleur ?\\\textbf {c.}  Quelle est la probabilité que Fernando ait choisi des chaussettes et un T-shirt de couleurs différentes ?\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Jean-Claude dispose d'un dé à 8 faces numérotées de 1 à 8 et d'un dé à 12 faces numérotées de 1 à 12.\\Il lance ses deux dés et en fait la somme.\\\textbf {a.}  Reporter dans un tableau les issues possibles de cette expérience aléatoire et leurs probabilités respectives.\\\textbf {b.}  Nawel dispose d'un dé à 6 faces numérotées de 1 à 6 et d'un dé à 10 faces numérotées de 1 à 10.\\Elle décide de proposer un défi à Jean-Claude : "On choisit un nombre cible entre 2 et 16, on lance nos deux dés en même temps. Le premier dont la somme des dés est la cible a gagné."\\Jean-Claude qui connaît les probabilités calculées au \textbf {a.}  propose alors de choisir 9 comme nombre cible. Il pense avoir plus de chances de gagner que Nawel. A-t-il raison ?\\\textbf {c.} Si oui, quel nombre doit choisir Nawel pour avoir un défi qui lui soit favorable et si non, y a-t-il un meilleur choix pour Jean-Claude ?\\\textbf {d.}  Y a-t-il un nombre cible qui donne un jeu équitable où chacun aura la même probabilité de gagner ?\\$\textit {Exercice inspiré des problèmes DuDu (mathix.org)}$\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}On considère l'expérience consistant à tirer deux cartes dans un jeu de 32 cartes.\\Partie 1 : On effectue le tirage de la deuxième carte après remise de la première dans le jeu.\\\textbf {a.}  Quelle est la probabilité de tirer 2 cartes de la même couleur (Rouge/Rouge ou Noire/Noire) ?\\\textbf {b.}  Quelle est la probabilité de tirer 2 sept ?\\\textbf {c.}  Quelle est la probabilité de tirer 2 cartes de trèfle ?\\Partie 2 : On effectue le tirage de la deuxième carte sans remise de la première dans le jeu.\\    Reprendre les 3 questions de la partie 1 dans cette nouvelle expérience.\end{minipage}
+	\item \begin{minipage}[t]{\linewidth}Dans le frigo, il y a 12 yaourts. 4 sont à la fraise, 6 sont à l'abricot et 2 sont à la vanille.\\Vanessa en choisit un au hasard. Son frère Arthur en choisit un au hasard à son tour.\\\textbf {a.}  Combien d'issues possède cette experience aléatoire ? Donner un exemple d'issue.\\\textbf {b.}  Est-ce une expérience en situation d'équiprobabilité ? Justifier.\\\textbf {c.}  Calculer la probabilité que Vanessa et Arthur aient choisi tous les deux un yaourt à la fraise.\\\textbf {d.}  Calculer la probabilité qu'ils aient choisi des yaourts aux parfums identiques.\\\textbf {e.}  Calculer la probabilité qu'ils aient choisi des yaourts aux parfums différents.\\\end{minipage}
+\end{enumerate}
+\end{Exercice}
+
+
+
+\begin{Exercice}
+Dans une urne, il y a 2 boules vertes et 1 boule bleue indiscernables au toucher.\\On tire successivement et avec remise deux boules.\\\textbf {a.}  Déterminer la probabilité d'obtenir deux boules vertes.\\\textbf {b.}  Déterminer la probabilité d'obtenir deux boules de la même couleur.\\\textbf {c.}  Déterminer la probabilité d'obtenir deux boules de couleurs différentes.
+\end{Exercice}
+
+\begin{Exercice}
+ \begin{minipage}[c]{0.5\linewidth}
+ On lance une pièce équilibrée.\\Si la pièce tombe sur 'Pile', on tire une boule dans une urne contenant 1 boule bleue, 2 boules rouges,  et 3 boules vertes.\\Si la pièce tombe sur 'Face', on tire une boule dans une urne contenant 2 boules bleues, 1 boule rouge,  et 3 boules vertes.\\On a représenté l'expérience par l'arbre ci-dessous\\Donner la probabilité d'obtenir une boule rouge.\end{minipage}
+\begin{minipage}[c]{0.45\linewidth}
+\begin{center}
+\begin{tikzpicture}[baseline,scale = 0.45]
+
+    \tikzset{
+      point/.style={
+        thick,
+        draw,
+        cross out,
+        inner sep=0pt,
+        minimum width=5pt,
+        minimum height=5pt,
+      },
+    }
+    \clip (-0.1,0) rectangle (16,12);
+    	\draw[color ={black}] (3.75,6)--(1.25,1);
+	\draw (1.25,0.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$B$}}};
+	\draw (1.75,3) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{6}$}}};
+	\draw[color ={black}] (3.75,6)--(3.75,1);
+	\draw (3.75,0.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$R$}}};
+	\draw (3.25,3) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{3}$}}};
+	\draw[color ={black}] (3.75,6)--(6.25,1);
+	\draw (6.25,0.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$V$}}};
+	\draw (5.75,3) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{2}$}}};
+	\draw[color ={black}] (7.5,11)--(3.75,6);
+	\draw (3.75,5.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$Pile$}}};
+	\draw (4.75,8) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{2}$}}};
+	\draw[color ={black}] (11.25,6)--(8.75,1);
+	\draw (8.75,0.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$B$}}};
+	\draw (9.25,3) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{3}$}}};
+	\draw[color ={black}] (11.25,6)--(11.25,1);
+	\draw (11.25,0.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$R$}}};
+	\draw (10.75,3) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{6}$}}};
+	\draw[color ={black}] (11.25,6)--(13.75,1);
+	\draw (13.75,0.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$V$}}};
+	\draw (13.25,3) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{2}$}}};
+	\draw[color ={black}] (7.5,11)--(11.25,6);
+	\draw (11.25,5.5) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$Face$}}};
+	\draw (10.25,8) node[anchor = center] {\colorbox {white}{\footnotesize  \color{black}{$\dfrac{1}{2}$}}};
+
+\end{tikzpicture} 
+\end{center}
+ \end{minipage}
+\end{Exercice}
+
+\begin{Exercice}
+Une entreprise produit des composants électroniques. Le contrôle qualité révèle que :
+\begin{itemize}[label=\textcolor{Couleur6}{$\bullet$}]
+\item 15\% des composants ont le défaut A
+\item 7\% des composants ont le défaut B  
+\item 6\% des composants ont les deux défauts A et B
+\end{itemize}
+On prélève un composant au hasard dans la production.
+\begin{enumerate}
+\item Quelle est la probabilité que le composant ait au moins un des deux défauts ?
+\item Quelle est la probabilité que le composant n'ait aucun défaut ?
+\item Sachant que le composant a le défaut A, quelle est la probabilité qu'il ait aussi le défaut B ?
+\end{enumerate}
+\end{Exercice}
+
+
+
+
+
+
+
+
+
+
+
+
+}

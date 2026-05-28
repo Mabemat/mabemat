@@ -1,0 +1,156 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+\newboolean{prof}\setboolean{prof}{true}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Devoirs - Séance 11 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenumD}{11}
+\newpage
+\begin{seanceD}{} %11
+\begin{enumerate}
+\item  Puisque $f$ est une fonction affine, on a : $f(x)=ax+b$.\\$\bullet$ $b$ est l'ordonnée à l'origine de la droite. On lit $b=-4$.\\$\bullet$ $a$ est le coefficient directeur de la droite.\\
+          Il est donné par le déplacement vertical correspondant à un déplacement horizontal d'une unité. On lit $a=3$.\\ On peut en déduire que l'expression de la fonction $f$ est $f(x)={\color[HTML]{f15929}\boldsymbol{3x-4}}$.
+
+\item  $f(x)$ est de la forme $ax+b$, $f$ est donc une fonction affine avec pour coefficient directeur  $a=3$  (positif).\\
+             D'où, $f$ est une fonction  croissante, c'est-à-dire que lorsque $x$ augmente, $f(x)$  augmente. \\
+             Par conséquent, les valeurs de $f(x)$ sont d'abord négatives puis positives.
+
+\medskip
+
+             Aussi, $3x-3=0 \iff x=1$.
+
+\medskip
+ D'où le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 3, $f(x)=3x-3$ / 2}{ $-\infty$, $1$, $+\infty$}
+	\tkzTabLine{  , -, z, +}
+	\end{tikzpicture}
+
+\item  Pour déterminer le taux d'évolution réciproque, on commence par calculer le coefficient multiplicateur associé :\\Diminuer de $26\,\%$ revient à multiplier par $ 1 - \dfrac{26}{100} = 0{,}74$ 
+
+\medskip
+Le coefficient multiplicateur réciproque est donc : \\$CM_R=\dfrac{1}{0{,}74} \approx 1{,}351\,4$.{\color[HTML]{f15929}\\Remarque : Il faut arrondir les valeurs à $10^{-4}$ pour avoir un arrondi en pourcentage à $10^{-2}$.}
+
+\medskip
+ Le taux d'évolution réciproque est donc : \\$T_R=CM_R-1=1{,}351\,4-1=0{,}351\,4=35{,}14\,\%$ ce qui correspond à une hausse de $35{,}14\,\%$.
+
+\medskip
+Il faut donc appliquer une hausse d'environ $35{,}14\,\%$ pour revenir au niveau de départ.
+
+\item  $t\xrightarrow{\times  4} 4t\xrightarrow{+3}4t+3 \xrightarrow{+3t}4t+3+3t=7t+3$\\Le résultat du programme est donc $7t+3$.
+
+\medskip
+Le programme de calcul est équivalent à :	\begin{itemize}
+		\item Multiplier par $7$
+		\item Ajouter $3$
+	\end{itemize}
+
+
+\item $\dfrac{2x-8}{4}=\dfrac{-8}{5}\\
+5( 2x-8 )=4 \times (-8)\\
+10x-40=-32\\
+10x=-32+40\\
+10x=8\\
+x=\dfrac{8}{10}=\dfrac{4}{5}$
+\\L'équation a donc pour unique solution : ${\color[HTML]{f15929}\boldsymbol{\dfrac{4}{5}}}$.
+
+\end{enumerate}
+\end{seanceD}
+
+\end{document}

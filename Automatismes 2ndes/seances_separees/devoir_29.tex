@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+\newboolean{prof}\setboolean{prof}{true}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Devoirs - Séance 29 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenumD}{29}
+\newpage
+\begin{seanceD}{} %29
+
+\begin{enumerate}
+\item L'ordonnée de ce point est $0$ puisque le point d'intersection se situe sur l'axe des abscisses.\\
+      Son abscisse est donc donnée par la solution de l'équation  $\dfrac{x}{2}-10=0$, c'est-à-dire $x=20$.
+    \\Les coordonnées de ce   point sont donc : $({\color[HTML]{F15929}\boldsymbol{20\,;\,0}})$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item On commence par déterminer l'équation réduite de la droite $(D)$.\\
+    Son coefficient directeur est $-\dfrac{2}{3}$ et son ordonnée à l'origine est $1$.\\
+    L'équation réduite de $(D)$ est : $y=-\dfrac{2}{3}x+1$.\\
+    L'ordonnée du point de $(D)$ d'abscisse $36$ est donnée par : $y=-\dfrac{2}{3}\times 36+1$, ce qui donne\\
+    $y=\dfrac{-72}{3}+1=-24+1=-23$.\\
+    L'ordonnée du point de $(D)$ d'abscisse $36$ est $-23$.\\On a $-20>-23$, donc {\bfseries \color[HTML]{F15929}le point $A$ est situé au-dessus de la droite $(D)$}.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Pour vérifier si un point $(x\,;\,y)$ appartient à la courbe d'équation $y=\dfrac{4}{x}$, on vérifie si les coordonnées satisfont l'équation.\\$\bullet$ Pour le point $S$ :\\On calcule $\dfrac{4}{2}=2$.\\On a $y_{S}=3\neq 2$ donc {\bfseries \color[HTML]{F15929}$S$ n'appartient pas à la courbe}.\\$\bullet$ Pour le point $Z$ :\\On calcule $\dfrac{4}{4}=1$.\\On a $y_{Z}=1$ donc $Z$ appartient à la courbe.\\$\bullet$ Pour le point $Y$ :\\On calcule $\dfrac{4}{2}=2$.\\On a $y_{Y}=2$ donc $Y$ appartient à la courbe.\\$\bullet$ Pour le point $W$ :\\On calcule $\dfrac{4}{\dfrac{6}{5}}=4\times \dfrac{5}{6}=\dfrac{10}{3}$.\\On a $y_{W}=\dfrac{10}{3}$ donc $W$ appartient à la courbe.
+
+\medskip
+La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}B}.
+
+\item L'équation est de la forme $X^2=k$ avec $X=(x+4)$ et $k=5$.\\
+        Comme $k>0$, les solutions de $(x+4)^2=5$ sont données par les solutions de chacune des équations :         $x+4=-\sqrt{5}$ et $x+4=\sqrt{5}$.\\
+        $x+4=-\sqrt{5}$ a pour solution $-\sqrt{5}-4$ et 
+        $x+4=\sqrt{5}$ a pour solution $\sqrt{5}-4$.\\
+        Ainsi, l'ensemble des solutions de l'équation est $S={\color[HTML]{F15929}\boldsymbol{\{-\sqrt{5}-4\,;\,\sqrt{5}-4\}}}$.
+         \\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Dans une $1$ heure, il y a $4\times 15$ minutes.\\
+    Ainsi, en $1$ heure, elle parcourt $15$ fois plus de distance, soit $0{,}4\times 15=6\text{ km}$.\\
+    Sa vitesse moyenne est donc ${\color[HTML]{F15929}\boldsymbol{6}}\text{ km/h}$. \\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}C}.
+
+\item Un verre de jus d'orange contient environ $25$ ${\color[HTML]{F15929}\boldsymbol{\textbf{cL}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{F15929}D}.
+
+\end{enumerate}
+
+\end{seanceD}
+
+\end{document}

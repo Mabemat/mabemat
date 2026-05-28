@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+\newboolean{prof}\setboolean{prof}{true}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Devoirs - Séance 25 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenumD}{25}
+\newpage
+\begin{seanceD}{} %25
+
+\begin{enumerate}
+\item $\dfrac{5}{8}x+2x=\dfrac{5}{8}x+\dfrac{2\times8}{8}x=\dfrac{5}{8}x+\dfrac{16}{8}x=\dfrac{5+16}{8}x=$ ${\color[HTML]{f15929}\boldsymbol{\dfrac{21}{8}x}}$
+
+\item On utilise l'égalité remarquable ${\color{red} a}^2-{\color{blue} b}^2=({\color{red} a}-{\color{blue} b})({\color{red} a}+{\color{blue} b})$ avec $a={\color{red} 4(3x+5)}$ et $b={\color{blue} 3(8x-1))}$.\\
+  $\begin{aligned}16(3x+5)^2-9(8x-1)^2
+  &=\underbrace{({\color{red} 4(3x+5)})^2-({\color{blue} 3(8x-1)})^2}_{a^2-b^2}\\
+  &=\underbrace{[({\color{red} 4(3x+5)})-({\color{blue} 3(8x-1)})][({\color{red} 4(3x+5)})+({\color{blue} 3(8x-1)})]}_{(a-b)(a+b)}\\
+  &= (12x+20-24x+3)(12x+20+24x-3)\\ &={\color[HTML]{f15929}\boldsymbol{(-12x+23)(36x+17)}}\end{aligned}$
+
+\item Diminuer de $34\,\%$ revient à multiplier par $1 - 0{,}34$ (coefficient multiplicateur).\\
+Si $V_I$ est le prix initial, on a : $ V_I \times \left(1 - 0{,}34\right)=160$.\\
+Ainsi, le prix initial est donné par : ${\color[HTML]{f15929}\boldsymbol{\dfrac{160}{1 - 0{,}34}}}$.\\La bonne réponse est la réponse {\bfseries \color[HTML]{f15929}A}.
+
+\item  $9$ $\text{ m}$ $= 0{,}9$ $\text{dam}$\\
+L'aire du carré est : $0{,}9 \text{ dam}\times 0{,}9 \text{ dam} = {\color[HTML]{f15929}\boldsymbol{0{,}81\text{ dam}^2}}$.
+
+\item On a $9=3^{2}$ donc :\\
+    $
+    \text{Le triple de  } 9^{50}  = 3 \times 9^{50} 
+     = 3\times  \left(3^{2}\right)^{50} 
+    =3\times  3^{100} 
+    ={\color[HTML]{f15929}\boldsymbol{3^{101}}} 
+$
+   
+\item $\dfrac{x-12}{x+1} > 0$\\$\bullet$ On commence par chercher les éventuelles valeurs interdites :\\$x +1 = 0$ \\$x +1 {\color[HTML]{f15929}\boldsymbol{-1}} = {\color[HTML]{f15929}\boldsymbol{-1}}$\\$x = -1$\\Le quotient est défini sur $\mathbb{R} \smallsetminus \{-1\}$.\\$\bullet$ On résout l'inéquation sur $\mathbb{R} \smallsetminus \{-1\}$.\\$x -12 > 0$ si et seulement si $x > 12$.\\$x+1 > 0$ si et seulement si $x > -1$.\\On peut donc en déduire le tableau de signes suivant :\\\begin{tikzpicture}[baseline, scale=0.75]
+    \tkzTabInit[lgt=8,deltacl=0.8,espcl=3.5]{ $x$ / 2, $x-12$ / 2, $x+1$ / 2, $\dfrac{x-12}{x+1}$ / 4}{ $-\infty$, $-1$, $12$, $+\infty$}
+	\tkzTabLine{  , -, t, -, z, +}
+	\tkzTabLine{  , -, z, +, t, +}
+	\tkzTabLine{  , +, d, -, z, +}
+	\end{tikzpicture}
+\\ L'ensemble de solutions de l'inéquation est $S = \left] -\infty ; -1 \right[ \cup \left] 12; +\infty \right[ $.
+\end{enumerate}
+\end{seanceD}
+
+\end{document}

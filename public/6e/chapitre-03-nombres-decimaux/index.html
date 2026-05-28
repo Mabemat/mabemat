@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nombres décimaux — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/6e/">6ème</a>
+    <span class="sep">/</span>
+    <span>Chapitre 03</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#D36740;">03</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 03 · 6ème
+      </div>
+      
+      <h1 class="fade-up d2">Nombres décimaux</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#D36740;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/6e/chapitre-03-nombres-decimaux/cours.09d294bdddf4e1a2a564e2bf0c90cf2d.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/6e/">
+    <div><div class="adj-lbl">← 6ème</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/6e/chapitre-04-angles-1/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  
+  <div class="lesson-mobile-bar" id="lesson-mobile-bar">
+    <button id="mb-close-btn">← Fermer</button>
+    <span class="mb-pct" id="mb-pct">0 %</span>
+    <button id="mb-toc-btn">≡ Plan</button>
+  </div>
+
+  
+  <div class="lesson-toc-backdrop" id="lesson-toc-backdrop"></div>
+  <div class="lesson-toc-drawer" id="lesson-toc-drawer">
+    <div class="lesson-toc-drawer-header">
+      <div class="eyebrow">Dans cette leçon</div>
+      <button class="lesson-toc-drawer-close" id="lesson-toc-drawer-close" aria-label="Fermer le plan">✕</button>
+    </div>
+    <ol id="lesson-toc-drawer-list"></ol>
+  </div>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/6e/chapitre-03-nombres-decimaux/cours.09d294bdddf4e1a2a564e2bf0c90cf2d.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/6e/">6ème</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/6e/chapitre-03-nombres-decimaux/">Nombres décimaux</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 03 - Leçon
+      </div>
+      <h1 class="lesson-h1" style="color:#D36740;">Nombres décimaux</h1>
+
+      <div class="full-lesson niveau-6e">
+        <h2 class="subsection-title">I. Écriture décimale</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Un nombre décimal est la somme de sa <strong>partie entière</strong> et de sa <strong>partie décimale</strong>.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Donner la partie entière puis la partie décimale de 762,94.<br>
+Sa partie entière vaut 762 et sa partie décimale 0,94.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Un nombre décimal admet différentes décompositions.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Décompose le nombre 762,94 en t'aidant du tableau de numération :
+<img src="/mabemat/figures/6e/chapitre-03/fig6.svg" alt="Tableau de numération de 762,94" style="display:block; margin:0.8rem auto; max-width:100%;">
+<p>On peut écrire : $762{,}94 = 700 + 60 + 2 + 0{,}9 + 0{,}04$<br>
+Ou encore : $762{,}94 = 7\times 100 + 6\times 10 + 2\times 1 + 9\times 0{,}1 + 4\times 0{,}01$</p>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+En t'aidant du tableau ci-dessus, réponds aux questions suivantes :
+<ol>
+<li>Dans le nombre 762,94, quel est le rang du chiffre 9 ?<br>
+Le chiffre 9 est le chiffre des dixièmes.</li>
+<li>Dans le nombre 762,94, quel est le nombre de centièmes ?<br>
+Le nombre des centièmes est 76 294.</li>
+<li>Dans 762,94, déterminer le nombre de millièmes.<br>
+762,94 = 762,940 contient 762 940 millièmes.</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Supprimer éventuellement les zéros « inutiles » :
+<ol style="column-count:4; column-gap:1em;">
+<li>$23{,}80 = 23{,}8$</li>
+<li>$040{,}54 = 40{,}54$</li>
+<li>$306\,210 = 306\,210$</li>
+<li>$56{,}00 = 56$</li>
+</ol>
+</div>
+</div>
+<h2 class="subsection-title">II. Fractions décimales</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Un <strong>nombre décimal</strong> est un nombre qui peut s'écrire sous la forme d'une <strong>fraction décimale</strong>, c'est-à-dire une fraction dont le numérateur est un nombre entier et le dénominateur est 1, 10, 100, 1 000, etc.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<div style="overflow-x:auto;">
+<table>
+<tr>
+<td><strong>En lettres</strong></td>
+<td>Un dixième</td>
+<td>Un centième</td>
+<td>Un millième</td>
+<td>Treize centièmes</td>
+</tr>
+<tr>
+<td><strong>Fraction décimale</strong></td>
+<td>$\dfrac{1}{10}$</td>
+<td>$\dfrac{1}{100}$</td>
+<td>$\dfrac{1}{1\,000}$</td>
+<td>$\dfrac{13}{100}$</td>
+</tr>
+<tr>
+<td><strong>Écriture décimale</strong></td>
+<td>$0{,}1$</td>
+<td>$0{,}01$</td>
+<td>$0{,}001$</td>
+<td>$0{,}13$</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>Le nombre $\dfrac{4826}{1000}$ est un nombre décimal : le numérateur est 4 826 et le dénominateur est 1 000.</li>
+<li>Le nombre entier 27 est aussi un nombre décimal car $27 = \dfrac{27}{1}$.</li>
+<li>Le pourcentage 36 % est un nombre décimal car $36\% = \dfrac{36}{100}$.</li>
+</ul>
+</div>
+</div>
+<div class="remarque">
+Certains nombres ne peuvent pas s'écrire sous forme de fraction décimale. Ce ne sont donc pas des nombres décimaux. C'est le cas par exemple de $\dfrac{1}{3}$ et de $\pi$ : ils possèdent une infinité de chiffres après la virgule.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+On peut aussi décomposer un nombre décimal en utilisant les fractions décimales :
+<img src="/mabemat/figures/6e/chapitre-03/fig5.svg" alt="Décomposition de 762,94" style="display:block; margin:0.8rem auto; max-width:100%; max-height:220px;">
+<ol>
+<li>Écrire $2{,}65$ en écriture fractionnaire.<br>
+$2{,}65 = \dfrac{265}{100}$. En effet, 5 est au rang des centièmes.</li>
+<li>Écrire $\dfrac{67}{10}$ sous forme décimale.<br>
+$\dfrac{67}{10} = 6{,}7$. En effet, 7 est au rang des dixièmes.</li>
+</ol>
+</div>
+</div>
+<h2 class="subsection-title">III. Ordonner les nombres décimaux</h2>
+<h3 class="subsubsection-title">a. La demi-droite graduée</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Une <strong>demi-droite graduée</strong> est une demi-droite pour laquelle on a choisi une <strong>unité de longueur</strong> que l'on a reportée régulièrement depuis l'<strong>origine</strong> (souvent notée O).
+<img src="/mabemat/figures/6e/chapitre-03/fig1.svg" alt="Demi-droite graduée" style="display:block; margin:0.6rem auto; max-width:100%; max-height:80px;">
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Sur une demi-droite graduée, chaque point est repéré par un unique nombre appelé <strong>abscisse</strong> de ce point. Réciproquement, chaque nombre est l'abscisse d'un unique point de la demi-droite.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Sur la demi-droite graduée ci-dessous, l'unité est partagée en quatre parts égales.
+<img src="/mabemat/figures/6e/chapitre-03/fig2.svg" alt="Demi-droite graduée avec points A B C D E F" style="display:block; margin:0.6rem auto; max-width:100%; max-height:80px;">
+<ol>
+<li>Quelles sont les abscisses des points A, B, C et D ?<br>
+A$(0{,}25)$, B$(0{,}5)$, C$(2)$ et D$(2{,}75)$.</li>
+<li>Placer le point E(1,5) et F(3).</li>
+</ol>
+</div>
+</div>
+<div class="remarque">
+Sur une demi-droite graduée, l'ordre des points dans le sens de la flèche correspond à l'ordre croissant de leur abscisse. Ici, comme E est à gauche de F, on a $1 < 3$.
+</div>
+<h3 class="subsubsection-title">b. Comparer et ordonner</h3>
+<div class="environment vocabulaire">
+<div class="environment-title">Vocabulaire :</div>
+<div class="environment-content">
+<ol style="column-count:2; column-gap:1em;">
+<li>$<$ se lit « est inférieur à »</li>
+<li>$>$ se lit « est supérieur à »</li>
+<li>$\leq$ se lit « est inférieur ou égal à »</li>
+<li>$\geq$ se lit « est supérieur ou égal à »</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ol style="column-count:2; column-gap:1em;">
+<li>$3{,}2 < 3{,}5$ se lit « 3,2 est inférieur à 3,5 »</li>
+<li>$6{,}3 > 2$ se lit « 6,3 est supérieur à 2 »</li>
+<li>$5 \leq 5$ se lit « 5 est inférieur ou égal à 5 »</li>
+<li>$8 \geq 7$ se lit « 8 est supérieur ou égal à 7 »</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Ranger ces nombres dans l'ordre décroissant : 9,6 ; 8,9 ; 11 ; 8,79.
+$$11 > 9{,}6 > 8{,}90 > 8{,}79$$
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour comparer deux nombres décimaux, on compare d'abord leur <strong>partie entière</strong> :
+<ul>
+<li>si elles sont différentes, alors le nombre le plus grand est celui qui a la plus grande partie entière ;</li>
+<li>si elles sont égales, on compare les décimales en commençant par le chiffre des dixièmes, puis des centièmes, etc. On peut ajouter des zéros inutiles si besoin.</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>Comparer 13,79 et 11,21.<br>
+Puisque $13 > 11$, alors $13{,}79 > 11{,}21$.</li>
+<li>Comparer 11,2 et 11,201.<br>
+Les parties entières sont égales. On remarque que $11{,}2 = 11{,}200$ et $11{,}201$. Le chiffre des dixièmes est 2 pour les deux. Le chiffre des centièmes est différent et $0 < 1$. <br>
+Donc $11{,}2 < 11{,}201$.</li>
+</ul>
+</div>
+</div>
+<h3 class="subsubsection-title">c. Encadrer, intercaler et arrondir</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<strong>Encadrer</strong> un nombre revient à trouver deux autres nombres tels que l'un lui est inférieur et l'autre lui est supérieur.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Encadrer 27 à la dizaine près.
+<img src="/mabemat/figures/6e/chapitre-03/fig3.svg" alt="Encadrer 27 à la dizaine près" style="display:block; margin:0.5rem auto; max-width:100%; max-height:60px;">
+<p>On constate que le nombre 27 est entre les nombres 20 et 30. On écrit alors $20 < 27 < 30$.</p>
+</div>
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<strong>Intercaler</strong> un nombre entre deux autres revient à trouver un nombre compris entre les deux nombres donnés.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content env-fig">
+<div>
+Intercaler un nombre entre 21,5 et 21,6.<br>
+On peut par exemple intercaler 21,55 entre 21,5 et 21,6. Les nombres 21,51 et 21,502 sont d'autres possibilités.
+</div><img src="/mabemat/figures/6e/chapitre-03/fig4.svg" alt="Intercaler 21,55" style="max-height:70px;">
+</div>
+</div>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<strong>Arrondir</strong> un nombre à un rang donné, c'est trouver le nombre le plus proche du nombre initial dont l'écriture s'arrête à ce rang. On utilise le symbole « environ égal : $\simeq$ » entre le nombre et son arrondi.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+<ul>
+<li>Arrondir à l'unité de 23,7.<br>
+24 c'est le nombre entier le plus proche de 23,7. On note $23{,}7 \simeq 24$.</li>
+<li>Arrondir au dixième de 91,42.<br>
+91,4 c'est le nombre décimal le plus proche de 91,42 au dixième près. On note $91{,}42 \simeq 91{,}4$.</li>
+</ul>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/6e/chapitre-03-nombres-decimaux/cours.09d294bdddf4e1a2a564e2bf0c90cf2d.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay  = document.getElementById('lesson-overlay');
+  var btn      = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp  = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var mbPct = document.getElementById('mb-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+  
+  var mbCloseBtn  = document.getElementById('mb-close-btn');
+  var mbTocBtn    = document.getElementById('mb-toc-btn');
+  var drawer      = document.getElementById('lesson-toc-drawer');
+  var drawerList  = document.getElementById('lesson-toc-drawer-list');
+  var drawerClose = document.getElementById('lesson-toc-drawer-close');
+  var backdrop    = document.getElementById('lesson-toc-backdrop');
+
+   
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
+   
+  function buildTOC() {
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    var listsToFill = [];
+    if (tocList) { tocList.innerHTML = ''; listsToFill.push(tocList); }
+    if (drawerList) { drawerList.innerHTML = ''; listsToFill.push(drawerList); }
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      listsToFill.forEach(function(list) {
+        var li = document.createElement('li');
+        if (h.tagName === 'H3') li.classList.add('toc-sub');
+        li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+        list.appendChild(li);
+      });
+    });
+  }
+
+   
+  function updateProgress() {
+    var top = overlay.scrollTop;
+    var max = overlay.scrollHeight - overlay.clientHeight;
+    var p   = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp)  lpRp.style.width      = pct + '%';
+    if (lpBar) lpBar.style.width     = pct + '%';
+    if (lpPct) lpPct.textContent     = pct + ' %';
+    if (mbPct) mbPct.textContent     = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var allLinks = [];
+    if (tocList)    tocList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    if (drawerList) drawerList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    allLinks.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+   
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    wrapTables();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    closeDrawer();
+    if (btn) btn.focus();
+  }
+
+   
+  function openDrawer() {
+    if (drawer)   drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+  }
+  function closeDrawer() {
+    if (drawer)   drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+  }
+
+   
+  if (btn)      btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  if (mbCloseBtn) mbCloseBtn.addEventListener('click', closeLecon);
+  if (mbTocBtn)   mbTocBtn.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (backdrop)    backdrop.addEventListener('click', closeDrawer);
+
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+    });
+  }
+  
+  if (drawerList) {
+    drawerList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      closeDrawer();
+    });
+  }
+
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1779869413';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{{ $num := .Get "numero" | default "??" }}
+{{ $raw := .Inner }}
+{{ $parts := split $raw "---CORR---" }}
+{{ $question := index $parts 0 }}
+{{ $correction := "" }}
+{{ if gt (len $parts) 1 }}{{ $correction = index $parts 1 }}{{ end }}
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">{{ $num }}</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    {{ .Page.RenderString $question }}
+  </div>
+  {{ if $correction }}
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>{{ .Page.RenderString $correction }}</div>
+  </div>
+  {{ end }}
+</article>

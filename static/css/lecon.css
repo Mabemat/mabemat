@@ -325,3 +325,27 @@ th {
 /* Paragraphes */
 .full-lesson p { margin: 10px 0; }
 
+
+/* ==========================================================
+   Layout texte + figure côte à côte — responsive
+   ========================================================== */
+.env-fig {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.env-fig-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.env-fig > div,
+.env-fig-top > div {
+    flex: 1;
+    min-width: 0;
+}
+.env-fig > img,
+.env-fig-top > img {
+    flex-shrink: 0;
+    max-width: 45%;
+}

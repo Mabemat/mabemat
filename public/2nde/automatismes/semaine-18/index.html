@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semaine 18 — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/2nde/">2nde</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/2nde/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Semaine 18</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>18</em></h1>
+  
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séance + Devoirs</span>
+    <span><span class="dot"></span>12 questions</span>
+    <span><span class="dot"></span>≈ 20 min</span>
+  </div>
+</section>
+
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance" role="tab" aria-selected="true">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir" role="tab" aria-selected="false">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+</div>
+
+
+
+<section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
+  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici quatre planètes et leur masse. Laquelle a la masse la plus importante ?</p>
+<table>
+  <thead>
+      <tr>
+          <th>Planète</th>
+          <th>Masse</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Planète 1</td>
+          <td>$891{,}33\times 10^{23}$ kg</td>
+      </tr>
+      <tr>
+          <td>Planète 2</td>
+          <td>$449{,}85\times 10^{23}$ kg</td>
+      </tr>
+      <tr>
+          <td>Planète 3</td>
+          <td>$106{,}959\,6\times 10^{24}$ kg</td>
+      </tr>
+      <tr>
+          <td>Planète 4</td>
+          <td>$945{,}99\times 10^{21}$ kg</td>
+      </tr>
+  </tbody>
+</table>
+<p>A. Planète 1 $\quad$ B. Planète 3 $\quad$ C. Planète 2 $\quad$ D. Planète 4</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On ramène tout à la même puissance de $10$ :</p>
+<ul>
+<li>Planète 1 : $8{,}913\,3\times 10^{25}$ kg</li>
+<li>Planète 2 : $4{,}498\,5\times 10^{25}$ kg</li>
+<li>Planète 3 : $1{,}069\,596\times 10^{26}$ kg</li>
+<li>Planète 4 : $9{,}459\,9\times 10^{23}$ kg</li>
+</ul>
+<p>La plus grande est $1{,}069\,596\times 10^{26}$, donc la <strong>Planète 3</strong>. Réponse <strong>B</strong>.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;un article a subi une baisse de $27\,\%$. Le taux à appliquer pour que l&rsquo;article retrouve son prix initial est donné par :</p>
+<p>A. $1-\dfrac{1}{0{,}73}$ $\quad$ B. $\dfrac{1}{0{,}73}-1$ $\quad$ C. $\dfrac{-0{,}27}{0{,}73}$ $\quad$ D. $\dfrac{1}{0{,}27}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Coefficient multiplicateur de la baisse : $0{,}73$.</p>
+<p>Coefficient réciproque : $\dfrac{1}{0{,}73}$.</p>
+<p>Taux réciproque : $\dfrac{1}{0{,}73}-1$.</p>
+<p>La bonne réponse est <strong>B</strong>.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Comparer $(-5{,}78)^2$ et $(-5{,}8)^2$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Comme $5{,}78 < 5{,}8$, on a $5{,}78^2 < 5{,}8^2$, donc $(-5{,}78)^2 < (-5{,}8)^2$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Soit $x$ un réel non nul. Simplifier $\dfrac{35x^5}{\dfrac{7}{x^2}}$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$$\dfrac{35x^5}{\dfrac{7}{x^2}}=35x^5\times\dfrac{x^2}{7}=\dfrac{35x^7}{7}=\mathbf{5x^7}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Calculer $A=\dfrac{286}{100}+\dfrac{29}{1\,000}$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$A=2{,}86+0{,}029=\mathbf{2{,}889}$</div>
+  </div>
+  
+</article>
+
+
+
+</section>
+
+
+
+
+<section id="panel-devoir" class="mode-panel panel-devoir">
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
+  
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici quatre cellules et leur taille. Laquelle est la plus grande ?</p>
+<table>
+  <thead>
+      <tr>
+          <th>Cellule</th>
+          <th>Taille</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Cellule 1</td>
+          <td>$39{,}18\times 10^{-7}$ mm</td>
+      </tr>
+      <tr>
+          <td>Cellule 2</td>
+          <td>$470{,}16\times 10^{-8}$ mm</td>
+      </tr>
+      <tr>
+          <td>Cellule 3</td>
+          <td>$322{,}02\times 10^{-6}$ mm</td>
+      </tr>
+      <tr>
+          <td>Cellule 4</td>
+          <td>$505{,}2\times 10^{-9}$ mm</td>
+      </tr>
+  </tbody>
+</table>
+<p>A. Cellule 1 $\quad$ B. Cellule 3 $\quad$ C. Cellule 2 $\quad$ D. Cellule 4</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On ramène tout à la même puissance :</p>
+<ul>
+<li>Cellule 1 : $3{,}918\times 10^{-6}$ mm</li>
+<li>Cellule 2 : $4{,}701\,6\times 10^{-6}$ mm</li>
+<li>Cellule 3 : $3{,}220\,2\times 10^{-4}$ mm</li>
+<li>Cellule 4 : $5{,}052\times 10^{-7}$ mm</li>
+</ul>
+<p>La plus grande est $3{,}220\,2\times 10^{-4}$, donc la <strong>Cellule 3</strong>. Réponse <strong>B</strong>.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;un article a subi une baisse de $5\,\%$. Le taux à appliquer pour que l&rsquo;article retrouve son prix initial est donné par :</p>
+<p>A. $1-\dfrac{1}{0{,}95}$ $\quad$ B. $\dfrac{1}{0{,}05}$ $\quad$ C. $\dfrac{-0{,}05}{0{,}95}$ $\quad$ D. $\dfrac{0{,}05}{0{,}95}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Coefficient multiplicateur de la baisse : $0{,}95$.</p>
+<p>Coefficient réciproque : $\dfrac{1}{0{,}95}$.</p>
+<p>Taux réciproque : $\dfrac{1}{0{,}95}-1=\dfrac{1-0{,}95}{0{,}95}=\dfrac{0{,}05}{0{,}95}$.</p>
+<p>La bonne réponse est <strong>D</strong>.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Comparer $(20{,}1)^2$ et $(20{,}05)^2$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Comme $20{,}1>20{,}05$, on a $(20{,}1)^2>(20{,}05)^2$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Soit $x$ un réel non nul. Simplifier $\dfrac{8x^3}{\dfrac{2}{x^5}}$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$$\dfrac{8x^3}{\dfrac{2}{x^5}}=8x^3\times\dfrac{x^5}{2}=\dfrac{8x^8}{2}=\mathbf{4x^8}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Calculer $A=\dfrac{7}{10}+\dfrac{45}{100}$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$A=0{,}7+0{,}45=\mathbf{1{,}15}$</div>
+  </div>
+  
+</article>
+
+
+
+</section>
+
+
+
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/2nde/automatismes/semaine-19/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/2nde/automatismes/semaine-17/">Semaine suivante →</a>
+    
+  </div>
+</div>
+
+<script>
+(function(){
+  
+  document.querySelectorAll('.mode-tabs button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.mode-tabs button').forEach(function(b){
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+      });
+      document.querySelectorAll('.mode-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var panel = document.getElementById('panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  
+  document.querySelectorAll('.auto1re-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.auto1re-card');
+      var corr = card.querySelector('.auto1re-corr');
+      var open = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      card.classList.toggle('is-open', open);
+      if (corr) corr.classList.toggle('open', open);
+      var lbl = btn.querySelector('.t');
+      if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+    });
+  });
+
+  
+  var showDevoirCorr =  false ;
+  if (!showDevoirCorr) {
+    var devoirPanel = document.getElementById('panel-devoir');
+    if (devoirPanel) {
+      devoirPanel.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function(el){
+        el.style.display = 'none';
+      });
+    }
+  }
+})();
+</script>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1779869412';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

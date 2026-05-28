@@ -1,0 +1,324 @@
+
+\section*{Chapitre 6 - Organisation et gestion de données}
+\addcontentsline{toc}{section}{Chapitre 6 - Organisation et gestion de données}
+
+\subsection*{I. Tableaux}
+\addcontentsline{toc}{subsection}{I. Tableaux}
+
+\begin{Définition}[c]
+Une \textbf{série statistique} est un ensemble de valeurs collectées. Le \textbf{caractère} est l'élément que l'on étudie au sein de la \textbf{population} présentée par la série. On peut organiser ces données dans des \textbf{tableaux simples} (un seul caractère) ou bien des \textbf{tableaux à double entrée} (deux caractères).
+\end{Définition}
+
+\begin{Définition}[c]
+L'\textbf{effectif} d'une valeur correspond au nombre de fois où cette valeur apparaît dans la série statistique. L'\textbf{effectif total} est le nombre total de valeurs, il correspond à la somme des effectifs.
+\end{Définition}
+
+\begin{Exemple}
+On demande aux élèves d'une classe de 6e leur saison de naissance. Au lieu d'énumérer une par une toutes les réponses, il est plus lisible de les ranger dans un \textbf{tableau}.
+
+\begin{center}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\arrayrulecolor{Couleur8}
+\begin{tabular}{|C{3.5cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|C{2cm}|}
+\hline
+\cellcolor{Couleur8!10}Saison de naissance & Hiver & Printemps & Été & Automne & Total \\
+\hline
+\cellcolor{Couleur8!10}Effectif & 8 & \textbf{\textcolor{Couleur8}{12}} & 6 & 4 & 30 \\
+\hline
+\end{tabular}
+\end{center}
+
+La \textbf{population} est \ligne
+
+Le \textbf{caractère} étudié \ligne
+
+L'\textbf{effectif total} est \ligne
+
+On lit, par exemple, que \ligne
+
+\end{Exemple}
+
+\begin{Exemple}
+On refait le même sondage que précédemment, en s'intéressant désormais également au genre des élèves qui y répondent. Comme on considère \textbf{deux caractères} à la fois (le genre et la saison de naissance), on utilise un \textbf{tableau à double entrée}.
+
+\begin{center}
+\begin{tikzpicture}
+    % Définition des dimensions
+    \def\cellwidth{2.4cm}
+    \def\cellheight{1cm}
+    
+    % Couleurs de fond
+    \fill[Couleur8!10] (0, 0) rectangle (\cellwidth, 3*\cellheight);  % Cellule "Genre"
+    \fill[Couleur8!10] (2*\cellwidth, 4*\cellheight) rectangle (7*\cellwidth, 5*\cellheight);  % "Saison de naissance"
+    \fill[Couleur8!10] (2*\cellwidth, 3*\cellheight) rectangle (7*\cellwidth, 4*\cellheight);  % Ligne des saisons
+        \fill[Couleur8!10] (\cellwidth, 0) rectangle (2*\cellwidth, \cellheight);      % Total
+    \fill[Couleur8!10] (\cellwidth, \cellheight) rectangle (2*\cellwidth, 2*\cellheight);  % Garçon
+    \fill[Couleur8!10] (\cellwidth, 2*\cellheight) rectangle (2*\cellwidth, 3*\cellheight); % Fille
+    
+    % Contours de toutes les cases
+    % Colonne Genre (lignes 1-3)
+    \draw[thin, Couleur8] (0, 0) rectangle (\cellwidth, 3*\cellheight);
+    
+    % Colonne étiquettes lignes
+    \draw[thin,Couleur8] (\cellwidth, 0) rectangle (2*\cellwidth, \cellheight);      % Total
+    \draw[thin,Couleur8] (\cellwidth, \cellheight) rectangle (2*\cellwidth, 2*\cellheight);  % Garçon
+    \draw[thin,Couleur8] (\cellwidth, 2*\cellheight) rectangle (2*\cellwidth, 3*\cellheight); % Fille
+    
+    % Ligne du haut "Saison de naissance"
+    \draw[thin, Couleur8] (2*\cellwidth, 4*\cellheight) rectangle (7*\cellwidth, 5*\cellheight);
+    
+    % Ligne des en-têtes saisons
+    \draw[thin, Couleur8] (2*\cellwidth, 3*\cellheight) rectangle (3*\cellwidth, 4*\cellheight); % Hiver
+    \draw[thin, Couleur8] (3*\cellwidth, 3*\cellheight) rectangle (4*\cellwidth, 4*\cellheight); % Printemps
+    \draw[thin, Couleur8] (4*\cellwidth, 3*\cellheight) rectangle (5*\cellwidth, 4*\cellheight); % Été
+    \draw[thin, Couleur8] (5*\cellwidth, 3*\cellheight) rectangle (6*\cellwidth, 4*\cellheight); % Automne
+    \draw[thin, Couleur8] (6*\cellwidth, 3*\cellheight) rectangle (7*\cellwidth, 4*\cellheight); % Total
+    
+    % Ligne Fille (données)
+    \draw[thin,Couleur8] (2*\cellwidth, 2*\cellheight) rectangle (3*\cellwidth, 3*\cellheight); % 3
+    \draw[thin,Couleur8] (3*\cellwidth, 2*\cellheight) rectangle (4*\cellwidth, 3*\cellheight); % 8
+    \draw[thin,Couleur8] (4*\cellwidth, 2*\cellheight) rectangle (5*\cellwidth, 3*\cellheight); % 1
+    \draw[thin,Couleur8] (5*\cellwidth, 2*\cellheight) rectangle (6*\cellwidth, 3*\cellheight); % 4
+    \draw[thin,Couleur8] (6*\cellwidth, 2*\cellheight) rectangle (7*\cellwidth, 3*\cellheight); % 16
+    
+    % Ligne Garçon (données)
+    \draw[thin,Couleur8] (2*\cellwidth, \cellheight) rectangle (3*\cellwidth, 2*\cellheight); % 5
+    \draw[thin,Couleur8] (3*\cellwidth, \cellheight) rectangle (4*\cellwidth, 2*\cellheight); % 4
+    \draw[thin,Couleur8] (4*\cellwidth, \cellheight) rectangle (5*\cellwidth, 2*\cellheight); % 5
+    \draw[thin,Couleur8] (5*\cellwidth, \cellheight) rectangle (6*\cellwidth, 2*\cellheight); % 0
+    \draw[thin,Couleur8] (6*\cellwidth, \cellheight) rectangle (7*\cellwidth, 2*\cellheight); % 14
+    
+    % Ligne Total (données)
+    \draw[thin,Couleur8] (2*\cellwidth, 0) rectangle (3*\cellwidth, \cellheight); % 8
+    \draw[thin,Couleur8] (3*\cellwidth, 0) rectangle (4*\cellwidth, \cellheight); % 12
+    \draw[thin,Couleur8] (4*\cellwidth, 0) rectangle (5*\cellwidth, \cellheight); % 6
+    \draw[thin,Couleur8] (5*\cellwidth, 0) rectangle (6*\cellwidth, \cellheight); % 4
+    \draw[thin,Couleur8] (6*\cellwidth, 0) rectangle (7*\cellwidth, \cellheight); % 30
+    
+    % Ligne 5 (en haut) : "Saison de naissance" (colonnes 3-7)
+    \node at (4.5*\cellwidth, 4.5*\cellheight) {\textbf{Saison de naissance}};
+    
+    % Ligne 4 : En-têtes des saisons (colonnes 3-7)
+    \node at (2.5*\cellwidth, 3.5*\cellheight) {\textbf{Hiver}};
+    \node at (3.5*\cellwidth, 3.5*\cellheight) {\textbf{Printemps}};
+    \node at (4.5*\cellwidth, 3.5*\cellheight) {\textbf{Été}};
+    \node at (5.5*\cellwidth, 3.5*\cellheight) {\textbf{Automne}};
+    \node at (6.5*\cellwidth, 3.5*\cellheight) {\textbf{Total}};
+    
+    % Colonne 1 : "Genre" (lignes 3-5)
+    \node at (0.5*\cellwidth, 1.5*\cellheight) {\textbf{Genre}};
+    
+    % Ligne 3 : "Fille" + données
+    \node at (1.5*\cellwidth, 2.5*\cellheight) {\textbf{Fille}};
+    \node at (2.5*\cellwidth, 2.5*\cellheight) {3};
+    \node[Couleur8] at (3.5*\cellwidth, 2.5*\cellheight) {\textbf{8}};
+    \node at (4.5*\cellwidth, 2.5*\cellheight) {1};
+    \node at (5.5*\cellwidth, 2.5*\cellheight) {4};
+    \node at (6.5*\cellwidth, 2.5*\cellheight) {16};
+    
+    % Ligne 2 : "Garçon" + données
+    \node at (1.5*\cellwidth, 1.5*\cellheight) {\textbf{Garçon}};
+    \node at (2.5*\cellwidth, 1.5*\cellheight) {5};
+    \node at (3.5*\cellwidth, 1.5*\cellheight) {4};
+    \node at (4.5*\cellwidth, 1.5*\cellheight) {5};
+    \node at (5.5*\cellwidth, 1.5*\cellheight) {0};
+    \node at (6.5*\cellwidth, 1.5*\cellheight) {14};
+    
+    % Ligne 1 : "Total" + données
+    \node at (1.5*\cellwidth, 0.5*\cellheight) {\textbf{Total}};
+    \node at (2.5*\cellwidth, 0.5*\cellheight) {8};
+    \node at (3.5*\cellwidth, 0.5*\cellheight) {12};
+    \node at (4.5*\cellwidth, 0.5*\cellheight) {6};
+    \node at (5.5*\cellwidth, 0.5*\cellheight) {4};
+    \node at (6.5*\cellwidth, 0.5*\cellheight) {30};
+    
+\end{tikzpicture}
+\end{center}
+
+On lit par exemple que \textbf{\textcolor{Couleur8}{8}} \ligne
+
+Cet effectif de 8 correspond à deux caractères : \ligne
+
+On remarque que l'effectif total se retrouve avec les totaux en ligne ou en colonne.
+\end{Exemple}
+
+\begin{Remarque}
+Dans un tableau à double entrée, l'information est lue à l'intersection de la ligne et de la colonne correspondant à ce que l'on cherche. Ce type de tableau est intéressant pour comparer ou mettre en relation plusieurs informations.
+\end{Remarque}
+
+\newpage
+\subsection*{II. Diagrammes}
+\addcontentsline{toc}{subsection}{II. Diagrammes}
+
+\begin{Définition}
+Un \textbf{diagramme en barres} (ou diagramme en bâtons) est composé de plusieurs rectangles \textbf{de même largeur}. La hauteur de chaque rectangle est proportionnelle à l'effectif de la valeur qu'il représente.
+\end{Définition}
+
+\begin{Exemple}
+\vspace{-0.5cm}
+\begin{minipage}[c]{0.45\textwidth}
+
+On a représenté le nombre d'élèves demi-pensionnaires d'un collège en fonction du jour de la semaine. \\
+Combien d'élèves sont demi-pensionnaires le mardi ? 
+
+\ligne
+
+\ligne
+
+\end{minipage} \hfill \begin{minipage}[c]{0.55\textwidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+% Axes
+\draw[->] (0,0) -- (8.5,0) node[right] {};
+\draw[->] (0,0) -- (0,4.25) node[above] {};
+
+% Graduations sur l'axe y
+\foreach \y in {0,50,100,150} {
+    \draw (-0.1,\y/40) -- (0.1,\y/40);
+    \node[left] at (-0.1,\y/40) {\y};
+}
+
+\foreach \y in {0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150} {
+    \draw[lightgray] (0,\y/40) -- (8.5,\y/40);
+    \node[left] at (-0.1,\y/40) {};
+}
+% Barres
+\fill[Couleur6] (0.5,0) rectangle (2.0,3);
+\fill[Couleur6!75] (2.5,0) rectangle (4,3.5);
+\fill[Couleur6!50] (4.5,0) rectangle (6,2.75);
+\fill[Couleur6!25] (6.5,0) rectangle (8,3.25);
+
+% Labels des jours
+\node[below] at (1.25,-0.3) {Lundi};
+\node[below] at (3.25,-0.3) {Mardi};
+\node[below] at (5.25,-0.3) {Jeudi};
+\node[below] at (7.25,-0.3) {Vendredi};
+
+% Titre
+\node[above] at (4.25,4.75) {\small Élèves demi-pensionnaires };
+\node[above] at (4.25,4.25) {\small en fonction du jour de la semaine};
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+
+\end{Exemple}
+
+\begin{Définition}
+Un \textbf{diagramme circulaire} est représenté par un disque partagé en plusieurs secteurs. L'angle de chaque secteur est proportionnel à l'effectif de la valeur qu'il représente.
+\end{Définition}
+
+
+
+\begin{Exemple}
+\vspace{-0.5cm}
+\begin{minipage}[c]{0.5\textwidth}
+On a représenté la proportion des différentes pistes de ski du domaine skiable des 3 Vallées. \\
+Quelle est la proportion de pistes vertes ?
+
+\ligne
+
+\ligne
+
+\ligne
+
+
+\end{minipage} \hfill \begin{minipage}[c]{0.5\textwidth}
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+
+
+% Secteurs
+\fill[gray] (0,0) -- (2,0) arc (0:60:2) -- cycle;
+\draw[white] (0,0) -- (2,0) arc (0:60:2) -- cycle;
+\fill[Couleur7] (0,0) -- (60:2) arc (60:110:2) -- cycle;
+\draw[white] (0,0) -- (60:2) arc (60:110:2) -- cycle;
+\fill[Couleur12] (0,0) -- (110:2) arc (110:263:2) -- cycle;
+\draw[white] (0,0) -- (110:2) arc (110:263:2) -- cycle;
+\fill[Couleur6] (0,0) -- (263:2) arc (263:360:2) -- cycle;
+\draw[white] (0,0) -- (263:2) arc (263:360:2) -- cycle;
+
+% Labels
+\node[black] at (3.7,0.8) {\small Noire 16,8 \%};
+\node[Couleur7] at (0.3,2.4) {\small Verte 14,2 \%};
+\node[Couleur12] at (-3.9,0) {\small Bleue 42,8 \%};
+\node[Couleur6] at (3.4,-1.7) {\small Rouge 32,4 \%};
+
+% Titre
+\node[above] at (0,3.2) {\small Proportion des différentes pistes};
+\node[above] at (0,2.8) {\small du domaine skiable des 3 Vallées};
+\end{tikzpicture}
+\end{center}
+\end{minipage}
+
+\end{Exemple}
+
+\begin{Définition}
+Un \textbf{diagramme cartésien} permet de représenter une quantité en fonction d'une autre. Chaque information est représentée par un point sur un graphique. Chaque point est repéré par ses coordonnées : son abscisse qui se lit sur l'axe horizontal et son ordonnée qui se lit sur l'axe vertical.
+\end{Définition}
+
+\begin{Exemple}
+\vspace{-0.5cm}
+\begin{minipage}[c]{0.4\textwidth}
+La courbe ci-contre représente l'évolution de l'intensité sonore lors d'un concert en fonction de la distance par rapport aux enceintes. \\
+Quelle est l'intensité à 10 mètres des enceintes ? 
+
+\ligne
+
+\ligne
+
+\end{minipage} \hfill \begin{minipage}[c]{0.6\textwidth}
+\begin{center}
+\begin{tikzpicture}[scale=.7]
+\begin{axis}[
+    width=12cm,
+    height=8cm,
+    xlabel={Distance (m)},
+    ylabel={Intensité (dB)},
+    xmin=0, xmax=72,
+    ymin=70, ymax=112,
+    grid=both,
+    grid style={line width=.1pt, draw=gray!20},
+    major grid style={line width=.2pt,draw=gray!20},
+    minor tick num=4,
+    axis lines=left,
+    xlabel style={at={(axis description cs:1,-0.1)}, anchor=north},
+    ylabel style={at={(axis description cs:0,1.02)}, anchor=south, rotate=270},
+    xtick={0,5,10,15,20,25,30,35,40,45,50,55,60,65,70},
+    ytick={70,75,80,85,90,95,100,105,110},
+    minor xtick={0,5,10,15,20,25,30,35,40,45,50,55,60,65,70},    
+    minor ytick={70,75,80,85,90,95,100,105,110},
+    tick align=outside,
+    tick style={color=black},
+]
+
+% Courbe principale (fonction de décroissance plus réaliste)
+\addplot[
+    domain=1:65,
+    samples=100,
+    smooth,
+    thick,
+    color=Couleur6
+] {110 - 20*log10(x)};
+
+% Point de départ
+\addplot[mark=*, mark size=2pt, color=Couleur8] coordinates {(1,110)};
+
+% Point final
+\addplot[mark=*, mark size=2pt, color=Couleur8] coordinates {(65,73.75)};
+
+% Ligne horizontale pointillée à y=97
+\draw[Couleur7, ultra thick, dashed] (axis cs:0,90) -- (axis cs:10,90);
+
+% Ligne verticale pointillée à x=5
+\draw[Couleur7, ultra thick, dashed] (axis cs:10,70) -- (axis cs:10,90);
+
+
+
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{minipage} 
+
+\end{Exemple}
+
+\newpage

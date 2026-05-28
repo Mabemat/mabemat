@@ -9,7 +9,7 @@ def aire_triangle(base, hauteur):
     return base * hauteur / 2
 ```
 
-`aire_triangle(6, 4)` → `12.0` ✓
+**Q2.** `aire_triangle(6, 4)` → `12.0` ✓
 
 ---
 
@@ -20,7 +20,7 @@ def vitesse_moyenne(distance, duree):
     return distance / duree
 ```
 
-`vitesse_moyenne(45, 1.5)` → `30.0` km/h ✓
+**Q2.** `vitesse_moyenne(45, 1.5)` → `30.0` km/h ✓
 
 ---
 
@@ -36,6 +36,8 @@ def vitesse_moyenne(distance, duree):
 | `mystere(20, 5)` | 0 + 20×5 fois | `100` |
 
 **Q3.** Cette fonction renvoie le produit de `a` par `b` (soit `a × b`), calculé par additions successives.
+
+**Q4.** Vérifier par exécution.
 
 ---
 
@@ -98,6 +100,8 @@ print(p)
 
 `print(p)` affiche **120**.
 
+**Q2.** Vérifier par exécution.
+
 **Q3.** Ce programme calcule le factoriel de 5 : 5! = 1 × 2 × 3 × 4 × 5 = **120**.
 
 ---
@@ -153,6 +157,8 @@ while n > 1:
 | 1 | ❌ | — | arrêt |
 
 Le programme affiche : `50  25  12  6  3  1`
+
+**Q3.** Vérifier par exécution.
 
 ---
 
@@ -221,6 +227,7 @@ def semaines_pour_objectif(followers_initial, taux, objectif):
 
 ### Exercice 11 — Compter les multiples
 
+**Q1.**
 ```python
 def nb_multiples(n, limite):
     compteur = 0
@@ -239,7 +246,7 @@ def nb_multiples(n, limite):
     return compteur
 ```
 
-Vérifications :
+**Q2.** Vérifications :
 
 | Appel | Multiples | Résultat |
 |---|---|---|

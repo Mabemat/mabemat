@@ -15,11 +15,15 @@ title: "Correction"
 
 `c` vaut 21 (7 + 14) et `d` vaut 7.0 (21 ÷ 3). Le résultat de `/` est toujours un `float` en Python.
 
+**Q2.** Recopier le programme (sans copier-coller) et exécuter.
+
+**Q3.** En ajoutant `print(d)`, le programme affiche **7.0**. L'instruction `print(d)` sert à afficher la valeur de la variable `d` dans la console.
+
 ---
 
 ### Exercice 2 — Réaffectations
 
-
+**Q1.**
 
 | N° ligne | Instruction | `x` | `y` |
 |:---:|:---|:---:|:---:|
@@ -31,6 +35,10 @@ title: "Correction"
 
 Ligne 3 : `x = 12 − 3 = 9` - l'ancienne valeur de `x` est utilisée à droite, puis remplacée à gauche.
 Ligne 5 : `x = 9 + 15 = 24`.
+
+**Q2.** Recopier le programme, ajouter `print(x)` et exécuter. La valeur finale affichée est **24**.
+
+**Q3.** En ajoutant `print(x, y)`, le programme affiche `24 15`.
 
 ---
 
@@ -57,6 +65,17 @@ Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écr
 ---
 
 ### Exercice 5 — Booléens en pratique
+
+**Q1.** Toutes ces variables sont de type `bool` (booléen) : elles ne peuvent valoir que `True` ou `False`.
+
+**Q2.** Vérifier par exécution. Pour afficher le type de `son_coupe` et `abonnement_actif`, ajouter :
+```python
+print(type(son_coupe))
+print(type(abonnement_actif))
+```
+Les deux affichent `<class 'bool'>`.
+
+**Q3.**
 
 | Variable | Situation | Valeur |
 |:---|:---|:---:|
@@ -92,14 +111,14 @@ Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écr
 
 ### Exercice 7 — Débogage
 
-Les 4 erreurs :
+**Q1.** Les 4 erreurs :
 
 - Ligne 1 : `nb articles` → espace interdit dans un nom de variable
 - Ligne 2 : `prix unitaire` → espace interdit dans un nom de variable
 - Ligne 3 : `prix-total` → le tiret `-` est l'opérateur de soustraction, pas un caractère de nom valide
 - Ligne 4 : `Prix_total` → mauvaise casse (`P` majuscule) ; la variable avait été définie avec `prix` minuscule
 
-Programme corrigé :
+**Q2.** Programme corrigé :
 
 ```python
 nb_articles = 3
@@ -114,6 +133,7 @@ Résultat : `26.5`
 
 ### Exercice 8 — Calculer une moyenne
 
+**Q2.**
 ```python
 note1 = 11
 note2 = 14.5
@@ -131,7 +151,7 @@ print(moyenne)
 | 4 | 11 | 14.5 | 9 | 16 | − |
 | 5 | 11 | 14.5 | 9 | 16 | **(11 + 14.5 + 9 + 16) ÷ 4 = 12.625** |
 
-La moyenne est **12.625**.
+**Q3.** La moyenne est **12.625**.
 
 ---
 
@@ -184,7 +204,9 @@ Le programme affiche `225`.
 
 ### Exercice 11 — Racine carrée
 
-**Hypoténuse :**
+**Q1.** Le programme affiche `5.0`, `1.4142135623730951` et `12.0`. La fonction `sqrt(a)` calcule la racine carrée de `a`.
+
+**Q2.**
 
 ```python
 from math import *
@@ -194,11 +216,11 @@ c = sqrt(a**2 + b**2)
 print(c)
 ```
 
-$c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$
+Le programme affiche `5.0`.
 
-Le programme affiche `5.0`. Le triplet (3, 4, 5) est un triplet pythagoricien classique.
+**Q3.** $c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$. Le triplet (3, 4, 5) est un triplet pythagoricien classique.
 
-**Bonus — Distance A(1, 2) et B(4, 6) :**
+**Q4 — Bonus.**
 
 ```python
 from math import *
@@ -213,6 +235,8 @@ $d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$
 ---
 
 ### Exercice 12 — Comprendre et compléter un programme
+
+**Q1 — Tableau de trace.**
 
 ```python
 x = 2
@@ -232,17 +256,23 @@ y = z / 2            # = 200.0
 
 Ligne 3 : priorité des opérations — la multiplication `x * y` est calculée en premier : `2 + 6 + 12 = 20`.
 
-**Q2. — `z_est_pair`**
+**Q2.** Vérifier en exécutant le programme (ajouter des `print`).
+
+**Q3. — `z_est_pair`**
 
 ```python
 z_est_pair = (z % 2 == 0)
 ```
 
-`400 % 2 = 0`, donc `z_est_pair` vaut `True`. C'est prévisible : tout carré d'un nombre pair est pair.
+**Q4.** `400 % 2 = 0`, donc `z_est_pair` vaut `True`. C'est prévisible : tout carré d'un nombre pair est pair.
 
 ---
 
 ### Exercice 13 — Programme interactif
+
+**Q1.** Le programme s'arrête et affiche le message `Quel est ton prénom ?`. Il attend une saisie clavier de l'utilisateur, puis affiche un message de bienvenue personnalisé.
+
+**Q2.**
 
 ```python
 n1 = int(input("Premier nombre : "))
@@ -253,18 +283,22 @@ print(somme)
 
 Sans `int()`, `input()` renvoie une `str` et l'opérateur `+` ferait une **concaténation** au lieu d'une addition (ex : `"3" + "5"` → `"35"` et non `8`).
 
+**Q3 — Défi.**
+
+```python
+note1 = float(input("Note 1 : "))
+note2 = float(input("Note 2 : "))
+note3 = float(input("Note 3 : "))
+note4 = float(input("Note 4 : "))
+moyenne = (note1 + note2 + note3 + note4) / 4
+print(moyenne)
+```
+
 ---
 
 ### Exercice 14 — Prédire et vérifier
 
-```python
-a = "Bon"
-b = "soir"
-c = " !"
-r1 = a + b + c
-r2 = 2 * a + " " + b
-r3 = b + c + " " + b + c
-```
+**Q1.**
 
 | Variable | Valeur |
 |:---:|:---|
@@ -272,7 +306,9 @@ r3 = b + c + " " + b + c
 | `r2` | `"BonBon soir"` |
 | `r3` | `"soir ! soir !"` |
 
-Pour afficher exactement `Bonsoir Bonsoir !` :
+**Q2.** Vérifier par exécution.
+
+**Q3.** Pour afficher exactement `Bonsoir Bonsoir !` :
 
 ```python
 print(a + b + " " + a + b + c)
@@ -282,11 +318,38 @@ print(a + b + " " + a + b + c)
 
 ### Exercice 15 — Ma carte d'identité
 
-La méthode `.upper()` convertit tous les caractères d'une chaîne en **majuscules**.
+**Q1.** Compléter le programme avec ses propres informations et l'exécuter (résultat personnel, pas de correction type).
+
+**Q2.** La méthode `.upper()` convertit tous les caractères d'une chaîne en **majuscules**.
 
 Exemple : si `nom = "Dupont"`, alors `nom.upper()` renvoie `"DUPONT"`.
 
 Ainsi `print(nom.upper() + " " + prenom)` affiche le nom en majuscules suivi du prénom (ex : `DUPONT Alice`).
+
+**Q3 — Défi.**
+
+```python
+prenom = input("Ton prénom : ")
+n = int(input("Nombre de répétitions : "))
+resultat = (prenom + "-") * n
+resultat = resultat[:-1]   # on supprime le tiret final
+print(resultat)
+```
+
+Exemple : si `prenom = "Léa"` et `n = 3`, le programme affiche `Léa-Léa-Léa`.
+
+*Alternative avec une boucle :*
+
+```python
+prenom = input("Ton prénom : ")
+n = int(input("Nombre de répétitions : "))
+resultat = ""
+for i in range(n):
+    if i > 0:
+        resultat = resultat + "-"
+    resultat = resultat + prenom
+print(resultat)
+```
 
 ---
 

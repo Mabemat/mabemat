@@ -12,7 +12,7 @@ title: "Correction"
 | 2 | `quantite = 4` | 1.5 | **4** | − |
 | 3 | `prix_total = prix_unitaire * quantite` | 1.5 | 4 | **6.0** |
 
-`prix_total` vaut **6.0** (1.5 × 4).
+**Q2.** `prix_total` vaut **6.0** (1.5 × 4).
 
 ---
 
@@ -44,6 +44,8 @@ title: "Correction"
 
 **Q1** : a. `truc_muche` · b. `a`, `b`, `c` · c. 2 lignes · d. 1 valeur · e. `truc_muche(2, 5, 1)` = 2 + 5 + 1 = **8**
 
+**Q2.** Recopier la fonction dans la cellule et exécuter.
+
 **Q3** :
 
 | Paramètre | `a` | `b` | `c` | `s` |
@@ -74,11 +76,7 @@ def definition_image(L, H):
 
 ### Exercice 5 — Tableau de prédiction
 
-```python
-def triple(n):        return 3 * n
-def score_bonus(b,p): return b * 3 + p
-def convertir(km):    return km * 0.621
-```
+**Q1 — Tableau de prédiction.**
 
 | Appel | Valeur |
 |:---|:---:|
@@ -89,6 +87,8 @@ def convertir(km):    return km * 0.621
 | `score_bonus(1, 0) + score_bonus(0, 2)` | 3 + 2 = **5** |
 | `convertir(10)` | **6.21** |
 | `convertir(0)` | **0.0** |
+
+**Q2.** Recopier les trois fonctions, exécuter, puis compléter la colonne « Valeur réelle » du tableau.
 
 **Q3** : `convertir` convertit des **kilomètres en miles** (1 km ≈ 0,621 mile).
 
@@ -101,6 +101,8 @@ def convertir(km):    return km * 0.621
 **Q1 — Prédictions** :
 - `duree_trajet_A(300, 100)` : **affiche** `3.0` (car la fonction utilise `print`)
 - `duree_trajet_B(300, 100)` : **n'affiche rien** (car la fonction utilise `return`)
+
+**Q2.** Vérifier par exécution.
 
 **Q3 — Stocker le résultat** :
 
@@ -119,14 +121,14 @@ print(resultat_B)  # affiche : 3.0
 
 ### Exercice 7 — Débogage
 
-**Fonction 1 — `celsius_vers_fahrenheit` (2 erreurs)** :
+**Q1.** Fonction 1 — `celsius_vers_fahrenheit` : 2 erreurs.
 
 | Erreur | Ligne | Description |
 |:---:|:---:|:---|
 | 1 | 1 | Manque `:` à la fin de `def celsius_vers_fahrenheit(c)` |
 | 2 | 3 | `Return` avec majuscule → doit être `return` (minuscule) |
 
-Fonction corrigée :
+**Q2.** Fonction corrigée :
 
 ```python
 def celsius_vers_fahrenheit(c):
@@ -138,7 +140,7 @@ Vérifications : `celsius_vers_fahrenheit(0)` → **32.0** · `celsius_vers_fahr
 
 ---
 
-**Fonction 2 — `imc` (3 erreurs)** :
+**Q3.** Fonction 2 — `imc` : 3 erreurs.
 
 | Erreur | Ligne | Description |
 |:---:|:---:|:---|
@@ -146,7 +148,7 @@ Vérifications : `celsius_vers_fahrenheit(0)` → **32.0** · `celsius_vers_fahr
 | 2 | 3 | `return` non indenté (doit être dans le bloc de la fonction) |
 | 3 | 3 | `return` sans valeur → doit être `return resultat` |
 
-Fonction corrigée :
+**Q4.** Fonction corrigée :
 
 ```python
 def imc(poids, taille):
@@ -160,30 +162,35 @@ Vérification : `imc(70, 1.75)` = 70 ÷ 1.75² = 70 ÷ 3.0625 ≈ **22.86**
 
 ### Exercice 8 — Écrire des fonctions
 
+**Q1.**
 ```python
 def aire_triangle(base, hauteur):
     return base * hauteur / 2
 ```
 `aire_triangle(6, 4)` = 6 × 4 ÷ 2 = **12.0** ✓
 
+**Q2.**
 ```python
 def convertir_km_miles(km):
     return km * 0.621
 ```
 `convertir_km_miles(10)` = **6.21** ✓
 
+**Q3.**
 ```python
 def prix_reduit(prix, remise):
     return prix * (1 - remise / 100)
 ```
 `prix_reduit(80, 25)` = 80 × 0.75 = **60.0** ✓
 
+**Q4.**
 ```python
 def pourboire(addition, pourcentage):
     return addition * pourcentage / 100
 ```
 `pourboire(35, 15)` = 35 × 15 ÷ 100 = **5.25** ✓
 
+**Q5.**
 ```python
 def score_basket(un_pt, deux_pts, trois_pts):
     return un_pt + deux_pts * 2 + trois_pts * 3
@@ -194,13 +201,20 @@ def score_basket(un_pt, deux_pts, trois_pts):
 
 ### Exercice 9 — Carrelage
 
+**Q1.**
 ```python
 def aire_piece(longueur, largeur):
     return longueur * largeur
+```
 
+**Q2.**
+```python
 def nb_carreaux(longueur, largeur, cote):
     return aire_piece(longueur, largeur) / (cote * cote)
+```
 
+**Q3.**
+```python
 def cout_chantier(longueur, largeur, cote, prix_carreau):
     return nb_carreaux(longueur, largeur, cote) * prix_carreau
 ```
@@ -220,21 +234,26 @@ def cout_chantier(longueur, largeur, cote, prix_carreau):
 
 ### Exercice 10 — Cantine scolaire
 
+**Q1.**
 ```python
 def prix_repas(nb_adultes, nb_eleves):
     return 7.5 * nb_adultes + 3.2 * nb_eleves
+```
+`prix_repas(2, 15)` = 7,5×2 + 3,2×15 = 15 + 48 = **63.0** ✓
 
+**Q2.**
+```python
 def prix_semaine(nb_adultes, nb_eleves):
     return 5 * prix_repas(nb_adultes, nb_eleves)
+```
+`prix_semaine(2, 15)` = 5 × 63 = **315.0** ✓
 
+**Q3.**
+```python
 def devis(nom_groupe, nb_adultes, nb_eleves):
     total = prix_semaine(nb_adultes, nb_eleves)
     return "Devis pour " + nom_groupe + " : " + str(total) + " euros pour la semaine"
 ```
-
-Vérifications :
-- `prix_repas(2, 15)` = 7,5×2 + 3,2×15 = 15 + 48 = **63.0** ✓
-- `prix_semaine(2, 15)` = 5 × 63 = **315.0** ✓
 
 **Q4** : `prix_semaine(3, 28)` = 5 × (7,5×3 + 3,2×28) = 5 × (22,5 + 89,6) = 5 × 112,1 = **560.5 €**
 

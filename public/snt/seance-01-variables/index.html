@@ -6,17 +6,18 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Séance 01 — Variables et affectation — MaBémath</title>
-<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<title>Séance 01 — Variables et affectation — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
 <meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.ebf465600767090adb588a4670b8842195a20793e6cc6e38aac476598c54a54a.css" integrity="sha256-6/RlYAdnCQrbWIpGcLiEIZWiB5PmzG44qsR2WYxUpUo=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
@@ -291,7 +292,7 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>y <span style="color:#666">=</span> <span style="color:#40a070">3</span> <span style="color:#666">*</span> y
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>x <span style="color:#666">=</span> x <span style="color:#666">+</span> y
 </span></span></code></pre></div><p>Une ligne comme <code>x = x - 3</code> signifie : « la variable <code>x</code> prend la valeur <code>x − 3</code> ». La <em>nouvelle</em> valeur de <code>x</code> est l&rsquo;<em>ancienne</em> valeur de <code>x</code> moins 3.</p>
-<p>Complétez ce tableau <em>sans exécuter le programme</em>.</p>
+<p><strong>Q1.</strong> Complétez ce tableau <em>sans exécuter le programme</em>.</p>
 <table>
   <thead>
       <tr>
@@ -334,6 +335,8 @@ pre[style*="background-color"] {
       </tr>
   </tbody>
 </table>
+<p><strong>Q2.</strong> Recopiez ce programme (<em>sans copier-coller</em>) et ajoutez l&rsquo;instruction pour afficher la valeur finale de <code>x</code>. Vérifiez votre tableau.</p>
+<p><strong>Q3.</strong> Modifiez la dernière ligne pour afficher les valeurs finales de <code>x</code> <strong>et</strong> <code>y</code> avec <code>print(x, y)</code>.</p>
 <hr>
 <h3 id="exercice-3--entraînement-interactif">Exercice 3 — Entraînement interactif</h3>
 <p>Exercice à réaliser directement dans le notebook Capytale (exercices codepuzzle.io intégrés).</p>
@@ -358,7 +361,9 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>son_coupe <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">False</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>est_en_pause <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">True</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>abonnement_actif <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">True</span>
-</span></span></code></pre></div><p>Quelle valeur (<code>True</code> ou <code>False</code>) donneriez-vous à chaque variable dans les situations suivantes ?</p>
+</span></span></code></pre></div><p><strong>Q1.</strong> Sans exécuter, quel est le type de chacune de ces variables ?</p>
+<p><strong>Q2.</strong> Exécutez la cellule ci-dessus pour vérifier. Ajoutez ensuite les instructions pour afficher le type de <code>son_coupe</code> et de <code>abonnement_actif</code>.</p>
+<p><strong>Q3.</strong> Quelle valeur (<code>True</code> ou <code>False</code>) donneriez-vous à chaque variable dans les situations suivantes ?</p>
 <ul>
 <li><code>est_connecte</code> si l&rsquo;utilisateur vient de se déconnecter</li>
 <li><code>son_coupe</code> si l&rsquo;utilisateur vient de couper le son</li>
@@ -383,17 +388,18 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>prix unitaire <span style="color:#666">=</span> <span style="color:#40a070">8.50</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>prix<span style="color:#666">-</span>total <span style="color:#666">=</span> nb articles <span style="color:#666">*</span> prix unitaire
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(Prix_total)
-</span></span></code></pre></div><p>Identifiez les 4 erreurs (une par ligne), puis réécrivez le programme corrigé.</p>
+</span></span></code></pre></div><p><strong>Q1.</strong> Lisez le programme et identifiez les 4 erreurs <em>avant</em> d&rsquo;exécuter quoi que ce soit.</p>
+<p><strong>Q2.</strong> Corrigez le programme dans la cellule ci-dessous et exécutez-le pour vérifier.</p>
 <hr>
 <h3 id="exercice-8--calculer-une-moyenne">Exercice 8 — Calculer une moyenne</h3>
 <p>Un élève a obtenu les notes suivantes : <strong>11</strong>, <strong>14,5</strong>, <strong>9</strong> et <strong>16</strong>.</p>
-<p>Écrivez un programme Python contenant :</p>
+<p><strong>Q2.</strong> Écrivez un programme Python contenant :</p>
 <ul>
 <li>4 variables <strong>bien nommées</strong> pour les 4 notes</li>
 <li>une variable <code>moyenne</code> contenant la moyenne</li>
 <li>une instruction <code>print</code> pour afficher la moyenne</li>
 </ul>
-<p>Quelle est la moyenne de cet élève ?</p>
+<p><strong>Q3.</strong> Quelle est la moyenne de cet élève ?</p>
 <hr>
 <h3 id="exercice-9--programme-dachat">Exercice 9 — Programme d&rsquo;achat</h3>
 <p>La boutique d&rsquo;un club de football vend des articles aux prix suivants :</p>
@@ -418,9 +424,12 @@ pre[style*="background-color"] {
 <hr>
 <h3 id="exercice-11--racine-carrée">Exercice 11 — Racine carrée</h3>
 <p>Pour calculer $\sqrt{a}$ en Python, on utilise <code>sqrt(a)</code> du module <code>math</code> en ajoutant <code>from math import *</code> en début de programme.</p>
-<p>D&rsquo;après le <strong>théorème de Pythagore</strong>, l&rsquo;hypoténuse $c$ d&rsquo;un triangle rectangle de côtés $a$ et $b$ vérifie $c = \sqrt{a^2 + b^2}$.</p>
-<p>Écrivez un programme Python qui calcule et affiche l&rsquo;hypoténuse d&rsquo;un triangle rectangle de côtés <code>a = 3</code> et <code>b = 4</code>. Vérifiez votre résultat à la main.</p>
-<p><strong>Bonus</strong> : La distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Calculez la distance entre $A(1, 2)$ et $B(4, 6)$.</p>
+<p><strong>Q1.</strong> Exécutez le programme ci-dessous et observez les résultats.</p>
+<p><strong>Q2.</strong> D&rsquo;après le <strong>théorème de Pythagore</strong>, l&rsquo;hypoténuse $c$ d&rsquo;un triangle rectangle de côtés $a$ et $b$ vérifie $c = \sqrt{a^2 + b^2}$. Écrivez un programme Python qui calcule et affiche l&rsquo;hypoténuse d&rsquo;un triangle rectangle de côtés <code>a = 3</code> et <code>b = 4</code>.</p>
+<p><em>Rappel : en Python, <code>a**2</code> donne $a^2$, et <code>sqrt()</code> calcule la racine carrée.</em></p>
+<p><strong>Q3.</strong> Vérifiez votre résultat à la main. Quelle est la valeur exacte de l&rsquo;hypoténuse ?</p>
+<p><em>Astuce : 3, 4, 5 est un triplet pythagoricien connu.</em></p>
+<p><strong>Q4 — Bonus.</strong> La distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Calculez la distance entre $A(1, 2)$ et $B(4, 6)$.</p>
 <hr>
 <h3 id="exercice-12--comprendre-et-compléter-un-programme">Exercice 12 — Comprendre et compléter un programme</h3>
 <p>On considère le programme Python suivant :</p>
@@ -478,18 +487,16 @@ pre[style*="background-color"] {
       </tr>
   </tbody>
 </table>
-<p><strong>Q2.</strong> Ajoutez <strong>une ligne</strong> qui crée une variable booléenne <code>z_est_pair</code> valant <code>True</code> si <code>z</code> est pair, <code>False</code> sinon.</p>
+<p><strong>Q2.</strong> Recopiez ce programme (<em>sans copier-coller</em>) et ajoutez les instructions pour afficher les valeurs finales de <code>x</code>, <code>y</code> et <code>z</code>. Vérifiez votre tableau.</p>
+<p><strong>Q3.</strong> Ajoutez <strong>une ligne</strong> qui crée une variable booléenne <code>z_est_pair</code> valant <code>True</code> si <code>z</code> est pair, <code>False</code> sinon.</p>
 <p><em>Rappel : un entier est pair si son reste dans la division par 2 est 0 (<code>z % 2 == 0</code>).</em></p>
+<p><strong>Q4.</strong> Quelle est la valeur de <code>z_est_pair</code> ? Était-ce prévisible d&rsquo;après votre tableau ?</p>
 <hr>
 <h3 id="exercice-13--programme-interactif">Exercice 13 — Programme interactif</h3>
-<p>Utilisez <code>input()</code> pour écrire un programme qui :</p>
-<ol>
-<li>Demande <strong>deux nombres entiers</strong> à l&rsquo;utilisateur</li>
-<li>Calcule leur <strong>somme</strong></li>
-<li>Affiche le résultat</li>
-</ol>
+<p><strong>Q1.</strong> Exécutez le programme ci-dessous. Que se passe-t-il ?</p>
+<p><strong>Q2.</strong> Complétez le programme pour qu&rsquo;il demande deux <strong>nombres entiers</strong>, calcule leur <strong>somme</strong> et l&rsquo;affiche.</p>
 <p><em>Rappel : <code>input()</code> renvoie toujours une chaîne (<code>str</code>). Utilisez <code>int()</code> pour convertir en entier.</em></p>
-<p><strong>Bonus</strong> : Adaptez le programme de la moyenne (exercice 8) pour que les 4 notes soient <strong>demandées à l&rsquo;utilisateur</strong> avec <code>input()</code>.</p>
+<p><strong>Q3 — Défi.</strong> Adaptez le programme de la moyenne (exercice 8) pour que les 4 notes soient <strong>demandées à l&rsquo;utilisateur</strong> avec <code>input()</code>.</p>
 <hr>
 <h3 id="exercice-14--prédire-et-vérifier">Exercice 14 — Prédire et vérifier</h3>
 <p>On considère le programme Python suivant :</p>
@@ -500,7 +507,7 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>r1 <span style="color:#666">=</span> a <span style="color:#666">+</span> b <span style="color:#666">+</span> c
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>r2 <span style="color:#666">=</span> <span style="color:#40a070">2</span> <span style="color:#666">*</span> a <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">+</span> b
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>r3 <span style="color:#666">=</span> b <span style="color:#666">+</span> c <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">+</span> b <span style="color:#666">+</span> c
-</span></span></code></pre></div><p>Prédisez <strong>sans exécuter</strong> la valeur de <code>r1</code>, <code>r2</code> et <code>r3</code>, puis vérifiez en exécutant.</p>
+</span></span></code></pre></div><p><strong>Q1.</strong> Prédisez <strong>sans exécuter</strong> la valeur de <code>r1</code>, <code>r2</code> et <code>r3</code>. Complétez le tableau ci-dessous.</p>
 <table>
   <thead>
       <tr>
@@ -527,16 +534,19 @@ pre[style*="background-color"] {
       </tr>
   </tbody>
 </table>
-<p>En utilisant uniquement les variables <code>a</code>, <code>b</code> et <code>c</code>, écrivez l&rsquo;instruction qui affiche exactement : <code>Bonsoir Bonsoir !</code></p>
+<p><strong>Q2.</strong> Recopiez le programme et ajoutez les instructions <code>print</code> pour afficher <code>r1</code>, <code>r2</code> et <code>r3</code>. Complétez la colonne &ldquo;Valeur réelle&rdquo; du tableau.</p>
+<p><strong>Q3.</strong> En utilisant uniquement les variables <code>a</code>, <code>b</code> et <code>c</code>, écrivez l&rsquo;instruction qui affiche exactement : <code>Bonsoir Bonsoir !</code></p>
 <hr>
 <h3 id="exercice-15--ma-carte-didentité">Exercice 15 — Ma carte d&rsquo;identité</h3>
-<p>Complétez et exécutez le programme suivant avec vos vraies informations :</p>
+<p><strong>Q1.</strong> Complétez et exécutez le programme suivant avec vos vraies informations :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prenom <span style="color:#666">=</span> <span style="color:#4070a0">&#34;...&#34;</span>       <span style="color:#60a0b0;font-style:italic"># votre prénom</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>nom <span style="color:#666">=</span> <span style="color:#4070a0">&#34;...&#34;</span>          <span style="color:#60a0b0;font-style:italic"># votre nom de famille</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>classe <span style="color:#666">=</span> <span style="color:#4070a0">&#34;...&#34;</span>       <span style="color:#60a0b0;font-style:italic"># votre classe</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Je m&#39;appelle &#34;</span> <span style="color:#666">+</span> prenom <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">+</span> nom <span style="color:#666">+</span> <span style="color:#4070a0">&#34; et je suis en &#34;</span> <span style="color:#666">+</span> classe <span style="color:#666">+</span> <span style="color:#4070a0">&#34;.&#34;</span>)
-</span></span></code></pre></div><p>Que se passe-t-il si on remplace la dernière ligne par <code>print(nom.upper() + &quot; &quot; + prenom)</code> ? Expliquez ce que fait <code>.upper()</code>.</p>
+</span></span></code></pre></div><p><strong>Q2.</strong> Que se passe-t-il si on remplace la dernière ligne par <code>print(nom.upper() + &quot; &quot; + prenom)</code> ? Expliquez ce que fait <code>.upper()</code>.</p>
+<p><strong>Q3 — Défi.</strong> Écrivez un programme qui demande à l&rsquo;utilisateur son prénom et un nombre entier <code>n</code>, puis affiche ce prénom répété <code>n</code> fois, séparé par des tirets.</p>
+<p><em>Exemple : si prénom = <code>&quot;Léa&quot;</code> et n = 3, le programme affiche <code>Léa-Léa-Léa</code>.</em></p>
 <hr>
 <h3 id="exercice-16--chaînes-de-caractères-et-indices">Exercice 16 — Chaînes de caractères et indices</h3>
 <p>On saisit dans la console les instructions suivantes :</p>
@@ -597,8 +607,11 @@ pre[style*="background-color"] {
   </tbody>
 </table>
 <p><code>c</code> vaut 21 (7 + 14) et <code>d</code> vaut 7.0 (21 ÷ 3). Le résultat de <code>/</code> est toujours un <code>float</code> en Python.</p>
+<p><strong>Q2.</strong> Recopier le programme (sans copier-coller) et exécuter.</p>
+<p><strong>Q3.</strong> En ajoutant <code>print(d)</code>, le programme affiche <strong>7.0</strong>. L&rsquo;instruction <code>print(d)</code> sert à afficher la valeur de la variable <code>d</code> dans la console.</p>
 <hr>
 <h3 id="exercice-2--réaffectations">Exercice 2 — Réaffectations</h3>
+<p><strong>Q1.</strong></p>
 <table>
   <thead>
       <tr>
@@ -643,6 +656,8 @@ pre[style*="background-color"] {
 </table>
 <p>Ligne 3 : <code>x = 12 − 3 = 9</code> - l&rsquo;ancienne valeur de <code>x</code> est utilisée à droite, puis remplacée à gauche.
 Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
+<p><strong>Q2.</strong> Recopier le programme, ajouter <code>print(x)</code> et exécuter. La valeur finale affichée est <strong>24</strong>.</p>
+<p><strong>Q3.</strong> En ajoutant <code>print(x, y)</code>, le programme affiche <code>24 15</code>.</p>
 <hr>
 <h3 id="exercice-3--entraînement-interactif">Exercice 3 — Entraînement interactif</h3>
 <p>Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écrite — les exercices codepuzzle vérifient automatiquement vos réponses.</p>
@@ -706,6 +721,12 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
 </table>
 <hr>
 <h3 id="exercice-5--booléens-en-pratique">Exercice 5 — Booléens en pratique</h3>
+<p><strong>Q1.</strong> Toutes ces variables sont de type <code>bool</code> (booléen) : elles ne peuvent valoir que <code>True</code> ou <code>False</code>.</p>
+<p><strong>Q2.</strong> Vérifier par exécution. Pour afficher le type de <code>son_coupe</code> et <code>abonnement_actif</code>, ajouter :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020">print</span>(<span style="color:#007020">type</span>(son_coupe))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020">print</span>(<span style="color:#007020">type</span>(abonnement_actif))
+</span></span></code></pre></div><p>Les deux affichent <code>&lt;class 'bool'&gt;</code>.</p>
+<p><strong>Q3.</strong></p>
 <table>
   <thead>
       <tr>
@@ -803,14 +824,14 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
 </ul>
 <hr>
 <h3 id="exercice-7--débogage">Exercice 7 — Débogage</h3>
-<p>Les 4 erreurs :</p>
+<p><strong>Q1.</strong> Les 4 erreurs :</p>
 <ul>
 <li>Ligne 1 : <code>nb articles</code> → espace interdit dans un nom de variable</li>
 <li>Ligne 2 : <code>prix unitaire</code> → espace interdit dans un nom de variable</li>
 <li>Ligne 3 : <code>prix-total</code> → le tiret <code>-</code> est l&rsquo;opérateur de soustraction, pas un caractère de nom valide</li>
 <li>Ligne 4 : <code>Prix_total</code> → mauvaise casse (<code>P</code> majuscule) ; la variable avait été définie avec <code>prix</code> minuscule</li>
 </ul>
-<p>Programme corrigé :</p>
+<p><strong>Q2.</strong> Programme corrigé :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>nb_articles <span style="color:#666">=</span> <span style="color:#40a070">3</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>prix_unitaire <span style="color:#666">=</span> <span style="color:#40a070">8.50</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>prix_total <span style="color:#666">=</span> nb_articles <span style="color:#666">*</span> prix_unitaire
@@ -818,6 +839,7 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
 </span></span></code></pre></div><p>Résultat : <code>26.5</code></p>
 <hr>
 <h3 id="exercice-8--calculer-une-moyenne">Exercice 8 — Calculer une moyenne</h3>
+<p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>note1 <span style="color:#666">=</span> <span style="color:#40a070">11</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>note2 <span style="color:#666">=</span> <span style="color:#40a070">14.5</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>note3 <span style="color:#666">=</span> <span style="color:#40a070">9</span>
@@ -878,7 +900,7 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
       </tr>
   </tbody>
 </table>
-<p>La moyenne est <strong>12.625</strong>.</p>
+<p><strong>Q3.</strong> La moyenne est <strong>12.625</strong>.</p>
 <hr>
 <h3 id="exercice-9--programme-dachat">Exercice 9 — Programme d&rsquo;achat</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>prix_maillot <span style="color:#666">=</span> <span style="color:#40a070">29</span>
@@ -964,15 +986,16 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
 <p>Le programme affiche <code>225</code>.</p>
 <hr>
 <h3 id="exercice-11--racine-carrée">Exercice 11 — Racine carrée</h3>
-<p><strong>Hypoténuse :</strong></p>
+<p><strong>Q1.</strong> Le programme affiche <code>5.0</code>, <code>1.4142135623730951</code> et <code>12.0</code>. La fonction <code>sqrt(a)</code> calcule la racine carrée de <code>a</code>.</p>
+<p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">math</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>a <span style="color:#666">=</span> <span style="color:#40a070">3</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>b <span style="color:#666">=</span> <span style="color:#40a070">4</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>c <span style="color:#666">=</span> sqrt(a<span style="color:#666">**</span><span style="color:#40a070">2</span> <span style="color:#666">+</span> b<span style="color:#666">**</span><span style="color:#40a070">2</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(c)
-</span></span></code></pre></div><p>$c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$</p>
-<p>Le programme affiche <code>5.0</code>. Le triplet (3, 4, 5) est un triplet pythagoricien classique.</p>
-<p><strong>Bonus — Distance A(1, 2) et B(4, 6) :</strong></p>
+</span></span></code></pre></div><p>Le programme affiche <code>5.0</code>.</p>
+<p><strong>Q3.</strong> $c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$. Le triplet (3, 4, 5) est un triplet pythagoricien classique.</p>
+<p><strong>Q4 — Bonus.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">from</span> <span style="color:#0e84b5;font-weight:bold">math</span> <span style="color:#007020;font-weight:bold">import</span> <span style="color:#666">*</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>x1, y1 <span style="color:#666">=</span> <span style="color:#40a070">1</span>, <span style="color:#40a070">2</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>x2, y2 <span style="color:#666">=</span> <span style="color:#40a070">4</span>, <span style="color:#40a070">6</span>
@@ -981,6 +1004,7 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
 </span></span></code></pre></div><p>$d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$</p>
 <hr>
 <h3 id="exercice-12--comprendre-et-compléter-un-programme">Exercice 12 — Comprendre et compléter un programme</h3>
+<p><strong>Q1 — Tableau de trace.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#40a070">2</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>y <span style="color:#666">=</span> <span style="color:#40a070">6</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>z <span style="color:#666">=</span> x <span style="color:#666">+</span> y <span style="color:#666">+</span> x <span style="color:#666">*</span> y   <span style="color:#60a0b0;font-style:italic"># = 2 + 6 + 2×6 = 2 + 6 + 12 = 20</span>
@@ -1035,25 +1059,30 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
   </tbody>
 </table>
 <p>Ligne 3 : priorité des opérations — la multiplication <code>x * y</code> est calculée en premier : <code>2 + 6 + 12 = 20</code>.</p>
-<p><strong>Q2. — <code>z_est_pair</code></strong></p>
+<p><strong>Q2.</strong> Vérifier en exécutant le programme (ajouter des <code>print</code>).</p>
+<p><strong>Q3. — <code>z_est_pair</code></strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>z_est_pair <span style="color:#666">=</span> (z <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>)
-</span></span></code></pre></div><p><code>400 % 2 = 0</code>, donc <code>z_est_pair</code> vaut <code>True</code>. C&rsquo;est prévisible : tout carré d&rsquo;un nombre pair est pair.</p>
+</span></span></code></pre></div><p><strong>Q4.</strong> <code>400 % 2 = 0</code>, donc <code>z_est_pair</code> vaut <code>True</code>. C&rsquo;est prévisible : tout carré d&rsquo;un nombre pair est pair.</p>
 <hr>
 <h3 id="exercice-13--programme-interactif">Exercice 13 — Programme interactif</h3>
+<p><strong>Q1.</strong> Le programme s&rsquo;arrête et affiche le message <code>Quel est ton prénom ?</code>. Il attend une saisie clavier de l&rsquo;utilisateur, puis affiche un message de bienvenue personnalisé.</p>
+<p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n1 <span style="color:#666">=</span> <span style="color:#007020">int</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Premier nombre : &#34;</span>))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>n2 <span style="color:#666">=</span> <span style="color:#007020">int</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Deuxième nombre : &#34;</span>))
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>somme <span style="color:#666">=</span> n1 <span style="color:#666">+</span> n2
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(somme)
 </span></span></code></pre></div><p>Sans <code>int()</code>, <code>input()</code> renvoie une <code>str</code> et l&rsquo;opérateur <code>+</code> ferait une <strong>concaténation</strong> au lieu d&rsquo;une addition (ex : <code>&quot;3&quot; + &quot;5&quot;</code> → <code>&quot;35&quot;</code> et non <code>8</code>).</p>
-<hr>
+<p><strong>Q3 — Défi.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>note1 <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Note 1 : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>note2 <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Note 2 : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>note3 <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Note 3 : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>note4 <span style="color:#666">=</span> <span style="color:#007020">float</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Note 4 : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>moyenne <span style="color:#666">=</span> (note1 <span style="color:#666">+</span> note2 <span style="color:#666">+</span> note3 <span style="color:#666">+</span> note4) <span style="color:#666">/</span> <span style="color:#40a070">4</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#007020">print</span>(moyenne)
+</span></span></code></pre></div><hr>
 <h3 id="exercice-14--prédire-et-vérifier">Exercice 14 — Prédire et vérifier</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>a <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Bon&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>b <span style="color:#666">=</span> <span style="color:#4070a0">&#34;soir&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>c <span style="color:#666">=</span> <span style="color:#4070a0">&#34; !&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>r1 <span style="color:#666">=</span> a <span style="color:#666">+</span> b <span style="color:#666">+</span> c
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>r2 <span style="color:#666">=</span> <span style="color:#40a070">2</span> <span style="color:#666">*</span> a <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">+</span> b
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>r3 <span style="color:#666">=</span> b <span style="color:#666">+</span> c <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">+</span> b <span style="color:#666">+</span> c
-</span></span></code></pre></div><table>
+<p><strong>Q1.</strong></p>
+<table>
   <thead>
       <tr>
           <th style="text-align: center">Variable</th>
@@ -1075,14 +1104,32 @@ Ligne 5 : <code>x = 9 + 15 = 24</code>.</p>
       </tr>
   </tbody>
 </table>
-<p>Pour afficher exactement <code>Bonsoir Bonsoir !</code> :</p>
+<p><strong>Q2.</strong> Vérifier par exécution.</p>
+<p><strong>Q3.</strong> Pour afficher exactement <code>Bonsoir Bonsoir !</code> :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020">print</span>(a <span style="color:#666">+</span> b <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span> <span style="color:#666">+</span> a <span style="color:#666">+</span> b <span style="color:#666">+</span> c)
 </span></span></code></pre></div><hr>
 <h3 id="exercice-15--ma-carte-didentité">Exercice 15 — Ma carte d&rsquo;identité</h3>
-<p>La méthode <code>.upper()</code> convertit tous les caractères d&rsquo;une chaîne en <strong>majuscules</strong>.</p>
+<p><strong>Q1.</strong> Compléter le programme avec ses propres informations et l&rsquo;exécuter (résultat personnel, pas de correction type).</p>
+<p><strong>Q2.</strong> La méthode <code>.upper()</code> convertit tous les caractères d&rsquo;une chaîne en <strong>majuscules</strong>.</p>
 <p>Exemple : si <code>nom = &quot;Dupont&quot;</code>, alors <code>nom.upper()</code> renvoie <code>&quot;DUPONT&quot;</code>.</p>
 <p>Ainsi <code>print(nom.upper() + &quot; &quot; + prenom)</code> affiche le nom en majuscules suivi du prénom (ex : <code>DUPONT Alice</code>).</p>
-<hr>
+<p><strong>Q3 — Défi.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prenom <span style="color:#666">=</span> <span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Ton prénom : &#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>n <span style="color:#666">=</span> <span style="color:#007020">int</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Nombre de répétitions : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>resultat <span style="color:#666">=</span> (prenom <span style="color:#666">+</span> <span style="color:#4070a0">&#34;-&#34;</span>) <span style="color:#666">*</span> n
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>resultat <span style="color:#666">=</span> resultat[:<span style="color:#666">-</span><span style="color:#40a070">1</span>]   <span style="color:#60a0b0;font-style:italic"># on supprime le tiret final</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020">print</span>(resultat)
+</span></span></code></pre></div><p>Exemple : si <code>prenom = &quot;Léa&quot;</code> et <code>n = 3</code>, le programme affiche <code>Léa-Léa-Léa</code>.</p>
+<p><em>Alternative avec une boucle :</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prenom <span style="color:#666">=</span> <span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Ton prénom : &#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>n <span style="color:#666">=</span> <span style="color:#007020">int</span>(<span style="color:#007020">input</span>(<span style="color:#4070a0">&#34;Nombre de répétitions : &#34;</span>))
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>resultat <span style="color:#666">=</span> <span style="color:#4070a0">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">for</span> i <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">if</span> i <span style="color:#666">&gt;</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        resultat <span style="color:#666">=</span> resultat <span style="color:#666">+</span> <span style="color:#4070a0">&#34;-&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    resultat <span style="color:#666">=</span> resultat <span style="color:#666">+</span> prenom
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#007020">print</span>(resultat)
+</span></span></code></pre></div><hr>
 <h3 id="exercice-16--chaînes-de-caractères-et-indices">Exercice 16 — Chaînes de caractères et indices</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>A <span style="color:#666">=</span> <span style="color:#4070a0">&#39;lu&#39;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>B <span style="color:#666">=</span> A <span style="color:#666">+</span> A       <span style="color:#60a0b0;font-style:italic"># B = &#39;lulu&#39;</span>
@@ -1208,7 +1255,7 @@ print(c)</textarea>
 
 <script>
  
-var UNLOCKED = "[]";
+var UNLOCKED = "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]";
 function isUnlocked(n) { return UNLOCKED.indexOf(n) !== -1; }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -1514,7 +1561,7 @@ async function runPython() {
   </script>
   <script>
      
-    const BUILD_TS = '1779462495';
+    const BUILD_TS = '1779950955';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

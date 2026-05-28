@@ -13,7 +13,7 @@ while p < 100:
     p = p * 2
 ```
 
-Compléter le tableau de suivi d'exécution :
+**Q1.** Compléter le tableau de suivi d'exécution *sans exécuter le programme* :
 
 | Tour | Valeur de `p` avant le test | Condition `p < 100` | `p` est affiché ? | Nouvelle valeur de `p` |
 |:---:|:---:|:---:|:---:|:---:|
@@ -83,14 +83,14 @@ Afficher "Décollage !"
 
 Voici trois programmes qui contiennent chacun **une erreur** liée à la boucle `while`. Pour chacun : identifier le problème, expliquer ce qui se passerait à l'exécution, et proposer une correction.
 
-**Programme A**
+**Q1 — Programme A**
 ```python
 n = 10
 while n > 0:
     print(n)
 ```
 
-**Programme B**
+**Q2 — Programme B**
 ```python
 capital = 1000
 while capital >= 1000:
@@ -99,7 +99,7 @@ print(capital)
 ```
 *(Objectif supposé : faire grossir le capital jusqu'à dépasser 2 000 €.)*
 
-**Programme C**
+**Q3 — Programme C**
 ```python
 compteur = 0
 while compteur < 5:

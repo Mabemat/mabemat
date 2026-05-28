@@ -6,17 +6,18 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Séance 06 — Bilan : Fonctions et Boucles — MaBémath</title>
-<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<title>Séance 06 — Bilan : Fonctions et Boucles — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
 <meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.ebf465600767090adb588a4670b8842195a20793e6cc6e38aac476598c54a54a.css" integrity="sha256-6/RlYAdnCQrbWIpGcLiEIZWiB5PmzG44qsR2WYxUpUo=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/lecon.472e87d62a435f07cbdbf5a0256ef58d6c6d91b79ee6f2c20f238d76e13bbb18.css" integrity="sha256-Ry6H1ipDXwfL2/WgJW71jWxtkbee5vLCDyONduE7uxg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
@@ -394,12 +395,12 @@ pre[style*="background-color"] {
   <div id="exo-corrs" hidden><h3 id="exercice-1--aire-dun-triangle">Exercice 1 — Aire d&rsquo;un triangle</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">aire_triangle</span>(base, hauteur):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> base <span style="color:#666">*</span> hauteur <span style="color:#666">/</span> <span style="color:#40a070">2</span>
-</span></span></code></pre></div><p><code>aire_triangle(6, 4)</code> → <code>12.0</code> ✓</p>
+</span></span></code></pre></div><p><strong>Q2.</strong> <code>aire_triangle(6, 4)</code> → <code>12.0</code> ✓</p>
 <hr>
 <h3 id="exercice-2--vitesse-moyenne">Exercice 2 — Vitesse moyenne</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">vitesse_moyenne</span>(distance, duree):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> distance <span style="color:#666">/</span> duree
-</span></span></code></pre></div><p><code>vitesse_moyenne(45, 1.5)</code> → <code>30.0</code> km/h ✓</p>
+</span></span></code></pre></div><p><strong>Q2.</strong> <code>vitesse_moyenne(45, 1.5)</code> → <code>30.0</code> km/h ✓</p>
 <hr>
 <h3 id="exercice-3--fonction-mystère">Exercice 3 — Fonction mystère</h3>
 <p><strong>Q1.</strong> La fonction a deux paramètres : <code>a</code> et <code>b</code>. Le corps contient une boucle <code>for</code> qui tourne <code>b</code> fois. À chaque tour, elle ajoute <code>a</code> à <code>total</code> (initialisé à 0). La fonction renvoie <code>total</code>.</p>
@@ -426,6 +427,7 @@ pre[style*="background-color"] {
   </tbody>
 </table>
 <p><strong>Q3.</strong> Cette fonction renvoie le produit de <code>a</code> par <code>b</code> (soit <code>a × b</code>), calculé par additions successives.</p>
+<p><strong>Q4.</strong> Vérifier par exécution.</p>
 <hr>
 <h3 id="exercice-4--comprendre-range">Exercice 4 — Comprendre <code>range()</code></h3>
 <table>
@@ -525,6 +527,7 @@ pre[style*="background-color"] {
   </tbody>
 </table>
 <p><code>print(p)</code> affiche <strong>120</strong>.</p>
+<p><strong>Q2.</strong> Vérifier par exécution.</p>
 <p><strong>Q3.</strong> Ce programme calcule le factoriel de 5 : 5! = 1 × 2 × 3 × 4 × 5 = <strong>120</strong>.</p>
 <hr>
 <h3 id="exercice-7--croissance-dun-arbre-">Exercice 7 — Croissance d&rsquo;un arbre 🌳</h3>
@@ -623,6 +626,7 @@ pre[style*="background-color"] {
   </tbody>
 </table>
 <p>Le programme affiche : <code>50  25  12  6  3  1</code></p>
+<p><strong>Q3.</strong> Vérifier par exécution.</p>
 <hr>
 <h3 id="exercice-9--batterie-de-téléphone-">Exercice 9 — Batterie de téléphone 🔋</h3>
 <p><strong>Q1.</strong></p>
@@ -668,6 +672,7 @@ pre[style*="background-color"] {
 (200 × 1.15¹⁶ ≈ 2070 &gt; 2000)</p>
 <hr>
 <h3 id="exercice-11--compter-les-multiples">Exercice 11 — Compter les multiples</h3>
+<p><strong>Q1.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">nb_multiples</span>(n, limite):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    compteur <span style="color:#666">=</span> <span style="color:#40a070">0</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">for</span> k <span style="color:#007020;font-weight:bold">in</span> <span style="color:#007020">range</span>(n, limite <span style="color:#666">+</span> <span style="color:#40a070">1</span>, n):
@@ -680,7 +685,7 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        <span style="color:#007020;font-weight:bold">if</span> k <span style="color:#666">%</span> n <span style="color:#666">==</span> <span style="color:#40a070">0</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>            compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">return</span> compteur
-</span></span></code></pre></div><p>Vérifications :</p>
+</span></span></code></pre></div><p><strong>Q2.</strong> Vérifications :</p>
 <table>
   <thead>
       <tr>
@@ -1157,7 +1162,7 @@ async function runPython() {
   </script>
   <script>
      
-    const BUILD_TS = '1779462495';
+    const BUILD_TS = '1779948769';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

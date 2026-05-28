@@ -1,0 +1,119 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $n := .Params.auto_number | default 0 }}
+{{ $autoIdx := site.GetPage (printf "%s/automatismes" .Section) }}
+
+{{ $subtitle := "" }}
+{{ $rawTitle := .Title }}
+{{ if strings.Contains $rawTitle " — " }}
+  {{ $parts := split $rawTitle " — " }}
+  {{ $subtitle = index $parts 1 }}
+{{ else if strings.Contains $rawTitle " - " }}
+  {{ $parts := split $rawTitle " - " }}
+  {{ $subtitle = index $parts 1 }}
+{{ end }}
+
+{{/* Lecture de la liste correction_devoir depuis _index.md */}}
+{{ $corrDevoir := slice }}
+{{ if $autoIdx }}{{ with $autoIdx.Params.correction_devoir }}{{ $corrDevoir = . }}{{ end }}{{ end }}
+{{ $showDevoirCorr := in $corrDevoir $n }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  {{ if $autoIdx }}
+  <a href="{{ $autoIdx.RelPermalink }}">Automatismes</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Semaine {{ $n }}</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>{{ $n }}</em></h1>
+  {{ if $subtitle }}<p class="wk-subtitle">{{ $subtitle }}</p>{{ end }}
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séance + Devoirs</span>
+    <span><span class="dot"></span>12 questions</span>
+    <span><span class="dot"></span>≈ 20 min</span>
+  </div>
+</section>
+
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance" role="tab" aria-selected="true">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir" role="tab" aria-selected="false">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+</div>
+
+{{ .Content }}
+
+<div class="wk-adjacent fade-up">
+  <div>
+    {{ if .PrevInSection }}
+    <a class="adj-link" href="{{ .PrevInSection.RelPermalink }}">← Semaine précédente</a>
+    {{ else if $autoIdx }}
+    <a class="adj-link" href="{{ $autoIdx.RelPermalink }}">← Retour au planning</a>
+    {{ end }}
+  </div>
+  <div>
+    {{ if .NextInSection }}
+    <a class="adj-link" href="{{ .NextInSection.RelPermalink }}">Semaine suivante →</a>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+(function(){
+  // Onglets Séance / Devoirs
+  document.querySelectorAll('.mode-tabs button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.mode-tabs button').forEach(function(b){
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+      });
+      document.querySelectorAll('.mode-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var panel = document.getElementById('panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  // Toggle correction
+  document.querySelectorAll('.auto1re-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.auto1re-card');
+      var corr = card.querySelector('.auto1re-corr');
+      var open = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      card.classList.toggle('is-open', open);
+      if (corr) corr.classList.toggle('open', open);
+      var lbl = btn.querySelector('.t');
+      if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+    });
+  });
+
+  // Corrections du panneau Devoirs : visibles seulement si la semaine est dans correction_devoir
+  var showDevoirCorr = {{ $showDevoirCorr }};
+  if (!showDevoirCorr) {
+    var devoirPanel = document.getElementById('panel-devoir');
+    if (devoirPanel) {
+      devoirPanel.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function(el){
+        el.style.display = 'none';
+      });
+    }
+  }
+})();
+</script>
+{{ end }}

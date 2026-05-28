@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semaine 12 — MaBémath</title>
+<link rel="icon" href="/mabemat/favicon.ico" sizes="any">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/favicon.svg">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/2nde/">2nde</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/2nde/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Semaine 12</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <h1>Semaine <em>12</em></h1>
+  
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séance + Devoirs</span>
+    <span><span class="dot"></span>12 questions</span>
+    <span><span class="dot"></span>≈ 20 min</span>
+  </div>
+</section>
+
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance" role="tab" aria-selected="true">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir" role="tab" aria-selected="false">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+</div>
+
+
+
+<section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
+  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Déterminer l&rsquo;expression algébrique de la fonction affine $f$ définie sur $\mathbb{R}$, sachant que $f(9)=-27$ et $f(8)=-25$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$a=\dfrac{f(9)-f(8)}{9-8}=\dfrac{-27-(-25)}{1}=-2$</p>
+<p>$f(9)=-2\times 9+b=-18+b=-27 \implies b=-9$</p>
+<p>Donc $f(x)=\mathbf{-2x-9}$.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>a. Donner une écriture simplifiée de $I=\,]11\,;\,25]\cup[33\,;\,43]$</p>
+<p>b. Donner une écriture simplifiée de $I=[12\,;\,28]\cap[14\,;\,17]$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>a. Les deux intervalles sont disjoints : $I=\mathbf{]11\,;\,25]\cup[33\,;\,43]}$ (ne se simplifie pas).</p>
+<p>b. $[14\,;\,17]\subset[12\,;\,28]$ donc $I=\mathbf{[14\,;\,17]}$.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soient $f(x)=-7x-1$ et $g(x)=-2x+3$.</p>
+<p>a. Résoudre $f(x)<g(x)$.</p>
+<p>b. Quelle interprétation graphique peut-on en donner ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>a. $-7x-1<-2x+3 \implies -5x<4 \implies x>-\dfrac{4}{5}$</p>
+<p>$S=\left]-\dfrac{4}{5}\,;\,+\infty\right[$</p>
+<p>b. La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur $\left]-\dfrac{4}{5}\,;\,+\infty\right[$.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Développer et réduire : $A=(7y-6)(-3y-5)$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$A=7y\times(-3y)+7y\times(-5)+(-6)\times(-3y)+(-6)\times(-5)$</p>
+<p>$A=-21y^2-35y+18y+30$</p>
+<p>$A=\mathbf{-21y^2-17y+30}$</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>a. Le chiffre d&rsquo;affaires d&rsquo;une entreprise est passé de $270\,000$€ en 2021 à $264\,600$€ en 2022. Calculer le taux d&rsquo;évolution en pourcentage.</p>
+<p>b. Après une diminution de $6\,\%$, mon vélo électrique coûte $922{,}14$€. Calculer son prix avant la diminution.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>a. $t=\dfrac{264\,600-270\,000}{270\,000}=-0{,}02=\mathbf{-2\,\%}$</p>
+<p>b. Diminuer de $6\,\%$ revient à multiplier par $0{,}94$. Prix initial : $\dfrac{922{,}14}{0{,}94}=\mathbf{981}$€.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+</section>
+
+
+
+
+<section id="panel-devoir" class="mode-panel panel-devoir">
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
+  
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Déterminer l&rsquo;expression algébrique de la fonction affine $f$ définie sur $\mathbb{R}$, sachant que $f(9)=32$ et $f(7)=26$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$a=\dfrac{f(9)-f(7)}{9-7}=\dfrac{32-26}{2}=3$</p>
+<p>$f(9)=3\times 9+b=27+b=32 \implies b=5$</p>
+<p>Donc $f(x)=\mathbf{3x+5}$.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>a. Donner une écriture simplifiée de $I=\,]1\,;\,27]\cup\,]6\,;\,13]$</p>
+<p>b. Donner une écriture simplifiée de $I=\,]-\infty\,;\,22]\cap\,]31\,;\,40]$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>a. $]6\,;\,13]\subset\,]1\,;\,27]$ donc $I=\mathbf{]1\,;\,27]}$.</p>
+<p>b. Les deux intervalles sont disjoints : $I=\mathbf{\emptyset}$.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soient $f(x)=6x+3$ et $g(x)=x+5$.</p>
+<p>a. Résoudre $f(x)<g(x)$.</p>
+<p>b. Quelle interprétation graphique peut-on en donner ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>a. $6x+3<x+5 \implies 5x<2 \implies x<\dfrac{2}{5}$</p>
+<p>$S=\left]-\infty\,;\,\dfrac{2}{5}\right[$</p>
+<p>b. La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur $\left]-\infty\,;\,\dfrac{2}{5}\right[$.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Développer et réduire : $A=(9k+4)(-7k-3)$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$A=9k\times(-7k)+9k\times(-3)+4\times(-7k)+4\times(-3)$</p>
+<p>$A=-63k^2-27k-28k-12$</p>
+<p>$A=\mathbf{-63k^2-55k-12}$</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>a. En 14 ans, la population d&rsquo;une ville est passée de $52\,000$ à $43\,680$ habitants. Calculer le taux d&rsquo;évolution en pourcentage.</p>
+<p>b. Après une augmentation de $60\,\%$, un article coûte $15{,}84$€. Calculer son prix initial.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>a. $t=\dfrac{43\,680-52\,000}{52\,000}=-0{,}16=\mathbf{-16\,\%}$</p>
+<p>b. Augmenter de $60\,\%$ revient à multiplier par $1{,}6$. Prix initial : $\dfrac{15{,}84}{1{,}6}=\mathbf{9{,}90}$€.</p>
+</div>
+  </div>
+  
+</article>
+
+
+
+</section>
+
+
+
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/2nde/automatismes/semaine-13/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/2nde/automatismes/semaine-11/">Semaine suivante →</a>
+    
+  </div>
+</div>
+
+<script>
+(function(){
+  
+  document.querySelectorAll('.mode-tabs button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.mode-tabs button').forEach(function(b){
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+      });
+      document.querySelectorAll('.mode-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var panel = document.getElementById('panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  
+  document.querySelectorAll('.auto1re-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.auto1re-card');
+      var corr = card.querySelector('.auto1re-corr');
+      var open = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      card.classList.toggle('is-open', open);
+      if (corr) corr.classList.toggle('open', open);
+      var lbl = btn.querySelector('.t');
+      if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+    });
+  });
+
+  
+  var showDevoirCorr =  false ;
+  if (!showDevoirCorr) {
+    var devoirPanel = document.getElementById('panel-devoir');
+    if (devoirPanel) {
+      devoirPanel.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function(el){
+        el.style.display = 'none';
+      });
+    }
+  }
+})();
+</script>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1779869412';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

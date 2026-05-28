@@ -1,0 +1,139 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+\setlist[enumerate]{label=\textbf{\textcolor{Couleur8}{\arabic*.}}, left=1em}
+
+% Si vous voulez aussi modifier les listes enumerate imbriquées :
+\setlist[enumerate,2]{label=\textcolor{Couleur8}{\alph*)}}
+\setlist[enumerate,3]{label=\textcolor{Couleur8}{\roman*)}}
+\setlist[enumerate,4]{label=\textcolor{Couleur8}{\Alph*)}}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cancel}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{tkz-tab}
+\usepackage{eurosym}
+
+% OPTION PROF/ÉLÈVE
+% Décommentez UNE des deux lignes suivantes :
+\newboolean{prof}\setboolean{prof}{true}   % Version professeur (avec corrections des devoirs)
+%\newboolean{prof}\setboolean{prof}{false}  % Version élève (sans corrections des devoirs)
+
+\definecolor{Couleur1}{HTML}{4A5D7A} %Th
+\definecolor{Couleur2}{HTML}{A5B5D6} %Prop
+\definecolor{Couleur3}{HTML}{A8C68A} %Méthode
+\definecolor{Couleur6}{HTML}{8A9CC1} %Def
+\definecolor{Couleur7}{HTML}{E6B459} %Rq Voc
+\definecolor{Couleur8}{HTML}{D36740} %Titres
+\definecolor{correction}{HTML}{D36740} % Couleur pour les corrections
+\definecolor{coopmathscorr}{HTML}{F15929} % Couleur corrections coopmaths
+
+% Configuration des marges
+\geometry{
+	top=2cm,
+	bottom=2cm,
+	inner=1.5cm,
+	outer=1.5cm,
+}
+
+% Police
+\renewcommand{\familydefault}{\sfdefault}
+
+% Compteurs
+\newcounter{seancenum}
+\newcounter{seancenumD}
+\setcounter{seancenum}{1}
+\setcounter{seancenumD}{1}
+
+% Configuration des en-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\ifthenelse{\boolean{prof}}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Classe de seconde - Version Professeur}}}
+}{
+    \fancyhead[L]{\textcolor{Couleur8}{\textbf{Corrections Automatismes - Séance 1 - Classe de seconde}}}
+}
+\fancyhead[R]{\textcolor{Couleur8}{\textbf{2025-2026}}}
+\fancyfoot[L]{\textcolor{Couleur8}{Mme Bertail et Mme Pinto}}
+\fancyfoot[R]{\textcolor{Couleur8}{\thepage}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{Couleur8}\leaders\hrule height \headrulewidth\hfill}}
+
+% Environnements personnalisés
+\newtcolorbox{seance}[1]{
+    colback=Couleur6!10,
+    colframe=Couleur1!65,
+    fonttitle=\bfseries\large,
+    title=Correction Séance \theseancenum #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenum}
+}
+
+\newtcolorbox{seanceD}[1]{
+    colback=Couleur6!5,
+    colframe=Couleur6!45,
+    fonttitle=\bfseries\large,
+    title=Correction Devoirs - Séance \theseancenumD #1,
+    left=5mm,
+    right=5mm,
+    top=3mm,
+    bottom=3mm,
+    arc=0mm,
+    after=\stepcounter{seancenumD}
+}
+
+\begin{document}
+
+\setcounter{seancenum}{1}
+\newpage
+\begin{seance}{} %1
+
+\begin{enumerate}
+\item $\dfrac{2}{6}-\dfrac{3}{9}=\dfrac{2{\color{Couleur1}\boldsymbol{\times 3}}}{6{\color{Couleur1}\boldsymbol{\times 3}}}-\dfrac{3{\color{Couleur1}\boldsymbol{\times 2}}}{9{\color{Couleur1}\boldsymbol{\times 2}}}=\dfrac{6-6}{18}=\dfrac{0}{18}=$ ${\color{correction}\boldsymbol{0}}$
+
+On a réduit les fractions au même dénominateur (18), puis effectué la soustraction.
+
+\item $\dfrac{8}{6}-\dfrac{2}{21}=\dfrac{8{\color{Couleur1}\boldsymbol{\times 7}}}{6{\color{Couleur1}\boldsymbol{\times 7}}}-\dfrac{2{\color{Couleur1}\boldsymbol{\times 2}}}{21{\color{Couleur1}\boldsymbol{\times 2}}}=\dfrac{56-4}{42}=\dfrac{52}{42}=\dfrac{26\times2}{21\times2}=$ ${\color{correction}\boldsymbol{\dfrac{26}{21}}}$
+
+Le dénominateur commun est 42. On simplifie ensuite par 2.
+
+\item $\dfrac{11}{10} \div \dfrac{77}{-30} = \dfrac{11}{10} \times \dfrac{-30}{77} = \dfrac{11 \times (-30)}{10 \times 77} = \dfrac{-330}{770}$
+
+On décompose : $\dfrac{(-11) \times 30}{10 \times 77} = \dfrac{(-11) \times 3 \times 10}{10 \times 7 \times 11} = \dfrac{-3 \times \cancel{10} \times \cancel{11}}{\cancel{10} \times 7 \times \cancel{11}} = {\color{correction}\boldsymbol{\dfrac{3}{7}}}$
+
+Pour diviser par une fraction, on multiplie par son inverse.
+
+\item $\dfrac{-15}{55}\times\dfrac{-77}{40}=\dfrac{(-15)\times(-77)}{55\times40} = \dfrac{15 \times 77}{55 \times 40}$
+
+On décompose : $\dfrac{3 \times 5 \times 7 \times 11}{5 \times 11 \times 8 \times 5} = \dfrac{3 \times \cancel{5} \times 7 \times \cancel{11}}{8 \times 5 \times \cancel{5} \times \cancel{11}} = {\color{correction}\boldsymbol{\dfrac{21}{40}}}$
+
+Le produit de deux nombres négatifs est positif.
+
+\item Le matin, Aude a bu $\dfrac{5}{7}$ de la bouteille. Il reste alors $1 - \dfrac{5}{7} = \dfrac{7}{7} - \dfrac{5}{7} = \dfrac{2}{7}$ de la bouteille.
+
+À midi, elle a bu $\dfrac{1}{6}$ du reste, soit : $\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{correction}\boldsymbol{\dfrac{1}{21}}}$ de la bouteille.
+
+\item $A = \dfrac{1}{2-\dfrac{1}{2}} = \dfrac{1}{\dfrac{4}{2}-\dfrac{1}{2}} = \dfrac{1}{\dfrac{3}{2}} = 1 \times \dfrac{2}{3} = {\color{correction}\boldsymbol{\dfrac{2}{3}}}$
+
+\end{enumerate}
+
+\end{seance}
+
+\end{document}
