@@ -64,7 +64,7 @@ courses:
     date: "2027-06-21"
     has_correction: true
   - num: 21
-    has_correction: false
+    has_correction: true
 
 ---
 
