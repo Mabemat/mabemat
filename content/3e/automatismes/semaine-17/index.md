@@ -93,7 +93,17 @@ Dans le triangle $UKG$, les droites $(KG)$ et $(XC)$ sont parallèles.<br>D'apr�
 ---Q---
 Résoudre : $9-(-6x+5)=7x+8$
 ---CORR---
-$9-(-6x+5)=7x+8$<br>$9+6x-5=7x+8$<br>$6x+4=7x+8$<br>$6x+4{\color{#C5607A}\boldsymbol{-7x}}=7x+8{\color{#C5607A}\boldsymbol{-7x}}$<br>$-x+4=8$<br>$-x+4{\color{#C5607A}\boldsymbol{-4}}=8{\color{#C5607A}\boldsymbol{-4}}$<br>$-x=4$<br>$-x{\color{#C5607A}\boldsymbol{\div(-1)}}=4{\color{#C5607A}\boldsymbol{\div(-1)}}$<br>$x=-4$<br>La solution de l'équation $9-(-6x+5)=7x+8$ est ${\color{#EB7F73}\boldsymbol{-4}}$.
+$$\begin{aligned}
+9-(-6x+5) &= 7x+8 \\
+9+6x-5 &= 7x+8 \\
+6x+4 &= 7x+8 \\
+6x+4{\color{#C5607A}\boldsymbol{-7x}} &= 7x+8{\color{#C5607A}\boldsymbol{-7x}} \\
+-x+4 &= 8 \\
+-x+4{\color{#C5607A}\boldsymbol{-4}} &= 8{\color{#C5607A}\boldsymbol{-4}} \\
+-x &= 4 \\
+-x{\color{#C5607A}\boldsymbol{\div(-1)}} &= 4{\color{#C5607A}\boldsymbol{\div(-1)}} \\
+x &= {\color{#EB7F73}\boldsymbol{-4}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}

@@ -26,7 +26,16 @@ $44-7 \times 6$ s'écrit : <span class="rep">la différence entre 44 et le produ
 ---Q---
 Résoudre : $7(-6x-4)=4x+5$
 ---CORR---
-$7(-6x-4)=4x+5$<br>On développe le membre de gauche.<br>$-42x-28=4x+5$<br>On soustrait $4x$ aux deux membres.<br>$-42x-28{\color{#C5607A}\boldsymbol{-4x}}=4x+5{\color{#C5607A}\boldsymbol{-4x}}$<br>$-46x-28=5$<br>On ajoute $28$ aux deux membres.<br>$-46x-28{\color{#C5607A}\boldsymbol{+28}}=5{\color{#C5607A}\boldsymbol{+28}}$<br>$-46x=33$<br>On divise les deux membres par $-46$.<br>$-46x{\color{#C5607A}\boldsymbol{\div(-46)}}=33{\color{#C5607A}\boldsymbol{\div(-46)}}$<br>$x=-\dfrac{33}{46}$<br>La solution de l'équation $7(-6x-4)=4x+5$ est ${\color{#EB7F73}\boldsymbol{-\dfrac{33}{46}}}$.
+$$\begin{aligned}
+7(-6x-4) &= 4x+5 \\
+-42x-28 &= 4x+5 \\
+-42x-28{\color{#C5607A}\boldsymbol{-4x}} &= 4x+5{\color{#C5607A}\boldsymbol{-4x}} \\
+-46x-28 &= 5 \\
+-46x-28{\color{#C5607A}\boldsymbol{+28}} &= 5{\color{#C5607A}\boldsymbol{+28}} \\
+-46x &= 33 \\
+-46x{\color{#C5607A}\boldsymbol{\div(-46)}} &= 33{\color{#C5607A}\boldsymbol{\div(-46)}} \\
+x &= {\color{#EB7F73}\boldsymbol{-\dfrac{33}{46}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}44
@@ -124,7 +133,14 @@ Le produit de la différence entre 12 et 9 par la somme de 10 et du produit de 7
 ---Q---
 Résoudre : $4x(6x +5) = 24x^2 +7$
 ---CORR---
-$4x(6x +5) = 24x^2 +7$<br>$24x^2 +20x = 24x^2 +7$<br>$20x = 7$<br>$x = \dfrac{7}{20}$<br>La solution de l'équation est : ${\color{#EB7F73}\boldsymbol{\dfrac{7}{20}}}$.
+$$\begin{aligned}
+4x(6x+5) &= 24x^2+7 \\
+24x^2+20x &= 24x^2+7 \\
+24x^2+20x{\color{#C5607A}\boldsymbol{-24x^2}} &= 24x^2+7{\color{#C5607A}\boldsymbol{-24x^2}} \\
+20x &= 7 \\
+20x{\color{#C5607A}\boldsymbol{\div 20}} &= 7{\color{#C5607A}\boldsymbol{\div 20}} \\
+x &= {\color{#EB7F73}\boldsymbol{\dfrac{7}{20}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4

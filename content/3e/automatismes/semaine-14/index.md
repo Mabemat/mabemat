@@ -97,7 +97,14 @@ Pour déterminer la longueur $WB$, on utilise le théorème de Thalès car les d
 ---Q---
 Résoudre : $90x^2 +9 = 10x(9x +4)$
 ---CORR---
-$90x^2 +9 = 10x(9x +4)$<br>$90x^2 +9 = 90x^2 +40x$<br>$9 = 40x$<br>$x = \dfrac{9}{40}$<br>La solution de l'équation est : ${\color{#EB7F73}\boldsymbol{\dfrac{9}{40}}}$.
+$$\begin{aligned}
+90x^2+9 &= 10x(9x+4) \\
+90x^2+9 &= 90x^2+40x \\
+90x^2+9{\color{#C5607A}\boldsymbol{-90x^2}} &= 90x^2+40x{\color{#C5607A}\boldsymbol{-90x^2}} \\
+9 &= 40x \\
+9{\color{#C5607A}\boldsymbol{\div 40}} &= 40x{\color{#C5607A}\boldsymbol{\div 40}} \\
+x &= {\color{#EB7F73}\boldsymbol{\dfrac{9}{40}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2

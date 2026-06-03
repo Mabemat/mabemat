@@ -128,7 +128,15 @@ $1~\text{m}^2 = 1~\text{m} \times 1~{\color{#EB7F73}\boldsymbol{\text{m}}} = 10~
 ---Q---
 Résoudre : $-12y+3=-10y-4$
 ---CORR---
-$-12y+3=-10y-4$<br>On ajoute $10y$ : $-2y+3=-4$<br>On soustrait $3$ : $-2y=-7$<br>On divise par $-2$ : $y=\dfrac{7}{2}$<br>La solution de l'équation $-12y+3=-10y-4$ est ${\color{#EB7F73}\boldsymbol{\dfrac{7}{2}}}$.
+$$\begin{aligned}
+-12y+3 &= -10y-4 \\
+-12y+3{\color{#C5607A}\boldsymbol{+10y}} &= -10y-4{\color{#C5607A}\boldsymbol{+10y}} \\
+-2y+3 &= -4 \\
+-2y+3{\color{#C5607A}\boldsymbol{-3}} &= -4{\color{#C5607A}\boldsymbol{-3}} \\
+-2y &= -7 \\
+-2y{\color{#C5607A}\boldsymbol{\div(-2)}} &= -7{\color{#C5607A}\boldsymbol{\div(-2)}} \\
+y &= {\color{#EB7F73}\boldsymbol{\dfrac{7}{2}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5

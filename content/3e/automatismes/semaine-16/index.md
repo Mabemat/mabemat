@@ -56,7 +56,14 @@ Dans le triangle $FRX$, les droites $(RX)$ et $(VT)$ sont parallèles.<br>D'apr�
 ---Q---
 Résoudre : $4x(2x +2) = 8x^2 +10$
 ---CORR---
-$4x(2x +2) = 8x^2 +10$<br>$8x^2 +8x = 8x^2 +10$<br>$8x = 10$<br>$x = \dfrac{10}{8} = \dfrac{5}{4}$<br>La solution de l'équation est : ${\color{#EB7F73}\boldsymbol{\dfrac{5}{4}}}$.
+$$\begin{aligned}
+4x(2x+2) &= 8x^2+10 \\
+8x^2+8x &= 8x^2+10 \\
+8x^2+8x{\color{#C5607A}\boldsymbol{-8x^2}} &= 8x^2+10{\color{#C5607A}\boldsymbol{-8x^2}} \\
+8x &= 10 \\
+8x{\color{#C5607A}\boldsymbol{\div 8}} &= 10{\color{#C5607A}\boldsymbol{\div 8}} \\
+x &= {\color{#EB7F73}\boldsymbol{\dfrac{5}{4}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}

@@ -19,7 +19,14 @@ $A = 1 + \dfrac{2}{7}$<br>$A = \dfrac{7}{7} + \dfrac{2}{7}$<br>$A = {\color{#EB7
 ---Q---
 Résoudre : $7x+13=11x+10$
 ---CORR---
-$7x+13=11x+10$<br>On soustrait $11x$ aux deux membres.<br>$7x+13{\color{#C5607A}\boldsymbol{\,\,-\,\,11x}}=11x+10{\color{#C5607A}\boldsymbol{\,\,-\,\,11x}}$<br>$-4x+13=10$<br>On soustrait $13$ aux deux membres.<br>$-4x+13{\color{#C5607A}\boldsymbol{\,\,-\,\,13}}=10{\color{#C5607A}\boldsymbol{\,\,-\,\,13}}$<br>$-4x=-3$<br>On divise les deux membres par $-4$.<br>$-4x{\color{#C5607A}\boldsymbol{\,\div\,(-4)}}=-3{\color{#C5607A}\boldsymbol{\,\div\,(-4)}}$<br>$x=\dfrac{3}{4}$<br>La solution de l'équation $7x+13=11x+10$ est ${\color{#EB7F73}\boldsymbol{\dfrac{3}{4}}}$.
+$$\begin{aligned}
+7x+13 &= 11x+10 \\
+7x+13{\color{#C5607A}\boldsymbol{-11x}} &= 11x+10{\color{#C5607A}\boldsymbol{-11x}} \\
+-4x+13 &= 10 \\
+-4x+13{\color{#C5607A}\boldsymbol{-13}} &= 10{\color{#C5607A}\boldsymbol{-13}} \\
+-4x &= -3 \\
+x &= {\color{#EB7F73}\boldsymbol{\dfrac{3}{4}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}
@@ -59,7 +66,13 @@ $A = \dfrac{6}{5} \times \dfrac{3}{5} - \dfrac{4}{5}$<br>$A = \dfrac{18}{25} - \
 ---Q---
 Résoudre : $\dfrac{-5a}{-7}=3$
 ---CORR---
-$\dfrac{-5a}{-7}=3$<br>On multiplie les deux membres par $\dfrac{7}{5}$.<br>$\dfrac{-5a}{-7}{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{7}{5}}}=3{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{7}{5}}}$<br>$a=\dfrac{21}{5}$<br>La solution de l'équation $\dfrac{-5a}{-7}=3$ est ${\color{#EB7F73}\boldsymbol{\dfrac{21}{5}}}$.
+$$\begin{aligned}
+\dfrac{-5a}{-7} &= 3 \\
+\dfrac{-5a}{-7}{\color{#C5607A}\boldsymbol{\times(-7)}} &= 3{\color{#C5607A}\boldsymbol{\times(-7)}} \\
+-5a &= -21 \\
+-5a{\color{#C5607A}\boldsymbol{\div(-5)}} &= -21{\color{#C5607A}\boldsymbol{\div(-5)}} \\
+a &= {\color{#EB7F73}\boldsymbol{\dfrac{21}{5}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}

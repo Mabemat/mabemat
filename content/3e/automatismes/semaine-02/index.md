@@ -12,10 +12,11 @@ weight: 2
 ---Q---
 Résoudre l'équation suivante : $\dfrac{t}{-13}=4$
 ---CORR---
-$$\dfrac{t}{-13}=4$$
-$$\dfrac{t}{-13}{\color{#C5607A}\boldsymbol{\times\,(-13)}}=4{\color{#C5607A}\boldsymbol{\times\,(-13)}}$$
-$$t=-52$$<
-La solution de l'équation $\dfrac{t}{-13}=4$ est ${\color{#EB7F73}\boldsymbol{-52}}$.
+$$\begin{aligned}
+\dfrac{t}{-13} &= 4 \\
+\dfrac{t}{-13}{\color{#C5607A}\boldsymbol{\times(-13)}} &= 4{\color{#C5607A}\boldsymbol{\times(-13)}} \\
+t &= {\color{#EB7F73}\boldsymbol{-52}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2
@@ -55,14 +56,20 @@ Placer les points : $A(-6{,}1)$, $B(-3{,}8)$, $C(-0{,}8)$.
 ---Q---
 $A = 4 - \dfrac{2}{5}$
 ---CORR---
-$A = \dfrac{20}{5} - \dfrac{2}{5} = {\color{#EB7F73}\boldsymbol{\dfrac{18}{5}}}$
+$A = \dfrac{4}{1} - \dfrac{2}{5} =\dfrac{20}{5} - \dfrac{2}{5} = {\color{#EB7F73}\boldsymbol{\dfrac{18}{5}}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
 Résoudre l'équation suivante : $\dfrac{-3a}{5}=-4$
 ---CORR---
-On multiplie les deux membres par $\dfrac{-5}{3}$.<br>$a=\dfrac{20}{3}$<br>La solution est ${\color{#EB7F73}\boldsymbol{\dfrac{20}{3}}}$.
+$$\begin{aligned}
+\dfrac{-3a}{5} &= -4 \\
+\dfrac{-3a}{5}{\color{#C5607A}\boldsymbol{\times 5}} &= -4{\color{#C5607A}\boldsymbol{\times 5}} \\
+-3a &= -20 \\
+-3a{\color{#C5607A}\boldsymbol{\div(-3)}} &= -20{\color{#C5607A}\boldsymbol{\div(-3)}} \\
+a &= {\color{#EB7F73}\boldsymbol{\dfrac{20}{3}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}
@@ -102,7 +109,15 @@ $A = \dfrac{4}{8} \times \dfrac{3}{6} = \dfrac{12}{48} = \dfrac{1{\color{#C5607A
 ---Q---
 Résoudre : $8t-13=-6t-8$
 ---CORR---
-On ajoute $6t$ aux deux membres : $14t-13=-8$.<br>On ajoute $13$ : $14t=5$.<br>On divise par $14$ : $t=\dfrac{5}{14}$.<br>La solution est ${\color{#EB7F73}\boldsymbol{\dfrac{5}{14}}}$.
+$$\begin{aligned}
+8t-13 &= -6t-8 \\
+8t-13{\color{#C5607A}\boldsymbol{+6t}} &= -6t-8{\color{#C5607A}\boldsymbol{+6t}} \\
+14t-13 &= -8 \\
+14t-13{\color{#C5607A}\boldsymbol{+13}} &= -8{\color{#C5607A}\boldsymbol{+13}} \\
+14t &= 5 \\
+14t{\color{#C5607A}\boldsymbol{\div 14}} &= 5{\color{#C5607A}\boldsymbol{\div 14}} \\
+t &= {\color{#EB7F73}\boldsymbol{\dfrac{5}{14}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3

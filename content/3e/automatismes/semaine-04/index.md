@@ -77,7 +77,12 @@ $A = \dfrac{1}{5} - \dfrac{20}{10} = \dfrac{2}{10} - \dfrac{20}{10} = \dfrac{-18
 ---Q---
 Résoudre : $\dfrac{-4}{-2}=\dfrac{x}{-3}$
 ---CORR---
-Les produits en croix sont égaux : $-2\times x = -4\times(-3)$<br>On divise par $-2$ : $x = \dfrac{-4\times(-3)}{-2} = {\color{#EB7F73}\boldsymbol{-6}}$
+$$\begin{aligned}
+\dfrac{-4}{-2} &= \dfrac{x}{-3} \\
+-2 \times x &= -4 \times (-3) \\
+-2x{\color{#C5607A}\boldsymbol{\div(-2)}} &= 12{\color{#C5607A}\boldsymbol{\div(-2)}} \\
+x &= {\color{#EB7F73}\boldsymbol{-6}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3

@@ -19,10 +19,11 @@ $\dfrac{3}{5}=\dfrac{6}{10}={\color{#EB7F73}\boldsymbol{0{,}6}}$
 ---Q---
 Résoudre l'équation suivant : $t+3=12$
 ---CORR---
-$$t+3=12$$
-$$t+3{\color{#C5607A}\boldsymbol{\,-\,3}}=12{\color{#C5607A}\boldsymbol{\,-\,3}}$$
-$$t=9$$
-La solution de l'équation $t+3=12$ est ${\color{#EB7F73}\boldsymbol{9}}$.
+$$\begin{aligned}
+t+3 &= 12 \\
+t+3{\color{#C5607A}\boldsymbol{-3}} &= 12{\color{#C5607A}\boldsymbol{-3}} \\
+t &= {\color{#EB7F73}\boldsymbol{9}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3
@@ -70,10 +71,11 @@ $\dfrac{70}{100} = \dfrac{10 \times 7}{10 \times 10} = {\color{#EB7F73}\boldsymb
 ---Q---
 Résoudre l'équation suivante : $-8m=3$
 ---CORR---
-$$-8m=3$$
-$$-8m{\color{#C5607A}\boldsymbol{\,\div\,(-8)}}=3{\color{#C5607A}\boldsymbol{\,\div\,(-8)}}$$
-$$m=-\dfrac{3}{8}$$
-La solution de l'équation $-8m=3$ est ${\color{#EB7F73}\boldsymbol{-\dfrac{3}{8}}}$.
+$$\begin{aligned}
+-8m &= 3 \\
+-8m{\color{#C5607A}\boldsymbol{\div(-8)}} &= 3{\color{#C5607A}\boldsymbol{\div(-8)}} \\
+m &= {\color{#EB7F73}\boldsymbol{-\dfrac{3}{8}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4
@@ -107,12 +109,13 @@ $\dfrac{8}{-1}={\color{#EB7F73}\boldsymbol{-8}}$
 ---Q---
 Résoudre l'équation suivante : $10m-7=0$
 ---CORR---
-$$10m-7=0$$
-$$10m-7{\color{#C5607A}\boldsymbol{\,+\,7}}=0{\color{#C5607A}\boldsymbol{\,+\,7}}$$
-$$10m=7$$
-$$10m{\color{#C5607A}\boldsymbol{\,\div\,10}}=7{\color{#C5607A}\boldsymbol{\,\div\,10}}$$
-$$m=\dfrac{7}{10}$$
-La solution de l'équation $10m-7=0$ est ${\color{#EB7F73}\boldsymbol{\dfrac{7}{10}}}$.
+$$\begin{aligned}
+10m-7 &= 0 \\
+10m-7{\color{#C5607A}\boldsymbol{+7}} &= 0{\color{#C5607A}\boldsymbol{+7}} \\
+10m &= 7 \\
+10m{\color{#C5607A}\boldsymbol{\div 10}} &= 7{\color{#C5607A}\boldsymbol{\div 10}} \\
+m &= {\color{#EB7F73}\boldsymbol{\dfrac{7}{10}}}
+\end{aligned}$$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}
