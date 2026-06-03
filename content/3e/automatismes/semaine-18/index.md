@@ -8,130 +8,124 @@ weight: 18
 
 {{< auto3-seance titre="Séance 52" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter avec le signe < ou >.<br>$-9{,}67 \quad \ldots\ldots   \quad9{,}51$
+Réduire l'expression suivante, si cela est possible.<br>$A=5x-11$
 ---CORR---
-$-9{,}67 \quad {\color{#8B3C52}\boldsymbol{<}} \quad 9{,}51$
+$A= {\color{#EB7F73}\boldsymbol{5x-11}}$ (l'expression est déjà réduite)
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Choisis le calcul qui permet de résoudre l'équation suivante : <br>
-Pour résoudre $7x+1=23$ :
 
-    <br> <strong>A</strong>. $(23-7)-1$&emsp;&emsp; 
-    <strong>B</strong>. $23\times 7-1$&emsp;&emsp; 
-    <strong>C</strong>. $\dfrac{23}{7}-1$&emsp;&emsp; 
-    <strong>D</strong>. $\dfrac{23-1}{7}$
----CORR---
-$7x+1=23$  <br>
-    On enlève $1$ : $7x=23-1$.  <br>
-    Puis on divise par $7$ : $x=\dfrac{23-1}{7}$.  <br>
-    Bonne réponse : <strong>D</strong>.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-$ZRSB$ est un parallélogramme tel que ses diagonales $[ZS]$ et $[RB]$ ont la même longueur et sont perpendiculaires.<br>Déterminer la nature de $ZRSB$ en justifiant la réponse.
+Écrire sous la forme $a^n$ : $A=(-7)^{4}\times (-2)^{4}$
 ---CORR---
-Les segments de même couleur sont parallèles sur le schéma suivant :<br>
-On sait que $[ZS]\perp[RB]$ et $ZS=RB$.<br>Si un parallélogramme a des diagonales perpendiculaires et de même longueur, alors c'est un carré.<br>$ZRSB$ est donc un carré.
+$A=(-7)^{4}\times (-2)^{4}$<br>$A=((-7) \times (-2)) \times ((-7) \times (-2)) \times ((-7) \times (-2)) \times ((-7) \times (-2))$<br>$A= ((-7) \times (-2))^{4}={\color{#EB7F73}\boldsymbol{(14)^{4}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-$WXY$ est un triangle rectangle en $W$ dans lequel
-      $WX=6$ et $WY=\sqrt{10}$.<br>
-       Calculer la valeur exacte de $XY$ .
+Multiplier par $0{,}6$ revient à $\ldots$
 ---CORR---
-On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $W$.<br>
-On obtient :<br>
-$\begin{aligned}
-XY^2&=WX^2+WY^2\\
-XY^2&=\sqrt{10}^2+6^2\\
-XY^2&=10+36\\
-XY^2&=46\\
-XY&={\color{#8B3C52}\boldsymbol{\sqrt{46}}}
-\end{aligned}$
+Multiplier par $0{,}6$ revient à diminuer de ${\color{#EB7F73}\boldsymbol{40~\%}}$ car $0{,}6 = 60~\% = 100~\% - 40~\%$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Quel est le périmètre de la figure ci-dessous ?
+<br>
+<img src="3auto_s52_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Le périmètre de cette figure est : ${\color{#EB7F73}\boldsymbol{30}}$ u.l.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+$\widehat{XRY}$ est un angle :<br><br>A. nul &emsp; B. aigu &emsp; C. droit &emsp; D. obtus
+<br>
+<img src="3auto_s52_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$\widehat{XRY}$ est un angle <span class="rep">aigu</span>. Un angle aigu est un angle dont la mesure est comprise entre $0°$ et $90°$. Réponse <span class="rep">B</span>.
 
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 53" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Dans une école de 1100 étudiants, $25\%$ des étudiants portent des lunettes.<br>
-    Combien d'étudiants portent des lunettes ?
+Écrire sous la forme de la somme d'un nombre entier et d'une fraction inférieure à 1.<br>$\dfrac{6}{5} = \phantom{00}\text{........}\phantom{00} + \dfrac{\phantom{00}\text{........}\phantom{00}}{\phantom{00}\text{........}\phantom{00}}$
 ---CORR---
-Le nombre d'étudiants qui portent des lunettes est égal à :<br>
-    $1\,100 \times \dfrac{25}{100} = \dfrac{27\,500}{100}={\color{#8B3C52}\boldsymbol{275}}$.
+$\dfrac{6}{5} = {\color{#EB7F73}\boldsymbol{1}}+\dfrac{{\color{#EB7F73}\boldsymbol{1}}}{{\color{#EB7F73}\boldsymbol{5}}} = {\color{#EB7F73}\boldsymbol{1{,}2}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Placer les points : $J(-0{,}066), K(-0{,}038), L(-0{,}028)$.
 
-<br><br><img src="3auton15_2_enonce_01.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-<img src="3auton15_2_corr_02.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Calculer le périmètre exact d'un rectangle de longueur $7{,}3\text{ cm}$ et de largeur $2{,}4\text{ cm}$
+Quelle est l'écriture décimale du nombre dont l'écriture scientifique est $6{,}248\times 10^{3}$ ?<br><br>A. $6\,248$ &emsp; B. $0{,}006\,248$ &emsp; C. $624{,}8$ &emsp; D. $6\,000{,}624\,8$
 ---CORR---
-$\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangle} = 2 \times (7{,}3 + 2{,}4)\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = 2 \times 9{,}7\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = {\color{#8B3C52}\boldsymbol{19{,}4}}\text{ cm}$
+Multiplier par $10^{3}$ revient à multiplier par $1\,000$, donc l'écriture décimale de $6{,}248\times 10^{3}$ est : ${\color{#EB7F73}\boldsymbol{6\,248}}$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
+$51\,941$ est-il divisible par $9$ ?
+---CORR---
+$5+1+9+4+1=20=9\times 2+2$<br>La somme des chiffres de $51\,941$ n'est pas divisible par $9$ donc $51\,941$ <span class="rep">n'est pas divisible par $9$</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Calculer le périmètre exact d'un cercle de diamètre $2~\text{cm}$.
+---CORR---
+$\mathcal{P}_\text{cercle} = d \times \pi = 2~\text{cm} \times \pi = {\color{#EB7F73}\boldsymbol{2\pi}}~\text{cm}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure, dans le triangle $FTC$, les droites $(TC)$ et $(XE)$ sont parallèles.<br>Déterminer la longueur $FT$.
 <br>
-Sur la figure ci-dessus, dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. Déterminer la longueur $YX$.<br><img src="3autog12_03.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="3auto_s53_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
-    D'après le théorème de Thalès, on a : <br>
-    $\dfrac{YX}{YV} =
-    \dfrac{XT}{UV}$. <br>
-    En remplaçant par les longueurs, on obtient : <br>
-    $\dfrac{YX}{YV} = \dfrac{18}{12}=1{,}5$.<br>
-    On en déduit que : <br>
-    $YX = 1{,}5 \times 24 = {\color{#8B3C52}\boldsymbol{36}}$ cm.
+Dans le triangle $FTC$, les droites $(TC)$ et $(XE)$ sont parallèles.<br>D'après le théorème de Thalès, on a : $\dfrac{FT}{FE} = \dfrac{TC}{XE}$.<br>En remplaçant par les longueurs : $\dfrac{FT}{FE} = \dfrac{15}{10}=1{,}5$.<br>On en déduit que : $FT = 1{,}5 \times 30 = {\color{#EB7F73}\boldsymbol{45}}~\text{cm}$.
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 54" >}}
 
 {{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Donner l'écriture scientifique de $7\,290$.
+$\dfrac{1}{4} +~ \ldots =0{,}33$
 ---CORR---
-$7\,290 = {\color{#8B3C52}\mathbf{7{,}29 \times 10^{3}}}$.
+Comme $\dfrac{1}{4}=0{,}25$, alors : $\dfrac{1}{4}+ {\color{#EB7F73}\boldsymbol{0{,}08}} =0{,}33$
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
-Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
+Écrire sous la forme $a^n$ : $A=\dfrac{(-6)^{5}}{(-3)^{5}}$
 ---CORR---
-Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+$A=\dfrac{(-6)^{5}}{(-3)^{5}}=\left(\dfrac{-6}{-3}\right)^{5}={\color{#EB7F73}\boldsymbol{2^{5}}}$
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Donner le nom de chacun des solides.<br><br><br><img src="3autog07_1_16.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Multiplier par $0{,}79$ revient à $\ldots$
 ---CORR---
-Prisme droit avec une base ayant $4$ sommets.
+Multiplier par $0{,}79$ revient à diminuer de ${\color{#EB7F73}\boldsymbol{21~\%}}$ car $0{,}79 = 79~\% = 100~\% - 21~\%$.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
-Compléter à l'aide des longueurs $WT$, $WV$ et $TV$ :  
-    
-
-$$
-    \cos\left(\widehat{WTV}\right)=\dfrac{\ldots}{\ldots}
-    $$<br><img src="3autog13_2_05.svg" alt="3autog13_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Calculer le périmètre d'un rectangle $TUVW$ de $11~\text{cm}$ de longueur et de $10~\text{cm}$ de largeur.
 ---CORR---
-$WTV$ est rectangle en $W$ donc :
-    
-
-$$
-    \cos\left(\widehat{WTV}\right)
-    = {\color{#8B3C52}\mathbf{\dfrac{WT}{TV}}}.
-    $$
+$\mathcal{P}_{TUVW}=(11~\text{cm}+10~\text{cm})\times2={\color{#EB7F73}\boldsymbol{42}}~\text{cm}$
 {{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>L'angle $\widehat{xOy}$ mesure $152^\circ$.<br>Combien mesure l'angle $\widehat{yOz}$ s'ils sont supplémentaires l'un de l'autre ?
+---CORR---
+Deux angles adjacents supplémentaires sont deux angles dont les côtés non communs forment un angle plat.<br>Alors $\widehat{yOz}=180^\circ-152^\circ={\color{#EB7F73}\boldsymbol{28^\circ}}$.
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}

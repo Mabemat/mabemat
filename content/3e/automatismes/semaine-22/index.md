@@ -8,151 +8,136 @@ weight: 22
 
 {{< auto3-seance titre="Séance 64" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Donner l'écriture décimale de $7{,}66 \times 10^{3}$.
+$GHI$ est un triangle rectangle en $G$ dans lequel $GH=8$ et $GI=\sqrt{6}$.<br>Calculer la valeur exacte de $HI$.
+
 ---CORR---
-$7{,}66 \times 10^{3} = {\color{#8B3C52}\mathbf{7\,660}}$.
+On utilise le théorème de Pythagore dans le triangle $GHI$, rectangle en $G$.<br>$GH^2+GI^2=HI^2$<br>$HI^2=(\sqrt{6})^2+8^2=6+64=70$<br>$HI={\color{#EB7F73}\boldsymbol{\sqrt{70}}}$<br>Mentalement : n'oubliez pas que $(\sqrt{6})^2=6$. La valeur cherchée est donc : $\sqrt{70}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Tania lit sur sa recette de cake pour $3$ personnes qu'il faut $60$ g de farine. <br>Elle veut adapter sa recette pour $5$ personnes.<br> Quelle masse de farine doit-elle prévoir ?
+Donner le nom de ce solide.
+<br>
+<img src="3auto_s64_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Commençons par trouver la masse de farine pour une personne. <br> $3$ personnes, c'est ${\color{#C5607A}\boldsymbol{3}}$ fois $1$ personne. il faut donc ${\color{#C5607A}\boldsymbol{3}}$ fois moins que $60$ g pour $1$ personne.<br>$60$ g $\div {\color{#C5607A}\boldsymbol{3}} = 20$ g <br> il faut ${\color{#C5607A}\boldsymbol{20}}$ g de farine pour $1$ personne. <br> Cherchons maintenant la quantité nécessaire pour 5 personnes. <br> $5$ personnes, c'est ${\color{#C5607A}\boldsymbol{5}}$ fois $1$ personne. <br>Donc, il faut ${\color{#C5607A}\boldsymbol{5}}$ fois plus que 20 g de farine que pour $1$ personne pour faire sa recette.<br> ${\color{#C5607A}\boldsymbol{20}}$ g $\times {\color{#C5607A}\boldsymbol{5}} = 100$ g <br>
- Tania doit utiliser ${\color{#8B3C52}\boldsymbol{100}}$ g de farine pour $5$ personnes.
+<span class="rep">Sphère</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Donner le nom de chacun des solides.<br><br><br><img src="3autog07_1_17.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Donner la formule de l'aire d'un carré de côté $c$.
 ---CORR---
-Sphère.
+Aire d'un carré $= {\color{#EB7F73}\boldsymbol{c \times c}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-$NOP$ est un triangle rectangle en $N$ dans lequel
-      $NO=3$ et $NP=\sqrt{10}$.<br>
-       Calculer la valeur exacte de $OP$ .
+Exprimer le quotient de $t$ par 5 en fonction de $t$.
 ---CORR---
-On utilise le théorème de Pythagore dans le triangle $NOP$,  rectangle en $N$.<br>
-On obtient :<br>
-$\begin{aligned}
-OP^2&=NO^2+NP^2\\
-OP^2&=\sqrt{10}^2+3^2\\
-OP^2&=10+9\\
-OP^2&=19\\
-OP&={\color{#8B3C52}\boldsymbol{\sqrt{19}}}
-\end{aligned}$
+Le quotient de $t$ par 5 peut se noter : ${\color{#EB7F73}\boldsymbol{\dfrac{t}{5}}}$ ou ${\color{#EB7F73}\boldsymbol{t\div 5}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Les droites roses sont-elles parallèles ?
+<br>
+<img src="3auto_s64_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$180°-{\color{#C5607A}\boldsymbol{112°}} = {\color{#C5607A}\boldsymbol{68°}}$<br>Les angles rouge et vert sont correspondants mais pas de même mesure.<br>Donc les droites rouges <span class="rep">ne sont pas parallèles</span>.
 
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 65" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}11
 ---Q---
-Quel est le carré de $13$ ?
----CORR---
-Le carré d'un nombre est ce nombre multiplié par lui-même : $13\times13=169$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Sur le graphique ci-dessus, on a représenté la relation entre la longueur $AD$ et l'aire du rectangle $ADEF$.<br>Quelle est la longueur $AD$ lorsque l'aire du rectangle $ADEF$ vaut $10\text{ cm}^2$ ?<br><img src="3autop09_3_02.svg" alt="3autop09_3" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-On cherche $AD$ tel que $Aire_{ADEF} = 10\text{ cm}^2$.<br>
+Sur $160$ visiteurs dans un musée, on distingue trois groupes :<br>- adultes : $100$ visiteurs ;<br>- enfants : $40$ visiteurs ;<br>- seniors : les autres.<br>Quel diagramme circulaire représente la situation ?
 
-On trouve $AD=0{,}9\text{ cm}$.<br><img src="3autop09_3_corr_03.svg" alt="3autop09_3_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Compléter.<br>$ 600\,\text{ dam}^3 = \ldots \,\text{m}^3$
+<div style="display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-end;margin-top:0.8rem;">
+<div style="text-align:center;"><strong>A.</strong><br><img src="3auto_s65_q1.svg" alt="option A" style="max-width:120px"></div>
+<div style="text-align:center;"><strong>B.</strong><br><img src="3auto_s65_q2.svg" alt="option B" style="max-width:120px"></div>
+<div style="text-align:center;"><strong>C.</strong><br><img src="3auto_s65_q3.svg" alt="option C" style="max-width:120px"></div>
+<div style="text-align:center;"><strong>D.</strong><br><img src="3auto_s65_q4.svg" alt="option D" style="max-width:120px"></div>
+</div>
 ---CORR---
-$ 600\,\text{ dam}^3 =  600\times1000\,\text{m}^3 = 600\,000\,\text{m}^3$<br>
-
-$$\def\arraystretch{1.5}
-\begin{array}{|c|c|c|c|c|c|c|}
-\hline
-\text{km}^3 & \text{hm}^3 & \text{dam}^3 & \text{m}^3 & \text{dm}^3 & \text{cm}^3 & \text{mm}^3 \\
-\hline
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-6 & \hspace*{0.1cm}0\hspace*{0.1cm} & \color{red}{0} \\
-6 & \hspace*{0.1cm}0\hspace*{0.1cm} & 0
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-0 & \hspace*{0.1cm}0\hspace*{0.1cm} & \color{red}{0}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-\\
-\hline
-\end{array}
-$$
+Effectifs : adultes $= 100$, enfants $= 40$, seniors $= 160-100-40 = 20$.<br>Parts : $\dfrac{100}{160}=\dfrac{5}{8}$ → $225°$ ; $\dfrac{40}{160}=\dfrac{1}{4}$ → $90°$ ; $\dfrac{20}{160}=\dfrac{1}{8}$ → $45°$.<br>Le bon diagramme est le seul avec un angle rentrant ($225°$), un angle droit ($90°$) et un angle aigu ($45°$).<br>La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 2" >}}22
 ---Q---
+Isabelle doit acheter du gazon.<br>Sur la notice, il est indiqué de prévoir $3~\text{kg}$ pour $40~\text{m}^2$.<br>Combien doit-elle en acheter pour une surface de $20~\text{m}^2$ ?
+---CORR---
+Pour $1~\text{m}^2$ : $3~\text{kg}\div 40 = 0{,}075~\text{kg}$.<br>Pour $20~\text{m}^2$ : $0{,}075~\text{kg}\times 20 = {\color{#EB7F73}\boldsymbol{1{,}5}}~\text{kg}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}33
+---Q---
+Calculer l'aire exacte d'un disque de diamètre $10~\text{cm}$.
+---CORR---
+Rayon $= 5~\text{cm}$.<br>$\mathcal{A}_\text{disque} = r \times r \times \pi = 5~\text{cm} \times 5~\text{cm} \times \pi = {\color{#EB7F73}\boldsymbol{25\pi}}~\text{cm}^2$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}44
+---Q---
+Réduire l'expression suivante, si cela est possible.<br>$A=-5x\times (-10)$
+---CORR---
+$A=-5x\times (-10)={\color{#EB7F73}\boldsymbol{50x}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}55
+---Q---
+Qu'est-ce qui caractérise les angles rose et violet ?
 <br>
-Sur la figure ci-dessus, dans le triangle $PIK$, les droites $(IK)$ et $(TY)$ sont parallèles. Déterminer la longueur $PI$.<br><img src="3autog12_04.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="3auto_s65_q5.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans le triangle $PIK$, les droites $(IK)$ et $(TY)$ sont parallèles. <br>
-    D'après le théorème de Thalès, on a : <br>
-    $\dfrac{PI}{PY} =
-    \dfrac{IK}{TY}$. <br>
-    En remplaçant par les longueurs, on obtient : <br>
-    $\dfrac{PI}{PY} = \dfrac{18}{12}=1{,}5$.<br>
-    On en déduit que : <br>
-    $PI = 1{,}5 \times 36 = {\color{#8B3C52}\boldsymbol{54}}$ cm.
+Ce sont des angles <span class="rep">opposés par le sommet</span>.
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 66" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Écrire sous la forme de la somme d'un nombre entier et d'une fraction inférieure à 1 puis donner l'écriture décimale.<br>$ \dfrac{5}{4} = \phantom{00}\text{........}\phantom{00} + \dfrac{\phantom{00}\text{........}\phantom{00}}{\phantom{00}\text{........}\phantom{00}} = \phantom{00}\text{........}\phantom{00}  $
+Zacharie prépare un cocktail à base de sirop de fraise, de jus d'abricot et d'eau gazeuse pour ses amis. Il mélange les trois ingrédients dans le ratio $2:7:10$.<br>Il verse $40~\text{cL}$ de sirop de fraise. Quelle quantité de jus d'abricot et d'eau gazeuse doit-il ajouter et quelle quantité de cocktail obtiendra-t-il ?
 ---CORR---
-$ \dfrac{5}{4} = {\color{#8B3C52}\boldsymbol{1}}+\dfrac{{\color{#8B3C52}\boldsymbol{1}}}{{\color{#8B3C52}\boldsymbol{4}}} = {\color{#8B3C52}\boldsymbol{1,25}} $
+$\dfrac{40~\text{cL}}{2}=20$, donc :<br>Volume de jus d'abricot : $20\times 7 = {\color{#EB7F73}\boldsymbol{140~\text{cL}}}$.<br>Volume d'eau gazeuse : $20\times 10 = {\color{#EB7F73}\boldsymbol{200~\text{cL}}}$.<br>Volume total de cocktail : $40+140+200 = {\color{#EB7F73}\boldsymbol{380~\text{cL}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Développer et réduire : $C=(-7z+8)\times (-11z)$
----CORR---
-$C=(-7z+8)\times (-11z)$<br>$C={\color{blue}\boldsymbol{-11z\times (-7z)+(-11z)\times 8}}$<br>En réduisant l'expression, on obtient : <br> $C=$ ${\color{#8B3C52}\boldsymbol{77z^2-88z}}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Déterminer les coordonnées respectives des points $L$, $K$ et $M$<br><br><img src="3autog01_2_05.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Les coordonnées respectives des points sont :<br> $L({\color{#8B3C52}\boldsymbol{-3}};{\color{#8B3C52}\boldsymbol{0}})$, $K({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{1{,}25}})$ et $M({\color{#8B3C52}\boldsymbol{1{,}5}};{\color{#8B3C52}\boldsymbol{-3{,}75}})$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Dans le triangle $EFG$ rectangle en $E$,<br> $FG=13\text{ m}$ et $\widehat{EFG}=43^\circ$.<br>Calculer $EF$ à $0,1\text{ m}$ près.<br><br><br><img src="3autog13_1_06.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Dans le triangle $EFG$ rectangle en $E$,<br> le cosinus de l'angle $\widehat{EFG}$ est défini par :<br>$\cos\left(\widehat{EFG}\right)=\dfrac{EF}{FG}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(43^\circ\right)}{\color{red}{1}}=\dfrac{EF}{13}$<br><br>$EF=13 \times \cos\left(43^\circ\right)$<br>soit $EF\approx{\color{#8B3C52}\boldsymbol{9{,}5}}\text{ m}$.
-{{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Donner le nom de ce solide.
+<br>
+<img src="3auto_s66_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+<span class="rep">Cube</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+$1~\text{m}^2 = 1~\text{m} \times 1~\ldots = 10~\ldots \times 10~\text{dm} = 10 \times \ldots~\text{dm}^2 = \ldots~\text{dm}^2$
+---CORR---
+$1~\text{m}^2 = 1~\text{m} \times 1~{\color{#EB7F73}\boldsymbol{\text{m}}} = 10~{\color{#EB7F73}\boldsymbol{\text{dm}}} \times 10~\text{dm} = 10 \times {\color{#EB7F73}\boldsymbol{10}}~\text{dm}^2 = {\color{#EB7F73}\boldsymbol{100}}~\text{dm}^2$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Résoudre : $-12y+3=-10y-4$
+---CORR---
+$-12y+3=-10y-4$<br>On ajoute $10y$ : $-2y+3=-4$<br>On soustrait $3$ : $-2y=-7$<br>On divise par $-2$ : $y=\dfrac{7}{2}$<br>La solution de l'équation $-12y+3=-10y-4$ est ${\color{#EB7F73}\boldsymbol{\dfrac{7}{2}}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Dans le triangle $GHI$ rectangle en $G$, $HI=10~\text{m}$ et $\widehat{GHI}=44^\circ$.<br>Calculer $GH$ à $0{,}1~\text{m}$ près.
+<br>
+<img src="3auto_s66_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$\cos\left(\widehat{GHI}\right)=\dfrac{GH}{HI}$<br>$\cos\left(44^\circ\right)=\dfrac{GH}{10}$<br>$GH=10 \times \cos\left(44^\circ\right)\approx{\color{#EB7F73}\boldsymbol{7{,}2}}~\text{m}$.
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}

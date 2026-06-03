@@ -15,8 +15,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.67247e69a0937874bf87dbddada61bd1cf9edf5a01c607c4b03e2521dc108efa.css" integrity="sha256-ZyR&#43;aaCTeHS/h9vdraYb0c&#43;e31oBxgfEsD4lIdwQjvo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css" integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -156,6 +156,10 @@ pre[style*="background-color"] {
 
 
 
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.153e96b511640751b91ce2c5aea086df94cdf5cbba0cdccd1538608bec0f9cbb.css" integrity="sha256-FT6WtRFkB1G5HOLFrqCG35TN9cu6DNzNFThgi&#43;wPnLs=" crossorigin="anonymous">
+
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -171,7 +175,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>7</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>7</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <div class="wk-meta">
     <span><span class="dot"></span>3 séances</span>
     <span><span class="dot"></span>12 exercices</span>
@@ -208,17 +218,18 @@ pre[style*="background-color"] {
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Donner l'écriture scientifique de $2\,300$
+Quel est le carré de $12$ ?
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$2\,300 = {\color{#8B3C52}\boldsymbol{2{,}3\times 10^{3}}}$
+Le carré d'un nombre est ce nombre multiplié par lui-même : $12\times12={\color{#EB7F73}\boldsymbol{144}}$
 </div>
   
 </article>
+
 
 
 
@@ -241,19 +252,18 @@ $2\,300 = {\color{#8B3C52}\boldsymbol{2{,}3\times 10^{3}}}$
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Béatrice a repéré, à l'épicerie, des melons qui l'intéressent.<br>
-  Elle lit que $6$ melons coûtent $12{,}60$ €. Elle veut en acheter $13$.<br>
-  Combien va-t-elle dépenser ?
+On tire une boule au hasard dans une urne contenant $5$ boules noires et $13$ boules blanches.<br>Quelle est la probabilité d'obtenir une boule blanche ?<br>On donnera le résultat sous forme d'une fraction irréductible.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Commençons par trouver le prix d'un seul melon. <br>Si $6$ melons coûtent $12{,}60$ €, alors un seul melon coûte ${\color{#C5607A}\boldsymbol{6}}$ fois moins cher.<br>$12{,}60$ € $ \div {\color{#C5607A}\boldsymbol{6}} = 2{,}10 $ € <br>un seul melon coûte ${\color{#C5607A}\boldsymbol{2{,}10}}$ €.<br>Cherchons maintenant le prix de $13$ melons. <br>$13$ melons, c'est ${\color{#C5607A}\boldsymbol{13}}$ fois plus qu'un seul melon. <br>$13$ melons coûtent donc ${\color{#C5607A}\boldsymbol{13}}$ fois plus que ${\color{blue}\boldsymbol{2{,}10}}$ €, le prix d'un seul melon.<br> ${\color{#C5607A}\boldsymbol{2{,}10}}$ € $\times {\color{#C5607A}\boldsymbol{13}} = 27{,}30$ €<br>  $13$ melons coûtent ${\color{#8B3C52}\boldsymbol{27{,}30}}$ €.
+Dans une situation d'équiprobabilité, on calcule la probabilité d'un événement par le quotient : $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issues}}$.<br>La probabilité est donc donnée par : $\dfrac{\text{Nombre de boules blanches}}{\text{Nombre total de boules}} = {\color{#EB7F73}\boldsymbol{\dfrac{13}{18}}}$
 </div>
   
 </article>
+
 
 
 
@@ -276,17 +286,18 @@ Commençons par trouver le prix d'un seul melon. <br>Si $6$ melons coûtent $12{
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Calculer le volume d'une pyramide de hauteur $6\text{ m}$ et dont la base est un triangle. La base du triangle mesure $3\text{ m}$ et la hauteur associée à cette base mesure $2\text{ m}$.
+$c$ étant un nombre entier, exprimer l'entier précédent en fonction de $c$.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{3\text{ m} \times 2\text{ m}}{2}\times6\text{ m}=\dfrac{3 \times 2 \times 6}{6}\text{ m}^3={\color{#8B3C52}\boldsymbol{6\mathbf{ m}^3}}$
+Le prédécesseur de $c$ peut se noter : ${\color{#EB7F73}\boldsymbol{c-1}}$ ou ${\color{#EB7F73}\boldsymbol{c+(-1)}}$.
 </div>
   
 </article>
+
 
 
 
@@ -309,35 +320,56 @@ $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{3
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-On a réalisé $1000$ lancers d’un dé à $4$ faces.  
-    Les résultats sont inscrits dans le tableau ci‑dessous.
-
-    
-
-$$
-    \def\arraystretch{1.5}
-    \begin{array}{|c|c|c|c|c|}
-    \hline
-    \text{Scores} & 1 & 2 & 3 & 4 \\
-    \hline
-    \text{Nombre d'apparitions} & 238 & 245 & 261 & 256 \\
-    \hline
-    \end{array}
-    $$
-
-    Calculer la fréquence de la valeur $4$.
+Donner l'égalité de Pythagore.
+<br>
+<img src="3auto_s19_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-La valeur $4$ apparaît $256$ fois.<br>
-    Le nombre total de lancers est $1\,000$.<br>
-    La fréquence de la valeur $4$ est ${\color{#8B3C52}\boldsymbol{\dfrac{256}{1\,000}}}={\color{#8B3C52}\boldsymbol{0{,}256}}$, soit $25{,}6\thickspace\%$.
+Le triangle $VWX$ est rectangle en $V$.<br>D'après le théorème de Pythagore, on a :<br>${\color{#EB7F73}\boldsymbol{WX^2=VW^2+VX^2}}$
 </div>
   
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Donner le numéro du symétrique des points $51$, $5$ et $92$ par rapport à la droite $(d_1)$.
+<br>
+<img src="3auto_s19_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+</div>
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
+a. Le symétrique du point $51$ par rapport à $(d_1)$ est le point ${\color{#EB7F73}\boldsymbol{15}}$.<br>b. Le symétrique du point $5$ par rapport à $(d_1)$ est le point ${\color{#EB7F73}\boldsymbol{50}}$.<br>c. Le symétrique du point $92$ par rapport à $(d_1)$ est le point ${\color{#EB7F73}\boldsymbol{29}}$.
+</div>
+  
+</article>
+
 
 
 </section>
@@ -367,17 +399,18 @@ La valeur $4$ apparaît $256$ fois.<br>
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Quel est le carré de $14$ ?
+Calculer $A = (x + 12)(x + 14)$, pour $x = -12$.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Le carré d'un nombre est ce nombre multiplié par lui-même : $14\times14=196$
+$A = (-12 + 12) \times (-12 + 14)$<br>$A = 0 \times 2$<br>$A = {\color{#EB7F73}\boldsymbol{0}}$
 </div>
   
 </article>
+
 
 
 
@@ -400,17 +433,18 @@ Le carré d'un nombre est ce nombre multiplié par lui-même : $14\times14=196$
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Sur le graphique ci-dessus, on a représenté la hauteur de la valve d'une roue de vélo en fonction de la distance parcourue en $\text{cm}$ lors d'un tour complet.<br>Quelle est la hauteur de la valve lorsque la distance parcourue est de $155\text{ cm}$ ?<br><img src="3autop09_4_01.svg" alt="3autop09_4" style="display:block;margin:0.8rem auto;max-width:100%">
+Dans l'égalité « $9 \times 2 = 18$ », comment s'appelle le nombre $18$ ?
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-La hauteur de la valve lorsque la distance parcourue est de $155\text{ cm}$ est de $89\text{ cm}$.<br><img src="3autop09_4_corr_02.svg" alt="3autop09_4_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Dans l'égalité « $9 \times 2 = 18$ », $18$ s'appelle le <span class="rep">produit</span> de $9$ et $2$.
 </div>
   
 </article>
+
 
 
 
@@ -433,59 +467,18 @@ La hauteur de la valve lorsque la distance parcourue est de $155\text{ cm}$ est 
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Compléter.<br>$ 70\,\text{ dam}^3 = \ldots \,\text{m}^3$
+Calculer de tête $\sqrt{1}$.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$ 70\,\text{ dam}^3 =  70\times1000\,\text{m}^3 = 70\,000\,\text{m}^3$<br>
-$$\def\arraystretch{1.5}
-\begin{array}{|c|c|c|c|c|c|c|}
-\hline
-\text{km}^3 & \text{hm}^3 & \text{dam}^3 & \text{m}^3 & \text{dm}^3 & \text{cm}^3 & \text{mm}^3 \\
-\hline
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.1cm}7\hspace*{0.1cm} & \color{red}{0} \\
-\hspace*{0.2cm} & \hspace*{0.1cm}7\hspace*{0.1cm} & 0
-\end{array}
-&
-\begin{array}{c|c|c}
- &  & \\
-0 & \hspace*{0.1cm}0\hspace*{0.1cm} & \color{red}{0} 
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-&
-\begin{array}{c|c|c}
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm} \\
-\hspace*{0.2cm} & \hspace*{0.4cm} & \hspace*{0.2cm}
-\end{array}
-\\
-\hline
-\end{array}$$
+$\sqrt{1}={\color{#EB7F73}\boldsymbol{1}}$
 </div>
   
 </article>
+
 
 
 
@@ -508,25 +501,69 @@ $$\def\arraystretch{1.5}
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-On donne la série statistique suivante : 
-    $20$ ; $16$ ; $10$ ; $4$ ; $19$.<br>
-    Parmi ces propositions, laquelle peut être la médiane de la série ?
-
-     
-    <br> <strong>A</strong>. $10$&emsp;&emsp; <strong>B</strong>. $11$&emsp;&emsp; <strong>C</strong>. $19$&emsp;&emsp; <strong>D</strong>. $16$
+$YJIK$ est un parallélogramme tel que ses diagonales $[YI]$ et $[JK]$ ont la même longueur et sont perpendiculaires.<br>Déterminer la nature de $YJIK$ en justifiant la réponse.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-La série triée dans l'ordre croissant est : $4$ ; $10$ ; $16$ ; $19$ ; $20$.<br>
-    La série comporte $5$ valeurs, qui est un nombre impair, donc la médiane est le terme de rang $3$.<br>
-    La médiane est donc $16$.<br>
-    La bonne réponse est la réponse <span class="rep">D</span>.
+On sait que $[YI]\perp[JK]$ et $YI=JK$.<br>Si un parallélogramme a des diagonales perpendiculaires et de même longueur, alors c'est un carré.<br>$YJIK$ est donc un <span class="rep">carré</span>.
 </div>
   
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+On choisit au hasard un plat dans la vitrine d'un fast-food.
+<br>
+a. Compléter le tableau des effectifs suivants :
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">&nbsp;</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Pizzas</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Tourtes</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Végétariennes</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$5$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$12$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Carnées</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$9$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$13$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td></tr>
+</table>
+<br>
+b. Quelle est la probabilité que le plat choisi soit une pizza végétarienne ou une tourte végétarienne ?<br>c. Quelle est la probabilité que le plat choisi soit une tourte ?<br>d. On sait que le plat choisi est une pizza. Quelle est la probabilité que ce soit une pizza végétarienne ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
+a. Voici le tableau des effectifs :
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">&nbsp;</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Pizzas</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Tourtes</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Végétariennes</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$5$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{7}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$12$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Carnées</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$9$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{6}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{15}}$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{14}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$13$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{27}}$</td></tr>
+</table>
+b. Il y a $12$ plats végétariens et $27$ plats donc la probabilité que le plat choisi soit une pizza végétarienne ou une tourte végétarienne est de : ${\color{#EB7F73}\boldsymbol{\dfrac{12}{27}}}$.<br>c. Il y a $13$ tourtes et $27$ plats donc la probabilité que le plat choisi soit une tourte est de : ${\color{#EB7F73}\boldsymbol{\dfrac{13}{27}}}$.<br>d. Il y a $5$ pizzas végétariennes et $14$ pizzas donc la probabilité que le plat choisi soit une pizza végétarienne est de : ${\color{#EB7F73}\boldsymbol{\dfrac{5}{14}}}$.
+</div>
+  
+</article>
+
 
 
 </section>
@@ -556,20 +593,18 @@ La série triée dans l'ordre croissant est : $4$ ; $10$ ; $16$ ; $19$ ; $20$.<b
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Calculer $\dfrac{1}{2} \text{ de } 140 \text{ L}$.
+Développer et réduire : $A=(7c-5)\times (-8)$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$\dfrac{1}{2}$ de $140$ L = ${\color{#8B3C52}\boldsymbol{70}}$ L<br>
-    <br> Mentalement : <br>
-    Prendre $\dfrac{1}{2}$ d'une quantité revient à la diviser par $2$.<br>
-    Ainsi, $\dfrac{1}{2}$ de $140=140\div 2=70$.
+$A=(7c-5)\times (-8)$<br>$A={\color{#C5607A}\boldsymbol{-8\times 7c+(-8)\times (-5)}}$<br>En réduisant l'expression, on obtient :<br>$A= {\color{#EB7F73}\boldsymbol{-56c+40}}$
 </div>
   
 </article>
+
 
 
 
@@ -592,17 +627,18 @@ $\dfrac{1}{2}$ de $140$ L = ${\color{#8B3C52}\boldsymbol{70}}$ L<br>
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Factoriser :  $A=-3b+9c$
+Comparer : $\dfrac{4}{32}\quad\quad\ldots\quad\quad\dfrac{1}{4}$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$A=-3b+9c$<br>$\phantom{A}=-3b+3\times3c$<br>$\phantom{A}=$ ${\color{#8B3C52}\boldsymbol{3(-b+3c)}}$
+$\dfrac{1}{4}= \dfrac{1{\color{#C5607A}\boldsymbol{\times 8}}}{4{\color{#C5607A}\boldsymbol{\times 8}}}=\dfrac{8}{32}\quad$ et $\quad\dfrac{4}{32} < \dfrac{8}{32} \quad$ donc $\quad \dfrac{4}{32} {\color{#EB7F73}\boldsymbol{<}} \dfrac{1}{4}$
 </div>
   
 </article>
+
 
 
 
@@ -625,19 +661,18 @@ $A=-3b+9c$<br>$\phantom{A}=-3b+3\times3c$<br>$\phantom{A}=$ ${\color{#8B3C52}\bo
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Placer les points suivants : $A(0\;;\;-2)$ ; $B(-3\;;\;0)$ ; $C(6\;;\;2)$ et $D(4\;;\;-3)$.
-
-    <br><br><img src="3autog01_1_03.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
+$3{,}1~\text{h} =$ ..... h ..... min
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_04.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+$3{,}1~\text{h} = 3~\text{h} + 0{,}1 \times 60~\text{min} = {\color{#EB7F73}\boldsymbol{3}}~\text{h}~{\color{#EB7F73}\boldsymbol{6}}~\text{min}$
 </div>
   
 </article>
+
 
 
 
@@ -660,19 +695,56 @@ Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_co
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Une élève souhaite réaliser un programme pour dessiner un triangle équilatéral.  
-    Par quelles valeurs doit-elle compléter les lignes 3 et 5 ?<br><img src="scratch_3autoi01_05.svg" alt="scratch_3autoi01" style="display:block;margin:0.8rem auto;max-width:100%">
+Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$. Les points $Y$, $H$ et $O$ sont alignés. Les points $P$, $Z$ et $F$ le sont-ils ? Justifier.
+<br>
+<img src="3auto_s21_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Pour obtenir un triangle équilatéral, il faut répéter ${\color{#8B3C52}\mathbf{3}}$ fois  
-    et tourner de $\dfrac{360}{3} = {\color{#8B3C52}\mathbf{120}}$ degrés.
+Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$ et sont alignés.<br>Or, la symétrie axiale conserve l'alignement.<br>Donc les points ${\color{#EB7F73}\boldsymbol{P}}$, ${\color{#EB7F73}\boldsymbol{Z}}$ et ${\color{#EB7F73}\boldsymbol{F}}$ sont <span class="rep">alignés</span> également.
 </div>
   
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Construire le cercle circonscrit au triangle suivant.
+<br>
+<img src="3auto_s21_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+</div>
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
+Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
+</div>
+  
+</article>
+
 
 
 </section>
@@ -778,6 +850,9 @@ Pour obtenir un triangle équilatéral, il faut répéter ${\color{#8B3C52}\math
 })();
 </script>
 
+
+<script src="/mabemat/js/projection.js"></script>
+
     </div>
   
   
@@ -806,7 +881,7 @@ Pour obtenir un triangle équilatéral, il faut répéter ${\color{#8B3C52}\math
   </script>
   <script>
      
-    const BUILD_TS = '1779959288';
+    const BUILD_TS = '1780468720';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

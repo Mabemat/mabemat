@@ -4,6 +4,10 @@
 {{ $n := .Params.auto_number | default 0 }}
 {{ $autoIdx := site.GetPage (printf "%s/automatismes" .Section) }}
 
+{{/* ── Mode projection : feuille de style (focus, thème clair) ── */}}
+{{ $proj := resources.Get "css/projection.css" | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $proj.RelPermalink }}" integrity="{{ $proj.Data.Integrity }}" crossorigin="anonymous">
+
 <div class="crumbs fade-up">
   <a href="{{ .Site.BaseURL }}">Accueil</a>
   <span class="sep">/</span>
@@ -19,7 +23,13 @@
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>{{ $n }}</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>{{ $n }}</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <div class="wk-meta">
     <span><span class="dot"></span>3 séances</span>
     <span><span class="dot"></span>12 exercices</span>
@@ -133,4 +143,7 @@
   });
 })();
 </script>
+
+{{/* ── Mode projection : logique (vanilla JS) ── */}}
+<script src="{{ "js/projection.js" | relURL }}"></script>
 {{ end }}

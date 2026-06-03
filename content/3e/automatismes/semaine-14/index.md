@@ -8,118 +8,126 @@ weight: 14
 
 {{< auto3-seance titre="Séance 40" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Calculer le carré de $13$
+Calculer $A=\dfrac{4}{4-\dfrac{3}{7}}$.
 ---CORR---
-$13^2={\color{#8B3C52}\boldsymbol{169}}$
+$A = \dfrac{4}{4-\dfrac{3}{7}} = \dfrac{4}{\dfrac{28}{7}-\dfrac{3}{7}} = \dfrac{4}{\dfrac{25}{7}} = 4 \times \dfrac{7}{25} = {\color{#EB7F73}\boldsymbol{\dfrac{28}{25}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Sur le graphique ci-dessus, on a représenté la relation entre la longueur $AD$ et l'aire du rectangle $ADEF$.<br>Quelle est l'aire du rectangle $ADEF$ lorsque la longueur $AD$ vaut $2\text{ cm}$ ?<br><img src="3autop09_3_01.svg" alt="3autop09_3" style="display:block;margin:0.8rem auto;max-width:100%">
+Comparer : $-9{,}346 \quad \ldots\ldots \quad -9{,}71$
 ---CORR---
-On cherche $Aire_{ADEF}$ lorsque $AD = 2\text{ cm}$.<br>On trouve $Aire_{ADEF}={\color{#8B3C52}\boldsymbol{24}}\text{ cm}^2$.<br><img src="3autop09_3_corr_02.svg" alt="3autop09_3_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+$-9{,}346 \quad {\color{#EB7F73}\boldsymbol{>}} \quad -9{,}71$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Convertir $136$ secondes en minutes ($\text{min}$) et secondes ($\text{s}$).
+$97\,235$ est-il divisible par $3$ ?
 ---CORR---
-Mentalement : <br>
-      On cherche le multiple de $60$ inférieur à $136$ le plus grand possible. C'est $2\times 60 = 120$.<br>
-      Ainsi $136 = 120 + 16$ donc $136\text{\,s\,}= 2\text{\,min\,}16\text{\,s}$.<br>$136 = (2 \times 60) + 16$ donc $136$ s = ${\color{#8B3C52}\boldsymbol{2\mathbf{\,min\,}16\mathbf{\,s}}}$.
+$9+7+2+3+5=26=3\times 8+2$<br>La somme des chiffres de $97\,235$ n'est pas divisible par $3$ donc $97\,235$ <span class="rep">n'est pas divisible par $3$</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-$KLM$ est un triangle rectangle en $K$ dans lequel
-      $KL=3$ et $KM=\sqrt{3}$.<br>
-       Calculer la valeur exacte de $LM$ .
+Quel est le périmètre de cette figure ?
+<br>
+<img src="3auto_s40_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-On utilise le théorème de Pythagore dans le triangle $KLM$,  rectangle en $K$.<br>
-On obtient :<br>
-$\begin{aligned}
-LM^2&=KL^2+KM^2\\
-LM^2&=\sqrt{3}^2+3^2\\
-LM^2&=3+9\\
-LM^2&=12\\
-LM&={\color{#8B3C52}\boldsymbol{\sqrt{12}}}
-\end{aligned}$<br>
+Le périmètre est donné par : $2+4+5{,}4+1{,}6={\color{#EB7F73}\boldsymbol{13}}~\text{m}$.
 
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure suivante : $U$ est sur $[TR]$, $V$ est sur $[TS]$, les droites $(RS)$ et $(UV)$ sont parallèles.<br>Écrire la double égalité de Thalès.
+<br>
+<img src="3auto_s40_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Dans le triangle $RST$ : $U\in[TR]$, $V\in[TS]$, $(RS)//(UV)$, donc d'après le théorème de Thalès :<br>$\dfrac{TU}{TR}=\dfrac{TV}{TS}=\dfrac{UV}{RS}$<br>Remarque : On pourrait aussi écrire : $\dfrac{TR}{TU}=\dfrac{TS}{TV}=\dfrac{RS}{UV}$
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 41" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Simplifier le plus possible la fraction suivante  $\dfrac{4}{70}$
+Combien valent les quatre cinquièmes de $35$ ?
 ---CORR---
-$\dfrac{4}{70}=\dfrac{\cancel{2}\times2}{\cancel{2}\times5\times7}={\color{#8B3C52}\boldsymbol{\dfrac{2}{35}}}$
+Un cinquième de $35$ est égal à $35 \div 5$, soit $7$.<br>Donc les quatre cinquièmes de $35$ valent $4 \times 7 = {\color{#EB7F73}\boldsymbol{28}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Développer et réduire : $B=-7c(2c-4)$
----CORR---
-$B=-7c(2c-4)$<br>$B={\color{blue}\boldsymbol{-7c\times 2c + (-7c)\times (-4)}}$<br>En réduisant l'expression, on obtient : <br> $B=$ ${\color{#8B3C52}\boldsymbol{-14c^2+28c}}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Placer les points suivants : $A(-6\;;\;-4)$ ; $B(5\;;\;-5)$ ; $C(1\;;\;0)$ et $D(0\;;\;6)$.
 
-    <br><br><img src="3autog01_1_03.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_04.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-<br>
-Sur la figure ci-dessus, dans le triangle $BVW$, les droites $(VW)$ et $(YF)$ sont parallèles. Déterminer la longueur $BV$.<br><img src="3autog12_05.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
+Donner la notation scientifique de : $57\,000 = \dots$
 ---CORR---
-Dans le triangle $BVW$, les droites $(VW)$ et $(YF)$ sont parallèles. <br>
-    D'après le théorème de Thalès, on a : <br>
-    $\dfrac{BV}{BF} =
-    \dfrac{VW}{YF}$. <br>
-    En remplaçant par les longueurs, on obtient : <br>
-    $\dfrac{BV}{BF} = \dfrac{6}{4}=1{,}5$.<br>
-    On en déduit que : <br>
-    $BV = 1{,}5 \times 8 = {\color{#8B3C52}\boldsymbol{12}}$ cm.
+$57\,000 = {\color{#EB7F73}\boldsymbol{5{,}7\times 10^{4}}}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Dans une école, $30\%$ des $1\,200$ étudiants participent à une collecte de fonds.<br>Combien d'étudiants ne participent pas à cette collecte ?
+---CORR---
+Le nombre d'étudiants participant à cette collecte est égal à : $1\,200 \times \dfrac{30}{100} = 360$.<br>Le nombre d'étudiants ne participant pas est donc égal à : $1\,200 - 360 = {\color{#EB7F73}\boldsymbol{840}}$.<br>Autre méthode : $100\%-30\%=70\%$, donc $1\,200 \times \dfrac{70}{100} = {\color{#EB7F73}\boldsymbol{840}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Quelle est la nature d'un quadrilatère ayant ses diagonales perpendiculaires et sécantes en leur milieu ?
+---CORR---
+C'est un <span class="rep">losange</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure, les droites $(WM)$ et $(IX)$ sont parallèles.<br>Écrire une égalité de rapports permettant de déterminer la longueur $WB$.
+<br>
+<img src="3auto_s41_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Pour déterminer la longueur $WB$, on utilise le théorème de Thalès car les droites $(WM)$ et $(IX)$ sont parallèles.<br>On écrit l'égalité des rapports :<br>$\dfrac{{\color{#EB7F73}\boldsymbol{WB}}}{{\color{#EB7F73}\boldsymbol{IB}}}= \dfrac{{\color{#EB7F73}\boldsymbol{WM}}}{{\color{#EB7F73}\boldsymbol{IX}}}$ ou encore avec les valeurs numériques : $\dfrac{{\color{#EB7F73}\boldsymbol{WB}}}{{\color{#EB7F73}\boldsymbol{12}}} = \dfrac{{\color{#EB7F73}\boldsymbol{19{,}5}}}{{\color{#EB7F73}\boldsymbol{13}}}$
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 42" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter avec le signe < ou >.<br>$$-1{,}4 \quad \ldots   \quad-1{,}8$$
+Résoudre : $90x^2 +9 = 10x(9x +4)$
 ---CORR---
-$-1{,}4 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -1{,}8$
+$90x^2 +9 = 10x(9x +4)$<br>$90x^2 +9 = 90x^2 +40x$<br>$9 = 40x$<br>$x = \dfrac{9}{40}$<br>La solution de l'équation est : ${\color{#EB7F73}\boldsymbol{\dfrac{9}{40}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Choisis le calcul qui permet de résoudre l'équation suivante : <br>
-Pour résoudre $8x+1=23$ :<br>
 
-    <br> <strong>A</strong>. $23\times 8-1$&emsp;&emsp; 
-    <strong>B</strong>. $(23-8)-1$&emsp;&emsp; 
-    <strong>C</strong>. $\dfrac{23}{8}-1$&emsp;&emsp; 
-    <strong>D</strong>. $\dfrac{23-1}{8}$
----CORR---
-$8x+1=23$  <br>
-    On enlève $1$ : $8x=23-1$. <br> 
-    Puis on divise par $8$ : $x=\dfrac{23-1}{8}$.  <br>
-    Bonne réponse : <strong>D</strong>.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-$SRTW$ est un carré et $WTV$ est un triangle équilatéral ($V$ est à l'intérieur du carré $SRTW$).<br> $RTU$ est un triangle isocèle en $U$ ($U$ est à l'extérieur du carré $SRTW$).<br>Représenter cette configuration par un schéma à main levée et ajouter les codages nécessaires.
+Calculer : $-4 + (-6)$
 ---CORR---
-Voilà ci-dessous un schéma qui pourrait convenir à la situation.<br><img src="figure.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
+$-4 + (-6) = {\color{#EB7F73}\boldsymbol{-10}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Dans le triangle $MLJ$, rectangle en $L$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{LMJ}$ ?<br><img src="3autog13_06.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
+$42\,010$ est-il divisible par $5$ ?
 ---CORR---
-La bonne formule est : <br>
-    $\text{cosinus}(\widehat{LMJ}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{LMJ}}{\text{longueur de l’hypoténuse }}=\dfrac{ML}{MJ}$.
+Le chiffre des unités de $42\,010$ est $0$ donc $42\,010$ <span class="rep">est divisible par $5$</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous (côté $= 3{,}5~\text{cm}$).
+<br>
+<img src="3auto_s42_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Le polygone a $8$ côtés de longueur $3{,}5~\text{cm}$.<br>Le périmètre est donc égal à : $8 \times 3{,}5 = {\color{#EB7F73}\boldsymbol{28}}~\text{cm}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>L'angle $\widehat{xOy}$ mesure $25^\circ$ et l'angle $\widehat{yOz}$ mesure $265^\circ$.<br>Que sont-ils l'un pour l'autre ?<br><br>A. complémentaires &emsp; B. supplémentaires &emsp; C. ni l'un, ni l'autre
+---CORR---
+$\widehat{xOy}+\widehat{yOz}=25^\circ+265^\circ=290^\circ$.<br>Les deux angles ne sont ni complémentaires ni supplémentaires car leurs côtés non communs ne forment ni un angle droit, ni un angle plat. Réponse <span class="rep">C</span>.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

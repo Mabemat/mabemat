@@ -8,181 +8,139 @@ weight: 21
 
 {{< auto3-seance titre="Séance 61" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Dans chaque colonne de ce tableau, il y a un unique nombre exprimé sous 3 formes différentes.<br>Compléter ce tableau.<br>$$ 
-    \begin{array}{|c|c|c|c|c|c|c|}
-    \hline
-      \text{Nombre décimal} & 0{,}5 & \phantom{rrr} & \phantom{rrr} & \phantom{rrr} & 0{,}72 & \phantom{rrr}\\
-    \hline
-      \text{Fraction décimale} & \phantom{rrr} & \phantom{rrr} & \dfrac{55}{100} & \dfrac{90}{100} & \phantom{rrr} & \phantom{rrr}\\
-    \hline
-      \text{Pourcentage} & \phantom{rrr}\% & 98\,\% & \phantom{rrr}\% & \phantom{rrr}\% & \phantom{rrr}\% & 30\,\%\\
-    \hline
-    \end{array}
-    $$
----CORR---
-$$ 
-    \begin{array}{|c|c|c|c|c|c|c|}
-    \hline
-      \text{Nombre décimal} &
-    0{,}5 &
-    \color{F15929}{\mathbf{0{,}98}} &
-    \color{F15929}{\mathbf{0{,}55}} &
-    \color{F15929}{\mathbf{0{,}9}} &
-    0{,}72 &
-    \color{F15929}{\mathbf{0{,}3}}\\
-    \hline
-      \text{Fraction décimale} &
-    \color{F15929}{\mathbf{\frac{50}{100}}} &
-    \color{F15929}{\mathbf{\frac{98}{100}}} &
-    \frac{55}{100} &
-    \frac{90}{100} &
-    \color{F15929}{\mathbf{\frac{72}{100}}} &
-    \color{F15929}{\mathbf{\frac{30}{100}}}\\
-    \hline
-      \text{Pourcentage} &
-    \color{F15929}{\mathbf{50}}\,\% &
-    98\,\% &
-    \color{F15929}{\mathbf{55}}\,\% &
-    \color{F15929}{\mathbf{90}}\,\% &
-    \color{F15929}{\mathbf{72}}\,\% &
-    30\,\%\\
-    \hline
-    \end{array}
-    $$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Calculer $A = (x + 13)(x + 9)$, pour $x = -3$.
----CORR---
-$A = (-3 + 13) \times (-3 + 9)$<br>$A = 10 \times 6$<br>$A = {\color{#8B3C52}\boldsymbol{60}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Placer les points suivants : $A(4\;;\;0)$ ; $B(0\;;\;6)$ ; $C(-1\;;\;-2)$ et $D(1\;;\;2)$.
+Donner le nom de ce solide.
 
-    <br><br><img src="3autog01_1_01.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_02.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+<span class="rep">Cône de révolution</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Quynh a obtenu ces notes ce trimestre en mathématiques :  
-    
+Quelle est la moyenne de la série statistique étudiée sur ce diagramme en barres ?<br><br>A. $3{,}5$ &emsp; B. $4$ &emsp; C. $3{,}375$ &emsp; D. $2$
 
-$$
-    10,\; 9,\; 9,\; 8,\; 6,\; 13,\; 6,\; 12,\; 11,\; 8.
-    $$
 
-    Calculer la fréquence de la note $13$.
 ---CORR---
-La note $13$ a été obtenue $1$ fois.<br>
-    Il y a $10$ notes.<br>
-    Donc la fréquence de la note $13$ est : ${\color{#8B3C52}\boldsymbol{\dfrac{1}{10}}}={\color{#8B3C52}\boldsymbol{0{,}1}}$, soit $10\thickspace\%$.
+Il y a un total de $8$ valeurs.<br>La somme des valeurs : $3 \times 2+1 \times 3+3 \times 4+1 \times 6=27$.<br>La moyenne est : $\dfrac{27}{8}={\color{#EB7F73}\boldsymbol{3{,}375}}$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Calculer l'aire exacte d'un rectangle de longueur $7~\text{cm}$ et de largeur $3{,}6~\text{cm}$.
+
+---CORR---
+$\mathcal{A}_\text{rectangle} = L \times l = 7~\text{cm} \times 3{,}6~\text{cm} = {\color{#EB7F73}\boldsymbol{25{,}2}}~\text{cm}^2$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+$7 \times 9 = 75 - \ldots$
+---CORR---
+$7 \times 9 = 75 - {\color{#EB7F73}\boldsymbol{12}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Qu'est-ce qui caractérise les angles adjacents rose et violet ?
+
+
+
+---CORR---
+Ce sont des angles <span class="rep">supplémentaires</span> car la somme de leurs mesures est égale à $180°$ (angle plat).
+
+
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 62" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter avec le signe < ou >.<br>$-7{,}291 \quad \ldots\ldots   \quad-7{,}777$
+Benoît relève les prix des maquettes sur un catalogue par correspondance en fonction de la quantité saisie dans le panier. Il note les prix dans le tableau suivant :
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Maquettes</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$3$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$4$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$7$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$12$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Prix (en €)</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$36$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$48$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$84$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$144$</td></tr>
+</table>
+Le prix des maquettes est-il proportionnel à la quantité achetée ?
 ---CORR---
-$-7{,}291 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -7{,}777$
+$\dfrac{36}{3}=\dfrac{48}{4}=\dfrac{84}{7}=\dfrac{144}{12}=12~\text{€/maquette}$<br>Le prix des maquettes est bien <span class="rep">proportionnel</span> à leur nombre.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Choisis le calcul qui permet de résoudre l'équation suivante : <br>
-Pour résoudre $5x-4=29$ :
 
-    <br> <strong>A</strong>. $29\times 5+4$&emsp;&emsp; 
-    <strong>B</strong>. $\dfrac{29}{5}+4$&emsp;&emsp; 
-    <strong>C</strong>. $(29-5)+4$&emsp;&emsp; 
-    <strong>D</strong>. $\dfrac{29+4}{5}$
----CORR---
-$5x-4=29$  
-    On ajoute $4$ : $5x=29+4$.  
-    Puis on divise par $5$ : $x=\dfrac{29+4}{5}$.  
-    Bonne réponse : <strong>D</strong>.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Dans la figure ci-dessous :<br>
-$\widehat{HLF}$ est un angle :<br> 
-    
-    	$\square\;$ nul&emsp;&emsp; $\square\;$ aigu&emsp;&emsp; $\square\;$ droit&emsp;&emsp; $\square\;$ obtus&emsp;&emsp; $\square\;$ plat&emsp;&emsp; <br><br><img src="3autog03_1_03.svg" alt="3autog03_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Donner le nom de ce solide.
+<br>
+<img src="3auto_s62_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans la figure ci-dessous :<br>
-$\widehat{HLF}$ est un angle :<br> 
-    
-    	$\square\;$ nul&emsp;&emsp; $\square\;$ aigu&emsp;&emsp; $\blacksquare\;$ droit&emsp;&emsp; $\square\;$ obtus&emsp;&emsp; $\square\;$ plat&emsp;&emsp; <br>
-Un angle droit est un angle dont la mesure est égale à 90.<br><br><img src="3autog03_1_corr_04.svg" alt="3autog03_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+<span class="rep">Pavé droit</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-On donne la série statistique suivante : 
-    $19$ ; $15$ ; $7$ ; $12$ ; $16$ ; $14$ ; $13$ ; $9$ ; $5$.<br>
-    Parmi ces propositions, laquelle peut être la médiane de la série ?
 
-     
-    <br> <strong>A</strong>. $14$&emsp;&emsp; <strong>B</strong>. $13$&emsp;&emsp; <strong>C</strong>. $12$&emsp;&emsp; <strong>D</strong>. $16$
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Quelle est l'aire de la figure ?
+<br>
+<img src="3auto_s62_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-La série triée dans l'ordre croissant est : $5$ ; $7$ ; $9$ ; $12$ ; $13$ ; $14$ ; $15$ ; $16$ ; $19$.<br>
-    La série comporte $9$ valeurs, donc la médiane est le terme de rang $5$.<br>
-    La médiane est donc $13$.<br>
-    La bonne réponse est la réponse <span class="rep">B</span>.
+L'aire de cette figure est : $5\times5\times4 = {\color{#EB7F73}\boldsymbol{100}}$ u.a.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Quel est le carré de $8$ ?
+---CORR---
+Le carré d'un nombre est ce nombre multiplié par lui-même : $8\times8={\color{#EB7F73}\boldsymbol{64}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+À propos de l'angle ci-dessous, compléter la phrase par la case adéquate.<br>$\widehat{YOL}$ est :<br><br>A. le sommet &emsp; B. un côté &emsp; C. le nom de l'angle &emsp; D. rien de cela
+<br>
+<img src="3auto_s62_q3.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$\widehat{YOL}$ est <span class="rep">rien de cela</span> — réponse <span class="rep">D</span>.<br>C'est l'angle de sommet $Y$, formé par les demi-droites $[YL)$ et $[YO)$, c'est donc l'angle $\widehat{LYO}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 63" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Déterminer la valeur de $25\,\%$ de $135$.
+Sur le plan du quartier de sa cousine, Yvette constate que $3~\text{mm}$ sur le plan correspond à $3~\text{m}$ dans la réalité.<br>Quelle est l'échelle du plan ?
 ---CORR---
-$25\,\%$ de $135$ :  
-    $\dfrac{25 \times 135}{100} = 0{,}25 \times 135 = 33{,}75$.  
-    Donc la valeur est 33.
+$3~\text{m} = 3\,000~\text{mm}$. Donc $3~\text{mm}$ sur le plan représente $3\,000~\text{mm}$ dans la réalité.<br>L'échelle est $\dfrac{3}{3\,000}=\dfrac{1}{1\,000}$, donc ${\color{#EB7F73}\boldsymbol{\dfrac{1}{1\,000}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_05.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-<img src="3auton15_1_corr_06.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Calculer le périmètre du carré $ABCD$ représenté ci-dessous :<br><img src="equilateral_07.svg" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
 
-	Le polygone a $4$ côtés de longueur $7{,}5$ cm.<br>
-Le périmètre est donc égal à :<br>
-$4 \times 7{,}5 = {\color{#8B3C52}\boldsymbol{30}}$ cm.
-
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?<br><img src="scratch_3autoi01_1_missing0_42.svg" alt="scratch_3autoi01_1_missing0" style="display:block;margin:0.8rem auto;max-width:100%"><br><div style="display:flex; justify-content:space-between; gap:1rem; text-align:center;">
-  <div style="flex:1;">
-    <img src="fig_i01_1_0_1_sem21.svg" alt="Figure A" style="width:60%;">
-    <div>Figure A</div>
-  </div>
-  <div style="flex:1;">
-    <img src="fig_i01_1_0_2_sem21.svg" alt="Figure B" style="width:60%;">
-    <div>Figure B</div>
-  </div>
-  <div style="flex:1;">
-    <img src="fig_i01_1_0_3_sem21.svg" alt="Figure C" style="width:60%;">
-    <div>Figure C</div>
-  </div>
-  <div style="flex:1;">
-    <img src="fig_i01_1_0_4_sem21.svg" alt="Figure D" style="width:60%;">
-    <div>Figure D</div>
-  </div>
-</div>
+On donne la série statistique suivante : $17$ ; $15$ ; $2$ ; $6$ ; $4$ ; $9$ ; $10$ ; $18$ ; $11$ ; $3$.<br>Parmi ces propositions, laquelle peut être la médiane de la série ?<br><br>A. $6{,}5$ &emsp; B. $9$ &emsp; C. $9{,}5$ &emsp; D. $10$
 ---CORR---
-Voir la figure correspondant au code Scratch.
+Série triée : $2$ ; $3$ ; $4$ ; $6$ ; $9$ ; $10$ ; $11$ ; $15$ ; $17$ ; $18$.<br>Il y a $10$ valeurs (pair), la médiane est la moyenne des termes de rang $5$ et $6$ : $\dfrac{9 + 10}{2} = {\color{#EB7F73}\boldsymbol{9{,}5}}$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Calculer l'aire exacte d'un triangle de base $3~\text{cm}$ et de hauteur $6~\text{cm}$.
+---CORR---
+$\mathcal{A}_\text{triangle} = (b \times h) \div 2 = (3~\text{cm} \times 6~\text{cm}) \div 2 = {\color{#EB7F73}\boldsymbol{9}}~\text{cm}^2$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Donner la liste des 5 premiers multiples non nuls de $50$.
+---CORR---
+5 premiers multiples non nuls de $50$ : <span class="rep">$50$ ; $100$ ; $150$ ; $200$ ; $250$</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Compléter à l'aide des longueurs $TR$, $TS$ et $RS$ :<br>$\cos\left(\widehat{TRS}\right)= \dfrac{\ldots}{\ldots}$
+<br>
+<img src="3auto_s63_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$TRS$ est rectangle en $T$ donc :<br>$\cos\left(\widehat{TRS}\right)={\color{#EB7F73}\boldsymbol{\dfrac{TR}{RS}}}$
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

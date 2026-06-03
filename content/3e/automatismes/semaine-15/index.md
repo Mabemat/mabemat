@@ -8,151 +8,122 @@ weight: 15
 
 {{< auto3-seance titre="Séance 43" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Déterminer la valeur de $10\,\%$ de $25$.
+Développer et réduire : $A=3(5b-9)+2$
 ---CORR---
-$10\,\%$ de $25$ :  <br>
-    $\dfrac{10 \times 25}{100} = 0{,}1 \times 25 = 2{,}5$.   <br>
-    Donc la valeur est <strong>2</strong>.
+$A=3(5b-9)+2$<br>$A={\color{#C5607A}\boldsymbol{3\times 5b+3\times (-9)+2}}$<br>En réduisant l'expression, on obtient :<br>$A= {\color{#EB7F73}\boldsymbol{15b-25}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Sur chaque droite graduée, déterminer l’abscisse du point $E$.<br> <strong>A</strong>. $\dfrac{9}{4}$ &emsp;
-    <strong>B</strong>. $\dfrac{13}{4}$ &emsp;
-    <strong>C</strong>. $2$ &emsp;
-    <strong>D</strong>. $\dfrac{5}{2}$<br><img src="3auton15_3_01.svg" alt="3auton15_3" style="display:block;margin:0.8rem auto;max-width:100%">
+Donner l'écriture du nombre suivant sous la forme d'un nombre entier : $4^{2}$
 ---CORR---
-On remarque qu'il y a 8 divisions entre $1$ et $3$, donc chaque division vaut $\dfrac{1}{4}$.<br>
-    Le point $E$ est situé après $10$ divisions à partir de l'origine.<br>
-    Donc l'abscisse de $E$ est $\dfrac{5}{2}$.<br>
-    Bonne réponse : <span class="rep">D</span>.
+$4^{2}=4\times 4={\color{#EB7F73}\boldsymbol{16}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Calculer l'aire d'un rectangle de longueur $5\text{ cm}$ et de largeur $2{,}4\text{ cm}$
+Dans une école de $1\,500$ étudiants, $25\%$ des étudiants aiment la musique pop.<br>Combien d'étudiants aiment la musique pop ?
 ---CORR---
-$\mathcal{A}_\text{rectangle} = L \times l$<br>$\mathcal{A}_\text{rectangle} = 5\text{ cm} \times 2{,}4\text{ cm}$<br>$\mathcal{A}_\text{rectangle} = {\color{#8B3C52}\boldsymbol{12}}\text{ cm}^2$
+Le nombre d'étudiants qui aiment la musique pop est égal à :<br>$1\,500 \times \dfrac{25}{100} = \dfrac{37\,500}{100}={\color{#EB7F73}\boldsymbol{375}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-On tire une boule au hasard dans une urne contenant $8$ boules noires et $6$ boules blanches.<br>             Quelle est la probabilité d'obtenir une boule blanche ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
+Calculer le périmètre d'un triangle rectangle dont l'hypoténuse mesure $5{,}4~\text{cm}$ et les côtés de l'angle droit mesurent respectivement $2~\text{cm}$ et $5~\text{cm}$.
 ---CORR---
-Dans une situation d'équiprobabilité,
-        on calcule la probabilité d'un événement par le quotient :
-        $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
-        La probabilité est donc donnée par : 
-        $\dfrac{\text{Nombre de boules blanches}}{\text{Nombre total de boules}}
-             =\dfrac{6}{14}  =\dfrac{3{\color{#C5607A}\boldsymbol{\times2}} }{7{\color{#C5607A}\boldsymbol{\times2}}}={\color{#8B3C52}\boldsymbol{\dfrac{3}{7}}}$
+$\mathcal{P}=2~\text{cm}+5~\text{cm}+5{,}4~\text{cm}={\color{#EB7F73}\boldsymbol{12{,}4}}~\text{cm}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure, dans le triangle $TXP$, les droites $(XP)$ et $(NL)$ sont parallèles.<br>Déterminer la longueur $TX$.
+<br>
+<img src="3auto_s43_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Dans le triangle $TXP$, les droites $(XP)$ et $(NL)$ sont parallèles.<br>D'après le théorème de Thalès, on a : $\dfrac{TX}{TL} = \dfrac{XP}{NL}$.<br>En remplaçant par les longueurs : $\dfrac{TX}{TL} = \dfrac{30}{12}=2{,}5$.<br>On en déduit que : $TX = 2{,}5 \times 36 = {\color{#EB7F73}\boldsymbol{90}}~\text{cm}$.
+
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 44" >}}
 
 {{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Donner l'écriture scientifique de $0{,}919$.
+Calculer $A = x \times x + 5$, pour $x = 3$.
 ---CORR---
-$0{,}919 = {\color{#8B3C52}\mathbf{9{,}19 \times 10^{-1}}}$.
+$A = 3 \times 3 + 5 = 9 + 5 = {\color{#EB7F73}\boldsymbol{14}}$
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
-Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
+Donner l'écriture du nombre suivant sous la forme d'une fraction : $3^{-4}$
 ---CORR---
-Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+$3^{-4}=\dfrac{1}{3^{4}}=\dfrac{1}{3\times 3\times 3\times 3}={\color{#EB7F73}\boldsymbol{\dfrac{1}{81}}}$
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Donner le nom du solide suivant :<br><img src="3autog07_1_02.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Soldé à $-20~\%$ un article coûte maintenant $2{,}48$€. Calculer son prix avant les soldes.
 ---CORR---
-Pyramide avec une base ayant $8$ sommets.
+Une diminution de $20~\%$ revient à multiplier par $80~\% = 0{,}8$.<br>Pour retrouver le prix initial, on divise le prix final par $0{,}8$.<br>$2{,}48\div 0{,}8 = {\color{#EB7F73}\boldsymbol{3{,}10}}$€.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
-Voici une série de 4 notes : $10, 6, 14, 8$.  <br>
-    Quelle est la moyenne de cette série ?
-
-     
-    <br> <strong>A</strong>. $7{,}5$ &emsp;
-    <strong>B</strong>. $9{,}5$ &emsp;
-    <strong>C</strong>. $8{,}5$ &emsp;
-    <strong>D</strong>. $10$
+Calculer le périmètre d'un carré de côté $7{,}2~\text{cm}$.
 ---CORR---
-La moyenne de cette série est :
-    
-
-$$
-    \frac{10+6+14+8}{4}=\frac{38}{4}=9{,}5.
-    $$
-
-    Bonne réponse : <span class="rep">B</span>.
+$\mathcal{P}_\text{carré} = 4 \times c = 4 \times 7{,}2~\text{cm} = {\color{#EB7F73}\boldsymbol{28{,}8}}~\text{cm}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Donner la mesure de l'angle $\widehat{FJY}$ sachant que :<br>- la demi-droite $[JY)$ est la bissectrice de l'angle $\widehat{FJC}$,<br>- $\widehat{FJC}$ mesure $80^\circ$.
+---CORR---
+La demi-droite $[JY)$ est la bissectrice de l'angle $\widehat{FJC}$.<br>Par définition de la bissectrice, elle partage cet angle en deux angles de même mesure.<br>Donc : $\widehat{FJY} = \dfrac{80^\circ}{2} = {\color{#EB7F73}\boldsymbol{40^\circ}}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 45" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}{|l|c|c|c|c|}
-    \hline
-    \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
-    \hline
-    1\,635 & & & & \\
-    \hline
-    \end{array}$$
+Écrire sous forme décimale $A=\dfrac{5}{10}+\dfrac{58}{100}$.
 ---CORR---
-$$\begin{array}{|l|c|c|c|c|}
-    \hline
-    \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
-    \hline
-    1\,635 & \text{non} & \color{blue}{\text{oui}} & \color{blue}{\text{oui}} & \text{non} \\
-    \hline
-    \end{array}$$
+$A=\dfrac{5}{10}+\dfrac{58}{100}=0{,}5+0{,}58={\color{#EB7F73}\boldsymbol{1{,}08}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Sur le graphique ci-dessus, on a représenté la hauteur de la valve d'une roue de vélo en fonction de la distance parcourue en $\text{cm}$ lors d'un tour complet.<br>Quelle est la hauteur de la valve lorsque la distance parcourue est de $125\text{ cm}$ ?<br><img src="3autop09_4_03.svg" alt="3autop09_4" style="display:block;margin:0.8rem auto;max-width:100%">
+Donner la notation scientifique de : $0{,}031 \times 10^{-5}$
 ---CORR---
-La hauteur de la valve lorsque la distance parcourue est de $125\text{ cm}$ est de $89\text{ cm}$.<br><img src="3autop09_4_corr_04.svg" alt="3autop09_4_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+$0{,}031 \times 10^{-5} = {\color{#C5607A}\boldsymbol{3{,}1\times 10^{-2}}}\times 10^{-5} = 3{,}1 \times 10^{{\color{#C5607A}\boldsymbol{-2+(-5)}}}={\color{#EB7F73}\boldsymbol{3{,}1 \times 10^{-7}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Un concours dure $470$ minutes. Quelle est sa durée en heures et minutes ?
+$51\,751$ est-il divisible par $10$ ?
 ---CORR---
-Une heure contient 60 minutes. <br>
-    $470=420+50=7\times 60+50$, donc dans $470$ minutes il y a <span class="rep">7 h 50 min</span>.
+Le chiffre des unités de $51\,751$ est $1$ donc $51\,751$ <span class="rep">n'est pas divisible par $10$</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
-<div style="display:flex; justify-content:space-between; gap:1rem; text-align:center;">
-
-  <div style="flex:1;">
-    <img src="F1.svg" alt="Figure 1" style="width:50%;">
-    <div>Figure 1</div>
-  </div>
-
-  <div style="flex:1;">
-    <img src="F2.svg" alt="Figure 2" style="width:50%;">
-    <div>Figure 2</div>
-  </div>
-
-  <div style="flex:1;">
-    <img src="F3.svg" alt="Figure 3" style="width:50%;">
-    <div>Figure 3</div>
-  </div>
-
-  <div style="flex:1;">
-    <img src="F4.svg" alt="Figure 4" style="width:50%;">
-    <div>Figure 4</div>
-  </div>
-
-</div>
-
-<br><img src="scratch_3autoi01_1_05.svg" alt="scratch_3autoi01_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Quelle est la nature d'un quadrilatère ayant $4$ angles droits ?
 ---CORR---
-C'est la figure 2.
+C'est un <span class="rep">rectangle</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure suivante : $H$ est sur $[GE]$, $I$ est sur $[GF]$, les droites $(EF)$ et $(HI)$ sont parallèles.<br>Écrire la double égalité de Thalès.
+<br>
+<img src="3auto_s45_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Dans le triangle $EFG$ : $H\in[GE]$, $I\in[GF]$, $(EF)//(HI)$, donc d'après le théorème de Thalès :<br>$\dfrac{GH}{GE}=\dfrac{GI}{GF}=\dfrac{HI}{EF}$<br>Remarque : On pourrait aussi écrire : $\dfrac{GE}{GH}=\dfrac{GF}{GI}=\dfrac{EF}{HI}$
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

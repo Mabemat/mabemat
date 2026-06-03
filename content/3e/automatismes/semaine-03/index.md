@@ -8,113 +8,138 @@ weight: 3
 
 {{< auto3-seance titre="Séance 7" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Calculer : $ (-4) + (+4) $
+$A = \dfrac{3}{9} \div \dfrac{3}{6}$
 ---CORR---
-$  {\color{#A4485F}\boldsymbol{(-4)}} + {\color{blue}\boldsymbol{(+4)}} = {\color{#8B3C52}\boldsymbol{0}} $
+$A = \dfrac{3}{9} \times \dfrac{6}{3} = \dfrac{18}{27} = \dfrac{2{\color{#C5607A}\boldsymbol{\times 9}}}{3{\color{#C5607A}\boldsymbol{\times 9}}} = {\color{#EB7F73}\boldsymbol{\dfrac{2}{3}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Résoudre l'équations suivante : $-8m-2=11$
+Soldé à $-20~\%$ un article coûte maintenant $240$€. <br>
+Calculer son prix avant les soldes.
 ---CORR---
-$-8m-2=11$<br>$-8m-2{\color{blue}\boldsymbol{\,\,+\,\,2}}=11{\color{blue}\boldsymbol{\,\,+\,\,2}}$<br>$-8m=13$<br>$-8m{\color{blue}\boldsymbol{\,\div\,(-8)}}=13{\color{blue}\boldsymbol{\,\div\,(-8)}}$<br>$m=-\dfrac{13}{8}$<br> La solution de l'équation $-8m-2=11$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{13}{8}}}$.
+Une diminution de $20~\%$ revient à multiplier par $0{,}8$.<br>Pour retrouver le prix initial : $240\div 0{,}8 = {\color{#EB7F73}\boldsymbol{300}}$€.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Pour chacune des figures suivantes, tracées à main levée, préciser s'il s'agit d'un parallélogramme.<br><img src="3autog02_2_01.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
+$0{,}5~\text{hm}^3 = \ldots~\text{m}^3$
 ---CORR---
-On sait que $FG = HI$ et $GH = IF$.<br>Or, « si un quadrilatère a ses côtés opposés de même longueur, alors c'est un parallélogramme  ».<br>Donc ${FGHI}$ <span class="rep">est un parallélogramme</span>.
+$0{,}5~\text{hm}^3 = 0{,}5\times1\,000\times1\,000~\text{m}^3 = {\color{#EB7F73}\boldsymbol{500\,000~\text{m}^3}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-On choisit au hasard un ticket parmi contenant $6$ tickets gagnants et $15$ tickets perdants.<br>             Quelle est la probabilité d'obtenir un ticket gagnant ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
+Pour résoudre l'équation $6+x-3=13$, on effectue le calcul :<br><br>A. $\dfrac{13}{6}-3$ &emsp; B. $(13-6)-3$ &emsp; C. $13+3-6$ &emsp; D. $\dfrac{13-3}{6}$
 ---CORR---
-Dans une situation d'équiprobabilité,
-        on calcule la probabilité d'un événement par le quotient : 
-        $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
-        La probabilité est donc donnée par :   $\dfrac{\text{Nombre de boules gagnants}}{\text{Nombre total de boules}}
-             =\dfrac{6}{21}  =\dfrac{2{\color{#C5607A}\boldsymbol{\times3}} }{7{\color{#C5607A}\boldsymbol{\times3}}}={\color{#8B3C52}\boldsymbol{\dfrac{2}{7}}}$.
+On ajoute $3$ aux deux membres : $6+x=13+3$, puis on soustrait $6$ : $x=13+3-6$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur cette droite graduée, quelle est l'abscisse du point $E$ ?<br>
+A. $\dfrac{13}{8}$ &emsp; B. $\dfrac{9}{8}$ &emsp; C. $1$ &emsp; D. $\dfrac{5}{4}$
+<br>
+<img src="3auto_s07_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Il y a 4 divisions entre $1$ et $2$, donc chaque division vaut $\dfrac{1}{4}$.<br>Le point $E$ est à la $5$e division à partir de l'origine, donc l'abscisse de $E$ est $\dfrac{5}{4}$.<br>La bonne réponse est la réponse <span class="rep">D</span>.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 8" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Dans un collège, $25\%$ des 500 élèves participent à une opération de nettoyage.<br>
-    Combien d'élèves ne participent pas à cette opération ?
+Combien valent les quatre cinquièmes de $40$ ?
 ---CORR---
-Le nombre d'élèves participant à cette opération est égal à :<br>
-    $500 \times \dfrac{25}{100} = 125$.<br>
-    Le nombre d'élèves ne participant pas à cette opération est donc égal à :<br>
-    $500 - 125 = {\color{#8B3C52}\boldsymbol{375}}$.
-
-<br>
-Une autre méthode consiste à calculer le pourcentage d'élèves ne participant pas à cette opération, qui est égal à $100\% - 25\% = 75\%$.<br>
-    Le nombre d'élèves ne participant pas à cette opération est donc égal à :<br>
-    $500 \times \dfrac{75}{100} = {\color{#8B3C52}\boldsymbol{375}}$.
+$\dfrac{1}{5}$ de $40 = 40\div 5 = 8$.<br>Les quatre cinquièmes de $40$ valent $4\times 8 = {\color{#EB7F73}\boldsymbol{32}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
+
+{{< auto3-exo num="Exercice 2" >}}
 ---Q---
-Placer les points : $A(-2{,}3), B(-0{,}2), C(0{,}2)$.
-
-<br><img src="3auton15_2_enonce.svg" alt="3auton15_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Réduire l'expression suivante, si cela est possible : $$A=-1-9x+9+10x$$
 ---CORR---
-<img src="3auton15_2_corr.svg" alt="3auton15_2" style="display:block;margin:0.8rem auto;max-width:100%">
-
-<br>
+$A=-1-9x+9+10x={\color{#EB7F73}\boldsymbol{x+8}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
+
+{{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Calculer le périmètre d'un cercle de diamètre $2\text{ cm}$
+Comparer : $-8{,}4 \quad\ldots\quad -8{,}5$
 ---CORR---
-$\mathcal{P}_\text{cercle} = d \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#8B3C52}\boldsymbol{2\pi}}\text{ cm}$
+$-8{,}4 \quad {\color{#EB7F73}\boldsymbol{>}} \quad -8{,}5$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
----Q---
-$10\,\, ; \,\, 10 \,\, ; \,\,6\,\, ; \,\,2 \,\, ; \,\,17$<br>
-       
-        La moyenne de cette série est :
 
-<br>
- 
-    
-    	<strong>A</strong>. $9$&emsp;&emsp; <strong>B</strong>. $11$&emsp;&emsp; <strong>C</strong>. $10$&emsp;&emsp; <strong>D</strong>. $8{,}5$&emsp;&emsp; <br>
+{{< auto3-exo num="Exercice 4" >}}
+---Q---
+Déterminer la valeur de $10~\%$ de $170$.
 ---CORR---
-La somme des $5$ valeurs est : $10+10+6+2+17= 45$.<br>
-         La moyenne est donc $\dfrac{45}{5}=9$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
+$10~\%$ de $170 = 0{,}1\times 170 = {\color{#EB7F73}\boldsymbol{17}}$.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Un concours dure $400$ minutes. <br>
+Quelle est sa durée en heures et minutes ?
+---CORR---
+$400 = 6\times 60 + 40$<br>Le concours dure <span class="rep">6 h 40 min</span>.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 9" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Donner la notation scientifique des nombres suivants.<br>$10\,000$$\,=$$\,\dots$
+Réduire et simplifier, si c'est possible : $$A=3c^2+8c+9+6c^2+c$$
 ---CORR---
-$10\,000 = {\color{#8B3C52}\boldsymbol{1\times 10^{4}}}$
+$A=3c^2+8c+9+6c^2+c={\color{#EB7F73}\boldsymbol{9c^2+9c+9}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
----Q---
-Magalie lit sur sa recette de gâteau au citron pour $11$ personnes qu'il faut $220$ g de farine. <br>Elle veut adapter sa recette pour $13$ personnes.<br> Quelle masse de farine doit-elle prévoir ?
----CORR---
-Commençons par trouver la masse de farine pour une personne. <br> $11$ personnes, c'est ${\color{#C5607A}\boldsymbol{11}}$ fois $1$ personne. il faut donc ${\color{#C5607A}\boldsymbol{11}}$ fois moins que $220$ g pour $1$ personne.<br>$220$ g $\div {\color{#C5607A}\boldsymbol{11}} = 20$ g <br> il faut ${\color{#C5607A}\boldsymbol{20}}$ g de farine pour $1$ personne. <br> Cherchons maintenant la quantité nécessaire pour 13 personnes. <br> $13$ personnes, c'est ${\color{#C5607A}\boldsymbol{13}}$ fois $1$ personne. <br>Donc, il faut ${\color{#C5607A}\boldsymbol{13}}$ fois plus que 20 g de farine que pour $1$ personne pour faire sa recette.<br> ${\color{#C5607A}\boldsymbol{20}}$ g $\times {\color{#C5607A}\boldsymbol{13}} = 260$ g <br>
- Magalie doit utiliser ${\color{#8B3C52}\boldsymbol{260}}$ g de farine pour $13$ personnes.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
----Q---
-Calculer le volume, arrondi au $\text{ dm}^3$ près, d'une pyramide de hauteur $2\text{ dm}$ et dont la base est un triangle. <br>
-La base du triangle mesure $8\text{ dm}$ et la hauteur associée à cette base mesure $4\text{ dm}$.
----CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{8\text{ dm} \times 4\text{ dm}}{2}\times2\text{ dm}=\dfrac{8 \times 4 \times 2}{6}\text{ dm}^3\approx{\color{#8B3C52}\boldsymbol{11\mathbf{ dm}^3}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
----Q---
-Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ? <br>
-<img src="scratch.png" alt="3auton15_2" style="display:block;margin:0.8rem auto;max-width:200px">
----CORR---
-C'est la figure $\color{#8B3C52}\boldsymbol{4}$
-{{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 2" >}}
+---Q---
+Ranger ces nombres dans l'ordre décroissant : <br>
+$4{,}81$ ; $3{,}1$ ; $-4{,}98$ ; $4{,}9$ ; $-5{,}4$ ; $-4{,}5$
+---CORR---
+${\color{#EB7F73}\boldsymbol{4{,}9 > 4{,}81 > 3{,}1 > -4{,}5 > -4{,}98 > -5{,}4}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}
+---Q---
+Convertir $942~\text{h}$ en semaines, jours et heures.
+---CORR---
+$942 = 39\times 24 + 6$, donc $942~\text{h} = 39~\text{j}~6~\text{h}$.<br>$39 = 5\times 7 + 4$, donc $942~\text{h} = {\color{#EB7F73}\boldsymbol{5~\text{semaines}~4~\text{j}~6~\text{h}}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}
+---Q---
+Le prix des gravures est-il proportionnel à la quantité achetée ?<br>
+
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Gravures</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$6$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$7$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$13$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$21$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Prix (en €)</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$50{,}40$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$58{,}80$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$109{,}20$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$176{,}40$</td></tr>
+</table>
+---CORR---
+$\dfrac{50{,}40}{6}=\dfrac{58{,}80}{7}=\dfrac{109{,}20}{13}=\dfrac{176{,}40}{21}=8{,}40~\text{€/gravure}$<br>Le prix est <span class="rep">proportionnel</span> à la quantité.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Compléter ce tableau :
+
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Nombre décimal</th><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$0{,}67$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$0{,}76$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Fraction décimale</th><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$\dfrac{56}{100}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$\dfrac{45}{100}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226">&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Pourcentage</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$46\,\%$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">&nbsp;%</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">&nbsp;%</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">&nbsp;%</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">&nbsp;%</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$38\,\%$</td></tr>
+</table>
+---CORR---
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Nombre décimal</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{0{,}46}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{0{,}56}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$0{,}67$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$0{,}76$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{0{,}45}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{0{,}38}}$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Fraction décimale</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{\dfrac{46}{100}}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$\dfrac{56}{100}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{\dfrac{67}{100}}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{\dfrac{76}{100}}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$\dfrac{45}{100}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{\dfrac{38}{100}}}$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Pourcentage</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$46\,\%$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{56}}\,\%$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{67}}\,\%$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{76}}\,\%$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{45}}\,\%$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$38\,\%$</td></tr>
+</table>
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}

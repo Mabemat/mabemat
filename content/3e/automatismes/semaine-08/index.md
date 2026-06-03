@@ -8,134 +8,152 @@ weight: 8
 
 {{< auto3-seance titre="Séance 22" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter avec le signe < ou >.<br>$$-0{,}3 \quad \ldots   \quad-0{,}8$$
+Calculer : $A = x^2 + 4x$, pour $x = -2$.
 ---CORR---
-$-0{,}3 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -0{,}8$
+$A = -2 \times (-2) + 4 \times (-2)$<br>$A = 4 + (-8)$<br>$A = {\color{#EB7F73}\boldsymbol{-4}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Choisis le calcul qui permet de résoudre l'équation suivante : $4x+9=15$
 
-    <br> <strong>A</strong>. $\dfrac{15-9}{4}$&emsp;&emsp; 
-    <strong>B</strong>. $\dfrac{15}{4}-9$&emsp;&emsp; 
-    <strong>C</strong>. $(15-4)-9$&emsp;&emsp; 
-    <strong>D</strong>. $15\times 4-9$
----CORR---
-$4x+9=15$  <br>
-    On enlève $9$ : $4x=15-9$. <br> 
-    Puis on divise par $4$ : $x=\dfrac{15-9}{4}$.  <br>
-    Bonne réponse : <strong>A</strong>.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Dans la figure ci-dessous :<br>
-$\widehat{RJW}$ est un angle :<br> 
-    
-    	$\square\;$ nul&emsp;&emsp; $\square\;$ aigu&emsp;&emsp; $\square\;$ droit&emsp;&emsp; $\square\;$ obtus&emsp;&emsp; $\square\;$ plat&emsp;&emsp; <br><br><img src="3autog03_1_01.svg" alt="3autog03_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Calculer : $A = (10+1)(5+2)$
 ---CORR---
-Dans la figure ci-dessous :<br>
-$\widehat{RJW}$ est un angle :<br> 
-    
-    	$\blacksquare\;$ nul&emsp;&emsp; $\square\;$ aigu&emsp;&emsp; $\square\;$ droit&emsp;&emsp; $\square\;$ obtus&emsp;&emsp; $\square\;$ plat&emsp;&emsp; <br>
-Un angle nul est un angle dont la mesure est égale à 0.<br><br><img src="3autog03_1_corr_02.svg" alt="3autog03_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+$A = (10+1)(5+2)$<br>$A = 11 \times 7$<br>$A = {\color{#EB7F73}\boldsymbol{77}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Déterminer la valeur exacte de $JK$.<br><br><img src="3autog11_2_03.svg" alt="3autog11_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-On utilise le théorème de Pythagore dans le triangle $IJK$,  rectangle en $J$.<br>
-      On obtient :
 
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Un angle obtus mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+---CORR---
+Un angle obtus mesure entre ${\color{#EB7F73}\boldsymbol{90}}^\circ$ et ${\color{#EB7F73}\boldsymbol{180}}^\circ$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+$KJGH$ est un carré et $HGI$ est un triangle équilatéral ($I$ est à l'intérieur du carré $KJGH$).<br>$JGF$ est un triangle isocèle en $F$ ($F$ est à l'extérieur du carré $KJGH$).<br>Représenter cette configuration par un schéma à main levée et ajouter les codages nécessaires.
+---CORR---
+Voilà ci-dessous un schéma qui pourrait convenir à la situation.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
+<br><br>
+```
+quand ⚑ est cliqué
+stylo en position d'écriture
+répéter 4 fois
+  avancer de 40 pas
+  tourner ↻ de (360/4) degrés
+fin
+```
+<br>A. triangle &emsp; B. pentagone régulier &emsp; C. carré &emsp; D. hexagone régulier
 <br>
-
-      $\begin{aligned}
-        IJ^2+JK^2&=IK^2\\
-        JK^2&=IK^2-IJ^2\\
-        JK^2&=6^2-5^2\\
-        JK^2&=36-25\\
-        JK^2&=11\\
-        JK&={\color{#8B3C52}\boldsymbol{\sqrt{11}}}
-        \end{aligned}$
-
+<img src="3auto_s22_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 <br>
-Mentalement : <br>
-    La longueur $JK$ est donnée par la racine carrée de la différence des carrés de $6$ et de $5$.<br>
-    Cette différence vaut $36-25=11$. <br>
-    La valeur cherchée est donc : $\sqrt{11}$.
+<img src="3auto_s22_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+<br>
+<img src="3auto_s22_q3.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+<br>
+<img src="3auto_s22_q4.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+<br>
+<img src="3auto_s22_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Le script répète $4$ fois : avancer + tourner de $360\div4=90°$. Cela trace un <span class="rep">carré</span>.
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 23" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Déterminer la valeur de $25\,\%$ de $158$.
+Développer et réduire : $A=(7y-3)\times (-5y)$
 ---CORR---
-$25\,\%$ de $158$ :  
-    $\dfrac{25 \times 158}{100} = 0{,}25 \times 158 = 39{,}5$.  
-    Donc la valeur est <strong>39</strong>.
+$A=(7y-3)\times (-5y)$<br>$A={\color{#C5607A}\boldsymbol{-5y\times 7y+(-5y)\times (-3)}}$<br>En réduisant l'expression, on obtient :<br>$A= {\color{#EB7F73}\boldsymbol{-35y^2+15y}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Placer les points : $D(-0{,}049), E(-0{,}037), F(-0{,}019)$.
 
-<br><br><img src="3auton15_2_enonce_04.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-<img src="3auton15_2_corr_05.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Calculer le périmètre exact d'un cercle de rayon $3\text{ cm}$
+Traduire la phrase par un calcul :<br>Le quotient de la somme de 8 et 20 par 2.
 ---CORR---
-$\mathcal{P}_\text{cercle} = 2 \times r \times \pi$<br>$\mathcal{P}_\text{cercle} = 2 \times 3\text{ cm} \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#8B3C52}\boldsymbol{6\pi}}\text{ cm}$
+Le quotient de la somme de 8 et 20 par 2 s'écrit : ${\color{#EB7F73}\boldsymbol{(8+20) \div 2}}$ ou ${\color{#EB7F73}\boldsymbol{\dfrac{8+20}{2}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Sur la figure suivante : 
-        <br> $\leadsto N$ est sur $[MK]$,
-        <br> $\leadsto O$ est sur $[ML]$,<br> $\leadsto$ les droites $(KL)$ et $(NO)$ sont parallèles.<br>Écrire la double égalité de Thalès.<br><br><img src="3autog12_1_06.svg" alt="3autog12_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Dans le triangle $KLM$ :
-       <br> $\leadsto$ $N\in[MK]$,
-       <br> $\leadsto$ $O\in[ML]$,
-       <br> $\leadsto$  $(KL)//(NO)$,
-       <br> donc d'après le théorème de Thalès, les triangles $KLM$ et $NOM$ ont des longueurs proportionnelles.
 
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Un angle saillant mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+---CORR---
+Un angle saillant mesure entre ${\color{#EB7F73}\boldsymbol{0}}^\circ$ et ${\color{#EB7F73}\boldsymbol{180}}^\circ$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+$1~\text{dm}^2 = \dfrac{1}{\ldots}~\text{m}^2$
+---CORR---
+$1~\text{dm}^2$ est égal à un centième de $1~\text{m}^2$.<br>$1~\text{dm}^2 = \dfrac{1}{{\color{#EB7F73}\boldsymbol{100}}}~\text{m}^2$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Vrai ou faux, $EFGH$ est un parallélogramme.
+<br>$(EF) \parallel (GH)$ et :
 <br>
-$\dfrac{MN}{MK}=\dfrac{MO}{ML}=\dfrac{NO}{KL}$<br><strong>Remarque</strong><br>On pourrait aussi écrire : $\dfrac{MK}{MN}=\dfrac{ML}{MO}=\dfrac{KL}{NO}$
+<img src="3auto_s23_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$EFGH$ a deux côtés opposés parallèles, ${\color{#EB7F73}\boldsymbol{EFGH}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un trapèze).
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 24" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Donner l'écriture décimale de $8{,}67 \times 10^{-1}$.
+Développer et réduire : $A=-4(-9b-1)$
 ---CORR---
-$8{,}67 \times 10^{-1} = {\color{#8B3C52}\mathbf{0{,}867}}$.
+$A=-4(-9b-1)$<br>$A={\color{#C5607A}\boldsymbol{-4\times (-9b)+(-4)\times (-1)}}$<br>En réduisant l'expression, on obtient :<br>$A= {\color{#EB7F73}\boldsymbol{36b+4}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Sur une carte sur laquelle $6\text{ cm}$ représente $15{,}6\text{ km}$ dans la réalité, <br>
-  Béatrice mesure son trajet et elle trouve une distance de $7\text{ cm}$. <br>À quelle distance cela correspond dans la réalité ?
----CORR---
-Commençons par trouver à combien de $\text{km}$ dans la réalité, $1\text{ cm}$ sur la carte correspond. <br>
-  $1\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{6}}$ fois moins que $6\text{ cm}$.<br>$15{,}6\text{ km}\div {\color{#C5607A}\boldsymbol{6}} = 2{,}6\text{ km}$ <br> $1\text{ cm}$ sur la carte correspond donc à ${\color{#C5607A}\boldsymbol{2{,}6}}\text{ km}$ dans la réalité. <br> Cherchons maintenant la distance réelle de son trajet. <br> $7\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{7}}$ fois $1\text{ cm}$.<br> ${\color{#C5607A}\boldsymbol{2{,}6}}\text{ km}\times {\color{#C5607A}\boldsymbol{7}} = 18{,}2\text{ km}$<br> son trajet correspond en réalité à une distance de ${\color{#8B3C52}\boldsymbol{18{,}2}}\text{ km}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Donner le nom du solide suivant :<br><img src="3autog07_1_07.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Cône de révolution
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Dans le triangle $SBY$, rectangle en $B$, quel calcul doit-on effectuer pour déterminer le cosinus de l’angle $\widehat{BSY}$ ?<br><img src="3autog13_08.svg" alt="3autog13" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-La bonne formule est : <br>
-    $\text{cosinus}(\widehat{BSY}) = \dfrac{\text{longueur du côté adjacent à l’angle } \widehat{BSY}}{\text{longueur de l’hypoténuse }}=\dfrac{SB}{SY}$.
-{{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Quel est l'inverse de $5$ ?
+---CORR---
+L'inverse de $5$ est ${\color{#EB7F73}\boldsymbol{0{,}2}}$ car $5 \times 0{,}2 = 1$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+$PMXU$ est un parallélogramme tel que ses diagonales $[PX]$ et $[MU]$ ont la même longueur.<br>Déterminer la nature de $PMXU$ en justifiant la réponse.
+---CORR---
+On sait que $PX=MU$.<br>Si un parallélogramme a des diagonales de même longueur, alors c'est un rectangle.<br>$PMXU$ est donc un <span class="rep">rectangle</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+$WX^2= \,\,\ldots$
+<br>
+<img src="3auto_s24_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Le triangle $VWX$ est rectangle en $V$.<br>D'après le théorème de Pythagore, on a :<br>${\color{#EB7F73}\boldsymbol{WX^2=VW^2+VX^2}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Le joueur d'un jeu télévisé doit lancer un dé à 6 faces numérotées de 1 à 6.<br>Ensuite, il tire une boule dans une urne contenant 6 boules indiscernables au toucher.<br>Ces boules sont numérotées de 1 à 6 et sont rouges ou bleues.<br>Il gagne s'il tire une boule bleue dont le numéro est supérieur ou égal au numéro obtenu avec le dé.<br>Voici l'urne utilisée :<br>La boule 1 est bleue ; la boule 2 est rouge ; la boule 3 est rouge ; la boule 4 est rouge ; la boule 5 est bleue ; la boule 6 est rouge.<br>Calculer la probabilité de gagner à ce jeu.
+---CORR---
+Pour gagner, le joueur doit tirer une boule bleue dont le numéro est supérieur ou égal au numéro obtenu avec le dé.<br>On remplit le tableau à double entrée des issues possibles :
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Dé \ Boule</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">1 (bleue)</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">2 (rouge)</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">3 (rouge)</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">4 (rouge)</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">5 (bleue)</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">6 (rouge)</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">1</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">2</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">3</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">4</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">5</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">6</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+</table>
+Il y a $6$ issues gagnantes parmi $36$ issues possibles.<br>La probabilité de gagner à ce jeu est donc de $\dfrac{6}{36}={\color{#EB7F73}\boldsymbol{\dfrac{1}{6}}}$.
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}

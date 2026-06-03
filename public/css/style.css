@@ -1483,6 +1483,8 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   line-height: 1.05; margin: 0 0 14px;
 }
 .wk-hero h1 em { font-style: italic; color: var(--accent); }
+.wk-hero-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+.wk-hero-top h1 { margin: 0; }
 .wk-meta {
   display: flex; gap: 20px; flex-wrap: wrap;
   font-family: var(--font-mono); font-size: 11px;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58.67pt" height="56.397pt" viewBox="0 0 58.67 56.397" version="1.2">
+<defs>
+<clipPath id="clip1">
+  <path d="M 15 3.941406 L 54.253906 3.941406 L 54.253906 51.859375 L 15 51.859375 Z M 15 3.941406 "/>
+</clipPath>
+<clipPath id="clip2">
+  <path d="M 4.089844 5 L 54.253906 5 L 54.253906 51.859375 L 4.089844 51.859375 Z M 4.089844 5 "/>
+</clipPath>
+<clipPath id="clip3">
+  <path d="M 4.089844 3.941406 L 43 3.941406 L 43 51.859375 L 4.089844 51.859375 Z M 4.089844 3.941406 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<path style="fill:none;stroke-width:1.99255;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(54.508972%,23.527527%,32.157898%);stroke-opacity:1;stroke-miterlimit:10;" d="M -0.00185478 -0.000528539 L 28.708116 -0.000528539 " transform="matrix(0.989421,0,0,-0.989421,14.970585,6.046352)"/>
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:1.99255;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(54.508972%,23.527527%,32.157898%);stroke-opacity:1;stroke-miterlimit:10;" d="M 28.708116 -0.000528539 L 37.579308 -27.301058 " transform="matrix(0.989421,0,0,-0.989421,14.970585,6.046352)"/>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:1.99255;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(54.508972%,23.527527%,32.157898%);stroke-opacity:1;stroke-miterlimit:10;" d="M 37.579308 -27.301058 L 14.353131 -44.174878 " transform="matrix(0.989421,0,0,-0.989421,14.970585,6.046352)"/>
+<path style="fill:none;stroke-width:1.99255;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(54.508972%,23.527527%,32.157898%);stroke-opacity:1;stroke-miterlimit:10;" d="M 14.353131 -44.174878 L -8.869098 -27.301058 " transform="matrix(0.989421,0,0,-0.989421,14.970585,6.046352)"/>
+</g>
+<g clip-path="url(#clip3)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:1.99255;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(54.508972%,23.527527%,32.157898%);stroke-opacity:1;stroke-miterlimit:10;" d="M -8.869098 -27.301058 L -0.00185478 -0.000528539 " transform="matrix(0.989421,0,0,-0.989421,14.970585,6.046352)"/>
+</g>
+</g>
+</svg>

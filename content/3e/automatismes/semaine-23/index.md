@@ -8,135 +8,126 @@ weight: 23
 
 {{< auto3-seance titre="Séance 67" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Calculer.<br>$ (-4) - (+3) $
+Nawel veut réaliser une vinaigrette. Pour cela elle mélange du vinaigre et de l'huile d'olive selon le ratio $4:7$.<br>Elle utilise $21$ cuillères à soupe d'huile d'une contenance de $15~\text{mL}$ chacune.<br>a. Quel volume de vinaigre doit-elle utiliser ?<br>b. Quel volume de vinaigrette Nawel réalisera-t-elle ?
 ---CORR---
-$  {\color{#A4485F}\boldsymbol{(-4)}} - {\color{blue}\boldsymbol{(+3)}} = {\color{#8B3C52}\boldsymbol{(-7)}} $
+Volume total d'huile : $21\times 15 = 315~\text{mL}$. La part est $\dfrac{315}{7}=45$.<br>a. Volume de vinaigre : $45\times 4~\text{mL}={\color{#EB7F73}\boldsymbol{180~\text{mL}}}$.<br>b. Volume de vinaigrette : $45\times(4+7)~\text{mL}=45\times 11={\color{#EB7F73}\boldsymbol{495~\text{mL}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Résoudre les équations suivantes.<br>$7y-11=-9y-1$
+$6$ ; $15$ ; $8$ ; $15$<br>La moyenne de cette série est :<br><br>A. $11$ &emsp; B. $13$ &emsp; C. $11{,}5$ &emsp; D. $12$
+
 ---CORR---
-$7y-11=-9y-1$<br>On ajoute $9y$ aux deux membres.<br>$7y-11{\color{#C5607A}\boldsymbol{\,\,+\,\,9y}}=-9y-1{\color{#C5607A}\boldsymbol{\,\,+\,\,9y}}$<br>$16y-11=-1$<br>On ajoute $11$ aux deux membres.<br>$16y-11{\color{#C5607A}\boldsymbol{\,\,+\,\,11}}=-1{\color{#C5607A}\boldsymbol{\,\,+\,\,11}}$<br>$16y=10$<br>On divise les deux membres par $16$.<br>$16y{\color{#C5607A}\boldsymbol{\,\div\,16}}=10{\color{#C5607A}\boldsymbol{\,\div\,16}}$<br>$y=\dfrac{10}{16}$<br>$y=\dfrac{5}{8}$<br> La solution de l'équation $7y-11=-9y-1$ est ${\color{#8B3C52}\boldsymbol{\dfrac{5}{8}}}$.
+La somme des $4$ valeurs est : $6+15+8+15=44$.<br>La moyenne est donc $\dfrac{44}{4}={\color{#EB7F73}\boldsymbol{11}}$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>
-          L'angle $\widehat{xOy}$ mesure $44^\circ$.<br>
-          Combien mesure l'angle $\widehat{yOz}$ s'ils sont complémentaires l'un de l'autre ?
+$1~\text{dm}^2 = \ldots\ldots\ldots~\text{m}^2$
 ---CORR---
-Deux angles adjacents complémentaires sont deux angles dont les côtés non communs forment un angle droit.<br>
-          Alors $\widehat{yOz}=90^\circ-44^\circ={\color{#8B3C52}\boldsymbol{46^\circ}}$.
+$1~\text{dm}^2$ est égal à un centième de $1~\text{m}^2$.<br>$1~\text{dm}^2 = {\color{#EB7F73}\boldsymbol{\dfrac{1}{100}}}~\text{m}^2 = {\color{#EB7F73}\boldsymbol{0{,}01}}~\text{m}^2$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Dans un salon européen de esport comptant 150 visiteurs, on a noté leur pays d'origine.<br>On a représenté ces données à l'aide du diagramme ci-dessous.<br>
-
- 
-
-<strong>a.</strong> Déterminer l'effectif manquant.<br>
-<strong>b.</strong> Déterminer les fréquences pour chaque pays d'origine (en pourcentage, arrondir au dixième si besoin).<br><img src="3autop02_2_01.svg" alt="3autop02_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Traduire la phrase par un calcul.<br>Le produit de la somme de $x$ et $3$ par la somme de $3$ et $y$.
 ---CORR---
-<strong>a.</strong> L'effectif manquant est celui du allemagne. Soit $e$ cet effectif.<br>$e=150-( 16 + 1 + 11 + 22 + 32 + 5 + 34 + 23 )$<br>$e=150-144$<br>$e={\color{#8B3C52}\boldsymbol{6}}$<br>
-<strong>b.</strong> Calculs des fréquences.<br>On rappelle que pour la fréquence relative à une valeur est donnée par le quotient : $\dfrac{\text{effectif de la valeur}}{\text{effectif total}}$<br>
+Le produit de la somme de $x$ et $3$ par la somme de $3$ et $y$ s'écrit : ${\color{#EB7F73}\boldsymbol{(x+3)\times(3+y)}}$.
+{{< /auto3-exo >}}
 
- 
-On en déduit donc les calculs suivants :
-
- 
-$$ 
-\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
-\hline
-   &   \text{Angleterre} &   \text{Portugal} &   \text{Autriche} &   \text{France} &   \text{Belgique} &   \text{Italie} &   \text{Allemagne} &   \text{Espagne} &   \text{Hollande}\\
-\hline
-  \mathbf{Fréquences} & \dfrac{16}{150} & \dfrac{1}{150} & \dfrac{11}{150} & \dfrac{22}{150} & \dfrac{32}{150} & \dfrac{5}{150} & \dfrac{6}{150} & \dfrac{34}{150} & \dfrac{23}{150}\\
-\hline
-   \mathbf{Fréquences en pourcentages} & {\color{#8B3C52}\boldsymbol{10{,}7 \,\%}} & {\color{#8B3C52}\boldsymbol{0{,}7 \,\%}} & {\color{#8B3C52}\boldsymbol{7{,}3 \,\%}} & {\color{#8B3C52}\boldsymbol{14{,}7 \,\%}} & {\color{#8B3C52}\boldsymbol{21{,}3 \,\%}} & {\color{#8B3C52}\boldsymbol{3{,}3 \,\%}} & {\color{#8B3C52}\boldsymbol{4 \,\%}} & {\color{#8B3C52}\boldsymbol{22{,}7 \,\%}} & {\color{#8B3C52}\boldsymbol{15{,}3 \,\%}}\\
-\hline
- \end{array}
- $$
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sachant que les droites rouges sont parallèles, en déduire la mesure de l'angle violet. Justifier.
 <br>
+<img src="3auto_s67_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Les angles rouge et vert sont correspondants et formés par des droites parallèles, donc ils sont de même mesure.<br>De plus, $180°-{\color{#C5607A}\boldsymbol{34°}} = {\color{#C5607A}\boldsymbol{146°}}$.<br>L'angle bleu mesure donc ${\color{#EB7F73}\boldsymbol{146°}}$.
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 68" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Dans une ville, $25\%$ des 10000 habitants participent à une campagne de vaccination.<br>
-    Combien d'habitants ne participent pas à cette campagne ?
+Un décapant biologique est vendu sous forme concentrée avec l'indication suivante sur le bidon : Diluer avec de l'eau à $2:5$.<br>À quel pourcentage de produit concentré dans le mélange final correspond ce ratio ? (arrondir à l'unité).
 ---CORR---
-Le nombre d'habitants participant à cette campagne est égal à :<br>
-    $10\,000 \times \dfrac{25}{100} = 2\,500$.<br>
-    Le nombre d'habitants ne participant pas à cette campagne est donc égal à :<br>
-    $10\,000 - 2\,500 = {\color{#8B3C52}\boldsymbol{7\,500}}$.
+Une dilution selon le ratio $2:5$ signifie qu'on dilue $2$ unités de volume dans $5$ unités d'eau, soit $7$ unités au total.<br>La proportion de décapant biologique est : $\dfrac{2}{7}\approx 0{,}286$, soit environ ${\color{#EB7F73}\boldsymbol{29~\%}}$.
+{{< /auto3-exo >}}
 
- 
-Une autre méthode consiste à calculer le pourcentage d'habitants ne participant pas à cette campagne, qui est égal à $100\% - 25\% = 75\%$.<br>
-    Le nombre d'habitants ne participant pas à cette campagne est donc égal à :<br>
-    $10\,000 \times \dfrac{75}{100} = {\color{#8B3C52}\boldsymbol{7\,500}}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Placer les points : $M(-0{,}09), N(0{,}17), O(0{,}23)$.
+Calculer le volume d'un pavé droit de $5~\text{cm}$ de profondeur, de $0{,}6~\text{dm}$ de longueur et de $40~\text{mm}$ de hauteur.
+---CORR---
+En convertissant tout en cm : $0{,}6~\text{dm}=6~\text{cm}$ et $40~\text{mm}=4~\text{cm}$.<br>$\mathcal{V}= l \times L \times h = 5~\text{cm}\times6~\text{cm}\times4~\text{cm}={\color{#EB7F73}\boldsymbol{120~\text{cm}^3}}$
+{{< /auto3-exo >}}
 
-<br><img src="3auton15_2_enonce_02.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-<img src="3auton15_2_corr_03.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Calculer le périmètre exact des figures suivantes.<br>Cercle de diamètre $9\text{ cm}$
+Calculer : $\dfrac{2}{4}- \Big(\dfrac{4}{16} + \dfrac{3}{4}\Big)$
 ---CORR---
-$\mathcal{P}_\text{cercle} = d \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#8B3C52}\boldsymbol{9\pi}}\text{ cm}$
+$\dfrac{2}{4}- \Big(\dfrac{4}{16} + \dfrac{3}{4}\Big)=\dfrac{2}{4} - \Big(\dfrac{4}{16} + \dfrac{12}{16}\Big)=\dfrac{2}{4} - \dfrac{16}{16}=\dfrac{8}{16} - \dfrac{16}{16}= {\color{#EB7F73}\boldsymbol{-\dfrac{8}{16}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Le graphique ci-dessous donne l’évolution de la température (en degrés Celsius) en
-fonction de l’horaire (en heures).<br>
-Entre $4$h et $10$h, de combien de degrés la température a-t-elle augmenté ?<br>
-<br><br><img src="3autop05_04.svg" alt="3autop05" style="display:block;margin:0.8rem auto;max-width:100%">
+Dans le triangle $STU$ rectangle en $S$, $ST=8~\text{mm}$ et $\widehat{STU}=42^\circ$.<br>Donner le calcul permettant d'obtenir $TU$.
 ---CORR---
-D’après le graphique, à $4$h, la température est de $5$$^\circ$ C et à $10$h, elle est de $17{,}5$$^\circ$ C.<br>
-    L’augmentation de la température entre $4$h et $10$h est donc de : $17{,}5-5={\color{#8B3C52}\boldsymbol{12{,}5}}$$^\circ$ C.
+$\cos\left(\widehat{STU}\right)=\dfrac{ST}{TU}$, donc $\cos(42^\circ)=\dfrac{8}{TU}$.<br>$TU=\dfrac{8}{\cos(42^\circ)}\approx{\color{#EB7F73}\boldsymbol{10{,}8}}~\text{mm}$.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Quel est le pourcentage d'élèves ayant obtenu la moyenne ?<br><br>A. $78~\%$ &emsp; B. $68~\%$ &emsp; C. $63~\%$ &emsp; D. $58~\%$
+<br>
+<img src="3auto_s68_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Effectif total : $8+10+6+1=25$ élèves.<br>Élèves ayant obtenu la moyenne ($\geq 5$) : $10+6+1=17$.<br>$\dfrac{17}{25}\times 100 = {\color{#EB7F73}\boldsymbol{68}}~\%$.<br>La bonne réponse est la réponse <span class="rep">B</span>.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 69" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Donner l'écriture scientifique de $-8\,800$$\,=$$\,\dots$
+Soit $STU$ un triangle rectangle en $T$, tel que $ST=2$ et $SU=10$.<br>Déterminer la valeur exacte de $TU$.
 ---CORR---
-$-8\,800 = {\color{#8B3C52}\boldsymbol{-8{,}8\times 10^{3}}}$
+On utilise le théorème de Pythagore dans le triangle $STU$, rectangle en $T$.<br>$TU^2=SU^2-ST^2=10^2-2^2=100-4=96$<br>$TU={\color{#EB7F73}\boldsymbol{\sqrt{96}}}={\color{#EB7F73}\boldsymbol{4\sqrt{6}}}$<br>Mentalement : La différence vaut $100-4=96$. La valeur cherchée est donc : $\sqrt{96}=4\sqrt{6}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Nathalie doit acheter du carrelage. <br>Sur la notice, il est indiqué de prévoir $25$ carreaux pour $2\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $1{,}5\text{ m}^2$ ?
----CORR---
-Commençons par trouver combien de carreaux il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{2}}$ fois moins que 2$\text{ m}^2$.<br>$25$ carreaux $\div {\color{#C5607A}\boldsymbol{2}} = 12{,}5$ carreaux <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{12{,}5}}$ carreaux pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de carreaux nécessaire pour recouvrir $1{,}5\text{ m}^2$.<br> $1{,}5\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{1{,}5}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{12{,}5}}$ carreaux $\times {\color{#C5607A}\boldsymbol{1{,}5}} = 18{,}75$ carreaux<br> Nathalie aura besoin de ${\color{#8B3C52}\boldsymbol{18{,}75}}$ carreaux pour recouvrir $1{,}5\text{ m}^2$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Calculer le volume, arrondi au $\text{ dm}^3$ près, d'une boule de $3\text{ dm}$ de rayon.
----CORR---
-$\mathcal{V}=\dfrac{4}{3} \times \pi \times R^3=\dfrac{4}{3}\times\pi\times\left(3\text{ dm}\right)^3=\dfrac{108}{3}\pi\text{ dm}^3\approx{\color{#8B3C52}\boldsymbol{113\mathbf{ dm}^3}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-On considère l’algorithme suivant :
 
-    
-
-    Qu’obtient‑on si on choisit $1$ comme nombre de départ ?<br><img src="scratch_3autoi01_2_05.svg" alt="scratch_3autoi01_2" style="display:block;margin:0.8rem auto;max-width:100%">
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Quel est le pourcentage d'élèves ayant obtenu la note 4 ?<br><br>A. $40~\%$ &emsp; B. $45~\%$ &emsp; C. $50~\%$ &emsp; D. $60~\%$
+<br>
+<img src="3auto_s69_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Si on choisit $1$ comme nombre de départ, alors variable prend la valeur $1$.<br>
-    Ensuite, resultat prend la valeur $4 \times 1 = 4$.<br>
-    Puis, resultat prend la valeur $4 + 18 = 22$.<br>
-    Enfin, resultat prend la valeur $\dfrac{22}{2} = 11$.<br>
-    Résultat final : ${\color{#8B3C52}\mathbf{11}}$.
+Effectif total : $1+8+4+4+3=20$ élèves.<br>Élèves ayant la note 4 : $8$.<br>$\dfrac{8}{20}\times 100 = {\color{#EB7F73}\boldsymbol{40}}~\%$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Donner la formule de l'aire d'un rectangle de longueur $L$ et la largeur $l$.<br>On peut alors donner l'aire du rectangle ainsi : $\ldots\ldots\ldots$ $\ldots\ldots\ldots$ $\ldots\ldots\ldots$
+---CORR---
+Aire d'un rectangle $= {\color{#EB7F73}\boldsymbol{L \times l}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+51 est-il un nombre premier.
+---CORR---
+Comme $5 + 1 = 6$ est un multiple de $3$, donc $51$ aussi. $51$ admet au moins trois diviseurs : $1$, $3$ et lui-même.<br><span class="rep">$51$ n'est donc pas premier</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Qu'est-ce qui caractérise les angles adjacents rose et violet ?
+<br>
+<img src="3auto_s69_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Ce sont des angles <span class="rep">complémentaires</span> car la somme de leurs mesures est égale à $90°$ (angle droit).
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

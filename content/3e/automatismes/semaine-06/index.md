@@ -8,120 +8,118 @@ weight: 6
 
 {{< auto3-seance titre="Séance 16" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Combien valent les trois quarts de $16$ ?
+$A = 1 + \dfrac{2}{7}$
 ---CORR---
-$\dfrac{3}{4}$ de $16 = \dfrac{3}{4} \times 16 = \dfrac{3 \times 16 }{4}= \dfrac{3 \times 4 \times 4 }{4}=3 \times 4=12$
+$A = 1 + \dfrac{2}{7}$<br>$A = \dfrac{7}{7} + \dfrac{2}{7}$<br>$A = {\color{#EB7F73}\boldsymbol{\dfrac{9}{7}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
----Q---
-Développer et réduire $A=-7+6(-8c-2)$
----CORR---
-$A=-7+6(-8c-2)$<br>$A=-7+6\times (-8c)+6\times (-2)$<br>En réduisant l'expression, on obtient : <br> $A=$ ${\color{#8B3C52}\boldsymbol{-48c-19}}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
----Q---
-Déterminer les coordonnées respectives des points $A$,  $B$ et $C$.
 
-<br>
-<br><br><img src="Ex3.png" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:300px">
----CORR---
-Les coordonnées respectives des points sont :<br> $A({\color{#8B3C52}\boldsymbol{0}};{\color{F15929}\boldsymbol{1{,}5}})$, $C({\color{#8B3C52}\boldsymbol{-4{,}5}};{\color{F15929}\boldsymbol{-2}})$ et $B({\color{#8B3C52}\boldsymbol{1}};{\color{F15929}\boldsymbol{0}})$.
-
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
+{{< auto3-exo num="Exercice 2" >}}
 ---Q---
- $STU$ est un triangle rectangle en $S$ dans lequel
-      $ST=9$ et $SU=\sqrt{3}$.<br>
-       Calculer la valeur exacte de $TU$ .
+Résoudre : $7x+13=11x+10$
 ---CORR---
- On utilise le théorème de Pythagore dans le triangle $STU$,  rectangle en $S$.<br>
-On obtient :<br>
-$\begin{aligned}
-ST^2+SU^2&=TU^2\\
-TU^2&=ST^2+SU^2\\
-TU^2&=\sqrt{3}^2+9^2\\
-TU^2&=3+81\\
-TU^2&=84\\
-TU&={\color{#8B3C52}\boldsymbol{\sqrt{84}}}
-\end{aligned}$<br>
-En simplifiant, on obtient : $TU = 2\sqrt{21}$
+$7x+13=11x+10$<br>On soustrait $11x$ aux deux membres.<br>$7x+13{\color{#C5607A}\boldsymbol{\,\,-\,\,11x}}=11x+10{\color{#C5607A}\boldsymbol{\,\,-\,\,11x}}$<br>$-4x+13=10$<br>On soustrait $13$ aux deux membres.<br>$-4x+13{\color{#C5607A}\boldsymbol{\,\,-\,\,13}}=10{\color{#C5607A}\boldsymbol{\,\,-\,\,13}}$<br>$-4x=-3$<br>On divise les deux membres par $-4$.<br>$-4x{\color{#C5607A}\boldsymbol{\,\div\,(-4)}}=-3{\color{#C5607A}\boldsymbol{\,\div\,(-4)}}$<br>$x=\dfrac{3}{4}$<br>La solution de l'équation $7x+13=11x+10$ est ${\color{#EB7F73}\boldsymbol{\dfrac{3}{4}}}$.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}
+---Q---
+Compare : $-8{,}38 \quad \ldots\ldots \quad -8{,}99$
+---CORR---
+$-8{,}38 \quad {\color{#EB7F73}\boldsymbol{>}} \quad -8{,}99$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}
+---Q---
+Une réduction de $10~\%$ d'un article entraîne une réduction du prix de $17$€.<br>Quel était le prix de cet article avant la réduction ?
+---CORR---
+$10\,\%$ du prix représente $17$€, donc $100~\%$ du prix représente $10$ fois plus que $17$€ (car $10\times 10=100$).<br>Le prix de l'article était donc : $10\times17={\color{#EB7F73}\boldsymbol{170}}$€.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Une voiture roule à $90$ km/h. Combien de temps met-elle pour parcourir $40{,}5$ km ?
+<br><br>A. 54 min &emsp; B. 40 min 30 s &emsp; C. 13 min 30 s &emsp; D. 27 min
+---CORR---
+Pour parcourir $40{,}5$ km à $90$ km/h, il faut :<br>$\dfrac{40{,}5}{90}~\text{h}=\dfrac{405}{900}~\text{h}=\dfrac{9}{20}~\text{h}={\color{#EB7F73}\boldsymbol{27~\textbf{min}}}$.<br>La bonne réponse est la réponse <span class="rep">D</span>.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 17" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Calculer.<br>$ (+7) - (-8) $
+$A = \dfrac{6}{5} \times \dfrac{3}{5} - \dfrac{4}{5}$
 ---CORR---
-$  {\color{blue}\boldsymbol{(+7)}} - {\color{#A4485F}\boldsymbol{(-8)}} = 7+8 = {\color{#8B3C52}\boldsymbol{15}} $
+$A = \dfrac{6}{5} \times \dfrac{3}{5} - \dfrac{4}{5}$<br>$A = \dfrac{18}{25} - \dfrac{4}{5}$<br>$A = \dfrac{18}{25} - \dfrac{20}{25}$<br>$A = {\color{#EB7F73}\boldsymbol{\dfrac{-2}{25}}}$
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
-Résoudre les équations suivantes.<br>$\dfrac{4x}{5}=-3$
+Résoudre : $\dfrac{-5a}{-7}=3$
 ---CORR---
-$\dfrac{4x}{5}=-3$<br><br> 
-$\dfrac{4x}{5}{\color{blue}\boldsymbol{\,\times\,\dfrac{5}{4}}}=-3{\color{blue}\boldsymbol{\,\times\,\dfrac{5}{4}}}$<br><br> 
-$x=\dfrac{-15}{4}$<br><br> 
- La solution de l'équation $\dfrac{4x}{5}=-3$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{15}{4}}}$.
+$\dfrac{-5a}{-7}=3$<br>On multiplie les deux membres par $\dfrac{7}{5}$.<br>$\dfrac{-5a}{-7}{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{7}{5}}}=3{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{7}{5}}}$<br>$a=\dfrac{21}{5}$<br>La solution de l'équation $\dfrac{-5a}{-7}=3$ est ${\color{#EB7F73}\boldsymbol{\dfrac{21}{5}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
+
+{{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Dans le triangle $ABC$ rectangle en $B$, on sait que $\widehat{A} = 26^\circ$. <br>
-      Calculer $\widehat{C}$.<br><img src="3autog03_03.svg" alt="3autog03" style="display:block;margin:0.8rem auto;max-width:100%">
+Encadrer $-6{,}263$ au centième.
 ---CORR---
-On sait que la somme des angles d'un triangle est égale à $180^\circ$. <br>
-    Donc, dans le triangle $ABC$, on a : <br>
-    $\widehat{A} + \widehat{B} + \widehat{C} = 180^\circ$. <br>
-    Or, comme le triangle est rectangle en $B$, on a $\widehat{B} = 90^\circ$. <br>
-    Donc, $26^\circ + 90^\circ + \widehat{C} = 180^\circ$. <br>
-    D'où $\widehat{C} = 180^\circ - 90^\circ - 26^\circ = 90^\circ - 26^\circ = {\color{#8B3C52}\boldsymbol{64}}^\circ$.
+${\color{#EB7F73}\boldsymbol{-6{,}27}}<-6{,}263<{\color{#EB7F73}\boldsymbol{-6{,}26}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
+
+{{< auto3-exo num="Exercice 4" >}}
 ---Q---
-Sur la figure ci-dessus, dans le triangle $CEN$, les droites $(EN)$ et $(YR)$ sont parallèles. Déterminer la longueur $CE$.<br><img src="Ex4.png" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:200px">
+$5{,}5~\text{hm} = \ldots~\text{m}$
 ---CORR---
-Dans le triangle $CEN$, les droites $(EN)$ et $(YR)$ sont parallèles. <br>
-    D'après le théorème de Thalès, on a : <br>
-    $\dfrac{CE}{CR} =
-    \dfrac{EN}{YR}$. <br>
-    En remplaçant par les longueurs, on obtient : <br>
-    $\dfrac{CE}{CR} = \dfrac{12}{8}=1{,}5$.<br>
-    On en déduit que : <br>
-    $CE = 1{,}5 \times 24 = {\color{#8B3C52}\boldsymbol{36}}$ cm.
+Un hectomètre est une centaine de mètres donc :<br>$5{,}5~\text{hm} = 5{,}5\times100~\text{m} ={\color{#EB7F73}\boldsymbol{550}}~\text{m}$.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Sur une carte sur laquelle $9~\text{cm}$ représente $27~\text{km}$ dans la réalité,<br>Léa mesure son trajet et elle trouve une distance de $13~\text{cm}$.<br>À quelle distance cela correspond dans la réalité ?
+---CORR---
+Commençons par trouver à combien de $\text{km}$ dans la réalité, $1~\text{cm}$ sur la carte correspond.<br>$1~\text{cm}$, c'est ${\color{#C5607A}\boldsymbol{9}}$ fois moins que $9~\text{cm}$.<br>$27~\text{km}\div {\color{#C5607A}\boldsymbol{9}} = 3~\text{km}$<br>Conclusion intermédiaire : $1~\text{cm}$ sur la carte correspond donc à ${\color{#C5607A}\boldsymbol{3}}~\text{km}$ dans la réalité.<br>Cherchons maintenant la distance réelle de son trajet.<br>$13~\text{cm}$, c'est ${\color{#C5607A}\boldsymbol{13}}$ fois $1~\text{cm}$.<br>${\color{#C5607A}\boldsymbol{3}}~\text{km}\times {\color{#C5607A}\boldsymbol{13}} = 39~\text{km}$<br>Conclusion : son trajet correspond en réalité à une distance de ${\color{#EB7F73}\boldsymbol{39}}~\text{km}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 18" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Après une augmentation de $2~\%$ le prix de mon ordinateur est maintenant $1\,238{,}28$ €. Calculer son prix avant l'augmentation.
+Écrire sous la forme de la somme d'un nombre entier et d'une fraction inférieure à 1 puis donner l'écriture décimale de : $\dfrac{7}{5}$
 ---CORR---
-Une augmentation de $2$ % revient à multiplier par $100~\% + 2~\%=102~\% = 1{,}02$.<br>Pour retrouver le prix initial, on va donc diviser le prix final par $1{,}02$.<br>$1\,238{,}28\div1{,}02 = 1\,214$<br>Avant l'augmentation le prix de mon ordinateur était de ${\color{#8B3C52}\boldsymbol{1\,214}}$€.
+$\dfrac{7}{5} = {\color{#EB7F73}\boldsymbol{1}}+\dfrac{{\color{#EB7F73}\boldsymbol{2}}}{{\color{#EB7F73}\boldsymbol{5}}} = {\color{#EB7F73}\boldsymbol{1{,}4}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
----Q---
-Donner l'abscisse des pour $D$, $E$ et $F$.
-<img src="3auton15_1_enonce_05.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-<img src="3auton15_1_corr_06.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>$\ D $ <span class="rep">$(-0{,}15)$</span> &emsp; $\ E $ <span class="rep">$(0{,}06)$</span> &emsp; $\ F $ <span class="rep">$(0{,}11)$</span>
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
----Q---
-Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous : <br><img src="Ex3-18.png" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:200px">
----CORR---
-Le polygone a $8$ côtés de longueur $3{,}5$ cm.<br>
-Le périmètre est donc égal à :<br>
-$8 \times 3{,}5 = {\color{#8B3C52}\boldsymbol{28}}$ cm.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
----Q---
-Compléter à l'aide des longueurs $WV$, $WX$ et $VX$ : <br>$\cos\left(\widehat{WVX}\right)=$$\dfrac{\ldots}{\ldots}$<br><img src="3autog13_2_08.svg" alt="3autog13_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-$WVX$ est rectangle en $W$ donc :<br>$\cos\left(\widehat{WVX}\right)={\color{#8B3C52}\boldsymbol{\dfrac{WV}{VX}}}$
-{{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 2" >}}
+---Q---
+Exprimer la moitié de $m$ en fonction de $m$.
+---CORR---
+La moitié de $m$ peut se noter : ${\color{#EB7F73}\boldsymbol{\dfrac{m}{2}}}$, ${\color{#EB7F73}\boldsymbol{m\div 2}}$, ou ${\color{#EB7F73}\boldsymbol{0{,}5m}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}
+---Q---
+Calculer : $-10 - (+9)$
+---CORR---
+$-10 - (+9) = {\color{#EB7F73}\boldsymbol{-19}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}
+---Q---
+$75~\text{cm}^3 = \ldots~\text{dm}^3$
+---CORR---
+$75~\text{cm}^3 = 75\div 1\,000~\text{dm}^3 = {\color{#EB7F73}\boldsymbol{0{,}075~\text{dm}^3}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+L'an passé, parmi les $36$ élèves de terminale STMG, $18$ ont obtenu une place en BTS ou en IUT.<br>Calculer la proportion d'élèves de cette classe qui ont obtenu une place en BTS ou en IUT.<br>Exprimer le résultat sous la forme d'un pourcentage arrondi à l'unité près.
+---CORR---
+La population de référence est celle des élèves de Terminale STMG. On note $N=36$ son effectif.<br>La sous-population étudiée est celle des bacheliers qui ont obtenu une place en BTS ou en IUT. On note $n=18$ son effectif.<br>$p=\dfrac{n}{N}=\dfrac{18}{36}\approx0{,}5$<br>La proportion d'élèves qui ont obtenu une place en BTS ou en IUT dans cette classe est $p\approx{\color{#EB7F73}\boldsymbol{50\%}}$.
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}

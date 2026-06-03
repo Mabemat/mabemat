@@ -8,126 +8,124 @@ weight: 16
 
 {{< auto3-seance titre="Séance 46" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Effectuer le calcul suivant en donnant le résultat sous forme d'une fraction. <br>
-$B = \dfrac{7}{5} \times \dfrac{3}{4}$
+Exprimer l'opposé de $c$ en fonction de $c$.
 ---CORR---
-$B = \dfrac{7}{5} \times \dfrac{3}{4}$<br>$B =$ ${\color{#8B3C52}\boldsymbol{ \dfrac{21}{20}}}$<br>
+L'opposé de $c$ peut se noter : ${\color{#EB7F73}\boldsymbol{-c}}$ ou ${\color{#EB7F73}\boldsymbol{-1\times c}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Factoriser :  $B=55k-66k^2$
----CORR---
-$B=55k-66k^2$<br>$\phantom{B}=11k\times5-11k\times6k$<br>$\phantom{B}=$ ${\color{#8B3C52}\boldsymbol{11k(5-6k)}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Déterminer les coordonnées respectives des points $O$, $P$, $Q$ et $N$<br><img src="3autog01_2_01.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Les coordonnées respectives des points sont :<br> $O({\color{#8B3C52}\boldsymbol{-1{,}5}};{\color{#8B3C52}\boldsymbol{0}})$, $P({\color{#8B3C52}\boldsymbol{-0{,}5}};{\color{#8B3C52}\boldsymbol{3{,}5}})$, $Q({\color{#8B3C52}\boldsymbol{2}};{\color{#8B3C52}\boldsymbol{-3}})$ et $N({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{4}})$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Déterminer la valeur exacte de $VW$.<br><img src="3autog11_2_02.svg" alt="3autog11_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-On utilise le théorème de Pythagore dans le triangle $UVW$,  rectangle en $V$.<br>
-      On obtient :
 
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Donner la notation scientifique de : $260 \times 10^{5}$
+---CORR---
+$260 \times 10^{5} = {\color{#C5607A}\boldsymbol{2{,}6\times 10^{2}}}\times 10^{5} = 2{,}6 \times 10^{{\color{#C5607A}\boldsymbol{2+5}}}={\color{#EB7F73}\boldsymbol{2{,}6 \times 10^{7}}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+$612$ est-il divisible par $2$ ?
+---CORR---
+Le chiffre des unités de $612$ est $2$ donc $612$ <span class="rep">est divisible par $2$</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Calculer le périmètre de la figure suivante.
 <br>
-
-      $\begin{aligned}
-        UV^2+VW^2&=UW^2\\
-        VW^2&=UW^2-UV^2\\
-        VW^2&=7^2-5^2\\
-        VW^2&=49-25\\
-        VW^2&=24\\
-        VW&={\color{#8B3C52}\boldsymbol{\sqrt{24}}}
-        \end{aligned}$<br>
-        En simplifiant, on obtient : $VW = {\color{#8B3C52}\boldsymbol{2\sqrt{6}}}$.
-        <br>Mentalement : <br>
-    La longueur $VW$ est donnée par la racine carrée de la différence des carrés de $7$ et de $5$.<br>
-    Cette différence vaut $49-25=24$. <br>
-    La valeur cherchée est donc : $\sqrt{24}=2\sqrt{6}$.
+<img src="3auto_s46_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$\mathcal{P}=9{,}1+9{,}1+9{,}1+7{,}3+6={\color{#EB7F73}\boldsymbol{40{,}6}}~\text{cm}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure, dans le triangle $FRX$, les droites $(RX)$ et $(VT)$ sont parallèles.<br>Déterminer la longueur $FR$.
+<br>
+<img src="3auto_s46_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Dans le triangle $FRX$, les droites $(RX)$ et $(VT)$ sont parallèles.<br>D'après le théorème de Thalès, on a : $\dfrac{FR}{FT} = \dfrac{RX}{VT}$.<br>En remplaçant par les longueurs : $\dfrac{FR}{FT} = \dfrac{16{,}8}{8}=2{,}1$.<br>On en déduit que : $FR = 2{,}1 \times 24 = {\color{#EB7F73}\boldsymbol{50{,}4}}~\text{cm}$.
+
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 47" >}}
 
 {{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Calculer.<br>$ (-10) + (-6) $
+Résoudre : $4x(2x +2) = 8x^2 +10$
 ---CORR---
-$  {\color{#A4485F}\boldsymbol{(-10)}} + {\color{#A4485F}\boldsymbol{(-6)}} = {\color{#8B3C52}\boldsymbol{(-16)}} $
+$4x(2x +2) = 8x^2 +10$<br>$8x^2 +8x = 8x^2 +10$<br>$8x = 10$<br>$x = \dfrac{10}{8} = \dfrac{5}{4}$<br>La solution de l'équation est : ${\color{#EB7F73}\boldsymbol{\dfrac{5}{4}}}$.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
-Résoudre l'équation suivante : $5z+6=-8z+9$
+Écrire sous la forme $a^n$ : $A=4^{5}\times 4^{3}$
 ---CORR---
-$5z+6=-8z+9$<br>$5z+6{\color{blue}\boldsymbol{\,\,+\,\,8z}}=-8z+9{\color{blue}\boldsymbol{\,\,+\,\,8z}}$<br>$13z+6=9$<br>$13z+6{\color{blue}\boldsymbol{\,\,-\,\,6}}=9{\color{blue}\boldsymbol{\,\,-\,\,6}}$<br>$13z=3$<br>$13z{\color{blue}\boldsymbol{\,\div\,13}}=3{\color{blue}\boldsymbol{\,\div\,13}}$<br>$z=\dfrac{3}{13}$<br> La solution de l'équation $5z+6=-8z+9$ est ${\color{#8B3C52}\boldsymbol{\dfrac{3}{13}}}$.
+Il y a $5+3$ facteurs tous égaux à $4$.<br>$A=4^{5+3} = {\color{#EB7F73}\boldsymbol{4^{8}}}$
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Préciser s'il s'agit d'un parallélogramme.<br>$(JK) // (LM)$<br><img src="3autog02_2_03.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Augmenter de $100~\%$ revient à multiplier par $\ldots$
 ---CORR---
-$JKLM$ a deux côtés opposés parallèles, ${\color{#8B3C52}\boldsymbol{JKLM}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un trapèze).<br><img src="3autog02_2_corr_04.svg" alt="3autog02_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Augmenter de $100~\%$ revient à multiplier par ${\color{#EB7F73}\boldsymbol{2}}$ car $100~\% + 100~\% = 200~\%$.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
-Sur la figure suivante : 
-        <br> $\leadsto J$ est sur $[IG]$,
-        <br> $\leadsto K$ est sur $[IH]$,<br> $\leadsto$ les droites $(GH)$ et $(JK)$ sont parallèles.<br>Écrire la double égalité de Thalès.<br><img src="3autog12_1_05.svg" alt="3autog12_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Quelle est la nature d'un quadrilatère ayant ses $4$ côtés de même longueur et $4$ angles droits ?
 ---CORR---
-Dans le triangle $GHI$ :
-       <br> $\leadsto$ $J\in[IG]$,
-       <br> $\leadsto$ $K\in[IH]$,
-       <br> $\leadsto$  $(GH)//(JK)$,
-       <br> donc d'après le théorème de Thalès, les triangles $GHI$ et $JKI$ ont des longueurs proportionnelles.
-
-<br>
-$\dfrac{IJ}{IG}=\dfrac{IK}{IH}=\dfrac{JK}{GH}$<br><strong>Remarque</strong><br>On pourrait aussi écrire : $\dfrac{IG}{IJ}=\dfrac{IH}{IK}=\dfrac{GH}{JK}$
+C'est un <span class="rep">carré</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Un angle plat mesure $\ldots\ldots\ldots^\circ$.
+---CORR---
+Un angle plat mesure ${\color{#EB7F73}\boldsymbol{180}}^\circ$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 48" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Dans une association, $25\%$ des 150 membres participent à une olympiade de mathématiques.<br>
-    Combien de membres ne participent pas à cette olympiade ?
+Réduire l'expression : $\dfrac{x}{7}-3x$
 ---CORR---
-Le nombre de membres participant à cette olympiade est égal à :<br>
-    $150 \times \dfrac{25}{100} = 38$.<br>
-    Le nombre de membres ne participant pas à cette olympiade est donc égal à :<br>
-    $150 - 38 = {\color{#8B3C52}\boldsymbol{112}}$.<br>
+$\dfrac{x}{7}-3x=\dfrac{x}{7}-\dfrac{3x\times 7}{7}=\dfrac{x}{7}-\dfrac{21x}{7}=\dfrac{x-21x}{7}=\dfrac{-20x}{7}= {\color{#EB7F73}\boldsymbol{\dfrac{-20}{7}x}}$
+{{< /auto3-exo >}}
 
- 
-Une autre méthode consiste à calculer le pourcentage de membres ne participant pas à cette olympiade, qui est égal à $100\% - 25\% = 75\%$.<br>
-    Le nombre de membres ne participant pas à cette olympiade est donc égal à :<br>
-    $150 \times \dfrac{75}{100} = {\color{#8B3C52}\boldsymbol{112}}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_06.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
+Écrire sous la forme $a^n$ : $A=\dfrac{(-2)^{3}}{(-2)^{5}}$
 ---CORR---
-<img src="3auton15_1_corr_07.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>$\ G $ <span class="rep">$(-3{,}2)$</span> &emsp; $\ H $ <span class="rep">$(-1{,}2)$</span> &emsp; $\ I $ <span class="rep">$(0{,}3)$</span>
+$A=\dfrac{(-2)^{3}}{(-2)^{5}}$&emsp;$3$ simplifications par $(-2)$ possibles.<br>$A=\dfrac{1}{(-2)^{5-3}}=\dfrac{1}{(-2)^{2}}=\dfrac{1}{2^{2}}={\color{#EB7F73}\boldsymbol{2^{-2}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Calculer le périmètre du carré $ABCD$ représenté ci-dessous :<br>
 
-<br><img src="equilateral_08.svg" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-	Le polygone a $4$ côtés de longueur $2{,}5$ cm.<br>
-Le périmètre est donc égal à :<br>
-$4 \times 2{,}5 = {\color{#8B3C52}\boldsymbol{10}}$ cm.
-
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Dans le triangle $GHI$ rectangle en $G$,<br> $HI=11\text{ cm}$ et $\widehat{GHI}=38^\circ$.<br>Calculer $GH$ à $0,1\text{ cm}$ près.<br><img src="3autog13_1_09.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
+$38\,622$ est-il divisible par $5$ ?
 ---CORR---
-Dans le triangle $GHI$ rectangle en $G$,<br> le cosinus de l'angle $\widehat{GHI}$ est défini par :<br>$\cos\left(\widehat{GHI}\right)=\dfrac{GH}{HI}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(38^\circ\right)}{\color{red}{1}}=\dfrac{GH}{11}$<br>$GH=11 \times \cos\left(38^\circ\right)$<br>soit $GH\approx{\color{#8B3C52}\boldsymbol{8{,}7}}\text{ cm}$.
+Le chiffre des unités de $38\,622$ est $2$ donc $38\,622$ <span class="rep">n'est pas divisible par $5$</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Calculer le périmètre exact d'un rectangle de longueur $8{,}4~\text{cm}$ et de largeur $3{,}4~\text{cm}$.
+---CORR---
+$\mathcal{P}_\text{rectangle} = 2 \times (L + l) = 2 \times (8{,}4 + 3{,}4)~\text{cm} = 2 \times 11{,}8~\text{cm} = {\color{#EB7F73}\boldsymbol{23{,}6}}~\text{cm}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure, les droites $(IJ)$ et $(SA)$ sont parallèles.<br>Écrire une égalité de rapports permettant de déterminer la longueur $IF$.
+<br>
+<img src="3auto_s48_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Pour déterminer la longueur $IF$, on utilise le théorème de Thalès car les droites $(IJ)$ et $(SA)$ sont parallèles.<br>On écrit l'égalité des rapports :<br>$\dfrac{{\color{#EB7F73}\boldsymbol{IF}}}{{\color{#EB7F73}\boldsymbol{SF}}}= \dfrac{{\color{#EB7F73}\boldsymbol{IJ}}}{{\color{#EB7F73}\boldsymbol{SA}}}$ ou encore : $\dfrac{{\color{#EB7F73}\boldsymbol{IF}}}{{\color{#EB7F73}\boldsymbol{8}}} = \dfrac{{\color{#EB7F73}\boldsymbol{15{,}3}}}{{\color{#EB7F73}\boldsymbol{9}}}$
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

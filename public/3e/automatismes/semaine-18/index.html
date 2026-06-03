@@ -15,8 +15,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.67247e69a0937874bf87dbddada61bd1cf9edf5a01c607c4b03e2521dc108efa.css" integrity="sha256-ZyR&#43;aaCTeHS/h9vdraYb0c&#43;e31oBxgfEsD4lIdwQjvo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css" integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -156,6 +156,10 @@ pre[style*="background-color"] {
 
 
 
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.153e96b511640751b91ce2c5aea086df94cdf5cbba0cdccd1538608bec0f9cbb.css" integrity="sha256-FT6WtRFkB1G5HOLFrqCG35TN9cu6DNzNFThgi&#43;wPnLs=" crossorigin="anonymous">
+
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -171,7 +175,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>18</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>18</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <div class="wk-meta">
     <span><span class="dot"></span>3 séances</span>
     <span><span class="dot"></span>12 exercices</span>
@@ -208,17 +218,18 @@ pre[style*="background-color"] {
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Compléter avec le signe < ou >.<br>$-9{,}67 \quad \ldots\ldots   \quad9{,}51$
+Réduire l'expression suivante, si cela est possible.<br>$A=5x-11$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$-9{,}67 \quad {\color{#8B3C52}\boldsymbol{<}} \quad 9{,}51$
+$A= {\color{#EB7F73}\boldsymbol{5x-11}}$ (l'expression est déjà réduite)
 </div>
   
 </article>
+
 
 
 
@@ -241,26 +252,18 @@ $-9{,}67 \quad {\color{#8B3C52}\boldsymbol{<}} \quad 9{,}51$
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Choisis le calcul qui permet de résoudre l'équation suivante : <br>
-Pour résoudre $7x+1=23$ :
-
-    <br> <strong>A</strong>. $(23-7)-1$&emsp;&emsp; 
-    <strong>B</strong>. $23\times 7-1$&emsp;&emsp; 
-    <strong>C</strong>. $\dfrac{23}{7}-1$&emsp;&emsp; 
-    <strong>D</strong>. $\dfrac{23-1}{7}$
+Écrire sous la forme $a^n$ : $A=(-7)^{4}\times (-2)^{4}$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$7x+1=23$  <br>
-    On enlève $1$ : $7x=23-1$.  <br>
-    Puis on divise par $7$ : $x=\dfrac{23-1}{7}$.  <br>
-    Bonne réponse : <strong>D</strong>.
+$A=(-7)^{4}\times (-2)^{4}$<br>$A=((-7) \times (-2)) \times ((-7) \times (-2)) \times ((-7) \times (-2)) \times ((-7) \times (-2))$<br>$A= ((-7) \times (-2))^{4}={\color{#EB7F73}\boldsymbol{(14)^{4}}}$
 </div>
   
 </article>
+
 
 
 
@@ -283,18 +286,18 @@ $7x+1=23$  <br>
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-$ZRSB$ est un parallélogramme tel que ses diagonales $[ZS]$ et $[RB]$ ont la même longueur et sont perpendiculaires.<br>Déterminer la nature de $ZRSB$ en justifiant la réponse.
+Multiplier par $0{,}6$ revient à $\ldots$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Les segments de même couleur sont parallèles sur le schéma suivant :<br>
-On sait que $[ZS]\perp[RB]$ et $ZS=RB$.<br>Si un parallélogramme a des diagonales perpendiculaires et de même longueur, alors c'est un carré.<br>$ZRSB$ est donc un carré.
+Multiplier par $0{,}6$ revient à diminuer de ${\color{#EB7F73}\boldsymbol{40~\%}}$ car $0{,}6 = 60~\% = 100~\% - 40~\%$.
 </div>
   
 </article>
+
 
 
 
@@ -317,28 +320,57 @@ On sait que $[ZS]\perp[RB]$ et $ZS=RB$.<br>Si un parallélogramme a des diagonal
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-$WXY$ est un triangle rectangle en $W$ dans lequel
-      $WX=6$ et $WY=\sqrt{10}$.<br>
-       Calculer la valeur exacte de $XY$ .
+Quel est le périmètre de la figure ci-dessous ?
+<br>
+<img src="3auto_s52_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-On utilise le théorème de Pythagore dans le triangle $WXY$,  rectangle en $W$.<br>
-On obtient :<br>
-$\begin{aligned}
-XY^2&=WX^2+WY^2\\
-XY^2&=\sqrt{10}^2+6^2\\
-XY^2&=10+36\\
-XY^2&=46\\
-XY&={\color{#8B3C52}\boldsymbol{\sqrt{46}}}
-\end{aligned}$
+Le périmètre de cette figure est : ${\color{#EB7F73}\boldsymbol{30}}$ u.l.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+$\widehat{XRY}$ est un angle :<br><br>A. nul &emsp; B. aigu &emsp; C. droit &emsp; D. obtus
+<br>
+<img src="3auto_s52_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+</div>
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
+$\widehat{XRY}$ est un angle <span class="rep">aigu</span>. Un angle aigu est un angle dont la mesure est comprise entre $0°$ et $90°$. Réponse <span class="rep">B</span>.
 
 </div>
   
 </article>
+
 
 
 </section>
@@ -368,19 +400,18 @@ XY&={\color{#8B3C52}\boldsymbol{\sqrt{46}}}
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Dans une école de 1100 étudiants, $25\%$ des étudiants portent des lunettes.<br>
-    Combien d'étudiants portent des lunettes ?
+Écrire sous la forme de la somme d'un nombre entier et d'une fraction inférieure à 1.<br>$\dfrac{6}{5} = \phantom{00}\text{........}\phantom{00} + \dfrac{\phantom{00}\text{........}\phantom{00}}{\phantom{00}\text{........}\phantom{00}}$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Le nombre d'étudiants qui portent des lunettes est égal à :<br>
-    $1\,100 \times \dfrac{25}{100} = \dfrac{27\,500}{100}={\color{#8B3C52}\boldsymbol{275}}$.
+$\dfrac{6}{5} = {\color{#EB7F73}\boldsymbol{1}}+\dfrac{{\color{#EB7F73}\boldsymbol{1}}}{{\color{#EB7F73}\boldsymbol{5}}} = {\color{#EB7F73}\boldsymbol{1{,}2}}$
 </div>
   
 </article>
+
 
 
 
@@ -403,19 +434,18 @@ Le nombre d'étudiants qui portent des lunettes est égal à :<br>
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Placer les points : $J(-0{,}066), K(-0{,}038), L(-0{,}028)$.
-
-<br><br><img src="3auton15_2_enonce_01.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
+Quelle est l'écriture décimale du nombre dont l'écriture scientifique est $6{,}248\times 10^{3}$ ?<br><br>A. $6\,248$ &emsp; B. $0{,}006\,248$ &emsp; C. $624{,}8$ &emsp; D. $6\,000{,}624\,8$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-<img src="3auton15_2_corr_02.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Multiplier par $10^{3}$ revient à multiplier par $1\,000$, donc l'écriture décimale de $6{,}248\times 10^{3}$ est : ${\color{#EB7F73}\boldsymbol{6\,248}}$.<br>La bonne réponse est la réponse <span class="rep">A</span>.
 </div>
   
 </article>
+
 
 
 
@@ -438,17 +468,18 @@ Placer les points : $J(-0{,}066), K(-0{,}038), L(-0{,}028)$.
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Calculer le périmètre exact d'un rectangle de longueur $7{,}3\text{ cm}$ et de largeur $2{,}4\text{ cm}$
+$51\,941$ est-il divisible par $9$ ?
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangle} = 2 \times (7{,}3 + 2{,}4)\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = 2 \times 9{,}7\text{ cm}$<br>$\mathcal{P}_\text{rectangle} = {\color{#8B3C52}\boldsymbol{19{,}4}}\text{ cm}$
+$5+1+9+4+1=20=9\times 2+2$<br>La somme des chiffres de $51\,941$ n'est pas divisible par $9$ donc $51\,941$ <span class="rep">n'est pas divisible par $9$</span>.
 </div>
   
 </article>
+
 
 
 
@@ -471,25 +502,54 @@ $\mathcal{P}_\text{rectangle} = 2 \times (L + l)$<br>$\mathcal{P}_\text{rectangl
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-<br>
-Sur la figure ci-dessus, dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. Déterminer la longueur $YX$.<br><img src="3autog12_03.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
+Calculer le périmètre exact d'un cercle de diamètre $2~\text{cm}$.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
-    D'après le théorème de Thalès, on a : <br>
-    $\dfrac{YX}{YV} =
-    \dfrac{XT}{UV}$. <br>
-    En remplaçant par les longueurs, on obtient : <br>
-    $\dfrac{YX}{YV} = \dfrac{18}{12}=1{,}5$.<br>
-    On en déduit que : <br>
-    $YX = 1{,}5 \times 24 = {\color{#8B3C52}\boldsymbol{36}}$ cm.
+$\mathcal{P}_\text{cercle} = d \times \pi = 2~\text{cm} \times \pi = {\color{#EB7F73}\boldsymbol{2\pi}}~\text{cm}$
 </div>
   
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Sur la figure, dans le triangle $FTC$, les droites $(TC)$ et $(XE)$ sont parallèles.<br>Déterminer la longueur $FT$.
+<br>
+<img src="3auto_s53_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+</div>
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
+Dans le triangle $FTC$, les droites $(TC)$ et $(XE)$ sont parallèles.<br>D'après le théorème de Thalès, on a : $\dfrac{FT}{FE} = \dfrac{TC}{XE}$.<br>En remplaçant par les longueurs : $\dfrac{FT}{FE} = \dfrac{15}{10}=1{,}5$.<br>On en déduit que : $FT = 1{,}5 \times 30 = {\color{#EB7F73}\boldsymbol{45}}~\text{cm}$.
+</div>
+  
+</article>
+
 
 
 </section>
@@ -519,17 +579,18 @@ Dans le triangle $YXT$, les droites $(XT)$ et $(UV)$ sont parallèles. <br>
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Donner l'écriture scientifique de $7\,290$.
+$\dfrac{1}{4} +~ \ldots =0{,}33$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$7\,290 = {\color{#8B3C52}\mathbf{7{,}29 \times 10^{3}}}$.
+Comme $\dfrac{1}{4}=0{,}25$, alors : $\dfrac{1}{4}+ {\color{#EB7F73}\boldsymbol{0{,}08}} =0{,}33$
 </div>
   
 </article>
+
 
 
 
@@ -552,18 +613,18 @@ $7\,290 = {\color{#8B3C52}\mathbf{7{,}29 \times 10^{3}}}$.
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
+Écrire sous la forme $a^n$ : $A=\dfrac{(-6)^{5}}{(-3)^{5}}$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+$A=\dfrac{(-6)^{5}}{(-3)^{5}}=\left(\dfrac{-6}{-3}\right)^{5}={\color{#EB7F73}\boldsymbol{2^{5}}}$
 </div>
   
 </article>
+
 
 
 
@@ -586,17 +647,18 @@ Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Donner le nom de chacun des solides.<br><br><br><img src="3autog07_1_16.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Multiplier par $0{,}79$ revient à $\ldots$
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-Prisme droit avec une base ayant $4$ sommets.
+Multiplier par $0{,}79$ revient à diminuer de ${\color{#EB7F73}\boldsymbol{21~\%}}$ car $0{,}79 = 79~\% = 100~\% - 21~\%$.
 </div>
   
 </article>
+
 
 
 
@@ -619,28 +681,52 @@ Prisme droit avec une base ayant $4$ sommets.
     <div class="exo-label">Question</div>
   </div>
   <div class="exo-enonce">
-Compléter à l'aide des longueurs $WT$, $WV$ et $TV$ :  
-    
-
-$$
-    \cos\left(\widehat{WTV}\right)=\dfrac{\ldots}{\ldots}
-    $$<br><img src="3autog13_2_05.svg" alt="3autog13_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Calculer le périmètre d'un rectangle $TUVW$ de $11~\text{cm}$ de longueur et de $10~\text{cm}$ de largeur.
 </div>
   
   <button class="exo-btn" onclick="toggleCorr(this)">
     <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
   </button>
   <div class="exo-corr">
-$WTV$ est rectangle en $W$ donc :
-    
-
-$$
-    \cos\left(\widehat{WTV}\right)
-    = {\color{#8B3C52}\mathbf{\dfrac{WT}{TV}}}.
-    $$
+$\mathcal{P}_{TUVW}=(11~\text{cm}+10~\text{cm})\times2={\color{#EB7F73}\boldsymbol{42}}~\text{cm}$
 </div>
   
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>L'angle $\widehat{xOy}$ mesure $152^\circ$.<br>Combien mesure l'angle $\widehat{yOz}$ s'ils sont supplémentaires l'un de l'autre ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleCorr(this)">
+    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="exo-corr">
+Deux angles adjacents supplémentaires sont deux angles dont les côtés non communs forment un angle plat.<br>Alors $\widehat{yOz}=180^\circ-152^\circ={\color{#EB7F73}\boldsymbol{28^\circ}}$.
+</div>
+  
+</article>
+
 
 
 </section>
@@ -746,6 +832,9 @@ $$
 })();
 </script>
 
+
+<script src="/mabemat/js/projection.js"></script>
+
     </div>
   
   
@@ -774,7 +863,7 @@ $$
   </script>
   <script>
      
-    const BUILD_TS = '1779959288';
+    const BUILD_TS = '1780468720';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

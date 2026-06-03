@@ -8,125 +8,144 @@ weight: 4
 
 {{< auto3-seance titre="Séance 10" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Calculer le carré de $12$
+Calculer $\dfrac{1}{6}$ de $540~\text{L}$.
 ---CORR---
-$12^2={\color{#8B3C52}\boldsymbol{144}}$
+Prendre $\dfrac{1}{6}$ d'une quantité revient à la diviser par $6$.<br>$\dfrac{1}{6}$ de $540 = 540\div 6 = {\color{#EB7F73}\boldsymbol{90}}~\text{L}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
----Q---
-Une voiture roule à la vitesse de $110\text{ km/h}$ sur une route sèche.<br>
-    En utilisant le graphique ci-dessous, quelle est la distance de freinage en mètres ?<br><img src="3autop09_2_01.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Pour une vitesse de $110\text{ km/h}$, la distance de freinage est d'environ ${\color{#8B3C52}\boldsymbol{104}}\text{ m}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
----Q---
-Compléter.<br>$8\,100\,\text{cm}^3=\ldots\,\text{L}$
----CORR---
-$8\,100\,\text{cm}^3=8\,100\div 1\,000\,\text{dm}^3={\color{#8B3C52}\boldsymbol{8{,}1\,\mathbf{L}}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
----Q---
-Déterminer la valeur exacte de $UV$.<br><br><br><img src="3autog11_2_02.svg" alt="3autog11_2" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-On utilise le théorème de Pythagore dans le triangle $TUV$,  rectangle en $U$.<br>
-      On obtient :
 
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Justifier si les nombres proposés sont des solutions de l'équation donnée ou non $80x-320=-20x^2+80x$ pour $x=-4$, $x=4$ puis $x=-1$.
+---CORR---
+Pour $x=-4$ : <br>
+$80(-4)-320=-640$ 
+et $-20(-4)^2+80(-4)=0$ 
+<br>Comme $-640\neq 0$ : <span class="rep">non solution</span>.<br><br>
+Pour $x=4$ : $80(4)-320=0$ 
+et $-20(4)^2+80(4)=-640$ 
+<br>Comme $0\neq-640$ : <span class="rep">non solution</span>.<br><br>
+Pour $x=-1$ : <br>
+$80(-1)-320=-400$ 
+et $-20(-1)^2+80(-1)=60$ 
+<br>Comme $-400\neq 60$ : <span class="rep">non solution</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Placer les points suivants : $A(1\,;\,0)$ ; $B(3\,;\,1)$.
+---CORR---
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+$0{,}4~\text{dm}^3 = \ldots~\text{m}^3$
+---CORR---
+$0{,}4~\text{dm}^3 = 0{,}4\div 1\,000~\text{m}^3 = {\color{#EB7F73}\boldsymbol{0{,}000\,4~\text{m}^3}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Dans une collection de $1\,000$ disques, on a noté leur style de musique.
 <br>
-
-      $\begin{aligned}
-        TU^2+UV^2&=TV^2\\
-        UV^2&=TV^2-TU^2\\
-        UV^2&=9^2-4^2\\
-        UV^2&=81-16\\
-        UV^2&=65\\
-        UV&={\color{#8B3C52}\boldsymbol{\sqrt{65}}}
-        \end{aligned}$
-
+a. Déterminer l'effectif manquant (Rap).<br>b. Déterminer les fréquences pour chaque style (en pourcentage, arrondir au dixième si besoin).
 <br>
-Mentalement : <br>
-    La longueur $UV$ est donnée par la racine carrée de la différence des carrés de $9$ et de $4$.<br>
-    Cette différence vaut $81-16=65$. <br>
-    La valeur cherchée est donc : $\sqrt{65}$.
+<img src="3auto_s10_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+a. $1\,000-(138+320+119+32+220)=1\,000-829={\color{#EB7F73}\boldsymbol{171}}$<br><br>b. Fréquences :
+
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Style</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Pop</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Jazz</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">RnB</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Folk</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Rock</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Rap</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Effectif</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$138$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$320$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$119$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$32$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$220$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$171$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Fréquence</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{13{,}8\,\%}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{32\,\%}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{11{,}9\,\%}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{3{,}2\,\%}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{22\,\%}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{17{,}1\,\%}}$</td></tr>
+</table>
 {{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 11" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Effectuer les calculs suivants en donnant le résultat sous forme d'une fraction.<br>$A = 2 + \dfrac{6}{3} $
+$A = \dfrac{1}{5} - \dfrac{4}{5} \times \dfrac{5}{2}$
 ---CORR---
-$A = 2 + \dfrac{6}{3} $<br><br>$A = \dfrac{6}{3} + \dfrac{6}{3}$<br><br>$A = \dfrac{12}{3}$<br><br>$A  ={\color{#8B3C52}\boldsymbol{4}}$<br>
+$A = \dfrac{1}{5} - \dfrac{20}{10} = \dfrac{2}{10} - \dfrac{20}{10} = \dfrac{-18}{10} = {\color{#EB7F73}\boldsymbol{-\dfrac{9}{5}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 " >}}
----Q---
-Calculer $A = x \times x + 7$, pour $x = 10$.
----CORR---
-$A = 10 \times 10 + 7$<br>$A = 100 + 7$<br>$A = {\color{#8B3C52}\boldsymbol{107}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
----Q---
-Placer les points suivants : $A(4\;;\;1)$ ; $B(-5\;;\;-2)$ ; $C(0\;;\;-5)$ et $D(2\;;\;0)$.
 
-<br>
-<img src="3autog01_1_enonce.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr.png" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:400px">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Sur la figure suivante : 
-        <br> $\leadsto U$ est sur $[TR]$,
-        <br> $\leadsto V$ est sur $[TS]$,<br> $\leadsto$ les droites $(RS)$ et $(UV)$ sont parallèles.<br>Écrire la double égalité de Thalès.<br>
-        <img src="3autog12_1_04.svg" alt="3autog12_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Résoudre : $\dfrac{-4}{-2}=\dfrac{x}{-3}$
 ---CORR---
-Dans le triangle $RST$ :
-       <br> $\leadsto$ $U\in[TR]$,
-       <br> $\leadsto$ $V\in[TS]$,
-       <br> $\leadsto$  $(RS)//(UV)$,
-       <br> donc d'après le théorème de Thalès, les triangles $RST$ et $UVT$ ont des longueurs proportionnelles.
-
-<br>
-$\dfrac{TU}{TR}=\dfrac{TV}{TS}=\dfrac{UV}{RS}$<br><br><strong>Remarque</strong><br>On pourrait aussi écrire : $\dfrac{TR}{TU}=\dfrac{TS}{TV}=\dfrac{RS}{UV}$
+Les produits en croix sont égaux : $-2\times x = -4\times(-3)$<br>On divise par $-2$ : $x = \dfrac{-4\times(-3)}{-2} = {\color{#EB7F73}\boldsymbol{-6}}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Déterminer les coordonnées des points $N$, $O$ et $P$.
+<br>
+<img src="3auto_s11_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+$N({\color{#EB7F73}\boldsymbol{0}}\,;\,{\color{#EB7F73}\boldsymbol{-2}})$, $O({\color{#EB7F73}\boldsymbol{-2}}\,;\,{\color{#EB7F73}\boldsymbol{0}})$, $P({\color{#EB7F73}\boldsymbol{-4{,}5}}\,;\,{\color{#EB7F73}\boldsymbol{-4}})$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Convertir $33~\text{h}$ en jours et heures.
+---CORR---
+$33 = 1\times 24 + 9$<br>$33~\text{h} = {\color{#EB7F73}\boldsymbol{1~\text{j}~9~\text{h}}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Le graphique donne l'évolution de la température (en °C) en fonction de l'horaire (en heures).<br>Entre 6h et 16h, de combien de degrés la température a-t-elle augmenté ?
+<br>
+<img src="3auto_s11_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+À 6h, la température est de $-10^\circ$C ; à 16h, elle est de $2{,}5^\circ$C.<br>Augmentation : $2{,}5-(-10)=2{,}5+10={\color{#EB7F73}\boldsymbol{12{,}5}}^\circ$C.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 12" >}}
 
-{{< auto3-exo num="Exercice 1 " >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter avec le signe < ou >.<br>$0{,}7 \quad \ldots   \quad-0{,}9$
+Convertir $1~\text{h}~08~\text{min}$ en secondes.
 ---CORR---
-$0{,}7 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -0{,}9$
+$1~\text{h}~08~\text{min} = (1\times 3\,600~\text{s}) + (8\times 60~\text{s}) = 3\,600+480 = {\color{#EB7F73}\boldsymbol{4\,080~\text{s}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2 — Identifier la démarche de résolution" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Pour résoudre l'équation $6x+3=12$, on effectue le calcul :<br>
-        <strong>A.</strong>$ (12-6)-3\ \ \ \ \ \ \ \ \ \  $<strong>B.</strong>$ \dfrac{12-3}{6}\ \ \ \ \ \ \ \ \ \ $ <strong>C.</strong>$ \dfrac{12}{6}-3\ \ \ \ \ \ \ \ \ \  $<strong>D.</strong>$ 12\times 6-3$
-
+Simplifier, au maximum, l'écriture, si possible : $x \times x \times 2 \times x$
 ---CORR---
-Pour résoudre l'équation $6x+3=12$, on commence par soustraire $3$ des deux membres de l'équation, ce qui donne $6x=12-3$.<br>
-
-
-    Ensuite, on divise les deux membres par $6$ pour obtenir $x=\dfrac{12-3}{6}$.<br>
-    
-    La bonne réponse est la réponse <span class="rep">B</span>.
-
+$x \times x \times 2 \times x = {\color{#EB7F73}\boldsymbol{2x^3}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3 " >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-$CEJI$ est un parallélogramme tel que ses côtés $[CE]$ et $[EJ]$ sont perpendiculaires et ses diagonales $[CJ]$ et $[EI]$ aussi.<br>Déterminer la nature de $CEJI$ en justifiant la réponse.
+Comparer : $1{,}2 \quad\ldots\quad -1{,}6$
 ---CORR---
-On sait que $[CE]\perp[EJ]$ et $[CJ]\perp[EI]$.<br>Si un parallélogramme a deux côtés consécutifs perpendiculaires et des diagonales perpendiculaires, alors c'est un carré.<br>$CEJI$ est donc un carré.
+$1{,}2 \quad {\color{#EB7F73}\boldsymbol{>}} \quad -1{,}6$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4 " >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Dans le triangle $WXY$ rectangle en $W$,<br> $WX=8\text{ cm}$ et $\widehat{WXY}=45^\circ$.<br>Calculer $XY$ à $0,1\text{ cm}$ près.<br><br><br><img src="3autog13_1_05.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Écrire sous la forme d'un entier et d'une fraction inférieure à 1, puis donner l'écriture décimale de $\dfrac{9}{8}$.
 ---CORR---
-Dans le triangle $WXY$ rectangle en $W$,<br> le cosinus de l'angle $\widehat{WXY}$ est défini par :<br>$\cos\left(\widehat{WXY}\right)=\dfrac{WX}{XY}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(45^\circ\right)}{\color{red}{1}}=\dfrac{8}{XY}$<br><br>$XY=\dfrac{8 \times\color{red}{1}}{\cos\left(45^\circ\right)}$<br>soit $XY\approx{\color{#8B3C52}\boldsymbol{11{,}3}}\text{ cm}$.
+$\dfrac{9}{8} = {\color{#EB7F73}\boldsymbol{1}} + \dfrac{{\color{#EB7F73}\boldsymbol{1}}}{{\color{#EB7F73}\boldsymbol{8}}} = {\color{#EB7F73}\boldsymbol{1{,}125}}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Dans le parc naturel de Ruyron, voici le diagramme représentant les effectifs de quelques espèces.
+<br>
+L'espèce la plus nombreuse représente :<br>A. Moins de la moitié des animaux &emsp; B. La moitié des animaux &emsp; C. Plus de la moitié des animaux
+<br>
+<img src="3auto_s12_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Les Léopards représentent le secteur le plus grand ($144°$ soit $40\%$).<br>$40\% < 50\%$, donc les Léopards représentent <span class="rep">moins de la moitié</span> des animaux.<br>La bonne réponse est la réponse <span class="rep">A</span>.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

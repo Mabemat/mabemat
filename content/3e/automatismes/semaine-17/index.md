@@ -8,109 +8,120 @@ weight: 17
 
 {{< auto3-seance titre="Séance 49" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Donner l'écriture scientifique de $100$
+Ce matin, Schona a ouvert une bouteille d'eau.<br>Elle a bu $\dfrac{1}{5}$ de la bouteille. Puis à midi, elle a bu $\dfrac{1}{3}$ du reste.<br>Quelle fraction de la bouteille a-t-elle bu à midi ?
 ---CORR---
-$100 = {\color{#8B3C52}\boldsymbol{1\times 10^{2}}}$
+Le matin, Schona a bu $\dfrac{1}{5}$ de la bouteille. Il reste alors $\dfrac{4}{5}$ de la bouteille.<br>À midi, elle a bu $\dfrac{1}{3}$ du reste.<br>Comme $\dfrac{1}{3}\times \dfrac{4}{5}=\dfrac{4}{15}$, elle a bu ${\color{#EB7F73}\boldsymbol{\dfrac{4}{15}}}$ de la bouteille à midi.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
+Écrire sous la forme $a^n$ : $- \dfrac{1}{5\times5\times5\times5\times5}$
 ---CORR---
-Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
+$- \dfrac{1}{5\times5\times5\times5\times5} = {\color{#EB7F73}\boldsymbol{-5^{-5}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Calculer le volume d'un prisme droit de hauteur $1{,}4\text{ m}$ et dont les bases sont des triangles de base $9\text{ dm}$ et de hauteur correspondante $42\text{ cm}$.
+Sur un site, un pantalon est vendu $42$€ au lieu de $60$€.<br>Le pourcentage de réduction est de ...<br><br>A. $30~\%$ &emsp; B. $70~\%$ &emsp; C. $18~\%$
 ---CORR---
-$\mathcal{V}=\mathcal{B} \times h=\dfrac{9\text{ dm}\times42\text{ cm}}{2}\times1{,}4\text{ m}=\dfrac{9\text{ dm}\times4{,}2\text{ dm}}{2}\times14\text{ dm}={\color{#8B3C52}\boldsymbol{264{,}6\mathbf{ dm}^3}}$
+La réduction est de $18$€ car $60-42 = 18$. Or $18$ sur un total de $60$, c'est :<br>$\dfrac{18}{60} = 0{,}3 = {\color{#EB7F73}\boldsymbol{30~\%}}$<br>La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-On choisit au hasard un ticket parmi contenant $8$ tickets gagnants et $14$ tickets perdants.<br>             Quelle est la probabilité d'obtenir un ticket gagnant ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
+Un carré de côté $8~\text{cm}$ a le même périmètre qu'un rectangle de largeur $14~\text{cm}$ et de longueur $2~\text{cm}$ ?<br><br>A. Vrai &emsp; B. Faux
 ---CORR---
-Dans une situation d'équiprobabilité,
-        on calcule la probabilité d'un événement par le quotient : 
-        $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
-        La probabilité est donc donnée par :   $\dfrac{\text{Nombre de boules gagnants}}{\text{Nombre total de boules}}
-             =\dfrac{8}{22}  =\dfrac{4{\color{#C5607A}\boldsymbol{\times2}} }{11{\color{#C5607A}\boldsymbol{\times2}}}={\color{#8B3C52}\boldsymbol{\dfrac{4}{11}}}$.
+<span class="rep">Vrai</span><br>Le périmètre du carré est : $4\times 8~\text{cm} = 32~\text{cm}$.<br>Le périmètre du rectangle est : $2\times 14~\text{cm} + 2\times 2~\text{cm} = 32~\text{cm}$.<br>Les deux périmètres sont égaux.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Les angles $\widehat{xOy}$ et $\widehat{yOz}$ sont adjacents.<br>L'angle $\widehat{xOy}$ mesure $35^\circ$.<br>Combien mesure l'angle $\widehat{yOz}$ s'ils sont complémentaires l'un de l'autre ?
+
+---CORR---
+Deux angles adjacents complémentaires sont deux angles dont les côtés non communs forment un angle droit.<br>Alors $\widehat{yOz}=90^\circ-35^\circ={\color{#EB7F73}\boldsymbol{55^\circ}}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 50" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Quel est le carré de $10$ ?
+Calculer : $A = \dfrac{6}{7} + \dfrac{4}{7} \times \dfrac{5}{2}$
 ---CORR---
-Le carré d'un nombre est ce nombre multiplié par lui-même : $10\times10=100$
+$A = \dfrac{6}{7} + \dfrac{4}{7} \times \dfrac{5}{2}$<br>$A = \dfrac{6}{7} + \dfrac{20}{14}$<br>$A = \dfrac{12}{14} + \dfrac{20}{14}$<br>$A = \dfrac{32}{14} = \dfrac{16{\color{#C5607A}\boldsymbol{\times2}}}{7{\color{#C5607A}\boldsymbol{\times2}}}={\color{#EB7F73}\boldsymbol{\dfrac{16}{7}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Sur le graphique ci-dessus, on a représenté le prix en euros en fonction de la masse en kilogrammes de cerises achetés.<br>Quel est le prix à payer pour l'achat de $1{,}9$ kg de cerises ?<br><img src="3autop09_5_01.svg" alt="3autop09_5" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Le prix à payer pour l'achat de $1{,}9$ kg de cerises est de ${\color{#8B3C52}\boldsymbol{6{,}10}}$ €.<br><img src="3autop09_5_corr_02.svg" alt="3autop09_5_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Compléter.<br>$ 12\,\text{dag} = \ldots \,\text{g}$
----CORR---
-Un décagramme est une dizaine de grammes donc :<br>$ 12\,\text{dag} =  12\times10\,\text{g} ={\color{#8B3C52}\boldsymbol{ 120\,\mathbf{g}}}$$\,\text{g}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-$6 \,\, ; \,\, 9 \,\, ; \,\, 11\,\, ; \,\, 14$<br>
-   
-        La moyenne de cette série est :
 
- 
- 
-    
-    	<br> <strong>A</strong>. $12$&emsp;&emsp; <strong>B</strong>. $9{,}5$&emsp;&emsp; <strong>C</strong>. $10$&emsp;&emsp; <strong>D</strong>. $11$&emsp;&emsp; <br>
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Écrire sous la forme $a^n$ : $A=(7^{3})^{4}$
 ---CORR---
-La somme des $4$ valeurs est : $6+9+11+14 =40$.<br>
-         La moyenne est donc $\dfrac{40}{4}=10$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
+Il y a $4\times 3$ facteurs tous égaux à $7$.<br>$A=7^{3\times4} = {\color{#EB7F73}\boldsymbol{7^{12}}}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+$3\,921$ est-il divisible par $2$ ?
+---CORR---
+Le chiffre des unités de $3\,921$ est $1$ donc $3\,921$ <span class="rep">n'est pas divisible par $2$</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Calculer le périmètre d'un triangle rectangle $LMN$ qui a pour côtés : $21~\text{cm}$, $29~\text{cm}$ et $20~\text{cm}$.
+---CORR---
+$\mathcal{P}_{LMN}=21~\text{cm}+20~\text{cm}+29~\text{cm}={\color{#EB7F73}\boldsymbol{70}}~\text{cm}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Sur la figure, dans le triangle $UKG$, les droites $(KG)$ et $(XC)$ sont parallèles.<br>Déterminer la longueur $UK$.
+<br>
+<img src="3auto_s50_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Dans le triangle $UKG$, les droites $(KG)$ et $(XC)$ sont parallèles.<br>D'après le théorème de Thalès, on a : $\dfrac{UK}{UC} = \dfrac{KG}{XC}$.<br>En remplaçant par les longueurs : $\dfrac{UK}{UC} = \dfrac{6}{4}=1{,}5$.<br>On en déduit que : $UK = 1{,}5 \times 8 = {\color{#EB7F73}\boldsymbol{12}}~\text{cm}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 51" >}}
 
 {{< auto3-exo num="Exercice 1" >}}
 ---Q---
-Combien valent les deux quarts de $16$ ?
+Résoudre : $9-(-6x+5)=7x+8$
 ---CORR---
-Un quart de $16$ est égal à $16 \div 4$, soit 4.<br>
-        Donc les deux quarts de $16$ valent $2 \times 4 = 8$.
+$9-(-6x+5)=7x+8$<br>$9+6x-5=7x+8$<br>$6x+4=7x+8$<br>$6x+4{\color{#C5607A}\boldsymbol{-7x}}=7x+8{\color{#C5607A}\boldsymbol{-7x}}$<br>$-x+4=8$<br>$-x+4{\color{#C5607A}\boldsymbol{-4}}=8{\color{#C5607A}\boldsymbol{-4}}$<br>$-x=4$<br>$-x{\color{#C5607A}\boldsymbol{\div(-1)}}=4{\color{#C5607A}\boldsymbol{\div(-1)}}$<br>$x=-4$<br>La solution de l'équation $9-(-6x+5)=7x+8$ est ${\color{#EB7F73}\boldsymbol{-4}}$.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 2" >}}
 ---Q---
-Exprimer le quart de $m$  en fonction de $m$.
+Donner l'écriture décimale de $5{,}37 \times 10^{4}$.
 ---CORR---
-Le quart de $m$ peut se noter : ${\color{#8B3C52}\boldsymbol{\dfrac{m}{4}}}$, ${\color{#8B3C52}\boldsymbol{m\div 4}}$, ou ${\color{#8B3C52}\boldsymbol{0,25m}}$.
+L'écriture décimale de $5{,}37 \times 10^{4}$ est ${\color{#EB7F73}\boldsymbol{53\,700}}$.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Placer les points suivants : $A(-2\;;\;-6)$ ; $B(5\;;\;3)$ ; $C(0\;;\;-4)$ et $D(-4\;;\;0)$.
-
-    <br><br><img src="3autog01_1_03.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
+Augmenter de $9~\%$ revient à multiplier par $\ldots$
 ---CORR---
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_04.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+Augmenter de $9~\%$ revient à multiplier par ${\color{#EB7F73}\boldsymbol{1{,}09}}$ car $100~\% + 9~\% = 109~\%$.
 {{< /auto3-exo >}}
+
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
-On considère l’algorithme suivant :
-
-    
-
-    Qu’obtient‑on si on choisit $1$ comme nombre de départ ?<br><img src="scratch_3autoi01_2_05.svg" alt="scratch_3autoi01_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Calculer le périmètre exact d'un cercle de rayon $3~\text{cm}$.
 ---CORR---
-Si on choisit $1$ comme nombre de départ, alors variable prend la valeur $1$.<br>
-    Ensuite, resultat prend la valeur $4 \times 1 = 4$.<br>
-    Puis, resultat prend la valeur $4 + 14 = 18$.<br>
-    Enfin, resultat prend la valeur $\dfrac{18}{2} = 9$.<br>
-    Résultat final : ${\color{#8B3C52}\mathbf{9}}$.
+$\mathcal{P}_\text{cercle} = 2 \times r \times \pi = 2 \times 3~\text{cm} \times \pi = {\color{#EB7F73}\boldsymbol{6\pi}}~\text{cm}$
 {{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
+Donner la mesure de l'angle $\widehat{LSV}$ sachant que :<br>- la demi-droite $[SN)$ est la bissectrice de l'angle $\widehat{LSV}$,<br>- $\widehat{LSN}$ mesure $30^\circ$.
+---CORR---
+La demi-droite $[SN)$ est la bissectrice de l'angle $\widehat{LSV}$.<br>Par définition de la bissectrice, elle partage cet angle en deux angles de même mesure.<br>Donc : $\widehat{LSV} = 2 \times 30^\circ = {\color{#EB7F73}\boldsymbol{60^\circ}}$.
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}

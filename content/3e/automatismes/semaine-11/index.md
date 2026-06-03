@@ -8,140 +8,143 @@ weight: 11
 
 {{< auto3-seance titre="Séance 31" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Écrire sous la forme de la somme d'un nombre entier et d'une fraction inférieure à 1 puis donner l'écriture décimale.<br>$ \dfrac{11}{10} = \phantom{00}\text{........}\phantom{00} + \dfrac{\phantom{00}\text{........}\phantom{00}}{\phantom{00}\text{........}\phantom{00}} = \phantom{00}\text{........}\phantom{00}  $
+Factoriser : $A = x(3x-5)+2(3x-5)$
 ---CORR---
-$ \dfrac{11}{10} = {\color{#8B3C52}\boldsymbol{1}}+\dfrac{{\color{#8B3C52}\boldsymbol{1}}}{{\color{#8B3C52}\boldsymbol{10}}} = {\color{#8B3C52}\boldsymbol{1,1}} $
+$A = x(3x-5)+2(3x-5)$&emsp;On remarque que $(3x-5)$ est un facteur commun.<br>$\phantom{ABC}={\color{#C5607A}\boldsymbol{x}}{\color{#EB7F73}\boldsymbol{(3x-5)}}+{\color{#C5607A}\boldsymbol{2}}{\color{#EB7F73}\boldsymbol{(3x-5)}}$<br>$\phantom{ABC}={\color{#EB7F73}\boldsymbol{(3x-5)}}{\color{#C5607A}\boldsymbol{(x+2)}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Réduire cette expression, si cela est possible : $B=2x+2+x$
----CORR---
-$B = 2x+2+x$<br>$B = {\color{#8B3C52}\boldsymbol{3x+2}}$<br>
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Placer les points suivants : $A(-1\;;\;3)$ ; $B(6\;;\;-1)$ ; $C(5\;;\;0)$ et $D(0\;;\;2)$.
 
-    <br><br><img src="3autog01_1_01.svg" alt="3autog01_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Les points sont placés aux coordonnées indiquées :<br><img src="3autog01_1_corr_02.svg" alt="3autog01_1_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Parmi les 4 réponses ci-dessous, une seule est correcte.<br>
-Donner la lettre correspondante.<br>Une voiture roule à $60$ km/h. Combien de temps met-elle pour parcourir $75$ km ?
-
-     
-    <br> <strong>A</strong>. 37 min 30 s&emsp;&emsp; 
-    <strong>B</strong>. 1 h 52 min 30 s&emsp;&emsp; 
-    <strong>C</strong>. 1 h 15 min&emsp;&emsp; 
-    <strong>D</strong>. 2 h 30 min
+Traduire le calcul par une phrase en français.<br>$10 \times(4+6)$
 ---CORR---
-Pour parcourir $75$ km à $60$ km/h, il faut :<br>
-    $\dfrac{75}{60}\text{h}=\dfrac{5}{4}\text{h}=1+\dfrac{1}{4}\text{h}={\color{#8B3C52}\boldsymbol{1\mathbf{h }15\mathbf{min}}}$.<br>
-    La bonne réponse est la réponse <span class="rep">C</span>.
+$10 \times(4+6)$ s'écrit : <span class="rep">le produit de 10 par la somme de 4 et 6</span>.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Soit $LNM$ un triangle rectangle en $L$, complète :<br>$LN^2= \,\,\ldots$
+---CORR---
+Le triangle $LMN$ est rectangle en $L$.<br>D'après le théorème de Pythagore, on a :<br>${\color{#C5607A}\boldsymbol{MN^2=LM^2+LN^2}}$<br>d'où ${\color{#EB7F73}\boldsymbol{LN^2=MN^2-LM^2}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Pour la figure suivante, tracée à main levée, préciser s'il s'agit d'un parallélogramme.
+<br>
+<img src="3auto_s31_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+On sait que $FO = OH$ et $GO = OI$.<br>Or, « si un quadrilatère a ses diagonales qui se coupent en leur milieu, alors c'est un parallélogramme ».<br>Donc ${\color{#EB7F73}\boldsymbol{FGHI}}$ <span class="rep">est un parallélogramme</span>.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+On choisit au hasard un appareil sur le présentoir d'un magasin.<br><br>1. Compléter le tableau des effectifs suivants :
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">&nbsp;</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Smartphones</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Tablettes</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Androïds</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$7$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$4$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">IOSs</th><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$14$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$13$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td></tr>
+</table>
+2. Quelle est la probabilité que l'appareil choisi soit une tablette ?<br>3. On sait que l'appareil choisi est un smartphone. Quelle est la probabilité que ce soit un smartphone Androïd ?
+
+
+---CORR---
+1. Il y a $7+4={\color{#EB7F73}\boldsymbol{11}}$ appareils Androïd. Il y a $13-7={\color{#EB7F73}\boldsymbol{6}}$ smartphones iOS. Il y a $14-6={\color{#EB7F73}\boldsymbol{8}}$ tablettes iOS. Il y a $4+8={\color{#EB7F73}\boldsymbol{12}}$ tablettes. Il y a $13+12={\color{#EB7F73}\boldsymbol{25}}$ appareils au total.
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">&nbsp;</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Smartphones</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Tablettes</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Androïd</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$7$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$4$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{11}}$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">iOS</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{6}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{8}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$14$</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$13$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{12}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{25}}$</td></tr>
+</table>
+2. Il y a $12$ tablettes et $25$ appareils donc la probabilité que l'appareil choisi soit une tablette est de : ${\color{#EB7F73}\boldsymbol{\dfrac{12}{25}}}$.<br>3. Il y a $7$ smartphones Androïd et $13$ smartphones donc la probabilité que ce soit un smartphone Androïd est de : ${\color{#EB7F73}\boldsymbol{\dfrac{7}{13}}}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 32" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter avec le signe < ou >.<br>$$3{,}4 \quad \ldots   \quad3{,}2$$
+Factoriser : $A = 2(3x-2)+x(3x-2)$
 ---CORR---
-$3{,}4 \quad {\color{#8B3C52}\boldsymbol{>}} \quad 3{,}2$
+$A = 2(3x-2)+x(3x-2)$&emsp;On remarque que $(3x-2)$ est un facteur commun.<br>$\phantom{ABC}={\color{#C5607A}\boldsymbol{2}}{\color{#EB7F73}\boldsymbol{(3x-2)}}+{\color{#C5607A}\boldsymbol{x}}{\color{#EB7F73}\boldsymbol{(3x-2)}}$<br>$\phantom{ABC}={\color{#EB7F73}\boldsymbol{(3x-2)}}{\color{#C5607A}\boldsymbol{(2+x)}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Choisis le calcul qui permet de résoudre l'équation suivante : <br>
-Pour résoudre $4x-8=14$ :
 
-    <br> <strong>A</strong>. $(14-4)+8$&emsp;&emsp; 
-    <strong>B</strong>. $\dfrac{14+8}{4}$&emsp;&emsp; 
-    <strong>C</strong>. $\dfrac{14}{4}+8$&emsp;&emsp; 
-    <strong>D</strong>. $14\times 4+8$
----CORR---
-$4x-8=14$  <br>
-    On ajoute $8$ : $4x=14+8$.  <br>
-    Puis on divise par $4$ : $x=\dfrac{14+8}{4}$.  <br>
-    Bonne réponse : <strong>B</strong>.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Compléter.<br>Un angle plein mesure … $^\circ$.
+Traduire la phrase par un calcul :<br>La différence entre le produit de 15 par 9 et le produit de 10 par 9.
 ---CORR---
-Un angle plein mesure ${\color{#8B3C52}\boldsymbol{360}}^\circ$.
+La différence entre le produit de 15 par 9 et le produit de 10 par 9 s'écrit : ${\color{#EB7F73}\boldsymbol{15 \times 9-10 \times 9}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Dans le parc naturel de Secai, il y a beaucoup d'animaux.<br> Voici un diagramme qui représente les effectifs de quelques espèces.
 
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+$1~\text{dm}^2 = \ldots\ldots\ldots~\text{m}^2$
+---CORR---
+$1~\text{dm}^2$ est égal à un centième de $1~\text{m}^2$.<br>$1~\text{dm}^2 = {\color{#EB7F73}\boldsymbol{\dfrac{1}{100}}}~\text{m}^2 = {\color{#EB7F73}\boldsymbol{0{,}01}}~\text{m}^2$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Déterminer la valeur exacte de $ST$.
 <br>
-
-<strong>a.</strong>  Quelle est l'espèce la moins nombreuse ? 
-    
-    	$\square\;$ Gazelles&emsp;&emsp; $\square\;$ Girafes&emsp;&emsp; $\square\;$ Hyènes&emsp;&emsp; $\square\;$ Rhinocéros&emsp;&emsp; <br>
-<br><strong>b.</strong>  Quelle est l'espèce la plus nombreuse ? 
-    
-    	$\square\;$ Girafes&emsp;&emsp; $\square\;$ Rhinocéros&emsp;&emsp; $\square\;$ Hyènes&emsp;&emsp; $\square\;$ Gazelles&emsp;&emsp; <br>
-<br><strong>c.</strong>  L'espèce la plus nombreuse représente ... 
-    
-    	$\square\;$ Plus de la moitié des animaux&emsp;&emsp; $\square\;$ Moins de la moitié des animaux&emsp;&emsp; $\square\;$ La moitié des animaux&emsp;&emsp; <br><br><img src="3autop05_1_03.svg" alt="3autop05_1" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="3auto_s32_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-<strong>a.</strong>  L'animal le moins nombreux parmi ces espèces est :  
-    
-    	$\square\;$ Gazelles&emsp;&emsp; $\square\;$ Girafes&emsp;&emsp; $\blacksquare\;$ Hyènes&emsp;&emsp; $\square\;$ Rhinocéros&emsp;&emsp; <br>
-<br><strong>b.</strong>  L'animal le plus nombreux parmi ces espèces est :  
-    
-    	$\square\;$ Girafes&emsp;&emsp; $\square\;$ Rhinocéros&emsp;&emsp; $\square\;$ Hyènes&emsp;&emsp; $\blacksquare\;$ Gazelles&emsp;&emsp; <br>
-<br><strong>c.</strong>  L'animal le plus nombreux parmi ces espèces représente :  
-    
-    	$\square\;$ Plus de la moitié des animaux&emsp;&emsp; $\blacksquare\;$ Moins de la moitié des animaux&emsp;&emsp; $\square\;$ La moitié des animaux&emsp;&emsp; <br>
+On utilise le théorème de Pythagore dans le triangle $RST$, rectangle en $S$.<br>$RS^2+ST^2=RT^2$<br>$ST^2=RT^2-RS^2$<br>$ST^2=7^2-4^2=49-16=33$<br>$ST={\color{#EB7F73}\boldsymbol{\sqrt{33}}}$<br>Mentalement : La longueur $ST$ est donnée par la racine carrée de la différence des carrés de $7$ et de $4$. Cette différence vaut $49-16=33$. La valeur cherchée est donc : $\sqrt{33}$.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Les points $U$, $M$ et $N$ sont les symétriques respectifs de $Z$, $I$ et $J$ par rapport à $(d)$.<br>Quelle est la longueur du segment $[UM]$ ? Justifier.
+<br>
+<img src="3auto_s32_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Les segments $[ZI]$ et $[UM]$ sont symétriques par rapport à $(d)$.<br>Or, le symétrique d'un segment est un segment de même longueur.<br>Donc les segments $[ZI]$ et $[UM]$ ont la même longueur et ${\color{#EB7F73}\boldsymbol{UM=7{,}9~\text{cm}}}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 33" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Dans une ville de 10000 habitants, $30\%$ des habitants consomment plus de 2 litres d'eau par jour.<br>
-    Combien d'habitants consomment plus de 2 litres d'eau par jour ?
+Une élève souhaite réaliser un programme avec un logiciel de programmation pour dessiner un carré.<br>Par quelles valeurs doit-il compléter les lignes 3 et 5 du bloc personnalisé ci-contre pour obtenir un carré ?<br>$\text{Ligne 3 : }\ldots\quad \text{Ligne 5 : }\ldots$
+<br>
+<img src="3auto_s33_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Le nombre d'habitants qui consomment plus de 2 litres d'eau par jour est égal à :<br>
-    $10\,000 \times \dfrac{30}{100} = \dfrac{300\,000}{100}={\color{#8B3C52}\boldsymbol{3\,000}}$.
+Pour obtenir un carré, il faut répéter ${\color{#EB7F73}\boldsymbol{4}}$ fois et tourner de $\dfrac{360}{4}={\color{#EB7F73}\boldsymbol{90}}$ degrés.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Lire l'abscisse de chacun des points suivants.<br><img src="3auton15_1_enonce_04.svg" alt="3auton15_1_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
+Factoriser l'expression suivante.<br>$A=(3x+4)(2x+1)-(2x+1)(4x-3)$
 ---CORR---
-<img src="3auton15_1_corr_05.svg" alt="3auton15_1_corr" style="display:block;margin:0.8rem auto;max-width:100%"><br>$\ G $ <span class="rep">$(-3{,}2)$</span> &emsp; $\ H $ <span class="rep">$(-1{,}2)$</span> &emsp; $\ I $ <span class="rep">$(0{,}3)$</span>
+$A=(3x+4)(2x+1)-(2x+1)(4x-3)$<br>On remarque que $(2x+1)$ est un facteur commun.<br>$A={\color{#C5607A}\boldsymbol{(3x+4)}}{\color{#EB7F73}\boldsymbol{(2x+1)}}-{\color{#EB7F73}\boldsymbol{(2x+1)}}{\color{#C5607A}\boldsymbol{(4x-3)}}$<br>$A={\color{#EB7F73}\boldsymbol{(2x+1)}}{\color{#C5607A}\boldsymbol{(3x+4-(4x-3))}}$<br>$A={\color{#EB7F73}\boldsymbol{(2x+1)}}{\color{#C5607A}\boldsymbol{(3x+4-4x+3)}}$<br>$A={\color{#EB7F73}\boldsymbol{(2x+1)}}{\color{#C5607A}\boldsymbol{(-x+7)}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Calculer le périmètre du décagone régulier $ABCDEFGHIJ$ représenté ci-dessous :<br>
-<img src="figure.svg" alt="equilateral" style="display:block;margin:0.8rem auto;max-width:100%">
+Ranger les nombres suivants dans l'ordre décroissant : $\dfrac{3}{2}$, $\dfrac{3}{5}$, $\dfrac{15}{8}$, $1$.
 ---CORR---
-
-	Le polygone a $10$ côtés de longueur $6{,}5$ cm.<br>
-Le périmètre est donc égal à :<br>
-$10 \times 6{,}5 = {\color{#8B3C52}\boldsymbol{65}}$ cm.
-
+Un dénominateur commun possible est $40$.<br>$\dfrac{15}{8}=\dfrac{75}{40}$, $\dfrac{3}{2}=\dfrac{60}{40}$, $1=\dfrac{40}{40}$, $\dfrac{3}{5}=\dfrac{24}{40}$<br>Finalement : ${\color{#EB7F73}\boldsymbol{\dfrac{15}{8}~>~\dfrac{3}{2}~>~1~>~\dfrac{3}{5}}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-On considère l’algorithme suivant :
-
-    
-
-    Qu’obtient‑on si on choisit $3$ comme nombre de départ ?<br><img src="scratch_3autoi01_2_07.svg" alt="scratch_3autoi01_2" style="display:block;margin:0.8rem auto;max-width:100%">
+Calculer de tête $\sqrt{81}$.
 ---CORR---
-Si on choisit $3$ comme nombre de départ, alors variable prend la valeur $3$.<br>
-    Ensuite, resultat prend la valeur $4 \times 3 = 12$.<br>
-    Puis, resultat prend la valeur $12 + 20 = 32$.<br>
-    Enfin, resultat prend la valeur $\dfrac{32}{2} = 16$.<br>
-    Résultat final : ${\color{#8B3C52}\mathbf{16}}$.
+$\sqrt{81}={\color{#EB7F73}\boldsymbol{9}}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+À l'aide du schéma ci-dessous, déterminer :<br>- deux segments de même longueur ;<br>- le milieu d'un segment ;<br>- un triangle rectangle ;<br>- un triangle isocèle.
+<br>
+<img src="3auto_s33_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+- Deux segments de même mesure : $[KJ]$ et $[JM]$ ou $[KL]$ et $[LM]$ ou $[IN]$ et $[NM]$.<br>- $J$ est le milieu du segment $[KM]$.<br>- $KIM$ est un triangle rectangle en $K$, $KJL$ est un triangle rectangle en $J$ et $MJL$ est un triangle rectangle en $J$.<br>- $KLM$ est un triangle isocèle en $L$ et $INM$ est un triangle isocèle en $N$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

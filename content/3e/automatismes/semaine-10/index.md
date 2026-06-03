@@ -8,147 +8,147 @@ weight: 10
 
 {{< auto3-seance titre="Séance 28" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Dans une association, $40\%$ des 400 membres participent à une campagne de vaccination.<br>
-    Combien de membres ne participent pas à cette campagne ?
+Factoriser : $A=14c+35x$
 ---CORR---
-Le nombre de membres participant à cette campagne est égal à :<br>
-    $400 \times \dfrac{40}{100} = 160$.<br>
-    Le nombre de membres ne participant pas à cette campagne est donc égal à :<br>
-    $400 - 160 = {\color{#8B3C52}\boldsymbol{240}}$.<br>
+$A=14c+35x$<br>$A=7\times2c+7\times5x$<br>$A= {\color{#EB7F73}\boldsymbol{7(2c+5x)}}$
+{{< /auto3-exo >}}
 
- 
-Une autre méthode consiste à calculer le pourcentage de membres ne participant pas à cette campagne, qui est égal à $100\% - 40\% = 60\%$.<br>
-    Le nombre de membres ne participant pas à cette campagne est donc égal à :<br>
-    $400 \times \dfrac{60}{100} = {\color{#8B3C52}\boldsymbol{240}}$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Sur chaque droite graduée, déterminer l’abscisse du point $E$.<br> <strong>A</strong>. $\dfrac{1}{4}$ &emsp;
-    <strong>B</strong>. $\dfrac{3}{2}$ &emsp;
-    <strong>C</strong>. $\dfrac{3}{4}$ &emsp;
-    <strong>D</strong>. $\dfrac{1}{2}$<br><img src="3auton15_3_01.svg" alt="3auton15_3" style="display:block;margin:0.8rem auto;max-width:100%">
+Quel est le carré de $7$ ?
 ---CORR---
-On remarque qu'il y a 8 divisions entre $0$ et $2$, donc chaque division vaut $\dfrac{1}{4}$.<br>
-    Le point $E$ est situé après $3$ divisions à partir de l'origine.<br>
-    Donc l'abscisse de $E$ est $\dfrac{3}{4}$.<br>
-    Bonne réponse : <span class="rep">C</span>.
+Le carré d'un nombre est ce nombre multiplié par lui-même : $7\times7={\color{#EB7F73}\boldsymbol{49}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Calculer l'aire d'un carré de côté $2\text{ cm}$
+Un joueur tire une boule d'une urne, note sa couleur, la remet dans l'urne, puis tire une deuxième boule.<br>L'urne contient 6 boules indiscernables au toucher :<br>2 boules rouges ; 1 boule bleue ; 3 boules vertes.<br>Il gagne s'il tire deux boules de couleurs différentes.<br>Calculer la probabilité de gagner à ce jeu.
 ---CORR---
-$\mathcal{A}_\text{carré} = c \times c$<br>$\mathcal{A}_\text{carré} = 2\text{ cm}  \times 2\text{ cm}$<br>$\mathcal{A}_\text{carré} = {\color{#8B3C52}\boldsymbol{4}}\text{ cm}^2$
+Pour gagner, le joueur doit tirer deux boules de couleurs différentes (avec remise).<br>On remplit le tableau à double entrée des issues possibles :
+<table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">1er tirage \ 2e tirage</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">R</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">R</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">B</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">V</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">V</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">V</th></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">R</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">R</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">B</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">V</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">V</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+<tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">V</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226"><strong>gagné</strong></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">perdu</td></tr>
+</table>
+Il y a $22$ issues gagnantes parmi $36$ issues possibles.<br>La probabilité de gagner à ce jeu est donc de $\dfrac{22}{36}={\color{#EB7F73}\boldsymbol{\dfrac{11}{18}}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Sur cette figure, calculer la valeur exacte de $FH$.<br><img src="3autog11_1_02.svg" alt="3autog11_1" style="display:block;margin:0.8rem auto;max-width:100%">
+$MO^2= \,\,\ldots$
+<br>
+<img src="3auto_s28_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-On utilise le théorème de Pythagore dans le triangle $FGH$,  rectangle en $G$.<br>
-      On obtient :<br>
-      $\begin{aligned}
-        FG^2+GH^2&=FH^2\\
-        FH^2&=GH^2+FG^2\\
-        FH^2&=4^2+5^2\\
-        FH^2&=16+25\\
-        FH^2&=41\\
-        FH&={\color{#8B3C52}\boldsymbol{\sqrt{41}}}
-        \end{aligned}$
-        <br> Mentalement : <br>
-La longueur $FH$ est donnée par la racine carrée de la somme des carrés de $4$ et de $5$.<br>
-Cette somme vaut $16+25=41$. <br>
-La valeur cherchée est donc : $\sqrt{41}$.
+Le triangle $MNO$ est rectangle en $M$.<br>D'après le théorème de Pythagore, on a :<br>${\color{#C5607A}\boldsymbol{NO^2=MN^2+MO^2}}$<br>d'où ${\color{#EB7F73}\boldsymbol{MO^2=NO^2-MN^2}}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Les points $R$, $O$ et $D$ sont les symétriques respectifs de $S$, $V$ et $Z$ par rapport à $O$. Les points $S$, $V$ et $Z$ sont alignés. Les points $R$, $O$ et $D$ le sont-ils ? Justifier.
+<br>
+<img src="3auto_s28_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Les points $R$, $O$ et $D$ sont les symétriques respectifs de $S$, $V$ et $Z$ par rapport à $O$ et sont alignés.<br>Or, la symétrie axiale conserve l'alignement.<br>Donc les points ${\color{#EB7F73}\boldsymbol{R}}$, ${\color{#EB7F73}\boldsymbol{O}}$ et ${\color{#EB7F73}\boldsymbol{D}}$ sont <span class="rep">alignés</span> également.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 29" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Donner l'écriture scientifique de $570\,000$
----CORR---
-$570\,000 = {\color{#8B3C52}\boldsymbol{5{,}7\times 10^{5}}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
----CORR---
-Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Calculer le volume d'une pyramide de hauteur $6\text{ m}$ et dont la base est un triangle. La base du triangle mesure $6\text{ m}$ et la hauteur associée à cette base mesure $4\text{ m}$.
----CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{6\text{ m} \times 4\text{ m}}{2}\times6\text{ m}=\dfrac{6 \times 4 \times 6}{6}\text{ m}^3={\color{#8B3C52}\boldsymbol{24\mathbf{ m}^3}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
+Qu'obtient-on si on choisit $4$ comme nombre de départ ?
+<br><br>
+```
+Demander un nombre → variable
+résultat ← 2 × variable
+résultat ← résultat + 6
+résultat ← résultat / 2
+Dire "J'obtiens comme résultat : " résultat
+```
 <br>
-Sur la figure ci-dessus, dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. Déterminer la longueur $TM$.<br><img src="3autog12_03.svg" alt="3autog12" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="3auto_s29_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Dans le triangle $TMV$, les droites $(MV)$ et $(KO)$ sont parallèles. <br>
-    D'après le théorème de Thalès, on a : <br>
-    $\dfrac{TM}{TO} =
-    \dfrac{MV}{KO}$. <br>
-    En remplaçant par les longueurs, on obtient : <br>
-    $\dfrac{TM}{TO} = \dfrac{21}{10}=2{,}1$.<br>
-    On en déduit que : <br>
-    $TM = 2{,}1 \times 30 = {\color{#8B3C52}\boldsymbol{63}}$ cm.
+Si on choisit $4$ comme nombre de départ, alors variable prend la valeur $4$.<br>Ensuite, résultat prend la valeur $2 \times 4=8$.<br>Puis, résultat prend la valeur $8 + 6=14$.<br>Enfin, résultat prend la valeur $\dfrac{14}{2}=7$.<br>On obtient donc comme résultat final : ${\color{#EB7F73}\boldsymbol{7}}$.
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Factoriser : $A=-4b^2+9b$
+---CORR---
+$A=-4b^2+9b$<br>$A=b\times (-4)b+b\times 9$<br>$A= {\color{#EB7F73}\boldsymbol{b(-4b+9)}}$
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Traduire la phrase par un calcul :<br>La différence entre 8 et le quotient de 42 par 7.
+---CORR---
+La différence entre 8 et le quotient de 42 par 7 s'écrit : ${\color{#EB7F73}\boldsymbol{8-42 \div 7}}$ ou ${\color{#EB7F73}\boldsymbol{8-\dfrac{42}{7}}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+Sur cette figure, calculer la valeur exacte de $HJ$.
+<br>
+<img src="3auto_s29_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+On utilise le théorème de Pythagore dans le triangle $HIJ$, rectangle en $I$.<br>On obtient :<br>$HI^2+IJ^2=HJ^2$<br>$HJ^2=IJ^2+HI^2$<br>$HJ^2=3^2+7^2$<br>$HJ^2=9+49$<br>$HJ^2=58$<br>$HJ={\color{#EB7F73}\boldsymbol{\sqrt{58}}}$<br>Mentalement : La longueur $HJ$ est donnée par la racine carrée de la somme des carrés de $3$ et de $7$. Cette somme vaut $9+49=58$. La valeur cherchée est donc : $\sqrt{58}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Donner les numéros des images des figures $2$, $10$ et $16$ dans la symétrie de centre $A$.
+<br>
+<img src="3auto_s29_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+L'image de la figure $2$ dans la symétrie de centre $A$ est la figure ${\color{#EB7F73}\boldsymbol{35}}$.<br>L'image de la figure $10$ dans la symétrie de centre $A$ est la figure ${\color{#EB7F73}\boldsymbol{28}}$.<br>L'image de la figure $16$ dans la symétrie de centre $A$ est la figure ${\color{#EB7F73}\boldsymbol{23}}$.
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 30" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Compléter le tableau en mettant oui ou non dans chaque case.<br>$$\begin{array}{|l|c|c|c|c|}
-    \hline
-    \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
-    \hline
-    65 & & & & \\
-    \hline
-    \end{array}$$
+Développer et réduire : $A = (9c+9)(-3c-7)$
 ---CORR---
-$$\begin{array}{|l|c|c|c|c|}
-    \hline
-    \text{... est divisible} & \text{par }2 & \text{par }3 & \text{par }5 & \text{par }9\\
-    \hline
-    65 & \text{non} & \text{non} & \color{blue}{\text{oui}} & \text{non} \\
-    \hline
-    \end{array}$$
+$A = (9c+9)(-3c-7)$<br>$A = 9c\times (-3c) + 9c\times (-7) + 9 \times (-3c) + 9 \times (-7)$<br>$A = -27c^2 + (-63c) + (-27c) + (-63)$<br>$A = {\color{#EB7F73}\boldsymbol{-27c^2-90c-63}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-On a représenté ci-dessous la trajectoire d'un projectile lancé depuis le sol.<br> 
-             À l'aide de ce graphique, répondre aux questions suivantes :
 
-<br>
-$\mathbf{a)}$ À quelle distance le projectile est-il retombé au sol ? 
+{{< auto3-exo num="Exercice 2" >}}2
+---Q---
+Dans l'égalité « $8 + 2 = 10$ », comment s'appelle le nombre $10$ ?
+---CORR---
+Dans l'égalité « $8 + 2 = 10$ », $10$ s'appelle la <span class="rep">somme</span> de $8$ et $2$.
+{{< /auto3-exo >}}
 
+{{< auto3-exo num="Exercice 3" >}}3
+---Q---
+Un angle aigu mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+---CORR---
+Un angle aigu mesure entre ${\color{#EB7F73}\boldsymbol{0}}^\circ$ et ${\color{#EB7F73}\boldsymbol{90}}^\circ$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
+---Q---
+On choisit un livre au hasard sur un étal présentant $3$ romans d'anticipation et $27$ romans historiques.<br>Quelle est la probabilité de choisir un roman d'anticipation ?
+---CORR---
+Il y a en tout : $3 + 27 = 30$ romans.<br>La probabilité de choisir un roman d'anticipation est de ${\color{#EB7F73}\boldsymbol{\dfrac{3}{30}}}$, soit ${\color{#EB7F73}\boldsymbol{\dfrac{1}{10}}}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Donner les numéros des images des points $68$, $56$ et $10$ par la symétrie de centre $O$.
 <br>
-          $\mathbf{b)}$ Quelle est la hauteur maximale atteinte par le projectile ?
-          
-          <br><img src="3autop09_1_04.svg" alt="3autop09_1" style="display:block;margin:0.8rem auto;max-width:100%">
-          
-          
+<img src="3auto_s30_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-T
-$\mathbf{a)}$ Le projectile retombe au sol à une distance de ${\color{#8B3C52}\boldsymbol{52\,\mathbf{m}}}$, car la courbe passe par le point de coordonnées $(52 ;0)$.<br>
-$\mathbf{b)}$ Le point le plus haut de la courbe a pour abscisse $26$ et pour ordonnée $13$ donc la hauteur maximale est de ${\color{#8B3C52}\boldsymbol{13\,\mathbf{m}}}$.
+a. L'image du point $68$ par la symétrie de centre $O$ est le point ${\color{#EB7F73}\boldsymbol{20}}$.<br>b. L'image du point $56$ par la symétrie de centre $O$ est le point ${\color{#EB7F73}\boldsymbol{32}}$.<br>c. L'image du point $10$ par la symétrie de centre $O$ est le point ${\color{#EB7F73}\boldsymbol{78}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-$1$ $\ldots$ = $60$ secondes
----CORR---
-$1$ <span class="rep">minute</span> = $60$ secondes
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Dans le triangle $MNO$ rectangle en $M$,<br> $NO=15\text{ m}$ et $\widehat{MNO}=50^\circ$.<br>Calculer $MN$ à $0,1\text{ m}$ près.<br><img src="3autog13_1_05.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Dans le triangle $MNO$ rectangle en $M$,<br> le cosinus de l'angle $\widehat{MNO}$ est défini par :<br>$\cos\left(\widehat{MNO}\right)=\dfrac{MN}{NO}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(50^\circ\right)}{\color{red}{1}}=\dfrac{MN}{15}$<br>$MN=15 \times \cos\left(50^\circ\right)$<br>soit $MN\approx{\color{#8B3C52}\boldsymbol{9{,}6}}\text{ m}$.
-{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
-

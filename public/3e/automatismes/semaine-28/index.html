@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 28 - Séances 82 à 84 — MaBémat</title>
+<title>Semaine 28 — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -15,8 +15,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.67247e69a0937874bf87dbddada61bd1cf9edf5a01c607c4b03e2521dc108efa.css" integrity="sha256-ZyR&#43;aaCTeHS/h9vdraYb0c&#43;e31oBxgfEsD4lIdwQjvo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css" integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -156,6 +156,10 @@ pre[style*="background-color"] {
 
 
 
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.7ed79f875ef8b6e3d4af8dd66f29cbda8e967bcd6e28660101ffc8d4ec444aa3.css" integrity="sha256-ftefh174tuPUr43WbynL2o6We81uKGYBAf/I1OxESqM=" crossorigin="anonymous">
+
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -171,7 +175,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>28</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>28</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <div class="wk-meta">
     <span><span class="dot"></span>3 séances</span>
     <span><span class="dot"></span>12 exercices</span>
@@ -184,459 +194,6 @@ pre[style*="background-color"] {
 
 <div id="auto-seance-content" class="fade-up d3">
   
-<section class="seance-panel" data-titre="Séance 82">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Compléter avec le signe < ou >.<br>$4{,}711 \quad \ldots\ldots   \quad-4{,}465$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$4{,}711 \quad {\color{#8B3C52}\boldsymbol{>}} \quad -4{,}465$
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Choisis le calcul qui permet de résoudre l'équation suivante : <br>
-Pour résoudre $5x-7=13$ :
-
-    <br> <strong>A</strong>. $\dfrac{13+7}{5}$&emsp;&emsp; 
-    <strong>B</strong>. $13\times 5+7$&emsp;&emsp; 
-    <strong>C</strong>. $\dfrac{13}{5}+7$&emsp;&emsp; 
-    <strong>D</strong>. $(13-5)+7$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$5x-7=13$  <br>
-    On ajoute $7$ : $5x=13+7$.  <br>
-    Puis on divise par $5$ : $x=\dfrac{13+7}{5}$.  <br>
-    Bonne réponse : <strong>A</strong>.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-À l'aide du schéma ci-dessous, déterminer :<br>- deux segments de même longueur ;<br>- le milieu d'un segment ;<br>- un triangle rectangle ;<br>- un triangle isocèle.<br><br><br><img src="3autog02_1_01.svg" alt="3autog02_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-- Deux segments de même mesure : [$GI$] et $[IH]$ ou $[GK]$ et $[KH]$ ou $[JF]$ et $[FH]$.<br>- $I$ est le milieu du segment $[GH]$.<br>- $GJH$ est un triangle rectangle en $G$, $GIK$ est un triangle rectangle en $I$ et $HIK$ est un triangle rectangle en $I$.<br>- $GKH$ est un triangle isocèle en $K$ et $JFH$ est un triangle isocèle en $F$.<br>
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Déterminer la valeur exacte de $JK$.<br><br><img src="3autog11_2_02.svg" alt="3autog11_2" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-On utilise le théorème de Pythagore dans le triangle $IJK$,  rectangle en $J$.<br>
-      On obtient :
-
-<br>
-
-      $\begin{aligned}
-        IJ^2+JK^2&=IK^2\\
-        JK^2&=IK^2-IJ^2\\
-        JK^2&=10^2-2^2\\
-        JK^2&=100-4\\
-        JK^2&=96\\
-        JK&={\color{#8B3C52}\boldsymbol{\sqrt{96}}}
-        \end{aligned}$
-</div>
-  
-</article>
-
-
-</section>
-
-
-<section class="seance-panel" data-titre="Séance 83">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Déterminer la valeur de $25\,\%$ de $89$.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$25\,\%$ de $89$ :  
-    $\dfrac{25 \times 89}{100} = 0{,}25 \times 89 = 22{,}25$.  
-    Donc la valeur est 22.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Placer les points : $P(-3{,}5), Q(-2{,}2), R(0{,}3)$.
-
-<br><br><img src="3auton15_2_enonce_03.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-<img src="3auton15_2_corr_04.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Calculer le périmètre exact des figures suivantes.<br>Cercle de rayon $4\text{ cm}$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$\mathcal{P}_\text{cercle} = 2 \times r \times \pi$<br>$\mathcal{P}_\text{cercle} = 2 \times 4\text{ cm} \times \pi$<br>$\mathcal{P}_\text{cercle} = {\color{#8B3C52}\boldsymbol{8\pi}}\text{ cm}$
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Sur la figure suivante : 
-        <br> $\leadsto M$ est sur $[LJ]$,
-        <br> $\leadsto N$ est sur $[LK]$,<br> $\leadsto$ les droites $(JK)$ et $(MN)$ sont parallèles.<br>Écrire la double égalité de Thalès.<br><br><img src="3autog12_1_05.svg" alt="3autog12_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Dans le triangle $JKL$ :
-       <br> $\leadsto$ $M\in[LJ]$,
-       <br> $\leadsto$ $N\in[LK]$,
-       <br> $\leadsto$  $(JK)//(MN)$,
-       <br> donc d'après le théorème de Thalès, les triangles $JKL$ et $MNL$ ont des longueurs proportionnelles.
-
-<br>
-$\dfrac{LM}{LJ}=\dfrac{LN}{LK}=\dfrac{MN}{JK}$<br><br><strong>Remarque</strong><br>On pourrait aussi écrire : $\dfrac{LJ}{LM}=\dfrac{LK}{LN}=\dfrac{JK}{MN}$
-</div>
-  
-</article>
-
-
-</section>
-
-
-<section class="seance-panel" data-titre="Séance 84">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Donner l'écriture décimale de $9{,}1 \times 10^{3}$.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$9{,}1 \times 10^{3} = {\color{#8B3C52}\mathbf{9\,100}}$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Sur une carte sur laquelle $3\text{ cm}$ représente $14{,}4\text{ km}$ dans la réalité, <br>
-  Wendy mesure son trajet et elle trouve une distance de $10\text{ cm}$. <br>À quelle distance cela correspond dans la réalité ?
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Commençons par trouver à combien de $\text{km}$ dans la réalité, $1\text{ cm}$ sur la carte correspond. <br>
-  $1\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{3}}$ fois moins que $3\text{ cm}$.<br>$14{,}4\text{ km}\div {\color{#C5607A}\boldsymbol{3}} = 4{,}8\text{ km}$ <br> $1\text{ cm}$ sur la carte correspond donc à ${\color{#C5607A}\boldsymbol{4{,}8}}\text{ km}$ dans la réalité. <br> Cherchons maintenant la distance réelle de son trajet. <br> $10\text{ cm}$, c'est ${\color{#C5607A}\boldsymbol{10}}$ fois $1\text{ cm}$.<br> ${\color{#C5607A}\boldsymbol{4{,}8}}\text{ km}\times {\color{#C5607A}\boldsymbol{10}} = 48\text{ km}$<br> son trajet correspond en réalité à une distance de ${\color{#8B3C52}\boldsymbol{48}}\text{ km}$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Donner le nom de chacun des solides.<br><br><br><img src="3autog07_1_18.svg" alt="3autog07_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Cône de révolution
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Dans le triangle $HIJ$ rectangle en $H$,<br> $HI=7\text{ cm}$ et $\widehat{HIJ}=49^\circ$.<br>Calculer $IJ$ à $0,1\text{ cm}$ près.<br><br><br><img src="3autog13_1_07.svg" alt="3autog13_1" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Dans le triangle $HIJ$ rectangle en $H$,<br> le cosinus de l'angle $\widehat{HIJ}$ est défini par :<br>$\cos\left(\widehat{HIJ}\right)=\dfrac{HI}{IJ}$.<br>Avec les données numériques :<br>$\dfrac{\cos\left(49^\circ\right)}{\color{red}{1}}=\dfrac{7}{IJ}$<br><br>$IJ=\dfrac{7 \times\color{red}{1}}{\cos\left(49^\circ\right)}$<br>soit $IJ\approx{\color{#8B3C52}\boldsymbol{10{,}7}}\text{ cm}$.
-</div>
-  
-</article>
-
-
-</section>
-
-
 </div>
 
 <div class="wk-adjacent fade-up">
@@ -737,6 +294,9 @@ Dans le triangle $HIJ$ rectangle en $H$,<br> le cosinus de l'angle $\widehat{HIJ
 })();
 </script>
 
+
+<script src="/mabemat/js/projection.js"></script>
+
     </div>
   
   
@@ -765,7 +325,7 @@ Dans le triangle $HIJ$ rectangle en $H$,<br> le cosinus de l'angle $\widehat{HIJ
   </script>
   <script>
      
-    const BUILD_TS = '1779959288';
+    const BUILD_TS = '1780381048';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

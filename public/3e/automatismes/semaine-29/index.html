@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 29 - Séances 85 à 87 — MaBémat</title>
+<title>Semaine 29 — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -15,8 +15,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.d496942e4c4220feacf35021a1d9fe962831efb330516474966c94f49593d69b.css" integrity="sha256-1JaULkxCIP6s81Ahodn&#43;ligx77MwUWR0lmyU9JWT1ps=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.596465da7b6cca67ca7ae739d70761fb3aa11fab8f64bc62b2885496ddc6ad1e.css" integrity="sha256-WWRl2ntsymfKeuc51wdh&#43;zqhH6uPZLxisohUlt3GrR4=" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.67247e69a0937874bf87dbddada61bd1cf9edf5a01c607c4b03e2521dc108efa.css" integrity="sha256-ZyR&#43;aaCTeHS/h9vdraYb0c&#43;e31oBxgfEsD4lIdwQjvo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css" integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.3bd85771bce49e8f67ab8dd4b8b3d5ffe4d713fcb9539e4a3a860c76643bbe0f.css" integrity="sha256-O9hXcbzkno9nq43UuLPV/&#43;TXE/y5U55KOoYMdmQ7vg8=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -156,6 +156,10 @@ pre[style*="background-color"] {
 
 
 
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.7ed79f875ef8b6e3d4af8dd66f29cbda8e967bcd6e28660101ffc8d4ec444aa3.css" integrity="sha256-ftefh174tuPUr43WbynL2o6We81uKGYBAf/I1OxESqM=" crossorigin="anonymous">
+
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -171,7 +175,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>29</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>29</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <div class="wk-meta">
     <span><span class="dot"></span>3 séances</span>
     <span><span class="dot"></span>12 exercices</span>
@@ -184,455 +194,6 @@ pre[style*="background-color"] {
 
 <div id="auto-seance-content" class="fade-up d3">
   
-<section class="seance-panel" data-titre="Séance 85">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Calculer le carré de $11$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$11^2={\color{#8B3C52}\boldsymbol{121}}$
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Une voiture freine sur une route sèche et parcourt $100\text{ m}$.<br>
-    En utilisant le graphique ci-dessous, dire à quelle vitesse elle roulait ?<br><img src="3autop09_2_01.svg" alt="3autop09_2" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Pour une distance de freinage de $100\text{ m}$, la vitesse est d'environ ${\color{#8B3C52}\boldsymbol{110}}\text{ km/h}$.<br><img src="3autop09_2_corr_02.svg" alt="3autop09_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Convertir $153$ minutes en heures ($\text{h}$) et minutes ($\text{min}$).
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Mentalement : <br>
-On cherche le multiple de $60$ inférieur à $153$ le plus grand possible. C'est $2\times 60 = 120$.<br>
-Ainsi $153 = 120 + 33$ donc $153\text{\,min\,}= 2\text{\,h\,}33\text{\,min}$.<br>$153 = (2 \times 60) + 33$ donc $153$ minutes = ${\color{#8B3C52}\boldsymbol{2\,\mathbf{h}\,33\,\mathbf{min}}}$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-On tire une boule au hasard dans une urne contenant $7$ boules noires et $7$ boules blanches.<br>             Quelle est la probabilité d'obtenir une boule noire ? <br>             On donnera le résultat sous forme d'une fraction irréductible.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Dans une situation d'équiprobabilité,
-        on calcule la probabilité d'un événement par le quotient :
-        $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issue}}$. <br>
-        La probabilité est donc donnée par : 
-        $\dfrac{\text{Nombre de boules noires}}{\text{Nombre total de boules}}
-             =\dfrac{7}{14}  =\dfrac{1{\color{#C5607A}\boldsymbol{\times7}} }{2{\color{#C5607A}\boldsymbol{\times7}}}={\color{#8B3C52}\boldsymbol{\dfrac{1}{2}}}$
-</div>
-  
-</article>
-
-
-</section>
-
-
-<section class="seance-panel" data-titre="Séance 86">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Combien valent les trois quarts de $20$ ?
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Un quart de $20$ est égal à $20 \div 4$, soit 5.<br>
-        Donc les trois quarts de $20$ valent $3 \times 5 = 15$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Calculer $B = x^2 + 6x$, pour $x = 10$.
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$B = 10 \times 10 + 6 \times 10$<br>$B = 100 + 60$<br>$B = {\color{#8B3C52}\boldsymbol{160}}$
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Déterminer les coordonnées respectives des points $N$, $O$, $L$, $K$ et $M$<br><br><img src="3autog01_2_03.svg" alt="3autog01_2" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Les coordonnées respectives des points sont :<br> $N({\color{#8B3C52}\boldsymbol{4}};{\color{#8B3C52}\boldsymbol{2{,}75}})$, $O({\color{#8B3C52}\boldsymbol{-0{,}25}};{\color{#8B3C52}\boldsymbol{4{,}25}})$, $L({\color{#8B3C52}\boldsymbol{-1{,}5}};{\color{#8B3C52}\boldsymbol{0}})$, $K({\color{#8B3C52}\boldsymbol{0}};{\color{#8B3C52}\boldsymbol{-3}})$ et $M({\color{#8B3C52}\boldsymbol{-0{,}5}};{\color{#8B3C52}\boldsymbol{3}})$
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Déterminer la moyenne, de cette série de note :
-Voici une série de 4 notes : $5, 6, 14, 5$.  <br>
-    Quelle est la moyenne de cette série ?
-
-     
-    <br> <strong>A</strong>. $8{,}5$ &emsp;
-    <strong>B</strong>. $7{,}5$ &emsp;
-    <strong>C</strong>. $7$ &emsp;
-    <strong>D</strong>. $6$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-La moyenne de cette série est :
-    
-
-$$
-    \frac{5+6+14+5}{4}=\frac{30}{4}=7{,}5.
-    $$
-
-    Bonne réponse : <span class="rep">B</span>.
-</div>
-  
-</article>
-
-
-</section>
-
-
-<section class="seance-panel" data-titre="Séance 87">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">01</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Calculer.<br>$ (-4) - (-2) $
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$  {\color{#A4485F}\boldsymbol{(-4)}} - {\color{#A4485F}\boldsymbol{(-2)}} = {\color{#8B3C52}\boldsymbol{(-2)}} $
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">02</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Résoudre les équations suivantes.<br>$\dfrac{4z}{5}=-5$
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-$\dfrac{4z}{5}=-5$<br>On multiplie les deux membres par $\dfrac{5}{4}$.<br>$\dfrac{4z}{5}{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{5}{4}}}=-5{\color{#C5607A}\boldsymbol{\,\times\,\dfrac{5}{4}}}$<br>$z=\dfrac{-25}{4}$<br> La solution de l'équation $\dfrac{4z}{5}=-5$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{25}{4}}}$.
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">03</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-Préciser s'il s'agit d'un parallélogramme.<br><br><img src="3autog02_2_04.svg" alt="3autog02_2" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Seulement deux côtés opposés sont de même longueur, ${\color{#8B3C52}\boldsymbol{UVWX}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant.<br><br><img src="3autog02_2_corr_05.svg" alt="3autog02_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<article class="exo">
-  <div class="exo-head">
-    <div class="exo-num">04</div>
-    <div class="exo-label">Question</div>
-  </div>
-  <div class="exo-enonce">
-On considère l’algorithme suivant :
-
-    
-
-    Qu’obtient‑on si on choisit $2$ comme nombre de départ ?<br><img src="scratch_3autoi01_2_06.svg" alt="scratch_3autoi01_2" style="display:block;margin:0.8rem auto;max-width:100%">
-</div>
-  
-  <button class="exo-btn" onclick="toggleCorr(this)">
-    <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-  </button>
-  <div class="exo-corr">
-Si on choisit $2$ comme nombre de départ, alors variable prend la valeur $2$.<br>
-    Ensuite, resultat prend la valeur $4 \times 2 = 8$.<br>
-    Puis, resultat prend la valeur $8 + 16 = 24$.<br>
-    Enfin, resultat prend la valeur $\dfrac{24}{4} = 6$.<br>
-    Résultat final : ${\color{#8B3C52}\mathbf{6}}$.
-</div>
-  
-</article>
-
-
-</section>
-
-
 </div>
 
 <div class="wk-adjacent fade-up">
@@ -733,6 +294,9 @@ Si on choisit $2$ comme nombre de départ, alors variable prend la valeur $2$.<b
 })();
 </script>
 
+
+<script src="/mabemat/js/projection.js"></script>
+
     </div>
   
   
@@ -761,7 +325,7 @@ Si on choisit $2$ comme nombre de départ, alors variable prend la valeur $2$.<b
   </script>
   <script>
      
-    const BUILD_TS = '1779959288';
+    const BUILD_TS = '1780381048';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

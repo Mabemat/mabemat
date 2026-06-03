@@ -8,169 +8,136 @@ weight: 13
 
 {{< auto3-seance titre="Séance 37" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Calculer.<br>$ (-15)  \div (-3)$
+Supprimer les parenthèses et réduire l'expression :<br>$A= -(y+3) + (-7y+1)$
 ---CORR---
-$ {\color{#A4485F}\boldsymbol{(-15)}}  \div {\color{#A4485F}\boldsymbol{(-3)}} = {\color{#8B3C52}\boldsymbol{(+5)}}$
+$A= -(y+3) + (-7y+1)$<br>$A= -y-3-7y+1$<br>$A= {\color{#EB7F73}\boldsymbol{-8y-2}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Résoudre l'équation suivante : $-13a-3=0$
+Traduire le calcul par une phrase en français.<br>$6 \times 5-90 \div 9$
 ---CORR---
-$-13a-3=0$<br>$-13a-3{\color{blue}\boldsymbol{\,\,+\,\,3}}=0{\color{blue}\boldsymbol{\,\,+\,\,3}}$<br>$-13a=3$<br>$-13a{\color{blue}\boldsymbol{\,\div\,(-13)}}=3{\color{blue}\boldsymbol{\,\div\,(-13)}}$<br>$a=-\dfrac{3}{13}$<br> La solution de l'équation $-13a-3=0$ est ${\color{#8B3C52}\boldsymbol{-\dfrac{3}{13}}}$.
+$6 \times 5-90 \div 9$ s'écrit : <span class="rep">la différence entre le produit de 6 par 5 et le quotient de 90 par 9</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-$DBX$ est un triangle quelconque. L'angle $\widehat{DBX}$ mesure $35^\circ$ et l'angle $\widehat{BDX}$ mesure $41^\circ$.<br>Quelle est la mesure de l'angle $\widehat{BXD}$ ?
+Un angle rentrant mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
 ---CORR---
-Dans un triangle, la somme des angles est égale à $180^\circ$.<br>D'où : $\widehat{DBX} + \widehat{BXD} + \widehat{BDX}=180^\circ$.<br>D'où : $\widehat{BXD}=180- \left(\widehat{DBX} + \widehat{BDX}\right)$.<br>D'où : $\widehat{BXD}= 180^\circ-\left(35^\circ+41^\circ\right)=180^\circ-76^\circ=104^\circ$.<br>L'angle ${\color{black}\boldsymbol{\widehat{BXD}}}$ mesure ${\color{#8B3C52}\boldsymbol{104}}^\circ$.<br>
+Un angle rentrant mesure entre ${\color{#EB7F73}\boldsymbol{180}}^\circ$ et ${\color{#EB7F73}\boldsymbol{360}}^\circ$.
+
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Rémi relève les prix des maquettes sur un catalogue par correspondance en fonction de la quantité saisie dans le panier. Il note les prix dans le tableau suivant :
+$DVKZ$ est un parallélogramme tel que ses diagonales $[DK]$ et $[VZ]$ sont perpendiculaires.<br>Déterminer la nature de $DVKZ$.
 
-<br>
-$$\def\arraystretch{1.5}\begin{array}{|c|c|c|c|c|c|}\hline  \text{maquettes}&5&6&11&18\\\hline \text{Prix (en €})&49&60&110&180\\\hline\end{array}$$
-
-<br>
-Le prix des maquettes est-il proportionnel à la quantité achetée ?<br>
 ---CORR---
-On peut calculer le prix unitaire des maquettes dans chaque cas de figure :
+On sait que $[DK]\perp[VZ]$.<br>Si un parallélogramme a des diagonales perpendiculaires, alors c'est un losange.<br>$DVKZ$ est donc un <span class="rep">losange</span>.
 
-<br>
-$\dfrac{60\text{ \, €}}{6\text{ maquettes}}=\dfrac{110\text{ \, €}}{11\text{ maquettes}}=\dfrac{180\text{ \, €}}{18\text{ maquettes}}=10\text{ \, €}/_{\text{maquette}}$
-
-<br>
-Mais $\dfrac{49\text{ \, €}}{5\text{ maquettes}}
-            =9{,}80\text{ \, €}/_{\text{maquette}}$.<br>Le prix des maquettes n'est pas proportionnel à leur nombre.<br>
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Quel nombre doit-on écrire à la place des pointillés pour tracer un décagone régulier ?<br><br>
+```
+répéter 10 fois
+  avancer de 20 pas
+  tourner ↻ de ... degrés
+fin
+```
+<br>
+<img src="3auto_s37_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Un décagone régulier a des angles de $144^\circ$. Le lutin doit tourner de $180-144={\color{#EB7F73}\boldsymbol{36}}^\circ$ après avoir tracé un côté.<br>Mentalement on divise $360$ par $10$ : $\dfrac{360}{10}=36$.
+
+
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 38" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Un article coûtait $250$ € et son prix a augmenté de $20\,\%$. Calculer son nouveau prix.
+Développer et réduire l'expression suivante.<br>$A=-2(5x-7)(-9x-4)$
 ---CORR---
-Une augmentation de $20\,\%$ revient à multiplier par $100\,\% + 20\,\% = 120\,\% = 1{,}2$.<br>$250\times 1{,}2 = 300$<br>Le nouveau prix de cet article est ${\color{#8B3C52}\boldsymbol{300}}$ €.
+$A=-2(5x-7)(-9x-4)$<br>$\phantom{A}=-2(-45x^2-20x+63x+28)$<br>$\phantom{A}=-2(-45x^2+43x+28)$<br>$\phantom{A}= {\color{#EB7F73}\boldsymbol{90x^2-86x-56}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
+
+{{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Placer les points : $G(-0{,}13), H(0{,}27), I(0{,}31)$.
-
-<br><br><img src="3auton15_2_enonce_01.svg" alt="3auton15_2_enonce" style="display:block;margin:0.8rem auto;max-width:100%">
+Traduire le calcul par une phrase en français.<br>$(130-80) \div (3+7)$
 ---CORR---
-<img src="3auton15_2_corr_02.svg" alt="3auton15_2_corr" style="display:block;margin:0.8rem auto;max-width:100%">
+$(130-80) \div (3+7)$ s'écrit : <span class="rep">le quotient de la différence entre 130 et 80 par la somme de 3 et 7</span>.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
+
+{{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Calculer le périmètre exact d'un carré de côté $5{,}4\text{ cm}$
+$RLV$ est un triangle quelconque. L'angle $\widehat{RLV}$ mesure $37^\circ$ et l'angle $\widehat{LRV}$ mesure $34^\circ$.<br>Quelle est la mesure de l'angle $\widehat{LVR}$ ?
 ---CORR---
-$\mathcal{P}_\text{carré} = 4 \times c$<br>$\mathcal{P}_\text{carré} = 4 \times 5{,}4\text{ cm}$<br>$\mathcal{P}_\text{carré} = {\color{#8B3C52}\boldsymbol{21{,}6}}\text{ cm}$
+Dans un triangle, la somme des angles est égale à $180^\circ$.<br>D'où : $\widehat{RLV} + \widehat{LVR} + \widehat{LRV}=180^\circ$.<br>D'où : $\widehat{LVR}=180- \left(\widehat{RLV} + \widehat{LRV}\right)$.<br>D'où : $\widehat{LVR}= 180^\circ-\left(37^\circ+34^\circ\right)=180^\circ-71^\circ={\color{#EB7F73}\boldsymbol{109^\circ}}$.
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
+
+{{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Plusieurs amis reviennent du marché.  <br>
-    Il s'agit de Béatrice, Vanessa et Aude.  <br>
-
-    Béatrice rapporte $9$ kiwis, $8$ coings, $2$ bananes et $10$ melons.  <br>
-    Vanessa rapporte $6$ bananes, $4$ kiwis, $8$ melons et $1$ coing.  <br>
-    Aude rapporte $7$ kiwis, $8$ coings, $5$ melons et $8$ bananes.<br>
-
-     
-    <strong>a.</strong> Compléter le tableau.  <br>
-    <strong>b.</strong> Quel est le nombre total de fruits achetés ?  <br>
-    <strong>c.</strong> Qui a rapporté le plus de fruits ?  <br>
-    <strong>d.</strong> Quel fruit a été rapporté en la plus grande quantité ?
-
-    
-
-$$
-    
-    \begin{array}{|c|c|c|c|c|c|}
-    \hline
-      \text{Amis\textbackslash fruits} &
-      \text{Kiwi} &
-      \text{Banane} &
-      \text{Coing} &
-      \text{Melon} &
-      \text{TOTAL}\\
-    \hline
-      \text{Béatrice} & & & & & \\
-    \hline
-      \text{Vanessa} & & & & & \\
-    \hline
-      \text{Aude} & & & & & \\
-    \hline
-      \text{TOTAL} & & & & & \\
-    \hline
-    \end{array}
-    
-    $$
+$1{,}2~\text{h} =$ ..... h ..... min
 ---CORR---
-<strong>a.</strong> Tableau complété :
-
-    
-
-$$
-    
-    \begin{array}{|c|c|c|c|c|c|}
-    \hline
-      \text{Amis\textbackslash fruits} &
-      \text{Kiwi} &
-      \text{Banane} &
-      \text{Coing} &
-      \text{Melon} &
-      \text{TOTAL}\\
-    \hline
-      \text{Béatrice} & 9 & 2 & 8 & 10 & 29\\
-    \hline
-      \text{Vanessa} & 4 & 6 & 1 & 8 & 19\\
-    \hline
-      \text{Aude} & 7 & 8 & 8 & 5 & 28\\
-    \hline
-      \text{TOTAL} & 20 & 16 & 17 & 23 & 76\\
-    \hline
-    \end{array}
-    
-    $$
-
-<strong>b.</strong> Total de fruits : **76**.  <br>
-<strong>c.</strong> Celle qui a rapporté le plus de fruits : **Béatrice** (29 fruits).  <br>
-<strong>d.</strong> Fruit le plus rapporté : **le melon** (23 melons).
+$1{,}2~\text{h} = 1~\text{h} + 0{,}2 \times 60~\text{min} = {\color{#EB7F73}\boldsymbol{1}}~\text{h}~{\color{#EB7F73}\boldsymbol{12}}~\text{min}$
 {{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}5
+---Q---
+Pour la figure suivante, tracée à main levée, préciser s'il s'agit d'un parallélogramme.
+<br>
+<img src="3auto_s38_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+Les côtés consécutifs de $UVWX$ sont de même longueur deux par deux, ${\color{#EB7F73}\boldsymbol{UVWX}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un cerf-volant).
+{{< /auto3-exo >}}
+
 {{< /auto3-seance >}}
 
 {{< auto3-seance titre="Séance 39" >}}
 
-{{< auto3-exo num="Exercice 1" >}}
+{{< auto3-exo num="Exercice 1" >}}11
 ---Q---
-Donner l'écriture scientifique de $70\,000$
+Développer et réduire l'expression suivante.<br>$A=-3(-11x-10)-(-7-7x)$
 ---CORR---
-$70\,000 = {\color{#8B3C52}\boldsymbol{7\times 10^{4}}}$
+$A=-3(-11x-10)-(-7-7x)$<br>$\phantom{A}=33x+30-(-7-7x)$<br>$\phantom{A}=33x+30+7+7x$<br>$\phantom{A}= {\color{#EB7F73}\boldsymbol{40x+37}}$
 {{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 2" >}}
----Q---
-Teresa doit acheter du gazon. <br>Sur la notice, il est indiqué de prévoir $10$ kg pour $50\text{ m}^2$. <br> Combien doit-elle en acheter pour une surface de $250\text{ m}^2$ ?
----CORR---
-Commençons par trouver combien de kg il faut prévoir pour $1\text{ m}^2$. <br>
- $1\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{50}}$ fois moins que 50$\text{ m}^2$.<br>$10$ kg $\div {\color{#C5607A}\boldsymbol{50}} = 0{,}2$ kg <br> on a donc besoin de ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg pour recouvrir $1\text{ m}^2$.<br> Cherchons maintenant la quantité de kg nécessaire pour recouvrir $250\text{ m}^2$.<br> $250\text{ m}^2$, c'est ${\color{#C5607A}\boldsymbol{250}}$ fois plus que $1\text{ m}^2$.<br> ${\color{#C5607A}\boldsymbol{0{,}2}}$ kg $\times {\color{#C5607A}\boldsymbol{250}} = 50$ kg<br> Teresa aura besoin de ${\color{#8B3C52}\boldsymbol{50}}$ kg pour recouvrir $250\text{ m}^2$.
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 3" >}}
----Q---
-Calculer le volume d'une pyramide de hauteur $5\text{ cm}$ et dont la base est un triangle. <br>
-La base du triangle mesure $8\text{ cm}$ et la hauteur associée à cette base mesure $3\text{ cm}$.
----CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{8\text{ cm} \times 3\text{ cm}}{2}\times5\text{ cm}=\dfrac{8 \times 3 \times 5}{6}\text{ cm}^3={\color{#8B3C52}\boldsymbol{20\mathbf{ cm}^3}}$
-{{< /auto3-exo >}}
-{{< auto3-exo num="Exercice 4" >}}
----Q---
-Une élève souhaite réaliser un programme pour dessiner un triangle équilatéral.  
-    Par quelles valeurs doit-elle compléter les lignes 3 et 5 ?<br><img src="scratch_3autoi01_03.svg" alt="scratch_3autoi01" style="display:block;margin:0.8rem auto;max-width:100%">
----CORR---
-Pour obtenir un triangle équilatéral, il faut répéter ${\color{#8B3C52}\mathbf{3}}$ fois  
-    et tourner de ${\color{#8B3C52}\mathbf{120}}$ degrés.
-{{< /auto3-exo >}}
-{{< /auto3-seance >}}
 
+{{< auto3-exo num="Exercice 2" >}}22
+---Q---
+Quel est l'inverse de $0{,}8$ ? (Une fraction est attendue)
+---CORR---
+Comme $0{,}8=\dfrac{8}{10}=\dfrac{4}{5}$, l'inverse de $0{,}8$ est ${\color{#EB7F73}\boldsymbol{\dfrac{5}{4}}}$ car $\dfrac{4}{5} \times \dfrac{5}{4} = 1$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 3" >}}33
+---Q---
+$1~\text{m}^2$ est égal à $\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots$ de $1~\text{dm}^2$.
+---CORR---
+$1~\text{m}^2$ est égal à <span class="rep">une centaine</span> de $1~\text{dm}^2$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 4" >}}44
+---Q---
+Déterminer la valeur exacte de $XY$.
+<br>
+<img src="3auto_s39_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+On utilise le théorème de Pythagore dans le triangle $WXY$, rectangle en $X$.<br>$WX^2+XY^2=WY^2$<br>$XY^2=WY^2-WX^2=8^2-4^2=64-16=48$<br>$XY={\color{#EB7F73}\boldsymbol{\sqrt{48}}}={\color{#EB7F73}\boldsymbol{4\sqrt{3}}}$<br>Mentalement : La longueur $XY$ est donnée par la racine carrée de la différence des carrés de $8$ et de $4$. Cette différence vaut $64-16=48$. La valeur cherchée est donc : $\sqrt{48}=4\sqrt{3}$.
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}55
+---Q---
+a. Quelle transformation permet de passer de la figure 20 à la figure 26 ?<br>b. Quelle transformation permet de passer de la figure 1 à la figure 2 ?<br>c. Quelle transformation permet de passer de la figure 7 à la figure 13 ?
+<br>
+<img src="3auto_s39_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+a. La figure $20$ a pour image la figure ${\color{#EB7F73}\boldsymbol{26}}$ par <span class="rep">la symétrie d'axe $(A'B')$</span>.<br>b. La figure $1$ a pour image la figure ${\color{#EB7F73}\boldsymbol{2}}$ par <span class="rep">la symétrie dont le centre est le milieu de $[CI]$</span>.<br>c. La figure $7$ a pour image la figure ${\color{#EB7F73}\boldsymbol{13}}$ par <span class="rep">la symétrie d'axe $(NO)$</span>.
+{{< /auto3-exo >}}
+
+{{< /auto3-seance >}}
