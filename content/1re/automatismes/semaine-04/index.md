@@ -175,6 +175,12 @@ $6^{-9}\times 6^{9}$$=$
 - $6^{-81}$
 - $36^{0}$
 
+
+---CORR---
+On utilise la formule $a^n\times a^m=a^{n+m}$ avec $a=6$, $n=-9$ et $p=9$.<br>
+$6^{-9}\times 6^{9}=6^{-9+9}=\boldsymbol{6^{0}}$<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -185,6 +191,13 @@ On note $S$ l’ensemble des solutions de l’équation $x^{2}=1$ sur $\mathbb{R
 - $S=${$-0{,}5\ ;\ 0{,}5$}
 - $S=${$1$}
 - $S=${$-1\ ;\ 1$}
+
+
+---CORR---
+On reconnaît une équation du type $x^2=k$ avec $k=1$.<br>
+Puisque $1$  est strictement positif, l'équation a deux solutions :  $-\sqrt{1}=-1$ et $\sqrt{1}=1$.<br>
+Ainsi, $S=\boldsymbol{\{-1\,;\,1\}}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -199,6 +212,11 @@ Le pourcentage de filles dans ce groupe est :
 - $60\ $%
 - $12\ $%
 
+
+---CORR---
+La proportion de filles est donnée par $\dfrac{12}{60}=\dfrac{1}{5}=0{,}2$, soit $\boldsymbol{20}$ $\%$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -209,6 +227,20 @@ La seule inégalité vraie est :
 - $\dfrac{1}{2{,}49} < \dfrac{1}{3{,}11}$
 - $(-3{,}79)^2>(-3{,}87)^2$
 - $\left(\dfrac{1}{5{,}72}\right)^2>\left(\dfrac{1}{5{,}24}\right)^2$
+
+
+---CORR---
+La seule inégalité vraie est : $\boldsymbol{3{,}61^2<3{,}93^2}$.<br>
+En effet, la fonction carré étant strictement croissante sur $[0\,;\,+\infty[$,
+on a : $3{,}61^2<3{,}93^2$ car $3{,}61<3{,}93$.
+
+Concernant les autres propositions :<br>
+$(-3{,}79)^2>(-3{,}87)^2$ est fausse car la fonction carré est strictement décroissante sur $]-\infty\,;\,0]$,
+on a :  $(-3{,}79)^2 < (-3{,}87)^2$ car $-3{,}79 > -3{,}87$.<br>
+$\dfrac{1}{2{,}49}<\dfrac{1}{3{,}11}$ est fausse car la fonction inverse est strictement décroissante sur $]0\,;\,+\infty[$, donc $\dfrac{1}{2{,}49} > \dfrac{1}{3{,}11}$ car $2{,}49<3{,}11$.<br>
+$\left(\dfrac{1}{5{,}72}\right)^2>\left(\dfrac{1}{5{,}24}\right)^2$ est fausse car la fonction carré est strictement croissante sur $]0\,;\,+\infty[$, donc $\left(\dfrac{1}{5{,}72}\right)^2<\left(\dfrac{1}{5{,}24}\right)^2$ car $\dfrac{1}{5{,}72} < \dfrac{1}{5{,}24}$.
+
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -223,6 +255,13 @@ Un sac coûte $203$ euros. Le prix baisse de $67\ $%.
 - $20{,}3 \times \left(\dfrac{100 - 67}{67}\right)$
 - $203 \times \dfrac{33}{100}$
 
+
+---CORR---
+Diminuer de $67\,\%$ revient à conserver $33\,\%$ du prix initial.<br>
+On multiplie donc par $\dfrac{33}{100}$.<br>
+Ainsi, le nouveau prix est donné par : $\boldsymbol{203 \times \dfrac{33}{100}}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -233,6 +272,18 @@ Le taux d'évolution associé à un coefficient multiplicateur de $1{,}3$ est :
 - $+30\ $%
 - $+0{,}3\ $%
 - $+1{,}3\ $%
+
+
+---CORR---
+Multiplier par $1{,}3$ revient à multiplier par $1+\dfrac{30}{100}$. <br>
+Cela revient donc à augmenter de $30\,\%$. <br>
+Ainsi, le taux d'évolution associé au coefficient multiplicateur $1{,}3$ est $+30\,\%$.
+
+Autre formulation :<br>
+Multiplier une valeur par $1{,}3$ revient à en prendre  $130\,\%$.<br>
+Cela signifie  qu'on l'augmente de $30\,\%$ car $100\,\% +30\,\%=130\,\%$.<br>
+Le taux d'évolution est donc $\boldsymbol{+} \boldsymbol{30\,} \%$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

@@ -149,6 +149,12 @@ Le résultat est égal à :
 - $(x + 2x)^2$
 - $3x + x^2$
 - $x + (2x)^2$
+
+---CORR---
+On additionne un nombre réel $x$, avec son double $2x$ et son carré $x^2$.<br>
+On obtient : $x + 2x + x^2 = \boldsymbol{3x + x^2}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -163,6 +169,13 @@ On considère une fonction $f$ définie sur $\mathbb{R}$ dont le tableau de sign
 - $f(x)=x-2$
 - $f(x)=2x$
 - $f(x)=-4x+8$
+
+---CORR---
+Parmi les réponses proposées, on cherche la fonction affine qui s'annule en $2$ et dont le coefficient directeur est positif. En effet,
+la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d'après le tableau de signes.<br>
+Il s'agit de la fonction $f$ définie par $\boldsymbol{f(x)=x-2}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -173,6 +186,14 @@ L'ensemble des solutions $\mathscr{S}$ de l'équation $-7x^2-3x-8=-8$ est :
 - $\mathscr{S}=\left\lbrace-\dfrac{3}{7}\ ;\ 0\right\rbrace$
 - $\mathscr{S}=\left\lbrace0\ ;\ \dfrac{3}{7}\right\rbrace$
 - $\mathscr{S}=\left\lbrace-\dfrac{7}{3}\ ;\ 0\right\rbrace$
+
+---CORR---
+L'équation $-7x^2-3x-8=-8$ s'écrit $-7x^2-3x=0$.<br>
+En factorisant le premier membre (facteur commun $x$), on obtient $x(-7x-3)=0$.<br>
+On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{3}{-7}=-\dfrac{3}{7}$.<br>
+$\mathcal{S}=\boldsymbol{\{0;-\dfrac{3}{7}\}}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" layout="grid">}}
@@ -187,6 +208,15 @@ Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur
 - <img src="graphe_f05_1_devoir_optB_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 - <img src="graphe_f05_1_devoir_optC_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 - <img src="graphe_f05_1_devoir_optD_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+
+---CORR---
+La fonction $g$ s'annule en $-1$ et la fonction $h$ s'annule en $2$.<br>
+Quand la droite est en-dessous de l'axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.<br>
+On en déduit le tableau de signes de leur produit :
+<img src="corr_f05_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -201,6 +231,12 @@ L'équation $f(x)=2$ a :
 - $0$ solution
 - $3$ solutions
 - $1$ solution
+
+---CORR---
+Le nombre de solutions de  l'équation $f(x)=2$ est le nombre d'antécédents de  $2$ par la fonction $f$.<br>
+Puisque la droite d'équation $y = 2$ (droite hrizontale) coupe $1$ fois la courbe, on en déduit que l'équation  $f(x)=2$ admet $\boldsymbol{1}$ solution..<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -212,6 +248,14 @@ L'équation réduite de cette droite est :
 - $y=3$
 - $y= x +3$
 - $y= -x+3$
+
+---CORR---
+Le coefficient directeur $m$ de la droite $(AB)$ est donné par : <br>
+$m=\dfrac{\boldsymbol{3}}{\boldsymbol{3}}=\dfrac{1\boldsymbol{\times3} }{1\boldsymbol{\times3}}=1$.<br>
+Son ordonnée à l'origine est $3$, ainsi l'équation réduite de la droite est $\boldsymbol{y=x+3}$.<br>
+<img src="corr_f07_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 </div>

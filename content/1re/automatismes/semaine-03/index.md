@@ -177,6 +177,20 @@ On considère $A=\dfrac{2}{3-\dfrac{2}{5}}$.
 - $10$
 - $\dfrac{13}{5}$
 
+
+---CORR---
+$$
+\begin{aligned}
+A &= \dfrac{2}{3-\dfrac{2}{5}} \\\\
+&= \dfrac{2}{\dfrac{15}{5}-\dfrac{2}{5}} \\\\
+&= \dfrac{2}{\dfrac{13}{5}} \\\\
+&= 2 \times \dfrac{5}{13} \\\\
+&= \boldsymbol{\dfrac{10}{13}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -189,6 +203,22 @@ Soient $I$, $K$, $L$ et $J$ quatre nombres (avec $J$ non nul) vérifiant l'égal
 - $L = \dfrac{K - I}{J}$
 - $L = J(K - I)$
 - $L = \dfrac{I - K}{J}$
+
+
+---CORR---
+On isole $L$ dans un membre de l'égalité :<br>
+
+$$
+\begin{aligned}
+I &= K - LJ\\\\
+I - K &= -LJ\\\\
+-I + K &= LJ\\\\
+\dfrac{-I + K}{J} &= L
+\end{aligned}
+$$
+
+Une expression de $L$ en fonction de $I$, $K$ et $J$ est $\boldsymbol{L = \dfrac{K - I}{J}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -205,6 +235,13 @@ L'ensemble des antécédents de $0$ est :
 - {$-1\ ;\ 1\ ;\ 6$}
 - {$-1\ ;\ 1$}
 
+
+---CORR---
+Déterminer les antécédents de $0$ revient à déterminer les nombres qui ont pour image $0$.<br>
+On part de $0$ sur l'axe des ordonnées et on lit les antécédents (éventuels) sur l'axe des abscisses.<br>
+On en trouve $3$ : $\boldsymbol{-1\,;\,1\,;\,6}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -215,6 +252,16 @@ Augmenter une valeur de $90~\%$ revient à la multiplier par :
 - $1{,}9$
 - $0{,}9$
 - $0{,}1$
+
+
+---CORR---
+Augmenter de $90~\%$ revient à multiplier par $1+\dfrac{90}{100}$.<br>
+Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $1+0{,}9$, soit $1{,}9$.
+
+Autre formulation : <br>
+Augmenter de $90~\%$ une valeur revient à en prendre $190~\%$ car $100~\% + 90 ~\%=190~\%$.<br>
+Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $\dfrac{190}{100}$ soit $\boldsymbol{1{,}9}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -231,6 +278,20 @@ Le plan est muni d’un repère orthogonal.
 - $\dfrac{11}{8}$
 - $-\dfrac{2}{3}$
 
+
+---CORR---
+Le coefficient directeur $m$ de la droite  $(CF)$ est donnée par la formule : $\dfrac{y_{F}-y_{C}}{x_{F}-x_{C}}$.<br>
+
+$$
+\begin{aligned}
+m&=\dfrac{-3-5}{4-(-7)}\\\\
+&= \dfrac{-8}{11}\\\\
+&=\boldsymbol{-\dfrac{8}{11}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -243,6 +304,20 @@ Soit $p$ la fonction définie par : $p(x)=\dfrac{5}{3}x-4$.
 - $-\dfrac{2}{3}$
 - $-\dfrac{7}{3}$
 - $-\dfrac{1}{3}$
+
+
+---CORR---
+Comme $p(x)=\dfrac{5}{3}x-4$, on a :<br>
+
+$$
+\begin{aligned}
+p(2)&=\dfrac{5}{3}\times 2-4\\\\
+&=\dfrac{10}{3}-4\\\\
+&=\boldsymbol{-\dfrac{2}{3}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

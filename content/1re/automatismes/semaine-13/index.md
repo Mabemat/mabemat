@@ -160,6 +160,11 @@ Le produit de $9$ par la somme de $x$ et de $8$ est égal à :
 - $9(x+8)$
 - $9(x\times 8)$
 - $9\times 8+x$
+
+---CORR---
+Le produit de $9$ par la somme de $x$ et de $8$ s'écrit : $\boldsymbol{9(x+8)}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -172,6 +177,13 @@ L'expression permettant, à partir de cette formule, d'exprimer la hauteur $h$ e
 - $h=\dfrac{2A}{bB}$
 - $h=2A(b+B)$
 - $h=\dfrac{A}{b+B}$
+
+---CORR---
+On part de la formule : $A = \dfrac{(b + B) \times h}{2}$.<br>
+En multipliant les deux membres par $2$, on obtient : $2A = (b + B) \times h$.<br>
+En isolant $h$, on obtient : $\boldsymbol{h = \dfrac{2A}{b + B}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" layout="grid">}}
@@ -185,6 +197,15 @@ Le tableau de variations de la fonction $f$ est :
 - <img src="graphe_f05_2_devoir_optB_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 - <img src="graphe_f05_2_devoir_optC_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
 - <img src="graphe_f05_2_devoir_optD_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+
+---CORR---
+La fonction $f$ est définie sur $[-5\,;\,4]$.<br>
+La fonction est décroissante puis croissante.<br>
+Elle atteint un minimum en $x=-1$.<br>
+<img src="corr_f05_2_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -197,6 +218,23 @@ On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-2x^2+3x-2$.
 - $-\dfrac{152}{25}$
 - $-\dfrac{212}{25}$
 - $\dfrac{212}{25}$
+
+---CORR---
+On remplace $x$ par $-\dfrac{6}{5}$ dans l'expression de $f$ :<br>
+
+$$
+\begin{aligned}
+f\left(-\dfrac{6}{5}\right)&=-2\times \left(-\dfrac{6}{5}\right)^2+3\times \left(-\dfrac{6}{5}\right)-2\\\\
+&=-2\times\dfrac{36}{25}-\dfrac{18}{5}-2\\\\
+&=-\dfrac{72}{25}-\dfrac{18}{5}-2\\\\
+&=\dfrac{-72-90-50}{25}\\\\
+&=-\dfrac{212}{25}
+\end{aligned}
+$$
+
+L'image de $-\dfrac{6}{5}$ par la fonction $f$ est : $\boldsymbol{-\dfrac{212}{25}}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -208,6 +246,17 @@ Soient $a$ et $b$ deux nombres réels non nuls.
 - Aucune de ces propositions.
 - $\left(ab\right)^3$
 - $\left(ab\right)^2\times b^{}$
+
+---CORR---
+Les deux exposants sont égaux, ainsi : <br>
+
+$$
+\begin{aligned}
+a^3\times b^3&=\boldsymbol{\left(ab\right)^3}\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -219,6 +268,15 @@ $p\ $% de $60$ est égal à $3$.
 - $p=3$
 - $p=5$
 - $p=50$
+
+---CORR---
+Prendre $10\,\%$ d'une quantité revient à la diviser par $10$.<br>
+$10\,\%$ de $60$ est égal à $6$.<br>
+En divisant par $2$, on obtient : <br>
+$5\,\%$  de $60$ est égal à $3$.<br>
+Ainsi $p=\boldsymbol{5}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 </div>

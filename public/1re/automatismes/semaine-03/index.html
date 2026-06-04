@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>3</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>3</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Fractions, formules et fonctions affines</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1137,6 +1147,10 @@ Devoirs — Séance 3 — Fractions, formules et fonctions affines
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="0">
   <div class="qcm-question">
@@ -1184,7 +1198,15 @@ $A$ est égal à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    $$
+\begin{aligned}
+A &= \dfrac{2}{3-\dfrac{2}{5}} \\\\
+&= \dfrac{2}{\dfrac{15}{5}-\dfrac{2}{5}} \\\\
+&= \dfrac{2}{\dfrac{13}{5}} \\\\
+&= 2 \times \dfrac{5}{13} \\\\
+&= \boldsymbol{\dfrac{10}{13}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
   </div>
   
 </div>
@@ -1256,6 +1278,10 @@ $A$ est égal à :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1313,7 +1339,17 @@ Une expression de $L$ en fonction de $I$, $K$ et $J$ est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On isole $L$ dans un membre de l&rsquo;égalité :<br></p>
+$$
+\begin{aligned}
+I &= K - LJ\\\\
+I - K &= -LJ\\\\
+-I + K &= LJ\\\\
+\dfrac{-I + K}{J} &= L
+\end{aligned}
+$$<p>Une expression de $L$ en fonction de $I$, $K$ et $J$ est $\boldsymbol{L = \dfrac{K - I}{J}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1395,6 +1431,10 @@ Une expression de $L$ en fonction de $I$, $K$ et $J$ est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1453,7 +1493,10 @@ L&rsquo;ensemble des antécédents de $0$ est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Déterminer les antécédents de $0$ revient à déterminer les nombres qui ont pour image $0$.<br>
+On part de $0$ sur l&rsquo;axe des ordonnées et on lit les antécédents (éventuels) sur l&rsquo;axe des abscisses.<br>
+On en trouve $3$ : $\boldsymbol{-1\,;\,1\,;\,6}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
   </div>
   
 </div>
@@ -1515,6 +1558,10 @@ L&rsquo;ensemble des antécédents de $0$ est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1571,7 +1618,13 @@ L&rsquo;ensemble des antécédents de $0$ est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Augmenter de $90~\%$ revient à multiplier par $1+\dfrac{90}{100}$.<br>
+Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $1+0{,}9$, soit $1{,}9$.</p>
+<p>Autre formulation : <br>
+Augmenter de $90~\%$ une valeur revient à en prendre $190~\%$ car $100~\% + 90 ~\%=190~\%$.<br>
+Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $\dfrac{190}{100}$ soit $\boldsymbol{1{,}9}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1653,6 +1706,10 @@ L&rsquo;ensemble des antécédents de $0$ est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1711,7 +1768,15 @@ Le coefficient directeur $m$ de la droite $(CF)$ est égal à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Le coefficient directeur $m$ de la droite  $(CF)$ est donnée par la formule : $\dfrac{y_{F}-y_{C}}{x_{F}-x_{C}}$.<br></p>
+$$
+\begin{aligned}
+m&=\dfrac{-3-5}{4-(-7)}\\\\
+&= \dfrac{-8}{11}\\\\
+&=\boldsymbol{-\dfrac{8}{11}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1793,6 +1858,10 @@ Le coefficient directeur $m$ de la droite $(CF)$ est égal à :
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="1">
   <div class="qcm-question">
@@ -1840,7 +1909,15 @@ L&rsquo;image de $2$ par la fonction $p$ est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Comme $p(x)=\dfrac{5}{3}x-4$, on a :<br></p>
+$$
+\begin{aligned}
+p(2)&=\dfrac{5}{3}\times 2-4\\\\
+&=\dfrac{10}{3}-4\\\\
+&=\boldsymbol{-\dfrac{2}{3}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -2022,6 +2099,10 @@ L&rsquo;image de $2$ par la fonction $p$ est :
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -2050,7 +2131,7 @@ L&rsquo;image de $2$ par la fonction $p$ est :
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

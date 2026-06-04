@@ -163,6 +163,15 @@ Une personne doit rembourser un crédit de $1\ 400$ en trois mois.
 - $\dfrac{31}{42}\text{ du crédit.}$
 - $\dfrac{1}{6}\text{ du crédit.}$
 - $\dfrac{1}{3}\text{ du crédit.}$
+
+---CORR---
+En février, elle rembourse $\dfrac{1}{6}$ de ce qu'elle a remboursé en janvier.<br>
+Elle rembourse donc $\dfrac{1}{6} \times \dfrac{4}{7} = \dfrac{2}{21}$ du crédit total.<br>
+Au total, en janvier et février, elle aura remboursé :  $\dfrac{4}{7} + \dfrac{4}{42}=\dfrac{24}{42} + \dfrac{4}{42} = \dfrac{2}{3}$ du crédit. <br>
+Il lui restera à rembourser en mars : $1 - \dfrac{2}{3} = \boldsymbol{\dfrac{1}{3}}$ du crédit.
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -174,6 +183,13 @@ Quelle est sa vitesse moyenne ?
 - $12\text{ km/h}$
 - $4\text{ km/h}$
 - $5\text{ km/h}$
+
+---CORR---
+Dans une $1$ heure, il y a $12\times 5$ minutes.<br>
+Ainsi, en $1$ heure, elle parcourt $5$ fois plus de distance, soit $5\text{ km}$.<br>
+Sa vitesse moyenne est donc $\boldsymbol{5}\text{ km/h}$. <br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -184,6 +200,13 @@ Un ordre de grandeur de $199 \times 3\ 182$ est :
 - $6\ 000\ 000$
 - $60\ 000$
 - $6\ 000$
+
+---CORR---
+On arrondit $199$ à $200$ et $3\,182$ à $3\,000$.<br>
+On obtient : $200 \times 3\,000 = 600\,000$.<br>
+Un ordre de grandeur de $199 \times 3\,182$ est donc $\boldsymbol{600\,000}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -196,6 +219,12 @@ La population d'une ville augmente de $5\ $% chaque année.
 - $P(n + 1) = 0{,}05 \times P(n)$
 - $P(n + 1) = P(n) + 0{,}05$
 - $P(n + 1) = 1{,}05 \times P(n)$
+
+---CORR---
+Pour augmenter de $5\,\%$, on applique un coefficient multiplicateur de $1 + 0{,}05 = 1{,}05$.<br>
+Donc $\boldsymbol{P(n + 1) = 1{,}05 \times P(n)}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -208,6 +237,13 @@ Le prix d'un article a diminué de $38~$%.
 - $\dfrac{1}{1{,}38}$
 - $\dfrac{1}{0{,}62}$
 - $\dfrac{1}{0{,}38}$
+
+---CORR---
+Diminuer de $38~\%$ revient à multiplier par de $1-\dfrac{38}{100}=0{,}62$.<br>
+Pour retrouver le prix initial, il faut diviser par ce coefficient, c'est-à-dire multiplier par le coefficient multiplicateur réciproque $\dfrac{1}{0{,}62}$.<br>
+Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{1}{0{,}62}}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -219,6 +255,21 @@ $20\ $% de $N$ est égal à $10$.
 - $N=0{,}5$
 - $N=50$
 - $N=500$
+
+---CORR---
+Pour passer de $20\,\%$ à $100\,\%$, on multiplie par $5$.<br>
+
+$$
+\begin{aligned}
+20\,\% \text{ de } N &=  10\\\\
+100\,\% \text{ de } N&=5\times10\\\\
+\
+N&=\boldsymbol{50}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 </div>

@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>20</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>20</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Formules, fonctions et statistiques</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1160,6 +1170,10 @@ Devoirs — Séance 20 — Formules, fonctions et statistiques
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="1">
   <div class="qcm-question">
@@ -1207,7 +1221,16 @@ Lorsque $a=\dfrac{1}{7}$, $b=1$, $c=8$ et $d=-\dfrac{1}{8}$, la valeur de $F$ es
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On remplace $a$, $b$, $c$ et $d$ par les valeurs données : <br></p>
+$$
+\begin{aligned}
+F&=\dfrac{1}{7}+\dfrac{1}{8\times \left(-\dfrac{1}{8}\right)}\\\\
+&=\dfrac{1}{7}+\dfrac{1}{-1}\\\\
+&=\dfrac{1}{7}-1\\\\
+&=\boldsymbol{-\dfrac{6}{7}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1285,6 +1308,10 @@ Lorsque $a=\dfrac{1}{7}$, $b=1$, $c=8$ et $d=-\dfrac{1}{8}$, la valeur de $F$ es
   
   
     
+  
+
+  
+  
   
 
   
@@ -1339,7 +1366,23 @@ On peut affirmer que :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On cherche si les fonctions $f$ peuvent s&rsquo;écrire sous la forme $f(x)=mx+p$.<br>
+$\bullet$ En développant, on obtient :<br></p>
+$$
+\begin{aligned}
+f_1(x)&=x^2-(x+2)(x-4)\\\\
+&=x^2-(x^2-4x+2x-8)\\\\
+&=x^2-x^2+4x-2x+8\\\\
+&=2x+8
+\end{aligned}
+$$<p>On retrouve une forme $mx+p$, donc $f_1$ est une fonction affine.<br>
+$\bullet$ $f_2(x)=2\sqrt{x}+4$<br>
+Cette fonction contient un terme en $\sqrt{x}$, elle n&rsquo;est donc pas affine.<br>
+$\bullet$ $f_3(x)=\dfrac{2}{x}-7$<br>
+Cette fonction contient un terme en $\dfrac{1}{x}$, elle n&rsquo;est donc pas affine.<br>
+Uniquement la fonction $f_1$ est affine.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
   </div>
   
 </div>
@@ -1407,6 +1450,10 @@ On peut affirmer que :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1460,7 +1507,12 @@ On peut affirmer que :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    $$
+\begin{aligned} \left(-1\right)^{n+6}&=\left(-1\right)^{6} \times \left(-1\right)^{n} \\\\
+&=1\times \left(-1\right)^{n} \\\\
+&=\boldsymbol{\left(-1\right)^{n}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
   </div>
   
 </div>
@@ -1556,6 +1608,10 @@ On peut affirmer que :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1613,7 +1669,14 @@ L&rsquo;ensemble des solutions $S$ de cette inéquation est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Pour résoudre graphiquement cette inéquation : <br>
+$\bullet$ On trace la courbe d&rsquo;équation $y=\sqrt{x}$. <br>
+$\bullet$ On trace la droite horizontale d&rsquo;équation $y=7$. Cette droite coupe la courbe en $7^2=49$. <br>
+$\bullet$ Les solutions de l&rsquo;inéquation sont les abscisses des points de la courbe qui se situent strictement au dessus de la droite.<br>
+<img src="corr_c10_6_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
+<p>Comme la fonction racine carrée est définie sur $[0\,;\,+\infty[$, l&rsquo;ensemble des solutions de l&rsquo;inéquation $(I)$ est : $S = ]49\,;\,+\infty[$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
   </div>
   
 </div>
@@ -1685,6 +1748,10 @@ L&rsquo;ensemble des solutions $S$ de cette inéquation est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1738,7 +1805,18 @@ Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $1
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Appelons $x$ la valeur cherchée.<br>
+On commence par calculer la somme des valeurs de la série de l&rsquo;énoncé :<br>
+$11 + 15 + 5 + 14 = 45$.<br>
+Comme la série de l&rsquo;énoncé contient $4$ valeurs, la nouvelle série avec $x$ en contient $5$.</p>
+<p>On peut calculer sa moyenne avec l&rsquo;expression : $\dfrac{45 + x}{5}$<br>
+Comme cette moyenne vaut $10$ d&rsquo;après l&rsquo;énoncé, il faut alors résoudre l&rsquo;équation : <br>
+$\dfrac{45 + x}{5} = 10$</p>
+<p>$45 + x = 10 \times 5$</p>
+<p>$x = 10 \times 5 - 45$</p>
+<p>$x = \boldsymbol{5}$<br>
+La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
   </div>
   
 </div>
@@ -1816,6 +1894,10 @@ Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $1
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="1">
   <div class="qcm-question">
@@ -1863,7 +1945,12 @@ Le nombre d&rsquo;élèves inscrits dans ce lycée est égal à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    En notant $N$ le nombre total d&rsquo;élèves,
+$4\,\%$ de $N$ est égal à $40$ élèves.<br>
+Puisque $4\,\% =\dfrac{4}{100}=\dfrac{1}{25}$, alors $N$ est $25$ fois plus grand que $40$.<br>
+Ainsi,  $N=25\times 40$ élèves soit
+$\boldsymbol{1\,000}$ élèves au total.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -2045,6 +2132,10 @@ Le nombre d&rsquo;élèves inscrits dans ce lycée est égal à :
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -2073,7 +2164,7 @@ Le nombre d&rsquo;élèves inscrits dans ce lycée est égal à :
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

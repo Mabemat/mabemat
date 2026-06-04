@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>9</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>9</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Équations-produits, évolutions et statistiques</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1109,6 +1119,10 @@ Devoirs — Séance 9 — Équations-produits, évolutions et statistiques
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="3">
   <div class="qcm-question">
@@ -1156,7 +1170,15 @@ Cela signifie que ce prix a été multiplié par :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p><strong>Correction 1 :</strong><br>
+On cherche le nombre $k$ tel que $ k \times 68=85 $.<br>
+On obtient $k=\dfrac{85}{68} = \dfrac{5}{4}=\boldsymbol{1{,}25}$.</p>
+<p><strong>Correction 2 :</strong><br>
+Le prix a augmenté de $17$ euros, ce qui représente $25\,\%$ de $68$ euros.<br>
+Le coefficient multiplicateur associé à cette hausse est $1{,}25$.<br>
+On peut dire que le prix a été multiplié par $\boldsymbol{1{,}25}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
   </div>
   
 </div>
@@ -1228,6 +1250,10 @@ Cela signifie que ce prix a été multiplié par :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1285,7 +1311,9 @@ Cela signifie que ce prix a été multiplié par :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    La valeur $30$ correspond au premier quartile et la valeur $75$ au maximum.<br>
+Donc, la proportion de valeurs comprises entre $30$ et $75$ est de $75\%$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
   </div>
   
 </div>
@@ -1347,6 +1375,10 @@ Cela signifie que ce prix a été multiplié par :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1403,7 +1435,18 @@ Cela signifie que ce prix a été multiplié par :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On reconnaît une équation produit nul. <br>
+Un produit de facteurs est nul, si et seulement si l&rsquo;un au moins de ses facteurs est nul.<br></p>
+$$
+\begin{aligned}
+(2x-12)(5x-25)&=0\\\\
+2x-12=0 &\text{ ou } 5x-25=0\\\\
+2x=12 &\text{ ou } 5x=25\\\\
+x=6 &\text{ ou } x=5
+\end{aligned}
+$$<p>Le produit de ces soltions est donc égal à : $6\times 5=\boldsymbol{30}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
   </div>
   
 </div>
@@ -1475,6 +1518,10 @@ Cela signifie que ce prix a été multiplié par :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1532,7 +1579,14 @@ L&rsquo;image de $6$ par cette fonction est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    $$
+\begin{aligned}
+f\left(6\right)&=3-\dfrac{2}{3}(6-5)^2\\\\
+&=3-\dfrac{2}{3}\times 1\\\\
+&=\dfrac{7}{3}
+\end{aligned}
+$$<p>L&rsquo;image de $6$  par la  fonction  $f$ est : $\boldsymbol{\dfrac{7}{3}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.</p>
   </div>
   
 </div>
@@ -1610,6 +1664,10 @@ L&rsquo;image de $6$ par cette fonction est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1668,7 +1726,10 @@ Parmi ces propositions, laquelle peut être la médiane de la série ?
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    La série triée dans l&rsquo;ordre croissant est : $5$  ;  $8$  ;  $11$  ;  $14$  ;  $17$.<br>
+La série comporte $5$ valeurs, qui est un nombre impair,  donc la médiane est le terme de rang $3$.<br>
+La médiane est donc $11$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
   </div>
   
 </div>
@@ -1740,6 +1801,10 @@ Parmi ces propositions, laquelle peut être la médiane de la série ?
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="0">
   <div class="qcm-question">
@@ -1786,7 +1851,15 @@ Parmi ces propositions, laquelle peut être la médiane de la série ?
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On a  : <br></p>
+$$
+\begin{aligned}
+A&=\dfrac{5}{10}+\dfrac{5}{100}\\\\
+&=0{,}5+0{,}05\\\\
+&=\boldsymbol{0{,}55}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
   </div>
   
 </div>
@@ -1968,6 +2041,10 @@ Parmi ces propositions, laquelle peut être la médiane de la série ?
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -1996,7 +2073,7 @@ Parmi ces propositions, laquelle peut être la médiane de la série ?
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

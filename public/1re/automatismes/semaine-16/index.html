@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>16</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>16</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Puissances, équations et probabilités</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1215,6 +1225,10 @@ Devoirs — Séance 16 — Puissances, équations et probabilités
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="0">
   <div class="qcm-question">
@@ -1262,7 +1276,14 @@ Devoirs — Séance 16 — Puissances, équations et probabilités
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On applique la propriété du quotient des puissances d&rsquo;un réel : <br>
+Soit $n$ et $p$ deux entiers et $a$ un réel :  $\dfrac{a^n}{a^p}=a^{n-p}$<br></p>
+$$
+\begin{aligned} \dfrac{a^{n^{2}}}{a^{n}}&=a^{n^{2}-n}\\\\
+&=\boldsymbol{a^{n(n^{}-1)}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
   </div>
   
 </div>
@@ -1362,6 +1383,10 @@ Devoirs — Séance 16 — Puissances, équations et probabilités
   
   
     
+  
+
+  
+  
   
 
   
@@ -1417,7 +1442,14 @@ L&rsquo;ensemble des solutions $S$ de cette inéquation est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Pour résoudre graphiquement cette inéquation : <br>
+$\bullet$ On trace la parabole d&rsquo;équation $y=x^2$. <br>
+$\bullet$ On trace la droite horizontale d&rsquo;équation $y=12$. Cette droite coupe la parabole en $-\sqrt{12}$ et $\sqrt{12}$. <br>
+$\bullet$ Les solutions de l&rsquo;inéquation sont les abscisses des points de la courbe qui se situent  sur ou sous  la droite.<br>
+<img src="corr_c10_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
+<p>On en déduit que l&rsquo;ensemble des solutions de l&rsquo;inéquation $(I)$ est : $S = [-\sqrt{12}\,;\,\sqrt{12}]$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
   </div>
   
 </div>
@@ -1489,6 +1521,10 @@ L&rsquo;ensemble des solutions $S$ de cette inéquation est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1542,7 +1578,10 @@ Sachant que le taux réciproque d&rsquo;une baisse de $20\ $% est une augmentati
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Le taux réciproque d&rsquo;une baisse de $20\,\%$ est une augmentation de $25\,\%$.<br>
+Comme $30\,\% > 25\,\%$, l&rsquo;augmentation appliquée est plus forte que celle nécessaire pour retrouver le prix initial.<br>
+Le prix final sera donc strictement supérieur au prix initial.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
   </div>
   
 </div>
@@ -1624,6 +1663,10 @@ Sachant que le taux réciproque d&rsquo;une baisse de $20\ $% est une augmentati
   
   
     
+  
+
+  
+  
   
 
   
@@ -1678,7 +1721,17 @@ La droite $(D)$ est strictement au-dessus de la droite $(D')$ sur :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>La droite $(D)$ est strictement au-dessus de la droite $(D')$ lorsque $4x-3>-9x+4$.<br></p>
+$$
+\begin{aligned}
+4x-3&>-9x+4\\\\
+13x&>7\\\\
+x&>\dfrac{7}{13}
+\end{aligned}
+$$<p>La droite $(D)$ est donc strictement au-dessus de la droite $(D')$ sur :
+$\boldsymbol{\left]\dfrac{7}{13}\,;\, +\infty\right[}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1790,6 +1843,10 @@ La droite $(D)$ est strictement au-dessus de la droite $(D')$ sur :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1845,7 +1902,15 @@ On a :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On applique la formule de probabilité totale :<br></p>
+$$
+\begin{aligned}
+p(B)&=p(A)\times p_A(B)+p(\overline A)\times p_{\overline A}(B)\\\\
+&=0{,}9\times 0{,}6+0{,}1\times 0{,}9\\\\
+&=\boldsymbol{0{,}63}.
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
   </div>
   
 </div>
@@ -1933,6 +1998,10 @@ On a :
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="0">
   <div class="qcm-question">
@@ -1981,7 +2050,15 @@ $Données :$ $1\text{ kWh} = 3,6 \times 10^{6}\text{ J}.$
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Pour convertir des Joules en kWh, on utilise la relation donnée :<br>
+$1~\text{kWh} = 3,6 \times 10^{6}~\text{J}$<br>
+L&rsquo;énergie en Joules est : $E = 6{,}12 \times 10^{6}~\text{J}$<br>
+Pour trouver l&rsquo;énergie en kWh, on divise par $3,6 \times 10^{6}$ :<br>
+$E_{\text{kWh}} = \dfrac{6{,}12 \times 10^{6}}{3,6 \times 10^{6}} = \dfrac{6{,}12}{3,6} = 1{,}7~\text{kWh}$<br>
+Sans calculatrice, on peut estimer la valeur en approchant $6{,}12$ par $6$ et $3,6$ par $4$.<br>
+On obtient alors : $\dfrac{6}{4} = 1{,}5$, ce qui nous indique que le résultat est proche de $1{,}5$.<br>
+La seule réponse possible est $\boldsymbol{1{,}7}$ $\text{kWh}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
   </div>
   
 </div>
@@ -2163,6 +2240,10 @@ $Données :$ $1\text{ kWh} = 3,6 \times 10^{6}\text{ J}.$
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -2191,7 +2272,7 @@ $Données :$ $1\text{ kWh} = 3,6 \times 10^{6}\text{ J}.$
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -170,6 +170,17 @@ Devoirs — Séance 12 — Équations, suites et statistiques
 - $x=-\sqrt{11}$ ou $x=\sqrt{11}$
 - $ -\sqrt{11} < x < \sqrt{11}$
 - $ -\sqrt{11} \leqslant x \leqslant \sqrt{11}$
+
+---CORR---
+Pour résoudre graphiquement cette inéquation : <br>
+$\bullet$ On trace la parabole d'équation $y=x^2$. <br>
+$\bullet$ On trace la droite horizontale d'équation $y=11$. Cette droite coupe la parabole en $-\sqrt{11}$ et $\sqrt{11}$. <br>
+$\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent  sur ou sous  la droite.<br>
+<img src="corr_c10_3_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+On en déduit que l'inéquation $(I)$ est équivalente à : $ -\sqrt{11}  \leqslant  x  \leqslant  \sqrt{11}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -180,6 +191,20 @@ La forme développée de $A=-y(-2y-5)$ est :
 - $2y^2+5y^2$
 - $2y^2-5y$
 - $2y+5y$
+
+---CORR---
+On développe en utilisant la simple distributivité : <br>
+
+$$
+\begin{aligned}
+A&=-y(-2y-5)\\\\
+&=-y\times (-2y) -y\times (-5)\\\\
+&=\boldsymbol{2y^2+5y}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -191,6 +216,13 @@ On considère l'égalité $\dfrac{1}{z}=4+\dfrac{4}{5}$.
 - $z=\dfrac{4}{21}$
 - $z=\dfrac{24}{5}$
 - $z=\dfrac{8}{5}$
+
+---CORR---
+$\dfrac{1}{z}=4+\dfrac{4}{5} = \dfrac{4 \times 5}{5} + \dfrac{4}{5} = \dfrac{20}{5} + \dfrac{4}{5}  =\dfrac{24}{5}$
+
+L'inverse de $z$ vaut  $\dfrac{24}{5}$, donc $z=\boldsymbol{\dfrac{5}{24}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -204,6 +236,15 @@ $30\ $% dans un premier temps, puis qui diminue de $50\ $% dans un second temps.
 - $-35\ $%
 - $65\ $%
 - $-65\ $%
+
+---CORR---
+Augmenter de $30\,\%$ revient à multiplier par $1{,}3$ et diminuer de $50\,\%$ revient à multiplier par $0{,}5$.<br>
+Globalement cela revient donc à multiplier par $1{,}3\times 0{,}5=0{,}65$.<br>
+Multiplier par $0{,}65$ revient à multiplier par  $1-0{,}35$. <br>
+Le taux d'évolution global est donc : $\boldsymbol{-35\,} \%$
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -217,6 +258,14 @@ $f(5) - f(4)$ est égal à :
 - $1$
 - $-1$
 - $7$
+
+---CORR---
+D'après le graphique, on lit :<br>
+$f(5) = 3$ et
+$f(4) = 2$.<br>
+Donc $f(5) - f(4) = 3 - 2 = \boldsymbol{1}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -230,6 +279,13 @@ Une série statistique est résumée par le diagramme en boite ci-dessous, utili
 - $37{,}5$
 - $15$
 - $60$
+
+---CORR---
+La médiane est la valeur qui partage la série statistique en deux parties égales.<br>
+D'après le diagramme en boite, on a $Q_1=15$ et $Q_3=60$. La médiane se trouve au niveau du trait intermédiaire.<br>
+La médiane de la série est donc : $\boldsymbol{35}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 </div>

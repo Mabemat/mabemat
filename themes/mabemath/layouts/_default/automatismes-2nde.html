@@ -128,5 +128,6 @@
 </script>
 
 {{/* ── Mode projection : logique ── */}}
+<script>window.PROJ_PIN = "{{ .Site.Params.projection_pin | default "0000" }}";</script>
 <script src="{{ "js/projection-2nde.js" | relURL }}"></script>
 {{ end }}

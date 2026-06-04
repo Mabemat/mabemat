@@ -175,6 +175,12 @@ La solution de l'équation $\dfrac{-9}{x}=-9$ est :
 - $x=1$
 - $x=-9$
 
+
+---CORR---
+Le quotient $\dfrac{-9}{x}$ est égal à $-9$, lorsque son  dénominateur est égal à $1$.<br>
+Ainsi, la solution de l'équation est $\boldsymbol{1}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -191,6 +197,19 @@ Quel est le montant de l'abonnement mensuel ?
 - $6$ €
 - $8$ €
 
+
+---CORR---
+On note $a$ le montant de l'abonnement mensuel et $p$ le prix d'une séance.<br>
+D'après le premier ticket : $a + 2 \times p = 20$ soit $a + 2p = 20$.<br>
+D'après le second ticket : $a + 4 \times p = 32$ soit $a + 4 p = 32$<br>
+En faisant la différence entre ces deux montants, on obtient :<br>
+$4 p - 2  p = 12$ soit $2p=12$.<br>
+Donc le montant pour $1$ séance  est : $p = 6$\,€.<br>
+On peut alors calculer le montant de l'abonnement mensuel :<br>
+$a = 20 - 2 \times 6 = 20 - 12 = 8$\,€.<br>
+Le montant de l'abonnement mensuel est donc de $\boldsymbol{8\,\,\text{€}}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -201,6 +220,20 @@ On considère $A = 100 + 0{,}001 + \dfrac{1}{1\,000}$. On a :
 - $A = \dfrac{100\,001}{1\,000}$
 - $A = 100{,}011$
 - $A = \dfrac{100\,010}{1\,000}$
+
+
+---CORR---
+On a : <br>
+
+$$
+\begin{aligned}
+A &= 100 + 0{,}001 + \dfrac{1}{1\,000}\\\\
+& = 100{,}001 + 0{,}001\\\\
+& = \boldsymbol{100{,}002}
+\end{aligned}
+$$
+.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -217,6 +250,14 @@ Une seule des quatre fonctions ci-dessous est susceptible d'être représentée 
 - $x\longmapsto -0{,}6(x+2)(x+5)$
 - $x\longmapsto 0{,}6(x+2)(x-5)$
 
+
+---CORR---
+Les paraboles proposées ont des équations de la forme $y=a(x-x_1)(x-x_2)$ où $x_1$ et $x_2$ sont les racines.<br>
+La parabole $\mathcal{P}$ a "les bras" tournés vers le bas, on en déduit que $a < 0$.<br>
+Les racines de la parabole (intersections avec l'axe des abscisses) sont toutes les deux négatives.<br>
+On en déduit que la seule fonction susceptible de représenter $\mathcal{P}$ est : $\boldsymbol{x\longmapsto -0{,}6(x+2)(x+5)}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -227,6 +268,19 @@ Parmi les nombres suivants, lequel est le plus grand ?
 - $5\,$ % de $330$
 - $25\,$ % de $72$
 - $10\,$ % de $160$
+
+
+---CORR---
+• Prendre $25\,\%$ d'une valeur revient à la diviser par $4$.<br>
+• Prendre $10\,\%$ d'une valeur revient à la diviser par $10$.<br>
+• Prendre $20\,\%$ d'une valeur revient à en prendre deux fois $10\,\%$.<br>
+• Prendre $5\,\%$ d'une valeur revient à en prendre la moitié de $10\,\%$.<br>
+$25\,\%$ de $72=\dfrac{72}{4}=18$<br>
+$10\,\%$ de $160=\dfrac{160}{10}=16$<br>
+$5\,\%$ de $330=\dfrac{1}{2}\times \dfrac{330}{10}=\dfrac{33}{2}=16{,}5$<br>
+$20\,\%$ de $82=2\times \dfrac{82}{10}=2\times 8{,}2=16{,}4$<br>
+Le plus grand résultat est donc donné par le calcul $\boldsymbol{25\,\% \textbf{ de } 72}$ $ =18$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -244,6 +298,18 @@ Déterminer la valeur manquante (?) dans le tableau ci-dessous.
 - $150$
 - $6$
 - $70$
+
+
+---CORR---
+On a $y = k\times x$.<br>
+*Méthode 1 – avec le coefficient de proportionnalité* :<br>
+On calcule $k$ avec une colonne connue : $k = \dfrac{40}{8} = 5$.<br>
+On a $? = k\times 30 = 5\times 30 = \boldsymbol{150}$<br>
+*Méthode 2 – les produits en croix sont égaux* :<br>
+On a $8 \times ? = 30\times 40$, donc $\,? = \dfrac{30\times 40}{8} = \boldsymbol{150}$.<br>
+Vérification : $8\times 150 = 1\,200 \text{ et } 30\times 40 = 1\,200$<br>
+*Astuce : sans calculatrice*, un ordre de grandeur du produit en croix à obtenir permet souvent de déterminer la seule proposition qui permet de l'approcher.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

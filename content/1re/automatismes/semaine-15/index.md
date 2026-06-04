@@ -168,6 +168,23 @@ Une seule affirmation est correcte :
 - $f(-0{,}2) \times f(-1{,}3) < 0$
 - L'inéquation $f(x) \leqslant 0$ a pour ensemble de solutions $[-3\ ;\ -2[\cup]-2\ ;\ 2]$.
 - $f$ est positive sur $[3{,}3\ ;\ 5{,}9]$
+
+---CORR---
+$\bullet$ $f$ est positive sur $[3{,}3\,;\,5{,}9]$<br>
+Cette affirmation est correcte : <br>
+$f$ est positive sur $[3{,}3\,;\,5{,}9]$ car la courbe se situe au-dessus de l'axe des abscisses sur cet intervalle.<br>
+$\bullet$ L'inéquation $f(x) \leqslant 0$ a pour ensemble de solutions $[-3\,;\,-2[\cup]-2\,;\,2]$.<br>
+Cette affirmation est fausse : <br>
+Les solutions de l'inéquation $f(x) \leqslant 0$ sont les abscisses des points de la courbe situés en dessous ou sur l'axe des abscissses.<br>
+$\bullet$ Le maximum de $f$ est $6$.<br>
+Cette affirmation est fausse : <br>
+Le point le plus haut de la courbe a pour ordonnée $3$. C'est le maximum de $f$.<br>
+$\bullet$ $f(-0{,}2) \times f(-1{,}3) < 0$<br>
+Cette affirmation est fausse : <br>
+$f(-0{,}2) <0$ et  $f(-1{,}3) < 0$, donc le produit est positif.
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -181,6 +198,19 @@ $$A = \dfrac{6}{10} \ \ \ \  \ \ \ \  B = \dfrac{31}{50} \ \ \ \  \ \ \ \  C = 0
 - $B < A < C$
 - $A < C < B$
 - $A < B < C$
+
+---CORR---
+Pour comparer ces trois nombres, on les écrit sous forme décimale :<br>
+$A = \dfrac{6}{10} = 0,6$
+
+$B = \dfrac{31}{50} = \dfrac{31 \times 2}{50\times 2} =  \dfrac{62}{100}=0,62$
+
+$C = 0,59$
+
+On a donc : $0,59 < 0,6 < 0,62$.<br>
+Finalement : $\boldsymbol{C < A < B}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -191,6 +221,12 @@ Que vaut $0 \times a$ ?
 - $0$
 - $-a$
 - $1$
+
+---CORR---
+Tout nombre multiplié par $0$ est égal à $0$.<br>
+$0 \times a = \boldsymbol{0}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -202,6 +238,17 @@ L'ensemble des solutions dans $\mathbb{R}$ de l'inéquation
 - $]-\infty\ ;\ -9[\cup]6\ ;\ +\infty[$
 - $]-\infty\ ;\ -9]\cup[6\ ;\ +\infty[$
 - $]-9\ ;\ 6[$
+
+---CORR---
+$(x-6)(x+9)$ est un produit de deux fonctions affines.<br>
+L'équation $x-6=0$ a pour solution $x=6$.<br>
+L'équation $x+9=0$ a pour solution $x=-9$.<br>
+Le tableau de signe du produit  $9(x-6)(x+9)$ est : <br>
+<img src="corr_c14_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+On en déduit que l'ensemble des solutions est $\boldsymbol{]-9\,;\,6[}.$<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -213,6 +260,12 @@ $k(0)+k(3)$ est égal à :
 - $10$
 - $3$
 - $8$
+
+---CORR---
+On a : $k(0)=6\times 0-5=-5$ et $k(3)=6\times 3-5=13$.<br>
+On en déduit que $k(0)+k(3)=-5+13=\boldsymbol{8}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -226,6 +279,16 @@ On donne la série statistique suivante :
 - $14$
 - $13$
 - $9$ E. $20$
+
+---CORR---
+La série triée par ordre croissant est : $9$  ;  $12$  ;  $13$  ;  $20$  ;  $28$.<br>
+La série contient $5$ valeurs.<br>
+Pour trouver le rang de $Q_1$, on calcule le quart de 5 qui vaut
+$\dfrac{5}{4}=1{,}25$<br>
+On arrondit à l'entier supérieur qui vaut $2$.<br>
+Le premier quartile est donc la valeur de rang $2$ de la série classée : $Q_1=12$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 </div>

@@ -159,6 +159,20 @@ Parmi les égalités suivantes, une seule est correcte. Laquelle ?
 - $\dfrac{1}{4}+\dfrac{6}{7}=\dfrac{7}{11}$
 - $\dfrac{1}{4}-2=\dfrac{7}{4}$
 - $\dfrac{1}{4}+\dfrac{17}{28}=\dfrac{6}{7}$
+
+---CORR---
+$\bullet$ La seule égalité correcte est : $\boldsymbol{\dfrac{1}{4}+\dfrac{17}{28}=\dfrac{6}{7}}$.<br>
+$\dfrac{1}{4}+\dfrac{17}{28}=\dfrac{6}{7}=\dfrac{6}{7}$<br>
+$\bullet$ L'égalité $\dfrac{1}{4}+\dfrac{6}{7}=\dfrac{7}{11}$ est fausse.<br>
+On ne peut pas additionner directement les numérateurs et les dénominateurs. <br>
+Il faut d'abord mettre au même dénominateur : $\dfrac{1}{4}+\dfrac{6}{7}=\dfrac{31}{28}$.<br>
+$\bullet$ L'égalité $\dfrac{1}{4}-2=\dfrac{7}{4}$ est fausse.<br>
+$\dfrac{1}{4}-2=\dfrac{1}{4}-\dfrac{2}{1}=\dfrac{1-8}{4}=-\dfrac{7}{4}$<br>
+$\bullet$ L'égalité $\dfrac{\dfrac{6}{7}}{2}=\dfrac{12}{7}$ est fausse.<br>
+$\dfrac{\dfrac{6}{7}}{2}=\dfrac{6}{7\times 2}=\dfrac{6}{14}$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -169,6 +183,11 @@ Une simplification de $\dfrac{1}{2}x-4x$ est :
 - $-\dfrac{9}{2}x$
 - $\dfrac{7}{2}x$
 - $-\dfrac{7}{2}x$
+
+---CORR---
+$\dfrac{1}{2}x-4x=\dfrac{1}{2}x-\dfrac{4\times2}{2}x=\dfrac{1}{2}x-\dfrac{8}{2}x=\dfrac{1-8}{2}x=$ $\boldsymbol{\dfrac{-7}{2}x}$<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -182,6 +201,13 @@ $E=\dfrac{1}{2}mv^2$
 - $m=\sqrt{\dfrac{2E}{v}}$
 - $m=\dfrac{E}{2v^2}$
 - $m=\dfrac{2E}{v^2}$
+
+---CORR---
+On part de la formule : $E = \dfrac{1}{2}mv^2$.<br>
+En multipliant les deux membres par $2$, on obtient : $2E = mv^2$.<br>
+En isolant $m$, on obtient : $\boldsymbol{m = \dfrac{2E}{v^2}}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -192,6 +218,11 @@ L'opération qui permet de calculer $25\ $% de $600$ est :
 - $25 \times 600\times 100$
 - $600 \times 0{,}025$
 - $\dfrac{1}{4} \times 600$
+
+---CORR---
+Pour calculer $25\,\%$ de $600$, on effectue le calcul $0{,}25 \times 600$, soit encore $\boldsymbol{\dfrac{1}{4} \times 600}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -204,6 +235,13 @@ Le prix d'un sac a baissé de $16\ $%. Il coûte maintenant $201$ euros.
 - $\dfrac{201}{1 + \dfrac{16}{100}}$
 - $\dfrac{201}{1 - 0{,}16}$
 - $201 + 201 \times \dfrac{16}{100}$
+
+---CORR---
+Diminuer de $16\,\%$ revient à multiplier par $1 - 0{,}16$ (coefficient multiplicateur).<br>
+Si $V_I$ est le prix initial, on a : $ V_I \times \left(1 - 0{,}16\right)=201$.<br>
+Ainsi, le prix initial est donné par : $\boldsymbol{\dfrac{201}{1 - 0{,}16}}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -219,6 +257,22 @@ Quelle est la probabilité que le numéro de la boule tirée soit un multiple de
 - $\dfrac{1}{6}$
 - $\dfrac{5}{14}$
 - $\dfrac{2}{3}$
+
+---CORR---
+On note $A$ l'événement «  choisir l'urne A  » et $B$ l'événement «  choisir l'urne B  ».<br>
+On note $M$ l'événement «  obtenir un multiple de 3  ».<br>
+On a : $P(A) = \dfrac{1}{2}$ et $P(B) = \dfrac{1}{2}$ (les deux urnes sont choisies de manière équiprobable). <br>
+Dans l'urne A, il y a $1$ issue favorable : $9$.<br>
+Dans l'urne B, il y a $4$ issues favorables : $3, 6, 12, 15$.<br>
+Donc on a :
+$P_{A}(M) = \dfrac{1}{6}$ et $P_{B}(M) = \dfrac{4}{8} = \dfrac{1}{2}$. <br>
+$A$ et $B$ forment une partition de l'univers, d'après la formule des probabilités totales  :<br>
+$P(M) = P(A) \times P_{A}(M) + P(B) \times P_{B}(M)$<br>
+$P(M) = \dfrac{1}{2} \times \dfrac{1}{6} + \dfrac{1}{2} \times \dfrac{1}{2}$<br>
+$P(M) = \dfrac{1}{12} + \dfrac{1}{4}$<br>
+$P(M) = \boldsymbol{\dfrac{1}{3}}$<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 </div>

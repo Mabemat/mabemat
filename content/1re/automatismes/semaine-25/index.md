@@ -177,6 +177,31 @@ $P_C(A)=\ldots$
 - $\dfrac{7}{20} $
 - $\dfrac{1}{2} $
 
+
+---CORR---
+On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$<br>
+D'après la formule des probabilités totales :<br>
+
+$$
+\begin{aligned}P(C)&=p(A\cap C)+p(\bar A \cap C)\\\\
+&=P(A)\times P_A(C)+P(\bar A)\times P_{\bar A}(C)\\\\
+&=\dfrac{7}{10}\times \dfrac{1}{2}+\dfrac{3}{10}\times \dfrac{7}{10}\\\\
+&=\dfrac{7}{20}+\dfrac{21}{100}\\\\
+&=\dfrac{14}{25}\\\\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\\\
+&=\dfrac{P(A)\times P_A(C)}{P(C)}\\\\
+&=\dfrac{\dfrac{7}{20}}{\dfrac{14}{25}}\\\\
+&=\dfrac{5}{8}\\\\
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -191,6 +216,23 @@ Parmi les $2\,000$ logements que compte une ville, $10\,$ %   sont des maisons e
 - $1\,910$
 - $160$
 
+
+---CORR---
+Les maisons  représentent $10\%$   des logements.<br>
+Il y en a donc : $0{,}1\times 2\,000=200$.<br>
+Dans cette ville, il y a  $200$ maisons.<br>
+Parmi ces maisons, il y a $80\,\%$  de T2.<br>
+$80\,\%$  de $200=0{,}8\times 200=160$.<br>
+Il y a donc $\boldsymbol{160}$ maisons de type T2 dans cette ville.
+
+Mentalement : <br>
+Prendre $10\,\%$  d'une quantité revient à la diviser par $10$. <br>
+Pour calculer $20\,\%$, $30\,\, \%$, $40\,\%$, .... d'une quantité, on
+commence par calculer  $10\,\%$  de cette quantité en la divisant par $10$, puis on multiplie
+par $2$ ce résultat si on veut en calculer $20\, \%$, par $3$ si on veut en calculer $30\,\%$, ....<br>
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -204,6 +246,15 @@ Voici la représentation graphique d'une fonction $f$  définie sur $\mathbb{R}$
 - $a=3{,}5$ et $b=-2$
 - $a=-3{,}5$ et $b=2$
 
+
+---CORR---
+La valeur de $b$ est donnée par l'image de $0$ par $f$ (ordonnée du point d'intersection entre la courbe et l'axe des ordonnées).<br>
+Ainsi, $b=\boldsymbol{2}$.<br>
+La valeur de $a$ s'obtient (par exemple) grâce à l'image de $1$ par la fonction $f$.<br>
+On lit $f(1)=5{,}5$. D'où, $a\times 1^2+2=5{,}5$, soit $a=\boldsymbol{3{,}5}$.<br>
+Ainsi, $f(x)=3{,}5x^2+2$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -216,6 +267,20 @@ Soit $x$ un réel.
 - $-4x^2 -16x-15$
 - $-4x^2 -16x-17$
 - $-4x^2 +16x-17$
+
+
+---CORR---
+On développe l'expression de l'énoncé. <br>
+
+$$
+\begin{aligned}
+-4(x+2)^2-1&=-4\left(x^2 +4x+4\right)-1\\\\
+&=-4x^2 -16x-16 -1\\\\
+&=\boldsymbol{-4x^2 -16x-17}\\\\
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -232,6 +297,18 @@ Parmi les quatre équations ci-dessous, la seule susceptible d'être représent�
 - $y=x^2-(x-2)^2+2$
 - $y=-3x-2$
 
+
+---CORR---
+On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l'ordonnée à l'origine est strictement négative ($D$ coupe l'axe des ordonnées en dessous de l'origine).<br>
+On écrit les équations qui ne sont pas forme réduite, sous forme réduite :<br>
+$\bullet\:$ $y=-3x-2$ est  sous forme réduite.<br>
+$\bullet\:$ $y=3x-2$ est  sous forme réduite.<br>
+$\bullet\:$ $6x-2y-4=0$ s'écrit $y=3x-2$.<br>
+$\bullet\:$ $y=x^2-(x-2)^2+2$ s'écrit $y=4x-2$.
+
+La seule équation ayant un coefficient directeur négatif et une ordonnée à l'origine négative est : $\boldsymbol{y=-3x-2}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -242,6 +319,12 @@ Quelle est l'écriture décimale du nombre dont l'écriture scientifique est $9{
 - $0{,}000\,094\,1$
 - $94\,100$
 - $0{,}009\,41$
+
+
+---CORR---
+Multiplier par  $10^{-4}$ revient à multiplier par $0{,}000\,1$,  donc l'écriture décimale de $9{,}41\times 10^{-4}$ est : $\boldsymbol{0{,}000\,941}$.
+
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

@@ -183,6 +183,11 @@ Parmi les quatre propositions, laquelle est un ordre de grandeur de la longueur 
 - $0,015\text{ m}$
 - $15\text{ m}$
 
+
+---CORR---
+Un stylo mesure environ $15$ $\text{cm}$, soit $\boldsymbol{0{,}15\textbf{ m}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -196,6 +201,34 @@ Soit $g$ la fonction affine définie sur $\mathbb{R}$ par : $g(x)=3x+b$.<br>
 - $12$
 - $6$
 - $9$
+
+
+---CORR---
+On cherche d'abord la valeur de $b$ en utilisant la condition donnée dans l'énoncé.<br>
+$A(3~;~6)$ appartient à $\mathcal{D}$ signifie que $g(3)=6$.<br>
+
+$$
+\begin{aligned}
+g(3)&=6\\\\
+3\times 3+b&=6\\\\
+9+b&=6\\\\
+b&=6-9\\\\
+b&=-3
+\end{aligned}
+$$
+
+On a donc $g(x)=3x-3$.<br>
+L'image de $4$ par cette fonction correspond à  l'ordonnée du point de  $\mathcal{D}$ dont l'abscisse est $4$ :<br>
+
+$$
+\begin{aligned}
+g(4)&=3\times 4-3\\\\
+&=12-3\\\\
+&=\boldsymbol{9}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -212,6 +245,11 @@ L'ensemble des solutions de l'inéquation $f(x)\leqslant g(x)$ est :
 - $[0\,;\,2]\cup [3\,;\,4]$
 - $[-1\,;\,0]\cup [2\,;\,3]$
 
+
+---CORR---
+Les solutions de l'inéquation sont les abscisses des points de $C_f$ qui se situent en dessous ou sur $C_g$, soit $\boldsymbol{[0\,;\,2]\cup [3\,;\,4]}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -223,6 +261,20 @@ Une écriture simplifiée de $0{,}4a-a$ est :
 - $0{,}4a$
 - $-0{,}6a$
 
+
+---CORR---
+À l'aide d'une factorisation, on obtient :<br>
+
+$$
+\begin{aligned}
+0{,}4a-a&=0{,}4a-1a\\\\
+&=(0{,}4-1)a\\\\
+&=\boldsymbol{-0{,}6a}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -233,6 +285,27 @@ La solution de l'équation $4-(x+5)=3x+8$ est :
 - $-\dfrac{3}{2}$
 - $-\dfrac{7}{4}$
 - $\dfrac{9}{4}$
+
+
+---CORR---
+On développe, puis on isole l'inconnue dans le membre de gauche :<br>
+
+$$
+\begin{aligned}
+4-(x+5)&=3x+8\\\\
+4-1x-5&=3x+8\\\\
+-x-1&=3x+8\\\\
+-x-1\boldsymbol{-3x}&=3x+8\boldsymbol{-3x}\\\\
+-4x-1&=8\\\\
+-4x-1\boldsymbol{+1}&=8\boldsymbol{+1}\\\\
+-4x&=9\\\\
+x&=\dfrac{9}{-4}\\\\
+x&=-\dfrac{9}{4}
+\end{aligned}
+$$
+
+La solution est $\boldsymbol{-\dfrac{9}{4}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -256,6 +329,39 @@ On cherche ce que doit valoir $x$ pour que la moyenne de l'élève soit égale $
 - $x=19$
 - $x=20$
 - Impossible, il faudrait une note supérieure à 20.
+
+
+---CORR---
+Pour déterminer la moyenne de l'élève, on calcule :<br>
+$\bullet$ La somme des produits de chaque note par son coefficient :
+
+$14 \times 1 + 11 \times 1 + 15 \times 1 + x \times 2 = 40 + 2x$.<br>
+$\bullet$ La somme des coefficients : $1 + 1 + 1 + 2= 5$.
+
+Remarque : On fera bien attention à ne pas utiliser la ligne des numéros de devoirs du tableau, donnée qui n'intervient pas dans le calcul de la moyenne.
+
+La moyenne est donc égale à $\dfrac{40 + 2x}{5}$. <br>
+Comme elle doit être égale à $16$, on doit résoudre l'équation suivante :
+
+$
+
+$
+$$
+\begin{aligned}
+\dfrac{40 + 2x}{5} &= 16\\\\\\\\
+40 + 2x &= 16 \times 5\\\\\\\\
+40 + 2x&= 80\\\\\\\\
+2x &= 80 - 40\\\\\\\\
+2x &= 40\\\\\\\\
+x &= \dfrac{40}{2}\\\\\\\\
+x&= \boldsymbol{20}.
+\end{aligned}
+$$
+$
+
+$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 

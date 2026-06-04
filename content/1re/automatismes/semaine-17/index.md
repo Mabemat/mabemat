@@ -202,6 +202,16 @@ Le prix d'une maison est $334\ 000\ $€.
 - $20\ $%
 - $10\ $%
 - $0{,}1\ $%
+
+---CORR---
+Pour déterminer un ordre de grandeur, on cherche à comparer la remise avec des pourcentages simples du prix initial.<br>
+Les pourcentages de référence les plus utiles sont $1\,\%$ et $10\,\%$ car ils sont faciles à calculer mentalement.<br>
+On prend $10\,\%$ de $334\,000$\,€. Cela revient à diviser par $10$.<br>
+On obtient $33\,400$\,€.<br>
+On remarque que la remise ($68\,000$\,€) est environ $2$ fois plus grande que $10\,\%$ du prix.<br>
+Le pourcentage le plus proche parmi les propositions est $\boldsymbol{20\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -214,6 +224,15 @@ Le prix d'un article a augmenté de $15\ $%.
 - $\dfrac{20}{17}$
 - $\dfrac{23}{20}$
 - $\dfrac{20}{3}$
+
+---CORR---
+Augmenter de $15~\%$ revient à multiplier par $1+\dfrac{15}{100}=1{,}15$.<br>
+Pour retrouver le prix initial, il faut diviser par ce coefficient, c'est-à-dire multiplier par le coefficient multiplicateur réciproque $\dfrac{1}{1{,}15}$.<br>
+En multipliant par $100$ le numérateur et le dénominateur, on a $\dfrac{1}{1{,}15}=\dfrac{100}{115}$, puis en simplifiant par $5$, on obtient  $\dfrac{100}{115}=\dfrac{20}{23}$.<br>
+Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{20}{23}}$.
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -225,6 +244,21 @@ Soit $a$ un nombre réel non nul et $n$ un entier non nul.
 - $a^{12n^2}$
 - $a^{7n}$
 - $a^{12n}$
+
+---CORR---
+On applique la propriété du produit des puissances d'un réel : <br>
+Soient $n$ et $p$ deux entiers et $a$ un réel :  $a^n\times a^p=a^{n+p}$<br>
+et la propriété des puissances de puissances : <br>
+Pour tous entiers $n$ et $p$ et $a$ réel, on a :  $\left(a^{n}\right)^p=a^{np}$<br>
+
+$$
+\begin{aligned} a^{3n}(a^n)^4&=a^{3n}\times a^{4n}\\\\
+&=\boldsymbol{a^{7n}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -243,6 +277,17 @@ Soit $a$ un nombre réel non nul et $n$ un entier non nul.
 - $S = ]-\infty\ ;\ 0[ \cup \left]\dfrac{1}{2}\ ;\ +\infty\right[$
 - $S = ]-\infty\ ;\ 0[ \cup \left]2\ ;\ +\infty\right[$
 - $S = \left]0\ ;\ \dfrac{1}{2}\right[$
+
+---CORR---
+Pour résoudre graphiquement cette inéquation : <br>
+$\bullet$ On trace l'hyperbole d'équation $y=\dfrac{1}{x}$. <br>
+$\bullet$ On trace la droite horizontale d'équation $y=2$. Cette droite coupe l'hyperbole en un point dont l'abscisse est : $\dfrac{1}{2}$. <br>
+$\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent strictement au-dessus de la droite.<br>
+<img src="corr_c10_5_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+Comme la fonction inverse est définie sur $\mathbb{R}^*$, $0$ est une valeur interdite et donc l'ensemble des solutions de l'inéquation $(I)$ est : $S = \left]0\,;\,\dfrac{1}{2}\right[$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -260,6 +305,12 @@ Une seule de ces propositions est exacte :
 - L'équation $f(x)=0$ admet exactement deux solutions et ces solutions sont de signes contraires.
 - L'équation $f(x)=0$ admet exactement deux solutions et ces solutions sont négatives.
 - L'équation $f(x)=0$ admet exactement une solution.
+
+---CORR---
+Il n'y a aucun point d'intersection entre la courbe et l'axe des abscisses.<br>
+Par conséquent,   l'équation $f(x)=0$ n'admet aucune solution.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -276,6 +327,15 @@ Une équation de la droite $\mathcal{D}$ est :
 - $y=-\dfrac{4}{3}x+2$
 - $y=-\dfrac{3}{4}x+2$
 - $y=\dfrac{3}{4}x+2$
+
+---CORR---
+En prenant deux points $A$ et $B$ sur la droite, on obtient le coefficient directeur :<br>
+$m=\dfrac{\boldsymbol{-3}}{\boldsymbol{4}}=\boldsymbol{-\dfrac{3}{4}}$.<br>
+L'ordonnée à l'origine est $p=2$.<br>
+L'équation réduite de la droite est donc : $\boldsymbol{y=-\dfrac{3}{4}x+2}$.<br>
+<img src="corr_f07_5_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 </div>

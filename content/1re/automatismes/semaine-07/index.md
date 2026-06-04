@@ -180,6 +180,15 @@ La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=(5x-20)(-5x+5)$ admet pour t
 - <img src="graphe_c14-2_3_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
 - <img src="graphe_c14-2_4_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
 
+
+---CORR---
+L'équation $5x-20=0$ a pour solution $x=4$.<br>
+L'équation $-5x+5=0$ a pour solution $x=1$.<br>
+Le tableau de signe du produit $(5x-20)(-5x+5)$ est : <br>
+<img src="corr_c14_2_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -195,6 +204,18 @@ Une seule affirmation est correcte :
 - $3$ est un antécédent de $-5$
 - $-5$ est l'image de $3$
 
+
+---CORR---
+Les images se lisent sur l'axe des ordonnées et les antécédents sur l'axe des abscisses.<br>
+Ainsi, on peut dire que :<br>
+$\bullet$ $3$ est l'image de $-5$,<br>
+$\bullet$ un antécédent de $3$ est $-5$, <br>
+$\bullet$ $-5$ est un antécédent de $3$,<br>
+$\bullet$ l'image de $-5$ est $3$,<br>
+$\bullet$ $-5$ a pour image $3$, <br>
+$\bullet$ $3$ a pour antécédent $-5$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -207,6 +228,16 @@ Une grandeur passe de $300$ à $600$.
 - Une augmentation de $50\  $%
 - Une augmentation de $100\ $%
 - Une augmentation de $110\  $%
+
+
+---CORR---
+Le taux d'évolution $t$ est donné par la formule :<br>
+$t = \dfrac{\text{valeur finale} - \text{valeur initiale}}{\text{valeur initiale}}$
+
+Ici :
+$t=\dfrac{600 - 300}{300}  = 1$<br>
+Le taux d'évolution est donc de $\boldsymbol{100} \,\%$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -221,6 +252,13 @@ Une série statistique est résumée par le diagramme en boite ci-dessous, utili
 - $35$
 - $15$
 
+
+---CORR---
+L'écart interquartile est la différence entre le troisième quartile et le premier quartile.<br>
+D'après le diagramme en boite, on a $Q_3 = 60$ et $Q_1 = 25$.<br>
+Donc l'écart interquartile est $Q_3 - Q_1 = 60 - 25 = \boldsymbol{35}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -234,6 +272,12 @@ Dans un lycée, un cinquième des élèves sont internes, parmi eux, un quart so
 - $0{,}5$
 - $20\ $%
 
+
+---CORR---
+La proportion des filles internes par rapport à l'ensemble des élèves du lycée est donnée par : <br>
+$\dfrac{1}{5}\times \dfrac{1}{4}=\dfrac{1}{20}=\dfrac{5}{100}$, soit $\boldsymbol{5\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -246,6 +290,21 @@ Soit $n$ un entier.
 - Aucune de ces propositions
 - $4^{n^{2}}$
 - $16^{n}$
+
+
+---CORR---
+On applique la propriété des puissances de puissances d'un réel : <br>
+Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a :
+$\left(a^{n}\right)^{p}=a^{np}$<br>
+
+$$
+\begin{aligned}\left(4^{n}\right)^{2}&=4^{2n}\\\\
+&=\left(4^{2}\right)^{n}\\\\
+&=\boldsymbol{16^{n}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 

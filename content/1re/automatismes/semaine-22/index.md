@@ -139,6 +139,19 @@ Parmi les affirmations suivantes, laquelle est vraie ?
 - La probabilité d'obtenir une boule portant un numéro impair est plus grande en choisissant l'urne A plutôt que l'urne B.
 - La probabilité d'obtenir une boule portant un nombre premier est plus grande en choisissant l'urne A plutôt que l'urne B.
 - La probabilité d'obtenir une boule portant un multiple de $3$ est plus grande en choisissant l'urne A plutôt que l'urne B.
+
+---CORR---
+En testant chacune des affirmations, on constate que seule l'affirmation correcte est : <br>
+La probabilité d'obtenir une boule portant un multiple de 3 est plus grande en choisissant l'urne A.<br>
+En effet :<br>
+Dans l'urne A, les issues favorables sont : $6, 9, 15$.<br>
+$P_A = \dfrac{3}{6} = \dfrac{1}{2}$<br>
+Dans l'urne B, il n'y a qu'une seule issue favorable : $12$.<br>
+$P_B = \dfrac{1}{5}$<br>
+On a $\dfrac{1}{2} = \dfrac{5}{10}$ et $\dfrac{1}{5} = \dfrac{2}{10}$ et comme $\dfrac{1}{2} > \dfrac{1}{5}$, donc :<br>
+La probabilité d'obtenir une boule portant un multiple de 3 est plus grande en choisissant l'urne A.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -151,6 +164,14 @@ On peut alors affirmer que la probabilité qu'au moins une pièce soit défectue
 - $0,344$
 - On ne peut pas savoir
 - $0,656$
+
+---CORR---
+On note $A$ l'événement «  au moins une pièce est défectueuse  » et $B$ l'événement «  aucune pièce n'est défectueuse  ».<br>
+Les événements $A$ et $B$ sont contraires.<br>
+Donc : $P(A) = 1 - P(B)$.<br>
+$P(A) = 1 - 0{,}656 = 0{,}344$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -162,6 +183,14 @@ Soit $n$ un entier non nul. <br>
 - $3^2n$
 - $2\times 3^n$
 - $6^n$
+
+---CORR---
+$$
+\begin{aligned} 3^{n}+3^n&=2\times 3^{n}\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -172,6 +201,12 @@ Combien de solutions réelles possède l'équation $19=-x^2+9$ ?
 - $1$ solution
 - $2$ solutions
 - $0$ solution
+
+---CORR---
+L'équation est équivalente à $-x^2=19-9$, soit $x^2=-10$.<br>
+Cette équation a $\boldsymbol{0}$ solution réelle car $-10<0$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -182,6 +217,12 @@ L'aire en $\text{dam}^2$ d'un carré de côté $80$ $\text{m}$ est égale à :
 - $0,8$ $\text{dam}^2$
 - $6\,400$ $\text{dam}^2$
 - $64$ $\text{dam}^2$
+
+---CORR---
+$80$ $\text{ m}$ $= 8$ $\text{dam}$<br>
+L'aire du carré est : $8 \text{ dam}\times 8 \text{ dam} = \boldsymbol{64\textbf{ dam}^2}$ .<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -192,6 +233,16 @@ Voici la répartition des notes sur 20 d'une classe de première.
 - $14$ %
 - $24$ %
 - $34$ %
+
+---CORR---
+Le pourcentage d'élèves ayant obtenu la note 9 est calculé en divisant l'effectif de cette note par l'effectif total, puis en multipliant par 100.<br>
+L'effectif total est le nombre de notes représentées dans l'histogramme.<br>
+Ici, on trouve un effectif total de $25$ élèves.<br>
+L'effectif des élèves ayant obtenu la note 9 est de $6$.<br>
+$\dfrac{6}{25} \times 100 = 24$<br>
+Donc le pourcentage est de $24~\%$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 

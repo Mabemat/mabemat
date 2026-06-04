@@ -159,6 +159,17 @@ On considère deux réels $a$ et $b$ strictement positifs. Si $a > b$ alors :
 - $a^2 < b^2$
 - $\sqrt{a} < \sqrt{b}$
 
+
+---CORR---
+La bonne réponse est $\boldsymbol{\sqrt{a} > 1}$.<br>
+La fonction racine carrée est croissante : comme $a > 1$, $\sqrt{a} > \sqrt{1} = 1$.
+
+Pour les autres propositions :<br>
+$\sqrt{a} < 1$ : Faux. Comme $a > 1$, $\sqrt{a} > 1$.<br>
+$\dfrac{1}{a} > 1$ : Faux. La fonction inverse est décroissante : comme $a > 1$, on a $\dfrac{1}{a} < 1$.<br>
+$a^2 < 1$ : Faux. Comme $a^2 > a > 1$, on a $a^2 > 1$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -169,6 +180,12 @@ La probabilité d'un événement $A$ est $\dfrac{8}{9}$. Quelle est la probabili
 - $\dfrac{1}{9}$
 - $\dfrac{8}{9}$
 - $\dfrac{9}{8}$
+
+
+---CORR---
+La relation entre la probabilité d'un événement $A$ et celle de son contraire $\overline{A}$ est :  $P(\overline{A})=1-P(A)$.<br>
+Ainsi : $P(\overline{A})=1-\dfrac{8}{9}=\dfrac{1}{9}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -181,6 +198,82 @@ Sur $160$ logements dans un quartier, on distingue trois groupes : appartements 
 - <img src="graphe_s01_1_devoir_c.svg" alt="Diagramme C" style="display:inline-block;vertical-align:middle;max-width:90px">
 - <img src="graphe_s01_1_devoir_d.svg" alt="Diagramme D" style="display:inline-block;vertical-align:middle;max-width:90px">
 
+
+---CORR---
+Les effectifs des $3$ groupes sont respectivement $80$, $40$ et $160-80-40=40$.
+
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+\cellcolor{lightgray} \text{Groupe} & \text{appartements} & \text{maisons individuelles} & \text{autres types}\\\\
+\hline
+\cellcolor{lightgray} \text{Effectif} & 80 & 40 & 40\\\\
+\hline
+\cellcolor{lightgray} \text{Part} & \dfrac{80}{160}=\dfrac{1}{2} & \dfrac{40}{160}=\dfrac{1}{4} & \dfrac{40}{160}=\dfrac{1}{4}\\\\
+\hline
+\cellcolor{lightgray} \text{Angle} & \ang{180} & \ang{90} & \ang{90}\\\\
+\hline
+\end{array}
+$$
+
+Le bon diagramme est le seul avec : deux angles droits égaux (de $\ang{90}$) et un angle plat (de $\ang{180}$).
+
+$\boldsymbol{\cancel{\textbf{A}}}$.
+<img src="corr_s01_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+\qquad $\boldsymbol{\cancel{\textbf{B}}}$. \begin{tikzpicture}[baseline,scale = 0.4]
+
+\tikzset{
+point/.style={
+thick,
+draw,
+cross out,
+inner sep=0pt,
+minimum width=5pt,
+minimum height=5pt,
+},
+\clip (-0.5,-0.5) rectangle (7,6);
+\draw[color={black},fill opacity = 1.1] (3,3) circle (3);
+\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0.5729490168751581,1.2366442431225804) -- (3,3) -- (6,3) arc (0:216:3) ;
+\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (3.927050983124842,0.1468304511145393) -- (3,3) -- (0.5729490168751576,1.2366442431225808) arc (-144:-72:3) ;
+\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {brown}, pattern = dots] (6,2.999999999999999) -- (3,3) -- (3.9270509831248415,0.14683045111453907) arc (-72:0:3) ;
+
+\end{tikzpicture}\qquad C. \begin{tikzpicture}[baseline,scale = 0.4]
+
+\tikzset{
+point/.style={
+thick,
+draw,
+cross out,
+inner sep=0pt,
+minimum width=5pt,
+minimum height=5pt,
+},
+\clip (-0.5,-0.5) rectangle (7,6);
+\draw[color={black},fill opacity = 1.1] (3,3) circle (3);
+\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0,3.0000000000000004) -- (3,3) -- (6,3) arc (0:180:3) ;
+\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (2.9999999999999996,2.719262146893782e-32) -- (3,3) -- (0,3.0000000000000004) arc (180:270:3) ;
+\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {brown}, pattern = dots] (6,2.9999999999999996) -- (3,3) -- (2.9999999999999996,0) arc (-90:0:3) ;
+
+\end{tikzpicture}\qquad $\boldsymbol{\cancel{\textbf{D}}}$. \begin{tikzpicture}[baseline,scale = 0.4]
+
+\tikzset{
+point/.style={
+thick,
+draw,
+cross out,
+inner sep=0pt,
+minimum width=5pt,
+minimum height=5pt,
+},
+\clip (-0.5,-0.5) rectangle (7,6);
+\draw[color={black},fill opacity = 1.1] (3,3) circle (3);
+\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0.8786796564403576,5.121320343559643) -- (3,3) -- (6,3) arc (0:135:3) ;
+\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (3,0) -- (3,3) -- (0.8786796564403576,5.121320343559643) arc (135:270:3) ;
+\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {brown}, pattern = dots] (6,2.9999999999999996) -- (3,3) -- (2.9999999999999996,0) arc (-90:0:3) ;
+
+\end{tikzpicture}\qquad <br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -192,6 +285,14 @@ Les coordonnées du point d'intersection entre la droite d'équation $y=\dfrac{x
 - $(0\,;\,-15)$
 - $(3\,;\,0)$
 
+
+---CORR---
+L'ordonnée de ce point est $0$ puisque le point d'intersection se situe sur l'axe des abscisses.<br>
+Son abscisse est donc donnée par la solution de l'équation  $\dfrac{x}{3}+5=0$, c'est-à-dire $x=-15$.
+
+Les coordonnées de ce   point sont donc : $(\boldsymbol{-15\,;\,0})$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -202,6 +303,20 @@ Dans une région de France, le tarif de l'eau est le suivant : un abonnement ann
 - $49{,}30\times3{,}57-313{,}48$
 - $\dfrac{313{,}48-3{,}57}{49{,}30}$
 - $\dfrac{313{,}48-49{,}30}{3{,}57}$
+
+
+---CORR---
+La facture s'élève à $313{,}48$\,€~pour la consommation annuelle.<br>
+En notant $a$ le nombre de  mètres cubes consommés, on obtient : <br>
+
+$$
+\begin{aligned}
+49{,}3+3{,}57\times a &=313{,}48\\\\
+a&=\boldsymbol{\dfrac{313{,}48-49{,}30}{3{,}57}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -217,6 +332,39 @@ On sait que $P(A \cap C)=\dfrac{21}{50}$. Calculer $P_A(\overline{C})$.
 - $\dfrac{3}{5}$
 - $\dfrac{1}{10}$
 - $\dfrac{7}{10}$
+
+
+---CORR---
+On déduit de l'énoncé<br>
+
+$$
+\begin{aligned}
+P(A)&=1-P(\overline{A})\\\\
+&=1-\dfrac{2}{5}\\\\
+&=\dfrac{3}{5}.\end{aligned}
+$$
+
+Avec la donnée de $P(A \cap C)=\dfrac{21}{50}$ dans l'énoncé, on peut alors calculer : <br>
+
+$$
+\begin{aligned}
+P_A(C)&=\dfrac{P(A \cap C)}{P(A)}\\\\
+&=\dfrac{ \dfrac{21}{50}}{ \dfrac{3}{5}} \\\\
+&=\dfrac{21}{50} \times \dfrac{5}{3} \\\\
+&= \dfrac{7}{10}.
+\end{aligned}
+$$
+
+On sait alors que <br>
+
+$$
+\begin{aligned}
+P_A(\overline{C})&=1-P_A(C)\\\\
+&=1-\dfrac{7}{10}\\\\
+&=\dfrac{3}{10} .\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

@@ -219,6 +219,12 @@ Une durée de $0{,}25$ heure correspond à :
 - $5$ minutes
 - $25$ minutes
 
+
+---CORR---
+$0{,}25\text{ h} = \dfrac{1}{4} \text{ h} = 15 \text{ min}$.<br>
+Ainsi, $0{,}25$ heure correspond à $\boldsymbol{15}$ minutes.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -233,6 +239,27 @@ Une seule affirmation est correcte :
 - Soit $k\in\mathbb{R}$. L'équation $f(x)=k$ a au plus $4$ solutions.
 - Soit $k\in]0\ ;\ 1[$. L'équation $f(x)=k$ admet exactement trois solutions.
 - Le produit des solutions de l'équation $f(x)=1$ est égal à $15$.
+
+
+---CORR---
+$\bullet$ Le produit des solutions de l'équation $f(x)=1$ est égal à $15$.<br>
+Cette affirmation est correcte : <br>
+L'équation $f(x)=1$ a deux solutions : $3$ et $5$.<br>
+Le produit de ces solutions est $3\times 5= 15$.<br>
+$\bullet$ Soit $k\in\mathbb{R}$. <br>
+L'équation $f(x)=k$ a au plus $4$ solutions.<br>
+Cette affirmation est fausse : <br>
+Une droite horizontale coupe au plus trois fois la courbe, donc le nombre maximal de solutions est $3$.<br>
+$\bullet$ La somme des solutions de l'équation $f(x)=3$ est égal à $0$.<br>
+Cette affirmation est fausse : <br>
+L'équation $f(x)=3$ a trois solutions : $-2$, $0$ et $7$.<br>
+La somme de ces solutions est $-2+ 0+7= 5$.<br>
+$\bullet$ Soit $k\in]0\,;\,1[$. <br>
+L'équation $f(x)=k$ admet exactement trois solutions.<br>
+Cette affirmation est fausse : <br>
+Si $k\in]0\,;\,1[$,  la droite d'équation $y=k$ coupe bien deux fois la courbe.
+
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 
@@ -274,6 +301,20 @@ La cellule dont la taille est la plus importante est :
 - Cellule 1
 - Cellule 4
 
+
+---CORR---
+On écrit les tailles en écriture scientifique pour les comparer :
+
+• Cellule 1 : $31{,}96\times 10^{-6} = 3{,}196\times 10^{1}\times 10^{-6} = 3{,}196\times 10^{-5}$  mm<br>
+• Cellule 2 : $367\,540\times 10^{-10} = 3{,}675\,4\times 10^{5}\times 10^{-10} = 3{,}675\,4\times 10^{-5}$  mm<br>
+• Cellule 3 : $3{,}17\times 10^{-6}$  mm<br>
+• Cellule 4 : $44{,}63\times 10^{-10} = 4{,}463\times 10^{1}\times 10^{-10} = 4{,}463\times 10^{-9}$  mm
+
+On a donc : $3{,}675\,4\times 10^{-5}$ $>$ $3{,}196\times 10^{-5}$ $>$ $3{,}17\times 10^{-6}$ $>$ $4{,}463\times 10^{-9}$
+
+Donc il s'agit de la Cellule 2 qui a la taille la plus importante.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -284,6 +325,13 @@ $3+10^{26}$ est environ égal à :
 - $4\times 10^{26}$
 - $3$
 - $10^{27}$
+
+
+---CORR---
+$3$ est très petit devant $10^{26}$.<br>
+En effet, $10^{26}=1\underbrace{0\ldots 0}_{26 \text{ zéros}}$.<br>
+On en déduit que $3+10^{26}$ est environ égal à $\boldsymbol{10^{26}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -298,6 +346,14 @@ Un prix augmente de $900\ $%.
 - $100\ $%
 - $900\ $%
 
+
+---CORR---
+Le coefficient multiplicateur associé à une augmentation de $900\,\%$ est $1+9=10$.<br>
+Comme $10\times 0{,}1=1$, il faut donc multiplier par $0{,}1$ (coefficient multiplicateur réciproque) pour revenir au prix initial.<br>
+Un coefficient multiplicateur de $0{,}1$ correspond à un taux d'évolution de $-90\,\%$.<br>
+On en déduit qu'il faut une baisse de $\boldsymbol{90\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -308,6 +364,13 @@ Un prix a été divisé par $4$. Cela signifie que le prix a diminué de :
 - $75$%
 - $4\ $%
 - $40\ $%
+
+
+---CORR---
+Si un prix a été divisé par $4$, cela signifie que le coefficient multiplicateur est $CM = \dfrac{1}{4} = 0,25$.<br>
+Le taux d'évolution $T$  vérifie : $T = CM - 1 = 0,25 - 1 = -0,75 = -75\,\%$.<br>
+Le prix a donc diminué de $\boldsymbol{75\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

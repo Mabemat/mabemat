@@ -191,6 +191,11 @@ Choisir deux nombres puis calculer le double de leur produit.
 - $8$
 - $16$
 
+
+---CORR---
+$2\times4\times 2=\boldsymbol{16}$<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -203,6 +208,13 @@ On donne la relation : $3x-2c=2$.
 - $x=2c+2$
 - $x=\dfrac{-2c-2}{3}$
 - $x=\dfrac{2}{3}+2c$
+
+
+---CORR---
+De la relation $3x-2c=2$, on déduit en ajoutant $2c$ dans chaque membre :
+$3x=2+2c$<br>
+Puis, en divisant par $3$, on obtient : $\boldsymbol{ x=\dfrac{2+2c}{3}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -217,6 +229,42 @@ On considère une fonction affine $f$ telle que $f(5)=2$ et $f(7)=0$.
 - $-12$
 - $-7$
 
+
+---CORR---
+$f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.<br>
+
+$$
+\begin{aligned}
+m&=\dfrac{f(7)-f(5)}{7-5}\\\\
+&=\dfrac{0-2}{2}\\\\
+&=-1
+\end{aligned}
+$$
+
+On a donc $f(x)=-x+p$.<br>
+Pour déterminer $p$, on utilise la valeur de $f(5)$ :<br>
+
+$$
+\begin{aligned}
+f(5)&=-1\times 5+p\\\\
+2&=-5+p\\\\
+p&=7
+\end{aligned}
+$$
+
+On a donc $f(x)=-x+7$.<br>
+L'image de $12$ par cette fonction est :<br>
+
+$$
+\begin{aligned}
+f(12)&=-1\times 12  +7\\\\
+&=-12+7\\\\
+&=\boldsymbol{-5}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -228,6 +276,19 @@ La forme développée de $(2x-9)(2x+9)$ est :
 - $4x^2-36x-81$
 - $4x^2-81$
 
+
+---CORR---
+On utilise l'égalité remarquable $(a+b)(a-b)=a^2-b^2$ avec $a=2x$ et $b=9$.<br>
+
+$$
+\begin{aligned}
+(2x-9)(2x+9)&=(2x)^2-9^2\\\\
+&=\boldsymbol{4x^2-81}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" layout="grid">}}
@@ -238,6 +299,13 @@ La seule droite pouvant correspondre à l'équation $y=-6x-10$ est :
 - La droite $D_2$ <img src="graphe_f07-2_2_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
 - La droite $D_4$ <img src="graphe_f07-2_3_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
 - La droite $D_3$ <img src="graphe_f07-2_4_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
+
+
+---CORR---
+On reconnaît la droite grâce à son ordonnée à l'origine ($-10<0$) et son coefficient directeur ($-6<0$).<br>
+Il s'agit de la droite coupant l'axe des ordonnées en-dessous de l'axe des abscisses et qui descend.<br>
+Il s'agit de la droite $\boldsymbol{D_1}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -251,6 +319,21 @@ Le prix d'un vêtement est $50$ €.
 - $40 $ €
 - $51 $ €
 - $60$ €
+
+
+---CORR---
+Le nouveau prix est :  $ \boldsymbol{60} $\,€.
+
+Mentalement : <br>
+On calcule d'abord le montant de l'augmentation. <br>
+Pour calculer $20\,\%$ d'une quantité, on commence par calculer $10\,\%$  en divisant
+par $10$ :<br>
+$10\,\%$  de $50$ est égal à $50\div 10=5$.<br>
+Puisque $20\,\%$  est deux fois plus grand que $10\,\%$,  $20\,\%$  de $50$ est égal à $2\times 5=10$.<br>
+L'augmentation est donc de : $10$\,€.<br>
+Le nouveau prix est :   $50+10= \boldsymbol{60}$ \,€.
+
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 

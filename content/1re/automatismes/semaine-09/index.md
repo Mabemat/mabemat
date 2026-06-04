@@ -184,6 +184,18 @@ Le prix d’un article a augmenté : il est passé de $68$ euros à $85$ euros.
 - $0{,}25$
 - $1{,}25$
 
+
+---CORR---
+**Correction 1 :**<br>
+On cherche le nombre $k$ tel que $ k \times 68=85 $.<br>
+On obtient $k=\dfrac{85}{68} = \dfrac{5}{4}=\boldsymbol{1{,}25}$.
+
+**Correction 2 :**<br>
+Le prix a augmenté de $17$ euros, ce qui représente $25\,\%$ de $68$ euros.<br>
+Le coefficient multiplicateur associé à cette hausse est $1{,}25$.<br>
+On peut dire que le prix a été multiplié par $\boldsymbol{1{,}25}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -197,6 +209,12 @@ Une série statistique est résumée par le diagramme en boite ci-dessous. Quel 
 - $100$%
 - $75$%
 
+
+---CORR---
+La valeur $30$ correspond au premier quartile et la valeur $75$ au maximum.<br>
+Donc, la proportion de valeurs comprises entre $30$ et $75$ est de $75\%$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -207,6 +225,23 @@ Le produit des solutions de l'équation $(2x-12)(5x-25)=0$ est égal à :
 - $11$
 - $30$
 - $-30$
+
+
+---CORR---
+On reconnaît une équation produit nul. <br>
+Un produit de facteurs est nul, si et seulement si l'un au moins de ses facteurs est nul.<br>
+
+$$
+\begin{aligned}
+(2x-12)(5x-25)&=0\\\\
+2x-12=0 &\text{ ou } 5x-25=0\\\\
+2x=12 &\text{ ou } 5x=25\\\\
+x=6 &\text{ ou } x=5
+\end{aligned}
+$$
+
+Le produit de ces soltions est donc égal à : $6\times 5=\boldsymbol{30}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -220,6 +255,19 @@ On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3-\dfrac{2}{3}
 - $\dfrac{7}{3}$
 - $\dfrac{11}{3}$
 - $3$
+
+
+---CORR---
+$$
+\begin{aligned}
+f\left(6\right)&=3-\dfrac{2}{3}(6-5)^2\\\\
+&=3-\dfrac{2}{3}\times 1\\\\
+&=\dfrac{7}{3}
+\end{aligned}
+$$
+
+L'image de $6$  par la  fonction  $f$ est : $\boldsymbol{\dfrac{7}{3}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -235,6 +283,13 @@ On donne la série statistique suivante :
 - $8$
 - $11$
 
+
+---CORR---
+La série triée dans l'ordre croissant est : $5$  ;  $8$  ;  $11$  ;  $14$  ;  $17$.<br>
+La série comporte $5$ valeurs, qui est un nombre impair,  donc la médiane est le terme de rang $3$.<br>
+La médiane est donc $11$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -245,6 +300,20 @@ On considère $A=\dfrac{5}{10}+\dfrac{5}{100}$. On a :
 - $A=5{,}5$
 - $A=\dfrac{12}{20}$
 - $A=\dfrac{10}{1\ 000}$
+
+
+---CORR---
+On a  : <br>
+
+$$
+\begin{aligned}
+A&=\dfrac{5}{10}+\dfrac{5}{100}\\\\
+&=0{,}5+0{,}05\\\\
+&=\boldsymbol{0{,}55}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

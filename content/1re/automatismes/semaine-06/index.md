@@ -180,6 +180,12 @@ Dans un lycée, il y a $400$ élèves inscrits.
 - $20$
 - $80$
 
+
+---CORR---
+$20\,\%$ de $400  = 0{,}2 \times 400 = \boldsymbol{80}$<br>
+Donc $\boldsymbol{80}$ élèves étudient l'Espagnol.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -195,6 +201,13 @@ Dans un repère du plan, on a représenté une droite.
 - $3$
 - $-\dfrac{3}{2}$
 
+
+---CORR---
+En prenant deux points sur la droite, on obtient :<br>
+$m=\dfrac{\boldsymbol{3}}{\boldsymbol{-2}}=\boldsymbol{-\dfrac{3}{2}}$<br>
+<img src="corr_f07_3_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -205,6 +218,22 @@ Parmi les quatre nombres suivants, lequel est le plus grand ?
 - $\dfrac{85}{100}$
 - $9 \times 10^{-1}$
 - $0{,}88$
+
+
+---CORR---
+Pour comparer ces quatre nombres, on les écrit sous forme décimale :
+
+$\dfrac{4}{5} = 0{,}8$
+
+$\dfrac{85}{100} = 0{,}85$
+
+$9 \times 10^{-1} = 0{,}9$
+
+$0{,}88$
+
+On a donc : $0{,}8 < 0{,}85 < 0{,}88 < 0{,}9$.<br>
+Le plus grand nombre est donc : $\boldsymbol{9 \times 10^{-1}}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -219,6 +248,21 @@ Soit $x$ un réel non nul.
 - $-\dfrac{11x +12}{3x}$
 - $-\dfrac{13x +12}{3x}$
 
+
+---CORR---
+On met l'expression au même dénominateur : <br>
+
+$$
+\begin{aligned}
+\dfrac{1}{3}-\dfrac{4x+4}{x}&=\dfrac{x-3\times \left(4x+4\right)}{3x}\\\\
+&=\dfrac{x -12x -12}{3x}\\\\
+&=\dfrac{-11x -12}{3x}\\\\
+\end{aligned}
+$$
+
+$\phantom{\dfrac{1}{3}-\dfrac{4x+4}{x}}=-\dfrac{11x +12}{3x}$<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -232,6 +276,20 @@ On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{2}{x}+\dfrac{
 - $u=3x+2y$
 - $u=6xy$
 
+
+---CORR---
+On isole $u$ dans le premier membre : <br>
+
+$$
+\begin{aligned} \dfrac{2}{x}+\dfrac{3}{y}&= \dfrac{4}{u} \\\\
+\dfrac{2y+3x}{xy}&= \dfrac{4}{u} \\\\
+\dfrac{u}{4} &=   \dfrac{xy}{2y+3x} \\\\
+u&= \boldsymbol{\dfrac{4xy}{3x+2y}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -242,6 +300,15 @@ Une augmentation de $20\ $% suivie d'une augmentation de $10\ $% équivaut à :
 - une augmentation de $32\ $%
 - une augmentation de $30\ $%
 - une augmentation de $35\ $%
+
+
+---CORR---
+À partir des évolutions en pourcentage, on déduit les coefficients multiplicateurs : <br>
+On note $CM_1 = 1 + \dfrac{20}{100}=1{,}2$ et $CM_2 = 1 + \dfrac{10}{100}=1{,}1$.<br>
+Le coefficient multiplicateur global est : <br>
+$CM = CM_1 \times CM_2 = 1{,}2 \times 1{,}1 = 1{,}32$ <br>
+Or, multiplier par $1{,}32$ revient à avoir une augmentation de $\boldsymbol{32\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

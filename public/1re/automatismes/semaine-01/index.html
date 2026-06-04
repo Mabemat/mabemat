@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>1</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>1</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Fonctions, puissances et algèbre</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1092,6 +1102,10 @@ Devoirs — Séance 1 — Fonctions, puissances et algèbre
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="0">
   <div class="qcm-question">
@@ -1139,7 +1153,19 @@ L&rsquo;image de $-5$ par la fonction $f$ est égale à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On a :<br></p>
+$$
+\begin{aligned}
+f(-5)&=\left(2\times(-5)-2\right)\left(3\times(-5)+2\right)\\\\
+&=(-10-2)(-15+2)\\\\
+&= -12\times(-13)=\boldsymbol{156}
+\end{aligned}
+$$<p>Mentalement : <br>
+On commence par &ldquo;calculer&rdquo; la première parenthèse :  $2\times(-5)-2=-12$.</p>
+<p>Puis la deuxième : $3\times(-5)+2=-13$.<br>
+On fait le produit des nombres obtenus : $-12\times (-13)=156$.</p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
   </div>
   
 </div>
@@ -1201,6 +1227,10 @@ L&rsquo;image de $-5$ par la fonction $f$ est égale à :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1257,7 +1287,15 @@ L&rsquo;image de $-5$ par la fonction $f$ est égale à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    $$
+\begin{aligned}
+N&=\dfrac{6^4}{2^2}\\\\
+&=\dfrac{2^4\times 3^4 }{2^2}\\\\
+&=3^4\times 2^{2}\\\\
+&=6^2\times 3^{2}\\\\
+&=\boldsymbol{9\times 6^{2}}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
   </div>
   
 </div>
@@ -1319,6 +1357,10 @@ L&rsquo;image de $-5$ par la fonction $f$ est égale à :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1375,7 +1417,12 @@ L&rsquo;image de $-5$ par la fonction $f$ est égale à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On reconnaît le développement de l&rsquo;égalité remarquable : <br>
+$(a-b)^2=a^2-2ab+b^2$ avec $a=2x$ et $b=1$.<br>
+On a donc :</p>
+<p>$4x^2-4x+1=\boldsymbol{(2x-1)^2}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1447,6 +1494,10 @@ L&rsquo;image de $-5$ par la fonction $f$ est égale à :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1504,7 +1555,15 @@ On a :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On a :</p>
+$$
+\begin{aligned}
+A&=\dfrac{92}{100}+\dfrac{18}{1\,000}\\\\
+&=0{,}92+0{,}018\\\\
+&=\boldsymbol{0{,}938}
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
   </div>
   
 </div>
@@ -1576,6 +1635,10 @@ On a :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1633,7 +1696,9 @@ Son coefficient directeur est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    On reconnaît l&rsquo;équation réduite d&rsquo;une droite de la forme $y=mx+p$ où $m$ est son coefficient directeur.<br>
+Ici, $m=\boldsymbol{\dfrac{1}{4}}$ et $p=-6$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -1715,6 +1780,10 @@ Son coefficient directeur est :
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="1">
   <div class="qcm-question">
@@ -1762,7 +1831,9 @@ L'image de $-1$ est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Pour lire l&rsquo;image de $-1$, on place la valeur de $-1$ sur l&rsquo;axe des abscisses (axe de lecture  des antécédents) et on lit
+son image  sur l&rsquo;axe des ordonnées (axe de lecture des images). On obtient :  $f(-1)=\boldsymbol{2}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -1942,6 +2013,10 @@ L'image de $-1$ est :
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -1970,7 +2045,7 @@ L'image de $-1$ est :
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

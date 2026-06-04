@@ -148,6 +148,26 @@ L'image de $-5$ par la fonction $f$ est égale à :
 - $204$
 - $25$
 
+
+---CORR---
+On a :<br>
+
+$$
+\begin{aligned}
+f(-5)&=\left(2\times(-5)-2\right)\left(3\times(-5)+2\right)\\\\
+&=(-10-2)(-15+2)\\\\
+&= -12\times(-13)=\boldsymbol{156}
+\end{aligned}
+$$
+
+Mentalement : <br>
+On commence par "calculer" la première parenthèse :  $2\times(-5)-2=-12$.
+
+Puis la deuxième : $3\times(-5)+2=-13$.<br>
+On fait le produit des nombres obtenus : $-12\times (-13)=156$.
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -159,6 +179,20 @@ On considère le nombre $N=\dfrac{6^4}{2^2}$. On a :
 - $N=\dfrac{1}{6^{2}}$
 - $N=9\times 6^{2}$
 
+
+---CORR---
+$$
+\begin{aligned}
+N&=\dfrac{6^4}{2^2}\\\\
+&=\dfrac{2^4\times 3^4 }{2^2}\\\\
+&=3^4\times 2^{2}\\\\
+&=6^2\times 3^{2}\\\\
+&=\boldsymbol{9\times 6^{2}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -169,6 +203,15 @@ Une  factorisation de    $4x^2-4x+1$ est :
 - $(-2x+1)^2$
 - $x(4x-4)+1$
 - $(2x+1)^2$
+
+
+---CORR---
+On reconnaît le développement de l'égalité remarquable : <br>
+$(a-b)^2=a^2-2ab+b^2$ avec $a=2x$ et $b=1$.<br>
+On a donc :
+
+$4x^2-4x+1=\boldsymbol{(2x-1)^2}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -183,6 +226,20 @@ On a :
 - $A=0{,}938$
 - $A=0{,}11$
 
+
+---CORR---
+On a :
+
+$$
+\begin{aligned}
+A&=\dfrac{92}{100}+\dfrac{18}{1\,000}\\\\
+&=0{,}92+0{,}018\\\\
+&=\boldsymbol{0{,}938}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -196,6 +253,12 @@ Son coefficient directeur est :
 - $m=4$
 - $m=\dfrac{x}{4}$
 
+
+---CORR---
+On reconnaît l'équation réduite d'une droite de la forme $y=mx+p$ où $m$ est son coefficient directeur.<br>
+Ici, $m=\boldsymbol{\dfrac{1}{4}}$ et $p=-6$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -208,6 +271,12 @@ L'image de $-1$ est :
 - $2$
 - L'image de $-1$ n'existe pas
 - $3$
+
+
+---CORR---
+Pour lire l'image de $-1$, on place la valeur de $-1$ sur l'axe des abscisses (axe de lecture  des antécédents) et on lit
+son image  sur l'axe des ordonnées (axe de lecture des images). On obtient :  $f(-1)=\boldsymbol{2}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 

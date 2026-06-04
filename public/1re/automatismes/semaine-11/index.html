@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>11</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>11</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Expressions algébriques et fonctions</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1108,6 +1118,10 @@ Devoirs — Séance 11 — Expressions algébriques et fonctions
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="2">
   <div class="qcm-question">
@@ -1155,7 +1169,9 @@ Le résultat est égal à :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    On additionne un nombre réel $x$, avec son double $2x$ et son carré $x^2$.<br>
+On obtient : $x + 2x + x^2 = \boldsymbol{3x + x^2}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
   </div>
   
 </div>
@@ -1237,6 +1253,10 @@ Le résultat est égal à :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1291,7 +1311,10 @@ Parmi les quatre expressions proposées pour la fonction $f$, une seule est poss
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Parmi les réponses proposées, on cherche la fonction affine qui s&rsquo;annule en $2$ et dont le coefficient directeur est positif. En effet,
+la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d&rsquo;après le tableau de signes.<br>
+Il s&rsquo;agit de la fonction $f$ définie par $\boldsymbol{f(x)=x-2}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -1353,6 +1376,10 @@ Parmi les quatre expressions proposées pour la fonction $f$, une seule est poss
   
   
     
+  
+
+  
+  
   
 
   
@@ -1405,7 +1432,11 @@ Parmi les quatre expressions proposées pour la fonction $f$, une seule est poss
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    L&rsquo;équation $-7x^2-3x-8=-8$ s&rsquo;écrit $-7x^2-3x=0$.<br>
+En factorisant le premier membre (facteur commun $x$), on obtient $x(-7x-3)=0$.<br>
+On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{3}{-7}=-\dfrac{3}{7}$.<br>
+$\mathcal{S}=\boldsymbol{\{0;-\dfrac{3}{7}\}}$<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -1487,6 +1518,10 @@ Parmi les quatre expressions proposées pour la fonction $f$, une seule est poss
   
   
     
+  
+
+  
+  
   
 
   
@@ -1541,7 +1576,12 @@ Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>La fonction $g$ s&rsquo;annule en $-1$ et la fonction $h$ s&rsquo;annule en $2$.<br>
+Quand la droite est en-dessous de l&rsquo;axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.<br>
+On en déduit le tableau de signes de leur produit :
+<img src="corr_f05_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
   </div>
   
 </div>
@@ -1623,6 +1663,10 @@ Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur
   
   
     
+  
+
+  
+  
   
 
   
@@ -1677,7 +1721,9 @@ L&rsquo;équation $f(x)=2$ a :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Le nombre de solutions de  l&rsquo;équation $f(x)=2$ est le nombre d&rsquo;antécédents de  $2$ par la fonction $f$.<br>
+Puisque la droite d&rsquo;équation $y = 2$ (droite hrizontale) coupe $1$ fois la courbe, on en déduit que l&rsquo;équation  $f(x)=2$ admet $\boldsymbol{1}$ solution..<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
   </div>
   
 </div>
@@ -1751,6 +1797,10 @@ L&rsquo;équation $f(x)=2$ a :
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="2">
   <div class="qcm-question">
@@ -1798,7 +1848,11 @@ L'équation réduite de cette droite est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Le coefficient directeur $m$ de la droite $(AB)$ est donné par : <br>
+$m=\dfrac{\boldsymbol{3}}{\boldsymbol{3}}=\dfrac{1\boldsymbol{\times3} }{1\boldsymbol{\times3}}=1$.<br>
+Son ordonnée à l&rsquo;origine est $3$, ainsi l&rsquo;équation réduite de la droite est $\boldsymbol{y=x+3}$.<br>
+<img src="corr_f07_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+La bonne réponse est la réponse <span class="rep">C</span>.
   </div>
   
 </div>
@@ -1980,6 +2034,10 @@ L'équation réduite de cette droite est :
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -2008,7 +2066,7 @@ L'équation réduite de cette droite est :
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

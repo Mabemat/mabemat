@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>5</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>5</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Signes, évolutions et calcul</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1120,6 +1130,10 @@ Devoirs — Séance 5 — Signes, évolutions et calcul
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="1">
   <div class="qcm-question">
@@ -1167,7 +1181,13 @@ Parmi les quatre tableaux de signes proposés, lequel correspond à cette foncti
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>La fonction $f(x) = 3x+3$ est une fonction affine de coefficient directeur $a = 3$ et d&rsquo;ordonnée à l&rsquo;origine $b = 3$.<br>
+• La fonction s&rsquo;annule quand $3x+3 = 0$, soit $x = -1$.<br>
+• Comme $a = 3 > 0$, la fonction est croissante : elle est négative avant la racine et positive après.<br>
+Le tableau de signes de la fonction $f$ est donc le suivant :<br>
+<img src="corr_c14_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1239,6 +1259,10 @@ Parmi les quatre tableaux de signes proposés, lequel correspond à cette foncti
   
   
     
+  
+
+  
+  
   
 
   
@@ -1296,7 +1320,9 @@ Il a baissé de :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Le prix a baissé de  $9$,€, ce qui correspond à  $15\, \%$ de $60$,€.<br>
+Le prix du pull a donc baissé de $\boldsymbol{15}\, \%$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -1378,6 +1404,10 @@ Il a baissé de :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1436,7 +1466,8 @@ Le pourcentage du temps consacré à l’exposé par rapport à la journée de d
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    Le pourcentage du temps consacré à l’exposé par rapport à la journée de dimanche est égal à $20\,\%$ de $35\,\%$, soit $\boldsymbol{7\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
   </div>
   
 </div>
@@ -1508,6 +1539,10 @@ Le pourcentage du temps consacré à l’exposé par rapport à la journée de d
   
   
     
+  
+
+  
+  
   
 
   
@@ -1565,7 +1600,11 @@ L&rsquo;image de $\dfrac{5}{4}$ par la fonction $f$ est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Comme $f(x)=2x-4$, on a :<br></p>
+$$
+\begin{aligned}f\left(\dfrac{5}{4}\right)&=2\times \dfrac{5}{4}-4\\\\&=\dfrac{5}{2}-4\\\\&=\boldsymbol{-\dfrac{3}{2}}\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
   </div>
   
 </div>
@@ -1647,6 +1686,10 @@ L&rsquo;image de $\dfrac{5}{4}$ par la fonction $f$ est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1705,7 +1748,12 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Le matin, Madeleine a bu $\dfrac{1}{6}$ de la bouteille. Il reste alors $\dfrac{5}{6}$ de la bouteille.<br>
+À midi, elle a bu $\dfrac{3}{4}$ du reste.<br>
+Comme $\dfrac{3}{4}\times \dfrac{5}{6}=\dfrac{15}{24}$, elle a bu $\boldsymbol{\dfrac{15}{24}}$
+ou $\dfrac{5}{8}$ de la bouteille à midi.</p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1777,6 +1825,10 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="2">
   <div class="qcm-question">
@@ -1823,7 +1875,15 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    $$
+\begin{aligned}
+(-1+2x)(x-4)&=-x+4+2x^2-8x\\\\
+&=\boldsymbol{2x^2-9x+4}
+\end{aligned}
+$$<p>Le terme en $x^2$ vient de $2x\times x=2x^2$.<br>
+Le terme en $x$ vient de la somme de $2x \times (-4)$ et de $-1 \times x$.<br>
+Le terme constant vient de $-1\times (-4)= 4$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.</p>
   </div>
   
 </div>
@@ -2005,6 +2065,10 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -2033,7 +2097,7 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -155,6 +155,16 @@ L'ensemble $S$ des solutions de l'équation $(x+2)^2=13$ est :
 - $S=${$\-\sqrt{13}-2\ ;\ \sqrt{13}-2$}
 - $S=${$-\sqrt{13}+2;\sqrt{13}+2$}
 
+
+---CORR---
+L'équation est de la forme $X^2=k$ avec $X=(x+2)$ et $k=13$.<br>
+Comme $k>0$, les solutions de $(x+2)^2=13$ sont données par les solutions de chacune des équations :         $x+2=-\sqrt{13}$ et $x+2=\sqrt{13}$.<br>
+$x+2=-\sqrt{13}$ a pour solution $-\sqrt{13}-2$ et
+$x+2=\sqrt{13}$ a pour solution $\sqrt{13}-2$.<br>
+Ainsi, l'ensemble des solutions de l'équation est $S=\boldsymbol{\{-\sqrt{13}-2\,;\,\sqrt{13}-2\}}$.
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -166,6 +176,12 @@ Une durée de $84$ minutes correspond à :
 - $0{,}84$ heure
 - $1{,}5$ heure
 
+
+---CORR---
+$84\text{ min}= 60 \text{ min}+24\text{ min}=1\text{ h}+\dfrac{4}{10}\text{ h}=1{,}4\text{ h}$.<br>
+Ainsi, $84$ min correspond à $\boldsymbol{1{,}4}$ heure.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -176,6 +192,12 @@ La valeur la plus proche de $21\ $% de $102\ 533$ est :
 - $2\ 000$
 - $83\ 000$
 - $10\ 000$
+
+
+---CORR---
+$21\,\%$ est proche de $20\,\%$ et $102\,533$ est proche de $100\,000$.<br>
+Ainsi, le calcul de $21\,\%$ de $102\,533$ est proche de $20\,\%$ de $100\,000$ soit $\boldsymbol{20\,000}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -190,6 +212,13 @@ Le prix après ces augmentations est :
 - $P \times \left(1 + \dfrac{1}{2}\right)^2$
 - $P \times 1$
 
+
+---CORR---
+Après une augmentation de $50\,\%$, le nouveau prix est $P \times 1{,}5$.<br>
+Après une deuxième augmentation de $50\,\%$, le prix devient : <br>
+$(P \times 1{,}5) \times 1{,}5 = \boldsymbol{P \times \left(1 + \dfrac{50}{100}\right)^2}=\boldsymbol{P \times  \left(1 + \dfrac{1}{2}\right)^2} = \boldsymbol{P \times 1{,}5^2}$<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -203,6 +232,13 @@ Le prix d’un article connait deux baisses successives de $20\ $%.
 - $40\ $%
 - $-31\ $%
 
+
+---CORR---
+Le coefficient multiplicateur associé à une baisse de $20\,\%$ est $0{,}8$.<br>
+Le coefficient multiplicateur associé à deux baisses successives de $20\,\%$ est le produit des coefficients multiplicateurs, soit $0{,}8\times 0{,}8=0{,}64$.<br>
+L'évolution globale est donnée par $0{,}64-1=-0{,}36=\boldsymbol{-36}\,\%$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -215,6 +251,14 @@ Le prix d’un article a subi une augmentation de $23\ $%.
 - $1-\dfrac{1}{0{,}23}$
 - $\dfrac{1}{0{,}23}$
 - $\dfrac{1}{0{,}77}-1$
+
+
+---CORR---
+Le coefficient multiplicateur associé à une augmentation de $23\,\%$ est $1+0{,}23=1{,}23$.<br>
+Le coefficient multiplicateur réciproque est donc  $\dfrac{1}{1{,}23}$.<br>
+On en déduit que le taux réciproque  est  $\dfrac{1}{1{,}23}-1$ ou $\dfrac{-0{,}23}{1{,}23}$.<br>
+Le taux réciproque est donc $\boldsymbol{\dfrac{-0{,}23}{1{,}23}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 

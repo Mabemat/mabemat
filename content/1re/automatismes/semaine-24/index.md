@@ -151,6 +151,14 @@ L'ordonnée du point $B$ est égale à :
 - $-1$
 - $0{,}5$
 
+
+---CORR---
+Le point $A$ est le point d'intersection entre la droite $D$ et l'axe des ordonnées, donc l'ordonnée à l'origine de la droite $D$ est $-2$.<br>
+Comme le coeffcient directeur de la droite $D$ est $-0{,}5$, l'équation réduite de la droite $D$ est $y=-0{,}5x-2$.<br>
+L'ordonnée du point $B$ est donnée par $y=-0{,}5\times 1-2=\boldsymbol{-2{,}5}$.
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -161,6 +169,11 @@ Les deux cinquièmes d'un quart correspondent à la fraction :
 - $\dfrac{7}{4}$
 - $\dfrac{2}{9}$
 - $\dfrac{6}{5}$
+
+
+---CORR---
+Les deux cinquièmes d'un quart est égal à $\dfrac{2}{5}\times \dfrac{1}{4}$ soit $\boldsymbol{\dfrac{2}{20} = \dfrac{1}{10}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -174,6 +187,17 @@ Le candidat ayant recueilli le moins de votes est :
 - Le candidat C
 - Le candidat A
 
+
+---CORR---
+Exprimons chaque proportion sous forme de fraction :<br>
+• Candidat A : un sixième $= \dfrac{1}{6} = \dfrac{10}{60}$<br>
+• Candidat B : $25\,\% = \dfrac{25}{100} = \dfrac{5}{20} = \dfrac{15}{60}$<br>
+• Candidat C : deux cinquièmes $= \dfrac{2}{5} = \dfrac{24}{60}$<br>
+• Candidat D : $1 - \dfrac{1}{6} - \dfrac{25}{100} - \dfrac{2}{5} = \dfrac{11}{60}$<br>
+En comparant les fractions : $\dfrac{10}{60} < \dfrac{11}{60} < \dfrac{15}{60} < \dfrac{24}{60}$<br>
+Le candidat ayant recueilli le moins de votes est donc le candidat A.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -186,6 +210,12 @@ Quelle est la probabilité de choisir un garçon ?
 - $\dfrac{27}{36}$
 - $\dfrac{36}{45}$
 
+
+---CORR---
+Il y a en tout : $9 + 36 = 45$ élèves.<br>
+La probabilité de choisir un garçon est de $\boldsymbol{\dfrac{9}{45}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -196,6 +226,26 @@ Soit $n$ un entier non nul. À quelle expression est égale $\dfrac{1}{\left(-1\
 - $\left(-1\right)^{n+1}$
 - $-\left(-1\right)^{n}$
 - $\left(-1\right)^{n-1}$
+
+
+---CORR---
+Soit $n\in \mathbb{N}.$<br>
+
+$$
+\begin{aligned}\left(-1\right)^{n+6}&=\left(-1\right)^{n}\times \left(-1\right)^6\\\\
+&=\left(-1\right)^{n}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}\text{or, }\dfrac{1}{\left(-1\right)^{n}}&=\dfrac{1^n}{\left(-1\right)^{n}}\\\\
+&=\left(\dfrac{1}{-1}\right)^{n}\\\\
+&=\left(-1\right)^{n}.\\\\
+\end{aligned}
+$$
+
+En conséquence, pour tout entier $n$, on a $\dfrac{1}{\left(-1\right)^{n+6}}=\boldsymbol{\left(-1\right)^{n}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
 
 {{< /qcm >}}
 
@@ -210,6 +260,14 @@ Le coût en électricité pour cette utilisation est :
 - $0{,}5$ centime d'euro
 - $0{,}3\,\text{€}$
 - $5$ centimes d'euro
+
+
+---CORR---
+La puissance de l'appareil est de $1\,500$ W, soit $1{,}5$ kW.<br>
+La durée d'utilisation est de $10$ minutes, soit $\dfrac{1}{6}$ heure.<br>
+L'énergie consommée est donc : $1{,}5\times \dfrac{1}{6}=0{,}25$ kWh.<br>
+Le coût de la consommation est : $0{,}25\times 0{,}2=0{,}05$\,€, soit $5\text{ centimes d'euro}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
 
 {{< /qcm >}}
 

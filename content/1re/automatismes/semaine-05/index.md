@@ -169,6 +169,16 @@ On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x) = 3x+3$.
 - <img src="graphe_c14-1_3_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
 - <img src="graphe_c14-1_4_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
 
+
+---CORR---
+La fonction $f(x) = 3x+3$ est une fonction affine de coefficient directeur $a = 3$ et d'ordonnée à l'origine $b = 3$.<br>
+• La fonction s'annule quand $3x+3 = 0$, soit $x = -1$.<br>
+• Comme $a = 3 > 0$, la fonction est croissante : elle est négative avant la racine et positive après.<br>
+Le tableau de signes de la fonction $f$ est donc le suivant :<br>
+<img src="corr_c14_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -181,6 +191,12 @@ Il a baissé de :
 - $15\  $%
 - $1{,}5\  $%
 - $1{,}15 \  $%
+
+
+---CORR---
+Le prix a baissé de  $9$\,€, ce qui correspond à  $15\, \%$ de $60$\,€.<br>
+Le prix du pull a donc baissé de $\boldsymbol{15}\, \%$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
 
 {{< /qcm >}}
 
@@ -197,6 +213,11 @@ Guillaume consacre $20\  $% de sa journée de dimanche à faire ses devoirs.
 - $7\  $%
 - $0{,}2\times0{,}35\  $%
 
+
+---CORR---
+Le pourcentage du temps consacré à l’exposé par rapport à la journée de dimanche est égal à $20\,\%$ de $35\,\%$, soit $\boldsymbol{7\,\%}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -209,6 +230,16 @@ L'image de $\dfrac{5}{4}$ par la fonction $f$ est :
 - $-\dfrac{27}{8}$
 - $-\dfrac{3}{2}$
 - $\dfrac{13}{2}$
+
+
+---CORR---
+Comme $f(x)=2x-4$, on a :<br>
+
+$$
+\begin{aligned}f\left(\dfrac{5}{4}\right)&=2\times \dfrac{5}{4}-4\\\\&=\dfrac{5}{2}-4\\\\&=\boldsymbol{-\dfrac{3}{2}}\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 
@@ -225,6 +256,15 @@ Quelle fraction de la bouteille a-t-elle bu à midi ?
 - $\dfrac{5}{6}$
 - $\dfrac{11}{12}$
 
+
+---CORR---
+Le matin, Madeleine a bu $\dfrac{1}{6}$ de la bouteille. Il reste alors $\dfrac{5}{6}$ de la bouteille.<br>
+À midi, elle a bu $\dfrac{3}{4}$ du reste.<br>
+Comme $\dfrac{3}{4}\times \dfrac{5}{6}=\dfrac{15}{24}$, elle a bu $\boldsymbol{\dfrac{15}{24}}$
+ou $\dfrac{5}{8}$ de la bouteille à midi.
+
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -235,6 +275,20 @@ Développer et réduire l'expression $(-1+2x)(x-4)$.
 - $2x^2-9x-5$
 - $2x^2-9x+4$
 - $3x^2+4x-5$
+
+
+---CORR---
+$$
+\begin{aligned}
+(-1+2x)(x-4)&=-x+4+2x^2-8x\\\\
+&=\boldsymbol{2x^2-9x+4}
+\end{aligned}
+$$
+
+Le terme en $x^2$ vient de $2x\times x=2x^2$.<br>
+Le terme en $x$ vient de la somme de $2x \times (-4)$ et de $-1 \times x$.<br>
+Le terme constant vient de $-1\times (-4)= 4$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
 
 {{< /qcm >}}
 

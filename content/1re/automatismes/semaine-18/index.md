@@ -218,6 +218,14 @@ Quelle fraction de la dépense totale Alice doit-elle donner à Louis pour que l
 - $\dfrac{4}{10}$
 - $\dfrac{2}{10}$
 - $\dfrac{7}{10}$
+
+---CORR---
+En notant $D$ la dépense totale, Alice a dépensé $\dfrac{3}{10}D$ et Louis, $\dfrac{7}{10}D$.<br>
+Leur participation équilibrée doit être de $\dfrac{1}{2}D$ chacun.<br>
+Alice doit donc donner à Louis la somme de $\dfrac{1}{2}D - \dfrac{3}{10}D = \dfrac{2}{10}D$.<br>
+La fraction de la dépense totale que Alice doit donner à Louis est donc $\boldsymbol{\dfrac{2}{10}}$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -229,6 +237,19 @@ Soit $x$ un réel.
 - $\left( -3x+3\right)\left( x+2\right)$
 - $\left( -3x-3\right)\left( x+2\right)$
 - $\left( x+1\right)\left( x+2\right)$
+
+---CORR---
+On cherche parmi les  propositions, lesquelles peuvent donner, après développement, l'expression de l'énoncé. <br>
+
+$$
+\begin{aligned}
+\left (-3x-3\right)\left(x+2\right)&=-3x^2-6x-3x-6\\\\
+&=-3x^2-9x-6\\\\
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -239,6 +260,14 @@ Le double de l'inverse de $7$ est égal à :
 - $14$
 - $\dfrac{2}{7}$
 - $\dfrac{7}{2}$
+
+---CORR---
+L'inverse de $7$ est $\dfrac{1}{7}$. <br>
+Le double  de $\dfrac{1}{7}$ est $\dfrac{2}{7}$.<br>
+Le double de l'inverse  de $7$ est égal à    $\boldsymbol{\dfrac{2}{7}}$.
+
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -253,6 +282,20 @@ Voici la répartition des notes sur 20 d'une classe de première.
 - $69$
 - $7$
 - $26$
+
+---CORR---
+L'effectif total est le nombre de notes représentées dans l'histogramme.<br>
+On peut le calculer en additionnant les effectifs de chaque barre.<br>
+Les effectifs sont : $1$ pour la note $6$<br>
+$2$ pour la note $8$<br>
+$8$ pour la note $9$<br>
+$6$ pour la note $10$<br>
+$4$ pour la note $11$<br>
+$3$ pour la note $12$<br>
+$2$ pour la note $13$.<br>
+Ici, on trouve un effectif total de $\boldsymbol{26}$ élèves.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -286,6 +329,21 @@ On peut affirmer que :
 - $x=\dfrac{7}{10}$
 - $x=0{,}75$
 - $x=0{,}55$
+
+---CORR---
+La somme des probabilités doit être égale à 1.  <br>
+Comme $\dfrac{3}{10}=0{,}3$, on a : <br>
+
+$$
+\begin{aligned}
+x&=1-\left(0{,}3+0{,}35+0{,}1\right)\\\\
+&=1-0{,}75\\\\
+&=\boldsymbol{0{,}25}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -305,6 +363,13 @@ L'inéquation $x\times f(x) < 0$ est vérifiée par :
 - $x_G \text{ et } x_V$
 - $x_D, x_G \text{ et } x_S$
 - $x_D \text{ et } x_S$
+
+---CORR---
+L'inéquation est vérifiée lorsque $x$ et $f(x)$ sont de signes opposés, c'est-à-dire lorsque l'un est positif et l'autre négatif.<br>
+Ici, $x_D$ est négatif et $f(x_D)$ est positif. Aussi, $x_S$ est positif et $f(x_S)$ est négatif.<br>
+L'inéquation est donc vérifiée pour $\boldsymbol{x_D \textbf{ et } x_S}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 </div>

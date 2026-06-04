@@ -199,6 +199,19 @@ Soit $a$ un nombre réel non nul et $n$ un entier non nul.
 - $a^{n}$
 - $a^{2}$
 - $a^{n-1}$
+
+---CORR---
+On applique la propriété du quotient des puissances d'un réel : <br>
+Soit $n$ et $p$ deux entiers et $a$ un réel :  $\dfrac{a^n}{a^p}=a^{n-p}$<br>
+
+$$
+\begin{aligned} \dfrac{a^{n^{2}}}{a^{n}}&=a^{n^{2}-n}\\\\
+&=\boldsymbol{a^{n(n^{}-1)}}
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="2" type="auto" >}}
@@ -217,6 +230,17 @@ Soit $a$ un nombre réel non nul et $n$ un entier non nul.
 - $S = ${$-\sqrt{12}\  ; \ \sqrt{12}$}
 - $S = [-\sqrt{12}\ ;\ \sqrt{12}]$
 - $S = [-6\ ;\ 6]$
+
+---CORR---
+Pour résoudre graphiquement cette inéquation : <br>
+$\bullet$ On trace la parabole d'équation $y=x^2$. <br>
+$\bullet$ On trace la droite horizontale d'équation $y=12$. Cette droite coupe la parabole en $-\sqrt{12}$ et $\sqrt{12}$. <br>
+$\bullet$ Les solutions de l'inéquation sont les abscisses des points de la courbe qui se situent  sur ou sous  la droite.<br>
+<img src="corr_c10_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+
+On en déduit que l'ensemble des solutions de l'inéquation $(I)$ est : $S = [-\sqrt{12}\,;\,\sqrt{12}]$.<br>
+La bonne réponse est la réponse <span class="rep">C</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -229,6 +253,13 @@ Sachant que le taux réciproque d'une baisse de $20\ $% est une augmentation de 
 - Le prix est égal à sa valeur de départ.
 - On ne peut pas savoir : cela dépend de la valeur de départ.
 - Le prix est strictement supérieur à sa valeur de départ.
+
+---CORR---
+Le taux réciproque d'une baisse de $20\,\%$ est une augmentation de $25\,\%$.<br>
+Comme $30\,\% > 25\,\%$, l'augmentation appliquée est plus forte que celle nécessaire pour retrouver le prix initial.<br>
+Le prix final sera donc strictement supérieur au prix initial.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="1" type="auto" >}}
@@ -243,6 +274,22 @@ $(D)$ et $(D')$ sont deux droites dans un repère du plan.<br>
 - $\left]\dfrac{7}{13}\ ;\  +\infty\right[$
 - $\left]\dfrac{13}{7}\ ;\  +\infty\right[$
 - $\left]-\infty\ ;\ \dfrac{13}{7}\right[$
+
+---CORR---
+La droite $(D)$ est strictement au-dessus de la droite $(D')$ lorsque $4x-3>-9x+4$.<br>
+
+$$
+\begin{aligned}
+4x-3&>-9x+4\\\\
+13x&>7\\\\
+x&>\dfrac{7}{13}
+\end{aligned}
+$$
+
+La droite $(D)$ est donc strictement au-dessus de la droite $(D')$ sur :
+$\boldsymbol{\left]\dfrac{7}{13}\,;\, +\infty\right[}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="3" type="auto" >}}
@@ -264,6 +311,20 @@ $(D)$ et $(D')$ sont deux droites dans un repère du plan.<br>
 - $p(B)=0{,}55$
 - $p(B)=0{,}54$
 - $p(B)=0{,}63 $
+
+---CORR---
+On applique la formule de probabilité totale :<br>
+
+$$
+\begin{aligned}
+p(B)&=p(A)\times p_A(B)+p(\overline A)\times p_{\overline A}(B)\\\\
+&=0{,}9\times 0{,}6+0{,}1\times 0{,}9\\\\
+&=\boldsymbol{0{,}63}.
+\end{aligned}
+$$
+
+La bonne réponse est la réponse <span class="rep">D</span>.
+
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
@@ -278,6 +339,18 @@ $Données :$ $1\text{ kWh} = 3,6 \times 10^{6}\text{ J}.$
 - $4{,}3~\text{kWh}$
 - $0{,}41~\text{kWh}$
 - $17~\text{kWh}$
+
+---CORR---
+Pour convertir des Joules en kWh, on utilise la relation donnée :<br>
+$1~\text{kWh} = 3,6 \times 10^{6}~\text{J}$<br>
+L'énergie en Joules est : $E = 6{,}12 \times 10^{6}~\text{J}$<br>
+Pour trouver l'énergie en kWh, on divise par $3,6 \times 10^{6}$ :<br>
+$E_{\text{kWh}} = \dfrac{6{,}12 \times 10^{6}}{3,6 \times 10^{6}} = \dfrac{6{,}12}{3,6} = 1{,}7~\text{kWh}$<br>
+Sans calculatrice, on peut estimer la valeur en approchant $6{,}12$ par $6$ et $3,6$ par $4$.<br>
+On obtient alors : $\dfrac{6}{4} = 1{,}5$, ce qui nous indique que le résultat est proche de $1{,}5$.<br>
+La seule réponse possible est $\boldsymbol{1{,}7}$ $\text{kWh}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+
 {{< /qcm >}}
 
 </div>

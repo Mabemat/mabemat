@@ -163,6 +163,10 @@ pre[style*="background-color"] {
   
 
 
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
 <div class="crumbs fade-up">
   <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
@@ -178,7 +182,13 @@ pre[style*="background-color"] {
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>25</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>25</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   <p class="wk-subtitle">Probabilités conditionnelles et algèbre</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -1133,6 +1143,10 @@ Devoirs — Séance 25 — Probabilités conditionnelles et algèbre
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="1">
   <div class="qcm-question">
@@ -1181,7 +1195,24 @@ $P_C(A)=\ldots$
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$<br>
+D&rsquo;après la formule des probabilités totales :<br></p>
+$$
+\begin{aligned}P(C)&=p(A\cap C)+p(\bar A \cap C)\\\\
+&=P(A)\times P_A(C)+P(\bar A)\times P_{\bar A}(C)\\\\
+&=\dfrac{7}{10}\times \dfrac{1}{2}+\dfrac{3}{10}\times \dfrac{7}{10}\\\\
+&=\dfrac{7}{20}+\dfrac{21}{100}\\\\
+&=\dfrac{14}{25}\\\\
+\end{aligned}
+$$$$
+\begin{aligned}
+P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\\\
+&=\dfrac{P(A)\times P_A(C)}{P(C)}\\\\
+&=\dfrac{\dfrac{7}{20}}{\dfrac{14}{25}}\\\\
+&=\dfrac{5}{8}\\\\
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
   </div>
   
 </div>
@@ -1257,6 +1288,10 @@ $P_C(A)=\ldots$
   
   
     
+  
+
+  
+  
   
 
   
@@ -1314,7 +1349,19 @@ Le nombre de maisons de type T2 dans cette ville est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Les maisons  représentent $10\%$   des logements.<br>
+Il y en a donc : $0{,}1\times 2\,000=200$.<br>
+Dans cette ville, il y a  $200$ maisons.<br>
+Parmi ces maisons, il y a $80\,\%$  de T2.<br>
+$80\,\%$  de $200=0{,}8\times 200=160$.<br>
+Il y a donc $\boldsymbol{160}$ maisons de type T2 dans cette ville.</p>
+<p>Mentalement : <br>
+Prendre $10\,\%$  d&rsquo;une quantité revient à la diviser par $10$. <br>
+Pour calculer $20\,\%$, $30\,\, \%$, $40\,\%$, &hellip;. d&rsquo;une quantité, on
+commence par calculer  $10\,\%$  de cette quantité en la divisant par $10$, puis on multiplie
+par $2$ ce résultat si on veut en calculer $20\, \%$, par $3$ si on veut en calculer $30\,\%$, &hellip;.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
   </div>
   
 </div>
@@ -1388,6 +1435,10 @@ Le nombre de maisons de type T2 dans cette ville est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1446,7 +1497,12 @@ Le nombre de maisons de type T2 dans cette ville est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    La valeur de $b$ est donnée par l&rsquo;image de $0$ par $f$ (ordonnée du point d&rsquo;intersection entre la courbe et l&rsquo;axe des ordonnées).<br>
+Ainsi, $b=\boldsymbol{2}$.<br>
+La valeur de $a$ s&rsquo;obtient (par exemple) grâce à l&rsquo;image de $1$ par la fonction $f$.<br>
+On lit $f(1)=5{,}5$. D&rsquo;où, $a\times 1^2+2=5{,}5$, soit $a=\boldsymbol{3{,}5}$.<br>
+Ainsi, $f(x)=3{,}5x^2+2$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
 </div>
@@ -1518,6 +1574,10 @@ Le nombre de maisons de type T2 dans cette ville est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1575,7 +1635,15 @@ Le nombre de maisons de type T2 dans cette ville est :
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On développe l&rsquo;expression de l&rsquo;énoncé. <br></p>
+$$
+\begin{aligned}
+-4(x+2)^2-1&=-4\left(x^2 +4x+4\right)-1\\\\
+&=-4x^2 -16x-16 -1\\\\
+&=\boldsymbol{-4x^2 -16x-17}\\\\
+\end{aligned}
+$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
   </div>
   
 </div>
@@ -1657,6 +1725,10 @@ Le nombre de maisons de type T2 dans cette ville est :
   
   
     
+  
+
+  
+  
   
 
   
@@ -1715,7 +1787,15 @@ Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être repr�
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l&rsquo;ordonnée à l&rsquo;origine est strictement négative ($D$ coupe l&rsquo;axe des ordonnées en dessous de l&rsquo;origine).<br>
+On écrit les équations qui ne sont pas forme réduite, sous forme réduite :<br>
+$\bullet\:$ $y=-3x-2$ est  sous forme réduite.<br>
+$\bullet\:$ $y=3x-2$ est  sous forme réduite.<br>
+$\bullet\:$ $6x-2y-4=0$ s&rsquo;écrit $y=3x-2$.<br>
+$\bullet\:$ $y=x^2-(x-2)^2+2$ s&rsquo;écrit $y=4x-2$.</p>
+<p>La seule équation ayant un coefficient directeur négatif et une ordonnée à l&rsquo;origine négative est : $\boldsymbol{y=-3x-2}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
   </div>
   
 </div>
@@ -1787,6 +1867,10 @@ Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être repr�
   
   
 
+  
+  
+  
+
 
 <div class="qcm-q qcm-auto" data-correct="0">
   <div class="qcm-question">
@@ -1833,7 +1917,9 @@ Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être repr�
   <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
   <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    
+    <p>Multiplier par  $10^{-4}$ revient à multiplier par $0{,}000\,1$,  donc l&rsquo;écriture décimale de $9{,}41\times 10^{-4}$ est : $\boldsymbol{0{,}000\,941}$.</p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
   </div>
   
 </div>
@@ -2015,6 +2101,10 @@ Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être repr�
 })();
 </script>
 
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
     </div>
   
   
@@ -2043,7 +2133,7 @@ Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être repr�
   </script>
   <script>
      
-    const BUILD_TS = '1780421869';
+    const BUILD_TS = '1780564365';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;
