@@ -14,7 +14,7 @@ Donner le nom de ce solide.
 <br>
 <img src="3auto_s55_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-<span class="rep">Prisme droit</span> avec une base ayant $6$ sommets.
+<span class="rep">Prisme droit</span> à base hexagonale.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2
@@ -97,7 +97,8 @@ Dans le triangle $ABC$, on a : $\widehat{A} + \widehat{B} + \widehat{C} = 180^\c
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Gabrielle achète dans la boutique du musée des livres. Elle repart avec 5 livres pour $15$€.<br>Zacharie achète quant à lui, au même endroit 15 livres pour $45$€.<br>Le prix des livres est-il proportionnel à la quantité achetée ?
+Gabrielle achète dans la boutique du musée des livres. <br>
+Elle repart avec 5 livres pour $15$€.<br>Zacharie achète quant à lui, au même endroit 15 livres pour $45$€.<br>Le prix des livres est-il proportionnel à la quantité achetée ?
 ---CORR---
 Gabrielle dépense ${\color{#C5607A}\boldsymbol{15}}$€. Zacharie a acheté ${\color{#EB7F73}\boldsymbol{3}}$ fois la quantité des livres achetée par Gabrielle pour ${\color{#C5607A}\boldsymbol{15}}$€.<br>Il a payé $45$€ $={\color{#EB7F73}\boldsymbol{3}}\times{\color{#C5607A}\boldsymbol{15}}$€.<br>À l'aide de ces données, on constate que le prix des livres et leur quantité sont tous les deux multipliés par le même nombre, donc ces deux grandeurs sont <span class="rep">proportionnelles</span>.
 {{< /auto3-exo >}}
@@ -115,7 +116,7 @@ L'aire de cette figure est : ${\color{#EB7F73}\boldsymbol{9}}$ u.a.
 ---Q---
 Calculer : $-3 - (-6)$
 ---CORR---
-$-3 - (-6) = {\color{#EB7F73}\boldsymbol{3}}$
+$-3 - (-6) = -3 + 6={\color{#EB7F73}\boldsymbol{3}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4

@@ -24,7 +24,7 @@ $6 \times 5-90 \div 9$ s'écrit : <span class="rep">la différence entre le prod
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Un angle rentrant mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+Un angle rentrant mesure entre $\ldots^\circ$ et $\ldots^\circ$.
 ---CORR---
 Un angle rentrant mesure entre ${\color{#EB7F73}\boldsymbol{180}}^\circ$ et ${\color{#EB7F73}\boldsymbol{360}}^\circ$.
 
@@ -41,14 +41,7 @@ On sait que $[DK]\perp[VZ]$.<br>Si un parallélogramme a des diagonales perpendi
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Quel nombre doit-on écrire à la place des pointillés pour tracer un décagone régulier ?<br><br>
-```
-répéter 10 fois
-  avancer de 20 pas
-  tourner ↻ de ... degrés
-fin
-```
-<br>
+Quel nombre doit-on écrire à la place des pointillés pour tracer un décagone régulier ?<br>
 <img src="3auto_s37_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 Un décagone régulier a des angles de $144^\circ$. Le lutin doit tourner de $180-144={\color{#EB7F73}\boldsymbol{36}}^\circ$ après avoir tracé un côté.<br>Mentalement on divise $360$ par $10$ : $\dfrac{360}{10}=36$.
@@ -117,7 +110,7 @@ Comme $0{,}8=\dfrac{8}{10}=\dfrac{4}{5}$, l'inverse de $0{,}8$ est ${\color{#EB7
 
 {{< auto3-exo num="Exercice 3" >}}33
 ---Q---
-$1~\text{m}^2$ est égal à $\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots$ de $1~\text{dm}^2$.
+$1~\text{m}^2$ est égal à $\ldots$ de $1~\text{dm}^2$.
 ---CORR---
 $1~\text{m}^2$ est égal à <span class="rep">une centaine</span> de $1~\text{dm}^2$.
 {{< /auto3-exo >}}

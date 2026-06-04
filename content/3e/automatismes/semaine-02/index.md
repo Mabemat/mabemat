@@ -46,6 +46,7 @@ Placer les points : $A(-6{,}1)$, $B(-3{,}8)$, $C(-0{,}8)$.
 <br>
 <img src="3auto_s04_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
+<img src="3auto_s04_fig1_c.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}

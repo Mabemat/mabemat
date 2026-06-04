@@ -19,14 +19,15 @@ Le matin, Schona a bu $\dfrac{1}{5}$ de la bouteille. Il reste alors $\dfrac{4}{
 ---Q---
 Écrire sous la forme $a^n$ : $- \dfrac{1}{5\times5\times5\times5\times5}$
 ---CORR---
-$- \dfrac{1}{5\times5\times5\times5\times5} = {\color{#EB7F73}\boldsymbol{-5^{-5}}}$
+$- \dfrac{1}{5\times5\times5\times5\times5} = -\dfrac{1}{5^5}= {\color{#EB7F73}\boldsymbol{-5^{-5}}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
 Sur un site, un pantalon est vendu $42$€ au lieu de $60$€.<br>Le pourcentage de réduction est de ...<br><br>A. $30~\%$ &emsp; B. $70~\%$ &emsp; C. $18~\%$
 ---CORR---
-La réduction est de $18$€ car $60-42 = 18$. Or $18$ sur un total de $60$, c'est :<br>$\dfrac{18}{60} = 0{,}3 = {\color{#EB7F73}\boldsymbol{30~\%}}$<br>La bonne réponse est la réponse <span class="rep">A</span>.
+La réduction est de $18$€ car $60-42 = 18$. <br>
+Or $18$ sur un total de $60$, c'est :<br>$\dfrac{18}{60} = \dfrac{6 \times 3}{6 \times 10}= \dfrac{3}{10}=\dfrac{30}{100}= {\color{#EB7F73}\boldsymbol{30~\%}}$<br>La bonne réponse est la réponse <span class="rep">A</span>.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4
@@ -52,7 +53,10 @@ Deux angles adjacents complémentaires sont deux angles dont les côtés non com
 ---Q---
 Calculer : $A = \dfrac{6}{7} + \dfrac{4}{7} \times \dfrac{5}{2}$
 ---CORR---
-$A = \dfrac{6}{7} + \dfrac{4}{7} \times \dfrac{5}{2}$<br>$A = \dfrac{6}{7} + \dfrac{20}{14}$<br>$A = \dfrac{12}{14} + \dfrac{20}{14}$<br>$A = \dfrac{32}{14} = \dfrac{16{\color{#C5607A}\boldsymbol{\times2}}}{7{\color{#C5607A}\boldsymbol{\times2}}}={\color{#EB7F73}\boldsymbol{\dfrac{16}{7}}}$
+$A = \dfrac{6}{7} + \dfrac{4}{7} \times \dfrac{5}{2}$<br><br>
+$A = \dfrac{6}{7} + \dfrac{20}{14}$<br><br>
+$A = \dfrac{12}{14} + \dfrac{20}{14}$<br><br>
+$A = \dfrac{32}{14} = \dfrac{16{\color{#C5607A}\boldsymbol{\times2}}}{7{\color{#C5607A}\boldsymbol{\times2}}}={\color{#EB7F73}\boldsymbol{\dfrac{16}{7}}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2

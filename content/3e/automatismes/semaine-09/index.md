@@ -65,7 +65,10 @@ $A = 3(2+7)-2(4+5)$<br>$A = 3 \times 9 - 2 \times 9$<br>$A = 27 - 18$<br>$A = {\
 
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
-$WRUS$ est un rectangle. Ses diagonales se coupent en $T$. $TRVU$ est un losange.<br>Fais une figure à main levée, puis la coder.
+$WRUS$ est un rectangle. <br>
+Ses diagonales se coupent en $T$. <br>
+$TRVU$ est un losange.<br>
+Fais une figure à main levée, puis la coder.
 ---CORR---
 Voilà ci-dessous un schéma qui pourrait convenir à la situation.
 {{< /auto3-exo >}}
@@ -89,7 +92,7 @@ a. Compléter le tableau :
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$12$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;color:#2D2226"></td></tr>
 </table>
 <br>
-b. Il y a 12 fruits verts et 25 fruits donc la probabilité que le fruit choisi soit une pomme verte ou une poire verte est de ....<br>c. Il y a 12 poires et 25 fruits donc la probabilité que le fruit choisi soit une poire est de ....<br>d. Il y a 5 pommes vertes et 13 pommes donc la probabilité que le fruit choisi soit une pomme verte est de ....
+b. Il y a 12 fruits verts et 25 fruits donc la probabilité que le fruit choisi soit une pomme verte ou une poire verte est de ....
 ---CORR---
 a. Tout d'abord, on a $12$ fruits verts et $5$ pommes vertes soit $12-5={\color{#EB7F73}\boldsymbol{7}}$ poires vertes.<br>Il y a $5$ pommes vertes et $8$ pommes mûres soit $5+8={\color{#EB7F73}\boldsymbol{13}}$ pommes au total.<br>Il y a $13$ pommes et $12$ poires soit $13+12={\color{#EB7F73}\boldsymbol{25}}$ fruits au total.<br>Il y a $12$ vertes et $25$ fruits soit $25-12={\color{#EB7F73}\boldsymbol{13}}$ mûres au total.<br>Enfin, il y a $8$ pommes mûres et $13$ mûres soit $13-8={\color{#EB7F73}\boldsymbol{5}}$ poires mûres.<br>Voici le tableau des effectifs :
 <table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
@@ -98,7 +101,7 @@ a. Tout d'abord, on a $12$ fruits verts et $5$ pommes vertes soit $12-5={\color{
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Mûres</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$8$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{5}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{13}}$</td></tr>
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Total</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{13}}$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$12$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{25}}$</td></tr>
 </table>
-b. Il y a $12$ fruits verts et $25$ fruits donc la probabilité que le fruit choisi soit une pomme verte ou une poire verte est de : ${\color{#EB7F73}\boldsymbol{\dfrac{12}{25}}}$.<br>c. Il y a $12$ poires et $25$ fruits donc la probabilité que le fruit choisi soit une poire est de : ${\color{#EB7F73}\boldsymbol{\dfrac{12}{25}}}$.<br>d. Il y a $5$ pommes vertes et $13$ pommes donc la probabilité que le fruit choisi soit une pomme verte est de : ${\color{#EB7F73}\boldsymbol{\dfrac{5}{13}}}$.
+b. Il y a $12$ fruits verts et $25$ fruits donc la probabilité que le fruit choisi soit une pomme verte ou une poire verte est de : ${\color{#EB7F73}\boldsymbol{\dfrac{12}{25}}}$.
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}
@@ -121,17 +124,9 @@ Dans l'opération « $14 \div 2$ », $2$ s'appelle le <span class="rep">diviseur
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-On considère l'algorithme suivant :<br><br>
-```
-Demander un nombre → variable
-résultat ← 2 × variable
-résultat ← résultat + 6
-résultat ← résultat / 2
-Dire "J'obtiens comme résultat : " résultat
-```
-<br>Qu'obtient-on si on choisit $4$ comme nombre de départ ?
-<br>
-<img src="3auto_s27_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
+On considère l'algorithme suivant :<br>
+<img src="3auto_s27_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%"><br>
+Qu'obtient-on si on choisit $4$ comme nombre de départ ?
 ---CORR---
 Si on choisit $4$ comme nombre de départ, alors variable prend la valeur $4$.<br>Ensuite, résultat prend la valeur $2 \times 4=8$.<br>Puis, résultat prend la valeur $8 + 6=14$.<br>Enfin, résultat prend la valeur $\dfrac{14}{2}=7$.<br>On obtient donc comme résultat final : ${\color{#EB7F73}\boldsymbol{7}}$.
 {{< /auto3-exo >}}

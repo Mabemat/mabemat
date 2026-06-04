@@ -65,7 +65,8 @@ Moyenne A : $\dfrac{5+12+17}{3}=\dfrac{34}{3}$ ; médiane A : $12$.<br>Moyenne B
 
 {{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Lisa et Tania se partagent $36$ bonbons dans le ratio $4:2$. Combien de bonbons chaque enfant reçoit-il ?
+Lisa et Tania se partagent $36$ bonbons dans le ratio $4:2$. <br>
+Combien de bonbons chaque enfant reçoit-il ?
 ---CORR---
 Si les enfants se partageaient $4+2=6$ bonbons alors Lisa en aurait $4$ et Tania en aurait $2$.<br>Mais il y a $36$ bonbons, soit ${\color{#EB7F73}\boldsymbol{6}}\times 6$ bonbons.<br>Donc Lisa en aura ${\color{#EB7F73}\boldsymbol{6}}\times 4={\color{#EB7F73}\boldsymbol{24}}$ et Tania en aura ${\color{#EB7F73}\boldsymbol{6}}\times 2={\color{#EB7F73}\boldsymbol{12}}$.
 {{< /auto3-exo >}}
@@ -141,7 +142,8 @@ Dans un parking de supermarché comptant $500$ voitures, on a noté leur couleur
 </table>
 a. Déterminer l'effectif manquant.<br>b. Déterminer les fréquences pour chaque couleur (en pourcentage, arrondir au dixième si besoin).
 ---CORR---
-a. $e_\text{Vert}=500-(151+15+34+158+85)=500-443={\color{#EB7F73}\boldsymbol{57}}$<br><br>b.
+a. $e_\text{Vert}=500-(151+15+34+158+85)=500-443={\color{#EB7F73}\boldsymbol{57}}$<br><br>b. Pour faire la fréquence sans calculatrice ici, pour 151 : <br>
+$\dfrac{151}{500}=\dfrac{302}{1000}=\dfrac{30,2}{100}=30,2\%$
 <table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.85rem">
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">&nbsp;</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Blanc</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Vert</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Rouge</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Bleu</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Gris</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Noir</th></tr>
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:5px 8px;font-weight:600">Fréq. en %</th><td style="border:1px solid #ddb8c0;padding:5px 8px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{30{,}2~\%}}$</td><td style="border:1px solid #ddb8c0;padding:5px 8px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{11{,}4~\%}}$</td><td style="border:1px solid #ddb8c0;padding:5px 8px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{3~\%}}$</td><td style="border:1px solid #ddb8c0;padding:5px 8px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{6{,}8~\%}}$</td><td style="border:1px solid #ddb8c0;padding:5px 8px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{31{,}6~\%}}$</td><td style="border:1px solid #ddb8c0;padding:5px 8px;text-align:center;color:#2D2226">${\color{#EB7F73}\boldsymbol{17~\%}}$</td></tr>

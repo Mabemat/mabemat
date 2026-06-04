@@ -17,7 +17,7 @@ $A = \dfrac{4}{4-\dfrac{3}{7}} = \dfrac{4}{\dfrac{28}{7}-\dfrac{3}{7}} = \dfrac{
 
 {{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Comparer : $-9{,}346 \quad \ldots\ldots \quad -9{,}71$
+Comparer : $-9{,}346 \quad \ldots \quad -9{,}71$
 ---CORR---
 $-9{,}346 \quad {\color{#EB7F73}\boldsymbol{>}} \quad -9{,}71$
 {{< /auto3-exo >}}
@@ -123,7 +123,7 @@ Le chiffre des unités de $42\,010$ est $0$ donc $42\,010$ <span class="rep">est
 
 {{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous (côté $= 3{,}5~\text{cm}$).
+Calculer le périmètre du octogone régulier $ABCDEFGH$ représenté ci-dessous.
 <br>
 <img src="3auto_s42_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---

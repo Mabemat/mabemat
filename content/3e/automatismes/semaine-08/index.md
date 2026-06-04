@@ -24,7 +24,7 @@ $A = (10+1)(5+2)$<br>$A = 11 \times 7$<br>$A = {\color{#EB7F73}\boldsymbol{77}}$
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Un angle obtus mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+Un angle obtus mesure entre $\ldots^\circ$ et $\ldots^\circ$.
 ---CORR---
 Un angle obtus mesure entre ${\color{#EB7F73}\boldsymbol{90}}^\circ$ et ${\color{#EB7F73}\boldsymbol{180}}^\circ$.
 {{< /auto3-exo >}}
@@ -40,25 +40,16 @@ Voilà ci-dessous un schéma qui pourrait convenir à la situation.
 ---Q---
 Laquelle des 4 figures ci-dessous va être tracée avec le script fourni ?
 <br><br>
-```
-quand ⚑ est cliqué
-stylo en position d'écriture
-répéter 4 fois
-  avancer de 40 pas
-  tourner ↻ de (360/4) degrés
-fin
-```
-<br>A. triangle &emsp; B. pentagone régulier &emsp; C. carré &emsp; D. hexagone régulier
+
+<img src="3auto_s22_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:50%">
 <br>
-<img src="3auto_s22_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s22_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s22_q3.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s22_q4.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s22_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
+<div style="display:flex; gap:1rem; justify-content:center; align-items:flex-start;">
+  <img src="3auto_s22_q1.svg" alt="figure" style="max-width:22%;">
+  <img src="3auto_s22_q2.svg" alt="figure" style="max-width:22%;">
+  <img src="3auto_s22_q3.svg" alt="figure" style="max-width:22%;">
+  <img src="3auto_s22_q4.svg" alt="figure" style="max-width:22%;">
+</div>
+
 ---CORR---
 Le script répète $4$ fois : avancer + tourner de $360\div4=90°$. Cela trace un <span class="rep">carré</span>.
 {{< /auto3-exo >}}
@@ -83,7 +74,7 @@ Le quotient de la somme de 8 et 20 par 2 s'écrit : ${\color{#EB7F73}\boldsymbol
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Un angle saillant mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+Un angle saillant mesure entre $\ldots^\circ$ et $\ldots^\circ$.
 ---CORR---
 Un angle saillant mesure entre ${\color{#EB7F73}\boldsymbol{0}}^\circ$ et ${\color{#EB7F73}\boldsymbol{180}}^\circ$.
 {{< /auto3-exo >}}

@@ -89,7 +89,7 @@ C'est un <span class="rep">carré</span>.
 
 {{< auto3-exo num="Exercice 5" >}}
 ---Q---
-Un angle plat mesure $\ldots\ldots\ldots^\circ$.
+Un angle plat mesure $\ldots^\circ$.
 ---CORR---
 Un angle plat mesure ${\color{#EB7F73}\boldsymbol{180}}^\circ$.
 {{< /auto3-exo >}}

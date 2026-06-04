@@ -64,14 +64,6 @@ Les points $R$, $O$ et $D$ sont les symétriques respectifs de $S$, $V$ et $Z$ p
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
 Qu'obtient-on si on choisit $4$ comme nombre de départ ?
-<br><br>
-```
-Demander un nombre → variable
-résultat ← 2 × variable
-résultat ← résultat + 6
-résultat ← résultat / 2
-Dire "J'obtiens comme résultat : " résultat
-```
 <br>
 <img src="3auto_s29_scratch1.svg" alt="scratch" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
@@ -130,7 +122,7 @@ Dans l'égalité « $8 + 2 = 10$ », $10$ s'appelle la <span class="rep">somme</
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Un angle aigu mesure entre $\ldots\ldots\ldots^\circ$ et $\ldots\ldots\ldots^\circ$.
+Un angle aigu mesure entre $\ldots^\circ$ et $\ldots^\circ$.
 ---CORR---
 Un angle aigu mesure entre ${\color{#EB7F73}\boldsymbol{0}}^\circ$ et ${\color{#EB7F73}\boldsymbol{90}}^\circ$.
 {{< /auto3-exo >}}

@@ -43,8 +43,7 @@ x &= {\color{#EB7F73}\boldsymbol{-\dfrac{33}{46}}}
 Tracer les triangles suivants, puis construire leur cercle circonscrit.<br>Le triangle $VXW$ rectangle en $V$ tel que $VX=3~\text{cm}$ et $XW=5~\text{cm}$.
 <br>
 <img src="3auto_s34_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s34_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+
 ---CORR---
 Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
 
@@ -52,6 +51,8 @@ Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous 
 
 {{< auto3-exo num="Exercice 5" >}}55
 ---Q---
+
+<img src="3auto_s34_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 a. Donner le numéro de l'image du point $19$ par la translation qui transforme C en X.<br>b. Donner le numéro de l'image du point $15$ par la translation qui transforme A en M.<br>c. Donner le numéro de l'image du point $65$ par la translation qui transforme N en D.
 
 

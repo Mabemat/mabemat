@@ -130,20 +130,21 @@ $3{,}1~\text{h} = 3~\text{h} + 0{,}1 \times 60~\text{min} = {\color{#EB7F73}\bol
 
 {{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$. Les points $Y$, $H$ et $O$ sont alignés. Les points $P$, $Z$ et $F$ le sont-ils ? Justifier.
+Construire le cercle circonscrit au triangle suivant.
 <br>
 <img src="3auto_s21_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$ et sont alignés.<br>Or, la symétrie axiale conserve l'alignement.<br>Donc les points ${\color{#EB7F73}\boldsymbol{P}}$, ${\color{#EB7F73}\boldsymbol{Z}}$ et ${\color{#EB7F73}\boldsymbol{F}}$ sont <span class="rep">alignés</span> également.
+Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Construire le cercle circonscrit au triangle suivant.
+Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$. Les points $Y$, $H$ et $O$ sont alignés. Les points $P$, $Z$ et $F$ le sont-ils ? Justifier.
 <br>
 <img src="3auto_s21_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
+Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$ et sont alignés.<br>Or, la symétrie axiale conserve l'alignement.<br>Donc les points ${\color{#EB7F73}\boldsymbol{P}}$, ${\color{#EB7F73}\boldsymbol{Z}}$ et ${\color{#EB7F73}\boldsymbol{F}}$ sont <span class="rep">alignés</span> également.
+
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}

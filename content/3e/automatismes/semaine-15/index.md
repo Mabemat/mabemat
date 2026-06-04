@@ -66,7 +66,8 @@ $3^{-4}=\dfrac{1}{3^{4}}=\dfrac{1}{3\times 3\times 3\times 3}={\color{#EB7F73}\b
 
 {{< auto3-exo num="Exercice 3" >}}
 ---Q---
-Soldé à $-20~\%$ un article coûte maintenant $2{,}48$€. Calculer son prix avant les soldes.
+Soldé à $-20~\%$ un article coûte maintenant $2{,}48$€. <br>
+Calculer son prix avant les soldes.
 ---CORR---
 Une diminution de $20~\%$ revient à multiplier par $80~\% = 0{,}8$.<br>Pour retrouver le prix initial, on divise le prix final par $0{,}8$.<br>$2{,}48\div 0{,}8 = {\color{#EB7F73}\boldsymbol{3{,}10}}$€.
 {{< /auto3-exo >}}

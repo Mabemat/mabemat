@@ -49,7 +49,7 @@ $0{,}4~\text{dm}^3 = 0{,}4\div 1\,000~\text{m}^3 = {\color{#EB7F73}\boldsymbol{0
 ---Q---
 Dans une collection de $1\,000$ disques, on a noté leur style de musique.
 <br>
-a. Déterminer l'effectif manquant (Rap).<br>b. Déterminer les fréquences pour chaque style (en pourcentage, arrondir au dixième si besoin).
+a. Déterminer l'effectif manquant.<br>b. Déterminer les fréquences pour chaque style (en pourcentage, arrondir au dixième si besoin).
 <br>
 <img src="3auto_s10_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---

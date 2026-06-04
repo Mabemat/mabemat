@@ -45,7 +45,8 @@ $10\,\%$ du prix représente $17$€, donc $100~\%$ du prix représente $10$ foi
 
 {{< auto3-exo num="Exercice 5" >}}
 ---Q---
-Une voiture roule à $90$ km/h. Combien de temps met-elle pour parcourir $40{,}5$ km ?
+Une voiture roule à $90$ km/h. <br>
+Combien de temps met-elle pour parcourir $40{,}5$ km ?
 <br><br>A. 54 min &emsp; B. 40 min 30 s &emsp; C. 13 min 30 s &emsp; D. 27 min
 ---CORR---
 Pour parcourir $40{,}5$ km à $90$ km/h, il faut :<br>$\dfrac{40{,}5}{90}~\text{h}=\dfrac{405}{900}~\text{h}=\dfrac{9}{20}~\text{h}={\color{#EB7F73}\boldsymbol{27~\textbf{min}}}$.<br>La bonne réponse est la réponse <span class="rep">D</span>.
@@ -132,7 +133,7 @@ $75~\text{cm}^3 = 75\div 1\,000~\text{dm}^3 = {\color{#EB7F73}\boldsymbol{0{,}07
 ---Q---
 L'an passé, parmi les $36$ élèves de terminale STMG, $18$ ont obtenu une place en BTS ou en IUT.<br>Calculer la proportion d'élèves de cette classe qui ont obtenu une place en BTS ou en IUT.<br>Exprimer le résultat sous la forme d'un pourcentage arrondi à l'unité près.
 ---CORR---
-La population de référence est celle des élèves de Terminale STMG. On note $N=36$ son effectif.<br>La sous-population étudiée est celle des bacheliers qui ont obtenu une place en BTS ou en IUT. On note $n=18$ son effectif.<br>$p=\dfrac{n}{N}=\dfrac{18}{36}\approx0{,}5$<br>La proportion d'élèves qui ont obtenu une place en BTS ou en IUT dans cette classe est $p\approx{\color{#EB7F73}\boldsymbol{50\%}}$.
+La population de référence est celle des élèves de Terminale STMG. On note $N=36$ son effectif.<br>La sous-population étudiée est celle des bacheliers qui ont obtenu une place en BTS ou en IUT. On note $n=18$ son effectif.<br>$p=\dfrac{n}{N}=\dfrac{18}{36}=0{,}5$<br>La proportion d'élèves qui ont obtenu une place en BTS ou en IUT dans cette classe est $p={\color{#EB7F73}\boldsymbol{50\%}}$.
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}
