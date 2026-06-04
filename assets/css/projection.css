@@ -83,7 +83,7 @@
   letter-spacing: .14em; text-transform: uppercase; color: var(--accent-2); margin-bottom: .9em; }
 
 /* Images / maths clonées */
-.proj-q img, .proj-c img { max-width: 100%; min-width: min(600px, 90%); width: auto; height: auto; display: block; margin: .6em auto; }
+.proj-q img, .proj-c img { max-width: 70%; min-width: min(300px, 70%); width: auto; height: auto; display: block; margin: .6em auto; }
 .proj-q .katex-display, .proj-c .katex-display { overflow-x: auto; overflow-y: hidden; }
 .proj-overlay .rep { color: var(--accent); font-weight: 600;
   background: color-mix(in oklab, var(--accent) 12%, transparent); padding: 1px 7px; border-radius: 4px; }
