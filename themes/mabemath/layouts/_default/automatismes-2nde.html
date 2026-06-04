@@ -19,6 +19,10 @@
 {{ if $autoIdx }}{{ with $autoIdx.Params.correction_devoir }}{{ $corrDevoir = . }}{{ end }}{{ end }}
 {{ $showDevoirCorr := in $corrDevoir $n }}
 
+{{/* ── Mode projection : feuille de style ── */}}
+{{ $proj := resources.Get "css/projection.css" | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $proj.RelPermalink }}" integrity="{{ $proj.Data.Integrity }}" crossorigin="anonymous">
+
 <div class="crumbs fade-up">
   <a href="{{ .Site.BaseURL }}">Accueil</a>
   <span class="sep">/</span>
@@ -34,7 +38,13 @@
 </div>
 
 <section class="wk-hero fade-up d1">
-  <h1>Semaine <em>{{ $n }}</em></h1>
+  <div class="wk-hero-top">
+    <h1>Semaine <em>{{ $n }}</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
   {{ if $subtitle }}<p class="wk-subtitle">{{ $subtitle }}</p>{{ end }}
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
@@ -116,4 +126,7 @@
   }
 })();
 </script>
+
+{{/* ── Mode projection : logique ── */}}
+<script src="{{ "js/projection-2nde.js" | relURL }}"></script>
 {{ end }}
