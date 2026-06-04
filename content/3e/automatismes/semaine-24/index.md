@@ -29,7 +29,7 @@ La somme des valeurs : $10+5+15+6=36$.<br>$\dfrac{36+x}{5}=10 \Rightarrow 36+x=5
 Calculer le volume exact d'une boule de $2~\text{dm}$ de rayon.
 
 ---CORR---
-$\mathcal{V}=\dfrac{4}{3} \times \pi \times R^3=\dfrac{4}{3}\times\pi\times(2~\text{dm})^3={\color{#EB7F73}\boldsymbol{\dfrac{32}{3}\pi}}~\text{dm}^3\approx{\color{#EB7F73}\boldsymbol{34}}~\text{dm}^3$
+$\mathcal{V}=\dfrac{4}{3} \times \pi \times R^3=\dfrac{4}{3}\times\pi\times(2~\text{dm})^3={\color{#EB7F73}\boldsymbol{\dfrac{32}{3}\pi}}~\text{dm}^3$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}44
@@ -77,7 +77,7 @@ Somme $= 15+12+14+10+3x = 51+3x$. Somme des coeff. $= 7$.<br>$\dfrac{51+3x}{7}=1
 ---Q---
 Calculer le volume, arrondi au $\text{m}^3$ près, d'une pyramide de hauteur $5~\text{m}$ et dont la base est un carré de $10~\text{m}$ de côté.
 ---CORR---
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times(10~\text{m})^2\times5~\text{m}\approx{\color{#EB7F73}\boldsymbol{167}}~\text{m}^3$
+$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times(10~\text{m})^2\times5~\text{m}={\color{#EB7F73}\boldsymbol{\dfrac{500}{3}}}~\text{m}^3$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4
@@ -99,7 +99,9 @@ $\widehat{FBV}$ est un angle :<br><br>A. nul &emsp; B. aigu &emsp; C. droit &ems
 <br>
 <img src="3auto_s71_q4.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-$\widehat{FBV}$ est un angle <span class="rep">obtus</span>. Un angle obtus est un angle dont la mesure est supérieure à $90°$. Réponse <span class="rep">D</span>.
+$\widehat{FBV}$ est un angle <span class="rep">obtus</span>. <br>
+Un angle obtus est un angle dont la mesure est supérieure à $90°$. <br>
+Réponse <span class="rep">D</span>.
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}

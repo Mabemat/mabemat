@@ -25,7 +25,7 @@ La somme des $4$ valeurs est : $6+15+8+15=44$.<br>La moyenne est donc $\dfrac{44
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-$1~\text{dm}^2 = \ldots\ldots\ldots~\text{m}^2$
+$1~\text{dm}^2 = \ldots~\text{m}^2$
 ---CORR---
 $1~\text{dm}^2$ est égal à un centième de $1~\text{m}^2$.<br>$1~\text{dm}^2 = {\color{#EB7F73}\boldsymbol{\dfrac{1}{100}}}~\text{m}^2 = {\color{#EB7F73}\boldsymbol{0{,}01}}~\text{m}^2$
 {{< /auto3-exo >}}
@@ -75,7 +75,7 @@ $\dfrac{2}{4}- \Big(\dfrac{4}{16} + \dfrac{3}{4}\Big)=\dfrac{2}{4} - \Big(\dfrac
 ---Q---
 Dans le triangle $STU$ rectangle en $S$, $ST=8~\text{mm}$ et $\widehat{STU}=42^\circ$.<br>Donner le calcul permettant d'obtenir $TU$.
 ---CORR---
-$\cos\left(\widehat{STU}\right)=\dfrac{ST}{TU}$, donc $\cos(42^\circ)=\dfrac{8}{TU}$.<br>$TU=\dfrac{8}{\cos(42^\circ)}\approx{\color{#EB7F73}\boldsymbol{10{,}8}}~\text{mm}$.
+$\cos\left(\widehat{STU}\right)=\dfrac{ST}{TU}$, donc : ${\color{#EB7F73}\boldsymbol{\cos(42^\circ)=\dfrac{8}{TU}}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5
@@ -109,7 +109,7 @@ Effectif total : $1+8+4+4+3=20$ élèves.<br>Élèves ayant la note 4 : $8$.<br>
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-Donner la formule de l'aire d'un rectangle de longueur $L$ et la largeur $l$.<br>On peut alors donner l'aire du rectangle ainsi : $\ldots\ldots\ldots$ $\ldots\ldots\ldots$ $\ldots\ldots\ldots$
+Donner la formule de l'aire d'un rectangle de longueur $L$ et la largeur $l$.
 ---CORR---
 Aire d'un rectangle $= {\color{#EB7F73}\boldsymbol{L \times l}}$
 {{< /auto3-exo >}}
