@@ -200,80 +200,24 @@ Sur $160$ logements dans un quartier, on distingue trois groupes : appartements 
 
 
 ---CORR---
-Les effectifs des $3$ groupes sont respectivement $80$, $40$ et $160-80-40=40$.
+Les effectifs des 3 groupes sont respectivement $80$, $40$ et $160-80-40=40$.
 
 $$
 \begin{array}{|c|c|c|c|}
 \hline
-\cellcolor{lightgray} \text{Groupe} & \text{appartements} & \text{maisons individuelles} & \text{autres types}\\\\
+\text{Groupe} & \text{appartements} & \text{maisons} & \text{autres}\\\\
 \hline
-\cellcolor{lightgray} \text{Effectif} & 80 & 40 & 40\\\\
+\text{Effectif} & 80 & 40 & 40\\\\
 \hline
-\cellcolor{lightgray} \text{Part} & \dfrac{80}{160}=\dfrac{1}{2} & \dfrac{40}{160}=\dfrac{1}{4} & \dfrac{40}{160}=\dfrac{1}{4}\\\\
+\text{Part} & \dfrac{1}{2} & \dfrac{1}{4} & \dfrac{1}{4}\\\\
 \hline
-\cellcolor{lightgray} \text{Angle} & \ang{180} & \ang{90} & \ang{90}\\\\
+\text{Angle} & 180° & 90° & 90°\\\\
 \hline
 \end{array}
 $$
 
-Le bon diagramme est le seul avec : deux angles droits égaux (de $\ang{90}$) et un angle plat (de $\ang{180}$).
-
-$\boldsymbol{\cancel{\textbf{A}}}$.
-<img src="corr_s01_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
-\qquad $\boldsymbol{\cancel{\textbf{B}}}$. \begin{tikzpicture}[baseline,scale = 0.4]
-
-\tikzset{
-point/.style={
-thick,
-draw,
-cross out,
-inner sep=0pt,
-minimum width=5pt,
-minimum height=5pt,
-},
-\clip (-0.5,-0.5) rectangle (7,6);
-\draw[color={black},fill opacity = 1.1] (3,3) circle (3);
-\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0.5729490168751581,1.2366442431225804) -- (3,3) -- (6,3) arc (0:216:3) ;
-\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (3.927050983124842,0.1468304511145393) -- (3,3) -- (0.5729490168751576,1.2366442431225808) arc (-144:-72:3) ;
-\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {brown}, pattern = dots] (6,2.999999999999999) -- (3,3) -- (3.9270509831248415,0.14683045111453907) arc (-72:0:3) ;
-
-\end{tikzpicture}\qquad C. \begin{tikzpicture}[baseline,scale = 0.4]
-
-\tikzset{
-point/.style={
-thick,
-draw,
-cross out,
-inner sep=0pt,
-minimum width=5pt,
-minimum height=5pt,
-},
-\clip (-0.5,-0.5) rectangle (7,6);
-\draw[color={black},fill opacity = 1.1] (3,3) circle (3);
-\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0,3.0000000000000004) -- (3,3) -- (6,3) arc (0:180:3) ;
-\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (2.9999999999999996,2.719262146893782e-32) -- (3,3) -- (0,3.0000000000000004) arc (180:270:3) ;
-\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {brown}, pattern = dots] (6,2.9999999999999996) -- (3,3) -- (2.9999999999999996,0) arc (-90:0:3) ;
-
-\end{tikzpicture}\qquad $\boldsymbol{\cancel{\textbf{D}}}$. \begin{tikzpicture}[baseline,scale = 0.4]
-
-\tikzset{
-point/.style={
-thick,
-draw,
-cross out,
-inner sep=0pt,
-minimum width=5pt,
-minimum height=5pt,
-},
-\clip (-0.5,-0.5) rectangle (7,6);
-\draw[color={black},fill opacity = 1.1] (3,3) circle (3);
-\draw  [color={black},preaction={fill,color = {GreenYellow},opacity = 0.7},pattern color = {blue}, pattern = {Lines[angle=45, distance=10pt, line width=0.3pt]}] (0.8786796564403576,5.121320343559643) -- (3,3) -- (6,3) arc (0:135:3) ;
-\draw  [color={black},preaction={fill,color = {brown},opacity = 0.7},pattern color = {GreenYellow}, pattern = {Lines[angle=0, distance=10pt, line width=0.3pt]}] (3,0) -- (3,3) -- (0.8786796564403576,5.121320343559643) arc (135:270:3) ;
-\draw  [color={black},preaction={fill,color = {LightSlateBlue},opacity = 0.7},pattern color = {brown}, pattern = dots] (6,2.9999999999999996) -- (3,3) -- (2.9999999999999996,0) arc (-90:0:3) ;
-
-\end{tikzpicture}\qquad <br>
+Le bon diagramme a un secteur de $180°$ (appartements) et deux secteurs de $90°$ (maisons et autres).<br>
 La bonne réponse est la réponse <span class="rep">C</span>.
-
 {{< /qcm >}}
 
 {{< qcm correct="0" type="auto" >}}
