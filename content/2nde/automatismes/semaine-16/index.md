@@ -26,13 +26,13 @@ $S=\left]-\infty\,;\,-\dfrac{11}{7}\right]\cup\left[1\,;\,+\infty\right[$
 {{< auto2-exo numero="02" >}}
 Factoriser l'expression : $36x^2-24x+4$
 ---CORR---
-On met $4$ en facteur : $4(9x^2-6x+1)=4\bigl((3x)^2-2\times 3x\times 1+1^2\bigr)=\mathbf{4(3x-1)^2}$
+On met $4$ en facteur : $4(9x^2-6x+1)=4\bigl((3x)^2-2\times 3x\times 1+1^2\bigr)={\color{#4A5D7A}4(3x-1)^2}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
 L'épaisseur d'une feuille de papier est $6\times 10^{-2}$ mm. Quelle est l'épaisseur d'une pile de $1\,000$ feuilles ?
 ---CORR---
-$6\times 10^{-2}\times 1\,000=6\times 10^{-2}\times 10^3=6\times 10^1=\mathbf{60\text{ mm}}$
+$6\times 10^{-2}\times 1\,000=6\times 10^{-2}\times 10^3=6\times 10^1={\color{#4A5D7A}60\text{ mm}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -40,7 +40,7 @@ Soit la fonction $h$ définie par $h(x)=2x-17$. Déterminer le plus petit entier
 ---CORR---
 $2n-17>0 \iff n>\dfrac{17}{2}=8{,}5$.
 
-Le plus petit entier naturel vérifiant cette condition est $\mathbf{n=9}$.
+Le plus petit entier naturel vérifiant cette condition est ${\color{#4A5D7A}n=9}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -72,7 +72,7 @@ $S=\left]-\infty\,;\,-3\right[\cup\left]\dfrac{4}{9}\,;\,+\infty\right[$
 {{< auto2-exo numero="02" >}}
 Factoriser l'expression : $64x^2-80x+25$
 ---CORR---
-$(8x)^2-2\times 8x\times 5+5^2=\mathbf{(8x-5)^2}$
+$(8x)^2-2\times 8x\times 5+5^2={\color{#4A5D7A}(8x-5)^2}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -80,7 +80,7 @@ L'épaisseur de $10$ feuilles de papier est $60\times 10^{-3}$ cm. Quelle est l'
 ---CORR---
 L'épaisseur d'une feuille est $\dfrac{60\times 10^{-3}}{10}=6\times 10^{-3}$ cm.
 
-Pour $1\,000$ feuilles : $6\times 10^{-3}\times 1\,000=6\times 10^0=\mathbf{6\text{ cm}}$
+Pour $1\,000$ feuilles : $6\times 10^{-3}\times 1\,000=6\times 10^0={\color{#4A5D7A}6\text{ cm}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -88,7 +88,7 @@ Soit la fonction $h$ définie par $h(x)=5x-38$. Déterminer le plus petit entier
 ---CORR---
 $5n-38>0 \iff n>\dfrac{38}{5}=7{,}6$.
 
-Le plus petit entier naturel vérifiant cette condition est $\mathbf{n=8}$.
+Le plus petit entier naturel vérifiant cette condition est ${\color{#4A5D7A}n=8}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

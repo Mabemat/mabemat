@@ -1850,6 +1850,8 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   display: none;
 }
 .auto1re-corr.open { display: block; animation: fadeUp .35s var(--ease-out) both; }
+/* Réponse finale des automatismes 2nde — couleur uniforme, sans gras */
+.auto1re-corr strong { color: #4A5D7A; font-weight: normal; }
 .auto1re-corr-label {
   font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em;
   text-transform: uppercase; color: var(--accent); margin-bottom: 10px; display: block;

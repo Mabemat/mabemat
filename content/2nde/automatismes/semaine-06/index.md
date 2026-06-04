@@ -14,13 +14,13 @@ L'équation $f(x)=0$ représentée graphiquement a combien de solutions ?
 ---CORR---
 La droite $y=0$ (l'axe des abscisses) coupe **1 fois** la courbe.
 
-L'équation $f(x)=0$ admet donc $\mathbf{1}$ **solution**.
+L'équation $f(x)=0$ admet donc ${\color{#4A5D7A}1}$ **solution**.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
 On considère la fonction $f$ définie par $f(x)=1-2x^2$. L'image de $-3$ par $f$ est :
 ---CORR---
-$f(-3)=1-2\times(-3)^2=1-2\times 9=1-18=\mathbf{-17}$
+$f(-3)=1-2\times(-3)^2=1-2\times 9=1-18={\color{#4A5D7A}-17}$
 
 Mentalement : $(-3)^2=9$, puis $2\times 9=18$, puis $1-18=-17$.
 {{< /auto2-exo >}}
@@ -30,7 +30,7 @@ Soit $u$ la fonction définie par $u(x)=-3x-10$. À quelle expression est égal 
 ---CORR---
 On remplace $x$ par $x+3$ :
 
-$u(x+3)=-3(x+3)-10=-3x-9-10=\mathbf{-3x-19}$
+$u(x+3)=-3(x+3)-10=-3x-9-10={\color{#4A5D7A}-3x-19}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -56,7 +56,7 @@ La bonne réponse est **B**.
 {{< auto2-exo numero="06" >}}
 On considère $A=\dfrac{1}{1-\dfrac{3}{5}}$. Calculer $A$.
 ---CORR---
-$A=\dfrac{1}{1-\dfrac{3}{5}}=\dfrac{1}{\dfrac{5}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfrac{2}{5}}=1\times\dfrac{5}{2}=\mathbf{\dfrac{5}{2}}$
+$A=\dfrac{1}{1-\dfrac{3}{5}}=\dfrac{1}{\dfrac{5}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfrac{2}{5}}=1\times\dfrac{5}{2}={\color{#4A5D7A}\dfrac{5}{2}}$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -70,13 +70,13 @@ L'équation $f(x)=-1$ représentée graphiquement a combien de solutions ?
 ---CORR---
 La droite $y=-1$ coupe **3 fois** la courbe.
 
-L'équation $f(x)=-1$ admet donc $\mathbf{3}$ **solutions**.
+L'équation $f(x)=-1$ admet donc ${\color{#4A5D7A}3}$ **solutions**.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
 On considère la fonction $f$ définie par $f(x)=(-2x+2)^2$. L'image de $-3$ par $f$ est :
 ---CORR---
-$f(-3)=(-2\times(-3)+2)^2=(6+2)^2=8^2=\mathbf{64}$
+$f(-3)=(-2\times(-3)+2)^2=(6+2)^2=8^2={\color{#4A5D7A}64}$
 
 Mentalement : calculer d'abord l'intérieur de la parenthèse, puis élever au carré.
 {{< /auto2-exo >}}
@@ -84,7 +84,7 @@ Mentalement : calculer d'abord l'intérieur de la parenthèse, puis élever au c
 {{< auto2-exo numero="03" >}}
 Soit $t$ la fonction définie par $t(x)=-3x-6$. À quelle expression est égal $t(x+1)$ ?
 ---CORR---
-$t(x+1)=-3(x+1)-6=-3x-3-6=\mathbf{-3x-9}$
+$t(x+1)=-3(x+1)-6=-3x-3-6={\color{#4A5D7A}-3x-9}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

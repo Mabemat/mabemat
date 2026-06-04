@@ -32,13 +32,13 @@ $f$ est décroissante ($a=-4<0$) :
 {{< auto2-exo numero="03" >}}
 $\dfrac{9^7}{9^2}=$
 ---CORR---
-$\dfrac{9^7}{9^2}=9^{7-2}=\mathbf{9^5}$
+$\dfrac{9^7}{9^2}=9^{7-2}={\color{#4A5D7A}9^5}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
 Convertir $66$ minutes en heure décimale.
 ---CORR---
-$66\text{ min}=60\text{ min}+6\text{ min}=1\text{ h}+\dfrac{6}{60}\text{ h}=1\text{ h}+\dfrac{1}{10}\text{ h}=\mathbf{1{,}1\text{ h}}$
+$66\text{ min}=60\text{ min}+6\text{ min}=1\text{ h}+\dfrac{6}{60}\text{ h}=1\text{ h}+\dfrac{1}{10}\text{ h}={\color{#4A5D7A}1{,}1\text{ h}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -80,13 +80,13 @@ $f$ est décroissante ($a=-3<0$) :
 {{< auto2-exo numero="03" >}}
 $(6^6)^6=$
 ---CORR---
-$(6^6)^6=6^{6\times 6}=\mathbf{6^{36}}$
+$(6^6)^6=6^{6\times 6}={\color{#4A5D7A}6^{36}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
 Convertir $102$ minutes en heure décimale.
 ---CORR---
-$102\text{ min}=60\text{ min}+42\text{ min}=1\text{ h}+\dfrac{42}{60}\text{ h}=1\text{ h}+\dfrac{7}{10}\text{ h}=\mathbf{1{,}7\text{ h}}$
+$102\text{ min}=60\text{ min}+42\text{ min}=1\text{ h}+\dfrac{42}{60}\text{ h}=1\text{ h}+\dfrac{7}{10}\text{ h}={\color{#4A5D7A}1{,}7\text{ h}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

@@ -14,7 +14,7 @@ Diminuer de $20\,\%$ : coefficient $0{,}8$. Augmenter de $20\,\%$ : coefficient 
 
 Global : $0{,}8\times 1{,}2=0{,}96=1-0{,}04$.
 
-Le taux d'évolution global est $\mathbf{-4\,\%}$.
+Le taux d'évolution global est ${\color{#4A5D7A}-4\,\%}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -24,7 +24,7 @@ A. $400\,\%$ $\quad$ B. $300\,\%$ $\quad$ C. $75\,\%$ $\quad$ D. $85\,\%$
 ---CORR---
 Coefficient multiplicateur de la baisse : $1-0{,}75=0{,}25$.
 
-Coefficient réciproque : $\dfrac{1}{0{,}25}=4$, soit un taux de $4-1=3=\mathbf{300\,\%}$.
+Coefficient réciproque : $\dfrac{1}{0{,}25}=4$, soit un taux de $4-1=3={\color{#4A5D7A}300\,\%}$.
 
 La bonne réponse est **B**.
 {{< /auto2-exo >}}
@@ -60,7 +60,7 @@ $-8x+9x=-3+28$
 
 $x=25$
 
-La solution est $\mathbf{x=25}$.
+La solution est ${\color{#4A5D7A}x=25}$.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -74,7 +74,7 @@ Diminuer de $80\,\%$ : coefficient $0{,}2$. Augmenter de $10\,\%$ : coefficient 
 
 Global : $0{,}2\times 1{,}1=0{,}22=1-0{,}78$.
 
-Le taux d'évolution global est $\mathbf{-78\,\%}$.
+Le taux d'évolution global est ${\color{#4A5D7A}-78\,\%}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -84,7 +84,7 @@ A. $50\,\%$ $\quad$ B. $60\,\%$ $\quad$ C. $200\,\%$ $\quad$ D. $100\,\%$
 ---CORR---
 Coefficient multiplicateur de la baisse : $0{,}5$.
 
-Coefficient réciproque : $\dfrac{1}{0{,}5}=2$, soit un taux de $2-1=1=\mathbf{100\,\%}$.
+Coefficient réciproque : $\dfrac{1}{0{,}5}=2$, soit un taux de $2-1=1={\color{#4A5D7A}100\,\%}$.
 
 La bonne réponse est **D**.
 {{< /auto2-exo >}}
@@ -118,7 +118,7 @@ $5x=-13$
 
 $x=-\dfrac{13}{5}$
 
-La solution est $\mathbf{x=-\dfrac{13}{5}}$.
+La solution est ${\color{#4A5D7A}x=-\dfrac{13}{5}}$.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -29,7 +29,7 @@ $S=\left]-\dfrac{3}{4}\,;\,\dfrac{4}{13}\right[\cup\left]\dfrac{13}{12}\,;\,+\in
 {{< auto2-exo numero="02" >}}
 Convertir $2{,}8$ heures en minutes.
 ---CORR---
-$2{,}8\text{ h}=2\text{ h}+0{,}8\text{ h}=120\text{ min}+\dfrac{4}{5}\times 60\text{ min}=120+48=\mathbf{168\text{ min}}$
+$2{,}8\text{ h}=2\text{ h}+0{,}8\text{ h}=120\text{ min}+\dfrac{4}{5}\times 60\text{ min}=120+48={\color{#4A5D7A}168\text{ min}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -59,7 +59,7 @@ Système : $\begin{cases}a+6p=40\\a+4p=30\end{cases}$
 
 Par soustraction : $2p=10 \implies p=5$€.
 
-Donc $a=40-6\times 5=\mathbf{10\text{€}}$.
+Donc $a=40-6\times 5={\color{#4A5D7A}10\text{€}}$.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -88,7 +88,7 @@ $S=\left]-2\,;\,\dfrac{5}{7}\right[\cup\left]\dfrac{5}{4}\,;\,+\infty\right[$
 {{< auto2-exo numero="02" >}}
 Convertir $0{,}25$ heures en minutes.
 ---CORR---
-$0{,}25\text{ h}=\dfrac{1}{4}\text{ h}=\dfrac{60}{4}\text{ min}=\mathbf{15\text{ min}}$
+$0{,}25\text{ h}=\dfrac{1}{4}\text{ h}=\dfrac{60}{4}\text{ min}={\color{#4A5D7A}15\text{ min}}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -118,7 +118,7 @@ Système : $\begin{cases}a+6p=44\\a+3p=26\end{cases}$
 
 Par soustraction : $3p=18 \implies p=6$€.
 
-Donc $a=44-6\times 6=\mathbf{8\text{€}}$.
+Donc $a=44-6\times 6={\color{#4A5D7A}8\text{€}}$.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

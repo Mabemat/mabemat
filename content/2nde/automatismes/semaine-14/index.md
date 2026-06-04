@@ -30,7 +30,7 @@ Déterminer les antécédents éventuels de $0$ par la fonction $f$ :
 ---CORR---
 On part de $0$ sur l'axe des ordonnées et on lit les antécédents sur l'axe des abscisses.
 
-On trouve deux antécédents : $\mathbf{-5}$ et $\mathbf{-3}$.
+On trouve deux antécédents : ${\color{#4A5D7A}-5}$ et ${\color{#4A5D7A}-3}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -38,7 +38,7 @@ Factoriser : $4x+1+4x^2$
 ---CORR---
 On reconnaît l'identité remarquable $(a+b)^2=a^2+2ab+b^2$ avec $a=2x$ et $b=1$ :
 
-$4x^2+4x+1=\mathbf{(2x+1)^2}$
+$4x^2+4x+1={\color{#4A5D7A}(2x+1)^2}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -82,7 +82,7 @@ Déterminer les antécédents éventuels de $2$ par la fonction $f$ :
 ---CORR---
 On part de $2$ sur l'axe des ordonnées et on lit les antécédents sur l'axe des abscisses.
 
-On trouve deux antécédents : $\mathbf{3}$ et $\mathbf{5}$.
+On trouve deux antécédents : ${\color{#4A5D7A}3}$ et ${\color{#4A5D7A}5}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -90,7 +90,7 @@ Factoriser : $-4x+4+x^2$
 ---CORR---
 On reconnaît l'identité remarquable $(a-b)^2=a^2-2ab+b^2$ avec $a=x$ et $b=2$ :
 
-$x^2-4x+4=\mathbf{(x-2)^2}$
+$x^2-4x+4={\color{#4A5D7A}(x-2)^2}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

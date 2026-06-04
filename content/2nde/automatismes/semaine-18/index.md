@@ -52,13 +52,13 @@ Comme $5{,}78 < 5{,}8$, on a $5{,}78^2 < 5{,}8^2$, donc $(-5{,}78)^2 < (-5{,}8)^
 {{< auto2-exo numero="04" >}}
 Soit $x$ un réel non nul. Simplifier $\dfrac{35x^5}{\dfrac{7}{x^2}}$.
 ---CORR---
-$$\dfrac{35x^5}{\dfrac{7}{x^2}}=35x^5\times\dfrac{x^2}{7}=\dfrac{35x^7}{7}=\mathbf{5x^7}$$
+$$\dfrac{35x^5}{\dfrac{7}{x^2}}=35x^5\times\dfrac{x^2}{7}=\dfrac{35x^7}{7}={\color{#4A5D7A}5x^7}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
 Calculer $A=\dfrac{286}{100}+\dfrac{29}{1\,000}$.
 ---CORR---
-$A=2{,}86+0{,}029=\mathbf{2{,}889}$
+$A=2{,}86+0{,}029={\color{#4A5D7A}2{,}889}$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -110,13 +110,13 @@ Comme $20{,}1>20{,}05$, on a $(20{,}1)^2>(20{,}05)^2$.
 {{< auto2-exo numero="04" >}}
 Soit $x$ un réel non nul. Simplifier $\dfrac{8x^3}{\dfrac{2}{x^5}}$.
 ---CORR---
-$$\dfrac{8x^3}{\dfrac{2}{x^5}}=8x^3\times\dfrac{x^5}{2}=\dfrac{8x^8}{2}=\mathbf{4x^8}$$
+$$\dfrac{8x^3}{\dfrac{2}{x^5}}=8x^3\times\dfrac{x^5}{2}=\dfrac{8x^8}{2}={\color{#4A5D7A}4x^8}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
 Calculer $A=\dfrac{7}{10}+\dfrac{45}{100}$.
 ---CORR---
-$A=0{,}7+0{,}45=\mathbf{1{,}15}$
+$A=0{,}7+0{,}45={\color{#4A5D7A}1{,}15}$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

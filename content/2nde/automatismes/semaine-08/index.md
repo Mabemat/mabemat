@@ -12,13 +12,13 @@ Le taux d'évolution associé à un coefficient multiplicateur de $0{,}75$ est :
 ---CORR---
 Multiplier par $0{,}75 = 1 - 0{,}25$ revient à diminuer de $25\,\%$.
 
-Le taux d'évolution est $\mathbf{-25\,\%}$.
+Le taux d'évolution est ${\color{#4A5D7A}-25\,\%}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
 Le prix d'un tee-shirt est $50$€. Il baisse de $20\,\%$. Son nouveau prix est :
 ---CORR---
-$50\times(1-0{,}2)=50\times 0{,}8=\mathbf{40}$ €.
+$50\times(1-0{,}2)=50\times 0{,}8={\color{#4A5D7A}40}$ €.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -34,7 +34,7 @@ La bonne réponse est **D**.
 {{< auto2-exo numero="04" >}}
 Le prix d'un sweat est passé de $40$€ à $32$€. Il a baissé de :
 ---CORR---
-La baisse est de $8$€ sur $40$€ : $\dfrac{8}{40}=0{,}2=\mathbf{20\,\%}$.
+La baisse est de $8$€ sur $40$€ : $\dfrac{8}{40}=0{,}2={\color{#4A5D7A}20\,\%}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -52,7 +52,7 @@ Le prix d'un article connaît deux augmentations successives de $10\,\%$. Le tau
 ---CORR---
 Coefficient multiplicateur global : $1{,}1\times 1{,}1=1{,}21$.
 
-Taux global : $1{,}21-1=0{,}21=\mathbf{+21\,\%}$.
+Taux global : $1{,}21-1=0{,}21={\color{#4A5D7A}+21\,\%}$.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -64,13 +64,13 @@ Le taux d'évolution associé à un coefficient multiplicateur de $1{,}15$ est :
 ---CORR---
 Multiplier par $1{,}15 = 1 + 0{,}15$ revient à augmenter de $15\,\%$.
 
-Le taux d'évolution est $\mathbf{+15\,\%}$.
+Le taux d'évolution est ${\color{#4A5D7A}+15\,\%}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
 Le prix d'un jean est $80$€. Il augmente de $15\,\%$. Son nouveau prix est :
 ---CORR---
-$80\times 1{,}15=\mathbf{92}$ €.
+$80\times 1{,}15={\color{#4A5D7A}92}$ €.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -86,7 +86,7 @@ Les réponses **C** et **D** sont équivalentes (toutes les deux correctes).
 {{< auto2-exo numero="04" >}}
 Le prix d'une veste est passé de $60$€ à $75$€. Il a augmenté de :
 ---CORR---
-La hausse est de $15$€ sur $60$€ : $\dfrac{15}{60}=0{,}25=\mathbf{25\,\%}$.
+La hausse est de $15$€ sur $60$€ : $\dfrac{15}{60}=0{,}25={\color{#4A5D7A}25\,\%}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -104,7 +104,7 @@ Le prix d'un article connaît deux baisses successives de $15\,\%$. Le taux d'é
 ---CORR---
 Coefficient multiplicateur global : $0{,}85\times 0{,}85=0{,}7225$.
 
-Taux global : $0{,}7225-1=-0{,}2775=\mathbf{-27{,}75\,\%}$.
+Taux global : $0{,}7225-1=-0{,}2775={\color{#4A5D7A}-27{,}75\,\%}$.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -14,7 +14,7 @@ $a=\dfrac{f(9)-f(8)}{9-8}=\dfrac{-27-(-25)}{1}=-2$
 
 $f(9)=-2\times 9+b=-18+b=-27 \implies b=-9$
 
-Donc $f(x)=\mathbf{-2x-9}$.
+Donc $f(x)={\color{#4A5D7A}-2x-9}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -22,9 +22,9 @@ a. Donner une écriture simplifiée de $I=\,]11\,;\,25]\cup[33\,;\,43]$
 
 b. Donner une écriture simplifiée de $I=[12\,;\,28]\cap[14\,;\,17]$
 ---CORR---
-a. Les deux intervalles sont disjoints : $I=\mathbf{]11\,;\,25]\cup[33\,;\,43]}$ (ne se simplifie pas).
+a. Les deux intervalles sont disjoints : $I={\color{#4A5D7A}]11\,;\,25]\cup[33\,;\,43]}$ (ne se simplifie pas).
 
-b. $[14\,;\,17]\subset[12\,;\,28]$ donc $I=\mathbf{[14\,;\,17]}$.
+b. $[14\,;\,17]\subset[12\,;\,28]$ donc $I={\color{#4A5D7A}[14\,;\,17]}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -48,7 +48,7 @@ $A=7y\times(-3y)+7y\times(-5)+(-6)\times(-3y)+(-6)\times(-5)$
 
 $A=-21y^2-35y+18y+30$
 
-$A=\mathbf{-21y^2-17y+30}$
+$A={\color{#4A5D7A}-21y^2-17y+30}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -56,9 +56,9 @@ a. Le chiffre d'affaires d'une entreprise est passé de $270\,000$€ en 2021 à
 
 b. Après une diminution de $6\,\%$, mon vélo électrique coûte $922{,}14$€. Calculer son prix avant la diminution.
 ---CORR---
-a. $t=\dfrac{264\,600-270\,000}{270\,000}=-0{,}02=\mathbf{-2\,\%}$
+a. $t=\dfrac{264\,600-270\,000}{270\,000}=-0{,}02={\color{#4A5D7A}-2\,\%}$
 
-b. Diminuer de $6\,\%$ revient à multiplier par $0{,}94$. Prix initial : $\dfrac{922{,}14}{0{,}94}=\mathbf{981}$€.
+b. Diminuer de $6\,\%$ revient à multiplier par $0{,}94$. Prix initial : $\dfrac{922{,}14}{0{,}94}={\color{#4A5D7A}981}$€.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -72,7 +72,7 @@ $a=\dfrac{f(9)-f(7)}{9-7}=\dfrac{32-26}{2}=3$
 
 $f(9)=3\times 9+b=27+b=32 \implies b=5$
 
-Donc $f(x)=\mathbf{3x+5}$.
+Donc $f(x)={\color{#4A5D7A}3x+5}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -80,9 +80,9 @@ a. Donner une écriture simplifiée de $I=\,]1\,;\,27]\cup\,]6\,;\,13]$
 
 b. Donner une écriture simplifiée de $I=\,]-\infty\,;\,22]\cap\,]31\,;\,40]$
 ---CORR---
-a. $]6\,;\,13]\subset\,]1\,;\,27]$ donc $I=\mathbf{]1\,;\,27]}$.
+a. $]6\,;\,13]\subset\,]1\,;\,27]$ donc $I={\color{#4A5D7A}]1\,;\,27]}$.
 
-b. Les deux intervalles sont disjoints : $I=\mathbf{\emptyset}$.
+b. Les deux intervalles sont disjoints : $I={\color{#4A5D7A}\emptyset}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -106,7 +106,7 @@ $A=9k\times(-7k)+9k\times(-3)+4\times(-7k)+4\times(-3)$
 
 $A=-63k^2-27k-28k-12$
 
-$A=\mathbf{-63k^2-55k-12}$
+$A={\color{#4A5D7A}-63k^2-55k-12}$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -114,9 +114,9 @@ a. En 14 ans, la population d'une ville est passée de $52\,000$ à $43\,680$ ha
 
 b. Après une augmentation de $60\,\%$, un article coûte $15{,}84$€. Calculer son prix initial.
 ---CORR---
-a. $t=\dfrac{43\,680-52\,000}{52\,000}=-0{,}16=\mathbf{-16\,\%}$
+a. $t=\dfrac{43\,680-52\,000}{52\,000}=-0{,}16={\color{#4A5D7A}-16\,\%}$
 
-b. Augmenter de $60\,\%$ revient à multiplier par $1{,}6$. Prix initial : $\dfrac{15{,}84}{1{,}6}=\mathbf{9{,}90}$€.
+b. Augmenter de $60\,\%$ revient à multiplier par $1{,}6$. Prix initial : $\dfrac{15{,}84}{1{,}6}={\color{#4A5D7A}9{,}90}$€.
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

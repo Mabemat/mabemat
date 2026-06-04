@@ -18,7 +18,7 @@ $$A = \dfrac{24c^2}{35} - \dfrac{24c}{7} - \dfrac{8c}{5} + 8 - \dfrac{4c^2}{49} 
 
 On regroupe les termes de même degré :
 
-$$\boxed{A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$
+$${\color{#4A5D7A}A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -28,7 +28,7 @@ $$\dots \leqslant 84{,}074 \leqslant \dots$$
 ---CORR---
 Comme $10^1 = 10$ et $10^2 = 100$, et que $10 \leqslant 84{,}074 \leqslant 100$ :
 
-$$\boxed{10^1 \leqslant 84{,}074 \leqslant 10^2}$$
+$${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -40,7 +40,7 @@ $\overrightarrow{AB} = \vec{u}$ signifie :
 
 $$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x_B = 7 \\ y_B = -7\end{cases}$$
 
-$$\boxed{B(7\,;\,-7)}$$
+$${\color{#4A5D7A}B(7\,;\,-7)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -56,7 +56,7 @@ Puisque $f(15) = 60$ :
 
 $$a = \dfrac{60}{15} = 4$$
 
-$$\boxed{f(x) = 4x}$$
+$${\color{#4A5D7A}f(x) = 4x}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -66,11 +66,11 @@ $$\boxed{f(x) = 4x}$$
 ---CORR---
 **a)** On cherche le nombre dont le cube est $125$. Comme $5^3 = 125$ :
 
-$$\boxed{S = \{5\}}$$
+$${\color{#4A5D7A}S = \{5\}}$$
 
 **b)** On reconnaît une équation $x^2 = k$ avec $k = 16 > 0$, donc deux solutions $\pm\sqrt{16}$ :
 
-$$\boxed{S = \{-4\,;\,4\}}$$
+$${\color{#4A5D7A}S = \{-4\,;\,4\}}$$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -90,7 +90,7 @@ $$\left(\dfrac{4}{7}y+3\right)^2 = \dfrac{16}{49}y^2 + \dfrac{24}{7}y + 9$$
 
 $$A = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16 - \dfrac{16}{49}y^2 - \dfrac{24}{7}y - 9$$
 
-$$\boxed{A = \dfrac{20}{49}y^2 + \dfrac{24}{7}y + 7}$$
+$${\color{#4A5D7A}A = \dfrac{20}{49}y^2 + \dfrac{24}{7}y + 7}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -100,7 +100,7 @@ $$\dots \leqslant 0{,}009\,4 \leqslant \dots$$
 ---CORR---
 Comme $10^{-3} = 0{,}001$ et $10^{-2} = 0{,}01$, et que $0{,}001 \leqslant 0{,}0094 \leqslant 0{,}01$ :
 
-$$\boxed{10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$
+$${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -112,7 +112,7 @@ $\overrightarrow{BA} = \vec{u}$ signifie :
 
 $$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_B = 14 \\ y_B = -2\end{cases}$$
 
-$$\boxed{B(14\,;\,-2)}$$
+$${\color{#4A5D7A}B(14\,;\,-2)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -128,7 +128,7 @@ Donc $f(x) = -2x + 10$.
 
 Antécédent de $-2$ : $-2x + 10 = -2 \implies -2x = -12 \implies x = 6$.
 
-$$\boxed{x = 6}$$
+$${\color{#4A5D7A}x = 6}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -138,11 +138,11 @@ $$\boxed{x = 6}$$
 ---CORR---
 **a)** Comme $(-3)^3 = -27$ :
 
-$$\boxed{S = \{-3\}}$$
+$${\color{#4A5D7A}S = \{-3\}}$$
 
 **b)** $x^2 = 121$ avec $121 > 0$, donc deux solutions $\pm\sqrt{121}$ :
 
-$$\boxed{S = \{-11\,;\,11\}}$$
+$${\color{#4A5D7A}S = \{-11\,;\,11\}}$$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

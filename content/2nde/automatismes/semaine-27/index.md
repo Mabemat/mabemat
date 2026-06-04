@@ -16,7 +16,7 @@ On met au même dénominateur $6x$ :
 
 $$\dfrac{1}{6}-\dfrac{3x+5}{x} = \dfrac{x - 6(3x+5)}{6x} = \dfrac{x-18x-30}{6x} = \dfrac{-17x-30}{6x} = -\dfrac{17x+30}{6x}$$
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -26,7 +26,7 @@ Soit $a$ un réel non nul et $n$ un entier non nul. À quelle expression est ég
 ---CORR---
 $$\dfrac{a^n}{a^{n^2}} = a^{n-n^2} = a^{n(1-n)} = a^{-n(n-1)}$$
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -40,7 +40,7 @@ $$= [(6x+7)-(3x+5)][(6x+7)+(3x+5)] = (3x+2)(9x+12)$$
 
 On vérifie : $(3x+2)(9x+12)=27x^2+36x+18x+24=27x^2+54x+24$. ✓
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -50,7 +50,7 @@ La fonction $f$ est définie par $f(x)=1-2x^2$. L'image de $-3$ par $f$ vaut :
 ---CORR---
 $$f(-3) = 1-2\times(-3)^2 = 1-2\times9 = 1-18 = -17$$
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -64,7 +64,7 @@ $(D)$ au-dessus de $(D')$ $\iff$ $6x-8>-3x+3$ :
 
 $$9x > 11 \implies x > \dfrac{11}{9}$$
 
-$$\boxed{\textbf{C}}$$
+$${\color{#4A5D7A}\textbf{C}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
@@ -78,7 +78,7 @@ Les événements « au moins un Pile » et « aucun Pile » sont contraires :
 
 $$P(\text{au moins un Pile}) = 1 - 0{,}027 = 0{,}973$$
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -92,7 +92,7 @@ Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{2}-\dfrac{
 ---CORR---
 $$\dfrac{1}{2}-\dfrac{2x+5}{x} = \dfrac{x-2(2x+5)}{2x} = \dfrac{x-4x-10}{2x} = \dfrac{-3x-10}{2x} = -\dfrac{3x+10}{2x}$$
 
-$$\boxed{\textbf{B}}$$
+$${\color{#4A5D7A}\textbf{B}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -102,7 +102,7 @@ Soit $a$ un réel non nul et $n$ un entier non nul. À quelle expression est ég
 ---CORR---
 $$\dfrac{a^n}{a^{n^5}} = a^{n-n^5} = a^{n(1-n^4)} = a^{-n(n^4-1)}$$
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -112,7 +112,7 @@ Soit $x$ un réel. À quelle expression est égale $(7x+4)^2-(5x-1)^2$ ?
 ---CORR---
 $$= [(7x+4)-(5x-1)][(7x+4)+(5x-1)] = (2x+5)(12x+3) = 24x^2+6x+60x+15 = 24x^2+66x+15$$
 
-$$\boxed{\textbf{B}}$$
+$${\color{#4A5D7A}\textbf{B}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -122,7 +122,7 @@ La fonction $f$ est définie par $f(x)=3-2x^2$. L'image de $-5$ par $f$ vaut :
 ---CORR---
 $$f(-5) = 3-2\times(-5)^2 = 3-50 = -47$$
 
-$$\boxed{\textbf{C}}$$
+$${\color{#4A5D7A}\textbf{C}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -134,7 +134,7 @@ $(D)$ est strictement au-dessus de $(D')$ sur :
 ---CORR---
 $5x+5>8x+1 \implies -3x>-4 \implies x<\dfrac{4}{3}$
 
-$$\boxed{\textbf{B}}$$
+$${\color{#4A5D7A}\textbf{B}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
@@ -148,7 +148,7 @@ Les événements « réussir au moins une fois » et « rater tous les tirs » s
 
 $$P(\text{rater 3}) = 1-0{,}992 = 0{,}008$$
 
-$$\boxed{\textbf{D}}$$
+$${\color{#4A5D7A}\textbf{D}}$$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

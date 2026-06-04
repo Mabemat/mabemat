@@ -10,13 +10,13 @@ layout: automatismes-2nde
 {{< auto2-exo numero="01" >}}
 Karole parcourt $800\text{ m}$ en $5$ minutes. Quelle est sa vitesse moyenne en km/h ?
 ---CORR---
-En 1 heure (= $5\times 12$ minutes), elle parcourt $12\times 0{,}8\text{ km}=\mathbf{9{,}6\text{ km/h}}$.
+En 1 heure (= $5\times 12$ minutes), elle parcourt $12\times 0{,}8\text{ km}={\color{#4A5D7A}9{,}6\text{ km/h}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
 Diminuer une valeur de $10\,\%$ revient à la multiplier par :
 ---CORR---
-Le coefficient multiplicateur est $1-0{,}1=\mathbf{0{,}9}$.
+Le coefficient multiplicateur est $1-0{,}1={\color{#4A5D7A}0{,}9}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -34,7 +34,7 @@ La valeur la plus proche de $9\,\%$ de $816$ est :
 
 A. $80$ $\quad$ B. $0$ $\quad$ C. $800$ $\quad$ D. $20$
 ---CORR---
-$9\,\%\approx 10\,\%$ et $816\approx 800$, donc $9\,\%$ de $816\approx 10\,\%\times 800=\mathbf{80}$.
+$9\,\%\approx 10\,\%$ et $816\approx 800$, donc $9\,\%$ de $816\approx 10\,\%\times 800={\color{#4A5D7A}80}$.
 
 Réponse **A**.
 {{< /auto2-exo >}}
@@ -54,13 +54,13 @@ $S=\{-1\,;\,1\}$
 {{< auto2-exo numero="01" >}}
 Karole parcourt $500\text{ m}$ en $4$ minutes. Quelle est sa vitesse moyenne en km/h ?
 ---CORR---
-En 1 heure (= $4\times 15$ minutes), elle parcourt $15\times 0{,}5\text{ km}=\mathbf{7{,}5\text{ km/h}}$.
+En 1 heure (= $4\times 15$ minutes), elle parcourt $15\times 0{,}5\text{ km}={\color{#4A5D7A}7{,}5\text{ km/h}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
 Diminuer une valeur de $70\,\%$ revient à la multiplier par :
 ---CORR---
-Le coefficient multiplicateur est $1-0{,}7=\mathbf{0{,}3}$.
+Le coefficient multiplicateur est $1-0{,}7={\color{#4A5D7A}0{,}3}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -78,7 +78,7 @@ La valeur la plus proche de $39\,\%$ de $411$ est :
 
 A. $40$ $\quad$ B. $100$ $\quad$ C. $1\,600$ $\quad$ D. $160$
 ---CORR---
-$39\,\%\approx 40\,\%$ et $411\approx 400$, donc $39\,\%$ de $411\approx 40\,\%\times 400=\mathbf{160}$.
+$39\,\%\approx 40\,\%$ et $411\approx 400$, donc $39\,\%$ de $411\approx 40\,\%\times 400={\color{#4A5D7A}160}$.
 
 Réponse **D**.
 {{< /auto2-exo >}}

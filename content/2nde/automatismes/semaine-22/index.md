@@ -36,7 +36,7 @@ $7 \in [3\,;\,8]$ donc $-15 < f(7) < -14$.
 
 $f(-2)$ est compris entre $4$ et $10$, $f(7)$ est compris entre $-15$ et $-14$, donc :
 
-$$\boxed{f(-2) > f(7)}$$
+$${\color{#4A5D7A}f(-2) > f(7)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -48,7 +48,7 @@ On applique la formule de la distance :
 
 $$TU = \sqrt{(x_U - x_T)^2 + (y_U - y_T)^2} = \sqrt{(-4-10)^2 + (-3-1)^2}$$
 
-$$TU = \sqrt{196 + 16} = \sqrt{212} = \boxed{2\sqrt{53}}$$
+$$TU = \sqrt{196 + 16} = \sqrt{212} = {\color{#4A5D7A}2\sqrt{53}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -64,7 +64,7 @@ En notant $M(x\,;\,y)$ : $\overrightarrow{ML} = \binom{-2-x}{0-y}$
 
 $$\begin{cases}-2-x = 8 \\ -y = 13\end{cases} \implies \begin{cases}x = -10 \\ y = -13\end{cases}$$
 
-$$\boxed{M(-10\,;\,-13)}$$
+$${\color{#4A5D7A}M(-10\,;\,-13)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -80,7 +80,7 @@ Coefficient multiplicateur global : $CM = 0{,}4 \times 1{,}63 = 0{,}652$
 
 Taux global : $T = 0{,}652 - 1 = -0{,}348$
 
-$$\boxed{\text{Baisse globale de } 34{,}8\,\%}$$
+$${\color{#4A5D7A}\text{Baisse globale de } 34{,}8\,\%}$$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -116,7 +116,7 @@ $7 \in [6\,;\,9]$ donc $-14 < f(7) < -1$.
 
 Les deux encadrements ne permettent pas de déterminer lequel est le plus grand.
 
-$$\boxed{\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$
+$${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -126,7 +126,7 @@ Calculer la distance $ST$.
 ---CORR---
 $$ST = \sqrt{(-3-(-8))^2 + (4-(-10))^2} = \sqrt{5^2 + 14^2} = \sqrt{25 + 196}$$
 
-$$\boxed{ST = \sqrt{221}}$$
+$${\color{#4A5D7A}ST = \sqrt{221}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -142,7 +142,7 @@ En notant $V(x\,;\,y)$ : $\overrightarrow{VU} = \binom{-5-x}{-10-y}$
 
 $$\begin{cases}-5-x = -9 \\ -10-y = 11\end{cases} \implies \begin{cases}x = 4 \\ y = -21\end{cases}$$
 
-$$\boxed{V(4\,;\,-21)}$$
+$${\color{#4A5D7A}V(4\,;\,-21)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -158,7 +158,7 @@ $CM = 1{,}57 \times 0{,}99 = 1{,}554\,3$
 
 Taux global : $T = 1{,}554\,3 - 1 = 0{,}554\,3$
 
-$$\boxed{\text{Hausse globale de } 55{,}43\,\%}$$
+$${\color{#4A5D7A}\text{Hausse globale de } 55{,}43\,\%}$$
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
