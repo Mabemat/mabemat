@@ -37,7 +37,7 @@
   var panel = 0, q = 0;
   var revealed = {};
   /* ── Guard PIN ── */
-  var PIN_KEY = 'mabemat-proj-unlocked';
+  var _projUnlocked = false;
   function buildPinDialog(onSuccess) {
     var wd = document.createElement('div');
     wd.className = 'proj-pin-overlay';
@@ -58,7 +58,7 @@
 
     function attempt() {
       if (inp.value === pin) {
-        sessionStorage.setItem(PIN_KEY, '1');
+        _projUnlocked = true;
         wd.classList.remove('open');
         setTimeout(function(){ document.body.removeChild(wd); onSuccess(); }, 300);
       } else {
@@ -78,7 +78,7 @@
   }
 
   function requirePin(onSuccess) {
-    if (sessionStorage.getItem(PIN_KEY) === '1') { onSuccess(); return; }
+    if (_projUnlocked) { onSuccess(); return; }
     buildPinDialog(onSuccess);
   }
 
