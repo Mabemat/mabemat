@@ -720,7 +720,7 @@ $$B(x) = (x - 1)(x + 2).$$
         <button class="corr-btn" onclick="toggleCorr(this)">
           <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
         </button>
-        <div class="corr-box">$B(x) = (x - 1)(x + 2) = x^2 + 2x – x – 2 = x^2 + x – 2$.</div>
+        <div class="corr-box">$B(x) = (x - 1)(x + 2) = x^2 + 2x - x - 2 = x^2 + x - 2$.</div>
         
 
         
@@ -750,10 +750,10 @@ $$B(x) = (x - 1)(x + 2).$$
               <button class="corr-btn" onclick="toggleCorr(this)">
                 <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
               </button>
-              <div class="corr-box">On a : $B(x) – A(x) = x^2 + x – 2 - (3x + 1) = x^2 + x - 2 - 3x – 1 = x^2 - 2x - 3$<br>
+              <div class="corr-box">On a : $B(x) - A(x) = x^2 + x - 2 - (3x + 1) = x^2 + x - 2 - 3x - 1 = x^2 - 2x - 3$<br>
 Et $(x + 1)(x - 3) = x^2 - 3x + x - 3 = x^2 - 2x - 3$.<br>
 
-On a bien $B(x) – A(x) = (x + 1)(x - 3)$.</div>
+On a bien $B(x) - A(x) = (x + 1)(x - 3)$.</div>
               
             </div>
           </div>
@@ -767,8 +767,8 @@ On a bien $B(x) – A(x) = (x + 1)(x - 3)$.</div>
               <button class="corr-btn" onclick="toggleCorr(this)">
                 <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
               </button>
-              <div class="corr-box">On veut $B(x) = A(x)$, soit $B(x) – A(x) = 0$ ou encore $(x + 1)(x - 3) = 0$ <br>
-Soit $x + 1 = 0$ ou $x – 3 = 0$.<br>
+              <div class="corr-box">On veut $B(x) = A(x)$, soit $B(x) - A(x) = 0$ ou encore $(x + 1)(x - 3) = 0$ <br>
+Soit $x + 1 = 0$ ou $x - 3 = 0$.<br>
 
 On a donc $x = - 1$ ou $x = 3$.<br>
 
@@ -1585,7 +1585,7 @@ Nolan choisira donc la maison.</div>
   </script>
   <script>
      
-    const BUILD_TS = '1780564366';
+    const BUILD_TS = '1780653552';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

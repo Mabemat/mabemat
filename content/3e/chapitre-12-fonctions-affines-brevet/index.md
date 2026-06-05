@@ -114,21 +114,21 @@ Développer et réduire l'expression :
 	
 $$B(x) = (x - 1)(x + 2).$$
 ---CORR---
-$B(x) = (x - 1)(x + 2) = x^2 + 2x – x – 2 = x^2 + x – 2$.
+$B(x) = (x - 1)(x + 2) = x^2 + 2x - x - 2 = x^2 + x - 2$.
 ---Q---
 
 ---SUB-Q---
 Montrer que $B(x) - A(x) = (x + 1)(x - 3)$.
 ---SUB-CORR---
-On a : $B(x) – A(x) = x^2 + x – 2 - (3x + 1) = x^2 + x - 2 - 3x – 1 = x^2 - 2x - 3$<br>
+On a : $B(x) - A(x) = x^2 + x - 2 - (3x + 1) = x^2 + x - 2 - 3x - 1 = x^2 - 2x - 3$<br>
 Et $(x + 1)(x - 3) = x^2 - 3x + x - 3 = x^2 - 2x - 3$.<br>
 
-On a bien $B(x) – A(x) = (x + 1)(x - 3)$.
+On a bien $B(x) - A(x) = (x + 1)(x - 3)$.
 ---SUB-Q---
 Quels nombres doit-on choisir au départ pour que le programme 1 et le programme 2 donnent le même résultat ? Expliquer la démarche.
 ---SUB-CORR---
-On veut $B(x) = A(x)$, soit $B(x) – A(x) = 0$ ou encore $(x + 1)(x - 3) = 0$ <br>
-Soit $x + 1 = 0$ ou $x – 3 = 0$.<br>
+On veut $B(x) = A(x)$, soit $B(x) - A(x) = 0$ ou encore $(x + 1)(x - 3) = 0$ <br>
+Soit $x + 1 = 0$ ou $x - 3 = 0$.<br>
 
 On a donc $x = - 1$ ou $x = 3$.<br>
 
