@@ -171,7 +171,7 @@
     var tag = (e.target.tagName || '').toLowerCase();
     if (tag === 'input' || tag === 'textarea') return;
     if (!isOpen()) {
-      if (e.key === 'p' || e.key === 'P') { e.preventDefault(); open(); }
+      if (e.key === 'p' || e.key === 'P') { e.preventDefault(); requirePin(open); }
       return;
     }
     switch (e.key) {
