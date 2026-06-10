@@ -77,6 +77,15 @@ $x \times x + 5 = {\color{#EB7F73}\boldsymbol{x^2+5}}$
 
 {{< auto3-exo num="Exercice 4" >}}
 ---Q---
+Placer les points suivants, dans le repère de la séance 10 : $C(2\,;\,0)$ et $D(-3\,;\,1)$.
+<br>
+<img src="3auto_s14_repere_q.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+---CORR---
+<img src="3auto_s14_repere_c.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
+{{< /auto3-exo >}}
+
+{{< auto3-exo num="Exercice 5" >}}
+---Q---
 Wendy rapporte $1{,}5$ kg de coings, $0{,}7$ kg de kiwis et $2{,}7$ kg de melons.<br>Karine rapporte $3{,}6$ kg de coings, $3{,}8$ kg de kiwis, $7{,}8$ kg de melons et $5{,}5$ kg de poires.<br><br>a. Quelle est la masse totale de fruits achetés par les amis ?<br>b. Qui a rapporté le plus de fruits ?<br>c. Quel fruit a été rapporté en la plus grosse quantité ?
 <table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Amis \ fruits</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Kiwi</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Poire</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Melon</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Coing</th><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">TOTAL</th></tr>

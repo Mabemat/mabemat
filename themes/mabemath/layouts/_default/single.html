@@ -7,7 +7,7 @@
 
 {{/* ── URLs PDF avec fingerprint (cache-busting automatique) ── */}}
 {{ $coursPDF := "" }}
-{{ with .Resources.GetMatch "*glissés).pdf" }}{{ $coursPDF = (. | fingerprint "md5").RelPermalink }}{{ else }}{{ with .Resources.GetMatch "cours.pdf" }}{{ $coursPDF = (. | fingerprint "md5").RelPermalink }}{{ end }}{{ end }}
+{{ with .Resources.GetMatch "Leçon Eleve (glissés).pdf" }}{{ $coursPDF = (. | fingerprint "md5").RelPermalink }}{{ end }}
 {{ $exercicesPDF := "" }}
 {{ with .Resources.GetMatch "exercices.pdf" }}{{ $exercicesPDF = (. | fingerprint "md5").RelPermalink }}{{ end }}
 {{ $pixelartPDF := "" }}

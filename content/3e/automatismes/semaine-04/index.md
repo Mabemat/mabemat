@@ -35,7 +35,10 @@ et $-20(-1)^2+80(-1)=60$
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
 Placer les points suivants : $A(1\,;\,0)$ ; $B(3\,;\,1)$.
+<br>
+<img src="3auto_s10_repere_q.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
+<img src="3auto_s10_repere_c.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4

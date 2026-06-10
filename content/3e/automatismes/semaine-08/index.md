@@ -33,7 +33,9 @@ Un angle obtus mesure entre ${\color{#EB7F73}\boldsymbol{90}}^\circ$ et ${\color
 ---Q---
 $KJGH$ est un carré et $HGI$ est un triangle équilatéral ($I$ est à l'intérieur du carré $KJGH$).<br>$JGF$ est un triangle isocèle en $F$ ($F$ est à l'extérieur du carré $KJGH$).<br>Représenter cette configuration par un schéma à main levée et ajouter les codages nécessaires.
 ---CORR---
-Voilà ci-dessous un schéma qui pourrait convenir à la situation.
+Voilà ci-dessous un schéma qui pourrait convenir à la situation : le carré $KJGH$, le triangle équilatéral $HGI$ avec $I$ à l'intérieur du carré (ses trois côtés sont codés comme égaux), et le triangle isocèle en $F$, $JGF$, à l'extérieur du carré (ses côtés $FJ$ et $FG$ sont codés comme égaux).
+<br>
+<img src="3auto_s22_q4_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:60%">
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5
@@ -94,6 +96,8 @@ Vrai ou faux, $EFGH$ est un parallélogramme.
 <img src="3auto_s23_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 $EFGH$ a deux côtés opposés parallèles, ${\color{#EB7F73}\boldsymbol{EFGH}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un trapèze).
+<br>
+<img src="3auto_s23_q5_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}

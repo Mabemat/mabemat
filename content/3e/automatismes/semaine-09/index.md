@@ -71,6 +71,8 @@ $TRVU$ est un losange.<br>
 Fais une figure à main levée, puis la coder.
 ---CORR---
 Voilà ci-dessous un schéma qui pourrait convenir à la situation.
+<br>
+<img src="3auto_s26_q3_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}
@@ -78,6 +80,8 @@ Voilà ci-dessous un schéma qui pourrait convenir à la situation.
 Soit $UVW$ un triangle rectangle en $W$ tel que $VW=3~\text{cm}$ et $VU=7~\text{cm}$.<br>Fais une figure à main levée, la coder puis placer le centre du cercle circonscrit.
 ---CORR---
 Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
+<br>
+<img src="3auto_s26_q4_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}
@@ -135,7 +139,9 @@ Si on choisit $4$ comme nombre de départ, alors variable prend la valeur $4$.<b
 ---Q---
 Soit $TUV$ un triangle rectangle en $U$ tel que $TV=6~\text{cm}$ et $TU=5~\text{cm}$.<br>Quel est le rayon du cercle circonscrit à $TUV$ ?
 ---CORR---
-Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
+$TUV$ est rectangle en $U$, donc son hypoténuse $[TV]$ est un diamètre de son cercle circonscrit.<br>Le rayon est donc égal à la moitié de l'hypoténuse : $TV \div 2 = 6 \div 2 = {\color{#EB7F73}\boldsymbol{3~\text{cm}}}$.
+<br>
+<img src="3auto_s27_q4_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5

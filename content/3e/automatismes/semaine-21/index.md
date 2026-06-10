@@ -11,7 +11,8 @@ weight: 21
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
 Donner le nom de ce solide.
-
+<br>
+<img src="3auto_s61_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 <span class="rep">Cône de révolution</span>.
 {{< /auto3-exo >}}
@@ -19,8 +20,8 @@ Donner le nom de ce solide.
 {{< auto3-exo num="Exercice 2" >}}2
 ---Q---
 Quelle est la moyenne de la série statistique étudiée sur ce diagramme en barres ?<br><br>A. $3{,}5$ &emsp; B. $4$ &emsp; C. $3{,}375$ &emsp; D. $2$
-
-
+<br>
+<img src="3auto_s61_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 Il y a un total de $8$ valeurs.<br>La somme des valeurs : $3 \times 2+1 \times 3+3 \times 4+1 \times 6=27$.<br>La moyenne est : $\dfrac{27}{8}={\color{#EB7F73}\boldsymbol{3{,}375}}$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /auto3-exo >}}
@@ -43,9 +44,8 @@ $7 \times 9 = 75 - {\color{#EB7F73}\boldsymbol{12}}$
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
 Qu'est-ce qui caractérise les angles adjacents rose et violet ?
-
-
-
+<br>
+<img src="3auto_s61_q5.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 Ce sont des angles <span class="rep">supplémentaires</span> car la somme de leurs mesures est égale à $180°$ (angle plat).
 

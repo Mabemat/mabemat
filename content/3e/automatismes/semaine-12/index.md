@@ -110,6 +110,8 @@ Pour la figure suivante, tracée à main levée, préciser s'il s'agit d'un para
 <img src="3auto_s35_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 Seulement deux côtés opposés sont de même longueur, ${\color{#EB7F73}\boldsymbol{KLMN}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un trapèze).
+<br>
+<img src="3auto_s35_q5_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}
