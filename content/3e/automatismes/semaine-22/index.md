@@ -141,11 +141,11 @@ y &= {\color{#EB7F73}\boldsymbol{\dfrac{7}{2}}}
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Dans le triangle $GHI$ rectangle en $G$, $HI=10~\text{m}$ et $\widehat{GHI}=44^\circ$.<br>Calculer $GH$ à $0{,}1~\text{m}$ près.
+Dans le triangle $GHI$ rectangle en $G$, $HI=10~\text{m}$ et $\widehat{GHI}=44^\circ$.<br>Quel calcul permet de trouver la longueur GH ?
 <br>
 <img src="3auto_s66_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-$\cos\left(\widehat{GHI}\right)=\dfrac{GH}{HI}$<br>$\cos\left(44^\circ\right)=\dfrac{GH}{10}$<br>$GH=10 \times \cos\left(44^\circ\right)\approx{\color{#EB7F73}\boldsymbol{7{,}2}}~\text{m}$.
+$\cos\left(\widehat{GHI}\right)=\dfrac{GH}{HI}$<br>$\cos\left(44^\circ\right)=\dfrac{GH}{10}$<br>$GH=10 \times \cos\left(44^\circ\right)$.
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}

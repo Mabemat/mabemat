@@ -127,11 +127,11 @@ On sait que $PX=MU$.<br>Si un parallélogramme a des diagonales de même longueu
 
 {{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-$WX^2= \,\,\ldots$
+$FD^2= \,\,\ldots$
 <br>
 <img src="3auto_s24_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Le triangle $VWX$ est rectangle en $V$.<br>D'après le théorème de Pythagore, on a :<br>${\color{#EB7F73}\boldsymbol{WX^2=VW^2+VX^2}}$
+Le triangle $EDF$ est rectangle en $E$.<br>D'après le théorème de Pythagore, on a :<br>${\color{#EB7F73}\boldsymbol{FD^2=FE^2+ED^2}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5

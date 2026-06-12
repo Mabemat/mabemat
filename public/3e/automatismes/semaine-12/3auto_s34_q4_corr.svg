@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="395.2" height="217.6"
+     viewBox="0 0 395.2 217.6">
+<style>
+  text { font-family: "Latin Modern Math","STIX Two Math","Times New Roman",serif;
+          font-size: 12px; fill: #2D2226; font-style: italic; }
+  .small { font-size: 9px; fill: #2D2226; font-style: normal; }
+  .rep { fill: #EB7F73; font-weight: bold; font-style: italic; font-size: 10px; }
+</style>
+
+<!-- ═══════════ Figure 1 : Triangle DBC (RECTANGLE en D) ═══════════ -->
+
+<!-- Oval highlight around triangle DBC -->
+<ellipse cx="92.0" cy="105.0" rx="81.6" ry="79.6"
+         fill="none" stroke="#EB7F73" stroke-width="2" stroke-dasharray="6,3"/>
+
+<!-- Circle -->
+<circle cx="90.00" cy="110.00" r="67.60"
+        fill="none" stroke="#2D2226" stroke-width="0.8"/>
+
+<!-- Triangle DBC (filled lightly) -->
+<polygon points="24.70,92.50 133.45,58.22 46.55,161.78"
+         fill="#EB7F7322" stroke="#2D2226" stroke-width="1.2"/>
+
+<!-- Right angle at D -->
+<path d="M 31.38,90.40 L 33.48,97.07 L 26.81,99.18" fill="none" stroke="#2D2226" stroke-width="0.9"/>
+
+<!-- Center O dot + cross -->
+<circle cx="90.00" cy="110.00" r="1.5" fill="#2D2226"/>
+
+<!-- Labels -->
+<text x="137.5"  y="55.2">B</text>
+<text x="32.5" y="165.8">C</text>
+<text x="10.7" y="96.5">D</text>
+<text x="93.0" y="114.0" class="small">O</text>
+
+<!-- BC est un diamètre -->
+<text x="90.0" y="193.6" text-anchor="middle" class="rep">BC diamètre → ∠BDC = 90°</text>
+
+
+<!-- ═══════════ Figure 2 : Triangle EFA (pas rectangle) ═══════════ -->
+
+<!-- Circle -->
+<circle cx="287.60" cy="110.00" r="67.60"
+        fill="none" stroke="#2D2226" stroke-width="0.8"/>
+
+<!-- Triangle EFA -->
+<polygon points="259.03,48.73 316.17,48.73 287.60,177.60"
+         fill="none" stroke="#2D2226" stroke-width="1.2"/>
+
+<!-- Center O dot -->
+<circle cx="287.60" cy="110.00" r="1.5" fill="#2D2226"/>
+
+<!-- Labels -->
+<text x="245.0" y="45.7">E</text>
+<text x="320.2"  y="45.7">F</text>
+<text x="282.6"  y="191.6">A</text>
+<text x="290.6" y="114.0" class="small">O</text>
+
+<!-- Aucun diamètre -->
+<text x="287.6" y="193.6" text-anchor="middle" class="rep">Aucun côté n'est un diamètre</text>
+
+</svg>

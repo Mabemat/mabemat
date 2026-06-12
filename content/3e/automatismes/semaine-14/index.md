@@ -56,7 +56,7 @@ Dans le triangle $RST$ : $U\in[TR]$, $V\in[TS]$, $(RS)//(UV)$, donc d'après le 
 ---Q---
 Combien valent les quatre cinquièmes de $35$ ?
 ---CORR---
-Un cinquième de $35$ est égal à $35 \div 5$, soit $7$.<br>Donc les quatre cinquièmes de $35$ valent $4 \times 7 = {\color{#EB7F73}\boldsymbol{28}}$.
+Les quatre cinquièmes de $35$ valent $\dfrac{4}{5} \times 35 = \dfrac{4\times 35}{5}= \dfrac{4\times \times 7 \times 5}{5} = 4\times 7= {\color{#EB7F73}\boldsymbol{28}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2

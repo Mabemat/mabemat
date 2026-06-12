@@ -39,7 +39,7 @@ Le produit de la somme de $x$ et $3$ par la somme de $3$ et $y$ s'écrit : ${\co
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Sachant que les droites rouges sont parallèles, en déduire la mesure de l'angle violet. Justifier.
+Sachant que les droites roses sont parallèles, en déduire la mesure de l'angle violet. Justifier.
 <br>
 <img src="3auto_s67_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---

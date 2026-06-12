@@ -21,7 +21,7 @@ Dans le triangle $MNO$, le plus grand côté est $[MN]$.<br>$MN^2=6^2=36$<br>$MO
 On donne la série statistique suivante : $10$ ; $5$ ; $15$ ; $6$.<br>Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $10$ ?<br><br>A. $13$ &emsp; B. $12$ &emsp; C. $17$ &emsp; D. $14$
 
 ---CORR---
-La somme des valeurs : $10+5+15+6=36$.<br>$\dfrac{36+x}{5}=10 \Rightarrow 36+x=50 \Rightarrow x=10\times5-36={\color{#EB7F73}\boldsymbol{14}}$.<br>La bonne réponse est la réponse <span class="rep">D</span>.
+La somme des valeurs : $10+5+15+6=36$.<br>$\dfrac{36+x}{5}=10$<br>$ 36+x=50 $<br>$ x=10\times5-36={\color{#EB7F73}\boldsymbol{14}}$.<br>La bonne réponse est la réponse <span class="rep">D</span>.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}33
@@ -70,7 +70,7 @@ Voici les $5$ notes sur vingt obtenues par un élève en mathématiques :
 </table>
 On cherche ce que doit valoir $x$ pour que la moyenne de l'élève soit égale à $15$.<br><br>A. Impossible (note $> 20$) &emsp; B. $x=15$ &emsp; C. $x=18$ &emsp; D. $x=16$
 ---CORR---
-Somme $= 15+12+14+10+3x = 51+3x$. Somme des coeff. $= 7$.<br>$\dfrac{51+3x}{7}=15 \Rightarrow 51+3x=105 \Rightarrow 3x=54 \Rightarrow x={\color{#EB7F73}\boldsymbol{18}}$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
+Somme $= 15+12+14+10+3x = 51+3x$. Somme des coeff. $= 7$.<br>$\dfrac{51+3x}{7}=15 $<br>$ 51+3x=105 $<br>$ 3x=54 $<br>$ x={\color{#EB7F73}\boldsymbol{18}}$.<br>La bonne réponse est la réponse <span class="rep">C</span>.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3
@@ -84,11 +84,11 @@ $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times(10~\tex
 ---Q---
 Voici les 3 premiers motifs d'une série de motifs figuratifs. Les motifs se succèdent selon une règle bien définie.<br>Quel sera le nombre d'étoiles dans le motif au rang $n$ en fonction de $n$ ?
 <br>
-<img src="3auto_s71_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s71_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
-<br>
-<img src="3auto_s71_q3.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+<div style="display:flex;justify-content:center;align-items:center;gap:1.5rem;flex-wrap:wrap;">
+  <img src="3auto_s71_q1.svg" alt="figure" style="max-width:30%">
+  <img src="3auto_s71_q2.svg" alt="figure" style="max-width:30%">
+  <img src="3auto_s71_q3.svg" alt="figure" style="max-width:30%">
+</div>
 ---CORR---
 Le nombre d'étoiles augmente de $4$ à chaque nouveau motif. La formule est : ${\color{#EB7F73}\boldsymbol{4\times n + 4}}$ où $n$ est le numéro du motif.
 {{< /auto3-exo >}}

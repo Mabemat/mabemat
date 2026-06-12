@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="268.1" height="175.0" viewBox="0 0 268.1 175.0">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="279.1" height="226.0"
+     viewBox="0 0 279.1 226.0">
 <style>
-  text { font-family: "Latin Modern Math", "STIX Two Math", "Times New Roman", serif; font-size: 13px; fill: #2D2226; }
-  .label { font-style: italic; }
-  .dim { font-size: 11px; fill: #2D2226; }
-  .rep { fill: #EB7F73; font-weight: bold; }
+  text { font-family: "Latin Modern Math","STIX Two Math","Times New Roman",serif;
+          font-size: 13px; fill: #2D2226; }
+  .lbl { font-style: italic; }
+  .dim { font-size: 11px; }
+  .rep { fill: #EB7F73; font-weight: bold; font-style: italic; }
 </style>
-<!-- Triangle UVW -->
-<polygon points="213.11,130.00 55.00,55.00 55.00,130.00"
-  fill="none" stroke="#2D2226" stroke-width="1.2"/>
-<!-- Right angle mark at W -->
-<path d="M 55.00,122.00 L 63.00,122.00 L 63.00,130.00" fill="none" stroke="#2D2226" stroke-width="0.8"/>
-<!-- Tick: 1 on VW, 3 on hypotenuse UV -->
-<path d="M 50.00,92.50 L 60.00,92.50" fill="none" stroke="#2D2226" stroke-width="1.2"/>
-<path d="M 127.40,94.87 L 131.68,85.84 M 131.91,97.02 L 136.20,87.98 M 136.43,99.16 L 140.72,90.13" fill="none" stroke="#2D2226" stroke-width="1.2"/>
+
+<!-- Triangle -->
+<polygon points="199.14,146.00 60.00,80.00 60.00,146.00"
+         fill="none" stroke="#2D2226" stroke-width="1.2"/>
+
+<!-- Right angle at W -->
+<path d="M 60.00,138.00 L 68.00,138.00 L 68.00,146.00" fill="none" stroke="#2D2226" stroke-width="0.8"/>
+
+<!-- 1 tick on [OV] and [OU] → O est milieu de [UV] -->
+<path d="M 96.93,91.98 L 92.64,101.02" fill="none" stroke="#2D2226" stroke-width="1.2"/>
+<path d="M 162.21,134.02 L 166.50,124.98" fill="none" stroke="#2D2226" stroke-width="1.2"/>
+
 <!-- Circumscribed circle -->
-<circle cx="134.06" cy="92.50" r="87.50" fill="none" stroke="#EB7F73" stroke-width="1.2"/>
-<!-- Center O -->
-<circle cx="134.06" cy="92.50" r="2.5" fill="#EB7F73"/>
-<!-- Vertex labels -->
-<text x="39.0" y="135.0" class="label">W</text>
-<text x="39.0" y="60.0" class="label">V</text>
-<text x="218.1" y="135.0" class="label">U</text>
-<!-- Center label -->
-<text x="139.1" y="88.5" class="label rep">O</text>
-<!-- Dimension labels -->
-<text x="72.0" y="92.5" class="dim" text-anchor="middle">3 cm</text>
-<text x="126.8" y="107.9" class="dim" text-anchor="middle">7 cm</text>
+<circle cx="129.57" cy="113.00" r="77.00"
+        fill="none" stroke="#EB7F73" stroke-width="1.2" stroke-dasharray="5,3"/>
+
+<!-- Center O dot -->
+<circle cx="129.57" cy="113.00" r="2.5" fill="#EB7F73"/>
+
+<!-- Labels -->
+<text x="43.0" y="151.0"  class="lbl">W</text>
+<text x="43.0" y="85.0"  class="lbl">V</text>
+<text x="205.1"  y="151.0"  class="lbl">U</text>
+<text x="135.6"  y="108.0"  class="rep">O</text>
+
+<!-- Dimensions -->
+<text x="76.0" y="113.0" class="dim" text-anchor="middle">3 cm</text>
+<text x="122.7" y="127.5" class="dim" text-anchor="middle">7 cm</text>
 </svg>

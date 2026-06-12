@@ -85,7 +85,7 @@ $1{,}2~\text{h} = 1~\text{h} + 0{,}2 \times 60~\text{min} = {\color{#EB7F73}\bol
 ---Q---
 Pour la figure suivante, tracée à main levée, préciser s'il s'agit d'un parallélogramme.
 <br>
-<img src="3auto_s38_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
 Les côtés consécutifs de $UVWX$ sont de même longueur deux par deux, ${\color{#EB7F73}\boldsymbol{UVWX}}$ <span class="rep">n'est donc pas forcément un parallélogramme</span> comme le montre le contre-exemple suivant (il s'agit d'un cerf-volant).
 {{< /auto3-exo >}}
@@ -130,7 +130,7 @@ a. Quelle transformation permet de passer de la figure 20 à la figure 26 ?<br>b
 <br>
 <img src="3auto_s39_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-a. La figure $20$ a pour image la figure ${\color{#EB7F73}\boldsymbol{26}}$ par <span class="rep">la symétrie d'axe $(A'B')$</span>.<br>b. La figure $1$ a pour image la figure ${\color{#EB7F73}\boldsymbol{2}}$ par <span class="rep">la symétrie dont le centre est le milieu de $[CI]$</span>.<br>c. La figure $7$ a pour image la figure ${\color{#EB7F73}\boldsymbol{13}}$ par <span class="rep">la symétrie d'axe $(NO)$</span>.
+a. La figure $20$ a pour image la figure ${\color{#EB7F73}\boldsymbol{26}}$ par la symétrie d'axe $(A'B')$.<br>b. La figure $1$ a pour image la figure ${\color{#EB7F73}\boldsymbol{2}}$ par la symétrie dont le centre est le milieu de $[CI]$.<br>c. La figure $7$ a pour image la figure ${\color{#EB7F73}\boldsymbol{13}}$ par la symétrie d'axe $(NO)$.
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}

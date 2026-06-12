@@ -43,7 +43,7 @@ $7 \times 9 = 75 - {\color{#EB7F73}\boldsymbol{12}}$
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Qu'est-ce qui caractérise les angles adjacents rose et violet ?
+Qu'est-ce qui caractérise ces angles adjacents ?
 <br>
 <img src="3auto_s61_q5.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---

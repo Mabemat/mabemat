@@ -12,7 +12,7 @@ weight: 11
 ---Q---
 Factoriser : $A = x(3x-5)+2(3x-5)$
 ---CORR---
-$A = x(3x-5)+2(3x-5)$&emsp;On remarque que $(3x-5)$ est un facteur commun.<br>$\phantom{ABC}={\color{#C5607A}\boldsymbol{x}}{\color{#EB7F73}\boldsymbol{(3x-5)}}+{\color{#C5607A}\boldsymbol{2}}{\color{#EB7F73}\boldsymbol{(3x-5)}}$<br>$\phantom{ABC}={\color{#EB7F73}\boldsymbol{(3x-5)}}{\color{#C5607A}\boldsymbol{(x+2)}}$
+$A = x(3x-5)+2(3x-5)$&emsp;On remarque que $(3x-5)$ est un facteur commun.<br>$\phantom{A}={\color{#C5607A}\boldsymbol{x}}{\color{#EB7F73}\boldsymbol{(3x-5)}}+{\color{#C5607A}\boldsymbol{2}}{\color{#EB7F73}\boldsymbol{(3x-5)}}$<br>$\phantom{A}={\color{#EB7F73}\boldsymbol{(3x-5)}}{\color{#C5607A}\boldsymbol{(x+2)}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2
@@ -69,7 +69,7 @@ On choisit au hasard un appareil sur le présentoir d'un magasin.<br><br>1. Comp
 ---Q---
 Factoriser : $A = 2(3x-2)+x(3x-2)$
 ---CORR---
-$A = 2(3x-2)+x(3x-2)$&emsp;On remarque que $(3x-2)$ est un facteur commun.<br>$\phantom{ABC}={\color{#C5607A}\boldsymbol{2}}{\color{#EB7F73}\boldsymbol{(3x-2)}}+{\color{#C5607A}\boldsymbol{x}}{\color{#EB7F73}\boldsymbol{(3x-2)}}$<br>$\phantom{ABC}={\color{#EB7F73}\boldsymbol{(3x-2)}}{\color{#C5607A}\boldsymbol{(2+x)}}$
+$A = 2(3x-2)+x(3x-2)$&emsp;On remarque que $(3x-2)$ est un facteur commun.<br>$\phantom{A}={\color{#C5607A}\boldsymbol{2}}{\color{#EB7F73}\boldsymbol{(3x-2)}}+{\color{#C5607A}\boldsymbol{x}}{\color{#EB7F73}\boldsymbol{(3x-2)}}$<br>$\phantom{A}={\color{#EB7F73}\boldsymbol{(3x-2)}}{\color{#C5607A}\boldsymbol{(2+x)}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2
