@@ -79,7 +79,7 @@ Voilà ci-dessous un schéma qui pourrait convenir à la situation.
 ---Q---
 Soit $UVW$ un triangle rectangle en $W$ tel que $VW=3~\text{cm}$ et $VU=7~\text{cm}$.<br>Fais une figure à main levée, la coder puis placer le centre du cercle circonscrit.
 ---CORR---
-Voici la construction qu'il fallait réaliser.<br>Pour cette construction, nous avons utilisé la règle graduée, le compas et l'équerre.
+Le triangle $UVW$ est rectangle en $W$ : son cercle circonscrit a donc pour diamètre l'hypoténuse $[UV]$.<br>Le centre $O$ est le milieu de $[UV]$.
 <br>
 <img src="3auto_s26_q4_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
