@@ -134,7 +134,7 @@ Construire le cercle circonscrit au triangle suivant.
 <br>
 <img src="3auto_s21_q1.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---
-Le triangle $LMN$ est rectangle en $N$ : son cercle circonscrit a donc pour diamètre l'hypoténuse $[LM]$.<br>Le centre $O$ du cercle circonscrit est donc le milieu de $[LM]$, et son rayon est $OL=OM=ON=\dfrac{LM}{2}={\color{#EB7F73}\boldsymbol{3~cm}}$.<br>Pour cette construction, nous avons tracé les médiatrices de deux côtés du triangle : leur point d'intersection $O$ est le centre du cercle circonscrit, qui passe par les trois sommets $L$, $M$ et $N$.
+Le triangle $LMN$ est rectangle en $N$ : son cercle circonscrit a donc pour diamètre l'hypoténuse $[LM]$.<br>Le centre $O$ du cercle circonscrit est donc le milieu de $[LM]$, et son rayon est $OL=OM=ON=\dfrac{LM}{2}={\color{#EB7F73}\boldsymbol{3~cm}}$.
 <br>
 <img src="3auto_s21_q1_corr.svg" alt="correction" style="display:block;margin:0.8rem auto;max-width:100%">
 {{< /auto3-exo >}}
