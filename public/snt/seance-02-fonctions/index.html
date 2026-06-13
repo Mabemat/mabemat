@@ -1,100 +1,1119 @@
-<!doctype html><html lang=fr class=lvl-snt><head><meta charset=UTF-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content="no-cache"><meta http-equiv=Expires content="0"><meta name=viewport content="width=device-width,initial-scale=1"><title>Séance 02 — Fonctions — MaBémat</title><link rel=icon type=image/png sizes=32x32 href=/mabemat/favicon-32.png><link rel=icon type=image/png sizes=512x512 href=/mabemat/favicon-512.png><link rel=icon href=/mabemat/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=/mabemat/apple-touch-icon.png><meta name=description content="Cours de maths — Mme Bertail — Collège & Lycée"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel=stylesheet><link rel=stylesheet href=/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg+KFltyFnED1zwQ=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js crossorigin=anonymous onload='var corrDivs,hiddenPanels=[];document.querySelectorAll(".seance-panel, .mode-panel").forEach(function(e){if(getComputedStyle(e).display==="none"){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;hiddenPanels.push(e),e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),corrDivs=document.querySelectorAll(".auto3-corr, .exo-corr, .corr-box"),corrDivs.forEach(function(e){if(e.style.display==="none"||e.style.display===""){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;e.dataset.katexHide="1",e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]}),hiddenPanels.forEach(function(e){e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel)}),corrDivs.forEach(function(e){e.dataset.katexHide&&(e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel),delete e.dataset.katexHide)})'></script><style>pre code span[style*="user-select:none"]{border-right:1px solid #bbb !important;background:0 0 !important;padding-right:10px !important;margin-right:6px !important}pre[style*=background-color]{background-color:transparent !important}</style></head><body><header class=topbar><a href=https://mabemat.github.io/mabemat/ class=brand><span class=brand-text><span class=brand-ma>Ma</span><span class=brand-bemat>Bémat</span></span></a><nav><a href=/mabemat/6e/>6e</a>
-<a href=/mabemat/3e/>3e</a>
-<a href=/mabemat/2nde/>2nde</a>
-<a href=/mabemat/1re/>1re</a>
-<a href=/mabemat/snt/ class=active>Python</a>
-<a href=/mabemat/liens/>Liens</a></nav></header><div class=container><div class="crumbs fade-up"><a href=https://mabemat.github.io/mabemat/>Accueil</a>
-<span class=sep>/</span>
-<a href=/mabemat/snt/>Python</a>
-<span class=sep>/</span>
-<span>Fonctions</span></div><section class="sn-hero fade-up d1"><div class=eyebrow>Python · Séance 02</div><h1>Fonctions</h1><div class=meta><span><span class=dot></span>10 exercices</span>
-<span><span class=dot></span>QCM · 20 questions</span>
-<span><span class=dot></span>Notebook Capytale</span></div></section><div class="sn-notebook fade-up d1"><div class=info><strong>Capytale</strong>
-<span>Accès avec votre identifiant MonLycée.net</span></div><a href=https://capytale2.ac-paris.fr/web/c/c9d5-11081631 class=nb-btn target=_blank rel=noopener>Ouvrir →</a></div><div class="tab-bar fade-up d2" role=tablist><button class=active data-tab=exos role=tab>Exercices <span class=count>10</span></button>
-<button data-tab=editor role=tab>Éditeur Python</button></div><section id=exos class="tab-panel active fade-up d3"><div id=exo-enonces hidden><h3 id=exercice-1--révisions>Exercice 1 — Révisions</h3><p>On considère le programme suivant :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>prix_unitaire <span style=color:#666>=</span> <span style=color:#40a070>1.5</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>quantite <span style=color:#666>=</span> <span style=color:#40a070>4</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>prix_total <span style=color:#666>=</span> prix_unitaire <span style=color:#666>*</span> quantite
-</span></span></code></pre></div><p><strong>Q1.</strong> Combien de variables sont utilisées ? Comment s&rsquo;appellent-elles ?</p><p><strong>Q2.</strong> Complétez ce tableau <em>sans exécuter le programme</em>.</p><table><thead><tr><th style=text-align:center>N° ligne</th><th style=text-align:left>Instruction</th><th style=text-align:center><code>prix_unitaire</code></th><th style=text-align:center><code>quantite</code></th><th style=text-align:center><code>prix_total</code></th></tr></thead><tbody><tr><td style=text-align:center>1</td><td style=text-align:left><code>prix_unitaire = 1.5</code></td><td style=text-align:center><strong>1.5</strong></td><td style=text-align:center>−</td><td style=text-align:center>−</td></tr><tr><td style=text-align:center>2</td><td style=text-align:left><code>quantite = 4</code></td><td style=text-align:center>1.5</td><td style=text-align:center><em>?</em></td><td style=text-align:center>−</td></tr><tr><td style=text-align:center>3</td><td style=text-align:left><code>prix_total = prix_unitaire * quantite</code></td><td style=text-align:center>1.5</td><td style=text-align:center>4</td><td style=text-align:center><em>?</em></td></tr></tbody></table><hr><h3 id=exercice-2--analyse-dune-fonction>Exercice 2 — Analyse d&rsquo;une fonction</h3><p>On considère la fonction suivante :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>prix_a_afficher</span>(prix_unitaire, quantite):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    prix_total <span style=color:#666>=</span> prix_unitaire <span style=color:#666>*</span> quantite
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> prix_total
-</span></span></code></pre></div><p><strong>Q1.</strong> Indiquez le <strong>nom</strong> de la fonction et ses <strong>arguments</strong>.</p><p><strong>Q2.</strong> Par quel caractère se termine la première ligne ? Pourquoi est-il indispensable ?</p><p><strong>Q3.</strong> Que constatez-vous au début des deux lignes du bloc d&rsquo;instructions ?</p><p><strong>Q4.</strong> Combien de valeurs sont renvoyées par cette fonction ?</p><p><strong>Q5.</strong> Appelez la fonction pour connaître le prix total d&rsquo;un article valant <strong>3 €</strong> acheté en <strong>2 exemplaires</strong>.</p><p><strong>Q6.</strong> Appelez la fonction pour un article à <strong>1,15 €</strong> acheté en <strong>3 exemplaires</strong>.</p><hr><h3 id=exercice-3--fonction-truc_muche>Exercice 3 — Fonction <code>truc_muche</code></h3><p>On considère la fonction suivante :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>truc_muche</span>(a, b, c):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    s <span style=color:#666>=</span> a <span style=color:#666>+</span> b <span style=color:#666>+</span> c
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> s
-</span></span></code></pre></div><p><strong>Q1.</strong></p><ul style=list-style:none;padding-left:1.5em><li><strong>a.</strong> Quel est le nom de la fonction ?</li><li><strong>b.</strong> Quels sont les arguments ?</li><li><strong>c.</strong> Combien de lignes comporte le bloc d'instructions ?</li><li><strong>d.</strong> Combien de valeurs sont renvoyées ?</li><li><strong>e.</strong> Quelle valeur renvoie <code>truc_muche(2, 5, 1)</code> ?</li></ul><p><strong>Q2.</strong> Recopiez et exécutez cette fonction.</p><p><strong>Q3.</strong> Effectuez l&rsquo;appel <code>truc_muche(2, 5, 1)</code>.</p><p><strong>Q4.</strong> Écrivez l&rsquo;instruction pour obtenir la valeur renvoyée avec les arguments <strong>1</strong>, <strong>2</strong> et <strong>4</strong>.</p><hr><h3 id=exercice-4--définition-dune-image>Exercice 4 — Définition d&rsquo;une image</h3><p>Une image numérique est constituée de <strong>pixels</strong>. Le nombre total de pixels d&rsquo;une image s&rsquo;appelle sa <strong>définition</strong>.</p><p>Par exemple, une image de 800 × 600 pixels a une définition de 480 000 pixels.</p><p><strong>Q1.</strong> Calculez la définition d&rsquo;une image de <strong>960 × 720</strong> pixels.</p><p><strong>Q2.</strong> Complétez la fonction suivante :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>definition_image</span>(L, <span style=color:#666>...</span>):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    d <span style=color:#666>=</span> <span style=color:#666>...</span> <span style=color:#666>*</span> <span style=color:#666>...</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#666>...</span>
-</span></span></code></pre></div><p><strong>Q3.</strong> Appelez cette fonction pour une image de <strong>800 × 600</strong> pixels.</p><p><strong>Q4.</strong> Appelez cette fonction pour l&rsquo;image de 960 × 720. Comparez avec la question 1.</p><hr><h3 id=exercice-5--tableau-de-prédiction>Exercice 5 — Tableau de prédiction</h3><p>On considère les trois fonctions suivantes :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>triple</span>(n):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>3</span> <span style=color:#666>*</span> n
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>score_bonus</span>(buts, passes):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>    <span style=color:#007020;font-weight:700>return</span> buts <span style=color:#666>*</span> <span style=color:#40a070>3</span> <span style=color:#666>+</span> passes
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>convertir</span>(km):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>    <span style=color:#007020;font-weight:700>return</span> km <span style=color:#666>*</span> <span style=color:#40a070>0.621</span>
-</span></span></code></pre></div><p><strong>Q1.</strong> Complétez ce tableau <em>sans exécuter le code</em>.</p><table><thead><tr><th style=text-align:left>Appel</th><th style=text-align:center>Valeur prédite</th><th style=text-align:center>Valeur réelle</th></tr></thead><tbody><tr><td style=text-align:left><code>triple(4)</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr><tr><td style=text-align:left><code>triple(triple(2))</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr><tr><td style=text-align:left><code>score_bonus(2, 3)</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr><tr><td style=text-align:left><code>score_bonus(0, 5)</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr><tr><td style=text-align:left><code>score_bonus(1, 0) + score_bonus(0, 2)</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr><tr><td style=text-align:left><code>convertir(10)</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr><tr><td style=text-align:left><code>convertir(0)</code></td><td style=text-align:center><em>?</em></td><td style=text-align:center></td></tr></tbody></table><p><strong>Q2.</strong> Recopiez les fonctions, exécutez la cellule, puis vérifiez vos prédictions.</p><p><strong>Q3.</strong> De quelle conversion s&rsquo;agit-il pour la fonction <code>convertir</code> ?</p><p><strong>Q4.</strong> Un joueur marque <strong>3 buts</strong> et réalise <strong>5 passes décisives</strong>. Calculez son score.</p><hr><h3 id=exercice-6--print-ou-return->Exercice 6 — <code>print</code> ou <code>return</code> ?</h3><p>Un élève a écrit deux versions d&rsquo;une fonction qui calcule la durée d&rsquo;un trajet :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#60a0b0;font-style:italic># Version A</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>duree_trajet_A</span>(distance, vitesse):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    duree <span style=color:#666>=</span> distance <span style=color:#666>/</span> vitesse
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020>print</span>(duree)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span><span style=color:#60a0b0;font-style:italic># Version B</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>duree_trajet_B</span>(distance, vitesse):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>    duree <span style=color:#666>=</span> distance <span style=color:#666>/</span> vitesse
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span><span>    <span style=color:#007020;font-weight:700>return</span> duree
-</span></span></code></pre></div><p><strong>Q1.</strong> D&rsquo;après vous, <code>duree_trajet_A(300, 100)</code> et <code>duree_trajet_B(300, 100)</code> affichent-ils quelque chose ? Prédisez avant d&rsquo;exécuter.</p><p><strong>Q2.</strong> Exécutez chaque appel et comparez avec vos prédictions.</p><p><strong>Q3.</strong> Que se passe-t-il si on tente de <strong>stocker le résultat</strong> ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>resultat_A <span style=color:#666>=</span> duree_trajet_A(<span style=color:#40a070>300</span>, <span style=color:#40a070>100</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>resultat_B <span style=color:#666>=</span> duree_trajet_B(<span style=color:#40a070>300</span>, <span style=color:#40a070>100</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span><span style=color:#007020>print</span>(resultat_A)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020>print</span>(resultat_B)
-</span></span></code></pre></div><p><strong>Q4.</strong> Expliquez la différence entre <code>print()</code> et <code>return</code> dans une fonction.</p><hr><h3 id=exercice-7--débogage>Exercice 7 — Débogage</h3><p><strong>Fonction 1</strong> — Cette fonction contient <strong>2 erreurs</strong> :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>celsius_vers_fahrenheit</span>(c)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    f <span style=color:#666>=</span> c <span style=color:#666>*</span> <span style=color:#40a070>9</span><span style=color:#666>/</span><span style=color:#40a070>5</span> <span style=color:#666>+</span> <span style=color:#40a070>32</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    Return f
-</span></span></code></pre></div><p><strong>Q1.</strong> Identifiez les 2 erreurs.</p><p><strong>Q2.</strong> Corrigez la fonction et vérifiez qu&rsquo;elle renvoie <strong>32</strong> pour 0 °C et <strong>212</strong> pour 100 °C.</p><hr><p><strong>Fonction 2</strong> — Cette fonction contient <strong>3 erreurs</strong> :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>imc</span>(poids, taille):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>resultat <span style=color:#666>=</span> poids <span style=color:#666>/</span> (taille<span style=color:#666>**</span><span style=color:#40a070>2</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span><span style=color:#007020;font-weight:700>return</span>
-</span></span></code></pre></div><p><strong>Q3.</strong> Identifiez les 3 erreurs.</p><p><strong>Q4.</strong> Corrigez la fonction et calculez l&rsquo;IMC d&rsquo;une personne de <strong>70 kg</strong> pour <strong>1,75 m</strong>.</p><hr><h3 id=exercice-8--écrire-des-fonctions>Exercice 8 — Écrire des fonctions</h3><p><strong>Q1.</strong> Écrivez une fonction <code>aire_triangle(base, hauteur)</code> qui renvoie l&rsquo;aire d&rsquo;un triangle.</p><p><em>Formule : base × hauteur ÷ 2. Vérification : <code>aire_triangle(6, 4)</code> → <code>12.0</code></em></p><p><strong>Q2.</strong> Écrivez une fonction <code>convertir_km_miles(km)</code> qui convertit des kilomètres en miles (1 km ≈ 0,621 mile).</p><p><em>Vérification : <code>convertir_km_miles(10)</code> → <code>6.21</code></em></p><p><strong>Q3.</strong> Écrivez une fonction <code>prix_reduit(prix, remise)</code> qui renvoie le prix après une remise en pourcentage.</p><p><em>Vérification : <code>prix_reduit(80, 25)</code> → <code>60.0</code></em></p><p><strong>Q4.</strong> Écrivez une fonction <code>pourboire(addition, pourcentage)</code> qui renvoie le montant du pourboire.</p><p><em>Vérification : <code>pourboire(35, 15)</code> → <code>5.25</code></em></p><p><strong>Q5.</strong> Écrivez une fonction <code>score_basket(un_pt, deux_pts, trois_pts)</code> qui renvoie le score total d&rsquo;un joueur.</p><p><em>Vérification : <code>score_basket(2, 5, 3)</code> → <code>21</code></em></p><hr><h3 id=exercice-9--fonctions-imbriquées--carrelage>Exercice 9 — Fonctions imbriquées : carrelage</h3><p>On veut calculer le coût d&rsquo;un chantier de carrelage.</p><p><strong>Q1.</strong> Écrivez une fonction <code>aire_piece(longueur, largeur)</code> qui renvoie l&rsquo;aire d&rsquo;une pièce rectangulaire (en m²).</p><p><em>Exemple : <code>aire_piece(4, 3)</code> → <code>12</code></em></p><p><strong>Q2.</strong> Écrivez une fonction <code>nb_carreaux(longueur, largeur, cote)</code> qui renvoie le nombre de carreaux nécessaires. Chaque carreau est un carré de côté <code>cote</code> mètres.</p><p><em>Rappel : utilisez <code>aire_piece</code> dans cette fonction.</em></p><p><strong>Q3.</strong> Écrivez une fonction <code>cout_chantier(longueur, largeur, cote, prix_carreau)</code> qui renvoie le coût total en euros en appelant <code>nb_carreaux</code>.</p><p><strong>Q4.</strong> Un client veut carreler une pièce de <strong>5 m × 4 m</strong> avec des carreaux de <strong>0,25 m</strong> de côté à <strong>2 € pièce</strong>. Quel est le coût total ? Montrez votre calcul.</p><hr><h3 id=exercice-10--cantine-scolaire>Exercice 10 — Cantine scolaire</h3><p>Le service de restauration facture : <strong>7,50 €</strong> le repas adulte et <strong>3,20 €</strong> le repas élève.</p><p><strong>Q1.</strong> Écrivez une fonction <code>prix_repas(nb_adultes, nb_eleves)</code> qui renvoie le prix total d&rsquo;un repas.</p><p><em>Exemple : <code>prix_repas(2, 15)</code> → <code>63.0</code></em></p><p><strong>Q2.</strong> Écrivez une fonction <code>prix_semaine(nb_adultes, nb_eleves)</code> qui renvoie le coût pour <strong>5 repas</strong> en appelant <code>prix_repas</code>.</p><p><em>Exemple : <code>prix_semaine(2, 15)</code> → <code>315.0</code></em></p><p><strong>Q3.</strong> Écrivez une fonction <code>devis(nom_groupe, nb_adultes, nb_eleves)</code> qui renvoie une chaîne de caractères du type :
-<code>"Devis pour 3e B : 315.0 euros pour la semaine"</code> en appelant <code>prix_semaine</code>.</p><p><strong>Q4.</strong> Une classe de <strong>28 élèves</strong> part avec <strong>3 accompagnateurs</strong>. Affichez le devis pour le groupe <code>"3e A"</code>.</p></div><div id=exo-corrs hidden><h3 id=exercice-1--révisions>Exercice 1 — Révisions</h3><p><strong>Q1.</strong> 3 variables : <code>prix_unitaire</code>, <code>quantite</code>, <code>prix_total</code>.</p><table><thead><tr><th style=text-align:center>N° ligne</th><th style=text-align:left>Instruction</th><th style=text-align:center><code>prix_unitaire</code></th><th style=text-align:center><code>quantite</code></th><th style=text-align:center><code>prix_total</code></th></tr></thead><tbody><tr><td style=text-align:center>1</td><td style=text-align:left><code>prix_unitaire = 1.5</code></td><td style=text-align:center><strong>1.5</strong></td><td style=text-align:center>−</td><td style=text-align:center>−</td></tr><tr><td style=text-align:center>2</td><td style=text-align:left><code>quantite = 4</code></td><td style=text-align:center>1.5</td><td style=text-align:center><strong>4</strong></td><td style=text-align:center>−</td></tr><tr><td style=text-align:center>3</td><td style=text-align:left><code>prix_total = prix_unitaire * quantite</code></td><td style=text-align:center>1.5</td><td style=text-align:center>4</td><td style=text-align:center><strong>6.0</strong></td></tr></tbody></table><p><strong>Q2.</strong> <code>prix_total</code> vaut <strong>6.0</strong> (1.5 × 4).</p><hr><h3 id=exercice-2--analyse-dune-fonction>Exercice 2 — Analyse d&rsquo;une fonction</h3><p><strong>Q1</strong> : Nom → <code>prix_a_afficher</code> · Arguments → <code>prix_unitaire</code> et <code>quantite</code>.</p><p><strong>Q2</strong> : La première ligne se termine par <code>:</code> (deux-points). Ce caractère annonce le début du bloc d&rsquo;instructions — Python le réclame obligatoirement.</p><p><strong>Q3</strong> : Les deux lignes du bloc commencent par 4 espaces : c&rsquo;est l&rsquo;<strong>indentation</strong>. Elle est obligatoire pour que Python sache quelles instructions appartiennent à la fonction.</p><p><strong>Q4</strong> : La fonction renvoie <strong>1 valeur</strong> : <code>prix_total</code>.</p><p><strong>Q5</strong> : <code>prix_a_afficher(3, 2)</code></p><table><thead><tr><th style=text-align:center>Paramètre</th><th style=text-align:center><code>prix_unitaire</code></th><th style=text-align:center><code>quantite</code></th><th style=text-align:center><code>prix_total</code></th></tr></thead><tbody><tr><td style=text-align:center>Valeurs</td><td style=text-align:center>3</td><td style=text-align:center>2</td><td style=text-align:center>3 × 2 = <strong>6.0</strong></td></tr></tbody></table><p><strong>Q6</strong> : <code>prix_a_afficher(1.15, 3)</code></p><table><thead><tr><th style=text-align:center>Paramètre</th><th style=text-align:center><code>prix_unitaire</code></th><th style=text-align:center><code>quantite</code></th><th style=text-align:center><code>prix_total</code></th></tr></thead><tbody><tr><td style=text-align:center>Valeurs</td><td style=text-align:center>1.15</td><td style=text-align:center>3</td><td style=text-align:center>1.15 × 3 = <strong>3.45</strong></td></tr></tbody></table><hr><h3 id=exercice-3--fonction-truc_muche>Exercice 3 — Fonction <code>truc_muche</code></h3><p><strong>Q1</strong> : a. <code>truc_muche</code> · b. <code>a</code>, <code>b</code>, <code>c</code> · c. 2 lignes · d. 1 valeur · e. <code>truc_muche(2, 5, 1)</code> = 2 + 5 + 1 = <strong>8</strong></p><p><strong>Q2.</strong> Recopier la fonction dans la cellule et exécuter.</p><p><strong>Q3</strong> :</p><table><thead><tr><th style=text-align:center>Paramètre</th><th style=text-align:center><code>a</code></th><th style=text-align:center><code>b</code></th><th style=text-align:center><code>c</code></th><th style=text-align:center><code>s</code></th></tr></thead><tbody><tr><td style=text-align:center>Valeurs</td><td style=text-align:center>2</td><td style=text-align:center>5</td><td style=text-align:center>1</td><td style=text-align:center>2 + 5 + 1 = <strong>8</strong></td></tr></tbody></table><p><strong>Q4</strong> : <code>truc_muche(1, 2, 4)</code> → 1 + 2 + 4 = <strong>7</strong></p><hr><h3 id=exercice-4--définition-dune-image>Exercice 4 — Définition d&rsquo;une image</h3><p><strong>Q1</strong> : 960 × 720 = <strong>691 200 pixels</strong></p><p><strong>Q2</strong> : Fonction complétée :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>definition_image</span>(L, H):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    d <span style=color:#666>=</span> L <span style=color:#666>*</span> H
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> d
-</span></span></code></pre></div><p><strong>Q3</strong> : <code>definition_image(800, 600)</code> → <strong>480 000</strong></p><p><strong>Q4</strong> : <code>definition_image(960, 720)</code> → <strong>691 200</strong> — cohérent avec la question 1.</p><hr><h3 id=exercice-5--tableau-de-prédiction>Exercice 5 — Tableau de prédiction</h3><p><strong>Q1 — Tableau de prédiction.</strong></p><table><thead><tr><th style=text-align:left>Appel</th><th style=text-align:center>Valeur</th></tr></thead><tbody><tr><td style=text-align:left><code>triple(4)</code></td><td style=text-align:center><strong>12</strong></td></tr><tr><td style=text-align:left><code>triple(triple(2))</code></td><td style=text-align:center><code>triple(6)</code> = <strong>18</strong></td></tr><tr><td style=text-align:left><code>score_bonus(2, 3)</code></td><td style=text-align:center>2×3 + 3 = <strong>9</strong></td></tr><tr><td style=text-align:left><code>score_bonus(0, 5)</code></td><td style=text-align:center>0 + 5 = <strong>5</strong></td></tr><tr><td style=text-align:left><code>score_bonus(1, 0) + score_bonus(0, 2)</code></td><td style=text-align:center>3 + 2 = <strong>5</strong></td></tr><tr><td style=text-align:left><code>convertir(10)</code></td><td style=text-align:center><strong>6.21</strong></td></tr><tr><td style=text-align:left><code>convertir(0)</code></td><td style=text-align:center><strong>0.0</strong></td></tr></tbody></table><p><strong>Q2.</strong> Recopier les trois fonctions, exécuter, puis compléter la colonne « Valeur réelle » du tableau.</p><p><strong>Q3</strong> : <code>convertir</code> convertit des <strong>kilomètres en miles</strong> (1 km ≈ 0,621 mile).</p><p><strong>Q4</strong> : <code>score_bonus(3, 5)</code> = 3×3 + 5 = <strong>14</strong></p><hr><h3 id=exercice-6--print-ou-return->Exercice 6 — <code>print</code> ou <code>return</code> ?</h3><p><strong>Q1 — Prédictions</strong> :</p><ul><li><code>duree_trajet_A(300, 100)</code> : <strong>affiche</strong> <code>3.0</code> (car la fonction utilise <code>print</code>)</li><li><code>duree_trajet_B(300, 100)</code> : <strong>n&rsquo;affiche rien</strong> (car la fonction utilise <code>return</code>)</li></ul><p><strong>Q2.</strong> Vérifier par exécution.</p><p><strong>Q3 — Stocker le résultat</strong> :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>resultat_A <span style=color:#666>=</span> duree_trajet_A(<span style=color:#40a070>300</span>, <span style=color:#40a070>100</span>)  <span style=color:#60a0b0;font-style:italic># affiche 3.0, puis stocke None</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>resultat_B <span style=color:#666>=</span> duree_trajet_B(<span style=color:#40a070>300</span>, <span style=color:#40a070>100</span>)  <span style=color:#60a0b0;font-style:italic># n&#39;affiche rien, stocke 3.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span><span style=color:#007020>print</span>(resultat_A)  <span style=color:#60a0b0;font-style:italic># affiche : None</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020>print</span>(resultat_B)  <span style=color:#60a0b0;font-style:italic># affiche : 3.0</span>
-</span></span></code></pre></div><p><code>resultat_A</code> vaut <code>None</code> car <code>duree_trajet_A</code> ne renvoie rien avec <code>return</code>.</p><p><strong>Q4</strong> : <code>print()</code> affiche une valeur à l&rsquo;écran mais <strong>ne la transmet pas</strong> au reste du programme. <code>return</code> <strong>renvoie</strong> la valeur pour qu&rsquo;elle puisse être stockée ou réutilisée.</p><hr><h3 id=exercice-7--débogage>Exercice 7 — Débogage</h3><p><strong>Q1.</strong> Fonction 1 — <code>celsius_vers_fahrenheit</code> : 2 erreurs.</p><table><thead><tr><th style=text-align:center>Erreur</th><th style=text-align:center>Ligne</th><th style=text-align:left>Description</th></tr></thead><tbody><tr><td style=text-align:center>1</td><td style=text-align:center>1</td><td style=text-align:left>Manque <code>:</code> à la fin de <code>def celsius_vers_fahrenheit(c)</code></td></tr><tr><td style=text-align:center>2</td><td style=text-align:center>3</td><td style=text-align:left><code>Return</code> avec majuscule → doit être <code>return</code> (minuscule)</td></tr></tbody></table><p><strong>Q2.</strong> Fonction corrigée :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>celsius_vers_fahrenheit</span>(c):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    f <span style=color:#666>=</span> c <span style=color:#666>*</span> <span style=color:#40a070>9</span><span style=color:#666>/</span><span style=color:#40a070>5</span> <span style=color:#666>+</span> <span style=color:#40a070>32</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> f
-</span></span></code></pre></div><p>Vérifications : <code>celsius_vers_fahrenheit(0)</code> → <strong>32.0</strong> · <code>celsius_vers_fahrenheit(100)</code> → <strong>212.0</strong></p><hr><p><strong>Q3.</strong> Fonction 2 — <code>imc</code> : 3 erreurs.</p><table><thead><tr><th style=text-align:center>Erreur</th><th style=text-align:center>Ligne</th><th style=text-align:left>Description</th></tr></thead><tbody><tr><td style=text-align:center>1</td><td style=text-align:center>2</td><td style=text-align:left><code>resultat = ...</code> non indenté (doit être dans le bloc de la fonction)</td></tr><tr><td style=text-align:center>2</td><td style=text-align:center>3</td><td style=text-align:left><code>return</code> non indenté (doit être dans le bloc de la fonction)</td></tr><tr><td style=text-align:center>3</td><td style=text-align:center>3</td><td style=text-align:left><code>return</code> sans valeur → doit être <code>return resultat</code></td></tr></tbody></table><p><strong>Q4.</strong> Fonction corrigée :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>imc</span>(poids, taille):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    resultat <span style=color:#666>=</span> poids <span style=color:#666>/</span> (taille<span style=color:#666>**</span><span style=color:#40a070>2</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> resultat
-</span></span></code></pre></div><p>Vérification : <code>imc(70, 1.75)</code> = 70 ÷ 1.75² = 70 ÷ 3.0625 ≈ <strong>22.86</strong></p><hr><h3 id=exercice-8--écrire-des-fonctions>Exercice 8 — Écrire des fonctions</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>aire_triangle</span>(base, hauteur):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> base <span style=color:#666>*</span> hauteur <span style=color:#666>/</span> <span style=color:#40a070>2</span>
-</span></span></code></pre></div><p><code>aire_triangle(6, 4)</code> = 6 × 4 ÷ 2 = <strong>12.0</strong> ✓</p><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>convertir_km_miles</span>(km):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> km <span style=color:#666>*</span> <span style=color:#40a070>0.621</span>
-</span></span></code></pre></div><p><code>convertir_km_miles(10)</code> = <strong>6.21</strong> ✓</p><p><strong>Q3.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>prix_reduit</span>(prix, remise):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> prix <span style=color:#666>*</span> (<span style=color:#40a070>1</span> <span style=color:#666>-</span> remise <span style=color:#666>/</span> <span style=color:#40a070>100</span>)
-</span></span></code></pre></div><p><code>prix_reduit(80, 25)</code> = 80 × 0.75 = <strong>60.0</strong> ✓</p><p><strong>Q4.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>pourboire</span>(addition, pourcentage):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> addition <span style=color:#666>*</span> pourcentage <span style=color:#666>/</span> <span style=color:#40a070>100</span>
-</span></span></code></pre></div><p><code>pourboire(35, 15)</code> = 35 × 15 ÷ 100 = <strong>5.25</strong> ✓</p><p><strong>Q5.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>score_basket</span>(un_pt, deux_pts, trois_pts):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> un_pt <span style=color:#666>+</span> deux_pts <span style=color:#666>*</span> <span style=color:#40a070>2</span> <span style=color:#666>+</span> trois_pts <span style=color:#666>*</span> <span style=color:#40a070>3</span>
-</span></span></code></pre></div><p><code>score_basket(2, 5, 3)</code> = 2 + 10 + 9 = <strong>21</strong> ✓</p><hr><h3 id=exercice-9--carrelage>Exercice 9 — Carrelage</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>aire_piece</span>(longueur, largeur):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> longueur <span style=color:#666>*</span> largeur
-</span></span></code></pre></div><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>nb_carreaux</span>(longueur, largeur, cote):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> aire_piece(longueur, largeur) <span style=color:#666>/</span> (cote <span style=color:#666>*</span> cote)
-</span></span></code></pre></div><p><strong>Q3.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>cout_chantier</span>(longueur, largeur, cote, prix_carreau):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> nb_carreaux(longueur, largeur, cote) <span style=color:#666>*</span> prix_carreau
-</span></span></code></pre></div><p><strong>Q4</strong> : Pièce 5 m × 4 m, carreaux 0,25 m, 2 €/carreau</p><table><thead><tr><th style=text-align:left>Calcul</th><th style=text-align:center>Valeur</th></tr></thead><tbody><tr><td style=text-align:left>Aire pièce</td><td style=text-align:center>5 × 4 = 20 m²</td></tr><tr><td style=text-align:left>Aire d&rsquo;un carreau</td><td style=text-align:center>0,25 × 0,25 = 0,0625 m²</td></tr><tr><td style=text-align:left>Nombre de carreaux</td><td style=text-align:center>20 ÷ 0,0625 = <strong>320</strong></td></tr><tr><td style=text-align:left>Coût total</td><td style=text-align:center>320 × 2 = <strong>640 €</strong></td></tr></tbody></table><p><code>cout_chantier(5, 4, 0.25, 2)</code> → <strong>640.0</strong></p><hr><h3 id=exercice-10--cantine-scolaire>Exercice 10 — Cantine scolaire</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>prix_repas</span>(nb_adultes, nb_eleves):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>7.5</span> <span style=color:#666>*</span> nb_adultes <span style=color:#666>+</span> <span style=color:#40a070>3.2</span> <span style=color:#666>*</span> nb_eleves
-</span></span></code></pre></div><p><code>prix_repas(2, 15)</code> = 7,5×2 + 3,2×15 = 15 + 48 = <strong>63.0</strong> ✓</p><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>prix_semaine</span>(nb_adultes, nb_eleves):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>5</span> <span style=color:#666>*</span> prix_repas(nb_adultes, nb_eleves)
-</span></span></code></pre></div><p><code>prix_semaine(2, 15)</code> = 5 × 63 = <strong>315.0</strong> ✓</p><p><strong>Q3.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>devis</span>(nom_groupe, nb_adultes, nb_eleves):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    total <span style=color:#666>=</span> prix_semaine(nb_adultes, nb_eleves)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Devis pour &#34;</span> <span style=color:#666>+</span> nom_groupe <span style=color:#666>+</span> <span style=color:#4070a0>&#34; : &#34;</span> <span style=color:#666>+</span> <span style=color:#007020>str</span>(total) <span style=color:#666>+</span> <span style=color:#4070a0>&#34; euros pour la semaine&#34;</span>
-</span></span></code></pre></div><p><strong>Q4</strong> : <code>prix_semaine(3, 28)</code> = 5 × (7,5×3 + 3,2×28) = 5 × (22,5 + 89,6) = 5 × 112,1 = <strong>560.5 €</strong></p><p><code>devis("3e A", 3, 28)</code> → <code>"Devis pour 3e A : 560.5 euros pour la semaine"</code></p></div><div id=exo-list></div></section><section id=editor class=tab-panel><div class=snt-qcm-intro><span class=badge>Bac à sable</span>
-<span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span></div><div class=py-editor><div class=py-editor-head><span class=dot></span>
-<span>Python · main.py</span></div><textarea id=pyCode spellcheck=false rows=8>a = 15
+<!DOCTYPE html>
+<html lang="fr" class="lvl-snt">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Séance 02 — Fonctions — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/" class="active">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  <a href="/mabemat/snt/">Python</a>
+  <span class="sep">/</span>
+  <span>Fonctions</span>
+</div>
+
+
+<section class="sn-hero fade-up d1">
+  <div class="eyebrow">Python · Séance 02</div>
+  <h1>Fonctions</h1>
+
+  <div class="meta">
+    <span><span class="dot"></span>10 exercices</span>
+    <span><span class="dot"></span>QCM · 20 questions</span>
+    <span><span class="dot"></span>Notebook Capytale</span>
+  </div>
+</section>
+
+
+
+<div class="sn-notebook fade-up d1">
+  <div class="info">
+    <strong>Capytale</strong>
+    <span>Accès avec votre identifiant MonLycée.net</span>
+  </div>
+  <a href="https://capytale2.ac-paris.fr/web/c/c9d5-11081631" class="nb-btn" target="_blank" rel="noopener">Ouvrir →</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab-bar fade-up d2" role="tablist">
+  
+  <button class="active" data-tab="exos" role="tab">Exercices <span class="count">10</span></button>
+  
+  
+  <button data-tab="editor" role="tab">Éditeur Python</button>
+</div>
+
+
+
+<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="exercice-1--révisions">Exercice 1 — Révisions</h3>
+<p>On considère le programme suivant :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>prix_unitaire <span style="color:#666">=</span> <span style="color:#40a070">1.5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>quantite <span style="color:#666">=</span> <span style="color:#40a070">4</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>prix_total <span style="color:#666">=</span> prix_unitaire <span style="color:#666">*</span> quantite
+</span></span></code></pre></div><p><strong>Q1.</strong> Combien de variables sont utilisées ? Comment s&rsquo;appellent-elles ?</p>
+<p><strong>Q2.</strong> Complétez ce tableau <em>sans exécuter le programme</em>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">N° ligne</th>
+          <th style="text-align: left">Instruction</th>
+          <th style="text-align: center"><code>prix_unitaire</code></th>
+          <th style="text-align: center"><code>quantite</code></th>
+          <th style="text-align: center"><code>prix_total</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left"><code>prix_unitaire = 1.5</code></td>
+          <td style="text-align: center"><strong>1.5</strong></td>
+          <td style="text-align: center">−</td>
+          <td style="text-align: center">−</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left"><code>quantite = 4</code></td>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center">−</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: left"><code>prix_total = prix_unitaire * quantite</code></td>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center"><em>?</em></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-2--analyse-dune-fonction">Exercice 2 — Analyse d&rsquo;une fonction</h3>
+<p>On considère la fonction suivante :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prix_a_afficher</span>(prix_unitaire, quantite):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    prix_total <span style="color:#666">=</span> prix_unitaire <span style="color:#666">*</span> quantite
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> prix_total
+</span></span></code></pre></div><p><strong>Q1.</strong> Indiquez le <strong>nom</strong> de la fonction et ses <strong>arguments</strong>.</p>
+<p><strong>Q2.</strong> Par quel caractère se termine la première ligne ? Pourquoi est-il indispensable ?</p>
+<p><strong>Q3.</strong> Que constatez-vous au début des deux lignes du bloc d&rsquo;instructions ?</p>
+<p><strong>Q4.</strong> Combien de valeurs sont renvoyées par cette fonction ?</p>
+<p><strong>Q5.</strong> Appelez la fonction pour connaître le prix total d&rsquo;un article valant <strong>3 €</strong> acheté en <strong>2 exemplaires</strong>.</p>
+<p><strong>Q6.</strong> Appelez la fonction pour un article à <strong>1,15 €</strong> acheté en <strong>3 exemplaires</strong>.</p>
+<hr>
+<h3 id="exercice-3--fonction-truc_muche">Exercice 3 — Fonction <code>truc_muche</code></h3>
+<p>On considère la fonction suivante :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">truc_muche</span>(a, b, c):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    s <span style="color:#666">=</span> a <span style="color:#666">+</span> b <span style="color:#666">+</span> c
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> s
+</span></span></code></pre></div><p><strong>Q1.</strong></p>
+<ul style="list-style:none; padding-left:1.5em;">
+<li><strong>a.</strong> Quel est le nom de la fonction ?</li>
+<li><strong>b.</strong> Quels sont les arguments ?</li>
+<li><strong>c.</strong> Combien de lignes comporte le bloc d'instructions ?</li>
+<li><strong>d.</strong> Combien de valeurs sont renvoyées ?</li>
+<li><strong>e.</strong> Quelle valeur renvoie <code>truc_muche(2, 5, 1)</code> ?</li>
+</ul>
+<p><strong>Q2.</strong> Recopiez et exécutez cette fonction.</p>
+<p><strong>Q3.</strong> Effectuez l&rsquo;appel <code>truc_muche(2, 5, 1)</code>.</p>
+<p><strong>Q4.</strong> Écrivez l&rsquo;instruction pour obtenir la valeur renvoyée avec les arguments <strong>1</strong>, <strong>2</strong> et <strong>4</strong>.</p>
+<hr>
+<h3 id="exercice-4--définition-dune-image">Exercice 4 — Définition d&rsquo;une image</h3>
+<p>Une image numérique est constituée de <strong>pixels</strong>. Le nombre total de pixels d&rsquo;une image s&rsquo;appelle sa <strong>définition</strong>.</p>
+<p>Par exemple, une image de 800 × 600 pixels a une définition de 480 000 pixels.</p>
+<p><strong>Q1.</strong> Calculez la définition d&rsquo;une image de <strong>960 × 720</strong> pixels.</p>
+<p><strong>Q2.</strong> Complétez la fonction suivante :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">definition_image</span>(L, <span style="color:#666">...</span>):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    d <span style="color:#666">=</span> <span style="color:#666">...</span> <span style="color:#666">*</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#666">...</span>
+</span></span></code></pre></div><p><strong>Q3.</strong> Appelez cette fonction pour une image de <strong>800 × 600</strong> pixels.</p>
+<p><strong>Q4.</strong> Appelez cette fonction pour l&rsquo;image de 960 × 720. Comparez avec la question 1.</p>
+<hr>
+<h3 id="exercice-5--tableau-de-prédiction">Exercice 5 — Tableau de prédiction</h3>
+<p>On considère les trois fonctions suivantes :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">triple</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">3</span> <span style="color:#666">*</span> n
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">score_bonus</span>(buts, passes):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">return</span> buts <span style="color:#666">*</span> <span style="color:#40a070">3</span> <span style="color:#666">+</span> passes
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">convertir</span>(km):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    <span style="color:#007020;font-weight:bold">return</span> km <span style="color:#666">*</span> <span style="color:#40a070">0.621</span>
+</span></span></code></pre></div><p><strong>Q1.</strong> Complétez ce tableau <em>sans exécuter le code</em>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Appel</th>
+          <th style="text-align: center">Valeur prédite</th>
+          <th style="text-align: center">Valeur réelle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>triple(4)</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>triple(triple(2))</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>score_bonus(2, 3)</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>score_bonus(0, 5)</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>score_bonus(1, 0) + score_bonus(0, 2)</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>convertir(10)</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>convertir(0)</code></td>
+          <td style="text-align: center"><em>?</em></td>
+          <td style="text-align: center"></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong> Recopiez les fonctions, exécutez la cellule, puis vérifiez vos prédictions.</p>
+<p><strong>Q3.</strong> De quelle conversion s&rsquo;agit-il pour la fonction <code>convertir</code> ?</p>
+<p><strong>Q4.</strong> Un joueur marque <strong>3 buts</strong> et réalise <strong>5 passes décisives</strong>. Calculez son score.</p>
+<hr>
+<h3 id="exercice-6--print-ou-return-">Exercice 6 — <code>print</code> ou <code>return</code> ?</h3>
+<p>Un élève a écrit deux versions d&rsquo;une fonction qui calcule la durée d&rsquo;un trajet :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#60a0b0;font-style:italic"># Version A</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">duree_trajet_A</span>(distance, vitesse):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    duree <span style="color:#666">=</span> distance <span style="color:#666">/</span> vitesse
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020">print</span>(duree)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#60a0b0;font-style:italic"># Version B</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">duree_trajet_B</span>(distance, vitesse):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    duree <span style="color:#666">=</span> distance <span style="color:#666">/</span> vitesse
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>    <span style="color:#007020;font-weight:bold">return</span> duree
+</span></span></code></pre></div><p><strong>Q1.</strong> D&rsquo;après vous, <code>duree_trajet_A(300, 100)</code> et <code>duree_trajet_B(300, 100)</code> affichent-ils quelque chose ? Prédisez avant d&rsquo;exécuter.</p>
+<p><strong>Q2.</strong> Exécutez chaque appel et comparez avec vos prédictions.</p>
+<p><strong>Q3.</strong> Que se passe-t-il si on tente de <strong>stocker le résultat</strong> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>resultat_A <span style="color:#666">=</span> duree_trajet_A(<span style="color:#40a070">300</span>, <span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>resultat_B <span style="color:#666">=</span> duree_trajet_B(<span style="color:#40a070">300</span>, <span style="color:#40a070">100</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(resultat_A)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(resultat_B)
+</span></span></code></pre></div><p><strong>Q4.</strong> Expliquez la différence entre <code>print()</code> et <code>return</code> dans une fonction.</p>
+<hr>
+<h3 id="exercice-7--débogage">Exercice 7 — Débogage</h3>
+<p><strong>Fonction 1</strong> — Cette fonction contient <strong>2 erreurs</strong> :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">celsius_vers_fahrenheit</span>(c)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    f <span style="color:#666">=</span> c <span style="color:#666">*</span> <span style="color:#40a070">9</span><span style="color:#666">/</span><span style="color:#40a070">5</span> <span style="color:#666">+</span> <span style="color:#40a070">32</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    Return f
+</span></span></code></pre></div><p><strong>Q1.</strong> Identifiez les 2 erreurs.</p>
+<p><strong>Q2.</strong> Corrigez la fonction et vérifiez qu&rsquo;elle renvoie <strong>32</strong> pour 0 °C et <strong>212</strong> pour 100 °C.</p>
+<hr>
+<p><strong>Fonction 2</strong> — Cette fonction contient <strong>3 erreurs</strong> :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">imc</span>(poids, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>resultat <span style="color:#666">=</span> poids <span style="color:#666">/</span> (taille<span style="color:#666">**</span><span style="color:#40a070">2</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020;font-weight:bold">return</span>
+</span></span></code></pre></div><p><strong>Q3.</strong> Identifiez les 3 erreurs.</p>
+<p><strong>Q4.</strong> Corrigez la fonction et calculez l&rsquo;IMC d&rsquo;une personne de <strong>70 kg</strong> pour <strong>1,75 m</strong>.</p>
+<hr>
+<h3 id="exercice-8--écrire-des-fonctions">Exercice 8 — Écrire des fonctions</h3>
+<p><strong>Q1.</strong> Écrivez une fonction <code>aire_triangle(base, hauteur)</code> qui renvoie l&rsquo;aire d&rsquo;un triangle.</p>
+<p><em>Formule : base × hauteur ÷ 2. Vérification : <code>aire_triangle(6, 4)</code> → <code>12.0</code></em></p>
+<p><strong>Q2.</strong> Écrivez une fonction <code>convertir_km_miles(km)</code> qui convertit des kilomètres en miles (1 km ≈ 0,621 mile).</p>
+<p><em>Vérification : <code>convertir_km_miles(10)</code> → <code>6.21</code></em></p>
+<p><strong>Q3.</strong> Écrivez une fonction <code>prix_reduit(prix, remise)</code> qui renvoie le prix après une remise en pourcentage.</p>
+<p><em>Vérification : <code>prix_reduit(80, 25)</code> → <code>60.0</code></em></p>
+<p><strong>Q4.</strong> Écrivez une fonction <code>pourboire(addition, pourcentage)</code> qui renvoie le montant du pourboire.</p>
+<p><em>Vérification : <code>pourboire(35, 15)</code> → <code>5.25</code></em></p>
+<p><strong>Q5.</strong> Écrivez une fonction <code>score_basket(un_pt, deux_pts, trois_pts)</code> qui renvoie le score total d&rsquo;un joueur.</p>
+<p><em>Vérification : <code>score_basket(2, 5, 3)</code> → <code>21</code></em></p>
+<hr>
+<h3 id="exercice-9--fonctions-imbriquées--carrelage">Exercice 9 — Fonctions imbriquées : carrelage</h3>
+<p>On veut calculer le coût d&rsquo;un chantier de carrelage.</p>
+<p><strong>Q1.</strong> Écrivez une fonction <code>aire_piece(longueur, largeur)</code> qui renvoie l&rsquo;aire d&rsquo;une pièce rectangulaire (en m²).</p>
+<p><em>Exemple : <code>aire_piece(4, 3)</code> → <code>12</code></em></p>
+<p><strong>Q2.</strong> Écrivez une fonction <code>nb_carreaux(longueur, largeur, cote)</code> qui renvoie le nombre de carreaux nécessaires. Chaque carreau est un carré de côté <code>cote</code> mètres.</p>
+<p><em>Rappel : utilisez <code>aire_piece</code> dans cette fonction.</em></p>
+<p><strong>Q3.</strong> Écrivez une fonction <code>cout_chantier(longueur, largeur, cote, prix_carreau)</code> qui renvoie le coût total en euros en appelant <code>nb_carreaux</code>.</p>
+<p><strong>Q4.</strong> Un client veut carreler une pièce de <strong>5 m × 4 m</strong> avec des carreaux de <strong>0,25 m</strong> de côté à <strong>2 € pièce</strong>. Quel est le coût total ? Montrez votre calcul.</p>
+<hr>
+<h3 id="exercice-10--cantine-scolaire">Exercice 10 — Cantine scolaire</h3>
+<p>Le service de restauration facture : <strong>7,50 €</strong> le repas adulte et <strong>3,20 €</strong> le repas élève.</p>
+<p><strong>Q1.</strong> Écrivez une fonction <code>prix_repas(nb_adultes, nb_eleves)</code> qui renvoie le prix total d&rsquo;un repas.</p>
+<p><em>Exemple : <code>prix_repas(2, 15)</code> → <code>63.0</code></em></p>
+<p><strong>Q2.</strong> Écrivez une fonction <code>prix_semaine(nb_adultes, nb_eleves)</code> qui renvoie le coût pour <strong>5 repas</strong> en appelant <code>prix_repas</code>.</p>
+<p><em>Exemple : <code>prix_semaine(2, 15)</code> → <code>315.0</code></em></p>
+<p><strong>Q3.</strong> Écrivez une fonction <code>devis(nom_groupe, nb_adultes, nb_eleves)</code> qui renvoie une chaîne de caractères du type :
+<code>&quot;Devis pour 3e B : 315.0 euros pour la semaine&quot;</code> en appelant <code>prix_semaine</code>.</p>
+<p><strong>Q4.</strong> Une classe de <strong>28 élèves</strong> part avec <strong>3 accompagnateurs</strong>. Affichez le devis pour le groupe <code>&quot;3e A&quot;</code>.</p>
+</div>
+  <div id="exo-corrs" hidden><h3 id="exercice-1--révisions">Exercice 1 — Révisions</h3>
+<p><strong>Q1.</strong> 3 variables : <code>prix_unitaire</code>, <code>quantite</code>, <code>prix_total</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">N° ligne</th>
+          <th style="text-align: left">Instruction</th>
+          <th style="text-align: center"><code>prix_unitaire</code></th>
+          <th style="text-align: center"><code>quantite</code></th>
+          <th style="text-align: center"><code>prix_total</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left"><code>prix_unitaire = 1.5</code></td>
+          <td style="text-align: center"><strong>1.5</strong></td>
+          <td style="text-align: center">−</td>
+          <td style="text-align: center">−</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left"><code>quantite = 4</code></td>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center"><strong>4</strong></td>
+          <td style="text-align: center">−</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: left"><code>prix_total = prix_unitaire * quantite</code></td>
+          <td style="text-align: center">1.5</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center"><strong>6.0</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong> <code>prix_total</code> vaut <strong>6.0</strong> (1.5 × 4).</p>
+<hr>
+<h3 id="exercice-2--analyse-dune-fonction">Exercice 2 — Analyse d&rsquo;une fonction</h3>
+<p><strong>Q1</strong> : Nom → <code>prix_a_afficher</code> · Arguments → <code>prix_unitaire</code> et <code>quantite</code>.</p>
+<p><strong>Q2</strong> : La première ligne se termine par <code>:</code> (deux-points). Ce caractère annonce le début du bloc d&rsquo;instructions — Python le réclame obligatoirement.</p>
+<p><strong>Q3</strong> : Les deux lignes du bloc commencent par 4 espaces : c&rsquo;est l&rsquo;<strong>indentation</strong>. Elle est obligatoire pour que Python sache quelles instructions appartiennent à la fonction.</p>
+<p><strong>Q4</strong> : La fonction renvoie <strong>1 valeur</strong> : <code>prix_total</code>.</p>
+<p><strong>Q5</strong> : <code>prix_a_afficher(3, 2)</code></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: center"><code>prix_unitaire</code></th>
+          <th style="text-align: center"><code>quantite</code></th>
+          <th style="text-align: center"><code>prix_total</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">3 × 2 = <strong>6.0</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q6</strong> : <code>prix_a_afficher(1.15, 3)</code></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: center"><code>prix_unitaire</code></th>
+          <th style="text-align: center"><code>quantite</code></th>
+          <th style="text-align: center"><code>prix_total</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: center">1.15</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">1.15 × 3 = <strong>3.45</strong></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-3--fonction-truc_muche">Exercice 3 — Fonction <code>truc_muche</code></h3>
+<p><strong>Q1</strong> : a. <code>truc_muche</code> · b. <code>a</code>, <code>b</code>, <code>c</code> · c. 2 lignes · d. 1 valeur · e. <code>truc_muche(2, 5, 1)</code> = 2 + 5 + 1 = <strong>8</strong></p>
+<p><strong>Q2.</strong> Recopier la fonction dans la cellule et exécuter.</p>
+<p><strong>Q3</strong> :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Paramètre</th>
+          <th style="text-align: center"><code>a</code></th>
+          <th style="text-align: center"><code>b</code></th>
+          <th style="text-align: center"><code>c</code></th>
+          <th style="text-align: center"><code>s</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Valeurs</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">5</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2 + 5 + 1 = <strong>8</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q4</strong> : <code>truc_muche(1, 2, 4)</code> → 1 + 2 + 4 = <strong>7</strong></p>
+<hr>
+<h3 id="exercice-4--définition-dune-image">Exercice 4 — Définition d&rsquo;une image</h3>
+<p><strong>Q1</strong> : 960 × 720 = <strong>691 200 pixels</strong></p>
+<p><strong>Q2</strong> : Fonction complétée :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">definition_image</span>(L, H):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    d <span style="color:#666">=</span> L <span style="color:#666">*</span> H
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> d
+</span></span></code></pre></div><p><strong>Q3</strong> : <code>definition_image(800, 600)</code> → <strong>480 000</strong></p>
+<p><strong>Q4</strong> : <code>definition_image(960, 720)</code> → <strong>691 200</strong> — cohérent avec la question 1.</p>
+<hr>
+<h3 id="exercice-5--tableau-de-prédiction">Exercice 5 — Tableau de prédiction</h3>
+<p><strong>Q1 — Tableau de prédiction.</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Appel</th>
+          <th style="text-align: center">Valeur</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>triple(4)</code></td>
+          <td style="text-align: center"><strong>12</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>triple(triple(2))</code></td>
+          <td style="text-align: center"><code>triple(6)</code> = <strong>18</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>score_bonus(2, 3)</code></td>
+          <td style="text-align: center">2×3 + 3 = <strong>9</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>score_bonus(0, 5)</code></td>
+          <td style="text-align: center">0 + 5 = <strong>5</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>score_bonus(1, 0) + score_bonus(0, 2)</code></td>
+          <td style="text-align: center">3 + 2 = <strong>5</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>convertir(10)</code></td>
+          <td style="text-align: center"><strong>6.21</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>convertir(0)</code></td>
+          <td style="text-align: center"><strong>0.0</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong> Recopier les trois fonctions, exécuter, puis compléter la colonne « Valeur réelle » du tableau.</p>
+<p><strong>Q3</strong> : <code>convertir</code> convertit des <strong>kilomètres en miles</strong> (1 km ≈ 0,621 mile).</p>
+<p><strong>Q4</strong> : <code>score_bonus(3, 5)</code> = 3×3 + 5 = <strong>14</strong></p>
+<hr>
+<h3 id="exercice-6--print-ou-return-">Exercice 6 — <code>print</code> ou <code>return</code> ?</h3>
+<p><strong>Q1 — Prédictions</strong> :</p>
+<ul>
+<li><code>duree_trajet_A(300, 100)</code> : <strong>affiche</strong> <code>3.0</code> (car la fonction utilise <code>print</code>)</li>
+<li><code>duree_trajet_B(300, 100)</code> : <strong>n&rsquo;affiche rien</strong> (car la fonction utilise <code>return</code>)</li>
+</ul>
+<p><strong>Q2.</strong> Vérifier par exécution.</p>
+<p><strong>Q3 — Stocker le résultat</strong> :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>resultat_A <span style="color:#666">=</span> duree_trajet_A(<span style="color:#40a070">300</span>, <span style="color:#40a070">100</span>)  <span style="color:#60a0b0;font-style:italic"># affiche 3.0, puis stocke None</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>resultat_B <span style="color:#666">=</span> duree_trajet_B(<span style="color:#40a070">300</span>, <span style="color:#40a070">100</span>)  <span style="color:#60a0b0;font-style:italic"># n&#39;affiche rien, stocke 3.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(resultat_A)  <span style="color:#60a0b0;font-style:italic"># affiche : None</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(resultat_B)  <span style="color:#60a0b0;font-style:italic"># affiche : 3.0</span>
+</span></span></code></pre></div><p><code>resultat_A</code> vaut <code>None</code> car <code>duree_trajet_A</code> ne renvoie rien avec <code>return</code>.</p>
+<p><strong>Q4</strong> : <code>print()</code> affiche une valeur à l&rsquo;écran mais <strong>ne la transmet pas</strong> au reste du programme. <code>return</code> <strong>renvoie</strong> la valeur pour qu&rsquo;elle puisse être stockée ou réutilisée.</p>
+<hr>
+<h3 id="exercice-7--débogage">Exercice 7 — Débogage</h3>
+<p><strong>Q1.</strong> Fonction 1 — <code>celsius_vers_fahrenheit</code> : 2 erreurs.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Erreur</th>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: left">Manque <code>:</code> à la fin de <code>def celsius_vers_fahrenheit(c)</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: left"><code>Return</code> avec majuscule → doit être <code>return</code> (minuscule)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong> Fonction corrigée :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">celsius_vers_fahrenheit</span>(c):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    f <span style="color:#666">=</span> c <span style="color:#666">*</span> <span style="color:#40a070">9</span><span style="color:#666">/</span><span style="color:#40a070">5</span> <span style="color:#666">+</span> <span style="color:#40a070">32</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> f
+</span></span></code></pre></div><p>Vérifications : <code>celsius_vers_fahrenheit(0)</code> → <strong>32.0</strong> · <code>celsius_vers_fahrenheit(100)</code> → <strong>212.0</strong></p>
+<hr>
+<p><strong>Q3.</strong> Fonction 2 — <code>imc</code> : 3 erreurs.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Erreur</th>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: left"><code>resultat = ...</code> non indenté (doit être dans le bloc de la fonction)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: left"><code>return</code> non indenté (doit être dans le bloc de la fonction)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: left"><code>return</code> sans valeur → doit être <code>return resultat</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q4.</strong> Fonction corrigée :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">imc</span>(poids, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    resultat <span style="color:#666">=</span> poids <span style="color:#666">/</span> (taille<span style="color:#666">**</span><span style="color:#40a070">2</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> resultat
+</span></span></code></pre></div><p>Vérification : <code>imc(70, 1.75)</code> = 70 ÷ 1.75² = 70 ÷ 3.0625 ≈ <strong>22.86</strong></p>
+<hr>
+<h3 id="exercice-8--écrire-des-fonctions">Exercice 8 — Écrire des fonctions</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">aire_triangle</span>(base, hauteur):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> base <span style="color:#666">*</span> hauteur <span style="color:#666">/</span> <span style="color:#40a070">2</span>
+</span></span></code></pre></div><p><code>aire_triangle(6, 4)</code> = 6 × 4 ÷ 2 = <strong>12.0</strong> ✓</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">convertir_km_miles</span>(km):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> km <span style="color:#666">*</span> <span style="color:#40a070">0.621</span>
+</span></span></code></pre></div><p><code>convertir_km_miles(10)</code> = <strong>6.21</strong> ✓</p>
+<p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prix_reduit</span>(prix, remise):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> prix <span style="color:#666">*</span> (<span style="color:#40a070">1</span> <span style="color:#666">-</span> remise <span style="color:#666">/</span> <span style="color:#40a070">100</span>)
+</span></span></code></pre></div><p><code>prix_reduit(80, 25)</code> = 80 × 0.75 = <strong>60.0</strong> ✓</p>
+<p><strong>Q4.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">pourboire</span>(addition, pourcentage):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> addition <span style="color:#666">*</span> pourcentage <span style="color:#666">/</span> <span style="color:#40a070">100</span>
+</span></span></code></pre></div><p><code>pourboire(35, 15)</code> = 35 × 15 ÷ 100 = <strong>5.25</strong> ✓</p>
+<p><strong>Q5.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">score_basket</span>(un_pt, deux_pts, trois_pts):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> un_pt <span style="color:#666">+</span> deux_pts <span style="color:#666">*</span> <span style="color:#40a070">2</span> <span style="color:#666">+</span> trois_pts <span style="color:#666">*</span> <span style="color:#40a070">3</span>
+</span></span></code></pre></div><p><code>score_basket(2, 5, 3)</code> = 2 + 10 + 9 = <strong>21</strong> ✓</p>
+<hr>
+<h3 id="exercice-9--carrelage">Exercice 9 — Carrelage</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">aire_piece</span>(longueur, largeur):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> longueur <span style="color:#666">*</span> largeur
+</span></span></code></pre></div><p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">nb_carreaux</span>(longueur, largeur, cote):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> aire_piece(longueur, largeur) <span style="color:#666">/</span> (cote <span style="color:#666">*</span> cote)
+</span></span></code></pre></div><p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">cout_chantier</span>(longueur, largeur, cote, prix_carreau):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> nb_carreaux(longueur, largeur, cote) <span style="color:#666">*</span> prix_carreau
+</span></span></code></pre></div><p><strong>Q4</strong> : Pièce 5 m × 4 m, carreaux 0,25 m, 2 €/carreau</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Calcul</th>
+          <th style="text-align: center">Valeur</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Aire pièce</td>
+          <td style="text-align: center">5 × 4 = 20 m²</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Aire d&rsquo;un carreau</td>
+          <td style="text-align: center">0,25 × 0,25 = 0,0625 m²</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Nombre de carreaux</td>
+          <td style="text-align: center">20 ÷ 0,0625 = <strong>320</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Coût total</td>
+          <td style="text-align: center">320 × 2 = <strong>640 €</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><code>cout_chantier(5, 4, 0.25, 2)</code> → <strong>640.0</strong></p>
+<hr>
+<h3 id="exercice-10--cantine-scolaire">Exercice 10 — Cantine scolaire</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prix_repas</span>(nb_adultes, nb_eleves):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">7.5</span> <span style="color:#666">*</span> nb_adultes <span style="color:#666">+</span> <span style="color:#40a070">3.2</span> <span style="color:#666">*</span> nb_eleves
+</span></span></code></pre></div><p><code>prix_repas(2, 15)</code> = 7,5×2 + 3,2×15 = 15 + 48 = <strong>63.0</strong> ✓</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">prix_semaine</span>(nb_adultes, nb_eleves):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">5</span> <span style="color:#666">*</span> prix_repas(nb_adultes, nb_eleves)
+</span></span></code></pre></div><p><code>prix_semaine(2, 15)</code> = 5 × 63 = <strong>315.0</strong> ✓</p>
+<p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">devis</span>(nom_groupe, nb_adultes, nb_eleves):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    total <span style="color:#666">=</span> prix_semaine(nb_adultes, nb_eleves)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Devis pour &#34;</span> <span style="color:#666">+</span> nom_groupe <span style="color:#666">+</span> <span style="color:#4070a0">&#34; : &#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(total) <span style="color:#666">+</span> <span style="color:#4070a0">&#34; euros pour la semaine&#34;</span>
+</span></span></code></pre></div><p><strong>Q4</strong> : <code>prix_semaine(3, 28)</code> = 5 × (7,5×3 + 3,2×28) = 5 × (22,5 + 89,6) = 5 × 112,1 = <strong>560.5 €</strong></p>
+<p><code>devis(&quot;3e A&quot;, 3, 28)</code> → <code>&quot;Devis pour 3e A : 560.5 euros pour la semaine&quot;</code></p>
+</div>
+  <div id="exo-list"></div>
+</section>
+
+
+
+
+
+
+<section id="editor" class="tab-panel">
+  <div class="snt-qcm-intro">
+    <span class="badge">Bac à sable</span>
+    <span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span>
+  </div>
+  <div class="py-editor">
+    <div class="py-editor-head">
+      <span class="dot"></span>
+      <span>Python · main.py</span>
+    </div>
+    <textarea id="pyCode" spellcheck="false" rows="8">a = 15
 b = 10
 c = a + b
-print(c)</textarea><div class=py-editor-foot><button onclick=runPython()>▸ Exécuter</button></div><div class="py-editor-out empty" id=pyOut>Sortie du programme…</div></div><p class=py-editor-note>Cet éditeur utilise <strong>Pyodide</strong> (Python en WebAssembly). Le premier lancement peut prendre quelques secondes.</p></section><div class=chap-adjacent style=margin-top:64px><a class="adj-link prev" href=/mabemat/snt/><div><div class=adj-lbl>← Toutes les séances</div></div><span></span>
-</a><a class="adj-link next" href=/mabemat/snt/seance-03-conditionnelles/><div><div class=adj-lbl>Séance suivante →</div></div><span></span></a></div><script>var pyodideReady,UNLOCKED="[]";function isUnlocked(e){return UNLOCKED.indexOf(e)!==-1}document.addEventListener("DOMContentLoaded",function(){var e,t=document.querySelectorAll(".tab-bar button"),s=document.querySelectorAll(".tab-panel");if(t.forEach(function(e){e.addEventListener("click",function(){var n,o=e.dataset.tab;t.forEach(function(t){t.classList.toggle("active",t===e)}),s.forEach(function(e){e.classList.toggle("active",e.id===o)}),o==="editor"&&(n=document.getElementById("pyCode"),n&&(n.style.height="auto",n.style.height=n.scrollHeight+"px"))})}),e=document.getElementById("pyCode"),e){function n(e){e.style.height="auto",e.style.height=e.scrollHeight+"px"}n(e),e.addEventListener("input",function(){n(e)})}(function(){var t,o,i=document.getElementById("exo-enonces"),a=document.getElementById("exo-corrs"),n=document.getElementById("exo-list");if(!n)return;function s(e){if(!e)return[];var t=[],n=Array.from(e.querySelectorAll("h3"));return n.forEach(function(e){for(var s=e.textContent.match(/Exercice\s+(\d+)/i),i=s?parseInt(s[1]):0,a=e.textContent.replace(/^Exercice\s+\d+\s*[\u2014\u2013-]\s*/i,"").trim(),o=document.createElement("div"),n=e.nextElementSibling;n&&n.tagName!=="H3";)n.tagName!=="HR"&&o.appendChild(n.cloneNode(!0)),n=n.nextElementSibling;t.push({num:i,title:a,html:o.innerHTML})}),t}o=s(i),t={},s(a).forEach(function(e){t[e.num]=e.html});function r(e){return e<10?"0"+e:""+e}o.forEach(function(e){var i,a,d,o=isUnlocked(e.num),c=t[e.num]||"",l=c.length>0,s=document.createElement("article");s.className="exo",s.dataset.id="ex"+e.num,s.dataset.unlocked=o?"true":"false",i='<div class="exo-head"><div class="exo-num">'+r(e.num)+'</div><div class="exo-label">Exercice</div><div class="exo-titre">'+e.title+'</div></div><div class="exo-body"><div class="exo-enonce">'+e.html+"</div></div>",l&&(i+='<div class="exo-actions"><span class="exo-status">'+(o?"Correction publiée":"Correction non publiée")+'</span><button class="exo-btn" type="button"'+(o?"":" disabled")+'><span class="arrow">&#9658;</span> <span>Voir la correction</span></button></div>',o||(i+=`<div class="exo-corr-locked"><span class="icon">&#9747;</span><span>La correction sera disponible quand votre enseignante l'aura publiée.</span></div>`),i+='<div class="exo-corr"><span class="corr-label">Correction</span>'+c+"</div>"),s.innerHTML=i,l&&o&&(a=s.querySelector(".exo-btn"),d=s.querySelector(".exo-corr"),a.addEventListener("click",function(){var e=d.classList.toggle("open");a.classList.toggle("open",e),a.querySelector("span:last-child").textContent=e?"Masquer la correction":"Voir la correction"})),n.appendChild(s)})})(),function(){var n,s,o,i,a,r,t=document.querySelector('#qcm .qcm-container[data-engine="snt"]');if(!t)return;if(s=t.querySelectorAll(".qcm-q"),!s.length)return;i=["A","B","C","D","E"],n=[],s.forEach(function(e,t){var s,o,a,c,l=parseInt(e.dataset.correct,10),d=e.querySelector(".qcm-question")?e.querySelector(".qcm-question").innerHTML.trim():"",r=[];e.querySelectorAll(".qcm-o").forEach(function(e){var t=e.querySelector("span:not(.qcm-letter):not(.rd)");r.push(t?t.innerHTML.trim():e.innerHTML.trim())}),o=e.querySelector(".qcm-correction"),a=o?o.innerHTML.trim():"",c=String(t+1).padStart(2,"0"),s='<div class="qcm-head"><div class="qcm-num">'+c+'</div><div class="qcm-label">Question</div><div class="qcm-status"></div></div><div class="qcm-enonce">'+d+'</div><div class="qcm-choices">',r.forEach(function(e,t){s+='<button class="qcm-choice"><span class="bullet">'+i[t]+"</span><span>"+e+"</span></button>"}),s+="</div>",a&&(s+='<div class="qcm-corr"><span class="corr-label">Correction</span>'+a+"</div>"),n.push({html:s,correct:l})}),o=n.length,a='<div class="qcm-progress"><span class="qcm-prog-label">Progression</span><div class="qcm-prog-bar"><div class="qcm-prog-fill" id="sntQcmFill" style="width:0%"></div></div><span class="qcm-prog-stats" id="sntQcmStats">0 / '+o+" répondue"+(o>1?"s":"")+"</span></div>",r=n.map(function(e){return'<article class="qcm" data-correct="'+e.correct+'">'+e.html+"</article>"}).join(""),t.innerHTML=a+r;function c(){var e=t.querySelectorAll("article.qcm"),n=t.querySelectorAll("article.qcm.locked"),i=t.querySelectorAll("article.qcm .qcm-status.ok").length,a=t.querySelectorAll("article.qcm .qcm-status.ko").length,s=document.getElementById("sntQcmFill"),o=document.getElementById("sntQcmStats");s&&(s.style.width=n.length/e.length*100+"%"),o&&(o.innerHTML=n.length+" / "+e.length+" répondue"+(e.length>1?"s":"")+(n.length>0?' · <span class="ok">'+i+' ✓</span> · <span class="ko">'+a+" ✕</span>":""))}t.querySelectorAll("article.qcm").forEach(function(e){var t=parseInt(e.dataset.correct,10),n=Array.from(e.querySelectorAll(".qcm-choice")),s=e.querySelector(".qcm-status");!(t!=t)&&n[t]&&n[t].classList.add("is-correct"),n.forEach(function(n,o){n.addEventListener("click",function(){if(e.classList.contains("locked"))return;n.classList.add("selected");var a,i=o===t;n.classList.add(i?"is-correct":"is-wrong"),e.classList.add("locked"),s.textContent=i?"✓ Correct":"✕ Incorrect",s.classList.add(i?"ok":"ko"),window.renderMathInElement&&(a=e.querySelector(".qcm-corr"),a&&renderMathInElement(a,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})),c()})})}),c()}()}),pyodideReady=null;async function getPyodide(){return pyodideReady||(pyodideReady=(async()=>{var e,n,t=document.getElementById("pyOut");return t.classList.add("empty"),t.textContent="Chargement de Python…",e=document.createElement("script"),e.src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js",document.head.appendChild(e),await new Promise(function(t){e.onload=t}),n=await loadPyodide(),t.textContent="",n})()),pyodideReady}async function runPython(){var t,n,s=document.getElementById("pyCode").value,e=document.getElementById("pyOut");e.classList.remove("empty"),e.textContent="Exécution…";try{n=await getPyodide(),t="",n.setStdout({batched:function(e){t+=e+`
-`}}),n.setStderr({batched:function(e){t+=e+`
-`}}),await n.runPythonAsync(s),e.textContent=t||"(Pas de sortie)",t||e.classList.add("empty")}catch(t){e.textContent=String(t),e.classList.remove("empty")}}</script></div><footer class=site-footer><div>MaBémat · Mme Bertail · Collège & Lycée</div><div><a href=/mabemat/credits/>Ressources & crédits</a>
-&nbsp;·&nbsp;
-<a href=/mabemat/mentions-legales/>Mentions légales</a></div></footer><script src=/mabemat/js/qcm.js></script><script src=https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){typeof scratchblocks!="undefined"&&scratchblocks.renderMatching("pre.blocks",{style:"scratch3",languages:["fr"],scale:.75})})</script><script>const BUILD_TS="1781366857";document.querySelectorAll('img[src*="/figures/"]').forEach(function(e){const t=e.src.split("?")[0];e.src=t+"?v="+BUILD_TS})</script></body></html>
+print(c)</textarea>
+    <div class="py-editor-foot">
+      <button onclick="runPython()">▸ Exécuter</button>
+    </div>
+    <div class="py-editor-out empty" id="pyOut">Sortie du programme…</div>
+  </div>
+  <p class="py-editor-note">
+    Cet éditeur utilise <strong>Pyodide</strong> (Python en WebAssembly). Le premier lancement peut prendre quelques secondes.
+  </p>
+</section>
+
+
+
+<div class="chap-adjacent" style="margin-top:64px;">
+  <a class="adj-link prev" href="/mabemat/snt/">
+    <div><div class="adj-lbl">← Toutes les séances</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/snt/seance-03-conditionnelles/">
+    <div><div class="adj-lbl">Séance suivante →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+<script>
+ 
+var UNLOCKED = "[]";
+function isUnlocked(n) { return UNLOCKED.indexOf(n) !== -1; }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+   
+  var buttons = document.querySelectorAll('.tab-bar button');
+  var panels  = document.querySelectorAll('.tab-panel');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.dataset.tab;
+      buttons.forEach(function(b) { b.classList.toggle('active', b === btn); });
+      panels.forEach(function(p) { p.classList.toggle('active', p.id === target); });
+      if (target === 'editor') {
+        var ta = document.getElementById('pyCode');
+        if (ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+      }
+    });
+  });
+
+   
+  var pyCodeEl = document.getElementById('pyCode');
+  if (pyCodeEl) {
+    function autoResize(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+    autoResize(pyCodeEl);
+    pyCodeEl.addEventListener('input', function() { autoResize(pyCodeEl); });
+  }
+
+   
+  (function buildExoCards() {
+    var enoDiv  = document.getElementById('exo-enonces');
+    var corrDivSrc = document.getElementById('exo-corrs');
+    var listDiv = document.getElementById('exo-list');
+    if (!listDiv) return;
+
+     
+    function parseBlocks(container) {
+      if (!container) return [];
+      var blocks = [];
+      var h3s = Array.from(container.querySelectorAll('h3'));
+      h3s.forEach(function(h3) {
+        var m = h3.textContent.match(/Exercice\s+(\d+)/i);
+        var num = m ? parseInt(m[1]) : 0;
+        var title = h3.textContent.replace(/^Exercice\s+\d+\s*[\u2014\u2013-]\s*/i, '').trim();
+        var body = document.createElement('div');
+        var next = h3.nextElementSibling;
+        while (next && next.tagName !== 'H3') {
+           
+          if (next.tagName !== 'HR') body.appendChild(next.cloneNode(true));
+          next = next.nextElementSibling;
+        }
+        blocks.push({ num: num, title: title, html: body.innerHTML });
+      });
+      return blocks;
+    }
+
+    var enonces = parseBlocks(enoDiv);
+    var corrMap = {};
+    parseBlocks(corrDivSrc).forEach(function(b) { corrMap[b.num] = b.html; });
+
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+    enonces.forEach(function(eno) {
+      var unlocked = isUnlocked(eno.num);
+      var corrHtml = corrMap[eno.num] || '';
+      var hasCorr  = corrHtml.length > 0;
+
+      var art = document.createElement('article');
+      art.className = 'exo';
+      art.dataset.id = 'ex' + eno.num;
+      art.dataset.unlocked = unlocked ? 'true' : 'false';
+
+      var html =
+        '<div class="exo-head">' +
+          '<div class="exo-num">' + pad2(eno.num) + '</div>' +
+          '<div class="exo-label">Exercice</div>' +
+          '<div class="exo-titre">' + eno.title + '</div>' +
+        '</div>' +
+        '<div class="exo-body"><div class="exo-enonce">' + eno.html + '</div></div>';
+
+      if (hasCorr) {
+        html +=
+          '<div class="exo-actions">' +
+            '<span class="exo-status">' +
+              (unlocked ? 'Correction publi\u00e9e' : 'Correction non publi\u00e9e') +
+            '</span>' +
+            '<button class="exo-btn" type="button"' + (unlocked ? '' : ' disabled') + '>' +
+              '<span class="arrow">&#9658;</span> <span>Voir la correction</span>' +
+            '</button>' +
+          '</div>';
+        if (!unlocked) {
+          html +=
+            '<div class="exo-corr-locked">' +
+              '<span class="icon">&#9747;</span>' +
+              '<span>La correction sera disponible quand votre enseignante l\'aura publi\u00e9e.</span>' +
+            '</div>';
+        }
+        html +=
+          '<div class="exo-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      art.innerHTML = html;
+
+       
+      if (hasCorr && unlocked) {
+        var btn  = art.querySelector('.exo-btn');
+        var corr = art.querySelector('.exo-corr');
+        btn.addEventListener('click', function() {
+          var open = corr.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          btn.querySelector('span:last-child').textContent =
+            open ? 'Masquer la correction' : 'Voir la correction';
+        });
+      }
+
+      listDiv.appendChild(art);
+    });
+  })();
+
+
+   
+  (function initSNTQcm() {
+    var container = document.querySelector('#qcm .qcm-container[data-engine="snt"]');
+    if (!container) return;
+
+    var rawQs = container.querySelectorAll('.qcm-q');
+    if (!rawQs.length) return;
+
+    var letters = ['A', 'B', 'C', 'D', 'E'];
+    var articles = [];
+
+    rawQs.forEach(function(qEl, i) {
+      var correct = parseInt(qEl.dataset.correct, 10);
+      var qHtml = qEl.querySelector('.qcm-question') ? qEl.querySelector('.qcm-question').innerHTML.trim() : '';
+      var opts = [];
+      qEl.querySelectorAll('.qcm-o').forEach(function(o) {
+        var span = o.querySelector('span:not(.qcm-letter):not(.rd)');
+        opts.push(span ? span.innerHTML.trim() : o.innerHTML.trim());
+      });
+      var corrEl = qEl.querySelector('.qcm-correction');
+      var corrHtml = corrEl ? corrEl.innerHTML.trim() : '';
+
+      var num = String(i + 1).padStart(2, '0');
+      var html =
+        '<div class="qcm-head">' +
+          '<div class="qcm-num">' + num + '</div>' +
+          '<div class="qcm-label">Question</div>' +
+          '<div class="qcm-status"></div>' +
+        '</div>' +
+        '<div class="qcm-enonce">' + qHtml + '</div>' +
+        '<div class="qcm-choices">';
+
+      opts.forEach(function(opt, j) {
+        html += '<button class="qcm-choice">' +
+          '<span class="bullet">' + letters[j] + '</span>' +
+          '<span>' + opt + '</span>' +
+        '</button>';
+      });
+      html += '</div>';
+
+      if (corrHtml) {
+        html +=
+          '<div class="qcm-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      articles.push({ html: html, correct: correct });
+    });
+
+     
+    var total = articles.length;
+    var progressHtml =
+      '<div class="qcm-progress">' +
+        '<span class="qcm-prog-label">Progression</span>' +
+        '<div class="qcm-prog-bar"><div class="qcm-prog-fill" id="sntQcmFill" style="width:0%"></div></div>' +
+        '<span class="qcm-prog-stats" id="sntQcmStats">0 / ' + total + ' répondue' + (total > 1 ? 's' : '') + '</span>' +
+      '</div>';
+
+    var articlesHtml = articles.map(function(a, i) {
+      return '<article class="qcm" data-correct="' + a.correct + '">' + a.html + '</article>';
+    }).join('');
+
+    container.innerHTML = progressHtml + articlesHtml;
+
+    function updateProgress() {
+      var all = container.querySelectorAll('article.qcm');
+      var answered = container.querySelectorAll('article.qcm.locked');
+      var ok = container.querySelectorAll('article.qcm .qcm-status.ok').length;
+      var ko = container.querySelectorAll('article.qcm .qcm-status.ko').length;
+      var fill = document.getElementById('sntQcmFill');
+      var stats = document.getElementById('sntQcmStats');
+      if (fill) fill.style.width = (answered.length / all.length * 100) + '%';
+      if (stats) stats.innerHTML =
+        answered.length + ' / ' + all.length + ' répondue' + (all.length > 1 ? 's' : '') +
+        (answered.length > 0
+          ? ' · <span class="ok">' + ok + ' ✓</span> · <span class="ko">' + ko + ' ✕</span>'
+          : '');
+    }
+
+    container.querySelectorAll('article.qcm').forEach(function(qcm) {
+      var idx = parseInt(qcm.dataset.correct, 10);
+      var choices = Array.from(qcm.querySelectorAll('.qcm-choice'));
+      var status = qcm.querySelector('.qcm-status');
+      if (!isNaN(idx) && choices[idx]) choices[idx].classList.add('is-correct');
+      choices.forEach(function(choice, i) {
+        choice.addEventListener('click', function() {
+          if (qcm.classList.contains('locked')) return;
+          choice.classList.add('selected');
+          var isCorrect = (i === idx);
+          choice.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+          qcm.classList.add('locked');
+          status.textContent = isCorrect ? '✓ Correct' : '✕ Incorrect';
+          status.classList.add(isCorrect ? 'ok' : 'ko');
+           
+          if (window.renderMathInElement) {
+            var corr = qcm.querySelector('.qcm-corr');
+            if (corr) renderMathInElement(corr, {
+              delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],
+              throwOnError: false
+            });
+          }
+          updateProgress();
+        });
+      });
+    });
+
+    updateProgress();
+  })();
+
+});
+
+ 
+var pyodideReady = null;
+async function getPyodide() {
+  if (!pyodideReady) {
+    pyodideReady = (async () => {
+      var out = document.getElementById('pyOut');
+      out.classList.add('empty');
+      out.textContent = 'Chargement de Python…';
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js';
+      document.head.appendChild(script);
+      await new Promise(function(r) { script.onload = r; });
+      var py = await loadPyodide();
+      out.textContent = '';
+      return py;
+    })();
+  }
+  return pyodideReady;
+}
+
+async function runPython() {
+  var code = document.getElementById('pyCode').value;
+  var out  = document.getElementById('pyOut');
+  out.classList.remove('empty');
+  out.textContent = 'Exécution…';
+  try {
+    var py = await getPyodide();
+    var buf = '';
+    py.setStdout({ batched: function(s) { buf += s + '\n'; } });
+    py.setStderr({ batched: function(s) { buf += s + '\n'; } });
+    await py.runPythonAsync(code);
+    out.textContent = buf || '(Pas de sortie)';
+    if (!buf) out.classList.add('empty');
+  } catch(e) {
+    out.textContent = String(e);
+    out.classList.remove('empty');
+  }
+}
+</script>
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1781367422';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

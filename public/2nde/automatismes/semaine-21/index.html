@@ -1,34 +1,637 @@
-<!doctype html><html lang=fr class=lvl-2nde><head><meta charset=UTF-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content="no-cache"><meta http-equiv=Expires content="0"><meta name=viewport content="width=device-width,initial-scale=1"><title>Semaine 21 — MaBémat</title><link rel=icon type=image/png sizes=32x32 href=/mabemat/favicon-32.png><link rel=icon type=image/png sizes=512x512 href=/mabemat/favicon-512.png><link rel=icon href=/mabemat/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=/mabemat/apple-touch-icon.png><meta name=description content="Cours de maths — Mme Bertail — Collège & Lycée"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel=stylesheet><link rel=stylesheet href=/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg+KFltyFnED1zwQ=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js crossorigin=anonymous onload='var corrDivs,hiddenPanels=[];document.querySelectorAll(".seance-panel, .mode-panel").forEach(function(e){if(getComputedStyle(e).display==="none"){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;hiddenPanels.push(e),e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),corrDivs=document.querySelectorAll(".auto3-corr, .exo-corr, .corr-box"),corrDivs.forEach(function(e){if(e.style.display==="none"||e.style.display===""){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;e.dataset.katexHide="1",e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]}),hiddenPanels.forEach(function(e){e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel)}),corrDivs.forEach(function(e){e.dataset.katexHide&&(e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel),delete e.dataset.katexHide)})'></script><style>pre code span[style*="user-select:none"]{border-right:1px solid #bbb !important;background:0 0 !important;padding-right:10px !important;margin-right:6px !important}pre[style*=background-color]{background-color:transparent !important}</style></head><body><header class=topbar><a href=https://mabemat.github.io/mabemat/ class=brand><span class=brand-text><span class=brand-ma>Ma</span><span class=brand-bemat>Bémat</span></span></a><nav><a href=/mabemat/6e/>6e</a>
-<a href=/mabemat/3e/>3e</a>
-<a href=/mabemat/2nde/ class=active>2nde</a>
-<a href=/mabemat/1re/>1re</a>
-<a href=/mabemat/snt/>Python</a>
-<a href=/mabemat/liens/>Liens</a></nav></header><div class=container><link rel=stylesheet href=/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css integrity="sha256-8jinyPO+P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin=anonymous><div class="crumbs fade-up"><a href=https://mabemat.github.io/mabemat/>Accueil</a>
-<span class=sep>/</span>
-<a href=/mabemat/2nde/>2nde</a>
-<span class=sep>/</span>
-<a href=/mabemat/2nde/automatismes/>Automatismes</a>
-<span class=sep>/</span>
-<span>Semaine 21</span></div><section class="wk-hero fade-up d1"><div class=wk-hero-top><h1>Semaine <em>21</em></h1><button class="btn-new accent" id=btn-project type=button aria-label="Lancer le mode projection">
-<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-Projeter</button></div><div class=wk-meta><span><span class=dot></span>Séance + Devoirs</span>
-<span><span class=dot></span>12 questions</span>
-<span><span class=dot></span>≈ 20 min</span></div></section><div class="mode-tabs-wrap fade-up d2"><div class=mode-tabs role=tablist><button class=active data-tab=seance role=tab aria-selected=true>
-<span class=tab-idx>Séance</span>
-<em>Classique</em>
-</button>
-<button data-tab=devoir role=tab aria-selected=false>
-<span class=tab-idx>Séance</span>
-<em>Devoirs</em></button></div></div><section id=panel-seance class="mode-panel panel-seance active fade-up d3"><p class=mode-intro>Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>01</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Développer puis réduire l&rsquo;expression littérale suivante :</p>$$A=\left(-\dfrac{4}{5}c+4\right)\left(-\dfrac{6}{7}c+2\right)-\left(-\dfrac{2}{7}c-5\right)^2$$</div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>On développe chaque facteur et le carré :</p>$$A = \dfrac{24c^2}{35} - \dfrac{24c}{7} - \dfrac{8c}{5} + 8 - \dfrac{4c^2}{49} + \dfrac{20c}{7} - 25$$<p>On regroupe les termes de même degré :</p>$${\color{#4A5D7A}A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>02</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Encadrer le nombre suivant par deux puissances de 10 d&rsquo;exposants consécutifs :</p>$$\dots \leqslant 84{,}074 \leqslant \dots$$</div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>Comme $10^1 = 10$ et $10^2 = 100$, et que $10 \leqslant 84{,}074 \leqslant 100$ :</p>$${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>03</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(6\,;\,-4)$ et le vecteur $\vec{u}\begin{pmatrix}1\\-3\end{pmatrix}$.</p><p>Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{AB}$.</p></div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>$\overrightarrow{AB} = \vec{u}$ signifie :</p>$$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x_B = 7 \\ y_B = -7\end{cases}$$$${\color{#4A5D7A}B(7\,;\,-7)}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>04</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>La droite représentant la fonction linéaire $f$ passe par le point de coordonnées $(15\,;\,60)$.</p><p>Donner l&rsquo;expression de $f(x)$.</p><img src=/mabemat/images/automatismes/2nde/s21-q04.svg alt="Graphique de f" style=width:60%;max-height:400px;max-width:100%></div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>Une fonction linéaire est de la forme $f(x) = ax$.</p><p>Puisque $f(15) = 60$ :</p>$$a = \dfrac{60}{15} = 4$$$${\color{#4A5D7A}f(x) = 4x}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>05</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p><strong>a)</strong> Résoudre dans $\mathbb{R}$ : $x^3 = 125$</p><p><strong>b)</strong> Résoudre dans $\mathbb{R}$ : $x^2 = 16$</p></div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p><strong>a)</strong> On cherche le nombre dont le cube est $125$. Comme $5^3 = 125$ :</p>$${\color{#4A5D7A}S = \{5\}}$$<p><strong>b)</strong> On reconnaît une équation $x^2 = k$ avec $k = 16 > 0$, donc deux solutions $\pm\sqrt{16}$ :</p>$${\color{#4A5D7A}S = \{-4\,;\,4\}}$$</div></div></article></section><section id=panel-devoir class="mode-panel panel-devoir"><p class=mode-intro>Mêmes thèmes, énoncés différents. Correction en classe.</p><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>01</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Développer puis réduire l&rsquo;expression littérale suivante :</p>$$A=\left(-\dfrac{6}{7}y-4\right)^2-\left(\dfrac{4}{7}y+3\right)^2$$</div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>On développe chaque carré :</p>$$\left(-\dfrac{6}{7}y-4\right)^2 = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16$$$$\left(\dfrac{4}{7}y+3\right)^2 = \dfrac{16}{49}y^2 + \dfrac{24}{7}y + 9$$$$A = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16 - \dfrac{16}{49}y^2 - \dfrac{24}{7}y - 9$$$${\color{#4A5D7A}A = \dfrac{20}{49}y^2 + \dfrac{24}{7}y + 7}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>02</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Encadrer le nombre suivant par deux puissances de 10 d&rsquo;exposants consécutifs :</p>$$\dots \leqslant 0{,}009\,4 \leqslant \dots$$</div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>Comme $10^{-3} = 0{,}001$ et $10^{-2} = 0{,}01$, et que $0{,}001 \leqslant 0{,}0094 \leqslant 0{,}01$ :</p>$${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>03</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(7\,;\,-5)$ et le vecteur $\vec{u}\begin{pmatrix}-7\\-3\end{pmatrix}$.</p><p>Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{BA}$.</p></div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>$\overrightarrow{BA} = \vec{u}$ signifie :</p>$$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_B = 14 \\ y_B = -2\end{cases}$$$${\color{#4A5D7A}B(14\,;\,-2)}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>04</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p>Soit $f$ la fonction affine telle que $f(7) = -4$ et $f(0) = 10$.</p><p>Calculer l&rsquo;antécédent de $-2$.</p></div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p>$f(0) = 10$ donne l&rsquo;ordonnée à l&rsquo;origine : $b = 10$.</p><p>$f(7) = -4$ : $\;7a + 10 = -4 \implies 7a = -14 \implies a = -2$.</p><p>Donc $f(x) = -2x + 10$.</p><p>Antécédent de $-2$ : $-2x + 10 = -2 \implies -2x = -12 \implies x = 6$.</p>$${\color{#4A5D7A}x = 6}$$</div></div></article><article class=auto1re-card><div class=auto1re-head><div class=auto1re-num>05</div><div class=auto1re-label>Question</div></div><div class=auto1re-enonce><p><strong>a)</strong> Résoudre dans $\mathbb{R}$ : $x^3 = -27$</p><p><strong>b)</strong> Résoudre dans $\mathbb{R}$ : $x^2 = 121$</p></div><button class=auto1re-toggle type=button aria-expanded=false>
-<span class=arrow>▸</span><span class=t>Voir la correction</span></button><div class=auto1re-corr><span class=auto1re-corr-label>Correction</span><div><p><strong>a)</strong> Comme $(-3)^3 = -27$ :</p>$${\color{#4A5D7A}S = \{-3\}}$$<p><strong>b)</strong> $x^2 = 121$ avec $121 > 0$, donc deux solutions $\pm\sqrt{121}$ :</p>$${\color{#4A5D7A}S = \{-11\,;\,11\}}$$</div></div></article></section><div class="wk-adjacent fade-up"><div><a class=adj-link href=/mabemat/2nde/automatismes/semaine-20/>← Semaine précédente</a></div><div><a class=adj-link href=/mabemat/2nde/automatismes/semaine-22/>Semaine suivante →</a></div></div><script>(function(){document.querySelectorAll(".mode-tabs button").forEach(function(e){e.addEventListener("click",function(){document.querySelectorAll(".mode-tabs button").forEach(function(e){e.classList.remove("active"),e.setAttribute("aria-selected","false")}),document.querySelectorAll(".mode-panel").forEach(function(e){e.classList.remove("active")}),e.classList.add("active"),e.setAttribute("aria-selected","true");var t=document.getElementById("panel-"+e.dataset.tab);t&&t.classList.add("active")})}),document.querySelectorAll(".auto1re-toggle").forEach(function(e){e.addEventListener("click",function(){var n,s=e.closest(".auto1re-card"),o=s.querySelector(".auto1re-corr"),t=e.classList.toggle("open");e.setAttribute("aria-expanded",t?"true":"false"),s.classList.toggle("is-open",t),o&&o.classList.toggle("open",t),n=e.querySelector(".t"),n&&(n.textContent=t?"Masquer la correction":"Voir la correction")})});var e,t=!1;t||(e=document.getElementById("panel-devoir"),e&&e.querySelectorAll(".auto1re-toggle, .auto1re-corr").forEach(function(e){e.style.display="none"}))})()</script><script>window.PROJ_PIN="2712"</script><script src=/mabemat/js/projection-2nde.js></script></div><footer class=site-footer><div>MaBémat · Mme Bertail · Collège & Lycée</div><div><a href=/mabemat/credits/>Ressources & crédits</a>
-&nbsp;·&nbsp;
-<a href=/mabemat/mentions-legales/>Mentions légales</a></div></footer><script src=/mabemat/js/qcm.js></script><script src=https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){typeof scratchblocks!="undefined"&&scratchblocks.renderMatching("pre.blocks",{style:"scratch3",languages:["fr"],scale:.75})})</script><script>const BUILD_TS="1781366853";document.querySelectorAll('img[src*="/figures/"]').forEach(function(e){const t=e.src.split("?")[0];e.src=t+"?v="+BUILD_TS})</script></body></html>
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semaine 21 — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/2nde/">2nde</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/2nde/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Semaine 21</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <div class="wk-hero-top">
+    <h1>Semaine <em>21</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
+  
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séance + Devoirs</span>
+    <span><span class="dot"></span>12 questions</span>
+    <span><span class="dot"></span>≈ 20 min</span>
+  </div>
+</section>
+
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance" role="tab" aria-selected="true">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir" role="tab" aria-selected="false">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+</div>
+
+
+
+<section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
+  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Développer puis réduire l&rsquo;expression littérale suivante :</p>
+$$A=\left(-\dfrac{4}{5}c+4\right)\left(-\dfrac{6}{7}c+2\right)-\left(-\dfrac{2}{7}c-5\right)^2$$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On développe chaque facteur et le carré :</p>
+$$A = \dfrac{24c^2}{35} - \dfrac{24c}{7} - \dfrac{8c}{5} + 8 - \dfrac{4c^2}{49} + \dfrac{20c}{7} - 25$$<p>On regroupe les termes de même degré :</p>
+$${\color{#4A5D7A}A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Encadrer le nombre suivant par deux puissances de 10 d&rsquo;exposants consécutifs :</p>
+$$\dots \leqslant 84{,}074 \leqslant \dots$$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Comme $10^1 = 10$ et $10^2 = 100$, et que $10 \leqslant 84{,}074 \leqslant 100$ :</p>
+$${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(6\,;\,-4)$ et le vecteur $\vec{u}\begin{pmatrix}1\\-3\end{pmatrix}$.</p>
+<p>Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{AB}$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$\overrightarrow{AB} = \vec{u}$ signifie :</p>
+$$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x_B = 7 \\ y_B = -7\end{cases}$$$${\color{#4A5D7A}B(7\,;\,-7)}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>La droite représentant la fonction linéaire $f$ passe par le point de coordonnées $(15\,;\,60)$.</p>
+<p>Donner l&rsquo;expression de $f(x)$.</p>
+<img src="/mabemat/images/automatismes/2nde/s21-q04.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Une fonction linéaire est de la forme $f(x) = ax$.</p>
+<p>Puisque $f(15) = 60$ :</p>
+$$a = \dfrac{60}{15} = 4$$$${\color{#4A5D7A}f(x) = 4x}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p><strong>a)</strong> Résoudre dans $\mathbb{R}$ : $x^3 = 125$</p>
+<p><strong>b)</strong> Résoudre dans $\mathbb{R}$ : $x^2 = 16$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p><strong>a)</strong> On cherche le nombre dont le cube est $125$. Comme $5^3 = 125$ :</p>
+$${\color{#4A5D7A}S = \{5\}}$$<p><strong>b)</strong> On reconnaît une équation $x^2 = k$ avec $k = 16 > 0$, donc deux solutions $\pm\sqrt{16}$ :</p>
+$${\color{#4A5D7A}S = \{-4\,;\,4\}}$$</div>
+  </div>
+  
+</article>
+
+
+
+</section>
+
+
+
+
+<section id="panel-devoir" class="mode-panel panel-devoir">
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
+  
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Développer puis réduire l&rsquo;expression littérale suivante :</p>
+$$A=\left(-\dfrac{6}{7}y-4\right)^2-\left(\dfrac{4}{7}y+3\right)^2$$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On développe chaque carré :</p>
+$$\left(-\dfrac{6}{7}y-4\right)^2 = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16$$$$\left(\dfrac{4}{7}y+3\right)^2 = \dfrac{16}{49}y^2 + \dfrac{24}{7}y + 9$$$$A = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16 - \dfrac{16}{49}y^2 - \dfrac{24}{7}y - 9$$$${\color{#4A5D7A}A = \dfrac{20}{49}y^2 + \dfrac{24}{7}y + 7}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Encadrer le nombre suivant par deux puissances de 10 d&rsquo;exposants consécutifs :</p>
+$$\dots \leqslant 0{,}009\,4 \leqslant \dots$$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Comme $10^{-3} = 0{,}001$ et $10^{-2} = 0{,}01$, et que $0{,}001 \leqslant 0{,}0094 \leqslant 0{,}01$ :</p>
+$${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(7\,;\,-5)$ et le vecteur $\vec{u}\begin{pmatrix}-7\\-3\end{pmatrix}$.</p>
+<p>Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{BA}$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$\overrightarrow{BA} = \vec{u}$ signifie :</p>
+$$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_B = 14 \\ y_B = -2\end{cases}$$$${\color{#4A5D7A}B(14\,;\,-2)}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $f$ la fonction affine telle que $f(7) = -4$ et $f(0) = 10$.</p>
+<p>Calculer l&rsquo;antécédent de $-2$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$f(0) = 10$ donne l&rsquo;ordonnée à l&rsquo;origine : $b = 10$.</p>
+<p>$f(7) = -4$ : $\;7a + 10 = -4 \implies 7a = -14 \implies a = -2$.</p>
+<p>Donc $f(x) = -2x + 10$.</p>
+<p>Antécédent de $-2$ : $-2x + 10 = -2 \implies -2x = -12 \implies x = 6$.</p>
+$${\color{#4A5D7A}x = 6}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p><strong>a)</strong> Résoudre dans $\mathbb{R}$ : $x^3 = -27$</p>
+<p><strong>b)</strong> Résoudre dans $\mathbb{R}$ : $x^2 = 121$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p><strong>a)</strong> Comme $(-3)^3 = -27$ :</p>
+$${\color{#4A5D7A}S = \{-3\}}$$<p><strong>b)</strong> $x^2 = 121$ avec $121 > 0$, donc deux solutions $\pm\sqrt{121}$ :</p>
+$${\color{#4A5D7A}S = \{-11\,;\,11\}}$$</div>
+  </div>
+  
+</article>
+
+
+
+</section>
+
+
+
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/2nde/automatismes/semaine-20/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/2nde/automatismes/semaine-22/">Semaine suivante →</a>
+    
+  </div>
+</div>
+
+<script>
+(function(){
+  
+  document.querySelectorAll('.mode-tabs button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.mode-tabs button').forEach(function(b){
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+      });
+      document.querySelectorAll('.mode-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var panel = document.getElementById('panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  
+  document.querySelectorAll('.auto1re-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.auto1re-card');
+      var corr = card.querySelector('.auto1re-corr');
+      var open = btn.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      card.classList.toggle('is-open', open);
+      if (corr) corr.classList.toggle('open', open);
+      var lbl = btn.querySelector('.t');
+      if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+    });
+  });
+
+  
+  var showDevoirCorr =  false ;
+  if (!showDevoirCorr) {
+    var devoirPanel = document.getElementById('panel-devoir');
+    if (devoirPanel) {
+      devoirPanel.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function(el){
+        el.style.display = 'none';
+      });
+    }
+  }
+})();
+</script>
+
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-2nde.js"></script>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1781367421';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

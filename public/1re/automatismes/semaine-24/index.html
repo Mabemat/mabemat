@@ -1,76 +1,1688 @@
-<!doctype html><html lang=fr class=lvl-1re><head><meta charset=UTF-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content="no-cache"><meta http-equiv=Expires content="0"><meta name=viewport content="width=device-width,initial-scale=1"><title>Semaine 24 — Droites, probabilités et puissances — MaBémat</title><link rel=icon type=image/png sizes=32x32 href=/mabemat/favicon-32.png><link rel=icon type=image/png sizes=512x512 href=/mabemat/favicon-512.png><link rel=icon href=/mabemat/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=/mabemat/apple-touch-icon.png><meta name=description content="Cours de maths — Mme Bertail — Collège & Lycée"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel=stylesheet><link rel=stylesheet href=/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg+KFltyFnED1zwQ=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js crossorigin=anonymous onload='var corrDivs,hiddenPanels=[];document.querySelectorAll(".seance-panel, .mode-panel").forEach(function(e){if(getComputedStyle(e).display==="none"){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;hiddenPanels.push(e),e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),corrDivs=document.querySelectorAll(".auto3-corr, .exo-corr, .corr-box"),corrDivs.forEach(function(e){if(e.style.display==="none"||e.style.display===""){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;e.dataset.katexHide="1",e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]}),hiddenPanels.forEach(function(e){e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel)}),corrDivs.forEach(function(e){e.dataset.katexHide&&(e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel),delete e.dataset.katexHide)})'></script><style>pre code span[style*="user-select:none"]{border-right:1px solid #bbb !important;background:0 0 !important;padding-right:10px !important;margin-right:6px !important}pre[style*=background-color]{background-color:transparent !important}</style></head><body><header class=topbar><a href=https://mabemat.github.io/mabemat/ class=brand><span class=brand-text><span class=brand-ma>Ma</span><span class=brand-bemat>Bémat</span></span></a><nav><a href=/mabemat/6e/>6e</a>
-<a href=/mabemat/3e/>3e</a>
-<a href=/mabemat/2nde/>2nde</a>
-<a href=/mabemat/1re/ class=active>1re</a>
-<a href=/mabemat/snt/>Python</a>
-<a href=/mabemat/liens/>Liens</a></nav></header><div class=container><link rel=stylesheet href=/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css integrity="sha256-8jinyPO+P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin=anonymous><div class="crumbs fade-up"><a href=https://mabemat.github.io/mabemat/>Accueil</a>
-<span class=sep>/</span>
-<a href=/mabemat/1re/>1ère Spécialité</a>
-<span class=sep>/</span>
-<a href=/mabemat/1re/automatismes/>Automatismes</a>
-<span class=sep>/</span>
-<span>Semaine 24</span></div><section class="wk-hero fade-up d1"><div class=wk-hero-top><h1>Semaine <em>24</em></h1><button class="btn-new accent" id=btn-project type=button aria-label="Lancer le mode projection">
-<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-Projeter</button></div><p class=wk-subtitle>Droites, probabilités et puissances</p><div class=wk-meta><span><span class=dot></span>Séance + Devoirs</span>
-<span><span class=dot></span>12 questions</span>
-<span><span class=dot></span>≈ 20 min</span></div></section><div class="mode-tabs-wrap fade-up d2"><div class=mode-tabs role=tablist><button class=active data-tab=seance>
-<span class=tab-idx>Séance</span>
-<em>Classique</em>
-</button>
-<button data-tab=devoir>
-<span class=tab-idx>Séance</span>
-<em>Devoirs</em></button></div></div><section id=auto-panel-seance class="mode-panel active fade-up d3"><p class=mode-intro>QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p><div class=auto1re-progress><span class=lbl>Progression</span><div class=bar><div class=fill id=fill-seance></div></div><span class=score><span class=cur id=cur-seance>0</span><span class=tot>/6</span></span></div><div id=seance-cards></div></section><section id=auto-panel-devoir class=mode-panel><p class=mode-intro>Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p><div class=auto1re-progress><span class=lbl>Progression</span><div class=bar><div class=fill id=fill-devoir></div></div><span class=score><span class=cur id=cur-devoir>0</span><span class=tot id=tot-devoir>/6</span></span></div><div id=devoir-cards></div><div id=devoir-result class=auto1re-result style=display:none></div></section><div id=auto1re-src style=display:none><div class=qcm-container data-no-score=true><div style="background:#eef0ec;border-left:5px solid #819171;padding:.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636">Séance 24 — Droites, probabilités et puissances</div><div class="qcm-q qcm-auto" data-correct=3><div class=qcm-question>Dans un repère du plan, on considère la droite $D$ de coefficient directeur $0{,}6$, passant par le point $A(0\,;\,-5)$.<br>On note $B$ le point de la droite $D$ dont l&rsquo;abscisse est égale à $2$.<br>L&rsquo;ordonnée du point $B$ est égale à :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$-3$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$-4$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$6{,}2$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$-3{,}8$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>Le point $A$ est le point d&rsquo;intersection entre la droite $D$ et l&rsquo;axe des ordonnées, donc l&rsquo;ordonnée à l&rsquo;origine de la droite $D$ est $-5$.<br>Comme le coefficient directeur de la droite $D$ est $0{,}6$, l&rsquo;équation réduite de la droite $D$ est $y=0{,}6x-5$.<br>L&rsquo;ordonnée du point $B$ est donnée par $y=0{,}6\times 2-5=-3{,}8$.<br></p><p>La bonne réponse est la réponse <span class=rep>D</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=2><div class=qcm-question>La moitié d&rsquo;un cinquième correspond à la fraction :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$\dfrac{1}{7}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$\dfrac{5}{2}$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$\dfrac{1}{10}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$\dfrac{2}{5}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>La moitié d&rsquo;un cinquième est égal à $\dfrac{1}{2}\times \dfrac{1}{5}$ soit $\dfrac{1}{10}$.<br></p><p>La bonne réponse est la réponse <span class=rep>C</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=0><div class=qcm-question>Lors d&rsquo;une élection, deux cinquièmes des électeurs ont voté pour A, $20\,$% ont voté pour B, un tiers a voté pour C, et le reste a voté pour D.<br>Le candidat ayant recueilli le moins de votes est :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>Le candidat D</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>Le candidat A</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>Le candidat B</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>Le candidat C</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>Exprimons chaque proportion sous forme de fraction :<br>• Candidat A : deux cinquièmes $= \dfrac{2}{5} = \dfrac{24}{60}$<br><br>• Candidat B : $20\,$%$ = \dfrac{20}{100} = \dfrac{4}{20} = \dfrac{12}{60}$<br><br>• Candidat C : un tiers $= \dfrac{1}{3} = \dfrac{20}{60}$<br><br>• Candidat D : $1 - \dfrac{2}{5} - \dfrac{20}{100} - \dfrac{1}{3} = \dfrac{4}{60}$<br><br></p><p>En comparant les fractions : $\dfrac{4}{60} < \dfrac{12}{60} < \dfrac{20}{60} < \dfrac{24}{60}$<br><br>Le candidat ayant recueilli le moins de votes est donc le candidat D.<br></p><p>La bonne réponse est la réponse <span class=rep>A</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=1><div class=qcm-question>On tire une carte au hasard dans un paquet contenant $7$ cartes rouges et $21$ cartes noires.<br>Quelle est la probabilité de choisir une carte rouge ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$\dfrac{7}{21}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$\dfrac{7}{28}$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$\dfrac{21}{28}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$\dfrac{14}{21}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>Il y a en tout : $7 + 21 = 28$ cartes.<br>La probabilité de choisir une carte rouge est de $\dfrac{7}{28}$.<br></p><p>La bonne réponse est la réponse <span class=rep>B</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=2><div class=qcm-question>Soit $n$ un entier non nul. À quelle expression est égale $\dfrac{1}{\left(-1\right)^{n+5}}$ ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$-\left(-1\right)^{n+1}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$\left(-1\right)^{n+2}$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$-\left(-1\right)^{n}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$\left(-1\right)^{n}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>Soit $n\in \mathbb{N}$.</p>$$\begin{aligned}
+<!DOCTYPE html>
+<html lang="fr" class="lvl-1re">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semaine 24 — Droites, probabilités et puissances — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/" class="active">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.f238a7c8f3be3f73bb4fd831873453f159fb98100375d54b409bd5d840303906.css" integrity="sha256-8jinyPO&#43;P3O7T9gxhzRT8Vn7mBADddVLQJvV2EAwOQY=" crossorigin="anonymous">
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/1re/">1ère Spécialité</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/1re/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Semaine 24</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <div class="wk-hero-top">
+    <h1>Semaine <em>24</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
+  <p class="wk-subtitle">Droites, probabilités et puissances</p>
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séance + Devoirs</span>
+    <span><span class="dot"></span>12 questions</span>
+    <span><span class="dot"></span>≈ 20 min</span>
+  </div>
+</section>
+
+<div class="mode-tabs-wrap fade-up d2">
+  <div class="mode-tabs" role="tablist">
+    <button class="active" data-tab="seance">
+      <span class="tab-idx">Séance</span>
+      <em>Classique</em>
+    </button>
+    <button data-tab="devoir">
+      <span class="tab-idx">Séance</span>
+      <em>Devoirs</em>
+    </button>
+  </div>
+</div>
+
+<section id="auto-panel-seance" class="mode-panel active fade-up d3">
+  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-seance"></div></div>
+    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
+  </div>
+  <div id="seance-cards"></div>
+</section>
+
+<section id="auto-panel-devoir" class="mode-panel">
+  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
+  <div class="auto1re-progress">
+    <span class="lbl">Progression</span>
+    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
+    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
+  </div>
+  <div id="devoir-cards"></div>
+  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
+</section>
+
+<div id="auto1re-src" style="display:none">
+  <div class="qcm-container" data-no-score="true">
+<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Séance 24 — Droites, probabilités et puissances
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Dans un repère du plan, on considère la droite $D$ de coefficient directeur $0{,}6$, passant par le point $A(0\,;\,-5)$.<br>
+On note $B$ le point de la droite $D$ dont l&rsquo;abscisse est égale à $2$.<br>
+L&rsquo;ordonnée du point $B$ est égale à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$-3$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-4$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$6{,}2$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$-3{,}8$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Le point $A$ est le point d&rsquo;intersection entre la droite $D$ et l&rsquo;axe des ordonnées, donc l&rsquo;ordonnée à l&rsquo;origine de la droite $D$ est $-5$.<br>
+Comme le coefficient directeur de la droite $D$ est $0{,}6$, l&rsquo;équation réduite de la droite $D$ est $y=0{,}6x-5$.<br>
+L&rsquo;ordonnée du point $B$ est donnée par $y=0{,}6\times 2-5=-3{,}8$.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    La moitié d&rsquo;un cinquième correspond à la fraction :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{1}{7}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac{5}{2}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac{1}{10}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac{2}{5}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>La moitié d&rsquo;un cinquième est égal à $\dfrac{1}{2}\times \dfrac{1}{5}$ soit $\dfrac{1}{10}$.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Lors d&rsquo;une élection, deux cinquièmes des électeurs ont voté pour A, $20\,$% ont voté pour B, un tiers a voté pour C, et le reste a voté pour D.<br>
+Le candidat ayant recueilli le moins de votes est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Le candidat D</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Le candidat A</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>Le candidat B</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>Le candidat C</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Exprimons chaque proportion sous forme de fraction :<br>
+• Candidat A : deux cinquièmes $= \dfrac{2}{5} = \dfrac{24}{60}$<br><br>
+• Candidat B : $20\,$%$ = \dfrac{20}{100} = \dfrac{4}{20} = \dfrac{12}{60}$<br><br>
+• Candidat C : un tiers $= \dfrac{1}{3} = \dfrac{20}{60}$<br><br>
+• Candidat D : $1 - \dfrac{2}{5} - \dfrac{20}{100} - \dfrac{1}{3} = \dfrac{4}{60}$<br><br></p>
+<p>En comparant les fractions : $\dfrac{4}{60} < \dfrac{12}{60} < \dfrac{20}{60} < \dfrac{24}{60}$<br><br>
+Le candidat ayant recueilli le moins de votes est donc le candidat D.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    On tire une carte au hasard dans un paquet contenant $7$ cartes rouges et $21$ cartes noires.<br>
+Quelle est la probabilité de choisir une carte rouge ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{7}{21}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac{7}{28}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac{21}{28}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac{14}{21}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Il y a en tout : $7 + 21 = 28$ cartes.<br>
+La probabilité de choisir une carte rouge est de $\dfrac{7}{28}$.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="2">
+  <div class="qcm-question">
+    Soit $n$ un entier non nul. À quelle expression est égale $\dfrac{1}{\left(-1\right)^{n+5}}$ ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$-\left(-1\right)^{n+1}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\left(-1\right)^{n+2}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$-\left(-1\right)^{n}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\left(-1\right)^{n}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Soit $n\in \mathbb{N}$.
+</p>
+$$\begin{aligned}
 \left(-1\right)^{n+5}&=\left(-1\right)^5\times \left(-1\right)^{n} \\
 &=-\left(-1\right)^{n}
-\end{aligned}$$<p></p>$$\begin{aligned}
+\end{aligned}$$<p>
+</p>
+$$\begin{aligned}
 \text{Or, }\dfrac{1}{\left(-1\right)^{n}}&=\dfrac{1^n}{\left(-1\right)^{n}}\\
 &=\left(\dfrac{1}{-1}\right)^{n}\\
 &=\left(-1\right)^{n}.
-\end{aligned}$$<p>En conséquence, pour tout entier $n$, on a $\dfrac{1}{\left(-1\right)^{n+5}}=-\left(-1\right)^{n}$.</p><p>La bonne réponse est la réponse <span class=rep>C</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=0><div class=qcm-question>Laurent utilise une bouilloire pendant $10$ minutes.<br>La puissance de cet appareil est $3\,000$ watts.<br>Le coût d&rsquo;un kilowatt-heure d&rsquo;électricité est $20$ centimes d&rsquo;euro.<br>Le coût en électricité pour cette utilisation est :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$0{,}1\,\text{€}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$1$ centime d&rsquo;euro</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$0{,}6\,\text{€}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$1\,\text{€}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>La puissance de l&rsquo;appareil est de $3\,000$ W, soit $3$ kW.<br>La durée d&rsquo;utilisation est de $10$ minutes, soit $\dfrac{1}{6}$ heure.<br>L&rsquo;énergie consommée est donc : $3\times \dfrac{1}{6}=0{,}5$ kWh.<br>Le coût de la consommation est : $0{,}5\times 0{,}2=0{,}1\,\text{€}$.<br></p><p>La bonne réponse est la réponse <span class=rep>A</span>.</p></div></div></div><div class=qcm-container data-mode=devoir style=margin-top:2.5rem><div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636">Devoirs — Séance 24 — Droites, probabilités et puissances</div><div class="qcm-q qcm-auto" data-correct=1><div class=qcm-question>Dans un repère du plan, on considère la droite $D$ de coefficient directeur $-0{,}5$, passant par le point $A(0\,;\,-2)$.<br>On note $B$ le point de la droite $D$ dont l&rsquo;abscisse est égale à $1$.<br>L&rsquo;ordonnée du point $B$ est égale à :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$1$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$-2{,}5$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$-1$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$0{,}5$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>Le point $A$ est le point d&rsquo;intersection entre la droite $D$ et l&rsquo;axe des ordonnées, donc l&rsquo;ordonnée à l&rsquo;origine de la droite $D$ est $-2$.<br>Comme le coeffcient directeur de la droite $D$ est $-0{,}5$, l&rsquo;équation réduite de la droite $D$ est $y=-0{,}5x-2$.<br>L&rsquo;ordonnée du point $B$ est donnée par $y=-0{,}5\times 1-2=\boldsymbol{-2{,}5}$.</p><p>La bonne réponse est la réponse <span class=rep>B</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=0><div class=qcm-question>Les deux cinquièmes d&rsquo;un quart correspondent à la fraction :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$\dfrac{1}{10}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$\dfrac{7}{4}$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$\dfrac{2}{9}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$\dfrac{6}{5}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem>Les deux cinquièmes d&rsquo;un quart est égal à $\dfrac{2}{5}\times \dfrac{1}{4}$ soit $\boldsymbol{\dfrac{2}{20} = \dfrac{1}{10}}$.<br>La bonne réponse est la réponse <span class=rep>A</span>.</div></div><div class="qcm-q qcm-auto" data-correct=0><div class=qcm-question>Lors d&rsquo;une élection, un sixième des électeurs a voté pour A, $25\,$% ont voté pour B, deux cinquièmes ont voté pour C, et le reste a voté pour D.<br>Le candidat ayant recueilli le moins de votes est :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>Le candidat D</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>Le candidat B</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>Le candidat C</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>Le candidat A</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem>Exprimons chaque proportion sous forme de fraction :<br>• Candidat A : un sixième $= \dfrac{1}{6} = \dfrac{10}{60}$<br>• Candidat B : $25\,\% = \dfrac{25}{100} = \dfrac{5}{20} = \dfrac{15}{60}$<br>• Candidat C : deux cinquièmes $= \dfrac{2}{5} = \dfrac{24}{60}$<br>• Candidat D : $1 - \dfrac{1}{6} - \dfrac{25}{100} - \dfrac{2}{5} = \dfrac{11}{60}$<br>En comparant les fractions : $\dfrac{10}{60} < \dfrac{11}{60} < \dfrac{15}{60} < \dfrac{24}{60}$<br>Le candidat ayant recueilli le moins de votes est donc le candidat A.<br>La bonne réponse est la réponse <span class=rep>D</span>.</div></div><div class="qcm-q qcm-auto" data-correct=1><div class=qcm-question>On choisit au hasard un élève dans un groupe composé de $9$ garçons et $36$ filles.<br>Quelle est la probabilité de choisir un garçon ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$\dfrac{9}{36}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$\dfrac{9}{45}$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$\dfrac{27}{36}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$\dfrac{36}{45}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem>Il y a en tout : $9 + 36 = 45$ élèves.<br>La probabilité de choisir un garçon est de $\boldsymbol{\dfrac{9}{45}}$.<br>La bonne réponse est la réponse <span class=rep>B</span>.</div></div><div class="qcm-q qcm-auto" data-correct=0><div class=qcm-question>Soit $n$ un entier non nul. À quelle expression est égale $\dfrac{1}{\left(-1\right)^{n+6}}$ ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$\left(-1\right)^{n}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$\left(-1\right)^{n+1}$</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$-\left(-1\right)^{n}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$\left(-1\right)^{n-1}$</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem><p>Soit $n\in \mathbb{N}.$<br></p>$$
+\end{aligned}$$<p>
+En conséquence, pour tout entier $n$, on a $\dfrac{1}{\left(-1\right)^{n+5}}=-\left(-1\right)^{n}$.</p>
+<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Laurent utilise une bouilloire pendant $10$ minutes.<br>
+La puissance de cet appareil est $3\,000$ watts.<br>
+Le coût d&rsquo;un kilowatt-heure d&rsquo;électricité est $20$ centimes d&rsquo;euro.<br>
+Le coût en électricité pour cette utilisation est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$0{,}1\,\text{€}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$1$ centime d&rsquo;euro</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$0{,}6\,\text{€}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$1\,\text{€}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>La puissance de l&rsquo;appareil est de $3\,000$ W, soit $3$ kW.<br>
+La durée d&rsquo;utilisation est de $10$ minutes, soit $\dfrac{1}{6}$ heure.<br>
+L&rsquo;énergie consommée est donc : $3\times \dfrac{1}{6}=0{,}5$ kWh.<br>
+Le coût de la consommation est : $0{,}5\times 0{,}2=0{,}1\,\text{€}$.<br></p>
+<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+</div>
+<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
+Devoirs — Séance 24 — Droites, probabilités et puissances
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    Dans un repère du plan, on considère la droite $D$ de coefficient directeur $-0{,}5$, passant par le point $A(0\,;\,-2)$.<br>
+On note $B$ le point de la droite $D$ dont l&rsquo;abscisse est égale à $1$.<br>
+L&rsquo;ordonnée du point $B$ est égale à :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$1$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$-2{,}5$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$-1$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$0{,}5$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Le point $A$ est le point d&rsquo;intersection entre la droite $D$ et l&rsquo;axe des ordonnées, donc l&rsquo;ordonnée à l&rsquo;origine de la droite $D$ est $-2$.<br>
+Comme le coeffcient directeur de la droite $D$ est $-0{,}5$, l&rsquo;équation réduite de la droite $D$ est $y=-0{,}5x-2$.<br>
+L&rsquo;ordonnée du point $B$ est donnée par $y=-0{,}5\times 1-2=\boldsymbol{-2{,}5}$.</p>
+<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Les deux cinquièmes d&rsquo;un quart correspondent à la fraction :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{1}{10}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac{7}{4}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac{2}{9}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac{6}{5}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    Les deux cinquièmes d&rsquo;un quart est égal à $\dfrac{2}{5}\times \dfrac{1}{4}$ soit $\boldsymbol{\dfrac{2}{20} = \dfrac{1}{10}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Lors d&rsquo;une élection, un sixième des électeurs a voté pour A, $25\,$% ont voté pour B, deux cinquièmes ont voté pour C, et le reste a voté pour D.<br>
+Le candidat ayant recueilli le moins de votes est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>Le candidat D</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>Le candidat B</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>Le candidat C</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>Le candidat A</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    Exprimons chaque proportion sous forme de fraction :<br>
+• Candidat A : un sixième $= \dfrac{1}{6} = \dfrac{10}{60}$<br>
+• Candidat B : $25\,\% = \dfrac{25}{100} = \dfrac{5}{20} = \dfrac{15}{60}$<br>
+• Candidat C : deux cinquièmes $= \dfrac{2}{5} = \dfrac{24}{60}$<br>
+• Candidat D : $1 - \dfrac{1}{6} - \dfrac{25}{100} - \dfrac{2}{5} = \dfrac{11}{60}$<br>
+En comparant les fractions : $\dfrac{10}{60} < \dfrac{11}{60} < \dfrac{15}{60} < \dfrac{24}{60}$<br>
+Le candidat ayant recueilli le moins de votes est donc le candidat A.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="1">
+  <div class="qcm-question">
+    On choisit au hasard un élève dans un groupe composé de $9$ garçons et $36$ filles.<br>
+Quelle est la probabilité de choisir un garçon ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\dfrac{9}{36}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\dfrac{9}{45}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$\dfrac{27}{36}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\dfrac{36}{45}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    Il y a en tout : $9 + 36 = 45$ élèves.<br>
+La probabilité de choisir un garçon est de $\boldsymbol{\dfrac{9}{45}}$.<br>
+La bonne réponse est la réponse <span class="rep">B</span>.
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="0">
+  <div class="qcm-question">
+    Soit $n$ un entier non nul. À quelle expression est égale $\dfrac{1}{\left(-1\right)^{n+6}}$ ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$\left(-1\right)^{n}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$\left(-1\right)^{n+1}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$-\left(-1\right)^{n}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$\left(-1\right)^{n-1}$</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    <p>Soit $n\in \mathbb{N}.$<br></p>
+$$
 \begin{aligned}\left(-1\right)^{n+6}&=\left(-1\right)^{n}\times \left(-1\right)^6\\\\
 &=\left(-1\right)^{n}
 \end{aligned}
@@ -79,10 +1691,374 @@ $$$$
 &=\left(\dfrac{1}{-1}\right)^{n}\\\\
 &=\left(-1\right)^{n}.\\\\
 \end{aligned}
-$$<p>En conséquence, pour tout entier $n$, on a $\dfrac{1}{\left(-1\right)^{n+6}}=\boldsymbol{\left(-1\right)^{n}}$.<br>La bonne réponse est la réponse <span class=rep>A</span>.</p></div></div><div class="qcm-q qcm-auto" data-correct=3><div class=qcm-question>Pascale utilise un aspirateur pendant $10$ minutes.<br>La puissance de cet appareil est $1\,500$ watts.<br>Le coût d&rsquo;un kilowatt-heure d&rsquo;électricité est $20$ centimes d&rsquo;euro.<br>Le coût en électricité pour cette utilisation est :</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><span class=qcm-letter>A.</span>
-<span>$0{,}5\,\text{€}$</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><span class=qcm-letter>B.</span>
-<span>$0{,}5$ centime d&rsquo;euro</span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><span class=qcm-letter>C.</span>
-<span>$0{,}3\,\text{€}$</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><span class=qcm-letter>D.</span>
-<span>$5$ centimes d&rsquo;euro</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style=display:none;margin-top:.5rem>La puissance de l&rsquo;appareil est de $1\,500$ W, soit $1{,}5$ kW.<br>La durée d&rsquo;utilisation est de $10$ minutes, soit $\dfrac{1}{6}$ heure.<br>L&rsquo;énergie consommée est donc : $1{,}5\times \dfrac{1}{6}=0{,}25$ kWh.<br>Le coût de la consommation est : $0{,}25\times 0{,}2=0{,}05$,€, soit $5\text{ centimes d'euro}$.<br>La bonne réponse est la réponse <span class=rep>D</span>.</div></div></div></div><div class="wk-adjacent fade-up"><div><a class=adj-link href=/mabemat/1re/automatismes/semaine-25/>← Semaine précédente</a></div><div><a class=adj-link href=/mabemat/1re/automatismes/semaine-23/>Semaine suivante →</a></div></div><script>(function(){var e,t,n,o=["A","B","C","D"];if(document.querySelectorAll(".mode-tabs button").forEach(function(e){e.addEventListener("click",function(){document.querySelectorAll(".mode-tabs button").forEach(function(e){e.classList.remove("active")}),document.querySelectorAll(".mode-panel").forEach(function(e){e.classList.remove("active")}),e.classList.add("active");var t=document.getElementById("auto-panel-"+e.dataset.tab);t&&t.classList.add("active")})}),e=document.getElementById("auto1re-src"),!e)return;t=e.querySelector('.qcm-container[data-no-score="true"]'),n=e.querySelector('.qcm-container[data-mode="devoir"]'),i(t),a(n);function i(e){if(!e)return;var a=document.getElementById("seance-cards"),t=document.getElementById("fill-seance"),r=document.getElementById("cur-seance"),n=e.querySelectorAll(".qcm-q.qcm-auto"),c=n.length,o=0,i=0;n.forEach(function(e,n){var l=s(e,n,"Question"),d=parseInt(e.dataset.correct,10),u=l.querySelectorAll(".auto1re-choice"),h=l.querySelector(".auto1re-corr");a.appendChild(l),u.forEach(function(e,n){e.addEventListener("click",function(){if(l.classList.contains("answered"))return;l.classList.add("answered"),e.classList.add("picked"),n===d?(e.classList.add("correct"),o++):(e.classList.add("wrong"),u[d].classList.add("correct")),i++,r.textContent=o,t&&(t.style.width=Math.round(i/c*100)+"%"),h.classList.add("open")})})})}function a(e){if(!e)return;var l=document.getElementById("devoir-cards"),a=document.getElementById("fill-devoir"),d=document.getElementById("cur-devoir"),r=document.getElementById("tot-devoir"),o=document.getElementById("devoir-result"),c=e.querySelectorAll(".qcm-q.qcm-auto"),t=c.length,n=0,i=0;r&&(r.textContent="/"+t),c.forEach(function(e,r){var c=s(e,r,"Devoir"),u=parseInt(e.dataset.correct,10),h=c.querySelectorAll(".auto1re-choice");l.appendChild(c),h.forEach(function(e,s){e.addEventListener("click",function(){if(c.classList.contains("answered"))return;if(c.classList.add("answered"),e.classList.add("picked-devoir"),s===u&&n++,i++,a&&(a.style.width=Math.round(i/t*100)+"%"),i===t&&(d.textContent=n,o)){var r=n===t?"Parfait — "+n+"/"+t+" !":n>=Math.ceil(t/2)?n+"/"+t+" — bien joué !":n+"/"+t;o.textContent=r,o.style.display="block"}})})})}function s(e,t,n){var i,a,r,c,l,d,m,f=parseInt(e.dataset.correct,10),u=e.querySelector(".qcm-question"),p=e.querySelectorAll(".qcm-o"),h=e.querySelector(".qcm-correction"),s=document.createElement("article");return s.className="auto1re-card",s.dataset.correct=f,m=String(t+1).padStart(2,"0"),a=document.createElement("div"),a.className="auto1re-head",a.innerHTML='<div class="auto1re-num">'+m+'</div><div class="auto1re-label">'+n+"</div>",s.appendChild(a),r=document.createElement("div"),r.className="auto1re-enonce",r.innerHTML=u?u.innerHTML:"",s.appendChild(r),c=document.createElement("div"),c.className="auto1re-choices",p.forEach(function(e,t){var n,i,s=document.createElement("button");s.className="auto1re-choice",n=e.querySelectorAll("span"),i=n.length>=2?n[n.length-1].innerHTML:e.innerHTML,s.innerHTML='<span class="auto1re-bullet">'+o[t]+'</span><span class="auto1re-body">'+i+"</span>",c.appendChild(s)}),s.appendChild(c),i=document.createElement("div"),i.className="auto1re-corr",l=document.createElement("span"),l.className="auto1re-corr-label",l.textContent="Correction",i.appendChild(l),h&&(d=document.createElement("div"),d.innerHTML=h.innerHTML,i.appendChild(d)),s.appendChild(i),s}})()</script><script>window.PROJ_PIN="2712"</script><script src=/mabemat/js/projection-1re.js></script></div><footer class=site-footer><div>MaBémat · Mme Bertail · Collège & Lycée</div><div><a href=/mabemat/credits/>Ressources & crédits</a>
-&nbsp;·&nbsp;
-<a href=/mabemat/mentions-legales/>Mentions légales</a></div></footer><script src=/mabemat/js/qcm.js></script><script src=https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){typeof scratchblocks!="undefined"&&scratchblocks.renderMatching("pre.blocks",{style:"scratch3",languages:["fr"],scale:.75})})</script><script>const BUILD_TS="1781366852";document.querySelectorAll('img[src*="/figures/"]').forEach(function(e){const t=e.src.split("?")[0];e.src=t+"?v="+BUILD_TS})</script></body></html>
+$$<p>En conséquence, pour tout entier $n$, on a $\dfrac{1}{\left(-1\right)^{n+6}}=\boldsymbol{\left(-1\right)^{n}}$.<br>
+La bonne réponse est la réponse <span class="rep">A</span>.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="qcm-q qcm-auto" data-correct="3">
+  <div class="qcm-question">
+    Pascale utilise un aspirateur pendant $10$ minutes.<br>
+La puissance de cet appareil est $1\,500$ watts.<br>
+Le coût d&rsquo;un kilowatt-heure d&rsquo;électricité est $20$ centimes d&rsquo;euro.<br>
+Le coût en électricité pour cette utilisation est :
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <span class="qcm-letter">A.</span>
+        <span>$0{,}5\,\text{€}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <span class="qcm-letter">B.</span>
+        <span>$0{,}5$ centime d&rsquo;euro</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <span class="qcm-letter">C.</span>
+        <span>$0{,}3\,\text{€}$</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <span class="qcm-letter">D.</span>
+        <span>$5$ centimes d&rsquo;euro</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
+    La puissance de l&rsquo;appareil est de $1\,500$ W, soit $1{,}5$ kW.<br>
+La durée d&rsquo;utilisation est de $10$ minutes, soit $\dfrac{1}{6}$ heure.<br>
+L&rsquo;énergie consommée est donc : $1{,}5\times \dfrac{1}{6}=0{,}25$ kWh.<br>
+Le coût de la consommation est : $0{,}25\times 0{,}2=0{,}05$,€, soit $5\text{ centimes d'euro}$.<br>
+La bonne réponse est la réponse <span class="rep">D</span>.
+  </div>
+  
+</div>
+
+</div>
+
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-25/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/1re/automatismes/semaine-23/">Semaine suivante →</a>
+    
+  </div>
+</div>
+
+
+<script>
+(function () {
+  var LETTERS = ['A', 'B', 'C', 'D'];
+
+   
+  document.querySelectorAll('.mode-tabs button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.mode-tabs button').forEach(function (b) { b.classList.remove('active'); });
+      document.querySelectorAll('.mode-panel').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById('auto-panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+   
+  var src = document.getElementById('auto1re-src');
+  if (!src) return;
+
+  var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
+  var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
+
+  buildSeance(seanceBox);
+  buildDevoir(devoirBox);
+
+  function buildSeance(box) {
+    if (!box) return;
+    var target = document.getElementById('seance-cards');
+    var fill   = document.getElementById('fill-seance');
+    var cur    = document.getElementById('cur-seance');
+    var rawCards = box.querySelectorAll('.qcm-q.qcm-auto');
+    var total  = rawCards.length;
+    var score  = 0, answered = 0;
+
+    rawCards.forEach(function (old, i) {
+      var card    = makeCard(old, i, 'Question');
+      var correct = parseInt(old.dataset.correct, 10);
+      var choices = card.querySelectorAll('.auto1re-choice');
+      var corrDiv = card.querySelector('.auto1re-corr');
+      target.appendChild(card);
+
+      choices.forEach(function (choice, ci) {
+        choice.addEventListener('click', function () {
+          if (card.classList.contains('answered')) return;
+          card.classList.add('answered');
+          choice.classList.add('picked');
+          if (ci === correct) {
+            choice.classList.add('correct');
+            score++;
+          } else {
+            choice.classList.add('wrong');
+            choices[correct].classList.add('correct');
+          }
+          answered++;
+          cur.textContent = score;
+          if (fill) fill.style.width = Math.round(answered / total * 100) + '%';
+          corrDiv.classList.add('open');
+        });
+      });
+    });
+  }
+
+  function buildDevoir(box) {
+    if (!box) return;
+    var target  = document.getElementById('devoir-cards');
+    var fill    = document.getElementById('fill-devoir');
+    var cur     = document.getElementById('cur-devoir');
+    var totEl   = document.getElementById('tot-devoir');
+    var result  = document.getElementById('devoir-result');
+    var rawCards = box.querySelectorAll('.qcm-q.qcm-auto');
+    var total   = rawCards.length;
+    var score   = 0, answered = 0;
+
+    if (totEl) totEl.textContent = '/' + total;
+
+    rawCards.forEach(function (old, i) {
+      var card    = makeCard(old, i, 'Devoir');
+      var correct = parseInt(old.dataset.correct, 10);
+      var choices = card.querySelectorAll('.auto1re-choice');
+      target.appendChild(card);
+
+      choices.forEach(function (choice, ci) {
+        choice.addEventListener('click', function () {
+          if (card.classList.contains('answered')) return;
+          card.classList.add('answered');
+          choice.classList.add('picked-devoir');
+          if (ci === correct) score++;
+          answered++;
+          if (fill) fill.style.width = Math.round(answered / total * 100) + '%';
+          if (answered === total) {
+            cur.textContent = score;
+            if (result) {
+              var msg = score === total
+                ? 'Parfait — ' + score + '/' + total + ' !'
+                : score >= Math.ceil(total / 2)
+                  ? score + '/' + total + ' — bien joué !'
+                  : score + '/' + total;
+              result.textContent = msg;
+              result.style.display = 'block';
+            }
+          }
+        });
+      });
+    });
+  }
+
+  function makeCard(old, index, label) {
+    var correct    = parseInt(old.dataset.correct, 10);
+    var questionEl = old.querySelector('.qcm-question');
+    var opts       = old.querySelectorAll('.qcm-o');
+    var corrEl     = old.querySelector('.qcm-correction');
+
+    var article = document.createElement('article');
+    article.className = 'auto1re-card';
+    article.dataset.correct = correct;
+
+    var numStr = String(index + 1).padStart(2, '0');
+    var head = document.createElement('div');
+    head.className = 'auto1re-head';
+    head.innerHTML = '<div class="auto1re-num">' + numStr + '</div>'
+                   + '<div class="auto1re-label">' + label + '</div>';
+    article.appendChild(head);
+
+    var enonce = document.createElement('div');
+    enonce.className = 'auto1re-enonce';
+    enonce.innerHTML = questionEl ? questionEl.innerHTML : '';
+    article.appendChild(enonce);
+
+    var choicesDiv = document.createElement('div');
+    choicesDiv.className = 'auto1re-choices';
+    opts.forEach(function (opt, i) {
+      var btn = document.createElement('button');
+      btn.className = 'auto1re-choice';
+      var spans = opt.querySelectorAll('span');
+      var bodyHTML = spans.length >= 2 ? spans[spans.length - 1].innerHTML : opt.innerHTML;
+      btn.innerHTML = '<span class="auto1re-bullet">' + LETTERS[i] + '</span>'
+                    + '<span class="auto1re-body">' + bodyHTML + '</span>';
+      choicesDiv.appendChild(btn);
+    });
+    article.appendChild(choicesDiv);
+
+    var corr = document.createElement('div');
+    corr.className = 'auto1re-corr';
+    var corrLabel = document.createElement('span');
+    corrLabel.className = 'auto1re-corr-label';
+    corrLabel.textContent = 'Correction';
+    corr.appendChild(corrLabel);
+    if (corrEl) {
+      var body = document.createElement('div');
+      body.innerHTML = corrEl.innerHTML;
+      corr.appendChild(body);
+    }
+    article.appendChild(corr);
+
+    return article;
+  }
+})();
+</script>
+
+
+<script>window.PROJ_PIN = "2712";</script>
+<script src="/mabemat/js/projection-1re.js"></script>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1781367421';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

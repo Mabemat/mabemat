@@ -1,145 +1,1234 @@
-<!doctype html><html lang=fr class=lvl-snt><head><meta charset=UTF-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content="no-cache"><meta http-equiv=Expires content="0"><meta name=viewport content="width=device-width,initial-scale=1"><title>Séance 03 — Conditionnelles — MaBémat</title><link rel=icon type=image/png sizes=32x32 href=/mabemat/favicon-32.png><link rel=icon type=image/png sizes=512x512 href=/mabemat/favicon-512.png><link rel=icon href=/mabemat/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=/mabemat/apple-touch-icon.png><meta name=description content="Cours de maths — Mme Bertail — Collège & Lycée"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel=stylesheet><link rel=stylesheet href=/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg+KFltyFnED1zwQ=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js crossorigin=anonymous onload='var corrDivs,hiddenPanels=[];document.querySelectorAll(".seance-panel, .mode-panel").forEach(function(e){if(getComputedStyle(e).display==="none"){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;hiddenPanels.push(e),e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),corrDivs=document.querySelectorAll(".auto3-corr, .exo-corr, .corr-box"),corrDivs.forEach(function(e){if(e.style.display==="none"||e.style.display===""){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;e.dataset.katexHide="1",e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]}),hiddenPanels.forEach(function(e){e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel)}),corrDivs.forEach(function(e){e.dataset.katexHide&&(e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel),delete e.dataset.katexHide)})'></script><style>pre code span[style*="user-select:none"]{border-right:1px solid #bbb !important;background:0 0 !important;padding-right:10px !important;margin-right:6px !important}pre[style*=background-color]{background-color:transparent !important}</style></head><body><header class=topbar><a href=https://mabemat.github.io/mabemat/ class=brand><span class=brand-text><span class=brand-ma>Ma</span><span class=brand-bemat>Bémat</span></span></a><nav><a href=/mabemat/6e/>6e</a>
-<a href=/mabemat/3e/>3e</a>
-<a href=/mabemat/2nde/>2nde</a>
-<a href=/mabemat/1re/>1re</a>
-<a href=/mabemat/snt/ class=active>Python</a>
-<a href=/mabemat/liens/>Liens</a></nav></header><div class=container><div class="crumbs fade-up"><a href=https://mabemat.github.io/mabemat/>Accueil</a>
-<span class=sep>/</span>
-<a href=/mabemat/snt/>Python</a>
-<span class=sep>/</span>
-<span>Conditionnelles</span></div><section class="sn-hero fade-up d1"><div class=eyebrow>Python · Séance 03</div><h1>Conditionnelles</h1><div class=meta><span><span class=dot></span>12 exercices</span>
-<span><span class=dot></span>QCM · 20 questions</span>
-<span><span class=dot></span>Notebook Capytale</span></div></section><div class="sn-notebook fade-up d1"><div class=info><strong>Capytale</strong>
-<span>Accès avec votre identifiant MonLycée.net</span></div><a href=https://capytale2.ac-paris.fr/web/c/d461-11081660 class=nb-btn target=_blank rel=noopener>Ouvrir →</a></div><div class="tab-bar fade-up d2" role=tablist><button class=active data-tab=exos role=tab>Exercices <span class=count>12</span></button>
-<button data-tab=editor role=tab>Éditeur Python</button></div><section id=exos class="tab-panel active fade-up d3"><div id=exo-enonces hidden><h3 id=exercice-1--qui-a-gagné->Exercice 1 — Qui a gagné ?</h3><p>On considère la fonction suivante :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>gagnant</span>(scoreA, scoreB):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> scoreA <span style=color:#666>&gt;</span> scoreB:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        v <span style=color:#666>=</span> <span style=color:#4070a0>&#34;équipe A&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>elif</span> scoreA <span style=color:#666>&lt;</span> scoreB:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        v <span style=color:#666>=</span> <span style=color:#4070a0>&#34;équipe B&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>        v <span style=color:#666>=</span> <span style=color:#4070a0>&#34;Match nul&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>    <span style=color:#007020;font-weight:700>return</span> v
-</span></span></code></pre></div><p><strong>Q1.</strong> Inspectez ce code : quel est son nom ? Quels sont ses paramètres ? Combien de branches <code>if</code>/<code>elif</code>/<code>else</code> contient-il ?</p><p><strong>Q2.</strong> Écrivez cette fonction dans la cellule ci-dessous (<em>sans copier-coller !</em>) et exécutez-la.</p><p><strong>Q3.</strong> Faites l&rsquo;appel <code>gagnant(4, 1)</code> et vérifiez que la valeur renvoyée est cohérente.</p><p><strong>Q4.</strong> L&rsquo;équipe A a marqué 2 buts et l&rsquo;équipe B en a marqué 3. Quel appel faut-il faire ? Faites-le.</p><p><strong>Q5.</strong> Proposez un appel qui renvoie <code>"Match nul"</code> et testez-le.</p><hr><h3 id=exercice-2--vérifier-sa-compréhension>Exercice 2 — Vérifier sa compréhension</h3><p>Exercice CodePuzzle interactif à réaliser dans le notebook. Les questions vérifient automatiquement votre compréhension des instructions conditionnelles.</p><p><strong>Q1.</strong> Question interactive 1 — réaliser dans le notebook.</p><p><strong>Q2.</strong> Question interactive 2 — réaliser dans le notebook.</p><p><strong>Q3.</strong> Question interactive 3 — réaliser dans le notebook.</p><p><strong>Q4.</strong> Question interactive 4 — réaliser dans le notebook.</p><hr><h3 id=exercice-3--jeu-dindentation>Exercice 3 — Jeu d&rsquo;indentation</h3><p>Voici quatre programmes. Avant de les exécuter, prédisez ce que chacun affiche (ou si une erreur se produit).</p><p><strong>Q1.</strong> Complétez la colonne « Résultat prédit » <em>sans exécuter les programmes</em>.</p><table><thead><tr><th style=text-align:center>Programme</th><th style=text-align:left>Résultat prédit</th><th style=text-align:left>Résultat réel</th></tr></thead><tbody><tr><td style=text-align:center>A</td><td style=text-align:left><em>à compléter</em></td><td style=text-align:left></td></tr><tr><td style=text-align:center>B</td><td style=text-align:left><em>à compléter</em></td><td style=text-align:left></td></tr><tr><td style=text-align:center>C</td><td style=text-align:left><em>à compléter</em></td><td style=text-align:left></td></tr><tr><td style=text-align:center>D</td><td style=text-align:left><em>à compléter</em></td><td style=text-align:left></td></tr></tbody></table><p><strong>Q2.</strong> Exécutez chaque programme dans le notebook et complétez la colonne « Résultat réel ».</p><hr><h3 id=exercice-4--inscription-sur-un-réseau-social>Exercice 4 — Inscription sur un réseau social</h3><p>Pour s&rsquo;inscrire sur certains réseaux sociaux, il faut avoir au moins <strong>13 ans</strong>.</p><p><strong>Q1.</strong> Exercice CodePuzzle interactif dans le notebook : identifier le code correct de la fonction <code>age_requis</code> parmi les propositions.</p><p><strong>Q2.</strong> Copiez le code correct de la fonction <code>age_requis(age)</code> dans la cellule et exécutez-la.</p><p><strong>Q3.</strong> Testez la fonction avec un appel renvoyant <code>True</code> et un appel renvoyant <code>False</code>.</p><hr><h3 id=exercice-5--imc>Exercice 5 — IMC</h3><p>L&rsquo;Indice de Masse Corporelle (IMC) se calcule ainsi : <code>imc = masse / taille²</code></p><p><strong>Q1.</strong> Écrire une fonction <code>imc(masse, taille)</code> qui renvoie l&rsquo;IMC arrondi à une décimale.</p><p><strong>Q2.</strong> Écrire une fonction <code>diagnostic(masse, taille)</code> qui renvoie :</p><ul><li><code>"Insuffisance pondérale"</code> si IMC &lt; 18.5</li><li><code>"Corpulence normale"</code> si IMC &lt; 25</li><li><code>"Surpoids"</code> si IMC &lt; 30</li><li><code>"Obésité"</code> sinon</li></ul><p><strong>Q3.</strong> Copiez la fonction <code>diagnostic</code> dans la cellule et testez-la pour les 3 personnages du notebook.</p><p><strong>Q4.</strong> Adaptez la fonction <code>diagnostic</code> pour obtenir une analyse plus précise en 4 catégories :</p><ul><li>IMC &lt; 18.5 : <code>"Insuffisance pondérale"</code></li><li>18.5 ≤ IMC ≤ 25 : <code>"Corpulence normale"</code></li><li>25 &lt; IMC ≤ 30 : <code>"Surpoids"</code></li><li>IMC > 30 : <code>"Obésité"</code></li></ul><p><strong>Q5.</strong> Testez la nouvelle fonction pour les 3 personnages précédents.</p><hr><h3 id=exercice-6--prix-au-cinéma>Exercice 6 — Prix au cinéma</h3><p>Dans un cinéma, la place adulte coûte <strong>11 €</strong> et la place enfant (moins de 18 ans) coûte <strong>7 €</strong>.</p><p>Écrire une fonction <code>place(age)</code> qui renvoie le tarif correspondant.</p><p>Tester avec <code>place(10)</code>, <code>place(17)</code>, <code>place(18)</code>, <code>place(30)</code>.</p><hr><h3 id=exercice-7--location-de-voiture>Exercice 7 — Location de voiture</h3><p>Un service de location propose une voiture à <strong>52,16 € la journée</strong>. La personne peut parcourir <strong>250 km sans surcoût</strong>. Au-delà, elle paie <strong>0,31 € par km supplémentaire</strong>.</p><p><strong>Q1.</strong> Combien paie une personne ayant parcouru 125 km en 1 jour ?</p><p><strong>Q2.</strong> Combien paie une personne ayant parcouru 300 km en 1 jour ?</p><p><strong>Q3.</strong> Écrire une fonction <code>tarif(j, d)</code> où <code>j</code> est le nombre de jours et <code>d</code> la distance parcourue en km, qui renvoie le tarif total à payer.</p><hr><h3 id=exercice-8--mention-au-bac>Exercice 8 — Mention au bac</h3><p>Écrire une fonction <code>mention_bac(moy)</code> qui renvoie la mention correspondant à une moyenne sur 20 :</p><ul><li>&lt; 8 : <code>"Recalé"</code></li><li>&lt; 10 : <code>"Rattrapage"</code></li><li>&lt; 12 : <code>"Sans mention"</code></li><li>&lt; 14 : <code>"Assez bien"</code></li><li>&lt; 16 : <code>"Bien"</code></li><li>&lt; 18 : <code>"Très bien"</code></li><li>≥ 18 : <code>"Félicitations du jury"</code></li></ul><p>Tester avec plusieurs valeurs.</p><hr><h3 id=exercice-9--combiner-des-conditions>Exercice 9 — Combiner des conditions</h3><p>Un semestre est validé si les <strong>trois notes</strong> sont toutes ≥ 10.</p><p><strong>Q1.</strong> Exercice CodePuzzle interactif dans le notebook : remettre les lignes de la fonction <code>semestre_valide</code> dans le bon ordre.</p><p><strong>Q2.</strong> Copiez la fonction <code>semestre_valide(noteA, noteB, noteC)</code> dans la cellule et testez-la :</p><ul><li><code>semestre_valide(11, 12, 10)</code> → <code>True</code></li><li><code>semestre_valide(11, 8, 10)</code> → <code>False</code></li><li><code>semestre_valide(9, 12, 11)</code> → <code>False</code></li></ul><hr><h3 id=exercice-10--pair-ou-impair--bilan-de-score>Exercice 10 — Pair ou impair / Bilan de score</h3><p><strong>Q1.</strong> Écrire une fonction <code>est_pair(n)</code> qui renvoie <code>True</code> si n est pair, <code>False</code> sinon. (Rappel : <code>n % 2</code> donne le reste de la division de n par 2.)</p><p><strong>Q2.</strong> Écrire une fonction <code>bilan_score(score)</code> qui renvoie :</p><ul><li><code>"Excellent"</code> si score ≥ 90</li><li><code>"Bien"</code> si score ≥ 70</li><li><code>"Moyen"</code> si score ≥ 50</li><li><code>"Insuffisant"</code> sinon</li></ul><hr><h3 id=exercice-11--piscine-municipale>Exercice 11 — Piscine municipale</h3><p>La piscine applique les tarifs suivants :</p><ul><li>Moins de 6 ans : gratuit (0 €)</li><li>De 6 à 17 ans : 2.50 €</li><li>18 ans et plus : 4.00 €</li></ul><p><strong>Q1.</strong> Écrire une fonction <code>tarif_entree(age)</code> qui renvoie le tarif.</p><p><strong>Q2.</strong> Écrire une fonction <code>tarif_famille(age1, age2, age3, age4)</code> qui renvoie le total pour une famille de 4 personnes.</p><p><strong>Q3.</strong> Tester <code>tarif_famille(35, 38, 10, 4)</code>.</p><hr><h3 id=exercice-12--bulletin-scolaire>Exercice 12 — Bulletin scolaire</h3><p><strong>Q1.</strong> Écrire une fonction <code>moyenne(n1, n2, n3, n4)</code> qui renvoie la moyenne de quatre notes.</p><p><strong>Q2.</strong> Écrire une fonction <code>mention(moy)</code> qui renvoie :</p><ul><li><code>"Très bien"</code> si moy ≥ 16</li><li><code>"Bien"</code> si moy ≥ 14</li><li><code>"Assez bien"</code> si moy ≥ 12</li><li><code>"Passable"</code> si moy ≥ 10</li><li><code>"Insuffisant"</code> sinon</li></ul><p><strong>Q3.</strong> Écrire une fonction <code>bulletin(prenom, n1, n2, n3, n4)</code> qui renvoie une chaîne du type :
-<code>"Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien"</code></p><p>Tester avec <code>bulletin("Alice", 14, 12, 16, 10)</code>.</p><p><strong>Q4.</strong> Testez <code>bulletin</code> pour trois élèves : l&rsquo;un doit obtenir &ldquo;Très bien&rdquo;, l&rsquo;autre &ldquo;Passable&rdquo;, le troisième &ldquo;Bien&rdquo;.</p></div><div id=exo-corrs hidden><h3 id=exercice-1--qui-a-gagné->Exercice 1 — Qui a gagné ?</h3><p><strong>Q1.</strong> Nom : <code>gagnant</code> — Paramètres : 2 (<code>scoreA</code>, <code>scoreB</code>) — Valeur renvoyée : 1 (<code>"équipe A"</code>, <code>"équipe B"</code> ou <code>"Match nul"</code>).</p><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>gagnant</span>(scoreA, scoreB):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> scoreA <span style=color:#666>&gt;</span> scoreB:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;équipe A&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>elif</span> scoreB <span style=color:#666>&gt;</span> scoreA:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;équipe B&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Match nul&#34;</span>
-</span></span></code></pre></div><p><strong>Q3.</strong> <code>gagnant(4, 1)</code> → <code>"équipe A"</code> ✓</p><p><strong>Q4.</strong> <code>gagnant(2, 3)</code> → <code>"équipe B"</code> ✓</p><p><strong>Q5.</strong> <code>gagnant(2, 2)</code> → <code>"Match nul"</code> ✓</p><hr><h3 id=exercice-2--vérifier-sa-compréhension>Exercice 2 — Vérifier sa compréhension</h3><p><strong>Q1.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p><p><strong>Q2.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p><p><strong>Q3.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p><p><strong>Q4.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p><hr><h3 id=exercice-3--jeu-dindentation>Exercice 3 — Jeu d&rsquo;indentation</h3><p><strong>Q1.</strong></p><table><thead><tr><th style=text-align:center>Programme</th><th style=text-align:left>Résultat</th></tr></thead><tbody><tr><td style=text-align:center>A</td><td style=text-align:left><code>x est grand</code> puis <code>Fin</code></td></tr><tr><td style=text-align:center>B</td><td style=text-align:left><code>IndentationError</code></td></tr><tr><td style=text-align:center>C</td><td style=text-align:left><code>Fin</code></td></tr><tr><td style=text-align:center>D</td><td style=text-align:left><code>Troisième message</code></td></tr></tbody></table><p><strong>Programme A</strong> — Affiche :</p><pre tabindex=0><code>x est grand
+<!DOCTYPE html>
+<html lang="fr" class="lvl-snt">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Séance 03 — Conditionnelles — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/" class="active">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  <a href="/mabemat/snt/">Python</a>
+  <span class="sep">/</span>
+  <span>Conditionnelles</span>
+</div>
+
+
+<section class="sn-hero fade-up d1">
+  <div class="eyebrow">Python · Séance 03</div>
+  <h1>Conditionnelles</h1>
+
+  <div class="meta">
+    <span><span class="dot"></span>12 exercices</span>
+    <span><span class="dot"></span>QCM · 20 questions</span>
+    <span><span class="dot"></span>Notebook Capytale</span>
+  </div>
+</section>
+
+
+
+<div class="sn-notebook fade-up d1">
+  <div class="info">
+    <strong>Capytale</strong>
+    <span>Accès avec votre identifiant MonLycée.net</span>
+  </div>
+  <a href="https://capytale2.ac-paris.fr/web/c/d461-11081660" class="nb-btn" target="_blank" rel="noopener">Ouvrir →</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab-bar fade-up d2" role="tablist">
+  
+  <button class="active" data-tab="exos" role="tab">Exercices <span class="count">12</span></button>
+  
+  
+  <button data-tab="editor" role="tab">Éditeur Python</button>
+</div>
+
+
+
+<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="exercice-1--qui-a-gagné-">Exercice 1 — Qui a gagné ?</h3>
+<p>On considère la fonction suivante :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">gagnant</span>(scoreA, scoreB):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> scoreA <span style="color:#666">&gt;</span> scoreB:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;équipe A&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> scoreA <span style="color:#666">&lt;</span> scoreB:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;équipe B&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Match nul&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    <span style="color:#007020;font-weight:bold">return</span> v
+</span></span></code></pre></div><p><strong>Q1.</strong> Inspectez ce code : quel est son nom ? Quels sont ses paramètres ? Combien de branches <code>if</code>/<code>elif</code>/<code>else</code> contient-il ?</p>
+<p><strong>Q2.</strong> Écrivez cette fonction dans la cellule ci-dessous (<em>sans copier-coller !</em>) et exécutez-la.</p>
+<p><strong>Q3.</strong> Faites l&rsquo;appel <code>gagnant(4, 1)</code> et vérifiez que la valeur renvoyée est cohérente.</p>
+<p><strong>Q4.</strong> L&rsquo;équipe A a marqué 2 buts et l&rsquo;équipe B en a marqué 3. Quel appel faut-il faire ? Faites-le.</p>
+<p><strong>Q5.</strong> Proposez un appel qui renvoie <code>&quot;Match nul&quot;</code> et testez-le.</p>
+<hr>
+<h3 id="exercice-2--vérifier-sa-compréhension">Exercice 2 — Vérifier sa compréhension</h3>
+<p>Exercice CodePuzzle interactif à réaliser dans le notebook. Les questions vérifient automatiquement votre compréhension des instructions conditionnelles.</p>
+<p><strong>Q1.</strong> Question interactive 1 — réaliser dans le notebook.</p>
+<p><strong>Q2.</strong> Question interactive 2 — réaliser dans le notebook.</p>
+<p><strong>Q3.</strong> Question interactive 3 — réaliser dans le notebook.</p>
+<p><strong>Q4.</strong> Question interactive 4 — réaliser dans le notebook.</p>
+<hr>
+<h3 id="exercice-3--jeu-dindentation">Exercice 3 — Jeu d&rsquo;indentation</h3>
+<p>Voici quatre programmes. Avant de les exécuter, prédisez ce que chacun affiche (ou si une erreur se produit).</p>
+<p><strong>Q1.</strong> Complétez la colonne « Résultat prédit » <em>sans exécuter les programmes</em>.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Programme</th>
+          <th style="text-align: left">Résultat prédit</th>
+          <th style="text-align: left">Résultat réel</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">A</td>
+          <td style="text-align: left"><em>à compléter</em></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">B</td>
+          <td style="text-align: left"><em>à compléter</em></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">C</td>
+          <td style="text-align: left"><em>à compléter</em></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">D</td>
+          <td style="text-align: left"><em>à compléter</em></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong> Exécutez chaque programme dans le notebook et complétez la colonne « Résultat réel ».</p>
+<hr>
+<h3 id="exercice-4--inscription-sur-un-réseau-social">Exercice 4 — Inscription sur un réseau social</h3>
+<p>Pour s&rsquo;inscrire sur certains réseaux sociaux, il faut avoir au moins <strong>13 ans</strong>.</p>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif dans le notebook : identifier le code correct de la fonction <code>age_requis</code> parmi les propositions.</p>
+<p><strong>Q2.</strong> Copiez le code correct de la fonction <code>age_requis(age)</code> dans la cellule et exécutez-la.</p>
+<p><strong>Q3.</strong> Testez la fonction avec un appel renvoyant <code>True</code> et un appel renvoyant <code>False</code>.</p>
+<hr>
+<h3 id="exercice-5--imc">Exercice 5 — IMC</h3>
+<p>L&rsquo;Indice de Masse Corporelle (IMC) se calcule ainsi : <code>imc = masse / taille²</code></p>
+<p><strong>Q1.</strong> Écrire une fonction <code>imc(masse, taille)</code> qui renvoie l&rsquo;IMC arrondi à une décimale.</p>
+<p><strong>Q2.</strong> Écrire une fonction <code>diagnostic(masse, taille)</code> qui renvoie :</p>
+<ul>
+<li><code>&quot;Insuffisance pondérale&quot;</code> si IMC &lt; 18.5</li>
+<li><code>&quot;Corpulence normale&quot;</code> si IMC &lt; 25</li>
+<li><code>&quot;Surpoids&quot;</code> si IMC &lt; 30</li>
+<li><code>&quot;Obésité&quot;</code> sinon</li>
+</ul>
+<p><strong>Q3.</strong> Copiez la fonction <code>diagnostic</code> dans la cellule et testez-la pour les 3 personnages du notebook.</p>
+<p><strong>Q4.</strong> Adaptez la fonction <code>diagnostic</code> pour obtenir une analyse plus précise en 4 catégories :</p>
+<ul>
+<li>IMC &lt; 18.5 : <code>&quot;Insuffisance pondérale&quot;</code></li>
+<li>18.5 ≤ IMC ≤ 25 : <code>&quot;Corpulence normale&quot;</code></li>
+<li>25 &lt; IMC ≤ 30 : <code>&quot;Surpoids&quot;</code></li>
+<li>IMC &gt; 30 : <code>&quot;Obésité&quot;</code></li>
+</ul>
+<p><strong>Q5.</strong> Testez la nouvelle fonction pour les 3 personnages précédents.</p>
+<hr>
+<h3 id="exercice-6--prix-au-cinéma">Exercice 6 — Prix au cinéma</h3>
+<p>Dans un cinéma, la place adulte coûte <strong>11 €</strong> et la place enfant (moins de 18 ans) coûte <strong>7 €</strong>.</p>
+<p>Écrire une fonction <code>place(age)</code> qui renvoie le tarif correspondant.</p>
+<p>Tester avec <code>place(10)</code>, <code>place(17)</code>, <code>place(18)</code>, <code>place(30)</code>.</p>
+<hr>
+<h3 id="exercice-7--location-de-voiture">Exercice 7 — Location de voiture</h3>
+<p>Un service de location propose une voiture à <strong>52,16 € la journée</strong>. La personne peut parcourir <strong>250 km sans surcoût</strong>. Au-delà, elle paie <strong>0,31 € par km supplémentaire</strong>.</p>
+<p><strong>Q1.</strong> Combien paie une personne ayant parcouru 125 km en 1 jour ?</p>
+<p><strong>Q2.</strong> Combien paie une personne ayant parcouru 300 km en 1 jour ?</p>
+<p><strong>Q3.</strong> Écrire une fonction <code>tarif(j, d)</code> où <code>j</code> est le nombre de jours et <code>d</code> la distance parcourue en km, qui renvoie le tarif total à payer.</p>
+<hr>
+<h3 id="exercice-8--mention-au-bac">Exercice 8 — Mention au bac</h3>
+<p>Écrire une fonction <code>mention_bac(moy)</code> qui renvoie la mention correspondant à une moyenne sur 20 :</p>
+<ul>
+<li>&lt; 8 : <code>&quot;Recalé&quot;</code></li>
+<li>&lt; 10 : <code>&quot;Rattrapage&quot;</code></li>
+<li>&lt; 12 : <code>&quot;Sans mention&quot;</code></li>
+<li>&lt; 14 : <code>&quot;Assez bien&quot;</code></li>
+<li>&lt; 16 : <code>&quot;Bien&quot;</code></li>
+<li>&lt; 18 : <code>&quot;Très bien&quot;</code></li>
+<li>≥ 18 : <code>&quot;Félicitations du jury&quot;</code></li>
+</ul>
+<p>Tester avec plusieurs valeurs.</p>
+<hr>
+<h3 id="exercice-9--combiner-des-conditions">Exercice 9 — Combiner des conditions</h3>
+<p>Un semestre est validé si les <strong>trois notes</strong> sont toutes ≥ 10.</p>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif dans le notebook : remettre les lignes de la fonction <code>semestre_valide</code> dans le bon ordre.</p>
+<p><strong>Q2.</strong> Copiez la fonction <code>semestre_valide(noteA, noteB, noteC)</code> dans la cellule et testez-la :</p>
+<ul>
+<li><code>semestre_valide(11, 12, 10)</code> → <code>True</code></li>
+<li><code>semestre_valide(11, 8, 10)</code> → <code>False</code></li>
+<li><code>semestre_valide(9, 12, 11)</code> → <code>False</code></li>
+</ul>
+<hr>
+<h3 id="exercice-10--pair-ou-impair--bilan-de-score">Exercice 10 — Pair ou impair / Bilan de score</h3>
+<p><strong>Q1.</strong> Écrire une fonction <code>est_pair(n)</code> qui renvoie <code>True</code> si n est pair, <code>False</code> sinon. (Rappel : <code>n % 2</code> donne le reste de la division de n par 2.)</p>
+<p><strong>Q2.</strong> Écrire une fonction <code>bilan_score(score)</code> qui renvoie :</p>
+<ul>
+<li><code>&quot;Excellent&quot;</code> si score ≥ 90</li>
+<li><code>&quot;Bien&quot;</code> si score ≥ 70</li>
+<li><code>&quot;Moyen&quot;</code> si score ≥ 50</li>
+<li><code>&quot;Insuffisant&quot;</code> sinon</li>
+</ul>
+<hr>
+<h3 id="exercice-11--piscine-municipale">Exercice 11 — Piscine municipale</h3>
+<p>La piscine applique les tarifs suivants :</p>
+<ul>
+<li>Moins de 6 ans : gratuit (0 €)</li>
+<li>De 6 à 17 ans : 2.50 €</li>
+<li>18 ans et plus : 4.00 €</li>
+</ul>
+<p><strong>Q1.</strong> Écrire une fonction <code>tarif_entree(age)</code> qui renvoie le tarif.</p>
+<p><strong>Q2.</strong> Écrire une fonction <code>tarif_famille(age1, age2, age3, age4)</code> qui renvoie le total pour une famille de 4 personnes.</p>
+<p><strong>Q3.</strong> Tester <code>tarif_famille(35, 38, 10, 4)</code>.</p>
+<hr>
+<h3 id="exercice-12--bulletin-scolaire">Exercice 12 — Bulletin scolaire</h3>
+<p><strong>Q1.</strong> Écrire une fonction <code>moyenne(n1, n2, n3, n4)</code> qui renvoie la moyenne de quatre notes.</p>
+<p><strong>Q2.</strong> Écrire une fonction <code>mention(moy)</code> qui renvoie :</p>
+<ul>
+<li><code>&quot;Très bien&quot;</code> si moy ≥ 16</li>
+<li><code>&quot;Bien&quot;</code> si moy ≥ 14</li>
+<li><code>&quot;Assez bien&quot;</code> si moy ≥ 12</li>
+<li><code>&quot;Passable&quot;</code> si moy ≥ 10</li>
+<li><code>&quot;Insuffisant&quot;</code> sinon</li>
+</ul>
+<p><strong>Q3.</strong> Écrire une fonction <code>bulletin(prenom, n1, n2, n3, n4)</code> qui renvoie une chaîne du type :
+<code>&quot;Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien&quot;</code></p>
+<p>Tester avec <code>bulletin(&quot;Alice&quot;, 14, 12, 16, 10)</code>.</p>
+<p><strong>Q4.</strong> Testez <code>bulletin</code> pour trois élèves : l&rsquo;un doit obtenir &ldquo;Très bien&rdquo;, l&rsquo;autre &ldquo;Passable&rdquo;, le troisième &ldquo;Bien&rdquo;.</p>
+</div>
+  <div id="exo-corrs" hidden><h3 id="exercice-1--qui-a-gagné-">Exercice 1 — Qui a gagné ?</h3>
+<p><strong>Q1.</strong> Nom : <code>gagnant</code> — Paramètres : 2 (<code>scoreA</code>, <code>scoreB</code>) — Valeur renvoyée : 1 (<code>&quot;équipe A&quot;</code>, <code>&quot;équipe B&quot;</code> ou <code>&quot;Match nul&quot;</code>).</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">gagnant</span>(scoreA, scoreB):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> scoreA <span style="color:#666">&gt;</span> scoreB:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;équipe A&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> scoreB <span style="color:#666">&gt;</span> scoreA:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;équipe B&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Match nul&#34;</span>
+</span></span></code></pre></div><p><strong>Q3.</strong> <code>gagnant(4, 1)</code> → <code>&quot;équipe A&quot;</code> ✓</p>
+<p><strong>Q4.</strong> <code>gagnant(2, 3)</code> → <code>&quot;équipe B&quot;</code> ✓</p>
+<p><strong>Q5.</strong> <code>gagnant(2, 2)</code> → <code>&quot;Match nul&quot;</code> ✓</p>
+<hr>
+<h3 id="exercice-2--vérifier-sa-compréhension">Exercice 2 — Vérifier sa compréhension</h3>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
+<p><strong>Q2.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
+<p><strong>Q3.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
+<p><strong>Q4.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
+<hr>
+<h3 id="exercice-3--jeu-dindentation">Exercice 3 — Jeu d&rsquo;indentation</h3>
+<p><strong>Q1.</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Programme</th>
+          <th style="text-align: left">Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">A</td>
+          <td style="text-align: left"><code>x est grand</code> puis <code>Fin</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">B</td>
+          <td style="text-align: left"><code>IndentationError</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">C</td>
+          <td style="text-align: left"><code>Fin</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">D</td>
+          <td style="text-align: left"><code>Troisième message</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Programme A</strong> — Affiche :</p>
+<pre tabindex="0"><code>x est grand
 Fin
-</code></pre><p>x vaut 12, donc <code>12 > 10</code> est vrai → le bloc du <code>if</code> s&rsquo;exécute. <code>print("Fin")</code> n&rsquo;est pas indenté donc il s&rsquo;exécute toujours.</p><p><strong>Programme B</strong> — Erreur <code>IndentationError</code> : le <code>print</code> après le <code>if</code> n&rsquo;est pas indenté, Python ne sait pas à quel bloc il appartient.</p><p><strong>Programme C</strong> — Affiche :</p><pre tabindex=0><code>Fin
-</code></pre><p>x vaut 3, donc <code>3 > 10</code> est faux → le bloc du <code>if</code> est ignoré. <code>print("Fin")</code> s&rsquo;exécute quand même car il n&rsquo;est pas dans le <code>if</code>.</p><p><strong>Programme D</strong> — Affiche :</p><pre tabindex=0><code>Troisième message
-</code></pre><p>x vaut 3 : <code>3 > 5</code> est faux → les deux <code>print</code> indentés (&ldquo;Premier message&rdquo; et &ldquo;Deuxième message&rdquo;) sont ignorés. Seul <code>print("Troisième message")</code>, non indenté, s&rsquo;exécute toujours.</p><p><strong>Q2.</strong> Vérifier par exécution.</p><hr><h3 id=exercice-4--inscription-sur-un-réseau-social>Exercice 4 — Inscription sur un réseau social</h3><p><strong>Q1.</strong> Exercice CodePuzzle interactif — identifier le code correct parmi les propositions. Pas de correction écrite.</p><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>age_requis</span>(age):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&gt;=</span> <span style=color:#40a070>13</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>True</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>False</span>
-</span></span></code></pre></div><p><strong>Q3.</strong> Vérifications :</p><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>age_requis(12)</code></td><td><code>False</code></td></tr><tr><td><code>age_requis(13)</code></td><td><code>True</code></td></tr></tbody></table><hr><h3 id=exercice-5--application-de-fitness>Exercice 5 — Application de fitness</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>imc</span>(masse, taille):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    indice <span style=color:#666>=</span> masse <span style=color:#666>/</span> (taille <span style=color:#666>**</span> <span style=color:#40a070>2</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>return</span> indice
-</span></span></code></pre></div><p><strong>Q2.</strong> Diagnostic simple (dans la norme ou non) — résultat du CodePuzzle :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>diagnostic</span>(masse, taille):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    valeur <span style=color:#666>=</span> imc(masse, taille)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020;font-weight:700>if</span> valeur <span style=color:#666>&lt;</span> <span style=color:#40a070>18.5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Insuffisance pondérale&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>    <span style=color:#007020;font-weight:700>elif</span> valeur <span style=color:#666>&lt;=</span> <span style=color:#40a070>25</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Corpulence normale&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Hors norme&#34;</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>IMC</th><th>Résultat</th></tr></thead><tbody><tr><td><code>diagnostic(70, 1.75)</code></td><td>22.9</td><td><code>"Corpulence normale"</code></td></tr><tr><td><code>diagnostic(50, 1.75)</code></td><td>16.3</td><td><code>"Insuffisance pondérale"</code></td></tr></tbody></table><p><strong>Q3.</strong> Vérifier par exécution pour les 3 personnages.</p><p><strong>Q4.</strong> Diagnostic précis (4 catégories) :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>diagnostic</span>(masse, taille):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span>    valeur <span style=color:#666>=</span> imc(masse, taille)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span>    <span style=color:#007020;font-weight:700>if</span> valeur <span style=color:#666>&lt;</span> <span style=color:#40a070>18.5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Insuffisance pondérale&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span>    <span style=color:#007020;font-weight:700>elif</span> valeur <span style=color:#666>&lt;=</span> <span style=color:#40a070>25</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Corpulence normale&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span>    <span style=color:#007020;font-weight:700>elif</span> valeur <span style=color:#666>&lt;=</span> <span style=color:#40a070>30</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Surpoids&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Obésité&#34;</span>
-</span></span></code></pre></div><p><strong>Q5.</strong> Vérifier par exécution pour les 3 personnages avec la nouvelle fonction <code>diagnostic</code>.</p><hr><h3 id=exercice-6--prix-au-cinéma>Exercice 6 — Prix au cinéma</h3><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>place</span>(age):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&lt;</span> <span style=color:#40a070>18</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>7</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>11</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>place(10)</code></td><td><code>7</code></td></tr><tr><td><code>place(17)</code></td><td><code>7</code></td></tr><tr><td><code>place(18)</code></td><td><code>11</code></td></tr><tr><td><code>place(30)</code></td><td><code>11</code></td></tr></tbody></table><hr><h3 id=exercice-7--location-de-voiture>Exercice 7 — Location de voiture</h3><p><strong>Q1.</strong> 125 km ≤ 250 km : pas de surcoût. Tarif = 52,16 € × 1 jour = <strong>52,16 €</strong>.</p><p><strong>Q2.</strong> 300 km > 250 km : surcoût sur 50 km. Tarif = 52,16 + (300 − 250) × 0,31 = 52,16 + 15,50 = <strong>67,66 €</strong>.</p><p><strong>Q3.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>tarif</span>(j, d):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> d <span style=color:#666>&lt;=</span> <span style=color:#40a070>250</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>52.16</span> <span style=color:#666>*</span> j
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>52.16</span> <span style=color:#666>*</span> j <span style=color:#666>+</span> (d <span style=color:#666>-</span> <span style=color:#40a070>250</span>) <span style=color:#666>*</span> <span style=color:#40a070>0.31</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Calcul</th><th>Résultat</th></tr></thead><tbody><tr><td><code>tarif(1, 125)</code></td><td>52.16 × 1</td><td><code>52.16</code></td></tr><tr><td><code>tarif(1, 300)</code></td><td>52.16 × 1 + 50 × 0.31</td><td><code>67.66</code></td></tr></tbody></table><hr><h3 id=exercice-8--mention-au-bac>Exercice 8 — Mention au bac</h3><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>mention_bac</span>(moy):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span>    <span style=color:#007020;font-weight:700>if</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>8</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Recalé&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>10</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Rattrapage&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>12</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Sans mention&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>14</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Assez bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>16</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>18</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Très bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Félicitations du jury&#34;</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>mention_bac(6)</code></td><td><code>"Recalé"</code></td></tr><tr><td><code>mention_bac(9)</code></td><td><code>"Rattrapage"</code></td></tr><tr><td><code>mention_bac(11)</code></td><td><code>"Sans mention"</code></td></tr><tr><td><code>mention_bac(13)</code></td><td><code>"Assez bien"</code></td></tr><tr><td><code>mention_bac(15)</code></td><td><code>"Bien"</code></td></tr><tr><td><code>mention_bac(17)</code></td><td><code>"Très bien"</code></td></tr><tr><td><code>mention_bac(19)</code></td><td><code>"Félicitations du jury"</code></td></tr></tbody></table><hr><h3 id=exercice-9--combiner-des-conditions>Exercice 9 — Combiner des conditions</h3><p><strong>Q1.</strong> Exercice CodePuzzle interactif — mettre les lignes dans le bon ordre. Pas de correction écrite.</p><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>semestre_valide</span>(noteA, noteB, noteC):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> noteA <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span> <span style=color:#007020;font-weight:700>and</span> noteB <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span> <span style=color:#007020;font-weight:700>and</span> noteC <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>True</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>False</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th><th>Raison</th></tr></thead><tbody><tr><td><code>semestre_valide(11, 12, 10)</code></td><td><code>True</code></td><td>les trois notes ≥ 10</td></tr><tr><td><code>semestre_valide(11, 8, 10)</code></td><td><code>False</code></td><td>noteB = 8 &lt; 10</td></tr><tr><td><code>semestre_valide(9, 12, 11)</code></td><td><code>False</code></td><td>noteA = 9 &lt; 10</td></tr></tbody></table><hr><h3 id=exercice-10--fonctions-avec-conditions>Exercice 10 — Fonctions avec conditions</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>est_pair</span>(n):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> n <span style=color:#666>%</span> <span style=color:#40a070>2</span> <span style=color:#666>==</span> <span style=color:#40a070>0</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>True</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>False</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>est_pair(4)</code></td><td><code>True</code></td></tr><tr><td><code>est_pair(7)</code></td><td><code>False</code></td></tr></tbody></table><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>bilan_score</span>(score):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> score <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Félicitations !&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Continue comme ça !&#34;</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>bilan_score(12)</code></td><td><code>"Félicitations !"</code></td></tr><tr><td><code>bilan_score(7)</code></td><td><code>"Continue comme ça !"</code></td></tr></tbody></table><hr><h3 id=exercice-11--la-piscine-municipale>Exercice 11 — La piscine municipale</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>tarif_entree</span>(age):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&lt;</span> <span style=color:#40a070>12</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>3.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>elif</span> age <span style=color:#666>&lt;=</span> <span style=color:#40a070>25</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>4.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>elif</span> age <span style=color:#666>&lt;=</span> <span style=color:#40a070>64</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>6.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>4.5</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>tarif_entree(8)</code></td><td><code>3.0</code></td></tr><tr><td><code>tarif_entree(17)</code></td><td><code>4.0</code></td></tr><tr><td><code>tarif_entree(40)</code></td><td><code>6.0</code></td></tr><tr><td><code>tarif_entree(70)</code></td><td><code>4.5</code></td></tr></tbody></table><p><strong>Q2.</strong></p><table><thead><tr><th>Personne</th><th>Âge</th><th>Tarif</th></tr></thead><tbody><tr><td>Adulte 1</td><td>35 ans</td><td>6,00 €</td></tr><tr><td>Adulte 2</td><td>38 ans</td><td>6,00 €</td></tr><tr><td>Enfant 1</td><td>7 ans</td><td>3,00 €</td></tr><tr><td>Enfant 2</td><td>10 ans</td><td>3,00 €</td></tr><tr><td>Grand-parent</td><td>68 ans</td><td>4,50 €</td></tr><tr><td><strong>Total</strong></td><td></td><td><strong>22,50 €</strong></td></tr></tbody></table><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>adulte1 <span style=color:#666>=</span> tarif_entree(<span style=color:#40a070>35</span>)   <span style=color:#60a0b0;font-style:italic># 6.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>adulte2 <span style=color:#666>=</span> tarif_entree(<span style=color:#40a070>38</span>)   <span style=color:#60a0b0;font-style:italic># 6.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>enfant1 <span style=color:#666>=</span> tarif_entree(<span style=color:#40a070>7</span>)    <span style=color:#60a0b0;font-style:italic># 3.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>enfant2 <span style=color:#666>=</span> tarif_entree(<span style=color:#40a070>10</span>)   <span style=color:#60a0b0;font-style:italic># 3.0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>grandparent <span style=color:#666>=</span> tarif_entree(<span style=color:#40a070>68</span>)  <span style=color:#60a0b0;font-style:italic># 4.5</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>total <span style=color:#666>=</span> adulte1 <span style=color:#666>+</span> adulte2 <span style=color:#666>+</span> enfant1 <span style=color:#666>+</span> enfant2 <span style=color:#666>+</span> grandparent
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span><span style=color:#007020>print</span>(total)   <span style=color:#60a0b0;font-style:italic># 22.5</span>
-</span></span></code></pre></div><p><strong>Q3 — Défi.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>ticket</span>(nom, age):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Ticket de &#34;</span> <span style=color:#666>+</span> nom <span style=color:#666>+</span> <span style=color:#4070a0>&#34; (&#34;</span> <span style=color:#666>+</span> <span style=color:#007020>str</span>(age) <span style=color:#666>+</span> <span style=color:#4070a0>&#34; ans) : &#34;</span> <span style=color:#666>+</span> <span style=color:#007020>str</span>(tarif_entree(age)) <span style=color:#666>+</span> <span style=color:#4070a0>&#34; €&#34;</span>
-</span></span></code></pre></div><p>Exemple : <code>ticket("Léa", 17)</code> → <code>"Ticket de Léa (17 ans) : 4.0 €"</code></p><hr><h3 id=exercice-12--le-bulletin-scolaire>Exercice 12 — Le bulletin scolaire</h3><p><strong>Q1.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>moyenne</span>(n1, n2, n3, n4):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>return</span> (n1 <span style=color:#666>+</span> n2 <span style=color:#666>+</span> n3 <span style=color:#666>+</span> n4) <span style=color:#666>/</span> <span style=color:#40a070>4</span>
-</span></span></code></pre></div><p><strong>Q2.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>mention</span>(moy):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span>    <span style=color:#007020;font-weight:700>if</span> moy <span style=color:#666>&gt;=</span> <span style=color:#40a070>16</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Très bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&gt;=</span> <span style=color:#40a070>14</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&gt;=</span> <span style=color:#40a070>12</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Assez bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Passable&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Insuffisant&#34;</span>
-</span></span></code></pre></div><table><thead><tr><th>Appel</th><th>Résultat</th></tr></thead><tbody><tr><td><code>mention(16.5)</code></td><td><code>"Très bien"</code></td></tr><tr><td><code>mention(11)</code></td><td><code>"Assez bien"</code></td></tr><tr><td><code>mention(8)</code></td><td><code>"Insuffisant"</code></td></tr></tbody></table><p><strong>Q3.</strong></p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>bulletin</span>(prenom, n1, n2, n3, n4):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    moy <span style=color:#666>=</span> moyenne(n1, n2, n3, n4)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    ment <span style=color:#666>=</span> mention(moy)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Bilan de &#34;</span> <span style=color:#666>+</span> prenom <span style=color:#666>+</span> <span style=color:#4070a0>&#34; - Moyenne : &#34;</span> <span style=color:#666>+</span> <span style=color:#007020>str</span>(moy) <span style=color:#666>+</span> <span style=color:#4070a0>&#34;/20 - Mention : &#34;</span> <span style=color:#666>+</span> ment
-</span></span></code></pre></div><p>Vérification : <code>bulletin("Alice", 14, 12, 16, 10)</code></p><ul><li><code>moyenne(14, 12, 16, 10)</code> = (14+12+16+10)/4 = 52/4 = <strong>13.0</strong></li><li><code>mention(13.0)</code> → 13.0 ≥ 12 et &lt; 14 → <strong>&ldquo;Assez bien&rdquo;</strong></li><li>Résultat : <code>"Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien"</code></li></ul><p><strong>Q4.</strong> Tester <code>bulletin</code> pour trois élèves (résultats personnels, pas de correction type). Vérifier qu&rsquo;on obtient au moins un &ldquo;Très bien&rdquo; (≥ 16), un &ldquo;Passable&rdquo; (10–12) et un &ldquo;Bien&rdquo; (14–16).</p></div><div id=exo-list></div></section><section id=editor class=tab-panel><div class=snt-qcm-intro><span class=badge>Bac à sable</span>
-<span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span></div><div class=py-editor><div class=py-editor-head><span class=dot></span>
-<span>Python · main.py</span></div><textarea id=pyCode spellcheck=false rows=8>a = 15
+</code></pre><p>x vaut 12, donc <code>12 &gt; 10</code> est vrai → le bloc du <code>if</code> s&rsquo;exécute. <code>print(&quot;Fin&quot;)</code> n&rsquo;est pas indenté donc il s&rsquo;exécute toujours.</p>
+<p><strong>Programme B</strong> — Erreur <code>IndentationError</code> : le <code>print</code> après le <code>if</code> n&rsquo;est pas indenté, Python ne sait pas à quel bloc il appartient.</p>
+<p><strong>Programme C</strong> — Affiche :</p>
+<pre tabindex="0"><code>Fin
+</code></pre><p>x vaut 3, donc <code>3 &gt; 10</code> est faux → le bloc du <code>if</code> est ignoré. <code>print(&quot;Fin&quot;)</code> s&rsquo;exécute quand même car il n&rsquo;est pas dans le <code>if</code>.</p>
+<p><strong>Programme D</strong> — Affiche :</p>
+<pre tabindex="0"><code>Troisième message
+</code></pre><p>x vaut 3 : <code>3 &gt; 5</code> est faux → les deux <code>print</code> indentés (&ldquo;Premier message&rdquo; et &ldquo;Deuxième message&rdquo;) sont ignorés. Seul <code>print(&quot;Troisième message&quot;)</code>, non indenté, s&rsquo;exécute toujours.</p>
+<p><strong>Q2.</strong> Vérifier par exécution.</p>
+<hr>
+<h3 id="exercice-4--inscription-sur-un-réseau-social">Exercice 4 — Inscription sur un réseau social</h3>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif — identifier le code correct parmi les propositions. Pas de correction écrite.</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">age_requis</span>(age):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&gt;=</span> <span style="color:#40a070">13</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">False</span>
+</span></span></code></pre></div><p><strong>Q3.</strong> Vérifications :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>age_requis(12)</code></td>
+          <td><code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>age_requis(13)</code></td>
+          <td><code>True</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-5--application-de-fitness">Exercice 5 — Application de fitness</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">imc</span>(masse, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    indice <span style="color:#666">=</span> masse <span style="color:#666">/</span> (taille <span style="color:#666">**</span> <span style="color:#40a070">2</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> indice
+</span></span></code></pre></div><p><strong>Q2.</strong> Diagnostic simple (dans la norme ou non) — résultat du CodePuzzle :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">diagnostic</span>(masse, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    valeur <span style="color:#666">=</span> imc(masse, taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">if</span> valeur <span style="color:#666">&lt;</span> <span style="color:#40a070">18.5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Insuffisance pondérale&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">elif</span> valeur <span style="color:#666">&lt;=</span> <span style="color:#40a070">25</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Corpulence normale&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Hors norme&#34;</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>IMC</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>diagnostic(70, 1.75)</code></td>
+          <td>22.9</td>
+          <td><code>&quot;Corpulence normale&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>diagnostic(50, 1.75)</code></td>
+          <td>16.3</td>
+          <td><code>&quot;Insuffisance pondérale&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q3.</strong> Vérifier par exécution pour les 3 personnages.</p>
+<p><strong>Q4.</strong> Diagnostic précis (4 catégories) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">diagnostic</span>(masse, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    valeur <span style="color:#666">=</span> imc(masse, taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    <span style="color:#007020;font-weight:bold">if</span> valeur <span style="color:#666">&lt;</span> <span style="color:#40a070">18.5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Insuffisance pondérale&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>    <span style="color:#007020;font-weight:bold">elif</span> valeur <span style="color:#666">&lt;=</span> <span style="color:#40a070">25</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Corpulence normale&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    <span style="color:#007020;font-weight:bold">elif</span> valeur <span style="color:#666">&lt;=</span> <span style="color:#40a070">30</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Surpoids&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Obésité&#34;</span>
+</span></span></code></pre></div><p><strong>Q5.</strong> Vérifier par exécution pour les 3 personnages avec la nouvelle fonction <code>diagnostic</code>.</p>
+<hr>
+<h3 id="exercice-6--prix-au-cinéma">Exercice 6 — Prix au cinéma</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">place</span>(age):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&lt;</span> <span style="color:#40a070">18</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">7</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">11</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>place(10)</code></td>
+          <td><code>7</code></td>
+      </tr>
+      <tr>
+          <td><code>place(17)</code></td>
+          <td><code>7</code></td>
+      </tr>
+      <tr>
+          <td><code>place(18)</code></td>
+          <td><code>11</code></td>
+      </tr>
+      <tr>
+          <td><code>place(30)</code></td>
+          <td><code>11</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-7--location-de-voiture">Exercice 7 — Location de voiture</h3>
+<p><strong>Q1.</strong> 125 km ≤ 250 km : pas de surcoût. Tarif = 52,16 € × 1 jour = <strong>52,16 €</strong>.</p>
+<p><strong>Q2.</strong> 300 km &gt; 250 km : surcoût sur 50 km. Tarif = 52,16 + (300 − 250) × 0,31 = 52,16 + 15,50 = <strong>67,66 €</strong>.</p>
+<p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">tarif</span>(j, d):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> d <span style="color:#666">&lt;=</span> <span style="color:#40a070">250</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">52.16</span> <span style="color:#666">*</span> j
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">52.16</span> <span style="color:#666">*</span> j <span style="color:#666">+</span> (d <span style="color:#666">-</span> <span style="color:#40a070">250</span>) <span style="color:#666">*</span> <span style="color:#40a070">0.31</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Calcul</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>tarif(1, 125)</code></td>
+          <td>52.16 × 1</td>
+          <td><code>52.16</code></td>
+      </tr>
+      <tr>
+          <td><code>tarif(1, 300)</code></td>
+          <td>52.16 × 1 + 50 × 0.31</td>
+          <td><code>67.66</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-8--mention-au-bac">Exercice 8 — Mention au bac</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">mention_bac</span>(moy):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    <span style="color:#007020;font-weight:bold">if</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">8</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Recalé&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Rattrapage&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">12</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Sans mention&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">14</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Assez bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">16</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">18</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Très bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Félicitations du jury&#34;</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>mention_bac(6)</code></td>
+          <td><code>&quot;Recalé&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(9)</code></td>
+          <td><code>&quot;Rattrapage&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(11)</code></td>
+          <td><code>&quot;Sans mention&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(13)</code></td>
+          <td><code>&quot;Assez bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(15)</code></td>
+          <td><code>&quot;Bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(17)</code></td>
+          <td><code>&quot;Très bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(19)</code></td>
+          <td><code>&quot;Félicitations du jury&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-9--combiner-des-conditions">Exercice 9 — Combiner des conditions</h3>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif — mettre les lignes dans le bon ordre. Pas de correction écrite.</p>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">semestre_valide</span>(noteA, noteB, noteC):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> noteA <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span> <span style="color:#007020;font-weight:bold">and</span> noteB <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span> <span style="color:#007020;font-weight:bold">and</span> noteC <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">False</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+          <th>Raison</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>semestre_valide(11, 12, 10)</code></td>
+          <td><code>True</code></td>
+          <td>les trois notes ≥ 10</td>
+      </tr>
+      <tr>
+          <td><code>semestre_valide(11, 8, 10)</code></td>
+          <td><code>False</code></td>
+          <td>noteB = 8 &lt; 10</td>
+      </tr>
+      <tr>
+          <td><code>semestre_valide(9, 12, 11)</code></td>
+          <td><code>False</code></td>
+          <td>noteA = 9 &lt; 10</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-10--fonctions-avec-conditions">Exercice 10 — Fonctions avec conditions</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">est_pair</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">False</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>est_pair(4)</code></td>
+          <td><code>True</code></td>
+      </tr>
+      <tr>
+          <td><code>est_pair(7)</code></td>
+          <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">bilan_score</span>(score):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> score <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Félicitations !&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Continue comme ça !&#34;</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>bilan_score(12)</code></td>
+          <td><code>&quot;Félicitations !&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>bilan_score(7)</code></td>
+          <td><code>&quot;Continue comme ça !&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="exercice-11--la-piscine-municipale">Exercice 11 — La piscine municipale</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">tarif_entree</span>(age):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&lt;</span> <span style="color:#40a070">12</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">3.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> age <span style="color:#666">&lt;=</span> <span style="color:#40a070">25</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">4.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">elif</span> age <span style="color:#666">&lt;=</span> <span style="color:#40a070">64</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">6.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">4.5</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>tarif_entree(8)</code></td>
+          <td><code>3.0</code></td>
+      </tr>
+      <tr>
+          <td><code>tarif_entree(17)</code></td>
+          <td><code>4.0</code></td>
+      </tr>
+      <tr>
+          <td><code>tarif_entree(40)</code></td>
+          <td><code>6.0</code></td>
+      </tr>
+      <tr>
+          <td><code>tarif_entree(70)</code></td>
+          <td><code>4.5</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q2.</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Personne</th>
+          <th>Âge</th>
+          <th>Tarif</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Adulte 1</td>
+          <td>35 ans</td>
+          <td>6,00 €</td>
+      </tr>
+      <tr>
+          <td>Adulte 2</td>
+          <td>38 ans</td>
+          <td>6,00 €</td>
+      </tr>
+      <tr>
+          <td>Enfant 1</td>
+          <td>7 ans</td>
+          <td>3,00 €</td>
+      </tr>
+      <tr>
+          <td>Enfant 2</td>
+          <td>10 ans</td>
+          <td>3,00 €</td>
+      </tr>
+      <tr>
+          <td>Grand-parent</td>
+          <td>68 ans</td>
+          <td>4,50 €</td>
+      </tr>
+      <tr>
+          <td><strong>Total</strong></td>
+          <td></td>
+          <td><strong>22,50 €</strong></td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>adulte1 <span style="color:#666">=</span> tarif_entree(<span style="color:#40a070">35</span>)   <span style="color:#60a0b0;font-style:italic"># 6.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>adulte2 <span style="color:#666">=</span> tarif_entree(<span style="color:#40a070">38</span>)   <span style="color:#60a0b0;font-style:italic"># 6.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>enfant1 <span style="color:#666">=</span> tarif_entree(<span style="color:#40a070">7</span>)    <span style="color:#60a0b0;font-style:italic"># 3.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>enfant2 <span style="color:#666">=</span> tarif_entree(<span style="color:#40a070">10</span>)   <span style="color:#60a0b0;font-style:italic"># 3.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>grandparent <span style="color:#666">=</span> tarif_entree(<span style="color:#40a070">68</span>)  <span style="color:#60a0b0;font-style:italic"># 4.5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>total <span style="color:#666">=</span> adulte1 <span style="color:#666">+</span> adulte2 <span style="color:#666">+</span> enfant1 <span style="color:#666">+</span> enfant2 <span style="color:#666">+</span> grandparent
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020">print</span>(total)   <span style="color:#60a0b0;font-style:italic"># 22.5</span>
+</span></span></code></pre></div><p><strong>Q3 — Défi.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">ticket</span>(nom, age):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Ticket de &#34;</span> <span style="color:#666">+</span> nom <span style="color:#666">+</span> <span style="color:#4070a0">&#34; (&#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(age) <span style="color:#666">+</span> <span style="color:#4070a0">&#34; ans) : &#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(tarif_entree(age)) <span style="color:#666">+</span> <span style="color:#4070a0">&#34; €&#34;</span>
+</span></span></code></pre></div><p>Exemple : <code>ticket(&quot;Léa&quot;, 17)</code> → <code>&quot;Ticket de Léa (17 ans) : 4.0 €&quot;</code></p>
+<hr>
+<h3 id="exercice-12--le-bulletin-scolaire">Exercice 12 — Le bulletin scolaire</h3>
+<p><strong>Q1.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">moyenne</span>(n1, n2, n3, n4):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> (n1 <span style="color:#666">+</span> n2 <span style="color:#666">+</span> n3 <span style="color:#666">+</span> n4) <span style="color:#666">/</span> <span style="color:#40a070">4</span>
+</span></span></code></pre></div><p><strong>Q2.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">mention</span>(moy):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    <span style="color:#007020;font-weight:bold">if</span> moy <span style="color:#666">&gt;=</span> <span style="color:#40a070">16</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Très bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&gt;=</span> <span style="color:#40a070">14</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&gt;=</span> <span style="color:#40a070">12</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Assez bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Passable&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Insuffisant&#34;</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Appel</th>
+          <th>Résultat</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>mention(16.5)</code></td>
+          <td><code>&quot;Très bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention(11)</code></td>
+          <td><code>&quot;Assez bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention(8)</code></td>
+          <td><code>&quot;Insuffisant&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q3.</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">bulletin</span>(prenom, n1, n2, n3, n4):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    moy <span style="color:#666">=</span> moyenne(n1, n2, n3, n4)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    ment <span style="color:#666">=</span> mention(moy)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Bilan de &#34;</span> <span style="color:#666">+</span> prenom <span style="color:#666">+</span> <span style="color:#4070a0">&#34; - Moyenne : &#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(moy) <span style="color:#666">+</span> <span style="color:#4070a0">&#34;/20 - Mention : &#34;</span> <span style="color:#666">+</span> ment
+</span></span></code></pre></div><p>Vérification : <code>bulletin(&quot;Alice&quot;, 14, 12, 16, 10)</code></p>
+<ul>
+<li><code>moyenne(14, 12, 16, 10)</code> = (14+12+16+10)/4 = 52/4 = <strong>13.0</strong></li>
+<li><code>mention(13.0)</code> → 13.0 ≥ 12 et &lt; 14 → <strong>&ldquo;Assez bien&rdquo;</strong></li>
+<li>Résultat : <code>&quot;Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien&quot;</code></li>
+</ul>
+<p><strong>Q4.</strong> Tester <code>bulletin</code> pour trois élèves (résultats personnels, pas de correction type). Vérifier qu&rsquo;on obtient au moins un &ldquo;Très bien&rdquo; (≥ 16), un &ldquo;Passable&rdquo; (10–12) et un &ldquo;Bien&rdquo; (14–16).</p>
+</div>
+  <div id="exo-list"></div>
+</section>
+
+
+
+
+
+
+<section id="editor" class="tab-panel">
+  <div class="snt-qcm-intro">
+    <span class="badge">Bac à sable</span>
+    <span>Teste du code Python directement dans la page. Cet éditeur ne sauvegarde pas ton travail — utilise le notebook Capytale pour les exercices notés.</span>
+  </div>
+  <div class="py-editor">
+    <div class="py-editor-head">
+      <span class="dot"></span>
+      <span>Python · main.py</span>
+    </div>
+    <textarea id="pyCode" spellcheck="false" rows="8">a = 15
 b = 10
 c = a + b
-print(c)</textarea><div class=py-editor-foot><button onclick=runPython()>▸ Exécuter</button></div><div class="py-editor-out empty" id=pyOut>Sortie du programme…</div></div><p class=py-editor-note>Cet éditeur utilise <strong>Pyodide</strong> (Python en WebAssembly). Le premier lancement peut prendre quelques secondes.</p></section><div class=chap-adjacent style=margin-top:64px><a class="adj-link prev" href=/mabemat/snt/><div><div class=adj-lbl>← Toutes les séances</div></div><span></span>
-</a><a class="adj-link next" href=/mabemat/snt/seance-04-boucles-bornees/><div><div class=adj-lbl>Séance suivante →</div></div><span></span></a></div><script>var pyodideReady,UNLOCKED="[]";function isUnlocked(e){return UNLOCKED.indexOf(e)!==-1}document.addEventListener("DOMContentLoaded",function(){var e,t=document.querySelectorAll(".tab-bar button"),s=document.querySelectorAll(".tab-panel");if(t.forEach(function(e){e.addEventListener("click",function(){var n,o=e.dataset.tab;t.forEach(function(t){t.classList.toggle("active",t===e)}),s.forEach(function(e){e.classList.toggle("active",e.id===o)}),o==="editor"&&(n=document.getElementById("pyCode"),n&&(n.style.height="auto",n.style.height=n.scrollHeight+"px"))})}),e=document.getElementById("pyCode"),e){function n(e){e.style.height="auto",e.style.height=e.scrollHeight+"px"}n(e),e.addEventListener("input",function(){n(e)})}(function(){var t,o,i=document.getElementById("exo-enonces"),a=document.getElementById("exo-corrs"),n=document.getElementById("exo-list");if(!n)return;function s(e){if(!e)return[];var t=[],n=Array.from(e.querySelectorAll("h3"));return n.forEach(function(e){for(var s=e.textContent.match(/Exercice\s+(\d+)/i),i=s?parseInt(s[1]):0,a=e.textContent.replace(/^Exercice\s+\d+\s*[\u2014\u2013-]\s*/i,"").trim(),o=document.createElement("div"),n=e.nextElementSibling;n&&n.tagName!=="H3";)n.tagName!=="HR"&&o.appendChild(n.cloneNode(!0)),n=n.nextElementSibling;t.push({num:i,title:a,html:o.innerHTML})}),t}o=s(i),t={},s(a).forEach(function(e){t[e.num]=e.html});function r(e){return e<10?"0"+e:""+e}o.forEach(function(e){var i,a,d,o=isUnlocked(e.num),c=t[e.num]||"",l=c.length>0,s=document.createElement("article");s.className="exo",s.dataset.id="ex"+e.num,s.dataset.unlocked=o?"true":"false",i='<div class="exo-head"><div class="exo-num">'+r(e.num)+'</div><div class="exo-label">Exercice</div><div class="exo-titre">'+e.title+'</div></div><div class="exo-body"><div class="exo-enonce">'+e.html+"</div></div>",l&&(i+='<div class="exo-actions"><span class="exo-status">'+(o?"Correction publiée":"Correction non publiée")+'</span><button class="exo-btn" type="button"'+(o?"":" disabled")+'><span class="arrow">&#9658;</span> <span>Voir la correction</span></button></div>',o||(i+=`<div class="exo-corr-locked"><span class="icon">&#9747;</span><span>La correction sera disponible quand votre enseignante l'aura publiée.</span></div>`),i+='<div class="exo-corr"><span class="corr-label">Correction</span>'+c+"</div>"),s.innerHTML=i,l&&o&&(a=s.querySelector(".exo-btn"),d=s.querySelector(".exo-corr"),a.addEventListener("click",function(){var e=d.classList.toggle("open");a.classList.toggle("open",e),a.querySelector("span:last-child").textContent=e?"Masquer la correction":"Voir la correction"})),n.appendChild(s)})})(),function(){var n,s,o,i,a,r,t=document.querySelector('#qcm .qcm-container[data-engine="snt"]');if(!t)return;if(s=t.querySelectorAll(".qcm-q"),!s.length)return;i=["A","B","C","D","E"],n=[],s.forEach(function(e,t){var s,o,a,c,l=parseInt(e.dataset.correct,10),d=e.querySelector(".qcm-question")?e.querySelector(".qcm-question").innerHTML.trim():"",r=[];e.querySelectorAll(".qcm-o").forEach(function(e){var t=e.querySelector("span:not(.qcm-letter):not(.rd)");r.push(t?t.innerHTML.trim():e.innerHTML.trim())}),o=e.querySelector(".qcm-correction"),a=o?o.innerHTML.trim():"",c=String(t+1).padStart(2,"0"),s='<div class="qcm-head"><div class="qcm-num">'+c+'</div><div class="qcm-label">Question</div><div class="qcm-status"></div></div><div class="qcm-enonce">'+d+'</div><div class="qcm-choices">',r.forEach(function(e,t){s+='<button class="qcm-choice"><span class="bullet">'+i[t]+"</span><span>"+e+"</span></button>"}),s+="</div>",a&&(s+='<div class="qcm-corr"><span class="corr-label">Correction</span>'+a+"</div>"),n.push({html:s,correct:l})}),o=n.length,a='<div class="qcm-progress"><span class="qcm-prog-label">Progression</span><div class="qcm-prog-bar"><div class="qcm-prog-fill" id="sntQcmFill" style="width:0%"></div></div><span class="qcm-prog-stats" id="sntQcmStats">0 / '+o+" répondue"+(o>1?"s":"")+"</span></div>",r=n.map(function(e){return'<article class="qcm" data-correct="'+e.correct+'">'+e.html+"</article>"}).join(""),t.innerHTML=a+r;function c(){var e=t.querySelectorAll("article.qcm"),n=t.querySelectorAll("article.qcm.locked"),i=t.querySelectorAll("article.qcm .qcm-status.ok").length,a=t.querySelectorAll("article.qcm .qcm-status.ko").length,s=document.getElementById("sntQcmFill"),o=document.getElementById("sntQcmStats");s&&(s.style.width=n.length/e.length*100+"%"),o&&(o.innerHTML=n.length+" / "+e.length+" répondue"+(e.length>1?"s":"")+(n.length>0?' · <span class="ok">'+i+' ✓</span> · <span class="ko">'+a+" ✕</span>":""))}t.querySelectorAll("article.qcm").forEach(function(e){var t=parseInt(e.dataset.correct,10),n=Array.from(e.querySelectorAll(".qcm-choice")),s=e.querySelector(".qcm-status");!(t!=t)&&n[t]&&n[t].classList.add("is-correct"),n.forEach(function(n,o){n.addEventListener("click",function(){if(e.classList.contains("locked"))return;n.classList.add("selected");var a,i=o===t;n.classList.add(i?"is-correct":"is-wrong"),e.classList.add("locked"),s.textContent=i?"✓ Correct":"✕ Incorrect",s.classList.add(i?"ok":"ko"),window.renderMathInElement&&(a=e.querySelector(".qcm-corr"),a&&renderMathInElement(a,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1})),c()})})}),c()}()}),pyodideReady=null;async function getPyodide(){return pyodideReady||(pyodideReady=(async()=>{var e,n,t=document.getElementById("pyOut");return t.classList.add("empty"),t.textContent="Chargement de Python…",e=document.createElement("script"),e.src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js",document.head.appendChild(e),await new Promise(function(t){e.onload=t}),n=await loadPyodide(),t.textContent="",n})()),pyodideReady}async function runPython(){var t,n,s=document.getElementById("pyCode").value,e=document.getElementById("pyOut");e.classList.remove("empty"),e.textContent="Exécution…";try{n=await getPyodide(),t="",n.setStdout({batched:function(e){t+=e+`
-`}}),n.setStderr({batched:function(e){t+=e+`
-`}}),await n.runPythonAsync(s),e.textContent=t||"(Pas de sortie)",t||e.classList.add("empty")}catch(t){e.textContent=String(t),e.classList.remove("empty")}}</script></div><footer class=site-footer><div>MaBémat · Mme Bertail · Collège & Lycée</div><div><a href=/mabemat/credits/>Ressources & crédits</a>
-&nbsp;·&nbsp;
-<a href=/mabemat/mentions-legales/>Mentions légales</a></div></footer><script src=/mabemat/js/qcm.js></script><script src=https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){typeof scratchblocks!="undefined"&&scratchblocks.renderMatching("pre.blocks",{style:"scratch3",languages:["fr"],scale:.75})})</script><script>const BUILD_TS="1781366857";document.querySelectorAll('img[src*="/figures/"]').forEach(function(e){const t=e.src.split("?")[0];e.src=t+"?v="+BUILD_TS})</script></body></html>
+print(c)</textarea>
+    <div class="py-editor-foot">
+      <button onclick="runPython()">▸ Exécuter</button>
+    </div>
+    <div class="py-editor-out empty" id="pyOut">Sortie du programme…</div>
+  </div>
+  <p class="py-editor-note">
+    Cet éditeur utilise <strong>Pyodide</strong> (Python en WebAssembly). Le premier lancement peut prendre quelques secondes.
+  </p>
+</section>
+
+
+
+<div class="chap-adjacent" style="margin-top:64px;">
+  <a class="adj-link prev" href="/mabemat/snt/">
+    <div><div class="adj-lbl">← Toutes les séances</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/snt/seance-04-boucles-bornees/">
+    <div><div class="adj-lbl">Séance suivante →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+<script>
+ 
+var UNLOCKED = "[]";
+function isUnlocked(n) { return UNLOCKED.indexOf(n) !== -1; }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+   
+  var buttons = document.querySelectorAll('.tab-bar button');
+  var panels  = document.querySelectorAll('.tab-panel');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.dataset.tab;
+      buttons.forEach(function(b) { b.classList.toggle('active', b === btn); });
+      panels.forEach(function(p) { p.classList.toggle('active', p.id === target); });
+      if (target === 'editor') {
+        var ta = document.getElementById('pyCode');
+        if (ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+      }
+    });
+  });
+
+   
+  var pyCodeEl = document.getElementById('pyCode');
+  if (pyCodeEl) {
+    function autoResize(ta) { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+    autoResize(pyCodeEl);
+    pyCodeEl.addEventListener('input', function() { autoResize(pyCodeEl); });
+  }
+
+   
+  (function buildExoCards() {
+    var enoDiv  = document.getElementById('exo-enonces');
+    var corrDivSrc = document.getElementById('exo-corrs');
+    var listDiv = document.getElementById('exo-list');
+    if (!listDiv) return;
+
+     
+    function parseBlocks(container) {
+      if (!container) return [];
+      var blocks = [];
+      var h3s = Array.from(container.querySelectorAll('h3'));
+      h3s.forEach(function(h3) {
+        var m = h3.textContent.match(/Exercice\s+(\d+)/i);
+        var num = m ? parseInt(m[1]) : 0;
+        var title = h3.textContent.replace(/^Exercice\s+\d+\s*[\u2014\u2013-]\s*/i, '').trim();
+        var body = document.createElement('div');
+        var next = h3.nextElementSibling;
+        while (next && next.tagName !== 'H3') {
+           
+          if (next.tagName !== 'HR') body.appendChild(next.cloneNode(true));
+          next = next.nextElementSibling;
+        }
+        blocks.push({ num: num, title: title, html: body.innerHTML });
+      });
+      return blocks;
+    }
+
+    var enonces = parseBlocks(enoDiv);
+    var corrMap = {};
+    parseBlocks(corrDivSrc).forEach(function(b) { corrMap[b.num] = b.html; });
+
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+    enonces.forEach(function(eno) {
+      var unlocked = isUnlocked(eno.num);
+      var corrHtml = corrMap[eno.num] || '';
+      var hasCorr  = corrHtml.length > 0;
+
+      var art = document.createElement('article');
+      art.className = 'exo';
+      art.dataset.id = 'ex' + eno.num;
+      art.dataset.unlocked = unlocked ? 'true' : 'false';
+
+      var html =
+        '<div class="exo-head">' +
+          '<div class="exo-num">' + pad2(eno.num) + '</div>' +
+          '<div class="exo-label">Exercice</div>' +
+          '<div class="exo-titre">' + eno.title + '</div>' +
+        '</div>' +
+        '<div class="exo-body"><div class="exo-enonce">' + eno.html + '</div></div>';
+
+      if (hasCorr) {
+        html +=
+          '<div class="exo-actions">' +
+            '<span class="exo-status">' +
+              (unlocked ? 'Correction publi\u00e9e' : 'Correction non publi\u00e9e') +
+            '</span>' +
+            '<button class="exo-btn" type="button"' + (unlocked ? '' : ' disabled') + '>' +
+              '<span class="arrow">&#9658;</span> <span>Voir la correction</span>' +
+            '</button>' +
+          '</div>';
+        if (!unlocked) {
+          html +=
+            '<div class="exo-corr-locked">' +
+              '<span class="icon">&#9747;</span>' +
+              '<span>La correction sera disponible quand votre enseignante l\'aura publi\u00e9e.</span>' +
+            '</div>';
+        }
+        html +=
+          '<div class="exo-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      art.innerHTML = html;
+
+       
+      if (hasCorr && unlocked) {
+        var btn  = art.querySelector('.exo-btn');
+        var corr = art.querySelector('.exo-corr');
+        btn.addEventListener('click', function() {
+          var open = corr.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          btn.querySelector('span:last-child').textContent =
+            open ? 'Masquer la correction' : 'Voir la correction';
+        });
+      }
+
+      listDiv.appendChild(art);
+    });
+  })();
+
+
+   
+  (function initSNTQcm() {
+    var container = document.querySelector('#qcm .qcm-container[data-engine="snt"]');
+    if (!container) return;
+
+    var rawQs = container.querySelectorAll('.qcm-q');
+    if (!rawQs.length) return;
+
+    var letters = ['A', 'B', 'C', 'D', 'E'];
+    var articles = [];
+
+    rawQs.forEach(function(qEl, i) {
+      var correct = parseInt(qEl.dataset.correct, 10);
+      var qHtml = qEl.querySelector('.qcm-question') ? qEl.querySelector('.qcm-question').innerHTML.trim() : '';
+      var opts = [];
+      qEl.querySelectorAll('.qcm-o').forEach(function(o) {
+        var span = o.querySelector('span:not(.qcm-letter):not(.rd)');
+        opts.push(span ? span.innerHTML.trim() : o.innerHTML.trim());
+      });
+      var corrEl = qEl.querySelector('.qcm-correction');
+      var corrHtml = corrEl ? corrEl.innerHTML.trim() : '';
+
+      var num = String(i + 1).padStart(2, '0');
+      var html =
+        '<div class="qcm-head">' +
+          '<div class="qcm-num">' + num + '</div>' +
+          '<div class="qcm-label">Question</div>' +
+          '<div class="qcm-status"></div>' +
+        '</div>' +
+        '<div class="qcm-enonce">' + qHtml + '</div>' +
+        '<div class="qcm-choices">';
+
+      opts.forEach(function(opt, j) {
+        html += '<button class="qcm-choice">' +
+          '<span class="bullet">' + letters[j] + '</span>' +
+          '<span>' + opt + '</span>' +
+        '</button>';
+      });
+      html += '</div>';
+
+      if (corrHtml) {
+        html +=
+          '<div class="qcm-corr">' +
+            '<span class="corr-label">Correction</span>' +
+            corrHtml +
+          '</div>';
+      }
+
+      articles.push({ html: html, correct: correct });
+    });
+
+     
+    var total = articles.length;
+    var progressHtml =
+      '<div class="qcm-progress">' +
+        '<span class="qcm-prog-label">Progression</span>' +
+        '<div class="qcm-prog-bar"><div class="qcm-prog-fill" id="sntQcmFill" style="width:0%"></div></div>' +
+        '<span class="qcm-prog-stats" id="sntQcmStats">0 / ' + total + ' répondue' + (total > 1 ? 's' : '') + '</span>' +
+      '</div>';
+
+    var articlesHtml = articles.map(function(a, i) {
+      return '<article class="qcm" data-correct="' + a.correct + '">' + a.html + '</article>';
+    }).join('');
+
+    container.innerHTML = progressHtml + articlesHtml;
+
+    function updateProgress() {
+      var all = container.querySelectorAll('article.qcm');
+      var answered = container.querySelectorAll('article.qcm.locked');
+      var ok = container.querySelectorAll('article.qcm .qcm-status.ok').length;
+      var ko = container.querySelectorAll('article.qcm .qcm-status.ko').length;
+      var fill = document.getElementById('sntQcmFill');
+      var stats = document.getElementById('sntQcmStats');
+      if (fill) fill.style.width = (answered.length / all.length * 100) + '%';
+      if (stats) stats.innerHTML =
+        answered.length + ' / ' + all.length + ' répondue' + (all.length > 1 ? 's' : '') +
+        (answered.length > 0
+          ? ' · <span class="ok">' + ok + ' ✓</span> · <span class="ko">' + ko + ' ✕</span>'
+          : '');
+    }
+
+    container.querySelectorAll('article.qcm').forEach(function(qcm) {
+      var idx = parseInt(qcm.dataset.correct, 10);
+      var choices = Array.from(qcm.querySelectorAll('.qcm-choice'));
+      var status = qcm.querySelector('.qcm-status');
+      if (!isNaN(idx) && choices[idx]) choices[idx].classList.add('is-correct');
+      choices.forEach(function(choice, i) {
+        choice.addEventListener('click', function() {
+          if (qcm.classList.contains('locked')) return;
+          choice.classList.add('selected');
+          var isCorrect = (i === idx);
+          choice.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+          qcm.classList.add('locked');
+          status.textContent = isCorrect ? '✓ Correct' : '✕ Incorrect';
+          status.classList.add(isCorrect ? 'ok' : 'ko');
+           
+          if (window.renderMathInElement) {
+            var corr = qcm.querySelector('.qcm-corr');
+            if (corr) renderMathInElement(corr, {
+              delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],
+              throwOnError: false
+            });
+          }
+          updateProgress();
+        });
+      });
+    });
+
+    updateProgress();
+  })();
+
+});
+
+ 
+var pyodideReady = null;
+async function getPyodide() {
+  if (!pyodideReady) {
+    pyodideReady = (async () => {
+      var out = document.getElementById('pyOut');
+      out.classList.add('empty');
+      out.textContent = 'Chargement de Python…';
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js';
+      document.head.appendChild(script);
+      await new Promise(function(r) { script.onload = r; });
+      var py = await loadPyodide();
+      out.textContent = '';
+      return py;
+    })();
+  }
+  return pyodideReady;
+}
+
+async function runPython() {
+  var code = document.getElementById('pyCode').value;
+  var out  = document.getElementById('pyOut');
+  out.classList.remove('empty');
+  out.textContent = 'Exécution…';
+  try {
+    var py = await getPyodide();
+    var buf = '';
+    py.setStdout({ batched: function(s) { buf += s + '\n'; } });
+    py.setStderr({ batched: function(s) { buf += s + '\n'; } });
+    await py.runPythonAsync(code);
+    out.textContent = buf || '(Pas de sortie)';
+    if (!buf) out.classList.add('empty');
+  } catch(e) {
+    out.textContent = String(e);
+    out.classList.remove('empty');
+  }
+}
+</script>
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1781367422';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

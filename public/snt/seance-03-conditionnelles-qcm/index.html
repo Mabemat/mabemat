@@ -1,119 +1,4000 @@
-<!doctype html><html lang=fr class=lvl-snt><head><meta charset=UTF-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content="no-cache"><meta http-equiv=Expires content="0"><meta name=viewport content="width=device-width,initial-scale=1"><title>QCM — Conditionnelles — MaBémat</title><link rel=icon type=image/png sizes=32x32 href=/mabemat/favicon-32.png><link rel=icon type=image/png sizes=512x512 href=/mabemat/favicon-512.png><link rel=icon href=/mabemat/favicon.svg type=image/svg+xml><link rel=apple-touch-icon href=/mabemat/apple-touch-icon.png><meta name=description content="Cours de maths — Mme Bertail — Collège & Lycée"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel=stylesheet><link rel=stylesheet href=/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg+KFltyFnED1zwQ=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/style.96fe8d15c654a4073f61a74aa956b0263c1f93ce032e3df16e7beca27d57b765.css integrity="sha256-lv6NFcZUpAc/YadKqVawJjwfk84DLj3xbnvson1Xt2U=" crossorigin=anonymous><link rel=stylesheet href=/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js crossorigin=anonymous onload='var corrDivs,hiddenPanels=[];document.querySelectorAll(".seance-panel, .mode-panel").forEach(function(e){if(getComputedStyle(e).display==="none"){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;hiddenPanels.push(e),e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),corrDivs=document.querySelectorAll(".auto3-corr, .exo-corr, .corr-box"),corrDivs.forEach(function(e){if(e.style.display==="none"||e.style.display===""){var t=e.parentElement?e.parentElement.getBoundingClientRect().width:0;e.dataset.katexHide="1",e.parentElement&&getComputedStyle(e.parentElement).position==="static"&&(e.dataset.katexParentRel="1",e.parentElement.style.position="relative"),t>0&&(e.style.width=t+"px"),e.style.visibility="hidden",e.style.position="absolute",e.style.left="0",e.style.top="0",e.style.display="block"}}),renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]}),hiddenPanels.forEach(function(e){e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel)}),corrDivs.forEach(function(e){e.dataset.katexHide&&(e.style.display="",e.style.visibility="",e.style.position="",e.style.left="",e.style.top="",e.style.width="",e.dataset.katexParentRel==="1"&&e.parentElement&&(e.parentElement.style.position="",delete e.dataset.katexParentRel),delete e.dataset.katexHide)})'></script><style>pre code span[style*="user-select:none"]{border-right:1px solid #bbb !important;background:0 0 !important;padding-right:10px !important;margin-right:6px !important}pre[style*=background-color]{background-color:transparent !important}</style></head><body><header class=topbar><a href=https://mabemat.github.io/mabemat/ class=brand><span class=brand-text><span class=brand-ma>Ma</span><span class=brand-bemat>Bémat</span></span></a><nav><a href=/mabemat/6e/>6e</a>
-<a href=/mabemat/3e/>3e</a>
-<a href=/mabemat/2nde/>2nde</a>
-<a href=/mabemat/1re/>1re</a>
-<a href=/mabemat/snt/ class=active>Python</a>
-<a href=/mabemat/liens/>Liens</a></nav></header><div class=container><div class="crumbs fade-up"><a href=https://mabemat.github.io/mabemat/>Accueil</a>
-<span class=sep>/</span>
-<a href=/mabemat/snt/seance-03-conditionnelles/>Séance 03 — Conditionnelles
-</a><span class=sep>/</span>
-<span>QCM — Conditionnelles</span></div><div class=qcm-page><h1 style=color:#4a5d7a>QCM — Conditionnelles</h1><div class=qcm-container><div class=qcm-q data-correct=1><div class=qcm-question>Quel mot-clé permet d&rsquo;<strong>exécuter du code sous condition</strong> en Python ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>condition</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>if</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>where</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span><code>case</code></span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Mot-clé</th><th>Rôle en Python</th></tr></thead><tbody><tr><td><code>if</code></td><td><strong>Si</strong> la condition est vraie, exécuter le bloc</td></tr><tr><td><code>elif</code></td><td><strong>Sinon si</strong> une autre condition est vraie</td></tr><tr><td><code>else</code></td><td><strong>Sinon</strong>, exécuter le bloc final</td></tr></tbody></table><p><code>condition</code>, <code>where</code>, <code>case</code> n&rsquo;existent pas dans la syntaxe Python.</p><p><strong>Réponse : <code>if</code></strong></p></div></div><div class=qcm-q data-correct=2><div class=qcm-question><p>Par quel caractère doit se terminer la ligne <code>if</code> ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>&gt;</span> <span style=color:#40a070>5</span><span>?</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;grand&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>;</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>.</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>:</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span><code>,</code></span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><p>Comme pour <code>def</code>, la ligne <code>if</code> se termine obligatoirement par <strong>deux-points</strong> : ils annoncent le bloc d&rsquo;instructions qui suit.</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>&gt;</span> <span style=color:#40a070>5</span>:           <span style=color:#60a0b0;font-style:italic># ← deux-points obligatoires</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;grand&#34;</span>)
-</span></span></code></pre></div><p>Sans les <code>:</code>, Python signale une <code>SyntaxError</code>.</p><p><strong>Réponse : <code>:</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question>À quoi sert <code>else</code> dans une structure conditionnelle ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span>À tester une nouvelle condition</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span>À exécuter un bloc <strong>quand la condition du <code>if</code> est fausse</strong></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span>À afficher un message</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>À arrêter le programme</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Mot-clé</th><th>Quand le bloc s&rsquo;exécute-t-il ?</th></tr></thead><tbody><tr><td><code>if condition:</code></td><td>Si <strong>la condition est vraie</strong></td></tr><tr><td><code>elif autre_cond:</code></td><td>Si la précédente est fausse <strong>et</strong> que celle-ci est vraie</td></tr><tr><td><code>else:</code></td><td><strong>Aucune</strong> des conditions précédentes n&rsquo;est vraie</td></tr></tbody></table><p><code>else</code> ne prend pas de condition après lui : c&rsquo;est le « cas restant ».</p><p><strong>Réponse : Exécuter un bloc quand la condition du <code>if</code> est fausse</strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question>Quel opérateur permet de tester si <strong>deux valeurs sont égales</strong> en Python ?</div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>=</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>==</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>!=</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span><code>eq</code></span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Opérateur</th><th>Rôle</th></tr></thead><tbody><tr><td><code>=</code></td><td><strong>Affectation</strong> : <code>x = 5</code> met 5 dans <code>x</code></td></tr><tr><td><code>==</code></td><td><strong>Test d&rsquo;égalité</strong> : <code>x == 5</code> renvoie <code>True</code> ou <code>False</code></td></tr><tr><td><code>!=</code></td><td>Test de <strong>différence</strong></td></tr><tr><td><code>eq</code></td><td>N&rsquo;existe pas en Python</td></tr></tbody></table><p>Confondre <code>=</code> et <code>==</code> est l&rsquo;erreur la plus fréquente en Python : <code>if x = 5</code> est une <code>SyntaxError</code>.</p><p><strong>Réponse : <code>==</code></strong></p></div></div><div class=qcm-q data-correct=0><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>x <span style=color:#666>=</span> <span style=color:#40a070>7</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>&gt;</span> <span style=color:#40a070>5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;grand&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;fin&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>grand</code> puis <code>fin</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>fin</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>grand</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Rien</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center>Ligne</th><th style=text-align:center><code>x</code></th><th style=text-align:center>Condition <code>x > 5</code></th><th>Affichage</th></tr></thead><tbody><tr><td style=text-align:center>1</td><td style=text-align:center>7</td><td style=text-align:center>—</td><td>—</td></tr><tr><td style=text-align:center>2–3</td><td style=text-align:center>7</td><td style=text-align:center><strong>Vraie</strong> (7 > 5)</td><td><code>grand</code></td></tr><tr><td style=text-align:center>4</td><td style=text-align:center>7</td><td style=text-align:center>—</td><td><code>fin</code> (hors du <code>if</code>)</td></tr></tbody></table><p><code>print("fin")</code> n&rsquo;est <strong>pas indenté</strong> : il s&rsquo;exécute toujours, indépendamment du <code>if</code>.</p><p><strong>Réponse : <code>grand</code> puis <code>fin</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>x <span style=color:#666>=</span> <span style=color:#40a070>3</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>&gt;</span> <span style=color:#40a070>5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;grand&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;fin&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>grand</code> puis <code>fin</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>fin</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>grand</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Rien</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center>Ligne</th><th style=text-align:center><code>x</code></th><th style=text-align:center>Condition <code>x > 5</code></th><th>Affichage</th></tr></thead><tbody><tr><td style=text-align:center>1</td><td style=text-align:center>3</td><td style=text-align:center>—</td><td>—</td></tr><tr><td style=text-align:center>2–3</td><td style=text-align:center>3</td><td style=text-align:center><strong>Fausse</strong> (3 &lt; 5)</td><td>(rien)</td></tr><tr><td style=text-align:center>4</td><td style=text-align:center>3</td><td style=text-align:center>—</td><td><code>fin</code></td></tr></tbody></table><p>Le bloc du <code>if</code> est sauté. La ligne <code>print("fin")</code>, qui n&rsquo;est pas indentée, s&rsquo;exécute quand même.</p><p><strong>Réponse : <code>fin</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>age <span style=color:#666>=</span> <span style=color:#40a070>15</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&gt;=</span> <span style=color:#40a070>18</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;majeur&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;mineur&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>majeur</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>mineur</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>majeur</code> puis <code>mineur</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Rien</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center><code>age</code></th><th style=text-align:center>Condition <code>age >= 18</code></th><th style=text-align:center>Branche choisie</th><th>Affichage</th></tr></thead><tbody><tr><td style=text-align:center>15</td><td style=text-align:center><strong>Fausse</strong></td><td style=text-align:center><code>else</code></td><td><code>mineur</code></td></tr></tbody></table><p>Une structure <code>if / else</code> choisit <strong>exactement une</strong> des deux branches : jamais les deux à la fois.</p><p><strong>Réponse : <code>mineur</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Quelle est l&rsquo;erreur dans ce code ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>=</span> <span style=color:#40a070>5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;ok&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span>Le <code>if</code> ne peut pas tester une variable</span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span>Il faut écrire <code>==</code> (pas <code>=</code>) pour <strong>comparer</strong></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span>Il manque le mot-clé <code>then</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Il manque les parenthèses</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Écriture</th><th>Signification</th></tr></thead><tbody><tr><td><code>x = 5</code></td><td><strong>Affecter</strong> la valeur 5 à <code>x</code></td></tr><tr><td><code>x == 5</code></td><td><strong>Tester</strong> si <code>x</code> vaut 5</td></tr></tbody></table><p>Le <code>if</code> attend une <strong>condition</strong> (qui s&rsquo;évalue en <code>True</code>/<code>False</code>), pas une affectation. Code corrigé :</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>==</span> <span style=color:#40a070>5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;ok&#34;</span>)
-</span></span></code></pre></div><p><strong>Réponse : Il faut <code>==</code> au lieu de <code>=</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>note <span style=color:#666>=</span> <span style=color:#40a070>12</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> note <span style=color:#666>&gt;=</span> <span style=color:#40a070>16</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Très bien&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020;font-weight:700>elif</span> note <span style=color:#666>&gt;=</span> <span style=color:#40a070>12</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Assez bien&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;À retravailler&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>Très bien</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>Assez bien</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>À retravailler</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Les trois lignes</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center><code>note</code></th><th style=text-align:center><code>note >= 16</code></th><th style=text-align:center><code>note >= 12</code></th><th style=text-align:center>Branche</th><th>Affichage</th></tr></thead><tbody><tr><td style=text-align:center>12</td><td style=text-align:center>Fausse</td><td style=text-align:center><strong>Vraie</strong></td><td style=text-align:center><code>elif</code></td><td><code>Assez bien</code></td></tr></tbody></table><p>Python teste les branches <strong>dans l&rsquo;ordre</strong> : dès que l&rsquo;une est vraie, il exécute son bloc et <strong>ignore</strong> toutes les suivantes.</p><p><strong>Réponse : <code>Assez bien</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Que renvoie <code>place(14)</code> ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>place</span>(age):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&lt;</span> <span style=color:#40a070>14</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>5.50</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>elif</span> age <span style=color:#666>&lt;=</span> <span style=color:#40a070>25</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>7.80</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>10.20</span>
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>5.5</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>7.8</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>10.2</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center><code>age</code></th><th style=text-align:center><code>age &lt; 14</code></th><th style=text-align:center><code>age &lt;= 25</code></th><th style=text-align:center>Branche</th><th style=text-align:center>Renvoi</th></tr></thead><tbody><tr><td style=text-align:center>14</td><td style=text-align:center>Fausse (14 n&rsquo;est pas &lt; 14)</td><td style=text-align:center><strong>Vraie</strong></td><td style=text-align:center><code>elif</code></td><td style=text-align:center><strong><code>7.8</code></strong></td></tr></tbody></table><p>Attention : <code>&lt;</code> (strict) et <code>&lt;=</code> (large) ne traitent pas les <strong>bornes</strong> de la même façon. 14 n&rsquo;est pas strictement inférieur à 14, mais il est bien inférieur ou égal à 25.</p><p><strong>Réponse : <code>7.8</code></strong></p></div></div><div class=qcm-q data-correct=0><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>moy <span style=color:#666>=</span> <span style=color:#40a070>11</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>note_min <span style=color:#666>=</span> <span style=color:#40a070>6</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span><span style=color:#007020;font-weight:700>if</span> moy <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span> <span style=color:#007020;font-weight:700>and</span> note_min <span style=color:#666>&gt;=</span> <span style=color:#40a070>5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Validé&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Non validé&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>Validé</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>Non validé</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Rien</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Condition</th><th style=text-align:center>Vraie ?</th></tr></thead><tbody><tr><td><code>moy >= 10</code> (11 ≥ 10)</td><td style=text-align:center>✓ Vraie</td></tr><tr><td><code>note_min >= 5</code> (6 ≥ 5)</td><td style=text-align:center>✓ Vraie</td></tr><tr><td><strong><code>A and B</code></strong></td><td style=text-align:center><strong>Vraie</strong> (les deux le sont)</td></tr></tbody></table><p><code>and</code> n&rsquo;est vrai <strong>que si les deux</strong> conditions le sont en même temps.</p><p><strong>Réponse : <code>Validé</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>moy <span style=color:#666>=</span> <span style=color:#40a070>11</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>note_min <span style=color:#666>=</span> <span style=color:#40a070>4</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span><span style=color:#007020;font-weight:700>if</span> moy <span style=color:#666>&gt;=</span> <span style=color:#40a070>10</span> <span style=color:#007020;font-weight:700>and</span> note_min <span style=color:#666>&gt;=</span> <span style=color:#40a070>5</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Validé&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Non validé&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>Validé</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>Non validé</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Rien</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Condition</th><th style=text-align:center>Vraie ?</th></tr></thead><tbody><tr><td><code>moy >= 10</code> (11 ≥ 10)</td><td style=text-align:center>✓ Vraie</td></tr><tr><td><code>note_min >= 5</code> (4 ≥ 5)</td><td style=text-align:center>✗ Fausse</td></tr><tr><td><strong><code>A and B</code></strong></td><td style=text-align:center><strong>Fausse</strong> (il en suffit d&rsquo;une fausse)</td></tr></tbody></table><p>Avec <code>and</code>, <strong>une seule</strong> condition fausse rend l&rsquo;expression entière fausse.</p><p><strong>Réponse : <code>Non validé</code></strong></p></div></div><div class=qcm-q data-correct=0><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>age <span style=color:#666>=</span> <span style=color:#40a070>5</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&lt;</span> <span style=color:#40a070>6</span> <span style=color:#007020;font-weight:700>or</span> age <span style=color:#666>&gt;</span> <span style=color:#40a070>80</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Gratuit&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;Tarif normal&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>Gratuit</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>Tarif normal</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span>Les deux</span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Condition</th><th style=text-align:center>Vraie ?</th></tr></thead><tbody><tr><td><code>age &lt; 6</code> (5 &lt; 6)</td><td style=text-align:center>✓ Vraie</td></tr><tr><td><code>age > 80</code> (5 > 80)</td><td style=text-align:center>✗ Fausse</td></tr><tr><td><strong><code>A or B</code></strong></td><td style=text-align:center><strong>Vraie</strong> (il en suffit d&rsquo;une vraie)</td></tr></tbody></table><p><code>or</code> est vrai <strong>dès qu&rsquo;au moins une</strong> condition l&rsquo;est.</p><p><strong>Réponse : <code>Gratuit</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>note <span style=color:#666>=</span> <span style=color:#40a070>16</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> note <span style=color:#666>&gt;=</span> <span style=color:#40a070>18</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;A&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span><span style=color:#007020;font-weight:700>elif</span> note <span style=color:#666>&gt;=</span> <span style=color:#40a070>14</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;B&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span><span style=color:#007020;font-weight:700>elif</span> note <span style=color:#666>&gt;=</span> <span style=color:#40a070>12</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;C&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;D&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>A</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>B</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>C</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span><code>B</code> puis <code>C</code></span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center><code>note</code></th><th style=text-align:center><code>>= 18</code></th><th style=text-align:center><code>>= 14</code></th><th style=text-align:center><code>>= 12</code></th><th style=text-align:center>Branche exécutée</th></tr></thead><tbody><tr><td style=text-align:center>16</td><td style=text-align:center>Fausse</td><td style=text-align:center><strong>Vraie</strong></td><td style=text-align:center>(non testée)</td><td style=text-align:center><code>elif note >= 14</code></td></tr></tbody></table><p>Dans une chaîne <code>if / elif / elif / else</code>, <strong>dès qu&rsquo;une condition est vraie</strong>, son bloc s&rsquo;exécute et toutes les suivantes sont ignorées.</p><p><strong>Réponse : <code>B</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>signe</span>(n):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> n <span style=color:#666>&gt;</span> <span style=color:#40a070>0</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;positif&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>if</span> n <span style=color:#666>&lt;</span> <span style=color:#40a070>0</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;négatif&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;nul&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span><span style=color:#007020>print</span>(signe(<span style=color:#666>-</span><span style=color:#40a070>5</span>))
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>positif</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>négatif</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>nul</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center>Ligne</th><th style=text-align:center><code>n</code></th><th>Condition</th><th>Action</th></tr></thead><tbody><tr><td style=text-align:center><code>if n > 0</code></td><td style=text-align:center>−5</td><td>Fausse</td><td>passe à la suite</td></tr><tr><td style=text-align:center><code>if n &lt; 0</code></td><td style=text-align:center>−5</td><td><strong>Vraie</strong></td><td><code>return "négatif"</code> → la fonction <strong>s&rsquo;arrête</strong></td></tr><tr><td style=text-align:center><code>return "nul"</code></td><td style=text-align:center>—</td><td>—</td><td>Jamais atteint</td></tr></tbody></table><p><code>return</code> interrompt immédiatement la fonction : les <code>return</code> suivants ne sont pas exécutés.</p><p><strong>Réponse : <code>négatif</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>est_pair</span>(n):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> n <span style=color:#666>%</span> <span style=color:#40a070>2</span> <span style=color:#666>==</span> <span style=color:#40a070>0</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>True</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#007020;font-weight:700>False</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span><span style=color:#007020>print</span>(est_pair(<span style=color:#40a070>7</span>))
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>True</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>False</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>1</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center>Étape</th><th>Calcul</th><th style=text-align:center>Valeur</th></tr></thead><tbody><tr><td style=text-align:center><code>n % 2</code></td><td>7 ÷ 2 → reste <strong>1</strong></td><td style=text-align:center>1</td></tr><tr><td style=text-align:center><code>n % 2 == 0</code></td><td>1 == 0</td><td style=text-align:center><strong><code>False</code></strong></td></tr><tr><td style=text-align:center>Branche choisie</td><td><code>else</code></td><td style=text-align:center>renvoie <code>False</code></td></tr></tbody></table><p>Rappel : <code>%</code> donne le <strong>reste</strong> de la division entière. Un nombre est pair si son reste par 2 vaut 0.</p><p><strong>Réponse : <code>False</code></strong></p></div></div><div class=qcm-q data-correct=0><div class=qcm-question><p>Que renvoie <code>tarif(25)</code> ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>tarif</span>(age):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&gt;=</span> <span style=color:#40a070>0</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>5</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>if</span> age <span style=color:#666>&gt;=</span> <span style=color:#40a070>18</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>10</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>0</span>
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>5</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>10</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>0</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center>Ligne</th><th>Condition</th><th>Action</th></tr></thead><tbody><tr><td style=text-align:center><code>if age >= 0</code></td><td>25 ≥ 0 → <strong>Vraie</strong></td><td><code>return 5</code> → fin de la fonction</td></tr><tr><td style=text-align:center><code>if age >= 18</code></td><td>—</td><td>jamais atteint</td></tr><tr><td style=text-align:center><code>return 0</code></td><td>—</td><td>jamais atteint</td></tr></tbody></table><p>Piège classique d&rsquo;<strong>ordre</strong> : la condition <code>age >= 0</code> est satisfaite par tout âge positif, donc la branche <code>age >= 18</code> ne sera <strong>jamais</strong> exécutée. Il faudrait écrire les conditions de la plus restrictive à la plus large, ou utiliser <code>elif</code>.</p><p><strong>Réponse : <code>5</code></strong></p></div></div><div class=qcm-q data-correct=1><div class=qcm-question><p>Qu&rsquo;affiche ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>x <span style=color:#666>=</span> <span style=color:#40a070>3</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#007020;font-weight:700>if</span> x <span style=color:#666>&gt;</span> <span style=color:#40a070>10</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;A&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;B&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span><span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;C&#34;</span>)
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span><span style=color:#007020>print</span>(<span style=color:#4070a0>&#34;D&#34;</span>)
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>A</code> puis <code>B</code> puis <code>C</code> puis <code>D</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>C</code> puis <code>D</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>D</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span><code>A</code> puis <code>B</code> puis <code>D</code></span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center>Ligne</th><th style=text-align:center><code>x</code></th><th style=text-align:center>Condition <code>x > 10</code></th><th>Affichage</th></tr></thead><tbody><tr><td style=text-align:center>2–3 (bloc <code>if</code>)</td><td style=text-align:center>3</td><td style=text-align:center>Fausse</td><td>(sauté)</td></tr><tr><td style=text-align:center>5 (bloc <code>else</code>)</td><td style=text-align:center>3</td><td style=text-align:center>—</td><td><code>C</code></td></tr><tr><td style=text-align:center>6 (hors <code>if/else</code>)</td><td style=text-align:center>3</td><td style=text-align:center>—</td><td><code>D</code></td></tr></tbody></table><p>Le bloc <code>if</code> contient <strong>deux</strong> lignes (<code>A</code> et <code>B</code> toutes les deux indentées), mais elles sont sautées. Le bloc <code>else</code> contient une ligne. La dernière <code>print("D")</code> n&rsquo;est pas indentée → toujours exécutée.</p><p><strong>Réponse : <code>C</code> puis <code>D</code></strong></p></div></div><div class=qcm-q data-correct=2><div class=qcm-question><p>Que renvoie <code>mention(12)</code> ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>mention</span>(moy):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>10</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Insuffisant&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>12</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Assez bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>elif</span> moy <span style=color:#666>&lt;</span> <span style=color:#40a070>14</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Bien&#34;</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#4070a0>&#34;Très bien&#34;</span>
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>"Insuffisant"</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>"Assez bien"</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>"Bien"</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span><code>"Très bien"</code></span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th style=text-align:center><code>moy</code></th><th style=text-align:center><code>&lt; 10</code></th><th style=text-align:center><code>&lt; 12</code></th><th style=text-align:center><code>&lt; 14</code></th><th style=text-align:center>Branche</th></tr></thead><tbody><tr><td style=text-align:center>12</td><td style=text-align:center>Fausse</td><td style=text-align:center>Fausse (12 n&rsquo;est pas &lt; 12)</td><td style=text-align:center><strong>Vraie</strong></td><td style=text-align:center><code>elif moy &lt; 14</code></td></tr></tbody></table><p>Piège des <strong>bornes strictes</strong> : 12 n&rsquo;est pas strictement inférieur à 12, donc la branche <code>Assez bien</code> (qui s&rsquo;arrête à <code>&lt; 12</code>) ne s&rsquo;applique <strong>pas</strong>. C&rsquo;est la suivante qui prend le relais.</p><p><strong>Réponse : <code>"Bien"</code></strong></p></div></div><div class=qcm-q data-correct=2><div class=qcm-question><p>Que renvoie ce programme ?</p><div class=highlight><pre tabindex=0 style=background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#007020;font-weight:700>def</span> <span style=color:#06287e>reponse</span>(s):
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#007020;font-weight:700>if</span> s <span style=color:#666>==</span> <span style=color:#4070a0>&#34;oui&#34;</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>1</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#007020;font-weight:700>elif</span> s <span style=color:#666>==</span> <span style=color:#4070a0>&#34;OUI&#34;</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>2</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span>    <span style=color:#007020;font-weight:700>else</span>:
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>        <span style=color:#007020;font-weight:700>return</span> <span style=color:#40a070>0</span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>
-</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span><span><span style=color:#007020>print</span>(reponse(<span style=color:#4070a0>&#34;Oui&#34;</span>))
-</span></span></code></pre></div></div><div class=qcm-opts><div class=qcm-o data-index=0 onclick=qcmCheck(this)><div class=rd></div><span><code>1</code></span></div><div class=qcm-o data-index=1 onclick=qcmCheck(this)><div class=rd></div><span><code>2</code></span></div><div class=qcm-o data-index=2 onclick=qcmCheck(this)><div class=rd></div><span><code>0</code></span></div><div class=qcm-o data-index=3 onclick=qcmCheck(this)><div class=rd></div><span>Erreur</span></div></div><div class=qcm-exp style=display:none;margin-top:.8rem></div><div class=qcm-correction style="display:none;margin-top:.5rem;margin-left:2rem;padding:.8rem 1rem;background:0 0;border-left:3px solid;border-radius:0 4px 4px 0"><table><thead><tr><th>Test</th><th style=text-align:center>Vraie ?</th></tr></thead><tbody><tr><td><code>"Oui" == "oui"</code></td><td style=text-align:center>✗ Fausse (<code>O</code> majuscule ≠ <code>o</code> minuscule)</td></tr><tr><td><code>"Oui" == "OUI"</code></td><td style=text-align:center>✗ Fausse (<code>ui</code> minuscules ≠ <code>UI</code> majuscules)</td></tr><tr><td>Branche choisie</td><td style=text-align:center><code>else</code> → <code>return 0</code></td></tr></tbody></table><p>Python est <strong>sensible à la casse</strong> : <code>"oui"</code>, <code>"OUI"</code> et <code>"Oui"</code> sont <strong>trois chaînes différentes</strong>. Pour ignorer la casse, on utilise souvent <code>s.lower() == "oui"</code>.</p><p><strong>Réponse : <code>0</code></strong></p></div></div></div></div></div><footer class=site-footer><div>MaBémat · Mme Bertail · Collège & Lycée</div><div><a href=/mabemat/credits/>Ressources & crédits</a>
-&nbsp;·&nbsp;
-<a href=/mabemat/mentions-legales/>Mentions légales</a></div></footer><script src=/mabemat/js/qcm.js></script><script src=https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js></script><script>document.addEventListener("DOMContentLoaded",function(){typeof scratchblocks!="undefined"&&scratchblocks.renderMatching("pre.blocks",{style:"scratch3",languages:["fr"],scale:.75})})</script><script>const BUILD_TS="1781366857";document.querySelectorAll('img[src*="/figures/"]').forEach(function(e){const t=e.src.split("?")[0];e.src=t+"?v="+BUILD_TS})</script></body></html>
+<!DOCTYPE html>
+<html lang="fr" class="lvl-snt">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QCM — Conditionnelles — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/" class="active">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+
+  
+
+  
+    <a href="/mabemat/snt/seance-03-conditionnelles/">
+      
+        Séance 03 — Conditionnelles
+      
+    </a>
+    <span class="sep">/</span>
+  
+
+  <span>QCM — Conditionnelles</span>
+</div>
+
+
+<div class="qcm-page">
+  <h1 style="color: #4A5D7A;">QCM — Conditionnelles</h1>
+  <div class="qcm-container">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quel mot-clé permet d&rsquo;<strong>exécuter du code sous condition</strong> en Python ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>condition</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>if</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>where</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>case</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Mot-clé</th>
+          <th>Rôle en Python</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>if</code></td>
+          <td><strong>Si</strong> la condition est vraie, exécuter le bloc</td>
+      </tr>
+      <tr>
+          <td><code>elif</code></td>
+          <td><strong>Sinon si</strong> une autre condition est vraie</td>
+      </tr>
+      <tr>
+          <td><code>else</code></td>
+          <td><strong>Sinon</strong>, exécuter le bloc final</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>condition</code>, <code>where</code>, <code>case</code> n&rsquo;existent pas dans la syntaxe Python.</p>
+<p><strong>Réponse : <code>if</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Par quel caractère doit se terminer la ligne <code>if</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">&gt;</span> <span style="color:#40a070">5</span><span style="">?</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;grand&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>.</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>:</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>,</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <p>Comme pour <code>def</code>, la ligne <code>if</code> se termine obligatoirement par <strong>deux-points</strong> : ils annoncent le bloc d&rsquo;instructions qui suit.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">&gt;</span> <span style="color:#40a070">5</span>:           <span style="color:#60a0b0;font-style:italic"># ← deux-points obligatoires</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;grand&#34;</span>)
+</span></span></code></pre></div><p>Sans les <code>:</code>, Python signale une <code>SyntaxError</code>.</p>
+<p><strong>Réponse : <code>:</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    À quoi sert <code>else</code> dans une structure conditionnelle ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À tester une nouvelle condition</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À exécuter un bloc <strong>quand la condition du <code>if</code> est fausse</strong></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À afficher un message</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>À arrêter le programme</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Mot-clé</th>
+          <th>Quand le bloc s&rsquo;exécute-t-il ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>if condition:</code></td>
+          <td>Si <strong>la condition est vraie</strong></td>
+      </tr>
+      <tr>
+          <td><code>elif autre_cond:</code></td>
+          <td>Si la précédente est fausse <strong>et</strong> que celle-ci est vraie</td>
+      </tr>
+      <tr>
+          <td><code>else:</code></td>
+          <td><strong>Aucune</strong> des conditions précédentes n&rsquo;est vraie</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>else</code> ne prend pas de condition après lui : c&rsquo;est le « cas restant ».</p>
+<p><strong>Réponse : Exécuter un bloc quand la condition du <code>if</code> est fausse</strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    Quel opérateur permet de tester si <strong>deux valeurs sont égales</strong> en Python ?
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>=</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>==</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>!=</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>eq</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Opérateur</th>
+          <th>Rôle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>=</code></td>
+          <td><strong>Affectation</strong> : <code>x = 5</code> met 5 dans <code>x</code></td>
+      </tr>
+      <tr>
+          <td><code>==</code></td>
+          <td><strong>Test d&rsquo;égalité</strong> : <code>x == 5</code> renvoie <code>True</code> ou <code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>!=</code></td>
+          <td>Test de <strong>différence</strong></td>
+      </tr>
+      <tr>
+          <td><code>eq</code></td>
+          <td>N&rsquo;existe pas en Python</td>
+      </tr>
+  </tbody>
+</table>
+<p>Confondre <code>=</code> et <code>==</code> est l&rsquo;erreur la plus fréquente en Python : <code>if x = 5</code> est une <code>SyntaxError</code>.</p>
+<p><strong>Réponse : <code>==</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#40a070">7</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">&gt;</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;grand&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;fin&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>grand</code> puis <code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>grand</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: center"><code>x</code></th>
+          <th style="text-align: center">Condition <code>x &gt; 5</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center">—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2–3</td>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center"><strong>Vraie</strong> (7 &gt; 5)</td>
+          <td><code>grand</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center">—</td>
+          <td><code>fin</code> (hors du <code>if</code>)</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>print(&quot;fin&quot;)</code> n&rsquo;est <strong>pas indenté</strong> : il s&rsquo;exécute toujours, indépendamment du <code>if</code>.</p>
+<p><strong>Réponse : <code>grand</code> puis <code>fin</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#40a070">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">&gt;</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;grand&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;fin&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>grand</code> puis <code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>fin</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>grand</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: center"><code>x</code></th>
+          <th style="text-align: center">Condition <code>x &gt; 5</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2–3</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center"><strong>Fausse</strong> (3 &lt; 5)</td>
+          <td>(rien)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">—</td>
+          <td><code>fin</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Le bloc du <code>if</code> est sauté. La ligne <code>print(&quot;fin&quot;)</code>, qui n&rsquo;est pas indentée, s&rsquo;exécute quand même.</p>
+<p><strong>Réponse : <code>fin</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>age <span style="color:#666">=</span> <span style="color:#40a070">15</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&gt;=</span> <span style="color:#40a070">18</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;majeur&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;mineur&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>majeur</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>mineur</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>majeur</code> puis <code>mineur</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>age</code></th>
+          <th style="text-align: center">Condition <code>age &gt;= 18</code></th>
+          <th style="text-align: center">Branche choisie</th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">15</td>
+          <td style="text-align: center"><strong>Fausse</strong></td>
+          <td style="text-align: center"><code>else</code></td>
+          <td><code>mineur</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Une structure <code>if / else</code> choisit <strong>exactement une</strong> des deux branches : jamais les deux à la fois.</p>
+<p><strong>Réponse : <code>mineur</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Quelle est l&rsquo;erreur dans ce code ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">=</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;ok&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Le <code>if</code> ne peut pas tester une variable</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il faut écrire <code>==</code> (pas <code>=</code>) pour <strong>comparer</strong></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il manque le mot-clé <code>then</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Il manque les parenthèses</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Écriture</th>
+          <th>Signification</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>x = 5</code></td>
+          <td><strong>Affecter</strong> la valeur 5 à <code>x</code></td>
+      </tr>
+      <tr>
+          <td><code>x == 5</code></td>
+          <td><strong>Tester</strong> si <code>x</code> vaut 5</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le <code>if</code> attend une <strong>condition</strong> (qui s&rsquo;évalue en <code>True</code>/<code>False</code>), pas une affectation. Code corrigé :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">==</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;ok&#34;</span>)
+</span></span></code></pre></div><p><strong>Réponse : Il faut <code>==</code> au lieu de <code>=</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>note <span style="color:#666">=</span> <span style="color:#40a070">12</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">16</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Très bien&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">elif</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">12</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Assez bien&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;À retravailler&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Très bien</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Assez bien</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>À retravailler</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Les trois lignes</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>note</code></th>
+          <th style="text-align: center"><code>note &gt;= 16</code></th>
+          <th style="text-align: center"><code>note &gt;= 12</code></th>
+          <th style="text-align: center">Branche</th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">Fausse</td>
+          <td style="text-align: center"><strong>Vraie</strong></td>
+          <td style="text-align: center"><code>elif</code></td>
+          <td><code>Assez bien</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Python teste les branches <strong>dans l&rsquo;ordre</strong> : dès que l&rsquo;une est vraie, il exécute son bloc et <strong>ignore</strong> toutes les suivantes.</p>
+<p><strong>Réponse : <code>Assez bien</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Que renvoie <code>place(14)</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">place</span>(age):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&lt;</span> <span style="color:#40a070">14</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">5.50</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> age <span style="color:#666">&lt;=</span> <span style="color:#40a070">25</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">7.80</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">10.20</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5.5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>7.8</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10.2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>age</code></th>
+          <th style="text-align: center"><code>age &lt; 14</code></th>
+          <th style="text-align: center"><code>age &lt;= 25</code></th>
+          <th style="text-align: center">Branche</th>
+          <th style="text-align: center">Renvoi</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">14</td>
+          <td style="text-align: center">Fausse (14 n&rsquo;est pas &lt; 14)</td>
+          <td style="text-align: center"><strong>Vraie</strong></td>
+          <td style="text-align: center"><code>elif</code></td>
+          <td style="text-align: center"><strong><code>7.8</code></strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>Attention : <code>&lt;</code> (strict) et <code>&lt;=</code> (large) ne traitent pas les <strong>bornes</strong> de la même façon. 14 n&rsquo;est pas strictement inférieur à 14, mais il est bien inférieur ou égal à 25.</p>
+<p><strong>Réponse : <code>7.8</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>moy <span style="color:#666">=</span> <span style="color:#40a070">11</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>note_min <span style="color:#666">=</span> <span style="color:#40a070">6</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020;font-weight:bold">if</span> moy <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span> <span style="color:#007020;font-weight:bold">and</span> note_min <span style="color:#666">&gt;=</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Validé&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Non validé&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Validé</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Non validé</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Condition</th>
+          <th style="text-align: center">Vraie ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>moy &gt;= 10</code> (11 ≥ 10)</td>
+          <td style="text-align: center">✓ Vraie</td>
+      </tr>
+      <tr>
+          <td><code>note_min &gt;= 5</code> (6 ≥ 5)</td>
+          <td style="text-align: center">✓ Vraie</td>
+      </tr>
+      <tr>
+          <td><strong><code>A and B</code></strong></td>
+          <td style="text-align: center"><strong>Vraie</strong> (les deux le sont)</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>and</code> n&rsquo;est vrai <strong>que si les deux</strong> conditions le sont en même temps.</p>
+<p><strong>Réponse : <code>Validé</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>moy <span style="color:#666">=</span> <span style="color:#40a070">11</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>note_min <span style="color:#666">=</span> <span style="color:#40a070">4</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020;font-weight:bold">if</span> moy <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span> <span style="color:#007020;font-weight:bold">and</span> note_min <span style="color:#666">&gt;=</span> <span style="color:#40a070">5</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Validé&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Non validé&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Validé</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Non validé</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Rien</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Condition</th>
+          <th style="text-align: center">Vraie ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>moy &gt;= 10</code> (11 ≥ 10)</td>
+          <td style="text-align: center">✓ Vraie</td>
+      </tr>
+      <tr>
+          <td><code>note_min &gt;= 5</code> (4 ≥ 5)</td>
+          <td style="text-align: center">✗ Fausse</td>
+      </tr>
+      <tr>
+          <td><strong><code>A and B</code></strong></td>
+          <td style="text-align: center"><strong>Fausse</strong> (il en suffit d&rsquo;une fausse)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Avec <code>and</code>, <strong>une seule</strong> condition fausse rend l&rsquo;expression entière fausse.</p>
+<p><strong>Réponse : <code>Non validé</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>age <span style="color:#666">=</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&lt;</span> <span style="color:#40a070">6</span> <span style="color:#007020;font-weight:bold">or</span> age <span style="color:#666">&gt;</span> <span style="color:#40a070">80</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Gratuit&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Tarif normal&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Gratuit</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>Tarif normal</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Les deux</span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Condition</th>
+          <th style="text-align: center">Vraie ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>age &lt; 6</code> (5 &lt; 6)</td>
+          <td style="text-align: center">✓ Vraie</td>
+      </tr>
+      <tr>
+          <td><code>age &gt; 80</code> (5 &gt; 80)</td>
+          <td style="text-align: center">✗ Fausse</td>
+      </tr>
+      <tr>
+          <td><strong><code>A or B</code></strong></td>
+          <td style="text-align: center"><strong>Vraie</strong> (il en suffit d&rsquo;une vraie)</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>or</code> est vrai <strong>dès qu&rsquo;au moins une</strong> condition l&rsquo;est.</p>
+<p><strong>Réponse : <code>Gratuit</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>note <span style="color:#666">=</span> <span style="color:#40a070">16</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">18</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;A&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020;font-weight:bold">elif</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">14</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;B&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#007020;font-weight:bold">elif</span> note <span style="color:#666">&gt;=</span> <span style="color:#40a070">12</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;C&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;D&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>A</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>B</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>C</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>B</code> puis <code>C</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>note</code></th>
+          <th style="text-align: center"><code>&gt;= 18</code></th>
+          <th style="text-align: center"><code>&gt;= 14</code></th>
+          <th style="text-align: center"><code>&gt;= 12</code></th>
+          <th style="text-align: center">Branche exécutée</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center">Fausse</td>
+          <td style="text-align: center"><strong>Vraie</strong></td>
+          <td style="text-align: center">(non testée)</td>
+          <td style="text-align: center"><code>elif note &gt;= 14</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Dans une chaîne <code>if / elif / elif / else</code>, <strong>dès qu&rsquo;une condition est vraie</strong>, son bloc s&rsquo;exécute et toutes les suivantes sont ignorées.</p>
+<p><strong>Réponse : <code>B</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">signe</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">&gt;</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;positif&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;négatif&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;nul&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#007020">print</span>(signe(<span style="color:#666">-</span><span style="color:#40a070">5</span>))
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>positif</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>négatif</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>nul</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: center"><code>n</code></th>
+          <th>Condition</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>if n &gt; 0</code></td>
+          <td style="text-align: center">−5</td>
+          <td>Fausse</td>
+          <td>passe à la suite</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>if n &lt; 0</code></td>
+          <td style="text-align: center">−5</td>
+          <td><strong>Vraie</strong></td>
+          <td><code>return &quot;négatif&quot;</code> → la fonction <strong>s&rsquo;arrête</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>return &quot;nul&quot;</code></td>
+          <td style="text-align: center">—</td>
+          <td>—</td>
+          <td>Jamais atteint</td>
+      </tr>
+  </tbody>
+</table>
+<p><code>return</code> interrompt immédiatement la fonction : les <code>return</code> suivants ne sont pas exécutés.</p>
+<p><strong>Réponse : <code>négatif</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">est_pair</span>(n):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">True</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">False</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020">print</span>(est_pair(<span style="color:#40a070">7</span>))
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>True</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>False</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Étape</th>
+          <th>Calcul</th>
+          <th style="text-align: center">Valeur</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>n % 2</code></td>
+          <td>7 ÷ 2 → reste <strong>1</strong></td>
+          <td style="text-align: center">1</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>n % 2 == 0</code></td>
+          <td>1 == 0</td>
+          <td style="text-align: center"><strong><code>False</code></strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Branche choisie</td>
+          <td><code>else</code></td>
+          <td style="text-align: center">renvoie <code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Rappel : <code>%</code> donne le <strong>reste</strong> de la division entière. Un nombre est pair si son reste par 2 vaut 0.</p>
+<p><strong>Réponse : <code>False</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="0">
+  <div class="qcm-question">
+    <p>Que renvoie <code>tarif(25)</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">tarif</span>(age):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&gt;=</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">5</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&gt;=</span> <span style="color:#40a070">18</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">10</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">0</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>5</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>10</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th>Condition</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><code>if age &gt;= 0</code></td>
+          <td>25 ≥ 0 → <strong>Vraie</strong></td>
+          <td><code>return 5</code> → fin de la fonction</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>if age &gt;= 18</code></td>
+          <td>—</td>
+          <td>jamais atteint</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>return 0</code></td>
+          <td>—</td>
+          <td>jamais atteint</td>
+      </tr>
+  </tbody>
+</table>
+<p>Piège classique d&rsquo;<strong>ordre</strong> : la condition <code>age &gt;= 0</code> est satisfaite par tout âge positif, donc la branche <code>age &gt;= 18</code> ne sera <strong>jamais</strong> exécutée. Il faudrait écrire les conditions de la plus restrictive à la plus large, ou utiliser <code>elif</code>.</p>
+<p><strong>Réponse : <code>5</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="1">
+  <div class="qcm-question">
+    <p>Qu&rsquo;affiche ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>x <span style="color:#666">=</span> <span style="color:#40a070">3</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">if</span> x <span style="color:#666">&gt;</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;A&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;B&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;C&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;D&#34;</span>)
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>A</code> puis <code>B</code> puis <code>C</code> puis <code>D</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>C</code> puis <code>D</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>D</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>A</code> puis <code>B</code> puis <code>D</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Ligne</th>
+          <th style="text-align: center"><code>x</code></th>
+          <th style="text-align: center">Condition <code>x &gt; 10</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">2–3 (bloc <code>if</code>)</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">Fausse</td>
+          <td>(sauté)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5 (bloc <code>else</code>)</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">—</td>
+          <td><code>C</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">6 (hors <code>if/else</code>)</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">—</td>
+          <td><code>D</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Le bloc <code>if</code> contient <strong>deux</strong> lignes (<code>A</code> et <code>B</code> toutes les deux indentées), mais elles sont sautées. Le bloc <code>else</code> contient une ligne. La dernière <code>print(&quot;D&quot;)</code> n&rsquo;est pas indentée → toujours exécutée.</p>
+<p><strong>Réponse : <code>C</code> puis <code>D</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que renvoie <code>mention(12)</code> ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">mention</span>(moy):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">10</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Insuffisant&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">12</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Assez bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">14</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Bien&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Très bien&#34;</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>&quot;Insuffisant&quot;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>&quot;Assez bien&quot;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>&quot;Bien&quot;</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>&quot;Très bien&quot;</code></span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><code>moy</code></th>
+          <th style="text-align: center"><code>&lt; 10</code></th>
+          <th style="text-align: center"><code>&lt; 12</code></th>
+          <th style="text-align: center"><code>&lt; 14</code></th>
+          <th style="text-align: center">Branche</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">12</td>
+          <td style="text-align: center">Fausse</td>
+          <td style="text-align: center">Fausse (12 n&rsquo;est pas &lt; 12)</td>
+          <td style="text-align: center"><strong>Vraie</strong></td>
+          <td style="text-align: center"><code>elif moy &lt; 14</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Piège des <strong>bornes strictes</strong> : 12 n&rsquo;est pas strictement inférieur à 12, donc la branche <code>Assez bien</code> (qui s&rsquo;arrête à <code>&lt; 12</code>) ne s&rsquo;applique <strong>pas</strong>. C&rsquo;est la suivante qui prend le relais.</p>
+<p><strong>Réponse : <code>&quot;Bien&quot;</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+
+<div class="qcm-q" data-correct="2">
+  <div class="qcm-question">
+    <p>Que renvoie ce programme ?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">reponse</span>(s):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> s <span style="color:#666">==</span> <span style="color:#4070a0">&#34;oui&#34;</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> s <span style="color:#666">==</span> <span style="color:#4070a0">&#34;OUI&#34;</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span><span style="color:#007020">print</span>(reponse(<span style="color:#4070a0">&#34;Oui&#34;</span>))
+</span></span></code></pre></div>
+  </div>
+
+  <div class="qcm-opts">
+    
+    
+      
+      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>1</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>2</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span><code>0</code></span>
+      </div>
+      
+      
+    
+      
+      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
+        <div class="rd"></div>
+        <span>Erreur</span>
+      </div>
+      
+      
+    
+  </div>
+
+  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
+  
+  <div class="qcm-correction" style="display:none;margin-top:0.5rem;margin-left:2rem;padding:0.8rem 1rem;background:none;border-left:3px solid none;border-radius:0 4px 4px 0;">
+    <table>
+  <thead>
+      <tr>
+          <th>Test</th>
+          <th style="text-align: center">Vraie ?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&quot;Oui&quot; == &quot;oui&quot;</code></td>
+          <td style="text-align: center">✗ Fausse (<code>O</code> majuscule ≠ <code>o</code> minuscule)</td>
+      </tr>
+      <tr>
+          <td><code>&quot;Oui&quot; == &quot;OUI&quot;</code></td>
+          <td style="text-align: center">✗ Fausse (<code>ui</code> minuscules ≠ <code>UI</code> majuscules)</td>
+      </tr>
+      <tr>
+          <td>Branche choisie</td>
+          <td style="text-align: center"><code>else</code> → <code>return 0</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Python est <strong>sensible à la casse</strong> : <code>&quot;oui&quot;</code>, <code>&quot;OUI&quot;</code> et <code>&quot;Oui&quot;</code> sont <strong>trois chaînes différentes</strong>. Pour ignorer la casse, on utilise souvent <code>s.lower() == &quot;oui&quot;</code>.</p>
+<p><strong>Réponse : <code>0</code></strong></p>
+
+  </div>
+  
+</div>
+
+
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1781367422';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>
