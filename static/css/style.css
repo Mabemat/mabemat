@@ -1805,7 +1805,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 .auto1re-choice {
   display: flex; align-items: center; gap: 14px; padding: 14px 18px;
   border: 1px solid var(--rule); background: var(--paper); border-radius: 4px;
-  cursor: pointer; transition: border-color .2s, background .2s;
+  cursor: pointer; transition: border-color .2s, background .2s; outline: none;
   font-size: 15px; line-height: 1.5; color: var(--ink-2);
   text-align: left; font-family: inherit; width: 100%;
 }

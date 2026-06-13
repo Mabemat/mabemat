@@ -1805,18 +1805,16 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
 .auto1re-choice {
   display: flex; align-items: center; gap: 14px; padding: 14px 18px;
   border: 1px solid var(--rule); background: var(--paper); border-radius: 4px;
-  cursor: pointer; transition: border-color .2s, background .2s;
+  cursor: pointer; transition: border-color .2s, background .2s; outline: none;
   font-size: 15px; line-height: 1.5; color: var(--ink-2);
   text-align: left; font-family: inherit; width: 100%;
 }
-.auto1re-choice:hover { border-color: var(--accent-2); background: var(--paper-2); }
 .auto1re-bullet {
   width: 28px; height: 28px; border-radius: 999px; border: 1px solid var(--rule);
   display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
   font-family: var(--font-mono); font-size: 12px; font-weight: 500;
   color: var(--ink-3); background: var(--paper); transition: all .2s;
 }
-.auto1re-choice:hover .auto1re-bullet { border-color: var(--accent); color: var(--accent); }
 .auto1re-body { flex: 1; }
 
 /* États après réponse */
