@@ -43,22 +43,22 @@
 
 /* --- Surcharges pour les pages 3e --- */
 .niveau-3e {
-    --env-definition:     #A4485F;
+    --env-definition:     #A4485F;          /* Couleur6 */
     --env-definition-bg:  rgba(164, 72, 95, 0.05);
-    --env-propriete:      #C5607A;
+    --env-propriete:      #8B3C52;          /* Couleur2 */
     --env-propriete-bg:   rgba(139, 60, 82, 0.05);
-    --env-theoreme:       #8B3C52;
-    --env-theoreme-bg:    rgba(197, 96, 122, 0.05);
-    --env-methode:        #cf90a2;
-    --env-methode-bg:     rgba(207, 144, 162, 0.05);
-    --env-exemple:        #EB7F73;
+    --env-theoreme:       #573652;          /* Couleur1 */
+    --env-theoreme-bg:    rgba(87, 54, 82, 0.05);
+    --env-methode:        #9C7487;          /* Couleur3 */
+    --env-methode-bg:     rgba(156, 116, 135, 0.05);
+    --env-exemple:        #E1957A;          /* Couleur8 */
     --env-exemple-bg:     transparent;
-    --env-remarque:       #A5C03F;   /* identique 6e */
-    --env-notation:       #EB7F73;
-    --env-notation-bg:    rgba(235, 127, 115, 0.10);
-    --env-titre:          #D36740;   /* 3e couleur primaire */
-    --env-tableau:        #EB7F73;   /* bordure tableau */
-    --env-tableau-bg:     rgba(235, 127, 115, 0.08);
+    --env-remarque:       #A5C03F;          /* Couleur7 — identique 6e */
+    --env-notation:       #E1957A;          /* Couleur8 */
+    --env-notation-bg:    rgba(225, 149, 122, 0.10);
+    --env-titre:          #D36740;          /* Couleur10 */
+    --env-tableau:        #E1957A;          /* Couleur8 */
+    --env-tableau-bg:     rgba(225, 149, 122, 0.08);
 }
 
 

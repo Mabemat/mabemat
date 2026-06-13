@@ -68,7 +68,7 @@
 
 /* ── Couleurs par niveau ── */
 .lvl-6e     { --accent: #D36740; --accent-2: #C5607A; --accent-ink: #FFF; }
-.lvl-3e     { --accent: #8B3C52; --accent-2: #C5607A; --accent-ink: #FFF; }
+.lvl-3e     { --accent: #8B3C52; --accent-2: #9C7487; --accent-ink: #FFF; }
 .lvl-2nde   { --accent: #4A5D7A; --accent-2: #8A9CC1; --accent-ink: #FFF; }
 .lvl-1re    { --accent: #758467; --accent-2: #B85C5C; --accent-ink: #FFF; }
 .lvl-snt    { --accent: #8A9CC1; --accent-2: #4A5D7A; --accent-ink: #FFF; }
@@ -243,7 +243,7 @@ html { scroll-behavior: smooth; }
 
 /* html.lvl-Xe (0,1,1) > :root (0,1,0) — pas d'ambiguïté de cascade */
 html.lvl-6e   { --logo-ma: #D36740; --logo-bemat: #C5607A; }
-html.lvl-3e   { --logo-ma: #8B3C52; --logo-bemat: #C5607A; }
+html.lvl-3e   { --logo-ma: #8B3C52; --logo-bemat: #9C7487; }
 html.lvl-2nde { --logo-ma: #4A5D7A; --logo-bemat: #8A9CC1; }
 html.lvl-1re  { --logo-ma: #758467; --logo-bemat: #B85C5C; }
 html.lvl-snt  { --logo-ma: #8A9CC1; --logo-bemat: #4A5D7A; } /* 2nde inversé */
