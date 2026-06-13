@@ -37,63 +37,52 @@
     <h2>Choisis ton <em>niveau</em>.</h2>
   </div>
 
-  <div class="level-grid">
-    {{ $levels := slice "6e" "3e" "2nde" }}
-    {{ range $levels }}
-      {{ $val := index $.Site.Params.levels . }}
-      {{ if $val }}
-      <a class="lvl-card fade-up" style="--c1:{{ $val.color }};" href="{{ . | relURL }}/">
-        <div class="lvl-arrow">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M5 12h14M13 5l7 7-7 7"/>
-          </svg>
-        </div>
-        <div class="lvl-num">
-          {{ if eq . "6e" }}6<sup>e</sup>{{ end }}
-          {{ if eq . "3e" }}3<sup>e</sup>{{ end }}
-          {{ if eq . "2nde" }}2<sup>de</sup>{{ end }}
-        </div>
-        <div>
-          <div class="lvl-title">{{ $val.name }}</div>
-          <div class="lvl-meta">{{ $val.description }}</div>
-        </div>
-      </a>
-      {{ end }}
-    {{ end }}
-
-    {{/* Python / SNT */}}
-    {{ with .Site.Params.snt }}{{ if not .hidden }}
-    <a class="lvl-card fade-up" style="--c1:{{ .color }};" href="{{ "snt" | relURL }}/">
-      <div class="lvl-arrow">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14M13 5l7 7-7 7"/>
-        </svg>
-      </div>
-      <div class="lvl-num" style="font-family:var(--font-mono);font-size:clamp(40px,5vw,64px);font-style:normal;line-height:1.1;">&gt;_</div>
-      <div>
-        <div class="lvl-title">{{ .name }} · SNT</div>
-        <div class="lvl-meta">{{ .description }}</div>
-      </div>
-    </a>
-    {{ end }}{{ end }}
-
-    {{/* 1re */}}
-    {{ $val1re := index .Site.Params.levels "1re" }}
-    {{ if $val1re }}
-    <a class="lvl-card fade-up" style="--c1:{{ $val1re.color }};" href="{{ "1re" | relURL }}/">
-      <div class="lvl-arrow">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14M13 5l7 7-7 7"/>
-        </svg>
-      </div>
-      <div class="lvl-num">1<sup>re</sup></div>
-      <div>
-        <div class="lvl-title">{{ $val1re.name }}</div>
-        <div class="lvl-meta">{{ $val1re.description }}</div>
-      </div>
+  <div class="level-index">
+  {{ $levels := slice "6e" "3e" "2nde" }}
+  {{ range $levels }}
+    {{ $val := index $.Site.Params.levels . }}
+    {{ if $val }}
+    <a class="lvl-row fade-up" style="--lc:{{ $val.color }};" href="{{ . | relURL }}/">
+      <span class="lvl-row-num">
+        {{ if eq . "6e" }}6<sup>e</sup>{{ end }}
+        {{ if eq . "3e" }}3<sup>e</sup>{{ end }}
+        {{ if eq . "2nde" }}2<sup>de</sup>{{ end }}
+      </span>
+      <span class="lvl-row-main">
+        <span class="lvl-row-tag">{{ if eq . "2nde" }}Lycée{{ else }}Collège{{ end }}</span>
+        <span class="lvl-row-name">{{ $val.name }}</span>
+      </span>
+      <span class="lvl-row-meta">{{ $val.description }}</span>
+      <span class="lvl-row-go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
     </a>
     {{ end }}
-  </div>
+  {{ end }}
+
+  {{ with .Site.Params.snt }}{{ if not .hidden }}
+  <a class="lvl-row fade-up" style="--lc:{{ .color2 }};" href="{{ "snt" | relURL }}/">
+    <span class="lvl-row-num code">&gt;_</span>
+    <span class="lvl-row-main">
+      <span class="lvl-row-tag">Lycée</span>
+      <span class="lvl-row-name">{{ .name }} · SNT</span>
+    </span>
+    <span class="lvl-row-meta">{{ .description }}</span>
+    <span class="lvl-row-go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+  </a>
+  {{ end }}{{ end }}
+
+  {{ $val1re := index .Site.Params.levels "1re" }}
+  {{ if $val1re }}
+  <a class="lvl-row fade-up" style="--lc:{{ $val1re.color }};" href="{{ "1re" | relURL }}/">
+    <span class="lvl-row-num">1<sup>re</sup></span>
+    <span class="lvl-row-main">
+      <span class="lvl-row-tag">Lycée</span>
+      <span class="lvl-row-name">{{ $val1re.name }}</span>
+    </span>
+    <span class="lvl-row-meta">{{ $val1re.description }}</span>
+    <span class="lvl-row-go"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+  </a>
+  {{ end }}
+</div>
 </section>
 
 {{/* ── Manifeste ── */}}
