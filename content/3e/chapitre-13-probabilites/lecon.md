@@ -29,7 +29,7 @@ On retourne toutes les cartes et demande à une personne d'en piocher une au has
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-Un événement est constitué par plusieurs issues d'une même expérience aléatoire.
+Un événement est constitué par une ou plusieurs issues d'une même expérience aléatoire.
 </div>
 </div>
 

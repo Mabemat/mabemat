@@ -144,7 +144,7 @@ Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers pos
 <ul style="display:grid; grid-template-columns: repeat(3, 1fr); gap:2rem;">
 <li>$\left(  \dfrac{2}{3 }\right)  ^4 = \dfrac{2^4}{3^4}$</li>
 <li>$\left(  \dfrac{5}{7 }\right)  ^2 = \dfrac{25}{49}$</li>
-<li>$\left(  \dfrac{4x}{7y }\right)  ^3 = \dfrac{4x^3}{7y^3}$</li>
+<li>$\left(  \dfrac{4x}{7y }\right)  ^2 = \dfrac{16x^2}{49y^2}$</li>
 </ul>
 
 </div>

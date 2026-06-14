@@ -118,7 +118,7 @@ Il s'agit donc d'une fonction linéaire de coefficient $2,5$.
 <div class="environment propriete">
 <div class="environment-title">Propriétés :</div>
 <div class="environment-content">
-Dans un repère, la représentation graphique d'une fonction linéaire de coefficient $a$ est l'ensemble des points de coordonnées $(x ; f(x))$ c'est-à-dire $(x ; ax)$. C'est une droite qui passe par l'origine.<br>
+Dans un repère, la représentation graphique d'une fonction linéaire de coefficient $a$ est une droite qui passe par l'origine.<br>
 Le nombre $a$ s'appelle le coefficient directeur de la droite.
 </div>
 </div>
@@ -151,8 +151,7 @@ On peut calculer $f(1) = 2$ et $g(2) = \dfrac{-2}{2} = -1$.
 <div class="environment-title">Méthode - En connaissant un nombre et son image</div>
 <div class="environment-content">
 Déterminons la fonction linéaire $f$ sachant que $f(2) = -7$.<br>
-$f$ est de la forme $f(x) = ax$ et on sait que $f(2) = -7$. Donc $a \times 2 = -7$ donc $a = -3,5$.<br>
-Donc $f(x) = -3,5x$.
+$f$ est de la forme $f(x) = ax$. Comme $f(2) = -7$ et que d'après la formule $f(2)=a\times 2$, on a : $a \times 2 = -7$, c'est-à-dire :  $a = -3,5$. Donc $f(x) = -3,5x$.
 </div>
 </div>
 
@@ -160,7 +159,7 @@ Donc $f(x) = -3,5x$.
 <div class="environment-title">Méthode - En connaissant un point de sa représentation graphique</div>
 <div class="environment-content">
 Déterminons la fonction linéaire $g$ dont la représentation graphique passe par le point $M(-3;5)$.<br>
-$g$ est de la forme $g(x) = ax$ et $M$ appartient à la droite donc $g(-3) = 5$ donc $a \times -3 = 5$ donc $a = \dfrac{-5}{3}$.<br>
+Comme $M$ appartient à la droite on a $g(-3) = 5$, $g$ étant linéaire on a aussi $g(-3)=a \times (-3)$  c'est-à-dire $a \times -3 = 5$ donc $a = \dfrac{-5}{3}$.<br>
 Donc $g(x) = \dfrac{-5}{3}x$.
 </div>
 </div>

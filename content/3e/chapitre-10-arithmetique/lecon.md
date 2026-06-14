@@ -28,11 +28,12 @@ On peut donc dire que $72$ est un multiple de $24$ et de $3$ ou que $24$ est un 
 <div class="environment-title">Méthode : Critères de divisibilité.</div>
 <div class="environment-content">
 <ul>
-<li>Un nombre est divisible par $2$ s'il se termine par $0$, $2$, $4$, $6$ ou $8$</li>
-<li>Un nombre est divisible par $3$ si la somme de ses chiffres est divisible par $3$</li>
-<li>Un nombre est divisible par $4$ si le nombre formé par ses deux derniers chiffres est un multiple de $4$</li>
-<li>Un nombre est divisible par $5$ s'il se termine par $0$ ou $5$</li>
-<li>Un nombre est divisible par $9$ si la somme de ses chiffres est divisible par $9$</li>
+<li>$2$ si son chiffre des unités est $0$, $2$, $4$, $6$ ou $8$</li>
+<li>$3$ si la somme de ses chiffres est divisible par $3$</li>
+<li>$4$ si le nombre formé par ses deux derniers chiffres est un multiple de $4$</li>
+<li>$5$ si son chiffre des unités est $5$</li>
+<li>$9$ si la somme de ses chiffres est divisible par $9$</li>
+<li>$10$ si son chiffre des unités est $0$ ou $5$</li>
 </ul>
 </div>
 </div>

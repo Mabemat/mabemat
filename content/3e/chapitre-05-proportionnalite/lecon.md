@@ -9,7 +9,7 @@ title: "Leçon complète"
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-Un tableau de proportionnalité est un tableau dans lequel on peut passer d'une ligne à une autre en multipliant ou divisant par le même nombre non nul, appelé coefficient de proportionnalité.
+Deux grandeurs sont <strong>proportionnelles</strong> lorsque l'on peut passer des valeurs de l'une aux valeurs de l'autre en multipliant par <strong>un même nombre non nul</strong>, appelé <strong>coefficient de proportionnalité</strong>. Pour les représenter, on utilise un <strong>tableau de proportionnalité</strong>.
 </div>
 </div>
 
@@ -53,8 +53,7 @@ La quantité de sirop est donc proportionnelle à la quantité d'eau.
 La distance parcourue par la voiture est-elle proportionnelle au temps?
 <table>
 <tr>
-<th>\arrayrulecolor{Couleur8} 
-Temps (min)</th>
+<th>Temps (min)</th>
 <th>$ 10 $</th>
 <th>$ 20 $</th>
 <th>$ 30 $</th>
