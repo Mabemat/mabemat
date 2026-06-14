@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.e42a056be10f8145d229ab82aaddccdb1c459ee9450ed284daced5895e7327ab.css" integrity="sha256-5CoFa&#43;EPgUXSKauCqt3M2xxFnulFDtKE2s7ViV5zJ6s=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -328,6 +328,11 @@ pre[style*="background-color"] {
         Je commande une pizza au hasard, quelle est la probabilité qu'il y ait des champignons dedans ?
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Sur les cinq variétés trois contiennent des champignons, la probabilité est donc égale à $$\dfrac{3}{5} = \dfrac{6}{10} = 0,6$$.</div>
+        
 
         
 
@@ -343,6 +348,11 @@ pre[style*="background-color"] {
         J'ai commandé une pizza à la crème, quelle est la probabilité d'avoir du jambon?
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Sur les trois variété à la crème, une seule contient du jambon : la probabilité est donc égale à $\dfrac{1}{3}$.</div>
+        
 
         
 
@@ -357,6 +367,14 @@ pre[style*="background-color"] {
       <div class="q-enonce">
         Il est possible de commander une grande pizza composée à moitié d'une variété et à moitié d'une autre. Quelle est la probabilité d'avoir des champignons sur toute la pizza ? On pourra s'aider d'un arbre des possibles.
 
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box"><img src="/mabemat/figures/3e/chapitre-13/arbre.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+
+On a marqué d'une étoile les variété qui contiennent des champignons. <br>
+Sur les $5 \times 4 = 20$ choix possibles il y en a 6  qui contiennent chacune des champignons : la probabilité est donc de $\dfrac{6}{20} = \dfrac{3}{10} = 0,3$.</div>
         
 
         
@@ -378,6 +396,14 @@ pre[style*="background-color"] {
  
 Si je commande deux pizzas moyennes, aurai-je plus à manger que si j'en commande une grande ? Justifier la réponse.
 
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Aire de deux moyennes : $2 \times \pi \times 15^2 = 450\pi$.<br>
+
+Aire d'une grande $\pi \times 22^2 = 484\pi$. <br>
+Donc la grande donne plus à manger que deux moyennes.</div>
         
 
         
@@ -530,6 +556,13 @@ Le tableau suivant présente la répartition des boules :
         Combien y a-t-il de boules dans le sac ?
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Il y a :
+
+$3 + 5 + 2 + 2 + 2 + 6 = 20$ boules dans le sac.</div>
+        
 
         
 
@@ -555,6 +588,13 @@ Le tableau suivant présente la répartition des boules :
             <div>
               <div class="sub-enonce">Vérifier qu'il y a une chance sur dix de tirer une boule bleue portant la lettre A.</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a 2 boules bleues portant la lettre A sur les 20, la probabilité est donc égale à 
+
+$\dfrac{2}{20} = \dfrac{1}{10} = 0,1$.</div>
+              
             </div>
           </div>
           
@@ -564,6 +604,11 @@ Le tableau suivant présente la répartition des boules :
             <div>
               <div class="sub-enonce">Quelle est la probabilité de tirer une boule rouge ?</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a 5 boules rouges, donc la probabilité est égale à $\dfrac{5}{20} = \dfrac{1}{4}$.</div>
+              
             </div>
           </div>
           
@@ -572,6 +617,12 @@ Le tableau suivant présente la répartition des boules :
             <span class="sub-letter">c.</span>
             <div>
               <div class="sub-enonce">A-t-on autant de chance de tirer une boule portant la lettre A que de tirer une boule portant la lettre B ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a 10 boules portant la lettre A et donc autant portant la lettre B. <br>
+On a donc effectivement autant de chance de tirer une boule portant la lettre A que de tirer une boule portant la lettre B.</div>
               
             </div>
           </div>
@@ -698,6 +749,14 @@ Elle doit aussi acheter un casque et hésite entre trois modèles qui coûtent r
         Si elle choisit son équipement (un casque et une paire de rollers) au hasard, quelle est la probabilité pour que l'ensemble lui coûte moins de 130&nbsp;€?
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box"><img src="/mabemat/figures/3e/chapitre-13/arbre2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
+
+
+Sur les six possibilités quatre reviennent à moins de 130&nbsp;€. La probabilité est donc égale à : $\dfrac{4}{6} = \dfrac{2}{3}$.</div>
+        
 
         
 
@@ -723,6 +782,13 @@ Elle doit aussi acheter un casque et hésite entre trois modèles qui coûtent r
             <div>
               <div class="sub-enonce">Calculer le prix en euros et centimes de cet ensemble après réduction.</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Avoir 20&thinsp;% de réduction c'est payer 80&thinsp;% du prix initial soit : <br>
+
+$0,80 \times 144 = 115,20$&nbsp;€.</div>
+              
             </div>
           </div>
           
@@ -731,6 +797,11 @@ Elle doit aussi acheter un casque et hésite entre trois modèles qui coûtent r
             <span class="sub-letter">b.</span>
             <div>
               <div class="sub-enonce">Cela modifie-t-il la probabilité obtenue à la question 1 ? Justifier la réponse.</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Avec cette réduction le prix passe en dessous de 130&nbsp;€ ; la probabilité est donc maintenant égale à  $\dfrac{5}{6}$.</div>
               
             </div>
           </div>
@@ -931,6 +1002,11 @@ Il obtient le tableau suivant :
         Quelle formule a-t-il saisie dans la cellule M2 pour vérifier qu'il a bien relevé 50 résultats?
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">=SOMME(B2:L2)</div>
+        
 
         
 
@@ -947,6 +1023,11 @@ Il obtient le tableau suivant :
 Il obtient un message d'erreur quand il la tire dans la cellule C3. Pourquoi ?
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Il devrait avoir dans C3 : B3/M3, or il y a 0 dans M3 et la division par 0 n'existe pas.</div>
+        
 
         
 
@@ -962,6 +1043,12 @@ Il obtient un message d'erreur quand il la tire dans la cellule C3. Pourquoi ?
         Tom déduit de la lecture de ce tableau que s'il lance ces deux dés, il n'a aucune chance d'obtenir la somme 12. <br>
 A-t-il tort ou raison ?
 
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Il a tort car la sortie d'un double 6 est tout à fait possible. <br>
+Il se trouve que sur les 50 lancers il n'y a pas eu ce tirage.</div>
         
 
         
@@ -1182,6 +1269,11 @@ A-t-il tort ou raison ?
             <div>
               <div class="sub-enonce">Quelle est la probabilité de tirer l'étiquette « Diagonales égales » ?</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a une chance sur dix : $\dfrac{1}{10} = 0,1$.</div>
+              
             </div>
           </div>
           
@@ -1191,6 +1283,11 @@ A-t-il tort ou raison ?
             <div>
               <div class="sub-enonce">Quelle est la probabilité de tirer une étiquette sur laquelle est inscrit le mot « diagonales  » ?</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il y a trois chances sur dix : $\dfrac{3}{10} = 0,3$.</div>
+              
             </div>
           </div>
           
@@ -1199,6 +1296,12 @@ A-t-il tort ou raison ?
             <span class="sub-letter">c.</span>
             <div>
               <div class="sub-enonce">Quelle est la probabilité de tirer une étiquette qui porte à la fois le mot « côtés » et le mot « diagonales  » ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il n'y a aucune étiquette qui comporte les deux mots. <br>
+La probabilité est nulle.</div>
               
             </div>
           </div>
@@ -1243,6 +1346,13 @@ A-t-il tort ou raison ?
 Julie affirme que la figure obtenue est toujours un carré. Madjid a des doutes. <br>
 Qui a raison ? Justifier la réponse.</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Les diagonales sont perpendiculaires en leur milieu, chacune est donc la médiatrice de l'autre, on a donc un losange. <br>
+Comme les diagonales ont la même longueur c'est aussi un rectangle. <br>
+C'est donc un carré : Julie a raison.</div>
+              
             </div>
           </div>
           
@@ -1264,6 +1374,13 @@ Qui a raison ? Justifier la réponse.</div>
 </table>
 
 Quel type de figure Julie est-elle sûre d'obtenir ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Les côtés opposés sont parallèles : on a un parallélogramme. <br>
+
+Les quatre côtés ont la même longueur : c'est un losange. On ne peut rien conclure de plus.</div>
               
             </div>
           </div>
@@ -1296,6 +1413,13 @@ Quel type de figure Julie est-elle sûre d'obtenir ?</div>
 
 Lionel est déçu. Expliquer pourquoi.
 
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Si le quadrilatère a quatre angles droits, c'est un rectangle.<br>
+Mais il ne peut avoir alors que deux côtés de même longueur. <br>
+Un tel quadrilatère n'existe pas. Lionel ne peut rien dessiner.</div>
         
 
         
@@ -1458,6 +1582,11 @@ oriente le stylo vers la droite.
 Préciser les positions de départ et d'arrivée du stylo sur votre figure.
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le script carré trace un carré en traçant 4 fois deux demi-côtés de 5 pixels, donc chaque côté du carré correspond à 10 pixels, donc à 5 cm.</div>
+        
 
         
 
@@ -1499,6 +1628,14 @@ On exécute les deux scripts et on obtient les deux dessins ci-dessous.
 Attribuer à chaque script la figure dessinée. Justifier votre choix.
 
         
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le script 1 dessine 23 fois un carré suivi d'un tiret, donc le dessin B.<br>
+    
+
+Le script 2 dessine 46 fois de manière aléatoire un carré ou un tiret, donc le dessin A.</div>
+        
 
         
 
@@ -1524,6 +1661,11 @@ Attribuer à chaque script la figure dessinée. Justifier votre choix.
             <div>
               <div class="sub-enonce">Quelle est la probabilité que le premier élément tracé soit un carré ?</div>
               
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">En exécutant le script 2, le premier élément tracé est un carré si le nombre aléatoire prend l'un des deux valeurs possible. La probabilité est $0,5$.</div>
+              
             </div>
           </div>
           
@@ -1532,6 +1674,17 @@ Attribuer à chaque script la figure dessinée. Justifier votre choix.
             <span class="sub-letter">b.</span>
             <div>
               <div class="sub-enonce">Quelle est la probabilité que les deux premiers éléments soient des carrés ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Pour les deux premiers éléments dessinés, il y a 4 possibilités équiprobables :<br>
+    
+		
+carré – carré ; carré – tiret ; tiret – carré ; tiret – tiret.<br>
+    
+
+La probabilité que les deux premiers éléments dessinés soient des carrés est $\dfrac{1}{4}$, soit $0,25$.</div>
               
             </div>
           </div>
@@ -1571,6 +1724,16 @@ Attribuer à chaque script la figure dessinée. Justifier votre choix.
 
 </div>
 
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Au niveau de la ligne 7 du script 2, on peut insérer :
+
+si nombre aléatoire entre 1 et 2 = 1 alors mettre la couleur du stylo à rouge
+sinon 
+
+mettre la couleur du stylo à noir.</div>
         
 
         
@@ -1621,7 +1784,7 @@ Attribuer à chaque script la figure dessinée. Justifier votre choix.
   </script>
   <script>
      
-    const BUILD_TS = '1781367422';
+    const BUILD_TS = '1781454890';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;
