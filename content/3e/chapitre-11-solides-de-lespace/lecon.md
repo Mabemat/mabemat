@@ -176,8 +176,6 @@ $R = diametre \div 2 = 20\,\text{m} \div 2 = 10\,\text{m}$<br>$\mathcal{V}=\pi \
 $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{5{,}7\,\text{m} \times 8{,}3\,\text{m}}{2}\times2\,\text{m}=\dfrac{5{,}7 \times 8{,}3 \times 2}{6}\,\text{m}^3\approx{\color{#EB7F73}\boldsymbol{16\,\text{m}^3}}$</li>
 <li>Calculer le volume, arrondi au $\,\text{dm}^3$ près, d'une boule de $3\,\text{dm}$ de rayon.<br>
 $\mathcal{V}=\dfrac{4}{3} \times \pi \times R^3=\dfrac{4}{3}\times\pi\times\left(3\,\text{dm}\right)^3=\dfrac{108}{3}\pi\,\text{dm}^3\approx{\color{#EB7F73}\boldsymbol{113\,\text{dm}^3}}$</li>
-<li>Calculer le volume, arrondi au $\,\text{m}^3$ près, d'une pyramide de hauteur $2\,\text{m}$ et dont la base est un triangle rectangle dont les côtés de l'angle droit mesurent respectivement $7{,}7\,\text{m}$ et $4{,}3\,\text{m}$.<br>
-$\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times\dfrac{7{,}7\,\text{m} \times 4{,}3\,\text{m}}{2}\times2\,\text{m}=\dfrac{7{,}7 \times 4{,}3 \times 2}{6}\,\text{m}^3\approx{\color{#EB7F73}\boldsymbol{11\,\text{m}^3}}$</li>
 </ul>
 </div>
 </div>

@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.e42a056be10f8145d229ab82aaddccdb1c459ee9450ed284daced5895e7327ab.css" integrity="sha256-5CoFa&#43;EPgUXSKauCqt3M2xxFnulFDtKE2s7ViV5zJ6s=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -401,12 +401,14 @@ $72$ est divisible par $24$.
 <div class="environment methode">
 <div class="environment-title">Méthode : Critères de divisibilité.</div>
 <div class="environment-content">
+Un nombre est divisible par ...
 <ul>
-<li>Un nombre est divisible par $2$ s'il se termine par $0$, $2$, $4$, $6$ ou $8$</li>
-<li>Un nombre est divisible par $3$ si la somme de ses chiffres est divisible par $3$</li>
-<li>Un nombre est divisible par $4$ si le nombre formé par ses deux derniers chiffres est un multiple de $4$</li>
-<li>Un nombre est divisible par $5$ s'il se termine par $0$ ou $5$</li>
-<li>Un nombre est divisible par $9$ si la somme de ses chiffres est divisible par $9$</li>
+<li>$2$ si son chiffre des unités est $0$, $2$, $4$, $6$ ou $8$</li>
+<li>$3$ si la somme de ses chiffres est divisible par $3$</li>
+<li>$4$ si le nombre formé par ses deux derniers chiffres est un multiple de $4$</li>
+<li>$5$ si son chiffre des unités est $5$</li>
+<li>$9$ si la somme de ses chiffres est divisible par $9$</li>
+<li>$10$ si son chiffre des unités est $0$ ou $5$</li>
 </ul>
 </div>
 </div>
@@ -731,7 +733,7 @@ Donc le plus petit commun multiple de 72 et 48 est 144.</p>
   </script>
   <script>
      
-    const BUILD_TS = '1781367422';
+    const BUILD_TS = '1781443715';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

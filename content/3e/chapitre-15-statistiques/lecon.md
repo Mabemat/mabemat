@@ -2,135 +2,226 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">15.1 Série statistique</h2>
-
-Voici les séries de notes obtenues par 3 élèves :
-<ul>
-<li>Jérôme : $\quad 4 \quad; \quad 6 \quad; \quad 18 \quad; \quad 7 \quad; \quad 17 \quad ; \quad 12 \quad ; \quad 12 \quad ;\quad  18$</li>
-<li>Bertrand : $\quad 13 \quad ; \quad 13\quad ; \quad 12 \quad ; \quad 10 \quad ; \quad 12 \quad ; \quad 3\quad ; \quad 14 \quad ; \quad 12 \quad ; \quad 14 \quad ; \quad 15$</li>
-<li>Julie: $\quad 15 \quad ; \quad 9 \quad ; \quad 14 \quad ; \quad 13 \quad ; \quad 10 \quad ; \quad 12 \quad ; \quad 12 \quad ; \quad 11 \quad ; \quad 10$</li>
-</ul>
-
-<h2 class="subsection-title">15.2 Moyenne</h2>
-
-Calculer la moyenne pour chaque série de notes de Jérôme, de Bertrand et de Julie.
-
-<div>
-$$\text{M}_{(\text{Jérôme})} =\dfrac{4+6+18+7+17+12+12+18}{8}\approx 11,8$$ 
-$$\text{M}_{(\text{Bertrand})} =\dfrac{13+13+12+10+12+3+14+12+14+15}{10}=11,8 $$
-$$\text{M}_{(\text{Julie})} =\dfrac{15+9+14+13+10+12+12+11+10}{9}\approx 11,8$$
-</div>   <!-- ← MANQUAIT -->
-
-
-Une autre manière de calculer la moyenne est d'utiliser la moyenne pondérée : 
+<h2 class="subsection-title">15.1 Moyenne</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-La <strong>moyenne</strong> d'une série statistique dont les valeurs sont $x_1, x_2 , ..., x_k$ et les effectifs correspondants $n_1$, $n_2$, ..., $n_k$ est notée $\overline{x}$ et est égale à : $$ \overline{x} = \dfrac{n_1x_1 + n_2x_2 + \cdots +n_kx_k}{n_1+n_2+\cdots +n_k}$$<br>
-La <strong>moyenne</strong> est une caractéristique de position.
+La <strong>moyenne</strong> $\overline{x}$ d'une série statistique dont les valeurs sont $x_1, x_2, \ldots, x_k$ avec les effectifs $n_1, n_2, \ldots, n_k$ est :
+$$\overline{x} = \dfrac{n_1 x_1 + n_2 x_2 + \cdots + n_k x_k}{n_1+n_2+\cdots+n_k}$$
 </div>
 </div>
 
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
 <div class="environment-content">
-Il faut d'abord ranger les valeurs dans l'ordre croissant. <br>
-Dans notre exemple, on a :
-$$\text{M}_{(\text{Jérôme})} =\dfrac{4+6+7+2\times 12+17+2\times 18}{8}\approx 11,8$$
-$$\text{M}_{(\text{Bertrand})} =\dfrac{3 + 10 +3\times 12 + 2 \times 13+2\times 14+15}{10}=11,8 $$
-$$\text{M}_{(\text{Julie})} =\dfrac{9 + 2\times 10 +11+2\times 12+13 +14+15}{9}\approx 11,8$$
-</div>
-</div>
-
-<h2 class="subsection-title">15.3 Médiane</h2>
-
-<div class="environment definition">
-<div class="environment-title">Définition :</div>
-<div class="environment-content">
-La <strong>médiane</strong> $Me$ est une valeur telle que la moitié au moins de l'effectif ait des valeurs inférieures ou égales à $Me$, l'autre moitié des valeurs supérieures ou égales à $Me$.<br>
-La <strong>médiane</strong> est une caractéristique de position.
-</div>
-</div>
-
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
-<div class="environment-content">
-Pour déterminer les notes médianes, il faut ordonner les séries. La médiane partage l'effectif en deux. <br>
-Calculer la médiane pour chaque série de notes de Jérôme, de Bertrand et de Julie. <br>
-<strong>Jérôme :</strong> 
-$\underbrace{4 ~ ~ 6 ~~ 7 ~~ \textcolor{#E6B459}{12}}_{4 \text{ données}} ~~~~  \underbrace{\textcolor{#E6B459}{12} ~~ 17 ~~ 18 ~~ 18}_{4 \text{ données}}$<br>
-Donc $Me_{(\text{Jérôme})}=\textcolor{#E6B459}{12}$<br>
-<strong>Bertrand :</strong> 
-$\underbrace{3 ~ ~ 10 ~~ 12 ~~ 12 ~~\textcolor{orange}{12}}_{5 \text{ données}} ~~~~  \underbrace{\textcolor{#A5C03F}{13} ~~ 13 ~~ 14 ~~ 14 ~~15}_{5 \text{ données}}$<br>
-Donc $Me_{(\text{Bertrand})}=\dfrac{\textcolor{orange}{12}+\textcolor{#A5C03F}{13}}{2}=12,5$<br>
-<strong>Julie :</strong> 
-$\underbrace{9 ~ ~ 10 ~~ 10 ~~ 11}_{4 \text{ données}} ~~\textcolor{pink}{\textbf{12}}~~  \underbrace{12 ~~ 13 ~~ 14 ~~15}_{4 \text{ données}}$<br>
-Donc $Me_{(\text{Julie})}=\textcolor{pink}{\textbf{12}}$
-</div>
-</div>
-
-<h2 class="subsection-title">15.4 Étendue</h2>
-
-<div class="environment definition">
-<div class="environment-title">Définition :</div>
-<div class="environment-content">
-L'<strong>étendue</strong> d'une série statistique est la différence entre la plus grande valeur et la plus petite valeur de la série. <br>
-L'<strong>étendue</strong> est une caractéristique de dispersion.
-</div>
-</div>
-
-Calculer l'étendue pour chaque série de notes de Jérôme, de Bertrand et de Julie.
-
-<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem;">
-
-<ul style="list-style:disc inside; margin:0; padding:0;">
-<li>$\text{E}_{(\text{Jérôme})} =18-4=14$</li>
-</ul>
-
-<ul style="list-style:disc inside; margin:0; padding:0;">
-<li>$\text{E}_{(\text{Bertrand})} =15-3=12$</li>
-</ul>
-
-<ul style="list-style:disc inside; margin:0; padding:0;">
-<li>$\text{E}_{(\text{Julie})} =15-9=6$</li>
-</ul>
-
-</div>
-
-
-La note minimale de Bertrand est $3$ pourtant, cela ne représente pas vraiment la série de notes de Bertrand. 
-
-<div class="remarque">
-Conclusion : l'étendue est un paramètre de dispersion absolue qui est simple à calculer mais très fragile puisqu'il ne dépend que de deux valeurs de la distribution. Ce paramètre n'a guère de signification lorsqu'une distribution comporte des valeurs exceptionnelles.
-</div>
-
-<h2 class="subsection-title">15.5 Interprétations</h2>
+On a relevé le temps de trajet (en minutes) domicile-collège des 30 élèves d'une classe de 3ème.
 
 <table>
 <tr>
-<th>${\color{#E6B459}{\text{M}_{(\text{Jérôme})}\approx 11,8}}$</th>
-<th>${\color{#EB7F73}{\text{Me}_{(\text{Jérôme})}= 12}}$</th>
-<th>${\color{#cf90a2}{\text{E}_{(\text{Jérôme})}=14}}$</th>
+<th>Temps de trajet (min)</th>
+<th>5</th><th>10</th><th>15</th><th>20</th><th>30</th><th>45</th><th>Total</th>
 </tr>
 <tr>
-<td>${\color{#E6B459}{\text{M}_{(\text{Bertrand})} =11,8}} $</td>
-<td>$\text{Me}_{(\text{Bertrand})} =12,5 $</td>
-<td>${\color{#cf90a2}{\text{E}_{(\text{Bertrand})} =12}} $</td>
-</tr>
-<tr>
-<td>${\color{#E6B459}{\text{M}_{(\text{Julie})} \approx 11,8}}$</td>
-<td>$\text{Me}_{(\text{Julie})} = 12$</td>
-<td>${\color{#cf90a2}{\text{E}_{(\text{Julie})} = 6}}$</td>
+<td>Effectif</td>
+<td>4</td><td>8</td><td>10</td><td>5</td><td>2</td><td>1</td><td>30</td>
 </tr>
 </table>
 
-<span style="color:#E6B459;">Les moyennes sont environ égales</span>
-et pourtant
-<span style="color:#cf90a2;">
-les notes ne se répartissent pas de la même manière autour de cette caractéristique de position. Les étendues sont très différentes
-</span>.
-<br>
-<span style="color:#EB7F73;">
-Jérôme a une médiane égale à $12$ donc il a obtenu autant de notes au-dessus de 12 que de notes en-dessous de 12.
-</span>
+Quel est le temps de trajet moyen d'un élève de cette classe ?
+$$\overline{x} = \dfrac{4\times 5 + 8\times 10 + 10\times 15 + 5\times 20 + 2\times 30 + 1\times 45}{30} = \dfrac{415}{30} \approx 13{,}8 \text{ min}$$
+Donc en moyenne, les élèves mettent environ 14 minutes pour venir au collège.
+</div>
+</div>
+
+<h2 class="subsection-title">15.2 Étendue</h2>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+L'<strong>étendue</strong> d'une série statistique est la différence entre la plus grande valeur et la plus petite valeur de la série.
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+$\text{Étendue} = 45 - 5 = 40$ minutes.<br>
+Il y a un écart de 40 minutes entre l'élève qui habite le plus près et celui qui habite le plus loin.
+</div>
+</div>
+
+<h2 class="subsection-title">15.3 Effectifs cumulés croissants</h2>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+L'<strong>effectif cumulé croissant</strong> (ECC) d'une valeur est le nombre total d'individus ayant cette valeur <strong>ou une valeur inférieure</strong>.
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Compléter le tableau ci-dessous :
+
+<table>
+<tr>
+<th>Temps de trajet (min)</th>
+<th>5</th><th>10</th><th>15</th><th>20</th><th>30</th><th>45</th><th>Total</th>
+</tr>
+<tr>
+<td>Effectif</td>
+<td>4</td><td>8</td><td>10</td><td>5</td><td>2</td><td>1</td><td>30</td>
+</tr>
+<tr>
+<td>Effectif cumulé croissant</td>
+<td>4</td><td>12</td><td>22</td><td>27</td><td>29</td><td>30</td><td>30</td>
+</tr>
+</table>
+</div>
+</div>
+
+<h2 class="subsection-title">15.4 Médiane et quartiles</h2>
+
+<h3 class="subsubsection-title">15.4.1 Médiane</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+La <strong>médiane</strong> $M$ est une valeur qui partage la série ordonnée en deux groupes de même effectif : au moins la moitié des valeurs sont inférieures ou égales à $M$, et au moins la moitié des valeurs sont supérieures ou égales à $M$.
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Pour les 30 élèves, la médiane se trouve entre la 15e et la 16e valeur.<br>
+D'après le tableau, la 15e et la 16e valeur sont dans la colonne « 15 min ».<br>
+Donc $M = 15$ minutes.<br><br>
+<strong>Interprétation :</strong> Au moins la moitié des élèves mettent au plus 15 minutes pour venir au collège.<br>
+Autrement dit : au moins 50&nbsp;% des élèves habitent à moins de 15 minutes.
+</div>
+</div>
+
+<div class="remarque">
+La médiane est moins sensible aux valeurs extrêmes que la moyenne $\overline{x}$. Si l'élève qui met 45 minutes déménage et met désormais 2 heures, la médiane ne change pas mais la moyenne augmente.
+</div>
+
+<h3 class="subsubsection-title">15.4.2 Quartiles</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Le <strong>premier quartile</strong> $(Q_1)$ est la plus petite valeur de la série telle qu'au moins $25\,\%$ des valeurs de la série sont inférieures ou égales à cette valeur.<br>
+Le <strong>troisième quartile</strong> $(Q_3)$ est la plus petite valeur de la série telle qu'au moins $75\,\%$ des valeurs de la série sont inférieures ou égales à cette valeur.
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Calculer et interpréter pour les 30 élèves le premier et le troisième quartile :
+<ul>
+<li>Pour $Q_1$ : Comme $\dfrac{30}{4} = 7{,}5$.<br>
+Le premier quartile est la 8e valeur de la série statistique.<br>
+D'après le tableau des ECC : $\textcolor{#EB7F73}{Q_1 = 10}$.</li>
+<li>Pour $Q_3$ : Comme $\dfrac{3 \times 30}{4} = 22{,}5$.<br>
+Le troisième quartile est la 23e valeur de la série statistique.<br>
+D'après le tableau des ECC : $\textcolor{#EB7F73}{Q_3 = 20}$.</li>
+<li>Pour l'écart interquartile : $Q_3 - Q_1 = 20 - 10 = 10$ minutes.</li>
+</ul>
+<strong>Interprétations :</strong>
+<ul>
+<li>$Q_1 = 10$ : au moins 25&nbsp;% des élèves mettent au plus 10 minutes pour venir au collège.</li>
+<li>$Q_3 = 20$ : au moins 75&nbsp;% des élèves mettent au plus 20 minutes pour venir au collège. Autrement dit, au plus 25&nbsp;% des élèves mettent plus de 20 minutes.</li>
+<li>L'écart interquartile vaut 10 : les 50&nbsp;% d'élèves « du milieu » ont un trajet compris entre 10 et 20 minutes.</li>
+</ul>
+</div>
+</div>
+
+<div class="remarque">
+Lors du calcul de la position d'un quartile, on arrondit toujours le résultat à l'entier supérieur.
+</div>
+
+<h2 class="subsection-title">15.5 Boîte à moustaches</h2>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Une <strong>boîte à moustaches</strong> (ou diagramme en boîte) est un graphique qui représente visuellement les cinq valeurs caractéristiques d'une série :
+
+<img src="/mabemat/figures/3e/chapitre-15/fig1.svg" alt="Boîte à moustaches" style="display:block; margin:1rem auto; max-width:100%; max-height:200px;">
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On a également relevé le temps de trajet des 30 élèves d'une classe de 4ème du même collège. Voici le diagramme en boîte correspondant :
+
+<img src="/mabemat/figures/3e/chapitre-15/fig2.svg" alt="Comparaison 3e et 4e" style="display:block; margin:1rem auto; max-width:100%; max-height:260px;">
+
+Répondre aux questions suivantes en justifiant à l'aide des diagrammes :
+<ol>
+<li>Tracer le diagramme en boîte de la classe de 3e.</li>
+<li>Quelle classe a le trajet médian le plus long ? Interpréter.<br>
+La 4ème a le trajet médian le plus long : $M_{4e} = 20$ min contre $M_{3e} = 15$ min. Au moins la moitié des élèves de 4ème mettent plus de 20 minutes pour venir au collège, contre 15 minutes pour les élèves de 3ème.</li>
+<li>Comparer les étendues des deux séries. Qu'en déduire ?<br>
+Étendue 3ème : $45 - 5 = 40$ min. Étendue 4ème : $40 - 5 = 35$ min. Les trajets de la 3ème sont légèrement plus dispersés dans l'ensemble.</li>
+<li>Calculer l'écart interquartile de chaque classe. Les trajets sont-ils plus dispersés en 3ème ou en 4ème pour les 50&nbsp;% du milieu ?<br>
+$EI_{3e} = Q_3 - Q_1 = 20 - 10 = 10$ min. $EI_{4e} = 25 - 15 = 10$ min. Les écarts interquartiles sont identiques : les 50&nbsp;% du milieu sont tout aussi dispersés dans les deux classes (10 minutes d'écart dans les deux cas).</li>
+<li>Peut-on affirmer que les élèves de 4ème habitent plus loin du collège que les élèves de 3ème ? Justifier.<br>
+Non, pas pour tous les élèves. Cependant, la médiane et les quartiles de la 4ème sont tous supérieurs à ceux de la 3ème ($M$, $Q_1$, $Q_3$ tous plus grands). On peut donc dire qu'en général les élèves de 4ème ont des trajets plus longs, mais pas dans tous les cas : le minimum est identique (5 min) dans les deux classes.</li>
+</ol>
+</div>
+</div>
+
+<h2 class="subsection-title">15.6 Données groupées en classes</h2>
+
+Lorsqu'une série comporte de nombreuses valeurs différentes, on les regroupe en <strong>classes</strong> (intervalles).<br>
+On ne travaille alors plus avec des valeurs exactes mais avec des intervalles du type $[a\,;\,b[$.
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On a relevé le temps passé sur les écrans (en heures par semaine) par 40 adolescents.
+
+<table>
+<tr>
+<th>Temps d'écran (h/sem.)</th>
+<th>$[0\,;\,5[$</th><th>$[5\,;\,10[$</th><th>$[10\,;\,15[$</th><th>$[15\,;\,20[$</th><th>$[20\,;\,25[$</th><th>Total</th>
+</tr>
+<tr>
+<td>Effectif</td>
+<td>3</td><td>10</td><td>14</td><td>9</td><td>4</td><td>40</td>
+</tr>
+<tr>
+<td>Effectif cumulé croissant</td>
+<td>3</td><td>13</td><td>27</td><td>36</td><td>40</td><td>40</td>
+</tr>
+</table>
+
+Calculer et interpréter la moyenne, la médiane et les quartiles.
+<ul>
+<li><strong>Moyenne :</strong> Avec des données groupées en classes, on approche la moyenne en remplaçant chaque classe par son <strong>centre</strong> (milieu de l'intervalle).
+$$\overline{x} = \dfrac{3\times 2{,}5 + 10\times 7{,}5 + 14\times 12{,}5 + 9\times 17{,}5 + 4\times 22{,}5}{40} = \dfrac{505}{40} \approx 12{,}6 \text{ h/sem.}$$
+<strong>Interprétation :</strong> En moyenne, les adolescents passent environ 12h36 par semaine sur les écrans.</li>
+
+<li><strong>Médiane :</strong> Comme il y a 40 valeurs, la médiane est entre la 20ème et la 21ème valeur de la série.<br>
+D'après le tableau, la 20ème et la 21ème valeur se trouvent dans la classe $[10\,;\,15[$.<br>
+Donc $\textcolor{#EB7F73}{M \in [10\,;\,15[}$.<br>
+<strong>Interprétation :</strong> Au moins la moitié des adolescents passent moins de 15 heures par semaine sur les écrans.</li>
+
+<li>Pour $Q_1$ : Comme $\dfrac{40}{4} = 10$, $Q_1$ est la 10ème valeur de la série.<br>
+D'après le tableau, la 10ème valeur se trouve dans la classe $[5\,;\,10[$.<br>
+Donc $\textcolor{#EB7F73}{Q_1 \in [5\,;\,10[}$.<br>
+<strong>Interprétation :</strong> Au moins 25&nbsp;% des adolescents passent moins de 10 heures par semaine sur les écrans.</li>
+
+<li>Pour $Q_3$ : Comme $\dfrac{3 \times 40}{4} = 30$, $Q_3$ est la 30ème valeur de la série.<br>
+D'après le tableau, la 30ème valeur se trouve dans la classe $[15\,;\,20[$.<br>
+Donc $\textcolor{#EB7F73}{Q_3 \in [15\,;\,20[}$.<br>
+<strong>Interprétation :</strong> Au moins 75&nbsp;% des adolescents passent moins de 20 heures par semaine sur les écrans. Autrement dit, au plus 25&nbsp;% des adolescents passent plus de 20 heures sur les écrans par semaine.</li>
+</ul>
+</div>
+</div>

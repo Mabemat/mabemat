@@ -27,6 +27,7 @@ On peut donc dire que $72$ est un multiple de $24$ et de $3$ ou que $24$ est un 
 <div class="environment methode">
 <div class="environment-title">Méthode : Critères de divisibilité.</div>
 <div class="environment-content">
+Un nombre est divisible par ...
 <ul>
 <li>$2$ si son chiffre des unités est $0$, $2$, $4$, $6$ ou $8$</li>
 <li>$3$ si la somme de ses chiffres est divisible par $3$</li>

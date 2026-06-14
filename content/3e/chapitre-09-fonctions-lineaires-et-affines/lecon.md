@@ -151,7 +151,8 @@ On peut calculer $f(1) = 2$ et $g(2) = \dfrac{-2}{2} = -1$.
 <div class="environment-title">Méthode - En connaissant un nombre et son image</div>
 <div class="environment-content">
 Déterminons la fonction linéaire $f$ sachant que $f(2) = -7$.<br>
-$f$ est de la forme $f(x) = ax$. Comme $f(2) = -7$ et que d'après la formule $f(2)=a\times 2$, on a : $a \times 2 = -7$, c'est-à-dire :  $a = -3,5$. Donc $f(x) = -3,5x$.
+$f$ est de la forme $f(x) = ax$. Comme $f(2) = -7$ et que d'après la formule $f(2)=a\times 2$, on a : $a \times 2 = -7$, c'est-à-dire :  $a = -3,5$. <br>
+Donc $f(x) = -3,5x$.
 </div>
 </div>
 

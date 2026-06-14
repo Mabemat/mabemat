@@ -102,7 +102,8 @@ $$
 2x \times x + 15 \times x &= 0 \\
 x(2x + 15) &= 0 \\
 x = 0 \quad \text{ou} \quad &2x + 15 = 0 \\
-x = 0 \quad \text{ou} \quad &x = -\dfrac{15}{2}
+x = 0 \quad \text{ou} \quad &x = -\dfrac{15}{2}\\
+\mathcal{S} = \left\{-\dfrac{15}{2};0\right\}&
 \end{align*}
 $$
 </div><div class="math-display" style="display:inline-block; vertical-align:top; width:calc(32% - 10px); margin:0 5px 5px 0;">
@@ -112,7 +113,8 @@ x^2 - 36 &= 0 \\
 x^2 - 6^2 &= 0 \\
 (x + 6)(x - 6) &= 0 \\
 x + 6 = 0 \quad \text{ou} \quad &x - 6 = 0 \\
-x = -6 \quad \text{ou} \quad &x = 6
+x = -6 \quad \text{ou} \quad &x = 6 \\
+\mathcal{S} = \{-6;6\}&
 \end{align*}
 $$
 </div><div class="math-display" style="display:inline-block; vertical-align:top; width:calc(32% - 10px); margin:0 5px 5px 0;">
@@ -122,7 +124,8 @@ x^2 - 3 &= 0 \\
 x^2 - \sqrt{3}^2 &= 0 \\
 (x + \sqrt{3})(x - \sqrt{3}) &= 0 \\
 x + \sqrt{3} = 0 \quad \text{ou} \quad &x - \sqrt{3} = 0 \\
-x = -\sqrt{3} \quad \text{ou} \quad &x = \sqrt{3}
+x = -\sqrt{3} \quad \text{ou} \quad &x = \sqrt{3} \\
+\mathcal{S} = \{-\sqrt{3};\sqrt{3}\}&
 \end{align*}
 $$
 </div>

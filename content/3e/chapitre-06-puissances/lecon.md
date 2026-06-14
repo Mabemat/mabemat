@@ -48,7 +48,7 @@ $ $
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs. <br>
+Soient $ a $ et $ b $ deux nombres  et $m$ et $n$ deux nombres entiers positifs. <br>
 Produit de puissances : $ a^n \times a^m = a^{n+m} $
 </div>
 </div>
@@ -70,7 +70,7 @@ Produit de puissances : $ a^n \times a^m = a^{n+m} $
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs. <br>
+Soient $ a $ et $ b $ deux nombres  et $m$ et $n$ deux nombres entiers positifs. <br>
 Quotient de puissances : $ \dfrac{a^n}{a^m} = a^{n-m} $
 </div>
 </div>
@@ -91,7 +91,7 @@ Quotient de puissances : $ \dfrac{a^n}{a^m} = a^{n-m} $
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs. <br>
+Soient $ a $ et $ b $ deux nombres  et $m$ et $n$ deux nombres entiers positifs. <br>
 Puissance de puissance : $ (a^n)^m = a^{n \times m} $
 </div>
 </div>
@@ -112,7 +112,7 @@ Puissance de puissance : $ (a^n)^m = a^{n \times m} $
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs.<br>
+Soient $ a $ et $ b $ deux nombres  et $m$ et $n$ deux nombres entiers positifs.<br>
 Puissance d'un produit : $ (a \times b)^n = a^n \times b^n $
 </div>
 </div>
@@ -133,7 +133,7 @@ Puissance d'un produit : $ (a \times b)^n = a^n \times b^n $
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-Soient $ a $ et $ b $ deux nombres réels et $m$ et $n$ deux nombres entiers positifs.<br>Puissance d'un quotient : $ \left( \dfrac{a}{b} \right)^n = \dfrac{a^n}{b^n} $
+Soient $ a $ et $ b $ deux nombres  et $m$ et $n$ deux nombres entiers positifs.<br>Puissance d'un quotient : $ \left( \dfrac{a}{b} \right)^n = \dfrac{a^n}{b^n} $
 </div>
 </div>
 
