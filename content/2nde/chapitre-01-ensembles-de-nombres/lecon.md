@@ -63,10 +63,10 @@ Un nombre rationnel est caractérisé soit par une écriture décimale ayant un 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-
+Justifier en quoi ces deux nombres sont des nombres rationnels.
 <ul>
 <li>0,125 est un nombre rationnel : son écriture décimale comporte un nombre fini de décimales.</li>
-<li>$\dfrac{127}{11} = 11,545454...$ est un nombre rationnel : l'écriture décimale comporte une période.</li>
+<li>$\dfrac{127}{11} = 11,545454...$ est un nombre rationnel : l'écriture décimale comporte une période (54).</li>
 </ul>
 </div>
 </div>
@@ -76,6 +76,8 @@ Un nombre rationnel est caractérisé soit par une écriture décimale ayant un 
 <div class="environment propriete">
 <div class="environment-title">Propriété : $ $</div>
 <div class="environment-content">
+<div style="display:flex; align-items:flex-start; gap:3%;">
+<div style="flex:0 0 30%;">
 <ul>
 <li>$\mathbb{N}$ est inclus dans $\mathbb{Z}$ : $\mathbb{N} \subset \mathbb{Z}$</li>
 <li>$\mathbb{Z}$ est inclus dans $\mathbb{D}$ : $\mathbb{Z} \subset \mathbb{D}$</li>
@@ -84,9 +86,11 @@ Un nombre rationnel est caractérisé soit par une écriture décimale ayant un 
 </ul>
 Ou encore :
 $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q} \subset \mathbb{R}$$
-
-<img src="/mabemat/figures/2nde/chapitre-01/fig1.svg?v=2" alt="figure 1" style="display:inline-block; vertical-align:top; width:calc(100%); max-height:200px; max-width:100%;">
-
+</div>
+<div style="flex:0 0 67%;">
+<img src="/mabemat/figures/2nde/chapitre-01/fig1.svg?v=2" alt="figure 1" style="width:100%; max-height:220px; object-fit:contain;">
+</div>
+</div>
 </div>
 </div>
 
