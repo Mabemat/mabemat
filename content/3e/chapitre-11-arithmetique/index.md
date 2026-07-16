@@ -1,0 +1,19 @@
+---
+title: "Arithmétique"
+level: "3e"
+chapter_number: 11
+weight: 11
+show_lecon: true
+has_cours: true
+has_exercices: false
+has_qcm: false
+has_brevet: true
+has_brevetImpr : true
+competences:
+  - "Décomposer en facteurs premiers"
+  - "Calculer PGCD et PPCM"
+  - "Simplifier des fractions"
+categorie : Nombres et calculs
+
+
+---

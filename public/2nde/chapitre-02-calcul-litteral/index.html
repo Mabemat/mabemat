@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-2nde">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcul littéral (1) — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/" class="active">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/2nde/">2nde</a>
+    <span class="sep">/</span>
+    <span>Chapitre 02</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#4A5D7A;">02</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 02 · 2nde
+      </div>
+      
+      <h1 class="fade-up d2">Calcul littéral (1)</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Nombres et calculs
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#4A5D7A;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#4A5D7A;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/2nde/chapitre-02-calcul-litteral/cours.a42756dff2b060ec254dff8bbd8ddd92.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/2nde/chapitre-02-calcul-litteral/exercices.54e76aa6b968739bf9687d633d6170ac.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/2nde/">
+    <div><div class="adj-lbl">← 2nde</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/2nde/chapitre-03-informations-chiffrees/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  
+  <div class="lesson-mobile-bar" id="lesson-mobile-bar">
+    <button id="mb-close-btn">← Fermer</button>
+    <span class="mb-pct" id="mb-pct">0 %</span>
+    <button id="mb-toc-btn">≡ Plan</button>
+  </div>
+
+  
+  <div class="lesson-toc-backdrop" id="lesson-toc-backdrop"></div>
+  <div class="lesson-toc-drawer" id="lesson-toc-drawer">
+    <div class="lesson-toc-drawer-header">
+      <div class="eyebrow">Dans cette leçon</div>
+      <button class="lesson-toc-drawer-close" id="lesson-toc-drawer-close" aria-label="Fermer le plan">✕</button>
+    </div>
+    <ol id="lesson-toc-drawer-list"></ol>
+  </div>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/2nde/chapitre-02-calcul-litteral/cours.a42756dff2b060ec254dff8bbd8ddd92.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/2nde/chapitre-02-calcul-litteral/exercices.54e76aa6b968739bf9687d633d6170ac.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/">2nde</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/2nde/chapitre-02-calcul-litteral/">Calcul littéral (1)</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 02 - Leçon
+      </div>
+      <h1 class="lesson-h1" style="color:#4A5D7A;">Calcul littéral (1)</h1>
+
+      <div class="full-lesson niveau-2nde">
+        <h2 class="subsection-title">2.1 Simple et double distributivité</h2>
+<div class="environment definition">
+<div class="environment-title">Définitions</div>
+<div class="environment-content">
+<strong>Développer</strong> un produit signifie écrire ce produit sous la forme d'une somme (ou différence) de termes.<br>
+<strong>Factoriser</strong> une somme signifie écrire cette somme sous forme d'un produit de facteurs.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $a$, $b$ et $k$ trois réels :
+<div style="text-align:center; margin:0.5rem 0;">
+<img src="/mabemat/figures/2nde/chapitre-02/fig1.svg" alt="k(a+b) = ka + kb" style="max-height:90px; max-width:320px;">
+</div>
+</div>
+</div>
+<div class="multicols-2">
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Développer les expressions suivantes :
+<ul>
+<li>$A = -3(-3a+1)$<br>$\phantom{A} = -3\times(-3a)+(-3)\times 1$<br>$\phantom{A} = {\color{#EA8556}9a-3}$</li>
+<li>$B = (3z-6)\times 9z$<br>$\phantom{B} = 3z\times 9z+(-6)\times 9z$<br>$\phantom{B} = {\color{#EA8556}27z^2-54z}$</li>
+<li>$C = -11(-4x-10)-(-10-6x)$<br>$\phantom{C} = 44x+110-(-10-6x)$<br>$\phantom{C} = 44x+110+10+6x$<br>$\phantom{C} = {\color{#EA8556}50x+120}$</li>
+<li>$D = 7x+10(7x+8)$<br>$\phantom{D} = 7x+70x+80$<br>$\phantom{D} = {\color{#EA8556}77x+80}$</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Factoriser, au maximum, les expressions suivantes :
+<ul>
+<li>$A = 2a+8n$<br>$\phantom{A} = {\color{#EA8556}2}a+{\color{#EA8556}2}\times 4n$<br>$\phantom{A} = {\color{#EA8556}2}(a+4n)$</li>
+<li>$B = -35y-42y^2$<br>$\phantom{B} = {\color{#EA8556}7y}\times(-5)-{\color{#EA8556}7y}\times 6y$<br>$\phantom{B} = {\color{#EA8556}7y}(-5-6y)$</li>
+<li>$C = {\color{#8A9CC1}x}{\color{#EA8556}(2x+1)}-{\color{#8A9CC1}2}{\color{#EA8556}(2x+1)}$<br>$\phantom{C} = {\color{#EA8556}(2x+1)}{\color{#8A9CC1}(x-2)}$</li>
+<li>$D = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2)}-{\color{#EA8556}(3x+3)}{\color{#8A9CC1}(5x-3)}$<br>$\phantom{D} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2-(5x-3))}$<br>$\phantom{D} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2-5x+3)}$<br>$\phantom{D} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(-x+1)}$</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soient $a$, $b$, $c$ et $d$ quatre réels :
+<div style="text-align:center; margin:0.5rem 0;">
+<img src="/mabemat/figures/2nde/chapitre-02/fig2.svg" alt="(a+b)(c+d) = ac + ad + bc + bd" style="max-height:90px; max-width:500px;">
+</div>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Développer les expressions suivantes :
+<ul class="multicols-2">
+<li>$A = (z+3)(-5z+2)$<br>$\phantom{A} = z\times(-5z)+z\times 2+3\times(-5z)+3\times 2$<br>$\phantom{A} = -5z^2+2z+(-15z)+6$<br>$\phantom{A} = -5z^2-13z+6$</li>
+<li>$B = (-6k+1)(3k-2)$<br>$\phantom{B} = -6k\times 3k+(-6k)\times(-2)+1\times 3k+1\times(-2)$<br>$\phantom{B} = -18k^2+12k+3k+(-2)$<br>$\phantom{B} = -18k^2+15k-2$</li>
+<li>$C = -3(-10x+5)(9x+5)$<br>$\phantom{C} = -3(-90x^2-50x+45x+25)$<br>$\phantom{C} = -3(-90x^2-5x+25)$<br>$\phantom{C} = 270x^2+15x-75$</li>
+<li>$D = -4+(8x+10)(-9x-3)$<br>$\phantom{D} = -4-72x^2-24x-90x-30$<br>$\phantom{D} = -72x^2-114x-34$</li>
+</ul>
+</div>
+</div>
+<h2 class="subsection-title">2.2 Identités remarquables</h2>
+<div class="environment propriete">
+<div class="environment-title">Propriétés :</div>
+<div class="environment-content">
+Soient $a$ et $b$ deux réels alors :
+<ul class="multicols-3">
+<li>$(a+b)^2 = a^2+2\times a\times b+b^2$</li>
+<li>$(a-b)^2 = a^2-2\times a\times b+b^2$</li>
+<li>$(a+b)(a-b) = a^2-b^2$</li>
+</ul>
+</div>
+</div>
+<div style="display:flex; align-items:flex-start; gap:3%; margin:0.5rem 0;">
+<div style="flex:0 0 55%;">
+<em>Démonstration :</em><br>
+En additionnant les aires, on en déduit que : $(a+b)^2 = {\color{#8A9CC1}a^2}+{\color{#E6B459}b^2}+2{\color{#D36740}ab}$<br>
+On a la formule $(a-b)^2=a^2-2\times a\times b+b^2$ grâce à l'autre figure.<br>
+Par ailleurs, par double distributivité, on a :<br>
+$(a+b)(a-b)=a^2-ab+ba-b^2=a^2-b^2$.
+</div>
+<div style="flex:0 0 20%;">
+<img src="/mabemat/figures/2nde/chapitre-02/fig3.png" alt="figure (a+b)²" style="width:100%; max-height:150px; object-fit:contain;">
+</div>
+<div style="flex:0 0 20%;">
+<img src="/mabemat/figures/2nde/chapitre-02/fig4.png" alt="figure (a-b)²" style="width:100%; max-height:150px; object-fit:contain;">
+</div>
+</div>
+<div class="multicols-2">
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Développer les expressions suivantes :
+<ul>
+<li>$(2x-5)^2 = (2x)^2-2\times 2x\times 5+5^2$<br>$\phantom{(2x-5)^2} = 4x^2-20x+25$</li>
+<li>$(3x+7)^2 = (3x)^2+2\times 3x\times 7+7^2$<br>$\phantom{(3x+7)^2} = 9x^2+42x+49$</li>
+<li>$(9x-2)(9x+2) = (9x)^2-2^2$<br>$\phantom{(9x-2)(9x+2)} = 81x^2-4$</li>
+</ul>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Factoriser les expressions suivantes :
+<ul>
+<li>$81x^2-108x+36 = (9x)^2-2\times 9x\times 6+6^2$<br>$\phantom{81x^2-108x+36} = (9x-6)^2$</li>
+<li>$64x^2+64x+16 = (8x)^2+2\times 8x\times 4+4^2$<br>$\phantom{64x^2+64x+16} = (8x+4)^2$</li>
+<li>$81x^2-81 = (9x)^2-9^2$<br>$\phantom{81x^2-81} = (9x-9)(9x+9)$</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Développer, réduire et ordonner l'expression suivante : $A = (x+2)(4x-3)-x(7-x)^2$.
+On a :
+$$\begin{align*}
+A &= 4x^2-3x+8x-6-x(7^2-2\times 7\times x+x^2)\\
+  &= 4x^2+5x-6-x(49-14x+x^2)\\
+  &= 4x^2+5x-6-49x-14x^2-x^3\\
+  &= -x^3-10x^2-44x-6
+\end{align*}$$
+</div>
+</div>
+<h2 class="subsection-title">2.3 Expressions fractionnaires</h2>
+<p>Pour écrire la somme (ou la différence) de deux expressions fractionnaires sous forme d&rsquo;un quotient, on les réduit au même dénominateur.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Réduire les expressions suivantes sous la forme d'un unique quotient :
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:start;">
+<div>
+Pour tout $x\in\mathbb{R}$, écrire l'expression sous la forme d'un quotient :
+$$\begin{align*}
+3x+\dfrac{1}{x} &= \dfrac{3x^2}{x}+\dfrac{1}{x}\\
+&= \dfrac{3x^2+1}{x}
+\end{align*}$$
+</div>
+<div>
+Pour $x\in\mathbb{R}\setminus\!\left\{\dfrac{3}{2}\right\}$, écrire l'expression sous la forme d'un quotient :
+$$\begin{align*}
+4+\dfrac{4}{-2x+3} &= \dfrac{4(-2x+3)}{-2x+3}+\dfrac{4}{-2x+3}\\
+&= \dfrac{-8x+12+4}{-2x+3}\\
+&= \dfrac{-8x+16}{-2x+3}
+\end{align*}$$
+</div>
+</div>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/2nde/chapitre-02-calcul-litteral/cours.a42756dff2b060ec254dff8bbd8ddd92.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/2nde/chapitre-02-calcul-litteral/exercices.54e76aa6b968739bf9687d633d6170ac.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay  = document.getElementById('lesson-overlay');
+  var btn      = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp  = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var mbPct = document.getElementById('mb-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+  
+  var mbCloseBtn  = document.getElementById('mb-close-btn');
+  var mbTocBtn    = document.getElementById('mb-toc-btn');
+  var drawer      = document.getElementById('lesson-toc-drawer');
+  var drawerList  = document.getElementById('lesson-toc-drawer-list');
+  var drawerClose = document.getElementById('lesson-toc-drawer-close');
+  var backdrop    = document.getElementById('lesson-toc-backdrop');
+
+   
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
+   
+  function buildTOC() {
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    var listsToFill = [];
+    if (tocList) { tocList.innerHTML = ''; listsToFill.push(tocList); }
+    if (drawerList) { drawerList.innerHTML = ''; listsToFill.push(drawerList); }
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      listsToFill.forEach(function(list) {
+        var li = document.createElement('li');
+        if (h.tagName === 'H3') li.classList.add('toc-sub');
+        li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+        list.appendChild(li);
+      });
+    });
+  }
+
+   
+  function updateProgress() {
+    var top = overlay.scrollTop;
+    var max = overlay.scrollHeight - overlay.clientHeight;
+    var p   = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp)  lpRp.style.width      = pct + '%';
+    if (lpBar) lpBar.style.width     = pct + '%';
+    if (lpPct) lpPct.textContent     = pct + ' %';
+    if (mbPct) mbPct.textContent     = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var allLinks = [];
+    if (tocList)    tocList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    if (drawerList) drawerList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    allLinks.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+   
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    wrapTables();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    closeDrawer();
+    if (btn) btn.focus();
+  }
+
+   
+  function openDrawer() {
+    if (drawer)   drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+  }
+  function closeDrawer() {
+    if (drawer)   drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+  }
+
+   
+  if (btn)      btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  if (mbCloseBtn) mbCloseBtn.addEventListener('click', closeLecon);
+  if (mbTocBtn)   mbTocBtn.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (backdrop)    backdrop.addEventListener('click', closeDrawer);
+
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+    });
+  }
+  
+  if (drawerList) {
+    drawerList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      closeDrawer();
+    });
+  }
+
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1784224219';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

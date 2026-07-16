@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.38bc3c806d1998dc90eaf545846dcacdc7e099addf3a0ad62c889cdf3cc80dba.css" integrity="sha256-OLw8gG0ZmNyQ6vVFhG3Kzcfgma3fOgrWLIic3zzIDbo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.ec485ad0e88e1bd90e4c57051c971fc9567ff595297873315accd3d7fefe4bb3.css" integrity="sha256-7Eha0OiOG9kOTFcFHJcfyVZ/9ZUpeHMxWszT1/7&#43;S7M=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -374,299 +374,390 @@ pre[style*="background-color"] {
       <h1 class="lesson-h1" style="color:#4A5D7A;">Statistiques</h1>
 
       <div class="full-lesson niveau-2nde">
-        <h2 class="subsection-title">8.1 Caractéristiques d'une série statistique</h2>
-<h3 class="subsubsection-title">8.1.1 Série statistique</h3>
-<p>Voici les séries de notes obtenues par 3 élèves :</p>
+        <h2 class="subsection-title">7.1 Séries statistiques à une variable</h2>
+<h3 class="subsubsection-title">7.1.1 Vocabulaire</h3>
+<div class="environment definition">
+<div class="environment-title">Définitions :</div>
+<div class="environment-content">
 <ul>
-<li>Jérôme : $\quad 4 \quad; \quad 6 \quad; \quad 18 \quad; \quad 7 \quad; \quad 17 \quad ; \quad 12 \quad ; \quad 12 \quad ;\quad  18$</li>
-<li>Bertrand : $\quad 13 \quad ; \quad 13\quad ; \quad 12 \quad ; \quad 10 \quad ; \quad 12 \quad ; \quad 3\quad ; \quad 14 \quad ; \quad 12 \quad ; \quad 14 \quad ; \quad 15$</li>
-<li>Julie: $\quad 15 \quad ; \quad 9 \quad ; \quad 14 \quad ; \quad 13 \quad ; \quad 10 \quad ; \quad 12 \quad ; \quad 12 \quad ; \quad 11 \quad ; \quad 10$</li>
+<li>Une <strong>série statistique</strong> est un ensemble de données recueillies sur une <strong>population</strong> (ensemble d'individus ou d'objets étudiés).</li>
+<li>Le <strong>caractère</strong> est la propriété observée sur chaque individu.</li>
+<li>Les <strong>valeurs</strong> (ou <strong>modalités</strong>) sont les différentes données observées.</li>
+<li>Les <strong>effectifs</strong> $n_i$ le nombre de fois où chaque valeur apparaît, et l'<strong>effectif total</strong> $N$ est la somme des $n_i$.</li>
+<li>La <strong>fréquence</strong> d'une valeur est le rapport $f_i = \dfrac{n_i}{N}$ (souvent exprimée en $\%$).</li>
 </ul>
-<h3 class="subsubsection-title">8.1.2 Moyenne</h3>
-<p>Calculer la moyenne pour chaque série de notes de Jérôme, de Bertrand et de Julie.<br></p>
-$$\text{M}_{(\text{Jérôme})} =\dfrac{4+6+18+7+17+12+12+18}{8}\approx 11,8$$<p><br></p>
-$$\text{M}_{(\text{Bertrand})} =\dfrac{13+13+12+10+12+3+14+12+14+15}{10}=11,8 $$<p><br></p>
-$$\text{M}_{(\text{Julie})} =\dfrac{15+9+14+13+10+12+12+11+10}{9}\approx 11,8$$<p><br></p>
-<p>Une autre manière de calculer la moyenne est d&rsquo;utiliser la moyenne pondérée :</p>
+</div>
+</div>
+<h3 class="subsubsection-title">7.1.2 Regroupement par classes</h3>
+<p>Lorsque les valeurs du caractère sont nombreuses et dispersées, on les regroupe en <strong>classes</strong> $[a\,;\,b[$.<br>
+La <strong>longueur</strong> (ou amplitude) d&rsquo;une classe $[a\,;\,b[$ est $b - a$.</p>
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-La <strong>moyenne</strong> d'une série statistique dont les valeurs sont $x_1, x_2 , ..., x_k$ et les effectifs correspondants $n_1$, $n_2$, ..., $n_k$ est notée $\overline{x}$ et est égale à : $$ \overline{x} = \dfrac{n_1x_1 + n_2x_2 + \cdots +n_kx_k}{n_1+n_2+\cdots +n_k}$$<br>
-La <strong>moyenne</strong> est une caractéristique de position.
+Le <strong>centre de classe</strong> d'une classe $[a\,;\,b[$ est la valeur $c_i = \dfrac{a+b}{2}$, utilisée pour représenter toutes les valeurs de la classe dans les calculs.
 </div>
 </div>
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
+<div class="environment definition">
+<div class="environment-title">Définitions :</div>
 <div class="environment-content">
-Il faut d'abord ranger les valeurs dans l'ordre croissant. <br>
-Dans notre exemple, on a :
-$$\text{M}_{(\text{Jérôme})} =\dfrac{4+6+7+2\times 12+17+2\times 18}{8}\approx 11,8$$
-$$\text{M}_{(\text{Bertrand})} =\dfrac{3 + 10 +3\times 12 + 2 \times 13+2\times 14+15}{10}=11,8 $$
-$$\text{M}_{(\text{Julie})} =\dfrac{9 + 2\times 10 +11+2\times 12+13 +14+15}{9}\approx 11,8$$
+<ul>
+<li>L'<strong>effectif cumulé croissant</strong> (ECC) associé à une valeur $x_i$ est la somme des effectifs de toutes les valeurs inférieures ou égales à $x_i$.</li>
+<li>La <strong>fréquence cumulée croissante</strong> (FCC) est le rapport de l'effectif cumulé croissant sur $N$.</li>
+</ul>
 </div>
 </div>
-<h3 class="subsubsection-title">8.1.3 Médiane</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On mesure la taille (en cm) des 30 élèves de 2<sup>nde</sup>2. On regroupe les données par classes de longueur 10 cm.<br>
+Compléter le tableau de distribution, avec les ECC et les FCC, puis interpréter.
+<div style="overflow-x:auto; margin:0.8rem 0;">
+<table style="border-collapse:collapse; width:100%; text-align:center;">
+<tr>
+<th style="border:1px solid #888; padding:6px;">Classe</th>
+<th style="border:1px solid #888; padding:6px;">$[150\,;\,160[$</th>
+<th style="border:1px solid #888; padding:6px;">$[160\,;\,170[$</th>
+<th style="border:1px solid #888; padding:6px;">$[170\,;\,180[$</th>
+<th style="border:1px solid #888; padding:6px;">$[180\,;\,190[$</th>
+<th style="border:1px solid #888; padding:6px;">$[190\,;\,200[$</th>
+<th style="border:1px solid #888; padding:6px;">$[200\,;\,210[$</th>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">Centre $c_i$</td>
+<td style="border:1px solid #888; padding:6px;">$155$</td>
+<td style="border:1px solid #888; padding:6px;">$165$</td>
+<td style="border:1px solid #888; padding:6px;">$175$</td>
+<td style="border:1px solid #888; padding:6px;">$185$</td>
+<td style="border:1px solid #888; padding:6px;">$195$</td>
+<td style="border:1px solid #888; padding:6px;">$205$</td>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">Effectif $n_i$</td>
+<td style="border:1px solid #888; padding:6px;">$3$</td>
+<td style="border:1px solid #888; padding:6px;">$6$</td>
+<td style="border:1px solid #888; padding:6px;">$12$</td>
+<td style="border:1px solid #888; padding:6px;">$6$</td>
+<td style="border:1px solid #888; padding:6px;">$3$</td>
+<td style="border:1px solid #888; padding:6px;">$0$</td>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">ECC</td>
+<td style="border:1px solid #888; padding:6px;">$3$</td>
+<td style="border:1px solid #888; padding:6px;">$9$</td>
+<td style="border:1px solid #888; padding:6px;">$21$</td>
+<td style="border:1px solid #888; padding:6px;">$27$</td>
+<td style="border:1px solid #888; padding:6px;">$30$</td>
+<td style="border:1px solid #888; padding:6px;">$30$</td>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">Fréquence $f_i$ (en $\%$)</td>
+<td style="border:1px solid #888; padding:6px;">$10$</td>
+<td style="border:1px solid #888; padding:6px;">$20$</td>
+<td style="border:1px solid #888; padding:6px;">$40$</td>
+<td style="border:1px solid #888; padding:6px;">$20$</td>
+<td style="border:1px solid #888; padding:6px;">$10$</td>
+<td style="border:1px solid #888; padding:6px;">$0$</td>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">FCC (en $\%$)</td>
+<td style="border:1px solid #888; padding:6px;">$10$</td>
+<td style="border:1px solid #888; padding:6px;">$30$</td>
+<td style="border:1px solid #888; padding:6px;">$70$</td>
+<td style="border:1px solid #888; padding:6px;">$90$</td>
+<td style="border:1px solid #888; padding:6px;">$100$</td>
+<td style="border:1px solid #888; padding:6px;">$100$</td>
+</tr>
+</table>
+</div>
+<p>La FCC de $70\,\%$ pour la classe $[170\,;\,180[$ signifie que $70\,\%$ des élèves mesurent moins de $180$ cm.<br>
+La classe la plus représentée est $[170\,;\,180[$ avec $40\,\%$ des élèves.</p>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On relève la distance (en km) de $21$ courses en taxi effectuées dans une ville en une semaine.
+Compléter le tableau d'effectifs et d'ECC.
+<div style="overflow-x:auto; margin:0.8rem 0;">
+<table style="border-collapse:collapse; width:100%; text-align:center;">
+<tr>
+<th style="border:1px solid #888; padding:6px;">Distance $x_i$ (en km)</th>
+<th style="border:1px solid #888; padding:6px;">$2$</th>
+<th style="border:1px solid #888; padding:6px;">$4$</th>
+<th style="border:1px solid #888; padding:6px;">$6$</th>
+<th style="border:1px solid #888; padding:6px;">$8$</th>
+<th style="border:1px solid #888; padding:6px;">$10$</th>
+<th style="border:1px solid #888; padding:6px;">$12$</th>
+<th style="border:1px solid #888; padding:6px;">$14$</th>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">Effectif $n_i$</td>
+<td style="border:1px solid #888; padding:6px;">$1$</td>
+<td style="border:1px solid #888; padding:6px;">$2$</td>
+<td style="border:1px solid #888; padding:6px;">$4$</td>
+<td style="border:1px solid #888; padding:6px;">$7$</td>
+<td style="border:1px solid #888; padding:6px;">$4$</td>
+<td style="border:1px solid #888; padding:6px;">$2$</td>
+<td style="border:1px solid #888; padding:6px;">$1$</td>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">ECC</td>
+<td style="border:1px solid #888; padding:6px;">$1$</td>
+<td style="border:1px solid #888; padding:6px;">$3$</td>
+<td style="border:1px solid #888; padding:6px;">$7$</td>
+<td style="border:1px solid #888; padding:6px;">$14$</td>
+<td style="border:1px solid #888; padding:6px;">$18$</td>
+<td style="border:1px solid #888; padding:6px;">$20$</td>
+<td style="border:1px solid #888; padding:6px;">$21$</td>
+</tr>
+</table>
+</div>
+<p>On a $N = 21$. La distance la plus fréquente est $8$ km, pour $7$ courses ($\approx 33\,\%$).<br>
+L&rsquo;ECC de $14$ pour $8$ km signifie que $14$ courses (soit $\approx 67\,\%$) font au plus $8$ km.</p>
+</div>
+</div>
+<h3 class="subsubsection-title">7.1.3 Représentations graphiques</h3>
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-La <strong>médiane</strong> $Me$ est une valeur telle que la moitié au moins de l'effectif ait des valeurs inférieures ou égales à $Me$, l'autre moitié des valeurs supérieures ou égales à $Me$.<br>
-La <strong>médiane</strong> est une caractéristique de position.
+<ul>
+<li>Le <strong>diagramme en bâtons</strong> représente chaque valeur $x_i$ par un segment vertical de hauteur proportionnelle à l'effectif (ou à la fréquence).</li>
+<li>L'<strong>histogramme</strong> représente des classes par des rectangles dont la <strong>surface</strong> est proportionnelle à l'effectif.</li>
+</ul>
 </div>
 </div>
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
 <div class="environment-content">
-Pour déterminer les notes médianes, il faut ordonner les séries. <br>
-La médiane partage l'effectif en deux. <br>
-Calculer la médiane pour chaque série de notes de Jérôme, de Bertrand et de Julie. <br>
-<p><strong>Jérôme :</strong><br></p>
-$$\overbrace{4 \quad 6 \quad 7 \quad {\color{#D36740}12}}^{4 \text{ données}} \quad \overbrace{{\color{#D36740}12} \quad 17 \quad 18 \quad 18}^{4 \text{ données}}$$<p>$\text{Donc } Me_{(\text{Jérôme})}=\color{#D36740}{12}$ <br><br></p>
-<p><strong>Bertrand :</strong><br></p>
-$$\overbrace{3 \quad 10 \quad 12 \quad 12 \quad {\color{#D36740}12}}^{5 \text{ données}} \quad \overbrace{{\color{#A8C68A}13} \quad 13 \quad 14 \quad 14 \quad 15}^{5 \text{ données}}$$<p>$\text{Donc } Me_{(\text{Bertrand})}=\dfrac{\color{#D36740}{12}+\color{#A8C68A}{13}}{2}=12,5$<br><br></p>
-<p><strong>Julie :</strong><br></p>
-$$\overbrace{9 \quad 10 \quad 10 \quad 11}^{4 \text{ données}} \quad {\color{#E6B459}\mathbf{12}} \quad \overbrace{12 \quad 13 \quad 14 \quad 15}^{4 \text{ données}}$$<p>$\text{Donc } Me_{(\text{Julie})}=\color{#E6B459}{\mathbf{12}}$</p>
+<strong>Retour sur les tailles.</strong><br>
+Représenter la distribution des tailles des élèves de 2<sup>nde</sup>2 par un histogramme.
+<div style="text-align:center; margin:0.8rem 0;">
+<img src="/mabemat/figures/2nde/chapitre-08/histo-tailles.svg" alt="Histogramme des tailles" style="max-height:300px; max-width:100%;">
 </div>
 </div>
-<h3 class="subsubsection-title">8.1.4 Étendue</h3>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les trajets.</strong><br>
+Représenter la distribution des distances de courses par un diagramme en bâtons.
+<div style="text-align:center; margin:0.8rem 0;">
+<img src="/mabemat/figures/2nde/chapitre-08/batons-trajets.svg" alt="Diagramme en bâtons des trajets" style="max-height:300px; max-width:100%;">
+</div>
+</div>
+</div>
+<h2 class="subsection-title">7.2 Indicateurs de tendance centrale</h2>
+<p>Les indicateurs de tendance centrale (ou <strong>indicateurs de position</strong>) permettent de résumer une série par une valeur centrale représentative.</p>
+<h3 class="subsubsection-title">7.2.1 Moyenne</h3>
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-L'<strong>étendue</strong> d'une série statistique est la différence entre la plus grande valeur et la plus petite valeur de la série. <br>
-L'<strong>étendue</strong> est une caractéristique de dispersion.
+La <strong>moyenne</strong> d'une série statistique dont les valeurs sont $x_1, x_2, \dots, x_k$ avec les effectifs correspondants $n_1, n_2, \dots, n_k$ (et $N = n_1 + \cdots + n_k$) est :
+$$\overline{x} = \dfrac{n_1 x_1 + n_2 x_2 + \cdots + n_k x_k}{N}$$
+Pour des données regroupées par classes, on utilise les <strong>centres de classe</strong> $c_i$ à la place des valeurs $x_i$.
 </div>
 </div>
-<p>Calculer l&rsquo;étendue pour chaque série de notes de Jérôme, de Bertrand et de Julie.</p>
-<div style="display:flex; justify-content:space-around; flex-wrap:wrap;">
-<span>$\text{E}_{(\text{Jérôme})} =18-4=14$</span>
-<span>$\text{E}_{(\text{Bertrand})} =15-3=12$</span>
-<span>$\text{E}_{(\text{Julie})} =15-9=6$</span>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les tailles.</strong><br>
+On utilise les centres de classe $c_i$ et les effectifs $n_i$ :
+$$\overline{x} = \dfrac{3 \times 155 + 6 \times 165 + 12 \times 175 + 6 \times 185 + 3 \times 195}{30}$$
+$$\overline{x} = \dfrac{465 + 990 + 2100 + 1110 + 585}{30} = \dfrac{5250}{30} = 175 \text{ cm}$$
+En moyenne, les élèves de 2<sup>nde</sup>2 mesurent $175$ cm.
 </div>
-<p>La note minimale de Bertrand est $3$ pourtant, cela ne représente pas vraiment la série de notes de Bertrand.</p>
+</div>
 <div class="remarque">
-Conclusion : l'étendue est un paramètre de dispersion absolue qui est simple à calculer mais très fragile puisqu'il ne dépend que de deux valeurs de la distribution. Ce paramètre n'a guère de signification lorsqu'une distribution comporte des valeurs exceptionnelles.
+La moyenne calculée avec les centres de classe est une <strong>valeur approchée</strong> de la vraie moyenne, car on suppose que toutes les valeurs d'une classe sont concentrées en son centre.
 </div>
-<h3 class="subsubsection-title">8.1.5 Quartiles, écart interquartile</h3>
-<div class="environment definition">
-<div class="environment-title">Définition :</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
 <div class="environment-content">
-Le <strong>premier quartile</strong> $(Q_1)$ est la plus petite valeur de la série telle qu'au moins $25 \%$ des autres valeurs de la série sont inférieures ou égales à cette valeur.<br>
-Le <strong>troisième quartile</strong> $(Q_3)$ est la plus petite valeur de la série telle qu'au moins $75 \%$ des autres valeurs de la série sont inférieures ou égales à cette valeur.<br>
-Les <strong>quartiles</strong> sont des caractéristiques de position.
+<strong>Retour sur les trajets.</strong><br>
+Calculer la distance moyenne d'une course.<br>
+On calcule la moyenne pondérée :
+$$\overline{x} = \dfrac{1 \times 2 + 2 \times 4 + 4 \times 6 + 7 \times 8 + 4 \times 10 + 2 \times 12 + 1 \times 14}{21} = \dfrac{168}{21} = 8 \text{ km}$$
+En moyenne, une course en taxi dans cette ville fait $8$ km.
 </div>
 </div>
-<div class="environment definition">
-<div class="environment-title">Définition :</div>
-<div class="environment-content">
-L'<strong>écart interquartile</strong> d'une série statistique de premier quartile $Q_1$ et de troisième quartile $Q_3$ est égal à la différence $Q_3 - Q_1$. <br>
-L'<strong>écart interquartile</strong> est une caractéristique de dispersion.
-</div>
-</div>
-<div class="remarque">
-L'écart interquartile d'une série mesure la dispersion autour de la médiane. Il contient au moins $50\%$ des valeurs de la série.
-L'écart interquartile n'est pas influencé par les valeurs extrêmes de la série.
-</div>
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
-<div class="environment-content">
-Calculer les quartiles pour chaque série de notes de Jérôme de Bertrand et de Julie.<br>
-Pour déterminer les quartiles, il faut ordonner les séries.<br>
-Le premier quartile est la donnée de la série se trouvant au quart de l'effectif.<br>
-Le troisième quartile est la donnée de la série se trouvant au trois-quarts de l'effectif.<br>
-<p><strong>Jérôme :</strong>
-$ 4 \quad \color{#D36740}{6} \quad 7 \quad 12 \quad 12 \quad \color{#A8C68A}{17} \quad 18 \quad 18 $<br>
-$ \dfrac{1}{4}\times 8=2 $ le premier quartile est la <span style="color:#D36740;">2e donnée</span> de la série.<br>
-$ \dfrac{3}{4}\times 8=6 $ le troisième quartile est la <span style="color:#A8C68A;">6e donnée</span> de la série.<br>
-$ Q_{1(\text{Jérôme})} = 6 $ et $ Q_{3(\text{Jérôme})} = 17 $<br>
-L&rsquo;écart interquartile est égal à $ E_{Q(\text{Jérôme})}= Q_{3(\text{Jérôme})}-Q_{1(\text{Jérôme})}=17-6=11$
-<br><br></p>
-<p><strong>Bertrand :</strong>
-$ 3 \quad 10 \quad \color{#D36740}{12} \quad 12 \quad 12 \quad 13 \quad 13 \quad \color{#A8C68A}{14} \quad 14 \quad 15 $<br>
-$ \dfrac{1}{4}\times 10=2,5 $ le premier quartile est la <span style="color:#D36740;">3e donnée</span> de la série.<br>
-$ \dfrac{3}{4}\times 10=7,5 $ le troisième quartile est la <span style="color:#A8C68A;">8e donnée</span> de la série.<br>
-$ Q_{1(\text{Bertrand})} = 12 $ et $ Q_{3(\text{Bertrand})} = 14 $<br>
-L&rsquo;écart interquartile est égal à $ E_{Q(\text{Bertrand})}= Q_{3(\text{Bertrand})}-Q_{1(\text{Bertrand})}=14-12=2$<br><br></p>
-<p><strong>Julie :</strong>
-$ 9 \quad 10 \quad \color{#D36740}{10} \quad 11 \quad 12 \quad 12 \quad \color{#A8C68A}{13} \quad 14 \quad 15 $<br>
-$ \dfrac{1}{4}\times 9=2,25 $ le premier quartile est la <span style="color:#D36740;">3e donnée</span> de la série.<br>
-$ \dfrac{3}{4}\times 9=6,75 $ le troisième quartile est la <span style="color:#A8C68A;">7e donnée</span> de la série.<br>
-$ Q_{1(\text{Julie})} = 10 $ et $ Q_{3(\text{Julie})} = 13 $<br>
-L&rsquo;écart interquartile est égal à $ E_{Q(\text{Julie})}= Q_{3(\text{Julie})}-Q_{1(\text{Julie})}=13-10=3$</p>
-</div>
-</div>
-<h3 class="subsubsection-title">8.1.6 Interprétations</h3>
-<table>
-<tr>
-<td>${\color{#4A5D7A}{\text{M}_{(\text{Jérôme})}\approx 11,8}}$</td>
-<td>${\color{#A8C68A}{\text{Me}_{(\text{Jérôme})}= 12}}$</td>
-<td>${\color{#D36740}{\text{E}_{(\text{Jérôme})}=14}}$</td>
-<td>${\text{Q}_1}_{(\text{Jérôme})}=6$</td>
-<td>${\text{Q}_3}_{(\text{Jérôme})}=17$</td>
-<td>${\color{#E6B459}{{\text{E}_Q}_{(\text{Jérôme})}=11}}$</td>
-</tr>
-<tr>
-<td>${\color{#4A5D7A}{\text{M}_{(\text{Bertrand})} =11,8}} $</td>
-<td>$\text{Me}_{(\text{Bertrand})} =12,5 $</td>
-<td>${\color{#D36740}{\text{E}_{(\text{Bertrand})} =12}} $</td>
-<td>${\color{#8A9CC1}{{\text{Q}_1}_{(\text{Bertrand})} =12}} $</td>
-<td>${\text{Q}_3}_{(\text{Bertrand})} =14 $</td>
-<td>${\text{E}_Q}_{(\text{Bertrand})} =2 $</td>
-</tr>
-<tr>
-<td>${\color{#4A5D7A}{\text{M}_{(\text{Julie})} \approx 11,8}}$</td>
-<td>$\text{Me}_{(\text{Julie})} = 12$</td>
-<td>${\color{#D36740}{\text{E}_{(\text{Julie})} = 6}}$</td>
-<td>${\text{Q}_1}_{(\text{Julie})} = 10$</td>
-<td>${\color{#8A9CC1}{{\text{Q}_3}_{(\text{Julie})} = 13}}$</td>
-<td>${\text{E}_Q}_{(\text{Julie})} = 3$</td>
-</tr>
-</table>
-<br>
-<span style="color:#4A5D7A;">Les moyennes sont environ égales</span> et pourtant <span style="color:#D36740;">les notes ne se répartissent pas de la même manière autour de cette caractéristique de position. Les étendues sont très différentes</span>.<br>
-<span style="color:#A8C68A;">Jérôme a une médiane égale à $12$ donc il a obtenu autant de notes au-dessus de $12$ que de notes en-dessous de $12$.</span><br>
-<span style="color:#8A9CC1;">Le premier quartile de Bertrand est égal à $12$ donc au moins un quart des notes de Bertrand sont inférieures à $12$.</span><br>
-<span style="color:#8A9CC1;">Le troisième quartile de Julie est égal à $13$ donc au moins trois quarts des notes de Julie sont inférieures à $13$.</span><br>
-<span style="color:#E6B459;">L'écart interquartile de Jérôme est égal à $11$ donc il a au moins $50\%$ des notes comprises entre $6$ et $17$ (les quartiles).</span>
-<div style="text-align:center;">
-<img src="/mabemat/figures/2nde/chapitre-08/fig1.svg" alt="figure 1" style="max-height:300px; max-width:100%;">
-</div>
-<h2 class="subsection-title">8.2 Cas de pondération d'une série statistique</h2>
-<h3 class="subsubsection-title">8.2.1 Série statistique</h3>
-<p>Tailles des élèves de 2nde2 en cm : <br>
-<span class="pointille" style="display:block; width:100%; border-bottom:1px dotted #000; margin:0.6em 0;"> </span>
-<span class="pointille" style="display:block; width:100%; border-bottom:1px dotted #000; margin:0.6em 0;"> </span></p>
-<h3 class="subsubsection-title">8.2.2 Regroupement par classe</h3>
-<p>Regrouper cette série de tailles par classes de longueur 10 cm et calculer les fréquences
-arrondies au centième :</p>
-<table>
-<tr>
-<th>Tailles</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-</tr>
-<tr>
-<td>Effectifs</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Effectifs cumulés croissants</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Fréquences (en $\%$)</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Fréquences cumulées croissantes (en $\%$)</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<h3 class="subsubsection-title">8.2.3 Moyenne pondérée</h3>
-<table>
-<tr>
-<th>Classe centrées $x_i$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-<th>$\phantom{1205}$</th>
-</tr>
-<tr>
-<td>Effectifs $n_i$</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-<p>Il s&rsquo;agit d&rsquo;un calcul de moyenne pondéré car des effectifs différents $n_i$ sont associés à chaque valeur $x_i$.<br></p>
-$$\overline{x}=\dfrac{\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}\phantom{1205}}{}=\dfrac{\phantom{1205}}{}=\phantom{1205}$$<h3 class="subsubsection-title">8.2.4 Linéarité de la moyenne</h3>
+<h3 class="subsubsection-title">7.2.2 Linéarité de la moyenne</h3>
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-Si une série de valeurs $x_i$ a pour moyenne $\overline{x}$ alors la série de valeurs $ax_i+b$, avec $a$ et $b$ réels, a pour moyenne $a\overline{x}+b$.
+Si une série de valeurs $x_i$ a pour moyenne $\overline{x}$, alors la série de valeurs $ax_i + b$ (avec $a$ et $b$ réels) a pour moyenne $a\overline{x} + b$.
 </div>
 </div>
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-<div style="display:inline-block; vertical-align:middle; width:calc(46% - 12px);">
-<table>
-<tr style="border:none;">
-<td colspan="4" style=" background:none;"></td>
-<td style="border:none; background:none; text-align:center;"><strong>Moyennes</strong></td>
-</tr>
-<tr>
-<th>$x_i$</th>
-<th>$4$</th>
-<th>$7$</th>
-<th>$-2$</th>
-<th>$\dfrac{4 + 7 - 2}{3} = 3$</th>
-</tr>
-<tr>
-<td>$2x_i - 5$</td>
-<td>$3$</td>
-<td>$9$</td>
-<td>$-9$</td>
-<td>$\dfrac{3 + 9 - 9}{3} = 1$</td>
-</tr>
-</table>
-</div><div style="display:inline-block; vertical-align:middle; width:calc(52% - 12px);">
-On a $\overline{x}= 3$, et donc en appliquant la propriété, la moyenne de la série $2x_i - 5$ est égale à : <br>
-$2\overline{x}-5= 2 \times 3 - 5 = 1$. <br>
-On retrouve bien le résultat calculé dans le tableau.
+<strong>Retour sur les trajets.</strong><br>
+La distance moyenne d'une course est $8$ km. Le taxi facture $2$€ par km et $4$€ de prise en charge. Calculer le prix moyen d'une course.<br>
+En appliquant la propriété pour ne pas avoir à recalculer course par course :
+$$2\overline{x} + 4 = 2 \times 8 + 4 = 20 \text{ €}$$
+En moyenne, une course dans cette ville coûte $20$ €.
 </div>
 </div>
-</div>
-<h3 class="subsubsection-title">8.2.5 Variance, écart-type</h3>
+<h3 class="subsubsection-title">7.2.3 Médiane</h3>
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-<ol>
-<li>La variance $V$ d'une série statistique de moyenne $\overline{x}$ dont les valeurs du caractère sont $x_1$, $x_2$, $x_3$, ..., $x_k$ et les effectifs correspondants sont $n_1$, $n_2$, $n_3$, ..., $n_k$ est $$V=\dfrac{n_1\times (x_1-\overline{x})^2+n_2\times (x_2-\overline{x})^2+\cdots+n_k\times (x_k-\overline{x})^2}{n_1+n_2+\cdots+n_k}$$</li>
-<li>L'écart-type $\sigma$ d'une série statistique de variance $V$ est égal à : $\sigma =\sqrt{V}$.</li>
-</ol>
+La <strong>médiane</strong> $Me$ est une valeur telle qu'au moins $50\,\%$ des données sont inférieures ou égales à $Me$, et au moins $50\,\%$ sont supérieures ou égales à $Me$.<br>
+La médiane partage la série ordonnée en deux groupes d'effectifs égaux.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode</div>
+<div class="environment-content">
+Pour déterminer la médiane d'une série de $N$ valeurs rangées dans l'ordre croissant :
+<ul>
+<li>Si $N$ est impair, la médiane est la valeur de rang $\dfrac{N+1}{2}$.</li>
+<li>Si $N$ est pair, la médiane est la moyenne des valeurs de rangs $\dfrac{N}{2}$ et $\dfrac{N}{2}+1$.</li>
+</ul>
 </div>
 </div>
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-Ainsi en reprenant l'exemple des tailles de la 2nde2, la variance est égale à : <br>
-<p>$V=$ <br></p>
-<p>Donc $\sigma\approx$<br>
-L&rsquo;écart-type possède la même unité que les valeurs de la série. <br>
-Ainsi pour la série étudiée, l&rsquo;écart-type est environ égal à $\dots$ cm.</p>
+<strong>Retour sur les tailles.</strong><br>
+Déterminer la médiane de la distribution des tailles.<br><br>
+On a $N = 30$ (pair) : on cherche la moyenne des valeurs de rangs $15$ et $16$.<br>
+D'après l'ECC, les rangs $15$ et $16$ se trouvent tous les deux dans la classe $[170\,;\,180[$. C'est la <strong>classe médiane</strong>.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les trajets.</strong><br>
+Déterminer la médiane des distances de courses et interpréter.<br>
+On a $N = 21$ (impair) : la médiane est la valeur de rang $\dfrac{21+1}{2} = 11$.<br>
+D'après l'ECC, le rang $11$ se trouve dans le groupe des courses de $8$ km.
+$$Me = 8 \text{ km}$$
+Au moins la moitié des courses font au plus $8$ km, l'autre moitié au moins $8$ km.
+</div>
+</div>
+<h2 class="subsection-title">7.3 Indicateurs de dispersion</h2>
+<p>Les indicateurs de dispersion mesurent l&rsquo;étalement des valeurs autour d&rsquo;un indicateur de position.</p>
+<h3 class="subsubsection-title">7.3.1 Étendue</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+L'<strong>étendue</strong> d'une série statistique est la différence entre la valeur maximale et la valeur minimale de la série.
+$$e = x_{\max} - x_{\min}$$
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les trajets.</strong><br>
+Calculer l'étendue de la série.<br>
+La distance minimale est $2$ km et la distance maximale est $14$ km, donc :
+$$e = 14 - 2 = 12 \text{ km}$$
+Il y a $12$ km d'écart entre la course la plus courte et la plus longue.
+</div>
+</div>
+<h3 class="subsubsection-title">7.3.2 Quartiles et écart interquartile</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<ul>
+<li>Le <strong>premier quartile</strong> $Q_1$ est la plus petite valeur de la série telle qu'au moins $25\,\%$ des données soient inférieures ou égales à $Q_1$.</li>
+<li>Le <strong>troisième quartile</strong> $Q_3$ est la plus petite valeur de la série telle qu'au moins $75\,\%$ des données soient inférieures ou égales à $Q_3$.</li>
+<li>L'<strong>écart interquartile</strong> est $Q_3 - Q_1$.</li>
+</ul>
+L'écart interquartile contient au moins $50\,\%$ des valeurs et n'est <strong>pas influencé</strong> par les valeurs extrêmes.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les tailles.</strong><br>
+Dans quelles classes se trouvent les quartiles $Q_1$ et $Q_3$ ?<br>
+On utilise les ECC ($N = 30$) :
+<div style="overflow-x:auto; margin:0.8rem 0;">
+<table style="border-collapse:collapse; width:100%; text-align:center;">
+<tr>
+<th style="border:1px solid #888; padding:6px;">Classe</th>
+<th style="border:1px solid #888; padding:6px;">$[150\,;\,160[$</th>
+<th style="border:1px solid #888; padding:6px;"><strong>$[160\,;\,170[$</strong></th>
+<th style="border:1px solid #888; padding:6px;">$[170\,;\,180[$</th>
+<th style="border:1px solid #888; padding:6px;"><strong>$[180\,;\,190[$</strong></th>
+<th style="border:1px solid #888; padding:6px;">$[190\,;\,200[$</th>
+<th style="border:1px solid #888; padding:6px;">$[200\,;\,210[$</th>
+</tr>
+<tr>
+<td style="border:1px solid #888; padding:6px;">ECC</td>
+<td style="border:1px solid #888; padding:6px;">$3$</td>
+<td style="border:1px solid #888; padding:6px;"><strong>$9$</strong></td>
+<td style="border:1px solid #888; padding:6px;">$21$</td>
+<td style="border:1px solid #888; padding:6px;"><strong>$27$</strong></td>
+<td style="border:1px solid #888; padding:6px;">$30$</td>
+<td style="border:1px solid #888; padding:6px;">$30$</td>
+</tr>
+</table>
+</div>
+<p><strong>Calcul de $Q_1$ :</strong> Comme $\dfrac{30}{4} = 7{,}5$, on prend la 8<sup>e</sup> valeur.<br>
+$Q_1$ se trouve donc dans $[160\,;\,170[$.<br><br>
+<strong>Calcul de $Q_3$ :</strong> Comme $\dfrac{3 \times 30}{4} = 22{,}5$, on prend la 23<sup>e</sup> valeur.<br>
+$Q_3$ se trouve donc dans $[180\,;\,190[$.</p>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les trajets.</strong><br>
+Donner les valeurs des quartiles, puis de l'écart interquartile.<br><br>
+<strong>Calcul de $Q_1$ :</strong> Comme $\dfrac{N}{4} = 5{,}25$, $Q_1$ est la 6<sup>e</sup> valeur.<br>
+D'après les ECC, le rang $6$ se trouve dans le groupe $6$ km.<br>
+Donc $Q_1 = 6 \text{ km}$.<br><br>
+<strong>Calcul de $Q_3$ :</strong> Comme $\dfrac{3 \times 21}{4} = 15{,}75$, $Q_3$ est la 16<sup>e</sup> valeur.<br>
+D'après les ECC, le rang $16$ se trouve dans le groupe $10$ km.<br>
+Donc $Q_3 = 10 \text{ km}$.<br><br>
+Ainsi, l'écart interquartile vaut $10 - 6 = 4$ km.<br><br>
+Au moins $25\,\%$ des courses font au plus $6$ km, et au moins $75\,\%$ font au plus $10$ km. La moitié centrale des courses a une distance comprise entre $6$ et $10$ km.
+</div>
+</div>
+<div style="text-align:center; margin:0.8rem 0;">
+<img src="/mabemat/figures/2nde/chapitre-08/boite-moustaches.svg" alt="Boîte à moustaches" style="max-height:200px; max-width:100%;">
+</div>
+<h3 class="subsubsection-title">7.3.3 Variance et écart-type</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit une série de valeurs $x_1, x_2, \dots, x_k$ d'effectifs $n_1, n_2, \dots, n_k$ et de moyenne $\overline{x}$.
+<ol>
+<li>La <strong>variance</strong> est :
+$$V = \dfrac{n_1(x_1-\overline{x})^2 + n_2(x_2-\overline{x})^2 + \cdots + n_k(x_k-\overline{x})^2}{N}$$</li>
+<li>L'<strong>écart-type</strong> est $\sigma = \sqrt{V}$. Il s'exprime dans la même unité que les données.</li>
+</ol>
 </div>
 </div>
 <div class="remarque">
-L'écart-type exprime la dispersion des valeurs d'une série statistique autour de sa moyenne. <br>
-Les valeurs extrêmes influencent l'écart-type.
+Plus $\sigma$ est grand, plus les valeurs sont dispersées autour de la moyenne.<br>
+Contrairement à l'écart interquartile, l'écart-type est <strong>sensible aux valeurs extrêmes</strong>.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les tailles.</strong><br>
+Calculer la variance et l'écart-type de la distribution des tailles.<br><br>
+On utilise les centres de classe et $\overline{x} = 175$ cm.
+$$V = \dfrac{3(155-175)^2 + 6(165-175)^2 + 12(175-175)^2 + 6(185-175)^2 + 3(195-175)^2}{30}$$
+$$V = \dfrac{3 \times 400 + 6 \times 100 + 12 \times 0 + 6 \times 100 + 3 \times 400}{30} = \dfrac{3600}{30} = 120$$
+$$\sigma = \sqrt{120} \approx 11 \text{ cm}$$
+Les tailles s'écartent en moyenne de $11$ cm de la moyenne de $175$ cm.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<strong>Retour sur les trajets.</strong><br>
+Calculer la variance et l'écart-type des distances de courses.<br>
+On utilise $\overline{x} = 8$ km.
+$$V = \dfrac{1(2-8)^2 + 2(4-8)^2 + 4(6-8)^2 + 7(8-8)^2 + 4(10-8)^2 + 2(12-8)^2 + 1(14-8)^2}{21}$$
+$$V = \dfrac{1 \times 36 + 2 \times 16 + 4 \times 4 + 7 \times 0 + 4 \times 4 + 2 \times 16 + 1 \times 36}{21} = \dfrac{168}{21} = 8$$
+$$\sigma = \sqrt{8} \approx 2{,}8 \text{ km}$$
+Les distances s'écartent en moyenne de $2{,}8$ km de la moyenne de $8$ km.
+</div>
 </div>
 
       </div>
@@ -866,7 +957,7 @@ Les valeurs extrêmes influencent l'écart-type.
   </script>
   <script>
      
-    const BUILD_TS = '1781367422';
+    const BUILD_TS = '1782223637';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -1,0 +1,19 @@
+---
+title: "Probabilités"
+level: "3e"
+chapter_number: 14
+weight: 14
+show_lecon: true
+has_cours: true
+has_exercices: false
+has_qcm: false
+has_brevet: true
+has_brevetImpr : true
+competences:
+  - "Calculer des probabilités"
+  - "Utiliser la loi des probabilités complémentaires"
+  - "Distinguer événements incompatibles"
+categorie : Organisation et gestion de données et probabilités
+
+
+---

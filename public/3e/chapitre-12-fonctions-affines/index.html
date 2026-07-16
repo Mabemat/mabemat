@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.e42a056be10f8145d229ab82aaddccdb1c459ee9450ed284daced5895e7327ab.css" integrity="sha256-5CoFa&#43;EPgUXSKauCqt3M2xxFnulFDtKE2s7ViV5zJ6s=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -219,7 +219,7 @@ pre[style*="background-color"] {
     </div>
     <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
   </a>
-  <a class="res-card fade-up d2" href="/mabemat/3e/chapitre-12-fonctions-affines/cours.e03c63d176d1352ff421486984049333.pdf" target="_blank">
+  <a class="res-card fade-up d2" href="/mabemat/3e/chapitre-12-fonctions-affines/Polycopie%20Eleves%20%28gliss%C3%A9s%29.4b40ed6a71311ecbc8d028cefe40ad27.pdf" target="_blank">
     <div class="res-corner">PDF</div>
     <div>
       <div class="res-ico">⇣</div>
@@ -353,7 +353,7 @@ pre[style*="background-color"] {
       </div>
       <div class="lesson-toc-actions">
         
-        <a href="/mabemat/3e/chapitre-12-fonctions-affines/cours.e03c63d176d1352ff421486984049333.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        <a href="/mabemat/3e/chapitre-12-fonctions-affines/Polycopie%20Eleves%20%28gliss%C3%A9s%29.4b40ed6a71311ecbc8d028cefe40ad27.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
         
         
         
@@ -387,10 +387,10 @@ pre[style*="background-color"] {
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-Soient $a$ et $b$ deux réels donnés. La fonction $f$ définie sur $\mathbb{R}$ par $f(x) = ax + b$ est appelée fonction affine, elle est représentée par une droite où :
+Soient $a$ et $b$ deux nombres donnés. La fonction $f$ définie sur $\mathbb{R}$ par $f(x) = ax + b$ est appelée fonction affine, elle est représentée par une droite où :
 <ul>
-<li>le réel $a$ est le coefficient directeur de cette droite</li>
-<li>le réel $b$ est l'ordonnée à l'origine</li>
+<li>le nombre $a$ est le coefficient directeur de cette droite</li>
+<li>le nombre $b$ est l'ordonnée à l'origine</li>
 </ul>
 </div>
 </div>
@@ -496,49 +496,36 @@ Donc $f(x) = \dfrac{1}{3}x - 1$.
 <div class="environment methode">
 <div class="environment-title">Méthode :</div>
 <div class="environment-content">
-Cas particulier : Une des valeurs données est $f(0)$.
+Pour déterminer algébriquement l'expression d'une fonction affine $f$ à partir de deux points de sa droite représentative :
 <ol>
-<li><strong>Écris</strong> la forme générale : $f(x) = ax + b$.</li>
-<li><strong>Utilise</strong> $f(0)$ pour trouver $b$ directement car $f(0) = a \times 0 + b = b$.</li>
-<li><strong>Remplace</strong> $b$ par sa valeur dans l'expression : $f(x) = ax + b$.</li>
-<li><strong>Utilise</strong> la deuxième donnée pour calculer $a$, en faisant une équation.</li>
-<li><strong>Conclus</strong> avec l'expression finale.</li>
+<li>Calcule le coefficient directeur $a$ grâce au taux d'accroissement :
+$$a = \dfrac{f(x_B) - f(x_A)}{x_B - x_A}$$</li>
+<li>Écris $f(x) = ax + b$ en remplaçant $a$ par sa valeur.</li>
+<li>Remplace $x$ et $f(x)$ par les coordonnées d'un des deux points pour trouver $b$.</li>
+<li>Conclus avec l'expression finale.</li>
 </ol>
 </div>
 </div>
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-La fonction $f$ est une fonction affine et on sait que $f(0)=3$ et $f(-2)=-1$.<br>
-Déterminer la forme algébrique de la fonction $f$. <br>
-<p>Soit $f(x)=ax+b$. Nous savons que $f(0)=3=b$.<br>
-Donc $f(x)=ax+3$. <br>
-En utilisant la donnée $f(-2)=-1$ on obtient : $a \times (-2)+3=-1$ d&rsquo;où $a \times (-2)=-1-3=-4$.<br>
-Donc $a=\dfrac{-4}{-2}=2$.<br>
-Ainsi $f(x)=2x+3$.</p>
-</div>
-</div>
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
-<div class="environment-content">
-Cas général.
-<ol>
-<li><strong>Écris</strong> la forme générale : $f(x) = ax + b$.</li>
-<li><strong>Traduis</strong> chaque donnée en équation.</li>
-<li><strong>Exprime</strong> $b$ en fonction de $a$ dans chaque équation.</li>
-<li><strong>Égalise</strong> les deux expressions de $b$ (identification).</li>
-<li><strong>Résous</strong> l'équation pour trouver $a$.</li>
-<li><strong>Calcule</strong> $b$ en remplaçant $a$ par sa valeur dans une des deux expressions.</li>
-<li><strong>Conclus</strong> avec l'expression finale.</li>
-</ol>
-</div>
-</div>
-<div class="environment exemple">
-<div class="environment-title">Exemple</div>
-<div class="environment-content">
-La fonction $f$ est une fonction affine et on sait que $f(4)=3$ et $f(-1)=-7$.<br>Déterminer la forme algébrique de la fonction $f$. <br>
-<p>Soit $f(x)=ax+b$. En utilisant les données de l&rsquo;énoncé, on obtient : <br>
-$f(4)=3=a \times 4+b$ et $f(-1)=-7=a \times (-1)+b$<br>Donc d&rsquo;une part : $b=3+a\times (-4)$ et d&rsquo;autre part : $b=-7+a\times 1$.<br>Par identification, on obtient : $3+a\times (-4)=-7+a\times 1$.<br>On en déduit que $3+7=a(4+1)$ soit $10=5a$.<br>Donc $a=\dfrac{10}{5}=2$.<br>Donc $b=3+2\times (-4)=3-8=-5$.<br>Ainsi $f(x)=2x-5$.</p>
+La fonction $f$ est une fonction affine et on sait que les points $\mathrm{E}(2\,;\,3)$ et $\mathrm{F}(4\,;\,9)$ appartiennent à sa droite représentative. Déterminer algébriquement l'expression de $f$.
+<ul>
+<li><em>1<sup>re</sup> étape : Pour déterminer le coefficient directeur $a$, on calcule le taux d'accroissement :</em>
+$$a = \dfrac{f(x_F) - f(x_E)}{x_F - x_E} = \dfrac{9 - 3}{4 - 2} = \dfrac{6}{2} = 3.$$</li>
+<li><em>2<sup>e</sup> étape : Écrire l'expression</em><br>
+On obtient donc l'expression $f(x) = 3x + b$.</li>
+<li><em>3<sup>e</sup> étape : Pour déterminer l'ordonnée à l'origine $b$, on choisit le point E ou le point F et on intègre ses coordonnées dans l'expression.</em><br>
+On choisit par exemple le point F. On a $f(x) = 3x + b$, on remplace $x$ par $4$ et $f(x)$ par $9$.<br>
+On obtient $9 = 3 \times 4 + b$, on résout alors l'équation :
+$$\begin{align*}
+9 &= 12 + b \\
+9 - 12 &= 12 + b - 12 \\
+b &= -3
+\end{align*}$$</li>
+<li><em>4<sup>e</sup> étape : Conclure</em><br>
+L'expression de la fonction affine $f$ est donc $f(x) = 3x - 3$.</li>
+</ul>
 </div>
 </div>
 
@@ -551,7 +538,7 @@ $f(4)=3=a \times 4+b$ et $f(-1)=-7=a \times (-1)+b$<br>Donc d&rsquo;une part : $
         <div class="done-actions">
         <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
           
-          <a class="btn btn-ghost" href="/mabemat/3e/chapitre-12-fonctions-affines/cours.e03c63d176d1352ff421486984049333.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          <a class="btn btn-ghost" href="/mabemat/3e/chapitre-12-fonctions-affines/Polycopie%20Eleves%20%28gliss%C3%A9s%29.4b40ed6a71311ecbc8d028cefe40ad27.pdf" target="_blank">⇣ Télécharger le polycopié</a>
           
           
           
@@ -737,7 +724,7 @@ $f(4)=3=a \times 4+b$ et $f(-1)=-7=a \times (-1)+b$<br>Donc d&rsquo;une part : $
   </script>
   <script>
      
-    const BUILD_TS = '1781455778';
+    const BUILD_TS = '1783171812';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -1,0 +1,19 @@
+---
+title: "Statistiques"
+level: "3e"
+chapter_number: 16
+weight: 16
+show_lecon: true
+has_cours: true
+has_exercices: false
+has_qcm: false
+has_brevet: true
+has_brevetImpr : false
+competences:
+  - "Calculer la moyenne et la médiane"
+  - "Analyser une série statistique"
+  - "Représenter et interpréter des données"
+categorie : Organisation et gestion de données et probabilités
+
+
+---

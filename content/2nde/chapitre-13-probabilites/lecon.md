@@ -1,0 +1,423 @@
+---
+title: "Leçon complète"
+---
+
+<h2 class="subsection-title">13.1 Vocabulaire des évènements</h2>
+
+<h3 class="subsubsection-title">13.1.1 Univers, issues et évènements</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<ul>
+<li>Une <strong>expérience</strong> est dite <strong>aléatoire</strong> si on connaît tous les résultats possibles, sans savoir à l'avance lequel se réalisera.</li>
+<li>Un résultat possible d'une expérience aléatoire s'appelle une <strong>issue</strong>.</li>
+<li>L'ensemble de toutes les issues d'une expérience aléatoire s'appelle l'<strong>univers</strong>, on le note $\Omega$.</li>
+<li>Un <strong>évènement $E$</strong> est un ensemble d'issues, c'est donc une partie (un sous-ensemble) de $\Omega$. Lorsque l'issue obtenue appartient à $E$, on dit que l'évènement $E$ est <strong>réalisé</strong>.</li>
+<li>Le <strong>cardinal</strong> d'un évènement $E$ est le nombre d'éléments qu'il contient. On le note card($E$).</li>
+</ul>
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On considère un sac contenant 8 jetons numérotés de 1 à 8. On en tire un au hasard et on regarde son numéro.
+<ol>
+<li>Donner l'univers $\Omega$ associé à cette expérience aléatoire.<br>
+Cette expérience aléatoire comporte 8 issues: chaque numéro de jeton.<br>
+$$\Omega=\{1;2;3;4;5;6;7;8\}$$</li>
+<li>Donner deux exemples d'évènements.
+<ul>
+<li>$A = \{2; 4; 6; 8\}$ ou « Obtenir un nombre pair ».</li>
+<li>$B = \{1;2 ; 3\}$ ou « Obtenir un nombre inférieur ou égal à 3 ».</li>
+</ul>
+</li>
+<li>Soit C l'évènement « Obtenir un multiple de 4 ». Écrire l'évènement C sous la forme d'un ensemble.<br>
+Les multiples de 4 entre 1 et 8 sont 4 et 8, donc $C = \{4 ; 8\}$.</li>
+<li>Décrire par une phrase l'évènement $D = \{5 ; 6 ; 7 ;8\}$.<br>
+$D$ : « Obtenir un nombre supérieur ou égal à 5 ».</li>
+<li>Que vaut card($D$) ?<br>
+L'évènement $D$ contient 4 issues, donc card($D$) = 4.</li>
+</ol>
+</div>
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<ul>
+<li>Un évènement qui se réalise toujours est $\Omega$ lui-même : on l'appelle <strong>évènement certain</strong>.</li>
+<li>Un évènement qui ne peut jamais se réaliser est appelé <strong>évènement impossible</strong>, on le note $\emptyset$.</li>
+<li>Un évènement qui ne contient qu'une seule issue est appelé <strong>évènement élémentaire</strong>.</li>
+<li>Deux évènements sont dits <strong>incompatibles</strong> lorsqu'ils ne peuvent pas être réalisés en même temps.</li>
+</ul>
+</div>
+</div>
+
+<h3 class="subsubsection-title">13.1.2 Notations ensemblistes</h3>
+
+Dans tout ce paragraphe, $A$ et $B$ sont deux évènements liés à une expérience aléatoire d'univers $\Omega$.
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content" style="display:flex; align-items:center; gap:12px;">
+<div style="flex:1;">
+<strong>L'évènement contraire</strong> de $A$ est l'ensemble des issues qui ne sont pas dans $A$. On le note $\overline{A}$ ou $\Omega\setminus A$.<br>
+On dit aussi que $\overline{A}$ est le <strong>complémentaire</strong> de $A$.
+</div>
+<img src="/mabemat/figures/2nde/chapitre-13/fig1.svg" alt="figure 1" style="width:34%; max-height:150px; height:auto;">
+</div>
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content" style="display:flex; align-items:center; gap:12px;">
+<div style="flex:1;">
+<strong>L'intersection de $A$ et de $B$</strong> est l'évènement constitué des issues qui sont à la fois dans $A$ et dans $B$. On la note $A\cap B$.
+</div>
+<img src="/mabemat/figures/2nde/chapitre-13/fig2.svg" alt="figure 2" style="width:34%; max-height:150px; height:auto;">
+</div>
+</div>
+
+<div class="remarque">
+Si $A$ et $B$ n'ont aucune issue en commun, alors $A\cap B=\emptyset$. On dit que $A$ et $B$ sont <strong>disjoints</strong> ou <strong>incompatibles</strong>.
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content" style="display:flex; align-items:center; gap:12px;">
+<div style="flex:1;">
+<strong>L'union ou la réunion</strong> de $A$ et de $B$ est l'évènement constitué des issues qui sont dans $A$ ou dans $B$ (c'est-à-dire dans $A$, dans $B$ ou dans les deux). On la note $A\cup B$.
+</div>
+<img src="/mabemat/figures/2nde/chapitre-13/fig3.svg" alt="figure 3" style="width:34%; max-height:150px; height:auto;">
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On lance un dé équilibré à $6$ faces et on observe le résultat.<br>
+Soient les évènements $G=\{1;2;3;4\}$ et $H=\{4;5\}$.
+<ul>
+<li>$G\cap H=\{4\}$</li>
+<li>$G\cup H=\{1;2;3;4;5\}$</li>
+</ul>
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Une urne contient $24$ boules indiscernables au toucher, numérotées de $1$ à $24$ et réparties en $4$ couleurs : les boules numérotées de $1$ à $6$ sont rouges, de $7$ à $12$ sont bleues, de $13$ à $18$ sont vertes, et de $19$ à $24$ sont jaunes ($6$ boules de chaque couleur). On tire au hasard une boule de cette urne.<br>
+On appelle $A$ l'évènement « le numéro tiré est un multiple de $4$ », $B$ l'évènement « la boule tirée est rouge ou bleue » et $C$ l'évènement « le numéro tiré est un multiple de $3$ ».
+<ol>
+<li>Décrire par une phrase l'évènement $A\cap C$.<br>
+$A\cap C$ est l'ensemble des issues qui sont à la fois dans $A$ et dans $C$. Ainsi $A\cap C$ est l'évènement « le numéro tiré est un multiple de $4$ et de $3$ », c'est-à-dire un multiple de $12$.</li>
+<li>Comment peut-on noter l'évènement « la boule tirée est verte ou jaune » ?<br>
+Cet évènement est l'évènement contraire de $B$. On peut le noter $\overline{B}$.</li>
+<li>Combien l'évènement $A\cup C$ contient-il d'issues ?<br>
+$A\cup C$ est l'ensemble des issues qui sont dans $A$ ou dans $C$.<br>
+Ainsi, $A\cup C$ est l'évènement « le numéro tiré est un multiple de $4$ ou de $3$ ».<br>
+Cet évènement contient donc $6+8-2=12$ issues.<br>
+(On compte tous les multiples de $4$, tous les multiples de $3$, et on retire les multiples de $12$ qui ont été comptés deux fois.)</li>
+<li>Décrire un évènement qui a une intersection vide avec l'évènement $C$.<br>
+On peut par exemple citer l'évènement « le numéro tiré est $1$ » ($1$ n'est pas un multiple de $3$).</li>
+<li>Compléter le diagramme de Venn ci-dessous avec les cardinaux des ensembles.</li>
+</ol>
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-13/fig4.svg" alt="figure 4" style="max-height:250px; max-width:100%;">
+</div>
+</div>
+</div>
+
+<h2 class="subsection-title">13.2 Probabilités sur un ensemble fini</h2>
+
+<h3 class="subsubsection-title">13.2.1 Loi de probabilité</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Définir une <strong>loi de probabilité</strong> pour une expérience aléatoire dont l'univers est $\Omega=\{\omega_1,\cdots,\omega_n\}$, c'est associer à chaque issue $\omega_i$ un nombre $p_i\in [0\,;\,1]$ tel que $p_1+\cdots+p_n=1$.<br>
+Le nombre $p_i$ est appelé <strong>probabilité</strong> de l'issue $\omega_i$.
+<table>
+<tr>
+<th>Issues</th>
+<th>$\omega_1$</th>
+<th>$\omega_2$</th>
+<th>$\omega_3$</th>
+<th>...</th>
+<th>$\omega_n$</th>
+</tr>
+<tr>
+<td>Probabilité</td>
+<td>$p_1$</td>
+<td>$p_2$</td>
+<td>$p_3$</td>
+<td>...</td>
+<td>$p_n$</td>
+</tr>
+</table>
+La <strong>probabilité</strong> d'un évènement $E$, notée $P(E)$, est la somme des probabilités des issues qui le réalisent.
+</div>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout évènement $E$ d'une expérience aléatoire dont l'univers est $\Omega$, on a :
+$$0\leq P(E)\leq 1 \quad\quad\quad\quad\quad P(\Omega)=1 \quad\quad\quad\quad\quad P(\emptyset)=0$$
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On lance un dé truqué à 4 faces numérotées de 1 à 4.<br>
+On donne la loi de portabilité suivante, quelle est la valeur manquante ?
+<table>
+<tr>
+<th>Issues</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$3$</th>
+<th>$4$</th>
+</tr>
+<tr>
+<td>Probabilité</td>
+<td>$0,3$</td>
+<td>$0,1$</td>
+<td>$0,4$</td>
+<td>$0,2$</td>
+</tr>
+</table>
+</div>
+</div>
+
+<h3 class="subsubsection-title">13.2.2 Situation d'équiprobabilité</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On dit qu'on est dans une situation <strong>d'équiprobabilité</strong> lorsque toutes les issues de $\Omega$ ont la même probabilité.
+</div>
+</div>
+
+<div class="remarque">
+Les expressions « dé équilibré », « pièce équilibrée », « boule tirée au hasard dans une urne » sont des indications de situation d'équiprobabilité. Le choix d'un modèle d'équiprobabilité est une hypothèse : elle ne se démontre pas.
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Parmi les situations suivantes, laquelle ou lesquelles peuvent être modélisées par une situation d'équiprobabilité ?
+<ol>
+<li>On choisit au hasard une famille ayant un enfant. On s'intéresse au sexe de l'entant.</li>
+<li>On choisit au hasard une ampoule neuve et on observe si elle tombe en panne dans l'heure qui suit.</li>
+<li>Un tire au nasard une boule dans une urne contenant 3 boules vertes et 2 boules rouges et on s'intéresse à la couleur de la boule tirée.</li>
+<li>On tire au hasard une boule dans une urne contenant 15 boules numérotées de 1 à 15 et on s'intéresse au numéro de la boule tirée.</li>
+</ol>
+Les situations d'équiprobabilité sont des situations ou chaque issue a autant de chance de se produire qu'une autre.<br>
+C'est le cas pour les situations 1. et 4.<br>
+Pour la situation 2, il y a plus de chance que l'ampoule ne tombe pas en panne (elle est neuve).<br>
+Pour la situation 3, on a plus de chance de tirer une boule verte qu'une rouge car il y en a plus.
+</div>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Dans une situation d'équiprobabilité, si $\Omega$ contient $n$ issues, chacune a pour probabilité $\dfrac{1}{n}$, et pour tout évènement $E$ de l'univers :
+$$P(E)=\dfrac{\text{Nombre d'issues de }E}{\text{Nombre total d'issues}}=\dfrac{\text{card}(E)}{\text{card}(\Omega)}$$
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On considère l'expérience aléatoire suivante : on fait tourner une roue de loterie équilibrée à $12$ secteurs, numérotés de $1$ à $12$.<br>
+Soit $E$ l'évènement : « on obtient un multiple de $3$ ». Quelle est la probabilité que $E$ se réalise ?<br>
+C'est une situation d'équiprobabilité (la roue est équilibrée, chaque secteur a autant de chances d'être désigné).<br>
+Il y a $12$ issues possibles. L'évènement $E$ contient les issues $3\,;6\,;9\,;12$, donc $4$ issues.<br>
+Ainsi, $P(E)=\dfrac{4}{12}=\dfrac{1}{3}$.
+</div>
+</div>
+
+<h3 class="subsubsection-title">13.2.3 Calculs de probabilités</h3>
+
+<div class="environment theoreme">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+<ul>
+<li>$P(A\cup B)=P(A)+P(B)-P(A\cap B)$.</li>
+<li>$P(\overline{A})=1-P(A)$.</li>
+</ul>
+</div>
+</div>
+
+<div class="remarque">
+Si $A$ et $B$ sont incompatibles, alors $P(A\cap B)=0$, donc $P(A\cup B)=P(A)+P(B)$.
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Dans un autre groupe, $40\,\%$ des élèves parlent l'espagnol, $30\,\%$ parlent l'italien, et $12\,\%$ parlent les deux langues.
+<ol>
+<li>Quelle est la probabilité qu'un élève choisi au hasard parle au moins une des deux langues ?<br>
+Soit $E$ : « l'élève parle espagnol » et $I$ : « l'élève parle italien ».<br>
+Parler au moins une de ces deux langues correspond à l'évènement $E\cup I$.<br>
+$$\begin{aligned}
+P(E\cup I)&=P(E)+P(I)-P(E\cap I)\\
+&=0,40+0,30-0,12\\
+&=0,58
+\end{aligned}$$
+Donc la probabilité vaut $0,58$.</li>
+<li>Quelle est la probabilité qu'un élève choisi au hasard ne parle aucune des deux langues ?<br>
+Ne parler aucune des deux langues est l'évènement contraire de $E\cup I$, donc :<br>
+$$P(\overline{E\cup I})=1-P(E\cup I)=1-0,58=0,42$$
+Donc la probabilité vaut $0,42$.</li>
+</ol>
+</div>
+</div>
+
+<h2 class="subsection-title">13.3 Probabilités conditionnelles et arbres pondérés</h2>
+
+<h3 class="subsubsection-title">13.3.1 Probabilité conditionnelle</h3>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soient $A$ et $B$ deux évènements d'un même univers $\Omega$, avec $P(A)\neq 0$.<br>
+On appelle <strong>probabilité conditionnelle</strong> de $B$ sachant $A$, notée $P_A(B)$ (qui se lit « $P$ de $B$ sachant $A$ »), le nombre défini par :
+$$P_A(B)=\dfrac{P(A\cap B)}{P(A)}$$
+</div>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+On admet que $P_A$ est elle-même une probabilité : elle suit donc les mêmes règles que $P$. ±±<br>
+En particulier :
+$$0\leq P_A(B)\leq 1 \quad\quad\quad\quad P_A(\overline{B})=1-P_A(B)$$
+On déduit de la définition la relation suivante, valable dès que $P(A)\neq 0$ et $P(B)\neq 0$ :
+$$P(A\cap B)=P(A)\times P_A(B)=P(B)\times P_B(A)$$
+</div>
+</div>
+
+<div class="remarque">
+Attention à ne pas confondre $P_A(B)$ et $P_B(A)$ : en général, $P_A(B)\neq P_B(A)$. C'est ce qu'on appelle le problème de « l'inversion des conditionnements » : savoir que $A$ est réalisé ne renseigne pas de la même façon sur $B$ que l'inverse.
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Un club sportif compte $220$ adhérents. Chaque adhérent pratique soit le badminton, soit la natation (mais pas les deux). La répartition est donnée par le tableau croisé d'effectifs ci-dessous.
+<table>
+<tr>
+<th></th>
+<th>Badminton</th>
+<th>Natation</th>
+<th>Total</th>
+</tr>
+<tr>
+<td>Femmes</td>
+<td>60</td>
+<td>80</td>
+<td>140</td>
+</tr>
+<tr>
+<td>Hommes</td>
+<td>50</td>
+<td>30</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>110</td>
+<td>110</td>
+<td>220</td>
+</tr>
+</table>
+On choisit un adhérent au hasard dans ce club, et on note $F$ l'évènement « l'adhérent est une femme » et $B$ l'évènement « l'adhérent pratique le badminton ».
+<ol>
+<li>Calculer $P(F)$, $P(B)$ et $P(F\cap B)$.<br>
+On est dans une situation d'équiprobabilité (tirage au sort dans le club).<br>
+$$P(F)=\dfrac{140}{220}=\dfrac{7}{11} \qquad P(B)=\dfrac{110}{220}=\dfrac{1}{2} \qquad P(F\cap B)=\dfrac{60}{220}=\dfrac{3}{11}$$</li>
+<li>Comment se note la probabilité que l'adhérent pratique le badminton, sachant que c'est une femme ?<br>
+Calculer cette probabilité.<br>
+Cette probabilité se note $P_F(B)$.<br>
+$$P_F(B)=\dfrac{P(F\cap B)}{P(F)}=\dfrac{60}{140}=\dfrac{\dfrac{3}{11}}{\dfrac{7}{11}}=\dfrac{3}{7}\approx 0,429$$</li>
+<li>Calculer $P_B(F)$ et comparer avec $P_F(B)$.<br>
+$$P_B(F)=\dfrac{P(F\cap B)}{P(B)}==\dfrac{\dfrac{3}{11}}{\dfrac{1}{2}}=\dfrac{6}{11}\approx 0,545$$
+On constate que $P_F(B)\approx 0,429$ et $P_B(F)\approx 0,545$ sont bien différentes : la probabilité qu'une femme pratique le badminton n'est pas la même chose que la probabilité qu'un adhérent qui pratique le badminton soit une femme.</li>
+</ol>
+</div>
+</div>
+
+<h3 class="subsubsection-title">13.3.2 Arbres pondérés</h3>
+
+Lorsqu'on réalise une expérience aléatoire mettant en jeu deux événements $A$ et $B$ de probabilités non nulles, on peut modéliser la situation par un arbre pondéré (ou arbre de probabilité) à deux niveaux.
+
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-13/fig5.svg" alt="figure 5" style="max-height:220px; max-width:100%;">
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On appelle chemin une succession de branches, partant de l'origine jusqu'à une extrémité.<br>
+Un nœud est l'intersection entre plusieurs branches.
+</div>
+</div>
+
+<div class="remarque">
+<ul>
+<li>Les probabilités conditionnelles se lisent sur les branches de second niveau : on y indique la probabilité de l'événement à l'extrémité de la branche conditionnée par l'événement au nœud de la branche (ici A ou A).</li>
+<li>La somme des probabilités des branches issues d'un même nœud est toujours égale à 1.</li>
+</ul>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+La probabilité d'un chemin complet est égale au produit des probabilités des branches qui le composent.
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Un test de dépistage d'une maladie est utilisé dans une population où $3\,\%$ des personnes sont porteuses de la maladie (évènement $M$). Le test est positif (évènement $T$) pour $98\,\%$ des personnes malades, et pour $2\,\%$ des personnes non malades (on parle alors de « faux positif »).<br>
+On interroge au hasard une personne de cette population.
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
+<div>
+<ol>
+<li>À partir de l'énoncé, donner sans calcul les probabilités $P(M)$, $P_M(T)$ et $P_{\overline{M}}(T)$.<br>
+$P(M)=0,03$ ; $P_M(T)=0,98$ ; $P_{\overline M}(T)=0,02$.</li>
+<li>Compléter l'arbre pondéré ci-contre.
+<div style="text-align:center;">
+<img src="/mabemat/figures/2nde/chapitre-13/fig6.svg" alt="figure 6" style="max-height:200px; max-width:100%;">
+</div>
+</li>
+</ol>
+</div>
+<div>
+<ol start="3">
+<li>Calculer $P(M\cap T)$ et $P(\overline{M}\cap \overline{T})$, et interpréter ces résultats.<br>
+$$\begin{aligned}
+P(M\cap T)&=P(M)\times P_M(T)\\
+&=0,03\times 0,98\\
+&=0,0294
+\end{aligned}$$
+$$\begin{aligned}
+P(\overline M\cap \overline T)&=P(\overline M)\times P_{\overline M}(\overline T)\\
+&=0,97\times 0,98\\
+&=0,9506
+\end{aligned}$$
+Une personne prise au hasard a environ $2,94\,\%$ de chances d'être malade et d'être dépistée (vrai positif), et environ $95,06\,\%$ de chances de ne pas être malade et d'avoir un test négatif (vrai négatif).</li>
+</ol>
+</div>
+</div>
+</div>
+</div>

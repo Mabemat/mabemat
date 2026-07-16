@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercices type brevet - Transformations du plan — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/chapitre-15-transformations-du-plan/">Transformations du plan</a>
+  <span class="sep">/</span>
+  
+  <span>Exercices type brevet</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  
+  <div class="eyebrow">Chapitre 15 · Exercices type brevet</div>
+  
+  <h1>Transformations du plan</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>DNB</span>
+    <span><span class="dot"></span>Corrections détaillées</span>
+    
+    
+    <a href="/mabemat/3e/chapitre-15-transformations-du-plan-brevet/brevet15.pdf" target="_blank" class="br-print-link"><span class="dot"></span>Exercices imprimables</a>
+    
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2022 Métropole
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro">La figure ci-dessous est un pavage constitué de cerfs-volants. <br>
+
+Les triangles SLP et PLA ainsi formés sont des triangles équilatéraux.
+
+<img src="/mabemat/figures/3e/chapitre-14/brevet1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="partie-header">Partie A</div>
+
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Déterminer la mesure de l'angle $\widehat{\text{PSL}}$.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Tous les angles d'un triangle équilatéral ont pour mesure $\dfrac{180}{3} = 60°$C.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Quelle est l'image du cerf-volant 2 par la symétrie d'axe $(PL)$? On ne demande pas de justification.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">L'image du cerf-volant 2 par la symétrie d'axe (PL) est le cerf-volant 5.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Déterminer par quelle transformation du plan le cerf-volant 1 devient le cerf-volant 6 ? On ne demande pas de justification.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le cerf-volant 1 devient le cerf-volant 6  par la symétrie de centre J.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="partie-header">Partie B</div>
+
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Dans cette partie, on se propose de construire le cerf-volant ci-dessous.
+<img src="/mabemat/figures/3e/chapitre-14/brevet2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+
+
+Essya, Nicolas et Tiago souhaitent construire cette figure à l'aide d'un logiciel de programmation. <br>
+
+Ils écrivent tous un programme « Cerf-volant  » différent.
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Essya</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Nicolas</td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52">Programme de Tyago</td>
+</tr>
+<tr>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-14/scratch1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-14/scratch2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></td>
+<td style="text-align:left;padding:4px 10px;border-top:1px solid #8B3C52;border-bottom:1px solid #8B3C52;border-left:1px solid #8B3C52;border-right:1px solid #8B3C52"><img src="/mabemat/figures/3e/chapitre-14/scratch3.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></td>
+</tr>
+</table>
+
+Tracer le programme « Cerf-Volant  » de Nicolas, en prenant $1$&nbsp;cm pour $100$ pas.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le programme de Nicolas permet de dessiner un triangle équilatéral de côté 300 pas.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Un élève a écrit le script correct. Donner le nom de cet élève en justifiant la réponse.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le programme de Tyago ne convient pas car après avoir dessiné un petit côté et tourner de $60°$ on avance de 300 pas au lieu de 173 pas à nouveau.<br>
+
+Si on part du petit côté supérieur il faut ensuite tourner à gauche de $90°$ et non de $60°$.<br>
+
+Ce n'est pas le programme de Nicolas : il ne reste plus que le programme d'Essya.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2022 Polynésie
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro">On utilise un logiciel de programmation.  <br>
+
+On rappelle que « s'orienter à $0°$  » signifie qu'on oriente le stylo vers le haut. <br>
+
+On considère les deux scripts suivants: <br>
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+  <tr>
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      Script 1
+    </td>
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      Script 2
+    </td>
+  </tr>
+
+  <tr>
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      <img src="/mabemat/figures/3e/chapitre-14/2-1.svg"
+           alt="figure 1"
+           style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
+    </td>
+
+    <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+      <img src="/mabemat/figures/3e/chapitre-14/2-2.svg"
+           alt="figure 1"
+           style="display:block; margin:0 auto; max-height:400px; max-width:100%;">
+    </td>
+  </tr>
+</table></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        On exécute le script 1 ci-dessus. <br>
+
+Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie. <br>
+<div style="display:flex; align-items:center;">
+  <img src="/mabemat/figures/3e/chapitre-14/2-3.svg"
+       alt="figure 1"
+       style="max-height:300px; max-width:100%; margin-right:10px;">
+  <div>
+    Chaque côté de carreau mesure 20 pixels. <br>
+    La position de départ du stylo est indiquée sur la figure ci‑contre.
+  </div>
+</div>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">On exécute le script 1 ci-dessus. <br>
+
+Représenter le chemin parcouru par le stylo sur le document à rendre avec la copie. <br>
+
+Le tracé est en rouge. <br>
+<img src="/mabemat/figures/3e/chapitre-14/2c-1.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;"></div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Quel dessin parmi les trois ci-dessous correspond au script 2 ?  <br>
+
+On expliquera pourquoi les deux autres dessins ne correspondent pas au script 2. <br>
+
+Chaque côté de carreau mesure 20 pixels. <br>
+
+<table style="border-collapse:collapse;margin:0.6rem auto;font-size:0.95em;">
+<tr>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <strong>Dessin 1</strong>
+  </td>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <strong>Dessin 2</strong>
+  </td>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <strong>Dessin 3</strong>
+  </td>
+</tr>
+
+<tr>
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <img src="/mabemat/figures/3e/chapitre-14/2-4.svg"
+         alt="figure 1"
+         style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+  </td>
+
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <img src="/mabemat/figures/3e/chapitre-14/2-5.svg"
+         alt="figure 1"
+         style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+  </td>
+
+  <td style="text-align:left;padding:4px 10px;border:1px solid transparent;">
+    <img src="/mabemat/figures/3e/chapitre-14/2-6.svg"
+         alt="figure 1"
+         style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+  </td>
+</tr>
+</table>
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Le dessin 1  n'est  pas correct car après avoir avancé deux fois de 20 on doit avancer de 40. <br>
+
+Le dessin 3  n'est  pas correct car on ne sedirige pas au départ vers le haut.
+ <br>
+Il reste donc le dessin 2 seul correct. <br></div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        On souhaite maintenant obtenir le motif représenté sur le dessin 4 :  <br>
+
+<div style="display:flex; align-items:center; gap:1rem;">
+
+<img src="/mabemat/figures/3e/chapitre-14/2-7.svg";alt="figure 1";style="max-height:200px;">
+<img src="/mabemat/figures/3e/chapitre-14/2-8.svg";alt="figure 2";style="max-height:300px;">
+         
+</div>
+
+Compléter sans justifier les trois cases du script 3 donné en document à rendre avec la copie, permettant d'obtenir le dessin 4.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Les compléments sont en rouge : <br>
+
+<img src="/mabemat/figures/3e/chapitre-14/2c-2.svg";alt="figure 2";style="max-height:300px;"></div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        À partir du motif représenté sur le dessin 4, on peut obtenir le pavage ci-dessous : <br>
+<img src="/mabemat/figures/3e/chapitre-14/2-9.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+
+Répondre aux questions suivantes sur votre copie en indiquant le numéro du motif qui convient (on ne demande pas de justifier la réponse) :
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Quelle est l'image du motif 1 par la translation qui transforme le point B en E ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Le motif 5.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Quelle est l'image du motif 1 par la symétrie de centre B ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Le motif 9.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">c.</span>
+            <div>
+              <div class="sub-enonce">Quelle est l'image du motif 16 par la symétrie de centre G ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Le motif 12.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">d.</span>
+            <div>
+              <div class="sub-enonce">Quelle est l'image du motif 2 par la symétrie d'axe (CG) ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Le motif 5.</div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Juin 2021 Amérique du Nord
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><div style="display:flex; align-items:flex-start; gap:1rem; width:auto; margin:0 auto;">
+
+    <div style="flex:1;">
+        <em>Dans cet exercice, aucune justification n'est demandée.</em><br>
+
+        On a construit un carré ABCD.<br>
+
+        On a construit le point O sur la droite (DB), à
+        l'extérieur du segment [DB] et tel que : OB = AB.<br>
+
+        Le point H est le symétrique de D par rapport à O.<br>
+
+        On a obtenu la figure ci-contre en utilisant plusieurs
+        fois la même rotation de centre O et d'angle 45°.<br>
+
+        La figure obtenue est symétrique par rapport à l'axe
+        (DB) et par rapport au point O.
+    </div>
+
+    <img src="/mabemat/figures/3e/chapitre-14/3-1.svg"
+         alt="figure 1"
+         style="max-height:250px; margin-left:1rem;">
+</div></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Donner deux carrés différents, images l'un de l'autre par la symétrie axiale d'axe (DB).
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Les carrés 8 et 2  les carrés 6 et 4 les carrés 7 et 3 sont symétriques autour de l'axe (DB).</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Le carré  3 est-il l'image du carré  8 par la symétrie centrale de centre O ?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">Les carrés 8 et 3 ne sont pas symétriques autour de O (leurs centres ne sont pas alignés avec O).</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        On considère la rotation de centre O qui transforme le carré 1 en le carré 2. <br>
+		
+Quelle est l'image du carré 8 par cette rotation ?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">L'image du carré 8 par la rotation de centre O et d'angle $45^{\circ}$ est le carré 1.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        On considère la rotation de centre O qui transforme le carré 2 en le carré 5.<br>
+		
+Préciser l'image du segment [EF] par cette rotation.
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">La rotation est la rotation de centre O et d'angle $135^{\circ}$. E donne H et F donne I, donc l'image de [EF] est le segment [HI].</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2020 Antilles - Guyane
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><div style="display:flex; align-items:flex-start; gap:1rem; width:auto; margin:0 auto;">
+
+<div style="flex:1;">
+Dans cet exercice, le carré ABCD n'est pas représenté en vraie grandeur. <br>
+
+Aucune justification n'est attendue pour les questions 1. et 2. 
+<br> 
+On attend des réponses justifiées pour la question 3.
+    </div>
+
+    <img src="/mabemat/figures/3e/chapitre-14/4-1.svg"
+         alt="figure 1"
+         style="max-height:250px; margin-left:1rem;">
+</div></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        On considère le carré ABCD de centre O représenté ci-contre, partagé en quatre polygones superposables, numérotés 1, 2, 3, et 4.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Quelle est l'image du polygone 1 par la symétrie centrale de centre O ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">L'image du polygone 1 par la symétrie centrale de centre O est le polygone 3.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Quelle est l'image du polygone 4 par la rotation de centre O qui transforme le polygone 1 en le polygone 2 ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">L'image du polygone 4 par la rotation de centre O qui transforme le polygone 1 en le polygone 2 est le polygone 1.</div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        La figure ci-dessous est une partie de pavage dont un motif de base est le carré ABCD de la question 1.
+<img src="/mabemat/figures/3e/chapitre-14/4-2.svg" alt="figure 1" style="display:block; margin:0 auto; max-height:200px; max-width:100%;">
+
+Quelle transformation partant du polygone 1 permet d'obtenir le polygone 5 ?
+
+        
+        <button class="corr-btn" onclick="toggleCorr(this)">
+          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+        </button>
+        <div class="corr-box">On passe du polygone 1 au  polygone 5 par la translation qui transforme $A$ en $B$.</div>
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        On souhaite faire imprimer ces motifs sur un tissu rectangulaire de longueur $315$ cm et de largeur $270$ cm. <br>
+
+On souhaite que le tissu soit entièrement recouvert par les carrés identiques à ABCD, sans découpe et de sorte que le côté du carré mesure un nombre entier de centimètres.
+
+        
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Montrer qu'on peut choisir des carrés de 9&nbsp;cm de côté.</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">Il faut que la longueur côté du carré divise 315 et aussi 270.<br>
+
+Or $315 = 5 \times 63 = 5 \times 7 \times 9 = 3^2 \times 5 \times 7$ et $270 = 27 \times 10 = 3^3 \times 2 \times 5 = 2 \times 3^3 \times 5$.<br>
+
+On constate que $3^2 = 9$ est un diviseur commun à 315 et à 270 : on peut donc imprimer des carrés de côté 9&nbsp;cm.</div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Dans ce cas, combien de carrés de 9&nbsp;cm de côté seront imprimés sur le tissu ?</div>
+              
+              <button class="corr-btn" onclick="toggleCorr(this)">
+                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
+              </button>
+              <div class="corr-box">On a $315 = 9 \times 35$ : il rentre 35 carrés dans la longueur. <br>
+
+$270 = 9 \times 30$ : il rentre 30 carrés dans la largeur.<br>
+
+Il y a donc $35 \times 30 = 1\,050$ motifs imprimés sur le tissu.</div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+</div>
+
+
+<div class="br-adjacent fade-up">
+  <a class="adj-link" href="/mabemat/3e/chapitre-15-transformations-du-plan/">← Retour au chapitre</a>
+</div>
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1784224219';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>
