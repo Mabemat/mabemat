@@ -1,8 +1,8 @@
 ---
 title: "Généralités sur les fonctions"
 level: "3e"
-chapter_number: 4
-weight: 4
+chapter_number: 5
+weight: 5
 show_lecon: true
 has_cours: true
 has_exercices: false

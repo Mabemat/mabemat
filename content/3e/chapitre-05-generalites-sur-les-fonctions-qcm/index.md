@@ -2,7 +2,7 @@
 title: "QCM — Généralités sur les fonctions"
 layout: "qcm"
 level: "3e"
-chapter: "chapitre-04-generalites-sur-les-fonctions"
+chapter: "chapitre-05-generalites-sur-les-fonctions"
 ---
 
 {{< qcm question="Une fonction est une relation qui à chaque valeur $x$ associe :" correct="2" >}}

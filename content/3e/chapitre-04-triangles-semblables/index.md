@@ -1,8 +1,8 @@
 ---
 title: "Triangles semblables"
 level: "3e"
-chapter_number: 5
-weight: 5
+chapter_number: 4
+weight: 4
 show_lecon: true
 has_cours: true
 has_exercices: false

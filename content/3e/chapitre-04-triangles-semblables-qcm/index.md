@@ -2,7 +2,7 @@
 title: "QCM — Triangles semblables"
 layout: "qcm"
 level: "3e"
-chapter: "chapitre-05-triangles-semblables"
+chapter: "chapitre-04-triangles-semblables"
 ---
 
 {{< qcm question="Deux triangles sont semblables si :" correct="1" >}}

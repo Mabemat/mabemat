@@ -1,5 +1,5 @@
 ---
-title: "Racines carrées et valeurs absolues"
+title: "Puissances et racines carrées"
 level: "2nde"
 chapter_number: 9
 weight: 9
