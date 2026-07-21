@@ -30,9 +30,8 @@ Soient $a$, $b$ et $k$ trois réels :
 Développer les expressions suivantes :
 <ul>
 <li>$A = -3(-3a+1)$<br>$\phantom{A} = -3\times(-3a)+(-3)\times 1$<br>$\phantom{A} = {\color{#EA8556}9a-3}$</li>
-<li>$B = (3z-6)\times 9z$<br>$\phantom{B} = 3z\times 9z+(-6)\times 9z$<br>$\phantom{B} = {\color{#EA8556}27z^2-54z}$</li>
-<li>$C = -11(-4x-10)-(-10-6x)$<br>$\phantom{C} = 44x+110-(-10-6x)$<br>$\phantom{C} = 44x+110+10+6x$<br>$\phantom{C} = {\color{#EA8556}50x+120}$</li>
-<li>$D = 7x+10(7x+8)$<br>$\phantom{D} = 7x+70x+80$<br>$\phantom{D} = {\color{#EA8556}77x+80}$</li>
+<li>$B = -11(-4x-10)-(-10-6x)$<br>$\phantom{B} = 44x+110-(-10-6x)$<br>$\phantom{B} = 44x+110+10+6x$<br>$\phantom{B} = {\color{#EA8556}50x+120}$</li>
+<li>$C = 7x+10(7x+8)$<br>$\phantom{C} = 7x+70x+80$<br>$\phantom{C} = {\color{#EA8556}77x+80}$</li>
 </ul>
 </div>
 </div>
@@ -42,10 +41,9 @@ Développer les expressions suivantes :
 <div class="environment-content">
 Factoriser, au maximum, les expressions suivantes :
 <ul>
-<li>$A = 2a+8n$<br>$\phantom{A} = {\color{#EA8556}2}a+{\color{#EA8556}2}\times 4n$<br>$\phantom{A} = {\color{#EA8556}2}(a+4n)$</li>
-<li>$B = -35y-42y^2$<br>$\phantom{B} = {\color{#EA8556}7y}\times(-5)-{\color{#EA8556}7y}\times 6y$<br>$\phantom{B} = {\color{#EA8556}7y}(-5-6y)$</li>
-<li>$C = {\color{#8A9CC1}x}{\color{#EA8556}(2x+1)}-{\color{#8A9CC1}2}{\color{#EA8556}(2x+1)}$<br>$\phantom{C} = {\color{#EA8556}(2x+1)}{\color{#8A9CC1}(x-2)}$</li>
-<li>$D = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2)}-{\color{#EA8556}(3x+3)}{\color{#8A9CC1}(5x-3)}$<br>$\phantom{D} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2-(5x-3))}$<br>$\phantom{D} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2-5x+3)}$<br>$\phantom{D} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(-x+1)}$</li>
+<li>$A = -35y-42y^2$<br>$\phantom{A} = {\color{#EA8556}7y}\times(-5)-{\color{#EA8556}7y}\times 6y$<br>$\phantom{A} = {\color{#EA8556}7y}(-5-6y)$</li>
+<li>$B = {\color{#8A9CC1}x}{\color{#EA8556}(2x+1)}-{\color{#8A9CC1}2}{\color{#EA8556}(2x+1)}$<br>$\phantom{B} = {\color{#EA8556}(2x+1)}{\color{#8A9CC1}(x-2)}$</li>
+<li>$C = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2)}-{\color{#EA8556}(3x+3)}{\color{#8A9CC1}(5x-3)}$<br>$\phantom{C} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2-(5x-3))}$<br>$\phantom{C} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(4x-2-5x+3)}$<br>$\phantom{C} = {\color{#EA8556}(3x+3)}{\color{#8A9CC1}(-x+1)}$</li>
 </ul>
 </div>
 </div>
@@ -157,7 +155,7 @@ Pour écrire la somme (ou la différence) de deux expressions fractionnaires sou
 Réduire les expressions suivantes sous la forme d'un unique quotient :
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:start;">
 <div>
-Pour tout $x\in\mathbb{R}$, écrire l'expression sous la forme d'un quotient :
+Pour tout $x\in\mathbb{R}^*$, écrire l'expression sous la forme d'un quotient :
 $$\begin{align*}
 3x+\dfrac{1}{x} &= \dfrac{3x^2}{x}+\dfrac{1}{x}\\
 &= \dfrac{3x^2+1}{x}
