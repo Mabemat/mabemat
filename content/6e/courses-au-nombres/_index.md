@@ -5,67 +5,67 @@ layout: "courses"
 courses:
   - num: 1
     date: "2026-09-07"
-    has_correction: true
+    has_correction: false
   - num: 2
     date: "2026-09-14"
-    has_correction: true
+    has_correction: false
   - num: 3
     date: "2026-09-21"
-    has_correction: true
+    has_correction: false
   - num: 4
     date: "2026-09-28"
-    has_correction: true
+    has_correction: false
   - num: 5
     date: "2026-10-05"
-    has_correction: true
+    has_correction: false
   - num: 6
     date: "2026-11-02"     # +4 sem (oct 19 = Toussaint)
-    has_correction: true
+    has_correction: false
   - num: 7
     date: "2026-11-16"
-    has_correction: true
+    has_correction: false
   - num: 8
     date: "2026-11-30"
-    has_correction: true
+    has_correction: false
   - num: 9
     date: "2026-12-14"
-    has_correction: true
+    has_correction: false
   - num: 10
     date: "2027-01-04"     # +3 sem (déc 28 = Noël)
-    has_correction: true
+    has_correction: false
   - num: 11
     date: "2027-01-18"
-    has_correction: true
+    has_correction: false
   - num: 12
     date: "2027-02-01"
-    has_correction: true
+    has_correction: false
   - num: 13
     date: "2027-02-22"     # +3 sem (fév 15 = Hiver)
-    has_correction: true
+    has_correction: false
   - num: 14
     date: "2027-03-08"
-    has_correction: true
+    has_correction: false
   - num: 15
     date: "2027-03-22"
-    has_correction: true
+    has_correction: false
   - num: 16
     date: "2027-04-19"     # +4 sem (avr 5 = Printemps)
-    has_correction: true
+    has_correction: false
   - num: 17
     date: "2027-05-03"
-    has_correction: true
+    has_correction: false
   - num: 18
     date: "2027-05-24"     # +3 sem (mai 17 = Pentecôte)
-    has_correction: true
+    has_correction: false
   - num: 19
     date: "2027-06-07"
-    has_correction: true
+    has_correction: false
   - num: 20
     date: "2027-06-21"
-    has_correction: true
+    has_correction: false
   - num: 21
     date: "2027-06-28"
-    has_correction: true
+    has_correction: false
 
 ---
 
