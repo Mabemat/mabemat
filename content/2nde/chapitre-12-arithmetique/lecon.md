@@ -2,7 +2,7 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">10.1 Rappels : nombres entiers</h2>
+<h2 class="subsection-title">12.1 Rappels : nombres entiers</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -18,7 +18,7 @@ négatifs ou nul.
 Tout nombre entier naturel est un entier relatif. <br>On a $\mathbb{N}\subset\mathbb{Z}$.
 </div><img src="/mabemat/figures/2nde/chapitre-10/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(30%); max-height:100px; max-width:100%;">
 
-<h2 class="subsection-title">10.2 Multiples et diviseurs</h2>
+<h2 class="subsection-title">12.2 Multiples et diviseurs</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -51,6 +51,7 @@ produit $n\times m$ sont aussi des multiples de $a$.
 Démonstration :
 <div class="environment-content">
 Pour la somme : $n$ et $m$ sont des multiples de $a$. Donc il existe $k$ et $q$ des entiers relatifs tel que $m=k\times a$ et $n=q\times a$. <br>Alors $m+n=k\times a+q\times a=(k+q)\times a$. Or, $k+q\in \mathbb{Z}$, donc $m+n$ est un multiple de $a$.
+</div>
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
@@ -74,8 +75,9 @@ Donc $10^p = 3a$ et donc $10^p$ est divisible par $3$.
 Un nombre est divisible par $3$ lorsque la somme de ses chiffres est divisible par $3$.
 Or, ceci est impossible car la somme des chiffres de $10^p$ est $1$, et $1$ n'est pas divisible par $3$.<br>
 Donc l'hypothèse posée au départ est fausse et donc $\dfrac{1}{3}$ n'est pas décimal.
+</div>
 
-<h2 class="subsection-title">10.3 Nombres pairs et impairs</h2>
+<h2 class="subsection-title">12.3 Nombres pairs et impairs</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -127,6 +129,7 @@ Démonstration :
 <div class="environment-content">
 Pour le carré d'un nombre impair :<br>
 $n$ est un nombre impair, donc il existe $k\in \mathbb{Z}$ tel que $n=2k+1$. <br>Alors $n^2=(2k+1)^2=(2k)^2+2\times 2k\times 1 +1^2=4k^2+4k+1=2\times (2k^2+2k)+1=2K+1$, avec $K=2k^2+2k \in \mathbb{Z}$. <br>Donc $n^2$ est impair.
+</div>
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
@@ -138,12 +141,12 @@ $n$ est un nombre impair, donc il existe $k\in \mathbb{Z}$ tel que $n=2k+1$. <br
 </div>
 </div>
 
-<h2 class="subsection-title">10.4 Nombres premiers</h2>
+<h2 class="subsection-title">12.4 Nombres premiers</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
-Un nombre entier naturel est premier s'il possède que deux diviseurs positifs distincts qui sont $1$ et lui-même.
+Un nombre entier naturel est premier s'il ne possède que deux diviseurs positifs distincts qui sont $1$ et lui-même.
 </div>
 </div>
 

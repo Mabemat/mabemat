@@ -2,7 +2,9 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">9.1 Calculer avec les puissances</h2>
+<h2 class="subsection-title">9.1 Puissances</h2>
+
+<h3 class="subsubsection-title">9.1.1 Calculer avec les puissances</h3>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -176,7 +178,7 @@ $$
 </div>
 </div>
 
-<h2 class="subsection-title">9.2 Notation scientifique</h2>
+<h3 class="subsubsection-title">9.1.2 Notation scientifique</h3>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -200,7 +202,9 @@ La notation scientifique d'un nombre décimal positif est l'écriture de ce nomb
 </div>
 </div>
 
-<h2 class="subsection-title">9.3 Calculs sur les racines carrées</h2>
+<h2 class="subsection-title">9.2 Racines carrées</h2>
+
+<h3 class="subsubsection-title">9.2.1 Calculs sur les racines carrées</h3>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -375,7 +379,7 @@ $$
 Or, $\sqrt{a}>0$ et $\sqrt{b}>0$ car $a$ et $b$ sont strictement positifs. Donc, $-2\sqrt{a}\sqrt{b}<0$.<br>
 Finalement, $\left(\sqrt{a+b}\right)^2 -\left(\sqrt{a} +\sqrt{b}\right)^2 <0$ et donc $\sqrt{a+b} < \sqrt{a} +\sqrt{b}$.
 
-<h2 class="subsection-title">9.4 Équations et inéquations</h2>
+<h3 class="subsubsection-title">9.2.2 Équations et inéquations</h3>
 
 <div style="display:flex; gap:12px; align-items:center;">
 <div style="flex:7 1 0; min-width:0;">

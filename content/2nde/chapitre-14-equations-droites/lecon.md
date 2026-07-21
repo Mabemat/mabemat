@@ -2,7 +2,7 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">13.1 Équation cartésienne d'une droite</h2>
+<h2 class="subsection-title">14.1 Équation cartésienne d'une droite</h2>
 
 Dans tout le chapitre, le plan est muni d'un repère orthonormé $(O;\overrightarrow{i},\overrightarrow{j})$.
 
@@ -60,9 +60,9 @@ L'ensemble des points $M(x;y)$ tels que $2x-3y+1=0$ est une droite $d$ de vecteu
 <li>Une droite d'équation $x=k$ est une droite parallèle à l'axe des ordonnées. <br>Un de ses vecteurs directeurs est $\overrightarrow{j}\begin{pmatrix} 0 \\ 1 \end{pmatrix}$.</li>
 </ul>
 
-<h2 class="subsection-title">13.2 Équation réduite d'une droite</h2>
+<h2 class="subsection-title">14.2 Équation réduite d'une droite</h2>
 
-<h3 class="subsubsection-title">13.2.1 Rappels</h3>
+<h3 class="subsubsection-title">14.2.1 Rappels</h3>
 <div style="display:flex; gap:12px; align-items:center;">
 <div style="flex:7 1 0; min-width:0;">
 Soit $d$ une droite d'équation réduite $y=mx+p$. <br>
@@ -87,7 +87,7 @@ Au final, $(AB) : y = {\boldsymbol{-\dfrac{9}{4}x+\dfrac{43}{4}}}$.
 </div>
 </div>
 
-<h3 class="subsubsection-title">13.2.2 Lien entre l'équation cartésienne et l'équation réduite</h3>
+<h3 class="subsubsection-title">14.2.2 Lien entre l'équation cartésienne et l'équation réduite</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthode - Passer d'une équation à l'autre.</div>
@@ -111,7 +111,7 @@ On a $d$ qui s'écrit aussi $ax+by+c=0$ avec $b\neq 0$ et $m=\dfrac{-a}{b}$ et $
 Or, $\overrightarrow{v}\begin{pmatrix} -b \\ a \end{pmatrix}$ est un vecteur directeur de la droite $d$. <br>
 Comme $b\neq 0$, $\overrightarrow{u}=\dfrac{-1}{b}\times\overrightarrow{v}\begin{pmatrix} 1 \\ \dfrac{-a}{b} \end{pmatrix}=\begin{pmatrix} 1 \\ m \end{pmatrix}$ est aussi un vecteur directeur de la droite $d$.
 
-<h2 class="subsection-title">13.3 Systèmes de deux équations linéaires à deux inconnues</h2>
+<h2 class="subsection-title">14.3 Systèmes de deux équations linéaires à deux inconnues</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -162,7 +162,7 @@ On peut aussi soustraire les deux équations termes à termes en multipliant par
 </div>
 </div>
 
-<h2 class="subsection-title">13.4 Parallélisme et intersection de deux droites</h2>
+<h2 class="subsection-title">14.4 Parallélisme et intersection de deux droites</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>

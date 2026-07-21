@@ -2,7 +2,7 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">9.1 Repère du plan</h2>
+<h2 class="subsection-title">10.1 Repère du plan</h2>
 <div style="display:flex; gap:12px; align-items:center;">
 <div style="flex:7 1 0; min-width:0;">
 Trois points distincts deux à deux $O$, $I$ et $J$ du plan forment un repère, que l'on peut noter $(O,I,J)$.<br>
@@ -27,7 +27,7 @@ Si on pose $\overrightarrow{i}=\overrightarrow{OI}$ et $\overrightarrow{j}=\over
 <img src="/mabemat/figures/2nde/chapitre-09/fig2.svg" alt="figure 2" style="max-height:300px; max-width:100%;">
 </div>
 
-<h3 class="subsubsection-title">9.1.1 Coordonnées d'un vecteur</h3>
+<h3 class="subsubsection-title">10.1.1 Coordonnées d'un vecteur</h3>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -117,9 +117,9 @@ Soit $x_D=-1$ et $y_D=8$.
 </div>
 </div>
 
-<h2 class="subsection-title">9.2 Colinéarité de deux vecteurs</h2>
+<h2 class="subsection-title">10.2 Colinéarité de deux vecteurs</h2>
 
-<h3 class="subsubsection-title">9.2.1 Définitions et premières propriétés</h3>
+<h3 class="subsubsection-title">10.2.1 Définitions et premières propriétés</h3>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -144,7 +144,7 @@ ${\color{#E6B459}{\bullet}}$ Par convention, le vecteur $\overrightarrow{0}$ est
 ${\color{#E6B459}{\bullet}}$ Deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont <strong>colinéaires</strong> lorsqu'ils ont la <strong>même direction</strong>.
 </div>
 
-<h3 class="subsubsection-title">9.2.2 Critère de colinéarité</h3>
+<h3 class="subsubsection-title">10.2.2 Critère de colinéarité</h3>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -221,7 +221,7 @@ Nous pouvons trouver le réel $k$ tel que $\overrightarrow{u}=k\overrightarrow{v
 </div>
 </div>
 
-<h3 class="subsubsection-title">9.2.3 Applications</h3>
+<h3 class="subsubsection-title">10.2.3 Applications</h3>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -257,7 +257,7 @@ $\det(\overrightarrow{BC};\overrightarrow{BE})=\begin{vmatrix} 8 & 12 \\ -4 & -6
 </div>
 </div>
 
-<h2 class="subsection-title">9.3 Calculs dans un repère orthonormé</h2>
+<h2 class="subsection-title">10.3 Calculs dans un repère orthonormé</h2>
 
 Pour toute cette partie, on se place dans un repère <strong>orthonormé</strong> $(O,\overrightarrow{i},\overrightarrow{j})$ du plan.
 

@@ -2,7 +2,7 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">4.1 Définition et représentation graphique</h2>
+<h2 class="subsection-title">8.1 Définition et représentation graphique</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -34,7 +34,7 @@ Pour chacune des fonctions affines suivantes, déterminer $a$ et $b$ puis repré
 </div>
 </div>
 
-<h2 class="subsection-title">4.2 Sens de variation</h2>
+<h2 class="subsection-title">8.2 Sens de variation</h2>
 
 <div class="environment propriete">
 <div class="environment-title">Propriétés :</div>
@@ -92,9 +92,9 @@ On en conclut que $3\sqrt{3} - 4 < 3\sqrt{7} - 4$.</li>
 </div>
 </div>
 
-<h2 class="subsection-title">4.3 Signe de $f:x\mapsto ax+b$</h2>
+<h2 class="subsection-title">8.3 Signe de $f:x\mapsto ax+b$</h2>
 
-<h3 class="subsubsection-title">4.3.1 Tableau de signes</h3>
+<h3 class="subsubsection-title">8.3.1 Tableau de signes</h3>
 
 Suivant le signe du coefficient directeur $a$, on obtient les tableaux de signes suivants : <br>
 <div style="text-align:center;">
@@ -111,7 +111,7 @@ Tableau de signes des fonctions définies sur $\R$ par $f(x)=2x+4$ et $g(x)=-x+3
 </div>
 </div>
 </div>
-<h3 class="subsubsection-title">4.3.2 Inéquations produit et quotient</h3>
+<h3 class="subsubsection-title">8.3.2 Inéquations produit et quotient</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthode : Résoudre une inéquation en étudiant le signe d'un produit</div>
@@ -168,9 +168,9 @@ L'ensemble des solutions de l'inéquation $\dfrac{2-6x}{3x-2}\leq 0$ est $S= \le
 </div>
 
 
-<h2 class="subsection-title">4.4 Méthodes</h2>
+<h2 class="subsection-title">8.4 Méthodes</h2>
 
-<h3 class="subsubsection-title">4.4.1 Déterminer les coefficients à partir de la représentation graphique</h3>
+<h3 class="subsubsection-title">8.4.1 Déterminer les coefficients à partir de la représentation graphique</h3>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -209,7 +209,7 @@ définie par $g(x) = {\color{#E6B459}{-0,5}}x \color{#EA8556}{-1}$. <br>
 </div>
 </div>
 
-<h3 class="subsubsection-title">4.4.2 Déterminer l'expression d'une fonction affine</h3>
+<h3 class="subsubsection-title">8.4.2 Déterminer l'expression d'une fonction affine</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthodes : Déterminer une fonction affine par le calcul</div>

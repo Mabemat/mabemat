@@ -297,7 +297,7 @@ $$P_A(B)=\dfrac{P(A\cap B)}{P(A)}$$
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-On admet que $P_A$ est elle-même une probabilité : elle suit donc les mêmes règles que $P$. ±±<br>
+On admet que $P_A$ est elle-même une probabilité : elle suit donc les mêmes règles que $P$.<br>
 En particulier :
 $$0\leq P_A(B)\leq 1 \quad\quad\quad\quad P_A(\overline{B})=1-P_A(B)$$
 On déduit de la définition la relation suivante, valable dès que $P(A)\neq 0$ et $P(B)\neq 0$ :

@@ -50,7 +50,7 @@ La fonction carrée est la fonction définie sur $\R$ par $f:x\mapsto x^2$.
 </tr>
 </table>
 <div style="display:flex;align-items:center;gap:12px;">
-<img src="/mabemat/figures/2nde/chapitre-07/fig1.svg" alt="figure 1" style="width:41%;max-height:400px;max-width:100%;">
+<img src="/mabemat/figures/2nde/chapitre-11/parabole.svg" alt="figure 1" style="width:41%;max-height:400px;max-width:100%;">
 <div style="width:57%;">
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -78,7 +78,7 @@ La fonction carrée est décroissante sur $]-\infty;0]$ et croissante sur $[0;+\
 </div>
 </div>
 <div style="margin-top:12px;">On peut dresser le tableau de variations.</div>
-<img src="/mabemat/figures/2nde/chapitre-07/t1.png" alt="tableau de variation de la fonction carrée" style="display:block;margin-left:auto;margin-right:auto;max-height:150px;max-width:100%;margin-top:12px;">
+<img src="/mabemat/figures/2nde/chapitre-11/tabvar-carre.svg" alt="tableau de variation de la fonction carrée" style="display:block;margin-left:auto;margin-right:auto;max-height:150px;max-width:100%;margin-top:12px;">
 </div>
 <div style="width:52%;">
 Démonstration <br>
@@ -87,7 +87,7 @@ Pour cela, prenons $a$ et $b$ deux réels de l'intervalle $[0;+\infty[$ tels que
 On étudie donc le signe de $a^2-b^2$. <br>
 On a $a^2-b^2=(a+b)(a-b)$. <br>
 Comme $a\leq b$, $(a-b)\leq 0$ ; <br>et comme $a$ et $b$ sont positifs, $(a+b)$ est positif.<br>
-On en déduit que le produit $(a+b)(a-b)\leq 0$.<br> Donc $a^2-b^2\leq 0$, d'où $f(a)-f(b)\leq 0$ et donc <br>$f(a)\leq f(b)$, ce qu'on souhaitait. <br>
+On en déduit que le produit $\underbrace{(a+b)}_{\color{#D36740}{\geq 0}}\underbrace{(a-b)}_{\color{#D36740}{\leq 0}}\leq 0$.<br> Donc $a^2-b^2\leq 0$, d'où $f(a)-f(b)\leq 0$ et donc <br>$f(a)\leq f(b)$, ce qu'on souhaitait. <br>
 Ainsi, $f$ est croissante sur $[0;+\infty[$.<br>
 On conclut par symétrie de la courbe de $f$ par rapport à l'axe des ordonnées, que $f$ est décroissante sur $]-\infty;0]$.
 </div>
@@ -128,7 +128,7 @@ Pour tout réel $a$, l'équation $x^2=a$ admet :
 </div>
 </div>
 </div>
-<img src="/mabemat/figures/2nde/chapitre-07/fig5.svg" alt="figure équation x²=a" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/2nde/chapitre-11/eq-carre.svg" alt="figure équation x²=a" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
 </div>
 
 <div class="environment exemple">
@@ -153,7 +153,7 @@ Donc $S=\{-5\,;\,5\}$</li>
 </div>
 </div>
 
-<h4 class="subsubsection-title" style="font-size:1rem;">Résolution d'inéquations</h4>
+<h4 class="subsubsection-title" style="font-size:1rem;">Résolutions d'inéquations</h4>
 
 <div style="display:flex; gap:12px; align-items:center;">
 <div style="flex:7 1 0; min-width:0;">
@@ -174,7 +174,7 @@ Pour tout réel $a$, l'inéquation $\color{pink}{x^2\geq a}$ admet pour ensemble
 </div>
 </div>
 </div>
-<img src="/mabemat/figures/2nde/chapitre-07/fig6.svg" alt="figure inéquation x²" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/2nde/chapitre-11/ineq-carre.svg" alt="figure inéquation x²" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
 </div>
 
 <div class="environment exemple">
@@ -259,7 +259,7 @@ Pour que la fonction inverse soit définie, il faut que le dénominateur soit di
 </tr>
 </table>
 <br>
-<img src="/mabemat/figures/2nde/chapitre-14/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(41% - 12px); max-height:300px; max-width:100%;"><div style="display:inline-block; vertical-align:middle; width:calc(57% - 12px);">
+<img src="/mabemat/figures/2nde/chapitre-11/hyperbole.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(41% - 12px); max-height:300px; max-width:100%;"><div style="display:inline-block; vertical-align:middle; width:calc(57% - 12px);">
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
@@ -269,10 +269,7 @@ La représentation graphique de la fonction inverse s'appelle une <strong>hyperb
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
-<ul>
-<li>La courbe représentative de la fonction inverse admet <br>l'origine $O(0;0)$ comme centre de symétrie.<br></li>
-<li>Pour tout $x\in \mathbb{R}^\ast$, $\dfrac{1}{(-x)}=-\dfrac{1}{x}$ donc $f(-x)=-f(x)$, on dit que la fonction inverse est impaire.</li>
-</ul>
+La courbe représentative de la fonction inverse admet <br>l'origine $O(0;0)$ comme centre de symétrie.
 </div>
 </div>
 </div>
@@ -289,22 +286,29 @@ La fonction inverse est décroissante sur $]-\infty ; 0 [ $ et sur $]0 ; +\infty
 On peut dresser le tableau de variations.
 
 <div style="text-align:center;">
-<img src="/mabemat/figures/2nde/chapitre-14/t1.png" alt="figure 2" style="max-height:100px; max-width:100%;">
+<img src="/mabemat/figures/2nde/chapitre-11/tabvar-inverse.svg" alt="figure 2" style="max-height:100px; max-width:100%;">
 </div>
 
 <div class="remarque">
 On ne peut pas dire que la fonction inverse est décroissante sur $\mathbb{R}^\ast$. <br>En effet, l'affirmation : « Lorsque les valeurs de $x$ augmentent sur $\mathbb{R}^\ast$, leurs inverses diminuent » est fausse. <br>Par exemple, $1$ est plus grand que $-2$, et $1$ (l'inverse de $1$) est plus grand que $-\dfrac{1}{2}$ (l'inverse de $-2$).
 </div>
 
-Démonstration . <br>
-La fonction inverse étant impaire, il nous suffit de montrer qu'elle est décroissante sur l'intervalle $]0;+\infty[$. <br>
-En effet, on obtiendra automatiquement la décroissance sur l'intervalle $]-\infty;0[$ par symétrie de l'hyperbole par rapport à l'origine du repère.<br>
-Montrons donc que $f$ est décroissante sur $]0;+\infty[$.<br>
-Soient $a$ et $b$ deux réels distincts de l'intervalle $]0;+\infty[$ tels que $a<b$.<br>
-On veut montrer que $f(a)>f(b)$, c'est à dire $\dfrac{1}{a}>\dfrac{1}{b}$.<br>
-Montrons que $\dfrac{1}{a}-\dfrac{1}{b}>0$.
-$$\dfrac{1}{a}-\dfrac{1}{b}=\dfrac{b}{ab}-\dfrac{a}{ab}=\dfrac{b-a}{ab}$$
-$a$ et $b$ sont strictement positifs donc $ab>0$. Par ailleurs, $a<b$, donc $b-a>0$. Par quotient, on a $\dfrac{b-a}{ab}>0$. <br>Ainsi, $\dfrac{1}{a}>\dfrac{1}{b}$. $a$ et $b$ étant quelconques, on a donc montré que la fonction inverse est décroissante sur $]0;+\infty[$.
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+En utilisant les variations de la fonction inverse, donner un encadrement de $\dfrac{1}{x}$ dans chaque cas suivant.
+<ol>
+<li>$x\in[2;5]$<br>
+Comme $x\in[2;5]$ correspond à $2\leq x\leq 5$, avec $x>0$.<br>
+Et que la fonction inverse est décroissante sur $[0;+\infty[$, lorsque les valeurs de $x$ augmentent, les valeurs de $\dfrac{1}{x}$ diminuent.<br>
+On en déduit que $\dfrac{1}{5}\leq \dfrac{1}{x}\leq \dfrac{1}{2}$.</li>
+<li>$x\in[-6;-2]$<br>
+Comme $x\in[-6;-2]$ correspond à $-6\leq x\leq -2$, avec $x<0$.<br>
+Et que la fonction inverse est décroissante sur $]-\infty;0]$, lorsque les valeurs de $x$ augmentent, les valeurs de $\dfrac{1}{x}$ diminuent.<br>
+On en déduit que $-\dfrac{1}{2}\leq \dfrac{1}{x}\leq -\dfrac{1}{6}$.</li>
+</ol>
+</div>
+</div>
 
 
 <h3 class="subsubsection-title">11.2.4 Équations et inéquations</h3>
@@ -321,17 +325,27 @@ $a$ et $b$ sont strictement positifs donc $ab>0$. Par ailleurs, $a<b$, donc $b-a
 
 <h4 class="subsubsection-title" style="font-size:1rem;">Résolution d'équations</h4>
 
-<div class="environment definition">
-<div class="environment-title">Définition :</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
 <div class="environment-content">
 Pour tout réel non nul $a$, l'équation $\dfrac{1}{x}=a$ admet pour unique solution $x=\dfrac{1}{a}$.
 </div>
 </div>
 
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
-L'équation $\dfrac{1}{x}=7$ a pour unique solution $x=\dfrac{1}{7}$.
+Résoudre dans $\R$ les équations suivantes.
+<ol>
+<li>$\dfrac{1}{x}=8$<br>
+On applique directement la propriété du cours.<br>
+$x=\dfrac{1}{8}$<br>
+Donc $S=\left\{\dfrac{1}{8}\right\}$</li>
+<li>$\dfrac{4}{x}=-2$<br>
+On se ramène à une équation du type $\dfrac{1}{x}=a$.<br>
+$4\times\dfrac{1}{x}=-2 \Leftrightarrow \dfrac{1}{x}=\dfrac{-2}{4} \Leftrightarrow \dfrac{1}{x}=-\dfrac{1}{2} \Leftrightarrow x=-2$<br>
+Donc $S=\{-2\}$</li>
+</ol>
 </div>
 </div>
 
@@ -365,14 +379,46 @@ Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ admet pour ensemble de s
 <div style="flex:1 1 0; min-width:0;">
 Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\leq a$ a pour solution <br> $$S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{a}\,;\,+\infty\right[$$
 <div style="text-align:center;">
-<img src="/mabemat/figures/2nde/chapitre-14/fig3.svg" alt="figure 3" style="max-height:300px; max-width:100%;">
+<img src="/mabemat/figures/2nde/chapitre-11/ineq-inverse-inf.svg" alt="figure 3" style="max-height:300px; max-width:100%;">
 </div>
 </div>
 <div style="flex:1 1 0; min-width:0;">
 Pour tout réel $a$, l'inéquation $\dfrac{1}{x}\geq a$ a pour solution $$S=\left]0\,;\,\dfrac{1}{a}\right]$$
 <div style="text-align:center;">
-<img src="/mabemat/figures/2nde/chapitre-14/fig4.svg" alt="figure 4" style="max-height:300px; max-width:100%;">
+<img src="/mabemat/figures/2nde/chapitre-11/ineq-inverse-sup.svg" alt="figure 4" style="max-height:300px; max-width:100%;">
 </div>
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Résoudre dans $\R$ les inéquations suivantes.
+<ol>
+<li>$\dfrac{1}{x}\leq -4$<br>
+On applique directement la propriété du cours avec $a=-4<0$.<br>
+Donc $S=\left[-\dfrac{1}{4}\,;\,0\right[$</li>
+<li>$\dfrac{1}{x}-2\leq 4$<br>
+On se ramène à une inéquation du type $\dfrac{1}{x}\leq a$.<br>
+$\dfrac{1}{x}-2\leq 4 \Leftrightarrow \dfrac{1}{x}\leq 4+2 \Leftrightarrow \dfrac{1}{x}\leq 6$.<br>
+Donc $S=\left]-\infty\,;\,0\right[\cup \left[\dfrac{1}{6}\,;\,+\infty\right[$</li>
+</ol>
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Résoudre dans $\R$ les inéquations suivantes.
+<ol>
+<li>$\dfrac{1}{x}\geq -3$<br>
+On applique directement la propriété du cours avec $a=-3<0$.<br>
+Donc $S=\left]-\infty\,;\,-\dfrac{1}{3}\right]\cup \left]0\,;\,+\infty\right[$</li>
+<li>$\dfrac{1}{x}+2\geq 7$<br>
+On se ramène à une inéquation du type $\dfrac{1}{x}\geq a$.<br>
+$\dfrac{1}{x}+2\geq 7 \Leftrightarrow \dfrac{1}{x}\geq 7-2 \Leftrightarrow \dfrac{1}{x}\geq 5$.<br>
+Donc $S=\left]0\,;\,\dfrac{1}{5}\right]$</li>
+</ol>
 </div>
 </div>
 
@@ -420,7 +466,7 @@ Pour tout réel $x$, $\sqrt{x^2}=\vert x\vert$.
 <h3 class="subsubsection-title">11.3.2 Représentation graphique</h3>
 
 <div style="display:flex;align-items:center;gap:12px;">
-<img src="/mabemat/figures/2nde/chapitre-07/va1.svg" alt="courbe de la fonction valeur absolue" style="width:42%;max-height:300px;max-width:100%;">
+<img src="/mabemat/figures/2nde/chapitre-11/valeur-absolue.svg" alt="courbe de la fonction valeur absolue" style="width:42%;max-height:300px;max-width:100%;">
 <div style="width:56%;">
 <table>
 <tr>
@@ -497,7 +543,7 @@ Soit un réel $x$ tel que $\vert x-8 \vert \leq 3$. D'après la propriété $a=8
 Cela signifie que $x\in [8-3;8+3]=[5;11]$.<br>
 Sur une droite graduée, cela veut dire que la distance du point d'abscisse $x$ au point d'abscisse $8$ est inférieure ou égale à $3$.
 <div style="text-align:center;margin-top:8px;">
-<img src="/mabemat/figures/2nde/chapitre-07/va2.svg" alt="droite graduée distance" style="max-height:150px;max-width:100%;">
+<img src="/mabemat/figures/2nde/chapitre-11/distance.svg" alt="droite graduée distance" style="max-height:150px;max-width:100%;">
 </div>
 </div>
 </div>
@@ -520,7 +566,7 @@ Pour tout réel $k$, l'équation $\vert x\vert=k$ admet :
 </div>
 </div>
 </div>
-<img src="/mabemat/figures/2nde/chapitre-07/va3.svg" alt="figure équation |x|=k" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
+<img src="/mabemat/figures/2nde/chapitre-11/eq-valeur-absolue.svg" alt="figure équation |x|=k" style="flex:3 1 0; min-width:0; max-height:200px; object-fit:contain;">
 </div>
 
 <div class="environment exemple">
