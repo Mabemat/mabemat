@@ -56,7 +56,8 @@ $$\begin{aligned}(3x+7)^2 &= (3x)^2+2\times 3x\times 7+7^2 \\ &= 9x^2+42x+49\end
 
 Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=2x$ et $b=1$ :
 
-$$(2x-1)(2x+1)=(2x)^2-1^2=4x^2-1$$
+
+$$\begin{aligned}(2x-1)(2x+1)&=(2x)^2-1^2 \\ &=4x^2-1\end{aligned}$$
 
 On soustrait, en faisant attention au signe devant la parenthèse :
 

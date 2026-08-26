@@ -73,10 +73,10 @@ Parmi les $1\,500$ logements que compte une ville, $20\,\%$ sont des maisons, et
 Le nombre de maisons T2 est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $300$</span>
-<span><b>B.</b> $180$</span>
-<span><b>C.</b> $120$</span>
-<span><b>D.</b> $900$</span>
+<span><strong>A.</strong> $300$</span>
+<span><strong>B.</strong> $180$</span>
+<span><strong>C.</strong> $120$</span>
+<span><strong>D.</strong> $900$</span>
 </div>
 ---CORR---
 On procède en deux étapes. Nombre de maisons :
@@ -100,10 +100,10 @@ Lors d'une élection, $\dfrac{1}{4}$ des électeurs ont voté pour A, $30\,\%$ p
 La proportion d'électeurs ayant voté pour D est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $15\,\%$</span>
-<span><b>B.</b> $20\,\%$</span>
-<span><b>C.</b> $30\,\%$</span>
-<span><b>D.</b> $25\,\%$</span>
+<span><strong>A.</strong> $15\,\%$</span>
+<span><strong>B.</strong> $20\,\%$</span>
+<span><strong>C.</strong> $30\,\%$</span>
+<span><strong>D.</strong> $25\,\%$</span>
 </div>
 ---CORR---
 On convertit tout en écriture décimale pour pouvoir additionner :
@@ -195,10 +195,10 @@ Parmi les $2\,500$ logements que compte une ville, $40\,\%$ sont des maisons, et
 Le nombre de maisons T2 est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $250$</span>
-<span><b>B.</b> $1\,000$</span>
-<span><b>C.</b> $625$</span>
-<span><b>D.</b> $100$</span>
+<span><strong>A.</strong> $250$</span>
+<span><strong>B.</strong> $1\,000$</span>
+<span><strong>C.</strong> $625$</span>
+<span><strong>D.</strong> $100$</span>
 </div>
 ---CORR---
 On procède en deux étapes. Nombre de maisons :
@@ -222,10 +222,10 @@ Lors d'une élection, $\dfrac{1}{5}$ des électeurs ont voté pour A, $35\,\%$ p
 La proportion d'électeurs ayant voté pour D est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $25\,\%$</span>
-<span><b>B.</b> $15\,\%$</span>
-<span><b>C.</b> $20\,\%$</span>
-<span><b>D.</b> $30\,\%$</span>
+<span><strong>A.</strong> $25\,\%$</span>
+<span><strong>B.</strong> $15\,\%$</span>
+<span><strong>C.</strong> $20\,\%$</span>
+<span><strong>D.</strong> $30\,\%$</span>
 </div>
 ---CORR---
 On convertit tout en écriture décimale pour pouvoir additionner :

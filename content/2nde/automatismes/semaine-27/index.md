@@ -61,10 +61,10 @@ $$P=\dfrac{3}{10}={\color{#4A5D7A}0{,}3}$$
 Le point d'intersection des droites d'équations $y=2x+1$ et $y=-x+7$ a pour abscisse :
 
 <div class="qcm-choix">
-<span><b>A.</b> $1$</span>
-<span><b>B.</b> $3$</span>
-<span><b>C.</b> $2$</span>
-<span><b>D.</b> $5$</span>
+<span><strong>A.</strong> $1$</span>
+<span><strong>B.</strong> $3$</span>
+<span><strong>C.</strong> $2$</span>
+<span><strong>D.</strong> $5$</span>
 </div>
 ---CORR---
 Au point d'intersection, les deux droites ont la même ordonnée pour la même abscisse. On égalise donc les deux expressions :
@@ -84,10 +84,10 @@ La réponse D est l'ordonnée du point d'intersection ($y=2\times 2+1=5$), pas s
 Une augmentation de $10\,\%$ suivie d'une baisse de $10\,\%$ équivaut à :
 
 <div class="qcm-choix">
-<span><b>A.</b> aucune évolution</span>
-<span><b>B.</b> une baisse de $1\,\%$</span>
-<span><b>C.</b> une hausse de $1\,\%$</span>
-<span><b>D.</b> une baisse de $20\,\%$</span>
+<span><strong>A.</strong> aucune évolution</span>
+<span><strong>B.</strong> une baisse de $1\,\%$</span>
+<span><strong>C.</strong> une hausse de $1\,\%$</span>
+<span><strong>D.</strong> une baisse de $20\,\%$</span>
 </div>
 ---CORR---
 On multiplie les coefficients multiplicateurs :
@@ -159,10 +159,10 @@ $$P=\dfrac{4}{10}={\color{#4A5D7A}0{,}4}$$
 Le point d'intersection des droites d'équations $y=3x-4$ et $y=-2x+11$ a pour abscisse :
 
 <div class="qcm-choix">
-<span><b>A.</b> $3$</span>
-<span><b>B.</b> $2$</span>
-<span><b>C.</b> $5$</span>
-<span><b>D.</b> $4$</span>
+<span><strong>A.</strong> $3$</span>
+<span><strong>B.</strong> $2$</span>
+<span><strong>C.</strong> $5$</span>
+<span><strong>D.</strong> $4$</span>
 </div>
 ---CORR---
 Au point d'intersection, les deux droites ont la même ordonnée pour la même abscisse. On égalise donc les deux expressions :
@@ -182,10 +182,10 @@ La réponse C est l'ordonnée du point d'intersection ($y=3\times 3-4=5$), pas s
 Une baisse de $20\,\%$ suivie d'une hausse de $20\,\%$ équivaut à :
 
 <div class="qcm-choix">
-<span><b>A.</b> une baisse de $40\,\%$</span>
-<span><b>B.</b> aucune évolution</span>
-<span><b>C.</b> une hausse de $4\,\%$</span>
-<span><b>D.</b> une baisse de $4\,\%$</span>
+<span><strong>A.</strong> une baisse de $40\,\%$</span>
+<span><strong>B.</strong> aucune évolution</span>
+<span><strong>C.</strong> une hausse de $4\,\%$</span>
+<span><strong>D.</strong> une baisse de $4\,\%$</span>
 </div>
 ---CORR---
 On multiplie les coefficients multiplicateurs :

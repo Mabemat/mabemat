@@ -81,10 +81,10 @@ Le prix d'un article passe de $80$ € à $60$ €.
 Le taux d'évolution de ce prix est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $-20\,\%$</span>
-<span><b>B.</b> $+25\,\%$</span>
-<span><b>C.</b> $-33\,\%$</span>
-<span><b>D.</b> $-25\,\%$</span>
+<span><strong>A.</strong> $-20\,\%$</span>
+<span><strong>B.</strong> $+25\,\%$</span>
+<span><strong>C.</strong> $-33\,\%$</span>
+<span><strong>D.</strong> $-25\,\%$</span>
 </div>
 ---CORR---
 Le taux d'évolution se calcule toujours par rapport à la valeur de **départ** :
@@ -102,10 +102,10 @@ La réponse A confond le taux avec la baisse en euros, et la réponse C divise p
 La solution de l'équation $\dfrac{x}{8}=112$ est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $x=14$</span>
-<span><b>B.</b> $x=-896$</span>
-<span><b>C.</b> $x=896$</span>
-<span><b>D.</b> $x=\dfrac{8}{112}$</span>
+<span><strong>A.</strong> $x=14$</span>
+<span><strong>B.</strong> $x=-896$</span>
+<span><strong>C.</strong> $x=896$</span>
+<span><strong>D.</strong> $x=\dfrac{8}{112}$</span>
 </div>
 ---CORR---
 $x$ est divisé par $8$ : pour l'isoler, on multiplie chaque membre par $8$.
@@ -195,10 +195,10 @@ Le prix d'un article passe de $150$ € à $120$ €.
 Le taux d'évolution de ce prix est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $-30\,\%$</span>
-<span><b>B.</b> $-20\,\%$</span>
-<span><b>C.</b> $-25\,\%$</span>
-<span><b>D.</b> $+20\,\%$</span>
+<span><strong>A.</strong> $-30\,\%$</span>
+<span><strong>B.</strong> $-20\,\%$</span>
+<span><strong>C.</strong> $-25\,\%$</span>
+<span><strong>D.</strong> $+20\,\%$</span>
 </div>
 ---CORR---
 Le taux d'évolution se calcule toujours par rapport à la valeur de **départ** :
@@ -216,10 +216,10 @@ La réponse A confond le taux avec la baisse en euros, et la réponse C divise p
 La solution de l'équation $\dfrac{x}{6}=132$ est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $x=792$</span>
-<span><b>B.</b> $x=22$</span>
-<span><b>C.</b> $x=-792$</span>
-<span><b>D.</b> $x=\dfrac{6}{132}$</span>
+<span><strong>A.</strong> $x=792$</span>
+<span><strong>B.</strong> $x=22$</span>
+<span><strong>C.</strong> $x=-792$</span>
+<span><strong>D.</strong> $x=\dfrac{6}{132}$</span>
 </div>
 ---CORR---
 $x$ est divisé par $6$ : pour l'isoler, on multiplie chaque membre par $6$.

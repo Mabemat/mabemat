@@ -79,10 +79,10 @@ Une personne doit rembourser un crédit de $1\,800$ € en trois mois. En janvie
 La somme, en euros, qu'il lui reste à rembourser en mars est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $450$</span>
-<span><b>B.</b> $1\,050$</span>
-<span><b>C.</b> $750$</span>
-<span><b>D.</b> $600$</span>
+<span><strong>A.</strong> $450$</span>
+<span><strong>B.</strong> $1\,050$</span>
+<span><strong>C.</strong> $750$</span>
+<span><strong>D.</strong> $600$</span>
 </div>
 ---CORR---
 Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $1\,800$ €.
@@ -106,10 +106,10 @@ Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur
 | $y$ | 6 | ? |
 
 <div class="qcm-choix">
-<span><b>A.</b> $9$</span>
-<span><b>B.</b> $12$</span>
-<span><b>C.</b> $16$</span>
-<span><b>D.</b> $15$</span>
+<span><strong>A.</strong> $9$</span>
+<span><strong>B.</strong> $12$</span>
+<span><strong>C.</strong> $16$</span>
+<span><strong>D.</strong> $15$</span>
 </div>
 ---CORR---
 Dans un tableau de proportionnalité, on passe de la ligne $x$ à la ligne $y$ en multipliant par un coefficient constant. On le calcule avec la colonne complète :
@@ -201,10 +201,10 @@ Une personne doit rembourser un crédit de $2\,400$ € en trois mois. En janvie
 La somme, en euros, qu'il lui reste à rembourser en mars est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $1\,000$</span>
-<span><b>B.</b> $1\,400$</span>
-<span><b>C.</b> $600$</span>
-<span><b>D.</b> $800$</span>
+<span><strong>A.</strong> $1\,000$</span>
+<span><strong>B.</strong> $1\,400$</span>
+<span><strong>C.</strong> $600$</span>
+<span><strong>D.</strong> $800$</span>
 </div>
 ---CORR---
 Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $2\,400$ €.
@@ -228,10 +228,10 @@ Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur
 | $y$ | 8 | ? |
 
 <div class="qcm-choix">
-<span><b>A.</b> $17$</span>
-<span><b>B.</b> $20$</span>
-<span><b>C.</b> $18$</span>
-<span><b>D.</b> $24$</span>
+<span><strong>A.</strong> $17$</span>
+<span><strong>B.</strong> $20$</span>
+<span><strong>C.</strong> $18$</span>
+<span><strong>D.</strong> $24$</span>
 </div>
 ---CORR---
 Dans un tableau de proportionnalité, on passe de la ligne $x$ à la ligne $y$ en multipliant par un coefficient constant. On le calcule avec la colonne complète :

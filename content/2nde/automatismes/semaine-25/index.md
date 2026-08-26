@@ -83,10 +83,10 @@ Il ne faut surtout pas développer : la forme factorisée est déjà celle qui d
 On sait que $P(A)=0{,}35$. La probabilité de l'événement contraire $\overline{A}$ est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $0{,}65$</span>
-<span><b>B.</b> $0{,}35$</span>
-<span><b>C.</b> $1{,}35$</span>
-<span><b>D.</b> $-0{,}35$</span>
+<span><strong>A.</strong> $0{,}65$</span>
+<span><strong>B.</strong> $0{,}35$</span>
+<span><strong>C.</strong> $1{,}35$</span>
+<span><strong>D.</strong> $-0{,}35$</span>
 </div>
 ---CORR---
 Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.
@@ -102,10 +102,10 @@ Les réponses C et D sont impossibles : une probabilité est toujours comprise e
 On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d'obtenir un roi est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $\dfrac{1}{32}$</span>
-<span><b>B.</b> $\dfrac{1}{4}$</span>
-<span><b>C.</b> $\dfrac{4}{8}$</span>
-<span><b>D.</b> $\dfrac{1}{8}$</span>
+<span><strong>A.</strong> $\dfrac{1}{32}$</span>
+<span><strong>B.</strong> $\dfrac{1}{4}$</span>
+<span><strong>C.</strong> $\dfrac{4}{8}$</span>
+<span><strong>D.</strong> $\dfrac{1}{8}$</span>
 </div>
 ---CORR---
 Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $32$.
@@ -199,10 +199,10 @@ Il ne faut surtout pas développer : la forme factorisée est déjà celle qui d
 On sait que $P(A)=0{,}28$. La probabilité de l'événement contraire $\overline{A}$ est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $-0{,}28$</span>
-<span><b>B.</b> $0{,}72$</span>
-<span><b>C.</b> $1{,}28$</span>
-<span><b>D.</b> $0{,}28$</span>
+<span><strong>A.</strong> $-0{,}28$</span>
+<span><strong>B.</strong> $0{,}72$</span>
+<span><strong>C.</strong> $1{,}28$</span>
+<span><strong>D.</strong> $0{,}28$</span>
 </div>
 ---CORR---
 Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.
@@ -218,10 +218,10 @@ Les réponses C et A sont impossibles : une probabilité est toujours comprise e
 On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d'obtenir un cœur est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $\dfrac{1}{13}$</span>
-<span><b>B.</b> $\dfrac{1}{52}$</span>
-<span><b>C.</b> $\dfrac{1}{4}$</span>
-<span><b>D.</b> $\dfrac{13}{4}$</span>
+<span><strong>A.</strong> $\dfrac{1}{13}$</span>
+<span><strong>B.</strong> $\dfrac{1}{52}$</span>
+<span><strong>C.</strong> $\dfrac{1}{4}$</span>
+<span><strong>D.</strong> $\dfrac{13}{4}$</span>
 </div>
 ---CORR---
 Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $52$.

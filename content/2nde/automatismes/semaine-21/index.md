@@ -87,10 +87,10 @@ On le voit aussi directement : $\overrightarrow{v}=-\dfrac{3}{2}\,\overrightarro
 Dans une série de $10$ valeurs rangées dans l'ordre croissant, la médiane est :
 
 <div class="qcm-choix">
-<span><b>A.</b> la $5^\text{e}$ valeur</span>
-<span><b>B.</b> la $6^\text{e}$ valeur</span>
-<span><b>C.</b> la moyenne des $5^\text{e}$ et $6^\text{e}$ valeurs</span>
-<span><b>D.</b> la moyenne de toutes les valeurs</span>
+<span><strong>A.</strong> la $5^\text{e}$ valeur</span>
+<span><strong>B.</strong> la $6^\text{e}$ valeur</span>
+<span><strong>C.</strong> la moyenne des $5^\text{e}$ et $6^\text{e}$ valeurs</span>
+<span><strong>D.</strong> la moyenne de toutes les valeurs</span>
 </div>
 ---CORR---
 L'effectif $10$ est **pair** : il n'y a pas de valeur unique au milieu, mais deux valeurs centrales, celles de rang $5$ et $6$. La médiane est leur moyenne.
@@ -108,10 +108,10 @@ Dans une commune, le tarif de l'eau comprend un abonnement annuel de $48$ € et
 Le prix payé, en euros, pour $x$ mètres cubes est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $48x+3{,}5$</span>
-<span><b>B.</b> $3{,}5x+48$</span>
-<span><b>C.</b> $51{,}5x$</span>
-<span><b>D.</b> $\dfrac{48}{x}+3{,}5$</span>
+<span><strong>A.</strong> $48x+3{,}5$</span>
+<span><strong>B.</strong> $3{,}5x+48$</span>
+<span><strong>C.</strong> $51{,}5x$</span>
+<span><strong>D.</strong> $\dfrac{48}{x}+3{,}5$</span>
 </div>
 ---CORR---
 L'abonnement est payé une seule fois, quelle que soit la consommation : c'est un terme constant.
@@ -209,10 +209,10 @@ Attention au piège : $-9=3\times(-3)$ mais $16\neq -5\times(-3)=15$. Il suffit 
 Dans une série de $14$ valeurs rangées dans l'ordre croissant, la médiane est :
 
 <div class="qcm-choix">
-<span><b>A.</b> la moyenne des $7^\text{e}$ et $8^\text{e}$ valeurs</span>
-<span><b>B.</b> la $8^\text{e}$ valeur</span>
-<span><b>C.</b> la $7^\text{e}$ valeur</span>
-<span><b>D.</b> la moyenne de toutes les valeurs</span>
+<span><strong>A.</strong> la moyenne des $7^\text{e}$ et $8^\text{e}$ valeurs</span>
+<span><strong>B.</strong> la $8^\text{e}$ valeur</span>
+<span><strong>C.</strong> la $7^\text{e}$ valeur</span>
+<span><strong>D.</strong> la moyenne de toutes les valeurs</span>
 </div>
 ---CORR---
 L'effectif $14$ est **pair** : il n'y a pas de valeur unique au milieu, mais deux valeurs centrales, celles de rang $7$ et $8$. La médiane est leur moyenne.
@@ -230,10 +230,10 @@ Dans une commune, le tarif de l'eau comprend un abonnement annuel de $62$ € et
 Le prix payé, en euros, pour $x$ mètres cubes est :
 
 <div class="qcm-choix">
-<span><b>A.</b> $\dfrac{62}{x}+2{,}8$</span>
-<span><b>B.</b> $64{,}8x$</span>
-<span><b>C.</b> $62x+2{,}8$</span>
-<span><b>D.</b> $2{,}8x+62$</span>
+<span><strong>A.</strong> $\dfrac{62}{x}+2{,}8$</span>
+<span><strong>B.</strong> $64{,}8x$</span>
+<span><strong>C.</strong> $62x+2{,}8$</span>
+<span><strong>D.</strong> $2{,}8x+62$</span>
 </div>
 ---CORR---
 L'abonnement est payé une seule fois, quelle que soit la consommation : c'est un terme constant.
