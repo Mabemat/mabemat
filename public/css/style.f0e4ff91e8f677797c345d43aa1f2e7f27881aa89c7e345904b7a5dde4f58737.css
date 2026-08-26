@@ -2294,6 +2294,11 @@ article.qcm .qcm-corr th code { text-transform: none; letter-spacing: 0; font-fa
   margin: 14px 0 2px;
 }
 .qcm-choix > span { white-space: nowrap; }
+.qcm-choix b {
+  font-weight: 600;
+  color: var(--accent);
+  margin-right: 2px;
+}
 @media (max-width: 900px) {
   .qcm-choix { grid-template-columns: repeat(2, max-content); gap: 10px 28px; }
 }

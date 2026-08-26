@@ -80,7 +80,12 @@ $$I\cap J={\color{#4A5D7A}\left[-1\,;\,4\right[}$$
 {{< auto2-exo numero="05" >}}
 Une simplification de $6x-\dfrac{x}{6}$ est :
 
-**A.** $\dfrac{37}{6}x$ &emsp; **B.** $-\dfrac{35}{6}x$ &emsp; **C.** $\dfrac{35}{6}x$ &emsp; **D.** $\dfrac{5}{6}x$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{37}{6}x$</span>
+<span><strong>B.</strong> $-\dfrac{35}{6}x$</span>
+<span><strong>C.</strong> $\dfrac{35}{6}x$</span>
+<span><strong>D.</strong> $\dfrac{5}{6}x$</span>
+</div>
 ---CORR---
 Les deux termes contiennent $x$ : il s'agit d'une soustraction de fractions de dénominateur $6$.
 
@@ -96,7 +101,12 @@ $$6x-\dfrac{x}{6}=\dfrac{36x}{6}-\dfrac{x}{6}=\dfrac{36x-x}{6}={\color{#4A5D7A}\
 {{< auto2-exo numero="06" >}}
 On donne la relation $7a+4y=3$. On cherche à isoler $a$. On a :
 
-**A.** $a=\dfrac{3}{7}-4y$ &emsp; **B.** $a=\dfrac{4y-3}{7}$ &emsp; **C.** $a=-4y+3$ &emsp; **D.** $a=\dfrac{3-4y}{7}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $a=\dfrac{3}{7}-4y$</span>
+<span><strong>B.</strong> $a=\dfrac{4y-3}{7}$</span>
+<span><strong>C.</strong> $a=-4y+3$</span>
+<span><strong>D.</strong> $a=\dfrac{3-4y}{7}$</span>
+</div>
 ---CORR---
 On isole d'abord le terme contenant $a$, en retranchant $4y$ dans chaque membre :
 
@@ -186,7 +196,12 @@ $$I\cap J={\color{#4A5D7A}\left[-3\,;\,2\right]}$$
 {{< auto2-exo numero="05" >}}
 Une simplification de $10x-\dfrac{x}{10}$ est :
 
-**A.** $\dfrac{99}{10}x$ &emsp; **B.** $\dfrac{101}{10}x$ &emsp; **C.** $\dfrac{9}{10}x$ &emsp; **D.** $-\dfrac{99}{10}x$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{99}{10}x$</span>
+<span><strong>B.</strong> $\dfrac{101}{10}x$</span>
+<span><strong>C.</strong> $\dfrac{9}{10}x$</span>
+<span><strong>D.</strong> $-\dfrac{99}{10}x$</span>
+</div>
 ---CORR---
 Les deux termes contiennent $x$ : il s'agit d'une soustraction de fractions de dénominateur $10$.
 
@@ -202,7 +217,12 @@ $$\begin{aligned}10x-\dfrac{x}{10} &= \dfrac{100x}{10}-\dfrac{x}{10} \\ &= \dfra
 {{< auto2-exo numero="06" >}}
 On donne la relation $5x-3c=2$. On cherche à isoler $x$. On a :
 
-**A.** $x=\dfrac{2-3c}{5}$ &emsp; **B.** $x=\dfrac{2+3c}{5}$ &emsp; **C.** $x=\dfrac{2}{5}+3c$ &emsp; **D.** $x=2+3c$
+<div class="qcm-choix">
+<span><strong>A.</strong> $x=\dfrac{2-3c}{5}$</span>
+<span><strong>B.</strong> $x=\dfrac{2+3c}{5}$</span>
+<span><strong>C.</strong> $x=\dfrac{2}{5}+3c$</span>
+<span><strong>D.</strong> $x=2+3c$</span>
+</div>
 ---CORR---
 On isole d'abord le terme contenant $x$, en ajoutant $3c$ dans chaque membre :
 

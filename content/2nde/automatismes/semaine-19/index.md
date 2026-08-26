@@ -74,7 +74,12 @@ Le prix d'une maison est $148\,000$ €. Le vendeur propose une remise de $500$ 
 
 Le pourcentage de remise le plus proche est :
 
-**A.** $3\,\%$ &emsp; **B.** $0{,}3\,\%$ &emsp; **C.** $0{,}03\,\%$ &emsp; **D.** $30\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $3\,\%$</span>
+<span><strong>B.</strong> $0{,}3\,\%$</span>
+<span><strong>C.</strong> $0{,}03\,\%$</span>
+<span><strong>D.</strong> $30\,\%$</span>
+</div>
 ---CORR---
 Le taux de remise est le quotient de la remise par le prix de départ :
 
@@ -96,7 +101,12 @@ On lance un dé équilibré à six faces.
 
 La probabilité d'obtenir un nombre pair est :
 
-**A.** $\dfrac{1}{6}$ &emsp; **B.** $\dfrac{1}{3}$ &emsp; **C.** $\dfrac{1}{2}$ &emsp; **D.** $\dfrac{2}{3}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{1}{6}$</span>
+<span><strong>B.</strong> $\dfrac{1}{3}$</span>
+<span><strong>C.</strong> $\dfrac{1}{2}$</span>
+<span><strong>D.</strong> $\dfrac{2}{3}$</span>
+</div>
 ---CORR---
 Le dé est équilibré : les $6$ issues sont équiprobables.
 
@@ -178,7 +188,12 @@ Le prix d'un appartement est $96\,000$ €. Le vendeur propose une remise de $30
 
 Le pourcentage de remise le plus proche est :
 
-**A.** $0{,}3\,\%$ &emsp; **B.** $3\,\%$ &emsp; **C.** $0{,}03\,\%$ &emsp; **D.** $30\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $0{,}3\,\%$</span>
+<span><strong>B.</strong> $3\,\%$</span>
+<span><strong>C.</strong> $0{,}03\,\%$</span>
+<span><strong>D.</strong> $30\,\%$</span>
+</div>
 ---CORR---
 Le taux de remise est le quotient de la remise par le prix de départ :
 
@@ -200,7 +215,12 @@ On lance un dé équilibré à six faces.
 
 La probabilité d'obtenir un multiple de $3$ est :
 
-**A.** $\dfrac{1}{2}$ &emsp; **B.** $\dfrac{1}{6}$ &emsp; **C.** $\dfrac{2}{3}$ &emsp; **D.** $\dfrac{1}{3}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{1}{2}$</span>
+<span><strong>B.</strong> $\dfrac{1}{6}$</span>
+<span><strong>C.</strong> $\dfrac{2}{3}$</span>
+<span><strong>D.</strong> $\dfrac{1}{3}$</span>
+</div>
 ---CORR---
 Le dé est équilibré : les $6$ issues sont équiprobables.
 

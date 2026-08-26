@@ -94,7 +94,12 @@ $$A={\color{#4A5D7A}3x^2-12x+10}$$
 {{< auto2-exo numero="05" >}}
 Le produit des solutions de l'équation $(2x+6)(2x+10)=0$ est égal à :
 
-**A.** $15$ &emsp; **B.** $0$ &emsp; **C.** $-15$ &emsp; **D.** $8$
+<div class="qcm-choix">
+<span><strong>A.</strong> $15$</span>
+<span><strong>B.</strong> $0$</span>
+<span><strong>C.</strong> $-15$</span>
+<span><strong>D.</strong> $8$</span>
+</div>
 ---CORR---
 On résout d'abord l'équation. Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
@@ -112,7 +117,12 @@ Le produit de deux nombres négatifs est positif. La réponse B est le piège cl
 {{< auto2-exo numero="06" >}}
 L'étendue de la série $7\,;\,9\,;\,9\,;\,12\,;\,13$ est :
 
-**A.** $9$ &emsp; **B.** $6$ &emsp; **C.** $10$ &emsp; **D.** $13$
+<div class="qcm-choix">
+<span><strong>A.</strong> $9$</span>
+<span><strong>B.</strong> $6$</span>
+<span><strong>C.</strong> $10$</span>
+<span><strong>D.</strong> $13$</span>
+</div>
 ---CORR---
 L'étendue est l'écart entre la plus grande et la plus petite valeur de la série.
 
@@ -214,7 +224,12 @@ $$A={\color{#4A5D7A}8x^2+12x+20}$$
 {{< auto2-exo numero="05" >}}
 Le produit des solutions de l'équation $(3x-9)(3x+15)=0$ est égal à :
 
-**A.** $15$ &emsp; **B.** $-2$ &emsp; **C.** $0$ &emsp; **D.** $-15$
+<div class="qcm-choix">
+<span><strong>A.</strong> $15$</span>
+<span><strong>B.</strong> $-2$</span>
+<span><strong>C.</strong> $0$</span>
+<span><strong>D.</strong> $-15$</span>
+</div>
 ---CORR---
 On résout d'abord l'équation. Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
@@ -232,7 +247,12 @@ La réponse C est le piège classique : c'est le produit des facteurs qui est nu
 {{< auto2-exo numero="06" >}}
 L'étendue de la série $4\,;\,6\,;\,8\,;\,8\,;\,19$ est :
 
-**A.** $8$ &emsp; **B.** $9$ &emsp; **C.** $15$ &emsp; **D.** $19$
+<div class="qcm-choix">
+<span><strong>A.</strong> $8$</span>
+<span><strong>B.</strong> $9$</span>
+<span><strong>C.</strong> $15$</span>
+<span><strong>D.</strong> $19$</span>
+</div>
 ---CORR---
 L'étendue est l'écart entre la plus grande et la plus petite valeur de la série.
 

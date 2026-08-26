@@ -80,7 +80,12 @@ Une droite passe par les points $A(-1\,;\,5)$ et $B(3\,;\,3)$.
 
 Son coefficient directeur est :
 
-**A.** $\dfrac{1}{2}$ &emsp; **B.** $-\dfrac{1}{2}$ &emsp; **C.** $-2$ &emsp; **D.** $2$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{1}{2}$</span>
+<span><strong>B.</strong> $-\dfrac{1}{2}$</span>
+<span><strong>C.</strong> $-2$</span>
+<span><strong>D.</strong> $2$</span>
+</div>
 ---CORR---
 Le coefficient directeur se calcule par :
 
@@ -98,7 +103,12 @@ La droite descend, donc le coefficient doit être négatif : cela élimine déj�
 {{< auto2-exo numero="06" >}}
 Un prix a doublé. Cela signifie que ce prix a augmenté de :
 
-**A.** $200\,\%$ &emsp; **B.** $2\,\%$ &emsp; **C.** $50\,\%$ &emsp; **D.** $100\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $200\,\%$</span>
+<span><strong>B.</strong> $2\,\%$</span>
+<span><strong>C.</strong> $50\,\%$</span>
+<span><strong>D.</strong> $100\,\%$</span>
+</div>
 ---CORR---
 Doubler, c'est multiplier par $2$ : le coefficient multiplicateur vaut $2$.
 
@@ -188,7 +198,12 @@ Une droite passe par les points $A(2\,;\,7)$ et $B(6\,;\,1)$.
 
 Son coefficient directeur est :
 
-**A.** $\dfrac{3}{2}$ &emsp; **B.** $-\dfrac{2}{3}$ &emsp; **C.** $-\dfrac{3}{2}$ &emsp; **D.** $-6$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{3}{2}$</span>
+<span><strong>B.</strong> $-\dfrac{2}{3}$</span>
+<span><strong>C.</strong> $-\dfrac{3}{2}$</span>
+<span><strong>D.</strong> $-6$</span>
+</div>
 ---CORR---
 Le coefficient directeur se calcule par :
 
@@ -206,7 +221,12 @@ La droite descend, donc le coefficient doit être négatif : cela élimine déj�
 {{< auto2-exo numero="06" >}}
 Un prix a triplé. Cela signifie que ce prix a augmenté de :
 
-**A.** $200\,\%$ &emsp; **B.** $100\,\%$ &emsp; **C.** $3\,\%$ &emsp; **D.** $300\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $200\,\%$</span>
+<span><strong>B.</strong> $100\,\%$</span>
+<span><strong>C.</strong> $3\,\%$</span>
+<span><strong>D.</strong> $300\,\%$</span>
+</div>
 ---CORR---
 Tripler, c'est multiplier par $3$ : le coefficient multiplicateur vaut $3$.
 

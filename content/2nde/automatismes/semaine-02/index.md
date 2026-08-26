@@ -68,7 +68,12 @@ $$\begin{aligned}\dfrac{3}{4}-\dfrac{5}{6} &= \dfrac{3{\color{#4A5D7A}\boldsymbo
 {{< auto2-exo numero="05" >}}
 On considère $A=\dfrac{3}{4-\dfrac{2}{5}}$. $A$ est égal à :
 
-**A.** $\dfrac{18}{5}$ &emsp; **B.** $\dfrac{6}{5}$ &emsp; **C.** $\dfrac{5}{6}$ &emsp; **D.** $\dfrac{3}{18}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{18}{5}$</span>
+<span><strong>B.</strong> $\dfrac{6}{5}$</span>
+<span><strong>C.</strong> $\dfrac{5}{6}$</span>
+<span><strong>D.</strong> $\dfrac{3}{18}$</span>
+</div>
 ---CORR---
 On calcule d'abord le dénominateur, en réduisant au même dénominateur :
 
@@ -84,7 +89,12 @@ $$A=\dfrac{3}{\dfrac{18}{5}}=3\times\dfrac{5}{18}=\dfrac{15}{18}=\dfrac{5\times 
 {{< auto2-exo numero="06" >}}
 Une durée de $96$ minutes correspond à :
 
-**A.** $1{,}36$ heure &emsp; **B.** $1{,}96$ heure &emsp; **C.** $0{,}96$ heure &emsp; **D.** $1{,}6$ heure
+<div class="qcm-choix">
+<span><strong>A.</strong> $1{,}36$ heure</span>
+<span><strong>B.</strong> $1{,}96$ heure</span>
+<span><strong>C.</strong> $0{,}96$ heure</span>
+<span><strong>D.</strong> $1{,}6$ heure</span>
+</div>
 ---CORR---
 Une heure vaut $60$ minutes. Pour convertir des minutes en heures, on divise donc par $60$ :
 
@@ -160,7 +170,12 @@ $$\begin{aligned}\dfrac{2}{3}-\dfrac{7}{9} &= \dfrac{2{\color{#4A5D7A}\boldsymbo
 {{< auto2-exo numero="05" >}}
 On considère $A=\dfrac{2}{3-\dfrac{3}{4}}$. $A$ est égal à :
 
-**A.** $\dfrac{8}{9}$ &emsp; **B.** $\dfrac{9}{8}$ &emsp; **C.** $\dfrac{9}{4}$ &emsp; **D.** $\dfrac{2}{9}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{8}{9}$</span>
+<span><strong>B.</strong> $\dfrac{9}{8}$</span>
+<span><strong>C.</strong> $\dfrac{9}{4}$</span>
+<span><strong>D.</strong> $\dfrac{2}{9}$</span>
+</div>
 ---CORR---
 On calcule d'abord le dénominateur, en réduisant au même dénominateur :
 
@@ -176,7 +191,12 @@ $$A=\dfrac{2}{\dfrac{9}{4}}=2\times\dfrac{4}{9}={\color{#4A5D7A}\dfrac{8}{9}}$$
 {{< auto2-exo numero="06" >}}
 Une durée de $2{,}25$ heures correspond à :
 
-**A.** $225$ minutes &emsp; **B.** $135$ minutes &emsp; **C.** $125$ minutes &emsp; **D.** $145$ minutes
+<div class="qcm-choix">
+<span><strong>A.</strong> $225$ minutes</span>
+<span><strong>B.</strong> $135$ minutes</span>
+<span><strong>C.</strong> $125$ minutes</span>
+<span><strong>D.</strong> $145$ minutes</span>
+</div>
 ---CORR---
 Une heure vaut $60$ minutes. Pour convertir des heures en minutes, on multiplie donc par $60$ :
 

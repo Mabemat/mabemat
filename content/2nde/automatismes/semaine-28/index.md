@@ -80,7 +80,12 @@ L'erreur classique est de n'en donner qu'une : $(-3)^2$ vaut aussi $9$.
 {{< auto2-exo numero="05" >}}
 Les droites d'équations $y=-2x+1$ et $4x+2y-9=0$ sont :
 
-**A.** sécantes &emsp; **B.** confondues &emsp; **C.** parallèles et distinctes &emsp; **D.** perpendiculaires
+<div class="qcm-choix">
+<span><b>A.</b> sécantes</span>
+<span><b>B.</b> confondues</span>
+<span><b>C.</b> parallèles et distinctes</span>
+<span><b>D.</b> perpendiculaires</span>
+</div>
 ---CORR---
 On met la seconde équation sous forme réduite :
 
@@ -96,7 +101,12 @@ $${\color{#4A5D7A}\text{Elles sont parallèles et distinctes.}}$$
 {{< auto2-exo numero="06" >}}
 La moyenne de la série $4\ ;\ 8\ ;\ 8\ ;\ 12$ est :
 
-**A.** $32$ &emsp; **B.** $8$ &emsp; **C.** $6$ &emsp; **D.** $10$
+<div class="qcm-choix">
+<span><b>A.</b> $32$</span>
+<span><b>B.</b> $8$</span>
+<span><b>C.</b> $6$</span>
+<span><b>D.</b> $10$</span>
+</div>
 ---CORR---
 On additionne les valeurs, puis on divise par leur nombre :
 
@@ -184,7 +194,12 @@ L'erreur classique est de n'en donner qu'une : $(-5)^2$ vaut aussi $25$.
 {{< auto2-exo numero="05" >}}
 Les droites d'équations $y=3x+2$ et $6x-2y+1=0$ sont :
 
-**A.** parallèles et distinctes &emsp; **B.** sécantes &emsp; **C.** confondues &emsp; **D.** perpendiculaires
+<div class="qcm-choix">
+<span><b>A.</b> parallèles et distinctes</span>
+<span><b>B.</b> sécantes</span>
+<span><b>C.</b> confondues</span>
+<span><b>D.</b> perpendiculaires</span>
+</div>
 ---CORR---
 On met la seconde équation sous forme réduite :
 
@@ -200,7 +215,12 @@ $${\color{#4A5D7A}\text{Elles sont parallèles et distinctes.}}$$
 {{< auto2-exo numero="06" >}}
 La moyenne de la série $5\ ;\ 9\ ;\ 9\ ;\ 13$ est :
 
-**A.** $36$ &emsp; **B.** $11$ &emsp; **C.** $7$ &emsp; **D.** $9$
+<div class="qcm-choix">
+<span><b>A.</b> $36$</span>
+<span><b>B.</b> $11$</span>
+<span><b>C.</b> $7$</span>
+<span><b>D.</b> $9$</span>
+</div>
 ---CORR---
 On additionne les valeurs, puis on divise par leur nombre :
 

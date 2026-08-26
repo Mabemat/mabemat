@@ -82,7 +82,12 @@ Il ne faut surtout pas développer : la forme factorisée est déjà celle qui d
 {{< auto2-exo numero="05" >}}
 On sait que $P(A)=0{,}35$. La probabilité de l'événement contraire $\overline{A}$ est :
 
-**A.** $0{,}65$ &emsp; **B.** $0{,}35$ &emsp; **C.** $1{,}35$ &emsp; **D.** $-0{,}35$
+<div class="qcm-choix">
+<span><b>A.</b> $0{,}65$</span>
+<span><b>B.</b> $0{,}35$</span>
+<span><b>C.</b> $1{,}35$</span>
+<span><b>D.</b> $-0{,}35$</span>
+</div>
 ---CORR---
 Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.
 
@@ -96,7 +101,12 @@ Les réponses C et D sont impossibles : une probabilité est toujours comprise e
 {{< auto2-exo numero="06" >}}
 On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d'obtenir un roi est :
 
-**A.** $\dfrac{1}{32}$ &emsp; **B.** $\dfrac{1}{4}$ &emsp; **C.** $\dfrac{4}{8}$ &emsp; **D.** $\dfrac{1}{8}$
+<div class="qcm-choix">
+<span><b>A.</b> $\dfrac{1}{32}$</span>
+<span><b>B.</b> $\dfrac{1}{4}$</span>
+<span><b>C.</b> $\dfrac{4}{8}$</span>
+<span><b>D.</b> $\dfrac{1}{8}$</span>
+</div>
 ---CORR---
 Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $32$.
 
@@ -188,7 +198,12 @@ Il ne faut surtout pas développer : la forme factorisée est déjà celle qui d
 {{< auto2-exo numero="05" >}}
 On sait que $P(A)=0{,}28$. La probabilité de l'événement contraire $\overline{A}$ est :
 
-**A.** $-0{,}28$ &emsp; **B.** $0{,}72$ &emsp; **C.** $1{,}28$ &emsp; **D.** $0{,}28$
+<div class="qcm-choix">
+<span><b>A.</b> $-0{,}28$</span>
+<span><b>B.</b> $0{,}72$</span>
+<span><b>C.</b> $1{,}28$</span>
+<span><b>D.</b> $0{,}28$</span>
+</div>
 ---CORR---
 Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.
 
@@ -202,7 +217,12 @@ Les réponses C et A sont impossibles : une probabilité est toujours comprise e
 {{< auto2-exo numero="06" >}}
 On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d'obtenir un cœur est :
 
-**A.** $\dfrac{1}{13}$ &emsp; **B.** $\dfrac{1}{52}$ &emsp; **C.** $\dfrac{1}{4}$ &emsp; **D.** $\dfrac{13}{4}$
+<div class="qcm-choix">
+<span><b>A.</b> $\dfrac{1}{13}$</span>
+<span><b>B.</b> $\dfrac{1}{52}$</span>
+<span><b>C.</b> $\dfrac{1}{4}$</span>
+<span><b>D.</b> $\dfrac{13}{4}$</span>
+</div>
 ---CORR---
 Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $52$.
 

@@ -80,7 +80,12 @@ On retrouve le même résultat en comptant directement les $8-3=5$ boules non ro
 {{< auto2-exo numero="05" >}}
 Dans une série de $20$ valeurs rangées dans l'ordre croissant, le premier quartile $Q_1$ est la valeur de rang :
 
-**A.** $4$ &emsp; **B.** $10$ &emsp; **C.** $5{,}5$ &emsp; **D.** $5$
+<div class="qcm-choix">
+<span><b>A.</b> $4$</span>
+<span><b>B.</b> $10$</span>
+<span><b>C.</b> $5{,}5$</span>
+<span><b>D.</b> $5$</span>
+</div>
 ---CORR---
 Pour le premier quartile, on calcule le quart de l'effectif :
 
@@ -96,7 +101,12 @@ Si le quart n'avait pas été entier, on aurait pris le rang immédiatement sup�
 {{< auto2-exo numero="06" >}}
 Après une hausse de $25\,\%$, quelle baisse faut-il appliquer pour retrouver le prix initial ?
 
-**A.** $25\,\%$ &emsp; **B.** $20\,\%$ &emsp; **C.** $75\,\%$ &emsp; **D.** $12{,}5\,\%$
+<div class="qcm-choix">
+<span><b>A.</b> $25\,\%$</span>
+<span><b>B.</b> $20\,\%$</span>
+<span><b>C.</b> $75\,\%$</span>
+<span><b>D.</b> $12{,}5\,\%$</span>
+</div>
 ---CORR---
 La hausse correspond au coefficient $1{,}25$. Pour revenir au prix de départ, le coefficient de la baisse doit annuler cet effet, c'est-à-dire que le produit des deux doit valoir $1$ :
 
@@ -186,7 +196,12 @@ On retrouve le même résultat en comptant directement les $10-4=6$ boules non v
 {{< auto2-exo numero="05" >}}
 Dans une série de $20$ valeurs rangées dans l'ordre croissant, le troisième quartile $Q_3$ est la valeur de rang :
 
-**A.** $15$ &emsp; **B.** $16$ &emsp; **C.** $14$ &emsp; **D.** $10$
+<div class="qcm-choix">
+<span><b>A.</b> $15$</span>
+<span><b>B.</b> $16$</span>
+<span><b>C.</b> $14$</span>
+<span><b>D.</b> $10$</span>
+</div>
 ---CORR---
 Pour le troisième quartile, on calcule les trois quarts de l'effectif :
 
@@ -202,7 +217,12 @@ Si les trois quarts n'avaient pas été entiers, on aurait pris le rang immédia
 {{< auto2-exo numero="06" >}}
 Après une baisse de $20\,\%$, quelle hausse faut-il appliquer pour retrouver le prix initial ?
 
-**A.** $80\,\%$ &emsp; **B.** $20\,\%$ &emsp; **C.** $25\,\%$ &emsp; **D.** $120\,\%$
+<div class="qcm-choix">
+<span><b>A.</b> $80\,\%$</span>
+<span><b>B.</b> $20\,\%$</span>
+<span><b>C.</b> $25\,\%$</span>
+<span><b>D.</b> $120\,\%$</span>
+</div>
 ---CORR---
 La baisse correspond au coefficient $0{,}8$. Pour revenir au prix de départ, le coefficient de la hausse doit annuler cet effet, c'est-à-dire que le produit des deux doit valoir $1$ :
 

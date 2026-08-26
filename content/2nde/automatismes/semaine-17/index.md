@@ -70,7 +70,12 @@ Le nombre étant plus grand que $10$, l'exposant est bien positif.
 {{< auto2-exo numero="05" >}}
 Le nombre $\dfrac{2^{10}}{2^{7}}$ est égal à :
 
-**A.** $8$ &emsp; **B.** $2^{1{,}5}$ &emsp; **C.** $2^{17}$ &emsp; **D.** $1^{3}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $8$</span>
+<span><strong>B.</strong> $2^{1{,}5}$</span>
+<span><strong>C.</strong> $2^{17}$</span>
+<span><strong>D.</strong> $1^{3}$</span>
+</div>
 ---CORR---
 Pour un quotient de puissances de même base, on soustrait les exposants :
 
@@ -84,7 +89,12 @@ La réponse C additionne les exposants au lieu de les soustraire, et la réponse
 {{< auto2-exo numero="06" >}}
 La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-4x+7$ est :
 
-**A.** croissante sur $\mathbb{R}$ &emsp; **B.** constante &emsp; **C.** décroissante sur $\mathbb{R}$ &emsp; **D.** croissante puis décroissante
+<div class="qcm-choix">
+<span><strong>A.</strong> croissante sur $\mathbb{R}$</span>
+<span><strong>B.</strong> constante</span>
+<span><strong>C.</strong> décroissante sur $\mathbb{R}$</span>
+<span><strong>D.</strong> croissante puis décroissante</span>
+</div>
 ---CORR---
 Une fonction affine s'écrit $f(x)=mx+p$. Son sens de variation ne dépend que du signe du coefficient directeur $m$.
 
@@ -164,7 +174,12 @@ Le nombre étant plus petit que $1$, l'exposant est bien négatif.
 {{< auto2-exo numero="05" >}}
 Le nombre $\dfrac{3^{9}}{3^{6}}$ est égal à :
 
-**A.** $3^{15}$ &emsp; **B.** $1^{3}$ &emsp; **C.** $3^{1{,}5}$ &emsp; **D.** $27$
+<div class="qcm-choix">
+<span><strong>A.</strong> $3^{15}$</span>
+<span><strong>B.</strong> $1^{3}$</span>
+<span><strong>C.</strong> $3^{1{,}5}$</span>
+<span><strong>D.</strong> $27$</span>
+</div>
 ---CORR---
 Pour un quotient de puissances de même base, on soustrait les exposants :
 
@@ -178,7 +193,12 @@ La réponse A additionne les exposants au lieu de les soustraire, et la réponse
 {{< auto2-exo numero="06" >}}
 La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3x-8$ est :
 
-**A.** décroissante sur $\mathbb{R}$ &emsp; **B.** croissante sur $\mathbb{R}$ &emsp; **C.** constante &emsp; **D.** décroissante puis croissante
+<div class="qcm-choix">
+<span><strong>A.</strong> décroissante sur $\mathbb{R}$</span>
+<span><strong>B.</strong> croissante sur $\mathbb{R}$</span>
+<span><strong>C.</strong> constante</span>
+<span><strong>D.</strong> décroissante puis croissante</span>
+</div>
 ---CORR---
 Une fonction affine s'écrit $f(x)=mx+p$. Son sens de variation ne dépend que du signe du coefficient directeur $m$.
 

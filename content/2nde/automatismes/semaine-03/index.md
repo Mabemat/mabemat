@@ -82,7 +82,12 @@ $${\color{#4A5D7A}-0{,}5\notin\left]-\dfrac{1}{2}\,;\,+\infty\right[}$$
 {{< auto2-exo numero="05" >}}
 Une factorisation de $16x^2-49$ est :
 
-**A.** $(16x+49)(16x-49)$ &emsp; **B.** $(4x-7)(4x+7)$ &emsp; **C.** $(4x-7)^2$ &emsp; **D.** $(16x+7)(16x-7)$
+<div class="qcm-choix">
+<span><strong>A.</strong> $(16x+49)(16x-49)$</span>
+<span><strong>B.</strong> $(4x-7)(4x+7)$</span>
+<span><strong>C.</strong> $(4x-7)^2$</span>
+<span><strong>D.</strong> $(16x+7)(16x-7)$</span>
+</div>
 ---CORR---
 On reconnaît une différence de deux carrés, qui se factorise avec l'identité remarquable :
 
@@ -102,7 +107,12 @@ $$16x^2-49={\color{#4A5D7A}(4x-7)(4x+7)}$$
 {{< auto2-exo numero="06" >}}
 $p\,\%$ de $80$ est égal à $6$. On a :
 
-**A.** $p=0{,}75$ &emsp; **B.** $p=13{,}3$ &emsp; **C.** $p=75$ &emsp; **D.** $p=7{,}5$
+<div class="qcm-choix">
+<span><strong>A.</strong> $p=0{,}75$</span>
+<span><strong>B.</strong> $p=13{,}3$</span>
+<span><strong>C.</strong> $p=75$</span>
+<span><strong>D.</strong> $p=7{,}5$</span>
+</div>
 ---CORR---
 Prendre $p\,\%$ de $80$, c'est calculer $\dfrac{p}{100}\times 80$. On traduit l'énoncé par une égalité :
 
@@ -196,7 +206,12 @@ $${\color{#4A5D7A}0{,}75\in\left]-\infty\,;\,\dfrac{3}{4}\right]}$$
 {{< auto2-exo numero="05" >}}
 Une factorisation de $25x^2-64$ est :
 
-**A.** $(25x+8)(25x-8)$ &emsp; **B.** $(5x-8)^2$ &emsp; **C.** $(5x-8)(5x+8)$ &emsp; **D.** $(25x+64)(25x-64)$
+<div class="qcm-choix">
+<span><strong>A.</strong> $(25x+8)(25x-8)$</span>
+<span><strong>B.</strong> $(5x-8)^2$</span>
+<span><strong>C.</strong> $(5x-8)(5x+8)$</span>
+<span><strong>D.</strong> $(25x+64)(25x-64)$</span>
+</div>
 ---CORR---
 On reconnaît une différence de deux carrés, qui se factorise avec l'identité remarquable :
 
@@ -216,7 +231,12 @@ $$25x^2-64={\color{#4A5D7A}(5x-8)(5x+8)}$$
 {{< auto2-exo numero="06" >}}
 $p\,\%$ de $150$ est égal à $9$. On a :
 
-**A.** $p=6$ &emsp; **B.** $p=60$ &emsp; **C.** $p=1{,}5$ &emsp; **D.** $p=0{,}6$
+<div class="qcm-choix">
+<span><strong>A.</strong> $p=6$</span>
+<span><strong>B.</strong> $p=60$</span>
+<span><strong>C.</strong> $p=1{,}5$</span>
+<span><strong>D.</strong> $p=0{,}6$</span>
+</div>
 ---CORR---
 Prendre $p\,\%$ de $150$, c'est calculer $\dfrac{p}{100}\times 150$. On traduit l'énoncé par une égalité :
 

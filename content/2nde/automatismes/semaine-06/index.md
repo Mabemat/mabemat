@@ -90,7 +90,12 @@ Comme $1{,}32=1+0{,}32$, le prix a augmenté de ${\color{#4A5D7A}32\,\%}$ au tot
 {{< auto2-exo numero="05" >}}
 Le taux d'évolution associé à un coefficient multiplicateur de $0{,}25$ est :
 
-**A.** $-0{,}25\,\%$ &emsp; **B.** $-25\,\%$ &emsp; **C.** $-75\,\%$ &emsp; **D.** $-2{,}5\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $-0{,}25\,\%$</span>
+<span><strong>B.</strong> $-25\,\%$</span>
+<span><strong>C.</strong> $-75\,\%$</span>
+<span><strong>D.</strong> $-2{,}5\,\%$</span>
+</div>
 ---CORR---
 Le coefficient multiplicateur et le taux sont liés par la relation :
 
@@ -110,7 +115,12 @@ Le coefficient étant inférieur à $1$, il s'agit bien d'une baisse. Multiplier
 {{< auto2-exo numero="06" >}}
 $20\,\%$ de $N$ est égal à $14$. On a :
 
-**A.** $N=70$ &emsp; **B.** $N=2{,}8$ &emsp; **C.** $N=280$ &emsp; **D.** $N=0{,}7$
+<div class="qcm-choix">
+<span><strong>A.</strong> $N=70$</span>
+<span><strong>B.</strong> $N=2{,}8$</span>
+<span><strong>C.</strong> $N=280$</span>
+<span><strong>D.</strong> $N=0{,}7$</span>
+</div>
 ---CORR---
 On traduit l'énoncé par une égalité :
 
@@ -212,7 +222,12 @@ Comme $1{,}35=1+0{,}35$, le prix a augmenté de ${\color{#4A5D7A}35\,\%}$ au tot
 {{< auto2-exo numero="05" >}}
 Le taux d'évolution associé à un coefficient multiplicateur de $1{,}08$ est :
 
-**A.** $+0{,}8\,\%$ &emsp; **B.** $+8\,\%$ &emsp; **C.** $+1{,}08\,\%$ &emsp; **D.** $+108\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $+0{,}8\,\%$</span>
+<span><strong>B.</strong> $+8\,\%$</span>
+<span><strong>C.</strong> $+1{,}08\,\%$</span>
+<span><strong>D.</strong> $+108\,\%$</span>
+</div>
 ---CORR---
 Le coefficient multiplicateur et le taux sont liés par la relation :
 
@@ -232,7 +247,12 @@ Le coefficient étant supérieur à $1$, il s'agit bien d'une hausse. La répons
 {{< auto2-exo numero="06" >}}
 $25\,\%$ de $N$ est égal à $18$. On a :
 
-**A.** $N=4{,}5$ &emsp; **B.** $N=450$ &emsp; **C.** $N=0{,}72$ &emsp; **D.** $N=72$
+<div class="qcm-choix">
+<span><strong>A.</strong> $N=4{,}5$</span>
+<span><strong>B.</strong> $N=450$</span>
+<span><strong>C.</strong> $N=0{,}72$</span>
+<span><strong>D.</strong> $N=72$</span>
+</div>
 ---CORR---
 On traduit l'énoncé par une égalité :
 

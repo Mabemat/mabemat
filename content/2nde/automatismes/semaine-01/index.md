@@ -68,7 +68,12 @@ $$\dfrac{1}{3}\times 18={\color{#4A5D7A}6}\ \text{garçons.}$$
 {{< auto2-exo numero="05" >}}
 On considère $A=\dfrac{43}{1\,000}+\dfrac{351}{100}$. On a :
 
-**A.** $A=3{,}553$ &emsp; **B.** $A=3{,}943$ &emsp; **C.** $A=0{,}039\,4$ &emsp; **D.** $A=0{,}394$
+<div class="qcm-choix">
+<span><strong>A.</strong> $A=3{,}553$</span>
+<span><strong>B.</strong> $A=3{,}943$</span>
+<span><strong>C.</strong> $A=0{,}039\,4$</span>
+<span><strong>D.</strong> $A=0{,}394$</span>
+</div>
 ---CORR---
 On écrit chaque fraction sous forme décimale. Diviser par $1\,000$ décale la virgule de trois rangs, diviser par $100$ la décale de deux rangs :
 
@@ -86,7 +91,12 @@ Dans un lycée, il y a $750$ élèves inscrits. $24\,\%$ d'entre eux sont demi-p
 
 Le nombre de demi-pensionnaires est :
 
-**A.** $18$ &emsp; **B.** $1\,800$ &emsp; **C.** $312{,}5$ &emsp; **D.** $180$
+<div class="qcm-choix">
+<span><strong>A.</strong> $18$</span>
+<span><strong>B.</strong> $1\,800$</span>
+<span><strong>C.</strong> $312{,}5$</span>
+<span><strong>D.</strong> $180$</span>
+</div>
 ---CORR---
 Prendre $24\,\%$ d'une quantité, c'est la multiplier par $\dfrac{24}{100}=0{,}24$ :
 
@@ -160,7 +170,12 @@ $$\dfrac{1}{4}\times 16={\color{#4A5D7A}4}\ \text{garçons.}$$
 {{< auto2-exo numero="05" >}}
 On considère $A=\dfrac{57}{1\,000}+\dfrac{264}{100}$. On a :
 
-**A.** $A=3{,}21$ &emsp; **B.** $A=2{,}697$ &emsp; **C.** $A=0{,}269\,7$ &emsp; **D.** $A=2{,}645\,7$
+<div class="qcm-choix">
+<span><strong>A.</strong> $A=3{,}21$</span>
+<span><strong>B.</strong> $A=2{,}697$</span>
+<span><strong>C.</strong> $A=0{,}269\,7$</span>
+<span><strong>D.</strong> $A=2{,}645\,7$</span>
+</div>
 ---CORR---
 On écrit chaque fraction sous forme décimale. Diviser par $1\,000$ décale la virgule de trois rangs, diviser par $100$ la décale de deux rangs :
 
@@ -178,7 +193,12 @@ Dans un lycée, il y a $840$ élèves inscrits. $35\,\%$ d'entre eux sont extern
 
 Le nombre d'externes est :
 
-**A.** $24$ &emsp; **B.** $2\,940$ &emsp; **C.** $294$ &emsp; **D.** $240$
+<div class="qcm-choix">
+<span><strong>A.</strong> $24$</span>
+<span><strong>B.</strong> $2\,940$</span>
+<span><strong>C.</strong> $294$</span>
+<span><strong>D.</strong> $240$</span>
+</div>
 ---CORR---
 Prendre $35\,\%$ d'une quantité, c'est la multiplier par $\dfrac{35}{100}=0{,}35$ :
 

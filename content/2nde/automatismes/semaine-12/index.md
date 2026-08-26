@@ -81,7 +81,12 @@ $$A=0{,}62 \qquad B=\dfrac{58}{100} \qquad C=\dfrac{3}{5}$$
 
 Le classement par ordre croissant est :
 
-**A.** $C < B < A$ &emsp; **B.** $B < C < A$ &emsp; **C.** $A < B < C$ &emsp; **D.** $B < A < C$
+<div class="qcm-choix">
+<span><strong>A.</strong> $C < B < A$</span>
+<span><strong>B.</strong> $B < C < A$</span>
+<span><strong>C.</strong> $A < B < C$</span>
+<span><strong>D.</strong> $B < A < C$</span>
+</div>
 ---CORR---
 Pour comparer, on écrit tout sous forme décimale.
 
@@ -99,7 +104,12 @@ Un sac contient $5$ jetons numérotés de $1$ à $5$. On en tire un au hasard.
 
 La probabilité d'obtenir un numéro supérieur ou égal à $4$ est :
 
-**A.** $\dfrac{1}{5}$ &emsp; **B.** $\dfrac{3}{5}$ &emsp; **C.** $\dfrac{2}{5}$ &emsp; **D.** $\dfrac{4}{5}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{1}{5}$</span>
+<span><strong>B.</strong> $\dfrac{3}{5}$</span>
+<span><strong>C.</strong> $\dfrac{2}{5}$</span>
+<span><strong>D.</strong> $\dfrac{4}{5}$</span>
+</div>
 ---CORR---
 Les jetons sont indiscernables : les $5$ issues sont équiprobables.
 
@@ -193,7 +203,12 @@ $$A=0{,}48 \qquad B=\dfrac{51}{100} \qquad C=\dfrac{9}{20}$$
 
 Le classement par ordre croissant est :
 
-**A.** $A < C < B$ &emsp; **B.** $C < B < A$ &emsp; **C.** $B < A < C$ &emsp; **D.** $C < A < B$
+<div class="qcm-choix">
+<span><strong>A.</strong> $A < C < B$</span>
+<span><strong>B.</strong> $C < B < A$</span>
+<span><strong>C.</strong> $B < A < C$</span>
+<span><strong>D.</strong> $C < A < B$</span>
+</div>
 ---CORR---
 Pour comparer, on écrit tout sous forme décimale.
 
@@ -211,7 +226,12 @@ Un sac contient $8$ jetons numérotés de $1$ à $8$. On en tire un au hasard.
 
 La probabilité d'obtenir un numéro supérieur ou égal à $6$ est :
 
-**A.** $\dfrac{3}{8}$ &emsp; **B.** $\dfrac{5}{8}$ &emsp; **C.** $\dfrac{1}{8}$ &emsp; **D.** $\dfrac{2}{8}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{3}{8}$</span>
+<span><strong>B.</strong> $\dfrac{5}{8}$</span>
+<span><strong>C.</strong> $\dfrac{1}{8}$</span>
+<span><strong>D.</strong> $\dfrac{2}{8}$</span>
+</div>
 ---CORR---
 Les jetons sont indiscernables : les $8$ issues sont équiprobables.
 

@@ -82,7 +82,12 @@ Vérification : $3^{-1}=\dfrac{1}{3}$, et $\dfrac{243\times\frac{1}{9}}{81}=\dfr
 {{< auto2-exo numero="05" >}}
 Combien de solutions réelles possède l'équation $6=-x^2+31$ ?
 
-**A.** $0$ solution &emsp; **B.** $1$ solution &emsp; **C.** $2$ solutions &emsp; **D.** une infinité de solutions
+<div class="qcm-choix">
+<span><strong>A.</strong> $0$ solution</span>
+<span><strong>B.</strong> $1$ solution</span>
+<span><strong>C.</strong> $2$ solutions</span>
+<span><strong>D.</strong> une infinité de solutions</span>
+</div>
 ---CORR---
 On isole $x^2$. On ajoute $x^2$ à chaque membre, puis on retranche $6$ :
 
@@ -98,7 +103,12 @@ Il y a donc ${\color{#4A5D7A}2}$ solutions.
 {{< auto2-exo numero="06" >}}
 L'opération qui permet de calculer $35\,\%$ de $420$ est :
 
-**A.** $\dfrac{35+420}{100}$ &emsp; **B.** $\dfrac{35\times 420}{100}$ &emsp; **C.** $35\times 420$ &emsp; **D.** $\dfrac{420\times 100}{35}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{35+420}{100}$</span>
+<span><strong>B.</strong> $\dfrac{35\times 420}{100}$</span>
+<span><strong>C.</strong> $35\times 420$</span>
+<span><strong>D.</strong> $\dfrac{420\times 100}{35}$</span>
+</div>
 ---CORR---
 Prendre $35\,\%$ d'une quantité, c'est la multiplier par la fraction $\dfrac{35}{100}$ :
 
@@ -190,7 +200,12 @@ Vérification : $5^{-2}=\dfrac{1}{25}$, et $\dfrac{125}{3125}=\dfrac{1}{25}$.
 {{< auto2-exo numero="05" >}}
 Combien de solutions réelles possède l'équation $9=-x^2+58$ ?
 
-**A.** $2$ solutions &emsp; **B.** $1$ solution &emsp; **C.** $0$ solution &emsp; **D.** une infinité de solutions
+<div class="qcm-choix">
+<span><strong>A.</strong> $2$ solutions</span>
+<span><strong>B.</strong> $1$ solution</span>
+<span><strong>C.</strong> $0$ solution</span>
+<span><strong>D.</strong> une infinité de solutions</span>
+</div>
 ---CORR---
 On isole $x^2$. On ajoute $x^2$ à chaque membre, puis on retranche $9$ :
 
@@ -206,7 +221,12 @@ Il y a donc ${\color{#4A5D7A}2}$ solutions.
 {{< auto2-exo numero="06" >}}
 L'opération qui permet de calculer $45\,\%$ de $260$ est :
 
-**A.** $\dfrac{260\times 100}{45}$ &emsp; **B.** $\dfrac{45+260}{100}$ &emsp; **C.** $45\times 260$ &emsp; **D.** $\dfrac{45\times 260}{100}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{260\times 100}{45}$</span>
+<span><strong>B.</strong> $\dfrac{45+260}{100}$</span>
+<span><strong>C.</strong> $45\times 260$</span>
+<span><strong>D.</strong> $\dfrac{45\times 260}{100}$</span>
+</div>
 ---CORR---
 Prendre $45\,\%$ d'une quantité, c'est la multiplier par la fraction $\dfrac{45}{100}$ :
 

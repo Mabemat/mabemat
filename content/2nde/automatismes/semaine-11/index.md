@@ -78,7 +78,12 @@ Le prix d'un sac a baissé de $19\,\%$. Il coûte maintenant $298$ euros.
 
 Le prix initial, en euros, est donné par le calcul :
 
-**A.** $298\times 0{,}81$ &emsp; **B.** $\dfrac{298}{1{,}19}$ &emsp; **C.** $298\times 1{,}19$ &emsp; **D.** $\dfrac{298}{0{,}81}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $298\times 0{,}81$</span>
+<span><strong>B.</strong> $\dfrac{298}{1{,}19}$</span>
+<span><strong>C.</strong> $298\times 1{,}19$</span>
+<span><strong>D.</strong> $\dfrac{298}{0{,}81}$</span>
+</div>
 ---CORR---
 Une baisse de $19\,\%$ correspond au coefficient multiplicateur $1-0{,}19=0{,}81$.
 
@@ -100,7 +105,12 @@ On considère la fonction $f$ définie par $f(x)=(3x-1)(2x+5)$.
 
 L'image de $-2$ par la fonction $f$ est égale à :
 
-**A.** $-1$ &emsp; **B.** $7$ &emsp; **C.** $-7$ &emsp; **D.** $-14$
+<div class="qcm-choix">
+<span><strong>A.</strong> $-1$</span>
+<span><strong>B.</strong> $7$</span>
+<span><strong>C.</strong> $-7$</span>
+<span><strong>D.</strong> $-14$</span>
+</div>
 ---CORR---
 Inutile de développer : on remplace directement $x$ par $-2$ dans chaque parenthèse.
 
@@ -192,7 +202,12 @@ Le prix d'un manteau a baissé de $23\,\%$. Il coûte maintenant $154$ euros.
 
 Le prix initial, en euros, est donné par le calcul :
 
-**A.** $\dfrac{154}{0{,}77}$ &emsp; **B.** $\dfrac{154}{1{,}23}$ &emsp; **C.** $154\times 0{,}77$ &emsp; **D.** $154\times 1{,}23$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{154}{0{,}77}$</span>
+<span><strong>B.</strong> $\dfrac{154}{1{,}23}$</span>
+<span><strong>C.</strong> $154\times 0{,}77$</span>
+<span><strong>D.</strong> $154\times 1{,}23$</span>
+</div>
 ---CORR---
 Une baisse de $23\,\%$ correspond au coefficient multiplicateur $1-0{,}23=0{,}77$.
 
@@ -214,7 +229,12 @@ On considère la fonction $f$ définie par $f(x)=(2x+3)(4x-1)$.
 
 L'image de $-3$ par la fonction $f$ est égale à :
 
-**A.** $-39$ &emsp; **B.** $39$ &emsp; **C.** $9$ &emsp; **D.** $-9$
+<div class="qcm-choix">
+<span><strong>A.</strong> $-39$</span>
+<span><strong>B.</strong> $39$</span>
+<span><strong>C.</strong> $9$</span>
+<span><strong>D.</strong> $-9$</span>
+</div>
 ---CORR---
 Inutile de développer : on remplace directement $x$ par $-3$ dans chaque parenthèse.
 

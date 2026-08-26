@@ -80,7 +80,12 @@ $$S={\color{#4A5D7A}\left\lbrace -\dfrac{1}{4}\,;\,6\right\rbrace}$$
 {{< auto2-exo numero="05" >}}
 L'ensemble $S$ des solutions de l'équation $(x-5)^2=-4$ est :
 
-**A.** $S=\lbrace -2\,;\,2\rbrace$ &emsp; **B.** $S=\lbrace 3\,;\,7\rbrace$ &emsp; **C.** $S=\lbrace 5\rbrace$ &emsp; **D.** $S=\varnothing$
+<div class="qcm-choix">
+<span><strong>A.</strong> $S=\lbrace -2\,;\,2\rbrace$</span>
+<span><strong>B.</strong> $S=\lbrace 3\,;\,7\rbrace$</span>
+<span><strong>C.</strong> $S=\lbrace 5\rbrace$</span>
+<span><strong>D.</strong> $S=\varnothing$</span>
+</div>
 ---CORR---
 Le membre de gauche est un carré. Or le carré d'un nombre réel est toujours positif ou nul :
 
@@ -100,7 +105,12 @@ Dans un lycée, $180$ élèves étudient l'italien, ce qui représente $15\,\%$ 
 
 Le nombre d'élèves inscrits dans ce lycée est :
 
-**A.** $27$ &emsp; **B.** $1\,200$ &emsp; **C.** $120$ &emsp; **D.** $2\,700$
+<div class="qcm-choix">
+<span><strong>A.</strong> $27$</span>
+<span><strong>B.</strong> $1\,200$</span>
+<span><strong>C.</strong> $120$</span>
+<span><strong>D.</strong> $2\,700$</span>
+</div>
 ---CORR---
 On note $N$ le nombre d'élèves inscrits. L'énoncé se traduit par :
 
@@ -194,7 +204,12 @@ $$S={\color{#4A5D7A}\left\lbrace -8\,;\,\dfrac{2}{3}\right\rbrace}$$
 {{< auto2-exo numero="05" >}}
 L'ensemble $S$ des solutions de l'équation $(x+3)^2=-9$ est :
 
-**A.** $S=\varnothing$ &emsp; **B.** $S=\lbrace -6\,;\,0\rbrace$ &emsp; **C.** $S=\lbrace -3\rbrace$ &emsp; **D.** $S=\lbrace 3\,;\,-3\rbrace$
+<div class="qcm-choix">
+<span><strong>A.</strong> $S=\varnothing$</span>
+<span><strong>B.</strong> $S=\lbrace -6\,;\,0\rbrace$</span>
+<span><strong>C.</strong> $S=\lbrace -3\rbrace$</span>
+<span><strong>D.</strong> $S=\lbrace 3\,;\,-3\rbrace$</span>
+</div>
 ---CORR---
 Le membre de gauche est un carré. Or le carré d'un nombre réel est toujours positif ou nul :
 
@@ -214,7 +229,12 @@ Dans un lycée, $84$ élèves étudient le russe, ce qui représente $6\,\%$ du 
 
 Le nombre d'élèves inscrits dans ce lycée est :
 
-**A.** $5{,}04$ &emsp; **B.** $140$ &emsp; **C.** $1\,400$ &emsp; **D.** $504$
+<div class="qcm-choix">
+<span><strong>A.</strong> $5{,}04$</span>
+<span><strong>B.</strong> $140$</span>
+<span><strong>C.</strong> $1\,400$</span>
+<span><strong>D.</strong> $504$</span>
+</div>
 ---CORR---
 On note $N$ le nombre d'élèves inscrits. L'énoncé se traduit par :
 

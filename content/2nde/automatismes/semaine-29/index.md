@@ -84,7 +84,12 @@ Moyenne et médiane sont deux indicateurs différents : ici la moyenne est tiré
 {{< auto2-exo numero="05" >}}
 On lance un dé équilibré à six faces. La probabilité d'obtenir au moins $5$ est :
 
-**A.** $\dfrac{1}{6}$ &emsp; **B.** $\dfrac{1}{3}$ &emsp; **C.** $\dfrac{5}{6}$ &emsp; **D.** $\dfrac{2}{3}$
+<div class="qcm-choix">
+<span><b>A.</b> $\dfrac{1}{6}$</span>
+<span><b>B.</b> $\dfrac{1}{3}$</span>
+<span><b>C.</b> $\dfrac{5}{6}$</span>
+<span><b>D.</b> $\dfrac{2}{3}$</span>
+</div>
 ---CORR---
 « Au moins $5$ » signifie $5$ ou $6$ : l'événement compte $2$ issues favorables sur $6$ issues équiprobables.
 
@@ -98,7 +103,12 @@ La réponse A ne compte qu'une seule issue, en oubliant que $6$ est aussi « au 
 {{< auto2-exo numero="06" >}}
 Le nombre $\dfrac{\left(10^{3}\right)^{2}}{10^{-2}}$ est égal à :
 
-**A.** $10^{4}$ &emsp; **B.** $10^{6}$ &emsp; **C.** $10^{8}$ &emsp; **D.** $10^{-8}$
+<div class="qcm-choix">
+<span><b>A.</b> $10^{4}$</span>
+<span><b>B.</b> $10^{6}$</span>
+<span><b>C.</b> $10^{8}$</span>
+<span><b>D.</b> $10^{-8}$</span>
+</div>
 ---CORR---
 Pour une puissance de puissance, on **multiplie** les exposants :
 
@@ -194,7 +204,12 @@ Ici les deux indicateurs coïncident, ce qui traduit une série assez symétriqu
 {{< auto2-exo numero="05" >}}
 On lance un dé équilibré à six faces. La probabilité d'obtenir au moins $3$ est :
 
-**A.** $\dfrac{5}{6}$ &emsp; **B.** $\dfrac{1}{3}$ &emsp; **C.** $\dfrac{1}{2}$ &emsp; **D.** $\dfrac{2}{3}$
+<div class="qcm-choix">
+<span><b>A.</b> $\dfrac{5}{6}$</span>
+<span><b>B.</b> $\dfrac{1}{3}$</span>
+<span><b>C.</b> $\dfrac{1}{2}$</span>
+<span><b>D.</b> $\dfrac{2}{3}$</span>
+</div>
 ---CORR---
 « Au moins $3$ » signifie $3$, $4$, $5$ ou $6$ : l'événement compte $4$ issues favorables sur $6$ issues équiprobables.
 
@@ -208,7 +223,12 @@ On peut aussi passer par l'événement contraire, « obtenir au plus $2$ », de 
 {{< auto2-exo numero="06" >}}
 Le nombre $\dfrac{\left(10^{4}\right)^{2}}{10^{-3}}$ est égal à :
 
-**A.** $10^{11}$ &emsp; **B.** $10^{5}$ &emsp; **C.** $10^{8}$ &emsp; **D.** $10^{-11}$
+<div class="qcm-choix">
+<span><b>A.</b> $10^{11}$</span>
+<span><b>B.</b> $10^{5}$</span>
+<span><b>C.</b> $10^{8}$</span>
+<span><b>D.</b> $10^{-11}$</span>
+</div>
 ---CORR---
 Pour une puissance de puissance, on **multiplie** les exposants :
 

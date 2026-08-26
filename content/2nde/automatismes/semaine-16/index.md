@@ -82,7 +82,12 @@ $$\begin{aligned}{\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\
 {{< auto2-exo numero="05" >}}
 On considère le nombre $N=\dfrac{10^{6}}{5^{3}}$. On a :
 
-**A.** $N=2^{3}$ &emsp; **B.** $N=20$ &emsp; **C.** $N=\dfrac{1}{10^{3}}$ &emsp; **D.** $N=8\times 10^{3}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $N=2^{3}$</span>
+<span><strong>B.</strong> $N=20$</span>
+<span><strong>C.</strong> $N=\dfrac{1}{10^{3}}$</span>
+<span><strong>D.</strong> $N=8\times 10^{3}$</span>
+</div>
 ---CORR---
 On décompose $10$ en produit de facteurs premiers pour faire apparaître le $5$ du dénominateur :
 
@@ -106,7 +111,12 @@ Un article coûte $40$ €. Son prix augmente de $15\,\%$.
 
 Son nouveau prix, en euros, est :
 
-**A.** $6$ &emsp; **B.** $55$ &emsp; **C.** $46$ &emsp; **D.** $41{,}5$
+<div class="qcm-choix">
+<span><strong>A.</strong> $6$</span>
+<span><strong>B.</strong> $55$</span>
+<span><strong>C.</strong> $46$</span>
+<span><strong>D.</strong> $41{,}5$</span>
+</div>
 ---CORR---
 Augmenter de $15\,\%$ revient à multiplier par $1+0{,}15=1{,}15$ :
 
@@ -196,7 +206,12 @@ $$\begin{aligned}{\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\
 {{< auto2-exo numero="05" >}}
 On considère le nombre $N=\dfrac{10^{5}}{2^{3}}$. On a :
 
-**A.** $N=5^{3}$ &emsp; **B.** $N=1{,}25\times 10^{4}$ &emsp; **C.** $N=12{,}5$ &emsp; **D.** $N=\dfrac{1}{2^{2}}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $N=5^{3}$</span>
+<span><strong>B.</strong> $N=1{,}25\times 10^{4}$</span>
+<span><strong>C.</strong> $N=12{,}5$</span>
+<span><strong>D.</strong> $N=\dfrac{1}{2^{2}}$</span>
+</div>
 ---CORR---
 On décompose $10$ en produit de facteurs premiers pour faire apparaître le $2$ du dénominateur :
 
@@ -220,7 +235,12 @@ Un article coûte $60$ €. Son prix augmente de $25\,\%$.
 
 Son nouveau prix, en euros, est :
 
-**A.** $75$ &emsp; **B.** $85$ &emsp; **C.** $15$ &emsp; **D.** $62{,}5$
+<div class="qcm-choix">
+<span><strong>A.</strong> $75$</span>
+<span><strong>B.</strong> $85$</span>
+<span><strong>C.</strong> $15$</span>
+<span><strong>D.</strong> $62{,}5$</span>
+</div>
 ---CORR---
 Augmenter de $25\,\%$ revient à multiplier par $1+0{,}25=1{,}25$ :
 

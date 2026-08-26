@@ -76,7 +76,12 @@ On peut encore factoriser par $2$ le second facteur : $A=2(x-4)(x+1)$.
 {{< auto2-exo numero="05" >}}
 Augmenter une valeur de $30\,\%$ revient à la multiplier par :
 
-**A.** $1{,}03$ &emsp; **B.** $0{,}3$ &emsp; **C.** $0{,}7$ &emsp; **D.** $1{,}3$
+<div class="qcm-choix">
+<span><strong>A.</strong> $1{,}03$</span>
+<span><strong>B.</strong> $0{,}3$</span>
+<span><strong>C.</strong> $0{,}7$</span>
+<span><strong>D.</strong> $1{,}3$</span>
+</div>
 ---CORR---
 Augmenter de $30\,\%$, c'est ajouter $30\,\%$ de la valeur à la valeur elle-même. Pour une valeur $V$ :
 
@@ -90,7 +95,12 @@ Le coefficient multiplicateur d'une hausse de $t\,\%$ est $1+\dfrac{t}{100}$ : i
 {{< auto2-exo numero="06" >}}
 Une grandeur passe de $400$ à $500$. L'évolution est :
 
-**A.** une augmentation de $25\,\%$ &emsp; **B.** une augmentation de $20\,\%$ &emsp; **C.** une augmentation de $100\,\%$ &emsp; **D.** une augmentation de $125\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> une augmentation de $25\,\%$</span>
+<span><strong>B.</strong> une augmentation de $20\,\%$</span>
+<span><strong>C.</strong> une augmentation de $100\,\%$</span>
+<span><strong>D.</strong> une augmentation de $125\,\%$</span>
+</div>
 ---CORR---
 On calcule le taux d'évolution, en divisant par la valeur de **départ** :
 
@@ -174,7 +184,12 @@ $$A={\color{#4A5D7A}(x+5)(3x-1)}$$
 {{< auto2-exo numero="05" >}}
 Diminuer une valeur de $40\,\%$ revient à la multiplier par :
 
-**A.** $0{,}4$ &emsp; **B.** $0{,}6$ &emsp; **C.** $-0{,}4$ &emsp; **D.** $1{,}4$
+<div class="qcm-choix">
+<span><strong>A.</strong> $0{,}4$</span>
+<span><strong>B.</strong> $0{,}6$</span>
+<span><strong>C.</strong> $-0{,}4$</span>
+<span><strong>D.</strong> $1{,}4$</span>
+</div>
 ---CORR---
 Diminuer de $40\,\%$, c'est retrancher $40\,\%$ de la valeur à la valeur elle-même. Pour une valeur $V$ :
 
@@ -188,7 +203,12 @@ Le coefficient multiplicateur d'une baisse de $t\,\%$ est $1-\dfrac{t}{100}$ : i
 {{< auto2-exo numero="06" >}}
 Une grandeur passe de $250$ à $300$. L'évolution est :
 
-**A.** une augmentation de $50\,\%$ &emsp; **B.** une augmentation de $25\,\%$ &emsp; **C.** une augmentation de $20\,\%$ &emsp; **D.** une augmentation de $120\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> une augmentation de $50\,\%$</span>
+<span><strong>B.</strong> une augmentation de $25\,\%$</span>
+<span><strong>C.</strong> une augmentation de $20\,\%$</span>
+<span><strong>D.</strong> une augmentation de $120\,\%$</span>
+</div>
 ---CORR---
 On calcule le taux d'évolution, en divisant par la valeur de **départ** :
 

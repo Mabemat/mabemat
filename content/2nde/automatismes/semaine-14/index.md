@@ -82,7 +82,12 @@ On considère la droite d'équation $y=\dfrac{x}{3}+5$.
 
 Son coefficient directeur est :
 
-**A.** $m=5$ &emsp; **B.** $m=\dfrac{1}{3}$ &emsp; **C.** $m=3$ &emsp; **D.** $m=\dfrac{x}{3}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $m=5$</span>
+<span><strong>B.</strong> $m=\dfrac{1}{3}$</span>
+<span><strong>C.</strong> $m=3$</span>
+<span><strong>D.</strong> $m=\dfrac{x}{3}$</span>
+</div>
 ---CORR---
 On reconnaît l'équation réduite d'une droite, de la forme $y=mx+p$ où $m$ est le coefficient directeur.
 
@@ -102,7 +107,12 @@ La réponse A donne l'ordonnée à l'origine, et la réponse C confond le coeffi
 {{< auto2-exo numero="06" >}}
 Dans une série statistique de $9$ valeurs rangées dans l'ordre croissant, la médiane est la valeur de rang :
 
-**A.** $4$ &emsp; **B.** $4{,}5$ &emsp; **C.** $5{,}5$ &emsp; **D.** $5$
+<div class="qcm-choix">
+<span><strong>A.</strong> $4$</span>
+<span><strong>B.</strong> $4{,}5$</span>
+<span><strong>C.</strong> $5{,}5$</span>
+<span><strong>D.</strong> $5$</span>
+</div>
 ---CORR---
 Quand l'effectif $n$ est impair, la médiane est la valeur du milieu, celle de rang $\dfrac{n+1}{2}$.
 
@@ -192,7 +202,12 @@ On considère la droite d'équation $y=\dfrac{x}{5}-2$.
 
 Son coefficient directeur est :
 
-**A.** $m=\dfrac{1}{5}$ &emsp; **B.** $m=5$ &emsp; **C.** $m=-2$ &emsp; **D.** $m=\dfrac{x}{5}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $m=\dfrac{1}{5}$</span>
+<span><strong>B.</strong> $m=5$</span>
+<span><strong>C.</strong> $m=-2$</span>
+<span><strong>D.</strong> $m=\dfrac{x}{5}$</span>
+</div>
 ---CORR---
 On reconnaît l'équation réduite d'une droite, de la forme $y=mx+p$ où $m$ est le coefficient directeur.
 
@@ -212,7 +227,12 @@ La réponse C donne l'ordonnée à l'origine, et la réponse B confond le coeffi
 {{< auto2-exo numero="06" >}}
 Dans une série statistique de $11$ valeurs rangées dans l'ordre croissant, la médiane est la valeur de rang :
 
-**A.** $5$ &emsp; **B.** $5{,}5$ &emsp; **C.** $6$ &emsp; **D.** $6{,}5$
+<div class="qcm-choix">
+<span><strong>A.</strong> $5$</span>
+<span><strong>B.</strong> $5{,}5$</span>
+<span><strong>C.</strong> $6$</span>
+<span><strong>D.</strong> $6{,}5$</span>
+</div>
 ---CORR---
 Quand l'effectif $n$ est impair, la médiane est la valeur du milieu, celle de rang $\dfrac{n+1}{2}$.
 

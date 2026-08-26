@@ -78,7 +78,12 @@ Le prix d'un article connaît deux baisses successives de $20\,\%$.
 
 Le taux d'évolution global associé est :
 
-**A.** $-64\,\%$ &emsp; **B.** $-40\,\%$ &emsp; **C.** $-4\,\%$ &emsp; **D.** $-36\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $-64\,\%$</span>
+<span><strong>B.</strong> $-40\,\%$</span>
+<span><strong>C.</strong> $-4\,\%$</span>
+<span><strong>D.</strong> $-36\,\%$</span>
+</div>
 ---CORR---
 Chaque baisse de $20\,\%$ correspond au coefficient multiplicateur $1-0{,}20=0{,}80$.
 
@@ -98,7 +103,12 @@ Dans une classe de $25$ élèves, $10$ sont demi-pensionnaires. On interroge un 
 
 La probabilité qu'il soit demi-pensionnaire est :
 
-**A.** $10$ &emsp; **B.** $0{,}6$ &emsp; **C.** $0{,}4$ &emsp; **D.** $\dfrac{10}{15}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $10$</span>
+<span><strong>B.</strong> $0{,}6$</span>
+<span><strong>C.</strong> $0{,}4$</span>
+<span><strong>D.</strong> $\dfrac{10}{15}$</span>
+</div>
 ---CORR---
 Chaque élève a la même chance d'être interrogé : il y a équiprobabilité. La probabilité est donc le nombre de cas favorables divisé par l'effectif total.
 
@@ -184,7 +194,12 @@ Le prix d'un article connaît deux hausses successives de $10\,\%$.
 
 Le taux d'évolution global associé est :
 
-**A.** $+20\,\%$ &emsp; **B.** $+21\,\%$ &emsp; **C.** $+2\,\%$ &emsp; **D.** $+11\,\%$
+<div class="qcm-choix">
+<span><strong>A.</strong> $+20\,\%$</span>
+<span><strong>B.</strong> $+21\,\%$</span>
+<span><strong>C.</strong> $+2\,\%$</span>
+<span><strong>D.</strong> $+11\,\%$</span>
+</div>
 ---CORR---
 Chaque hausse de $10\,\%$ correspond au coefficient multiplicateur $1+0{,}10=1{,}10$.
 
@@ -204,7 +219,12 @@ Dans une classe de $30$ élèves, $18$ sont externes. On interroge un élève au
 
 La probabilité qu'il soit externe est :
 
-**A.** $0{,}6$ &emsp; **B.** $18$ &emsp; **C.** $0{,}4$ &emsp; **D.** $\dfrac{18}{12}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $0{,}6$</span>
+<span><strong>B.</strong> $18$</span>
+<span><strong>C.</strong> $0{,}4$</span>
+<span><strong>D.</strong> $\dfrac{18}{12}$</span>
+</div>
 ---CORR---
 Chaque élève a la même chance d'être interrogé : il y a équiprobabilité. La probabilité est donc le nombre de cas favorables divisé par l'effectif total.
 

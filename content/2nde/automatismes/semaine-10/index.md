@@ -78,7 +78,12 @@ On considère la fonction $f$ définie par $f(x)=3x^2+2x-1$.
 
 L'image de $-2$ par la fonction $f$ est égale à :
 
-**A.** $-9$ &emsp; **B.** $15$ &emsp; **C.** $7$ &emsp; **D.** $-1$
+<div class="qcm-choix">
+<span><strong>A.</strong> $-9$</span>
+<span><strong>B.</strong> $15$</span>
+<span><strong>C.</strong> $7$</span>
+<span><strong>D.</strong> $-1$</span>
+</div>
 ---CORR---
 On remplace $x$ par $-2$, en mettant la valeur entre parenthèses :
 
@@ -96,7 +101,12 @@ La réponse A vient de l'erreur classique $(-2)^2=-4$ : le carré d'un nombre n�
 {{< auto2-exo numero="06" >}}
 Parmi les nombres suivants, lequel est le plus grand ?
 
-**A.** $20\,\%$ de $110$ &emsp; **B.** $25\,\%$ de $72$ &emsp; **C.** $5\,\%$ de $390$ &emsp; **D.** $10\,\%$ de $190$
+<div class="qcm-choix">
+<span><strong>A.</strong> $20\,\%$ de $110$</span>
+<span><strong>B.</strong> $25\,\%$ de $72$</span>
+<span><strong>C.</strong> $5\,\%$ de $390$</span>
+<span><strong>D.</strong> $10\,\%$ de $190$</span>
+</div>
 ---CORR---
 On calcule les quatre valeurs. Prendre $10\,\%$ c'est diviser par $10$, prendre $25\,\%$ c'est diviser par $4$, prendre $5\,\%$ c'est prendre la moitié de $10\,\%$, prendre $20\,\%$ c'est diviser par $5$.
 
@@ -184,7 +194,12 @@ On considère la fonction $f$ définie par $f(x)=2x^2-3x+1$.
 
 L'image de $-2$ par la fonction $f$ est égale à :
 
-**A.** $3$ &emsp; **B.** $15$ &emsp; **C.** $-1$ &emsp; **D.** $11$
+<div class="qcm-choix">
+<span><strong>A.</strong> $3$</span>
+<span><strong>B.</strong> $15$</span>
+<span><strong>C.</strong> $-1$</span>
+<span><strong>D.</strong> $11$</span>
+</div>
 ---CORR---
 On remplace $x$ par $-2$, en mettant la valeur entre parenthèses :
 
@@ -202,7 +217,12 @@ La réponse C vient de l'erreur classique $(-2)^2=-4$ : le carré d'un nombre n�
 {{< auto2-exo numero="06" >}}
 Parmi les nombres suivants, lequel est le plus grand ?
 
-**A.** $5\,\%$ de $500$ &emsp; **B.** $25\,\%$ de $84$ &emsp; **C.** $10\,\%$ de $240$ &emsp; **D.** $20\,\%$ de $130$
+<div class="qcm-choix">
+<span><strong>A.</strong> $5\,\%$ de $500$</span>
+<span><strong>B.</strong> $25\,\%$ de $84$</span>
+<span><strong>C.</strong> $10\,\%$ de $240$</span>
+<span><strong>D.</strong> $20\,\%$ de $130$</span>
+</div>
 ---CORR---
 On calcule les quatre valeurs. Prendre $5\,\%$ c'est diviser par $20$, prendre $20\,\%$ c'est diviser par $5$, prendre $10\,\%$ c'est diviser par $10$, prendre $25\,\%$ c'est diviser par $4$.
 

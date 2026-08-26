@@ -10,7 +10,12 @@ weight: 31
 {{< auto2-exo numero="01" >}}
 On considère $A=\dfrac{3}{4}+\dfrac{7}{100}$. On a :
 
-**A.** $A=\dfrac{10}{104}$ &emsp; **B.** $A=0{,}757$ &emsp; **C.** $A=0{,}82$ &emsp; **D.** $A=1{,}45$
+<div class="qcm-choix">
+<span><b>A.</b> $A=\dfrac{10}{104}$</span>
+<span><b>B.</b> $A=0{,}757$</span>
+<span><b>C.</b> $A=0{,}82$</span>
+<span><b>D.</b> $A=1{,}45$</span>
+</div>
 ---CORR---
 On écrit chaque fraction sous forme décimale :
 
@@ -30,7 +35,12 @@ Dans un groupe de $250$ personnes, $40\,\%$ sont des femmes, et $25\,\%$ de ces 
 
 Le nombre de femmes cadres est :
 
-**A.** $65$ &emsp; **B.** $100$ &emsp; **C.** $62{,}5$ &emsp; **D.** $25$
+<div class="qcm-choix">
+<span><b>A.</b> $65$</span>
+<span><b>B.</b> $100$</span>
+<span><b>C.</b> $62{,}5$</span>
+<span><b>D.</b> $25$</span>
+</div>
 ---CORR---
 On enchaîne les deux proportions, la seconde ne portant que sur les femmes :
 
@@ -44,7 +54,12 @@ La réponse B s'arrête à la première étape, et la réponse A additionne les 
 {{< auto2-exo numero="03" >}}
 Un prix baisse de $30\,\%$, puis augmente de $50\,\%$. L'évolution globale est :
 
-**A.** une hausse de $5\,\%$ &emsp; **B.** une baisse de $5\,\%$ &emsp; **C.** une hausse de $20\,\%$ &emsp; **D.** une hausse de $15\,\%$
+<div class="qcm-choix">
+<span><b>A.</b> une hausse de $5\,\%$</span>
+<span><b>B.</b> une baisse de $5\,\%$</span>
+<span><b>C.</b> une hausse de $20\,\%$</span>
+<span><b>D.</b> une hausse de $15\,\%$</span>
+</div>
 ---CORR---
 On multiplie les coefficients multiplicateurs :
 
@@ -60,7 +75,12 @@ La réponse C additionne les taux ($-30+50$), ce qui est toujours faux.
 {{< auto2-exo numero="04" >}}
 Soit $f$ la fonction définie par $f(x)=(x-4)(x+2)$. Les antécédents de $0$ par $f$ sont :
 
-**A.** $\lbrace -4\,;\,2\rbrace$ &emsp; **B.** $\lbrace 4\,;\,-2\rbrace$ &emsp; **C.** $\lbrace -8\rbrace$ &emsp; **D.** $\lbrace 0\rbrace$
+<div class="qcm-choix">
+<span><b>A.</b> $\lbrace -4\,;\,2\rbrace$</span>
+<span><b>B.</b> $\lbrace 4\,;\,-2\rbrace$</span>
+<span><b>C.</b> $\lbrace -8\rbrace$</span>
+<span><b>D.</b> $\lbrace 0\rbrace$</span>
+</div>
 ---CORR---
 Chercher les antécédents de $0$ revient à résoudre $f(x)=0$, c'est-à-dire une équation produit :
 
@@ -80,7 +100,12 @@ La réponse A est le piège classique : on lit les nombres de l'énoncé sans ch
 {{< auto2-exo numero="05" >}}
 La moyenne de la série $2\ ;\ 5\ ;\ 5\ ;\ 8\ ;\ 10\ ;\ 12$ est :
 
-**A.** $6{,}5$ &emsp; **B.** $5$ &emsp; **C.** $7$ &emsp; **D.** $8$
+<div class="qcm-choix">
+<span><b>A.</b> $6{,}5$</span>
+<span><b>B.</b> $5$</span>
+<span><b>C.</b> $7$</span>
+<span><b>D.</b> $8$</span>
+</div>
 ---CORR---
 On additionne les six valeurs :
 
@@ -98,7 +123,12 @@ La réponse A est la médiane $\dfrac{5+8}{2}=6{,}5$, et la réponse B le mode :
 {{< auto2-exo numero="06" >}}
 On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d'obtenir un pique ou un roi est :
 
-**A.** $\dfrac{11}{32}$ &emsp; **B.** $\dfrac{3}{8}$ &emsp; **C.** $\dfrac{1}{32}$ &emsp; **D.** $\dfrac{12}{32}$
+<div class="qcm-choix">
+<span><b>A.</b> $\dfrac{11}{32}$</span>
+<span><b>B.</b> $\dfrac{3}{8}$</span>
+<span><b>C.</b> $\dfrac{1}{32}$</span>
+<span><b>D.</b> $\dfrac{12}{32}$</span>
+</div>
 ---CORR---
 Le jeu contient $8$ piques et $4$ rois. Mais le roi de pique appartient aux deux catégories : si on additionne $8$ et $4$, on le compte deux fois.
 
@@ -120,7 +150,12 @@ C'est la formule $P(A\cup B)=P(A)+P(B)-P(A\cap B)$. La réponse D oublie de retr
 {{< auto2-exo numero="01" >}}
 On considère $A=\dfrac{2}{5}+\dfrac{9}{100}$. On a :
 
-**A.** $A=\dfrac{11}{105}$ &emsp; **B.** $A=0{,}49$ &emsp; **C.** $A=0{,}409$ &emsp; **D.** $A=1{,}3$
+<div class="qcm-choix">
+<span><b>A.</b> $A=\dfrac{11}{105}$</span>
+<span><b>B.</b> $A=0{,}49$</span>
+<span><b>C.</b> $A=0{,}409$</span>
+<span><b>D.</b> $A=1{,}3$</span>
+</div>
 ---CORR---
 On écrit chaque fraction sous forme décimale :
 
@@ -140,7 +175,12 @@ Dans un groupe de $320$ personnes, $25\,\%$ sont des femmes, et $40\,\%$ de ces 
 
 Le nombre de femmes cadres est :
 
-**A.** $80$ &emsp; **B.** $128$ &emsp; **C.** $32$ &emsp; **D.** $65$
+<div class="qcm-choix">
+<span><b>A.</b> $80$</span>
+<span><b>B.</b> $128$</span>
+<span><b>C.</b> $32$</span>
+<span><b>D.</b> $65$</span>
+</div>
 ---CORR---
 On enchaîne les deux proportions, la seconde ne portant que sur les femmes :
 
@@ -154,7 +194,12 @@ La réponse A s'arrête à la première étape, et la réponse D additionne les 
 {{< auto2-exo numero="03" >}}
 Un prix baisse de $40\,\%$, puis augmente de $50\,\%$. L'évolution globale est :
 
-**A.** une hausse de $10\,\%$ &emsp; **B.** une baisse de $90\,\%$ &emsp; **C.** une hausse de $5\,\%$ &emsp; **D.** une baisse de $10\,\%$
+<div class="qcm-choix">
+<span><b>A.</b> une hausse de $10\,\%$</span>
+<span><b>B.</b> une baisse de $90\,\%$</span>
+<span><b>C.</b> une hausse de $5\,\%$</span>
+<span><b>D.</b> une baisse de $10\,\%$</span>
+</div>
 ---CORR---
 On multiplie les coefficients multiplicateurs :
 
@@ -170,7 +215,12 @@ La réponse A additionne les taux ($-40+50$), ce qui est toujours faux.
 {{< auto2-exo numero="04" >}}
 Soit $f$ la fonction définie par $f(x)=(x+5)(x-3)$. Les antécédents de $0$ par $f$ sont :
 
-**A.** $\lbrace -5\,;\,3\rbrace$ &emsp; **B.** $\lbrace 5\,;\,-3\rbrace$ &emsp; **C.** $\lbrace -15\rbrace$ &emsp; **D.** $\lbrace 2\rbrace$
+<div class="qcm-choix">
+<span><b>A.</b> $\lbrace -5\,;\,3\rbrace$</span>
+<span><b>B.</b> $\lbrace 5\,;\,-3\rbrace$</span>
+<span><b>C.</b> $\lbrace -15\rbrace$</span>
+<span><b>D.</b> $\lbrace 2\rbrace$</span>
+</div>
 ---CORR---
 Chercher les antécédents de $0$ revient à résoudre $f(x)=0$, c'est-à-dire une équation produit :
 
@@ -190,7 +240,12 @@ La réponse B est le piège classique : on lit les nombres de l'énoncé sans ch
 {{< auto2-exo numero="05" >}}
 La moyenne de la série $3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 11\ ;\ 15$ est :
 
-**A.** $6$ &emsp; **B.** $8$ &emsp; **C.** $9$ &emsp; **D.** $7{,}5$
+<div class="qcm-choix">
+<span><b>A.</b> $6$</span>
+<span><b>B.</b> $8$</span>
+<span><b>C.</b> $9$</span>
+<span><b>D.</b> $7{,}5$</span>
+</div>
 ---CORR---
 On additionne les six valeurs :
 
@@ -208,7 +263,12 @@ La réponse D est la médiane $\dfrac{6+9}{2}=7{,}5$ : ce n'est pas la même not
 {{< auto2-exo numero="06" >}}
 On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d'obtenir un cœur ou une dame est :
 
-**A.** $\dfrac{17}{52}$ &emsp; **B.** $\dfrac{1}{52}$ &emsp; **C.** $\dfrac{1}{4}$ &emsp; **D.** $\dfrac{4}{13}$
+<div class="qcm-choix">
+<span><b>A.</b> $\dfrac{17}{52}$</span>
+<span><b>B.</b> $\dfrac{1}{52}$</span>
+<span><b>C.</b> $\dfrac{1}{4}$</span>
+<span><b>D.</b> $\dfrac{4}{13}$</span>
+</div>
 ---CORR---
 Le jeu contient $13$ cœurs et $4$ dames. Mais la dame de cœur appartient aux deux catégories : si on additionne $13$ et $4$, on la compte deux fois.
 

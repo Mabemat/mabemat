@@ -99,7 +99,12 @@ $${\color{#4A5D7A}0\ \text{et}\ 5}$$
 {{< auto2-exo numero="05" >}}
 L'ensemble des solutions dans $\mathbb{R}$ de l'inéquation $-2(x+5)(x-1)>0$ est :
 
-**A.** $\left[-5\,;\,1\right]$ &emsp; **B.** $\left]-\infty\,;\,-5\right[\cup\left]1\,;\,+\infty\right[$ &emsp; **C.** $\left]-5\,;\,1\right[$ &emsp; **D.** $\varnothing$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\left[-5\,;\,1\right]$</span>
+<span><strong>B.</strong> $\left]-\infty\,;\,-5\right[\cup\left]1\,;\,+\infty\right[$</span>
+<span><strong>C.</strong> $\left]-5\,;\,1\right[$</span>
+<span><strong>D.</strong> $\varnothing$</span>
+</div>
 ---CORR---
 Le facteur constant $-2$ est strictement négatif. On peut diviser les deux membres par $-2$, à condition de changer le sens de l'inégalité :
 
@@ -119,7 +124,12 @@ On lance deux fois de suite une pièce équilibrée.
 
 La probabilité d'obtenir deux fois pile est :
 
-**A.** $\dfrac{1}{2}$ &emsp; **B.** $\dfrac{1}{4}$ &emsp; **C.** $\dfrac{1}{3}$ &emsp; **D.** $\dfrac{3}{4}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{1}{2}$</span>
+<span><strong>B.</strong> $\dfrac{1}{4}$</span>
+<span><strong>C.</strong> $\dfrac{1}{3}$</span>
+<span><strong>D.</strong> $\dfrac{3}{4}$</span>
+</div>
 ---CORR---
 On énumère les issues possibles, en distinguant les deux lancers :
 
@@ -230,7 +240,12 @@ $${\color{#4A5D7A}-3\ \text{et}\ 0}$$
 {{< auto2-exo numero="05" >}}
 L'ensemble des solutions dans $\mathbb{R}$ de l'inéquation $-3(x+2)(x-4)>0$ est :
 
-**A.** $\left]-\infty\,;\,-2\right[\cup\left]4\,;\,+\infty\right[$ &emsp; **B.** $\varnothing$ &emsp; **C.** $\left[-2\,;\,4\right]$ &emsp; **D.** $\left]-2\,;\,4\right[$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\left]-\infty\,;\,-2\right[\cup\left]4\,;\,+\infty\right[$</span>
+<span><strong>B.</strong> $\varnothing$</span>
+<span><strong>C.</strong> $\left[-2\,;\,4\right]$</span>
+<span><strong>D.</strong> $\left]-2\,;\,4\right[$</span>
+</div>
 ---CORR---
 Le facteur constant $-3$ est strictement négatif. On peut diviser les deux membres par $-3$, à condition de changer le sens de l'inégalité :
 
@@ -250,7 +265,12 @@ On lance deux fois de suite une pièce équilibrée.
 
 La probabilité d'obtenir au moins une fois pile est :
 
-**A.** $\dfrac{3}{4}$ &emsp; **B.** $\dfrac{1}{4}$ &emsp; **C.** $\dfrac{1}{2}$ &emsp; **D.** $\dfrac{2}{3}$
+<div class="qcm-choix">
+<span><strong>A.</strong> $\dfrac{3}{4}$</span>
+<span><strong>B.</strong> $\dfrac{1}{4}$</span>
+<span><strong>C.</strong> $\dfrac{1}{2}$</span>
+<span><strong>D.</strong> $\dfrac{2}{3}$</span>
+</div>
 ---CORR---
 On énumère les issues possibles, en distinguant les deux lancers :
 

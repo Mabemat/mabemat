@@ -102,7 +102,12 @@ On ajoute $3$ à toutes les valeurs d'une série statistique dont la moyenne vau
 
 La moyenne de la nouvelle série est :
 
-**A.** $12$ &emsp; **B.** $15$ &emsp; **C.** $36$ &emsp; **D.** $4$
+<div class="qcm-choix">
+<span><strong>A.</strong> $12$</span>
+<span><strong>B.</strong> $15$</span>
+<span><strong>C.</strong> $36$</span>
+<span><strong>D.</strong> $4$</span>
+</div>
 ---CORR---
 Si on ajoute la même quantité à chaque valeur, la somme totale augmente de cette quantité autant de fois qu'il y a de valeurs. En divisant par l'effectif, la moyenne augmente donc exactement de la même quantité.
 
@@ -118,7 +123,12 @@ Dans une classe, la moyenne des $12$ filles est $14$ et celle des $8$ garçons e
 
 La moyenne de la classe entière est :
 
-**A.** $12$ &emsp; **B.** $11{,}5$ &emsp; **C.** $23$ &emsp; **D.** $12{,}5$
+<div class="qcm-choix">
+<span><strong>A.</strong> $12$</span>
+<span><strong>B.</strong> $11{,}5$</span>
+<span><strong>C.</strong> $23$</span>
+<span><strong>D.</strong> $12{,}5$</span>
+</div>
 ---CORR---
 On ne peut pas faire la moyenne des deux moyennes : les groupes n'ont pas le même effectif. Il faut reconstituer la somme totale des notes.
 
@@ -238,7 +248,12 @@ On retranche $5$ à toutes les valeurs d'une série statistique dont la moyenne 
 
 La moyenne de la nouvelle série est :
 
-**A.** $26$ &emsp; **B.** $21$ &emsp; **C.** $16$ &emsp; **D.** $105$
+<div class="qcm-choix">
+<span><strong>A.</strong> $26$</span>
+<span><strong>B.</strong> $21$</span>
+<span><strong>C.</strong> $16$</span>
+<span><strong>D.</strong> $105$</span>
+</div>
 ---CORR---
 Si on retranche la même quantité à chaque valeur, la somme totale diminue de cette quantité autant de fois qu'il y a de valeurs. En divisant par l'effectif, la moyenne diminue donc exactement de la même quantité.
 
@@ -254,7 +269,12 @@ Dans une classe, la moyenne des $15$ filles est $12$ et celle des $5$ garçons e
 
 La moyenne de la classe entière est :
 
-**A.** $13{,}5$ &emsp; **B.** $14$ &emsp; **C.** $28$ &emsp; **D.** $13$
+<div class="qcm-choix">
+<span><strong>A.</strong> $13{,}5$</span>
+<span><strong>B.</strong> $14$</span>
+<span><strong>C.</strong> $28$</span>
+<span><strong>D.</strong> $13$</span>
+</div>
 ---CORR---
 On ne peut pas faire la moyenne des deux moyennes : les groupes n'ont pas le même effectif. Il faut reconstituer la somme totale des notes.
 

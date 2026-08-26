@@ -82,7 +82,12 @@ On considère la droite d'équation $y=-3$.
 
 Son coefficient directeur est :
 
-**A.** $m=0$ &emsp; **B.** il n'existe pas &emsp; **C.** $m=1$ &emsp; **D.** $m=-3$
+<div class="qcm-choix">
+<span><b>A.</b> $m=0$</span>
+<span><b>B.</b> il n'existe pas</span>
+<span><b>C.</b> $m=1$</span>
+<span><b>D.</b> $m=-3$</span>
+</div>
 ---CORR---
 On reconnaît une équation réduite de la forme $y=mx+p$. Ici, il n'y a pas de terme en $x$, ce qui revient à écrire :
 
@@ -102,7 +107,12 @@ Dans une classe, $40\,\%$ des élèves sont des garçons. On choisit un élève 
 
 La probabilité que ce soit une fille est :
 
-**A.** $0{,}4$ &emsp; **B.** $1{,}4$ &emsp; **C.** $0{,}5$ &emsp; **D.** $0{,}6$
+<div class="qcm-choix">
+<span><b>A.</b> $0{,}4$</span>
+<span><b>B.</b> $1{,}4$</span>
+<span><b>C.</b> $0{,}5$</span>
+<span><b>D.</b> $0{,}6$</span>
+</div>
 ---CORR---
 « Être une fille » est l'événement contraire de « être un garçon », puisque chaque élève est l'un ou l'autre. Les deux probabilités ont donc pour somme $1$ :
 
@@ -194,7 +204,12 @@ On considère la droite d'équation $y=7$.
 
 Son coefficient directeur est :
 
-**A.** $m=7$ &emsp; **B.** $m=1$ &emsp; **C.** $m=0$ &emsp; **D.** il n'existe pas
+<div class="qcm-choix">
+<span><b>A.</b> $m=7$</span>
+<span><b>B.</b> $m=1$</span>
+<span><b>C.</b> $m=0$</span>
+<span><b>D.</b> il n'existe pas</span>
+</div>
 ---CORR---
 On reconnaît une équation réduite de la forme $y=mx+p$. Ici, il n'y a pas de terme en $x$, ce qui revient à écrire :
 
@@ -214,7 +229,12 @@ Dans une classe, $55\,\%$ des élèves sont des filles. On choisit un élève au
 
 La probabilité que ce soit un garçon est :
 
-**A.** $0{,}55$ &emsp; **B.** $0{,}45$ &emsp; **C.** $0{,}5$ &emsp; **D.** $1{,}55$
+<div class="qcm-choix">
+<span><b>A.</b> $0{,}55$</span>
+<span><b>B.</b> $0{,}45$</span>
+<span><b>C.</b> $0{,}5$</span>
+<span><b>D.</b> $1{,}55$</span>
+</div>
 ---CORR---
 « Être un garçon » est l'événement contraire de « être une fille », puisque chaque élève est l'un ou l'autre. Les deux probabilités ont donc pour somme $1$ :
 

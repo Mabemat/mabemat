@@ -78,7 +78,12 @@ Une personne doit rembourser un crédit de $1\,800$ € en trois mois. En janvie
 
 La somme, en euros, qu'il lui reste à rembourser en mars est :
 
-**A.** $450$ &emsp; **B.** $1\,050$ &emsp; **C.** $750$ &emsp; **D.** $600$
+<div class="qcm-choix">
+<span><b>A.</b> $450$</span>
+<span><b>B.</b> $1\,050$</span>
+<span><b>C.</b> $750$</span>
+<span><b>D.</b> $600$</span>
+</div>
 ---CORR---
 Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $1\,800$ €.
 
@@ -100,7 +105,12 @@ Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur
 |---|---|---|
 | $y$ | 6 | ? |
 
-**A.** $9$ &emsp; **B.** $12$ &emsp; **C.** $16$ &emsp; **D.** $15$
+<div class="qcm-choix">
+<span><b>A.</b> $9$</span>
+<span><b>B.</b> $12$</span>
+<span><b>C.</b> $16$</span>
+<span><b>D.</b> $15$</span>
+</div>
 ---CORR---
 Dans un tableau de proportionnalité, on passe de la ligne $x$ à la ligne $y$ en multipliant par un coefficient constant. On le calcule avec la colonne complète :
 
@@ -190,7 +200,12 @@ Une personne doit rembourser un crédit de $2\,400$ € en trois mois. En janvie
 
 La somme, en euros, qu'il lui reste à rembourser en mars est :
 
-**A.** $1\,000$ &emsp; **B.** $1\,400$ &emsp; **C.** $600$ &emsp; **D.** $800$
+<div class="qcm-choix">
+<span><b>A.</b> $1\,000$</span>
+<span><b>B.</b> $1\,400$</span>
+<span><b>C.</b> $600$</span>
+<span><b>D.</b> $800$</span>
+</div>
 ---CORR---
 Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $2\,400$ €.
 
@@ -212,7 +227,12 @@ Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur
 |---|---|---|
 | $y$ | 8 | ? |
 
-**A.** $17$ &emsp; **B.** $20$ &emsp; **C.** $18$ &emsp; **D.** $24$
+<div class="qcm-choix">
+<span><b>A.</b> $17$</span>
+<span><b>B.</b> $20$</span>
+<span><b>C.</b> $18$</span>
+<span><b>D.</b> $24$</span>
+</div>
 ---CORR---
 Dans un tableau de proportionnalité, on passe de la ligne $x$ à la ligne $y$ en multipliant par un coefficient constant. On le calcule avec la colonne complète :
 
