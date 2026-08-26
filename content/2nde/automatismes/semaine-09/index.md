@@ -1,66 +1,112 @@
 ---
-title: "Semaine 9"
+title: "Semaine 9 - Vecteurs, somme et relation de Chasles"
+layout: "automatismes-2nde"
 auto_number: 9
 weight: 9
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Déterminer le taux global d'évolution d'un article qui diminue de $20\,\%$ dans un premier temps, puis qui augmente de $20\,\%$ dans un second temps.
+$ABCD$ est un parallélogramme de centre $O$.
+
+Compléter par le point qui convient :
+
+**a.** $\overrightarrow{AB}=\overrightarrow{D\ ?}$ &emsp; **b.** $\overrightarrow{BO}=\overrightarrow{O\ ?}$
 ---CORR---
-Diminuer de $20\,\%$ : coefficient $0{,}8$. Augmenter de $20\,\%$ : coefficient $1{,}2$.
+**a.** Dans le parallélogramme $ABCD$, les côtés $[AB]$ et $[DC]$ sont parallèles, de même longueur et de même sens.
 
-Global : $0{,}8\times 1{,}2=0{,}96=1-0{,}04$.
+$$\overrightarrow{AB}=\overrightarrow{D{\color{#4A5D7A}C}}$$
 
-Le taux d'évolution global est ${\color{#4A5D7A}-4\,\%}$.
+**b.** Le centre $O$ d'un parallélogramme est le milieu de ses diagonales, donc $O$ est le milieu de $[BD]$. Les vecteurs $\overrightarrow{BO}$ et $\overrightarrow{OD}$ ont donc même direction, même sens et même longueur.
+
+$$\overrightarrow{BO}=\overrightarrow{O{\color{#4A5D7A}D}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Un prix diminue de $75\,\%$. Pour retrouver le prix initial, il faut une augmentation de :
+Simplifier :
 
-A. $400\,\%$ $\quad$ B. $300\,\%$ $\quad$ C. $75\,\%$ $\quad$ D. $85\,\%$
+$$\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}$$
 ---CORR---
-Coefficient multiplicateur de la baisse : $1-0{,}75=0{,}25$.
+On applique la relation de Chasles : quand l'extrémité du premier vecteur est l'origine du second, les deux se recollent.
 
-Coefficient réciproque : $\dfrac{1}{0{,}25}=4$, soit un taux de $4-1=3={\color{#4A5D7A}300\,\%}$.
+$$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$$
 
-La bonne réponse est **B**.
+On recommence avec le vecteur suivant :
+
+$$\overrightarrow{AC}+\overrightarrow{CD}={\color{#4A5D7A}\overrightarrow{AD}}$$
+
+Il ne reste que le point de départ et le point d'arrivée : les points intermédiaires $B$ et $C$ ont disparu.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Un jardin est aménagé selon les proportions suivantes : $\dfrac{3}{10}$ par la culture des légumes, $\dfrac{1}{4}$ par les plantes aromatiques, $\dfrac{7}{40}$ par une serre, et le reste par les fraisiers. Quelle culture occupe le plus de surface ?
+$ABCD$ est un parallélogramme.
+
+Démontrer que $\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}$.
 ---CORR---
-On ramène tout au dénominateur $40$ :
+La relation de Chasles ne s'applique pas directement : les deux vecteurs partent du même point $A$, ils ne se recollent pas.
 
-$$\dfrac{3}{10}=\dfrac{12}{40},\quad \dfrac{1}{4}=\dfrac{10}{40},\quad \dfrac{7}{40}$$
+On remplace donc $\overrightarrow{AD}$ par un vecteur qui lui est égal et dont l'origine est $B$. Comme $ABCD$ est un parallélogramme, $[AD]$ et $[BC]$ sont parallèles, de même longueur et de même sens :
 
-Fraisiers : $1-\dfrac{12}{40}-\dfrac{10}{40}-\dfrac{7}{40}=\dfrac{11}{40}$.
+$$\overrightarrow{AD}=\overrightarrow{BC}$$
 
-Ordre croissant : $\dfrac{7}{40}<\dfrac{10}{40}<\dfrac{11}{40}<\dfrac{12}{40}$.
+On peut alors appliquer Chasles :
 
-C'est **la culture des légumes** ($\dfrac{12}{40}$) qui occupe le plus de surface.
+$$\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BC}={\color{#4A5D7A}\overrightarrow{AC}}$$
+
+La somme de deux vecteurs partant du même sommet d'un parallélogramme est la diagonale issue de ce sommet.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Écrire l'expression sous la forme d'un quotient (réduire le numérateur) : $\dfrac{3}{9x-3}+\dfrac{1}{2x+1}$
----CORR---
-Pour $x\notin\left\{-\dfrac{1}{2}\,;\,\dfrac{1}{3}\right\}$ :
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-$$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x+3+9x-3}{(9x-3)(2x+1)}=\dfrac{15x}{(9x-3)(2x+1)}$$
+$$-2x+5>11$$
+---CORR---
+On retranche $5$ à chaque membre :
+
+$$-2x>6$$
+
+On divise chaque membre par $-2$, ce qui change le sens de l'inégalité :
+
+$$x<\dfrac{6}{-2} \qquad\text{soit}\qquad x<-3$$
+
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Résoudre : $4(-2x-7)=-9x-3$
+Le prix d'un article connaît deux baisses successives de $20\,\%$.
+
+Le taux d'évolution global associé est :
+
+**A.** $-64\,\%$ &emsp; **B.** $-40\,\%$ &emsp; **C.** $-4\,\%$ &emsp; **D.** $-36\,\%$
 ---CORR---
-$-8x-28=-9x-3$
+Chaque baisse de $20\,\%$ correspond au coefficient multiplicateur $1-0{,}20=0{,}80$.
 
-$-8x+9x=-3+28$
+Deux baisses successives reviennent à multiplier deux fois de suite :
 
-$x=25$
+$$0{,}80\times 0{,}80=0{,}64$$
 
-La solution est ${\color{#4A5D7A}x=25}$.
+On revient au taux : $0{,}64=1-0{,}36$, donc l'évolution globale est une baisse de ${\color{#4A5D7A}36\,\%}$.
+
+La réponse B additionne les taux, ce qui est faux. La réponse A confond le coefficient $0{,}64$ avec le taux.
+
+<span class="rep">Réponse : D</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Dans une classe de $25$ élèves, $10$ sont demi-pensionnaires. On interroge un élève au hasard.
+
+La probabilité qu'il soit demi-pensionnaire est :
+
+**A.** $10$ &emsp; **B.** $0{,}6$ &emsp; **C.** $0{,}4$ &emsp; **D.** $\dfrac{10}{15}$
+---CORR---
+Chaque élève a la même chance d'être interrogé : il y a équiprobabilité. La probabilité est donc le nombre de cas favorables divisé par l'effectif total.
+
+$$P=\dfrac{10}{25}=\dfrac{2}{5}={\color{#4A5D7A}0{,}4}$$
+
+La réponse B est la probabilité de l'événement contraire, et la réponse D divise par le nombre d'externes au lieu de l'effectif total.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -68,57 +114,105 @@ La solution est ${\color{#4A5D7A}x=25}$.
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Déterminer le taux global d'évolution d'un article qui diminue de $80\,\%$ dans un premier temps, puis qui augmente de $10\,\%$ dans un second temps.
+$EFGH$ est un parallélogramme de centre $O$.
+
+Compléter par le point qui convient :
+
+**a.** $\overrightarrow{EF}=\overrightarrow{H\ ?}$ &emsp; **b.** $\overrightarrow{FO}=\overrightarrow{O\ ?}$
 ---CORR---
-Diminuer de $80\,\%$ : coefficient $0{,}2$. Augmenter de $10\,\%$ : coefficient $1{,}1$.
+**a.** Dans le parallélogramme $EFGH$, les côtés $[EF]$ et $[HG]$ sont parallèles, de même longueur et de même sens.
 
-Global : $0{,}2\times 1{,}1=0{,}22=1-0{,}78$.
+$$\overrightarrow{EF}=\overrightarrow{H{\color{#4A5D7A}G}}$$
 
-Le taux d'évolution global est ${\color{#4A5D7A}-78\,\%}$.
+**b.** Le centre $O$ d'un parallélogramme est le milieu de ses diagonales, donc $O$ est le milieu de $[FH]$. Les vecteurs $\overrightarrow{FO}$ et $\overrightarrow{OH}$ ont donc même direction, même sens et même longueur.
+
+$$\overrightarrow{FO}=\overrightarrow{O{\color{#4A5D7A}H}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Un prix diminue de $50\,\%$. Pour retrouver le prix initial, il faut une augmentation de :
+Simplifier :
 
-A. $50\,\%$ $\quad$ B. $60\,\%$ $\quad$ C. $200\,\%$ $\quad$ D. $100\,\%$
+$$\overrightarrow{MN}+\overrightarrow{NP}+\overrightarrow{PQ}$$
 ---CORR---
-Coefficient multiplicateur de la baisse : $0{,}5$.
+On applique la relation de Chasles : quand l'extrémité du premier vecteur est l'origine du second, les deux se recollent.
 
-Coefficient réciproque : $\dfrac{1}{0{,}5}=2$, soit un taux de $2-1=1={\color{#4A5D7A}100\,\%}$.
+$$\overrightarrow{MN}+\overrightarrow{NP}=\overrightarrow{MP}$$
 
-La bonne réponse est **D**.
+On recommence avec le vecteur suivant :
+
+$$\overrightarrow{MP}+\overrightarrow{PQ}={\color{#4A5D7A}\overrightarrow{MQ}}$$
+
+Il ne reste que le point de départ et le point d'arrivée : les points intermédiaires $N$ et $P$ ont disparu.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Gaspard fait un triathlon : $\dfrac{11}{40}$ en VTT, $\dfrac{1}{4}$ en ski de fond, et le reste en course à pied. Pour quelle discipline la distance est-elle la plus grande ?
+$EFGH$ est un parallélogramme.
+
+Démontrer que $\overrightarrow{EF}+\overrightarrow{EH}=\overrightarrow{EG}$.
 ---CORR---
-Course à pied : $1-\dfrac{11}{40}-\dfrac{10}{40}=\dfrac{19}{40}$.
+La relation de Chasles ne s'applique pas directement : les deux vecteurs partent du même point $E$, ils ne se recollent pas.
 
-Ordre : $\dfrac{10}{40}<\dfrac{11}{40}<\dfrac{19}{40}$.
+On remplace donc $\overrightarrow{EH}$ par un vecteur qui lui est égal et dont l'origine est $F$. Comme $EFGH$ est un parallélogramme, $[EH]$ et $[FG]$ sont parallèles, de même longueur et de même sens :
 
-C'est en **course à pied** que la distance est la plus grande.
+$$\overrightarrow{EH}=\overrightarrow{FG}$$
+
+On peut alors appliquer Chasles :
+
+$$\overrightarrow{EF}+\overrightarrow{EH}=\overrightarrow{EF}+\overrightarrow{FG}={\color{#4A5D7A}\overrightarrow{EG}}$$
+
+La somme de deux vecteurs partant du même sommet d'un parallélogramme est la diagonale issue de ce sommet.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Écrire l'expression sous la forme d'un quotient (réduire le numérateur) : $4x+5+\dfrac{2}{3x+3}$
----CORR---
-Pour $x\neq -1$ :
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-$$\dfrac{(4x+5)(3x+3)+2}{3x+3}=\dfrac{12x^2+27x+15+2}{3x+3}=\dfrac{12x^2+27x+17}{3x+3}$$
+$$-3x+4>19$$
+---CORR---
+On retranche $4$ à chaque membre :
+
+$$-3x>15$$
+
+On divise chaque membre par $-3$, ce qui change le sens de l'inégalité :
+
+$$x<\dfrac{15}{-3} \qquad\text{soit}\qquad x<-5$$
+
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-5\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Résoudre : $2-(-6x-6)=x-5$
+Le prix d'un article connaît deux hausses successives de $10\,\%$.
+
+Le taux d'évolution global associé est :
+
+**A.** $+20\,\%$ &emsp; **B.** $+21\,\%$ &emsp; **C.** $+2\,\%$ &emsp; **D.** $+11\,\%$
 ---CORR---
-$2+6x+6=x-5$
+Chaque hausse de $10\,\%$ correspond au coefficient multiplicateur $1+0{,}10=1{,}10$.
 
-$6x+8=x-5$
+Deux hausses successives reviennent à multiplier deux fois de suite :
 
-$5x=-13$
+$$1{,}10\times 1{,}10=1{,}21$$
 
-$x=-\dfrac{13}{5}$
+On revient au taux : $1{,}21=1+0{,}21$, donc l'évolution globale est une hausse de ${\color{#4A5D7A}21\,\%}$.
 
-La solution est ${\color{#4A5D7A}x=-\dfrac{13}{5}}$.
+La réponse A additionne les taux, ce qui est faux : la seconde hausse porte sur un prix déjà augmenté.
+
+<span class="rep">Réponse : B</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Dans une classe de $30$ élèves, $18$ sont externes. On interroge un élève au hasard.
+
+La probabilité qu'il soit externe est :
+
+**A.** $0{,}6$ &emsp; **B.** $18$ &emsp; **C.** $0{,}4$ &emsp; **D.** $\dfrac{18}{12}$
+---CORR---
+Chaque élève a la même chance d'être interrogé : il y a équiprobabilité. La probabilité est donc le nombre de cas favorables divisé par l'effectif total.
+
+$$P=\dfrac{18}{30}=\dfrac{3}{5}={\color{#4A5D7A}0{,}6}$$
+
+La réponse C est la probabilité de l'événement contraire, et la réponse D divise par le nombre de non-externes au lieu de l'effectif total.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

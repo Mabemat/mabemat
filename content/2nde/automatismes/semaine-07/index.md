@@ -1,50 +1,120 @@
 ---
-title: "Semaine 7"
+title: "Semaine 7 - Équations produits et quotients"
+layout: "automatismes-2nde"
 auto_number: 7
 weight: 7
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-$p\,\%$ de $150$ est égal à $30$. On a $p$ =
+Résoudre dans $\mathbb{R}$ l'équation :
+
+$$(3x-6)(2x+5)=0$$
 ---CORR---
-$20\,\%$ de $150 = 30$, donc $100\,\% = 5\times 30 = 150$. On a $p={\color{#4A5D7A}20}$.
+Un produit de facteurs est nul si et seulement si l'un au moins de ses facteurs est nul :
+
+$$3x-6=0 \qquad\text{ou}\qquad 2x+5=0$$
+
+On résout chaque équation séparément :
+
+$$3x=6 \quad\text{donc}\quad x=2 \qquad\qquad 2x=-5 \quad\text{donc}\quad x=-\dfrac{5}{2}$$
+
+$$S={\color{#4A5D7A}\left\lbrace -\dfrac{5}{2}\,;\,2\right\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-L'opération qui permet de calculer $25\,\%$ de $240$ est :
+Résoudre dans $\mathbb{R}$ l'équation :
 
-A. $25\times 240\times 0{,}1$ $\quad$ B. $\dfrac{25\times 240}{100}$ $\quad$ C. $240\times 25\times 0{,}001$ $\quad$ D. $25\times 240\times 0{,}01$
+$$\dfrac{4x-8}{x+3}=0$$
 ---CORR---
-$25\,\%$ de $240 = 0{,}25\times 240 = \dfrac{25\times 240}{100}$.
+On commence par chercher la valeur interdite, celle qui annule le dénominateur :
 
-La bonne réponse est **B**.
+$$x+3=0 \quad\text{donc}\quad x=-3$$
+
+L'équation n'a de sens que pour $x\neq -3$.
+
+Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
+
+$$4x-8=0 \quad\text{donc}\quad 4x=8 \quad\text{donc}\quad x=2$$
+
+Comme $2\neq -3$, cette solution est acceptable.
+
+$$S={\color{#4A5D7A}\lbrace 2\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans un lycée, il y a $400$ élèves inscrits. $15\,\%$ d'entre eux étudient l'italien. Le nombre d'élèves qui étudient l'italien est :
+Un rectangle a une longueur de $x+5$ centimètres et une largeur de $x$ centimètres. Son périmètre vaut $46$ centimètres.
+
+Déterminer $x$, puis les dimensions du rectangle.
 ---CORR---
-$15\,\%$ de $400 = 0{,}15\times 400 = {\color{#4A5D7A}60}$ élèves.
+Le périmètre d'un rectangle est le double de la somme de la longueur et de la largeur :
+
+$$2\bigl((x+5)+x\bigr)=46$$
+
+On réduit à l'intérieur de la parenthèse, puis on développe :
+
+$$2(2x+5)=46 \qquad\text{soit}\qquad 4x+10=46$$
+
+On retranche $10$ puis on divise par $4$ :
+
+$$4x=36 \qquad\text{donc}\qquad x={\color{#4A5D7A}9}$$
+
+Le rectangle mesure donc ${\color{#4A5D7A}14}$ cm de longueur et ${\color{#4A5D7A}9}$ cm de largeur.
+
+Vérification : $2\times(14+9)=2\times 23=46$ cm.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-$30\,\%$ de $N$ est égal à $45$. On a $N$ =
+Résoudre l'équation :
+
+$$4x+9=x-3$$
 ---CORR---
-$30\,\%$ de $N = 45$, donc $N = \dfrac{100}{30}\times 45 = \dfrac{10}{3}\times 45 = {\color{#4A5D7A}150}$.
+On retranche $x$ à chaque membre :
+
+$$3x+9=-3$$
+
+On retranche $9$ à chaque membre :
+
+$$3x=-12$$
+
+On divise chaque membre par $3$ :
+
+$$x={\color{#4A5D7A}-4}$$
+
+Vérification : $4\times(-4)+9=-7$ et $-4-3=-7$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Augmenter une valeur de $8\,\%$ revient à la multiplier par :
+Le produit des solutions de l'équation $(2x+6)(2x+10)=0$ est égal à :
+
+**A.** $15$ &emsp; **B.** $0$ &emsp; **C.** $-15$ &emsp; **D.** $8$
 ---CORR---
-Le coefficient multiplicateur associé à une augmentation de $8\,\%$ est $1+0{,}08={\color{#4A5D7A}1{,}08}$.
+On résout d'abord l'équation. Un produit est nul si et seulement si l'un de ses facteurs est nul :
+
+$$2x+6=0 \quad\text{donc}\quad x=-3 \qquad\qquad 2x+10=0 \quad\text{donc}\quad x=-5$$
+
+Les deux solutions sont $-3$ et $-5$. On calcule ensuite leur **produit** :
+
+$$(-3)\times(-5)={\color{#4A5D7A}15}$$
+
+Le produit de deux nombres négatifs est positif. La réponse B est le piège classique : c'est le produit des facteurs qui est nul, pas celui des solutions.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Le prix d'un article coûtant $60$ euros augmente de $21$ euros. Le pourcentage d'augmentation est :
+L'étendue de la série $7\,;\,9\,;\,9\,;\,12\,;\,13$ est :
+
+**A.** $9$ &emsp; **B.** $6$ &emsp; **C.** $10$ &emsp; **D.** $13$
 ---CORR---
-Taux $= \dfrac{21}{60}=\dfrac{7}{20}=0{,}35={\color{#4A5D7A}35\,\%}$.
+L'étendue est l'écart entre la plus grande et la plus petite valeur de la série.
+
+$$13-7={\color{#4A5D7A}6}$$
+
+La réponse A est la médiane, la réponse C la moyenne : trois indicateurs différents à ne pas confondre.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -52,43 +122,113 @@ Taux $= \dfrac{21}{60}=\dfrac{7}{20}=0{,}35={\color{#4A5D7A}35\,\%}$.
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-$p\,\%$ de $80$ est égal à $24$. On a $p$ =
+Résoudre dans $\mathbb{R}$ l'équation :
+
+$$(5x+10)(3x-9)=0$$
 ---CORR---
-$30\,\%$ de $80 = 24$, donc $p={\color{#4A5D7A}30}$.
+Un produit de facteurs est nul si et seulement si l'un au moins de ses facteurs est nul :
+
+$$5x+10=0 \qquad\text{ou}\qquad 3x-9=0$$
+
+On résout chaque équation séparément :
+
+$$5x=-10 \quad\text{donc}\quad x=-2 \qquad\qquad 3x=9 \quad\text{donc}\quad x=3$$
+
+$$S={\color{#4A5D7A}\lbrace -2\,;\,3\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-L'opération qui permet de calculer $35\,\%$ de $180$ est :
+Résoudre dans $\mathbb{R}$ l'équation :
 
-A. $35\times 180\times 0{,}1$ $\quad$ B. $180\times 0{,}035$ $\quad$ C. $\dfrac{35\times 180}{100}$ $\quad$ D. $180\times 35\times 0{,}001$
+$$\dfrac{6x+18}{x-4}=0$$
 ---CORR---
-$35\,\%$ de $180 = \dfrac{35\times 180}{100}$.
+On commence par chercher la valeur interdite, celle qui annule le dénominateur :
 
-La bonne réponse est **C**.
+$$x-4=0 \quad\text{donc}\quad x=4$$
+
+L'équation n'a de sens que pour $x\neq 4$.
+
+Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
+
+$$6x+18=0 \quad\text{donc}\quad 6x=-18 \quad\text{donc}\quad x=-3$$
+
+Comme $-3\neq 4$, cette solution est acceptable.
+
+$$S={\color{#4A5D7A}\lbrace -3\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans un lycée, il y a $600$ élèves inscrits. $12\,\%$ d'entre eux étudient l'allemand. Le nombre d'élèves qui étudient l'allemand est :
+Un rectangle a une longueur de $x+7$ centimètres et une largeur de $x$ centimètres. Son périmètre vaut $58$ centimètres.
+
+Déterminer $x$, puis les dimensions du rectangle.
 ---CORR---
-$12\,\%$ de $600 = 0{,}12\times 600 = {\color{#4A5D7A}72}$ élèves.
+Le périmètre d'un rectangle est le double de la somme de la longueur et de la largeur :
+
+$$2\bigl((x+7)+x\bigr)=58$$
+
+On réduit à l'intérieur de la parenthèse, puis on développe :
+
+$$2(2x+7)=58 \qquad\text{soit}\qquad 4x+14=58$$
+
+On retranche $14$ puis on divise par $4$ :
+
+$$4x=44 \qquad\text{donc}\qquad x={\color{#4A5D7A}11}$$
+
+Le rectangle mesure donc ${\color{#4A5D7A}18}$ cm de longueur et ${\color{#4A5D7A}11}$ cm de largeur.
+
+Vérification : $2\times(18+11)=2\times 29=58$ cm.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-$40\,\%$ de $N$ est égal à $60$. On a $N$ =
+Résoudre l'équation :
+
+$$6x-5=2x+7$$
 ---CORR---
-$40\,\%$ de $N = 60$, donc $N = 2{,}5\times 60 = {\color{#4A5D7A}150}$.
+On retranche $2x$ à chaque membre :
+
+$$4x-5=7$$
+
+On ajoute $5$ à chaque membre :
+
+$$4x=12$$
+
+On divise chaque membre par $4$ :
+
+$$x={\color{#4A5D7A}3}$$
+
+Vérification : $6\times 3-5=13$ et $2\times 3+7=13$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Diminuer une valeur de $12\,\%$ revient à la multiplier par :
+Le produit des solutions de l'équation $(3x-9)(3x+15)=0$ est égal à :
+
+**A.** $15$ &emsp; **B.** $-2$ &emsp; **C.** $0$ &emsp; **D.** $-15$
 ---CORR---
-Le coefficient multiplicateur associé à une diminution de $12\,\%$ est $1-0{,}12={\color{#4A5D7A}0{,}88}$.
+On résout d'abord l'équation. Un produit est nul si et seulement si l'un de ses facteurs est nul :
+
+$$3x-9=0 \quad\text{donc}\quad x=3 \qquad\qquad 3x+15=0 \quad\text{donc}\quad x=-5$$
+
+Les deux solutions sont $3$ et $-5$. On calcule ensuite leur **produit** :
+
+$$3\times(-5)={\color{#4A5D7A}-15}$$
+
+La réponse C est le piège classique : c'est le produit des facteurs qui est nul, pas celui des solutions.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Le prix d'un article coûtant $80$ euros augmente de $32$ euros. Le pourcentage d'augmentation est :
+L'étendue de la série $4\,;\,6\,;\,8\,;\,8\,;\,19$ est :
+
+**A.** $8$ &emsp; **B.** $9$ &emsp; **C.** $15$ &emsp; **D.** $19$
 ---CORR---
-Taux $= \dfrac{32}{80}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$.
+L'étendue est l'écart entre la plus grande et la plus petite valeur de la série.
+
+$$19-4={\color{#4A5D7A}15}$$
+
+La réponse A est la médiane, la réponse B la moyenne : trois indicateurs différents à ne pas confondre.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -1,76 +1,110 @@
 ---
-title: "Semaine 21"
+title: "Semaine 21 - Fonction inverse et valeur absolue"
+layout: "automatismes-2nde"
 auto_number: 21
 weight: 21
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Développer puis réduire l'expression littérale suivante :
+Comparer, sans calculatrice :
 
-$$A=\left(-\dfrac{4}{5}c+4\right)\left(-\dfrac{6}{7}c+2\right)-\left(-\dfrac{2}{7}c-5\right)^2$$
+**a.** $\dfrac{1}{5}$ et $\dfrac{1}{8}$ &emsp;&emsp; **b.** $\dfrac{1}{-8}$ et $\dfrac{1}{-5}$
 ---CORR---
-On développe chaque facteur et le carré :
+La fonction inverse est décroissante sur $\left]0\,;\,+\infty\right[$ et décroissante sur $\left]-\infty\,;\,0\right[$, mais **pas** sur $\mathbb{R}$ tout entier : il faut donc travailler intervalle par intervalle.
 
-$$A = \dfrac{24c^2}{35} - \dfrac{24c}{7} - \dfrac{8c}{5} + 8 - \dfrac{4c^2}{49} + \dfrac{20c}{7} - 25$$
+**a.** $5$ et $8$ sont tous deux positifs. Comme $5 < 8$ et que la fonction inverse renverse l'ordre sur les positifs :
 
-On regroupe les termes de même degré :
+$${\color{#4A5D7A}\dfrac{1}{5}>\dfrac{1}{8}}$$
 
-$${\color{#4A5D7A}A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$
+Autrement dit, plus on divise $1$ par un grand nombre, plus le résultat est petit.
+
+**b.** $-8$ et $-5$ sont tous deux négatifs. Comme $-8 < -5$ et que la fonction inverse renverse aussi l'ordre sur les négatifs :
+
+$${\color{#4A5D7A}\dfrac{1}{-8}>\dfrac{1}{-5}}$$
+
+On vérifie : $-0{,}125>-0{,}2$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Encadrer le nombre suivant par deux puissances de 10 d'exposants consécutifs :
+Calculer :
 
-$$\dots \leqslant 84{,}074 \leqslant \dots$$
+$$\left|-7\right| \qquad \left|3-11\right| \qquad \left|4-4\right|$$
 ---CORR---
-Comme $10^1 = 10$ et $10^2 = 100$, et que $10 \leqslant 84{,}074 \leqslant 100$ :
+La valeur absolue d'un nombre est sa distance à zéro : elle est toujours positive ou nulle.
 
-$${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$
+$$\left|-7\right|={\color{#4A5D7A}7}$$
+
+Pour les deux autres, on calcule d'abord ce qui est à l'intérieur :
+
+$$\left|3-11\right|=\left|-8\right|={\color{#4A5D7A}8}$$
+
+$$\left|4-4\right|=\left|0\right|={\color{#4A5D7A}0}$$
+
+Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l'intérieur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(6\,;\,-4)$ et le vecteur $\vec{u}\begin{pmatrix}1\\-3\end{pmatrix}$.
+Résoudre dans $\mathbb{R}$ l'équation :
 
-Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{AB}$.
+$$\left|x-3\right|=5$$
 ---CORR---
-$\overrightarrow{AB} = \vec{u}$ signifie :
+On traduit par une distance : $\left|x-3\right|$ est la distance entre $x$ et $3$. On cherche donc les réels situés à une distance de $5$ du nombre $3$.
 
-$$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x_B = 7 \\ y_B = -7\end{cases}$$
+Il y en a deux, un de chaque côté :
 
-$${\color{#4A5D7A}B(7\,;\,-7)}$$
+$$x-3=5 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-3=-5 \quad\text{donc}\quad x=-2$$
+
+$$S={\color{#4A5D7A}\lbrace -2\,;\,8\rbrace}$$
+
+On peut le lire directement sur une droite graduée : en partant de $3$, on avance de $5$ puis on recule de $5$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-La droite représentant la fonction linéaire $f$ passe par le point de coordonnées $(15\,;\,60)$.
+Résoudre dans $\mathbb{R}$ l'équation :
 
-Donner l'expression de $f(x)$.
-
-<img src="/mabemat/images/automatismes/2nde/s21-q04.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+$$2x^2-9=23$$
 ---CORR---
-Une fonction linéaire est de la forme $f(x) = ax$.
+On isole $x^2$ :
 
-Puisque $f(15) = 60$ :
+$$2x^2=32 \qquad\text{donc}\qquad x^2=16$$
 
-$$a = \dfrac{60}{15} = 4$$
+Comme $16>0$, deux solutions opposées :
 
-$${\color{#4A5D7A}f(x) = 4x}$$
+$$S={\color{#4A5D7A}\lbrace -4\,;\,4\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-**a)** Résoudre dans $\mathbb{R}$ : $x^3 = 125$
+Dans une série de $10$ valeurs rangées dans l'ordre croissant, la médiane est :
 
-**b)** Résoudre dans $\mathbb{R}$ : $x^2 = 16$
+**A.** la $5^\text{e}$ valeur &emsp; **B.** la $6^\text{e}$ valeur &emsp; **C.** la moyenne des $5^\text{e}$ et $6^\text{e}$ valeurs &emsp; **D.** la moyenne de toutes les valeurs
 ---CORR---
-**a)** On cherche le nombre dont le cube est $125$. Comme $5^3 = 125$ :
+L'effectif $10$ est **pair** : il n'y a pas de valeur unique au milieu, mais deux valeurs centrales, celles de rang $5$ et $6$. La médiane est leur moyenne.
 
-$${\color{#4A5D7A}S = \{5\}}$$
+$${\color{#4A5D7A}\text{Médiane}=\dfrac{5^\text{e}+6^\text{e}}{2}}$$
 
-**b)** On reconnaît une équation $x^2 = k$ avec $k = 16 > 0$, donc deux solutions $\pm\sqrt{16}$ :
+Il y a bien $5$ valeurs de chaque côté. La réponse D confond médiane et moyenne : ce sont deux indicateurs différents.
 
-$${\color{#4A5D7A}S = \{-4\,;\,4\}}$$
+<span class="rep">Réponse : C</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Dans une commune, le tarif de l'eau comprend un abonnement annuel de $48$ € et $3{,}50$ € par mètre cube consommé.
+
+Le prix payé, en euros, pour $x$ mètres cubes est :
+
+**A.** $48x+3{,}5$ &emsp; **B.** $3{,}5x+48$ &emsp; **C.** $51{,}5x$ &emsp; **D.** $\dfrac{48}{x}+3{,}5$
+---CORR---
+L'abonnement est payé une seule fois, quelle que soit la consommation : c'est un terme constant.
+
+Le prix au mètre cube est multiplié par le nombre de mètres cubes consommés :
+
+$$\text{prix}={\color{#4A5D7A}3{,}5x+48}$$
+
+La réponse A intervertit les deux rôles, et la réponse C additionne l'abonnement et le tarif au mètre cube, ce qui reviendrait à repayer l'abonnement à chaque mètre cube.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -78,71 +112,103 @@ $${\color{#4A5D7A}S = \{-4\,;\,4\}}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Développer puis réduire l'expression littérale suivante :
+Comparer, sans calculatrice :
 
-$$A=\left(-\dfrac{6}{7}y-4\right)^2-\left(\dfrac{4}{7}y+3\right)^2$$
+**a.** $\dfrac{1}{4}$ et $\dfrac{1}{9}$ &emsp;&emsp; **b.** $\dfrac{1}{-9}$ et $\dfrac{1}{-4}$
 ---CORR---
-On développe chaque carré :
+La fonction inverse est décroissante sur $\left]0\,;\,+\infty\right[$ et décroissante sur $\left]-\infty\,;\,0\right[$, mais **pas** sur $\mathbb{R}$ tout entier : il faut donc travailler intervalle par intervalle.
 
-$$\left(-\dfrac{6}{7}y-4\right)^2 = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16$$
+**a.** $4$ et $9$ sont tous deux positifs. Comme $4 < 9$ et que la fonction inverse renverse l'ordre sur les positifs :
 
-$$\left(\dfrac{4}{7}y+3\right)^2 = \dfrac{16}{49}y^2 + \dfrac{24}{7}y + 9$$
+$${\color{#4A5D7A}\dfrac{1}{4}>\dfrac{1}{9}}$$
 
-$$A = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16 - \dfrac{16}{49}y^2 - \dfrac{24}{7}y - 9$$
+Autrement dit, plus on divise $1$ par un grand nombre, plus le résultat est petit.
 
-$${\color{#4A5D7A}A = \dfrac{20}{49}y^2 + \dfrac{24}{7}y + 7}$$
+**b.** $-9$ et $-4$ sont tous deux négatifs. Comme $-9 < -4$ et que la fonction inverse renverse aussi l'ordre sur les négatifs :
+
+$${\color{#4A5D7A}\dfrac{1}{-9}>\dfrac{1}{-4}}$$
+
+On vérifie : $-0{,}111\ldots>-0{,}25$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Encadrer le nombre suivant par deux puissances de 10 d'exposants consécutifs :
+Calculer :
 
-$$\dots \leqslant 0{,}009\,4 \leqslant \dots$$
+$$\left|-12\right| \qquad \left|5-14\right| \qquad \left|6-6\right|$$
 ---CORR---
-Comme $10^{-3} = 0{,}001$ et $10^{-2} = 0{,}01$, et que $0{,}001 \leqslant 0{,}0094 \leqslant 0{,}01$ :
+La valeur absolue d'un nombre est sa distance à zéro : elle est toujours positive ou nulle.
 
-$${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$
+$$\left|-12\right|={\color{#4A5D7A}12}$$
+
+Pour les deux autres, on calcule d'abord ce qui est à l'intérieur :
+
+$$\left|5-14\right|=\left|-9\right|={\color{#4A5D7A}9}$$
+
+$$\left|6-6\right|=\left|0\right|={\color{#4A5D7A}0}$$
+
+Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l'intérieur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(7\,;\,-5)$ et le vecteur $\vec{u}\begin{pmatrix}-7\\-3\end{pmatrix}$.
+Résoudre dans $\mathbb{R}$ l'équation :
 
-Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{BA}$.
+$$\left|x-2\right|=6$$
 ---CORR---
-$\overrightarrow{BA} = \vec{u}$ signifie :
+On traduit par une distance : $\left|x-2\right|$ est la distance entre $x$ et $2$. On cherche donc les réels situés à une distance de $6$ du nombre $2$.
 
-$$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_B = 14 \\ y_B = -2\end{cases}$$
+Il y en a deux, un de chaque côté :
 
-$${\color{#4A5D7A}B(14\,;\,-2)}$$
+$$x-2=6 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-2=-6 \quad\text{donc}\quad x=-4$$
+
+$$S={\color{#4A5D7A}\lbrace -4\,;\,8\rbrace}$$
+
+On peut le lire directement sur une droite graduée : en partant de $2$, on avance de $6$ puis on recule de $6$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $f$ la fonction affine telle que $f(7) = -4$ et $f(0) = 10$.
+Résoudre dans $\mathbb{R}$ l'équation :
 
-Calculer l'antécédent de $-2$.
+$$3x^2-11=64$$
 ---CORR---
-$f(0) = 10$ donne l'ordonnée à l'origine : $b = 10$.
+On isole $x^2$ :
 
-$f(7) = -4$ : $\;7a + 10 = -4 \implies 7a = -14 \implies a = -2$.
+$$3x^2=75 \qquad\text{donc}\qquad x^2=25$$
 
-Donc $f(x) = -2x + 10$.
+Comme $25>0$, deux solutions opposées :
 
-Antécédent de $-2$ : $-2x + 10 = -2 \implies -2x = -12 \implies x = 6$.
-
-$${\color{#4A5D7A}x = 6}$$
+$$S={\color{#4A5D7A}\lbrace -5\,;\,5\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-**a)** Résoudre dans $\mathbb{R}$ : $x^3 = -27$
+Dans une série de $14$ valeurs rangées dans l'ordre croissant, la médiane est :
 
-**b)** Résoudre dans $\mathbb{R}$ : $x^2 = 121$
+**A.** la moyenne des $7^\text{e}$ et $8^\text{e}$ valeurs &emsp; **B.** la $8^\text{e}$ valeur &emsp; **C.** la $7^\text{e}$ valeur &emsp; **D.** la moyenne de toutes les valeurs
 ---CORR---
-**a)** Comme $(-3)^3 = -27$ :
+L'effectif $14$ est **pair** : il n'y a pas de valeur unique au milieu, mais deux valeurs centrales, celles de rang $7$ et $8$. La médiane est leur moyenne.
 
-$${\color{#4A5D7A}S = \{-3\}}$$
+$${\color{#4A5D7A}\text{Médiane}=\dfrac{7^\text{e}+8^\text{e}}{2}}$$
 
-**b)** $x^2 = 121$ avec $121 > 0$, donc deux solutions $\pm\sqrt{121}$ :
+Il y a bien $7$ valeurs de chaque côté. La réponse D confond médiane et moyenne : ce sont deux indicateurs différents.
 
-$${\color{#4A5D7A}S = \{-11\,;\,11\}}$$
+<span class="rep">Réponse : A</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Dans une commune, le tarif de l'eau comprend un abonnement annuel de $62$ € et $2{,}80$ € par mètre cube consommé.
+
+Le prix payé, en euros, pour $x$ mètres cubes est :
+
+**A.** $\dfrac{62}{x}+2{,}8$ &emsp; **B.** $64{,}8x$ &emsp; **C.** $62x+2{,}8$ &emsp; **D.** $2{,}8x+62$
+---CORR---
+L'abonnement est payé une seule fois, quelle que soit la consommation : c'est un terme constant.
+
+Le prix au mètre cube est multiplié par le nombre de mètres cubes consommés :
+
+$$\text{prix}={\color{#4A5D7A}2{,}8x+62}$$
+
+La réponse C intervertit les deux rôles, et la réponse B additionne l'abonnement et le tarif au mètre cube, ce qui reviendrait à repayer l'abonnement à chaque mètre cube.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

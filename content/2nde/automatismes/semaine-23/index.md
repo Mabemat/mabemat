@@ -1,137 +1,114 @@
 ---
-title: "Semaine 23"
+title: "Semaine 23 - Parité et nombres premiers"
+layout: "automatismes-2nde"
 auto_number: 23
 weight: 23
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-$0{,}9 \times 6 = \ldots$
+Décomposer $180$ en produit de facteurs premiers.
 ---CORR---
-$${\color{#4A5D7A}0{,}9 \times 6 = 5{,}4}$$
+On divise successivement par les nombres premiers, en commençant par le plus petit :
+
+$$180=2\times 90 \qquad 90=2\times 45 \qquad 45=3\times 15 \qquad 15=3\times 5$$
+
+En regroupant :
+
+$$180={\color{#4A5D7A}2^2\times 3^2\times 5}$$
+
+Vérification : $4\times 9\times 5=180$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-$15 - 6 \times 6 = \ldots$
+Démontrer que le carré d'un nombre entier impair est impair.
 ---CORR---
-On effectue d'abord la multiplication : $6 \times 6 = 36$.
+On traduit l'hypothèse : soit $n$ un entier impair. Il existe alors un entier $k$ tel que
 
-$${\color{#4A5D7A}15 - 36 = -21}$$
+$$n=2k+1$$
+
+On calcule le carré en développant l'identité remarquable :
+
+$$n^2=(2k+1)^2=4k^2+4k+1$$
+
+Pour reconnaître un nombre impair, il faut le mettre sous la forme $2\times\text{entier}+1$. On factorise donc les deux premiers termes par $2$ :
+
+$$n^2={\color{#4A5D7A}2\left(2k^2+2k\right)+1}$$
+
+Comme $2k^2+2k$ est un entier, $n^2$ est bien impair.
+
+Tout est dans la mise en forme finale : sans elle, on n'a pas démontré la parité.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Forme développée et réduite de $(x+8)(x-3)$.
+Le nombre $91$ est-il premier ? Justifier.
 ---CORR---
-$$(x+8)(x-3) = x^2 - 3x + 8x - 24 = {\color{#4A5D7A}x^2 + 5x - 24}$$
+Un nombre premier n'a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s'arrêtant dès que leur carré dépasse $91$ (car $10^2=100>91$, il suffit de tester jusqu'à $9$).
+
+$91$ n'est pas pair, la somme de ses chiffres est $10$ donc il n'est pas divisible par $3$, il ne se termine ni par $0$ ni par $5$. On teste $7$ :
+
+$$91=7\times 13$$
+
+Le nombre $91$ admet donc d'autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-$25\,\%$ de $36$ : $\ldots$
----CORR---
-Prendre $25\,\%$ d'une quantité revient à la diviser par $4$ :
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-$${\color{#4A5D7A}36 \div 4 = 9}$$
+$$\left|x-1\right|\leqslant 4$$
+---CORR---
+$\left|x-1\right|$ est la distance entre $x$ et $1$. On encadre :
+
+$$-4\leqslant x-1\leqslant 4$$
+
+On ajoute $1$ aux trois membres :
+
+$$-3\leqslant x\leqslant 5$$
+
+$$S={\color{#4A5D7A}\left[-3\,;\,5\right]}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Médiane de la série : $15$ ; $23$ ; $3$ ; $18$ ; $7$.
+Une personne doit rembourser un crédit de $1\,800$ € en trois mois. En janvier, elle rembourse $\dfrac{1}{3}$ du crédit et en février $\dfrac{1}{4}$ du crédit.
+
+La somme, en euros, qu'il lui reste à rembourser en mars est :
+
+**A.** $450$ &emsp; **B.** $1\,050$ &emsp; **C.** $750$ &emsp; **D.** $600$
 ---CORR---
-On ordonne : $3$ ; $7$ ; $15$ ; $18$ ; $23$.
+Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $1\,800$ €.
 
-La série a $5$ valeurs, la médiane est la $3^{\text{e}}$ valeur :
+$$\text{janvier}:\ \dfrac{1}{3}\times 1\,800=600 \qquad \text{février}:\ \dfrac{1}{4}\times 1\,800=450$$
 
-$${\color{#4A5D7A}15}$$
+Il reste alors :
+
+$$1\,800-600-450={\color{#4A5D7A}750}$$
+
+On peut aussi raisonner en proportions : $\dfrac{1}{3}+\dfrac{1}{4}=\dfrac{7}{12}$ du crédit est remboursé, il en reste $\dfrac{5}{12}$, soit $\dfrac{5}{12}\times 1\,800=750$ €.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Écrire sous forme d'une fraction irréductible : $\dfrac{5}{6} \times \dfrac{-7}{5}$
+Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur manquante.
+
+| $x$ | 4 | 10 |
+|---|---|---|
+| $y$ | 6 | ? |
+
+**A.** $9$ &emsp; **B.** $12$ &emsp; **C.** $16$ &emsp; **D.** $15$
 ---CORR---
-$$\dfrac{5}{6} \times \dfrac{-7}{5} = \dfrac{5 \times (-7)}{6 \times 5} = \dfrac{-7}{6} = {\color{#4A5D7A}-\dfrac{7}{6}}$$
-{{< /auto2-exo >}}
+Dans un tableau de proportionnalité, on passe de la ligne $x$ à la ligne $y$ en multipliant par un coefficient constant. On le calcule avec la colonne complète :
 
-{{< auto2-exo numero="07" >}}
-Signe de $(-6)^{-5}$ : $\ldots$
----CORR---
-$(-6)^{-5} = \dfrac{1}{(-6)^5}$. Comme $(-6)^5$ est négatif (puissance impaire d'un nombre négatif), le résultat est :
+$$k=\dfrac{6}{4}=1{,}5$$
 
-$${\color{#4A5D7A}\text{négatif}}$$
-{{< /auto2-exo >}}
+On applique ce coefficient à la seconde colonne :
 
-{{< auto2-exo numero="08" >}}
-$\dfrac{2^3}{2^4} = 2^{\ldots}$
----CORR---
-En appliquant $\dfrac{a^n}{a^p} = a^{n-p}$ :
+$$10\times 1{,}5={\color{#4A5D7A}15}$$
 
-$$\dfrac{2^3}{2^4} = 2^{3-4} = {\color{#4A5D7A}2^{-1}}$$
-{{< /auto2-exo >}}
+La réponse B est l'erreur classique : ajouter $6$ à $10$ comme on ajoute $2$ à $4$. La proportionnalité se lit avec une multiplication, pas avec un écart constant.
 
-{{< auto2-exo numero="09" >}}
-Factoriser $9 - x^2$.
----CORR---
-On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = 3$ et $b = x$ :
-
-$${\color{#4A5D7A}9 - x^2 = (3-x)(3+x)}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="10" >}}
-$1 - \dfrac{5}{8} = \ldots$
----CORR---
-$$1 - \dfrac{5}{8} = \dfrac{8}{8} - \dfrac{5}{8} = {\color{#4A5D7A}\dfrac{3}{8}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="11" >}}
-Coordonnées du milieu de $[AB]$ avec $A(-10\,;\,3)$ et $B(-6\,;\,9)$.
----CORR---
-$$x_M = \dfrac{-10 + (-6)}{2} = -8 \qquad y_M = \dfrac{3 + 9}{2} = 6$$
-
-$${\color{#4A5D7A}M(-8\,;\,6)}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="12" >}}
-Que renvoie `mystere(7)` ?
-
-```
-def mystere(a) :
-    b = 2*a*a
-    b = b + a
-    return b
-```
----CORR---
-Pour $a = 7$ : $b = 2 \times 7 \times 7 = 98$, puis $b = 98 + 7 = 105$.
-
-$${\color{#4A5D7A}105}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="13" >}}
-<img src="/mabemat/images/automatismes/2nde/s23-q08.svg" alt="Courbes f et g" style="width:60%;max-height:400px;max-width:100%;">
-
-Image de $2$ par $f$ : $\ldots$
----CORR---
-On lit graphiquement l'ordonnée du point de $\mathscr{C}_f$ d'abscisse $2$ :
-
-$${\color{#4A5D7A}f(2) = -1}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="14" >}}
-<img src="/mabemat/images/automatismes/2nde/s23-q08.svg" alt="Courbes f et g" style="width:60%;max-height:400px;max-width:100%;">
-
-Résoudre $f(x) > 1$.
----CORR---
-Les solutions sont les abscisses des points de $\mathscr{C}_f$ situés **au-dessus** de la droite $y = 1$.
-
-$${\color{#4A5D7A}S = \,]-1\,;\,1[}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="15" >}}
-Compléter : $\overrightarrow{DE} = \ldots\,\overrightarrow{AB}$
-
-<img src="/mabemat/images/automatismes/2nde/s23-q06.svg" alt="Grille de vecteurs" style="width:60%;max-height:400px;max-width:100%;">
----CORR---
-Les vecteurs $\overrightarrow{DE}$ et $\overrightarrow{AB}$ sont colinéaires de sens contraire, et $\overrightarrow{DE}$ est deux fois plus long que $\overrightarrow{AB}$.
-
-$${\color{#4A5D7A}\overrightarrow{DE} = -2\,\overrightarrow{AB}}$$
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -139,119 +116,111 @@ $${\color{#4A5D7A}\overrightarrow{DE} = -2\,\overrightarrow{AB}}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-$4 \times 1{,}5 = \ldots$
+Décomposer $252$ en produit de facteurs premiers.
 ---CORR---
-$${\color{#4A5D7A}4 \times 1{,}5 = 6}$$
+On divise successivement par les nombres premiers, en commençant par le plus petit :
+
+$$252=2\times 126 \qquad 126=2\times 63 \qquad 63=3\times 21 \qquad 21=3\times 7$$
+
+En regroupant :
+
+$$252={\color{#4A5D7A}2^2\times 3^2\times 7}$$
+
+Vérification : $4\times 9\times 7=252$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-$45 - 50 + 8 = \ldots$
+Démontrer que le carré d'un nombre entier pair est pair.
 ---CORR---
-$${\color{#4A5D7A}45 - 50 + 8 = 3}$$
+On traduit l'hypothèse : soit $n$ un entier pair. Il existe alors un entier $k$ tel que
+
+$$n=2k$$
+
+On calcule le carré :
+
+$$n^2=(2k)^2=4k^2$$
+
+Pour reconnaître un nombre pair, il faut le mettre sous la forme $2\times\text{entier}$. On factorise donc par $2$ :
+
+$$n^2={\color{#4A5D7A}2\left(2k^2\right)}$$
+
+Comme $2k^2$ est un entier, $n^2$ est bien pair.
+
+Tout est dans la mise en forme finale : sans elle, on n'a pas démontré la parité.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Développer et réduire $(x+1)(x+4)$.
+Le nombre $87$ est-il premier ? Justifier.
 ---CORR---
-$$(x+1)(x+4) = x^2 + 4x + x + 4 = {\color{#4A5D7A}x^2 + 5x + 4}$$
+Un nombre premier n'a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s'arrêtant dès que leur carré dépasse $87$ (car $10^2=100>87$, il suffit de tester jusqu'à $9$).
+
+$87$ n'est pas pair. On calcule la somme de ses chiffres :
+
+$$8+7=15$$
+
+$15$ est divisible par $3$, donc $87$ aussi :
+
+$$87=3\times 29$$
+
+Le nombre $87$ admet donc d'autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-$2 + \dfrac{5}{3} = \ldots$
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+
+$$\left|x+2\right|\leqslant 5$$
 ---CORR---
-$$2 + \dfrac{5}{3} = \dfrac{6}{3} + \dfrac{5}{3} = {\color{#4A5D7A}\dfrac{11}{3}}$$
+$\left|x+2\right|$ est la distance entre $x$ et $-2$. On encadre :
+
+$$-5\leqslant x+2\leqslant 5$$
+
+On retranche $2$ aux trois membres :
+
+$$-7\leqslant x\leqslant 3$$
+
+$$S={\color{#4A5D7A}\left[-7\,;\,3\right]}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-$20\,\%$ de $40$ : $\ldots$
+Une personne doit rembourser un crédit de $2\,400$ € en trois mois. En janvier, elle rembourse $\dfrac{1}{4}$ du crédit et en février $\dfrac{1}{3}$ du crédit.
+
+La somme, en euros, qu'il lui reste à rembourser en mars est :
+
+**A.** $1\,000$ &emsp; **B.** $1\,400$ &emsp; **C.** $600$ &emsp; **D.** $800$
 ---CORR---
-$10\,\%$ de $40 = 4$, donc $20\,\% = 2 \times 4 = {\color{#4A5D7A}8}$
+Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $2\,400$ €.
+
+$$\text{janvier}:\ \dfrac{1}{4}\times 2\,400=600 \qquad \text{février}:\ \dfrac{1}{3}\times 2\,400=800$$
+
+Il reste alors :
+
+$$2\,400-600-800={\color{#4A5D7A}1\,000}$$
+
+On peut aussi raisonner en proportions : $\dfrac{1}{4}+\dfrac{1}{3}=\dfrac{7}{12}$ du crédit est remboursé, il en reste $\dfrac{5}{12}$, soit $\dfrac{5}{12}\times 2\,400=1\,000$ €.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-$0{,}4 \times 0{,}5 = \ldots$
+Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur manquante.
+
+| $x$ | 6 | 15 |
+|---|---|---|
+| $y$ | 8 | ? |
+
+**A.** $17$ &emsp; **B.** $20$ &emsp; **C.** $18$ &emsp; **D.** $24$
 ---CORR---
-$$0{,}4 \times 0{,}5 = 4 \times 0{,}1 \times 5 \times 0{,}1 = 20 \times 0{,}01 = {\color{#4A5D7A}0{,}2}$$
-{{< /auto2-exo >}}
+Dans un tableau de proportionnalité, on passe de la ligne $x$ à la ligne $y$ en multipliant par un coefficient constant. On le calcule avec la colonne complète :
 
-{{< auto2-exo numero="07" >}}
-Multiplier par $1{,}11$ revient à augmenter de $\ldots\,\%$.
----CORR---
-Comme $1{,}11 = 1 + 0{,}11 = 1 + \dfrac{11}{100}$ :
+$$k=\dfrac{8}{6}=\dfrac{4}{3}$$
 
-$${\color{#4A5D7A}11\,\%}$$
-{{< /auto2-exo >}}
+On applique ce coefficient à la seconde colonne :
 
-{{< auto2-exo numero="08" >}}
-Quelle est la moyenne de $4$ ; $12$ ; $11$ ?
----CORR---
-$$\dfrac{4 + 12 + 11}{3} = \dfrac{27}{3} = {\color{#4A5D7A}9}$$
-{{< /auto2-exo >}}
+$$15\times\dfrac{4}{3}=\dfrac{60}{3}={\color{#4A5D7A}20}$$
 
-{{< auto2-exo numero="09" >}}
-$\sqrt{49} = \ldots$
----CORR---
-$${\color{#4A5D7A}\sqrt{49} = 7}$$
-{{< /auto2-exo >}}
+La réponse A est l'erreur classique : ajouter $9$ à $8$ comme on ajoute $9$ à $6$. La proportionnalité se lit avec une multiplication, pas avec un écart constant.
 
-{{< auto2-exo numero="10" >}}
-Que renvoie `mystere(-4)` ?
-
-```
-def mystere(a) :
-    b = 2 + a
-    return b
-```
----CORR---
-Pour $a = -4$ : $b = 2 + (-4) = -2$.
-
-$${\color{#4A5D7A}-2}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="11" >}}
-Compléter : $6 \times \ldots = 13$
----CORR---
-Le nombre qui, multiplié par $6$, donne $13$ est :
-
-$${\color{#4A5D7A}\dfrac{13}{6}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="12" >}}
-Déterminer l'abscisse du point $A$.
-
-<img src="/mabemat/images/automatismes/2nde/s23d-q12.svg" alt="Droite graduée" style="width:60%;max-height:400px;max-width:100%;">
----CORR---
-Le point $A$ est à la 2e subdivision entre 1 et 2. Chaque subdivision vaut $\dfrac{1}{4}$, donc $A$ est à $1 + \dfrac{2}{4} = 1{,}5$.
-
-$${\color{#4A5D7A}1{,}5}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="13" >}}
-Aire d'un triangle rectangle dont les côtés mesurent $3\text{ cm}$, $4\text{ cm}$ et $5\text{ cm}$.
----CORR---
-Les deux côtés de l'angle droit sont $3$ cm et $4$ cm ($5$ cm est l'hypoténuse).
-
-$$\text{Aire} = \dfrac{3 \times 4}{2} = {\color{#4A5D7A}6 \text{ cm}^2}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="14" >}}
-Un article à $1\,000$€ subit une hausse de $10\,\%$ puis une baisse de $10\,\%$. Son nouveau prix est :
-
-$\square$ $1\,000$€ $\quad$ $\square$ $1\,010$€ $\quad$ $\square$ $990$€
----CORR---
-Après hausse de $10\,\%$ : $1\,000 \times 1{,}1 = 1\,100$€.
-
-Après baisse de $10\,\%$ : $1\,100 \times 0{,}9 = 990$€.
-
-Le CM global est $1{,}1 \times 0{,}9 = 0{,}99 < 1$, donc baisse globale.
-
-$${\color{#4A5D7A}990\text{€}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="15" >}}
-$10^{-2} + 10^3 = \ldots$
----CORR---
-$$10^{-2} + 10^3 = 0{,}01 + 1\,000 = {\color{#4A5D7A}1\,000{,}01}$$
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

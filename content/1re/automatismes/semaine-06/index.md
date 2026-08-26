@@ -98,9 +98,9 @@ Soit $x$ un réel non nul.
 On met l'expression au même dénominateur : 
 
 $\begin{aligned}
-        \dfrac{1}{6}-\dfrac{5x+3}{x}&=\dfrac{x-6\times \left(5x+3\right)}{6x}\\\\
-        &=\dfrac{x -30x -18}{6x}\\\\
-        &=\dfrac{-29x -18}{6x}\\\\
+        \dfrac{1}{6}-\dfrac{5x+3}{x}&=\dfrac{x-6\times \left(5x+3\right)}{6x}\\
+        &=\dfrac{x -30x -18}{6x}\\
+        &=\dfrac{-29x -18}{6x}\\
      \end{aligned}$
 
 $\phantom{\dfrac{1}{6}-\dfrac{5x+3}{x}}=-\dfrac{29x +18}{6x}$
@@ -124,9 +124,9 @@ On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{x}{y}+2= \dfr
 On isole $u$ dans le premier membre : 
 
  $\begin{aligned}
-               \dfrac{x}{y}+2&= \dfrac{5}{u} \\\\ 
-              \dfrac{x+2y}{y}&= \dfrac{5}{u} \\\\ 
-              u&=\dfrac{5\times y}{x+2y} \\\\
+               \dfrac{x}{y}+2&= \dfrac{5}{u} \\ 
+              \dfrac{x+2y}{y}&= \dfrac{5}{u} \\ 
+              u&=\dfrac{5\times y}{x+2y} \\
               u&= \dfrac{5y}{x+2y} 
               \end{aligned}$
 
@@ -254,9 +254,9 @@ On met l'expression au même dénominateur : <br>
 
 $$
 \begin{aligned}
-\dfrac{1}{3}-\dfrac{4x+4}{x}&=\dfrac{x-3\times \left(4x+4\right)}{3x}\\\\
-&=\dfrac{x -12x -12}{3x}\\\\
-&=\dfrac{-11x -12}{3x}\\\\
+\dfrac{1}{3}-\dfrac{4x+4}{x}&=\dfrac{x-3\times \left(4x+4\right)}{3x}\\
+&=\dfrac{x -12x -12}{3x}\\
+&=\dfrac{-11x -12}{3x}\\
 \end{aligned}
 $$
 
@@ -281,9 +281,9 @@ On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{2}{x}+\dfrac{
 On isole $u$ dans le premier membre : <br>
 
 $$
-\begin{aligned} \dfrac{2}{x}+\dfrac{3}{y}&= \dfrac{4}{u} \\\\
-\dfrac{2y+3x}{xy}&= \dfrac{4}{u} \\\\
-\dfrac{u}{4} &=   \dfrac{xy}{2y+3x} \\\\
+\begin{aligned} \dfrac{2}{x}+\dfrac{3}{y}&= \dfrac{4}{u} \\
+\dfrac{2y+3x}{xy}&= \dfrac{4}{u} \\
+\dfrac{u}{4} &=   \dfrac{xy}{2y+3x} \\
 u&= \boldsymbol{\dfrac{4xy}{3x+2y}}
 \end{aligned}
 $$

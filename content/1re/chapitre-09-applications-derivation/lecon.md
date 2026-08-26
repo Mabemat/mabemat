@@ -2,7 +2,70 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">9.1 Exemples graphiques</h2>
+<h2 class="subsection-title">9.1 Fonctions paires et fonctions impaires</h2>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $f$ une fonction définie sur un ensemble $D$ <strong>symétrique par rapport à $0$</strong> (c'est-à-dire que si $x\in D$ alors $-x\in D$).
+<ul>
+<li>$f$ est <strong>paire</strong> si pour tout $x\in D$, $f(-x)=f(x)$.</li>
+<li>$f$ est <strong>impaire</strong> si pour tout $x\in D$, $f(-x)=-f(x)$.</li>
+</ul>
+</div>
+</div>
+
+<div class="remarque">
+Une fonction peut n'être ni paire ni impaire : c'est même le cas le plus fréquent. Par exemple $f(x)=x^2+x$ n'est ni l'un ni l'autre.
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Dans un repère orthogonal, on note $\mathcal{C}_f$ la courbe représentative de $f$.
+<ul>
+<li>$f$ est paire si et seulement si $\mathcal{C}_f$ est <strong>symétrique par rapport à l'axe des ordonnées</strong>.</li>
+<li>$f$ est impaire si et seulement si $\mathcal{C}_f$ est <strong>symétrique par rapport à l'origine</strong> $O$ du repère.</li>
+</ul>
+</div>
+</div>
+
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour étudier la parité d'une fonction $f$ :
+<ol>
+<li>Vérifier d'abord que l'ensemble de définition est symétrique par rapport à $0$ (sinon, $f$ n'est ni paire ni impaire) ;</li>
+<li>Calculer $f(-x)$ et le simplifier ;</li>
+<li>Comparer le résultat à $f(x)$ et à $-f(x)$.</li>
+</ol>
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Étudier la parité des fonctions suivantes.
+<ol>
+<li>Soit $f$ définie sur $\R$ par $f(x)=3x^4-x^2+5$. <br>
+L'ensemble $\R$ est symétrique par rapport à $0$.<br>
+$f(-x)=3(-x)^4-(-x)^2+5=3x^4-x^2+5=f(x)$. <br>
+Donc $f$ est <strong>paire</strong> : sa courbe est symétrique par rapport à l'axe des ordonnées.</li>
+<li>Soit $g$ définie sur $\R^*$ par $g(x)=x^3+\dfrac{1}{x}$. <br>
+L'ensemble $\R^*$ est symétrique par rapport à $0$.<br>
+$g(-x)=(-x)^3+\dfrac{1}{-x}=-x^3-\dfrac{1}{x}=-\left(x^3+\dfrac{1}{x}\right)=-g(x)$. <br>
+Donc $g$ est <strong>impaire</strong> : sa courbe est symétrique par rapport à l'origine.</li>
+<li>Soit $h$ définie sur $[0\,;\,+\infty[$ par $h(x)=\sqrt{x}$.<br>
+L'ensemble de définition n'est pas symétrique par rapport à $0$ ($1$ y appartient mais pas $-1$) : $h$ n'est ni paire ni impaire.</li>
+</ol>
+</div>
+</div>
+
+<div class="remarque">
+L'intérêt est pratique : si $f$ est paire ou impaire, il suffit d'étudier ses variations sur la partie positive de son ensemble de définition, puis de compléter la courbe par symétrie.
+</div>
+
+<h2 class="subsection-title">9.2 Exemples graphiques</h2>
 <div style="display:flex; gap:20px;">
 
 <div style="flex:1; text-align:center;">
@@ -17,7 +80,7 @@ Toutes les tangentes ont un coefficient directeur négatif ; autrement dit, tous
 
 </div>
 
-<h2 class="subsection-title">9.2 Théorèmes fondamentaux</h2>
+<h2 class="subsection-title">9.3 Théorèmes fondamentaux</h2>
 
 <div class="environment theoreme">
 <div class="environment-title">Théorème :</div>
@@ -30,19 +93,6 @@ Soit $f$ une fonction dérivable sur un intervalle $I$.
 </ul>
 </div>
 </div>
-
-Démonstration. <br>
-<ul>
-<li>Dans le cas où $f$ est croissante sur $I$ : <br>
-Par définition, pour tout réel $a$ de $I$ : $f'(a) =\underset{h\rightarrow 0}{\lim} \left(\dfrac{f(a+h)-f(a)}{h}\right)$.<br>
-Si $h>0$ alors $a+h>a$ et, comme $f$ est croissante sur $I$, $f(a+h)\geq f(a)$. Du coup, $\dfrac{f(a+h)-f(a)}{h}\geq 0$.<br>
-Si $h<0$ alors $a+h<a$ et, comme $f$ est croissante sur $I$, $f(a+h)\leq f(a)$. Du coup, $\dfrac{f(a+h)-f(a)}{h}\geq 0$.<br>
-Ainsi, $f'(a)$ est la limite, quand $h$ tend vers $0$, de nombres tous positifs ou nuls ; on admet que leur limite $f'(a)$ est aussi positive ou nulle.</li>
-<li>Dans le cas où la fonction est décroissante sur $I$, la démonstration est tout à fait similaire.</li>
-<li>Dans le cas où $f$ est constante sur $I$ : Pour tout réel $a$ de $I$ et tout $h\neq 0 : f(a+h)=f(a)$ ;ainsi $f'(a)$
-est la limite, quand $h$ tend vers $0$, de nombres tous nuls, ce qui implique que $f'(a) = 0$.</li>
-</ul>
-
 
 <div class="environment theoreme">
 <div class="environment-title">Théorème :</div>
@@ -77,7 +127,7 @@ La fonction $f$ est donc strictement croissante sur chacun des intervalles où e
 </div>
 </div>
 
-<h2 class="subsection-title">9.3 Extremum</h2>
+<h2 class="subsection-title">9.4 Extremum</h2>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>

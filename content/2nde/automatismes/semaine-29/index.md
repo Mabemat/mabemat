@@ -1,100 +1,106 @@
 ---
-title: "Semaine 29"
+title: "Semaine 29 - Révisions : calcul, évolutions et fonctions"
+layout: "automatismes-2nde"
 auto_number: 29
 weight: 29
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-On considère la droite $d$ d'équation $y = 3x + 6$.
+Calculer et donner le résultat sous forme d'une fraction irréductible :
 
-Quel est le point d'intersection de $d$ avec l'axe des abscisses ?
-
-**A.** $(0 ; 6)$ &emsp; **B.** $(2 ; 0)$ &emsp; **C.** $(-2 ; 0)$ &emsp; **D.** $(6 ; 0)$
+$$A=\dfrac{5}{6}-\dfrac{2}{9}\times\dfrac{3}{4}$$
 ---CORR---
-L'intersection avec l'axe des abscisses vérifie $y = 0$ :
+La multiplication est prioritaire sur la soustraction : on commence par elle.
 
-$$3x + 6 = 0 \implies x = -2$$
+$$\dfrac{2}{9}\times\dfrac{3}{4}=\dfrac{2\times 3}{9\times 4}=\dfrac{6}{36}=\dfrac{1}{6}$$
 
-Le point est $(-2 ; 0)$.
+On effectue ensuite la soustraction, les deux fractions ayant déjà le même dénominateur :
 
-**Réponse : C**
+$$A=\dfrac{5}{6}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2\times \cancel{2}}{3\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{3}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On considère la droite $D$ d'équation $y = -\dfrac{1}{5}x + 1$ et le point $A(60 ; -14)$.
+Un prix augmente de $25\,\%$, puis diminue de $12\,\%$.
 
-Le point $A$ est-il au-dessus ou en dessous de la droite $D$ ?
-
-**A.** $A$ est sur la droite $D$ &emsp; **B.** $A$ est au-dessus de $D$ &emsp; **C.** $A$ est en dessous de $D$ &emsp; **D.** On ne peut pas savoir
+Déterminer le taux d'évolution global, en pourcentage.
 ---CORR---
-On calcule l'ordonnée de $D$ en $x = 60$ :
+On multiplie les coefficients multiplicateurs :
 
-$$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$
+$$1{,}25\times 0{,}88=1{,}1$$
 
-Or l'ordonnée de $A$ est $-14 < -11$, donc $A$ est **en dessous** de la droite $D$.
+Comme $1{,}1=1+0{,}1$, il s'agit d'une hausse de ${\color{#4A5D7A}10\,\%}$.
 
-**Réponse : C**
+On note au passage que $25-12=13$ ne donne pas le bon résultat : les taux ne s'additionnent jamais.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On considère la fonction $f$ définie par $f(x) = \dfrac{3}{x}$ et les points $P(1 ; 3)$, $Q(3 ; 1)$, $R(-1 ; -3)$, $S\!\left(\dfrac{1}{3} ; 9\right)$.
+Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-2x-3$.
 
-Quel est le point qui **n'appartient pas** à la courbe représentative de $f$ ?
+**a.** Calculer $f(-2)$.
 
-**A.** $P$ &emsp; **B.** $Q$ &emsp; **C.** $R$ &emsp; **D.** $S$
+**b.** Vérifier que $3$ est un antécédent de $0$ par $f$.
 ---CORR---
-On vérifie $f(x) = \dfrac{3}{x}$ pour chaque point :
-- $f(1) = 3$ → $P(1;3)$ ✓
-- $f(3) = 1$ → $Q(3;1)$ ✓
-- $f(-1) = -3$ → $R(-1;-3)$ ✓
-- $f\!\left(\dfrac{1}{3}\right) = 9$ → $S\!\left(\dfrac{1}{3};9\right)$ ✓
+**a.** On remplace $x$ par $-2$, entre parenthèses :
 
-Attention : on relit l'énoncé — $Q(3;1)$ : $f(3) = 3/3 = 1$ ✓. Tous semblent corrects. En relisant, $S\!\left(\dfrac{1}{3};9\right)$ : $f(1/3) = 3/(1/3) = 9$ ✓.
+$$f(-2)=(-2)^2-2\times(-2)-3=4+4-3={\color{#4A5D7A}5}$$
 
-Le point qui n'appartient pas est **B** ($Q$ ne correspond pas à la courbe si l'énoncé utilise une autre valeur — voir le livret pour la valeur exacte).
+**b.** Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :
 
-**Réponse : B**
+$$f(3)=3^2-2\times 3-3=9-6-3={\color{#4A5D7A}0}$$
+
+L'égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-On cherche les solutions de l'équation $(x + 3)^2 = 10$.
+On considère la série statistique suivante, rangée dans l'ordre croissant :
 
-Quel est l'ensemble solution ?
+$$3\ ;\ 5\ ;\ 5\ ;\ 8\ ;\ 9\ ;\ 12\ ;\ 15\ ;\ 15$$
 
-**A.** $\{-3\}$ &emsp; **B.** $\{\sqrt{10} - 3\}$ &emsp; **C.** $\{-\sqrt{10}-3 ; \sqrt{10}-3\}$ &emsp; **D.** $\emptyset$
+Déterminer sa médiane et sa moyenne.
 ---CORR---
-$$(x+3)^2 = 10 \implies x + 3 = \pm\sqrt{10} \implies x = -3 \pm \sqrt{10}$$
+La série compte $8$ valeurs, un effectif pair : la médiane est la moyenne des valeurs de rang $4$ et $5$.
 
-L'ensemble solution est $\{-\sqrt{10}-3 ; \sqrt{10}-3\}$.
+$$\text{Médiane}=\dfrac{8+9}{2}={\color{#4A5D7A}8{,}5}$$
 
-**Réponse : C**
+Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :
+
+$$\dfrac{3+5+5+8+9+12+15+15}{8}=\dfrac{72}{8}={\color{#4A5D7A}9}$$
+
+Moyenne et médiane sont deux indicateurs différents : ici la moyenne est tirée vers le haut par les deux valeurs $15$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Un coureur parcourt $500$ m en $5$ minutes.
+On lance un dé équilibré à six faces. La probabilité d'obtenir au moins $5$ est :
 
-Quelle est sa vitesse en km/h ?
-
-**A.** $6$ km/h &emsp; **B.** $60$ km/h &emsp; **C.** $10$ km/h &emsp; **D.** $1{,}5$ km/h
+**A.** $\dfrac{1}{6}$ &emsp; **B.** $\dfrac{1}{3}$ &emsp; **C.** $\dfrac{5}{6}$ &emsp; **D.** $\dfrac{2}{3}$
 ---CORR---
-$500$ m en $5$ min $= 0{,}5$ km en $\dfrac{5}{60}$ h.
+« Au moins $5$ » signifie $5$ ou $6$ : l'événement compte $2$ issues favorables sur $6$ issues équiprobables.
 
-$$v = \frac{0{,}5}{\frac{5}{60}} = 0{,}5 \times \frac{60}{5} = 6 \text{ km/h}$$
+$$P=\dfrac{2}{6}={\color{#4A5D7A}\dfrac{1}{3}}$$
 
-**Réponse : A**
+La réponse A ne compte qu'une seule issue, en oubliant que $6$ est aussi « au moins $5$ ».
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Quelle est l'unité adaptée pour exprimer la distance Paris–Lyon ?
+Le nombre $\dfrac{\left(10^{3}\right)^{2}}{10^{-2}}$ est égal à :
 
-**A.** cm &emsp; **B.** mm &emsp; **C.** km &emsp; **D.** m
+**A.** $10^{4}$ &emsp; **B.** $10^{6}$ &emsp; **C.** $10^{8}$ &emsp; **D.** $10^{-8}$
 ---CORR---
-La distance Paris–Lyon est d'environ $465$ km. L'unité adaptée est le **kilomètre**.
+Pour une puissance de puissance, on **multiplie** les exposants :
 
-**Réponse : C**
+$$\left(10^{3}\right)^{2}=10^{3\times 2}=10^{6}$$
+
+Pour un quotient de puissances de même base, on soustrait les exposants :
+
+$$\dfrac{10^{6}}{10^{-2}}=10^{6-(-2)}=10^{6+2}={\color{#4A5D7A}10^{8}}$$
+
+La réponse A additionne les exposants du carré au lieu de les multiplier, et la réponse B oublie le dénominateur.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -102,89 +108,99 @@ La distance Paris–Lyon est d'environ $465$ km. L'unité adaptée est le **kilo
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-On considère la droite $d$ d'équation $y = \dfrac{x}{2} - 10$.
+Calculer et donner le résultat sous forme d'une fraction irréductible :
 
-Quel est le point d'intersection de $d$ avec l'axe des abscisses ?
-
-**A.** $(0 ; -10)$ &emsp; **B.** $(20 ; 0)$ &emsp; **C.** $(-20 ; 0)$ &emsp; **D.** $(10 ; 0)$
+$$A=\dfrac{7}{10}-\dfrac{3}{8}\times\dfrac{4}{5}$$
 ---CORR---
-L'intersection avec l'axe des abscisses vérifie $y = 0$ :
+La multiplication est prioritaire sur la soustraction : on commence par elle.
 
-$$\frac{x}{2} - 10 = 0 \implies x = 20$$
+$$\dfrac{3}{8}\times\dfrac{4}{5}=\dfrac{3\times 4}{8\times 5}=\dfrac{12}{40}=\dfrac{3}{10}$$
 
-Le point est $(20 ; 0)$.
+On effectue ensuite la soustraction, les deux fractions ayant alors le même dénominateur :
 
-**Réponse : B**
+$$A=\dfrac{7}{10}-\dfrac{3}{10}=\dfrac{4}{10}=\dfrac{2\times \cancel{2}}{5\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{5}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On considère la droite $D$ d'équation $y = -\dfrac{2}{3}x + 1$ et le point $A(36 ; -20)$.
+Un prix augmente de $20\,\%$, puis diminue de $25\,\%$.
 
-Le point $A$ est-il au-dessus ou en dessous de la droite $D$ ?
-
-**A.** $A$ est sur la droite $D$ &emsp; **B.** $A$ est en dessous de $D$ &emsp; **C.** $A$ est au-dessus de $D$ &emsp; **D.** On ne peut pas savoir
+Déterminer le taux d'évolution global, en pourcentage.
 ---CORR---
-On calcule l'ordonnée de $D$ en $x = 36$ :
+On multiplie les coefficients multiplicateurs :
 
-$$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$
+$$1{,}20\times 0{,}75=0{,}9$$
 
-Or l'ordonnée de $A$ est $-20 > -23$, donc $A$ est **au-dessus** de la droite $D$.
+Comme $0{,}9=1-0{,}1$, il s'agit d'une baisse de ${\color{#4A5D7A}10\,\%}$.
 
-**Réponse : C**
+On note au passage que $20-25=-5$ ne donne pas le bon résultat : les taux ne s'additionnent jamais.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On considère la fonction $f$ définie par $f(x) = \dfrac{4}{x}$ et les points $P(1 ; 4)$, $Q(4 ; 1)$, $R(-2 ; -2)$, $S(2 ; 3)$.
+Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-4x+3$.
 
-Quel est le point qui **n'appartient pas** à la courbe représentative de $f$ ?
+**a.** Calculer $f(-2)$.
 
-**A.** $P$ &emsp; **B.** $S$ &emsp; **C.** $R$ &emsp; **D.** $Q$
+**b.** Vérifier que $3$ est un antécédent de $0$ par $f$.
 ---CORR---
-On vérifie $f(x) = \dfrac{4}{x}$ :
-- $f(1) = 4$ → $P(1;4)$ ✓
-- $f(4) = 1$ → $Q(4;1)$ ✓
-- $f(-2) = -2$ → $R(-2;-2)$ ✓
-- $f(2) = 2 \neq 3$ → $S(2;3)$ ✗
+**a.** On remplace $x$ par $-2$, entre parenthèses :
 
-**Réponse : B**
+$$f(-2)=(-2)^2-4\times(-2)+3=4+8+3={\color{#4A5D7A}15}$$
+
+**b.** Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :
+
+$$f(3)=3^2-4\times 3+3=9-12+3={\color{#4A5D7A}0}$$
+
+L'égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-On cherche les solutions de l'équation $(x + 4)^2 = 5$.
+On considère la série statistique suivante, rangée dans l'ordre croissant :
 
-Quel est l'ensemble solution ?
+$$2\ ;\ 5\ ;\ 7\ ;\ 9\ ;\ 11\ ;\ 13\ ;\ 16\ ;\ 17$$
 
-**A.** $\{-4\}$ &emsp; **B.** $\{\sqrt{5} - 4\}$ &emsp; **C.** $\{-\sqrt{5}-4 ; \sqrt{5}-4\}$ &emsp; **D.** $\emptyset$
+Déterminer sa médiane et sa moyenne.
 ---CORR---
-$$(x+4)^2 = 5 \implies x + 4 = \pm\sqrt{5} \implies x = -4 \pm \sqrt{5}$$
+La série compte $8$ valeurs, un effectif pair : la médiane est la moyenne des valeurs de rang $4$ et $5$.
 
-L'ensemble solution est $\{-\sqrt{5}-4 ; \sqrt{5}-4\}$.
+$$\text{Médiane}=\dfrac{9+11}{2}={\color{#4A5D7A}10}$$
 
-**Réponse : C**
+Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :
+
+$$\dfrac{2+5+7+9+11+13+16+17}{8}=\dfrac{80}{8}={\color{#4A5D7A}10}$$
+
+Ici les deux indicateurs coïncident, ce qui traduit une série assez symétrique. Ce n'est pas toujours le cas.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Un coureur parcourt $400$ m en $4$ minutes.
+On lance un dé équilibré à six faces. La probabilité d'obtenir au moins $3$ est :
 
-Quelle est sa vitesse en km/h ?
-
-**A.** $4$ km/h &emsp; **B.** $10$ km/h &emsp; **C.** $6$ km/h &emsp; **D.** $60$ km/h
+**A.** $\dfrac{5}{6}$ &emsp; **B.** $\dfrac{1}{3}$ &emsp; **C.** $\dfrac{1}{2}$ &emsp; **D.** $\dfrac{2}{3}$
 ---CORR---
-$400$ m en $4$ min $= 0{,}4$ km en $\dfrac{4}{60}$ h.
+« Au moins $3$ » signifie $3$, $4$, $5$ ou $6$ : l'événement compte $4$ issues favorables sur $6$ issues équiprobables.
 
-$$v = \frac{0{,}4}{\frac{4}{60}} = 0{,}4 \times \frac{60}{4} = 6 \text{ km/h}$$
+$$P=\dfrac{4}{6}={\color{#4A5D7A}\dfrac{2}{3}}$$
 
-**Réponse : C**
+On peut aussi passer par l'événement contraire, « obtenir au plus $2$ », de probabilité $\dfrac{2}{6}=\dfrac{1}{3}$, puis calculer $1-\dfrac{1}{3}=\dfrac{2}{3}$.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Quelle est l'unité adaptée pour exprimer la quantité d'eau dans un verre ?
+Le nombre $\dfrac{\left(10^{4}\right)^{2}}{10^{-3}}$ est égal à :
 
-**A.** L &emsp; **B.** mL &emsp; **C.** km &emsp; **D.** cL
+**A.** $10^{11}$ &emsp; **B.** $10^{5}$ &emsp; **C.** $10^{8}$ &emsp; **D.** $10^{-11}$
 ---CORR---
-Un verre contient environ $20$ cL d'eau. L'unité la plus adaptée parmi les choix est le **centilitre**.
+Pour une puissance de puissance, on **multiplie** les exposants :
 
-**Réponse : D**
+$$\left(10^{4}\right)^{2}=10^{4\times 2}=10^{8}$$
+
+Pour un quotient de puissances de même base, on soustrait les exposants :
+
+$$\dfrac{10^{8}}{10^{-3}}=10^{8-(-3)}=10^{8+3}={\color{#4A5D7A}10^{11}}$$
+
+La réponse B additionne les exposants du carré au lieu de les multiplier, et la réponse C oublie le dénominateur.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

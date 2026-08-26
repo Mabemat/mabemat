@@ -1,8 +1,8 @@
 ---
-title: "Exercices — Séance 03 Conditionnelles"
+title: "Exercices - Séance 03 Conditionnelles"
 ---
 
-### Exercice 1 — Qui a gagné ?
+### Exercice 1 - Qui a gagné ?
 
 On considère la fonction suivante :
 
@@ -17,7 +17,11 @@ def gagnant(scoreA, scoreB):
     return v
 ```
 
-**Q1.** Inspectez ce code : quel est son nom ? Quels sont ses paramètres ? Combien de branches `if`/`elif`/`else` contient-il ?
+**Q1.** Inspectez ce code et repérez :
+
+- son nom
+- son nombre de paramètres et leurs noms
+- le nombre de valeurs renvoyées
 
 **Q2.** Écrivez cette fonction dans la cellule ci-dessous (*sans copier-coller !*) et exécutez-la.
 
@@ -29,21 +33,21 @@ def gagnant(scoreA, scoreB):
 
 ---
 
-### Exercice 2 — Vérifier sa compréhension
+### Exercice 2 - Vérifier sa compréhension
 
 Exercice CodePuzzle interactif à réaliser dans le notebook. Les questions vérifient automatiquement votre compréhension des instructions conditionnelles.
 
-**Q1.** Question interactive 1 — réaliser dans le notebook.
+**Q1.** Question interactive 1 - réaliser dans le notebook.
 
-**Q2.** Question interactive 2 — réaliser dans le notebook.
+**Q2.** Question interactive 2 - réaliser dans le notebook.
 
-**Q3.** Question interactive 3 — réaliser dans le notebook.
+**Q3.** Question interactive 3 - réaliser dans le notebook.
 
-**Q4.** Question interactive 4 — réaliser dans le notebook.
+**Q4.** Question interactive 4 - réaliser dans le notebook.
 
 ---
 
-### Exercice 3 — Jeu d'indentation
+### Exercice 3 - Jeu d'indentation
 
 Voici quatre programmes. Avant de les exécuter, prédisez ce que chacun affiche (ou si une erreur se produit).
 
@@ -60,7 +64,7 @@ Voici quatre programmes. Avant de les exécuter, prédisez ce que chacun affiche
 
 ---
 
-### Exercice 4 — Inscription sur un réseau social
+### Exercice 4 - Inscription sur un réseau social
 
 Pour s'inscrire sur certains réseaux sociaux, il faut avoir au moins **13 ans**.
 
@@ -72,31 +76,40 @@ Pour s'inscrire sur certains réseaux sociaux, il faut avoir au moins **13 ans**
 
 ---
 
-### Exercice 5 — IMC
+### Exercice 5 - Application de fitness
 
-L'Indice de Masse Corporelle (IMC) se calcule ainsi : `imc = masse / taille²`
+*(D'après une activité de Franck Chevrier, [python-lycee.com](https://www.python-lycee.com/parcours-apprentissage-pl3).)*
 
-**Q1.** Écrire une fonction `imc(masse, taille)` qui renvoie l'IMC arrondi à une décimale.
+Les applications de fitness calculent l'Indice de Masse Corporelle (IMC) de l'utilisateur, donné par la formule $\text{IMC} = \dfrac{\text{masse}}{\text{taille}^2}$, où la masse est en kg et la taille en mètres.
 
-**Q2.** Écrire une fonction `diagnostic(masse, taille)` qui renvoie :
-- `"Insuffisance pondérale"` si IMC < 18.5
-- `"Corpulence normale"` si IMC < 25
-- `"Surpoids"` si IMC < 30
-- `"Obésité"` sinon
+La fonction `imc` est déjà écrite dans le notebook :
 
-**Q3.** Copiez la fonction `diagnostic` dans la cellule et testez-la pour les 3 personnages du notebook.
+```python
+def imc(masse, taille):
+    indice = masse / (taille ** 2)
+    return indice
+```
 
-**Q4.** Adaptez la fonction `diagnostic` pour obtenir une analyse plus précise en 4 catégories :
-- IMC < 18.5 : `"Insuffisance pondérale"`
-- 18.5 ≤ IMC ≤ 25 : `"Corpulence normale"`
-- 25 < IMC ≤ 30 : `"Surpoids"`
-- IMC > 30 : `"Obésité"`
+**Q1.** Testez la fonction `imc` pour les 3 personnages du notebook (Alice, Barnabé et Corentin) : il faut faire les bons appels.
 
-**Q5.** Testez la nouvelle fonction pour les 3 personnages précédents.
+**Q2.** On considère que l'IMC est **dans la norme** s'il est compris entre 18.5 et 25. Écrire une fonction `diagnostic(masse, taille)` qui renvoie un message indiquant si l'individu a un IMC dans la norme ou non. *(Dans le notebook, l'exercice CodePuzzle vous fait remettre les lignes dans le bon ordre.)*
+
+**Q3.** Recopiez la fonction `diagnostic` dans la cellule et testez-la pour les 3 personnages.
+
+**Q4.** Adaptez la fonction `diagnostic` pour obtenir une analyse plus précise, selon la grille suivante :
+
+| IMC | Diagnostic |
+|:---|:---|
+| IMC < 18.5 | `"Insuffisance pondérale"` |
+| 18.5 ≤ IMC ≤ 25 | `"Corpulence normale"` |
+| 25 < IMC ≤ 30 | `"Surpoids"` |
+| IMC > 30 | `"Obésité"` |
+
+**Q5.** Testez la nouvelle fonction `diagnostic` pour les 3 personnages précédents.
 
 ---
 
-### Exercice 6 — Prix au cinéma
+### Exercice 6 - Prix au cinéma
 
 Dans un cinéma, la place adulte coûte **11 €** et la place enfant (moins de 18 ans) coûte **7 €**.
 
@@ -106,7 +119,7 @@ Tester avec `place(10)`, `place(17)`, `place(18)`, `place(30)`.
 
 ---
 
-### Exercice 7 — Location de voiture
+### Exercice 7 - Location de voiture
 
 Un service de location propose une voiture à **52,16 € la journée**. La personne peut parcourir **250 km sans surcoût**. Au-delà, elle paie **0,31 € par km supplémentaire**.
 
@@ -118,22 +131,27 @@ Un service de location propose une voiture à **52,16 € la journée**. La pers
 
 ---
 
-### Exercice 8 — Mention au bac
+### Exercice 8 - Mention au bac
 
-Écrire une fonction `mention_bac(moy)` qui renvoie la mention correspondant à une moyenne sur 20 :
-- < 8 : `"Recalé"`
-- < 10 : `"Rattrapage"`
-- < 12 : `"Sans mention"`
-- < 14 : `"Assez bien"`
-- < 16 : `"Bien"`
-- < 18 : `"Très bien"`
-- ≥ 18 : `"Félicitations du jury"`
+Écrire une fonction `mention_bac(moy)` qui prend en paramètre la moyenne `moy` d'un élève au baccalauréat et renvoie la mention correspondante :
 
-Tester avec plusieurs valeurs.
+| Moyenne | Mention |
+|:---:|:---|
+| $[0 ; 8[$ | `"Recalé"` |
+| $[8 ; 10[$ | `"Rattrapage"` |
+| $[10 ; 12[$ | `"Sans mention"` |
+| $[12 ; 14[$ | `"Assez bien"` |
+| $[14 ; 16[$ | `"Bien"` |
+| $[16 ; 18[$ | `"Très bien"` |
+| $[18 ; 20]$ | `"Félicitations"` |
+
+Exemples : `mention_bac(13.4)` renvoie `'Assez bien'` et `mention_bac(8)` renvoie `'Rattrapage'`.
+
+Testez la fonction dans tous les cas de figure.
 
 ---
 
-### Exercice 9 — Combiner des conditions
+### Exercice 9 - Combiner des conditions
 
 Un semestre est validé si les **trois notes** sont toutes ≥ 10.
 
@@ -146,34 +164,52 @@ Un semestre est validé si les **trois notes** sont toutes ≥ 10.
 
 ---
 
-### Exercice 10 — Pair ou impair / Bilan de score
+### Exercice 10 - Fonctions avec conditions
 
-**Q1.** Écrire une fonction `est_pair(n)` qui renvoie `True` si n est pair, `False` sinon. (Rappel : `n % 2` donne le reste de la division de n par 2.)
+**Q1.** Écrire une fonction `est_pair(n)` qui renvoie `True` si `n` est pair, `False` sinon.
+
+*Rappel : `n % 2` donne le reste de la division euclidienne de `n` par 2. Un entier est pair si `n % 2 == 0`.*
+
+*Vérifications :* `est_pair(4)` → `True`, `est_pair(7)` → `False`, `est_pair(0)` → `True`.
 
 **Q2.** Écrire une fonction `bilan_score(score)` qui renvoie :
-- `"Excellent"` si score ≥ 90
-- `"Bien"` si score ≥ 70
-- `"Moyen"` si score ≥ 50
-- `"Insuffisant"` sinon
+- `"Félicitations !"` si le score est supérieur ou égal à 10
+- `"Continue comme ça !"` sinon
+
+*Vérifications :* `bilan_score(12)` → `"Félicitations !"`, `bilan_score(7)` → `"Continue comme ça !"`
 
 ---
 
-### Exercice 11 — Piscine municipale
+### Exercice 11 - Synthèse : la piscine municipale
 
-La piscine applique les tarifs suivants :
-- Moins de 6 ans : gratuit (0 €)
-- De 6 à 17 ans : 2.50 €
-- 18 ans et plus : 4.00 €
+La piscine municipale applique les tarifs d'entrée suivants :
 
-**Q1.** Écrire une fonction `tarif_entree(age)` qui renvoie le tarif.
+| Catégorie | Condition | Tarif |
+|:---|:---|:---:|
+| Enfant | moins de 12 ans | 3,00 € |
+| Jeune | 12 à 25 ans | 4,00 € |
+| Adulte | 26 à 64 ans | 6,00 € |
+| Senior | 65 ans et plus | 4,50 € |
 
-**Q2.** Écrire une fonction `tarif_famille(age1, age2, age3, age4)` qui renvoie le total pour une famille de 4 personnes.
+L'objectif est de construire **plusieurs fonctions qui travaillent ensemble**.
 
-**Q3.** Tester `tarif_famille(35, 38, 10, 4)`.
+**Q1.** Écrire une fonction `tarif_entree(age)` qui renvoie le prix d'entrée en fonction de l'âge, en utilisant `if`/`elif`/`else`.
+
+*Vérifications :* `tarif_entree(8)` → `3.0`, `tarif_entree(17)` → `4.0`, `tarif_entree(40)` → `6.0`, `tarif_entree(70)` → `4.5`.
+
+**Q2.** Une famille arrive à la piscine : deux adultes (35 et 38 ans), deux enfants (7 et 10 ans) et un grand-parent (68 ans).
+
+Appelez `tarif_entree` pour chaque personne, puis calculez et affichez le montant total à payer.
+
+**Q3 - Défi.** Écrire une fonction `ticket(nom, age)` qui renvoie une chaîne de caractères représentant un ticket d'entrée, **en appelant** `tarif_entree`.
+
+*Exemple :* `ticket("Léa", 17)` → `"Ticket de Léa (17 ans) : 4.0 €"`
+
+Appelez-la pour chaque membre de la famille.
 
 ---
 
-### Exercice 12 — Bulletin scolaire
+### Exercice 12 - Bulletin scolaire
 
 **Q1.** Écrire une fonction `moyenne(n1, n2, n3, n4)` qui renvoie la moyenne de quatre notes.
 
@@ -184,8 +220,11 @@ La piscine applique les tarifs suivants :
 - `"Passable"` si moy ≥ 10
 - `"Insuffisant"` sinon
 
-**Q3.** Écrire une fonction `bulletin(prenom, n1, n2, n3, n4)` qui renvoie une chaîne du type :
-`"Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien"`
+**Q3.** Écrire une fonction `bulletin(prenom, n1, n2, n3, n4)` qui :
+
+1. calcule la moyenne **en appelant `moyenne()`**
+2. détermine la mention **en appelant `mention()`**
+3. renvoie une chaîne de caractères du type `"Bilan de Alice - Moyenne : 13.0/20 - Mention : Assez bien"`
 
 Tester avec `bulletin("Alice", 14, 12, 16, 10)`.
 

@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 3 — Expressions algébriques, suites et intervalles — MaBémat</title>
+<title>Semaine 3 - Intervalles et calcul littéral — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Expressions algébriques, suites et intervalles</p>
+  <p class="wk-subtitle">Intervalles et calcul littéral</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -218,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -234,7 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On donne la relation : $-4a+5b=5$. Exprimer $b$ en fonction de $a$.
+    <p>On donne les intervalles $I=\left]-4\,;\,3\right]$ et $J=\left[0\,;\,+\infty\right[$.</p>
+<p>Déterminer $I\cap J$ puis $I\cup J$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,9 +244,12 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On ajoute $4a$ dans chaque membre :</p>
-$$5b=5+4a$$<p>Puis on divise par $5$ :</p>
-$${\color{#4A5D7A}b=\dfrac{5+4a}{5}}$$</div>
+    <div><p>On traduit chaque intervalle par une inégalité : $x\in I$ signifie $-4 < x\leqslant 3$, et $x\in J$ signifie $x\geqslant 0$.</p>
+<p>On place les deux intervalles sur une droite graduée, $I$ en bleu et $J$ en rouge :</p>
+<img src="/mabemat/images/automatismes/2nde/s03-q01.svg" alt="Droite graduée : I en bleu, J en rouge, leur intersection et leur réunion" style="display:block;margin:1rem auto;width:100%;max-width:560px;">
+<p><strong>Intersection</strong> : les réels qui sont dans $I$ <strong>et</strong> dans $J$ vérifient à la fois $-4 < x\leqslant 3$ et $x\geqslant 0$, donc $0\leqslant x\leqslant 3$. C&rsquo;est la zone où les deux traits se superposent.</p>
+$$I\cap J={\color{#4A5D7A}\left[0\,;\,3\right]}$$<p><strong>Réunion</strong> : les réels qui sont dans $I$ <strong>ou</strong> dans $J$. Comme les deux intervalles se chevauchent (ils ont $\left[0\,;\,3\right]$ en commun), leur réunion est d&rsquo;un seul tenant, de la plus petite borne à la plus grande.</p>
+$$I\cup J={\color{#4A5D7A}\left]-4\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -263,9 +268,8 @@ $${\color{#4A5D7A}b=\dfrac{5+4a}{5}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{4}-\dfrac{3x+3}{x}$ ?</p>
-<p>A. $-\dfrac{13x+12}{4x}$ $\quad$ B. $\dfrac{11x+12}{4x}$ $\quad$ C. $\dfrac{-11x+12}{4x}$ $\quad$ D. $-\dfrac{11x+12}{4x}$</p>
-
+    <p>Développer et réduire :</p>
+$$B=(2x-5)(3x+4)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -273,9 +277,9 @@ $${\color{#4A5D7A}b=\dfrac{5+4a}{5}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On met au même dénominateur :</p>
-$$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac{-11x-12}{4x}=-\dfrac{11x+12}{4x}$$<p>La bonne réponse est <strong>D</strong>.</p>
-</div>
+    <div><p>On utilise la double distributivité : chaque terme de la première parenthèse multiplie chaque terme de la seconde.</p>
+$$B=2x\times 3x+2x\times 4+(-5)\times 3x+(-5)\times 4$$$$B=6x^2+8x-15x-20$$<p>On réduit en regroupant les termes en $x$ :</p>
+$$B={\color{#4A5D7A}6x^2-7x-20}$$</div>
   </div>
   
 </article>
@@ -294,7 +298,8 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère la relation $F=a+\dfrac{b}{cd}$. Lorsque $a=\dfrac{1}{3}$, $b=4$, $c=9$ et $d=\dfrac{1}{9}$, la valeur de $F$ est égale à :
+    <p>Développer et réduire :</p>
+$$C=(3x+7)^2-(2x-1)(2x+1)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -302,7 +307,11 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$F=\dfrac{1}{3}+\dfrac{4}{9\times \dfrac{1}{9}}=\dfrac{1}{3}+\dfrac{4}{1}=\dfrac{1}{3}+4={\color{#4A5D7A}\dfrac{13}{3}}$$</div>
+    <div><p>On reconnaît deux identités remarquables.</p>
+<p>Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=7$ :</p>
+$$(3x+7)^2=(3x)^2+2\times 3x\times 7+7^2=9x^2+42x+49$$<p>Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=2x$ et $b=1$ :</p>
+$$(2x-1)(2x+1)=(2x)^2-1^2=4x^2-1$$<p>On soustrait, en faisant attention au signe devant la parenthèse :</p>
+$$C=9x^2+42x+49-\left(4x^2-1\right)=9x^2+42x+49-4x^2+1$$$$C={\color{#4A5D7A}5x^2+42x+50}$$</div>
   </div>
   
 </article>
@@ -321,7 +330,9 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Dans la suite évolutive $2, 4, 6, 8, \ldots$, quel est le $21^{\text{e}}$ nombre ?
+    <p><strong>a.</strong> Traduire par un intervalle l&rsquo;ensemble des réels $x$ tels que $x>-\dfrac{1}{2}$.</p>
+<p><strong>b.</strong> Le nombre $-0{,}5$ appartient-il à cet intervalle ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -329,9 +340,9 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le $n^\text{e}$ terme s&rsquo;écrit $2\times n$.</p>
-<p>Le $21^{\text{e}}$ nombre est donc $2\times 21={\color{#4A5D7A}42}$.</p>
-</div>
+    <div><p><strong>a.</strong> L&rsquo;inégalité est stricte, donc la borne $-\dfrac{1}{2}$ est exclue : crochet ouvert. Il n&rsquo;y a pas de borne supérieure.</p>
+$$x\in{\color{#4A5D7A}\left]-\dfrac{1}{2}\,;\,+\infty\right[}$$<p><strong>b.</strong> On a $-0{,}5=-\dfrac{1}{2}$ : c&rsquo;est exactement la borne de l&rsquo;intervalle. Comme le crochet est ouvert, cette borne n&rsquo;appartient pas à l&rsquo;intervalle.</p>
+$${\color{#4A5D7A}-0{,}5\notin\left]-\dfrac{1}{2}\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -350,7 +361,9 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Combien y a-t-il d&rsquo;entiers dans l&rsquo;intervalle $\left[-4\,;\,3\right]$ ?
+    <p>Une factorisation de $16x^2-49$ est :</p>
+<p><strong>A.</strong> $(16x+49)(16x-49)$   <strong>B.</strong> $(4x-7)(4x+7)$   <strong>C.</strong> $(4x-7)^2$   <strong>D.</strong> $(16x+7)(16x-7)$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -358,9 +371,10 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les entiers sont : $-4, -3, -2, -1, 0, 1, 2, 3$.</p>
-<p>Il y en a ${\color{#4A5D7A}8}$.</p>
-<p>Ou bien : $3-(-4)+1=8$ (différence des bornes $+1$ car les deux bornes sont comprises).</p>
+    <div><p>On reconnaît une différence de deux carrés, qui se factorise avec l&rsquo;identité remarquable :</p>
+$$a^2-b^2=(a-b)(a+b)$$<p>Ici, il faut écrire chaque terme comme un carré :</p>
+$$16x^2=(4x)^2 \qquad\text{et}\qquad 49=7^2$$<p>On applique donc l&rsquo;identité avec $a=4x$ et $b=7$ :</p>
+$$16x^2-49={\color{#4A5D7A}(4x-7)(4x+7)}$$<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -380,7 +394,9 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner une écriture simplifiée de $[-6\,;\,1]\cap[-7\,;\,2[$
+    <p>$p\,\%$ de $80$ est égal à $6$. On a :</p>
+<p><strong>A.</strong> $p=0{,}75$   <strong>B.</strong> $p=13{,}3$   <strong>C.</strong> $p=75$   <strong>D.</strong> $p=7{,}5$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -388,8 +404,11 @@ $$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Tout nombre de $[-6\,;\,1]$ appartient aussi à $[-7\,;\,2[$, donc :</p>
-$$[-6\,;\,1]\cap[-7\,;\,2[\;=\;{\color{#4A5D7A}[-6\,;\,1]}$$</div>
+    <div><p>Prendre $p\,\%$ de $80$, c&rsquo;est calculer $\dfrac{p}{100}\times 80$. On traduit l&rsquo;énoncé par une égalité :</p>
+$$\dfrac{p}{100}\times 80=6$$<p>On isole $p$ :</p>
+$$p\times 80=6\times 100 \qquad\text{donc}\qquad p=\dfrac{600}{80}={\color{#4A5D7A}7{,}5}$$<p>On vérifie : $7{,}5\,\%$ de $80$ vaut $\dfrac{7{,}5\times 80}{100}=\dfrac{600}{100}=6$.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -418,7 +437,9 @@ $$[-6\,;\,1]\cap[-7\,;\,2[\;=\;{\color{#4A5D7A}[-6\,;\,1]}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On donne la relation : $-4x-5y=8$. Exprimer $y$ en fonction de $x$.
+    <p>On donne les intervalles $I=\left[-2\,;\,5\right[$ et $J=\left]-\infty\,;\,1\right]$.</p>
+<p>Déterminer $I\cap J$ puis $I\cup J$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -426,9 +447,12 @@ $$[-6\,;\,1]\cap[-7\,;\,2[\;=\;{\color{#4A5D7A}[-6\,;\,1]}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On ajoute $4x$ dans chaque membre :</p>
-$$-5y=8+4x$$<p>Puis on divise par $-5$ :</p>
-$${\color{#4A5D7A}y=\dfrac{-8-4x}{5}}$$</div>
+    <div><p>On traduit chaque intervalle par une inégalité : $x\in I$ signifie $-2\leqslant x<5$, et $x\in J$ signifie $x\leqslant 1$.</p>
+<p>On place les deux intervalles sur une droite graduée, $I$ en bleu et $J$ en rouge :</p>
+<img src="/mabemat/images/automatismes/2nde/s03d-q01.svg" alt="Droite graduée : I en bleu, J en rouge, leur intersection et leur réunion" style="display:block;margin:1rem auto;width:100%;max-width:560px;">
+<p><strong>Intersection</strong> : les réels qui sont dans $I$ <strong>et</strong> dans $J$ vérifient à la fois $-2\leqslant x<5$ et $x\leqslant 1$, donc $-2\leqslant x\leqslant 1$. C&rsquo;est la zone où les deux traits se superposent.</p>
+$$I\cap J={\color{#4A5D7A}\left[-2\,;\,1\right]}$$<p><strong>Réunion</strong> : les réels qui sont dans $I$ <strong>ou</strong> dans $J$. Comme les deux intervalles se chevauchent (ils ont $\left[-2\,;\,1\right]$ en commun), leur réunion est d&rsquo;un seul tenant, de la plus petite borne à la plus grande.</p>
+$$I\cup J={\color{#4A5D7A}\left]-\infty\,;\,5\right[}$$</div>
   </div>
   
 </article>
@@ -447,9 +471,8 @@ $${\color{#4A5D7A}y=\dfrac{-8-4x}{5}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{7}-\dfrac{7x+5}{x}$ ?</p>
-<p>A. $\dfrac{-48x+35}{7x}$ $\quad$ B. $\dfrac{48x+35}{7x}$ $\quad$ C. $-\dfrac{50x+35}{7x}$ $\quad$ D. $-\dfrac{48x+35}{7x}$</p>
-
+    <p>Développer et réduire :</p>
+$$B=(3x-2)(5x+3)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -457,9 +480,9 @@ $${\color{#4A5D7A}y=\dfrac{-8-4x}{5}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On met au même dénominateur :</p>
-$$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac{-48x-35}{7x}=-\dfrac{48x+35}{7x}$$<p>La bonne réponse est <strong>D</strong>.</p>
-</div>
+    <div><p>On utilise la double distributivité : chaque terme de la première parenthèse multiplie chaque terme de la seconde.</p>
+$$B=3x\times 5x+3x\times 3+(-2)\times 5x+(-2)\times 3$$$$B=15x^2+9x-10x-6$$<p>On réduit en regroupant les termes en $x$ :</p>
+$$B={\color{#4A5D7A}15x^2-x-6}$$</div>
   </div>
   
 </article>
@@ -478,7 +501,8 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère la relation $F=a+\dfrac{b}{cd}$. Lorsque $a=\dfrac{1}{7}$, $b=2$, $c=-5$ et $d=\dfrac{1}{5}$, la valeur de $F$ est égale à :
+    <p>Développer et réduire :</p>
+$$C=(2x+5)^2-(3x-2)(3x+2)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -486,7 +510,11 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$F=\dfrac{1}{7}+\dfrac{2}{-5\times \dfrac{1}{5}}=\dfrac{1}{7}+\dfrac{2}{-1}=\dfrac{1}{7}-2={\color{#4A5D7A}-\dfrac{13}{7}}$$</div>
+    <div><p>On reconnaît deux identités remarquables.</p>
+<p>Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=2x$ et $b=5$ :</p>
+$$(2x+5)^2=(2x)^2+2\times 2x\times 5+5^2=4x^2+20x+25$$<p>Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=3x$ et $b=2$ :</p>
+$$(3x-2)(3x+2)=(3x)^2-2^2=9x^2-4$$<p>On soustrait, en faisant attention au signe devant la parenthèse :</p>
+$$C=4x^2+20x+25-\left(9x^2-4\right)=4x^2+20x+25-9x^2+4$$$$C={\color{#4A5D7A}-5x^2+20x+29}$$</div>
   </div>
   
 </article>
@@ -505,7 +533,9 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Dans la suite évolutive $1, 3, 5, 7, \ldots$, quel est le $17^{\text{e}}$ nombre ?
+    <p><strong>a.</strong> Traduire par un intervalle l&rsquo;ensemble des réels $x$ tels que $x\leqslant\dfrac{3}{4}$.</p>
+<p><strong>b.</strong> Le nombre $0{,}75$ appartient-il à cet intervalle ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -513,9 +543,9 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le $n^\text{e}$ terme s&rsquo;écrit $2n-1$.</p>
-<p>Le $17^{\text{e}}$ nombre est donc $2\times 17-1={\color{#4A5D7A}33}$.</p>
-</div>
+    <div><p><strong>a.</strong> L&rsquo;inégalité est large, donc la borne $\dfrac{3}{4}$ est incluse : crochet fermé. Il n&rsquo;y a pas de borne inférieure.</p>
+$$x\in{\color{#4A5D7A}\left]-\infty\,;\,\dfrac{3}{4}\right]}$$<p><strong>b.</strong> On a $0{,}75=\dfrac{3}{4}$ : c&rsquo;est exactement la borne de l&rsquo;intervalle. Comme le crochet est fermé, cette borne appartient à l&rsquo;intervalle.</p>
+$${\color{#4A5D7A}0{,}75\in\left]-\infty\,;\,\dfrac{3}{4}\right]}$$</div>
   </div>
   
 </article>
@@ -534,7 +564,9 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Combien y a-t-il d&rsquo;entiers dans l&rsquo;intervalle $\left[-3{,}4\,;\,2\right]$ ?
+    <p>Une factorisation de $25x^2-64$ est :</p>
+<p><strong>A.</strong> $(25x+8)(25x-8)$   <strong>B.</strong> $(5x-8)^2$   <strong>C.</strong> $(5x-8)(5x+8)$   <strong>D.</strong> $(25x+64)(25x-64)$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -542,8 +574,10 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les entiers sont : $-3, -2, -1, 0, 1, 2$.</p>
-<p>Il y en a ${\color{#4A5D7A}6}$.</p>
+    <div><p>On reconnaît une différence de deux carrés, qui se factorise avec l&rsquo;identité remarquable :</p>
+$$a^2-b^2=(a-b)(a+b)$$<p>Ici, il faut écrire chaque terme comme un carré :</p>
+$$25x^2=(5x)^2 \qquad\text{et}\qquad 64=8^2$$<p>On applique donc l&rsquo;identité avec $a=5x$ et $b=8$ :</p>
+$$25x^2-64={\color{#4A5D7A}(5x-8)(5x+8)}$$<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -563,7 +597,9 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner une écriture simplifiée de $\left]-\infty\,;\,8\right[\cap\left]-\infty\,;\,9\right]$
+    <p>$p\,\%$ de $150$ est égal à $9$. On a :</p>
+<p><strong>A.</strong> $p=6$   <strong>B.</strong> $p=60$   <strong>C.</strong> $p=1{,}5$   <strong>D.</strong> $p=0{,}6$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -571,8 +607,11 @@ $$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Tout nombre strictement inférieur à $8$ est aussi inférieur ou égal à $9$, donc :</p>
-$$]-\infty\,;\,8[\;\cap\;]-\infty\,;\,9]\;=\;{\color{#4A5D7A}]-\infty\,;\,8[}$$</div>
+    <div><p>Prendre $p\,\%$ de $150$, c&rsquo;est calculer $\dfrac{p}{100}\times 150$. On traduit l&rsquo;énoncé par une égalité :</p>
+$$\dfrac{p}{100}\times 150=9$$<p>On isole $p$ :</p>
+$$p\times 150=9\times 100 \qquad\text{donc}\qquad p=\dfrac{900}{150}={\color{#4A5D7A}6}$$<p>On vérifie : $6\,\%$ de $150$ vaut $\dfrac{6\times 150}{100}=\dfrac{900}{100}=9$.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -673,7 +712,7 @@ $$]-\infty\,;\,8[\;\cap\;]-\infty\,;\,9]\;=\;{\color{#4A5D7A}]-\infty\,;\,8[}$$<
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

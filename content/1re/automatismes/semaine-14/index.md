@@ -261,8 +261,8 @@ Pour passer de $20\,\%$ à $100\,\%$, on multiplie par $5$.<br>
 
 $$
 \begin{aligned}
-20\,\% \text{ de } N &=  10\\\\
-100\,\% \text{ de } N&=5\times10\\\\
+20\,\% \text{ de } N &=  10\\
+100\,\% \text{ de } N&=5\times10\\
 \
 N&=\boldsymbol{50}
 \end{aligned}

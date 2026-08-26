@@ -1,10 +1,10 @@
 ---
-title: "Exercices — Séance 06 Bilan : Fonctions et Boucles"
+title: "Exercices - Séance 06 Bilan : Fonctions et Boucles"
 ---
 
 ## Fonctions
 
-### Exercice 1 — Aire d'un triangle
+### Exercice 1 - Aire d'un triangle
 
 **Q1.** Compléter la fonction `aire_triangle(base, hauteur)` qui renvoie l'aire d'un triangle.
 
@@ -17,7 +17,7 @@ def aire_triangle(base, hauteur):
 
 ---
 
-### Exercice 2 — Vitesse moyenne
+### Exercice 2 - Vitesse moyenne
 
 **Q1.** Écrire une fonction `vitesse_moyenne(distance, duree)` qui renvoie la vitesse moyenne en km/h.
 
@@ -25,7 +25,7 @@ def aire_triangle(base, hauteur):
 
 ---
 
-### Exercice 3 — Fonction mystère
+### Exercice 3 - Fonction mystère
 
 On vous donne la fonction suivante :
 
@@ -49,7 +49,7 @@ def mystere(a, b):
 
 ## Boucles `for`
 
-### Exercice 4 — Comprendre `range()`
+### Exercice 4 - Comprendre `range()`
 
 Indiquer dans chaque cas la liste d'entiers générée :
 
@@ -62,7 +62,7 @@ Vérifier en utilisant `list(range(...))`.
 
 ---
 
-### Exercice 5 — Table de multiplication
+### Exercice 5 - Table de multiplication
 
 **Q1.** Compléter le programme suivant pour afficher les entiers de 1 à 10 :
 
@@ -75,7 +75,7 @@ for i in range(...):
 
 ---
 
-### Exercice 6 — Lecture de programme
+### Exercice 6 - Lecture de programme
 
 On considère le programme suivant :
 
@@ -102,7 +102,7 @@ print(p)
 
 ---
 
-### Exercice 7 — Croissance d'un arbre 🌳
+### Exercice 7 - Croissance d'un arbre 🌳
 
 Un arbre mesure **2.0 m** à la naissance. Il grandit de **0.3 m par an**.
 
@@ -115,11 +115,13 @@ def taille_arbre(n):
 
 **Q2.** Tester pour n = 5 (résultat attendu : `3.5`) et n = 10 (résultat attendu : `5.0`).
 
+*Astuce : si Python affiche `3.499999999999999` au lieu de `3.5`, ce n'est pas une erreur de votre part. Ajoutez `round(taille, 1)` avant de renvoyer le résultat, et lisez l'explication dans la correction.*
+
 ---
 
 ## Boucles `while`
 
-### Exercice 8 — Lecture de programme
+### Exercice 8 - Lecture de programme
 
 On considère le programme suivant :
 
@@ -138,7 +140,7 @@ while n > 1:
 
 ---
 
-### Exercice 9 — Batterie de téléphone 🔋
+### Exercice 9 - Batterie de téléphone 🔋
 
 La batterie d'un téléphone est chargée à **100 %**. Chaque heure d'utilisation, elle perd **8 %** de sa charge actuelle (c'est-à-dire que la charge est multipliée par 0.92 à chaque heure). On s'arrête quand la charge passe sous **20 %**.
 
@@ -160,7 +162,7 @@ print("Batterie restante :", round(batterie, 1), "%")
 
 ---
 
-### Exercice 10 — Seuil de followers 📱
+### Exercice 10 - Seuil de followers 📱
 
 Un influenceur commence avec **200 abonnés**. Son nombre d'abonnés augmente de **15 %** par semaine. Il souhaite savoir en combien de semaines il atteindra **2 000 abonnés**.
 
@@ -172,7 +174,7 @@ Un influenceur commence avec **200 abonnés**. Son nombre d'abonnés augmente de
 
 ## Fonctions, boucles et conditions combinées
 
-### Exercice 11 — Compter les multiples
+### Exercice 11 - Compter les multiples
 
 **Q1.** Écrire une fonction `nb_multiples(n, limite)` qui renvoie le nombre de multiples de `n` inférieurs ou égaux à `limite`.
 
@@ -188,7 +190,7 @@ def nb_multiples(n, limite):
 
 ---
 
-### Exercice 12 — Le bon choix : `for` ou `while` ?
+### Exercice 12 - Le bon choix : `for` ou `while` ?
 
 Pour chaque question, indiquer si on utilise `for` ou `while`, puis écrire le programme.
 
@@ -200,7 +202,7 @@ Pour chaque question, indiquer si on utilise `for` ou `while`, puis écrire le p
 
 ---
 
-### Exercice 13 — Épargne avec versements 💰
+### Exercice 13 - Épargne avec versements 💰
 
 Léo ouvre un livret d'épargne. Il dépose **100 €** au début de chaque mois. À la fin de chaque mois, les intérêts s'appliquent à un taux de **0.5 % mensuel** sur le solde total.
 
@@ -217,7 +219,7 @@ def epargne_leo(n):
 
 ---
 
-### Exercice 14 — (Bonus) Nombre premier
+### Exercice 14 - (Bonus) Nombre premier
 
 Un entier ≥ 2 est **premier** s'il n'est divisible que par 1 et par lui-même (ex : 7 est premier, 12 ne l'est pas car 12 = 3 × 4).
 

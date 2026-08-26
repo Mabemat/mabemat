@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 25 — MaBémat</title>
+<title>Semaine 25 - Loi de probabilité et équiprobabilité — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Loi de probabilité et équiprobabilité</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Réduire l&rsquo;expression : $x - \dfrac{x}{5}$
+    <p>Une urne contient $5$ boules rouges, $3$ vertes et $2$ bleues, indiscernables au toucher. On en tire une au hasard.</p>
+<p>Donner la loi de probabilité de la couleur obtenue.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,7 +244,28 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$x - \dfrac{x}{5} = \dfrac{5x}{5} - \dfrac{x}{5} = \dfrac{5x - x}{5} = {\color{#4A5D7A}\dfrac{4}{5}x}$$</div>
+    <div><p>Les boules étant indiscernables, il y a équiprobabilité : chaque boule a la même chance d&rsquo;être tirée. L&rsquo;effectif total est :</p>
+$$5+3+2=10$$<p>La probabilité d&rsquo;une couleur est le nombre de boules de cette couleur divisé par le nombre total :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Couleur</th>
+          <th>Rouge</th>
+          <th>Verte</th>
+          <th>Bleue</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Probabilité</td>
+          <td>$\dfrac{5}{10}={\color{#4A5D7A}0{,}5}$</td>
+          <td>$\dfrac{3}{10}={\color{#4A5D7A}0{,}3}$</td>
+          <td>$\dfrac{2}{10}={\color{#4A5D7A}0{,}2}$</td>
+      </tr>
+  </tbody>
+</table>
+<p>Contrôle indispensable : la somme des probabilités vaut $0{,}5+0{,}3+0{,}2=1$.</p>
+</div>
   </div>
   
 </article>
@@ -258,7 +284,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Factoriser l&rsquo;expression suivante : $x^2 - 7$
+    <p>On lance deux dés équilibrés à six faces et on s&rsquo;intéresse à la somme des deux numéros obtenus.</p>
+<p>Quelle est la probabilité que cette somme soit égale à $7$ ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -266,8 +294,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = x$ et $b = \sqrt{7}$ :</p>
-$$x^2 - 7 = x^2 - (\sqrt{7})^2 = {\color{#4A5D7A}(x - \sqrt{7})(x + \sqrt{7})}$$</div>
+    <div><p>En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.</p>
+<p>On énumère celles qui donnent une somme de $7$ :</p>
+$$(1\,;\,6)\quad(2\,;\,5)\quad(3\,;\,4)\quad(4\,;\,3)\quad(5\,;\,2)\quad(6\,;\,1)$$<p>Il y en a $6$. D&rsquo;où :</p>
+$$P={\dfrac{6}{36}}={\color{#4A5D7A}\dfrac{1}{6}}$$<p>Il faut bien distinguer les deux dés : $(2\,;\,5)$ et $(5\,;\,2)$ sont deux issues différentes.</p>
+</div>
   </div>
   
 </article>
@@ -286,9 +317,8 @@ $$x^2 - 7 = x^2 - (\sqrt{7})^2 = {\color{#4A5D7A}(x - \sqrt{7})(x + \sqrt{7})}$$
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Le prix d&rsquo;un sac a baissé de $22\,\%$. Il coûte maintenant $132$ euros.</p>
-<p>Le prix initial en euros est donné par le calcul :</p>
-<p><strong>A.</strong> $132 \times \dfrac{100}{78}$ $\quad$ <strong>B.</strong> $132 + 132 \times \dfrac{22}{100}$ $\quad$ <strong>C.</strong> $132 \times \left(1 + \dfrac{22}{100}\right)$ $\quad$ <strong>D.</strong> $\dfrac{132}{1 + \dfrac{22}{100}}$</p>
+    <p>Dans un groupe, $60\,\%$ des personnes sont des femmes, et $30\,\%$ des femmes portent des lunettes.</p>
+<p>On choisit une personne au hasard. Quelle est la probabilité que ce soit une femme portant des lunettes ?</p>
 
   </div>
   
@@ -297,9 +327,9 @@ $$x^2 - 7 = x^2 - (\sqrt{7})^2 = {\color{#4A5D7A}(x - \sqrt{7})(x + \sqrt{7})}$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Baisser de $22\,\%$ revient à multiplier par $\dfrac{78}{100}$.</p>
-<p>Si $V_I$ est le prix initial : $V_I \times \dfrac{78}{100} = 132$, donc $V_I = 132 \times \dfrac{100}{78}$.</p>
-$${\color{#4A5D7A}\textbf{A}}$$</div>
+    <div><p>Les $30\,\%$ ne portent pas sur le groupe entier, mais seulement sur les femmes : c&rsquo;est une proportion à l&rsquo;intérieur d&rsquo;une proportion. On multiplie donc les deux.</p>
+$$P=0{,}60\times 0{,}30={\color{#4A5D7A}0{,}18}$$<p>Soit $18\,\%$ du groupe. On aurait le même résultat en raisonnant sur un effectif : sur $100$ personnes, $60$ sont des femmes, dont $30\,\%$, soit $18$, portent des lunettes.</p>
+</div>
   </div>
   
 </article>
@@ -318,7 +348,9 @@ $${\color{#4A5D7A}\textbf{A}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    L&rsquo;aire en $\text{km}^2$ d&rsquo;un carré de côté $3\,000\text{ m}$ est égale à $\ldots$
+    <p>On lance un dé équilibré à six faces. Soit $A$ « obtenir au moins $5$ » et $B$ « obtenir un multiple de $2$ ».</p>
+<p>Déterminer $A\cap B$ et $A\cup B$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -326,8 +358,8 @@ $${\color{#4A5D7A}\textbf{A}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$3\,000\text{ m} = 3\text{ km}$</p>
-$$\text{Aire} = 3 \times 3 = {\color{#4A5D7A}9\text{ km}^2}$$</div>
+    <div><p>On écrit les deux événements en extension :</p>
+$$A=\lbrace 5\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 2\,;\,4\,;\,6\rbrace$$$$A\cap B={\color{#4A5D7A}\lbrace 6\rbrace} \qquad A\cup B={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,5\,;\,6\rbrace}$$</div>
   </div>
   
 </article>
@@ -346,7 +378,9 @@ $$\text{Aire} = 3 \times 3 = {\color{#4A5D7A}9\text{ km}^2}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le double de $4^{50}$ est égal à $\ldots$
+    <p>On sait que $P(A)=0{,}35$. La probabilité de l&rsquo;événement contraire $\overline{A}$ est :</p>
+<p><strong>A.</strong> $0{,}65$   <strong>B.</strong> $0{,}35$   <strong>C.</strong> $1{,}35$   <strong>D.</strong> $-0{,}35$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -354,7 +388,10 @@ $$\text{Aire} = 3 \times 3 = {\color{#4A5D7A}9\text{ km}^2}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$2 \times 4^{50} = 2 \times (2^2)^{50} = 2 \times 2^{100} = {\color{#4A5D7A}2^{101}}$$</div>
+    <div><p>Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.</p>
+$$P\left(\overline{A}\right)=1-P(A)=1-0{,}35={\color{#4A5D7A}0{,}65}$$<p>Les réponses C et D sont impossibles : une probabilité est toujours comprise entre $0$ et $1$.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -373,7 +410,9 @@ $$\text{Aire} = 3 \times 3 = {\color{#4A5D7A}9\text{ km}^2}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre l&rsquo;inéquation : $\dfrac{x-4}{x+12} \leqslant 0$
+    <p>On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d&rsquo;obtenir un roi est :</p>
+<p><strong>A.</strong> $\dfrac{1}{32}$   <strong>B.</strong> $\dfrac{1}{4}$   <strong>C.</strong> $\dfrac{4}{8}$   <strong>D.</strong> $\dfrac{1}{8}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -381,57 +420,11 @@ $$\text{Aire} = 3 \times 3 = {\color{#4A5D7A}9\text{ km}^2}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>Valeur interdite :</strong> $x + 12 = 0 \implies x = -12$.</p>
-<p>Le quotient est défini sur $\mathbb{R} \setminus \{-12\}$.</p>
-<p><strong>Tableau de signes :</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th></th>
-          <th>$-12$</th>
-          <th></th>
-          <th>$4$</th>
-          <th></th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$x - 4$</td>
-          <td></td>
-          <td>$-$</td>
-          <td></td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>$x + 12$</td>
-          <td></td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td></td>
-          <td>$+$</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>$\dfrac{x-4}{x+12}$</td>
-          <td></td>
-          <td>$+$</td>
-          <td>$\|$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td></td>
-      </tr>
-  </tbody>
-</table>
-<p>L&rsquo;inéquation est vérifiée quand le quotient est négatif ou nul :</p>
-$${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$</div>
+    <div><p>Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $32$.</p>
+<p>Un jeu de $32$ cartes contient $4$ rois, un par couleur. D&rsquo;où :</p>
+$$P=\dfrac{4}{32}=\dfrac{1\times \cancel{4}}{8\times \cancel{4}}={\color{#4A5D7A}\dfrac{1}{8}}$$<p>La réponse A correspondrait à une seule carte précise, et la réponse B à un jeu de $16$ cartes.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -460,7 +453,9 @@ $${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Réduire l&rsquo;expression : $\dfrac{5}{8}x + 2x$
+    <p>Une urne contient $4$ boules rouges, $6$ vertes et $10$ bleues, indiscernables au toucher. On en tire une au hasard.</p>
+<p>Donner la loi de probabilité de la couleur obtenue.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -468,7 +463,28 @@ $${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{5}{8}x + 2x = \dfrac{5}{8}x + \dfrac{16}{8}x = \dfrac{5 + 16}{8}x = {\color{#4A5D7A}\dfrac{21}{8}x}$$</div>
+    <div><p>Les boules étant indiscernables, il y a équiprobabilité : chaque boule a la même chance d&rsquo;être tirée. L&rsquo;effectif total est :</p>
+$$4+6+10=20$$<p>La probabilité d&rsquo;une couleur est le nombre de boules de cette couleur divisé par le nombre total :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Couleur</th>
+          <th>Rouge</th>
+          <th>Verte</th>
+          <th>Bleue</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Probabilité</td>
+          <td>$\dfrac{4}{20}={\color{#4A5D7A}0{,}2}$</td>
+          <td>$\dfrac{6}{20}={\color{#4A5D7A}0{,}3}$</td>
+          <td>$\dfrac{10}{20}={\color{#4A5D7A}0{,}5}$</td>
+      </tr>
+  </tbody>
+</table>
+<p>Contrôle indispensable : la somme des probabilités vaut $0{,}2+0{,}3+0{,}5=1$.</p>
+</div>
   </div>
   
 </article>
@@ -487,7 +503,9 @@ $${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Factoriser l&rsquo;expression suivante : $16(3x+5)^2 - 9(8x-1)^2$
+    <p>On lance deux dés équilibrés à six faces et on s&rsquo;intéresse à la somme des deux numéros obtenus.</p>
+<p>Quelle est la probabilité que cette somme soit égale à $6$ ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -495,8 +513,11 @@ $${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = 4(3x+5)$ et $b = 3(8x-1)$ :</p>
-$$16(3x+5)^2 - 9(8x-1)^2 = [4(3x+5)]^2 - [3(8x-1)]^2$$$$= [4(3x+5) - 3(8x-1)][4(3x+5) + 3(8x-1)]$$$$= (12x+20 - 24x+3)(12x+20 + 24x-3)$$$$= {\color{#4A5D7A}(-12x+23)(36x+17)}$$</div>
+    <div><p>En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.</p>
+<p>On énumère celles qui donnent une somme de $6$ :</p>
+$$(1\,;\,5)\quad(2\,;\,4)\quad(3\,;\,3)\quad(4\,;\,2)\quad(5\,;\,1)$$<p>Il y en a $5$. D&rsquo;où :</p>
+$$P={\color{#4A5D7A}\dfrac{5}{36}}$$<p>Attention : $(3\,;\,3)$ ne compte qu&rsquo;une seule fois, contrairement aux couples formés de deux numéros différents.</p>
+</div>
   </div>
   
 </article>
@@ -515,9 +536,8 @@ $$16(3x+5)^2 - 9(8x-1)^2 = [4(3x+5)]^2 - [3(8x-1)]^2$$$$= [4(3x+5) - 3(8x-1)][4(
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Le prix d&rsquo;un sac a baissé de $34\,\%$. Il coûte maintenant $160$ euros.</p>
-<p>Le prix initial en euros est donné par le calcul :</p>
-<p><strong>A.</strong> $\dfrac{160}{1-0{,}34}$ $\quad$ <strong>B.</strong> $160 \times \dfrac{34}{66}$ $\quad$ <strong>C.</strong> $\dfrac{160}{1+\dfrac{34}{100}}$ $\quad$ <strong>D.</strong> $160 \times \dfrac{66}{100}$</p>
+    <p>Dans un groupe, $40\,\%$ des personnes sont des hommes, et $25\,\%$ des hommes portent des lunettes.</p>
+<p>On choisit une personne au hasard. Quelle est la probabilité que ce soit un homme portant des lunettes ?</p>
 
   </div>
   
@@ -526,9 +546,9 @@ $$16(3x+5)^2 - 9(8x-1)^2 = [4(3x+5)]^2 - [3(8x-1)]^2$$$$= [4(3x+5) - 3(8x-1)][4(
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Baisser de $34\,\%$ revient à multiplier par $1 - 0{,}34 = 0{,}66$.</p>
-<p>Si $V_I$ est le prix initial : $V_I \times 0{,}66 = 160$, donc $V_I = \dfrac{160}{1 - 0{,}34}$.</p>
-$${\color{#4A5D7A}\textbf{A}}$$</div>
+    <div><p>Les $25\,\%$ ne portent pas sur le groupe entier, mais seulement sur les hommes : c&rsquo;est une proportion à l&rsquo;intérieur d&rsquo;une proportion. On multiplie donc les deux.</p>
+$$P=0{,}40\times 0{,}25={\color{#4A5D7A}0{,}1}$$<p>Soit $10\,\%$ du groupe. On aurait le même résultat en raisonnant sur un effectif : sur $100$ personnes, $40$ sont des hommes, dont $25\,\%$, soit $10$, portent des lunettes.</p>
+</div>
   </div>
   
 </article>
@@ -547,7 +567,9 @@ $${\color{#4A5D7A}\textbf{A}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    L&rsquo;aire en $\text{dam}^2$ d&rsquo;un carré de côté $9\text{ m}$ est égale à $\ldots$
+    <p>On lance un dé équilibré à six faces. Soit $A$ « obtenir au plus $2$ » et $B$ « obtenir un multiple de $3$ ».</p>
+<p>Déterminer $A\cap B$ et $A\cup B$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -555,8 +577,9 @@ $${\color{#4A5D7A}\textbf{A}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$9\text{ m} = 0{,}9\text{ dam}$</p>
-$$\text{Aire} = 0{,}9 \times 0{,}9 = {\color{#4A5D7A}0{,}81\text{ dam}^2}$$</div>
+    <div><p>On écrit les deux événements en extension :</p>
+$$A=\lbrace 1\,;\,2\rbrace \qquad\text{et}\qquad B=\lbrace 3\,;\,6\rbrace$$<p>Aucune issue n&rsquo;appartient aux deux : les événements sont incompatibles.</p>
+$$A\cap B={\color{#4A5D7A}\varnothing} \qquad A\cup B={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,6\rbrace}$$</div>
   </div>
   
 </article>
@@ -575,7 +598,9 @@ $$\text{Aire} = 0{,}9 \times 0{,}9 = {\color{#4A5D7A}0{,}81\text{ dam}^2}$$</div
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le triple de $9^{50}$ est égal à $\ldots$
+    <p>On sait que $P(A)=0{,}28$. La probabilité de l&rsquo;événement contraire $\overline{A}$ est :</p>
+<p><strong>A.</strong> $-0{,}28$   <strong>B.</strong> $0{,}72$   <strong>C.</strong> $1{,}28$   <strong>D.</strong> $0{,}28$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -583,7 +608,10 @@ $$\text{Aire} = 0{,}9 \times 0{,}9 = {\color{#4A5D7A}0{,}81\text{ dam}^2}$$</div
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$3 \times 9^{50} = 3 \times (3^2)^{50} = 3 \times 3^{100} = {\color{#4A5D7A}3^{101}}$$</div>
+    <div><p>Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.</p>
+$$P\left(\overline{A}\right)=1-P(A)=1-0{,}28={\color{#4A5D7A}0{,}72}$$<p>Les réponses C et A sont impossibles : une probabilité est toujours comprise entre $0$ et $1$.</p>
+<p><span class="rep">Réponse : B</span></p>
+</div>
   </div>
   
 </article>
@@ -602,7 +630,9 @@ $$\text{Aire} = 0{,}9 \times 0{,}9 = {\color{#4A5D7A}0{,}81\text{ dam}^2}$$</div
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre l&rsquo;inéquation : $\dfrac{x-12}{x+1} > 0$
+    <p>On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d&rsquo;obtenir un cœur est :</p>
+<p><strong>A.</strong> $\dfrac{1}{13}$   <strong>B.</strong> $\dfrac{1}{52}$   <strong>C.</strong> $\dfrac{1}{4}$   <strong>D.</strong> $\dfrac{13}{4}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -610,56 +640,11 @@ $$\text{Aire} = 0{,}9 \times 0{,}9 = {\color{#4A5D7A}0{,}81\text{ dam}^2}$$</div
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>Valeur interdite :</strong> $x + 1 = 0 \implies x = -1$.</p>
-<p><strong>Tableau de signes :</strong></p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th></th>
-          <th>$-1$</th>
-          <th></th>
-          <th>$12$</th>
-          <th></th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$x - 12$</td>
-          <td></td>
-          <td>$-$</td>
-          <td></td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>$x + 1$</td>
-          <td></td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td></td>
-          <td>$+$</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>$\dfrac{x-12}{x+1}$</td>
-          <td></td>
-          <td>$+$</td>
-          <td>$\|$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td></td>
-      </tr>
-  </tbody>
-</table>
-<p>L&rsquo;inéquation est vérifiée quand le quotient est strictement positif :</p>
-$${\color{#4A5D7A}S = \left]-\infty\,;\,-1\right[ \cup \left]12\,;\,+\infty\right[}$$</div>
+    <div><p>Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $52$.</p>
+<p>Un jeu de $52$ cartes contient $4$ couleurs de $13$ cartes chacune, donc $13$ cœurs. D&rsquo;où :</p>
+$$P=\dfrac{13}{52}=\dfrac{1\times \cancel{13}}{4\times \cancel{13}}={\color{#4A5D7A}\dfrac{1}{4}}$$<p>La réponse D est impossible : une probabilité ne dépasse jamais $1$.</p>
+<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -760,7 +745,7 @@ $${\color{#4A5D7A}S = \left]-\infty\,;\,-1\right[ \cup \left]12\,;\,+\infty\righ
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

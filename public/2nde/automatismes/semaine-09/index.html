@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 9 — MaBémat</title>
+<title>Semaine 9 - Vecteurs, somme et relation de Chasles — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Vecteurs, somme et relation de Chasles</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Déterminer le taux global d&rsquo;évolution d&rsquo;un article qui diminue de $20\,\%$ dans un premier temps, puis qui augmente de $20\,\%$ dans un second temps.
+    <p>$ABCD$ est un parallélogramme de centre $O$.</p>
+<p>Compléter par le point qui convient :</p>
+<p><strong>a.</strong> $\overrightarrow{AB}=\overrightarrow{D\ ?}$   <strong>b.</strong> $\overrightarrow{BO}=\overrightarrow{O\ ?}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,10 +245,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Diminuer de $20\,\%$ : coefficient $0{,}8$. Augmenter de $20\,\%$ : coefficient $1{,}2$.</p>
-<p>Global : $0{,}8\times 1{,}2=0{,}96=1-0{,}04$.</p>
-<p>Le taux d&rsquo;évolution global est ${\color{#4A5D7A}-4\,\%}$.</p>
-</div>
+    <div><p><strong>a.</strong> Dans le parallélogramme $ABCD$, les côtés $[AB]$ et $[DC]$ sont parallèles, de même longueur et de même sens.</p>
+$$\overrightarrow{AB}=\overrightarrow{D{\color{#4A5D7A}C}}$$<p><strong>b.</strong> Le centre $O$ d&rsquo;un parallélogramme est le milieu de ses diagonales, donc $O$ est le milieu de $[BD]$. Les vecteurs $\overrightarrow{BO}$ et $\overrightarrow{OD}$ ont donc même direction, même sens et même longueur.</p>
+$$\overrightarrow{BO}=\overrightarrow{O{\color{#4A5D7A}D}}$$</div>
   </div>
   
 </article>
@@ -261,9 +266,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un prix diminue de $75\,\%$. Pour retrouver le prix initial, il faut une augmentation de :</p>
-<p>A. $400\,\%$ $\quad$ B. $300\,\%$ $\quad$ C. $75\,\%$ $\quad$ D. $85\,\%$</p>
-
+    <p>Simplifier :</p>
+$$\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CD}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -271,9 +275,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Coefficient multiplicateur de la baisse : $1-0{,}75=0{,}25$.</p>
-<p>Coefficient réciproque : $\dfrac{1}{0{,}25}=4$, soit un taux de $4-1=3={\color{#4A5D7A}300\,\%}$.</p>
-<p>La bonne réponse est <strong>B</strong>.</p>
+    <div><p>On applique la relation de Chasles : quand l&rsquo;extrémité du premier vecteur est l&rsquo;origine du second, les deux se recollent.</p>
+$$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$$<p>On recommence avec le vecteur suivant :</p>
+$$\overrightarrow{AC}+\overrightarrow{CD}={\color{#4A5D7A}\overrightarrow{AD}}$$<p>Il ne reste que le point de départ et le point d&rsquo;arrivée : les points intermédiaires $B$ et $C$ ont disparu.</p>
 </div>
   </div>
   
@@ -293,7 +297,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Un jardin est aménagé selon les proportions suivantes : $\dfrac{3}{10}$ par la culture des légumes, $\dfrac{1}{4}$ par les plantes aromatiques, $\dfrac{7}{40}$ par une serre, et le reste par les fraisiers. Quelle culture occupe le plus de surface ?
+    <p>$ABCD$ est un parallélogramme.</p>
+<p>Démontrer que $\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AC}$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -301,10 +307,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On ramène tout au dénominateur $40$ :</p>
-$$\dfrac{3}{10}=\dfrac{12}{40},\quad \dfrac{1}{4}=\dfrac{10}{40},\quad \dfrac{7}{40}$$<p>Fraisiers : $1-\dfrac{12}{40}-\dfrac{10}{40}-\dfrac{7}{40}=\dfrac{11}{40}$.</p>
-<p>Ordre croissant : $\dfrac{7}{40}<\dfrac{10}{40}<\dfrac{11}{40}<\dfrac{12}{40}$.</p>
-<p>C&rsquo;est <strong>la culture des légumes</strong> ($\dfrac{12}{40}$) qui occupe le plus de surface.</p>
+    <div><p>La relation de Chasles ne s&rsquo;applique pas directement : les deux vecteurs partent du même point $A$, ils ne se recollent pas.</p>
+<p>On remplace donc $\overrightarrow{AD}$ par un vecteur qui lui est égal et dont l&rsquo;origine est $B$. Comme $ABCD$ est un parallélogramme, $[AD]$ et $[BC]$ sont parallèles, de même longueur et de même sens :</p>
+$$\overrightarrow{AD}=\overrightarrow{BC}$$<p>On peut alors appliquer Chasles :</p>
+$$\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BC}={\color{#4A5D7A}\overrightarrow{AC}}$$<p>La somme de deux vecteurs partant du même sommet d&rsquo;un parallélogramme est la diagonale issue de ce sommet.</p>
 </div>
   </div>
   
@@ -324,7 +330,8 @@ $$\dfrac{3}{10}=\dfrac{12}{40},\quad \dfrac{1}{4}=\dfrac{10}{40},\quad \dfrac{7}
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire l&rsquo;expression sous la forme d&rsquo;un quotient (réduire le numérateur) : $\dfrac{3}{9x-3}+\dfrac{1}{2x+1}$
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$-2x+5>11$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -332,8 +339,9 @@ $$\dfrac{3}{10}=\dfrac{12}{40},\quad \dfrac{1}{4}=\dfrac{10}{40},\quad \dfrac{7}
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Pour $x\notin\left\{-\dfrac{1}{2}\,;\,\dfrac{1}{3}\right\}$ :</p>
-$$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x+3+9x-3}{(9x-3)(2x+1)}=\dfrac{15x}{(9x-3)(2x+1)}$$</div>
+    <div><p>On retranche $5$ à chaque membre :</p>
+$$-2x>6$$<p>On divise chaque membre par $-2$, ce qui change le sens de l&rsquo;inégalité :</p>
+$$x<\dfrac{6}{-2} \qquad\text{soit}\qquad x<-3$$$$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right[}$$</div>
   </div>
   
 </article>
@@ -352,7 +360,10 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre : $4(-2x-7)=-9x-3$
+    <p>Le prix d&rsquo;un article connaît deux baisses successives de $20\,\%$.</p>
+<p>Le taux d&rsquo;évolution global associé est :</p>
+<p><strong>A.</strong> $-64\,\%$   <strong>B.</strong> $-40\,\%$   <strong>C.</strong> $-4\,\%$   <strong>D.</strong> $-36\,\%$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -360,10 +371,44 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$-8x-28=-9x-3$</p>
-<p>$-8x+9x=-3+28$</p>
-<p>$x=25$</p>
-<p>La solution est ${\color{#4A5D7A}x=25}$.</p>
+    <div><p>Chaque baisse de $20\,\%$ correspond au coefficient multiplicateur $1-0{,}20=0{,}80$.</p>
+<p>Deux baisses successives reviennent à multiplier deux fois de suite :</p>
+$$0{,}80\times 0{,}80=0{,}64$$<p>On revient au taux : $0{,}64=1-0{,}36$, donc l&rsquo;évolution globale est une baisse de ${\color{#4A5D7A}36\,\%}$.</p>
+<p>La réponse B additionne les taux, ce qui est faux. La réponse A confond le coefficient $0{,}64$ avec le taux.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une classe de $25$ élèves, $10$ sont demi-pensionnaires. On interroge un élève au hasard.</p>
+<p>La probabilité qu&rsquo;il soit demi-pensionnaire est :</p>
+<p><strong>A.</strong> $10$   <strong>B.</strong> $0{,}6$   <strong>C.</strong> $0{,}4$   <strong>D.</strong> $\dfrac{10}{15}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Chaque élève a la même chance d&rsquo;être interrogé : il y a équiprobabilité. La probabilité est donc le nombre de cas favorables divisé par l&rsquo;effectif total.</p>
+$$P=\dfrac{10}{25}=\dfrac{2}{5}={\color{#4A5D7A}0{,}4}$$<p>La réponse B est la probabilité de l&rsquo;événement contraire, et la réponse D divise par le nombre d&rsquo;externes au lieu de l&rsquo;effectif total.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -393,7 +438,10 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Déterminer le taux global d&rsquo;évolution d&rsquo;un article qui diminue de $80\,\%$ dans un premier temps, puis qui augmente de $10\,\%$ dans un second temps.
+    <p>$EFGH$ est un parallélogramme de centre $O$.</p>
+<p>Compléter par le point qui convient :</p>
+<p><strong>a.</strong> $\overrightarrow{EF}=\overrightarrow{H\ ?}$   <strong>b.</strong> $\overrightarrow{FO}=\overrightarrow{O\ ?}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -401,10 +449,9 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Diminuer de $80\,\%$ : coefficient $0{,}2$. Augmenter de $10\,\%$ : coefficient $1{,}1$.</p>
-<p>Global : $0{,}2\times 1{,}1=0{,}22=1-0{,}78$.</p>
-<p>Le taux d&rsquo;évolution global est ${\color{#4A5D7A}-78\,\%}$.</p>
-</div>
+    <div><p><strong>a.</strong> Dans le parallélogramme $EFGH$, les côtés $[EF]$ et $[HG]$ sont parallèles, de même longueur et de même sens.</p>
+$$\overrightarrow{EF}=\overrightarrow{H{\color{#4A5D7A}G}}$$<p><strong>b.</strong> Le centre $O$ d&rsquo;un parallélogramme est le milieu de ses diagonales, donc $O$ est le milieu de $[FH]$. Les vecteurs $\overrightarrow{FO}$ et $\overrightarrow{OH}$ ont donc même direction, même sens et même longueur.</p>
+$$\overrightarrow{FO}=\overrightarrow{O{\color{#4A5D7A}H}}$$</div>
   </div>
   
 </article>
@@ -423,9 +470,8 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un prix diminue de $50\,\%$. Pour retrouver le prix initial, il faut une augmentation de :</p>
-<p>A. $50\,\%$ $\quad$ B. $60\,\%$ $\quad$ C. $200\,\%$ $\quad$ D. $100\,\%$</p>
-
+    <p>Simplifier :</p>
+$$\overrightarrow{MN}+\overrightarrow{NP}+\overrightarrow{PQ}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -433,9 +479,9 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Coefficient multiplicateur de la baisse : $0{,}5$.</p>
-<p>Coefficient réciproque : $\dfrac{1}{0{,}5}=2$, soit un taux de $2-1=1={\color{#4A5D7A}100\,\%}$.</p>
-<p>La bonne réponse est <strong>D</strong>.</p>
+    <div><p>On applique la relation de Chasles : quand l&rsquo;extrémité du premier vecteur est l&rsquo;origine du second, les deux se recollent.</p>
+$$\overrightarrow{MN}+\overrightarrow{NP}=\overrightarrow{MP}$$<p>On recommence avec le vecteur suivant :</p>
+$$\overrightarrow{MP}+\overrightarrow{PQ}={\color{#4A5D7A}\overrightarrow{MQ}}$$<p>Il ne reste que le point de départ et le point d&rsquo;arrivée : les points intermédiaires $N$ et $P$ ont disparu.</p>
 </div>
   </div>
   
@@ -455,7 +501,9 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Gaspard fait un triathlon : $\dfrac{11}{40}$ en VTT, $\dfrac{1}{4}$ en ski de fond, et le reste en course à pied. Pour quelle discipline la distance est-elle la plus grande ?
+    <p>$EFGH$ est un parallélogramme.</p>
+<p>Démontrer que $\overrightarrow{EF}+\overrightarrow{EH}=\overrightarrow{EG}$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -463,9 +511,10 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Course à pied : $1-\dfrac{11}{40}-\dfrac{10}{40}=\dfrac{19}{40}$.</p>
-<p>Ordre : $\dfrac{10}{40}<\dfrac{11}{40}<\dfrac{19}{40}$.</p>
-<p>C&rsquo;est en <strong>course à pied</strong> que la distance est la plus grande.</p>
+    <div><p>La relation de Chasles ne s&rsquo;applique pas directement : les deux vecteurs partent du même point $E$, ils ne se recollent pas.</p>
+<p>On remplace donc $\overrightarrow{EH}$ par un vecteur qui lui est égal et dont l&rsquo;origine est $F$. Comme $EFGH$ est un parallélogramme, $[EH]$ et $[FG]$ sont parallèles, de même longueur et de même sens :</p>
+$$\overrightarrow{EH}=\overrightarrow{FG}$$<p>On peut alors appliquer Chasles :</p>
+$$\overrightarrow{EF}+\overrightarrow{EH}=\overrightarrow{EF}+\overrightarrow{FG}={\color{#4A5D7A}\overrightarrow{EG}}$$<p>La somme de deux vecteurs partant du même sommet d&rsquo;un parallélogramme est la diagonale issue de ce sommet.</p>
 </div>
   </div>
   
@@ -485,7 +534,8 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire l&rsquo;expression sous la forme d&rsquo;un quotient (réduire le numérateur) : $4x+5+\dfrac{2}{3x+3}$
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$-3x+4>19$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -493,8 +543,9 @@ $$\dfrac{3}{9x-3}+\dfrac{1}{2x+1}=\dfrac{3(2x+1)+(9x-3)}{(9x-3)(2x+1)}=\dfrac{6x
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Pour $x\neq -1$ :</p>
-$$\dfrac{(4x+5)(3x+3)+2}{3x+3}=\dfrac{12x^2+27x+15+2}{3x+3}=\dfrac{12x^2+27x+17}{3x+3}$$</div>
+    <div><p>On retranche $4$ à chaque membre :</p>
+$$-3x>15$$<p>On divise chaque membre par $-3$, ce qui change le sens de l&rsquo;inégalité :</p>
+$$x<\dfrac{15}{-3} \qquad\text{soit}\qquad x<-5$$$$S={\color{#4A5D7A}\left]-\infty\,;\,-5\right[}$$</div>
   </div>
   
 </article>
@@ -513,7 +564,10 @@ $$\dfrac{(4x+5)(3x+3)+2}{3x+3}=\dfrac{12x^2+27x+15+2}{3x+3}=\dfrac{12x^2+27x+17}
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre : $2-(-6x-6)=x-5$
+    <p>Le prix d&rsquo;un article connaît deux hausses successives de $10\,\%$.</p>
+<p>Le taux d&rsquo;évolution global associé est :</p>
+<p><strong>A.</strong> $+20\,\%$   <strong>B.</strong> $+21\,\%$   <strong>C.</strong> $+2\,\%$   <strong>D.</strong> $+11\,\%$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -521,11 +575,44 @@ $$\dfrac{(4x+5)(3x+3)+2}{3x+3}=\dfrac{12x^2+27x+15+2}{3x+3}=\dfrac{12x^2+27x+17}
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$2+6x+6=x-5$</p>
-<p>$6x+8=x-5$</p>
-<p>$5x=-13$</p>
-<p>$x=-\dfrac{13}{5}$</p>
-<p>La solution est ${\color{#4A5D7A}x=-\dfrac{13}{5}}$.</p>
+    <div><p>Chaque hausse de $10\,\%$ correspond au coefficient multiplicateur $1+0{,}10=1{,}10$.</p>
+<p>Deux hausses successives reviennent à multiplier deux fois de suite :</p>
+$$1{,}10\times 1{,}10=1{,}21$$<p>On revient au taux : $1{,}21=1+0{,}21$, donc l&rsquo;évolution globale est une hausse de ${\color{#4A5D7A}21\,\%}$.</p>
+<p>La réponse A additionne les taux, ce qui est faux : la seconde hausse porte sur un prix déjà augmenté.</p>
+<p><span class="rep">Réponse : B</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une classe de $30$ élèves, $18$ sont externes. On interroge un élève au hasard.</p>
+<p>La probabilité qu&rsquo;il soit externe est :</p>
+<p><strong>A.</strong> $0{,}6$   <strong>B.</strong> $18$   <strong>C.</strong> $0{,}4$   <strong>D.</strong> $\dfrac{18}{12}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Chaque élève a la même chance d&rsquo;être interrogé : il y a équiprobabilité. La probabilité est donc le nombre de cas favorables divisé par l&rsquo;effectif total.</p>
+$$P=\dfrac{18}{30}=\dfrac{3}{5}={\color{#4A5D7A}0{,}6}$$<p>La réponse C est la probabilité de l&rsquo;événement contraire, et la réponse D divise par le nombre de non-externes au lieu de l&rsquo;effectif total.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -627,7 +714,7 @@ $$\dfrac{(4x+5)(3x+3)+2}{3x+3}=\dfrac{12x^2+27x+15+2}{3x+3}=\dfrac{12x^2+27x+17}
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

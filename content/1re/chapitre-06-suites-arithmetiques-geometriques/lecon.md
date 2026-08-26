@@ -70,19 +70,7 @@ Démonstration. <br>
 </ul>
  
 
-<div class="remarque">
-Cette formule permet de calculer n'importe quel terme d'une suite arithmétique dès que l'on connaît la raison et un terme quelconque ( il n'est pas nécessaire de connaître $u_0$).<br>
-Cette formule permet aussi de calculer la raison d'une suite arithmétique dont on connaît $2$ termes.
-</div>
-
-<h3 class="subsubsection-title">6.1.3 Représentation graphique et variations</h3>
-
-<div class="environment propriete">
-<div class="environment-title">Propriété :</div>
-<div class="environment-content">
-Si $(u_n)$ est une suite arithmétique, les points de la représentation graphique de $(u_n)$ sont alignés.
-</div>
-</div>
+<h3 class="subsubsection-title">6.1.3 Variations</h3>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -115,22 +103,28 @@ $$\sum_{k=1}^n k= 1+2+3+...+(n-1)+n=\dfrac{n(n+1)}{2}$$
 </div>
 </div>
 
+Démonstration. <br>
+La suite $(k)$ des entiers naturels est arithmétique de raison $1$. <br>
+La somme $1+2+\ldots+n$ a pour premier terme $1$, pour dernier terme $n$, et comporte $n$ termes.<br>
+D'après le théorème, elle vaut $\dfrac{(1+n)\times n}{2}=\dfrac{n(n+1)}{2}$.
+
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-
+On veut réaliser un forage de $150$ m. Le premier mètre coûte $30$ €, le $2^{\text{ième}}$ mètre coûte $38$ €, le $3^{\text{ième}}$ mètre coûte $46$ €, et ainsi de suite en augmentant de $8$ € à chaque nouveau mètre. <br>
+Pour tout entier $n\geq 1$, on note $u_n$ le prix du $n^{\text{ième}}$ mètre foré.
 <ol>
-<li>Soit $(t_n)$ la suite arithmétique de premier terme $t_0=19$ et de raison $r=5$. Déterminer $\displaystyle S_{10}=\sum_{k=0}^{10} t_k $.
-<br>Le premier terme est $t_0=19$. Cette somme comporte $11$ termes (la somme commence à $k=0$ et finit à $k=10$). Le dernier terme est : $t_{10}= t_0 + 5n=19+5\times 10= 69$.
-Donc $S_{10}=\dfrac{(19+69)\times 11}{2}=484$</li>
-<li>On veut réaliser un forage de $120$m. Le premier mètre coûte $20$€, le $2^{\text{ième}}$ mètre coûte $25$€, le $3^{\text{ième}}$ mètre coûte $30$€... ainsi de suite en augmentant de $5$€ à chaque nouveau mètre.
-
-\begin{enumerate}</li>
-<li>Combien coûte le $120^{\text{ième}}$ mètre ?<br>
-Il s'agit d'une suite arithmétique de premier terme $u_1=20$ et de raison $r=5$. <br>
-Ainsi, $u_{120}=u_1+(n-1)\times r=20+5\times 119=615$ Ainsi, le $120^{\text{ième}}$ mètre coûte $615$€.</li>
+<li>Justifier que $(u_n)$ est une suite arithmétique et préciser son premier terme et sa raison.<br>
+Chaque mètre coûte $8$ € de plus que le précédent : pour tout entier $n\geq 1$, $u_{n+1}=u_n+8$.<br>
+La suite $(u_n)$ est donc arithmétique de premier terme $u_1=30$ et de raison $r=8$.</li>
+<li>Combien coûte le $150^{\text{ième}}$ mètre ?<br>
+Ici le premier terme est $u_1$ (et non $u_0$), on utilise donc la formule $u_n=u_1+(n-1)r$ :
+$$u_{150}=30+8\times (150-1)=30+8\times 149=1222.$$
+Le $150^{\text{ième}}$ mètre coûte donc $1\,222$ €.</li>
 <li>Quel est le coût total du forage ?<br>
-On veut calculer la somme des $120$ termes de la suite $(u_n)$. $$S=\sum_{k=1}^{120} u_k= \dfrac{(u_1 + u_{120})\times 120}{2}=\dfrac{(20 + 615)\times 120}{2}=38100$$. Le coût total du forage est de $38100$ €.</li>
+Le coût total est la somme des prix de tous les mètres forés, soit $150$ termes, de $u_1$ à $u_{150}$ :
+$$S=\sum_{k=1}^{150} u_k= \dfrac{(u_1 + u_{150})\times 150}{2}=\dfrac{(30 + 1222)\times 150}{2}=93\,900.$$
+Le coût total du forage est de $93\,900$ €.</li>
 </ol>
 </div>
 </div>
@@ -177,8 +171,9 @@ Pour montrer qu'une suite $(u_n)_{n\geq n_0}$ est géométrique, il suffit de mo
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-La suite $(u_n)$ définie par $u_n=5\times 3^n$ avec $u_0=4$. $u_0\neq 0$ donc $u_n\neq 0$ pour tout $n$. <br>
-Donc, $\dfrac{u_{n+1}}{u_n}=\dfrac{5\times 3^{n+1}}{5\times 3^n}=\dfrac{3^{n+1}}{3^n}=3$.
+La suite $(u_n)$ définie par $u_n=5\times 3^n$ est géométrique de raison $3$.<br>
+En effet, $u_n=5\times 3^n\neq 0$ pour tout $n\in\N$, et $\dfrac{u_{n+1}}{u_n}=\dfrac{5\times 3^{n+1}}{5\times 3^n}=\dfrac{3^{n+1}}{3^n}=3$. <br>
+Son premier terme est $u_0=5\times 3^0=5$.
 </div>
 </div>
 
@@ -216,8 +211,9 @@ Soit $(u_n)$ une suite géométrique de raison $q$ et de premier terme $u_0$. <b
 Pour tout $n\in \N$, $\dfrac{u_{n+1}}{u_n}=q$. Il faut donc comparer $q$ à $1$.
 <ul>
 <li>Si ${q>1}$ alors la suite $(u_n)$ est  <strong>croissante </strong> et tend vers $+\infty$ si $u_0>0$ et  <strong>décroissante </strong> et tend vers $-\infty$ si $u_0<0$</li>
-<li>Si ${ 0 &lt q &lt1}$ alors la suite $(u_n)$ est  <strong>décroissante </strong> et tend vers $0$ si $u_0>0$ et  <strong>croissante </strong> et tend vers $0$ si $u_0 &lt0$.</li>
+<li>Si ${ 0 &lt; q &lt; 1}$ alors la suite $(u_n)$ est  <strong>décroissante </strong> et tend vers $0$ si $u_0>0$ et  <strong>croissante </strong> et tend vers $0$ si $u_0 &lt; 0$.</li>
 <li>Si $ {q=1}$ alors la suite $(u_n)$ est  <strong>constante </strong> égale à $u_0$.</li>
+<li>Si $ {q<0}$ alors la suite $(u_n)$ n'est <strong>ni croissante ni décroissante</strong> : ses termes changent de signe alternativement.</li>
 </ul>
 </div>
 </div>
@@ -245,19 +241,18 @@ $S-qS=1-q^{n+1}$. C'est-à-dire $(1-q)S=1-q^{n+1}$ et donc $S=\dfrac{1-q^{n+1}}{
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-
+Une entreprise produisait $45$ tonnes de déchets non recyclables en $2016$. Chaque année, elle diminue cette masse de $4\%$ par rapport à l'année précédente. Pour tout entier naturel $n$, on note $p_n$ la masse de déchets non recyclables produite l'année $2016+n$.
 <ol>
-<li>Soit $(u_n)$ la suite géométrique de premier terme $u_1=\dfrac{1}{8}$ et de raison $q=3$. Déterminer $\displaystyle S_{8}=\sum_{k=1}^{8} u_k $.
-<ul>
-<li>Le premier terme est $u_1=\dfrac{1}{8}$.</li>
-<li>Cette somme comporte $8$ termes (la somme commence à $k=1$ et finit à $k=8$).</li>
-<li>La raison est $q=3$.</li>
-</ul> 
-$$S_{8}=\dfrac{1}{8}\times\dfrac{1-3^8}{1-3}=\dfrac{1}{8}\times\dfrac{-6560}{-2}=\dfrac{1}{8}\times 3280=410$$</li>
-<li>Une entreprise produisait $30$ tonnes de déchets non recyclables en $2015$. Chaque année l'entreprise diminue la masse de déchets non recyclables de $3\%$ par rapport à l'année précédente. <br>
-Pour tout entier $n\geq 0$, on pose $p_n$ la masse de déchets non recyclables à l'année $2015+n$.<br>
-Justifier qu'en $2026$, la quantité de déchets non recyclables produit par l'entreprise depuis $2015$ dépasse les $300$ tonnes.<br>
-$(p_n)$ est une suite géométrique, car chaque année la masse de déchet est multipliée par $0,97$ et $p_0=30$. On a $2026-2015=11$. On veut donc calculer la somme $$\sum_{k=0}^{11}p_k=p_0\times \dfrac{1-q^{11+1}}{1-q}=30\times \dfrac{1-0,97^{12}}{1-0,97}\approx 306,158\text{ tonnes.}$$</li>
+<li>Justifier que $(p_n)$ est une suite géométrique et préciser son premier terme et sa raison.<br>
+Une diminution de $4\%$ revient à multiplier par le coefficient multiplicateur $1-\dfrac{4}{100}=0,96$.<br>
+Donc, pour tout entier naturel $n$, $p_{n+1}=0,96\,p_n$ : la suite $(p_n)$ est géométrique de raison $q=0,96$ et de premier terme $p_0=45$.</li>
+<li>Exprimer $p_n$ en fonction de $n$ et donner le sens de variation de la suite.<br>
+On a $p_n=45\times 0,96^n$ pour tout entier naturel $n$.<br>
+Comme $0<q<1$ et $p_0>0$, la suite $(p_n)$ est décroissante et tend vers $0$ : la décroissance est exponentielle.</li>
+<li>Justifier qu'entre $2016$ et $2027$ inclus, l'entreprise a produit plus de $400$ tonnes de déchets non recyclables.<br>
+L'année $2027$ correspond à $n=2027-2016=11$. La masse totale produite est donc la somme des termes de $p_0$ à $p_{11}$, soit $12$ termes :
+$$\sum_{k=0}^{11}p_k=p_0\times \dfrac{1-q^{12}}{1-q}=45\times \dfrac{1-0,96^{12}}{1-0,96}\approx 435,7\text{ tonnes.}$$
+Comme $435,7>400$, l'entreprise a bien produit plus de $400$ tonnes de déchets non recyclables sur cette période.</li>
 </ol>
 </div>
 </div>

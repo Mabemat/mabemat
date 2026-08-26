@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 12 — MaBémat</title>
+<title>Semaine 12 - Signe d&#39;une fonction et premières statistiques — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Signe d&#39;une fonction et premières statistiques</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Déterminer l&rsquo;expression algébrique de la fonction affine $f$ définie sur $\mathbb{R}$, sachant que $f(9)=-27$ et $f(8)=-25$.
+    <p>Ci-dessous la courbe représentative d&rsquo;une fonction $f$ définie sur $[-4\,;\,4]$.</p>
+<img src="/mabemat/images/automatismes/2nde/s12-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+<p>Résoudre graphiquement l&rsquo;inéquation $f(x)\leqslant 0$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,9 +245,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$a=\dfrac{f(9)-f(8)}{9-8}=\dfrac{-27-(-25)}{1}=-2$</p>
-<p>$f(9)=-2\times 9+b=-18+b=-27 \implies b=-9$</p>
-<p>Donc $f(x)={\color{#4A5D7A}-2x-9}$.</p>
+    <div><p>Résoudre $f(x)\leqslant 0$, c&rsquo;est chercher les abscisses des points de la courbe situés <strong>sur ou en dessous</strong> de l&rsquo;axe des abscisses.</p>
+<p>On repère d&rsquo;abord les points où la courbe coupe cet axe : ils ont pour abscisses $-3$, $1$ et $3$.</p>
+<p>La courbe est en dessous de l&rsquo;axe entre $-4$ et $-3$, puis entre $1$ et $3$. Ailleurs, elle est au-dessus. Comme l&rsquo;inégalité est large, les valeurs qui annulent $f$ sont incluses.</p>
+$$S={\color{#4A5D7A}\left[-4\,;\,-3\right]\cup\left[1\,;\,3\right]}$$<p>L&rsquo;ensemble solution est fait d&rsquo;abscisses, pas de hauteurs.</p>
 </div>
   </div>
   
@@ -261,9 +268,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>a. Donner une écriture simplifiée de $I=\,]11\,;\,25]\cup[33\,;\,43]$</p>
-<p>b. Donner une écriture simplifiée de $I=[12\,;\,28]\cap[14\,;\,17]$</p>
-
+    Avec la même courbe, combien l&rsquo;équation $f(x)=1$ a-t-elle de solutions ?
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -271,8 +276,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>a. Les deux intervalles sont disjoints : $I={\color{#4A5D7A}]11\,;\,25]\cup[33\,;\,43]}$ (ne se simplifie pas).</p>
-<p>b. $[14\,;\,17]\subset[12\,;\,28]$ donc $I={\color{#4A5D7A}[14\,;\,17]}$.</p>
+    <div><p>On trace mentalement la droite horizontale d&rsquo;équation $y=1$ et on compte ses points d&rsquo;intersection avec la courbe.</p>
+<p>Cette droite rencontre la courbe une fois sur la partie montante de gauche, une fois sur la partie descendante qui suit le sommet, et une fois sur la partie montante de droite.</p>
+<p>L&rsquo;équation $f(x)=1$ a donc ${\color{#4A5D7A}3}$ solutions.</p>
+<p>Aucune de ces trois abscisses ne tombe sur une graduation : on ne demande pas de les lire, compter les intersections suffit.</p>
 </div>
   </div>
   
@@ -292,9 +299,28 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soient $f(x)=-7x-1$ et $g(x)=-2x+3$.</p>
-<p>a. Résoudre $f(x)<g(x)$.</p>
-<p>b. Quelle interprétation graphique peut-on en donner ?</p>
+    <p>On a relevé le nombre de frères et sœurs des $25$ élèves d&rsquo;une classe :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Nombre de frères et sœurs</th>
+          <th>0</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Effectif</td>
+          <td>6</td>
+          <td>10</td>
+          <td>7</td>
+          <td>2</td>
+      </tr>
+  </tbody>
+</table>
+<p>Calculer la fréquence, en pourcentage, des élèves ayant exactement $1$ frère ou sœur, puis celle des élèves en ayant au moins $2$.</p>
 
   </div>
   
@@ -303,10 +329,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>a. $-7x-1<-2x+3 \implies -5x<4 \implies x>-\dfrac{4}{5}$</p>
-<p>$S=\left]-\dfrac{4}{5}\,;\,+\infty\right[$</p>
-<p>b. La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur $\left]-\dfrac{4}{5}\,;\,+\infty\right[$.</p>
-</div>
+    <div><p>Une fréquence est un quotient : l&rsquo;effectif de la valeur divisé par l&rsquo;effectif total, ici $25$.</p>
+<p>Pour la valeur $1$ :</p>
+$$f=\dfrac{10}{25}=\dfrac{2\times \cancel{5}}{5\times \cancel{5}}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$$<p>« Au moins $2$ » signifie $2$ ou $3$ : on additionne d&rsquo;abord les effectifs.</p>
+$$7+2=9 \qquad\text{puis}\qquad f=\dfrac{9}{25}=0{,}36={\color{#4A5D7A}36\,\%}$$</div>
   </div>
   
 </article>
@@ -325,7 +351,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Développer et réduire : $A=(7y-6)(-3y-5)$
+    <p>Après une baisse de $15\,\%$, un article coûte $68$ €.</p>
+<p>Quel était son prix avant la baisse ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -333,9 +361,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$A=7y\times(-3y)+7y\times(-5)+(-6)\times(-3y)+(-6)\times(-5)$</p>
-<p>$A=-21y^2-35y+18y+30$</p>
-<p>$A={\color{#4A5D7A}-21y^2-17y+30}$</p>
+    <div><p>Une baisse de $15\,\%$ correspond au coefficient multiplicateur $1-0{,}15=0{,}85$. En notant $P$ le prix initial :</p>
+$$P\times 0{,}85=68$$<p>On divise par le coefficient multiplicateur :</p>
+$$P=\dfrac{68}{0{,}85}={\color{#4A5D7A}80}$$<p>Le prix avant la baisse était donc de $80$ €. Vérification : $80\times 0{,}85=68$.</p>
 </div>
   </div>
   
@@ -355,8 +383,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>a. Le chiffre d&rsquo;affaires d&rsquo;une entreprise est passé de $270\,000$€ en 2021 à $264\,600$€ en 2022. Calculer le taux d&rsquo;évolution en pourcentage.</p>
-<p>b. Après une diminution de $6\,\%$, mon vélo électrique coûte $922{,}14$€. Calculer son prix avant la diminution.</p>
+    <p>On considère les trois nombres suivants :</p>
+$$A=0{,}62 \qquad B=\dfrac{58}{100} \qquad C=\dfrac{3}{5}$$<p>Le classement par ordre croissant est :</p>
+<p><strong>A.</strong> $C < B < A$   <strong>B.</strong> $B < C < A$   <strong>C.</strong> $A < B < C$   <strong>D.</strong> $B < A < C$</p>
 
   </div>
   
@@ -365,8 +394,43 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>a. $t=\dfrac{264\,600-270\,000}{270\,000}=-0{,}02={\color{#4A5D7A}-2\,\%}$</p>
-<p>b. Diminuer de $6\,\%$ revient à multiplier par $0{,}94$. Prix initial : $\dfrac{922{,}14}{0{,}94}={\color{#4A5D7A}981}$€.</p>
+    <div><p>Pour comparer, on écrit tout sous forme décimale.</p>
+$$B=\dfrac{58}{100}=0{,}58 \qquad C=\dfrac{3}{5}=\dfrac{6}{10}=0{,}6$$<p>On range ensuite les trois décimaux :</p>
+$$0{,}58 < 0{,}6 < 0{,}62 \qquad\text{c'est-à-dire}\qquad {\color{#4A5D7A}B < C < A}$$<p><span class="rep">Réponse : B</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Un sac contient $5$ jetons numérotés de $1$ à $5$. On en tire un au hasard.</p>
+<p>La probabilité d&rsquo;obtenir un numéro supérieur ou égal à $4$ est :</p>
+<p><strong>A.</strong> $\dfrac{1}{5}$   <strong>B.</strong> $\dfrac{3}{5}$   <strong>C.</strong> $\dfrac{2}{5}$   <strong>D.</strong> $\dfrac{4}{5}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Les jetons sont indiscernables : les $5$ issues sont équiprobables.</p>
+<p>Les numéros supérieurs ou égaux à $4$ sont $4$ et $5$ : il y a $2$ cas favorables.</p>
+$$P={\color{#4A5D7A}\dfrac{2}{5}}$$<p>La réponse A ne compte que le jeton $5$, en oubliant que $4$ vérifie aussi « supérieur ou égal à $4$ ».</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -396,7 +460,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Déterminer l&rsquo;expression algébrique de la fonction affine $f$ définie sur $\mathbb{R}$, sachant que $f(9)=32$ et $f(7)=26$.
+    <p>Ci-dessous la courbe représentative d&rsquo;une fonction $f$ définie sur $[-4\,;\,4]$.</p>
+<img src="/mabemat/images/automatismes/2nde/s12d-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+<p>Résoudre graphiquement l&rsquo;inéquation $f(x)>0$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -404,9 +471,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$a=\dfrac{f(9)-f(7)}{9-7}=\dfrac{32-26}{2}=3$</p>
-<p>$f(9)=3\times 9+b=27+b=32 \implies b=5$</p>
-<p>Donc $f(x)={\color{#4A5D7A}3x+5}$.</p>
+    <div><p>Résoudre $f(x)>0$, c&rsquo;est chercher les abscisses des points de la courbe situés <strong>strictement au-dessus</strong> de l&rsquo;axe des abscisses.</p>
+<p>On repère d&rsquo;abord les points où la courbe coupe cet axe : ils ont pour abscisses $-2$, $0$ et $3$.</p>
+<p>La courbe est au-dessus de l&rsquo;axe entre $-2$ et $0$, puis à partir de $3$ jusqu&rsquo;au bord droit du domaine. Ailleurs, elle est en dessous.</p>
+<p>Comme l&rsquo;inégalité est <strong>stricte</strong>, les valeurs qui annulent $f$ sont exclues : les crochets sont ouverts en $-2$, $0$ et $3$. En revanche $4$ est la borne du domaine, où la courbe est bien au-dessus de l&rsquo;axe, donc ce crochet reste fermé.</p>
+$$S={\color{#4A5D7A}\left]-2\,;\,0\right[\cup\left]3\,;\,4\right]}$$<p>L&rsquo;ensemble solution est fait d&rsquo;abscisses, pas de hauteurs.</p>
 </div>
   </div>
   
@@ -426,9 +495,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>a. Donner une écriture simplifiée de $I=\,]1\,;\,27]\cup\,]6\,;\,13]$</p>
-<p>b. Donner une écriture simplifiée de $I=\,]-\infty\,;\,22]\cap\,]31\,;\,40]$</p>
-
+    Avec la même courbe, résoudre graphiquement l&rsquo;équation $f(x)=2$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -436,8 +503,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>a. $]6\,;\,13]\subset\,]1\,;\,27]$ donc $I={\color{#4A5D7A}]1\,;\,27]}$.</p>
-<p>b. Les deux intervalles sont disjoints : $I={\color{#4A5D7A}\emptyset}$.</p>
+    <div><p>On trace mentalement la droite horizontale d&rsquo;équation $y=2$ et on repère ses points d&rsquo;intersection avec la courbe.</p>
+<p>Cette droite est tangente au sommet de la première bosse, au point $(-1\,;\,2)$, et rencontre à nouveau la courbe à l&rsquo;extrémité droite, au point $(4\,;\,2)$. Entre les deux, la courbe reste toujours en dessous de la hauteur $2$.</p>
+$$S={\color{#4A5D7A}\lbrace -1\,;\,4\rbrace}$$<p>Le sommet ne compte que pour une seule solution, même si la courbe y « touche » la droite sans la traverser.</p>
 </div>
   </div>
   
@@ -457,9 +525,28 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soient $f(x)=6x+3$ et $g(x)=x+5$.</p>
-<p>a. Résoudre $f(x)<g(x)$.</p>
-<p>b. Quelle interprétation graphique peut-on en donner ?</p>
+    <p>On a relevé le nombre d&rsquo;animaux de compagnie des $20$ élèves d&rsquo;un groupe :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Nombre d&rsquo;animaux</th>
+          <th>0</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Effectif</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<p>Calculer la fréquence, en pourcentage, des élèves ayant exactement $1$ animal, puis celle des élèves en ayant au moins $2$.</p>
 
   </div>
   
@@ -468,10 +555,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>a. $6x+3<x+5 \implies 5x<2 \implies x<\dfrac{2}{5}$</p>
-<p>$S=\left]-\infty\,;\,\dfrac{2}{5}\right[$</p>
-<p>b. La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur $\left]-\infty\,;\,\dfrac{2}{5}\right[$.</p>
-</div>
+    <div><p>Une fréquence est un quotient : l&rsquo;effectif de la valeur divisé par l&rsquo;effectif total, ici $20$.</p>
+<p>Pour la valeur $1$ :</p>
+$$f=\dfrac{8}{20}=\dfrac{2\times \cancel{4}}{5\times \cancel{4}}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$$<p>« Au moins $2$ » signifie $2$ ou $3$ : on additionne d&rsquo;abord les effectifs.</p>
+$$4+1=5 \qquad\text{puis}\qquad f=\dfrac{5}{20}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$</div>
   </div>
   
 </article>
@@ -490,7 +577,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Développer et réduire : $A=(9k+4)(-7k-3)$
+    <p>Après une hausse de $12\,\%$, un article coûte $84$ €.</p>
+<p>Quel était son prix avant la hausse ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -498,9 +587,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$A=9k\times(-7k)+9k\times(-3)+4\times(-7k)+4\times(-3)$</p>
-<p>$A=-63k^2-27k-28k-12$</p>
-<p>$A={\color{#4A5D7A}-63k^2-55k-12}$</p>
+    <div><p>Une hausse de $12\,\%$ correspond au coefficient multiplicateur $1+0{,}12=1{,}12$. En notant $P$ le prix initial :</p>
+$$P\times 1{,}12=84$$<p>On divise par le coefficient multiplicateur :</p>
+$$P=\dfrac{84}{1{,}12}={\color{#4A5D7A}75}$$<p>Le prix avant la hausse était donc de $75$ €. Vérification : $75\times 1{,}12=84$.</p>
 </div>
   </div>
   
@@ -520,8 +609,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>a. En 14 ans, la population d&rsquo;une ville est passée de $52\,000$ à $43\,680$ habitants. Calculer le taux d&rsquo;évolution en pourcentage.</p>
-<p>b. Après une augmentation de $60\,\%$, un article coûte $15{,}84$€. Calculer son prix initial.</p>
+    <p>On considère les trois nombres suivants :</p>
+$$A=0{,}48 \qquad B=\dfrac{51}{100} \qquad C=\dfrac{9}{20}$$<p>Le classement par ordre croissant est :</p>
+<p><strong>A.</strong> $A < C < B$   <strong>B.</strong> $C < B < A$   <strong>C.</strong> $B < A < C$   <strong>D.</strong> $C < A < B$</p>
 
   </div>
   
@@ -530,8 +620,43 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>a. $t=\dfrac{43\,680-52\,000}{52\,000}=-0{,}16={\color{#4A5D7A}-16\,\%}$</p>
-<p>b. Augmenter de $60\,\%$ revient à multiplier par $1{,}6$. Prix initial : $\dfrac{15{,}84}{1{,}6}={\color{#4A5D7A}9{,}90}$€.</p>
+    <div><p>Pour comparer, on écrit tout sous forme décimale.</p>
+$$B=\dfrac{51}{100}=0{,}51 \qquad C=\dfrac{9}{20}=\dfrac{45}{100}=0{,}45$$<p>On range ensuite les trois décimaux :</p>
+$$0{,}45 < 0{,}48 < 0{,}51 \qquad\text{c'est-à-dire}\qquad {\color{#4A5D7A}C < A < B}$$<p><span class="rep">Réponse : D</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Un sac contient $8$ jetons numérotés de $1$ à $8$. On en tire un au hasard.</p>
+<p>La probabilité d&rsquo;obtenir un numéro supérieur ou égal à $6$ est :</p>
+<p><strong>A.</strong> $\dfrac{3}{8}$   <strong>B.</strong> $\dfrac{5}{8}$   <strong>C.</strong> $\dfrac{1}{8}$   <strong>D.</strong> $\dfrac{2}{8}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Les jetons sont indiscernables : les $8$ issues sont équiprobables.</p>
+<p>Les numéros supérieurs ou égaux à $6$ sont $6$, $7$ et $8$ : il y a $3$ cas favorables.</p>
+$$P={\color{#4A5D7A}\dfrac{3}{8}}$$<p>La réponse D oublie que $6$ vérifie aussi « supérieur ou égal à $6$ ».</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -633,7 +758,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

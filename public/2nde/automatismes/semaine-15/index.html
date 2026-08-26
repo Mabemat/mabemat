@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 15 — MaBémat</title>
+<title>Semaine 15 - Signe d&#39;une fonction affine et inéquations produit — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Signe d&#39;une fonction affine et inéquations produit</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Préciser les valeurs interdites éventuelles, puis résoudre l&rsquo;équation : $\dfrac{-5+9x}{4x-6}=0$
+    Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-2x+6$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,9 +242,31 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Valeur interdite : $4x-6=0 \implies x=\dfrac{3}{2}$.</p>
-<p>L&rsquo;équation $\dfrac{-5+9x}{4x-6}=0$ équivaut à $-5+9x=0$, soit $x=\dfrac{5}{9}$.</p>
-<p>$\dfrac{5}{9}\neq\dfrac{3}{2}$, donc $\mathscr{S}=\left\{\dfrac{5}{9}\right\}$.</p>
+    <div><p>On cherche d&rsquo;abord la valeur qui annule $f$ :</p>
+$$-2x+6=0 \quad\Longrightarrow\quad -2x=-6 \quad\Longrightarrow\quad x=3$$<p>Le coefficient directeur vaut $-2$, il est négatif : la fonction est décroissante. Elle est donc positive <strong>avant</strong> sa racine et négative <strong>après</strong>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>$x$</th>
+          <th>$-\infty$</th>
+          <th></th>
+          <th>$3$</th>
+          <th></th>
+          <th>$+\infty$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>signe de $f(x)$</td>
+          <td></td>
+          <td>$+$</td>
+          <td>$0$</td>
+          <td>$-$</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+$${\color{#4A5D7A}f(x)>0\ \text{sur}\ \left]-\infty\,;\,3\right[ \qquad f(x)<0\ \text{sur}\ \left]3\,;\,+\infty\right[}$$<p>Retenir : le signe d&rsquo;une fonction affine est celui de $m$ <strong>après</strong> la racine, et l&rsquo;opposé avant.</p>
 </div>
   </div>
   
@@ -261,7 +286,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-4x+3$.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation :</p>
+$$(x-2)(3x+9)\geqslant 0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -269,27 +295,56 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(x)=0 \iff x=\dfrac{3}{4}$.</p>
-<p>$f$ est décroissante ($a=-4<0$) :</p>
+    <div><p>On cherche les racines de chaque facteur :</p>
+$$x-2=0 \Longrightarrow x=2 \qquad\qquad 3x+9=0 \Longrightarrow x=-3$$<p>Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :</p>
 <table>
   <thead>
       <tr>
           <th>$x$</th>
           <th>$-\infty$</th>
-          <th>$\dfrac{3}{4}$</th>
+          <th></th>
+          <th>$-3$</th>
+          <th></th>
+          <th>$2$</th>
+          <th></th>
           <th>$+\infty$</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$f(x)$</td>
+          <td>$x-2$</td>
+          <td></td>
+          <td>$-$</td>
+          <td></td>
+          <td>$-$</td>
+          <td>$0$</td>
+          <td>$+$</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$3x+9$</td>
+          <td></td>
+          <td>$-$</td>
+          <td>$0$</td>
+          <td>$+$</td>
+          <td></td>
+          <td>$+$</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>produit</td>
+          <td></td>
           <td>$+$</td>
           <td>$0$</td>
           <td>$-$</td>
+          <td>$0$</td>
+          <td>$+$</td>
+          <td></td>
       </tr>
   </tbody>
 </table>
-</div>
+<p>L&rsquo;inégalité est large, donc les racines sont incluses :</p>
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right]\cup\left[2\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -308,7 +363,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{9^7}{9^2}=$
+    Déterminer la fonction affine $f$ telle que $f(2)=1$ et $f(5)=10$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -316,7 +371,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$\dfrac{9^7}{9^2}=9^{7-2}={\color{#4A5D7A}9^5}$</div>
+    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$. On calcule d&rsquo;abord le coefficient directeur :</p>
+$$m=\dfrac{f(5)-f(2)}{5-2}=\dfrac{10-1}{3}=\dfrac{9}{3}=3$$<p>On a donc $f(x)=3x+p$. Pour trouver $p$, on utilise l&rsquo;une des deux informations, par exemple $f(2)=1$ :</p>
+$$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$$$f(x)={\color{#4A5D7A}3x-5}$$<p>Vérification avec l&rsquo;autre donnée : $f(5)=3\times 5-5=10$.</p>
+</div>
   </div>
   
 </article>
@@ -335,7 +393,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Convertir $66$ minutes en heure décimale.
+    <p>Une droite passe par les points $A(1\,;\,2)$ et $B(4\,;\,11)$.</p>
+<p>Déterminer son coefficient directeur.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -343,7 +403,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$66\text{ min}=60\text{ min}+6\text{ min}=1\text{ h}+\dfrac{6}{60}\text{ h}=1\text{ h}+\dfrac{1}{10}\text{ h}={\color{#4A5D7A}1{,}1\text{ h}}$</div>
+    <div><p>Le coefficient directeur d&rsquo;une droite passant par deux points se calcule par :</p>
+$$m=\dfrac{y_B-y_A}{x_B-x_A}$$<p>On remplace :</p>
+$$m=\dfrac{11-2}{4-1}=\dfrac{9}{3}={\color{#4A5D7A}3}$$</div>
   </div>
   
 </article>
@@ -362,8 +424,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Le prix d&rsquo;un article est $P$. Il connaît deux augmentations successives de $10\,\%$. Le prix après ces augmentations est :</p>
-<p>A. $P\times\left(\dfrac{10}{100}\right)^2$ $\quad$ B. $P\times 1{,}2$ $\quad$ C. $P\times\left(1+\dfrac{1}{10}\right)^2$ $\quad$ D. $P\times(1{,}1+0{,}1)$</p>
+    <p>L&rsquo;ensemble des solutions dans $\mathbb{R}$ de l&rsquo;inéquation $-2(x+5)(x-1)>0$ est :</p>
+<p><strong>A.</strong> $\left[-5\,;\,1\right]$   <strong>B.</strong> $\left]-\infty\,;\,-5\right[\cup\left]1\,;\,+\infty\right[$   <strong>C.</strong> $\left]-5\,;\,1\right[$   <strong>D.</strong> $\varnothing$</p>
 
   </div>
   
@@ -372,8 +434,44 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Après deux augmentations de $10\,\%$ : $P\times 1{,}1\times 1{,}1=P\times\left(1+\dfrac{1}{10}\right)^2$.</p>
-<p>La bonne réponse est <strong>C</strong>.</p>
+    <div><p>Le facteur constant $-2$ est strictement négatif. On peut diviser les deux membres par $-2$, à condition de changer le sens de l&rsquo;inégalité :</p>
+$$(x+5)(x-1)<0$$<p>Les racines sont $-5$ et $1$. Un produit de deux facteurs affines croissants est négatif <strong>entre</strong> ses racines.</p>
+$$S={\color{#4A5D7A}\left]-5\,;\,1\right[}$$<p>La réponse B est celle qu&rsquo;on obtiendrait en oubliant de changer le sens de l&rsquo;inégalité à cause du $-2$, et la réponse A oublie que l&rsquo;inégalité est stricte.</p>
+<p><span class="rep">Réponse : C</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On lance deux fois de suite une pièce équilibrée.</p>
+<p>La probabilité d&rsquo;obtenir deux fois pile est :</p>
+<p><strong>A.</strong> $\dfrac{1}{2}$   <strong>B.</strong> $\dfrac{1}{4}$   <strong>C.</strong> $\dfrac{1}{3}$   <strong>D.</strong> $\dfrac{3}{4}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On énumère les issues possibles, en distinguant les deux lancers :</p>
+$$(P\,;\,P) \qquad (P\,;\,F) \qquad (F\,;\,P) \qquad (F\,;\,F)$$<p>Ces $4$ issues sont équiprobables, et une seule convient.</p>
+$$P={\color{#4A5D7A}\dfrac{1}{4}}$$<p>La réponse C vient de l&rsquo;erreur classique consistant à ne compter que trois cas, « deux piles, deux faces, un de chaque », en oubliant que « un de chaque » se produit de deux façons.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -403,7 +501,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Préciser les valeurs interdites éventuelles, puis résoudre l&rsquo;équation : $\dfrac{5x+2}{-x+8}=0$
+    Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-3x+12$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -411,9 +509,31 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Valeur interdite : $-x+8=0 \implies x=8$.</p>
-<p>L&rsquo;équation équivaut à $5x+2=0$, soit $x=-\dfrac{2}{5}$.</p>
-<p>$-\dfrac{2}{5}\neq 8$, donc $\mathscr{S}=\left\{-\dfrac{2}{5}\right\}$.</p>
+    <div><p>On cherche d&rsquo;abord la valeur qui annule $f$ :</p>
+$$-3x+12=0 \quad\Longrightarrow\quad -3x=-12 \quad\Longrightarrow\quad x=4$$<p>Le coefficient directeur vaut $-3$, il est négatif : la fonction est décroissante. Elle est donc positive <strong>avant</strong> sa racine et négative <strong>après</strong>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>$x$</th>
+          <th>$-\infty$</th>
+          <th></th>
+          <th>$4$</th>
+          <th></th>
+          <th>$+\infty$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>signe de $f(x)$</td>
+          <td></td>
+          <td>$+$</td>
+          <td>$0$</td>
+          <td>$-$</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+$${\color{#4A5D7A}f(x)>0\ \text{sur}\ \left]-\infty\,;\,4\right[ \qquad f(x)<0\ \text{sur}\ \left]4\,;\,+\infty\right[}$$<p>Retenir : le signe d&rsquo;une fonction affine est celui de $m$ <strong>après</strong> la racine, et l&rsquo;opposé avant.</p>
 </div>
   </div>
   
@@ -433,7 +553,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-3x+5$.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation :</p>
+$$(x-1)(2x+8)\geqslant 0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -441,27 +562,56 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(x)=0 \iff x=\dfrac{5}{3}$.</p>
-<p>$f$ est décroissante ($a=-3<0$) :</p>
+    <div><p>On cherche les racines de chaque facteur :</p>
+$$x-1=0 \Longrightarrow x=1 \qquad\qquad 2x+8=0 \Longrightarrow x=-4$$<p>Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :</p>
 <table>
   <thead>
       <tr>
           <th>$x$</th>
           <th>$-\infty$</th>
-          <th>$\dfrac{5}{3}$</th>
+          <th></th>
+          <th>$-4$</th>
+          <th></th>
+          <th>$1$</th>
+          <th></th>
           <th>$+\infty$</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>$f(x)$</td>
+          <td>$x-1$</td>
+          <td></td>
+          <td>$-$</td>
+          <td></td>
+          <td>$-$</td>
+          <td>$0$</td>
+          <td>$+$</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>$2x+8$</td>
+          <td></td>
+          <td>$-$</td>
+          <td>$0$</td>
+          <td>$+$</td>
+          <td></td>
+          <td>$+$</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>produit</td>
+          <td></td>
           <td>$+$</td>
           <td>$0$</td>
           <td>$-$</td>
+          <td>$0$</td>
+          <td>$+$</td>
+          <td></td>
       </tr>
   </tbody>
 </table>
-</div>
+<p>L&rsquo;inégalité est large, donc les racines sont incluses :</p>
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right]\cup\left[1\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -480,7 +630,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $(6^6)^6=$
+    Déterminer la fonction affine $f$ telle que $f(1)=-1$ et $f(5)=7$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -488,7 +638,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$(6^6)^6=6^{6\times 6}={\color{#4A5D7A}6^{36}}$</div>
+    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$. On calcule d&rsquo;abord le coefficient directeur :</p>
+$$m=\dfrac{f(5)-f(1)}{5-1}=\dfrac{7-(-1)}{4}=\dfrac{8}{4}=2$$<p>On a donc $f(x)=2x+p$. Pour trouver $p$, on utilise l&rsquo;une des deux informations, par exemple $f(1)=-1$ :</p>
+$$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3$$$$f(x)={\color{#4A5D7A}2x-3}$$<p>Vérification avec l&rsquo;autre donnée : $f(5)=2\times 5-3=7$.</p>
+</div>
   </div>
   
 </article>
@@ -507,7 +660,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Convertir $102$ minutes en heure décimale.
+    <p>Une droite passe par les points $A(2\,;\,5)$ et $B(6\,;\,17)$.</p>
+<p>Déterminer son coefficient directeur.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -515,7 +670,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$102\text{ min}=60\text{ min}+42\text{ min}=1\text{ h}+\dfrac{42}{60}\text{ h}=1\text{ h}+\dfrac{7}{10}\text{ h}={\color{#4A5D7A}1{,}7\text{ h}}$</div>
+    <div><p>Le coefficient directeur d&rsquo;une droite passant par deux points se calcule par :</p>
+$$m=\dfrac{y_B-y_A}{x_B-x_A}$$<p>On remplace :</p>
+$$m=\dfrac{17-5}{6-2}=\dfrac{12}{4}={\color{#4A5D7A}3}$$</div>
   </div>
   
 </article>
@@ -534,8 +691,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Le prix d&rsquo;un article est $P$. Il connaît deux augmentations successives de $25\,\%$. Le prix après ces augmentations est :</p>
-<p>A. $\dfrac{P}{1{,}562\,5}$ $\quad$ B. $P\times 1{,}25^2$ $\quad$ C. $P\times 1{,}5$ $\quad$ D. $P\times(1{,}25+0{,}25)$</p>
+    <p>L&rsquo;ensemble des solutions dans $\mathbb{R}$ de l&rsquo;inéquation $-3(x+2)(x-4)>0$ est :</p>
+<p><strong>A.</strong> $\left]-\infty\,;\,-2\right[\cup\left]4\,;\,+\infty\right[$   <strong>B.</strong> $\varnothing$   <strong>C.</strong> $\left[-2\,;\,4\right]$   <strong>D.</strong> $\left]-2\,;\,4\right[$</p>
 
   </div>
   
@@ -544,8 +701,44 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Après deux augmentations de $25\,\%$ : $P\times 1{,}25\times 1{,}25=P\times 1{,}25^2$.</p>
-<p>La bonne réponse est <strong>B</strong>.</p>
+    <div><p>Le facteur constant $-3$ est strictement négatif. On peut diviser les deux membres par $-3$, à condition de changer le sens de l&rsquo;inégalité :</p>
+$$(x+2)(x-4)<0$$<p>Les racines sont $-2$ et $4$. Un produit de deux facteurs affines croissants est négatif <strong>entre</strong> ses racines.</p>
+$$S={\color{#4A5D7A}\left]-2\,;\,4\right[}$$<p>La réponse A est celle qu&rsquo;on obtiendrait en oubliant de changer le sens de l&rsquo;inégalité à cause du $-3$, et la réponse C oublie que l&rsquo;inégalité est stricte.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On lance deux fois de suite une pièce équilibrée.</p>
+<p>La probabilité d&rsquo;obtenir au moins une fois pile est :</p>
+<p><strong>A.</strong> $\dfrac{3}{4}$   <strong>B.</strong> $\dfrac{1}{4}$   <strong>C.</strong> $\dfrac{1}{2}$   <strong>D.</strong> $\dfrac{2}{3}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On énumère les issues possibles, en distinguant les deux lancers :</p>
+$$(P\,;\,P) \qquad (P\,;\,F) \qquad (F\,;\,P) \qquad (F\,;\,F)$$<p>Ces $4$ issues sont équiprobables. « Au moins une fois pile » en exclut une seule, $(F\,;\,F)$ : il reste $3$ cas favorables.</p>
+$$P={\color{#4A5D7A}\dfrac{3}{4}}$$<p>On peut aussi passer par l&rsquo;événement contraire : $1-\dfrac{1}{4}=\dfrac{3}{4}$.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -647,7 +840,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

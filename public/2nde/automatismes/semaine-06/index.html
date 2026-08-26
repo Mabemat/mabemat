@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 6 — MaBémat</title>
+<title>Semaine 6 - Évolutions réciproques, fréquences et équations — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Évolutions réciproques, fréquences et équations</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,8 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>L&rsquo;équation $f(x)=0$ représentée graphiquement a combien de solutions ?</p>
-<img src="/mabemat/images/automatismes/2nde/s06-q01.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+    <p>Après une hausse de $25\,\%$, un article coûte $75$ €.</p>
+<p>Quel était son prix avant la hausse ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -240,8 +244,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La droite $y=0$ (l&rsquo;axe des abscisses) coupe <strong>1 fois</strong> la courbe.</p>
-<p>L&rsquo;équation $f(x)=0$ admet donc ${\color{#4A5D7A}1}$ <strong>solution</strong>.</p>
+    <div><p>On note $P$ le prix avant la hausse. Une hausse de $25\,\%$ revient à multiplier par $1{,}25$ :</p>
+$$P\times 1{,}25=75$$<p>Pour revenir en arrière, on <strong>divise</strong> par le coefficient multiplicateur :</p>
+$$P=\dfrac{75}{1{,}25}={\color{#4A5D7A}60}$$<p>Le prix avant la hausse était donc de $60$ €.</p>
+<p>Vérification : $60\times 1{,}25=75$. Attention à ne pas baisser le prix de $25\,\%$, ce qui donnerait $56{,}25$ € et non $60$ €.</p>
 </div>
   </div>
   
@@ -261,7 +267,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère la fonction $f$ définie par $f(x)=1-2x^2$. L&rsquo;image de $-3$ par $f$ est :
+    <p>Dans un groupe de $200$ personnes, il y a $120$ femmes, dont $30$ portent des lunettes. Parmi les hommes, $50$ portent des lunettes.</p>
+<p><strong>a.</strong> Quelle est la fréquence des porteurs de lunettes dans le groupe ?</p>
+<p><strong>b.</strong> Quelle est la fréquence des porteuses de lunettes parmi les femmes ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -269,9 +278,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(-3)=1-2\times(-3)^2=1-2\times 9=1-18={\color{#4A5D7A}-17}$</p>
-<p>Mentalement : $(-3)^2=9$, puis $2\times 9=18$, puis $1-18=-17$.</p>
-</div>
+    <div><p><strong>a.</strong> Nombre total de porteurs de lunettes :</p>
+$$30+50=80$$<p>La fréquence se calcule par rapport à l&rsquo;effectif total du groupe :</p>
+$$f=\dfrac{80}{200}=0{,}4={\color{#4A5D7A}40\,\%}$$<p><strong>b.</strong> Ici, la population de référence change : ce sont les $120$ femmes.</p>
+$$f=\dfrac{30}{120}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$</div>
   </div>
   
 </article>
@@ -290,7 +300,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Soit $u$ la fonction définie par $u(x)=-3x-10$. À quelle expression est égal $u(x+3)$ ?
+    <p>Résoudre l&rsquo;équation :</p>
+$$5x-7=2x+11$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -298,8 +309,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On remplace $x$ par $x+3$ :</p>
-<p>$u(x+3)=-3(x+3)-10=-3x-9-10={\color{#4A5D7A}-3x-19}$</p>
+    <div><p>On regroupe les termes en $x$ dans un membre et les nombres dans l&rsquo;autre. On retranche $2x$ à chaque membre :</p>
+$$5x-2x-7=11 \qquad\text{soit}\qquad 3x-7=11$$<p>On ajoute $7$ à chaque membre :</p>
+$$3x=18$$<p>On divise chaque membre par $3$ :</p>
+$$x={\color{#4A5D7A}6}$$<p>Vérification : $5\times 6-7=23$ et $2\times 6+11=23$. L&rsquo;ensemble des solutions est $S=\lbrace 6\rbrace$.</p>
 </div>
   </div>
   
@@ -319,8 +332,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $n$ un entier non nul. À quelle expression est égale $(-1)^{n+5}$ ?</p>
-<p>A. $-(-1)^{n+1}$ $\quad$ B. $(-1)^{n}$ $\quad$ C. $(-1)^{n+1}$ $\quad$ D. $(-1)^{n+2}$</p>
+    <p>Un prix augmente de $10\,\%$, puis augmente de $20\,\%$.</p>
+<p>Déterminer le taux d&rsquo;évolution global, en pourcentage.</p>
 
   </div>
   
@@ -329,8 +342,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$(-1)^{n+5}=(-1)^{4}\times(-1)^{n+1}=1\times(-1)^{n+1}=(-1)^{n+1}$</p>
-<p>La bonne réponse est <strong>C</strong>.</p>
+    <div><p>On multiplie les coefficients multiplicateurs :</p>
+$$1{,}10\times 1{,}20=1{,}32$$<p>Comme $1{,}32=1+0{,}32$, le prix a augmenté de ${\color{#4A5D7A}32\,\%}$ au total, et non de $30\,\%$.</p>
 </div>
   </div>
   
@@ -350,8 +363,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère le nombre $N=\dfrac{15^7}{5^4}$. Une seule égalité est juste, laquelle ?</p>
-<p>A. $N=3^{3}$ $\quad$ B. $N=81\times 15^{3}$ $\quad$ C. $N=15^{3}$ $\quad$ D. $N=625\times 15^{3}$</p>
+    <p>Le taux d&rsquo;évolution associé à un coefficient multiplicateur de $0{,}25$ est :</p>
+<p><strong>A.</strong> $-0{,}25\,\%$   <strong>B.</strong> $-25\,\%$   <strong>C.</strong> $-75\,\%$   <strong>D.</strong> $-2{,}5\,\%$</p>
 
   </div>
   
@@ -360,8 +373,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$N=\dfrac{15^7}{5^4}=\dfrac{5^7\times 3^7}{5^4}=3^7\times 5^{3}=3^4\times 3^3\times 5^3=3^4\times(3\times 5)^3=81\times 15^3$</p>
-<p>La bonne réponse est <strong>B</strong>.</p>
+    <div><p>Le coefficient multiplicateur et le taux sont liés par la relation :</p>
+$$\text{CM}=1+\dfrac{t}{100}$$<p>Ici $\text{CM}=0{,}25$, donc :</p>
+$$0{,}25=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=0{,}25-1=-0{,}75$$$$t={\color{#4A5D7A}-75}$$<p>Le coefficient étant inférieur à $1$, il s&rsquo;agit bien d&rsquo;une baisse. Multiplier par $0{,}25$, c&rsquo;est diviser par $4$ : on ne garde qu&rsquo;un quart de la valeur, on en perd donc les trois quarts.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -381,7 +396,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère $A=\dfrac{1}{1-\dfrac{3}{5}}$. Calculer $A$.
+    <p>$20\,\%$ de $N$ est égal à $14$. On a :</p>
+<p><strong>A.</strong> $N=70$   <strong>B.</strong> $N=2{,}8$   <strong>C.</strong> $N=280$   <strong>D.</strong> $N=0{,}7$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -389,7 +406,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$A=\dfrac{1}{1-\dfrac{3}{5}}=\dfrac{1}{\dfrac{5}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfrac{2}{5}}=1\times\dfrac{5}{2}={\color{#4A5D7A}\dfrac{5}{2}}$</div>
+    <div><p>On traduit l&rsquo;énoncé par une égalité :</p>
+$$\dfrac{20}{100}\times N=14 \qquad\text{soit}\qquad 0{,}2\times N=14$$<p>On divise chaque membre par $0{,}2$ :</p>
+$$N=\dfrac{14}{0{,}2}=\dfrac{140}{2}={\color{#4A5D7A}70}$$<p>Vérification : $20\,\%$ de $70$ vaut $\dfrac{20\times 70}{100}=14$.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -418,8 +439,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>L&rsquo;équation $f(x)=-1$ représentée graphiquement a combien de solutions ?</p>
-<img src="/mabemat/images/automatismes/2nde/s06d-q01.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+    <p>Après une baisse de $20\,\%$, un article coûte $96$ €.</p>
+<p>Quel était son prix avant la baisse ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -427,8 +449,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La droite $y=-1$ coupe <strong>3 fois</strong> la courbe.</p>
-<p>L&rsquo;équation $f(x)=-1$ admet donc ${\color{#4A5D7A}3}$ <strong>solutions</strong>.</p>
+    <div><p>On note $P$ le prix avant la baisse. Une baisse de $20\,\%$ revient à multiplier par $0{,}80$ :</p>
+$$P\times 0{,}80=96$$<p>Pour revenir en arrière, on <strong>divise</strong> par le coefficient multiplicateur :</p>
+$$P=\dfrac{96}{0{,}80}={\color{#4A5D7A}120}$$<p>Le prix avant la baisse était donc de $120$ €.</p>
+<p>Vérification : $120\times 0{,}80=96$. Attention à ne pas augmenter le prix de $20\,\%$, ce qui donnerait $115{,}20$ € et non $120$ €.</p>
 </div>
   </div>
   
@@ -448,7 +472,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère la fonction $f$ définie par $f(x)=(-2x+2)^2$. L&rsquo;image de $-3$ par $f$ est :
+    <p>Dans un groupe de $250$ personnes, il y a $150$ femmes, dont $45$ portent des lunettes. Parmi les hommes, $40$ portent des lunettes.</p>
+<p><strong>a.</strong> Quelle est la fréquence des porteurs de lunettes dans le groupe ?</p>
+<p><strong>b.</strong> Quelle est la fréquence des porteuses de lunettes parmi les femmes ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -456,9 +483,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(-3)=(-2\times(-3)+2)^2=(6+2)^2=8^2={\color{#4A5D7A}64}$</p>
-<p>Mentalement : calculer d&rsquo;abord l&rsquo;intérieur de la parenthèse, puis élever au carré.</p>
-</div>
+    <div><p><strong>a.</strong> Nombre total de porteurs de lunettes :</p>
+$$45+40=85$$<p>La fréquence se calcule par rapport à l&rsquo;effectif total du groupe :</p>
+$$f=\dfrac{85}{250}=0{,}34={\color{#4A5D7A}34\,\%}$$<p><strong>b.</strong> Ici, la population de référence change : ce sont les $150$ femmes.</p>
+$$f=\dfrac{45}{150}=\dfrac{3}{10}=0{,}3={\color{#4A5D7A}30\,\%}$$</div>
   </div>
   
 </article>
@@ -477,7 +505,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Soit $t$ la fonction définie par $t(x)=-3x-6$. À quelle expression est égal $t(x+1)$ ?
+    <p>Résoudre l&rsquo;équation :</p>
+$$7x+4=3x-12$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -485,7 +514,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$t(x+1)=-3(x+1)-6=-3x-3-6={\color{#4A5D7A}-3x-9}$</div>
+    <div><p>On regroupe les termes en $x$ dans un membre et les nombres dans l&rsquo;autre. On retranche $3x$ à chaque membre :</p>
+$$7x-3x+4=-12 \qquad\text{soit}\qquad 4x+4=-12$$<p>On retranche $4$ à chaque membre :</p>
+$$4x=-16$$<p>On divise chaque membre par $4$ :</p>
+$$x={\color{#4A5D7A}-4}$$<p>Vérification : $7\times(-4)+4=-24$ et $3\times(-4)-12=-24$. L&rsquo;ensemble des solutions est $S=\lbrace -4\rbrace$.</p>
+</div>
   </div>
   
 </article>
@@ -504,8 +537,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $n$ un entier non nul. À quelle expression est égale $(-1)^{n+6}$ ?</p>
-<p>A. $-(-1)^{n}$ $\quad$ B. $(-1)^{n}$ $\quad$ C. $(-1)^{n+1}$ $\quad$ D. $(-1)^{n-1}$</p>
+    <p>Un prix diminue de $10\,\%$, puis augmente de $50\,\%$.</p>
+<p>Déterminer le taux d&rsquo;évolution global, en pourcentage.</p>
 
   </div>
   
@@ -514,8 +547,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$(-1)^{n+6}=(-1)^{6}\times(-1)^{n}=1\times(-1)^{n}=(-1)^{n}$</p>
-<p>La bonne réponse est <strong>B</strong>.</p>
+    <div><p>On multiplie les coefficients multiplicateurs :</p>
+$$0{,}90\times 1{,}50=1{,}35$$<p>Comme $1{,}35=1+0{,}35$, le prix a augmenté de ${\color{#4A5D7A}35\,\%}$ au total, et non de $40\,\%$.</p>
 </div>
   </div>
   
@@ -535,8 +568,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère le nombre $N=\dfrac{15^5}{5^2}$. Une seule égalité est juste, laquelle ?</p>
-<p>A. $N=25\times 15^{3}$ $\quad$ B. $N=15^{3}$ $\quad$ C. $N=3^{3}$ $\quad$ D. $N=9\times 15^{3}$</p>
+    <p>Le taux d&rsquo;évolution associé à un coefficient multiplicateur de $1{,}08$ est :</p>
+<p><strong>A.</strong> $+0{,}8\,\%$   <strong>B.</strong> $+8\,\%$   <strong>C.</strong> $+1{,}08\,\%$   <strong>D.</strong> $+108\,\%$</p>
 
   </div>
   
@@ -545,8 +578,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$N=\dfrac{15^5}{5^2}=\dfrac{5^5\times 3^5}{5^2}=3^5\times 5^{3}=3^2\times 3^3\times 5^3=9\times 15^3$</p>
-<p>La bonne réponse est <strong>D</strong>.</p>
+    <div><p>Le coefficient multiplicateur et le taux sont liés par la relation :</p>
+$$\text{CM}=1+\dfrac{t}{100}$$<p>Ici $\text{CM}=1{,}08$, donc :</p>
+$$1{,}08=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=1{,}08-1=0{,}08$$$$t={\color{#4A5D7A}+8}$$<p>Le coefficient étant supérieur à $1$, il s&rsquo;agit bien d&rsquo;une hausse. La réponse D confond le coefficient exprimé en pourcentage avec le taux d&rsquo;évolution.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -566,7 +601,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère $A=\dfrac{1}{5-\dfrac{3}{5}}$. Calculer $A$.
+    <p>$25\,\%$ de $N$ est égal à $18$. On a :</p>
+<p><strong>A.</strong> $N=4{,}5$   <strong>B.</strong> $N=450$   <strong>C.</strong> $N=0{,}72$   <strong>D.</strong> $N=72$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -574,7 +611,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$A=\dfrac{1}{5-\dfrac{3}{5}}=\dfrac{1}{\dfrac{25}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfrac{22}{5}}=\dfrac{5}{22}$</div>
+    <div><p>On traduit l&rsquo;énoncé par une égalité :</p>
+$$\dfrac{25}{100}\times N=18 \qquad\text{soit}\qquad 0{,}25\times N=18$$<p>Prendre $25\,\%$, c&rsquo;est prendre le quart : on retrouve $N$ en multipliant par $4$.</p>
+$$N=\dfrac{18}{0{,}25}=18\times 4={\color{#4A5D7A}72}$$<p>Vérification : $25\,\%$ de $72$ vaut $\dfrac{72}{4}=18$.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -675,7 +716,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

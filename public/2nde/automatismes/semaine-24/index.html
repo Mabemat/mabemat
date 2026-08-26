@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 24 — MaBémat</title>
+<title>Semaine 24 - Probabilités : univers et événements — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Probabilités : univers et événements</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,8 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <img src="/mabemat/images/automatismes/2nde/s24-q01.svg" alt="Courbes f et g" style="width:60%;max-height:400px;max-width:100%;">
-<p>Solutions de $f(x) = g(x)$ : $\ldots$</p>
+    <p>On lance un dé équilibré à six faces et on note le numéro obtenu.</p>
+<p>Décrire l&rsquo;univers $\Omega$, puis l&rsquo;événement $A$ « obtenir un nombre pair » et son événement contraire $\overline{A}$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -240,8 +244,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les solutions sont les abscisses des points d&rsquo;intersection entre les deux courbes :</p>
-$${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
+    <div><p>L&rsquo;univers est l&rsquo;ensemble de toutes les issues possibles :</p>
+$$\Omega={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,5\,;\,6\rbrace}$$<p>Un événement est un sous-ensemble de l&rsquo;univers. Les nombres pairs de $\Omega$ sont :</p>
+$$A={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,6\rbrace}$$<p>L&rsquo;événement contraire rassemble toutes les issues de $\Omega$ qui ne sont pas dans $A$ :</p>
+$$\overline{A}={\color{#4A5D7A}\lbrace 1\,;\,3\,;\,5\rbrace}$$<p>On vérifie que $A$ et $\overline{A}$ n&rsquo;ont aucune issue en commun et qu&rsquo;ensemble ils reconstituent $\Omega$.</p>
+</div>
   </div>
   
 </article>
@@ -260,7 +267,9 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Vrai ou faux ? $\dfrac{3}{5} + \dfrac{1}{10} = \dfrac{7}{10}$
+    <p>Avec le même dé, on considère $A$ « obtenir un multiple de $3$ » et $B$ « obtenir un nombre supérieur ou égal à $4$ ».</p>
+<p>Déterminer $A\cap B$ et $A\cup B$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -268,7 +277,10 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{3}{5} + \dfrac{1}{10} = \dfrac{6}{10} + \dfrac{1}{10} = \dfrac{7}{10} \quad \checkmark$$$${\color{#4A5D7A}\text{Vrai}}$$</div>
+    <div><p>On écrit d&rsquo;abord chaque événement en extension :</p>
+$$A=\lbrace 3\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 4\,;\,5\,;\,6\rbrace$$<p>L&rsquo;intersection rassemble les issues appartenant aux <strong>deux</strong> événements à la fois :</p>
+$$A\cap B={\color{#4A5D7A}\lbrace 6\rbrace}$$<p>La réunion rassemble les issues appartenant à <strong>au moins un</strong> des deux, sans compter deux fois celles qui sont communes :</p>
+$$A\cup B={\color{#4A5D7A}\lbrace 3\,;\,4\,;\,5\,;\,6\rbrace}$$</div>
   </div>
   
 </article>
@@ -287,7 +299,9 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Coefficient directeur de la droite $(KL)$ avec $K(10\,;\,1)$ et $L(-1\,;\,2)$.
+    <p>Dans une classe de $30$ élèves, $18$ étudient l&rsquo;anglais, $14$ l&rsquo;espagnol, et $6$ étudient les deux langues.</p>
+<p>Combien d&rsquo;élèves étudient au moins une des deux langues ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -295,7 +309,10 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$m = \dfrac{y_L - y_K}{x_L - x_K} = \dfrac{2 - 1}{-1 - 10} = {\color{#4A5D7A}-\dfrac{1}{11}}$$</div>
+    <div><p>Si on additionne simplement $18$ et $14$, les élèves qui étudient les deux langues sont comptés deux fois. Il faut donc les retrancher une fois :</p>
+$$18+14-6={\color{#4A5D7A}26}\ \text{élèves.}$$<p>C&rsquo;est la formule de la réunion :</p>
+$$\text{card}(A\cup B)=\text{card}(A)+\text{card}(B)-\text{card}(A\cap B)$$<p>Il y a donc $30-26=4$ élèves qui n&rsquo;étudient aucune des deux langues.</p>
+</div>
   </div>
   
 </article>
@@ -314,7 +331,7 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Multiplier par $1{,}28$ revient à augmenter de $\ldots\,\%$.
+    Décomposer $150$ en produit de facteurs premiers.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -322,7 +339,9 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$1{,}28 = 1 + 0{,}28$, donc cela revient à augmenter de ${\color{#4A5D7A}28\,\%}$.</div>
+    <div><p>On divise successivement par les nombres premiers :</p>
+$$150=2\times 75 \qquad 75=3\times 25 \qquad 25=5\times 5$$<p>D&rsquo;où :</p>
+$$150={\color{#4A5D7A}2\times 3\times 5^2}$$</div>
   </div>
   
 </article>
@@ -341,7 +360,10 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Une hausse de $100\,\%$ suivie d&rsquo;une hausse de $60\,\%$ correspondent à une hausse globale de $\ldots\,\%$.
+    <p>Parmi les $1\,500$ logements que compte une ville, $20\,\%$ sont des maisons, et $60\,\%$ de celles-ci sont des T2.</p>
+<p>Le nombre de maisons T2 est :</p>
+<p><strong>A.</strong> $300$   <strong>B.</strong> $180$   <strong>C.</strong> $120$   <strong>D.</strong> $900$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -349,9 +371,11 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$CM_1 = 2$ (hausse de $100\,\%$), $CM_2 = 1{,}6$.</p>
-<p>$CM = 2 \times 1{,}6 = 3{,}2$</p>
-<p>Taux global : $3{,}2 - 1 = 2{,}2 = {\color{#4A5D7A}220\,\%}$</p>
+    <div><p>On procède en deux étapes. Nombre de maisons :</p>
+$$0{,}20\times 1\,500=300$$<p>Attention : les $60\,\%$ portent sur les <strong>maisons</strong>, pas sur l&rsquo;ensemble des logements. On applique donc ce pourcentage à $300$ :</p>
+$$0{,}60\times 300={\color{#4A5D7A}180}$$<p>On peut aussi enchaîner les deux coefficients : $1\,500\times 0{,}20\times 0{,}60=180$.</p>
+<p>La réponse A s&rsquo;arrête à la première étape.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -371,35 +395,9 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $f(x) = x^2 + 5x + 1$. Calculer $f(-5)$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div>$$f(-5) = (-5)^2 + 5 \times (-5) + 1 = 25 - 25 + 1 = {\color{#4A5D7A}1}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">07</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    <p>Sylvie a eu deux notes ($12$ et $10$) coefficient $1$ et une note de $9$ coefficient $2$.</p>
-<p>Quelle est sa moyenne ?</p>
+    <p>Lors d&rsquo;une élection, $\dfrac{1}{4}$ des électeurs ont voté pour A, $30\,\%$ pour B, $\dfrac{1}{5}$ pour C, et le reste pour D.</p>
+<p>La proportion d&rsquo;électeurs ayant voté pour D est :</p>
+<p><strong>A.</strong> $15\,\%$   <strong>B.</strong> $20\,\%$   <strong>C.</strong> $30\,\%$   <strong>D.</strong> $25\,\%$</p>
 
   </div>
   
@@ -408,233 +406,11 @@ $${\color{#4A5D7A}S = \{-1\,;\,2\}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$m = \dfrac{12 \times 1 + 10 \times 1 + 9 \times 2}{1 + 1 + 2} = \dfrac{12 + 10 + 18}{4} = \dfrac{40}{4} = {\color{#4A5D7A}10}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">08</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Un événement $A$ a pour probabilité $P(A) = \dfrac{3}{10}$. Alors $P(\bar{A}) = \ldots$
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div>$$P(\bar{A}) = 1 - P(A) = 1 - \dfrac{3}{10} = {\color{#4A5D7A}\dfrac{7}{10}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">09</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    <p>Compléter : $\overrightarrow{AB} = \overrightarrow{B\ldots}$</p>
-<img src="/mabemat/images/automatismes/2nde/s24-q09.svg" alt="Grille de vecteurs" style="width:60%;max-height:400px;max-width:100%;">
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le vecteur d&rsquo;origine $B$ égal à $\overrightarrow{AB}$ est $\overrightarrow{BG}$.</p>
-$${\color{#4A5D7A}\overrightarrow{AB} = \overrightarrow{BG}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">10</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    $10$ stylos identiques coûtent $15$€. Quel est le prix de $15$ stylos ?
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>$10$ stylos → $15$€, donc $5$ stylos → $7{,}50$€.</p>
-<p>$15$ stylos $= 10 + 5$ stylos → $15 + 7{,}50 = {\color{#4A5D7A}22{,}50\text{€}}$</p>
+    <div><p>On convertit tout en écriture décimale pour pouvoir additionner :</p>
+$$\dfrac{1}{4}=0{,}25 \qquad 30\,\%=0{,}30 \qquad \dfrac{1}{5}=0{,}20$$<p>La somme des quatre proportions vaut $1$, puisque chaque électeur a voté pour exactement un candidat :</p>
+$$0{,}25+0{,}30+0{,}20=0{,}75$$<p>D&rsquo;où :</p>
+$$1-0{,}75=0{,}25={\color{#4A5D7A}25\,\%}$$<p><span class="rep">Réponse : D</span></p>
 </div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">11</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    <p>Coefficient directeur de la droite $(AB)$ avec $A(0\,;\,-3)$ et $B(3\,;\,-1)$ :</p>
-<img src="/mabemat/images/automatismes/2nde/s24-q10.svg" alt="Droite AB" style="width:60%;max-height:400px;max-width:100%;">
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div>$$m = \dfrac{y_B - y_A}{x_B - x_A} = \dfrac{-1 - (-3)}{3 - 0} = \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{2}{3}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">12</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Antécédent de $8$ par $w : x \mapsto 2x - 2$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>On résout $2x - 2 = 8$ :</p>
-$$2x = 10 \implies x = {\color{#4A5D7A}5}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">13</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Résoudre dans $\mathbb{R}$ : $x^2 = -11$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>On reconnaît $x^2 = k$ avec $k = -11 < 0$. Une équation $x^2 = k$ n&rsquo;a pas de solution réelle si $k < 0$.</p>
-$${\color{#4A5D7A}S = \emptyset}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">14</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Développer $(5 - 3x)^2$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>On applique $(a-b)^2 = a^2 - 2ab + b^2$ avec $a = 5$ et $b = 3x$ :</p>
-$$(5-3x)^2 = 25 - 30x + 9x^2 = {\color{#4A5D7A}9x^2 - 30x + 25}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">15</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    <p>Longueur du segment ci-dessous ($1$ u.l. $= 1$ carreau) :</p>
-<img src="/mabemat/images/automatismes/2nde/s24-q12.svg" alt="Segment sur grille" style="width:60%;max-height:400px;max-width:100%;">
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>On applique la formule de la distance entre $(1,4)$ et $(5,1)$ :</p>
-$$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 \text{ u.l.}}$$</div>
   </div>
   
 </article>
@@ -663,7 +439,9 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Solution de l&rsquo;équation $-4x + 25 = -7$.
+    <p>On lance un dé équilibré à six faces et on note le numéro obtenu.</p>
+<p>Décrire l&rsquo;univers $\Omega$, puis l&rsquo;événement $A$ « obtenir un nombre impair » et son événement contraire $\overline{A}$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -671,7 +449,11 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$-4x = -7 - 25 = -32 \implies x = \dfrac{-32}{-4} = {\color{#4A5D7A}8}$$</div>
+    <div><p>L&rsquo;univers est l&rsquo;ensemble de toutes les issues possibles :</p>
+$$\Omega={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,5\,;\,6\rbrace}$$<p>Un événement est un sous-ensemble de l&rsquo;univers. Les nombres impairs de $\Omega$ sont :</p>
+$$A={\color{#4A5D7A}\lbrace 1\,;\,3\,;\,5\rbrace}$$<p>L&rsquo;événement contraire rassemble toutes les issues de $\Omega$ qui ne sont pas dans $A$ :</p>
+$$\overline{A}={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,6\rbrace}$$<p>On vérifie que $A$ et $\overline{A}$ n&rsquo;ont aucune issue en commun et qu&rsquo;ensemble ils reconstituent $\Omega$.</p>
+</div>
   </div>
   
 </article>
@@ -690,7 +472,9 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Rendre irréductible la fraction $\dfrac{25}{35}$.
+    <p>Avec le même dé, on considère $A$ « obtenir un multiple de $2$ » et $B$ « obtenir un nombre inférieur ou égal à $3$ ».</p>
+<p>Déterminer $A\cap B$ et $A\cup B$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -698,7 +482,10 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{25}{35} = \dfrac{5 \times 5}{7 \times 5} = {\color{#4A5D7A}\dfrac{5}{7}}$$</div>
+    <div><p>On écrit d&rsquo;abord chaque événement en extension :</p>
+$$A=\lbrace 2\,;\,4\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 1\,;\,2\,;\,3\rbrace$$<p>L&rsquo;intersection rassemble les issues appartenant aux <strong>deux</strong> événements à la fois :</p>
+$$A\cap B={\color{#4A5D7A}\lbrace 2\rbrace}$$<p>La réunion rassemble les issues appartenant à <strong>au moins un</strong> des deux, sans compter deux fois celles qui sont communes :</p>
+$$A\cup B={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,6\rbrace}$$</div>
   </div>
   
 </article>
@@ -717,7 +504,9 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écriture scientifique de $0{,}002\,53$.
+    <p>Dans une classe de $32$ élèves, $20$ étudient l&rsquo;anglais, $15$ l&rsquo;allemand, et $7$ étudient les deux langues.</p>
+<p>Combien d&rsquo;élèves étudient au moins une des deux langues ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -725,7 +514,10 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$${\color{#4A5D7A}0{,}002\,53 = 2{,}53 \times 10^{-3}}$$</div>
+    <div><p>Si on additionne simplement $20$ et $15$, les élèves qui étudient les deux langues sont comptés deux fois. Il faut donc les retrancher une fois :</p>
+$$20+15-7={\color{#4A5D7A}28}\ \text{élèves.}$$<p>C&rsquo;est la formule de la réunion :</p>
+$$\text{card}(A\cup B)=\text{card}(A)+\text{card}(B)-\text{card}(A\cap B)$$<p>Il y a donc $32-28=4$ élèves qui n&rsquo;étudient aucune des deux langues.</p>
+</div>
   </div>
   
 </article>
@@ -744,7 +536,7 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire sous la forme d&rsquo;une puissance de $2$ : $2^4 \times 2^2$.
+    Décomposer $198$ en produit de facteurs premiers.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -752,7 +544,9 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$2^4 \times 2^2 = 2^{4+2} = {\color{#4A5D7A}2^6}$$</div>
+    <div><p>On divise successivement par les nombres premiers :</p>
+$$198=2\times 99 \qquad 99=3\times 33 \qquad 33=3\times 11$$<p>D&rsquo;où :</p>
+$$198={\color{#4A5D7A}2\times 3^2\times 11}$$</div>
   </div>
   
 </article>
@@ -771,7 +565,10 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Valeur de $3 + 4x$ pour $x = -3$.
+    <p>Parmi les $2\,500$ logements que compte une ville, $40\,\%$ sont des maisons, et $25\,\%$ de celles-ci sont des T2.</p>
+<p>Le nombre de maisons T2 est :</p>
+<p><strong>A.</strong> $250$   <strong>B.</strong> $1\,000$   <strong>C.</strong> $625$   <strong>D.</strong> $100$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -779,7 +576,12 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$3 + 4 \times (-3) = 3 - 12 = {\color{#4A5D7A}-9}$$</div>
+    <div><p>On procède en deux étapes. Nombre de maisons :</p>
+$$0{,}40\times 2\,500=1\,000$$<p>Attention : les $25\,\%$ portent sur les <strong>maisons</strong>, pas sur l&rsquo;ensemble des logements. On applique donc ce pourcentage à $1\,000$ :</p>
+$$0{,}25\times 1\,000={\color{#4A5D7A}250}$$<p>On peut aussi enchaîner les deux coefficients : $2\,500\times 0{,}40\times 0{,}25=250$.</p>
+<p>La réponse B s&rsquo;arrête à la première étape.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -798,8 +600,10 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Quelle est la longueur de la ligne brisée en u.l. ?</p>
-<img src="/mabemat/images/automatismes/2nde/s24d-q06.svg" alt="Ligne brisée sur grille" style="width:60%;max-height:400px;max-width:100%;">
+    <p>Lors d&rsquo;une élection, $\dfrac{1}{5}$ des électeurs ont voté pour A, $35\,\%$ pour B, $\dfrac{1}{4}$ pour C, et le reste pour D.</p>
+<p>La proportion d&rsquo;électeurs ayant voté pour D est :</p>
+<p><strong>A.</strong> $25\,\%$   <strong>B.</strong> $15\,\%$   <strong>C.</strong> $20\,\%$   <strong>D.</strong> $30\,\%$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -807,258 +611,11 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La ligne brisée mesure $1 + 2 + 3 + 1 = 7$ carreaux, soit $\dfrac{7}{4}$ u.l.</p>
-$${\color{#4A5D7A}\dfrac{7}{4} \text{ u.l.}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">07</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    On lance un dé cubique équilibré. La probabilité d&rsquo;obtenir un multiple de $5$ est $\ldots$
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le seul multiple de $5$ dans $\{1,2,3,4,5,6\}$ est $5$, donc :</p>
-$${\color{#4A5D7A}P = \dfrac{1}{6}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">08</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Coefficient directeur de la droite d&rsquo;équation $y = -3x + 1$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div>La droite est de la forme $y = mx + p$, donc $m = {\color{#4A5D7A}-3}$.</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">09</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Coordonnées du milieu $M$ de $[AB]$ avec $A(4\,;\,4)$ et $B(6\,;\,8)$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div>$$x_M = \dfrac{4+6}{2} = 5 \qquad y_M = \dfrac{4+8}{2} = 6$$$${\color{#4A5D7A}M(5\,;\,6)}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">10</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Développer $(x+4)^2$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div>$$(x+4)^2 = x^2 + 2 \times 4 \times x + 16 = {\color{#4A5D7A}x^2 + 8x + 16}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">11</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Factoriser $x^2 - 16$.
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = x$ et $b = 4$ :</p>
-$${\color{#4A5D7A}x^2 - 16 = (x-4)(x+4)}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">12</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Dans une classe de $23$ élèves, $10$ viennent à vélo. La proportion d&rsquo;élèves qui ne viennent <strong>pas</strong> à vélo est $\ldots$
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>$23 - 10 = 13$ élèves ne viennent pas à vélo.</p>
-$${\color{#4A5D7A}\dfrac{13}{23}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">13</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    <img src="/mabemat/images/automatismes/2nde/s24d-q13.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
-<p>Combien l&rsquo;équation $f(x) = 4$ a-t-elle de solutions ?</p>
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>La droite horizontale $y = 4$ ne coupe pas la courbe de $f$ (le maximum visible est $3$).</p>
-$${\color{#4A5D7A}0 \text{ solution}}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">14</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Quelle est l&rsquo;image de $3$ par $f$ ? <em>(graphique ci-dessus)</em>
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>On lit graphiquement : pour $x = 3$, la courbe de $f$ a pour ordonnée :</p>
-$${\color{#4A5D7A}f(3) = 1}$$</div>
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-<article class="auto1re-card">
-  <div class="auto1re-head">
-    <div class="auto1re-num">15</div>
-    <div class="auto1re-label">Question</div>
-  </div>
-  <div class="auto1re-enonce">
-    Sur quel intervalle $f$ est-elle positive ou nulle ? <em>(graphique ci-dessus)</em>
-  </div>
-  
-  <button class="auto1re-toggle" type="button" aria-expanded="false">
-    <span class="arrow">▸</span><span class="t">Voir la correction</span>
-  </button>
-  <div class="auto1re-corr">
-    <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f$ est positive ou nulle lorsque la courbe se situe au-dessus (ou sur) l&rsquo;axe des abscisses.</p>
-$${\color{#4A5D7A}[0\,;\,3]}$$</div>
+    <div><p>On convertit tout en écriture décimale pour pouvoir additionner :</p>
+$$\dfrac{1}{5}=0{,}20 \qquad 35\,\%=0{,}35 \qquad \dfrac{1}{4}=0{,}25$$<p>La somme des quatre proportions vaut $1$, puisque chaque électeur a voté pour exactement un candidat :</p>
+$$0{,}20+0{,}35+0{,}25=0{,}80$$<p>D&rsquo;où :</p>
+$$1-0{,}80=0{,}20={\color{#4A5D7A}20\,\%}$$<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -1159,7 +716,7 @@ $${\color{#4A5D7A}[0\,;\,3]}$$</div>
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

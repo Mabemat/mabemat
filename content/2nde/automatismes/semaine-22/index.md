@@ -1,86 +1,108 @@
 ---
-title: "Semaine 22"
+title: "Semaine 22 - Valeur absolue, multiples et diviseurs"
+layout: "automatismes-2nde"
 auto_number: 22
 weight: 22
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Soit $f$ la fonction définie sur $\mathbb{R}$ par : $f(x) = -3x^2 + 2x - 9$.
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-On note $\mathscr{C}_f$ la courbe représentative de $f$ dans un repère.
-
-Le point $A(5\,;\,-75)$ appartient-il à $\mathscr{C}_f$ ? Justifier.
+$$\left|x+4\right|\leqslant 3$$
 ---CORR---
-On calcule $f(5)$ :
+$\left|x+4\right|$ se lit comme la distance entre $x$ et $-4$, puisque $x+4=x-(-4)$.
 
-$$f(5) = -3 \times 5^2 + 2 \times 5 - 9 = -75 + 10 - 9 = -74 \neq -75$$
+On cherche donc les réels situés à une distance d'au plus $3$ du nombre $-4$ : ce sont ceux qui se trouvent entre $-4-3$ et $-4+3$.
 
-L'image de $5$ par $f$ n'est pas $-75$, donc **le point $A$ n'appartient pas à $\mathscr{C}_f$**.
+On peut aussi encadrer directement :
+
+$$-3\leqslant x+4\leqslant 3$$
+
+On retranche $4$ aux trois membres :
+
+$$-7\leqslant x\leqslant -1$$
+
+$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$
+
+L'inégalité étant large, les deux bornes sont incluses.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On donne ci-dessous le tableau de variations d'une fonction $f$ *(voir le livret)* :
-
-| $x$ | $-3$ | | $-1$ | | $3$ | | $8$ |
-|---|---|---|---|---|---|---|---|
-| $f(x)$ | $4$ | $\nearrow$ | $10$ | $\searrow$ | $-15$ | $\nearrow$ | $-14$ |
-
-Comparer si possible : $f(-2)$ et $f(7)$.
+Donner la liste de tous les diviseurs positifs de $36$.
 ---CORR---
-$-2 \in [-3\,;\,-1]$ donc $4 < f(-2) < 10$.
+On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :
 
-$7 \in [3\,;\,8]$ donc $-15 < f(7) < -14$.
+$$1\times 36 \qquad 2\times 18 \qquad 3\times 12 \qquad 4\times 9 \qquad 6\times 6$$
 
-$f(-2)$ est compris entre $4$ et $10$, $f(7)$ est compris entre $-15$ et $-14$, donc :
+On s'arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l'autre sens.
 
-$${\color{#4A5D7A}f(-2) > f(7)}$$
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$
+
+Il y en a $9$. Un nombre a un nombre impair de diviseurs exactement quand c'est un carré parfait, ce qui est bien le cas ici.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans un repère orthonormé $(O\,;\,I,J)$, on donne les points $T(10\,;\,1)$ et $U(-4\,;\,-3)$.
-
-Calculer la distance $TU$.
+Démontrer que la somme de deux multiples de $7$ est un multiple de $7$.
 ---CORR---
-On applique la formule de la distance :
+On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $7$ : il existe deux entiers $k$ et $k'$ tels que
 
-$$TU = \sqrt{(x_U - x_T)^2 + (y_U - y_T)^2} = \sqrt{(-4-10)^2 + (-3-1)^2}$$
+$$a=7k \qquad\text{et}\qquad b=7k'$$
 
-$$TU = \sqrt{196 + 16} = \sqrt{212} = {\color{#4A5D7A}2\sqrt{53}}$$
+On calcule la somme et on factorise par $7$ :
+
+$$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$
+
+Comme $k+k'$ est un entier, $a+b$ s'écrit bien sous la forme $7\times\text{entier}$ : c'est un multiple de $7$.
+
+La factorisation est le cœur de la démonstration : c'est elle qui fait apparaître le $7$ en facteur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Dans un repère $(O\,;\,\vec{i},\vec{j})$, on considère les points $J(2\,;\,-10)$, $K(10\,;\,3)$ et $L(-2\,;\,0)$.
+Calculer :
 
-Déterminer les coordonnées du point $M$ tel que $JKLM$ soit un parallélogramme.
+$$\left|2-9\right|+\left|-5\right|$$
 ---CORR---
-$JKLM$ est un parallélogramme si et seulement si $\overrightarrow{JK} = \overrightarrow{ML}$.
+On traite chaque valeur absolue séparément, en calculant d'abord l'intérieur :
 
-$\overrightarrow{JK} = \binom{10-2}{3-(-10)} = \binom{8}{13}$
+$$\left|2-9\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-5\right|=5$$
 
-En notant $M(x\,;\,y)$ : $\overrightarrow{ML} = \binom{-2-x}{0-y}$
+On additionne :
 
-$$\begin{cases}-2-x = 8 \\ -y = 13\end{cases} \implies \begin{cases}x = -10 \\ y = -13\end{cases}$$
-
-$${\color{#4A5D7A}M(-10\,;\,-13)}$$
+$$7+5={\color{#4A5D7A}12}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Le prix d'un article subit une baisse de $60\,\%$ puis une hausse de $63\,\%$.
+Le prix d'un article passe de $80$ € à $60$ €.
 
-Déterminer le taux d'évolution global du prix de cet article.
+Le taux d'évolution de ce prix est :
+
+**A.** $-20\,\%$ &emsp; **B.** $+25\,\%$ &emsp; **C.** $-33\,\%$ &emsp; **D.** $-25\,\%$
 ---CORR---
-Baisser de $60\,\%$ : $CM_1 = 1 - 0{,}60 = 0{,}4$
+Le taux d'évolution se calcule toujours par rapport à la valeur de **départ** :
 
-Augmenter de $63\,\%$ : $CM_2 = 1 + 0{,}63 = 1{,}63$
+$$t=\dfrac{60-80}{80}=\dfrac{-20}{80}=-0{,}25$$
 
-Coefficient multiplicateur global : $CM = 0{,}4 \times 1{,}63 = 0{,}652$
+Il s'agit donc d'une baisse de ${\color{#4A5D7A}25\,\%}$.
 
-Taux global : $T = 0{,}652 - 1 = -0{,}348$
+La réponse A confond le taux avec la baisse en euros, et la réponse C divise par $60$, c'est-à-dire par la valeur d'arrivée au lieu de la valeur de départ.
 
-$${\color{#4A5D7A}\text{Baisse globale de } 34{,}8\,\%}$$
+<span class="rep">Réponse : D</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+La solution de l'équation $\dfrac{x}{8}=112$ est :
+
+**A.** $x=14$ &emsp; **B.** $x=-896$ &emsp; **C.** $x=896$ &emsp; **D.** $x=\dfrac{8}{112}$
+---CORR---
+$x$ est divisé par $8$ : pour l'isoler, on multiplie chaque membre par $8$.
+
+$$x=112\times 8={\color{#4A5D7A}896}$$
+
+La réponse A divise au lieu de multiplier. Un réflexe de contrôle : $x$ vaut le huitième de quelque chose valant $112$, il doit donc être bien plus grand que $112$.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -88,77 +110,101 @@ $${\color{#4A5D7A}\text{Baisse globale de } 34{,}8\,\%}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Soit $f$ la fonction définie sur $\mathbb{R}$ par : $f(x) = -8x^2 + 7x - 2$.
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-On note $\mathscr{C}_f$ la courbe représentative de $f$ dans un repère.
-
-Le point $A(-1\,;\,-18)$ appartient-il à $\mathscr{C}_f$ ? Justifier.
+$$\left|x-5\right|\leqslant 2$$
 ---CORR---
-On calcule $f(-1)$ :
+$\left|x-5\right|$ se lit comme la distance entre $x$ et $5$.
 
-$$f(-1) = -8 \times (-1)^2 + 7 \times (-1) - 2 = -8 - 7 - 2 = -17 \neq -18$$
+On cherche donc les réels situés à une distance d'au plus $2$ du nombre $5$ : ce sont ceux qui se trouvent entre $5-2$ et $5+2$.
 
-L'image de $-1$ par $f$ n'est pas $-18$, donc **le point $A$ n'appartient pas à $\mathscr{C}_f$**.
+On peut aussi encadrer directement :
+
+$$-2\leqslant x-5\leqslant 2$$
+
+On ajoute $5$ aux trois membres :
+
+$$3\leqslant x\leqslant 7$$
+
+$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$
+
+L'inégalité étant large, les deux bornes sont incluses.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On donne ci-dessous le tableau de variations d'une fonction $f$ *(voir le livret)* :
-
-| $x$ | $-2$ | | $2$ | | $6$ | | $9$ |
-|---|---|---|---|---|---|---|---|
-| $f(x)$ | $-2$ | $\searrow$ | $-15$ | $\nearrow$ | $-1$ | $\searrow$ | $-14$ |
-
-Comparer si possible : $f(-1)$ et $f(7)$.
+Donner la liste de tous les diviseurs positifs de $48$.
 ---CORR---
-$-1 \in [-2\,;\,2]$ donc $-15 < f(-1) < -2$.
+On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :
 
-$7 \in [6\,;\,9]$ donc $-14 < f(7) < -1$.
+$$1\times 48 \qquad 2\times 24 \qquad 3\times 16 \qquad 4\times 12 \qquad 6\times 8$$
 
-Les deux encadrements ne permettent pas de déterminer lequel est le plus grand.
+On s'arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.
 
-$${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$
+
+Il y en a $10$. Le nombre de diviseurs est pair, ce qui est le cas de tous les nombres qui ne sont pas des carrés parfaits.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans un repère orthonormé $(O\,;\,I,J)$, on donne les points $S(-8\,;\,-10)$ et $T(-3\,;\,4)$.
-
-Calculer la distance $ST$.
+Démontrer que la somme de deux multiples de $9$ est un multiple de $9$.
 ---CORR---
-$$ST = \sqrt{(-3-(-8))^2 + (4-(-10))^2} = \sqrt{5^2 + 14^2} = \sqrt{25 + 196}$$
+On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $9$ : il existe deux entiers $k$ et $k'$ tels que
 
-$${\color{#4A5D7A}ST = \sqrt{221}}$$
+$$a=9k \qquad\text{et}\qquad b=9k'$$
+
+On calcule la somme et on factorise par $9$ :
+
+$$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$
+
+Comme $k+k'$ est un entier, $a+b$ s'écrit bien sous la forme $9\times\text{entier}$ : c'est un multiple de $9$.
+
+La factorisation est le cœur de la démonstration : c'est elle qui fait apparaître le $9$ en facteur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Dans un repère $(O\,;\,\vec{i},\vec{j})$, on considère les points $S(6\,;\,-8)$, $T(-3\,;\,3)$ et $U(-5\,;\,-10)$.
+Calculer :
 
-Déterminer les coordonnées du point $V$ tel que $STUV$ soit un parallélogramme.
+$$\left|3-10\right|+\left|-6\right|$$
 ---CORR---
-$STUV$ est un parallélogramme si et seulement si $\overrightarrow{ST} = \overrightarrow{VU}$.
+On traite chaque valeur absolue séparément, en calculant d'abord l'intérieur :
 
-$\overrightarrow{ST} = \binom{-3-6}{3-(-8)} = \binom{-9}{11}$
+$$\left|3-10\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-6\right|=6$$
 
-En notant $V(x\,;\,y)$ : $\overrightarrow{VU} = \binom{-5-x}{-10-y}$
+On additionne :
 
-$$\begin{cases}-5-x = -9 \\ -10-y = 11\end{cases} \implies \begin{cases}x = 4 \\ y = -21\end{cases}$$
-
-$${\color{#4A5D7A}V(4\,;\,-21)}$$
+$$7+6={\color{#4A5D7A}13}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Le prix d'un article subit une hausse de $57\,\%$ puis une baisse de $1\,\%$.
+Le prix d'un article passe de $150$ € à $120$ €.
 
-Déterminer le taux d'évolution global du prix de cet article.
+Le taux d'évolution de ce prix est :
+
+**A.** $-30\,\%$ &emsp; **B.** $-20\,\%$ &emsp; **C.** $-25\,\%$ &emsp; **D.** $+20\,\%$
 ---CORR---
-Augmenter de $57\,\%$ : $CM_1 = 1{,}57$
+Le taux d'évolution se calcule toujours par rapport à la valeur de **départ** :
 
-Baisser de $1\,\%$ : $CM_2 = 0{,}99$
+$$t=\dfrac{120-150}{150}=\dfrac{-30}{150}=-0{,}2$$
 
-$CM = 1{,}57 \times 0{,}99 = 1{,}554\,3$
+Il s'agit donc d'une baisse de ${\color{#4A5D7A}20\,\%}$.
 
-Taux global : $T = 1{,}554\,3 - 1 = 0{,}554\,3$
+La réponse A confond le taux avec la baisse en euros, et la réponse C divise par $120$, c'est-à-dire par la valeur d'arrivée au lieu de la valeur de départ.
 
-$${\color{#4A5D7A}\text{Hausse globale de } 55{,}43\,\%}$$
+<span class="rep">Réponse : B</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+La solution de l'équation $\dfrac{x}{6}=132$ est :
+
+**A.** $x=792$ &emsp; **B.** $x=22$ &emsp; **C.** $x=-792$ &emsp; **D.** $x=\dfrac{6}{132}$
+---CORR---
+$x$ est divisé par $6$ : pour l'isoler, on multiplie chaque membre par $6$.
+
+$$x=132\times 6={\color{#4A5D7A}792}$$
+
+La réponse B divise au lieu de multiplier. Un réflexe de contrôle : $x$ vaut le sixième de quelque chose valant $132$, il doit donc être bien plus grand que $132$.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -231,7 +231,7 @@ pre[style*="background-color"] {
   </a>
   
   
-  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-09-applications-derivation/exercices.b9b29d5fe18d9a5ae16655e7b9501dd5.pdf" target="_blank">
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-09-applications-derivation/exercices.ba4375007c4abc60b3493adde4b87af7.pdf" target="_blank">
     <div class="res-corner">PDF</div>
     <div>
       <div class="res-ico">?</div>
@@ -350,7 +350,7 @@ pre[style*="background-color"] {
         
         
         
-        <a href="/mabemat/1re/chapitre-09-applications-derivation/exercices.b9b29d5fe18d9a5ae16655e7b9501dd5.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        <a href="/mabemat/1re/chapitre-09-applications-derivation/exercices.ba4375007c4abc60b3493adde4b87af7.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
         
         
         
@@ -374,7 +374,63 @@ pre[style*="background-color"] {
       <h1 class="lesson-h1" style="color:#758467;">Applications de la dérivation</h1>
 
       <div class="full-lesson niveau-1re">
-        <h2 class="subsection-title">9.1 Exemples graphiques</h2>
+        <h2 class="subsection-title">9.1 Fonctions paires et fonctions impaires</h2>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $f$ une fonction définie sur un ensemble $D$ <strong>symétrique par rapport à $0$</strong> (c'est-à-dire que si $x\in D$ alors $-x\in D$).
+<ul>
+<li>$f$ est <strong>paire</strong> si pour tout $x\in D$, $f(-x)=f(x)$.</li>
+<li>$f$ est <strong>impaire</strong> si pour tout $x\in D$, $f(-x)=-f(x)$.</li>
+</ul>
+</div>
+</div>
+<div class="remarque">
+Une fonction peut n'être ni paire ni impaire : c'est même le cas le plus fréquent. Par exemple $f(x)=x^2+x$ n'est ni l'un ni l'autre.
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Dans un repère orthogonal, on note $\mathcal{C}_f$ la courbe représentative de $f$.
+<ul>
+<li>$f$ est paire si et seulement si $\mathcal{C}_f$ est <strong>symétrique par rapport à l'axe des ordonnées</strong>.</li>
+<li>$f$ est impaire si et seulement si $\mathcal{C}_f$ est <strong>symétrique par rapport à l'origine</strong> $O$ du repère.</li>
+</ul>
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour étudier la parité d'une fonction $f$ :
+<ol>
+<li>Vérifier d'abord que l'ensemble de définition est symétrique par rapport à $0$ (sinon, $f$ n'est ni paire ni impaire) ;</li>
+<li>Calculer $f(-x)$ et le simplifier ;</li>
+<li>Comparer le résultat à $f(x)$ et à $-f(x)$.</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemples</div>
+<div class="environment-content">
+Étudier la parité des fonctions suivantes.
+<ol>
+<li>Soit $f$ définie sur $\R$ par $f(x)=3x^4-x^2+5$. <br>
+L'ensemble $\R$ est symétrique par rapport à $0$.<br>
+$f(-x)=3(-x)^4-(-x)^2+5=3x^4-x^2+5=f(x)$. <br>
+Donc $f$ est <strong>paire</strong> : sa courbe est symétrique par rapport à l'axe des ordonnées.</li>
+<li>Soit $g$ définie sur $\R^*$ par $g(x)=x^3+\dfrac{1}{x}$. <br>
+L'ensemble $\R^*$ est symétrique par rapport à $0$.<br>
+$g(-x)=(-x)^3+\dfrac{1}{-x}=-x^3-\dfrac{1}{x}=-\left(x^3+\dfrac{1}{x}\right)=-g(x)$. <br>
+Donc $g$ est <strong>impaire</strong> : sa courbe est symétrique par rapport à l'origine.</li>
+<li>Soit $h$ définie sur $[0\,;\,+\infty[$ par $h(x)=\sqrt{x}$.<br>
+L'ensemble de définition n'est pas symétrique par rapport à $0$ ($1$ y appartient mais pas $-1$) : $h$ n'est ni paire ni impaire.</li>
+</ol>
+</div>
+</div>
+<div class="remarque">
+L'intérêt est pratique : si $f$ est paire ou impaire, il suffit d'étudier ses variations sur la partie positive de son ensemble de définition, puis de compléter la courbe par symétrie.
+</div>
+<h2 class="subsection-title">9.2 Exemples graphiques</h2>
 <div style="display:flex; gap:20px;">
 <div style="flex:1; text-align:center;">
 <img src="/mabemat/figures/1re/chapitre-09/fonction_croissante.png" alt="fonction_croissante" style="max-height:200px; max-width:100%;"><br>
@@ -385,7 +441,7 @@ Toutes les tangentes ont un coefficient directeur positif ; autrement dit, tous 
 Toutes les tangentes ont un coefficient directeur négatif ; autrement dit, tous les nombres dérivés sont négatifs ; la courbe ne peut que « descendre ».
 </div>
 </div>
-<h2 class="subsection-title">9.2 Théorèmes fondamentaux</h2>
+<h2 class="subsection-title">9.3 Théorèmes fondamentaux</h2>
 <div class="environment theoreme">
 <div class="environment-title">Théorème :</div>
 <div class="environment-content">
@@ -397,17 +453,6 @@ Soit $f$ une fonction dérivable sur un intervalle $I$.
 </ul>
 </div>
 </div>
-<p>Démonstration. <br></p>
-<ul>
-<li>Dans le cas où $f$ est croissante sur $I$ : <br>
-Par définition, pour tout réel $a$ de $I$ : $f'(a) =\underset{h\rightarrow 0}{\lim} \left(\dfrac{f(a+h)-f(a)}{h}\right)$.<br>
-Si $h>0$ alors $a+h>a$ et, comme $f$ est croissante sur $I$, $f(a+h)\geq f(a)$. Du coup, $\dfrac{f(a+h)-f(a)}{h}\geq 0$.<br>
-Si $h<0$ alors $a+h<a$ et, comme $f$ est croissante sur $I$, $f(a+h)\leq f(a)$. Du coup, $\dfrac{f(a+h)-f(a)}{h}\geq 0$.<br>
-Ainsi, $f'(a)$ est la limite, quand $h$ tend vers $0$, de nombres tous positifs ou nuls ; on admet que leur limite $f'(a)$ est aussi positive ou nulle.</li>
-<li>Dans le cas où la fonction est décroissante sur $I$, la démonstration est tout à fait similaire.</li>
-<li>Dans le cas où $f$ est constante sur $I$ : Pour tout réel $a$ de $I$ et tout $h\neq 0 : f(a+h)=f(a)$ ;ainsi $f'(a)$
-est la limite, quand $h$ tend vers $0$, de nombres tous nuls, ce qui implique que $f'(a) = 0$.</li>
-</ul>
 <div class="environment theoreme">
 <div class="environment-title">Théorème :</div>
 <div class="environment-content">
@@ -435,7 +480,7 @@ La fonction $f$ est donc strictement croissante sur chacun des intervalles où e
 </ol>
 </div>
 </div>
-<h2 class="subsection-title">9.3 Extremum</h2>
+<h2 class="subsection-title">9.4 Extremum</h2>
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -489,7 +534,7 @@ Dans les deux cas, la dérivée s'annule en $x_0$ en changeant de signe.
           
           
           
-          <a class="btn btn-accent" href="/mabemat/1re/chapitre-09-applications-derivation/exercices.b9b29d5fe18d9a5ae16655e7b9501dd5.pdf" target="_blank">Passer aux exercices →</a>
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-09-applications-derivation/exercices.ba4375007c4abc60b3493adde4b87af7.pdf" target="_blank">Passer aux exercices →</a>
           
           
         </div>
@@ -673,7 +718,7 @@ Dans les deux cas, la dérivée s'annule en $x_0$ en changeant de signe.
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

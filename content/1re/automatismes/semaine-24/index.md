@@ -232,15 +232,15 @@ Soit $n$ un entier non nul. À quelle expression est égale $\dfrac{1}{\left(-1\
 Soit $n\in \mathbb{N}.$<br>
 
 $$
-\begin{aligned}\left(-1\right)^{n+6}&=\left(-1\right)^{n}\times \left(-1\right)^6\\\\
+\begin{aligned}\left(-1\right)^{n+6}&=\left(-1\right)^{n}\times \left(-1\right)^6\\
 &=\left(-1\right)^{n}
 \end{aligned}
 $$
 
 $$
-\begin{aligned}\text{or, }\dfrac{1}{\left(-1\right)^{n}}&=\dfrac{1^n}{\left(-1\right)^{n}}\\\\
-&=\left(\dfrac{1}{-1}\right)^{n}\\\\
-&=\left(-1\right)^{n}.\\\\
+\begin{aligned}\text{or, }\dfrac{1}{\left(-1\right)^{n}}&=\dfrac{1^n}{\left(-1\right)^{n}}\\
+&=\left(\dfrac{1}{-1}\right)^{n}\\
+&=\left(-1\right)^{n}.\\
 \end{aligned}
 $$
 

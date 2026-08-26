@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 28 — MaBémat</title>
+<title>Semaine 28 - Droites parallèles, sécantes et mise en équation — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Droites parallèles, sécantes et mise en équation</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,10 +234,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la série de données : $\{7 ; 12 ; 20 ; 23 ; 25 ; 28\}$.</p>
-<p>Quel est le troisième quartile $Q_3$ de cette série ?</p>
-<p><strong>A.</strong> $20$   <strong>B.</strong> $23$   <strong>C.</strong> $24$   <strong>D.</strong> $26,5$   <strong>E.</strong> $25$</p>
-
+    Les droites $(d)\,:\ y=3x-5$ et $(d')\,:\ 6x-2y+7=0$ sont-elles parallèles ?
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,8 +242,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La série ordonnée compte 6 valeurs. $Q_3$ est la médiane de la moitié supérieure $\{23 ; 25 ; 28\}$, soit $Q_3 = 25$.</p>
-<p><strong>Réponse : E</strong></p>
+    <div><p>Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :</p>
+$$-2y=-6x-7 \qquad\text{donc}\qquad y=3x+3{,}5$$<p>Les deux droites ont le même coefficient directeur $3$, mais des ordonnées à l&rsquo;origine différentes ($-5$ et $3{,}5$) :</p>
+$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$<p>Si les ordonnées à l&rsquo;origine avaient été égales, les droites auraient été confondues.</p>
 </div>
   </div>
   
@@ -263,10 +264,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On lance un dé tétraédrique dont les faces sont numérotées $1$, $2$, $3$, $4$. Chaque face a la même probabilité d&rsquo;apparaître. On note $x$ la probabilité d&rsquo;obtenir un résultat strictement supérieur à $1$ et strictement inférieur à $4$.</p>
-<p>Quelle est la valeur de $x$ ?</p>
-<p><strong>A.</strong> $\dfrac{1}{4}$   <strong>B.</strong> $\dfrac{1}{2}$   <strong>C.</strong> $\dfrac{2}{3}$   <strong>D.</strong> $\dfrac{1}{3}$</p>
-
+    Déterminer les coordonnées du point d&rsquo;intersection des droites $(d)\,:\ y=2x-3$ et $(d')\,:\ y=-x+6$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -274,8 +272,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les résultats strictement supérieurs à $1$ et strictement inférieurs à $4$ sont $2$ et $3$, soit 2 issues sur 4.</p>
-$$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
+    <div><p>Les coefficients directeurs $2$ et $-1$ sont différents : les droites sont sécantes, il y a donc bien un point d&rsquo;intersection.</p>
+<p>En ce point, les deux ordonnées sont égales :</p>
+$$2x-3=-x+6$$$$3x=9 \qquad\text{donc}\qquad x=3$$<p>On calcule l&rsquo;ordonnée avec l&rsquo;une des deux équations :</p>
+$$y=2\times 3-3=3$$$$\text{Point d'intersection}\ {\color{#4A5D7A}(3\,;\,3)}$$<p>Vérification avec l&rsquo;autre équation : $-3+6=3$.</p>
 </div>
   </div>
   
@@ -295,9 +295,8 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère les droites $D_1 : y = -2x + 3$, $D_2 : y = -x - 5$, $D_3 : y = x + 4$, $D_4 : y = 4x - 9$.</p>
-<p>Quelle est la droite qui a un coefficient directeur positif et une ordonnée à l&rsquo;origine négative ?</p>
-<p><strong>A.</strong> $D_1$   <strong>B.</strong> $D_2$   <strong>C.</strong> $D_3$   <strong>D.</strong> $D_4$</p>
+    <p>Un club propose deux formules. La formule A coûte $15$ € par mois plus $0{,}50$ € par séance. La formule B coûte $5$ € par mois plus $1{,}50$ € par séance.</p>
+<p>À partir de combien de séances par mois la formule A devient-elle plus avantageuse ?</p>
 
   </div>
   
@@ -306,14 +305,11 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On cherche $a > 0$ et $b < 0$ :</p>
-<ul>
-<li>$D_1$ : $a = -2 < 0$ ✗</li>
-<li>$D_2$ : $a = -1 < 0$ ✗</li>
-<li>$D_3$ : $a = 1 > 0$, $b = 4 > 0$ ✗</li>
-<li>$D_4$ : $a = 4 > 0$, $b = -9 < 0$ ✓</li>
-</ul>
-<p><strong>Réponse : D</strong></p>
+    <div><p>On note $x$ le nombre de séances et on exprime les deux tarifs :</p>
+$$\text{A}:\ 15+0{,}5x \qquad\qquad \text{B}:\ 5+1{,}5x$$<p>« A plus avantageuse » signifie que A coûte moins cher que B :</p>
+$$15+0{,}5x<5+1{,}5x$$<p>On retranche $0{,}5x$ et $5$ à chaque membre :</p>
+$$10 < x$$<p>Le nombre de séances étant entier, la formule A devient plus avantageuse à partir de ${\color{#4A5D7A}11}$ séances.</p>
+<p>Vérification : pour $10$ séances, A coûte $20$ € et B coûte $20$ € (égalité) ; pour $11$ séances, A coûte $20{,}50$ € contre $21{,}50$ € pour B.</p>
 </div>
   </div>
   
@@ -333,10 +329,8 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un article subit d&rsquo;abord une augmentation de $50\%$, puis une réduction de $40\%$.</p>
-<p>Quelle est l&rsquo;évolution globale ?</p>
-<p><strong>A.</strong> Une réduction de $10\%$   <strong>B.</strong> Une augmentation de $10\%$   <strong>C.</strong> Aucune évolution   <strong>D.</strong> Une réduction de $90\%$</p>
-
+    <p>Résoudre le système suivant :</p>
+$$\begin{cases} y=4x-3 \\ x+y=7 \end{cases}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -344,10 +338,9 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le coefficient multiplicateur global est :</p>
-$$1{,}5 \times 0{,}6 = 0{,}9$$<p>$0{,}9$ correspond à une réduction de $10\%$.</p>
-<p><strong>Réponse : A</strong></p>
-</div>
+    <div><p>On substitue $y$ par $4x-3$ dans la seconde équation :</p>
+$$x+(4x-3)=7 \qquad\text{soit}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$<p>Puis :</p>
+$$y=4\times 2-3=5$$$$S={\color{#4A5D7A}\lbrace (2\,;\,5)\rbrace}$$</div>
   </div>
   
 </article>
@@ -366,9 +359,8 @@ $$1{,}5 \times 0{,}6 = 0{,}9$$<p>$0{,}9$ correspond à une réduction de $10\%$.
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On cherche les solutions de l&rsquo;équation $-8x^2 + 4x = 0$.</p>
-<p>Quel est l&rsquo;ensemble solution ?</p>
-<p><strong>A.</strong> $\{0\}$   <strong>B.</strong> $\left\{\dfrac{1}{2}\right\}$   <strong>C.</strong> $\emptyset$   <strong>D.</strong> $\left\{0 ; \dfrac{1}{2}\right\}$</p>
+    <p>Les droites d&rsquo;équations $y=-2x+1$ et $4x+2y-9=0$ sont :</p>
+<p><strong>A.</strong> sécantes   <strong>B.</strong> confondues   <strong>C.</strong> parallèles et distinctes   <strong>D.</strong> perpendiculaires</p>
 
   </div>
   
@@ -377,9 +369,9 @@ $$1{,}5 \times 0{,}6 = 0{,}9$$<p>$0{,}9$ correspond à une réduction de $10\%$.
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On factorise :</p>
-$$-8x^2 + 4x = 0 \implies x(-8x + 4) = 0$$<p>Soit $x = 0$, soit $-8x + 4 = 0 \implies x = \dfrac{1}{2}$.</p>
-<p><strong>Réponse : D</strong></p>
+    <div><p>On met la seconde équation sous forme réduite :</p>
+$$2y=-4x+9 \qquad\text{donc}\qquad y=-2x+4{,}5$$<p>Les deux coefficients directeurs valent $-2$ : les droites ont la même inclinaison. Les ordonnées à l&rsquo;origine, $1$ et $4{,}5$, sont différentes : les droites ne se confondent pas.</p>
+$${\color{#4A5D7A}\text{Elles sont parallèles et distinctes.}}$$<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -399,9 +391,8 @@ $$-8x^2 + 4x = 0 \implies x(-8x + 4) = 0$$<p>Soit $x = 0$, soit $-8x + 4 = 0 \im
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère l&rsquo;égalité $8z - 7c = 5$.</p>
-<p>Quelle est l&rsquo;expression de $c$ en fonction de $z$ ?</p>
-<p><strong>A.</strong> $c = \dfrac{8z+5}{7}$   <strong>B.</strong> $c = \dfrac{8z-5}{7}$   <strong>C.</strong> $c = 8z - 5$   <strong>D.</strong> $c = \dfrac{5-8z}{7}$</p>
+    <p>La moyenne de la série $4\ ;\ 8\ ;\ 8\ ;\ 12$ est :</p>
+<p><strong>A.</strong> $32$   <strong>B.</strong> $8$   <strong>C.</strong> $6$   <strong>D.</strong> $10$</p>
 
   </div>
   
@@ -410,8 +401,9 @@ $$-8x^2 + 4x = 0 \implies x(-8x + 4) = 0$$<p>Soit $x = 0$, soit $-8x + 4 = 0 \im
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On isole $c$ :</p>
-$$8z - 7c = 5 \implies -7c = 5 - 8z \implies c = \frac{5 - 8z}{-7} = \frac{8z - 5}{7}$$<p><strong>Réponse : B</strong></p>
+    <div><p>On additionne les valeurs, puis on divise par leur nombre :</p>
+$$\dfrac{4+8+8+12}{4}=\dfrac{32}{4}={\color{#4A5D7A}8}$$<p>La réponse A est la somme, pas la moyenne. Un contrôle rapide : la moyenne est toujours comprise entre la plus petite et la plus grande valeur, donc entre $4$ et $12$ ici, ce qui élimine déjà B.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -441,10 +433,7 @@ $$8z - 7c = 5 \implies -7c = 5 - 8z \implies c = \frac{5 - 8z}{-7} = \frac{8z - 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la série de données : $\{2 ; 6 ; 7 ; 10 ; 16 ; 30\}$.</p>
-<p>Quel est le troisième quartile $Q_3$ de cette série ?</p>
-<p><strong>A.</strong> $10$   <strong>B.</strong> $13$   <strong>C.</strong> $23$   <strong>D.</strong> $7$   <strong>E.</strong> $16$</p>
-
+    Les droites $(d)\,:\ y=4x-1$ et $(d')\,:\ 8x-2y+5=0$ sont-elles parallèles ?
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -452,8 +441,9 @@ $$8z - 7c = 5 \implies -7c = 5 - 8z \implies c = \frac{5 - 8z}{-7} = \frac{8z - 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La série ordonnée compte 6 valeurs. $Q_3$ est la médiane de la moitié supérieure $\{10 ; 16 ; 30\}$, soit $Q_3 = 16$.</p>
-<p><strong>Réponse : E</strong></p>
+    <div><p>Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :</p>
+$$-2y=-8x-5 \qquad\text{donc}\qquad y=4x+2{,}5$$<p>Les deux droites ont le même coefficient directeur $4$, mais des ordonnées à l&rsquo;origine différentes ($-1$ et $2{,}5$) :</p>
+$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$<p>Si les ordonnées à l&rsquo;origine avaient été égales, les droites auraient été confondues.</p>
 </div>
   </div>
   
@@ -473,10 +463,7 @@ $$8z - 7c = 5 \implies -7c = 5 - 8z \implies c = \frac{5 - 8z}{-7} = \frac{8z - 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On lance un dé tétraédrique dont les faces sont numérotées $1$, $2$, $3$, $4$. Chaque face a la même probabilité d&rsquo;apparaître. On note $x$ la probabilité d&rsquo;obtenir un résultat strictement supérieur à $1$ et strictement inférieur à $4$.</p>
-<p>Quelle est la valeur de $x$ ?</p>
-<p><strong>A.</strong> $\dfrac{1}{4}$   <strong>B.</strong> $\dfrac{1}{2}$   <strong>C.</strong> $\dfrac{2}{3}$   <strong>D.</strong> $\dfrac{1}{3}$</p>
-
+    Déterminer les coordonnées du point d&rsquo;intersection des droites $(d)\,:\ y=3x-4$ et $(d')\,:\ y=-2x+11$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -484,8 +471,10 @@ $$8z - 7c = 5 \implies -7c = 5 - 8z \implies c = \frac{5 - 8z}{-7} = \frac{8z - 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les résultats strictement supérieurs à $1$ et strictement inférieurs à $4$ sont $2$ et $3$, soit 2 issues sur 4.</p>
-$$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
+    <div><p>Les coefficients directeurs $3$ et $-2$ sont différents : les droites sont sécantes, il y a donc bien un point d&rsquo;intersection.</p>
+<p>En ce point, les deux ordonnées sont égales :</p>
+$$3x-4=-2x+11$$$$5x=15 \qquad\text{donc}\qquad x=3$$<p>On calcule l&rsquo;ordonnée avec l&rsquo;une des deux équations :</p>
+$$y=3\times 3-4=5$$$$\text{Point d'intersection}\ {\color{#4A5D7A}(3\,;\,5)}$$<p>Vérification avec l&rsquo;autre équation : $-2\times 3+11=5$.</p>
 </div>
   </div>
   
@@ -505,9 +494,8 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère les droites $D_1 : y = -3x + 2$, $D_2 : y = x - 1$, $D_3 : y = 2x + 7$, $D_4 : y = -x + 4$.</p>
-<p>Quelle est la droite qui a un coefficient directeur positif et une ordonnée à l&rsquo;origine négative ?</p>
-<p><strong>A.</strong> $D_1$   <strong>B.</strong> $D_2$   <strong>C.</strong> $D_3$   <strong>D.</strong> $D_4$</p>
+    <p>Un club propose deux formules. La formule A coûte $20$ € par mois plus $0{,}80$ € par séance. La formule B coûte $6$ € par mois plus $2{,}30$ € par séance.</p>
+<p>À partir de combien de séances par mois la formule A devient-elle plus avantageuse ?</p>
 
   </div>
   
@@ -516,14 +504,11 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On cherche $a > 0$ et $b < 0$ :</p>
-<ul>
-<li>$D_1$ : $a = -3 < 0$ ✗</li>
-<li>$D_2$ : $a = 1 > 0$, $b = -1 < 0$ ✓</li>
-<li>$D_3$ : $a = 2 > 0$, $b = 7 > 0$ ✗</li>
-<li>$D_4$ : $a = -1 < 0$ ✗</li>
-</ul>
-<p><strong>Réponse : B</strong></p>
+    <div><p>On note $x$ le nombre de séances et on exprime les deux tarifs :</p>
+$$\text{A}:\ 20+0{,}8x \qquad\qquad \text{B}:\ 6+2{,}3x$$<p>« A plus avantageuse » signifie que A coûte moins cher que B :</p>
+$$20+0{,}8x<6+2{,}3x$$<p>On retranche $0{,}8x$ et $6$ à chaque membre :</p>
+$$14<1{,}5x \qquad\text{donc}\qquad x>\dfrac{14}{1{,}5}\approx 9{,}33$$<p>Le nombre de séances étant entier, la formule A devient plus avantageuse à partir de ${\color{#4A5D7A}10}$ séances.</p>
+<p>Vérification : pour $9$ séances, A coûte $27{,}20$ € contre $26{,}70$ € pour B ; pour $10$ séances, A coûte $28$ € contre $29$ € pour B.</p>
 </div>
   </div>
   
@@ -543,10 +528,8 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un article subit d&rsquo;abord une augmentation de $40\%$, puis une nouvelle augmentation de $10\%$.</p>
-<p>Quelle est l&rsquo;évolution globale ?</p>
-<p><strong>A.</strong> Une augmentation de $54\%$   <strong>B.</strong> Une augmentation de $50\%$   <strong>C.</strong> Une augmentation de $4\%$   <strong>D.</strong> Une réduction de $54\%$</p>
-
+    <p>Résoudre le système suivant :</p>
+$$\begin{cases} y=5x-2 \\ x+y=10 \end{cases}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -554,10 +537,9 @@ $$x = \frac{2}{4} = \frac{1}{2}$$<p><strong>Réponse : B</strong></p>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le coefficient multiplicateur global est :</p>
-$$1{,}4 \times 1{,}1 = 1{,}54$$<p>$1{,}54$ correspond à une augmentation de $54\%$.</p>
-<p><strong>Réponse : A</strong></p>
-</div>
+    <div><p>On substitue $y$ par $5x-2$ dans la seconde équation :</p>
+$$x+(5x-2)=10 \qquad\text{soit}\qquad 6x=12 \qquad\text{donc}\qquad x=2$$<p>Puis :</p>
+$$y=5\times 2-2=8$$$$S={\color{#4A5D7A}\lbrace (2\,;\,8)\rbrace}$$</div>
   </div>
   
 </article>
@@ -576,9 +558,8 @@ $$1{,}4 \times 1{,}1 = 1{,}54$$<p>$1{,}54$ correspond à une augmentation de $54
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On cherche les solutions de l&rsquo;équation $9x^2 + 8x = 0$.</p>
-<p>Quel est l&rsquo;ensemble solution ?</p>
-<p><strong>A.</strong> $\{0\}$   <strong>B.</strong> $\left\{-\dfrac{8}{9}\right\}$   <strong>C.</strong> $\left\{-\dfrac{8}{9} ; 0\right\}$   <strong>D.</strong> $\emptyset$</p>
+    <p>Les droites d&rsquo;équations $y=3x+2$ et $6x-2y+1=0$ sont :</p>
+<p><strong>A.</strong> parallèles et distinctes   <strong>B.</strong> sécantes   <strong>C.</strong> confondues   <strong>D.</strong> perpendiculaires</p>
 
   </div>
   
@@ -587,9 +568,9 @@ $$1{,}4 \times 1{,}1 = 1{,}54$$<p>$1{,}54$ correspond à une augmentation de $54
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On factorise :</p>
-$$9x^2 + 8x = 0 \implies x(9x + 8) = 0$$<p>Soit $x = 0$, soit $9x + 8 = 0 \implies x = -\dfrac{8}{9}$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>On met la seconde équation sous forme réduite :</p>
+$$-2y=-6x-1 \qquad\text{donc}\qquad y=3x+0{,}5$$<p>Les deux coefficients directeurs valent $3$ : les droites ont la même inclinaison. Les ordonnées à l&rsquo;origine, $2$ et $0{,}5$, sont différentes : les droites ne se confondent pas.</p>
+$${\color{#4A5D7A}\text{Elles sont parallèles et distinctes.}}$$<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -609,9 +590,8 @@ $$9x^2 + 8x = 0 \implies x(9x + 8) = 0$$<p>Soit $x = 0$, soit $9x + 8 = 0 \impli
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère l&rsquo;égalité $-2 - 7x = 6c$.</p>
-<p>Quelle est l&rsquo;expression de $c$ en fonction de $x$ ?</p>
-<p><strong>A.</strong> $c = \dfrac{-2-7x}{6}$   <strong>B.</strong> $c = \dfrac{-7x}{6} - 2$   <strong>C.</strong> $c = -2 - 7x - 6$   <strong>D.</strong> $c = \dfrac{7x+2}{6}$</p>
+    <p>La moyenne de la série $5\ ;\ 9\ ;\ 9\ ;\ 13$ est :</p>
+<p><strong>A.</strong> $36$   <strong>B.</strong> $11$   <strong>C.</strong> $7$   <strong>D.</strong> $9$</p>
 
   </div>
   
@@ -620,8 +600,9 @@ $$9x^2 + 8x = 0 \implies x(9x + 8) = 0$$<p>Soit $x = 0$, soit $9x + 8 = 0 \impli
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On isole $c$ :</p>
-$$-2 - 7x = 6c \implies c = \frac{-2 - 7x}{6}$$<p><strong>Réponse : A</strong></p>
+    <div><p>On additionne les valeurs, puis on divise par leur nombre :</p>
+$$\dfrac{5+9+9+13}{4}=\dfrac{36}{4}={\color{#4A5D7A}9}$$<p>La réponse A est la somme, pas la moyenne. Un contrôle rapide : la moyenne est toujours comprise entre la plus petite et la plus grande valeur, donc entre $5$ et $13$ ici, ce qui élimine déjà A.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -723,7 +704,7 @@ $$-2 - 7x = 6c \implies c = \frac{-2 - 7x}{6}$$<p><strong>Réponse : A</strong><
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

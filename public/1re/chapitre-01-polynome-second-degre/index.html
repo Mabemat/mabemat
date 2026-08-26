@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -231,7 +231,7 @@ pre[style*="background-color"] {
   </a>
   
   
-  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-01-polynome-second-degre/exercices.21a6862e853183b2128c4180e5a6cbe2.pdf" target="_blank">
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-01-polynome-second-degre/exercices.d65af9a5631e6118f4fa58dfcf85ee34.pdf" target="_blank">
     <div class="res-corner">PDF</div>
     <div>
       <div class="res-ico">?</div>
@@ -350,7 +350,7 @@ pre[style*="background-color"] {
         
         
         
-        <a href="/mabemat/1re/chapitre-01-polynome-second-degre/exercices.21a6862e853183b2128c4180e5a6cbe2.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        <a href="/mabemat/1re/chapitre-01-polynome-second-degre/exercices.d65af9a5631e6118f4fa58dfcf85ee34.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
         
         
         
@@ -536,7 +536,7 @@ Donc $S=\left\{\dfrac{3}{4}\right\}$. On peut écrire $2x^2 -3x+\dfrac{9}{8}=2\l
 <ol>
 <li>Si $\Delta<0$, alors $\left(x+ \dfrac{b}{2a}\right)^2-\dfrac{\Delta}{4a^2}>0$, donc $ax^2+bx+c$ est du signe de $a$.</li>
 <li>Si $\Delta=0$, alors $\left(x+ \dfrac{b}{2a}\right)^2\geq 0$, donc $ax^2+bx+c$ s'annule pour $x=\dfrac{-b}{2a}$ et est du signe de $a$ pour les autres valeurs.</li>
-<li>Si $\Delta>0$, alors $ax^2+bx+c=a(x-x_1)(x-x_2)$, où $x_1$ et $x_2$ sont les racines du trinôme (on suppose que $x_1 &lt x_2$), faisons un tableau de signes : 
+<li>Si $\Delta>0$, alors $ax^2+bx+c=a(x-x_1)(x-x_2)$, où $x_1$ et $x_2$ sont les racines du trinôme (on suppose que $x_1 &lt; x_2$), faisons un tableau de signes : 
 <p style="text-align:center;">
 <img src="/mabemat/figures/1re/chapitre-01/1.png" alt="figure 5" style="max-height:200px; max-width:100%;">
 </p>
@@ -600,10 +600,54 @@ $x_2=\dfrac{-1+9}{8}=1$. <br></p>
 <li>et pour quelles valeurs de $x$ $C_f$ est en dessous de $C_g$.</li>
 </ul>
 Pour cela, on déterminera le <strong>signe</strong> de l'expression $f(x)-g(x)$.
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit $f$ et $g$ les fonctions définies sur $\R$ par $f(x)=2x^2-3x+1$ et $g(x)=x^2+x-2$.<br>
+Étudier la position relative de leurs courbes $C_f$ et $C_g$.<br>
+<p><strong>Étape 1 : on calcule la différence.</strong>
+</p>
+$$f(x)-g(x)=\left(2x^2-3x+1\right)-\left(x^2+x-2\right)=2x^2-3x+1-x^2-x+2=x^2-4x+3$$<p><strong>Étape 2 : on étudie le signe de cette différence.</strong><br>
+C&rsquo;est un trinôme du second degré avec $a=1$, $b=-4$ et $c=3$.<br>
+$\Delta=(-4)^2-4\times 1\times 3=16-12=4=2^2>0$, il y a donc deux racines :
+</p>
+$$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+2}{2}=3$$<p>
+Comme $a=1>0$, le trinôme est positif à l&rsquo;extérieur des racines et négatif entre les racines :</p>
+<table>
+<tr>
+<th>$x$</th>
+<th>$-\infty$</th>
+<th></th>
+<th>$1$</th>
+<th></th>
+<th>$3$</th>
+<th></th>
+<th>$+\infty$</th>
+</tr>
+<tr>
+<td>$f(x)-g(x)$</td>
+<td></td>
+<td>$+$</td>
+<td>$0$</td>
+<td>$-$</td>
+<td>$0$</td>
+<td>$+$</td>
+<td></td>
+</tr>
+</table>
+<p><strong>Étape 3 : on conclut.</strong></p>
+<ul>
+<li>Sur $]-\infty;1[$ et sur $]3;+\infty[$ : $f(x)-g(x)>0$, donc $f(x)>g(x)$ et $C_f$ est <strong>au-dessus</strong> de $C_g$.</li>
+<li>Sur $]1;3[$ : $f(x)-g(x)<0$, donc $f(x)<g(x)$ et $C_f$ est <strong>en dessous</strong> de $C_g$.</li>
+<li>Pour $x=1$ et $x=3$ : $f(x)-g(x)=0$, donc les deux courbes <strong>se coupent</strong>. <br>
+Comme $f(1)=2-3+1=0$ et $f(3)=18-9+1=10$, les points d'intersection sont $A(1;0)$ et $B(3;10)$.</li>
+</ul>
+</div>
+</div>
 <h3 class="subsubsection-title">1.3.3 Équations bi-carrées</h3>
 <p>Résoudre dans $\R$ par changement de variables $x^2=X$ l&rsquo;équation $2x^4+11x^2-6=0$.<br></p>
 <p>On pose $X=x^2$ alors on a $2X^2+11X-6=0$. <br>
-$\Delta=11^2-4\times 2 \times (-6)=169=13^2>0$ donc $X_1=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d&rsquo;où $x_2'=-\sqrt{\dfrac{1}{2}}$ et $x_2''=\sqrt{\dfrac{1}{2}}$. <br>Finalement, $S=\Biggl\lbrace -\sqrt{\dfrac12} ; \sqrt{\dfrac12} \Biggr\rbrace$.</p>
+$\Delta=11^2-4\times 2 \times (-6)=169=13^2>0$ donc $X_1=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d&rsquo;où $x_2'=-\sqrt{\dfrac{1}{2}}=-\dfrac{\sqrt{2}}{2}$ et $x_2''=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}$. <br>Finalement, $S=\left\{-\dfrac{\sqrt{2}}{2};\dfrac{\sqrt{2}}{2}\right\}$.</p>
 <h3 class="subsubsection-title">1.3.4 Équations se ramenant à du second degré</h3>
 <div class="environment theoreme">
 <div class="environment-title">Théorème :</div>
@@ -616,7 +660,7 @@ Si $P(x)=ax^2+bx+c$ admet des racines $x_1$ et $x_2$, alors $x_1+x_2=\dfrac{-b}{
 <div class="environment-content">
 Résoudre le système d'équations $E:\left\{
 \begin{array}{ll}
-x+y &=5 \\\\
+x+y &=5 \\
 x \times y & =-6
 \end{array}
 \right.$
@@ -625,12 +669,27 @@ On considère le polynôme $P(x)=x^2-5x-6$ alors $x$ et $y$ sont les racines de 
 $\Delta=(-5)^2-4\times 1\times (-6)=49=7^2>0$ et $x_1=\dfrac{5-7}{2}=-1=x$ et $x_2=\dfrac{5+7}{2}=6=y$.<br>
 Vérification : $\left\{
 \begin{array}{lll}
-x+y &=-1+6&=5 \\\\
+x+y &=-1+6&=5 \\
 x \times y &= (-1)\times 6&=-6 
 \end{array}
 \right.$. <br>
 Donc $S=(x,y)=(-1,6)$.
 </div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Résoudre dans $\R$ l'équation $3x^2-8x+5=0$.<br>
+On remarque que $x_1=1$ est une racine évidente.<br>
+En effet : $P(1)=3\times 1^2-8\times 1+5=3-8+5=0$.<br>
+D'après le théorème, $x_1\times x_2=\dfrac{c}{a}=\dfrac{5}{3}$. Comme $x_1=1$, on en déduit $x_2=\dfrac{5}{3}$.<br>
+<em>Vérification avec la somme :</em> $x_1+x_2=1+\dfrac{5}{3}=\dfrac{8}{3}$ et $\dfrac{-b}{a}=\dfrac{8}{3}$. <br>
+Donc $S=\left\{1;\dfrac{5}{3}\right\}$ et $3x^2-8x+5=3(x-1)\left(x-\dfrac{5}{3}\right)$.
+</div>
+</div>
+<div class="remarque">
+Cette méthode ne remplace pas le discriminant : elle n'est utile que lorsqu'une racine <em>saute aux yeux</em>. <br>
+Si aucune valeur simple ne convient, on revient au calcul de $\Delta$.
 </div>
 
       </div>
@@ -646,7 +705,7 @@ Donc $S=(x,y)=(-1,6)$.
           
           
           
-          <a class="btn btn-accent" href="/mabemat/1re/chapitre-01-polynome-second-degre/exercices.21a6862e853183b2128c4180e5a6cbe2.pdf" target="_blank">Passer aux exercices →</a>
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-01-polynome-second-degre/exercices.d65af9a5631e6118f4fa58dfcf85ee34.pdf" target="_blank">Passer aux exercices →</a>
           
           
         </div>
@@ -830,7 +889,7 @@ Donc $S=(x,y)=(-1,6)$.
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

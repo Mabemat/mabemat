@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 13 — MaBémat</title>
+<title>Semaine 13 - Indicateurs statistiques — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Indicateurs statistiques</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Une durée de $1{,}7$ heure correspond à combien de minutes ?
+    <p>On considère la série statistique suivante, déjà rangée dans l&rsquo;ordre croissant :</p>
+$$4\ ;\quad 7\ ;\quad 7\ ;\quad 9\ ;\quad 12\ ;\quad 15\ ;\quad 16$$<p>Déterminer la médiane et l&rsquo;étendue de cette série.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,7 +244,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$1{,}7\text{ h}=1\text{ h}+0{,}7\text{ h}=60\text{ min}+\dfrac{7}{10}\times 60\text{ min}=60+42={\color{#4A5D7A}102\text{ min}}$</div>
+    <div><p>La série compte $7$ valeurs. Comme $7$ est impair, la médiane est la valeur du milieu, celle de rang $\dfrac{7+1}{2}=4$.</p>
+<p>En comptant à partir de la gauche, la $4^\text{e}$ valeur est :</p>
+$$\text{Médiane}={\color{#4A5D7A}9}$$<p>L&rsquo;étendue est l&rsquo;écart entre la plus grande et la plus petite valeur :</p>
+$$16-4={\color{#4A5D7A}12}$$</div>
   </div>
   
 </article>
@@ -258,7 +266,29 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Teresa parcourt $900\text{ m}$ en $3$ minutes. Quelle est sa vitesse moyenne en km/h ?
+    <p>Une série statistique est donnée par le tableau suivant :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Valeur</th>
+          <th>2</th>
+          <th>3</th>
+          <th>5</th>
+          <th>8</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Effectif</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table>
+<p>Calculer la moyenne de cette série.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -266,7 +296,12 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>En 1 heure (= $3\times 20$ minutes), elle parcourt $20\times 0{,}9\text{ km}={\color{#4A5D7A}18\text{ km/h}}$.</div>
+    <div><p>L&rsquo;effectif total est la somme des effectifs :</p>
+$$4+6+5+5=20$$<p>La moyenne est la somme de toutes les valeurs, chacune comptée autant de fois que son effectif, divisée par l&rsquo;effectif total :</p>
+$$\overline{x}=\dfrac{2\times 4+3\times 6+5\times 5+8\times 5}{20}$$<p>On calcule le numérateur :</p>
+$$8+18+25+40=91$$<p>D&rsquo;où :</p>
+$$\overline{x}=\dfrac{91}{20}={\color{#4A5D7A}4{,}55}$$<p>On divise bien par l&rsquo;effectif total $20$, et non par le nombre de valeurs différentes.</p>
+</div>
   </div>
   
 </article>
@@ -285,7 +320,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Soit $v$ la fonction définie par $v(x)=-2x-10$. À quelle expression est égal $v(x+2)$ ?
+    <p>On considère la série suivante, rangée dans l&rsquo;ordre croissant :</p>
+$$3\ ;\ 5\ ;\ 5\ ;\ 6\ ;\ 8\ ;\ 9\ ;\ 9\ ;\ 11\ ;\ 12\ ;\ 14\ ;\ 15\ ;\ 18$$<p>Déterminer le premier quartile $Q_1$ et le troisième quartile $Q_3$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -293,7 +330,13 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$v(x+2)=-2(x+2)-10=-2x-4-10={\color{#4A5D7A}-2x-14}$</div>
+    <div><p>La série compte $12$ valeurs.</p>
+<p>Pour $Q_1$, on calcule le quart de l&rsquo;effectif :</p>
+$$\dfrac{12}{4}=3$$<p>Ce nombre est entier, donc $Q_1$ est la valeur de rang $3$ :</p>
+$$Q_1={\color{#4A5D7A}5}$$<p>Pour $Q_3$, on calcule les trois quarts de l&rsquo;effectif :</p>
+$$\dfrac{3\times 12}{4}=9$$<p>Ce nombre est entier, donc $Q_3$ est la valeur de rang $9$ :</p>
+$$Q_3={\color{#4A5D7A}12}$$<p>Au moins un quart des valeurs sont inférieures ou égales à $Q_1$, et au moins trois quarts sont inférieures ou égales à $Q_3$.</p>
+</div>
   </div>
   
 </article>
@@ -312,7 +355,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre l&rsquo;équation $(6x-1)-(4x+4)=0$
+    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=3x-7$.</p>
+<p>Déterminer l&rsquo;antécédent de $-1$ par $f$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -320,7 +365,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$6x-1-4x-4=0 \implies 2x-5=0 \implies x={\color{#4A5D7A}\dfrac{5}{2}}$</div>
+    <div><p>On résout l&rsquo;équation $f(x)=-1$ :</p>
+$$3x-7=-1$$<p>On ajoute $7$ à chaque membre, puis on divise par $3$ :</p>
+$$3x=6 \qquad\text{donc}\qquad x={\color{#4A5D7A}2}$$<p>Vérification : $f(2)=3\times 2-7=-1$.</p>
+</div>
   </div>
   
 </article>
@@ -339,7 +387,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Construire le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-3x-6$.
+    <p>On ajoute $3$ à toutes les valeurs d&rsquo;une série statistique dont la moyenne vaut $12$.</p>
+<p>La moyenne de la nouvelle série est :</p>
+<p><strong>A.</strong> $12$   <strong>B.</strong> $15$   <strong>C.</strong> $36$   <strong>D.</strong> $4$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -347,26 +398,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(x)=0 \iff x=-2$.</p>
-<p>$f$ est décroissante ($a=-3<0$) :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th>$-2$</th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$+$</td>
-          <td>$0$</td>
-          <td>$-$</td>
-      </tr>
-  </tbody>
-</table>
+    <div><p>Si on ajoute la même quantité à chaque valeur, la somme totale augmente de cette quantité autant de fois qu&rsquo;il y a de valeurs. En divisant par l&rsquo;effectif, la moyenne augmente donc exactement de la même quantité.</p>
+$$\overline{x}_\text{nouvelle}=12+3={\color{#4A5D7A}15}$$<p>La réponse C multiplierait la moyenne par $3$ au lieu de lui ajouter $3$.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -386,7 +420,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Alice et Louis offrent un voyage à Charles. Alice paie les billets de train ($\dfrac{1}{9}$ de la dépense totale) et Louis paie l&rsquo;hébergement (le reste). Ils veulent ensuite partager les frais à égalité. Quelle fraction de la dépense totale Alice doit-elle donner à Louis ?
+    <p>Dans une classe, la moyenne des $12$ filles est $14$ et celle des $8$ garçons est $9$.</p>
+<p>La moyenne de la classe entière est :</p>
+<p><strong>A.</strong> $12$   <strong>B.</strong> $11{,}5$   <strong>C.</strong> $23$   <strong>D.</strong> $12{,}5$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -394,8 +431,12 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Alice a payé $\dfrac{1}{9}D$, Louis a payé $\dfrac{8}{9}D$. Part équitable : $\dfrac{1}{2}D$ chacun.</p>
-<p>Alice doit donner : $\dfrac{1}{2}D-\dfrac{1}{9}D=\dfrac{9}{18}D-\dfrac{2}{18}D={\color{#4A5D7A}\dfrac{7}{18}}D$.</p>
+    <div><p>On ne peut pas faire la moyenne des deux moyennes : les groupes n&rsquo;ont pas le même effectif. Il faut reconstituer la somme totale des notes.</p>
+<p>Somme des notes des filles :</p>
+$$12\times 14=168$$<p>Somme des notes des garçons :</p>
+$$8\times 9=72$$<p>On divise la somme totale par l&rsquo;effectif total, soit $12+8=20$ élèves :</p>
+$$\overline{x}=\dfrac{168+72}{20}=\dfrac{240}{20}={\color{#4A5D7A}12}$$<p>La réponse B est le piège : c&rsquo;est $\dfrac{14+9}{2}$, la moyenne des deux moyennes, qui ne tient pas compte du fait qu&rsquo;il y a plus de filles que de garçons.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -425,7 +466,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Une durée de $2{,}1$ heure correspond à combien de minutes ?
+    <p>On considère la série statistique suivante, déjà rangée dans l&rsquo;ordre croissant :</p>
+$$5\ ;\quad 6\ ;\quad 8\ ;\quad 8\ ;\quad 11\ ;\quad 14\ ;\quad 19$$<p>Déterminer la médiane et l&rsquo;étendue de cette série.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -433,7 +476,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$2{,}1\text{ h}=2\text{ h}+0{,}1\text{ h}=120\text{ min}+6\text{ min}={\color{#4A5D7A}126\text{ min}}$</div>
+    <div><p>La série compte $7$ valeurs. Comme $7$ est impair, la médiane est la valeur du milieu, celle de rang $\dfrac{7+1}{2}=4$.</p>
+<p>En comptant à partir de la gauche, la $4^\text{e}$ valeur est :</p>
+$$\text{Médiane}={\color{#4A5D7A}8}$$<p>L&rsquo;étendue est l&rsquo;écart entre la plus grande et la plus petite valeur :</p>
+$$19-5={\color{#4A5D7A}14}$$</div>
   </div>
   
 </article>
@@ -452,7 +498,29 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Yvette parcourt $600\text{ m}$ en $5$ minutes. Quelle est sa vitesse moyenne en km/h ?
+    <p>Une série statistique est donnée par le tableau suivant :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Valeur</th>
+          <th>1</th>
+          <th>4</th>
+          <th>6</th>
+          <th>9</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Effectif</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>6</td>
+      </tr>
+  </tbody>
+</table>
+<p>Calculer la moyenne de cette série.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -460,7 +528,12 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>En 1 heure (= $5\times 12$ minutes), elle parcourt $12\times 0{,}6\text{ km}={\color{#4A5D7A}7{,}2\text{ km/h}}$.</div>
+    <div><p>L&rsquo;effectif total est la somme des effectifs :</p>
+$$5+5+4+6=20$$<p>La moyenne est la somme de toutes les valeurs, chacune comptée autant de fois que son effectif, divisée par l&rsquo;effectif total :</p>
+$$\overline{x}=\dfrac{1\times 5+4\times 5+6\times 4+9\times 6}{20}$$<p>On calcule le numérateur :</p>
+$$5+20+24+54=103$$<p>D&rsquo;où :</p>
+$$\overline{x}=\dfrac{103}{20}={\color{#4A5D7A}5{,}15}$$<p>On divise bien par l&rsquo;effectif total $20$, et non par le nombre de valeurs différentes.</p>
+</div>
   </div>
   
 </article>
@@ -479,7 +552,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Soit $m$ la fonction définie par $m(x)=-x+1$. À quelle expression est égal $m(x-1)$ ?
+    <p>On considère la série suivante, rangée dans l&rsquo;ordre croissant :</p>
+$$2\ ;\ 4\ ;\ 4\ ;\ 7\ ;\ 7\ ;\ 10\ ;\ 11\ ;\ 13\ ;\ 13\ ;\ 16\ ;\ 17\ ;\ 20$$<p>Déterminer le premier quartile $Q_1$ et le troisième quartile $Q_3$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -487,7 +562,13 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$m(x-1)=-(x-1)+1=-x+1+1={\color{#4A5D7A}-x+2}$</div>
+    <div><p>La série compte $12$ valeurs.</p>
+<p>Pour $Q_1$, on calcule le quart de l&rsquo;effectif :</p>
+$$\dfrac{12}{4}=3$$<p>Ce nombre est entier, donc $Q_1$ est la valeur de rang $3$ :</p>
+$$Q_1={\color{#4A5D7A}4}$$<p>Pour $Q_3$, on calcule les trois quarts de l&rsquo;effectif :</p>
+$$\dfrac{3\times 12}{4}=9$$<p>Ce nombre est entier, donc $Q_3$ est la valeur de rang $9$ :</p>
+$$Q_3={\color{#4A5D7A}13}$$<p>Au moins un quart des valeurs sont inférieures ou égales à $Q_1$, et au moins trois quarts sont inférieures ou égales à $Q_3$.</p>
+</div>
   </div>
   
 </article>
@@ -506,7 +587,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre l&rsquo;équation $(8x-6)-(3x+1)=0$
+    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=4x+5$.</p>
+<p>Déterminer l&rsquo;antécédent de $-3$ par $f$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -514,7 +597,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$8x-6-3x-1=0 \implies 5x-7=0 \implies x={\color{#4A5D7A}\dfrac{7}{5}}$</div>
+    <div><p>On résout l&rsquo;équation $f(x)=-3$ :</p>
+$$4x+5=-3$$<p>On retranche $5$ à chaque membre, puis on divise par $4$ :</p>
+$$4x=-8 \qquad\text{donc}\qquad x={\color{#4A5D7A}-2}$$<p>Vérification : $f(-2)=4\times(-2)+5=-3$.</p>
+</div>
   </div>
   
 </article>
@@ -533,7 +619,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Construire le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=5x+1{,}5$.
+    <p>On retranche $5$ à toutes les valeurs d&rsquo;une série statistique dont la moyenne vaut $21$.</p>
+<p>La moyenne de la nouvelle série est :</p>
+<p><strong>A.</strong> $26$   <strong>B.</strong> $21$   <strong>C.</strong> $16$   <strong>D.</strong> $105$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -541,26 +630,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(x)=0 \iff x=-0{,}3$.</p>
-<p>$f$ est croissante ($a=5>0$) :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th>$-0{,}3$</th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-      </tr>
-  </tbody>
-</table>
+    <div><p>Si on retranche la même quantité à chaque valeur, la somme totale diminue de cette quantité autant de fois qu&rsquo;il y a de valeurs. En divisant par l&rsquo;effectif, la moyenne diminue donc exactement de la même quantité.</p>
+$$\overline{x}_\text{nouvelle}=21-5={\color{#4A5D7A}16}$$<p>La réponse D multiplierait la moyenne par $5$ au lieu de lui retrancher $5$.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -580,7 +652,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Alice et Louis offrent un voyage à Charles. Alice paie les billets de train ($\dfrac{2}{7}$ de la dépense totale) et Louis paie l&rsquo;hébergement (le reste). Ils veulent ensuite partager les frais à égalité. Quelle fraction de la dépense totale Alice doit-elle donner à Louis ?
+    <p>Dans une classe, la moyenne des $15$ filles est $12$ et celle des $5$ garçons est $16$.</p>
+<p>La moyenne de la classe entière est :</p>
+<p><strong>A.</strong> $13{,}5$   <strong>B.</strong> $14$   <strong>C.</strong> $28$   <strong>D.</strong> $13$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -588,8 +663,12 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Alice a payé $\dfrac{2}{7}D$, Louis a payé $\dfrac{5}{7}D$. Part équitable : $\dfrac{1}{2}D$ chacun.</p>
-<p>Alice doit donner : $\dfrac{1}{2}D-\dfrac{2}{7}D=\dfrac{7}{14}D-\dfrac{4}{14}D={\color{#4A5D7A}\dfrac{3}{14}}D$.</p>
+    <div><p>On ne peut pas faire la moyenne des deux moyennes : les groupes n&rsquo;ont pas le même effectif. Il faut reconstituer la somme totale des notes.</p>
+<p>Somme des notes des filles :</p>
+$$15\times 12=180$$<p>Somme des notes des garçons :</p>
+$$5\times 16=80$$<p>On divise la somme totale par l&rsquo;effectif total, soit $15+5=20$ élèves :</p>
+$$\overline{x}=\dfrac{180+80}{20}=\dfrac{260}{20}={\color{#4A5D7A}13}$$<p>La réponse B est le piège : c&rsquo;est $\dfrac{12+16}{2}$, la moyenne des deux moyennes, qui ne tient pas compte du fait qu&rsquo;il y a trois fois plus de filles que de garçons.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -691,7 +770,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

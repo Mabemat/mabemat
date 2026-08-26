@@ -30,10 +30,21 @@ Soit $n_0$ un entier naturel donné. Si une suite $(u_n)$ est définie uniquemen
 </div>
 
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
-La suite des nombres entiers impairs est une suite numérique. <br>
-Le $1^{\text{er}}$ terme est $1$, le $2^{\text{ème}}$ terme est $3$, le $5^{\text{ème}}$ terme est $9$.
+<ol>
+<li>La suite des nombres entiers impairs est une suite numérique. <br>
+Le $1^{\text{er}}$ terme est $1$, le $2^{\text{ème}}$ terme est $3$, le $5^{\text{ème}}$ terme est $9$.</li>
+<li>On construit des motifs géométriques formés de cadres carrés faits de petits carreaux, qui s'agrandissent à chaque étape selon le schéma suivant :
+<div style="display:flex; gap:20px; align-items:center;">
+<img src="/mabemat/figures/1re/chapitre-02/motifs.svg" alt="motifs carrés" style="width:35%; max-height:150px; object-fit:contain;">
+<div style="flex:1;">
+On note $u_n$ le nombre de carreaux utilisés pour construire le cadre de rang $n$. Déterminer $u_1$, $u_2$ et $u_3$.<br>
+En comptant les carreaux de chaque motif : $u_1=1$, $u_2=4$ et $u_3=8$.
+</div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
@@ -65,9 +76,10 @@ Soit la suite $(u_n)$ définie par : $\left\{
 &u_{n+1}=(u_n)^2 -1 
 \end{array}
 \right.$ <br>
-C'est une suite récurrente associée à la fonction $f:x\mapsto x^2-1$ <br>[1em]
+Calculer les quatre premiers termes de cette suite.<br>
+C'est une suite récurrente associée à la fonction $f:x\mapsto x^2-1$. On calcule les termes de proche en proche : 
 <div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
-On a $u_1=(u_0)^2-1=5^2-1=24$ ;<br> $u_2=(u_1)^2-1=24^2-1=575$ ;<br> $u_3=(u_2)^2-1=575^2-1=330624$ ...
+$u_1=(u_0)^2-1=5^2-1=24$ ;<br> $u_2=(u_1)^2-1=24^2-1=575$ ;<br> $u_3=(u_2)^2-1=575^2-1=330624$ ...
 </div><div style="display:inline-block; vertical-align:top; width:calc(49% - 12px);">
 <table>
 <tr>
@@ -108,68 +120,16 @@ Si $f$ est une fonction définie sur un intervalle $[a;+\infty[$ avec $a$ réel 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-Les suites $(u_n)_{n\geq 0}$ et $(v_n)_{n\geq 2}$ définies par $u_n=2n+5$ et $v_n=\sqrt{2n-4}$ sont définies explicitement (pour la première $f:x\mapsto 2x+5$ et pour la seconde $f:x\mapsto \sqrt{2x-4}$.<br>
-Alors $u_0=2\times 0 +5=5$, $u_7=2\times 7 +5=19$ et 
-$v_2=\sqrt{2\times 2-4}=\sqrt{0}=0$, $v_{10}=\sqrt{2\times 10 -4}=\sqrt{16}=4$.
+Les suites $(u_n)_{n\geq 0}$ et $(v_n)_{n\geq 2}$ sont définies explicitement par $u_n=2n+5$ et $v_n=\sqrt{2n-4}$.<br>
+Calculer $u_0$, $u_7$, $v_2$ et $v_{10}$.<br>
+La première suite est associée à la fonction $f:x\mapsto 2x+5$, la seconde à $f:x\mapsto \sqrt{2x-4}$. <br>
+Il suffit de remplacer $n$ par sa valeur :<br>
+$u_0=2\times 0 +5=5$, $u_7=2\times 7 +5=19$,
+$v_2=\sqrt{2\times 2-4}=\sqrt{0}=0$ et $v_{10}=\sqrt{2\times 10 -4}=\sqrt{16}=4$.
 </div>
 </div>
 
-<h2 class="subsection-title">2.2 Représentation graphique des termes d'une suite</h2>
-
-<h3 class="subsubsection-title">2.2.1 Suites définies explicitement</h3>
-
-Lorsqu'une suite $(u_n)$ est définie par $u_n = f(n)$, la représentation graphique de cette suite est l'ensemble des points de la courbe $\mathcal{C}_f$ ayant pour abscisse un nombre entier.
-
-<div class="environment exemple">
-<div class="environment-title">Exemple</div>
-<div class="environment-content">
-Pour représenter la suite $(u_n)_{n\geq 2}$ définie par $u_n = \sqrt{2n - 4}$ , on peut construire un tableau de valeurs en se limitant aux images des nombres entiers naturels.<br>
-On place alors les points de coordonnées $(n;\sqrt{2n - 4})$.
-</div>
-</div>
-
-<div class="remarque">
-Surtout on ne relie pas ces points : on ne représente pas la fonction définie sur $[2;+\infty[$ mais un nuage de points car une suite n'est définie que pour les entiers naturels.
-</div>
-
-<p style="text-align:center;">
-<img src="/mabemat/figures/1re/chapitre-02/fig1.svg" alt="figure 1" style="max-height:400px; max-width:100%;">
-</p>
-<h3 class="subsubsection-title">2.2.2 Suites définies par récurrence</h3>
-
-Pour une suite récurrente définie par $u_{n + 1} = f(u_n)$ , on représente les différents termes de la suite sur l'axe des abscisses.
-
-<div class="environment methode">
-<div class="environment-title">Méthode :</div>
-<div class="environment-content">
-On suppose ici que $n_0 =0$ (il faut suivre la même méthode si $n_0 =1$).<br>
-Pour représenter graphiquement une suite récurrente définie par $u_{n + 1} = f(u_n)$ il faut :
-<ol>
-<li>Tracer sur un même graphique la courbe de la fonction $f $ et la droite d'équation $y=x$.</li>
-<li>Placer le premier terme $u_0$ sur l'axe des abscisses et considérer le point $A_0$ de la courbe $\mathcal{C}_f$ d'abscisse $u_0$ : son ordonnée est $u_1 = f(u_0) $.</li>
-<li>Pour obtenir $u_1$ sur l'axe des abscisses, on utilise la droite d'équation $y = x$ : on « rabat » $u_1$ sur l'axe des abscisses.</li>
-<li>On répète le procédé avec $u_1$ pour obtenir $u_2$ etc...</li>
-</ol>
-</div>
-</div>
-
-<div class="environment exemple">
-<div class="environment-title">Exemple</div>
-<div class="environment-content">
-Soit $(u_n)$ la suite définie pour tout entier naturel $n$ par : $\left\{
-\begin{array}{ll}
-&u_0=1 \\
-& u_{n+1}=-0,1(u_n)^2+2u_n+0,8
-\end{array}
-\right.$<br>
-$(u_n)$ est une suite définie par récurrence associée à la fonction $f(x)=-0,1x^2+2x+0,8$.<br>
-<p style="text-align:center;">
-<img src="/mabemat/figures/1re/chapitre-02/fig2.svg" alt="figure 2" style="max-height:400px; max-width:100%;">
-</p>
-</div>
-</div>
-
-<h2 class="subsection-title">2.3 Sens de variation d'une suite</h2>
+<h2 class="subsection-title">2.2 Sens de variation d'une suite</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition : $ $</div>
@@ -183,10 +143,25 @@ Si $(u_n)$ est croissante ou décroissante, on dit qu'elle est <strong>monotone<
 </div>
 </div>
 
-<div class="environment propriete">
-<div class="environment-title">Propriété :</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
 <div class="environment-content">
-Soit $(u_n)_{n\geq n_0}$ une suite définie par $u_n=f(n)$ où $f$ est une fonction définie sur $I=[a;+\infty[$ avec $n_0\geq a$. Si la fonction $f$ est croissante (resp. décroissante) sur $I$, alors $(u_n)$ est croissante (resp. décroissante).
+Pour étudier le sens de variation d'une suite, une méthode consiste à étudier <strong>le signe de $u_{n+1}-u_n$</strong>.
+<ul>
+<li>Si pour tout $n\in \N$, $u_{n+1}-u_n\geq 0$, la suite $(u_n)$ est <strong>croissante</strong>.</li>
+<li>Si pour tout $n\in \N$, $u_{n+1}-u_n\leq 0$, la suite $(u_n)$ est <strong>décroissante</strong>.</li>
+<li>Si pour tout $n\in \N$, $u_{n+1}-u_n= 0$, la suite $(u_n)$ est <strong>constante</strong>.</li>
+</ul>
+
+On considère la suite $(u_n)$ définie pour tout entier naturel $n$ par
+$\left\{
+\begin{array}{ll}
+&u_0 =1 \\
+&u_{n+1}=2+u_n
+\end{array}
+\right.$
+<br>
+<span style="color:#78985b;">$u_{n+1}-u_n=2+u_n-u_n=2>0$ pour tout $n\in \N$, donc la suite $(u_n)$ est <strong>croissante</strong>.</span>
 </div>
 </div>
 
@@ -195,7 +170,7 @@ Soit $(u_n)_{n\geq n_0}$ une suite définie par $u_n=f(n)$ où $f$ est une fonct
 <li>Graphiquement, on peut émettre une conjecture sur le sens de variation de la suite.</li>
 <li>Certaines suites ne sont ni croissante, ni décroissante. Par exemple, la suite $u_n=(-1)^n$, a ses termes consécutifs de signes contraires. 
 <p style="text-align:center;">
-<img src="/mabemat/figures/1re/chapitre-02/fig3.svg" alt="figure 3" style="max-height:200px; max-width:100%;">
+<img src="/mabemat/figures/1re/chapitre-02/fig3.svg" alt="suite (-1)^n" style="max-height:200px; max-width:100%;">
 </p>
 </li>
 <li>On parle aussi de suite croissante (ou décroissante) à partir d'un certain rang $p$ :
@@ -207,13 +182,6 @@ on dit qu'une suite $(u_n)$ est croissante (resp. décroissante) à partir d'un 
 <div class="environment methode">
 <div class="environment-title">Méthode :</div>
 <div class="environment-content">
-Pour étudier le sens de variation d'une suite, une méthode consiste à étudier <strong>le signe de $u_{n+1}-u_n$</strong>.
-<ul>
-<li>Si pour tout $n\in \N$, $u_{n+1}-u_n\geq 0$, la suite $(u_n)$ est <strong>croissante</strong>.</li>
-<li>Si pour tout $n\in \N$, $u_{n+1}-u_n\leq 0$, la suite $(u_n)$ est <strong>décroissante</strong>.</li>
-<li>Si pour tout $n\in \N$, $u_{n+1}-u_n= 0$, la suite $(u_n)$ est <strong>constante</strong>.</li>
-</ul>
-
 Si la suite est à termes strictement positifs et si la formule définissant la suite comporte des produits et des quotients, il est souvent facile de calculer le rapport $\dfrac{u_{n+1}}{u_n}$.
 <ul>
 <li>Si $\dfrac{u_{n+1}}{u_n}\geq 1$, la suite $(u_n)$ est <strong>croissante</strong>.</li>
@@ -221,44 +189,39 @@ Si la suite est à termes strictement positifs et si la formule définissant la 
 <li>Si $\dfrac{u_{n+1}}{u_n}=1$, la suite $(u_n)$ est <strong>constante</strong>.</li>
 </ul>
 
-<ol>
-<li>
-On considère la suite $(u_n)$ définie pour tout entier naturel $n$ par
-$\left\{
-\begin{array}{ll}
-&u_0 =1 \\
-&u_{n+1}=2+u_n
-\end{array}
-\right.$
-<br>
-<span style="color:#78985b;">$u_{n+1}-u_n=2+u_n-u_n=2>0$ pour tout $n\in \N$, donc la suite $(u_n)$ est <strong>croissante</strong>.</span>
-</li>
-
-<li>
-On considère la suite $(u_n)$ définie pour tout entier naturel $n$ par $u_n=4-3n$.
-<br>
-<span style="color:#78985b;">Pour tout $n\in \N$, $u_{n}=f(n)$ où $f:x\mapsto 4-3x$ est décroissante donc la suite $(u_n)$ est <strong>décroissante</strong>.</span>
-</li>
-
-<li>
 On considère la suite $(u_n)$ définie pour tout entier naturel non nul $n$ par $u_{n}=\dfrac{1}{n(n+1)}$.
 <br>
-<span style="color:#78985b;">Pour tout $n\in \N$, $\dfrac{u_{n+1}}{u_n}=\dfrac{\dfrac{1}{(n+1)(n+2)}}{\dfrac{1}{n(n+1)}}=\dfrac{n(n+1)}{(n+1)(n+2)}=\dfrac{n}{n+2}$. Or, $0\leq n\leq n+2$, on a $\dfrac{u_{n+1}}{u_n}\leq 1$ et donc $u_{n+1}\leq u_n$, donc la suite $(u_n)$ est <strong>décroissante</strong>.</span>
-</li>
-</ol>
-
+<span style="color:#78985b;">Pour tout $n\in \N$, $\dfrac{u_{n+1}}{u_n}=\dfrac{\dfrac{1}{(n+1)(n+2)}}{\dfrac{1}{n(n+1)}}=\dfrac{n(n+1)}{(n+1)(n+2)}=\dfrac{n}{n+2}$.<br>
+Or, $0\leq n\leq n+2$, on a $\dfrac{u_{n+1}}{u_n}\leq 1$ et donc $u_{n+1}\leq u_n$, donc la suite $(u_n)$ est <strong>décroissante</strong>.</span>
 </div>
 </div>
 
-<h2 class="subsection-title">2.4 Notion de limite d'une suite</h2>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $(u_n)_{n\geq n_0}$ une suite définie par $u_n=f(n)$ où $f$ est une fonction définie sur $I=[a;+\infty[$ avec $n_0\geq a$. Si la fonction $f$ est croissante (resp. décroissante) sur $I$, alors $(u_n)$ est croissante (resp. décroissante).
+</div>
+</div>
 
-<h3 class="subsubsection-title">2.4.1 Suite convergente</h3>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On considère la suite $(u_n)$ définie pour tout entier naturel $n$ par $u_n=4-3n$. Étudier son sens de variation.<br>
+Pour tout $n\in \N$, $u_{n}=f(n)$ où $f:x\mapsto 4-3x$ est décroissante (fonction affine avec $a=-3<0$).<br>
+Donc la suite $(u_n)$ est <strong>décroissante</strong>.
+</div>
+</div>
+
+<h2 class="subsection-title">2.3 Notion de limite d'une suite</h2>
+
+<h3 class="subsubsection-title">2.3.1 Suite convergente</h3>
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
 Pour tout $n\in \N^*$, on considère la suite $(u_n)$ définie par $u_n=\dfrac{2n+1}{n}$.<br>
-On construit le tableau de valeurs avec des termes de la suite : <table>
+Conjecturer sa limite à l'aide d'un tableau de valeurs.
+<table>
 <tr>
 <th>$n$</th>
 <th>$1$</th>
@@ -289,20 +252,20 @@ On dit que la suite $(u_n)$ converge vers $2$ et on note : $\underset{n\rightarr
 </div>
 </div>
 
-<h3 class="subsubsection-title">2.4.2 Suite divergente</h3>
+<h3 class="subsubsection-title">2.3.2 Suite divergente</h3>
 
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
 <ul>
 <li>Pour tout $n\in \N$, on considère la suite $(u_n)$ définie par $u_n=n^2+1$. <br>
-Calculons quelques termes de cette suite : <br>
 $u_0=0^2+1=1$, $u_1=1^2+1=2$, $u_2=2^2+1=5$, $u_{10}=10^2+1=101$, $u_{100}=100^2+1=10001$.<br>
 Plus $n$ devient grand, plus les termes de la suite semblent devenir grand.<br>
 On dit que la suite $(u_n)$ diverge vers $+\infty$ et on note : $\underset{n\rightarrow +\infty}{\lim} u_n=+\infty$.</li>
-<li>Pour tout $n\in \N$, on considère la suite $(v_n)$ définie par $v_{n+1}=(-1)^nv_n$ et $v_0=2$. <br> Calculons les premiers termes de cette suite : <br>
+<li>Pour tout $n\in \N$, on considère la suite $(v_n)$ définie par $v_{n+1}=(-1)^nv_n$ et $v_0=2$. <br>
 $v_1=(-1)^0v_0=2$, $v_2=(-1)^1v_1=-2$, $v_3=(-1)^2v_2=2$, $v_4=(-1)^3v_3=-2$, $v_5=(-1)^4v_4=2$.<br>
-Plus $n$ devient grand, les termes de la suite ne semblent pas se rapprocher vers une valeur unique. On dit que la suite $(v_n)$ diverge.</li>
+Plus $n$ devient grand, les termes de la suite ne semblent pas se rapprocher vers une valeur unique. <br>
+On dit que la suite $(v_n)$ diverge.</li>
 </ul>
 </div>
 </div>

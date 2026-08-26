@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 29 — MaBémat</title>
+<title>Semaine 29 - Révisions : calcul, évolutions et fonctions — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Révisions : calcul, évolutions et fonctions</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,10 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la droite $d$ d&rsquo;équation $y = 3x + 6$.</p>
-<p>Quel est le point d&rsquo;intersection de $d$ avec l&rsquo;axe des abscisses ?</p>
-<p><strong>A.</strong> $(0 ; 6)$   <strong>B.</strong> $(2 ; 0)$   <strong>C.</strong> $(-2 ; 0)$   <strong>D.</strong> $(6 ; 0)$</p>
-
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$A=\dfrac{5}{6}-\dfrac{2}{9}\times\dfrac{3}{4}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,10 +243,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>L&rsquo;intersection avec l&rsquo;axe des abscisses vérifie $y = 0$ :</p>
-$$3x + 6 = 0 \implies x = -2$$<p>Le point est $(-2 ; 0)$.</p>
-<p><strong>Réponse : C</strong></p>
-</div>
+    <div><p>La multiplication est prioritaire sur la soustraction : on commence par elle.</p>
+$$\dfrac{2}{9}\times\dfrac{3}{4}=\dfrac{2\times 3}{9\times 4}=\dfrac{6}{36}=\dfrac{1}{6}$$<p>On effectue ensuite la soustraction, les deux fractions ayant déjà le même dénominateur :</p>
+$$A=\dfrac{5}{6}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2\times \cancel{2}}{3\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{3}}$$</div>
   </div>
   
 </article>
@@ -264,9 +264,8 @@ $$3x + 6 = 0 \implies x = -2$$<p>Le point est $(-2 ; 0)$.</p>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la droite $D$ d&rsquo;équation $y = -\dfrac{1}{5}x + 1$ et le point $A(60 ; -14)$.</p>
-<p>Le point $A$ est-il au-dessus ou en dessous de la droite $D$ ?</p>
-<p><strong>A.</strong> $A$ est sur la droite $D$   <strong>B.</strong> $A$ est au-dessus de $D$   <strong>C.</strong> $A$ est en dessous de $D$   <strong>D.</strong> On ne peut pas savoir</p>
+    <p>Un prix augmente de $25\,\%$, puis diminue de $12\,\%$.</p>
+<p>Déterminer le taux d&rsquo;évolution global, en pourcentage.</p>
 
   </div>
   
@@ -275,9 +274,9 @@ $$3x + 6 = 0 \implies x = -2$$<p>Le point est $(-2 ; 0)$.</p>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On calcule l&rsquo;ordonnée de $D$ en $x = 60$ :</p>
-$$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $A$ est $-14 < -11$, donc $A$ est <strong>en dessous</strong> de la droite $D$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>On multiplie les coefficients multiplicateurs :</p>
+$$1{,}25\times 0{,}88=1{,}1$$<p>Comme $1{,}1=1+0{,}1$, il s&rsquo;agit d&rsquo;une hausse de ${\color{#4A5D7A}10\,\%}$.</p>
+<p>On note au passage que $25-12=13$ ne donne pas le bon résultat : les taux ne s&rsquo;additionnent jamais.</p>
 </div>
   </div>
   
@@ -297,9 +296,9 @@ $$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la fonction $f$ définie par $f(x) = \dfrac{3}{x}$ et les points $P(1 ; 3)$, $Q(3 ; 1)$, $R(-1 ; -3)$, $S\!\left(\dfrac{1}{3} ; 9\right)$.</p>
-<p>Quel est le point qui <strong>n&rsquo;appartient pas</strong> à la courbe représentative de $f$ ?</p>
-<p><strong>A.</strong> $P$   <strong>B.</strong> $Q$   <strong>C.</strong> $R$   <strong>D.</strong> $S$</p>
+    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-2x-3$.</p>
+<p><strong>a.</strong> Calculer $f(-2)$.</p>
+<p><strong>b.</strong> Vérifier que $3$ est un antécédent de $0$ par $f$.</p>
 
   </div>
   
@@ -308,16 +307,9 @@ $$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On vérifie $f(x) = \dfrac{3}{x}$ pour chaque point :</p>
-<ul>
-<li>$f(1) = 3$ → $P(1;3)$ ✓</li>
-<li>$f(3) = 1$ → $Q(3;1)$ ✓</li>
-<li>$f(-1) = -3$ → $R(-1;-3)$ ✓</li>
-<li>$f\!\left(\dfrac{1}{3}\right) = 9$ → $S\!\left(\dfrac{1}{3};9\right)$ ✓</li>
-</ul>
-<p>Attention : on relit l&rsquo;énoncé — $Q(3;1)$ : $f(3) = 3/3 = 1$ ✓. Tous semblent corrects. En relisant, $S\!\left(\dfrac{1}{3};9\right)$ : $f(1/3) = 3/(1/3) = 9$ ✓.</p>
-<p>Le point qui n&rsquo;appartient pas est <strong>B</strong> ($Q$ ne correspond pas à la courbe si l&rsquo;énoncé utilise une autre valeur — voir le livret pour la valeur exacte).</p>
-<p><strong>Réponse : B</strong></p>
+    <div><p><strong>a.</strong> On remplace $x$ par $-2$, entre parenthèses :</p>
+$$f(-2)=(-2)^2-2\times(-2)-3=4+4-3={\color{#4A5D7A}5}$$<p><strong>b.</strong> Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :</p>
+$$f(3)=3^2-2\times 3-3=9-6-3={\color{#4A5D7A}0}$$<p>L&rsquo;égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.</p>
 </div>
   </div>
   
@@ -337,9 +329,8 @@ $$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On cherche les solutions de l&rsquo;équation $(x + 3)^2 = 10$.</p>
-<p>Quel est l&rsquo;ensemble solution ?</p>
-<p><strong>A.</strong> $\{-3\}$   <strong>B.</strong> $\{\sqrt{10} - 3\}$   <strong>C.</strong> $\{-\sqrt{10}-3 ; \sqrt{10}-3\}$   <strong>D.</strong> $\emptyset$</p>
+    <p>On considère la série statistique suivante, rangée dans l&rsquo;ordre croissant :</p>
+$$3\ ;\ 5\ ;\ 5\ ;\ 8\ ;\ 9\ ;\ 12\ ;\ 15\ ;\ 15$$<p>Déterminer sa médiane et sa moyenne.</p>
 
   </div>
   
@@ -348,8 +339,9 @@ $$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$(x+3)^2 = 10 \implies x + 3 = \pm\sqrt{10} \implies x = -3 \pm \sqrt{10}$$<p>L&rsquo;ensemble solution est $\{-\sqrt{10}-3 ; \sqrt{10}-3\}$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>La série compte $8$ valeurs, un effectif pair : la médiane est la moyenne des valeurs de rang $4$ et $5$.</p>
+$$\text{Médiane}=\dfrac{8+9}{2}={\color{#4A5D7A}8{,}5}$$<p>Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :</p>
+$$\dfrac{3+5+5+8+9+12+15+15}{8}=\dfrac{72}{8}={\color{#4A5D7A}9}$$<p>Moyenne et médiane sont deux indicateurs différents : ici la moyenne est tirée vers le haut par les deux valeurs $15$.</p>
 </div>
   </div>
   
@@ -369,9 +361,8 @@ $$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un coureur parcourt $500$ m en $5$ minutes.</p>
-<p>Quelle est sa vitesse en km/h ?</p>
-<p><strong>A.</strong> $6$ km/h   <strong>B.</strong> $60$ km/h   <strong>C.</strong> $10$ km/h   <strong>D.</strong> $1{,}5$ km/h</p>
+    <p>On lance un dé équilibré à six faces. La probabilité d&rsquo;obtenir au moins $5$ est :</p>
+<p><strong>A.</strong> $\dfrac{1}{6}$   <strong>B.</strong> $\dfrac{1}{3}$   <strong>C.</strong> $\dfrac{5}{6}$   <strong>D.</strong> $\dfrac{2}{3}$</p>
 
   </div>
   
@@ -380,8 +371,9 @@ $$y_D = -\frac{1}{5} \times 60 + 1 = -12 + 1 = -11$$<p>Or l&rsquo;ordonnée de $
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$500$ m en $5$ min $= 0{,}5$ km en $\dfrac{5}{60}$ h.</p>
-$$v = \frac{0{,}5}{\frac{5}{60}} = 0{,}5 \times \frac{60}{5} = 6 \text{ km/h}$$<p><strong>Réponse : A</strong></p>
+    <div><p>« Au moins $5$ » signifie $5$ ou $6$ : l&rsquo;événement compte $2$ issues favorables sur $6$ issues équiprobables.</p>
+$$P=\dfrac{2}{6}={\color{#4A5D7A}\dfrac{1}{3}}$$<p>La réponse A ne compte qu&rsquo;une seule issue, en oubliant que $6$ est aussi « au moins $5$ ».</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -401,8 +393,8 @@ $$v = \frac{0{,}5}{\frac{5}{60}} = 0{,}5 \times \frac{60}{5} = 6 \text{ km/h}$$<
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Quelle est l&rsquo;unité adaptée pour exprimer la distance Paris–Lyon ?</p>
-<p><strong>A.</strong> cm   <strong>B.</strong> mm   <strong>C.</strong> km   <strong>D.</strong> m</p>
+    <p>Le nombre $\dfrac{\left(10^{3}\right)^{2}}{10^{-2}}$ est égal à :</p>
+<p><strong>A.</strong> $10^{4}$   <strong>B.</strong> $10^{6}$   <strong>C.</strong> $10^{8}$   <strong>D.</strong> $10^{-8}$</p>
 
   </div>
   
@@ -411,8 +403,10 @@ $$v = \frac{0{,}5}{\frac{5}{60}} = 0{,}5 \times \frac{60}{5} = 6 \text{ km/h}$$<
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La distance Paris–Lyon est d&rsquo;environ $465$ km. L&rsquo;unité adaptée est le <strong>kilomètre</strong>.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>Pour une puissance de puissance, on <strong>multiplie</strong> les exposants :</p>
+$$\left(10^{3}\right)^{2}=10^{3\times 2}=10^{6}$$<p>Pour un quotient de puissances de même base, on soustrait les exposants :</p>
+$$\dfrac{10^{6}}{10^{-2}}=10^{6-(-2)}=10^{6+2}={\color{#4A5D7A}10^{8}}$$<p>La réponse A additionne les exposants du carré au lieu de les multiplier, et la réponse B oublie le dénominateur.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -442,10 +436,8 @@ $$v = \frac{0{,}5}{\frac{5}{60}} = 0{,}5 \times \frac{60}{5} = 6 \text{ km/h}$$<
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la droite $d$ d&rsquo;équation $y = \dfrac{x}{2} - 10$.</p>
-<p>Quel est le point d&rsquo;intersection de $d$ avec l&rsquo;axe des abscisses ?</p>
-<p><strong>A.</strong> $(0 ; -10)$   <strong>B.</strong> $(20 ; 0)$   <strong>C.</strong> $(-20 ; 0)$   <strong>D.</strong> $(10 ; 0)$</p>
-
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$A=\dfrac{7}{10}-\dfrac{3}{8}\times\dfrac{4}{5}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -453,10 +445,9 @@ $$v = \frac{0{,}5}{\frac{5}{60}} = 0{,}5 \times \frac{60}{5} = 6 \text{ km/h}$$<
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>L&rsquo;intersection avec l&rsquo;axe des abscisses vérifie $y = 0$ :</p>
-$$\frac{x}{2} - 10 = 0 \implies x = 20$$<p>Le point est $(20 ; 0)$.</p>
-<p><strong>Réponse : B</strong></p>
-</div>
+    <div><p>La multiplication est prioritaire sur la soustraction : on commence par elle.</p>
+$$\dfrac{3}{8}\times\dfrac{4}{5}=\dfrac{3\times 4}{8\times 5}=\dfrac{12}{40}=\dfrac{3}{10}$$<p>On effectue ensuite la soustraction, les deux fractions ayant alors le même dénominateur :</p>
+$$A=\dfrac{7}{10}-\dfrac{3}{10}=\dfrac{4}{10}=\dfrac{2\times \cancel{2}}{5\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{5}}$$</div>
   </div>
   
 </article>
@@ -475,9 +466,8 @@ $$\frac{x}{2} - 10 = 0 \implies x = 20$$<p>Le point est $(20 ; 0)$.</p>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la droite $D$ d&rsquo;équation $y = -\dfrac{2}{3}x + 1$ et le point $A(36 ; -20)$.</p>
-<p>Le point $A$ est-il au-dessus ou en dessous de la droite $D$ ?</p>
-<p><strong>A.</strong> $A$ est sur la droite $D$   <strong>B.</strong> $A$ est en dessous de $D$   <strong>C.</strong> $A$ est au-dessus de $D$   <strong>D.</strong> On ne peut pas savoir</p>
+    <p>Un prix augmente de $20\,\%$, puis diminue de $25\,\%$.</p>
+<p>Déterminer le taux d&rsquo;évolution global, en pourcentage.</p>
 
   </div>
   
@@ -486,9 +476,9 @@ $$\frac{x}{2} - 10 = 0 \implies x = 20$$<p>Le point est $(20 ; 0)$.</p>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On calcule l&rsquo;ordonnée de $D$ en $x = 36$ :</p>
-$$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $A$ est $-20 > -23$, donc $A$ est <strong>au-dessus</strong> de la droite $D$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>On multiplie les coefficients multiplicateurs :</p>
+$$1{,}20\times 0{,}75=0{,}9$$<p>Comme $0{,}9=1-0{,}1$, il s&rsquo;agit d&rsquo;une baisse de ${\color{#4A5D7A}10\,\%}$.</p>
+<p>On note au passage que $20-25=-5$ ne donne pas le bon résultat : les taux ne s&rsquo;additionnent jamais.</p>
 </div>
   </div>
   
@@ -508,9 +498,9 @@ $$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la fonction $f$ définie par $f(x) = \dfrac{4}{x}$ et les points $P(1 ; 4)$, $Q(4 ; 1)$, $R(-2 ; -2)$, $S(2 ; 3)$.</p>
-<p>Quel est le point qui <strong>n&rsquo;appartient pas</strong> à la courbe représentative de $f$ ?</p>
-<p><strong>A.</strong> $P$   <strong>B.</strong> $S$   <strong>C.</strong> $R$   <strong>D.</strong> $Q$</p>
+    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-4x+3$.</p>
+<p><strong>a.</strong> Calculer $f(-2)$.</p>
+<p><strong>b.</strong> Vérifier que $3$ est un antécédent de $0$ par $f$.</p>
 
   </div>
   
@@ -519,14 +509,9 @@ $$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On vérifie $f(x) = \dfrac{4}{x}$ :</p>
-<ul>
-<li>$f(1) = 4$ → $P(1;4)$ ✓</li>
-<li>$f(4) = 1$ → $Q(4;1)$ ✓</li>
-<li>$f(-2) = -2$ → $R(-2;-2)$ ✓</li>
-<li>$f(2) = 2 \neq 3$ → $S(2;3)$ ✗</li>
-</ul>
-<p><strong>Réponse : B</strong></p>
+    <div><p><strong>a.</strong> On remplace $x$ par $-2$, entre parenthèses :</p>
+$$f(-2)=(-2)^2-4\times(-2)+3=4+8+3={\color{#4A5D7A}15}$$<p><strong>b.</strong> Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :</p>
+$$f(3)=3^2-4\times 3+3=9-12+3={\color{#4A5D7A}0}$$<p>L&rsquo;égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.</p>
 </div>
   </div>
   
@@ -546,9 +531,8 @@ $$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On cherche les solutions de l&rsquo;équation $(x + 4)^2 = 5$.</p>
-<p>Quel est l&rsquo;ensemble solution ?</p>
-<p><strong>A.</strong> $\{-4\}$   <strong>B.</strong> $\{\sqrt{5} - 4\}$   <strong>C.</strong> $\{-\sqrt{5}-4 ; \sqrt{5}-4\}$   <strong>D.</strong> $\emptyset$</p>
+    <p>On considère la série statistique suivante, rangée dans l&rsquo;ordre croissant :</p>
+$$2\ ;\ 5\ ;\ 7\ ;\ 9\ ;\ 11\ ;\ 13\ ;\ 16\ ;\ 17$$<p>Déterminer sa médiane et sa moyenne.</p>
 
   </div>
   
@@ -557,8 +541,9 @@ $$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$(x+4)^2 = 5 \implies x + 4 = \pm\sqrt{5} \implies x = -4 \pm \sqrt{5}$$<p>L&rsquo;ensemble solution est $\{-\sqrt{5}-4 ; \sqrt{5}-4\}$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>La série compte $8$ valeurs, un effectif pair : la médiane est la moyenne des valeurs de rang $4$ et $5$.</p>
+$$\text{Médiane}=\dfrac{9+11}{2}={\color{#4A5D7A}10}$$<p>Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :</p>
+$$\dfrac{2+5+7+9+11+13+16+17}{8}=\dfrac{80}{8}={\color{#4A5D7A}10}$$<p>Ici les deux indicateurs coïncident, ce qui traduit une série assez symétrique. Ce n&rsquo;est pas toujours le cas.</p>
 </div>
   </div>
   
@@ -578,9 +563,8 @@ $$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un coureur parcourt $400$ m en $4$ minutes.</p>
-<p>Quelle est sa vitesse en km/h ?</p>
-<p><strong>A.</strong> $4$ km/h   <strong>B.</strong> $10$ km/h   <strong>C.</strong> $6$ km/h   <strong>D.</strong> $60$ km/h</p>
+    <p>On lance un dé équilibré à six faces. La probabilité d&rsquo;obtenir au moins $3$ est :</p>
+<p><strong>A.</strong> $\dfrac{5}{6}$   <strong>B.</strong> $\dfrac{1}{3}$   <strong>C.</strong> $\dfrac{1}{2}$   <strong>D.</strong> $\dfrac{2}{3}$</p>
 
   </div>
   
@@ -589,8 +573,9 @@ $$y_D = -\frac{2}{3} \times 36 + 1 = -24 + 1 = -23$$<p>Or l&rsquo;ordonnée de $
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$400$ m en $4$ min $= 0{,}4$ km en $\dfrac{4}{60}$ h.</p>
-$$v = \frac{0{,}4}{\frac{4}{60}} = 0{,}4 \times \frac{60}{4} = 6 \text{ km/h}$$<p><strong>Réponse : C</strong></p>
+    <div><p>« Au moins $3$ » signifie $3$, $4$, $5$ ou $6$ : l&rsquo;événement compte $4$ issues favorables sur $6$ issues équiprobables.</p>
+$$P=\dfrac{4}{6}={\color{#4A5D7A}\dfrac{2}{3}}$$<p>On peut aussi passer par l&rsquo;événement contraire, « obtenir au plus $2$ », de probabilité $\dfrac{2}{6}=\dfrac{1}{3}$, puis calculer $1-\dfrac{1}{3}=\dfrac{2}{3}$.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -610,8 +595,8 @@ $$v = \frac{0{,}4}{\frac{4}{60}} = 0{,}4 \times \frac{60}{4} = 6 \text{ km/h}$$<
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Quelle est l&rsquo;unité adaptée pour exprimer la quantité d&rsquo;eau dans un verre ?</p>
-<p><strong>A.</strong> L   <strong>B.</strong> mL   <strong>C.</strong> km   <strong>D.</strong> cL</p>
+    <p>Le nombre $\dfrac{\left(10^{4}\right)^{2}}{10^{-3}}$ est égal à :</p>
+<p><strong>A.</strong> $10^{11}$   <strong>B.</strong> $10^{5}$   <strong>C.</strong> $10^{8}$   <strong>D.</strong> $10^{-11}$</p>
 
   </div>
   
@@ -620,8 +605,10 @@ $$v = \frac{0{,}4}{\frac{4}{60}} = 0{,}4 \times \frac{60}{4} = 6 \text{ km/h}$$<
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Un verre contient environ $20$ cL d&rsquo;eau. L&rsquo;unité la plus adaptée parmi les choix est le <strong>centilitre</strong>.</p>
-<p><strong>Réponse : D</strong></p>
+    <div><p>Pour une puissance de puissance, on <strong>multiplie</strong> les exposants :</p>
+$$\left(10^{4}\right)^{2}=10^{4\times 2}=10^{8}$$<p>Pour un quotient de puissances de même base, on soustrait les exposants :</p>
+$$\dfrac{10^{8}}{10^{-3}}=10^{8-(-3)}=10^{8+3}={\color{#4A5D7A}10^{11}}$$<p>La réponse B additionne les exposants du carré au lieu de les multiplier, et la réponse C oublie le dénominateur.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -679,7 +666,7 @@ $$v = \frac{0{,}4}{\frac{4}{60}} = 0{,}4 \times \frac{60}{4} = 6 \text{ km/h}$$<
   });
 
   
-  var showDevoirCorr =  true ;
+  var showDevoirCorr =  false ;
   if (!showDevoirCorr) {
     var devoirPanel = document.getElementById('panel-devoir');
     if (devoirPanel) {
@@ -723,7 +710,7 @@ $$v = \frac{0{,}4}{\frac{4}{60}} = 0{,}4 \times \frac{60}{4} = 6 \text{ km/h}$$<
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

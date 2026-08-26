@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" font-family="Georgia, 'DejaVu Serif', serif" font-size="14">
+<line x1="20.0" y1="240.0" x2="240.0" y2="20.0" stroke="#B8C5A6" stroke-width="1.5" stroke-dasharray="6 5"/>
+<circle cx="130" cy="130" r="95" fill="none" stroke="#758467" stroke-width="2"/><line x1="15.0" y1="130.0" x2="245.0" y2="130.0" stroke="#2D2226" stroke-width="1.5"/>
+<line x1="130.0" y1="245.0" x2="130.0" y2="15.0" stroke="#2D2226" stroke-width="1.5"/>
+<text x="120.0" y="146.0" fill="#2D2226" font-size="13" text-anchor="middle" font-style="italic" font-weight="normal">O</text>
+<line x1="130.0" y1="130.0" x2="197.2" y2="62.8" stroke="#B85C5C" stroke-width="2.5"/>
+<circle cx="197.2" cy="62.8" r="3" fill="#B85C5C"/><circle cx="225" cy="130" r="3" fill="#2D2226"/><text x="211.2" y="56.8" fill="#2D2226" font-size="14" text-anchor="middle" font-style="italic" font-weight="normal">M</text>
+<text x="237.0" y="148.0" fill="#2D2226" font-size="14" text-anchor="middle" font-style="italic" font-weight="normal">A</text>
+<line x1="197.2" y1="62.8" x2="197.2" y2="130.0" stroke="#9A8D91" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="197.2" y1="62.8" x2="130.0" y2="62.8" stroke="#9A8D91" stroke-width="1" stroke-dasharray="4 4"/>
+<path d="M 160 130 A 30 30 0 0 0 151.2 108.8" fill="none" stroke="#B85C5C" stroke-width="1.5"/><text x="174.0" y="116.0" fill="#B85C5C" font-size="12" text-anchor="middle" font-style="italic" font-weight="normal">π/4</text>
+
+</svg>

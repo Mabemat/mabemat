@@ -1,8 +1,8 @@
 ---
-title: "Correction — Séance 06 Bilan : Fonctions et Boucles"
+title: "Correction - Séance 06 Bilan : Fonctions et Boucles"
 ---
 
-### Exercice 1 — Aire d'un triangle
+### Exercice 1 - Aire d'un triangle
 
 ```python
 def aire_triangle(base, hauteur):
@@ -13,7 +13,7 @@ def aire_triangle(base, hauteur):
 
 ---
 
-### Exercice 2 — Vitesse moyenne
+### Exercice 2 - Vitesse moyenne
 
 ```python
 def vitesse_moyenne(distance, duree):
@@ -24,7 +24,7 @@ def vitesse_moyenne(distance, duree):
 
 ---
 
-### Exercice 3 — Fonction mystère
+### Exercice 3 - Fonction mystère
 
 **Q1.** La fonction a deux paramètres : `a` et `b`. Le corps contient une boucle `for` qui tourne `b` fois. À chaque tour, elle ajoute `a` à `total` (initialisé à 0). La fonction renvoie `total`.
 
@@ -41,7 +41,7 @@ def vitesse_moyenne(distance, duree):
 
 ---
 
-### Exercice 4 — Comprendre `range()`
+### Exercice 4 - Comprendre `range()`
 
 | Expression | Liste générée |
 |---|---|
@@ -52,7 +52,7 @@ def vitesse_moyenne(distance, duree):
 
 ---
 
-### Exercice 5 — Table de multiplication
+### Exercice 5 - Table de multiplication
 
 **Q1.**
 ```python
@@ -75,9 +75,15 @@ Exemple : `table_multiplication(7)` affiche :
 7 × 10 = 70
 ```
 
+> ⚠️ **Ici `print` est le bon choix, et `return` serait une erreur.** L'énoncé demande une fonction qui **affiche** la table : elle doit donc produire 10 lignes à l'écran. Avec `return n * i` à la place du `print`, la fonction s'arrêterait au **premier** tour de boucle et ne renverrait qu'une seule valeur, 7.
+>
+> C'est l'un des rares cas où `print` est correct dans une fonction : quand l'énoncé dit « affiche ». Dès que l'énoncé dit « renvoie », c'est `return`.
+>
+> Conséquence : `resultat = table_multiplication(7)` affiche bien la table, mais `resultat` vaut `None`, car la fonction ne renvoie rien.
+
 ---
 
-### Exercice 6 — Lecture de programme
+### Exercice 6 - Lecture de programme
 
 Programme :
 ```python
@@ -91,7 +97,7 @@ print(p)
 
 | Tour | `i` | Calcul | `p` |
 |:---:|:---:|:---:|:---:|
-| Avant boucle | — | — | 1 |
+| Avant boucle | - | - | 1 |
 | Tour 1 | 1 | 1 × 1 | 1 |
 | Tour 2 | 2 | 1 × 2 | 2 |
 | Tour 3 | 3 | 2 × 3 | 6 |
@@ -102,22 +108,24 @@ print(p)
 
 **Q2.** Vérifier par exécution.
 
-**Q3.** Ce programme calcule le factoriel de 5 : 5! = 1 × 2 × 3 × 4 × 5 = **120**.
+**Q3.** Ce programme calcule le **produit** des entiers de 1 à 5, c'est-à-dire la factorielle de 5 : 5! = 1 × 2 × 3 × 4 × 5 = **120**.
+
+> ⚠️ La variable `p` est initialisée à **1** et non à 0 : avec `p = 0`, tous les produits vaudraient 0. Pour une **somme**, au contraire, on initialise à 0.
 
 ---
 
-### Exercice 7 — Croissance d'un arbre 🌳
+### Exercice 7 - Croissance d'un arbre 🌳
 
-**Q1.**
+**Q1.** Avec une boucle `for` (c'est la version attendue ici) :
 ```python
 def taille_arbre(n):
     taille = 2.0
     for i in range(n):
         taille = taille + 0.3
-    return taille
+    return round(taille, 1)
 ```
 
-ou de façon directe :
+ou de façon directe, sans boucle :
 ```python
 def taille_arbre(n):
     return 2.0 + n * 0.3
@@ -127,12 +135,18 @@ def taille_arbre(n):
 
 | Appel | Calcul | Résultat |
 |---|---|---|
-| `taille_arbre(5)` | 2.0 + 5×0.3 | `3.5` ✓ |
-| `taille_arbre(10)` | 2.0 + 10×0.3 | `5.0` ✓ |
+| `taille_arbre(5)` | 2.0 + 5 × 0.3 | `3.5` ✓ |
+| `taille_arbre(10)` | 2.0 + 10 × 0.3 | `5.0` ✓ |
+
+> ⚠️ **Pourquoi le `round` dans la version avec boucle ?** Si on écrit simplement `return taille`, Python affiche `3.499999999999999` pour `taille_arbre(5)` et `4.999999999999998` pour `taille_arbre(10)`.
+>
+> Ce n'est pas un bug de votre programme : le nombre 0,3 ne se code pas exactement en mémoire (l'ordinateur travaille en base 2), et l'erreur minuscule s'accumule à chaque addition. C'est pourquoi on arrondit avec `round(taille, 1)` avant de renvoyer le résultat.
+>
+> La version directe `2.0 + n * 0.3` ne pose pas ce problème : il n'y a qu'une seule multiplication, donc pas d'accumulation.
 
 ---
 
-### Exercice 8 — Lecture de programme
+### Exercice 8 - Lecture de programme
 
 Programme :
 ```python
@@ -154,7 +168,7 @@ while n > 1:
 | 12 | ✅ | 6 | 6 |
 | 6 | ✅ | 3 | 3 |
 | 3 | ✅ | 1 | 1 |
-| 1 | ❌ | — | arrêt |
+| 1 | ❌ | - | arrêt |
 
 Le programme affiche : `50  25  12  6  3  1`
 
@@ -162,7 +176,7 @@ Le programme affiche : `50  25  12  6  3  1`
 
 ---
 
-### Exercice 9 — Batterie de téléphone 🔋
+### Exercice 9 - Batterie de téléphone 🔋
 
 **Q1.**
 ```python
@@ -177,9 +191,11 @@ print("Nombre d'heures :", heures)
 print("Batterie restante :", round(batterie, 1), "%")
 ```
 
-Résultat : **20 heures**, batterie restante ≈ 18.5 %
+Résultat : **20 heures**, batterie restante ≈ **18.9 %**
 
-(100 × 0.92²⁰ ≈ 18.5 — le 20ᵉ tour fait passer la charge sous 20 %)
+(après 19 tours la charge vaut ≈ 20.5 %, encore ≥ 20 ; le 20ᵉ tour la fait passer à ≈ 18.9 %)
+
+> ⚠️ Ici la batterie perd 8 % **de sa charge actuelle** (on multiplie par 0.92), et non 8 points comme à la séance 05. La décroissance est donc de plus en plus lente : c'est pour cela qu'on tient 20 heures et non 10.
 
 **Q2.**
 ```python
@@ -196,7 +212,7 @@ def autonomie(charge_initiale, perte):
 
 ---
 
-### Exercice 10 — Seuil de followers 📱
+### Exercice 10 - Seuil de followers 📱
 
 **Q1.**
 ```python
@@ -220,12 +236,19 @@ def semaines_pour_objectif(followers_initial, taux, objectif):
     return semaines
 ```
 
-`semaines_pour_objectif(200, 15, 2000)` → **16 semaines**  
-(200 × 1.15¹⁶ ≈ 2070 > 2000)
+`semaines_pour_objectif(200, 15, 2000)` → **17 semaines**
+
+| Semaine | Abonnés |
+|---:|---:|
+| 15 | ≈ 1 627 |
+| 16 | ≈ 1 872 (encore < 2 000) |
+| **17** | ≈ **2 152** → objectif dépassé |
+
+> ⚠️ Erreur de calcul mental fréquente : 200 × 1.15¹⁶ ≈ 1 872, ce qui est **inférieur** à 2 000. Il faut bien 17 semaines. En cas de doute, on fait confiance à la boucle plutôt qu'à l'estimation.
 
 ---
 
-### Exercice 11 — Compter les multiples
+### Exercice 11 - Compter les multiples
 
 **Q1.**
 ```python
@@ -256,7 +279,7 @@ def nb_multiples(n, limite):
 
 ---
 
-### Exercice 12 — Le bon choix : `for` ou `while` ?
+### Exercice 12 - Le bon choix : `for` ou `while` ?
 
 **Q1.** Somme de 1 à 100 → **`for`** (nombre de répétitions connu)
 ```python
@@ -282,7 +305,7 @@ for i in range(2, 51, 2):
 
 ---
 
-### Exercice 13 — Épargne avec versements 💰
+### Exercice 13 - Épargne avec versements 💰
 
 **Q1.**
 ```python
@@ -298,8 +321,12 @@ def epargne_leo(n):
 
 | Durée | Résultat |
 |---|---|
-| `epargne_leo(12)` | **1233.56 €** |
-| `epargne_leo(24)` | **2546.57 €** |
+| `epargne_leo(12)` | **1239.72 €** |
+| `epargne_leo(24)` | **2555.91 €** |
+
+Vérification pour les premiers mois : mois 1 → 100 × 1.005 = 100,50 € ; mois 2 → (100,50 + 100) × 1.005 = 201,50 € ; mois 3 → (201,50 + 100) × 1.005 ≈ 303,01 €.
+
+> ⚠️ L'ordre des deux lignes compte : on **dépose d'abord** (`solde = solde + 100`), **puis** on applique les intérêts (`solde = solde * 1.005`). En inversant, le versement du mois ne rapporterait pas d'intérêt et on trouverait 1 233,56 € au lieu de 1 239,72 €.
 
 **Q3.**
 ```python
@@ -313,11 +340,11 @@ def mois_objectif(objectif):
     return mois
 ```
 
-`mois_objectif(2000)` → **19 mois** (solde ≈ 2029 € après 19 mois)
+`mois_objectif(2000)` → **20 mois** (après 19 mois le solde vaut ≈ 1 997,91 €, tout juste en dessous ; au 20ᵉ mois il atteint ≈ 2 108,40 €)
 
 ---
 
-### Exercice 14 — (Bonus) Nombre premier
+### Exercice 14 - (Bonus) Nombre premier
 
 **Q1.**
 ```python

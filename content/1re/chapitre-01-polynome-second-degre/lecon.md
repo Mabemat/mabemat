@@ -198,7 +198,7 @@ Soit $ax^2+bx+c$ un trinôme du second degré, avec $a\neq 0$; on a $ax^2+bx+c=a
 <ol>
 <li>Si $\Delta<0$, alors $\left(x+ \dfrac{b}{2a}\right)^2-\dfrac{\Delta}{4a^2}>0$, donc $ax^2+bx+c$ est du signe de $a$.</li>
 <li>Si $\Delta=0$, alors $\left(x+ \dfrac{b}{2a}\right)^2\geq 0$, donc $ax^2+bx+c$ s'annule pour $x=\dfrac{-b}{2a}$ et est du signe de $a$ pour les autres valeurs.</li>
-<li>Si $\Delta>0$, alors $ax^2+bx+c=a(x-x_1)(x-x_2)$, où $x_1$ et $x_2$ sont les racines du trinôme (on suppose que $x_1 &lt x_2$), faisons un tableau de signes : 
+<li>Si $\Delta>0$, alors $ax^2+bx+c=a(x-x_1)(x-x_2)$, où $x_1$ et $x_2$ sont les racines du trinôme (on suppose que $x_1 &lt; x_2$), faisons un tableau de signes : 
 
 <p style="text-align:center;">
 <img src="/mabemat/figures/1re/chapitre-01/1.png" alt="figure 5" style="max-height:200px; max-width:100%;">
@@ -282,12 +282,60 @@ Donc $D_g=\left]-\infty;\dfrac{-5}{4}\right]\cup [1;+\infty[$.
 </ul>
 Pour cela, on déterminera le <strong>signe</strong> de l'expression $f(x)-g(x)$.
 
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit $f$ et $g$ les fonctions définies sur $\R$ par $f(x)=2x^2-3x+1$ et $g(x)=x^2+x-2$.<br>
+Étudier la position relative de leurs courbes $C_f$ et $C_g$.<br>
+
+<strong>Étape 1 : on calcule la différence.</strong>
+$$f(x)-g(x)=\left(2x^2-3x+1\right)-\left(x^2+x-2\right)=2x^2-3x+1-x^2-x+2=x^2-4x+3$$
+
+<strong>Étape 2 : on étudie le signe de cette différence.</strong><br>
+C'est un trinôme du second degré avec $a=1$, $b=-4$ et $c=3$.<br>
+$\Delta=(-4)^2-4\times 1\times 3=16-12=4=2^2>0$, il y a donc deux racines :
+$$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+2}{2}=3$$
+Comme $a=1>0$, le trinôme est positif à l'extérieur des racines et négatif entre les racines :
+
+<table>
+<tr>
+<th>$x$</th>
+<th>$-\infty$</th>
+<th></th>
+<th>$1$</th>
+<th></th>
+<th>$3$</th>
+<th></th>
+<th>$+\infty$</th>
+</tr>
+<tr>
+<td>$f(x)-g(x)$</td>
+<td></td>
+<td>$+$</td>
+<td>$0$</td>
+<td>$-$</td>
+<td>$0$</td>
+<td>$+$</td>
+<td></td>
+</tr>
+</table>
+
+<strong>Étape 3 : on conclut.</strong>
+<ul>
+<li>Sur $]-\infty;1[$ et sur $]3;+\infty[$ : $f(x)-g(x)>0$, donc $f(x)>g(x)$ et $C_f$ est <strong>au-dessus</strong> de $C_g$.</li>
+<li>Sur $]1;3[$ : $f(x)-g(x)<0$, donc $f(x)<g(x)$ et $C_f$ est <strong>en dessous</strong> de $C_g$.</li>
+<li>Pour $x=1$ et $x=3$ : $f(x)-g(x)=0$, donc les deux courbes <strong>se coupent</strong>. <br>
+Comme $f(1)=2-3+1=0$ et $f(3)=18-9+1=10$, les points d'intersection sont $A(1;0)$ et $B(3;10)$.</li>
+</ul>
+</div>
+</div>
+
 <h3 class="subsubsection-title">1.3.3 Équations bi-carrées</h3>
 
 Résoudre dans $\R$ par changement de variables $x^2=X$ l'équation $2x^4+11x^2-6=0$.<br>
 
 On pose $X=x^2$ alors on a $2X^2+11X-6=0$. <br>
-$\Delta=11^2-4\times 2 \times (-6)=169=13^2>0$ donc $X_1=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d'où $x_2'=-\sqrt{\dfrac{1}{2}}$ et $x_2''=\sqrt{\dfrac{1}{2}}$. <br>Finalement, $S=\Biggl\lbrace -\sqrt{\dfrac12} ; \sqrt{\dfrac12} \Biggr\rbrace$.
+$\Delta=11^2-4\times 2 \times (-6)=169=13^2>0$ donc $X_1=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d'où $x_2'=-\sqrt{\dfrac{1}{2}}=-\dfrac{\sqrt{2}}{2}$ et $x_2''=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}$. <br>Finalement, $S=\left\{-\dfrac{\sqrt{2}}{2};\dfrac{\sqrt{2}}{2}\right\}$.
 
 
 
@@ -305,7 +353,7 @@ Si $P(x)=ax^2+bx+c$ admet des racines $x_1$ et $x_2$, alors $x_1+x_2=\dfrac{-b}{
 <div class="environment-content">
 Résoudre le système d'équations $E:\left\{
 \begin{array}{ll}
-x+y &=5 \\\\
+x+y &=5 \\
 x \times y & =-6
 \end{array}
 \right.$
@@ -314,10 +362,27 @@ On considère le polynôme $P(x)=x^2-5x-6$ alors $x$ et $y$ sont les racines de 
 $\Delta=(-5)^2-4\times 1\times (-6)=49=7^2>0$ et $x_1=\dfrac{5-7}{2}=-1=x$ et $x_2=\dfrac{5+7}{2}=6=y$.<br>
 Vérification : $\left\{
 \begin{array}{lll}
-x+y &=-1+6&=5 \\\\
+x+y &=-1+6&=5 \\
 x \times y &= (-1)\times 6&=-6 
 \end{array}
 \right.$. <br>
 Donc $S=(x,y)=(-1,6)$.
 </div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Résoudre dans $\R$ l'équation $3x^2-8x+5=0$.<br>
+On remarque que $x_1=1$ est une racine évidente.<br>
+En effet : $P(1)=3\times 1^2-8\times 1+5=3-8+5=0$.<br>
+D'après le théorème, $x_1\times x_2=\dfrac{c}{a}=\dfrac{5}{3}$. Comme $x_1=1$, on en déduit $x_2=\dfrac{5}{3}$.<br>
+<em>Vérification avec la somme :</em> $x_1+x_2=1+\dfrac{5}{3}=\dfrac{8}{3}$ et $\dfrac{-b}{a}=\dfrac{8}{3}$. <br>
+Donc $S=\left\{1;\dfrac{5}{3}\right\}$ et $3x^2-8x+5=3(x-1)\left(x-\dfrac{5}{3}\right)$.
+</div>
+</div>
+
+<div class="remarque">
+Cette méthode ne remplace pas le discriminant : elle n'est utile que lorsqu'une racine <em>saute aux yeux</em>. <br>
+Si aucune valeur simple ne convient, on revient au calcul de $\Delta$.
 </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 11 — MaBémat</title>
+<title>Semaine 11 - Lectures graphiques et variations — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Lectures graphiques et variations</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,8 +234,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Déterminer l&rsquo;expression algébrique de la fonction affine $f$ représentée ci-dessous :</p>
-<img src="/mabemat/images/automatismes/2nde/s11-q01.svg" alt="Fonction affine" style="width:60%;max-height:400px;max-width:100%;">
+    <p>Ci-dessous la courbe représentative d&rsquo;une fonction $f$ définie sur $[-4\,;\,4]$.</p>
+<img src="/mabemat/images/automatismes/2nde/s11-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+<p>Lire graphiquement $f(-3)$ et $f(2)$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -240,9 +245,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On lit graphiquement : ordonnée à l&rsquo;origine $b=3$, coefficient directeur $a=-1$.</p>
-<p>Donc $f(x)={\color{#4A5D7A}-x+3}$.</p>
-</div>
+    <div><p>Pour lire une image, on part de la valeur sur l&rsquo;axe des abscisses, on monte (ou on descend) jusqu&rsquo;à la courbe, puis on lit la hauteur sur l&rsquo;axe des ordonnées.</p>
+<p>Pour $x=-3$, la courbe passe par le point $(-3\,;\,0)$ :</p>
+$$f(-3)={\color{#4A5D7A}0}$$<p>Pour $x=2$, la courbe passe par le point $(2\,;\,2)$ :</p>
+$$f(2)={\color{#4A5D7A}2}$$</div>
   </div>
   
 </article>
@@ -261,7 +267,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-2x+3$.
+    Avec la courbe de la question précédente, résoudre graphiquement l&rsquo;équation $f(x)=2$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -269,26 +275,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(x)=0 \iff x=\dfrac{3}{2}$.</p>
-<p>$f$ est décroissante ($a=-2<0$) donc :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th>$\dfrac{3}{2}$</th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$+$</td>
-          <td>$0$</td>
-          <td>$-$</td>
-      </tr>
-  </tbody>
-</table>
+    <div><p>Résoudre $f(x)=2$, c&rsquo;est chercher tous les points de la courbe situés à la hauteur $2$. On trace donc mentalement la droite horizontale d&rsquo;équation $y=2$ et on repère ses points d&rsquo;intersection avec la courbe.</p>
+<p>Cette droite coupe la courbe en trois points, d&rsquo;abscisses $-4$, $2$ et $4$.</p>
+$$S={\color{#4A5D7A}\lbrace -4\,;\,2\,;\,4\rbrace}$$<p>On donne bien les <strong>abscisses</strong> des points d&rsquo;intersection : ce sont elles, les solutions.</p>
 </div>
   </div>
   
@@ -308,7 +297,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le nombre d&rsquo;employés d&rsquo;une entreprise a baissé de $40\,\%$. Quelle évolution permettrait de retrouver le nombre de départ ? (arrondir à $0{,}01\,\%$ près)
+    <p>Toujours avec la même courbe :</p>
+<p><strong>a.</strong> Donner le maximum de $f$ sur $[-4\,;\,4]$ et la valeur en laquelle il est atteint.</p>
+<p><strong>b.</strong> Donner l&rsquo;intervalle sur lequel $f$ est croissante.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -316,9 +308,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Coefficient multiplicateur de la baisse : $1-0{,}40=0{,}6$.</p>
-<p>Coefficient réciproque : $\dfrac{1}{0{,}6}\approx 1{,}6667$.</p>
-<p>Taux réciproque : $1{,}6667-1=0{,}6667\approx{\color{#4A5D7A}66{,}67\,\%}$ d&rsquo;augmentation.</p>
+    <div><p><strong>a.</strong> Le maximum est la plus grande hauteur atteinte par la courbe. Le point le plus haut est le sommet de coordonnées $(3\,;\,4)$.</p>
+<p>Le maximum de $f$ vaut ${\color{#4A5D7A}4}$, atteint pour $x={\color{#4A5D7A}3}$.</p>
+<p>Attention à ne pas confondre les deux : le maximum est la valeur de $f$, pas l&rsquo;abscisse.</p>
+<p><strong>b.</strong> La courbe descend jusqu&rsquo;au point le plus bas, d&rsquo;abscisse $-2$, puis monte jusqu&rsquo;au sommet d&rsquo;abscisse $3$.</p>
+$$f\ \text{est croissante sur}\ {\color{#4A5D7A}\left[-2\,;\,3\right]}$$<p>Elle est décroissante sur $[-4\,;\,-2]$ et sur $[3\,;\,4]$.</p>
 </div>
   </div>
   
@@ -338,7 +332,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Un programme de calcul effectue les opérations suivantes : choisir un nombre, le multiplier par $5$, ajouter $5$, multiplier par $10$, retrancher $3$. Si on note $x$ le nombre de départ, quel est le résultat ? Développer l&rsquo;expression.
+    <p>Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x^2-4x$.</p>
+<p><strong>a.</strong> Calculer $g(-1)$.</p>
+<p><strong>b.</strong> Déterminer les antécédents de $0$ par $g$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -346,8 +343,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$x \xrightarrow{\times 5} 5x \xrightarrow{+5} 5x+5 \xrightarrow{\times 10} 10(5x+5)=50x+50 \xrightarrow{-3} 50x+47$</p>
-<p>Le résultat est ${\color{#4A5D7A}50x+47}$ (multiplier par $50$ puis ajouter $47$).</p>
+    <div><p><strong>a.</strong> On remplace $x$ par $-1$ :</p>
+$$g(-1)=(-1)^2-4\times(-1)=1+4={\color{#4A5D7A}5}$$<p><strong>b.</strong> On résout $g(x)=0$, c&rsquo;est-à-dire $x^2-4x=0$. On factorise par $x$ :</p>
+$$x(x-4)=0$$<p>Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
+$$x=0 \qquad\text{ou}\qquad x-4=0\ \text{donc}\ x=4$$<p>Les antécédents de $0$ sont ${\color{#4A5D7A}0}$ et ${\color{#4A5D7A}4}$.</p>
 </div>
   </div>
   
@@ -367,7 +366,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre l&rsquo;équation : $\dfrac{9x-9}{-8}=\dfrac{-10}{8}$
+    <p>Le prix d&rsquo;un sac a baissé de $19\,\%$. Il coûte maintenant $298$ euros.</p>
+<p>Le prix initial, en euros, est donné par le calcul :</p>
+<p><strong>A.</strong> $298\times 0{,}81$   <strong>B.</strong> $\dfrac{298}{1{,}19}$   <strong>C.</strong> $298\times 1{,}19$   <strong>D.</strong> $\dfrac{298}{0{,}81}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -375,10 +377,45 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$8(9x-9)=-8\times(-10)$</p>
-<p>$72x-72=80$</p>
-<p>$72x=152$</p>
-<p>$x=\dfrac{152}{72}={\color{#4A5D7A}\dfrac{19}{9}}$</p>
+    <div><p>Une baisse de $19\,\%$ correspond au coefficient multiplicateur $1-0{,}19=0{,}81$.</p>
+<p>En notant $P$ le prix initial, on a donc :</p>
+$$P\times 0{,}81=298$$<p>Pour retrouver $P$, on <strong>divise</strong> par le coefficient multiplicateur :</p>
+$$P={\color{#4A5D7A}\dfrac{298}{0{,}81}}$$<p>Les réponses A et C appliquent une évolution au lieu de la défaire, et la réponse B utilise le coefficient d&rsquo;une hausse de $19\,\%$, qui n&rsquo;est pas le coefficient réciproque d&rsquo;une baisse de $19\,\%$.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère la fonction $f$ définie par $f(x)=(3x-1)(2x+5)$.</p>
+<p>L&rsquo;image de $-2$ par la fonction $f$ est égale à :</p>
+<p><strong>A.</strong> $-1$   <strong>B.</strong> $7$   <strong>C.</strong> $-7$   <strong>D.</strong> $-14$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Inutile de développer : on remplace directement $x$ par $-2$ dans chaque parenthèse.</p>
+$$f(-2)=\bigl(3\times(-2)-1\bigr)\bigl(2\times(-2)+5\bigr)$$<p>On calcule chaque parenthèse séparément :</p>
+$$3\times(-2)-1=-7 \qquad\text{et}\qquad 2\times(-2)+5=1$$<p>Puis on multiplie les deux résultats :</p>
+$$f(-2)=-7\times 1={\color{#4A5D7A}-7}$$<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -408,8 +445,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Déterminer l&rsquo;expression algébrique de la fonction affine $f$ représentée ci-dessous :</p>
-<img src="/mabemat/images/automatismes/2nde/s11d-q01.svg" alt="Fonction affine" style="width:60%;max-height:400px;max-width:100%;">
+    <p>Ci-dessous la courbe représentative d&rsquo;une fonction $f$ définie sur $[-4\,;\,4]$.</p>
+<img src="/mabemat/images/automatismes/2nde/s11d-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+<p>Lire graphiquement $f(-1)$ et $f(3)$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -417,9 +456,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On lit graphiquement : ordonnée à l&rsquo;origine $b=-4$, coefficient directeur $a=3$.</p>
-<p>Donc $f(x)={\color{#4A5D7A}3x-4}$.</p>
-</div>
+    <div><p>Pour lire une image, on part de la valeur sur l&rsquo;axe des abscisses, on monte (ou on descend) jusqu&rsquo;à la courbe, puis on lit la hauteur sur l&rsquo;axe des ordonnées.</p>
+<p>Pour $x=-1$, la courbe passe par le point $(-1\,;\,2)$ :</p>
+$$f(-1)={\color{#4A5D7A}2}$$<p>Pour $x=3$, la courbe passe par le point $(3\,;\,4)$ :</p>
+$$f(3)={\color{#4A5D7A}4}$$</div>
   </div>
   
 </article>
@@ -438,7 +478,7 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3x-3$.
+    Avec la courbe de la question précédente, résoudre graphiquement l&rsquo;équation $f(x)=4$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -446,26 +486,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(x)=0 \iff x=1$.</p>
-<p>$f$ est croissante ($a=3>0$) donc :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th>$1$</th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-      </tr>
-  </tbody>
-</table>
+    <div><p>Résoudre $f(x)=4$, c&rsquo;est chercher tous les points de la courbe situés à la hauteur $4$. On trace donc mentalement la droite horizontale d&rsquo;équation $y=4$ et on repère ses points d&rsquo;intersection avec la courbe.</p>
+<p>Cette droite coupe la courbe en trois points, d&rsquo;abscisses $-4$, $1$ et $3$.</p>
+$$S={\color{#4A5D7A}\lbrace -4\,;\,1\,;\,3\rbrace}$$<p>On donne bien les <strong>abscisses</strong> des points d&rsquo;intersection : ce sont elles, les solutions.</p>
 </div>
   </div>
   
@@ -485,7 +508,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le nombre d&rsquo;employés d&rsquo;une entreprise a baissé de $26\,\%$. Quelle évolution permettrait de retrouver le nombre de départ ? (arrondir à $0{,}01\,\%$ près)
+    <p>Toujours avec la même courbe :</p>
+<p><strong>a.</strong> Donner le maximum de $f$ sur $[-4\,;\,4]$ et la valeur en laquelle il est atteint.</p>
+<p><strong>b.</strong> Donner l&rsquo;intervalle sur lequel $f$ est croissante.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -493,9 +519,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Coefficient multiplicateur de la baisse : $0{,}74$.</p>
-<p>Coefficient réciproque : $\dfrac{1}{0{,}74}\approx 1{,}3514$.</p>
-<p>Taux réciproque : $1{,}3514-1\approx{\color{#4A5D7A}35{,}14\,\%}$ d&rsquo;augmentation.</p>
+    <div><p><strong>a.</strong> Le maximum est la plus grande hauteur atteinte par la courbe. Le point le plus haut est le sommet de coordonnées $(2\,;\,6)$.</p>
+<p>Le maximum de $f$ vaut ${\color{#4A5D7A}6}$, atteint pour $x={\color{#4A5D7A}2}$.</p>
+<p>Attention à ne pas confondre les deux : le maximum est la valeur de $f$, pas l&rsquo;abscisse.</p>
+<p><strong>b.</strong> La courbe descend jusqu&rsquo;au point le plus bas, d&rsquo;abscisse $-2$, puis monte jusqu&rsquo;au sommet d&rsquo;abscisse $2$.</p>
+$$f\ \text{est croissante sur}\ {\color{#4A5D7A}\left[-2\,;\,2\right]}$$<p>Elle est décroissante sur $[-4\,;\,-2]$ et sur $[2\,;\,4]$.</p>
 </div>
   </div>
   
@@ -515,7 +543,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Un programme de calcul effectue les opérations suivantes : choisir un nombre, le multiplier par $4$, ajouter $3$, ajouter le triple du nombre de départ. Si on note $x$ le nombre de départ, quel est le résultat ?
+    <p>Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x^2-6x$.</p>
+<p><strong>a.</strong> Calculer $g(-1)$.</p>
+<p><strong>b.</strong> Déterminer les antécédents de $0$ par $g$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -523,8 +554,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$x \xrightarrow{\times 4} 4x \xrightarrow{+3} 4x+3 \xrightarrow{+3x} 4x+3+3x=7x+3$</p>
-<p>Le résultat est ${\color{#4A5D7A}7x+3}$ (multiplier par $7$ puis ajouter $3$).</p>
+    <div><p><strong>a.</strong> On remplace $x$ par $-1$ :</p>
+$$g(-1)=(-1)^2-6\times(-1)=1+6={\color{#4A5D7A}7}$$<p><strong>b.</strong> On résout $g(x)=0$, c&rsquo;est-à-dire $x^2-6x=0$. On factorise par $x$ :</p>
+$$x(x-6)=0$$<p>Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
+$$x=0 \qquad\text{ou}\qquad x-6=0\ \text{donc}\ x=6$$<p>Les antécédents de $0$ sont ${\color{#4A5D7A}0}$ et ${\color{#4A5D7A}6}$.</p>
 </div>
   </div>
   
@@ -544,7 +577,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre l&rsquo;équation : $\dfrac{2x-8}{4}=\dfrac{-8}{5}$
+    <p>Le prix d&rsquo;un manteau a baissé de $23\,\%$. Il coûte maintenant $154$ euros.</p>
+<p>Le prix initial, en euros, est donné par le calcul :</p>
+<p><strong>A.</strong> $\dfrac{154}{0{,}77}$   <strong>B.</strong> $\dfrac{154}{1{,}23}$   <strong>C.</strong> $154\times 0{,}77$   <strong>D.</strong> $154\times 1{,}23$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -552,10 +588,45 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$5(2x-8)=4\times(-8)$</p>
-<p>$10x-40=-32$</p>
-<p>$10x=8$</p>
-<p>$x=\dfrac{8}{10}={\color{#4A5D7A}\dfrac{4}{5}}$</p>
+    <div><p>Une baisse de $23\,\%$ correspond au coefficient multiplicateur $1-0{,}23=0{,}77$.</p>
+<p>En notant $P$ le prix initial, on a donc :</p>
+$$P\times 0{,}77=154$$<p>Pour retrouver $P$, on <strong>divise</strong> par le coefficient multiplicateur :</p>
+$$P={\color{#4A5D7A}\dfrac{154}{0{,}77}}$$<p>Les réponses C et D appliquent une évolution au lieu de la défaire, et la réponse B utilise le coefficient d&rsquo;une hausse de $23\,\%$, qui n&rsquo;est pas le coefficient réciproque d&rsquo;une baisse de $23\,\%$.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère la fonction $f$ définie par $f(x)=(2x+3)(4x-1)$.</p>
+<p>L&rsquo;image de $-3$ par la fonction $f$ est égale à :</p>
+<p><strong>A.</strong> $-39$   <strong>B.</strong> $39$   <strong>C.</strong> $9$   <strong>D.</strong> $-9$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Inutile de développer : on remplace directement $x$ par $-3$ dans chaque parenthèse.</p>
+$$f(-3)=\bigl(2\times(-3)+3\bigr)\bigl(4\times(-3)-1\bigr)$$<p>On calcule chaque parenthèse séparément :</p>
+$$2\times(-3)+3=-3 \qquad\text{et}\qquad 4\times(-3)-1=-13$$<p>Puis on multiplie les deux résultats. Le produit de deux nombres négatifs est positif :</p>
+$$f(-3)=-3\times(-13)={\color{#4A5D7A}39}$$<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -657,7 +728,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

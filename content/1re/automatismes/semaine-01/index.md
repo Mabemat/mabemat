@@ -26,9 +26,9 @@ L'image de $-3$ par la fonction $f$ est égale à :
 ---CORR---
 On a :
 $$\begin{aligned}
-          f(-3)&=2\times(-3)^2+2\times (-3)+2\\\\
-          &=2\times 9-6+2\\\\
-          &=18-6+2\\\\
+          f(-3)&=2\times(-3)^2+2\times (-3)+2\\
+          &=2\times 9-6+2\\
+          &=18-6+2\\
           &=14
           \end{aligned}$$.
 
@@ -46,10 +46,10 @@ On considère le nombre $N=\dfrac{10^4}{5^2}$. On a :
 
 ---CORR---
 $$\begin{aligned}
-    N&=\dfrac{10^4}{5^2}\\\\
-    &=\dfrac{5^4\times 2^4 }{5^2}\\\\
-    &=2^4\times 5^{2}\\\\
-    &=10^2\times 2^{2}\\\\
+    N&=\dfrac{10^4}{5^2}\\
+    &=\dfrac{5^4\times 2^4 }{5^2}\\
+    &=2^4\times 5^{2}\\
+    &=10^2\times 2^{2}\\
     &=4\times 10^{2}
     \end{aligned}$$
 La bonne réponse est la réponse <span class="rep">D</span>.
@@ -87,8 +87,8 @@ On a :
 On a : 
 
 $$\begin{aligned}
-    A&=\dfrac{27}{1\ 000}+\dfrac{267}{100}\\\\
-    &=0{,}027+2{,}67\\\\
+    A&=\dfrac{27}{1\ 000}+\dfrac{267}{100}\\
+    &=0{,}027+2{,}67\\
     &=2{,}697
     \end{aligned}$$
 La bonne réponse est la réponse <span class="rep">A</span>.
@@ -154,8 +154,8 @@ On a :<br>
 
 $$
 \begin{aligned}
-f(-5)&=\left(2\times(-5)-2\right)\left(3\times(-5)+2\right)\\\\
-&=(-10-2)(-15+2)\\\\
+f(-5)&=\left(2\times(-5)-2\right)\left(3\times(-5)+2\right)\\
+&=(-10-2)(-15+2)\\
 &= -12\times(-13)=\boldsymbol{156}
 \end{aligned}
 $$
@@ -183,10 +183,10 @@ On considère le nombre $N=\dfrac{6^4}{2^2}$. On a :
 ---CORR---
 $$
 \begin{aligned}
-N&=\dfrac{6^4}{2^2}\\\\
-&=\dfrac{2^4\times 3^4 }{2^2}\\\\
-&=3^4\times 2^{2}\\\\
-&=6^2\times 3^{2}\\\\
+N&=\dfrac{6^4}{2^2}\\
+&=\dfrac{2^4\times 3^4 }{2^2}\\
+&=3^4\times 2^{2}\\
+&=6^2\times 3^{2}\\
 &=\boldsymbol{9\times 6^{2}}
 \end{aligned}
 $$
@@ -232,8 +232,8 @@ On a :
 
 $$
 \begin{aligned}
-A&=\dfrac{92}{100}+\dfrac{18}{1\,000}\\\\
-&=0{,}92+0{,}018\\\\
+A&=\dfrac{92}{100}+\dfrac{18}{1\,000}\\
+&=0{,}92+0{,}018\\
 &=\boldsymbol{0{,}938}
 \end{aligned}
 $$

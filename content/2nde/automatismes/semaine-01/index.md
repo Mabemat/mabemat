@@ -1,5 +1,5 @@
 ---
-title: "Semaine 1 — Fractions"
+title: "Semaine 1 - Fractions et calcul numérique"
 layout: "automatismes-2nde"
 auto_number: 1
 weight: 1
@@ -8,63 +8,91 @@ weight: 1
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-$\dfrac{2}{6}-\dfrac{3}{9}$ =
----CORR---
-$$\dfrac{2}{6}-\dfrac{3}{9}=\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{6{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 2}}}{9{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{6-6}{18}=\dfrac{0}{18}={\color{#4A5D7A}0}$$
+Calculer et donner le résultat sous forme d'une fraction irréductible :
 
-On réduit les fractions au même dénominateur (18), puis on effectue la soustraction.
+$$\dfrac{5}{6}-\dfrac{3}{8}$$
+---CORR---
+On cherche un dénominateur commun à $6$ et $8$ : c'est $24$.
+
+$$\dfrac{5}{6}-\dfrac{3}{8}=\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 4}}}{6{\color{#4A5D7A}\boldsymbol{\times 4}}}-\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{8{\color{#4A5D7A}\boldsymbol{\times 3}}}=\dfrac{20}{24}-\dfrac{9}{24}=\dfrac{20-9}{24}={\color{#4A5D7A}\dfrac{11}{24}}$$
+
+$11$ est premier et ne divise pas $24$ : la fraction est bien irréductible.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-$\dfrac{8}{6}-\dfrac{2}{21}$ =
----CORR---
-$$\dfrac{8}{6}-\dfrac{2}{21}=\dfrac{8{\color{#4A5D7A}\boldsymbol{\times 7}}}{6{\color{#4A5D7A}\boldsymbol{\times 7}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{21{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{56-4}{42}=\dfrac{52}{42}=\dfrac{26\times 2}{21\times 2}={\color{#4A5D7A}\dfrac{26}{21}}$$
+Calculer et donner le résultat sous forme d'une fraction irréductible :
 
-Le dénominateur commun est 42. On simplifie ensuite par 2.
+$$\dfrac{-14}{15}\times\dfrac{25}{21}$$
+---CORR---
+Le produit d'un nombre négatif par un nombre positif est négatif :
+
+$$\dfrac{-14}{15}\times\dfrac{25}{21}=-\dfrac{14\times 25}{15\times 21}$$
+
+On décompose numérateur et dénominateur en facteurs, puis on simplifie :
+
+$$-\dfrac{2\times \cancel{7}\times 5\times \cancel{5}}{3\times \cancel{5}\times 3\times \cancel{7}}=-\dfrac{2\times 5}{3\times 3}={\color{#4A5D7A}-\dfrac{10}{9}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-$\dfrac{11}{10} \div \dfrac{77}{-30}$ =
+Calculer :
+
+$$A=-3\times\Bigl((-2)^3+5\times(-2)\Bigr)$$
 ---CORR---
-$$\dfrac{11}{10} \div \dfrac{77}{-30} = \dfrac{11}{10} \times \dfrac{-30}{77} = \dfrac{11 \times (-30)}{10 \times 77}$$
+On calcule d'abord ce qui est entre parenthèses, en respectant les priorités (la puissance avant la multiplication) :
 
-On décompose :
+$$(-2)^3=(-2)\times(-2)\times(-2)=-8 \qquad\text{et}\qquad 5\times(-2)=-10$$
 
-$$\dfrac{(-11) \times 3 \times 10}{10 \times 7 \times 11} = \dfrac{-3 \times \cancel{10} \times \cancel{11}}{\cancel{10} \times 7 \times \cancel{11}} = {\color{#4A5D7A}-\dfrac{3}{7}}$$
+Donc :
 
-Pour diviser par une fraction, on multiplie par son inverse.
+$$A=-3\times\bigl(-8+(-10)\bigr)=-3\times(-18)={\color{#4A5D7A}54}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-$\dfrac{-15}{55}\times\dfrac{-77}{40}$ =
+Dans une classe de $30$ élèves, $\dfrac{2}{5}$ des élèves sont des filles.
+
+Parmi les garçons, $\dfrac{1}{3}$ étudient l'allemand.
+
+Combien de garçons étudient l'allemand ?
 ---CORR---
-$$\dfrac{-15}{55}\times\dfrac{-77}{40}=\dfrac{(-15)\times(-77)}{55\times 40} = \dfrac{15 \times 77}{55 \times 40}$$
+Nombre de filles :
 
-On décompose :
+$$\dfrac{2}{5}\times 30=\dfrac{2\times 30}{5}=\dfrac{60}{5}=12$$
 
-$$\dfrac{3 \times \cancel{5} \times 7 \times \cancel{11}}{8 \times 5 \times \cancel{5} \times \cancel{11}} = {\color{#4A5D7A}\dfrac{21}{40}}$$
+Il y a donc $30-12=18$ garçons dans la classe.
 
-Le produit de deux nombres négatifs est positif.
+Parmi eux, $\dfrac{1}{3}$ étudient l'allemand :
+
+$$\dfrac{1}{3}\times 18={\color{#4A5D7A}6}\ \text{garçons.}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Ce matin, Aude a ouvert une bouteille d'eau. Elle a bu $\dfrac{5}{7}$ de la bouteille.
+On considère $A=\dfrac{43}{1\,000}+\dfrac{351}{100}$. On a :
 
-Puis à midi, elle a bu $\dfrac{1}{6}$ du reste. Quelle fraction de la bouteille a-t-elle bu à midi ?
+**A.** $A=3{,}553$ &emsp; **B.** $A=3{,}943$ &emsp; **C.** $A=0{,}039\,4$ &emsp; **D.** $A=0{,}394$
 ---CORR---
-Le matin, Aude a bu $\dfrac{5}{7}$ de la bouteille. Il reste alors :
+On écrit chaque fraction sous forme décimale. Diviser par $1\,000$ décale la virgule de trois rangs, diviser par $100$ la décale de deux rangs :
 
-$$1 - \dfrac{5}{7} = \dfrac{7}{7} - \dfrac{5}{7} = \dfrac{2}{7}$$
+$$\dfrac{43}{1\,000}=0{,}043 \qquad\text{et}\qquad \dfrac{351}{100}=3{,}51$$
 
-À midi, elle a bu $\dfrac{1}{6}$ du reste, soit :
+Donc :
 
-$$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{21}} \text{ de la bouteille.}$$
+$$A=0{,}043+3{,}51={\color{#4A5D7A}3{,}553}$$
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-On considère $A=\dfrac{1}{2-\dfrac{1}{2}}$. Calculer $A$.
+Dans un lycée, il y a $750$ élèves inscrits. $24\,\%$ d'entre eux sont demi-pensionnaires.
+
+Le nombre de demi-pensionnaires est :
+
+**A.** $18$ &emsp; **B.** $1\,800$ &emsp; **C.** $312{,}5$ &emsp; **D.** $180$
 ---CORR---
-$$A = \dfrac{1}{2-\dfrac{1}{2}} = \dfrac{1}{\dfrac{4}{2}-\dfrac{1}{2}} = \dfrac{1}{\dfrac{3}{2}} = 1 \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{2}{3}}$$
+Prendre $24\,\%$ d'une quantité, c'est la multiplier par $\dfrac{24}{100}=0{,}24$ :
+
+$$\dfrac{24}{100}\times 750=\dfrac{24\times 750}{100}=\dfrac{18\,000}{100}={\color{#4A5D7A}180}$$
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -72,59 +100,91 @@ $$A = \dfrac{1}{2-\dfrac{1}{2}} = \dfrac{1}{\dfrac{4}{2}-\dfrac{1}{2}} = \dfrac{
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-$\dfrac{9}{2}+\dfrac{4}{20}$ =
----CORR---
-$$\dfrac{9}{2}+\dfrac{4}{20}=\dfrac{9{\color{#4A5D7A}\boldsymbol{\times 10}}}{2{\color{#4A5D7A}\boldsymbol{\times 10}}}+\dfrac{4}{20}=\dfrac{90+4}{20}=\dfrac{94}{20}=\dfrac{47\times 2}{10\times 2}={\color{#4A5D7A}\dfrac{47}{10}}$$
+Calculer et donner le résultat sous forme d'une fraction irréductible :
 
-On réduit au même dénominateur (20), puis on simplifie par 2.
+$$\dfrac{7}{10}-\dfrac{2}{15}$$
+---CORR---
+On cherche un dénominateur commun à $10$ et $15$ : c'est $30$.
+
+$$\dfrac{7}{10}-\dfrac{2}{15}=\dfrac{7{\color{#4A5D7A}\boldsymbol{\times 3}}}{10{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{15{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{21}{30}-\dfrac{4}{30}=\dfrac{21-4}{30}={\color{#4A5D7A}\dfrac{17}{30}}$$
+
+$17$ est premier et ne divise pas $30$ : la fraction est bien irréductible.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-$\dfrac{2}{6}-\dfrac{2}{9}$ =
----CORR---
-$$\dfrac{2}{6}-\dfrac{2}{9}=\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{6{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{9{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{6-4}{18}=\dfrac{2}{18}=\dfrac{1\times 2}{9\times 2}={\color{#4A5D7A}\dfrac{1}{9}}$$
+Calculer et donner le résultat sous forme d'une fraction irréductible :
 
-Le dénominateur commun est 18, puis on simplifie par 2.
+$$\dfrac{-12}{35}\times\dfrac{21}{16}$$
+---CORR---
+Le produit d'un nombre négatif par un nombre positif est négatif :
+
+$$\dfrac{-12}{35}\times\dfrac{21}{16}=-\dfrac{12\times 21}{35\times 16}$$
+
+On décompose numérateur et dénominateur en facteurs, puis on simplifie :
+
+$$-\dfrac{\cancel{4}\times 3\times 3\times \cancel{7}}{5\times \cancel{7}\times \cancel{4}\times 4}=-\dfrac{3\times 3}{5\times 4}={\color{#4A5D7A}-\dfrac{9}{20}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-$\dfrac{\dfrac{14}{9}}{\dfrac{-63}{12}}$ =
+Calculer :
+
+$$A=-4\times\Bigl((-3)^2+7\times(-3)\Bigr)$$
 ---CORR---
-$$\dfrac{\dfrac{14}{9}}{\dfrac{-63}{12}} = \dfrac{14}{9} \times \dfrac{12}{-63} = \dfrac{14 \times 12}{9 \times (-63)}$$
+On calcule d'abord ce qui est entre parenthèses, en respectant les priorités (la puissance avant la multiplication) :
 
-On décompose :
+$$(-3)^2=(-3)\times(-3)=9 \qquad\text{et}\qquad 7\times(-3)=-21$$
 
-$$\dfrac{2 \times \cancel{7} \times 3 \times 4}{9 \times (-9) \times \cancel{7}} = \dfrac{24}{-81} = {\color{#4A5D7A}-\dfrac{8}{27}}$$
+Donc :
+
+$$A=-4\times\bigl(9+(-21)\bigr)=-4\times(-12)={\color{#4A5D7A}48}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-$\dfrac{14}{9}\times\dfrac{-3}{-35}$ =
+Dans une classe de $28$ élèves, $\dfrac{3}{7}$ des élèves sont des filles.
+
+Parmi les garçons, $\dfrac{1}{4}$ étudient l'allemand.
+
+Combien de garçons étudient l'allemand ?
 ---CORR---
-$$\dfrac{14}{9}\times\dfrac{-3}{-35}=\dfrac{14\times(-3)}{9\times(-35)} = \dfrac{-42}{-315} = \dfrac{42}{315}$$
+Nombre de filles :
 
-On décompose :
+$$\dfrac{3}{7}\times 28=\dfrac{3\times 28}{7}=\dfrac{84}{7}=12$$
 
-$$\dfrac{2 \times 3 \times \cancel{7}}{9 \times 5 \times \cancel{7}} = \dfrac{6}{45} = {\color{#4A5D7A}\dfrac{2}{15}}$$
+Il y a donc $28-12=16$ garçons dans la classe.
+
+Parmi eux, $\dfrac{1}{4}$ étudient l'allemand :
+
+$$\dfrac{1}{4}\times 16={\color{#4A5D7A}4}\ \text{garçons.}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Ce matin, Fiona a ouvert une bouteille d'eau. Elle a bu $\dfrac{1}{3}$ de la bouteille.
+On considère $A=\dfrac{57}{1\,000}+\dfrac{264}{100}$. On a :
 
-Puis à midi, elle a bu $\dfrac{1}{4}$ du reste. Quelle fraction de la bouteille a-t-elle bu à midi ?
+**A.** $A=3{,}21$ &emsp; **B.** $A=2{,}697$ &emsp; **C.** $A=0{,}269\,7$ &emsp; **D.** $A=2{,}645\,7$
 ---CORR---
-Le matin, Fiona a bu $\dfrac{1}{3}$ de la bouteille. Il reste alors :
+On écrit chaque fraction sous forme décimale. Diviser par $1\,000$ décale la virgule de trois rangs, diviser par $100$ la décale de deux rangs :
 
-$$1 - \dfrac{1}{3} = \dfrac{2}{3}$$
+$$\dfrac{57}{1\,000}=0{,}057 \qquad\text{et}\qquad \dfrac{264}{100}=2{,}64$$
 
-À midi, elle a bu $\dfrac{1}{4}$ du reste, soit :
+Donc :
 
-$$\dfrac{1}{4} \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{1}{6}} \text{ de la bouteille.}$$
+$$A=0{,}057+2{,}64={\color{#4A5D7A}2{,}697}$$
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-On considère $A=\dfrac{3}{4-\dfrac{6}{7}}$. Calculer $A$.
+Dans un lycée, il y a $840$ élèves inscrits. $35\,\%$ d'entre eux sont externes.
+
+Le nombre d'externes est :
+
+**A.** $24$ &emsp; **B.** $2\,940$ &emsp; **C.** $294$ &emsp; **D.** $240$
 ---CORR---
-$$A= \dfrac{3}{4-\dfrac{6}{7}} = \dfrac{3}{\dfrac{28}{7}-\dfrac{6}{7}} = \dfrac{3}{\dfrac{22}{7}} = 3 \times \dfrac{7}{22} = {\color{#4A5D7A}\dfrac{21}{22}}$$
+Prendre $35\,\%$ d'une quantité, c'est la multiplier par $\dfrac{35}{100}=0{,}35$ :
+
+$$\dfrac{35}{100}\times 840=\dfrac{35\times 840}{100}=\dfrac{29\,400}{100}={\color{#4A5D7A}294}$$
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -205,13 +205,13 @@ Les effectifs des 3 groupes sont respectivement $80$, $40$ et $160-80-40=40$.
 $$
 \begin{array}{|c|c|c|c|}
 \hline
-\text{Groupe} & \text{appartements} & \text{maisons} & \text{autres}\\\\
+\text{Groupe} & \text{appartements} & \text{maisons} & \text{autres}\\
 \hline
-\text{Effectif} & 80 & 40 & 40\\\\
+\text{Effectif} & 80 & 40 & 40\\
 \hline
-\text{Part} & \dfrac{1}{2} & \dfrac{1}{4} & \dfrac{1}{4}\\\\
+\text{Part} & \dfrac{1}{2} & \dfrac{1}{4} & \dfrac{1}{4}\\
 \hline
-\text{Angle} & 180° & 90° & 90°\\\\
+\text{Angle} & 180° & 90° & 90°\\
 \hline
 \end{array}
 $$
@@ -255,7 +255,7 @@ En notant $a$ le nombre de  mètres cubes consommés, on obtient : <br>
 
 $$
 \begin{aligned}
-49{,}3+3{,}57\times a &=313{,}48\\\\
+49{,}3+3{,}57\times a &=313{,}48\\
 a&=\boldsymbol{\dfrac{313{,}48-49{,}30}{3{,}57}}
 \end{aligned}
 $$
@@ -283,8 +283,8 @@ On déduit de l'énoncé<br>
 
 $$
 \begin{aligned}
-P(A)&=1-P(\overline{A})\\\\
-&=1-\dfrac{2}{5}\\\\
+P(A)&=1-P(\overline{A})\\
+&=1-\dfrac{2}{5}\\
 &=\dfrac{3}{5}.\end{aligned}
 $$
 
@@ -292,9 +292,9 @@ Avec la donnée de $P(A \cap C)=\dfrac{21}{50}$ dans l'énoncé, on peut alors c
 
 $$
 \begin{aligned}
-P_A(C)&=\dfrac{P(A \cap C)}{P(A)}\\\\
-&=\dfrac{ \dfrac{21}{50}}{ \dfrac{3}{5}} \\\\
-&=\dfrac{21}{50} \times \dfrac{5}{3} \\\\
+P_A(C)&=\dfrac{P(A \cap C)}{P(A)}\\
+&=\dfrac{ \dfrac{21}{50}}{ \dfrac{3}{5}} \\
+&=\dfrac{21}{50} \times \dfrac{5}{3} \\
 &= \dfrac{7}{10}.
 \end{aligned}
 $$
@@ -303,8 +303,8 @@ On sait alors que <br>
 
 $$
 \begin{aligned}
-P_A(\overline{C})&=1-P_A(C)\\\\
-&=1-\dfrac{7}{10}\\\\
+P_A(\overline{C})&=1-P_A(C)\\
+&=1-\dfrac{7}{10}\\
 &=\dfrac{3}{10} .\end{aligned}
 $$
 

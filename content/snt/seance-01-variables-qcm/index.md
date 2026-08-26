@@ -1,5 +1,5 @@
 ---
-title: "QCM — Variables et affectation"
+title: "QCM - Variables et affectation"
 layout: "qcm"
 ---
 
@@ -19,7 +19,7 @@ print(message)
 
 | Ligne | `message` | Affichage |
 |:---:|---|---|
-| 1 | `"Bonjour"` | — |
+| 1 | `"Bonjour"` | - |
 | 2 | `"Bonjour"` | **`Bonjour`** |
 
 `print()` affiche la **valeur** de la variable, sans les guillemets. <br>
@@ -88,8 +88,8 @@ z = x * y
 
 | Ligne | `x` | `y` | `z` |
 |:---:|---:|---:|---:|
-| 1 | 6 | — | — |
-| 2 | 6 | 4 | — |
+| 1 | 6 | - | - |
+| 2 | 6 | 4 | - |
 | 3 | 6 | 4 | 6×4 = **24** |
 
 `z = x * y` signifie : `z` prend la valeur de `x` multiplié par `y`, soit 6 × 4 = **24**.
@@ -141,8 +141,8 @@ print(c)
 
 | Ligne | `a` | `b` | `c` |
 |:---:|---:|---:|---:|
-| 1 | 5 | — | — |
-| 2 | 5 | 2 | — |
+| 1 | 5 | - | - |
+| 2 | 5 | 2 | - |
 | 3 | 5 | 2 | 5² = **25** |
 
 L'opérateur `**` signifie **puissance**. Donc `a ** b` = 5² = 5 × 5 = **25**.
@@ -168,8 +168,8 @@ resultat = a // b
 
 | Ligne | `a` | `b` | `resultat` |
 |:---:|---:|---:|---:|
-| 1 | 10 | — | — |
-| 2 | 10 | 3 | — |
+| 1 | 10 | - | - |
+| 2 | 10 | 3 | - |
 | 3 | 10 | 3 | 10//3 = **3** |
 
 L'opérateur `//` est la **division entière** (sans la partie décimale). 10 ÷ 3 = 3,33… donc `10 // 3 = 3`.
@@ -195,8 +195,8 @@ print(nom + " habite à " + ville)
 
 | Ligne | `nom` | `ville` | Affichage |
 |:---:|---|---|---|
-| 1 | `"Marie"` | — | — |
-| 2 | `"Marie"` | `"Lyon"` | — |
+| 1 | `"Marie"` | - | - |
+| 2 | `"Marie"` | `"Lyon"` | - |
 | 3 | `"Marie"` | `"Lyon"` | `"Marie"` + `" habite à "` + `"Lyon"` = **`"Marie habite à Lyon"`** |
 
 La **concaténation** avec `+` assemble les chaînes bout à bout.
@@ -222,7 +222,7 @@ print(3 * prenom)
 
 | Ligne | `prenom` | Affichage |
 |:---:|---|---|
-| 1 | `"Ali"` | — |
+| 1 | `"Ali"` | - |
 | 2 | `"Ali"` | `3 * "Ali"` = **`"AliAliAli"`** |
 
 En Python, `3 * "Ali"` répète la chaîne 3 fois : `"Ali"` + `"Ali"` + `"Ali"` = **`"AliAliAli"`**.
@@ -316,8 +316,8 @@ print(a, b)
 
 | Ligne | `a` | `b` | Affichage |
 |:---:|---:|---:|---|
-| 1 | 3 | — | — |
-| 2 | 3 | 4 | — |
+| 1 | 3 | - | - |
+| 2 | 3 | 4 | - |
 | 3 | 3 | 4 | **`3 4`** |
 
 Quand `print()` reçoit **plusieurs valeurs séparées par des virgules**, il les affiche séparées par un **espace**. C'est différent de `print(a + b)` qui afficherait `7`, ou de `print(str(a) + str(b))` qui afficherait `34`.
@@ -365,7 +365,7 @@ r = a % 5
 
 | Ligne | `a` | `r` | Calcul |
 |:---:|---:|---:|---|
-| 1 | 17 | — | — |
+| 1 | 17 | - | - |
 | 2 | 17 | **2** | 17 = 3 × 5 + **2** |
 
 L'opérateur `%` s'appelle le **modulo** : il donne le **reste** de la division entière.
@@ -411,7 +411,7 @@ a = 10
 
 | Ligne | `a` | `b` | Ce qui se passe |
 |:---:|---:|---:|---|
-| 1 | **5** | — | `a` vaut 5 |
+| 1 | **5** | - | `a` vaut 5 |
 | 2 | 5 | **5** | `b` reçoit une **copie** de la valeur de `a` |
 | 3 | **10** | 5 | `a` change, mais `b` **ne change pas** |
 
@@ -438,8 +438,8 @@ print(z)
 
 | Ligne | `x` | `y` | `z` |
 |:---:|---|---|---|
-| 1 | `"3"` | — | — |
-| 2 | `"3"` | `"4"` | — |
+| 1 | `"3"` | - | - |
+| 2 | `"3"` | `"4"` | - |
 | 3 | `"3"` | `"4"` | `"3"` + `"4"` = **`"34"`** |
 
 `"3"` et `"4"` sont des `str` (entre guillemets), pas des `int`. Le `+` fait donc une **concaténation** (mise bout à bout), pas une addition. Pour additionner, il faudrait écrire `x = 3` et `y = 4` (sans guillemets).
@@ -464,7 +464,7 @@ b = a
 
 | Ligne | `a` | `b` | Ce qui se passe |
 |:---:|---:|---:|---|
-| 1 | **10** | — | `a` vaut 10 |
+| 1 | **10** | - | `a` vaut 10 |
 | 2 | 10 | **3** | `b` vaut 3 |
 | 3 | **3** | 3 | `a` prend la valeur de `b` → `a = 3` |
 | 4 | 3 | **3** | `b` prend la valeur de `a`… qui vaut déjà 3 ! |

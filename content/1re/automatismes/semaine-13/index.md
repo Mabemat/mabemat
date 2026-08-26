@@ -90,10 +90,10 @@ On remplace $x$ par $-\dfrac{3}{5}$ dans l'expression de $f$ :
 
  
  $\begin{aligned}
- f\left(-\dfrac{3}{5}\right)&=-2\times \left(-\dfrac{3}{5}\right)^2-4\times \left(-\dfrac{3}{5}\right)-1\\\\
- &=-2\times\dfrac{9}{25}+\dfrac{12}{5}-1\\\\
- &=-\dfrac{18}{25}+\dfrac{12}{5}-1\\\\
- &=\dfrac{-18+60-25}{25}\\\\
+ f\left(-\dfrac{3}{5}\right)&=-2\times \left(-\dfrac{3}{5}\right)^2-4\times \left(-\dfrac{3}{5}\right)-1\\
+ &=-2\times\dfrac{9}{25}+\dfrac{12}{5}-1\\
+ &=-\dfrac{18}{25}+\dfrac{12}{5}-1\\
+ &=\dfrac{-18+60-25}{25}\\
  &=\dfrac{17}{25}
  \end{aligned}$
 
@@ -224,10 +224,10 @@ On remplace $x$ par $-\dfrac{6}{5}$ dans l'expression de $f$ :<br>
 
 $$
 \begin{aligned}
-f\left(-\dfrac{6}{5}\right)&=-2\times \left(-\dfrac{6}{5}\right)^2+3\times \left(-\dfrac{6}{5}\right)-2\\\\
-&=-2\times\dfrac{36}{25}-\dfrac{18}{5}-2\\\\
-&=-\dfrac{72}{25}-\dfrac{18}{5}-2\\\\
-&=\dfrac{-72-90-50}{25}\\\\
+f\left(-\dfrac{6}{5}\right)&=-2\times \left(-\dfrac{6}{5}\right)^2+3\times \left(-\dfrac{6}{5}\right)-2\\
+&=-2\times\dfrac{36}{25}-\dfrac{18}{5}-2\\
+&=-\dfrac{72}{25}-\dfrac{18}{5}-2\\
+&=\dfrac{-72-90-50}{25}\\
 &=-\dfrac{212}{25}
 \end{aligned}
 $$

@@ -1,72 +1,100 @@
 ---
-title: "Semaine 25"
+title: "Semaine 25 - Loi de probabilité et équiprobabilité"
+layout: "automatismes-2nde"
 auto_number: 25
 weight: 25
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Réduire l'expression : $x - \dfrac{x}{5}$
+Une urne contient $5$ boules rouges, $3$ vertes et $2$ bleues, indiscernables au toucher. On en tire une au hasard.
+
+Donner la loi de probabilité de la couleur obtenue.
 ---CORR---
-$$x - \dfrac{x}{5} = \dfrac{5x}{5} - \dfrac{x}{5} = \dfrac{5x - x}{5} = {\color{#4A5D7A}\dfrac{4}{5}x}$$
+Les boules étant indiscernables, il y a équiprobabilité : chaque boule a la même chance d'être tirée. L'effectif total est :
+
+$$5+3+2=10$$
+
+La probabilité d'une couleur est le nombre de boules de cette couleur divisé par le nombre total :
+
+| Couleur | Rouge | Verte | Bleue |
+|---|---|---|---|
+| Probabilité | $\dfrac{5}{10}={\color{#4A5D7A}0{,}5}$ | $\dfrac{3}{10}={\color{#4A5D7A}0{,}3}$ | $\dfrac{2}{10}={\color{#4A5D7A}0{,}2}$ |
+
+Contrôle indispensable : la somme des probabilités vaut $0{,}5+0{,}3+0{,}2=1$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Factoriser l'expression suivante : $x^2 - 7$
----CORR---
-On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = x$ et $b = \sqrt{7}$ :
+On lance deux dés équilibrés à six faces et on s'intéresse à la somme des deux numéros obtenus.
 
-$$x^2 - 7 = x^2 - (\sqrt{7})^2 = {\color{#4A5D7A}(x - \sqrt{7})(x + \sqrt{7})}$$
+Quelle est la probabilité que cette somme soit égale à $7$ ?
+---CORR---
+En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.
+
+On énumère celles qui donnent une somme de $7$ :
+
+$$(1\,;\,6)\quad(2\,;\,5)\quad(3\,;\,4)\quad(4\,;\,3)\quad(5\,;\,2)\quad(6\,;\,1)$$
+
+Il y en a $6$. D'où :
+
+$$P={\dfrac{6}{36}}={\color{#4A5D7A}\dfrac{1}{6}}$$
+
+Il faut bien distinguer les deux dés : $(2\,;\,5)$ et $(5\,;\,2)$ sont deux issues différentes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Le prix d'un sac a baissé de $22\,\%$. Il coûte maintenant $132$ euros.
+Dans un groupe, $60\,\%$ des personnes sont des femmes, et $30\,\%$ des femmes portent des lunettes.
 
-Le prix initial en euros est donné par le calcul :
-
-**A.** $132 \times \dfrac{100}{78}$ $\quad$ **B.** $132 + 132 \times \dfrac{22}{100}$ $\quad$ **C.** $132 \times \left(1 + \dfrac{22}{100}\right)$ $\quad$ **D.** $\dfrac{132}{1 + \dfrac{22}{100}}$
+On choisit une personne au hasard. Quelle est la probabilité que ce soit une femme portant des lunettes ?
 ---CORR---
-Baisser de $22\,\%$ revient à multiplier par $\dfrac{78}{100}$.
+Les $30\,\%$ ne portent pas sur le groupe entier, mais seulement sur les femmes : c'est une proportion à l'intérieur d'une proportion. On multiplie donc les deux.
 
-Si $V_I$ est le prix initial : $V_I \times \dfrac{78}{100} = 132$, donc $V_I = 132 \times \dfrac{100}{78}$.
+$$P=0{,}60\times 0{,}30={\color{#4A5D7A}0{,}18}$$
 
-$${\color{#4A5D7A}\textbf{A}}$$
+Soit $18\,\%$ du groupe. On aurait le même résultat en raisonnant sur un effectif : sur $100$ personnes, $60$ sont des femmes, dont $30\,\%$, soit $18$, portent des lunettes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-L'aire en $\text{km}^2$ d'un carré de côté $3\,000\text{ m}$ est égale à $\ldots$
----CORR---
-$3\,000\text{ m} = 3\text{ km}$
+On lance un dé équilibré à six faces. Soit $A$ « obtenir au moins $5$ » et $B$ « obtenir un multiple de $2$ ».
 
-$$\text{Aire} = 3 \times 3 = {\color{#4A5D7A}9\text{ km}^2}$$
+Déterminer $A\cap B$ et $A\cup B$.
+---CORR---
+On écrit les deux événements en extension :
+
+$$A=\lbrace 5\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 2\,;\,4\,;\,6\rbrace$$
+
+$$A\cap B={\color{#4A5D7A}\lbrace 6\rbrace} \qquad A\cup B={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,5\,;\,6\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Le double de $4^{50}$ est égal à $\ldots$
+On sait que $P(A)=0{,}35$. La probabilité de l'événement contraire $\overline{A}$ est :
+
+**A.** $0{,}65$ &emsp; **B.** $0{,}35$ &emsp; **C.** $1{,}35$ &emsp; **D.** $-0{,}35$
 ---CORR---
-$$2 \times 4^{50} = 2 \times (2^2)^{50} = 2 \times 2^{100} = {\color{#4A5D7A}2^{101}}$$
+Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.
+
+$$P\left(\overline{A}\right)=1-P(A)=1-0{,}35={\color{#4A5D7A}0{,}65}$$
+
+Les réponses C et D sont impossibles : une probabilité est toujours comprise entre $0$ et $1$.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Résoudre l'inéquation : $\dfrac{x-4}{x+12} \leqslant 0$
+On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d'obtenir un roi est :
+
+**A.** $\dfrac{1}{32}$ &emsp; **B.** $\dfrac{1}{4}$ &emsp; **C.** $\dfrac{4}{8}$ &emsp; **D.** $\dfrac{1}{8}$
 ---CORR---
-**Valeur interdite :** $x + 12 = 0 \implies x = -12$.
+Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $32$.
 
-Le quotient est défini sur $\mathbb{R} \setminus \{-12\}$.
+Un jeu de $32$ cartes contient $4$ rois, un par couleur. D'où :
 
-**Tableau de signes :**
+$$P=\dfrac{4}{32}=\dfrac{1\times \cancel{4}}{8\times \cancel{4}}={\color{#4A5D7A}\dfrac{1}{8}}$$
 
-| $x$ | $-\infty$ | | $-12$ | | $4$ | | $+\infty$ |
-|---|---|---|---|---|---|---|---|
-| $x - 4$ | | $-$ | | $-$ | $0$ | $+$ | |
-| $x + 12$ | | $-$ | $0$ | $+$ | | $+$ | |
-| $\dfrac{x-4}{x+12}$ | | $+$ | $\|$ | $-$ | $0$ | $+$ | |
+La réponse A correspondrait à une seule carte précise, et la réponse B à un jeu de $16$ cartes.
 
-L'inéquation est vérifiée quand le quotient est négatif ou nul :
-
-$${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -74,69 +102,95 @@ $${\color{#4A5D7A}S = \left]-12\,;\,4\right]}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Réduire l'expression : $\dfrac{5}{8}x + 2x$
+Une urne contient $4$ boules rouges, $6$ vertes et $10$ bleues, indiscernables au toucher. On en tire une au hasard.
+
+Donner la loi de probabilité de la couleur obtenue.
 ---CORR---
-$$\dfrac{5}{8}x + 2x = \dfrac{5}{8}x + \dfrac{16}{8}x = \dfrac{5 + 16}{8}x = {\color{#4A5D7A}\dfrac{21}{8}x}$$
+Les boules étant indiscernables, il y a équiprobabilité : chaque boule a la même chance d'être tirée. L'effectif total est :
+
+$$4+6+10=20$$
+
+La probabilité d'une couleur est le nombre de boules de cette couleur divisé par le nombre total :
+
+| Couleur | Rouge | Verte | Bleue |
+|---|---|---|---|
+| Probabilité | $\dfrac{4}{20}={\color{#4A5D7A}0{,}2}$ | $\dfrac{6}{20}={\color{#4A5D7A}0{,}3}$ | $\dfrac{10}{20}={\color{#4A5D7A}0{,}5}$ |
+
+Contrôle indispensable : la somme des probabilités vaut $0{,}2+0{,}3+0{,}5=1$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Factoriser l'expression suivante : $16(3x+5)^2 - 9(8x-1)^2$
+On lance deux dés équilibrés à six faces et on s'intéresse à la somme des deux numéros obtenus.
+
+Quelle est la probabilité que cette somme soit égale à $6$ ?
 ---CORR---
-On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = 4(3x+5)$ et $b = 3(8x-1)$ :
+En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.
 
-$$16(3x+5)^2 - 9(8x-1)^2 = [4(3x+5)]^2 - [3(8x-1)]^2$$
+On énumère celles qui donnent une somme de $6$ :
 
-$$= [4(3x+5) - 3(8x-1)][4(3x+5) + 3(8x-1)]$$
+$$(1\,;\,5)\quad(2\,;\,4)\quad(3\,;\,3)\quad(4\,;\,2)\quad(5\,;\,1)$$
 
-$$= (12x+20 - 24x+3)(12x+20 + 24x-3)$$
+Il y en a $5$. D'où :
 
-$$= {\color{#4A5D7A}(-12x+23)(36x+17)}$$
+$$P={\color{#4A5D7A}\dfrac{5}{36}}$$
+
+Attention : $(3\,;\,3)$ ne compte qu'une seule fois, contrairement aux couples formés de deux numéros différents.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Le prix d'un sac a baissé de $34\,\%$. Il coûte maintenant $160$ euros.
+Dans un groupe, $40\,\%$ des personnes sont des hommes, et $25\,\%$ des hommes portent des lunettes.
 
-Le prix initial en euros est donné par le calcul :
-
-**A.** $\dfrac{160}{1-0{,}34}$ $\quad$ **B.** $160 \times \dfrac{34}{66}$ $\quad$ **C.** $\dfrac{160}{1+\dfrac{34}{100}}$ $\quad$ **D.** $160 \times \dfrac{66}{100}$
+On choisit une personne au hasard. Quelle est la probabilité que ce soit un homme portant des lunettes ?
 ---CORR---
-Baisser de $34\,\%$ revient à multiplier par $1 - 0{,}34 = 0{,}66$.
+Les $25\,\%$ ne portent pas sur le groupe entier, mais seulement sur les hommes : c'est une proportion à l'intérieur d'une proportion. On multiplie donc les deux.
 
-Si $V_I$ est le prix initial : $V_I \times 0{,}66 = 160$, donc $V_I = \dfrac{160}{1 - 0{,}34}$.
+$$P=0{,}40\times 0{,}25={\color{#4A5D7A}0{,}1}$$
 
-$${\color{#4A5D7A}\textbf{A}}$$
+Soit $10\,\%$ du groupe. On aurait le même résultat en raisonnant sur un effectif : sur $100$ personnes, $40$ sont des hommes, dont $25\,\%$, soit $10$, portent des lunettes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-L'aire en $\text{dam}^2$ d'un carré de côté $9\text{ m}$ est égale à $\ldots$
----CORR---
-$9\text{ m} = 0{,}9\text{ dam}$
+On lance un dé équilibré à six faces. Soit $A$ « obtenir au plus $2$ » et $B$ « obtenir un multiple de $3$ ».
 
-$$\text{Aire} = 0{,}9 \times 0{,}9 = {\color{#4A5D7A}0{,}81\text{ dam}^2}$$
+Déterminer $A\cap B$ et $A\cup B$.
+---CORR---
+On écrit les deux événements en extension :
+
+$$A=\lbrace 1\,;\,2\rbrace \qquad\text{et}\qquad B=\lbrace 3\,;\,6\rbrace$$
+
+Aucune issue n'appartient aux deux : les événements sont incompatibles.
+
+$$A\cap B={\color{#4A5D7A}\varnothing} \qquad A\cup B={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,6\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Le triple de $9^{50}$ est égal à $\ldots$
+On sait que $P(A)=0{,}28$. La probabilité de l'événement contraire $\overline{A}$ est :
+
+**A.** $-0{,}28$ &emsp; **B.** $0{,}72$ &emsp; **C.** $1{,}28$ &emsp; **D.** $0{,}28$
 ---CORR---
-$$3 \times 9^{50} = 3 \times (3^2)^{50} = 3 \times 3^{100} = {\color{#4A5D7A}3^{101}}$$
+Un événement et son contraire se partagent la totalité des issues : leurs probabilités ont donc pour somme $1$.
+
+$$P\left(\overline{A}\right)=1-P(A)=1-0{,}28={\color{#4A5D7A}0{,}72}$$
+
+Les réponses C et A sont impossibles : une probabilité est toujours comprise entre $0$ et $1$.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Résoudre l'inéquation : $\dfrac{x-12}{x+1} > 0$
+On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d'obtenir un cœur est :
+
+**A.** $\dfrac{1}{13}$ &emsp; **B.** $\dfrac{1}{52}$ &emsp; **C.** $\dfrac{1}{4}$ &emsp; **D.** $\dfrac{13}{4}$
 ---CORR---
-**Valeur interdite :** $x + 1 = 0 \implies x = -1$.
+Le tirage est au hasard, donc il y a équiprobabilité : chaque carte a une chance sur $52$.
 
-**Tableau de signes :**
+Un jeu de $52$ cartes contient $4$ couleurs de $13$ cartes chacune, donc $13$ cœurs. D'où :
 
-| $x$ | $-\infty$ | | $-1$ | | $12$ | | $+\infty$ |
-|---|---|---|---|---|---|---|---|
-| $x - 12$ | | $-$ | | $-$ | $0$ | $+$ | |
-| $x + 1$ | | $-$ | $0$ | $+$ | | $+$ | |
-| $\dfrac{x-12}{x+1}$ | | $+$ | $\|$ | $-$ | $0$ | $+$ | |
+$$P=\dfrac{13}{52}=\dfrac{1\times \cancel{13}}{4\times \cancel{13}}={\color{#4A5D7A}\dfrac{1}{4}}$$
 
-L'inéquation est vérifiée quand le quotient est strictement positif :
+La réponse D est impossible : une probabilité ne dépasse jamais $1$.
 
-$${\color{#4A5D7A}S = \left]-\infty\,;\,-1\right[ \cup \left]12\,;\,+\infty\right[}$$
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

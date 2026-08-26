@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 4 — Puissances et intervalles — MaBémat</title>
+<title>Semaine 4 - Factorisation et expressions fractionnaires — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Puissances et intervalles</p>
+  <p class="wk-subtitle">Factorisation et expressions fractionnaires</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -218,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -234,9 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>La seule égalité vraie est :</p>
-<p>$\dfrac{15^{-7}}{15^{11}}=15^{-18}$ $\quad$ ou $\quad$ $\left(40^{-5}\right)^4=40^{-1}$ $\quad$ ou $\quad$ $20\times \dfrac{1}{20^{5}}=20^{4}$ $\quad$ ou $\quad$ $7^{-5}\times 5^{-5}=35^{-10}$ ?</p>
-
+    <p>Factoriser :</p>
+$$A=(2x+1)(x-3)+(2x+1)(4x+5)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -244,14 +243,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La seule égalité vraie est ${\color{#4A5D7A}\dfrac{15^{-7}}{15^{11}}=15^{-18}}$ car $15^{-7}\div 15^{11}=15^{-7-11}=15^{-18}$.</p>
-<p>Les autres sont fausses :</p>
-<ul>
-<li>$\left(40^{-5}\right)^4=40^{-20}\neq 40^{-1}$</li>
-<li>$20\times \dfrac{1}{20^{5}}=20^{1-5}=20^{-4}\neq 20^{4}$</li>
-<li>$7^{-5}\times 5^{-5}=(7\times5)^{-5}=35^{-5}\neq 35^{-10}$</li>
-</ul>
-</div>
+    <div><p>Les deux termes de la somme contiennent le facteur commun $(2x+1)$. On le met en évidence :</p>
+$$A=(2x+1)\Bigl[(x-3)+(4x+5)\Bigr]$$<p>On réduit ensuite le contenu du crochet :</p>
+$$(x-3)+(4x+5)=x+4x-3+5=5x+2$$<p>D&rsquo;où :</p>
+$$A={\color{#4A5D7A}(2x+1)(5x+2)}$$</div>
   </div>
   
 </article>
@@ -270,7 +265,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère le nombre $N=\dfrac{6^5}{2^3}$. Calculer $N$.
+    <p>Factoriser :</p>
+$$B=9x^2-30x+25$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -278,7 +274,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$N=\dfrac{6^5}{2^3}=\dfrac{(2\times3)^5}{2^3}=\dfrac{2^5\times 3^5}{2^3}=3^5\times 2^{2}={\color{#4A5D7A}27\times 6^{2}}$$</div>
+    <div><p>Trois termes, dont deux sont des carrés : on cherche l&rsquo;identité remarquable $a^2-2ab+b^2=(a-b)^2$.</p>
+<p>On écrit les carrés :</p>
+$$9x^2=(3x)^2 \qquad\text{et}\qquad 25=5^2$$<p>On vérifie le double produit :</p>
+$$2\times 3x\times 5=30x$$<p>C&rsquo;est bien le terme du milieu, au signe près. Donc, avec $a=3x$ et $b=5$ :</p>
+$$B={\color{#4A5D7A}(3x-5)^2}$$</div>
   </div>
   
 </article>
@@ -297,7 +297,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Calculer $\dfrac{6^{-8}}{3^{-8}}$.
+    <p>Soit $x$ un réel non nul. Écrire sous la forme d&rsquo;un seul quotient :</p>
+$$C=\dfrac{3}{x}+\dfrac{x-2}{2x}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -305,8 +306,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On utilise la formule $\dfrac{a^n}{b^n}=\left(\dfrac{a}{b}\right)^{n}$ avec $a=6$, $b=3$ et $n=-8$ :</p>
-$$\dfrac{6^{-8}}{3^{-8}}=\left(\dfrac{6}{3}\right)^{-8}={\color{#4A5D7A}2^{-8}}$$</div>
+    <div><p>Le dénominateur commun est $2x$. On transforme la première fraction :</p>
+$$\dfrac{3}{x}=\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 2}}}{x{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{6}{2x}$$<p>On additionne les deux numérateurs :</p>
+$$C=\dfrac{6}{2x}+\dfrac{x-2}{2x}=\dfrac{6+x-2}{2x}={\color{#4A5D7A}\dfrac{x+4}{2x}}$$</div>
   </div>
   
 </article>
@@ -325,8 +327,8 @@ $$\dfrac{6^{-8}}{3^{-8}}=\left(\dfrac{6}{3}\right)^{-8}={\color{#4A5D7A}2^{-8}}$
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $n$ un entier. À quelle expression est égale $\left(3^{n}\right)^{3}$ ?</p>
-<p>A. $9^{n}$ $\quad$ B. $3^{n^{3}}$ $\quad$ C. $27^{n}$ $\quad$ D. $3^{3+n}$</p>
+    <p>On donne les intervalles $I=\left]-\infty\,;\,4\right[$ et $J=\left[-1\,;\,7\right]$.</p>
+<p>Déterminer $I\cap J$.</p>
 
   </div>
   
@@ -335,9 +337,11 @@ $$\dfrac{6^{-8}}{3^{-8}}=\left(\dfrac{6}{3}\right)^{-8}={\color{#4A5D7A}2^{-8}}$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On applique $(a^n)^p = a^{np}$ :</p>
-$$\left(3^{n}\right)^{3}=3^{3n}=\left(3^{3}\right)^{n}=27^{n}$$<p>La bonne réponse est <strong>C</strong>.</p>
-</div>
+    <div><p>On traduit par des inégalités : $x\in I$ signifie $x<4$, et $x\in J$ signifie $-1\leqslant x\leqslant 7$.</p>
+<p>On place les deux intervalles sur une droite graduée, $I$ en bleu et $J$ en rouge :</p>
+<img src="/mabemat/images/automatismes/2nde/s04-q04.svg" alt="Droite graduée : I en bleu, J en rouge, leur intersection" style="display:block;margin:1rem auto;width:100%;max-width:560px;">
+<p>Un réel appartient à $I\cap J$ s&rsquo;il vérifie les deux conditions à la fois, donc si $-1\leqslant x<4$. C&rsquo;est la zone où les deux traits se superposent.</p>
+$$I\cap J={\color{#4A5D7A}\left[-1\,;\,4\right[}$$</div>
   </div>
   
 </article>
@@ -356,7 +360,9 @@ $$\left(3^{n}\right)^{3}=3^{3n}=\left(3^{3}\right)^{n}=27^{n}$$<p>La bonne répo
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On donne la relation : $6a+5y=4$. Isoler $a$.
+    <p>Une simplification de $6x-\dfrac{x}{6}$ est :</p>
+<p><strong>A.</strong> $\dfrac{37}{6}x$   <strong>B.</strong> $-\dfrac{35}{6}x$   <strong>C.</strong> $\dfrac{35}{6}x$   <strong>D.</strong> $\dfrac{5}{6}x$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -364,9 +370,10 @@ $$\left(3^{n}\right)^{3}=3^{3n}=\left(3^{3}\right)^{n}=27^{n}$$<p>La bonne répo
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On soustrait $5y$ des deux membres :</p>
-$$6a=4-5y$$<p>Puis on divise par $6$ :</p>
-$${\color{#4A5D7A}a=\dfrac{4-5y}{6}}$$</div>
+    <div><p>Les deux termes contiennent $x$ : il s&rsquo;agit d&rsquo;une soustraction de fractions de dénominateur $6$.</p>
+$$6x=\dfrac{36x}{6}$$<p>Donc :</p>
+$$6x-\dfrac{x}{6}=\dfrac{36x}{6}-\dfrac{x}{6}=\dfrac{36x-x}{6}={\color{#4A5D7A}\dfrac{35}{6}x}$$<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -385,7 +392,9 @@ $${\color{#4A5D7A}a=\dfrac{4-5y}{6}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner une écriture simplifiée de $]-3\,;\,3[\,\cup\,]-6\,;\,5]$.
+    <p>On donne la relation $7a+4y=3$. On cherche à isoler $a$. On a :</p>
+<p><strong>A.</strong> $a=\dfrac{3}{7}-4y$   <strong>B.</strong> $a=\dfrac{4y-3}{7}$   <strong>C.</strong> $a=-4y+3$   <strong>D.</strong> $a=\dfrac{3-4y}{7}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -393,8 +402,10 @@ $${\color{#4A5D7A}a=\dfrac{4-5y}{6}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>L&rsquo;intervalle $]-6\,;\,5]$ contient entièrement $]-3\,;\,3[$, donc :</p>
-$$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
+    <div><p>On isole d&rsquo;abord le terme contenant $a$, en retranchant $4y$ dans chaque membre :</p>
+$$7a=3-4y$$<p>On divise ensuite chaque membre par $7$. Attention : c&rsquo;est <strong>tout</strong> le membre de droite qui est divisé par $7$, d&rsquo;où la barre de fraction qui englobe les deux termes.</p>
+$$a={\color{#4A5D7A}\dfrac{3-4y}{7}}$$<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -423,9 +434,8 @@ $$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>La seule égalité vraie est :</p>
-<p>$20\times \dfrac{1}{20^{3}}=20^{2}$ $\quad$ ou $\quad$ $7^{-4}\times 4^{-4}=28^{-4}$ $\quad$ ou $\quad$ $\dfrac{3^{-5}}{3^{12}}=3^{7}$ $\quad$ ou $\quad$ $\left(20^{-4}\right)^4=20^{0}$ ?</p>
-
+    <p>Factoriser :</p>
+$$A=(3x-2)(x+4)+(3x-2)(2x-1)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -433,13 +443,10 @@ $$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La seule égalité vraie est ${\color{#4A5D7A}7^{-4}\times 4^{-4}=28^{-4}}$ car $7^{-4}\times 4^{-4}=(7\times4)^{-4}=28^{-4}$.</p>
-<p>Les autres sont fausses :</p>
-<ul>
-<li>$\dfrac{3^{-5}}{3^{12}}=3^{-17}\neq 3^{7}$</li>
-<li>$20\times \dfrac{1}{20^{3}}=20^{-2}\neq 20^{2}$</li>
-<li>$\left(20^{-4}\right)^4=20^{-16}\neq 20^{0}$</li>
-</ul>
+    <div><p>Les deux termes de la somme contiennent le facteur commun $(3x-2)$. On le met en évidence :</p>
+$$A=(3x-2)\Bigl[(x+4)+(2x-1)\Bigr]$$<p>On réduit ensuite le contenu du crochet :</p>
+$$(x+4)+(2x-1)=x+2x+4-1=3x+3$$<p>D&rsquo;où :</p>
+$$A={\color{#4A5D7A}(3x-2)(3x+3)}$$<p>On peut encore factoriser par $3$ le second facteur : $A=3(3x-2)(x+1)$.</p>
 </div>
   </div>
   
@@ -459,7 +466,8 @@ $$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère le nombre $N=\dfrac{10^5}{2^2}$. Calculer $N$.
+    <p>Factoriser :</p>
+$$B=4x^2+28x+49$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -467,7 +475,11 @@ $$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$N=\dfrac{(2\times5)^5}{2^2}=\dfrac{2^5\times 5^5}{2^2}=5^5\times 2^{3}=5^2\times(5^3\times 2^3)=5^2\times 10^3={\color{#4A5D7A}25\times 10^{3}}$$</div>
+    <div><p>Trois termes, dont deux sont des carrés : on cherche l&rsquo;identité remarquable $a^2+2ab+b^2=(a+b)^2$.</p>
+<p>On écrit les carrés :</p>
+$$4x^2=(2x)^2 \qquad\text{et}\qquad 49=7^2$$<p>On vérifie le double produit :</p>
+$$2\times 2x\times 7=28x$$<p>C&rsquo;est bien le terme du milieu. Donc, avec $a=2x$ et $b=7$ :</p>
+$$B={\color{#4A5D7A}(2x+7)^2}$$</div>
   </div>
   
 </article>
@@ -486,7 +498,8 @@ $$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Calculer $(-6)^{-2}\times (-6)^{-9}$.
+    <p>Soit $x$ un réel non nul. Écrire sous la forme d&rsquo;un seul quotient :</p>
+$$C=\dfrac{5}{x}+\dfrac{x+3}{3x}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -494,8 +507,9 @@ $$]-3\,;\,3[\,\cup\,]-6\,;\,5]\;=\;{\color{#4A5D7A}]-6\,;\,5]}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On applique $a^n\times a^m=a^{n+m}$ :</p>
-$$(-6)^{-2}\times (-6)^{-9}=(-6)^{-2+(-9)}={\color{#4A5D7A}(-6)^{-11}}$$</div>
+    <div><p>Le dénominateur commun est $3x$. On transforme la première fraction :</p>
+$$\dfrac{5}{x}=\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 3}}}{x{\color{#4A5D7A}\boldsymbol{\times 3}}}=\dfrac{15}{3x}$$<p>On additionne les deux numérateurs :</p>
+$$C=\dfrac{15}{3x}+\dfrac{x+3}{3x}=\dfrac{15+x+3}{3x}={\color{#4A5D7A}\dfrac{x+18}{3x}}$$</div>
   </div>
   
 </article>
@@ -514,8 +528,8 @@ $$(-6)^{-2}\times (-6)^{-9}=(-6)^{-2+(-9)}={\color{#4A5D7A}(-6)^{-11}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $n$ un entier. À quelle expression est égale $\left(4^{n}\right)^{3}$ ?</p>
-<p>A. $4^{n^{3}}$ $\quad$ B. $4^{3+n}$ $\quad$ C. $64^{n}$ $\quad$ D. $12^{n}$</p>
+    <p>On donne les intervalles $I=\left]-\infty\,;\,2\right]$ et $J=\left[-3\,;\,6\right[$.</p>
+<p>Déterminer $I\cap J$.</p>
 
   </div>
   
@@ -524,9 +538,11 @@ $$(-6)^{-2}\times (-6)^{-9}=(-6)^{-2+(-9)}={\color{#4A5D7A}(-6)^{-11}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On applique $(a^n)^p = a^{np}$ :</p>
-$$\left(4^{n}\right)^{3}=4^{3n}=\left(4^{3}\right)^{n}=64^{n}$$<p>La bonne réponse est <strong>C</strong>.</p>
-</div>
+    <div><p>On traduit par des inégalités : $x\in I$ signifie $x\leqslant 2$, et $x\in J$ signifie $-3\leqslant x<6$.</p>
+<p>On place les deux intervalles sur une droite graduée, $I$ en bleu et $J$ en rouge :</p>
+<img src="/mabemat/images/automatismes/2nde/s04d-q04.svg" alt="Droite graduée : I en bleu, J en rouge, leur intersection" style="display:block;margin:1rem auto;width:100%;max-width:560px;">
+<p>Un réel appartient à $I\cap J$ s&rsquo;il vérifie les deux conditions à la fois, donc si $-3\leqslant x\leqslant 2$. C&rsquo;est la zone où les deux traits se superposent.</p>
+$$I\cap J={\color{#4A5D7A}\left[-3\,;\,2\right]}$$</div>
   </div>
   
 </article>
@@ -545,7 +561,9 @@ $$\left(4^{n}\right)^{3}=4^{3n}=\left(4^{3}\right)^{n}=64^{n}$$<p>La bonne répo
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On donne la relation : $7z+8c=7$. Isoler $z$.
+    <p>Une simplification de $10x-\dfrac{x}{10}$ est :</p>
+<p><strong>A.</strong> $\dfrac{99}{10}x$   <strong>B.</strong> $\dfrac{101}{10}x$   <strong>C.</strong> $\dfrac{9}{10}x$   <strong>D.</strong> $-\dfrac{99}{10}x$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -553,9 +571,10 @@ $$\left(4^{n}\right)^{3}=4^{3n}=\left(4^{3}\right)^{n}=64^{n}$$<p>La bonne répo
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On soustrait $8c$ des deux membres :</p>
-$$7z=7-8c$$<p>Puis on divise par $7$ :</p>
-$${\color{#4A5D7A}z=\dfrac{7-8c}{7}}$$</div>
+    <div><p>Les deux termes contiennent $x$ : il s&rsquo;agit d&rsquo;une soustraction de fractions de dénominateur $10$.</p>
+$$10x=\dfrac{100x}{10}$$<p>Donc :</p>
+$$10x-\dfrac{x}{10}=\dfrac{100x}{10}-\dfrac{x}{10}=\dfrac{100x-x}{10}={\color{#4A5D7A}\dfrac{99}{10}x}$$<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -574,7 +593,9 @@ $${\color{#4A5D7A}z=\dfrac{7-8c}{7}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner une écriture simplifiée de $]-21\,;\,14]\,\cup\,[-28\,;\,-6]$.
+    <p>On donne la relation $5x-3c=2$. On cherche à isoler $x$. On a :</p>
+<p><strong>A.</strong> $x=\dfrac{2-3c}{5}$   <strong>B.</strong> $x=\dfrac{2+3c}{5}$   <strong>C.</strong> $x=\dfrac{2}{5}+3c$   <strong>D.</strong> $x=2+3c$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -582,8 +603,10 @@ $${\color{#4A5D7A}z=\dfrac{7-8c}{7}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les deux intervalles se chevauchent (l&rsquo;intervalle $[-28\,;\,-6]$ et $]-21\,;\,14]$ ont en commun $]-21\,;\,-6]$), donc leur réunion forme un seul intervalle :</p>
-$$]-21\,;\,14]\,\cup\,[-28\,;\,-6]\;=\;{\color{#4A5D7A}[-28\,;\,14]}$$</div>
+    <div><p>On isole d&rsquo;abord le terme contenant $x$, en ajoutant $3c$ dans chaque membre :</p>
+$$5x=2+3c$$<p>On divise ensuite chaque membre par $5$. Attention : c&rsquo;est <strong>tout</strong> le membre de droite qui est divisé par $5$, d&rsquo;où la barre de fraction qui englobe les deux termes.</p>
+$$x={\color{#4A5D7A}\dfrac{2+3c}{5}}$$<p><span class="rep">Réponse : B</span></p>
+</div>
   </div>
   
 </article>
@@ -684,7 +707,7 @@ $$]-21\,;\,14]\,\cup\,[-28\,;\,-6]\;=\;{\color{#4A5D7A}[-28\,;\,14]}$$</div>
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

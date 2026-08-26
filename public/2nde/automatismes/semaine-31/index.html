@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 31 — MaBémat</title>
+<title>Semaine 31 - Épreuve blanche d&#39;automatismes — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Épreuve blanche d&#39;automatismes</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,8 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $a$ un nombre réel. Quelle affirmation est vraie ?</p>
-<p><strong>A.</strong> $a^2 > a$ pour tout $a \in \mathbb{R}$   <strong>B.</strong> $a^2 > a$ pour tout $a > 1$   <strong>C.</strong> $a^2 < a$ pour tout $a > 0$   <strong>D.</strong> $a^2 = a$ pour tout $a \in \mathbb{R}$</p>
+    <p>On considère $A=\dfrac{3}{4}+\dfrac{7}{100}$. On a :</p>
+<p><strong>A.</strong> $A=\dfrac{10}{104}$   <strong>B.</strong> $A=0{,}757$   <strong>C.</strong> $A=0{,}82$   <strong>D.</strong> $A=1{,}45$</p>
 
   </div>
   
@@ -241,9 +244,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Pour $a > 1$, on a $a^2 = a \times a > a \times 1 = a$ (car $a > 1$). Donc $a^2 > a$.</p>
-<p>Contre-exemples pour les autres : $a = 1/2 \Rightarrow a^2 = 1/4 < 1/2 = a$ (réfute A) ; $a = 1/2 \Rightarrow a^2 < a$ mais pas pour tout $a > 0$ (ex. $a = 2$, réfute C).</p>
-<p><strong>Réponse : B</strong></p>
+    <div><p>On écrit chaque fraction sous forme décimale :</p>
+$$\dfrac{3}{4}=0{,}75 \qquad\text{et}\qquad \dfrac{7}{100}=0{,}07$$<p>On additionne :</p>
+$$A=0{,}75+0{,}07={\color{#4A5D7A}0{,}82}$$<p>La réponse A additionne numérateurs et dénominateurs, ce qui n&rsquo;est jamais une addition de fractions.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -263,9 +267,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On pose $N = \dfrac{10^5}{2^3}$.</p>
-<p>Quelle est l&rsquo;écriture de $N$ sous la forme $a \times 10^b$ avec $a$ entier ?</p>
-<p><strong>A.</strong> $N = 125 \times 10^0$   <strong>B.</strong> $N = 12{,}5 \times 10^2$   <strong>C.</strong> $N = 1{,}25 \times 10^3$   <strong>D.</strong> $N = 125 \times 10^2$</p>
+    <p>Dans un groupe de $250$ personnes, $40\,\%$ sont des femmes, et $25\,\%$ de ces femmes sont cadres.</p>
+<p>Le nombre de femmes cadres est :</p>
+<p><strong>A.</strong> $65$   <strong>B.</strong> $100$   <strong>C.</strong> $62{,}5$   <strong>D.</strong> $25$</p>
 
   </div>
   
@@ -274,7 +278,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$N = \frac{10^5}{8} = \frac{100\,000}{8} = 12\,500 = 125 \times 10^2$$<p><strong>Réponse : D</strong></p></div>
+    <div><p>On enchaîne les deux proportions, la seconde ne portant que sur les femmes :</p>
+$$250\times 0{,}40=100\ \text{femmes} \qquad\text{puis}\qquad 100\times 0{,}25={\color{#4A5D7A}25}$$<p>La réponse B s&rsquo;arrête à la première étape, et la réponse A additionne les deux pourcentages au lieu de les enchaîner.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -293,9 +300,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On cherche l&rsquo;ensemble des solutions de l&rsquo;inéquation $\sqrt{x} \leq 3$ (avec $x \geq 0$).</p>
-<p>Quel est l&rsquo;ensemble solution $S$ ?</p>
-<p><strong>A.</strong> $S = [0 ; 3]$   <strong>B.</strong> $S = [0 ; \sqrt{3}]$   <strong>C.</strong> $S = [3 ; +\infty[$   <strong>D.</strong> $S = [0 ; 9]$</p>
+    <p>Un prix baisse de $30\,\%$, puis augmente de $50\,\%$. L&rsquo;évolution globale est :</p>
+<p><strong>A.</strong> une hausse de $5\,\%$   <strong>B.</strong> une baisse de $5\,\%$   <strong>C.</strong> une hausse de $20\,\%$   <strong>D.</strong> une hausse de $15\,\%$</p>
 
   </div>
   
@@ -304,8 +310,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\sqrt{x} \leq 3 \implies x \leq 3^2 = 9 \quad \text{(en élevant au carré, les deux membres étant positifs)}$$<p>Avec la condition $x \geq 0$, l&rsquo;ensemble solution est $S = [0 ; 9]$.</p>
-<p><strong>Réponse : D</strong></p>
+    <div><p>On multiplie les coefficients multiplicateurs :</p>
+$$0{,}70\times 1{,}50=1{,}05$$<p>Comme $1{,}05=1+0{,}05$, il s&rsquo;agit d&rsquo;une hausse de ${\color{#4A5D7A}5\,\%}$.</p>
+<p>La réponse C additionne les taux ($-30+50$), ce qui est toujours faux.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -325,9 +333,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la fonction $f$ définie par $f(x) = (x-4)(x-7)$.</p>
-<p>Quel est le signe de $f(x)$ ?</p>
-<p><strong>A.</strong> $f(x) \geq 0$ pour tout $x \in \mathbb{R}$   <strong>B.</strong> $f(x) \leq 0$ pour $x \in [4 ; 7]$   <strong>C.</strong> $f(x) \geq 0$ pour $x \in [4 ; 7]$   <strong>D.</strong> $f(x) < 0$ pour $x < 4$</p>
+    <p>Soit $f$ la fonction définie par $f(x)=(x-4)(x+2)$. Les antécédents de $0$ par $f$ sont :</p>
+<p><strong>A.</strong> $\lbrace -4\,;\,2\rbrace$   <strong>B.</strong> $\lbrace 4\,;\,-2\rbrace$   <strong>C.</strong> $\lbrace -8\rbrace$   <strong>D.</strong> $\lbrace 0\rbrace$</p>
 
   </div>
   
@@ -336,55 +343,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les zéros de $f$ sont $4$ et $7$. Tableau de signes :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th></th>
-          <th>$4$</th>
-          <th></th>
-          <th>$7$</th>
-          <th></th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$x-4$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-      </tr>
-      <tr>
-          <td>$x-7$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-      </tr>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-          <td>$0$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-      </tr>
-  </tbody>
-</table>
-<p>$f(x) \leq 0$ sur $[4 ; 7]$.</p>
-<p><strong>Réponse : B</strong></p>
+    <div><p>Chercher les antécédents de $0$ revient à résoudre $f(x)=0$, c&rsquo;est-à-dire une équation produit :</p>
+$$(x-4)(x+2)=0$$<p>Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
+$$x-4=0 \quad\text{donc}\quad x=4 \qquad\text{ou}\qquad x+2=0 \quad\text{donc}\quad x=-2$$$${\color{#4A5D7A}\lbrace 4\,;\,-2\rbrace}$$<p>La réponse A est le piège classique : on lit les nombres de l&rsquo;énoncé sans changer leur signe. La réponse C donne $f(0)$, pas les antécédents de $0$.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -404,9 +366,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On sait que $-5$ et $-3$ sont solutions de l&rsquo;équation $f(x) = 0$, où $f$ est une fonction polynôme du second degré.</p>
-<p>Quelle est la somme des solutions ?</p>
-<p><strong>A.</strong> $-8$   <strong>B.</strong> $15$   <strong>C.</strong> $8$   <strong>D.</strong> $-15$</p>
+    <p>La moyenne de la série $2\ ;\ 5\ ;\ 5\ ;\ 8\ ;\ 10\ ;\ 12$ est :</p>
+<p><strong>A.</strong> $6{,}5$   <strong>B.</strong> $5$   <strong>C.</strong> $7$   <strong>D.</strong> $8$</p>
 
   </div>
   
@@ -415,8 +376,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La somme des solutions est $(-5) + (-3) = -8$.</p>
-<p><strong>Réponse : A</strong></p>
+    <div><p>On additionne les six valeurs :</p>
+$$2+5+5+8+10+12=42$$<p>On divise par l&rsquo;effectif :</p>
+$$\dfrac{42}{6}={\color{#4A5D7A}7}$$<p>La réponse A est la médiane $\dfrac{5+8}{2}=6{,}5$, et la réponse B le mode : trois indicateurs différents à ne pas confondre.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -436,9 +399,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Parmi les fonctions suivantes, lesquelles sont des fonctions affines ?</p>
-<p>$f_1(x) = 2x + 12$   $f_2(x) = 3x + \dfrac{5}{4}$   $f_3(x) = \dfrac{2x + 4}{2}$</p>
-<p><strong>A.</strong> Les trois sont affines   <strong>B.</strong> Seulement $f_1$   <strong>C.</strong> $f_1$ et $f_2$ seulement   <strong>D.</strong> Aucune</p>
+    <p>On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d&rsquo;obtenir un pique ou un roi est :</p>
+<p><strong>A.</strong> $\dfrac{11}{32}$   <strong>B.</strong> $\dfrac{3}{8}$   <strong>C.</strong> $\dfrac{1}{32}$   <strong>D.</strong> $\dfrac{12}{32}$</p>
 
   </div>
   
@@ -447,13 +409,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><ul>
-<li>$f_1(x) = 2x + 12$ : affine ✓</li>
-<li>$f_2(x) = 3x + \dfrac{5}{4}$ : affine ✓</li>
-<li>$f_3(x) = \dfrac{2x+4}{2} = x + 2$ : affine ✓</li>
-</ul>
-<p>Les trois fonctions sont affines.</p>
-<p><strong>Réponse : A</strong></p>
+    <div><p>Le jeu contient $8$ piques et $4$ rois. Mais le roi de pique appartient aux deux catégories : si on additionne $8$ et $4$, on le compte deux fois.</p>
+$$8+4-1=11$$<p>D&rsquo;où :</p>
+$$P={\color{#4A5D7A}\dfrac{11}{32}}$$<p>C&rsquo;est la formule $P(A\cup B)=P(A)+P(B)-P(A\cap B)$. La réponse D oublie de retrancher l&rsquo;intersection.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -483,8 +442,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $a$ un nombre réel. Quelle affirmation est vraie ?</p>
-<p><strong>A.</strong> $a^2 > a$ pour tout $a > 0$   <strong>B.</strong> $a^2 = a$ pour tout $a \in \mathbb{R}$   <strong>C.</strong> $a^2 < a$ pour tout $a \in ]0 ; 1[$   <strong>D.</strong> $a^2 < a$ pour tout $a \in \mathbb{R}$</p>
+    <p>On considère $A=\dfrac{2}{5}+\dfrac{9}{100}$. On a :</p>
+<p><strong>A.</strong> $A=\dfrac{11}{105}$   <strong>B.</strong> $A=0{,}49$   <strong>C.</strong> $A=0{,}409$   <strong>D.</strong> $A=1{,}3$</p>
 
   </div>
   
@@ -493,8 +452,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Pour $0 < a < 1$, on a $a^2 = a \times a < a \times 1 = a$ (car $a < 1$). Donc $a^2 < a$ pour tout $a \in ]0 ; 1[$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>On écrit chaque fraction sous forme décimale :</p>
+$$\dfrac{2}{5}=0{,}4 \qquad\text{et}\qquad \dfrac{9}{100}=0{,}09$$<p>On additionne :</p>
+$$A=0{,}4+0{,}09={\color{#4A5D7A}0{,}49}$$<p>La réponse A additionne numérateurs et dénominateurs, ce qui n&rsquo;est jamais une addition de fractions.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -514,9 +475,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On pose $N = 4 \times 36$.</p>
-<p>Quelle est l&rsquo;écriture de $N$ sous la forme $a \times b^2$ avec $a$ et $b$ entiers ?</p>
-<p><strong>A.</strong> $N = 4 \times 36$   <strong>B.</strong> $N = 144 \times 1$   <strong>C.</strong> $N = 4 \times 6^2$   <strong>D.</strong> $N = 2^2 \times 6^2$</p>
+    <p>Dans un groupe de $320$ personnes, $25\,\%$ sont des femmes, et $40\,\%$ de ces femmes sont cadres.</p>
+<p>Le nombre de femmes cadres est :</p>
+<p><strong>A.</strong> $80$   <strong>B.</strong> $128$   <strong>C.</strong> $32$   <strong>D.</strong> $65$</p>
 
   </div>
   
@@ -525,7 +486,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$N = 4 \times 36 = 4 \times 6^2$$<p><strong>Réponse : C</strong></p></div>
+    <div><p>On enchaîne les deux proportions, la seconde ne portant que sur les femmes :</p>
+$$320\times 0{,}25=80\ \text{femmes} \qquad\text{puis}\qquad 80\times 0{,}40={\color{#4A5D7A}32}$$<p>La réponse A s&rsquo;arrête à la première étape, et la réponse D additionne les deux pourcentages au lieu de les enchaîner.</p>
+<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -544,9 +508,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On cherche l&rsquo;ensemble des solutions de l&rsquo;inéquation $\sqrt{x} \leq 12$ (avec $x \geq 0$).</p>
-<p>Quel est l&rsquo;ensemble solution $S$ ?</p>
-<p><strong>A.</strong> $S = [0 ; 12]$   <strong>B.</strong> $S = [0 ; \sqrt{12}]$   <strong>C.</strong> $S = [12 ; +\infty[$   <strong>D.</strong> $S = [0 ; 144]$</p>
+    <p>Un prix baisse de $40\,\%$, puis augmente de $50\,\%$. L&rsquo;évolution globale est :</p>
+<p><strong>A.</strong> une hausse de $10\,\%$   <strong>B.</strong> une baisse de $90\,\%$   <strong>C.</strong> une hausse de $5\,\%$   <strong>D.</strong> une baisse de $10\,\%$</p>
 
   </div>
   
@@ -555,8 +518,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\sqrt{x} \leq 12 \implies x \leq 12^2 = 144 \quad \text{(en élevant au carré)}$$<p>Avec $x \geq 0$, l&rsquo;ensemble solution est $S = [0 ; 144]$.</p>
-<p><strong>Réponse : D</strong></p>
+    <div><p>On multiplie les coefficients multiplicateurs :</p>
+$$0{,}60\times 1{,}50=0{,}9$$<p>Comme $0{,}9=1-0{,}1$, il s&rsquo;agit d&rsquo;une baisse de ${\color{#4A5D7A}10\,\%}$.</p>
+<p>La réponse A additionne les taux ($-40+50$), ce qui est toujours faux.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -576,9 +541,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la fonction $f$ définie par $f(x) = (2x + 20)(x - 10)$.</p>
-<p>Quel est le signe de $f(x)$ ?</p>
-<p><strong>A.</strong> $f(x) \geq 0$ pour tout $x \in \mathbb{R}$   <strong>B.</strong> $f(x) \leq 0$ pour $x \leq -10$   <strong>C.</strong> $f(x) \leq 0$ pour $x \in [-10 ; 10]$   <strong>D.</strong> $f(x) \geq 0$ pour $x \in [-10 ; 10]$</p>
+    <p>Soit $f$ la fonction définie par $f(x)=(x+5)(x-3)$. Les antécédents de $0$ par $f$ sont :</p>
+<p><strong>A.</strong> $\lbrace -5\,;\,3\rbrace$   <strong>B.</strong> $\lbrace 5\,;\,-3\rbrace$   <strong>C.</strong> $\lbrace -15\rbrace$   <strong>D.</strong> $\lbrace 2\rbrace$</p>
 
   </div>
   
@@ -587,56 +551,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les zéros : $2x + 20 = 0 \implies x = -10$ et $x - 10 = 0 \implies x = 10$.</p>
-<p>Tableau de signes :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-\infty$</th>
-          <th></th>
-          <th>$-10$</th>
-          <th></th>
-          <th>$10$</th>
-          <th></th>
-          <th>$+\infty$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$2x+20$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-      </tr>
-      <tr>
-          <td>$x-10$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-      </tr>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-          <td>$0$</td>
-          <td>$-$</td>
-          <td>$0$</td>
-          <td>$+$</td>
-          <td>$+$</td>
-      </tr>
-  </tbody>
-</table>
-<p>$f(x) \leq 0$ sur $[-10 ; 10]$.</p>
-<p><strong>Réponse : C</strong></p>
+    <div><p>Chercher les antécédents de $0$ revient à résoudre $f(x)=0$, c&rsquo;est-à-dire une équation produit :</p>
+$$(x+5)(x-3)=0$$<p>Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
+$$x+5=0 \quad\text{donc}\quad x=-5 \qquad\text{ou}\qquad x-3=0 \quad\text{donc}\quad x=3$$$${\color{#4A5D7A}\lbrace -5\,;\,3\rbrace}$$<p>La réponse B est le piège classique : on lit les nombres de l&rsquo;énoncé sans changer leur signe. La réponse C donne $f(0)$, pas les antécédents de $0$.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -656,9 +574,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On sait que $-7$, $0$ et $2$ sont solutions de l&rsquo;équation $f(x) = 0$, où $f$ est une fonction polynôme de degré 3.</p>
-<p>Quel est le produit des solutions ?</p>
-<p><strong>A.</strong> $-5$   <strong>B.</strong> $14$   <strong>C.</strong> $-14$   <strong>D.</strong> $0$</p>
+    <p>La moyenne de la série $3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 11\ ;\ 15$ est :</p>
+<p><strong>A.</strong> $6$   <strong>B.</strong> $8$   <strong>C.</strong> $9$   <strong>D.</strong> $7{,}5$</p>
 
   </div>
   
@@ -667,8 +584,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le produit des solutions est $(-7) \times 0 \times 2 = 0$.</p>
-<p><strong>Réponse : D</strong></p>
+    <div><p>On additionne les six valeurs :</p>
+$$3+4+6+9+11+15=48$$<p>On divise par l&rsquo;effectif :</p>
+$$\dfrac{48}{6}={\color{#4A5D7A}8}$$<p>La réponse D est la médiane $\dfrac{6+9}{2}=7{,}5$ : ce n&rsquo;est pas la même notion que la moyenne, même si les deux valeurs sont ici proches.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -688,9 +607,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Parmi les fonctions suivantes, lesquelles sont des fonctions affines ?</p>
-<p>$f_1(x) = \dfrac{2x+4}{x}$   $f_2(x) = 6\sqrt{x} - 6$   $f_3(x) = \dfrac{2}{x} + 4$</p>
-<p><strong>A.</strong> Les trois sont affines   <strong>B.</strong> Aucune n&rsquo;est affine   <strong>C.</strong> Seulement $f_3$   <strong>D.</strong> $f_1$ et $f_3$ seulement</p>
+    <p>On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d&rsquo;obtenir un cœur ou une dame est :</p>
+<p><strong>A.</strong> $\dfrac{17}{52}$   <strong>B.</strong> $\dfrac{1}{52}$   <strong>C.</strong> $\dfrac{1}{4}$   <strong>D.</strong> $\dfrac{4}{13}$</p>
 
   </div>
   
@@ -699,13 +617,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><ul>
-<li>$f_1(x) = \dfrac{2x+4}{x} = 2 + \dfrac{4}{x}$ : <strong>non affine</strong> (présence de $1/x$)</li>
-<li>$f_2(x) = 6\sqrt{x} - 6$ : <strong>non affine</strong> (présence de $\sqrt{x}$)</li>
-<li>$f_3(x) = \dfrac{2}{x} + 4$ : <strong>non affine</strong> (présence de $1/x$)</li>
-</ul>
-<p>Aucune n&rsquo;est affine.</p>
-<p><strong>Réponse : B</strong></p>
+    <div><p>Le jeu contient $13$ cœurs et $4$ dames. Mais la dame de cœur appartient aux deux catégories : si on additionne $13$ et $4$, on la compte deux fois.</p>
+$$13+4-1=16$$<p>D&rsquo;où :</p>
+$$P=\dfrac{16}{52}=\dfrac{4\times \cancel{4}}{13\times \cancel{4}}={\color{#4A5D7A}\dfrac{4}{13}}$$<p>C&rsquo;est la formule $P(A\cup B)=P(A)+P(B)-P(A\cap B)$. La réponse A oublie de retrancher l&rsquo;intersection.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -761,7 +676,7 @@ pre[style*="background-color"] {
   });
 
   
-  var showDevoirCorr =  true ;
+  var showDevoirCorr =  false ;
   if (!showDevoirCorr) {
     var devoirPanel = document.getElementById('panel-devoir');
     if (devoirPanel) {
@@ -805,7 +720,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

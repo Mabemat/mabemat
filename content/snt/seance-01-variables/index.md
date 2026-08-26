@@ -1,5 +1,5 @@
 ---
-title: "Séance 01 — Variables et affectation"
+title: "Séance 01 - Variables et affectation"
 short_title: "Variables et affectation"
 description: "Variables, types int/float/str/bool, noms, affectation, calculs, chaînes de caractères."
 weight: 1

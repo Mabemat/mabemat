@@ -1,5 +1,5 @@
 ---
-title: "Séance 06 — Bilan : Fonctions et Boucles"
+title: "Séance 06 - Bilan : Fonctions et Boucles"
 short_title: "Bilan"
 description: "Bilan de révision : fonctions, boucles for, boucles while et exercices combinant les trois notions."
 weight: 6

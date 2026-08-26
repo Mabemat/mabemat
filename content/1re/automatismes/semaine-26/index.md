@@ -134,8 +134,8 @@ $P(A \cap C)=\ldots$
 On sait que :
 
 $$\begin{aligned}
-P(A \cap C) &= P(A) \times P_A(C)\\\\
-&= \dfrac{9}{10} \times \dfrac{4}{5} \\\\
+P(A \cap C) &= P(A) \times P_A(C)\\
+&= \dfrac{9}{10} \times \dfrac{4}{5} \\
 &= \dfrac{18}{25}
 \end{aligned}$$
 
@@ -155,8 +155,8 @@ Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{16x^{4}}{\dfr
 On simplifie l'expression :
 
 $$\begin{aligned}
-\dfrac{16x^{4}}{\dfrac{4}{x^4}} &= 16x^{4} \times \dfrac{x^4}{4}\\\\
-&= \dfrac{16x^{8}}{4}\\\\
+\dfrac{16x^{4}}{\dfrac{4}{x^4}} &= 16x^{4} \times \dfrac{x^4}{4}\\
+&= \dfrac{16x^{8}}{4}\\
 &= 4x^{8}
 \end{aligned}$$
 
@@ -288,8 +288,8 @@ On sait que <br>
 
 $$
 \begin{aligned}
-P(A \cap C) &= P(A) \times P_A(C)\\\\
-&= \dfrac{7}{10} \times \dfrac{7}{10} \\\\
+P(A \cap C) &= P(A) \times P_A(C)\\
+&= \dfrac{7}{10} \times \dfrac{7}{10} \\
 &= \dfrac{49}{100}
 \end{aligned}
 $$
@@ -313,8 +313,8 @@ On peut simplifier l'expression : <br>
 
 $$
 \begin{aligned}
-\dfrac{10x^{3}}{\dfrac{2}{x^5}}&=10x^{3} \times \dfrac{x^5}{2}\\\\
-&=\dfrac{10x^{8}}{2}\\\\
+\dfrac{10x^{3}}{\dfrac{2}{x^5}}&=10x^{3} \times \dfrac{x^5}{2}\\
+&=\dfrac{10x^{8}}{2}\\
 &=5x^{8}.
 \end{aligned}
 $$

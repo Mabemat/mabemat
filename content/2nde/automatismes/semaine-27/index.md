@@ -1,84 +1,118 @@
 ---
-title: "Semaine 27"
+title: "Semaine 27 - Équation réduite et systèmes"
+layout: "automatismes-2nde"
 auto_number: 27
 weight: 27
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{6}-\dfrac{3x+5}{x}$ ?
+Donner l'équation réduite de la droite dont une équation cartésienne est :
 
-**A.** $\dfrac{-17x+30}{6x}$ $\quad$ **B.** $-\dfrac{19x+30}{6x}$ $\quad$ **C.** $\dfrac{17x+30}{6x}$ $\quad$ **D.** $-\dfrac{17x+30}{6x}$
+$$2x-4y+8=0$$
 ---CORR---
-On met au même dénominateur $6x$ :
+L'équation réduite est de la forme $y=mx+p$ : il faut donc isoler $y$.
 
-$$\dfrac{1}{6}-\dfrac{3x+5}{x} = \dfrac{x - 6(3x+5)}{6x} = \dfrac{x-18x-30}{6x} = \dfrac{-17x-30}{6x} = -\dfrac{17x+30}{6x}$$
+On commence par isoler le terme en $y$ :
 
-$${\color{#4A5D7A}\textbf{D}}$$
+$$-4y=-2x-8$$
+
+On divise chaque membre par $-4$, sans oublier de diviser **les deux** termes de droite :
+
+$$y=\dfrac{-2x-8}{-4}=\dfrac{-2}{-4}x+\dfrac{-8}{-4}$$
+
+$$y={\color{#4A5D7A}0{,}5x+2}$$
+
+Le coefficient directeur vaut $0{,}5$ et l'ordonnée à l'origine $2$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Soit $a$ un réel non nul et $n$ un entier non nul. À quelle expression est égale $\dfrac{a^n}{a^{n^2}}$ ?
+Résoudre le système suivant par substitution :
 
-**A.** $a^{-n}$ $\quad$ **B.** $a^{n(n-1)}$ $\quad$ **C.** $a^{1-n}$ $\quad$ **D.** $a^{-n(n-1)}$
+$$\begin{cases} y=2x-1 \\ 3x+y=9 \end{cases}$$
 ---CORR---
-$$\dfrac{a^n}{a^{n^2}} = a^{n-n^2} = a^{n(1-n)} = a^{-n(n-1)}$$
+La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $2x-1$ dans la seconde.
 
-$${\color{#4A5D7A}\textbf{D}}$$
+$$3x+(2x-1)=9$$
+
+On réduit puis on résout :
+
+$$5x-1=9 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+
+On remonte dans la première équation pour obtenir $y$ :
+
+$$y=2\times 2-1=3$$
+
+$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
+
+Vérification dans la seconde équation : $3\times 2+3=9$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $x$ un réel. À quelle expression est égale $(6x+7)^2-(3x+5)^2$ ?
+Résoudre le système suivant par combinaison linéaire :
 
-**A.** $27x^2+54x+24$ $\quad$ **B.** $27x^2+54x-24$ $\quad$ **C.** $(3x+12)(9x+12)$ $\quad$ **D.** $(3x+2)(9x+12)$
+$$\begin{cases} 2x+3y=13 \\ 2x-y=1 \end{cases}$$
 ---CORR---
-On utilise $A^2-B^2=(A-B)(A+B)$ avec $A=6x+7$ et $B=3x+5$ :
+Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.
 
-$$= [(6x+7)-(3x+5)][(6x+7)+(3x+5)] = (3x+2)(9x+12)$$
+$$(2x+3y)-(2x-y)=13-1$$
 
-On vérifie : $(3x+2)(9x+12)=27x^2+36x+18x+24=27x^2+54x+24$. ✓
+$$2x+3y-2x+y=12 \qquad\text{soit}\qquad 4y=12 \qquad\text{donc}\qquad y=3$$
 
-$${\color{#4A5D7A}\textbf{D}}$$
+On remplace $y$ par $3$ dans la seconde équation :
+
+$$2x-3=1 \qquad\text{donc}\qquad 2x=4 \qquad\text{donc}\qquad x=2$$
+
+$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
+
+Attention au signe lors de la soustraction : $-(-y)=+y$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-La fonction $f$ est définie par $f(x)=1-2x^2$. L'image de $-3$ par $f$ vaut :
+La droite $(d)$ a pour équation cartésienne $5x+2y-4=0$.
 
-**A.** $49$ $\quad$ **B.** $13$ $\quad$ **C.** $19$ $\quad$ **D.** $-17$
+Le point $A(2\,;\,-3)$ appartient-il à $(d)$ ?
 ---CORR---
-$$f(-3) = 1-2\times(-3)^2 = 1-2\times9 = 1-18 = -17$$
+On remplace $x$ par $2$ et $y$ par $-3$ :
 
-$${\color{#4A5D7A}\textbf{D}}$$
+$$5\times 2+2\times(-3)-4=10-6-4=0$$
+
+On obtient bien $0$, donc ${\color{#4A5D7A}A\ \text{appartient à}\ (d)}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-$(D)$ a pour équation $y=6x-8$ et $(D')$ a pour équation $y=-3x+3$.
+Le point d'intersection des droites d'équations $y=2x+1$ et $y=-x+7$ a pour abscisse :
 
-$(D)$ est strictement au-dessus de $(D')$ sur :
-
-**A.** $\left]-\infty\,;\,\dfrac{11}{9}\right[$ $\quad$ **B.** $\left]-\infty\,;\,\dfrac{9}{11}\right[$ $\quad$ **C.** $\left]\dfrac{11}{9}\,;\,+\infty\right[$ $\quad$ **D.** $\left]\dfrac{9}{11}\,;\,+\infty\right[$
+**A.** $1$ &emsp; **B.** $3$ &emsp; **C.** $2$ &emsp; **D.** $5$
 ---CORR---
-$(D)$ au-dessus de $(D')$ $\iff$ $6x-8>-3x+3$ :
+Au point d'intersection, les deux droites ont la même ordonnée pour la même abscisse. On égalise donc les deux expressions :
 
-$$9x > 11 \implies x > \dfrac{11}{9}$$
+$$2x+1=-x+7$$
 
-$${\color{#4A5D7A}\textbf{C}}$$
+On ajoute $x$ à chaque membre, puis on retranche $1$ :
+
+$$3x+1=7 \qquad\text{donc}\qquad 3x=6 \qquad\text{donc}\qquad x={\color{#4A5D7A}2}$$
+
+La réponse D est l'ordonnée du point d'intersection ($y=2\times 2+1=5$), pas son abscisse.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-La probabilité de n'obtenir aucun Pile en trois lancers d'une pièce truquée est $0{,}027$.
+Une augmentation de $10\,\%$ suivie d'une baisse de $10\,\%$ équivaut à :
 
-La probabilité d'obtenir **au moins un** Pile est :
-
-**A.** $0{,}027$ $\quad$ **B.** On ne peut pas savoir $\quad$ **C.** $0{,}3$ $\quad$ **D.** $0{,}973$
+**A.** aucune évolution &emsp; **B.** une baisse de $1\,\%$ &emsp; **C.** une hausse de $1\,\%$ &emsp; **D.** une baisse de $20\,\%$
 ---CORR---
-Les événements « au moins un Pile » et « aucun Pile » sont contraires :
+On multiplie les coefficients multiplicateurs :
 
-$$P(\text{au moins un Pile}) = 1 - 0{,}027 = 0{,}973$$
+$$1{,}10\times 0{,}90=0{,}99$$
 
-$${\color{#4A5D7A}\textbf{D}}$$
+Comme $0{,}99=1-0{,}01$, il s'agit d'une baisse de ${\color{#4A5D7A}1\,\%}$.
+
+La réponse A est le piège le plus courant : la baisse de $10\,\%$ s'applique à un prix déjà augmenté, donc à une base plus grande. Elle retire plus que ce que la hausse avait ajouté.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -86,69 +120,111 @@ $${\color{#4A5D7A}\textbf{D}}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{2}-\dfrac{2x+5}{x}$ ?
+Donner l'équation réduite de la droite dont une équation cartésienne est :
 
-**A.** $\dfrac{3x+10}{2x}$ $\quad$ **B.** $-\dfrac{3x+10}{2x}$ $\quad$ **C.** $-\dfrac{5x+10}{2x}$ $\quad$ **D.** $\dfrac{-3x+10}{2x}$
+$$3x-6y-18=0$$
 ---CORR---
-$$\dfrac{1}{2}-\dfrac{2x+5}{x} = \dfrac{x-2(2x+5)}{2x} = \dfrac{x-4x-10}{2x} = \dfrac{-3x-10}{2x} = -\dfrac{3x+10}{2x}$$
+L'équation réduite est de la forme $y=mx+p$ : il faut donc isoler $y$.
 
-$${\color{#4A5D7A}\textbf{B}}$$
+On commence par isoler le terme en $y$ :
+
+$$-6y=-3x+18$$
+
+On divise chaque membre par $-6$, sans oublier de diviser **les deux** termes de droite :
+
+$$y=\dfrac{-3x+18}{-6}=\dfrac{-3}{-6}x+\dfrac{18}{-6}$$
+
+$$y={\color{#4A5D7A}0{,}5x-3}$$
+
+Le coefficient directeur vaut $0{,}5$ et l'ordonnée à l'origine $-3$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Soit $a$ un réel non nul et $n$ un entier non nul. À quelle expression est égale $\dfrac{a^n}{a^{n^5}}$ ?
+Résoudre le système suivant par substitution :
 
-**A.** $a^{-4n}$ $\quad$ **B.** $a^{n(n^4-1)}$ $\quad$ **C.** $a^{-n^4}$ $\quad$ **D.** $a^{-n(n^4-1)}$
+$$\begin{cases} y=3x+2 \\ 2x+y=12 \end{cases}$$
 ---CORR---
-$$\dfrac{a^n}{a^{n^5}} = a^{n-n^5} = a^{n(1-n^4)} = a^{-n(n^4-1)}$$
+La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $3x+2$ dans la seconde.
 
-$${\color{#4A5D7A}\textbf{D}}$$
+$$2x+(3x+2)=12$$
+
+On réduit puis on résout :
+
+$$5x+2=12 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+
+On remonte dans la première équation pour obtenir $y$ :
+
+$$y=3\times 2+2=8$$
+
+$$S={\color{#4A5D7A}\lbrace (2\,;\,8)\rbrace}$$
+
+Vérification dans la seconde équation : $2\times 2+8=12$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $x$ un réel. À quelle expression est égale $(7x+4)^2-(5x-1)^2$ ?
+Résoudre le système suivant par combinaison linéaire :
 
-**A.** $(2x+5)(12x+3)$ $\quad$ **B.** $24x^2+66x+15$ $\quad$ **C.** $24x^2-66x+15$ $\quad$ **D.** $(2x+3)(12x+3)$
+$$\begin{cases} 3x+2y=17 \\ 3x-y=5 \end{cases}$$
 ---CORR---
-$$= [(7x+4)-(5x-1)][(7x+4)+(5x-1)] = (2x+5)(12x+3) = 24x^2+6x+60x+15 = 24x^2+66x+15$$
+Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.
 
-$${\color{#4A5D7A}\textbf{B}}$$
+$$(3x+2y)-(3x-y)=17-5$$
+
+$$3x+2y-3x+y=12 \qquad\text{soit}\qquad 3y=12 \qquad\text{donc}\qquad y=4$$
+
+On remplace $y$ par $4$ dans la seconde équation :
+
+$$3x-4=5 \qquad\text{donc}\qquad 3x=9 \qquad\text{donc}\qquad x=3$$
+
+$$S={\color{#4A5D7A}\lbrace (3\,;\,4)\rbrace}$$
+
+Attention au signe lors de la soustraction : $-(-y)=+y$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-La fonction $f$ est définie par $f(x)=3-2x^2$. L'image de $-5$ par $f$ vaut :
+La droite $(d)$ a pour équation cartésienne $4x+3y-1=0$.
 
-**A.** $23$ $\quad$ **B.** $47$ $\quad$ **C.** $-47$ $\quad$ **D.** $53$
+Le point $A(1\,;\,-1)$ appartient-il à $(d)$ ?
 ---CORR---
-$$f(-5) = 3-2\times(-5)^2 = 3-50 = -47$$
+On remplace $x$ par $1$ et $y$ par $-1$ :
 
-$${\color{#4A5D7A}\textbf{C}}$$
+$$4\times 1+3\times(-1)-1=4-3-1=0$$
+
+On obtient bien $0$, donc ${\color{#4A5D7A}A\ \text{appartient à}\ (d)}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-$(D)$ a pour équation $y=5x+5$ et $(D')$ a pour équation $y=8x+1$.
+Le point d'intersection des droites d'équations $y=3x-4$ et $y=-2x+11$ a pour abscisse :
 
-$(D)$ est strictement au-dessus de $(D')$ sur :
-
-**A.** $\left]-\infty\,;\,\dfrac{3}{4}\right[$ $\quad$ **B.** $\left]-\infty\,;\,\dfrac{4}{3}\right[$ $\quad$ **C.** $\left]\dfrac{3}{4}\,;\,+\infty\right[$ $\quad$ **D.** $\left]\dfrac{4}{3}\,;\,+\infty\right[$
+**A.** $3$ &emsp; **B.** $2$ &emsp; **C.** $5$ &emsp; **D.** $4$
 ---CORR---
-$5x+5>8x+1 \implies -3x>-4 \implies x<\dfrac{4}{3}$
+Au point d'intersection, les deux droites ont la même ordonnée pour la même abscisse. On égalise donc les deux expressions :
 
-$${\color{#4A5D7A}\textbf{B}}$$
+$$3x-4=-2x+11$$
+
+On ajoute $2x$ à chaque membre, puis $4$ :
+
+$$5x-4=11 \qquad\text{donc}\qquad 5x=15 \qquad\text{donc}\qquad x={\color{#4A5D7A}3}$$
+
+La réponse C est l'ordonnée du point d'intersection ($y=3\times 3-4=5$), pas son abscisse.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Un archer réussit avec probabilité $0{,}8$. Il tire trois flèches. La probabilité qu'il réussisse au moins une fois est $0{,}992$.
+Une baisse de $20\,\%$ suivie d'une hausse de $20\,\%$ équivaut à :
 
-La probabilité qu'il rate ses **trois** tirs est :
-
-**A.** $0{,}2$ $\quad$ **B.** $0{,}992$ $\quad$ **C.** On ne peut pas savoir $\quad$ **D.** $0{,}008$
+**A.** une baisse de $40\,\%$ &emsp; **B.** aucune évolution &emsp; **C.** une hausse de $4\,\%$ &emsp; **D.** une baisse de $4\,\%$
 ---CORR---
-Les événements « réussir au moins une fois » et « rater tous les tirs » sont contraires :
+On multiplie les coefficients multiplicateurs :
 
-$$P(\text{rater 3}) = 1-0{,}992 = 0{,}008$$
+$$0{,}80\times 1{,}20=0{,}96$$
 
-$${\color{#4A5D7A}\textbf{D}}$$
+Comme $0{,}96=1-0{,}04$, il s'agit d'une baisse de ${\color{#4A5D7A}4\,\%}$.
+
+La réponse B est le piège le plus courant : la hausse de $20\,\%$ s'applique à un prix déjà baissé, donc à une base plus petite. Elle rajoute moins que ce que la baisse avait retiré.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

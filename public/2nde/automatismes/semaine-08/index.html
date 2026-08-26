@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 8 — MaBémat</title>
+<title>Semaine 8 - Inéquations et translations — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Inéquations et translations</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le taux d&rsquo;évolution associé à un coefficient multiplicateur de $0{,}75$ est :
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$-3x+7\leqslant 1$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,8 +243,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Multiplier par $0{,}75 = 1 - 0{,}25$ revient à diminuer de $25\,\%$.</p>
-<p>Le taux d&rsquo;évolution est ${\color{#4A5D7A}-25\,\%}$.</p>
+    <div><p>On retranche $7$ à chaque membre, ce qui ne change pas le sens de l&rsquo;inégalité :</p>
+$$-3x\leqslant -6$$<p>On divise chaque membre par $-3$. Diviser par un nombre <strong>négatif</strong> change le sens de l&rsquo;inégalité :</p>
+$$x\geqslant \dfrac{-6}{-3} \qquad\text{soit}\qquad x\geqslant 2$$$$S={\color{#4A5D7A}\left[2\,;\,+\infty\right[}$$<p>Vérification avec $x=3$ : $-3\times 3+7=-2$, et $-2\leqslant 1$ est bien vraie.</p>
 </div>
   </div>
   
@@ -260,7 +265,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le prix d&rsquo;un tee-shirt est $50$€. Il baisse de $20\,\%$. Son nouveau prix est :
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$5x-2>8x+7$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -268,7 +274,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$50\times(1-0{,}2)=50\times 0{,}8={\color{#4A5D7A}40}$ €.</div>
+    <div><p>On retranche $8x$ à chaque membre :</p>
+$$-3x-2>7$$<p>On ajoute $2$ à chaque membre :</p>
+$$-3x>9$$<p>On divise chaque membre par $-3$, ce qui change le sens de l&rsquo;inégalité :</p>
+$$x<\dfrac{9}{-3} \qquad\text{soit}\qquad x<-3$$$$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right[}$$</div>
   </div>
   
 </article>
@@ -287,8 +296,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un sac coûte $120$ euros. Le prix baisse de $25\,\%$. Le nouveau prix est donné par :</p>
-<p>A. $120\times\left(1+\dfrac{25}{100}\right)$ $\quad$ B. $120\times 1{,}25$ $\quad$ C. $120\times\dfrac{25}{100}$ $\quad$ D. $120\times\left(1-\dfrac{25}{100}\right)$</p>
+    <p>$ABCD$ est un parallélogramme.</p>
+<p>Quelle est l&rsquo;image du point $D$ par la translation qui transforme $A$ en $B$ ? Justifier.</p>
 
   </div>
   
@@ -297,8 +306,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Baisser de $25\,\%$ revient à multiplier par $1-0{,}25$.</p>
-<p>La bonne réponse est <strong>D</strong>.</p>
+    <div><p>La translation qui transforme $A$ en $B$ est la translation de vecteur $\overrightarrow{AB}$.</p>
+<p>L&rsquo;image de $D$ est le point $M$ tel que $\overrightarrow{DM}=\overrightarrow{AB}$.</p>
+<p>Or $ABCD$ est un parallélogramme, donc ses côtés $[AB]$ et $[DC]$ sont parallèles, de même longueur et de même sens :</p>
+$$\overrightarrow{AB}=\overrightarrow{DC}$$<p>L&rsquo;image de $D$ est donc le point ${\color{#4A5D7A}C}$.</p>
 </div>
   </div>
   
@@ -318,7 +329,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le prix d&rsquo;un sweat est passé de $40$€ à $32$€. Il a baissé de :
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$(4x+1)(x-6)=0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -326,7 +338,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>La baisse est de $8$€ sur $40$€ : $\dfrac{8}{40}=0{,}2={\color{#4A5D7A}20\,\%}$.</div>
+    <div><p>Un produit de facteurs est nul si et seulement si l&rsquo;un au moins de ses facteurs est nul :</p>
+$$4x+1=0 \quad\text{donc}\quad x=-\dfrac{1}{4} \qquad\qquad x-6=0 \quad\text{donc}\quad x=6$$$$S={\color{#4A5D7A}\left\lbrace -\dfrac{1}{4}\,;\,6\right\rbrace}$$</div>
   </div>
   
 </article>
@@ -345,8 +358,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Une grandeur passe de $150$ à $225$. L&rsquo;évolution est :</p>
-<p>A. Une augmentation de $33\,\%$ $\quad$ B. Une augmentation de $50\,\%$ $\quad$ C. Une augmentation de $75\,\%$ $\quad$ D. Une augmentation de $65\,\%$</p>
+    <p>L&rsquo;ensemble $S$ des solutions de l&rsquo;équation $(x-5)^2=-4$ est :</p>
+<p><strong>A.</strong> $S=\lbrace -2\,;\,2\rbrace$   <strong>B.</strong> $S=\lbrace 3\,;\,7\rbrace$   <strong>C.</strong> $S=\lbrace 5\rbrace$   <strong>D.</strong> $S=\varnothing$</p>
 
   </div>
   
@@ -355,8 +368,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$t=\dfrac{225-150}{150}=\dfrac{75}{150}=0{,}5=50\,\%$.</p>
-<p>La bonne réponse est <strong>B</strong>.</p>
+    <div><p>Le membre de gauche est un carré. Or le carré d&rsquo;un nombre réel est toujours positif ou nul :</p>
+$$(x-5)^2\geqslant 0 \quad\text{pour tout réel }x$$<p>Il ne peut donc jamais être égal à $-4$, qui est strictement négatif.</p>
+$$S={\color{#4A5D7A}\varnothing}$$<p>Aucun calcul n&rsquo;est nécessaire : il suffit de reconnaître qu&rsquo;un carré ne peut pas être négatif.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -376,7 +391,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le prix d&rsquo;un article connaît deux augmentations successives de $10\,\%$. Le taux d&rsquo;évolution global est :
+    <p>Dans un lycée, $180$ élèves étudient l&rsquo;italien, ce qui représente $15\,\%$ du nombre d&rsquo;élèves inscrits.</p>
+<p>Le nombre d&rsquo;élèves inscrits dans ce lycée est :</p>
+<p><strong>A.</strong> $27$   <strong>B.</strong> $1\,200$   <strong>C.</strong> $120$   <strong>D.</strong> $2\,700$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -384,8 +402,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Coefficient multiplicateur global : $1{,}1\times 1{,}1=1{,}21$.</p>
-<p>Taux global : $1{,}21-1=0{,}21={\color{#4A5D7A}+21\,\%}$.</p>
+    <div><p>On note $N$ le nombre d&rsquo;élèves inscrits. L&rsquo;énoncé se traduit par :</p>
+$$\dfrac{15}{100}\times N=180 \qquad\text{soit}\qquad 0{,}15\times N=180$$<p>On divise chaque membre par $0{,}15$ :</p>
+$$N=\dfrac{180}{0{,}15}=\dfrac{18\,000}{15}={\color{#4A5D7A}1\,200}$$<p>Vérification : $15\,\%$ de $1\,200$ vaut $\dfrac{15\times 1\,200}{100}=180$.</p>
+<p>La réponse A est le piège : elle correspond à $15\,\%$ <strong>de</strong> $180$, alors qu&rsquo;ici $180$ est déjà le résultat.</p>
+<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -415,7 +436,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le taux d&rsquo;évolution associé à un coefficient multiplicateur de $1{,}15$ est :
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$-4x+3\leqslant -9$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -423,8 +445,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Multiplier par $1{,}15 = 1 + 0{,}15$ revient à augmenter de $15\,\%$.</p>
-<p>Le taux d&rsquo;évolution est ${\color{#4A5D7A}+15\,\%}$.</p>
+    <div><p>On retranche $3$ à chaque membre, ce qui ne change pas le sens de l&rsquo;inégalité :</p>
+$$-4x\leqslant -12$$<p>On divise chaque membre par $-4$. Diviser par un nombre <strong>négatif</strong> change le sens de l&rsquo;inégalité :</p>
+$$x\geqslant \dfrac{-12}{-4} \qquad\text{soit}\qquad x\geqslant 3$$$$S={\color{#4A5D7A}\left[3\,;\,+\infty\right[}$$<p>Vérification avec $x=4$ : $-4\times 4+3=-13$, et $-13\leqslant -9$ est bien vraie.</p>
 </div>
   </div>
   
@@ -444,7 +467,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le prix d&rsquo;un jean est $80$€. Il augmente de $15\,\%$. Son nouveau prix est :
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$6x+5>9x+17$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -452,7 +476,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$80\times 1{,}15={\color{#4A5D7A}92}$ €.</div>
+    <div><p>On retranche $9x$ à chaque membre :</p>
+$$-3x+5>17$$<p>On retranche $5$ à chaque membre :</p>
+$$-3x>12$$<p>On divise chaque membre par $-3$, ce qui change le sens de l&rsquo;inégalité :</p>
+$$x<\dfrac{12}{-3} \qquad\text{soit}\qquad x<-4$$$$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right[}$$</div>
   </div>
   
 </article>
@@ -471,8 +498,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un livre coûte $25$ euros. Le prix augmente de $12\,\%$. Le nouveau prix est donné par :</p>
-<p>A. $25\times\left(1-\dfrac{12}{100}\right)$ $\quad$ B. $25\times 0{,}12$ $\quad$ C. $25\times\left(1+\dfrac{12}{100}\right)$ $\quad$ D. $25\times 1{,}12$</p>
+    <p>$EFGH$ est un parallélogramme.</p>
+<p>Quelle est l&rsquo;image du point $F$ par la translation qui transforme $E$ en $H$ ? Justifier.</p>
 
   </div>
   
@@ -481,8 +508,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Augmenter de $12\,\%$ revient à multiplier par $1+0{,}12=1{,}12$.</p>
-<p>Les réponses <strong>C</strong> et <strong>D</strong> sont équivalentes (toutes les deux correctes).</p>
+    <div><p>La translation qui transforme $E$ en $H$ est la translation de vecteur $\overrightarrow{EH}$.</p>
+<p>L&rsquo;image de $F$ est le point $M$ tel que $\overrightarrow{FM}=\overrightarrow{EH}$.</p>
+<p>Or $EFGH$ est un parallélogramme, donc ses côtés $[EH]$ et $[FG]$ sont parallèles, de même longueur et de même sens :</p>
+$$\overrightarrow{EH}=\overrightarrow{FG}$$<p>L&rsquo;image de $F$ est donc le point ${\color{#4A5D7A}G}$.</p>
 </div>
   </div>
   
@@ -502,7 +531,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le prix d&rsquo;une veste est passé de $60$€ à $75$€. Il a augmenté de :
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$(3x-2)(x+8)=0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -510,7 +540,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>La hausse est de $15$€ sur $60$€ : $\dfrac{15}{60}=0{,}25={\color{#4A5D7A}25\,\%}$.</div>
+    <div><p>Un produit de facteurs est nul si et seulement si l&rsquo;un au moins de ses facteurs est nul :</p>
+$$3x-2=0 \quad\text{donc}\quad x=\dfrac{2}{3} \qquad\qquad x+8=0 \quad\text{donc}\quad x=-8$$$$S={\color{#4A5D7A}\left\lbrace -8\,;\,\dfrac{2}{3}\right\rbrace}$$</div>
   </div>
   
 </article>
@@ -529,8 +560,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Une grandeur passe de $200$ à $160$. L&rsquo;évolution est :</p>
-<p>A. Une diminution de $20\,\%$ $\quad$ B. Une diminution de $25\,\%$ $\quad$ C. Une diminution de $40\,\%$ $\quad$ D. Une diminution de $30\,\%$</p>
+    <p>L&rsquo;ensemble $S$ des solutions de l&rsquo;équation $(x+3)^2=-9$ est :</p>
+<p><strong>A.</strong> $S=\varnothing$   <strong>B.</strong> $S=\lbrace -6\,;\,0\rbrace$   <strong>C.</strong> $S=\lbrace -3\rbrace$   <strong>D.</strong> $S=\lbrace 3\,;\,-3\rbrace$</p>
 
   </div>
   
@@ -539,8 +570,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$t=\dfrac{160-200}{200}=\dfrac{-40}{200}=-0{,}2=-20\,\%$.</p>
-<p>La bonne réponse est <strong>A</strong>.</p>
+    <div><p>Le membre de gauche est un carré. Or le carré d&rsquo;un nombre réel est toujours positif ou nul :</p>
+$$(x+3)^2\geqslant 0 \quad\text{pour tout réel }x$$<p>Il ne peut donc jamais être égal à $-9$, qui est strictement négatif.</p>
+$$S={\color{#4A5D7A}\varnothing}$$<p>Aucun calcul n&rsquo;est nécessaire : il suffit de reconnaître qu&rsquo;un carré ne peut pas être négatif.</p>
+<p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
   
@@ -560,7 +593,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le prix d&rsquo;un article connaît deux baisses successives de $15\,\%$. Le taux d&rsquo;évolution global est :
+    <p>Dans un lycée, $84$ élèves étudient le russe, ce qui représente $6\,\%$ du nombre d&rsquo;élèves inscrits.</p>
+<p>Le nombre d&rsquo;élèves inscrits dans ce lycée est :</p>
+<p><strong>A.</strong> $5{,}04$   <strong>B.</strong> $140$   <strong>C.</strong> $1\,400$   <strong>D.</strong> $504$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -568,8 +604,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Coefficient multiplicateur global : $0{,}85\times 0{,}85=0{,}7225$.</p>
-<p>Taux global : $0{,}7225-1=-0{,}2775={\color{#4A5D7A}-27{,}75\,\%}$.</p>
+    <div><p>On note $N$ le nombre d&rsquo;élèves inscrits. L&rsquo;énoncé se traduit par :</p>
+$$\dfrac{6}{100}\times N=84 \qquad\text{soit}\qquad 0{,}06\times N=84$$<p>On divise chaque membre par $0{,}06$ :</p>
+$$N=\dfrac{84}{0{,}06}=\dfrac{8\,400}{6}={\color{#4A5D7A}1\,400}$$<p>Vérification : $6\,\%$ de $1\,400$ vaut $\dfrac{6\times 1\,400}{100}=84$.</p>
+<p>La réponse A est le piège : elle correspond à $6\,\%$ <strong>de</strong> $84$, alors qu&rsquo;ici $84$ est déjà le résultat.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -671,7 +710,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

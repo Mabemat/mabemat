@@ -1,5 +1,5 @@
 ---
-title: "QCM — Fonctions"
+title: "QCM - Fonctions"
 layout: "qcm"
 ---
 
@@ -78,7 +78,7 @@ def fonction(n):
 
 | Étape | `n` | Calcul | Renvoi |
 |:---:|:---:|---|:---:|
-| Appel `fonction(5)` | 5 | — | — |
+| Appel `fonction(5)` | 5 | - | - |
 | `return 2 * n` | 5 | 2 × 5 | **10** |
 
 **Réponse : `10`**
@@ -168,7 +168,7 @@ def carre(x):
 
 | Étape | `x` | Calcul | Renvoi |
 |:---:|:---:|---|:---:|
-| Appel `carre(7)` | 7 | — | — |
+| Appel `carre(7)` | 7 | - | - |
 | `return x ** 2` | 7 | 7² = 7 × 7 | **49** |
 
 L'opérateur `**` signifie **puissance**, pas multiplication par 2.
@@ -259,8 +259,8 @@ def calcul(x):
 
 | Ligne | `x` | `y` | Renvoi |
 |:---:|:---:|:---:|:---:|
-| Appel `calcul(3)` | 3 | — | — |
-| `y = x + 1` | 3 | **4** | — |
+| Appel `calcul(3)` | 3 | - | - |
+| `y = x + 1` | 3 | **4** | - |
 | `return y * 2` | 3 | 4 | 4 × 2 = **8** |
 
 La variable interne `y` n'existe que pendant l'exécution de la fonction.
@@ -312,8 +312,8 @@ print(y)
 
 | Ligne | Action | Affichage | `y` |
 |:---:|---|:---:|:---:|
-| `y = f(5)` | `f` exécute `print(5 * 2)` | **`10`** | — |
-| (fin de `f`) | Aucun `return` → renvoie `None` | — | `None` |
+| `y = f(5)` | `f` exécute `print(5 * 2)` | **`10`** | - |
+| (fin de `f`) | Aucun `return` → renvoie `None` | - | `None` |
 | `print(y)` | Affiche la valeur de `y` | **`None`** | `None` |
 
 Une fonction sans `return` renvoie automatiquement `None`. `print` à l'intérieur affiche, mais ne renvoie rien.
@@ -416,8 +416,8 @@ print(message)
 
 | Étape | Action | Affichage | `message` |
 |:---:|---|:---:|:---:|
-| Appel `saluer("Léa")` | `print("Bonjour Léa")` | `Bonjour Léa` | — |
-| Fin de `saluer` | Pas de `return` → renvoie `None` | — | `None` |
+| Appel `saluer("Léa")` | `print("Bonjour Léa")` | `Bonjour Léa` | - |
+| Fin de `saluer` | Pas de `return` → renvoie `None` | - | `None` |
 | `print(message)` | Affiche la valeur de `message` | `None` | `None` |
 
 Piège classique : `print` **affiche** mais ne **renvoie** rien. Sans `return`, la fonction renvoie `None`.

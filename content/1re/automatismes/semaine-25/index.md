@@ -183,20 +183,20 @@ On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$<br>
 D'après la formule des probabilités totales :<br>
 
 $$
-\begin{aligned}P(C)&=p(A\cap C)+p(\bar A \cap C)\\\\
-&=P(A)\times P_A(C)+P(\bar A)\times P_{\bar A}(C)\\\\
-&=\dfrac{7}{10}\times \dfrac{1}{2}+\dfrac{3}{10}\times \dfrac{7}{10}\\\\
-&=\dfrac{7}{20}+\dfrac{21}{100}\\\\
-&=\dfrac{14}{25}\\\\
+\begin{aligned}P(C)&=p(A\cap C)+p(\bar A \cap C)\\
+&=P(A)\times P_A(C)+P(\bar A)\times P_{\bar A}(C)\\
+&=\dfrac{7}{10}\times \dfrac{1}{2}+\dfrac{3}{10}\times \dfrac{7}{10}\\
+&=\dfrac{7}{20}+\dfrac{21}{100}\\
+&=\dfrac{14}{25}\\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\\\
-&=\dfrac{P(A)\times P_A(C)}{P(C)}\\\\
-&=\dfrac{\dfrac{7}{20}}{\dfrac{14}{25}}\\\\
-&=\dfrac{5}{8}\\\\
+P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
+&=\dfrac{P(A)\times P_A(C)}{P(C)}\\
+&=\dfrac{\dfrac{7}{20}}{\dfrac{14}{25}}\\
+&=\dfrac{5}{8}\\
 \end{aligned}
 $$
 
@@ -274,9 +274,9 @@ On développe l'expression de l'énoncé. <br>
 
 $$
 \begin{aligned}
--4(x+2)^2-1&=-4\left(x^2 +4x+4\right)-1\\\\
-&=-4x^2 -16x-16 -1\\\\
-&=\boldsymbol{-4x^2 -16x-17}\\\\
+-4(x+2)^2-1&=-4\left(x^2 +4x+4\right)-1\\
+&=-4x^2 -16x-16 -1\\
+&=\boldsymbol{-4x^2 -16x-17}\\
 \end{aligned}
 $$
 

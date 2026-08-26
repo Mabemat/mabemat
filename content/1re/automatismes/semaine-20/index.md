@@ -27,8 +27,8 @@ Lorsque $a=2$, $b=\dfrac{1}{7}$, $c=4$ et $d=\dfrac{3}{5}$, la valeur de $F$ est
 On remplace $a$, $b$, $c$ et $d$ par les valeurs données :
 
 $\begin{aligned}
-F &= \dfrac{2}{\dfrac{1}{7}} +4 \times \dfrac{3}{5} \\\\
- &= 14 +\dfrac{12}{5}\\\\
+F &= \dfrac{2}{\dfrac{1}{7}} +4 \times \dfrac{3}{5} \\
+ &= 14 +\dfrac{12}{5}\\
  &= \boldsymbol{\dfrac{82}{5}}
 \end{aligned}$
 
@@ -53,9 +53,9 @@ On cherche si les fonctions $f$ peuvent s'écrire sous la forme $f(x)=mx+p$.
  $\bullet$ En développant, on obtient :
  
  $\begin{aligned}
- f_1(x)&=x^2-(x+3)(x-5)\\\\
- &=x^2-(x^2-5x+3x-15)\\\\
- &=x^2-x^2+5x-3x+15\\\\
+ f_1(x)&=x^2-(x+3)(x-5)\\
+ &=x^2-(x^2-5x+3x-15)\\
+ &=x^2-x^2+5x-3x+15\\
  &=2x+15
  \end{aligned}$
 
@@ -85,8 +85,8 @@ Soit $n$ un entier non nul.
 - $\left(-1\right)^{n-1}$
 
 ---CORR---
-$\begin{aligned} \left(-1\right)^{n+4}&=\left(-1\right)^{4} \times \left(-1\right)^{n} \\\\
- &=1\times \left(-1\right)^{n} \\\\
+$\begin{aligned} \left(-1\right)^{n+4}&=\left(-1\right)^{4} \times \left(-1\right)^{n} \\
+ &=1\times \left(-1\right)^{n} \\
  &=\boldsymbol{\left(-1\right)^{n}} 
  \end{aligned}$
 
@@ -210,9 +210,9 @@ On remplace $a$, $b$, $c$ et $d$ par les valeurs données : <br>
 
 $$
 \begin{aligned}
-F&=\dfrac{1}{7}+\dfrac{1}{8\times \left(-\dfrac{1}{8}\right)}\\\\
-&=\dfrac{1}{7}+\dfrac{1}{-1}\\\\
-&=\dfrac{1}{7}-1\\\\
+F&=\dfrac{1}{7}+\dfrac{1}{8\times \left(-\dfrac{1}{8}\right)}\\
+&=\dfrac{1}{7}+\dfrac{1}{-1}\\
+&=\dfrac{1}{7}-1\\
 &=\boldsymbol{-\dfrac{6}{7}}
 \end{aligned}
 $$
@@ -239,9 +239,9 @@ $\bullet$ En développant, on obtient :<br>
 
 $$
 \begin{aligned}
-f_1(x)&=x^2-(x+2)(x-4)\\\\
-&=x^2-(x^2-4x+2x-8)\\\\
-&=x^2-x^2+4x-2x+8\\\\
+f_1(x)&=x^2-(x+2)(x-4)\\
+&=x^2-(x^2-4x+2x-8)\\
+&=x^2-x^2+4x-2x+8\\
 &=2x+8
 \end{aligned}
 $$
@@ -268,8 +268,8 @@ Soit $n$ un entier non nul.
 
 ---CORR---
 $$
-\begin{aligned} \left(-1\right)^{n+6}&=\left(-1\right)^{6} \times \left(-1\right)^{n} \\\\
-&=1\times \left(-1\right)^{n} \\\\
+\begin{aligned} \left(-1\right)^{n+6}&=\left(-1\right)^{6} \times \left(-1\right)^{n} \\
+&=1\times \left(-1\right)^{n} \\
 &=\boldsymbol{\left(-1\right)^{n}}
 \end{aligned}
 $$

@@ -1,5 +1,5 @@
 ---
-title: "Séance 05 — Boucles non bornées"
+title: "Séance 05 - Boucles non bornées"
 short_title: "Boucles non bornées"
 description: "Boucle while, condition d'arrêt, tableaux de suivi, accumulation, boucles infinies et débogage."
 weight: 5

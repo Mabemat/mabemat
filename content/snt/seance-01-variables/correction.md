@@ -2,7 +2,7 @@
 title: "Correction"
 ---
 
-### Exercice 1 — Tableau de trace
+### Exercice 1 - Tableau de trace
 
 **Q1.** 
 
@@ -21,7 +21,7 @@ title: "Correction"
 
 ---
 
-### Exercice 2 — Réaffectations
+### Exercice 2 - Réaffectations
 
 **Q1.**
 
@@ -42,13 +42,13 @@ Ligne 5 : `x = 9 + 15 = 24`.
 
 ---
 
-### Exercice 3 — Entraînement interactif
+### Exercice 3 - Entraînement interactif
 
-Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écrite — les exercices codepuzzle vérifient automatiquement vos réponses.
+Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écrite - les exercices codepuzzle vérifient automatiquement vos réponses.
 
 ---
 
-### Exercice 4 — Types de variables
+### Exercice 4 - Types de variables
 
 | Information | Type | Justification |
 |:---|:---:|:---|
@@ -64,7 +64,7 @@ Exercice à réaliser en ligne dans le notebook Capytale. Pas de correction écr
 
 ---
 
-### Exercice 5 — Booléens en pratique
+### Exercice 5 - Booléens en pratique
 
 **Q1.** Toutes ces variables sont de type `bool` (booléen) : elles ne peuvent valoir que `True` ou `False`.
 
@@ -86,19 +86,19 @@ Les deux affichent `<class 'bool'>`.
 
 ---
 
-### Exercice 6 — Noms de variables
+### Exercice 6 - Noms de variables
 
 **Q1.**
 
 | Nom | Valide ? | Raison | Correction |
 |:---|:---:|:---|:---|
 | `mon score` | ✗ | espace interdit | `mon_score` |
-| `mon_score` | ✓ | — | — |
-| `vitesse` | ✓ | — | — |
+| `mon_score` | ✓ | - | - |
+| `vitesse` | ✓ | - | - |
 | `3points` | ✗ | commence par un chiffre | `nb_points` |
-| `distance_m` | ✓ | — | — |
+| `distance_m` | ✓ | - | - |
 | `note/20` | ✗ | `/` interdit (opérateur) | `note_sur_20` |
-| `dix_huit` | ✓ | — | — |
+| `dix_huit` | ✓ | - | - |
 
 **Q2.**
 
@@ -109,7 +109,7 @@ Les deux affichent `<class 'bool'>`.
 
 ---
 
-### Exercice 7 — Débogage
+### Exercice 7 - Débogage
 
 **Q1.** Les 4 erreurs :
 
@@ -127,13 +127,13 @@ prix_total = nb_articles * prix_unitaire
 print(prix_total)
 ```
 
-Résultat : `26.5`
+Résultat : `25.5` (car 3 × 8,50 = 25,50).
 
 ---
 
-### Exercice 8 — Calculer une moyenne
+### Exercice 8 - Calculer une moyenne
 
-**Q2.**
+**Q1.**
 ```python
 note1 = 11
 note2 = 14.5
@@ -151,11 +151,13 @@ print(moyenne)
 | 4 | 11 | 14.5 | 9 | 16 | − |
 | 5 | 11 | 14.5 | 9 | 16 | **(11 + 14.5 + 9 + 16) ÷ 4 = 12.625** |
 
-**Q3.** La moyenne est **12.625**.
+**Q2.** La moyenne est **12.625**.
+
+> ⚠️ La moyenne est calculée par `(note1 + note2 + note3 + note4) / 4`. **Les parenthèses sont indispensables** : sans elles, `note1 + note2 + note3 + note4 / 4` ne diviserait que `note4` par 4, et le résultat serait faux (38.5 au lieu de 12.625).
 
 ---
 
-### Exercice 9 — Programme d'achat
+### Exercice 9 - Programme d'achat
 
 ```python
 prix_maillot = 29
@@ -181,7 +183,7 @@ Le coût total est **115,50 €**.
 
 ---
 
-### Exercice 10 — Programme de calcul
+### Exercice 10 - Programme de calcul
 
 ```python
 B = 4
@@ -202,7 +204,7 @@ Le programme affiche `225`.
 
 ---
 
-### Exercice 11 — Racine carrée
+### Exercice 11 - Racine carrée
 
 **Q1.** Le programme affiche `5.0`, `1.4142135623730951` et `12.0`. La fonction `sqrt(a)` calcule la racine carrée de `a`.
 
@@ -220,7 +222,7 @@ Le programme affiche `5.0`.
 
 **Q3.** $c = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5$. Le triplet (3, 4, 5) est un triplet pythagoricien classique.
 
-**Q4 — Bonus.**
+**Q4 - Bonus.**
 
 ```python
 from math import *
@@ -234,9 +236,9 @@ $d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5.0$
 
 ---
 
-### Exercice 12 — Comprendre et compléter un programme
+### Exercice 12 - Comprendre et compléter un programme
 
-**Q1 — Tableau de trace.**
+**Q1 - Tableau de trace.**
 
 ```python
 x = 2
@@ -254,11 +256,11 @@ y = z / 2            # = 200.0
 | 4 | `z = z ** 2` | 2 | 6 | **400** |
 | 5 | `y = z / 2` | 2 | **200.0** | 400 |
 
-Ligne 3 : priorité des opérations — la multiplication `x * y` est calculée en premier : `2 + 6 + 12 = 20`.
+Ligne 3 : priorité des opérations - la multiplication `x * y` est calculée en premier : `2 + 6 + 12 = 20`.
 
 **Q2.** Vérifier en exécutant le programme (ajouter des `print`).
 
-**Q3. — `z_est_pair`**
+**Q3. - `z_est_pair`**
 
 ```python
 z_est_pair = (z % 2 == 0)
@@ -268,7 +270,7 @@ z_est_pair = (z % 2 == 0)
 
 ---
 
-### Exercice 13 — Programme interactif
+### Exercice 13 - Programme interactif
 
 **Q1.** Le programme s'arrête et affiche le message `Quel est ton prénom ?`. Il attend une saisie clavier de l'utilisateur, puis affiche un message de bienvenue personnalisé.
 
@@ -283,7 +285,7 @@ print(somme)
 
 Sans `int()`, `input()` renvoie une `str` et l'opérateur `+` ferait une **concaténation** au lieu d'une addition (ex : `"3" + "5"` → `"35"` et non `8`).
 
-**Q3 — Défi.**
+**Q3 - Défi.**
 
 ```python
 note1 = float(input("Note 1 : "))
@@ -296,7 +298,7 @@ print(moyenne)
 
 ---
 
-### Exercice 14 — Prédire et vérifier
+### Exercice 14 - Prédire et vérifier
 
 **Q1.**
 
@@ -316,7 +318,7 @@ print(a + b + " " + a + b + c)
 
 ---
 
-### Exercice 15 — Ma carte d'identité
+### Exercice 15 - Ma carte d'identité
 
 **Q1.** Compléter le programme avec ses propres informations et l'exécuter (résultat personnel, pas de correction type).
 
@@ -326,34 +328,26 @@ Exemple : si `nom = "Dupont"`, alors `nom.upper()` renvoie `"DUPONT"`.
 
 Ainsi `print(nom.upper() + " " + prenom)` affiche le nom en majuscules suivi du prénom (ex : `DUPONT Alice`).
 
-**Q3 — Défi.**
+**Q3 - Défi.**
+
+L'idée : on écrit le prénom **une fois**, puis on répète `n - 1` fois le motif `"-" + prenom`. Ainsi il n'y a jamais de tiret en trop à la fin.
 
 ```python
 prenom = input("Ton prénom : ")
 n = int(input("Nombre de répétitions : "))
-resultat = (prenom + "-") * n
-resultat = resultat[:-1]   # on supprime le tiret final
+resultat = prenom + ("-" + prenom) * (n - 1)
 print(resultat)
 ```
 
-Exemple : si `prenom = "Léa"` et `n = 3`, le programme affiche `Léa-Léa-Léa`.
+Exemple : si `prenom = "Léa"` et `n = 3`, alors `("-" + "Léa") * 2` vaut `"-Léa-Léa"`, et le programme affiche `Léa-Léa-Léa`.
 
-*Alternative avec une boucle :*
+> ⚠️ **Erreur fréquente** : écrire `resultat = (prenom + "-") * n`. On obtient alors `Léa-Léa-Léa-`, avec un tiret **en trop** à la fin.
 
-```python
-prenom = input("Ton prénom : ")
-n = int(input("Nombre de répétitions : "))
-resultat = ""
-for i in range(n):
-    if i > 0:
-        resultat = resultat + "-"
-    resultat = resultat + prenom
-print(resultat)
-```
+> ⚠️ **Autre erreur fréquente** : oublier `int()` autour du deuxième `input()`. Sans lui, `n` est une **chaîne** et `(...) * n` provoque une `TypeError`.
 
 ---
 
-### Exercice 16 — Chaînes de caractères et indices
+### Exercice 16 - Chaînes de caractères et indices
 
 ```python
 A = 'lu'

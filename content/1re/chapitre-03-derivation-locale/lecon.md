@@ -9,6 +9,13 @@ Dans cette partie, $f$ est une fonction définie sur un intervalle $I$. $a$ et $
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
+Soient $x_1$ et $x_2$ deux réels distincts de $I$. Le <strong>taux de variation</strong> (ou <strong>taux d'accroissement</strong>) de la fonction $f$ entre $x_1$ et $x_2$ est le quotient $\dfrac{f(x_2)-f(x_1)}{x_2-x_1}$.
+</div>
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
 Le <strong>taux d'accroissement</strong> (ou <strong>taux de variation</strong>) de la fonction $f$ entre $a$ et $a+h$ est le quotient $\dfrac{f(a+h)-f(a)}{h}$.
 </div>
 </div>
@@ -96,5 +103,37 @@ Cherchons l'équation de la tangente $T$ à la courbe représentative de $f$ au 
 On a montré que $f$ est dérivable en $4$ et que $f'(4) = 10$.<br>
 $T$ a pour coefficient directeur $10$ (car $f'(4) = 10$) et passe par le point $A(4 ; 23)$ (car $f(4) = 23$). <br>
 L'équation de $T$ est donc $y=10(x-4)+ 23=10x-40+ 23=10x-17$.
+</div>
+</div>
+
+<h2 class="subsection-title">3.3 Approximation affine locale</h2>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $f$ une fonction dérivable en $a$. La fonction affine $x \mapsto f(a) + f'(a)(x-a)$, dont la représentation graphique est la tangente à $\mathcal{C}_f$ au point d'abscisse $a$, est appelée <strong>fonction affine tangente</strong> à $f$ en $a$.
+</div>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour $h$ proche de $0$, on a l'<strong>approximation affine</strong> :
+$$f(a+h) \approx f(a) + f'(a)\,h.$$
+</div>
+</div>
+
+<div class="remarque">
+Cette approximation revient à remplacer localement la courbe de $f$ par sa tangente en $a$ ; elle est d'autant meilleure que $h$ est proche de $0$.
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Reprenons $f(x) = x^2 + 2x - 1$, pour laquelle on a montré que $f(4) = 23$ et $f'(4) = 10$.<br>
+Donner une valeur approchée de $f(4{,}01)$ sans calculatrice.<br>
+On pose $a = 4$ et $h = 0{,}01$ (car $4{,}01 = 4 + 0{,}01$) :
+$$f(4{,}01) \approx f(4) + f'(4)\times 0{,}01 = 23 + 10\times 0{,}01 = 23{,}1.$$
+(La valeur exacte est $f(4{,}01) = 23{,}1001$ : l'approximation est très bonne.)
 </div>
 </div>

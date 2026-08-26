@@ -55,8 +55,8 @@ La forme développée de $A=(3y+1)\times3$ est :
 On développe en utilisant la simple distributivité : 
 
  $\begin{aligned}
- A&=(3y+1)\times3\\\\
- &=3\times 3y+3\times1\\\\
+ A&=(3y+1)\times3\\
+ &=3\times 3y+3\times1\\
  &=\boldsymbol{9y+3}
  \end{aligned}$
  
@@ -197,8 +197,8 @@ On développe en utilisant la simple distributivité : <br>
 
 $$
 \begin{aligned}
-A&=-y(-2y-5)\\\\
-&=-y\times (-2y) -y\times (-5)\\\\
+A&=-y(-2y-5)\\
+&=-y\times (-2y) -y\times (-5)\\
 &=\boldsymbol{2y^2+5y}
 \end{aligned}
 $$

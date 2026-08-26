@@ -1,130 +1,120 @@
 ---
-title: "Semaine 24"
+title: "Semaine 24 - Probabilités : univers et événements"
+layout: "automatismes-2nde"
 auto_number: 24
 weight: 24
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-<img src="/mabemat/images/automatismes/2nde/s24-q01.svg" alt="Courbes f et g" style="width:60%;max-height:400px;max-width:100%;">
+On lance un dé équilibré à six faces et on note le numéro obtenu.
 
-Solutions de $f(x) = g(x)$ : $\ldots$
+Décrire l'univers $\Omega$, puis l'événement $A$ « obtenir un nombre pair » et son événement contraire $\overline{A}$.
 ---CORR---
-Les solutions sont les abscisses des points d'intersection entre les deux courbes :
+L'univers est l'ensemble de toutes les issues possibles :
 
-$${\color{#4A5D7A}S = \{-1\,;\,2\}}$$
+$$\Omega={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,5\,;\,6\rbrace}$$
+
+Un événement est un sous-ensemble de l'univers. Les nombres pairs de $\Omega$ sont :
+
+$$A={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,6\rbrace}$$
+
+L'événement contraire rassemble toutes les issues de $\Omega$ qui ne sont pas dans $A$ :
+
+$$\overline{A}={\color{#4A5D7A}\lbrace 1\,;\,3\,;\,5\rbrace}$$
+
+On vérifie que $A$ et $\overline{A}$ n'ont aucune issue en commun et qu'ensemble ils reconstituent $\Omega$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Vrai ou faux ? $\dfrac{3}{5} + \dfrac{1}{10} = \dfrac{7}{10}$
----CORR---
-$$\dfrac{3}{5} + \dfrac{1}{10} = \dfrac{6}{10} + \dfrac{1}{10} = \dfrac{7}{10} \quad \checkmark$$
+Avec le même dé, on considère $A$ « obtenir un multiple de $3$ » et $B$ « obtenir un nombre supérieur ou égal à $4$ ».
 
-$${\color{#4A5D7A}\text{Vrai}}$$
+Déterminer $A\cap B$ et $A\cup B$.
+---CORR---
+On écrit d'abord chaque événement en extension :
+
+$$A=\lbrace 3\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 4\,;\,5\,;\,6\rbrace$$
+
+L'intersection rassemble les issues appartenant aux **deux** événements à la fois :
+
+$$A\cap B={\color{#4A5D7A}\lbrace 6\rbrace}$$
+
+La réunion rassemble les issues appartenant à **au moins un** des deux, sans compter deux fois celles qui sont communes :
+
+$$A\cup B={\color{#4A5D7A}\lbrace 3\,;\,4\,;\,5\,;\,6\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Coefficient directeur de la droite $(KL)$ avec $K(10\,;\,1)$ et $L(-1\,;\,2)$.
+Dans une classe de $30$ élèves, $18$ étudient l'anglais, $14$ l'espagnol, et $6$ étudient les deux langues.
+
+Combien d'élèves étudient au moins une des deux langues ?
 ---CORR---
-$$m = \dfrac{y_L - y_K}{x_L - x_K} = \dfrac{2 - 1}{-1 - 10} = {\color{#4A5D7A}-\dfrac{1}{11}}$$
+Si on additionne simplement $18$ et $14$, les élèves qui étudient les deux langues sont comptés deux fois. Il faut donc les retrancher une fois :
+
+$$18+14-6={\color{#4A5D7A}26}\ \text{élèves.}$$
+
+C'est la formule de la réunion :
+
+$$\text{card}(A\cup B)=\text{card}(A)+\text{card}(B)-\text{card}(A\cap B)$$
+
+Il y a donc $30-26=4$ élèves qui n'étudient aucune des deux langues.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Multiplier par $1{,}28$ revient à augmenter de $\ldots\,\%$.
+Décomposer $150$ en produit de facteurs premiers.
 ---CORR---
-$1{,}28 = 1 + 0{,}28$, donc cela revient à augmenter de ${\color{#4A5D7A}28\,\%}$.
+On divise successivement par les nombres premiers :
+
+$$150=2\times 75 \qquad 75=3\times 25 \qquad 25=5\times 5$$
+
+D'où :
+
+$$150={\color{#4A5D7A}2\times 3\times 5^2}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Une hausse de $100\,\%$ suivie d'une hausse de $60\,\%$ correspondent à une hausse globale de $\ldots\,\%$.
+Parmi les $1\,500$ logements que compte une ville, $20\,\%$ sont des maisons, et $60\,\%$ de celles-ci sont des T2.
+
+Le nombre de maisons T2 est :
+
+**A.** $300$ &emsp; **B.** $180$ &emsp; **C.** $120$ &emsp; **D.** $900$
 ---CORR---
-$CM_1 = 2$ (hausse de $100\,\%$), $CM_2 = 1{,}6$.
+On procède en deux étapes. Nombre de maisons :
 
-$CM = 2 \times 1{,}6 = 3{,}2$
+$$0{,}20\times 1\,500=300$$
 
-Taux global : $3{,}2 - 1 = 2{,}2 = {\color{#4A5D7A}220\,\%}$
+Attention : les $60\,\%$ portent sur les **maisons**, pas sur l'ensemble des logements. On applique donc ce pourcentage à $300$ :
+
+$$0{,}60\times 300={\color{#4A5D7A}180}$$
+
+On peut aussi enchaîner les deux coefficients : $1\,500\times 0{,}20\times 0{,}60=180$.
+
+La réponse A s'arrête à la première étape.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-$f(x) = x^2 + 5x + 1$. Calculer $f(-5)$.
+Lors d'une élection, $\dfrac{1}{4}$ des électeurs ont voté pour A, $30\,\%$ pour B, $\dfrac{1}{5}$ pour C, et le reste pour D.
+
+La proportion d'électeurs ayant voté pour D est :
+
+**A.** $15\,\%$ &emsp; **B.** $20\,\%$ &emsp; **C.** $30\,\%$ &emsp; **D.** $25\,\%$
 ---CORR---
-$$f(-5) = (-5)^2 + 5 \times (-5) + 1 = 25 - 25 + 1 = {\color{#4A5D7A}1}$$
-{{< /auto2-exo >}}
+On convertit tout en écriture décimale pour pouvoir additionner :
 
-{{< auto2-exo numero="07" >}}
-Sylvie a eu deux notes ($12$ et $10$) coefficient $1$ et une note de $9$ coefficient $2$.
+$$\dfrac{1}{4}=0{,}25 \qquad 30\,\%=0{,}30 \qquad \dfrac{1}{5}=0{,}20$$
 
-Quelle est sa moyenne ?
----CORR---
-$$m = \dfrac{12 \times 1 + 10 \times 1 + 9 \times 2}{1 + 1 + 2} = \dfrac{12 + 10 + 18}{4} = \dfrac{40}{4} = {\color{#4A5D7A}10}$$
-{{< /auto2-exo >}}
+La somme des quatre proportions vaut $1$, puisque chaque électeur a voté pour exactement un candidat :
 
-{{< auto2-exo numero="08" >}}
-Un événement $A$ a pour probabilité $P(A) = \dfrac{3}{10}$. Alors $P(\bar{A}) = \ldots$
----CORR---
-$$P(\bar{A}) = 1 - P(A) = 1 - \dfrac{3}{10} = {\color{#4A5D7A}\dfrac{7}{10}}$$
-{{< /auto2-exo >}}
+$$0{,}25+0{,}30+0{,}20=0{,}75$$
 
-{{< auto2-exo numero="09" >}}
-Compléter : $\overrightarrow{AB} = \overrightarrow{B\ldots}$
+D'où :
 
-<img src="/mabemat/images/automatismes/2nde/s24-q09.svg" alt="Grille de vecteurs" style="width:60%;max-height:400px;max-width:100%;">
----CORR---
-Le vecteur d'origine $B$ égal à $\overrightarrow{AB}$ est $\overrightarrow{BG}$.
+$$1-0{,}75=0{,}25={\color{#4A5D7A}25\,\%}$$
 
-$${\color{#4A5D7A}\overrightarrow{AB} = \overrightarrow{BG}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="10" >}}
-$10$ stylos identiques coûtent $15$€. Quel est le prix de $15$ stylos ?
----CORR---
-$10$ stylos → $15$€, donc $5$ stylos → $7{,}50$€.
-
-$15$ stylos $= 10 + 5$ stylos → $15 + 7{,}50 = {\color{#4A5D7A}22{,}50\text{€}}$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="11" >}}
-Coefficient directeur de la droite $(AB)$ avec $A(0\,;\,-3)$ et $B(3\,;\,-1)$ :
-
-<img src="/mabemat/images/automatismes/2nde/s24-q10.svg" alt="Droite AB" style="width:60%;max-height:400px;max-width:100%;">
----CORR---
-$$m = \dfrac{y_B - y_A}{x_B - x_A} = \dfrac{-1 - (-3)}{3 - 0} = \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{2}{3}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="12" >}}
-Antécédent de $8$ par $w : x \mapsto 2x - 2$.
----CORR---
-On résout $2x - 2 = 8$ :
-
-$$2x = 10 \implies x = {\color{#4A5D7A}5}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="13" >}}
-Résoudre dans $\mathbb{R}$ : $x^2 = -11$.
----CORR---
-On reconnaît $x^2 = k$ avec $k = -11 < 0$. Une équation $x^2 = k$ n'a pas de solution réelle si $k < 0$.
-
-$${\color{#4A5D7A}S = \emptyset}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="14" >}}
-Développer $(5 - 3x)^2$.
----CORR---
-On applique $(a-b)^2 = a^2 - 2ab + b^2$ avec $a = 5$ et $b = 3x$ :
-
-$$(5-3x)^2 = 25 - 30x + 9x^2 = {\color{#4A5D7A}9x^2 - 30x + 25}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="15" >}}
-Longueur du segment ci-dessous ($1$ u.l. $= 1$ carreau) :
-
-<img src="/mabemat/images/automatismes/2nde/s24-q12.svg" alt="Segment sur grille" style="width:60%;max-height:400px;max-width:100%;">
----CORR---
-On applique la formule de la distance entre $(1,4)$ et $(5,1)$ :
-
-$$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 \text{ u.l.}}$$
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -132,113 +122,113 @@ $$AB = \sqrt{(5-1)^2 + (1-4)^2} = \sqrt{16 + 9} = \sqrt{25} = {\color{#4A5D7A}5 
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Solution de l'équation $-4x + 25 = -7$.
+On lance un dé équilibré à six faces et on note le numéro obtenu.
+
+Décrire l'univers $\Omega$, puis l'événement $A$ « obtenir un nombre impair » et son événement contraire $\overline{A}$.
 ---CORR---
-$$-4x = -7 - 25 = -32 \implies x = \dfrac{-32}{-4} = {\color{#4A5D7A}8}$$
+L'univers est l'ensemble de toutes les issues possibles :
+
+$$\Omega={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,5\,;\,6\rbrace}$$
+
+Un événement est un sous-ensemble de l'univers. Les nombres impairs de $\Omega$ sont :
+
+$$A={\color{#4A5D7A}\lbrace 1\,;\,3\,;\,5\rbrace}$$
+
+L'événement contraire rassemble toutes les issues de $\Omega$ qui ne sont pas dans $A$ :
+
+$$\overline{A}={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,6\rbrace}$$
+
+On vérifie que $A$ et $\overline{A}$ n'ont aucune issue en commun et qu'ensemble ils reconstituent $\Omega$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Rendre irréductible la fraction $\dfrac{25}{35}$.
+Avec le même dé, on considère $A$ « obtenir un multiple de $2$ » et $B$ « obtenir un nombre inférieur ou égal à $3$ ».
+
+Déterminer $A\cap B$ et $A\cup B$.
 ---CORR---
-$$\dfrac{25}{35} = \dfrac{5 \times 5}{7 \times 5} = {\color{#4A5D7A}\dfrac{5}{7}}$$
+On écrit d'abord chaque événement en extension :
+
+$$A=\lbrace 2\,;\,4\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 1\,;\,2\,;\,3\rbrace$$
+
+L'intersection rassemble les issues appartenant aux **deux** événements à la fois :
+
+$$A\cap B={\color{#4A5D7A}\lbrace 2\rbrace}$$
+
+La réunion rassemble les issues appartenant à **au moins un** des deux, sans compter deux fois celles qui sont communes :
+
+$$A\cup B={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,6\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Écriture scientifique de $0{,}002\,53$.
+Dans une classe de $32$ élèves, $20$ étudient l'anglais, $15$ l'allemand, et $7$ étudient les deux langues.
+
+Combien d'élèves étudient au moins une des deux langues ?
 ---CORR---
-$${\color{#4A5D7A}0{,}002\,53 = 2{,}53 \times 10^{-3}}$$
+Si on additionne simplement $20$ et $15$, les élèves qui étudient les deux langues sont comptés deux fois. Il faut donc les retrancher une fois :
+
+$$20+15-7={\color{#4A5D7A}28}\ \text{élèves.}$$
+
+C'est la formule de la réunion :
+
+$$\text{card}(A\cup B)=\text{card}(A)+\text{card}(B)-\text{card}(A\cap B)$$
+
+Il y a donc $32-28=4$ élèves qui n'étudient aucune des deux langues.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Écrire sous la forme d'une puissance de $2$ : $2^4 \times 2^2$.
+Décomposer $198$ en produit de facteurs premiers.
 ---CORR---
-$$2^4 \times 2^2 = 2^{4+2} = {\color{#4A5D7A}2^6}$$
+On divise successivement par les nombres premiers :
+
+$$198=2\times 99 \qquad 99=3\times 33 \qquad 33=3\times 11$$
+
+D'où :
+
+$$198={\color{#4A5D7A}2\times 3^2\times 11}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Valeur de $3 + 4x$ pour $x = -3$.
+Parmi les $2\,500$ logements que compte une ville, $40\,\%$ sont des maisons, et $25\,\%$ de celles-ci sont des T2.
+
+Le nombre de maisons T2 est :
+
+**A.** $250$ &emsp; **B.** $1\,000$ &emsp; **C.** $625$ &emsp; **D.** $100$
 ---CORR---
-$$3 + 4 \times (-3) = 3 - 12 = {\color{#4A5D7A}-9}$$
+On procède en deux étapes. Nombre de maisons :
+
+$$0{,}40\times 2\,500=1\,000$$
+
+Attention : les $25\,\%$ portent sur les **maisons**, pas sur l'ensemble des logements. On applique donc ce pourcentage à $1\,000$ :
+
+$$0{,}25\times 1\,000={\color{#4A5D7A}250}$$
+
+On peut aussi enchaîner les deux coefficients : $2\,500\times 0{,}40\times 0{,}25=250$.
+
+La réponse B s'arrête à la première étape.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Quelle est la longueur de la ligne brisée en u.l. ?
+Lors d'une élection, $\dfrac{1}{5}$ des électeurs ont voté pour A, $35\,\%$ pour B, $\dfrac{1}{4}$ pour C, et le reste pour D.
 
-<img src="/mabemat/images/automatismes/2nde/s24d-q06.svg" alt="Ligne brisée sur grille" style="width:60%;max-height:400px;max-width:100%;">
+La proportion d'électeurs ayant voté pour D est :
+
+**A.** $25\,\%$ &emsp; **B.** $15\,\%$ &emsp; **C.** $20\,\%$ &emsp; **D.** $30\,\%$
 ---CORR---
-La ligne brisée mesure $1 + 2 + 3 + 1 = 7$ carreaux, soit $\dfrac{7}{4}$ u.l.
+On convertit tout en écriture décimale pour pouvoir additionner :
 
-$${\color{#4A5D7A}\dfrac{7}{4} \text{ u.l.}}$$
-{{< /auto2-exo >}}
+$$\dfrac{1}{5}=0{,}20 \qquad 35\,\%=0{,}35 \qquad \dfrac{1}{4}=0{,}25$$
 
-{{< auto2-exo numero="07" >}}
-On lance un dé cubique équilibré. La probabilité d'obtenir un multiple de $5$ est $\ldots$
----CORR---
-Le seul multiple de $5$ dans $\{1,2,3,4,5,6\}$ est $5$, donc :
+La somme des quatre proportions vaut $1$, puisque chaque électeur a voté pour exactement un candidat :
 
-$${\color{#4A5D7A}P = \dfrac{1}{6}}$$
-{{< /auto2-exo >}}
+$$0{,}20+0{,}35+0{,}25=0{,}80$$
 
-{{< auto2-exo numero="08" >}}
-Coefficient directeur de la droite d'équation $y = -3x + 1$.
----CORR---
-La droite est de la forme $y = mx + p$, donc $m = {\color{#4A5D7A}-3}$.
-{{< /auto2-exo >}}
+D'où :
 
-{{< auto2-exo numero="09" >}}
-Coordonnées du milieu $M$ de $[AB]$ avec $A(4\,;\,4)$ et $B(6\,;\,8)$.
----CORR---
-$$x_M = \dfrac{4+6}{2} = 5 \qquad y_M = \dfrac{4+8}{2} = 6$$
+$$1-0{,}80=0{,}20={\color{#4A5D7A}20\,\%}$$
 
-$${\color{#4A5D7A}M(5\,;\,6)}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="10" >}}
-Développer $(x+4)^2$.
----CORR---
-$$(x+4)^2 = x^2 + 2 \times 4 \times x + 16 = {\color{#4A5D7A}x^2 + 8x + 16}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="11" >}}
-Factoriser $x^2 - 16$.
----CORR---
-On utilise $a^2 - b^2 = (a-b)(a+b)$ avec $a = x$ et $b = 4$ :
-
-$${\color{#4A5D7A}x^2 - 16 = (x-4)(x+4)}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="12" >}}
-Dans une classe de $23$ élèves, $10$ viennent à vélo. La proportion d'élèves qui ne viennent **pas** à vélo est $\ldots$
----CORR---
-$23 - 10 = 13$ élèves ne viennent pas à vélo.
-
-$${\color{#4A5D7A}\dfrac{13}{23}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="13" >}}
-<img src="/mabemat/images/automatismes/2nde/s24d-q13.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
-
-Combien l'équation $f(x) = 4$ a-t-elle de solutions ?
----CORR---
-La droite horizontale $y = 4$ ne coupe pas la courbe de $f$ (le maximum visible est $3$).
-
-$${\color{#4A5D7A}0 \text{ solution}}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="14" >}}
-Quelle est l'image de $3$ par $f$ ? *(graphique ci-dessus)*
----CORR---
-On lit graphiquement : pour $x = 3$, la courbe de $f$ a pour ordonnée :
-
-$${\color{#4A5D7A}f(3) = 1}$$
-{{< /auto2-exo >}}
-
-{{< auto2-exo numero="15" >}}
-Sur quel intervalle $f$ est-elle positive ou nulle ? *(graphique ci-dessus)*
----CORR---
-$f$ est positive ou nulle lorsque la courbe se situe au-dessus (ou sur) l'axe des abscisses.
-
-$${\color{#4A5D7A}[0\,;\,3]}$$
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

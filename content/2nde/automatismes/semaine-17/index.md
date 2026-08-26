@@ -1,65 +1,104 @@
 ---
-title: "Semaine 17"
+title: "Semaine 17 - Racines carrées"
+layout: "automatismes-2nde"
 auto_number: 17
 weight: 17
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Résoudre l'inéquation : $\dfrac{12x-13}{(8x+6)(13x-4)}>0$
+Écrire sous la forme $a\sqrt{b}$, avec $b$ le plus petit entier possible :
+
+$$A=\sqrt{50}+\sqrt{18}$$
 ---CORR---
-Valeurs interdites : $x=-\dfrac{3}{4}$ et $x=\dfrac{4}{13}$.
+On cherche dans chaque nombre sous la racine le plus grand carré parfait qui le divise.
 
-Racine du numérateur : $12x-13=0 \implies x=\dfrac{13}{12}$.
+$$50=25\times 2 \qquad\text{donc}\qquad \sqrt{50}=\sqrt{25}\times\sqrt{2}=5\sqrt{2}$$
 
-Tableau de signes (les dénominateurs étant deux facteurs, on étudie les signes séparément) :
+$$18=9\times 2 \qquad\text{donc}\qquad \sqrt{18}=\sqrt{9}\times\sqrt{2}=3\sqrt{2}$$
 
-| $x$ | $-\infty$ | $-\dfrac{3}{4}$ | $\dfrac{4}{13}$ | $\dfrac{13}{12}$ | $+\infty$ |
-|---|---|---|---|---|---|
-| $12x-13$ | $-$ | $-$ | $-$ | $0$ | $+$ |
-| $8x+6$ | $-$ | $0$ | $+$ | $+$ | $+$ |
-| $13x-4$ | $-$ | $-$ | $0$ | $+$ | $+$ |
-| quotient | $-$ | ∅ | $+$ | ∅ | $-$ | $0$ | $+$ |
+Les deux termes ont maintenant la même partie irrationnelle $\sqrt{2}$ : on peut les additionner comme des termes semblables.
 
-$S=\left]-\dfrac{3}{4}\,;\,\dfrac{4}{13}\right[\cup\left]\dfrac{13}{12}\,;\,+\infty\right[$
+$$A=5\sqrt{2}+3\sqrt{2}={\color{#4A5D7A}8\sqrt{2}}$$
+
+Attention : $\sqrt{50}+\sqrt{18}$ n'est **pas** égal à $\sqrt{68}$. La racine d'une somme n'est pas la somme des racines.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Convertir $2{,}8$ heures en minutes.
+Écrire sans racine carrée au dénominateur :
+
+$$B=\dfrac{6}{\sqrt{3}}$$
 ---CORR---
-$2{,}8\text{ h}=2\text{ h}+0{,}8\text{ h}=120\text{ min}+\dfrac{4}{5}\times 60\text{ min}=120+48={\color{#4A5D7A}168\text{ min}}$
+On multiplie le numérateur et le dénominateur par $\sqrt{3}$, ce qui ne change pas la valeur du quotient :
+
+$$B=\dfrac{6{\color{#4A5D7A}\boldsymbol{\times\sqrt{3}}}}{\sqrt{3}{\color{#4A5D7A}\boldsymbol{\times\sqrt{3}}}}=\dfrac{6\sqrt{3}}{3}$$
+
+En effet, $\sqrt{3}\times\sqrt{3}=3$ : c'est ce qui fait disparaître la racine du dénominateur.
+
+On simplifie enfin par $3$ :
+
+$$B={\color{#4A5D7A}2\sqrt{3}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre $10x^2-7x+8=8$.
+Résoudre dans $[0\,;\,+\infty[$ l'équation :
+
+$$3\sqrt{x}-2=10$$
 ---CORR---
-$10x^2-7x+8=8 \implies 10x^2-7x=0 \implies x(10x-7)=0$
+On isole d'abord la racine. On ajoute $2$ à chaque membre :
 
-$x=0$ ou $x=\dfrac{7}{10}$
+$$3\sqrt{x}=12$$
 
-$\mathscr{S}=\left\{0\,;\,\dfrac{7}{10}\right\}$
+On divise par $3$ :
+
+$$\sqrt{x}=4$$
+
+Les deux membres étant positifs, on peut élever au carré :
+
+$$x=4^2={\color{#4A5D7A}16}$$
+
+Vérification : $3\sqrt{16}-2=3\times 4-2=10$. La solution appartient bien à $[0\,;\,+\infty[$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $n$ un entier. À quelle expression est égale $(3^n)^3$ ?
-
-A. $27^n$ $\quad$ B. $3^{3+n}$ $\quad$ C. $3^{n^3}$ $\quad$ D. $9^n$
+Donner l'écriture scientifique du nombre $358\,000$.
 ---CORR---
-$(3^n)^3=3^{3n}=(3^3)^n=27^n$
+On déplace la virgule pour n'avoir qu'un seul chiffre non nul devant : on obtient $3{,}58$. La virgule a été déplacée de $5$ rangs vers la gauche, on compense par $10^{5}$.
 
-La bonne réponse est **A**.
+$$358\,000={\color{#4A5D7A}3{,}58\times 10^{5}}$$
+
+Le nombre étant plus grand que $10$, l'exposant est bien positif.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Pour s'entraîner, on règle un abonnement mensuel $a$ et un tarif $p$ par séance. Le premier ticket : $6$ séances pour $40$€. Le second ticket : $4$ séances pour $30$€. Quel est le montant de l'abonnement mensuel ?
+Le nombre $\dfrac{2^{10}}{2^{7}}$ est égal à :
+
+**A.** $8$ &emsp; **B.** $2^{1{,}5}$ &emsp; **C.** $2^{17}$ &emsp; **D.** $1^{3}$
 ---CORR---
-Système : $\begin{cases}a+6p=40\\a+4p=30\end{cases}$
+Pour un quotient de puissances de même base, on soustrait les exposants :
 
-Par soustraction : $2p=10 \implies p=5$€.
+$$\dfrac{2^{10}}{2^{7}}=2^{10-7}=2^{3}={\color{#4A5D7A}8}$$
 
-Donc $a=40-6\times 5={\color{#4A5D7A}10\text{€}}$.
+La réponse C additionne les exposants au lieu de les soustraire, et la réponse D vient de l'erreur consistant à simplifier les bases entre elles : on ne divise pas $2$ par $2$, on travaille sur les exposants.
+
+<span class="rep">Réponse : A</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-4x+7$ est :
+
+**A.** croissante sur $\mathbb{R}$ &emsp; **B.** constante &emsp; **C.** décroissante sur $\mathbb{R}$ &emsp; **D.** croissante puis décroissante
+---CORR---
+Une fonction affine s'écrit $f(x)=mx+p$. Son sens de variation ne dépend que du signe du coefficient directeur $m$.
+
+Ici $m=-4$, qui est strictement négatif :
+
+$$f\ \text{est}\ {\color{#4A5D7A}\text{décroissante sur}\ \mathbb{R}}$$
+
+L'ordonnée à l'origine $7$ ne joue aucun rôle : elle déplace la droite vers le haut, elle ne l'incline pas. Et une fonction affine garde le même sens de variation sur tout $\mathbb{R}$, ce qui élimine la réponse D.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -67,58 +106,97 @@ Donc $a=40-6\times 5={\color{#4A5D7A}10\text{€}}$.
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Résoudre l'inéquation : $\dfrac{-7x+5}{(-3x-6)(4x-5)}>0$
+Écrire sous la forme $a\sqrt{b}$, avec $b$ le plus petit entier possible :
+
+$$A=\sqrt{75}+\sqrt{27}$$
 ---CORR---
-Valeurs interdites : $x=-2$ et $x=\dfrac{5}{4}$.
+On cherche dans chaque nombre sous la racine le plus grand carré parfait qui le divise.
 
-Racine du numérateur : $-7x+5=0 \implies x=\dfrac{5}{7}$.
+$$75=25\times 3 \qquad\text{donc}\qquad \sqrt{75}=\sqrt{25}\times\sqrt{3}=5\sqrt{3}$$
 
-Tableau de signes :
+$$27=9\times 3 \qquad\text{donc}\qquad \sqrt{27}=\sqrt{9}\times\sqrt{3}=3\sqrt{3}$$
 
-| $x$ | $-\infty$ | $-2$ | $\dfrac{5}{7}$ | $\dfrac{5}{4}$ | $+\infty$ |
-|---|---|---|---|---|---|
-| $-7x+5$ | $+$ | $+$ | $0$ | $-$ | $-$ |
-| $-3x-6$ | $+$ | $0$ | $-$ | $-$ | $-$ |
-| $4x-5$ | $-$ | $-$ | $-$ | $0$ | $+$ |
-| quotient | $-$ | ∅ | $+$ | $0$ | $-$ | ∅ | $+$ |
+Les deux termes ont maintenant la même partie irrationnelle $\sqrt{3}$ : on peut les additionner comme des termes semblables.
 
-$S=\left]-2\,;\,\dfrac{5}{7}\right[\cup\left]\dfrac{5}{4}\,;\,+\infty\right[$
+$$A=5\sqrt{3}+3\sqrt{3}={\color{#4A5D7A}8\sqrt{3}}$$
+
+Attention : $\sqrt{75}+\sqrt{27}$ n'est **pas** égal à $\sqrt{102}$. La racine d'une somme n'est pas la somme des racines.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Convertir $0{,}25$ heures en minutes.
+Écrire sans racine carrée au dénominateur :
+
+$$B=\dfrac{10}{\sqrt{5}}$$
 ---CORR---
-$0{,}25\text{ h}=\dfrac{1}{4}\text{ h}=\dfrac{60}{4}\text{ min}={\color{#4A5D7A}15\text{ min}}$
+On multiplie le numérateur et le dénominateur par $\sqrt{5}$, ce qui ne change pas la valeur du quotient :
+
+$$B=\dfrac{10{\color{#4A5D7A}\boldsymbol{\times\sqrt{5}}}}{\sqrt{5}{\color{#4A5D7A}\boldsymbol{\times\sqrt{5}}}}=\dfrac{10\sqrt{5}}{5}$$
+
+En effet, $\sqrt{5}\times\sqrt{5}=5$ : c'est ce qui fait disparaître la racine du dénominateur.
+
+On simplifie enfin par $5$ :
+
+$$B={\color{#4A5D7A}2\sqrt{5}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre $9x^2-x-5=-5$.
+Résoudre dans $[0\,;\,+\infty[$ l'équation :
+
+$$4\sqrt{x}-3=17$$
 ---CORR---
-$9x^2-x-5=-5 \implies 9x^2-x=0 \implies x(9x-1)=0$
+On isole d'abord la racine. On ajoute $3$ à chaque membre :
 
-$x=0$ ou $x=\dfrac{1}{9}$
+$$4\sqrt{x}=20$$
 
-$\mathscr{S}=\left\{0\,;\,\dfrac{1}{9}\right\}$
+On divise par $4$ :
+
+$$\sqrt{x}=5$$
+
+Les deux membres étant positifs, on peut élever au carré :
+
+$$x=5^2={\color{#4A5D7A}25}$$
+
+Vérification : $4\sqrt{25}-3=4\times 5-3=17$. La solution appartient bien à $[0\,;\,+\infty[$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $n$ un entier. À quelle expression est égale $(4^n)^2$ ?
-
-A. $16^n$ $\quad$ B. $8^n$ $\quad$ C. $4^{n^2}$ $\quad$ D. Aucune de ces propositions
+Donner l'écriture scientifique du nombre $0{,}004\,26$.
 ---CORR---
-$(4^n)^2=4^{2n}=(4^2)^n=16^n$
+On déplace la virgule pour n'avoir qu'un seul chiffre non nul devant : on obtient $4{,}26$. La virgule a été déplacée de $3$ rangs vers la droite, on compense par $10^{-3}$.
 
-La bonne réponse est **A**.
+$$0{,}004\,26={\color{#4A5D7A}4{,}26\times 10^{-3}}$$
+
+Le nombre étant plus petit que $1$, l'exposant est bien négatif.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Pour s'entraîner, on règle un abonnement mensuel $a$ et un tarif $p$ par séance. Le premier ticket : $6$ séances pour $44$€. Le second ticket : $3$ séances pour $26$€. Quel est le montant de l'abonnement mensuel ?
+Le nombre $\dfrac{3^{9}}{3^{6}}$ est égal à :
+
+**A.** $3^{15}$ &emsp; **B.** $1^{3}$ &emsp; **C.** $3^{1{,}5}$ &emsp; **D.** $27$
 ---CORR---
-Système : $\begin{cases}a+6p=44\\a+3p=26\end{cases}$
+Pour un quotient de puissances de même base, on soustrait les exposants :
 
-Par soustraction : $3p=18 \implies p=6$€.
+$$\dfrac{3^{9}}{3^{6}}=3^{9-6}=3^{3}={\color{#4A5D7A}27}$$
 
-Donc $a=44-6\times 6={\color{#4A5D7A}8\text{€}}$.
+La réponse A additionne les exposants au lieu de les soustraire, et la réponse B vient de l'erreur consistant à simplifier les bases entre elles : on ne divise pas $3$ par $3$, on travaille sur les exposants.
+
+<span class="rep">Réponse : D</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+La fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3x-8$ est :
+
+**A.** décroissante sur $\mathbb{R}$ &emsp; **B.** croissante sur $\mathbb{R}$ &emsp; **C.** constante &emsp; **D.** décroissante puis croissante
+---CORR---
+Une fonction affine s'écrit $f(x)=mx+p$. Son sens de variation ne dépend que du signe du coefficient directeur $m$.
+
+Ici $m=3$, qui est strictement positif :
+
+$$f\ \text{est}\ {\color{#4A5D7A}\text{croissante sur}\ \mathbb{R}}$$
+
+L'ordonnée à l'origine $-8$ ne joue aucun rôle : elle déplace la droite vers le bas, elle ne l'incline pas. Et une fonction affine garde le même sens de variation sur tout $\mathbb{R}$, ce qui élimine la réponse D.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -2,7 +2,7 @@
 title: "Exercices"
 ---
 
-### Exercice 1 — Révisions
+### Exercice 1 - Révisions
 
 On considère le programme suivant :
 
@@ -24,7 +24,7 @@ prix_total = prix_unitaire * quantite
 
 ---
 
-### Exercice 2 — Analyse d'une fonction
+### Exercice 2 - Analyse d'une fonction
 
 On considère la fonction suivante :
 
@@ -48,7 +48,7 @@ def prix_a_afficher(prix_unitaire, quantite):
 
 ---
 
-### Exercice 3 — Fonction `truc_muche`
+### Exercice 3 - Fonction `truc_muche`
 
 On considère la fonction suivante :
 
@@ -76,7 +76,7 @@ def truc_muche(a, b, c):
 
 ---
 
-### Exercice 4 — Définition d'une image
+### Exercice 4 - Définition d'une image
 
 Une image numérique est constituée de **pixels**. Le nombre total de pixels d'une image s'appelle sa **définition**.
 
@@ -98,7 +98,7 @@ def definition_image(L, ...):
 
 ---
 
-### Exercice 5 — Tableau de prédiction
+### Exercice 5 - Tableau de prédiction
 
 On considère les trois fonctions suivantes :
 
@@ -133,7 +133,7 @@ def convertir(km):
 
 ---
 
-### Exercice 6 — `print` ou `return` ?
+### Exercice 6 - `print` ou `return` ?
 
 Un élève a écrit deux versions d'une fonction qui calcule la durée d'un trajet :
 
@@ -166,9 +166,9 @@ print(resultat_B)
 
 ---
 
-### Exercice 7 — Débogage
+### Exercice 7 - Débogage
 
-**Fonction 1** — Cette fonction contient **2 erreurs** :
+**Fonction 1** - Cette fonction contient **2 erreurs** :
 
 ```python
 def celsius_vers_fahrenheit(c)
@@ -182,7 +182,7 @@ def celsius_vers_fahrenheit(c)
 
 ---
 
-**Fonction 2** — Cette fonction contient **3 erreurs** :
+**Fonction 2** - Cette fonction contient **3 erreurs** :
 
 ```python
 def imc(poids, taille):
@@ -196,7 +196,7 @@ return
 
 ---
 
-### Exercice 8 — Écrire des fonctions
+### Exercice 8 - Écrire des fonctions
 
 **Q1.** Écrivez une fonction `aire_triangle(base, hauteur)` qui renvoie l'aire d'un triangle.
 
@@ -220,7 +220,7 @@ return
 
 ---
 
-### Exercice 9 — Fonctions imbriquées : carrelage
+### Exercice 9 - Fonctions imbriquées : carrelage
 
 On veut calculer le coût d'un chantier de carrelage.
 
@@ -238,7 +238,7 @@ On veut calculer le coût d'un chantier de carrelage.
 
 ---
 
-### Exercice 10 — Cantine scolaire
+### Exercice 10 - Cantine scolaire
 
 Le service de restauration facture : **7,50 €** le repas adulte et **3,20 €** le repas élève.
 

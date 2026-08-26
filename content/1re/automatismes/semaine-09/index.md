@@ -78,9 +78,9 @@ On reconnaît une équation produit nul.
 Un produit de facteurs est nul, si et seulement si l'un au moins de ses facteurs est nul.
 
 $\begin{aligned}
-(4x+12)(4x+20)&=0\\\\
-4x+12=0 &\text{ ou } 4x+20=0\\\\
-4x=-12 &\text{ ou } 4x=-20\\\\
+(4x+12)(4x+20)&=0\\
+4x+12=0 &\text{ ou } 4x+20=0\\
+4x=-12 &\text{ ou } 4x=-20\\
 x=-3 &\text{ ou } x=-5
 \end{aligned}$
 
@@ -103,8 +103,8 @@ On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=7-\dfrac{6}{5}
 
 ---CORR---
 $\begin{aligned}
-    f\left(2\right)&=7-\dfrac{6}{5}(2-2)^2\\\\
-    &=7-\dfrac{6}{5}\times 0\\\\
+    f\left(2\right)&=7-\dfrac{6}{5}(2-2)^2\\
+    &=7-\dfrac{6}{5}\times 0\\
     &=7
     \end{aligned}$
 
@@ -155,8 +155,8 @@ On considère $A=\dfrac{5}{10\ 000}+\dfrac{5}{100}$. On a :
 On a : 
 
  $\begin{aligned}
-     A&=\dfrac{5}{10\ 000}+\dfrac{5}{100}\\\\
-     &=0{,}000\ 5+0{,}05\\\\
+     A&=\dfrac{5}{10\ 000}+\dfrac{5}{100}\\
+     &=0{,}000\ 5+0{,}05\\
      &=0{,}050\ 5
      \end{aligned}$
 
@@ -233,9 +233,9 @@ Un produit de facteurs est nul, si et seulement si l'un au moins de ses facteurs
 
 $$
 \begin{aligned}
-(2x-12)(5x-25)&=0\\\\
-2x-12=0 &\text{ ou } 5x-25=0\\\\
-2x=12 &\text{ ou } 5x=25\\\\
+(2x-12)(5x-25)&=0\\
+2x-12=0 &\text{ ou } 5x-25=0\\
+2x=12 &\text{ ou } 5x=25\\
 x=6 &\text{ ou } x=5
 \end{aligned}
 $$
@@ -260,8 +260,8 @@ On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3-\dfrac{2}{3}
 ---CORR---
 $$
 \begin{aligned}
-f\left(6\right)&=3-\dfrac{2}{3}(6-5)^2\\\\
-&=3-\dfrac{2}{3}\times 1\\\\
+f\left(6\right)&=3-\dfrac{2}{3}(6-5)^2\\
+&=3-\dfrac{2}{3}\times 1\\
 &=\dfrac{7}{3}
 \end{aligned}
 $$
@@ -307,8 +307,8 @@ On a  : <br>
 
 $$
 \begin{aligned}
-A&=\dfrac{5}{10}+\dfrac{5}{100}\\\\
-&=0{,}5+0{,}05\\\\
+A&=\dfrac{5}{10}+\dfrac{5}{100}\\
+&=0{,}5+0{,}05\\
 &=\boldsymbol{0{,}55}
 \end{aligned}
 $$

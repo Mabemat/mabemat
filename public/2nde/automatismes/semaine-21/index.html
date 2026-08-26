@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 21 — MaBémat</title>
+<title>Semaine 21 - Fonction inverse et valeur absolue — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Fonction inverse et valeur absolue</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,8 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Développer puis réduire l&rsquo;expression littérale suivante :</p>
-$$A=\left(-\dfrac{4}{5}c+4\right)\left(-\dfrac{6}{7}c+2\right)-\left(-\dfrac{2}{7}c-5\right)^2$$
+    <p>Comparer, sans calculatrice :</p>
+<p><strong>a.</strong> $\dfrac{1}{5}$ et $\dfrac{1}{8}$    <strong>b.</strong> $\dfrac{1}{-8}$ et $\dfrac{1}{-5}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -240,9 +244,12 @@ $$A=\left(-\dfrac{4}{5}c+4\right)\left(-\dfrac{6}{7}c+2\right)-\left(-\dfrac{2}{
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On développe chaque facteur et le carré :</p>
-$$A = \dfrac{24c^2}{35} - \dfrac{24c}{7} - \dfrac{8c}{5} + 8 - \dfrac{4c^2}{49} + \dfrac{20c}{7} - 25$$<p>On regroupe les termes de même degré :</p>
-$${\color{#4A5D7A}A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$</div>
+    <div><p>La fonction inverse est décroissante sur $\left]0\,;\,+\infty\right[$ et décroissante sur $\left]-\infty\,;\,0\right[$, mais <strong>pas</strong> sur $\mathbb{R}$ tout entier : il faut donc travailler intervalle par intervalle.</p>
+<p><strong>a.</strong> $5$ et $8$ sont tous deux positifs. Comme $5 < 8$ et que la fonction inverse renverse l&rsquo;ordre sur les positifs :</p>
+$${\color{#4A5D7A}\dfrac{1}{5}>\dfrac{1}{8}}$$<p>Autrement dit, plus on divise $1$ par un grand nombre, plus le résultat est petit.</p>
+<p><strong>b.</strong> $-8$ et $-5$ sont tous deux négatifs. Comme $-8 < -5$ et que la fonction inverse renverse aussi l&rsquo;ordre sur les négatifs :</p>
+$${\color{#4A5D7A}\dfrac{1}{-8}>\dfrac{1}{-5}}$$<p>On vérifie : $-0{,}125>-0{,}2$.</p>
+</div>
   </div>
   
 </article>
@@ -261,8 +268,8 @@ $${\color{#4A5D7A}A = \dfrac{148}{245}c^2 - \dfrac{276}{35}c - 17}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Encadrer le nombre suivant par deux puissances de 10 d&rsquo;exposants consécutifs :</p>
-$$\dots \leqslant 84{,}074 \leqslant \dots$$
+    <p>Calculer :</p>
+$$\left|-7\right| \qquad \left|3-11\right| \qquad \left|4-4\right|$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -270,8 +277,10 @@ $$\dots \leqslant 84{,}074 \leqslant \dots$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Comme $10^1 = 10$ et $10^2 = 100$, et que $10 \leqslant 84{,}074 \leqslant 100$ :</p>
-$${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$</div>
+    <div><p>La valeur absolue d&rsquo;un nombre est sa distance à zéro : elle est toujours positive ou nulle.</p>
+$$\left|-7\right|={\color{#4A5D7A}7}$$<p>Pour les deux autres, on calcule d&rsquo;abord ce qui est à l&rsquo;intérieur :</p>
+$$\left|3-11\right|=\left|-8\right|={\color{#4A5D7A}8}$$$$\left|4-4\right|=\left|0\right|={\color{#4A5D7A}0}$$<p>Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l&rsquo;intérieur.</p>
+</div>
   </div>
   
 </article>
@@ -290,9 +299,8 @@ $${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(6\,;\,-4)$ et le vecteur $\vec{u}\begin{pmatrix}1\\-3\end{pmatrix}$.</p>
-<p>Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{AB}$.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$\left|x-3\right|=5$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -300,8 +308,10 @@ $${\color{#4A5D7A}10^1 \leqslant 84{,}074 \leqslant 10^2}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$\overrightarrow{AB} = \vec{u}$ signifie :</p>
-$$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x_B = 7 \\ y_B = -7\end{cases}$$$${\color{#4A5D7A}B(7\,;\,-7)}$$</div>
+    <div><p>On traduit par une distance : $\left|x-3\right|$ est la distance entre $x$ et $3$. On cherche donc les réels situés à une distance de $5$ du nombre $3$.</p>
+<p>Il y en a deux, un de chaque côté :</p>
+$$x-3=5 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-3=-5 \quad\text{donc}\quad x=-2$$$$S={\color{#4A5D7A}\lbrace -2\,;\,8\rbrace}$$<p>On peut le lire directement sur une droite graduée : en partant de $3$, on avance de $5$ puis on recule de $5$.</p>
+</div>
   </div>
   
 </article>
@@ -320,10 +330,8 @@ $$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>La droite représentant la fonction linéaire $f$ passe par le point de coordonnées $(15\,;\,60)$.</p>
-<p>Donner l&rsquo;expression de $f(x)$.</p>
-<img src="/mabemat/images/automatismes/2nde/s21-q04.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$2x^2-9=23$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -331,9 +339,9 @@ $$\begin{cases}x_B - 6 = 1 \\ y_B - (-4) = -3\end{cases} \implies \begin{cases}x
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Une fonction linéaire est de la forme $f(x) = ax$.</p>
-<p>Puisque $f(15) = 60$ :</p>
-$$a = \dfrac{60}{15} = 4$$$${\color{#4A5D7A}f(x) = 4x}$$</div>
+    <div><p>On isole $x^2$ :</p>
+$$2x^2=32 \qquad\text{donc}\qquad x^2=16$$<p>Comme $16>0$, deux solutions opposées :</p>
+$$S={\color{#4A5D7A}\lbrace -4\,;\,4\rbrace}$$</div>
   </div>
   
 </article>
@@ -352,8 +360,8 @@ $$a = \dfrac{60}{15} = 4$$$${\color{#4A5D7A}f(x) = 4x}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p><strong>a)</strong> Résoudre dans $\mathbb{R}$ : $x^3 = 125$</p>
-<p><strong>b)</strong> Résoudre dans $\mathbb{R}$ : $x^2 = 16$</p>
+    <p>Dans une série de $10$ valeurs rangées dans l&rsquo;ordre croissant, la médiane est :</p>
+<p><strong>A.</strong> la $5^\text{e}$ valeur   <strong>B.</strong> la $6^\text{e}$ valeur   <strong>C.</strong> la moyenne des $5^\text{e}$ et $6^\text{e}$ valeurs   <strong>D.</strong> la moyenne de toutes les valeurs</p>
 
   </div>
   
@@ -362,9 +370,44 @@ $$a = \dfrac{60}{15} = 4$$$${\color{#4A5D7A}f(x) = 4x}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>a)</strong> On cherche le nombre dont le cube est $125$. Comme $5^3 = 125$ :</p>
-$${\color{#4A5D7A}S = \{5\}}$$<p><strong>b)</strong> On reconnaît une équation $x^2 = k$ avec $k = 16 > 0$, donc deux solutions $\pm\sqrt{16}$ :</p>
-$${\color{#4A5D7A}S = \{-4\,;\,4\}}$$</div>
+    <div><p>L&rsquo;effectif $10$ est <strong>pair</strong> : il n&rsquo;y a pas de valeur unique au milieu, mais deux valeurs centrales, celles de rang $5$ et $6$. La médiane est leur moyenne.</p>
+$${\color{#4A5D7A}\text{Médiane}=\dfrac{5^\text{e}+6^\text{e}}{2}}$$<p>Il y a bien $5$ valeurs de chaque côté. La réponse D confond médiane et moyenne : ce sont deux indicateurs différents.</p>
+<p><span class="rep">Réponse : C</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une commune, le tarif de l&rsquo;eau comprend un abonnement annuel de $48$ € et $3{,}50$ € par mètre cube consommé.</p>
+<p>Le prix payé, en euros, pour $x$ mètres cubes est :</p>
+<p><strong>A.</strong> $48x+3{,}5$   <strong>B.</strong> $3{,}5x+48$   <strong>C.</strong> $51{,}5x$   <strong>D.</strong> $\dfrac{48}{x}+3{,}5$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;abonnement est payé une seule fois, quelle que soit la consommation : c&rsquo;est un terme constant.</p>
+<p>Le prix au mètre cube est multiplié par le nombre de mètres cubes consommés :</p>
+$$\text{prix}={\color{#4A5D7A}3{,}5x+48}$$<p>La réponse A intervertit les deux rôles, et la réponse C additionne l&rsquo;abonnement et le tarif au mètre cube, ce qui reviendrait à repayer l&rsquo;abonnement à chaque mètre cube.</p>
+<p><span class="rep">Réponse : B</span></p>
+</div>
   </div>
   
 </article>
@@ -393,8 +436,9 @@ $${\color{#4A5D7A}S = \{-4\,;\,4\}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Développer puis réduire l&rsquo;expression littérale suivante :</p>
-$$A=\left(-\dfrac{6}{7}y-4\right)^2-\left(\dfrac{4}{7}y+3\right)^2$$
+    <p>Comparer, sans calculatrice :</p>
+<p><strong>a.</strong> $\dfrac{1}{4}$ et $\dfrac{1}{9}$    <strong>b.</strong> $\dfrac{1}{-9}$ et $\dfrac{1}{-4}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -402,8 +446,12 @@ $$A=\left(-\dfrac{6}{7}y-4\right)^2-\left(\dfrac{4}{7}y+3\right)^2$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On développe chaque carré :</p>
-$$\left(-\dfrac{6}{7}y-4\right)^2 = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16$$$$\left(\dfrac{4}{7}y+3\right)^2 = \dfrac{16}{49}y^2 + \dfrac{24}{7}y + 9$$$$A = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16 - \dfrac{16}{49}y^2 - \dfrac{24}{7}y - 9$$$${\color{#4A5D7A}A = \dfrac{20}{49}y^2 + \dfrac{24}{7}y + 7}$$</div>
+    <div><p>La fonction inverse est décroissante sur $\left]0\,;\,+\infty\right[$ et décroissante sur $\left]-\infty\,;\,0\right[$, mais <strong>pas</strong> sur $\mathbb{R}$ tout entier : il faut donc travailler intervalle par intervalle.</p>
+<p><strong>a.</strong> $4$ et $9$ sont tous deux positifs. Comme $4 < 9$ et que la fonction inverse renverse l&rsquo;ordre sur les positifs :</p>
+$${\color{#4A5D7A}\dfrac{1}{4}>\dfrac{1}{9}}$$<p>Autrement dit, plus on divise $1$ par un grand nombre, plus le résultat est petit.</p>
+<p><strong>b.</strong> $-9$ et $-4$ sont tous deux négatifs. Comme $-9 < -4$ et que la fonction inverse renverse aussi l&rsquo;ordre sur les négatifs :</p>
+$${\color{#4A5D7A}\dfrac{1}{-9}>\dfrac{1}{-4}}$$<p>On vérifie : $-0{,}111\ldots>-0{,}25$.</p>
+</div>
   </div>
   
 </article>
@@ -422,8 +470,8 @@ $$\left(-\dfrac{6}{7}y-4\right)^2 = \dfrac{36}{49}y^2 + \dfrac{48}{7}y + 16$$$$\
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Encadrer le nombre suivant par deux puissances de 10 d&rsquo;exposants consécutifs :</p>
-$$\dots \leqslant 0{,}009\,4 \leqslant \dots$$
+    <p>Calculer :</p>
+$$\left|-12\right| \qquad \left|5-14\right| \qquad \left|6-6\right|$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -431,8 +479,10 @@ $$\dots \leqslant 0{,}009\,4 \leqslant \dots$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Comme $10^{-3} = 0{,}001$ et $10^{-2} = 0{,}01$, et que $0{,}001 \leqslant 0{,}0094 \leqslant 0{,}01$ :</p>
-$${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$</div>
+    <div><p>La valeur absolue d&rsquo;un nombre est sa distance à zéro : elle est toujours positive ou nulle.</p>
+$$\left|-12\right|={\color{#4A5D7A}12}$$<p>Pour les deux autres, on calcule d&rsquo;abord ce qui est à l&rsquo;intérieur :</p>
+$$\left|5-14\right|=\left|-9\right|={\color{#4A5D7A}9}$$$$\left|6-6\right|=\left|0\right|={\color{#4A5D7A}0}$$<p>Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l&rsquo;intérieur.</p>
+</div>
   </div>
   
 </article>
@@ -451,9 +501,8 @@ $${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère orthonormé $\big(O\,;\,\vec{\imath},\vec{\jmath}\big)$, on donne le point $A(7\,;\,-5)$ et le vecteur $\vec{u}\begin{pmatrix}-7\\-3\end{pmatrix}$.</p>
-<p>Déterminer les coordonnées du point $B$ tel que $\vec{u}=\overrightarrow{BA}$.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$\left|x-2\right|=6$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -461,8 +510,10 @@ $${\color{#4A5D7A}10^{-3} \leqslant 0{,}009\,4 \leqslant 10^{-2}}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$\overrightarrow{BA} = \vec{u}$ signifie :</p>
-$$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_B = 14 \\ y_B = -2\end{cases}$$$${\color{#4A5D7A}B(14\,;\,-2)}$$</div>
+    <div><p>On traduit par une distance : $\left|x-2\right|$ est la distance entre $x$ et $2$. On cherche donc les réels situés à une distance de $6$ du nombre $2$.</p>
+<p>Il y en a deux, un de chaque côté :</p>
+$$x-2=6 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-2=-6 \quad\text{donc}\quad x=-4$$$$S={\color{#4A5D7A}\lbrace -4\,;\,8\rbrace}$$<p>On peut le lire directement sur une droite graduée : en partant de $2$, on avance de $6$ puis on recule de $6$.</p>
+</div>
   </div>
   
 </article>
@@ -481,9 +532,8 @@ $$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction affine telle que $f(7) = -4$ et $f(0) = 10$.</p>
-<p>Calculer l&rsquo;antécédent de $-2$.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$3x^2-11=64$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -491,11 +541,9 @@ $$\begin{cases}7 - x_B = -7 \\ -5 - y_B = -3\end{cases} \implies \begin{cases}x_
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$f(0) = 10$ donne l&rsquo;ordonnée à l&rsquo;origine : $b = 10$.</p>
-<p>$f(7) = -4$ : $\;7a + 10 = -4 \implies 7a = -14 \implies a = -2$.</p>
-<p>Donc $f(x) = -2x + 10$.</p>
-<p>Antécédent de $-2$ : $-2x + 10 = -2 \implies -2x = -12 \implies x = 6$.</p>
-$${\color{#4A5D7A}x = 6}$$</div>
+    <div><p>On isole $x^2$ :</p>
+$$3x^2=75 \qquad\text{donc}\qquad x^2=25$$<p>Comme $25>0$, deux solutions opposées :</p>
+$$S={\color{#4A5D7A}\lbrace -5\,;\,5\rbrace}$$</div>
   </div>
   
 </article>
@@ -514,8 +562,8 @@ $${\color{#4A5D7A}x = 6}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p><strong>a)</strong> Résoudre dans $\mathbb{R}$ : $x^3 = -27$</p>
-<p><strong>b)</strong> Résoudre dans $\mathbb{R}$ : $x^2 = 121$</p>
+    <p>Dans une série de $14$ valeurs rangées dans l&rsquo;ordre croissant, la médiane est :</p>
+<p><strong>A.</strong> la moyenne des $7^\text{e}$ et $8^\text{e}$ valeurs   <strong>B.</strong> la $8^\text{e}$ valeur   <strong>C.</strong> la $7^\text{e}$ valeur   <strong>D.</strong> la moyenne de toutes les valeurs</p>
 
   </div>
   
@@ -524,9 +572,44 @@ $${\color{#4A5D7A}x = 6}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>a)</strong> Comme $(-3)^3 = -27$ :</p>
-$${\color{#4A5D7A}S = \{-3\}}$$<p><strong>b)</strong> $x^2 = 121$ avec $121 > 0$, donc deux solutions $\pm\sqrt{121}$ :</p>
-$${\color{#4A5D7A}S = \{-11\,;\,11\}}$$</div>
+    <div><p>L&rsquo;effectif $14$ est <strong>pair</strong> : il n&rsquo;y a pas de valeur unique au milieu, mais deux valeurs centrales, celles de rang $7$ et $8$. La médiane est leur moyenne.</p>
+$${\color{#4A5D7A}\text{Médiane}=\dfrac{7^\text{e}+8^\text{e}}{2}}$$<p>Il y a bien $7$ valeurs de chaque côté. La réponse D confond médiane et moyenne : ce sont deux indicateurs différents.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une commune, le tarif de l&rsquo;eau comprend un abonnement annuel de $62$ € et $2{,}80$ € par mètre cube consommé.</p>
+<p>Le prix payé, en euros, pour $x$ mètres cubes est :</p>
+<p><strong>A.</strong> $\dfrac{62}{x}+2{,}8$   <strong>B.</strong> $64{,}8x$   <strong>C.</strong> $62x+2{,}8$   <strong>D.</strong> $2{,}8x+62$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;abonnement est payé une seule fois, quelle que soit la consommation : c&rsquo;est un terme constant.</p>
+<p>Le prix au mètre cube est multiplié par le nombre de mètres cubes consommés :</p>
+$$\text{prix}={\color{#4A5D7A}2{,}8x+62}$$<p>La réponse C intervertit les deux rôles, et la réponse B additionne l&rsquo;abonnement et le tarif au mètre cube, ce qui reviendrait à repayer l&rsquo;abonnement à chaque mètre cube.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -627,7 +710,7 @@ $${\color{#4A5D7A}S = \{-11\,;\,11\}}$$</div>
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

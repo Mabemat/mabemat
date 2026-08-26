@@ -65,13 +65,6 @@ Par commodité, dans ces quatre exemples, on place $\overrightarrow{v}$ horizont
 </div>
 </div>
 
-<div class="remarque">
-Dans le cas de vecteurs <strong>colinéaires</strong>, <ul>
-<li>si les vecteurs sont de sens opposé, on a $\overrightarrow{u}.\overrightarrow{v}=-\vert \vert \overrightarrow{u} \vert \vert \times \vert \vert \overrightarrow{v} \vert \vert$ car $\cos\left(\overrightarrow{u};\overrightarrow{v}\right)=-1$ ;</li>
-<li>sinon, $\overrightarrow{u}.\overrightarrow{v}=\vert \vert \overrightarrow{u} \vert \vert \times \vert \vert \overrightarrow{v} \vert \vert$ car $\cos\left(\overrightarrow{u};\overrightarrow{v}\right)=1$ ;</li>
-</ul>
-</div>
-
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
@@ -98,6 +91,13 @@ $\overrightarrow{u}.\overrightarrow{v}=\dfrac{1}{2}\left( \vert \vert \overright
 <img src="/mabemat/figures/1re/chapitre-07/fig3.svg" alt="figure 3" style="flex:4 1 0; min-width:0; max-height:200px; object-fit:contain; align-self:flex-start;">
 </div>
 </div>
+</div>
+
+<div class="remarque">
+Dans le cas de vecteurs <strong>colinéaires</strong>, <ul>
+<li>si les vecteurs sont de sens opposé, on a $\overrightarrow{u}.\overrightarrow{v}=-\vert \vert \overrightarrow{u} \vert \vert \times \vert \vert \overrightarrow{v} \vert \vert$ car $\cos\left(\overrightarrow{u};\overrightarrow{v}\right)=-1$ ;</li>
+<li>sinon, $\overrightarrow{u}.\overrightarrow{v}=\vert \vert \overrightarrow{u} \vert \vert \times \vert \vert \overrightarrow{v} \vert \vert$ car $\cos\left(\overrightarrow{u};\overrightarrow{v}\right)=1$ ;</li>
+</ul>
 </div>
 
 <div class="environment exemple">
@@ -156,18 +156,13 @@ On a donc :<br>$\overrightarrow{AC}.\overrightarrow{CB}=-1\times (-5) + 3 \times
 <div class="environment-content">
 
 <ul>
-<li><strong>Commutativité</strong> : $\overrightarrow{u}.\overrightarrow{v}=\overrightarrow{v}.\overrightarrow{u}$.</li>
-<li><strong>Produit par un nombre</strong> : pour tout réel $k$, on a $(k\overrightarrow{u}).\overrightarrow{v}=k(\overrightarrow{u}.\overrightarrow{v})=k\overrightarrow{u}.\overrightarrow{v}$.</li>
-<li><strong>Distributivité</strong> : $\left(\overrightarrow{u}+\overrightarrow{v}\right).\overrightarrow{w}=\overrightarrow{u}.\overrightarrow{w}+\overrightarrow{v}.\overrightarrow{w}$.</li>
+<li><strong>Symétrie</strong> (ou commutativité) : $\overrightarrow{u}.\overrightarrow{v}=\overrightarrow{v}.\overrightarrow{u}$.</li>
+<li><strong>Produit par un nombre</strong> : pour tout réel $k$, on a $(k\overrightarrow{u}).\overrightarrow{v}=k(\overrightarrow{u}.\overrightarrow{v})=\overrightarrow{u}.(k\overrightarrow{v})$.</li>
+<li><strong>Distributivité</strong> : $\left(\overrightarrow{u}+\overrightarrow{v}\right).\overrightarrow{w}=\overrightarrow{u}.\overrightarrow{w}+\overrightarrow{v}.\overrightarrow{w}$ et $\overrightarrow{u}.\left(\overrightarrow{v}+\overrightarrow{w}\right)=\overrightarrow{u}.\overrightarrow{v}+\overrightarrow{u}.\overrightarrow{w}$.</li>
 </ul>
+Les deux dernières propriétés, valables sur chacune des deux places, se résument en disant que le produit scalaire est <strong>bilinéaire</strong>.
 </div>
 </div>
-
-Démonstration. <br>
-Très rapide à l'aide de l'expression analytique.
-
-
-Le produit scalaire se comporte exactement comme un produit de réels.
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
@@ -191,12 +186,6 @@ $\left(\overrightarrow{u}+3\overrightarrow{v}\right).\left(-2\overrightarrow{u}+
 </div>
 </div>
 
-Démonstration. <br>
-$\vert \vert \overrightarrow{u}+\overrightarrow{v} \vert \vert^2=\left(\overrightarrow{u}+\overrightarrow{v}\right).\left(\overrightarrow{u}+\overrightarrow{v}\right)=\overrightarrow{u}.\overrightarrow{u}+\overrightarrow{u}.\overrightarrow{v}+\overrightarrow{v}.\overrightarrow{u}+\overrightarrow{v}.\overrightarrow{v}=\vert \vert \overrightarrow{u} \vert \vert^2+\vert \vert \overrightarrow{v} \vert \vert^2 +2\overrightarrow{u}.\overrightarrow{v}$<br>
-$\vert \vert \overrightarrow{u}-\overrightarrow{v} \vert \vert^2=\left(\overrightarrow{u}-\overrightarrow{v}\right).\left(\overrightarrow{u}-\overrightarrow{v}\right)=\overrightarrow{u}.\overrightarrow{u}-\overrightarrow{u}.\overrightarrow{v}-\overrightarrow{v}.\overrightarrow{u}+\overrightarrow{v}.\overrightarrow{v}=\vert \vert \overrightarrow{u} \vert \vert^2-\vert \vert \overrightarrow{v} \vert \vert^2 +2\overrightarrow{u}.\overrightarrow{v}$<br>
-$\left(\overrightarrow{u}+\overrightarrow{v}\right).\left(\overrightarrow{u}-\overrightarrow{v}\right)=\overrightarrow{u}.\overrightarrow{u}-\overrightarrow{u}.\overrightarrow{v}+\overrightarrow{v}.\overrightarrow{u}-\overrightarrow{v}.\overrightarrow{v}=\vert \vert \overrightarrow{u} \vert \vert^2-\vert \vert \overrightarrow{v} \vert \vert^2$
- 
-
 <h3 class="subsubsection-title">7.3.2 Orthogonalité</h3>
 
 <div class="environment propriete">
@@ -205,14 +194,6 @@ $\left(\overrightarrow{u}+\overrightarrow{v}\right).\left(\overrightarrow{u}-\ov
 Pour tous vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ non nuls, on a $\overrightarrow{u}\perp \overrightarrow{v} \Leftrightarrow \overrightarrow{u}.\overrightarrow{v}=0 \Leftrightarrow x_{\overrightarrow{u}}x_{\overrightarrow{v}}+y_{\overrightarrow{u}}y_{\overrightarrow{v}}=0$.
 </div>
 </div>
-
-Démonstration. <br>
-Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs.<br>
-Pour faciliter la démonstration, on leur donne la même origine $A$, et on pose $B$ et $C$ tels que $\overrightarrow{u}=\overrightarrow{AB}$ et $\overrightarrow{v}=\overrightarrow{AC}$.<br>
-Il vient alors $BC^2=\vert \vert \overrightarrow{BA}+\overrightarrow{BC} \vert \vert^2=\vert \vert -\overrightarrow{u}+\overrightarrow{v} \vert \vert^2=\vert \vert \overrightarrow{u} \vert \vert^2 +\vert \vert \overrightarrow{v} \vert \vert^2 -2\overrightarrow{u}.\overrightarrow{v}=AB^2+AC^2-2\overrightarrow{u}.\overrightarrow{v}$ $(1)$<br>
-Si $\overrightarrow{u}.\overrightarrow{v}=0$, alors $(1)$ devient $BC^2=AB^2+AC^2$ et par la réciproque du théorème de Pythagore, $ABC$ est rectangle en $A$, donc $\overrightarrow{u}\perp \overrightarrow{v}$.<br>
-Si $\overrightarrow{u}\perp \overrightarrow{v}$ alors par le théorème de Pythagore $BC^2=AB^2+AC^2$ donc d'après $(1)$, $-2\overrightarrow{u}.\overrightarrow{v}=0$ et donc $\overrightarrow{u}.\overrightarrow{v}=0$.
- 
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
@@ -225,8 +206,8 @@ On cherche $k$ tel que
 $$
 \begin{align*}
 \left(2\overrightarrow{u}+\overrightarrow{v}\right).\left(-\overrightarrow{u}+k\overrightarrow{v}\right)&=0\\
--2\overrightarrow{u}.\overrightarrow{u}+8k\overrightarrow{u}.\overrightarrow{v}-\overrightarrow{u}.\overrightarrow{v}+k\overrightarrow{v}.\overrightarrow{v}&=0\\
--2\times 2^2+8k-4+k\times 3^2&=0\\
+-2\overrightarrow{u}.\overrightarrow{u}+2k\overrightarrow{u}.\overrightarrow{v}-\overrightarrow{v}.\overrightarrow{u}+k\overrightarrow{v}.\overrightarrow{v}&=0\\
+-2\times 2^2+2k\times 4-4+k\times 3^2&=0\\
 17k&=12\\
 k&=\dfrac{12}{17}
 \end{align*}

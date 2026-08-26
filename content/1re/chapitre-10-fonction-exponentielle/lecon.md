@@ -22,22 +22,6 @@ On admet qu'il existe une fonction dérivable sur $\R$ telle que $f'=f$ et $f(0)
 </div>
 </div>
 
-Démonstration. <br>
-<ol>
-<li>Soit la fonction $A$ définie sur $\R$ par $A(x)=f(x)f(-x)$.<br>
-Pour tout réel $x$, on a : $A'(x)=f'(x)f(-x)-f'(-x)f(x)=f(x)f(-x)-f(-x)f(x)=0$.<br>
-La fonction $A$ est donc constante. <br>
-Comme $A(0)=f(0)f(-0)=1$, on a pour tout réel $x$, $f(x)f(-x)=1$, la fonction $f$ ne peut donc pas s'annuler.</li>
-<li>Supposons qu'il existe une autre fonction $g$ qui vérifie les hypothèses du théorème (ie $g'=g$ et $g(0)=1$).<br>
-Comme $f$ ne s'annule pas, on pose $h(x)=\dfrac{g(x)}{f(x)}$.<br>
-Pour tout $x\in\R$, $h'(x)=\dfrac{g'(x)f(x)-g(x)f'(x)}{\left(f(x)\right)^2}=\dfrac{g(x)f(x)-g(x)f(x)}{\left(f(x)\right)^2}=0$.<br>
-$h$ est donc une fonction constante.<br>
-Or, $h(0)=\dfrac{g(0)}{f(0)}=\dfrac{1}{1}=1$, donc pour tout $x\in \R$, $h(x)=1$.<br>
-Et donc pour tout $x\in \R$, $f(x)=g(x)$. L'unicité de $f$ est donc vérifiée.
-</li>
-</ol>
- 
-
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
@@ -89,24 +73,12 @@ Pour tout réel $x$ et $y$, on a $\exp(x+y)=\exp(x)\exp(y)$.
 </div>
 </div>
 
- Démonstration. <br>
-Fixons $y$ constant et comme $\exp(x)\neq 0$, posons $g(x)=\dfrac{\exp(x+y)}{\exp(x)}$.<br>
-Alors $g$ est dérivable sur $\R$ et $g'(x)=\dfrac{\exp'(x+y)\exp(x)-\exp'(x)\exp(x+y)}{(\exp(x))^2}=\dfrac{\exp(x+y)\exp(x)-\exp(x)\exp(x+y)}{(\exp(x))^2}=0$.<br>
-Donc $g$ est constante égale à $c$. Or, $g(0)=\dfrac{\exp(y)}{\exp(0)}=\exp(y)=c$.<br>
-D'où, $g(x)=\exp(y)=\dfrac{\exp(x+y)}{\exp(x)}$, ie $\exp(x+y)=\exp(x)\exp(y)$.
- 
-
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
 La fonction exponentielle est strictement positive sur $\R$.
 </div>
 </div>
-
- Démonstration. <br>
-Pour tout réel $x$ réel, $\exp(x)=\exp\left(\dfrac{x}{2}+\dfrac{x}{2}\right)=\exp\left(\dfrac{x}{2}\right)\times\exp\left(\dfrac{x}{2}\right)=\left[\exp\left(\dfrac{x}{2}\right)\right]^2$.<br>
-La fonction exponentielle ne s'annule jamais sur $\R$, donc pour tout réel $x$, $\exp(x)>0$.
- 
 
 <h3 class="subsubsection-title">10.2.2 Propriétés algébriques de la fonction exponentielle</h3>
 
@@ -120,13 +92,6 @@ Pour tout réel $x$ et $y$, on a :
 </ul>
 </div>
 </div>
-
-Démonstration. <br>
-<ol>
-<li>$\exp(x-y)=\exp(x+(-y))=\exp(x)\exp(-y)=\exp(x)\dfrac{1}{\exp(y)}=\dfrac{\exp(x)}{\exp(y)}$.</li>
-<li>$\exp(nx)=\exp(\underbrace{x+x+\cdots+x}_{n \text{ fois}})=\underbrace{\exp(x)\times \exp(x)\times \cdots \times \exp(x)}_{n \text{ fois}}=\left(\exp(x)\right)^n$.</li>
-</ol>
- 
 
 <h3 class="subsubsection-title">10.2.3 Le nombre $e$</h3>
 
@@ -157,8 +122,9 @@ On retrouve les propriétés des puissances.
 </div>
 
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
+Simplifier les expressions suivantes.
 <ul>
 <li>$A=\dfrac{e^7\times e^{-4}}{e^{-5}}=\dfrac{e^{7-4}}{e^{-5}}=\dfrac{e^3}{e^{-5}}=e^{3-(-5)}=e^8$</li>
 <li>$B=(e^5)^{-6}\times e^{-3}=e^{5\times (-6)}\times e^{-3}=e^{-30}\times e^{-3}=e^{-30-3}=e^{-33}$</li>
@@ -182,13 +148,6 @@ On retrouve les propriétés des puissances.
 </div>
 </div>
 
-Démonstration. <br>
-<ol>
-<li>C'est la définition même !</li>
-<li>Comme $(e^x)'=e^x > 0$ pour tout $x$, la fonction exponentielle est strictement croissante sur $\R$.</li>
-</ol>
- 
-
 <div class="environment propriete">
 <div class="environment-title">Corollaire :</div>
 <div class="environment-content">
@@ -203,8 +162,9 @@ Pour tout réel $a$ et $b$, on a :
 </div>
 
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
+Résoudre dans $\R$ l'équation et l'inéquation suivantes.
 <ul>
 <li>$e^{x^2-3}-e^{-2x}=0$.
 <br> $e^{x^2-3}-e^{-2x}=0\Leftrightarrow e^{x^2-3}=e^{-2x} \Leftrightarrow x^2-3=-2x \Leftrightarrow x^2+2x-3=0 \Leftrightarrow x=-3 \text{ ou } x=1$. <br> L'ensemble des solutions est $S=\{-3;1\}$.</li>
@@ -226,10 +186,77 @@ Sa dérivée est la fonction $(e^{ax+b})'=ae^{ax+b}$.
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
+Calculer la dérivée des fonctions suivantes.
 <ul>
 <li>Si $f(x)=e^{4x+3}$ alors $f'(x)=4e^{4x+3}$.</li>
 <li>Si $g(x)=e^{-3x}$ alors $g'(x)=-3e^{-3x}$.
 </li>
 </ul>
+</div>
+</div>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $k$ un réel strictement positif.
+<ul>
+<li>$t\mapsto e^{kt}$ est strictement croissante sur $\R$ : c'est une croissance exponentielle.</li>
+<li>$t\mapsto e^{-kt}$ est strictement décroissante sur $\R$ et tend vers $0$ : c'est une décroissance exponentielle.</li>
+</ul>
+Dans les deux cas la fonction reste strictement positive, et vaut $1$ en $t=0$.
+</div>
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; text-align:center;">
+
+<div>
+<img src="/mabemat/figures/1re/chapitre-10/exp-croissance.svg" alt="croissance exponentielle" style="max-height:240px; max-width:100%; margin:0.5em 0;"><br>
+<small>Croissance exponentielle ($k>0$)</small>
+</div>
+
+<div>
+<img src="/mabemat/figures/1re/chapitre-10/exp-decroissance.svg" alt="décroissance exponentielle" style="max-height:240px; max-width:100%; margin:0.5em 0;"><br>
+<small>Décroissance exponentielle ($k>0$)</small>
+</div>
+
+</div>
+
+<h2 class="subsection-title">10.5 Lien avec les suites géométriques</h2>
+
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $k$ un réel et $f$ la fonction définie sur $\R$ par $f(t)=A\,e^{kt}$, où $A$ est un réel.<br>
+Alors la suite $(u_n)$ définie par $u_n=f(n)$ est une <strong>suite géométrique</strong> de premier terme $A$ et de raison $q=e^{k}$.
+</div>
+</div>
+
+<div class="remarque">
+La fonction exponentielle est donc le <strong>prolongement continu</strong> d'une suite géométrique :
+<ul>
+<li>la suite géométrique modélise une évolution à taux constant en <strong>temps discret</strong> (année par année, jour par jour) ;</li>
+<li>la fonction $t\mapsto A\,e^{kt}$ modélise la même évolution en <strong>temps continu</strong> (à tout instant).</li>
+</ul>
+Les points de la suite sont exactement les points de la courbe d'abscisses entières.<br>
+Comme $e^k>0$, on retrouve aussi les variations : si $k>0$ alors $q=e^k>1$ et la suite croît ; si $k<0$ alors $0<q<1$ et la suite décroît vers $0$.
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On modélise une population par $f(t)=500\,e^{0,2t}$, où $t$ est le temps en années. <br>
+Déterminer le taux d'évolution annuel de cette population.<br>
+La suite $u_n=f(n)$ est géométrique de raison $q=e^{0,2}\approx 1,221$.<br>
+Autrement dit, la population augmente d'environ $22,1\%$ par an, et $u_0=500$.
+</div>
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Une substance radioactive est modélisée par $m(t)=50\,e^{-0,13t}$, où $t$ est le temps en jours et $m$ la masse en grammes. <br>
+Déterminer le taux d'évolution journalier de la masse.<br>
+La suite $m_n=m(n)$ est géométrique de raison $q=e^{-0,13}\approx 0,878$.<br>
+La masse diminue donc d'environ $12,2\%$ par jour : c'est une décroissance exponentielle, la masse tend vers $0$ sans jamais l'atteindre.
 </div>
 </div>

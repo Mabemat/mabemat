@@ -1,14 +1,14 @@
 ---
-title: "Correction — Séance 04 Boucles bornées"
+title: "Correction - Séance 04 Boucles bornées"
 ---
 
-### Exercice 1 — Population d'un village
+### Exercice 1 - Population d'un village
 
 **Q1.** Tableau de trace pour n = 3 :
 
 | Étape | k | P |
 |---|---|---|
-| Initialisation | — | 2300 |
+| Initialisation | - | 2300 |
 | Tour 1 | 0 | 2300 + 150 = **2450** |
 | Tour 2 | 1 | 2450 + 150 = **2600** |
 | Tour 3 | 2 | 2600 + 150 = **2750** |
@@ -28,13 +28,13 @@ def population(n):
 
 ---
 
-### Exercice 2 — Somme des entiers
+### Exercice 2 - Somme des entiers
 
 **Q1.** Tableau de trace pour n = 5 :
 
 | Étape | k | s |
 |---|---|---|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | Tour 1 | 1 | 0 + 1 = **1** |
 | Tour 2 | 2 | 1 + 2 = **3** |
 | Tour 3 | 3 | 3 + 3 = **6** |
@@ -54,7 +54,7 @@ def som(n):
 
 ---
 
-### Exercice 3 — Analyse de programme
+### Exercice 3 - Analyse de programme
 
 **Q1.** Le bloc répété est `a = a + 1`. Il est répété **4 fois** (range(4) génère 0, 1, 2, 3).
 
@@ -62,12 +62,12 @@ def som(n):
 
 | Étape | i | a |
 |---|---|---|
-| Avant boucle | — | 2 |
+| Avant boucle | - | 2 |
 | Tour 1 | 0 | 2 + 1 = **3** |
 | Tour 2 | 1 | 3 + 1 = **4** |
 | Tour 3 | 2 | 4 + 1 = **5** |
 | Tour 4 | 3 | 5 + 1 = **6** |
-| Après boucle | — | 2 × 6 = **12** |
+| Après boucle | - | 2 × 6 = **12** |
 
 La valeur finale de `a` est **12**.
 
@@ -75,17 +75,17 @@ La valeur finale de `a` est **12**.
 
 ---
 
-### Exercice 4 — Code puzzle (interactif)
+### Exercice 4 - Code puzzle (interactif)
 
-**Q1.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+**Q1.** Exercice CodePuzzle interactif - vérifier automatiquement dans le notebook.
 
-**Q2.** Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.
+**Q2.** Exercice CodePuzzle interactif - vérifier automatiquement dans le notebook.
 
 ---
 
-### Exercice 5 — Prédire l'exécution
+### Exercice 5 - Prédire l'exécution
 
-**Q1 — Résultats prédits :**
+**Q1 - Résultats prédits :**
 
 | Programme | Résultat |
 |:---:|:---|
@@ -98,7 +98,7 @@ La valeur finale de `a` est **12**.
 
 ---
 
-**Programme A** — Affiche :
+**Programme A** - Affiche :
 ```
 0
 1
@@ -107,9 +107,9 @@ Fin
 ```
 `range(3)` génère 0, 1, 2. `print("Fin")` est hors de la boucle (non indenté), il s'exécute une seule fois à la fin.
 
-**Programme B** — Erreur `IndentationError` : `print(i)` n'est pas indenté dans le bloc du `for`.
+**Programme B** - Erreur `IndentationError` : `print(i)` n'est pas indenté dans le bloc du `for`.
 
-**Programme C** — Affiche :
+**Programme C** - Affiche :
 ```
 0
 ---
@@ -121,7 +121,7 @@ Fin
 ```
 Les deux `print` sont dans la boucle (tous les deux indentés), ils s'exécutent à chaque tour.
 
-**Programme D** — Affiche :
+**Programme D** - Affiche :
 ```
 dans la boucle
 dans la boucle
@@ -133,7 +133,7 @@ hors de la boucle
 
 ---
 
-### Exercice 6 — Réseau social
+### Exercice 6 - Réseau social
 
 **Q1.**
 ```python
@@ -165,7 +165,7 @@ def users(annee):
 
 ---
 
-### Exercice 7 — Le blob
+### Exercice 7 - Le blob
 
 ```python
 def blob(n, j):
@@ -179,7 +179,7 @@ Exemple : `blob(100, 3)` → 100 × 2³ = **800** cellules.
 
 ---
 
-### Exercice 8 — Épargne de Gaspard
+### Exercice 8 - Épargne de Gaspard
 
 **Q1.**
 ```python
@@ -212,7 +212,9 @@ print("Capital final :", round(capital, 2), "€")
 
 ---
 
-### Exercice 9 — Tortue Python
+### Exercice 9 - Tortue Python
+
+**Q1.** Le programme trace un carré de côté 100. On constate que le groupe d'instructions `forward(100)` puis `left(90)` est répété **4 fois à l'identique** : c'est exactement la situation où une boucle `for` est utile.
 
 **Q2.**
 ```python
@@ -221,6 +223,10 @@ def carre():
         forward(100)
         left(90)
 ```
+
+> ⚠️ Les deux instructions `forward` et `left` doivent être **indentées sous le `for`**. Si seule `forward(100)` l'est, la tortue avancera 4 fois en ligne droite puis tournera une seule fois.
+>
+> Remarque : la variable `i` ne sert à rien ici, on ne l'utilise pas dans le bloc. C'est normal : `range(4)` sert seulement à compter les 4 tours.
 
 **Q3.**
 ```python
@@ -245,7 +251,7 @@ def triangle(cote):
 
 ---
 
-### Exercice 10 — Notes de classe
+### Exercice 10 - Notes de classe
 
 **Q1.** Vérifier par exécution. Observer comment `if`/`else` dans la boucle `for` affiche des messages différents selon la note.
 
@@ -267,7 +273,7 @@ print("Nombre d'élèves reçus :", compteur)
 
 **Q4.** Notes ≥ 10 : 14 ✓, 18 ✓, 12 ✓, 16 ✓, 11 ✓ → **5 élèves reçus**.
 
-**Q5 — Bonus.**
+**Q5 - Bonus.**
 ```python
 notes = [14, 7, 18, 5, 12, 9, 16, 3, 11, 8]
 compteur_recus = 0

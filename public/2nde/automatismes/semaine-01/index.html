@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 1 — Fractions — MaBémat</title>
+<title>Semaine 1 - Fractions et calcul numérique — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Fractions</p>
+  <p class="wk-subtitle">Fractions et calcul numérique</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -218,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -234,7 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{2}{6}-\dfrac{3}{9}$ =
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$\dfrac{5}{6}-\dfrac{3}{8}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,7 +243,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{2}{6}-\dfrac{3}{9}=\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{6{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 2}}}{9{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{6-6}{18}=\dfrac{0}{18}={\color{#4A5D7A}0}$$<p>On réduit les fractions au même dénominateur (18), puis on effectue la soustraction.</p></div>
+    <div><p>On cherche un dénominateur commun à $6$ et $8$ : c&rsquo;est $24$.</p>
+$$\dfrac{5}{6}-\dfrac{3}{8}=\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 4}}}{6{\color{#4A5D7A}\boldsymbol{\times 4}}}-\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{8{\color{#4A5D7A}\boldsymbol{\times 3}}}=\dfrac{20}{24}-\dfrac{9}{24}=\dfrac{20-9}{24}={\color{#4A5D7A}\dfrac{11}{24}}$$<p>$11$ est premier et ne divise pas $24$ : la fraction est bien irréductible.</p>
+</div>
   </div>
   
 </article>
@@ -261,7 +264,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{8}{6}-\dfrac{2}{21}$ =
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$\dfrac{-14}{15}\times\dfrac{25}{21}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -269,7 +273,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{8}{6}-\dfrac{2}{21}=\dfrac{8{\color{#4A5D7A}\boldsymbol{\times 7}}}{6{\color{#4A5D7A}\boldsymbol{\times 7}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{21{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{56-4}{42}=\dfrac{52}{42}=\dfrac{26\times 2}{21\times 2}={\color{#4A5D7A}\dfrac{26}{21}}$$<p>Le dénominateur commun est 42. On simplifie ensuite par 2.</p></div>
+    <div><p>Le produit d&rsquo;un nombre négatif par un nombre positif est négatif :</p>
+$$\dfrac{-14}{15}\times\dfrac{25}{21}=-\dfrac{14\times 25}{15\times 21}$$<p>On décompose numérateur et dénominateur en facteurs, puis on simplifie :</p>
+$$-\dfrac{2\times \cancel{7}\times 5\times \cancel{5}}{3\times \cancel{5}\times 3\times \cancel{7}}=-\dfrac{2\times 5}{3\times 3}={\color{#4A5D7A}-\dfrac{10}{9}}$$</div>
   </div>
   
 </article>
@@ -288,7 +294,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{11}{10} \div \dfrac{77}{-30}$ =
+    <p>Calculer :</p>
+$$A=-3\times\Bigl((-2)^3+5\times(-2)\Bigr)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -296,9 +303,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{11}{10} \div \dfrac{77}{-30} = \dfrac{11}{10} \times \dfrac{-30}{77} = \dfrac{11 \times (-30)}{10 \times 77}$$<p>On décompose :</p>
-$$\dfrac{(-11) \times 3 \times 10}{10 \times 7 \times 11} = \dfrac{-3 \times \cancel{10} \times \cancel{11}}{\cancel{10} \times 7 \times \cancel{11}} = {\color{#4A5D7A}-\dfrac{3}{7}}$$<p>Pour diviser par une fraction, on multiplie par son inverse.</p>
-</div>
+    <div><p>On calcule d&rsquo;abord ce qui est entre parenthèses, en respectant les priorités (la puissance avant la multiplication) :</p>
+$$(-2)^3=(-2)\times(-2)\times(-2)=-8 \qquad\text{et}\qquad 5\times(-2)=-10$$<p>Donc :</p>
+$$A=-3\times\bigl(-8+(-10)\bigr)=-3\times(-18)={\color{#4A5D7A}54}$$</div>
   </div>
   
 </article>
@@ -317,7 +324,10 @@ $$\dfrac{(-11) \times 3 \times 10}{10 \times 7 \times 11} = \dfrac{-3 \times \ca
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{-15}{55}\times\dfrac{-77}{40}$ =
+    <p>Dans une classe de $30$ élèves, $\dfrac{2}{5}$ des élèves sont des filles.</p>
+<p>Parmi les garçons, $\dfrac{1}{3}$ étudient l&rsquo;allemand.</p>
+<p>Combien de garçons étudient l&rsquo;allemand ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -325,9 +335,10 @@ $$\dfrac{(-11) \times 3 \times 10}{10 \times 7 \times 11} = \dfrac{-3 \times \ca
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{-15}{55}\times\dfrac{-77}{40}=\dfrac{(-15)\times(-77)}{55\times 40} = \dfrac{15 \times 77}{55 \times 40}$$<p>On décompose :</p>
-$$\dfrac{3 \times \cancel{5} \times 7 \times \cancel{11}}{8 \times 5 \times \cancel{5} \times \cancel{11}} = {\color{#4A5D7A}\dfrac{21}{40}}$$<p>Le produit de deux nombres négatifs est positif.</p>
-</div>
+    <div><p>Nombre de filles :</p>
+$$\dfrac{2}{5}\times 30=\dfrac{2\times 30}{5}=\dfrac{60}{5}=12$$<p>Il y a donc $30-12=18$ garçons dans la classe.</p>
+<p>Parmi eux, $\dfrac{1}{3}$ étudient l&rsquo;allemand :</p>
+$$\dfrac{1}{3}\times 18={\color{#4A5D7A}6}\ \text{garçons.}$$</div>
   </div>
   
 </article>
@@ -346,8 +357,8 @@ $$\dfrac{3 \times \cancel{5} \times 7 \times \cancel{11}}{8 \times 5 \times \can
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Ce matin, Aude a ouvert une bouteille d&rsquo;eau. Elle a bu $\dfrac{5}{7}$ de la bouteille.</p>
-<p>Puis à midi, elle a bu $\dfrac{1}{6}$ du reste. Quelle fraction de la bouteille a-t-elle bu à midi ?</p>
+    <p>On considère $A=\dfrac{43}{1\,000}+\dfrac{351}{100}$. On a :</p>
+<p><strong>A.</strong> $A=3{,}553$   <strong>B.</strong> $A=3{,}943$   <strong>C.</strong> $A=0{,}039\,4$   <strong>D.</strong> $A=0{,}394$</p>
 
   </div>
   
@@ -356,9 +367,10 @@ $$\dfrac{3 \times \cancel{5} \times 7 \times \cancel{11}}{8 \times 5 \times \can
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le matin, Aude a bu $\dfrac{5}{7}$ de la bouteille. Il reste alors :</p>
-$$1 - \dfrac{5}{7} = \dfrac{7}{7} - \dfrac{5}{7} = \dfrac{2}{7}$$<p>À midi, elle a bu $\dfrac{1}{6}$ du reste, soit :</p>
-$$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{21}} \text{ de la bouteille.}$$</div>
+    <div><p>On écrit chaque fraction sous forme décimale. Diviser par $1\,000$ décale la virgule de trois rangs, diviser par $100$ la décale de deux rangs :</p>
+$$\dfrac{43}{1\,000}=0{,}043 \qquad\text{et}\qquad \dfrac{351}{100}=3{,}51$$<p>Donc :</p>
+$$A=0{,}043+3{,}51={\color{#4A5D7A}3{,}553}$$<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -377,7 +389,10 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère $A=\dfrac{1}{2-\dfrac{1}{2}}$. Calculer $A$.
+    <p>Dans un lycée, il y a $750$ élèves inscrits. $24\,\%$ d&rsquo;entre eux sont demi-pensionnaires.</p>
+<p>Le nombre de demi-pensionnaires est :</p>
+<p><strong>A.</strong> $18$   <strong>B.</strong> $1\,800$   <strong>C.</strong> $312{,}5$   <strong>D.</strong> $180$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -385,7 +400,9 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$A = \dfrac{1}{2-\dfrac{1}{2}} = \dfrac{1}{\dfrac{4}{2}-\dfrac{1}{2}} = \dfrac{1}{\dfrac{3}{2}} = 1 \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{2}{3}}$$</div>
+    <div><p>Prendre $24\,\%$ d&rsquo;une quantité, c&rsquo;est la multiplier par $\dfrac{24}{100}=0{,}24$ :</p>
+$$\dfrac{24}{100}\times 750=\dfrac{24\times 750}{100}=\dfrac{18\,000}{100}={\color{#4A5D7A}180}$$<p><span class="rep">Réponse : D</span></p>
+</div>
   </div>
   
 </article>
@@ -414,7 +431,8 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{9}{2}+\dfrac{4}{20}$ =
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$\dfrac{7}{10}-\dfrac{2}{15}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -422,7 +440,9 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{9}{2}+\dfrac{4}{20}=\dfrac{9{\color{#4A5D7A}\boldsymbol{\times 10}}}{2{\color{#4A5D7A}\boldsymbol{\times 10}}}+\dfrac{4}{20}=\dfrac{90+4}{20}=\dfrac{94}{20}=\dfrac{47\times 2}{10\times 2}={\color{#4A5D7A}\dfrac{47}{10}}$$<p>On réduit au même dénominateur (20), puis on simplifie par 2.</p></div>
+    <div><p>On cherche un dénominateur commun à $10$ et $15$ : c&rsquo;est $30$.</p>
+$$\dfrac{7}{10}-\dfrac{2}{15}=\dfrac{7{\color{#4A5D7A}\boldsymbol{\times 3}}}{10{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{15{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{21}{30}-\dfrac{4}{30}=\dfrac{21-4}{30}={\color{#4A5D7A}\dfrac{17}{30}}$$<p>$17$ est premier et ne divise pas $30$ : la fraction est bien irréductible.</p>
+</div>
   </div>
   
 </article>
@@ -441,7 +461,8 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{2}{6}-\dfrac{2}{9}$ =
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$\dfrac{-12}{35}\times\dfrac{21}{16}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -449,7 +470,9 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{2}{6}-\dfrac{2}{9}=\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{6{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{9{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{6-4}{18}=\dfrac{2}{18}=\dfrac{1\times 2}{9\times 2}={\color{#4A5D7A}\dfrac{1}{9}}$$<p>Le dénominateur commun est 18, puis on simplifie par 2.</p></div>
+    <div><p>Le produit d&rsquo;un nombre négatif par un nombre positif est négatif :</p>
+$$\dfrac{-12}{35}\times\dfrac{21}{16}=-\dfrac{12\times 21}{35\times 16}$$<p>On décompose numérateur et dénominateur en facteurs, puis on simplifie :</p>
+$$-\dfrac{\cancel{4}\times 3\times 3\times \cancel{7}}{5\times \cancel{7}\times \cancel{4}\times 4}=-\dfrac{3\times 3}{5\times 4}={\color{#4A5D7A}-\dfrac{9}{20}}$$</div>
   </div>
   
 </article>
@@ -468,7 +491,8 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{\dfrac{14}{9}}{\dfrac{-63}{12}}$ =
+    <p>Calculer :</p>
+$$A=-4\times\Bigl((-3)^2+7\times(-3)\Bigr)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -476,8 +500,9 @@ $$\dfrac{1}{6} \times \dfrac{2}{7} = \dfrac{2}{42} = {\color{#4A5D7A}\dfrac{1}{2
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{\dfrac{14}{9}}{\dfrac{-63}{12}} = \dfrac{14}{9} \times \dfrac{12}{-63} = \dfrac{14 \times 12}{9 \times (-63)}$$<p>On décompose :</p>
-$$\dfrac{2 \times \cancel{7} \times 3 \times 4}{9 \times (-9) \times \cancel{7}} = \dfrac{24}{-81} = {\color{#4A5D7A}-\dfrac{8}{27}}$$</div>
+    <div><p>On calcule d&rsquo;abord ce qui est entre parenthèses, en respectant les priorités (la puissance avant la multiplication) :</p>
+$$(-3)^2=(-3)\times(-3)=9 \qquad\text{et}\qquad 7\times(-3)=-21$$<p>Donc :</p>
+$$A=-4\times\bigl(9+(-21)\bigr)=-4\times(-12)={\color{#4A5D7A}48}$$</div>
   </div>
   
 </article>
@@ -496,7 +521,10 @@ $$\dfrac{2 \times \cancel{7} \times 3 \times 4}{9 \times (-9) \times \cancel{7}}
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    $\dfrac{14}{9}\times\dfrac{-3}{-35}$ =
+    <p>Dans une classe de $28$ élèves, $\dfrac{3}{7}$ des élèves sont des filles.</p>
+<p>Parmi les garçons, $\dfrac{1}{4}$ étudient l&rsquo;allemand.</p>
+<p>Combien de garçons étudient l&rsquo;allemand ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -504,8 +532,10 @@ $$\dfrac{2 \times \cancel{7} \times 3 \times 4}{9 \times (-9) \times \cancel{7}}
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{14}{9}\times\dfrac{-3}{-35}=\dfrac{14\times(-3)}{9\times(-35)} = \dfrac{-42}{-315} = \dfrac{42}{315}$$<p>On décompose :</p>
-$$\dfrac{2 \times 3 \times \cancel{7}}{9 \times 5 \times \cancel{7}} = \dfrac{6}{45} = {\color{#4A5D7A}\dfrac{2}{15}}$$</div>
+    <div><p>Nombre de filles :</p>
+$$\dfrac{3}{7}\times 28=\dfrac{3\times 28}{7}=\dfrac{84}{7}=12$$<p>Il y a donc $28-12=16$ garçons dans la classe.</p>
+<p>Parmi eux, $\dfrac{1}{4}$ étudient l&rsquo;allemand :</p>
+$$\dfrac{1}{4}\times 16={\color{#4A5D7A}4}\ \text{garçons.}$$</div>
   </div>
   
 </article>
@@ -524,8 +554,8 @@ $$\dfrac{2 \times 3 \times \cancel{7}}{9 \times 5 \times \cancel{7}} = \dfrac{6}
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Ce matin, Fiona a ouvert une bouteille d&rsquo;eau. Elle a bu $\dfrac{1}{3}$ de la bouteille.</p>
-<p>Puis à midi, elle a bu $\dfrac{1}{4}$ du reste. Quelle fraction de la bouteille a-t-elle bu à midi ?</p>
+    <p>On considère $A=\dfrac{57}{1\,000}+\dfrac{264}{100}$. On a :</p>
+<p><strong>A.</strong> $A=3{,}21$   <strong>B.</strong> $A=2{,}697$   <strong>C.</strong> $A=0{,}269\,7$   <strong>D.</strong> $A=2{,}645\,7$</p>
 
   </div>
   
@@ -534,9 +564,10 @@ $$\dfrac{2 \times 3 \times \cancel{7}}{9 \times 5 \times \cancel{7}} = \dfrac{6}
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le matin, Fiona a bu $\dfrac{1}{3}$ de la bouteille. Il reste alors :</p>
-$$1 - \dfrac{1}{3} = \dfrac{2}{3}$$<p>À midi, elle a bu $\dfrac{1}{4}$ du reste, soit :</p>
-$$\dfrac{1}{4} \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{1}{6}} \text{ de la bouteille.}$$</div>
+    <div><p>On écrit chaque fraction sous forme décimale. Diviser par $1\,000$ décale la virgule de trois rangs, diviser par $100$ la décale de deux rangs :</p>
+$$\dfrac{57}{1\,000}=0{,}057 \qquad\text{et}\qquad \dfrac{264}{100}=2{,}64$$<p>Donc :</p>
+$$A=0{,}057+2{,}64={\color{#4A5D7A}2{,}697}$$<p><span class="rep">Réponse : B</span></p>
+</div>
   </div>
   
 </article>
@@ -555,7 +586,10 @@ $$\dfrac{1}{4} \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{1}{6}} \text{ de la 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère $A=\dfrac{3}{4-\dfrac{6}{7}}$. Calculer $A$.
+    <p>Dans un lycée, il y a $840$ élèves inscrits. $35\,\%$ d&rsquo;entre eux sont externes.</p>
+<p>Le nombre d&rsquo;externes est :</p>
+<p><strong>A.</strong> $24$   <strong>B.</strong> $2\,940$   <strong>C.</strong> $294$   <strong>D.</strong> $240$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -563,7 +597,9 @@ $$\dfrac{1}{4} \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{1}{6}} \text{ de la 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$A= \dfrac{3}{4-\dfrac{6}{7}} = \dfrac{3}{\dfrac{28}{7}-\dfrac{6}{7}} = \dfrac{3}{\dfrac{22}{7}} = 3 \times \dfrac{7}{22} = {\color{#4A5D7A}\dfrac{21}{22}}$$</div>
+    <div><p>Prendre $35\,\%$ d&rsquo;une quantité, c&rsquo;est la multiplier par $\dfrac{35}{100}=0{,}35$ :</p>
+$$\dfrac{35}{100}\times 840=\dfrac{35\times 840}{100}=\dfrac{29\,400}{100}={\color{#4A5D7A}294}$$<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -620,7 +656,7 @@ $$\dfrac{1}{4} \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{1}{6}} \text{ de la 
   });
 
   
-  var showDevoirCorr =  true ;
+  var showDevoirCorr =  false ;
   if (!showDevoirCorr) {
     var devoirPanel = document.getElementById('panel-devoir');
     if (devoirPanel) {
@@ -664,7 +700,7 @@ $$\dfrac{1}{4} \times \dfrac{2}{3} = {\color{#4A5D7A}\dfrac{1}{6}} \text{ de la 
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

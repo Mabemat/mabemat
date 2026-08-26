@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 14 — MaBémat</title>
+<title>Semaine 14 - Fonctions affines et sens de variation — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Fonctions affines et sens de variation</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,7 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre dans $\mathbb{R}$ l&rsquo;équation : $(6x-5)(2x+5)=0$
+    <p>Soit $f$ la fonction affine définie sur $\mathbb{R}$ par $f(x)=-3x+5$.</p>
+<p>Donner son coefficient directeur, son ordonnée à l&rsquo;origine, puis son sens de variation en justifiant.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -239,9 +244,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Un produit est nul si et seulement si l&rsquo;un des facteurs est nul.</p>
-<p>$6x-5=0 \implies x=\dfrac{5}{6}$ $\quad$ ou $\quad$ $2x+5=0 \implies x=-\dfrac{5}{2}$</p>
-<p>$S=\left\{-\dfrac{5}{2}\,;\,\dfrac{5}{6}\right\}$</p>
+    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$, où $m$ est le coefficient directeur et $p$ l&rsquo;ordonnée à l&rsquo;origine. Ici :</p>
+$$m={\color{#4A5D7A}-3} \qquad\text{et}\qquad p={\color{#4A5D7A}5}$$<p>Le sens de variation ne dépend que du signe de $m$. Comme $m=-3<0$ :</p>
+$$f\ \text{est}\ {\color{#4A5D7A}\text{décroissante}}\ \text{sur}\ \mathbb{R}$$<p>L&rsquo;ordonnée à l&rsquo;origine $p=5$ est l&rsquo;image de $0$ : la droite coupe l&rsquo;axe des ordonnées au point de coordonnées $(0\,;\,5)$.</p>
 </div>
   </div>
   
@@ -261,7 +266,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Soit $x$ un réel non nul. Calculer $\dfrac{1}{6}-\dfrac{2x+4}{x}$.
+    <p>Ci-dessous la droite $(d)$, représentation graphique d&rsquo;une fonction affine $f$.</p>
+<img src="/mabemat/images/automatismes/2nde/s14-q02.svg" alt="Droite représentative d'une fonction affine" style="display:block;margin:1rem auto;width:100%;max-width:380px;">
+<p>Lire graphiquement son ordonnée à l&rsquo;origine et son coefficient directeur, puis donner l&rsquo;expression de $f(x)$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -269,7 +277,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{1}{6}-\dfrac{2x+4}{x}=\dfrac{x-6(2x+4)}{6x}=\dfrac{x-12x-24}{6x}=\dfrac{-11x-24}{6x}=-\dfrac{11x+24}{6x}$$</div>
+    <div><p><strong>Ordonnée à l&rsquo;origine</strong> : c&rsquo;est l&rsquo;ordonnée du point où la droite coupe l&rsquo;axe des ordonnées. Ici, ce point est $(0\,;\,-1)$, donc $p=-1$.</p>
+<p><strong>Coefficient directeur</strong> : on part d&rsquo;un point de la droite, on avance de $1$ vers la droite, et on lit de combien on monte. En partant de $(0\,;\,-1)$ et en avançant de $1$, on arrive en $(1\,;\,1)$ : on est monté de $2$.</p>
+$$m=\dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}}=\dfrac{2}{1}=2$$<p>D&rsquo;où :</p>
+$$f(x)={\color{#4A5D7A}2x-1}$$<p>Vérification avec un autre point de la droite : $f(2)=2\times 2-1=3$, et la droite passe bien par $(2\,;\,3)$.</p>
+</div>
   </div>
   
 </article>
@@ -288,8 +300,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Déterminer les antécédents éventuels de $0$ par la fonction $f$ :</p>
-<img src="/mabemat/images/automatismes/2nde/s14-q03.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+    <p>$g$ est une fonction affine telle que $g(-1)=4$ et $g(3)=-8$.</p>
+<p>Déterminer son coefficient directeur.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -297,8 +310,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On part de $0$ sur l&rsquo;axe des ordonnées et on lit les antécédents sur l&rsquo;axe des abscisses.</p>
-<p>On trouve deux antécédents : ${\color{#4A5D7A}-5}$ et ${\color{#4A5D7A}-3}$.</p>
+    <div><p>Pour une fonction affine, le coefficient directeur se calcule à partir de deux images :</p>
+$$m=\dfrac{g(x_2)-g(x_1)}{x_2-x_1}$$<p>On remplace par les valeurs de l&rsquo;énoncé :</p>
+$$m=\dfrac{-8-4}{3-(-1)}=\dfrac{-12}{4}={\color{#4A5D7A}-3}$$<p>Attention au dénominateur : $3-(-1)=3+1=4$.</p>
 </div>
   </div>
   
@@ -318,7 +332,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Factoriser : $4x+1+4x^2$
+    <p>On considère la série statistique suivante, rangée dans l&rsquo;ordre croissant :</p>
+$$6\ ;\ 8\ ;\ 8\ ;\ 11\ ;\ 13\ ;\ 13\ ;\ 13\ ;\ 17$$<p>Déterminer la médiane et l&rsquo;étendue de cette série.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -326,8 +342,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On reconnaît l&rsquo;identité remarquable $(a+b)^2=a^2+2ab+b^2$ avec $a=2x$ et $b=1$ :</p>
-<p>$4x^2+4x+1={\color{#4A5D7A}(2x+1)^2}$</p>
+    <div><p>La série compte $8$ valeurs. Comme $8$ est pair, il n&rsquo;y a pas de valeur centrale unique : la médiane est la moyenne des deux valeurs du milieu, celles de rang $4$ et $5$.</p>
+$$\text{Médiane}=\dfrac{11+13}{2}=\dfrac{24}{2}={\color{#4A5D7A}12}$$<p>L&rsquo;étendue est l&rsquo;écart entre la plus grande et la plus petite valeur :</p>
+$$17-6={\color{#4A5D7A}11}$$<p>On remarque que la médiane $12$ n&rsquo;est pas une valeur de la série : c&rsquo;est normal quand l&rsquo;effectif est pair.</p>
 </div>
   </div>
   
@@ -347,8 +364,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Parmi les égalités suivantes, une seule est correcte. Laquelle ?</p>
-<p>A. $\dfrac{2}{3}\times\dfrac{36}{37}=\dfrac{24}{37}$ $\quad$ B. $\dfrac{2}{3}-5=\dfrac{13}{3}$ $\quad$ C. $\dfrac{2+5}{3+5}=\dfrac{2}{3}$ $\quad$ D. $\dfrac{7}{6}=\dfrac{49}{36}$</p>
+    <p>On considère la droite d&rsquo;équation $y=\dfrac{x}{3}+5$.</p>
+<p>Son coefficient directeur est :</p>
+<p><strong>A.</strong> $m=5$   <strong>B.</strong> $m=\dfrac{1}{3}$   <strong>C.</strong> $m=3$   <strong>D.</strong> $m=\dfrac{x}{3}$</p>
 
   </div>
   
@@ -357,11 +375,43 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>A</strong> : $\dfrac{2\times 36}{3\times 37}=\dfrac{72}{111}=\dfrac{24}{37}$ ✓</p>
-<p>B est fausse : $\dfrac{2}{3}-5=\dfrac{2-15}{3}=-\dfrac{13}{3}$.</p>
-<p>C est fausse : on ne peut pas simplifier en ajoutant le même nombre au numérateur et dénominateur.</p>
-<p>D est fausse : $\dfrac{49}{36}=\left(\dfrac{7}{6}\right)^2$.</p>
-<p>La bonne réponse est <strong>A</strong>.</p>
+    <div><p>On reconnaît l&rsquo;équation réduite d&rsquo;une droite, de la forme $y=mx+p$ où $m$ est le coefficient directeur.</p>
+<p>Il faut d&rsquo;abord réécrire $\dfrac{x}{3}$ sous la forme d&rsquo;un produit :</p>
+$$\dfrac{x}{3}=\dfrac{1}{3}\times x$$<p>L&rsquo;équation devient $y=\dfrac{1}{3}x+5$, donc :</p>
+$$m={\color{#4A5D7A}\dfrac{1}{3}} \qquad\text{et}\qquad p=5$$<p>La réponse A donne l&rsquo;ordonnée à l&rsquo;origine, et la réponse C confond le coefficient avec le dénominateur.</p>
+<p><span class="rep">Réponse : B</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une série statistique de $9$ valeurs rangées dans l&rsquo;ordre croissant, la médiane est la valeur de rang :</p>
+<p><strong>A.</strong> $4$   <strong>B.</strong> $4{,}5$   <strong>C.</strong> $5{,}5$   <strong>D.</strong> $5$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Quand l&rsquo;effectif $n$ est impair, la médiane est la valeur du milieu, celle de rang $\dfrac{n+1}{2}$.</p>
+$$\dfrac{9+1}{2}={\color{#4A5D7A}5}$$<p>Il y a bien $4$ valeurs avant et $4$ valeurs après. Les réponses B et C proposent des rangs non entiers, ce qui est impossible pour un effectif impair.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -391,7 +441,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Résoudre dans $\mathbb{R}$ l&rsquo;équation : $(x-4)(7x+5)=0$
+    <p>Soit $f$ la fonction affine définie sur $\mathbb{R}$ par $f(x)=4x-7$.</p>
+<p>Donner son coefficient directeur, son ordonnée à l&rsquo;origine, puis son sens de variation en justifiant.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -399,8 +451,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$x-4=0 \implies x=4$ $\quad$ ou $\quad$ $7x+5=0 \implies x=-\dfrac{5}{7}$</p>
-<p>$S=\left\{-\dfrac{5}{7}\,;\,4\right\}$</p>
+    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$, où $m$ est le coefficient directeur et $p$ l&rsquo;ordonnée à l&rsquo;origine. Ici :</p>
+$$m={\color{#4A5D7A}4} \qquad\text{et}\qquad p={\color{#4A5D7A}-7}$$<p>Le sens de variation ne dépend que du signe de $m$. Comme $m=4>0$ :</p>
+$$f\ \text{est}\ {\color{#4A5D7A}\text{croissante}}\ \text{sur}\ \mathbb{R}$$<p>L&rsquo;ordonnée à l&rsquo;origine $p=-7$ est l&rsquo;image de $0$ : la droite coupe l&rsquo;axe des ordonnées au point de coordonnées $(0\,;\,-7)$.</p>
 </div>
   </div>
   
@@ -420,7 +473,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Soit $x$ un réel non nul. Calculer $\dfrac{1}{2}-\dfrac{3x+3}{x}$.
+    <p>Ci-dessous la droite $(d)$, représentation graphique d&rsquo;une fonction affine $f$.</p>
+<img src="/mabemat/images/automatismes/2nde/s14d-q02.svg" alt="Droite représentative d'une fonction affine" style="display:block;margin:1rem auto;width:100%;max-width:380px;">
+<p>Lire graphiquement son ordonnée à l&rsquo;origine et son coefficient directeur, puis donner l&rsquo;expression de $f(x)$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -428,7 +484,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{1}{2}-\dfrac{3x+3}{x}=\dfrac{x-2(3x+3)}{2x}=\dfrac{x-6x-6}{2x}=\dfrac{-5x-6}{2x}=-\dfrac{5x+6}{2x}$$</div>
+    <div><p><strong>Ordonnée à l&rsquo;origine</strong> : c&rsquo;est l&rsquo;ordonnée du point où la droite coupe l&rsquo;axe des ordonnées. Ici, ce point est $(0\,;\,2)$, donc $p=2$.</p>
+<p><strong>Coefficient directeur</strong> : on part d&rsquo;un point de la droite, on avance de $1$ vers la droite, et on lit de combien on monte ou on descend. En partant de $(0\,;\,2)$ et en avançant de $1$, on arrive en $(1\,;\,1)$ : on est descendu de $1$.</p>
+$$m=\dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}}=\dfrac{-1}{1}=-1$$<p>D&rsquo;où :</p>
+$$f(x)={\color{#4A5D7A}-x+2}$$<p>Vérification avec un autre point de la droite : $f(2)=-2+2=0$, et la droite coupe bien l&rsquo;axe des abscisses en $2$.</p>
+</div>
   </div>
   
 </article>
@@ -447,8 +507,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Déterminer les antécédents éventuels de $2$ par la fonction $f$ :</p>
-<img src="/mabemat/images/automatismes/2nde/s14d-q03.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+    <p>$g$ est une fonction affine telle que $g(-2)=7$ et $g(4)=-5$.</p>
+<p>Déterminer son coefficient directeur.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -456,8 +517,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On part de $2$ sur l&rsquo;axe des ordonnées et on lit les antécédents sur l&rsquo;axe des abscisses.</p>
-<p>On trouve deux antécédents : ${\color{#4A5D7A}3}$ et ${\color{#4A5D7A}5}$.</p>
+    <div><p>Pour une fonction affine, le coefficient directeur se calcule à partir de deux images :</p>
+$$m=\dfrac{g(x_2)-g(x_1)}{x_2-x_1}$$<p>On remplace par les valeurs de l&rsquo;énoncé :</p>
+$$m=\dfrac{-5-7}{4-(-2)}=\dfrac{-12}{6}={\color{#4A5D7A}-2}$$<p>Attention au dénominateur : $4-(-2)=4+2=6$.</p>
 </div>
   </div>
   
@@ -477,7 +539,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Factoriser : $-4x+4+x^2$
+    <p>On considère la série statistique suivante, rangée dans l&rsquo;ordre croissant :</p>
+$$5\ ;\ 7\ ;\ 9\ ;\ 9\ ;\ 12\ ;\ 14\ ;\ 16\ ;\ 20$$<p>Déterminer la médiane et l&rsquo;étendue de cette série.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -485,8 +549,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On reconnaît l&rsquo;identité remarquable $(a-b)^2=a^2-2ab+b^2$ avec $a=x$ et $b=2$ :</p>
-<p>$x^2-4x+4={\color{#4A5D7A}(x-2)^2}$</p>
+    <div><p>La série compte $8$ valeurs. Comme $8$ est pair, il n&rsquo;y a pas de valeur centrale unique : la médiane est la moyenne des deux valeurs du milieu, celles de rang $4$ et $5$.</p>
+$$\text{Médiane}=\dfrac{9+12}{2}=\dfrac{21}{2}={\color{#4A5D7A}10{,}5}$$<p>L&rsquo;étendue est l&rsquo;écart entre la plus grande et la plus petite valeur :</p>
+$$20-5={\color{#4A5D7A}15}$$<p>On remarque que la médiane $10{,}5$ n&rsquo;est pas une valeur de la série : c&rsquo;est normal quand l&rsquo;effectif est pair.</p>
 </div>
   </div>
   
@@ -506,8 +571,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Parmi les égalités suivantes, une seule est correcte. Laquelle ?</p>
-<p>A. $\dfrac{5}{6}=\dfrac{25}{36}$ $\quad$ B. $\dfrac{\dfrac{3}{4}}{5}=\dfrac{3}{20}$ $\quad$ C. $5\div\dfrac{5}{6}=\dfrac{5}{30}$ $\quad$ D. $\dfrac{\dfrac{5}{6}}{5}=\dfrac{25}{6}$</p>
+    <p>On considère la droite d&rsquo;équation $y=\dfrac{x}{5}-2$.</p>
+<p>Son coefficient directeur est :</p>
+<p><strong>A.</strong> $m=\dfrac{1}{5}$   <strong>B.</strong> $m=5$   <strong>C.</strong> $m=-2$   <strong>D.</strong> $m=\dfrac{x}{5}$</p>
 
   </div>
   
@@ -516,11 +582,43 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>B</strong> : $\dfrac{3/4}{5}=\dfrac{3}{4}\times\dfrac{1}{5}=\dfrac{3}{20}$ ✓</p>
-<p>A est fausse : $\dfrac{25}{36}=\left(\dfrac{5}{6}\right)^2$.</p>
-<p>C est fausse : $5\div\dfrac{5}{6}=5\times\dfrac{6}{5}=6$.</p>
-<p>D est fausse : $\dfrac{5/6}{5}=\dfrac{5}{30}=\dfrac{1}{6}$.</p>
-<p>La bonne réponse est <strong>B</strong>.</p>
+    <div><p>On reconnaît l&rsquo;équation réduite d&rsquo;une droite, de la forme $y=mx+p$ où $m$ est le coefficient directeur.</p>
+<p>Il faut d&rsquo;abord réécrire $\dfrac{x}{5}$ sous la forme d&rsquo;un produit :</p>
+$$\dfrac{x}{5}=\dfrac{1}{5}\times x$$<p>L&rsquo;équation devient $y=\dfrac{1}{5}x-2$, donc :</p>
+$$m={\color{#4A5D7A}\dfrac{1}{5}} \qquad\text{et}\qquad p=-2$$<p>La réponse C donne l&rsquo;ordonnée à l&rsquo;origine, et la réponse B confond le coefficient avec le dénominateur.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une série statistique de $11$ valeurs rangées dans l&rsquo;ordre croissant, la médiane est la valeur de rang :</p>
+<p><strong>A.</strong> $5$   <strong>B.</strong> $5{,}5$   <strong>C.</strong> $6$   <strong>D.</strong> $6{,}5$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Quand l&rsquo;effectif $n$ est impair, la médiane est la valeur du milieu, celle de rang $\dfrac{n+1}{2}$.</p>
+$$\dfrac{11+1}{2}={\color{#4A5D7A}6}$$<p>Il y a bien $5$ valeurs avant et $5$ valeurs après. Les réponses B et D proposent des rangs non entiers, ce qui est impossible pour un effectif impair.</p>
+<p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
   
@@ -622,7 +720,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -1,5 +1,5 @@
 ---
-title: "Séance 04 — Boucles bornées"
+title: "Séance 04 - Boucles bornées"
 short_title: "Boucles bornées"
 description: "Boucle for, fonction range(), tableaux de trace, accumulation, boucles for imbriquées avec if."
 weight: 4

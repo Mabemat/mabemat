@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -231,7 +231,7 @@ pre[style*="background-color"] {
   </a>
   
   
-  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-10-fonction-exponentielle/exercices.a3c744931949c97053c5ac5d7bcfcb7b.pdf" target="_blank">
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-10-fonction-exponentielle/exercices.9fd10734691f8e4ff5155ef51c617012.pdf" target="_blank">
     <div class="res-corner">PDF</div>
     <div>
       <div class="res-ico">?</div>
@@ -297,7 +297,7 @@ pre[style*="background-color"] {
   
   
   
-  <a class="adj-link next" href="/mabemat/1re/chapitre-11-trigonometrie/">
+  <a class="adj-link next" href="/mabemat/1re/chapitre-11-droites-et-cercles/">
     <div><div class="adj-lbl">Chapitre suivant →</div></div>
     <span></span>
   </a>
@@ -350,7 +350,7 @@ pre[style*="background-color"] {
         
         
         
-        <a href="/mabemat/1re/chapitre-10-fonction-exponentielle/exercices.a3c744931949c97053c5ac5d7bcfcb7b.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        <a href="/mabemat/1re/chapitre-10-fonction-exponentielle/exercices.9fd10734691f8e4ff5155ef51c617012.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
         
         
         
@@ -390,20 +390,6 @@ On admet qu'il existe une fonction dérivable sur $\R$ telle que $f'=f$ et $f(0)
 </ul>
 </div>
 </div>
-<p>Démonstration. <br></p>
-<ol>
-<li>Soit la fonction $A$ définie sur $\R$ par $A(x)=f(x)f(-x)$.<br>
-Pour tout réel $x$, on a : $A'(x)=f'(x)f(-x)-f'(-x)f(x)=f(x)f(-x)-f(-x)f(x)=0$.<br>
-La fonction $A$ est donc constante. <br>
-Comme $A(0)=f(0)f(-0)=1$, on a pour tout réel $x$, $f(x)f(-x)=1$, la fonction $f$ ne peut donc pas s'annuler.</li>
-<li>Supposons qu'il existe une autre fonction $g$ qui vérifie les hypothèses du théorème (ie $g'=g$ et $g(0)=1$).<br>
-Comme $f$ ne s'annule pas, on pose $h(x)=\dfrac{g(x)}{f(x)}$.<br>
-Pour tout $x\in\R$, $h'(x)=\dfrac{g'(x)f(x)-g(x)f'(x)}{\left(f(x)\right)^2}=\dfrac{g(x)f(x)-g(x)f(x)}{\left(f(x)\right)^2}=0$.<br>
-$h$ est donc une fonction constante.<br>
-Or, $h(0)=\dfrac{g(0)}{f(0)}=\dfrac{1}{1}=1$, donc pour tout $x\in \R$, $h(x)=1$.<br>
-Et donc pour tout $x\in \R$, $f(x)=g(x)$. L'unicité de $f$ est donc vérifiée.
-</li>
-</ol>
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
@@ -443,20 +429,12 @@ ${\color{#B85C5C}{\bullet}} \quad$ Sa croissance est très rapide, ainsi $\exp(2
 Pour tout réel $x$ et $y$, on a $\exp(x+y)=\exp(x)\exp(y)$.
 </div>
 </div>
-<p>Démonstration. <br>
-Fixons $y$ constant et comme $\exp(x)\neq 0$, posons $g(x)=\dfrac{\exp(x+y)}{\exp(x)}$.<br>
-Alors $g$ est dérivable sur $\R$ et $g'(x)=\dfrac{\exp'(x+y)\exp(x)-\exp'(x)\exp(x+y)}{(\exp(x))^2}=\dfrac{\exp(x+y)\exp(x)-\exp(x)\exp(x+y)}{(\exp(x))^2}=0$.<br>
-Donc $g$ est constante égale à $c$. Or, $g(0)=\dfrac{\exp(y)}{\exp(0)}=\exp(y)=c$.<br>
-D&rsquo;où, $g(x)=\exp(y)=\dfrac{\exp(x+y)}{\exp(x)}$, ie $\exp(x+y)=\exp(x)\exp(y)$.</p>
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
 <div class="environment-content">
 La fonction exponentielle est strictement positive sur $\R$.
 </div>
 </div>
-<p>Démonstration. <br>
-Pour tout réel $x$ réel, $\exp(x)=\exp\left(\dfrac{x}{2}+\dfrac{x}{2}\right)=\exp\left(\dfrac{x}{2}\right)\times\exp\left(\dfrac{x}{2}\right)=\left[\exp\left(\dfrac{x}{2}\right)\right]^2$.<br>
-La fonction exponentielle ne s&rsquo;annule jamais sur $\R$, donc pour tout réel $x$, $\exp(x)>0$.</p>
 <h3 class="subsubsection-title">10.2.2 Propriétés algébriques de la fonction exponentielle</h3>
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>
@@ -468,11 +446,6 @@ Pour tout réel $x$ et $y$, on a :
 </ul>
 </div>
 </div>
-<p>Démonstration. <br></p>
-<ol>
-<li>$\exp(x-y)=\exp(x+(-y))=\exp(x)\exp(-y)=\exp(x)\dfrac{1}{\exp(y)}=\dfrac{\exp(x)}{\exp(y)}$.</li>
-<li>$\exp(nx)=\exp(\underbrace{x+x+\cdots+x}_{n \text{ fois}})=\underbrace{\exp(x)\times \exp(x)\times \cdots \times \exp(x)}_{n \text{ fois}}=\left(\exp(x)\right)^n$.</li>
-</ol>
 <h3 class="subsubsection-title">10.2.3 Le nombre $e$</h3>
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -497,8 +470,9 @@ Pour tout réel $x$ et $y$, on a :
 On retrouve les propriétés des puissances.
 </div>
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
+Simplifier les expressions suivantes.
 <ul>
 <li>$A=\dfrac{e^7\times e^{-4}}{e^{-5}}=\dfrac{e^{7-4}}{e^{-5}}=\dfrac{e^3}{e^{-5}}=e^{3-(-5)}=e^8$</li>
 <li>$B=(e^5)^{-6}\times e^{-3}=e^{5\times (-6)}\times e^{-3}=e^{-30}\times e^{-3}=e^{-30-3}=e^{-33}$</li>
@@ -517,11 +491,6 @@ On retrouve les propriétés des puissances.
 </ul>
 </div>
 </div>
-<p>Démonstration. <br></p>
-<ol>
-<li>C'est la définition même !</li>
-<li>Comme $(e^x)'=e^x > 0$ pour tout $x$, la fonction exponentielle est strictement croissante sur $\R$.</li>
-</ol>
 <div class="environment propriete">
 <div class="environment-title">Corollaire :</div>
 <div class="environment-content">
@@ -533,8 +502,9 @@ Pour tout réel $a$ et $b$, on a :
 </div>
 </div>
 <div class="environment exemple">
-<div class="environment-title">Exemple</div>
+<div class="environment-title">Exemples</div>
 <div class="environment-content">
+Résoudre dans $\R$ l'équation et l'inéquation suivantes.
 <ul>
 <li>$e^{x^2-3}-e^{-2x}=0$.
 <br> $e^{x^2-3}-e^{-2x}=0\Leftrightarrow e^{x^2-3}=e^{-2x} \Leftrightarrow x^2-3=-2x \Leftrightarrow x^2+2x-3=0 \Leftrightarrow x=-3 \text{ ou } x=1$. <br> L'ensemble des solutions est $S=\{-3;1\}$.</li>
@@ -553,11 +523,68 @@ Sa dérivée est la fonction $(e^{ax+b})'=ae^{ax+b}$.
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
+Calculer la dérivée des fonctions suivantes.
 <ul>
 <li>Si $f(x)=e^{4x+3}$ alors $f'(x)=4e^{4x+3}$.</li>
 <li>Si $g(x)=e^{-3x}$ alors $g'(x)=-3e^{-3x}$.
 </li>
 </ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $k$ un réel strictement positif.
+<ul>
+<li>$t\mapsto e^{kt}$ est strictement croissante sur $\R$ : c'est une croissance exponentielle.</li>
+<li>$t\mapsto e^{-kt}$ est strictement décroissante sur $\R$ et tend vers $0$ : c'est une décroissance exponentielle.</li>
+</ul>
+Dans les deux cas la fonction reste strictement positive, et vaut $1$ en $t=0$.
+</div>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; text-align:center;">
+<div>
+<img src="/mabemat/figures/1re/chapitre-10/exp-croissance.svg" alt="croissance exponentielle" style="max-height:240px; max-width:100%; margin:0.5em 0;"><br>
+<small>Croissance exponentielle ($k>0$)</small>
+</div>
+<div>
+<img src="/mabemat/figures/1re/chapitre-10/exp-decroissance.svg" alt="décroissance exponentielle" style="max-height:240px; max-width:100%; margin:0.5em 0;"><br>
+<small>Décroissance exponentielle ($k>0$)</small>
+</div>
+</div>
+<h2 class="subsection-title">10.5 Lien avec les suites géométriques</h2>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $k$ un réel et $f$ la fonction définie sur $\R$ par $f(t)=A\,e^{kt}$, où $A$ est un réel.<br>
+Alors la suite $(u_n)$ définie par $u_n=f(n)$ est une <strong>suite géométrique</strong> de premier terme $A$ et de raison $q=e^{k}$.
+</div>
+</div>
+<div class="remarque">
+La fonction exponentielle est donc le <strong>prolongement continu</strong> d'une suite géométrique :
+<ul>
+<li>la suite géométrique modélise une évolution à taux constant en <strong>temps discret</strong> (année par année, jour par jour) ;</li>
+<li>la fonction $t\mapsto A\,e^{kt}$ modélise la même évolution en <strong>temps continu</strong> (à tout instant).</li>
+</ul>
+Les points de la suite sont exactement les points de la courbe d'abscisses entières.<br>
+Comme $e^k>0$, on retrouve aussi les variations : si $k>0$ alors $q=e^k>1$ et la suite croît ; si $k<0$ alors $0<q<1$ et la suite décroît vers $0$.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On modélise une population par $f(t)=500\,e^{0,2t}$, où $t$ est le temps en années. <br>
+Déterminer le taux d'évolution annuel de cette population.<br>
+La suite $u_n=f(n)$ est géométrique de raison $q=e^{0,2}\approx 1,221$.<br>
+Autrement dit, la population augmente d'environ $22,1\%$ par an, et $u_0=500$.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Une substance radioactive est modélisée par $m(t)=50\,e^{-0,13t}$, où $t$ est le temps en jours et $m$ la masse en grammes. <br>
+Déterminer le taux d'évolution journalier de la masse.<br>
+La suite $m_n=m(n)$ est géométrique de raison $q=e^{-0,13}\approx 0,878$.<br>
+La masse diminue donc d'environ $12,2\%$ par jour : c'est une décroissance exponentielle, la masse tend vers $0$ sans jamais l'atteindre.
 </div>
 </div>
 
@@ -574,7 +601,7 @@ Sa dérivée est la fonction $(e^{ax+b})'=ae^{ax+b}$.
           
           
           
-          <a class="btn btn-accent" href="/mabemat/1re/chapitre-10-fonction-exponentielle/exercices.a3c744931949c97053c5ac5d7bcfcb7b.pdf" target="_blank">Passer aux exercices →</a>
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-10-fonction-exponentielle/exercices.9fd10734691f8e4ff5155ef51c617012.pdf" target="_blank">Passer aux exercices →</a>
           
           
         </div>
@@ -758,7 +785,7 @@ Sa dérivée est la fonction $(e^{ax+b})'=ae^{ax+b}$.
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

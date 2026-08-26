@@ -1,96 +1,116 @@
 ---
-title: "Semaine 31"
+title: "Semaine 31 - Épreuve blanche d'automatismes"
+layout: "automatismes-2nde"
 auto_number: 31
 weight: 31
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Soit $a$ un nombre réel. Quelle affirmation est vraie ?
+On considère $A=\dfrac{3}{4}+\dfrac{7}{100}$. On a :
 
-**A.** $a^2 > a$ pour tout $a \in \mathbb{R}$ &emsp; **B.** $a^2 > a$ pour tout $a > 1$ &emsp; **C.** $a^2 < a$ pour tout $a > 0$ &emsp; **D.** $a^2 = a$ pour tout $a \in \mathbb{R}$
+**A.** $A=\dfrac{10}{104}$ &emsp; **B.** $A=0{,}757$ &emsp; **C.** $A=0{,}82$ &emsp; **D.** $A=1{,}45$
 ---CORR---
-Pour $a > 1$, on a $a^2 = a \times a > a \times 1 = a$ (car $a > 1$). Donc $a^2 > a$.
+On écrit chaque fraction sous forme décimale :
 
-Contre-exemples pour les autres : $a = 1/2 \Rightarrow a^2 = 1/4 < 1/2 = a$ (réfute A) ; $a = 1/2 \Rightarrow a^2 < a$ mais pas pour tout $a > 0$ (ex. $a = 2$, réfute C).
+$$\dfrac{3}{4}=0{,}75 \qquad\text{et}\qquad \dfrac{7}{100}=0{,}07$$
 
-**Réponse : B**
+On additionne :
+
+$$A=0{,}75+0{,}07={\color{#4A5D7A}0{,}82}$$
+
+La réponse A additionne numérateurs et dénominateurs, ce qui n'est jamais une addition de fractions.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On pose $N = \dfrac{10^5}{2^3}$.
+Dans un groupe de $250$ personnes, $40\,\%$ sont des femmes, et $25\,\%$ de ces femmes sont cadres.
 
-Quelle est l'écriture de $N$ sous la forme $a \times 10^b$ avec $a$ entier ?
+Le nombre de femmes cadres est :
 
-**A.** $N = 125 \times 10^0$ &emsp; **B.** $N = 12{,}5 \times 10^2$ &emsp; **C.** $N = 1{,}25 \times 10^3$ &emsp; **D.** $N = 125 \times 10^2$
+**A.** $65$ &emsp; **B.** $100$ &emsp; **C.** $62{,}5$ &emsp; **D.** $25$
 ---CORR---
-$$N = \frac{10^5}{8} = \frac{100\,000}{8} = 12\,500 = 125 \times 10^2$$
+On enchaîne les deux proportions, la seconde ne portant que sur les femmes :
 
-**Réponse : D**
+$$250\times 0{,}40=100\ \text{femmes} \qquad\text{puis}\qquad 100\times 0{,}25={\color{#4A5D7A}25}$$
+
+La réponse B s'arrête à la première étape, et la réponse A additionne les deux pourcentages au lieu de les enchaîner.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On cherche l'ensemble des solutions de l'inéquation $\sqrt{x} \leq 3$ (avec $x \geq 0$).
+Un prix baisse de $30\,\%$, puis augmente de $50\,\%$. L'évolution globale est :
 
-Quel est l'ensemble solution $S$ ?
-
-**A.** $S = [0 ; 3]$ &emsp; **B.** $S = [0 ; \sqrt{3}]$ &emsp; **C.** $S = [3 ; +\infty[$ &emsp; **D.** $S = [0 ; 9]$
+**A.** une hausse de $5\,\%$ &emsp; **B.** une baisse de $5\,\%$ &emsp; **C.** une hausse de $20\,\%$ &emsp; **D.** une hausse de $15\,\%$
 ---CORR---
-$$\sqrt{x} \leq 3 \implies x \leq 3^2 = 9 \quad \text{(en élevant au carré, les deux membres étant positifs)}$$
+On multiplie les coefficients multiplicateurs :
 
-Avec la condition $x \geq 0$, l'ensemble solution est $S = [0 ; 9]$.
+$$0{,}70\times 1{,}50=1{,}05$$
 
-**Réponse : D**
+Comme $1{,}05=1+0{,}05$, il s'agit d'une hausse de ${\color{#4A5D7A}5\,\%}$.
+
+La réponse C additionne les taux ($-30+50$), ce qui est toujours faux.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-On considère la fonction $f$ définie par $f(x) = (x-4)(x-7)$.
+Soit $f$ la fonction définie par $f(x)=(x-4)(x+2)$. Les antécédents de $0$ par $f$ sont :
 
-Quel est le signe de $f(x)$ ?
-
-**A.** $f(x) \geq 0$ pour tout $x \in \mathbb{R}$ &emsp; **B.** $f(x) \leq 0$ pour $x \in [4 ; 7]$ &emsp; **C.** $f(x) \geq 0$ pour $x \in [4 ; 7]$ &emsp; **D.** $f(x) < 0$ pour $x < 4$
+**A.** $\lbrace -4\,;\,2\rbrace$ &emsp; **B.** $\lbrace 4\,;\,-2\rbrace$ &emsp; **C.** $\lbrace -8\rbrace$ &emsp; **D.** $\lbrace 0\rbrace$
 ---CORR---
-Les zéros de $f$ sont $4$ et $7$. Tableau de signes :
+Chercher les antécédents de $0$ revient à résoudre $f(x)=0$, c'est-à-dire une équation produit :
 
-| $x$ | $-\infty$ | | $4$ | | $7$ | | $+\infty$ |
-|---|---|---|---|---|---|---|---|
-| $x-4$ | $-$ | $-$ | $0$ | $+$ | $+$ | $+$ | $+$ |
-| $x-7$ | $-$ | $-$ | $-$ | $-$ | $0$ | $+$ | $+$ |
-| $f(x)$ | $+$ | $+$ | $0$ | $-$ | $0$ | $+$ | $+$ |
+$$(x-4)(x+2)=0$$
 
-$f(x) \leq 0$ sur $[4 ; 7]$.
+Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-**Réponse : B**
+$$x-4=0 \quad\text{donc}\quad x=4 \qquad\text{ou}\qquad x+2=0 \quad\text{donc}\quad x=-2$$
+
+$${\color{#4A5D7A}\lbrace 4\,;\,-2\rbrace}$$
+
+La réponse A est le piège classique : on lit les nombres de l'énoncé sans changer leur signe. La réponse C donne $f(0)$, pas les antécédents de $0$.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-On sait que $-5$ et $-3$ sont solutions de l'équation $f(x) = 0$, où $f$ est une fonction polynôme du second degré.
+La moyenne de la série $2\ ;\ 5\ ;\ 5\ ;\ 8\ ;\ 10\ ;\ 12$ est :
 
-Quelle est la somme des solutions ?
-
-**A.** $-8$ &emsp; **B.** $15$ &emsp; **C.** $8$ &emsp; **D.** $-15$
+**A.** $6{,}5$ &emsp; **B.** $5$ &emsp; **C.** $7$ &emsp; **D.** $8$
 ---CORR---
-La somme des solutions est $(-5) + (-3) = -8$.
+On additionne les six valeurs :
 
-**Réponse : A**
+$$2+5+5+8+10+12=42$$
+
+On divise par l'effectif :
+
+$$\dfrac{42}{6}={\color{#4A5D7A}7}$$
+
+La réponse A est la médiane $\dfrac{5+8}{2}=6{,}5$, et la réponse B le mode : trois indicateurs différents à ne pas confondre.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Parmi les fonctions suivantes, lesquelles sont des fonctions affines ?
+On tire une carte au hasard dans un jeu de $32$ cartes. La probabilité d'obtenir un pique ou un roi est :
 
-$f_1(x) = 2x + 12$ &emsp; $f_2(x) = 3x + \dfrac{5}{4}$ &emsp; $f_3(x) = \dfrac{2x + 4}{2}$
-
-**A.** Les trois sont affines &emsp; **B.** Seulement $f_1$ &emsp; **C.** $f_1$ et $f_2$ seulement &emsp; **D.** Aucune
+**A.** $\dfrac{11}{32}$ &emsp; **B.** $\dfrac{3}{8}$ &emsp; **C.** $\dfrac{1}{32}$ &emsp; **D.** $\dfrac{12}{32}$
 ---CORR---
-- $f_1(x) = 2x + 12$ : affine ✓
-- $f_2(x) = 3x + \dfrac{5}{4}$ : affine ✓
-- $f_3(x) = \dfrac{2x+4}{2} = x + 2$ : affine ✓
+Le jeu contient $8$ piques et $4$ rois. Mais le roi de pique appartient aux deux catégories : si on additionne $8$ et $4$, on le compte deux fois.
 
-Les trois fonctions sont affines.
+$$8+4-1=11$$
 
-**Réponse : A**
+D'où :
+
+$$P={\color{#4A5D7A}\dfrac{11}{32}}$$
+
+C'est la formule $P(A\cup B)=P(A)+P(B)-P(A\cap B)$. La réponse D oublie de retrancher l'intersection.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -98,89 +118,109 @@ Les trois fonctions sont affines.
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Soit $a$ un nombre réel. Quelle affirmation est vraie ?
+On considère $A=\dfrac{2}{5}+\dfrac{9}{100}$. On a :
 
-**A.** $a^2 > a$ pour tout $a > 0$ &emsp; **B.** $a^2 = a$ pour tout $a \in \mathbb{R}$ &emsp; **C.** $a^2 < a$ pour tout $a \in ]0 ; 1[$ &emsp; **D.** $a^2 < a$ pour tout $a \in \mathbb{R}$
+**A.** $A=\dfrac{11}{105}$ &emsp; **B.** $A=0{,}49$ &emsp; **C.** $A=0{,}409$ &emsp; **D.** $A=1{,}3$
 ---CORR---
-Pour $0 < a < 1$, on a $a^2 = a \times a < a \times 1 = a$ (car $a < 1$). Donc $a^2 < a$ pour tout $a \in ]0 ; 1[$.
+On écrit chaque fraction sous forme décimale :
 
-**Réponse : C**
+$$\dfrac{2}{5}=0{,}4 \qquad\text{et}\qquad \dfrac{9}{100}=0{,}09$$
+
+On additionne :
+
+$$A=0{,}4+0{,}09={\color{#4A5D7A}0{,}49}$$
+
+La réponse A additionne numérateurs et dénominateurs, ce qui n'est jamais une addition de fractions.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On pose $N = 4 \times 36$.
+Dans un groupe de $320$ personnes, $25\,\%$ sont des femmes, et $40\,\%$ de ces femmes sont cadres.
 
-Quelle est l'écriture de $N$ sous la forme $a \times b^2$ avec $a$ et $b$ entiers ?
+Le nombre de femmes cadres est :
 
-**A.** $N = 4 \times 36$ &emsp; **B.** $N = 144 \times 1$ &emsp; **C.** $N = 4 \times 6^2$ &emsp; **D.** $N = 2^2 \times 6^2$
+**A.** $80$ &emsp; **B.** $128$ &emsp; **C.** $32$ &emsp; **D.** $65$
 ---CORR---
-$$N = 4 \times 36 = 4 \times 6^2$$
+On enchaîne les deux proportions, la seconde ne portant que sur les femmes :
 
-**Réponse : C**
+$$320\times 0{,}25=80\ \text{femmes} \qquad\text{puis}\qquad 80\times 0{,}40={\color{#4A5D7A}32}$$
+
+La réponse A s'arrête à la première étape, et la réponse D additionne les deux pourcentages au lieu de les enchaîner.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On cherche l'ensemble des solutions de l'inéquation $\sqrt{x} \leq 12$ (avec $x \geq 0$).
+Un prix baisse de $40\,\%$, puis augmente de $50\,\%$. L'évolution globale est :
 
-Quel est l'ensemble solution $S$ ?
-
-**A.** $S = [0 ; 12]$ &emsp; **B.** $S = [0 ; \sqrt{12}]$ &emsp; **C.** $S = [12 ; +\infty[$ &emsp; **D.** $S = [0 ; 144]$
+**A.** une hausse de $10\,\%$ &emsp; **B.** une baisse de $90\,\%$ &emsp; **C.** une hausse de $5\,\%$ &emsp; **D.** une baisse de $10\,\%$
 ---CORR---
-$$\sqrt{x} \leq 12 \implies x \leq 12^2 = 144 \quad \text{(en élevant au carré)}$$
+On multiplie les coefficients multiplicateurs :
 
-Avec $x \geq 0$, l'ensemble solution est $S = [0 ; 144]$.
+$$0{,}60\times 1{,}50=0{,}9$$
 
-**Réponse : D**
+Comme $0{,}9=1-0{,}1$, il s'agit d'une baisse de ${\color{#4A5D7A}10\,\%}$.
+
+La réponse A additionne les taux ($-40+50$), ce qui est toujours faux.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-On considère la fonction $f$ définie par $f(x) = (2x + 20)(x - 10)$.
+Soit $f$ la fonction définie par $f(x)=(x+5)(x-3)$. Les antécédents de $0$ par $f$ sont :
 
-Quel est le signe de $f(x)$ ?
-
-**A.** $f(x) \geq 0$ pour tout $x \in \mathbb{R}$ &emsp; **B.** $f(x) \leq 0$ pour $x \leq -10$ &emsp; **C.** $f(x) \leq 0$ pour $x \in [-10 ; 10]$ &emsp; **D.** $f(x) \geq 0$ pour $x \in [-10 ; 10]$
+**A.** $\lbrace -5\,;\,3\rbrace$ &emsp; **B.** $\lbrace 5\,;\,-3\rbrace$ &emsp; **C.** $\lbrace -15\rbrace$ &emsp; **D.** $\lbrace 2\rbrace$
 ---CORR---
-Les zéros : $2x + 20 = 0 \implies x = -10$ et $x - 10 = 0 \implies x = 10$.
+Chercher les antécédents de $0$ revient à résoudre $f(x)=0$, c'est-à-dire une équation produit :
 
-Tableau de signes :
+$$(x+5)(x-3)=0$$
 
-| $x$ | $-\infty$ | | $-10$ | | $10$ | | $+\infty$ |
-|---|---|---|---|---|---|---|---|
-| $2x+20$ | $-$ | $-$ | $0$ | $+$ | $+$ | $+$ | $+$ |
-| $x-10$ | $-$ | $-$ | $-$ | $-$ | $0$ | $+$ | $+$ |
-| $f(x)$ | $+$ | $+$ | $0$ | $-$ | $0$ | $+$ | $+$ |
+Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$f(x) \leq 0$ sur $[-10 ; 10]$.
+$$x+5=0 \quad\text{donc}\quad x=-5 \qquad\text{ou}\qquad x-3=0 \quad\text{donc}\quad x=3$$
 
-**Réponse : C**
+$${\color{#4A5D7A}\lbrace -5\,;\,3\rbrace}$$
+
+La réponse B est le piège classique : on lit les nombres de l'énoncé sans changer leur signe. La réponse C donne $f(0)$, pas les antécédents de $0$.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-On sait que $-7$, $0$ et $2$ sont solutions de l'équation $f(x) = 0$, où $f$ est une fonction polynôme de degré 3.
+La moyenne de la série $3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 11\ ;\ 15$ est :
 
-Quel est le produit des solutions ?
-
-**A.** $-5$ &emsp; **B.** $14$ &emsp; **C.** $-14$ &emsp; **D.** $0$
+**A.** $6$ &emsp; **B.** $8$ &emsp; **C.** $9$ &emsp; **D.** $7{,}5$
 ---CORR---
-Le produit des solutions est $(-7) \times 0 \times 2 = 0$.
+On additionne les six valeurs :
 
-**Réponse : D**
+$$3+4+6+9+11+15=48$$
+
+On divise par l'effectif :
+
+$$\dfrac{48}{6}={\color{#4A5D7A}8}$$
+
+La réponse D est la médiane $\dfrac{6+9}{2}=7{,}5$ : ce n'est pas la même notion que la moyenne, même si les deux valeurs sont ici proches.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Parmi les fonctions suivantes, lesquelles sont des fonctions affines ?
+On tire une carte au hasard dans un jeu de $52$ cartes. La probabilité d'obtenir un cœur ou une dame est :
 
-$f_1(x) = \dfrac{2x+4}{x}$ &emsp; $f_2(x) = 6\sqrt{x} - 6$ &emsp; $f_3(x) = \dfrac{2}{x} + 4$
-
-**A.** Les trois sont affines &emsp; **B.** Aucune n'est affine &emsp; **C.** Seulement $f_3$ &emsp; **D.** $f_1$ et $f_3$ seulement
+**A.** $\dfrac{17}{52}$ &emsp; **B.** $\dfrac{1}{52}$ &emsp; **C.** $\dfrac{1}{4}$ &emsp; **D.** $\dfrac{4}{13}$
 ---CORR---
-- $f_1(x) = \dfrac{2x+4}{x} = 2 + \dfrac{4}{x}$ : **non affine** (présence de $1/x$)
-- $f_2(x) = 6\sqrt{x} - 6$ : **non affine** (présence de $\sqrt{x}$)
-- $f_3(x) = \dfrac{2}{x} + 4$ : **non affine** (présence de $1/x$)
+Le jeu contient $13$ cœurs et $4$ dames. Mais la dame de cœur appartient aux deux catégories : si on additionne $13$ et $4$, on la compte deux fois.
 
-Aucune n'est affine.
+$$13+4-1=16$$
 
-**Réponse : B**
+D'où :
+
+$$P=\dfrac{16}{52}=\dfrac{4\times \cancel{4}}{13\times \cancel{4}}={\color{#4A5D7A}\dfrac{4}{13}}$$
+
+C'est la formule $P(A\cup B)=P(A)+P(B)-P(A\cap B)$. La réponse A oublie de retrancher l'intersection.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

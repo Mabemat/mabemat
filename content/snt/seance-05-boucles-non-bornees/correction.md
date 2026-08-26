@@ -1,8 +1,27 @@
 ---
-title: "Correction — Séance 05 Boucles non bornées"
+title: "Correction - Séance 05 Boucles non bornées"
 ---
 
-### Exercice 1 — Lecture d'un programme
+### Échauffement - Tableau de suivi
+
+| Tour | `p` avant le test | Condition `p < 100` | `p` est affiché ? | Nouvelle valeur de `p` |
+|:---:|:---:|:---:|:---:|:---:|
+| Départ | 1 | ✅ Vraie | Oui | 2 |
+| Tour 1 | 2 | ✅ Vraie | Oui | 4 |
+| Tour 2 | 4 | ✅ Vraie | Oui | 8 |
+| Tour 3 | 8 | ✅ Vraie | Oui | 16 |
+| Tour 4 | 16 | ✅ Vraie | Oui | 32 |
+| Tour 5 | 32 | ✅ Vraie | Oui | 64 |
+| Tour 6 | 64 | ✅ Vraie | Oui | 128 |
+| Tour 7 | 128 | ❌ Fausse | Non - arrêt | - |
+
+Le programme affiche donc : `1  2  4  8  16  32  64`.
+
+> ⚠️ **128 n'est jamais affiché.** La condition est testée **avant** d'entrer dans le bloc : quand `p` vaut 128, le test `128 < 100` est faux, la boucle s'arrête aussitôt et `print(p)` n'est pas exécuté. À la sortie de la boucle, `p` vaut pourtant bien 128.
+
+---
+
+### Exercice 1 - Lecture d'un programme
 
 **Q1.** Condition : `n < 50`. Bloc répété : `n = n + n`.
 
@@ -10,14 +29,14 @@ title: "Correction — Séance 05 Boucles non bornées"
 
 | Tour | n (avant) | n (après) |
 |---|---|---|
-| Départ | 1 | — |
+| Départ | 1 | - |
 | Tour 1 | 1 | 2 |
 | Tour 2 | 2 | 4 |
 | Tour 3 | 4 | 8 |
 | Tour 4 | 8 | 16 |
 | Tour 5 | 16 | 32 |
 | Tour 6 | 32 | 64 |
-| Arrêt | 64 ≥ 50 → stop | — |
+| Arrêt | 64 ≥ 50 → stop | - |
 
 `print(n)` après la boucle affiche **64**.
 
@@ -36,7 +55,7 @@ title: "Correction — Séance 05 Boucles non bornées"
 
 ---
 
-### Exercice 2 — Compte à rebours
+### Exercice 2 - Compte à rebours
 
 **Q1.**
 ```
@@ -66,7 +85,7 @@ print("Décollage !")
 
 ---
 
-### Exercice 3 — Déboguer des boucles while
+### Exercice 3 - Déboguer une boucle
 
 **Programme A**
 
@@ -109,7 +128,7 @@ while compteur < 5:
 
 ---
 
-### Exercice 4 — Batterie de téléphone
+### Exercice 4 - Batterie de téléphone
 
 **Q1.** 95 − 8×n < 20 → n > 75/8 = 9.375 → environ **9 à 10 heures**.
 
@@ -157,7 +176,7 @@ def heures_batterie(charge_initiale, consommation_horaire, seuil_alerte):
 
 ---
 
-### Exercice 5 — Capital et intérêts
+### Exercice 5 - Capital et intérêts
 
 **Q1.**
 - Après 1 an : 2 000 × 1.025 = **2 050 €**
@@ -174,8 +193,10 @@ print("Nombre d'années :", annees)
 print("Capital atteint :", round(capital, 2), "€")
 ```
 
-Résultat : **17 ans**, capital ≈ 3 040.15 €  
-(2 000 × 1.025¹⁷ ≈ 3 040)
+Résultat : **17 ans**, capital ≈ **3 043.24 €**  
+(après 16 ans le capital vaut 2 969.01 €, encore en dessous de 3 000 ; c'est le 17ᵉ tour qui fait passer au-dessus)
+
+> ⚠️ **`print` ou `return` ?** Ici on est dans le **programme principal**, pas dans une fonction : on utilise donc `print` pour afficher le résultat. À la question 3, la même logique est mise dans une fonction : on utilisera alors `return`, jamais `print`.
 
 **Q3.**
 ```python
@@ -189,11 +210,13 @@ def annee(capital_initial, taux, objectif):
 ```
 
 **Q4.** `annee(2000, 2.5, 5000)` → **38 ans**  
-(2 000 × 1.025³⁸ ≈ 5 037)
+(le capital atteint alors ≈ 5 111.36 €)
+
+> ⚠️ Attention au paramètre `taux` : la fonction attend **2.5** (le pourcentage), pas 0.025. C'est la ligne `capital = capital * (1 + taux / 100)` qui fait la conversion. Un appel `annee(2000, 0.025, 5000)` renverrait 3 666 ans !
 
 ---
 
-### Exercice 6 — Influence sur les réseaux
+### Exercice 6 - Influence sur les réseaux
 
 **Q1.**
 - Après 1 semaine : 150 × 1.12 = **168 abonnés**
@@ -237,7 +260,7 @@ L'autre créateur atteint 1 000 abonnés en premier (15 semaines contre 17).
 
 ---
 
-### Exercice 7 — Population d'une ville
+### Exercice 7 - Population d'une ville
 
 **Q1.**
 ```python
@@ -280,13 +303,13 @@ def annee_seuil(pop_initiale, taux_variation, seuil, annee_debut):
 
 ---
 
-### Exercice 8 — Suite de Syracuse
+### Exercice 8 - Suite de Syracuse
 
 **Q1.** Départ de n = 6 :
 
 | Étape | n | pair/impair |
 |---|---|---|
-| — | 6 | pair → ÷2 |
+| - | 6 | pair → ÷2 |
 | 1 | 3 | impair → ×3+1 |
 | 2 | 10 | pair → ÷2 |
 | 3 | 5 | impair → ×3+1 |
@@ -296,7 +319,7 @@ def annee_seuil(pop_initiale, taux_variation, seuil, annee_debut):
 | 7 | 2 | pair → ÷2 |
 | 8 | 1 | **arrêt** |
 
-Suite : 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 — **8 étapes**.
+Suite : 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 - **8 étapes**.
 
 **Q2.**
 ```python

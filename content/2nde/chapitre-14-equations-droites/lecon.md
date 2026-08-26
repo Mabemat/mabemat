@@ -200,8 +200,8 @@ Deux droites $d$ et $d'$ d'équations réduites $y=mx+p$ et $y=m'x+p'$ sont para
 </div>
 
 Démonstration. <br>
-$\overrightarrow{u}\begin{pmatrix} 1 \\\\ m \end{pmatrix}$ est un vecteur directeur de $d$ et  $\overrightarrow{v}\begin{pmatrix} 1 \\\\ m' \end{pmatrix}$ est un vecteur directeur de $d'$.<br>
-Ainsi, les droites $d$ et $d'$ sont parallèles si, et seulement si, les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires, ce qui équivaut à $\det(\overrightarrow{u},\overrightarrow{v})=\begin{vmatrix} 1 & 1 \\\\ m & m' \end{vmatrix}= m'-m=0$, c'est à dire $m'=m$.
+$\overrightarrow{u}\begin{pmatrix} 1 \\ m \end{pmatrix}$ est un vecteur directeur de $d$ et  $\overrightarrow{v}\begin{pmatrix} 1 \\ m' \end{pmatrix}$ est un vecteur directeur de $d'$.<br>
+Ainsi, les droites $d$ et $d'$ sont parallèles si, et seulement si, les vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont colinéaires, ce qui équivaut à $\det(\overrightarrow{u},\overrightarrow{v})=\begin{vmatrix} 1 & 1 \\ m & m' \end{vmatrix}= m'-m=0$, c'est à dire $m'=m$.
 
 <div class="remarque">
 Deux droites confondues sont parallèles et elles ont des équations cartésiennes multiples l'une de l'autre.<br>

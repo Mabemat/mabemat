@@ -141,8 +141,8 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 Comme $A$ et $\overline A$ fonrment une partition de l'univers, on applique la formule de probabilité totale :
 
  $\begin{aligned}
- p(B)&=p(A)\times p_A(B)+p(\overline A)\times p_{\overline A}(B)\\\\
- &=0{,}6\times 0{,}3+0{,}4\times 0{,}8\\\\
+ p(B)&=p(A)\times p_A(B)+p(\overline A)\times p_{\overline A}(B)\\
+ &=0{,}6\times 0{,}3+0{,}4\times 0{,}8\\
  &=\boldsymbol{0{,}5}.
  \end{aligned}$
  
@@ -205,7 +205,7 @@ On applique la propriété du quotient des puissances d'un réel : <br>
 Soit $n$ et $p$ deux entiers et $a$ un réel :  $\dfrac{a^n}{a^p}=a^{n-p}$<br>
 
 $$
-\begin{aligned} \dfrac{a^{n^{2}}}{a^{n}}&=a^{n^{2}-n}\\\\
+\begin{aligned} \dfrac{a^{n^{2}}}{a^{n}}&=a^{n^{2}-n}\\
 &=\boldsymbol{a^{n(n^{}-1)}}
 \end{aligned}
 $$
@@ -280,8 +280,8 @@ La droite $(D)$ est strictement au-dessus de la droite $(D')$ lorsque $4x-3>-9x+
 
 $$
 \begin{aligned}
-4x-3&>-9x+4\\\\
-13x&>7\\\\
+4x-3&>-9x+4\\
+13x&>7\\
 x&>\dfrac{7}{13}
 \end{aligned}
 $$
@@ -317,8 +317,8 @@ On applique la formule de probabilité totale :<br>
 
 $$
 \begin{aligned}
-p(B)&=p(A)\times p_A(B)+p(\overline A)\times p_{\overline A}(B)\\\\
-&=0{,}9\times 0{,}6+0{,}1\times 0{,}9\\\\
+p(B)&=p(A)\times p_A(B)+p(\overline A)\times p_{\overline A}(B)\\
+&=0{,}9\times 0{,}6+0{,}1\times 0{,}9\\
 &=\boldsymbol{0{,}63}.
 \end{aligned}
 $$

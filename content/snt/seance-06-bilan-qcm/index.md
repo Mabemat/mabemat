@@ -1,5 +1,5 @@
 ---
-title: "QCM — Bilan : Fonctions et Boucles"
+title: "QCM - Bilan : Fonctions et Boucles"
 layout: "qcm"
 ---
 
@@ -188,7 +188,7 @@ print(total)
 
 | Tour | `i` | `total` |
 |:---:|:---:|:---:|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | 1 | 1 | 1 |
 | 2 | 2 | 3 |
 | 3 | 3 | 6 |
@@ -218,7 +218,7 @@ Que renvoie `mystere(7, 4)` ?
 
 | Tour | `i` | `total` |
 |:---:|:---:|:---:|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | 1 | 0 | 7 |
 | 2 | 1 | 14 |
 | 3 | 2 | 21 |
@@ -246,7 +246,7 @@ print(p)
 
 | Tour | `i` | `p` |
 |:---:|:---:|:---:|
-| Initialisation | — | 1 |
+| Initialisation | - | 1 |
 | 1 | 1 | 1 × 1 = 1 |
 | 2 | 2 | 1 × 2 = 2 |
 | 3 | 3 | 2 × 3 = 6 |
@@ -266,7 +266,7 @@ def taille_arbre(n):
     taille = 2.0
     for i in range(n):
         taille = taille + 0.3
-    return taille
+    return round(taille, 1)
 ```
 - `3.0`
 - `5.0`
@@ -276,10 +276,12 @@ def taille_arbre(n):
 
 | Étape | `i` | `taille` |
 |:---:|:---:|:---:|
-| Initialisation | — | 2.0 |
-| Après 10 tours | — | 2.0 + 10 × 0.3 = **5.0** |
+| Initialisation | - | 2.0 |
+| Après 10 tours | - | 2.0 + 10 × 0.3 = **5.0** |
 
 À chaque tour, on ajoute 0,3 m. Après `n = 10` tours : `2.0 + 10 × 0.3 = 5.0` m.
+
+⚠️ Sans le `round(taille, 1)`, Python renverrait `4.999999999999998` : le nombre 0,3 n'est pas stocké exactement en mémoire par l'ordinateur, et l'erreur minuscule s'accumule à chaque addition. Ce n'est pas une erreur de programme.
 
 **Réponse : `5.0`**
 {{< /qcm >}}
@@ -307,7 +309,7 @@ print(n)
 | 4 | 12 | ✓ | 6 |
 | 5 | 6 | ✓ | 3 |
 | 6 | 3 | ✓ | **1** |
-| Stop | 1 | ✗ | — |
+| Stop | 1 | ✗ | - |
 
 `//` est la **division entière** (sans virgule). La boucle s'arrête quand `n` atteint 1. `print(n)` est hors boucle → affiche **1**.
 
@@ -420,6 +422,8 @@ Que renvoie `epargne(2)` ?
 
 À chaque tour : on dépose 100 € puis on applique 0,5 % d'intérêts. Après 2 mois : 201,50 €.
 
+⚠️ Python affiche `201.5` et non `201.50` : les zéros inutiles à la fin d'un nombre décimal ne sont jamais affichés. C'est bien le même nombre.
+
 **Réponse : `201.50`**
 {{< /qcm >}}
 
@@ -442,7 +446,7 @@ Que renvoie `somme(5)` ?
 
 | Tour | `k` | `s` |
 |:---:|:---:|:---:|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | 1 | **0** | 0 |
 | 2 | 1 | 1 |
 | 3 | 2 | 3 |

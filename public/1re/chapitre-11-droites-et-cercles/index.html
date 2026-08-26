@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-1re">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Droites et cercles — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/" class="active">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/1re/">1ère Spécialité</a>
+    <span class="sep">/</span>
+    <span>Chapitre 11</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#758467;">11</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 11 · 1ère Spécialité
+      </div>
+      
+      <h1 class="fade-up d2">Droites et cercles</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Géométrie
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#758467;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#758467;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/1re/chapitre-11-droites-et-cercles/cours.56ee7cadeb350aa77e2108ad3b2fd58a.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-11-droites-et-cercles/exercices.fe25cadeb6968db770af959237b39d9f.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/1re/">
+    <div><div class="adj-lbl">← 1ère</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/1re/chapitre-12-trigonometrie/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  
+  <div class="lesson-mobile-bar" id="lesson-mobile-bar">
+    <button id="mb-close-btn">← Fermer</button>
+    <span class="mb-pct" id="mb-pct">0 %</span>
+    <button id="mb-toc-btn">≡ Plan</button>
+  </div>
+
+  
+  <div class="lesson-toc-backdrop" id="lesson-toc-backdrop"></div>
+  <div class="lesson-toc-drawer" id="lesson-toc-drawer">
+    <div class="lesson-toc-drawer-header">
+      <div class="eyebrow">Dans cette leçon</div>
+      <button class="lesson-toc-drawer-close" id="lesson-toc-drawer-close" aria-label="Fermer le plan">✕</button>
+    </div>
+    <ol id="lesson-toc-drawer-list"></ol>
+  </div>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/1re/chapitre-11-droites-et-cercles/cours.56ee7cadeb350aa77e2108ad3b2fd58a.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/1re/chapitre-11-droites-et-cercles/exercices.fe25cadeb6968db770af959237b39d9f.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/">1ère Spécialité</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/chapitre-11-droites-et-cercles/">Droites et cercles</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 11 - Leçon
+      </div>
+      <h1 class="lesson-h1" style="color:#758467;">Droites et cercles</h1>
+
+      <div class="full-lesson niveau-1re">
+        <h2 class="subsection-title">11.1 Droite et produit scalaire</h2>
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="display:inline-block; vertical-align:top; width:calc(64% - 12px);">
+On munit le plan d'un repère <u>orthonormé</u>.
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+On considère une droite $(AB)$.<br>
+On appelle vecteur normal à $(AB)$ tout vecteur orthogonal à $\overrightarrow{AB}$.
+</div>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-11/fig3.svg" alt="vecteurs normaux à une droite" style="display:inline-block; vertical-align:top; width:calc(30% - 12px); max-height:200px; max-width:100%;">
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Soit $(d)$ une droite passant par un point $A$ et de vecteur normal $\overrightarrow{n}$, et soit $M$ un point du plan.<br>
+$M$ appartient à $(d)$ si et seulement si $\overrightarrow{AM}.\overrightarrow{n}=0$.
+</div>
+</div>
+<p>On en déduit le théorème suivant, qui relie les coordonnées d&rsquo;un vecteur normal aux coefficients d&rsquo;une équation cartésienne de la droite.</p>
+<div style="display:flex; align-items:center; gap:20px;">
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(74% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Le plan est muni d'un repère orthonormé.
+Soient $a$ et $b$ deux réels tels qu'au moins l'un des deux soit non nul.<br>
+<ul>
+<li>Une droite $(d)$ de vecteur normal $\overrightarrow{n}\begin{pmatrix}
+a \\
+b
+\end{pmatrix}$ a une équation de la forme $ax+by+c=0$, où $c$ est un réel.<br></li>
+<li>Réciproquement, si une droite $(d)$ admet pour équation $ax+by+c=0$, alors le vecteur $\overrightarrow{n}\begin{pmatrix}
+a \\
+b
+\end{pmatrix}$ est un vecteur normal à cette droite.</li>
+</ul>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-11/fig4.svg" alt="droite et vecteur normal" style="display:inline-block; vertical-align:top; width:calc(24% - 12px); max-height:200px; max-width:100%;">
+</div>
+<p><u>Rappel</u> : Une droite de vecteur directeur $\begin{pmatrix}
+-b \\
+a
+\end{pmatrix}$ a une équation cartésienne de la forme $a x + b y + c =0$ où $c \in \R$ est déterminé avec un point de la droite.</p>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+La droite $(d)$ passe par le point $A$ de coordonnées $(4\,;\,3)$ et a le vecteur $\overrightarrow{n} \begin{pmatrix}5\\-5\end{pmatrix}$ comme vecteur normal.<br>
+Déterminer une équation cartésienne de $(d)$. <br>
+On sait, d'après le cours, que si une droite $(d)$ admet un vecteur normal de coordonnées $\overrightarrow {n} \begin{pmatrix}a\\b\end{pmatrix}$, alors une équation cartésienne de la droite $(d)$ est de la forme $ax+by+c=0$. <br>
+Avec les données de l'énoncé, $\overrightarrow{n} \begin{pmatrix}5\\-5\end{pmatrix}$, on en déduit que $a = 5$ et $b=-5$. <br>
+L'équation cartésienne est donc de la forme : $ 5 x -5 y + c=0$. <br>
+Comme $A(4\,;\,3) \in(d)$, on a : $5 \times 4 -5 \times 3+ c=0$, soit $ c= -5$.<br>
+Une équation cartésienne de la droite $(d)$ est donc : $\boldsymbol{5x-5y-5=0}$.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour déterminer un vecteur normal à une droite $(d)$ dont on connaît une équation :
+<ol>
+<li>On écrit d'abord cette équation sous la forme $ax+by+c=0$, c'est-à-dire avec tous les termes dans le même membre ;</li>
+<li>Le vecteur $\overrightarrow{n}\begin{pmatrix} a \\ b\end{pmatrix}$ est alors normal à $(d)$, et le vecteur $\overrightarrow{u}\begin{pmatrix} -b \\ a\end{pmatrix}$ en est un vecteur directeur.</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>$(d_1)$ a pour équation $4x-3y+7=0$ : elle est déjà sous la forme $ax+by+c=0$, avec $a=4$ et $b=-3$.<br>
+Un vecteur normal à $(d_1)$ est donc $\overrightarrow{n_1}\begin{pmatrix} 4 \\ -3\end{pmatrix}$, et un vecteur directeur est $\overrightarrow{u_1}\begin{pmatrix} 3 \\ 4\end{pmatrix}$.</li>
+<li>$(d_2)$ a pour équation $y=5x-2$ : cette équation est sous forme <em>réduite</em>, il faut d'abord la transformer.<br>
+$y=5x-2 \Leftrightarrow 5x-y-2=0$, donc $a=5$ et $b=-1$ : un vecteur normal à $(d_2)$ est $\overrightarrow{n_2}\begin{pmatrix} 5 \\ -1\end{pmatrix}$.<br>
+<strong>Attention :</strong> il ne faut surtout pas lire les coefficients directement sur $y=5x-2$, ce qui donnerait le vecteur $\begin{pmatrix} 5 \\ -2\end{pmatrix}$, qui n'est pas normal à $(d_2)$.</li>
+<li>$(d_3)$ a pour équation $x=3$, c'est-à-dire $1\times x+0\times y-3=0$ : un vecteur normal est $\overrightarrow{n_3}\begin{pmatrix} 1 \\ 0\end{pmatrix}$, ce qui est cohérent puisque $(d_3)$ est une droite verticale.</li>
+</ul>
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Deux droites sont perpendiculaires si et seulement si leurs vecteurs normaux sont orthogonaux, c'est-à-dire si et seulement si le produit scalaire de ces deux vecteurs est nul.
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Les droites $(d_1)$ d'équation $4x-3y+7=0$ et $(d_4)$ d'équation $3x+4y-1=0$ ont pour vecteurs normaux respectifs $\overrightarrow{n_1}\begin{pmatrix} 4 \\ -3\end{pmatrix}$ et $\overrightarrow{n_4}\begin{pmatrix} 3 \\ 4\end{pmatrix}$.<br>
+Or $\overrightarrow{n_1}.\overrightarrow{n_4}=4\times 3+(-3)\times 4=12-12=0$ : ces deux vecteurs sont orthogonaux, donc les droites $\boldsymbol{(d_1)}$ et $\boldsymbol{(d_4)}$ <strong>sont perpendiculaires</strong>.
+</div>
+</div>
+<h3 class="subsubsection-title">11.1.1 Projeté orthogonal d'un point sur une droite</h3>
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $(d)$ une droite et $M$ un point du plan.<br>
+Le <strong>projeté orthogonal</strong> de $M$ sur $(d)$ est le point $H$ de $(d)$ tel que $(MH)$ soit perpendiculaire à $(d)$.<br>
+C'est aussi le point de $(d)$ le plus proche de $M$ : la distance $MH$ est la <strong>distance du point $M$ à la droite $(d)$</strong>.
+</div>
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode :</div>
+<div class="environment-content">
+Pour déterminer les coordonnées du projeté orthogonal $H$ d'un point $M$ sur une droite $(d)$ d'équation $ax+by+c=0$ :
+<ol>
+<li>Le vecteur $\overrightarrow{n}\begin{pmatrix} a \\ b\end{pmatrix}$ est normal à $(d)$, donc c'est un <strong>vecteur directeur</strong> de la droite $(MH)$ ;</li>
+<li>On détermine une équation cartésienne de $(MH)$ : c'est la droite passant par $M$ et de vecteur normal $\begin{pmatrix} -b \\ a\end{pmatrix}$, donc son équation est de la forme $-bx+ay+c'=0$, et $c'$ se calcule en utilisant les coordonnées de $M$ ;</li>
+<li>On résout le système formé par les équations de $(d)$ et de $(MH)$ : la solution donne les coordonnées de $H$.</li>
+</ol>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Soit $(d)$ la droite d'équation $2x-y+1=0$ et $M(3\,;\,4)$. Déterminer les coordonnées du projeté orthogonal $H$ de $M$ sur $(d)$.<br>
+<u>Étape 1</u> : le vecteur $\overrightarrow{n}\begin{pmatrix} 2 \\ -1\end{pmatrix}$ est normal à $(d)$.<br>
+<u>Étape 2</u> : $H$ appartient à la droite passant par $M$ et de vecteur directeur $\overrightarrow{n}$. Cette droite a pour vecteur normal $\begin{pmatrix} 1 \\ 2\end{pmatrix}$, donc une équation de la forme $x+2y+c'=0$.<br>
+Comme $M(3\,;\,4)$ lui appartient : $3+2\times 4+c'=0$, donc $c'=-11$.<br>
+La droite $(MH)$ a pour équation $x+2y-11=0$.<br>
+<u>Étape 3</u> : on résout le système
+$\left\{\begin{array}{l} 2x-y+1=0 \\ x+2y-11=0\end{array}\right.$<br>
+La première équation donne $y=2x+1$. En remplaçant dans la seconde : $x+2(2x+1)-11=0$, soit $5x-9=0$, donc $x=\dfrac{9}{5}$.<br>
+Alors $y=2\times \dfrac{9}{5}+1=\dfrac{23}{5}$.<br>
+Le projeté orthogonal est $H\left(\dfrac{9}{5}\,;\,\dfrac{23}{5}\right)$.<br>
+On peut en déduire la distance de $M$ à $(d)$ : $MH=\sqrt{\left(3-\dfrac{9}{5}\right)^2+\left(4-\dfrac{23}{5}\right)^2}=\sqrt{\dfrac{36}{25}+\dfrac{9}{25}}=\sqrt{\dfrac{45}{25}}=\dfrac{3\sqrt{5}}{5}$.
+</div>
+</div>
+<h2 class="subsection-title">11.2 Cercle et produit scalaire</h2>
+<h3 class="subsubsection-title">11.2.1 Cercle défini par son centre et son rayon</h3>
+<div style="display:flex; align-items:center; gap:20px;">
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(73% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Dans un repère orthonormé, le cercle de centre $A ( x_A ; y_A )$ et de rayon $r \geq 0$ est l'ensemble des points $M(x;y)$ vérifiant l'équation :
+$$( x - x_A )^2 + ( y - y_A )^2 = r^2$$
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-11/fig5.svg" alt="cercle de centre A et de rayon r" style="display:inline-block; vertical-align:top; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<ul>
+<li>Dans un repère orthonormé, on a $A ( 0 ; 4 )$ et $B ( 4 ; 0 )$. Déterminer l'équation du cercle $(C)$ de diamètre $[AB]$.<br> 
+Le centre est le point de coordonnées $( 2 ; 2 )$. Le rayon vaut $2\sqrt{2}$. <br>
+Donc $(C)$ a pour équation : <br> 
+$(x-2)^2+(y-2)^2=\left(2\sqrt{2}\right)^2$, soit : $(x^2-4x+4)+(y^2-4y+4)=8$.<br>
+Donc : $x^2+y^2-4x-4y=0$</li>
+<li>Dans un repère orthonormé du plan, on considère l'ensemble $E$ d'équation : $x^2+y^2-2x-10y+17=0$. <br>
+Démontrer que l'ensemble $E$ est un cercle dont on déterminera les caractéristiques (centre, rayon).
+<div class="math-display">
+$$
+\begin{aligned}
+x^2+y^2-2x-10y+17=0 \Leftrightarrow& (x^2-2x)+(y^2-10y)+17=0 \\
+\Leftrightarrow&(x-1)^2-1+(y-5)^2-25+17=0\\
+ \Leftrightarrow&(x-1)^2+(y-5)^2=9=3^2 
+\end{aligned}
+$$
+</div>
+<p>L&rsquo;ensemble $E$ est le cercle de centre le point de coordonnées $(1 ; 5)$ et de rayon $3$.</li></p>
+<li>Montrer que $x^2+y^2-x-3y+3=0$ n'est pas l'équation d'un cercle.
+<div class="math-display">
+$$
+\begin{aligned}
+x^2+y^2-x-3y+3=0 \Leftrightarrow& \left(x-\dfrac{1}{2}\right)^2-\dfrac{1}{4}+\left(y-\dfrac{3}{2}\right)^2-\dfrac{9}{4}+3=0 \\
+\Leftrightarrow&\left(x-\dfrac{1}{2}\right)^2+\left(y-\dfrac{3}{2}\right)^2=-\dfrac{1}{2} 
+\end{aligned}
+$$
+</div>
+<p>Ce qui est impossible ; l&rsquo;ensemble des points vérifiant cette relation est donc l&rsquo;ensemble vide.</li></p>
+</ul>
+</div>
+</div>
+<h3 class="subsubsection-title">11.2.2 Cercle défini par son diamètre</h3>
+<div style="display:flex; align-items:center; gap:20px;">
+<div class="environment theoreme" style="display:inline-block; vertical-align:top; width:calc(73% - 12px);">
+<div class="environment-title">Théorème :</div>
+<div class="environment-content">
+Le cercle $(C)$ de diamètre $[AB]$ est l'ensemble des points $M$ tels que $[AM]$ et $[MB]$ soient perpendiculaires, c'est-à-dire tels que $\overrightarrow{MA}.\overrightarrow{MB}=0$.
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-11/fig6.svg" alt="cercle défini par son diamètre" style="display:inline-block; vertical-align:top; width:calc(25% - 12px); max-height:200px; max-width:100%;">
+</div>
+<p>Démonstration. <br>
+Soit $O$ le milieu du segment $[AB]$. <br>
+On a $\overrightarrow{MA}.\overrightarrow{MB}=0 \Leftrightarrow (\overrightarrow{MO}+\overrightarrow{OA}). (\overrightarrow{MO}+\overrightarrow{OB})=0$.<br>
+Comme $O$ est le milieu de $[AB]$, on a : $\overrightarrow{OB}=-\overrightarrow{OA}$. <br>
+Soit :</p>
+<div class="math-display">
+$$
+\begin{aligned}
+(\overrightarrow{MO}+\overrightarrow{OA}). (\overrightarrow{MO}-\overrightarrow{OA})=0 \Leftrightarrow& \overrightarrow{MO}^2-\overrightarrow{OA}^2=0 \\
+\Leftrightarrow& MO^2-OA^2=0 \\
+\Leftrightarrow& MO^2=OA^2 \\
+\Leftrightarrow& MO=OA \text{ (car ce sont des distances).}\end{aligned}
+$$
+</div>
+<p>$M$ appartient donc au cercle de centre $O$ et de rayon $OA$, c&rsquo;est-à-dire le cercle de diamètre $[AB]$.</p>
+<h2 class="subsection-title">11.3 Exercice de synthèse</h2>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+On considère la figure suivante, représentée dans un repère orthonormé $\big(O;~\vec{\imath},~\vec{\jmath}\big)$.
+<div style="display:flex; align-items:center; gap:20px;">
+<img src="/mabemat/figures/1re/chapitre-11/synthese.svg" alt="figure de l'exercice de synthèse" style="width:38%; max-height:320px; object-fit:contain;">
+<div style="flex:1;">
+On dispose des données suivantes :
+<ul>
+<li>Le quadrilatère $OABC$ est un carré de côté $4$ ;</li>
+<li>On a $A(4~;~0)$, $B(4~;~4)$, $C(0~;~4)$, $I(4~;~3)$ ;</li>
+<li>Le point $H$ est le projeté orthogonal du point $C$ sur la droite $(OI)$ ;</li>
+<li>On note $\varepsilon$ le cercle de centre $D(2~;~2)$ et de rayon $0,5$.</li>
+</ul>
+</div>
+</div>
+<ol>
+<li>
+<ol type="a">
+<li>Déterminer les coordonnées des vecteurs $\overrightarrow{OI}$ et $\overrightarrow{OC}$.<br>
+On a $I\begin{pmatrix} 4\\3 \end{pmatrix}$ donc $\overrightarrow{OI} \begin{pmatrix} 4\\3 \end{pmatrix}$, et $C\begin{pmatrix} 0\\4 \end{pmatrix}$ donc $\overrightarrow{OC} \begin{pmatrix} 0\\4 \end{pmatrix}$.</li>
+<li>En déduire le produit scalaire $\overrightarrow{OI}\cdot \overrightarrow{OC}$.<br>
+On en déduit que $\overrightarrow{OI}\cdot \overrightarrow{OC}=4\times 0 + 3\times 4 = 12$.</li>
+</ol>
+</li>
+<li>
+<ol type="a">
+<li>Exprimer le produit scalaire $\overrightarrow{OI} \cdot \overrightarrow{OC}$ en fonction des longueurs $OH$ et $OI$.<br>
+Le point $H$ est le projeté orthogonal du point $C$ sur la droite $(OI)$, donc $\overrightarrow{OC}\cdot \overrightarrow{OI} = \overrightarrow{OH}\cdot \overrightarrow{OI}$.<br>
+Les vecteurs $\overrightarrow{OH}$ et $\overrightarrow{OI}$ sont colinéaires et de même sens donc $\overrightarrow{OH}\cdot \overrightarrow{OI}= OH\times OI$.<br>
+De plus, $\overrightarrow{OI}\cdot \overrightarrow{OC} = \overrightarrow{OC}\cdot \overrightarrow{OI}$.
+On peut donc conclure que $\overrightarrow{OI}\cdot \overrightarrow{OC} = OH\times OI$.</li>
+<li>Calculer la longueur $OI$.<br>
+$\overrightarrow{OI} \begin{pmatrix} 4\\3 \end{pmatrix}$ donc $OI = \sqrt{4^2+3^2} = \sqrt{25} = 5$.</li>
+<li>En déduire que $OH = 2,4$.<br>
+On a $\overrightarrow{OI}\cdot \overrightarrow{OC} = OH\times OI$, $\overrightarrow{OI}\cdot \overrightarrow{OC} = 12$ et $OI=5$.<br>
+On en déduit que $OH\times 5=12$ donc que $OH = \dfrac{12}{5}=2,4$.</li>
+</ol>
+</li>
+<li>
+<ol type="a">
+<li>Déterminer une équation cartésienne de la droite $(CH)$.<br>
+Le point $H$ est le projeté orthogonal du point $C$ sur la droite $(OI)$, donc les vecteurs $\overrightarrow{OI}$ et $\overrightarrow{CH}$ sont orthogonaux, donc le vecteur $\overrightarrow{OI}$ est un vecteur normal à la droite $(CH)$.<br>
+Or $\overrightarrow{OI}$ a pour coordonnées $\begin{pmatrix} 4\\3 \end{pmatrix}$ donc la droite $(CH)$ a une équation cartésienne de la forme $4x+3y+c=0$, où $c$ est un réel à déterminer.<br>
+Le point $C$ de coordonnées $\begin{pmatrix} 0\\4 \end{pmatrix}$ appartient à la droite $(CH)$, donc :
+$4\times 0 + 3 \times 4 + c=0$ donc $c=-12$.<br>
+La droite $(CH)$ a pour équation $4x+3y-12=0$.</li>
+<li>Justifier qu'une équation du cercle $\varepsilon$ est $x^2 + y^2 - 4x - 4y + 7,75 = 0$.<br>
+Le cercle $\varepsilon$ de centre $D(2\,;\,2)$ et de rayon $0,5$ a pour équation :
+$(x-2)^2+(y-2)^2=0,5^2$ soit $x^2-4x+4+y^2-4y+4-0,25=0$,
+c'est-à-dire $x^2+y^2-4x-4y +7,75=0$.</li>
+<li>Le point $M(1,5~;~2)$ appartient-il à l'intersection du cercle $\varepsilon$ et de la droite $(CH)$ ? Justifier.
+<div class="math-display">
+$$
+\begin{aligned}
+x_{M}^2+y_{M}^2-4x_{M}-4y_{M} +7,75
+& = 1,5^2 + 2^2 -4\times 1,5 - 4\times 2 + 7,75\\
+& = 2,25 + 4 - 6 - 8 + 7,75\\
+& = 0
+\end{aligned}
+$$
+</div>
+<p>Donc $M \in \varepsilon$.</p>
+<div class="math-display">
+$$
+\begin{aligned}
+4x_{M}+3y_{M}-12
+& = 4\times 1,5 + 3\times 2 - 12\\
+& = 6+6-12\\
+& = 0
+\end{aligned}
+$$
+</div>
+<p>Donc $M \in (CH)$.<br>
+On peut donc dire que le point $M(1,5~;~2)$ appartient à l&rsquo;intersection du cercle $\varepsilon$ et de la droite $(CH)$.</li></p>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/1re/chapitre-11-droites-et-cercles/cours.56ee7cadeb350aa77e2108ad3b2fd58a.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-11-droites-et-cercles/exercices.fe25cadeb6968db770af959237b39d9f.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay  = document.getElementById('lesson-overlay');
+  var btn      = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp  = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var mbPct = document.getElementById('mb-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+  
+  var mbCloseBtn  = document.getElementById('mb-close-btn');
+  var mbTocBtn    = document.getElementById('mb-toc-btn');
+  var drawer      = document.getElementById('lesson-toc-drawer');
+  var drawerList  = document.getElementById('lesson-toc-drawer-list');
+  var drawerClose = document.getElementById('lesson-toc-drawer-close');
+  var backdrop    = document.getElementById('lesson-toc-backdrop');
+
+   
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
+   
+  function buildTOC() {
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    var listsToFill = [];
+    if (tocList) { tocList.innerHTML = ''; listsToFill.push(tocList); }
+    if (drawerList) { drawerList.innerHTML = ''; listsToFill.push(drawerList); }
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      listsToFill.forEach(function(list) {
+        var li = document.createElement('li');
+        if (h.tagName === 'H3') li.classList.add('toc-sub');
+        li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+        list.appendChild(li);
+      });
+    });
+  }
+
+   
+  function updateProgress() {
+    var top = overlay.scrollTop;
+    var max = overlay.scrollHeight - overlay.clientHeight;
+    var p   = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp)  lpRp.style.width      = pct + '%';
+    if (lpBar) lpBar.style.width     = pct + '%';
+    if (lpPct) lpPct.textContent     = pct + ' %';
+    if (mbPct) mbPct.textContent     = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var allLinks = [];
+    if (tocList)    tocList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    if (drawerList) drawerList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    allLinks.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+   
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    wrapTables();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    closeDrawer();
+    if (btn) btn.focus();
+  }
+
+   
+  function openDrawer() {
+    if (drawer)   drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+  }
+  function closeDrawer() {
+    if (drawer)   drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+  }
+
+   
+  if (btn)      btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  if (mbCloseBtn) mbCloseBtn.addEventListener('click', closeLecon);
+  if (mbTocBtn)   mbTocBtn.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (backdrop)    backdrop.addEventListener('click', closeDrawer);
+
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+    });
+  }
+  
+  if (drawerList) {
+    drawerList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      closeDrawer();
+    });
+  }
+
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1787576503';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

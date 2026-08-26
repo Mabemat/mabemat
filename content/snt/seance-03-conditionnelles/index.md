@@ -1,5 +1,5 @@
 ---
-title: "Séance 03 — Conditionnelles"
+title: "Séance 03 - Conditionnelles"
 short_title: "Conditionnelles"
 description: "Structures if / elif / else, conditions booléennes, opérateurs de comparaison et logiques (and, or, not), branchements imbriqués."
 weight: 3

@@ -1,62 +1,126 @@
 ---
-title: "Semaine 11"
+title: "Semaine 11 - Lectures graphiques et variations"
+layout: "automatismes-2nde"
 auto_number: 11
 weight: 11
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Déterminer l'expression algébrique de la fonction affine $f$ représentée ci-dessous :
+Ci-dessous la courbe représentative d'une fonction $f$ définie sur $[-4\,;\,4]$.
 
-<img src="/mabemat/images/automatismes/2nde/s11-q01.svg" alt="Fonction affine" style="width:60%;max-height:400px;max-width:100%;">
+<img src="/mabemat/images/automatismes/2nde/s11-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+
+Lire graphiquement $f(-3)$ et $f(2)$.
 ---CORR---
-On lit graphiquement : ordonnée à l'origine $b=3$, coefficient directeur $a=-1$.
+Pour lire une image, on part de la valeur sur l'axe des abscisses, on monte (ou on descend) jusqu'à la courbe, puis on lit la hauteur sur l'axe des ordonnées.
 
-Donc $f(x)={\color{#4A5D7A}-x+3}$.
+Pour $x=-3$, la courbe passe par le point $(-3\,;\,0)$ :
+
+$$f(-3)={\color{#4A5D7A}0}$$
+
+Pour $x=2$, la courbe passe par le point $(2\,;\,2)$ :
+
+$$f(2)={\color{#4A5D7A}2}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-2x+3$.
+Avec la courbe de la question précédente, résoudre graphiquement l'équation $f(x)=2$.
 ---CORR---
-$f(x)=0 \iff x=\dfrac{3}{2}$.
+Résoudre $f(x)=2$, c'est chercher tous les points de la courbe situés à la hauteur $2$. On trace donc mentalement la droite horizontale d'équation $y=2$ et on repère ses points d'intersection avec la courbe.
 
-$f$ est décroissante ($a=-2<0$) donc :
+Cette droite coupe la courbe en trois points, d'abscisses $-4$, $2$ et $4$.
 
-| $x$ | $-\infty$ | $\dfrac{3}{2}$ | $+\infty$ |
-|---|---|---|---|
-| $f(x)$ | $+$ | $0$ | $-$ |
+$$S={\color{#4A5D7A}\lbrace -4\,;\,2\,;\,4\rbrace}$$
+
+On donne bien les **abscisses** des points d'intersection : ce sont elles, les solutions.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Le nombre d'employés d'une entreprise a baissé de $40\,\%$. Quelle évolution permettrait de retrouver le nombre de départ ? (arrondir à $0{,}01\,\%$ près)
+Toujours avec la même courbe :
+
+**a.** Donner le maximum de $f$ sur $[-4\,;\,4]$ et la valeur en laquelle il est atteint.
+
+**b.** Donner l'intervalle sur lequel $f$ est croissante.
 ---CORR---
-Coefficient multiplicateur de la baisse : $1-0{,}40=0{,}6$.
+**a.** Le maximum est la plus grande hauteur atteinte par la courbe. Le point le plus haut est le sommet de coordonnées $(3\,;\,4)$.
 
-Coefficient réciproque : $\dfrac{1}{0{,}6}\approx 1{,}6667$.
+Le maximum de $f$ vaut ${\color{#4A5D7A}4}$, atteint pour $x={\color{#4A5D7A}3}$.
 
-Taux réciproque : $1{,}6667-1=0{,}6667\approx{\color{#4A5D7A}66{,}67\,\%}$ d'augmentation.
+Attention à ne pas confondre les deux : le maximum est la valeur de $f$, pas l'abscisse.
+
+**b.** La courbe descend jusqu'au point le plus bas, d'abscisse $-2$, puis monte jusqu'au sommet d'abscisse $3$.
+
+$$f\ \text{est croissante sur}\ {\color{#4A5D7A}\left[-2\,;\,3\right]}$$
+
+Elle est décroissante sur $[-4\,;\,-2]$ et sur $[3\,;\,4]$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Un programme de calcul effectue les opérations suivantes : choisir un nombre, le multiplier par $5$, ajouter $5$, multiplier par $10$, retrancher $3$. Si on note $x$ le nombre de départ, quel est le résultat ? Développer l'expression.
----CORR---
-$x \xrightarrow{\times 5} 5x \xrightarrow{+5} 5x+5 \xrightarrow{\times 10} 10(5x+5)=50x+50 \xrightarrow{-3} 50x+47$
+Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x^2-4x$.
 
-Le résultat est ${\color{#4A5D7A}50x+47}$ (multiplier par $50$ puis ajouter $47$).
+**a.** Calculer $g(-1)$.
+
+**b.** Déterminer les antécédents de $0$ par $g$.
+---CORR---
+**a.** On remplace $x$ par $-1$ :
+
+$$g(-1)=(-1)^2-4\times(-1)=1+4={\color{#4A5D7A}5}$$
+
+**b.** On résout $g(x)=0$, c'est-à-dire $x^2-4x=0$. On factorise par $x$ :
+
+$$x(x-4)=0$$
+
+Un produit est nul si et seulement si l'un de ses facteurs est nul :
+
+$$x=0 \qquad\text{ou}\qquad x-4=0\ \text{donc}\ x=4$$
+
+Les antécédents de $0$ sont ${\color{#4A5D7A}0}$ et ${\color{#4A5D7A}4}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Résoudre l'équation : $\dfrac{9x-9}{-8}=\dfrac{-10}{8}$
+Le prix d'un sac a baissé de $19\,\%$. Il coûte maintenant $298$ euros.
+
+Le prix initial, en euros, est donné par le calcul :
+
+**A.** $298\times 0{,}81$ &emsp; **B.** $\dfrac{298}{1{,}19}$ &emsp; **C.** $298\times 1{,}19$ &emsp; **D.** $\dfrac{298}{0{,}81}$
 ---CORR---
-$8(9x-9)=-8\times(-10)$
+Une baisse de $19\,\%$ correspond au coefficient multiplicateur $1-0{,}19=0{,}81$.
 
-$72x-72=80$
+En notant $P$ le prix initial, on a donc :
 
-$72x=152$
+$$P\times 0{,}81=298$$
 
-$x=\dfrac{152}{72}={\color{#4A5D7A}\dfrac{19}{9}}$
+Pour retrouver $P$, on **divise** par le coefficient multiplicateur :
+
+$$P={\color{#4A5D7A}\dfrac{298}{0{,}81}}$$
+
+Les réponses A et C appliquent une évolution au lieu de la défaire, et la réponse B utilise le coefficient d'une hausse de $19\,\%$, qui n'est pas le coefficient réciproque d'une baisse de $19\,\%$.
+
+<span class="rep">Réponse : D</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+On considère la fonction $f$ définie par $f(x)=(3x-1)(2x+5)$.
+
+L'image de $-2$ par la fonction $f$ est égale à :
+
+**A.** $-1$ &emsp; **B.** $7$ &emsp; **C.** $-7$ &emsp; **D.** $-14$
+---CORR---
+Inutile de développer : on remplace directement $x$ par $-2$ dans chaque parenthèse.
+
+$$f(-2)=\bigl(3\times(-2)-1\bigr)\bigl(2\times(-2)+5\bigr)$$
+
+On calcule chaque parenthèse séparément :
+
+$$3\times(-2)-1=-7 \qquad\text{et}\qquad 2\times(-2)+5=1$$
+
+Puis on multiplie les deux résultats :
+
+$$f(-2)=-7\times 1={\color{#4A5D7A}-7}$$
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -64,55 +128,119 @@ $x=\dfrac{152}{72}={\color{#4A5D7A}\dfrac{19}{9}}$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Déterminer l'expression algébrique de la fonction affine $f$ représentée ci-dessous :
+Ci-dessous la courbe représentative d'une fonction $f$ définie sur $[-4\,;\,4]$.
 
-<img src="/mabemat/images/automatismes/2nde/s11d-q01.svg" alt="Fonction affine" style="width:60%;max-height:400px;max-width:100%;">
+<img src="/mabemat/images/automatismes/2nde/s11d-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+
+Lire graphiquement $f(-1)$ et $f(3)$.
 ---CORR---
-On lit graphiquement : ordonnée à l'origine $b=-4$, coefficient directeur $a=3$.
+Pour lire une image, on part de la valeur sur l'axe des abscisses, on monte (ou on descend) jusqu'à la courbe, puis on lit la hauteur sur l'axe des ordonnées.
 
-Donc $f(x)={\color{#4A5D7A}3x-4}$.
+Pour $x=-1$, la courbe passe par le point $(-1\,;\,2)$ :
+
+$$f(-1)={\color{#4A5D7A}2}$$
+
+Pour $x=3$, la courbe passe par le point $(3\,;\,4)$ :
+
+$$f(3)={\color{#4A5D7A}4}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3x-3$.
+Avec la courbe de la question précédente, résoudre graphiquement l'équation $f(x)=4$.
 ---CORR---
-$f(x)=0 \iff x=1$.
+Résoudre $f(x)=4$, c'est chercher tous les points de la courbe situés à la hauteur $4$. On trace donc mentalement la droite horizontale d'équation $y=4$ et on repère ses points d'intersection avec la courbe.
 
-$f$ est croissante ($a=3>0$) donc :
+Cette droite coupe la courbe en trois points, d'abscisses $-4$, $1$ et $3$.
 
-| $x$ | $-\infty$ | $1$ | $+\infty$ |
-|---|---|---|---|
-| $f(x)$ | $-$ | $0$ | $+$ |
+$$S={\color{#4A5D7A}\lbrace -4\,;\,1\,;\,3\rbrace}$$
+
+On donne bien les **abscisses** des points d'intersection : ce sont elles, les solutions.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Le nombre d'employés d'une entreprise a baissé de $26\,\%$. Quelle évolution permettrait de retrouver le nombre de départ ? (arrondir à $0{,}01\,\%$ près)
+Toujours avec la même courbe :
+
+**a.** Donner le maximum de $f$ sur $[-4\,;\,4]$ et la valeur en laquelle il est atteint.
+
+**b.** Donner l'intervalle sur lequel $f$ est croissante.
 ---CORR---
-Coefficient multiplicateur de la baisse : $0{,}74$.
+**a.** Le maximum est la plus grande hauteur atteinte par la courbe. Le point le plus haut est le sommet de coordonnées $(2\,;\,6)$.
 
-Coefficient réciproque : $\dfrac{1}{0{,}74}\approx 1{,}3514$.
+Le maximum de $f$ vaut ${\color{#4A5D7A}6}$, atteint pour $x={\color{#4A5D7A}2}$.
 
-Taux réciproque : $1{,}3514-1\approx{\color{#4A5D7A}35{,}14\,\%}$ d'augmentation.
+Attention à ne pas confondre les deux : le maximum est la valeur de $f$, pas l'abscisse.
+
+**b.** La courbe descend jusqu'au point le plus bas, d'abscisse $-2$, puis monte jusqu'au sommet d'abscisse $2$.
+
+$$f\ \text{est croissante sur}\ {\color{#4A5D7A}\left[-2\,;\,2\right]}$$
+
+Elle est décroissante sur $[-4\,;\,-2]$ et sur $[2\,;\,4]$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Un programme de calcul effectue les opérations suivantes : choisir un nombre, le multiplier par $4$, ajouter $3$, ajouter le triple du nombre de départ. Si on note $x$ le nombre de départ, quel est le résultat ?
----CORR---
-$x \xrightarrow{\times 4} 4x \xrightarrow{+3} 4x+3 \xrightarrow{+3x} 4x+3+3x=7x+3$
+Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x^2-6x$.
 
-Le résultat est ${\color{#4A5D7A}7x+3}$ (multiplier par $7$ puis ajouter $3$).
+**a.** Calculer $g(-1)$.
+
+**b.** Déterminer les antécédents de $0$ par $g$.
+---CORR---
+**a.** On remplace $x$ par $-1$ :
+
+$$g(-1)=(-1)^2-6\times(-1)=1+6={\color{#4A5D7A}7}$$
+
+**b.** On résout $g(x)=0$, c'est-à-dire $x^2-6x=0$. On factorise par $x$ :
+
+$$x(x-6)=0$$
+
+Un produit est nul si et seulement si l'un de ses facteurs est nul :
+
+$$x=0 \qquad\text{ou}\qquad x-6=0\ \text{donc}\ x=6$$
+
+Les antécédents de $0$ sont ${\color{#4A5D7A}0}$ et ${\color{#4A5D7A}6}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Résoudre l'équation : $\dfrac{2x-8}{4}=\dfrac{-8}{5}$
+Le prix d'un manteau a baissé de $23\,\%$. Il coûte maintenant $154$ euros.
+
+Le prix initial, en euros, est donné par le calcul :
+
+**A.** $\dfrac{154}{0{,}77}$ &emsp; **B.** $\dfrac{154}{1{,}23}$ &emsp; **C.** $154\times 0{,}77$ &emsp; **D.** $154\times 1{,}23$
 ---CORR---
-$5(2x-8)=4\times(-8)$
+Une baisse de $23\,\%$ correspond au coefficient multiplicateur $1-0{,}23=0{,}77$.
 
-$10x-40=-32$
+En notant $P$ le prix initial, on a donc :
 
-$10x=8$
+$$P\times 0{,}77=154$$
 
-$x=\dfrac{8}{10}={\color{#4A5D7A}\dfrac{4}{5}}$
+Pour retrouver $P$, on **divise** par le coefficient multiplicateur :
+
+$$P={\color{#4A5D7A}\dfrac{154}{0{,}77}}$$
+
+Les réponses C et D appliquent une évolution au lieu de la défaire, et la réponse B utilise le coefficient d'une hausse de $23\,\%$, qui n'est pas le coefficient réciproque d'une baisse de $23\,\%$.
+
+<span class="rep">Réponse : A</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+On considère la fonction $f$ définie par $f(x)=(2x+3)(4x-1)$.
+
+L'image de $-3$ par la fonction $f$ est égale à :
+
+**A.** $-39$ &emsp; **B.** $39$ &emsp; **C.** $9$ &emsp; **D.** $-9$
+---CORR---
+Inutile de développer : on remplace directement $x$ par $-3$ dans chaque parenthèse.
+
+$$f(-3)=\bigl(2\times(-3)+3\bigr)\bigl(4\times(-3)-1\bigr)$$
+
+On calcule chaque parenthèse séparément :
+
+$$2\times(-3)+3=-3 \qquad\text{et}\qquad 4\times(-3)-1=-13$$
+
+Puis on multiplie les deux résultats. Le produit de deux nombres négatifs est positif :
+
+$$f(-3)=-3\times(-13)={\color{#4A5D7A}39}$$
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

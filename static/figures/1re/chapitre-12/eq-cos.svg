@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 300" font-family="Georgia, 'DejaVu Serif', serif" font-size="14">
+<circle cx="140" cy="140" r="100" fill="none" stroke="#758467" stroke-width="2"/><line x1="20.0" y1="140.0" x2="260.0" y2="140.0" stroke="#2D2226" stroke-width="1.5"/>
+<line x1="140.0" y1="260.0" x2="140.0" y2="20.0" stroke="#2D2226" stroke-width="1.5"/>
+<text x="130.0" y="156.0" fill="#2D2226" font-size="13" text-anchor="middle" font-style="italic" font-weight="normal">O</text>
+<line x1="210.7" y1="25.0" x2="210.7" y2="255.0" stroke="#B85C5C" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="210.7" y="272.0" fill="#B85C5C" font-size="12" text-anchor="middle" font-style="italic" font-weight="normal">a = √2/2</text>
+<line x1="140.0" y1="140.0" x2="210.7" y2="69.3" stroke="#758467" stroke-width="2"/>
+<circle cx="210.7" cy="69.3" r="3.5" fill="#B85C5C"/><text x="236.7" y="63.3" fill="#B85C5C" font-size="13" text-anchor="middle" font-style="italic" font-weight="normal"> π/4</text>
+<line x1="140.0" y1="140.0" x2="210.7" y2="210.7" stroke="#758467" stroke-width="2"/>
+<circle cx="210.7" cy="210.7" r="3.5" fill="#B85C5C"/><text x="240.7" y="224.7" fill="#B85C5C" font-size="13" text-anchor="middle" font-style="italic" font-weight="normal">−π/4</text>
+
+</svg>

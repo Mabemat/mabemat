@@ -1,64 +1,112 @@
 ---
-title: "Semaine 18"
+title: "Semaine 18 - Coordonnées, colinéarité et alignement"
+layout: "automatismes-2nde"
 auto_number: 18
 weight: 18
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Voici quatre planètes et leur masse. Laquelle a la masse la plus importante ?
+Dans un repère, on donne $A(-2\,;\,3)$ et $B(4\,;\,-1)$.
 
-| Planète | Masse |
-|---|---|
-| Planète 1 | $891{,}33\times 10^{23}$ kg |
-| Planète 2 | $449{,}85\times 10^{23}$ kg |
-| Planète 3 | $106{,}959\,6\times 10^{24}$ kg |
-| Planète 4 | $945{,}99\times 10^{21}$ kg |
-
-A. Planète 1 $\quad$ B. Planète 3 $\quad$ C. Planète 2 $\quad$ D. Planète 4
+Déterminer les coordonnées du vecteur $\overrightarrow{AB}$.
 ---CORR---
-On ramène tout à la même puissance de $10$ :
+Les coordonnées d'un vecteur s'obtiennent en soustrayant les coordonnées de l'origine à celles de l'extrémité, dans cet ordre :
 
-- Planète 1 : $8{,}913\,3\times 10^{25}$ kg
-- Planète 2 : $4{,}498\,5\times 10^{25}$ kg
-- Planète 3 : $1{,}069\,596\times 10^{26}$ kg
-- Planète 4 : $9{,}459\,9\times 10^{23}$ kg
+$$\overrightarrow{AB}\ \left(x_B-x_A\ ;\ y_B-y_A\right)$$
 
-La plus grande est $1{,}069\,596\times 10^{26}$, donc la **Planète 3**. Réponse **B**.
+On remplace :
+
+$$x_B-x_A=4-(-2)=6 \qquad\qquad y_B-y_A=-1-3=-4$$
+
+$$\overrightarrow{AB}\ {\color{#4A5D7A}\left(6\ ;\ -4\right)}$$
+
+Attention au sens de la soustraction : c'est « arrivée moins départ ». Le vecteur $\overrightarrow{BA}$ aurait pour coordonnées $(-6\,;\,4)$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Le prix d'un article a subi une baisse de $27\,\%$. Le taux à appliquer pour que l'article retrouve son prix initial est donné par :
+On donne $\overrightarrow{u}\,(3\,;\,-2)$ et $\overrightarrow{v}\,(-9\,;\,6)$.
 
-A. $1-\dfrac{1}{0{,}73}$ $\quad$ B. $\dfrac{1}{0{,}73}-1$ $\quad$ C. $\dfrac{-0{,}27}{0{,}73}$ $\quad$ D. $\dfrac{1}{0{,}27}$
+Ces deux vecteurs sont-ils colinéaires ? Justifier par un calcul de déterminant.
 ---CORR---
-Coefficient multiplicateur de la baisse : $0{,}73$.
+Le déterminant de deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ vaut :
 
-Coefficient réciproque : $\dfrac{1}{0{,}73}$.
+$$\det\left(\overrightarrow{u}\,;\,\overrightarrow{v}\right)=xy'-yx'$$
 
-Taux réciproque : $\dfrac{1}{0{,}73}-1$.
+On remplace :
 
-La bonne réponse est **B**.
+$$3\times 6-(-2)\times(-9)=18-18={\color{#4A5D7A}0}$$
+
+Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.
+
+On le voit aussi directement : $\overrightarrow{v}=-3\,\overrightarrow{u}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Comparer $(-5{,}78)^2$ et $(-5{,}8)^2$.
+On donne $A(1\,;\,2)$, $B(4\,;\,8)$ et $C(6\,;\,12)$.
+
+Les points $A$, $B$ et $C$ sont-ils alignés ?
 ---CORR---
-Comme $5{,}78 < 5{,}8$, on a $5{,}78^2 < 5{,}8^2$, donc $(-5{,}78)^2 < (-5{,}8)^2$.
+Trois points sont alignés si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires. On calcule d'abord leurs coordonnées :
+
+$$\overrightarrow{AB}\,(4-1\,;\,8-2)=(3\,;\,6) \qquad \overrightarrow{AC}\,(6-1\,;\,12-2)=(5\,;\,10)$$
+
+On calcule le déterminant :
+
+$$3\times 10-6\times 5=30-30={\color{#4A5D7A}0}$$
+
+Le déterminant est nul, donc les vecteurs sont colinéaires : les points $A$, $B$ et $C$ sont ${\color{#4A5D7A}\text{alignés}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $x$ un réel non nul. Simplifier $\dfrac{35x^5}{\dfrac{7}{x^2}}$.
+Écrire sous la forme $a\sqrt{b}$, avec $b$ le plus petit entier possible :
+
+$$\sqrt{32}-\sqrt{8}$$
 ---CORR---
-$$\dfrac{35x^5}{\dfrac{7}{x^2}}=35x^5\times\dfrac{x^2}{7}=\dfrac{35x^7}{7}={\color{#4A5D7A}5x^7}$$
+On extrait le plus grand carré parfait de chaque racine :
+
+$$\sqrt{32}=\sqrt{16\times 2}=4\sqrt{2} \qquad\qquad \sqrt{8}=\sqrt{4\times 2}=2\sqrt{2}$$
+
+Les deux termes ont la même partie irrationnelle :
+
+$$4\sqrt{2}-2\sqrt{2}={\color{#4A5D7A}2\sqrt{2}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Calculer $A=\dfrac{286}{100}+\dfrac{29}{1\,000}$.
+Une droite passe par les points $A(-1\,;\,5)$ et $B(3\,;\,3)$.
+
+Son coefficient directeur est :
+
+**A.** $\dfrac{1}{2}$ &emsp; **B.** $-\dfrac{1}{2}$ &emsp; **C.** $-2$ &emsp; **D.** $2$
 ---CORR---
-$A=2{,}86+0{,}029={\color{#4A5D7A}2{,}889}$
+Le coefficient directeur se calcule par :
+
+$$m=\dfrac{y_B-y_A}{x_B-x_A}$$
+
+On remplace :
+
+$$m=\dfrac{3-5}{3-(-1)}=\dfrac{-2}{4}={\color{#4A5D7A}-\dfrac{1}{2}}$$
+
+La droite descend, donc le coefficient doit être négatif : cela élimine déjà les réponses A et D. La réponse C inverse la fraction.
+
+<span class="rep">Réponse : B</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Un prix a doublé. Cela signifie que ce prix a augmenté de :
+
+**A.** $200\,\%$ &emsp; **B.** $2\,\%$ &emsp; **C.** $50\,\%$ &emsp; **D.** $100\,\%$
+---CORR---
+Doubler, c'est multiplier par $2$ : le coefficient multiplicateur vaut $2$.
+
+Or ce coefficient s'écrit $1+\dfrac{t}{100}$ :
+
+$$2=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=1 \qquad\text{donc}\qquad t={\color{#4A5D7A}100}$$
+
+La réponse A confond le coefficient $2$, exprimé en pourcentage, avec le taux d'évolution : augmenter de $200\,\%$ reviendrait à tripler le prix.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -66,57 +114,105 @@ $A=2{,}86+0{,}029={\color{#4A5D7A}2{,}889}$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Voici quatre cellules et leur taille. Laquelle est la plus grande ?
+Dans un repère, on donne $A(5\,;\,-2)$ et $B(-1\,;\,4)$.
 
-| Cellule | Taille |
-|---|---|
-| Cellule 1 | $39{,}18\times 10^{-7}$ mm |
-| Cellule 2 | $470{,}16\times 10^{-8}$ mm |
-| Cellule 3 | $322{,}02\times 10^{-6}$ mm |
-| Cellule 4 | $505{,}2\times 10^{-9}$ mm |
-
-A. Cellule 1 $\quad$ B. Cellule 3 $\quad$ C. Cellule 2 $\quad$ D. Cellule 4
+Déterminer les coordonnées du vecteur $\overrightarrow{AB}$.
 ---CORR---
-On ramène tout à la même puissance :
+Les coordonnées d'un vecteur s'obtiennent en soustrayant les coordonnées de l'origine à celles de l'extrémité, dans cet ordre :
 
-- Cellule 1 : $3{,}918\times 10^{-6}$ mm
-- Cellule 2 : $4{,}701\,6\times 10^{-6}$ mm
-- Cellule 3 : $3{,}220\,2\times 10^{-4}$ mm
-- Cellule 4 : $5{,}052\times 10^{-7}$ mm
+$$\overrightarrow{AB}\ \left(x_B-x_A\ ;\ y_B-y_A\right)$$
 
-La plus grande est $3{,}220\,2\times 10^{-4}$, donc la **Cellule 3**. Réponse **B**.
+On remplace :
+
+$$x_B-x_A=-1-5=-6 \qquad\qquad y_B-y_A=4-(-2)=6$$
+
+$$\overrightarrow{AB}\ {\color{#4A5D7A}\left(-6\ ;\ 6\right)}$$
+
+Attention au sens de la soustraction : c'est « arrivée moins départ ». Le vecteur $\overrightarrow{BA}$ aurait pour coordonnées $(6\,;\,-6)$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Le prix d'un article a subi une baisse de $5\,\%$. Le taux à appliquer pour que l'article retrouve son prix initial est donné par :
+On donne $\overrightarrow{u}\,(4\,;\,-3)$ et $\overrightarrow{v}\,(-8\,;\,6)$.
 
-A. $1-\dfrac{1}{0{,}95}$ $\quad$ B. $\dfrac{1}{0{,}05}$ $\quad$ C. $\dfrac{-0{,}05}{0{,}95}$ $\quad$ D. $\dfrac{0{,}05}{0{,}95}$
+Ces deux vecteurs sont-ils colinéaires ? Justifier par un calcul de déterminant.
 ---CORR---
-Coefficient multiplicateur de la baisse : $0{,}95$.
+Le déterminant de deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ vaut :
 
-Coefficient réciproque : $\dfrac{1}{0{,}95}$.
+$$\det\left(\overrightarrow{u}\,;\,\overrightarrow{v}\right)=xy'-yx'$$
 
-Taux réciproque : $\dfrac{1}{0{,}95}-1=\dfrac{1-0{,}95}{0{,}95}=\dfrac{0{,}05}{0{,}95}$.
+On remplace :
 
-La bonne réponse est **D**.
+$$4\times 6-(-3)\times(-8)=24-24={\color{#4A5D7A}0}$$
+
+Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.
+
+On le voit aussi directement : $\overrightarrow{v}=-2\,\overrightarrow{u}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Comparer $(20{,}1)^2$ et $(20{,}05)^2$.
+On donne $A(2\,;\,1)$, $B(5\,;\,7)$ et $C(8\,;\,13)$.
+
+Les points $A$, $B$ et $C$ sont-ils alignés ?
 ---CORR---
-Comme $20{,}1>20{,}05$, on a $(20{,}1)^2>(20{,}05)^2$.
+Trois points sont alignés si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires. On calcule d'abord leurs coordonnées :
+
+$$\overrightarrow{AB}\,(5-2\,;\,7-1)=(3\,;\,6) \qquad \overrightarrow{AC}\,(8-2\,;\,13-1)=(6\,;\,12)$$
+
+On calcule le déterminant :
+
+$$3\times 12-6\times 6=36-36={\color{#4A5D7A}0}$$
+
+Le déterminant est nul, donc les vecteurs sont colinéaires : les points $A$, $B$ et $C$ sont ${\color{#4A5D7A}\text{alignés}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $x$ un réel non nul. Simplifier $\dfrac{8x^3}{\dfrac{2}{x^5}}$.
+Écrire sous la forme $a\sqrt{b}$, avec $b$ le plus petit entier possible :
+
+$$\sqrt{45}-\sqrt{20}$$
 ---CORR---
-$$\dfrac{8x^3}{\dfrac{2}{x^5}}=8x^3\times\dfrac{x^5}{2}=\dfrac{8x^8}{2}={\color{#4A5D7A}4x^8}$$
+On extrait le plus grand carré parfait de chaque racine :
+
+$$\sqrt{45}=\sqrt{9\times 5}=3\sqrt{5} \qquad\qquad \sqrt{20}=\sqrt{4\times 5}=2\sqrt{5}$$
+
+Les deux termes ont la même partie irrationnelle :
+
+$$3\sqrt{5}-2\sqrt{5}={\color{#4A5D7A}\sqrt{5}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Calculer $A=\dfrac{7}{10}+\dfrac{45}{100}$.
+Une droite passe par les points $A(2\,;\,7)$ et $B(6\,;\,1)$.
+
+Son coefficient directeur est :
+
+**A.** $\dfrac{3}{2}$ &emsp; **B.** $-\dfrac{2}{3}$ &emsp; **C.** $-\dfrac{3}{2}$ &emsp; **D.** $-6$
 ---CORR---
-$A=0{,}7+0{,}45={\color{#4A5D7A}1{,}15}$
+Le coefficient directeur se calcule par :
+
+$$m=\dfrac{y_B-y_A}{x_B-x_A}$$
+
+On remplace :
+
+$$m=\dfrac{1-7}{6-2}=\dfrac{-6}{4}={\color{#4A5D7A}-\dfrac{3}{2}}$$
+
+La droite descend, donc le coefficient doit être négatif : cela élimine déjà la réponse A. La réponse B inverse la fraction, et la réponse D oublie de diviser par l'écart des abscisses.
+
+<span class="rep">Réponse : C</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Un prix a triplé. Cela signifie que ce prix a augmenté de :
+
+**A.** $200\,\%$ &emsp; **B.** $100\,\%$ &emsp; **C.** $3\,\%$ &emsp; **D.** $300\,\%$
+---CORR---
+Tripler, c'est multiplier par $3$ : le coefficient multiplicateur vaut $3$.
+
+Or ce coefficient s'écrit $1+\dfrac{t}{100}$ :
+
+$$3=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=2 \qquad\text{donc}\qquad t={\color{#4A5D7A}200}$$
+
+La réponse D confond le coefficient $3$, exprimé en pourcentage, avec le taux d'évolution : le prix augmente de deux fois sa valeur, pas de trois fois.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

@@ -1,64 +1,114 @@
 ---
-title: "Semaine 12"
+title: "Semaine 12 - Signe d'une fonction et premières statistiques"
+layout: "automatismes-2nde"
 auto_number: 12
 weight: 12
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Déterminer l'expression algébrique de la fonction affine $f$ définie sur $\mathbb{R}$, sachant que $f(9)=-27$ et $f(8)=-25$.
+Ci-dessous la courbe représentative d'une fonction $f$ définie sur $[-4\,;\,4]$.
+
+<img src="/mabemat/images/automatismes/2nde/s12-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+
+Résoudre graphiquement l'inéquation $f(x)\leqslant 0$.
 ---CORR---
-$a=\dfrac{f(9)-f(8)}{9-8}=\dfrac{-27-(-25)}{1}=-2$
+Résoudre $f(x)\leqslant 0$, c'est chercher les abscisses des points de la courbe situés **sur ou en dessous** de l'axe des abscisses.
 
-$f(9)=-2\times 9+b=-18+b=-27 \implies b=-9$
+On repère d'abord les points où la courbe coupe cet axe : ils ont pour abscisses $-3$, $1$ et $3$.
 
-Donc $f(x)={\color{#4A5D7A}-2x-9}$.
+La courbe est en dessous de l'axe entre $-4$ et $-3$, puis entre $1$ et $3$. Ailleurs, elle est au-dessus. Comme l'inégalité est large, les valeurs qui annulent $f$ sont incluses.
+
+$$S={\color{#4A5D7A}\left[-4\,;\,-3\right]\cup\left[1\,;\,3\right]}$$
+
+L'ensemble solution est fait d'abscisses, pas de hauteurs.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-a. Donner une écriture simplifiée de $I=\,]11\,;\,25]\cup[33\,;\,43]$
-
-b. Donner une écriture simplifiée de $I=[12\,;\,28]\cap[14\,;\,17]$
+Avec la même courbe, combien l'équation $f(x)=1$ a-t-elle de solutions ?
 ---CORR---
-a. Les deux intervalles sont disjoints : $I={\color{#4A5D7A}]11\,;\,25]\cup[33\,;\,43]}$ (ne se simplifie pas).
+On trace mentalement la droite horizontale d'équation $y=1$ et on compte ses points d'intersection avec la courbe.
 
-b. $[14\,;\,17]\subset[12\,;\,28]$ donc $I={\color{#4A5D7A}[14\,;\,17]}$.
+Cette droite rencontre la courbe une fois sur la partie montante de gauche, une fois sur la partie descendante qui suit le sommet, et une fois sur la partie montante de droite.
+
+L'équation $f(x)=1$ a donc ${\color{#4A5D7A}3}$ solutions.
+
+Aucune de ces trois abscisses ne tombe sur une graduation : on ne demande pas de les lire, compter les intersections suffit.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soient $f(x)=-7x-1$ et $g(x)=-2x+3$.
+On a relevé le nombre de frères et sœurs des $25$ élèves d'une classe :
 
-a. Résoudre $f(x)<g(x)$.
+| Nombre de frères et sœurs | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| Effectif | 6 | 10 | 7 | 2 |
 
-b. Quelle interprétation graphique peut-on en donner ?
+Calculer la fréquence, en pourcentage, des élèves ayant exactement $1$ frère ou sœur, puis celle des élèves en ayant au moins $2$.
 ---CORR---
-a. $-7x-1<-2x+3 \implies -5x<4 \implies x>-\dfrac{4}{5}$
+Une fréquence est un quotient : l'effectif de la valeur divisé par l'effectif total, ici $25$.
 
-$S=\left]-\dfrac{4}{5}\,;\,+\infty\right[$
+Pour la valeur $1$ :
 
-b. La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur $\left]-\dfrac{4}{5}\,;\,+\infty\right[$.
+$$f=\dfrac{10}{25}=\dfrac{2\times \cancel{5}}{5\times \cancel{5}}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$$
+
+« Au moins $2$ » signifie $2$ ou $3$ : on additionne d'abord les effectifs.
+
+$$7+2=9 \qquad\text{puis}\qquad f=\dfrac{9}{25}=0{,}36={\color{#4A5D7A}36\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Développer et réduire : $A=(7y-6)(-3y-5)$
+Après une baisse de $15\,\%$, un article coûte $68$ €.
+
+Quel était son prix avant la baisse ?
 ---CORR---
-$A=7y\times(-3y)+7y\times(-5)+(-6)\times(-3y)+(-6)\times(-5)$
+Une baisse de $15\,\%$ correspond au coefficient multiplicateur $1-0{,}15=0{,}85$. En notant $P$ le prix initial :
 
-$A=-21y^2-35y+18y+30$
+$$P\times 0{,}85=68$$
 
-$A={\color{#4A5D7A}-21y^2-17y+30}$
+On divise par le coefficient multiplicateur :
+
+$$P=\dfrac{68}{0{,}85}={\color{#4A5D7A}80}$$
+
+Le prix avant la baisse était donc de $80$ €. Vérification : $80\times 0{,}85=68$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-a. Le chiffre d'affaires d'une entreprise est passé de $270\,000$€ en 2021 à $264\,600$€ en 2022. Calculer le taux d'évolution en pourcentage.
+On considère les trois nombres suivants :
 
-b. Après une diminution de $6\,\%$, mon vélo électrique coûte $922{,}14$€. Calculer son prix avant la diminution.
+$$A=0{,}62 \qquad B=\dfrac{58}{100} \qquad C=\dfrac{3}{5}$$
+
+Le classement par ordre croissant est :
+
+**A.** $C < B < A$ &emsp; **B.** $B < C < A$ &emsp; **C.** $A < B < C$ &emsp; **D.** $B < A < C$
 ---CORR---
-a. $t=\dfrac{264\,600-270\,000}{270\,000}=-0{,}02={\color{#4A5D7A}-2\,\%}$
+Pour comparer, on écrit tout sous forme décimale.
 
-b. Diminuer de $6\,\%$ revient à multiplier par $0{,}94$. Prix initial : $\dfrac{922{,}14}{0{,}94}={\color{#4A5D7A}981}$€.
+$$B=\dfrac{58}{100}=0{,}58 \qquad C=\dfrac{3}{5}=\dfrac{6}{10}=0{,}6$$
+
+On range ensuite les trois décimaux :
+
+$$0{,}58 < 0{,}6 < 0{,}62 \qquad\text{c'est-à-dire}\qquad {\color{#4A5D7A}B < C < A}$$
+
+<span class="rep">Réponse : B</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Un sac contient $5$ jetons numérotés de $1$ à $5$. On en tire un au hasard.
+
+La probabilité d'obtenir un numéro supérieur ou égal à $4$ est :
+
+**A.** $\dfrac{1}{5}$ &emsp; **B.** $\dfrac{3}{5}$ &emsp; **C.** $\dfrac{2}{5}$ &emsp; **D.** $\dfrac{4}{5}$
+---CORR---
+Les jetons sont indiscernables : les $5$ issues sont équiprobables.
+
+Les numéros supérieurs ou égaux à $4$ sont $4$ et $5$ : il y a $2$ cas favorables.
+
+$$P={\color{#4A5D7A}\dfrac{2}{5}}$$
+
+La réponse A ne compte que le jeton $5$, en oubliant que $4$ vérifie aussi « supérieur ou égal à $4$ ».
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -66,57 +116,109 @@ b. Diminuer de $6\,\%$ revient à multiplier par $0{,}94$. Prix initial : $\dfra
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Déterminer l'expression algébrique de la fonction affine $f$ définie sur $\mathbb{R}$, sachant que $f(9)=32$ et $f(7)=26$.
+Ci-dessous la courbe représentative d'une fonction $f$ définie sur $[-4\,;\,4]$.
+
+<img src="/mabemat/images/automatismes/2nde/s12d-q01.svg" alt="Courbe représentative de f sur [-4 ; 4]" style="display:block;margin:1rem auto;width:100%;max-width:420px;">
+
+Résoudre graphiquement l'inéquation $f(x)>0$.
 ---CORR---
-$a=\dfrac{f(9)-f(7)}{9-7}=\dfrac{32-26}{2}=3$
+Résoudre $f(x)>0$, c'est chercher les abscisses des points de la courbe situés **strictement au-dessus** de l'axe des abscisses.
 
-$f(9)=3\times 9+b=27+b=32 \implies b=5$
+On repère d'abord les points où la courbe coupe cet axe : ils ont pour abscisses $-2$, $0$ et $3$.
 
-Donc $f(x)={\color{#4A5D7A}3x+5}$.
+La courbe est au-dessus de l'axe entre $-2$ et $0$, puis à partir de $3$ jusqu'au bord droit du domaine. Ailleurs, elle est en dessous.
+
+Comme l'inégalité est **stricte**, les valeurs qui annulent $f$ sont exclues : les crochets sont ouverts en $-2$, $0$ et $3$. En revanche $4$ est la borne du domaine, où la courbe est bien au-dessus de l'axe, donc ce crochet reste fermé.
+
+$$S={\color{#4A5D7A}\left]-2\,;\,0\right[\cup\left]3\,;\,4\right]}$$
+
+L'ensemble solution est fait d'abscisses, pas de hauteurs.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-a. Donner une écriture simplifiée de $I=\,]1\,;\,27]\cup\,]6\,;\,13]$
-
-b. Donner une écriture simplifiée de $I=\,]-\infty\,;\,22]\cap\,]31\,;\,40]$
+Avec la même courbe, résoudre graphiquement l'équation $f(x)=2$.
 ---CORR---
-a. $]6\,;\,13]\subset\,]1\,;\,27]$ donc $I={\color{#4A5D7A}]1\,;\,27]}$.
+On trace mentalement la droite horizontale d'équation $y=2$ et on repère ses points d'intersection avec la courbe.
 
-b. Les deux intervalles sont disjoints : $I={\color{#4A5D7A}\emptyset}$.
+Cette droite est tangente au sommet de la première bosse, au point $(-1\,;\,2)$, et rencontre à nouveau la courbe à l'extrémité droite, au point $(4\,;\,2)$. Entre les deux, la courbe reste toujours en dessous de la hauteur $2$.
+
+$$S={\color{#4A5D7A}\lbrace -1\,;\,4\rbrace}$$
+
+Le sommet ne compte que pour une seule solution, même si la courbe y « touche » la droite sans la traverser.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soient $f(x)=6x+3$ et $g(x)=x+5$.
+On a relevé le nombre d'animaux de compagnie des $20$ élèves d'un groupe :
 
-a. Résoudre $f(x)<g(x)$.
+| Nombre d'animaux | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| Effectif | 7 | 8 | 4 | 1 |
 
-b. Quelle interprétation graphique peut-on en donner ?
+Calculer la fréquence, en pourcentage, des élèves ayant exactement $1$ animal, puis celle des élèves en ayant au moins $2$.
 ---CORR---
-a. $6x+3<x+5 \implies 5x<2 \implies x<\dfrac{2}{5}$
+Une fréquence est un quotient : l'effectif de la valeur divisé par l'effectif total, ici $20$.
 
-$S=\left]-\infty\,;\,\dfrac{2}{5}\right[$
+Pour la valeur $1$ :
 
-b. La courbe $\mathscr{C}_f$ est en dessous de la courbe $\mathscr{C}_g$ sur $\left]-\infty\,;\,\dfrac{2}{5}\right[$.
+$$f=\dfrac{8}{20}=\dfrac{2\times \cancel{4}}{5\times \cancel{4}}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$$
+
+« Au moins $2$ » signifie $2$ ou $3$ : on additionne d'abord les effectifs.
+
+$$4+1=5 \qquad\text{puis}\qquad f=\dfrac{5}{20}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Développer et réduire : $A=(9k+4)(-7k-3)$
+Après une hausse de $12\,\%$, un article coûte $84$ €.
+
+Quel était son prix avant la hausse ?
 ---CORR---
-$A=9k\times(-7k)+9k\times(-3)+4\times(-7k)+4\times(-3)$
+Une hausse de $12\,\%$ correspond au coefficient multiplicateur $1+0{,}12=1{,}12$. En notant $P$ le prix initial :
 
-$A=-63k^2-27k-28k-12$
+$$P\times 1{,}12=84$$
 
-$A={\color{#4A5D7A}-63k^2-55k-12}$
+On divise par le coefficient multiplicateur :
+
+$$P=\dfrac{84}{1{,}12}={\color{#4A5D7A}75}$$
+
+Le prix avant la hausse était donc de $75$ €. Vérification : $75\times 1{,}12=84$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-a. En 14 ans, la population d'une ville est passée de $52\,000$ à $43\,680$ habitants. Calculer le taux d'évolution en pourcentage.
+On considère les trois nombres suivants :
 
-b. Après une augmentation de $60\,\%$, un article coûte $15{,}84$€. Calculer son prix initial.
+$$A=0{,}48 \qquad B=\dfrac{51}{100} \qquad C=\dfrac{9}{20}$$
+
+Le classement par ordre croissant est :
+
+**A.** $A < C < B$ &emsp; **B.** $C < B < A$ &emsp; **C.** $B < A < C$ &emsp; **D.** $C < A < B$
 ---CORR---
-a. $t=\dfrac{43\,680-52\,000}{52\,000}=-0{,}16={\color{#4A5D7A}-16\,\%}$
+Pour comparer, on écrit tout sous forme décimale.
 
-b. Augmenter de $60\,\%$ revient à multiplier par $1{,}6$. Prix initial : $\dfrac{15{,}84}{1{,}6}={\color{#4A5D7A}9{,}90}$€.
+$$B=\dfrac{51}{100}=0{,}51 \qquad C=\dfrac{9}{20}=\dfrac{45}{100}=0{,}45$$
+
+On range ensuite les trois décimaux :
+
+$$0{,}45 < 0{,}48 < 0{,}51 \qquad\text{c'est-à-dire}\qquad {\color{#4A5D7A}C < A < B}$$
+
+<span class="rep">Réponse : D</span>
+{{< /auto2-exo >}}
+
+{{< auto2-exo numero="06" >}}
+Un sac contient $8$ jetons numérotés de $1$ à $8$. On en tire un au hasard.
+
+La probabilité d'obtenir un numéro supérieur ou égal à $6$ est :
+
+**A.** $\dfrac{3}{8}$ &emsp; **B.** $\dfrac{5}{8}$ &emsp; **C.** $\dfrac{1}{8}$ &emsp; **D.** $\dfrac{2}{8}$
+---CORR---
+Les jetons sont indiscernables : les $8$ issues sont équiprobables.
+
+Les numéros supérieurs ou égaux à $6$ sont $6$, $7$ et $8$ : il y a $3$ cas favorables.
+
+$$P={\color{#4A5D7A}\dfrac{3}{8}}$$
+
+La réponse D oublie que $6$ vérifie aussi « supérieur ou égal à $6$ ».
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

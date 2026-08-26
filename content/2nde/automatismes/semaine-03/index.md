@@ -1,5 +1,5 @@
 ---
-title: "Semaine 3 — Expressions algébriques, suites et intervalles"
+title: "Semaine 3 - Intervalles et calcul littéral"
 layout: "automatismes-2nde"
 auto_number: 3
 weight: 3
@@ -8,59 +8,113 @@ weight: 3
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-On donne la relation : $-4a+5b=5$. Exprimer $b$ en fonction de $a$.
+On donne les intervalles $I=\left]-4\,;\,3\right]$ et $J=\left[0\,;\,+\infty\right[$.
+
+Déterminer $I\cap J$ puis $I\cup J$.
 ---CORR---
-On ajoute $4a$ dans chaque membre :
+On traduit chaque intervalle par une inégalité : $x\in I$ signifie $-4 < x\leqslant 3$, et $x\in J$ signifie $x\geqslant 0$.
 
-$$5b=5+4a$$
+On place les deux intervalles sur une droite graduée, $I$ en bleu et $J$ en rouge :
 
-Puis on divise par $5$ :
+<img src="/mabemat/images/automatismes/2nde/s03-q01.svg" alt="Droite graduée : I en bleu, J en rouge, leur intersection et leur réunion" style="display:block;margin:1rem auto;width:100%;max-width:560px;">
 
-$${\color{#4A5D7A}b=\dfrac{5+4a}{5}}$$
+**Intersection** : les réels qui sont dans $I$ **et** dans $J$ vérifient à la fois $-4 < x\leqslant 3$ et $x\geqslant 0$, donc $0\leqslant x\leqslant 3$. C'est la zone où les deux traits se superposent.
+
+$$I\cap J={\color{#4A5D7A}\left[0\,;\,3\right]}$$
+
+**Réunion** : les réels qui sont dans $I$ **ou** dans $J$. Comme les deux intervalles se chevauchent (ils ont $\left[0\,;\,3\right]$ en commun), leur réunion est d'un seul tenant, de la plus petite borne à la plus grande.
+
+$$I\cup J={\color{#4A5D7A}\left]-4\,;\,+\infty\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{4}-\dfrac{3x+3}{x}$ ?
+Développer et réduire :
 
-A. $-\dfrac{13x+12}{4x}$ $\quad$ B. $\dfrac{11x+12}{4x}$ $\quad$ C. $\dfrac{-11x+12}{4x}$ $\quad$ D. $-\dfrac{11x+12}{4x}$
+$$B=(2x-5)(3x+4)$$
 ---CORR---
-On met au même dénominateur :
+On utilise la double distributivité : chaque terme de la première parenthèse multiplie chaque terme de la seconde.
 
-$$\dfrac{1}{4}-\dfrac{3x+3}{x}=\dfrac{x-4(3x+3)}{4x}=\dfrac{x-12x-12}{4x}=\dfrac{-11x-12}{4x}=-\dfrac{11x+12}{4x}$$
+$$B=2x\times 3x+2x\times 4+(-5)\times 3x+(-5)\times 4$$
 
-La bonne réponse est **D**.
+$$B=6x^2+8x-15x-20$$
+
+On réduit en regroupant les termes en $x$ :
+
+$$B={\color{#4A5D7A}6x^2-7x-20}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On considère la relation $F=a+\dfrac{b}{cd}$. Lorsque $a=\dfrac{1}{3}$, $b=4$, $c=9$ et $d=\dfrac{1}{9}$, la valeur de $F$ est égale à :
+Développer et réduire :
+
+$$C=(3x+7)^2-(2x-1)(2x+1)$$
 ---CORR---
-$$F=\dfrac{1}{3}+\dfrac{4}{9\times \dfrac{1}{9}}=\dfrac{1}{3}+\dfrac{4}{1}=\dfrac{1}{3}+4={\color{#4A5D7A}\dfrac{13}{3}}$$
+On reconnaît deux identités remarquables.
+
+Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=7$ :
+
+$$(3x+7)^2=(3x)^2+2\times 3x\times 7+7^2=9x^2+42x+49$$
+
+Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=2x$ et $b=1$ :
+
+$$(2x-1)(2x+1)=(2x)^2-1^2=4x^2-1$$
+
+On soustrait, en faisant attention au signe devant la parenthèse :
+
+$$C=9x^2+42x+49-\left(4x^2-1\right)=9x^2+42x+49-4x^2+1$$
+
+$$C={\color{#4A5D7A}5x^2+42x+50}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Dans la suite évolutive $2, 4, 6, 8, \ldots$, quel est le $21^{\text{e}}$ nombre ?
----CORR---
-Le $n^\text{e}$ terme s'écrit $2\times n$.
+**a.** Traduire par un intervalle l'ensemble des réels $x$ tels que $x>-\dfrac{1}{2}$.
 
-Le $21^{\text{e}}$ nombre est donc $2\times 21={\color{#4A5D7A}42}$.
+**b.** Le nombre $-0{,}5$ appartient-il à cet intervalle ?
+---CORR---
+**a.** L'inégalité est stricte, donc la borne $-\dfrac{1}{2}$ est exclue : crochet ouvert. Il n'y a pas de borne supérieure.
+
+$$x\in{\color{#4A5D7A}\left]-\dfrac{1}{2}\,;\,+\infty\right[}$$
+
+**b.** On a $-0{,}5=-\dfrac{1}{2}$ : c'est exactement la borne de l'intervalle. Comme le crochet est ouvert, cette borne n'appartient pas à l'intervalle.
+
+$${\color{#4A5D7A}-0{,}5\notin\left]-\dfrac{1}{2}\,;\,+\infty\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Combien y a-t-il d'entiers dans l'intervalle $\left[-4\,;\,3\right]$ ?
+Une factorisation de $16x^2-49$ est :
+
+**A.** $(16x+49)(16x-49)$ &emsp; **B.** $(4x-7)(4x+7)$ &emsp; **C.** $(4x-7)^2$ &emsp; **D.** $(16x+7)(16x-7)$
 ---CORR---
-Les entiers sont : $-4, -3, -2, -1, 0, 1, 2, 3$.
+On reconnaît une différence de deux carrés, qui se factorise avec l'identité remarquable :
 
-Il y en a ${\color{#4A5D7A}8}$.
+$$a^2-b^2=(a-b)(a+b)$$
 
-Ou bien : $3-(-4)+1=8$ (différence des bornes $+1$ car les deux bornes sont comprises).
+Ici, il faut écrire chaque terme comme un carré :
+
+$$16x^2=(4x)^2 \qquad\text{et}\qquad 49=7^2$$
+
+On applique donc l'identité avec $a=4x$ et $b=7$ :
+
+$$16x^2-49={\color{#4A5D7A}(4x-7)(4x+7)}$$
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Donner une écriture simplifiée de $[-6\,;\,1]\cap[-7\,;\,2[$
----CORR---
-Tout nombre de $[-6\,;\,1]$ appartient aussi à $[-7\,;\,2[$, donc :
+$p\,\%$ de $80$ est égal à $6$. On a :
 
-$$[-6\,;\,1]\cap[-7\,;\,2[\;=\;{\color{#4A5D7A}[-6\,;\,1]}$$
+**A.** $p=0{,}75$ &emsp; **B.** $p=13{,}3$ &emsp; **C.** $p=75$ &emsp; **D.** $p=7{,}5$
+---CORR---
+Prendre $p\,\%$ de $80$, c'est calculer $\dfrac{p}{100}\times 80$. On traduit l'énoncé par une égalité :
+
+$$\dfrac{p}{100}\times 80=6$$
+
+On isole $p$ :
+
+$$p\times 80=6\times 100 \qquad\text{donc}\qquad p=\dfrac{600}{80}={\color{#4A5D7A}7{,}5}$$
+
+On vérifie : $7{,}5\,\%$ de $80$ vaut $\dfrac{7{,}5\times 80}{100}=\dfrac{600}{100}=6$.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -68,57 +122,113 @@ $$[-6\,;\,1]\cap[-7\,;\,2[\;=\;{\color{#4A5D7A}[-6\,;\,1]}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-On donne la relation : $-4x-5y=8$. Exprimer $y$ en fonction de $x$.
+On donne les intervalles $I=\left[-2\,;\,5\right[$ et $J=\left]-\infty\,;\,1\right]$.
+
+Déterminer $I\cap J$ puis $I\cup J$.
 ---CORR---
-On ajoute $4x$ dans chaque membre :
+On traduit chaque intervalle par une inégalité : $x\in I$ signifie $-2\leqslant x<5$, et $x\in J$ signifie $x\leqslant 1$.
 
-$$-5y=8+4x$$
+On place les deux intervalles sur une droite graduée, $I$ en bleu et $J$ en rouge :
 
-Puis on divise par $-5$ :
+<img src="/mabemat/images/automatismes/2nde/s03d-q01.svg" alt="Droite graduée : I en bleu, J en rouge, leur intersection et leur réunion" style="display:block;margin:1rem auto;width:100%;max-width:560px;">
 
-$${\color{#4A5D7A}y=\dfrac{-8-4x}{5}}$$
+**Intersection** : les réels qui sont dans $I$ **et** dans $J$ vérifient à la fois $-2\leqslant x<5$ et $x\leqslant 1$, donc $-2\leqslant x\leqslant 1$. C'est la zone où les deux traits se superposent.
+
+$$I\cap J={\color{#4A5D7A}\left[-2\,;\,1\right]}$$
+
+**Réunion** : les réels qui sont dans $I$ **ou** dans $J$. Comme les deux intervalles se chevauchent (ils ont $\left[-2\,;\,1\right]$ en commun), leur réunion est d'un seul tenant, de la plus petite borne à la plus grande.
+
+$$I\cup J={\color{#4A5D7A}\left]-\infty\,;\,5\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{1}{7}-\dfrac{7x+5}{x}$ ?
+Développer et réduire :
 
-A. $\dfrac{-48x+35}{7x}$ $\quad$ B. $\dfrac{48x+35}{7x}$ $\quad$ C. $-\dfrac{50x+35}{7x}$ $\quad$ D. $-\dfrac{48x+35}{7x}$
+$$B=(3x-2)(5x+3)$$
 ---CORR---
-On met au même dénominateur :
+On utilise la double distributivité : chaque terme de la première parenthèse multiplie chaque terme de la seconde.
 
-$$\dfrac{1}{7}-\dfrac{7x+5}{x}=\dfrac{x-7(7x+5)}{7x}=\dfrac{x-49x-35}{7x}=\dfrac{-48x-35}{7x}=-\dfrac{48x+35}{7x}$$
+$$B=3x\times 5x+3x\times 3+(-2)\times 5x+(-2)\times 3$$
 
-La bonne réponse est **D**.
+$$B=15x^2+9x-10x-6$$
+
+On réduit en regroupant les termes en $x$ :
+
+$$B={\color{#4A5D7A}15x^2-x-6}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On considère la relation $F=a+\dfrac{b}{cd}$. Lorsque $a=\dfrac{1}{7}$, $b=2$, $c=-5$ et $d=\dfrac{1}{5}$, la valeur de $F$ est égale à :
+Développer et réduire :
+
+$$C=(2x+5)^2-(3x-2)(3x+2)$$
 ---CORR---
-$$F=\dfrac{1}{7}+\dfrac{2}{-5\times \dfrac{1}{5}}=\dfrac{1}{7}+\dfrac{2}{-1}=\dfrac{1}{7}-2={\color{#4A5D7A}-\dfrac{13}{7}}$$
+On reconnaît deux identités remarquables.
+
+Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=2x$ et $b=5$ :
+
+$$(2x+5)^2=(2x)^2+2\times 2x\times 5+5^2=4x^2+20x+25$$
+
+Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=3x$ et $b=2$ :
+
+$$(3x-2)(3x+2)=(3x)^2-2^2=9x^2-4$$
+
+On soustrait, en faisant attention au signe devant la parenthèse :
+
+$$C=4x^2+20x+25-\left(9x^2-4\right)=4x^2+20x+25-9x^2+4$$
+
+$$C={\color{#4A5D7A}-5x^2+20x+29}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Dans la suite évolutive $1, 3, 5, 7, \ldots$, quel est le $17^{\text{e}}$ nombre ?
----CORR---
-Le $n^\text{e}$ terme s'écrit $2n-1$.
+**a.** Traduire par un intervalle l'ensemble des réels $x$ tels que $x\leqslant\dfrac{3}{4}$.
 
-Le $17^{\text{e}}$ nombre est donc $2\times 17-1={\color{#4A5D7A}33}$.
+**b.** Le nombre $0{,}75$ appartient-il à cet intervalle ?
+---CORR---
+**a.** L'inégalité est large, donc la borne $\dfrac{3}{4}$ est incluse : crochet fermé. Il n'y a pas de borne inférieure.
+
+$$x\in{\color{#4A5D7A}\left]-\infty\,;\,\dfrac{3}{4}\right]}$$
+
+**b.** On a $0{,}75=\dfrac{3}{4}$ : c'est exactement la borne de l'intervalle. Comme le crochet est fermé, cette borne appartient à l'intervalle.
+
+$${\color{#4A5D7A}0{,}75\in\left]-\infty\,;\,\dfrac{3}{4}\right]}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Combien y a-t-il d'entiers dans l'intervalle $\left[-3{,}4\,;\,2\right]$ ?
----CORR---
-Les entiers sont : $-3, -2, -1, 0, 1, 2$.
+Une factorisation de $25x^2-64$ est :
 
-Il y en a ${\color{#4A5D7A}6}$.
+**A.** $(25x+8)(25x-8)$ &emsp; **B.** $(5x-8)^2$ &emsp; **C.** $(5x-8)(5x+8)$ &emsp; **D.** $(25x+64)(25x-64)$
+---CORR---
+On reconnaît une différence de deux carrés, qui se factorise avec l'identité remarquable :
+
+$$a^2-b^2=(a-b)(a+b)$$
+
+Ici, il faut écrire chaque terme comme un carré :
+
+$$25x^2=(5x)^2 \qquad\text{et}\qquad 64=8^2$$
+
+On applique donc l'identité avec $a=5x$ et $b=8$ :
+
+$$25x^2-64={\color{#4A5D7A}(5x-8)(5x+8)}$$
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Donner une écriture simplifiée de $\left]-\infty\,;\,8\right[\cap\left]-\infty\,;\,9\right]$
----CORR---
-Tout nombre strictement inférieur à $8$ est aussi inférieur ou égal à $9$, donc :
+$p\,\%$ de $150$ est égal à $9$. On a :
 
-$$]-\infty\,;\,8[\;\cap\;]-\infty\,;\,9]\;=\;{\color{#4A5D7A}]-\infty\,;\,8[}$$
+**A.** $p=6$ &emsp; **B.** $p=60$ &emsp; **C.** $p=1{,}5$ &emsp; **D.** $p=0{,}6$
+---CORR---
+Prendre $p\,\%$ de $150$, c'est calculer $\dfrac{p}{100}\times 150$. On traduit l'énoncé par une égalité :
+
+$$\dfrac{p}{100}\times 150=9$$
+
+On isole $p$ :
+
+$$p\times 150=9\times 100 \qquad\text{donc}\qquad p=\dfrac{900}{150}={\color{#4A5D7A}6}$$
+
+On vérifie : $6\,\%$ de $150$ vaut $\dfrac{6\times 150}{100}=\dfrac{900}{100}=9$.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

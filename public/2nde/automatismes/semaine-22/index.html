@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 22 — MaBémat</title>
+<title>Semaine 22 - Valeur absolue, multiples et diviseurs — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -159,6 +159,9 @@ pre[style*="background-color"] {
 
 
 
+  
+  
+
 
 
 
@@ -191,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  
+  <p class="wk-subtitle">Valeur absolue, multiples et diviseurs</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -215,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -231,10 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par : $f(x) = -3x^2 + 2x - 9$.</p>
-<p>On note $\mathscr{C}_f$ la courbe représentative de $f$ dans un repère.</p>
-<p>Le point $A(5\,;\,-75)$ appartient-il à $\mathscr{C}_f$ ? Justifier.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$\left|x+4\right|\leqslant 3$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,8 +243,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On calcule $f(5)$ :</p>
-$$f(5) = -3 \times 5^2 + 2 \times 5 - 9 = -75 + 10 - 9 = -74 \neq -75$$<p>L&rsquo;image de $5$ par $f$ n&rsquo;est pas $-75$, donc <strong>le point $A$ n&rsquo;appartient pas à $\mathscr{C}_f$</strong>.</p>
+    <div><p>$\left|x+4\right|$ se lit comme la distance entre $x$ et $-4$, puisque $x+4=x-(-4)$.</p>
+<p>On cherche donc les réels situés à une distance d&rsquo;au plus $3$ du nombre $-4$ : ce sont ceux qui se trouvent entre $-4-3$ et $-4+3$.</p>
+<p>On peut aussi encadrer directement :</p>
+$$-3\leqslant x+4\leqslant 3$$<p>On retranche $4$ aux trois membres :</p>
+$$-7\leqslant x\leqslant -1$$$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$<p>L&rsquo;inégalité étant large, les deux bornes sont incluses.</p>
 </div>
   </div>
   
@@ -263,35 +267,7 @@ $$f(5) = -3 \times 5^2 + 2 \times 5 - 9 = -75 + 10 - 9 = -74 \neq -75$$<p>L&rsqu
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On donne ci-dessous le tableau de variations d&rsquo;une fonction $f$ <em>(voir le livret)</em> :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-3$</th>
-          <th></th>
-          <th>$-1$</th>
-          <th></th>
-          <th>$3$</th>
-          <th></th>
-          <th>$8$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$4$</td>
-          <td>$\nearrow$</td>
-          <td>$10$</td>
-          <td>$\searrow$</td>
-          <td>$-15$</td>
-          <td>$\nearrow$</td>
-          <td>$-14$</td>
-      </tr>
-  </tbody>
-</table>
-<p>Comparer si possible : $f(-2)$ et $f(7)$.</p>
-
+    Donner la liste de tous les diviseurs positifs de $36$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -299,10 +275,10 @@ $$f(5) = -3 \times 5^2 + 2 \times 5 - 9 = -75 + 10 - 9 = -74 \neq -75$$<p>L&rsqu
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$-2 \in [-3\,;\,-1]$ donc $4 < f(-2) < 10$.</p>
-<p>$7 \in [3\,;\,8]$ donc $-15 < f(7) < -14$.</p>
-<p>$f(-2)$ est compris entre $4$ et $10$, $f(7)$ est compris entre $-15$ et $-14$, donc :</p>
-$${\color{#4A5D7A}f(-2) > f(7)}$$</div>
+    <div><p>On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :</p>
+$$1\times 36 \qquad 2\times 18 \qquad 3\times 12 \qquad 4\times 9 \qquad 6\times 6$$<p>On s&rsquo;arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l&rsquo;autre sens.</p>
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$<p>Il y en a $9$. Un nombre a un nombre impair de diviseurs exactement quand c&rsquo;est un carré parfait, ce qui est bien le cas ici.</p>
+</div>
   </div>
   
 </article>
@@ -321,9 +297,7 @@ $${\color{#4A5D7A}f(-2) > f(7)}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère orthonormé $(O\,;\,I,J)$, on donne les points $T(10\,;\,1)$ et $U(-4\,;\,-3)$.</p>
-<p>Calculer la distance $TU$.</p>
-
+    Démontrer que la somme de deux multiples de $7$ est un multiple de $7$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -331,8 +305,11 @@ $${\color{#4A5D7A}f(-2) > f(7)}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On applique la formule de la distance :</p>
-$$TU = \sqrt{(x_U - x_T)^2 + (y_U - y_T)^2} = \sqrt{(-4-10)^2 + (-3-1)^2}$$$$TU = \sqrt{196 + 16} = \sqrt{212} = {\color{#4A5D7A}2\sqrt{53}}$$</div>
+    <div><p>On traduit l&rsquo;hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $7$ : il existe deux entiers $k$ et $k'$ tels que</p>
+$$a=7k \qquad\text{et}\qquad b=7k'$$<p>On calcule la somme et on factorise par $7$ :</p>
+$$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rsquo;écrit bien sous la forme $7\times\text{entier}$ : c&rsquo;est un multiple de $7$.</p>
+<p>La factorisation est le cœur de la démonstration : c&rsquo;est elle qui fait apparaître le $7$ en facteur.</p>
+</div>
   </div>
   
 </article>
@@ -351,9 +328,8 @@ $$TU = \sqrt{(x_U - x_T)^2 + (y_U - y_T)^2} = \sqrt{(-4-10)^2 + (-3-1)^2}$$$$TU 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère $(O\,;\,\vec{i},\vec{j})$, on considère les points $J(2\,;\,-10)$, $K(10\,;\,3)$ et $L(-2\,;\,0)$.</p>
-<p>Déterminer les coordonnées du point $M$ tel que $JKLM$ soit un parallélogramme.</p>
-
+    <p>Calculer :</p>
+$$\left|2-9\right|+\left|-5\right|$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -361,10 +337,9 @@ $$TU = \sqrt{(x_U - x_T)^2 + (y_U - y_T)^2} = \sqrt{(-4-10)^2 + (-3-1)^2}$$$$TU 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$JKLM$ est un parallélogramme si et seulement si $\overrightarrow{JK} = \overrightarrow{ML}$.</p>
-<p>$\overrightarrow{JK} = \binom{10-2}{3-(-10)} = \binom{8}{13}$</p>
-<p>En notant $M(x\,;\,y)$ : $\overrightarrow{ML} = \binom{-2-x}{0-y}$</p>
-$$\begin{cases}-2-x = 8 \\ -y = 13\end{cases} \implies \begin{cases}x = -10 \\ y = -13\end{cases}$$$${\color{#4A5D7A}M(-10\,;\,-13)}$$</div>
+    <div><p>On traite chaque valeur absolue séparément, en calculant d&rsquo;abord l&rsquo;intérieur :</p>
+$$\left|2-9\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-5\right|=5$$<p>On additionne :</p>
+$$7+5={\color{#4A5D7A}12}$$</div>
   </div>
   
 </article>
@@ -383,8 +358,9 @@ $$\begin{cases}-2-x = 8 \\ -y = 13\end{cases} \implies \begin{cases}x = -10 \\ y
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Le prix d&rsquo;un article subit une baisse de $60\,\%$ puis une hausse de $63\,\%$.</p>
-<p>Déterminer le taux d&rsquo;évolution global du prix de cet article.</p>
+    <p>Le prix d&rsquo;un article passe de $80$ € à $60$ €.</p>
+<p>Le taux d&rsquo;évolution de ce prix est :</p>
+<p><strong>A.</strong> $-20\,\%$   <strong>B.</strong> $+25\,\%$   <strong>C.</strong> $-33\,\%$   <strong>D.</strong> $-25\,\%$</p>
 
   </div>
   
@@ -393,11 +369,43 @@ $$\begin{cases}-2-x = 8 \\ -y = 13\end{cases} \implies \begin{cases}x = -10 \\ y
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Baisser de $60\,\%$ : $CM_1 = 1 - 0{,}60 = 0{,}4$</p>
-<p>Augmenter de $63\,\%$ : $CM_2 = 1 + 0{,}63 = 1{,}63$</p>
-<p>Coefficient multiplicateur global : $CM = 0{,}4 \times 1{,}63 = 0{,}652$</p>
-<p>Taux global : $T = 0{,}652 - 1 = -0{,}348$</p>
-$${\color{#4A5D7A}\text{Baisse globale de } 34{,}8\,\%}$$</div>
+    <div><p>Le taux d&rsquo;évolution se calcule toujours par rapport à la valeur de <strong>départ</strong> :</p>
+$$t=\dfrac{60-80}{80}=\dfrac{-20}{80}=-0{,}25$$<p>Il s&rsquo;agit donc d&rsquo;une baisse de ${\color{#4A5D7A}25\,\%}$.</p>
+<p>La réponse A confond le taux avec la baisse en euros, et la réponse C divise par $60$, c&rsquo;est-à-dire par la valeur d&rsquo;arrivée au lieu de la valeur de départ.</p>
+<p><span class="rep">Réponse : D</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>La solution de l&rsquo;équation $\dfrac{x}{8}=112$ est :</p>
+<p><strong>A.</strong> $x=14$   <strong>B.</strong> $x=-896$   <strong>C.</strong> $x=896$   <strong>D.</strong> $x=\dfrac{8}{112}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$x$ est divisé par $8$ : pour l&rsquo;isoler, on multiplie chaque membre par $8$.</p>
+$$x=112\times 8={\color{#4A5D7A}896}$$<p>La réponse A divise au lieu de multiplier. Un réflexe de contrôle : $x$ vaut le huitième de quelque chose valant $112$, il doit donc être bien plus grand que $112$.</p>
+<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -426,10 +434,8 @@ $${\color{#4A5D7A}\text{Baisse globale de } 34{,}8\,\%}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par : $f(x) = -8x^2 + 7x - 2$.</p>
-<p>On note $\mathscr{C}_f$ la courbe représentative de $f$ dans un repère.</p>
-<p>Le point $A(-1\,;\,-18)$ appartient-il à $\mathscr{C}_f$ ? Justifier.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$\left|x-5\right|\leqslant 2$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -437,8 +443,11 @@ $${\color{#4A5D7A}\text{Baisse globale de } 34{,}8\,\%}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On calcule $f(-1)$ :</p>
-$$f(-1) = -8 \times (-1)^2 + 7 \times (-1) - 2 = -8 - 7 - 2 = -17 \neq -18$$<p>L&rsquo;image de $-1$ par $f$ n&rsquo;est pas $-18$, donc <strong>le point $A$ n&rsquo;appartient pas à $\mathscr{C}_f$</strong>.</p>
+    <div><p>$\left|x-5\right|$ se lit comme la distance entre $x$ et $5$.</p>
+<p>On cherche donc les réels situés à une distance d&rsquo;au plus $2$ du nombre $5$ : ce sont ceux qui se trouvent entre $5-2$ et $5+2$.</p>
+<p>On peut aussi encadrer directement :</p>
+$$-2\leqslant x-5\leqslant 2$$<p>On ajoute $5$ aux trois membres :</p>
+$$3\leqslant x\leqslant 7$$$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$<p>L&rsquo;inégalité étant large, les deux bornes sont incluses.</p>
 </div>
   </div>
   
@@ -458,35 +467,7 @@ $$f(-1) = -8 \times (-1)^2 + 7 \times (-1) - 2 = -8 - 7 - 2 = -17 \neq -18$$<p>L
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On donne ci-dessous le tableau de variations d&rsquo;une fonction $f$ <em>(voir le livret)</em> :</p>
-<table>
-  <thead>
-      <tr>
-          <th>$x$</th>
-          <th>$-2$</th>
-          <th></th>
-          <th>$2$</th>
-          <th></th>
-          <th>$6$</th>
-          <th></th>
-          <th>$9$</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>$f(x)$</td>
-          <td>$-2$</td>
-          <td>$\searrow$</td>
-          <td>$-15$</td>
-          <td>$\nearrow$</td>
-          <td>$-1$</td>
-          <td>$\searrow$</td>
-          <td>$-14$</td>
-      </tr>
-  </tbody>
-</table>
-<p>Comparer si possible : $f(-1)$ et $f(7)$.</p>
-
+    Donner la liste de tous les diviseurs positifs de $48$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -494,10 +475,10 @@ $$f(-1) = -8 \times (-1)^2 + 7 \times (-1) - 2 = -8 - 7 - 2 = -17 \neq -18$$<p>L
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$-1 \in [-2\,;\,2]$ donc $-15 < f(-1) < -2$.</p>
-<p>$7 \in [6\,;\,9]$ donc $-14 < f(7) < -1$.</p>
-<p>Les deux encadrements ne permettent pas de déterminer lequel est le plus grand.</p>
-$${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$</div>
+    <div><p>On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :</p>
+$$1\times 48 \qquad 2\times 24 \qquad 3\times 16 \qquad 4\times 12 \qquad 6\times 8$$<p>On s&rsquo;arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.</p>
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$<p>Il y en a $10$. Le nombre de diviseurs est pair, ce qui est le cas de tous les nombres qui ne sont pas des carrés parfaits.</p>
+</div>
   </div>
   
 </article>
@@ -516,9 +497,7 @@ $${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$</di
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère orthonormé $(O\,;\,I,J)$, on donne les points $S(-8\,;\,-10)$ et $T(-3\,;\,4)$.</p>
-<p>Calculer la distance $ST$.</p>
-
+    Démontrer que la somme de deux multiples de $9$ est un multiple de $9$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -526,7 +505,11 @@ $${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$</di
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$ST = \sqrt{(-3-(-8))^2 + (4-(-10))^2} = \sqrt{5^2 + 14^2} = \sqrt{25 + 196}$$$${\color{#4A5D7A}ST = \sqrt{221}}$$</div>
+    <div><p>On traduit l&rsquo;hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $9$ : il existe deux entiers $k$ et $k'$ tels que</p>
+$$a=9k \qquad\text{et}\qquad b=9k'$$<p>On calcule la somme et on factorise par $9$ :</p>
+$$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rsquo;écrit bien sous la forme $9\times\text{entier}$ : c&rsquo;est un multiple de $9$.</p>
+<p>La factorisation est le cœur de la démonstration : c&rsquo;est elle qui fait apparaître le $9$ en facteur.</p>
+</div>
   </div>
   
 </article>
@@ -545,9 +528,8 @@ $${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$</di
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère $(O\,;\,\vec{i},\vec{j})$, on considère les points $S(6\,;\,-8)$, $T(-3\,;\,3)$ et $U(-5\,;\,-10)$.</p>
-<p>Déterminer les coordonnées du point $V$ tel que $STUV$ soit un parallélogramme.</p>
-
+    <p>Calculer :</p>
+$$\left|3-10\right|+\left|-6\right|$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -555,10 +537,9 @@ $${\color{#4A5D7A}\text{On ne peut pas comparer } f(-1) \text{ et } f(7).}$$</di
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$STUV$ est un parallélogramme si et seulement si $\overrightarrow{ST} = \overrightarrow{VU}$.</p>
-<p>$\overrightarrow{ST} = \binom{-3-6}{3-(-8)} = \binom{-9}{11}$</p>
-<p>En notant $V(x\,;\,y)$ : $\overrightarrow{VU} = \binom{-5-x}{-10-y}$</p>
-$$\begin{cases}-5-x = -9 \\ -10-y = 11\end{cases} \implies \begin{cases}x = 4 \\ y = -21\end{cases}$$$${\color{#4A5D7A}V(4\,;\,-21)}$$</div>
+    <div><p>On traite chaque valeur absolue séparément, en calculant d&rsquo;abord l&rsquo;intérieur :</p>
+$$\left|3-10\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-6\right|=6$$<p>On additionne :</p>
+$$7+6={\color{#4A5D7A}13}$$</div>
   </div>
   
 </article>
@@ -577,8 +558,9 @@ $$\begin{cases}-5-x = -9 \\ -10-y = 11\end{cases} \implies \begin{cases}x = 4 \\
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Le prix d&rsquo;un article subit une hausse de $57\,\%$ puis une baisse de $1\,\%$.</p>
-<p>Déterminer le taux d&rsquo;évolution global du prix de cet article.</p>
+    <p>Le prix d&rsquo;un article passe de $150$ € à $120$ €.</p>
+<p>Le taux d&rsquo;évolution de ce prix est :</p>
+<p><strong>A.</strong> $-30\,\%$   <strong>B.</strong> $-20\,\%$   <strong>C.</strong> $-25\,\%$   <strong>D.</strong> $+20\,\%$</p>
 
   </div>
   
@@ -587,11 +569,43 @@ $$\begin{cases}-5-x = -9 \\ -10-y = 11\end{cases} \implies \begin{cases}x = 4 \\
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Augmenter de $57\,\%$ : $CM_1 = 1{,}57$</p>
-<p>Baisser de $1\,\%$ : $CM_2 = 0{,}99$</p>
-<p>$CM = 1{,}57 \times 0{,}99 = 1{,}554\,3$</p>
-<p>Taux global : $T = 1{,}554\,3 - 1 = 0{,}554\,3$</p>
-$${\color{#4A5D7A}\text{Hausse globale de } 55{,}43\,\%}$$</div>
+    <div><p>Le taux d&rsquo;évolution se calcule toujours par rapport à la valeur de <strong>départ</strong> :</p>
+$$t=\dfrac{120-150}{150}=\dfrac{-30}{150}=-0{,}2$$<p>Il s&rsquo;agit donc d&rsquo;une baisse de ${\color{#4A5D7A}20\,\%}$.</p>
+<p>La réponse A confond le taux avec la baisse en euros, et la réponse C divise par $120$, c&rsquo;est-à-dire par la valeur d&rsquo;arrivée au lieu de la valeur de départ.</p>
+<p><span class="rep">Réponse : B</span></p>
+</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>La solution de l&rsquo;équation $\dfrac{x}{6}=132$ est :</p>
+<p><strong>A.</strong> $x=792$   <strong>B.</strong> $x=22$   <strong>C.</strong> $x=-792$   <strong>D.</strong> $x=\dfrac{6}{132}$</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$x$ est divisé par $6$ : pour l&rsquo;isoler, on multiplie chaque membre par $6$.</p>
+$$x=132\times 6={\color{#4A5D7A}792}$$<p>La réponse B divise au lieu de multiplier. Un réflexe de contrôle : $x$ vaut le sixième de quelque chose valant $132$, il doit donc être bien plus grand que $132$.</p>
+<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -692,7 +706,7 @@ $${\color{#4A5D7A}\text{Hausse globale de } 55{,}43\,\%}$$</div>
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

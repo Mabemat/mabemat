@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-1re">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trigonométrie — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/" class="active">1re</a>
+    
+    
+    <a href="/mabemat/snt/">Python</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="chap-hero">
+  <div class="crumbs fade-up">
+    <a href="http://localhost:1313/mabemat/">Accueil</a>
+    <span class="sep">/</span>
+    <a href="/mabemat/1re/">1ère Spécialité</a>
+    <span class="sep">/</span>
+    <span>Chapitre 12</span>
+  </div>
+  <div class="chap-hero-grid">
+    
+    <div class="chap-big fade-up d1" style="color:#758467;">12</div>
+    
+    <div>
+      
+      <div class="eyebrow fade-up d1" style="margin-bottom:12px;">
+        Chapitre 12 · 1ère Spécialité
+      </div>
+      
+      <h1 class="fade-up d2">Trigonométrie</h1>
+      
+      <p class="chap-hero-desc fade-up d3">
+        Géométrie
+      </p>
+      
+      <div class="chap-meta-row fade-up d4">
+        <span><span class="dot" style="background:#758467;"></span>Leçon disponible</span>
+        
+        
+        
+        
+        <span><span class="dot" style="background:#758467;"></span>Exercices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="res-grid">
+  
+  <a class="res-card featured fade-up d1" href="#lecon" id="btn-lecon">
+    <div class="res-corner">★ Essentiel</div>
+    <div>
+      <div class="res-ico">§</div>
+      <div class="res-kind">Leçon complète</div>
+      <h3>La leçon <em>complète</em></h3>
+      <p class="res-desc">Définitions, exemples, propriétés - tout le cours, organisé et lisible.</p>
+    </div>
+    <div class="res-open">Ouvrir la leçon <span class="res-arrow">→</span></div>
+  </a>
+  <a class="res-card fade-up d2" href="/mabemat/1re/chapitre-12-trigonometrie/cours.5687fe7a3718aff9c3f7c3879d65b6f3.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">⇣</div>
+      <div class="res-kind">Polycopié à trous</div>
+      <h3>Cours<br>imprimable</h3>
+      <p class="res-desc">Le cours à compléter, format A4 - distribué en classe mais imprimable.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  <a class="res-card fade-up d3" href="/mabemat/1re/chapitre-12-trigonometrie/exercices.372e5931a97ffe656ea1dfd07cdfdaf5.pdf" target="_blank">
+    <div class="res-corner">PDF</div>
+    <div>
+      <div class="res-ico">?</div>
+      <div class="res-kind">Exercices</div>
+      <h3>S'entraîner</h3>
+      <p class="res-desc">Exercices progressifs faits en classe.</p>
+    </div>
+    <div class="res-open">Télécharger le PDF <span class="res-arrow">→</span></div>
+  </a>
+  
+  
+  
+  
+  
+
+  
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<section class="path">
+  <div class="path-head">
+    <h2>Ton parcours <em>idéal</em></h2>
+    <p>dans l'ordre, à ton rythme</p>
+  </div>
+  <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+    
+    <div class="step available">
+      <div class="step-dot">1</div>
+      <div class="step-t">Apprendre la leçon</div>
+      <div class="step-s"></div>
+    </div>
+    
+    <div class="step available">
+      <div class="step-dot">2</div>
+      <div class="step-t">Faire / Refaire les exercices</div>
+      <div class="step-s">pour s&#39;entraîner</div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<div class="chap-adjacent">
+  <a class="adj-link prev" href="/mabemat/1re/">
+    <div><div class="adj-lbl">← 1ère</div></div>
+    <span></span>
+  </a>
+  
+  
+  
+  
+  <a class="adj-link next" href="/mabemat/1re/chapitre-13-relations-dans-le-triangle/">
+    <div><div class="adj-lbl">Chapitre suivant →</div></div>
+    <span></span>
+  </a>
+  
+</div>
+
+
+
+
+
+<div id="lesson-overlay" class="lesson-overlay" role="dialog" aria-modal="true" aria-label="Leçon complète" tabindex="-1">
+
+  
+  <div class="lesson-rp"><i id="lp-rp"></i></div>
+
+  
+  <button class="lesson-close" id="lesson-close" aria-label="Fermer">✕</button>
+
+  
+  <div class="lesson-mobile-bar" id="lesson-mobile-bar">
+    <button id="mb-close-btn">← Fermer</button>
+    <span class="mb-pct" id="mb-pct">0 %</span>
+    <button id="mb-toc-btn">≡ Plan</button>
+  </div>
+
+  
+  <div class="lesson-toc-backdrop" id="lesson-toc-backdrop"></div>
+  <div class="lesson-toc-drawer" id="lesson-toc-drawer">
+    <div class="lesson-toc-drawer-header">
+      <div class="eyebrow">Dans cette leçon</div>
+      <button class="lesson-toc-drawer-close" id="lesson-toc-drawer-close" aria-label="Fermer le plan">✕</button>
+    </div>
+    <ol id="lesson-toc-drawer-list"></ol>
+  </div>
+
+  <div class="lesson-layout">
+
+    
+    <aside class="lesson-toc">
+      <div class="eyebrow" style="margin-bottom:16px;">Dans cette leçon</div>
+      <ol id="lesson-toc-list"></ol>
+      <div class="lesson-toc-progress">
+        <div class="lbl"><span>Progression</span><span id="lp-pct">0 %</span></div>
+        <div class="bar"><i id="lp-bar"></i></div>
+      </div>
+      <div class="lesson-toc-actions">
+        
+        <a href="/mabemat/1re/chapitre-12-trigonometrie/cours.5687fe7a3718aff9c3f7c3879d65b6f3.pdf" target="_blank"><span>Polycopié PDF</span><span>→</span></a>
+        
+        
+        
+        
+        <a href="/mabemat/1re/chapitre-12-trigonometrie/exercices.372e5931a97ffe656ea1dfd07cdfdaf5.pdf" target="_blank"><span>Passer aux exercices</span><span>→</span></a>
+        
+        
+        
+      </div>
+    </aside>
+
+    
+    <main class="lesson-content" id="lesson-main">
+      <div class="crumbs" style="margin-bottom:24px;">
+        <a href="http://localhost:1313/mabemat/">Accueil</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/">1ère Spécialité</a>
+        <span class="sep">/</span>
+        <a href="/mabemat/1re/chapitre-12-trigonometrie/">Trigonométrie</a>
+        <span class="sep">/</span>
+        <span>Leçon</span>
+      </div>
+      <div class="eyebrow" style="margin-bottom:14px;">
+        Chapitre 12 - Leçon
+      </div>
+      <h1 class="lesson-h1" style="color:#758467;">Trigonométrie</h1>
+
+      <div class="full-lesson niveau-1re">
+        <h2 class="subsection-title">12.1 Cercle trigonométrique et radian</h2>
+<h3 class="subsubsection-title">12.1.1 Cercle trigonométrique</h3>
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="display:inline-block; vertical-align:middle; width:calc(59% - 12px);">
+Sur un cercle, deux sens de parcours sont possibles.<br>
+On appelle <strong>plan orienté</strong>, un plan dans lequel tous les cercles sont orientés dans le sens contraire des aiguilles d'une montre, appelé <strong>sens direct ou sens trigonométrique</strong>. L'autre sens (celui des aiguilles d'une montre) est appelé sens indirect ou sens anti-trigonométrique.
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Un <strong>cercle trigonométrique</strong> est un cercle de centre $O$, de rayon $1$ et orienté dans le sens direct.
+</div>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig1.svg" alt="figure 1" style="display:inline-block; vertical-align:middle; width:calc(39% - 12px); max-height:300px; max-width:100%;">
+</div>
+<h3 class="subsubsection-title">12.1.2 Enroulement de la droite des réels et radian</h3>
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="display:inline-block; vertical-align:middle; width:calc(60% - 12px);">
+Soit $(O,I,J)$ un repère orthonormé du plan.
+$\mathcal{C}$ est le cercle trigonométrique de centre $O$.
+$d$ est la tangente au cercle $\mathcal{C}$ en $I$.
+On considère la droite graduée $d$ comme la droite des réels avec pour origine $I$.<br>
+À tout réel de la droite $d$, on fait correspondre un point sur le cercle trigonométrique en « enroulant » la droite sur le cercle (comme une bobine de fil).
+Les réels positifs s'enroulent dans le sens de rotation direct et les réels négatifs dans le sens indirect. L'association entre $x$ et $M$ s'exprime en disant : 
+<ul>
+<li>le réel $x$ repère le point</li>
+<li>$M$ est l'image de $x$ par enroulement de la droite réelle sur le cercle trigonométrique</li>
+</ul>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig2.svg" alt="figure 2" style="display:inline-block; vertical-align:middle; width:calc(35%); max-height:400px; max-width:100%;">
+</div>
+<div style="display:flex; align-items:center; gap:20px;">
+<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(70% - 12px);">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Dans un cercle trigonométrique, la <strong>mesure d'un angle en radian</strong> est donnée par la longueur de l'arc qu'il intercepte.<br>
+En particulier, 1 radian est la mesure de l'angle $\widehat{IOM}$ si la longueur de l'arc $\overset{\frown}{IM}$ est égal à $1$ (dans le sens direct).
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig3.svg" alt="figure 3" style="display:inline-block; vertical-align:middle; width:calc(25% - 12px); max-height:200px;min-height:200px; max-width:100%;">
+</div>
+<div class="remarque">
+Si le réel $x$ repère un point $M$, la longueur du cercle étant de $2\pi$, il est clair que les réels $x + 2\pi, x + 4\pi, x + 6\pi, x + 8\pi, ... ,$ ainsi que $x- 2\pi, x- 4\pi, ... $, repèrent le même point $M$.<br>
+Par conséquent, si $x$ repère $M$ sur le cercle trigonométrique, alors tous les nombres de la forme $x + 2k\pi$, avec $k$ appartenant à $\Z$, repèrent le même point $M$.
+</div>
+<div class="environment methode">
+<div class="environment-title">Méthode - Passage d'une mesure en degrés à une mesure en radian.</div>
+<div class="environment-content">
+La mesure d'un angle plat en radians est $\pi$ ( longueur d'un demi-cercle de rayon $1$). <br>
+Donc à $180^\circ$ correspondent $\pi$ radians et inversement.
+On a donc le tableau de proportionnalité :
+<table>
+<tr>
+<th><strong>Mesure en degrés</strong></th>
+<th>180</th>
+</tr>
+<tr>
+<td>
+<p><strong>Mesure en radians</strong></td></p>
+<td>$\pi$</td>
+</tr>
+<tr>
+</tr>
+</table>
+</div>
+</div>
+<p>Quelques mesures d&rsquo;angles remarquables et leurs positions sur le cercle trigonométrique</p>
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="display:inline-block; vertical-align:middle; width:calc(75%);">
+<table>
+<tr>
+<th><strong>Mesure en degrés</strong></th>
+<th>$0$</th>
+<th>$30$</th>
+<th>$45$</th>
+<th>$60$</th>
+<th>$90$</th>
+<th>$120$</th>
+<th>$180$</th>
+<th>$360$</th>
+</tr>
+<tr>
+<td><strong>Mesure en radians</strong></td>
+<td>$0$</td>
+<td>$\dfrac{\pi}{6}$</td>
+<td>$\dfrac{\pi}{4}$</td>
+<td>$\dfrac{\pi}{3}$</td>
+<td>$\dfrac{\pi}{2}$</td>
+<td>$\dfrac{2\pi}{3}$</td>
+<td>$\pi$</td>
+<td>$2\pi$</td>
+</tr>
+</table>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig4.svg" alt="figure 4" style="display:inline-block; vertical-align:middle; width:calc(25%); max-height:400px; max-width:100%;">
+</div>
+<h2 class="subsection-title">12.2 Cosinus et sinus d'un réel</h2>
+<h3 class="subsubsection-title">12.2.1 Définition</h3>
+<div style="display:flex; align-items:center; gap:20px;">
+<div class="environment definition" style="display:inline-block; vertical-align:middle; width:calc(69% - 12px);">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+Soit $x$ un nombre réel et $M$ le point associé à $x$ sur le cercle trigonométrique. Alors dans le repère $(O,I,J)$ :
+<ul>
+<li>Le cosinus de $x$, noté $\cos(x)$, est l'abscisse du point $M$.</li>
+<li>Le sinus de $x$, noté $\sin(x)$, est l'ordonnée du point $M$.</li>
+</ul>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig5.svg" alt="figure 5" style="display:inline-block; vertical-align:middle; width:calc(29% - 12px); max-height:300px; max-width:100%;">
+</div>
+<h3 class="subsubsection-title">12.2.2 Propriétés</h3>
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="display:inline-block; vertical-align:middle; width:calc(50% - 12px);">
+<strong>Relation de symétrie</strong>  
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<strong>Avec l'angle opposé :</strong> 
+<ul>
+<li>$\sin(-x)=-\sin(x)$ </li>
+<li>$\cos(-x)=\cos(x)$</li>
+</ul>
+<strong>Avec l'angle supplémentaire :</strong> 
+<ul>
+<li>$\sin(\pi-x)=\sin(x)$ </li>
+<li>$\cos(\pi-x)=-\cos(x)$</li>
+</ul>
+<p><strong>Avec l&rsquo;angle diamétralement opposé :</strong></p>
+<ul>
+<li>$\sin(\pi+x)=-\sin(x)$ </li>
+<li>$\cos(\pi+x)=-\cos(x)$</li>
+</ul>
+</div>
+</div>
+</div><img src="/mabemat/figures/1re/chapitre-12/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:middle; width:calc(45% - 12px); max-height:300px; max-width:100%;">
+</div>
+<div style="display:flex; align-items:center; gap:20px;">
+<img src="/mabemat/figures/1re/chapitre-12/fig7.svg" alt="figure 7" style="width:45%; max-height:300px; max-width:100%;">
+<div style="width:50%;"> 
+<strong>Relation de déphasage</strong>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<strong>Avec le complémentaire :</strong> 
+<ul>
+<li>$\sin\left(\dfrac{\pi}{2}-x\right)=\cos(x)$</li>
+<li>$\cos\left(\dfrac{\pi}{2}-x\right)=\sin(x)$</li>
+</ul>
+<p><strong>Avec un déphasage d&rsquo;un quart de tour :</strong></p>
+<ul>
+<li>$\sin\left(\dfrac{\pi}{2}+x\right)=\cos(x)$ </li>
+<li>$\cos\left(\dfrac{\pi}{2}+x\right)=-\sin(x)$</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Simplifier l'expression :
+$A=\cos\left(x+\dfrac{\pi}{2}\right)-3\cos\left(-\dfrac{\pi}{2}-x\right)-4\sin(\pi-x)$
+<br>$A=-\sin(x)-3\cos\left(\dfrac{\pi}{2}+x\right)-4\sin(x)=-\sin(x)+3\sin(x)-4\sin(x)=-2\sin(x)$.
+</div>
+</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+Pour tout réel $x$, <br>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem;">
+<div>
+$\textcolor{#B8C5A6}{\bullet}\;-1\leq \cos(x) \leq 1$
+</div>
+<div>
+$\textcolor{#B8C5A6}{\bullet}\;-1\leq \sin(x) \leq 1$
+</div>
+<div>
+$\textcolor{#B8C5A6}{\bullet}\;\cos^2(x)+\sin^2(x)=1$
+</div>
+</div>
+</div>
+</div>
+<h3 class="subsubsection-title">12.2.3 Valeurs remarquables</h3>
+<div class="environment propriete">
+<div class="environment-title">Propriété :</div>
+<div class="environment-content">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+<div>$\cos\left(\dfrac{\pi}{4}\right)=\sin\left(\dfrac{\pi}{4}\right)=\dfrac{\sqrt{2}}{2}$</div>
+<div>$\cos\left(\dfrac{\pi}{3}\right)=\dfrac{1}{2}$ et $\sin\left(\dfrac{\pi}{3}\right)=\dfrac{\sqrt{3}}{2}$</div>
+</div>
+</div>
+</div>
+<div style="display:flex; gap:12px; justify-content:center; align-items:flex-start;">
+<img src="/mabemat/figures/1re/chapitre-12/pi4.svg" alt="valeurs en pi/4" style="flex:1 1 0; min-width:0; max-height:260px; object-fit:contain;">
+<img src="/mabemat/figures/1re/chapitre-12/pi3.svg" alt="valeurs en pi/3" style="flex:1 1 0; min-width:0; max-height:260px; object-fit:contain;">
+</div>
+<p>Démonstration. <br>
+<strong>Valeurs en $\dfrac{\pi}{4}$.</strong> Soit $M$ le point image de $\dfrac{\pi}{4}$ sur le cercle trigonométrique.<br>
+Comme $\dfrac{\pi}{4}$ est la moitié de $\dfrac{\pi}{2}$, la demi-droite $[OM)$ est la bissectrice de l&rsquo;angle droit formé par les deux demi-axes : le point $M$ appartient donc à la droite d&rsquo;équation $y=x$. Ses deux coordonnées sont égales, c&rsquo;est-à-dire $\cos\left(\dfrac{\pi}{4}\right)=\sin\left(\dfrac{\pi}{4}\right)$.<br>
+En reportant dans $\cos^2(x)+\sin^2(x)=1$, on obtient $2\cos^2\left(\dfrac{\pi}{4}\right)=1$, donc $\cos^2\left(\dfrac{\pi}{4}\right)=\dfrac{1}{2}$.<br>
+Le point $M$ est dans le premier quadrant, donc $\cos\left(\dfrac{\pi}{4}\right)>0$ et finalement
+$\cos\left(\dfrac{\pi}{4}\right)=\sqrt{\dfrac{1}{2}}=\dfrac{1}{\sqrt{2}}=\dfrac{\sqrt{2}}{2}$. <br>
+Il en va de même pour le sinus.<br><br>
+<strong>Valeurs en $\dfrac{\pi}{3}$.</strong> Soit $M$ le point image de $\dfrac{\pi}{3}$ et $A$ celui de $0$, c&rsquo;est-à-dire $A(1\,;\,0)$.<br>
+Le triangle $OAM$ vérifie $OA=OM=1$ (ce sont deux rayons du cercle) : il est isocèle en $O$. Son angle au sommet mesure $\dfrac{\pi}{3}$, donc ses deux angles à la base mesurent chacun $\dfrac{1}{2}\left(\pi-\dfrac{\pi}{3}\right)=\dfrac{\pi}{3}$.<br>
+Ses trois angles sont égaux : le triangle $OAM$ est donc <strong>équilatéral</strong>, de côté $1$.<br>
+Notons $H$ le pied de la hauteur issue de $M$. Dans un triangle équilatéral, cette hauteur est aussi une médiane, donc $H$ est le milieu de $[OA]$ et $OH=\dfrac{1}{2}$.<br>
+Or $H$ a la même abscisse que $M$, donc $\cos\left(\dfrac{\pi}{3}\right)=\dfrac{1}{2}$.<br>
+Enfin, $\cos^2(x)+\sin^2(x)=1$ donne $\sin^2\left(\dfrac{\pi}{3}\right)=1-\dfrac{1}{4}=\dfrac{3}{4}$. <br>
+Le point $M$ est dans le premier quadrant, donc $\sin\left(\dfrac{\pi}{3}\right)>0$ et $\sin\left(\dfrac{\pi}{3}\right)=\sqrt{\dfrac{3}{4}}=\dfrac{\sqrt{3}}{2}$.</p>
+<div class="remarque">
+Les valeurs en $\dfrac{\pi}{6}$ s'en déduisent avec les relations de déphasage :
+$$\cos\left(\dfrac{\pi}{6}\right)=\cos\left(\dfrac{\pi}{2}-\dfrac{\pi}{3}\right)=\sin\left(\dfrac{\pi}{3}\right)=\dfrac{\sqrt{3}}{2}
+\quad \text{ et } \quad
+\sin\left(\dfrac{\pi}{6}\right)=\sin\left(\dfrac{\pi}{2}-\dfrac{\pi}{3}\right)=\cos\left(\dfrac{\pi}{3}\right)=\dfrac{1}{2}.$$
+</div>
+<p>On obtient donc le <strong>tableau des valeurs remarquables</strong> suivant :</p>
+<table>
+<tr>
+<th>Radians</th>
+<th>$0$</th>
+<th>$\dfrac{\pi}{6}$</th>
+<th>$\dfrac{\pi}{4}$</th>
+<th>$\dfrac{\pi}{3}$</th>
+<th>$\dfrac{\pi}{2}$</th>
+<th>$\pi$</th>
+</tr>
+<tr>
+<td>Cosinus</td>
+<td>$1$</td>
+<td>$\dfrac{\sqrt{3}}{2}$</td>
+<td>$\dfrac{\sqrt{2}}{2}$</td>
+<td>$\dfrac{1}{2}$</td>
+<td>$0$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>Sinus</td>
+<td>$0$</td>
+<td>$\dfrac{1}{2}$</td>
+<td>$\dfrac{\sqrt{2}}{2}$</td>
+<td>$\dfrac{\sqrt{3}}{2}$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+</table>
+<p>On se servira ensuite du cercle trigonométrique pour obtenir les valeurs des cosinus et sinus d&rsquo;angles supérieurs à $\dfrac{\pi}{2}$ ou inférieurs à $0$.</p>
+<div style="text-align:center;">
+    <img src="/mabemat/figures/1re/chapitre-12/fig8.svg" alt="figure 8" style="max-height:400px; max-width:100%;">
+</div>
+<h2 class="subsection-title">12.3 Résolution d'équations par lecture du cercle</h2>
+<p>Résoudre une équation du type $\cos(x)=a$ revient à chercher les points du cercle trigonométrique dont l&rsquo;<strong>abscisse</strong> vaut $a$, puis à lire les réels qui les repèrent.</p>
+<div class="environment methode">
+<div class="environment-title">Méthode - Résoudre $\cos(x)=a$ sur un intervalle.</div>
+<div class="environment-content">
+<ul>
+<li>On place le nombre $a$ sur l'axe des abscisses et on trace la droite <strong>verticale</strong> passant par ce point.</li>
+<li>Cette droite coupe le cercle en $0$, $1$ ou $2$ points.</li>
+<li>On lit les réels associés à ces points, en ne gardant que ceux qui appartiennent à l'intervalle demandé.</li>
+</ul>
+Pour $\sin(x)=a$, on procède de même avec la droite <strong>horizontale</strong>, puisque le sinus est une ordonnée.
+</div>
+</div>
+<div class="remarque">
+L'équation $\cos(x)=a$ n'a <strong>aucune</strong> solution lorsque $a<-1$ ou $a>1$, puisque $-1\leq \cos(x)\leq 1$. <br>
+Il en va de même pour le sinus.<br>
+Les solutions dépendent de l'<strong>intervalle de résolution</strong> : il faut toujours commencer par repérer cet intervalle sur le cercle.
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="flex:1;">
+Résoudre $\cos(x)=\dfrac{\sqrt{2}}{2}$ sur $]-\pi\,;\,\pi]$.<br>
+On trace la droite verticale d'équation $x=\dfrac{\sqrt{2}}{2}$ : elle coupe le cercle en deux points (figure ci-contre).<br>
+Le premier est le point image de $\dfrac{\pi}{4}$. Le second est son symétrique par rapport à l'axe des abscisses : c'est donc le point image de $-\dfrac{\pi}{4}$, ce qui est cohérent avec $\cos(-x)=\cos(x)$.<br>
+Ces deux réels appartiennent bien à $]-\pi\,;\,\pi]$, donc $S=\left\lbrace -\dfrac{\pi}{4}\,;\,\dfrac{\pi}{4}\right\rbrace$.
+</div>
+<img src="/mabemat/figures/1re/chapitre-12/eq-cos.svg" alt="résolution de cos(x)=racine de 2 sur 2" style="width:36%; max-height:280px; object-fit:contain;">
+</div>
+</div>
+</div>
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+<div style="display:flex; align-items:center; gap:20px;">
+<div style="flex:1;">
+Résoudre $2\sin(x)+1=0$ sur $]-\pi\,;\,\pi]$.<br>
+On isole d'abord le sinus : l'équation s'écrit $\sin(x)=-\dfrac{1}{2}$.<br>
+On trace la droite <strong>horizontale</strong> d'équation $y=-\dfrac{1}{2}$ : elle coupe le cercle en deux points.<br>
+Le premier est le point image de $-\dfrac{\pi}{6}$, car
+$\sin\left(-\dfrac{\pi}{6}\right)=-\sin\left(\dfrac{\pi}{6}\right)=-\dfrac{1}{2}$.<br>
+Le second est son symétrique par rapport à l'axe des <strong>ordonnées</strong> ; d'après la relation $\sin(\pi-x)=\sin(x)$, c'est le point image de $\pi-\left(-\dfrac{\pi}{6}\right)=\dfrac{7\pi}{6}$.<br>
+Or $\dfrac{7\pi}{6}$ n'appartient pas à $]-\pi\,;\,\pi]$ : on lui retire un tour complet, ce qui donne $\dfrac{7\pi}{6}-2\pi=-\dfrac{5\pi}{6}$.<br>
+Finalement $S=\left\lbrace -\dfrac{5\pi}{6}\,;\,-\dfrac{\pi}{6}\right\rbrace$.
+</div>
+<img src="/mabemat/figures/1re/chapitre-12/eq-sin.svg" alt="résolution de sin(x)=-1/2" style="width:36%; max-height:280px; object-fit:contain;">
+</div>
+</div>
+</div>
+<div class="remarque">
+Un même point du cercle est repéré par une infinité de réels, qui diffèrent d'un nombre entier de tours. C'est pourquoi on ajoute ou on retire des $2\pi$ jusqu'à tomber dans l'intervalle demandé, comme dans le second exemple.
+</div>
+
+      </div>
+
+      
+      <div class="lesson-done">
+        <h3>Bien joué.</h3>
+        <p>Tu as terminé la leçon. La suite&nbsp;?</p>
+        <div class="done-actions">
+        <button class="btn btn-ghost" id="lesson-done-close">← Retour au chapitre</button>
+          
+          <a class="btn btn-ghost" href="/mabemat/1re/chapitre-12-trigonometrie/cours.5687fe7a3718aff9c3f7c3879d65b6f3.pdf" target="_blank">⇣ Télécharger le polycopié</a>
+          
+          
+          
+          <a class="btn btn-accent" href="/mabemat/1re/chapitre-12-trigonometrie/exercices.372e5931a97ffe656ea1dfd07cdfdaf5.pdf" target="_blank">Passer aux exercices →</a>
+          
+          
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var overlay  = document.getElementById('lesson-overlay');
+  var btn      = document.getElementById('btn-lecon');
+  var closeBtn = document.getElementById('lesson-close');
+  var doneClose = document.getElementById('lesson-done-close');
+  var lpRp  = document.getElementById('lp-rp');
+  var lpBar = document.getElementById('lp-bar');
+  var lpPct = document.getElementById('lp-pct');
+  var mbPct = document.getElementById('mb-pct');
+  var tocList = document.getElementById('lesson-toc-list');
+  
+  var mbCloseBtn  = document.getElementById('mb-close-btn');
+  var mbTocBtn    = document.getElementById('mb-toc-btn');
+  var drawer      = document.getElementById('lesson-toc-drawer');
+  var drawerList  = document.getElementById('lesson-toc-drawer-list');
+  var drawerClose = document.getElementById('lesson-toc-drawer-close');
+  var backdrop    = document.getElementById('lesson-toc-backdrop');
+
+   
+  function wrapTables() {
+    var main = document.getElementById('lesson-main');
+    if (!main) return;
+    main.querySelectorAll('.full-lesson table').forEach(function(table) {
+      if (table.parentElement.classList.contains('table-scroll')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  }
+
+   
+  function buildTOC() {
+    var headings = overlay.querySelectorAll('.full-lesson h2, .full-lesson h3');
+    var listsToFill = [];
+    if (tocList) { tocList.innerHTML = ''; listsToFill.push(tocList); }
+    if (drawerList) { drawerList.innerHTML = ''; listsToFill.push(drawerList); }
+    headings.forEach(function(h, i) {
+      var id = 'ls' + i;
+      h.id = id;
+      listsToFill.forEach(function(list) {
+        var li = document.createElement('li');
+        if (h.tagName === 'H3') li.classList.add('toc-sub');
+        li.innerHTML = '<a href="#' + id + '">' + h.innerHTML + '</a>';
+        list.appendChild(li);
+      });
+    });
+  }
+
+   
+  function updateProgress() {
+    var top = overlay.scrollTop;
+    var max = overlay.scrollHeight - overlay.clientHeight;
+    var p   = max > 0 ? Math.max(0, Math.min(1, top / max)) : 0;
+    var pct = Math.round(p * 100);
+    if (lpRp)  lpRp.style.width      = pct + '%';
+    if (lpBar) lpBar.style.width     = pct + '%';
+    if (lpPct) lpPct.textContent     = pct + ' %';
+    if (mbPct) mbPct.textContent     = pct + ' %';
+    
+    var headings = overlay.querySelectorAll('.full-lesson h2[id], .full-lesson h3[id]');
+    var allLinks = [];
+    if (tocList)    tocList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    if (drawerList) drawerList.querySelectorAll('a').forEach(function(a){ allLinks.push(a); });
+    var current = null;
+    headings.forEach(function(h) {
+      if (h.getBoundingClientRect().top <= 140) current = h.id;
+    });
+    allLinks.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+   
+  function openLecon(e) {
+    if (e) e.preventDefault();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    overlay.scrollTop = 0;
+    buildTOC();
+    wrapTables();
+    updateProgress();
+    overlay.focus();
+  }
+
+  function closeLecon() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    closeDrawer();
+    if (btn) btn.focus();
+  }
+
+   
+  function openDrawer() {
+    if (drawer)   drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+  }
+  function closeDrawer() {
+    if (drawer)   drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+  }
+
+   
+  if (btn)      btn.addEventListener('click', openLecon);
+  if (closeBtn) closeBtn.addEventListener('click', closeLecon);
+  if (doneClose) doneClose.addEventListener('click', closeLecon);
+  if (mbCloseBtn) mbCloseBtn.addEventListener('click', closeLecon);
+  if (mbTocBtn)   mbTocBtn.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  if (backdrop)    backdrop.addEventListener('click', closeDrawer);
+
+  overlay.addEventListener('scroll', updateProgress, { passive: true });
+  overlay.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLecon();
+  });
+
+  
+  if (tocList) {
+    tocList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+    });
+  }
+  
+  if (drawerList) {
+    drawerList.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href^="#ls"]');
+      if (!a) return;
+      e.preventDefault();
+      var target = overlay.querySelector(a.getAttribute('href'));
+      if (target) overlay.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+      closeDrawer();
+    });
+  }
+
+})();
+</script>
+
+
+
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1787576503';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

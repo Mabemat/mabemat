@@ -8,7 +8,24 @@ title: "Leçon complète"
 <div class="environment-title">Définition :</div>
 <div class="environment-content">
 Soit $\Omega$ l'univers d'une expérience aléatoire. <br>
-On définit une variable aléatoire sur $\Omega$ lorsqu'on associe un nombre réel à chacune des issues.
+On définit une variable aléatoire sur $\Omega$ lorsqu'on associe un nombre réel à chacune des issues.<br>
+Autrement dit, une <strong>variable aléatoire</strong> $X$ est une <strong>fonction définie sur $\Omega$ et à valeurs dans $\R$</strong> : à chaque issue $\omega$ de $\Omega$, elle associe le réel $X(\omega)$.
+</div>
+</div>
+
+<div class="remarque">
+Le mot « variable » est trompeur : $X$ n'est pas un nombre qui varie, c'est bien une <strong>fonction</strong>. Ce qui est aléatoire, c'est l'issue $\omega$ tirée par l'expérience ; une fois $\omega$ connue, le nombre $X(\omega)$ est parfaitement déterminé.
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition - Notations.</div>
+<div class="environment-content">
+Soit $X$ une variable aléatoire et $a$ un réel.
+<ul>
+<li>$\{X=a\}$ désigne l'<strong>événement</strong> « $X$ prend la valeur $a$ », c'est-à-dire l'ensemble des issues $\omega$ telles que $X(\omega)=a$. Sa probabilité se note $P(X=a)$.</li>
+<li>$\{X\leq a\}$ désigne l'événement « $X$ prend une valeur inférieure ou égale à $a$ ». Sa probabilité se note $P(X\leq a)$.</li>
+</ul>
+On définit de même $\{X<a\}$, $\{X\geq a\}$, $\{X>a\}$.
 </div>
 </div>
 
@@ -22,8 +39,10 @@ On lance un dé à six faces, et on considère le jeu suivant :
 <li>Si le résultat est 3 ou 5 on perd 4 €.</li>
 </ul>
 On peut définir la variable aléatoire X qui à chaque issue associe le gain algébrique (c'est-à-dire le gain positif ou négatif). <br>
-Quelles valeurs peut prendre la variable aléatoire X ? <br>[0.5em]
-X peut prendre les valeurs $2,$ $3$ et $-4$.
+Quelles valeurs peut prendre la variable aléatoire $X$ ?<br>
+Ici $\Omega=\{1;2;3;4;5;6\}$ et par exemple $X(1)=3$, $X(2)=2$, $X(3)=-4$.<br>
+$X$ peut donc prendre les valeurs $-4$, $2$ et $3$.<br>
+Avec les notations précédentes, $\{X=2\}=\{2;4;6\}$ et $\{X\leq 2\}=\{2;3;4;5;6\}$.
 </div>
 </div>
 
@@ -67,12 +86,11 @@ On a $p_1+p_2+...+p_n=1$.
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-Suite de l'exemple : Déterminer la loi de probabilité de $X$.<br>
-
+Suite de l'exemple : déterminer la loi de probabilité de $X$.<br>
+Le dé est équilibré, chaque face a donc une probabilité $\dfrac{1}{6}$ :<br>
 $ P(X=-4)=2 \times \dfrac{1}{6}=\dfrac{1}{3}$, $P(X=2)=3 \times \dfrac{1}{6}=\dfrac{1}{2}$ et $P(X=3)=\dfrac{1}{6} $ <br>
 
-On résume souvent cela dans un tableau.<br>
-Compléter le tableau en indiquant les probabilités associées à chaque valeur prise par $X$.
+On résume souvent cela dans un tableau :
 
 
 <table>
@@ -130,10 +148,10 @@ On a:
 
 $$
 \begin{aligned}
-E(X) & =x_{1} \times p_1+x_{2} \times p_2+x_{3} \times p_3 \\\\
-& =-4 \times \dfrac{1}{3}+2 \times \dfrac{1}{2}+3 \times \dfrac{1}{6} \\\\
-& =-\dfrac{4}{3}+1+\dfrac{1}{2} \\\\
-& =-\dfrac{8}{6}+\dfrac{6}{6}+\dfrac{3}{6} \\\\
+E(X) & =x_{1} \times p_1+x_{2} \times p_2+x_{3} \times p_3 \\
+& =-4 \times \dfrac{1}{3}+2 \times \dfrac{1}{2}+3 \times \dfrac{1}{6} \\
+& =-\dfrac{4}{3}+1+\dfrac{1}{2} \\
+& =-\dfrac{8}{6}+\dfrac{6}{6}+\dfrac{3}{6} \\
 & =\dfrac{1}{6}
 \end{aligned}
 $$
@@ -148,18 +166,47 @@ Si on y joue un grand nombre de fois, on gagne en moyenne $0,17$€ par partie. 
 </div>
 </div>
 
-<div class="environment definition">
-<div class="environment-title">Définition :</div>
+<div class="environment propriete">
+<div class="environment-title">Propriété - Linéarité de l'espérance.</div>
 <div class="environment-content">
-<strong>La variance de cette loi</strong> est le nombre noté V(X) défini par :<br> $$V(X)=(x_1-E(X))^2p_1+(x_2-E(X))^2p_2+\ldots + (x_n-E(X))^2p_n$$<br>
-La variance est également obtenue par la formule $V(X)=x_1^2p_1+x_2^2p_2+\ldots +x_n^2p_n-[E(X)]^2$
+Soit $X$ une variable aléatoire et $a$, $b$ deux réels. Alors :
+$$E(aX+b)=a\,E(X)+b$$
 </div>
 </div>
 
 <div class="environment exemple">
 <div class="environment-title">Exemple</div>
 <div class="environment-content">
-Dans notre exemple, la variance est
+Dans le jeu du dé, on décide de doubler tous les gains et d'ajouter une prime de $1$ €. Le nouveau gain est $Y=2X+1$. Calculer $E(Y)$.<br>
+On applique la propriété de linéarité : $E(Y)=2E(X)+1=2\times \dfrac{1}{6}+1=\dfrac{4}{3}\approx 1,33$ € par partie.<br>
+Il est inutile de refaire toute la loi de probabilité.
+</div>
+</div>
+
+<div class="environment definition">
+<div class="environment-title">Définition :</div>
+<div class="environment-content">
+<strong>La variance de cette loi</strong> est le nombre noté V(X) défini par :<br> $$V(X)=(x_1-E(X))^2p_1+(x_2-E(X))^2p_2+\ldots + (x_n-E(X))^2p_n$$
+</div>
+</div>
+
+<div class="environment theoreme">
+<div class="environment-title">Théorème - Formule de König-Huygens.</div>
+<div class="environment-content">
+La variance est également obtenue par la formule
+$$V(X)=x_1^2p_1+x_2^2p_2+\ldots +x_n^2p_n-\left[E(X)\right]^2$$
+</div>
+</div>
+
+<div class="remarque">
+C'est presque toujours cette seconde formule qu'on utilise en pratique : elle évite de soustraire $E(X)$ à chaque valeur, et donc de traîner des fractions pénibles.
+</div>
+
+<div class="environment exemple">
+<div class="environment-title">Exemple</div>
+<div class="environment-content">
+Dans notre exemple, calculer la variance de $X$.<br>
+On peut utiliser l'une ou l'autre des deux formules :<br>
 $V(X)=(-4-\dfrac{1}{6})^2\times\dfrac{1}{3} +(2-\dfrac{1}{6})^2\times\dfrac{1}{2} +(3-\dfrac{1}{6})^2\times \dfrac{1}{6} = \dfrac{317}{36}\simeq 8,8$
 
 ou <br>
@@ -271,7 +318,7 @@ La loi de probabilité est donc donnée par le tableau ci-dessous :<br>
 Cela signifie qu'en moyenne le joueur gagne 2,5 €.<br>
 Par ailleurs, on a : <br>
 $V(X)=4^2\times \dfrac{1}{16}+ (-3)^2\times \dfrac{2}{16} +8^2\times \dfrac{3}{16}+ (-5)^2\times \dfrac{4}{16} +
-12^2\times \dfrac{3}{16}+ (-7)^2\times \dfrac{2}{16} +162\times \dfrac{1}{16}-2,5^2=63,25$.<br>
+12^2\times \dfrac{3}{16}+ (-7)^2\times \dfrac{2}{16} +16^2\times \dfrac{1}{16}-2,5^2=63,25$.<br>
 <br>
 La variance de cette loi est de $63,25$, donc l'écart-type est de $\sqrt{63,25}\approx 7,95$.</li>
 </ol>

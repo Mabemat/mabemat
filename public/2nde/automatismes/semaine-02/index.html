@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 2 — Fractions algébriques et ensembles de nombres — MaBémat</title>
+<title>Semaine 2 - Ensembles de nombres et intervalles — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e14c63a6059e41be8d822836a42929bca20ba1bdc6db3b89815852893bf6f98.css" integrity="sha256-bhTGOmBZ5Bvo2CKDakKSm8oguhvcbbO4mBWFKJO/b5g=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Fractions algébriques et ensembles de nombres</p>
+  <p class="wk-subtitle">Ensembles de nombres et intervalles</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -218,7 +218,7 @@ pre[style*="background-color"] {
 
 
 <section id="panel-seance" class="mode-panel panel-seance active fade-up d3">
-  <p class="mode-intro">Six questions ouvertes — cherche d'abord, puis déplie la correction question par question.</p>
+  <p class="mode-intro">Six questions dont deux QCM type épreuve anticipée - cherche d'abord, puis déplie la correction question par question.</p>
   
 
 
@@ -234,7 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire sous la forme d&rsquo;une fraction la plus simple possible : $\dfrac{1}{2a}+\dfrac{6}{b}$
+    <p>Parmi les nombres suivants, lesquels sont des entiers relatifs, c&rsquo;est-à-dire appartiennent à $\mathbb{Z}$ ?</p>
+$$\dfrac{-18}{3}\ ;\qquad 2{,}5\ ;\qquad \dfrac{7}{2}\ ;\qquad -\dfrac{25}{5}\ ;\qquad 0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,7 +243,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{1}{2a}+\dfrac{6}{b}=\dfrac{1 \times b}{2a \times b}+\dfrac{6 \times 2a}{b \times 2a}={\color{#4A5D7A}\dfrac{b+12a}{2ab}}$$</div>
+    <div><p>On commence par écrire chaque nombre sous sa forme la plus simple :</p>
+$$\dfrac{-18}{3}=-6 \qquad \dfrac{7}{2}=3{,}5 \qquad -\dfrac{25}{5}=-5$$<p>Un entier relatif est un nombre entier, positif ou négatif. On obtient :</p>
+$${\color{#4A5D7A}\dfrac{-18}{3}=-6\ ;\qquad -\dfrac{25}{5}=-5\ ;\qquad 0}$$<p>Les nombres $2{,}5$ et $\dfrac{7}{2}=3{,}5$ sont décimaux mais ne sont pas entiers : ils appartiennent à $\mathbb{D}$ mais pas à $\mathbb{Z}$.</p>
+</div>
   </div>
   
 </article>
@@ -261,7 +265,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire sous la forme d&rsquo;une fraction la plus simple possible : $\dfrac{x}{8}\times \dfrac{3}{y}$
+    <p>Traduire chacune des situations par un intervalle.</p>
+<p><strong>a.</strong> $x$ est un réel tel que $-3\leqslant x<7$.</p>
+<p><strong>b.</strong> $x$ est un réel strictement supérieur à $-2$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -269,7 +276,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{x}{8}\times \dfrac{3}{y}=\dfrac{x\times 3}{8\times y}={\color{#4A5D7A}\dfrac{3x}{8y}}$$</div>
+    <div><p><strong>a.</strong> La borne $-3$ est atteinte (inégalité large) : crochet fermé. La borne $7$ n&rsquo;est pas atteinte (inégalité stricte) : crochet ouvert.</p>
+$$x\in{\color{#4A5D7A}\left[-3\,;\,7\right[}$$<p><strong>b.</strong> « Strictement supérieur à $-2$ » se traduit par $x>-2$. Il n&rsquo;y a pas de borne supérieure, et l&rsquo;infini n&rsquo;étant jamais atteint, le crochet de droite est toujours ouvert.</p>
+$$x\in{\color{#4A5D7A}\left]-2\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -288,7 +297,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère l&rsquo;égalité $\dfrac{1}{U}=1+\dfrac{5}{7}$. Calculer $U$.
+    <p>On donne l&rsquo;intervalle $I=\left]-\infty\,;\,5\right]$.</p>
+<p><strong>a.</strong> Traduire l&rsquo;appartenance $x\in I$ par une inégalité.</p>
+<p><strong>b.</strong> Les nombres $5$ et $5{,}1$ appartiennent-ils à $I$ ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -296,7 +308,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{1}{U}=1+\dfrac{5}{7} = \dfrac{7}{7} + \dfrac{5}{7} =\dfrac{12}{7}$$<p>L&rsquo;inverse de $U$ vaut $\dfrac{12}{7}$, donc $U={\color{#4A5D7A}\dfrac{7}{12}}$.</p></div>
+    <div><p><strong>a.</strong> Le crochet de droite est fermé, donc la borne $5$ fait partie de l&rsquo;intervalle :</p>
+$$x\in I \iff {\color{#4A5D7A}x\leqslant 5}$$<p><strong>b.</strong> $5\leqslant 5$ est vraie, donc ${\color{#4A5D7A}5\in I}$.</p>
+<p>$5{,}1\leqslant 5$ est fausse, donc ${\color{#4A5D7A}5{,}1\notin I}$.</p>
+</div>
   </div>
   
 </article>
@@ -315,9 +330,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Choisir deux nombres puis calculer l&rsquo;inverse du carré de leur somme.</p>
-<p>Le résultat obtenu si on choisit comme nombres $-4$ et $-1$ est :</p>
-
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$\dfrac{3}{4}-\dfrac{5}{6}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -325,10 +339,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La somme de $-4$ et $-1$ est : $-5$.</p>
-<p>Le carré de cette somme est : $(-5)^2=25$.</p>
-<p>L&rsquo;inverse de ce carré est : ${\color{#4A5D7A}\dfrac{1}{25}}$.</p>
-</div>
+    <div><p>On cherche un dénominateur commun à $4$ et $6$ : c&rsquo;est $12$.</p>
+$$\dfrac{3}{4}-\dfrac{5}{6}=\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{4{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 2}}}{6{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{9}{12}-\dfrac{10}{12}=\dfrac{9-10}{12}={\color{#4A5D7A}-\dfrac{1}{12}}$$</div>
   </div>
   
 </article>
@@ -347,7 +359,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Simplifier l&rsquo;écriture fractionnaire : $\dfrac{5x-35}{5}$
+    <p>On considère $A=\dfrac{3}{4-\dfrac{2}{5}}$. $A$ est égal à :</p>
+<p><strong>A.</strong> $\dfrac{18}{5}$   <strong>B.</strong> $\dfrac{6}{5}$   <strong>C.</strong> $\dfrac{5}{6}$   <strong>D.</strong> $\dfrac{3}{18}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -355,7 +369,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{5x-35}{5}=\dfrac{5(x-7)}{5}={\color{#4A5D7A}x-7}$$</div>
+    <div><p>On calcule d&rsquo;abord le dénominateur, en réduisant au même dénominateur :</p>
+$$4-\dfrac{2}{5}=\dfrac{20}{5}-\dfrac{2}{5}=\dfrac{18}{5}$$<p>Diviser par une fraction revient à multiplier par son inverse :</p>
+$$A=\dfrac{3}{\dfrac{18}{5}}=3\times\dfrac{5}{18}=\dfrac{15}{18}=\dfrac{5\times \cancel{3}}{6\times \cancel{3}}={\color{#4A5D7A}\dfrac{5}{6}}$$<p><span class="rep">Réponse : C</span></p>
+</div>
   </div>
   
 </article>
@@ -374,7 +391,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Parmi $\mathbb{R}$, $\mathbb{Q}$, $\mathbb{D}$, $\mathbb{Z}$ et $\mathbb{N}$, quel est le plus petit ensemble de nombres auquel appartient $-8{,}59$ ?
+    <p>Une durée de $96$ minutes correspond à :</p>
+<p><strong>A.</strong> $1{,}36$ heure   <strong>B.</strong> $1{,}96$ heure   <strong>C.</strong> $0{,}96$ heure   <strong>D.</strong> $1{,}6$ heure</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -382,8 +401,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$-8{,}59$ est un nombre décimal (il s&rsquo;écrit avec un nombre fini de chiffres après la virgule). Le plus petit ensemble de nombres auquel il appartient est donc ${\color{#4A5D7A}\mathbb{D}}$.</p>
-<p>Rappel : $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q} \subset \mathbb{R}$</p>
+    <div><p>Une heure vaut $60$ minutes. Pour convertir des minutes en heures, on divise donc par $60$ :</p>
+$$96\div 60=\dfrac{96}{60}=\dfrac{8\times \cancel{12}}{5\times \cancel{12}}=\dfrac{8}{5}={\color{#4A5D7A}1{,}6}\ \text{heure}$$<p>On peut vérifier : $1{,}6$ heure $=1$ heure $+\ 0{,}6\times 60=1$ heure et $36$ minutes, soit bien $96$ minutes.</p>
+<p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
   
@@ -413,7 +433,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire sous la forme d&rsquo;une fraction la plus simple possible : $\dfrac{x}{7}\times \dfrac{10}{y}$
+    <p>Parmi les nombres suivants, lesquels sont des entiers relatifs, c&rsquo;est-à-dire appartiennent à $\mathbb{Z}$ ?</p>
+$$\dfrac{-24}{4}\ ;\qquad 1{,}5\ ;\qquad \dfrac{9}{2}\ ;\qquad -\dfrac{35}{7}\ ;\qquad 0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -421,7 +442,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{x}{7}\times \dfrac{10}{y}=\dfrac{x\times 10}{7\times y}={\color{#4A5D7A}\dfrac{10x}{7y}}$$</div>
+    <div><p>On commence par écrire chaque nombre sous sa forme la plus simple :</p>
+$$\dfrac{-24}{4}=-6 \qquad \dfrac{9}{2}=4{,}5 \qquad -\dfrac{35}{7}=-5$$<p>Un entier relatif est un nombre entier, positif ou négatif. On obtient :</p>
+$${\color{#4A5D7A}\dfrac{-24}{4}=-6\ ;\qquad -\dfrac{35}{7}=-5\ ;\qquad 0}$$<p>Les nombres $1{,}5$ et $\dfrac{9}{2}=4{,}5$ sont décimaux mais ne sont pas entiers : ils appartiennent à $\mathbb{D}$ mais pas à $\mathbb{Z}$.</p>
+</div>
   </div>
   
 </article>
@@ -440,7 +464,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Écrire sous la forme d&rsquo;une fraction la plus simple possible : $\dfrac{3}{8a}+\dfrac{1}{b}$
+    <p>Traduire chacune des situations par un intervalle.</p>
+<p><strong>a.</strong> $x$ est un réel tel que $-5 < x\leqslant 2$.</p>
+<p><strong>b.</strong> $x$ est un réel inférieur ou égal à $4$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -448,7 +475,9 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{3}{8a}+\dfrac{1}{b}=\dfrac{3 \times b}{8a \times b}+\dfrac{1 \times 8a}{b \times 8a}={\color{#4A5D7A}\dfrac{3b+8a}{8ab}}$$</div>
+    <div><p><strong>a.</strong> La borne $-5$ n&rsquo;est pas atteinte (inégalité stricte) : crochet ouvert. La borne $2$ est atteinte (inégalité large) : crochet fermé.</p>
+$$x\in{\color{#4A5D7A}\left]-5\,;\,2\right]}$$<p><strong>b.</strong> « Inférieur ou égal à $4$ » se traduit par $x\leqslant 4$. Il n&rsquo;y a pas de borne inférieure, et l&rsquo;infini n&rsquo;étant jamais atteint, le crochet de gauche est toujours ouvert.</p>
+$$x\in{\color{#4A5D7A}\left]-\infty\,;\,4\right]}$$</div>
   </div>
   
 </article>
@@ -467,7 +496,10 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    On considère l&rsquo;égalité $\dfrac{1}{y}=4-\dfrac{1}{9}$. Calculer $y$.
+    <p>On donne l&rsquo;intervalle $J=\left[-1\,;\,+\infty\right[$.</p>
+<p><strong>a.</strong> Traduire l&rsquo;appartenance $x\in J$ par une inégalité.</p>
+<p><strong>b.</strong> Les nombres $-1$ et $-1{,}2$ appartiennent-ils à $J$ ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -475,7 +507,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{1}{y}=4-\dfrac{1}{9} = \dfrac{36}{9} - \dfrac{1}{9} =\dfrac{35}{9}$$<p>L&rsquo;inverse de $y$ vaut $\dfrac{35}{9}$, donc $y={\color{#4A5D7A}\dfrac{9}{35}}$.</p></div>
+    <div><p><strong>a.</strong> Le crochet de gauche est fermé, donc la borne $-1$ fait partie de l&rsquo;intervalle :</p>
+$$x\in J \iff {\color{#4A5D7A}x\geqslant -1}$$<p><strong>b.</strong> $-1\geqslant -1$ est vraie, donc ${\color{#4A5D7A}-1\in J}$.</p>
+<p>$-1{,}2\geqslant -1$ est fausse, donc ${\color{#4A5D7A}-1{,}2\notin J}$.</p>
+</div>
   </div>
   
 </article>
@@ -494,9 +529,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Choisir deux nombres puis calculer l&rsquo;inverse de leur somme.</p>
-<p>Le résultat obtenu si on choisit comme nombres $4$ et $-1$ est :</p>
-
+    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
+$$\dfrac{2}{3}-\dfrac{7}{9}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -504,9 +538,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La somme de $4$ et $-1$ est $3$.</p>
-<p>Son inverse est : ${\color{#4A5D7A}\dfrac{1}{3}}$.</p>
-</div>
+    <div><p>On cherche un dénominateur commun à $3$ et $9$ : c&rsquo;est $9$.</p>
+$$\dfrac{2}{3}-\dfrac{7}{9}=\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{3{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{7}{9}=\dfrac{6}{9}-\dfrac{7}{9}=\dfrac{6-7}{9}={\color{#4A5D7A}-\dfrac{1}{9}}$$</div>
   </div>
   
 </article>
@@ -525,7 +558,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Simplifier l&rsquo;écriture fractionnaire : $\dfrac{9x+36}{9}$
+    <p>On considère $A=\dfrac{2}{3-\dfrac{3}{4}}$. $A$ est égal à :</p>
+<p><strong>A.</strong> $\dfrac{8}{9}$   <strong>B.</strong> $\dfrac{9}{8}$   <strong>C.</strong> $\dfrac{9}{4}$   <strong>D.</strong> $\dfrac{2}{9}$</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -533,7 +568,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div>$$\dfrac{9x+36}{9}=\dfrac{9(x+4)}{9}={\color{#4A5D7A}x+4}$$</div>
+    <div><p>On calcule d&rsquo;abord le dénominateur, en réduisant au même dénominateur :</p>
+$$3-\dfrac{3}{4}=\dfrac{12}{4}-\dfrac{3}{4}=\dfrac{9}{4}$$<p>Diviser par une fraction revient à multiplier par son inverse :</p>
+$$A=\dfrac{2}{\dfrac{9}{4}}=2\times\dfrac{4}{9}={\color{#4A5D7A}\dfrac{8}{9}}$$<p><span class="rep">Réponse : A</span></p>
+</div>
   </div>
   
 </article>
@@ -552,7 +590,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Parmi $\mathbb{R}$, $\mathbb{Q}$, $\mathbb{D}$, $\mathbb{Z}$ et $\mathbb{N}$, quel est le plus petit ensemble de nombres auquel appartient $14$ ?
+    <p>Une durée de $2{,}25$ heures correspond à :</p>
+<p><strong>A.</strong> $225$ minutes   <strong>B.</strong> $135$ minutes   <strong>C.</strong> $125$ minutes   <strong>D.</strong> $145$ minutes</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -560,8 +600,8 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$14$ est un entier naturel. Le plus petit ensemble de nombres auquel il appartient est donc ${\color{#4A5D7A}\mathbb{N}}$.</p>
-<p>Rappel : $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q} \subset \mathbb{R}$</p>
+    <div><p>Une heure vaut $60$ minutes. Pour convertir des heures en minutes, on multiplie donc par $60$ :</p>
+$$2{,}25\times 60=2\times 60+0{,}25\times 60=120+15={\color{#4A5D7A}135}\ \text{minutes}$$<p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
   
@@ -663,7 +703,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1784224219';
+    const BUILD_TS = '1787576503';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

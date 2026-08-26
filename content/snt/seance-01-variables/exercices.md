@@ -2,7 +2,7 @@
 title: "Exercices"
 ---
 
-### Exercice 1 — Tableau de trace
+### Exercice 1 - Tableau de trace
 
 On considère le programme Python suivant :
 
@@ -34,7 +34,7 @@ Quel est le rôle de cette instruction ?
 
 ---
 
-### Exercice 2 — Réaffectations
+### Exercice 2 - Réaffectations
 
 On considère le programme Python suivant :
 
@@ -64,13 +64,13 @@ Une ligne comme `x = x - 3` signifie : « la variable `x` prend la valeur `x −
 
 ---
 
-### Exercice 3 — Entraînement interactif
+### Exercice 3 - Entraînement interactif
 
 Exercice à réaliser directement dans le notebook Capytale (exercices codepuzzle.io intégrés).
 
 ---
 
-### Exercice 4 — Types de variables
+### Exercice 4 - Types de variables
 
 Indiquez le type Python le plus approprié (`int`, `float`, `str` ou `bool`) pour stocker chacune des informations suivantes :
 
@@ -86,7 +86,7 @@ Indiquez le type Python le plus approprié (`int`, `float`, `str` ou `bool`) pou
 
 ---
 
-### Exercice 5 — Booléens en pratique
+### Exercice 5 - Booléens en pratique
 
 On modélise l'état d'une application de streaming avec les variables suivantes :
 
@@ -110,7 +110,7 @@ abonnement_actif = True
 
 ---
 
-### Exercice 6 — Noms de variables
+### Exercice 6 - Noms de variables
 
 **Q1.** Lesquels des noms suivants sont **incorrects** en Python ? Expliquez pourquoi et proposez une correction.
 
@@ -125,7 +125,7 @@ abonnement_actif = True
 
 ---
 
-### Exercice 7 — Débogage
+### Exercice 7 - Débogage
 
 Un élève a écrit le programme ci-dessous pour calculer le coût total d'une commande, mais il contient **4 erreurs** sur les noms de variables.
 
@@ -142,21 +142,21 @@ print(Prix_total)
 
 ---
 
-### Exercice 8 — Calculer une moyenne
+### Exercice 8 - Calculer une moyenne
 
 Un élève a obtenu les notes suivantes : **11**, **14,5**, **9** et **16**.
 
-**Q2.** Écrivez un programme Python contenant :
+**Q1.** Écrivez un programme Python contenant :
 
 - 4 variables **bien nommées** pour les 4 notes
 - une variable `moyenne` contenant la moyenne
 - une instruction `print` pour afficher la moyenne
 
-**Q3.** Quelle est la moyenne de cet élève ?
+**Q2.** Quelle est la moyenne de cet élève ?
 
 ---
 
-### Exercice 9 — Programme d'achat
+### Exercice 9 - Programme d'achat
 
 La boutique d'un club de football vend des articles aux prix suivants :
 
@@ -170,7 +170,7 @@ Un supporter veut acheter **2 maillots**, **1 écharpe** et **3 casquettes**.
 
 ---
 
-### Exercice 10 — Programme de calcul
+### Exercice 10 - Programme de calcul
 
 On veut écrire un programme de calcul avec une variable `B` :
 
@@ -184,7 +184,7 @@ On veut écrire un programme de calcul avec une variable `B` :
 
 ---
 
-### Exercice 11 — Racine carrée
+### Exercice 11 - Racine carrée
 
 Pour calculer $\sqrt{a}$ en Python, on utilise `sqrt(a)` du module `math` en ajoutant `from math import *` en début de programme.
 
@@ -198,11 +198,11 @@ Pour calculer $\sqrt{a}$ en Python, on utilise `sqrt(a)` du module `math` en ajo
 
 *Astuce : 3, 4, 5 est un triplet pythagoricien connu.*
 
-**Q4 — Bonus.** La distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Calculez la distance entre $A(1, 2)$ et $B(4, 6)$.
+**Q4 - Bonus.** La distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$. Calculez la distance entre $A(1, 2)$ et $B(4, 6)$.
 
 ---
 
-### Exercice 12 — Comprendre et compléter un programme
+### Exercice 12 - Comprendre et compléter un programme
 
 On considère le programme Python suivant :
 
@@ -234,7 +234,7 @@ y = z / 2
 
 ---
 
-### Exercice 13 — Programme interactif
+### Exercice 13 - Programme interactif
 
 **Q1.** Exécutez le programme ci-dessous. Que se passe-t-il ?
 
@@ -242,11 +242,11 @@ y = z / 2
 
 *Rappel : `input()` renvoie toujours une chaîne (`str`). Utilisez `int()` pour convertir en entier.*
 
-**Q3 — Défi.** Adaptez le programme de la moyenne (exercice 8) pour que les 4 notes soient **demandées à l'utilisateur** avec `input()`.
+**Q3 - Défi.** Adaptez le programme de la moyenne (exercice 8) pour que les 4 notes soient **demandées à l'utilisateur** avec `input()`.
 
 ---
 
-### Exercice 14 — Prédire et vérifier
+### Exercice 14 - Prédire et vérifier
 
 On considère le programme Python suivant :
 
@@ -274,7 +274,7 @@ r3 = b + c + " " + b + c
 
 ---
 
-### Exercice 15 — Ma carte d'identité
+### Exercice 15 - Ma carte d'identité
 
 **Q1.** Complétez et exécutez le programme suivant avec vos vraies informations :
 
@@ -288,13 +288,13 @@ print("Je m'appelle " + prenom + " " + nom + " et je suis en " + classe + ".")
 
 **Q2.** Que se passe-t-il si on remplace la dernière ligne par `print(nom.upper() + " " + prenom)` ? Expliquez ce que fait `.upper()`.
 
-**Q3 — Défi.** Écrivez un programme qui demande à l'utilisateur son prénom et un nombre entier `n`, puis affiche ce prénom répété `n` fois, séparé par des tirets.
+**Q3 - Défi.** Écrivez un programme qui demande à l'utilisateur son prénom et un nombre entier `n`, puis affiche ce prénom répété `n` fois, séparé par des tirets.
 
 *Exemple : si prénom = `"Léa"` et n = 3, le programme affiche `Léa-Léa-Léa`.*
 
 ---
 
-### Exercice 16 — Chaînes de caractères et indices
+### Exercice 16 - Chaînes de caractères et indices
 
 On saisit dans la console les instructions suivantes :
 

@@ -1,5 +1,5 @@
 ---
-title: "Séance 02 — Fonctions"
+title: "Séance 02 - Fonctions"
 short_title: "Fonctions"
 description: "Définir et appeler une fonction, paramètres, valeur retournée, print vs return, déboguer, fonctions imbriquées."
 weight: 2

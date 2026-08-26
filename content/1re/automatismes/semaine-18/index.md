@@ -58,8 +58,8 @@ Soit $x$ un réel.
 On cherche parmi les propositions, lesquelles peuvent donner, après développement, l'expression de l'énoncé. 
 
  $\begin{aligned}
- \left (-4x-2\right)\left(2x+3\right)&=-8x^2-12x-4x-6\\\\
- &=-8x^2-16x-6\\\\
+ \left (-4x-2\right)\left(2x+3\right)&=-8x^2-12x-4x-6\\
+ &=-8x^2-16x-6\\
  \end{aligned}$
   <br>
 La bonne réponse est la réponse <span class="rep">B</span>.
@@ -153,9 +153,9 @@ La somme des probabilités doit être égale à 1.
 Comme $0{,}3=\dfrac{3}{10}$, on a : 
 
  $\begin{aligned}
- x&=1-\left(\dfrac{1}{6}+\dfrac{3}{10}+\dfrac{1}{5}\right)\\\\
- x&=1-\left(\dfrac{5}{30}+\dfrac{9}{30}+\dfrac{6}{30}\right)\\\\
- x&=1-\dfrac{2}{3}\\\\
+ x&=1-\left(\dfrac{1}{6}+\dfrac{3}{10}+\dfrac{1}{5}\right)\\
+ x&=1-\left(\dfrac{5}{30}+\dfrac{9}{30}+\dfrac{6}{30}\right)\\
+ x&=1-\dfrac{2}{3}\\
  x&=\boldsymbol{\dfrac{1}{3}}
  \end{aligned}$ 
 
@@ -243,8 +243,8 @@ On cherche parmi les  propositions, lesquelles peuvent donner, après développe
 
 $$
 \begin{aligned}
-\left (-3x-3\right)\left(x+2\right)&=-3x^2-6x-3x-6\\\\
-&=-3x^2-9x-6\\\\
+\left (-3x-3\right)\left(x+2\right)&=-3x^2-6x-3x-6\\
+&=-3x^2-9x-6\\
 \end{aligned}
 $$
 
@@ -336,8 +336,8 @@ Comme $\dfrac{3}{10}=0{,}3$, on a : <br>
 
 $$
 \begin{aligned}
-x&=1-\left(0{,}3+0{,}35+0{,}1\right)\\\\
-&=1-0{,}75\\\\
+x&=1-\left(0{,}3+0{,}35+0{,}1\right)\\
+&=1-0{,}75\\
 &=\boldsymbol{0{,}25}
 \end{aligned}
 $$

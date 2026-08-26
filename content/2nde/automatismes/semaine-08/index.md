@@ -1,58 +1,116 @@
 ---
-title: "Semaine 8"
+title: "Semaine 8 - Inéquations et translations"
+layout: "automatismes-2nde"
 auto_number: 8
 weight: 8
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Le taux d'évolution associé à un coefficient multiplicateur de $0{,}75$ est :
----CORR---
-Multiplier par $0{,}75 = 1 - 0{,}25$ revient à diminuer de $25\,\%$.
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-Le taux d'évolution est ${\color{#4A5D7A}-25\,\%}$.
+$$-3x+7\leqslant 1$$
+---CORR---
+On retranche $7$ à chaque membre, ce qui ne change pas le sens de l'inégalité :
+
+$$-3x\leqslant -6$$
+
+On divise chaque membre par $-3$. Diviser par un nombre **négatif** change le sens de l'inégalité :
+
+$$x\geqslant \dfrac{-6}{-3} \qquad\text{soit}\qquad x\geqslant 2$$
+
+$$S={\color{#4A5D7A}\left[2\,;\,+\infty\right[}$$
+
+Vérification avec $x=3$ : $-3\times 3+7=-2$, et $-2\leqslant 1$ est bien vraie.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Le prix d'un tee-shirt est $50$€. Il baisse de $20\,\%$. Son nouveau prix est :
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+
+$$5x-2>8x+7$$
 ---CORR---
-$50\times(1-0{,}2)=50\times 0{,}8={\color{#4A5D7A}40}$ €.
+On retranche $8x$ à chaque membre :
+
+$$-3x-2>7$$
+
+On ajoute $2$ à chaque membre :
+
+$$-3x>9$$
+
+On divise chaque membre par $-3$, ce qui change le sens de l'inégalité :
+
+$$x<\dfrac{9}{-3} \qquad\text{soit}\qquad x<-3$$
+
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Un sac coûte $120$ euros. Le prix baisse de $25\,\%$. Le nouveau prix est donné par :
+$ABCD$ est un parallélogramme.
 
-A. $120\times\left(1+\dfrac{25}{100}\right)$ $\quad$ B. $120\times 1{,}25$ $\quad$ C. $120\times\dfrac{25}{100}$ $\quad$ D. $120\times\left(1-\dfrac{25}{100}\right)$
+Quelle est l'image du point $D$ par la translation qui transforme $A$ en $B$ ? Justifier.
 ---CORR---
-Baisser de $25\,\%$ revient à multiplier par $1-0{,}25$.
+La translation qui transforme $A$ en $B$ est la translation de vecteur $\overrightarrow{AB}$.
 
-La bonne réponse est **D**.
+L'image de $D$ est le point $M$ tel que $\overrightarrow{DM}=\overrightarrow{AB}$.
+
+Or $ABCD$ est un parallélogramme, donc ses côtés $[AB]$ et $[DC]$ sont parallèles, de même longueur et de même sens :
+
+$$\overrightarrow{AB}=\overrightarrow{DC}$$
+
+L'image de $D$ est donc le point ${\color{#4A5D7A}C}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Le prix d'un sweat est passé de $40$€ à $32$€. Il a baissé de :
+Résoudre dans $\mathbb{R}$ l'équation :
+
+$$(4x+1)(x-6)=0$$
 ---CORR---
-La baisse est de $8$€ sur $40$€ : $\dfrac{8}{40}=0{,}2={\color{#4A5D7A}20\,\%}$.
+Un produit de facteurs est nul si et seulement si l'un au moins de ses facteurs est nul :
+
+$$4x+1=0 \quad\text{donc}\quad x=-\dfrac{1}{4} \qquad\qquad x-6=0 \quad\text{donc}\quad x=6$$
+
+$$S={\color{#4A5D7A}\left\lbrace -\dfrac{1}{4}\,;\,6\right\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Une grandeur passe de $150$ à $225$. L'évolution est :
+L'ensemble $S$ des solutions de l'équation $(x-5)^2=-4$ est :
 
-A. Une augmentation de $33\,\%$ $\quad$ B. Une augmentation de $50\,\%$ $\quad$ C. Une augmentation de $75\,\%$ $\quad$ D. Une augmentation de $65\,\%$
+**A.** $S=\lbrace -2\,;\,2\rbrace$ &emsp; **B.** $S=\lbrace 3\,;\,7\rbrace$ &emsp; **C.** $S=\lbrace 5\rbrace$ &emsp; **D.** $S=\varnothing$
 ---CORR---
-$t=\dfrac{225-150}{150}=\dfrac{75}{150}=0{,}5=50\,\%$.
+Le membre de gauche est un carré. Or le carré d'un nombre réel est toujours positif ou nul :
 
-La bonne réponse est **B**.
+$$(x-5)^2\geqslant 0 \quad\text{pour tout réel }x$$
+
+Il ne peut donc jamais être égal à $-4$, qui est strictement négatif.
+
+$$S={\color{#4A5D7A}\varnothing}$$
+
+Aucun calcul n'est nécessaire : il suffit de reconnaître qu'un carré ne peut pas être négatif.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Le prix d'un article connaît deux augmentations successives de $10\,\%$. Le taux d'évolution global est :
----CORR---
-Coefficient multiplicateur global : $1{,}1\times 1{,}1=1{,}21$.
+Dans un lycée, $180$ élèves étudient l'italien, ce qui représente $15\,\%$ du nombre d'élèves inscrits.
 
-Taux global : $1{,}21-1=0{,}21={\color{#4A5D7A}+21\,\%}$.
+Le nombre d'élèves inscrits dans ce lycée est :
+
+**A.** $27$ &emsp; **B.** $1\,200$ &emsp; **C.** $120$ &emsp; **D.** $2\,700$
+---CORR---
+On note $N$ le nombre d'élèves inscrits. L'énoncé se traduit par :
+
+$$\dfrac{15}{100}\times N=180 \qquad\text{soit}\qquad 0{,}15\times N=180$$
+
+On divise chaque membre par $0{,}15$ :
+
+$$N=\dfrac{180}{0{,}15}=\dfrac{18\,000}{15}={\color{#4A5D7A}1\,200}$$
+
+Vérification : $15\,\%$ de $1\,200$ vaut $\dfrac{15\times 1\,200}{100}=180$.
+
+La réponse A est le piège : elle correspond à $15\,\%$ **de** $180$, alors qu'ici $180$ est déjà le résultat.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -60,51 +118,109 @@ Taux global : $1{,}21-1=0{,}21={\color{#4A5D7A}+21\,\%}$.
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Le taux d'évolution associé à un coefficient multiplicateur de $1{,}15$ est :
----CORR---
-Multiplier par $1{,}15 = 1 + 0{,}15$ revient à augmenter de $15\,\%$.
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
 
-Le taux d'évolution est ${\color{#4A5D7A}+15\,\%}$.
+$$-4x+3\leqslant -9$$
+---CORR---
+On retranche $3$ à chaque membre, ce qui ne change pas le sens de l'inégalité :
+
+$$-4x\leqslant -12$$
+
+On divise chaque membre par $-4$. Diviser par un nombre **négatif** change le sens de l'inégalité :
+
+$$x\geqslant \dfrac{-12}{-4} \qquad\text{soit}\qquad x\geqslant 3$$
+
+$$S={\color{#4A5D7A}\left[3\,;\,+\infty\right[}$$
+
+Vérification avec $x=4$ : $-4\times 4+3=-13$, et $-13\leqslant -9$ est bien vraie.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Le prix d'un jean est $80$€. Il augmente de $15\,\%$. Son nouveau prix est :
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+
+$$6x+5>9x+17$$
 ---CORR---
-$80\times 1{,}15={\color{#4A5D7A}92}$ €.
+On retranche $9x$ à chaque membre :
+
+$$-3x+5>17$$
+
+On retranche $5$ à chaque membre :
+
+$$-3x>12$$
+
+On divise chaque membre par $-3$, ce qui change le sens de l'inégalité :
+
+$$x<\dfrac{12}{-3} \qquad\text{soit}\qquad x<-4$$
+
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Un livre coûte $25$ euros. Le prix augmente de $12\,\%$. Le nouveau prix est donné par :
+$EFGH$ est un parallélogramme.
 
-A. $25\times\left(1-\dfrac{12}{100}\right)$ $\quad$ B. $25\times 0{,}12$ $\quad$ C. $25\times\left(1+\dfrac{12}{100}\right)$ $\quad$ D. $25\times 1{,}12$
+Quelle est l'image du point $F$ par la translation qui transforme $E$ en $H$ ? Justifier.
 ---CORR---
-Augmenter de $12\,\%$ revient à multiplier par $1+0{,}12=1{,}12$.
+La translation qui transforme $E$ en $H$ est la translation de vecteur $\overrightarrow{EH}$.
 
-Les réponses **C** et **D** sont équivalentes (toutes les deux correctes).
+L'image de $F$ est le point $M$ tel que $\overrightarrow{FM}=\overrightarrow{EH}$.
+
+Or $EFGH$ est un parallélogramme, donc ses côtés $[EH]$ et $[FG]$ sont parallèles, de même longueur et de même sens :
+
+$$\overrightarrow{EH}=\overrightarrow{FG}$$
+
+L'image de $F$ est donc le point ${\color{#4A5D7A}G}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Le prix d'une veste est passé de $60$€ à $75$€. Il a augmenté de :
+Résoudre dans $\mathbb{R}$ l'équation :
+
+$$(3x-2)(x+8)=0$$
 ---CORR---
-La hausse est de $15$€ sur $60$€ : $\dfrac{15}{60}=0{,}25={\color{#4A5D7A}25\,\%}$.
+Un produit de facteurs est nul si et seulement si l'un au moins de ses facteurs est nul :
+
+$$3x-2=0 \quad\text{donc}\quad x=\dfrac{2}{3} \qquad\qquad x+8=0 \quad\text{donc}\quad x=-8$$
+
+$$S={\color{#4A5D7A}\left\lbrace -8\,;\,\dfrac{2}{3}\right\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-Une grandeur passe de $200$ à $160$. L'évolution est :
+L'ensemble $S$ des solutions de l'équation $(x+3)^2=-9$ est :
 
-A. Une diminution de $20\,\%$ $\quad$ B. Une diminution de $25\,\%$ $\quad$ C. Une diminution de $40\,\%$ $\quad$ D. Une diminution de $30\,\%$
+**A.** $S=\varnothing$ &emsp; **B.** $S=\lbrace -6\,;\,0\rbrace$ &emsp; **C.** $S=\lbrace -3\rbrace$ &emsp; **D.** $S=\lbrace 3\,;\,-3\rbrace$
 ---CORR---
-$t=\dfrac{160-200}{200}=\dfrac{-40}{200}=-0{,}2=-20\,\%$.
+Le membre de gauche est un carré. Or le carré d'un nombre réel est toujours positif ou nul :
 
-La bonne réponse est **A**.
+$$(x+3)^2\geqslant 0 \quad\text{pour tout réel }x$$
+
+Il ne peut donc jamais être égal à $-9$, qui est strictement négatif.
+
+$$S={\color{#4A5D7A}\varnothing}$$
+
+Aucun calcul n'est nécessaire : il suffit de reconnaître qu'un carré ne peut pas être négatif.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-Le prix d'un article connaît deux baisses successives de $15\,\%$. Le taux d'évolution global est :
----CORR---
-Coefficient multiplicateur global : $0{,}85\times 0{,}85=0{,}7225$.
+Dans un lycée, $84$ élèves étudient le russe, ce qui représente $6\,\%$ du nombre d'élèves inscrits.
 
-Taux global : $0{,}7225-1=-0{,}2775={\color{#4A5D7A}-27{,}75\,\%}$.
+Le nombre d'élèves inscrits dans ce lycée est :
+
+**A.** $5{,}04$ &emsp; **B.** $140$ &emsp; **C.** $1\,400$ &emsp; **D.** $504$
+---CORR---
+On note $N$ le nombre d'élèves inscrits. L'énoncé se traduit par :
+
+$$\dfrac{6}{100}\times N=84 \qquad\text{soit}\qquad 0{,}06\times N=84$$
+
+On divise chaque membre par $0{,}06$ :
+
+$$N=\dfrac{84}{0{,}06}=\dfrac{8\,400}{6}={\color{#4A5D7A}1\,400}$$
+
+Vérification : $6\,\%$ de $1\,400$ vaut $\dfrac{6\times 1\,400}{100}=84$.
+
+La réponse A est le piège : elle correspond à $6\,\%$ **de** $84$, alors qu'ici $84$ est déjà le résultat.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

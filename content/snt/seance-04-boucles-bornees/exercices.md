@@ -1,8 +1,8 @@
 ---
-title: "Exercices — Séance 04 Boucles bornées"
+title: "Exercices - Séance 04 Boucles bornées"
 ---
 
-### Exercice 1 — Population d'un village
+### Exercice 1 - Population d'un village
 
 Un village compte aujourd'hui **2 300 habitants**. Sa population augmente de **150 habitants par an**.
 
@@ -29,7 +29,7 @@ def population(...):
 
 ---
 
-### Exercice 2 — Somme des entiers
+### Exercice 2 - Somme des entiers
 
 On considère l'algorithme suivant :
 
@@ -46,7 +46,7 @@ Fin Pour
 
 ---
 
-### Exercice 3 — Analyse de programme
+### Exercice 3 - Analyse de programme
 
 On considère le programme suivant :
 
@@ -65,17 +65,17 @@ a = 2 * a
 
 ---
 
-### Exercice 4 — Code puzzle (interactif)
+### Exercice 4 - Code puzzle (interactif)
 
 Cet exercice est interactif : ouvrir le notebook et exécuter les cellules de l'exercice 4 pour répondre aux questions.
 
-**Q1.** Question interactive 1 — réaliser dans le notebook.
+**Q1.** Question interactive 1 - réaliser dans le notebook.
 
-**Q2.** Question interactive 2 — réaliser dans le notebook.
+**Q2.** Question interactive 2 - réaliser dans le notebook.
 
 ---
 
-### Exercice 5 — Prédire l'exécution
+### Exercice 5 - Prédire l'exécution
 
 Voici quatre programmes avec des boucles `for`.
 
@@ -121,7 +121,7 @@ print("hors de la boucle")
 
 ---
 
-### Exercice 6 — Réseau social
+### Exercice 6 - Réseau social
 
 Un réseau social avait **25 000 utilisateurs en 2021**. Son nombre d'utilisateurs **double chaque année**.
 
@@ -143,7 +143,7 @@ def users():
 
 ---
 
-### Exercice 7 — Le blob
+### Exercice 7 - Le blob
 
 Un blob est un organisme unicellulaire qui **double son nombre de cellules chaque jour** s'il se nourrit correctement.
 
@@ -159,7 +159,7 @@ def blob(n, j):
 
 ---
 
-### Exercice 8 — Épargne de Gaspard
+### Exercice 8 - Épargne de Gaspard
 
 Les parents de Gaspard ont déposé **1 500 €** sur son livret d'épargne à un taux d'intérêt de **2 %** par an (c'est-à-dire que la somme est multipliée par 1.02 chaque année).
 
@@ -171,9 +171,11 @@ Les parents de Gaspard ont déposé **1 500 €** sur son livret d'épargne à u
 
 ---
 
-### Exercice 9 — Tortue Python
+### Exercice 9 - Tortue Python
 
 Le module `turtle` permet de dessiner avec Python. La fonction `carre()` ci-dessous trace un carré en répétant 4 fois les mêmes instructions.
+
+**Q1.** Exécuter le programme ci-dessous dans le notebook et observer le tracé.
 
 ```python
 from turtle import *
@@ -187,6 +189,10 @@ def carre():
     left(90)
     forward(100)
     left(90)
+
+carre()   # appel de la fonction pour tracer le carré
+
+done()    # pour lancer l'animation
 ```
 
 **Q2.** Réécrire la fonction `carre()` en utilisant une boucle `for`.
@@ -197,7 +203,7 @@ def carre():
 
 ---
 
-### Exercice 10 — Notes de classe
+### Exercice 10 - Notes de classe
 
 On dispose des notes d'une classe de 10 élèves :
 
@@ -232,4 +238,4 @@ print("Nombre d'élèves reçus :", compteur)
 
 **Q4.** Sans l'exécuter, combien d'élèves sont reçus ? Vérifiez ensuite en exécutant.
 
-**Q5 — Bonus.** Modifiez le programme pour qu'il affiche également le nombre d'élèves **recalés**, en utilisant un deuxième compteur dans la même boucle.
+**Q5 - Bonus.** Modifiez le programme pour qu'il affiche également le nombre d'élèves **recalés**, en utilisant un deuxième compteur dans la même boucle.

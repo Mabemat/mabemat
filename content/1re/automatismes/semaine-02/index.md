@@ -69,8 +69,8 @@ On considère une fonction affine $f$ telle que $f(4)=-11$ et $f(8)=-19$.
 $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.
 
  $\begin{aligned}
-    m&=\dfrac{f(8)-f(4)}{8-4}\\\\
-    &=\dfrac{-19+11}{4}\\\\
+    m&=\dfrac{f(8)-f(4)}{8-4}\\
+    &=\dfrac{-19+11}{4}\\
     &=-2
     \end{aligned}$
 
@@ -79,8 +79,8 @@ $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.
  Pour déterminer $p$, on utilise la valeur de $f(4)$ :
 
  $\begin{aligned}
-    f(4)&=-2\times 4+p\\\\
-    -11&=-8+p\\\\
+    f(4)&=-2\times 4+p\\
+    -11&=-8+p\\
     p&=-3
     \end{aligned}$
 
@@ -90,7 +90,7 @@ $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.
 
  $\begin{aligned}
     f(12)&=-2\times 12  -3
-     \\\\&=-24-3\\\\ 
+     \\&=-24-3\\ 
     &=-27
     \end{aligned}$
 
@@ -111,7 +111,7 @@ La forme développée de $(3a+2)^2$ est :
 On utilise l'égalité remarquable $(a+b)^2=a^2+2ab+b^2$ avec $a=3a$ et $b=2$.
 
  $\begin{aligned}
-         (3a+2)^2&=(3a)^2+2 \times 3a \times 2 + 2^2\\\\
+         (3a+2)^2&=(3a)^2+2 \times 3a \times 2 + 2^2\\
             &=9a^2+12a+4
             \end{aligned}$
 
@@ -235,8 +235,8 @@ $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.<br>
 
 $$
 \begin{aligned}
-m&=\dfrac{f(7)-f(5)}{7-5}\\\\
-&=\dfrac{0-2}{2}\\\\
+m&=\dfrac{f(7)-f(5)}{7-5}\\
+&=\dfrac{0-2}{2}\\
 &=-1
 \end{aligned}
 $$
@@ -246,8 +246,8 @@ Pour déterminer $p$, on utilise la valeur de $f(5)$ :<br>
 
 $$
 \begin{aligned}
-f(5)&=-1\times 5+p\\\\
-2&=-5+p\\\\
+f(5)&=-1\times 5+p\\
+2&=-5+p\\
 p&=7
 \end{aligned}
 $$
@@ -257,8 +257,8 @@ L'image de $12$ par cette fonction est :<br>
 
 $$
 \begin{aligned}
-f(12)&=-1\times 12  +7\\\\
-&=-12+7\\\\
+f(12)&=-1\times 12  +7\\
+&=-12+7\\
 &=\boldsymbol{-5}
 \end{aligned}
 $$
@@ -282,7 +282,7 @@ On utilise l'égalité remarquable $(a+b)(a-b)=a^2-b^2$ avec $a=2x$ et $b=9$.<br
 
 $$
 \begin{aligned}
-(2x-9)(2x+9)&=(2x)^2-9^2\\\\
+(2x-9)(2x+9)&=(2x)^2-9^2\\
 &=\boldsymbol{4x^2-81}
 \end{aligned}
 $$

@@ -9,9 +9,9 @@ has_exercices: true
 has_qcm: false
 competences:
   - "Définir une suite par récurrence ou par une formule explicite"
-  - "Reconnaître une suite arithmétique et calculer son terme général"
-  - "Reconnaître une suite géométrique et calculer son terme général"
-  - "Étudier le sens de variation d'une suite"
+  - "Calculer des termes d'une suite de proche en proche ou directement"
+  - "Étudier le sens de variation d'une suite ($u_{n+1}-u_n$, quotient, $u_n=f(n)$)"
+  - "Conjecturer la limite d'une suite (convergence, divergence)"
 categorie: Algèbre
 
 ---

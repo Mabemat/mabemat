@@ -1,0 +1,39 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 228' width='620' height='228' font-family='Georgia, serif'>
+<rect x='347.0' y='8' width='123.5' height='186.0' fill='#7B5E8C' opacity='0.09'/>
+<line x1='182.3' y1='8' x2='182.3' y2='194.0' stroke='#9AA0A6' stroke-width='1' stroke-dasharray='3 4' opacity='0.5'/>
+<line x1='264.7' y1='8' x2='264.7' y2='194.0' stroke='#9AA0A6' stroke-width='1' stroke-dasharray='3 4' opacity='0.5'/>
+<line x1='347.0' y1='8' x2='347.0' y2='194.0' stroke='#9AA0A6' stroke-width='1' stroke-dasharray='3 4' opacity='0.5'/>
+<line x1='429.3' y1='8' x2='429.3' y2='194.0' stroke='#9AA0A6' stroke-width='1' stroke-dasharray='3 4' opacity='0.5'/>
+<line x1='470.5' y1='8' x2='470.5' y2='194.0' stroke='#9AA0A6' stroke-width='1' stroke-dasharray='3 4' opacity='0.5'/>
+<line x1='511.7' y1='8' x2='511.7' y2='194.0' stroke='#9AA0A6' stroke-width='1' stroke-dasharray='3 4' opacity='0.5'/>
+<line x1='86' y1='194' x2='610' y2='194' stroke='#2E2E2E' stroke-width='1.6'/>
+<path d='M616,194 L606,189 L606,199 Z' fill='#2E2E2E'/>
+<line x1='182.3' y1='189' x2='182.3' y2='199' stroke='#2E2E2E' stroke-width='1.6'/>
+<text x='182.3' y='216' text-anchor='middle' font-size='15' fill='#2E2E2E'>−4</text>
+<line x1='264.7' y1='189' x2='264.7' y2='199' stroke='#2E2E2E' stroke-width='1.6'/>
+<text x='264.7' y='216' text-anchor='middle' font-size='15' fill='#2E2E2E'>−2</text>
+<line x1='347.0' y1='189' x2='347.0' y2='199' stroke='#2E2E2E' stroke-width='1.6'/>
+<text x='347.0' y='216' text-anchor='middle' font-size='15' fill='#2E2E2E'>0</text>
+<line x1='429.3' y1='189' x2='429.3' y2='199' stroke='#2E2E2E' stroke-width='1.6'/>
+<text x='429.3' y='216' text-anchor='middle' font-size='15' fill='#2E2E2E'>2</text>
+<line x1='470.5' y1='189' x2='470.5' y2='199' stroke='#2E2E2E' stroke-width='1.6'/>
+<text x='470.5' y='216' text-anchor='middle' font-size='15' fill='#2E2E2E'>3</text>
+<line x1='511.7' y1='189' x2='511.7' y2='199' stroke='#2E2E2E' stroke-width='1.6'/>
+<text x='511.7' y='216' text-anchor='middle' font-size='15' fill='#2E2E2E'>4</text>
+<text x='64' y='29' text-anchor='end' font-size='16' fill='#4A5D7A' font-style='italic'>I</text>
+<line x1='182.3' y1='24' x2='470.5' y2='24' stroke='#4A5D7A' stroke-width='5' stroke-linecap='butt'/>
+<path d='M175.3,13 L182.3,13 L182.3,35 L175.3,35' stroke='#4A5D7A' stroke-width='3' fill='none' stroke-linecap='square' stroke-linejoin='miter'/>
+<path d='M463.5,13 L470.5,13 L470.5,35 L463.5,35' stroke='#4A5D7A' stroke-width='3' fill='none' stroke-linecap='square' stroke-linejoin='miter'/>
+<text x='64' y='71' text-anchor='end' font-size='16' fill='#B85C5C' font-style='italic'>J</text>
+<line x1='347.0' y1='66' x2='602.0' y2='66' stroke='#B85C5C' stroke-width='5' stroke-linecap='butt'/>
+<path d='M354.0,55 L347.0,55 L347.0,77 L354.0,77' stroke='#B85C5C' stroke-width='3' fill='none' stroke-linecap='square' stroke-linejoin='miter'/>
+<path d='M612,66 L602,60 L602,72 Z' fill='#B85C5C'/>
+<text x='64' y='113' text-anchor='end' font-size='16' fill='#7B5E8C' font-style='italic'>I∩J</text>
+<line x1='347.0' y1='108' x2='470.5' y2='108' stroke='#7B5E8C' stroke-width='5' stroke-linecap='butt'/>
+<path d='M354.0,97 L347.0,97 L347.0,119 L354.0,119' stroke='#7B5E8C' stroke-width='3' fill='none' stroke-linecap='square' stroke-linejoin='miter'/>
+<path d='M463.5,97 L470.5,97 L470.5,119 L463.5,119' stroke='#7B5E8C' stroke-width='3' fill='none' stroke-linecap='square' stroke-linejoin='miter'/>
+<text x='64' y='155' text-anchor='end' font-size='16' fill='#5F7A52' font-style='italic'>I∪J</text>
+<line x1='182.3' y1='150' x2='602.0' y2='150' stroke='#5F7A52' stroke-width='5' stroke-linecap='butt'/>
+<path d='M175.3,139 L182.3,139 L182.3,161 L175.3,161' stroke='#5F7A52' stroke-width='3' fill='none' stroke-linecap='square' stroke-linejoin='miter'/>
+<path d='M612,150 L602,144 L602,156 Z' fill='#5F7A52'/>
+</svg>

@@ -1,5 +1,5 @@
 ---
-title: "QCM — Boucles non bornées"
+title: "QCM - Boucles non bornées"
 layout: "qcm"
 ---
 
@@ -102,7 +102,7 @@ while n < 3:
 | 1 | 0 | ✓ | `0` | 1 |
 | 2 | 1 | ✓ | `1` | 2 |
 | 3 | 2 | ✓ | `2` | 3 |
-| Stop | 3 | ✗ | — | — |
+| Stop | 3 | ✗ | - | - |
 
 La boucle s'arrête **avant** d'afficher 3 : la condition `3 < 3` est fausse.
 
@@ -128,9 +128,9 @@ print("fin")
 | Étape | `n` | `n < 5` | Action |
 |:---:|:---:|:---:|---|
 | Test initial | 10 | ✗ Fausse (10 n'est pas < 5) | Le bloc n'est **jamais** exécuté |
-| Après boucle | 10 | — | `print("fin")` |
+| Après boucle | 10 | - | `print("fin")` |
 
-Si la condition est fausse **dès le départ**, la boucle est complètement sautée — elle peut tourner **zéro fois**.
+Si la condition est fausse **dès le départ**, la boucle est complètement sautée - elle peut tourner **zéro fois**.
 
 **Réponse : `fin`**
 {{< /qcm >}}
@@ -186,7 +186,7 @@ while n < 16:
 | 2 | 2 | ✓ | 4 |
 | 3 | 4 | ✓ | 8 |
 | 4 | 8 | ✓ | **16** |
-| Stop | 16 | ✗ (16 n'est pas < 16) | — |
+| Stop | 16 | ✗ (16 n'est pas < 16) | - |
 
 La boucle fait **4 tours** : `n` passe de 1 à 16 par doublements successifs (1, 2, 4, 8, 16), puis le test devient faux.
 
@@ -215,7 +215,7 @@ while n < 50:
 | 4 | 8 | ✓ | 16 |
 | 5 | 16 | ✓ | 32 |
 | 6 | 32 | ✓ | **64** |
-| Stop | 64 | ✗ (64 ≥ 50) | — |
+| Stop | 64 | ✗ (64 ≥ 50) | - |
 
 `n + n` double la valeur de `n`. On dépasse 50 quand `n` vaut 64.
 
@@ -244,8 +244,8 @@ print("Décollage !")
 | 2 | 2 | ✓ | `2` |
 | 3 | 1 | ✓ | `1` |
 | 4 | 0 | ✓ | `0` |
-| Stop | -1 | ✗ | — |
-| (après boucle) | — | — | `Décollage !` |
+| Stop | -1 | ✗ | - |
+| (après boucle) | - | - | `Décollage !` |
 
 Avec `n >= 0`, la valeur 0 est **incluse** dans la boucle (≥ et non >).
 
@@ -275,7 +275,7 @@ while charge >= 20:
 | … | … | … | … |
 | 8 | 31 | ✓ | 23 |
 | 9 | 23 | ✓ | **15** |
-| Stop | 15 | ✗ (15 < 20) | — |
+| Stop | 15 | ✗ (15 < 20) | - |
 
 On boucle tant que la charge **reste ≥ 20 %**. La charge passe en dessous au tour où elle vaut 23 → 15, soit **10 heures**.
 
@@ -305,10 +305,10 @@ Que renvoie `annees(2000, 3000)` ?
 | 0 | 2 000 | ✓ | 2 050 |
 | 1 | 2 050 | ✓ | 2 101.25 |
 | … | … | … | … |
-| 16 | 2 967.30 | ✓ | **3 041.49** |
-| Stop | 3 041.49 | ✗ | — |
+| 16 | 2 969.01 | ✓ | **3 043.24** |
+| Stop | 3 043.24 | ✗ | - |
 
-Le capital dépasse 3 000 € au bout de **17 ans** (2 000 × 1.025¹⁷ ≈ 3 041).
+Le capital dépasse 3 000 € au bout de **17 ans** (2 000 × 1.025¹⁷ ≈ 3 043,24).
 
 **Réponse : `17`**
 {{< /qcm >}}
@@ -396,7 +396,7 @@ while n != 1:
 | 8 | pair | 8 // 2 | 4 | `4` |
 | 4 | pair | 4 // 2 | 2 | `2` |
 | 2 | pair | 2 // 2 | 1 | `1` |
-| 1 | — | (stop) | — | — |
+| 1 | - | (stop) | - | - |
 
 Le `print(n)` est **après** la modification : la première valeur affichée est `3` (pas `6`). Et `1` est bien affiché avant la sortie.
 
@@ -426,7 +426,7 @@ print(n)
 | 4 | 12 | ✓ | 6 |
 | 5 | 6 | ✓ | 3 |
 | 6 | 3 | ✓ | **1** |
-| Stop | 1 | ✗ (1 n'est pas > 1) | — |
+| Stop | 1 | ✗ (1 n'est pas > 1) | - |
 
 `//` est la **division entière** (pas de virgule). Le `print(n)` est **hors** boucle, il n'affiche `n` qu'une seule fois à la sortie : **1**.
 
@@ -486,7 +486,7 @@ while n < 100:
 | 3 | 9 | ✓ | 27 |
 | 4 | 27 | ✓ | 81 |
 | 5 | 81 | ✓ | **243** |
-| Stop | 243 | ✗ | — |
+| Stop | 243 | ✗ | - |
 
 `n` triple à chaque tour : 1 → 3 → 9 → 27 → 81 → 243. La boucle s'exécute **5 fois** (le dernier tour faisant passer `n` au-dessus de 100).
 
@@ -552,7 +552,7 @@ Que renvoie `cible(1000)` ?
 | 2 | 2 000 | ✓ | 4 000 | 2 |
 | 3 | 4 000 | ✓ | 8 000 | 3 |
 | 4 | 8 000 | ✓ | **16 000** | 4 |
-| Stop | 16 000 | ✗ | — | — |
+| Stop | 16 000 | ✗ | - | - |
 
 Il faut **4 doublements** pour passer de 1 000 à 16 000 (premier multiple de 2 ≥ 10 000).
 1 000 × 2⁴ = 16 000 ≥ 10 000 ✓, mais 1 000 × 2³ = 8 000 < 10 000.

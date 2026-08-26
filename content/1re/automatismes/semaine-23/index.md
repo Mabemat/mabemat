@@ -209,10 +209,10 @@ $A(3~;~6)$ appartient à $\mathcal{D}$ signifie que $g(3)=6$.<br>
 
 $$
 \begin{aligned}
-g(3)&=6\\\\
-3\times 3+b&=6\\\\
-9+b&=6\\\\
-b&=6-9\\\\
+g(3)&=6\\
+3\times 3+b&=6\\
+9+b&=6\\
+b&=6-9\\
 b&=-3
 \end{aligned}
 $$
@@ -222,8 +222,8 @@ L'image de $4$ par cette fonction correspond à  l'ordonnée du point de  $\math
 
 $$
 \begin{aligned}
-g(4)&=3\times 4-3\\\\
-&=12-3\\\\
+g(4)&=3\times 4-3\\
+&=12-3\\
 &=\boldsymbol{9}
 \end{aligned}
 $$
@@ -267,8 +267,8 @@ Une écriture simplifiée de $0{,}4a-a$ est :
 
 $$
 \begin{aligned}
-0{,}4a-a&=0{,}4a-1a\\\\
-&=(0{,}4-1)a\\\\
+0{,}4a-a&=0{,}4a-1a\\
+&=(0{,}4-1)a\\
 &=\boldsymbol{-0{,}6a}
 \end{aligned}
 $$
@@ -292,14 +292,14 @@ On développe, puis on isole l'inconnue dans le membre de gauche :<br>
 
 $$
 \begin{aligned}
-4-(x+5)&=3x+8\\\\
-4-1x-5&=3x+8\\\\
--x-1&=3x+8\\\\
--x-1\boldsymbol{-3x}&=3x+8\boldsymbol{-3x}\\\\
--4x-1&=8\\\\
--4x-1\boldsymbol{+1}&=8\boldsymbol{+1}\\\\
--4x&=9\\\\
-x&=\dfrac{9}{-4}\\\\
+4-(x+5)&=3x+8\\
+4-1x-5&=3x+8\\
+-x-1&=3x+8\\
+-x-1\boldsymbol{-3x}&=3x+8\boldsymbol{-3x}\\
+-4x-1&=8\\
+-4x-1\boldsymbol{+1}&=8\boldsymbol{+1}\\
+-4x&=9\\
+x&=\dfrac{9}{-4}\\
 x&=-\dfrac{9}{4}
 \end{aligned}
 $$
@@ -343,23 +343,17 @@ Remarque : On fera bien attention à ne pas utiliser la ligne des numéros de de
 La moyenne est donc égale à $\dfrac{40 + 2x}{5}$. <br>
 Comme elle doit être égale à $16$, on doit résoudre l'équation suivante :
 
-$
-
-$
 $$
 \begin{aligned}
-\dfrac{40 + 2x}{5} &= 16\\\\\\\\
-40 + 2x &= 16 \times 5\\\\\\\\
-40 + 2x&= 80\\\\\\\\
-2x &= 80 - 40\\\\\\\\
-2x &= 40\\\\\\\\
-x &= \dfrac{40}{2}\\\\\\\\
+\dfrac{40 + 2x}{5} &= 16\\
+40 + 2x &= 16 \times 5\\
+40 + 2x&= 80\\
+2x &= 80 - 40\\
+2x &= 40\\
+x &= \dfrac{40}{2}\\
 x&= \boldsymbol{20}.
 \end{aligned}
 $$
-$
-
-$
 
 La bonne réponse est la réponse <span class="rep">C</span>.
 

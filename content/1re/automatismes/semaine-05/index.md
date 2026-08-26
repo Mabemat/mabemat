@@ -93,7 +93,7 @@ L'image de $-\dfrac{3}{5}$ par la fonction $p$ est :
 ---CORR---
 Comme $p(x)=-4x-6$, on a :
 
-$\begin{aligned}p\left(-\dfrac{3}{5}\right)&=-4\times \left(-\dfrac{3}{5}\right)-6\\\\&=\dfrac{12}{5}-6\\\\&=-\dfrac{18}{5}\end{aligned}$
+$\begin{aligned}p\left(-\dfrac{3}{5}\right)&=-4\times \left(-\dfrac{3}{5}\right)-6\\&=\dfrac{12}{5}-6\\&=-\dfrac{18}{5}\end{aligned}$
 
 La bonne réponse est la réponse <span class="rep">D</span>.
 
@@ -135,7 +135,7 @@ Développer et réduire l'expression $(x-4)(x-1)$.
 
 ---CORR---
 $\begin{aligned}
-            (x-4)(x-1)&=x^2-x-4x+4\\\\
+            (x-4)(x-1)&=x^2-x-4x+4\\
             &=x^2-5x+4
             \end{aligned}$
 
@@ -236,7 +236,7 @@ L'image de $\dfrac{5}{4}$ par la fonction $f$ est :
 Comme $f(x)=2x-4$, on a :<br>
 
 $$
-\begin{aligned}f\left(\dfrac{5}{4}\right)&=2\times \dfrac{5}{4}-4\\\\&=\dfrac{5}{2}-4\\\\&=\boldsymbol{-\dfrac{3}{2}}\end{aligned}
+\begin{aligned}f\left(\dfrac{5}{4}\right)&=2\times \dfrac{5}{4}-4\\&=\dfrac{5}{2}-4\\&=\boldsymbol{-\dfrac{3}{2}}\end{aligned}
 $$
 
 La bonne réponse est la réponse <span class="rep">C</span>.
@@ -280,7 +280,7 @@ Développer et réduire l'expression $(-1+2x)(x-4)$.
 ---CORR---
 $$
 \begin{aligned}
-(-1+2x)(x-4)&=-x+4+2x^2-8x\\\\
+(-1+2x)(x-4)&=-x+4+2x^2-8x\\
 &=\boldsymbol{2x^2-9x+4}
 \end{aligned}
 $$

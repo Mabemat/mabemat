@@ -26,10 +26,10 @@ On considère $A=\dfrac{4}{5-\dfrac{2}{3}}$.
 
 ---CORR---
 $\begin{aligned}
-A &= \dfrac{4}{5-\dfrac{2}{3}} \\\\
-&= \dfrac{4}{\dfrac{15}{3}-\dfrac{2}{3}} \\\\
-&= \dfrac{4}{\dfrac{13}{3}} \\\\
-&= 4 \times \dfrac{3}{13} \\\\
+A &= \dfrac{4}{5-\dfrac{2}{3}} \\
+&= \dfrac{4}{\dfrac{15}{3}-\dfrac{2}{3}} \\
+&= \dfrac{4}{\dfrac{13}{3}} \\
+&= 4 \times \dfrac{3}{13} \\
 &= \dfrac{12}{13}
 \end{aligned}$
 
@@ -52,8 +52,8 @@ Soient $K$, $L$, $I$ et $J$ quatre nombres (avec $J$ non nul) vérifiant l'égal
 On isole $L$ dans un membre de l'égalité :
 
  $\begin{aligned}
-        K &= \dfrac{L + I}{J}\\\\
-        K \times J &= L + I\\\\
+        K &= \dfrac{L + I}{J}\\
+        K \times J &= L + I\\
         K \times J - I &= L
         \end{aligned}$
 
@@ -124,8 +124,8 @@ Le plan est muni d’un repère orthogonal.
 Le coefficient directeur $m$ de la droite $(AE)$ est donnée par la formule : $\dfrac{y_{E}-y_{A}}{x_{E}-x_{A}}$.
 
  $\begin{aligned}
-    m&=\dfrac{-8-2}{-10-(-3)}\\\\
-    &= \dfrac{-10}{-7}\\\\
+    m&=\dfrac{-8-2}{-10-(-3)}\\
+    &= \dfrac{-10}{-7}\\
     &=\dfrac{10}{7}
     \end{aligned}$
 
@@ -148,8 +148,8 @@ Soit $f$ la fonction définie par : $f(x)=\dfrac{2}{3}x-4$.
 Comme $f(x)=\dfrac{2}{3}x-4$, on a :
 
  $\begin{aligned}
-        f(2)&=\dfrac{2}{3}\times 2-4\\\\
-        &=\dfrac{4}{3}-4\\\\
+        f(2)&=\dfrac{2}{3}\times 2-4\\
+        &=\dfrac{4}{3}-4\\
         &=-\dfrac{8}{3}
         \end{aligned}$
 
@@ -181,10 +181,10 @@ On considère $A=\dfrac{2}{3-\dfrac{2}{5}}$.
 ---CORR---
 $$
 \begin{aligned}
-A &= \dfrac{2}{3-\dfrac{2}{5}} \\\\
-&= \dfrac{2}{\dfrac{15}{5}-\dfrac{2}{5}} \\\\
-&= \dfrac{2}{\dfrac{13}{5}} \\\\
-&= 2 \times \dfrac{5}{13} \\\\
+A &= \dfrac{2}{3-\dfrac{2}{5}} \\
+&= \dfrac{2}{\dfrac{15}{5}-\dfrac{2}{5}} \\
+&= \dfrac{2}{\dfrac{13}{5}} \\
+&= 2 \times \dfrac{5}{13} \\
 &= \boldsymbol{\dfrac{10}{13}}
 \end{aligned}
 $$
@@ -210,9 +210,9 @@ On isole $L$ dans un membre de l'égalité :<br>
 
 $$
 \begin{aligned}
-I &= K - LJ\\\\
-I - K &= -LJ\\\\
--I + K &= LJ\\\\
+I &= K - LJ\\
+I - K &= -LJ\\
+-I + K &= LJ\\
 \dfrac{-I + K}{J} &= L
 \end{aligned}
 $$
@@ -284,8 +284,8 @@ Le coefficient directeur $m$ de la droite  $(CF)$ est donnée par la formule : $
 
 $$
 \begin{aligned}
-m&=\dfrac{-3-5}{4-(-7)}\\\\
-&= \dfrac{-8}{11}\\\\
+m&=\dfrac{-3-5}{4-(-7)}\\
+&= \dfrac{-8}{11}\\
 &=\boldsymbol{-\dfrac{8}{11}}
 \end{aligned}
 $$
@@ -311,8 +311,8 @@ Comme $p(x)=\dfrac{5}{3}x-4$, on a :<br>
 
 $$
 \begin{aligned}
-p(2)&=\dfrac{5}{3}\times 2-4\\\\
-&=\dfrac{10}{3}-4\\\\
+p(2)&=\dfrac{5}{3}\times 2-4\\
+&=\dfrac{10}{3}-4\\
 &=\boldsymbol{-\dfrac{2}{3}}
 \end{aligned}
 $$

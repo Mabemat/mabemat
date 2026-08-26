@@ -173,8 +173,8 @@ En prenant deux points $A$ et $B$ sur la droite, on obtient le coefficient direc
 On a :
 
  $\begin{aligned}
- y&=-\dfrac{1}{3}x+3\\\\
- \dfrac{1}{3}x+y-3&=0\\\\
+ y&=-\dfrac{1}{3}x+3\\
+ \dfrac{1}{3}x+y-3&=0\\
  \boldsymbol{x+3y-9=0}&\quad\text{(en multipliant par } 3\text{)}
  \end{aligned}$
  
@@ -252,7 +252,7 @@ et la propriété des puissances de puissances : <br>
 Pour tous entiers $n$ et $p$ et $a$ réel, on a :  $\left(a^{n}\right)^p=a^{np}$<br>
 
 $$
-\begin{aligned} a^{3n}(a^n)^4&=a^{3n}\times a^{4n}\\\\
+\begin{aligned} a^{3n}(a^n)^4&=a^{3n}\times a^{4n}\\
 &=\boldsymbol{a^{7n}}
 \end{aligned}
 $$

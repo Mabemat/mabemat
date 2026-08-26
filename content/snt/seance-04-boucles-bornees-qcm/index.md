@@ -1,5 +1,5 @@
 ---
-title: "QCM — Boucles bornées"
+title: "QCM - Boucles bornées"
 layout: "qcm"
 ---
 
@@ -108,7 +108,7 @@ for i in range(3):
 | 2 | 1 | `1` |
 | 3 | 2 | `2` |
 
-`range(3)` parcourt **0, 1, 2** — la valeur 3 elle-même n'est pas atteinte.
+`range(3)` parcourt **0, 1, 2** - la valeur 3 elle-même n'est pas atteinte.
 
 **Réponse : `0` puis `1` puis `2`**
 {{< /qcm >}}
@@ -133,7 +133,7 @@ print("hors")
 | 2 | 1 | `dans` |
 | 3 | 2 | `dans` |
 | 4 | 3 | `dans` |
-| (après boucle) | — | `hors` |
+| (après boucle) | - | `hors` |
 
 `print("dans")` est **indenté** → il fait partie de la boucle (4 répétitions). `print("hors")` est **hors** de la boucle → il s'exécute **une seule fois** à la fin.
 
@@ -200,7 +200,7 @@ print(s)
 
 | Tour | `k` | `s` |
 |:---:|:---:|:---:|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | 1 | 0 | 0 + 1 = **1** |
 | 2 | 1 | 1 + 1 = **2** |
 | 3 | 2 | 2 + 1 = **3** |
@@ -228,7 +228,7 @@ print(s)
 
 | Tour | `k` | `s` |
 |:---:|:---:|:---:|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | 1 | 1 | 0 + 1 = **1** |
 | 2 | 2 | 1 + 2 = **3** |
 | 3 | 3 | 3 + 3 = **6** |
@@ -257,7 +257,7 @@ def f():
 
 | Tour | `i` | `u` |
 |:---:|:---:|:---:|
-| Initialisation | — | 1 |
+| Initialisation | - | 1 |
 | 1 | 0 | 1 × 2 = **2** |
 | 2 | 1 | 2 × 2 = **4** |
 | 3 | 2 | 4 × 2 = **8** |
@@ -284,7 +284,7 @@ print(a)
 
 | Tour | `i` | `a` |
 |:---:|:---:|:---:|
-| Initialisation | — | 10 |
+| Initialisation | - | 10 |
 | 1 | 0 | 12 |
 | 2 | 1 | 14 |
 | 3 | 2 | 16 |
@@ -338,7 +338,7 @@ def population(n):
 
 | Tour | `k` | `P` |
 |:---:|:---:|:---:|
-| Initialisation | — | 2300 |
+| Initialisation | - | 2300 |
 | 1 | 0 | 2300 + 150 = **2450** |
 | 2 | 1 | 2450 + 150 = **2600** |
 | 3 | 2 | 2600 + 150 = **2750** |
@@ -415,12 +415,12 @@ print(a)
 
 | Étape | `i` | `a` |
 |:---:|:---:|:---:|
-| Initialisation | — | 2 |
+| Initialisation | - | 2 |
 | Tour 1 | 0 | 3 |
 | Tour 2 | 1 | 4 |
 | Tour 3 | 2 | 5 |
 | Tour 4 | 3 | **6** |
-| Après boucle | — | 2 × 6 = **12** |
+| Après boucle | - | 2 × 6 = **12** |
 
 La ligne `a = 2 * a` est **hors** de la boucle (non indentée) : elle ne s'exécute qu'**une seule fois**, après les 4 tours.
 
@@ -445,7 +445,7 @@ def f():
 
 | Tour | `k` | `s` |
 |:---:|:---:|:---:|
-| Initialisation | — | 0 |
+| Initialisation | - | 0 |
 | 1 | **0** | 0 + 0 = 0 |
 | 2 | 1 | 0 + 1 = 1 |
 | 3 | 2 | 1 + 2 = 3 |
@@ -475,7 +475,7 @@ def users():
 
 | Tour | `i` | `u` |
 |:---:|:---:|:---:|
-| Initialisation | — | 25 000 |
+| Initialisation | - | 25 000 |
 | 1 | 0 | 50 000 |
 | 2 | 1 | 100 000 |
 | 3 | 2 | 200 000 |

@@ -153,8 +153,8 @@ On applique la propriété des puissances de puissances d'un réel :
  Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a : 
  $\left(a^{n}\right)^{p}=a^{np}$
 
- $\begin{aligned}\left(4^{n}\right)^{2}&=4^{2n}\\\\
-    &=\left(4^{2}\right)^{n}\\\\
+ $\begin{aligned}\left(4^{n}\right)^{2}&=4^{2n}\\
+    &=\left(4^{2}\right)^{n}\\
     &=16^{n}
     \end{aligned}$
 
@@ -298,8 +298,8 @@ Soit $n\in \mathbb{N}$, et $p \in \mathbb{N}$, on a :
 $\left(a^{n}\right)^{p}=a^{np}$<br>
 
 $$
-\begin{aligned}\left(4^{n}\right)^{2}&=4^{2n}\\\\
-&=\left(4^{2}\right)^{n}\\\\
+\begin{aligned}\left(4^{n}\right)^{2}&=4^{2n}\\
+&=\left(4^{2}\right)^{n}\\
 &=\boldsymbol{16^{n}}
 \end{aligned}
 $$

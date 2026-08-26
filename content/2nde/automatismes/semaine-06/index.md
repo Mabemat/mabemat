@@ -1,62 +1,118 @@
 ---
-title: "Semaine 6"
+title: "Semaine 6 - Évolutions réciproques, fréquences et équations"
+layout: "automatismes-2nde"
 auto_number: 6
 weight: 6
-layout: automatismes-2nde
 ---
 
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-L'équation $f(x)=0$ représentée graphiquement a combien de solutions ?
+Après une hausse de $25\,\%$, un article coûte $75$ €.
 
-<img src="/mabemat/images/automatismes/2nde/s06-q01.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+Quel était son prix avant la hausse ?
 ---CORR---
-La droite $y=0$ (l'axe des abscisses) coupe **1 fois** la courbe.
+On note $P$ le prix avant la hausse. Une hausse de $25\,\%$ revient à multiplier par $1{,}25$ :
 
-L'équation $f(x)=0$ admet donc ${\color{#4A5D7A}1}$ **solution**.
+$$P\times 1{,}25=75$$
+
+Pour revenir en arrière, on **divise** par le coefficient multiplicateur :
+
+$$P=\dfrac{75}{1{,}25}={\color{#4A5D7A}60}$$
+
+Le prix avant la hausse était donc de $60$ €.
+
+Vérification : $60\times 1{,}25=75$. Attention à ne pas baisser le prix de $25\,\%$, ce qui donnerait $56{,}25$ € et non $60$ €.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On considère la fonction $f$ définie par $f(x)=1-2x^2$. L'image de $-3$ par $f$ est :
----CORR---
-$f(-3)=1-2\times(-3)^2=1-2\times 9=1-18={\color{#4A5D7A}-17}$
+Dans un groupe de $200$ personnes, il y a $120$ femmes, dont $30$ portent des lunettes. Parmi les hommes, $50$ portent des lunettes.
 
-Mentalement : $(-3)^2=9$, puis $2\times 9=18$, puis $1-18=-17$.
+**a.** Quelle est la fréquence des porteurs de lunettes dans le groupe ?
+
+**b.** Quelle est la fréquence des porteuses de lunettes parmi les femmes ?
+---CORR---
+**a.** Nombre total de porteurs de lunettes :
+
+$$30+50=80$$
+
+La fréquence se calcule par rapport à l'effectif total du groupe :
+
+$$f=\dfrac{80}{200}=0{,}4={\color{#4A5D7A}40\,\%}$$
+
+**b.** Ici, la population de référence change : ce sont les $120$ femmes.
+
+$$f=\dfrac{30}{120}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $u$ la fonction définie par $u(x)=-3x-10$. À quelle expression est égal $u(x+3)$ ?
----CORR---
-On remplace $x$ par $x+3$ :
+Résoudre l'équation :
 
-$u(x+3)=-3(x+3)-10=-3x-9-10={\color{#4A5D7A}-3x-19}$
+$$5x-7=2x+11$$
+---CORR---
+On regroupe les termes en $x$ dans un membre et les nombres dans l'autre. On retranche $2x$ à chaque membre :
+
+$$5x-2x-7=11 \qquad\text{soit}\qquad 3x-7=11$$
+
+On ajoute $7$ à chaque membre :
+
+$$3x=18$$
+
+On divise chaque membre par $3$ :
+
+$$x={\color{#4A5D7A}6}$$
+
+Vérification : $5\times 6-7=23$ et $2\times 6+11=23$. L'ensemble des solutions est $S=\lbrace 6\rbrace$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $n$ un entier non nul. À quelle expression est égale $(-1)^{n+5}$ ?
+Un prix augmente de $10\,\%$, puis augmente de $20\,\%$.
 
-A. $-(-1)^{n+1}$ $\quad$ B. $(-1)^{n}$ $\quad$ C. $(-1)^{n+1}$ $\quad$ D. $(-1)^{n+2}$
+Déterminer le taux d'évolution global, en pourcentage.
 ---CORR---
-$(-1)^{n+5}=(-1)^{4}\times(-1)^{n+1}=1\times(-1)^{n+1}=(-1)^{n+1}$
+On multiplie les coefficients multiplicateurs :
 
-La bonne réponse est **C**.
+$$1{,}10\times 1{,}20=1{,}32$$
+
+Comme $1{,}32=1+0{,}32$, le prix a augmenté de ${\color{#4A5D7A}32\,\%}$ au total, et non de $30\,\%$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-On considère le nombre $N=\dfrac{15^7}{5^4}$. Une seule égalité est juste, laquelle ?
+Le taux d'évolution associé à un coefficient multiplicateur de $0{,}25$ est :
 
-A. $N=3^{3}$ $\quad$ B. $N=81\times 15^{3}$ $\quad$ C. $N=15^{3}$ $\quad$ D. $N=625\times 15^{3}$
+**A.** $-0{,}25\,\%$ &emsp; **B.** $-25\,\%$ &emsp; **C.** $-75\,\%$ &emsp; **D.** $-2{,}5\,\%$
 ---CORR---
-$N=\dfrac{15^7}{5^4}=\dfrac{5^7\times 3^7}{5^4}=3^7\times 5^{3}=3^4\times 3^3\times 5^3=3^4\times(3\times 5)^3=81\times 15^3$
+Le coefficient multiplicateur et le taux sont liés par la relation :
 
-La bonne réponse est **B**.
+$$\text{CM}=1+\dfrac{t}{100}$$
+
+Ici $\text{CM}=0{,}25$, donc :
+
+$$0{,}25=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=0{,}25-1=-0{,}75$$
+
+$$t={\color{#4A5D7A}-75}$$
+
+Le coefficient étant inférieur à $1$, il s'agit bien d'une baisse. Multiplier par $0{,}25$, c'est diviser par $4$ : on ne garde qu'un quart de la valeur, on en perd donc les trois quarts.
+
+<span class="rep">Réponse : C</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-On considère $A=\dfrac{1}{1-\dfrac{3}{5}}$. Calculer $A$.
+$20\,\%$ de $N$ est égal à $14$. On a :
+
+**A.** $N=70$ &emsp; **B.** $N=2{,}8$ &emsp; **C.** $N=280$ &emsp; **D.** $N=0{,}7$
 ---CORR---
-$A=\dfrac{1}{1-\dfrac{3}{5}}=\dfrac{1}{\dfrac{5}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfrac{2}{5}}=1\times\dfrac{5}{2}={\color{#4A5D7A}\dfrac{5}{2}}$
+On traduit l'énoncé par une égalité :
+
+$$\dfrac{20}{100}\times N=14 \qquad\text{soit}\qquad 0{,}2\times N=14$$
+
+On divise chaque membre par $0{,}2$ :
+
+$$N=\dfrac{14}{0{,}2}=\dfrac{140}{2}={\color{#4A5D7A}70}$$
+
+Vérification : $20\,\%$ de $70$ vaut $\dfrac{20\times 70}{100}=14$.
+
+<span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}
@@ -64,53 +120,111 @@ $A=\dfrac{1}{1-\dfrac{3}{5}}=\dfrac{1}{\dfrac{5}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfr
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-L'équation $f(x)=-1$ représentée graphiquement a combien de solutions ?
+Après une baisse de $20\,\%$, un article coûte $96$ €.
 
-<img src="/mabemat/images/automatismes/2nde/s06d-q01.svg" alt="Graphique de f" style="width:60%;max-height:400px;max-width:100%;">
+Quel était son prix avant la baisse ?
 ---CORR---
-La droite $y=-1$ coupe **3 fois** la courbe.
+On note $P$ le prix avant la baisse. Une baisse de $20\,\%$ revient à multiplier par $0{,}80$ :
 
-L'équation $f(x)=-1$ admet donc ${\color{#4A5D7A}3}$ **solutions**.
+$$P\times 0{,}80=96$$
+
+Pour revenir en arrière, on **divise** par le coefficient multiplicateur :
+
+$$P=\dfrac{96}{0{,}80}={\color{#4A5D7A}120}$$
+
+Le prix avant la baisse était donc de $120$ €.
+
+Vérification : $120\times 0{,}80=96$. Attention à ne pas augmenter le prix de $20\,\%$, ce qui donnerait $115{,}20$ € et non $120$ €.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On considère la fonction $f$ définie par $f(x)=(-2x+2)^2$. L'image de $-3$ par $f$ est :
----CORR---
-$f(-3)=(-2\times(-3)+2)^2=(6+2)^2=8^2={\color{#4A5D7A}64}$
+Dans un groupe de $250$ personnes, il y a $150$ femmes, dont $45$ portent des lunettes. Parmi les hommes, $40$ portent des lunettes.
 
-Mentalement : calculer d'abord l'intérieur de la parenthèse, puis élever au carré.
+**a.** Quelle est la fréquence des porteurs de lunettes dans le groupe ?
+
+**b.** Quelle est la fréquence des porteuses de lunettes parmi les femmes ?
+---CORR---
+**a.** Nombre total de porteurs de lunettes :
+
+$$45+40=85$$
+
+La fréquence se calcule par rapport à l'effectif total du groupe :
+
+$$f=\dfrac{85}{250}=0{,}34={\color{#4A5D7A}34\,\%}$$
+
+**b.** Ici, la population de référence change : ce sont les $150$ femmes.
+
+$$f=\dfrac{45}{150}=\dfrac{3}{10}=0{,}3={\color{#4A5D7A}30\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $t$ la fonction définie par $t(x)=-3x-6$. À quelle expression est égal $t(x+1)$ ?
+Résoudre l'équation :
+
+$$7x+4=3x-12$$
 ---CORR---
-$t(x+1)=-3(x+1)-6=-3x-3-6={\color{#4A5D7A}-3x-9}$
+On regroupe les termes en $x$ dans un membre et les nombres dans l'autre. On retranche $3x$ à chaque membre :
+
+$$7x-3x+4=-12 \qquad\text{soit}\qquad 4x+4=-12$$
+
+On retranche $4$ à chaque membre :
+
+$$4x=-16$$
+
+On divise chaque membre par $4$ :
+
+$$x={\color{#4A5D7A}-4}$$
+
+Vérification : $7\times(-4)+4=-24$ et $3\times(-4)-12=-24$. L'ensemble des solutions est $S=\lbrace -4\rbrace$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $n$ un entier non nul. À quelle expression est égale $(-1)^{n+6}$ ?
+Un prix diminue de $10\,\%$, puis augmente de $50\,\%$.
 
-A. $-(-1)^{n}$ $\quad$ B. $(-1)^{n}$ $\quad$ C. $(-1)^{n+1}$ $\quad$ D. $(-1)^{n-1}$
+Déterminer le taux d'évolution global, en pourcentage.
 ---CORR---
-$(-1)^{n+6}=(-1)^{6}\times(-1)^{n}=1\times(-1)^{n}=(-1)^{n}$
+On multiplie les coefficients multiplicateurs :
 
-La bonne réponse est **B**.
+$$0{,}90\times 1{,}50=1{,}35$$
+
+Comme $1{,}35=1+0{,}35$, le prix a augmenté de ${\color{#4A5D7A}35\,\%}$ au total, et non de $40\,\%$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
-On considère le nombre $N=\dfrac{15^5}{5^2}$. Une seule égalité est juste, laquelle ?
+Le taux d'évolution associé à un coefficient multiplicateur de $1{,}08$ est :
 
-A. $N=25\times 15^{3}$ $\quad$ B. $N=15^{3}$ $\quad$ C. $N=3^{3}$ $\quad$ D. $N=9\times 15^{3}$
+**A.** $+0{,}8\,\%$ &emsp; **B.** $+8\,\%$ &emsp; **C.** $+1{,}08\,\%$ &emsp; **D.** $+108\,\%$
 ---CORR---
-$N=\dfrac{15^5}{5^2}=\dfrac{5^5\times 3^5}{5^2}=3^5\times 5^{3}=3^2\times 3^3\times 5^3=9\times 15^3$
+Le coefficient multiplicateur et le taux sont liés par la relation :
 
-La bonne réponse est **D**.
+$$\text{CM}=1+\dfrac{t}{100}$$
+
+Ici $\text{CM}=1{,}08$, donc :
+
+$$1{,}08=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=1{,}08-1=0{,}08$$
+
+$$t={\color{#4A5D7A}+8}$$
+
+Le coefficient étant supérieur à $1$, il s'agit bien d'une hausse. La réponse D confond le coefficient exprimé en pourcentage avec le taux d'évolution.
+
+<span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="06" >}}
-On considère $A=\dfrac{1}{5-\dfrac{3}{5}}$. Calculer $A$.
+$25\,\%$ de $N$ est égal à $18$. On a :
+
+**A.** $N=4{,}5$ &emsp; **B.** $N=450$ &emsp; **C.** $N=0{,}72$ &emsp; **D.** $N=72$
 ---CORR---
-$A=\dfrac{1}{5-\dfrac{3}{5}}=\dfrac{1}{\dfrac{25}{5}-\dfrac{3}{5}}=\dfrac{1}{\dfrac{22}{5}}=\dfrac{5}{22}$
+On traduit l'énoncé par une égalité :
+
+$$\dfrac{25}{100}\times N=18 \qquad\text{soit}\qquad 0{,}25\times N=18$$
+
+Prendre $25\,\%$, c'est prendre le quart : on retrouve $N$ en multipliant par $4$.
+
+$$N=\dfrac{18}{0{,}25}=18\times 4={\color{#4A5D7A}72}$$
+
+Vérification : $25\,\%$ de $72$ vaut $\dfrac{72}{4}=18$.
+
+<span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}
 
 {{< /auto2-seance >}}

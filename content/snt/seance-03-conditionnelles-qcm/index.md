@@ -1,5 +1,5 @@
 ---
-title: "QCM — Conditionnelles"
+title: "QCM - Conditionnelles"
 layout: "qcm"
 ---
 
@@ -106,9 +106,9 @@ print("fin")
 
 | Ligne | `x` | Condition `x > 5` | Affichage |
 |:---:|:---:|:---:|---|
-| 1 | 7 | — | — |
+| 1 | 7 | - | - |
 | 2–3 | 7 | **Vraie** (7 > 5) | `grand` |
-| 4 | 7 | — | `fin` (hors du `if`) |
+| 4 | 7 | - | `fin` (hors du `if`) |
 
 `print("fin")` n'est **pas indenté** : il s'exécute toujours, indépendamment du `if`.
 
@@ -132,9 +132,9 @@ print("fin")
 
 | Ligne | `x` | Condition `x > 5` | Affichage |
 |:---:|:---:|:---:|---|
-| 1 | 3 | — | — |
+| 1 | 3 | - | - |
 | 2–3 | 3 | **Fausse** (3 < 5) | (rien) |
-| 4 | 3 | — | `fin` |
+| 4 | 3 | - | `fin` |
 
 Le bloc du `if` est sauté. La ligne `print("fin")`, qui n'est pas indentée, s'exécute quand même.
 
@@ -383,7 +383,7 @@ print(signe(-5))
 |:---:|:---:|---|---|
 | `if n > 0` | −5 | Fausse | passe à la suite |
 | `if n < 0` | −5 | **Vraie** | `return "négatif"` → la fonction **s'arrête** |
-| `return "nul"` | — | — | Jamais atteint |
+| `return "nul"` | - | - | Jamais atteint |
 
 `return` interrompt immédiatement la fonction : les `return` suivants ne sont pas exécutés.
 
@@ -439,8 +439,8 @@ def tarif(age):
 | Ligne | Condition | Action |
 |:---:|---|---|
 | `if age >= 0` | 25 ≥ 0 → **Vraie** | `return 5` → fin de la fonction |
-| `if age >= 18` | — | jamais atteint |
-| `return 0` | — | jamais atteint |
+| `if age >= 18` | - | jamais atteint |
+| `return 0` | - | jamais atteint |
 
 Piège classique d'**ordre** : la condition `age >= 0` est satisfaite par tout âge positif, donc la branche `age >= 18` ne sera **jamais** exécutée. Il faudrait écrire les conditions de la plus restrictive à la plus large, ou utiliser `elif`.
 
@@ -468,8 +468,8 @@ print("D")
 | Ligne | `x` | Condition `x > 10` | Affichage |
 |:---:|:---:|:---:|---|
 | 2–3 (bloc `if`) | 3 | Fausse | (sauté) |
-| 5 (bloc `else`) | 3 | — | `C` |
-| 6 (hors `if/else`) | 3 | — | `D` |
+| 5 (bloc `else`) | 3 | - | `C` |
+| 6 (hors `if/else`) | 3 | - | `D` |
 
 Le bloc `if` contient **deux** lignes (`A` et `B` toutes les deux indentées), mais elles sont sautées. Le bloc `else` contient une ligne. La dernière `print("D")` n'est pas indentée → toujours exécutée.
 
