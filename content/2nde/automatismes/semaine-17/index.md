@@ -14,9 +14,9 @@ $$A=\sqrt{50}+\sqrt{18}$$
 ---CORR---
 On cherche dans chaque nombre sous la racine le plus grand carré parfait qui le divise.
 
-$$50=25\times 2 \qquad\text{donc}\qquad \sqrt{50}=\sqrt{25}\times\sqrt{2}=5\sqrt{2}$$
+$$\begin{aligned}50 &= 25\times 2 \\ \text{donc}\quad \sqrt{50} &= \sqrt{25}\times\sqrt{2}=5\sqrt{2}\end{aligned}$$
 
-$$18=9\times 2 \qquad\text{donc}\qquad \sqrt{18}=\sqrt{9}\times\sqrt{2}=3\sqrt{2}$$
+$$\begin{aligned}18 &= 9\times 2 \\ \text{donc}\quad \sqrt{18} &= \sqrt{9}\times\sqrt{2}=3\sqrt{2}\end{aligned}$$
 
 Les deux termes ont maintenant la même partie irrationnelle $\sqrt{2}$ : on peut les additionner comme des termes semblables.
 
@@ -108,9 +108,9 @@ $$A=\sqrt{75}+\sqrt{27}$$
 ---CORR---
 On cherche dans chaque nombre sous la racine le plus grand carré parfait qui le divise.
 
-$$75=25\times 3 \qquad\text{donc}\qquad \sqrt{75}=\sqrt{25}\times\sqrt{3}=5\sqrt{3}$$
+$$\begin{aligned}75 &= 25\times 3 \\ \text{donc}\quad \sqrt{75} &= \sqrt{25}\times\sqrt{3}=5\sqrt{3}\end{aligned}$$
 
-$$27=9\times 3 \qquad\text{donc}\qquad \sqrt{27}=\sqrt{9}\times\sqrt{3}=3\sqrt{3}$$
+$$\begin{aligned}27 &= 9\times 3 \\ \text{donc}\quad \sqrt{27} &= \sqrt{9}\times\sqrt{3}=3\sqrt{3}\end{aligned}$$
 
 Les deux termes ont maintenant la même partie irrationnelle $\sqrt{3}$ : on peut les additionner comme des termes semblables.
 

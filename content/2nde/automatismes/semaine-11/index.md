@@ -108,7 +108,7 @@ $$f(-2)=\bigl(3\times(-2)-1\bigr)\bigl(2\times(-2)+5\bigr)$$
 
 On calcule chaque parenthèse séparément :
 
-$$3\times(-2)-1=-7 \qquad\text{et}\qquad 2\times(-2)+5=1$$
+$$\begin{aligned}3\times(-2)-1 &= -7 \\ \text{et}\quad 2\times(-2)+5 &= 1\end{aligned}$$
 
 Puis on multiplie les deux résultats :
 
@@ -222,7 +222,7 @@ $$f(-3)=\bigl(2\times(-3)+3\bigr)\bigl(4\times(-3)-1\bigr)$$
 
 On calcule chaque parenthèse séparément :
 
-$$2\times(-3)+3=-3 \qquad\text{et}\qquad 4\times(-3)-1=-13$$
+$$\begin{aligned}2\times(-3)+3 &= -3 \\ \text{et}\quad 4\times(-3)-1 &= -13\end{aligned}$$
 
 Puis on multiplie les deux résultats. Le produit de deux nombres négatifs est positif :
 

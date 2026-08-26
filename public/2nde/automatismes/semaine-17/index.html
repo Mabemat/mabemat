@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -244,7 +244,7 @@ $$A=\sqrt{50}+\sqrt{18}$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche dans chaque nombre sous la racine le plus grand carré parfait qui le divise.</p>
-$$50=25\times 2 \qquad\text{donc}\qquad \sqrt{50}=\sqrt{25}\times\sqrt{2}=5\sqrt{2}$$$$18=9\times 2 \qquad\text{donc}\qquad \sqrt{18}=\sqrt{9}\times\sqrt{2}=3\sqrt{2}$$<p>Les deux termes ont maintenant la même partie irrationnelle $\sqrt{2}$ : on peut les additionner comme des termes semblables.</p>
+$$\begin{aligned}50 &= 25\times 2 \\ \text{donc}\quad \sqrt{50} &= \sqrt{25}\times\sqrt{2}=5\sqrt{2}\end{aligned}$$$$\begin{aligned}18 &= 9\times 2 \\ \text{donc}\quad \sqrt{18} &= \sqrt{9}\times\sqrt{2}=3\sqrt{2}\end{aligned}$$<p>Les deux termes ont maintenant la même partie irrationnelle $\sqrt{2}$ : on peut les additionner comme des termes semblables.</p>
 $$A=5\sqrt{2}+3\sqrt{2}={\color{#4A5D7A}8\sqrt{2}}$$<p>Attention : $\sqrt{50}+\sqrt{18}$ n&rsquo;est <strong>pas</strong> égal à $\sqrt{68}$. La racine d&rsquo;une somme n&rsquo;est pas la somme des racines.</p>
 </div>
   </div>
@@ -296,8 +296,8 @@ $$B={\color{#4A5D7A}2\sqrt{3}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $[0\,;\,+\infty[$ l&rsquo;équation :</p>
-$$3\sqrt{x}-2=10$$
+    <p>Calculer, en donnant un résultat sans racine carrée :</p>
+$$A=\sqrt{12}\times\sqrt{3} \qquad\text{et}\qquad B=\left(2\sqrt{5}\right)^2$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -305,10 +305,9 @@ $$3\sqrt{x}-2=10$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On isole d&rsquo;abord la racine. On ajoute $2$ à chaque membre :</p>
-$$3\sqrt{x}=12$$<p>On divise par $3$ :</p>
-$$\sqrt{x}=4$$<p>Les deux membres étant positifs, on peut élever au carré :</p>
-$$x=4^2={\color{#4A5D7A}16}$$<p>Vérification : $3\sqrt{16}-2=3\times 4-2=10$. La solution appartient bien à $[0\,;\,+\infty[$.</p>
+    <div><p>Pour $A$, on utilise $\sqrt{a}\times\sqrt{b}=\sqrt{a\times b}$ :</p>
+$$A=\sqrt{12\times 3}=\sqrt{36}={\color{#4A5D7A}6}$$<p>Pour $B$, on élève au carré chacun des deux facteurs :</p>
+$$B=\left(2\sqrt{5}\right)^2=2^2\times\left(\sqrt{5}\right)^2=4\times 5={\color{#4A5D7A}20}$$<p>C&rsquo;est la définition même de la racine carrée : $\left(\sqrt{5}\right)^2=5$.</p>
 </div>
   </div>
   
@@ -442,7 +441,7 @@ $$A=\sqrt{75}+\sqrt{27}$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche dans chaque nombre sous la racine le plus grand carré parfait qui le divise.</p>
-$$75=25\times 3 \qquad\text{donc}\qquad \sqrt{75}=\sqrt{25}\times\sqrt{3}=5\sqrt{3}$$$$27=9\times 3 \qquad\text{donc}\qquad \sqrt{27}=\sqrt{9}\times\sqrt{3}=3\sqrt{3}$$<p>Les deux termes ont maintenant la même partie irrationnelle $\sqrt{3}$ : on peut les additionner comme des termes semblables.</p>
+$$\begin{aligned}75 &= 25\times 3 \\ \text{donc}\quad \sqrt{75} &= \sqrt{25}\times\sqrt{3}=5\sqrt{3}\end{aligned}$$$$\begin{aligned}27 &= 9\times 3 \\ \text{donc}\quad \sqrt{27} &= \sqrt{9}\times\sqrt{3}=3\sqrt{3}\end{aligned}$$<p>Les deux termes ont maintenant la même partie irrationnelle $\sqrt{3}$ : on peut les additionner comme des termes semblables.</p>
 $$A=5\sqrt{3}+3\sqrt{3}={\color{#4A5D7A}8\sqrt{3}}$$<p>Attention : $\sqrt{75}+\sqrt{27}$ n&rsquo;est <strong>pas</strong> égal à $\sqrt{102}$. La racine d&rsquo;une somme n&rsquo;est pas la somme des racines.</p>
 </div>
   </div>
@@ -494,8 +493,8 @@ $$B={\color{#4A5D7A}2\sqrt{5}}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $[0\,;\,+\infty[$ l&rsquo;équation :</p>
-$$4\sqrt{x}-3=17$$
+    <p>Calculer, en donnant un résultat sans racine carrée :</p>
+$$A=\sqrt{8}\times\sqrt{2} \qquad\text{et}\qquad B=\left(3\sqrt{2}\right)^2$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -503,10 +502,9 @@ $$4\sqrt{x}-3=17$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On isole d&rsquo;abord la racine. On ajoute $3$ à chaque membre :</p>
-$$4\sqrt{x}=20$$<p>On divise par $4$ :</p>
-$$\sqrt{x}=5$$<p>Les deux membres étant positifs, on peut élever au carré :</p>
-$$x=5^2={\color{#4A5D7A}25}$$<p>Vérification : $4\sqrt{25}-3=4\times 5-3=17$. La solution appartient bien à $[0\,;\,+\infty[$.</p>
+    <div><p>Pour $A$, on utilise $\sqrt{a}\times\sqrt{b}=\sqrt{a\times b}$ :</p>
+$$A=\sqrt{8\times 2}=\sqrt{16}={\color{#4A5D7A}4}$$<p>Pour $B$, on élève au carré chacun des deux facteurs :</p>
+$$B=\left(3\sqrt{2}\right)^2=3^2\times\left(\sqrt{2}\right)^2=9\times 2={\color{#4A5D7A}18}$$<p>C&rsquo;est la définition même de la racine carrée : $\left(\sqrt{2}\right)^2=2$.</p>
 </div>
   </div>
   
@@ -702,7 +700,7 @@ $$f\ \text{est}\ {\color{#4A5D7A}\text{croissante sur}\ \mathbb{R}}$$<p>L&rsquo;
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

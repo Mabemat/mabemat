@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 23 - Parité et nombres premiers — MaBémat</title>
+<title>Semaine 23 - Valeur absolue, multiples et diviseurs — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Parité et nombres premiers</p>
+  <p class="wk-subtitle">Valeur absolue, multiples et diviseurs</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -234,7 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Décomposer $180$ en produit de facteurs premiers.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$\left|x+4\right|\leqslant 3$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -242,9 +243,11 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On divise successivement par les nombres premiers, en commençant par le plus petit :</p>
-$$180=2\times 90 \qquad 90=2\times 45 \qquad 45=3\times 15 \qquad 15=3\times 5$$<p>En regroupant :</p>
-$$180={\color{#4A5D7A}2^2\times 3^2\times 5}$$<p>Vérification : $4\times 9\times 5=180$.</p>
+    <div><p>$\left|x+4\right|$ se lit comme la distance entre $x$ et $-4$, puisque $x+4=x-(-4)$.</p>
+<p>On cherche donc les réels situés à une distance d&rsquo;au plus $3$ du nombre $-4$ : ce sont ceux qui se trouvent entre $-4-3$ et $-4+3$.</p>
+<p>On peut aussi encadrer directement :</p>
+$$-3\leqslant x+4\leqslant 3$$<p>On retranche $4$ aux trois membres :</p>
+$$-7\leqslant x\leqslant -1$$$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$<p>L&rsquo;inégalité étant large, les deux bornes sont incluses.</p>
 </div>
   </div>
   
@@ -264,7 +267,7 @@ $$180={\color{#4A5D7A}2^2\times 3^2\times 5}$$<p>Vérification : $4\times 9\time
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Démontrer que le carré d&rsquo;un nombre entier impair est impair.
+    Donner la liste de tous les diviseurs positifs de $36$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -272,11 +275,9 @@ $$180={\color{#4A5D7A}2^2\times 3^2\times 5}$$<p>Vérification : $4\times 9\time
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On traduit l&rsquo;hypothèse : soit $n$ un entier impair. Il existe alors un entier $k$ tel que</p>
-$$n=2k+1$$<p>On calcule le carré en développant l&rsquo;identité remarquable :</p>
-$$n^2=(2k+1)^2=4k^2+4k+1$$<p>Pour reconnaître un nombre impair, il faut le mettre sous la forme $2\times\text{entier}+1$. On factorise donc les deux premiers termes par $2$ :</p>
-$$n^2={\color{#4A5D7A}2\left(2k^2+2k\right)+1}$$<p>Comme $2k^2+2k$ est un entier, $n^2$ est bien impair.</p>
-<p>Tout est dans la mise en forme finale : sans elle, on n&rsquo;a pas démontré la parité.</p>
+    <div><p>On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :</p>
+$$\begin{aligned}& 1\times 36 \qquad 2\times 18 \qquad 3\times 12 \\ & 4\times 9 \qquad 6\times 6\end{aligned}$$<p>On s&rsquo;arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l&rsquo;autre sens.</p>
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$<p>Il y en a $9$. Un nombre a un nombre impair de diviseurs exactement quand c&rsquo;est un carré parfait, ce qui est bien le cas ici.</p>
 </div>
   </div>
   
@@ -296,7 +297,7 @@ $$n^2={\color{#4A5D7A}2\left(2k^2+2k\right)+1}$$<p>Comme $2k^2+2k$ est un entier
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le nombre $91$ est-il premier ? Justifier.
+    Démontrer que la somme de deux multiples de $7$ est un multiple de $7$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -304,9 +305,10 @@ $$n^2={\color{#4A5D7A}2\left(2k^2+2k\right)+1}$$<p>Comme $2k^2+2k$ est un entier
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Un nombre premier n&rsquo;a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s&rsquo;arrêtant dès que leur carré dépasse $91$ (car $10^2=100>91$, il suffit de tester jusqu&rsquo;à $9$).</p>
-<p>$91$ n&rsquo;est pas pair, la somme de ses chiffres est $10$ donc il n&rsquo;est pas divisible par $3$, il ne se termine ni par $0$ ni par $5$. On teste $7$ :</p>
-$$91=7\times 13$$<p>Le nombre $91$ admet donc d&rsquo;autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.</p>
+    <div><p>On traduit l&rsquo;hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $7$ : il existe deux entiers $k$ et $k'$ tels que</p>
+$$a=7k \qquad\text{et}\qquad b=7k'$$<p>On calcule la somme et on factorise par $7$ :</p>
+$$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rsquo;écrit bien sous la forme $7\times\text{entier}$ : c&rsquo;est un multiple de $7$.</p>
+<p>La factorisation est le cœur de la démonstration : c&rsquo;est elle qui fait apparaître le $7$ en facteur.</p>
 </div>
   </div>
   
@@ -326,8 +328,8 @@ $$91=7\times 13$$<p>Le nombre $91$ admet donc d&rsquo;autres diviseurs que $1$ e
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
-$$\left|x-1\right|\leqslant 4$$
+    <p>Écrire sans racine carrée au dénominateur :</p>
+$$A=\dfrac{12}{\sqrt{6}}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -335,9 +337,9 @@ $$\left|x-1\right|\leqslant 4$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$\left|x-1\right|$ est la distance entre $x$ et $1$. On encadre :</p>
-$$-4\leqslant x-1\leqslant 4$$<p>On ajoute $1$ aux trois membres :</p>
-$$-3\leqslant x\leqslant 5$$$$S={\color{#4A5D7A}\left[-3\,;\,5\right]}$$</div>
+    <div><p>On multiplie le numérateur et le dénominateur par $\sqrt{6}$, ce qui ne change pas la valeur du quotient :</p>
+$$A=\dfrac{12\times\sqrt{6}}{\sqrt{6}\times\sqrt{6}}=\dfrac{12\sqrt{6}}{6}$$<p>Car $\sqrt{6}\times\sqrt{6}=6$. On simplifie ensuite par $6$ :</p>
+$$A={\color{#4A5D7A}2\sqrt{6}}$$</div>
   </div>
   
 </article>
@@ -368,7 +370,7 @@ $$-3\leqslant x\leqslant 5$$$$S={\color{#4A5D7A}\left[-3\,;\,5\right]}$$</div>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Attention : les deux fractions portent sur le crédit <strong>initial</strong>, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $1\,800$ €.</p>
-$$\text{janvier}:\ \dfrac{1}{3}\times 1\,800=600 \qquad \text{février}:\ \dfrac{1}{4}\times 1\,800=450$$<p>Il reste alors :</p>
+$$\begin{aligned}\text{janvier}:\ \dfrac{1}{3}\times 1\,800 &= 600 \\ \text{février}:\ \dfrac{1}{4}\times 1\,800 \\ &= 450\end{aligned}$$<p>Il reste alors :</p>
 $$1\,800-600-450={\color{#4A5D7A}750}$$<p>On peut aussi raisonner en proportions : $\dfrac{1}{3}+\dfrac{1}{4}=\dfrac{7}{12}$ du crédit est remboursé, il en reste $\dfrac{5}{12}$, soit $\dfrac{5}{12}\times 1\,800=750$ €.</p>
 <p><span class="rep">Réponse : C</span></p>
 </div>
@@ -449,7 +451,8 @@ $$10\times 1{,}5={\color{#4A5D7A}15}$$<p>La réponse B est l&rsquo;erreur classi
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Décomposer $252$ en produit de facteurs premiers.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
+$$\left|x-5\right|\leqslant 2$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -457,9 +460,11 @@ $$10\times 1{,}5={\color{#4A5D7A}15}$$<p>La réponse B est l&rsquo;erreur classi
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On divise successivement par les nombres premiers, en commençant par le plus petit :</p>
-$$252=2\times 126 \qquad 126=2\times 63 \qquad 63=3\times 21 \qquad 21=3\times 7$$<p>En regroupant :</p>
-$$252={\color{#4A5D7A}2^2\times 3^2\times 7}$$<p>Vérification : $4\times 9\times 7=252$.</p>
+    <div><p>$\left|x-5\right|$ se lit comme la distance entre $x$ et $5$.</p>
+<p>On cherche donc les réels situés à une distance d&rsquo;au plus $2$ du nombre $5$ : ce sont ceux qui se trouvent entre $5-2$ et $5+2$.</p>
+<p>On peut aussi encadrer directement :</p>
+$$-2\leqslant x-5\leqslant 2$$<p>On ajoute $5$ aux trois membres :</p>
+$$3\leqslant x\leqslant 7$$$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$<p>L&rsquo;inégalité étant large, les deux bornes sont incluses.</p>
 </div>
   </div>
   
@@ -479,7 +484,7 @@ $$252={\color{#4A5D7A}2^2\times 3^2\times 7}$$<p>Vérification : $4\times 9\time
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Démontrer que le carré d&rsquo;un nombre entier pair est pair.
+    Donner la liste de tous les diviseurs positifs de $48$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -487,11 +492,9 @@ $$252={\color{#4A5D7A}2^2\times 3^2\times 7}$$<p>Vérification : $4\times 9\time
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On traduit l&rsquo;hypothèse : soit $n$ un entier pair. Il existe alors un entier $k$ tel que</p>
-$$n=2k$$<p>On calcule le carré :</p>
-$$n^2=(2k)^2=4k^2$$<p>Pour reconnaître un nombre pair, il faut le mettre sous la forme $2\times\text{entier}$. On factorise donc par $2$ :</p>
-$$n^2={\color{#4A5D7A}2\left(2k^2\right)}$$<p>Comme $2k^2$ est un entier, $n^2$ est bien pair.</p>
-<p>Tout est dans la mise en forme finale : sans elle, on n&rsquo;a pas démontré la parité.</p>
+    <div><p>On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :</p>
+$$\begin{aligned}& 1\times 48 \qquad 2\times 24 \qquad 3\times 16 \\ & 4\times 12 \qquad 6\times 8\end{aligned}$$<p>On s&rsquo;arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.</p>
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$<p>Il y en a $10$. Le nombre de diviseurs est pair, ce qui est le cas de tous les nombres qui ne sont pas des carrés parfaits.</p>
 </div>
   </div>
   
@@ -511,7 +514,7 @@ $$n^2={\color{#4A5D7A}2\left(2k^2\right)}$$<p>Comme $2k^2$ est un entier, $n^2$ 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Le nombre $87$ est-il premier ? Justifier.
+    Démontrer que la somme de deux multiples de $9$ est un multiple de $9$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -519,10 +522,10 @@ $$n^2={\color{#4A5D7A}2\left(2k^2\right)}$$<p>Comme $2k^2$ est un entier, $n^2$ 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Un nombre premier n&rsquo;a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s&rsquo;arrêtant dès que leur carré dépasse $87$ (car $10^2=100>87$, il suffit de tester jusqu&rsquo;à $9$).</p>
-<p>$87$ n&rsquo;est pas pair. On calcule la somme de ses chiffres :</p>
-$$8+7=15$$<p>$15$ est divisible par $3$, donc $87$ aussi :</p>
-$$87=3\times 29$$<p>Le nombre $87$ admet donc d&rsquo;autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.</p>
+    <div><p>On traduit l&rsquo;hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $9$ : il existe deux entiers $k$ et $k'$ tels que</p>
+$$a=9k \qquad\text{et}\qquad b=9k'$$<p>On calcule la somme et on factorise par $9$ :</p>
+$$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rsquo;écrit bien sous la forme $9\times\text{entier}$ : c&rsquo;est un multiple de $9$.</p>
+<p>La factorisation est le cœur de la démonstration : c&rsquo;est elle qui fait apparaître le $9$ en facteur.</p>
 </div>
   </div>
   
@@ -542,8 +545,8 @@ $$87=3\times 29$$<p>Le nombre $87$ admet donc d&rsquo;autres diviseurs que $1$ e
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
-$$\left|x+2\right|\leqslant 5$$
+    <p>Écrire sans racine carrée au dénominateur :</p>
+$$A=\dfrac{15}{\sqrt{5}}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -551,9 +554,9 @@ $$\left|x+2\right|\leqslant 5$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$\left|x+2\right|$ est la distance entre $x$ et $-2$. On encadre :</p>
-$$-5\leqslant x+2\leqslant 5$$<p>On retranche $2$ aux trois membres :</p>
-$$-7\leqslant x\leqslant 3$$$$S={\color{#4A5D7A}\left[-7\,;\,3\right]}$$</div>
+    <div><p>On multiplie le numérateur et le dénominateur par $\sqrt{5}$, ce qui ne change pas la valeur du quotient :</p>
+$$A=\dfrac{15\times\sqrt{5}}{\sqrt{5}\times\sqrt{5}}=\dfrac{15\sqrt{5}}{5}$$<p>Car $\sqrt{5}\times\sqrt{5}=5$. On simplifie ensuite par $5$ :</p>
+$$A={\color{#4A5D7A}3\sqrt{5}}$$</div>
   </div>
   
 </article>
@@ -584,7 +587,7 @@ $$-7\leqslant x\leqslant 3$$$$S={\color{#4A5D7A}\left[-7\,;\,3\right]}$$</div>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Attention : les deux fractions portent sur le crédit <strong>initial</strong>, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $2\,400$ €.</p>
-$$\text{janvier}:\ \dfrac{1}{4}\times 2\,400=600 \qquad \text{février}:\ \dfrac{1}{3}\times 2\,400=800$$<p>Il reste alors :</p>
+$$\begin{aligned}\text{janvier}:\ \dfrac{1}{4}\times 2\,400 &= 600 \\ \text{février}:\ \dfrac{1}{3}\times 2\,400 \\ &= 800\end{aligned}$$<p>Il reste alors :</p>
 $$2\,400-600-800={\color{#4A5D7A}1\,000}$$<p>On peut aussi raisonner en proportions : $\dfrac{1}{4}+\dfrac{1}{3}=\dfrac{7}{12}$ du crédit est remboursé, il en reste $\dfrac{5}{12}$, soit $\dfrac{5}{12}\times 2\,400=1\,000$ €.</p>
 <p><span class="rep">Réponse : A</span></p>
 </div>
@@ -737,7 +740,7 @@ $$15\times\dfrac{4}{3}=\dfrac{60}{3}={\color{#4A5D7A}20}$$<p>La réponse A est l
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

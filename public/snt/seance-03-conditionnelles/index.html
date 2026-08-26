@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Séance 03 — Conditionnelles — MaBémat</title>
+<title>Séance 03 - Conditionnelles — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -226,7 +226,7 @@ pre[style*="background-color"] {
 
 
 
-<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="exercice-1--qui-a-gagné-">Exercice 1 — Qui a gagné ?</h3>
+<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="exercice-1---qui-a-gagné-">Exercice 1 - Qui a gagné ?</h3>
 <p>On considère la fonction suivante :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">gagnant</span>(scoreA, scoreB):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> scoreA <span style="color:#666">&gt;</span> scoreB:
@@ -236,20 +236,25 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Match nul&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    <span style="color:#007020;font-weight:bold">return</span> v
-</span></span></code></pre></div><p><strong>Q1.</strong> Inspectez ce code : quel est son nom ? Quels sont ses paramètres ? Combien de branches <code>if</code>/<code>elif</code>/<code>else</code> contient-il ?</p>
+</span></span></code></pre></div><p><strong>Q1.</strong> Inspectez ce code et repérez :</p>
+<ul>
+<li>son nom</li>
+<li>son nombre de paramètres et leurs noms</li>
+<li>le nombre de valeurs renvoyées</li>
+</ul>
 <p><strong>Q2.</strong> Écrivez cette fonction dans la cellule ci-dessous (<em>sans copier-coller !</em>) et exécutez-la.</p>
 <p><strong>Q3.</strong> Faites l&rsquo;appel <code>gagnant(4, 1)</code> et vérifiez que la valeur renvoyée est cohérente.</p>
 <p><strong>Q4.</strong> L&rsquo;équipe A a marqué 2 buts et l&rsquo;équipe B en a marqué 3. Quel appel faut-il faire ? Faites-le.</p>
 <p><strong>Q5.</strong> Proposez un appel qui renvoie <code>&quot;Match nul&quot;</code> et testez-le.</p>
 <hr>
-<h3 id="exercice-2--vérifier-sa-compréhension">Exercice 2 — Vérifier sa compréhension</h3>
+<h3 id="exercice-2---vérifier-sa-compréhension">Exercice 2 - Vérifier sa compréhension</h3>
 <p>Exercice CodePuzzle interactif à réaliser dans le notebook. Les questions vérifient automatiquement votre compréhension des instructions conditionnelles.</p>
-<p><strong>Q1.</strong> Question interactive 1 — réaliser dans le notebook.</p>
-<p><strong>Q2.</strong> Question interactive 2 — réaliser dans le notebook.</p>
-<p><strong>Q3.</strong> Question interactive 3 — réaliser dans le notebook.</p>
-<p><strong>Q4.</strong> Question interactive 4 — réaliser dans le notebook.</p>
+<p><strong>Q1.</strong> Question interactive 1 - réaliser dans le notebook.</p>
+<p><strong>Q2.</strong> Question interactive 2 - réaliser dans le notebook.</p>
+<p><strong>Q3.</strong> Question interactive 3 - réaliser dans le notebook.</p>
+<p><strong>Q4.</strong> Question interactive 4 - réaliser dans le notebook.</p>
 <hr>
-<h3 id="exercice-3--jeu-dindentation">Exercice 3 — Jeu d&rsquo;indentation</h3>
+<h3 id="exercice-3---jeu-dindentation">Exercice 3 - Jeu d&rsquo;indentation</h3>
 <p>Voici quatre programmes. Avant de les exécuter, prédisez ce que chacun affiche (ou si une erreur se produit).</p>
 <p><strong>Q1.</strong> Complétez la colonne « Résultat prédit » <em>sans exécuter les programmes</em>.</p>
 <table>
@@ -285,57 +290,106 @@ pre[style*="background-color"] {
 </table>
 <p><strong>Q2.</strong> Exécutez chaque programme dans le notebook et complétez la colonne « Résultat réel ».</p>
 <hr>
-<h3 id="exercice-4--inscription-sur-un-réseau-social">Exercice 4 — Inscription sur un réseau social</h3>
+<h3 id="exercice-4---inscription-sur-un-réseau-social">Exercice 4 - Inscription sur un réseau social</h3>
 <p>Pour s&rsquo;inscrire sur certains réseaux sociaux, il faut avoir au moins <strong>13 ans</strong>.</p>
 <p><strong>Q1.</strong> Exercice CodePuzzle interactif dans le notebook : identifier le code correct de la fonction <code>age_requis</code> parmi les propositions.</p>
 <p><strong>Q2.</strong> Copiez le code correct de la fonction <code>age_requis(age)</code> dans la cellule et exécutez-la.</p>
 <p><strong>Q3.</strong> Testez la fonction avec un appel renvoyant <code>True</code> et un appel renvoyant <code>False</code>.</p>
 <hr>
-<h3 id="exercice-5--imc">Exercice 5 — IMC</h3>
-<p>L&rsquo;Indice de Masse Corporelle (IMC) se calcule ainsi : <code>imc = masse / taille²</code></p>
-<p><strong>Q1.</strong> Écrire une fonction <code>imc(masse, taille)</code> qui renvoie l&rsquo;IMC arrondi à une décimale.</p>
-<p><strong>Q2.</strong> Écrire une fonction <code>diagnostic(masse, taille)</code> qui renvoie :</p>
-<ul>
-<li><code>&quot;Insuffisance pondérale&quot;</code> si IMC &lt; 18.5</li>
-<li><code>&quot;Corpulence normale&quot;</code> si IMC &lt; 25</li>
-<li><code>&quot;Surpoids&quot;</code> si IMC &lt; 30</li>
-<li><code>&quot;Obésité&quot;</code> sinon</li>
-</ul>
-<p><strong>Q3.</strong> Copiez la fonction <code>diagnostic</code> dans la cellule et testez-la pour les 3 personnages du notebook.</p>
-<p><strong>Q4.</strong> Adaptez la fonction <code>diagnostic</code> pour obtenir une analyse plus précise en 4 catégories :</p>
-<ul>
-<li>IMC &lt; 18.5 : <code>&quot;Insuffisance pondérale&quot;</code></li>
-<li>18.5 ≤ IMC ≤ 25 : <code>&quot;Corpulence normale&quot;</code></li>
-<li>25 &lt; IMC ≤ 30 : <code>&quot;Surpoids&quot;</code></li>
-<li>IMC &gt; 30 : <code>&quot;Obésité&quot;</code></li>
-</ul>
-<p><strong>Q5.</strong> Testez la nouvelle fonction pour les 3 personnages précédents.</p>
+<h3 id="exercice-5---application-de-fitness">Exercice 5 - Application de fitness</h3>
+<p><em>(D&rsquo;après une activité de Franck Chevrier, <a href="https://www.python-lycee.com/parcours-apprentissage-pl3">python-lycee.com</a>.)</em></p>
+<p>Les applications de fitness calculent l&rsquo;Indice de Masse Corporelle (IMC) de l&rsquo;utilisateur, donné par la formule $\text{IMC} = \dfrac{\text{masse}}{\text{taille}^2}$, où la masse est en kg et la taille en mètres.</p>
+<p>La fonction <code>imc</code> est déjà écrite dans le notebook :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">imc</span>(masse, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    indice <span style="color:#666">=</span> masse <span style="color:#666">/</span> (taille <span style="color:#666">**</span> <span style="color:#40a070">2</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> indice
+</span></span></code></pre></div><p><strong>Q1.</strong> Testez la fonction <code>imc</code> pour les 3 personnages du notebook (Alice, Barnabé et Corentin) : il faut faire les bons appels.</p>
+<p><strong>Q2.</strong> On considère que l&rsquo;IMC est <strong>dans la norme</strong> s&rsquo;il est compris entre 18.5 et 25. Écrire une fonction <code>diagnostic(masse, taille)</code> qui renvoie un message indiquant si l&rsquo;individu a un IMC dans la norme ou non. <em>(Dans le notebook, l&rsquo;exercice CodePuzzle vous fait remettre les lignes dans le bon ordre.)</em></p>
+<p><strong>Q3.</strong> Recopiez la fonction <code>diagnostic</code> dans la cellule et testez-la pour les 3 personnages.</p>
+<p><strong>Q4.</strong> Adaptez la fonction <code>diagnostic</code> pour obtenir une analyse plus précise, selon la grille suivante :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">IMC</th>
+          <th style="text-align: left">Diagnostic</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">IMC &lt; 18.5</td>
+          <td style="text-align: left"><code>&quot;Insuffisance pondérale&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">18.5 ≤ IMC ≤ 25</td>
+          <td style="text-align: left"><code>&quot;Corpulence normale&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">25 &lt; IMC ≤ 30</td>
+          <td style="text-align: left"><code>&quot;Surpoids&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">IMC &gt; 30</td>
+          <td style="text-align: left"><code>&quot;Obésité&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Q5.</strong> Testez la nouvelle fonction <code>diagnostic</code> pour les 3 personnages précédents.</p>
 <hr>
-<h3 id="exercice-6--prix-au-cinéma">Exercice 6 — Prix au cinéma</h3>
+<h3 id="exercice-6---prix-au-cinéma">Exercice 6 - Prix au cinéma</h3>
 <p>Dans un cinéma, la place adulte coûte <strong>11 €</strong> et la place enfant (moins de 18 ans) coûte <strong>7 €</strong>.</p>
 <p>Écrire une fonction <code>place(age)</code> qui renvoie le tarif correspondant.</p>
 <p>Tester avec <code>place(10)</code>, <code>place(17)</code>, <code>place(18)</code>, <code>place(30)</code>.</p>
 <hr>
-<h3 id="exercice-7--location-de-voiture">Exercice 7 — Location de voiture</h3>
+<h3 id="exercice-7---location-de-voiture">Exercice 7 - Location de voiture</h3>
 <p>Un service de location propose une voiture à <strong>52,16 € la journée</strong>. La personne peut parcourir <strong>250 km sans surcoût</strong>. Au-delà, elle paie <strong>0,31 € par km supplémentaire</strong>.</p>
 <p><strong>Q1.</strong> Combien paie une personne ayant parcouru 125 km en 1 jour ?</p>
 <p><strong>Q2.</strong> Combien paie une personne ayant parcouru 300 km en 1 jour ?</p>
 <p><strong>Q3.</strong> Écrire une fonction <code>tarif(j, d)</code> où <code>j</code> est le nombre de jours et <code>d</code> la distance parcourue en km, qui renvoie le tarif total à payer.</p>
 <hr>
-<h3 id="exercice-8--mention-au-bac">Exercice 8 — Mention au bac</h3>
-<p>Écrire une fonction <code>mention_bac(moy)</code> qui renvoie la mention correspondant à une moyenne sur 20 :</p>
-<ul>
-<li>&lt; 8 : <code>&quot;Recalé&quot;</code></li>
-<li>&lt; 10 : <code>&quot;Rattrapage&quot;</code></li>
-<li>&lt; 12 : <code>&quot;Sans mention&quot;</code></li>
-<li>&lt; 14 : <code>&quot;Assez bien&quot;</code></li>
-<li>&lt; 16 : <code>&quot;Bien&quot;</code></li>
-<li>&lt; 18 : <code>&quot;Très bien&quot;</code></li>
-<li>≥ 18 : <code>&quot;Félicitations du jury&quot;</code></li>
-</ul>
-<p>Tester avec plusieurs valeurs.</p>
+<h3 id="exercice-8---mention-au-bac">Exercice 8 - Mention au bac</h3>
+<p>Écrire une fonction <code>mention_bac(moy)</code> qui prend en paramètre la moyenne <code>moy</code> d&rsquo;un élève au baccalauréat et renvoie la mention correspondante :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Moyenne</th>
+          <th style="text-align: left">Mention</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">$[0 ; 8[$</td>
+          <td style="text-align: left"><code>&quot;Recalé&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$[8 ; 10[$</td>
+          <td style="text-align: left"><code>&quot;Rattrapage&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$[10 ; 12[$</td>
+          <td style="text-align: left"><code>&quot;Sans mention&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$[12 ; 14[$</td>
+          <td style="text-align: left"><code>&quot;Assez bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$[14 ; 16[$</td>
+          <td style="text-align: left"><code>&quot;Bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$[16 ; 18[$</td>
+          <td style="text-align: left"><code>&quot;Très bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$[18 ; 20]$</td>
+          <td style="text-align: left"><code>&quot;Félicitations&quot;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Exemples : <code>mention_bac(13.4)</code> renvoie <code>'Assez bien'</code> et <code>mention_bac(8)</code> renvoie <code>'Rattrapage'</code>.</p>
+<p>Testez la fonction dans tous les cas de figure.</p>
 <hr>
-<h3 id="exercice-9--combiner-des-conditions">Exercice 9 — Combiner des conditions</h3>
+<h3 id="exercice-9---combiner-des-conditions">Exercice 9 - Combiner des conditions</h3>
 <p>Un semestre est validé si les <strong>trois notes</strong> sont toutes ≥ 10.</p>
 <p><strong>Q1.</strong> Exercice CodePuzzle interactif dans le notebook : remettre les lignes de la fonction <code>semestre_valide</code> dans le bon ordre.</p>
 <p><strong>Q2.</strong> Copiez la fonction <code>semestre_valide(noteA, noteB, noteC)</code> dans la cellule et testez-la :</p>
@@ -345,28 +399,60 @@ pre[style*="background-color"] {
 <li><code>semestre_valide(9, 12, 11)</code> → <code>False</code></li>
 </ul>
 <hr>
-<h3 id="exercice-10--pair-ou-impair--bilan-de-score">Exercice 10 — Pair ou impair / Bilan de score</h3>
-<p><strong>Q1.</strong> Écrire une fonction <code>est_pair(n)</code> qui renvoie <code>True</code> si n est pair, <code>False</code> sinon. (Rappel : <code>n % 2</code> donne le reste de la division de n par 2.)</p>
+<h3 id="exercice-10---fonctions-avec-conditions">Exercice 10 - Fonctions avec conditions</h3>
+<p><strong>Q1.</strong> Écrire une fonction <code>est_pair(n)</code> qui renvoie <code>True</code> si <code>n</code> est pair, <code>False</code> sinon.</p>
+<p><em>Rappel : <code>n % 2</code> donne le reste de la division euclidienne de <code>n</code> par 2. Un entier est pair si <code>n % 2 == 0</code>.</em></p>
+<p><em>Vérifications :</em> <code>est_pair(4)</code> → <code>True</code>, <code>est_pair(7)</code> → <code>False</code>, <code>est_pair(0)</code> → <code>True</code>.</p>
 <p><strong>Q2.</strong> Écrire une fonction <code>bilan_score(score)</code> qui renvoie :</p>
 <ul>
-<li><code>&quot;Excellent&quot;</code> si score ≥ 90</li>
-<li><code>&quot;Bien&quot;</code> si score ≥ 70</li>
-<li><code>&quot;Moyen&quot;</code> si score ≥ 50</li>
-<li><code>&quot;Insuffisant&quot;</code> sinon</li>
+<li><code>&quot;Félicitations !&quot;</code> si le score est supérieur ou égal à 10</li>
+<li><code>&quot;Continue comme ça !&quot;</code> sinon</li>
 </ul>
+<p><em>Vérifications :</em> <code>bilan_score(12)</code> → <code>&quot;Félicitations !&quot;</code>, <code>bilan_score(7)</code> → <code>&quot;Continue comme ça !&quot;</code></p>
 <hr>
-<h3 id="exercice-11--piscine-municipale">Exercice 11 — Piscine municipale</h3>
-<p>La piscine applique les tarifs suivants :</p>
-<ul>
-<li>Moins de 6 ans : gratuit (0 €)</li>
-<li>De 6 à 17 ans : 2.50 €</li>
-<li>18 ans et plus : 4.00 €</li>
-</ul>
-<p><strong>Q1.</strong> Écrire une fonction <code>tarif_entree(age)</code> qui renvoie le tarif.</p>
-<p><strong>Q2.</strong> Écrire une fonction <code>tarif_famille(age1, age2, age3, age4)</code> qui renvoie le total pour une famille de 4 personnes.</p>
-<p><strong>Q3.</strong> Tester <code>tarif_famille(35, 38, 10, 4)</code>.</p>
+<h3 id="exercice-11---synthèse--la-piscine-municipale">Exercice 11 - Synthèse : la piscine municipale</h3>
+<p>La piscine municipale applique les tarifs d&rsquo;entrée suivants :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Catégorie</th>
+          <th style="text-align: left">Condition</th>
+          <th style="text-align: center">Tarif</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Enfant</td>
+          <td style="text-align: left">moins de 12 ans</td>
+          <td style="text-align: center">3,00 €</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Jeune</td>
+          <td style="text-align: left">12 à 25 ans</td>
+          <td style="text-align: center">4,00 €</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Adulte</td>
+          <td style="text-align: left">26 à 64 ans</td>
+          <td style="text-align: center">6,00 €</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Senior</td>
+          <td style="text-align: left">65 ans et plus</td>
+          <td style="text-align: center">4,50 €</td>
+      </tr>
+  </tbody>
+</table>
+<p>L&rsquo;objectif est de construire <strong>plusieurs fonctions qui travaillent ensemble</strong>.</p>
+<p><strong>Q1.</strong> Écrire une fonction <code>tarif_entree(age)</code> qui renvoie le prix d&rsquo;entrée en fonction de l&rsquo;âge, en utilisant <code>if</code>/<code>elif</code>/<code>else</code>.</p>
+<p><em>Vérifications :</em> <code>tarif_entree(8)</code> → <code>3.0</code>, <code>tarif_entree(17)</code> → <code>4.0</code>, <code>tarif_entree(40)</code> → <code>6.0</code>, <code>tarif_entree(70)</code> → <code>4.5</code>.</p>
+<p><strong>Q2.</strong> Une famille arrive à la piscine : deux adultes (35 et 38 ans), deux enfants (7 et 10 ans) et un grand-parent (68 ans).</p>
+<p>Appelez <code>tarif_entree</code> pour chaque personne, puis calculez et affichez le montant total à payer.</p>
+<p><strong>Q3 - Défi.</strong> Écrire une fonction <code>ticket(nom, age)</code> qui renvoie une chaîne de caractères représentant un ticket d&rsquo;entrée, <strong>en appelant</strong> <code>tarif_entree</code>.</p>
+<p><em>Exemple :</em> <code>ticket(&quot;Léa&quot;, 17)</code> → <code>&quot;Ticket de Léa (17 ans) : 4.0 €&quot;</code></p>
+<p>Appelez-la pour chaque membre de la famille.</p>
 <hr>
-<h3 id="exercice-12--bulletin-scolaire">Exercice 12 — Bulletin scolaire</h3>
+<h3 id="exercice-12---bulletin-scolaire">Exercice 12 - Bulletin scolaire</h3>
 <p><strong>Q1.</strong> Écrire une fonction <code>moyenne(n1, n2, n3, n4)</code> qui renvoie la moyenne de quatre notes.</p>
 <p><strong>Q2.</strong> Écrire une fonction <code>mention(moy)</code> qui renvoie :</p>
 <ul>
@@ -376,18 +462,34 @@ pre[style*="background-color"] {
 <li><code>&quot;Passable&quot;</code> si moy ≥ 10</li>
 <li><code>&quot;Insuffisant&quot;</code> sinon</li>
 </ul>
-<p><strong>Q3.</strong> Écrire une fonction <code>bulletin(prenom, n1, n2, n3, n4)</code> qui renvoie une chaîne du type :
-<code>&quot;Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien&quot;</code></p>
+<p><strong>Q3.</strong> Écrire une fonction <code>bulletin(prenom, n1, n2, n3, n4)</code> qui :</p>
+<ol>
+<li>calcule la moyenne <strong>en appelant <code>moyenne()</code></strong></li>
+<li>détermine la mention <strong>en appelant <code>mention()</code></strong></li>
+<li>renvoie une chaîne de caractères du type <code>&quot;Bilan de Alice - Moyenne : 13.0/20 - Mention : Assez bien&quot;</code></li>
+</ol>
 <p>Tester avec <code>bulletin(&quot;Alice&quot;, 14, 12, 16, 10)</code>.</p>
 <p><strong>Q4.</strong> Testez <code>bulletin</code> pour trois élèves : l&rsquo;un doit obtenir &ldquo;Très bien&rdquo;, l&rsquo;autre &ldquo;Passable&rdquo;, le troisième &ldquo;Bien&rdquo;.</p>
 </div>
-  <div id="exo-corrs" hidden><h3 id="exercice-1--qui-a-gagné-">Exercice 1 — Qui a gagné ?</h3>
-<p><strong>Q1.</strong> Nom : <code>gagnant</code> — Paramètres : 2 (<code>scoreA</code>, <code>scoreB</code>) — Valeur renvoyée : 1 (<code>&quot;équipe A&quot;</code>, <code>&quot;équipe B&quot;</code> ou <code>&quot;Match nul&quot;</code>).</p>
-<p><strong>Q2.</strong></p>
+  <div id="exo-corrs" hidden><h3 id="exercice-1---qui-a-gagné-">Exercice 1 - Qui a gagné ?</h3>
+<p><strong>Q1.</strong> Nom : <code>gagnant</code> - Paramètres : 2 (<code>scoreA</code> et <code>scoreB</code>) - Valeurs renvoyées : <strong>1 seule</strong> (la variable <code>v</code>), qui contient selon les cas <code>&quot;équipe A&quot;</code>, <code>&quot;équipe B&quot;</code> ou <code>&quot;Match nul&quot;</code>.</p>
+<p><strong>Q2.</strong> On recopie la fonction telle qu&rsquo;elle est donnée :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">gagnant</span>(scoreA, scoreB):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> scoreA <span style="color:#666">&gt;</span> scoreB:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;équipe A&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> scoreA <span style="color:#666">&lt;</span> scoreB:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;équipe B&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        v <span style="color:#666">=</span> <span style="color:#4070a0">&#34;Match nul&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>    <span style="color:#007020;font-weight:bold">return</span> v
+</span></span></code></pre></div><blockquote>
+<p>⚠️ Le <code>return v</code> est <strong>aligné avec le <code>if</code></strong>, pas avec les lignes <code>v = ...</code>. Il est donc exécuté après la structure conditionnelle, quelle que soit la branche choisie. S&rsquo;il était indenté à l&rsquo;intérieur du <code>if</code>, la fonction ne renverrait rien dans les autres cas.</p>
+</blockquote>
+<p><em>Variante possible</em> (un <code>return</code> dans chaque branche, sans variable intermédiaire) :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">gagnant</span>(scoreA, scoreB):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> scoreA <span style="color:#666">&gt;</span> scoreB:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;équipe A&#34;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> scoreB <span style="color:#666">&gt;</span> scoreA:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">elif</span> scoreA <span style="color:#666">&lt;</span> scoreB:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;équipe B&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Match nul&#34;</span>
@@ -395,13 +497,13 @@ pre[style*="background-color"] {
 <p><strong>Q4.</strong> <code>gagnant(2, 3)</code> → <code>&quot;équipe B&quot;</code> ✓</p>
 <p><strong>Q5.</strong> <code>gagnant(2, 2)</code> → <code>&quot;Match nul&quot;</code> ✓</p>
 <hr>
-<h3 id="exercice-2--vérifier-sa-compréhension">Exercice 2 — Vérifier sa compréhension</h3>
-<p><strong>Q1.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
-<p><strong>Q2.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
-<p><strong>Q3.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
-<p><strong>Q4.</strong> Exercice CodePuzzle interactif — vérifier automatiquement dans le notebook.</p>
+<h3 id="exercice-2---vérifier-sa-compréhension">Exercice 2 - Vérifier sa compréhension</h3>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif - vérifier automatiquement dans le notebook.</p>
+<p><strong>Q2.</strong> Exercice CodePuzzle interactif - vérifier automatiquement dans le notebook.</p>
+<p><strong>Q3.</strong> Exercice CodePuzzle interactif - vérifier automatiquement dans le notebook.</p>
+<p><strong>Q4.</strong> Exercice CodePuzzle interactif - vérifier automatiquement dans le notebook.</p>
 <hr>
-<h3 id="exercice-3--jeu-dindentation">Exercice 3 — Jeu d&rsquo;indentation</h3>
+<h3 id="exercice-3---jeu-dindentation">Exercice 3 - Jeu d&rsquo;indentation</h3>
 <p><strong>Q1.</strong></p>
 <table>
   <thead>
@@ -429,21 +531,21 @@ pre[style*="background-color"] {
       </tr>
   </tbody>
 </table>
-<p><strong>Programme A</strong> — Affiche :</p>
+<p><strong>Programme A</strong> - Affiche :</p>
 <pre tabindex="0"><code>x est grand
 Fin
 </code></pre><p>x vaut 12, donc <code>12 &gt; 10</code> est vrai → le bloc du <code>if</code> s&rsquo;exécute. <code>print(&quot;Fin&quot;)</code> n&rsquo;est pas indenté donc il s&rsquo;exécute toujours.</p>
-<p><strong>Programme B</strong> — Erreur <code>IndentationError</code> : le <code>print</code> après le <code>if</code> n&rsquo;est pas indenté, Python ne sait pas à quel bloc il appartient.</p>
-<p><strong>Programme C</strong> — Affiche :</p>
+<p><strong>Programme B</strong> - Erreur <code>IndentationError</code> : le <code>print</code> après le <code>if</code> n&rsquo;est pas indenté, Python ne sait pas à quel bloc il appartient.</p>
+<p><strong>Programme C</strong> - Affiche :</p>
 <pre tabindex="0"><code>Fin
 </code></pre><p>x vaut 3, donc <code>3 &gt; 10</code> est faux → le bloc du <code>if</code> est ignoré. <code>print(&quot;Fin&quot;)</code> s&rsquo;exécute quand même car il n&rsquo;est pas dans le <code>if</code>.</p>
-<p><strong>Programme D</strong> — Affiche :</p>
+<p><strong>Programme D</strong> - Affiche :</p>
 <pre tabindex="0"><code>Troisième message
 </code></pre><p>x vaut 3 : <code>3 &gt; 5</code> est faux → les deux <code>print</code> indentés (&ldquo;Premier message&rdquo; et &ldquo;Deuxième message&rdquo;) sont ignorés. Seul <code>print(&quot;Troisième message&quot;)</code>, non indenté, s&rsquo;exécute toujours.</p>
 <p><strong>Q2.</strong> Vérifier par exécution.</p>
 <hr>
-<h3 id="exercice-4--inscription-sur-un-réseau-social">Exercice 4 — Inscription sur un réseau social</h3>
-<p><strong>Q1.</strong> Exercice CodePuzzle interactif — identifier le code correct parmi les propositions. Pas de correction écrite.</p>
+<h3 id="exercice-4---inscription-sur-un-réseau-social">Exercice 4 - Inscription sur un réseau social</h3>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif - identifier le code correct parmi les propositions. Pas de correction écrite.</p>
 <p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">age_requis</span>(age):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&gt;=</span> <span style="color:#40a070">13</span>:
@@ -470,20 +572,36 @@ Fin
   </tbody>
 </table>
 <hr>
-<h3 id="exercice-5--application-de-fitness">Exercice 5 — Application de fitness</h3>
-<p><strong>Q1.</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">imc</span>(masse, taille):
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    indice <span style="color:#666">=</span> masse <span style="color:#666">/</span> (taille <span style="color:#666">**</span> <span style="color:#40a070">2</span>)
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">return</span> indice
-</span></span></code></pre></div><p><strong>Q2.</strong> Diagnostic simple (dans la norme ou non) — résultat du CodePuzzle :</p>
+<h3 id="exercice-5---application-de-fitness">Exercice 5 - Application de fitness</h3>
+<p><strong>Q1.</strong> La fonction <code>imc</code> est déjà écrite, il suffit de faire les <strong>bons appels</strong>, en donnant d&rsquo;abord la masse (en kg) puis la taille (en m) :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>imc(<span style="color:#40a070">70</span>, <span style="color:#40a070">1.75</span>)     <span style="color:#60a0b0;font-style:italic"># → 22.857142857142858</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>imc(<span style="color:#40a070">52</span>, <span style="color:#40a070">1.60</span>)     <span style="color:#60a0b0;font-style:italic"># → 20.312499999999996</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>imc(<span style="color:#40a070">95</span>, <span style="color:#40a070">1.80</span>)     <span style="color:#60a0b0;font-style:italic"># → 29.320987654320987</span>
+</span></span></code></pre></div><p><em>(À adapter aux valeurs des 3 personnages affichées dans le notebook.)</em></p>
+<blockquote>
+<p>⚠️ Deux erreurs fréquentes ici :</p>
+<ul>
+<li><strong>inverser les arguments</strong> : <code>imc(1.75, 70)</code> ne renvoie pas d&rsquo;erreur, mais un résultat absurde (0.00036). Python ne peut pas deviner ce qu&rsquo;on voulait dire : l&rsquo;ordre compte.</li>
+<li><strong>donner la taille en cm</strong> : <code>imc(70, 175)</code> renvoie 0.0023. La taille doit être en mètres.</li>
+</ul>
+<p>Le résultat affiché comporte beaucoup de décimales (<code>22.857142857142858</code>), c&rsquo;est normal : c&rsquo;est la valeur exacte du calcul. Pour un affichage lisible on peut écrire <code>round(imc(70, 1.75), 1)</code>, ce qui donne <code>22.9</code>.</p>
+</blockquote>
+<p><strong>Q2.</strong> Diagnostic simple : l&rsquo;IMC est dans la norme s&rsquo;il est compris entre 18.5 et 25.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">diagnostic</span>(masse, taille):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    valeur <span style="color:#666">=</span> imc(masse, taille)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">if</span> valeur <span style="color:#666">&lt;</span> <span style="color:#40a070">18.5</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Insuffisance pondérale&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;IMC hors norme&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">elif</span> valeur <span style="color:#666">&lt;=</span> <span style="color:#40a070">25</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Corpulence normale&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;IMC dans la norme&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Hors norme&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;IMC hors norme&#34;</span>
+</span></span></code></pre></div><p><em>Version plus courte, avec <code>and</code> :</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">diagnostic</span>(masse, taille):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    valeur <span style="color:#666">=</span> imc(masse, taille)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020;font-weight:bold">if</span> valeur <span style="color:#666">&gt;=</span> <span style="color:#40a070">18.5</span> <span style="color:#007020;font-weight:bold">and</span> valeur <span style="color:#666">&lt;=</span> <span style="color:#40a070">25</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;IMC dans la norme&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;IMC hors norme&#34;</span>
 </span></span></code></pre></div><table>
   <thead>
       <tr>
@@ -495,16 +613,19 @@ Fin
   <tbody>
       <tr>
           <td><code>diagnostic(70, 1.75)</code></td>
-          <td>22.9</td>
-          <td><code>&quot;Corpulence normale&quot;</code></td>
+          <td>≈ 22.9</td>
+          <td><code>&quot;IMC dans la norme&quot;</code></td>
       </tr>
       <tr>
           <td><code>diagnostic(50, 1.75)</code></td>
-          <td>16.3</td>
-          <td><code>&quot;Insuffisance pondérale&quot;</code></td>
+          <td>≈ 16.3</td>
+          <td><code>&quot;IMC hors norme&quot;</code></td>
       </tr>
   </tbody>
 </table>
+<blockquote>
+<p>⚠️ La fonction <code>diagnostic</code> <strong>appelle</strong> <code>imc</code> : il faut donc avoir exécuté la cellule qui définit <code>imc</code> avant, sinon Python signale <code>NameError: name 'imc' is not defined</code>.</p>
+</blockquote>
 <p><strong>Q3.</strong> Vérifier par exécution pour les 3 personnages.</p>
 <p><strong>Q4.</strong> Diagnostic précis (4 catégories) :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">diagnostic</span>(masse, taille):
@@ -517,9 +638,12 @@ Fin
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Surpoids&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Obésité&#34;</span>
-</span></span></code></pre></div><p><strong>Q5.</strong> Vérifier par exécution pour les 3 personnages avec la nouvelle fonction <code>diagnostic</code>.</p>
+</span></span></code></pre></div><blockquote>
+<p>⚠️ <strong>L&rsquo;ordre des tests est essentiel.</strong> Comme chaque <code>elif</code> n&rsquo;est testé que si les précédents sont faux, il est inutile (et faux) d&rsquo;écrire <code>elif valeur &gt; 18.5 and valeur &lt;= 25</code>. Si on écrivait les tests dans l&rsquo;ordre inverse, en commençant par <code>if valeur &lt;= 30: return &quot;Surpoids&quot;</code>, alors un IMC de 20 renverrait <code>&quot;Surpoids&quot;</code> !</p>
+</blockquote>
+<p><strong>Q5.</strong> Vérifier par exécution pour les 3 personnages avec la nouvelle fonction <code>diagnostic</code>.</p>
 <hr>
-<h3 id="exercice-6--prix-au-cinéma">Exercice 6 — Prix au cinéma</h3>
+<h3 id="exercice-6---prix-au-cinéma">Exercice 6 - Prix au cinéma</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">place</span>(age):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&lt;</span> <span style="color:#40a070">18</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">7</span>
@@ -552,7 +676,7 @@ Fin
   </tbody>
 </table>
 <hr>
-<h3 id="exercice-7--location-de-voiture">Exercice 7 — Location de voiture</h3>
+<h3 id="exercice-7---location-de-voiture">Exercice 7 - Location de voiture</h3>
 <p><strong>Q1.</strong> 125 km ≤ 250 km : pas de surcoût. Tarif = 52,16 € × 1 jour = <strong>52,16 €</strong>.</p>
 <p><strong>Q2.</strong> 300 km &gt; 250 km : surcoût sur 50 km. Tarif = 52,16 + (300 − 250) × 0,31 = 52,16 + 15,50 = <strong>67,66 €</strong>.</p>
 <p><strong>Q3.</strong></p>
@@ -583,7 +707,7 @@ Fin
   </tbody>
 </table>
 <hr>
-<h3 id="exercice-8--mention-au-bac">Exercice 8 — Mention au bac</h3>
+<h3 id="exercice-8---mention-au-bac">Exercice 8 - Mention au bac</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">mention_bac</span>(moy):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    <span style="color:#007020;font-weight:bold">if</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">8</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Recalé&#34;</span>
@@ -598,7 +722,7 @@ Fin
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    <span style="color:#007020;font-weight:bold">elif</span> moy <span style="color:#666">&lt;</span> <span style="color:#40a070">18</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Très bien&#34;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    <span style="color:#007020;font-weight:bold">else</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Félicitations du jury&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>        <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Félicitations&#34;</span>
 </span></span></code></pre></div><table>
   <thead>
       <tr>
@@ -633,13 +757,25 @@ Fin
       </tr>
       <tr>
           <td><code>mention_bac(19)</code></td>
-          <td><code>&quot;Félicitations du jury&quot;</code></td>
+          <td><code>&quot;Félicitations&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(13.4)</code></td>
+          <td><code>&quot;Assez bien&quot;</code></td>
+      </tr>
+      <tr>
+          <td><code>mention_bac(8)</code></td>
+          <td><code>&quot;Rattrapage&quot;</code></td>
       </tr>
   </tbody>
 </table>
+<blockquote>
+<p>⚠️ <strong>L&rsquo;ordre des tests est essentiel</strong> : Python s&rsquo;arrête à la <strong>première</strong> condition vraie. Ici on va du plus petit au plus grand avec des <code>&lt;</code>. Si on commençait par <code>if moy &lt; 18: return &quot;Très bien&quot;</code>, alors une moyenne de 6 renverrait <code>&quot;Très bien&quot;</code>, puisque 6 est bien inférieur à 18 !</p>
+<p>⚠️ Autre erreur fréquente : écrire une suite de <code>if</code> indépendants au lieu de <code>elif</code>. Avec des <code>if</code> séparés, toutes les conditions sont testées et c&rsquo;est le <strong>dernier</strong> <code>return</code> atteint qui compte - ici, le premier <code>return</code> arrête déjà la fonction, mais le raisonnement devient faux dès qu&rsquo;on remplace les <code>return</code> par des <code>print</code>.</p>
+</blockquote>
 <hr>
-<h3 id="exercice-9--combiner-des-conditions">Exercice 9 — Combiner des conditions</h3>
-<p><strong>Q1.</strong> Exercice CodePuzzle interactif — mettre les lignes dans le bon ordre. Pas de correction écrite.</p>
+<h3 id="exercice-9---combiner-des-conditions">Exercice 9 - Combiner des conditions</h3>
+<p><strong>Q1.</strong> Exercice CodePuzzle interactif - mettre les lignes dans le bon ordre. Pas de correction écrite.</p>
 <p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">semestre_valide</span>(noteA, noteB, noteC):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> noteA <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span> <span style="color:#007020;font-weight:bold">and</span> noteB <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span> <span style="color:#007020;font-weight:bold">and</span> noteC <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
@@ -673,7 +809,7 @@ Fin
   </tbody>
 </table>
 <hr>
-<h3 id="exercice-10--fonctions-avec-conditions">Exercice 10 — Fonctions avec conditions</h3>
+<h3 id="exercice-10---fonctions-avec-conditions">Exercice 10 - Fonctions avec conditions</h3>
 <p><strong>Q1.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">est_pair</span>(n):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>:
@@ -684,20 +820,37 @@ Fin
   <thead>
       <tr>
           <th>Appel</th>
+          <th>Calcul</th>
           <th>Résultat</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td><code>est_pair(4)</code></td>
+          <td><code>4 % 2</code> vaut 0</td>
           <td><code>True</code></td>
       </tr>
       <tr>
           <td><code>est_pair(7)</code></td>
+          <td><code>7 % 2</code> vaut 1</td>
           <td><code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>est_pair(0)</code></td>
+          <td><code>0 % 2</code> vaut 0</td>
+          <td><code>True</code></td>
       </tr>
   </tbody>
 </table>
+<blockquote>
+<p>⚠️ <strong>Erreurs fréquentes</strong></p>
+<ul>
+<li>écrire <code>if n % 2 = 0</code> : le simple <code>=</code> sert à <strong>affecter</strong>, jamais à comparer. Python signale une <code>SyntaxError</code>. Il faut <code>==</code>.</li>
+<li>écrire <code>return &quot;True&quot;</code> avec des guillemets : cela renvoie la <strong>chaîne</strong> <code>&quot;True&quot;</code>, pas le booléen <code>True</code>.</li>
+<li>écrire <code>print(True)</code> à la place de <code>return True</code> : la fonction afficherait le résultat mais renverrait <code>None</code>, donc <code>est_pair(4) + est_pair(6)</code> deviendrait impossible.</li>
+</ul>
+<p><em>Version experte</em> : <code>return n % 2 == 0</code> suffit, puisque <code>n % 2 == 0</code> est <strong>déjà</strong> un booléen. Le <code>if/else</code> n&rsquo;est pas faux, mais il est redondant.</p>
+</blockquote>
 <p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">bilan_score</span>(score):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> score <span style="color:#666">&gt;=</span> <span style="color:#40a070">10</span>:
@@ -723,7 +876,7 @@ Fin
   </tbody>
 </table>
 <hr>
-<h3 id="exercice-11--la-piscine-municipale">Exercice 11 — La piscine municipale</h3>
+<h3 id="exercice-11---synthèse--la-piscine-municipale">Exercice 11 - Synthèse : la piscine municipale</h3>
 <p><strong>Q1.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">tarif_entree</span>(age):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">if</span> age <span style="color:#666">&lt;</span> <span style="color:#40a070">12</span>:
@@ -809,12 +962,12 @@ Fin
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>grandparent <span style="color:#666">=</span> tarif_entree(<span style="color:#40a070">68</span>)  <span style="color:#60a0b0;font-style:italic"># 4.5</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>total <span style="color:#666">=</span> adulte1 <span style="color:#666">+</span> adulte2 <span style="color:#666">+</span> enfant1 <span style="color:#666">+</span> enfant2 <span style="color:#666">+</span> grandparent
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020">print</span>(total)   <span style="color:#60a0b0;font-style:italic"># 22.5</span>
-</span></span></code></pre></div><p><strong>Q3 — Défi.</strong></p>
+</span></span></code></pre></div><p><strong>Q3 - Défi.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">ticket</span>(nom, age):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#4070a0">&#34;Ticket de &#34;</span> <span style="color:#666">+</span> nom <span style="color:#666">+</span> <span style="color:#4070a0">&#34; (&#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(age) <span style="color:#666">+</span> <span style="color:#4070a0">&#34; ans) : &#34;</span> <span style="color:#666">+</span> <span style="color:#007020">str</span>(tarif_entree(age)) <span style="color:#666">+</span> <span style="color:#4070a0">&#34; €&#34;</span>
 </span></span></code></pre></div><p>Exemple : <code>ticket(&quot;Léa&quot;, 17)</code> → <code>&quot;Ticket de Léa (17 ans) : 4.0 €&quot;</code></p>
 <hr>
-<h3 id="exercice-12--le-bulletin-scolaire">Exercice 12 — Le bulletin scolaire</h3>
+<h3 id="exercice-12---bulletin-scolaire">Exercice 12 - Bulletin scolaire</h3>
 <p><strong>Q1.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">moyenne</span>(n1, n2, n3, n4):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020;font-weight:bold">return</span> (n1 <span style="color:#666">+</span> n2 <span style="color:#666">+</span> n3 <span style="color:#666">+</span> n4) <span style="color:#666">/</span> <span style="color:#40a070">4</span>
@@ -835,23 +988,30 @@ Fin
       <tr>
           <th>Appel</th>
           <th>Résultat</th>
+          <th>Pourquoi</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td><code>mention(16.5)</code></td>
           <td><code>&quot;Très bien&quot;</code></td>
+          <td>16.5 ≥ 16</td>
       </tr>
       <tr>
           <td><code>mention(11)</code></td>
-          <td><code>&quot;Assez bien&quot;</code></td>
+          <td><code>&quot;Passable&quot;</code></td>
+          <td>11 &lt; 12 mais 11 ≥ 10</td>
       </tr>
       <tr>
           <td><code>mention(8)</code></td>
           <td><code>&quot;Insuffisant&quot;</code></td>
+          <td>8 &lt; 10, aucune condition vraie → <code>else</code></td>
       </tr>
   </tbody>
 </table>
+<blockquote>
+<p>⚠️ Le notebook indique par erreur <code>mention(11)</code> → <code>&quot;Assez bien&quot;</code>. C&rsquo;est faux : <code>&quot;Assez bien&quot;</code> démarre à 12. Avec 11, la fonction renvoie <code>&quot;Passable&quot;</code>.</p>
+</blockquote>
 <p><strong>Q3.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">bulletin</span>(prenom, n1, n2, n3, n4):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    moy <span style="color:#666">=</span> moyenne(n1, n2, n3, n4)
@@ -861,8 +1021,16 @@ Fin
 <ul>
 <li><code>moyenne(14, 12, 16, 10)</code> = (14+12+16+10)/4 = 52/4 = <strong>13.0</strong></li>
 <li><code>mention(13.0)</code> → 13.0 ≥ 12 et &lt; 14 → <strong>&ldquo;Assez bien&rdquo;</strong></li>
-<li>Résultat : <code>&quot;Bilan d'Alice - Moyenne : 13.0/20 - Mention : Assez bien&quot;</code></li>
+<li>Résultat : <code>&quot;Bilan de Alice - Moyenne : 13.0/20 - Mention : Assez bien&quot;</code></li>
 </ul>
+<blockquote>
+<p>⚠️ <strong>Deux points de vigilance</strong> :</p>
+<ul>
+<li><code>str(moy)</code> est obligatoire : on ne peut pas concaténer une chaîne et un nombre avec <code>+</code>. Sans lui, Python signale <code>TypeError: can only concatenate str (not &quot;float&quot;) to str</code>.</li>
+<li>La fonction <code>bulletin</code> <strong>renvoie</strong> la chaîne (<code>return</code>), elle ne l&rsquo;affiche pas. Pour la voir, il faut écrire <code>print(bulletin(&quot;Alice&quot;, 14, 12, 16, 10))</code>.</li>
+</ul>
+<p><em>Remarque de français</em> : la fonction produit <code>&quot;Bilan de Alice&quot;</code> et non <code>&quot;Bilan d'Alice&quot;</code>, car Python ne sait pas faire l&rsquo;élision devant une voyelle. Ce n&rsquo;est pas une erreur de programmation.</p>
+</blockquote>
 <p><strong>Q4.</strong> Tester <code>bulletin</code> pour trois élèves (résultats personnels, pas de correction type). Vérifier qu&rsquo;on obtient au moins un &ldquo;Très bien&rdquo; (≥ 16), un &ldquo;Passable&rdquo; (10–12) et un &ldquo;Bien&rdquo; (14–16).</p>
 </div>
   <div id="exo-list"></div>
@@ -1224,7 +1392,7 @@ async function runPython() {
   </script>
   <script>
      
-    const BUILD_TS = '1787576504';
+    const BUILD_TS = '1787735156';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

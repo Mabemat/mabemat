@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 14 - Fonctions affines et sens de variation — MaBémat</title>
+<title>Semaine 14 - Écart-type et fonctions affines — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Fonctions affines et sens de variation</p>
+  <p class="wk-subtitle">Écart-type et fonctions affines</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -300,8 +300,9 @@ $$f(x)={\color{#4A5D7A}2x-1}$$<p>Vérification avec un autre point de la droite 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>$g$ est une fonction affine telle que $g(-1)=4$ et $g(3)=-8$.</p>
-<p>Déterminer son coefficient directeur.</p>
+    <p>On considère la série statistique : $6\ ;\ 8\ ;\ 11\ ;\ 12\ ;\ 13$.</p>
+<p><strong>a.</strong> Calculer la moyenne de cette série.</p>
+<p><strong>b.</strong> Une seconde série a la même moyenne, mais son écart-type vaut $5{,}2$ alors que celui de la première vaut $2{,}6$. Laquelle des deux séries est la plus dispersée autour de sa moyenne ?</p>
 
   </div>
   
@@ -310,9 +311,10 @@ $$f(x)={\color{#4A5D7A}2x-1}$$<p>Vérification avec un autre point de la droite 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Pour une fonction affine, le coefficient directeur se calcule à partir de deux images :</p>
-$$m=\dfrac{g(x_2)-g(x_1)}{x_2-x_1}$$<p>On remplace par les valeurs de l&rsquo;énoncé :</p>
-$$m=\dfrac{-8-4}{3-(-1)}=\dfrac{-12}{4}={\color{#4A5D7A}-3}$$<p>Attention au dénominateur : $3-(-1)=3+1=4$.</p>
+    <div><p><strong>a.</strong> La moyenne est la somme des valeurs divisée par leur nombre :</p>
+$$\overline{x}=\dfrac{6+8+11+12+13}{5}=\dfrac{50}{5}={\color{#4A5D7A}10}$$<p><strong>b.</strong> L&rsquo;écart-type mesure la dispersion : plus il est grand, plus les valeurs sont éloignées de la moyenne.</p>
+<p>Comme $5{,}2>2{,}6$, c&rsquo;est ${\color{#4A5D7A}\text{la seconde série}}$ qui est la plus dispersée.</p>
+<p>Deux séries peuvent avoir la même moyenne et des dispersions très différentes : la moyenne seule ne décrit pas une série.</p>
 </div>
   </div>
   
@@ -332,8 +334,8 @@ $$m=\dfrac{-8-4}{3-(-1)}=\dfrac{-12}{4}={\color{#4A5D7A}-3}$$<p>Attention au dé
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la série statistique suivante, rangée dans l&rsquo;ordre croissant :</p>
-$$6\ ;\ 8\ ;\ 8\ ;\ 11\ ;\ 13\ ;\ 13\ ;\ 13\ ;\ 17$$<p>Déterminer la médiane et l&rsquo;étendue de cette série.</p>
+    <p>On donne les intervalles $I=\left]-\infty\,;\,3\right]$ et $J=\left[-2\,;\,+\infty\right[$.</p>
+<p>Déterminer $I\cap J$ puis $I\cup J$.</p>
 
   </div>
   
@@ -342,10 +344,10 @@ $$6\ ;\ 8\ ;\ 8\ ;\ 11\ ;\ 13\ ;\ 13\ ;\ 13\ ;\ 17$$<p>Déterminer la médiane e
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La série compte $8$ valeurs. Comme $8$ est pair, il n&rsquo;y a pas de valeur centrale unique : la médiane est la moyenne des deux valeurs du milieu, celles de rang $4$ et $5$.</p>
-$$\text{Médiane}=\dfrac{11+13}{2}=\dfrac{24}{2}={\color{#4A5D7A}12}$$<p>L&rsquo;étendue est l&rsquo;écart entre la plus grande et la plus petite valeur :</p>
-$$17-6={\color{#4A5D7A}11}$$<p>On remarque que la médiane $12$ n&rsquo;est pas une valeur de la série : c&rsquo;est normal quand l&rsquo;effectif est pair.</p>
-</div>
+    <div><p>On traduit par des inégalités : $x\in I$ signifie $x\leqslant 3$, et $x\in J$ signifie $x\geqslant -2$.</p>
+<p><strong>Intersection</strong> : les réels qui vérifient les deux conditions à la fois, donc $-2\leqslant x\leqslant 3$.</p>
+$$I\cap J={\color{#4A5D7A}\left[-2\,;\,3\right]}$$<p><strong>Réunion</strong> : tout réel est soit inférieur ou égal à $3$, soit supérieur ou égal à $-2$ (et souvent les deux). Aucun réel n&rsquo;échappe aux deux conditions.</p>
+$$I\cup J={\color{#4A5D7A}\mathbb{R}}$$</div>
   </div>
   
 </article>
@@ -486,7 +488,7 @@ $$f\ \text{est}\ {\color{#4A5D7A}\text{croissante}}\ \text{sur}\ \mathbb{R}$$<p>
     <span class="auto1re-corr-label">Correction</span>
     <div><p><strong>Ordonnée à l&rsquo;origine</strong> : c&rsquo;est l&rsquo;ordonnée du point où la droite coupe l&rsquo;axe des ordonnées. Ici, ce point est $(0\,;\,2)$, donc $p=2$.</p>
 <p><strong>Coefficient directeur</strong> : on part d&rsquo;un point de la droite, on avance de $1$ vers la droite, et on lit de combien on monte ou on descend. En partant de $(0\,;\,2)$ et en avançant de $1$, on arrive en $(1\,;\,1)$ : on est descendu de $1$.</p>
-$$m=\dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}}=\dfrac{-1}{1}=-1$$<p>D&rsquo;où :</p>
+$$\begin{aligned}m &= \dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}} \\ &= \dfrac{-1}{1} \\ &= -1\end{aligned}$$<p>D&rsquo;où :</p>
 $$f(x)={\color{#4A5D7A}-x+2}$$<p>Vérification avec un autre point de la droite : $f(2)=-2+2=0$, et la droite coupe bien l&rsquo;axe des abscisses en $2$.</p>
 </div>
   </div>
@@ -507,8 +509,9 @@ $$f(x)={\color{#4A5D7A}-x+2}$$<p>Vérification avec un autre point de la droite 
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>$g$ est une fonction affine telle que $g(-2)=7$ et $g(4)=-5$.</p>
-<p>Déterminer son coefficient directeur.</p>
+    <p>On considère la série statistique : $5\ ;\ 9\ ;\ 10\ ;\ 14\ ;\ 22$.</p>
+<p><strong>a.</strong> Calculer la moyenne de cette série.</p>
+<p><strong>b.</strong> Une seconde série a la même moyenne, mais son écart-type vaut $1{,}8$ alors que celui de la première vaut $6{,}1$. Laquelle des deux séries a ses valeurs les plus regroupées autour de sa moyenne ?</p>
 
   </div>
   
@@ -517,9 +520,10 @@ $$f(x)={\color{#4A5D7A}-x+2}$$<p>Vérification avec un autre point de la droite 
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Pour une fonction affine, le coefficient directeur se calcule à partir de deux images :</p>
-$$m=\dfrac{g(x_2)-g(x_1)}{x_2-x_1}$$<p>On remplace par les valeurs de l&rsquo;énoncé :</p>
-$$m=\dfrac{-5-7}{4-(-2)}=\dfrac{-12}{6}={\color{#4A5D7A}-2}$$<p>Attention au dénominateur : $4-(-2)=4+2=6$.</p>
+    <div><p><strong>a.</strong> La moyenne est la somme des valeurs divisée par leur nombre :</p>
+$$\overline{x}=\dfrac{5+9+10+14+22}{5}=\dfrac{60}{5}={\color{#4A5D7A}12}$$<p><strong>b.</strong> L&rsquo;écart-type mesure la dispersion : plus il est <strong>petit</strong>, plus les valeurs sont regroupées autour de la moyenne.</p>
+<p>Comme $1{,}8<6{,}1$, c&rsquo;est ${\color{#4A5D7A}\text{la seconde série}}$ qui a ses valeurs les plus regroupées.</p>
+<p>Deux séries peuvent avoir la même moyenne et des dispersions très différentes : la moyenne seule ne décrit pas une série.</p>
 </div>
   </div>
   
@@ -539,8 +543,8 @@ $$m=\dfrac{-5-7}{4-(-2)}=\dfrac{-12}{6}={\color{#4A5D7A}-2}$$<p>Attention au dé
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On considère la série statistique suivante, rangée dans l&rsquo;ordre croissant :</p>
-$$5\ ;\ 7\ ;\ 9\ ;\ 9\ ;\ 12\ ;\ 14\ ;\ 16\ ;\ 20$$<p>Déterminer la médiane et l&rsquo;étendue de cette série.</p>
+    <p>On donne les intervalles $I=\left[-5\,;\,4\right[$ et $J=\left]1\,;\,+\infty\right[$.</p>
+<p>Déterminer $I\cap J$ puis $I\cup J$.</p>
 
   </div>
   
@@ -549,10 +553,10 @@ $$5\ ;\ 7\ ;\ 9\ ;\ 9\ ;\ 12\ ;\ 14\ ;\ 16\ ;\ 20$$<p>Déterminer la médiane et
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La série compte $8$ valeurs. Comme $8$ est pair, il n&rsquo;y a pas de valeur centrale unique : la médiane est la moyenne des deux valeurs du milieu, celles de rang $4$ et $5$.</p>
-$$\text{Médiane}=\dfrac{9+12}{2}=\dfrac{21}{2}={\color{#4A5D7A}10{,}5}$$<p>L&rsquo;étendue est l&rsquo;écart entre la plus grande et la plus petite valeur :</p>
-$$20-5={\color{#4A5D7A}15}$$<p>On remarque que la médiane $10{,}5$ n&rsquo;est pas une valeur de la série : c&rsquo;est normal quand l&rsquo;effectif est pair.</p>
-</div>
+    <div><p>On traduit par des inégalités : $x\in I$ signifie $-5\leqslant x<4$, et $x\in J$ signifie $x>1$.</p>
+<p><strong>Intersection</strong> : les réels qui vérifient les deux conditions à la fois, donc $1<x<4$. Les deux bornes sont exclues, l&rsquo;une parce que l&rsquo;inégalité de $J$ est stricte, l&rsquo;autre parce que celle de $I$ l&rsquo;est aussi.</p>
+$$I\cap J={\color{#4A5D7A}\left]1\,;\,4\right[}$$<p><strong>Réunion</strong> : les deux intervalles se chevauchent, leur réunion est donc d&rsquo;un seul tenant, de la plus petite borne à la plus grande.</p>
+$$I\cup J={\color{#4A5D7A}\left[-5\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -720,7 +724,7 @@ $$\dfrac{11+1}{2}={\color{#4A5D7A}6}$$<p>Il y a bien $5$ valeurs avant et $5$ va
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

@@ -34,7 +34,7 @@ $$x^2=49 \qquad\text{et}\qquad x^2=-9$$
 ---CORR---
 **Première équation.** $49$ est positif, donc l'équation $x^2=49$ admet deux solutions opposées :
 
-$$x=-\sqrt{49}=-7 \qquad\text{ou}\qquad x=\sqrt{49}=7$$
+$$\begin{aligned}x &= -\sqrt{49}=-7 \\ \text{ou}\quad x &= \sqrt{49}=7\end{aligned}$$
 
 $$S_1={\color{#4A5D7A}\lbrace -7\,;\,7\rbrace}$$
 
@@ -146,7 +146,7 @@ $$x^2=64 \qquad\text{et}\qquad x^2=-16$$
 ---CORR---
 **Première équation.** $64$ est positif, donc l'équation $x^2=64$ admet deux solutions opposées :
 
-$$x=-\sqrt{64}=-8 \qquad\text{ou}\qquad x=\sqrt{64}=8$$
+$$\begin{aligned}x &= -\sqrt{64}=-8 \\ \text{ou}\quad x &= \sqrt{64}=8\end{aligned}$$
 
 $$S_1={\color{#4A5D7A}\lbrace -8\,;\,8\rbrace}$$
 

@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -244,7 +244,7 @@ $$4\overrightarrow{u}-7\overrightarrow{u}+2\overrightarrow{u}$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Tous les termes sont des multiples du même vecteur $\overrightarrow{u}$ : on additionne les coefficients, exactement comme avec des termes en $x$.</p>
-$$4\overrightarrow{u}-7\overrightarrow{u}+2\overrightarrow{u}=(4-7+2)\,\overrightarrow{u}=(-1)\,\overrightarrow{u}={\color{#4A5D7A}-\overrightarrow{u}}$$<p>Le vecteur obtenu a la même direction et la même longueur que $\overrightarrow{u}$, mais le sens opposé.</p>
+$$\begin{aligned}4\overrightarrow{u}-7\overrightarrow{u}+2\overrightarrow{u} &= (4-7+2)\,\overrightarrow{u} \\ &= (-1)\,\overrightarrow{u} \\ &= {\color{#4A5D7A}-\overrightarrow{u}}\end{aligned}$$<p>Le vecteur obtenu a la même direction et la même longueur que $\overrightarrow{u}$, mais le sens opposé.</p>
 </div>
   </div>
   
@@ -296,9 +296,8 @@ $$f(0)=0^2-3\times 0={\color{#4A5D7A}0}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=5x-8$.</p>
-<p>Déterminer l&rsquo;antécédent de $7$ par $f$.</p>
-
+    <p>Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs du plan. Simplifier :</p>
+$$3\left(\overrightarrow{u}+2\overrightarrow{v}\right)-2\left(\overrightarrow{u}+3\overrightarrow{v}\right)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -306,9 +305,9 @@ $$f(0)=0^2-3\times 0={\color{#4A5D7A}0}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Chercher l&rsquo;antécédent de $7$, c&rsquo;est chercher le nombre $x$ dont l&rsquo;image vaut $7$, donc résoudre l&rsquo;équation $f(x)=7$ :</p>
-$$5x-8=7$$<p>On ajoute $8$ à chaque membre, puis on divise par $5$ :</p>
-$$5x=15 \qquad\text{donc}\qquad x={\color{#4A5D7A}3}$$<p>Vérification : $f(3)=5\times 3-8=7$.</p>
+    <div><p>On distribue chaque coefficient sur la parenthèse qu&rsquo;il précède, exactement comme avec des nombres :</p>
+$$3\left(\overrightarrow{u}+2\overrightarrow{v}\right)=3\overrightarrow{u}+6\overrightarrow{v}$$$$-2\left(\overrightarrow{u}+3\overrightarrow{v}\right)=-2\overrightarrow{u}-6\overrightarrow{v}$$<p>On additionne, en regroupant les $\overrightarrow{u}$ entre eux et les $\overrightarrow{v}$ entre eux :</p>
+$$3\overrightarrow{u}-2\overrightarrow{u}+6\overrightarrow{v}-6\overrightarrow{v}={\color{#4A5D7A}\overrightarrow{u}}$$<p>Attention au signe : le $-2$ multiplie aussi le $3\overrightarrow{v}$, ce qui donne bien $-6\overrightarrow{v}$.</p>
 </div>
   </div>
   
@@ -340,7 +339,7 @@ $$\dfrac{3x-12}{x+5}=0$$
     <div><p>On cherche d&rsquo;abord la valeur interdite, celle qui annule le dénominateur :</p>
 $$x+5=0 \quad\text{donc}\quad x=-5$$<p>L&rsquo;équation n&rsquo;a de sens que pour $x\neq -5$.</p>
 <p>Un quotient est nul si et seulement si son numérateur est nul :</p>
-$$3x-12=0 \quad\text{donc}\quad 3x=12 \quad\text{donc}\quad x=4$$<p>Comme $4\neq -5$, cette solution est acceptable.</p>
+$$\begin{aligned}3x-12 &= 0 \quad\text{donc}\quad 3x \\ &= 12 \quad\text{donc}\quad x \\ &= 4\end{aligned}$$<p>Comme $4\neq -5$, cette solution est acceptable.</p>
 $$S={\color{#4A5D7A}\lbrace 4\rbrace}$$</div>
   </div>
   
@@ -405,7 +404,7 @@ $$f(-2)=3\times 4-4-1=12-4-1={\color{#4A5D7A}7}$$<p>La réponse A vient de l&rsq
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On calcule les quatre valeurs. Prendre $10\,\%$ c&rsquo;est diviser par $10$, prendre $25\,\%$ c&rsquo;est diviser par $4$, prendre $5\,\%$ c&rsquo;est prendre la moitié de $10\,\%$, prendre $20\,\%$ c&rsquo;est diviser par $5$.</p>
-$$10\,\%\text{ de }190=19 \qquad 25\,\%\text{ de }72=18$$$$5\,\%\text{ de }390=19{,}5 \qquad 20\,\%\text{ de }110={\color{#4A5D7A}22}$$<p>Le plus grand est donc $20\,\%$ de $110$. Un petit pourcentage d&rsquo;un grand nombre n&rsquo;est pas forcément grand : il faut comparer les résultats, pas les pourcentages.</p>
+$$10\,\%\text{ de }190=19 \qquad 25\,\%\text{ de }72=18$$$$\begin{aligned}5\,\%\text{ de }390 &= 19{,}5 \qquad 20\,\%\text{ de }110 \\ &= {\color{#4A5D7A}22}\end{aligned}$$<p>Le plus grand est donc $20\,\%$ de $110$. Un petit pourcentage d&rsquo;un grand nombre n&rsquo;est pas forcément grand : il faut comparer les résultats, pas les pourcentages.</p>
 <p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
@@ -498,9 +497,8 @@ $$f(0)=0^2-5\times 0={\color{#4A5D7A}0}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=4x-9$.</p>
-<p>Déterminer l&rsquo;antécédent de $7$ par $f$.</p>
-
+    <p>Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs du plan. Simplifier :</p>
+$$5\left(\overrightarrow{u}-\overrightarrow{v}\right)-3\left(\overrightarrow{u}-2\overrightarrow{v}\right)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -508,9 +506,9 @@ $$f(0)=0^2-5\times 0={\color{#4A5D7A}0}$$</div>
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Chercher l&rsquo;antécédent de $7$, c&rsquo;est chercher le nombre $x$ dont l&rsquo;image vaut $7$, donc résoudre l&rsquo;équation $f(x)=7$ :</p>
-$$4x-9=7$$<p>On ajoute $9$ à chaque membre, puis on divise par $4$ :</p>
-$$4x=16 \qquad\text{donc}\qquad x={\color{#4A5D7A}4}$$<p>Vérification : $f(4)=4\times 4-9=7$.</p>
+    <div><p>On distribue chaque coefficient sur la parenthèse qu&rsquo;il précède, exactement comme avec des nombres :</p>
+$$5\left(\overrightarrow{u}-\overrightarrow{v}\right)=5\overrightarrow{u}-5\overrightarrow{v}$$$$-3\left(\overrightarrow{u}-2\overrightarrow{v}\right)=-3\overrightarrow{u}+6\overrightarrow{v}$$<p>On additionne, en regroupant les $\overrightarrow{u}$ entre eux et les $\overrightarrow{v}$ entre eux :</p>
+$$5\overrightarrow{u}-3\overrightarrow{u}-5\overrightarrow{v}+6\overrightarrow{v}={\color{#4A5D7A}2\overrightarrow{u}+\overrightarrow{v}}$$<p>Attention au signe : $-3\times\left(-2\overrightarrow{v}\right)=+6\overrightarrow{v}$.</p>
 </div>
   </div>
   
@@ -542,7 +540,7 @@ $$\dfrac{5x-15}{x-2}=0$$
     <div><p>On cherche d&rsquo;abord la valeur interdite, celle qui annule le dénominateur :</p>
 $$x-2=0 \quad\text{donc}\quad x=2$$<p>L&rsquo;équation n&rsquo;a de sens que pour $x\neq 2$.</p>
 <p>Un quotient est nul si et seulement si son numérateur est nul :</p>
-$$5x-15=0 \quad\text{donc}\quad 5x=15 \quad\text{donc}\quad x=3$$<p>Comme $3\neq 2$, cette solution est acceptable.</p>
+$$\begin{aligned}5x-15 &= 0 \quad\text{donc}\quad 5x \\ &= 15 \quad\text{donc}\quad x \\ &= 3\end{aligned}$$<p>Comme $3\neq 2$, cette solution est acceptable.</p>
 $$S={\color{#4A5D7A}\lbrace 3\rbrace}$$</div>
   </div>
   
@@ -710,7 +708,7 @@ $$5\,\%\text{ de }500=25 \qquad 20\,\%\text{ de }130={\color{#4A5D7A}26}$$$$10\,
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

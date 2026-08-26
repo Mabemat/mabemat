@@ -18,7 +18,7 @@ $$3x+(2x-1)=9$$
 
 On réduit puis on résout :
 
-$$5x-1=9 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+$$\begin{aligned}5x-1 &= 9 \\ \text{donc}\quad 5x &= 10 \\ \text{donc}\quad x &= 2\end{aligned}$$
 
 On remonte dans la première équation pour obtenir $y$ :
 
@@ -38,11 +38,11 @@ Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce
 
 $$(2x+3y)-(2x-y)=13-1$$
 
-$$2x+3y-2x+y=12 \qquad\text{soit}\qquad 4y=12 \qquad\text{donc}\qquad y=3$$
+$$\begin{aligned}2x+3y-2x+y &= 12 \\ \text{soit}\quad 4y &= 12 \\ \text{donc}\quad y &= 3\end{aligned}$$
 
 On remplace $y$ par $3$ dans la seconde équation :
 
-$$2x-3=1 \qquad\text{donc}\qquad 2x=4 \qquad\text{donc}\qquad x=2$$
+$$\begin{aligned}2x-3 &= 1 \\ \text{donc}\quad 2x &= 4 \\ \text{donc}\quad x &= 2\end{aligned}$$
 
 $$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
 
@@ -54,7 +54,7 @@ Les droites $(d)\,:\ y=3x-5$ et $(d')\,:\ 6x-2y+7=0$ sont-elles parallèles ?
 ---CORR---
 Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :
 
-$$-2y=-6x-7 \qquad\text{donc}\qquad y=3x+3{,}5$$
+$$\begin{aligned}-2y &= -6x-7 \\ \text{donc}\quad y &= 3x+3{,}5\end{aligned}$$
 
 Les deux droites ont le même coefficient directeur $3$, mais des ordonnées à l'origine différentes ($-5$ et $3{,}5$) :
 
@@ -76,7 +76,7 @@ $$\text{Médiane}=\dfrac{8+9}{2}={\color{#4A5D7A}8{,}5}$$
 
 Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :
 
-$$\dfrac{3+5+5+8+9+12+15+15}{8}=\dfrac{72}{8}={\color{#4A5D7A}9}$$
+$$\begin{aligned}\dfrac{3+5+5+8+9+12+15+15}{8} &= \dfrac{72}{8} \\ &= {\color{#4A5D7A}9}\end{aligned}$$
 
 Moyenne et médiane sont deux indicateurs différents : ici la moyenne est tirée vers le haut par les deux valeurs $15$.
 {{< /auto2-exo >}}
@@ -128,7 +128,7 @@ $$2x+(3x+2)=12$$
 
 On réduit puis on résout :
 
-$$5x+2=12 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+$$\begin{aligned}5x+2 &= 12 \\ \text{donc}\quad 5x &= 10 \\ \text{donc}\quad x &= 2\end{aligned}$$
 
 On remonte dans la première équation pour obtenir $y$ :
 
@@ -148,11 +148,11 @@ Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce
 
 $$(3x+2y)-(3x-y)=17-5$$
 
-$$3x+2y-3x+y=12 \qquad\text{soit}\qquad 3y=12 \qquad\text{donc}\qquad y=4$$
+$$\begin{aligned}3x+2y-3x+y &= 12 \\ \text{soit}\quad 3y &= 12 \\ \text{donc}\quad y &= 4\end{aligned}$$
 
 On remplace $y$ par $4$ dans la seconde équation :
 
-$$3x-4=5 \qquad\text{donc}\qquad 3x=9 \qquad\text{donc}\qquad x=3$$
+$$\begin{aligned}3x-4 &= 5 \\ \text{donc}\quad 3x &= 9 \\ \text{donc}\quad x &= 3\end{aligned}$$
 
 $$S={\color{#4A5D7A}\lbrace (3\,;\,4)\rbrace}$$
 
@@ -164,7 +164,7 @@ Les droites $(d)\,:\ y=4x-1$ et $(d')\,:\ 8x-2y+5=0$ sont-elles parallèles ?
 ---CORR---
 Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :
 
-$$-2y=-8x-5 \qquad\text{donc}\qquad y=4x+2{,}5$$
+$$\begin{aligned}-2y &= -8x-5 \\ \text{donc}\quad y &= 4x+2{,}5\end{aligned}$$
 
 Les deux droites ont le même coefficient directeur $4$, mais des ordonnées à l'origine différentes ($-1$ et $2{,}5$) :
 
@@ -186,7 +186,7 @@ $$\text{Médiane}=\dfrac{9+11}{2}={\color{#4A5D7A}10}$$
 
 Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :
 
-$$\dfrac{2+5+7+9+11+13+16+17}{8}=\dfrac{80}{8}={\color{#4A5D7A}10}$$
+$$\begin{aligned}\dfrac{2+5+7+9+11+13+16+17}{8} &= \dfrac{80}{8} \\ &= {\color{#4A5D7A}10}\end{aligned}$$
 
 Ici les deux indicateurs coïncident, ce qui traduit une série assez symétrique. Ce n'est pas toujours le cas.
 {{< /auto2-exo >}}

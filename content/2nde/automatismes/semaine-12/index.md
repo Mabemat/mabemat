@@ -89,7 +89,7 @@ $$B=\dfrac{58}{100}=0{,}58 \qquad C=\dfrac{3}{5}=\dfrac{6}{10}=0{,}6$$
 
 On range ensuite les trois décimaux :
 
-$$0{,}58 < 0{,}6 < 0{,}62 \qquad\text{c'est-à-dire}\qquad {\color{#4A5D7A}B < C < A}$$
+$$\begin{aligned}0{,}58 < 0{,}6 < 0{,}62 & \\ \text{c'est-à-dire}\quad {\color{#4A5D7A}B < C < A} &\end{aligned}$$
 
 <span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}
@@ -197,11 +197,11 @@ Le classement par ordre croissant est :
 ---CORR---
 Pour comparer, on écrit tout sous forme décimale.
 
-$$B=\dfrac{51}{100}=0{,}51 \qquad C=\dfrac{9}{20}=\dfrac{45}{100}=0{,}45$$
+$$\begin{aligned}B &= \dfrac{51}{100} \\ &= 0{,}51 \qquad C \\ &= \dfrac{9}{20} \\ &= \dfrac{45}{100} \\ &= 0{,}45\end{aligned}$$
 
 On range ensuite les trois décimaux :
 
-$$0{,}45 < 0{,}48 < 0{,}51 \qquad\text{c'est-à-dire}\qquad {\color{#4A5D7A}C < A < B}$$
+$$\begin{aligned}0{,}45 < 0{,}48 < 0{,}51 & \\ \text{c'est-à-dire}\quad {\color{#4A5D7A}C < A < B} &\end{aligned}$$
 
 <span class="rep">Réponse : D</span>
 {{< /auto2-exo >}}

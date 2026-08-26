@@ -52,7 +52,7 @@ $$m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{-3-5}{3-(-1)}=\dfrac{-8}{4}=-2$$
 
 L'équation est donc $y=-2x+p$. On détermine $p$ en écrivant que $A$ appartient à la droite :
 
-$$5=-2\times(-1)+p \qquad\text{soit}\qquad 5=2+p \qquad\text{donc}\qquad p=3$$
+$$\begin{aligned}5 &= -2\times(-1)+p \\ \text{soit}\quad 5 &= 2+p \\ \text{donc}\quad p &= 3\end{aligned}$$
 
 $${\color{#4A5D7A}y=-2x+3}$$
 
@@ -84,7 +84,7 @@ Les droites d'équations $y=-2x+1$ et $4x+2y-9=0$ sont :
 ---CORR---
 On met la seconde équation sous forme réduite :
 
-$$2y=-4x+9 \qquad\text{donc}\qquad y=-2x+4{,}5$$
+$$\begin{aligned}2y &= -4x+9 \\ \text{donc}\quad y &= -2x+4{,}5\end{aligned}$$
 
 Les deux coefficients directeurs valent $-2$ : les droites ont la même inclinaison. Les ordonnées à l'origine, $1$ et $4{,}5$, sont différentes : les droites ne se confondent pas.
 
@@ -156,7 +156,7 @@ $$m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{7-1}{5-2}=\dfrac{6}{3}=2$$
 
 L'équation est donc $y=2x+p$. On détermine $p$ en écrivant que $A$ appartient à la droite :
 
-$$1=2\times 2+p \qquad\text{soit}\qquad 1=4+p \qquad\text{donc}\qquad p=-3$$
+$$\begin{aligned}1 &= 2\times 2+p \\ \text{soit}\quad 1 &= 4+p \\ \text{donc}\quad p &= -3\end{aligned}$$
 
 $${\color{#4A5D7A}y=2x-3}$$
 
@@ -174,7 +174,7 @@ $$3x^2=75 \qquad\text{donc}\qquad x^2=25$$
 
 Comme $25>0$, l'équation $x^2=25$ admet deux solutions opposées :
 
-$$x=\sqrt{25}=5 \qquad\text{ou}\qquad x=-\sqrt{25}=-5$$
+$$\begin{aligned}x &= \sqrt{25}=5 \\ \text{ou}\quad x &= -\sqrt{25}=-5\end{aligned}$$
 
 $$S={\color{#4A5D7A}\lbrace -5\,;\,5\rbrace}$$
 
@@ -188,7 +188,7 @@ Les droites d'équations $y=3x+2$ et $6x-2y+1=0$ sont :
 ---CORR---
 On met la seconde équation sous forme réduite :
 
-$$-2y=-6x-1 \qquad\text{donc}\qquad y=3x+0{,}5$$
+$$\begin{aligned}-2y &= -6x-1 \\ \text{donc}\quad y &= 3x+0{,}5\end{aligned}$$
 
 Les deux coefficients directeurs valent $3$ : les droites ont la même inclinaison. Les ordonnées à l'origine, $2$ et $0{,}5$, sont différentes : les droites ne se confondent pas.
 

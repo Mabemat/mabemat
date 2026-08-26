@@ -58,7 +58,7 @@ L'équation n'a de sens que pour $x\neq -3$.
 
 Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
 
-$$4x-8=0 \quad\text{donc}\quad 4x=8 \quad\text{donc}\quad x=2$$
+$$\begin{aligned}4x-8 &= 0 \quad\text{donc}\quad 4x \\ &= 8 \quad\text{donc}\quad x \\ &= 2\end{aligned}$$
 
 Comme $2\neq -3$, cette solution est acceptable.
 
@@ -72,7 +72,7 @@ $$(4x+1)(x-6)=0$$
 ---CORR---
 Un produit de facteurs est nul si et seulement si l'un au moins de ses facteurs est nul :
 
-$$4x+1=0 \quad\text{donc}\quad x=-\dfrac{1}{4} \qquad\qquad x-6=0 \quad\text{donc}\quad x=6$$
+$$\begin{aligned}4x+1 &= 0 \quad\text{donc}\quad x=-\dfrac{1}{4} \\ x-6 &= 0 \quad\text{donc}\quad x=6\end{aligned}$$
 
 $$S={\color{#4A5D7A}\left\lbrace -\dfrac{1}{4}\,;\,6\right\rbrace}$$
 {{< /auto2-exo >}}
@@ -104,7 +104,7 @@ Le nombre d'élèves inscrits dans ce lycée est :
 ---CORR---
 On note $N$ le nombre d'élèves inscrits. L'énoncé se traduit par :
 
-$$\dfrac{15}{100}\times N=180 \qquad\text{soit}\qquad 0{,}15\times N=180$$
+$$\begin{aligned}\dfrac{15}{100}\times N &= 180 \\ \text{soit}\quad 0{,}15\times N &= 180\end{aligned}$$
 
 On divise chaque membre par $0{,}15$ :
 
@@ -172,7 +172,7 @@ L'équation n'a de sens que pour $x\neq 4$.
 
 Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
 
-$$6x+18=0 \quad\text{donc}\quad 6x=-18 \quad\text{donc}\quad x=-3$$
+$$\begin{aligned}6x+18 &= 0 \quad\text{donc}\quad 6x \\ &= -18 \quad\text{donc}\quad x \\ &= -3\end{aligned}$$
 
 Comme $-3\neq 4$, cette solution est acceptable.
 
@@ -186,7 +186,7 @@ $$(3x-2)(x+8)=0$$
 ---CORR---
 Un produit de facteurs est nul si et seulement si l'un au moins de ses facteurs est nul :
 
-$$3x-2=0 \quad\text{donc}\quad x=\dfrac{2}{3} \qquad\qquad x+8=0 \quad\text{donc}\quad x=-8$$
+$$\begin{aligned}3x-2 &= 0 \quad\text{donc}\quad x=\dfrac{2}{3} \\ x+8 &= 0 \quad\text{donc}\quad x=-8\end{aligned}$$
 
 $$S={\color{#4A5D7A}\left\lbrace -8\,;\,\dfrac{2}{3}\right\rbrace}$$
 {{< /auto2-exo >}}
@@ -218,7 +218,7 @@ Le nombre d'élèves inscrits dans ce lycée est :
 ---CORR---
 On note $N$ le nombre d'élèves inscrits. L'énoncé se traduit par :
 
-$$\dfrac{6}{100}\times N=84 \qquad\text{soit}\qquad 0{,}06\times N=84$$
+$$\begin{aligned}\dfrac{6}{100}\times N &= 84 \\ \text{soit}\quad 0{,}06\times N &= 84\end{aligned}$$
 
 On divise chaque membre par $0{,}06$ :
 

@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 8 - Inéquations et translations — MaBémat</title>
+<title>Semaine 8 - Inéquations et équations quotients — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Inéquations et translations</p>
+  <p class="wk-subtitle">Inéquations et équations quotients</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -296,9 +296,8 @@ $$x<\dfrac{9}{-3} \qquad\text{soit}\qquad x<-3$$$$S={\color{#4A5D7A}\left]-\inft
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>$ABCD$ est un parallélogramme.</p>
-<p>Quelle est l&rsquo;image du point $D$ par la translation qui transforme $A$ en $B$ ? Justifier.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$\dfrac{4x-8}{x+3}=0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -306,11 +305,11 @@ $$x<\dfrac{9}{-3} \qquad\text{soit}\qquad x<-3$$$$S={\color{#4A5D7A}\left]-\inft
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La translation qui transforme $A$ en $B$ est la translation de vecteur $\overrightarrow{AB}$.</p>
-<p>L&rsquo;image de $D$ est le point $M$ tel que $\overrightarrow{DM}=\overrightarrow{AB}$.</p>
-<p>Or $ABCD$ est un parallélogramme, donc ses côtés $[AB]$ et $[DC]$ sont parallèles, de même longueur et de même sens :</p>
-$$\overrightarrow{AB}=\overrightarrow{DC}$$<p>L&rsquo;image de $D$ est donc le point ${\color{#4A5D7A}C}$.</p>
-</div>
+    <div><p>On commence par chercher la valeur interdite, celle qui annule le dénominateur :</p>
+$$x+3=0 \quad\text{donc}\quad x=-3$$<p>L&rsquo;équation n&rsquo;a de sens que pour $x\neq -3$.</p>
+<p>Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :</p>
+$$\begin{aligned}4x-8 &= 0 \quad\text{donc}\quad 4x \\ &= 8 \quad\text{donc}\quad x \\ &= 2\end{aligned}$$<p>Comme $2\neq -3$, cette solution est acceptable.</p>
+$$S={\color{#4A5D7A}\lbrace 2\rbrace}$$</div>
   </div>
   
 </article>
@@ -339,7 +338,7 @@ $$(4x+1)(x-6)=0$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Un produit de facteurs est nul si et seulement si l&rsquo;un au moins de ses facteurs est nul :</p>
-$$4x+1=0 \quad\text{donc}\quad x=-\dfrac{1}{4} \qquad\qquad x-6=0 \quad\text{donc}\quad x=6$$$$S={\color{#4A5D7A}\left\lbrace -\dfrac{1}{4}\,;\,6\right\rbrace}$$</div>
+$$\begin{aligned}4x+1 &= 0 \quad\text{donc}\quad x=-\dfrac{1}{4} \\ x-6 &= 0 \quad\text{donc}\quad x=6\end{aligned}$$$$S={\color{#4A5D7A}\left\lbrace -\dfrac{1}{4}\,;\,6\right\rbrace}$$</div>
   </div>
   
 </article>
@@ -403,7 +402,7 @@ $$S={\color{#4A5D7A}\varnothing}$$<p>Aucun calcul n&rsquo;est nécessaire : il s
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On note $N$ le nombre d&rsquo;élèves inscrits. L&rsquo;énoncé se traduit par :</p>
-$$\dfrac{15}{100}\times N=180 \qquad\text{soit}\qquad 0{,}15\times N=180$$<p>On divise chaque membre par $0{,}15$ :</p>
+$$\begin{aligned}\dfrac{15}{100}\times N &= 180 \\ \text{soit}\quad 0{,}15\times N &= 180\end{aligned}$$<p>On divise chaque membre par $0{,}15$ :</p>
 $$N=\dfrac{180}{0{,}15}=\dfrac{18\,000}{15}={\color{#4A5D7A}1\,200}$$<p>Vérification : $15\,\%$ de $1\,200$ vaut $\dfrac{15\times 1\,200}{100}=180$.</p>
 <p>La réponse A est le piège : elle correspond à $15\,\%$ <strong>de</strong> $180$, alors qu&rsquo;ici $180$ est déjà le résultat.</p>
 <p><span class="rep">Réponse : B</span></p>
@@ -498,9 +497,8 @@ $$x<\dfrac{12}{-3} \qquad\text{soit}\qquad x<-4$$$$S={\color{#4A5D7A}\left]-\inf
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>$EFGH$ est un parallélogramme.</p>
-<p>Quelle est l&rsquo;image du point $F$ par la translation qui transforme $E$ en $H$ ? Justifier.</p>
-
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$\dfrac{6x+18}{x-4}=0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -508,11 +506,11 @@ $$x<\dfrac{12}{-3} \qquad\text{soit}\qquad x<-4$$$$S={\color{#4A5D7A}\left]-\inf
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La translation qui transforme $E$ en $H$ est la translation de vecteur $\overrightarrow{EH}$.</p>
-<p>L&rsquo;image de $F$ est le point $M$ tel que $\overrightarrow{FM}=\overrightarrow{EH}$.</p>
-<p>Or $EFGH$ est un parallélogramme, donc ses côtés $[EH]$ et $[FG]$ sont parallèles, de même longueur et de même sens :</p>
-$$\overrightarrow{EH}=\overrightarrow{FG}$$<p>L&rsquo;image de $F$ est donc le point ${\color{#4A5D7A}G}$.</p>
-</div>
+    <div><p>On commence par chercher la valeur interdite, celle qui annule le dénominateur :</p>
+$$x-4=0 \quad\text{donc}\quad x=4$$<p>L&rsquo;équation n&rsquo;a de sens que pour $x\neq 4$.</p>
+<p>Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :</p>
+$$\begin{aligned}6x+18 &= 0 \quad\text{donc}\quad 6x \\ &= -18 \quad\text{donc}\quad x \\ &= -3\end{aligned}$$<p>Comme $-3\neq 4$, cette solution est acceptable.</p>
+$$S={\color{#4A5D7A}\lbrace -3\rbrace}$$</div>
   </div>
   
 </article>
@@ -541,7 +539,7 @@ $$(3x-2)(x+8)=0$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Un produit de facteurs est nul si et seulement si l&rsquo;un au moins de ses facteurs est nul :</p>
-$$3x-2=0 \quad\text{donc}\quad x=\dfrac{2}{3} \qquad\qquad x+8=0 \quad\text{donc}\quad x=-8$$$$S={\color{#4A5D7A}\left\lbrace -8\,;\,\dfrac{2}{3}\right\rbrace}$$</div>
+$$\begin{aligned}3x-2 &= 0 \quad\text{donc}\quad x=\dfrac{2}{3} \\ x+8 &= 0 \quad\text{donc}\quad x=-8\end{aligned}$$$$S={\color{#4A5D7A}\left\lbrace -8\,;\,\dfrac{2}{3}\right\rbrace}$$</div>
   </div>
   
 </article>
@@ -605,7 +603,7 @@ $$S={\color{#4A5D7A}\varnothing}$$<p>Aucun calcul n&rsquo;est nécessaire : il s
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On note $N$ le nombre d&rsquo;élèves inscrits. L&rsquo;énoncé se traduit par :</p>
-$$\dfrac{6}{100}\times N=84 \qquad\text{soit}\qquad 0{,}06\times N=84$$<p>On divise chaque membre par $0{,}06$ :</p>
+$$\begin{aligned}\dfrac{6}{100}\times N &= 84 \\ \text{soit}\quad 0{,}06\times N &= 84\end{aligned}$$<p>On divise chaque membre par $0{,}06$ :</p>
 $$N=\dfrac{84}{0{,}06}=\dfrac{8\,400}{6}={\color{#4A5D7A}1\,400}$$<p>Vérification : $6\,\%$ de $1\,400$ vaut $\dfrac{6\times 1\,400}{100}=84$.</p>
 <p>La réponse A est le piège : elle correspond à $6\,\%$ <strong>de</strong> $84$, alors qu&rsquo;ici $84$ est déjà le résultat.</p>
 <p><span class="rep">Réponse : C</span></p>
@@ -710,7 +708,7 @@ $$N=\dfrac{84}{0{,}06}=\dfrac{8\,400}{6}={\color{#4A5D7A}1\,400}$$<p>Vérificati
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

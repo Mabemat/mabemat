@@ -98,7 +98,7 @@ $$\text{CM}=1+\dfrac{t}{100}$$
 
 Ici $\text{CM}=0{,}25$, donc :
 
-$$0{,}25=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=0{,}25-1=-0{,}75$$
+$$\begin{aligned}0{,}25 &= 1+\dfrac{t}{100} \\ \text{d'où}\quad \dfrac{t}{100} &= 0{,}25-1=-0{,}75\end{aligned}$$
 
 $$t={\color{#4A5D7A}-75}$$
 
@@ -114,7 +114,7 @@ $20\,\%$ de $N$ est égal à $14$. On a :
 ---CORR---
 On traduit l'énoncé par une égalité :
 
-$$\dfrac{20}{100}\times N=14 \qquad\text{soit}\qquad 0{,}2\times N=14$$
+$$\begin{aligned}\dfrac{20}{100}\times N &= 14 \\ \text{soit}\quad 0{,}2\times N &= 14\end{aligned}$$
 
 On divise chaque membre par $0{,}2$ :
 
@@ -220,7 +220,7 @@ $$\text{CM}=1+\dfrac{t}{100}$$
 
 Ici $\text{CM}=1{,}08$, donc :
 
-$$1{,}08=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=1{,}08-1=0{,}08$$
+$$\begin{aligned}1{,}08 &= 1+\dfrac{t}{100} \\ \text{d'où}\quad \dfrac{t}{100} &= 1{,}08-1=0{,}08\end{aligned}$$
 
 $$t={\color{#4A5D7A}+8}$$
 
@@ -236,7 +236,7 @@ $25\,\%$ de $N$ est égal à $18$. On a :
 ---CORR---
 On traduit l'énoncé par une égalité :
 
-$$\dfrac{25}{100}\times N=18 \qquad\text{soit}\qquad 0{,}25\times N=18$$
+$$\begin{aligned}\dfrac{25}{100}\times N &= 18 \\ \text{soit}\quad 0{,}25\times N &= 18\end{aligned}$$
 
 Prendre $25\,\%$, c'est prendre le quart : on retrouve $N$ en multipliant par $4$.
 

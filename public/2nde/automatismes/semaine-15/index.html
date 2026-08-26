@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 15 - Signe d&#39;une fonction affine et inéquations produit — MaBémat</title>
+<title>Semaine 15 - Signe et inéquations produit ou quotient — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Signe d&#39;une fonction affine et inéquations produit</p>
+  <p class="wk-subtitle">Signe et inéquations produit ou quotient</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -243,7 +243,7 @@ pre[style*="background-color"] {
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche d&rsquo;abord la valeur qui annule $f$ :</p>
-$$-2x+6=0 \quad\Longrightarrow\quad -2x=-6 \quad\Longrightarrow\quad x=3$$<p>Le coefficient directeur vaut $-2$, il est négatif : la fonction est décroissante. Elle est donc positive <strong>avant</strong> sa racine et négative <strong>après</strong>.</p>
+$$\begin{aligned}-2x+6 &= 0 \quad\Longrightarrow\quad -2x \\ &= -6 \quad\Longrightarrow\quad x \\ &= 3\end{aligned}$$<p>Le coefficient directeur vaut $-2$, il est négatif : la fonction est décroissante. Elle est donc positive <strong>avant</strong> sa racine et négative <strong>après</strong>.</p>
 <table>
   <thead>
       <tr>
@@ -266,7 +266,7 @@ $$-2x+6=0 \quad\Longrightarrow\quad -2x=-6 \quad\Longrightarrow\quad x=3$$<p>Le 
       </tr>
   </tbody>
 </table>
-$${\color{#4A5D7A}f(x)>0\ \text{sur}\ \left]-\infty\,;\,3\right[ \qquad f(x)<0\ \text{sur}\ \left]3\,;\,+\infty\right[}$$<p>Retenir : le signe d&rsquo;une fonction affine est celui de $m$ <strong>après</strong> la racine, et l&rsquo;opposé avant.</p>
+$$\begin{aligned}{\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,3\right[} \\ {\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]3\,;\,+\infty\right[}\end{aligned}$$<p>Retenir : le signe d&rsquo;une fonction affine est celui de $m$ <strong>après</strong> la racine, et l&rsquo;opposé avant.</p>
 </div>
   </div>
   
@@ -296,7 +296,7 @@ $$(x-2)(3x+9)\geqslant 0$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche les racines de chaque facteur :</p>
-$$x-2=0 \Longrightarrow x=2 \qquad\qquad 3x+9=0 \Longrightarrow x=-3$$<p>Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :</p>
+$$\begin{aligned}x-2 &= 0 \Longrightarrow x=2 \\ 3x+9 &= 0 \Longrightarrow x=-3\end{aligned}$$<p>Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :</p>
 <table>
   <thead>
       <tr>
@@ -363,7 +363,8 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right]\cup\left[2\,;\,+\infty\right[}$$
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Déterminer la fonction affine $f$ telle que $f(2)=1$ et $f(5)=10$.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation :</p>
+$$\dfrac{x-4}{2x+6}\leqslant 0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -371,10 +372,15 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right]\cup\left[2\,;\,+\infty\right[}$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$. On calcule d&rsquo;abord le coefficient directeur :</p>
-$$m=\dfrac{f(5)-f(2)}{5-2}=\dfrac{10-1}{3}=\dfrac{9}{3}=3$$<p>On a donc $f(x)=3x+p$. Pour trouver $p$, on utilise l&rsquo;une des deux informations, par exemple $f(2)=1$ :</p>
-$$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$$$f(x)={\color{#4A5D7A}3x-5}$$<p>Vérification avec l&rsquo;autre donnée : $f(5)=3\times 5-5=10$.</p>
-</div>
+    <div><p>On cherche d&rsquo;abord la valeur interdite, celle qui annule le dénominateur :</p>
+$$2x+6=0 \quad\text{donc}\quad x=-3$$<p>On étudie ensuite le signe de chaque facteur. $x-4$ s&rsquo;annule en $4$ et, son coefficient étant positif, il est négatif avant et positif après. De même $2x+6$ s&rsquo;annule en $-3$, négatif avant, positif après.</p>
+$$\begin{array}{ccccccc}
+x & -\infty & & -3 & & 4 & +\infty \\ \hline
+x-4 & & - & \vert & - & 0 & + \\
+2x+6 & & - & 0 & + & \vert & + \\ \hline
+\text{quotient} & & + & \Vert & - & 0 & +
+\end{array}$$<p>Le quotient est négatif ou nul entre $-3$ et $4$. La borne $4$ est incluse (elle annule le quotient), la borne $-3$ est exclue (valeur interdite).</p>
+$$S={\color{#4A5D7A}\left]-3\,;\,4\right]}$$</div>
   </div>
   
 </article>
@@ -393,8 +399,9 @@ $$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Une droite passe par les points $A(1\,;\,2)$ et $B(4\,;\,11)$.</p>
-<p>Déterminer son coefficient directeur.</p>
+    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-5x$.</p>
+<p><strong>a.</strong> Calculer $f(-2)$.</p>
+<p><strong>b.</strong> Déterminer les antécédents de $0$ par $f$.</p>
 
   </div>
   
@@ -403,9 +410,11 @@ $$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le coefficient directeur d&rsquo;une droite passant par deux points se calcule par :</p>
-$$m=\dfrac{y_B-y_A}{x_B-x_A}$$<p>On remplace :</p>
-$$m=\dfrac{11-2}{4-1}=\dfrac{9}{3}={\color{#4A5D7A}3}$$</div>
+    <div><p><strong>a.</strong> On remplace $x$ par $-2$, sans oublier les parenthèses :</p>
+$$f(-2)=(-2)^2-5\times(-2)=4+10={\color{#4A5D7A}14}$$<p><strong>b.</strong> Chercher les antécédents de $0$, c&rsquo;est résoudre $f(x)=0$ :</p>
+$$x^2-5x=0$$<p>On factorise par $x$ pour se ramener à une équation produit :</p>
+$$x(x-5)=0$$<p>Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
+$$\begin{aligned}x &= 0 \\ \text{ou}\quad x-5 &= 0 \quad\text{donc}\quad x=5\end{aligned}$$$${\color{#4A5D7A}0\ \text{et}\ 5}$$</div>
   </div>
   
 </article>
@@ -469,7 +478,7 @@ $$S={\color{#4A5D7A}\left]-5\,;\,1\right[}$$<p>La réponse B est celle qu&rsquo;
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On énumère les issues possibles, en distinguant les deux lancers :</p>
-$$(P\,;\,P) \qquad (P\,;\,F) \qquad (F\,;\,P) \qquad (F\,;\,F)$$<p>Ces $4$ issues sont équiprobables, et une seule convient.</p>
+$$\begin{aligned}& (P\,;\,P) \qquad (P\,;\,F) \\ & (F\,;\,P) \qquad (F\,;\,F)\end{aligned}$$<p>Ces $4$ issues sont équiprobables, et une seule convient.</p>
 $$P={\color{#4A5D7A}\dfrac{1}{4}}$$<p>La réponse C vient de l&rsquo;erreur classique consistant à ne compter que trois cas, « deux piles, deux faces, un de chaque », en oubliant que « un de chaque » se produit de deux façons.</p>
 <p><span class="rep">Réponse : B</span></p>
 </div>
@@ -510,7 +519,7 @@ $$P={\color{#4A5D7A}\dfrac{1}{4}}$$<p>La réponse C vient de l&rsquo;erreur clas
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche d&rsquo;abord la valeur qui annule $f$ :</p>
-$$-3x+12=0 \quad\Longrightarrow\quad -3x=-12 \quad\Longrightarrow\quad x=4$$<p>Le coefficient directeur vaut $-3$, il est négatif : la fonction est décroissante. Elle est donc positive <strong>avant</strong> sa racine et négative <strong>après</strong>.</p>
+$$\begin{aligned}-3x+12 &= 0 \quad\Longrightarrow\quad -3x \\ &= -12 \quad\Longrightarrow\quad x \\ &= 4\end{aligned}$$<p>Le coefficient directeur vaut $-3$, il est négatif : la fonction est décroissante. Elle est donc positive <strong>avant</strong> sa racine et négative <strong>après</strong>.</p>
 <table>
   <thead>
       <tr>
@@ -533,7 +542,7 @@ $$-3x+12=0 \quad\Longrightarrow\quad -3x=-12 \quad\Longrightarrow\quad x=4$$<p>L
       </tr>
   </tbody>
 </table>
-$${\color{#4A5D7A}f(x)>0\ \text{sur}\ \left]-\infty\,;\,4\right[ \qquad f(x)<0\ \text{sur}\ \left]4\,;\,+\infty\right[}$$<p>Retenir : le signe d&rsquo;une fonction affine est celui de $m$ <strong>après</strong> la racine, et l&rsquo;opposé avant.</p>
+$$\begin{aligned}{\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,4\right[} \\ {\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]4\,;\,+\infty\right[}\end{aligned}$$<p>Retenir : le signe d&rsquo;une fonction affine est celui de $m$ <strong>après</strong> la racine, et l&rsquo;opposé avant.</p>
 </div>
   </div>
   
@@ -563,7 +572,7 @@ $$(x-1)(2x+8)\geqslant 0$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche les racines de chaque facteur :</p>
-$$x-1=0 \Longrightarrow x=1 \qquad\qquad 2x+8=0 \Longrightarrow x=-4$$<p>Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :</p>
+$$\begin{aligned}x-1 &= 0 \Longrightarrow x=1 \\ 2x+8 &= 0 \Longrightarrow x=-4\end{aligned}$$<p>Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :</p>
 <table>
   <thead>
       <tr>
@@ -630,7 +639,8 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right]\cup\left[1\,;\,+\infty\right[}$$
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Déterminer la fonction affine $f$ telle que $f(1)=-1$ et $f(5)=7$.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation :</p>
+$$\dfrac{x+2}{3x-9}\geqslant 0$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -638,10 +648,15 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right]\cup\left[1\,;\,+\infty\right[}$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$. On calcule d&rsquo;abord le coefficient directeur :</p>
-$$m=\dfrac{f(5)-f(1)}{5-1}=\dfrac{7-(-1)}{4}=\dfrac{8}{4}=2$$<p>On a donc $f(x)=2x+p$. Pour trouver $p$, on utilise l&rsquo;une des deux informations, par exemple $f(1)=-1$ :</p>
-$$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3$$$$f(x)={\color{#4A5D7A}2x-3}$$<p>Vérification avec l&rsquo;autre donnée : $f(5)=2\times 5-3=7$.</p>
-</div>
+    <div><p>On cherche d&rsquo;abord la valeur interdite, celle qui annule le dénominateur :</p>
+$$3x-9=0 \quad\text{donc}\quad x=3$$<p>On étudie ensuite le signe de chaque facteur. $x+2$ s&rsquo;annule en $-2$ et, son coefficient étant positif, il est négatif avant et positif après. De même $3x-9$ s&rsquo;annule en $3$, négatif avant, positif après.</p>
+$$\begin{array}{ccccccc}
+x & -\infty & & -2 & & 3 & +\infty \\ \hline
+x+2 & & - & 0 & + & \vert & + \\
+3x-9 & & - & \vert & - & 0 & + \\ \hline
+\text{quotient} & & + & 0 & - & \Vert & +
+\end{array}$$<p>Le quotient est positif ou nul avant $-2$ et après $3$. La borne $-2$ est incluse (elle annule le quotient), la borne $3$ est exclue (valeur interdite).</p>
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-2\right]\cup\left]3\,;\,+\infty\right[}$$</div>
   </div>
   
 </article>
@@ -660,8 +675,9 @@ $$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Une droite passe par les points $A(2\,;\,5)$ et $B(6\,;\,17)$.</p>
-<p>Déterminer son coefficient directeur.</p>
+    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2+3x$.</p>
+<p><strong>a.</strong> Calculer $f(-4)$.</p>
+<p><strong>b.</strong> Déterminer les antécédents de $0$ par $f$.</p>
 
   </div>
   
@@ -670,9 +686,11 @@ $$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le coefficient directeur d&rsquo;une droite passant par deux points se calcule par :</p>
-$$m=\dfrac{y_B-y_A}{x_B-x_A}$$<p>On remplace :</p>
-$$m=\dfrac{17-5}{6-2}=\dfrac{12}{4}={\color{#4A5D7A}3}$$</div>
+    <div><p><strong>a.</strong> On remplace $x$ par $-4$, sans oublier les parenthèses :</p>
+$$f(-4)=(-4)^2+3\times(-4)=16-12={\color{#4A5D7A}4}$$<p><strong>b.</strong> Chercher les antécédents de $0$, c&rsquo;est résoudre $f(x)=0$ :</p>
+$$x^2+3x=0$$<p>On factorise par $x$ pour se ramener à une équation produit :</p>
+$$x(x+3)=0$$<p>Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
+$$\begin{aligned}x &= 0 \\ \text{ou}\quad x+3 &= 0 \quad\text{donc}\quad x=-3\end{aligned}$$$${\color{#4A5D7A}-3\ \text{et}\ 0}$$</div>
   </div>
   
 </article>
@@ -736,7 +754,7 @@ $$S={\color{#4A5D7A}\left]-2\,;\,4\right[}$$<p>La réponse A est celle qu&rsquo;
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On énumère les issues possibles, en distinguant les deux lancers :</p>
-$$(P\,;\,P) \qquad (P\,;\,F) \qquad (F\,;\,P) \qquad (F\,;\,F)$$<p>Ces $4$ issues sont équiprobables. « Au moins une fois pile » en exclut une seule, $(F\,;\,F)$ : il reste $3$ cas favorables.</p>
+$$\begin{aligned}& (P\,;\,P) \qquad (P\,;\,F) \\ & (F\,;\,P) \qquad (F\,;\,F)\end{aligned}$$<p>Ces $4$ issues sont équiprobables. « Au moins une fois pile » en exclut une seule, $(F\,;\,F)$ : il reste $3$ cas favorables.</p>
 $$P={\color{#4A5D7A}\dfrac{3}{4}}$$<p>On peut aussi passer par l&rsquo;événement contraire : $1-\dfrac{1}{4}=\dfrac{3}{4}$.</p>
 <p><span class="rep">Réponse : A</span></p>
 </div>
@@ -840,7 +858,7 @@ $$P={\color{#4A5D7A}\dfrac{3}{4}}$$<p>On peut aussi passer par l&rsquo;événeme
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

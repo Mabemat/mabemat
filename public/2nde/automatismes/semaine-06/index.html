@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 6 - Évolutions réciproques, fréquences et équations — MaBémat</title>
+<title>Semaine 6 - Évolutions réciproques et tableaux croisés — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Évolutions réciproques, fréquences et équations</p>
+  <p class="wk-subtitle">Évolutions réciproques et tableaux croisés</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -300,8 +300,39 @@ $$f=\dfrac{30}{120}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre l&rsquo;équation :</p>
-$$5x-7=2x+11$$
+    <p>Le tableau suivant donne la répartition des $200$ élèves d&rsquo;un lycée selon leur langue vivante 2 et leur niveau.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Espagnol</th>
+          <th>Allemand</th>
+          <th>Total</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Seconde</td>
+          <td>78</td>
+          <td></td>
+          <td>110</td>
+      </tr>
+      <tr>
+          <td>Première</td>
+          <td></td>
+          <td>28</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td>140</td>
+          <td></td>
+          <td>200</td>
+      </tr>
+  </tbody>
+</table>
+<p>Recopier et compléter le tableau.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -309,10 +340,42 @@ $$5x-7=2x+11$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On regroupe les termes en $x$ dans un membre et les nombres dans l&rsquo;autre. On retranche $2x$ à chaque membre :</p>
-$$5x-2x-7=11 \qquad\text{soit}\qquad 3x-7=11$$<p>On ajoute $7$ à chaque membre :</p>
-$$3x=18$$<p>On divise chaque membre par $3$ :</p>
-$$x={\color{#4A5D7A}6}$$<p>Vérification : $5\times 6-7=23$ et $2\times 6+11=23$. L&rsquo;ensemble des solutions est $S=\lbrace 6\rbrace$.</p>
+    <div><p>On complète case par case, en utilisant le fait que chaque total est la somme de sa ligne ou de sa colonne.</p>
+<p>Ligne « Seconde » : $110-78={\color{#4A5D7A}32}$ élèves de seconde font allemand.</p>
+<p>Colonne « Espagnol » : $140-78={\color{#4A5D7A}62}$ élèves de première font espagnol.</p>
+<p>Ligne « Première » : $62+28={\color{#4A5D7A}90}$ élèves en première.</p>
+<p>Colonne « Allemand » : $32+28={\color{#4A5D7A}60}$ élèves font allemand.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Espagnol</th>
+          <th>Allemand</th>
+          <th>Total</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Seconde</td>
+          <td>78</td>
+          <td>32</td>
+          <td>110</td>
+      </tr>
+      <tr>
+          <td>Première</td>
+          <td>62</td>
+          <td>28</td>
+          <td>90</td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td>140</td>
+          <td>60</td>
+          <td>200</td>
+      </tr>
+  </tbody>
+</table>
+<p>Deux vérifications indépendantes : $110+90=200$ pour les lignes, et $140+60=200$ pour les colonnes.</p>
 </div>
   </div>
   
@@ -375,7 +438,7 @@ $$1{,}10\times 1{,}20=1{,}32$$<p>Comme $1{,}32=1+0{,}32$, le prix a augmenté de
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Le coefficient multiplicateur et le taux sont liés par la relation :</p>
 $$\text{CM}=1+\dfrac{t}{100}$$<p>Ici $\text{CM}=0{,}25$, donc :</p>
-$$0{,}25=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=0{,}25-1=-0{,}75$$$$t={\color{#4A5D7A}-75}$$<p>Le coefficient étant inférieur à $1$, il s&rsquo;agit bien d&rsquo;une baisse. Multiplier par $0{,}25$, c&rsquo;est diviser par $4$ : on ne garde qu&rsquo;un quart de la valeur, on en perd donc les trois quarts.</p>
+$$\begin{aligned}0{,}25 &= 1+\dfrac{t}{100} \\ \text{d'où}\quad \dfrac{t}{100} &= 0{,}25-1=-0{,}75\end{aligned}$$$$t={\color{#4A5D7A}-75}$$<p>Le coefficient étant inférieur à $1$, il s&rsquo;agit bien d&rsquo;une baisse. Multiplier par $0{,}25$, c&rsquo;est diviser par $4$ : on ne garde qu&rsquo;un quart de la valeur, on en perd donc les trois quarts.</p>
 <p><span class="rep">Réponse : C</span></p>
 </div>
   </div>
@@ -407,7 +470,7 @@ $$0{,}25=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=0{,}25-1=-0{,}
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On traduit l&rsquo;énoncé par une égalité :</p>
-$$\dfrac{20}{100}\times N=14 \qquad\text{soit}\qquad 0{,}2\times N=14$$<p>On divise chaque membre par $0{,}2$ :</p>
+$$\begin{aligned}\dfrac{20}{100}\times N &= 14 \\ \text{soit}\quad 0{,}2\times N &= 14\end{aligned}$$<p>On divise chaque membre par $0{,}2$ :</p>
 $$N=\dfrac{14}{0{,}2}=\dfrac{140}{2}={\color{#4A5D7A}70}$$<p>Vérification : $20\,\%$ de $70$ vaut $\dfrac{20\times 70}{100}=14$.</p>
 <p><span class="rep">Réponse : A</span></p>
 </div>
@@ -505,8 +568,39 @@ $$f=\dfrac{45}{150}=\dfrac{3}{10}=0{,}3={\color{#4A5D7A}30\,\%}$$</div>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre l&rsquo;équation :</p>
-$$7x+4=3x-12$$
+    <p>Le tableau suivant donne la répartition des $250$ adhérents d&rsquo;un club selon leur activité et leur âge.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Tennis</th>
+          <th>Natation</th>
+          <th>Total</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Moins de 18 ans</td>
+          <td>64</td>
+          <td></td>
+          <td>150</td>
+      </tr>
+      <tr>
+          <td>18 ans ou plus</td>
+          <td></td>
+          <td>45</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td>119</td>
+          <td></td>
+          <td>250</td>
+      </tr>
+  </tbody>
+</table>
+<p>Recopier et compléter le tableau.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -514,10 +608,42 @@ $$7x+4=3x-12$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On regroupe les termes en $x$ dans un membre et les nombres dans l&rsquo;autre. On retranche $3x$ à chaque membre :</p>
-$$7x-3x+4=-12 \qquad\text{soit}\qquad 4x+4=-12$$<p>On retranche $4$ à chaque membre :</p>
-$$4x=-16$$<p>On divise chaque membre par $4$ :</p>
-$$x={\color{#4A5D7A}-4}$$<p>Vérification : $7\times(-4)+4=-24$ et $3\times(-4)-12=-24$. L&rsquo;ensemble des solutions est $S=\lbrace -4\rbrace$.</p>
+    <div><p>On complète case par case, en utilisant le fait que chaque total est la somme de sa ligne ou de sa colonne.</p>
+<p>Ligne « Moins de 18 ans » : $150-64={\color{#4A5D7A}86}$ adhérents de moins de 18 ans font de la natation.</p>
+<p>Colonne « Tennis » : $119-64={\color{#4A5D7A}55}$ adhérents de 18 ans ou plus font du tennis.</p>
+<p>Ligne « 18 ans ou plus » : $55+45={\color{#4A5D7A}100}$ adhérents de 18 ans ou plus.</p>
+<p>Colonne « Natation » : $86+45={\color{#4A5D7A}131}$ adhérents font de la natation.</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Tennis</th>
+          <th>Natation</th>
+          <th>Total</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Moins de 18 ans</td>
+          <td>64</td>
+          <td>86</td>
+          <td>150</td>
+      </tr>
+      <tr>
+          <td>18 ans ou plus</td>
+          <td>55</td>
+          <td>45</td>
+          <td>100</td>
+      </tr>
+      <tr>
+          <td>Total</td>
+          <td>119</td>
+          <td>131</td>
+          <td>250</td>
+      </tr>
+  </tbody>
+</table>
+<p>Deux vérifications indépendantes : $150+100=250$ pour les lignes, et $119+131=250$ pour les colonnes.</p>
 </div>
   </div>
   
@@ -580,7 +706,7 @@ $$0{,}90\times 1{,}50=1{,}35$$<p>Comme $1{,}35=1+0{,}35$, le prix a augmenté de
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Le coefficient multiplicateur et le taux sont liés par la relation :</p>
 $$\text{CM}=1+\dfrac{t}{100}$$<p>Ici $\text{CM}=1{,}08$, donc :</p>
-$$1{,}08=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=1{,}08-1=0{,}08$$$$t={\color{#4A5D7A}+8}$$<p>Le coefficient étant supérieur à $1$, il s&rsquo;agit bien d&rsquo;une hausse. La réponse D confond le coefficient exprimé en pourcentage avec le taux d&rsquo;évolution.</p>
+$$\begin{aligned}1{,}08 &= 1+\dfrac{t}{100} \\ \text{d'où}\quad \dfrac{t}{100} &= 1{,}08-1=0{,}08\end{aligned}$$$$t={\color{#4A5D7A}+8}$$<p>Le coefficient étant supérieur à $1$, il s&rsquo;agit bien d&rsquo;une hausse. La réponse D confond le coefficient exprimé en pourcentage avec le taux d&rsquo;évolution.</p>
 <p><span class="rep">Réponse : B</span></p>
 </div>
   </div>
@@ -612,7 +738,7 @@ $$1{,}08=1+\dfrac{t}{100} \qquad\text{d'où}\qquad \dfrac{t}{100}=1{,}08-1=0{,}0
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On traduit l&rsquo;énoncé par une égalité :</p>
-$$\dfrac{25}{100}\times N=18 \qquad\text{soit}\qquad 0{,}25\times N=18$$<p>Prendre $25\,\%$, c&rsquo;est prendre le quart : on retrouve $N$ en multipliant par $4$.</p>
+$$\begin{aligned}\dfrac{25}{100}\times N &= 18 \\ \text{soit}\quad 0{,}25\times N &= 18\end{aligned}$$<p>Prendre $25\,\%$, c&rsquo;est prendre le quart : on retrouve $N$ en multipliant par $4$.</p>
 $$N=\dfrac{18}{0{,}25}=18\times 4={\color{#4A5D7A}72}$$<p>Vérification : $25\,\%$ de $72$ vaut $\dfrac{72}{4}=18$.</p>
 <p><span class="rep">Réponse : D</span></p>
 </div>
@@ -716,7 +842,7 @@ $$N=\dfrac{18}{0{,}25}=18\times 4={\color{#4A5D7A}72}$$<p>Vérification : $25\,\
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

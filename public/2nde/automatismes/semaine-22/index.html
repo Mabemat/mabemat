@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 22 - Valeur absolue, multiples et diviseurs — MaBémat</title>
+<title>Semaine 22 - Fonction inverse et valeur absolue — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Valeur absolue, multiples et diviseurs</p>
+  <p class="wk-subtitle">Fonction inverse et valeur absolue</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -234,8 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
-$$\left|x+4\right|\leqslant 3$$
+    <p>Résoudre dans $\left]0\,;\,+\infty\right[$ l&rsquo;inéquation :</p>
+$$\dfrac{1}{x}\geqslant 4$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -243,11 +243,9 @@ $$\left|x+4\right|\leqslant 3$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$\left|x+4\right|$ se lit comme la distance entre $x$ et $-4$, puisque $x+4=x-(-4)$.</p>
-<p>On cherche donc les réels situés à une distance d&rsquo;au plus $3$ du nombre $-4$ : ce sont ceux qui se trouvent entre $-4-3$ et $-4+3$.</p>
-<p>On peut aussi encadrer directement :</p>
-$$-3\leqslant x+4\leqslant 3$$<p>On retranche $4$ aux trois membres :</p>
-$$-7\leqslant x\leqslant -1$$$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$<p>L&rsquo;inégalité étant large, les deux bornes sont incluses.</p>
+    <div><p>Sur $\left]0\,;\,+\infty\right[$, la fonction inverse est <strong>décroissante</strong> : passer aux inverses renverse le sens de l&rsquo;inégalité.</p>
+$$\dfrac{1}{x}\geqslant 4 \iff x\leqslant \dfrac{1}{4}$$<p>Il ne faut pas oublier la condition de départ $x>0$. On garde donc les réels strictement positifs et inférieurs ou égaux à $\dfrac{1}{4}$ :</p>
+$$S={\color{#4A5D7A}\left]0\,;\,\dfrac{1}{4}\right]}$$<p>Vérification : pour $x=\dfrac{1}{4}$, $\dfrac{1}{x}=4$, l&rsquo;inégalité large est vérifiée ; pour $x=1$, $\dfrac{1}{x}=1<4$, ce qui ne convient pas.</p>
 </div>
   </div>
   
@@ -267,7 +265,8 @@ $$-7\leqslant x\leqslant -1$$$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$<p>L&r
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner la liste de tous les diviseurs positifs de $36$.
+    <p>Calculer :</p>
+$$\left|-7\right| \qquad \left|3-11\right| \qquad \left|4-4\right|$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -275,9 +274,9 @@ $$-7\leqslant x\leqslant -1$$$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$<p>L&r
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :</p>
-$$1\times 36 \qquad 2\times 18 \qquad 3\times 12 \qquad 4\times 9 \qquad 6\times 6$$<p>On s&rsquo;arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l&rsquo;autre sens.</p>
-$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$<p>Il y en a $9$. Un nombre a un nombre impair de diviseurs exactement quand c&rsquo;est un carré parfait, ce qui est bien le cas ici.</p>
+    <div><p>La valeur absolue d&rsquo;un nombre est sa distance à zéro : elle est toujours positive ou nulle.</p>
+$$\left|-7\right|={\color{#4A5D7A}7}$$<p>Pour les deux autres, on calcule d&rsquo;abord ce qui est à l&rsquo;intérieur :</p>
+$$\left|3-11\right|=\left|-8\right|={\color{#4A5D7A}8}$$$$\left|4-4\right|=\left|0\right|={\color{#4A5D7A}0}$$<p>Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l&rsquo;intérieur.</p>
 </div>
   </div>
   
@@ -297,7 +296,8 @@ $${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$<p>Il y
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Démontrer que la somme de deux multiples de $7$ est un multiple de $7$.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$\left|x-3\right|=5$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -305,10 +305,9 @@ $${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$<p>Il y
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On traduit l&rsquo;hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $7$ : il existe deux entiers $k$ et $k'$ tels que</p>
-$$a=7k \qquad\text{et}\qquad b=7k'$$<p>On calcule la somme et on factorise par $7$ :</p>
-$$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rsquo;écrit bien sous la forme $7\times\text{entier}$ : c&rsquo;est un multiple de $7$.</p>
-<p>La factorisation est le cœur de la démonstration : c&rsquo;est elle qui fait apparaître le $7$ en facteur.</p>
+    <div><p>On traduit par une distance : $\left|x-3\right|$ est la distance entre $x$ et $3$. On cherche donc les réels situés à une distance de $5$ du nombre $3$.</p>
+<p>Il y en a deux, un de chaque côté :</p>
+$$\begin{aligned}x-3 &= 5 \quad\text{donc}\quad x=8 \\ \text{ou}\quad x-3 &= -5 \quad\text{donc}\quad x=-2\end{aligned}$$$$S={\color{#4A5D7A}\lbrace -2\,;\,8\rbrace}$$<p>On peut le lire directement sur une droite graduée : en partant de $3$, on avance de $5$ puis on recule de $5$.</p>
 </div>
   </div>
   
@@ -328,8 +327,9 @@ $$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rs
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Calculer :</p>
-$$\left|2-9\right|+\left|-5\right|$$
+    <p>On considère la série statistique, rangée dans l&rsquo;ordre croissant :</p>
+$$4\ ;\ 7\ ;\ 9\ ;\ 9\ ;\ 11$$<p>Déterminer sa moyenne et sa médiane.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -337,9 +337,10 @@ $$\left|2-9\right|+\left|-5\right|$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On traite chaque valeur absolue séparément, en calculant d&rsquo;abord l&rsquo;intérieur :</p>
-$$\left|2-9\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-5\right|=5$$<p>On additionne :</p>
-$$7+5={\color{#4A5D7A}12}$$</div>
+    <div><p>La moyenne est la somme des valeurs divisée par leur nombre :</p>
+$$\overline{x}=\dfrac{4+7+9+9+11}{5}=\dfrac{40}{5}={\color{#4A5D7A}8}$$<p>La série compte $5$ valeurs, un effectif impair : la médiane est la valeur centrale, celle de rang $3$.</p>
+$$\text{Médiane}={\color{#4A5D7A}9}$$<p>Moyenne et médiane sont deux indicateurs différents : ici, la médiane est plus grande que la moyenne, tirée vers le bas par la valeur $4$.</p>
+</div>
   </div>
   
 </article>
@@ -434,8 +435,8 @@ $$x=112\times 8={\color{#4A5D7A}896}$$<p>La réponse A divise au lieu de multipl
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ l&rsquo;inéquation, et donner l&rsquo;ensemble des solutions sous forme d&rsquo;intervalle :</p>
-$$\left|x-5\right|\leqslant 2$$
+    <p>Résoudre dans $\left]0\,;\,+\infty\right[$ l&rsquo;inéquation :</p>
+$$\dfrac{1}{x}<2$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -443,11 +444,9 @@ $$\left|x-5\right|\leqslant 2$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>$\left|x-5\right|$ se lit comme la distance entre $x$ et $5$.</p>
-<p>On cherche donc les réels situés à une distance d&rsquo;au plus $2$ du nombre $5$ : ce sont ceux qui se trouvent entre $5-2$ et $5+2$.</p>
-<p>On peut aussi encadrer directement :</p>
-$$-2\leqslant x-5\leqslant 2$$<p>On ajoute $5$ aux trois membres :</p>
-$$3\leqslant x\leqslant 7$$$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$<p>L&rsquo;inégalité étant large, les deux bornes sont incluses.</p>
+    <div><p>Sur $\left]0\,;\,+\infty\right[$, la fonction inverse est <strong>décroissante</strong> : passer aux inverses renverse le sens de l&rsquo;inégalité.</p>
+$$\dfrac{1}{x}<2 \iff x>\dfrac{1}{2}$$<p>La condition de départ $x>0$ est alors automatiquement vérifiée, puisque $\dfrac{1}{2}>0$.</p>
+$$S={\color{#4A5D7A}\left]\dfrac{1}{2}\,;\,+\infty\right[}$$<p>Vérification : pour $x=1$, $\dfrac{1}{x}=1<2$, ce qui convient ; pour $x=\dfrac{1}{4}$, $\dfrac{1}{x}=4$, ce qui ne convient pas.</p>
 </div>
   </div>
   
@@ -467,7 +466,8 @@ $$3\leqslant x\leqslant 7$$$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$<p>L&rsquo
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner la liste de tous les diviseurs positifs de $48$.
+    <p>Calculer :</p>
+$$\left|-12\right| \qquad \left|5-14\right| \qquad \left|6-6\right|$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -475,9 +475,9 @@ $$3\leqslant x\leqslant 7$$$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$<p>L&rsquo
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :</p>
-$$1\times 48 \qquad 2\times 24 \qquad 3\times 16 \qquad 4\times 12 \qquad 6\times 8$$<p>On s&rsquo;arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.</p>
-$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$<p>Il y en a $10$. Le nombre de diviseurs est pair, ce qui est le cas de tous les nombres qui ne sont pas des carrés parfaits.</p>
+    <div><p>La valeur absolue d&rsquo;un nombre est sa distance à zéro : elle est toujours positive ou nulle.</p>
+$$\left|-12\right|={\color{#4A5D7A}12}$$<p>Pour les deux autres, on calcule d&rsquo;abord ce qui est à l&rsquo;intérieur :</p>
+$$\left|5-14\right|=\left|-9\right|={\color{#4A5D7A}9}$$$$\left|6-6\right|=\left|0\right|={\color{#4A5D7A}0}$$<p>Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l&rsquo;intérieur.</p>
 </div>
   </div>
   
@@ -497,7 +497,8 @@ $${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Démontrer que la somme de deux multiples de $9$ est un multiple de $9$.
+    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
+$$\left|x-2\right|=6$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -505,10 +506,9 @@ $${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On traduit l&rsquo;hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $9$ : il existe deux entiers $k$ et $k'$ tels que</p>
-$$a=9k \qquad\text{et}\qquad b=9k'$$<p>On calcule la somme et on factorise par $9$ :</p>
-$$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rsquo;écrit bien sous la forme $9\times\text{entier}$ : c&rsquo;est un multiple de $9$.</p>
-<p>La factorisation est le cœur de la démonstration : c&rsquo;est elle qui fait apparaître le $9$ en facteur.</p>
+    <div><p>On traduit par une distance : $\left|x-2\right|$ est la distance entre $x$ et $2$. On cherche donc les réels situés à une distance de $6$ du nombre $2$.</p>
+<p>Il y en a deux, un de chaque côté :</p>
+$$\begin{aligned}x-2 &= 6 \quad\text{donc}\quad x=8 \\ \text{ou}\quad x-2 &= -6 \quad\text{donc}\quad x=-4\end{aligned}$$$$S={\color{#4A5D7A}\lbrace -4\,;\,8\rbrace}$$<p>On peut le lire directement sur une droite graduée : en partant de $2$, on avance de $6$ puis on recule de $6$.</p>
 </div>
   </div>
   
@@ -528,8 +528,9 @@ $$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$<p>Comme $k+k'$ est un entier, $a+b$ s&rs
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Calculer :</p>
-$$\left|3-10\right|+\left|-6\right|$$
+    <p>On considère la série statistique, rangée dans l&rsquo;ordre croissant :</p>
+$$3\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16$$<p>Déterminer sa moyenne et sa médiane.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -537,9 +538,10 @@ $$\left|3-10\right|+\left|-6\right|$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On traite chaque valeur absolue séparément, en calculant d&rsquo;abord l&rsquo;intérieur :</p>
-$$\left|3-10\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-6\right|=6$$<p>On additionne :</p>
-$$7+6={\color{#4A5D7A}13}$$</div>
+    <div><p>La moyenne est la somme des valeurs divisée par leur nombre :</p>
+$$\overline{x}=\dfrac{3+6+8+12+16}{5}=\dfrac{45}{5}={\color{#4A5D7A}9}$$<p>La série compte $5$ valeurs, un effectif impair : la médiane est la valeur centrale, celle de rang $3$.</p>
+$$\text{Médiane}={\color{#4A5D7A}8}$$<p>Moyenne et médiane sont deux indicateurs différents : ici, la moyenne est plus grande que la médiane, tirée vers le haut par la valeur $16$.</p>
+</div>
   </div>
   
 </article>
@@ -706,7 +708,7 @@ $$x=132\times 6={\color{#4A5D7A}792}$$<p>La réponse B divise au lieu de multipl
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

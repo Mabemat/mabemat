@@ -68,7 +68,7 @@ $$2x+1=-x+7$$
 
 On ajoute $x$ à chaque membre, puis on retranche $1$ :
 
-$$3x+1=7 \qquad\text{donc}\qquad 3x=6 \qquad\text{donc}\qquad x={\color{#4A5D7A}2}$$
+$$\begin{aligned}3x+1 &= 7 \\ \text{donc}\quad 3x &= 6 \\ \text{donc}\quad x &= {\color{#4A5D7A}2}\end{aligned}$$
 
 La réponse D est l'ordonnée du point d'intersection ($y=2\times 2+1=5$), pas son abscisse.
 
@@ -156,7 +156,7 @@ $$3x-4=-2x+11$$
 
 On ajoute $2x$ à chaque membre, puis $4$ :
 
-$$5x-4=11 \qquad\text{donc}\qquad 5x=15 \qquad\text{donc}\qquad x={\color{#4A5D7A}3}$$
+$$\begin{aligned}5x-4 &= 11 \\ \text{donc}\quad 5x &= 15 \\ \text{donc}\quad x &= {\color{#4A5D7A}3}\end{aligned}$$
 
 La réponse C est l'ordonnée du point d'intersection ($y=3\times 3-4=5$), pas son abscisse.
 

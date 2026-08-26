@@ -34,7 +34,7 @@ $$m=\dfrac{f(5)-f(2)}{5-2}=\dfrac{10-1}{3}=\dfrac{9}{3}=3$$
 
 On a donc $f(x)=3x+p$. Pour trouver $p$, on utilise l'une des deux informations, par exemple $f(2)=1$ :
 
-$$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$
+$$\begin{aligned}3\times 2+p &= 1 \quad\Longrightarrow\quad 6+p \\ &= 1 \quad\Longrightarrow\quad p \\ &= -5\end{aligned}$$
 
 $$f(x)={\color{#4A5D7A}3x-5}$$
 
@@ -68,7 +68,7 @@ Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f
 ---CORR---
 On cherche la racine :
 
-$$5x-15=0 \quad\Longrightarrow\quad 5x=15 \quad\Longrightarrow\quad x=3$$
+$$\begin{aligned}5x-15 &= 0 \quad\Longrightarrow\quad 5x \\ &= 15 \quad\Longrightarrow\quad x \\ &= 3\end{aligned}$$
 
 Le coefficient directeur $5$ est positif, donc $f$ est croissante : négative avant sa racine, positive après.
 
@@ -76,7 +76,7 @@ Le coefficient directeur $5$ est positif, donc $f$ est croissante : négative av
 |---|---|---|---|---|---|
 | signe de $f(x)$ | | $-$ | $0$ | $+$ | |
 
-$${\color{#4A5D7A}f(x)<0\ \text{sur}\ \left]-\infty\,;\,3\right[ \qquad f(x)>0\ \text{sur}\ \left]3\,;\,+\infty\right[}$$
+$$\begin{aligned}{\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,3\right[} \\ {\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]3\,;\,+\infty\right[}\end{aligned}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -94,7 +94,7 @@ $$N=\dfrac{2^{6}\times 5^{6}}{5^{3}}=2^{6}\times 5^{6-3}=2^{6}\times 5^{3}$$
 
 On regroupe ensuite $2^3$ avec $5^3$ pour reformer une puissance de dix :
 
-$$N=2^{3}\times 2^{3}\times 5^{3}=8\times(2\times 5)^{3}={\color{#4A5D7A}8\times 10^{3}}$$
+$$\begin{aligned}N &= 2^{3}\times 2^{3}\times 5^{3} \\ &= 8\times(2\times 5)^{3} \\ &= {\color{#4A5D7A}8\times 10^{3}}\end{aligned}$$
 
 On peut vérifier : $\dfrac{1\,000\,000}{125}=8\,000$.
 
@@ -148,7 +148,7 @@ $$m=\dfrac{f(5)-f(1)}{5-1}=\dfrac{7-(-1)}{4}=\dfrac{8}{4}=2$$
 
 On a donc $f(x)=2x+p$. Pour trouver $p$, on utilise l'une des deux informations, par exemple $f(1)=-1$ :
 
-$$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3$$
+$$\begin{aligned}2\times 1+p &= -1 \quad\Longrightarrow\quad 2+p \\ &= -1 \quad\Longrightarrow\quad p \\ &= -3\end{aligned}$$
 
 $$f(x)={\color{#4A5D7A}2x-3}$$
 
@@ -182,7 +182,7 @@ Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f
 ---CORR---
 On cherche la racine :
 
-$$6x-24=0 \quad\Longrightarrow\quad 6x=24 \quad\Longrightarrow\quad x=4$$
+$$\begin{aligned}6x-24 &= 0 \quad\Longrightarrow\quad 6x \\ &= 24 \quad\Longrightarrow\quad x \\ &= 4\end{aligned}$$
 
 Le coefficient directeur $6$ est positif, donc $f$ est croissante : négative avant sa racine, positive après.
 
@@ -190,7 +190,7 @@ Le coefficient directeur $6$ est positif, donc $f$ est croissante : négative av
 |---|---|---|---|---|---|
 | signe de $f(x)$ | | $-$ | $0$ | $+$ | |
 
-$${\color{#4A5D7A}f(x)<0\ \text{sur}\ \left]-\infty\,;\,4\right[ \qquad f(x)>0\ \text{sur}\ \left]4\,;\,+\infty\right[}$$
+$$\begin{aligned}{\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,4\right[} \\ {\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]4\,;\,+\infty\right[}\end{aligned}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -204,7 +204,7 @@ $$10^{5}=(2\times 5)^{5}=2^{5}\times 5^{5}$$
 
 On simplifie :
 
-$$N=\dfrac{2^{5}\times 5^{5}}{2^{3}}=2^{5-3}\times 5^{5}=4\times 3\,125=12\,500$$
+$$\begin{aligned}N &= \dfrac{2^{5}\times 5^{5}}{2^{3}} \\ &= 2^{5-3}\times 5^{5} \\ &= 4\times 3\,125 \\ &= 12\,500\end{aligned}$$
 
 En écriture scientifique :
 

@@ -14,7 +14,7 @@ $$4\overrightarrow{u}-7\overrightarrow{u}+2\overrightarrow{u}$$
 ---CORR---
 Tous les termes sont des multiples du même vecteur $\overrightarrow{u}$ : on additionne les coefficients, exactement comme avec des termes en $x$.
 
-$$4\overrightarrow{u}-7\overrightarrow{u}+2\overrightarrow{u}=(4-7+2)\,\overrightarrow{u}=(-1)\,\overrightarrow{u}={\color{#4A5D7A}-\overrightarrow{u}}$$
+$$\begin{aligned}4\overrightarrow{u}-7\overrightarrow{u}+2\overrightarrow{u} &= (4-7+2)\,\overrightarrow{u} \\ &= (-1)\,\overrightarrow{u} \\ &= {\color{#4A5D7A}-\overrightarrow{u}}\end{aligned}$$
 
 Le vecteur obtenu a la même direction et la même longueur que $\overrightarrow{u}$, mais le sens opposé.
 {{< /auto2-exo >}}
@@ -66,7 +66,7 @@ L'équation n'a de sens que pour $x\neq -5$.
 
 Un quotient est nul si et seulement si son numérateur est nul :
 
-$$3x-12=0 \quad\text{donc}\quad 3x=12 \quad\text{donc}\quad x=4$$
+$$\begin{aligned}3x-12 &= 0 \quad\text{donc}\quad 3x \\ &= 12 \quad\text{donc}\quad x \\ &= 4\end{aligned}$$
 
 Comme $4\neq -5$, cette solution est acceptable.
 
@@ -102,7 +102,7 @@ On calcule les quatre valeurs. Prendre $10\,\%$ c'est diviser par $10$, prendre 
 
 $$10\,\%\text{ de }190=19 \qquad 25\,\%\text{ de }72=18$$
 
-$$5\,\%\text{ de }390=19{,}5 \qquad 20\,\%\text{ de }110={\color{#4A5D7A}22}$$
+$$\begin{aligned}5\,\%\text{ de }390 &= 19{,}5 \qquad 20\,\%\text{ de }110 \\ &= {\color{#4A5D7A}22}\end{aligned}$$
 
 Le plus grand est donc $20\,\%$ de $110$. Un petit pourcentage d'un grand nombre n'est pas forcément grand : il faut comparer les résultats, pas les pourcentages.
 
@@ -172,7 +172,7 @@ L'équation n'a de sens que pour $x\neq 2$.
 
 Un quotient est nul si et seulement si son numérateur est nul :
 
-$$5x-15=0 \quad\text{donc}\quad 5x=15 \quad\text{donc}\quad x=3$$
+$$\begin{aligned}5x-15 &= 0 \quad\text{donc}\quad 5x \\ &= 15 \quad\text{donc}\quad x \\ &= 3\end{aligned}$$
 
 Comme $3\neq 2$, cette solution est acceptable.
 

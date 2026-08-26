@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 7 - Équations produits et quotients — MaBémat</title>
+<title>Semaine 7 - Équations et équations produits — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Équations produits et quotients</p>
+  <p class="wk-subtitle">Équations et équations produits</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -245,7 +245,7 @@ $$(3x-6)(2x+5)=0$$
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Un produit de facteurs est nul si et seulement si l&rsquo;un au moins de ses facteurs est nul :</p>
 $$3x-6=0 \qquad\text{ou}\qquad 2x+5=0$$<p>On résout chaque équation séparément :</p>
-$$3x=6 \quad\text{donc}\quad x=2 \qquad\qquad 2x=-5 \quad\text{donc}\quad x=-\dfrac{5}{2}$$$$S={\color{#4A5D7A}\left\lbrace -\dfrac{5}{2}\,;\,2\right\rbrace}$$</div>
+$$\begin{aligned}3x &= 6 \quad\text{donc}\quad x=2 \\ 2x &= -5 \quad\text{donc}\quad x=-\dfrac{5}{2}\end{aligned}$$$$S={\color{#4A5D7A}\left\lbrace -\dfrac{5}{2}\,;\,2\right\rbrace}$$</div>
   </div>
   
 </article>
@@ -265,7 +265,7 @@ $$3x=6 \quad\text{donc}\quad x=2 \qquad\qquad 2x=-5 \quad\text{donc}\quad x=-\df
   </div>
   <div class="auto1re-enonce">
     <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
-$$\dfrac{4x-8}{x+3}=0$$
+$$3(x-2)=5x+4$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -273,11 +273,12 @@ $$\dfrac{4x-8}{x+3}=0$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On commence par chercher la valeur interdite, celle qui annule le dénominateur :</p>
-$$x+3=0 \quad\text{donc}\quad x=-3$$<p>L&rsquo;équation n&rsquo;a de sens que pour $x\neq -3$.</p>
-<p>Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :</p>
-$$4x-8=0 \quad\text{donc}\quad 4x=8 \quad\text{donc}\quad x=2$$<p>Comme $2\neq -3$, cette solution est acceptable.</p>
-$$S={\color{#4A5D7A}\lbrace 2\rbrace}$$</div>
+    <div><p>On développe d&rsquo;abord le membre de gauche :</p>
+$$3x-6=5x+4$$<p>On regroupe les termes en $x$ à gauche, en retranchant $5x$ à chaque membre :</p>
+$$\begin{aligned}3x-5x-6 &= 4 \\ \text{soit}\quad -2x-6 &= 4\end{aligned}$$<p>On ajoute $6$ à chaque membre :</p>
+$$-2x=10$$<p>On divise chaque membre par $-2$ :</p>
+$$x={\color{#4A5D7A}-5}$$<p>Vérification : $3\times(-5-2)=-21$ et $5\times(-5)+4=-21$. L&rsquo;ensemble des solutions est $S=\lbrace -5\rbrace$.</p>
+</div>
   </div>
   
 </article>
@@ -308,7 +309,7 @@ $$S={\color{#4A5D7A}\lbrace 2\rbrace}$$</div>
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Le périmètre d&rsquo;un rectangle est le double de la somme de la longueur et de la largeur :</p>
 $$2\bigl((x+5)+x\bigr)=46$$<p>On réduit à l&rsquo;intérieur de la parenthèse, puis on développe :</p>
-$$2(2x+5)=46 \qquad\text{soit}\qquad 4x+10=46$$<p>On retranche $10$ puis on divise par $4$ :</p>
+$$\begin{aligned}2(2x+5) &= 46 \\ \text{soit}\quad 4x+10 &= 46\end{aligned}$$<p>On retranche $10$ puis on divise par $4$ :</p>
 $$4x=36 \qquad\text{donc}\qquad x={\color{#4A5D7A}9}$$<p>Le rectangle mesure donc ${\color{#4A5D7A}14}$ cm de longueur et ${\color{#4A5D7A}9}$ cm de largeur.</p>
 <p>Vérification : $2\times(14+9)=2\times 23=46$ cm.</p>
 </div>
@@ -330,8 +331,8 @@ $$4x=36 \qquad\text{donc}\qquad x={\color{#4A5D7A}9}$$<p>Le rectangle mesure don
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre l&rsquo;équation :</p>
-$$4x+9=x-3$$
+    <p>Développer et réduire :</p>
+$$A=(2x-3)^2-(x+1)(x-1)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -339,11 +340,11 @@ $$4x+9=x-3$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On retranche $x$ à chaque membre :</p>
-$$3x+9=-3$$<p>On retranche $9$ à chaque membre :</p>
-$$3x=-12$$<p>On divise chaque membre par $3$ :</p>
-$$x={\color{#4A5D7A}-4}$$<p>Vérification : $4\times(-4)+9=-7$ et $-4-3=-7$.</p>
-</div>
+    <div><p>On reconnaît deux identités remarquables.</p>
+<p>Pour la première, $(a-b)^2=a^2-2ab+b^2$ avec $a=2x$ et $b=3$ :</p>
+$$\begin{aligned}(2x-3)^2 &= (2x)^2-2\times 2x\times 3+3^2 \\ &= 4x^2-12x+9\end{aligned}$$<p>Pour la seconde, $(a+b)(a-b)=a^2-b^2$ avec $a=x$ et $b=1$ :</p>
+$$(x+1)(x-1)=x^2-1$$<p>On soustrait, en faisant attention au signe devant la parenthèse :</p>
+$$\begin{aligned}A &= 4x^2-12x+9-\left(x^2-1\right) \\ &= 4x^2-12x+9-x^2+1\end{aligned}$$$$A={\color{#4A5D7A}3x^2-12x+10}$$</div>
   </div>
   
 </article>
@@ -373,7 +374,7 @@ $$x={\color{#4A5D7A}-4}$$<p>Vérification : $4\times(-4)+9=-7$ et $-4-3=-7$.</p>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On résout d&rsquo;abord l&rsquo;équation. Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
-$$2x+6=0 \quad\text{donc}\quad x=-3 \qquad\qquad 2x+10=0 \quad\text{donc}\quad x=-5$$<p>Les deux solutions sont $-3$ et $-5$. On calcule ensuite leur <strong>produit</strong> :</p>
+$$\begin{aligned}2x+6 &= 0 \quad\text{donc}\quad x=-3 \\ 2x+10 &= 0 \quad\text{donc}\quad x=-5\end{aligned}$$<p>Les deux solutions sont $-3$ et $-5$. On calcule ensuite leur <strong>produit</strong> :</p>
 $$(-3)\times(-5)={\color{#4A5D7A}15}$$<p>Le produit de deux nombres négatifs est positif. La réponse B est le piège classique : c&rsquo;est le produit des facteurs qui est nul, pas celui des solutions.</p>
 <p><span class="rep">Réponse : A</span></p>
 </div>
@@ -448,7 +449,7 @@ $$(5x+10)(3x-9)=0$$
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Un produit de facteurs est nul si et seulement si l&rsquo;un au moins de ses facteurs est nul :</p>
 $$5x+10=0 \qquad\text{ou}\qquad 3x-9=0$$<p>On résout chaque équation séparément :</p>
-$$5x=-10 \quad\text{donc}\quad x=-2 \qquad\qquad 3x=9 \quad\text{donc}\quad x=3$$$$S={\color{#4A5D7A}\lbrace -2\,;\,3\rbrace}$$</div>
+$$\begin{aligned}5x &= -10 \quad\text{donc}\quad x=-2 \\ 3x &= 9 \quad\text{donc}\quad x=3\end{aligned}$$$$S={\color{#4A5D7A}\lbrace -2\,;\,3\rbrace}$$</div>
   </div>
   
 </article>
@@ -468,7 +469,7 @@ $$5x=-10 \quad\text{donc}\quad x=-2 \qquad\qquad 3x=9 \quad\text{donc}\quad x=3$
   </div>
   <div class="auto1re-enonce">
     <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
-$$\dfrac{6x+18}{x-4}=0$$
+$$4(x+3)=7x-6$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -476,11 +477,12 @@ $$\dfrac{6x+18}{x-4}=0$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On commence par chercher la valeur interdite, celle qui annule le dénominateur :</p>
-$$x-4=0 \quad\text{donc}\quad x=4$$<p>L&rsquo;équation n&rsquo;a de sens que pour $x\neq 4$.</p>
-<p>Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :</p>
-$$6x+18=0 \quad\text{donc}\quad 6x=-18 \quad\text{donc}\quad x=-3$$<p>Comme $-3\neq 4$, cette solution est acceptable.</p>
-$$S={\color{#4A5D7A}\lbrace -3\rbrace}$$</div>
+    <div><p>On développe d&rsquo;abord le membre de gauche :</p>
+$$4x+12=7x-6$$<p>On regroupe les termes en $x$ à gauche, en retranchant $7x$ à chaque membre :</p>
+$$\begin{aligned}4x-7x+12 &= -6 \\ \text{soit}\quad -3x+12 &= -6\end{aligned}$$<p>On retranche $12$ à chaque membre :</p>
+$$-3x=-18$$<p>On divise chaque membre par $-3$ :</p>
+$$x={\color{#4A5D7A}6}$$<p>Vérification : $4\times(6+3)=36$ et $7\times 6-6=36$. L&rsquo;ensemble des solutions est $S=\lbrace 6\rbrace$.</p>
+</div>
   </div>
   
 </article>
@@ -511,7 +513,7 @@ $$S={\color{#4A5D7A}\lbrace -3\rbrace}$$</div>
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Le périmètre d&rsquo;un rectangle est le double de la somme de la longueur et de la largeur :</p>
 $$2\bigl((x+7)+x\bigr)=58$$<p>On réduit à l&rsquo;intérieur de la parenthèse, puis on développe :</p>
-$$2(2x+7)=58 \qquad\text{soit}\qquad 4x+14=58$$<p>On retranche $14$ puis on divise par $4$ :</p>
+$$\begin{aligned}2(2x+7) &= 58 \\ \text{soit}\quad 4x+14 &= 58\end{aligned}$$<p>On retranche $14$ puis on divise par $4$ :</p>
 $$4x=44 \qquad\text{donc}\qquad x={\color{#4A5D7A}11}$$<p>Le rectangle mesure donc ${\color{#4A5D7A}18}$ cm de longueur et ${\color{#4A5D7A}11}$ cm de largeur.</p>
 <p>Vérification : $2\times(18+11)=2\times 29=58$ cm.</p>
 </div>
@@ -533,8 +535,8 @@ $$4x=44 \qquad\text{donc}\qquad x={\color{#4A5D7A}11}$$<p>Le rectangle mesure do
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre l&rsquo;équation :</p>
-$$6x-5=2x+7$$
+    <p>Développer et réduire :</p>
+$$A=(3x+2)^2-(x+4)(x-4)$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -542,11 +544,11 @@ $$6x-5=2x+7$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On retranche $2x$ à chaque membre :</p>
-$$4x-5=7$$<p>On ajoute $5$ à chaque membre :</p>
-$$4x=12$$<p>On divise chaque membre par $4$ :</p>
-$$x={\color{#4A5D7A}3}$$<p>Vérification : $6\times 3-5=13$ et $2\times 3+7=13$.</p>
-</div>
+    <div><p>On reconnaît deux identités remarquables.</p>
+<p>Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=2$ :</p>
+$$\begin{aligned}(3x+2)^2 &= (3x)^2+2\times 3x\times 2+2^2 \\ &= 9x^2+12x+4\end{aligned}$$<p>Pour la seconde, $(a+b)(a-b)=a^2-b^2$ avec $a=x$ et $b=4$ :</p>
+$$(x+4)(x-4)=x^2-16$$<p>On soustrait, en faisant attention au signe devant la parenthèse :</p>
+$$\begin{aligned}A &= 9x^2+12x+4-\left(x^2-16\right) \\ &= 9x^2+12x+4-x^2+16\end{aligned}$$$$A={\color{#4A5D7A}8x^2+12x+20}$$</div>
   </div>
   
 </article>
@@ -576,7 +578,7 @@ $$x={\color{#4A5D7A}3}$$<p>Vérification : $6\times 3-5=13$ et $2\times 3+7=13$.
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On résout d&rsquo;abord l&rsquo;équation. Un produit est nul si et seulement si l&rsquo;un de ses facteurs est nul :</p>
-$$3x-9=0 \quad\text{donc}\quad x=3 \qquad\qquad 3x+15=0 \quad\text{donc}\quad x=-5$$<p>Les deux solutions sont $3$ et $-5$. On calcule ensuite leur <strong>produit</strong> :</p>
+$$\begin{aligned}3x-9 &= 0 \quad\text{donc}\quad x=3 \\ 3x+15 &= 0 \quad\text{donc}\quad x=-5\end{aligned}$$<p>Les deux solutions sont $3$ et $-5$. On calcule ensuite leur <strong>produit</strong> :</p>
 $$3\times(-5)={\color{#4A5D7A}-15}$$<p>La réponse C est le piège classique : c&rsquo;est le produit des facteurs qui est nul, pas celui des solutions.</p>
 <p><span class="rep">Réponse : D</span></p>
 </div>
@@ -712,7 +714,7 @@ $$19-4={\color{#4A5D7A}15}$$<p>La réponse A est la médiane, la réponse B la m
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

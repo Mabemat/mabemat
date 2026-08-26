@@ -50,7 +50,7 @@ On traduit par une distance : $\left|x-3\right|$ est la distance entre $x$ et $3
 
 Il y en a deux, un de chaque côté :
 
-$$x-3=5 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-3=-5 \quad\text{donc}\quad x=-2$$
+$$\begin{aligned}x-3 &= 5 \quad\text{donc}\quad x=8 \\ \text{ou}\quad x-3 &= -5 \quad\text{donc}\quad x=-2\end{aligned}$$
 
 $$S={\color{#4A5D7A}\lbrace -2\,;\,8\rbrace}$$
 
@@ -154,7 +154,7 @@ On traduit par une distance : $\left|x-2\right|$ est la distance entre $x$ et $2
 
 Il y en a deux, un de chaque côté :
 
-$$x-2=6 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-2=-6 \quad\text{donc}\quad x=-4$$
+$$\begin{aligned}x-2 &= 6 \quad\text{donc}\quad x=8 \\ \text{ou}\quad x-2 &= -6 \quad\text{donc}\quad x=-4\end{aligned}$$
 
 $$S={\color{#4A5D7A}\lbrace -4\,;\,8\rbrace}$$
 

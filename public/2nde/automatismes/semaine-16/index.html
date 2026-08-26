@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 16 - Puissances et notation scientifique — MaBémat</title>
+<title>Semaine 16 - Fonctions affines, puissances et notation scientifique — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Puissances et notation scientifique</p>
+  <p class="wk-subtitle">Fonctions affines, puissances et notation scientifique</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -266,7 +266,7 @@ $$A=\dfrac{2^{4}}{2^{-2}}=2^{4-(-2)}=2^{4+2}={\color{#4A5D7A}2^{6}}$$<p>Attentio
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner l&rsquo;écriture scientifique du nombre $0{,}000\,472$.
+    Déterminer la fonction affine $f$ telle que $f(2)=1$ et $f(5)=10$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -274,9 +274,9 @@ $$A=\dfrac{2^{4}}{2^{-2}}=2^{4-(-2)}=2^{4+2}={\color{#4A5D7A}2^{6}}$$<p>Attentio
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>L&rsquo;écriture scientifique est de la forme $a\times 10^{n}$, où $a$ est un décimal tel que $1\leqslant a<10$.</p>
-<p>On déplace la virgule pour obtenir un seul chiffre non nul avant la virgule : ici on obtient $4{,}72$. Il a fallu déplacer la virgule de $4$ rangs vers la droite, donc on compense par $10^{-4}$.</p>
-$$0{,}000\,472={\color{#4A5D7A}4{,}72\times 10^{-4}}$$<p>Le nombre étant plus petit que $1$, l&rsquo;exposant est bien négatif.</p>
+    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$. On calcule d&rsquo;abord le coefficient directeur :</p>
+$$m=\dfrac{f(5)-f(2)}{5-2}=\dfrac{10-1}{3}=\dfrac{9}{3}=3$$<p>On a donc $f(x)=3x+p$. Pour trouver $p$, on utilise l&rsquo;une des deux informations, par exemple $f(2)=1$ :</p>
+$$\begin{aligned}3\times 2+p &= 1 \quad\Longrightarrow\quad 6+p \\ &= 1 \quad\Longrightarrow\quad p \\ &= -5\end{aligned}$$$$f(x)={\color{#4A5D7A}3x-5}$$<p>Vérification avec l&rsquo;autre donnée : $f(5)=3\times 5-5=10$.</p>
 </div>
   </div>
   
@@ -338,7 +338,7 @@ $$B={\color{#4A5D7A}8\times 10^{-1}}$$<p>Le nombre $8$ vérifie bien $1\leqslant
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche la racine :</p>
-$$5x-15=0 \quad\Longrightarrow\quad 5x=15 \quad\Longrightarrow\quad x=3$$<p>Le coefficient directeur $5$ est positif, donc $f$ est croissante : négative avant sa racine, positive après.</p>
+$$\begin{aligned}5x-15 &= 0 \quad\Longrightarrow\quad 5x \\ &= 15 \quad\Longrightarrow\quad x \\ &= 3\end{aligned}$$<p>Le coefficient directeur $5$ est positif, donc $f$ est croissante : négative avant sa racine, positive après.</p>
 <table>
   <thead>
       <tr>
@@ -361,7 +361,7 @@ $$5x-15=0 \quad\Longrightarrow\quad 5x=15 \quad\Longrightarrow\quad x=3$$<p>Le c
       </tr>
   </tbody>
 </table>
-$${\color{#4A5D7A}f(x)<0\ \text{sur}\ \left]-\infty\,;\,3\right[ \qquad f(x)>0\ \text{sur}\ \left]3\,;\,+\infty\right[}$$</div>
+$$\begin{aligned}{\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,3\right[} \\ {\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]3\,;\,+\infty\right[}\end{aligned}$$</div>
   </div>
   
 </article>
@@ -393,7 +393,7 @@ $${\color{#4A5D7A}f(x)<0\ \text{sur}\ \left]-\infty\,;\,3\right[ \qquad f(x)>0\ 
     <div><p>On décompose $10$ en produit de facteurs premiers pour faire apparaître le $5$ du dénominateur :</p>
 $$10^{6}=(2\times 5)^{6}=2^{6}\times 5^{6}$$<p>On simplifie :</p>
 $$N=\dfrac{2^{6}\times 5^{6}}{5^{3}}=2^{6}\times 5^{6-3}=2^{6}\times 5^{3}$$<p>On regroupe ensuite $2^3$ avec $5^3$ pour reformer une puissance de dix :</p>
-$$N=2^{3}\times 2^{3}\times 5^{3}=8\times(2\times 5)^{3}={\color{#4A5D7A}8\times 10^{3}}$$<p>On peut vérifier : $\dfrac{1\,000\,000}{125}=8\,000$.</p>
+$$\begin{aligned}N &= 2^{3}\times 2^{3}\times 5^{3} \\ &= 8\times(2\times 5)^{3} \\ &= {\color{#4A5D7A}8\times 10^{3}}\end{aligned}$$<p>On peut vérifier : $\dfrac{1\,000\,000}{125}=8\,000$.</p>
 <p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
@@ -489,7 +489,7 @@ $$A=\dfrac{3^{3}}{3^{-1}}=3^{3-(-1)}=3^{3+1}={\color{#4A5D7A}3^{4}}$$<p>Attentio
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    Donner l&rsquo;écriture scientifique du nombre $0{,}000\,051\,3$.
+    Déterminer la fonction affine $f$ telle que $f(1)=-1$ et $f(5)=7$.
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -497,9 +497,9 @@ $$A=\dfrac{3^{3}}{3^{-1}}=3^{3-(-1)}=3^{3+1}={\color{#4A5D7A}3^{4}}$$<p>Attentio
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>L&rsquo;écriture scientifique est de la forme $a\times 10^{n}$, où $a$ est un décimal tel que $1\leqslant a<10$.</p>
-<p>On déplace la virgule pour obtenir un seul chiffre non nul avant la virgule : ici on obtient $5{,}13$. Il a fallu déplacer la virgule de $5$ rangs vers la droite, donc on compense par $10^{-5}$.</p>
-$$0{,}000\,051\,3={\color{#4A5D7A}5{,}13\times 10^{-5}}$$<p>Le nombre étant plus petit que $1$, l&rsquo;exposant est bien négatif.</p>
+    <div><p>Une fonction affine s&rsquo;écrit $f(x)=mx+p$. On calcule d&rsquo;abord le coefficient directeur :</p>
+$$m=\dfrac{f(5)-f(1)}{5-1}=\dfrac{7-(-1)}{4}=\dfrac{8}{4}=2$$<p>On a donc $f(x)=2x+p$. Pour trouver $p$, on utilise l&rsquo;une des deux informations, par exemple $f(1)=-1$ :</p>
+$$\begin{aligned}2\times 1+p &= -1 \quad\Longrightarrow\quad 2+p \\ &= -1 \quad\Longrightarrow\quad p \\ &= -3\end{aligned}$$$$f(x)={\color{#4A5D7A}2x-3}$$<p>Vérification avec l&rsquo;autre donnée : $f(5)=2\times 5-3=7$.</p>
 </div>
   </div>
   
@@ -561,7 +561,7 @@ $$B={\color{#4A5D7A}6\times 10^{1}}$$<p>Le nombre $6$ vérifie bien $1\leqslant 
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On cherche la racine :</p>
-$$6x-24=0 \quad\Longrightarrow\quad 6x=24 \quad\Longrightarrow\quad x=4$$<p>Le coefficient directeur $6$ est positif, donc $f$ est croissante : négative avant sa racine, positive après.</p>
+$$\begin{aligned}6x-24 &= 0 \quad\Longrightarrow\quad 6x \\ &= 24 \quad\Longrightarrow\quad x \\ &= 4\end{aligned}$$<p>Le coefficient directeur $6$ est positif, donc $f$ est croissante : négative avant sa racine, positive après.</p>
 <table>
   <thead>
       <tr>
@@ -584,7 +584,7 @@ $$6x-24=0 \quad\Longrightarrow\quad 6x=24 \quad\Longrightarrow\quad x=4$$<p>Le c
       </tr>
   </tbody>
 </table>
-$${\color{#4A5D7A}f(x)<0\ \text{sur}\ \left]-\infty\,;\,4\right[ \qquad f(x)>0\ \text{sur}\ \left]4\,;\,+\infty\right[}$$</div>
+$$\begin{aligned}{\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,4\right[} \\ {\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]4\,;\,+\infty\right[}\end{aligned}$$</div>
   </div>
   
 </article>
@@ -615,7 +615,7 @@ $${\color{#4A5D7A}f(x)<0\ \text{sur}\ \left]-\infty\,;\,4\right[ \qquad f(x)>0\ 
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On décompose $10$ en produit de facteurs premiers pour faire apparaître le $2$ du dénominateur :</p>
 $$10^{5}=(2\times 5)^{5}=2^{5}\times 5^{5}$$<p>On simplifie :</p>
-$$N=\dfrac{2^{5}\times 5^{5}}{2^{3}}=2^{5-3}\times 5^{5}=4\times 3\,125=12\,500$$<p>En écriture scientifique :</p>
+$$\begin{aligned}N &= \dfrac{2^{5}\times 5^{5}}{2^{3}} \\ &= 2^{5-3}\times 5^{5} \\ &= 4\times 3\,125 \\ &= 12\,500\end{aligned}$$<p>En écriture scientifique :</p>
 $$N={\color{#4A5D7A}1{,}25\times 10^{4}}$$<p>La réponse C est le résultat divisé par mille : l&rsquo;ordre de grandeur ne colle pas.</p>
 <p><span class="rep">Réponse : B</span></p>
 </div>
@@ -752,7 +752,7 @@ $$60\times 1{,}25={\color{#4A5D7A}75}$$<p>La réponse C donne la hausse seule ($
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

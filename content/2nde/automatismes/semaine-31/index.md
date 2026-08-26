@@ -34,7 +34,7 @@ Le nombre de femmes cadres est :
 ---CORR---
 On enchaîne les deux proportions, la seconde ne portant que sur les femmes :
 
-$$250\times 0{,}40=100\ \text{femmes} \qquad\text{puis}\qquad 100\times 0{,}25={\color{#4A5D7A}25}$$
+$$\begin{aligned}250\times 0{,}40 &= 100\ \text{femmes} \\ \text{puis}\quad 100\times 0{,}25 &= {\color{#4A5D7A}25}\end{aligned}$$
 
 La réponse B s'arrête à la première étape, et la réponse A additionne les deux pourcentages au lieu de les enchaîner.
 
@@ -68,7 +68,7 @@ $$(x-4)(x+2)=0$$
 
 Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$$x-4=0 \quad\text{donc}\quad x=4 \qquad\text{ou}\qquad x+2=0 \quad\text{donc}\quad x=-2$$
+$$\begin{aligned}x-4 &= 0 \quad\text{donc}\quad x=4 \\ \text{ou}\quad x+2 &= 0 \quad\text{donc}\quad x=-2\end{aligned}$$
 
 $${\color{#4A5D7A}\lbrace 4\,;\,-2\rbrace}$$
 
@@ -144,7 +144,7 @@ Le nombre de femmes cadres est :
 ---CORR---
 On enchaîne les deux proportions, la seconde ne portant que sur les femmes :
 
-$$320\times 0{,}25=80\ \text{femmes} \qquad\text{puis}\qquad 80\times 0{,}40={\color{#4A5D7A}32}$$
+$$\begin{aligned}320\times 0{,}25 &= 80\ \text{femmes} \\ \text{puis}\quad 80\times 0{,}40 &= {\color{#4A5D7A}32}\end{aligned}$$
 
 La réponse A s'arrête à la première étape, et la réponse D additionne les deux pourcentages au lieu de les enchaîner.
 
@@ -178,7 +178,7 @@ $$(x+5)(x-3)=0$$
 
 Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$$x+5=0 \quad\text{donc}\quad x=-5 \qquad\text{ou}\qquad x-3=0 \quad\text{donc}\quad x=3$$
+$$\begin{aligned}x+5 &= 0 \quad\text{donc}\quad x=-5 \\ \text{ou}\quad x-3 &= 0 \quad\text{donc}\quad x=3\end{aligned}$$
 
 $${\color{#4A5D7A}\lbrace -5\,;\,3\rbrace}$$
 

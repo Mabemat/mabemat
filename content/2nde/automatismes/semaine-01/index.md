@@ -14,7 +14,7 @@ $$\dfrac{5}{6}-\dfrac{3}{8}$$
 ---CORR---
 On cherche un dénominateur commun à $6$ et $8$ : c'est $24$.
 
-$$\dfrac{5}{6}-\dfrac{3}{8}=\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 4}}}{6{\color{#4A5D7A}\boldsymbol{\times 4}}}-\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{8{\color{#4A5D7A}\boldsymbol{\times 3}}}=\dfrac{20}{24}-\dfrac{9}{24}=\dfrac{20-9}{24}={\color{#4A5D7A}\dfrac{11}{24}}$$
+$$\begin{aligned}\dfrac{5}{6}-\dfrac{3}{8} &= \dfrac{5{\color{#4A5D7A}\boldsymbol{\times 4}}}{6{\color{#4A5D7A}\boldsymbol{\times 4}}}-\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{8{\color{#4A5D7A}\boldsymbol{\times 3}}} \\ &= \dfrac{20}{24}-\dfrac{9}{24} \\ &= \dfrac{20-9}{24} \\ &= {\color{#4A5D7A}\dfrac{11}{24}}\end{aligned}$$
 
 $11$ est premier et ne divise pas $24$ : la fraction est bien irréductible.
 {{< /auto2-exo >}}
@@ -40,11 +40,11 @@ $$A=-3\times\Bigl((-2)^3+5\times(-2)\Bigr)$$
 ---CORR---
 On calcule d'abord ce qui est entre parenthèses, en respectant les priorités (la puissance avant la multiplication) :
 
-$$(-2)^3=(-2)\times(-2)\times(-2)=-8 \qquad\text{et}\qquad 5\times(-2)=-10$$
+$$\begin{aligned}(-2)^3 &= (-2)\times(-2)\times(-2)=-8 \\ \text{et}\quad 5\times(-2) &= -10\end{aligned}$$
 
 Donc :
 
-$$A=-3\times\bigl(-8+(-10)\bigr)=-3\times(-18)={\color{#4A5D7A}54}$$
+$$\begin{aligned}A &= -3\times\bigl(-8+(-10)\bigr) \\ &= -3\times(-18) \\ &= {\color{#4A5D7A}54}\end{aligned}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -106,7 +106,7 @@ $$\dfrac{7}{10}-\dfrac{2}{15}$$
 ---CORR---
 On cherche un dénominateur commun à $10$ et $15$ : c'est $30$.
 
-$$\dfrac{7}{10}-\dfrac{2}{15}=\dfrac{7{\color{#4A5D7A}\boldsymbol{\times 3}}}{10{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{15{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{21}{30}-\dfrac{4}{30}=\dfrac{21-4}{30}={\color{#4A5D7A}\dfrac{17}{30}}$$
+$$\begin{aligned}\dfrac{7}{10}-\dfrac{2}{15} &= \dfrac{7{\color{#4A5D7A}\boldsymbol{\times 3}}}{10{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 2}}}{15{\color{#4A5D7A}\boldsymbol{\times 2}}} \\ &= \dfrac{21}{30}-\dfrac{4}{30} \\ &= \dfrac{21-4}{30} \\ &= {\color{#4A5D7A}\dfrac{17}{30}}\end{aligned}$$
 
 $17$ est premier et ne divise pas $30$ : la fraction est bien irréductible.
 {{< /auto2-exo >}}
@@ -132,7 +132,7 @@ $$A=-4\times\Bigl((-3)^2+7\times(-3)\Bigr)$$
 ---CORR---
 On calcule d'abord ce qui est entre parenthèses, en respectant les priorités (la puissance avant la multiplication) :
 
-$$(-3)^2=(-3)\times(-3)=9 \qquad\text{et}\qquad 7\times(-3)=-21$$
+$$\begin{aligned}(-3)^2 &= (-3)\times(-3)=9 \\ \text{et}\quad 7\times(-3) &= -21\end{aligned}$$
 
 Donc :
 

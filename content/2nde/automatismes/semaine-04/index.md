@@ -194,7 +194,7 @@ $$10x=\dfrac{100x}{10}$$
 
 Donc :
 
-$$10x-\dfrac{x}{10}=\dfrac{100x}{10}-\dfrac{x}{10}=\dfrac{100x-x}{10}={\color{#4A5D7A}\dfrac{99}{10}x}$$
+$$\begin{aligned}10x-\dfrac{x}{10} &= \dfrac{100x}{10}-\dfrac{x}{10} \\ &= \dfrac{100x-x}{10} \\ &= {\color{#4A5D7A}\dfrac{99}{10}x}\end{aligned}$$
 
 <span class="rep">Réponse : A</span>
 {{< /auto2-exo >}}

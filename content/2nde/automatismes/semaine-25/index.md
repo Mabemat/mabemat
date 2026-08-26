@@ -72,7 +72,7 @@ $$2x-7=0 \qquad\text{ou}\qquad x+3=0$$
 
 On résout chaque équation séparément :
 
-$$2x=7 \quad\text{donc}\quad x=\dfrac{7}{2} \qquad\text{ou}\qquad x=-3$$
+$$\begin{aligned}2x &= 7 \quad\text{donc}\quad x=\dfrac{7}{2} \\ \text{ou}\quad x &= -3\end{aligned}$$
 
 $$S={\color{#4A5D7A}\left\lbrace -3\,;\,\dfrac{7}{2}\right\rbrace}$$
 
@@ -140,7 +140,7 @@ Déterminer $A\cap B$ et $A\cup B$.
 ---CORR---
 On écrit d'abord chaque événement en extension :
 
-$$A=\lbrace 2\,;\,4\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 1\,;\,2\,;\,3\rbrace$$
+$$\begin{aligned}A &= \lbrace 2\,;\,4\,;\,6\rbrace \\ \text{et}\quad B &= \lbrace 1\,;\,2\,;\,3\rbrace\end{aligned}$$
 
 L'intersection rassemble les issues appartenant aux **deux** événements à la fois :
 
@@ -178,7 +178,7 @@ $$3x+4=0 \qquad\text{ou}\qquad x-5=0$$
 
 On résout chaque équation séparément :
 
-$$3x=-4 \quad\text{donc}\quad x=-\dfrac{4}{3} \qquad\text{ou}\qquad x=5$$
+$$\begin{aligned}3x &= -4 \quad\text{donc}\quad x=-\dfrac{4}{3} \\ \text{ou}\quad x &= 5\end{aligned}$$
 
 $$S={\color{#4A5D7A}\left\lbrace -\dfrac{4}{3}\,;\,5\right\rbrace}$$
 

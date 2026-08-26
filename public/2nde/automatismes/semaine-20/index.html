@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 20 - Fonction carrée et équations x² = k — MaBémat</title>
+<title>Semaine 20 - Repère orthonormé et fonction carrée — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Fonction carrée et équations x² = k</p>
+  <p class="wk-subtitle">Repère orthonormé et fonction carrée</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -234,8 +234,9 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ les deux équations suivantes :</p>
-$$x^2=49 \qquad\text{et}\qquad x^2=-9$$
+    <p>Dans un repère orthonormé, on donne $A(1\,;\,-1)$, $B(7\,;\,1)$ et $C(0\,;\,2)$.</p>
+<p>Démontrer que le triangle $ABC$ est rectangle en $A$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -243,9 +244,9 @@ $$x^2=49 \qquad\text{et}\qquad x^2=-9$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>Première équation.</strong> $49$ est positif, donc l&rsquo;équation $x^2=49$ admet deux solutions opposées :</p>
-$$x=-\sqrt{49}=-7 \qquad\text{ou}\qquad x=\sqrt{49}=7$$$$S_1={\color{#4A5D7A}\lbrace -7\,;\,7\rbrace}$$<p><strong>Seconde équation.</strong> Le carré d&rsquo;un nombre réel est toujours positif ou nul, il ne peut donc jamais valoir $-9$ :</p>
-$$S_2={\color{#4A5D7A}\varnothing}$$<p>Retenir : $x^2=k$ a deux solutions si $k>0$, une seule ($0$) si $k=0$, aucune si $k<0$.</p>
+    <div><p>On calcule les carrés des trois longueurs, avec $XY^2=(x_Y-x_X)^2+(y_Y-y_X)^2$. Travailler avec les carrés évite toutes les racines.</p>
+$$\begin{aligned}AB^2 &= (7-1)^2+(1-(-1))^2 \\ &= 6^2+2^2 \\ &= 36+4 \\ &= 40\end{aligned}$$$$\begin{aligned}AC^2 &= (0-1)^2+(2-(-1))^2 \\ &= (-1)^2+3^2 \\ &= 1+9 \\ &= 10\end{aligned}$$$$\begin{aligned}BC^2 &= (0-7)^2+(2-1)^2 \\ &= (-7)^2+1^2 \\ &= 49+1 \\ &= 50\end{aligned}$$<p>Le plus grand est $BC^2$ : si le triangle est rectangle, c&rsquo;est en $A$, le sommet opposé à $[BC]$.</p>
+$$AB^2+AC^2=40+10=50=BC^2$$<p>D&rsquo;après la réciproque du théorème de Pythagore, le triangle $ABC$ est ${\color{#4A5D7A}\text{rectangle en }A}$.</p>
 </div>
   </div>
   
@@ -265,8 +266,10 @@ $$S_2={\color{#4A5D7A}\varnothing}$$<p>Retenir : $x^2=k$ a deux solutions si $k>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
-$$3x^2-5=43$$
+    <p>Soit $f$ la fonction carrée, définie sur $\mathbb{R}$ par $f(x)=x^2$.</p>
+<p><strong>a.</strong> Calculer $f(-7)$ et $f(0{,}5)$.</p>
+<p><strong>b.</strong> Le point $A\,(-3\,;\,9)$ appartient-il à la parabole représentant $f$ ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -274,10 +277,10 @@ $$3x^2-5=43$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On isole d&rsquo;abord $x^2$. On ajoute $5$ à chaque membre :</p>
-$$3x^2=48$$<p>On divise par $3$ :</p>
-$$x^2=16$$<p>Comme $16>0$, il y a deux solutions opposées :</p>
-$$S={\color{#4A5D7A}\lbrace -4\,;\,4\rbrace}$$<p>Erreur fréquente : n&rsquo;écrire que $x=4$. La solution négative compte autant.</p>
+    <div><p><strong>a.</strong> On remplace $x$ par la valeur demandée, entre parenthèses :</p>
+$$\begin{aligned}f(-7) &= (-7)^2 \\ &= {\color{#4A5D7A}49} \qquad f(0{,}5) \\ &= 0{,}5^2 \\ &= {\color{#4A5D7A}0{,}25}\end{aligned}$$<p>Le carré d&rsquo;un nombre négatif est positif, et le carré d&rsquo;un nombre entre $0$ et $1$ est plus petit que lui.</p>
+<p><strong>b.</strong> Un point appartient à la courbe si son ordonnée est l&rsquo;image de son abscisse. On calcule donc $f(-3)$ :</p>
+$$f(-3)=(-3)^2=9$$<p>C&rsquo;est bien l&rsquo;ordonnée de $A$, donc ${\color{#4A5D7A}A\ \text{appartient à la parabole}}$.</p>
 </div>
   </div>
   
@@ -307,7 +310,7 @@ $$(-3)^2 \qquad 2^2 \qquad (-1{,}5)^2$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On calcule chaque carré. Le carré d&rsquo;un nombre négatif est positif :</p>
-$$(-3)^2=9 \qquad 2^2=4 \qquad (-1{,}5)^2=2{,}25$$<p>On range ensuite les résultats :</p>
+$$\begin{aligned}(-3)^2 &= 9 \qquad 2^2 \\ &= 4 \qquad (-1{,}5)^2 \\ &= 2{,}25\end{aligned}$$<p>On range ensuite les résultats :</p>
 $${\color{#4A5D7A}(-1{,}5)^2<2^2<(-3)^2}$$<p>On remarque que l&rsquo;ordre des carrés n&rsquo;est pas celui des nombres de départ : la fonction carrée n&rsquo;est pas croissante sur $\mathbb{R}$ tout entier. Elle est décroissante sur $\left]-\infty\,;\,0\right]$ et croissante sur $\left[0\,;\,+\infty\right[$.</p>
 </div>
   </div>
@@ -328,9 +331,8 @@ $${\color{#4A5D7A}(-1{,}5)^2<2^2<(-3)^2}$$<p>On remarque que l&rsquo;ordre des c
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère orthonormé, on donne $A(1\,;\,2)$ et $B(7\,;\,10)$.</p>
-<p>Déterminer les coordonnées du milieu $I$ de $[AB]$, puis la distance $AB$.</p>
-
+    <p>Écrire sous la forme $3^n$, où $n$ est un entier relatif :</p>
+$$A=\dfrac{3^{5}\times 3^{-2}}{3^{4}}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -338,9 +340,10 @@ $${\color{#4A5D7A}(-1{,}5)^2<2^2<(-3)^2}$$<p>On remarque que l&rsquo;ordre des c
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Milieu :</p>
-$$x_I=\dfrac{1+7}{2}=4 \qquad y_I=\dfrac{2+10}{2}=6 \qquad I\ {\color{#4A5D7A}(4\,;\,6)}$$<p>Distance :</p>
-$$AB=\sqrt{6^2+8^2}=\sqrt{36+64}=\sqrt{100}={\color{#4A5D7A}10}$$</div>
+    <div><p>On regroupe d&rsquo;abord le numérateur, avec $a^m\times a^n=a^{m+n}$ :</p>
+$$3^{5}\times 3^{-2}=3^{5+(-2)}=3^{3}$$<p>On divise ensuite, avec $\dfrac{a^m}{a^n}=a^{m-n}$ :</p>
+$$A=\dfrac{3^{3}}{3^{4}}=3^{3-4}={\color{#4A5D7A}3^{-1}}$$<p>Vérification : $3^{-1}=\dfrac{1}{3}$, et $\dfrac{243\times\frac{1}{9}}{81}=\dfrac{27}{81}=\dfrac{1}{3}$.</p>
+</div>
   </div>
   
 </article>
@@ -434,8 +437,9 @@ $$\dfrac{35}{100}\times 420={\color{#4A5D7A}\dfrac{35\times 420}{100}}$$<p>La r�
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ les deux équations suivantes :</p>
-$$x^2=64 \qquad\text{et}\qquad x^2=-16$$
+    <p>Dans un repère orthonormé, on donne $A(-2\,;\,3)$, $B(2\,;\,1)$ et $C(4\,;\,5)$.</p>
+<p>Démontrer que le triangle $ABC$ est rectangle et isocèle en $B$.</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -443,9 +447,10 @@ $$x^2=64 \qquad\text{et}\qquad x^2=-16$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>Première équation.</strong> $64$ est positif, donc l&rsquo;équation $x^2=64$ admet deux solutions opposées :</p>
-$$x=-\sqrt{64}=-8 \qquad\text{ou}\qquad x=\sqrt{64}=8$$$$S_1={\color{#4A5D7A}\lbrace -8\,;\,8\rbrace}$$<p><strong>Seconde équation.</strong> Le carré d&rsquo;un nombre réel est toujours positif ou nul, il ne peut donc jamais valoir $-16$ :</p>
-$$S_2={\color{#4A5D7A}\varnothing}$$<p>Retenir : $x^2=k$ a deux solutions si $k>0$, une seule ($0$) si $k=0$, aucune si $k<0$.</p>
+    <div><p>On calcule les carrés des trois longueurs, avec $XY^2=(x_Y-x_X)^2+(y_Y-y_X)^2$. Travailler avec les carrés évite toutes les racines.</p>
+$$\begin{aligned}BA^2 &= (-2-2)^2+(3-1)^2 \\ &= (-4)^2+2^2 \\ &= 16+4 \\ &= 20\end{aligned}$$$$\begin{aligned}BC^2 &= (4-2)^2+(5-1)^2 \\ &= 2^2+4^2 \\ &= 4+16 \\ &= 20\end{aligned}$$$$\begin{aligned}AC^2 &= (4-(-2))^2+(5-3)^2 \\ &= 6^2+2^2 \\ &= 36+4 \\ &= 40\end{aligned}$$<p>Comme $BA^2=BC^2$, les deux longueurs sont égales : le triangle est ${\color{#4A5D7A}\text{isocèle en }B}$.</p>
+<p>Le plus grand carré est $AC^2$, et :</p>
+$$BA^2+BC^2=20+20=40=AC^2$$<p>D&rsquo;après la réciproque du théorème de Pythagore, le triangle est aussi ${\color{#4A5D7A}\text{rectangle en }B}$.</p>
 </div>
   </div>
   
@@ -465,8 +470,10 @@ $$S_2={\color{#4A5D7A}\varnothing}$$<p>Retenir : $x^2=k$ a deux solutions si $k>
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Résoudre dans $\mathbb{R}$ l&rsquo;équation :</p>
-$$5x^2-7=38$$
+    <p>Soit $f$ la fonction carrée, définie sur $\mathbb{R}$ par $f(x)=x^2$.</p>
+<p><strong>a.</strong> Calculer $f(-1{,}5)$ et $f(6)$.</p>
+<p><strong>b.</strong> Le point $B\,(4\,;\,-16)$ appartient-il à la parabole représentant $f$ ?</p>
+
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -474,10 +481,10 @@ $$5x^2-7=38$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On isole d&rsquo;abord $x^2$. On ajoute $7$ à chaque membre :</p>
-$$5x^2=45$$<p>On divise par $5$ :</p>
-$$x^2=9$$<p>Comme $9>0$, il y a deux solutions opposées :</p>
-$$S={\color{#4A5D7A}\lbrace -3\,;\,3\rbrace}$$<p>Erreur fréquente : n&rsquo;écrire que $x=3$. La solution négative compte autant.</p>
+    <div><p><strong>a.</strong> On remplace $x$ par la valeur demandée, entre parenthèses :</p>
+$$\begin{aligned}f(-1{,}5) &= (-1{,}5)^2 \\ &= {\color{#4A5D7A}2{,}25} \qquad f(6) \\ &= 6^2 \\ &= {\color{#4A5D7A}36}\end{aligned}$$<p>Le carré d&rsquo;un nombre négatif est positif : $f(-1{,}5)$ n&rsquo;est pas $-2{,}25$.</p>
+<p><strong>b.</strong> Un point appartient à la courbe si son ordonnée est l&rsquo;image de son abscisse. On calcule donc $f(4)$ :</p>
+$$f(4)=4^2=16 \neq -16$$<p>Donc ${\color{#4A5D7A}B\ \text{n'appartient pas à la parabole}}$. On pouvait conclure sans calcul : un carré n&rsquo;est jamais négatif, aucun point de la parabole n&rsquo;a une ordonnée négative.</p>
 </div>
   </div>
   
@@ -507,7 +514,7 @@ $$(-4)^2 \qquad 3^2 \qquad (-2{,}5)^2$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On calcule chaque carré. Le carré d&rsquo;un nombre négatif est positif :</p>
-$$(-4)^2=16 \qquad 3^2=9 \qquad (-2{,}5)^2=6{,}25$$<p>On range ensuite les résultats :</p>
+$$\begin{aligned}(-4)^2 &= 16 \qquad 3^2 \\ &= 9 \qquad (-2{,}5)^2 \\ &= 6{,}25\end{aligned}$$<p>On range ensuite les résultats :</p>
 $${\color{#4A5D7A}(-2{,}5)^2<3^2<(-4)^2}$$<p>On remarque que l&rsquo;ordre des carrés n&rsquo;est pas celui des nombres de départ : la fonction carrée n&rsquo;est pas croissante sur $\mathbb{R}$ tout entier. Elle est décroissante sur $\left]-\infty\,;\,0\right]$ et croissante sur $\left[0\,;\,+\infty\right[$.</p>
 </div>
   </div>
@@ -528,9 +535,8 @@ $${\color{#4A5D7A}(-2{,}5)^2<3^2<(-4)^2}$$<p>On remarque que l&rsquo;ordre des c
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère orthonormé, on donne $A(2\,;\,-1)$ et $B(8\,;\,7)$.</p>
-<p>Déterminer les coordonnées du milieu $I$ de $[AB]$, puis la distance $AB$.</p>
-
+    <p>Écrire sous la forme $5^n$, où $n$ est un entier relatif :</p>
+$$A=\dfrac{5^{-3}\times 5^{6}}{5^{5}}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -538,9 +544,10 @@ $${\color{#4A5D7A}(-2{,}5)^2<3^2<(-4)^2}$$<p>On remarque que l&rsquo;ordre des c
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Milieu :</p>
-$$x_I=\dfrac{2+8}{2}=5 \qquad y_I=\dfrac{-1+7}{2}=3 \qquad I\ {\color{#4A5D7A}(5\,;\,3)}$$<p>Distance :</p>
-$$AB=\sqrt{6^2+8^2}=\sqrt{36+64}=\sqrt{100}={\color{#4A5D7A}10}$$</div>
+    <div><p>On regroupe d&rsquo;abord le numérateur, avec $a^m\times a^n=a^{m+n}$ :</p>
+$$5^{-3}\times 5^{6}=5^{-3+6}=5^{3}$$<p>On divise ensuite, avec $\dfrac{a^m}{a^n}=a^{m-n}$ :</p>
+$$A=\dfrac{5^{3}}{5^{5}}=5^{3-5}={\color{#4A5D7A}5^{-2}}$$<p>Vérification : $5^{-2}=\dfrac{1}{25}$, et $\dfrac{125}{3125}=\dfrac{1}{25}$.</p>
+</div>
   </div>
   
 </article>
@@ -706,7 +713,7 @@ $$\dfrac{45}{100}\times 260={\color{#4A5D7A}\dfrac{45\times 260}{100}}$$<p>La r�
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

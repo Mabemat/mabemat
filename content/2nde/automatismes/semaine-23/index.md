@@ -34,7 +34,7 @@ Donner la liste de tous les diviseurs positifs de $36$.
 ---CORR---
 On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :
 
-$$1\times 36 \qquad 2\times 18 \qquad 3\times 12 \qquad 4\times 9 \qquad 6\times 6$$
+$$\begin{aligned}& 1\times 36 \qquad 2\times 18 \qquad 3\times 12 \\ & 4\times 9 \qquad 6\times 6\end{aligned}$$
 
 On s'arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l'autre sens.
 
@@ -82,7 +82,7 @@ La somme, en euros, qu'il lui reste à rembourser en mars est :
 ---CORR---
 Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $1\,800$ €.
 
-$$\text{janvier}:\ \dfrac{1}{3}\times 1\,800=600 \qquad \text{février}:\ \dfrac{1}{4}\times 1\,800=450$$
+$$\begin{aligned}\text{janvier}:\ \dfrac{1}{3}\times 1\,800 &= 600 \\ \text{février}:\ \dfrac{1}{4}\times 1\,800 \\ &= 450\end{aligned}$$
 
 Il reste alors :
 
@@ -146,7 +146,7 @@ Donner la liste de tous les diviseurs positifs de $48$.
 ---CORR---
 On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :
 
-$$1\times 48 \qquad 2\times 24 \qquad 3\times 16 \qquad 4\times 12 \qquad 6\times 8$$
+$$\begin{aligned}& 1\times 48 \qquad 2\times 24 \qquad 3\times 16 \\ & 4\times 12 \qquad 6\times 8\end{aligned}$$
 
 On s'arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.
 
@@ -194,7 +194,7 @@ La somme, en euros, qu'il lui reste à rembourser en mars est :
 ---CORR---
 Attention : les deux fractions portent sur le crédit **initial**, pas sur ce qui reste. On calcule donc chaque remboursement à partir de $2\,400$ €.
 
-$$\text{janvier}:\ \dfrac{1}{4}\times 2\,400=600 \qquad \text{février}:\ \dfrac{1}{3}\times 2\,400=800$$
+$$\begin{aligned}\text{janvier}:\ \dfrac{1}{4}\times 2\,400 &= 600 \\ \text{février}:\ \dfrac{1}{3}\times 2\,400 \\ &= 800\end{aligned}$$
 
 Il reste alors :
 

@@ -58,7 +58,7 @@ $$m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{-7-5}{4-(-2)}=\dfrac{-12}{6}=-2$$
 
 L'équation est donc de la forme $y=-2x+p$. On détermine $p$ en utilisant les coordonnées de $A$ :
 
-$$5=-2\times(-2)+p \qquad\text{soit}\qquad 5=4+p \qquad\text{donc}\qquad p=1$$
+$$\begin{aligned}5 &= -2\times(-2)+p \\ \text{soit}\quad 5 &= 4+p \\ \text{donc}\quad p &= 1\end{aligned}$$
 
 $$y={\color{#4A5D7A}-2x+1}$$
 
@@ -72,7 +72,7 @@ Quelle est la probabilité de ne pas obtenir une boule rouge ?
 ---CORR---
 « Ne pas obtenir une rouge » est l'événement contraire de « obtenir une rouge ».
 
-$$P(\text{rouge})=\dfrac{3}{8} \qquad\text{donc}\qquad P(\text{pas rouge})=1-\dfrac{3}{8}={\color{#4A5D7A}\dfrac{5}{8}}$$
+$$\begin{aligned}P(\text{rouge}) &= \dfrac{3}{8} \\ \text{donc}\quad P(\text{pas rouge}) &= 1-\dfrac{3}{8}={\color{#4A5D7A}\dfrac{5}{8}}\end{aligned}$$
 
 On retrouve le même résultat en comptant directement les $8-3=5$ boules non rouges.
 {{< /auto2-exo >}}
@@ -100,7 +100,7 @@ Après une hausse de $25\,\%$, quelle baisse faut-il appliquer pour retrouver le
 ---CORR---
 La hausse correspond au coefficient $1{,}25$. Pour revenir au prix de départ, le coefficient de la baisse doit annuler cet effet, c'est-à-dire que le produit des deux doit valoir $1$ :
 
-$$1{,}25\times k=1 \qquad\text{donc}\qquad k=\dfrac{1}{1{,}25}=0{,}8$$
+$$\begin{aligned}1{,}25\times k &= 1 \\ \text{donc}\quad k &= \dfrac{1}{1{,}25}=0{,}8\end{aligned}$$
 
 Un coefficient de $0{,}8$ correspond à une baisse de ${\color{#4A5D7A}20\,\%}$.
 
@@ -164,7 +164,7 @@ $$m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{-2-6}{3-(-1)}=\dfrac{-8}{4}=-2$$
 
 L'équation est donc de la forme $y=-2x+p$. On détermine $p$ en utilisant les coordonnées de $A$ :
 
-$$6=-2\times(-1)+p \qquad\text{soit}\qquad 6=2+p \qquad\text{donc}\qquad p=4$$
+$$\begin{aligned}6 &= -2\times(-1)+p \\ \text{soit}\quad 6 &= 2+p \\ \text{donc}\quad p &= 4\end{aligned}$$
 
 $$y={\color{#4A5D7A}-2x+4}$$
 
@@ -178,7 +178,7 @@ Quelle est la probabilité de ne pas obtenir une boule verte ?
 ---CORR---
 « Ne pas obtenir une verte » est l'événement contraire de « obtenir une verte ».
 
-$$P(\text{verte})=\dfrac{4}{10} \qquad\text{donc}\qquad P(\text{pas verte})=1-\dfrac{4}{10}=\dfrac{6}{10}={\color{#4A5D7A}\dfrac{3}{5}}$$
+$$\begin{aligned}P(\text{verte}) &= \dfrac{4}{10} \\ \text{donc}\quad P(\text{pas verte}) &= 1-\dfrac{4}{10}=\dfrac{6}{10}={\color{#4A5D7A}\dfrac{3}{5}}\end{aligned}$$
 
 On retrouve le même résultat en comptant directement les $10-4=6$ boules non vertes.
 {{< /auto2-exo >}}
@@ -206,7 +206,7 @@ Après une baisse de $20\,\%$, quelle hausse faut-il appliquer pour retrouver le
 ---CORR---
 La baisse correspond au coefficient $0{,}8$. Pour revenir au prix de départ, le coefficient de la hausse doit annuler cet effet, c'est-à-dire que le produit des deux doit valoir $1$ :
 
-$$0{,}8\times k=1 \qquad\text{donc}\qquad k=\dfrac{1}{0{,}8}=1{,}25$$
+$$\begin{aligned}0{,}8\times k &= 1 \\ \text{donc}\quad k &= \dfrac{1}{0{,}8}=1{,}25\end{aligned}$$
 
 Un coefficient de $1{,}25$ correspond à une hausse de ${\color{#4A5D7A}25\,\%}$.
 

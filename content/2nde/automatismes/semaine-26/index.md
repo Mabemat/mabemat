@@ -34,7 +34,7 @@ En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.
 
 On énumère celles qui donnent une somme de $7$ :
 
-$$(1\,;\,6)\quad(2\,;\,5)\quad(3\,;\,4)\quad(4\,;\,3)\quad(5\,;\,2)\quad(6\,;\,1)$$
+$$\begin{aligned}& (1\,;\,6)\quad(2\,;\,5)\quad(3\,;\,4) \\ & (4\,;\,3)\quad(5\,;\,2)\quad(6\,;\,1)\end{aligned}$$
 
 Il y en a $6$. D'où :
 
@@ -144,7 +144,7 @@ En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.
 
 On énumère celles qui donnent une somme de $6$ :
 
-$$(1\,;\,5)\quad(2\,;\,4)\quad(3\,;\,3)\quad(4\,;\,2)\quad(5\,;\,1)$$
+$$\begin{aligned}& (1\,;\,5)\quad(2\,;\,4)\quad(3\,;\,3) \\ & (4\,;\,2)\quad(5\,;\,1)\end{aligned}$$
 
 Il y en a $5$. D'où :
 
@@ -182,7 +182,7 @@ $$a=2k+1 \qquad\text{et}\qquad b=2k'+1$$
 
 On calcule la somme et on factorise par $2$ :
 
-$$a+b=2k+1+2k'+1=2k+2k'+2={\color{#4A5D7A}2\left(k+k'+1\right)}$$
+$$\begin{aligned}a+b &= 2k+1+2k'+1 \\ &= 2k+2k'+2 \\ &= {\color{#4A5D7A}2\left(k+k'+1\right)}\end{aligned}$$
 
 Comme $k+k'+1$ est un entier, $a+b$ s'écrit bien sous la forme $2\times\text{entier}$ : c'est un nombre pair.
 

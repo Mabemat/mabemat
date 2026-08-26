@@ -14,13 +14,13 @@ Déterminer les coordonnées du milieu $I$ de $[AB]$, puis la distance $AB$.
 ---CORR---
 Les coordonnées du milieu sont les moyennes des coordonnées des extrémités :
 
-$$x_I=\dfrac{x_A+x_B}{2}=\dfrac{-3+5}{2}=1 \qquad y_I=\dfrac{y_A+y_B}{2}=\dfrac{2+(-4)}{2}=-1$$
+$$\begin{aligned}x_I &= \dfrac{x_A+x_B}{2} \\ &= \dfrac{-3+5}{2} \\ &= 1 \qquad y_I \\ &= \dfrac{y_A+y_B}{2} \\ &= \dfrac{2+(-4)}{2} \\ &= -1\end{aligned}$$
 
 $$I\ {\color{#4A5D7A}(1\,;\,-1)}$$
 
 Pour la distance, on applique la formule issue du théorème de Pythagore :
 
-$$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}=\sqrt{8^2+(-6)^2}=\sqrt{64+36}=\sqrt{100}={\color{#4A5D7A}10}$$
+$$\begin{aligned}AB &= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2} \\ &= \sqrt{8^2+(-6)^2} \\ &= \sqrt{64+36} \\ &= \sqrt{100} \\ &= {\color{#4A5D7A}10}\end{aligned}$$
 
 Les carrés effacent les signes : peu importe l'ordre dans lequel on soustrait.
 {{< /auto2-exo >}}
@@ -32,7 +32,7 @@ Les droites $(AB)$ et $(CD)$ sont-elles parallèles ?
 ---CORR---
 Deux droites sont parallèles lorsque les vecteurs qui les dirigent sont colinéaires. On calcule d'abord ces vecteurs :
 
-$$\overrightarrow{AB}\ (4-1\,;\,8-2)=(3\,;\,6) \qquad \overrightarrow{CD}\ (0-(-2)\,;\,4-0)=(2\,;\,4)$$
+$$\begin{aligned}\overrightarrow{AB}\ (4-1\,;\,8-2) &= (3\,;\,6) \\ \overrightarrow{CD}\ (0-(-2)\,;\,4-0) \\ &= (2\,;\,4)\end{aligned}$$
 
 On calcule le déterminant :
 
@@ -48,11 +48,11 @@ Déterminer les coordonnées de $B$.
 ---CORR---
 On part de la formule du milieu et on la retourne. Pour les abscisses :
 
-$$\dfrac{x_A+x_B}{2}=x_I \quad\Longrightarrow\quad x_A+x_B=2x_I \quad\Longrightarrow\quad x_B=2x_I-x_A$$
+$$\begin{aligned}\dfrac{x_A+x_B}{2} &= x_I \quad\Longrightarrow\quad x_A+x_B \\ &= 2x_I \quad\Longrightarrow\quad x_B \\ &= 2x_I-x_A\end{aligned}$$
 
 On applique aux deux coordonnées :
 
-$$x_B=2\times 1-(-2)=4 \qquad y_B=2\times 3-5=1$$
+$$\begin{aligned}x_B &= 2\times 1-(-2) \\ &= 4 \qquad y_B \\ &= 2\times 3-5 \\ &= 1\end{aligned}$$
 
 $$B\ {\color{#4A5D7A}(4\,;\,1)}$$
 
@@ -118,13 +118,13 @@ Déterminer les coordonnées du milieu $I$ de $[AB]$, puis la distance $AB$.
 ---CORR---
 Les coordonnées du milieu sont les moyennes des coordonnées des extrémités :
 
-$$x_I=\dfrac{x_A+x_B}{2}=\dfrac{-6+6}{2}=0 \qquad y_I=\dfrac{y_A+y_B}{2}=\dfrac{-3+13}{2}=5$$
+$$\begin{aligned}x_I &= \dfrac{x_A+x_B}{2} \\ &= \dfrac{-6+6}{2} \\ &= 0 \qquad y_I \\ &= \dfrac{y_A+y_B}{2} \\ &= \dfrac{-3+13}{2} \\ &= 5\end{aligned}$$
 
 $$I\ {\color{#4A5D7A}(0\,;\,5)}$$
 
 Pour la distance, on applique la formule issue du théorème de Pythagore :
 
-$$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}=\sqrt{12^2+16^2}=\sqrt{144+256}=\sqrt{400}={\color{#4A5D7A}20}$$
+$$\begin{aligned}AB &= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2} \\ &= \sqrt{12^2+16^2} \\ &= \sqrt{144+256} \\ &= \sqrt{400} \\ &= {\color{#4A5D7A}20}\end{aligned}$$
 
 Les carrés effacent les signes : peu importe l'ordre dans lequel on soustrait.
 {{< /auto2-exo >}}
@@ -136,7 +136,7 @@ Les droites $(AB)$ et $(CD)$ sont-elles parallèles ?
 ---CORR---
 Deux droites sont parallèles lorsque les vecteurs qui les dirigent sont colinéaires. On calcule d'abord ces vecteurs :
 
-$$\overrightarrow{AB}\ (4-0\,;\,7-1)=(4\,;\,6) \qquad \overrightarrow{CD}\ (4-(-2)\,;\,9-0)=(6\,;\,9)$$
+$$\begin{aligned}\overrightarrow{AB}\ (4-0\,;\,7-1) &= (4\,;\,6) \\ \overrightarrow{CD}\ (4-(-2)\,;\,9-0) \\ &= (6\,;\,9)\end{aligned}$$
 
 On calcule le déterminant :
 
@@ -152,11 +152,11 @@ Déterminer les coordonnées de $B$.
 ---CORR---
 On part de la formule du milieu et on la retourne. Pour les abscisses :
 
-$$\dfrac{x_A+x_B}{2}=x_I \quad\Longrightarrow\quad x_A+x_B=2x_I \quad\Longrightarrow\quad x_B=2x_I-x_A$$
+$$\begin{aligned}\dfrac{x_A+x_B}{2} &= x_I \quad\Longrightarrow\quad x_A+x_B \\ &= 2x_I \quad\Longrightarrow\quad x_B \\ &= 2x_I-x_A\end{aligned}$$
 
 On applique aux deux coordonnées :
 
-$$x_B=2\times(-2)-3=-7 \qquad y_B=2\times 1-(-4)=6$$
+$$\begin{aligned}x_B &= 2\times(-2)-3 \\ &= -7 \qquad y_B \\ &= 2\times 1-(-4) \\ &= 6\end{aligned}$$
 
 $$B\ {\color{#4A5D7A}(-7\,;\,6)}$$
 

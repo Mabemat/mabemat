@@ -56,7 +56,7 @@ On divise bien par l'effectif total $20$, et non par le nombre de valeurs diffé
 {{< auto2-exo numero="03" >}}
 On considère la série suivante, rangée dans l'ordre croissant :
 
-$$3\ ;\ 5\ ;\ 5\ ;\ 6\ ;\ 8\ ;\ 9\ ;\ 9\ ;\ 11\ ;\ 12\ ;\ 14\ ;\ 15\ ;\ 18$$
+$$\begin{aligned}& 3\ ;\ 5\ ;\ 5\ ;\ 6\ ;\ 8\ ;\ 9 \\ & 9\ ;\ 11\ ;\ 12\ ;\ 14\ ;\ 15\ ;\ 18\end{aligned}$$
 
 Déterminer le premier quartile $Q_1$ et le troisième quartile $Q_3$.
 ---CORR---
@@ -192,7 +192,7 @@ On divise bien par l'effectif total $20$, et non par le nombre de valeurs diffé
 {{< auto2-exo numero="03" >}}
 On considère la série suivante, rangée dans l'ordre croissant :
 
-$$2\ ;\ 4\ ;\ 4\ ;\ 7\ ;\ 7\ ;\ 10\ ;\ 11\ ;\ 13\ ;\ 13\ ;\ 16\ ;\ 17\ ;\ 20$$
+$$\begin{aligned}& 2\ ;\ 4\ ;\ 4\ ;\ 7\ ;\ 7\ ;\ 10 \\ & 11\ ;\ 13\ ;\ 13\ ;\ 16\ ;\ 17\ ;\ 20\end{aligned}$$
 
 Déterminer le premier quartile $Q_1$ et le troisième quartile $Q_3$.
 ---CORR---

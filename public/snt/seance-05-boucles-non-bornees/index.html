@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Séance 05 — Boucles non bornées — MaBémat</title>
+<title>Séance 05 - Boucles non bornées — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -226,13 +226,13 @@ pre[style*="background-color"] {
 
 
 
-<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="exercice-1--tableau-de-suivi">Exercice 1 — Tableau de suivi</h3>
-<p>On considère le programme suivant :</p>
+<section id="exos" class="tab-panel active fade-up d3"><div id="exo-enonces" hidden><h3 id="échauffement---tableau-de-suivi">Échauffement - Tableau de suivi</h3>
+<p>On considère le programme suivant, qui affiche les puissances de 2 inférieures à 100 :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>p <span style="color:#666">=</span> <span style="color:#40a070">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> p <span style="color:#666">&lt;</span> <span style="color:#40a070">100</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(p)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    p <span style="color:#666">=</span> p <span style="color:#666">*</span> <span style="color:#40a070">2</span>
-</span></span></code></pre></div><p><strong>Q1.</strong> Compléter le tableau de suivi d&rsquo;exécution <em>sans exécuter le programme</em> :</p>
+</span></span></code></pre></div><p>Compléter le tableau de suivi d&rsquo;exécution <em>sans exécuter le programme</em> :</p>
 <table>
   <thead>
       <tr>
@@ -297,13 +297,13 @@ pre[style*="background-color"] {
           <td style="text-align: center">Tour 7</td>
           <td style="text-align: center">&hellip;</td>
           <td style="text-align: center">❌ Fausse</td>
-          <td style="text-align: center">Non — arrêt</td>
-          <td style="text-align: center">—</td>
+          <td style="text-align: center">Non - arrêt</td>
+          <td style="text-align: center">-</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h3 id="exercice-2--analyser-une-boucle-while">Exercice 2 — Analyser une boucle while</h3>
+<h3 id="exercice-1---lecture-dun-programme">Exercice 1 - Lecture d&rsquo;un programme</h3>
 <p>On considère le programme Python suivant :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">50</span>:
@@ -311,15 +311,17 @@ pre[style*="background-color"] {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(n)
 </span></span></code></pre></div><p><strong>Q1.</strong> Identifiez la condition de la boucle <code>while</code> et le bloc d&rsquo;instructions répété.</p>
 <p><strong>Q2.</strong> Indiquez les valeurs successives prises par <code>n</code> à chaque tour de boucle.</p>
-<p><strong>Q3.</strong> Recopiez ce programme, ajoutez <code>print(n)</code> à la fin et exécutez-le pour vérifier.</p>
+<p><strong>Q3.</strong> Recopiez ce programme et exécutez-le pour vérifier vos réponses.</p>
 <p><strong>Q4.</strong> Voici une variante :</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&lt;</span> <span style="color:#40a070">50</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    n <span style="color:#666">=</span> n <span style="color:#666">+</span> n
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020">print</span>(n)    <span style="color:#60a0b0;font-style:italic"># print est maintenant DANS la boucle</span>
-</span></span></code></pre></div><p>Avant de l&rsquo;exécuter : quelle différence avec le programme initial ? Que va afficher ce programme ?</p>
+</span></span></code></pre></div><p><em>Étape A.</em> Avant de l&rsquo;exécuter : quelle différence avec le programme initial ? Que va afficher ce programme, selon vous ?</p>
+<p><em>Étape B.</em> Recopiez ce programme et exécutez-le pour confirmer votre prédiction.</p>
+<p><strong>For ou while ?</strong> Aurait-on pu utiliser une boucle <code>for</code> pour ce programme ? Justifiez en une phrase.</p>
 <hr>
-<h3 id="exercice-3--compte-à-rebours">Exercice 3 — Compte à rebours</h3>
+<h3 id="exercice-2---compte-à-rebours">Exercice 2 - Compte à rebours</h3>
 <p>On souhaite afficher un compte à rebours de <strong>10 jusqu&rsquo;à 0</strong> (inclus), puis afficher le message <code>&quot;Décollage !&quot;</code>.</p>
 <p><strong>Q1.</strong> Compléter l&rsquo;algorithme suivant :</p>
 <pre tabindex="0"><code>n ← ...
@@ -329,31 +331,31 @@ Tant que n ... :
 Fin Tant que
 Afficher &#34;Décollage !&#34;
 </code></pre><p><strong>Q2.</strong> Programmer cet algorithme en Python avec une boucle <code>while</code>.</p>
-<p><strong>Bonus :</strong> Réécrire le compte à rebours en utilisant une boucle <code>for</code>.</p>
+<p><strong>For ou while ?</strong> Ici, on connaissait à l&rsquo;avance le nombre de répétitions (10 → 0). Aurait-on pu utiliser <code>for i in range(...)</code> ? Essayez de l&rsquo;écrire.</p>
 <hr>
-<h3 id="exercice-4--déboguer-des-boucles-while">Exercice 4 — Déboguer des boucles while</h3>
+<h3 id="exercice-3---déboguer-une-boucle">Exercice 3 - Déboguer une boucle</h3>
 <p>Voici trois programmes qui contiennent chacun <strong>une erreur</strong> liée à la boucle <code>while</code>. Pour chacun : identifier le problème, expliquer ce qui se passerait à l&rsquo;exécution, et proposer une correction.</p>
-<p><strong>Q1 — Programme A</strong></p>
+<p><strong>Programme A</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>n <span style="color:#666">=</span> <span style="color:#40a070">10</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">&gt;</span> <span style="color:#40a070">0</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(n)
-</span></span></code></pre></div><p><strong>Q2 — Programme B</strong></p>
+</span></span></code></pre></div><p><strong>Programme B</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>capital <span style="color:#666">=</span> <span style="color:#40a070">1000</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> capital <span style="color:#666">&gt;=</span> <span style="color:#40a070">1000</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    capital <span style="color:#666">=</span> capital <span style="color:#666">*</span> <span style="color:#40a070">1.05</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#007020">print</span>(capital)
 </span></span></code></pre></div><p><em>(Objectif supposé : faire grossir le capital jusqu&rsquo;à dépasser 2 000 €.)</em></p>
-<p><strong>Q3 — Programme C</strong></p>
+<p><strong>Programme C</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>compteur <span style="color:#666">=</span> <span style="color:#40a070">0</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#007020;font-weight:bold">while</span> compteur <span style="color:#666">&lt;</span> <span style="color:#40a070">5</span>:
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Bonjour&#34;</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>
 </span></span></code></pre></div><hr>
-<h3 id="exercice-5--batterie-de-chloé">Exercice 5 — Batterie de Chloé</h3>
+<h3 id="exercice-4---batterie-de-téléphone">Exercice 4 - Batterie de téléphone</h3>
 <p>La batterie du téléphone de Chloé est chargée à <strong>95 %</strong>. Chaque heure d&rsquo;utilisation, elle perd <strong>8 points de pourcentage</strong>. Le téléphone affiche une alerte « batterie faible » quand la charge passe <strong>sous 20 %</strong>.</p>
 <p><strong>Q1.</strong> Sans écrire de code, estimer combien d&rsquo;heures Chloé peut utiliser son téléphone avant l&rsquo;alerte.</p>
 <p><strong>Q2.</strong> Écrire un programme Python avec une boucle <code>while</code> qui affiche le niveau de batterie heure par heure et s&rsquo;arrête dès qu&rsquo;il passe sous 20 %. Afficher le nombre d&rsquo;heures à la fin.</p>
-<p><strong>Q3.</strong> Encapsuler ce programme dans une fonction <code>heures_batterie(charge_initiale, consommation_horaire, seuil_alerte)</code> qui renvoie le nombre d&rsquo;heures avant l&rsquo;alerte.</p>
+<p><strong>Q3.</strong> Encapsuler ce programme dans une fonction <code>heures_batterie(charge_initiale, consommation_horaire, seuil_alerte)</code> qui <strong>renvoie</strong> le nombre d&rsquo;heures avant l&rsquo;alerte.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">heures_batterie</span>(charge_initiale, consommation_horaire, seuil_alerte):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    charge <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    heures <span style="color:#666">=</span> <span style="color:#666">...</span>
@@ -361,13 +363,14 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        charge <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        heures <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#666">...</span>
-</span></span></code></pre></div><p><strong>Q4.</strong> Si Chloé économise et ne perd que <strong>5 % par heure</strong>, combien d&rsquo;heures peut-elle attendre (seuil à 20 %) ?</p>
+</span></span></code></pre></div><p><strong>Q4.</strong> Si Chloé économise et ne perd que <strong>5 % par heure</strong>, combien d&rsquo;heures peut-elle attendre avant de charger (seuil à 20 %) ?</p>
+<p><strong>For ou while ?</strong> Pourquoi a-t-on utilisé <code>while</code> ici et pas <code>for</code> ?</p>
 <hr>
-<h3 id="exercice-6--épargne-de-léa">Exercice 6 — Épargne de Léa</h3>
+<h3 id="exercice-5---capital-et-intérêts">Exercice 5 - Capital et intérêts</h3>
 <p>Les parents de Léa ont placé <strong>2 000 €</strong> sur un livret d&rsquo;épargne avec un taux d&rsquo;intérêt annuel de <strong>2,5 %</strong>.</p>
 <p><strong>Q1.</strong> Calculer mentalement le capital après 1 an, puis après 2 ans.</p>
 <p><strong>Q2.</strong> Écrire un programme Python utilisant une boucle <code>while</code> pour déterminer au bout de combien d&rsquo;années le capital dépassera <strong>3 000 €</strong>. Afficher le nombre d&rsquo;années et le capital atteint.</p>
-<p><strong>Q3.</strong> Encapsuler dans une fonction <code>annee(capital_initial, taux, objectif)</code> qui renvoie le nombre d&rsquo;années nécessaires.</p>
+<p><strong>Q3.</strong> Encapsuler dans une fonction <code>annee(capital_initial, taux, objectif)</code> qui renvoie le nombre d&rsquo;années nécessaires. La tester avec les valeurs de l&rsquo;énoncé.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">annee</span>(capital_initial, taux, objectif):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    capital <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    annees <span style="color:#666">=</span> <span style="color:#666">...</span>
@@ -375,12 +378,12 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        capital <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        annees <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#666">...</span>
-</span></span></code></pre></div><p><strong>Q4.</strong> Appeler cette fonction pour déterminer au bout de combien d&rsquo;années le capital dépassera <strong>5 000 €</strong>.</p>
+</span></span></code></pre></div><p><strong>Q4.</strong> Appeler cette fonction avec les bonnes valeurs pour déterminer au bout de combien d&rsquo;années le capital dépassera <strong>5 000 €</strong>.</p>
 <hr>
-<h3 id="exercice-7--abonnés-de-lucas">Exercice 7 — Abonnés de Lucas</h3>
-<p>Lucas crée un compte sur un réseau social avec <strong>150 abonnés</strong>. Son nombre d&rsquo;abonnés <strong>augmente de 12 % chaque semaine</strong>.</p>
+<h3 id="exercice-6---influence-sur-les-réseaux">Exercice 6 - Influence sur les réseaux</h3>
+<p>Lucas crée un compte sur un réseau social avec <strong>150 abonnés</strong>. Grâce à ses vidéos, son nombre d&rsquo;abonnés <strong>augmente de 12 % chaque semaine</strong>.</p>
 <p><strong>Q1.</strong> Calculer à la main le nombre d&rsquo;abonnés après 1 semaine puis après 2 semaines.</p>
-<p><strong>Q2.</strong> Écrire un programme Python avec une boucle <code>while</code> qui affiche semaine par semaine le nombre d&rsquo;abonnés, jusqu&rsquo;à ce qu&rsquo;il atteigne <strong>1 000 abonnés</strong>. Afficher aussi le nombre de semaines nécessaires.</p>
+<p><strong>Q2.</strong> Écrire un programme Python avec une boucle <code>while</code> qui affiche semaine par semaine le nombre d&rsquo;abonnés de Lucas, jusqu&rsquo;à ce qu&rsquo;il atteigne <strong>1 000 abonnés</strong>. Afficher aussi le nombre de semaines nécessaires.</p>
 <p><strong>Q3.</strong> Encapsuler dans une fonction <code>semaines_pour_atteindre(abonnes_depart, taux_hebdo, objectif)</code> qui renvoie le nombre de semaines nécessaires.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">semaines_pour_atteindre</span>(abonnes_depart, taux_hebdo, objectif):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    abonnes <span style="color:#666">=</span> <span style="color:#666">...</span>
@@ -389,10 +392,24 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        abonnes <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        semaines <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">return</span> <span style="color:#666">...</span>
-</span></span></code></pre></div><p><strong>Q4.</strong> Avec un taux fixé à 12 %, à partir de combien d&rsquo;abonnés au départ Lucas atteindrait-il <strong>1 000 abonnés en moins de 10 semaines</strong> ?</p>
-<p><strong>Q5.</strong> Un autre créateur part de <strong>500 abonnés</strong> mais ne progresse que de <strong>5 % par semaine</strong>. Qui atteint 1 000 abonnés en premier ? Vérifier avec la fonction.</p>
+</span></span></code></pre></div><p><strong>Q4.</strong> Avec un taux fixé à 12 %, à partir de combien d&rsquo;abonnés au départ Lucas atteindrait-il <strong>1 000 abonnés en moins de 10 semaines</strong> ? Utiliser la fonction avec différentes valeurs de départ.</p>
+<p><strong>Q5.</strong> Un autre créateur part de <strong>500 abonnés</strong> mais ne progresse que de <strong>5 % par semaine</strong>. Qui de Lucas (150 abonnés, +12 %/semaine) ou de ce créateur atteint 1 000 abonnés en premier ? Vérifier avec la fonction.</p>
 <hr>
-<h3 id="exercice-8--suite-de-syracuse">Exercice 8 — Suite de Syracuse</h3>
+<h3 id="exercice-7---population-dune-ville">Exercice 7 - Population d&rsquo;une ville</h3>
+<p>Une ville compte <strong>80 000 habitants</strong> en 2024. Sa population <strong>diminue de 1,5 % par an</strong>.</p>
+<p><strong>Q1.</strong> Écrire un programme Python utilisant une boucle <code>while</code> pour déterminer en quelle année la population sera <strong>inférieure à 70 000 habitants</strong>.</p>
+<p><strong>Q2.</strong> Généraliser en écrivant une fonction <code>annee_seuil(pop_initiale, taux_variation, seuil, annee_debut)</code> qui renvoie l&rsquo;année à partir de laquelle la population passe en dessous du seuil.</p>
+<p><em>Remarque : <code>taux_variation</code> sera négatif pour une baisse (par exemple <code>-0.015</code> pour −1,5 %).</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">annee_seuil</span>(pop_initiale, taux_variation, seuil, annee_debut):
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    pop <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    annee <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    <span style="color:#007020;font-weight:bold">while</span> pop <span style="color:#666">&gt;=</span> seuil:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>        pop <span style="color:#666">=</span> pop <span style="color:#666">*</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        annee <span style="color:#666">=</span> <span style="color:#666">...</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">return</span> annee
+</span></span></code></pre></div><p><strong>Q3.</strong> Faire le bon appel pour déterminer en quelle année la population sera <strong>inférieure à 50 000 habitants</strong>.</p>
+<hr>
+<h3 id="exercice-8---suite-de-syracuse">Exercice 8 - Suite de Syracuse</h3>
 <p>La <strong>suite de Syracuse</strong> est définie ainsi : on part d&rsquo;un entier <code>n</code> strictement positif, puis :</p>
 <ul>
 <li>si <code>n</code> est <strong>pair</strong> : <code>n = n // 2</code></li>
@@ -400,20 +417,95 @@ Afficher &#34;Décollage !&#34;
 </ul>
 <p>On répète jusqu&rsquo;à obtenir <code>n = 1</code>. La conjecture de Syracuse (non démontrée à ce jour !) dit qu&rsquo;on finit toujours par atteindre 1.</p>
 <p><strong>Q1.</strong> Appliquer cette suite à la main en partant de <code>n = 6</code>. Donner toutes les valeurs et le nombre d&rsquo;étapes.</p>
-<p><strong>Q2.</strong> Compléter la fonction <code>syracuse(n)</code> qui affiche toutes les valeurs de la suite et renvoie le nombre d&rsquo;étapes.</p>
+<p><strong>Q2.</strong> Compléter la fonction <code>syracuse(n)</code> qui affiche toutes les valeurs de la suite jusqu&rsquo;à 1 et renvoie le nombre d&rsquo;étapes. Tester avec <code>n = 6</code>.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">syracuse</span>(n):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    etapes <span style="color:#666">=</span> <span style="color:#40a070">0</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>    <span style="color:#007020;font-weight:bold">while</span> n <span style="color:#666">!=</span> <span style="color:#40a070">1</span>:
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>        <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>        <span style="color:#007020;font-weight:bold">if</span> n <span style="color:#666">%</span> <span style="color:#40a070">2</span> <span style="color:#666">==</span> <span style="color:#40a070">0</span>:   <span style="color:#60a0b0;font-style:italic"># n est pair</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>            n <span style="color:#666">=</span> <span style="color:#666">...</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>        <span style="color:#007020;font-weight:bold">else</span>:
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>        <span style="color:#007020;font-weight:bold">else</span>:            <span style="color:#60a0b0;font-style:italic"># n est impair</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>            n <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>        <span style="color:#007020">print</span>(n)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>        etapes <span style="color:#666">=</span> <span style="color:#666">...</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    <span style="color:#007020;font-weight:bold">return</span> etapes
 </span></span></code></pre></div><p><strong>Q3.</strong> Tester avec <code>n = 27</code>. Combien d&rsquo;étapes faut-il ?</p>
 </div>
-  <div id="exo-corrs" hidden><h3 id="exercice-1--lecture-dun-programme">Exercice 1 — Lecture d&rsquo;un programme</h3>
+  <div id="exo-corrs" hidden><h3 id="échauffement---tableau-de-suivi">Échauffement - Tableau de suivi</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Tour</th>
+          <th style="text-align: center"><code>p</code> avant le test</th>
+          <th style="text-align: center">Condition <code>p &lt; 100</code></th>
+          <th style="text-align: center"><code>p</code> est affiché ?</th>
+          <th style="text-align: center">Nouvelle valeur de <code>p</code></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">Départ</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 1</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 2</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 3</td>
+          <td style="text-align: center">8</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">16</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 4</td>
+          <td style="text-align: center">16</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">32</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 5</td>
+          <td style="text-align: center">32</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">64</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 6</td>
+          <td style="text-align: center">64</td>
+          <td style="text-align: center">✅ Vraie</td>
+          <td style="text-align: center">Oui</td>
+          <td style="text-align: center">128</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">Tour 7</td>
+          <td style="text-align: center">128</td>
+          <td style="text-align: center">❌ Fausse</td>
+          <td style="text-align: center">Non - arrêt</td>
+          <td style="text-align: center">-</td>
+      </tr>
+  </tbody>
+</table>
+<p>Le programme affiche donc : <code>1  2  4  8  16  32  64</code>.</p>
+<blockquote>
+<p>⚠️ <strong>128 n&rsquo;est jamais affiché.</strong> La condition est testée <strong>avant</strong> d&rsquo;entrer dans le bloc : quand <code>p</code> vaut 128, le test <code>128 &lt; 100</code> est faux, la boucle s&rsquo;arrête aussitôt et <code>print(p)</code> n&rsquo;est pas exécuté. À la sortie de la boucle, <code>p</code> vaut pourtant bien 128.</p>
+</blockquote>
+<hr>
+<h3 id="exercice-1---lecture-dun-programme">Exercice 1 - Lecture d&rsquo;un programme</h3>
 <p><strong>Q1.</strong> Condition : <code>n &lt; 50</code>. Bloc répété : <code>n = n + n</code>.</p>
 <p><strong>Q2.</strong> Valeurs successives :</p>
 <table>
@@ -428,7 +520,7 @@ Afficher &#34;Décollage !&#34;
       <tr>
           <td>Départ</td>
           <td>1</td>
-          <td>—</td>
+          <td>-</td>
       </tr>
       <tr>
           <td>Tour 1</td>
@@ -463,7 +555,7 @@ Afficher &#34;Décollage !&#34;
       <tr>
           <td>Arrêt</td>
           <td>64 ≥ 50 → stop</td>
-          <td>—</td>
+          <td>-</td>
       </tr>
   </tbody>
 </table>
@@ -478,7 +570,7 @@ Afficher &#34;Décollage !&#34;
 64
 </code></pre><p>(6 valeurs, toutes après doublement, contre 1 seule dans la version initiale.)</p>
 <hr>
-<h3 id="exercice-2--compte-à-rebours">Exercice 2 — Compte à rebours</h3>
+<h3 id="exercice-2---compte-à-rebours">Exercice 2 - Compte à rebours</h3>
 <p><strong>Q1.</strong></p>
 <pre tabindex="0"><code>n ← 10
 Tant que n &gt;= 0 :
@@ -497,7 +589,7 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    <span style="color:#007020">print</span>(n)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Décollage !&#34;</span>)
 </span></span></code></pre></div><hr>
-<h3 id="exercice-3--déboguer-des-boucles-while">Exercice 3 — Déboguer des boucles while</h3>
+<h3 id="exercice-3---déboguer-une-boucle">Exercice 3 - Déboguer une boucle</h3>
 <p><strong>Programme A</strong></p>
 <p>Problème : la variable <code>n</code> n&rsquo;est jamais modifiée dans la boucle. <code>n &gt; 0</code> reste toujours vraie → <strong>boucle infinie</strong>.</p>
 <p>Correction : ajouter <code>n = n - 1</code> dans le bloc de la boucle.</p>
@@ -520,7 +612,7 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    <span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Bonjour&#34;</span>)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>    compteur <span style="color:#666">=</span> compteur <span style="color:#666">+</span> <span style="color:#40a070">1</span>
 </span></span></code></pre></div><hr>
-<h3 id="exercice-4--batterie-de-téléphone">Exercice 4 — Batterie de téléphone</h3>
+<h3 id="exercice-4---batterie-de-téléphone">Exercice 4 - Batterie de téléphone</h3>
 <p><strong>Q1.</strong> 95 − 8×n &lt; 20 → n &gt; 75/8 = 9.375 → environ <strong>9 à 10 heures</strong>.</p>
 <p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>charge <span style="color:#666">=</span> <span style="color:#40a070">95</span>
@@ -596,7 +688,7 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">return</span> heures
 </span></span></code></pre></div><p><strong>Q4.</strong> <code>heures_batterie(95, 5, 20)</code> → <strong>16 heures</strong> (95 − 5×16 = 15 &lt; 20).</p>
 <hr>
-<h3 id="exercice-5--capital-et-intérêts">Exercice 5 — Capital et intérêts</h3>
+<h3 id="exercice-5---capital-et-intérêts">Exercice 5 - Capital et intérêts</h3>
 <p><strong>Q1.</strong></p>
 <ul>
 <li>Après 1 an : 2 000 × 1.025 = <strong>2 050 €</strong></li>
@@ -610,8 +702,11 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>    annees <span style="color:#666">=</span> annees <span style="color:#666">+</span> <span style="color:#40a070">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Nombre d&#39;années :&#34;</span>, annees)
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#007020">print</span>(<span style="color:#4070a0">&#34;Capital atteint :&#34;</span>, <span style="color:#007020">round</span>(capital, <span style="color:#40a070">2</span>), <span style="color:#4070a0">&#34;€&#34;</span>)
-</span></span></code></pre></div><p>Résultat : <strong>17 ans</strong>, capital ≈ 3 040.15 €<br>
-(2 000 × 1.025¹⁷ ≈ 3 040)</p>
+</span></span></code></pre></div><p>Résultat : <strong>17 ans</strong>, capital ≈ <strong>3 043.24 €</strong><br>
+(après 16 ans le capital vaut 2 969.01 €, encore en dessous de 3 000 ; c&rsquo;est le 17ᵉ tour qui fait passer au-dessus)</p>
+<blockquote>
+<p>⚠️ <strong><code>print</code> ou <code>return</code> ?</strong> Ici on est dans le <strong>programme principal</strong>, pas dans une fonction : on utilise donc <code>print</code> pour afficher le résultat. À la question 3, la même logique est mise dans une fonction : on utilisera alors <code>return</code>, jamais <code>print</code>.</p>
+</blockquote>
 <p><strong>Q3.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">annee</span>(capital_initial, taux, objectif):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>    capital <span style="color:#666">=</span> capital_initial
@@ -621,9 +716,12 @@ Afficher &#34;Décollage !&#34;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>        annees <span style="color:#666">=</span> annees <span style="color:#666">+</span> <span style="color:#40a070">1</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>    <span style="color:#007020;font-weight:bold">return</span> annees
 </span></span></code></pre></div><p><strong>Q4.</strong> <code>annee(2000, 2.5, 5000)</code> → <strong>38 ans</strong><br>
-(2 000 × 1.025³⁸ ≈ 5 037)</p>
+(le capital atteint alors ≈ 5 111.36 €)</p>
+<blockquote>
+<p>⚠️ Attention au paramètre <code>taux</code> : la fonction attend <strong>2.5</strong> (le pourcentage), pas 0.025. C&rsquo;est la ligne <code>capital = capital * (1 + taux / 100)</code> qui fait la conversion. Un appel <code>annee(2000, 0.025, 5000)</code> renverrait 3 666 ans !</p>
+</blockquote>
 <hr>
-<h3 id="exercice-6--influence-sur-les-réseaux">Exercice 6 — Influence sur les réseaux</h3>
+<h3 id="exercice-6---influence-sur-les-réseaux">Exercice 6 - Influence sur les réseaux</h3>
 <p><strong>Q1.</strong></p>
 <ul>
 <li>Après 1 semaine : 150 × 1.12 = <strong>168 abonnés</strong></li>
@@ -654,7 +752,7 @@ Afficher &#34;Décollage !&#34;
 Lucas (150 abonnés, +12 %/semaine) → <strong>17 semaines</strong></p>
 <p>L&rsquo;autre créateur atteint 1 000 abonnés en premier (15 semaines contre 17).</p>
 <hr>
-<h3 id="exercice-7--population-dune-ville">Exercice 7 — Population d&rsquo;une ville</h3>
+<h3 id="exercice-7---population-dune-ville">Exercice 7 - Population d&rsquo;une ville</h3>
 <p><strong>Q1.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>pop <span style="color:#666">=</span> <span style="color:#40a070">80000</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>annee <span style="color:#666">=</span> <span style="color:#40a070">2024</span>
@@ -724,7 +822,7 @@ Lucas (150 abonnés, +12 %/semaine) → <strong>17 semaines</strong></p>
 </span></span></code></pre></div><p><strong>Q3.</strong> <code>annee_seuil(80000, -0.015, 50000, 2024)</code> → <strong>2056</strong><br>
 (la population atteint ≈ 49 323 habitants cette année-là)</p>
 <hr>
-<h3 id="exercice-8--suite-de-syracuse">Exercice 8 — Suite de Syracuse</h3>
+<h3 id="exercice-8---suite-de-syracuse">Exercice 8 - Suite de Syracuse</h3>
 <p><strong>Q1.</strong> Départ de n = 6 :</p>
 <table>
   <thead>
@@ -736,7 +834,7 @@ Lucas (150 abonnés, +12 %/semaine) → <strong>17 semaines</strong></p>
   </thead>
   <tbody>
       <tr>
-          <td>—</td>
+          <td>-</td>
           <td>6</td>
           <td>pair → ÷2</td>
       </tr>
@@ -782,7 +880,7 @@ Lucas (150 abonnés, +12 %/semaine) → <strong>17 semaines</strong></p>
       </tr>
   </tbody>
 </table>
-<p>Suite : 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 — <strong>8 étapes</strong>.</p>
+<p>Suite : 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1 - <strong>8 étapes</strong>.</p>
 <p><strong>Q2.</strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">syracuse</span>(n):
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>    etapes <span style="color:#666">=</span> <span style="color:#40a070">0</span>
@@ -1156,7 +1254,7 @@ async function runPython() {
   </script>
   <script>
      
-    const BUILD_TS = '1787576504';
+    const BUILD_TS = '1787735156';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

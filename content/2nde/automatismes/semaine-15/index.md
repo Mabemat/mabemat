@@ -12,7 +12,7 @@ Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f
 ---CORR---
 On cherche d'abord la valeur qui annule $f$ :
 
-$$-2x+6=0 \quad\Longrightarrow\quad -2x=-6 \quad\Longrightarrow\quad x=3$$
+$$\begin{aligned}-2x+6 &= 0 \quad\Longrightarrow\quad -2x \\ &= -6 \quad\Longrightarrow\quad x \\ &= 3\end{aligned}$$
 
 Le coefficient directeur vaut $-2$, il est négatif : la fonction est décroissante. Elle est donc positive **avant** sa racine et négative **après**.
 
@@ -20,7 +20,7 @@ Le coefficient directeur vaut $-2$, il est négatif : la fonction est décroissa
 |---|---|---|---|---|---|
 | signe de $f(x)$ | | $+$ | $0$ | $-$ | |
 
-$${\color{#4A5D7A}f(x)>0\ \text{sur}\ \left]-\infty\,;\,3\right[ \qquad f(x)<0\ \text{sur}\ \left]3\,;\,+\infty\right[}$$
+$$\begin{aligned}{\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,3\right[} \\ {\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]3\,;\,+\infty\right[}\end{aligned}$$
 
 Retenir : le signe d'une fonction affine est celui de $m$ **après** la racine, et l'opposé avant.
 {{< /auto2-exo >}}
@@ -32,7 +32,7 @@ $$(x-2)(3x+9)\geqslant 0$$
 ---CORR---
 On cherche les racines de chaque facteur :
 
-$$x-2=0 \Longrightarrow x=2 \qquad\qquad 3x+9=0 \Longrightarrow x=-3$$
+$$\begin{aligned}x-2 &= 0 \Longrightarrow x=2 \\ 3x+9 &= 0 \Longrightarrow x=-3\end{aligned}$$
 
 Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :
 
@@ -91,7 +91,7 @@ $$x(x-5)=0$$
 
 Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$$x=0 \qquad\text{ou}\qquad x-5=0 \quad\text{donc}\quad x=5$$
+$$\begin{aligned}x &= 0 \\ \text{ou}\quad x-5 &= 0 \quad\text{donc}\quad x=5\end{aligned}$$
 
 $${\color{#4A5D7A}0\ \text{et}\ 5}$$
 {{< /auto2-exo >}}
@@ -123,7 +123,7 @@ La probabilité d'obtenir deux fois pile est :
 ---CORR---
 On énumère les issues possibles, en distinguant les deux lancers :
 
-$$(P\,;\,P) \qquad (P\,;\,F) \qquad (F\,;\,P) \qquad (F\,;\,F)$$
+$$\begin{aligned}& (P\,;\,P) \qquad (P\,;\,F) \\ & (F\,;\,P) \qquad (F\,;\,F)\end{aligned}$$
 
 Ces $4$ issues sont équiprobables, et une seule convient.
 
@@ -143,7 +143,7 @@ Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f
 ---CORR---
 On cherche d'abord la valeur qui annule $f$ :
 
-$$-3x+12=0 \quad\Longrightarrow\quad -3x=-12 \quad\Longrightarrow\quad x=4$$
+$$\begin{aligned}-3x+12 &= 0 \quad\Longrightarrow\quad -3x \\ &= -12 \quad\Longrightarrow\quad x \\ &= 4\end{aligned}$$
 
 Le coefficient directeur vaut $-3$, il est négatif : la fonction est décroissante. Elle est donc positive **avant** sa racine et négative **après**.
 
@@ -151,7 +151,7 @@ Le coefficient directeur vaut $-3$, il est négatif : la fonction est décroissa
 |---|---|---|---|---|---|
 | signe de $f(x)$ | | $+$ | $0$ | $-$ | |
 
-$${\color{#4A5D7A}f(x)>0\ \text{sur}\ \left]-\infty\,;\,4\right[ \qquad f(x)<0\ \text{sur}\ \left]4\,;\,+\infty\right[}$$
+$$\begin{aligned}{\color{#4A5D7A}f(x)>0} &\ {\color{#4A5D7A}\text{sur}\ \left]-\infty\,;\,4\right[} \\ {\color{#4A5D7A}f(x)<0} &\ {\color{#4A5D7A}\text{sur}\ \left]4\,;\,+\infty\right[}\end{aligned}$$
 
 Retenir : le signe d'une fonction affine est celui de $m$ **après** la racine, et l'opposé avant.
 {{< /auto2-exo >}}
@@ -163,7 +163,7 @@ $$(x-1)(2x+8)\geqslant 0$$
 ---CORR---
 On cherche les racines de chaque facteur :
 
-$$x-1=0 \Longrightarrow x=1 \qquad\qquad 2x+8=0 \Longrightarrow x=-4$$
+$$\begin{aligned}x-1 &= 0 \Longrightarrow x=1 \\ 2x+8 &= 0 \Longrightarrow x=-4\end{aligned}$$
 
 Les deux facteurs ont un coefficient directeur positif : chacun est négatif avant sa racine et positif après. On dresse le tableau de signes du produit :
 
@@ -222,7 +222,7 @@ $$x(x+3)=0$$
 
 Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$$x=0 \qquad\text{ou}\qquad x+3=0 \quad\text{donc}\quad x=-3$$
+$$\begin{aligned}x &= 0 \\ \text{ou}\quad x+3 &= 0 \quad\text{donc}\quad x=-3\end{aligned}$$
 
 $${\color{#4A5D7A}-3\ \text{et}\ 0}$$
 {{< /auto2-exo >}}
@@ -254,7 +254,7 @@ La probabilité d'obtenir au moins une fois pile est :
 ---CORR---
 On énumère les issues possibles, en distinguant les deux lancers :
 
-$$(P\,;\,P) \qquad (P\,;\,F) \qquad (F\,;\,P) \qquad (F\,;\,F)$$
+$$\begin{aligned}& (P\,;\,P) \qquad (P\,;\,F) \\ & (F\,;\,P) \qquad (F\,;\,F)\end{aligned}$$
 
 Ces $4$ issues sont équiprobables. « Au moins une fois pile » en exclut une seule, $(F\,;\,F)$ : il reste $3$ cas favorables.
 

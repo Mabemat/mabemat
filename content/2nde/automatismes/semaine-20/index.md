@@ -14,11 +14,11 @@ Démontrer que le triangle $ABC$ est rectangle en $A$.
 ---CORR---
 On calcule les carrés des trois longueurs, avec $XY^2=(x_Y-x_X)^2+(y_Y-y_X)^2$. Travailler avec les carrés évite toutes les racines.
 
-$$AB^2=(7-1)^2+(1-(-1))^2=6^2+2^2=36+4=40$$
+$$\begin{aligned}AB^2 &= (7-1)^2+(1-(-1))^2 \\ &= 6^2+2^2 \\ &= 36+4 \\ &= 40\end{aligned}$$
 
-$$AC^2=(0-1)^2+(2-(-1))^2=(-1)^2+3^2=1+9=10$$
+$$\begin{aligned}AC^2 &= (0-1)^2+(2-(-1))^2 \\ &= (-1)^2+3^2 \\ &= 1+9 \\ &= 10\end{aligned}$$
 
-$$BC^2=(0-7)^2+(2-1)^2=(-7)^2+1^2=49+1=50$$
+$$\begin{aligned}BC^2 &= (0-7)^2+(2-1)^2 \\ &= (-7)^2+1^2 \\ &= 49+1 \\ &= 50\end{aligned}$$
 
 Le plus grand est $BC^2$ : si le triangle est rectangle, c'est en $A$, le sommet opposé à $[BC]$.
 
@@ -36,7 +36,7 @@ Soit $f$ la fonction carrée, définie sur $\mathbb{R}$ par $f(x)=x^2$.
 ---CORR---
 **a.** On remplace $x$ par la valeur demandée, entre parenthèses :
 
-$$f(-7)=(-7)^2={\color{#4A5D7A}49} \qquad f(0{,}5)=0{,}5^2={\color{#4A5D7A}0{,}25}$$
+$$\begin{aligned}f(-7) &= (-7)^2 \\ &= {\color{#4A5D7A}49} \qquad f(0{,}5) \\ &= 0{,}5^2 \\ &= {\color{#4A5D7A}0{,}25}\end{aligned}$$
 
 Le carré d'un nombre négatif est positif, et le carré d'un nombre entre $0$ et $1$ est plus petit que lui.
 
@@ -54,7 +54,7 @@ $$(-3)^2 \qquad 2^2 \qquad (-1{,}5)^2$$
 ---CORR---
 On calcule chaque carré. Le carré d'un nombre négatif est positif :
 
-$$(-3)^2=9 \qquad 2^2=4 \qquad (-1{,}5)^2=2{,}25$$
+$$\begin{aligned}(-3)^2 &= 9 \qquad 2^2 \\ &= 4 \qquad (-1{,}5)^2 \\ &= 2{,}25\end{aligned}$$
 
 On range ensuite les résultats :
 
@@ -120,11 +120,11 @@ Démontrer que le triangle $ABC$ est rectangle et isocèle en $B$.
 ---CORR---
 On calcule les carrés des trois longueurs, avec $XY^2=(x_Y-x_X)^2+(y_Y-y_X)^2$. Travailler avec les carrés évite toutes les racines.
 
-$$BA^2=(-2-2)^2+(3-1)^2=(-4)^2+2^2=16+4=20$$
+$$\begin{aligned}BA^2 &= (-2-2)^2+(3-1)^2 \\ &= (-4)^2+2^2 \\ &= 16+4 \\ &= 20\end{aligned}$$
 
-$$BC^2=(4-2)^2+(5-1)^2=2^2+4^2=4+16=20$$
+$$\begin{aligned}BC^2 &= (4-2)^2+(5-1)^2 \\ &= 2^2+4^2 \\ &= 4+16 \\ &= 20\end{aligned}$$
 
-$$AC^2=(4-(-2))^2+(5-3)^2=6^2+2^2=36+4=40$$
+$$\begin{aligned}AC^2 &= (4-(-2))^2+(5-3)^2 \\ &= 6^2+2^2 \\ &= 36+4 \\ &= 40\end{aligned}$$
 
 Comme $BA^2=BC^2$, les deux longueurs sont égales : le triangle est ${\color{#4A5D7A}\text{isocèle en }B}$.
 
@@ -144,7 +144,7 @@ Soit $f$ la fonction carrée, définie sur $\mathbb{R}$ par $f(x)=x^2$.
 ---CORR---
 **a.** On remplace $x$ par la valeur demandée, entre parenthèses :
 
-$$f(-1{,}5)=(-1{,}5)^2={\color{#4A5D7A}2{,}25} \qquad f(6)=6^2={\color{#4A5D7A}36}$$
+$$\begin{aligned}f(-1{,}5) &= (-1{,}5)^2 \\ &= {\color{#4A5D7A}2{,}25} \qquad f(6) \\ &= 6^2 \\ &= {\color{#4A5D7A}36}\end{aligned}$$
 
 Le carré d'un nombre négatif est positif : $f(-1{,}5)$ n'est pas $-2{,}25$.
 
@@ -162,7 +162,7 @@ $$(-4)^2 \qquad 3^2 \qquad (-2{,}5)^2$$
 ---CORR---
 On calcule chaque carré. Le carré d'un nombre négatif est positif :
 
-$$(-4)^2=16 \qquad 3^2=9 \qquad (-2{,}5)^2=6{,}25$$
+$$\begin{aligned}(-4)^2 &= 16 \qquad 3^2 \\ &= 9 \qquad (-2{,}5)^2 \\ &= 6{,}25\end{aligned}$$
 
 On range ensuite les résultats :
 

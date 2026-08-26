@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 18 - Coordonnées, colinéarité et alignement — MaBémat</title>
+<title>Semaine 18 - Équations avec racines carrées et repère du plan — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Coordonnées, colinéarité et alignement</p>
+  <p class="wk-subtitle">Équations avec racines carrées et repère du plan</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -234,9 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère, on donne $A(-2\,;\,3)$ et $B(4\,;\,-1)$.</p>
-<p>Déterminer les coordonnées du vecteur $\overrightarrow{AB}$.</p>
-
+    <p>Résoudre dans $[0\,;\,+\infty[$ l&rsquo;équation :</p>
+$$3\sqrt{x}-2=10$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -244,9 +243,10 @@ pre[style*="background-color"] {
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les coordonnées d&rsquo;un vecteur s&rsquo;obtiennent en soustrayant les coordonnées de l&rsquo;origine à celles de l&rsquo;extrémité, dans cet ordre :</p>
-$$\overrightarrow{AB}\ \left(x_B-x_A\ ;\ y_B-y_A\right)$$<p>On remplace :</p>
-$$x_B-x_A=4-(-2)=6 \qquad\qquad y_B-y_A=-1-3=-4$$$$\overrightarrow{AB}\ {\color{#4A5D7A}\left(6\ ;\ -4\right)}$$<p>Attention au sens de la soustraction : c&rsquo;est « arrivée moins départ ». Le vecteur $\overrightarrow{BA}$ aurait pour coordonnées $(-6\,;\,4)$.</p>
+    <div><p>On isole d&rsquo;abord la racine. On ajoute $2$ à chaque membre :</p>
+$$3\sqrt{x}=12$$<p>On divise par $3$ :</p>
+$$\sqrt{x}=4$$<p>Les deux membres étant positifs, on peut élever au carré :</p>
+$$x=4^2={\color{#4A5D7A}16}$$<p>Vérification : $3\sqrt{16}-2=3\times 4-2=10$. La solution appartient bien à $[0\,;\,+\infty[$.</p>
 </div>
   </div>
   
@@ -266,9 +266,8 @@ $$x_B-x_A=4-(-2)=6 \qquad\qquad y_B-y_A=-1-3=-4$$$$\overrightarrow{AB}\ {\color{
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On donne $\overrightarrow{u}\,(3\,;\,-2)$ et $\overrightarrow{v}\,(-9\,;\,6)$.</p>
-<p>Ces deux vecteurs sont-ils colinéaires ? Justifier par un calcul de déterminant.</p>
-
+    <p>Résoudre dans $\left[0\,;\,+\infty\right[$ l&rsquo;inéquation :</p>
+$$\sqrt{x}\leqslant 5$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -276,10 +275,9 @@ $$x_B-x_A=4-(-2)=6 \qquad\qquad y_B-y_A=-1-3=-4$$$$\overrightarrow{AB}\ {\color{
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le déterminant de deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ vaut :</p>
-$$\det\left(\overrightarrow{u}\,;\,\overrightarrow{v}\right)=xy'-yx'$$<p>On remplace :</p>
-$$3\times 6-(-2)\times(-9)=18-18={\color{#4A5D7A}0}$$<p>Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.</p>
-<p>On le voit aussi directement : $\overrightarrow{v}=-3\,\overrightarrow{u}$.</p>
+    <div><p>Les deux membres sont positifs, et la fonction racine carrée est croissante sur $\left[0\,;\,+\infty\right[$ : élever au carré ne change donc pas le sens de l&rsquo;inégalité.</p>
+$$\sqrt{x}\leqslant 5 \iff x\leqslant 5^2 \iff x\leqslant 25$$<p>Sans oublier la condition d&rsquo;existence $x\geqslant 0$ :</p>
+$$S={\color{#4A5D7A}\left[0\,;\,25\right]}$$<p>Vérification : $\sqrt{25}=5$, et $\sqrt{36}=6>5$, donc $36$ est bien exclu.</p>
 </div>
   </div>
   
@@ -299,8 +297,9 @@ $$3\times 6-(-2)\times(-9)=18-18={\color{#4A5D7A}0}$$<p>Le déterminant est nul,
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On donne $A(1\,;\,2)$, $B(4\,;\,8)$ et $C(6\,;\,12)$.</p>
-<p>Les points $A$, $B$ et $C$ sont-ils alignés ?</p>
+    <p>Dans un repère du plan, on donne le point $M\,(-2\,;\,5)$.</p>
+<p><strong>a.</strong> Donner les coordonnées du symétrique de $M$ par rapport à l&rsquo;axe des ordonnées.</p>
+<p><strong>b.</strong> Donner les coordonnées du symétrique de $M$ par rapport à l&rsquo;origine $O$.</p>
 
   </div>
   
@@ -309,9 +308,9 @@ $$3\times 6-(-2)\times(-9)=18-18={\color{#4A5D7A}0}$$<p>Le déterminant est nul,
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Trois points sont alignés si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires. On calcule d&rsquo;abord leurs coordonnées :</p>
-$$\overrightarrow{AB}\,(4-1\,;\,8-2)=(3\,;\,6) \qquad \overrightarrow{AC}\,(6-1\,;\,12-2)=(5\,;\,10)$$<p>On calcule le déterminant :</p>
-$$3\times 10-6\times 5=30-30={\color{#4A5D7A}0}$$<p>Le déterminant est nul, donc les vecteurs sont colinéaires : les points $A$, $B$ et $C$ sont ${\color{#4A5D7A}\text{alignés}}$.</p>
+    <div><p><strong>a.</strong> Une symétrie par rapport à l&rsquo;axe des ordonnées renvoie chaque point de l&rsquo;autre côté de l&rsquo;axe vertical : l&rsquo;abscisse change de signe, l&rsquo;ordonnée ne bouge pas.</p>
+$${\color{#4A5D7A}(2\,;\,5)}$$<p><strong>b.</strong> Une symétrie par rapport à l&rsquo;origine est un demi-tour autour de $O$ : les <strong>deux</strong> coordonnées changent de signe.</p>
+$${\color{#4A5D7A}(2\,;\,-5)}$$<p>Le repère se lit toujours dans le même ordre : d&rsquo;abord l&rsquo;abscisse, sur l&rsquo;axe horizontal, puis l&rsquo;ordonnée.</p>
 </div>
   </div>
   
@@ -341,7 +340,7 @@ $$\sqrt{32}-\sqrt{8}$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On extrait le plus grand carré parfait de chaque racine :</p>
-$$\sqrt{32}=\sqrt{16\times 2}=4\sqrt{2} \qquad\qquad \sqrt{8}=\sqrt{4\times 2}=2\sqrt{2}$$<p>Les deux termes ont la même partie irrationnelle :</p>
+$$\begin{aligned}\sqrt{32} &= \sqrt{16\times 2}=4\sqrt{2} \\ \sqrt{8} &= \sqrt{4\times 2}=2\sqrt{2}\end{aligned}$$<p>Les deux termes ont la même partie irrationnelle :</p>
 $$4\sqrt{2}-2\sqrt{2}={\color{#4A5D7A}2\sqrt{2}}$$</div>
   </div>
   
@@ -407,7 +406,7 @@ $$m=\dfrac{3-5}{3-(-1)}=\dfrac{-2}{4}={\color{#4A5D7A}-\dfrac{1}{2}}$$<p>La droi
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Doubler, c&rsquo;est multiplier par $2$ : le coefficient multiplicateur vaut $2$.</p>
 <p>Or ce coefficient s&rsquo;écrit $1+\dfrac{t}{100}$ :</p>
-$$2=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=1 \qquad\text{donc}\qquad t={\color{#4A5D7A}100}$$<p>La réponse A confond le coefficient $2$, exprimé en pourcentage, avec le taux d&rsquo;évolution : augmenter de $200\,\%$ reviendrait à tripler le prix.</p>
+$$\begin{aligned}2 &= 1+\dfrac{t}{100} \\ \text{donc}\quad \dfrac{t}{100} &= 1 \\ \text{donc}\quad t &= {\color{#4A5D7A}100}\end{aligned}$$<p>La réponse A confond le coefficient $2$, exprimé en pourcentage, avec le taux d&rsquo;évolution : augmenter de $200\,\%$ reviendrait à tripler le prix.</p>
 <p><span class="rep">Réponse : D</span></p>
 </div>
   </div>
@@ -438,9 +437,8 @@ $$2=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=1 \qquad\text{donc}\
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Dans un repère, on donne $A(5\,;\,-2)$ et $B(-1\,;\,4)$.</p>
-<p>Déterminer les coordonnées du vecteur $\overrightarrow{AB}$.</p>
-
+    <p>Résoudre dans $[0\,;\,+\infty[$ l&rsquo;équation :</p>
+$$4\sqrt{x}-3=17$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -448,9 +446,10 @@ $$2=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=1 \qquad\text{donc}\
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Les coordonnées d&rsquo;un vecteur s&rsquo;obtiennent en soustrayant les coordonnées de l&rsquo;origine à celles de l&rsquo;extrémité, dans cet ordre :</p>
-$$\overrightarrow{AB}\ \left(x_B-x_A\ ;\ y_B-y_A\right)$$<p>On remplace :</p>
-$$x_B-x_A=-1-5=-6 \qquad\qquad y_B-y_A=4-(-2)=6$$$$\overrightarrow{AB}\ {\color{#4A5D7A}\left(-6\ ;\ 6\right)}$$<p>Attention au sens de la soustraction : c&rsquo;est « arrivée moins départ ». Le vecteur $\overrightarrow{BA}$ aurait pour coordonnées $(6\,;\,-6)$.</p>
+    <div><p>On isole d&rsquo;abord la racine. On ajoute $3$ à chaque membre :</p>
+$$4\sqrt{x}=20$$<p>On divise par $4$ :</p>
+$$\sqrt{x}=5$$<p>Les deux membres étant positifs, on peut élever au carré :</p>
+$$x=5^2={\color{#4A5D7A}25}$$<p>Vérification : $4\sqrt{25}-3=4\times 5-3=17$. La solution appartient bien à $[0\,;\,+\infty[$.</p>
 </div>
   </div>
   
@@ -470,9 +469,8 @@ $$x_B-x_A=-1-5=-6 \qquad\qquad y_B-y_A=4-(-2)=6$$$$\overrightarrow{AB}\ {\color{
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On donne $\overrightarrow{u}\,(4\,;\,-3)$ et $\overrightarrow{v}\,(-8\,;\,6)$.</p>
-<p>Ces deux vecteurs sont-ils colinéaires ? Justifier par un calcul de déterminant.</p>
-
+    <p>Résoudre dans $\left[0\,;\,+\infty\right[$ l&rsquo;inéquation :</p>
+$$\sqrt{x}>4$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -480,10 +478,9 @@ $$x_B-x_A=-1-5=-6 \qquad\qquad y_B-y_A=4-(-2)=6$$$$\overrightarrow{AB}\ {\color{
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Le déterminant de deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ vaut :</p>
-$$\det\left(\overrightarrow{u}\,;\,\overrightarrow{v}\right)=xy'-yx'$$<p>On remplace :</p>
-$$4\times 6-(-3)\times(-8)=24-24={\color{#4A5D7A}0}$$<p>Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.</p>
-<p>On le voit aussi directement : $\overrightarrow{v}=-2\,\overrightarrow{u}$.</p>
+    <div><p>Les deux membres sont positifs, et la fonction racine carrée est croissante sur $\left[0\,;\,+\infty\right[$ : élever au carré ne change donc pas le sens de l&rsquo;inégalité.</p>
+$$\sqrt{x}>4 \iff x>4^2 \iff x>16$$<p>L&rsquo;inégalité est stricte, donc $16$ est exclu. La condition $x\geqslant 0$ est automatiquement vérifiée.</p>
+$$S={\color{#4A5D7A}\left]16\,;\,+\infty\right[}$$<p>Vérification : $\sqrt{16}=4$, ce qui ne convient pas car l&rsquo;inégalité est stricte, et $\sqrt{25}=5>4$ convient.</p>
 </div>
   </div>
   
@@ -503,8 +500,9 @@ $$4\times 6-(-3)\times(-8)=24-24={\color{#4A5D7A}0}$$<p>Le déterminant est nul,
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>On donne $A(2\,;\,1)$, $B(5\,;\,7)$ et $C(8\,;\,13)$.</p>
-<p>Les points $A$, $B$ et $C$ sont-ils alignés ?</p>
+    <p>Dans un repère du plan, on donne le point $N\,(4\,;\,-3)$.</p>
+<p><strong>a.</strong> Donner les coordonnées du symétrique de $N$ par rapport à l&rsquo;axe des abscisses.</p>
+<p><strong>b.</strong> Donner les coordonnées du symétrique de $N$ par rapport à l&rsquo;origine $O$.</p>
 
   </div>
   
@@ -513,9 +511,9 @@ $$4\times 6-(-3)\times(-8)=24-24={\color{#4A5D7A}0}$$<p>Le déterminant est nul,
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>Trois points sont alignés si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires. On calcule d&rsquo;abord leurs coordonnées :</p>
-$$\overrightarrow{AB}\,(5-2\,;\,7-1)=(3\,;\,6) \qquad \overrightarrow{AC}\,(8-2\,;\,13-1)=(6\,;\,12)$$<p>On calcule le déterminant :</p>
-$$3\times 12-6\times 6=36-36={\color{#4A5D7A}0}$$<p>Le déterminant est nul, donc les vecteurs sont colinéaires : les points $A$, $B$ et $C$ sont ${\color{#4A5D7A}\text{alignés}}$.</p>
+    <div><p><strong>a.</strong> Une symétrie par rapport à l&rsquo;axe des abscisses renvoie chaque point de l&rsquo;autre côté de l&rsquo;axe horizontal : l&rsquo;ordonnée change de signe, l&rsquo;abscisse ne bouge pas.</p>
+$${\color{#4A5D7A}(4\,;\,3)}$$<p><strong>b.</strong> Une symétrie par rapport à l&rsquo;origine est un demi-tour autour de $O$ : les <strong>deux</strong> coordonnées changent de signe.</p>
+$${\color{#4A5D7A}(-4\,;\,3)}$$<p>Le repère se lit toujours dans le même ordre : d&rsquo;abord l&rsquo;abscisse, sur l&rsquo;axe horizontal, puis l&rsquo;ordonnée.</p>
 </div>
   </div>
   
@@ -545,7 +543,7 @@ $$\sqrt{45}-\sqrt{20}$$
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
     <div><p>On extrait le plus grand carré parfait de chaque racine :</p>
-$$\sqrt{45}=\sqrt{9\times 5}=3\sqrt{5} \qquad\qquad \sqrt{20}=\sqrt{4\times 5}=2\sqrt{5}$$<p>Les deux termes ont la même partie irrationnelle :</p>
+$$\begin{aligned}\sqrt{45} &= \sqrt{9\times 5}=3\sqrt{5} \\ \sqrt{20} &= \sqrt{4\times 5}=2\sqrt{5}\end{aligned}$$<p>Les deux termes ont la même partie irrationnelle :</p>
 $$3\sqrt{5}-2\sqrt{5}={\color{#4A5D7A}\sqrt{5}}$$</div>
   </div>
   
@@ -611,7 +609,7 @@ $$m=\dfrac{1-7}{6-2}=\dfrac{-6}{4}={\color{#4A5D7A}-\dfrac{3}{2}}$$<p>La droite 
     <span class="auto1re-corr-label">Correction</span>
     <div><p>Tripler, c&rsquo;est multiplier par $3$ : le coefficient multiplicateur vaut $3$.</p>
 <p>Or ce coefficient s&rsquo;écrit $1+\dfrac{t}{100}$ :</p>
-$$3=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=2 \qquad\text{donc}\qquad t={\color{#4A5D7A}200}$$<p>La réponse D confond le coefficient $3$, exprimé en pourcentage, avec le taux d&rsquo;évolution : le prix augmente de deux fois sa valeur, pas de trois fois.</p>
+$$\begin{aligned}3 &= 1+\dfrac{t}{100} \\ \text{donc}\quad \dfrac{t}{100} &= 2 \\ \text{donc}\quad t &= {\color{#4A5D7A}200}\end{aligned}$$<p>La réponse D confond le coefficient $3$, exprimé en pourcentage, avec le taux d&rsquo;évolution : le prix augmente de deux fois sa valeur, pas de trois fois.</p>
 <p><span class="rep">Réponse : A</span></p>
 </div>
   </div>
@@ -714,7 +712,7 @@ $$3=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=2 \qquad\text{donc}\
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

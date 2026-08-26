@@ -18,7 +18,7 @@ $$3x-6=0 \qquad\text{ou}\qquad 2x+5=0$$
 
 On résout chaque équation séparément :
 
-$$3x=6 \quad\text{donc}\quad x=2 \qquad\qquad 2x=-5 \quad\text{donc}\quad x=-\dfrac{5}{2}$$
+$$\begin{aligned}3x &= 6 \quad\text{donc}\quad x=2 \\ 2x &= -5 \quad\text{donc}\quad x=-\dfrac{5}{2}\end{aligned}$$
 
 $$S={\color{#4A5D7A}\left\lbrace -\dfrac{5}{2}\,;\,2\right\rbrace}$$
 {{< /auto2-exo >}}
@@ -34,7 +34,7 @@ $$3x-6=5x+4$$
 
 On regroupe les termes en $x$ à gauche, en retranchant $5x$ à chaque membre :
 
-$$3x-5x-6=4 \qquad\text{soit}\qquad -2x-6=4$$
+$$\begin{aligned}3x-5x-6 &= 4 \\ \text{soit}\quad -2x-6 &= 4\end{aligned}$$
 
 On ajoute $6$ à chaque membre :
 
@@ -58,7 +58,7 @@ $$2\bigl((x+5)+x\bigr)=46$$
 
 On réduit à l'intérieur de la parenthèse, puis on développe :
 
-$$2(2x+5)=46 \qquad\text{soit}\qquad 4x+10=46$$
+$$\begin{aligned}2(2x+5) &= 46 \\ \text{soit}\quad 4x+10 &= 46\end{aligned}$$
 
 On retranche $10$ puis on divise par $4$ :
 
@@ -78,7 +78,7 @@ On reconnaît deux identités remarquables.
 
 Pour la première, $(a-b)^2=a^2-2ab+b^2$ avec $a=2x$ et $b=3$ :
 
-$$(2x-3)^2=(2x)^2-2\times 2x\times 3+3^2=4x^2-12x+9$$
+$$\begin{aligned}(2x-3)^2 &= (2x)^2-2\times 2x\times 3+3^2 \\ &= 4x^2-12x+9\end{aligned}$$
 
 Pour la seconde, $(a+b)(a-b)=a^2-b^2$ avec $a=x$ et $b=1$ :
 
@@ -86,7 +86,7 @@ $$(x+1)(x-1)=x^2-1$$
 
 On soustrait, en faisant attention au signe devant la parenthèse :
 
-$$A=4x^2-12x+9-\left(x^2-1\right)=4x^2-12x+9-x^2+1$$
+$$\begin{aligned}A &= 4x^2-12x+9-\left(x^2-1\right) \\ &= 4x^2-12x+9-x^2+1\end{aligned}$$
 
 $$A={\color{#4A5D7A}3x^2-12x+10}$$
 {{< /auto2-exo >}}
@@ -98,7 +98,7 @@ Le produit des solutions de l'équation $(2x+6)(2x+10)=0$ est égal à :
 ---CORR---
 On résout d'abord l'équation. Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$$2x+6=0 \quad\text{donc}\quad x=-3 \qquad\qquad 2x+10=0 \quad\text{donc}\quad x=-5$$
+$$\begin{aligned}2x+6 &= 0 \quad\text{donc}\quad x=-3 \\ 2x+10 &= 0 \quad\text{donc}\quad x=-5\end{aligned}$$
 
 Les deux solutions sont $-3$ et $-5$. On calcule ensuite leur **produit** :
 
@@ -138,7 +138,7 @@ $$5x+10=0 \qquad\text{ou}\qquad 3x-9=0$$
 
 On résout chaque équation séparément :
 
-$$5x=-10 \quad\text{donc}\quad x=-2 \qquad\qquad 3x=9 \quad\text{donc}\quad x=3$$
+$$\begin{aligned}5x &= -10 \quad\text{donc}\quad x=-2 \\ 3x &= 9 \quad\text{donc}\quad x=3\end{aligned}$$
 
 $$S={\color{#4A5D7A}\lbrace -2\,;\,3\rbrace}$$
 {{< /auto2-exo >}}
@@ -154,7 +154,7 @@ $$4x+12=7x-6$$
 
 On regroupe les termes en $x$ à gauche, en retranchant $7x$ à chaque membre :
 
-$$4x-7x+12=-6 \qquad\text{soit}\qquad -3x+12=-6$$
+$$\begin{aligned}4x-7x+12 &= -6 \\ \text{soit}\quad -3x+12 &= -6\end{aligned}$$
 
 On retranche $12$ à chaque membre :
 
@@ -178,7 +178,7 @@ $$2\bigl((x+7)+x\bigr)=58$$
 
 On réduit à l'intérieur de la parenthèse, puis on développe :
 
-$$2(2x+7)=58 \qquad\text{soit}\qquad 4x+14=58$$
+$$\begin{aligned}2(2x+7) &= 58 \\ \text{soit}\quad 4x+14 &= 58\end{aligned}$$
 
 On retranche $14$ puis on divise par $4$ :
 
@@ -198,7 +198,7 @@ On reconnaît deux identités remarquables.
 
 Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=2$ :
 
-$$(3x+2)^2=(3x)^2+2\times 3x\times 2+2^2=9x^2+12x+4$$
+$$\begin{aligned}(3x+2)^2 &= (3x)^2+2\times 3x\times 2+2^2 \\ &= 9x^2+12x+4\end{aligned}$$
 
 Pour la seconde, $(a+b)(a-b)=a^2-b^2$ avec $a=x$ et $b=4$ :
 
@@ -206,7 +206,7 @@ $$(x+4)(x-4)=x^2-16$$
 
 On soustrait, en faisant attention au signe devant la parenthèse :
 
-$$A=9x^2+12x+4-\left(x^2-16\right)=9x^2+12x+4-x^2+16$$
+$$\begin{aligned}A &= 9x^2+12x+4-\left(x^2-16\right) \\ &= 9x^2+12x+4-x^2+16\end{aligned}$$
 
 $$A={\color{#4A5D7A}8x^2+12x+20}$$
 {{< /auto2-exo >}}
@@ -218,7 +218,7 @@ Le produit des solutions de l'équation $(3x-9)(3x+15)=0$ est égal à :
 ---CORR---
 On résout d'abord l'équation. Un produit est nul si et seulement si l'un de ses facteurs est nul :
 
-$$3x-9=0 \quad\text{donc}\quad x=3 \qquad\qquad 3x+15=0 \quad\text{donc}\quad x=-5$$
+$$\begin{aligned}3x-9 &= 0 \quad\text{donc}\quad x=3 \\ 3x+15 &= 0 \quad\text{donc}\quad x=-5\end{aligned}$$
 
 Les deux solutions sont $3$ et $-5$. On calcule ensuite leur **produit** :
 

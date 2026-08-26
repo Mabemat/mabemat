@@ -52,7 +52,7 @@ On reconnaît deux identités remarquables.
 
 Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=7$ :
 
-$$(3x+7)^2=(3x)^2+2\times 3x\times 7+7^2=9x^2+42x+49$$
+$$\begin{aligned}(3x+7)^2 &= (3x)^2+2\times 3x\times 7+7^2 \\ &= 9x^2+42x+49\end{aligned}$$
 
 Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=2x$ et $b=1$ :
 
@@ -60,7 +60,7 @@ $$(2x-1)(2x+1)=(2x)^2-1^2=4x^2-1$$
 
 On soustrait, en faisant attention au signe devant la parenthèse :
 
-$$C=9x^2+42x+49-\left(4x^2-1\right)=9x^2+42x+49-4x^2+1$$
+$$\begin{aligned}C &= 9x^2+42x+49-\left(4x^2-1\right) \\ &= 9x^2+42x+49-4x^2+1\end{aligned}$$
 
 $$C={\color{#4A5D7A}5x^2+42x+50}$$
 {{< /auto2-exo >}}
@@ -110,7 +110,7 @@ $$\dfrac{p}{100}\times 80=6$$
 
 On isole $p$ :
 
-$$p\times 80=6\times 100 \qquad\text{donc}\qquad p=\dfrac{600}{80}={\color{#4A5D7A}7{,}5}$$
+$$\begin{aligned}p\times 80 &= 6\times 100 \\ \text{donc}\quad p &= \dfrac{600}{80}={\color{#4A5D7A}7{,}5}\end{aligned}$$
 
 On vérifie : $7{,}5\,\%$ de $80$ vaut $\dfrac{7{,}5\times 80}{100}=\dfrac{600}{100}=6$.
 
@@ -166,7 +166,7 @@ On reconnaît deux identités remarquables.
 
 Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=2x$ et $b=5$ :
 
-$$(2x+5)^2=(2x)^2+2\times 2x\times 5+5^2=4x^2+20x+25$$
+$$\begin{aligned}(2x+5)^2 &= (2x)^2+2\times 2x\times 5+5^2 \\ &= 4x^2+20x+25\end{aligned}$$
 
 Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=3x$ et $b=2$ :
 
@@ -174,7 +174,7 @@ $$(3x-2)(3x+2)=(3x)^2-2^2=9x^2-4$$
 
 On soustrait, en faisant attention au signe devant la parenthèse :
 
-$$C=4x^2+20x+25-\left(9x^2-4\right)=4x^2+20x+25-9x^2+4$$
+$$\begin{aligned}C &= 4x^2+20x+25-\left(9x^2-4\right) \\ &= 4x^2+20x+25-9x^2+4\end{aligned}$$
 
 $$C={\color{#4A5D7A}-5x^2+20x+29}$$
 {{< /auto2-exo >}}
@@ -224,7 +224,7 @@ $$\dfrac{p}{100}\times 150=9$$
 
 On isole $p$ :
 
-$$p\times 150=9\times 100 \qquad\text{donc}\qquad p=\dfrac{900}{150}={\color{#4A5D7A}6}$$
+$$\begin{aligned}p\times 150 &= 9\times 100 \\ \text{donc}\quad p &= \dfrac{900}{150}={\color{#4A5D7A}6}\end{aligned}$$
 
 On vérifie : $6\,\%$ de $150$ vaut $\dfrac{6\times 150}{100}=\dfrac{900}{100}=9$.
 

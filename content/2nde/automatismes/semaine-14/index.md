@@ -144,7 +144,7 @@ Lire graphiquement son ordonnée à l'origine et son coefficient directeur, puis
 
 **Coefficient directeur** : on part d'un point de la droite, on avance de $1$ vers la droite, et on lit de combien on monte ou on descend. En partant de $(0\,;\,2)$ et en avançant de $1$, on arrive en $(1\,;\,1)$ : on est descendu de $1$.
 
-$$m=\dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}}=\dfrac{-1}{1}=-1$$
+$$\begin{aligned}m &= \dfrac{\text{déplacement vertical}}{\text{déplacement horizontal}} \\ &= \dfrac{-1}{1} \\ &= -1\end{aligned}$$
 
 D'où :
 

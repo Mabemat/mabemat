@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semaine 29 - Révisions : calcul, évolutions et fonctions — MaBémat</title>
+<title>Semaine 29 - Systèmes et positions relatives de droites — MaBémat</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
 <link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.a59b9c215d0ea54dc22adc3c4c3d56305ac6b9e4ce990bd16132fb8b4bcd319e.css" integrity="sha256-pZucIV0OpU3CKtw8TD1WMFrGueTOmQvRYTL7i0vNMZ4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.136df540e6ae90eacbcba020dc5b4dec67367b391fd843bb933756856b7a1ff8.css" integrity="sha256-E231QOaukOrLy6Ag3FtN7Gc2ezkf2EO7kzdWhWt6H/g=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -194,7 +194,7 @@ pre[style*="background-color"] {
       Projeter
     </button>
   </div>
-  <p class="wk-subtitle">Révisions : calcul, évolutions et fonctions</p>
+  <p class="wk-subtitle">Systèmes et positions relatives de droites</p>
   <div class="wk-meta">
     <span><span class="dot"></span>Séance + Devoirs</span>
     <span><span class="dot"></span>12 questions</span>
@@ -234,8 +234,8 @@ pre[style*="background-color"] {
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
-$$A=\dfrac{5}{6}-\dfrac{2}{9}\times\dfrac{3}{4}$$
+    <p>Résoudre le système suivant par substitution :</p>
+$$\begin{cases} y=2x-1 \\ 3x+y=9 \end{cases}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -243,9 +243,11 @@ $$A=\dfrac{5}{6}-\dfrac{2}{9}\times\dfrac{3}{4}$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La multiplication est prioritaire sur la soustraction : on commence par elle.</p>
-$$\dfrac{2}{9}\times\dfrac{3}{4}=\dfrac{2\times 3}{9\times 4}=\dfrac{6}{36}=\dfrac{1}{6}$$<p>On effectue ensuite la soustraction, les deux fractions ayant déjà le même dénominateur :</p>
-$$A=\dfrac{5}{6}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2\times \cancel{2}}{3\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{3}}$$</div>
+    <div><p>La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $2x-1$ dans la seconde.</p>
+$$3x+(2x-1)=9$$<p>On réduit puis on résout :</p>
+$$\begin{aligned}5x-1 &= 9 \\ \text{donc}\quad 5x &= 10 \\ \text{donc}\quad x &= 2\end{aligned}$$<p>On remonte dans la première équation pour obtenir $y$ :</p>
+$$y=2\times 2-1=3$$$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$<p>Vérification dans la seconde équation : $3\times 2+3=9$.</p>
+</div>
   </div>
   
 </article>
@@ -264,9 +266,8 @@ $$A=\dfrac{5}{6}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2\times \cancel{2}}{3\times \c
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un prix augmente de $25\,\%$, puis diminue de $12\,\%$.</p>
-<p>Déterminer le taux d&rsquo;évolution global, en pourcentage.</p>
-
+    <p>Résoudre le système suivant par combinaison linéaire :</p>
+$$\begin{cases} 2x+3y=13 \\ 2x-y=1 \end{cases}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -274,9 +275,9 @@ $$A=\dfrac{5}{6}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2\times \cancel{2}}{3\times \c
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On multiplie les coefficients multiplicateurs :</p>
-$$1{,}25\times 0{,}88=1{,}1$$<p>Comme $1{,}1=1+0{,}1$, il s&rsquo;agit d&rsquo;une hausse de ${\color{#4A5D7A}10\,\%}$.</p>
-<p>On note au passage que $25-12=13$ ne donne pas le bon résultat : les taux ne s&rsquo;additionnent jamais.</p>
+    <div><p>Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.</p>
+$$(2x+3y)-(2x-y)=13-1$$$$\begin{aligned}2x+3y-2x+y &= 12 \\ \text{soit}\quad 4y &= 12 \\ \text{donc}\quad y &= 3\end{aligned}$$<p>On remplace $y$ par $3$ dans la seconde équation :</p>
+$$\begin{aligned}2x-3 &= 1 \\ \text{donc}\quad 2x &= 4 \\ \text{donc}\quad x &= 2\end{aligned}$$$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$<p>Attention au signe lors de la soustraction : $-(-y)=+y$.</p>
 </div>
   </div>
   
@@ -296,10 +297,7 @@ $$1{,}25\times 0{,}88=1{,}1$$<p>Comme $1{,}1=1+0{,}1$, il s&rsquo;agit d&rsquo;u
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-2x-3$.</p>
-<p><strong>a.</strong> Calculer $f(-2)$.</p>
-<p><strong>b.</strong> Vérifier que $3$ est un antécédent de $0$ par $f$.</p>
-
+    Les droites $(d)\,:\ y=3x-5$ et $(d')\,:\ 6x-2y+7=0$ sont-elles parallèles ?
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -307,9 +305,9 @@ $$1{,}25\times 0{,}88=1{,}1$$<p>Comme $1{,}1=1+0{,}1$, il s&rsquo;agit d&rsquo;u
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>a.</strong> On remplace $x$ par $-2$, entre parenthèses :</p>
-$$f(-2)=(-2)^2-2\times(-2)-3=4+4-3={\color{#4A5D7A}5}$$<p><strong>b.</strong> Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :</p>
-$$f(3)=3^2-2\times 3-3=9-6-3={\color{#4A5D7A}0}$$<p>L&rsquo;égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.</p>
+    <div><p>Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :</p>
+$$\begin{aligned}-2y &= -6x-7 \\ \text{donc}\quad y &= 3x+3{,}5\end{aligned}$$<p>Les deux droites ont le même coefficient directeur $3$, mais des ordonnées à l&rsquo;origine différentes ($-5$ et $3{,}5$) :</p>
+$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$<p>Si les ordonnées à l&rsquo;origine avaient été égales, les droites auraient été confondues.</p>
 </div>
   </div>
   
@@ -341,7 +339,7 @@ $$3\ ;\ 5\ ;\ 5\ ;\ 8\ ;\ 9\ ;\ 12\ ;\ 15\ ;\ 15$$<p>Déterminer sa médiane et 
     <span class="auto1re-corr-label">Correction</span>
     <div><p>La série compte $8$ valeurs, un effectif pair : la médiane est la moyenne des valeurs de rang $4$ et $5$.</p>
 $$\text{Médiane}=\dfrac{8+9}{2}={\color{#4A5D7A}8{,}5}$$<p>Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :</p>
-$$\dfrac{3+5+5+8+9+12+15+15}{8}=\dfrac{72}{8}={\color{#4A5D7A}9}$$<p>Moyenne et médiane sont deux indicateurs différents : ici la moyenne est tirée vers le haut par les deux valeurs $15$.</p>
+$$\begin{aligned}\dfrac{3+5+5+8+9+12+15+15}{8} &= \dfrac{72}{8} \\ &= {\color{#4A5D7A}9}\end{aligned}$$<p>Moyenne et médiane sont deux indicateurs différents : ici la moyenne est tirée vers le haut par les deux valeurs $15$.</p>
 </div>
   </div>
   
@@ -436,8 +434,8 @@ $$\dfrac{10^{6}}{10^{-2}}=10^{6-(-2)}=10^{6+2}={\color{#4A5D7A}10^{8}}$$<p>La r�
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Calculer et donner le résultat sous forme d&rsquo;une fraction irréductible :</p>
-$$A=\dfrac{7}{10}-\dfrac{3}{8}\times\dfrac{4}{5}$$
+    <p>Résoudre le système suivant par substitution :</p>
+$$\begin{cases} y=3x+2 \\ 2x+y=12 \end{cases}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -445,9 +443,11 @@ $$A=\dfrac{7}{10}-\dfrac{3}{8}\times\dfrac{4}{5}$$
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>La multiplication est prioritaire sur la soustraction : on commence par elle.</p>
-$$\dfrac{3}{8}\times\dfrac{4}{5}=\dfrac{3\times 4}{8\times 5}=\dfrac{12}{40}=\dfrac{3}{10}$$<p>On effectue ensuite la soustraction, les deux fractions ayant alors le même dénominateur :</p>
-$$A=\dfrac{7}{10}-\dfrac{3}{10}=\dfrac{4}{10}=\dfrac{2\times \cancel{2}}{5\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{5}}$$</div>
+    <div><p>La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $3x+2$ dans la seconde.</p>
+$$2x+(3x+2)=12$$<p>On réduit puis on résout :</p>
+$$\begin{aligned}5x+2 &= 12 \\ \text{donc}\quad 5x &= 10 \\ \text{donc}\quad x &= 2\end{aligned}$$<p>On remonte dans la première équation pour obtenir $y$ :</p>
+$$y=3\times 2+2=8$$$$S={\color{#4A5D7A}\lbrace (2\,;\,8)\rbrace}$$<p>Vérification dans la seconde équation : $2\times 2+8=12$.</p>
+</div>
   </div>
   
 </article>
@@ -466,9 +466,8 @@ $$A=\dfrac{7}{10}-\dfrac{3}{10}=\dfrac{4}{10}=\dfrac{2\times \cancel{2}}{5\times
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Un prix augmente de $20\,\%$, puis diminue de $25\,\%$.</p>
-<p>Déterminer le taux d&rsquo;évolution global, en pourcentage.</p>
-
+    <p>Résoudre le système suivant par combinaison linéaire :</p>
+$$\begin{cases} 3x+2y=17 \\ 3x-y=5 \end{cases}$$
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -476,9 +475,9 @@ $$A=\dfrac{7}{10}-\dfrac{3}{10}=\dfrac{4}{10}=\dfrac{2\times \cancel{2}}{5\times
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p>On multiplie les coefficients multiplicateurs :</p>
-$$1{,}20\times 0{,}75=0{,}9$$<p>Comme $0{,}9=1-0{,}1$, il s&rsquo;agit d&rsquo;une baisse de ${\color{#4A5D7A}10\,\%}$.</p>
-<p>On note au passage que $20-25=-5$ ne donne pas le bon résultat : les taux ne s&rsquo;additionnent jamais.</p>
+    <div><p>Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.</p>
+$$(3x+2y)-(3x-y)=17-5$$$$\begin{aligned}3x+2y-3x+y &= 12 \\ \text{soit}\quad 3y &= 12 \\ \text{donc}\quad y &= 4\end{aligned}$$<p>On remplace $y$ par $4$ dans la seconde équation :</p>
+$$\begin{aligned}3x-4 &= 5 \\ \text{donc}\quad 3x &= 9 \\ \text{donc}\quad x &= 3\end{aligned}$$$$S={\color{#4A5D7A}\lbrace (3\,;\,4)\rbrace}$$<p>Attention au signe lors de la soustraction : $-(-y)=+y$.</p>
 </div>
   </div>
   
@@ -498,10 +497,7 @@ $$1{,}20\times 0{,}75=0{,}9$$<p>Comme $0{,}9=1-0{,}1$, il s&rsquo;agit d&rsquo;u
     <div class="auto1re-label">Question</div>
   </div>
   <div class="auto1re-enonce">
-    <p>Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-4x+3$.</p>
-<p><strong>a.</strong> Calculer $f(-2)$.</p>
-<p><strong>b.</strong> Vérifier que $3$ est un antécédent de $0$ par $f$.</p>
-
+    Les droites $(d)\,:\ y=4x-1$ et $(d')\,:\ 8x-2y+5=0$ sont-elles parallèles ?
   </div>
   
   <button class="auto1re-toggle" type="button" aria-expanded="false">
@@ -509,9 +505,9 @@ $$1{,}20\times 0{,}75=0{,}9$$<p>Comme $0{,}9=1-0{,}1$, il s&rsquo;agit d&rsquo;u
   </button>
   <div class="auto1re-corr">
     <span class="auto1re-corr-label">Correction</span>
-    <div><p><strong>a.</strong> On remplace $x$ par $-2$, entre parenthèses :</p>
-$$f(-2)=(-2)^2-4\times(-2)+3=4+8+3={\color{#4A5D7A}15}$$<p><strong>b.</strong> Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :</p>
-$$f(3)=3^2-4\times 3+3=9-12+3={\color{#4A5D7A}0}$$<p>L&rsquo;égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.</p>
+    <div><p>Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :</p>
+$$\begin{aligned}-2y &= -8x-5 \\ \text{donc}\quad y &= 4x+2{,}5\end{aligned}$$<p>Les deux droites ont le même coefficient directeur $4$, mais des ordonnées à l&rsquo;origine différentes ($-1$ et $2{,}5$) :</p>
+$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$<p>Si les ordonnées à l&rsquo;origine avaient été égales, les droites auraient été confondues.</p>
 </div>
   </div>
   
@@ -543,7 +539,7 @@ $$2\ ;\ 5\ ;\ 7\ ;\ 9\ ;\ 11\ ;\ 13\ ;\ 16\ ;\ 17$$<p>Déterminer sa médiane et
     <span class="auto1re-corr-label">Correction</span>
     <div><p>La série compte $8$ valeurs, un effectif pair : la médiane est la moyenne des valeurs de rang $4$ et $5$.</p>
 $$\text{Médiane}=\dfrac{9+11}{2}={\color{#4A5D7A}10}$$<p>Pour la moyenne, on additionne toutes les valeurs et on divise par $8$ :</p>
-$$\dfrac{2+5+7+9+11+13+16+17}{8}=\dfrac{80}{8}={\color{#4A5D7A}10}$$<p>Ici les deux indicateurs coïncident, ce qui traduit une série assez symétrique. Ce n&rsquo;est pas toujours le cas.</p>
+$$\begin{aligned}\dfrac{2+5+7+9+11+13+16+17}{8} &= \dfrac{80}{8} \\ &= {\color{#4A5D7A}10}\end{aligned}$$<p>Ici les deux indicateurs coïncident, ce qui traduit une série assez symétrique. Ce n&rsquo;est pas toujours le cas.</p>
 </div>
   </div>
   
@@ -710,7 +706,7 @@ $$\dfrac{10^{8}}{10^{-3}}=10^{8-(-3)}=10^{8+3}={\color{#4A5D7A}10^{11}}$$<p>La r
   </script>
   <script>
      
-    const BUILD_TS = '1787576503';
+    const BUILD_TS = '1787735155';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

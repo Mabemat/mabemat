@@ -12,7 +12,7 @@ Décomposer $180$ en produit de facteurs premiers.
 ---CORR---
 On divise successivement par les nombres premiers, en commençant par le plus petit :
 
-$$180=2\times 90 \qquad 90=2\times 45 \qquad 45=3\times 15 \qquad 15=3\times 5$$
+$$\begin{aligned}180 &= 2\times 90 \qquad 90 \\ &= 2\times 45 \qquad 45 \\ &= 3\times 15 \qquad 15 \\ &= 3\times 5\end{aligned}$$
 
 En regroupant :
 
@@ -62,7 +62,7 @@ On applique la formule issue du théorème de Pythagore :
 
 $$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$
 
-$$AB=\sqrt{(3-(-1))^2+(6-3)^2}=\sqrt{4^2+3^2}=\sqrt{16+9}=\sqrt{25}={\color{#4A5D7A}5}$$
+$$\begin{aligned}AB &= \sqrt{(3-(-1))^2+(6-3)^2} \\ &= \sqrt{4^2+3^2} \\ &= \sqrt{16+9} \\ &= \sqrt{25} \\ &= {\color{#4A5D7A}5}\end{aligned}$$
 
 Les différences sont élevées au carré : leur signe n'a aucune importance.
 {{< /auto2-exo >}}
@@ -98,7 +98,7 @@ La proportion d'électeurs ayant voté pour D est :
 ---CORR---
 On convertit tout en écriture décimale pour pouvoir additionner :
 
-$$\dfrac{1}{4}=0{,}25 \qquad 30\,\%=0{,}30 \qquad \dfrac{1}{5}=0{,}20$$
+$$\begin{aligned}\dfrac{1}{4} &= 0{,}25 \qquad 30\,\% \\ &= 0{,}30 \qquad \dfrac{1}{5} \\ &= 0{,}20\end{aligned}$$
 
 La somme des quatre proportions vaut $1$, puisque chaque électeur a voté pour exactement un candidat :
 
@@ -120,7 +120,7 @@ Décomposer $252$ en produit de facteurs premiers.
 ---CORR---
 On divise successivement par les nombres premiers, en commençant par le plus petit :
 
-$$252=2\times 126 \qquad 126=2\times 63 \qquad 63=3\times 21 \qquad 21=3\times 7$$
+$$\begin{aligned}252 &= 2\times 126 \qquad 126 \\ &= 2\times 63 \qquad 63 \\ &= 3\times 21 \qquad 21 \\ &= 3\times 7\end{aligned}$$
 
 En regroupant :
 
@@ -174,7 +174,7 @@ On applique la formule issue du théorème de Pythagore :
 
 $$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$
 
-$$AB=\sqrt{(-4-2)^2+(7-(-1))^2}=\sqrt{(-6)^2+8^2}=\sqrt{36+64}=\sqrt{100}={\color{#4A5D7A}10}$$
+$$\begin{aligned}AB &= \sqrt{(-4-2)^2+(7-(-1))^2} \\ &= \sqrt{(-6)^2+8^2} \\ &= \sqrt{36+64} \\ &= \sqrt{100} \\ &= {\color{#4A5D7A}10}\end{aligned}$$
 
 Les différences sont élevées au carré : leur signe n'a aucune importance.
 {{< /auto2-exo >}}
@@ -210,7 +210,7 @@ La proportion d'électeurs ayant voté pour D est :
 ---CORR---
 On convertit tout en écriture décimale pour pouvoir additionner :
 
-$$\dfrac{1}{5}=0{,}20 \qquad 35\,\%=0{,}35 \qquad \dfrac{1}{4}=0{,}25$$
+$$\begin{aligned}\dfrac{1}{5} &= 0{,}20 \qquad 35\,\% \\ &= 0{,}35 \qquad \dfrac{1}{4} \\ &= 0{,}25\end{aligned}$$
 
 La somme des quatre proportions vaut $1$, puisque chaque électeur a voté pour exactement un candidat :
 

@@ -10,7 +10,7 @@ weight: 2
 {{< auto2-exo numero="01" >}}
 Parmi les nombres suivants, lesquels sont des entiers relatifs, c'est-à-dire appartiennent à $\mathbb{Z}$ ?
 
-$$\dfrac{-18}{3}\ ;\qquad 2{,}5\ ;\qquad \dfrac{7}{2}\ ;\qquad -\dfrac{25}{5}\ ;\qquad 0$$
+$$\begin{aligned}& \dfrac{-18}{3}\ ; \qquad 2{,}5\ ; \qquad \dfrac{7}{2}\ ; \\ & -\dfrac{25}{5}\ ; \qquad 0\end{aligned}$$
 ---CORR---
 On commence par écrire chaque nombre sous sa forme la plus simple :
 
@@ -62,7 +62,7 @@ $$\dfrac{3}{4}-\dfrac{5}{6}$$
 ---CORR---
 On cherche un dénominateur commun à $4$ et $6$ : c'est $12$.
 
-$$\dfrac{3}{4}-\dfrac{5}{6}=\dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{4{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 2}}}{6{\color{#4A5D7A}\boldsymbol{\times 2}}}=\dfrac{9}{12}-\dfrac{10}{12}=\dfrac{9-10}{12}={\color{#4A5D7A}-\dfrac{1}{12}}$$
+$$\begin{aligned}\dfrac{3}{4}-\dfrac{5}{6} &= \dfrac{3{\color{#4A5D7A}\boldsymbol{\times 3}}}{4{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{5{\color{#4A5D7A}\boldsymbol{\times 2}}}{6{\color{#4A5D7A}\boldsymbol{\times 2}}} \\ &= \dfrac{9}{12}-\dfrac{10}{12} \\ &= \dfrac{9-10}{12} \\ &= {\color{#4A5D7A}-\dfrac{1}{12}}\end{aligned}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -102,7 +102,7 @@ On peut vérifier : $1{,}6$ heure $=1$ heure $+\ 0{,}6\times 60=1$ heure et $36$
 {{< auto2-exo numero="01" >}}
 Parmi les nombres suivants, lesquels sont des entiers relatifs, c'est-à-dire appartiennent à $\mathbb{Z}$ ?
 
-$$\dfrac{-24}{4}\ ;\qquad 1{,}5\ ;\qquad \dfrac{9}{2}\ ;\qquad -\dfrac{35}{7}\ ;\qquad 0$$
+$$\begin{aligned}& \dfrac{-24}{4}\ ; \qquad 1{,}5\ ; \qquad \dfrac{9}{2}\ ; \\ & -\dfrac{35}{7}\ ; \qquad 0\end{aligned}$$
 ---CORR---
 On commence par écrire chaque nombre sous sa forme la plus simple :
 
@@ -154,7 +154,7 @@ $$\dfrac{2}{3}-\dfrac{7}{9}$$
 ---CORR---
 On cherche un dénominateur commun à $3$ et $9$ : c'est $9$.
 
-$$\dfrac{2}{3}-\dfrac{7}{9}=\dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{3{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{7}{9}=\dfrac{6}{9}-\dfrac{7}{9}=\dfrac{6-7}{9}={\color{#4A5D7A}-\dfrac{1}{9}}$$
+$$\begin{aligned}\dfrac{2}{3}-\dfrac{7}{9} &= \dfrac{2{\color{#4A5D7A}\boldsymbol{\times 3}}}{3{\color{#4A5D7A}\boldsymbol{\times 3}}}-\dfrac{7}{9} \\ &= \dfrac{6}{9}-\dfrac{7}{9} \\ &= \dfrac{6-7}{9} \\ &= {\color{#4A5D7A}-\dfrac{1}{9}}\end{aligned}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -180,7 +180,7 @@ Une durée de $2{,}25$ heures correspond à :
 ---CORR---
 Une heure vaut $60$ minutes. Pour convertir des heures en minutes, on multiplie donc par $60$ :
 
-$$2{,}25\times 60=2\times 60+0{,}25\times 60=120+15={\color{#4A5D7A}135}\ \text{minutes}$$
+$$\begin{aligned}2{,}25\times 60 &= 2\times 60+0{,}25\times 60 \\ &= 120+15 \\ &= {\color{#4A5D7A}135}\ \text{minutes}\end{aligned}$$
 
 <span class="rep">Réponse : B</span>
 {{< /auto2-exo >}}

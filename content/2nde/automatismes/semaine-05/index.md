@@ -30,7 +30,7 @@ Déterminer le taux d'évolution de ce prix, en pourcentage.
 ---CORR---
 Le taux d'évolution se calcule à partir de la valeur de départ :
 
-$$t=\dfrac{\text{valeur d'arrivée}-\text{valeur de départ}}{\text{valeur de départ}}=\dfrac{54-48}{48}=\dfrac{6}{48}$$
+$$\begin{aligned}t &= \dfrac{\text{valeur d'arrivée}-\text{valeur de départ}}{\text{valeur de départ}} \\ &= \dfrac{54-48}{48} \\ &= \dfrac{6}{48}\end{aligned}$$
 
 On simplifie :
 
@@ -46,7 +46,7 @@ Déterminer le taux d'évolution global, en pourcentage.
 ---CORR---
 On traduit chaque évolution par son coefficient multiplicateur :
 
-$$\text{hausse de }20\,\% \longrightarrow 1+0{,}20=1{,}20 \qquad \text{baisse de }15\,\% \longrightarrow 1-0{,}15=0{,}85$$
+$$\begin{aligned}\text{hausse de }20\,\% \longrightarrow 1+0{,}20 &= 1{,}20 \\ \text{baisse de }15\,\% \longrightarrow 1-0{,}15 \\ &= 0{,}85\end{aligned}$$
 
 Le coefficient global est le **produit** des deux coefficients :
 
@@ -80,7 +80,7 @@ Augmenter une valeur de $30\,\%$ revient à la multiplier par :
 ---CORR---
 Augmenter de $30\,\%$, c'est ajouter $30\,\%$ de la valeur à la valeur elle-même. Pour une valeur $V$ :
 
-$$V+\dfrac{30}{100}\times V=V\times\left(1+0{,}30\right)=V\times{\color{#4A5D7A}1{,}3}$$
+$$\begin{aligned}V+\dfrac{30}{100}\times V &= V\times\left(1+0{,}30\right) \\ &= V\times{\color{#4A5D7A}1{,}3}\end{aligned}$$
 
 Le coefficient multiplicateur d'une hausse de $t\,\%$ est $1+\dfrac{t}{100}$ : il est toujours plus grand que $1$.
 
@@ -130,7 +130,7 @@ Déterminer le taux d'évolution de ce prix, en pourcentage.
 ---CORR---
 Le taux d'évolution se calcule à partir de la valeur de départ :
 
-$$t=\dfrac{\text{valeur d'arrivée}-\text{valeur de départ}}{\text{valeur de départ}}=\dfrac{90-75}{75}=\dfrac{15}{75}$$
+$$\begin{aligned}t &= \dfrac{\text{valeur d'arrivée}-\text{valeur de départ}}{\text{valeur de départ}} \\ &= \dfrac{90-75}{75} \\ &= \dfrac{15}{75}\end{aligned}$$
 
 On simplifie :
 
@@ -146,7 +146,7 @@ Déterminer le taux d'évolution global, en pourcentage.
 ---CORR---
 On traduit chaque évolution par son coefficient multiplicateur :
 
-$$\text{hausse de }25\,\% \longrightarrow 1+0{,}25=1{,}25 \qquad \text{baisse de }20\,\% \longrightarrow 1-0{,}20=0{,}80$$
+$$\begin{aligned}\text{hausse de }25\,\% \longrightarrow 1+0{,}25 &= 1{,}25 \\ \text{baisse de }20\,\% \longrightarrow 1-0{,}20 \\ &= 0{,}80\end{aligned}$$
 
 Le coefficient global est le **produit** des deux coefficients :
 
@@ -178,7 +178,7 @@ Diminuer une valeur de $40\,\%$ revient à la multiplier par :
 ---CORR---
 Diminuer de $40\,\%$, c'est retrancher $40\,\%$ de la valeur à la valeur elle-même. Pour une valeur $V$ :
 
-$$V-\dfrac{40}{100}\times V=V\times\left(1-0{,}40\right)=V\times{\color{#4A5D7A}0{,}6}$$
+$$\begin{aligned}V-\dfrac{40}{100}\times V &= V\times\left(1-0{,}40\right) \\ &= V\times{\color{#4A5D7A}0{,}6}\end{aligned}$$
 
 Le coefficient multiplicateur d'une baisse de $t\,\%$ est $1-\dfrac{t}{100}$ : il est toujours compris entre $0$ et $1$.
 

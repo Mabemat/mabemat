@@ -68,7 +68,7 @@ $$\sqrt{32}-\sqrt{8}$$
 ---CORR---
 On extrait le plus grand carré parfait de chaque racine :
 
-$$\sqrt{32}=\sqrt{16\times 2}=4\sqrt{2} \qquad\qquad \sqrt{8}=\sqrt{4\times 2}=2\sqrt{2}$$
+$$\begin{aligned}\sqrt{32} &= \sqrt{16\times 2}=4\sqrt{2} \\ \sqrt{8} &= \sqrt{4\times 2}=2\sqrt{2}\end{aligned}$$
 
 Les deux termes ont la même partie irrationnelle :
 
@@ -104,7 +104,7 @@ Doubler, c'est multiplier par $2$ : le coefficient multiplicateur vaut $2$.
 
 Or ce coefficient s'écrit $1+\dfrac{t}{100}$ :
 
-$$2=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=1 \qquad\text{donc}\qquad t={\color{#4A5D7A}100}$$
+$$\begin{aligned}2 &= 1+\dfrac{t}{100} \\ \text{donc}\quad \dfrac{t}{100} &= 1 \\ \text{donc}\quad t &= {\color{#4A5D7A}100}\end{aligned}$$
 
 La réponse A confond le coefficient $2$, exprimé en pourcentage, avec le taux d'évolution : augmenter de $200\,\%$ reviendrait à tripler le prix.
 
@@ -176,7 +176,7 @@ $$\sqrt{45}-\sqrt{20}$$
 ---CORR---
 On extrait le plus grand carré parfait de chaque racine :
 
-$$\sqrt{45}=\sqrt{9\times 5}=3\sqrt{5} \qquad\qquad \sqrt{20}=\sqrt{4\times 5}=2\sqrt{5}$$
+$$\begin{aligned}\sqrt{45} &= \sqrt{9\times 5}=3\sqrt{5} \\ \sqrt{20} &= \sqrt{4\times 5}=2\sqrt{5}\end{aligned}$$
 
 Les deux termes ont la même partie irrationnelle :
 
@@ -212,7 +212,7 @@ Tripler, c'est multiplier par $3$ : le coefficient multiplicateur vaut $3$.
 
 Or ce coefficient s'écrit $1+\dfrac{t}{100}$ :
 
-$$3=1+\dfrac{t}{100} \qquad\text{donc}\qquad \dfrac{t}{100}=2 \qquad\text{donc}\qquad t={\color{#4A5D7A}200}$$
+$$\begin{aligned}3 &= 1+\dfrac{t}{100} \\ \text{donc}\quad \dfrac{t}{100} &= 2 \\ \text{donc}\quad t &= {\color{#4A5D7A}200}\end{aligned}$$
 
 La réponse D confond le coefficient $3$, exprimé en pourcentage, avec le taux d'évolution : le prix augmente de deux fois sa valeur, pas de trois fois.
 
