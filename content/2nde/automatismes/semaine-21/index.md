@@ -1,5 +1,5 @@
 ---
-title: "Semaine 21 - Fonction inverse et valeur absolue"
+title: "Semaine 21 - Équations avec x² et fonction inverse"
 layout: "automatismes-2nde"
 auto_number: 21
 weight: 21
@@ -28,51 +28,59 @@ On vérifie : $-0{,}125>-0{,}2$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Calculer :
+Résoudre dans $\mathbb{R}$ les deux équations suivantes :
 
-$$\left|-7\right| \qquad \left|3-11\right| \qquad \left|4-4\right|$$
+$$x^2=49 \qquad\text{et}\qquad x^2=-9$$
 ---CORR---
-La valeur absolue d'un nombre est sa distance à zéro : elle est toujours positive ou nulle.
+**Première équation.** $49$ est positif, donc l'équation $x^2=49$ admet deux solutions opposées :
 
-$$\left|-7\right|={\color{#4A5D7A}7}$$
+$$x=-\sqrt{49}=-7 \qquad\text{ou}\qquad x=\sqrt{49}=7$$
 
-Pour les deux autres, on calcule d'abord ce qui est à l'intérieur :
+$$S_1={\color{#4A5D7A}\lbrace -7\,;\,7\rbrace}$$
 
-$$\left|3-11\right|=\left|-8\right|={\color{#4A5D7A}8}$$
+**Seconde équation.** Le carré d'un nombre réel est toujours positif ou nul, il ne peut donc jamais valoir $-9$ :
 
-$$\left|4-4\right|=\left|0\right|={\color{#4A5D7A}0}$$
+$$S_2={\color{#4A5D7A}\varnothing}$$
 
-Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l'intérieur.
+Retenir : $x^2=k$ a deux solutions si $k>0$, une seule ($0$) si $k=0$, aucune si $k<0$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
 Résoudre dans $\mathbb{R}$ l'équation :
 
-$$\left|x-3\right|=5$$
+$$3x^2-5=43$$
 ---CORR---
-On traduit par une distance : $\left|x-3\right|$ est la distance entre $x$ et $3$. On cherche donc les réels situés à une distance de $5$ du nombre $3$.
+On isole d'abord $x^2$. On ajoute $5$ à chaque membre :
 
-Il y en a deux, un de chaque côté :
+$$3x^2=48$$
 
-$$x-3=5 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-3=-5 \quad\text{donc}\quad x=-2$$
+On divise par $3$ :
 
-$$S={\color{#4A5D7A}\lbrace -2\,;\,8\rbrace}$$
+$$x^2=16$$
 
-On peut le lire directement sur une droite graduée : en partant de $3$, on avance de $5$ puis on recule de $5$.
+Comme $16>0$, il y a deux solutions opposées :
+
+$$S={\color{#4A5D7A}\lbrace -4\,;\,4\rbrace}$$
+
+Erreur fréquente : n'écrire que $x=4$. La solution négative compte autant.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre dans $\mathbb{R}$ l'équation :
+On donne les vecteurs $\overrightarrow{u}\,(4\,;\,-6)$ et $\overrightarrow{v}\,(-6\,;\,9)$.
 
-$$2x^2-9=23$$
+Ces deux vecteurs sont-ils colinéaires ?
 ---CORR---
-On isole $x^2$ :
+Deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ sont colinéaires si et seulement si leur déterminant est nul :
 
-$$2x^2=32 \qquad\text{donc}\qquad x^2=16$$
+$$xy'-yx'=0$$
 
-Comme $16>0$, deux solutions opposées :
+On calcule :
 
-$$S={\color{#4A5D7A}\lbrace -4\,;\,4\rbrace}$$
+$$4\times 9-(-6)\times(-6)=36-36={\color{#4A5D7A}0}$$
+
+Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.
+
+On le voit aussi directement : $\overrightarrow{v}=-\dfrac{3}{2}\,\overrightarrow{u}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -132,51 +140,59 @@ On vérifie : $-0{,}111\ldots>-0{,}25$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Calculer :
+Résoudre dans $\mathbb{R}$ les deux équations suivantes :
 
-$$\left|-12\right| \qquad \left|5-14\right| \qquad \left|6-6\right|$$
+$$x^2=64 \qquad\text{et}\qquad x^2=-16$$
 ---CORR---
-La valeur absolue d'un nombre est sa distance à zéro : elle est toujours positive ou nulle.
+**Première équation.** $64$ est positif, donc l'équation $x^2=64$ admet deux solutions opposées :
 
-$$\left|-12\right|={\color{#4A5D7A}12}$$
+$$x=-\sqrt{64}=-8 \qquad\text{ou}\qquad x=\sqrt{64}=8$$
 
-Pour les deux autres, on calcule d'abord ce qui est à l'intérieur :
+$$S_1={\color{#4A5D7A}\lbrace -8\,;\,8\rbrace}$$
 
-$$\left|5-14\right|=\left|-9\right|={\color{#4A5D7A}9}$$
+**Seconde équation.** Le carré d'un nombre réel est toujours positif ou nul, il ne peut donc jamais valoir $-16$ :
 
-$$\left|6-6\right|=\left|0\right|={\color{#4A5D7A}0}$$
+$$S_2={\color{#4A5D7A}\varnothing}$$
 
-Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l'intérieur.
+Retenir : $x^2=k$ a deux solutions si $k>0$, une seule ($0$) si $k=0$, aucune si $k<0$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
 Résoudre dans $\mathbb{R}$ l'équation :
 
-$$\left|x-2\right|=6$$
+$$5x^2-7=38$$
 ---CORR---
-On traduit par une distance : $\left|x-2\right|$ est la distance entre $x$ et $2$. On cherche donc les réels situés à une distance de $6$ du nombre $2$.
+On isole d'abord $x^2$. On ajoute $7$ à chaque membre :
 
-Il y en a deux, un de chaque côté :
+$$5x^2=45$$
 
-$$x-2=6 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-2=-6 \quad\text{donc}\quad x=-4$$
+On divise par $5$ :
 
-$$S={\color{#4A5D7A}\lbrace -4\,;\,8\rbrace}$$
+$$x^2=9$$
 
-On peut le lire directement sur une droite graduée : en partant de $2$, on avance de $6$ puis on recule de $6$.
+Comme $9>0$, il y a deux solutions opposées :
+
+$$S={\color{#4A5D7A}\lbrace -3\,;\,3\rbrace}$$
+
+Erreur fréquente : n'écrire que $x=3$. La solution négative compte autant.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre dans $\mathbb{R}$ l'équation :
+On donne les vecteurs $\overrightarrow{u}\,(3\,;\,-5)$ et $\overrightarrow{v}\,(-9\,;\,16)$.
 
-$$3x^2-11=64$$
+Ces deux vecteurs sont-ils colinéaires ?
 ---CORR---
-On isole $x^2$ :
+Deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ sont colinéaires si et seulement si leur déterminant est nul :
 
-$$3x^2=75 \qquad\text{donc}\qquad x^2=25$$
+$$xy'-yx'=0$$
 
-Comme $25>0$, deux solutions opposées :
+On calcule :
 
-$$S={\color{#4A5D7A}\lbrace -5\,;\,5\rbrace}$$
+$$3\times 16-(-5)\times(-9)=48-45={\color{#4A5D7A}3}$$
+
+Le déterminant n'est pas nul, donc les deux vecteurs ${\color{#4A5D7A}\text{ne sont pas colinéaires}}$.
+
+Attention au piège : $-9=3\times(-3)$ mais $16\neq -5\times(-3)=15$. Il suffit d'un écart sur une seule coordonnée.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

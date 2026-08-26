@@ -1,5 +1,5 @@
 ---
-title: "Semaine 16 - Puissances et notation scientifique"
+title: "Semaine 16 - Fonctions affines, puissances et notation scientifique"
 layout: "automatismes-2nde"
 auto_number: 16
 weight: 16
@@ -26,15 +26,19 @@ Attention à la double soustraction : $4-(-2)=4+2=6$. On peut vérifier : $2^6=6
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Donner l'écriture scientifique du nombre $0{,}000\,472$.
+Déterminer la fonction affine $f$ telle que $f(2)=1$ et $f(5)=10$.
 ---CORR---
-L'écriture scientifique est de la forme $a\times 10^{n}$, où $a$ est un décimal tel que $1\leqslant a<10$.
+Une fonction affine s'écrit $f(x)=mx+p$. On calcule d'abord le coefficient directeur :
 
-On déplace la virgule pour obtenir un seul chiffre non nul avant la virgule : ici on obtient $4{,}72$. Il a fallu déplacer la virgule de $4$ rangs vers la droite, donc on compense par $10^{-4}$.
+$$m=\dfrac{f(5)-f(2)}{5-2}=\dfrac{10-1}{3}=\dfrac{9}{3}=3$$
 
-$$0{,}000\,472={\color{#4A5D7A}4{,}72\times 10^{-4}}$$
+On a donc $f(x)=3x+p$. Pour trouver $p$, on utilise l'une des deux informations, par exemple $f(2)=1$ :
 
-Le nombre étant plus petit que $1$, l'exposant est bien négatif.
+$$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$
+
+$$f(x)={\color{#4A5D7A}3x-5}$$
+
+Vérification avec l'autre donnée : $f(5)=3\times 5-5=10$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -136,15 +140,19 @@ Attention à la double soustraction : $3-(-1)=3+1=4$. On peut vérifier : $3^4=8
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Donner l'écriture scientifique du nombre $0{,}000\,051\,3$.
+Déterminer la fonction affine $f$ telle que $f(1)=-1$ et $f(5)=7$.
 ---CORR---
-L'écriture scientifique est de la forme $a\times 10^{n}$, où $a$ est un décimal tel que $1\leqslant a<10$.
+Une fonction affine s'écrit $f(x)=mx+p$. On calcule d'abord le coefficient directeur :
 
-On déplace la virgule pour obtenir un seul chiffre non nul avant la virgule : ici on obtient $5{,}13$. Il a fallu déplacer la virgule de $5$ rangs vers la droite, donc on compense par $10^{-5}$.
+$$m=\dfrac{f(5)-f(1)}{5-1}=\dfrac{7-(-1)}{4}=\dfrac{8}{4}=2$$
 
-$$0{,}000\,051\,3={\color{#4A5D7A}5{,}13\times 10^{-5}}$$
+On a donc $f(x)=2x+p$. Pour trouver $p$, on utilise l'une des deux informations, par exemple $f(1)=-1$ :
 
-Le nombre étant plus petit que $1$, l'exposant est bien négatif.
+$$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3$$
+
+$$f(x)={\color{#4A5D7A}2x-3}$$
+
+Vérification avec l'autre donnée : $f(5)=2\times 5-3=7$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}

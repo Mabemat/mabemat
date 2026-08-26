@@ -1,5 +1,5 @@
 ---
-title: "Semaine 7 - Équations produits et quotients"
+title: "Semaine 7 - Équations et équations produits"
 layout: "automatismes-2nde"
 auto_number: 7
 weight: 7
@@ -26,21 +26,25 @@ $$S={\color{#4A5D7A}\left\lbrace -\dfrac{5}{2}\,;\,2\right\rbrace}$$
 {{< auto2-exo numero="02" >}}
 Résoudre dans $\mathbb{R}$ l'équation :
 
-$$\dfrac{4x-8}{x+3}=0$$
+$$3(x-2)=5x+4$$
 ---CORR---
-On commence par chercher la valeur interdite, celle qui annule le dénominateur :
+On développe d'abord le membre de gauche :
 
-$$x+3=0 \quad\text{donc}\quad x=-3$$
+$$3x-6=5x+4$$
 
-L'équation n'a de sens que pour $x\neq -3$.
+On regroupe les termes en $x$ à gauche, en retranchant $5x$ à chaque membre :
 
-Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
+$$3x-5x-6=4 \qquad\text{soit}\qquad -2x-6=4$$
 
-$$4x-8=0 \quad\text{donc}\quad 4x=8 \quad\text{donc}\quad x=2$$
+On ajoute $6$ à chaque membre :
 
-Comme $2\neq -3$, cette solution est acceptable.
+$$-2x=10$$
 
-$$S={\color{#4A5D7A}\lbrace 2\rbrace}$$
+On divise chaque membre par $-2$ :
+
+$$x={\color{#4A5D7A}-5}$$
+
+Vérification : $3\times(-5-2)=-21$ et $5\times(-5)+4=-21$. L'ensemble des solutions est $S=\lbrace -5\rbrace$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -66,23 +70,25 @@ Vérification : $2\times(14+9)=2\times 23=46$ cm.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre l'équation :
+Développer et réduire :
 
-$$4x+9=x-3$$
+$$A=(2x-3)^2-(x+1)(x-1)$$
 ---CORR---
-On retranche $x$ à chaque membre :
+On reconnaît deux identités remarquables.
 
-$$3x+9=-3$$
+Pour la première, $(a-b)^2=a^2-2ab+b^2$ avec $a=2x$ et $b=3$ :
 
-On retranche $9$ à chaque membre :
+$$(2x-3)^2=(2x)^2-2\times 2x\times 3+3^2=4x^2-12x+9$$
 
-$$3x=-12$$
+Pour la seconde, $(a+b)(a-b)=a^2-b^2$ avec $a=x$ et $b=1$ :
 
-On divise chaque membre par $3$ :
+$$(x+1)(x-1)=x^2-1$$
 
-$$x={\color{#4A5D7A}-4}$$
+On soustrait, en faisant attention au signe devant la parenthèse :
 
-Vérification : $4\times(-4)+9=-7$ et $-4-3=-7$.
+$$A=4x^2-12x+9-\left(x^2-1\right)=4x^2-12x+9-x^2+1$$
+
+$$A={\color{#4A5D7A}3x^2-12x+10}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -140,21 +146,25 @@ $$S={\color{#4A5D7A}\lbrace -2\,;\,3\rbrace}$$
 {{< auto2-exo numero="02" >}}
 Résoudre dans $\mathbb{R}$ l'équation :
 
-$$\dfrac{6x+18}{x-4}=0$$
+$$4(x+3)=7x-6$$
 ---CORR---
-On commence par chercher la valeur interdite, celle qui annule le dénominateur :
+On développe d'abord le membre de gauche :
 
-$$x-4=0 \quad\text{donc}\quad x=4$$
+$$4x+12=7x-6$$
 
-L'équation n'a de sens que pour $x\neq 4$.
+On regroupe les termes en $x$ à gauche, en retranchant $7x$ à chaque membre :
 
-Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
+$$4x-7x+12=-6 \qquad\text{soit}\qquad -3x+12=-6$$
 
-$$6x+18=0 \quad\text{donc}\quad 6x=-18 \quad\text{donc}\quad x=-3$$
+On retranche $12$ à chaque membre :
 
-Comme $-3\neq 4$, cette solution est acceptable.
+$$-3x=-18$$
 
-$$S={\color{#4A5D7A}\lbrace -3\rbrace}$$
+On divise chaque membre par $-3$ :
+
+$$x={\color{#4A5D7A}6}$$
+
+Vérification : $4\times(6+3)=36$ et $7\times 6-6=36$. L'ensemble des solutions est $S=\lbrace 6\rbrace$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -180,23 +190,25 @@ Vérification : $2\times(18+11)=2\times 29=58$ cm.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre l'équation :
+Développer et réduire :
 
-$$6x-5=2x+7$$
+$$A=(3x+2)^2-(x+4)(x-4)$$
 ---CORR---
-On retranche $2x$ à chaque membre :
+On reconnaît deux identités remarquables.
 
-$$4x-5=7$$
+Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=2$ :
 
-On ajoute $5$ à chaque membre :
+$$(3x+2)^2=(3x)^2+2\times 3x\times 2+2^2=9x^2+12x+4$$
 
-$$4x=12$$
+Pour la seconde, $(a+b)(a-b)=a^2-b^2$ avec $a=x$ et $b=4$ :
 
-On divise chaque membre par $4$ :
+$$(x+4)(x-4)=x^2-16$$
 
-$$x={\color{#4A5D7A}3}$$
+On soustrait, en faisant attention au signe devant la parenthèse :
 
-Vérification : $6\times 3-5=13$ et $2\times 3+7=13$.
+$$A=9x^2+12x+4-\left(x^2-16\right)=9x^2+12x+4-x^2+16$$
+
+$$A={\color{#4A5D7A}8x^2+12x+20}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

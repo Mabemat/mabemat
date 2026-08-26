@@ -42,23 +42,19 @@ $$B={\color{#4A5D7A}2\sqrt{3}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre dans $[0\,;\,+\infty[$ l'équation :
+Calculer, en donnant un résultat sans racine carrée :
 
-$$3\sqrt{x}-2=10$$
+$$A=\sqrt{12}\times\sqrt{3} \qquad\text{et}\qquad B=\left(2\sqrt{5}\right)^2$$
 ---CORR---
-On isole d'abord la racine. On ajoute $2$ à chaque membre :
+Pour $A$, on utilise $\sqrt{a}\times\sqrt{b}=\sqrt{a\times b}$ :
 
-$$3\sqrt{x}=12$$
+$$A=\sqrt{12\times 3}=\sqrt{36}={\color{#4A5D7A}6}$$
 
-On divise par $3$ :
+Pour $B$, on élève au carré chacun des deux facteurs :
 
-$$\sqrt{x}=4$$
+$$B=\left(2\sqrt{5}\right)^2=2^2\times\left(\sqrt{5}\right)^2=4\times 5={\color{#4A5D7A}20}$$
 
-Les deux membres étant positifs, on peut élever au carré :
-
-$$x=4^2={\color{#4A5D7A}16}$$
-
-Vérification : $3\sqrt{16}-2=3\times 4-2=10$. La solution appartient bien à $[0\,;\,+\infty[$.
+C'est la définition même de la racine carrée : $\left(\sqrt{5}\right)^2=5$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -140,23 +136,19 @@ $$B={\color{#4A5D7A}2\sqrt{5}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre dans $[0\,;\,+\infty[$ l'équation :
+Calculer, en donnant un résultat sans racine carrée :
 
-$$4\sqrt{x}-3=17$$
+$$A=\sqrt{8}\times\sqrt{2} \qquad\text{et}\qquad B=\left(3\sqrt{2}\right)^2$$
 ---CORR---
-On isole d'abord la racine. On ajoute $3$ à chaque membre :
+Pour $A$, on utilise $\sqrt{a}\times\sqrt{b}=\sqrt{a\times b}$ :
 
-$$4\sqrt{x}=20$$
+$$A=\sqrt{8\times 2}=\sqrt{16}={\color{#4A5D7A}4}$$
 
-On divise par $4$ :
+Pour $B$, on élève au carré chacun des deux facteurs :
 
-$$\sqrt{x}=5$$
+$$B=\left(3\sqrt{2}\right)^2=3^2\times\left(\sqrt{2}\right)^2=9\times 2={\color{#4A5D7A}18}$$
 
-Les deux membres étant positifs, on peut élever au carré :
-
-$$x=5^2={\color{#4A5D7A}25}$$
-
-Vérification : $4\sqrt{25}-3=4\times 5-3=17$. La solution appartient bien à $[0\,;\,+\infty[$.
+C'est la définition même de la racine carrée : $\left(\sqrt{2}\right)^2=2$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

@@ -58,25 +58,19 @@ Elle est décroissante sur $[-4\,;\,-2]$ et sur $[3\,;\,4]$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x^2-4x$.
+Le prix d'un article passe de $250$ € à $200$ €.
 
-**a.** Calculer $g(-1)$.
-
-**b.** Déterminer les antécédents de $0$ par $g$.
+Déterminer le taux d'évolution de ce prix, en pourcentage.
 ---CORR---
-**a.** On remplace $x$ par $-1$ :
+Le taux d'évolution se calcule en comparant la variation à la valeur de départ :
 
-$$g(-1)=(-1)^2-4\times(-1)=1+4={\color{#4A5D7A}5}$$
+$$t=\dfrac{\text{valeur d'arrivée}-\text{valeur de départ}}{\text{valeur de départ}}$$
 
-**b.** On résout $g(x)=0$, c'est-à-dire $x^2-4x=0$. On factorise par $x$ :
+$$t=\dfrac{200-250}{250}=\dfrac{-50}{250}=-0{,}2$$
 
-$$x(x-4)=0$$
+$$t={\color{#4A5D7A}-20\,\%}$$
 
-Un produit est nul si et seulement si l'un de ses facteurs est nul :
-
-$$x=0 \qquad\text{ou}\qquad x-4=0\ \text{donc}\ x=4$$
-
-Les antécédents de $0$ sont ${\color{#4A5D7A}0}$ et ${\color{#4A5D7A}4}$.
+Le prix a donc baissé de $20\,\%$. Le dénominateur est bien le prix de départ, $250$, et non le prix d'arrivée.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -178,25 +172,19 @@ Elle est décroissante sur $[-4\,;\,-2]$ et sur $[2\,;\,4]$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Soit $g$ la fonction définie sur $\mathbb{R}$ par $g(x)=x^2-6x$.
+Le prix d'un article passe de $150$ € à $186$ €.
 
-**a.** Calculer $g(-1)$.
-
-**b.** Déterminer les antécédents de $0$ par $g$.
+Déterminer le taux d'évolution de ce prix, en pourcentage.
 ---CORR---
-**a.** On remplace $x$ par $-1$ :
+Le taux d'évolution se calcule en comparant la variation à la valeur de départ :
 
-$$g(-1)=(-1)^2-6\times(-1)=1+6={\color{#4A5D7A}7}$$
+$$t=\dfrac{\text{valeur d'arrivée}-\text{valeur de départ}}{\text{valeur de départ}}$$
 
-**b.** On résout $g(x)=0$, c'est-à-dire $x^2-6x=0$. On factorise par $x$ :
+$$t=\dfrac{186-150}{150}=\dfrac{36}{150}=0{,}24$$
 
-$$x(x-6)=0$$
+$$t={\color{#4A5D7A}+24\,\%}$$
 
-Un produit est nul si et seulement si l'un de ses facteurs est nul :
-
-$$x=0 \qquad\text{ou}\qquad x-6=0\ \text{donc}\ x=6$$
-
-Les antécédents de $0$ sont ${\color{#4A5D7A}0}$ et ${\color{#4A5D7A}6}$.
+Le prix a donc augmenté de $24\,\%$. Le dénominateur est bien le prix de départ, $150$, et non le prix d'arrivée.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

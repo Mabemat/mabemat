@@ -1,5 +1,5 @@
 ---
-title: "Semaine 6 - Évolutions réciproques, fréquences et équations"
+title: "Semaine 6 - Évolutions réciproques et tableaux croisés"
 layout: "automatismes-2nde"
 auto_number: 6
 weight: 6
@@ -46,23 +46,33 @@ $$f=\dfrac{30}{120}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre l'équation :
+Le tableau suivant donne la répartition des $200$ élèves d'un lycée selon leur langue vivante 2 et leur niveau.
 
-$$5x-7=2x+11$$
+| | Espagnol | Allemand | Total |
+|---|---|---|---|
+| Seconde | 78 | | 110 |
+| Première | | 28 | |
+| Total | 140 | | 200 |
+
+Recopier et compléter le tableau.
 ---CORR---
-On regroupe les termes en $x$ dans un membre et les nombres dans l'autre. On retranche $2x$ à chaque membre :
+On complète case par case, en utilisant le fait que chaque total est la somme de sa ligne ou de sa colonne.
 
-$$5x-2x-7=11 \qquad\text{soit}\qquad 3x-7=11$$
+Ligne « Seconde » : $110-78={\color{#4A5D7A}32}$ élèves de seconde font allemand.
 
-On ajoute $7$ à chaque membre :
+Colonne « Espagnol » : $140-78={\color{#4A5D7A}62}$ élèves de première font espagnol.
 
-$$3x=18$$
+Ligne « Première » : $62+28={\color{#4A5D7A}90}$ élèves en première.
 
-On divise chaque membre par $3$ :
+Colonne « Allemand » : $32+28={\color{#4A5D7A}60}$ élèves font allemand.
 
-$$x={\color{#4A5D7A}6}$$
+| | Espagnol | Allemand | Total |
+|---|---|---|---|
+| Seconde | 78 | 32 | 110 |
+| Première | 62 | 28 | 90 |
+| Total | 140 | 60 | 200 |
 
-Vérification : $5\times 6-7=23$ et $2\times 6+11=23$. L'ensemble des solutions est $S=\lbrace 6\rbrace$.
+Deux vérifications indépendantes : $110+90=200$ pour les lignes, et $140+60=200$ pour les colonnes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -158,23 +168,33 @@ $$f=\dfrac{45}{150}=\dfrac{3}{10}=0{,}3={\color{#4A5D7A}30\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre l'équation :
+Le tableau suivant donne la répartition des $250$ adhérents d'un club selon leur activité et leur âge.
 
-$$7x+4=3x-12$$
+| | Tennis | Natation | Total |
+|---|---|---|---|
+| Moins de 18 ans | 64 | | 150 |
+| 18 ans ou plus | | 45 | |
+| Total | 119 | | 250 |
+
+Recopier et compléter le tableau.
 ---CORR---
-On regroupe les termes en $x$ dans un membre et les nombres dans l'autre. On retranche $3x$ à chaque membre :
+On complète case par case, en utilisant le fait que chaque total est la somme de sa ligne ou de sa colonne.
 
-$$7x-3x+4=-12 \qquad\text{soit}\qquad 4x+4=-12$$
+Ligne « Moins de 18 ans » : $150-64={\color{#4A5D7A}86}$ adhérents de moins de 18 ans font de la natation.
 
-On retranche $4$ à chaque membre :
+Colonne « Tennis » : $119-64={\color{#4A5D7A}55}$ adhérents de 18 ans ou plus font du tennis.
 
-$$4x=-16$$
+Ligne « 18 ans ou plus » : $55+45={\color{#4A5D7A}100}$ adhérents de 18 ans ou plus.
 
-On divise chaque membre par $4$ :
+Colonne « Natation » : $86+45={\color{#4A5D7A}131}$ adhérents font de la natation.
 
-$$x={\color{#4A5D7A}-4}$$
+| | Tennis | Natation | Total |
+|---|---|---|---|
+| Moins de 18 ans | 64 | 86 | 150 |
+| 18 ans ou plus | 55 | 45 | 100 |
+| Total | 119 | 131 | 250 |
 
-Vérification : $7\times(-4)+4=-24$ et $3\times(-4)-12=-24$. L'ensemble des solutions est $S=\lbrace -4\rbrace$.
+Deux vérifications indépendantes : $150+100=250$ pour les lignes, et $119+131=250$ pour les colonnes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

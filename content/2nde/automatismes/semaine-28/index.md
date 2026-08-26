@@ -1,5 +1,5 @@
 ---
-title: "Semaine 28 - Droites parallèles, sécantes et mise en équation"
+title: "Semaine 28 - Équations cartésienne et réduite d'une droite"
 layout: "automatismes-2nde"
 auto_number: 28
 weight: 28
@@ -8,75 +8,73 @@ weight: 28
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Les droites $(d)\,:\ y=3x-5$ et $(d')\,:\ 6x-2y+7=0$ sont-elles parallèles ?
+La droite $(d)$ a pour équation cartésienne $3x-2y+6=0$.
+
+Le point $A(2\,;\,6)$ appartient-il à $(d)$ ?
 ---CORR---
-Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :
+Un point appartient à une droite si ses coordonnées vérifient l'équation. On remplace $x$ par $2$ et $y$ par $6$ dans le membre de gauche :
 
-$$-2y=-6x-7 \qquad\text{donc}\qquad y=3x+3{,}5$$
+$$3\times 2-2\times 6+6=6-12+6=0$$
 
-Les deux droites ont le même coefficient directeur $3$, mais des ordonnées à l'origine différentes ($-5$ et $3{,}5$) :
+On obtient bien $0$, donc l'égalité $3x-2y+6=0$ est vérifiée :
 
-$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$
-
-Si les ordonnées à l'origine avaient été égales, les droites auraient été confondues.
+$${\color{#4A5D7A}A\ \text{appartient à}\ (d)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Déterminer les coordonnées du point d'intersection des droites $(d)\,:\ y=2x-3$ et $(d')\,:\ y=-x+6$.
+Donner l'équation réduite de la droite dont une équation cartésienne est :
+
+$$2x-4y+8=0$$
 ---CORR---
-Les coefficients directeurs $2$ et $-1$ sont différents : les droites sont sécantes, il y a donc bien un point d'intersection.
+L'équation réduite est de la forme $y=mx+p$ : il faut donc isoler $y$.
 
-En ce point, les deux ordonnées sont égales :
+On commence par isoler le terme en $y$ :
 
-$$2x-3=-x+6$$
+$$-4y=-2x-8$$
 
-$$3x=9 \qquad\text{donc}\qquad x=3$$
+On divise chaque membre par $-4$, sans oublier de diviser **les deux** termes de droite :
 
-On calcule l'ordonnée avec l'une des deux équations :
+$$y=\dfrac{-2x-8}{-4}=\dfrac{-2}{-4}x+\dfrac{-8}{-4}$$
 
-$$y=2\times 3-3=3$$
+$$y={\color{#4A5D7A}0{,}5x+2}$$
 
-$$\text{Point d'intersection}\ {\color{#4A5D7A}(3\,;\,3)}$$
-
-Vérification avec l'autre équation : $-3+6=3$.
+Le coefficient directeur vaut $0{,}5$ et l'ordonnée à l'origine $2$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Un club propose deux formules. La formule A coûte $15$ € par mois plus $0{,}50$ € par séance. La formule B coûte $5$ € par mois plus $1{,}50$ € par séance.
-
-À partir de combien de séances par mois la formule A devient-elle plus avantageuse ?
+Déterminer l'équation réduite de la droite passant par les points $A(-1\,;\,5)$ et $B(3\,;\,-3)$.
 ---CORR---
-On note $x$ le nombre de séances et on exprime les deux tarifs :
+La droite n'est pas verticale (les abscisses de $A$ et $B$ diffèrent) : son équation réduite est de la forme $y=mx+p$.
 
-$$\text{A}:\ 15+0{,}5x \qquad\qquad \text{B}:\ 5+1{,}5x$$
+On calcule d'abord le coefficient directeur :
 
-« A plus avantageuse » signifie que A coûte moins cher que B :
+$$m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{-3-5}{3-(-1)}=\dfrac{-8}{4}=-2$$
 
-$$15+0{,}5x<5+1{,}5x$$
+L'équation est donc $y=-2x+p$. On détermine $p$ en écrivant que $A$ appartient à la droite :
 
-On retranche $0{,}5x$ et $5$ à chaque membre :
+$$5=-2\times(-1)+p \qquad\text{soit}\qquad 5=2+p \qquad\text{donc}\qquad p=3$$
 
-$$10 < x$$
+$${\color{#4A5D7A}y=-2x+3}$$
 
-Le nombre de séances étant entier, la formule A devient plus avantageuse à partir de ${\color{#4A5D7A}11}$ séances.
-
-Vérification : pour $10$ séances, A coûte $20$ € et B coûte $20$ € (égalité) ; pour $11$ séances, A coûte $20{,}50$ € contre $21{,}50$ € pour B.
+Vérification avec le point $B$, qui n'a pas servi au calcul de $p$ : $-2\times 3+3=-3$, c'est bien l'ordonnée de $B$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre le système suivant :
+Résoudre dans $\mathbb{R}$ l'équation :
 
-$$\begin{cases} y=4x-3 \\ x+y=7 \end{cases}$$
+$$2x^2-18=0$$
 ---CORR---
-On substitue $y$ par $4x-3$ dans la seconde équation :
+On isole $x^2$ :
 
-$$x+(4x-3)=7 \qquad\text{soit}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+$$2x^2=18 \qquad\text{donc}\qquad x^2=9$$
 
-Puis :
+Comme $9>0$, l'équation $x^2=9$ admet deux solutions opposées :
 
-$$y=4\times 2-3=5$$
+$$x=\sqrt{9}=3 \qquad\text{ou}\qquad x=-\sqrt{9}=-3$$
 
-$$S={\color{#4A5D7A}\lbrace (2\,;\,5)\rbrace}$$
+$$S={\color{#4A5D7A}\lbrace -3\,;\,3\rbrace}$$
+
+L'erreur classique est de n'en donner qu'une : $(-3)^2$ vaut aussi $9$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -114,75 +112,73 @@ La réponse A est la somme, pas la moyenne. Un contrôle rapide : la moyenne est
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Les droites $(d)\,:\ y=4x-1$ et $(d')\,:\ 8x-2y+5=0$ sont-elles parallèles ?
+La droite $(d)$ a pour équation cartésienne $4x-3y-12=0$.
+
+Le point $B(1\,;\,2)$ appartient-il à $(d)$ ?
 ---CORR---
-Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :
+Un point appartient à une droite si ses coordonnées vérifient l'équation. On remplace $x$ par $1$ et $y$ par $2$ dans le membre de gauche :
 
-$$-2y=-8x-5 \qquad\text{donc}\qquad y=4x+2{,}5$$
+$$4\times 1-3\times 2-12=4-6-12=-14$$
 
-Les deux droites ont le même coefficient directeur $4$, mais des ordonnées à l'origine différentes ($-1$ et $2{,}5$) :
+On n'obtient pas $0$, donc l'égalité $4x-3y-12=0$ n'est pas vérifiée :
 
-$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$
-
-Si les ordonnées à l'origine avaient été égales, les droites auraient été confondues.
+$${\color{#4A5D7A}B\ \text{n'appartient pas à}\ (d)}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Déterminer les coordonnées du point d'intersection des droites $(d)\,:\ y=3x-4$ et $(d')\,:\ y=-2x+11$.
+Donner l'équation réduite de la droite dont une équation cartésienne est :
+
+$$3x-6y-18=0$$
 ---CORR---
-Les coefficients directeurs $3$ et $-2$ sont différents : les droites sont sécantes, il y a donc bien un point d'intersection.
+L'équation réduite est de la forme $y=mx+p$ : il faut donc isoler $y$.
 
-En ce point, les deux ordonnées sont égales :
+On commence par isoler le terme en $y$ :
 
-$$3x-4=-2x+11$$
+$$-6y=-3x+18$$
 
-$$5x=15 \qquad\text{donc}\qquad x=3$$
+On divise chaque membre par $-6$, sans oublier de diviser **les deux** termes de droite :
 
-On calcule l'ordonnée avec l'une des deux équations :
+$$y=\dfrac{-3x+18}{-6}=\dfrac{-3}{-6}x+\dfrac{18}{-6}$$
 
-$$y=3\times 3-4=5$$
+$$y={\color{#4A5D7A}0{,}5x-3}$$
 
-$$\text{Point d'intersection}\ {\color{#4A5D7A}(3\,;\,5)}$$
-
-Vérification avec l'autre équation : $-2\times 3+11=5$.
+Le coefficient directeur vaut $0{,}5$ et l'ordonnée à l'origine $-3$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Un club propose deux formules. La formule A coûte $20$ € par mois plus $0{,}80$ € par séance. La formule B coûte $6$ € par mois plus $2{,}30$ € par séance.
-
-À partir de combien de séances par mois la formule A devient-elle plus avantageuse ?
+Déterminer l'équation réduite de la droite passant par les points $A(2\,;\,1)$ et $B(5\,;\,7)$.
 ---CORR---
-On note $x$ le nombre de séances et on exprime les deux tarifs :
+La droite n'est pas verticale (les abscisses de $A$ et $B$ diffèrent) : son équation réduite est de la forme $y=mx+p$.
 
-$$\text{A}:\ 20+0{,}8x \qquad\qquad \text{B}:\ 6+2{,}3x$$
+On calcule d'abord le coefficient directeur :
 
-« A plus avantageuse » signifie que A coûte moins cher que B :
+$$m=\dfrac{y_B-y_A}{x_B-x_A}=\dfrac{7-1}{5-2}=\dfrac{6}{3}=2$$
 
-$$20+0{,}8x<6+2{,}3x$$
+L'équation est donc $y=2x+p$. On détermine $p$ en écrivant que $A$ appartient à la droite :
 
-On retranche $0{,}8x$ et $6$ à chaque membre :
+$$1=2\times 2+p \qquad\text{soit}\qquad 1=4+p \qquad\text{donc}\qquad p=-3$$
 
-$$14<1{,}5x \qquad\text{donc}\qquad x>\dfrac{14}{1{,}5}\approx 9{,}33$$
+$${\color{#4A5D7A}y=2x-3}$$
 
-Le nombre de séances étant entier, la formule A devient plus avantageuse à partir de ${\color{#4A5D7A}10}$ séances.
-
-Vérification : pour $9$ séances, A coûte $27{,}20$ € contre $26{,}70$ € pour B ; pour $10$ séances, A coûte $28$ € contre $29$ € pour B.
+Vérification avec le point $B$, qui n'a pas servi au calcul de $p$ : $2\times 5-3=7$, c'est bien l'ordonnée de $B$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre le système suivant :
+Résoudre dans $\mathbb{R}$ l'équation :
 
-$$\begin{cases} y=5x-2 \\ x+y=10 \end{cases}$$
+$$3x^2-75=0$$
 ---CORR---
-On substitue $y$ par $5x-2$ dans la seconde équation :
+On isole $x^2$ :
 
-$$x+(5x-2)=10 \qquad\text{soit}\qquad 6x=12 \qquad\text{donc}\qquad x=2$$
+$$3x^2=75 \qquad\text{donc}\qquad x^2=25$$
 
-Puis :
+Comme $25>0$, l'équation $x^2=25$ admet deux solutions opposées :
 
-$$y=5\times 2-2=8$$
+$$x=\sqrt{25}=5 \qquad\text{ou}\qquad x=-\sqrt{25}=-5$$
 
-$$S={\color{#4A5D7A}\lbrace (2\,;\,8)\rbrace}$$
+$$S={\color{#4A5D7A}\lbrace -5\,;\,5\rbrace}$$
+
+L'erreur classique est de n'en donner qu'une : $(-5)^2$ vaut aussi $25$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

@@ -1,5 +1,5 @@
 ---
-title: "Semaine 20 - Fonction carrée et équations x² = k"
+title: "Semaine 20 - Repère orthonormé et fonction carrée"
 layout: "automatismes-2nde"
 auto_number: 20
 weight: 20
@@ -8,41 +8,43 @@ weight: 20
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Résoudre dans $\mathbb{R}$ les deux équations suivantes :
+Dans un repère orthonormé, on donne $A(1\,;\,-1)$, $B(7\,;\,1)$ et $C(0\,;\,2)$.
 
-$$x^2=49 \qquad\text{et}\qquad x^2=-9$$
+Démontrer que le triangle $ABC$ est rectangle en $A$.
 ---CORR---
-**Première équation.** $49$ est positif, donc l'équation $x^2=49$ admet deux solutions opposées :
+On calcule les carrés des trois longueurs, avec $XY^2=(x_Y-x_X)^2+(y_Y-y_X)^2$. Travailler avec les carrés évite toutes les racines.
 
-$$x=-\sqrt{49}=-7 \qquad\text{ou}\qquad x=\sqrt{49}=7$$
+$$AB^2=(7-1)^2+(1-(-1))^2=6^2+2^2=36+4=40$$
 
-$$S_1={\color{#4A5D7A}\lbrace -7\,;\,7\rbrace}$$
+$$AC^2=(0-1)^2+(2-(-1))^2=(-1)^2+3^2=1+9=10$$
 
-**Seconde équation.** Le carré d'un nombre réel est toujours positif ou nul, il ne peut donc jamais valoir $-9$ :
+$$BC^2=(0-7)^2+(2-1)^2=(-7)^2+1^2=49+1=50$$
 
-$$S_2={\color{#4A5D7A}\varnothing}$$
+Le plus grand est $BC^2$ : si le triangle est rectangle, c'est en $A$, le sommet opposé à $[BC]$.
 
-Retenir : $x^2=k$ a deux solutions si $k>0$, une seule ($0$) si $k=0$, aucune si $k<0$.
+$$AB^2+AC^2=40+10=50=BC^2$$
+
+D'après la réciproque du théorème de Pythagore, le triangle $ABC$ est ${\color{#4A5D7A}\text{rectangle en }A}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Résoudre dans $\mathbb{R}$ l'équation :
+Soit $f$ la fonction carrée, définie sur $\mathbb{R}$ par $f(x)=x^2$.
 
-$$3x^2-5=43$$
+**a.** Calculer $f(-7)$ et $f(0{,}5)$.
+
+**b.** Le point $A\,(-3\,;\,9)$ appartient-il à la parabole représentant $f$ ?
 ---CORR---
-On isole d'abord $x^2$. On ajoute $5$ à chaque membre :
+**a.** On remplace $x$ par la valeur demandée, entre parenthèses :
 
-$$3x^2=48$$
+$$f(-7)=(-7)^2={\color{#4A5D7A}49} \qquad f(0{,}5)=0{,}5^2={\color{#4A5D7A}0{,}25}$$
 
-On divise par $3$ :
+Le carré d'un nombre négatif est positif, et le carré d'un nombre entre $0$ et $1$ est plus petit que lui.
 
-$$x^2=16$$
+**b.** Un point appartient à la courbe si son ordonnée est l'image de son abscisse. On calcule donc $f(-3)$ :
 
-Comme $16>0$, il y a deux solutions opposées :
+$$f(-3)=(-3)^2=9$$
 
-$$S={\color{#4A5D7A}\lbrace -4\,;\,4\rbrace}$$
-
-Erreur fréquente : n'écrire que $x=4$. La solution négative compte autant.
+C'est bien l'ordonnée de $A$, donc ${\color{#4A5D7A}A\ \text{appartient à la parabole}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -62,17 +64,19 @@ On remarque que l'ordre des carrés n'est pas celui des nombres de départ : la 
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Dans un repère orthonormé, on donne $A(1\,;\,2)$ et $B(7\,;\,10)$.
+Écrire sous la forme $3^n$, où $n$ est un entier relatif :
 
-Déterminer les coordonnées du milieu $I$ de $[AB]$, puis la distance $AB$.
+$$A=\dfrac{3^{5}\times 3^{-2}}{3^{4}}$$
 ---CORR---
-Milieu :
+On regroupe d'abord le numérateur, avec $a^m\times a^n=a^{m+n}$ :
 
-$$x_I=\dfrac{1+7}{2}=4 \qquad y_I=\dfrac{2+10}{2}=6 \qquad I\ {\color{#4A5D7A}(4\,;\,6)}$$
+$$3^{5}\times 3^{-2}=3^{5+(-2)}=3^{3}$$
 
-Distance :
+On divise ensuite, avec $\dfrac{a^m}{a^n}=a^{m-n}$ :
 
-$$AB=\sqrt{6^2+8^2}=\sqrt{36+64}=\sqrt{100}={\color{#4A5D7A}10}$$
+$$A=\dfrac{3^{3}}{3^{4}}=3^{3-4}={\color{#4A5D7A}3^{-1}}$$
+
+Vérification : $3^{-1}=\dfrac{1}{3}$, et $\dfrac{243\times\frac{1}{9}}{81}=\dfrac{27}{81}=\dfrac{1}{3}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -110,41 +114,45 @@ La réponse D correspondrait à la question inverse (« $420$ est $35\,\%$ de qu
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Résoudre dans $\mathbb{R}$ les deux équations suivantes :
+Dans un repère orthonormé, on donne $A(-2\,;\,3)$, $B(2\,;\,1)$ et $C(4\,;\,5)$.
 
-$$x^2=64 \qquad\text{et}\qquad x^2=-16$$
+Démontrer que le triangle $ABC$ est rectangle et isocèle en $B$.
 ---CORR---
-**Première équation.** $64$ est positif, donc l'équation $x^2=64$ admet deux solutions opposées :
+On calcule les carrés des trois longueurs, avec $XY^2=(x_Y-x_X)^2+(y_Y-y_X)^2$. Travailler avec les carrés évite toutes les racines.
 
-$$x=-\sqrt{64}=-8 \qquad\text{ou}\qquad x=\sqrt{64}=8$$
+$$BA^2=(-2-2)^2+(3-1)^2=(-4)^2+2^2=16+4=20$$
 
-$$S_1={\color{#4A5D7A}\lbrace -8\,;\,8\rbrace}$$
+$$BC^2=(4-2)^2+(5-1)^2=2^2+4^2=4+16=20$$
 
-**Seconde équation.** Le carré d'un nombre réel est toujours positif ou nul, il ne peut donc jamais valoir $-16$ :
+$$AC^2=(4-(-2))^2+(5-3)^2=6^2+2^2=36+4=40$$
 
-$$S_2={\color{#4A5D7A}\varnothing}$$
+Comme $BA^2=BC^2$, les deux longueurs sont égales : le triangle est ${\color{#4A5D7A}\text{isocèle en }B}$.
 
-Retenir : $x^2=k$ a deux solutions si $k>0$, une seule ($0$) si $k=0$, aucune si $k<0$.
+Le plus grand carré est $AC^2$, et :
+
+$$BA^2+BC^2=20+20=40=AC^2$$
+
+D'après la réciproque du théorème de Pythagore, le triangle est aussi ${\color{#4A5D7A}\text{rectangle en }B}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Résoudre dans $\mathbb{R}$ l'équation :
+Soit $f$ la fonction carrée, définie sur $\mathbb{R}$ par $f(x)=x^2$.
 
-$$5x^2-7=38$$
+**a.** Calculer $f(-1{,}5)$ et $f(6)$.
+
+**b.** Le point $B\,(4\,;\,-16)$ appartient-il à la parabole représentant $f$ ?
 ---CORR---
-On isole d'abord $x^2$. On ajoute $7$ à chaque membre :
+**a.** On remplace $x$ par la valeur demandée, entre parenthèses :
 
-$$5x^2=45$$
+$$f(-1{,}5)=(-1{,}5)^2={\color{#4A5D7A}2{,}25} \qquad f(6)=6^2={\color{#4A5D7A}36}$$
 
-On divise par $5$ :
+Le carré d'un nombre négatif est positif : $f(-1{,}5)$ n'est pas $-2{,}25$.
 
-$$x^2=9$$
+**b.** Un point appartient à la courbe si son ordonnée est l'image de son abscisse. On calcule donc $f(4)$ :
 
-Comme $9>0$, il y a deux solutions opposées :
+$$f(4)=4^2=16 \neq -16$$
 
-$$S={\color{#4A5D7A}\lbrace -3\,;\,3\rbrace}$$
-
-Erreur fréquente : n'écrire que $x=3$. La solution négative compte autant.
+Donc ${\color{#4A5D7A}B\ \text{n'appartient pas à la parabole}}$. On pouvait conclure sans calcul : un carré n'est jamais négatif, aucun point de la parabole n'a une ordonnée négative.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -164,17 +172,19 @@ On remarque que l'ordre des carrés n'est pas celui des nombres de départ : la 
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Dans un repère orthonormé, on donne $A(2\,;\,-1)$ et $B(8\,;\,7)$.
+Écrire sous la forme $5^n$, où $n$ est un entier relatif :
 
-Déterminer les coordonnées du milieu $I$ de $[AB]$, puis la distance $AB$.
+$$A=\dfrac{5^{-3}\times 5^{6}}{5^{5}}$$
 ---CORR---
-Milieu :
+On regroupe d'abord le numérateur, avec $a^m\times a^n=a^{m+n}$ :
 
-$$x_I=\dfrac{2+8}{2}=5 \qquad y_I=\dfrac{-1+7}{2}=3 \qquad I\ {\color{#4A5D7A}(5\,;\,3)}$$
+$$5^{-3}\times 5^{6}=5^{-3+6}=5^{3}$$
 
-Distance :
+On divise ensuite, avec $\dfrac{a^m}{a^n}=a^{m-n}$ :
 
-$$AB=\sqrt{6^2+8^2}=\sqrt{36+64}=\sqrt{100}={\color{#4A5D7A}10}$$
+$$A=\dfrac{5^{3}}{5^{5}}=5^{3-5}={\color{#4A5D7A}5^{-2}}$$
+
+Vérification : $5^{-2}=\dfrac{1}{25}$, et $\dfrac{125}{3125}=\dfrac{1}{25}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

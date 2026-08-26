@@ -1,5 +1,5 @@
 ---
-title: "Semaine 27 - Équation réduite et systèmes"
+title: "Semaine 27 - Probabilités conditionnelles et arbres pondérés"
 layout: "automatismes-2nde"
 auto_number: 27
 weight: 27
@@ -8,77 +8,53 @@ weight: 27
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Donner l'équation réduite de la droite dont une équation cartésienne est :
+Dans un groupe, $60\,\%$ des personnes sont des femmes, et $30\,\%$ des femmes portent des lunettes.
 
-$$2x-4y+8=0$$
+On choisit une personne au hasard. Quelle est la probabilité que ce soit une femme portant des lunettes ?
 ---CORR---
-L'équation réduite est de la forme $y=mx+p$ : il faut donc isoler $y$.
+Les $30\,\%$ ne portent pas sur le groupe entier, mais seulement sur les femmes : c'est une proportion à l'intérieur d'une proportion. On multiplie donc les deux.
 
-On commence par isoler le terme en $y$ :
+$$P=0{,}60\times 0{,}30={\color{#4A5D7A}0{,}18}$$
 
-$$-4y=-2x-8$$
-
-On divise chaque membre par $-4$, sans oublier de diviser **les deux** termes de droite :
-
-$$y=\dfrac{-2x-8}{-4}=\dfrac{-2}{-4}x+\dfrac{-8}{-4}$$
-
-$$y={\color{#4A5D7A}0{,}5x+2}$$
-
-Le coefficient directeur vaut $0{,}5$ et l'ordonnée à l'origine $2$.
+Soit $18\,\%$ du groupe. On aurait le même résultat en raisonnant sur un effectif : sur $100$ personnes, $60$ sont des femmes, dont $30\,\%$, soit $18$, portent des lunettes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Résoudre le système suivant par substitution :
+Dans une usine, $70\,\%$ des pièces proviennent de la machine A. Parmi les pièces venant de A, $5\,\%$ sont défectueuses.
 
-$$\begin{cases} y=2x-1 \\ 3x+y=9 \end{cases}$$
+On prélève une pièce au hasard. Quelle est la probabilité qu'elle vienne de A et qu'elle soit défectueuse ?
 ---CORR---
-La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $2x-1$ dans la seconde.
+On suit le chemin de l'arbre pondéré qui mène à « venant de A » puis à « défectueuse ». La probabilité d'un chemin est le **produit** des probabilités portées par ses branches.
 
-$$3x+(2x-1)=9$$
+$$P=0{,}70\times 0{,}05={\color{#4A5D7A}0{,}035}$$
 
-On réduit puis on résout :
-
-$$5x-1=9 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
-
-On remonte dans la première équation pour obtenir $y$ :
-
-$$y=2\times 2-1=3$$
-
-$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
-
-Vérification dans la seconde équation : $3\times 2+3=9$.
+Soit $3{,}5\,\%$ des pièces. Les $5\,\%$ ne portent que sur les pièces de A, ce qui est exactement ce qu'indique la position de cette branche dans l'arbre : elle part du nœud « A ».
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre le système suivant par combinaison linéaire :
+Un arbre pondéré a deux niveaux. Au premier, l'événement $A$ a pour probabilité $0{,}4$. Au second, sachant que $A$ est réalisé, l'événement $B$ a pour probabilité $0{,}25$.
 
-$$\begin{cases} 2x+3y=13 \\ 2x-y=1 \end{cases}$$
+Calculer $P\left(\overline{A}\right)$ puis $P(A\cap B)$.
 ---CORR---
-Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.
+La somme des probabilités des branches issues d'un même nœud vaut toujours $1$. Au premier niveau, il n'y a que deux branches, $A$ et $\overline{A}$ :
 
-$$(2x+3y)-(2x-y)=13-1$$
+$$P\left(\overline{A}\right)=1-0{,}4={\color{#4A5D7A}0{,}6}$$
 
-$$2x+3y-2x+y=12 \qquad\text{soit}\qquad 4y=12 \qquad\text{donc}\qquad y=3$$
+Pour $P(A\cap B)$, on multiplie les probabilités le long du chemin qui passe par $A$ puis par $B$ :
 
-On remplace $y$ par $3$ dans la seconde équation :
+$$P(A\cap B)=0{,}4\times 0{,}25={\color{#4A5D7A}0{,}1}$$
 
-$$2x-3=1 \qquad\text{donc}\qquad 2x=4 \qquad\text{donc}\qquad x=2$$
-
-$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
-
-Attention au signe lors de la soustraction : $-(-y)=+y$.
+Deux règles à ne pas confondre : on **additionne** le long d'un même nœud, on **multiplie** le long d'un chemin.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-La droite $(d)$ a pour équation cartésienne $5x+2y-4=0$.
+Une urne contient $3$ boules rouges et $7$ boules vertes, indiscernables au toucher. On en tire une au hasard.
 
-Le point $A(2\,;\,-3)$ appartient-il à $(d)$ ?
+Quelle est la probabilité d'obtenir une boule rouge ?
 ---CORR---
-On remplace $x$ par $2$ et $y$ par $-3$ :
+Il y a $3+7=10$ boules équiprobables, dont $3$ rouges :
 
-$$5\times 2+2\times(-3)-4=10-6-4=0$$
-
-On obtient bien $0$, donc ${\color{#4A5D7A}A\ \text{appartient à}\ (d)}$.
+$$P=\dfrac{3}{10}={\color{#4A5D7A}0{,}3}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -120,77 +96,53 @@ La réponse A est le piège le plus courant : la baisse de $10\,\%$ s'applique �
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Donner l'équation réduite de la droite dont une équation cartésienne est :
+Dans un groupe, $40\,\%$ des personnes sont des hommes, et $25\,\%$ des hommes portent des lunettes.
 
-$$3x-6y-18=0$$
+On choisit une personne au hasard. Quelle est la probabilité que ce soit un homme portant des lunettes ?
 ---CORR---
-L'équation réduite est de la forme $y=mx+p$ : il faut donc isoler $y$.
+Les $25\,\%$ ne portent pas sur le groupe entier, mais seulement sur les hommes : c'est une proportion à l'intérieur d'une proportion. On multiplie donc les deux.
 
-On commence par isoler le terme en $y$ :
+$$P=0{,}40\times 0{,}25={\color{#4A5D7A}0{,}1}$$
 
-$$-6y=-3x+18$$
-
-On divise chaque membre par $-6$, sans oublier de diviser **les deux** termes de droite :
-
-$$y=\dfrac{-3x+18}{-6}=\dfrac{-3}{-6}x+\dfrac{18}{-6}$$
-
-$$y={\color{#4A5D7A}0{,}5x-3}$$
-
-Le coefficient directeur vaut $0{,}5$ et l'ordonnée à l'origine $-3$.
+Soit $10\,\%$ du groupe. On aurait le même résultat en raisonnant sur un effectif : sur $100$ personnes, $40$ sont des hommes, dont $25\,\%$, soit $10$, portent des lunettes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Résoudre le système suivant par substitution :
+Dans une usine, $60\,\%$ des pièces proviennent de la machine A. Parmi les pièces venant de A, $8\,\%$ sont défectueuses.
 
-$$\begin{cases} y=3x+2 \\ 2x+y=12 \end{cases}$$
+On prélève une pièce au hasard. Quelle est la probabilité qu'elle vienne de A et qu'elle soit défectueuse ?
 ---CORR---
-La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $3x+2$ dans la seconde.
+On suit le chemin de l'arbre pondéré qui mène à « venant de A » puis à « défectueuse ». La probabilité d'un chemin est le **produit** des probabilités portées par ses branches.
 
-$$2x+(3x+2)=12$$
+$$P=0{,}60\times 0{,}08={\color{#4A5D7A}0{,}048}$$
 
-On réduit puis on résout :
-
-$$5x+2=12 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
-
-On remonte dans la première équation pour obtenir $y$ :
-
-$$y=3\times 2+2=8$$
-
-$$S={\color{#4A5D7A}\lbrace (2\,;\,8)\rbrace}$$
-
-Vérification dans la seconde équation : $2\times 2+8=12$.
+Soit $4{,}8\,\%$ des pièces. Les $8\,\%$ ne portent que sur les pièces de A, ce qui est exactement ce qu'indique la position de cette branche dans l'arbre : elle part du nœud « A ».
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Résoudre le système suivant par combinaison linéaire :
+Un arbre pondéré a deux niveaux. Au premier, l'événement $A$ a pour probabilité $0{,}3$. Au second, sachant que $A$ est réalisé, l'événement $B$ a pour probabilité $0{,}4$.
 
-$$\begin{cases} 3x+2y=17 \\ 3x-y=5 \end{cases}$$
+Calculer $P\left(\overline{A}\right)$ puis $P(A\cap B)$.
 ---CORR---
-Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.
+La somme des probabilités des branches issues d'un même nœud vaut toujours $1$. Au premier niveau, il n'y a que deux branches, $A$ et $\overline{A}$ :
 
-$$(3x+2y)-(3x-y)=17-5$$
+$$P\left(\overline{A}\right)=1-0{,}3={\color{#4A5D7A}0{,}7}$$
 
-$$3x+2y-3x+y=12 \qquad\text{soit}\qquad 3y=12 \qquad\text{donc}\qquad y=4$$
+Pour $P(A\cap B)$, on multiplie les probabilités le long du chemin qui passe par $A$ puis par $B$ :
 
-On remplace $y$ par $4$ dans la seconde équation :
+$$P(A\cap B)=0{,}3\times 0{,}4={\color{#4A5D7A}0{,}12}$$
 
-$$3x-4=5 \qquad\text{donc}\qquad 3x=9 \qquad\text{donc}\qquad x=3$$
-
-$$S={\color{#4A5D7A}\lbrace (3\,;\,4)\rbrace}$$
-
-Attention au signe lors de la soustraction : $-(-y)=+y$.
+Deux règles à ne pas confondre : on **additionne** le long d'un même nœud, on **multiplie** le long d'un chemin.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-La droite $(d)$ a pour équation cartésienne $4x+3y-1=0$.
+Une urne contient $4$ boules rouges et $6$ boules vertes, indiscernables au toucher. On en tire une au hasard.
 
-Le point $A(1\,;\,-1)$ appartient-il à $(d)$ ?
+Quelle est la probabilité d'obtenir une boule rouge ?
 ---CORR---
-On remplace $x$ par $1$ et $y$ par $-1$ :
+Il y a $4+6=10$ boules équiprobables, dont $4$ rouges :
 
-$$4\times 1+3\times(-1)-1=4-3-1=0$$
-
-On obtient bien $0$, donc ${\color{#4A5D7A}A\ \text{appartient à}\ (d)}$.
+$$P=\dfrac{4}{10}={\color{#4A5D7A}0{,}4}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

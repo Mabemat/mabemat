@@ -36,19 +36,21 @@ $$f(0)=0^2-3\times 0={\color{#4A5D7A}0}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=5x-8$.
+Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs du plan. Simplifier :
 
-Déterminer l'antécédent de $7$ par $f$.
+$$3\left(\overrightarrow{u}+2\overrightarrow{v}\right)-2\left(\overrightarrow{u}+3\overrightarrow{v}\right)$$
 ---CORR---
-Chercher l'antécédent de $7$, c'est chercher le nombre $x$ dont l'image vaut $7$, donc résoudre l'équation $f(x)=7$ :
+On distribue chaque coefficient sur la parenthèse qu'il précède, exactement comme avec des nombres :
 
-$$5x-8=7$$
+$$3\left(\overrightarrow{u}+2\overrightarrow{v}\right)=3\overrightarrow{u}+6\overrightarrow{v}$$
 
-On ajoute $8$ à chaque membre, puis on divise par $5$ :
+$$-2\left(\overrightarrow{u}+3\overrightarrow{v}\right)=-2\overrightarrow{u}-6\overrightarrow{v}$$
 
-$$5x=15 \qquad\text{donc}\qquad x={\color{#4A5D7A}3}$$
+On additionne, en regroupant les $\overrightarrow{u}$ entre eux et les $\overrightarrow{v}$ entre eux :
 
-Vérification : $f(3)=5\times 3-8=7$.
+$$3\overrightarrow{u}-2\overrightarrow{u}+6\overrightarrow{v}-6\overrightarrow{v}={\color{#4A5D7A}\overrightarrow{u}}$$
+
+Attention au signe : le $-2$ multiplie aussi le $3\overrightarrow{v}$, ce qui donne bien $-6\overrightarrow{v}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -140,19 +142,21 @@ $$f(0)=0^2-5\times 0={\color{#4A5D7A}0}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=4x-9$.
+Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs du plan. Simplifier :
 
-Déterminer l'antécédent de $7$ par $f$.
+$$5\left(\overrightarrow{u}-\overrightarrow{v}\right)-3\left(\overrightarrow{u}-2\overrightarrow{v}\right)$$
 ---CORR---
-Chercher l'antécédent de $7$, c'est chercher le nombre $x$ dont l'image vaut $7$, donc résoudre l'équation $f(x)=7$ :
+On distribue chaque coefficient sur la parenthèse qu'il précède, exactement comme avec des nombres :
 
-$$4x-9=7$$
+$$5\left(\overrightarrow{u}-\overrightarrow{v}\right)=5\overrightarrow{u}-5\overrightarrow{v}$$
 
-On ajoute $9$ à chaque membre, puis on divise par $4$ :
+$$-3\left(\overrightarrow{u}-2\overrightarrow{v}\right)=-3\overrightarrow{u}+6\overrightarrow{v}$$
 
-$$4x=16 \qquad\text{donc}\qquad x={\color{#4A5D7A}4}$$
+On additionne, en regroupant les $\overrightarrow{u}$ entre eux et les $\overrightarrow{v}$ entre eux :
 
-Vérification : $f(4)=4\times 4-9=7$.
+$$5\overrightarrow{u}-3\overrightarrow{u}-5\overrightarrow{v}+6\overrightarrow{v}={\color{#4A5D7A}2\overrightarrow{u}+\overrightarrow{v}}$$
+
+Attention au signe : $-3\times\left(-2\overrightarrow{v}\right)=+6\overrightarrow{v}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

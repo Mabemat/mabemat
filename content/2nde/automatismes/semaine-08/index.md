@@ -1,5 +1,5 @@
 ---
-title: "Semaine 8 - Inéquations et translations"
+title: "Semaine 8 - Inéquations et équations quotients"
 layout: "automatismes-2nde"
 auto_number: 8
 weight: 8
@@ -46,19 +46,23 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-$ABCD$ est un parallélogramme.
+Résoudre dans $\mathbb{R}$ l'équation :
 
-Quelle est l'image du point $D$ par la translation qui transforme $A$ en $B$ ? Justifier.
+$$\dfrac{4x-8}{x+3}=0$$
 ---CORR---
-La translation qui transforme $A$ en $B$ est la translation de vecteur $\overrightarrow{AB}$.
+On commence par chercher la valeur interdite, celle qui annule le dénominateur :
 
-L'image de $D$ est le point $M$ tel que $\overrightarrow{DM}=\overrightarrow{AB}$.
+$$x+3=0 \quad\text{donc}\quad x=-3$$
 
-Or $ABCD$ est un parallélogramme, donc ses côtés $[AB]$ et $[DC]$ sont parallèles, de même longueur et de même sens :
+L'équation n'a de sens que pour $x\neq -3$.
 
-$$\overrightarrow{AB}=\overrightarrow{DC}$$
+Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
 
-L'image de $D$ est donc le point ${\color{#4A5D7A}C}$.
+$$4x-8=0 \quad\text{donc}\quad 4x=8 \quad\text{donc}\quad x=2$$
+
+Comme $2\neq -3$, cette solution est acceptable.
+
+$$S={\color{#4A5D7A}\lbrace 2\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -156,19 +160,23 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-$EFGH$ est un parallélogramme.
+Résoudre dans $\mathbb{R}$ l'équation :
 
-Quelle est l'image du point $F$ par la translation qui transforme $E$ en $H$ ? Justifier.
+$$\dfrac{6x+18}{x-4}=0$$
 ---CORR---
-La translation qui transforme $E$ en $H$ est la translation de vecteur $\overrightarrow{EH}$.
+On commence par chercher la valeur interdite, celle qui annule le dénominateur :
 
-L'image de $F$ est le point $M$ tel que $\overrightarrow{FM}=\overrightarrow{EH}$.
+$$x-4=0 \quad\text{donc}\quad x=4$$
 
-Or $EFGH$ est un parallélogramme, donc ses côtés $[EH]$ et $[FG]$ sont parallèles, de même longueur et de même sens :
+L'équation n'a de sens que pour $x\neq 4$.
 
-$$\overrightarrow{EH}=\overrightarrow{FG}$$
+Un quotient est nul si et seulement si son numérateur est nul (le dénominateur étant non nul) :
 
-L'image de $F$ est donc le point ${\color{#4A5D7A}G}$.
+$$6x+18=0 \quad\text{donc}\quad 6x=-18 \quad\text{donc}\quad x=-3$$
+
+Comme $-3\neq 4$, cette solution est acceptable.
+
+$$S={\color{#4A5D7A}\lbrace -3\rbrace}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

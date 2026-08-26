@@ -1,5 +1,5 @@
 ---
-title: "Semaine 24 - Probabilités : univers et événements"
+title: "Semaine 24 - Parité et nombres premiers"
 layout: "automatismes-2nde"
 auto_number: 24
 weight: 24
@@ -8,69 +8,63 @@ weight: 24
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-On lance un dé équilibré à six faces et on note le numéro obtenu.
-
-Décrire l'univers $\Omega$, puis l'événement $A$ « obtenir un nombre pair » et son événement contraire $\overline{A}$.
+Décomposer $180$ en produit de facteurs premiers.
 ---CORR---
-L'univers est l'ensemble de toutes les issues possibles :
+On divise successivement par les nombres premiers, en commençant par le plus petit :
 
-$$\Omega={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,5\,;\,6\rbrace}$$
+$$180=2\times 90 \qquad 90=2\times 45 \qquad 45=3\times 15 \qquad 15=3\times 5$$
 
-Un événement est un sous-ensemble de l'univers. Les nombres pairs de $\Omega$ sont :
+En regroupant :
 
-$$A={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,6\rbrace}$$
+$$180={\color{#4A5D7A}2^2\times 3^2\times 5}$$
 
-L'événement contraire rassemble toutes les issues de $\Omega$ qui ne sont pas dans $A$ :
-
-$$\overline{A}={\color{#4A5D7A}\lbrace 1\,;\,3\,;\,5\rbrace}$$
-
-On vérifie que $A$ et $\overline{A}$ n'ont aucune issue en commun et qu'ensemble ils reconstituent $\Omega$.
+Vérification : $4\times 9\times 5=180$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Avec le même dé, on considère $A$ « obtenir un multiple de $3$ » et $B$ « obtenir un nombre supérieur ou égal à $4$ ».
-
-Déterminer $A\cap B$ et $A\cup B$.
+Démontrer que le carré d'un nombre entier impair est impair.
 ---CORR---
-On écrit d'abord chaque événement en extension :
+On traduit l'hypothèse : soit $n$ un entier impair. Il existe alors un entier $k$ tel que
 
-$$A=\lbrace 3\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 4\,;\,5\,;\,6\rbrace$$
+$$n=2k+1$$
 
-L'intersection rassemble les issues appartenant aux **deux** événements à la fois :
+On calcule le carré en développant l'identité remarquable :
 
-$$A\cap B={\color{#4A5D7A}\lbrace 6\rbrace}$$
+$$n^2=(2k+1)^2=4k^2+4k+1$$
 
-La réunion rassemble les issues appartenant à **au moins un** des deux, sans compter deux fois celles qui sont communes :
+Pour reconnaître un nombre impair, il faut le mettre sous la forme $2\times\text{entier}+1$. On factorise donc les deux premiers termes par $2$ :
 
-$$A\cup B={\color{#4A5D7A}\lbrace 3\,;\,4\,;\,5\,;\,6\rbrace}$$
+$$n^2={\color{#4A5D7A}2\left(2k^2+2k\right)+1}$$
+
+Comme $2k^2+2k$ est un entier, $n^2$ est bien impair.
+
+Tout est dans la mise en forme finale : sans elle, on n'a pas démontré la parité.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans une classe de $30$ élèves, $18$ étudient l'anglais, $14$ l'espagnol, et $6$ étudient les deux langues.
-
-Combien d'élèves étudient au moins une des deux langues ?
+Le nombre $91$ est-il premier ? Justifier.
 ---CORR---
-Si on additionne simplement $18$ et $14$, les élèves qui étudient les deux langues sont comptés deux fois. Il faut donc les retrancher une fois :
+Un nombre premier n'a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s'arrêtant dès que leur carré dépasse $91$ (car $10^2=100>91$, il suffit de tester jusqu'à $9$).
 
-$$18+14-6={\color{#4A5D7A}26}\ \text{élèves.}$$
+$91$ n'est pas pair, la somme de ses chiffres est $10$ donc il n'est pas divisible par $3$, il ne se termine ni par $0$ ni par $5$. On teste $7$ :
 
-C'est la formule de la réunion :
+$$91=7\times 13$$
 
-$$\text{card}(A\cup B)=\text{card}(A)+\text{card}(B)-\text{card}(A\cap B)$$
-
-Il y a donc $30-26=4$ élèves qui n'étudient aucune des deux langues.
+Le nombre $91$ admet donc d'autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Décomposer $150$ en produit de facteurs premiers.
+Dans un repère orthonormé, on donne $A(-1\,;\,3)$ et $B(3\,;\,6)$.
+
+Calculer la distance $AB$.
 ---CORR---
-On divise successivement par les nombres premiers :
+On applique la formule issue du théorème de Pythagore :
 
-$$150=2\times 75 \qquad 75=3\times 25 \qquad 25=5\times 5$$
+$$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$
 
-D'où :
+$$AB=\sqrt{(3-(-1))^2+(6-3)^2}=\sqrt{4^2+3^2}=\sqrt{16+9}=\sqrt{25}={\color{#4A5D7A}5}$$
 
-$$150={\color{#4A5D7A}2\times 3\times 5^2}$$
+Les différences sont élevées au carré : leur signe n'a aucune importance.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -122,69 +116,67 @@ $$1-0{,}75=0{,}25={\color{#4A5D7A}25\,\%}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-On lance un dé équilibré à six faces et on note le numéro obtenu.
-
-Décrire l'univers $\Omega$, puis l'événement $A$ « obtenir un nombre impair » et son événement contraire $\overline{A}$.
+Décomposer $252$ en produit de facteurs premiers.
 ---CORR---
-L'univers est l'ensemble de toutes les issues possibles :
+On divise successivement par les nombres premiers, en commençant par le plus petit :
 
-$$\Omega={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,5\,;\,6\rbrace}$$
+$$252=2\times 126 \qquad 126=2\times 63 \qquad 63=3\times 21 \qquad 21=3\times 7$$
 
-Un événement est un sous-ensemble de l'univers. Les nombres impairs de $\Omega$ sont :
+En regroupant :
 
-$$A={\color{#4A5D7A}\lbrace 1\,;\,3\,;\,5\rbrace}$$
+$$252={\color{#4A5D7A}2^2\times 3^2\times 7}$$
 
-L'événement contraire rassemble toutes les issues de $\Omega$ qui ne sont pas dans $A$ :
-
-$$\overline{A}={\color{#4A5D7A}\lbrace 2\,;\,4\,;\,6\rbrace}$$
-
-On vérifie que $A$ et $\overline{A}$ n'ont aucune issue en commun et qu'ensemble ils reconstituent $\Omega$.
+Vérification : $4\times 9\times 7=252$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Avec le même dé, on considère $A$ « obtenir un multiple de $2$ » et $B$ « obtenir un nombre inférieur ou égal à $3$ ».
-
-Déterminer $A\cap B$ et $A\cup B$.
+Démontrer que le carré d'un nombre entier pair est pair.
 ---CORR---
-On écrit d'abord chaque événement en extension :
+On traduit l'hypothèse : soit $n$ un entier pair. Il existe alors un entier $k$ tel que
 
-$$A=\lbrace 2\,;\,4\,;\,6\rbrace \qquad\text{et}\qquad B=\lbrace 1\,;\,2\,;\,3\rbrace$$
+$$n=2k$$
 
-L'intersection rassemble les issues appartenant aux **deux** événements à la fois :
+On calcule le carré :
 
-$$A\cap B={\color{#4A5D7A}\lbrace 2\rbrace}$$
+$$n^2=(2k)^2=4k^2$$
 
-La réunion rassemble les issues appartenant à **au moins un** des deux, sans compter deux fois celles qui sont communes :
+Pour reconnaître un nombre pair, il faut le mettre sous la forme $2\times\text{entier}$. On factorise donc par $2$ :
 
-$$A\cup B={\color{#4A5D7A}\lbrace 1\,;\,2\,;\,3\,;\,4\,;\,6\rbrace}$$
+$$n^2={\color{#4A5D7A}2\left(2k^2\right)}$$
+
+Comme $2k^2$ est un entier, $n^2$ est bien pair.
+
+Tout est dans la mise en forme finale : sans elle, on n'a pas démontré la parité.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Dans une classe de $32$ élèves, $20$ étudient l'anglais, $15$ l'allemand, et $7$ étudient les deux langues.
-
-Combien d'élèves étudient au moins une des deux langues ?
+Le nombre $87$ est-il premier ? Justifier.
 ---CORR---
-Si on additionne simplement $20$ et $15$, les élèves qui étudient les deux langues sont comptés deux fois. Il faut donc les retrancher une fois :
+Un nombre premier n'a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s'arrêtant dès que leur carré dépasse $87$ (car $10^2=100>87$, il suffit de tester jusqu'à $9$).
 
-$$20+15-7={\color{#4A5D7A}28}\ \text{élèves.}$$
+$87$ n'est pas pair. On calcule la somme de ses chiffres :
 
-C'est la formule de la réunion :
+$$8+7=15$$
 
-$$\text{card}(A\cup B)=\text{card}(A)+\text{card}(B)-\text{card}(A\cap B)$$
+$15$ est divisible par $3$, donc $87$ aussi :
 
-Il y a donc $32-28=4$ élèves qui n'étudient aucune des deux langues.
+$$87=3\times 29$$
+
+Le nombre $87$ admet donc d'autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Décomposer $198$ en produit de facteurs premiers.
+Dans un repère orthonormé, on donne $A(2\,;\,-1)$ et $B(-4\,;\,7)$.
+
+Calculer la distance $AB$.
 ---CORR---
-On divise successivement par les nombres premiers :
+On applique la formule issue du théorème de Pythagore :
 
-$$198=2\times 99 \qquad 99=3\times 33 \qquad 33=3\times 11$$
+$$AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$
 
-D'où :
+$$AB=\sqrt{(-4-2)^2+(7-(-1))^2}=\sqrt{(-6)^2+8^2}=\sqrt{36+64}=\sqrt{100}={\color{#4A5D7A}10}$$
 
-$$198={\color{#4A5D7A}2\times 3^2\times 11}$$
+Les différences sont élevées au carré : leur signe n'a aucune importance.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

@@ -1,5 +1,5 @@
 ---
-title: "Semaine 26 - Arbres pondérés et équation cartésienne"
+title: "Semaine 26 - Loi de probabilité et équiprobabilité"
 layout: "automatismes-2nde"
 auto_number: 26
 weight: 26
@@ -8,55 +8,73 @@ weight: 26
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Dans une usine, $70\,\%$ des pièces proviennent de la machine A. Parmi les pièces venant de A, $5\,\%$ sont défectueuses.
+Une urne contient $5$ boules rouges, $3$ vertes et $2$ bleues, indiscernables au toucher. On en tire une au hasard.
 
-On prélève une pièce au hasard. Quelle est la probabilité qu'elle vienne de A et qu'elle soit défectueuse ?
+Donner la loi de probabilité de la couleur obtenue.
 ---CORR---
-On suit le chemin de l'arbre pondéré qui mène à « venant de A » puis à « défectueuse ». La probabilité d'un chemin est le **produit** des probabilités portées par ses branches.
+Les boules étant indiscernables, il y a équiprobabilité : chaque boule a la même chance d'être tirée. L'effectif total est :
 
-$$P=0{,}70\times 0{,}05={\color{#4A5D7A}0{,}035}$$
+$$5+3+2=10$$
 
-Soit $3{,}5\,\%$ des pièces. Les $5\,\%$ ne portent que sur les pièces de A, ce qui est exactement ce qu'indique la position de cette branche dans l'arbre : elle part du nœud « A ».
+La probabilité d'une couleur est le nombre de boules de cette couleur divisé par le nombre total :
+
+| Couleur | Rouge | Verte | Bleue |
+|---|---|---|---|
+| Probabilité | $\dfrac{5}{10}={\color{#4A5D7A}0{,}5}$ | $\dfrac{3}{10}={\color{#4A5D7A}0{,}3}$ | $\dfrac{2}{10}={\color{#4A5D7A}0{,}2}$ |
+
+Contrôle indispensable : la somme des probabilités vaut $0{,}5+0{,}3+0{,}2=1$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Un arbre pondéré a deux niveaux. Au premier, l'événement $A$ a pour probabilité $0{,}4$. Au second, sachant que $A$ est réalisé, l'événement $B$ a pour probabilité $0{,}25$.
+On lance deux dés équilibrés à six faces et on s'intéresse à la somme des deux numéros obtenus.
 
-Calculer $P\left(\overline{A}\right)$ puis $P(A\cap B)$.
+Quelle est la probabilité que cette somme soit égale à $7$ ?
 ---CORR---
-La somme des probabilités des branches issues d'un même nœud vaut toujours $1$. Au premier niveau, il n'y a que deux branches, $A$ et $\overline{A}$ :
+En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.
 
-$$P\left(\overline{A}\right)=1-0{,}4={\color{#4A5D7A}0{,}6}$$
+On énumère celles qui donnent une somme de $7$ :
 
-Pour $P(A\cap B)$, on multiplie les probabilités le long du chemin qui passe par $A$ puis par $B$ :
+$$(1\,;\,6)\quad(2\,;\,5)\quad(3\,;\,4)\quad(4\,;\,3)\quad(5\,;\,2)\quad(6\,;\,1)$$
 
-$$P(A\cap B)=0{,}4\times 0{,}25={\color{#4A5D7A}0{,}1}$$
+Il y en a $6$. D'où :
 
-Deux règles à ne pas confondre : on **additionne** le long d'un même nœud, on **multiplie** le long d'un chemin.
+$$P={\dfrac{6}{36}}={\color{#4A5D7A}\dfrac{1}{6}}$$
+
+Il faut bien distinguer les deux dés : $(2\,;\,5)$ et $(5\,;\,2)$ sont deux issues différentes.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-La droite $(d)$ a pour équation cartésienne $3x-2y+6=0$.
+On tire au hasard une carte dans un jeu de $32$ cartes. Soit $A$ l'événement « obtenir un cœur ».
 
-Le point $A(2\,;\,6)$ appartient-il à $(d)$ ?
+Calculer $P(A)$, puis la probabilité de l'événement contraire de $A$.
 ---CORR---
-Un point appartient à une droite si ses coordonnées vérifient l'équation. On remplace $x$ par $2$ et $y$ par $6$ dans le membre de gauche :
+Le tirage est au hasard dans un jeu bien mélangé : on est en situation d'équiprobabilité, et
 
-$$3\times 2-2\times 6+6=6-12+6=0$$
+$$P(A)=\dfrac{\text{nombre d'issues favorables}}{\text{nombre d'issues possibles}}$$
 
-On obtient bien $0$, donc l'égalité $3x-2y+6=0$ est vérifiée :
+Le jeu de $32$ cartes contient $8$ cœurs :
 
-$${\color{#4A5D7A}A\ \text{appartient à}\ (d)}$$
+$$P(A)=\dfrac{8}{32}={\color{#4A5D7A}\dfrac{1}{4}}$$
+
+L'événement contraire, noté $\overline{A}$, est « ne pas obtenir un cœur ». Sa probabilité se déduit sans nouveau dénombrement :
+
+$$P\left(\overline{A}\right)=1-P(A)=1-\dfrac{1}{4}={\color{#4A5D7A}\dfrac{3}{4}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Une urne contient $3$ boules rouges et $7$ boules vertes, indiscernables au toucher. On en tire une au hasard.
-
-Quelle est la probabilité d'obtenir une boule rouge ?
+Démontrer que le produit de deux nombres entiers pairs est un multiple de $4$.
 ---CORR---
-Il y a $3+7=10$ boules équiprobables, dont $3$ rouges :
+On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux entiers pairs : il existe deux entiers $k$ et $k'$ tels que
 
-$$P=\dfrac{3}{10}={\color{#4A5D7A}0{,}3}$$
+$$a=2k \qquad\text{et}\qquad b=2k'$$
+
+On calcule le produit :
+
+$$a\times b=2k\times 2k'={\color{#4A5D7A}4kk'}$$
+
+Comme $kk'$ est un entier, $ab$ s'écrit bien sous la forme $4\times\text{entier}$ : c'est un multiple de $4$.
+
+Il faut deux lettres différentes, $k$ et $k'$ : écrire $a=2k$ et $b=2k$ reviendrait à supposer $a=b$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -100,55 +118,75 @@ La réponse C suppose qu'il y a autant de filles que de garçons, ce que l'énon
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Dans une usine, $60\,\%$ des pièces proviennent de la machine A. Parmi les pièces venant de A, $8\,\%$ sont défectueuses.
+Une urne contient $4$ boules rouges, $6$ vertes et $10$ bleues, indiscernables au toucher. On en tire une au hasard.
 
-On prélève une pièce au hasard. Quelle est la probabilité qu'elle vienne de A et qu'elle soit défectueuse ?
+Donner la loi de probabilité de la couleur obtenue.
 ---CORR---
-On suit le chemin de l'arbre pondéré qui mène à « venant de A » puis à « défectueuse ». La probabilité d'un chemin est le **produit** des probabilités portées par ses branches.
+Les boules étant indiscernables, il y a équiprobabilité : chaque boule a la même chance d'être tirée. L'effectif total est :
 
-$$P=0{,}60\times 0{,}08={\color{#4A5D7A}0{,}048}$$
+$$4+6+10=20$$
 
-Soit $4{,}8\,\%$ des pièces. Les $8\,\%$ ne portent que sur les pièces de A, ce qui est exactement ce qu'indique la position de cette branche dans l'arbre : elle part du nœud « A ».
+La probabilité d'une couleur est le nombre de boules de cette couleur divisé par le nombre total :
+
+| Couleur | Rouge | Verte | Bleue |
+|---|---|---|---|
+| Probabilité | $\dfrac{4}{20}={\color{#4A5D7A}0{,}2}$ | $\dfrac{6}{20}={\color{#4A5D7A}0{,}3}$ | $\dfrac{10}{20}={\color{#4A5D7A}0{,}5}$ |
+
+Contrôle indispensable : la somme des probabilités vaut $0{,}2+0{,}3+0{,}5=1$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Un arbre pondéré a deux niveaux. Au premier, l'événement $A$ a pour probabilité $0{,}3$. Au second, sachant que $A$ est réalisé, l'événement $B$ a pour probabilité $0{,}4$.
+On lance deux dés équilibrés à six faces et on s'intéresse à la somme des deux numéros obtenus.
 
-Calculer $P\left(\overline{A}\right)$ puis $P(A\cap B)$.
+Quelle est la probabilité que cette somme soit égale à $6$ ?
 ---CORR---
-La somme des probabilités des branches issues d'un même nœud vaut toujours $1$. Au premier niveau, il n'y a que deux branches, $A$ et $\overline{A}$ :
+En distinguant les deux dés, il y a $6\times 6=36$ issues équiprobables.
 
-$$P\left(\overline{A}\right)=1-0{,}3={\color{#4A5D7A}0{,}7}$$
+On énumère celles qui donnent une somme de $6$ :
 
-Pour $P(A\cap B)$, on multiplie les probabilités le long du chemin qui passe par $A$ puis par $B$ :
+$$(1\,;\,5)\quad(2\,;\,4)\quad(3\,;\,3)\quad(4\,;\,2)\quad(5\,;\,1)$$
 
-$$P(A\cap B)=0{,}3\times 0{,}4={\color{#4A5D7A}0{,}12}$$
+Il y en a $5$. D'où :
 
-Deux règles à ne pas confondre : on **additionne** le long d'un même nœud, on **multiplie** le long d'un chemin.
+$$P={\color{#4A5D7A}\dfrac{5}{36}}$$
+
+Attention : $(3\,;\,3)$ ne compte qu'une seule fois, contrairement aux couples formés de deux numéros différents.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-La droite $(d)$ a pour équation cartésienne $4x-3y-12=0$.
+On lance un dé équilibré à six faces. Soit $B$ l'événement « obtenir un nombre supérieur ou égal à $3$ ».
 
-Le point $B(1\,;\,2)$ appartient-il à $(d)$ ?
+Calculer $P(B)$, puis la probabilité de l'événement contraire de $B$.
 ---CORR---
-Un point appartient à une droite si ses coordonnées vérifient l'équation. On remplace $x$ par $1$ et $y$ par $2$ dans le membre de gauche :
+Le dé est équilibré : on est en situation d'équiprobabilité, et
 
-$$4\times 1-3\times 2-12=4-6-12=-14$$
+$$P(B)=\dfrac{\text{nombre d'issues favorables}}{\text{nombre d'issues possibles}}$$
 
-On n'obtient pas $0$, donc l'égalité $4x-3y-12=0$ n'est pas vérifiée :
+Les issues favorables sont $3$, $4$, $5$ et $6$, soit $4$ issues sur $6$ :
 
-$${\color{#4A5D7A}B\ \text{n'appartient pas à}\ (d)}$$
+$$P(B)=\dfrac{4}{6}={\color{#4A5D7A}\dfrac{2}{3}}$$
+
+L'événement contraire, noté $\overline{B}$, est « obtenir un nombre strictement inférieur à $3$ ». Sa probabilité se déduit sans nouveau dénombrement :
+
+$$P\left(\overline{B}\right)=1-P(B)=1-\dfrac{2}{3}={\color{#4A5D7A}\dfrac{1}{3}}$$
+
+Le contraire de « supérieur ou égal à $3$ » est « strictement inférieur à $3$ », et non « inférieur ou égal à $3$ ».
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Une urne contient $4$ boules rouges et $6$ boules vertes, indiscernables au toucher. On en tire une au hasard.
-
-Quelle est la probabilité d'obtenir une boule rouge ?
+Démontrer que la somme de deux nombres entiers impairs est paire.
 ---CORR---
-Il y a $4+6=10$ boules équiprobables, dont $4$ rouges :
+On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux entiers impairs : il existe deux entiers $k$ et $k'$ tels que
 
-$$P=\dfrac{4}{10}={\color{#4A5D7A}0{,}4}$$
+$$a=2k+1 \qquad\text{et}\qquad b=2k'+1$$
+
+On calcule la somme et on factorise par $2$ :
+
+$$a+b=2k+1+2k'+1=2k+2k'+2={\color{#4A5D7A}2\left(k+k'+1\right)}$$
+
+Comme $k+k'+1$ est un entier, $a+b$ s'écrit bien sous la forme $2\times\text{entier}$ : c'est un nombre pair.
+
+Il faut deux lettres différentes, $k$ et $k'$ : écrire $a=2k+1$ et $b=2k+1$ reviendrait à supposer $a=b$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

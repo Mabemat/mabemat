@@ -1,5 +1,5 @@
 ---
-title: "Semaine 14 - Fonctions affines et sens de variation"
+title: "Semaine 14 - Écart-type et fonctions affines"
 layout: "automatismes-2nde"
 auto_number: 14
 weight: 14
@@ -44,37 +44,37 @@ Vérification avec un autre point de la droite : $f(2)=2\times 2-1=3$, et la dro
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-$g$ est une fonction affine telle que $g(-1)=4$ et $g(3)=-8$.
+On considère la série statistique : $6\ ;\ 8\ ;\ 11\ ;\ 12\ ;\ 13$.
 
-Déterminer son coefficient directeur.
+**a.** Calculer la moyenne de cette série.
+
+**b.** Une seconde série a la même moyenne, mais son écart-type vaut $5{,}2$ alors que celui de la première vaut $2{,}6$. Laquelle des deux séries est la plus dispersée autour de sa moyenne ?
 ---CORR---
-Pour une fonction affine, le coefficient directeur se calcule à partir de deux images :
+**a.** La moyenne est la somme des valeurs divisée par leur nombre :
 
-$$m=\dfrac{g(x_2)-g(x_1)}{x_2-x_1}$$
+$$\overline{x}=\dfrac{6+8+11+12+13}{5}=\dfrac{50}{5}={\color{#4A5D7A}10}$$
 
-On remplace par les valeurs de l'énoncé :
+**b.** L'écart-type mesure la dispersion : plus il est grand, plus les valeurs sont éloignées de la moyenne.
 
-$$m=\dfrac{-8-4}{3-(-1)}=\dfrac{-12}{4}={\color{#4A5D7A}-3}$$
+Comme $5{,}2>2{,}6$, c'est ${\color{#4A5D7A}\text{la seconde série}}$ qui est la plus dispersée.
 
-Attention au dénominateur : $3-(-1)=3+1=4$.
+Deux séries peuvent avoir la même moyenne et des dispersions très différentes : la moyenne seule ne décrit pas une série.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-On considère la série statistique suivante, rangée dans l'ordre croissant :
+On donne les intervalles $I=\left]-\infty\,;\,3\right]$ et $J=\left[-2\,;\,+\infty\right[$.
 
-$$6\ ;\ 8\ ;\ 8\ ;\ 11\ ;\ 13\ ;\ 13\ ;\ 13\ ;\ 17$$
-
-Déterminer la médiane et l'étendue de cette série.
+Déterminer $I\cap J$ puis $I\cup J$.
 ---CORR---
-La série compte $8$ valeurs. Comme $8$ est pair, il n'y a pas de valeur centrale unique : la médiane est la moyenne des deux valeurs du milieu, celles de rang $4$ et $5$.
+On traduit par des inégalités : $x\in I$ signifie $x\leqslant 3$, et $x\in J$ signifie $x\geqslant -2$.
 
-$$\text{Médiane}=\dfrac{11+13}{2}=\dfrac{24}{2}={\color{#4A5D7A}12}$$
+**Intersection** : les réels qui vérifient les deux conditions à la fois, donc $-2\leqslant x\leqslant 3$.
 
-L'étendue est l'écart entre la plus grande et la plus petite valeur :
+$$I\cap J={\color{#4A5D7A}\left[-2\,;\,3\right]}$$
 
-$$17-6={\color{#4A5D7A}11}$$
+**Réunion** : tout réel est soit inférieur ou égal à $3$, soit supérieur ou égal à $-2$ (et souvent les deux). Aucun réel n'échappe aux deux conditions.
 
-On remarque que la médiane $12$ n'est pas une valeur de la série : c'est normal quand l'effectif est pair.
+$$I\cup J={\color{#4A5D7A}\mathbb{R}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -154,37 +154,37 @@ Vérification avec un autre point de la droite : $f(2)=-2+2=0$, et la droite cou
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-$g$ est une fonction affine telle que $g(-2)=7$ et $g(4)=-5$.
+On considère la série statistique : $5\ ;\ 9\ ;\ 10\ ;\ 14\ ;\ 22$.
 
-Déterminer son coefficient directeur.
+**a.** Calculer la moyenne de cette série.
+
+**b.** Une seconde série a la même moyenne, mais son écart-type vaut $1{,}8$ alors que celui de la première vaut $6{,}1$. Laquelle des deux séries a ses valeurs les plus regroupées autour de sa moyenne ?
 ---CORR---
-Pour une fonction affine, le coefficient directeur se calcule à partir de deux images :
+**a.** La moyenne est la somme des valeurs divisée par leur nombre :
 
-$$m=\dfrac{g(x_2)-g(x_1)}{x_2-x_1}$$
+$$\overline{x}=\dfrac{5+9+10+14+22}{5}=\dfrac{60}{5}={\color{#4A5D7A}12}$$
 
-On remplace par les valeurs de l'énoncé :
+**b.** L'écart-type mesure la dispersion : plus il est **petit**, plus les valeurs sont regroupées autour de la moyenne.
 
-$$m=\dfrac{-5-7}{4-(-2)}=\dfrac{-12}{6}={\color{#4A5D7A}-2}$$
+Comme $1{,}8<6{,}1$, c'est ${\color{#4A5D7A}\text{la seconde série}}$ qui a ses valeurs les plus regroupées.
 
-Attention au dénominateur : $4-(-2)=4+2=6$.
+Deux séries peuvent avoir la même moyenne et des dispersions très différentes : la moyenne seule ne décrit pas une série.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-On considère la série statistique suivante, rangée dans l'ordre croissant :
+On donne les intervalles $I=\left[-5\,;\,4\right[$ et $J=\left]1\,;\,+\infty\right[$.
 
-$$5\ ;\ 7\ ;\ 9\ ;\ 9\ ;\ 12\ ;\ 14\ ;\ 16\ ;\ 20$$
-
-Déterminer la médiane et l'étendue de cette série.
+Déterminer $I\cap J$ puis $I\cup J$.
 ---CORR---
-La série compte $8$ valeurs. Comme $8$ est pair, il n'y a pas de valeur centrale unique : la médiane est la moyenne des deux valeurs du milieu, celles de rang $4$ et $5$.
+On traduit par des inégalités : $x\in I$ signifie $-5\leqslant x<4$, et $x\in J$ signifie $x>1$.
 
-$$\text{Médiane}=\dfrac{9+12}{2}=\dfrac{21}{2}={\color{#4A5D7A}10{,}5}$$
+**Intersection** : les réels qui vérifient les deux conditions à la fois, donc $1<x<4$. Les deux bornes sont exclues, l'une parce que l'inégalité de $J$ est stricte, l'autre parce que celle de $I$ l'est aussi.
 
-L'étendue est l'écart entre la plus grande et la plus petite valeur :
+$$I\cap J={\color{#4A5D7A}\left]1\,;\,4\right[}$$
 
-$$20-5={\color{#4A5D7A}15}$$
+**Réunion** : les deux intervalles se chevauchent, leur réunion est donc d'un seul tenant, de la plus petite borne à la plus grande.
 
-On remarque que la médiane $10{,}5$ n'est pas une valeur de la série : c'est normal quand l'effectif est pair.
+$$I\cup J={\color{#4A5D7A}\left[-5\,;\,+\infty\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

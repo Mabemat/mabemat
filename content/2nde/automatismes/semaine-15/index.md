@@ -1,5 +1,5 @@
 ---
-title: "Semaine 15 - Signe d'une fonction affine et inéquations produit"
+title: "Semaine 15 - Signe et inéquations produit ou quotient"
 layout: "automatismes-2nde"
 auto_number: 15
 weight: 15
@@ -48,33 +48,52 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-3\right]\cup\left[2\,;\,+\infty\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Déterminer la fonction affine $f$ telle que $f(2)=1$ et $f(5)=10$.
+Résoudre dans $\mathbb{R}$ l'inéquation :
+
+$$\dfrac{x-4}{2x+6}\leqslant 0$$
 ---CORR---
-Une fonction affine s'écrit $f(x)=mx+p$. On calcule d'abord le coefficient directeur :
+On cherche d'abord la valeur interdite, celle qui annule le dénominateur :
 
-$$m=\dfrac{f(5)-f(2)}{5-2}=\dfrac{10-1}{3}=\dfrac{9}{3}=3$$
+$$2x+6=0 \quad\text{donc}\quad x=-3$$
 
-On a donc $f(x)=3x+p$. Pour trouver $p$, on utilise l'une des deux informations, par exemple $f(2)=1$ :
+On étudie ensuite le signe de chaque facteur. $x-4$ s'annule en $4$ et, son coefficient étant positif, il est négatif avant et positif après. De même $2x+6$ s'annule en $-3$, négatif avant, positif après.
 
-$$3\times 2+p=1 \quad\Longrightarrow\quad 6+p=1 \quad\Longrightarrow\quad p=-5$$
+$$\begin{array}{ccccccc}
+x & -\infty & & -3 & & 4 & +\infty \\ \hline
+x-4 & & - & \vert & - & 0 & + \\
+2x+6 & & - & 0 & + & \vert & + \\ \hline
+\text{quotient} & & + & \Vert & - & 0 & +
+\end{array}$$
 
-$$f(x)={\color{#4A5D7A}3x-5}$$
+Le quotient est négatif ou nul entre $-3$ et $4$. La borne $4$ est incluse (elle annule le quotient), la borne $-3$ est exclue (valeur interdite).
 
-Vérification avec l'autre donnée : $f(5)=3\times 5-5=10$.
+$$S={\color{#4A5D7A}\left]-3\,;\,4\right]}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Une droite passe par les points $A(1\,;\,2)$ et $B(4\,;\,11)$.
+Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-5x$.
 
-Déterminer son coefficient directeur.
+**a.** Calculer $f(-2)$.
+
+**b.** Déterminer les antécédents de $0$ par $f$.
 ---CORR---
-Le coefficient directeur d'une droite passant par deux points se calcule par :
+**a.** On remplace $x$ par $-2$, sans oublier les parenthèses :
 
-$$m=\dfrac{y_B-y_A}{x_B-x_A}$$
+$$f(-2)=(-2)^2-5\times(-2)=4+10={\color{#4A5D7A}14}$$
 
-On remplace :
+**b.** Chercher les antécédents de $0$, c'est résoudre $f(x)=0$ :
 
-$$m=\dfrac{11-2}{4-1}=\dfrac{9}{3}={\color{#4A5D7A}3}$$
+$$x^2-5x=0$$
+
+On factorise par $x$ pour se ramener à une équation produit :
+
+$$x(x-5)=0$$
+
+Un produit est nul si et seulement si l'un de ses facteurs est nul :
+
+$$x=0 \qquad\text{ou}\qquad x-5=0 \quad\text{donc}\quad x=5$$
+
+$${\color{#4A5D7A}0\ \text{et}\ 5}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -160,33 +179,52 @@ $$S={\color{#4A5D7A}\left]-\infty\,;\,-4\right]\cup\left[1\,;\,+\infty\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Déterminer la fonction affine $f$ telle que $f(1)=-1$ et $f(5)=7$.
+Résoudre dans $\mathbb{R}$ l'inéquation :
+
+$$\dfrac{x+2}{3x-9}\geqslant 0$$
 ---CORR---
-Une fonction affine s'écrit $f(x)=mx+p$. On calcule d'abord le coefficient directeur :
+On cherche d'abord la valeur interdite, celle qui annule le dénominateur :
 
-$$m=\dfrac{f(5)-f(1)}{5-1}=\dfrac{7-(-1)}{4}=\dfrac{8}{4}=2$$
+$$3x-9=0 \quad\text{donc}\quad x=3$$
 
-On a donc $f(x)=2x+p$. Pour trouver $p$, on utilise l'une des deux informations, par exemple $f(1)=-1$ :
+On étudie ensuite le signe de chaque facteur. $x+2$ s'annule en $-2$ et, son coefficient étant positif, il est négatif avant et positif après. De même $3x-9$ s'annule en $3$, négatif avant, positif après.
 
-$$2\times 1+p=-1 \quad\Longrightarrow\quad 2+p=-1 \quad\Longrightarrow\quad p=-3$$
+$$\begin{array}{ccccccc}
+x & -\infty & & -2 & & 3 & +\infty \\ \hline
+x+2 & & - & 0 & + & \vert & + \\
+3x-9 & & - & \vert & - & 0 & + \\ \hline
+\text{quotient} & & + & 0 & - & \Vert & +
+\end{array}$$
 
-$$f(x)={\color{#4A5D7A}2x-3}$$
+Le quotient est positif ou nul avant $-2$ et après $3$. La borne $-2$ est incluse (elle annule le quotient), la borne $3$ est exclue (valeur interdite).
 
-Vérification avec l'autre donnée : $f(5)=2\times 5-3=7$.
+$$S={\color{#4A5D7A}\left]-\infty\,;\,-2\right]\cup\left]3\,;\,+\infty\right[}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Une droite passe par les points $A(2\,;\,5)$ et $B(6\,;\,17)$.
+Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2+3x$.
 
-Déterminer son coefficient directeur.
+**a.** Calculer $f(-4)$.
+
+**b.** Déterminer les antécédents de $0$ par $f$.
 ---CORR---
-Le coefficient directeur d'une droite passant par deux points se calcule par :
+**a.** On remplace $x$ par $-4$, sans oublier les parenthèses :
 
-$$m=\dfrac{y_B-y_A}{x_B-x_A}$$
+$$f(-4)=(-4)^2+3\times(-4)=16-12={\color{#4A5D7A}4}$$
 
-On remplace :
+**b.** Chercher les antécédents de $0$, c'est résoudre $f(x)=0$ :
 
-$$m=\dfrac{17-5}{6-2}=\dfrac{12}{4}={\color{#4A5D7A}3}$$
+$$x^2+3x=0$$
+
+On factorise par $x$ pour se ramener à une équation produit :
+
+$$x(x+3)=0$$
+
+Un produit est nul si et seulement si l'un de ses facteurs est nul :
+
+$$x=0 \qquad\text{ou}\qquad x+3=0 \quad\text{donc}\quad x=-3$$
+
+$${\color{#4A5D7A}-3\ \text{et}\ 0}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

@@ -1,5 +1,5 @@
 ---
-title: "Semaine 18 - Coordonnées, colinéarité et alignement"
+title: "Semaine 18 - Équations avec racines carrées et repère du plan"
 layout: "automatismes-2nde"
 auto_number: 18
 weight: 18
@@ -8,55 +8,57 @@ weight: 18
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Dans un repère, on donne $A(-2\,;\,3)$ et $B(4\,;\,-1)$.
+Résoudre dans $[0\,;\,+\infty[$ l'équation :
 
-Déterminer les coordonnées du vecteur $\overrightarrow{AB}$.
+$$3\sqrt{x}-2=10$$
 ---CORR---
-Les coordonnées d'un vecteur s'obtiennent en soustrayant les coordonnées de l'origine à celles de l'extrémité, dans cet ordre :
+On isole d'abord la racine. On ajoute $2$ à chaque membre :
 
-$$\overrightarrow{AB}\ \left(x_B-x_A\ ;\ y_B-y_A\right)$$
+$$3\sqrt{x}=12$$
 
-On remplace :
+On divise par $3$ :
 
-$$x_B-x_A=4-(-2)=6 \qquad\qquad y_B-y_A=-1-3=-4$$
+$$\sqrt{x}=4$$
 
-$$\overrightarrow{AB}\ {\color{#4A5D7A}\left(6\ ;\ -4\right)}$$
+Les deux membres étant positifs, on peut élever au carré :
 
-Attention au sens de la soustraction : c'est « arrivée moins départ ». Le vecteur $\overrightarrow{BA}$ aurait pour coordonnées $(-6\,;\,4)$.
+$$x=4^2={\color{#4A5D7A}16}$$
+
+Vérification : $3\sqrt{16}-2=3\times 4-2=10$. La solution appartient bien à $[0\,;\,+\infty[$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On donne $\overrightarrow{u}\,(3\,;\,-2)$ et $\overrightarrow{v}\,(-9\,;\,6)$.
+Résoudre dans $\left[0\,;\,+\infty\right[$ l'inéquation :
 
-Ces deux vecteurs sont-ils colinéaires ? Justifier par un calcul de déterminant.
+$$\sqrt{x}\leqslant 5$$
 ---CORR---
-Le déterminant de deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ vaut :
+Les deux membres sont positifs, et la fonction racine carrée est croissante sur $\left[0\,;\,+\infty\right[$ : élever au carré ne change donc pas le sens de l'inégalité.
 
-$$\det\left(\overrightarrow{u}\,;\,\overrightarrow{v}\right)=xy'-yx'$$
+$$\sqrt{x}\leqslant 5 \iff x\leqslant 5^2 \iff x\leqslant 25$$
 
-On remplace :
+Sans oublier la condition d'existence $x\geqslant 0$ :
 
-$$3\times 6-(-2)\times(-9)=18-18={\color{#4A5D7A}0}$$
+$$S={\color{#4A5D7A}\left[0\,;\,25\right]}$$
 
-Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.
-
-On le voit aussi directement : $\overrightarrow{v}=-3\,\overrightarrow{u}$.
+Vérification : $\sqrt{25}=5$, et $\sqrt{36}=6>5$, donc $36$ est bien exclu.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On donne $A(1\,;\,2)$, $B(4\,;\,8)$ et $C(6\,;\,12)$.
+Dans un repère du plan, on donne le point $M\,(-2\,;\,5)$.
 
-Les points $A$, $B$ et $C$ sont-ils alignés ?
+**a.** Donner les coordonnées du symétrique de $M$ par rapport à l'axe des ordonnées.
+
+**b.** Donner les coordonnées du symétrique de $M$ par rapport à l'origine $O$.
 ---CORR---
-Trois points sont alignés si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires. On calcule d'abord leurs coordonnées :
+**a.** Une symétrie par rapport à l'axe des ordonnées renvoie chaque point de l'autre côté de l'axe vertical : l'abscisse change de signe, l'ordonnée ne bouge pas.
 
-$$\overrightarrow{AB}\,(4-1\,;\,8-2)=(3\,;\,6) \qquad \overrightarrow{AC}\,(6-1\,;\,12-2)=(5\,;\,10)$$
+$${\color{#4A5D7A}(2\,;\,5)}$$
 
-On calcule le déterminant :
+**b.** Une symétrie par rapport à l'origine est un demi-tour autour de $O$ : les **deux** coordonnées changent de signe.
 
-$$3\times 10-6\times 5=30-30={\color{#4A5D7A}0}$$
+$${\color{#4A5D7A}(2\,;\,-5)}$$
 
-Le déterminant est nul, donc les vecteurs sont colinéaires : les points $A$, $B$ et $C$ sont ${\color{#4A5D7A}\text{alignés}}$.
+Le repère se lit toujours dans le même ordre : d'abord l'abscisse, sur l'axe horizontal, puis l'ordonnée.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -114,55 +116,57 @@ La réponse A confond le coefficient $2$, exprimé en pourcentage, avec le taux 
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Dans un repère, on donne $A(5\,;\,-2)$ et $B(-1\,;\,4)$.
+Résoudre dans $[0\,;\,+\infty[$ l'équation :
 
-Déterminer les coordonnées du vecteur $\overrightarrow{AB}$.
+$$4\sqrt{x}-3=17$$
 ---CORR---
-Les coordonnées d'un vecteur s'obtiennent en soustrayant les coordonnées de l'origine à celles de l'extrémité, dans cet ordre :
+On isole d'abord la racine. On ajoute $3$ à chaque membre :
 
-$$\overrightarrow{AB}\ \left(x_B-x_A\ ;\ y_B-y_A\right)$$
+$$4\sqrt{x}=20$$
 
-On remplace :
+On divise par $4$ :
 
-$$x_B-x_A=-1-5=-6 \qquad\qquad y_B-y_A=4-(-2)=6$$
+$$\sqrt{x}=5$$
 
-$$\overrightarrow{AB}\ {\color{#4A5D7A}\left(-6\ ;\ 6\right)}$$
+Les deux membres étant positifs, on peut élever au carré :
 
-Attention au sens de la soustraction : c'est « arrivée moins départ ». Le vecteur $\overrightarrow{BA}$ aurait pour coordonnées $(6\,;\,-6)$.
+$$x=5^2={\color{#4A5D7A}25}$$
+
+Vérification : $4\sqrt{25}-3=4\times 5-3=17$. La solution appartient bien à $[0\,;\,+\infty[$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-On donne $\overrightarrow{u}\,(4\,;\,-3)$ et $\overrightarrow{v}\,(-8\,;\,6)$.
+Résoudre dans $\left[0\,;\,+\infty\right[$ l'inéquation :
 
-Ces deux vecteurs sont-ils colinéaires ? Justifier par un calcul de déterminant.
+$$\sqrt{x}>4$$
 ---CORR---
-Le déterminant de deux vecteurs $\overrightarrow{u}\,(x\,;\,y)$ et $\overrightarrow{v}\,(x'\,;\,y')$ vaut :
+Les deux membres sont positifs, et la fonction racine carrée est croissante sur $\left[0\,;\,+\infty\right[$ : élever au carré ne change donc pas le sens de l'inégalité.
 
-$$\det\left(\overrightarrow{u}\,;\,\overrightarrow{v}\right)=xy'-yx'$$
+$$\sqrt{x}>4 \iff x>4^2 \iff x>16$$
 
-On remplace :
+L'inégalité est stricte, donc $16$ est exclu. La condition $x\geqslant 0$ est automatiquement vérifiée.
 
-$$4\times 6-(-3)\times(-8)=24-24={\color{#4A5D7A}0}$$
+$$S={\color{#4A5D7A}\left]16\,;\,+\infty\right[}$$
 
-Le déterminant est nul, donc les deux vecteurs sont ${\color{#4A5D7A}\text{colinéaires}}$.
-
-On le voit aussi directement : $\overrightarrow{v}=-2\,\overrightarrow{u}$.
+Vérification : $\sqrt{16}=4$, ce qui ne convient pas car l'inégalité est stricte, et $\sqrt{25}=5>4$ convient.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On donne $A(2\,;\,1)$, $B(5\,;\,7)$ et $C(8\,;\,13)$.
+Dans un repère du plan, on donne le point $N\,(4\,;\,-3)$.
 
-Les points $A$, $B$ et $C$ sont-ils alignés ?
+**a.** Donner les coordonnées du symétrique de $N$ par rapport à l'axe des abscisses.
+
+**b.** Donner les coordonnées du symétrique de $N$ par rapport à l'origine $O$.
 ---CORR---
-Trois points sont alignés si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires. On calcule d'abord leurs coordonnées :
+**a.** Une symétrie par rapport à l'axe des abscisses renvoie chaque point de l'autre côté de l'axe horizontal : l'ordonnée change de signe, l'abscisse ne bouge pas.
 
-$$\overrightarrow{AB}\,(5-2\,;\,7-1)=(3\,;\,6) \qquad \overrightarrow{AC}\,(8-2\,;\,13-1)=(6\,;\,12)$$
+$${\color{#4A5D7A}(4\,;\,3)}$$
 
-On calcule le déterminant :
+**b.** Une symétrie par rapport à l'origine est un demi-tour autour de $O$ : les **deux** coordonnées changent de signe.
 
-$$3\times 12-6\times 6=36-36={\color{#4A5D7A}0}$$
+$${\color{#4A5D7A}(-4\,;\,3)}$$
 
-Le déterminant est nul, donc les vecteurs sont colinéaires : les points $A$, $B$ et $C$ sont ${\color{#4A5D7A}\text{alignés}}$.
+Le repère se lit toujours dans le même ordre : d'abord l'abscisse, sur l'axe horizontal, puis l'ordonnée.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

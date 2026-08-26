@@ -1,5 +1,5 @@
 ---
-title: "Semaine 12 - Signe d'une fonction et premières statistiques"
+title: "Semaine 12 - Variations et signe d'une fonction"
 layout: "automatismes-2nde"
 auto_number: 12
 weight: 12
@@ -38,23 +38,24 @@ Aucune de ces trois abscisses ne tombe sur une graduation : on ne demande pas de
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On a relevé le nombre de frères et sœurs des $25$ élèves d'une classe :
-
-| Nombre de frères et sœurs | 0 | 1 | 2 | 3 |
-|---|---|---|---|---|
-| Effectif | 6 | 10 | 7 | 2 |
-
-Calculer la fréquence, en pourcentage, des élèves ayant exactement $1$ frère ou sœur, puis celle des élèves en ayant au moins $2$.
+Toujours avec la même courbe, dresser le tableau de variations de $f$ sur $[-4\,;\,4]$.
 ---CORR---
-Une fréquence est un quotient : l'effectif de la valeur divisé par l'effectif total, ici $25$.
+On parcourt la courbe de gauche à droite et on repère les endroits où elle change de sens.
 
-Pour la valeur $1$ :
+Elle monte de $x=-4$ jusqu'à $x=-1$, où elle atteint son point le plus haut, à la hauteur $2$.
 
-$$f=\dfrac{10}{25}=\dfrac{2\times \cancel{5}}{5\times \cancel{5}}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$$
+Elle descend ensuite de $x=-1$ jusqu'à $x=2$, où elle atteint son point le plus bas, à la hauteur $-1$.
 
-« Au moins $2$ » signifie $2$ ou $3$ : on additionne d'abord les effectifs.
+Elle remonte enfin de $x=2$ jusqu'à $x=4$, où elle vaut $2$.
 
-$$7+2=9 \qquad\text{puis}\qquad f=\dfrac{9}{25}=0{,}36={\color{#4A5D7A}36\,\%}$$
+Aux deux bords : $f(-4)=-2$ et $f(4)=2$.
+
+$$\begin{array}{cccccccc}
+x & -4 & & -1 & & 2 & & 4 \\ \hline
+f(x) & -2 & \nearrow & 2 & \searrow & -1 & \nearrow & 2
+\end{array}$$
+
+$f$ est ${\color{#4A5D7A}\text{croissante sur }[-4\,;\,-1]\text{, décroissante sur }[-1\,;\,2]\text{, croissante sur }[2\,;\,4]}$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -148,23 +149,25 @@ Le sommet ne compte que pour une seule solution, même si la courbe y « touche 
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-On a relevé le nombre d'animaux de compagnie des $20$ élèves d'un groupe :
+Toujours avec la même courbe :
 
-| Nombre d'animaux | 0 | 1 | 2 | 3 |
-|---|---|---|---|---|
-| Effectif | 7 | 8 | 4 | 1 |
+**a.** Sur quel intervalle $f$ est-elle décroissante ?
 
-Calculer la fréquence, en pourcentage, des élèves ayant exactement $1$ animal, puis celle des élèves en ayant au moins $2$.
+**b.** Donner le minimum de $f$ sur $[-4\,;\,4]$ et la valeur en laquelle il est atteint.
 ---CORR---
-Une fréquence est un quotient : l'effectif de la valeur divisé par l'effectif total, ici $20$.
+**a.** On cherche la portion de courbe qui descend quand on la parcourt de gauche à droite.
 
-Pour la valeur $1$ :
+La courbe monte jusqu'à $x=-1$, puis descend jusqu'à $x=1$, puis remonte.
 
-$$f=\dfrac{8}{20}=\dfrac{2\times \cancel{4}}{5\times \cancel{4}}=\dfrac{2}{5}=0{,}4={\color{#4A5D7A}40\,\%}$$
+$$f\ \text{est décroissante sur }{\color{#4A5D7A}[-1\,;\,1]}$$
 
-« Au moins $2$ » signifie $2$ ou $3$ : on additionne d'abord les effectifs.
+**b.** Le minimum est la plus petite valeur atteinte par $f$, c'est-à-dire l'ordonnée du point le plus bas de la courbe.
 
-$$4+1=5 \qquad\text{puis}\qquad f=\dfrac{5}{20}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$
+Ce point est le creux situé en $x=1$, à la hauteur $-2$. Il faut le comparer au bord gauche, où $f(-4)=-3$ : c'est ce bord qui est le plus bas.
+
+$$\text{Le minimum de }f\ \text{vaut }{\color{#4A5D7A}-3}\text{, atteint en }{\color{#4A5D7A}x=-4}$$
+
+Le minimum est une **ordonnée**, la valeur en laquelle il est atteint est une **abscisse** : il ne faut pas les intervertir.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

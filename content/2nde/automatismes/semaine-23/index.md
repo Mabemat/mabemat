@@ -1,5 +1,5 @@
 ---
-title: "Semaine 23 - Parité et nombres premiers"
+title: "Semaine 23 - Valeur absolue, multiples et diviseurs"
 layout: "automatismes-2nde"
 auto_number: 23
 weight: 23
@@ -8,65 +8,69 @@ weight: 23
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Décomposer $180$ en produit de facteurs premiers.
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+
+$$\left|x+4\right|\leqslant 3$$
 ---CORR---
-On divise successivement par les nombres premiers, en commençant par le plus petit :
+$\left|x+4\right|$ se lit comme la distance entre $x$ et $-4$, puisque $x+4=x-(-4)$.
 
-$$180=2\times 90 \qquad 90=2\times 45 \qquad 45=3\times 15 \qquad 15=3\times 5$$
+On cherche donc les réels situés à une distance d'au plus $3$ du nombre $-4$ : ce sont ceux qui se trouvent entre $-4-3$ et $-4+3$.
 
-En regroupant :
+On peut aussi encadrer directement :
 
-$$180={\color{#4A5D7A}2^2\times 3^2\times 5}$$
+$$-3\leqslant x+4\leqslant 3$$
 
-Vérification : $4\times 9\times 5=180$.
+On retranche $4$ aux trois membres :
+
+$$-7\leqslant x\leqslant -1$$
+
+$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$
+
+L'inégalité étant large, les deux bornes sont incluses.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Démontrer que le carré d'un nombre entier impair est impair.
+Donner la liste de tous les diviseurs positifs de $36$.
 ---CORR---
-On traduit l'hypothèse : soit $n$ un entier impair. Il existe alors un entier $k$ tel que
+On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :
 
-$$n=2k+1$$
+$$1\times 36 \qquad 2\times 18 \qquad 3\times 12 \qquad 4\times 9 \qquad 6\times 6$$
 
-On calcule le carré en développant l'identité remarquable :
+On s'arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l'autre sens.
 
-$$n^2=(2k+1)^2=4k^2+4k+1$$
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$
 
-Pour reconnaître un nombre impair, il faut le mettre sous la forme $2\times\text{entier}+1$. On factorise donc les deux premiers termes par $2$ :
-
-$$n^2={\color{#4A5D7A}2\left(2k^2+2k\right)+1}$$
-
-Comme $2k^2+2k$ est un entier, $n^2$ est bien impair.
-
-Tout est dans la mise en forme finale : sans elle, on n'a pas démontré la parité.
+Il y en a $9$. Un nombre a un nombre impair de diviseurs exactement quand c'est un carré parfait, ce qui est bien le cas ici.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Le nombre $91$ est-il premier ? Justifier.
+Démontrer que la somme de deux multiples de $7$ est un multiple de $7$.
 ---CORR---
-Un nombre premier n'a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s'arrêtant dès que leur carré dépasse $91$ (car $10^2=100>91$, il suffit de tester jusqu'à $9$).
+On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $7$ : il existe deux entiers $k$ et $k'$ tels que
 
-$91$ n'est pas pair, la somme de ses chiffres est $10$ donc il n'est pas divisible par $3$, il ne se termine ni par $0$ ni par $5$. On teste $7$ :
+$$a=7k \qquad\text{et}\qquad b=7k'$$
 
-$$91=7\times 13$$
+On calcule la somme et on factorise par $7$ :
 
-Le nombre $91$ admet donc d'autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.
+$$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$
+
+Comme $k+k'$ est un entier, $a+b$ s'écrit bien sous la forme $7\times\text{entier}$ : c'est un multiple de $7$.
+
+La factorisation est le cœur de la démonstration : c'est elle qui fait apparaître le $7$ en facteur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+Écrire sans racine carrée au dénominateur :
 
-$$\left|x-1\right|\leqslant 4$$
+$$A=\dfrac{12}{\sqrt{6}}$$
 ---CORR---
-$\left|x-1\right|$ est la distance entre $x$ et $1$. On encadre :
+On multiplie le numérateur et le dénominateur par $\sqrt{6}$, ce qui ne change pas la valeur du quotient :
 
-$$-4\leqslant x-1\leqslant 4$$
+$$A=\dfrac{12\times\sqrt{6}}{\sqrt{6}\times\sqrt{6}}=\dfrac{12\sqrt{6}}{6}$$
 
-On ajoute $1$ aux trois membres :
+Car $\sqrt{6}\times\sqrt{6}=6$. On simplifie ensuite par $6$ :
 
-$$-3\leqslant x\leqslant 5$$
-
-$$S={\color{#4A5D7A}\left[-3\,;\,5\right]}$$
+$$A={\color{#4A5D7A}2\sqrt{6}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -116,69 +120,69 @@ La réponse B est l'erreur classique : ajouter $6$ à $10$ comme on ajoute $2$ �
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Décomposer $252$ en produit de facteurs premiers.
+Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+
+$$\left|x-5\right|\leqslant 2$$
 ---CORR---
-On divise successivement par les nombres premiers, en commençant par le plus petit :
+$\left|x-5\right|$ se lit comme la distance entre $x$ et $5$.
 
-$$252=2\times 126 \qquad 126=2\times 63 \qquad 63=3\times 21 \qquad 21=3\times 7$$
+On cherche donc les réels situés à une distance d'au plus $2$ du nombre $5$ : ce sont ceux qui se trouvent entre $5-2$ et $5+2$.
 
-En regroupant :
+On peut aussi encadrer directement :
 
-$$252={\color{#4A5D7A}2^2\times 3^2\times 7}$$
+$$-2\leqslant x-5\leqslant 2$$
 
-Vérification : $4\times 9\times 7=252$.
+On ajoute $5$ aux trois membres :
+
+$$3\leqslant x\leqslant 7$$
+
+$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$
+
+L'inégalité étant large, les deux bornes sont incluses.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Démontrer que le carré d'un nombre entier pair est pair.
+Donner la liste de tous les diviseurs positifs de $48$.
 ---CORR---
-On traduit l'hypothèse : soit $n$ un entier pair. Il existe alors un entier $k$ tel que
+On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :
 
-$$n=2k$$
+$$1\times 48 \qquad 2\times 24 \qquad 3\times 16 \qquad 4\times 12 \qquad 6\times 8$$
 
-On calcule le carré :
+On s'arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.
 
-$$n^2=(2k)^2=4k^2$$
+$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$
 
-Pour reconnaître un nombre pair, il faut le mettre sous la forme $2\times\text{entier}$. On factorise donc par $2$ :
-
-$$n^2={\color{#4A5D7A}2\left(2k^2\right)}$$
-
-Comme $2k^2$ est un entier, $n^2$ est bien pair.
-
-Tout est dans la mise en forme finale : sans elle, on n'a pas démontré la parité.
+Il y en a $10$. Le nombre de diviseurs est pair, ce qui est le cas de tous les nombres qui ne sont pas des carrés parfaits.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Le nombre $87$ est-il premier ? Justifier.
+Démontrer que la somme de deux multiples de $9$ est un multiple de $9$.
 ---CORR---
-Un nombre premier n'a que deux diviseurs : $1$ et lui-même. On teste donc les nombres premiers successifs, en s'arrêtant dès que leur carré dépasse $87$ (car $10^2=100>87$, il suffit de tester jusqu'à $9$).
+On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $9$ : il existe deux entiers $k$ et $k'$ tels que
 
-$87$ n'est pas pair. On calcule la somme de ses chiffres :
+$$a=9k \qquad\text{et}\qquad b=9k'$$
 
-$$8+7=15$$
+On calcule la somme et on factorise par $9$ :
 
-$15$ est divisible par $3$, donc $87$ aussi :
+$$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$
 
-$$87=3\times 29$$
+Comme $k+k'$ est un entier, $a+b$ s'écrit bien sous la forme $9\times\text{entier}$ : c'est un multiple de $9$.
 
-Le nombre $87$ admet donc d'autres diviseurs que $1$ et lui-même : il ${\color{#4A5D7A}\text{n'est pas premier}}$.
+La factorisation est le cœur de la démonstration : c'est elle qui fait apparaître le $9$ en facteur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+Écrire sans racine carrée au dénominateur :
 
-$$\left|x+2\right|\leqslant 5$$
+$$A=\dfrac{15}{\sqrt{5}}$$
 ---CORR---
-$\left|x+2\right|$ est la distance entre $x$ et $-2$. On encadre :
+On multiplie le numérateur et le dénominateur par $\sqrt{5}$, ce qui ne change pas la valeur du quotient :
 
-$$-5\leqslant x+2\leqslant 5$$
+$$A=\dfrac{15\times\sqrt{5}}{\sqrt{5}\times\sqrt{5}}=\dfrac{15\sqrt{5}}{5}$$
 
-On retranche $2$ aux trois membres :
+Car $\sqrt{5}\times\sqrt{5}=5$. On simplifie ensuite par $5$ :
 
-$$-7\leqslant x\leqslant 3$$
-
-$$S={\color{#4A5D7A}\left[-7\,;\,3\right]}$$
+$$A={\color{#4A5D7A}3\sqrt{5}}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

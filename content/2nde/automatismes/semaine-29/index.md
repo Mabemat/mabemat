@@ -1,5 +1,5 @@
 ---
-title: "Semaine 29 - Révisions : calcul, évolutions et fonctions"
+title: "Semaine 29 - Systèmes et positions relatives de droites"
 layout: "automatismes-2nde"
 auto_number: 29
 weight: 29
@@ -8,49 +8,59 @@ weight: 29
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Calculer et donner le résultat sous forme d'une fraction irréductible :
+Résoudre le système suivant par substitution :
 
-$$A=\dfrac{5}{6}-\dfrac{2}{9}\times\dfrac{3}{4}$$
+$$\begin{cases} y=2x-1 \\ 3x+y=9 \end{cases}$$
 ---CORR---
-La multiplication est prioritaire sur la soustraction : on commence par elle.
+La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $2x-1$ dans la seconde.
 
-$$\dfrac{2}{9}\times\dfrac{3}{4}=\dfrac{2\times 3}{9\times 4}=\dfrac{6}{36}=\dfrac{1}{6}$$
+$$3x+(2x-1)=9$$
 
-On effectue ensuite la soustraction, les deux fractions ayant déjà le même dénominateur :
+On réduit puis on résout :
 
-$$A=\dfrac{5}{6}-\dfrac{1}{6}=\dfrac{4}{6}=\dfrac{2\times \cancel{2}}{3\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{3}}$$
+$$5x-1=9 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+
+On remonte dans la première équation pour obtenir $y$ :
+
+$$y=2\times 2-1=3$$
+
+$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
+
+Vérification dans la seconde équation : $3\times 2+3=9$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Un prix augmente de $25\,\%$, puis diminue de $12\,\%$.
+Résoudre le système suivant par combinaison linéaire :
 
-Déterminer le taux d'évolution global, en pourcentage.
+$$\begin{cases} 2x+3y=13 \\ 2x-y=1 \end{cases}$$
 ---CORR---
-On multiplie les coefficients multiplicateurs :
+Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.
 
-$$1{,}25\times 0{,}88=1{,}1$$
+$$(2x+3y)-(2x-y)=13-1$$
 
-Comme $1{,}1=1+0{,}1$, il s'agit d'une hausse de ${\color{#4A5D7A}10\,\%}$.
+$$2x+3y-2x+y=12 \qquad\text{soit}\qquad 4y=12 \qquad\text{donc}\qquad y=3$$
 
-On note au passage que $25-12=13$ ne donne pas le bon résultat : les taux ne s'additionnent jamais.
+On remplace $y$ par $3$ dans la seconde équation :
+
+$$2x-3=1 \qquad\text{donc}\qquad 2x=4 \qquad\text{donc}\qquad x=2$$
+
+$$S={\color{#4A5D7A}\lbrace (2\,;\,3)\rbrace}$$
+
+Attention au signe lors de la soustraction : $-(-y)=+y$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-2x-3$.
-
-**a.** Calculer $f(-2)$.
-
-**b.** Vérifier que $3$ est un antécédent de $0$ par $f$.
+Les droites $(d)\,:\ y=3x-5$ et $(d')\,:\ 6x-2y+7=0$ sont-elles parallèles ?
 ---CORR---
-**a.** On remplace $x$ par $-2$, entre parenthèses :
+Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :
 
-$$f(-2)=(-2)^2-2\times(-2)-3=4+4-3={\color{#4A5D7A}5}$$
+$$-2y=-6x-7 \qquad\text{donc}\qquad y=3x+3{,}5$$
 
-**b.** Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :
+Les deux droites ont le même coefficient directeur $3$, mais des ordonnées à l'origine différentes ($-5$ et $3{,}5$) :
 
-$$f(3)=3^2-2\times 3-3=9-6-3={\color{#4A5D7A}0}$$
+$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$
 
-L'égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.
+Si les ordonnées à l'origine avaient été égales, les droites auraient été confondues.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
@@ -108,49 +118,59 @@ La réponse A additionne les exposants du carré au lieu de les multiplier, et l
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Calculer et donner le résultat sous forme d'une fraction irréductible :
+Résoudre le système suivant par substitution :
 
-$$A=\dfrac{7}{10}-\dfrac{3}{8}\times\dfrac{4}{5}$$
+$$\begin{cases} y=3x+2 \\ 2x+y=12 \end{cases}$$
 ---CORR---
-La multiplication est prioritaire sur la soustraction : on commence par elle.
+La première équation donne déjà $y$ en fonction de $x$ : on remplace $y$ par $3x+2$ dans la seconde.
 
-$$\dfrac{3}{8}\times\dfrac{4}{5}=\dfrac{3\times 4}{8\times 5}=\dfrac{12}{40}=\dfrac{3}{10}$$
+$$2x+(3x+2)=12$$
 
-On effectue ensuite la soustraction, les deux fractions ayant alors le même dénominateur :
+On réduit puis on résout :
 
-$$A=\dfrac{7}{10}-\dfrac{3}{10}=\dfrac{4}{10}=\dfrac{2\times \cancel{2}}{5\times \cancel{2}}={\color{#4A5D7A}\dfrac{2}{5}}$$
+$$5x+2=12 \qquad\text{donc}\qquad 5x=10 \qquad\text{donc}\qquad x=2$$
+
+On remonte dans la première équation pour obtenir $y$ :
+
+$$y=3\times 2+2=8$$
+
+$$S={\color{#4A5D7A}\lbrace (2\,;\,8)\rbrace}$$
+
+Vérification dans la seconde équation : $2\times 2+8=12$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Un prix augmente de $20\,\%$, puis diminue de $25\,\%$.
+Résoudre le système suivant par combinaison linéaire :
 
-Déterminer le taux d'évolution global, en pourcentage.
+$$\begin{cases} 3x+2y=17 \\ 3x-y=5 \end{cases}$$
 ---CORR---
-On multiplie les coefficients multiplicateurs :
+Les deux équations ont le même coefficient devant $x$ : en les soustrayant, ce terme disparaît.
 
-$$1{,}20\times 0{,}75=0{,}9$$
+$$(3x+2y)-(3x-y)=17-5$$
 
-Comme $0{,}9=1-0{,}1$, il s'agit d'une baisse de ${\color{#4A5D7A}10\,\%}$.
+$$3x+2y-3x+y=12 \qquad\text{soit}\qquad 3y=12 \qquad\text{donc}\qquad y=4$$
 
-On note au passage que $20-25=-5$ ne donne pas le bon résultat : les taux ne s'additionnent jamais.
+On remplace $y$ par $4$ dans la seconde équation :
+
+$$3x-4=5 \qquad\text{donc}\qquad 3x=9 \qquad\text{donc}\qquad x=3$$
+
+$$S={\color{#4A5D7A}\lbrace (3\,;\,4)\rbrace}$$
+
+Attention au signe lors de la soustraction : $-(-y)=+y$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(x)=x^2-4x+3$.
-
-**a.** Calculer $f(-2)$.
-
-**b.** Vérifier que $3$ est un antécédent de $0$ par $f$.
+Les droites $(d)\,:\ y=4x-1$ et $(d')\,:\ 8x-2y+5=0$ sont-elles parallèles ?
 ---CORR---
-**a.** On remplace $x$ par $-2$, entre parenthèses :
+Pour comparer, il faut écrire les deux droites sous la même forme. On met $(d')$ sous forme réduite en isolant $y$ :
 
-$$f(-2)=(-2)^2-4\times(-2)+3=4+8+3={\color{#4A5D7A}15}$$
+$$-2y=-8x-5 \qquad\text{donc}\qquad y=4x+2{,}5$$
 
-**b.** Dire que $3$ est un antécédent de $0$ signifie que $f(3)=0$. On calcule :
+Les deux droites ont le même coefficient directeur $4$, mais des ordonnées à l'origine différentes ($-1$ et $2{,}5$) :
 
-$$f(3)=3^2-4\times 3+3=9-12+3={\color{#4A5D7A}0}$$
+$${\color{#4A5D7A}(d)\ \text{et}\ (d')\ \text{sont parallèles et distinctes}}$$
 
-L'égalité est vérifiée : $3$ est bien un antécédent de $0$ par $f$.
+Si les ordonnées à l'origine avaient été égales, les droites auraient été confondues.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}

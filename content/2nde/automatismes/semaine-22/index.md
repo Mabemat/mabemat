@@ -1,5 +1,5 @@
 ---
-title: "Semaine 22 - Valeur absolue, multiples et diviseurs"
+title: "Semaine 22 - Fonction inverse et valeur absolue"
 layout: "automatismes-2nde"
 auto_number: 22
 weight: 22
@@ -8,69 +8,71 @@ weight: 22
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+Résoudre dans $\left]0\,;\,+\infty\right[$ l'inéquation :
 
-$$\left|x+4\right|\leqslant 3$$
+$$\dfrac{1}{x}\geqslant 4$$
 ---CORR---
-$\left|x+4\right|$ se lit comme la distance entre $x$ et $-4$, puisque $x+4=x-(-4)$.
+Sur $\left]0\,;\,+\infty\right[$, la fonction inverse est **décroissante** : passer aux inverses renverse le sens de l'inégalité.
 
-On cherche donc les réels situés à une distance d'au plus $3$ du nombre $-4$ : ce sont ceux qui se trouvent entre $-4-3$ et $-4+3$.
+$$\dfrac{1}{x}\geqslant 4 \iff x\leqslant \dfrac{1}{4}$$
 
-On peut aussi encadrer directement :
+Il ne faut pas oublier la condition de départ $x>0$. On garde donc les réels strictement positifs et inférieurs ou égaux à $\dfrac{1}{4}$ :
 
-$$-3\leqslant x+4\leqslant 3$$
+$$S={\color{#4A5D7A}\left]0\,;\,\dfrac{1}{4}\right]}$$
 
-On retranche $4$ aux trois membres :
-
-$$-7\leqslant x\leqslant -1$$
-
-$$S={\color{#4A5D7A}\left[-7\,;\,-1\right]}$$
-
-L'inégalité étant large, les deux bornes sont incluses.
+Vérification : pour $x=\dfrac{1}{4}$, $\dfrac{1}{x}=4$, l'inégalité large est vérifiée ; pour $x=1$, $\dfrac{1}{x}=1<4$, ce qui ne convient pas.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Donner la liste de tous les diviseurs positifs de $36$.
+Calculer :
+
+$$\left|-7\right| \qquad \left|3-11\right| \qquad \left|4-4\right|$$
 ---CORR---
-On cherche les couples de nombres dont le produit vaut $36$, en partant de $1$ :
+La valeur absolue d'un nombre est sa distance à zéro : elle est toujours positive ou nulle.
 
-$$1\times 36 \qquad 2\times 18 \qquad 3\times 12 \qquad 4\times 9 \qquad 6\times 6$$
+$$\left|-7\right|={\color{#4A5D7A}7}$$
 
-On s'arrête à $6$, car $6\times 6=36$ : au-delà, on retrouverait les mêmes couples dans l'autre sens.
+Pour les deux autres, on calcule d'abord ce qui est à l'intérieur :
 
-$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 9\ ;\ 12\ ;\ 18\ ;\ 36}$$
+$$\left|3-11\right|=\left|-8\right|={\color{#4A5D7A}8}$$
 
-Il y en a $9$. Un nombre a un nombre impair de diviseurs exactement quand c'est un carré parfait, ce qui est bien le cas ici.
+$$\left|4-4\right|=\left|0\right|={\color{#4A5D7A}0}$$
+
+Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l'intérieur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Démontrer que la somme de deux multiples de $7$ est un multiple de $7$.
+Résoudre dans $\mathbb{R}$ l'équation :
+
+$$\left|x-3\right|=5$$
 ---CORR---
-On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $7$ : il existe deux entiers $k$ et $k'$ tels que
+On traduit par une distance : $\left|x-3\right|$ est la distance entre $x$ et $3$. On cherche donc les réels situés à une distance de $5$ du nombre $3$.
 
-$$a=7k \qquad\text{et}\qquad b=7k'$$
+Il y en a deux, un de chaque côté :
 
-On calcule la somme et on factorise par $7$ :
+$$x-3=5 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-3=-5 \quad\text{donc}\quad x=-2$$
 
-$$a+b=7k+7k'={\color{#4A5D7A}7(k+k')}$$
+$$S={\color{#4A5D7A}\lbrace -2\,;\,8\rbrace}$$
 
-Comme $k+k'$ est un entier, $a+b$ s'écrit bien sous la forme $7\times\text{entier}$ : c'est un multiple de $7$.
-
-La factorisation est le cœur de la démonstration : c'est elle qui fait apparaître le $7$ en facteur.
+On peut le lire directement sur une droite graduée : en partant de $3$, on avance de $5$ puis on recule de $5$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Calculer :
+On considère la série statistique, rangée dans l'ordre croissant :
 
-$$\left|2-9\right|+\left|-5\right|$$
+$$4\ ;\ 7\ ;\ 9\ ;\ 9\ ;\ 11$$
+
+Déterminer sa moyenne et sa médiane.
 ---CORR---
-On traite chaque valeur absolue séparément, en calculant d'abord l'intérieur :
+La moyenne est la somme des valeurs divisée par leur nombre :
 
-$$\left|2-9\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-5\right|=5$$
+$$\overline{x}=\dfrac{4+7+9+9+11}{5}=\dfrac{40}{5}={\color{#4A5D7A}8}$$
 
-On additionne :
+La série compte $5$ valeurs, un effectif impair : la médiane est la valeur centrale, celle de rang $3$.
 
-$$7+5={\color{#4A5D7A}12}$$
+$$\text{Médiane}={\color{#4A5D7A}9}$$
+
+Moyenne et médiane sont deux indicateurs différents : ici, la médiane est plus grande que la moyenne, tirée vers le bas par la valeur $4$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}
@@ -110,69 +112,71 @@ La réponse A divise au lieu de multiplier. Un réflexe de contrôle : $x$ vaut 
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Résoudre dans $\mathbb{R}$ l'inéquation, et donner l'ensemble des solutions sous forme d'intervalle :
+Résoudre dans $\left]0\,;\,+\infty\right[$ l'inéquation :
 
-$$\left|x-5\right|\leqslant 2$$
+$$\dfrac{1}{x}<2$$
 ---CORR---
-$\left|x-5\right|$ se lit comme la distance entre $x$ et $5$.
+Sur $\left]0\,;\,+\infty\right[$, la fonction inverse est **décroissante** : passer aux inverses renverse le sens de l'inégalité.
 
-On cherche donc les réels situés à une distance d'au plus $2$ du nombre $5$ : ce sont ceux qui se trouvent entre $5-2$ et $5+2$.
+$$\dfrac{1}{x}<2 \iff x>\dfrac{1}{2}$$
 
-On peut aussi encadrer directement :
+La condition de départ $x>0$ est alors automatiquement vérifiée, puisque $\dfrac{1}{2}>0$.
 
-$$-2\leqslant x-5\leqslant 2$$
+$$S={\color{#4A5D7A}\left]\dfrac{1}{2}\,;\,+\infty\right[}$$
 
-On ajoute $5$ aux trois membres :
-
-$$3\leqslant x\leqslant 7$$
-
-$$S={\color{#4A5D7A}\left[3\,;\,7\right]}$$
-
-L'inégalité étant large, les deux bornes sont incluses.
+Vérification : pour $x=1$, $\dfrac{1}{x}=1<2$, ce qui convient ; pour $x=\dfrac{1}{4}$, $\dfrac{1}{x}=4$, ce qui ne convient pas.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
-Donner la liste de tous les diviseurs positifs de $48$.
+Calculer :
+
+$$\left|-12\right| \qquad \left|5-14\right| \qquad \left|6-6\right|$$
 ---CORR---
-On cherche les couples de nombres dont le produit vaut $48$, en partant de $1$ :
+La valeur absolue d'un nombre est sa distance à zéro : elle est toujours positive ou nulle.
 
-$$1\times 48 \qquad 2\times 24 \qquad 3\times 16 \qquad 4\times 12 \qquad 6\times 8$$
+$$\left|-12\right|={\color{#4A5D7A}12}$$
 
-On s'arrête à $6$, car le facteur suivant, $8$, est déjà apparu dans le dernier couple.
+Pour les deux autres, on calcule d'abord ce qui est à l'intérieur :
 
-$${\color{#4A5D7A}1\ ;\ 2\ ;\ 3\ ;\ 4\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16\ ;\ 24\ ;\ 48}$$
+$$\left|5-14\right|=\left|-9\right|={\color{#4A5D7A}9}$$
 
-Il y en a $10$. Le nombre de diviseurs est pair, ce qui est le cas de tous les nombres qui ne sont pas des carrés parfaits.
+$$\left|6-6\right|=\left|0\right|={\color{#4A5D7A}0}$$
+
+Attention : on ne « supprime » pas les barres, on prend la distance à zéro du résultat obtenu à l'intérieur.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
-Démontrer que la somme de deux multiples de $9$ est un multiple de $9$.
+Résoudre dans $\mathbb{R}$ l'équation :
+
+$$\left|x-2\right|=6$$
 ---CORR---
-On traduit l'hypothèse en écriture algébrique. Soient $a$ et $b$ deux multiples de $9$ : il existe deux entiers $k$ et $k'$ tels que
+On traduit par une distance : $\left|x-2\right|$ est la distance entre $x$ et $2$. On cherche donc les réels situés à une distance de $6$ du nombre $2$.
 
-$$a=9k \qquad\text{et}\qquad b=9k'$$
+Il y en a deux, un de chaque côté :
 
-On calcule la somme et on factorise par $9$ :
+$$x-2=6 \quad\text{donc}\quad x=8 \qquad\text{ou}\qquad x-2=-6 \quad\text{donc}\quad x=-4$$
 
-$$a+b=9k+9k'={\color{#4A5D7A}9(k+k')}$$
+$$S={\color{#4A5D7A}\lbrace -4\,;\,8\rbrace}$$
 
-Comme $k+k'$ est un entier, $a+b$ s'écrit bien sous la forme $9\times\text{entier}$ : c'est un multiple de $9$.
-
-La factorisation est le cœur de la démonstration : c'est elle qui fait apparaître le $9$ en facteur.
+On peut le lire directement sur une droite graduée : en partant de $2$, on avance de $6$ puis on recule de $6$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
-Calculer :
+On considère la série statistique, rangée dans l'ordre croissant :
 
-$$\left|3-10\right|+\left|-6\right|$$
+$$3\ ;\ 6\ ;\ 8\ ;\ 12\ ;\ 16$$
+
+Déterminer sa moyenne et sa médiane.
 ---CORR---
-On traite chaque valeur absolue séparément, en calculant d'abord l'intérieur :
+La moyenne est la somme des valeurs divisée par leur nombre :
 
-$$\left|3-10\right|=\left|-7\right|=7 \qquad\text{et}\qquad \left|-6\right|=6$$
+$$\overline{x}=\dfrac{3+6+8+12+16}{5}=\dfrac{45}{5}={\color{#4A5D7A}9}$$
 
-On additionne :
+La série compte $5$ valeurs, un effectif impair : la médiane est la valeur centrale, celle de rang $3$.
 
-$$7+6={\color{#4A5D7A}13}$$
+$$\text{Médiane}={\color{#4A5D7A}8}$$
+
+Moyenne et médiane sont deux indicateurs différents : ici, la moyenne est plus grande que la médiane, tirée vers le haut par la valeur $16$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="05" >}}

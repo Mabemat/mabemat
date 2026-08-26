@@ -1,5 +1,5 @@
 ---
-title: "Semaine 4 - Factorisation et expressions fractionnaires"
+title: "Semaine 4 - Factorisation, fractions et pourcentages"
 layout: "automatismes-2nde"
 auto_number: 4
 weight: 4
@@ -8,21 +8,23 @@ weight: 4
 {{< auto2-seance type="classique" >}}
 
 {{< auto2-exo numero="01" >}}
-Factoriser :
+Un collège compte $480$ élèves.
 
-$$A=(2x+1)(x-3)+(2x+1)(4x+5)$$
+**a.** $35\,\%$ des élèves sont en sixième. Combien y a-t-il d'élèves de sixième ?
+
+**b.** $216$ élèves sont demi-pensionnaires. Quelle proportion des élèves cela représente-t-il, en pourcentage ?
 ---CORR---
-Les deux termes de la somme contiennent le facteur commun $(2x+1)$. On le met en évidence :
+**a.** Prendre $35\,\%$ d'un nombre, c'est le multiplier par $\dfrac{35}{100}=0{,}35$ :
 
-$$A=(2x+1)\Bigl[(x-3)+(4x+5)\Bigr]$$
+$$480\times 0{,}35={\color{#4A5D7A}168}$$
 
-On réduit ensuite le contenu du crochet :
+Il y a donc $168$ élèves de sixième.
 
-$$(x-3)+(4x+5)=x+4x-3+5=5x+2$$
+**b.** Une proportion est un quotient : la partie divisée par le tout.
 
-D'où :
+$$p=\dfrac{216}{480}=0{,}45={\color{#4A5D7A}45\,\%}$$
 
-$$A={\color{#4A5D7A}(2x+1)(5x+2)}$$
+Vérification : $45\,\%$ de $480$ vaut $480\times 0{,}45=216$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
@@ -112,23 +114,23 @@ $$a={\color{#4A5D7A}\dfrac{3-4y}{7}}$$
 {{< auto2-seance type="devoir" >}}
 
 {{< auto2-exo numero="01" >}}
-Factoriser :
+Un lycée compte $750$ élèves.
 
-$$A=(3x-2)(x+4)+(3x-2)(2x-1)$$
+**a.** $24\,\%$ des élèves sont en terminale. Combien y a-t-il d'élèves de terminale ?
+
+**b.** $330$ élèves sont externes. Quelle proportion des élèves cela représente-t-il, en pourcentage ?
 ---CORR---
-Les deux termes de la somme contiennent le facteur commun $(3x-2)$. On le met en évidence :
+**a.** Prendre $24\,\%$ d'un nombre, c'est le multiplier par $\dfrac{24}{100}=0{,}24$ :
 
-$$A=(3x-2)\Bigl[(x+4)+(2x-1)\Bigr]$$
+$$750\times 0{,}24={\color{#4A5D7A}180}$$
 
-On réduit ensuite le contenu du crochet :
+Il y a donc $180$ élèves de terminale.
 
-$$(x+4)+(2x-1)=x+2x+4-1=3x+3$$
+**b.** Une proportion est un quotient : la partie divisée par le tout.
 
-D'où :
+$$p=\dfrac{330}{750}=0{,}44={\color{#4A5D7A}44\,\%}$$
 
-$$A={\color{#4A5D7A}(3x-2)(3x+3)}$$
-
-On peut encore factoriser par $3$ le second facteur : $A=3(3x-2)(x+1)$.
+Vérification : $44\,\%$ de $750$ vaut $750\times 0{,}44=330$.
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="02" >}}
