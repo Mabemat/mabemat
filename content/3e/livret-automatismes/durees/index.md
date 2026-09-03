@@ -141,19 +141,19 @@ $$\begin{aligned}1\,217 &= 24 \times 50 + 17 \\ 50 &= 7 \times 7 + 1\end{aligned
 ---INTRO---
 Convertir
 ---Q---
-$75$ minutes en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$75$ minutes en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 $75 = 60 \times 1 + 15$<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~15~\text{min}}}$.
 ---Q---
-$150$ minutes en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$150$ minutes en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 $150 = 60 \times 2 + 30$<br>Soit ${\color{#EB7F73}\boldsymbol{2~\text{h}~30~\text{min}}}$.
 ---Q---
-$135$ minutes en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$135$ minutes en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 $135 = 60 \times 2 + 15$<br>Soit ${\color{#EB7F73}\boldsymbol{2~\text{h}~15~\text{min}}}$.
 ---Q---
-$90$ minutes en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$90$ minutes en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 $90 = 60 \times 1 + 30$<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~30~\text{min}}}$.
 {{< /livret-exo >}}
@@ -162,19 +162,19 @@ $90 = 60 \times 1 + 30$<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~30~\text
 ---INTRO---
 Convertir
 ---Q---
-$1{,}5$ heures en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$1{,}5$ heures en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 La partie entière donne les heures. Il reste $\dfrac{1}{2}~\text{h}$, et $\dfrac{1}{2} \times 60 = 30$.<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~30~\text{min}}}$.
 ---Q---
-$2{,}25$ heures en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$2{,}25$ heures en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 La partie entière donne les heures. Il reste $\dfrac{1}{4}~\text{h}$, et $\dfrac{1}{4} \times 60 = 15$.<br>Soit ${\color{#EB7F73}\boldsymbol{2~\text{h}~15~\text{min}}}$.
 ---Q---
-$1{,}25$ heures en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$1{,}25$ heures en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 La partie entière donne les heures. Il reste $\dfrac{1}{4}~\text{h}$, et $\dfrac{1}{4} \times 60 = 15$.<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~15~\text{min}}}$.
 ---Q---
-$1{,}75$ heures en format heures-minutes.<br>$\ldots \ldots$ h $\ldots \ldots$ min $\ldots \ldots$ s
+$1{,}75$ heures en format heures-minutes.<br><span class="pointilles"></span> h <span class="pointilles"></span> min <span class="pointilles"></span> s
 ---CORR---
 La partie entière donne les heures. Il reste $\dfrac{3}{4}~\text{h}$, et $\dfrac{3}{4} \times 60 = 45$.<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~45~\text{min}}}$.
 {{< /livret-exo >}}

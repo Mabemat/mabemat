@@ -80,7 +80,7 @@ La proportion est $\dfrac{49}{50}$.<br>$\dfrac{49}{50}=\dfrac{49{\color{#C5607A}
 ---INTRO---
 Compléter avec le bon pourcentage.
 ---Q---
-Dans un groupe de $20$ enfants, $5$ sont des filles.<br>Elles représentent $\ldots\ldots$ $\%$ du groupe.
+Dans un groupe de $20$ enfants, $5$ sont des filles.<br>Elles représentent <span class="pointilles"></span> $\%$ du groupe.
 ---CORR---
 La proportion est $\dfrac{5}{20}$.<br>$\dfrac{5}{20}=\dfrac{5{\color{#C5607A}\boldsymbol{\times 5}}}{20{\color{#C5607A}\boldsymbol{\times 5}}}=\dfrac{25}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{25~\%}}$.
 ---Q---
@@ -88,7 +88,7 @@ Le prix d'un article coûtant $60$ € augmente de $42$ €.<br> Quel est le pou
 ---CORR---
 La proportion est $\dfrac{42}{60}$.<br>$\dfrac{42}{60}=\dfrac{42{\color{#C5607A}\boldsymbol{\div 0}}}{60{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{70}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{70~\%}}$.
 ---Q---
-Dans un groupe de $40$ enfants, $16$ sont des garçons.<br>Ils représentent $\ldots\ldots$ $\%$ du groupe.
+Dans un groupe de $40$ enfants, $16$ sont des garçons.<br>Ils représentent <span class="pointilles"></span> $\%$ du groupe.
 ---CORR---
 La proportion est $\dfrac{16}{40}$.<br>$\dfrac{16}{40}=\dfrac{16{\color{#C5607A}\boldsymbol{\div 0}}}{40{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{40}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{40~\%}}$.
 {{< /livret-exo >}}

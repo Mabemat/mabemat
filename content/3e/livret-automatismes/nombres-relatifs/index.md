@@ -27,39 +27,39 @@ $$-19 - 6 = -19 + (-6) = -25 \qquad 19 - (-17) = 19 + 17 = 36$$
 ---INTRO---
 Compléter avec le signe < ou >.
 ---Q---
-$1{,}62 \quad \ldots\ldots \quad1{,}9$
+$1{,}62$<span class="pointilles"></span>$1{,}9$
 ---CORR---
 $1{,}62 {\color{#EB7F73}\boldsymbol{\lt}} 1{,}9$<br><span class="corr-mental">Mentalement : les deux sont positifs, on compare directement.</span>
 ---Q---
-$-2{,}11 \quad \ldots\ldots \quad-2{,}44$
+$-2{,}11$<span class="pointilles"></span>$-2{,}44$
 ---CORR---
 $-2{,}11 {\color{#EB7F73}\boldsymbol{\gt}} -2{,}44$<br><span class="corr-mental">Mentalement : les deux sont négatifs, le plus grand est celui dont la distance à zéro est la plus petite : $2{,}11 \lt 2{,}44$.</span>
 ---Q---
-$-5{,}1 \quad \ldots\ldots \quad-5$
+$-5{,}1$<span class="pointilles"></span>$-5$
 ---CORR---
 $-5{,}1 {\color{#EB7F73}\boldsymbol{\lt}} -5$<br><span class="corr-mental">Mentalement : les deux sont négatifs, le plus grand est celui dont la distance à zéro est la plus petite : $5 \lt 5{,}1$.</span>
 ---Q---
-$-0{,}2 \quad \ldots\ldots \quad-0{,}8$
+$-0{,}2$<span class="pointilles"></span>$-0{,}8$
 ---CORR---
 $-0{,}2 {\color{#EB7F73}\boldsymbol{\gt}} -0{,}8$<br><span class="corr-mental">Mentalement : les deux sont négatifs, le plus grand est celui dont la distance à zéro est la plus petite : $0{,}2 \lt 0{,}8$.</span>
 ---Q---
-$0{,}7 \quad \ldots\ldots \quad0{,}5$
+$0{,}7$<span class="pointilles"></span>$0{,}5$
 ---CORR---
 $0{,}7 {\color{#EB7F73}\boldsymbol{\gt}} 0{,}5$<br><span class="corr-mental">Mentalement : les deux sont positifs, on compare directement.</span>
 ---Q---
-$-9{,}88 \quad \ldots\ldots \quad9{,}77$
+$-9{,}88$<span class="pointilles"></span>$9{,}77$
 ---CORR---
 $-9{,}88 {\color{#EB7F73}\boldsymbol{\lt}} 9{,}77$<br><span class="corr-mental">Mentalement : un nombre négatif est toujours plus petit qu'un nombre positif.</span>
 ---Q---
-$1{,}77 \quad \ldots\ldots \quad1{,}22$
+$1{,}77$<span class="pointilles"></span>$1{,}22$
 ---CORR---
 $1{,}77 {\color{#EB7F73}\boldsymbol{\gt}} 1{,}22$<br><span class="corr-mental">Mentalement : les deux sont positifs, on compare directement.</span>
 ---Q---
-$1{,}8 \quad \ldots\ldots \quad-1{,}4$
+$1{,}8$<span class="pointilles"></span>$-1{,}4$
 ---CORR---
 $1{,}8 {\color{#EB7F73}\boldsymbol{\gt}} -1{,}4$<br><span class="corr-mental">Mentalement : un nombre positif est toujours plus grand qu'un nombre négatif.</span>
 ---Q---
-$5{,}12 \quad \ldots\ldots \quad-5{,}19$
+$5{,}12$<span class="pointilles"></span>$-5{,}19$
 ---CORR---
 $5{,}12 {\color{#EB7F73}\boldsymbol{\gt}} -5{,}19$<br><span class="corr-mental">Mentalement : un nombre positif est toujours plus grand qu'un nombre négatif.</span>
 {{< /livret-exo >}}
@@ -135,27 +135,27 @@ $(-11{,}03) + (-13{,}1) = {\color{#EB7F73}\boldsymbol{-24{,}13}}$<br><span class
 ---INTRO---
 Transformer chaque soustraction en une addition puis calculer.
 ---Q---
-$-19 - 6=$ $\ldots\ldots\ldots + \ldots\ldots\ldots = \ldots\ldots\ldots$
+$-19 - 6=$ <span class="pointilles"></span>$+$<span class="pointilles"></span>$=$<span class="pointilles"></span>
 ---CORR---
 $-19 - 6 = -19 + (-6) = {\color{#EB7F73}\boldsymbol{-25}}$<br><span class="corr-mental">Mentalement : soustraire $6$ revient à ajouter son opposé $-6$.</span>
 ---Q---
-$19 - (-17)=$ $\ldots\ldots\ldots + \ldots\ldots\ldots = \ldots\ldots\ldots$
+$19 - (-17)=$ <span class="pointilles"></span>$+$<span class="pointilles"></span>$=$<span class="pointilles"></span>
 ---CORR---
 $19 - (-17) = 19 + 17 = {\color{#EB7F73}\boldsymbol{36}}$<br><span class="corr-mental">Mentalement : soustraire $-17$ revient à ajouter son opposé $17$.</span>
 ---Q---
-$-6 - (-14)=$ $\ldots\ldots\ldots + \ldots\ldots\ldots = \ldots\ldots\ldots$
+$-6 - (-14)=$ <span class="pointilles"></span>$+$<span class="pointilles"></span>$=$<span class="pointilles"></span>
 ---CORR---
 $-6 - (-14) = -6 + 14 = {\color{#EB7F73}\boldsymbol{8}}$<br><span class="corr-mental">Mentalement : soustraire $-14$ revient à ajouter son opposé $14$.</span>
 ---Q---
-$12 - (-19)=$ $\ldots\ldots\ldots + \ldots\ldots\ldots = \ldots\ldots\ldots$
+$12 - (-19)=$ <span class="pointilles"></span>$+$<span class="pointilles"></span>$=$<span class="pointilles"></span>
 ---CORR---
 $12 - (-19) = 12 + 19 = {\color{#EB7F73}\boldsymbol{31}}$<br><span class="corr-mental">Mentalement : soustraire $-19$ revient à ajouter son opposé $19$.</span>
 ---Q---
-$-13 - 6=$ $\ldots\ldots\ldots + \ldots\ldots\ldots = \ldots\ldots\ldots$
+$-13 - 6=$ <span class="pointilles"></span>$+$<span class="pointilles"></span>$=$<span class="pointilles"></span>
 ---CORR---
 $-13 - 6 = -13 + (-6) = {\color{#EB7F73}\boldsymbol{-19}}$<br><span class="corr-mental">Mentalement : soustraire $6$ revient à ajouter son opposé $-6$.</span>
 ---Q---
-$-1 - (-16)=$ $\ldots\ldots\ldots + \ldots\ldots\ldots = \ldots\ldots\ldots$
+$-1 - (-16)=$ <span class="pointilles"></span>$+$<span class="pointilles"></span>$=$<span class="pointilles"></span>
 ---CORR---
 $-1 - (-16) = -1 + 16 = {\color{#EB7F73}\boldsymbol{15}}$<br><span class="corr-mental">Mentalement : soustraire $-16$ revient à ajouter son opposé $16$.</span>
 {{< /livret-exo >}}
@@ -193,27 +193,27 @@ $-12 - 8 = -12 + (-8) = {\color{#EB7F73}\boldsymbol{-20}}$<br><span class="corr-
 ---INTRO---
 Compléter :
 ---Q---
-$ \ldots\ldots\ldots+8 = 16 $
+<span class="pointilles"></span>$+8 = 16$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{8}} +8 = 16$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, augmenté de $8$, donne $16$ : c'est $16 - 8$.</span>
 ---Q---
-$ \ldots\ldots\ldots-7 = 1 $
+<span class="pointilles"></span>$-7 = 1$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{8}} -7 = 1$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, diminué de $7$, donne $1$ : c'est $1 + 7$.</span>
 ---Q---
-$ \ldots\ldots\ldots+8 = 0 $
+<span class="pointilles"></span>$+8 = 0$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{-8}} +8 = 0$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, augmenté de $8$, donne $0$ : c'est $0 - 8$.</span>
 ---Q---
-$ \ldots\ldots\ldots+4 = 8 $
+<span class="pointilles"></span>$+4 = 8$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{4}} +4 = 8$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, augmenté de $4$, donne $8$ : c'est $8 - 4$.</span>
 ---Q---
-$ -3+\ldots\ldots\ldots = -5 $
+$-3+$<span class="pointilles"></span>$= -5$
 ---CORR---
 $-3 + {\color{#EB7F73}\boldsymbol{-2}} = -5$<br><span class="corr-mental">Mentalement : on cherche l'écart entre $-3$ et $-5$ : $-5 - -3 = -2$</span>
 ---Q---
-$ \ldots\ldots\ldots-6 = 3 $
+<span class="pointilles"></span>$-6 = 3$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{9}} -6 = 3$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, diminué de $6$, donne $3$ : c'est $3 + 6$.</span>
 {{< /livret-exo >}}
@@ -222,27 +222,27 @@ ${\color{#EB7F73}\boldsymbol{9}} -6 = 3$<br><span class="corr-mental">Mentalemen
 ---INTRO---
 Compléter :
 ---Q---
-$ \ldots\ldots\ldots-0{,}6 = -10{,}6 $
+<span class="pointilles"></span>$-0{,}6 = -10{,}6$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{-10}} -0{,}6 = -10{,}6$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, diminué de $0{,}6$, donne $-10{,}6$ : c'est $-10{,}6 + 0{,}6$.</span>
 ---Q---
-$ \ldots\ldots\ldots-7{,}2 = -12{,}1 $
+<span class="pointilles"></span>$-7{,}2 = -12{,}1$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{-4{,}8999999999999995}} -7{,}2 = -12{,}1$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, diminué de $7{,}2$, donne $-12{,}1$ : c'est $-12{,}1 + 7{,}2$.</span>
 ---Q---
-$ \ldots\ldots\ldots+4{,}4 = -5{,}3 $
+<span class="pointilles"></span>$+4{,}4 = -5{,}3$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{-9{,}7}} +4{,}4 = -5{,}3$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, augmenté de $4{,}4$, donne $-5{,}3$ : c'est $-5{,}3 - 4{,}4$.</span>
 ---Q---
-$ 8{,}6+\ldots\ldots\ldots = 7{,}8 $
+$8{,}6+$<span class="pointilles"></span>$= 7{,}8$
 ---CORR---
 $8{,}6 + {\color{#EB7F73}\boldsymbol{-0{,}7999999999999998}} = 7{,}8$<br><span class="corr-mental">Mentalement : on cherche l'écart entre $8{,}6$ et $7{,}8$ : $7{,}8 - 8{,}6 = -0{,}7999999999999998$</span>
 ---Q---
-$ -3{,}9+\ldots\ldots\ldots = -13{,}2 $
+$-3{,}9+$<span class="pointilles"></span>$= -13{,}2$
 ---CORR---
 $-3{,}9 + {\color{#EB7F73}\boldsymbol{-9{,}299999999999999}} = -13{,}2$<br><span class="corr-mental">Mentalement : on cherche l'écart entre $-3{,}9$ et $-13{,}2$ : $-13{,}2 - -3{,}9 = -9{,}299999999999999$</span>
 ---Q---
-$ \ldots\ldots\ldots-3{,}6 = -12{,}1 $
+<span class="pointilles"></span>$-3{,}6 = -12{,}1$
 ---CORR---
 ${\color{#EB7F73}\boldsymbol{-8{,}5}} -3{,}6 = -12{,}1$<br><span class="corr-mental">Mentalement : on cherche le nombre qui, diminué de $3{,}6$, donne $-12{,}1$ : c'est $-12{,}1 + 3{,}6$.</span>
 {{< /livret-exo >}}
