@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e764168d6c029a7358adf4f0b99538706b7e01444a81f3db64b17e0c0e8299d.css" integrity="sha256-bnZBaNbAKac1it9PC5lThwa34BREqB89tksX4MDoKZ0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.afaca9874f316b57c850058faa267df100f556f72064f86eb81e0443a13ab750.css" integrity="sha256-r6yph08xa1fIUAWPqiZ98QD1VvcgZPhuuB4EQ6E6t1A=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -185,12 +185,18 @@ pre[style*="background-color"] {
 <aside class="livret-rappel">
   <div class="livret-rappel-head">
     <span class="livret-rappel-tag">Rappel</span>
-    <span class="livret-rappel-titre">Durées</span>
+    <span class="livret-rappel-titre">Unités de temps et conversions de base</span>
   </div>
   <div class="livret-rappel-body">
-    $$1~\text{min} = 60~\text{s} \qquad 1~\text{h} = 60~\text{min} = 3\,600~\text{s} \qquad 1~\text{j} = 24~\text{h} \qquad 1~\text{semaine} = 7~\text{j}$$<p><strong>Attention :</strong> les durées ne sont pas décimales. $1{,}5~\text{h}$ vaut $1~\text{h}~30~\text{min}$, pas $1~\text{h}~50~\text{min}$.</p>
-<p><strong>Convertir une durée en unités plus grandes</strong> se fait par divisions euclidiennes successives : on divise par $60$ pour passer des secondes aux minutes, le reste donne les secondes.</p>
-$$6\,987 = 60 \times 116 + 27 \quad\text{et}\quad 116 = 60 \times 1 + 56 \qquad \text{donc } 6\,987~\text{s} = 1~\text{h}~56~\text{min}~27~\text{s}$$
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Unités de temps usuelles :</strong></p>
+<ul><li>1 minute = 60 secondes</li><li>1 heure = 60 minutes</li><li>1 jour = 24 heures</li><li>1 semaine = 7 jours</li></ul>
+<p><strong>Conversions simples :</strong></p>
+<ul><li>Pour convertir en unité plus petite : multiplier</li><li>Pour convertir en unité plus grande : division euclidienne</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p><em>Vers une unité plus petite :</em> $$\begin{aligned} 3 \text{ h} &= 3 \times 60 = 180 \text{ min}\\ 5 \text{ min} &= 5 \times 60 = 300 \text{ s} \end{aligned}$$</p>
+<p><em>Vers une unité plus grande :</em> Convertir 150 h en jours et heures.</p>
+<p>$150 = 6 \times 24 +6$</p>
+<p>Donc : $150 \text{ h} = 6 \text{ jours } + 6 \text{ h}$</p></div></div>
+
   </div>
 </aside>
 
@@ -669,6 +675,23 @@ $$6\,987 = 60 \times 116 + 27 \quad\text{et}\quad 116 = 60 \times 1 + 56 \qquad 
   
 
 </article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Conversions plus complexes</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Principe :</strong> Pour convertir vers plusieurs unités, on procède par étapes successives.</p>
+<p><strong>Exemple détaillé :</strong></p>
+<p><em>Convertir 7 890 s en h, min, s :</em></p>
+<p>$$\begin{aligned} 7890 &= 131 \times 60 + 30\\ &=131\text{ min} + 30 \text{ s} \end{aligned}$$</p></div><div><p>Et on a : $$\begin{aligned} 131 &= 2 \times 60 + 11\\ &= 2 \text{ h} + 11 \text{ min} \end{aligned}$$</p>
+<p>Résultat : $7890 \text{ s} = 2 \text{ h } 11 \text{ min } 30 \text{ s}$</p></div></div>
+
+  </div>
+</aside>
 
 
 
@@ -1508,6 +1531,23 @@ $$6\,987 = 60 \times 116 + 27 \quad\text{et}\quad 116 = 60 \times 1 + 56 \qquad 
 
 
 
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Conversions vers le format décimal</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Du format minutes vers heures décimales :</strong> $$\text{Heures} = \frac{\text{Minutes}}{60}$$</p>
+<p><strong>Exemple :</strong></p>
+<p><em>90 minutes en heures :</em> $$90 \div 60 = 1{,}5 \text{ h}$$</p></div><div><p><strong>Du format h min vers heures décimales :</strong> $$\text{Heures} = h + \frac{\text{min}}{60}$$</p>
+<p><strong>Exemple :</strong></p>
+<p><em>2 h 15 min en heures :</em> $$2 + \frac{15}{60} = 2 + 0{,}25 = 2{,}25 \text{ h}$$</p></div></div>
+
+  </div>
+</aside>
+
+
+
 
 
 
@@ -1919,7 +1959,7 @@ $$6\,987 = 60 \times 116 + 27 \quad\text{et}\quad 116 = 60 \times 1 + 56 \qquad 
   </script>
   <script>
      
-    const BUILD_TS = '1788451463';
+    const BUILD_TS = '1788460715';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

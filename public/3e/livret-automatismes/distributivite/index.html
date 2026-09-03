@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e764168d6c029a7358adf4f0b99538706b7e01444a81f3db64b17e0c0e8299d.css" integrity="sha256-bnZBaNbAKac1it9PC5lThwa34BREqB89tksX4MDoKZ0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.afaca9874f316b57c850058faa267df100f556f72064f86eb81e0443a13ab750.css" integrity="sha256-r6yph08xa1fIUAWPqiZ98QD1VvcgZPhuuB4EQ6E6t1A=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -185,15 +185,12 @@ pre[style*="background-color"] {
 <aside class="livret-rappel">
   <div class="livret-rappel-head">
     <span class="livret-rappel-tag">Rappel</span>
-    <span class="livret-rappel-titre">Développer et factoriser</span>
+    <span class="livret-rappel-titre">Développer</span>
   </div>
   <div class="livret-rappel-body">
-    <p><strong>Développer</strong>, c&rsquo;est transformer un produit en somme. On utilise la distributivité :</p>
-$$k(a+b) = k \times a + k \times b \qquad k(a-b) = k \times a - k \times b$$<p><em>Exemple.</em> $3(2x+5) = 3 \times 2x + 3 \times 5 = 6x + 15$.</p>
-<p><strong>Factoriser</strong>, c&rsquo;est l&rsquo;opération inverse : transformer une somme en produit, en mettant en évidence un facteur commun.</p>
-$$k \times a + k \times b = k(a+b)$$<p><em>Exemple.</em> $12x + 18 = 6 \times 2x + 6 \times 3 = 6(2x+3)$.</p>
-<p><strong>Supprimer une parenthèse précédée d&rsquo;un signe moins</strong> change tous les signes qu&rsquo;elle contient :</p>
-$$-(3x-7) = -3x+7$$
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Développer une expression, c'est transformer un produit en somme.</p>
+<p><strong>Distributivité simple :</strong> $$a(b + c) = ab + ac$$ $$a(b - c) = ab - ac$$</p></div><div><p><strong>Exemples :</strong> $$\begin{aligned} 3(x + 5) &= 3 \times x + 3 \times 5\\ &= 3x + 15 \end{aligned}$$ $$\begin{aligned} -2(3x - 4) &= -2 \times 3x - 2 \times (-4)\\ &= -6x + 8 \end{aligned}$$</p></div></div>
+
   </div>
 </aside>
 
@@ -736,6 +733,20 @@ $$-(3x-7) = -3x+7$$
   
 
 </article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Suppression de parenthèses</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Règles de suppression des parenthèses :</strong></p>
+<p><strong>Parenthèses précédées du signe + :</strong> $$+(a + b) = a + b$$ $$+(a - b) = a - b$$ On supprime les parenthèses sans changer les signes. <strong>Exemple :</strong> $$\begin{aligned} 5 + (3x - 2) &= 5 + 3x - 2\\ &= 3x + 3 \end{aligned}$$</p></div><div><p><strong>Parenthèses précédées du signe - :</strong> $$-(a + b) = -a - b$$ $$-(a - b) = -a + b$$ On supprime les parenthèses en changeant tous les signes à l'intérieur. <strong>Exemple :</strong> $$\begin{aligned} 7 - (2x + 4) &= 7 - 2x - 4\\ &= -2x + 3 \end{aligned}$$</p></div></div>
+
+  </div>
+</aside>
 
 
 
@@ -1366,6 +1377,24 @@ $$-(3x-7) = -3x+7$$
 
 
 
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Factoriser</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Factoriser une expression, c'est transformer une somme en produit.</p>
+<p><strong>Principe :</strong> On cherche le facteur commun aux différents termes. $$ab + ac = a(b + c)$$</p>
+<p><strong>Exemple :</strong></p>
+<p>$$\begin{aligned} x^2 + 5x &= x \times x + x \times 5\\ &= x(x + 5) \end{aligned}$$</p></div><div><p><strong>Exemple :</strong></p>
+<p>$$\begin{aligned} 6a^2 - 9a &= 3a \times 2a - 3a \times 3\\ &= 3a(2a - 3) \end{aligned}$$</p>
+<p><strong>Attention :</strong> $-x^2 + x = x(-x + 1) = -x(x - 1)$</p></div></div>
+
+  </div>
+</aside>
+
+
+
 
 
 
@@ -1906,6 +1935,24 @@ $$-(3x-7) = -3x+7$$
 
 
 
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Factoriser avec facteur commun complexe</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p>Parfois, le facteur commun est une expression complète entre parenthèses.</p>
+<p><strong>Exemple :</strong></p>
+<p><em>Factoriser $x(2x + 3) + 5(2x + 3)$ :</em></p>
+<p>Le facteur commun est ${\color{#CA6527}(2x + 3)}$.</p>
+<p>$$\begin{aligned} &x{\color{#CA6527}(2x + 3)} + 5{\color{#CA6527}(2x + 3)}\\ &= {\color{#CA6527}(2x + 3)}(x + 5) \end{aligned}$$</p></div><div><p><strong>Exemple :</strong></p>
+<p>Factoriser $(3x-1)(x+4) - (2x+7)(x+4)$ : $$\begin{aligned} &(3x-1){\color{#CA6527}(x+4)} - (2x+7){\color{#CA6527}(x+4)}\\ &= {\color{#CA6527}(x+4)}[(3x-1) - (2x+7)]\\ &= {\color{#CA6527}(x+4)}(3x-1-2x-7)\\ &= {\color{#CA6527}(x+4)}(x-8) \end{aligned}$$</p></div></div>
+
+  </div>
+</aside>
+
+
+
 
 
 
@@ -2375,7 +2422,7 @@ $$-(3x-7) = -3x+7$$
   </script>
   <script>
      
-    const BUILD_TS = '1788451463';
+    const BUILD_TS = '1788460717';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

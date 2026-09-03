@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.6e764168d6c029a7358adf4f0b99538706b7e01444a81f3db64b17e0c0e8299d.css" integrity="sha256-bnZBaNbAKac1it9PC5lThwa34BREqB89tksX4MDoKZ0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.afaca9874f316b57c850058faa267df100f556f72064f86eb81e0443a13ab750.css" integrity="sha256-r6yph08xa1fIUAWPqiZ98QD1VvcgZPhuuB4EQ6E6t1A=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -185,14 +185,15 @@ pre[style*="background-color"] {
 <aside class="livret-rappel">
   <div class="livret-rappel-head">
     <span class="livret-rappel-tag">Rappel</span>
-    <span class="livret-rappel-titre">Puissances</span>
+    <span class="livret-rappel-titre">Définition des puissances</span>
   </div>
   <div class="livret-rappel-body">
-    <p>Pour $a \neq 0$ et $n$ entier positif :</p>
-$$a^n = \underbrace{a \times a \times \dots \times a}_{n \text{ facteurs}} \qquad a^{-n} = \dfrac{1}{a^n} \qquad a^0 = 1$$<p><strong>Attention aux parenthèses.</strong> $(-3)^2 = 9$ alors que $-3^2 = -9$ : sans parenthèses, la puissance ne porte que sur le nombre, pas sur le signe.</p>
-<p><strong>Signe.</strong> $(-a)^n$ est positif si $n$ est pair, négatif si $n$ est impair.</p>
-<p><strong>Règles de calcul.</strong></p>
-$$a^m \times a^n = a^{m+n} \qquad \dfrac{a^m}{a^n} = a^{m-n} \qquad (a^m)^n = a^{m \times n}$$$$a^n \times b^n = (a \times b)^n \qquad \dfrac{a^n}{b^n} = \left(\dfrac{a}{b}\right)^n$$<p><strong>Notation scientifique.</strong> $a \times 10^n$ avec $1 \leqslant |a| < 10$ et $n$ entier relatif.</p>
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Puissance d'exposant positif :</strong> Pour $a$ réel et $n$ entier positif : $$a^n = \underbrace{a \times a \times \ldots \times a}_{n \text{ facteurs}}$$</p>
+<p><strong>Exemple :</strong> $$3^4 = 3 \times 3 \times 3 \times 3 = 81$$</p>
+<p><strong>Puissance d'exposant négatif :</strong> Pour $a \neq 0$ et $n$ entier positif : $$a^{-n} = \frac{1}{a^n}$$</p>
+<p><strong>Exemple :</strong> $$2^{-3} = \frac{1}{2^3} = \frac{1}{8}$$</p></div><div><p><strong>Cas particuliers :</strong></p>
+<ul><li>$a^0 = 1$ (pour $a \neq 0$)</li><li>$a^1 = a$</li></ul>
+<p><strong>Attention aux parenthèses :</strong> $$(-3)^2 = (-3) \times (-3) = 9$$ $$-3^2 = -(3 \times 3) = -9$$</p></div></div>
 
   </div>
 </aside>
@@ -1151,6 +1152,24 @@ $$a^m \times a^n = a^{m+n} \qquad \dfrac{a^m}{a^n} = a^{m-n} \qquad (a^m)^n = a^
 
 
 
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Puissances de 10</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Puissances positives de 10 :</strong> $$10^n = \underbrace{10 \times 10 \times \ldots \times 10}_{n \text{ facteurs}}$$</p>
+<p>Le nombre $10^n$ s'écrit 1 suivi de $n$ zéros.</p>
+<p><strong>Exemple :</strong></p>
+<p>$$10^5 = 100\,000$$</p></div><div><p><strong>Puissances négatives de 10 :</strong> $$10^{-n} = \frac{1}{10^n}$$</p>
+<p>Le nombre $10^{-n}$ s'écrit 0, suivi de $(n-1)$ zéros puis du chiffre 1.</p>
+<p><strong>Exemple :</strong> $$10^{-4} = \frac{1}{10\,000} = 0{,}000\,1$$</p></div></div>
+
+  </div>
+</aside>
+
+
+
 
 
 
@@ -1740,6 +1759,19 @@ $$a^m \times a^n = a^{m+n} \qquad \dfrac{a^m}{a^n} = a^{m-n} \qquad (a^m)^n = a^
   
 
 </article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Règles de calcul sur les puissances</span>
+  </div>
+  <div class="livret-rappel-body">
+    <ul><li>$a^m \times a^n = a^{m+n}$</li><li>$\dfrac{a^m}{a^n} = a^{m-n} \quad (a \neq 0)$</li><li>$(a^m)^n = a^{m \times n}$</li><li>$a^n \times b^n = (a \times b)^n$</li><li>$\dfrac{a^n}{b^n} = \left(\dfrac{a}{b}\right)^n \quad (b \neq 0)$</li></ul>
+
+  </div>
+</aside>
 
 
 
@@ -3757,6 +3789,23 @@ $$a^m \times a^n = a^{m+n} \qquad \dfrac{a^m}{a^n} = a^{m-n} \qquad (a^m)^n = a^
 
 
 
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Notation scientifique</span>
+  </div>
+  <div class="livret-rappel-body">
+    <div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Un nombre décimal est écrit en notation scientifique s'il est de la forme : $$a \times 10^n$$ où $1 \leq a < 10$ et $n$ est un entier relatif.</p>
+<p><strong>Méthode :</strong></p>
+<ul><li>Placer la virgule après le premier chiffre significatif</li><li>Compter le nombre de rangs de déplacement</li><li>Si on va vers la gauche : exposant positif</li><li>Si on va vers la droite : exposant négatif</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p>$$1250 = 1{,}25 \times 10^3$$ $$0{,}0034 = 3{,}4 \times 10^{-3}$$</p>
+<p><strong>Correction de notation :</strong> $$30 \times 10^4 = 3 \times 10^1 \times 10^4 = 3 \times 10^5$$ $$0{,}5 \times 10^{-2} = 5 \times 10^{-1} \times 10^{-2} = 5 \times 10^{-3}$$</p></div></div>
+
+  </div>
+</aside>
+
+
+
 
 
 
@@ -4644,7 +4693,7 @@ $$a^m \times a^n = a^{m+n} \qquad \dfrac{a^m}{a^n} = a^{m-n} \qquad (a^m)^n = a^
   </script>
   <script>
      
-    const BUILD_TS = '1788451463';
+    const BUILD_TS = '1788460717';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;
