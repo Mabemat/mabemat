@@ -4,8 +4,8 @@ description: "Calcul mental chronométré · 6ème"
 layout: "courses"
 courses:
   - num: 1
-    date: "2026-09-07"
-    has_correction: false
+    date: "2026-09-03"
+    has_correction: true
   - num: 2
     date: "2026-09-14"
     has_correction: false
