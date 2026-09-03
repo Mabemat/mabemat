@@ -11,17 +11,14 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=60b02&id=CM2G3C-1&n=8&d=10&s=2&cd=1&uuid=4e52e&id=5G10-5&n=8&d=10&s=4&cd=1&uuid=588fe&id=5G40-2&n=8&d=10&cd=1&cols=2&uuid=dc8c9&id=6G6D&n=14&d=10&s=1-2-3-4-5-6-7-8-9-10-11-12-13-14&s2=false&s3=true&s4=1&cd=1&v=eleve&es=1111001&title=Polygones"
 ---
 
-{{< livret-rappel titre="Polygones et angles" >}}
-**Quadrilatères particuliers.** Le **parallélogramme** a ses côtés opposés parallèles. Il suffit, pour en reconnaître un, que l'une de ces conditions soit vérifiée :
-
-- les diagonales se coupent en leur milieu ;
-- les côtés opposés sont deux à deux de même longueur ;
-- deux côtés opposés sont à la fois parallèles et de même longueur ;
-- les angles opposés sont deux à deux de même mesure.
-
-Le **losange** est un parallélogramme à quatre côtés égaux, le **rectangle** un parallélogramme à quatre angles droits, le **carré** les deux à la fois.
-
-**Somme des angles d'un triangle.** Elle vaut toujours $180^\circ$. Dans un triangle **isocèle**, les deux angles à la base sont égaux ; dans un triangle **équilatéral**, les trois angles valent $60^\circ$.
+{{< livret-rappel titre="Propriétés des quadrilatères particuliers" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Rectangle :</strong></p>
+<ul><li>4 angles droits</li><li>Côtés opposés de même longueur</li><li>Diagonales de même longueur et sécantes en leur milieu</li></ul>
+<p><strong>Carré :</strong></p>
+<ul><li>4 côtés de même longueur</li><li>4 angles droits</li><li>Diagonales perpendiculaires, de même longueur et sécantes en leur milieu</li></ul></div><div><p><strong>Losange :</strong></p>
+<ul><li>4 côtés de même longueur</li><li>Côtés opposés parallèles</li><li>Diagonales perpendiculaires et sécantes en leur milieu</li></ul>
+<p><strong>Parallélogramme :</strong></p>
+<ul><li>Côtés opposés parallèles et de même longueur</li><li>Angles opposés égaux</li><li>Diagonales sécantes en leur milieu</li></ul></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}
@@ -98,6 +95,13 @@ Quelle est la nature d'un quadrilatère ayant 3 angles droits ?
 Si trois angles sont droits, le quatrième l'est aussi car la somme des angles d'un quadrilatère vaut $360^\circ$.<br>C'est un ${\color{#EB7F73}\boldsymbol{rectangle}}$.
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Le parallélogramme" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Un parallélogramme est un quadrilatère dont les côtés opposés sont parallèles.</p>
+<p><strong>Propriétés :</strong></p>
+<ul><li>Côtés opposés parallèles et de même longueur</li><li>Angles opposés égaux</li><li>Angles consécutifs supplémentaires</li><li>Diagonales se coupent en leur milieu</li></ul></div><div><p><strong>Critères de reconnaissance :</strong> Un quadrilatère est un parallélogramme si :</p>
+<ul><li>Ses côtés opposés sont parallèles</li><li>Ses côtés opposés sont de même longueur</li><li>Ses diagonales se coupent en leur milieu</li><li>Il a deux côtés opposés parallèles et de même longueur</li></ul></div></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="3" cols="2" >}}
 ---INTRO---
 Pour chacune des figures suivantes, tracées à main levée, préciser s'il s'agit d'un parallélogramme.
@@ -134,6 +138,12 @@ Ce sont des côtés **consécutifs** qui sont codés égaux deux à deux, pas de
 ---CORR---
 Les côtés opposés sont codés deux à deux de la même longueur.<br>${\color{#EB7F73}\boldsymbol{C'est un parallélogramme.}}$
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Somme des angles d'un triangle" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Propriété fondamentale :</strong> Dans tout triangle, la somme des mesures des trois angles est égale à 180°.</p>
+<p><strong>En pratique :</strong> Si on connaît deux angles d'un triangle, on peut calculer le troisième : $$\widehat{C} = 180^\circ - \widehat{A} - \widehat{B}$$</p></div><div><p><strong>Cas particuliers :</strong></p>
+<ul><li>Triangle équilatéral : chaque angle vaut 60°</li><li>Triangle rectangle : un angle vaut 90°</li><li>Triangle isocèle : les angles à la base sont égaux.</li></ul></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="4" cols="2" >}}
 ---INTRO---

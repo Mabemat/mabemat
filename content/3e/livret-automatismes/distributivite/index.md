@@ -11,22 +11,9 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=71dd8&id=4L10&n=4&d=10&s=1&s2=2&s3=8&s4=false&cd=1&cols=2&uuid=b87a5&id=4L10b&n=4&d=10&s=1-2&s2=2&s3=3&s4=3&cd=1&cols=2&uuid=71dd8&id=4L10&n=4&d=10&s=3&s2=2&s3=9&s4=false&cd=1&uuid=603a8&id=3L10&cols=2&uuid=815eb&id=3L10-1&n=6&d=10&s=false&cd=1&cols=2&uuid=c88ba&id=3L10-2&n=3&d=10&s=5-6-7-8-9-10&cd=1&uuid=dd1c9&id=4L11&n=4&d=10&s=1&s3=false&cd=1&cols=2&uuid=dd1c9&id=4L11&n=4&d=10&s=2&s3=false&cd=1&cols=2&uuid=dd1c9&id=4L11&n=4&d=10&s=3&s3=false&cd=1&cols=2&uuid=3d2f9&id=2N41-1&n=6&d=10&s=1&s2=3&cd=1&cols=3&uuid=3d2f9&id=2N41-1&n=4&d=10&s=2&s2=3&cd=1&cols=2&v=eleve&es=1111001&title=Distributivit%C3%A9+Simple"
 ---
 
-{{< livret-rappel titre="Développer et factoriser" >}}
-**Développer**, c'est transformer un produit en somme. On utilise la distributivité :
-
-$$k(a+b) = k \times a + k \times b \qquad k(a-b) = k \times a - k \times b$$
-
-*Exemple.* $3(2x+5) = 3 \times 2x + 3 \times 5 = 6x + 15$.
-
-**Factoriser**, c'est l'opération inverse : transformer une somme en produit, en mettant en évidence un facteur commun.
-
-$$k \times a + k \times b = k(a+b)$$
-
-*Exemple.* $12x + 18 = 6 \times 2x + 6 \times 3 = 6(2x+3)$.
-
-**Supprimer une parenthèse précédée d'un signe moins** change tous les signes qu'elle contient :
-
-$$-(3x-7) = -3x+7$$
+{{< livret-rappel titre="Développer" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Développer une expression, c'est transformer un produit en somme.</p>
+<p><strong>Distributivité simple :</strong> $$a(b + c) = ab + ac$$ $$a(b - c) = ab - ac$$</p></div><div><p><strong>Exemples :</strong> $$\begin{aligned} 3(x + 5) &= 3 \times x + 3 \times 5\\ &= 3x + 15 \end{aligned}$$ $$\begin{aligned} -2(3x - 4) &= -2 \times 3x - 2 \times (-4)\\ &= -6x + 8 \end{aligned}$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}
@@ -91,6 +78,11 @@ $D=8t(-t-5)$
 ---CORR---
 $$\begin{aligned}D &= 8t(-t-5) \\  &= {\color{#C5607A}\boldsymbol{8t}}\times (-t) + {\color{#C5607A}\boldsymbol{8t}}\times (-5) \\  &= {\color{#EB7F73}\boldsymbol{-8t^2-40t}}\end{aligned}$$
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Suppression de parenthèses" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Règles de suppression des parenthèses :</strong></p>
+<p><strong>Parenthèses précédées du signe + :</strong> $$+(a + b) = a + b$$ $$+(a - b) = a - b$$ On supprime les parenthèses sans changer les signes. <strong>Exemple :</strong> $$\begin{aligned} 5 + (3x - 2) &= 5 + 3x - 2\\ &= 3x + 3 \end{aligned}$$</p></div><div><p><strong>Parenthèses précédées du signe - :</strong> $$-(a + b) = -a - b$$ $$-(a - b) = -a + b$$ On supprime les parenthèses en changeant tous les signes à l'intérieur. <strong>Exemple :</strong> $$\begin{aligned} 7 - (2x + 4) &= 7 - 2x - 4\\ &= -2x + 3 \end{aligned}$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="4" cols="2" >}}
 ---INTRO---
@@ -167,6 +159,15 @@ $C= (-6x^2-9x+6) - (-11x^2-7x-6)$
 $$\begin{aligned}C &= (-6x^2-9x+6) - (-11x^2-7x-6) \\  &= -6x^2-9x+6+11x^2+7x+6 \\  &= {\color{#EB7F73}\boldsymbol{5x^2-2x+12}}\end{aligned}$$
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Factoriser" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Factoriser une expression, c'est transformer une somme en produit.</p>
+<p><strong>Principe :</strong> On cherche le facteur commun aux différents termes. $$ab + ac = a(b + c)$$</p>
+<p><strong>Exemple :</strong></p>
+<p>$$\begin{aligned} x^2 + 5x &= x \times x + x \times 5\\ &= x(x + 5) \end{aligned}$$</p></div><div><p><strong>Exemple :</strong></p>
+<p>$$\begin{aligned} 6a^2 - 9a &= 3a \times 2a - 3a \times 3\\ &= 3a(2a - 3) \end{aligned}$$</p>
+<p><strong>Attention :</strong> $-x^2 + x = x(-x + 1) = -x(x - 1)$</p></div></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="7" cols="2" >}}
 ---INTRO---
 Factoriser les expressions suivantes.
@@ -229,6 +230,15 @@ $D=-5k^2+7k$
 ---CORR---
 $$\begin{aligned}D &= -5k^2+7k \\  &= {\color{#C5607A}\boldsymbol{-k}}\times 5k + {\color{#C5607A}\boldsymbol{-k}}\times (-7) \\  &= {\color{#EB7F73}\boldsymbol{-k(5k-7)}}\end{aligned}$$
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Factoriser avec facteur commun complexe" >}}
+<div class="rappel-cols rappel-cols-2"><div><p>Parfois, le facteur commun est une expression complète entre parenthèses.</p>
+<p><strong>Exemple :</strong></p>
+<p><em>Factoriser $x(2x + 3) + 5(2x + 3)$ :</em></p>
+<p>Le facteur commun est ${\color{#CA6527}(2x + 3)}$.</p>
+<p>$$\begin{aligned} &x{\color{#CA6527}(2x + 3)} + 5{\color{#CA6527}(2x + 3)}\\ &= {\color{#CA6527}(2x + 3)}(x + 5) \end{aligned}$$</p></div><div><p><strong>Exemple :</strong></p>
+<p>Factoriser $(3x-1)(x+4) - (2x+7)(x+4)$ : $$\begin{aligned} &(3x-1){\color{#CA6527}(x+4)} - (2x+7){\color{#CA6527}(x+4)}\\ &= {\color{#CA6527}(x+4)}[(3x-1) - (2x+7)]\\ &= {\color{#CA6527}(x+4)}(3x-1-2x-7)\\ &= {\color{#CA6527}(x+4)}(x-8) \end{aligned}$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="10" cols="3" >}}
 ---INTRO---

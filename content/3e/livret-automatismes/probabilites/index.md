@@ -11,18 +11,6 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=2b600&id=6P2A&n=1&d=10&s=3&cd=1&uuid=4703c&id=4S20-1&uuid=69e1f&id=6P2B-1&n=1&d=10&cd=1&uuid=850b0&id=5S21-1&n=1&d=10&cd=1&uuid=24db8&id=4S20-4&uuid=7ba64&id=4S20&n=1&d=10&cd=1&uuid=76231&id=3S22&v=eleve&es=1111001&title=Probabilit%C3%A9s"
 ---
 
-{{< livret-rappel titre="Probabilités" >}}
-Une **expérience aléatoire** est une expérience dont on ne peut pas prévoir le résultat. Ses résultats possibles sont les **issues**.
-
-Quand toutes les issues ont la même probabilité, il y a **équiprobabilité**, et alors
-
-$$P(\text{événement}) = \dfrac{\text{nombre d'issues favorables}}{\text{nombre total d'issues}}$$
-
-Une probabilité est toujours comprise entre $0$ et $1$. Un événement **impossible** a une probabilité de $0$, un événement **certain** une probabilité de $1$.
-
-**Événement contraire.** $P(\overline{A}) = 1 - P(A)$.
-{{< /livret-rappel >}}
-
 {{< livret-exo num="1" >}}
 ---INTRO---
 Placer la lettre correspondant à chaque évènement sur l'axe des probabilités ci-dessous.<br>A : Obtenir une carte rouge dans un jeu traditionnel de 52 cartes.<br>B : Obtenir 54 avec un dé à 100 faces.<br>C : Aux USA, trouver des pierres qui roulent et qui amassent de la mousse.<br>D : Que le prochain président de la République Française ait plus de 40 ans.<br> <img src="probabilites-01.svg" alt="figure 1" class="livret-fig">

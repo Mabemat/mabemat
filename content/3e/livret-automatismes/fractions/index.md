@@ -52,20 +52,12 @@ $\dfrac{3}{4}$ <span class="pointilles"></span>
 $\dfrac{3}{4}={\color{#EB7F73}\boldsymbol{0{,}75}}$<br><span class="corr-mental">Mentalement : $\dfrac{3}{4}=3\times\dfrac{1}{4}=3\times 0{,}25=0{,}75$.</span>
 {{< /livret-exo >}}
 
-{{< livret-rappel titre="Fractions égales, simplification" >}}
-Une fraction ne change pas si on multiplie ou divise son numérateur et son dénominateur par un même nombre non nul. **On utilise cette propriété pour simplifier les fractions.**
-
-*Exemple :*
-
-$$\frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3}$$
-
-Une fraction est irréductible quand on ne peut plus la simplifier.
-
-**Méthode alternative :** décomposer en facteurs pour identifier les diviseurs communs.
-
-*Exemple :*
-
-$$\frac{12}{18} = \frac{{\color{#C5607A}\mathbf{2}}\times 2 \times {\color{#C5607A}\mathbf{3}}}{{\color{#C5607A}\mathbf{2}} \times {\color{#C5607A}\mathbf{3}}\times 3} = \frac{2}{3}$$
+{{< livret-rappel titre="Fractions égales - Simplification de fraction" >}}
+<p>Une fraction ne change pas si on multiplie ou divise son numérateur et son dénominateur par un même nombre non nul. <strong>On utilise cette propriété pour simplifier les fractions.</strong></p>
+<p><em>Exemple :</em> $$\frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3}$$</p>
+<p>Une fraction est irréductible quand on ne peut plus la simplifier.</p>
+<p><strong>Méthode alternative :</strong> décomposer en facteurs pour identifier les diviseurs communs.</p>
+<p><em>Exemple :</em> $$\frac{12}{18} = \frac{{\color{#D36740}\mathbf{2}}\times 2 \times {\color{#D36740}\mathbf{3}}}{{\color{#D36740}\mathbf{2}} \times {\color{#D36740}\mathbf{3}}\times 3} = \frac{2}{3}$$</p>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="2" cols="3" >}}
@@ -135,23 +127,14 @@ $\dfrac{15}{18} = \dfrac{{\color{#C5607A}\boldsymbol{3}} \times 5}{{\color{#C560
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Comparaison de fractions" >}}
-**Fractions de même dénominateur :** la plus grande fraction a le plus grand numérateur.
-
-$$\frac{3}{7} \lt \frac{5}{7} \quad \text{car } 3 \lt 5$$
-
-**Fractions de même numérateur :** la plus grande fraction a le plus petit dénominateur.
-
-$$\frac{4}{3} \gt \frac{4}{7} \quad \text{car } 3 \lt 7$$
-
-**Fractions quelconques, première méthode : la comparaison à $1$.** Si une fraction est plus petite que $1$ et l'autre plus grande :
-
-$$\frac{3}{5} \lt 1 \lt \frac{7}{4} \quad \text{donc } \frac{3}{5} \lt \frac{7}{4}$$
-
-**Fractions quelconques, seconde méthode : la réduction au même dénominateur.**
-
-$$\frac{2}{3} = \frac{16}{24} \quad \text{et} \quad \frac{5}{8} = \frac{15}{24}$$
-
-$$\frac{16}{24} \gt \frac{15}{24} \quad \text{donc } \frac{2}{3} \gt \frac{5}{8}$$
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Fractions de même dénominateur :</strong> <br> La plus grande fraction a le plus grand numérateur.</p>
+<p><em>Exemple :</em> $$\frac{3}{7} < \frac{5}{7} \quad \text{car } 3 < 5$$</p>
+<p><strong>Fractions de même numérateur :</strong> <br> La plus grande fraction a le plus petit dénominateur.</p>
+<p><em>Exemple :</em> $$\frac{4}{3} > \frac{4}{7} \quad \text{car } 3 < 7$$</p></div><div><p><strong>Fractions quelconques :</strong></p>
+<ul><li><strong>Comparaison à 1 :</strong> Si une fraction $< 1$ et l'autre $> 1$
+$$\frac{3}{5} < 1 < \frac{7}{4} \quad \text{donc } \frac{3}{5} < \frac{7}{4}$$</li><li><strong>Réduction au même dénominateur :</strong> 
+$$\frac{2}{3} = \frac{16}{24} \text{ et } \frac{5}{8} = \frac{15}{24}$$
+$$\frac{16}{24} > \frac{15}{24} \text{ donc } \frac{2}{3} > \frac{5}{8}$$</li></ul></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="4" cols="4" >}}
@@ -266,19 +249,15 @@ $\dfrac{14}{33} \lt 1$ et $\dfrac{7}{3} \gt 1$.<br>On en déduit : $\dfrac{14}{3
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Opérations sur les fractions" >}}
-**Addition et soustraction.** On met les fractions au même dénominateur, puis on ajoute (ou soustrait) les numérateurs en gardant le dénominateur commun.
-
-$$\frac{3}{4} + \frac{5}{6} = \frac{3 \times 3}{4 \times 3} + \frac{5 \times 2}{6 \times 2} = \frac{9}{12} + \frac{10}{12} = \frac{19}{12}$$
-
-$$\frac{7}{8} - \frac{1}{6} = \frac{7 \times 3}{8 \times 3} - \frac{1 \times 4}{6 \times 4} = \frac{21}{24} - \frac{4}{24} = \frac{17}{24}$$
-
-**Multiplication.** On multiplie les numérateurs entre eux et les dénominateurs entre eux.
-
-$$\frac{2}{3} \times \frac{5}{7} = \frac{2 \times 5}{3 \times 7} = \frac{10}{21}$$
-
-**Division.** Diviser par une fraction, c'est multiplier par son inverse.
-
-$$\frac{4}{5} \div \frac{2}{3} = \frac{4}{5} \times \frac{3}{2} = \frac{12}{10} = \frac{6}{5}$$
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Addition et soustraction :</strong></p>
+<p>Pour additionner ou soustraire des fractions, on les met au même dénominateur. Puis on ajoute (ou soustrait) les numérateurs en gardant le dénominateur commun.</p>
+<p><em>Exemples :</em> $$\frac{3}{4} + \frac{5}{6} = \frac{3 \times 3 }{4 \times 3} + \frac{5\times 2}{6 \times 2} = \frac{9}{12} + \frac{10}{12} = \frac{19}{12}$$</p>
+<p>$$\frac{7}{8} - \frac{1}{6} = \frac{7 \times 3}{8 \times 3} - \frac{1 \times 4}{6 \times 4} = \frac{21}{24} - \frac{4}{24} = \frac{17}{24}$$</p></div><div><p><strong>Multiplication :</strong></p>
+<p>Pour multiplier des fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux.</p>
+<p><em>Exemple :</em> $$\frac{2}{3} \times \frac{5}{7} = \frac{2 \times 5}{3 \times 7} = \frac{10}{21}$$</p>
+<p><strong>Division :</strong></p>
+<p>Diviser par une fraction c'est multiplier par l'inverse.</p>
+<p><em>Exemple :</em> $$\frac{4}{5} \div \frac{2}{3} = \frac{4}{5} \times \frac{3}{2} = \frac{12}{10} = \frac{6}{5}$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="7" cols="3" >}}
@@ -568,19 +547,12 @@ Chercher les valeurs interdites revient à chercher les valeurs qui annulent les
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Prendre une fraction de..." >}}
-**Propriété.** Prendre une fraction d'une quantité revient à multiplier cette quantité par la fraction.
-
-**Méthode.** Pour calculer $\dfrac{a}{b}$ de $c$, on calcule $\dfrac{a}{b} \times c$.
-
-*Exemple.* Les $\dfrac{3}{4}$ de $20$ euros :
-
-$$\frac{3}{4} \times 20 = \frac{3 \times 20}{4} = \frac{3 \times 4 \times 5}{4} = 15$$
-
-**Cas particuliers :**
-
-- la moitié de $18$ : $\dfrac{1}{2} \times 18 = 9$
-- le tiers de $27$ : $\dfrac{1}{3} \times 27 = 9$
-- les trois quarts de $16$ : $\dfrac{3}{4} \times 16 = 12$
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Propriété :</strong> Prendre une fraction d'une quantité revient à multiplier cette quantité par la fraction.</p>
+<p><em>Méthode :</em> Pour calculer $\frac{a}{b}$ de $c$, on calcule $\frac{a}{b} \times c$.</p>
+<p><strong>Exemple concret :</strong></p>
+<ul><li>Les $\frac{3}{4}$ de 20 € :
+$$\frac{3}{4} \times 20 = \frac{3 \times 20}{4} = \frac{3 \times 4 \times 5}{4} = 15 \text{ €}$$</li></ul></div><div><p><strong>Cas particuliers :</strong></p>
+<ul><li>La moitié de 18 : $\frac{1}{2} \times 18 = 9$</li><li>Le tiers de 27 : $\frac{1}{3} \times 27 = 9$</li><li>Les trois quarts de 16 : $\frac{3}{4} \times 16 = 12$</li></ul></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="19" cols="3" >}}

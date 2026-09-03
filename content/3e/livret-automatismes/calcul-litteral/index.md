@@ -11,16 +11,13 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=3c1f7&id=5L10&n=8&d=10&s=true&s2=19&s3=true&cd=1&uuid=fefa0&id=5L10-1&uuid=458ae&id=5L10-3&uuid=12bb6&id=5L10-2&n=1&d=10&s=true&cd=1&uuid=85d2d&id=5L12&n=6&d=10&s=9&s2=false&cd=1&cols=2&uuid=a8ad0&id=5L12-2&n=6&d=10&s=9&s2=false&s3=6-8-&cd=1&cols=2&uuid=d05d3&id=5L14&uuid=8865d&id=5L14-2&n=4&d=10&s=2&cd=1&uuid=1abc6&id=5L14-3&uuid=97f1a&id=5L14-4&v=eleve&es=1111001&title=Calcul+litt%C3%A9ral+%3A+Les+bases"
 ---
 
-{{< livret-rappel titre="Écrire et réduire une expression littérale" >}}
-**Écrire une expression.** Le produit $a \times b$ s'écrit $ab$, le carré de $a$ s'écrit $a^2$, la moitié de $a$ s'écrit $\dfrac{a}{2}$, l'opposé de $a$ s'écrit $-a$.
-
-**Réduire**, c'est regrouper les termes de même nature pour simplifier l'écriture. On ne peut additionner que des termes semblables.
-
-$$2x + 3 + 5x - 1 = 7x + 2$$
-
-$$a\times a + 3a + a^2 - a \times 2 = a^2 + 3a + a^2 - 2a = 2a^2 + a$$
-
-**Attention :** $x$ et $x^2$ ne sont pas semblables.
+{{< livret-rappel titre="Traduction d'énoncés en expressions littérales" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Mots-clés importants :</strong></p>
+<ul><li><strong>Somme, plus, ajouter</strong> $\rightarrow$ +</li><li><strong>Différence, moins, retrancher</strong> $\rightarrow$ -</li><li><strong>Produit, fois, multiplier</strong> $\rightarrow$ $\times$</li><li><strong>Quotient, diviser</strong> $\rightarrow$ $\div$ ou fraction</li><li><strong>Carré, au carré</strong> $\rightarrow$ puissance 2</li><li><strong>Cube, au cube</strong> $\rightarrow$ puissance 3</li></ul></div><div><p><strong>Exemples de traduction :</strong></p>
+<p><em>Du français vers le calcul :</em></p>
+<ul><li>"La somme de 5 et du double de $x$" : $5 + 2x$</li><li>"Le quotient de $a$ par 3" : $\frac{a}{3}$</li><li>"Le produit de $(x+1)$ et $(y-2)$" : $(x+1) \times (y-2)$</li></ul>
+<p><em>Du calcul vers le français :</em></p>
+<ul><li>$3x + 7$ : "La somme du triple de $x$ et de 7"</li><li>$\frac{a-b}{2}$ : "La moitié de la différence de $a$ et $b$"</li></ul></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}
@@ -111,6 +108,12 @@ Voici un programme de calcul : <br><ul><li>Choisir un nombre</li><li>Ajouter 6</
 $$\begin{aligned}\text{on choisit } &x \\\text{on ajoute } 6 : &\; x+6 \\\text{on multiplie par } 3 : &\; 3(x+6) = 3x+18 \\\text{on ajoute } 11 : &\; 3x+18+11 \\&= {\color{#EB7F73}\boldsymbol{3x+29}}\end{aligned}$$
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Réduction d'expressions littérales" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Principe :</strong> Réduire une expression littérale c'est regrouper les termes de même nature pour simplifier l'écriture.</p>
+<p><strong>Règle :</strong> On ne peut additionner que des termes semblables.</p></div><div><p><strong>Exemples :</strong> $$2x + 3 + 5x - 1 = 7x + 2$$ $$a\times a + 3a + a^2 - a \times 2 = 4a^2 + 3a + a^2 - 2a = 5a^2 + a$$</p>
+<p><strong>Attention :</strong> $x$ et $x^2$ ne sont pas semblables !</p></div></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="5" cols="2" >}}
 ---INTRO---
 Réduire les expressions suivantes.
@@ -168,6 +171,14 @@ $F=8c\times5c$
 ---CORR---
 $$\begin{aligned}F &= 8c\times 5c \\  &= 8\times 5\times c\times c \\  &= {\color{#EB7F73}\boldsymbol{40c^2}}\end{aligned}$$
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Calculer une expression littérale" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Méthode :</strong></p>
+<ol><li>Identifier les valeurs des variables</li><li>Remplacer chaque variable par sa valeur</li><li>Respecter les priorités opératoires</li><li>Effectuer les calculs</li></ol></div><div><p><strong>Exemples :</strong></p>
+<p>$A = 3x + 2y - 5$, pour $x = 4$ et $y = 1$ :</p>
+<p>$$\begin{aligned} A &= 3 \times 4 + 2 \times 1 - 5\\ A &= 12 + 2 - 5\\ A &= 9 \end{aligned}$$</p>
+<p>Pour $B = 2x(x + 3)$ avec $x = 5$ : $$B = 2 \times 5 \times (5 + 3) = 10 \times 8 = 80$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="7" >}}
 ---INTRO---

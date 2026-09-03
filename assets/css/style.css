@@ -2379,6 +2379,26 @@ article.qcm .qcm-corr th code { text-transform: none; letter-spacing: 0; font-fa
 .livret-rappel-body ul { margin: 8px 0; padding-left: 20px; }
 .livret-rappel-body li { margin-bottom: 8px; }
 .livret-rappel-body .katex-display { overflow: visible; margin: 10px 0; }
+.livret-rappel-body ol { margin: 8px 0; padding-left: 22px; }
+
+/* Deux colonnes du poly (multicols) */
+.rappel-cols { display: grid; gap: 4px 36px; }
+.rappel-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.rappel-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.rappel-cols > div { min-width: 0; }
+.rappel-cols > div > :first-child { margin-top: 0; }
+.rappel-cols > div > :last-child { margin-bottom: 0; }
+.rappel-cols p { margin: 0 0 10px; }
+.rappel-cols ul, .rappel-cols ol { margin: 8px 0; padding-left: 20px; }
+.livret-rappel-body .liste-cols { column-gap: 28px; }
+.livret-rappel-body .liste-cols-2 { columns: 2; }
+.livret-rappel-body .liste-cols-3 { columns: 3; }
+.livret-rappel-body .liste-cols li { break-inside: avoid; margin-bottom: 4px; }
+.rappel-centre { text-align: center; }
+.rappel-centre .livret-tab { margin-left: auto; margin-right: auto; }
+@media (max-width: 720px) {
+  .rappel-cols { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
 
 /* --- Titre "Pour aller plus loin" --- */
 .exercices-brevet h2 {

@@ -12,13 +12,10 @@ coopmaths: "https://coopmaths.fr/alea/?uuid=0e58f&id=5N11-3&n=6&d=10&s=1&cd=1&co
 ---
 
 {{< livret-rappel titre="Notion de pourcentage" >}}
-Un pourcentage exprime une proportion par rapport à $100$. **Calculer un pourcentage revient à calculer une fraction de dénominateur $100$.**
-
-$$25~\% = \frac{25}{100} = 0{,}25$$
-
-**Passer d'une fraction à un pourcentage.** On transforme la fraction en une fraction de dénominateur $100$.
-
-$$\frac{3}{4} = \frac{3 \times 25}{4 \times 25} = \frac{75}{100} = 75~\%$$
+<div class="rappel-cols rappel-cols-2"><div><p>Un pourcentage exprime une proportion par rapport à 100. <strong>Calculer un pourcentage revient à calculer une fraction de dénominateur 100.</strong></p>
+<p><em>Exemple :</em> $$25~\% = \frac{25}{100} = 0{,}25$$</p></div><div><p><strong>Conversion fraction $\rightarrow$ pourcentage :</strong></p>
+<p>Pour convertir une fraction en pourcentage, on la transforme en fraction de dénominateur 100.</p>
+<p><em>Exemple :</em> $$\frac{3}{4} = \frac{3 \times 25}{4 \times 25} = \frac{75}{100} = 75~\%$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="3" >}}
@@ -94,13 +91,8 @@ La proportion est $\dfrac{16}{40}$.<br>$\dfrac{16}{40}=\dfrac{16{\color{#C5607A}
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Calculer un pourcentage d'une quantité" >}}
-Calculer $a~\%$ d'une quantité revient à multiplier cette quantité par $\dfrac{a}{100}$.
-
-**Méthode.** Pour calculer $a~\%$ de $b$, on calcule $\dfrac{a}{100} \times b$.
-
-*Exemple.* $30~\%$ de $80$ euros :
-
-$$\frac{30}{100} \times 80 = \frac{30 \times 80}{100} = \frac{2\,400}{100} = 24$$
+<div class="rappel-cols rappel-cols-2"><div><p>Calculer $a~\%$ d'une quantité revient à multiplier cette quantité par $\frac{a}{100}$.</p>
+<p><em>Méthode :</em> Pour calculer $a~\%$ de $b$, on calcule $\frac{a}{100} \times b$.</p></div><div><p><strong>Exemples concrets :</strong> $30~\%$ de 80 € : <br> $$\frac{30}{100} \times 80 = \frac{10 \times 3 \times 8 \times 10}{10 \times 10}= 24 \text{ €}$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="5" cols="3" >}}
@@ -173,16 +165,15 @@ Dans une entreprise de $120$ salariés, il y a $20\,\%$ de cadres. <br>Combien y
 $\dfrac{20}{100}\times 120=\dfrac{20\times 120}{100}={\color{#EB7F73}\boldsymbol{24}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{24}}$ cadres.
 {{< /livret-exo >}}
 
-{{< livret-rappel titre="Augmenter ou diminuer d'un pourcentage" >}}
-**Augmenter de $a~\%$.** On calcule le montant de l'augmentation, $\dfrac{a}{100} \times$ la quantité initiale, puis on l'ajoute à la quantité initiale.
-
-**Diminuer de $a~\%$.** On calcule le montant de la diminution, $\dfrac{a}{100} \times$ la quantité initiale, puis on le soustrait de la quantité initiale.
-
-*Augmentation de $15~\%$ sur un prix de $80$ euros.* L'augmentation vaut $\dfrac{15}{100} \times 80 = 12$, le nouveau prix vaut $80 + 12 = 92$ euros.
-
-*Réduction de $20~\%$ sur un prix de $50$ euros.* La réduction vaut $\dfrac{20}{100} \times 50 = 10$, le nouveau prix vaut $50 - 10 = 40$ euros.
-
-**Raccourci.** Augmenter de $a~\%$ revient à multiplier par $1+\dfrac{a}{100}$, diminuer de $a~\%$ revient à multiplier par $1-\dfrac{a}{100}$.
+{{< livret-rappel titre="Augmentations et diminutions en pourcentage" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Augmentation :</strong> Pour augmenter une quantité de $a~\%$, on :</p>
+<ul><li>Calcule le montant de l'augmentation : <br> $\frac{a}{100} \times \text{quantité initiale}$</li><li>Ajoute ce montant à la quantité initiale</li></ul>
+<p><strong>Diminution :</strong> Pour diminuer une quantité de $a~\%$, on :</p>
+<ul><li>Calcule le montant de la diminution : <br> $\frac{a}{100} \times \text{quantité initiale}$</li><li>Soustrait ce montant de la quantité initiale</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p><em>Augmentation de 15 % sur un prix de 80 € :</em></p>
+<ul><li>Augmentation : $\frac{15}{100} \times 80 = 12$ €</li><li>Nouveau prix : $80 + 12 = 92$ €</li></ul>
+<p><em>Réduction de 20 % sur un prix de 50 € :</em></p>
+<ul><li>Réduction : $\frac{20}{100} \times 50 = 10$ €</li><li>Nouveau prix : $50 - 10 = 40$ €</li></ul></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="7" cols="2" >}}

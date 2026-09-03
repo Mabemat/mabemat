@@ -11,14 +11,8 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=3eae0&id=BP2AutoQ2&n=10&d=10&s=3&s2=true&s3=false&s4=false&cd=1&cols=2&uuid=6225c&id=5M13&n=10&d=10&s=4&s2=true&s3=1&s4=false&cd=1&cols=2&uuid=33ac2&id=5N21&n=10&d=10&s=5&s2=true&s3=1&cd=1&cols=2&uuid=f4d29&id=5N21-1&n=10&d=10&s=3&s2=true&s3=4&s4=2&cd=1&cols=2&v=eleve&es=1111001&title=Conversions"
 ---
 
-{{< livret-rappel titre="Conversions d'aires et de volumes" >}}
-D'une unité de longueur à la suivante, on multiplie ou divise par $10$. Mais pour une **aire** le facteur est $10^2 = 100$, et pour un **volume** $10^3 = 1\,000$.
-
-$$1~\text{m}^2 = 100~\text{dm}^2 \qquad 1~\text{m}^3 = 1\,000~\text{dm}^3$$
-
-**Le lien avec les litres :**
-
-$$1~\text{dm}^3 = 1~\text{L} \qquad 1~\text{cm}^3 = 1~\text{mL} \qquad 1~\text{m}^3 = 1\,000~\text{L}$$
+{{< livret-rappel titre="Convertir des longueurs masses etc..." >}}
+<div class="rappel-centre"><p><img src="conversions-01.svg" alt="figure 1" class="livret-fig"></p></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}
@@ -66,6 +60,10 @@ $4\,\text{dm}^3=$<span class="pointilles"></span>$\text{L}$
 $1~\text{dm}^3 = 1~\text{L}$, les deux écritures désignent la même quantité :<br>$4~\text{dm}^3 = {\color{#EB7F73}\boldsymbol{4~\text{L}}}$
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Convertir des aires" >}}
+<div class="rappel-centre"><p><img src="conversions-02.svg" alt="figure 2" class="livret-fig"></p></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="2" cols="2" >}}
 ---INTRO---
 Compléter.
@@ -110,6 +108,11 @@ $97{,}4~\text{m}^2 =$<span class="pointilles"></span>$~\text{dam}^2$
 ---CORR---
 $1~\text{m}^2 = 10^{-2}~\text{dam}^2$, donc on divise par $10^{2}$ :<br>$97{,}4~\text{m}^2 = {\color{#EB7F73}\boldsymbol{0{,}974~\text{dam}^2}}$
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Convertir des volumes" >}}
+<div class="rappel-centre"><p><img src="conversions-03.svg" alt="figure 3" class="livret-fig"></p></div>
+<p>Il faut aussi savoir que 1 dm$^3$ = 1L</p>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="3" cols="2" >}}
 ---INTRO---

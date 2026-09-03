@@ -11,20 +11,10 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=799c4&id=4L20&n=6&d=10&s=true&s2=4&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=3&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=2&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=5&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=6&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=7&s3=true&cd=0&cols=2&uuid=1802d&id=3L13-1&n=8&d=10&cd=0&cols=2&v=eleve&es=1011001&title=Equations"
 ---
 
-{{< livret-rappel titre="Résoudre une équation" >}}
-**Principe.** On regroupe les termes en $x$ d'un côté et les nombres de l'autre, puis on isole $x$.
-
-**Règle fondamentale.** On peut ajouter, soustraire, multiplier ou diviser les deux membres d'une équation par un même nombre, non nul pour la division.
-
-*Exemple.*
-
-$$\begin{aligned}
-3x + 5 &= 2x - 1 \\
-3x + 5 {\color{#C5607A}\boldsymbol{-2x}} &= 2x - 1 {\color{#C5607A}\boldsymbol{-2x}} \\
-x + 5 &= -1 \\
-x + 5 {\color{#C5607A}\boldsymbol{-5}} &= -1 {\color{#C5607A}\boldsymbol{-5}} \\
-x &= {\color{#EB7F73}\boldsymbol{-6}}
-\end{aligned}$$
+{{< livret-rappel titre="Équations" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Principe de résolution :</strong></p>
+<ul><li><strong>Regrouper</strong> les termes en $x$ d'un côté, les nombres de l'autre</li><li><strong>Isoler</strong> $x$.</li></ul>
+<p><strong>Règle fondamentale :</strong> On peut ajouter, soustraire, multiplier ou diviser les deux membres d'une équation par le même nombre (non nul pour la division).</p></div><div><p><strong>Exemple :</strong> $$\begin{aligned} 3x + 5 &= 2x - 1\\ 3x + 5 -2x &= 2x - 1 -2x \\ x + 5 &= - 1\\ x + 5 -5&= - 1-5\\ x &= -6 \end{aligned}$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}

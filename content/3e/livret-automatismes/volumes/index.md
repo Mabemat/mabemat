@@ -11,12 +11,15 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=65bed&id=2G11-5&n=9&d=10&s=1&s2=true&s3=2&s4=10&cd=1&uuid=65bed&id=2G11-5&n=9&d=10&s=2&s3=2&s4=10&cd=1&uuid=8c803&id=3G42&n=1&d=10&s=2&cd=1&uuid=8c803&id=3G42&n=1&d=10&s=3&cd=1&uuid=8c803&id=3G42&n=1&d=10&s=4&cd=1&v=eleve&es=1111001&title=Volumes"
 ---
 
-{{< livret-rappel titre="Volumes usuels" >}}
-$$V_{\text{cube}} = c^3 \qquad V_{\text{pavé}} = L \times l \times h \qquad V_{\text{prisme}} = \mathcal{B} \times h$$
-
-$$V_{\text{cylindre}} = \pi r^2 h \qquad V_{\text{pyramide}} = \dfrac{\mathcal{B} \times h}{3} \qquad V_{\text{cône}} = \dfrac{\pi r^2 h}{3} \qquad V_{\text{boule}} = \dfrac{4}{3}\pi r^3$$
-
-$\mathcal{B}$ désigne l'aire de la base. **Toutes les longueurs doivent être exprimées dans la même unité avant de calculer.**
+{{< livret-rappel titre="Volumes des solides usuels" >}}
+<ul><li><strong>Cube :</strong> $V = a^3$
+où $a$ est la longueur d'une arête.</li><li><strong>Pavé droit :</strong> $V = L \times l \times h$
+où $L$, $l$ et $h$ sont les dimensions.</li><li><strong>Prisme droit :</strong> $V = \mathcal{A}_{base} \times h$
+où $\mathcal{A}_{base}$ est l'aire de la base et $h$ la hauteur.</li><li><strong>Cylindre :</strong> $V = \pi r^2 h$
+où $r$ est le rayon de la base et $h$ la hauteur.</li><li><strong>Pyramide :</strong> $V = \dfrac{1}{3} \times \mathcal{A}_{base} \times h$
+où $\mathcal{A}_{base}$ est l'aire de la base et $h$ la hauteur.</li><li><strong>Cône :</strong> $V = \dfrac{1}{3} \times \pi r^2 h$
+où $r$ est le rayon de la base et $h$ la hauteur.</li><li><strong>Boule :</strong> $V = \dfrac{4}{3} \times \pi r^3$
+où $r$ est le rayon.</li></ul>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" >}}

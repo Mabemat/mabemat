@@ -11,14 +11,15 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=8b0f9&id=6M4C&n=6&d=10&s=1&cd=1&cols=2&uuid=8b0f9&id=6M4C&n=6&d=10&s=2&cd=1&cols=2&uuid=8b0f9&id=6M4C&n=6&d=10&s=3&cd=1&cols=2&uuid=8b0f9&id=6M4C&n=6&d=10&s=4&cd=1&cols=2&uuid=8013d&id=6M4C-4&n=4&d=10&s=2&s2=true&s3=false&cd=1&uuid=8013d&id=6M4C-4&n=4&d=10&s=1&s2=true&s3=false&cd=1&uuid=185f7&id=6M4C-3&n=4&d=10&s=3&s2=true&s3=false&cd=1&uuid=185f7&id=6M4C-3&n=4&d=10&s=1&s2=true&s3=false&cd=1&v=eleve&es=1111001&title=Dur%C3%A9es"
 ---
 
-{{< livret-rappel titre="Durées" >}}
-$$1~\text{min} = 60~\text{s} \qquad 1~\text{h} = 60~\text{min} = 3\,600~\text{s} \qquad 1~\text{j} = 24~\text{h} \qquad 1~\text{semaine} = 7~\text{j}$$
-
-**Attention :** les durées ne sont pas décimales. $1{,}5~\text{h}$ vaut $1~\text{h}~30~\text{min}$, pas $1~\text{h}~50~\text{min}$.
-
-**Convertir une durée en unités plus grandes** se fait par divisions euclidiennes successives : on divise par $60$ pour passer des secondes aux minutes, le reste donne les secondes.
-
-$$6\,987 = 60 \times 116 + 27 \quad\text{et}\quad 116 = 60 \times 1 + 56 \qquad \text{donc } 6\,987~\text{s} = 1~\text{h}~56~\text{min}~27~\text{s}$$
+{{< livret-rappel titre="Unités de temps et conversions de base" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Unités de temps usuelles :</strong></p>
+<ul><li>1 minute = 60 secondes</li><li>1 heure = 60 minutes</li><li>1 jour = 24 heures</li><li>1 semaine = 7 jours</li></ul>
+<p><strong>Conversions simples :</strong></p>
+<ul><li>Pour convertir en unité plus petite : multiplier</li><li>Pour convertir en unité plus grande : division euclidienne</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p><em>Vers une unité plus petite :</em> $$\begin{aligned} 3 \text{ h} &= 3 \times 60 = 180 \text{ min}\\ 5 \text{ min} &= 5 \times 60 = 300 \text{ s} \end{aligned}$$</p>
+<p><em>Vers une unité plus grande :</em> Convertir 150 h en jours et heures.</p>
+<p>$150 = 6 \times 24 +6$</p>
+<p>Donc : $150 \text{ h} = 6 \text{ jours } + 6 \text{ h}$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}
@@ -78,6 +79,14 @@ $59~\text{h en jours et heures.}$
 ---CORR---
 $59 = 24 \times 2 + 11$<br>Soit ${\color{#EB7F73}\boldsymbol{2~\text{j}~11~\text{h}}}$.
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Conversions plus complexes" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Principe :</strong> Pour convertir vers plusieurs unités, on procède par étapes successives.</p>
+<p><strong>Exemple détaillé :</strong></p>
+<p><em>Convertir 7 890 s en h, min, s :</em></p>
+<p>$$\begin{aligned} 7890 &= 131 \times 60 + 30\\ &=131\text{ min} + 30 \text{ s} \end{aligned}$$</p></div><div><p>Et on a : $$\begin{aligned} 131 &= 2 \times 60 + 11\\ &= 2 \text{ h} + 11 \text{ min} \end{aligned}$$</p>
+<p>Résultat : $7890 \text{ s} = 2 \text{ h } 11 \text{ min } 30 \text{ s}$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="3" >}}
 ---INTRO---
@@ -178,6 +187,14 @@ $1{,}75$ heures en format heures-minutes.<br><span class="pointilles"></span> h 
 ---CORR---
 La partie entière donne les heures. Il reste $\dfrac{3}{4}~\text{h}$, et $\dfrac{3}{4} \times 60 = 45$.<br>Soit ${\color{#EB7F73}\boldsymbol{1~\text{h}~45~\text{min}}}$.
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Conversions vers le format décimal" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Du format minutes vers heures décimales :</strong> $$\text{Heures} = \frac{\text{Minutes}}{60}$$</p>
+<p><strong>Exemple :</strong></p>
+<p><em>90 minutes en heures :</em> $$90 \div 60 = 1{,}5 \text{ h}$$</p></div><div><p><strong>Du format h min vers heures décimales :</strong> $$\text{Heures} = h + \frac{\text{min}}{60}$$</p>
+<p><strong>Exemple :</strong></p>
+<p><em>2 h 15 min en heures :</em> $$2 + \frac{15}{60} = 2 + 0{,}25 = 2{,}25 \text{ h}$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="7" >}}
 ---INTRO---

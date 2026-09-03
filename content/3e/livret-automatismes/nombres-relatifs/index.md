@@ -11,16 +11,12 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=19060&id=5R13&n=9&d=10&s=1-2&cd=1&cols=3&uuid=cab80&id=5R10&n=1&d=10&s=true&s2=false&cd=1&uuid=cbc26&id=5R20&n=6&d=10&s=20&s2=2&s3=false&s4=false&cd=1&cols=2&uuid=cbc26&id=5R20&n=6&d=10&s=20&s2=2&s3=false&s4=true&cd=1&cols=2&uuid=f2db1&id=5R21-1&n=6&d=10&s=20&s2=true&s3=false&cd=1&cols=2&uuid=b6982&id=5R21&n=6&d=10&s=20&s2=true&s3=false&cd=1&cols=2&uuid=ce842&id=5R20-2&n=6&d=10&s=10&s2=true&s3=false&cd=1&cols=2&uuid=ce842&id=5R20-2&n=6&d=10&s=10&s2=true&s3=true&cd=1&cols=2&uuid=f6ea7&id=5R22&n=4&d=10&s=20&s2=2&s3=false&cd=1&cols=2&uuid=4fd42&id=4C10-1&uuid=745ba&id=4C10&n=4&d=10&s=1&s2=1&cd=1&cols=4&uuid=745ba&id=4C10&n=4&d=10&s=1&s2=3&cd=1&cols=4&uuid=aa4f9&id=4C10-2&n=4&d=10&s=1&cd=1&uuid=745ba&id=4C10&n=4&d=10&s=2&s2=1&cd=1&cols=4&uuid=745ba&id=4C10&n=4&d=10&s=2&s2=3&cd=1&cols=4&uuid=aa4f9&id=4C10-2&n=4&d=10&s=4&cd=1&uuid=73187&id=4C10-6&n=3&d=10&s=3&cd=1&uuid=62f66&id=4C11&n=6&d=10&s=3&s2=true&cd=1&cols=2&uuid=1bf3b&id=4C11-0&n=6&d=10&s=1-2-4-5-12-7&s2=true&cd=1&cols=2&v=eleve&es=1111001&title=Nombres+relatifs"
 ---
 
-{{< livret-rappel titre="Nombres relatifs" >}}
-**Comparer.** Sur une droite graduée, le plus grand est le plus à droite. Deux nombres négatifs se comparent à l'envers de leurs distances à zéro : $-5{,}1 \lt -5$.
-
-**Additionner.** Mêmes signes : on ajoute les distances à zéro et on garde le signe. Signes contraires : on soustrait la plus petite distance à zéro de la plus grande et on garde le signe du plus éloigné de zéro.
-
-**Soustraire, c'est ajouter l'opposé :** $a - b = a + (-b)$.
-
-$$-19 - 6 = -19 + (-6) = -25 \qquad 19 - (-17) = 19 + 17 = 36$$
-
-**Multiplier et diviser.** Le résultat est positif si les deux nombres ont le même signe, négatif s'ils sont de signes contraires. Avec plusieurs facteurs, on compte les facteurs négatifs : un nombre pair de facteurs négatifs donne un résultat positif.
+{{< livret-rappel titre="Comparaison de nombres relatifs" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Règles de comparaison :</strong></p>
+<ul><li>Tout nombre positif est supérieur à tout nombre négatif</li><li>Entre deux nombres positifs, le plus grand est celui qui a la plus grande distance à zéro</li><li>Entre deux nombres négatifs, le plus grand est celui qui a la plus petite distance à zéro</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p><em>Nombres positifs et négatifs :</em> $$3{,}2 > -5{,}8$$</p>
+<p><em>Deux nombres positifs :</em> $$7{,}5 > 2{,}9$$</p>
+<p><em>Deux nombres négatifs :</em> $$-2{,}1 > -6{,}4 \quad \text{car } 2{,}1 < 6{,}4$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="3" >}}
@@ -64,6 +60,11 @@ $5{,}12$<span class="pointilles"></span>$-5{,}19$
 $5{,}12 {\color{#EB7F73}\boldsymbol{\gt}} -5{,}19$<br><span class="corr-mental">Mentalement : un nombre positif est toujours plus grand qu'un nombre négatif.</span>
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Nombres opposés" >}}
+<div class="rappel-cols rappel-cols-2"><div><p>Deux nombres relatifs sont opposés s'ils ont la même distance à zéro mais des signes contraires.</p></div><div><p><strong>Exemples :</strong></p>
+<p>L'opposé de $5{,}2$ est $-5{,}2$ <br> L'opposé de $-3{,}7$ est $3{,}7$</p></div></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="2" >}}
 ---INTRO---
 Compléter le tableau suivant.<br><table class="livret-tab"><tbody><tr><td>Nombre</td><td></td><td></td><td>$6{,}4$</td><td>$-9{,}4$</td><td></td><td>$+9{,}8$</td></tr><tr><td>Opposé du nombre</td><td>$-2{,}6$</td><td>$+8{,}3$</td><td></td><td></td><td>$0{,}9$</td><td></td></tr></tbody></table>
@@ -72,6 +73,16 @@ Compléter le tableau suivant.<br><table class="livret-tab"><tbody><tr><td>Nombr
 ---CORR---
 L'opposé d'un nombre s'obtient en changeant son signe.<br><table class="livret-tab"><tbody><tr><th>Nombre</th><td>${\color{#EB7F73}\boldsymbol{2{,}6}}$</td><td>${\color{#EB7F73}\boldsymbol{-8{,}3}}$</td><td>$6{,}4$</td><td>$-9{,}4$</td><td>${\color{#EB7F73}\boldsymbol{0{,}9}}$</td><td>$9{,}8$</td></tr><tr><th>Opposé du nombre</th><td>$-2{,}6$</td><td>$8{,}3$</td><td>${\color{#EB7F73}\boldsymbol{-6{,}4}}$</td><td>${\color{#EB7F73}\boldsymbol{9{,}4}}$</td><td>$-0{,}9$</td><td>${\color{#EB7F73}\boldsymbol{-9{,}8}}$</td></tr></tbody></table>
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Addition de nombres relatifs" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Addition de deux nombres de même signe :</strong></p>
+<ul><li>On garde le signe commun</li><li>On additionne les distances à zéro</li></ul>
+<p><strong>Exemples :</strong></p>
+<p>$$-3{,}2 + (-1{,}5) = -4{,}7$$ $$2{,}8 + 1{,}4 = +4{,}2$$</p></div><div><p><strong>Addition de deux nombres de signes contraires :</strong></p>
+<ul><li>On garde le signe du nombre qui a la plus grande distance à zéro</li><li>On soustrait les distances à zéro</li></ul>
+<p><strong>Exemples :</strong></p>
+<p>$$-5{,}3 + 2{,}1 = -3{,}2$$ $$4{,}6 + (-1{,}9) = +2{,}7$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="3" cols="3" >}}
 ---INTRO---
@@ -130,6 +141,15 @@ $ -11{,}03 + (-13{,}1)$
 ---CORR---
 $(-11{,}03) + (-13{,}1) = {\color{#EB7F73}\boldsymbol{-24{,}13}}$<br><span class="corr-mental">Mentalement : les deux nombres ont le même signe : on ajoute leurs distances à zéro, $11{,}03 + 13{,}1 = 24{,}13$, et on garde le signe $-$.</span>
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Soustraction de nombres relatifs" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Règle fondamentale :</strong> Soustraire un nombre revient à additionner son opposé.</p>
+<p>$$a - b = a + (-b)$$</p>
+<p><strong>Méthode :</strong></p>
+<ul><li>On transforme la soustraction en addition</li><li>On applique les règles de l'addition</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p><em>Soustraction d'un nombre positif :</em> $$7 - 3 = 7 + (-3) = 4$$ $$-5 - 2 = -5 + (-2) = -7$$</p>
+<p><em>Soustraction d'un nombre négatif :</em> $$4 - (-6) = 4 + 6 = 10$$ $$-3 - (-8) = -3 + 8 = 5$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="5" cols="2" >}}
 ---INTRO---
@@ -268,6 +288,16 @@ $ D = -13-(-19)+9-(-11)+(-8)$
 $$\begin{aligned}D &= -13-(-19)+9-(-11)+(-8) \\ &= (-13) + 19 + 9 + 11 + (-8) \\ &= 39 - 21 \\ &= {\color{#EB7F73}\boldsymbol{18}}\end{aligned}$$
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Multiplication de nombres relatifs" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Règle des signes pour la multiplication :</strong></p>
+<ul class="liste-cols liste-cols-2"><li>$(+) \times (+) = (+)$</li><li>$(-) \times (-) = (+)$</li><li>$(+) \times (-) = (-)$</li><li>$(-) \times (+) = (-)$</li></ul>
+<p><strong>Exemples :</strong></p>
+<p>$$(-3) \times (+5) = -15$$ $$(-4) \times (-7) = +28$$</p></div><div><p><strong>Produit de plusieurs nombres :</strong></p>
+<ul><li>S'il y a un nombre pair de facteurs négatifs le produit est positif.</li><li>S'il y a un nombre impair de facteurs négatifs le produit est négatif.</li></ul>
+<p><strong>Exemples :</strong></p>
+<p>$${\color{#CA6527}(-2)} \times {\color{#CA6527}(-3)} \times (+4) = +24$$ $${\color{#CA6527}(-2)} \times (+3) \times {\color{#CA6527}(-4)} \times (+5) \times {\color{#CA6527}(-1)} = -120$$</p></div></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="10" cols="3" >}}
 ---INTRO---
 Donner le signe de l'expression numérique.
@@ -281,48 +311,6 @@ $ (+10) \times (-16) \times (+10) $<br> <br>$\square\;$ négatif $\square\;$ nul
 Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
 $ (-5) \times (+7) \times (-6) \times (-13) $<br> <br>$\square\;$ négatif $\square\;$ nul $\square\;$ positif
----CORR---
-Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
-{{< /livret-exo >}}
-
-{{< livret-exo num="13" >}}
----INTRO---
-Donner le signe de l'expression numérique.
----Q---
-$ \dfrac{(+6)}{(+7)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
----CORR---
-Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
----Q---
-$ \dfrac{(+11)}{(+7)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
----CORR---
-Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
----Q---
-$ \dfrac{(-19)}{(+15)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
----CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
----Q---
-$ \dfrac{(-16)}{(+4)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
----CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
-{{< /livret-exo >}}
-
-{{< livret-exo num="16" >}}
----INTRO---
-Donner le signe de l'expression numérique.
----Q---
-$ \dfrac{(+19) \times (-12)}{(+12) \times (+9)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
----CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
----Q---
-$ \dfrac{(-9) \times (+16)}{(+16) \times (-12)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
----CORR---
-Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
----Q---
-$ \dfrac{(+10) \times (+5)}{(+3) \times (+16)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
----CORR---
-Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
----Q---
-$ \dfrac{(-8) \times (+15)}{(-5) \times (-16)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
 Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 {{< /livret-exo >}}
@@ -369,6 +357,33 @@ $-\dfrac{5}{6}\times \left(-\dfrac{2}{9}\right) = $
 $$\begin{aligned}-\dfrac{5}{6}\times \left(-\dfrac{2}{9}\right) &= \dfrac{5\times 2}{6\times 9} \\ &= \dfrac{10}{54} \\ &= {\color{#EB7F73}\boldsymbol{\dfrac{5}{27}}}\end{aligned}$$
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Division de nombres relatifs" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Règle des signes pour la division :</strong></p>
+<ul class="liste-cols liste-cols-2"><li>$(+) \div (+) = (+)$</li><li>$(-) \div (-) = (+)$</li><li>$(+) \div (-) = (-)$</li><li>$(-) \div (+) = (-)$</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p>$$(-15) \div (-5) = +3$$ $$\frac{+14}{-7} = -2$$</p></div></div>
+{{< /livret-rappel >}}
+
+{{< livret-exo num="13" >}}
+---INTRO---
+Donner le signe de l'expression numérique.
+---Q---
+$ \dfrac{(+6)}{(+7)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
+---CORR---
+Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
+---Q---
+$ \dfrac{(+11)}{(+7)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
+---CORR---
+Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
+---Q---
+$ \dfrac{(-19)}{(+15)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
+---CORR---
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
+---Q---
+$ \dfrac{(-16)}{(+4)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
+---CORR---
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
+{{< /livret-exo >}}
+
 {{< livret-exo num="14" cols="2" >}}
 ---INTRO---
 Calculer.
@@ -409,6 +424,27 @@ $$\begin{aligned}\dfrac{\dfrac{165}{54}}{\dfrac{-15}{9}} &= \dfrac{165}{54}\time
 $\dfrac{\dfrac{49}{6}}{\dfrac{-7}{3}} = $
 ---CORR---
 $$\begin{aligned}\dfrac{\dfrac{49}{6}}{\dfrac{-7}{3}} &= \dfrac{49}{6}\times \dfrac{3}{-7} \\ &= \dfrac{49\times 3}{6\times -7} \\ &= {\color{#EB7F73}\boldsymbol{-\dfrac{7}{2}}}\end{aligned}$$
+{{< /livret-exo >}}
+
+{{< livret-exo num="16" >}}
+---INTRO---
+Donner le signe de l'expression numérique.
+---Q---
+$ \dfrac{(+19) \times (-12)}{(+12) \times (+9)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+---CORR---
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
+---Q---
+$ \dfrac{(-9) \times (+16)}{(+16) \times (-12)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+---CORR---
+Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
+---Q---
+$ \dfrac{(+10) \times (+5)}{(+3) \times (+16)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+---CORR---
+Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
+---Q---
+$ \dfrac{(-8) \times (+15)}{(-5) \times (-16)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+---CORR---
+Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="17" cols="3" >}}

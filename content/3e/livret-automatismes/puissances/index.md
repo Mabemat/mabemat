@@ -11,22 +11,13 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=31bd7&id=3C10-3&n=4&d=10&s=2&s2=3&s3=3&s4=3&cd=1&cols=2&uuid=31bd7&id=3C10-3&n=4&d=10&s=1&s2=3&s3=3&s4=3&cd=1&cols=2&uuid=36f8b&id=4C30-3&n=8&d=10&s=1&cd=1&cols=2&uuid=eb865&id=3C10-1&n=8&d=10&s=2&cd=1&cols=2&uuid=93df9&id=4C30-2&n=8&d=10&s=1&cd=1&cols=2&uuid=93df9&id=4C30-2&n=8&d=10&s=2&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=1&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=2&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=3&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=4&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=5&s2=1&cd=1&cols=2&uuid=fc2e8&id=2N31-10&n=8&d=10&cd=1&cols=4&uuid=67432&id=4C37&n=6&d=10&cd=1&cols=2&uuid=a0d16&id=4C32&n=6&d=10&s=1&s2=3&cd=1&cols=2&uuid=a0d16&id=4C32&n=6&d=10&s=2&s2=3&cd=1&cols=2&uuid=762fe&id=4C32-1&n=4&d=10&s=1&s2=3&s3=3&cd=1&cols=2&uuid=762fe&id=4C32-1&n=4&d=10&s=3&s2=3&s3=3&cd=1&cols=2&v=eleve&es=1111001&title=Puissances"
 ---
 
-{{< livret-rappel titre="Puissances" >}}
-Pour $a \neq 0$ et $n$ entier positif :
-
-$$a^n = \underbrace{a \times a \times \dots \times a}_{n \text{ facteurs}} \qquad a^{-n} = \dfrac{1}{a^n} \qquad a^0 = 1$$
-
-**Attention aux parenthèses.** $(-3)^2 = 9$ alors que $-3^2 = -9$ : sans parenthèses, la puissance ne porte que sur le nombre, pas sur le signe.
-
-**Signe.** $(-a)^n$ est positif si $n$ est pair, négatif si $n$ est impair.
-
-**Règles de calcul.**
-
-$$a^m \times a^n = a^{m+n} \qquad \dfrac{a^m}{a^n} = a^{m-n} \qquad (a^m)^n = a^{m \times n}$$
-
-$$a^n \times b^n = (a \times b)^n \qquad \dfrac{a^n}{b^n} = \left(\dfrac{a}{b}\right)^n$$
-
-**Notation scientifique.** $a \times 10^n$ avec $1 \leqslant |a| < 10$ et $n$ entier relatif.
+{{< livret-rappel titre="Définition des puissances" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Puissance d'exposant positif :</strong> Pour $a$ réel et $n$ entier positif : $$a^n = \underbrace{a \times a \times \ldots \times a}_{n \text{ facteurs}}$$</p>
+<p><strong>Exemple :</strong> $$3^4 = 3 \times 3 \times 3 \times 3 = 81$$</p>
+<p><strong>Puissance d'exposant négatif :</strong> Pour $a \neq 0$ et $n$ entier positif : $$a^{-n} = \frac{1}{a^n}$$</p>
+<p><strong>Exemple :</strong> $$2^{-3} = \frac{1}{2^3} = \frac{1}{8}$$</p></div><div><p><strong>Cas particuliers :</strong></p>
+<ul><li>$a^0 = 1$ (pour $a \neq 0$)</li><li>$a^1 = a$</li></ul>
+<p><strong>Attention aux parenthèses :</strong> $$(-3)^2 = (-3) \times (-3) = 9$$ $$-3^2 = -(3 \times 3) = -9$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" cols="2" >}}
@@ -145,6 +136,15 @@ $2^{-2}$
 $2^{-2}=\dfrac{1}{2^{2}}={\color{#EB7F73}\boldsymbol{\dfrac{1}{4}}}$
 {{< /livret-exo >}}
 
+{{< livret-rappel titre="Puissances de 10" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Puissances positives de 10 :</strong> $$10^n = \underbrace{10 \times 10 \times \ldots \times 10}_{n \text{ facteurs}}$$</p>
+<p>Le nombre $10^n$ s'écrit 1 suivi de $n$ zéros.</p>
+<p><strong>Exemple :</strong></p>
+<p>$$10^5 = 100\,000$$</p></div><div><p><strong>Puissances négatives de 10 :</strong> $$10^{-n} = \frac{1}{10^n}$$</p>
+<p>Le nombre $10^{-n}$ s'écrit 0, suivi de $(n-1)$ zéros puis du chiffre 1.</p>
+<p><strong>Exemple :</strong> $$10^{-4} = \frac{1}{10\,000} = 0{,}000\,1$$</p></div></div>
+{{< /livret-rappel >}}
+
 {{< livret-exo num="5" cols="2" >}}
 ---INTRO---
 Donner l'écriture décimale des nombres suivants.
@@ -218,6 +218,10 @@ $10^{-4}$
 ---CORR---
 $10^{-4}=\dfrac{1}{10^{4}}={\color{#EB7F73}\boldsymbol{0{,}000\,1}}$<br><span class="corr-mental">Mentalement : un $1$ à la 4<sup>e</sup> décimale.</span>
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Règles de calcul sur les puissances" >}}
+<ul><li>$a^m \times a^n = a^{m+n}$</li><li>$\dfrac{a^m}{a^n} = a^{m-n} \quad (a \neq 0)$</li><li>$(a^m)^n = a^{m \times n}$</li><li>$a^n \times b^n = (a \times b)^n$</li><li>$\dfrac{a^n}{b^n} = \left(\dfrac{a}{b}\right)^n \quad (b \neq 0)$</li></ul>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="7" cols="2" >}}
 ---INTRO---
@@ -469,6 +473,14 @@ $9^{2}$ <br>$\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
 $9$ est positif, donc toutes ses puissances le sont.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Notation scientifique" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Définition :</strong> Un nombre décimal est écrit en notation scientifique s'il est de la forme : $$a \times 10^n$$ où $1 \leq a < 10$ et $n$ est un entier relatif.</p>
+<p><strong>Méthode :</strong></p>
+<ul><li>Placer la virgule après le premier chiffre significatif</li><li>Compter le nombre de rangs de déplacement</li><li>Si on va vers la gauche : exposant positif</li><li>Si on va vers la droite : exposant négatif</li></ul></div><div><p><strong>Exemples :</strong></p>
+<p>$$1250 = 1{,}25 \times 10^3$$ $$0{,}0034 = 3{,}4 \times 10^{-3}$$</p>
+<p><strong>Correction de notation :</strong> $$30 \times 10^4 = 3 \times 10^1 \times 10^4 = 3 \times 10^5$$ $$0{,}5 \times 10^{-2} = 5 \times 10^{-1} \times 10^{-2} = 5 \times 10^{-3}$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="14" cols="2" >}}
 ---INTRO---

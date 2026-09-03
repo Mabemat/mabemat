@@ -11,16 +11,12 @@ coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=f4b95&id=3S12&uuid=c9d15&id=can3S05&uuid=debe7&id=can3C02&uuid=8490c&id=can3S07&uuid=8490c&id=can3S07&uuid=87ceb&id=can3S06&uuid=9aef1&id=3AutoP04-1&n=1&d=10&s=false&s2=false&s4=true&cd=1&uuid=b8afd&id=3S14&n=1&d=10&s=2&s2=1-2&s3=true&cd=1&uuid=b8afd&id=3S14&n=1&d=10&s=3&s2=1-2&s3=true&cd=1&uuid=b8afd&id=3S14&n=1&d=10&s=4&s2=1-2&s3=true&cd=1&uuid=b8afd&id=3S14&n=1&d=10&s=5&s2=1-2&s3=true&cd=1&uuid=b8afd&id=3S14&n=1&d=10&s=1&s2=1-2&s3=true&cd=1&v=eleve&es=1111001&title=Statistiques"
 ---
 
-{{< livret-rappel titre="Moyenne et médiane" >}}
-**Moyenne.** On additionne toutes les valeurs et on divise par leur nombre.
-
-$$\text{moyenne} = \dfrac{\text{somme des valeurs}}{\text{nombre de valeurs}}$$
-
-Avec des effectifs, on pondère : $\dfrac{n_1 x_1 + n_2 x_2 + \dots}{n_1 + n_2 + \dots}$.
-
-**Médiane.** On range les valeurs dans l'ordre croissant. Si l'effectif $N$ est impair, la médiane est la valeur de rang $\dfrac{N+1}{2}$. S'il est pair, c'est la moyenne des valeurs de rangs $\dfrac{N}{2}$ et $\dfrac{N}{2}+1$.
-
-**Fréquence.** $\dfrac{\text{effectif}}{\text{effectif total}}$, souvent donnée en pourcentage.
+{{< livret-rappel titre="Effectif et fréquence" >}}
+<p><strong>Effectif :</strong> Nombre d'individus ayant le même caractère.</p>
+<p><strong>Effectif total :</strong> Somme de tous les effectifs.</p>
+<p><strong>Fréquence :</strong> $$\text{Fréquence} = \frac{\text{Effectif}}{\text{Effectif total}}$$</p>
+<p><strong>Fréquence en pourcentage :</strong> $$\text{Fréquence (\%)} = \frac{\text{Effectif}}{\text{Effectif total}} \times 100$$</p>
+<p><strong>Propriété :</strong> La somme de toutes les fréquences est égale à 1 (ou 100%).</p>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="1" >}}
@@ -31,6 +27,10 @@ Dans le parc naturel de Kinecardine, il y a des animaux. Certains sont des quadr
 ---CORR---
 **a.** On lit la hauteur de la barre des gnous : ${\color{#EB7F73}\boldsymbol{4}}$.<br><br>**b.** $\dfrac{7}{27} \approx 0{,}259$, soit ${\color{#EB7F73}\boldsymbol{25{,}9~\%}}$.<br><br>**c.** Les quadrupèdes sont les gnous, les crocodiles et les phacochères : $4+7+5 = {\color{#EB7F73}\boldsymbol{16}}$.<br><br>**d.** Les oiseaux sont les vautours et les hérons, soit $2+9 = 11$ individus. $\dfrac{11}{27} \approx 0{,}407$, soit ${\color{#EB7F73}\boldsymbol{40{,}7~\%}}$.
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Moyenne" >}}
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Moyenne d'une série :</strong> $$\text{Moyenne} = \frac{\text{Somme des valeurs}}{\text{Nombre de valeurs}}$$</p></div><div><p><strong>Moyenne pondérée :</strong> Si on a des valeurs $x_1, x_2, ..., x_n$ avec des effectifs $n_1, n_2, ..., n_k$ : $$\text{Moyenne} = \frac{x_1 \times n_1 + x_2 \times n_2 + ... + x_k \times n_k}{\text{Effectif total}}$$</p></div></div>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="2" >}}
 ---INTRO---
@@ -67,6 +67,15 @@ La moyenne de $-7$ et $a$ est $-1$.<br>Quelle est la valeur de $a$ ?
 ---CORR---
 La somme des deux nombres vaut $2 \times (-1) = -2$.<br>Donc $a = -2 - (-7) = -2 + 7 = {\color{#EB7F73}\boldsymbol{5}}$.
 {{< /livret-exo >}}
+
+{{< livret-rappel titre="Médiane" >}}
+<p><strong>Médiane :</strong> Valeur qui partage la série ordonnée en deux groupes de même effectif.</p>
+<p><strong>Méthode :</strong></p>
+<ol><li>Ordonner la série par ordre croissant</li><li>Si l'effectif est impair : la médiane est la valeur du milieu</li><li>Si l'effectif est pair : la médiane est la moyenne des deux valeurs centrales</li></ol>
+<p><strong>Rang de la médiane :</strong></p>
+<ul><li>Si $n$ impair : rang = $\frac{n+1}{2}$</li><li>Si $n$ pair : entre les rangs $\frac{n}{2}$ et $\frac{n}{2}+1$</li></ul>
+<p><strong>Propriété :</strong> La médiane appartient toujours à la série (sauf cas particulier).</p>
+{{< /livret-rappel >}}
 
 {{< livret-exo num="6" >}}
 ---INTRO---
