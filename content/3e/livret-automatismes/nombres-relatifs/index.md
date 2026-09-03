@@ -68,7 +68,7 @@ $5{,}12 {\color{#EB7F73}\boldsymbol{\gt}} -5{,}19$<br><span class="corr-mental">
 ---INTRO---
 Compléter le tableau suivant.
 ---Q---
-<table class="livret-tab"><tbody><tr><th>Nombre</th><td>$$</td><td>$$</td><td>$6{,}4$</td><td>$-9{,}4$</td><td>$$</td><td>$9{,}8$</td></tr><tr><th>Opposé du nombre</th><td>$-2{,}6$</td><td>$8{,}3$</td><td>$$</td><td>$$</td><td>$-0{,}9$</td><td>$$</td></tr></tbody></table>
+<table class="livret-tab"><tbody><tr><th>Nombre</th><td></td><td></td><td>$6{,}4$</td><td>$-9{,}4$</td><td></td><td>$9{,}8$</td></tr><tr><th>Opposé du nombre</th><td>$-2{,}6$</td><td>$8{,}3$</td><td></td><td></td><td>$-0{,}9$</td><td></td></tr></tbody></table>
 ---CORR---
 L'opposé d'un nombre s'obtient en changeant son signe.<br><table class="livret-tab"><tbody><tr><th>Nombre</th><td>${\color{#EB7F73}\boldsymbol{2{,}6}}$</td><td>${\color{#EB7F73}\boldsymbol{-8{,}3}}$</td><td>$6{,}4$</td><td>$-9{,}4$</td><td>${\color{#EB7F73}\boldsymbol{0{,}9}}$</td><td>$9{,}8$</td></tr><tr><th>Opposé du nombre</th><td>$-2{,}6$</td><td>$8{,}3$</td><td>${\color{#EB7F73}\boldsymbol{-6{,}4}}$</td><td>${\color{#EB7F73}\boldsymbol{9{,}4}}$</td><td>$-0{,}9$</td><td>${\color{#EB7F73}\boldsymbol{-9{,}8}}$</td></tr></tbody></table>
 {{< /livret-exo >}}
