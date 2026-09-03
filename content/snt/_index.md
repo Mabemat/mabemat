@@ -5,7 +5,7 @@ nb_seances: 6
 # Section masquee pour la rentree 2026 : Hugo ne genere plus rien sous /snt/.
 # Retirer les cinq lignes ci-dessous pour la remettre en ligne.
 cascade:
-  _build:
+  build:
     render: never
     list: never
 ---
