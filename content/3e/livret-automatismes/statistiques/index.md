@@ -25,7 +25,7 @@ Avec des effectifs, on pondère : $\dfrac{n_1 x_1 + n_2 x_2 + \dots}{n_1 + n_2 +
 
 {{< livret-exo num="1" >}}
 ---INTRO---
-Dans le parc naturel de Kinecardine, il y a des animaux. Certains sont des quadrupèdes (gnous, crocodiles, phacochères), et d'autres sont des oiseaux (vautours, hérons). Voici un diagramme en barres qui donne le nombre d'individus pour chaque espèce. <img src="statistiques-01.svg" alt="figure 1" class="livret-fig"> **a.** Quel est l'effectif des gnous ? **b.** Calculer la fréquence des crocodiles. Donner le résultat sous la forme d'un pourcentage arrondi, si besoin, à 0,1$\%$ près. **c.** Calculer l'effectif des quadrupèdes. **d.** Calculer la fréquence des oiseaux. Donner le résultat sous la forme d'un pourcentage arrondi, si besoin, à 0,1$\%$ près.
+Dans le parc naturel de Kinecardine, il y a des animaux. Certains sont des quadrupèdes (gnous, crocodiles, phacochères), et d'autres sont des oiseaux (vautours, hérons). Voici un diagramme en barres qui donne le nombre d'individus pour chaque espèce.<br><img src="statistiques-01.svg" alt="figure 1" class="livret-fig"><br><strong>a.</strong> Quel est l'effectif des gnous ?<br><strong>b.</strong> Calculer la fréquence des crocodiles. Donner le résultat sous la forme d'un pourcentage arrondi, si besoin, à 0,1$\%$ près.<br><strong>c.</strong> Calculer l'effectif des quadrupèdes.<br><strong>d.</strong> Calculer la fréquence des oiseaux. Donner le résultat sous la forme d'un pourcentage arrondi, si besoin, à 0,1$\%$ près.
 ---Q---
 
 ---CORR---
@@ -34,7 +34,7 @@ Dans le parc naturel de Kinecardine, il y a des animaux. Certains sont des quadr
 
 {{< livret-exo num="2" >}}
 ---INTRO---
-$2$    ;    $11$    ;    $10$   ;    $29$ Quelle est la moyenne de cette série ?
+$2$    ;    $11$    ;    $10$   ;    $29$<br>Quelle est la moyenne de cette série ?
 ---Q---
 
 ---CORR---
@@ -43,7 +43,7 @@ La somme des 4 valeurs vaut $52$.<br>$\dfrac{52}{4} = 13$<br>La moyenne est ${\c
 
 {{< livret-exo num="3" >}}
 ---INTRO---
-Calculer la moyenne des nombres : $\,\,\,\,\,\,\,\,8{,}9\,\,\,\,\,\,\,\,33{,}8\,\,\,\,\,\,\,\,2{,}3$
+Calculer la moyenne des nombres :<br>$\,\,\,\,\,\,\,\,8{,}9\,\,\,\,\,\,\,\,33{,}8\,\,\,\,\,\,\,\,2{,}3$
 ---Q---
 
 ---CORR---
@@ -52,7 +52,7 @@ La somme des 3 valeurs vaut $45$.<br>$\dfrac{45}{3} = 15$<br>La moyenne est ${\c
 
 {{< livret-exo num="4" >}}
 ---INTRO---
-La moyenne de la série de nombres suivante est $9$. $4$         $5$         $a$ Quelle est la valeur de $a$ ?
+La moyenne de la série de nombres suivante est $9$.<br>$4$         $5$         $a$<br>Quelle est la valeur de $a$ ?
 ---Q---
 
 ---CORR---
@@ -70,7 +70,7 @@ La somme des deux nombres vaut $2 \times (-1) = -2$.<br>Donc $a = -2 - (-7) = -2
 
 {{< livret-exo num="6" >}}
 ---INTRO---
-Une série statistique de $27$ données est rangée dans l'ordre croissant. Quel est le rang de la médiane ?
+Une série statistique de $27$ données est rangée dans l'ordre croissant.<br>Quel est le rang de la médiane ?
 ---Q---
 
 ---CORR---
@@ -79,7 +79,7 @@ $27$ est impair, la médiane est la valeur de rang $\dfrac{27+1}{2} = 14$.<br>C'
 
 {{< livret-exo num="7" >}}
 ---INTRO---
-On donne la série statistique suivante : 7 ; 4 ; 12 ; 10 ; 17 ; 16 ; 15 ; 6 ; 2 Quelle est la médiane de la série ?
+On donne la série statistique suivante : <br>7 ; 4 ; 12 ; 10 ; 17 ; 16 ; 15 ; 6 ; 2<br>Quelle est la médiane de la série ?
 ---Q---
 
 ---CORR---
@@ -88,7 +88,7 @@ On range les 9 valeurs dans l'ordre croissant. La médiane est le rang $5$.<br>L
 
 {{< livret-exo num="8" >}}
 ---INTRO---
-Lisa a obtenu ces notes ce trimestre-ci en mathématiques : $13$; $7$ ; $18$ ; $11$ ; $8$ ; $9$ ; $20$ ; $8$ ; $10$ ; $19$ et $18$. **a.** Calculer la moyenne de ces notes arrondie au dixième. **b.** Calculer la médiane de ces notes.
+Lisa a obtenu ces notes ce trimestre-ci en mathématiques :<br>$13$; $7$ ; $18$ ; $11$ ; $8$ ; $9$ ; $20$ ; $8$ ; $10$ ; $19$ et $18$.<br><strong>a.</strong> Calculer la moyenne de ces notes arrondie au dixième.<br><strong>b.</strong> Calculer la médiane de ces notes.
 ---Q---
 
 ---CORR---
@@ -97,7 +97,7 @@ Lisa a obtenu ces notes ce trimestre-ci en mathématiques : $13$; $7$ ; $18$ ; $
 
 {{< livret-exo num="9" >}}
 ---INTRO---
-En septembre 2003, à Moscou, on a relevé les températures suivantes : <table class="livret-tab"><tbody><tr><td>Jour</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>$\text{Température en} ^\circ\text{C}$</td><td>22</td><td>20</td><td>20</td><td>20</td><td>22</td><td>21</td><td>22</td><td>24</td><td>22</td><td>20</td><td>21</td><td>21</td><td>19</td><td>21</td><td>19</td></tr></tbody></table> <table class="livret-tab"><tbody><tr><td>Jour</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>$\text{Température en} ^\circ\text{C}$</td><td>19</td><td>21</td><td>20</td><td>22</td><td>20</td><td>22</td><td>22</td><td>24</td><td>23</td><td>22</td><td>23</td><td>24</td><td>23</td><td>25</td><td>25</td></tr></tbody></table> **a.** Calculer la moyenne des températures arrondie au dixième. **b.** Calculer la médiane des températures.
+En septembre 2003, à Moscou, on a relevé les températures suivantes : <br><table class="livret-tab"><tbody><tr><td>Jour</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>$\text{Température en} ^\circ\text{C}$</td><td>22</td><td>20</td><td>20</td><td>20</td><td>22</td><td>21</td><td>22</td><td>24</td><td>22</td><td>20</td><td>21</td><td>21</td><td>19</td><td>21</td><td>19</td></tr></tbody></table><br><table class="livret-tab"><tbody><tr><td>Jour</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>$\text{Température en} ^\circ\text{C}$</td><td>19</td><td>21</td><td>20</td><td>22</td><td>20</td><td>22</td><td>22</td><td>24</td><td>23</td><td>22</td><td>23</td><td>24</td><td>23</td><td>25</td><td>25</td></tr></tbody></table><br><strong>a.</strong> Calculer la moyenne des températures arrondie au dixième.<br><strong>b.</strong> Calculer la médiane des températures.
 ---Q---
 
 ---CORR---
@@ -106,7 +106,7 @@ En septembre 2003, à Moscou, on a relevé les températures suivantes : <table 
 
 {{< livret-exo num="10" >}}
 ---INTRO---
-La grille des salaires des employés d'une PME est donnée par le tableau ci-dessous : <table class="livret-tab"><tbody><tr><td>Catégories</td><td>Ouvrier</td><td>Ouvrier qualifié</td><td>Cadre</td><td>Cadre supérieur</td><td>Dirigeant</td></tr><tr><td>$Salaires en €$</td><td>1320</td><td>1500</td><td>1740</td><td>3530</td><td>8300</td></tr><tr><td>Effectif</td><td>22</td><td>17</td><td>15</td><td>31</td><td>1</td></tr></tbody></table> **a.** Calculer le salaire médian. **b.** Calculer le salaire moyen arrondi au dixième.
+La grille des salaires des employés d'une PME est donnée par le tableau ci-dessous :<br><table class="livret-tab"><tbody><tr><td>Catégories</td><td>Ouvrier</td><td>Ouvrier qualifié</td><td>Cadre</td><td>Cadre supérieur</td><td>Dirigeant</td></tr><tr><td>Salaires en €</td><td>1320</td><td>1500</td><td>1740</td><td>3530</td><td>8300</td></tr><tr><td>Effectif</td><td>22</td><td>17</td><td>15</td><td>31</td><td>1</td></tr></tbody></table><br><strong>a.</strong> Calculer le salaire médian.<br><strong>b.</strong> Calculer le salaire moyen arrondi au dixième.
 ---Q---
 
 ---CORR---
@@ -115,7 +115,7 @@ La grille des salaires des employés d'une PME est donnée par le tableau ci-des
 
 {{< livret-exo num="11" >}}
 ---INTRO---
-Pour passer une commande de chaussures de foot, Madeleine a noté les pointures des membres de son club dans un tableau : <table class="livret-tab"><tbody><tr><td>Pointure</td><td>34</td><td>36</td><td>37</td><td>38</td><td>39</td><td>41</td><td>42</td></tr><tr><td>Effectif</td><td>7</td><td>2</td><td>7</td><td>3</td><td>7</td><td>2</td><td>2</td></tr></tbody></table> **a.** Calculer la médiane de ces pointures. **b.** Calculer la moyenne de ces pointures arrondie au dixième.
+Pour passer une commande de chaussures de foot, Madeleine a noté les pointures des membres de son club dans un tableau :<br><table class="livret-tab"><tbody><tr><td>Pointure</td><td>34</td><td>36</td><td>37</td><td>38</td><td>39</td><td>41</td><td>42</td></tr><tr><td>Effectif</td><td>7</td><td>2</td><td>7</td><td>3</td><td>7</td><td>2</td><td>2</td></tr></tbody></table><br><strong>a.</strong> Calculer la médiane de ces pointures.<br><strong>b.</strong> Calculer la moyenne de ces pointures arrondie au dixième.
 ---Q---
 
 ---CORR---
@@ -124,7 +124,7 @@ Pour passer une commande de chaussures de foot, Madeleine a noté les pointures 
 
 {{< livret-exo num="12" >}}
 ---INTRO---
-On a réalisé $99$ lancers d'un dé à $8$ faces. Les résultats sont inscrits dans le tableau ci-dessous : <table class="livret-tab"><tbody><tr><td>Scores</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>Nombre d'apparitions</td><td>18</td><td>13</td><td>10</td><td>8</td><td>10</td><td>17</td><td>12</td><td>11</td></tr></tbody></table> **a.** Calculer la moyenne des lancers arrondie au dixième. **b.** Calculer la médiane des lancers.
+On a réalisé $99$ lancers d'un dé à $8$ faces.<br>Les résultats sont inscrits dans le tableau ci-dessous :<br><table class="livret-tab"><tbody><tr><td>Scores</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>Nombre d'apparitions</td><td>18</td><td>13</td><td>10</td><td>8</td><td>10</td><td>17</td><td>12</td><td>11</td></tr></tbody></table><br><strong>a.</strong> Calculer la moyenne des lancers arrondie au dixième.<br><strong>b.</strong> Calculer la médiane des lancers.
 ---Q---
 
 ---CORR---

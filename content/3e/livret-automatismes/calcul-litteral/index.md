@@ -104,7 +104,7 @@ La différence de $8$ et du quotient de $10$ par $x$.
 
 {{< livret-exo num="4" >}}
 ---INTRO---
-Voici un programme de calcul : <ul><li>Choisir un nombre</li><li>Ajouter 6</li><li>Multiplier par 3</li><li>Ajouter 11</li></ul>Si on note $x$ le nombre de départ, quel est le résultat du programme de calcul ?
+Voici un programme de calcul : <br><ul><li>Choisir un nombre</li><li>Ajouter 6</li><li>Multiplier par 3</li><li>Ajouter 11</li></ul>Si on note $x$ le nombre de départ, quel est le résultat du programme de calcul ?
 ---Q---
 
 ---CORR---

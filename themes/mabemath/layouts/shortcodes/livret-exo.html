@@ -79,6 +79,30 @@
   {{ end }}
 {{ end }}
 
+{{/* Exercice du poly sans liste \item : tout le corps a atterri dans l'intro,
+     et la seule question est vide. Le tableau ou la figure doit descendre sous
+     l'en-tete, la phrase de consigne reste a cote du numero. */}}
+{{ $seule := false }}
+{{ if eq (len $questions) 1 }}
+  {{ $q0 := index $questions 0 }}
+  {{ if and (eq $q0.type "q") (not $q0.enonce) (not $q0.sub_questions) }}
+    {{ $seule = true }}
+  {{ end }}
+{{ end }}
+{{ if $seule }}
+  {{ $corr0 := (index $questions 0).corr }}
+  {{ range $tag := slice "<table" "<img" }}
+    {{ if and $seule (strings.Contains $intro $tag) }}
+      {{ $parts := split $intro $tag }}
+      {{ $bloc := print $tag (delimit (after 1 $parts) $tag) }}
+      {{ $intro = strings.TrimSpace (index $parts 0) }}
+      {{ $questions = slice (dict "type" "q" "enonce" $bloc "corr" $corr0 "sub_questions" slice) }}
+      {{ $nonum = true }}
+      {{ $seule = false }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 {{ $numFmt := printf "%02d" (int $num) }}
 {{ $letters := slice "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" }}
 
@@ -97,13 +121,16 @@
     {{ end }}
   </header>
 
+  {{ $aQuestion := false }}
+  {{ range $questions }}{{ if or .enonce .sub_questions (eq .type "part") }}{{ $aQuestion = true }}{{ end }}{{ end }}
+  {{ if $aQuestion }}
   <div class="q-list{{ if ne $cols "1" }} q-cols q-cols-{{ $cols }}{{ end }}{{ if $nonum }} q-nonum{{ end }}">
     {{ range $i, $q := $questions }}
 
     {{ if eq $q.type "part" }}
     <div class="partie-header">{{ $q.label | safeHTML }}</div>
 
-    {{ else }}
+    {{ else if or $q.enonce $q.sub_questions }}
     <div class="q-item">
       <div class="q-enonce">
         {{ $q.enonce | safeHTML }}
@@ -128,6 +155,7 @@
 
     {{ end }}
   </div>
+  {{ end }}
 
   {{/* ── Correction de l'exercice entier, en un seul bloc ── */}}
   {{ $aCorr := false }}

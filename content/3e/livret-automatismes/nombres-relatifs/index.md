@@ -66,7 +66,7 @@ $5{,}12 {\color{#EB7F73}\boldsymbol{\gt}} -5{,}19$<br><span class="corr-mental">
 
 {{< livret-exo num="2" >}}
 ---INTRO---
-Compléter le tableau suivant. <table class="livret-tab"><tbody><tr><td>Nombre</td><td></td><td></td><td>$6{,}4$</td><td>$-9{,}4$</td><td></td><td>$+9{,}8$</td></tr><tr><td>Opposé du nombre</td><td>$-2{,}6$</td><td>$+8{,}3$</td><td></td><td></td><td>$0{,}9$</td><td></td></tr></tbody></table>
+Compléter le tableau suivant.<br><table class="livret-tab"><tbody><tr><td>Nombre</td><td></td><td></td><td>$6{,}4$</td><td>$-9{,}4$</td><td></td><td>$+9{,}8$</td></tr><tr><td>Opposé du nombre</td><td>$-2{,}6$</td><td>$+8{,}3$</td><td></td><td></td><td>$0{,}9$</td><td></td></tr></tbody></table>
 ---Q---
 
 ---CORR---
@@ -272,15 +272,15 @@ $$\begin{aligned}D &= -13-(-19)+9-(-11)+(-8) \\ &= (-13) + 19 + 9 + 11 + (-8) \\
 ---INTRO---
 Donner le signe de l'expression numérique.
 ---Q---
-$ (-2) \times (-8) $<br> $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+$ (-2) \times (-8) $<br> <br>$\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
 Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
-$ (+10) \times (-16) \times (+10) $<br> $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+$ (+10) \times (-16) \times (+10) $<br> <br>$\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
 Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
-$ (-5) \times (+7) \times (-6) \times (-13) $<br> $\square\;$ négatif $\square\;$ nul $\square\;$ positif
+$ (-5) \times (+7) \times (-6) \times (-13) $<br> <br>$\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
 Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 {{< /livret-exo >}}
@@ -415,15 +415,15 @@ $$\begin{aligned}\dfrac{\dfrac{49}{6}}{\dfrac{-7}{3}} &= \dfrac{49}{6}\times \df
 ---INTRO---
 
 ---Q---
-Donner le signe de $n$ pour que <br> $A$ soit positif. <br>$ A = (+10) \times (+17)\times n $ <br> $\square\;$ négatif &emsp;&emsp; $\square\;$ positif
+Donner le signe de $n$ pour que <br> $A$ soit positif. <br>$ A = (+10) \times (+17)\times n $ <br> <br>$\square\;$ négatif &emsp;&emsp; $\square\;$ positif
 ---CORR---
 Sans $n$, l'expression compte 0 facteur négatif, elle est donc positive.<br>Pour que le résultat soit positif, $n$ doit être ${\color{#EB7F73}\boldsymbol{positif}}$.
 ---Q---
-Donner le signe de $n$ pour que <br> $B$ soit positif. <br>$ B = \dfrac {(-4)\times n\times (+19)\times (+8)}{(+7)\times (+16)} $ <br> $\square\;$ négatif &emsp;&emsp; $\square\;$ positif
+Donner le signe de $n$ pour que <br> $B$ soit positif. <br>$ B = \dfrac {(-4)\times n\times (+19)\times (+8)}{(+7)\times (+16)} $ <br> <br>$\square\;$ négatif &emsp;&emsp; $\square\;$ positif
 ---CORR---
 Sans $n$, l'expression compte 1 facteur négatif, elle est donc négative.<br>Pour que le résultat soit positif, $n$ doit être ${\color{#EB7F73}\boldsymbol{négatif}}$.
 ---Q---
-Donner le signe de $n$ pour que <br> $C$ soit positif. <br>$ C = (+4) \times (+7)\times (-12)\times n $ <br> $\square\;$ négatif &emsp;&emsp; $\square\;$ positif
+Donner le signe de $n$ pour que <br> $C$ soit positif. <br>$ C = (+4) \times (+7)\times (-12)\times n $ <br> <br>$\square\;$ négatif &emsp;&emsp; $\square\;$ positif
 ---CORR---
 Sans $n$, l'expression compte 1 facteur négatif, elle est donc négative.<br>Pour que le résultat soit positif, $n$ doit être ${\color{#EB7F73}\boldsymbol{négatif}}$.
 {{< /livret-exo >}}

@@ -52,7 +52,7 @@ $\dfrac{10}{200}=\dfrac{10{\color{#C5607A}\boldsymbol{\div 2}}}{200{\color{#C560
 
 {{< livret-exo num="2" >}}
 ---INTRO---
-Compléter le tableau de correspondances. <table class="livret-tab"><tbody><tr><td>Nombre décimal</td><td>$0{,}7$</td><td></td><td></td><td>$0{,}3$</td><td></td><td></td></tr><tr><td>Fraction</td><td></td><td></td><td>$\frac{9}{10}$</td><td></td><td></td><td>$\frac{1}{4}$</td></tr><tr><td>Pourcentage</td><td>$\%$</td><td>$20 \%$</td><td>$\%$</td><td>$\%$</td><td>$50 \%$</td><td>$\%$</td></tr></tbody></table>
+Compléter le tableau de correspondances.<br><table class="livret-tab"><tbody><tr><td>Nombre décimal</td><td>$0{,}7$</td><td></td><td></td><td>$0{,}3$</td><td></td><td></td></tr><tr><td>Fraction</td><td></td><td></td><td>$\frac{9}{10}$</td><td></td><td></td><td>$\frac{1}{4}$</td></tr><tr><td>Pourcentage</td><td>$\%$</td><td>$20 \%$</td><td>$\%$</td><td>$\%$</td><td>$50 \%$</td><td>$\%$</td></tr></tbody></table>
 ---Q---
 
 ---CORR---

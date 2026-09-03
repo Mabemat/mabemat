@@ -59,7 +59,7 @@ Un événement qui se réalise quelle que soit l'issue est un événement ${\col
 
 {{< livret-exo num="3" >}}
 ---INTRO---
-Dans un paquet de bonbons, il y a 13 nounours. 4 sont rouges, 2 sont verts, 2 sont bleus, 3 sont noirs et 2 sont jaunes.<br> Karole choisit au hasard l'un d'entre eux.<br> **a.** Quelle est la probabilité que son choix tombe sur l'un des nounours bleus ? <br>**b.** Quelle est la probabilité que son choix tombe sur l'un des nounours rouges ?<br>**c.** Quelle est la probabilité que son choix ne tombe pas sur l'un des nounours jaunes ?<br>**d.** Quelle est la probabilité que son choix tombe sur l'un des nounours bleus ou rouges ?
+Dans un paquet de bonbons, il y a 13 nounours. 4 sont rouges, 2 sont verts, 2 sont bleus, 3 sont noirs et 2 sont jaunes.<br> Karole choisit au hasard l'un d'entre eux.<br> <strong>a.</strong> Quelle est la probabilité que son choix tombe sur l'un des nounours bleus ? <br><strong>b.</strong> Quelle est la probabilité que son choix tombe sur l'un des nounours rouges ?<br><strong>c.</strong> Quelle est la probabilité que son choix ne tombe pas sur l'un des nounours jaunes ?<br><strong>d.</strong> Quelle est la probabilité que son choix tombe sur l'un des nounours bleus ou rouges ?
 ---Q---
 
 ---CORR---
@@ -68,7 +68,7 @@ Il y a $13$ nounours en tout.<br><br>**a.** $2$ sont bleus : $\dfrac{2}{13} = {\
 
 {{< livret-exo num="4" >}}
 ---INTRO---
-Lors d'un match de rugby, l'équipe qui reçoit un adversaire a une probabilité de $ 0{,}23$ de gagner son match et $0{,}16$ de faire un match nul. **a.** Quelle est la probabilité, pour cette équipe, de ne pas perdre le match ? **b.** Quelle est la probabilité, pour cette équipe, de perdre le match ?
+Lors d'un match de rugby, l'équipe qui reçoit un adversaire a une probabilité de $ 0{,}23$ de gagner son match et $0{,}16$ de faire un match nul.<br><strong>a.</strong> Quelle est la probabilité, pour cette équipe, de ne pas perdre le match ?<br><strong>b.</strong> Quelle est la probabilité, pour cette équipe, de perdre le match ?
 ---Q---
 
 ---CORR---
@@ -102,7 +102,7 @@ Il y a $8$ trèfles.<br>$\dfrac{8}{32} = \dfrac{1}{4} = {\color{#EB7F73}\boldsym
 
 {{< livret-exo num="6" >}}
 ---INTRO---
-Dans une urne, il y a 18 boules. 3 sont rouges, 3 sont vertes, 4 sont bleues, 5 sont noires et 3 sont blanches.<br> Wendy choisit au hasard l'une d'entre elles. Elle regarde la couleur.<br>**a.** Est-ce que c'est une expérience aléatoire ? Pourquoi ?<br>**b.** Quelles sont les issues ?<br>**c.** Quelles issues réalisent l'événement «  Tomber sur l'une des boules noires ou blanches  » ?<br>**d.** Quel est l'événement contraire de «  Tomber sur l'une des boules noires ou blanches  » ?
+Dans une urne, il y a 18 boules. 3 sont rouges, 3 sont vertes, 4 sont bleues, 5 sont noires et 3 sont blanches.<br> Wendy choisit au hasard l'une d'entre elles. Elle regarde la couleur.<br><strong>a.</strong> Est-ce que c'est une expérience aléatoire ? Pourquoi ?<br><strong>b.</strong> Quelles sont les issues ?<br><strong>c.</strong> Quelles issues réalisent l'événement «  Tomber sur l'une des boules noires ou blanches  » ?<br><strong>d.</strong> Quel est l'événement contraire de «  Tomber sur l'une des boules noires ou blanches  » ?
 ---Q---
 
 ---CORR---
@@ -113,7 +113,7 @@ Dans une urne, il y a 18 boules. 3 sont rouges, 3 sont vertes, 4 sont bleues, 5 
 ---INTRO---
 On choisit au hasard une fleur dans un bouquet de roses et de tulipes.
 ---Q---
-Compléter le tableau des effectifs suivants : <table class="livret-tab"><tbody><tr><td>$~$</td><td>Tulipes</td><td>Roses</td><td>Total</td></tr><tr><td>Rouges</td><td>9</td><td>7</td><td></td></tr><tr><td>Jaunes</td><td></td><td></td><td>16</td></tr><tr><td>Total</td><td>15</td><td></td><td></td></tr></tbody></table>
+Compléter le tableau des effectifs suivants :<br><table class="livret-tab"><tbody><tr><td>$~$</td><td>Tulipes</td><td>Roses</td><td>Total</td></tr><tr><td>Rouges</td><td>9</td><td>7</td><td></td></tr><tr><td>Jaunes</td><td></td><td></td><td>16</td></tr><tr><td>Total</td><td>15</td><td></td><td></td></tr></tbody></table>
 ---CORR---
 On complète par lignes et par colonnes :<br>$9 + 7 = 16$ rouges ; $15 - 9 = 6$ tulipes jaunes ; $16 - 6 = 10$ roses jaunes ; $7 + 10 = 17$ roses ; $15 + 17 = 32$ fleurs en tout.<br><table class="livret-tab"><tbody><tr><td></td><td>Tulipes</td><td>Roses</td><td>Total</td></tr><tr><td>Rouges</td><td>9</td><td>7</td><td>${\color{#EB7F73}\boldsymbol{16}}$</td></tr><tr><td>Jaunes</td><td>${\color{#EB7F73}\boldsymbol{6}}$</td><td>${\color{#EB7F73}\boldsymbol{10}}$</td><td>16</td></tr><tr><td>Total</td><td>15</td><td>${\color{#EB7F73}\boldsymbol{17}}$</td><td>${\color{#EB7F73}\boldsymbol{32}}$</td></tr></tbody></table>
 ---Q---
