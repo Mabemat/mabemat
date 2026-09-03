@@ -52,9 +52,9 @@ $\dfrac{10}{200}=\dfrac{10{\color{#C5607A}\boldsymbol{\div 2}}}{200{\color{#C560
 
 {{< livret-exo num="2" >}}
 ---INTRO---
-Compléter le tableau de correspondances.
+Compléter le tableau de correspondances. <table class="livret-tab"><tbody><tr><td>Nombre décimal</td><td>$0{,}7$</td><td></td><td></td><td>$0{,}3$</td><td></td><td></td></tr><tr><td>Fraction</td><td></td><td></td><td>$\frac{9}{10}$</td><td></td><td></td><td>$\frac{1}{4}$</td></tr><tr><td>Pourcentage</td><td>$\%$</td><td>$20 \%$</td><td>$\%$</td><td>$\%$</td><td>$50 \%$</td><td>$\%$</td></tr></tbody></table>
 ---Q---
-<table class="livret-tab"><tbody><tr><th>Nombre décimal</th><td>$0{,}7$</td><td></td><td></td><td>$0{,}3$</td><td></td><td></td></tr><tr><th>Fraction</th><td></td><td></td><td>$\frac{9}{10}$</td><td></td><td></td><td>$\frac{1}{4}$</td></tr><tr><th>Pourcentage</th><td>$\phantom{rrrrr}\%$</td><td>$20~\%$</td><td>$\phantom{rrrrr}\%$</td><td>$\phantom{rrrrr}\%$</td><td>$50~\%$</td><td>$\phantom{rrrrr}\%$</td></tr></tbody></table>
+
 ---CORR---
 <table class="livret-tab"><tbody><tr><th>Nombre décimal</th><td>$0{,}7$</td><td>${\color{#EB7F73}\boldsymbol{0{,}2}}$</td><td>${\color{#EB7F73}\boldsymbol{0{,}9}}$</td><td>$0{,}3$</td><td>${\color{#EB7F73}\boldsymbol{0{,}5}}$</td><td>${\color{#EB7F73}\boldsymbol{0{,}25}}$</td></tr><tr><th>Fraction</th><td>${\color{#EB7F73}\boldsymbol{\frac{7}{10}}}$</td><td>${\color{#EB7F73}\boldsymbol{\frac{1}{5}}}$</td><td>$\frac{9}{10}$</td><td>${\color{#EB7F73}\boldsymbol{\frac{3}{10}}}$</td><td>${\color{#EB7F73}\boldsymbol{\frac{1}{2}}}$</td><td>$\frac{1}{4}$</td></tr><tr><th>Pourcentage</th><td>${\color{#EB7F73}\boldsymbol{70}}~\%$</td><td>$20~\%$</td><td>${\color{#EB7F73}\boldsymbol{90}}~\%$</td><td>${\color{#EB7F73}\boldsymbol{30}}~\%$</td><td>$50~\%$</td><td>${\color{#EB7F73}\boldsymbol{25}}~\%$</td></tr></tbody></table>
 {{< /livret-exo >}}
@@ -65,15 +65,15 @@ Calculer le pourcentage demandé.
 ---Q---
 Dans un troupeau de $20$ moutons, il y a $10$ brebis. quel est le pourcentage de brebis ?
 ---CORR---
-La proportion est $\dfrac{10}{20}$.<br>$\dfrac{10}{20}=\dfrac{10{\color{#C5607A}\boldsymbol{\times 5}}}{20{\color{#C5607A}\boldsymbol{\times 5}}}=\dfrac{50}{100}$<br>C'est donc {\color{#EB7F73}\boldsymbol{50~\%}}.
+La proportion est $\dfrac{10}{20}$.<br>$\dfrac{10}{20}=\dfrac{10{\color{#C5607A}\boldsymbol{\times 5}}}{20{\color{#C5607A}\boldsymbol{\times 5}}}=\dfrac{50}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{50~\%}}$.
 ---Q---
 Une usine fabrique $500$ pièces, dont $50$ sont défectueuses. Quel est le pourcentage de pièces défectueuses ?
 ---CORR---
-La proportion est $\dfrac{50}{500}$.<br>$\dfrac{50}{500}=\dfrac{50{\color{#C5607A}\boldsymbol{\div 5}}}{500{\color{#C5607A}\boldsymbol{\div 5}}}=\dfrac{10}{100}$<br>C'est donc {\color{#EB7F73}\boldsymbol{10~\%}}.
+La proportion est $\dfrac{50}{500}$.<br>$\dfrac{50}{500}=\dfrac{50{\color{#C5607A}\boldsymbol{\div 5}}}{500{\color{#C5607A}\boldsymbol{\div 5}}}=\dfrac{10}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{10~\%}}$.
 ---Q---
 Dans un groupe de $50$ élèves, $49$ portent des lunettes. Quel est le pourcentage d'élèves portant des lunettes ?
 ---CORR---
-La proportion est $\dfrac{49}{50}$.<br>$\dfrac{49}{50}=\dfrac{49{\color{#C5607A}\boldsymbol{\times 2}}}{50{\color{#C5607A}\boldsymbol{\times 2}}}=\dfrac{98}{100}$<br>C'est donc {\color{#EB7F73}\boldsymbol{98~\%}}.
+La proportion est $\dfrac{49}{50}$.<br>$\dfrac{49}{50}=\dfrac{49{\color{#C5607A}\boldsymbol{\times 2}}}{50{\color{#C5607A}\boldsymbol{\times 2}}}=\dfrac{98}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{98~\%}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="4" >}}
@@ -82,15 +82,15 @@ Compléter avec le bon pourcentage.
 ---Q---
 Dans un groupe de $20$ enfants, $5$ sont des filles.<br>Elles représentent $\ldots\ldots$ $\%$ du groupe.
 ---CORR---
-La proportion est $\dfrac{5}{20}$.<br>$\dfrac{5}{20}=\dfrac{5{\color{#C5607A}\boldsymbol{\times 5}}}{20{\color{#C5607A}\boldsymbol{\times 5}}}=\dfrac{25}{100}$<br>C'est donc {\color{#EB7F73}\boldsymbol{25~\%}}.
+La proportion est $\dfrac{5}{20}$.<br>$\dfrac{5}{20}=\dfrac{5{\color{#C5607A}\boldsymbol{\times 5}}}{20{\color{#C5607A}\boldsymbol{\times 5}}}=\dfrac{25}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{25~\%}}$.
 ---Q---
 Le prix d'un article coûtant $60$ € augmente de $42$ €.<br> Quel est le pourcentage d'augmentation de ce prix ?
 ---CORR---
-La proportion est $\dfrac{42}{60}$.<br>$\dfrac{42}{60}=\dfrac{42{\color{#C5607A}\boldsymbol{\div 0}}}{60{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{70}{100}$<br>C'est donc {\color{#EB7F73}\boldsymbol{70~\%}}.
+La proportion est $\dfrac{42}{60}$.<br>$\dfrac{42}{60}=\dfrac{42{\color{#C5607A}\boldsymbol{\div 0}}}{60{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{70}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{70~\%}}$.
 ---Q---
 Dans un groupe de $40$ enfants, $16$ sont des garçons.<br>Ils représentent $\ldots\ldots$ $\%$ du groupe.
 ---CORR---
-La proportion est $\dfrac{16}{40}$.<br>$\dfrac{16}{40}=\dfrac{16{\color{#C5607A}\boldsymbol{\div 0}}}{40{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{40}{100}$<br>C'est donc {\color{#EB7F73}\boldsymbol{40~\%}}.
+La proportion est $\dfrac{16}{40}$.<br>$\dfrac{16}{40}=\dfrac{16{\color{#C5607A}\boldsymbol{\div 0}}}{40{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{40}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{40~\%}}$.
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Calculer un pourcentage d'une quantité" >}}
@@ -162,15 +162,15 @@ Calculer les quantités correspondantes.
 ---Q---
 Le cadeau commun que nous souhaitons faire à Nora coûte $50$ €. Je participe à hauteur de $28~\%$ du prix total. <br>Combien ai-je donné pour le cadeau de Nora ?
 ---CORR---
-$\dfrac{28}{100}\times 50=\dfrac{28\times 50}{100}={\color{#EB7F73}\boldsymbol{14}}$<br>Il y a donc {\color{#EB7F73}\boldsymbol{14}} euros.
+$\dfrac{28}{100}\times 50=\dfrac{28\times 50}{100}={\color{#EB7F73}\boldsymbol{14}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{14}}$ euros.
 ---Q---
 Une réserve de protection d'oiseaux contient $2\,180$ individus d'oiseaux. On dénombre $5~\%$ de bruants des roseaux.<br>Quel est le nombre de bruants des roseaux ?
 ---CORR---
-$\dfrac{5}{100}\times 2180=\dfrac{5\times 2180}{100}={\color{#EB7F73}\boldsymbol{109}}$<br>Il y a donc {\color{#EB7F73}\boldsymbol{109}} bruants des roseaux.
+$\dfrac{5}{100}\times 2180=\dfrac{5\times 2180}{100}={\color{#EB7F73}\boldsymbol{109}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{109}}$ bruants des roseaux.
 ---Q---
 Dans une entreprise de $120$ salariés, il y a $20\,\%$ de cadres. <br>Combien y a-t-il de cadres dans cette entreprise ?
 ---CORR---
-$\dfrac{20}{100}\times 120=\dfrac{20\times 120}{100}={\color{#EB7F73}\boldsymbol{24}}$<br>Il y a donc {\color{#EB7F73}\boldsymbol{24}} cadres.
+$\dfrac{20}{100}\times 120=\dfrac{20\times 120}{100}={\color{#EB7F73}\boldsymbol{24}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{24}}$ cadres.
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Augmenter ou diminuer d'un pourcentage" >}}
@@ -193,21 +193,21 @@ Un billet de cinéma coûte 12 €. Guillaume bénéficie d'une réduction de $
 ---SUB-Q---
 Calculer le montant de la réduction.
 ---SUB-CORR---
-$\dfrac{20}{100}\times 12=\dfrac{20\times 12}{100}={\color{#EB7F73}\boldsymbol{2{,}4}}$<br>La réduction est de {\color{#EB7F73}\boldsymbol{2{,}4}} €.
+$\dfrac{20}{100}\times 12=\dfrac{20\times 12}{100}={\color{#EB7F73}\boldsymbol{2{,}4}}$<br>La réduction est de ${\color{#EB7F73}\boldsymbol{2{,}4}}$ €.
 ---SUB-Q---
 Calculer le prix de son billet de cinéma.
 ---SUB-CORR---
-$12 - 2{,}4 = {\color{#EB7F73}\boldsymbol{9{,}6}}$<br>Le montant est de {\color{#EB7F73}\boldsymbol{9{,}6}} €.
+$12 - 2{,}4 = {\color{#EB7F73}\boldsymbol{9{,}6}}$<br>Le montant est de ${\color{#EB7F73}\boldsymbol{9{,}6}}$ €.
 ---Q---
 Le loyer de l'appartement de Gabrielle coûte 742 €. <br>Au 1er janvier, il augmente de $10~\%$.
 ---SUB-Q---
 Calculer le montant de l'augmentation.
 ---SUB-CORR---
-$\dfrac{10}{100}\times 742=\dfrac{10\times 742}{100}={\color{#EB7F73}\boldsymbol{74{,}2}}$<br>La augmentation est de {\color{#EB7F73}\boldsymbol{74{,}2}} €.
+$\dfrac{10}{100}\times 742=\dfrac{10\times 742}{100}={\color{#EB7F73}\boldsymbol{74{,}2}}$<br>La augmentation est de ${\color{#EB7F73}\boldsymbol{74{,}2}}$ €.
 ---SUB-Q---
 Calculer le montant au 1er janvier de son loyer.
 ---SUB-CORR---
-$742 + 74{,}2 = {\color{#EB7F73}\boldsymbol{816{,}2}}$<br>Le montant est de {\color{#EB7F73}\boldsymbol{816{,}2}} €.
+$742 + 74{,}2 = {\color{#EB7F73}\boldsymbol{816{,}2}}$<br>Le montant est de ${\color{#EB7F73}\boldsymbol{816{,}2}}$ €.
 {{< /livret-exo >}}
 
 {{< livret-exo num="8" >}}
@@ -216,27 +216,27 @@ $742 + 74{,}2 = {\color{#EB7F73}\boldsymbol{816{,}2}}$<br>Le montant est de {\co
 ---Q---
 Le prix trimestriel d'un abonnement de streaming était de $32$ € et il a diminué de $20~\%$.<br> Calculer son nouveau prix.
 ---CORR---
-Diminuer de $20~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{0{,}8}}$.<br>$32\times 0{,}8={\color{#EB7F73}\boldsymbol{25{,}6}}$<br>Le résultat est {\color{#EB7F73}\boldsymbol{25{,}6}} euros.
+Diminuer de $20~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{0{,}8}}$.<br>$32\times 0{,}8={\color{#EB7F73}\boldsymbol{25{,}6}}$<br>Le résultat est ${\color{#EB7F73}\boldsymbol{25{,}6}}$ euros.
 ---Q---
 Un article coûtait $8{,}20$ € et son prix est soldé à $-60~\%$.<br> Calculer son nouveau prix.
 ---CORR---
-Diminuer de $60~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{0{,}4}}$.<br>$8{,}2\times 0{,}4={\color{#EB7F73}\boldsymbol{3{,}28}}$<br>Le résultat est {\color{#EB7F73}\boldsymbol{3{,}28}} euros.
+Diminuer de $60~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{0{,}4}}$.<br>$8{,}2\times 0{,}4={\color{#EB7F73}\boldsymbol{3{,}28}}$<br>Le résultat est ${\color{#EB7F73}\boldsymbol{3{,}28}}$ euros.
 ---Q---
 Il y a 15 ans, la population d'une ville était de $75\,000$ habitants. Depuis, elle a augmenté de $17~\%$.<br> Calculer le nombre d'habitants actuel de cette ville.
 ---CORR---
-Augmenter de $17~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{1{,}17}}$.<br>$75000\times 1{,}17={\color{#EB7F73}\boldsymbol{87750}}$<br>Le résultat est {\color{#EB7F73}\boldsymbol{87750}} habitants.
+Augmenter de $17~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{1{,}17}}$.<br>$75000\times 1{,}17={\color{#EB7F73}\boldsymbol{87750}}$<br>Le résultat est ${\color{#EB7F73}\boldsymbol{87750}}$ habitants.
 ---Q---
 En 2020, le chiffre d'affaires d'un commerce était de $200\,000$ €. En 2021, il a augmenté de $30~\%$.<br> Calculer le chiffre d'affaires de 2021.
 ---CORR---
-Augmenter de $30~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{1{,}3}}$.<br>$200000\times 1{,}3={\color{#EB7F73}\boldsymbol{260000}}$<br>Le résultat est {\color{#EB7F73}\boldsymbol{260000}} euros.
+Augmenter de $30~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{1{,}3}}$.<br>$200000\times 1{,}3={\color{#EB7F73}\boldsymbol{260000}}$<br>Le résultat est ${\color{#EB7F73}\boldsymbol{260000}}$ euros.
 ---Q---
 Un lycée avait $350$ élèves en 2024. Depuis, le nombre d'élèves a diminué de $2~\%$. <br> Calculer le nombre d'élèves dans ce lycée cette année.
 ---CORR---
-Diminuer de $2~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{0{,}98}}$.<br>$350\times 0{,}98={\color{#EB7F73}\boldsymbol{343}}$<br>Le résultat est {\color{#EB7F73}\boldsymbol{343}} élèves.
+Diminuer de $2~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{0{,}98}}$.<br>$350\times 0{,}98={\color{#EB7F73}\boldsymbol{343}}$<br>Le résultat est ${\color{#EB7F73}\boldsymbol{343}}$ élèves.
 ---Q---
 Le prix de mon vélo électrique était de $733$ € l'année dernière et il a augmenté de $6~\%$.<br> Calculer son nouveau prix.
 ---CORR---
-Augmenter de $6~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{1{,}06}}$.<br>$733\times 1{,}06={\color{#EB7F73}\boldsymbol{776{,}98}}$<br>Le résultat est {\color{#EB7F73}\boldsymbol{776{,}98}} euros.
+Augmenter de $6~\%$ revient à multiplier par ${\color{#C5607A}\boldsymbol{1{,}06}}$.<br>$733\times 1{,}06={\color{#EB7F73}\boldsymbol{776{,}98}}$<br>Le résultat est ${\color{#EB7F73}\boldsymbol{776{,}98}}$ euros.
 {{< /livret-exo >}}
 
 ## Pour aller plus loin
@@ -247,19 +247,19 @@ Compléter.
 ---Q---
 Augmenter de $130~\%$ revient à multiplier par ...
 ---CORR---
-$1+\dfrac{130}{100}={\color{#EB7F73}\boldsymbol{2{,}3}}$<br>Augmenter de $130~\%$ revient à multiplier par {\color{#EB7F73}\boldsymbol{2{,}3}}.
+$1+\dfrac{130}{100}={\color{#EB7F73}\boldsymbol{2{,}3}}$<br>Augmenter de $130~\%$ revient à multiplier par ${\color{#EB7F73}\boldsymbol{2{,}3}}$.
 ---Q---
 Diminuer de $5~\%$ revient à multiplier par ...
 ---CORR---
-$1-\dfrac{5}{100}={\color{#EB7F73}\boldsymbol{0{,}95}}$<br>Diminuer de $5~\%$ revient à multiplier par {\color{#EB7F73}\boldsymbol{0{,}95}}.
+$1-\dfrac{5}{100}={\color{#EB7F73}\boldsymbol{0{,}95}}$<br>Diminuer de $5~\%$ revient à multiplier par ${\color{#EB7F73}\boldsymbol{0{,}95}}$.
 ---Q---
 Diminuer de $29~\%$ revient à multiplier par ...
 ---CORR---
-$1-\dfrac{29}{100}={\color{#EB7F73}\boldsymbol{0{,}71}}$<br>Diminuer de $29~\%$ revient à multiplier par {\color{#EB7F73}\boldsymbol{0{,}71}}.
+$1-\dfrac{29}{100}={\color{#EB7F73}\boldsymbol{0{,}71}}$<br>Diminuer de $29~\%$ revient à multiplier par ${\color{#EB7F73}\boldsymbol{0{,}71}}$.
 ---Q---
 Augmenter de $10~\%$ revient à multiplier par ...
 ---CORR---
-$1+\dfrac{10}{100}={\color{#EB7F73}\boldsymbol{1{,}1}}$<br>Augmenter de $10~\%$ revient à multiplier par {\color{#EB7F73}\boldsymbol{1{,}1}}.
+$1+\dfrac{10}{100}={\color{#EB7F73}\boldsymbol{1{,}1}}$<br>Augmenter de $10~\%$ revient à multiplier par ${\color{#EB7F73}\boldsymbol{1{,}1}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="10" >}}
@@ -268,18 +268,18 @@ Compléter.
 ---Q---
 Multiplier par $2{,}6$ revient à ...
 ---CORR---
-$2{,}6-1=1{,}6$, soit une augmentation de $160~\%$.<br>Multiplier par $2{,}6$ revient à augmenter de {\color{#EB7F73}\boldsymbol{160~\%}}.
+$2{,}6-1=1{,}6$, soit une augmentation de $160~\%$.<br>Multiplier par $2{,}6$ revient à augmenter de ${\color{#EB7F73}\boldsymbol{160~\%}}$.
 ---Q---
 Multiplier par $0{,}9$ revient à ...
 ---CORR---
-$0{,}9-1=-0{,}1$, soit une diminution de $10~\%$.<br>Multiplier par $0{,}9$ revient à diminuer de {\color{#EB7F73}\boldsymbol{10~\%}}.
+$0{,}9-1=-0{,}1$, soit une diminution de $10~\%$.<br>Multiplier par $0{,}9$ revient à diminuer de ${\color{#EB7F73}\boldsymbol{10~\%}}$.
 ---Q---
 Multiplier par $1{,}7$ revient à ...
 ---CORR---
-$1{,}7-1=0{,}7$, soit une augmentation de $70~\%$.<br>Multiplier par $1{,}7$ revient à augmenter de {\color{#EB7F73}\boldsymbol{70~\%}}.
+$1{,}7-1=0{,}7$, soit une augmentation de $70~\%$.<br>Multiplier par $1{,}7$ revient à augmenter de ${\color{#EB7F73}\boldsymbol{70~\%}}$.
 ---Q---
 Multiplier par $0{,}7$ revient à ...
 ---CORR---
-$0{,}7-1=-0{,}3$, soit une diminution de $30~\%$.<br>Multiplier par $0{,}7$ revient à diminuer de {\color{#EB7F73}\boldsymbol{30~\%}}.
+$0{,}7-1=-0{,}3$, soit une diminution de $30~\%$.<br>Multiplier par $0{,}7$ revient à diminuer de ${\color{#EB7F73}\boldsymbol{30~\%}}$.
 {{< /livret-exo >}}
 

@@ -6,8 +6,8 @@ weight: 1
 domaine: "Nombres et calculs"
 niveau_origine: "6e · 5e · 4e"
 nb_exercices: 20
-has_livretCorr: false
-corrections_actives: [1, 2]
+has_livretCorr: true
+corrections_actives: [1, 2, 3, 4, 5, 6]
 # Pour n'ouvrir que certains exercices, decommenter et lister leurs numeros.
 # Sans cette ligne, les 20 corrections sont accessibles.
 # corrections_actives: [1, 2, 3]

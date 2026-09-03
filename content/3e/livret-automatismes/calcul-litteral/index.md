@@ -238,18 +238,18 @@ Déterminer la dernière opération à effectuer s'il fallait faire le calcul po
 ---Q---
 $2\times(x+5y)$
 ---CORR---
-On calcule d'abord la parenthèse $x+5y$, la dernière opération est donc la {\color{#EB7F73}\boldsymbol{multiplication}} par $2$.
+On calcule d'abord la parenthèse $x+5y$, la dernière opération est donc la ${\color{#EB7F73}\boldsymbol{multiplication}}$ par $2$.
 ---Q---
 $3\times(6+x)\div y$
 ---CORR---
-On calcule la parenthèse, puis le produit par $3$, et on divise en dernier : la dernière opération est la {\color{#EB7F73}\boldsymbol{division}} par $y$.
+On calcule la parenthèse, puis le produit par $3$, et on divise en dernier : la dernière opération est la ${\color{#EB7F73}\boldsymbol{division}}$ par $y$.
 ---Q---
 $2\times(x+2y)$
 ---CORR---
-On calcule d'abord la parenthèse $x+2y$, la dernière opération est donc la {\color{#EB7F73}\boldsymbol{multiplication}} par $2$.
+On calcule d'abord la parenthèse $x+2y$, la dernière opération est donc la ${\color{#EB7F73}\boldsymbol{multiplication}}$ par $2$.
 ---Q---
 $(2-x)\div 3$
 ---CORR---
-On calcule d'abord la parenthèse $2-x$, la dernière opération est donc la {\color{#EB7F73}\boldsymbol{division}} par $3$.
+On calcule d'abord la parenthèse $2-x$, la dernière opération est donc la ${\color{#EB7F73}\boldsymbol{division}}$ par $3$.
 {{< /livret-exo >}}
 

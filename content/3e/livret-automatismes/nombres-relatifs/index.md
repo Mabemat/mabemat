@@ -66,9 +66,9 @@ $5{,}12 {\color{#EB7F73}\boldsymbol{\gt}} -5{,}19$<br><span class="corr-mental">
 
 {{< livret-exo num="2" >}}
 ---INTRO---
-Compléter le tableau suivant.
+Compléter le tableau suivant. <table class="livret-tab"><tbody><tr><td>Nombre</td><td></td><td></td><td>$6{,}4$</td><td>$-9{,}4$</td><td></td><td>$+9{,}8$</td></tr><tr><td>Opposé du nombre</td><td>$-2{,}6$</td><td>$+8{,}3$</td><td></td><td></td><td>$0{,}9$</td><td></td></tr></tbody></table>
 ---Q---
-<table class="livret-tab"><tbody><tr><th>Nombre</th><td></td><td></td><td>$6{,}4$</td><td>$-9{,}4$</td><td></td><td>$9{,}8$</td></tr><tr><th>Opposé du nombre</th><td>$-2{,}6$</td><td>$8{,}3$</td><td></td><td></td><td>$-0{,}9$</td><td></td></tr></tbody></table>
+
 ---CORR---
 L'opposé d'un nombre s'obtient en changeant son signe.<br><table class="livret-tab"><tbody><tr><th>Nombre</th><td>${\color{#EB7F73}\boldsymbol{2{,}6}}$</td><td>${\color{#EB7F73}\boldsymbol{-8{,}3}}$</td><td>$6{,}4$</td><td>$-9{,}4$</td><td>${\color{#EB7F73}\boldsymbol{0{,}9}}$</td><td>$9{,}8$</td></tr><tr><th>Opposé du nombre</th><td>$-2{,}6$</td><td>$8{,}3$</td><td>${\color{#EB7F73}\boldsymbol{-6{,}4}}$</td><td>${\color{#EB7F73}\boldsymbol{9{,}4}}$</td><td>$-0{,}9$</td><td>${\color{#EB7F73}\boldsymbol{-9{,}8}}$</td></tr></tbody></table>
 {{< /livret-exo >}}
@@ -274,36 +274,36 @@ Donner le signe de l'expression numérique.
 ---Q---
 $ (-2) \times (-8) $<br> $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
 $ (+10) \times (-16) \times (+10) $<br> $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
 $ (-5) \times (+7) \times (-6) \times (-13) $<br> $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="13" >}}
 ---INTRO---
 Donner le signe de l'expression numérique.
 ---Q---
-$ \dfrac{(+6)}{(+7)} $ est $\square\;$ négatif \qquad $\square\;$ nul \qquad $\square\;$ positif
+$ \dfrac{(+6)}{(+7)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Aucun facteur négatif.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
-$ \dfrac{(+11)}{(+7)} $ est $\square\;$ négatif \qquad $\square\;$ nul \qquad $\square\;$ positif
+$ \dfrac{(+11)}{(+7)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Aucun facteur négatif.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
-$ \dfrac{(-19)}{(+15)} $ est $\square\;$ négatif \qquad $\square\;$ nul \qquad $\square\;$ positif
+$ \dfrac{(-19)}{(+15)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
-$ \dfrac{(-16)}{(+4)} $ est $\square\;$ négatif \qquad $\square\;$ nul \qquad $\square\;$ positif
+$ \dfrac{(-16)}{(+4)} $ est $\square\;$ négatif &emsp;&emsp; $\square\;$ nul &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="16" >}}
@@ -312,19 +312,19 @@ Donner le signe de l'expression numérique.
 ---Q---
 $ \dfrac{(+19) \times (-12)}{(+12) \times (+9)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+Il y a 1 facteurs négatif, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
 $ \dfrac{(-9) \times (+16)}{(+16) \times (-12)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+Il y a 2 facteurs négatifs, un nombre pair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
 $ \dfrac{(+10) \times (+5)}{(+3) \times (+16)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Aucun facteur négatif.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+Aucun facteur négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
 $ \dfrac{(-8) \times (+15)}{(-5) \times (-16)} $ est $\square\;$ négatif $\square\;$ nul $\square\;$ positif
 ---CORR---
-Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+Il y a 3 facteurs négatifs, un nombre impair.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="11" cols="2" >}}
@@ -415,17 +415,17 @@ $$\begin{aligned}\dfrac{\dfrac{49}{6}}{\dfrac{-7}{3}} &= \dfrac{49}{6}\times \df
 ---INTRO---
 
 ---Q---
-Donner le signe de $n$ pour que <br> $A$ soit positif. <br>$ A = (+10) \times (+17)\times n $ <br> $\square\;$ négatif \qquad $\square\;$ positif
+Donner le signe de $n$ pour que <br> $A$ soit positif. <br>$ A = (+10) \times (+17)\times n $ <br> $\square\;$ négatif &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Sans $n$, l'expression compte 0 facteur négatif, elle est donc positive.<br>Pour que le résultat soit positif, $n$ doit être {\color{#EB7F73}\boldsymbol{positif}}.
+Sans $n$, l'expression compte 0 facteur négatif, elle est donc positive.<br>Pour que le résultat soit positif, $n$ doit être ${\color{#EB7F73}\boldsymbol{positif}}$.
 ---Q---
-Donner le signe de $n$ pour que <br> $B$ soit positif. <br>$ B = \dfrac {(-4)\times n\times (+19)\times (+8)}{(+7)\times (+16)} $ <br> $\square\;$ négatif \qquad $\square\;$ positif
+Donner le signe de $n$ pour que <br> $B$ soit positif. <br>$ B = \dfrac {(-4)\times n\times (+19)\times (+8)}{(+7)\times (+16)} $ <br> $\square\;$ négatif &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Sans $n$, l'expression compte 1 facteur négatif, elle est donc négative.<br>Pour que le résultat soit positif, $n$ doit être {\color{#EB7F73}\boldsymbol{négatif}}.
+Sans $n$, l'expression compte 1 facteur négatif, elle est donc négative.<br>Pour que le résultat soit positif, $n$ doit être ${\color{#EB7F73}\boldsymbol{négatif}}$.
 ---Q---
-Donner le signe de $n$ pour que <br> $C$ soit positif. <br>$ C = (+4) \times (+7)\times (-12)\times n $ <br> $\square\;$ négatif \qquad $\square\;$ positif
+Donner le signe de $n$ pour que <br> $C$ soit positif. <br>$ C = (+4) \times (+7)\times (-12)\times n $ <br> $\square\;$ négatif &emsp;&emsp; $\square\;$ positif
 ---CORR---
-Sans $n$, l'expression compte 1 facteur négatif, elle est donc négative.<br>Pour que le résultat soit positif, $n$ doit être {\color{#EB7F73}\boldsymbol{négatif}}.
+Sans $n$, l'expression compte 1 facteur négatif, elle est donc négative.<br>Pour que le résultat soit positif, $n$ doit être ${\color{#EB7F73}\boldsymbol{négatif}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="18" cols="2" >}}

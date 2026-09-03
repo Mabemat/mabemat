@@ -445,29 +445,29 @@ $$\begin{aligned}\dfrac{a\times a^{-1}}{a^2\times a^2} &= \dfrac{a^{1+(-1)}}{a^{
 ---INTRO---
 Déterminer le signe des expressions suivantes.
 ---Q---
-$-(-4)^{3}$ $\square\;$ Positif\qquad $\square\;$ Négatif\qquad
+$-(-4)^{3}$ $\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
-$3$ est impair donc $(-4)^{3}$ est négatif, et le signe moins devant change ce signe.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+$3$ est impair donc $(-4)^{3}$ est négatif, et le signe moins devant change ce signe.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
-$(-5)^{-7}$ $\square\;$ Positif\qquad $\square\;$ Négatif\qquad
+$(-5)^{-7}$ $\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
-$(-5)^{-7}=\dfrac{1}{(-5)^{7}}$ ; $7$ est impair donc $(-5)^{7}$ est négatif.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+$(-5)^{-7}=\dfrac{1}{(-5)^{7}}$ ; $7$ est impair donc $(-5)^{7}$ est négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
-$-8^{8}$ $\square\;$ Positif\qquad $\square\;$ Négatif\qquad
+$-8^{8}$ $\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
-La puissance ne porte pas sur le signe : $8^{8}$ est positif, et le signe moins est devant.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+La puissance ne porte pas sur le signe : $8^{8}$ est positif, et le signe moins est devant.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
-$2^{-6}$ $\square\;$ Positif\qquad $\square\;$ Négatif\qquad
+$2^{-6}$ $\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
-$2^{-6}=\dfrac{1}{2^{6}}$, quotient de deux nombres positifs.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+$2^{-6}=\dfrac{1}{2^{6}}$, quotient de deux nombres positifs.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 ---Q---
-$(-7)^{-3}$ $\square\;$ Positif\qquad $\square\;$ Négatif\qquad
+$(-7)^{-3}$ $\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
-$(-7)^{-3}=\dfrac{1}{(-7)^{3}}$ ; $3$ est impair donc $(-7)^{3}$ est négatif.<br>L'expression est {\color{#EB7F73}\boldsymbol{négative}}.
+$(-7)^{-3}=\dfrac{1}{(-7)^{3}}$ ; $3$ est impair donc $(-7)^{3}$ est négatif.<br>L'expression est ${\color{#EB7F73}\boldsymbol{négative}}$.
 ---Q---
-$9^{2}$ $\square\;$ Positif\qquad $\square\;$ Négatif\qquad
+$9^{2}$ $\square\;$ Positif&emsp;&emsp; $\square\;$ Négatif&emsp;&emsp;
 ---CORR---
-$9$ est positif, donc toutes ses puissances le sont.<br>L'expression est {\color{#EB7F73}\boldsymbol{positive}}.
+$9$ est positif, donc toutes ses puissances le sont.<br>L'expression est ${\color{#EB7F73}\boldsymbol{positive}}$.
 {{< /livret-exo >}}
 
 {{< livret-exo num="14" cols="2" >}}
