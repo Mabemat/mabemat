@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pourcentages — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.825311096e40e9a6e007336e5e364fd4dc3bad8f446aea387679839997ac73f5.css" integrity="sha256-glMRCW5A6abgBzNuXjZP1Nw7rY9Eauo4dnmDmZesc/U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/livret-automatismes/">Livret d'automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Pourcentages</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  <div class="eyebrow">Proportionnalité et fonctions</div>
+  <h1>Pourcentages</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>6e · 5e · 4e</span>
+    <span><span class="dot"></span>10 exercices</span>
+    
+    <span class="meta-muted"><span class="dot"></span>Corrections à venir</span>
+    
+    
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Notion de pourcentage</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p>Un pourcentage exprime une proportion par rapport à $100$. <strong>Calculer un pourcentage revient à calculer une fraction de dénominateur $100$.</strong></p>
+$$25~\% = \frac{25}{100} = 0{,}25$$<p><strong>Passer d&rsquo;une fraction à un pourcentage.</strong> On transforme la fraction en une fraction de dénominateur $100$.</p>
+$$\frac{3}{4} = \frac{3 \times 25}{4 \times 25} = \frac{75}{100} = 75~\%$$
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter les égalités.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{2}{4}=\dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{10}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{530}{1000}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{4}{50}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{5}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{10}{200}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter le tableau de correspondances.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        <table class="livret-tab"><tbody><tr><th>Nombre décimal</th><td>$0{,}7$</td><td></td><td></td><td>$0{,}3$</td><td></td><td></td></tr><tr><th>Fraction</th><td></td><td></td><td>$\frac{9}{10}$</td><td></td><td></td><td>$\frac{1}{4}$</td></tr><tr><th>Pourcentage</th><td>$\phantom{rrrrr}\%$</td><td>$20~\%$</td><td>$\phantom{rrrrr}\%$</td><td>$\phantom{rrrrr}\%$</td><td>$50~\%$</td><td>$\phantom{rrrrr}\%$</td></tr></tbody></table>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer le pourcentage demandé.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Dans un troupeau de $20$ moutons, il y a $10$ brebis. quel est le pourcentage de brebis ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Une usine fabrique $500$ pièces, dont $50$ sont défectueuses. Quel est le pourcentage de pièces défectueuses ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Dans un groupe de $50$ élèves, $49$ portent des lunettes. Quel est le pourcentage d'élèves portant des lunettes ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter avec le bon pourcentage.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Dans un groupe de $20$ enfants, $5$ sont des filles.<br>Elles représentent $\ldots\ldots$ $\%$ du groupe.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Le prix d'un article coûtant $60$ € augmente de $42$ €.<br> Quel est le pourcentage d'augmentation de ce prix ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Dans un groupe de $40$ enfants, $16$ sont des garçons.<br>Ils représentent $\ldots\ldots$ $\%$ du groupe.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Calculer un pourcentage d&#39;une quantité</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p>Calculer $a~\%$ d&rsquo;une quantité revient à multiplier cette quantité par $\dfrac{a}{100}$.</p>
+<p><strong>Méthode.</strong> Pour calculer $a~\%$ de $b$, on calcule $\dfrac{a}{100} \times b$.</p>
+<p><em>Exemple.</em> $30~\%$ de $80$ euros :</p>
+$$\frac{30}{100} \times 80 = \frac{30 \times 80}{100} = \frac{2\,400}{100} = 24$$
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-5">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">05</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $30~\%~\text{de }31$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $10~\%~\text{de }70$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $40~\%~\text{de }8$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $20~\%~\text{de }2$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $10~\%~\text{de }80$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $40~\%~\text{de }3$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $20~\%~\text{de }41$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $30~\%~\text{de }72$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $10~\%~\text{de }7$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $20~\%~\text{de }3$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $30~\%~\text{de }81$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $40~\%~\text{de }82$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-6">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">06</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer les quantités correspondantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Le cadeau commun que nous souhaitons faire à Nora coûte $50$ €. Je participe à hauteur de $28~\%$ du prix total. <br>Combien ai-je donné pour le cadeau de Nora ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Une réserve de protection d'oiseaux contient $2\,180$ individus d'oiseaux. On dénombre $5~\%$ de bruants des roseaux.<br>Quel est le nombre de bruants des roseaux ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Dans une entreprise de $120$ salariés, il y a $20\,\%$ de cadres. <br>Combien y a-t-il de cadres dans cette entreprise ?
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Augmenter ou diminuer d&#39;un pourcentage</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p><strong>Augmenter de $a~\%$.</strong> On calcule le montant de l&rsquo;augmentation, $\dfrac{a}{100} \times$ la quantité initiale, puis on l&rsquo;ajoute à la quantité initiale.</p>
+<p><strong>Diminuer de $a~\%$.</strong> On calcule le montant de la diminution, $\dfrac{a}{100} \times$ la quantité initiale, puis on le soustrait de la quantité initiale.</p>
+<p><em>Augmentation de $15~\%$ sur un prix de $80$ euros.</em> L&rsquo;augmentation vaut $\dfrac{15}{100} \times 80 = 12$, le nouveau prix vaut $80 + 12 = 92$ euros.</p>
+<p><em>Réduction de $20~\%$ sur un prix de $50$ euros.</em> La réduction vaut $\dfrac{20}{100} \times 50 = 10$, le nouveau prix vaut $50 - 10 = 40$ euros.</p>
+<p><strong>Raccourci.</strong> Augmenter de $a~\%$ revient à multiplier par $1+\dfrac{a}{100}$, diminuer de $a~\%$ revient à multiplier par $1-\dfrac{a}{100}$.</p>
+
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+          
+          
+            
+            
+            
+            
+            
+          
+        
+        
+
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-7">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">07</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Problèmes d'augmentation et de diminution.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Un billet de cinéma coûte 12 €. Guillaume bénéficie d'une réduction de $20~\%$.
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Calculer le montant de la réduction.</div>
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Calculer le prix de son billet de cinéma.</div>
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Le loyer de l'appartement de Gabrielle coûte 742 €. <br>Au 1er janvier, il augmente de $10~\%$.
+
+        
+        <div class="sub-list">
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">a.</span>
+            <div>
+              <div class="sub-enonce">Calculer le montant de l'augmentation.</div>
+            </div>
+          </div>
+          
+          
+          <div class="sub-q">
+            <span class="sub-letter">b.</span>
+            <div>
+              <div class="sub-enonce">Calculer le montant au 1er janvier de son loyer.</div>
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-8">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">08</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">À l'aide de la calculatrice :</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Le prix trimestriel d'un abonnement de streaming était de $32$ € et il a diminué de $20~\%$.<br> Calculer son nouveau prix.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Un article coûtait $8{,}20$ € et son prix est soldé à $-60~\%$.<br> Calculer son nouveau prix.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Il y a 15 ans, la population d'une ville était de $75\,000$ habitants. Depuis, elle a augmenté de $17~\%$.<br> Calculer le nombre d'habitants actuel de cette ville.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        En 2020, le chiffre d'affaires d'un commerce était de $200\,000$ €. En 2021, il a augmenté de $30~\%$.<br> Calculer le chiffre d'affaires de 2021.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Un lycée avait $350$ élèves en 2024. Depuis, le nombre d'élèves a diminué de $2~\%$. <br> Calculer le nombre d'élèves dans ce lycée cette année.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Le prix de mon vélo électrique était de $733$ € l'année dernière et il a augmenté de $6~\%$.<br> Calculer son nouveau prix.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-9">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">09</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Augmenter de $130~\%$ revient à multiplier par ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Diminuer de $5~\%$ revient à multiplier par ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Diminuer de $29~\%$ revient à multiplier par ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Augmenter de $10~\%$ revient à multiplier par ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-10">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">10</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Multiplier par $2{,}6$ revient à ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Multiplier par $0{,}9$ revient à ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Multiplier par $1{,}7$ revient à ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Multiplier par $0{,}7$ revient à ...
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+</div>
+
+
+<div class="livret-plus fade-up">
+  <div>
+    <div class="livret-plus-tag">Plus d'entraînement</div>
+    <p>Des exercices supplémentaires générés au hasard, avec leur correction, sur Coopmaths.</p>
+  </div>
+  <a class="livret-plus-btn" href="https://coopmaths.fr/alea/?uuid=0e58f&amp;id=5N11-3&amp;n=6&amp;d=10&amp;s=1&amp;cd=1&amp;cols=2&amp;alea=6Yrw&amp;uuid=13f50&amp;id=6N1E-1&amp;n=3&amp;d=10&amp;s=13&amp;cd=1&amp;cols=1&amp;alea=qmLu&amp;uuid=66c48&amp;id=6N3O-1&amp;n=2&amp;d=10&amp;s=20&amp;s2=9&amp;cd=1&amp;cols=1&amp;alea=JpCk&amp;uuid=1a706&amp;id=can6P07&amp;n=3&amp;d=10&amp;cd=1&amp;cols=1&amp;alea=lFBf&amp;uuid=66756&amp;id=6N3Q&amp;n=12&amp;d=10&amp;s=true&amp;s2=1-2-4-5&amp;cd=1&amp;cols=3&amp;alea=WebZ&amp;uuid=d67e9&amp;id=BP2AutoB6&amp;n=2&amp;d=10&amp;cd=1&amp;cols=1&amp;alea=1jCv&amp;uuid=064ce&amp;id=BP2CCF6&amp;n=2&amp;d=10&amp;s=2&amp;s2=2&amp;cd=1&amp;cols=1&amp;alea=9bEq&amp;uuid=12444&amp;id=2S11-2&amp;n=6&amp;d=10&amp;s=1&amp;cd=1&amp;alea=sSi5&amp;v=eleve&amp;es=2211001" target="_blank" rel="noopener">S'entraîner →</a>
+</div>
+
+
+<div class="br-adjacent fade-up livret-adjacent">
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/fractions/">← Fractions</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/">Toutes les fiches</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/nombres-relatifs/">Nombres relatifs →</a>
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1788416690';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

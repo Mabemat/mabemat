@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="/mabemat/css/style.dd36441ee676476b569e3fe8dc92cde8c653168f40dbd1d3e8ee25fce613b245.css" integrity="sha256-3TZEHuZ2R2tWnj/o3JLN6MZTFo9A29HT6O4l/OYTskU=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.825311096e40e9a6e007336e5e364fd4dc3bad8f446aea387679839997ac73f5.css" integrity="sha256-glMRCW5A6abgBzNuXjZP1Nw7rY9Eauo4dnmDmZesc/U=" crossorigin="anonymous">
 <link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
@@ -138,9 +138,6 @@ pre[style*="background-color"] {
     
     
     <a href="/mabemat/1re/">1re</a>
-    
-    
-    <a href="/mabemat/snt/">Python</a>
     
     
     <a href="/mabemat/liens/">Liens</a>
@@ -369,13 +366,6 @@ pre[style*="background-color"] {
         Vérifier que si le nombre de départ est 15, alors le nombre obtenu à l'arrivée est 240.
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Si le nombre de départ est 15, le programme de calcul donne :<br><br>
-$15^2 = 225$ puis $225 + 15 = 240$.<br><br>
-Le nombre obtenu à l'arrivée est bien 240.</div>
-        
 
         
 
@@ -412,12 +402,6 @@ Quelle formule a pu être saisie dans la cellule B2 avant d'être étirée vers 
 <em>Aucune justification n'est attendue.</em>
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Dans la cellule B2, on veut afficher le nombre obtenu à l'arrivée quand le nombre choisi au départ est celui qui se lit dans la cellule A2.<br><br>
-On doit saisir la formule <code>=A2^2+A2</code>, ou encore <code>=A2*A2+A2</code>.</div>
-        
 
         
 
@@ -433,12 +417,6 @@ On doit saisir la formule <code>=A2^2+A2</code>, ou encore <code>=A2*A2+A2</code
         On note $x$ le nombre de départ.<br><br>
 Écrire, en fonction de $x$, une expression du résultat obtenu avec ce programme de calcul.
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Si le nombre de départ est $x$, le programme de calcul donne $x^2$, puis $x^2 + x$.<br><br>
-L'expression, en fonction de $x$, du nombre obtenu à l'arrivée est $x^2 + x$.</div>
         
 
         
@@ -464,13 +442,6 @@ L'expression, en fonction de $x$, du nombre obtenu à l'arrivée est $x^2 + x$.<
 Vérifier que cette affirmation est vraie lorsque le nombre entier choisi au départ est 9.
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Quand le nombre entier choisi au départ est 9, le nombre obtenu est 90 (voir la cellule B11 du tableau).<br><br>
-Si on multiplie 9 par le nombre entier qui suit, c'est-à-dire 10, on obtient bien aussi $9 \times 10 = 90$.<br><br>
-L'affirmation est donc vraie pour un nombre choisi égal à 9.</div>
-        
 
         
 
@@ -486,14 +457,6 @@ L'affirmation est donc vraie pour un nombre choisi égal à 9.</div>
         Démontrer que cette affirmation est vraie quel que soit le nombre entier choisi au départ.
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Si $x$ est le nombre entier choisi au départ, on a établi à la question précédente que le nombre obtenu à l'arrivée est $x^2 + x$.<br><br>
-En factorisant par $x$ dans cette expression, il vient :
-$$x^2 + x = x(x + 1)$$
-Le nombre obtenu est donc bien, dans tous les cas, le produit du nombre choisi au départ ($x$) par le nombre entier suivant ($x+1$) : l'affirmation est vraie quel que soit le nombre entier choisi au départ.</div>
-        
 
         
 
@@ -508,14 +471,6 @@ Le nombre obtenu est donc bien, dans tous les cas, le produit du nombre choisi a
       <div class="q-enonce">
         Démontrer que le nombre obtenu à l'arrivée par le programme de calcul est un nombre pair quel que soit le nombre entier choisi au départ.
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Rappelons que le produit d'un nombre entier pair par un nombre entier quelconque est toujours pair.<br><br>
-Il y a deux cas de figure possibles :
-<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>si le nombre de départ $x$ est pair, alors le nombre d'arrivée est pair, car c'est le produit d'un nombre pair ($x$) par un nombre entier ($x+1$) ;</li><li>si le nombre de départ $x$ est impair, alors l'entier suivant ($x+1$) est pair et le nombre d'arrivée est encore pair.</li></ul>
-Dans tous les cas, le nombre obtenu à l'arrivée est un nombre pair.</div>
         
 
         
@@ -670,11 +625,6 @@ Recopier sur la copie celle qui correspond à l'aire du carré. On ne demande pa
 </table>
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">L'aire d'un carré de côté $x$ est égale à $x^2$.</div>
-        
 
         
 
@@ -689,16 +639,6 @@ Recopier sur la copie celle qui correspond à l'aire du carré. On ne demande pa
       <div class="q-enonce">
         Montrer que l'aire du rectangle est égale à $x^2+4x-21$.
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Les dimensions du rectangle sont $x-3$ et $x+7$, donc son aire vaut $(x-3)(x+7)$. Développons cette expression :
-$$\begin{aligned}
-(x-3)(x+7) &= x^2+7x-3x-21 \\
-(x-3)(x+7) &= x^2+4x-21
-\end{aligned}$$
-L'aire du rectangle est donc bien égale à $x^2+4x-21$.</div>
         
 
         
@@ -717,12 +657,6 @@ L'aire du rectangle est donc bien égale à $x^2+4x-21$.</div>
 <img src="/mabemat/figures/3e/chapitre-01/2-2.svg" alt="Script Scratch à compléter" style="display:block; margin:1rem auto; max-height:240px; max-width:100%;">
 
         
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">L'aire du rectangle vaut $x^2+4x-21$. Après la ligne 4, la variable R contient $x \times x$, c'est-à-dire $x^2$ : il reste à ajouter $4 \times x$, puis $-21$, avant d'afficher R.
-<img src="/mabemat/figures/3e/chapitre-01/2-3.svg" alt="Script Scratch complété" style="display:block; margin:1rem auto; max-height:240px; max-width:100%;"></div>
-        
 
         
 
@@ -737,13 +671,6 @@ L'aire du rectangle est donc bien égale à $x^2+4x-21$.</div>
       <div class="q-enonce">
         On a pressé la touche espace puis saisi le nombre 8. Que renvoie le programme ?
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Lorsque $x=8$, l'aire du rectangle vaut $(8-3)(8+7) = 5 \times 15 = 75$. Le programme renvoie donc 75.<br><br>
-On peut aussi suivre le script ligne par ligne :
-<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>à la ligne 3, $x$ devient égal à 8 ;</li><li>à la ligne 4, R devient égal à $8 \times 8 = 64$ ;</li><li>à la ligne 5, on ajoute $4 \times 8 = 32$ à R, qui devient égal à 96 ;</li><li>à la ligne 6, on ajoute $-21$ à R, qui devient égal à $96-21 = 75$ ;</li><li>ce résultat est affiché à la ligne 7.</li></ul></div>
         
 
         
@@ -760,19 +687,6 @@ On peut aussi suivre le script ligne par ligne :
         Quel nombre $x$ doit-on choisir pour que l'aire du rectangle soit égale à l'aire du carré ?<br><br>
 <em>Toute trace de recherche, même non aboutie, sera prise en compte.</em>
 
-        
-        <button class="corr-btn" onclick="toggleCorr(this)">
-          <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-        </button>
-        <div class="corr-box">Pour que l'aire du rectangle soit égale à celle du carré, il faut que :
-$$\begin{aligned}
-x^2+4x-21 &= x^2 \\
-4x-21 &= 0 \\
-4x &= 21 \\
-x &= 5{,}25
-\end{aligned}$$
-On a soustrait $x^2$ aux deux membres, puis ajouté 21 aux deux membres, puis divisé les deux membres par 4.<br><br>
-Pour que l'aire du rectangle soit égale à celle du carré, il faut donc choisir le nombre $5{,}25$.</div>
         
 
         
@@ -932,12 +846,6 @@ Pour que l'aire du rectangle soit égale à celle du carré, il faut donc choisi
             <div>
               <div class="sub-enonce">Si on choisit le nombre 7, vérifier qu'on obtient 49 à la fin du programme.</div>
               
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">$(7 + 5) \times (7 - 5) + 25 = 12 \times 2 + 25 = 24 + 25 = 49$.<br><br>
-Avec 7 au départ, on obtient bien 49 à la fin du programme.</div>
-              
             </div>
           </div>
           
@@ -946,12 +854,6 @@ Avec 7 au départ, on obtient bien 49 à la fin du programme.</div>
             <span class="sub-letter">b.</span>
             <div>
               <div class="sub-enonce">Si on choisit le nombre $-4$, quel résultat obtient-on à la fin du programme ?</div>
-              
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">$(-4 + 5) \times (-4 - 5) + 25 = 1 \times (-9) + 25 = -9 + 25 = 16$.<br><br>
-Avec $-4$ au départ, on obtient 16 à la fin du programme.</div>
               
             </div>
           </div>
@@ -981,11 +883,6 @@ Avec $-4$ au départ, on obtient 16 à la fin du programme.</div>
             <div>
               <div class="sub-enonce">Exprimer en fonction de $x$ le résultat obtenu.</div>
               
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">Le résultat obtenu est $(x + 5)(x - 5) + 25$.</div>
-              
             </div>
           </div>
           
@@ -994,14 +891,6 @@ Avec $-4$ au départ, on obtient 16 à la fin du programme.</div>
             <span class="sub-letter">b.</span>
             <div>
               <div class="sub-enonce">Développer et réduire $(x + 5)(x - 5)$.</div>
-              
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">$$\begin{aligned}
-(x + 5)(x - 5) &= x^2 - 5x + 5x - 25 \\
-(x + 5)(x - 5) &= x^2 - 25
-\end{aligned}$$</div>
               
             </div>
           </div>
@@ -1012,12 +901,6 @@ Avec $-4$ au départ, on obtient 16 à la fin du programme.</div>
             <div>
               <div class="sub-enonce">Sarah dit : « Avec ce programme de calcul, quel que soit le nombre choisi au départ, le résultat obtenu est toujours le carré du nombre de départ. »<br><br>
 Qu'en pensez-vous ?</div>
-              
-              <button class="corr-btn" onclick="toggleCorr(this)">
-                <span class="arrow">▸</span><span class="lbl">Voir la correction</span>
-              </button>
-              <div class="corr-box">D'après le calcul précédent : $(x + 5)(x - 5) + 25 = x^2 - 25 + 25 = x^2$.<br><br>
-Le résultat obtenu est bien toujours le carré du nombre choisi au départ : Sarah a raison.</div>
               
             </div>
           </div>
@@ -1071,7 +954,7 @@ Le résultat obtenu est bien toujours le carré du nombre choisi au départ : Sa
   </script>
   <script>
      
-    const BUILD_TS = '1788199849';
+    const BUILD_TS = '1788362772';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

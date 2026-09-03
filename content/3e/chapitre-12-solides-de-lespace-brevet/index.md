@@ -3,7 +3,7 @@ title: "Exercices type brevet - Solides de l'espace"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-12-solides-de-lespace"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 
 

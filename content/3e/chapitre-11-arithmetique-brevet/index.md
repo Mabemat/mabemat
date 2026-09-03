@@ -3,7 +3,7 @@ title: "Exercices type brevet - Arithmétique"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-11-arithmetique"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Décembre 2023 Nouvelle Calédonie" >}}
 ---INTRO---

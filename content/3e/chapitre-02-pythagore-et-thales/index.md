@@ -7,8 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: false
 has_qcm: false
-has_brevet: false
-has_brevetImpr : false
+has_brevet: true
+has_brevetImpr : true
 competences:
   - "Appliquer le théorème de Pythagore et sa réciproque"
   - "Appliquer le théorème de Thalès"

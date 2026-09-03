@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distributivité — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.825311096e40e9a6e007336e5e364fd4dc3bad8f446aea387679839997ac73f5.css" integrity="sha256-glMRCW5A6abgBzNuXjZP1Nw7rY9Eauo4dnmDmZesc/U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/livret-automatismes/">Livret d'automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Distributivité</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  <div class="eyebrow">Nombres et calculs</div>
+  <h1>Distributivité</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>4e</span>
+    <span><span class="dot"></span>11 exercices</span>
+    
+    <span class="meta-muted"><span class="dot"></span>Corrections à venir</span>
+    
+    
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Développer et factoriser</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p><strong>Développer</strong>, c&rsquo;est transformer un produit en somme. On utilise la distributivité :</p>
+$$k(a+b) = k \times a + k \times b \qquad k(a-b) = k \times a - k \times b$$<p><em>Exemple.</em> $3(2x+5) = 3 \times 2x + 3 \times 5 = 6x + 15$.</p>
+<p><strong>Factoriser</strong>, c&rsquo;est l&rsquo;opération inverse : transformer une somme en produit, en mettant en évidence un facteur commun.</p>
+$$k \times a + k \times b = k(a+b)$$<p><em>Exemple.</em> $12x + 18 = 6 \times 2x + 6 \times 3 = 6(2x+3)$.</p>
+<p><strong>Supprimer une parenthèse précédée d&rsquo;un signe moins</strong> change tous les signes qu&rsquo;elle contient :</p>
+$$-(3x-7) = -3x+7$$
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Développer et réduire les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=(z+6)\times7z$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=(9z+6)\times5$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=11y(7y+6)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=7(c+2)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Développer et réduire les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A = 4 (-4y-9)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B = (-8x+3)\times (-3) $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C = (-2k+6)\times 2 $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D = -8 (-2n-3)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Développer et réduire les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=-5(8z-2)+6$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=(-9a+3)\times8a$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=-4-10(6t-2)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=8t(-t-5)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Supprimer les parenthèses et réduire les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=(7x^2-6x+7)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=(-x-3)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=-(8c^2+3c-8)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=-(7z+7)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $E=-(-7a+3)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $F=(2b+8)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-5">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">05</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Supprimer les parenthèses et réduire les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=7a-(-a+6)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=-9-(-7z+6)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=-2+(-4b+8)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=-4z+(-3z-9)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $E=-5-(4z-8)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $F=10z+(-2z-2)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-6">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">06</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Supprimer les parenthèses et réduire les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A= -(-9z-9) + (7z+1)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B= (-c-9) - (10c+9)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C= (-6x^2-9x+6) - (-11x^2-7x-6)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-7">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">07</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Factoriser les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=-2a-10b$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=11a-55k$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=2b+16k$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=-5n+15b$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-8">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">08</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Factoriser les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=15y-50x$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=15y+27b$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=49n+56z$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=-33a-55y$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-9">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">09</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Factoriser les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=-55b-77b^2$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=-6a+15a^2$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=-5k^2+k$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=-5k^2+7k$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-10">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">10</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Factoriser les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A = x(3x+5)-5(3x+5)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B = x(2x-3)-5(2x-3)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C = x(3x+3)+3(3x+3)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D = 4(x+1)-x(x+1)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $E = 2(2x-2)+x(2x-2)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $F = 3(2x-3)-x(2x-3)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-11">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">11</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Factoriser les expressions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=(3x-4)(x-1)-(4x+5)(x-1)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=(3x+5)(5x+3)+(4x-1)(3x+5)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=(2x-5)(3x+4)+(3x+4)(6x-4)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=(4x+3)(3x+5)+(6x+4)(3x+5)$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+</div>
+
+
+<div class="livret-plus fade-up">
+  <div>
+    <div class="livret-plus-tag">Plus d'entraînement</div>
+    <p>Des exercices supplémentaires générés au hasard, avec leur correction, sur Coopmaths.</p>
+  </div>
+  <a class="livret-plus-btn" href="https://coopmaths.fr/alea/?uuid=71dd8&amp;id=4L10&amp;n=4&amp;d=10&amp;s=1&amp;s2=2&amp;s3=8&amp;s4=false&amp;cd=1&amp;cols=2&amp;uuid=b87a5&amp;id=4L10b&amp;n=4&amp;d=10&amp;s=1-2&amp;s2=2&amp;s3=3&amp;s4=3&amp;cd=1&amp;cols=2&amp;uuid=71dd8&amp;id=4L10&amp;n=4&amp;d=10&amp;s=3&amp;s2=2&amp;s3=9&amp;s4=false&amp;cd=1&amp;uuid=603a8&amp;id=3L10&amp;cols=2&amp;uuid=815eb&amp;id=3L10-1&amp;n=6&amp;d=10&amp;s=false&amp;cd=1&amp;cols=2&amp;uuid=c88ba&amp;id=3L10-2&amp;n=3&amp;d=10&amp;s=5-6-7-8-9-10&amp;cd=1&amp;uuid=dd1c9&amp;id=4L11&amp;n=4&amp;d=10&amp;s=1&amp;s3=false&amp;cd=1&amp;cols=2&amp;uuid=dd1c9&amp;id=4L11&amp;n=4&amp;d=10&amp;s=2&amp;s3=false&amp;cd=1&amp;cols=2&amp;uuid=dd1c9&amp;id=4L11&amp;n=4&amp;d=10&amp;s=3&amp;s3=false&amp;cd=1&amp;cols=2&amp;uuid=3d2f9&amp;id=2N41-1&amp;n=6&amp;d=10&amp;s=1&amp;s2=3&amp;cd=1&amp;cols=3&amp;uuid=3d2f9&amp;id=2N41-1&amp;n=4&amp;d=10&amp;s=2&amp;s2=3&amp;cd=1&amp;cols=2&amp;v=eleve&amp;es=1111001&amp;title=Distributivit%C3%A9&#43;Simple" target="_blank" rel="noopener">S'entraîner →</a>
+</div>
+
+
+<div class="br-adjacent fade-up livret-adjacent">
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/calcul-litteral/">← Calcul littéral : les bases</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/">Toutes les fiches</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/equations/">Équations →</a>
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1788363077';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

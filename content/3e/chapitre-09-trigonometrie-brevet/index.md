@@ -3,7 +3,7 @@ title: "Exercices type brevet - Trigonométrie"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-09-trigonometrie"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Septembre 2025 Métropole" >}}
 ---INTRO---

@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volumes — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.825311096e40e9a6e007336e5e364fd4dc3bad8f446aea387679839997ac73f5.css" integrity="sha256-glMRCW5A6abgBzNuXjZP1Nw7rY9Eauo4dnmDmZesc/U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/livret-automatismes/">Livret d'automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Volumes</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  <div class="eyebrow">Grandeurs et mesures</div>
+  <h1>Volumes</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>6e · 5e · 4e</span>
+    <span><span class="dot"></span>5 exercices</span>
+    
+    <span class="meta-muted"><span class="dot"></span>Corrections à venir</span>
+    
+    
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Volumes usuels</span>
+  </div>
+  <div class="livret-rappel-body">
+    $$V_{\text{cube}} = c^3 \qquad V_{\text{pavé}} = L \times l \times h \qquad V_{\text{prisme}} = \mathcal{B} \times h$$$$V_{\text{cylindre}} = \pi r^2 h \qquad V_{\text{pyramide}} = \dfrac{\mathcal{B} \times h}{3} \qquad V_{\text{cône}} = \dfrac{\pi r^2 h}{3} \qquad V_{\text{boule}} = \dfrac{4}{3}\pi r^3$$<p>$\mathcal{B}$ désigne l&rsquo;aire de la base. <strong>Toutes les longueurs doivent être exprimées dans la même unité avant de calculer.</strong></p>
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer le volume ...</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'un cube de $8 \,\text{dm}$ d'arête.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{dm}^3$ près, d'un cylindre de $4\,\text{dm}$ de diamètre et de $14\,\text{dm}$ de hauteur.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{dm}^3$ près, d'un pavé droit de $4\,\text{dm}$ de profondeur, de $6{,}7\,\text{dm}$ de longueur et de $3{,}4\,\text{dm}$ de hauteur.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{mm}^3$ près, d'une boule de $3\,\text{mm}$ de rayon.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'un prisme droit de hauteur $8\,\text{cm}$. La base du prisme droit est un triangle rectangle dont les côtés de l'angle droit mesurent $6\,\text{cm}$ et $4\,\text{cm}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{dm}^3$ près, d'une pyramide de hauteur $5\,\text{dm}$ et dont la base est un triangle. La base du triangle mesure $7{,}5\,\text{dm}$ et la hauteur associée à cette base mesure $8{,}7\,\text{dm}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{m}^3$ près, d'un cône de $3\,\text{m}$ de rayon et de $3\,\text{m}$ de hauteur.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'une pyramide de hauteur $3\,\text{m}$ et dont la base est un carré de $8\,\text{m}$ de côté.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{m}^3$ près, d'une pyramide de hauteur $3\,\text{m}$ et dont la base est un triangle rectangle dont les côtés de l'angle droit mesurent respectivement $3{,}7\,\text{m}$ et $8{,}2\,\text{m}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer le volume ...</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{dm}^3$ près, d'une pyramide de hauteur $0{,}5\,\text{m}$ et dont la base est un triangle. La base du triangle mesure $5\,\text{dm}$ et la hauteur associée à cette base mesure $39\,\text{cm}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{cm}^3$ près, d'une pyramide de hauteur $4{,}1\,\text{dm}$ et dont la base est un carré de $2\,\text{cm}$ de côté.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'un cube de $2 \,\text{cm}$ d'arête.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'une pyramide de hauteur $3\,\text{dm}$ et dont la base est un triangle rectangle de côtés $6\,\text{cm}$ et $2\,\text{cm}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'un prisme droit de hauteur $0{,}5\,\text{m}$ et dont les bases sont des triangles de base $4\,\text{dm}$ et de hauteur correspondante $48\,\text{cm}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{cm}^3$ près, d'un cylindre de $8\,\text{cm}$ de rayon et de $13{,}4\,\text{dm}$ de hauteur.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        d'un pavé droit de $2\,\text{dm}$ de profondeur, de $0{,}8\,\text{m}$ de longueur et de $40\,\text{cm}$ de hauteur.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{mm}^3$ près, d'un cône de $8\,\text{mm}$ de rayon et de $6{,}1\,\text{cm}$ de hauteur.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        arrondi au $\,\text{mm}^3$ près, d'une boule de $7\,\text{mm}$ de rayon.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer le volume d'une boule de diamètre 8 mm. Arrondir au dixième.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer le volume d'une boule d'aire 10 cm$^2$. Arrondir au dixième.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-5">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">05</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Une boîte cylindrique de 52 m de diamètre et de 52 m de hauteur contient une boule de diamètre 52 m. <br>Calculer le volume dans la boîte laissée libre par la boule. Arrondir au dixième.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+</div>
+
+
+<div class="livret-plus fade-up">
+  <div>
+    <div class="livret-plus-tag">Plus d'entraînement</div>
+    <p>Des exercices supplémentaires générés au hasard, avec leur correction, sur Coopmaths.</p>
+  </div>
+  <a class="livret-plus-btn" href="https://coopmaths.fr/alea/?uuid=65bed&amp;id=2G11-5&amp;n=9&amp;d=10&amp;s=1&amp;s2=true&amp;s3=2&amp;s4=10&amp;cd=1&amp;uuid=65bed&amp;id=2G11-5&amp;n=9&amp;d=10&amp;s=2&amp;s3=2&amp;s4=10&amp;cd=1&amp;uuid=8c803&amp;id=3G42&amp;n=1&amp;d=10&amp;s=2&amp;cd=1&amp;uuid=8c803&amp;id=3G42&amp;n=1&amp;d=10&amp;s=3&amp;cd=1&amp;uuid=8c803&amp;id=3G42&amp;n=1&amp;d=10&amp;s=4&amp;cd=1&amp;v=eleve&amp;es=1111001&amp;title=Volumes" target="_blank" rel="noopener">S'entraîner →</a>
+</div>
+
+
+<div class="br-adjacent fade-up livret-adjacent">
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/solides/">← Les solides</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/">Toutes les fiches</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/probabilites/">Probabilités →</a>
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1788363173';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

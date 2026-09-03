@@ -1,0 +1,11 @@
+{{/* Encadre "Rappel" du livret d'automatismes */}}
+{{ $titre := .Get "titre" | default "Rappel" }}
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">{{ $titre }}</span>
+  </div>
+  <div class="livret-rappel-body">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</aside>

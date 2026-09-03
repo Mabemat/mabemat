@@ -1,0 +1,171 @@
+{{ define "main" }}
+{{ $section   := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $fiches    := .Pages.ByWeight }}
+{{ $nbCorr    := len (where $fiches "Params.has_livretCorr" true) }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Livret d'automatismes</span>
+</div>
+
+<section class="auto-hero fade-up d1">
+  <div class="auto-hero-grid">
+    <div>
+      <h1>Livret d'<em>automatismes</em></h1>
+    </div>
+    <div class="auto-tag">
+      <div class="auto-swatch">
+        <span style="background:var(--accent);"></span>
+        <span style="background:var(--accent-2);"></span>
+      </div>
+      <div>{{ len $fiches }} fiches</div>
+    </div>
+  </div>
+  <div class="auto-sub livret-index-sub">
+    <div class="col">
+      <h4>À quoi ça sert</h4>
+      <p>Reprendre, thème par thème, les réflexes du collège attendus au brevet. Chaque fiche rappelle l'essentiel du cours puis enchaîne des exercices courts.</p>
+    </div>
+    <div class="col">
+      <h4>Comment ça marche</h4>
+      <p>On travaille la fiche sur papier, puis on vérifie. Les corrections sont publiées au fur et à mesure de l'année, fiche par fiche.</p>
+    </div>
+    {{ with .Params.livret_pdf }}
+    <div class="col">
+      <h4>Tout le livret</h4>
+      <p>Les 18 fiches en un seul document à imprimer.<br>
+      <a href="{{ $.RelPermalink }}{{ . }}" target="_blank" rel="noopener" style="color:var(--accent);">Télécharger le PDF →</a></p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ if $fiches }}
+<div class="filter-bar livret-filter fade-up d2">
+  <div class="tabs" role="tablist">
+    <button class="active" data-filter="*">Toutes</button>
+    <button data-filter="corr">Avec correction</button>
+    <button data-filter="todo">Sans correction</button>
+  </div>
+  <div class="count-inline"><strong>{{ $nbCorr }}</strong> / {{ len $fiches }} corrigées</div>
+</div>
+
+{{ $domaines := slice "Nombres et calculs" "Proportionnalité et fonctions" "Grandeurs et mesures" "Espace et géométrie" "Données et probabilités" "Algorithmique" }}
+<div class="livret-grid-wrap fade-up d3" id="livret-list">
+  {{ range $d := $domaines }}
+  {{ $duDomaine := where $fiches "Params.domaine" $d }}
+  {{ if $duDomaine }}
+  <section class="livret-domaine" data-domaine="{{ $d }}">
+    <h2 class="livret-domaine-titre">{{ $d }}</h2>
+    <div class="livret-grid">
+      {{ range $duDomaine }}
+      {{ $corr := .Params.has_livretCorr | default false }}
+      {{ if .Params.coming_soon }}
+      <div class="livret-card locked" data-state="todo">
+        <div class="livret-card-num">{{ printf "%02d" .Params.weight }}</div>
+        <div class="livret-card-titre">{{ .Title }}</div>
+        <div class="livret-card-meta">{{ with .Params.niveau_origine }}{{ . }}{{ end }}</div>
+        <div class="livret-card-foot"><span class="tag-todo">Bientôt en ligne</span></div>
+      </div>
+      {{ else }}
+      <a class="livret-card" href="{{ .RelPermalink }}" data-state="{{ if $corr }}corr{{ else }}todo{{ end }}">
+        <div class="livret-card-num">{{ printf "%02d" .Params.weight }}</div>
+        <div class="livret-card-titre">{{ .Title }}</div>
+        <div class="livret-card-meta">
+          {{ with .Params.niveau_origine }}{{ . }}{{ end }}
+          {{ with .Params.nb_exercices }} &middot; {{ . }} exos{{ end }}
+        </div>
+        <div class="livret-card-foot">
+          {{ if $corr }}
+            {{ with .Params.corrections_actives }}
+            <span class="tag-partiel">{{ len . }} exo{{ if gt (len .) 1 }}s{{ end }} corrigé{{ if gt (len .) 1 }}s{{ end }}</span>
+            {{ else }}
+            <span class="tag-done">Corrigée</span>
+            {{ end }}
+          {{ else }}<span class="tag-todo">Correction à venir</span>{{ end }}
+          <span class="livret-card-arrow">→</span>
+        </div>
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+  {{/* Filet de securite : les fiches dont le domaine n'est pas dans la liste ci-dessus */}}
+  {{ $orphelines := slice }}
+  {{ range $fiches }}
+    {{ if not (in $domaines (.Params.domaine | default "")) }}{{ $orphelines = $orphelines | append . }}{{ end }}
+  {{ end }}
+  {{ if $orphelines }}
+  <section class="livret-domaine" data-domaine="Autres">
+    <h2 class="livret-domaine-titre">Autres fiches</h2>
+    <div class="livret-grid">
+      {{ range $orphelines }}
+      <a class="livret-card" href="{{ .RelPermalink }}" data-state="{{ if .Params.has_livretCorr }}corr{{ else }}todo{{ end }}">
+        <div class="livret-card-num">{{ printf "%02d" .Params.weight }}</div>
+        <div class="livret-card-titre">{{ .Title }}</div>
+        <div class="livret-card-meta">{{ with .Params.niveau_origine }}{{ . }}{{ end }}</div>
+        <div class="livret-card-foot">
+          {{ if .Params.has_livretCorr }}
+            {{ with .Params.corrections_actives }}<span class="tag-partiel">{{ len . }} exo{{ if gt (len .) 1 }}s{{ end }} corrigé{{ if gt (len .) 1 }}s{{ end }}</span>
+            {{ else }}<span class="tag-done">Corrigée</span>{{ end }}
+          {{ else }}<span class="tag-todo">Correction à venir</span>{{ end }}
+          <span class="livret-card-arrow">→</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</div>
+
+<div class="empty-state" id="livret-empty" style="display:none;">
+  <div class="glyph">~</div>
+  <p>Aucune fiche pour ce filtre.</p>
+</div>
+{{ else }}
+<div class="empty-state"><p>Les fiches seront disponibles prochainement.</p></div>
+{{ end }}
+
+<script>
+(function(){
+  var tabs  = document.querySelectorAll('.filter-bar .tabs button');
+  var cards = document.querySelectorAll('#livret-list .livret-card');
+  var blocs = document.querySelectorAll('#livret-list .livret-domaine');
+  var empty = document.getElementById('livret-empty');
+  if (!tabs.length) return;
+
+  function apply(filter) {
+    cards.forEach(function(c){
+      c.style.display = (filter === '*' || c.dataset.state === filter) ? '' : 'none';
+    });
+    var total = 0;
+    blocs.forEach(function(b){
+      var visibles = 0;
+      b.querySelectorAll('.livret-card').forEach(function(c){
+        if (c.style.display !== 'none') visibles++;
+      });
+      b.style.display = visibles ? '' : 'none';
+      total += visibles;
+    });
+    if (empty) empty.style.display = total === 0 ? 'block' : 'none';
+  }
+
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      apply(btn.dataset.filter);
+    });
+  });
+})();
+</script>
+{{ end }}

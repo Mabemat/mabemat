@@ -7,7 +7,7 @@ has_notebook: true
 has_qcm: false
 nb_exercices: 16
 nb_qcm: 20
-unlocked_exercises: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+unlocked_exercises: []
 capytale_url: "https://capytale2.ac-paris.fr/web/c/e68f-10887379"
 competences:
   - "Comprendre ce qu'est une variable et son rôle en mémoire"

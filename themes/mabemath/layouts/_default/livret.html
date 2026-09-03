@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{ $section   := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $livretIdx := .Parent }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  {{ if $livretIdx }}
+  <a href="{{ $livretIdx.RelPermalink }}">Livret d'automatismes</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>{{ .Title }}</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  {{ with .Params.domaine }}<div class="eyebrow">{{ . }}</div>{{ end }}
+  <h1>{{ .Title }}</h1>
+  <div class="br-meta">
+    {{ with .Params.niveau_origine }}<span><span class="dot"></span>{{ . }}</span>{{ end }}
+    {{ with .Params.nb_exercices }}<span><span class="dot"></span>{{ . }} exercices</span>{{ end }}
+    {{ if .Params.has_livretCorr }}
+      {{ with .Params.corrections_actives }}
+      <span><span class="dot"></span>{{ len . }} exercice{{ if gt (len .) 1 }}s{{ end }} corrigé{{ if gt (len .) 1 }}s{{ end }}</span>
+      {{ else }}
+      <span><span class="dot"></span>Corrections disponibles</span>
+      {{ end }}
+    {{ else }}
+    <span class="meta-muted"><span class="dot"></span>Corrections à venir</span>
+    {{ end }}
+    {{ with .Params.fiche_pdf }}
+    <a href="{{ $.RelPermalink }}{{ . }}" target="_blank" rel="noopener" class="br-print-link"><span class="dot"></span>Fiche imprimable</a>
+    {{ end }}
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  {{ .Content }}
+</div>
+
+{{ with .Params.coopmaths }}
+<div class="livret-plus fade-up">
+  <div>
+    <div class="livret-plus-tag">Plus d'entraînement</div>
+    <p>Des exercices supplémentaires générés au hasard, avec leur correction, sur Coopmaths.</p>
+  </div>
+  <a class="livret-plus-btn" href="{{ . }}" target="_blank" rel="noopener">S'entraîner →</a>
+</div>
+{{ end }}
+
+<div class="br-adjacent fade-up livret-adjacent">
+  <div>
+    {{ with .NextInSection }}<a class="adj-link" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+  </div>
+  <div>
+    {{ if $livretIdx }}<a class="adj-link" href="{{ $livretIdx.RelPermalink }}">Toutes les fiches</a>{{ end }}
+  </div>
+  <div>
+    {{ with .PrevInSection }}<a class="adj-link" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  </div>
+</div>
+{{ end }}

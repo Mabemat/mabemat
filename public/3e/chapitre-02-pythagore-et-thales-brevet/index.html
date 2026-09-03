@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercices type brevet - Pythagore et Thalès — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.825311096e40e9a6e007336e5e364fd4dc3bad8f446aea387679839997ac73f5.css" integrity="sha256-glMRCW5A6abgBzNuXjZP1Nw7rY9Eauo4dnmDmZesc/U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/chapitre-02-pythagore-et-thales/">Pythagore et Thalès</a>
+  <span class="sep">/</span>
+  
+  <span>Exercices type brevet</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  
+  <div class="eyebrow">Chapitre 2 · Exercices type brevet</div>
+  
+  <h1>Pythagore et Thalès</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>DNB</span>
+    <span><span class="dot"></span>Corrections détaillées</span>
+    
+    
+    <a href="/mabemat/3e/chapitre-02-pythagore-et-thales-brevet/brevet2.pdf" target="_blank" class="br-print-link"><span class="dot"></span>Exercices imprimables</a>
+    
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Juin 2014 Polynésie
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro">Pour construire un mur vertical, il faut parfois utiliser un coffrage et un étayage qui maintiendra la structure verticale le temps que le béton sèche. Cet étayage peut se représenter par le schéma ci-dessous.<br><br>
+Les poutres de fer sont coupées et fixées de façon que :
+<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>les segments [AB] et [AE] sont perpendiculaires ;</li><li>C est situé sur la barre [AB] ;</li><li>D est situé sur la barre [BE] ;</li><li>AB = 3,5 m ; AE = 2,625 m et CD = 1,5 m.</li></ul>
+<img src="/mabemat/figures/3e/chapitre-02/1-1.svg" alt="Schéma de l'étayage" style="display:block; margin:1rem auto; max-height:240px; max-width:100%;"></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Calculer BE.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Les barres [CD] et [AE] doivent être parallèles.<br><br>
+À quelle distance de B faut-il placer le point C ?
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2015 Polynésie
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro">Germaine souhaite réaliser un escalier pour monter à l'étage de son appartement.<br><br>
+Elle a besoin pour cela de connaître les dimensions du limon (planche dans laquelle viendront se fixer les marches de cet escalier). Elle réalise le croquis ci-dessous.
+<img src="/mabemat/figures/3e/chapitre-02/2-1.svg" alt="Croquis de l'escalier et du limon" style="display:block; margin:1rem auto; max-height:280px; max-width:100%;">
+Sur ce croquis :
+<ul style="margin:0.5rem 0 0.5rem 1.2rem;"><li>le limon est représenté par le quadrilatère ACDE ;</li><li>les droites (AC) et (ED) sont parallèles ;</li><li>les points E, A et B sont alignés ;</li><li>les points B, C et D sont alignés.</li></ul></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Prouver que ED = 450 cm.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Calculer les deux dimensions AC et AE de cette planche. Arrondir les résultats au centimètre.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2016 Métropole
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro">Sur la figure ci-dessous, le point J appartient au segment [IM] et le point K appartient au segment [IL].<br><br>
+Les longueurs sont données en mètres.
+<img src="/mabemat/figures/3e/chapitre-02/3-1.svg" alt="Figure des triangles IKJ et ILM" style="display:block; margin:1rem auto; max-height:300px; max-width:100%;"></div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Montrer que IKJ est un triangle rectangle.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Montrer que LM est égal à 3,75 m.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Calculer la longueur KM au centimètre près.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Décembre 2017 Wallis-et-Futuna
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro">Pour soutenir la lutte contre l'obésité, un collège décide d'organiser une course.<br><br>
+Un plan est remis aux élèves participant à l'épreuve. Les élèves doivent partir du point A et se rendre au point E en passant par les points B, C et D.<br><br>
+C est le point d'intersection des droites (AE) et (BD). La figure ci-dessous résume le plan, elle n'est pas à l'échelle.
+<img src="/mabemat/figures/3e/chapitre-02/4-1.svg" alt="Plan du parcours ABCDE" style="display:block; margin:1rem auto; max-height:260px; max-width:100%;">
+On donne AC $=400$ m, EC $=1\,000$ m et AB $=300$ m.</div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Calculer BC.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Montrer que ED $=750$ m.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Déterminer la longueur réelle du parcours ABCDE.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+
+
+<article class="exo-brevet" id="exo-5">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">05</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+    </div>
+    
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> DNB Septembre 2017 Métropole
+    </div>
+    
+  </header>
+
+  
+  <div class="exo-intro"><em>Pour illustrer l'exercice, la figure ci-dessous a été faite à main levée.</em>
+<img src="/mabemat/figures/3e/chapitre-02/5-1.svg" alt="Figure à main levée" style="display:block; margin:1rem auto; max-height:300px; max-width:100%;">
+Les points D, F, A et B sont alignés, ainsi que les points E, G, A et C.<br><br>
+De plus, les droites (DE) et (FG) sont parallèles.</div>
+  
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Montrer que le triangle AFG est un triangle rectangle.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Calculer la longueur du segment [AD]. En déduire la longueur du segment [FD].
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        Les droites (FG) et (BC) sont-elles parallèles ? Justifier.
+
+        
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+</article>
+
+
+</div>
+
+
+<div class="br-adjacent fade-up">
+  <a class="adj-link" href="/mabemat/3e/chapitre-02-pythagore-et-thales/">← Retour au chapitre</a>
+</div>
+
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1788363079';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>

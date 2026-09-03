@@ -1,0 +1,170 @@
+{{/* ───────────────────────────────────────────────
+     LIVRET D'AUTOMATISMES — un exercice
+     Grammaire identique a brevet-exo :
+       ---INTRO---  la consigne
+       ---Q---      une question   (---CORR--- sa correction)
+       ---SUB-Q---  une sous-question (---SUB-CORR--- sa correction)
+       ---PART---   un separateur de partie
+     Parametres :
+       num    numero de l'exercice
+       cols   nombre de colonnes pour les listes d'entrainement (1 par defaut)
+       nonum  "true" pour masquer la numerotation (expressions A, B, C...)
+       source etiquette libre affichee a droite du numero
+     Les corrections ne sont generees que si has_livretCorr est vrai
+     dans le front matter de la page.
+──────────────────────────────────────────────── */}}
+{{ $num      := .Get "num" }}
+{{ $source   := .Get "source" }}
+{{ $cols     := .Get "cols" | default "1" }}
+{{ $nonum    := eq (.Get "nonum") "true" }}
+{{ $raw      := .Inner }}
+{{/* Interrupteur general de la fiche, puis filtre exercice par exercice.
+     has_livretCorr: false            -> aucune correction
+     has_livretCorr: true             -> toutes les corrections
+     has_livretCorr: true
+     corrections_actives: [1, 3, 7]   -> seulement ces exercices        */}}
+{{ $showCorr := .Page.Params.has_livretCorr | default false }}
+{{ with .Page.Params.corrections_actives }}
+  {{ $ouvert := false }}
+  {{ range . }}{{ if eq (printf "%v" .) (printf "%v" (int $num)) }}{{ $ouvert = true }}{{ end }}{{ end }}
+  {{ $showCorr = and $showCorr $ouvert }}
+{{ end }}
+
+{{ $intro := "" }}
+{{ $questions := slice }}
+
+{{ if strings.Contains $raw "---INTRO---" }}
+  {{ $parts := split $raw "---INTRO---" }}
+  {{ $afterIntro := index $parts 1 }}
+
+  {{ $introParts := split $afterIntro "---Q---" }}
+  {{ $intro = strings.TrimSpace (index $introParts 0) }}
+
+  {{ $qRaw := strings.TrimSpace (replace $afterIntro (print $intro) "") }}
+  {{ $blocs := split $qRaw "---Q---" }}
+
+  {{ range $bloc := $blocs }}
+    {{ $trimmed := strings.TrimSpace $bloc }}
+    {{ if $trimmed }}
+
+      {{ if strings.HasPrefix $trimmed "---PART---" }}
+        {{ $partLabel := strings.TrimSpace (strings.TrimPrefix "---PART---" $trimmed) }}
+        {{ $questions = $questions | append (dict "type" "part" "label" $partLabel "enonce" "" "corr" "" "sub_questions" slice) }}
+
+      {{ else if strings.Contains $trimmed "---SUB-Q---" }}
+        {{ $mainAndSubs := split $trimmed "---SUB-Q---" }}
+        {{ $qEnonce := strings.TrimSpace (index $mainAndSubs 0) }}
+        {{ $subQs := slice }}
+        {{ range $si, $spart := after 1 $mainAndSubs }}
+          {{ $strimmed := strings.TrimSpace $spart }}
+          {{ if $strimmed }}
+            {{ $scparts := split $strimmed "---SUB-CORR---" }}
+            {{ $senonce := strings.TrimSpace (index $scparts 0) }}
+            {{ $scorr   := "" }}
+            {{ if gt (len $scparts) 1 }}{{ $scorr = strings.TrimSpace (index $scparts 1) }}{{ end }}
+            {{ $subQs = $subQs | append (dict "enonce" $senonce "corr" $scorr) }}
+          {{ end }}
+        {{ end }}
+        {{ $questions = $questions | append (dict "type" "q" "enonce" $qEnonce "corr" "" "sub_questions" $subQs) }}
+
+      {{ else }}
+        {{ $qparts := split $trimmed "---CORR---" }}
+        {{ $enonce := strings.TrimSpace (index $qparts 0) }}
+        {{ $corr := "" }}
+        {{ if gt (len $qparts) 1 }}{{ $corr = strings.TrimSpace (index $qparts 1) }}{{ end }}
+        {{ $questions = $questions | append (dict "type" "q" "enonce" $enonce "corr" $corr "sub_questions" slice) }}
+      {{ end }}
+
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $numFmt := printf "%02d" (int $num) }}
+{{ $letters := slice "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" }}
+
+<article class="exo-brevet exo-livret" id="exo-{{ $num }}">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">{{ $numFmt }}</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      {{ if $intro }}<div class="exo-consigne">{{ $intro | safeHTML }}</div>{{ end }}
+    </div>
+    {{ if $source }}
+    <div class="exo-brevet-chip">
+      <span class="dot"></span> {{ $source }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="q-list{{ if ne $cols "1" }} q-cols q-cols-{{ $cols }}{{ end }}{{ if $nonum }} q-nonum{{ end }}">
+    {{ range $i, $q := $questions }}
+
+    {{ if eq $q.type "part" }}
+    <div class="partie-header">{{ $q.label | safeHTML }}</div>
+
+    {{ else }}
+    <div class="q-item">
+      <div class="q-enonce">
+        {{ $q.enonce | safeHTML }}
+
+        {{ if $q.sub_questions }}
+        <div class="sub-list">
+          {{ range $si, $sq := $q.sub_questions }}
+          {{ $letter := index $letters $si }}
+          <div class="sub-q">
+            <span class="sub-letter">{{ $letter }}.</span>
+            <div>
+              <div class="sub-enonce">{{ $sq.enonce | safeHTML }}</div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+    {{ end }}
+
+    {{ end }}
+  </div>
+
+  {{/* ── Correction de l'exercice entier, en un seul bloc ── */}}
+  {{ $aCorr := false }}
+  {{ range $questions }}
+    {{ if .corr }}{{ $aCorr = true }}{{ end }}
+    {{ range .sub_questions }}{{ if .corr }}{{ $aCorr = true }}{{ end }}{{ end }}
+  {{ end }}
+
+  {{ if and $showCorr $aCorr }}
+  <button class="corr-btn exo-corr-btn" onclick="toggleCorr(this)">
+    <span class="arrow">&#9656;</span><span class="lbl">Voir la correction</span>
+  </button>
+  <div class="corr-box exo-corr-box">
+    <div class="corr-list{{ if ne $cols "1" }} corr-cols corr-cols-{{ $cols }}{{ end }}{{ if $nonum }} corr-nonum{{ end }}">
+      {{ range $q := $questions }}
+      {{ if eq $q.type "part" }}
+      <div class="corr-partie">{{ $q.label | safeHTML }}</div>
+      {{ else }}
+      <div class="corr-item">
+        <div class="corr-texte">
+          {{ with $q.corr }}{{ . | safeHTML }}{{ end }}
+          {{ if $q.sub_questions }}
+          <div class="corr-sub-list">
+            {{ range $si, $sq := $q.sub_questions }}
+            <div class="corr-sub">
+              <span class="sub-letter">{{ index $letters $si }}.</span>
+              <div>{{ with $sq.corr }}{{ . | safeHTML }}{{ end }}</div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+</article>

@@ -3,7 +3,7 @@ title: "Exercices type brevet - Calcul littéral (1)"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-01-calcul-litteral-1"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Juin 2022 Amérique du Nord" >}}
 ---INTRO---

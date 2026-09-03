@@ -88,7 +88,7 @@
     {{/* ── Page de niveau : nouveau design ── */}}
 
     {{/* Hero */}}
-    {{ $chapitres2 := where (where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.layout" "ne" "courses") "Params.has_automatismes" "ne" true }}
+    {{ $chapitres2 := where (where (where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.layout" "ne" "courses") "Params.layout" "ne" "livret-index") "Params.has_automatismes" "ne" true }}
     <div class="level-header" style="--lc:{{ $levelData.color }};">
       <div class="bar" style="background:{{ $levelData.color }};"></div>
       <div>
@@ -105,6 +105,9 @@
     </div>
     {{ $autoPage := index (where .Pages "Params.has_automatismes" true) 0 }}
     {{ $coursesPage := index (where .Pages "Params.layout" "courses") 0 }}
+    {{ $livretPages := where .Pages "Params.layout" "livret-index" }}
+    {{ $livretPage := "" }}
+    {{ if $livretPages }}{{ $livretPage = index $livretPages 0 }}{{ end }}
     <div class="lvl-sub">
         <div class="col">
           <h4>Ce qu'on va faire</h4>
@@ -160,7 +163,7 @@
         {{ end }}
       </div>
     {{/* Liste des chapitres */}}
-    {{ $chapitres := where (where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.layout" "ne" "courses") "Params.has_automatismes" "ne" true }}
+    {{ $chapitres := where (where (where (where (where (where .Pages "Params.layout" "ne" "qcm") "Params.layout" "ne" "brevet") "Params.layout" "ne" "lycee") "Params.layout" "ne" "courses") "Params.layout" "ne" "livret-index") "Params.has_automatismes" "ne" true }}
     {{ if $chapitres }}
     {{/* Collect unique categories */}}
     {{ $cats := slice }}
@@ -187,6 +190,23 @@
     </div>
     {{ end }}
     <div class="chap-list fade-up d4" id="chap-list">
+      {{ with $livretPage }}
+      <a class="chap-row chap-pinned" href="{{ .RelPermalink }}" data-cat="*">
+        <div class="chap-num"></div>
+        <div class="chap-title">
+          Livret d'automatismes
+          <span class="sub">Réviser les bases du collège &middot; 18 fiches par thème</span>
+        </div>
+        <div class="chap-resources">
+          <span class="res on res-pinned">Livret</span>
+        </div>
+        <div class="chap-go">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </a>
+      {{ end }}
       {{ with $coursesPage }}
       <a class="chap-row chap-pinned" href="{{ .RelPermalink }}" data-cat="*">
         <div class="chap-num"></div>

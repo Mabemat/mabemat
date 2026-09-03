@@ -58,7 +58,7 @@ theme = "mabemath"
     has_exercices = true
 
 [params.snt]
-  hidden = false
+  hidden = true
   name = "Python"
   color = "#4A5D7A"
   color2 = "#8A9CC1"
@@ -85,10 +85,6 @@ theme = "mabemath"
   [[menu.main]]
     name = "1re"
     url = "/1re/"
-    weight = 5
-  [[menu.main]]
-    name = "Python"
-    url = "/snt/"
     weight = 5
   [[menu.main]]
     name = "Liens"

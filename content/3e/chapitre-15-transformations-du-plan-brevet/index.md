@@ -3,7 +3,7 @@ title: "Exercices type brevet - Transformations du plan"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-15-transformations-du-plan"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNB Septembre 2022 Métropole" >}}
 ---INTRO---

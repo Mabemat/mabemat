@@ -3,7 +3,7 @@ title: "Exercices type brevet - Fonctions affines"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-13-fonctions-affines"
-has_brevetcorr: true
+has_brevetcorr: false
 ---
 {{< brevet-exo num="1" source="DNBPRO Juin 2023 Polynésie" >}}
 ---INTRO---

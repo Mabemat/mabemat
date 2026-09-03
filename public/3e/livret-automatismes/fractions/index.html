@@ -1,0 +1,4683 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-3e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fractions — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.825311096e40e9a6e007336e5e364fd4dc3bad8f446aea387679839997ac73f5.css" integrity="sha256-glMRCW5A6abgBzNuXjZP1Nw7rY9Eauo4dnmDmZesc/U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/">6e</a>
+    
+    
+    <a href="/mabemat/3e/" class="active">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/3e/">3ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/3e/livret-automatismes/">Livret d'automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Fractions</span>
+</div>
+
+<section class="br-hero fade-up d1">
+  <div class="eyebrow">Nombres et calculs</div>
+  <h1>Fractions</h1>
+  <div class="br-meta">
+    <span><span class="dot"></span>6e · 5e · 4e</span>
+    <span><span class="dot"></span>20 exercices</span>
+    
+    <span class="meta-muted"><span class="dot"></span>Corrections à venir</span>
+    
+    
+  </div>
+</section>
+
+<div class="exercices-brevet fade-up d2">
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-1">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">01</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Donner la valeur décimale de :</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{7}{5}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{5}{4}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{13}{2}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{4}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{11}{2}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{5}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{17}{2}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{3}{4}$ <span class="pointilles"></span>
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Fractions égales, simplification</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p>Une fraction ne change pas si on multiplie ou divise son numérateur et son dénominateur par un même nombre non nul. <strong>On utilise cette propriété pour simplifier les fractions.</strong></p>
+<p><em>Exemple :</em></p>
+$$\frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3}$$<p>Une fraction est irréductible quand on ne peut plus la simplifier.</p>
+<p><strong>Méthode alternative :</strong> décomposer en facteurs pour identifier les diviseurs communs.</p>
+<p><em>Exemple :</em></p>
+$$\frac{12}{18} = \frac{{\color{#C5607A}\mathbf{2}}\times 2 \times {\color{#C5607A}\mathbf{3}}}{{\color{#C5607A}\mathbf{2}} \times {\color{#C5607A}\mathbf{3}}\times 3} = \frac{2}{3}$$
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-2">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">02</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter les égalités.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{4} = \dfrac{\ldots\ldots}{32}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{5}{6} = \dfrac{55}{\ldots\ldots}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{7}{8} = \dfrac{\ldots\ldots}{56}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{3}{7} = \dfrac{18}{\ldots\ldots}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $9 = \dfrac{\ldots\ldots}{5}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{9} = \dfrac{10}{\ldots\ldots}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-3">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">03</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Simplifier les fractions suivantes, au maximum.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{16}{18} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{7}{28} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{14}{21} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{4}{40} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{99}{110} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{40}{90} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{22}{77} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $ \dfrac{15}{18} $
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Comparaison de fractions</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p><strong>Fractions de même dénominateur :</strong> la plus grande fraction a le plus grand numérateur.</p>
+$$\frac{3}{7} \lt \frac{5}{7} \quad \text{car } 3 \lt 5$$<p><strong>Fractions de même numérateur :</strong> la plus grande fraction a le plus petit dénominateur.</p>
+$$\frac{4}{3} \gt \frac{4}{7} \quad \text{car } 3 \lt 7$$<p><strong>Fractions quelconques, première méthode : la comparaison à $1$.</strong> Si une fraction est plus petite que $1$ et l&rsquo;autre plus grande :</p>
+$$\frac{3}{5} \lt 1 \lt \frac{7}{4} \quad \text{donc } \frac{3}{5} \lt \frac{7}{4}$$<p><strong>Fractions quelconques, seconde méthode : la réduction au même dénominateur.</strong></p>
+$$\frac{2}{3} = \frac{16}{24} \quad \text{et} \quad \frac{5}{8} = \frac{15}{24}$$$$\frac{16}{24} \gt \frac{15}{24} \quad \text{donc } \frac{2}{3} \gt \frac{5}{8}$$
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-4">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">04</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter avec $>$ ou $<$.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{27}{14}$ $\ldots$ $\dfrac{27}{17}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{13}{22}$ $\ldots$ $\dfrac{15}{22}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{3}{25}$ $\ldots$ $\dfrac{3}{19}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{17}{33}$ $\ldots$ $\dfrac{14}{33}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{11}{26}$ $\ldots$ $\dfrac{15}{26}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{11}{2}$ $\ldots$ $\dfrac{11}{10}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{2}{11}$ $\ldots$ $\dfrac{10}{11}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{40}{27}$ $\ldots$ $\dfrac{40}{21}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-5">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">05</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Comparer les fractions suivantes.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $-\dfrac{5}{9}\ldots-\dfrac{12}{18}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{28}{80}\ldots\dfrac{3}{10}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $-\dfrac{8}{20}\ldots-\dfrac{1}{2}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{6}{7}\ldots\dfrac{57}{63}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $-\dfrac{5}{7}\ldots-\dfrac{41}{56}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{5}\ldots\dfrac{11}{45}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $-\dfrac{13}{20}\ldots-\dfrac{7}{10}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{4}{9}\ldots\dfrac{40}{99}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-6">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">06</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Compléter avec $>$ ou $<$.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-4">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{13}{22}$ $\ldots$ $\dfrac{14}{9}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{16}{35}$ $\ldots$ $\dfrac{50}{41}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{34}{45}$ $\ldots$ $\dfrac{53}{45}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{16}{3}$ $\ldots$ $\dfrac{11}{26}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{2}{11}$ $\ldots$ $\dfrac{18}{7}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{18}{35}$ $\ldots$ $\dfrac{21}{11}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{19}{3}$ $\ldots$ $\dfrac{8}{15}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{14}{33}$ $\ldots$ $\dfrac{7}{3}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Opérations sur les fractions</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p><strong>Addition et soustraction.</strong> On met les fractions au même dénominateur, puis on ajoute (ou soustrait) les numérateurs en gardant le dénominateur commun.</p>
+$$\frac{3}{4} + \frac{5}{6} = \frac{3 \times 3}{4 \times 3} + \frac{5 \times 2}{6 \times 2} = \frac{9}{12} + \frac{10}{12} = \frac{19}{12}$$$$\frac{7}{8} - \frac{1}{6} = \frac{7 \times 3}{8 \times 3} - \frac{1 \times 4}{6 \times 4} = \frac{21}{24} - \frac{4}{24} = \frac{17}{24}$$<p><strong>Multiplication.</strong> On multiplie les numérateurs entre eux et les dénominateurs entre eux.</p>
+$$\frac{2}{3} \times \frac{5}{7} = \frac{2 \times 5}{3 \times 7} = \frac{10}{21}$$<p><strong>Division.</strong> Diviser par une fraction, c&rsquo;est multiplier par son inverse.</p>
+$$\frac{4}{5} \div \frac{2}{3} = \frac{4}{5} \times \frac{3}{2} = \frac{12}{10} = \frac{6}{5}$$
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-7">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">07</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer et simplifier au maximum le résultat.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{97}{44}-\dfrac{8}{4}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{4}{2}+\dfrac{13}{16}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{9}{5}+\dfrac{19}{50}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{9}{4}-\dfrac{6}{16}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{7}{5}-\dfrac{13}{10}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{9}{4}+\dfrac{11}{24}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-8">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">08</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer et simplifier au maximum le résultat.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{2}+\dfrac{14}{18}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{8}{7}-\dfrac{9}{42}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{-7}{36}+\dfrac{7}{6}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{4}{8}-\dfrac{44}{40}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{-2}{7}-\dfrac{75}{77}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{-16}{32}+\dfrac{-3}{4}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-9">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">09</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer et donner le résultat sous la forme d'une fraction simplifiée au maximum.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{9}{12}+\dfrac{-6}{9}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{-9}{63}+\dfrac{4}{9}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $-4-\dfrac{-9}{6}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{-7}{5}-\dfrac{-1}{8}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{7}{12}-\dfrac{-2}{8}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{-5}{6}+\dfrac{-3}{5}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-10">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">10</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer et donner le résultat sous la forme d'une fraction simplifiée au maximum.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{7}{5}-\dfrac{4}{8}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{8}{2}-\dfrac{2}{4}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{6}+\dfrac{7}{8}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $3+\dfrac{9}{2}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{3}{8}+\dfrac{8}{12}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{7}{10}-\dfrac{6}{15}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-11">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">11</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer et donner le résultat sous forme irréductible.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3 q-nonum">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A = \dfrac{21}{30}\times\dfrac{6}{35}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B = \dfrac{-7}{-110}\times\dfrac{33}{28}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C = \dfrac{7}{9}\times\dfrac{15}{42}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D = 8\times\dfrac{9}{16}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $E = \dfrac{7}{6}\times\dfrac{12}{35}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $F = \dfrac{11}{35}\times\dfrac{21}{110}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-12">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">12</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer et donner le résultat sous forme irréductible.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3 q-nonum">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A = \dfrac{15}{88} \div \dfrac{-9}{-11}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B = \dfrac{12}{63} \div \dfrac{24}{21}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C = \dfrac{9}{44} \div \dfrac{21}{66}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D = 10 \div \dfrac{16}{77}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $E = \dfrac{2}{21} \div \dfrac{14}{35}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $F = \dfrac{21}{20} \div \dfrac{24}{6}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-13">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">13</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3 q-nonum">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A = \dfrac{50}{7 + 3} + 5$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B = \dfrac{8 + 1}{5 + 5 } + 2$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C = \dfrac{45}{9} + 2$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-14">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">14</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Effectuer les calculs suivant en respectant les priorités opératoires.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=\dfrac{2}{7}+\dfrac{4}{7}\times \dfrac{3}{10}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=\dfrac{3}{10}\div \dfrac{3}{7}+\dfrac{3}{30}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=\dfrac{1}{5}\times \dfrac{1}{10}+\dfrac{2}{50}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $D=\dfrac{5}{10}+\dfrac{9}{10}\div \dfrac{1}{10}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-15">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">15</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3 q-nonum">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $A=\dfrac{1}{1-\dfrac{2}{3}}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $B=\dfrac{5}{3-\dfrac{2}{3}}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $C=\dfrac{5}{4-\dfrac{1}{3}}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-16">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">16</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Écrire sous la forme d'une fraction la plus simple possible <br>(les variables sont supposées non nulles).</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{8}{9n}+\dfrac{6}{z}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{8}{n}+\dfrac{8}{z}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{x}{3}\div\dfrac{y}{4}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{x}{3}\times \dfrac{4}{y}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{a}{7}\times \dfrac{b}{9}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{n}{3}+\dfrac{z}{2}$
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-17">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">17</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Écrire les expressions sous la forme d'un quotient.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $-7+\dfrac{2}{x}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $4-\dfrac{7}{4x+8}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-18">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">18</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Écrire les expressions sous la forme d'un quotient.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-2">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $2x+\dfrac{5}{-x-4}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{5}{x}-\dfrac{3}{-x-4}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+<aside class="livret-rappel">
+  <div class="livret-rappel-head">
+    <span class="livret-rappel-tag">Rappel</span>
+    <span class="livret-rappel-titre">Prendre une fraction de...</span>
+  </div>
+  <div class="livret-rappel-body">
+    <p><strong>Propriété.</strong> Prendre une fraction d&rsquo;une quantité revient à multiplier cette quantité par la fraction.</p>
+<p><strong>Méthode.</strong> Pour calculer $\dfrac{a}{b}$ de $c$, on calcule $\dfrac{a}{b} \times c$.</p>
+<p><em>Exemple.</em> Les $\dfrac{3}{4}$ de $20$ euros :</p>
+$$\frac{3}{4} \times 20 = \frac{3 \times 20}{4} = \frac{3 \times 4 \times 5}{4} = 15$$<p><strong>Cas particuliers :</strong></p>
+<ul>
+<li>la moitié de $18$ : $\dfrac{1}{2} \times 18 = 9$</li>
+<li>le tiers de $27$ : $\dfrac{1}{3} \times 27 = 9$</li>
+<li>les trois quarts de $16$ : $\dfrac{3}{4} \times 16 = 12$</li>
+</ul>
+
+  </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-19">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">19</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Calculer.</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list q-cols q-cols-3">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{4} \text{ de } 200 \text{ L}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{5} \text{ de } 200 \text{ L}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{6} \text{ de } 480 \text{ L}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{6} \text{ de } 180 \text{ L}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{4} \text{ de } 80 \text{ L}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        $\dfrac{1}{3} \text{ de } 180 \text{ L}$.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+    
+    
+
+      
+        
+        
+        
+        
+        
+      
+
+    
+  
+
+
+
+
+
+<article class="exo-brevet exo-livret" id="exo-20">
+
+  <header class="exo-brevet-head">
+    <div class="exo-brevet-num">20</div>
+    <div class="exo-brevet-meta">
+      <div class="exo-brevet-label">Exercice</div>
+      <div class="exo-consigne">Dans chaque cas, combien reste-t-il de gâteau ?</div>
+    </div>
+    
+  </header>
+
+  <div class="q-list">
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        J'ai mangé le tiers d'un paquet de gâteaux qui contenait $36$ gâteaux.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="q-item">
+      <div class="q-enonce">
+        J'ai mangé $\dfrac{3}{4}$ d'un paquet de gâteaux qui contenait $20$ gâteaux.
+
+        
+
+      </div>
+    </div>
+    
+
+    
+  </div>
+
+  
+  
+  
+    
+    
+  
+    
+    
+  
+
+  
+
+</article>
+
+
+</div>
+
+
+<div class="livret-plus fade-up">
+  <div>
+    <div class="livret-plus-tag">Plus d'entraînement</div>
+    <p>Des exercices supplémentaires générés au hasard, avec leur correction, sur Coopmaths.</p>
+  </div>
+  <a class="livret-plus-btn" href="https://coopmaths.fr/alea/?uuid=bf6e6&amp;id=can6C22&amp;n=8&amp;d=10&amp;qcm=0&amp;cd=1&amp;cols=4&amp;uuid=06633&amp;id=6N3H&amp;n=6&amp;d=10&amp;s=11&amp;s2=3&amp;cd=1&amp;cols=3&amp;uuid=87514&amp;id=6N3I&amp;n=8&amp;d=10&amp;s=3&amp;cd=1&amp;cols=4&amp;uuid=d7e11&amp;id=4C20&amp;n=8&amp;d=10&amp;s=11&amp;s2=true&amp;cd=1&amp;cols=4&amp;uuid=16c8e&amp;id=can6C44&amp;n=8&amp;d=10&amp;cd=1&amp;cols=4&amp;uuid=f8f4e&amp;id=5N13&amp;n=8&amp;d=10&amp;s=11&amp;s2=false&amp;cd=1&amp;cols=4&amp;uuid=d5ee3&amp;id=5N20&amp;n=6&amp;d=10&amp;s=11&amp;s2=3&amp;s3=true&amp;s4=true&amp;s5=0&amp;cd=1&amp;cols=3&amp;uuid=6074b&amp;id=5N20-1&amp;n=6&amp;d=10&amp;s=11&amp;s2=3&amp;s3=true&amp;s4=true&amp;s5=50&amp;cd=1&amp;cols=3&amp;uuid=5f429&amp;id=4C21&amp;n=6&amp;d=10&amp;s=2&amp;s2=true&amp;s3=true&amp;s4=false&amp;cd=1&amp;cols=3&amp;uuid=5f429&amp;id=4C21&amp;n=6&amp;d=10&amp;s=2&amp;s2=false&amp;s3=true&amp;s4=false&amp;cd=1&amp;cols=3&amp;uuid=29919&amp;id=2N30-3&amp;n=6&amp;d=10&amp;s=5&amp;s2=true&amp;s3=true&amp;s4=1&amp;cd=1&amp;cols=3&amp;uuid=29919&amp;id=2N30-3&amp;n=6&amp;d=10&amp;s=5&amp;s2=true&amp;s3=true&amp;s4=2&amp;cd=1&amp;cols=3&amp;uuid=1cd63&amp;id=5C12-5&amp;n=3&amp;d=10&amp;cd=1&amp;cols=3&amp;uuid=f7f49&amp;id=4C23-11&amp;n=4&amp;d=10&amp;s=7&amp;cd=1&amp;cols=2&amp;uuid=1252f&amp;id=1A-C2-3&amp;n=3&amp;d=10&amp;qcm=0&amp;cd=1&amp;cols=3&amp;uuid=2cb9a&amp;id=2N41-9&amp;n=6&amp;d=10&amp;s=5&amp;cd=1&amp;cols=3&amp;uuid=641bc&amp;id=2N41-8&amp;n=2&amp;d=10&amp;s=1&amp;cd=1&amp;cols=2&amp;uuid=641bc&amp;id=2N41-8&amp;n=2&amp;d=10&amp;s=2&amp;cd=1&amp;cols=2&amp;uuid=daaa3&amp;id=can6C17&amp;n=6&amp;d=10&amp;qcm=0&amp;cd=1&amp;cols=3&amp;uuid=2ce71&amp;id=can6C28&amp;n=2&amp;d=10&amp;qcm=0&amp;cd=1&amp;v=eleve&amp;es=1111001&amp;title=Fractions" target="_blank" rel="noopener">S'entraîner →</a>
+</div>
+
+
+<div class="br-adjacent fade-up livret-adjacent">
+  <div>
+    
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/">Toutes les fiches</a>
+  </div>
+  <div>
+    <a class="adj-link" href="/mabemat/3e/livret-automatismes/pourcentages/">Pourcentages →</a>
+  </div>
+</div>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1788362997';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>
