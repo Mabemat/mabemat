@@ -2317,6 +2317,12 @@ article.qcm .qcm-corr th code { text-transform: none; letter-spacing: 0; font-fa
   display: grid; gap: 0 32px; align-items: start;
 }
 .q-list.q-cols .q-item { border-bottom: none; padding: 12px 0; }
+
+/* Le numero se cale sur la premiere ligne de l'enonce, pas sur le haut du bloc :
+   la boite du chiffre et celle de l'enonce n'ont pas la meme hauteur de ligne des
+   que KaTeX rend une formule. Ecarte quand l'enonce commence par une figure ou
+   une formule centree, ou le numero descendrait avec elle. */
+.q-item:not(:has(.livret-fig)):not(:has(.katex-display)) { align-items: baseline; }
 .q-list.q-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .q-list.q-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .q-list.q-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
