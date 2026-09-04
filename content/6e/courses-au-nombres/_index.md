@@ -1,5 +1,5 @@
 ---
-title: "Courses au nombres"
+title: "Courses aux nombres"
 description: "Calcul mental chronométré · 6ème"
 layout: "courses"
 courses:
