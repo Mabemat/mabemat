@@ -8,9 +8,6 @@ niveau_origine: "6e · 5e · 4e"
 nb_exercices: 20
 has_livretCorr: true
 corrections_actives: [1, 2, 3, 4, 5, 6,7,8,11,12]
-# Pour n'ouvrir que certains exercices, decommenter et lister leurs numeros.
-# Sans cette ligne, les 20 corrections sont accessibles.
-# corrections_actives: [1, 2, 3]
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=bf6e6&id=can6C22&n=8&d=10&qcm=0&cd=1&cols=4&uuid=06633&id=6N3H&n=6&d=10&s=11&s2=3&cd=1&cols=3&uuid=87514&id=6N3I&n=8&d=10&s=3&cd=1&cols=4&uuid=d7e11&id=4C20&n=8&d=10&s=11&s2=true&cd=1&cols=4&uuid=16c8e&id=can6C44&n=8&d=10&cd=1&cols=4&uuid=f8f4e&id=5N13&n=8&d=10&s=11&s2=false&cd=1&cols=4&uuid=d5ee3&id=5N20&n=6&d=10&s=11&s2=3&s3=true&s4=true&s5=0&cd=1&cols=3&uuid=6074b&id=5N20-1&n=6&d=10&s=11&s2=3&s3=true&s4=true&s5=50&cd=1&cols=3&uuid=5f429&id=4C21&n=6&d=10&s=2&s2=true&s3=true&s4=false&cd=1&cols=3&uuid=5f429&id=4C21&n=6&d=10&s=2&s2=false&s3=true&s4=false&cd=1&cols=3&uuid=29919&id=2N30-3&n=6&d=10&s=5&s2=true&s3=true&s4=1&cd=1&cols=3&uuid=29919&id=2N30-3&n=6&d=10&s=5&s2=true&s3=true&s4=2&cd=1&cols=3&uuid=1cd63&id=5C12-5&n=3&d=10&cd=1&cols=3&uuid=f7f49&id=4C23-11&n=4&d=10&s=7&cd=1&cols=2&uuid=1252f&id=1A-C2-3&n=3&d=10&qcm=0&cd=1&cols=3&uuid=2cb9a&id=2N41-9&n=6&d=10&s=5&cd=1&cols=3&uuid=641bc&id=2N41-8&n=2&d=10&s=1&cd=1&cols=2&uuid=641bc&id=2N41-8&n=2&d=10&s=2&cd=1&cols=2&uuid=daaa3&id=can6C17&n=6&d=10&qcm=0&cd=1&cols=3&uuid=2ce71&id=can6C28&n=2&d=10&qcm=0&cd=1&v=eleve&es=1111001&title=Fractions"
 ---
