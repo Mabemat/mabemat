@@ -1,0 +1,128 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+{{ $n := .Params.auto_number | default 0 }}
+{{ $autoIdx := site.GetPage (printf "%s/automatismes" .Section) }}
+{{ $start := add (mul (sub $n 1) 3) 1 }}
+{{ $end := mul $n 3 }}
+
+{{/* ── Mode projection : feuille de style (focus, thème clair) ── */}}
+{{ $proj := resources.Get "css/projection.css" | resources.Fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $proj.RelPermalink }}" integrity="{{ $proj.Data.Integrity }}" crossorigin="anonymous">
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  {{ if $autoIdx }}
+  <a href="{{ $autoIdx.RelPermalink }}">Automatismes</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Semaine {{ $n }}</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <div class="wk-hero-top">
+    <h1>Semaine <em>{{ $n }}</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séances {{ $start }} à {{ $end }}</span>
+    <span><span class="dot"></span>5 questions par séance</span>
+  </div>
+</section>
+
+<div class="seance-tabs-wrap fade-up d2">
+  <div class="seance-tabs" id="auto-seance-tabs" role="tablist"></div>
+</div>
+
+<div id="auto-seance-content" class="fade-up d3">
+  {{ .Content }}
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    {{ if .NextInSection }}
+    <a class="adj-link" href="{{ .NextInSection.RelPermalink }}">← Semaine précédente</a>
+    {{ else if $autoIdx }}
+    <a class="adj-link" href="{{ $autoIdx.RelPermalink }}">← Retour au planning</a>
+    {{ end }}
+  </div>
+  <div>
+    {{ if .PrevInSection }}
+    <a class="adj-link" href="{{ .PrevInSection.RelPermalink }}">Semaine suivante →</a>
+    {{ end }}
+  </div>
+</div>
+
+<script>
+/* ── Bouton « Réponse » (propre aux automatismes 6e) ── */
+window.toggleRep = function (btn) {
+  var corr = btn.nextElementSibling;
+  if (!corr || !corr.classList.contains('exo-corr')) return;
+  var open = corr.classList.toggle('open');
+  btn.classList.toggle('open', open);
+  var lbl = btn.querySelector('.lbl');
+  if (lbl) lbl.textContent = open ? 'Masquer la réponse' : 'Réponse';
+  if (open && window.renderMathInElement) {
+    renderMathInElement(corr, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false
+    });
+  }
+};
+</script>
+
+<script>
+(function() {
+  /* ── Détection figures + data-num ── */
+  document.querySelectorAll('.exo').forEach(function(exo) {
+    var enonce = exo.querySelector('.exo-enonce');
+    var corr   = exo.querySelector('.exo-corr');
+    if (!enonce) return;
+
+    var numEl = exo.querySelector('.exo-num');
+    var num   = numEl ? numEl.textContent.trim() : '';
+    if (num) {
+      enonce.setAttribute('data-num', num);
+      if (corr) corr.setAttribute('data-num', num);
+    }
+
+    var figure     = enonce.querySelector(':scope > img, :scope > svg, :scope > p > img');
+    var corrFigure = corr ? corr.querySelector(':scope > img, :scope > svg, :scope > p > img') : null;
+    if (figure || corrFigure) exo.classList.add('has-figure');
+  });
+
+  /* ── Onglets séance ── */
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('#auto-seance-content .seance-panel');
+  if (!tabsEl || !panels.length) return;
+
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
+
+{{/* ── Mode projection : logique (vanilla JS) ── */}}
+<script src="{{ "js/projection.js" | relURL }}"></script>
+{{ end }}

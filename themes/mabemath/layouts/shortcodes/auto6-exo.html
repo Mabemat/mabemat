@@ -1,0 +1,33 @@
+{{/* Automatismes 6e - une question du livret, avec sa reponse depliable.
+     Grammaire : ---Q--- enonce ---CORR--- reponse
+     Le bouton s'appelle « Reponse » (et non « Voir la correction »),
+     il est pilote par toggleRep(), definie dans le layout automatismes-6e. */}}
+{{ $num := .Get "num" }}
+{{ $large := .Get "large" }}
+{{ $raw := .Inner }}
+
+{{ $parts := split $raw "---Q---" }}
+{{ $afterQ := index $parts 1 }}
+{{ $parts2 := split $afterQ "---CORR---" }}
+{{ $question := index $parts2 0 }}
+{{ $correction := "" }}
+{{ if gt (len $parts2) 1 }}{{ $correction = index $parts2 1 }}{{ end }}
+
+{{/* Extraire le chiffre du parametre num (ex : "Question 1" -> "01") */}}
+{{ $numClean := replaceRE "[^0-9]" "" $num }}
+{{ $numFmt := "??" }}
+{{ if $numClean }}{{ $numFmt = printf "%02d" (int $numClean) }}{{ end }}
+
+<article class="exo{{ if eq $large `true` }} has-figure{{ end }}">
+  <div class="exo-head">
+    <div class="exo-num">{{ $numFmt }}</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">{{ $question | safeHTML }}</div>
+  {{ if $correction }}
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">{{ $correction | safeHTML }}</div>
+  {{ end }}
+</article>

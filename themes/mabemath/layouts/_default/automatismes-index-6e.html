@@ -1,0 +1,69 @@
+{{ define "main" }}
+{{ $section := .Section }}
+{{ $levelData := index .Site.Params.levels $section }}
+
+<div class="crumbs fade-up">
+  <a href="{{ .Site.BaseURL }}">Accueil</a>
+  <span class="sep">/</span>
+  {{ if $levelData }}
+  <a href="{{ $section | relURL }}/">{{ $levelData.name }}</a>
+  <span class="sep">/</span>
+  {{ end }}
+  <span>Automatismes</span>
+</div>
+
+<section class="auto-hero fade-up d1">
+  <div class="auto-hero-grid">
+    <div>
+      <h1>Auto<em>matismes</em></h1>
+    </div>
+    <div class="auto-tag">
+      <div class="auto-swatch">
+        <span style="background:var(--accent);"></span>
+        <span style="background:var(--accent-2);"></span>
+      </div>
+      <div>{{ len .Pages }} semaines</div>
+    </div>
+  </div>
+  <div class="auto-sub">
+    <div class="col">
+      <h4>Ce qu'on fait</h4>
+      <p>Trois séances courtes par semaine, reprises du livret d'automatismes distribué en classe, pour ancrer les réflexes de calcul, de vocabulaire et de géométrie.</p>
+    </div>
+    <div class="col">
+      <h4>Comment ça marche</h4>
+      <p>Chaque séance propose cinq questions rapides. L'énoncé s'affiche ; la réponse se déplie d'un clic, une fois la question cherchée.</p>
+    </div>
+  </div>
+</section>
+
+<section class="auto-progress fade-up d2">
+  <h2>Les <em>séances</em></h2>
+  <div class="count">
+    <strong>{{ len .Pages }}</strong>
+    semaines publiées
+  </div>
+</section>
+
+{{ if .Pages }}
+<div class="weeks-grid fade-up d3">
+  {{ range .Pages.ByWeight }}
+  {{ $n := .Params.auto_number | default 0 }}
+  {{ $start := add (mul (sub $n 1) 3) 1 }}
+  {{ $end := mul $n 3 }}
+  <a class="week-card" href="{{ .RelPermalink }}">
+    <div class="wk-label">Semaine</div>
+    <div class="wk-num">{{ printf "%02d" $n }}</div>
+    <div class="wk-foot">
+      <span>Séances {{ $start }}–{{ $end }}</span>
+      <span class="dots"><span></span><span></span><span></span></span>
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<div class="empty-state" style="padding: 60px 0; color: var(--ink-3); font-family: var(--font-mono); font-size: 13px;">
+  Les séances seront disponibles prochainement.
+</div>
+{{ end }}
+{{ end }}
