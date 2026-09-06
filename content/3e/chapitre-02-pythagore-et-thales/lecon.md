@@ -62,7 +62,7 @@ Si le carré de la longueur du plus grand côté d'un triangle est égal à la s
 Soit le triangle $ABC$ tel que $BC = 17$ cm, $AB = 15$ cm et $AC = 8$ cm.<br>
 Montrer que le triangle est rectangle.
 <ul>
-<li>D'une part : Le côté le plus long est $BC$ et on a $BC^2 = 17^2 = 289$.</li>
+<li>D'une part : Le côté le plus long est $[BC]$ et on a $BC^2 = 17^2 = 289$.</li>
 <li>D'autre part : 
 
 <div class="math-display">
@@ -91,7 +91,7 @@ La contraposée du théorème de Pythagore permet de montrer qu'un triangle n'es
 Soit PCB un triangle tel que : $ PC =6,5 $ cm, $ BC =2,4 $ cm et $ PB =6,9 $ cm. Le triangle PCB est-il rectangle ?
 
 <ul>
-<li>D'une part : Le côté le plus long est $PB$ et on a $PB^2 = 6,9^2 = 47,61$.<br></li>
+<li>D'une part : Le côté le plus long est $[PB]$ et on a $PB^2 = 6,9^2 = 47,61$.<br></li>
 <li>D'autre part : 
 
 <div class="math-display">

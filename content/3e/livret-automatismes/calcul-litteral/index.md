@@ -7,6 +7,7 @@ domaine: "Nombres et calculs"
 niveau_origine: "5e"
 nb_exercices: 10
 has_livretCorr: false
+fiche_pdf: "fiche_calcul-litteral.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=3c1f7&id=5L10&n=8&d=10&s=true&s2=19&s3=true&cd=1&uuid=fefa0&id=5L10-1&uuid=458ae&id=5L10-3&uuid=12bb6&id=5L10-2&n=1&d=10&s=true&cd=1&uuid=85d2d&id=5L12&n=6&d=10&s=9&s2=false&cd=1&cols=2&uuid=a8ad0&id=5L12-2&n=6&d=10&s=9&s2=false&s3=6-8-&cd=1&cols=2&uuid=d05d3&id=5L14&uuid=8865d&id=5L14-2&n=4&d=10&s=2&cd=1&uuid=1abc6&id=5L14-3&uuid=97f1a&id=5L14-4&v=eleve&es=1111001&title=Calcul+litt%C3%A9ral+%3A+Les+bases"
 ---

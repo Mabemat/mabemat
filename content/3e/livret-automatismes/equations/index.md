@@ -7,6 +7,7 @@ domaine: "Nombres et calculs"
 niveau_origine: "4e"
 nb_exercices: 7
 has_livretCorr: false
+fiche_pdf: "fiche_equations.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=799c4&id=4L20&n=6&d=10&s=true&s2=4&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=3&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=2&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=5&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=6&s3=true&cd=0&cols=2&uuid=799c4&id=4L20&n=6&d=10&s=true&s2=7&s3=true&cd=0&cols=2&uuid=1802d&id=3L13-1&n=8&d=10&cd=0&cols=2&v=eleve&es=1011001&title=Equations"
 ---

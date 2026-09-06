@@ -7,6 +7,7 @@ domaine: "Grandeurs et mesures"
 niveau_origine: "6e · 5e · 4e"
 nb_exercices: 5
 has_livretCorr: false
+fiche_pdf: "fiche_volumes.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=65bed&id=2G11-5&n=9&d=10&s=1&s2=true&s3=2&s4=10&cd=1&uuid=65bed&id=2G11-5&n=9&d=10&s=2&s3=2&s4=10&cd=1&uuid=8c803&id=3G42&n=1&d=10&s=2&cd=1&uuid=8c803&id=3G42&n=1&d=10&s=3&cd=1&uuid=8c803&id=3G42&n=1&d=10&s=4&cd=1&v=eleve&es=1111001&title=Volumes"
 ---

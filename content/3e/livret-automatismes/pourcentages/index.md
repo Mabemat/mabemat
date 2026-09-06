@@ -7,6 +7,7 @@ domaine: "Proportionnalité et fonctions"
 niveau_origine: "6e · 5e · 4e"
 nb_exercices: 10
 has_livretCorr: false
+fiche_pdf: "fiche_pourcentages.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=0e58f&id=5N11-3&n=6&d=10&s=1&cd=1&cols=2&alea=6Yrw&uuid=13f50&id=6N1E-1&n=3&d=10&s=13&cd=1&cols=1&alea=qmLu&uuid=66c48&id=6N3O-1&n=2&d=10&s=20&s2=9&cd=1&cols=1&alea=JpCk&uuid=1a706&id=can6P07&n=3&d=10&cd=1&cols=1&alea=lFBf&uuid=66756&id=6N3Q&n=12&d=10&s=true&s2=1-2-4-5&cd=1&cols=3&alea=WebZ&uuid=d67e9&id=BP2AutoB6&n=2&d=10&cd=1&cols=1&alea=1jCv&uuid=064ce&id=BP2CCF6&n=2&d=10&s=2&s2=2&cd=1&cols=1&alea=9bEq&uuid=12444&id=2S11-2&n=6&d=10&s=1&cd=1&alea=sSi5&v=eleve&es=2211001"
 ---

@@ -7,6 +7,8 @@ domaine: "Nombres et calculs"
 niveau_origine: "4e"
 nb_exercices: 11
 has_livretCorr: false
+corrections_actives: [4, 5, 6]
+fiche_pdf: "fiche_distributivite.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=71dd8&id=4L10&n=4&d=10&s=1&s2=2&s3=8&s4=false&cd=1&cols=2&uuid=b87a5&id=4L10b&n=4&d=10&s=1-2&s2=2&s3=3&s4=3&cd=1&cols=2&uuid=71dd8&id=4L10&n=4&d=10&s=3&s2=2&s3=9&s4=false&cd=1&uuid=603a8&id=3L10&cols=2&uuid=815eb&id=3L10-1&n=6&d=10&s=false&cd=1&cols=2&uuid=c88ba&id=3L10-2&n=3&d=10&s=5-6-7-8-9-10&cd=1&uuid=dd1c9&id=4L11&n=4&d=10&s=1&s3=false&cd=1&cols=2&uuid=dd1c9&id=4L11&n=4&d=10&s=2&s3=false&cd=1&cols=2&uuid=dd1c9&id=4L11&n=4&d=10&s=3&s3=false&cd=1&cols=2&uuid=3d2f9&id=2N41-1&n=6&d=10&s=1&s2=3&cd=1&cols=3&uuid=3d2f9&id=2N41-1&n=4&d=10&s=2&s2=3&cd=1&cols=2&v=eleve&es=1111001&title=Distributivit%C3%A9+Simple"
 ---
@@ -275,18 +277,18 @@ Factoriser les expressions suivantes.
 ---Q---
 $A=(3x-4)(x-1)-(4x+5)(x-1)$
 ---CORR---
-$$\begin{aligned}A &= (3x-4)(x-1)-(4x+5)(x-1) \\  &= {\color{#C5607A}\boldsymbol{(x-1)}}\times (3x-4) + {\color{#C5607A}\boldsymbol{(x-1)}}\times (-(4x+5)) \\  &= {\color{#EB7F73}\boldsymbol{(x-1)(-x-9)}}\end{aligned}$$
+$$\begin{aligned}A &= (3x-4)(x-1)-(4x+5)(x-1) \\  &= {\color{#C5607A}\boldsymbol{(x-1)}}\times (3x-4) - {\color{#C5607A}\boldsymbol{(x-1)}}\times (4x+5) \\  &= {\color{#C5607A}\boldsymbol{(x-1)}}\big[(3x-4)-(4x+5)\big] \\  &= (x-1)(3x-4-4x-5) \\  &= {\color{#EB7F73}\boldsymbol{(x-1)(-x-9)}}\end{aligned}$$<span class="corr-mental">Attention au signe $-$ devant la deuxième parenthèse : il change les deux signes, $-(4x+5)=-4x-5$.</span>
 ---Q---
 $B=(3x+5)(5x+3)+(4x-1)(3x+5)$
 ---CORR---
-$$\begin{aligned}B &= (3x+5)(5x+3)+(4x-1)(3x+5) \\  &= {\color{#C5607A}\boldsymbol{(3x+5)}}\times (5x+3) + {\color{#C5607A}\boldsymbol{(3x+5)}}\times (4x-1) \\  &= {\color{#EB7F73}\boldsymbol{(3x+5)(9x+2)}}\end{aligned}$$
+$$\begin{aligned}B &= (3x+5)(5x+3)+(4x-1)(3x+5) \\  &= {\color{#C5607A}\boldsymbol{(3x+5)}}\times (5x+3) + {\color{#C5607A}\boldsymbol{(3x+5)}}\times (4x-1) \\  &= {\color{#C5607A}\boldsymbol{(3x+5)}}\big[(5x+3)+(4x-1)\big] \\  &= (3x+5)(5x+3+4x-1) \\  &= {\color{#EB7F73}\boldsymbol{(3x+5)(9x+2)}}\end{aligned}$$<span class="corr-mental">Le signe $+$ devant la deuxième parenthèse ne change rien : on peut retirer les parenthèses telles quelles.</span>
 ---Q---
 $C=(2x-5)(3x+4)+(3x+4)(6x-4)$
 ---CORR---
-$$\begin{aligned}C &= (2x-5)(3x+4)+(3x+4)(6x-4) \\  &= {\color{#C5607A}\boldsymbol{(3x+4)}}\times (2x-5) + {\color{#C5607A}\boldsymbol{(3x+4)}}\times (6x-4) \\  &= {\color{#EB7F73}\boldsymbol{(3x+4)(8x-9)}}\end{aligned}$$
+$$\begin{aligned}C &= (2x-5)(3x+4)+(3x+4)(6x-4) \\  &= {\color{#C5607A}\boldsymbol{(3x+4)}}\times (2x-5) + {\color{#C5607A}\boldsymbol{(3x+4)}}\times (6x-4) \\  &= {\color{#C5607A}\boldsymbol{(3x+4)}}\big[(2x-5)+(6x-4)\big] \\  &= (3x+4)(2x-5+6x-4) \\  &= {\color{#EB7F73}\boldsymbol{(3x+4)(8x-9)}}\end{aligned}$$
 ---Q---
 $D=(4x+3)(3x+5)+(6x+4)(3x+5)$
 ---CORR---
-$$\begin{aligned}D &= (4x+3)(3x+5)+(6x+4)(3x+5) \\  &= {\color{#C5607A}\boldsymbol{(3x+5)}}\times (4x+3) + {\color{#C5607A}\boldsymbol{(3x+5)}}\times (6x+4) \\  &= {\color{#EB7F73}\boldsymbol{(3x+5)(10x+7)}}\end{aligned}$$
+$$\begin{aligned}D &= (4x+3)(3x+5)+(6x+4)(3x+5) \\  &= {\color{#C5607A}\boldsymbol{(3x+5)}}\times (4x+3) + {\color{#C5607A}\boldsymbol{(3x+5)}}\times (6x+4) \\  &= {\color{#C5607A}\boldsymbol{(3x+5)}}\big[(4x+3)+(6x+4)\big] \\  &= (3x+5)(4x+3+6x+4) \\  &= {\color{#EB7F73}\boldsymbol{(3x+5)(10x+7)}}\end{aligned}$$
 {{< /livret-exo >}}
 

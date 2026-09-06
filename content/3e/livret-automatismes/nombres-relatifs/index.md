@@ -7,6 +7,7 @@ domaine: "Nombres et calculs"
 niveau_origine: "5e · 4e"
 nb_exercices: 19
 has_livretCorr: false
+fiche_pdf: "fiche_nombres-relatifs.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=19060&id=5R13&n=9&d=10&s=1-2&cd=1&cols=3&uuid=cab80&id=5R10&n=1&d=10&s=true&s2=false&cd=1&uuid=cbc26&id=5R20&n=6&d=10&s=20&s2=2&s3=false&s4=false&cd=1&cols=2&uuid=cbc26&id=5R20&n=6&d=10&s=20&s2=2&s3=false&s4=true&cd=1&cols=2&uuid=f2db1&id=5R21-1&n=6&d=10&s=20&s2=true&s3=false&cd=1&cols=2&uuid=b6982&id=5R21&n=6&d=10&s=20&s2=true&s3=false&cd=1&cols=2&uuid=ce842&id=5R20-2&n=6&d=10&s=10&s2=true&s3=false&cd=1&cols=2&uuid=ce842&id=5R20-2&n=6&d=10&s=10&s2=true&s3=true&cd=1&cols=2&uuid=f6ea7&id=5R22&n=4&d=10&s=20&s2=2&s3=false&cd=1&cols=2&uuid=4fd42&id=4C10-1&uuid=745ba&id=4C10&n=4&d=10&s=1&s2=1&cd=1&cols=4&uuid=745ba&id=4C10&n=4&d=10&s=1&s2=3&cd=1&cols=4&uuid=aa4f9&id=4C10-2&n=4&d=10&s=1&cd=1&uuid=745ba&id=4C10&n=4&d=10&s=2&s2=1&cd=1&cols=4&uuid=745ba&id=4C10&n=4&d=10&s=2&s2=3&cd=1&cols=4&uuid=aa4f9&id=4C10-2&n=4&d=10&s=4&cd=1&uuid=73187&id=4C10-6&n=3&d=10&s=3&cd=1&uuid=62f66&id=4C11&n=6&d=10&s=3&s2=true&cd=1&cols=2&uuid=1bf3b&id=4C11-0&n=6&d=10&s=1-2-4-5-12-7&s2=true&cd=1&cols=2&v=eleve&es=1111001&title=Nombres+relatifs"
 ---

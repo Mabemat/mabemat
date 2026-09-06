@@ -7,6 +7,7 @@ domaine: "Nombres et calculs"
 niveau_origine: "4e"
 nb_exercices: 17
 has_livretCorr: false
+fiche_pdf: "fiche_puissances.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=31bd7&id=3C10-3&n=4&d=10&s=2&s2=3&s3=3&s4=3&cd=1&cols=2&uuid=31bd7&id=3C10-3&n=4&d=10&s=1&s2=3&s3=3&s4=3&cd=1&cols=2&uuid=36f8b&id=4C30-3&n=8&d=10&s=1&cd=1&cols=2&uuid=eb865&id=3C10-1&n=8&d=10&s=2&cd=1&cols=2&uuid=93df9&id=4C30-2&n=8&d=10&s=1&cd=1&cols=2&uuid=93df9&id=4C30-2&n=8&d=10&s=2&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=1&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=2&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=3&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=4&s2=1&cd=1&cols=2&uuid=379cd&id=3C10-2&n=8&d=10&s=5&s2=1&cd=1&cols=2&uuid=fc2e8&id=2N31-10&n=8&d=10&cd=1&cols=4&uuid=67432&id=4C37&n=6&d=10&cd=1&cols=2&uuid=a0d16&id=4C32&n=6&d=10&s=1&s2=3&cd=1&cols=2&uuid=a0d16&id=4C32&n=6&d=10&s=2&s2=3&cd=1&cols=2&uuid=762fe&id=4C32-1&n=4&d=10&s=1&s2=3&s3=3&cd=1&cols=2&uuid=762fe&id=4C32-1&n=4&d=10&s=3&s2=3&s3=3&cd=1&cols=2&v=eleve&es=1111001&title=Puissances"
 ---
