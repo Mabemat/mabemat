@@ -6,7 +6,7 @@ weight: 6
 domaine: "Nombres et calculs"
 niveau_origine: "4e"
 nb_exercices: 11
-has_livretCorr: false
+has_livretCorr: true
 corrections_actives: [4, 5, 6]
 fiche_pdf: "fiche_distributivite.pdf"
 coming_soon: false
