@@ -10,7 +10,8 @@ weight: 1
 
 {{< auto6-exo num="Question 1" >}}
 ---Q---
-Écrire en chiffres : « six-mille-neuf-cent-quatre-vingts ».
+Écrire en chiffres : <\br>
+« six-mille-neuf-cent-quatre-vingts ».
 ---CORR---
 ${\color{#D36740}\boldsymbol{6\,980}}$
 {{< /auto6-exo >}}
