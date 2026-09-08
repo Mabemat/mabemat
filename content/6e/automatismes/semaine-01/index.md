@@ -39,7 +39,8 @@ $37 + {\color{#D36740}\boldsymbol{63}} = 100$
 
 {{< auto6-exo num="Question 5" >}}
 ---Q---
-Calculer : $7 \times 8 = \ldots$ &emsp; $6 \times 9 = \ldots$ &emsp; $8 \times 4 = \ldots$
+Calculer : <br>
+$7 \times 8 = \ldots$ &emsp; $6 \times 9 = \ldots$ &emsp; $8 \times 4 = \ldots$
 ---CORR---
 $7 \times 8 = {\color{#D36740}\boldsymbol{56}}$ &emsp; $6 \times 9 = {\color{#D36740}\boldsymbol{54}}$ &emsp; $8 \times 4 = {\color{#D36740}\boldsymbol{32}}$
 {{< /auto6-exo >}}
@@ -64,7 +65,8 @@ ${\color{#D36740}\boldsymbol{8}}$
 
 {{< auto6-exo num="Question 3" >}}
 ---Q---
-Comme $6 \times 4\,300 = 25\,800$, compléter : $6 \times 43 = \ldots$
+Comme $6 \times 4\,300 = 25\,800$, compléter : <br>
+ $6 \times 43 = \ldots$
 ---CORR---
 $6 \times 43 = {\color{#D36740}\boldsymbol{258}}$
 {{< /auto6-exo >}}
@@ -78,7 +80,7 @@ $3~\text{m} = {\color{#D36740}\boldsymbol{300}}~\text{cm}$
 
 {{< auto6-exo num="Question 5" >}}
 ---Q---
-Compléter l'égalité : $\ldots + 4 = 9 + 6$
+Compléter l'égalité : $$\ldots + 4 = 9 + 6$$
 ---CORR---
 ${\color{#D36740}\boldsymbol{11}} + 4 = 9 + 6$
 {{< /auto6-exo >}}
@@ -89,7 +91,8 @@ ${\color{#D36740}\boldsymbol{11}} + 4 = 9 + 6$
 
 {{< auto6-exo num="Question 1" >}}
 ---Q---
-Décomposer en complétant : $47\,205 = (\ldots \times 10\,000) + (\ldots \times 1\,000) + (\ldots \times 100) + (\ldots \times 1)$
+Décomposer en complétant : <br>
+$47\,205 = (\ldots \times 10\,000) + (\ldots \times 1\,000) + (\ldots \times 100) + (\ldots \times 1)$
 ---CORR---
 $47\,205 = ({\color{#D36740}\boldsymbol{4}} \times 10\,000) + ({\color{#D36740}\boldsymbol{7}} \times 1\,000) + ({\color{#D36740}\boldsymbol{2}} \times 100) + ({\color{#D36740}\boldsymbol{5}} \times 1)$
 {{< /auto6-exo >}}
@@ -110,14 +113,15 @@ $1{,}2~\text{km} = {\color{#D36740}\boldsymbol{1\,200}}~\text{m}$
 
 {{< auto6-exo num="Question 4" >}}
 ---Q---
-Calculer mentalement : $63 + 28 = \ldots$
+Calculer mentalement : $$63 + 28 = \ldots$$
 ---CORR---
 $63 + 28 = {\color{#D36740}\boldsymbol{91}}$
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 5" >}}
 ---Q---
-Le triple d'un nombre vaut $54$. Combien vaut sa moitié ?
+Le triple d'un nombre vaut $54$. <br>
+Combien vaut sa moitié ?
 ---CORR---
 ${\color{#D36740}\boldsymbol{9}}$
 {{< /auto6-exo >}}
