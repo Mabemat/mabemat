@@ -74,7 +74,7 @@ $$\begin{aligned}B &= (-9a+3)\times8a \\  &= {\color{#C5607A}\boldsymbol{8a}}\ti
 ---Q---
 $C=-4-10(6t-2)$
 ---CORR---
-$$\begin{aligned}C &= -4-10(6t-2) \\  &= -4{\color{#C5607A}\boldsymbol{(-10)}}\times 6t + {\color{#C5607A}\boldsymbol{(-10)}}\times (-2) \\  &= {\color{#EB7F73}\boldsymbol{-60t+16}}\end{aligned}$$
+$$\begin{aligned}C &= -4-10(6t-2) \\  &= -4+{\color{#C5607A}\boldsymbol{(-10)}}\times 6t + {\color{#C5607A}\boldsymbol{(-10)}}\times (-2) \\  &= {\color{#EB7F73}\boldsymbol{-60t+16}}\end{aligned}$$
 ---Q---
 $D=8t(-t-5)$
 ---CORR---
