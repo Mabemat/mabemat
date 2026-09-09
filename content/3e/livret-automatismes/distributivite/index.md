@@ -7,7 +7,7 @@ domaine: "Nombres et calculs"
 niveau_origine: "4e"
 nb_exercices: 11
 has_livretCorr: true
-corrections_actives: [4, 5, 6]
+corrections_actives: [1, 2, 3, 4, 5, 6]
 fiche_pdf: "fiche_distributivite.pdf"
 coming_soon: false
 coopmaths: "https://coopmaths.fr/alea/?uuid=71dd8&id=4L10&n=4&d=10&s=1&s2=2&s3=8&s4=false&cd=1&cols=2&uuid=b87a5&id=4L10b&n=4&d=10&s=1-2&s2=2&s3=3&s4=3&cd=1&cols=2&uuid=71dd8&id=4L10&n=4&d=10&s=3&s2=2&s3=9&s4=false&cd=1&uuid=603a8&id=3L10&cols=2&uuid=815eb&id=3L10-1&n=6&d=10&s=false&cd=1&cols=2&uuid=c88ba&id=3L10-2&n=3&d=10&s=5-6-7-8-9-10&cd=1&uuid=dd1c9&id=4L11&n=4&d=10&s=1&s3=false&cd=1&cols=2&uuid=dd1c9&id=4L11&n=4&d=10&s=2&s3=false&cd=1&cols=2&uuid=dd1c9&id=4L11&n=4&d=10&s=3&s3=false&cd=1&cols=2&uuid=3d2f9&id=2N41-1&n=6&d=10&s=1&s2=3&cd=1&cols=3&uuid=3d2f9&id=2N41-1&n=4&d=10&s=2&s2=3&cd=1&cols=2&v=eleve&es=1111001&title=Distributivit%C3%A9+Simple"
