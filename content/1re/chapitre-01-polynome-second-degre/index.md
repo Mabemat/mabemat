@@ -7,6 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: true
 has_qcm: false
+has_revisions: true
+lien_revisions: "revision.pdf"
 competences:
   - "Factoriser un trinôme $ax^2+bx+c$ à l'aide du discriminant"
   - "Calculer et interpréter $\\Delta = b^2-4ac$"
