@@ -7,6 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: true
 has_qcm: false
+has_revisions: true
+lien_revisions: "revision.pdf"
 has_interro : false
 competences:
   - "Connaître et distinguer les ensembles ℕ, ℤ, 𝔻, ℚ et ℝ"
