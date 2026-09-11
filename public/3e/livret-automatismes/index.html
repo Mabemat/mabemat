@@ -202,7 +202,7 @@ pre[style*="background-color"] {
     <button data-filter="corr">Avec correction</button>
     <button data-filter="todo">Sans correction</button>
   </div>
-  <div class="count-inline"><strong>1</strong> / 18 corrigées</div>
+  <div class="count-inline"><strong>2</strong> / 18 corrigées</div>
 </div>
 
 
@@ -284,7 +284,7 @@ pre[style*="background-color"] {
       
       
       
-      <a class="livret-card" href="/mabemat/3e/livret-automatismes/distributivite/" data-state="todo">
+      <a class="livret-card" href="/mabemat/3e/livret-automatismes/distributivite/" data-state="corr">
         <div class="livret-card-num">06</div>
         <div class="livret-card-titre">Distributivité</div>
         <div class="livret-card-meta">
@@ -292,7 +292,11 @@ pre[style*="background-color"] {
            &middot; 11 exos
         </div>
         <div class="livret-card-foot">
-          <span class="tag-todo">Correction à venir</span>
+          
+            
+            <span class="tag-done">Corrigée</span>
+            
+          
           <span class="livret-card-arrow">→</span>
         </div>
       </a>
@@ -641,7 +645,7 @@ pre[style*="background-color"] {
   </script>
   <script>
      
-    const BUILD_TS = '1788715955';
+    const BUILD_TS = '1789108596';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;
