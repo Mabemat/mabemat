@@ -183,9 +183,9 @@ Résoudre dans $\R$ les équations suivantes :
 </ol>
 
 <ol>
-<li>Calculons le discriminant $\Delta=b^2-4ac=(-1)^2-4\times 2\times (-6)=1+48=49=7^2 >0$, l'équation $2x^2 -x-6=0$ a donc deux solutions : $$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{1-\sqrt{49}}{2\times 2}=\dfrac{1-7}{4}=\dfrac{-6}{4}=\dfrac{-3}{2} \text{ et } x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{1+\sqrt{49}}{2\times 2}=\dfrac{1+7}{4}=\dfrac{8}{4}=2$$
+<li>Calculons le discriminant $\Delta=b^2-4ac=(-1)^2-4\times 2\times (-6)=1+48=49 >0$, l'équation $2x^2 -x-6=0$ a donc deux solutions : $$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{1-\sqrt{49}}{2\times 2}=\dfrac{1-7}{4}=\dfrac{-6}{4}=\dfrac{-3}{2} \text{ et } x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{1+\sqrt{49}}{2\times 2}=\dfrac{1+7}{4}=\dfrac{8}{4}=2$$
 Donc $S=\left\{\dfrac{-3}{2};2\right\}$. On peut écrire $2x^2 -x-6=2\left(x+\dfrac{3}{2}\right)(x-2)$.</li>
-<li>Calculons le discriminant $\Delta=b^2-4ac=(-3)^2-4\times 2\times \dfrac{9}{8}=9-9=0$, l'équation $2x^2 -3x+\dfrac{9}{8} =0$ a donc une unique solution $x_0=-\dfrac{b}{2a}=-\dfrac{-3}{2\times 2}=\dfrac{3}{4}$. <br>
+<li>Calculons le discriminant $\Delta=b^2-4ac=(-3)^2-4\times 2\times \dfrac{9}{8}=9-9=0$, l'équation $2x^2 -3x+\dfrac{9}{8} =0$ a donc une unique : <br> solution $x_0=-\dfrac{b}{2a}=-\dfrac{-3}{2\times 2}=\dfrac{3}{4}$. <br>
 Donc $S=\left\{\dfrac{3}{4}\right\}$. On peut écrire $2x^2 -3x+\dfrac{9}{8}=2\left(x-\dfrac{3}{4}\right)^2$.</li>
 <li>Calculons le discriminant $\Delta=b^2-4ac=3^2-4\times 1\times 10=9-40=-31<0$. <br>Donc l'équation $x^2 +3x+10=0$ n'a pas de solution réelle.</li>
 </ol>
