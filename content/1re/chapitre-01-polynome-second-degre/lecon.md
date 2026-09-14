@@ -297,12 +297,9 @@ $\Delta=(-4)^2-4\times 1\times 3=16-12=4>0$, il y a donc deux racines :
 $$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-\sqrt{4}}{2}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+\sqrt{4}}{2}=\dfrac{4+2}{2}=3$$
 Comme $a=1>0$, le trinôme est positif à l'extérieur des racines et négatif entre les racines :
 
-<div style="overflow-x:auto; margin:1rem 0;">
-<table class="signe">
-<tr><th>$x$</th><td>$-\infty$</td><td></td><td>$1$</td><td></td><td>$3$</td><td></td><td>$+\infty$</td></tr>
-<tr><th>$f(x)-g(x)$</th><td></td><td class="pos">$+$</td><td>$0$</td><td class="neg">$-$</td><td>$0$</td><td class="pos">$+$</td><td></td></tr>
-</table>
-</div>
+<p style="text-align:center;">
+<img src="/mabemat/figures/1re/chapitre-01/5.svg" alt="tableau de signe de f(x)-g(x)" style="max-height:120px; max-width:100%;">
+</p>
 
 <strong>Étape 3 : on conclut.</strong>
 <ul>

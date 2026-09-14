@@ -573,8 +573,8 @@ $\Delta=0^2-4\times(-2)\times(-7)=-56<0$ <br>
 donc $R$ n'admet aucune racine et est toujours du signe de $a=-2<0$. 
 </li>
 <li>Résoudre dans $\R$ l'inéquation $3x^2+7x+2>0$.<br>
-Le discriminant du trinôme est égal à : $\Delta=b^2-4ac=(7)^2-4\times 3\times 2=49-24=25=5^2>0$, <br>
-ainsi, l'équation $3x^2+7x+2=0$ admet deux racines réelles :<br> $x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{-7-5}{2\times 3}=-2$ et $x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{-7+5}{2\times 3}=\dfrac{-1}{3}$.<br>
+Le discriminant du trinôme est égal à : $\Delta=b^2-4ac=(7)^2-4\times 3\times 2=49-24=25>0$, <br>
+ainsi, l'équation $3x^2+7x+2=0$ admet deux racines réelles :<br> $x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{-7-\sqrt{25}}{2\times 3}=-2$ et $x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{-7+\sqrt{25}}{2\times 3}=\dfrac{-1}{3}$.<br>
 Le signe du trinôme se résume dans le tableau suivant : <br>
 <p style="text-align:center;">
   <img src="/mabemat/figures/1re/chapitre-01/3.png" alt="figure 7" style="max-height:100px; max-width:100%;">
@@ -591,15 +591,15 @@ Le signe du trinôme se résume dans le tableau suivant : <br>
 Déterminer le domaine de définition des fonctions suivantes : 
 $f(x)=\dfrac{x^2-7}{2x^2-5x-3}$ et $g(x)=\sqrt{4x^2+x-5}$.<br>
 <p>Pour la fonction $f$, le dénominateur ne doit pas être nul, cherchons donc les racines. <br>
-$\Delta=(-5)^2-4\times 2\times (-3)=49=7^2$ donc
-$x_1=\dfrac{5-7}{4}=\dfrac{-1}{2}$ et
-$x_2=\dfrac{5+7}{4}=3$. <br></p>
+$\Delta=(-5)^2-4\times 2\times (-3)=49$ donc
+$x_1=\dfrac{5-\sqrt{49}}{4}=\dfrac{-1}{2}$ et
+$x_2=\dfrac{5+\sqrt{49}}{4}=3$. <br></p>
 <p>Ainsi, $D_f=\mathbb{R}\setminus \Biggl\lbrace \dfrac{-1}{2} ; 3 \Biggr\rbrace$.<br></p>
 <p>Pour la fonction $g$, l&rsquo;intérieur de la racine doit être positif.
 Comme $a=4>0$, la fonction est négative entre les deux racines.<br></p>
-<p>$\Delta=1^2-4\times 4\times (-5)=81$ donc
-$x_1=\dfrac{-1-9}{8}=\dfrac{-5}{4}$ et
-$x_2=\dfrac{-1+9}{8}=1$. <br></p>
+<p>$\Delta=1^2-4\times 4\times (-5)=81 > 0$ donc
+$x_1=\dfrac{-1-\sqrt{81}}{8}=\dfrac{-5}{4}$ et
+$x_2=\dfrac{-1+\sqrt{81}}{8}=1$. <br></p>
 <p>Donc $D_g=\left]-\infty;\dfrac{-5}{4}\right]\cup [1;+\infty[$.</p>
 </div>
 <h3 class="subsubsection-title">1.3.2 Position relatives de deux paraboles</h3>
@@ -617,32 +617,13 @@ Soit $f$ et $g$ les fonctions définies sur $\R$ par $f(x)=2x^2-3x+1$ et $g(x)=x
 </p>
 $$f(x)-g(x)=\left(2x^2-3x+1\right)-\left(x^2+x-2\right)=2x^2-3x+1-x^2-x+2=x^2-4x+3$$<p><strong>Étape 2 : on étudie le signe de cette différence.</strong><br>
 C&rsquo;est un trinôme du second degré avec $a=1$, $b=-4$ et $c=3$.<br>
-$\Delta=(-4)^2-4\times 1\times 3=16-12=4=2^2>0$, il y a donc deux racines :
+$\Delta=(-4)^2-4\times 1\times 3=16-12=4>0$, il y a donc deux racines :
 </p>
-$$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+2}{2}=3$$<p>
+$$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-\sqrt{4}}{2}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+\sqrt{4}}{2}=\dfrac{4+2}{2}=3$$<p>
 Comme $a=1>0$, le trinôme est positif à l&rsquo;extérieur des racines et négatif entre les racines :</p>
-<table>
-<tr>
-<th>$x$</th>
-<th>$-\infty$</th>
-<th></th>
-<th>$1$</th>
-<th></th>
-<th>$3$</th>
-<th></th>
-<th>$+\infty$</th>
-</tr>
-<tr>
-<td>$f(x)-g(x)$</td>
-<td></td>
-<td>$+$</td>
-<td>$0$</td>
-<td>$-$</td>
-<td>$0$</td>
-<td>$+$</td>
-<td></td>
-</tr>
-</table>
+<p style="text-align:center;">
+<img src="/mabemat/figures/1re/chapitre-01/5.svg" alt="tableau de signe de f(x)-g(x)" style="max-height:120px; max-width:100%;">
+</p>
 <p><strong>Étape 3 : on conclut.</strong></p>
 <ul>
 <li>Sur $]-\infty;1[$ et sur $]3;+\infty[$ : $f(x)-g(x)>0$, donc $f(x)>g(x)$ et $C_f$ est <strong>au-dessus</strong> de $C_g$.</li>
@@ -655,7 +636,7 @@ Comme $f(1)=2-3+1=0$ et $f(3)=18-9+1=10$, les points d'intersection sont $A(1;0)
 <h3 class="subsubsection-title">1.3.3 Équations bi-carrées</h3>
 <p>Résoudre dans $\R$ par changement de variables $x^2=X$ l&rsquo;équation $2x^4+11x^2-6=0$.<br></p>
 <p>On pose $X=x^2$ alors on a $2X^2+11X-6=0$. <br>
-$\Delta=11^2-4\times 2 \times (-6)=169=13^2>0$ donc $X_1=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d&rsquo;où $x_2'=-\sqrt{\dfrac{1}{2}}=-\dfrac{\sqrt{2}}{2}$ et $x_2''=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}$. <br>Finalement, $S=\left\{-\dfrac{\sqrt{2}}{2};\dfrac{\sqrt{2}}{2}\right\}$.</p>
+$\Delta=11^2-4\times 2 \times (-6)=169>0$ donc $X_1=\dfrac{-11-\sqrt{169}}{4}=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+\sqrt{169}}{4}=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d&rsquo;où $x_2'=-\sqrt{\dfrac{1}{2}}=-\dfrac{\sqrt{2}}{2}$ et $x_2''=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}$. <br>Finalement, $S=\left\{-\dfrac{\sqrt{2}}{2};\dfrac{\sqrt{2}}{2}\right\}$.</p>
 <h3 class="subsubsection-title">1.3.4 Équations se ramenant à du second degré</h3>
 <div class="environment theoreme">
 <div class="environment-title">Théorème :</div>
@@ -674,7 +655,7 @@ x \times y & =-6
 \right.$
 <br>
 On considère le polynôme $P(x)=x^2-5x-6$ alors $x$ et $y$ sont les racines de $P$ d'après le théorème avec $a=1$, $-b=5$, $c=-6$. <br>
-$\Delta=(-5)^2-4\times 1\times (-6)=49=7^2>0$ et $x_1=\dfrac{5-7}{2}=-1=x$ et $x_2=\dfrac{5+7}{2}=6=y$.<br>
+$\Delta=(-5)^2-4\times 1\times (-6)=49>0$ et $x_1=\dfrac{5-\sqrt{49}}{2}=\dfrac{5-7}{2}=-1=x$ et $x_2=\dfrac{5+\sqrt{49}}{2}=\dfrac{5+7}{2}=6=y$.<br>
 Vérification : $\left\{
 \begin{array}{lll}
 x+y &=-1+6&=5 \\
@@ -897,7 +878,7 @@ Si aucune valeur simple ne convient, on revient au calcul de $\Delta$.
   </script>
   <script>
      
-    const BUILD_TS = '1789118626';
+    const BUILD_TS = '1789398286';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;
