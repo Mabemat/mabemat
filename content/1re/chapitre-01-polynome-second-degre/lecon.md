@@ -233,8 +233,8 @@ $\Delta=0^2-4\times(-2)\times(-7)=-56<0$ <br>
 donc $R$ n'admet aucune racine et est toujours du signe de $a=-2<0$. 
 </li>
 <li>Résoudre dans $\R$ l'inéquation $3x^2+7x+2>0$.<br>
-Le discriminant du trinôme est égal à : $\Delta=b^2-4ac=(7)^2-4\times 3\times 2=49-24=25=5^2>0$, <br>
-ainsi, l'équation $3x^2+7x+2=0$ admet deux racines réelles :<br> $x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{-7-5}{2\times 3}=-2$ et $x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{-7+5}{2\times 3}=\dfrac{-1}{3}$.<br>
+Le discriminant du trinôme est égal à : $\Delta=b^2-4ac=(7)^2-4\times 3\times 2=49-24=25>0$, <br>
+ainsi, l'équation $3x^2+7x+2=0$ admet deux racines réelles :<br> $x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{-7-\sqrt{25}}{2\times 3}=-2$ et $x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{-7+\sqrt{25}}{2\times 3}=\dfrac{-1}{3}$.<br>
 Le signe du trinôme se résume dans le tableau suivant : <br>
 
 <p style="text-align:center;">
@@ -258,18 +258,18 @@ Déterminer le domaine de définition des fonctions suivantes :
 $f(x)=\dfrac{x^2-7}{2x^2-5x-3}$ et $g(x)=\sqrt{4x^2+x-5}$.<br>
 
 Pour la fonction $f$, le dénominateur ne doit pas être nul, cherchons donc les racines. <br>
-$\Delta=(-5)^2-4\times 2\times (-3)=49=7^2$ donc 
-$x_1=\dfrac{5-7}{4}=\dfrac{-1}{2}$ et 
-$x_2=\dfrac{5+7}{4}=3$. <br>
+$\Delta=(-5)^2-4\times 2\times (-3)=49$ donc 
+$x_1=\dfrac{5-\sqrt{49}}{4}=\dfrac{-1}{2}$ et 
+$x_2=\dfrac{5+\sqrt{49}}{4}=3$. <br>
 
 Ainsi, $D_f=\mathbb{R}\setminus \Biggl\lbrace \dfrac{-1}{2} ; 3 \Biggr\rbrace$.<br>
 
 Pour la fonction $g$, l'intérieur de la racine doit être positif. 
 Comme $a=4>0$, la fonction est négative entre les deux racines.<br>
 
-$\Delta=1^2-4\times 4\times (-5)=81$ donc 
-$x_1=\dfrac{-1-9}{8}=\dfrac{-5}{4}$ et 
-$x_2=\dfrac{-1+9}{8}=1$. <br>
+$\Delta=1^2-4\times 4\times (-5)=81 > 0$ donc 
+$x_1=\dfrac{-1-\sqrt{81}}{8}=\dfrac{-5}{4}$ et 
+$x_2=\dfrac{-1+\sqrt{81}}{8}=1$. <br>
 
 Donc $D_g=\left]-\infty;\dfrac{-5}{4}\right]\cup [1;+\infty[$.
 </div>
@@ -293,32 +293,16 @@ $$f(x)-g(x)=\left(2x^2-3x+1\right)-\left(x^2+x-2\right)=2x^2-3x+1-x^2-x+2=x^2-4x
 
 <strong>Étape 2 : on étudie le signe de cette différence.</strong><br>
 C'est un trinôme du second degré avec $a=1$, $b=-4$ et $c=3$.<br>
-$\Delta=(-4)^2-4\times 1\times 3=16-12=4=2^2>0$, il y a donc deux racines :
-$$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+2}{2}=3$$
+$\Delta=(-4)^2-4\times 1\times 3=16-12=4>0$, il y a donc deux racines :
+$$x_1=\dfrac{-b-\sqrt{\Delta}}{2a}=\dfrac{4-\sqrt{4}}{2}=\dfrac{4-2}{2}=1 \quad \text{ et } \quad x_2=\dfrac{-b+\sqrt{\Delta}}{2a}=\dfrac{4+\sqrt{4}}{2}=\dfrac{4+2}{2}=3$$
 Comme $a=1>0$, le trinôme est positif à l'extérieur des racines et négatif entre les racines :
 
-<table>
-<tr>
-<th>$x$</th>
-<th>$-\infty$</th>
-<th></th>
-<th>$1$</th>
-<th></th>
-<th>$3$</th>
-<th></th>
-<th>$+\infty$</th>
-</tr>
-<tr>
-<td>$f(x)-g(x)$</td>
-<td></td>
-<td>$+$</td>
-<td>$0$</td>
-<td>$-$</td>
-<td>$0$</td>
-<td>$+$</td>
-<td></td>
-</tr>
+<div style="overflow-x:auto; margin:1rem 0;">
+<table class="signe">
+<tr><th>$x$</th><td>$-\infty$</td><td></td><td>$1$</td><td></td><td>$3$</td><td></td><td>$+\infty$</td></tr>
+<tr><th>$f(x)-g(x)$</th><td></td><td class="pos">$+$</td><td>$0$</td><td class="neg">$-$</td><td>$0$</td><td class="pos">$+$</td><td></td></tr>
 </table>
+</div>
 
 <strong>Étape 3 : on conclut.</strong>
 <ul>
@@ -335,7 +319,7 @@ Comme $f(1)=2-3+1=0$ et $f(3)=18-9+1=10$, les points d'intersection sont $A(1;0)
 Résoudre dans $\R$ par changement de variables $x^2=X$ l'équation $2x^4+11x^2-6=0$.<br>
 
 On pose $X=x^2$ alors on a $2X^2+11X-6=0$. <br>
-$\Delta=11^2-4\times 2 \times (-6)=169=13^2>0$ donc $X_1=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d'où $x_2'=-\sqrt{\dfrac{1}{2}}=-\dfrac{\sqrt{2}}{2}$ et $x_2''=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}$. <br>Finalement, $S=\left\{-\dfrac{\sqrt{2}}{2};\dfrac{\sqrt{2}}{2}\right\}$.
+$\Delta=11^2-4\times 2 \times (-6)=169>0$ donc $X_1=\dfrac{-11-\sqrt{169}}{4}=\dfrac{-11-13}{4}=-6$ et $X_2=\dfrac{-11+\sqrt{169}}{4}=\dfrac{-11+13}{4}=\dfrac{1}{2}$<br> Ainsi, $x_1^2=X_1=-6<0$ impossible et $x_2^2=X_2=\dfrac{1}{2}$ d'où $x_2'=-\sqrt{\dfrac{1}{2}}=-\dfrac{\sqrt{2}}{2}$ et $x_2''=\sqrt{\dfrac{1}{2}}=\dfrac{\sqrt{2}}{2}$. <br>Finalement, $S=\left\{-\dfrac{\sqrt{2}}{2};\dfrac{\sqrt{2}}{2}\right\}$.
 
 
 
@@ -359,7 +343,7 @@ x \times y & =-6
 \right.$
 <br>
 On considère le polynôme $P(x)=x^2-5x-6$ alors $x$ et $y$ sont les racines de $P$ d'après le théorème avec $a=1$, $-b=5$, $c=-6$. <br>
-$\Delta=(-5)^2-4\times 1\times (-6)=49=7^2>0$ et $x_1=\dfrac{5-7}{2}=-1=x$ et $x_2=\dfrac{5+7}{2}=6=y$.<br>
+$\Delta=(-5)^2-4\times 1\times (-6)=49>0$ et $x_1=\dfrac{5-\sqrt{49}}{2}=\dfrac{5-7}{2}=-1=x$ et $x_2=\dfrac{5+\sqrt{49}}{2}=\dfrac{5+7}{2}=6=y$.<br>
 Vérification : $\left\{
 \begin{array}{lll}
 x+y &=-1+6&=5 \\
