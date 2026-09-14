@@ -66,8 +66,8 @@ Soient $a$, $b$, $c$ et $d$ quatre réels :
 Développer les expressions suivantes :
 <ul class="multicols-2">
 <li>$A = (z+3)(-5z+2)$<br>$\phantom{A} = z\times(-5z)+z\times 2+3\times(-5z)+3\times 2$<br>$\phantom{A} = -5z^2+2z+(-15z)+6$<br>$\phantom{A} = -5z^2-13z+6$</li>
-<li>$B = (-6k+1)(3k-2)$<br>$\phantom{B} = -6k\times 3k+(-6k)\times(-2)+1\times 3k+1\times(-2)$<br>$\phantom{B} = -18k^2+12k+3k+(-2)$<br>$\phantom{B} = -18k^2+15k-2$</li>
 <li>$C = -3(-10x+5)(9x+5)$<br>$\phantom{C} = -3(-90x^2-50x+45x+25)$<br>$\phantom{C} = -3(-90x^2-5x+25)$<br>$\phantom{C} = 270x^2+15x-75$</li>
+<li>$B = (-6k+1)(3k-2)$<br>$\phantom{B} = -6k\times 3k+(-6k)\times(-2)+1\times 3k+1\times(-2)$<br>$\phantom{B} = -18k^2+12k+3k+(-2)$<br>$\phantom{B} = -18k^2+15k-2$</li>
 <li>$D = -4+(8x+10)(-9x-3)$<br>$\phantom{D} = -4-72x^2-24x-90x-30$<br>$\phantom{D} = -72x^2-114x-34$</li>
 </ul>
 </div>
