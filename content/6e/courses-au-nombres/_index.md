@@ -8,7 +8,7 @@ courses:
     has_correction: true
   - num: 2
     date: "2026-09-14"
-    has_correction: false
+    has_correction: true
   - num: 3
     date: "2026-09-21"
     has_correction: false

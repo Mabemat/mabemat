@@ -30,12 +30,13 @@
   /* ── État ── */
   var SCALE_KEY = 'mabemat-proj-scale';
   var scale = parseInt(localStorage.getItem(SCALE_KEY), 10);
-  if (!scale || scale < 12 || scale > 30) scale = 18;
+  if (!scale || scale < 12 || scale > 64) scale = 18;
   var seance = 0, q = 0;
   var revealed = {};
 
   /* ── Icônes SVG ── */
   var SVG_EXPAND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg>';
+  var SVG_CONTRAST = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"></path></svg>';
   var SVG_CLOSE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
 
   /* ── Construction de l'overlay ── */
@@ -52,6 +53,7 @@
       '<div class="pb-tools">' +
         '<button class="pb-btn" type="button" data-act="minus" title="Réduire le texte (−)">A−</button>' +
         '<button class="pb-btn" type="button" data-act="plus" title="Agrandir le texte (+)">A+</button>' +
+        '<button class="pb-btn" type="button" data-act="contrast" title="Haut contraste (C)">' + SVG_CONTRAST + '</button>' +
         '<button class="pb-btn" type="button" data-act="full" title="Plein écran (F)">' + SVG_EXPAND + '</button>' +
         '<div class="pb-divider"></div>' +
         '<button class="pb-btn pb-close" type="button" data-act="close" title="Quitter (Échap)">' + SVG_CLOSE + '</button>' +
@@ -122,10 +124,25 @@
   function gotoSeance(i) { seance = i; q = 0; render(); }
   function toggleReveal() { revealed[seance + '-' + q] = !revealed[seance + '-' + q]; render(); }
   function setScale(d) {
-    scale = Math.max(12, Math.min(30, scale + d));
+    scale = Math.max(12, Math.min(64, scale + d));
     localStorage.setItem(SCALE_KEY, scale);
     ov.style.setProperty('--proj-scale', scale);
   }
+
+  /* ── Haut contraste, activable a volonte (bouton ou touche C) ── */
+  var CONTRAST_KEY = 'mabemat-proj-contrast';
+  function applyContrast() {
+    var on = localStorage.getItem(CONTRAST_KEY) === 'on';
+    ov.classList.toggle('contrast', on);
+    var cb = ov.querySelector('[data-act="contrast"]');
+    if (cb) cb.classList.toggle('pb-on', on);
+  }
+  function toggleContrast() {
+    var on = localStorage.getItem(CONTRAST_KEY) === 'on';
+    try { localStorage.setItem(CONTRAST_KEY, on ? 'off' : 'on'); } catch (e) {}
+    applyContrast();
+  }
+  applyContrast();
   function toggleFull() {
     if (!document.fullscreenElement) {
       if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
@@ -163,6 +180,7 @@
     var act = b.getAttribute('data-act');
     if (act === 'minus') setScale(-1);
     else if (act === 'plus') setScale(1);
+    else if (act === 'contrast') toggleContrast();
     else if (act === 'full') toggleFull();
     else if (act === 'close') close();
   });
@@ -177,6 +195,7 @@
     switch (e.key) {
       case 'Escape': close(); break;
       case 'f': case 'F': toggleFull(); break;
+      case 'c': case 'C': toggleContrast(); break;
       case '+': case '=': e.preventDefault(); setScale(1); break;
       case '-': case '_': e.preventDefault(); setScale(-1); break;
       case ' ': case 'Enter': e.preventDefault(); toggleReveal(); break;

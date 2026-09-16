@@ -1,0 +1,287 @@
+/* ============================================================
+   MaBémat — Mode projection « document agrandi »
+   Leçons (#lesson-overlay) et pages d'exercices
+   (.exercices-brevet : type brevet, objectif lycée, livret 3e).
+
+   Deux réglages indépendants, pilotés par mode-projection.js :
+     html[data-mp="on"]           → mise en page projection + zoom
+     html[data-mp-contrast="on"]  → palette haut contraste (optionnelle)
+
+   Le zoom passe par la propriété CSS `zoom` appliquée à .mp-zone :
+   formules KaTeX, images et tableaux suivent automatiquement, sans
+   avoir à reprendre les tailles en px du reste du site.
+   ============================================================ */
+
+:root { --mp-zoom: 1.4; }
+
+/* ══════════════════════════════════════════
+   1. Boutons de lancement
+   ══════════════════════════════════════════ */
+.mp-launch {
+  display: inline-flex; align-items: center; gap: 9px;
+  margin-top: 22px; padding: 11px 20px;
+  border: 1px solid var(--accent); border-radius: 999px;
+  background: var(--accent); color: var(--accent-ink);
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em;
+  cursor: pointer; transition: opacity .2s var(--ease-out), transform .15s var(--ease-out);
+}
+.mp-launch:hover { opacity: .88; transform: translateY(-1px); }
+.mp-launch svg { width: 15px; height: 15px; }
+
+/* Variante flottante, dans l'overlay leçon, à gauche de la croix */
+.mp-launch-float {
+  position: fixed; top: 20px; right: 76px; z-index: 1001;
+  margin-top: 0; display: none;
+}
+#lesson-overlay.open .mp-launch-float { display: inline-flex; }
+
+html[data-mp="on"] .mp-launch { display: none !important; }
+
+/* ══════════════════════════════════════════
+   2. Barre d'outils du mode projection
+   ══════════════════════════════════════════ */
+.mp-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 2000;
+  display: none; align-items: center; gap: 16px;
+  height: 56px; padding: 0 18px;
+  background: var(--paper); border-bottom: 1px solid var(--rule);
+  font-family: var(--font-sans);
+}
+html[data-mp="on"] .mp-bar { display: flex; }
+
+.mp-bar .mp-brand {
+  font-family: 'Tan Nimbus', var(--font-serif);
+  font-size: 18px; letter-spacing: -0.01em; color: var(--ink);
+}
+.mp-bar .mp-sub {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.mp-bar .mp-spacer { flex: 1; }
+
+.mp-group {
+  display: inline-flex; align-items: center; gap: 2px;
+  border: 1px solid var(--rule); border-radius: 10px; padding: 3px;
+}
+.mp-btn {
+  height: 34px; min-width: 34px; padding: 0 10px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  border: 1px solid transparent; border-radius: 8px; background: transparent;
+  color: var(--ink); cursor: pointer;
+  font-family: var(--font-mono); font-size: 13px; letter-spacing: .04em;
+  transition: background .18s var(--ease-out), color .18s var(--ease-out), border-color .18s var(--ease-out);
+}
+.mp-btn:hover { background: var(--paper-2); border-color: var(--rule); }
+.mp-btn svg { width: 16px; height: 16px; }
+.mp-btn.mp-on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.mp-btn.mp-close:hover { background: color-mix(in oklab, var(--accent) 16%, transparent); border-color: var(--accent); color: var(--accent); }
+.mp-btn[disabled] { opacity: .35; cursor: default; }
+
+.mp-val {
+  min-width: 62px; text-align: center;
+  font-family: var(--font-mono); font-size: 13px; color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.mp-lbl { display: inline; }
+@media (max-width: 860px) {
+  .mp-bar { gap: 8px; padding: 0 10px; }
+  .mp-bar .mp-sub, .mp-lbl { display: none; }
+}
+
+/* ══════════════════════════════════════════
+   3. Mise en page du mode projection
+   ══════════════════════════════════════════ */
+html[data-mp="on"] { scroll-behavior: auto; }
+html[data-mp="on"] body { padding-top: 56px; }
+
+html[data-mp="on"] .topbar,
+html[data-mp="on"] .crumbs,
+html[data-mp="on"] .site-footer,
+html[data-mp="on"] .br-meta,
+html[data-mp="on"] .br-adjacent,
+html[data-mp="on"] .livret-plus,
+html[data-mp="on"] .lesson-toc,
+html[data-mp="on"] .lesson-rp,
+html[data-mp="on"] .lesson-close,
+html[data-mp="on"] .lesson-mobile-bar,
+html[data-mp="on"] .lesson-toc-drawer,
+html[data-mp="on"] .lesson-toc-backdrop { display: none !important; }
+
+/* L'overlay leçon est en position fixe : on le décale sous la barre */
+html[data-mp="on"] .lesson-overlay { top: 56px; }
+html[data-mp="on"] .lesson-layout {
+  grid-template-columns: 1fr; max-width: none;
+  padding: 28px clamp(20px, 4vw, 64px) 100px;
+}
+html[data-mp="on"] .container { max-width: none; padding: 20px clamp(20px, 4vw, 64px) 100px; }
+html[data-mp="on"] .br-hero { padding: 8px 0 20px; }
+
+/* Le zoom : seule la zone de contenu est agrandie, pas la barre */
+.mp-zone { zoom: var(--mp-zoom, 1); }
+
+/* ══════════════════════════════════════════
+   4. Typographie agrandie (base, avant zoom)
+   Les tailles d'origine sont en px ou en clamp(vw),
+   trop petites pour un vidéoprojecteur.
+   ══════════════════════════════════════════ */
+html[data-mp="on"] .full-lesson p,
+html[data-mp="on"] .full-lesson .environment-content,
+html[data-mp="on"] .full-lesson li,
+html[data-mp="on"] .lesson-content p { font-size: 16px; line-height: 1.75; }
+html[data-mp="on"] .full-lesson .remarque { font-size: 15px; }
+html[data-mp="on"] .environment-title { font-size: 17px; }
+html[data-mp="on"] .full-lesson .section-title { font-size: 26px; }
+html[data-mp="on"] .full-lesson h2,
+html[data-mp="on"] .full-lesson .subsection-title { font-size: 24px; padding-left: 14px; }
+html[data-mp="on"] .full-lesson h3,
+html[data-mp="on"] .full-lesson .subsubsection-title { font-size: 21px; padding-left: 28px; }
+html[data-mp="on"] .lesson-h1 { font-size: 34px; margin-bottom: 20px; }
+
+html[data-mp="on"] .exercices-brevet,
+html[data-mp="on"] .exo-intro,
+html[data-mp="on"] .q-enonce,
+html[data-mp="on"] .exo-consigne,
+html[data-mp="on"] .corr-box { font-size: 16px; line-height: 1.75; }
+html[data-mp="on"] .br-hero h1 { font-size: 32px; }
+html[data-mp="on"] .exo-brevet-num { font-size: 26px; }
+html[data-mp="on"] .corr-btn { font-size: 13px; }
+html[data-mp="on"] .q-item { padding: 16px 0; }
+html[data-mp="on"] .exo-brevet { margin-bottom: 36px; }
+
+/* Les listes en colonnes du livret repassent sur moins de colonnes :
+   à cette taille, 3 ou 4 colonnes deviennent illisibles. */
+html[data-mp="on"] .q-list.q-cols-3,
+html[data-mp="on"] .q-list.q-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Figures : elles ne doivent pas déborder de l'écran une fois zoomées */
+html[data-mp="on"] .full-lesson img,
+html[data-mp="on"] .exercices-brevet img { max-width: 100%; height: auto; }
+
+/* ══════════════════════════════════════════
+   5. Haut contraste (activable à volonté)
+   Chaque règle est préfixée par `html` pour passer
+   devant les sélecteurs de style.css / lecon.css.
+   ══════════════════════════════════════════ */
+html[data-mp-contrast="on"] {
+  --paper:   #FFFFFF;
+  --paper-2: #FFFFFF;
+  --paper-3: #FFFFFF;
+  --ink:     #000000;
+  --ink-2:   #000000;
+  --ink-3:   #1C1C1C;
+  --ink-4:   #3A3A3A;
+  --rule:    #000000;
+  --bg:           #FFFFFF;
+  --bgLecon:      #FFFFFF;
+  --surface:      #FFFFFF;
+  --border:       #000000;
+  --border-light: #000000;
+  --text:         #000000;
+  --text-sec:     #000000;
+  --text-light:   #1C1C1C;
+}
+html[data-mp-contrast="on"] body,
+html[data-mp-contrast="on"] .container,
+html[data-mp-contrast="on"] .lesson-overlay,
+html[data-mp-contrast="on"] .mp-bar { background: #FFFFFF; }
+html[data-mp-contrast="on"] .full-lesson,
+html[data-mp-contrast="on"] .exercices-brevet { color: #000; }
+
+/* Encadrés : fond supprimé (les aplats pâles disparaissent à la
+   projection), filet gauche épaissi, couleur assombrie. */
+html[data-mp-contrast="on"] .environment { background-color: transparent !important; border-left-width: 6px; }
+html[data-mp-contrast="on"] .environment-content { color: #000; }
+
+html[data-mp-contrast="on"] .definition,
+html[data-mp-contrast="on"] .regle { border-left-color: color-mix(in oklab, var(--env-definition) 52%, #000); }
+html[data-mp-contrast="on"] .definition .environment-title,
+html[data-mp-contrast="on"] .regle .environment-title,
+html[data-mp-contrast="on"] .environment li::marker { color: color-mix(in oklab, var(--env-definition) 52%, #000); }
+
+html[data-mp-contrast="on"] .theoreme { border-left-color: color-mix(in oklab, var(--env-theoreme) 52%, #000); }
+html[data-mp-contrast="on"] .theoreme .environment-title { color: color-mix(in oklab, var(--env-theoreme) 52%, #000); }
+
+html[data-mp-contrast="on"] .propriete,
+html[data-mp-contrast="on"] .corollaire { border-left-color: color-mix(in oklab, var(--env-propriete) 52%, #000); }
+html[data-mp-contrast="on"] .propriete .environment-title,
+html[data-mp-contrast="on"] .corollaire .environment-title,
+html[data-mp-contrast="on"] .propriete li::marker { color: color-mix(in oklab, var(--env-propriete) 52%, #000); }
+
+html[data-mp-contrast="on"] .methode { border-left-color: color-mix(in oklab, var(--env-methode) 52%, #000); }
+html[data-mp-contrast="on"] .methode .environment-title,
+html[data-mp-contrast="on"] .methode::after,
+html[data-mp-contrast="on"] .methode li::marker { color: color-mix(in oklab, var(--env-methode) 52%, #000); }
+
+html[data-mp-contrast="on"] .exemple,
+html[data-mp-contrast="on"] .exercice { border-left-color: color-mix(in oklab, var(--env-exemple) 52%, #000); border-left-width: 4px; }
+html[data-mp-contrast="on"] .exemple .environment-title,
+html[data-mp-contrast="on"] .exercice .environment-title,
+html[data-mp-contrast="on"] .exemple::after,
+html[data-mp-contrast="on"] .exercice::after,
+html[data-mp-contrast="on"] .exemple li::marker,
+html[data-mp-contrast="on"] .exemple ol > li::marker { color: color-mix(in oklab, var(--env-exemple) 52%, #000); }
+
+html[data-mp-contrast="on"] .notation { border-left-color: color-mix(in oklab, var(--env-notation) 52%, #000); border-left-width: 4px; }
+html[data-mp-contrast="on"] .notation .environment-title,
+html[data-mp-contrast="on"] .notation li::marker { color: color-mix(in oklab, var(--env-notation) 52%, #000); }
+
+html[data-mp-contrast="on"] .vocabulaire { border-left-color: color-mix(in oklab, var(--couleur3) 52%, #000); border-left-width: 4px; }
+html[data-mp-contrast="on"] .vocabulaire .environment-title,
+html[data-mp-contrast="on"] .vocabulaire li::marker { color: color-mix(in oklab, var(--couleur3) 52%, #000); }
+
+html[data-mp-contrast="on"] .remarque { color: #000; }
+html[data-mp-contrast="on"] .remarque::before {
+  background-color: #FFF; border-width: 2px;
+  border-color: color-mix(in oklab, var(--env-remarque) 52%, #000);
+  color: color-mix(in oklab, var(--env-remarque) 52%, #000);
+}
+html[data-mp-contrast="on"] .remarque li::marker { color: color-mix(in oklab, var(--env-remarque) 52%, #000); }
+
+/* Titres de section */
+html[data-mp-contrast="on"] .section-title,
+html[data-mp-contrast="on"] .subsection-title,
+html[data-mp-contrast="on"] .subsubsection-title,
+html[data-mp-contrast="on"] .full-lesson h2,
+html[data-mp-contrast="on"] .full-lesson h3 {
+  color: color-mix(in oklab, var(--env-titre) 50%, #000); opacity: 1;
+}
+html[data-mp-contrast="on"] .lesson-h1 { color: #000 !important; }
+
+/* Tableaux : filets noirs, plus d'aplat de fond */
+html[data-mp-contrast="on"] table,
+html[data-mp-contrast="on"] th,
+html[data-mp-contrast="on"] td { border-color: #000; border-width: 1.5px; }
+html[data-mp-contrast="on"] th { background-color: transparent; color: #000; font-weight: 700; }
+
+/* Couleurs utilitaires du cours, trop pâles projetées */
+html[data-mp-contrast="on"] .couleur-orange { color: color-mix(in oklab, var(--couleur8) 50%, #000); }
+html[data-mp-contrast="on"] .couleur-vert   { color: color-mix(in oklab, var(--couleur5) 55%, #000); }
+
+/* Pages d'exercices */
+html[data-mp-contrast="on"] .exo-brevet-num,
+html[data-mp-contrast="on"] .exo-brevet-label,
+html[data-mp-contrast="on"] .exo-intro,
+html[data-mp-contrast="on"] .q-enonce,
+html[data-mp-contrast="on"] .exo-consigne,
+html[data-mp-contrast="on"] .sub-enonce { color: #000; }
+html[data-mp-contrast="on"] .q-item { border-bottom-color: #000; }
+html[data-mp-contrast="on"] .partie-header { color: #000; border-top-color: #000; }
+html[data-mp-contrast="on"] .q-item::before,
+html[data-mp-contrast="on"] .sub-letter { color: color-mix(in oklab, var(--accent) 45%, #000); font-weight: 700; }
+html[data-mp-contrast="on"] .corr-btn { color: color-mix(in oklab, var(--accent) 45%, #000); font-weight: 600; }
+html[data-mp-contrast="on"] .corr-box,
+html[data-mp-contrast="on"] .exo-corr,
+html[data-mp-contrast="on"] .auto3-corr,
+html[data-mp-contrast="on"] .brevet-corr {
+  background: transparent; color: #000;
+  border-left: 4px solid color-mix(in oklab, var(--accent) 45%, #000);
+}
+html[data-mp-contrast="on"] .rep {
+  color: color-mix(in oklab, var(--accent) 45%, #000);
+  background: transparent; font-weight: 700;
+}
+html[data-mp-contrast="on"] .livret-rappel { background: transparent; border-color: #000; }
+
+/* Figures SVG sur fond blanc franc */
+html[data-mp-contrast="on"] .full-lesson img,
+html[data-mp-contrast="on"] .exercices-brevet img { background: #FFF; }
