@@ -48,22 +48,15 @@ Développer et réduire :
 
 $$C=(3x+7)^2-(2x-1)(2x+1)$$
 ---CORR---
-On reconnaît deux identités remarquables.
+On applique les deux identités remarquables directement dans le même calcul, sans les développer chacune de son côté : $(a+b)^2=a^2+2ab+b^2$ pour ${\color{#8A9CC1}(3x+7)^2}$ avec $a=3x$, $b=7$, et $(a-b)(a+b)=a^2-b^2$ pour ${\color{#A8C68A}(2x-1)(2x+1)}$ avec $a=2x$, $b=1$ :
 
-Pour la première, $(a+b)^2=a^2+2ab+b^2$ avec $a=3x$ et $b=7$ :
-
-$$\begin{aligned}(3x+7)^2 &= (3x)^2+2\times 3x\times 7+7^2 \\ &= 9x^2+42x+49\end{aligned}$$
-
-Pour la seconde, $(a-b)(a+b)=a^2-b^2$ avec $a=2x$ et $b=1$ :
-
-
-$$\begin{aligned}(2x-1)(2x+1)&=(2x)^2-1^2 \\ &=4x^2-1\end{aligned}$$
-
-On soustrait, en faisant attention au signe devant la parenthèse :
-
-$$\begin{aligned}C &= 9x^2+42x+49-\left(4x^2-1\right) \\ &= 9x^2+42x+49-4x^2+1\end{aligned}$$
-
-$$C={\color{#4A5D7A}5x^2+42x+50}$$
+$$\begin{aligned}
+C &= (3x+7)^2-(2x-1)(2x+1) \\
+&= {\color{#8A9CC1}\left[(3x)^2+2\times 3x\times 7+7^2\right]}-{\color{#A8C68A}\left[(2x)^2-1^2\right]} \\
+&= {\color{#8A9CC1}\left(9x^2+42x+49\right)}-{\color{#A8C68A}\left(4x^2-1\right)} \\
+&= 9x^2+42x+49-4x^2+1 \\
+&= {\color{#4A5D7A}5x^2+42x+50}
+\end{aligned}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="04" >}}
