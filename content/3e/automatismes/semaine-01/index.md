@@ -30,7 +30,7 @@ t &= {\color{#EB7F73}\boldsymbol{9}}
 ---Q---
 Déterminer la valeur de $25~\%$ de $95$.
 ---CORR---
-Pour calculer $25~\%$ de $95$, on calcule $ \dfrac{25}{100} \times 95= \dfrac{25\times 95}{25 \times 4} =  \dfrac{95}{4}= 23{,}75$.<br>Donc $25~\%$ de $95$ est égal à ${\color{#EB7F73}\boldsymbol{23{,}75}}$.
+Pour calculer $25~\%$ de $95$, on calcule :<br>$\dfrac{25}{100}\times 95=\dfrac{25\times 95}{100}=\dfrac{{\color{#C5607A}\boldsymbol{25}} \times 95}{{\color{#C5607A}\boldsymbol{25}} \times 4}=\dfrac{95}{4}={\color{#EB7F73}\boldsymbol{23{,}75}}$<br>Donc $25~\%$ de $95$ est égal à {\color{#EB7F73}\boldsymbol{23{,}75}}.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4
@@ -82,7 +82,7 @@ m &= {\color{#EB7F73}\boldsymbol{-\dfrac{3}{8}}}
 ---Q---
 Dans une ville de $8\,000$ habitants, $10\%$ des habitants ont une taille supérieure à $1{,}75$ m.<br>Combien d'habitants ont une taille supérieure à $1{,}75$ m ?
 ---CORR---
-Le nombre d'habitants qui ont une taille supérieure à $1{,}75$ m est égal à :<br>$8\,000 \times \dfrac{10}{100} = \dfrac{80\,000}{100}={\color{#EB7F73}\boldsymbol{800}}$.
+Le nombre d'habitants qui ont une taille supérieure à $1{,}75$ m est égal à :<br>$8\,000\times\dfrac{10}{100}=\dfrac{8\,000\times 10}{100}=\dfrac{{\color{#C5607A}\boldsymbol{100}} \times 80 \times 10}{{\color{#C5607A}\boldsymbol{100}}}=80 \times 10={\color{#EB7F73}\boldsymbol{800}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5

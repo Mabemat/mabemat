@@ -51,11 +51,12 @@ $\dfrac{3}{4}={\color{#EB7F73}\boldsymbol{0{,}75}}$<br><span class="corr-mental"
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Fractions égales - Simplification de fraction" >}}
-<p>Une fraction ne change pas si on multiplie ou divise son numérateur et son dénominateur par un même nombre non nul. <strong>On utilise cette propriété pour simplifier les fractions.</strong></p>
-<p><em>Exemple :</em> $$\frac{12}{18} = \frac{12 \div 6}{18 \div 6} = \frac{2}{3}$$</p>
+<p>Une fraction ne change pas si on multiplie ou divise son numérateur et son dénominateur par un même nombre non nul.</p>
+<p><strong>Pour simplifier</strong>, on décompose le numérateur et le dénominateur pour faire apparaître un facteur commun, puis on le supprime. <em>Le facteur commun s'écrit devant.</em></p>
+<p><em>Exemple :</em> $$\frac{12}{18} = \frac{{\color{#D36740}\mathbf{6}} \times 2}{{\color{#D36740}\mathbf{6}} \times 3} = \frac{2}{3}$$</p>
+<p><strong>Pour amplifier</strong>, on multiplie le numérateur et le dénominateur par un même nombre. <em>Le facteur s'écrit derrière.</em></p>
+<p><em>Exemple :</em> $$\frac{2}{3} = \frac{2{\color{#D36740}\mathbf{\times 6}}}{3{\color{#D36740}\mathbf{\times 6}}} = \frac{12}{18}$$</p>
 <p>Une fraction est irréductible quand on ne peut plus la simplifier.</p>
-<p><strong>Méthode alternative :</strong> décomposer en facteurs pour identifier les diviseurs communs.</p>
-<p><em>Exemple :</em> $$\frac{12}{18} = \frac{{\color{#D36740}\mathbf{2}}\times 2 \times {\color{#D36740}\mathbf{3}}}{{\color{#D36740}\mathbf{2}} \times {\color{#D36740}\mathbf{3}}\times 3} = \frac{2}{3}$$</p>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="2" cols="3" >}}
@@ -276,7 +277,7 @@ $\dfrac{9}{5} + \dfrac{19}{50} = \dfrac{9{\color{#C5607A}\boldsymbol{\times 10}}
 ---Q---
 $\dfrac{9}{4}-\dfrac{6}{16}$
 ---CORR---
-$\dfrac{9}{4} - \dfrac{6}{16} = \dfrac{9{\color{#C5607A}\boldsymbol{\times 4}}}{4{\color{#C5607A}\boldsymbol{\times 4}}} - \dfrac{6}{16} = \dfrac{36}{16} - \dfrac{6}{16} = \dfrac{36 - 6}{16} = \dfrac{30}{16} = \dfrac{15{\color{#C5607A}\boldsymbol{\times 2}}}{8{\color{#C5607A}\boldsymbol{\times 2}}} = {\color{#EB7F73}\boldsymbol{\dfrac{15}{8}}}$
+$\dfrac{9}{4} - \dfrac{6}{16} = \dfrac{9{\color{#C5607A}\boldsymbol{\times 4}}}{4{\color{#C5607A}\boldsymbol{\times 4}}} - \dfrac{6}{16} = \dfrac{36}{16} - \dfrac{6}{16} = \dfrac{36 - 6}{16} = \dfrac{30}{16} = \dfrac{{\color{#C5607A}\boldsymbol{2}} \times 15}{{\color{#C5607A}\boldsymbol{2}} \times 8} = {\color{#EB7F73}\boldsymbol{\dfrac{15}{8}}}$
 ---Q---
 $\dfrac{7}{5}-\dfrac{13}{10}$
 ---CORR---
@@ -297,7 +298,7 @@ $\dfrac{1}{2} + \dfrac{14}{18} = \dfrac{1{\color{#C5607A}\boldsymbol{\times 9}}}
 ---Q---
 $\dfrac{8}{7}-\dfrac{9}{42}$
 ---CORR---
-$\dfrac{8}{7} - \dfrac{9}{42} = \dfrac{8{\color{#C5607A}\boldsymbol{\times 6}}}{7{\color{#C5607A}\boldsymbol{\times 6}}} - \dfrac{9}{42} = \dfrac{48}{42} - \dfrac{9}{42} = \dfrac{48 - 9}{42} = \dfrac{39}{42} = \dfrac{13{\color{#C5607A}\boldsymbol{\times 3}}}{14{\color{#C5607A}\boldsymbol{\times 3}}} = {\color{#EB7F73}\boldsymbol{\dfrac{13}{14}}}$
+$\dfrac{8}{7} - \dfrac{9}{42} = \dfrac{8{\color{#C5607A}\boldsymbol{\times 6}}}{7{\color{#C5607A}\boldsymbol{\times 6}}} - \dfrac{9}{42} = \dfrac{48}{42} - \dfrac{9}{42} = \dfrac{48 - 9}{42} = \dfrac{39}{42} = \dfrac{{\color{#C5607A}\boldsymbol{3}} \times 13}{{\color{#C5607A}\boldsymbol{3}} \times 14} = {\color{#EB7F73}\boldsymbol{\dfrac{13}{14}}}$
 ---Q---
 $\dfrac{-7}{36}+\dfrac{7}{6}$
 ---CORR---
@@ -305,7 +306,7 @@ $\dfrac{-7}{36} + \dfrac{7}{6} = \dfrac{-7}{36} + \dfrac{7{\color{#C5607A}\bolds
 ---Q---
 $\dfrac{4}{8}-\dfrac{44}{40}$
 ---CORR---
-$\dfrac{4}{8} - \dfrac{44}{40} = \dfrac{4{\color{#C5607A}\boldsymbol{\times 5}}}{8{\color{#C5607A}\boldsymbol{\times 5}}} - \dfrac{44}{40} = \dfrac{20 - 44}{40} = \dfrac{-24}{40} = \dfrac{3{\color{#C5607A}\boldsymbol{\times 8}}}{5{\color{#C5607A}\boldsymbol{\times 8}}} = {\color{#EB7F73}\boldsymbol{-\dfrac{3}{5}}}$
+$\dfrac{4}{8} - \dfrac{44}{40} = \dfrac{4{\color{#C5607A}\boldsymbol{\times 5}}}{8{\color{#C5607A}\boldsymbol{\times 5}}} - \dfrac{44}{40} = \dfrac{20 - 44}{40} = -\dfrac{24}{40} = -\dfrac{{\color{#C5607A}\boldsymbol{8}} \times 3}{{\color{#C5607A}\boldsymbol{8}} \times 5} = {\color{#EB7F73}\boldsymbol{-\dfrac{3}{5}}}$
 ---Q---
 $\dfrac{-2}{7}-\dfrac{75}{77}$
 ---CORR---
@@ -313,7 +314,7 @@ $\dfrac{-2}{7} - \dfrac{75}{77} = \dfrac{-2{\color{#C5607A}\boldsymbol{\times 11
 ---Q---
 $\dfrac{-16}{32}+\dfrac{-3}{4}$
 ---CORR---
-$\dfrac{-16}{32} + \dfrac{-3}{4} = \dfrac{-16}{32} + \dfrac{-3{\color{#C5607A}\boldsymbol{\times 8}}}{4{\color{#C5607A}\boldsymbol{\times 8}}} = \dfrac{-16 + (-24)}{32} = \dfrac{-40}{32} = \dfrac{5{\color{#C5607A}\boldsymbol{\times 8}}}{4{\color{#C5607A}\boldsymbol{\times 8}}} = {\color{#EB7F73}\boldsymbol{-\dfrac{5}{4}}}$
+$\dfrac{-16}{32} + \dfrac{-3}{4} = \dfrac{-16}{32} + \dfrac{-3{\color{#C5607A}\boldsymbol{\times 8}}}{4{\color{#C5607A}\boldsymbol{\times 8}}} = \dfrac{-16 + (-24)}{32} = -\dfrac{40}{32} = -\dfrac{{\color{#C5607A}\boldsymbol{8}} \times 5}{{\color{#C5607A}\boldsymbol{8}} \times 4} = {\color{#EB7F73}\boldsymbol{-\dfrac{5}{4}}}$
 {{< /livret-exo >}}
 
 {{< livret-exo num="9" cols="3" >}}
@@ -322,7 +323,7 @@ Calculer et donner le résultat sous la forme d'une fraction simplifiée au maxi
 ---Q---
 $\dfrac{9}{12}+\dfrac{-6}{9}$
 ---CORR---
-$\dfrac{9}{12} + \dfrac{-6}{9} = \dfrac{9{\color{#C5607A}\boldsymbol{\times 9}}}{12{\color{#C5607A}\boldsymbol{\times 9}}} + \dfrac{-6{\color{#C5607A}\boldsymbol{\times 12}}}{9{\color{#C5607A}\boldsymbol{\times 12}}} = \dfrac{81 + (-72)}{108} = \dfrac{9}{108} = \dfrac{1{\color{#C5607A}\boldsymbol{\times 9}}}{12{\color{#C5607A}\boldsymbol{\times 9}}} = {\color{#EB7F73}\boldsymbol{\dfrac{1}{12}}}$
+$\dfrac{9}{12} + \dfrac{-6}{9} = \dfrac{9{\color{#C5607A}\boldsymbol{\times 9}}}{12{\color{#C5607A}\boldsymbol{\times 9}}} + \dfrac{-6{\color{#C5607A}\boldsymbol{\times 12}}}{9{\color{#C5607A}\boldsymbol{\times 12}}} = \dfrac{81 + (-72)}{108} = \dfrac{9}{108} = \dfrac{{\color{#C5607A}\boldsymbol{9}} \times 1}{{\color{#C5607A}\boldsymbol{9}} \times 12} = {\color{#EB7F73}\boldsymbol{\dfrac{1}{12}}}$
 ---Q---
 $\dfrac{-9}{63}+\dfrac{4}{9}$
 ---CORR---
@@ -330,7 +331,7 @@ $\dfrac{-9}{63} + \dfrac{4}{9} = \dfrac{-9}{63} + \dfrac{4{\color{#C5607A}\bolds
 ---Q---
 $-4-\dfrac{-9}{6}$
 ---CORR---
-$-4-\dfrac{-9}{6} = \dfrac{-4{\color{#C5607A}\boldsymbol{\times 6}}}{{\color{#C5607A}\boldsymbol{6}}} - \dfrac{-9}{6} = \dfrac{-24 - (-9)}{6} = \dfrac{-15}{6} = \dfrac{5{\color{#C5607A}\boldsymbol{\times 3}}}{2{\color{#C5607A}\boldsymbol{\times 3}}} = {\color{#EB7F73}\boldsymbol{-\dfrac{5}{2}}}$
+$-4-\dfrac{-9}{6} = \dfrac{-4{\color{#C5607A}\boldsymbol{\times 6}}}{1{\color{#C5607A}\boldsymbol{\times 6}}} - \dfrac{-9}{6} = \dfrac{-24 - (-9)}{6} = -\dfrac{15}{6} = -\dfrac{{\color{#C5607A}\boldsymbol{3}} \times 5}{{\color{#C5607A}\boldsymbol{3}} \times 2} = {\color{#EB7F73}\boldsymbol{-\dfrac{5}{2}}}$
 ---Q---
 $\dfrac{-7}{5}-\dfrac{-1}{8}$
 ---CORR---
@@ -338,7 +339,7 @@ $\dfrac{-7}{5} - \dfrac{-1}{8} = \dfrac{-7{\color{#C5607A}\boldsymbol{\times 8}}
 ---Q---
 $\dfrac{7}{12}-\dfrac{-2}{8}$
 ---CORR---
-$\dfrac{7}{12} - \dfrac{-2}{8} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 8}}}{12{\color{#C5607A}\boldsymbol{\times 8}}} - \dfrac{-2{\color{#C5607A}\boldsymbol{\times 12}}}{8{\color{#C5607A}\boldsymbol{\times 12}}} = \dfrac{56 - (-24)}{96} = \dfrac{80}{96} = \dfrac{5{\color{#C5607A}\boldsymbol{\times 16}}}{6{\color{#C5607A}\boldsymbol{\times 16}}} = {\color{#EB7F73}\boldsymbol{\dfrac{5}{6}}}$
+$\dfrac{7}{12} - \dfrac{-2}{8} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 8}}}{12{\color{#C5607A}\boldsymbol{\times 8}}} - \dfrac{-2{\color{#C5607A}\boldsymbol{\times 12}}}{8{\color{#C5607A}\boldsymbol{\times 12}}} = \dfrac{56 - (-24)}{96} = \dfrac{80}{96} = \dfrac{{\color{#C5607A}\boldsymbol{16}} \times 5}{{\color{#C5607A}\boldsymbol{16}} \times 6} = {\color{#EB7F73}\boldsymbol{\dfrac{5}{6}}}$
 ---Q---
 $\dfrac{-5}{6}+\dfrac{-3}{5}$
 ---CORR---
@@ -351,27 +352,27 @@ Calculer et donner le résultat sous la forme d'une fraction simplifiée au maxi
 ---Q---
 $\dfrac{7}{5}-\dfrac{4}{8}$
 ---CORR---
-$\dfrac{7}{5} - \dfrac{4}{8} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 8}}}{5{\color{#C5607A}\boldsymbol{\times 8}}} - \dfrac{4{\color{#C5607A}\boldsymbol{\times 5}}}{8{\color{#C5607A}\boldsymbol{\times 5}}} = \dfrac{56 - 20}{40} = \dfrac{36}{40} = \dfrac{9{\color{#C5607A}\boldsymbol{\times 4}}}{10{\color{#C5607A}\boldsymbol{\times 4}}} = {\color{#EB7F73}\boldsymbol{\dfrac{9}{10}}}$
+$\dfrac{7}{5} - \dfrac{4}{8} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 8}}}{5{\color{#C5607A}\boldsymbol{\times 8}}} - \dfrac{4{\color{#C5607A}\boldsymbol{\times 5}}}{8{\color{#C5607A}\boldsymbol{\times 5}}} = \dfrac{56 - 20}{40} = \dfrac{36}{40} = \dfrac{{\color{#C5607A}\boldsymbol{4}} \times 9}{{\color{#C5607A}\boldsymbol{4}} \times 10} = {\color{#EB7F73}\boldsymbol{\dfrac{9}{10}}}$
 ---Q---
 $\dfrac{8}{2}-\dfrac{2}{4}$
 ---CORR---
-$\dfrac{8}{2} - \dfrac{2}{4} = \dfrac{8{\color{#C5607A}\boldsymbol{\times 2}}}{2{\color{#C5607A}\boldsymbol{\times 2}}} - \dfrac{2}{4} = \dfrac{16 - 2}{4} = \dfrac{14}{4} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 2}}}{2{\color{#C5607A}\boldsymbol{\times 2}}} = {\color{#EB7F73}\boldsymbol{\dfrac{7}{2}}}$
+$\dfrac{8}{2} - \dfrac{2}{4} = \dfrac{8{\color{#C5607A}\boldsymbol{\times 2}}}{2{\color{#C5607A}\boldsymbol{\times 2}}} - \dfrac{2}{4} = \dfrac{16 - 2}{4} = \dfrac{14}{4} = \dfrac{{\color{#C5607A}\boldsymbol{2}} \times 7}{{\color{#C5607A}\boldsymbol{2}} \times 2} = {\color{#EB7F73}\boldsymbol{\dfrac{7}{2}}}$
 ---Q---
 $\dfrac{1}{6}+\dfrac{7}{8}$
 ---CORR---
-$\dfrac{1}{6} + \dfrac{7}{8} = \dfrac{1{\color{#C5607A}\boldsymbol{\times 8}}}{6{\color{#C5607A}\boldsymbol{\times 8}}} + \dfrac{7{\color{#C5607A}\boldsymbol{\times 6}}}{8{\color{#C5607A}\boldsymbol{\times 6}}} = \dfrac{8 + 42}{48} = \dfrac{50}{48} = \dfrac{25{\color{#C5607A}\boldsymbol{\times 2}}}{24{\color{#C5607A}\boldsymbol{\times 2}}} = {\color{#EB7F73}\boldsymbol{\dfrac{25}{24}}}$
+$\dfrac{1}{6} + \dfrac{7}{8} = \dfrac{1{\color{#C5607A}\boldsymbol{\times 8}}}{6{\color{#C5607A}\boldsymbol{\times 8}}} + \dfrac{7{\color{#C5607A}\boldsymbol{\times 6}}}{8{\color{#C5607A}\boldsymbol{\times 6}}} = \dfrac{8 + 42}{48} = \dfrac{50}{48} = \dfrac{{\color{#C5607A}\boldsymbol{2}} \times 25}{{\color{#C5607A}\boldsymbol{2}} \times 24} = {\color{#EB7F73}\boldsymbol{\dfrac{25}{24}}}$
 ---Q---
 $3+\dfrac{9}{2}$
 ---CORR---
-$3+\dfrac{9}{2} = \dfrac{3{\color{#C5607A}\boldsymbol{\times 2}}}{{\color{#C5607A}\boldsymbol{2}}} + \dfrac{9}{2} = \dfrac{6 + 9}{2} = {\color{#EB7F73}\boldsymbol{\dfrac{15}{2}}}$
+$3+\dfrac{9}{2} = \dfrac{3{\color{#C5607A}\boldsymbol{\times 2}}}{1{\color{#C5607A}\boldsymbol{\times 2}}} + \dfrac{9}{2} = \dfrac{6 + 9}{2} = {\color{#EB7F73}\boldsymbol{\dfrac{15}{2}}}$
 ---Q---
 $\dfrac{3}{8}+\dfrac{8}{12}$
 ---CORR---
-$\dfrac{3}{8} + \dfrac{8}{12} = \dfrac{3{\color{#C5607A}\boldsymbol{\times 12}}}{8{\color{#C5607A}\boldsymbol{\times 12}}} + \dfrac{8{\color{#C5607A}\boldsymbol{\times 8}}}{12{\color{#C5607A}\boldsymbol{\times 8}}} = \dfrac{36 + 64}{96} = \dfrac{100}{96} = \dfrac{25{\color{#C5607A}\boldsymbol{\times 4}}}{24{\color{#C5607A}\boldsymbol{\times 4}}} = {\color{#EB7F73}\boldsymbol{\dfrac{25}{24}}}$
+$\dfrac{3}{8} + \dfrac{8}{12} = \dfrac{3{\color{#C5607A}\boldsymbol{\times 12}}}{8{\color{#C5607A}\boldsymbol{\times 12}}} + \dfrac{8{\color{#C5607A}\boldsymbol{\times 8}}}{12{\color{#C5607A}\boldsymbol{\times 8}}} = \dfrac{36 + 64}{96} = \dfrac{100}{96} = \dfrac{{\color{#C5607A}\boldsymbol{4}} \times 25}{{\color{#C5607A}\boldsymbol{4}} \times 24} = {\color{#EB7F73}\boldsymbol{\dfrac{25}{24}}}$
 ---Q---
 $\dfrac{7}{10}-\dfrac{6}{15}$
 ---CORR---
-$\dfrac{7}{10} - \dfrac{6}{15} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 15}}}{10{\color{#C5607A}\boldsymbol{\times 15}}} - \dfrac{6{\color{#C5607A}\boldsymbol{\times 10}}}{15{\color{#C5607A}\boldsymbol{\times 10}}} = \dfrac{105 - 60}{150} = \dfrac{45}{150} = \dfrac{3{\color{#C5607A}\boldsymbol{\times 15}}}{10{\color{#C5607A}\boldsymbol{\times 15}}} = {\color{#EB7F73}\boldsymbol{\dfrac{3}{10}}}$
+$\dfrac{7}{10} - \dfrac{6}{15} = \dfrac{7{\color{#C5607A}\boldsymbol{\times 15}}}{10{\color{#C5607A}\boldsymbol{\times 15}}} - \dfrac{6{\color{#C5607A}\boldsymbol{\times 10}}}{15{\color{#C5607A}\boldsymbol{\times 10}}} = \dfrac{105 - 60}{150} = \dfrac{45}{150} = \dfrac{{\color{#C5607A}\boldsymbol{15}} \times 3}{{\color{#C5607A}\boldsymbol{15}} \times 10} = {\color{#EB7F73}\boldsymbol{\dfrac{3}{10}}}$
 {{< /livret-exo >}}
 
 {{< livret-exo num="11" cols="3" nonum="true" >}}

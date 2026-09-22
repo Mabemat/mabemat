@@ -37,7 +37,7 @@ $40{,}6~\text{L} = 40{,}6~\text{dm}^3 = 40{,}6\div1\,000~\text{m}^3 = {\color{#E
 ---Q---
 Dans une école, $10\%$ des $1\,500$ étudiants participent à une collecte de fonds.<br>Combien d'étudiants ne participent pas à cette collecte ?
 ---CORR---
-Le nombre d'étudiants participant : $1\,500 \times \dfrac{10}{100} = 150$.<br>Le nombre d'étudiants ne participant pas : $1\,500 - 150 = {\color{#EB7F73}\boldsymbol{1\,350}}$.<br>Autre méthode : $100\%-10\%=90\%$, donc $1\,500 \times 0{,}9 = {\color{#EB7F73}\boldsymbol{1\,350}}$.
+Le nombre d'étudiants participant à la collecte :<br>$1\,500\times\dfrac{10}{100}=\dfrac{1\,500\times 10}{100}=\dfrac{{\color{#C5607A}\boldsymbol{100}} \times 15 \times 10}{{\color{#C5607A}\boldsymbol{100}}}=15 \times 10=150$<br>Le nombre d'étudiants ne participant pas : $1\,500 - 150 = {\color{#EB7F73}\boldsymbol{1\,350}}$.<br>Autre méthode : diminuer de $10~\%$ revient à multiplier par $0{,}9$, donc $1\,500 \times 0{,}9 = {\color{#EB7F73}\boldsymbol{1\,350}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5
@@ -92,7 +92,7 @@ $66{,}2~\text{cm}^2 = 66{,}2\div100\div100~\text{m}^2 = {\color{#EB7F73}\boldsym
 Un collège avait $900$ élèves en $2025$. <br>
 Depuis, le nombre d'élèves a augmenté de $8~\%$. Calculer le nombre d'élèves dans ce collège cette année.
 ---CORR---
-Une augmentation de $8~\%$ revient à multiplier par $1{,}08$.<br>$900\times 1{,}08 = {\color{#EB7F73}\boldsymbol{972}}$ élèves.
+Une augmentation de $8~\%$ revient à multiplier par $1{,}08$.<br>$900\times 1{,}08 = {\color{#EB7F73}\boldsymbol{972}}$ élèves.<br>Autre méthode : augmenter de $8~\%$, c'est calculer $8~\%$ du nombre de départ puis l'ajouter à ce nombre.<br>$\dfrac{8}{100}\times 900=\dfrac{8\times 900}{100}=\dfrac{8 \times {\color{#C5607A}\boldsymbol{100}} \times 9}{{\color{#C5607A}\boldsymbol{100}}}=8 \times 9=72$<br>$900 + 72 = {\color{#EB7F73}\boldsymbol{972}}$ élèves.
 {{< /auto3-exo >}}
 
 {{< /auto3-seance >}}
@@ -103,7 +103,7 @@ Une augmentation de $8~\%$ revient à multiplier par $1{,}08$.<br>$900\times 1{,
 ---Q---
 $A = \dfrac{4}{8} \times \dfrac{3}{6}$
 ---CORR---
-$A = \dfrac{4}{8} \times \dfrac{3}{6} = \dfrac{12}{48} = \dfrac{1{\color{#C5607A}\boldsymbol{\times 12}}}{4{\color{#C5607A}\boldsymbol{\times 12}}} = {\color{#EB7F73}\boldsymbol{\dfrac{1}{4}}}$
+$A = \dfrac{4}{8} \times \dfrac{3}{6} = \dfrac{12}{48} = \dfrac{{\color{#C5607A}\boldsymbol{12}} \times 1}{{\color{#C5607A}\boldsymbol{12}} \times 4} = {\color{#EB7F73}\boldsymbol{\dfrac{1}{4}}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2

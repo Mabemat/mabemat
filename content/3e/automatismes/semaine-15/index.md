@@ -26,7 +26,7 @@ $4^{2}=4\times 4={\color{#EB7F73}\boldsymbol{16}}$
 ---Q---
 Dans une école de $1\,500$ étudiants, $25\%$ des étudiants aiment la musique pop.<br>Combien d'étudiants aiment la musique pop ?
 ---CORR---
-Le nombre d'étudiants qui aiment la musique pop est égal à :<br>$1\,500 \times \dfrac{25}{100} = \dfrac{37\,500}{100}={\color{#EB7F73}\boldsymbol{375}}$.
+Le nombre d'étudiants qui aiment la musique pop est égal à :<br>$1\,500\times\dfrac{25}{100}=\dfrac{1\,500\times 25}{100}=\dfrac{{\color{#C5607A}\boldsymbol{100}} \times 15 \times 25}{{\color{#C5607A}\boldsymbol{100}}}=15 \times 25={\color{#EB7F73}\boldsymbol{375}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4
@@ -69,7 +69,7 @@ $3^{-4}=\dfrac{1}{3^{4}}=\dfrac{1}{3\times 3\times 3\times 3}={\color{#EB7F73}\b
 Soldé à $-20~\%$ un article coûte maintenant $2{,}48$€. <br>
 Calculer son prix avant les soldes.
 ---CORR---
-Une diminution de $20~\%$ revient à multiplier par $80~\% = 0{,}8$.<br>Pour retrouver le prix initial, on divise le prix final par $0{,}8$.<br>$2{,}48\div 0{,}8 = {\color{#EB7F73}\boldsymbol{3{,}10}}$€.
+Une diminution de $20~\%$ revient à multiplier par $80~\% = 0{,}8$.<br>Pour retrouver le prix initial, on divise le prix final par $0{,}8$.<br>$2{,}48\div 0{,}8 = {\color{#EB7F73}\boldsymbol{3{,}10}}$€.<br>Autre méthode : diminuer de $20~\%$, c'est retrancher $20~\%$ du prix de départ, il reste donc $80~\%$ de ce prix. Les $2{,}48$€ représentent ces $80~\%$.<br>$\dfrac{2{,}48}{80}\times 100=\dfrac{2{,}48\times 100}{80}=\dfrac{248}{80}=\dfrac{{\color{#C5607A}\boldsymbol{8}} \times 31}{{\color{#C5607A}\boldsymbol{8}} \times 10}=\dfrac{31}{10}={\color{#EB7F73}\boldsymbol{3{,}10}}$€.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}

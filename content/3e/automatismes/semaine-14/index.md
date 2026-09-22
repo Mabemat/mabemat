@@ -70,7 +70,7 @@ $57\,000 = {\color{#EB7F73}\boldsymbol{5{,}7\times 10^{4}}}$
 ---Q---
 Dans une école, $30\%$ des $1\,200$ étudiants participent à une collecte de fonds.<br>Combien d'étudiants ne participent pas à cette collecte ?
 ---CORR---
-Le nombre d'étudiants participant à cette collecte est égal à : $1\,200 \times \dfrac{30}{100} = 360$.<br>Le nombre d'étudiants ne participant pas est donc égal à : $1\,200 - 360 = {\color{#EB7F73}\boldsymbol{840}}$.<br>Autre méthode : $100\%-30\%=70\%$, donc $1\,200 \times \dfrac{70}{100} = {\color{#EB7F73}\boldsymbol{840}}$.
+Le nombre d'étudiants participant à cette collecte :<br>$1\,200\times\dfrac{30}{100}=\dfrac{1\,200\times 30}{100}=\dfrac{{\color{#C5607A}\boldsymbol{100}} \times 12 \times 30}{{\color{#C5607A}\boldsymbol{100}}}=12 \times 30=360$<br>Le nombre d'étudiants ne participant pas : $1\,200 - 360 = {\color{#EB7F73}\boldsymbol{840}}$.<br>Autre méthode : $100~\%-30~\%=70~\%$, donc on calcule $70~\%$ de $1\,200$ :<br>$1\,200\times\dfrac{70}{100}=\dfrac{1\,200\times 70}{100}=\dfrac{{\color{#C5607A}\boldsymbol{100}} \times 12 \times 70}{{\color{#C5607A}\boldsymbol{100}}}=12 \times 70={\color{#EB7F73}\boldsymbol{840}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 4" >}}4

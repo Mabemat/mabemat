@@ -33,7 +33,7 @@ $\sqrt{144}={\color{#EB7F73}\boldsymbol{12}}$
 ---Q---
 On tire une carte au hasard dans un paquet contenant $8$ cartes rouges et $6$ cartes vertes.<br>Quelle est la probabilité d'obtenir une carte verte ?<br>On donnera le résultat sous forme d'une fraction irréductible.
 ---CORR---
-Dans une situation d'équiprobabilité, on calcule la probabilité d'un événement par le quotient : $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issues}}$.<br>La probabilité est donc donnée par : $\dfrac{\text{Nombre de cartes vertes}}{\text{Nombre total de cartes}} =\dfrac{6}{14} =\dfrac{3{\color{#C5607A}\boldsymbol{\times2}}}{7{\color{#C5607A}\boldsymbol{\times2}}}={\color{#EB7F73}\boldsymbol{\dfrac{3}{7}}}$
+Dans une situation d'équiprobabilité, on calcule la probabilité d'un événement par le quotient : $\dfrac{\text{Nombre d'issues favorables}}{\text{Nombre total d'issues}}$.<br>La probabilité est donc donnée par : $\dfrac{\text{Nombre de cartes vertes}}{\text{Nombre total de cartes}} =\dfrac{6}{14} =\dfrac{{\color{#C5607A}\boldsymbol{2}} \times 3}{{\color{#C5607A}\boldsymbol{2}} \times 7}={\color{#EB7F73}\boldsymbol{\dfrac{3}{7}}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}5

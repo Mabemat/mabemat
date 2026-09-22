@@ -12,7 +12,7 @@ weight: 3
 ---Q---
 $A = \dfrac{3}{9} \div \dfrac{3}{6}$
 ---CORR---
-$A = \dfrac{3}{9} \times \dfrac{6}{3} = \dfrac{18}{27} = \dfrac{2{\color{#C5607A}\boldsymbol{\times 9}}}{3{\color{#C5607A}\boldsymbol{\times 9}}} = {\color{#EB7F73}\boldsymbol{\dfrac{2}{3}}}$
+$A = \dfrac{3}{9} \times \dfrac{6}{3} = \dfrac{18}{27} = \dfrac{{\color{#C5607A}\boldsymbol{9}} \times 2}{{\color{#C5607A}\boldsymbol{9}} \times 3} = {\color{#EB7F73}\boldsymbol{\dfrac{2}{3}}}$
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 2" >}}2
@@ -20,7 +20,7 @@ $A = \dfrac{3}{9} \times \dfrac{6}{3} = \dfrac{18}{27} = \dfrac{2{\color{#C5607A
 Soldé à $-20~\%$ un article coûte maintenant $240$€. <br>
 Calculer son prix avant les soldes.
 ---CORR---
-Une diminution de $20~\%$ revient à multiplier par $0{,}8$.<br>Pour retrouver le prix initial : $240\div 0{,}8 = {\color{#EB7F73}\boldsymbol{300}}$€.
+Une diminution de $20~\%$ revient à multiplier par $0{,}8$.<br>Pour retrouver le prix initial : $240\div 0{,}8 = {\color{#EB7F73}\boldsymbol{300}}$€.<br>Autre méthode : diminuer de $20~\%$, c'est retrancher $20~\%$ du prix de départ, il reste donc $80~\%$ de ce prix. Les $240$€ représentent ces $80~\%$.<br>$\dfrac{240}{80}\times 100=\dfrac{240\times 100}{80}=\dfrac{{\color{#C5607A}\boldsymbol{80}} \times 3 \times 100}{{\color{#C5607A}\boldsymbol{80}}}=3 \times 100={\color{#EB7F73}\boldsymbol{300}}$€.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3
@@ -76,7 +76,7 @@ $-8{,}4 \quad {\color{#EB7F73}\boldsymbol{>}} \quad -8{,}5$
 ---Q---
 Déterminer la valeur de $10~\%$ de $170$.
 ---CORR---
-$10~\%$ de $170 = 0{,}1\times 170 = {\color{#EB7F73}\boldsymbol{17}}$.
+$10~\%$ de $170$, c'est :<br>$\dfrac{10}{100}\times 170=\dfrac{10\times 170}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 170}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{170}{10}={\color{#EB7F73}\boldsymbol{17}}$.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 5" >}}

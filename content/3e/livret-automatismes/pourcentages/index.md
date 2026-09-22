@@ -33,7 +33,7 @@ $\dfrac{1}{10}=\dfrac{1{\color{#C5607A}\boldsymbol{\times 10}}}{10{\color{#C5607
 ---Q---
 $\dfrac{530}{1000}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
 ---CORR---
-$\dfrac{530}{1000}=\dfrac{530{\color{#C5607A}\boldsymbol{\div 10}}}{1000{\color{#C5607A}\boldsymbol{\div 10}}}=\dfrac{53}{100}={\color{#EB7F73}\boldsymbol{53}}~\%$
+$\dfrac{530}{1000}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 53}{{\color{#C5607A}\boldsymbol{10}} \times 100}=\dfrac{53}{100}={\color{#EB7F73}\boldsymbol{53}}~\%$
 ---Q---
 $\dfrac{4}{50}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
 ---CORR---
@@ -45,7 +45,7 @@ $\dfrac{1}{5}=\dfrac{1{\color{#C5607A}\boldsymbol{\times 20}}}{5{\color{#C5607A}
 ---Q---
 $\dfrac{10}{200}= \dfrac{\ldots\ldots}{100}={\ldots\ldots}~\%$
 ---CORR---
-$\dfrac{10}{200}=\dfrac{10{\color{#C5607A}\boldsymbol{\div 2}}}{200{\color{#C5607A}\boldsymbol{\div 2}}}=\dfrac{5}{100}={\color{#EB7F73}\boldsymbol{5}}~\%$
+$\dfrac{10}{200}=\dfrac{{\color{#C5607A}\boldsymbol{2}} \times 5}{{\color{#C5607A}\boldsymbol{2}} \times 100}=\dfrac{5}{100}={\color{#EB7F73}\boldsymbol{5}}~\%$
 {{< /livret-exo >}}
 
 {{< livret-exo num="2" >}}
@@ -67,7 +67,7 @@ La proportion est $\dfrac{10}{20}$.<br>$\dfrac{10}{20}=\dfrac{10{\color{#C5607A}
 ---Q---
 Une usine fabrique $500$ pièces, dont $50$ sont défectueuses. Quel est le pourcentage de pièces défectueuses ?
 ---CORR---
-La proportion est $\dfrac{50}{500}$.<br>$\dfrac{50}{500}=\dfrac{50{\color{#C5607A}\boldsymbol{\div 5}}}{500{\color{#C5607A}\boldsymbol{\div 5}}}=\dfrac{10}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{10~\%}}$.
+La proportion est $\dfrac{50}{500}$.<br>$\dfrac{50}{500}=\dfrac{{\color{#C5607A}\boldsymbol{5}} \times 10}{{\color{#C5607A}\boldsymbol{5}} \times 100}=\dfrac{10}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{10~\%}}$.
 ---Q---
 Dans un groupe de $50$ élèves, $49$ portent des lunettes. Quel est le pourcentage d'élèves portant des lunettes ?
 ---CORR---
@@ -84,16 +84,16 @@ La proportion est $\dfrac{5}{20}$.<br>$\dfrac{5}{20}=\dfrac{5{\color{#C5607A}\bo
 ---Q---
 Le prix d'un article coûtant $60$ € augmente de $42$ €.<br> Quel est le pourcentage d'augmentation de ce prix ?
 ---CORR---
-La proportion est $\dfrac{42}{60}$.<br>$\dfrac{42}{60}=\dfrac{42{\color{#C5607A}\boldsymbol{\div 0}}}{60{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{70}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{70~\%}}$.
+La proportion est $\dfrac{42}{60}$.<br>$\dfrac{42}{60}=\dfrac{{\color{#C5607A}\boldsymbol{6}} \times 7}{{\color{#C5607A}\boldsymbol{6}} \times 10}=\dfrac{7}{10}=\dfrac{7{\color{#C5607A}\boldsymbol{\times 10}}}{10{\color{#C5607A}\boldsymbol{\times 10}}}=\dfrac{70}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{70~\%}}$.
 ---Q---
 Dans un groupe de $40$ enfants, $16$ sont des garçons.<br>Ils représentent <span class="pointilles"></span> $\%$ du groupe.
 ---CORR---
-La proportion est $\dfrac{16}{40}$.<br>$\dfrac{16}{40}=\dfrac{16{\color{#C5607A}\boldsymbol{\div 0}}}{40{\color{#C5607A}\boldsymbol{\div 0}}}=\dfrac{40}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{40~\%}}$.
+La proportion est $\dfrac{16}{40}$.<br>$\dfrac{16}{40}=\dfrac{{\color{#C5607A}\boldsymbol{8}} \times 2}{{\color{#C5607A}\boldsymbol{8}} \times 5}=\dfrac{2}{5}=\dfrac{2{\color{#C5607A}\boldsymbol{\times 20}}}{5{\color{#C5607A}\boldsymbol{\times 20}}}=\dfrac{40}{100}$<br>C'est donc ${\color{#EB7F73}\boldsymbol{40~\%}}$.
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Calculer un pourcentage d'une quantité" >}}
 <div class="rappel-cols rappel-cols-2"><div><p>Calculer $a~\%$ d'une quantité revient à multiplier cette quantité par $\frac{a}{100}$.</p>
-<p><em>Méthode :</em> Pour calculer $a~\%$ de $b$, on calcule $\frac{a}{100} \times b$.</p></div><div><p><strong>Exemples concrets :</strong> $30~\%$ de 80 € : <br> $$\frac{30}{100} \times 80 = \frac{10 \times 3 \times 8 \times 10}{10 \times 10}= 24 \text{ €}$$</p></div></div>
+<p><em>Méthode :</em> Pour calculer $a~\%$ de $b$, on calcule $\frac{a}{100} \times b$.</p></div><div><p><strong>Exemple :</strong> $30~\%$ de 80 €.</p><p>On met tout sous la même barre, on décompose pour faire apparaître un facteur commun, puis on simplifie.</p><p>$$\frac{30}{100} \times 80 = \frac{30 \times 80}{100} = \frac{{\color{#D36740}\mathbf{10}} \times 3 \times 80}{{\color{#D36740}\mathbf{10}} \times 10} = \frac{3 \times 80}{10} = \frac{240}{10} = 24 \text{ €}$$</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="5" cols="3" >}}
@@ -102,51 +102,51 @@ Calculer.
 ---Q---
 $30~\%~\text{de }31$
 ---CORR---
-$\dfrac{30}{100}\times 31=\dfrac{30\times 31}{100}=\dfrac{930}{100}={\color{#EB7F73}\boldsymbol{9{,}3}}$
+$\dfrac{30}{100}\times 31=\dfrac{30\times 31}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 3 \times 31}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{3 \times 31}{10}=\dfrac{93}{10}={\color{#EB7F73}\boldsymbol{9{,}3}}$
 ---Q---
 $10~\%~\text{de }70$
 ---CORR---
-$\dfrac{10}{100}\times 70=\dfrac{10\times 70}{100}=\dfrac{700}{100}={\color{#EB7F73}\boldsymbol{7}}$
+$\dfrac{10}{100}\times 70=\dfrac{10\times 70}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 70}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{70}{10}={\color{#EB7F73}\boldsymbol{7}}$
 ---Q---
 $40~\%~\text{de }8$
 ---CORR---
-$\dfrac{40}{100}\times 8=\dfrac{40\times 8}{100}=\dfrac{320}{100}={\color{#EB7F73}\boldsymbol{3{,}2}}$
+$\dfrac{40}{100}\times 8=\dfrac{40\times 8}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 2 \times 8}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{2 \times 8}{5}=\dfrac{16}{5}={\color{#EB7F73}\boldsymbol{3{,}2}}$
 ---Q---
 $20~\%~\text{de }2$
 ---CORR---
-$\dfrac{20}{100}\times 2=\dfrac{20\times 2}{100}=\dfrac{40}{100}={\color{#EB7F73}\boldsymbol{0{,}4}}$
+$\dfrac{20}{100}\times 2=\dfrac{20\times 2}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 2}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{2}{5}={\color{#EB7F73}\boldsymbol{0{,}4}}$
 ---Q---
 $10~\%~\text{de }80$
 ---CORR---
-$\dfrac{10}{100}\times 80=\dfrac{10\times 80}{100}=\dfrac{800}{100}={\color{#EB7F73}\boldsymbol{8}}$
+$\dfrac{10}{100}\times 80=\dfrac{10\times 80}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 80}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{80}{10}={\color{#EB7F73}\boldsymbol{8}}$
 ---Q---
 $40~\%~\text{de }3$
 ---CORR---
-$\dfrac{40}{100}\times 3=\dfrac{40\times 3}{100}=\dfrac{120}{100}={\color{#EB7F73}\boldsymbol{1{,}2}}$
+$\dfrac{40}{100}\times 3=\dfrac{40\times 3}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 2 \times 3}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{2 \times 3}{5}=\dfrac{6}{5}={\color{#EB7F73}\boldsymbol{1{,}2}}$
 ---Q---
 $20~\%~\text{de }41$
 ---CORR---
-$\dfrac{20}{100}\times 41=\dfrac{20\times 41}{100}=\dfrac{820}{100}={\color{#EB7F73}\boldsymbol{8{,}2}}$
+$\dfrac{20}{100}\times 41=\dfrac{20\times 41}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 41}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{41}{5}={\color{#EB7F73}\boldsymbol{8{,}2}}$
 ---Q---
 $30~\%~\text{de }72$
 ---CORR---
-$\dfrac{30}{100}\times 72=\dfrac{30\times 72}{100}=\dfrac{2160}{100}={\color{#EB7F73}\boldsymbol{21{,}6}}$
+$\dfrac{30}{100}\times 72=\dfrac{30\times 72}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 3 \times 72}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{3 \times 72}{10}=\dfrac{216}{10}={\color{#EB7F73}\boldsymbol{21{,}6}}$
 ---Q---
 $10~\%~\text{de }7$
 ---CORR---
-$\dfrac{10}{100}\times 7=\dfrac{10\times 7}{100}=\dfrac{70}{100}={\color{#EB7F73}\boldsymbol{0{,}7}}$
+$\dfrac{10}{100}\times 7=\dfrac{10\times 7}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 7}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{7}{10}={\color{#EB7F73}\boldsymbol{0{,}7}}$
 ---Q---
 $20~\%~\text{de }3$
 ---CORR---
-$\dfrac{20}{100}\times 3=\dfrac{20\times 3}{100}=\dfrac{60}{100}={\color{#EB7F73}\boldsymbol{0{,}6}}$
+$\dfrac{20}{100}\times 3=\dfrac{20\times 3}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 3}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{3}{5}={\color{#EB7F73}\boldsymbol{0{,}6}}$
 ---Q---
 $30~\%~\text{de }81$
 ---CORR---
-$\dfrac{30}{100}\times 81=\dfrac{30\times 81}{100}=\dfrac{2430}{100}={\color{#EB7F73}\boldsymbol{24{,}3}}$
+$\dfrac{30}{100}\times 81=\dfrac{30\times 81}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 3 \times 81}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{3 \times 81}{10}=\dfrac{243}{10}={\color{#EB7F73}\boldsymbol{24{,}3}}$
 ---Q---
 $40~\%~\text{de }82$
 ---CORR---
-$\dfrac{40}{100}\times 82=\dfrac{40\times 82}{100}=\dfrac{3280}{100}={\color{#EB7F73}\boldsymbol{32{,}8}}$
+$\dfrac{40}{100}\times 82=\dfrac{40\times 82}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 2 \times 82}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{2 \times 82}{5}=\dfrac{164}{5}={\color{#EB7F73}\boldsymbol{32{,}8}}$
 {{< /livret-exo >}}
 
 {{< livret-exo num="6" >}}
@@ -155,26 +155,31 @@ Calculer les quantités correspondantes.
 ---Q---
 Le cadeau commun que nous souhaitons faire à Nora coûte $50$ €. Je participe à hauteur de $28~\%$ du prix total. <br>Combien ai-je donné pour le cadeau de Nora ?
 ---CORR---
-$\dfrac{28}{100}\times 50=\dfrac{28\times 50}{100}={\color{#EB7F73}\boldsymbol{14}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{14}}$ euros.
+$\dfrac{28}{100}\times 50=\dfrac{28\times 50}{100}=\dfrac{{\color{#C5607A}\boldsymbol{4}} \times 7 \times 50}{{\color{#C5607A}\boldsymbol{4}} \times 25}=\dfrac{7 \times 50}{25}=\dfrac{350}{25}={\color{#EB7F73}\boldsymbol{14}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{14}}$ euros.
 ---Q---
 Une réserve de protection d'oiseaux contient $2\,180$ individus d'oiseaux. On dénombre $5~\%$ de bruants des roseaux.<br>Quel est le nombre de bruants des roseaux ?
 ---CORR---
-$\dfrac{5}{100}\times 2180=\dfrac{5\times 2180}{100}={\color{#EB7F73}\boldsymbol{109}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{109}}$ bruants des roseaux.
+$\dfrac{5}{100}\times 2\,180=\dfrac{5\times 2\,180}{100}=\dfrac{{\color{#C5607A}\boldsymbol{5}} \times 2\,180}{{\color{#C5607A}\boldsymbol{5}} \times 20}=\dfrac{2\,180}{20}={\color{#EB7F73}\boldsymbol{109}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{109}}$ bruants des roseaux.
 ---Q---
 Dans une entreprise de $120$ salariés, il y a $20\,\%$ de cadres. <br>Combien y a-t-il de cadres dans cette entreprise ?
 ---CORR---
-$\dfrac{20}{100}\times 120=\dfrac{20\times 120}{100}={\color{#EB7F73}\boldsymbol{24}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{24}}$ cadres.
+$\dfrac{20}{100}\times 120=\dfrac{20\times 120}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 120}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{120}{5}={\color{#EB7F73}\boldsymbol{24}}$<br>Il y a donc ${\color{#EB7F73}\boldsymbol{24}}$ cadres.
 {{< /livret-exo >}}
 
 {{< livret-rappel titre="Augmentations et diminutions en pourcentage" >}}
-<div class="rappel-cols rappel-cols-2"><div><p><strong>Augmentation :</strong> Pour augmenter une quantité de $a~\%$, on :</p>
-<ul><li>Calcule le montant de l'augmentation : <br> $\frac{a}{100} \times \text{quantité initiale}$</li><li>Ajoute ce montant à la quantité initiale</li></ul>
-<p><strong>Diminution :</strong> Pour diminuer une quantité de $a~\%$, on :</p>
-<ul><li>Calcule le montant de la diminution : <br> $\frac{a}{100} \times \text{quantité initiale}$</li><li>Soustrait ce montant de la quantité initiale</li></ul></div><div><p><strong>Exemples :</strong></p>
-<p><em>Augmentation de 15 % sur un prix de 80 € :</em></p>
-<ul><li>Augmentation : $\frac{15}{100} \times 80 = 12$ €</li><li>Nouveau prix : $80 + 12 = 92$ €</li></ul>
-<p><em>Réduction de 20 % sur un prix de 50 € :</em></p>
-<ul><li>Réduction : $\frac{20}{100} \times 50 = 10$ €</li><li>Nouveau prix : $50 - 10 = 40$ €</li></ul></div></div>
+<div class="rappel-cols rappel-cols-2"><div><p><strong>Avec le coefficient multiplicateur :</strong></p>
+<ul><li>Augmenter de $a~\%$ revient à multiplier par $1 + \frac{a}{100}$</li><li>Diminuer de $a~\%$ revient à multiplier par $1 - \frac{a}{100}$</li></ul>
+<p><em>Exemples :</em> augmenter de $15~\%$, c'est multiplier par $1{,}15$ ; diminuer de $20~\%$, c'est multiplier par $0{,}8$.</p>
+<p>Augmentation de $15~\%$ sur $80$ € : $$80 \times 1{,}15 = 92 \text{ €}$$</p>
+</div><div><p><strong>Autre méthode :</strong></p>
+<p>Augmenter de $a~\%$, c'est calculer $a~\%$ de la quantité de départ, puis <strong>ajouter</strong> le résultat à cette quantité.</p>
+<p>Diminuer de $a~\%$, c'est calculer $a~\%$ de la quantité de départ, puis <strong>retrancher</strong> le résultat à cette quantité.</p>
+<p><em>Augmentation de $15~\%$ sur $80$ € :</em></p>
+<p>$$\frac{15}{100} \times 80 = \frac{15 \times 80}{100} = \frac{{\color{#D36740}\mathbf{5}} \times 3 \times 80}{{\color{#D36740}\mathbf{5}} \times 20} = \frac{3 \times 80}{20} = \frac{240}{20} = 12 \text{ €}$$</p>
+<p>puis $80 + 12 = 92$ €.</p>
+<p><em>Réduction de $20~\%$ sur $50$ € :</em></p>
+<p>$$\frac{20}{100} \times 50 = \frac{20 \times 50}{100} = \frac{{\color{#D36740}\mathbf{20}} \times 50}{{\color{#D36740}\mathbf{20}} \times 5} = \frac{50}{5} = 10 \text{ €}$$</p>
+<p>puis $50 - 10 = 40$ €.</p></div></div>
 {{< /livret-rappel >}}
 
 {{< livret-exo num="7" cols="2" >}}
@@ -185,7 +190,7 @@ Un billet de cinéma coûte 12 €. Guillaume bénéficie d'une réduction de $
 ---SUB-Q---
 Calculer le montant de la réduction.
 ---SUB-CORR---
-$\dfrac{20}{100}\times 12=\dfrac{20\times 12}{100}={\color{#EB7F73}\boldsymbol{2{,}4}}$<br>La réduction est de ${\color{#EB7F73}\boldsymbol{2{,}4}}$ €.
+$\dfrac{20}{100}\times 12=\dfrac{20\times 12}{100}=\dfrac{{\color{#C5607A}\boldsymbol{20}} \times 12}{{\color{#C5607A}\boldsymbol{20}} \times 5}=\dfrac{12}{5}={\color{#EB7F73}\boldsymbol{2{,}4}}$<br>La réduction est de ${\color{#EB7F73}\boldsymbol{2{,}4}}$ €.
 ---SUB-Q---
 Calculer le prix de son billet de cinéma.
 ---SUB-CORR---
@@ -195,7 +200,7 @@ Le loyer de l'appartement de Gabrielle coûte 742 €. <br>Au 1er janvier, il a
 ---SUB-Q---
 Calculer le montant de l'augmentation.
 ---SUB-CORR---
-$\dfrac{10}{100}\times 742=\dfrac{10\times 742}{100}={\color{#EB7F73}\boldsymbol{74{,}2}}$<br>La augmentation est de ${\color{#EB7F73}\boldsymbol{74{,}2}}$ €.
+$\dfrac{10}{100}\times 742=\dfrac{10\times 742}{100}=\dfrac{{\color{#C5607A}\boldsymbol{10}} \times 742}{{\color{#C5607A}\boldsymbol{10}} \times 10}=\dfrac{742}{10}={\color{#EB7F73}\boldsymbol{74{,}2}}$<br>L'augmentation est de ${\color{#EB7F73}\boldsymbol{74{,}2}}$ €.
 ---SUB-Q---
 Calculer le montant au 1er janvier de son loyer.
 ---SUB-CORR---
