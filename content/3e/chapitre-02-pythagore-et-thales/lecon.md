@@ -183,8 +183,8 @@ Les droites $(HW)$ et $(TU)$ sont-elles parallèles ?<br>
 <div class="environment-content">
 On sait que $NU=NW-WU=6-2{,}4=3{,}6$ cm.<br>
 On sait aussi que $NT=NH-HT=4-1{,}6=2{,}4$ cm.<br>
-D'une part on a $\dfrac{NH}{NT}=\dfrac{4}{2{,}4}=\dfrac{4\times{\color{#819171}\boldsymbol{3{,}6}}}{2{,}4\times{\color{#819171}\boldsymbol{3{,}6}}}=\dfrac{14{,}4}{8{,}64}$.<br>
-D'autre part on a $\dfrac{NW}{NU}=\dfrac{6}{3{,}6}=\dfrac{6\times{\color{#819171}\boldsymbol{2{,}4}}}{3{,}6\times{\color{#819171}\boldsymbol{2{,}4}}}=\dfrac{14{,}4}{8{,}64}$.<br>
+D'une part on a $\dfrac{NH}{NT}=\dfrac{4}{2{,}4}=\dfrac{5}{3}$.<br>
+D'autre part on a $\dfrac{NW}{NU}=\dfrac{6}{3{,}6}=\dfrac{5}{3}$.<br>
 On a donc, $\dfrac{NH}{NT}=\dfrac{NW}{NU}$ et $N$,$T$,$H$ et on a $N$,$U$,$W$ qui sont alignés dans le même ordre.<br>
 Donc d'après la réciproque du théorème de Thalès, les droites $(HW)$ et $(TU)$ sont parallèles.
 </div>
@@ -202,8 +202,8 @@ Sur la figure ci-contre, on a : <ul>
 </div>
 <img src="/mabemat/figures/3e/chapitre-02/fig6.svg" alt="figure 6" style="display:inline-block; vertical-align:top; width:calc(25% - 12px); max-height:200px; max-width:100%;">
 
-D'une part on a $\dfrac{FP}{FE}=\dfrac{6}{2{,}4}=\dfrac{6\times{\color{#819171}\boldsymbol{2}}}{2{,}4\times{\color{#819171}\boldsymbol{2}}}=\dfrac{12}{4{,}8}$.<br>
-D'autre part on a $\dfrac{FO}{FV}=\dfrac{5}{2}=\dfrac{5\times{\color{#819171}\boldsymbol{2{,}4}}}{2\times{\color{#819171}\boldsymbol{2{,}4}}}=\dfrac{12}{4{,}8}$.<br>
+D'une part on a $\dfrac{FP}{FE}=\dfrac{6}{2{,}4}=\dfrac{5}{2}$.<br>
+D'autre part on a $\dfrac{FO}{FV}=\dfrac{5}{2}$.<br>
 On a donc $\dfrac{FP}{FE}=\dfrac{FO}{FV}$ et on a $E$,$F$,$P$ et $V$,$F$,$O$ qui sont alignés dans le même ordre.<br>
 Donc d'après la réciproque du théorème de Thalès, les droites $(PO)$ et $(EV)$ sont parallèles.<br>
 </div>
@@ -227,8 +227,8 @@ Sur la figure ci-contre, on a : <ul>
 
 <img src="/mabemat/figures/3e/chapitre-02/fig7.svg" alt="figure 7" style="display:inline-block; vertical-align:top; width:calc(25% - 12px); max-height:200px; max-width:100%;">
 
-D'une part on a $\dfrac{WS}{WF}=\dfrac{5}{3{,}6}=\dfrac{5\times{\color{#819171}\boldsymbol{4{,}8}}}{3{,}6\times{\color{#819171}\boldsymbol{4{,}8}}}=\dfrac{24}{17{,}28}$.<br>
-D'autre part on a $\dfrac{WQ}{WH}=\dfrac{6}{4{,}8}=\dfrac{6\times{\color{#819171}\boldsymbol{3{,}6}}}{4{,}8\times{\color{#819171}\boldsymbol{3{,}6}}}=\dfrac{21{,}6}{17{,}28}$.<br>
-On a donc $\dfrac{WS}{WF}\not=\dfrac{WQ}{WH}$.<br>
+D'une part on a $\dfrac{WS}{WF}=\dfrac{5}{3{,}6}=\dfrac{25}{18}$.<br>
+D'autre part on a $\dfrac{WQ}{WH}=\dfrac{6}{4{,}8}=\dfrac{5}{4}$.<br>
+On a donc $\dfrac{WS}{WF}\not=\dfrac{WQ}{WH}$ car $\dfrac{25}{18}\not=\dfrac{5}{4}$.<br>
 Donc d'après la contraposée du théorème de Thalès, les droites $(SQ)$ et $(FH)$ ne sont pas parallèles.<br>
 </div>
