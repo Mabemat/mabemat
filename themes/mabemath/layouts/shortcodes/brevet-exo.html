@@ -1,10 +1,24 @@
 {{/* ───────────────────────────────────────────────
      PARAMÈTRES
+     num    numero de l'exercice
+     source etiquette libre affichee dans la puce a droite
+
+     Interrupteur general de la page, puis filtre exercice par exercice
+     (meme convention que livret-exo) :
+       has_brevetcorr: false            -> aucune correction
+       has_brevetcorr: true             -> toutes les corrections
+       has_brevetcorr: true
+       corrections_actives: [1, 3, 7]   -> seulement ces exercices
 ──────────────────────────────────────────────── */}}
 {{ $num      := .Get "num" }}
 {{ $source   := .Get "source" }}
 {{ $raw      := .Inner }}
 {{ $showCorr := .Page.Params.has_brevetCorr | default false }}
+{{ with .Page.Params.corrections_actives }}
+  {{ $ouvert := false }}
+  {{ range . }}{{ if eq (printf "%v" .) (printf "%v" (int $num)) }}{{ $ouvert = true }}{{ end }}{{ end }}
+  {{ $showCorr = and $showCorr $ouvert }}
+{{ end }}
 
 {{/* ───────────────────────────────────────────────
      EXTRACTION INTRO + QUESTIONS

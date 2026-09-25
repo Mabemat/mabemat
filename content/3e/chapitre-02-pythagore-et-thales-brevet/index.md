@@ -3,7 +3,8 @@ title: "Exercices type brevet - Pythagore et Thalès"
 layout: "brevet"
 level: "3e"
 chapter: "chapitre-02-pythagore-et-thales"
-has_brevetcorr: false
+has_brevetcorr: true
+corrections_actives: [1, 2]
 ---
 {{< brevet-exo num="1" source="DNB Juin 2014 Polynésie" >}}
 ---INTRO---
