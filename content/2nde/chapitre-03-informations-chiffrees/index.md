@@ -7,6 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: true
 has_qcm: false
+has_revisions: true
+lien_revisions: "revision.pdf"
 competences:
   - "Calculer un pourcentage et une proportion"
   - "Calculer un taux d'évolution et un coefficient multiplicateur"
