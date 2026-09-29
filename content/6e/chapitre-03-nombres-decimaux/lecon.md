@@ -283,9 +283,9 @@ On peut par exemple intercaler 21,55 entre 21,5 et 21,6. Les nombres 21,51 et 21
 <div class="environment-content">
 <ul>
 <li>Arrondir à l'unité de 23,7.<br>
-24 c'est le nombre entier le plus proche de 23,7. On note $23{,}7 \simeq 24$.</li>
+Comme $7 \geqslant 5$, alors $23{,}7 \simeq 24$.</li>
 <li>Arrondir au dixième de 91,42.<br>
-91,4 c'est le nombre décimal le plus proche de 91,42 au dixième près. On note $91{,}42 \simeq 91{,}4$.</li>
+Comme $2 < 5$, alors $91{,}42 \simeq 91{,}4$.</li>
 </ul>
 </div>
 </div>
