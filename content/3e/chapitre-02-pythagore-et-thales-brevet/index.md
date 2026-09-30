@@ -4,7 +4,7 @@ layout: "brevet"
 level: "3e"
 chapter: "chapitre-02-pythagore-et-thales"
 has_brevetcorr: true
-corrections_actives: [1, 2, 3]
+corrections_actives: [1, 2, 3,4,5]
 ---
 {{< brevet-exo num="1" source="DNB Juin 2014 Polynésie" >}}
 ---INTRO---
