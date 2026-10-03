@@ -36,13 +36,13 @@ Dans un groupe de $200$ personnes, il y a $120$ femmes, dont $30$ portent des lu
 
 $$30+50=80$$
 
-La fréquence se calcule par rapport à l'effectif total du groupe :
+Il s'agit d'une fréquence marginale : on divise l'effectif marginal par l'effectif total du groupe.
 
-$$f=\dfrac{80}{200}=0{,}4={\color{#4A5D7A}40\,\%}$$
+$$f(\text{lunettes})=\dfrac{80}{200}=0{,}4={\color{#4A5D7A}40\,\%}$$
 
-**b.** Ici, la population de référence change : ce sont les $120$ femmes.
+**b.** Il s'agit d'une fréquence conditionnelle : la population de référence change, ce sont les $120$ femmes.
 
-$$f=\dfrac{30}{120}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$
+$$f_{\text{femmes}}(\text{lunettes})=\dfrac{30}{120}=\dfrac{1}{4}=0{,}25={\color{#4A5D7A}25\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
@@ -168,13 +168,13 @@ Dans un groupe de $250$ personnes, il y a $150$ femmes, dont $45$ portent des lu
 
 $$45+40=85$$
 
-La fréquence se calcule par rapport à l'effectif total du groupe :
+Il s'agit d'une fréquence marginale : on divise l'effectif marginal par l'effectif total du groupe.
 
-$$f=\dfrac{85}{250}=0{,}34={\color{#4A5D7A}34\,\%}$$
+$$f(\text{lunettes})=\dfrac{85}{250}=0{,}34={\color{#4A5D7A}34\,\%}$$
 
-**b.** Ici, la population de référence change : ce sont les $150$ femmes.
+**b.** Il s'agit d'une fréquence conditionnelle : la population de référence change, ce sont les $150$ femmes.
 
-$$f=\dfrac{45}{150}=\dfrac{3}{10}=0{,}3={\color{#4A5D7A}30\,\%}$$
+$$f_{\text{femmes}}(\text{lunettes})=\dfrac{45}{150}=\dfrac{3}{10}=0{,}3={\color{#4A5D7A}30\,\%}$$
 {{< /auto2-exo >}}
 
 {{< auto2-exo numero="03" >}}
