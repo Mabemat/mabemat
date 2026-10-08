@@ -35,6 +35,13 @@
       <h4>Comment ça marche</h4>
       <p>Chaque séance propose quatre exercices rapides. L'énoncé s'affiche ; la correction détaillée se déplie d'un clic.</p>
     </div>
+    {{ with .Params.livret_pdf }}
+    <div class="col">
+      <h4>Toutes les séances</h4>
+      <p>Le livret élève complet, à imprimer.<br>
+      <a href="{{ $.RelPermalink }}{{ . }}" target="_blank" rel="noopener" style="color:var(--accent);">Télécharger le PDF →</a></p>
+    </div>
+    {{ end }}
   </div>
 </section>
 
