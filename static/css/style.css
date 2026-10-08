@@ -1397,6 +1397,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   margin-top: 28px; display: grid;
   grid-template-columns: repeat(2, 1fr); gap: 40px;
 }
+.auto-sub.auto-sub-3 { grid-template-columns: repeat(3, 1fr); }
 .auto-sub .col h4 {
   font-family: var(--font-mono); font-size: 11px;
   text-transform: uppercase; letter-spacing: 0.12em;
@@ -1470,6 +1471,7 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   .auto-hero-grid { grid-template-columns: 1fr; }
   .auto-tag { align-items: flex-start; }
   .auto-sub { grid-template-columns: 1fr; gap: 24px; }
+  .auto-sub.auto-sub-3 { grid-template-columns: 1fr; }
 }
 
 /* ═══════════════════════════════════════════════════
