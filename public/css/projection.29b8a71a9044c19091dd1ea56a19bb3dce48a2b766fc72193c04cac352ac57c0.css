@@ -1,0 +1,251 @@
+/* ============================================================
+   MaBémat — Mode projection (focus, thème clair)
+   À déposer dans : themes/mabemath/assets/css/projection.css
+   Réutilise les tokens existants (tokens.css) : --accent, --paper,
+   --ink, --rule, --font-serif/sans/mono, --ease-out, @keyframes fadeUp.
+   L'accent s'adapte donc automatiquement au niveau (3e, 6e, …).
+   ============================================================ */
+
+/* Bouton « Projeter » dans le hero (utilise sinon .btn-new.accent) */
+.wk-project { margin-top: 22px; }
+
+/* ── Overlay plein écran ── */
+.proj-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; flex-direction: column;
+  background: var(--paper); color: var(--ink);
+  font-size: calc(var(--proj-scale, 18) * 1px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s var(--ease-out);
+}
+.proj-overlay.open { opacity: 1; pointer-events: auto; }
+
+/* ── Barre supérieure ── */
+.proj-bar {
+  flex-shrink: 0; display: flex; align-items: center; gap: 18px;
+  padding: 16px 28px; border-bottom: 1px solid var(--rule);
+  background: color-mix(in oklab, var(--paper) 88%, transparent);
+}
+.proj-bar .pb-brand { font-family: 'Tan Nimbus', var(--font-serif); font-size: 19px; letter-spacing: -0.01em; }
+
+.proj-bar .pb-sub { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-3); }
+.proj-bar .pb-spacer { flex: 1; }
+
+.pb-seances { display: flex; gap: 6px; }
+.pb-seances button {
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em;
+  padding: 8px 14px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--rule); background: transparent; color: var(--ink-3);
+  transition: all .2s var(--ease-out);
+}
+.pb-seances button:hover { color: var(--ink); border-color: var(--ink-3); }
+.pb-seances button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.pb-tools { display: flex; align-items: center; gap: 6px; }
+.pb-btn {
+  width: 40px; height: 40px; border-radius: 10px; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--rule); background: transparent; color: var(--ink);
+  font-family: var(--font-mono); font-size: 14px; transition: all .18s var(--ease-out);
+}
+.pb-btn:hover { background: var(--paper-2); border-color: var(--ink-3); }
+.pb-btn svg { width: 17px; height: 17px; }
+.pb-divider { width: 1px; height: 26px; background: var(--rule); margin: 0 4px; }
+.pb-close:hover { background: color-mix(in oklab, var(--accent) 16%, transparent);
+  border-color: var(--accent); color: var(--accent); }
+
+/* ── Scène ── */
+.proj-stage { position: relative; flex: 1; min-height: 0; overflow: hidden;
+  display: flex; flex-direction: column; }
+.proj-stage-inner { flex: 1; min-height: 0; padding: clamp(20px, 3.2vmin, 48px);
+  display: flex; flex-direction: column; overflow-y: auto; }
+
+/* ── Disposition focus ── */
+.proj-focus { flex: 1; min-height: 0; min-height: fit-content; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: left; position: relative; }
+.proj-focus .pf-num {
+  position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%);
+  text-align: center; white-space: nowrap;
+  font-family: var(--font-serif); font-style: italic; font-weight: 300;
+  font-size: clamp(8em, 26vmin, 18em); line-height: 1;
+  color: var(--accent); opacity: .07; pointer-events: none; z-index: 0;
+}
+.proj-focus .pf-inner { position: relative; z-index: 1; width: 100%;
+  max-width: min(1100px, 92%); display: flex; flex-direction: column; align-items: center; }
+.proj-focus .pf-tag { font-family: var(--font-mono); font-size: clamp(.78em, 1.4vmin, 1em);
+  letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 1em; }
+.proj-focus .pf-q { font-size: clamp(1.5em, 3.6vmin, 2.7em); line-height: 1.45; color: var(--ink); }
+.proj-focus .pf-c { margin-top: 1.4em; padding-top: 1.4em; border-top: 1px solid var(--rule);
+  font-size: clamp(1.15em, 2.5vmin, 1.9em); line-height: 1.5; width: 100%; color: var(--ink-2);
+  animation: fadeUp .35s var(--ease-out) both; }
+.proj-focus .pf-c-label { display: block; font-family: var(--font-mono); font-size: .62em;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--accent-2); margin-bottom: .9em; }
+
+/* Images / maths clonées */
+.proj-q img, .proj-c img { max-width: 70%; min-width: min(300px, 70%); width: auto; height: auto; display: block; margin: .6em auto; }
+
+/* Figure principale d'une question ou d'une correction : elle occupe toute la
+   largeur disponible. Les droites graduées et les repères sont exportés en
+   petit format (480 px de large), ils restaient minuscules au vidéoprojecteur.
+   object-fit: contain garde les proportions quand la hauteur est bornée. */
+.proj-focus .pf-q:has(img) { width: 100%; }
+.proj-q > img { width: 100%; max-width: 100%; max-height: 52vh; object-fit: contain; margin: 1em auto; }
+.proj-c > img { width: 100%; max-width: 100%; max-height: 34vh; object-fit: contain; margin: .8em auto; }
+@media (min-width: 761px) {
+  /* correction affichée : la figure de l'énoncé laisse de la place */
+  .proj-focus:has(.pf-c:not([hidden])) .proj-q > img { max-height: 30vh; }
+  /* question à plusieurs figures (QCM, séries) : on partage la hauteur */
+  .proj-q:has(img ~ img) > img { max-height: 28vh; }
+}
+.proj-q .katex-display, .proj-c .katex-display { overflow-x: auto; overflow-y: hidden; }
+.proj-overlay .rep { color: var(--accent); font-weight: 600;
+  background: color-mix(in oklab, var(--accent) 12%, transparent); padding: 1px 7px; border-radius: 4px; }
+
+@media (max-width: 760px) {
+  .pb-seances { display: none; }
+  .proj-bar { gap: 10px; padding: 12px 16px; }
+}
+
+/* ── Propositions QCM des automatismes (.qcm-choix) ──
+   En page normale : 4 colonnes en nowrap, calées sur la largeur de la
+   fenêtre. En projection le texte est bien plus gros, les 4 propositions
+   ne tiennent plus sur une ligne (ex. semaine 5, question 6). On passe
+   donc à une grille qui s'adapte : autant de colonnes que la place le
+   permet (jusqu'à 4 si c'est court, 1 si c'est long), et les propositions
+   peuvent revenir à la ligne plutôt que de sortir de l'écran. */
+.proj-overlay .qcm-choix {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13em), 1fr));
+  justify-content: stretch;
+  gap: .5em 1.6em;
+  width: 100%;
+  margin: .9em 0 0;
+}
+.proj-overlay .qcm-choix > span { white-space: normal; min-width: 0; overflow-wrap: break-word; }
+
+/* ── Choix QCM (mode projection 1re) ── */
+.proj-choices {
+  display: flex; flex-direction: column; gap: .7em;
+  width: 100%; margin-top: 1.2em;
+}
+.proj-choice {
+  display: flex; align-items: baseline; gap: .8em;
+  padding: .55em .9em; border-radius: 10px;
+  border: 1px solid var(--rule);
+  font-size: clamp(1.1em, 2.4vmin, 1.8em); line-height: 1.4;
+  transition: background .25s, border-color .25s;
+}
+.proj-choice.correct {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 12%, transparent);
+}
+.proj-choice-letter {
+  font-family: var(--font-mono); font-size: .75em; letter-spacing: .06em;
+  color: var(--accent); font-weight: 700; flex-shrink: 0; min-width: 1.4em;
+}
+.proj-choice-body { color: var(--ink); }
+
+/* ── Dialog PIN ── */
+.proj-pin-overlay {
+  position: fixed; inset: 0; z-index: 999;
+  display: flex; align-items: center; justify-content: center;
+  background: color-mix(in oklab, var(--ink) 50%, transparent);
+  backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s var(--ease-out);
+}
+.proj-pin-overlay.open { opacity: 1; pointer-events: auto; }
+
+.proj-pin-box {
+  background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 18px; padding: 2.4rem 2.8rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1.4rem;
+  box-shadow: 0 24px 64px color-mix(in oklab, var(--ink) 18%, transparent);
+  animation: fadeUp .3s var(--ease-out) both;
+  min-width: 280px;
+}
+.proj-pin-box h2 {
+  font-family: 'Tan Nimbus', var(--font-serif); font-size: 1.25rem;
+  color: var(--ink); margin: 0; letter-spacing: -0.01em;
+}
+.proj-pin-box p {
+  font-size: .85rem; color: var(--ink-3); margin: 0; text-align: center;
+}
+.proj-pin-input {
+  font-family: var(--font-mono); font-size: 2rem; letter-spacing: .4em;
+  text-align: center; width: 7rem; padding: .5rem .8rem;
+  border: 2px solid var(--rule); border-radius: 10px;
+  background: var(--paper-2); color: var(--ink);
+  transition: border-color .2s;
+  -webkit-text-security: disc;
+}
+.proj-pin-input:focus { outline: none; border-color: var(--accent); }
+.proj-pin-input.error { border-color: #e05; animation: pin-shake .4s; }
+@keyframes pin-shake {
+  0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)}
+  40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)}
+}
+.proj-pin-err {
+  font-size: .8rem; color: #e05; height: 1em;
+  transition: opacity .2s;
+}
+.proj-pin-submit {
+  font-family: var(--font-mono); font-size: .85rem; letter-spacing: .06em;
+  padding: .6rem 1.6rem; border-radius: 999px; cursor: pointer;
+  background: var(--accent); color: #fff; border: none;
+  transition: opacity .2s, transform .15s;
+}
+.proj-pin-submit:hover { opacity: .88; transform: translateY(-1px); }
+
+/* ============================================================
+   Haut contraste — activable a volonte depuis la barre (bouton
+   Contraste) ou par la touche C. Le reglage est memorise dans le
+   navigateur et s'applique aux automatismes de tous les niveaux.
+   Cible : les vieux videoprojecteurs, dont le rendu delave fait
+   disparaitre les gris, les aplats pales et les filets fins.
+   ============================================================ */
+
+.pb-btn.pb-on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.proj-overlay.contrast {
+  --paper:   #FFFFFF;
+  --paper-2: #FFFFFF;
+  --paper-3: #FFFFFF;
+  --ink:     #000000;
+  --ink-2:   #000000;
+  --ink-3:   #1C1C1C;
+  --ink-4:   #3A3A3A;
+  --rule:    #000000;
+  background: #FFFFFF;
+}
+.proj-overlay.contrast .proj-bar { background: #FFFFFF; border-bottom-width: 2px; }
+.proj-overlay.contrast .pb-sub { color: #1C1C1C; }
+
+/* Le grand numero en filigrane devient un parasite a fort contraste */
+.proj-overlay.contrast .proj-focus .pf-num { display: none; }
+
+.proj-overlay.contrast .proj-focus .pf-q,
+.proj-overlay.contrast .proj-focus .pf-c,
+.proj-overlay.contrast .proj-choice-body { color: #000; }
+.proj-overlay.contrast .proj-focus .pf-c { border-top-width: 2px; border-top-color: #000; }
+.proj-overlay.contrast .proj-focus .pf-tag,
+.proj-overlay.contrast .proj-focus .pf-c-label {
+  color: color-mix(in oklab, var(--accent) 45%, #000);
+}
+.proj-overlay.contrast .rep {
+  color: color-mix(in oklab, var(--accent) 45%, #000);
+  background: transparent; font-weight: 700;
+}
+.proj-overlay.contrast .proj-choice { border-width: 2px; border-color: #000; }
+.proj-overlay.contrast .proj-choice.correct {
+  background: transparent;
+  border-color: color-mix(in oklab, var(--accent) 45%, #000);
+  border-width: 3px;
+}
+.proj-overlay.contrast .proj-choice-letter { color: color-mix(in oklab, var(--accent) 45%, #000); }
+
+.proj-overlay.contrast table,
+.proj-overlay.contrast th,
+.proj-overlay.contrast td { border-color: #000; border-width: 1.5px; }
+.proj-overlay.contrast th { background: transparent; color: #000; font-weight: 700; }
+.proj-overlay.contrast img { background: #FFF; }

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="fr" class="lvl-6e">
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semaine 7 - Séances 19 à 21 — MaBémat</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/mabemat/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/mabemat/favicon-512.png">
+<link rel="icon" href="/mabemat/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/mabemat/apple-touch-icon.png">
+<meta name="description" content="Cours de maths — Mme Bertail — Collège &amp; Lycée">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/mabemat/css/tokens.3eb14f3a42877a642a3635c455ca82abf52631f90283e28596dc859c40f5cf04.css" integrity="sha256-PrFPOkKHemQqNjXEVcqCq/UmMfkCg&#43;KFltyFnED1zwQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/style.60c2266987b2f7942d0ae9510874441ca7e0d2345fac947b7ee281af72d1e01a.css" integrity="sha256-YMImaYey95QtCulRCHREHKfg0jRfrJR7fuKBr3LR4Bo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/lecon.54ed6739df4735a2154d12ecbbd353b0dfe784f6e8ad830d80e30f3d7164c1e8.css" integrity="sha256-VO1nOd9HNaIVTRLsu9NTsN/nhPborYMNgOMPPXFkweg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/mabemat/css/mode-projection.ab0a2417b1650fe09e20b63459d13fe56b182e2aef2ba672a33fb27f7997aabd.css" integrity="sha256-qwokF7FlD&#43;CeILY0WdE/5WsYLirvK6Zyoz&#43;yf3mXqr0=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="
+    /* 1. Rendre visibles les panneaux de séances inactifs (display:none)
+          sinon KaTeX mesure des métriques à zéro dans les parents cachés.
+          IMPORTANT : on force aussi la largeur explicite du panneau, sinon
+          position:absolute fait perdre le width:100% relatif au parent et
+          KaTeX mesure les \\widehat / \\cancel à la largeur du viewport,
+          produisant des barres et chapeaux qui débordent largement. */
+    var hiddenPanels = [];
+    document.querySelectorAll('.seance-panel, .mode-panel').forEach(function(p) {
+      if (getComputedStyle(p).display === 'none') {
+        var w = p.parentElement ? p.parentElement.getBoundingClientRect().width : 0;
+        hiddenPanels.push(p);
+        if (p.parentElement && getComputedStyle(p.parentElement).position === 'static') {
+          p.dataset.katexParentRel = '1';
+          p.parentElement.style.position = 'relative';
+        }
+        if (w > 0) p.style.width = w + 'px';
+        p.style.visibility = 'hidden';
+        p.style.position   = 'absolute';
+        p.style.left       = '0';
+        p.style.top        = '0';
+        p.style.display    = 'block';
+      }
+    });
+
+    /* 2. Rendre visibles les divs de correction cachées (même fix de largeur) */
+    var corrDivs = document.querySelectorAll('.auto3-corr, .exo-corr, .corr-box');
+    corrDivs.forEach(function(d) {
+      if (d.style.display === 'none' || d.style.display === '') {
+        var wc = d.parentElement ? d.parentElement.getBoundingClientRect().width : 0;
+        d.dataset.katexHide = '1';
+        if (d.parentElement && getComputedStyle(d.parentElement).position === 'static') {
+          d.dataset.katexParentRel = '1';
+          d.parentElement.style.position = 'relative';
+        }
+        if (wc > 0) d.style.width = wc + 'px';
+        d.style.visibility = 'hidden';
+        d.style.position   = 'absolute';
+        d.style.left       = '0';
+        d.style.top        = '0';
+        d.style.display    = 'block';
+      }
+    });
+
+    /* 3. Rendu KaTeX sur toute la page */
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$',  right: '$',  display: false}
+      ]
+    });
+
+    /* 4. Restaurer les panneaux */
+    hiddenPanels.forEach(function(p) {
+      p.style.display    = '';
+      p.style.visibility = '';
+      p.style.position   = '';
+      p.style.left       = '';
+      p.style.top        = '';
+      p.style.width      = '';
+      if (p.dataset.katexParentRel === '1' && p.parentElement) {
+        p.parentElement.style.position = '';
+        delete p.dataset.katexParentRel;
+      }
+    });
+
+    /* 5. Restaurer les corrections */
+    corrDivs.forEach(function(d) {
+      if (d.dataset.katexHide) {
+        d.style.display    = '';
+        d.style.visibility = '';
+        d.style.position   = '';
+        d.style.left       = '';
+        d.style.top        = '';
+        d.style.width      = '';
+        if (d.dataset.katexParentRel === '1' && d.parentElement) {
+          d.parentElement.style.position = '';
+          delete d.dataset.katexParentRel;
+        }
+        delete d.dataset.katexHide;
+      }
+    });
+  "></script>
+
+<style>
+ 
+pre code span[style*="user-select:none"] {
+  border-right: 1px solid #bbb !important;
+  background: none !important;
+  padding-right: 10px !important;
+  margin-right: 6px !important;
+}
+pre[style*="background-color"] {
+  background-color: transparent !important;
+}
+</style>
+
+</head>
+<body>
+  <header class="topbar">
+  <a href="http://localhost:1313/mabemat/" class="brand">
+    <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
+  </a>
+  <nav>
+    
+    
+    <a href="/mabemat/6e/" class="active">6e</a>
+    
+    
+    <a href="/mabemat/3e/">3e</a>
+    
+    
+    <a href="/mabemat/2nde/">2nde</a>
+    
+    
+    <a href="/mabemat/1re/">1re</a>
+    
+    
+    <a href="/mabemat/liens/">Liens</a>
+    
+  </nav>
+</header>
+
+  
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
+
+<div class="crumbs fade-up">
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
+  <span class="sep">/</span>
+  
+  <a href="/mabemat/6e/">6ème</a>
+  <span class="sep">/</span>
+  
+  
+  <a href="/mabemat/6e/automatismes/">Automatismes</a>
+  <span class="sep">/</span>
+  
+  <span>Semaine 7</span>
+</div>
+
+<section class="wk-hero fade-up d1">
+  <div class="wk-hero-top">
+    <h1>Semaine <em>7</em></h1>
+    <button class="btn-new accent" id="btn-project" type="button" aria-label="Lancer le mode projection">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+      Projeter
+    </button>
+  </div>
+  <div class="wk-meta">
+    <span><span class="dot"></span>Séances 19 à 21</span>
+    <span><span class="dot"></span>5 questions par séance</span>
+  </div>
+</section>
+
+<div class="seance-tabs-wrap fade-up d2">
+  <div class="seance-tabs" id="auto-seance-tabs" role="tablist"></div>
+</div>
+
+<div id="auto-seance-content" class="fade-up d3">
+  
+<section class="seance-panel" data-titre="Séance 19">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Compléter : un angle de $137°$ est un angle $\ldots$
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+Un angle <span class="rep">obtus</span> (compris entre $90°$ et $180°$).
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Que signifie le codage porté sur la figure ?
+<br>
+<img src="6auto-tri-equi.svg" alt="Triangle ABC avec ses trois côtés codés" style="display:block;margin:0.8rem auto;max-width:100%">
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+$AB = BC = AC$ : le triangle $ABC$ est <span class="rep">équilatéral</span>.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Donner l'abscisse du point $A$.
+<br>
+<img src="6auto-grad-s19.svg" alt="Demi-droite graduée et point A" style="display:block;margin:0.8rem auto;max-width:100%">
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+${\color{#D36740}\boldsymbol{A\,(1{,}4)}}$
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Compléter : deux droites qui se coupent en formant un angle droit sont $\ldots$ et on note $(d) \ldots (d')$.
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+Elles sont <span class="rep">perpendiculaires</span> et on note $(d) {\color{#D36740}\boldsymbol{\perp}} (d')$.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Convertir : $7$ m $= \ldots$ mm
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+$7$ m $= {\color{#D36740}\boldsymbol{7\,000}}$ mm
+</div>
+  
+</article>
+
+
+
+</section>
+
+
+<section class="seance-panel" data-titre="Séance 20">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Écrire le produit de $12$ par $5$, puis le calculer.
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+$12 \times 5 = {\color{#D36740}\boldsymbol{60}}$
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Dans l'opération « $9 - 4$ », comment s'appellent les nombres $9$ et $4$ ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+Ce sont les <span class="rep">termes</span> de la différence.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Vrai ou faux : une droite a un milieu.
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+<span class="rep">Faux</span> : une droite est illimitée, elle n'a ni longueur ni milieu.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Compléter avec un nombre décimal : $28{,}99 < \ldots < 29$
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+Par exemple $28{,}99 < {\color{#D36740}\boldsymbol{28{,}995}} < 29$
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Combien manque-t-il à $250$ pour faire $1\,000$ ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+$1\,000 - 250 = {\color{#D36740}\boldsymbol{750}}$
+</div>
+  
+</article>
+
+
+
+</section>
+
+
+<section class="seance-panel" data-titre="Séance 21">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">01</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Calculer la somme de $24$ et $36$, puis la différence de $24$ et $12$.
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+Somme : $24 + 36 = {\color{#D36740}\boldsymbol{60}}$ &emsp; Différence : $24 - 12 = {\color{#D36740}\boldsymbol{12}}$
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">02</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Dans l'égalité « $6 + 3 = 9$ », comment s'appelle le nombre $9$ ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+C'est la <span class="rep">somme</span>.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">03</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Deux angles adjacents mesurent $110°$ et $70°$. Que forment-ils ensemble ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+$110° + 70° = 180°$ : ils forment un <span class="rep">angle plat</span>.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">04</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Sur une figure, que signifient deux petits traits identiques sur deux segments ?
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+Que ces deux segments ont <span class="rep">la même longueur</span>.
+</div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="exo">
+  <div class="exo-head">
+    <div class="exo-num">05</div>
+    <div class="exo-label">Question</div>
+  </div>
+  <div class="exo-enonce">
+Compléter : $7{,}409 = 7 + \dfrac{\ldots}{10} + \dfrac{\ldots}{1000}$
+</div>
+  
+  <button class="exo-btn" onclick="toggleRep(this)">
+    <span class="arrow">▸</span><span class="lbl">Réponse</span>
+  </button>
+  <div class="exo-corr">
+$7{,}409 = 7 + \dfrac{{\color{#D36740}\boldsymbol{4}}}{10} + \dfrac{{\color{#D36740}\boldsymbol{9}}}{1000}$
+</div>
+  
+</article>
+
+
+
+</section>
+
+
+</div>
+
+<div class="wk-adjacent fade-up">
+  <div>
+    
+    <a class="adj-link" href="/mabemat/6e/automatismes/semaine-06/">← Semaine précédente</a>
+    
+  </div>
+  <div>
+    
+    <a class="adj-link" href="/mabemat/6e/automatismes/semaine-08/">Semaine suivante →</a>
+    
+  </div>
+</div>
+
+<script>
+ 
+window.toggleRep = function (btn) {
+  var corr = btn.nextElementSibling;
+  if (!corr || !corr.classList.contains('exo-corr')) return;
+  var open = corr.classList.toggle('open');
+  btn.classList.toggle('open', open);
+  var lbl = btn.querySelector('.lbl');
+  if (lbl) lbl.textContent = open ? 'Masquer la réponse' : 'Réponse';
+  if (open && window.renderMathInElement) {
+    renderMathInElement(corr, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false
+    });
+  }
+};
+</script>
+
+<script>
+(function() {
+   
+  document.querySelectorAll('.exo').forEach(function(exo) {
+    var enonce = exo.querySelector('.exo-enonce');
+    var corr   = exo.querySelector('.exo-corr');
+    if (!enonce) return;
+
+    var numEl = exo.querySelector('.exo-num');
+    var num   = numEl ? numEl.textContent.trim() : '';
+    if (num) {
+      enonce.setAttribute('data-num', num);
+      if (corr) corr.setAttribute('data-num', num);
+    }
+
+    var figure     = enonce.querySelector(':scope > img, :scope > svg, :scope > p > img');
+    var corrFigure = corr ? corr.querySelector(':scope > img, :scope > svg, :scope > p > img') : null;
+    if (figure || corrFigure) exo.classList.add('has-figure');
+  });
+
+   
+  var tabsEl = document.getElementById('auto-seance-tabs');
+  var panels = document.querySelectorAll('#auto-seance-content .seance-panel');
+  if (!tabsEl || !panels.length) return;
+
+  panels.forEach(function(panel, i) {
+    var titre = panel.dataset.titre || ('Séance ' + (i + 1));
+    var btn = document.createElement('button');
+    btn.innerHTML = '<span class="tab-idx">' + titre + '</span>';
+    if (i === 0) { btn.classList.add('active'); panel.classList.add('active'); }
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('#auto-seance-tabs button').forEach(function(b) { b.classList.remove('active'); });
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      panel.classList.add('active');
+    });
+    tabsEl.appendChild(btn);
+  });
+})();
+</script>
+
+
+<script src="/mabemat/js/projection.js"></script>
+
+    </div>
+  
+  
+    <footer class="site-footer">
+  <div>MaBémat · Mme Bertail · Collège &amp; Lycée</div>
+  <div>
+    <a href="/mabemat/credits/">Ressources &amp; crédits</a>
+    &nbsp;·&nbsp;
+    <a href="/mabemat/mentions-legales/">Mentions légales</a>
+  </div>
+</footer>
+
+  
+  <script src="/mabemat/js/qcm.js"></script>
+  <script src="/mabemat/js/mode-projection.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scratchblocks@3.6.4/build/scratchblocks.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof scratchblocks !== 'undefined') {
+        scratchblocks.renderMatching('pre.blocks', {
+          style: 'scratch3',
+          languages: ['fr'],
+          scale: 0.75
+        });
+      }
+    });
+  </script>
+  <script>
+     
+    const BUILD_TS = '1791455992';
+    document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
+      const base = img.src.split('?')[0];
+      img.src = base + '?v=' + BUILD_TS;
+    });
+  </script>
+</body>
+</html>
