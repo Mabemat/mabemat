@@ -7,6 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: true
 has_qcm: false
+has_revisions: true
+lien_revisions: "revision.pdf"
 competences:
   - "Définir une suite par récurrence ou par une formule explicite"
   - "Calculer des termes d'une suite de proche en proche ou directement"
