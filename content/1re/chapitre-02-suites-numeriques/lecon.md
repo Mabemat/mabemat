@@ -264,7 +264,7 @@ Plus $n$ devient grand, plus les termes de la suite semblent devenir grand.<br>
 On dit que la suite $(u_n)$ diverge vers $+\infty$ et on note : $\underset{n\rightarrow +\infty}{\lim} u_n=+\infty$.</li>
 <li>Pour tout $n\in \N$, on considère la suite $(v_n)$ définie par $v_{n+1}=(-1)^nv_n$ et $v_0=2$. <br>
 $v_1=(-1)^0v_0=2$, $v_2=(-1)^1v_1=-2$, $v_3=(-1)^2v_2=2$, $v_4=(-1)^3v_3=-2$, $v_5=(-1)^4v_4=2$.<br>
-Plus $n$ devient grand, les termes de la suite ne semblent pas se rapprocher vers une valeur unique. <br>
+Les termes de la suite semblent alterner entre $-2$ et $2$. <br>
 On dit que la suite $(v_n)$ diverge.</li>
 </ul>
 </div>
