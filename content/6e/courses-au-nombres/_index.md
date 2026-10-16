@@ -13,49 +13,49 @@ courses:
     date: "2026-10-05"
     has_correction: true
   - num: 4
-    date: "2026-11-02"
+    date: "2026-10-16"
     has_correction: true
   - num: 5
-    date: "2026-11-16"
+    date: "2026-11-09"
     has_correction: false
   - num: 6
-    date: "2026-11-30"
+    date: "2026-11-23"
     has_correction: false
   - num: 7
-    date: "2026-12-14"
+    date: "2026-12-07"
     has_correction: false
   - num: 8
-    date: "2027-01-11"
+    date: "2027-01-04"
     has_correction: false
   - num: 9
-    date: "2027-01-25"
+    date: "2027-01-18"
     has_correction: false
   - num: 10
-    date: "2027-02-22"
+    date: "2027-02-01"
     has_correction: false
   - num: 11
-    date: "2027-03-08"
+    date: "2027-03-01"
     has_correction: false
   - num: 12
-    date: "2027-03-22"
+    date: "2027-03-15"
     has_correction: false
   - num: 13
-    date: "2027-04-19"
+    date: "2027-03-29"
     has_correction: false
   - num: 14
-    date: "2027-05-03"
+    date: "2027-04-26"
     has_correction: false
   - num: 15
-    date: "2027-05-17"
+    date: "2027-05-10"
     has_correction: false
   - num: 16
-    date: "2027-05-31"
+    date: "2027-05-24"
     has_correction: false
   - num: 17
-    date: "2027-06-14"
+    date: "2027-06-07"
     has_correction: false
   - num: 18
-    date: "2027-06-28"
+    date: "2027-06-21"
     has_correction: false
   - num: 19
     has_correction: false
