@@ -152,7 +152,7 @@ L'ensemble $S$ des solutions de l'équation $(x+2)^2=13$ est :
 
 - $S=${$-15\ ;\ 11$}
 - $S=${$-\sqrt{13}-2;-\sqrt{13}-2$}
-- $S=${$\-\sqrt{13}-2\ ;\ \sqrt{13}-2$}
+- $S=${$-\sqrt{13}-2\ ;\ \sqrt{13}-2$}
 - $S=${$-\sqrt{13}+2;\sqrt{13}+2$}
 
 
