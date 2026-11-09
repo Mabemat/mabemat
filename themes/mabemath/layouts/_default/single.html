@@ -571,9 +571,9 @@ async function runPython() {
 
   {{ with .Resources.GetMatch "correction.pdf" }}
   <a class="res-card fade-up d4 js-pin-pdf" href="#" data-pdf="{{ (. | fingerprint "md5").RelPermalink }}">
-    <div class="res-corner">&#128274; PDF</div>
+    <div class="res-corner">PDF</div>
     <div>
-      <div class="res-ico">&#128274;</div>
+      <div class="res-ico">✓</div>
       <div class="res-kind">Correction</div>
       <h3>Correction des exercices</h3>
       <p class="res-desc">Correction détaillée du TD, accessible avec le code de l'enseignante.</p>
