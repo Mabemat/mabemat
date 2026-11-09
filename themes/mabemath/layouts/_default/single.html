@@ -570,16 +570,58 @@ async function runPython() {
   {{ end }}
 
   {{ with .Resources.GetMatch "correction.pdf" }}
-  <a class="res-card fade-up d4" href="{{ (. | fingerprint "md5").RelPermalink }}" target="_blank" rel="noopener">
+  <a class="res-card fade-up d4 js-pin-pdf" href="#" data-pdf="{{ (. | fingerprint "md5").RelPermalink }}">
     <div class="res-corner">&#128274; PDF</div>
     <div>
       <div class="res-ico">&#128274;</div>
       <div class="res-kind">Correction</div>
       <h3>Correction des exercices</h3>
-      <p class="res-desc">Correction détaillée du TD. Le PDF est protégé par un code : il s'ouvrira quand votre enseignante vous l'aura donné.</p>
+      <p class="res-desc">Correction détaillée du TD, accessible avec le code de l'enseignante.</p>
     </div>
-    <div class="res-open">Ouvrir le PDF <span class="res-arrow">→</span></div>
+    <div class="res-open">Ouvrir la correction <span class="res-arrow">→</span></div>
   </a>
+  <script>
+  (function(){
+    var PIN = "{{ site.Params.projection_pin | default "0000" }}";
+    function ask(url){
+      var wd = document.createElement('div');
+      wd.className = 'proj-pin-overlay';
+      wd.innerHTML =
+        '<div class="proj-pin-box">' +
+          '<h2>Correction</h2>' +
+          '<p>Entrez le code pour ouvrir<br>la correction.</p>' +
+          '<input class="proj-pin-input" type="password" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="····">' +
+          '<div class="proj-pin-err" aria-live="polite"></div>' +
+          '<button class="proj-pin-submit" type="button">Valider</button>' +
+        '</div>';
+      document.body.appendChild(wd);
+      var inp = wd.querySelector('.proj-pin-input');
+      var err = wd.querySelector('.proj-pin-err');
+      function close(){ wd.classList.remove('open'); setTimeout(function(){ if (wd.parentNode) wd.parentNode.removeChild(wd); }, 300); }
+      function attempt(){
+        if (inp.value === PIN) {
+          var w = window.open(url, '_blank', 'noopener');
+          if (!w) { window.location.href = url; }
+          close();
+        } else {
+          inp.classList.add('error');
+          err.textContent = 'Code incorrect';
+          inp.value = '';
+          setTimeout(function(){ inp.classList.remove('error'); }, 500);
+          inp.focus();
+        }
+      }
+      wd.querySelector('.proj-pin-submit').addEventListener('click', attempt);
+      inp.addEventListener('keydown', function(e){ if (e.key === 'Enter') attempt(); });
+      wd.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+      wd.addEventListener('click', function(e){ if (e.target === wd) close(); });
+      requestAnimationFrame(function(){ wd.classList.add('open'); inp.focus(); });
+    }
+    document.querySelectorAll('.js-pin-pdf').forEach(function(a){
+      a.addEventListener('click', function(e){ e.preventDefault(); ask(a.getAttribute('data-pdf')); });
+    });
+  })();
+  </script>
   {{ end }}
   {{ if .Params.has_revisions }}
   <a class="res-card fade-up d4" href="{{ .Params.lien_revisions }}" target="_blank">

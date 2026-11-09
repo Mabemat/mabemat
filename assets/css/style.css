@@ -2624,3 +2624,55 @@ article.qcm .qcm-corr th code { text-transform: none; letter-spacing: 0; font-fa
   display: block; margin: 12px auto; max-width: 100%; height: auto;
 }
 .corr-texte .livret-fig { margin: 10px 0; }
+
+/* Dialog PIN (copie de projection.css, pour la correction protégée des chapitres) */
+.proj-pin-overlay {
+  position: fixed; inset: 0; z-index: 999;
+  display: flex; align-items: center; justify-content: center;
+  background: color-mix(in oklab, var(--ink) 50%, transparent);
+  backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s var(--ease-out);
+}
+.proj-pin-overlay.open { opacity: 1; pointer-events: auto; }
+
+.proj-pin-box {
+  background: var(--paper); border: 1px solid var(--rule);
+  border-radius: 18px; padding: 2.4rem 2.8rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1.4rem;
+  box-shadow: 0 24px 64px color-mix(in oklab, var(--ink) 18%, transparent);
+  animation: fadeUp .3s var(--ease-out) both;
+  min-width: 280px;
+}
+.proj-pin-box h2 {
+  font-family: 'Tan Nimbus', var(--font-serif); font-size: 1.25rem;
+  color: var(--ink); margin: 0; letter-spacing: -0.01em;
+}
+.proj-pin-box p {
+  font-size: .85rem; color: var(--ink-3); margin: 0; text-align: center;
+}
+.proj-pin-input {
+  font-family: var(--font-mono); font-size: 2rem; letter-spacing: .4em;
+  text-align: center; width: 7rem; padding: .5rem .8rem;
+  border: 2px solid var(--rule); border-radius: 10px;
+  background: var(--paper-2); color: var(--ink);
+  transition: border-color .2s;
+  -webkit-text-security: disc;
+}
+.proj-pin-input:focus { outline: none; border-color: var(--accent); }
+.proj-pin-input.error { border-color: #e05; animation: pin-shake .4s; }
+@keyframes pin-shake {
+  0%,100%{transform:translateX(0)} 20%{transform:translateX(-6px)}
+  40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(4px)}
+}
+.proj-pin-err {
+  font-size: .8rem; color: #e05; height: 1em;
+  transition: opacity .2s;
+}
+.proj-pin-submit {
+  font-family: var(--font-mono); font-size: .85rem; letter-spacing: .06em;
+  padding: .6rem 1.6rem; border-radius: 999px; cursor: pointer;
+  background: var(--accent); color: #fff; border: none;
+  transition: opacity .2s, transform .15s;
+}
+.proj-pin-submit:hover { opacity: .88; transform: translateY(-1px); }
