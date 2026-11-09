@@ -569,6 +569,18 @@ async function runPython() {
   </a>
   {{ end }}
 
+  {{ with .Resources.GetMatch "correction.pdf" }}
+  <a class="res-card fade-up d4" href="{{ (. | fingerprint "md5").RelPermalink }}" target="_blank" rel="noopener">
+    <div class="res-corner">&#128274; PDF</div>
+    <div>
+      <div class="res-ico">&#128274;</div>
+      <div class="res-kind">Correction</div>
+      <h3>Correction des exercices</h3>
+      <p class="res-desc">Correction détaillée du TD. Le PDF est protégé par un code : il s'ouvrira quand votre enseignante vous l'aura donné.</p>
+    </div>
+    <div class="res-open">Ouvrir le PDF <span class="res-arrow">→</span></div>
+  </a>
+  {{ end }}
   {{ if .Params.has_revisions }}
   <a class="res-card fade-up d4" href="{{ .Params.lien_revisions }}" target="_blank">
     <div class="res-corner">PDF</div>
