@@ -17,7 +17,7 @@ courses:
     has_correction: true
   - num: 5
     date: "2026-11-09"
-    has_correction: false
+    has_correction: true
   - num: 6
     date: "2026-11-23"
     has_correction: false
