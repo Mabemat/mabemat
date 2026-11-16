@@ -6,24 +6,10 @@ auto_number: 3
 weight: 3
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 3 — Fractions, formules et fonctions affines
-</div>
-
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-On considère $A=\dfrac{4}{5-\dfrac{2}{3}}$.
-
- $A$ est égal à :
-
-- $\dfrac{12}{13}$
-- $\dfrac{52}{3}$
-- $-\dfrac{52}{3}$
-- $\dfrac{13}{3}$
-
+{{< auto1-exo numero="01" >}}
+Calculer $A=\dfrac{4}{5-\dfrac{2}{3}}$ et donner le résultat sous forme de fraction irréductible.
 ---CORR---
 $\begin{aligned}
 A &= \dfrac{4}{5-\dfrac{2}{3}} \\
@@ -32,152 +18,80 @@ A &= \dfrac{4}{5-\dfrac{2}{3}} \\
 &= 4 \times \dfrac{3}{13} \\
 &= \dfrac{12}{13}
 \end{aligned}$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="02" >}}
+Soient $K$, $L$, $I$ et $J$ quatre nombres (avec $J$ non nul) vérifiant l'égalité $K=\dfrac{L+I}{J}$.
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Soient $K$, $L$, $I$ et $J$ quatre nombres (avec $J$ non nul) vérifiant l'égalité : $K = \dfrac{L + I}{J}$.
-
- Une expression de $L$ en fonction de $K$, $I$ et $J$ est :
-
-- $L = J \times K - I$
-- $L = \dfrac{K - I}{J}$
-- $L = J \times K + I$
-- $L = K - I \times J$
-
+Exprimer $L$ en fonction de $K$, $I$ et $J$.
 ---CORR---
 On isole $L$ dans un membre de l'égalité :
 
- $\begin{aligned}
-        K &= \dfrac{L + I}{J}\\
-        K \times J &= L + I\\
-        K \times J - I &= L
-        \end{aligned}$
+$\begin{aligned}
+K &= \dfrac{L + I}{J}\\
+K \times J &= L + I\\
+K \times J - I &= L
+\end{aligned}$
 
 Une expression de $L$ en fonction de $K$, $I$ et $J$ est $L = J \times K - I$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Voici la représentation graphique d'une fonction $f$ : <br>
+{{< auto1-exo numero="03" >}}
+Voici la représentation graphique d'une fonction $f$.
 
 <img src="graphe_f01-2_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-<br>
-L'ensemble des antécédents de $2$ est :
-
-- {$-1\ ;\ 3$}
-- {$-6\ ;\ -1$}
-- {$-6\ ;\ -1\ ;\ 4$}
-- {$-6\ ;\ -1\ ;\ 3$}
-
+Déterminer graphiquement l'ensemble des antécédents de $2$ par $f$.
 ---CORR---
 Déterminer les antécédents de $2$ revient à déterminer les nombres qui ont pour image $2$.
 
- On part de $2$ sur l'axe des ordonnées et on lit les antécédents (éventuels) sur l'axe des abscisses.
+On part de $2$ sur l'axe des ordonnées et on lit les antécédents (éventuels) sur l'axe des abscisses.
 
 On en trouve $3$ : $-6\ ;\ -1\ ;\ 3$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Augmenter une valeur de $40~\%$ revient à la multiplier par :
-
-- $1{,}04$
-- $1{,}4$
-- $0{,}4$
-- $0{,}6$
-
+{{< auto1-exo numero="04" >}}
+Par quel nombre faut-il multiplier une valeur pour l'augmenter de $40~\%$ ?
 ---CORR---
 Augmenter de $40~\%$ revient à multiplier par $1+\dfrac{40}{100}$.
 
- Ainsi, le coefficient multiplicateur associé à une augmentation de $40~\%$ est $1+0{,}4$, soit $1{,}4$.
+Ainsi, le coefficient multiplicateur associé à une augmentation de $40~\%$ est $1+0{,}4$, soit $1{,}4$.
+{{< /auto1-exo >}}
 
- 
-La bonne réponse est la réponse <span class="rep">B</span>.
+{{< auto1-exo numero="05" >}}
+Le plan est muni d'un repère orthogonal. On considère les points $A(-3\ ;\ 2)$ et $E(-10\ ;\ -8)$.
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Le plan est muni d’un repère orthogonal. 
-
- On note $d$ la droite passant par les points $A(-3\ ;\ 2)$ et $E(-10\ ;\ -8)$.<br>
-
- Le coefficient directeur $m$ de la droite $(AE)$ est égal à :
-
-- $-\dfrac{7}{10}$
-- $\dfrac{10}{7}$
-- $\dfrac{6}{13}$
-- $\dfrac{7}{10}$
-
+Calculer le coefficient directeur $m$ de la droite $(AE)$.
 ---CORR---
 Le coefficient directeur $m$ de la droite $(AE)$ est donnée par la formule : $\dfrac{y_{E}-y_{A}}{x_{E}-x_{A}}$.
 
- $\begin{aligned}
-    m&=\dfrac{-8-2}{-10-(-3)}\\
-    &= \dfrac{-10}{-7}\\
-    &=\dfrac{10}{7}
-    \end{aligned}$
+$\begin{aligned}
+m&=\dfrac{-8-2}{-10-(-3)}\\
+&= \dfrac{-10}{-7}\\
+&=\dfrac{10}{7}
+\end{aligned}$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
+{{< auto1-exo numero="06" >}}
+Soit $f$ la fonction définie par $f(x)=\dfrac{2}{3}x-4$.
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Soit $f$ la fonction définie par : $f(x)=\dfrac{2}{3}x-4$.
-
- L'image de $2$ par la fonction $f$ est :
-
-- $-\dfrac{8}{3}$
-- $-\dfrac{4}{3}$
-- $-\dfrac{10}{3}$
-- $0$
-
+Calculer l'image de $2$ par $f$.
 ---CORR---
 Comme $f(x)=\dfrac{2}{3}x-4$, on a :
 
- $\begin{aligned}
-        f(2)&=\dfrac{2}{3}\times 2-4\\
-        &=\dfrac{4}{3}-4\\
-        &=-\dfrac{8}{3}
-        \end{aligned}$
-
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
+$\begin{aligned}
+f(2)&=\dfrac{2}{3}\times 2-4\\
+&=\dfrac{4}{3}-4\\
+&=-\dfrac{8}{3}
+\end{aligned}$
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 3 — Fractions, formules et fonctions affines
-</div>
-
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-On considère $A=\dfrac{2}{3-\dfrac{2}{5}}$.
-
- $A$ est égal à :
-
-- $\dfrac{10}{13}$
-- $\dfrac{26}{5}$
-- $10$
-- $\dfrac{13}{5}$
-
-
+{{< auto1-exo numero="01" >}}
+Calculer $A=\dfrac{2}{3-\dfrac{2}{5}}$ et donner le résultat sous forme de fraction irréductible.
 ---CORR---
 $$
 \begin{aligned}
@@ -188,23 +102,12 @@ A &= \dfrac{2}{3-\dfrac{2}{5}} \\
 &= \boldsymbol{\dfrac{10}{13}}
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="02" >}}
+Soient $I$, $K$, $L$ et $J$ quatre nombres (avec $J$ non nul) vérifiant l'égalité $I=K-LJ$.
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Soient $I$, $K$, $L$ et $J$ quatre nombres (avec $J$ non nul) vérifiant l'égalité : $I = K - LJ$.
-
- Une expression de $L$ en fonction de $I$, $K$ et $J$ est :
-
-- $L = \dfrac{K + I}{J}$
-- $L = \dfrac{K - I}{J}$
-- $L = J(K - I)$
-- $L = \dfrac{I - K}{J}$
-
-
+Exprimer $L$ en fonction de $I$, $K$ et $J$.
 ---CORR---
 On isole $L$ dans un membre de l'égalité :<br>
 
@@ -217,68 +120,36 @@ I - K &= -LJ\\
 \end{aligned}
 $$
 
-Une expression de $L$ en fonction de $I$, $K$ et $J$ est $\boldsymbol{L = \dfrac{K - I}{J}}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Une expression de $L$ en fonction de $I$, $K$ et $J$ est $\boldsymbol{L = \dfrac{K - I}{J}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-Voici la représentation graphique d'une fonction $f$ : 
+{{< auto1-exo numero="03" >}}
+Voici la représentation graphique d'une fonction $f$.
 
 <img src="graphe_f01-2_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-L'ensemble des antécédents de $0$ est :
-
-- {$1\ ;\ 6$}
-- {$-1\ ;\ 1\ ;\ -2$}
-- {$-1\ ;\ 1\ ;\ 6$}
-- {$-1\ ;\ 1$}
-
-
+Déterminer graphiquement l'ensemble des antécédents de $0$ par $f$.
 ---CORR---
 Déterminer les antécédents de $0$ revient à déterminer les nombres qui ont pour image $0$.<br>
 On part de $0$ sur l'axe des ordonnées et on lit les antécédents (éventuels) sur l'axe des abscisses.<br>
-On en trouve $3$ : $\boldsymbol{-1\,;\,1\,;\,6}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+On en trouve $3$ : $\boldsymbol{-1\,;\,1\,;\,6}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Augmenter une valeur de $90~\%$ revient à la multiplier par :
-
-- $1{,}09$
-- $1{,}9$
-- $0{,}9$
-- $0{,}1$
-
-
+{{< auto1-exo numero="04" >}}
+Par quel nombre faut-il multiplier une valeur pour l'augmenter de $90~\%$ ?
 ---CORR---
 Augmenter de $90~\%$ revient à multiplier par $1+\dfrac{90}{100}$.<br>
 Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $1+0{,}9$, soit $1{,}9$.
 
 Autre formulation : <br>
 Augmenter de $90~\%$ une valeur revient à en prendre $190~\%$ car $100~\% + 90 ~\%=190~\%$.<br>
-Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $\dfrac{190}{100}$ soit $\boldsymbol{1{,}9}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Ainsi, le coefficient multiplicateur associé à une augmentation de $90~\%$ est $\dfrac{190}{100}$ soit $\boldsymbol{1{,}9}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+Le plan est muni d'un repère orthogonal. On considère les points $C(-7\ ;\ 5)$ et $F(4\ ;\ -3)$.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Le plan est muni d’un repère orthogonal. 
-
- On note $d$ la droite passant par les points $C(-7\ ;\ 5)$ et $F(4\ ;\ -3)$.
-
- Le coefficient directeur $m$ de la droite $(CF)$ est égal à :
-
-- $-\dfrac{11}{8}$
-- $-\dfrac{8}{11}$
-- $\dfrac{11}{8}$
-- $-\dfrac{2}{3}$
-
-
+Calculer le coefficient directeur $m$ de la droite $(CF)$.
 ---CORR---
 Le coefficient directeur $m$ de la droite  $(CF)$ est donnée par la formule : $\dfrac{y_{F}-y_{C}}{x_{F}-x_{C}}$.<br>
 
@@ -289,23 +160,12 @@ m&=\dfrac{-3-5}{4-(-7)}\\
 &=\boldsymbol{-\dfrac{8}{11}}
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
+{{< auto1-exo numero="06" >}}
+Soit $p$ la fonction définie par $p(x)=\dfrac{5}{3}x-4$.
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Soit $p$ la fonction définie par : $p(x)=\dfrac{5}{3}x-4$.
-
- L'image de $2$ par la fonction $p$ est :
-
-- $6$
-- $-\dfrac{2}{3}$
-- $-\dfrac{7}{3}$
-- $-\dfrac{1}{3}$
-
-
+Calculer l'image de $2$ par $p$.
 ---CORR---
 Comme $p(x)=\dfrac{5}{3}x-4$, on a :<br>
 
@@ -316,9 +176,6 @@ p(2)&=\dfrac{5}{3}\times 2-4\\
 &=\boldsymbol{-\dfrac{2}{3}}
 \end{aligned}
 $$
-
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>

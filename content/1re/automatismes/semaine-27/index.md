@@ -6,43 +6,20 @@ auto_number: 27
 weight: 27
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 27 — Équations, fonctions et pourcentages
-</div>
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-La solution de l'équation $\dfrac{x}{9}=0$ est :
-
-- $x=\dfrac{1}{9}$
-- $x=-\dfrac{1}{9}$
-- $x=-9$
-- $x=0$
-
+{{< auto1-exo numero="01" >}}
+Résoudre l'équation $\dfrac{x}{9}=0$.
 ---CORR---
 On multiplie par $9$ chacun des deux membres de l'équation pour obtenir $x=0$.<br>
 C'est bien $0\div 9$ qui est égal à $0$.<br>
-Ainsi, la solution de l'équation est **0**.<br>
+Ainsi, la solution de l'équation est **0**.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="02" >}}
+Dans une salle de sport, on paie chaque mois un abonnement, puis un tarif fixe pour chaque séance. Un client a payé $21$ euros pour $2$ séances un mois, et $33$ euros pour $4$ séances le mois suivant.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Pour s'entraîner dans une salle de sport, on règle chaque mois un abonnement pour une carte d'adhérent.<br>
-Cette carte donne droit à un tarif préférentiel pour chaque séance.<br>
-Un client ne se souvient pas du montant du forfait mensuel ni du tarif préférentiel, mais il a retrouvé ses deux derniers tickets de caisse.<br>
-Le premier ticket indique qu'il a payé $21$ euros pour $2$ séances d'entraînement.<br>
-Le second ticket indique qu'il a payé $33$ euros pour $4$ séances d'entraînement.<br>
 Quel est le montant de l'abonnement mensuel ?
-
-- $4$ €
-- $9$ €
-- $10$ €
-- $6$ €
-
 ---CORR---
 On note $a$ le montant de l'abonnement mensuel et $p$ le prix d'une séance.<br>
 
@@ -58,20 +35,13 @@ Donc le montant pour $1$ séance est : $p = 6$ €.<br>
 On peut alors calculer le montant de l'abonnement mensuel :
 $a = 21 - 2 \times 6 = 21 - 12 = 9$ €.<br>
 
-Le montant de l'abonnement mensuel est donc de **9 €**.<br>
+Le montant de l'abonnement mensuel est donc de **9 €**.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="03" >}}
+On considère $A=100+0{,}1+\dfrac{1}{1\,000}$.
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-On considère $A = 100 + 0{,}1 + \dfrac{1}{1\,000}$. On a :
-
-- $A = \dfrac{100\,010}{1\,000}$
-- $A = 101$
-- $A = \dfrac{100\,101}{1\,000}$
-- $A = 100{,}2$
-
+Écrire $A$ sous la forme d'une fraction de dénominateur $1\,000$.
 ---CORR---
 On a :
 $$\begin{aligned}
@@ -79,44 +49,26 @@ A &= 100 + 0{,}1 + \dfrac{1}{1\,000}\\
 &= \dfrac{100\,000}{1\,000} + \dfrac{100}{1\,000} + \dfrac{1}{1\,000}\\
 &= \dfrac{100\,101}{1\,000}
 \end{aligned}$$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="04" >}}
+La parabole $\mathscr{P}$ ci-dessous représente une fonction $x\longmapsto a(x-x_1)(x-x_2)$.
 
-{{< qcm correct="0" type="auto" >}}
----Q---
-On a représenté ci-contre une parabole $\mathscr{P}$.<br>
+<img src="graphe_f02_14.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:300px">
 
-Une seule des quatre fonctions ci-dessous est susceptible d'être représentée par la parabole $\mathscr{P}$. Laquelle ?
-
-<img src="graphe_f02_14.svg" alt="Graphe de la parabole" style="display:block;margin:1rem auto;max-width:360px">
-
-- $x\longmapsto -0{,}8(x+2)(x+4)$
-- $x\longmapsto -0{,}8(x-2)(x+4)$
-- $x\longmapsto 0{,}8(x+2)(x+4)$
-- $x\longmapsto 0{,}8(x+2)(x-4)$
-
+Donner le signe de $a$, de $x_1$ et de $x_2$.
 ---CORR---
-Les paraboles proposées ont des équations de la forme $y=a(x-x_1)(x-x_2)$ où $x_1$ et $x_2$ sont les racines.<br>
+Les fonctions considérées ont des expressions de la forme $y=a(x-x_1)(x-x_2)$ où $x_1$ et $x_2$ sont les racines.<br>
 
 La parabole $\mathscr{P}$ a les bras tournés vers le bas, on en déduit que $a < 0$.<br>
 
-Les racines de la parabole (intersections avec l'axe des abscisses) sont toutes les deux négatives.<br>
+Les racines de la parabole (intersections avec l'axe des abscisses) sont toutes les deux négatives.
+{{< /auto1-exo >}}
 
-On en déduit que la seule fonction susceptible de représenter $\mathscr{P}$ est : $x\longmapsto -0{,}8(x+2)(x+4)$.<br>
+{{< auto1-exo numero="05" >}}
+Lequel de ces nombres est le plus grand ?
 
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Parmi les nombres suivants, lequel est le plus grand ?
-
-- $10\,$ % de $190$
-- $25\,$ % de $72$
-- $5\,$ % de $390$
-- $20\,$ % de $115$
-
+$$10\ \%\text{ de }190\ ;\quad 25\ \%\text{ de }72\ ;\quad 5\ \%\text{ de }390\ ;\quad 20\ \%\text{ de }115$$
 ---CORR---
 Prendre $10\,$ % d'une valeur revient à la diviser par $10$, donc $10\,$ % de $190 = 19$.<br>
 
@@ -126,25 +78,16 @@ Prendre $5\,$ % d'une valeur revient à en prendre la moitié de $10\,$ %, donc 
 
 Prendre $20\,$ % d'une valeur revient à en prendre deux fois $10\,$ %, donc $20\,$ % de $115 = 2\times 11{,}5 = 23$.<br>
 
-Le plus grand résultat est donc donné par **20 % de 115** $= 23$.<br>
+Le plus grand résultat est donc donné par **20 % de 115** $= 23$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="06" >}}
+Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur manquante dans le tableau ci-dessous.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-Les valeurs de $y$ sont proportionnelles à celles de $x$. <br>Déterminer la valeur manquante (?) dans le tableau ci-dessous.
-
-<table style="border-collapse:collapse;margin:0.7rem 0;text-align:center">
+<table style="border-collapse:collapse;margin:0.7rem auto;text-align:center">
 <tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$x$</td><td style="border:1px solid #888;padding:4px 14px">$6$</td><td style="border:1px solid #888;padding:4px 14px">$50$</td></tr>
 <tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$y$</td><td style="border:1px solid #888;padding:4px 14px">$60$</td><td style="border:1px solid #888;padding:4px 14px">$?$</td></tr>
 </table>
-
-- $5$
-- $7{,}2$
-- $110$
-- $500$
-
 ---CORR---
 On a $y = k\times x$.<br>
 
@@ -153,51 +96,24 @@ On a $? = 10\times 50 = \mathbf{500}$.<br>
 
 *Méthode 2 – les produits en croix sont égaux* : $6 \times ? = 50\times 60$, donc $? = \dfrac{50\times 60}{6} = \mathbf{500}$.<br>
 
-Vérification : $6\times 500 = 3\,000$ et $50\times 60 = 3\,000$. ✓<br>
-
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+Vérification : $6\times 500 = 3\,000$ et $50\times 60 = 3\,000$. ✓
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 27 — Équations, fonctions et pourcentages
-</div>
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-La solution de l'équation $\dfrac{-9}{x}=-9$ est :
-
-- $x=9$
-- $x=\dfrac{1}{9}$
-- $x=1$
-- $x=-9$
-
-
+{{< auto1-exo numero="01" >}}
+Résoudre l'équation $\dfrac{-9}{x}=-9$.
 ---CORR---
 Le quotient $\dfrac{-9}{x}$ est égal à $-9$, lorsque son  dénominateur est égal à $1$.<br>
-Ainsi, la solution de l'équation est $\boldsymbol{1}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+Ainsi, la solution de l'équation est $\boldsymbol{1}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="02" >}}
+Dans une salle de sport, on paie chaque mois un abonnement, puis un tarif fixe pour chaque séance. Un client a payé $20$ euros pour $2$ séances un mois, et $32$ euros pour $4$ séances le mois suivant.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-Pour s'entraîner dans une salle de sport, on règle chaque mois un abonnement pour une carte d'adhérent.<br>
-Cette carte donne droit à un tarif préférentiel pour chaque séance.<br>
-Un client ne se souvient pas du montant du forfait mensuel ni du tarif préférentiel, mais il a retrouvé ses deux derniers tickets de caisse.<br>
-Le premier ticket indique qu'il a payé $20$ euros pour $2$ séances d'entraînement.<br>
-Le second ticket indique qu'il a payé $32$ euros pour $4$ séances d'entraînement.<br>
 Quel est le montant de l'abonnement mensuel ?
-
-- $9$ €
-- $4$ €
-- $6$ €
-- $8$ €
-
-
 ---CORR---
 On note $a$ le montant de l'abonnement mensuel et $p$ le prix d'une séance.<br>
 D'après le premier ticket : $a + 2 \times p = 20$ soit $a + 2p = 20$.<br>
@@ -207,21 +123,11 @@ $4 p - 2  p = 12$ soit $2p=12$.<br>
 Donc le montant pour $1$ séance  est : $p = 6$\,€.<br>
 On peut alors calculer le montant de l'abonnement mensuel :<br>
 $a = 20 - 2 \times 6 = 20 - 12 = 8$\,€.<br>
-Le montant de l'abonnement mensuel est donc de $\boldsymbol{8\,\,\text{€}}$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+Le montant de l'abonnement mensuel est donc de $\boldsymbol{8\,\,\text{€}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-On considère $A = 100 + 0{,}001 + \dfrac{1}{1\,000}$. On a :
-
-- $A = 100{,}002$
-- $A = \dfrac{100\,001}{1\,000}$
-- $A = 100{,}011$
-- $A = \dfrac{100\,010}{1\,000}$
-
-
+{{< auto1-exo numero="03" >}}
+Donner l'écriture décimale de $A=100+0{,}001+\dfrac{1}{1\,000}$.
 ---CORR---
 On a : <br>
 
@@ -232,44 +138,25 @@ A &= 100 + 0{,}001 + \dfrac{1}{1\,000}\\
 & = \boldsymbol{100{,}002}
 \end{aligned}
 $$
-.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="04" >}}
+La parabole $\mathscr{P}$ ci-dessous représente une fonction $x\longmapsto a(x-x_1)(x-x_2)$.
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-On a représenté ci-contre une parabole $\mathscr{P}$.<br>
+<img src="graphe_f02_14_devoir.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:300px">
 
-Une seule des quatre fonctions ci-dessous est susceptible d'être représentée par la parabole $\mathscr{P}$. Laquelle ?
-
-<img src="graphe_f02_14_devoir.svg" alt="Graphe de la parabole" style="display:block;margin:1rem auto;max-width:360px">
-
-- $x\longmapsto 0{,}6(x+2)(x+5)$
-- $x\longmapsto -0{,}6(x-2)(x+5)$
-- $x\longmapsto -0{,}6(x+2)(x+5)$
-- $x\longmapsto 0{,}6(x+2)(x-5)$
-
-
+Donner le signe de $a$, de $x_1$ et de $x_2$.
 ---CORR---
-Les paraboles proposées ont des équations de la forme $y=a(x-x_1)(x-x_2)$ où $x_1$ et $x_2$ sont les racines.<br>
+Les fonctions considérées ont des expressions de la forme $y=a(x-x_1)(x-x_2)$ où $x_1$ et $x_2$ sont les racines.<br>
 La parabole $\mathcal{P}$ a "les bras" tournés vers le bas, on en déduit que $a < 0$.<br>
-Les racines de la parabole (intersections avec l'axe des abscisses) sont toutes les deux négatives.<br>
-On en déduit que la seule fonction susceptible de représenter $\mathcal{P}$ est : $\boldsymbol{x\longmapsto -0{,}6(x+2)(x+5)}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+Les racines de la parabole (intersections avec l'axe des abscisses) sont toutes les deux négatives.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+Lequel de ces nombres est le plus grand ?
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-Parmi les nombres suivants, lequel est le plus grand ?
-
-- $20\,$ % de $82$
-- $5\,$ % de $330$
-- $25\,$ % de $72$
-- $10\,$ % de $160$
-
-
+$$20\ \%\text{ de }82\ ;\quad 5\ \%\text{ de }330\ ;\quad 25\ \%\text{ de }72\ ;\quad 10\ \%\text{ de }160$$
 ---CORR---
 • Prendre $25\,\%$ d'une valeur revient à la diviser par $4$.<br>
 • Prendre $10\,\%$ d'une valeur revient à la diviser par $10$.<br>
@@ -279,27 +166,16 @@ $25\,\%$ de $72=\dfrac{72}{4}=18$<br>
 $10\,\%$ de $160=\dfrac{160}{10}=16$<br>
 $5\,\%$ de $330=\dfrac{1}{2}\times \dfrac{330}{10}=\dfrac{33}{2}=16{,}5$<br>
 $20\,\%$ de $82=2\times \dfrac{82}{10}=2\times 8{,}2=16{,}4$<br>
-Le plus grand résultat est donc donné par le calcul $\boldsymbol{25\,\% \textbf{ de } 72}$ $ =18$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+Le plus grand résultat est donc donné par le calcul $\boldsymbol{25\,\% \textbf{ de } 72}$ $ =18$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="06" >}}
+Les valeurs de $y$ sont proportionnelles à celles de $x$. Déterminer la valeur manquante dans le tableau ci-dessous.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Les valeurs de $y$ sont proportionnelles à celles de $x$. <br>
-Déterminer la valeur manquante (?) dans le tableau ci-dessous.
-
-<table style="border-collapse:collapse;margin:0.7rem 0;text-align:center">
+<table style="border-collapse:collapse;margin:0.7rem auto;text-align:center">
 <tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$x$</td><td style="border:1px solid #888;padding:4px 14px">$8$</td><td style="border:1px solid #888;padding:4px 14px">$30$</td></tr>
 <tr><td style="border:1px solid #888;padding:4px 14px;background:#ccc;font-weight:bold">$y$</td><td style="border:1px solid #888;padding:4px 14px">$40$</td><td style="border:1px solid #888;padding:4px 14px">$?$</td></tr>
 </table>
-
-- $10{,}7$
-- $150$
-- $6$
-- $70$
-
-
 ---CORR---
 On a $y = k\times x$.<br>
 *Méthode 1 – avec le coefficient de proportionnalité* :<br>
@@ -307,10 +183,7 @@ On calcule $k$ avec une colonne connue : $k = \dfrac{40}{8} = 5$.<br>
 On a $? = k\times 30 = 5\times 30 = \boldsymbol{150}$<br>
 *Méthode 2 – les produits en croix sont égaux* :<br>
 On a $8 \times ? = 30\times 40$, donc $\,? = \dfrac{30\times 40}{8} = \boldsymbol{150}$.<br>
-Vérification : $8\times 150 = 1\,200 \text{ et } 30\times 40 = 1\,200$<br>
-*Astuce : sans calculatrice*, un ordre de grandeur du produit en croix à obtenir permet souvent de déterminer la seule proposition qui permet de l'approcher.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
+Vérification : $8\times 150 = 1\,200 \text{ et } 30\times 40 = 1\,200$
+{{< /auto1-exo >}}
 
 </div>

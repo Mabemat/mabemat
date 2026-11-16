@@ -6,256 +6,152 @@ auto_number: 11
 weight: 11
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 11 — Expressions algébriques et fonctions
-</div>
+{{< auto1-exo numero="01" >}}
+On additionne un nombre réel $x$ avec son triple, puis on élève le résultat au carré.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-On additionne un nombre réel $x$ avec son triple, puis on élève le résultat au carré. 
-On obtient :
-
-- $x + (3x)^2$
-- $4x^2$
-- $4x + x^2$
-- $(4x)^2$
-
+Exprimer le résultat en fonction de $x$.
 ---CORR---
 On additionne d'abord $x$ avec son triple $3x$ : $x + 3x = 4x$.
 
- Puis on élève le résultat au carré : $\boldsymbol{(4x)^2}$.
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+Puis on élève le résultat au carré : $\boldsymbol{(4x)^2}$.
+{{< /auto1-exo >}}
 
-{{< qcm correct="0" type="auto" >}}
----Q---
-On considère une fonction $f$ définie sur $\mathbb{R}$ dont le tableau de signes est donné ci-dessous. 
+{{< auto1-exo numero="02" >}}
+Une fonction affine $f$, de coefficient directeur $3$, a le tableau de signes ci-dessous.
 
-<img src="graphe_c14_3.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<img src="graphe_c14_3.svg" alt="Tableau de signes" style="display:block;margin:1rem auto;max-width:360px">
 
- Parmi les quatre expressions proposées pour la fonction $f$, une seule est possible.
-
-- $f(x)=3x-3$
-- $f(x)=x$
-- $f(x)=2x+2$
-- $f(x)=-4x+4$
-
+Donner l'expression de $f(x)$.
 ---CORR---
-Parmi les réponses proposées, on cherche la fonction affine qui s'annule en $1$ et dont le coefficient directeur est positif. En effet, 
- la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d'après le tableau de signes.
+D'après le tableau de signes, la fonction $f$ s'annule en $1$.
 
- Il s'agit de la fonction $f$ définie par $\boldsymbol{f(x)=3x-3}$.
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
+Comme $f$ est affine de coefficient directeur $3$, on a $f(x)=3x+p$, et $f(1)=0$ donne $3\times 1+p=0$, soit $p=-3$.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-L'ensemble des solutions $\mathscr{S}$ de l'équation $2x^2+3x-5=-5$ est :
+On vérifie que le coefficient directeur $3$ est bien positif : $f$ est négative puis positive, comme dans le tableau.
 
-- $\mathscr{S}=\left\lbrace-\dfrac{3}{2}\right\rbrace$
-- $\mathscr{S}=\left\lbrace-\dfrac{2}{3}\ ;\ 0\right\rbrace$
-- $\mathscr{S}=\left\lbrace0\ ;\ \dfrac{3}{2}\right\rbrace$
-- $\mathscr{S}=\left\lbrace-\dfrac{3}{2}\ ;\ 0\right\rbrace$
+Ainsi $\boldsymbol{f(x)=3x-3}$.
+{{< /auto1-exo >}}
 
+{{< auto1-exo numero="03" >}}
+Résoudre dans $\mathbb{R}$ l'équation $2x^2+3x-5=-5$.
 ---CORR---
 L'équation $2x^2+3x-5=-5$ s'écrit $2x^2+3x=0$.
 
- En factorisant le premier membre (facteur commun $x$), on obtient $x(2x+3)=0$.
+En factorisant le premier membre (facteur commun $x$), on obtient $x(2x+3)=0$.
 
- On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{-3}{2}=-\dfrac{3}{2}$.
+On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{-3}{2}=-\dfrac{3}{2}$.
 
- $\mathscr{S}=\boldsymbol{\lbrace 0;-\dfrac{3}{2}\rbrace}$
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+$\mathscr{S}=\boldsymbol{\lbrace 0;-\dfrac{3}{2}\rbrace}$
+{{< /auto1-exo >}}
 
-{{< qcm correct="2" type="auto" layout="grid">}}
----Q---
+{{< auto1-exo numero="04" >}}
 On donne les représentations graphiques de deux fonctions affines $g$ (en vert) et $h$ (en rouge) définies sur $\mathbb{R}$.
 
- <img src="graphe_f05_1.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<img src="graphe_f05_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur $\mathbb{R}$ est :
-
-- <img src="graphe_f05_1_optA.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_1_optB.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_1_optC.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_1_optD.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=g(x)\times h(x)$.
 ---CORR---
 La fonction $g$ s'annule en $-4$ et la fonction $h$ s'annule en $3$.
 
- Quand la droite est en-dessous de l'axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.
+Quand la droite est en-dessous de l'axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.
 
- On en déduit le tableau de signes de leur produit :<img src="graphe_f05_1_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+On en déduit le tableau de signes de leur produit :<img src="graphe_f05_1_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+On donne la représentation graphique d'une fonction $f$.
 
-{{< qcm correct="0" type="auto" >}}
----Q---
-On donne la représentation graphique d'une fonction $f$. 
+<img src="graphe_f04_2.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-<img src="graphe_f04_2.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
-L'équation $f(x)=3$ a :
-
-- $3$ solutions
-- $1$ solution
-- $0$ solution
-- $2$ solutions
-
+Combien de solutions l'équation $f(x)=3$ admet-elle ?
 ---CORR---
 Le nombre de solutions de l'équation $f(x)=3$ est le nombre d'antécédents de $3$ par la fonction $f$.
 
- Puisque la droite d'équation $y = 3$ (droite hrizontale) coupe $3$ fois la courbe, on en déduit que l'équation $f(x)=3$ admet $\boldsymbol{3}$ **solutions**.
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
+Puisque la droite d'équation $y = 3$ (droite hrizontale) coupe $3$ fois la courbe, on en déduit que l'équation $f(x)=3$ admet $\boldsymbol{3}$ **solutions**.
+{{< /auto1-exo >}}
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-<img src="graphe_f07_4.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L'équation réduite de cette droite est :
+{{< auto1-exo numero="06" >}}
+Donner l'équation réduite de la droite ci-dessous.
 
-- $y=4$
-- $y= x +4$
-- $y= 4x-4$
-- $y= -x+4$
-
+<img src="graphe_f07_4.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 ---CORR---
-Le coefficient directeur $m$ de la droite $(AB)$ est donné par : 
+Le coefficient directeur $m$ de la droite $(AB)$ est donné par :
 
 $m=\dfrac{\boldsymbol{2}}{\boldsymbol{2}}=1$. <br>
 Son ordonnée à l'origine est $4$, ainsi l'équation réduite de la droite est $\boldsymbol{y=x+4}$.
 <img src="graphe_f07_4_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
-La bonne réponse est la réponse <span class="rep">B</span>.
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 11 — Expressions algébriques et fonctions
-</div>
+{{< auto1-exo numero="01" >}}
+On additionne un nombre réel $x$, son double et son carré.
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-On additionne un nombre réel $x$, avec son double et son carré. 
-Le résultat est égal à :
-
-- $1 + 2x^2$
-- $(x + 2x)^2$
-- $3x + x^2$
-- $x + (2x)^2$
-
+Exprimer le résultat en fonction de $x$.
 ---CORR---
 On additionne un nombre réel $x$, avec son double $2x$ et son carré $x^2$.<br>
-On obtient : $x + 2x + x^2 = \boldsymbol{3x + x^2}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+On obtient : $x + 2x + x^2 = \boldsymbol{3x + x^2}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="02" >}}
+Une fonction affine $f$, de coefficient directeur $1$, a le tableau de signes ci-dessous.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-On considère une fonction $f$ définie sur $\mathbb{R}$ dont le tableau de signes est donné ci-dessous. 
+<img src="graphe_c14_3_devoir.svg" alt="Tableau de signes" style="display:block;margin:1rem auto;max-width:360px">
 
-<img src="graphe_c14_3_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
- Parmi les quatre expressions proposées pour la fonction $f$, une seule est possible.
-
-- $f(x)=2x+4$
-- $f(x)=x-2$
-- $f(x)=2x$
-- $f(x)=-4x+8$
-
+Donner l'expression de $f(x)$.
 ---CORR---
-Parmi les réponses proposées, on cherche la fonction affine qui s'annule en $2$ et dont le coefficient directeur est positif. En effet,
-la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d'après le tableau de signes.<br>
-Il s'agit de la fonction $f$ définie par $\boldsymbol{f(x)=x-2}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+D'après le tableau de signes, la fonction $f$ s'annule en $2$.<br>
+Comme $f$ est affine de coefficient directeur $1$, on a $f(x)=x+p$, et $f(2)=0$ donne $2+p=0$, soit $p=-2$.<br>
+On vérifie que le coefficient directeur $1$ est bien positif : $f$ est négative puis positive, comme dans le tableau.<br>
+Ainsi $\boldsymbol{f(x)=x-2}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-L'ensemble des solutions $\mathscr{S}$ de l'équation $-7x^2-3x-8=-8$ est :
-
-- $\mathscr{S}=\left\lbrace-\dfrac{3}{7}\right\rbrace$
-- $\mathscr{S}=\left\lbrace-\dfrac{3}{7}\ ;\ 0\right\rbrace$
-- $\mathscr{S}=\left\lbrace0\ ;\ \dfrac{3}{7}\right\rbrace$
-- $\mathscr{S}=\left\lbrace-\dfrac{7}{3}\ ;\ 0\right\rbrace$
-
+{{< auto1-exo numero="03" >}}
+Résoudre dans $\mathbb{R}$ l'équation $-7x^2-3x-8=-8$.
 ---CORR---
 L'équation $-7x^2-3x-8=-8$ s'écrit $-7x^2-3x=0$.<br>
 En factorisant le premier membre (facteur commun $x$), on obtient $x(-7x-3)=0$.<br>
 On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{3}{-7}=-\dfrac{3}{7}$.<br>
-$\mathcal{S}=\boldsymbol{\{0;-\dfrac{3}{7}\}}$<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+$\mathcal{S}=\boldsymbol{\{0;-\dfrac{3}{7}\}}$
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" layout="grid">}}
----Q---
+{{< auto1-exo numero="04" >}}
 On donne les représentations graphiques de deux fonctions affines $g$ (en vert) et $h$ (en rouge) définies sur $\mathbb{R}$.
 
- <img src="graphe_f05_1_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<img src="graphe_f05_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur $\mathbb{R}$ est :
-
-- <img src="graphe_f05_1_devoir_optA_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_1_devoir_optB_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_1_devoir_optC_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_1_devoir_optD_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
+Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=g(x)\times h(x)$.
 ---CORR---
 La fonction $g$ s'annule en $-1$ et la fonction $h$ s'annule en $2$.<br>
 Quand la droite est en-dessous de l'axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.<br>
 On en déduit le tableau de signes de leur produit :
 <img src="corr_f05_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
+{{< auto1-exo numero="05" >}}
+On donne la représentation graphique d'une fonction $f$.
 
-{{< /qcm >}}
+<img src="graphe_f04_2_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-On donne la représentation graphique d'une fonction $f$. 
-
-<img src="graphe_f04_2_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
-L'équation $f(x)=2$ a :
-
-- $2$ solutions
-- $0$ solution
-- $3$ solutions
-- $1$ solution
-
+Combien de solutions l'équation $f(x)=2$ admet-elle ?
 ---CORR---
 Le nombre de solutions de  l'équation $f(x)=2$ est le nombre d'antécédents de  $2$ par la fonction $f$.<br>
-Puisque la droite d'équation $y = 2$ (droite hrizontale) coupe $1$ fois la courbe, on en déduit que l'équation  $f(x)=2$ admet $\boldsymbol{1}$ solution..<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+Puisque la droite d'équation $y = 2$ (droite hrizontale) coupe $1$ fois la courbe, on en déduit que l'équation  $f(x)=2$ admet $\boldsymbol{1}$ solution..
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="06" >}}
+Donner l'équation réduite de la droite ci-dessous.
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-<img src="graphe_f07_4_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L'équation réduite de cette droite est :
-
-- $y= 3x-3$
-- $y=3$
-- $y= x +3$
-- $y= -x+3$
-
+<img src="graphe_f07_4_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 ---CORR---
 Le coefficient directeur $m$ de la droite $(AB)$ est donné par : <br>
 $m=\dfrac{\boldsymbol{3}}{\boldsymbol{3}}=\dfrac{1\boldsymbol{\times3} }{1\boldsymbol{\times3}}=1$.<br>
 Son ordonnée à l'origine est $3$, ainsi l'équation réduite de la droite est $\boldsymbol{y=x+3}$.<br>
 <img src="corr_f07_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>

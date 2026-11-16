@@ -6,23 +6,14 @@ auto_number: 25
 weight: 25
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 25 — Probabilités conditionnelles et algèbre
-</div>
+{{< auto1-exo numero="01" >}}
+On donne l'arbre de probabilités ci-dessous.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-On donne l'arbre de probabilités ci-dessous :
-<img src="p05_3.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-$P_C(A)=\ldots$
+<img src="p05_3.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
 
-- $\dfrac{2}{5} $
-- $\dfrac{1}{3}$
-- $\dfrac{4}{5} $
-- $\dfrac{2}{3} $
-
+Calculer $P_C(A)$.
 ---CORR---
 On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$
 
@@ -36,46 +27,31 @@ P(C)&=p(A\cap C)+p(\bar A \cap C)\\
 &=\dfrac{3}{5}
 \end{aligned}$$
 
- Et donc : 
+Et donc :
 $$\begin{aligned}
-    P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
-    &=\dfrac{P(A)\times P_A(C)}{P(C)}\\
-    &=\dfrac{\dfrac{2}{5}}{\dfrac{3}{5}}\\
-    &=\dfrac{2}{3}
-     \end{aligned}$$
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
+&=\dfrac{P(A)\times P_A(C)}{P(C)}\\
+&=\dfrac{\dfrac{2}{5}}{\dfrac{3}{5}}\\
+&=\dfrac{2}{3}
+\end{aligned}$$
+{{< /auto1-exo >}}
 
-{{< qcm correct="0" type="auto" >}}
----Q---
-Une augmentation de $10$ %  d'un article entraîne une augmentation du prix de $24$ €.
+{{< auto1-exo numero="02" >}}
+Une augmentation de $10\ $% du prix d'un article entraîne une hausse de $24$ €.
 
- Le prix de cet article avant l’augmentation est :
-
-- $240$ €
-- $21{,}6$ €
-- $26{,}4$ €
-- $34$ €
-
+Quel était le prix de cet article avant l'augmentation ?
 ---CORR---
 $10\,$ % du prix représente $24$ €, donc $100$ % du prix représente $10$ fois plus que $24$ € (car $10\times 10=100$).
 
 Le prix de l'article était donc : $10\times24=240$ €.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="03" >}}
+Voici la représentation graphique d'une fonction $f$ définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-Voici la représentation graphique d'une fonction $f$  définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.
- <img src="f02_12.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-À partir de cette représentation graphique, on a :
+<img src="f02_12.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:360px">
 
-- $a=-2$ et $b=-2$
-- $a=3{,}5$ et $b=-2$
-- $a=3$ et $b=2$
-- $a=3$ et $b=-2$
-
+Déterminer $a$ et $b$.
 ---CORR---
 La valeur de $b$ est donnée par l'image de $0$ par $f$ (ordonnée du point d'intersection entre la courbe et l'axe des ordonnées).
 
@@ -83,101 +59,53 @@ Ainsi, $b=-2$.
 
 La valeur de $a$ s'obtient (par exemple) grâce à l'image de $1$ par la fonction $f$.
 
-On lit $f(1)=1$. 
+On lit $f(1)=1$.
 
 D'où, $a\times 1^2-2=1$, soit $a=3$.
 
 Ainsi, $f(x)=3x^2-2$.
+{{< /auto1-exo >}}
 
-
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
+{{< auto1-exo numero="04" >}}
 Soit $x$ un réel.
 
-À quelle expression est égale $-4(x+4)^2+2$ ?
-
-- $-4x^2 -32x-66$
-- $-4x^2 -16x-62$
-- $-4x^2 +32x-62$
-- $-4x^2 -32x-62$
-
+Développer et réduire $-4(x+4)^2+2$.
 ---CORR---
 On développe l'expression de l'énoncé.
 
 $$\begin{aligned}
-    -4(x+4)^2+2&=-4\left(x^2 +8x+16\right)+2\\
-    &=-4x^2 -32x-64 +2\\
-        &=-4x^2 -32x-62\\
-          \end{aligned}$$
-          
-La bonne réponse est la réponse <span class="rep">D</span>.
-{{< /qcm >}}
+-4(x+4)^2+2&=-4\left(x^2 +8x+16\right)+2\\
+&=-4x^2 -32x-64 +2\\
+&=-4x^2 -32x-62\\
+\end{aligned}$$
+{{< /auto1-exo >}}
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-On a représenté ci-contre une droite $D$.
+{{< auto1-exo numero="05" >}}
+On a représenté ci-dessous une droite $D$ d'équation $y=mx+p$.
 
-Parmi les quatre équations ci-dessous, la seule susceptible d'être représentée par la droite $D$ est :
+<img src="f07_6.svg" alt="Droite" style="display:block;margin:1rem auto;max-width:300px">
 
-<img src="f07_6.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
-- $y=x^2-(x+1)^2+4$
-- $y=3x+3$
-- $y=-3x+3$
-- $6x+2y-6=0$
-
+Donner le signe de $m$ et le signe de $p$.
 ---CORR---
 On observe sur le graphique que le coefficient directeur est positif ($D$ représente une fonction affine croissante) et que l'ordonnée à l'origine est strictement positive ($D$ coupe l'axe des ordonnées au-dessus de l'origine).
+{{< /auto1-exo >}}
 
-On écrit les équations qui ne sont pas forme réduite, sous forme réduite :
-
-• $y=3x+3$ est  sous forme réduite.<br>
-• $y=-3x+3$ est  sous forme réduite.<br>
-• $6x+2y-6=0$ s'écrit $y=-3x+3$.<br>
-• $y=x^2-(x+1)^2+4$ s'écrit $y=-2x+3$.<br>
-
-La seule équation ayant un coefficient directeur positif et une ordonnée à l'origine positive est : $y=3x+3$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Quelle est l'écriture décimale du nombre dont l'écriture scientifique est $2{,}14\times 10^{-3}$ ?
-
-- $0{,}002\,14$
-- $0{,}021\,4$
-- $0{,}000\,214$
-- $2\,140$
-
+{{< auto1-exo numero="06" >}}
+Donner l'écriture décimale du nombre $2{,}14\times 10^{-3}$.
 ---CORR---
 Multiplier par  $10^{-3}$ revient à multiplier par $0{,}001$,  donc l'écriture décimale de $2{,}14\times 10^{-3}$ est : $0{,}002\,14$.
-
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 25 — Probabilités conditionnelles et algèbre
-</div>
+{{< auto1-exo numero="01" >}}
+On donne l'arbre de probabilités ci-dessous.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-On donne l'arbre de probabilités ci-dessous :
-<img src="p05_3_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-$P_C(A)=\ldots$
+<img src="p05_3_devoir.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
 
-- $\dfrac{1}{2}$
-- $\dfrac{5}{8} $
-- $\dfrac{7}{20} $
-- $\dfrac{1}{2} $
-
-
+Calculer $P_C(A)$.
 ---CORR---
 On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$<br>
 D'après la formule des probabilités totales :<br>
@@ -199,24 +127,12 @@ P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
 &=\dfrac{5}{8}\\
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
+{{< auto1-exo numero="02" >}}
+Parmi les $2\,000$ logements d'une ville, $10\ $% sont des maisons et $80\ $% de celles-ci sont des T2.
 
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Parmi les $2\,000$ logements que compte une ville, $10\,$ %   sont des maisons et $80\,$ %  de celles-ci sont des T2.
-
-
-  Le nombre de maisons de type T2 dans cette ville est :
-
-- $1\,600$
-- $16$
-- $1\,910$
-- $160$
-
-
+Combien y a-t-il de maisons de type T2 dans cette ville ?
 ---CORR---
 Les maisons  représentent $10\%$   des logements.<br>
 Il y en a donc : $0{,}1\times 2\,000=200$.<br>
@@ -229,46 +145,27 @@ Mentalement : <br>
 Prendre $10\,\%$  d'une quantité revient à la diviser par $10$. <br>
 Pour calculer $20\,\%$, $30\,\, \%$, $40\,\%$, .... d'une quantité, on
 commence par calculer  $10\,\%$  de cette quantité en la divisant par $10$, puis on multiplie
-par $2$ ce résultat si on veut en calculer $20\, \%$, par $3$ si on veut en calculer $30\,\%$, ....<br>
+par $2$ ce résultat si on veut en calculer $20\, \%$, par $3$ si on veut en calculer $30\,\%$, ....
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
+{{< auto1-exo numero="03" >}}
+Voici la représentation graphique d'une fonction $f$ définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.
 
-{{< /qcm >}}
+<img src="f02_12_devoir.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:360px">
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Voici la représentation graphique d'une fonction $f$  définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.
-<img src="f02_12_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-À partir de cette représentation graphique, on a :
-
-- $a=2$ et $b=2$
-- $a=3{,}5$ et $b=2$
-- $a=3{,}5$ et $b=-2$
-- $a=-3{,}5$ et $b=2$
-
-
+Déterminer $a$ et $b$.
 ---CORR---
 La valeur de $b$ est donnée par l'image de $0$ par $f$ (ordonnée du point d'intersection entre la courbe et l'axe des ordonnées).<br>
 Ainsi, $b=\boldsymbol{2}$.<br>
 La valeur de $a$ s'obtient (par exemple) grâce à l'image de $1$ par la fonction $f$.<br>
 On lit $f(1)=5{,}5$. D'où, $a\times 1^2+2=5{,}5$, soit $a=\boldsymbol{3{,}5}$.<br>
-Ainsi, $f(x)=3{,}5x^2+2$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Ainsi, $f(x)=3{,}5x^2+2$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="04" >}}
 Soit $x$ un réel.
 
-À quelle expression est égale $-4(x+2)^2-1$ ?
-
-- $-4x^2 -8x-17$
-- $-4x^2 -16x-15$
-- $-4x^2 -16x-17$
-- $-4x^2 +16x-17$
-
-
+Développer et réduire $-4(x+2)^2-1$.
 ---CORR---
 On développe l'expression de l'énoncé. <br>
 
@@ -279,53 +176,22 @@ $$
 &=\boldsymbol{-4x^2 -16x-17}\\
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
+{{< auto1-exo numero="05" >}}
+On a représenté ci-dessous une droite $D$ d'équation $y=mx+p$.
 
-{{< /qcm >}}
+<img src="f07_6_devoir.svg" alt="Droite" style="display:block;margin:1rem auto;max-width:300px">
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-On a représenté ci-contre une droite $D$.
-
-Parmi les quatre équations ci-dessous, la seule susceptible d'être représentée par la droite $D$ est :
-
-    <img src="f07_6_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
-- $y=3x-2$
-- $6x-2y-4=0$
-- $y=x^2-(x-2)^2+2$
-- $y=-3x-2$
-
-
+Donner le signe de $m$ et le signe de $p$.
 ---CORR---
-On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l'ordonnée à l'origine est strictement négative ($D$ coupe l'axe des ordonnées en dessous de l'origine).<br>
-On écrit les équations qui ne sont pas forme réduite, sous forme réduite :<br>
-$\bullet\:$ $y=-3x-2$ est  sous forme réduite.<br>
-$\bullet\:$ $y=3x-2$ est  sous forme réduite.<br>
-$\bullet\:$ $6x-2y-4=0$ s'écrit $y=3x-2$.<br>
-$\bullet\:$ $y=x^2-(x-2)^2+2$ s'écrit $y=4x-2$.
+On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l'ordonnée à l'origine est strictement négative ($D$ coupe l'axe des ordonnées en dessous de l'origine).
+{{< /auto1-exo >}}
 
-La seule équation ayant un coefficient directeur négatif et une ordonnée à l'origine négative est : $\boldsymbol{y=-3x-2}$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Quelle est l'écriture décimale du nombre dont l'écriture scientifique est $9{,}41\times 10^{-4}$ ?
-
-- $0{,}000\,941$
-- $0{,}000\,094\,1$
-- $94\,100$
-- $0{,}009\,41$
-
-
+{{< auto1-exo numero="06" >}}
+Donner l'écriture décimale du nombre $9{,}41\times 10^{-4}$.
 ---CORR---
 Multiplier par  $10^{-4}$ revient à multiplier par $0{,}000\,1$,  donc l'écriture décimale de $9{,}41\times 10^{-4}$ est : $\boldsymbol{0{,}000\,941}$.
-
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>

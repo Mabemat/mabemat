@@ -4,6 +4,14 @@
 {{ $n := .Params.auto_number | default 0 }}
 {{ $autoIdx := site.GetPage (printf "%s/automatismes" .Section) }}
 
+{{/* Questions à réponse courte (nouveau format) ou ancien QCM ? */}}
+{{ $open := strings.Contains .RawContent "auto1-open" }}
+
+{{/* Semaines dont la correction du devoir est ouverte aux élèves (liste correction_devoir de _index.md) */}}
+{{ $corrDevoir := slice }}
+{{ with $autoIdx }}{{ with .Params.correction_devoir }}{{ $corrDevoir = . }}{{ end }}{{ end }}
+{{ $showDevoirCorr := in $corrDevoir $n }}
+
 {{ $subtitle := "" }}
 {{ $rawTitle := .Title }}
 {{ if strings.Contains $rawTitle " — " }}
@@ -61,6 +69,17 @@
   </div>
 </div>
 
+{{ if $open }}
+<section id="auto-panel-seance" class="mode-panel active fade-up d3">
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
+  <div id="seance-cards"></div>
+</section>
+
+<section id="auto-panel-devoir" class="mode-panel">
+  <p class="mode-intro">{{ if $showDevoirCorr }}Mêmes thèmes, énoncés différents. Cherche d'abord, puis vérifie avec la correction.{{ else }}Mêmes thèmes, énoncés différents. Correction en classe.{{ end }}</p>
+  <div id="devoir-cards"></div>
+</section>
+{{ else }}
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
   <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
   <div class="auto1re-progress">
@@ -81,6 +100,7 @@
   <div id="devoir-cards"></div>
   <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
+{{ end }}
 
 <div id="auto1re-src" style="display:none">
   {{ .Content }}
@@ -117,10 +137,65 @@
     });
   });
 
-  /* ── Construction des cartes QCM ── */
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+  /* ══ Nouveau format : questions à réponse courte ══ */
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr = {{ $showDevoirCorr }};
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+        /* Question gardée au format QCM : carte à choix, correction révélée au clic */
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+  /* ══ Ancien format : QCM ══ */
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 

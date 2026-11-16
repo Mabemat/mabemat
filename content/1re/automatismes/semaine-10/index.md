@@ -6,30 +6,15 @@ auto_number: 10
 weight: 10
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 10 — Conversions, variations et fonctions
-</div>
-
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Une durée de $2{,}4$ heures correspond à :
-
-- $154$ minutes
-- $240$ minutes
-- $124$ minutes
-- $144$ minutes
-
+{{< auto1-exo numero="01" >}}
+Convertir $2{,}4$ heures en minutes.
 ---CORR---
 $2{,}4\text{ h} =2 \text{ h} + 0{,}4 \text{ h}$, soit $2\text{ h} + \dfrac{2}{5} \text{ h} = 120 \text{ min} + 24\text{ min} = 144 \text{ min}$.
 
- Ainsi, $2{,}4$ heures correspond à $144$ minutes.
-
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
+Ainsi, $2{,}4$ heures correspond à $144$ minutes.
+{{< /auto1-exo >}}
 
 {{< qcm correct="1" type="auto" >}}
 ---Q---
@@ -77,47 +62,22 @@ $\bullet$ Soit $k\in]1\ ;\ 2[$.
 Si $k\in]1\ ;\ 2&#91$, la droite d'équation $y=k$ coupe bien deux fois la courbe.
 
 La bonne réponse est la réponse <span class="rep">B</span>.
-
 {{< /qcm >}}
 
-{{< qcm correct="3" type="auto" >}}
----Q---
+{{< auto1-exo numero="03" >}}
 Voici quatre planètes et leur masse :
 
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #B85C5C; padding: 8px;">Planètes</th>
-      <th style="border: 1px solid #B85C5C; padding: 8px;">Masses</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Planète 1</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">36,19 × 10<sup>22</sup> kg</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Planète 2</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">51,59 × 10<sup>20</sup> kg</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Planète 3</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">655,46 × 10<sup>24</sup> kg</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Planète 4</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">18,98 × 10<sup>25</sup> kg</td>
-    </tr>
-  </tbody>
+<table style="border-collapse: collapse; text-align: center; margin: 1rem auto;">
+<thead><tr><th style="border: 1px solid #B85C5C; padding: 8px;">Planètes</th><th style="border: 1px solid #B85C5C; padding: 8px;">Masses</th></tr></thead>
+<tbody>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Planète 1</td><td style="border: 1px solid #B85C5C; padding: 8px;">36,19 × 10<sup>22</sup> kg</td></tr>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Planète 2</td><td style="border: 1px solid #B85C5C; padding: 8px;">51,59 × 10<sup>20</sup> kg</td></tr>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Planète 3</td><td style="border: 1px solid #B85C5C; padding: 8px;">655,46 × 10<sup>24</sup> kg</td></tr>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Planète 4</td><td style="border: 1px solid #B85C5C; padding: 8px;">18,98 × 10<sup>25</sup> kg</td></tr>
+</tbody>
 </table>
 
-La planète dont la masse est la plus importante est :
-
-- Planète 2
-- Planète 4
-- Planète 1
-- Planète 3
-
+Quelle planète a la masse la plus importante ?
 ---CORR---
 On écrit les masses en écriture scientifique pour les comparer :
 
@@ -132,100 +92,54 @@ On écrit les masses en écriture scientifique pour les comparer :
 On a donc : $6{,}554\ 6\times 10^{26}$ $>$ $1{,}898\times 10^{26}$ $>$ $3{,}619\times 10^{23}$ $>$ $5{,}159\times 10^{21}$
 
 Donc il s'agit de la **Planète 3** qui a la masse la plus importante.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-$15+10^{-22}$ est environ égal à :
-
-- $15$
-- $15\times 10^{-22}$
-- $16$
-- $10^{-22}$
-
+{{< auto1-exo numero="04" >}}
+Donner un ordre de grandeur de $15+10^{-22}$.
 ---CORR---
 $10^{-22}$ est très petit devant $15$.
 
- En effet, $10^{-22}=\dfrac{1}{10^{22}}=\underbrace{0,0\ldots 0}_{22 \text{ zéros}}1$.
+En effet, $10^{-22}=\dfrac{1}{10^{22}}=\underbrace{0,0\ldots 0}_{22 \text{ zéros}}1$.
 
- On en déduit que $15+10^{-22}$ est environ égal à $15$.
+On en déduit que $15+10^{-22}$ est environ égal à $15$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="05" >}}
+Un prix augmente de $300\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Un prix augmente de $300\ $%. 
-
- Pour retrouver le prix initial, il faut une baisse de :
-
-- $300\ $%
-- $25\ $%
-- $100\ $%
-- $75\ $%
-
+Quel pourcentage de baisse faut-il appliquer pour retrouver le prix initial ?
 ---CORR---
 Le coefficient multiplicateur associé à une augmentation de $300\ $% est $1+3=4$.
 
- Comme $4\times 0{,}25=1$, il faut donc multiplier par $0{,}25$ (coefficient multiplicateur réciproque) pour revenir au prix initial.
+Comme $4\times 0{,}25=1$, il faut donc multiplier par $0{,}25$ (coefficient multiplicateur réciproque) pour revenir au prix initial.
 
- Un coefficient multiplicateur de $0{,}25$ correspond à un taux d'évolution de $-75\ $%.
+Un coefficient multiplicateur de $0{,}25$ correspond à un taux d'évolution de $-75\ $%.
 
- On en déduit qu'il faut une baisse de $75\ $%.
+On en déduit qu'il faut une baisse de $75\ $%.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
+{{< auto1-exo numero="06" >}}
+Un prix a doublé.
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Un prix a doublé. Cela signifie que le prix a augmenté de :
-
-- $100$%
-- $50\ $%
-- $120\ $%
-- $2\ $%
-
+De quel pourcentage a-t-il augmenté ?
 ---CORR---
 Si un prix a doublé, cela signifie que le coefficient multiplicateur est $CM = 2$.
 
- Le taux d'évolution $T$ vérifie : $T = CM - 1 = 2 - 1 = 1 = 100\ $%.
+Le taux d'évolution $T$ vérifie : $T = CM - 1 = 2 - 1 = 1 = 100\ $%.
 
- Le prix a donc augmenté de $100\ $%.
-
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
+Le prix a donc augmenté de $100\ $%.
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 10 — Conversions, variations et fonctions
-</div>
-
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Une durée de $0{,}25$ heure correspond à :
-
-- $30$ minutes
-- $15$ minutes
-- $5$ minutes
-- $25$ minutes
-
-
+{{< auto1-exo numero="01" >}}
+Convertir $0{,}25$ heure en minutes.
 ---CORR---
 $0{,}25\text{ h} = \dfrac{1}{4} \text{ h} = 15 \text{ min}$.<br>
-Ainsi, $0{,}25$ heure correspond à $\boldsymbol{15}$ minutes.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
+Ainsi, $0{,}25$ heure correspond à $\boldsymbol{15}$ minutes.
+{{< /auto1-exo >}}
 
 {{< qcm correct="3" type="auto" >}}
 ---Q---
@@ -239,7 +153,6 @@ Une seule affirmation est correcte :
 - Soit $k\in\mathbb{R}$. L'équation $f(x)=k$ a au plus $4$ solutions.
 - Soit $k\in]0\ ;\ 1[$. L'équation $f(x)=k$ admet exactement trois solutions.
 - Le produit des solutions de l'équation $f(x)=1$ est égal à $15$.
-
 
 ---CORR---
 $\bullet$ Le produit des solutions de l'équation $f(x)=1$ est égal à $15$.<br>
@@ -260,48 +173,22 @@ Cette affirmation est fausse : <br>
 Si $k\in]0\,;\,1[$,  la droite d'équation $y=k$ coupe bien deux fois la courbe.
 
 La bonne réponse est la réponse <span class="rep">D</span>.
-
 {{< /qcm >}}
 
-{{< qcm correct="1" type="auto" >}}
----Q---
+{{< auto1-exo numero="03" >}}
 Voici quatre cellules et leur taille :
 
-<table style="border-collapse: collapse; text-align: center;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #B85C5C; padding: 8px;">Cellules</th>
-      <th style="border: 1px solid #B85C5C; padding: 8px;">Tailles</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 1</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">31,96 × 10<sup>-6</sup> mm</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 2</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">367 540 × 10<sup>-10</sup> mm</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 3</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">3,17 × 10<sup>-6</sup> mm</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 4</td>
-      <td style="border: 1px solid #B85C5C; padding: 8px;">44,63 × 10<sup>-10</sup> mm</td>
-    </tr>
-  </tbody>
+<table style="border-collapse: collapse; text-align: center; margin: 1rem auto;">
+<thead><tr><th style="border: 1px solid #B85C5C; padding: 8px;">Cellules</th><th style="border: 1px solid #B85C5C; padding: 8px;">Tailles</th></tr></thead>
+<tbody>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 1</td><td style="border: 1px solid #B85C5C; padding: 8px;">31,96 × 10<sup>-6</sup> mm</td></tr>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 2</td><td style="border: 1px solid #B85C5C; padding: 8px;">367 540 × 10<sup>-10</sup> mm</td></tr>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 3</td><td style="border: 1px solid #B85C5C; padding: 8px;">3,17 × 10<sup>-6</sup> mm</td></tr>
+<tr><td style="border: 1px solid #B85C5C; padding: 8px;">Cellule 4</td><td style="border: 1px solid #B85C5C; padding: 8px;">44,63 × 10<sup>-10</sup> mm</td></tr>
+</tbody>
 </table>
 
-La cellule dont la taille est la plus importante est :
-
-- Cellule 3
-- Cellule 2
-- Cellule 1
-- Cellule 4
-
-
+Quelle cellule a la plus grande taille ?
 ---CORR---
 On écrit les tailles en écriture scientifique pour les comparer :
 
@@ -312,66 +199,36 @@ On écrit les tailles en écriture scientifique pour les comparer :
 
 On a donc : $3{,}675\,4\times 10^{-5}$ $>$ $3{,}196\times 10^{-5}$ $>$ $3{,}17\times 10^{-6}$ $>$ $4{,}463\times 10^{-9}$
 
-Donc il s'agit de la Cellule 2 qui a la taille la plus importante.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Donc il s'agit de la Cellule 2 qui a la taille la plus importante.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-$3+10^{26}$ est environ égal à :
-
-- $10^{26}$
-- $4\times 10^{26}$
-- $3$
-- $10^{27}$
-
-
+{{< auto1-exo numero="04" >}}
+Donner un ordre de grandeur de $3+10^{26}$.
 ---CORR---
 $3$ est très petit devant $10^{26}$.<br>
 En effet, $10^{26}=1\underbrace{0\ldots 0}_{26 \text{ zéros}}$.<br>
-On en déduit que $3+10^{26}$ est environ égal à $\boldsymbol{10^{26}}$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+On en déduit que $3+10^{26}$ est environ égal à $\boldsymbol{10^{26}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+Un prix augmente de $900\ $%.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Un prix augmente de $900\ $%. 
-
- Pour retrouver le prix initial, il faut une baisse de :
-
-- $10\ $%
-- $90\ $%
-- $100\ $%
-- $900\ $%
-
-
+Quel pourcentage de baisse faut-il appliquer pour retrouver le prix initial ?
 ---CORR---
 Le coefficient multiplicateur associé à une augmentation de $900\,\%$ est $1+9=10$.<br>
 Comme $10\times 0{,}1=1$, il faut donc multiplier par $0{,}1$ (coefficient multiplicateur réciproque) pour revenir au prix initial.<br>
 Un coefficient multiplicateur de $0{,}1$ correspond à un taux d'évolution de $-90\,\%$.<br>
-On en déduit qu'il faut une baisse de $\boldsymbol{90\,\%}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+On en déduit qu'il faut une baisse de $\boldsymbol{90\,\%}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="06" >}}
+Un prix a été divisé par $4$.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Un prix a été divisé par $4$. Cela signifie que le prix a diminué de :
-
-- $25\ $%
-- $75$%
-- $4\ $%
-- $40\ $%
-
-
+De quel pourcentage a-t-il diminué ?
 ---CORR---
 Si un prix a été divisé par $4$, cela signifie que le coefficient multiplicateur est $CM = \dfrac{1}{4} = 0,25$.<br>
 Le taux d'évolution $T$  vérifie : $T = CM - 1 = 0,25 - 1 = -0,75 = -75\,\%$.<br>
-Le prix a donc diminué de $\boldsymbol{75\,\%}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
+Le prix a donc diminué de $\boldsymbol{75\,\%}$.
+{{< /auto1-exo >}}
 
 </div>

@@ -6,230 +6,142 @@ auto_number: 2
 weight: 2
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 2 — Calcul, algèbre et pourcentages
-</div>
+{{< auto1-exo numero="01" >}}
+Choisir deux nombres puis calculer l'inverse de leur somme.
 
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Choisir deux nombres puis calculer l'inverse de leur somme. 
-
- Le résultat obtenu si on choisit comme nombres $-1$ et $7$ est :
-
-- $\dfrac{1}{6}$
-- $-6$
-- $-\dfrac{6}{7}$
-- $-\dfrac{1}{6}$
-
+Quel résultat obtient-on si on choisit les nombres $-1$ et $7$ ?
 ---CORR---
-La somme de $-1$ et $7$ est $6$. 
+La somme de $-1$ et $7$ est $6$.
 
- Son inverse est : $\dfrac{1}{6}$.
+Son inverse est : $\dfrac{1}{6}$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="02" >}}
+On donne la relation $9a+10y=5$.
 
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-On donne la relation : $9a+10y=5$.
-
- On cherche à isoler $a$. On a :
-
-- $a=-10y+5$
-- $a=\dfrac{5}{9}-10y$
-- $a=\dfrac{10y-5}{9}$
-- $a=\dfrac{-10y+5}{9}$
-
+Exprimer $a$ en fonction de $y$.
 ---CORR---
 De la relation $9a+10y=5$, on déduit en ajoutant $-10y$ dans chaque membre :
- $9a=5-10y$
+$9a=5-10y$
 
- Puis, en divisant par $9$, on obtient : $ a=\dfrac{5-10y}{9}$.
+Puis, en divisant par $9$, on obtient : $ a=\dfrac{5-10y}{9}$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="03" >}}
 On considère une fonction affine $f$ telle que $f(4)=-11$ et $f(8)=-19$.
 
- L'image de $12$ par cette fonction affine est :
-
-- $-35$
-- $-24$
-- $-27$
-- $-30$
-
+Calculer l'image de $12$ par $f$.
 ---CORR---
 $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.
 
- $\begin{aligned}
-    m&=\dfrac{f(8)-f(4)}{8-4}\\
-    &=\dfrac{-19+11}{4}\\
-    &=-2
-    \end{aligned}$
+$\begin{aligned}
+m&=\dfrac{f(8)-f(4)}{8-4}\\
+&=\dfrac{-19+11}{4}\\
+&=-2
+\end{aligned}$
 
- On a donc $f(x)=-2x+p$.
+On a donc $f(x)=-2x+p$.
 
- Pour déterminer $p$, on utilise la valeur de $f(4)$ :
+Pour déterminer $p$, on utilise la valeur de $f(4)$ :
 
- $\begin{aligned}
-    f(4)&=-2\times 4+p\\
-    -11&=-8+p\\
-    p&=-3
-    \end{aligned}$
+$\begin{aligned}
+f(4)&=-2\times 4+p\\
+-11&=-8+p\\
+p&=-3
+\end{aligned}$
 
- On a donc $f(x)=-2x-3$.
+On a donc $f(x)=-2x-3$.
 
- L'image de $12$ par cette fonction est :
+L'image de $12$ par cette fonction est :
 
- $\begin{aligned}
-    f(12)&=-2\times 12  -3
-     \\&=-24-3\\ 
-    &=-27
-    \end{aligned}$
+$\begin{aligned}
+f(12)&=-2\times 12  -3
+\\&=-24-3\\
+&=-27
+\end{aligned}$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-La forme développée de $(3a+2)^2$ est :
-
-- $9a^2+12a+4$
-- $9a^2+6a+4$
-- $9a^2+4$
-- $a^2+4a+4$
-
+{{< auto1-exo numero="04" >}}
+Développer et réduire $(3a+2)^2$.
 ---CORR---
 On utilise l'égalité remarquable $(a+b)^2=a^2+2ab+b^2$ avec $a=3a$ et $b=2$.
 
- $\begin{aligned}
-         (3a+2)^2&=(3a)^2+2 \times 3a \times 2 + 2^2\\
-            &=9a^2+12a+4
-            \end{aligned}$
+$\begin{aligned}
+(3a+2)^2&=(3a)^2+2 \times 3a \times 2 + 2^2\\
+&=9a^2+12a+4
+\end{aligned}$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="05" >}}
+Voici quatre droites.
 
-{{< /qcm >}}
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.8rem;margin:1rem auto;max-width:640px;text-align:center">
+<div>$D_1$<img src="graphe_f07-2_1.svg" alt="Droite D1" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+<div>$D_2$<img src="graphe_f07-2_3.svg" alt="Droite D2" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+<div>$D_3$<img src="graphe_f07-2_4.svg" alt="Droite D3" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+<div>$D_4$<img src="graphe_f07-2_2.svg" alt="Droite D4" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+</div>
 
-{{< qcm correct="0" type="auto" layout="grid">}}
----Q---
-La seule droite pouvant correspondre à l'équation $y=6x-5$ est :
-
-- La droite $D_1$ <img src="graphe_f07-2_1.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-- La droite $D_4$ <img src="graphe_f07-2_2.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-- La droite $D_2$ <img src="graphe_f07-2_3.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-- La droite $D_3$ <img src="graphe_f07-2_4.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-
+Laquelle de ces droites peut avoir pour équation $y=6x-5$ ?
 ---CORR---
 On reconnaît la droite grâce à son ordonnée à l'origine ($-5<0$) et son coefficient directeur ($6>0$).
 
- Il s'agit de la droite coupant l'axe des ordonnées en-dessous de l'axe des abscisses et qui monte.
+Il s'agit de la droite coupant l'axe des ordonnées en-dessous de l'axe des abscisses et qui monte.
 
- Il s'agit de la droite $D_1$.
+Il s'agit de la droite $D_1$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="06" >}}
+Le prix d'un vêtement est $35$ €. Il baisse de $20\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Le prix d'un vêtement est $35$ €.
-
- Il baisse de $20\ $%. Son nouveau prix est :
-
-- $34{,}3 $ €
-- $42 $ €
-- $34{,}8 $ €
-- $28$ €
-
+Calculer son nouveau prix.
 ---CORR---
 Le nouveau prix est de $28 $ €.
 
-Mentalement : 
+Mentalement :
 
- On calcule d'abord le montant de la réduction. 
+On calcule d'abord le montant de la réduction.
 
- Pour calculer $20\ $% d'une quantité, on commence par calculer $10\ $% en divisant
- par $10$ :
+Pour calculer $20\ $% d'une quantité, on commence par calculer $10\ $% en divisant
+par $10$ :
 
- $10\ $% de $35$ est égal à $35\div 10=3,5$.
+$10\ $% de $35$ est égal à $35\div 10=3,5$.
 
- Puisque $20\ $% est deux fois plus grand que $10\ $%, $20\ $% de $35$ est égal à $2\times 3,5=7$.
+Puisque $20\ $% est deux fois plus grand que $10\ $%, $20\ $% de $35$ est égal à $2\times 3,5=7$.
 
- La réduction est donc de : $7$ €.
+La réduction est donc de : $7$ €.
 
- Le nouveau prix est : $35-7= 28$ €.
-
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
+Le nouveau prix est : $35-7= 28$ €.
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 2 — Calcul, algèbre et pourcentages
-</div>
+{{< auto1-exo numero="01" >}}
+Choisir deux nombres puis calculer le double de leur produit.
 
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-Choisir deux nombres puis calculer le double de leur produit. 
-
- Le résultat obtenu si on choisit comme nombres $4$ et $2$ est :
-
-- $12$
-- $8$
-- $16$
-
-
+Quel résultat obtient-on si on choisit les nombres $4$ et $2$ ?
 ---CORR---
-$2\times4\times 2=\boldsymbol{16}$<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+$2\times4\times 2=\boldsymbol{16}$
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="02" >}}
+On donne la relation $3x-2c=2$.
 
-{{< qcm correct="0" type="auto" >}}
----Q---
-On donne la relation : $3x-2c=2$.
-
- On cherche à isoler $x$. On a :
-
-- $x=\dfrac{2c+2}{3}$
-- $x=2c+2$
-- $x=\dfrac{-2c-2}{3}$
-- $x=\dfrac{2}{3}+2c$
-
-
+Exprimer $x$ en fonction de $c$.
 ---CORR---
 De la relation $3x-2c=2$, on déduit en ajoutant $2c$ dans chaque membre :
 $3x=2+2c$<br>
-Puis, en divisant par $3$, on obtient : $\boldsymbol{ x=\dfrac{2+2c}{3}}$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+Puis, en divisant par $3$, on obtient : $\boldsymbol{ x=\dfrac{2+2c}{3}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
+{{< auto1-exo numero="03" >}}
 On considère une fonction affine $f$ telle que $f(5)=2$ et $f(7)=0$.
 
- L'image de $12$ par cette fonction affine est :
-
-- $-5$
-- $2$
-- $-12$
-- $-7$
-
-
+Calculer l'image de $12$ par $f$.
 ---CORR---
 $f$ est une fonction affine, elle est donc de la forme $f(x)=mx+p$.<br>
 
@@ -262,21 +174,10 @@ f(12)&=-1\times 12  +7\\
 &=\boldsymbol{-5}
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-La forme développée de $(2x-9)(2x+9)$ est :
-
-- $4x^2-36x+81$
-- $4x^2+36x+81$
-- $4x^2-36x-81$
-- $4x^2-81$
-
-
+{{< auto1-exo numero="04" >}}
+Développer et réduire $(2x-9)(2x+9)$.
 ---CORR---
 On utilise l'égalité remarquable $(a+b)(a-b)=a^2-b^2$ avec $a=2x$ et $b=9$.<br>
 
@@ -286,41 +187,29 @@ $$
 &=\boldsymbol{4x^2-81}
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
+{{< auto1-exo numero="05" >}}
+Voici quatre droites.
 
-{{< /qcm >}}
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.8rem;margin:1rem auto;max-width:640px;text-align:center">
+<div>$D_1$<img src="graphe_f07-2_1_devoir.svg" alt="Droite D1" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+<div>$D_2$<img src="graphe_f07-2_2_devoir.svg" alt="Droite D2" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+<div>$D_3$<img src="graphe_f07-2_4_devoir.svg" alt="Droite D3" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+<div>$D_4$<img src="graphe_f07-2_3_devoir.svg" alt="Droite D4" style="display:block;margin:0.3rem auto;max-width:100%"></div>
+</div>
 
-{{< qcm correct="0" type="auto" layout="grid">}}
----Q---
-La seule droite pouvant correspondre à l'équation $y=-6x-10$ est :
-
-- La droite $D_1$ <img src="graphe_f07-2_1_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-- La droite $D_2$ <img src="graphe_f07-2_2_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-- La droite $D_4$ <img src="graphe_f07-2_3_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-- La droite $D_3$ <img src="graphe_f07-2_4_devoir.svg" alt="Graphique" style="display:inline-block;margin:0.3rem auto;max-width:320px;vertical-align:middle">
-
-
+Laquelle de ces droites peut avoir pour équation $y=-6x-10$ ?
 ---CORR---
 On reconnaît la droite grâce à son ordonnée à l'origine ($-10<0$) et son coefficient directeur ($-6<0$).<br>
 Il s'agit de la droite coupant l'axe des ordonnées en-dessous de l'axe des abscisses et qui descend.<br>
-Il s'agit de la droite $\boldsymbol{D_1}$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+Il s'agit de la droite $\boldsymbol{D_1}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="06" >}}
+Le prix d'un vêtement est $50$ €. Il augmente de $20\ $%.
 
-{{< qcm correct="3" type="auto" >}}
----Q---
-Le prix d'un vêtement est $50$ €.
-
- Il augmente de $20\ $%. Son nouveau prix est :
-
-- $50{,}2 $ €
-- $40 $ €
-- $51 $ €
-- $60$ €
-
-
+Calculer son nouveau prix.
 ---CORR---
 Le nouveau prix est :  $ \boldsymbol{60} $\,€.
 
@@ -332,9 +221,6 @@ $10\,\%$  de $50$ est égal à $50\div 10=5$.<br>
 Puisque $20\,\%$  est deux fois plus grand que $10\,\%$,  $20\,\%$  de $50$ est égal à $2\times 5=10$.<br>
 L'augmentation est donc de : $10$\,€.<br>
 Le nouveau prix est :   $50+10= \boldsymbol{60}$ \,€.
-
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>

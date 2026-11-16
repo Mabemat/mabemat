@@ -6,260 +6,129 @@ auto_number: 8
 weight: 8
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 8 — Équations, pourcentages et évolutions
-</div>
-
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-L'ensemble $S$ des solutions de l'équation $(x-3)^2=-3$ est :
-
-- $S=${$0$}
-- $S=${$-\sqrt{3}\ ;\ \sqrt{3}$}
-- $S=\emptyset$
-- $S=${$-\sqrt{3}+3\ ;\ \sqrt{3}+3$}
-
+{{< auto1-exo numero="01" >}}
+Résoudre dans $\mathbb{R}$ l'équation $(x-3)^2=-3$.
 ---CORR---
 L'équation est de la forme $X^2=k$ avec $X=(x-3)$ et $k=-3$.
 
- Comme $k<0$, l'équation n'a pas de solution.
+Comme $k<0$, l'équation n'a pas de solution.
 
- Ainsi, l'ensemble des solutions de l'équation est $S=\emptyset$.
+Ainsi, l'ensemble des solutions de l'équation est $S=\emptyset$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Une durée de $72$ minutes correspond à :
-
-- $1{,}3$ heure
-- $1{,}2$ heure
-- $0{,}72$ heure
-- $1{,}12$ heure
-
+{{< auto1-exo numero="02" >}}
+Convertir $72$ minutes en heures (écriture décimale).
 ---CORR---
 $72\text{ min}= 60 \text{ min}+12\text{ min}=1\text{ h}+\dfrac{2}{10}\text{ h}=1{,}2\text{ h}$.
 
- Ainsi, $72$ min correspond à $1{,}2$ heure.
+Ainsi, $72$ min correspond à $1{,}2$ heure.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-La valeur la plus proche de $39\ $% de $100\ 817$ est :
-
-- $61\ 000$
-- $20\ 000$
-- $40\ 000$
-- $4\ 000$
-
+{{< auto1-exo numero="03" >}}
+Donner un ordre de grandeur de $39\ $% de $100\ 817$.
 ---CORR---
 $39\ $% est proche de $40\ $% et $100\ 817$ est proche de $100\ 000$.
 
- Ainsi, le calcul de $39\ $% de $100\ 817$ est proche de $40\ $% de $100\ 000$ soit $40\ 000$.
+Ainsi, le calcul de $39\ $% de $100\ 817$ est proche de $40\ $% de $100\ 000$ soit $40\ 000$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
+{{< auto1-exo numero="04" >}}
+Le prix d'un article est noté $P$. Il connaît deux augmentations successives de $70\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Le prix d'un article est noté $P$. Il connaît deux augmentations successives de $70\ $%. 
-
-Le prix après ces augmentations est :
-
-- $P \times \left(1 + \dfrac{7}{10}\right)^2$
-- $\dfrac{P}{2{,}89}$
-- $P \times 1{,}4$
-- $P \times \left(1{,}7 + 0{,}7\right)$
-
+Exprimer le prix après ces augmentations en fonction de $P$.
 ---CORR---
 Après une augmentation de $70\ $%, le nouveau prix est $P \times 1{,}7$.
 
- Après une deuxième augmentation de $70\ $%, le prix devient : 
+Après une deuxième augmentation de $70\ $%, le prix devient :
 
- $(P \times 1{,}7) \times 1{,}7 = P \times \left(1 + \dfrac{70}{100}\right)^2=P \times  \left(1 + \dfrac{7}{10}\right)^2 = P \times 1{,}7^2$
+$(P \times 1{,}7) \times 1{,}7 = P \times \left(1 + \dfrac{70}{100}\right)^2=P \times  \left(1 + \dfrac{7}{10}\right)^2 = P \times 1{,}7^2$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="05" >}}
+Le prix d'un article connaît deux baisses successives de $20\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Le prix d’un article connait deux baisses successives de $20\ $%. 
-
- Le taux d'évolution global associé est :
-
-- $-36\ $%
-- $-31\ $%
-- $40\ $%
-- $20\ $%
-
+Donner le taux d'évolution global.
 ---CORR---
 Le coefficient multiplicateur associé à une baisse de $20\ $% est $0{,}8$.
 
- Le coefficient multiplicateur associé à deux baisses successives de $20\ $% est le produit des coefficients multiplicateurs, soit $0{,}8\times 0{,}8=0{,}64$.
+Le coefficient multiplicateur associé à deux baisses successives de $20\ $% est le produit des coefficients multiplicateurs, soit $0{,}8\times 0{,}8=0{,}64$.
 
- L'évolution globale est donnée par $0{,}64-1=-0{,}36=-36\ $%.
+L'évolution globale est donnée par $0{,}64-1=-0{,}36=-36\ $%.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
+{{< auto1-exo numero="06" >}}
+Le prix d'un article a subi une augmentation de $47\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Le prix d’un article a subi une augmentation de $47\ $%.
-
- Le taux à appliquer pour que cet article retrouve son prix initial est donné par :
-
-- $\dfrac{1}{0{,}53}-1$
-- $\dfrac{-0{,}47}{1{,}47}$
-- $1-\dfrac{1}{0{,}47}$
-- $\dfrac{1}{0{,}47}$
-
+Donner une expression du taux à appliquer pour que cet article retrouve son prix initial.
 ---CORR---
 Le coefficient multiplicateur associé à une augmentation de $47\ $% est $1+0{,}47=1{,}47$.
 
- Le coefficient multiplicateur réciproque est donc $\dfrac{1}{1{,}47}$.
+Le coefficient multiplicateur réciproque est donc $\dfrac{1}{1{,}47}$.
 
- On en déduit que le taux réciproque est $\dfrac{1}{1{,}47}-1$ ou $\dfrac{-0{,}47}{1{,}47}$.
+On en déduit que le taux réciproque est $\dfrac{1}{1{,}47}-1$ ou $\dfrac{-0{,}47}{1{,}47}$.
 
- Le taux réciproque est donc $\dfrac{-0{,}47}{1{,}47}$.
-
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
+Le taux réciproque est donc $\dfrac{-0{,}47}{1{,}47}$.
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 8 — Équations, pourcentages et évolutions
-</div>
-
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-L'ensemble $S$ des solutions de l'équation $(x+2)^2=13$ est :
-
-- $S=${$-15\ ;\ 11$}
-- $S=${$-\sqrt{13}-2;-\sqrt{13}-2$}
-- $S=${$-\sqrt{13}-2\ ;\ \sqrt{13}-2$}
-- $S=${$-\sqrt{13}+2;\sqrt{13}+2$}
-
-
+{{< auto1-exo numero="01" >}}
+Résoudre dans $\mathbb{R}$ l'équation $(x+2)^2=13$.
 ---CORR---
 L'équation est de la forme $X^2=k$ avec $X=(x+2)$ et $k=13$.<br>
 Comme $k>0$, les solutions de $(x+2)^2=13$ sont données par les solutions de chacune des équations :         $x+2=-\sqrt{13}$ et $x+2=\sqrt{13}$.<br>
 $x+2=-\sqrt{13}$ a pour solution $-\sqrt{13}-2$ et
 $x+2=\sqrt{13}$ a pour solution $\sqrt{13}-2$.<br>
 Ainsi, l'ensemble des solutions de l'équation est $S=\boldsymbol{\{-\sqrt{13}-2\,;\,\sqrt{13}-2\}}$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Une durée de $84$ minutes correspond à :
-
-- $1{,}4$ heure
-- $1{,}24$ heure
-- $0{,}84$ heure
-- $1{,}5$ heure
-
-
+{{< auto1-exo numero="02" >}}
+Convertir $84$ minutes en heures (écriture décimale).
 ---CORR---
 $84\text{ min}= 60 \text{ min}+24\text{ min}=1\text{ h}+\dfrac{4}{10}\text{ h}=1{,}4\text{ h}$.<br>
-Ainsi, $84$ min correspond à $\boldsymbol{1{,}4}$ heure.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+Ainsi, $84$ min correspond à $\boldsymbol{1{,}4}$ heure.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-La valeur la plus proche de $21\ $% de $102\ 533$ est :
-
-- $20\ 000$
-- $2\ 000$
-- $83\ 000$
-- $10\ 000$
-
-
+{{< auto1-exo numero="03" >}}
+Donner un ordre de grandeur de $21\ $% de $102\ 533$.
 ---CORR---
 $21\,\%$ est proche de $20\,\%$ et $102\,533$ est proche de $100\,000$.<br>
-Ainsi, le calcul de $21\,\%$ de $102\,533$ est proche de $20\,\%$ de $100\,000$ soit $\boldsymbol{20\,000}$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+Ainsi, le calcul de $21\,\%$ de $102\,533$ est proche de $20\,\%$ de $100\,000$ soit $\boldsymbol{20\,000}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="04" >}}
+Le prix d'un article est noté $P$. Il connaît deux augmentations successives de $50\ $%.
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-Le prix d'un article est noté $P$. Il connaît deux augmentations successives de $50\ $%. 
-
-Le prix après ces augmentations est :
-
-- $P \times \left(\dfrac{50}{100}\right)^2$
-- $P \times \left(1 + \left(\dfrac{50}{100}\right)^2\right)$
-- $P \times \left(1 + \dfrac{1}{2}\right)^2$
-- $P \times 1$
-
-
+Exprimer le prix après ces augmentations en fonction de $P$.
 ---CORR---
 Après une augmentation de $50\,\%$, le nouveau prix est $P \times 1{,}5$.<br>
 Après une deuxième augmentation de $50\,\%$, le prix devient : <br>
-$(P \times 1{,}5) \times 1{,}5 = \boldsymbol{P \times \left(1 + \dfrac{50}{100}\right)^2}=\boldsymbol{P \times  \left(1 + \dfrac{1}{2}\right)^2} = \boldsymbol{P \times 1{,}5^2}$<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+$(P \times 1{,}5) \times 1{,}5 = \boldsymbol{P \times \left(1 + \dfrac{50}{100}\right)^2}=\boldsymbol{P \times  \left(1 + \dfrac{1}{2}\right)^2} = \boldsymbol{P \times 1{,}5^2}$
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+Le prix d'un article connaît deux baisses successives de $20\ $%.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-Le prix d’un article connait deux baisses successives de $20\ $%. 
-
- Le taux d'évolution global associé est :
-
-- $20\ $%
-- $-36\ $%
-- $40\ $%
-- $-31\ $%
-
-
+Donner le taux d'évolution global.
 ---CORR---
 Le coefficient multiplicateur associé à une baisse de $20\,\%$ est $0{,}8$.<br>
 Le coefficient multiplicateur associé à deux baisses successives de $20\,\%$ est le produit des coefficients multiplicateurs, soit $0{,}8\times 0{,}8=0{,}64$.<br>
-L'évolution globale est donnée par $0{,}64-1=-0{,}36=\boldsymbol{-36}\,\%$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+L'évolution globale est donnée par $0{,}64-1=-0{,}36=\boldsymbol{-36}\,\%$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="06" >}}
+Le prix d'un article a subi une augmentation de $23\ $%.
 
-{{< qcm correct="0" type="auto" >}}
----Q---
-Le prix d’un article a subi une augmentation de $23\ $%.
-
- Le taux à appliquer pour que cet article retrouve son prix initial est donné par :
-
-- $\dfrac{-0{,}23}{1{,}23}$
-- $1-\dfrac{1}{0{,}23}$
-- $\dfrac{1}{0{,}23}$
-- $\dfrac{1}{0{,}77}-1$
-
-
+Donner une expression du taux à appliquer pour que cet article retrouve son prix initial.
 ---CORR---
 Le coefficient multiplicateur associé à une augmentation de $23\,\%$ est $1+0{,}23=1{,}23$.<br>
 Le coefficient multiplicateur réciproque est donc  $\dfrac{1}{1{,}23}$.<br>
 On en déduit que le taux réciproque  est  $\dfrac{1}{1{,}23}-1$ ou $\dfrac{-0{,}23}{1{,}23}$.<br>
-Le taux réciproque est donc $\boldsymbol{\dfrac{-0{,}23}{1{,}23}}$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
+Le taux réciproque est donc $\boldsymbol{\dfrac{-0{,}23}{1{,}23}}$.
+{{< /auto1-exo >}}
 
 </div>

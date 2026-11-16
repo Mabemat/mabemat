@@ -6,62 +6,34 @@ auto_number: 13
 weight: 13
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 13 — Algèbre, fonctions et puissances
-</div>
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Le produit de $3$ par la somme de $x$ et de $6$ est égal à :
-
-- $(x+6)\times 3$
-- $3\times 6+x$
-- $3x\times 6$
-- $3x+6$
-
+{{< auto1-exo numero="01" >}}
+Écrire, en fonction de $x$, le produit de $3$ par la somme de $x$ et de $6$.
 ---CORR---
 Le produit de $3$ par la somme de $x$ et de $6$ s'écrit : $\boldsymbol{(x+6)\times 3}$.
+{{< /auto1-exo >}}
 
+{{< auto1-exo numero="02" >}}
+Le degré Fahrenheit $F$ est une unité de mesure de la température utilisée aux États-Unis. Il est lié au degré Celsius $C$ par la formule :
 
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Le degré Fahrenheit $F$ est une unité de mesure de la température utilisée aux États-Unis. 
-Il est lié au degré Celsius $C$ par la formule suivante : 
 $$F=\dfrac{9}{5}C+32$$
-L'expression permettant, à partir de cette formule, d'exprimer $C$ est :
 
-- $C=\dfrac{5}{9}(F-32)$
-- $C=\dfrac{5}{9}F-32$
-- $C=\dfrac{5F-32}{9}$
-- $C=\dfrac{9}{5}(F-32)$
-
+Exprimer $C$ en fonction de $F$.
 ---CORR---
 On part de la formule : $F = \dfrac{9}{5}C + 32$.
 
 En isolant $C$, on obtient : $F - 32 = \dfrac{9}{5}C$.
 
 En multipliant les deux membres par $\dfrac{5}{9}$, on obtient : $\boldsymbol{C = \dfrac{5}{9}(F - 32)}$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
+{{< auto1-exo numero="03" >}}
+Soit $f$ la fonction définie sur $[-3\ ;\ 6]$ représentée ci-dessous.
 
-{{< qcm correct="2" type="auto" layout="grid">}}
----Q---
-Soit la fonction $f$ représentée ci-dessous.
-<img src="graphe_f05_2.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<img src="graphe_f05_2.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-Le tableau de variations de la fonction $f$ est :
-
-- <img src="graphe_f05_2_optA.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_2_optB.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_2_optC.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_2_optD.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
+Dresser le tableau de variations de $f$.
 ---CORR---
 La fonction $f$ est définie sur $[-3\ ;\ 6]$.
 
@@ -70,155 +42,91 @@ La fonction est croissante puis décroissante.
 Elle atteint un maximum en $x=1$.
 
 <img src="graphe_f05_2_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
+{{< auto1-exo numero="04" >}}
 On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-2x^2-4x-1$.
 
- L'image de $-\dfrac{3}{5}$ par cette fonction est :
-
-- $\dfrac{17}{25}$
-- $-\dfrac{17}{25}$
-- $\dfrac{53}{25}$
-- $-\dfrac{58}{25}$
-
+Calculer l'image de $-\dfrac{3}{5}$ par $f$.
 ---CORR---
 On remplace $x$ par $-\dfrac{3}{5}$ dans l'expression de $f$ :
 
- 
- $\begin{aligned}
- f\left(-\dfrac{3}{5}\right)&=-2\times \left(-\dfrac{3}{5}\right)^2-4\times \left(-\dfrac{3}{5}\right)-1\\
- &=-2\times\dfrac{9}{25}+\dfrac{12}{5}-1\\
- &=-\dfrac{18}{25}+\dfrac{12}{5}-1\\
- &=\dfrac{-18+60-25}{25}\\
- &=\dfrac{17}{25}
- \end{aligned}$
 
- 
- L'image de $-\dfrac{3}{5}$ par la fonction $f$ est : $\boldsymbol{\dfrac{17}{25}}$.
- 
- 
-La bonne réponse est la réponse <span class="rep">A</span>.
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Soient $a$ et $b$ deux nombres réels non nuls. 
-À quelle expression est égale $a^4\times b^4$ ?
-
-- $\left(ab\right)^3\times b^{}$
-- $\left(ab\right)^4$
-- Aucune de ces propositions.
-- $\left(ab\right)^{8}$
-
----CORR---
-Les deux exposants sont égaux, ainsi : 
 $\begin{aligned}
- a^4\times b^4&=\boldsymbol{\left(ab\right)^4}\end{aligned}$
+f\left(-\dfrac{3}{5}\right)&=-2\times \left(-\dfrac{3}{5}\right)^2-4\times \left(-\dfrac{3}{5}\right)-1\\
+&=-2\times\dfrac{9}{25}+\dfrac{12}{5}-1\\
+&=-\dfrac{18}{25}+\dfrac{12}{5}-1\\
+&=\dfrac{-18+60-25}{25}\\
+&=\dfrac{17}{25}
+\end{aligned}$
 
-La bonne réponse est la réponse <span class="rep">B</span>.
-{{< /qcm >}}
 
-{{< qcm correct="2" type="auto" >}}
----Q---
+L'image de $-\dfrac{3}{5}$ par la fonction $f$ est : $\boldsymbol{\dfrac{17}{25}}$.
+{{< /auto1-exo >}}
+
+{{< auto1-exo numero="05" >}}
+Soient $a$ et $b$ deux réels non nuls.
+
+Écrire $a^4\times b^4$ sous la forme d'une seule puissance.
+---CORR---
+Les deux exposants sont égaux, ainsi :
+$\begin{aligned}
+a^4\times b^4&=\boldsymbol{\left(ab\right)^4}\end{aligned}$
+{{< /auto1-exo >}}
+
+{{< auto1-exo numero="06" >}}
 $p\ $% de $20$ est égal à $18$.
- On a :
 
-- $p=9$
-- $p=18$
-- $p=90$
-- $p=900$
-
+Déterminer $p$.
 ---CORR---
 Prendre $10\ $% d'une quantité revient à la diviser par $10$.
 
- $10\ $% de $20$ est égal à $2$.
- 
- En multipliant par $9$, on obtient :  $90\ $% de $20$ est égal à $18$.
- 
- Ainsi $p=\boldsymbol{90}$.
- 
-La bonne réponse est la réponse <span class="rep">C</span>.
-{{< /qcm >}}
+$10\ $% de $20$ est égal à $2$.
+
+En multipliant par $9$, on obtient :  $90\ $% de $20$ est égal à $18$.
+
+Ainsi $p=\boldsymbol{90}$.
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 13 — Algèbre, fonctions et puissances
-</div>
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Le produit de $9$ par la somme de $x$ et de $8$ est égal à :
-
-- $9+8x$
-- $9(x+8)$
-- $9(x\times 8)$
-- $9\times 8+x$
-
+{{< auto1-exo numero="01" >}}
+Écrire, en fonction de $x$, le produit de $9$ par la somme de $x$ et de $8$.
 ---CORR---
-Le produit de $9$ par la somme de $x$ et de $8$ s'écrit : $\boldsymbol{9(x+8)}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Le produit de $9$ par la somme de $x$ et de $8$ s'écrit : $\boldsymbol{9(x+8)}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
+{{< auto1-exo numero="02" >}}
 L'aire $A$ d'un trapèze de petite base $b$, de grande base $B$ et de hauteur $h$ est donnée par :
+
 $$A=\dfrac{(b+B)\times h}{2}$$
-L'expression permettant, à partir de cette formule, d'exprimer la hauteur $h$ est :
 
-- $h=\dfrac{2A}{b+B}$
-- $h=\dfrac{2A}{bB}$
-- $h=2A(b+B)$
-- $h=\dfrac{A}{b+B}$
-
+Exprimer $h$ en fonction de $A$, $b$ et $B$.
 ---CORR---
 On part de la formule : $A = \dfrac{(b + B) \times h}{2}$.<br>
 En multipliant les deux membres par $2$, on obtient : $2A = (b + B) \times h$.<br>
-En isolant $h$, on obtient : $\boldsymbol{h = \dfrac{2A}{b + B}}$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+En isolant $h$, on obtient : $\boldsymbol{h = \dfrac{2A}{b + B}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="03" >}}
+Soit $f$ la fonction définie sur $[-5\ ;\ 4]$ représentée ci-dessous.
 
-{{< qcm correct="2" type="auto" layout="grid">}}
----Q---
-Soit la fonction $f$ représentée ci-dessous.
-<img src="graphe_f05_2_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<img src="graphe_f05_2_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
-Le tableau de variations de la fonction $f$ est :
-
-- <img src="graphe_f05_2_devoir_optA_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_2_devoir_optB_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_2_devoir_optC_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-- <img src="graphe_f05_2_devoir_optD_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-
+Dresser le tableau de variations de $f$.
 ---CORR---
 La fonction $f$ est définie sur $[-5\,;\,4]$.<br>
 La fonction est décroissante puis croissante.<br>
 Elle atteint un minimum en $x=-1$.<br>
 <img src="corr_f05_2_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="04" >}}
 On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=-2x^2+3x-2$.
 
- L'image de $-\dfrac{6}{5}$ par cette fonction est :
-
-- $-\dfrac{68}{25}$
-- $-\dfrac{152}{25}$
-- $-\dfrac{212}{25}$
-- $\dfrac{212}{25}$
-
+Calculer l'image de $-\dfrac{6}{5}$ par $f$.
 ---CORR---
 On remplace $x$ par $-\dfrac{6}{5}$ dans l'expression de $f$ :<br>
 
@@ -232,21 +140,13 @@ f\left(-\dfrac{6}{5}\right)&=-2\times \left(-\dfrac{6}{5}\right)^2+3\times \left
 \end{aligned}
 $$
 
-L'image de $-\dfrac{6}{5}$ par la fonction $f$ est : $\boldsymbol{-\dfrac{212}{25}}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+L'image de $-\dfrac{6}{5}$ par la fonction $f$ est : $\boldsymbol{-\dfrac{212}{25}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+Soient $a$ et $b$ deux réels non nuls.
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-Soient $a$ et $b$ deux nombres réels non nuls. 
-À quelle expression est égale $a^3\times b^3$ ?
-
-- $\left(ab\right)^{6}$
-- Aucune de ces propositions.
-- $\left(ab\right)^3$
-- $\left(ab\right)^2\times b^{}$
-
+Écrire $a^3\times b^3$ sous la forme d'une seule puissance.
 ---CORR---
 Les deux exposants sont égaux, ainsi : <br>
 
@@ -254,29 +154,18 @@ $$
 \begin{aligned}
 a^3\times b^3&=\boldsymbol{\left(ab\right)^3}\end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="06" >}}
 $p\ $% de $60$ est égal à $3$.
- On a :
 
-- $p=0{,}5$
-- $p=3$
-- $p=5$
-- $p=50$
-
+Déterminer $p$.
 ---CORR---
 Prendre $10\,\%$ d'une quantité revient à la diviser par $10$.<br>
 $10\,\%$ de $60$ est égal à $6$.<br>
 En divisant par $2$, on obtient : <br>
 $5\,\%$  de $60$ est égal à $3$.<br>
-Ainsi $p=\boldsymbol{5}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
+Ainsi $p=\boldsymbol{5}$.
+{{< /auto1-exo >}}
 
 </div>

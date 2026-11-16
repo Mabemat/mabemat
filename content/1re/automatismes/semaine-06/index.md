@@ -6,220 +6,124 @@ auto_number: 6
 weight: 6
 ---
 
-<div class="qcm-container" data-no-score="true">
+<div class="auto1-open" data-mode="seance">
 
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 6 — Pourcentages, droites et algèbre
-</div>
+{{< auto1-exo numero="01" >}}
+Dans un lycée, il y a $1\ 000$ élèves inscrits. $20\ $% d'entre eux étudient l'espagnol.
 
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Dans un lycée, il y a $1\ 000$ élèves inscrits. 
-
- $20\ $% d'entre eux étudient l'Espagnol.
-
- Le nombre d'élèves qui étudient l'Espagnol est égal à :
-
-- $250$
-- $50$
-- $20$
-- $200$
-
+Combien d'élèves étudient l'espagnol ?
 ---CORR---
 $20\ $% de $1\ 000  = 0{,}2 \times 1\ 000 = 200$
 
- Donc $200$ élèves étudient l'Espagnol.
+Donc $200$ élèves étudient l'Espagnol.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">D</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="02" >}}
 Dans un repère du plan, on a représenté une droite.
 
- Le coefficient directeur de cette droite est égal à :
+<img src="graphe_f07-3_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
- <img src="graphe_f07-3_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
-
-- $3$
-- $1$
-- $0$
-- $-1$
-
+Donner le coefficient directeur de cette droite.
 ---CORR---
 La droite est horizontale. On en déduit que son coefficient directeur est $m=0$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
+{{< auto1-exo numero="03" >}}
+Ranger dans l'ordre croissant les nombres suivants :
 
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
-Parmi les quatre nombres suivants, lequel est le plus petit ?
-
-- $32 \times 10^{-2}$
-- $\dfrac{3}{10}$
-- $\dfrac{28}{100}$
-- $0{,}31$
-
+$$32\times 10^{-2}\ ;\quad \dfrac{3}{10}\ ;\quad \dfrac{28}{100}\ ;\quad 0{,}31$$
 ---CORR---
 Pour comparer ces quatre nombres, on les écrit sous forme décimale :
 
-$\dfrac{3}{10} = 0{,}3$ 
+$\dfrac{3}{10} = 0{,}3$
 
-$\dfrac{28}{100} = 0{,}28$ 
+$\dfrac{28}{100} = 0{,}28$
 
-$32 \times 10^{-2} = 0{,}32$ 
+$32 \times 10^{-2} = 0{,}32$
 
-$0{,}31$ 
+$0{,}31$
 
 On a donc : $0{,}28 < 0{,}3 < 0{,}31 < 0{,}32$.
 
-Le plus petit nombre est donc : $\dfrac{28}{100}$.
+Dans l'ordre croissant : $\boldsymbol{\dfrac{28}{100}<\dfrac{3}{10}<0{,}31<32\times 10^{-2}}$.
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
-
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="04" >}}
 Soit $x$ un réel non nul.
 
-À quelle expression est égale $\dfrac{1}{6}-\dfrac{5x+3}{x}$ ?
-
-- $\dfrac{29x +18}{6x}$
-- $-\dfrac{31x +18}{6x}$
-- $-\dfrac{29x +18}{6x}$
-- $\dfrac{-29x +18}{6x}$
-
+Écrire $\dfrac{1}{6}-\dfrac{5x+3}{x}$ sous la forme d'un seul quotient.
 ---CORR---
-On met l'expression au même dénominateur : 
+On met l'expression au même dénominateur :
 
 $\begin{aligned}
-        \dfrac{1}{6}-\dfrac{5x+3}{x}&=\dfrac{x-6\times \left(5x+3\right)}{6x}\\
-        &=\dfrac{x -30x -18}{6x}\\
-        &=\dfrac{-29x -18}{6x}\\
-     \end{aligned}$
+\dfrac{1}{6}-\dfrac{5x+3}{x}&=\dfrac{x-6\times \left(5x+3\right)}{6x}\\
+&=\dfrac{x -30x -18}{6x}\\
+&=\dfrac{-29x -18}{6x}\\
+\end{aligned}$
 
 $\phantom{\dfrac{1}{6}-\dfrac{5x+3}{x}}=-\dfrac{29x +18}{6x}$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">C</span>.
+{{< auto1-exo numero="05" >}}
+On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{x}{y}+2=\dfrac{5}{u}$.
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{x}{y}+2= \dfrac{5}{u}$.
-
- On peut affirmer que :
-
-- $u=\dfrac{5}{x+2y}$
-- $u=\dfrac{5y}{x+2y}$
-- $u=5y$
-- $u=\dfrac{x+2y}{5y}$
-
+Exprimer $u$ en fonction de $x$ et $y$.
 ---CORR---
-On isole $u$ dans le premier membre : 
+On isole $u$ dans le premier membre :
 
- $\begin{aligned}
-               \dfrac{x}{y}+2&= \dfrac{5}{u} \\ 
-              \dfrac{x+2y}{y}&= \dfrac{5}{u} \\ 
-              u&=\dfrac{5\times y}{x+2y} \\
-              u&= \dfrac{5y}{x+2y} 
-              \end{aligned}$
+$\begin{aligned}
+\dfrac{x}{y}+2&= \dfrac{5}{u} \\
+\dfrac{x+2y}{y}&= \dfrac{5}{u} \\
+u&=\dfrac{5\times y}{x+2y} \\
+u&= \dfrac{5y}{x+2y}
+\end{aligned}$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
+{{< auto1-exo numero="06" >}}
+Une augmentation de $10\ $% est suivie d'une augmentation de $20\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="0" type="auto" >}}
----Q---
-Une augmentation de $10\ $% suivie d'une augmentation de $20\ $% équivaut à :
-
-- une augmentation de $32\ $%
-- une augmentation de $30\ $%
-- une augmentation de $34\ $%
-- une augmentation de $35\ $%
-
+À quelle évolution globale cela correspond-il ?
 ---CORR---
-À partir des évolutions en pourcentage, on déduit les coefficients multiplicateurs : 
+À partir des évolutions en pourcentage, on déduit les coefficients multiplicateurs :
 
 On note $CM_1 = 1 + \dfrac{10}{100}=1{,}1$ et $CM_2 = 1 + \dfrac{20}{100}=1{,}2$.
 
- Le coefficient multiplicateur global est : 
+Le coefficient multiplicateur global est :
 
- $CM = CM_1 \times CM_2 = 1{,}1 \times 1{,}2 = 1{,}32$ 
+$CM = CM_1 \times CM_2 = 1{,}1 \times 1{,}2 = 1{,}32$
 
 Or, multiplier par $1{,}32$ revient à avoir **une** **augmentation** **de** $32\ $%.
-
-La bonne réponse est la réponse <span class="rep">A</span>.
-
-{{< /qcm >}}
+{{< /auto1-exo >}}
 
 </div>
 
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
+<div class="auto1-open" data-mode="devoir">
 
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 6 — Pourcentages, droites et algèbre
-</div>
+{{< auto1-exo numero="01" >}}
+Dans un lycée, il y a $400$ élèves inscrits. $20\ $% d'entre eux étudient l'espagnol.
 
-
-{{< qcm correct="3" type="auto" >}}
----Q---
-Dans un lycée, il y a $400$ élèves inscrits. 
-
- $20\ $% d'entre eux étudient l'Espagnol.
-
- Le nombre d'élèves qui étudient l'Espagnol est égal à :
-
-- $320$
-- $130$
-- $20$
-- $80$
-
-
+Combien d'élèves étudient l'espagnol ?
 ---CORR---
 $20\,\%$ de $400  = 0{,}2 \times 400 = \boldsymbol{80}$<br>
-Donc $\boldsymbol{80}$ élèves étudient l'Espagnol.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+Donc $\boldsymbol{80}$ élèves étudient l'Espagnol.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="3" type="auto" >}}
----Q---
+{{< auto1-exo numero="02" >}}
 Dans un repère du plan, on a représenté une droite.
 
- Le coefficient directeur de cette droite est égal à :
+<img src="graphe_f07-3_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
 
- <img src="graphe_f07-3_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
-
-- $-\dfrac{2}{3}$
-- $\dfrac{3}{2}$
-- $3$
-- $-\dfrac{3}{2}$
-
-
+Déterminer graphiquement le coefficient directeur de cette droite.
 ---CORR---
 En prenant deux points sur la droite, on obtient :<br>
 $m=\dfrac{\boldsymbol{3}}{\boldsymbol{-2}}=\boldsymbol{-\dfrac{3}{2}}$<br>
 <img src="corr_f07_3_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
-La bonne réponse est la réponse <span class="rep">D</span>.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="03" >}}
+Ranger dans l'ordre croissant les nombres suivants :
 
-{{< qcm correct="2" type="auto" >}}
----Q---
-Parmi les quatre nombres suivants, lequel est le plus grand ?
-
-- $\dfrac{4}{5}$
-- $\dfrac{85}{100}$
-- $9 \times 10^{-1}$
-- $0{,}88$
-
-
+$$\dfrac{4}{5}\ ;\quad \dfrac{85}{100}\ ;\quad 9\times 10^{-1}\ ;\quad 0{,}88$$
 ---CORR---
 Pour comparer ces quatre nombres, on les écrit sous forme décimale :
 
@@ -232,23 +136,13 @@ $9 \times 10^{-1} = 0{,}9$
 $0{,}88$
 
 On a donc : $0{,}8 < 0{,}85 < 0{,}88 < 0{,}9$.<br>
-Le plus grand nombre est donc : $\boldsymbol{9 \times 10^{-1}}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+Dans l'ordre croissant : $\boldsymbol{\dfrac{4}{5}<\dfrac{85}{100}<0{,}88<9\times 10^{-1}}$.
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
-
-{{< qcm correct="2" type="auto" >}}
----Q---
+{{< auto1-exo numero="04" >}}
 Soit $x$ un réel non nul.
 
-À quelle expression est égale $\dfrac{1}{3}-\dfrac{4x+4}{x}$ ?
-
-- $\dfrac{11x +12}{3x}$
-- $\dfrac{-11x +12}{3x}$
-- $-\dfrac{11x +12}{3x}$
-- $-\dfrac{13x +12}{3x}$
-
-
+Écrire $\dfrac{1}{3}-\dfrac{4x+4}{x}$ sous la forme d'un seul quotient.
 ---CORR---
 On met l'expression au même dénominateur : <br>
 
@@ -260,23 +154,13 @@ $$
 \end{aligned}
 $$
 
-$\phantom{\dfrac{1}{3}-\dfrac{4x+4}{x}}=-\dfrac{11x +12}{3x}$<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+$\phantom{\dfrac{1}{3}-\dfrac{4x+4}{x}}=-\dfrac{11x +12}{3x}$
+{{< /auto1-exo >}}
 
-{{< /qcm >}}
+{{< auto1-exo numero="05" >}}
+On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{2}{x}+\dfrac{3}{y}=\dfrac{4}{u}$.
 
-{{< qcm correct="1" type="auto" >}}
----Q---
-On considère des réels $x$, $y$ et $u$ non nuls tels que $\dfrac{2}{x}+\dfrac{3}{y}= \dfrac{4}{u}$.
-
- On peut affirmer que :
-
-- $u=\dfrac{3x+2y}{4xy}$
-- $u=\dfrac{4xy}{3x+2y}$
-- $u=3x+2y$
-- $u=6xy$
-
-
+Exprimer $u$ en fonction de $x$ et $y$.
 ---CORR---
 On isole $u$ dans le premier membre : <br>
 
@@ -287,29 +171,18 @@ $$
 u&= \boldsymbol{\dfrac{4xy}{3x+2y}}
 \end{aligned}
 $$
+{{< /auto1-exo >}}
 
-La bonne réponse est la réponse <span class="rep">B</span>.
+{{< auto1-exo numero="06" >}}
+Une augmentation de $20\ $% est suivie d'une augmentation de $10\ $%.
 
-{{< /qcm >}}
-
-{{< qcm correct="1" type="auto" >}}
----Q---
-Une augmentation de $20\ $% suivie d'une augmentation de $10\ $% équivaut à :
-
-- une augmentation de $31\ $%
-- une augmentation de $32\ $%
-- une augmentation de $30\ $%
-- une augmentation de $35\ $%
-
-
+À quelle évolution globale cela correspond-il ?
 ---CORR---
 À partir des évolutions en pourcentage, on déduit les coefficients multiplicateurs : <br>
 On note $CM_1 = 1 + \dfrac{20}{100}=1{,}2$ et $CM_2 = 1 + \dfrac{10}{100}=1{,}1$.<br>
 Le coefficient multiplicateur global est : <br>
 $CM = CM_1 \times CM_2 = 1{,}2 \times 1{,}1 = 1{,}32$ <br>
-Or, multiplier par $1{,}32$ revient à avoir une augmentation de $\boldsymbol{32\,\%}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
-
-{{< /qcm >}}
+Or, multiplier par $1{,}32$ revient à avoir une augmentation de $\boldsymbol{32\,\%}$.
+{{< /auto1-exo >}}
 
 </div>
