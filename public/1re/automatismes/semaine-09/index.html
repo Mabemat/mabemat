@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,32 +216,20 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 9 — Équations-produits, évolutions et statistiques
-</div>
+  <div class="auto1-open" data-mode="seance">
 
 
 
@@ -242,381 +238,91 @@ Séance 9 — Équations-produits, évolutions et statistiques
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Le prix d’un article a baissé : il est passé de $100$ euros à $90$ euros.
-Cela signifie que ce prix a été multiplié par :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;un article est passé de $100$ euros à $90$ euros.</p>
+<p>Par quel nombre ce prix a-t-il été multiplié ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$1{,}1$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0{,}1$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$0{,}9$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$1{,}9$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p><strong>Correction 1 :</strong></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p><strong>Méthode 1 :</strong></p>
 <p>On cherche le nombre $k$ tel que $ k \times 100=90 $.</p>
 <p>On obtient $k=\dfrac{90}{100} = \dfrac{9}{10}=0{,}9$.</p>
-<p><strong>Correction 2 :</strong></p>
+<p><strong>Méthode 2 :</strong></p>
 <p>Le prix a diminué de $10$ euros, ce qui représente $10\ $% de $100$ euros.</p>
 <p>Le coefficient multiplicateur associé à cette baisse est $0{,}9$.</p>
 <p>On peut dire que le prix a été multiplié par $0{,}9$.</p>
-<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Une série statistique est résumée par le diagramme en boite ci-dessous. Quel pourcentage de valeurs sont comprises entre $15$ et $75$ ?
-<img src="graphe_s03-2_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$50$%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$25$%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$100$%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$80$%</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La valeur $15$ correspond au minimum et la valeur $75$ au maximum.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Une série statistique est résumée par le diagramme en boîte ci-dessous.</p>
+<img src="graphe_s03-2_1.svg" alt="Diagramme en boîte" style="display:block;margin:1rem auto;max-width:360px">
+<p>Quel pourcentage des valeurs est compris entre $15$ et $75$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La valeur $15$ correspond au minimum et la valeur $75$ au maximum.</p>
 <p>Donc, la proportion de valeurs comprises entre $15$ et $75$ est de $100$%.</p>
-<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Le produit des solutions de l&rsquo;équation $(4x+12)(4x+20)=0$ est égal à :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$-8$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$15$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On reconnaît une équation produit nul.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère l&rsquo;équation $(4x+12)(4x+20)=0$.</p>
+<p>Calculer la somme de ses solutions.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On reconnaît une équation produit nul.</p>
 <p>Un produit de facteurs est nul, si et seulement si l&rsquo;un au moins de ses facteurs est nul.</p>
 <p>$\begin{aligned}
 (4x+12)(4x+20)&=0\\
@@ -624,697 +330,153 @@ Cela signifie que ce prix a été multiplié par :
 4x=-12 &\text{ ou } 4x=-20\\
 x=-3 &\text{ ou } x=-5
 \end{aligned}$</p>
-<p>Le produit de ces soltions est donc égal à : $(-3)\times (-5)=15$.</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
+<p>La somme de ces solutions est donc égale à : $(-3)+(-5)=\boldsymbol{-8}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=7-\dfrac{6}{5}(x-2)^2$
-L&rsquo;image de $2$ par cette fonction est :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$7-\dfrac{6}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$7$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$7-\dfrac{6}{5}(4+4)$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>$\begin{aligned}
-    f\left(2\right)&=7-\dfrac{6}{5}(2-2)^2\\
-    &=7-\dfrac{6}{5}\times 0\\
-    &=7
-    \end{aligned}$</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=7-\dfrac{6}{5}(x-2)^2$.</p>
+<p>Calculer l&rsquo;image de $2$ par $f$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$\begin{aligned}
+f\left(2\right)&=7-\dfrac{6}{5}(2-2)^2\\
+&=7-\dfrac{6}{5}\times 0\\
+&=7
+\end{aligned}$</p>
 <p>L&rsquo;image de $2$ par la fonction $f$ est : $7$.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On donne la série statistique suivante :
-$7$ ; $10$ ; $18$ ; $5$ ; $14$ ; $8$ ; $16$ ; $19$ ; $12$ ; $13$.
-Parmi ces propositions, laquelle peut être la médiane de la série ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$11$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$13$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$12{,}5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$12$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La série triée dans l&rsquo;ordre croissant est : $5$ ; $7$ ; $8$ ; $10$ ; $12$ ; $13$ ; $14$ ; $16$ ; $18$ ; $19$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Donner la médiane de la série statistique suivante :</p>
+$$7\ ;\ 10\ ;\ 18\ ;\ 5\ ;\ 14\ ;\ 8\ ;\ 16\ ;\ 19\ ;\ 12\ ;\ 13$$
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La série triée dans l&rsquo;ordre croissant est : $5$ ; $7$ ; $8$ ; $10$ ; $12$ ; $13$ ; $14$ ; $16$ ; $18$ ; $19$.</p>
 <p>La série comporte $10$ valeurs, qui est un nombre pair, donc une médiane est une valeur <strong>strictement</strong> comprise entre les termes de rang $5$ et $6$,
 soit entre $12$ et $13$.</p>
 <p>Prenons la moyenne de ces deux valeurs :</p>
 <p>$\dfrac{12 + 13}{2} = 12{,}5$.</p>
 <p>La médiane est donc $12{,}5$.</p>
-<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère $A=\dfrac{5}{10\ 000}+\dfrac{5}{100}$. On a :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$A=\dfrac{102}{2\ 000}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$A=0{,}050\ 5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$A=0{,}505$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$A=\dfrac{10}{1\ 000\ 000}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On a :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère $A=\dfrac{5}{10\ 000}+\dfrac{5}{100}$.</p>
+<p>Donner l&rsquo;écriture décimale de $A$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On a :</p>
 <p>$\begin{aligned}
-     A&=\dfrac{5}{10\ 000}+\dfrac{5}{100}\\
-     &=0{,}000\ 5+0{,}05\\
-     &=0{,}050\ 5
-     \end{aligned}$</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+A&=\dfrac{5}{10\ 000}+\dfrac{5}{100}\\
+&=0{,}000\ 5+0{,}05\\
+&=0{,}050\ 5
+\end{aligned}$</p>
+</div>
+  </div>
+  
+</article>
+
+</div>
+<div class="auto1-open" data-mode="devoir">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;un article est passé de $68$ euros à $85$ euros.</p>
+<p>Par quel nombre ce prix a-t-il été multiplié ?</p>
 
   </div>
   
-</div>
-
-</div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 9 — Équations-produits, évolutions et statistiques
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Le prix d’un article a augmenté : il est passé de $68$ euros à $85$ euros.
-Cela signifie que ce prix a été multiplié par :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0{,}75$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$1{,}35$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$0{,}25$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$1{,}25$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p><strong>Correction 1 :</strong><br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p><strong>Méthode 1 :</strong><br>
 On cherche le nombre $k$ tel que $ k \times 68=85 $.<br>
 On obtient $k=\dfrac{85}{68} = \dfrac{5}{4}=\boldsymbol{1{,}25}$.</p>
-<p><strong>Correction 2 :</strong><br>
+<p><strong>Méthode 2 :</strong><br>
 Le prix a augmenté de $17$ euros, ce qui représente $25\,\%$ de $68$ euros.<br>
 Le coefficient multiplicateur associé à cette hausse est $1{,}25$.<br>
-On peut dire que le prix a été multiplié par $\boldsymbol{1{,}25}$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
+On peut dire que le prix a été multiplié par $\boldsymbol{1{,}25}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Une série statistique est résumée par le diagramme en boite ci-dessous. Quel pourcentage de valeurs sont comprises entre $30$ et $75$ ?
-<img src="graphe_s03-2_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$80$%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$25$%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$100$%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$75$%</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    La valeur $30$ correspond au premier quartile et la valeur $75$ au maximum.<br>
-Donc, la proportion de valeurs comprises entre $30$ et $75$ est de $75\%$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
   </div>
   
-</div>
+</article>
 
 
 
@@ -1324,116 +486,54 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Le produit des solutions de l&rsquo;équation $(2x-12)(5x-25)=0$ est égal à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Une série statistique est résumée par le diagramme en boîte ci-dessous.</p>
+<img src="graphe_s03-2_1_devoir.svg" alt="Diagramme en boîte" style="display:block;margin:1rem auto;max-width:360px">
+<p>Quel pourcentage des valeurs est compris entre $30$ et $75$ ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$1$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$11$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$30$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$-30$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On reconnaît une équation produit nul. <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>La valeur $30$ correspond au premier quartile et la valeur $75$ au maximum.<br>
+Donc, la proportion de valeurs comprises entre $30$ et $75$ est de $75\%$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère l&rsquo;équation $(2x-12)(5x-25)=0$.</p>
+<p>Calculer le produit de ses solutions.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On reconnaît une équation produit nul. <br>
 Un produit de facteurs est nul, si et seulement si l&rsquo;un au moins de ses facteurs est nul.<br></p>
 $$
 \begin{aligned}
@@ -1442,152 +542,46 @@ $$
 2x=12 &\text{ ou } 5x=25\\
 x=6 &\text{ ou } x=5
 \end{aligned}
-$$<p>Le produit de ces soltions est donc égal à : $6\times 5=\boldsymbol{30}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
+$$<p>Le produit de ces solutions est donc égal à : $6\times 5=\boldsymbol{30}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3-\dfrac{2}{3}(x-5)^2$
-L&rsquo;image de $6$ par cette fonction est :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{1}{3}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{7}{3}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{11}{3}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$3$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    $$
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=3-\dfrac{2}{3}(x-5)^2$.</p>
+<p>Calculer l&rsquo;image de $6$ par $f$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$$
 \begin{aligned}
 f\left(6\right)&=3-\dfrac{2}{3}(6-5)^2\\
 &=3-\dfrac{2}{3}\times 1\\
 &=\dfrac{7}{3}
 \end{aligned}
-$$<p>L&rsquo;image de $6$  par la  fonction  $f$ est : $\boldsymbol{\dfrac{7}{3}}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.</p>
+$$<p>L&rsquo;image de $6$  par la  fonction  $f$ est : $\boldsymbol{\dfrac{7}{3}}$.</p></div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1597,140 +591,27 @@ La bonne réponse est la réponse <span class="rep">B</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On donne la série statistique suivante :
-$17$ ; $11$ ; $5$ ; $14$ ; $8$.
-Parmi ces propositions, laquelle peut être la médiane de la série ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$14$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$8$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$11$</span>
-      </div>
-      
-      
-    
+  <div class="auto1re-enonce">
+    <p>Donner la médiane de la série statistique suivante :</p>
+$$17\ ;\ 11\ ;\ 5\ ;\ 14\ ;\ 8$$
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    La série triée dans l&rsquo;ordre croissant est : $5$  ;  $8$  ;  $11$  ;  $14$  ;  $17$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>La série triée dans l&rsquo;ordre croissant est : $5$  ;  $8$  ;  $11$  ;  $14$  ;  $17$.<br>
 La série comporte $5$ valeurs, qui est un nombre impair,  donc la médiane est le terme de rang $3$.<br>
-La médiane est donc $11$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+La médiane est donc $11$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1740,127 +621,33 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On considère $A=\dfrac{5}{10}+\dfrac{5}{100}$. On a :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On considère $A=\dfrac{5}{10}+\dfrac{5}{100}$.</p>
+<p>Donner l&rsquo;écriture décimale de $A$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$A=0{,}55$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$A=5{,}5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$A=\dfrac{12}{20}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$A=\dfrac{10}{1\ 000}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On a  : <br></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On a  : <br></p>
 $$
 \begin{aligned}
 A&=\dfrac{5}{10}+\dfrac{5}{100}\\
 &=0{,}5+0{,}05\\
 &=\boldsymbol{0{,}55}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+$$</div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -1895,10 +682,65 @@ $$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2072,7 +914,7 @@ $$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

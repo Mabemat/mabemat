@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,32 +216,20 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 17 — Calcul, équations et fonctions
-</div>
+  <div class="auto1-open" data-mode="seance">
 
 
 
@@ -242,1035 +238,241 @@ Séance 17 — Calcul, équations et fonctions
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Le prix d&rsquo;une maison est $229\ 500\ $€.
-Le vendeur propose une remise de $500\ $€.
-Le pourcentage de remise le plus proche est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;une maison est $229\ 500\ $€. Le vendeur propose une remise de $500\ $€.</p>
+<p>Donner un ordre de grandeur du pourcentage de remise.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$1\ $%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0{,}1\ $%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$20\ $%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$10\ $%</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour déterminer un ordre de grandeur, on cherche à comparer la remise avec des pourcentages simples du prix initial.</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour déterminer un ordre de grandeur, on cherche à comparer la remise avec des pourcentages simples du prix initial.</p>
 <p>Les pourcentages de référence les plus utiles sont $1\ $% et $10\ $% car ils sont faciles à calculer mentalement.</p>
 <p>La remise ($500\ $€) est très petite par rapport au prix.</p>
 <p>On prend $1\ $% de $229\ 500\ $€. Cela revient à diviser par $100$.</p>
 <p>On obtient $2\ 295\ $€.</p>
 <p>On remarque que la remise est environ $10$ fois plus petite que $1\ $% du prix.</p>
-<p>Le pourcentage le plus proche parmi les propositions est $0{,}1$%.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
+<p>Un ordre de grandeur du pourcentage de remise est donc $\boldsymbol{0{,}1\ \%}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Le prix d&rsquo;un article a diminué de $15\ $%.
-Pour retrouver son prix avant la réduction, il faut multiplier son prix actuel par :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{20}{3}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{20}{17}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{20}{23}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{17}{20}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Diminuer de $15~$% revient à multiplier par $1-\dfrac{15}{100}=0{,}85$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;un article a diminué de $15\ $%.</p>
+<p>Par quelle fraction irréductible faut-il multiplier son prix actuel pour retrouver son prix avant la réduction ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Diminuer de $15~$% revient à multiplier par $1-\dfrac{15}{100}=0{,}85$.</p>
 <p>Pour retrouver le prix initial, il faut diviser par ce coefficient, c&rsquo;est-à-dire multiplier par le coefficient multiplicateur réciproque $\dfrac{1}{0{,}85}$.</p>
 <p>En multipliant par $100$ le numérateur et le dénominateur, on a $\dfrac{1}{0{,}85}=\dfrac{100}{85}$, puis en simplifiant par $5$, on obtient $\dfrac{100}{85}=\dfrac{20}{17}$.</p>
 <p>Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{20}{17}}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Soit $a$ un nombre réel non nul et $n$ un entier non nul.
-À quelle expression est égale $a^{2n}(a^n)^5$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$a^{10n}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$a^{7n}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$a^{7n^2}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$a^{10n^2}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On applique la propriété du produit des puissances d&rsquo;un réel :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $a$ un réel non nul et $n$ un entier non nul.</p>
+<p>Écrire $a^{2n}(a^n)^5$ sous la forme d&rsquo;une puissance de $a$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On applique la propriété du produit des puissances d&rsquo;un réel :</p>
 <p>Soient $n$ et $p$ deux entiers et $a$ un réel : $a^n\times a^p=a^{n+p}$</p>
 <p>et la propriété des puissances de puissances :</p>
 <p>Pour tous entiers $n$ et $p$ et $a$ réel, on a : $\left(a^{n}\right)^p=a^{np}$</p>
 <p>$\begin{aligned} a^{2n}(a^n)^5&=a^{2n}\times a^{5n}\\
- &=\boldsymbol{a^{7n}}
- \end{aligned}$</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
+&=\boldsymbol{a^{7n}}
+\end{aligned}$</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On a représenté l&rsquo;hyperbole d&rsquo;équation $y=\dfrac{1}{x}$.
-On note $(I)$ l&rsquo;inéquation, sur $\mathbb{R}^*$, $\dfrac{1}{x}> -2$.
-<img src="graphe_c10_5.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L&rsquo;ensemble des solutions $S$ de cette inéquation est :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$S = \left]-\infty\ ;\ -\dfrac{1}{2}\right[ \cup ]0\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$S = \left]-2\ ;\ 0\right[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$S = \left]-\dfrac{1}{2}\ ;\ 0\right[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$S = \left]-\infty\ ;\ -2\right[ \cup ]0\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour résoudre graphiquement cette inéquation :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté l&rsquo;hyperbole d&rsquo;équation $y=\dfrac{1}{x}$.</p>
+<img src="graphe_c10_5.svg" alt="Hyperbole" style="display:block;margin:1rem auto;max-width:360px">
+<p>Résoudre sur $\mathbb{R}^*$ l&rsquo;inéquation $\dfrac{1}{x}>-2$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour résoudre graphiquement cette inéquation :</p>
 <p>$\bullet$ On trace l&rsquo;hyperbole d&rsquo;équation $y=\dfrac{1}{x}$.</p>
 <p>$\bullet$ On trace la droite horizontale d&rsquo;équation $y=-2$. Cette droite coupe l&rsquo;hyperbole en un point dont l&rsquo;abscisse est : $-\dfrac{1}{2}$.</p>
 <p>$\bullet$ Les solutions de l&rsquo;inéquation sont les abscisses des points de la courbe qui se situent strictement au-dessus de la droite.</p>
- <img src="graphe_c10_5_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-<p>Comme la fonction inverse est définie sur $\mathbb{R}^*$, $0$ est une valeur interdite et donc l&rsquo;ensemble des solutions de l&rsquo;inéquation $(I)$ est : $S = \left]-\infty\ ;\ -\dfrac{1}{2}\right[ \cup ]0\ ;\ +\infty[$.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+<img src="graphe_c10_5_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<p>Comme la fonction inverse est définie sur $\mathbb{R}^*$, $0$ est une valeur interdite et donc l&rsquo;ensemble des solutions de l&rsquo;inéquation est : $S = \left]-\infty\ ;\ -\dfrac{1}{2}\right[ \cup ]0\ ;\ +\infty[$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On donne ci-contre la courbe représentative $\mathscr{C}$ d&rsquo;une fonction $f$ définie sur $[-3\ ;\ 2]$.
-On s&rsquo;intéresse à l&rsquo;équation $f(x)=0$.
-Une seule de ces propositions est exacte :
-<img src="graphe_f04_4.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>L&rsquo;équation $f(x)=0$ admet exactement deux solutions et ces solutions sont de signes contraires.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>L&rsquo;équation $f(x)=0$ admet exactement deux solutions et ces solutions sont négatives.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>L&rsquo;équation $f(x)=0$ admet exactement une solution.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>L&rsquo;équation $f(x)=0$ n&rsquo;admet aucune solution.</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Il y a un point d&rsquo;intersection entre la courbe et l&rsquo;axe des abscisses.</p>
-<p>Par conséquent, <strong>l&rsquo;équation $f(x)=0$ admet exactement une solution.</strong>.
-La bonne réponse est la réponse <span class="rep">C</span>.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne la courbe représentative $\mathscr{C}$ d&rsquo;une fonction $f$ définie sur $[-3\ ;\ 2]$.</p>
+<img src="graphe_f04_4.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Combien de solutions l&rsquo;équation $f(x)=0$ admet-elle ?</p>
 
   </div>
   
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Il y a un point d&rsquo;intersection entre la courbe et l&rsquo;axe des abscisses.</p>
+<p>Par conséquent, <strong>l&rsquo;équation $f(x)=0$ admet exactement une solution.</strong>.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On a représenté ci-contre une droite $\mathcal{D}$ dans un repère orthonormé.
-Une équation de la droite $\mathcal{D}$ est :
-<img src="graphe_f07_5.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$y=\dfrac{1}{3}x+3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x+3y+9=0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$y=-3x+3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x+3y-9=0$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>En prenant deux points $A$ et $B$ sur la droite, on obtient le coefficient directeur :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté une droite $\mathcal{D}$ dans un repère orthonormé.</p>
+<img src="graphe_f07_5.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Donner l&rsquo;équation réduite de la droite $\mathcal{D}$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>En prenant deux points $A$ et $B$ sur la droite, on obtient le coefficient directeur :</p>
 <p>$m=\dfrac{\boldsymbol{-1}}{\boldsymbol{3}}=\boldsymbol{-\dfrac{1}{3}}$.</p>
 <p>L&rsquo;ordonnée à l&rsquo;origine est $p=3$.</p>
-<p>L&rsquo;équation réduite de la droite est donc : $\boldsymbol{y=-\dfrac{1}{3}x+3}$.
+<p>L&rsquo;équation réduite de la droite est donc : $\boldsymbol{y=-\dfrac{1}{3}x+3}$.</p>
 <img src="graphe_f07_5_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-On a :</p>
-<p>$\begin{aligned}
- y&=-\dfrac{1}{3}x+3\\
- \dfrac{1}{3}x+y-3&=0\\
- \boldsymbol{x+3y-9=0}&\quad\text{(en multipliant par } 3\text{)}
- \end{aligned}$</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+</div>
+  </div>
+  
+</article>
+
+</div>
+<div class="auto1-open" data-mode="devoir">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;une maison est $334\ 000\ $€. Le vendeur propose une remise de $68\ 000\ $€.</p>
+<p>Donner un ordre de grandeur du pourcentage de remise.</p>
 
   </div>
   
-</div>
-
-</div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 17 — Calcul, équations et fonctions
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Le prix d&rsquo;une maison est $334\ 000\ $€.
-Le vendeur propose une remise de $68\ 000\ $€.
-Le pourcentage de remise le plus proche est :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$1\ $%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$20\ $%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$10\ $%</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$0{,}1\ $%</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Pour déterminer un ordre de grandeur, on cherche à comparer la remise avec des pourcentages simples du prix initial.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Pour déterminer un ordre de grandeur, on cherche à comparer la remise avec des pourcentages simples du prix initial.<br>
 Les pourcentages de référence les plus utiles sont $1\,\%$ et $10\,\%$ car ils sont faciles à calculer mentalement.<br>
 On prend $10\,\%$ de $334\,000$,€. Cela revient à diviser par $10$.<br>
 On obtient $33\,400$,€.<br>
 On remarque que la remise ($68\,000$,€) est environ $2$ fois plus grande que $10\,\%$ du prix.<br>
-Le pourcentage le plus proche parmi les propositions est $\boldsymbol{20\,\%}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Un ordre de grandeur du pourcentage de remise est donc $\boldsymbol{20\,\%}$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1280,253 +482,55 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Le prix d&rsquo;un article a augmenté de $15\ $%.
-Pour retrouver son prix avant l&rsquo;augmentation, il faut multiplier son prix actuel par :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Le prix d&rsquo;un article a augmenté de $15\ $%.</p>
+<p>Par quelle fraction irréductible faut-il multiplier son prix actuel pour retrouver son prix avant l&rsquo;augmentation ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{20}{23}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{20}{17}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{23}{20}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{20}{3}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Augmenter de $15~\%$ revient à multiplier par $1+\dfrac{15}{100}=1{,}15$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Augmenter de $15~\%$ revient à multiplier par $1+\dfrac{15}{100}=1{,}15$.<br>
 Pour retrouver le prix initial, il faut diviser par ce coefficient, c&rsquo;est-à-dire multiplier par le coefficient multiplicateur réciproque $\dfrac{1}{1{,}15}$.<br>
 En multipliant par $100$ le numérateur et le dénominateur, on a $\dfrac{1}{1{,}15}=\dfrac{100}{115}$, puis en simplifiant par $5$, on obtient  $\dfrac{100}{115}=\dfrac{20}{23}$.<br>
-Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{20}{23}}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+Le coefficient multiplicateur pour retrouver le prix initial est donc $\boldsymbol{\dfrac{20}{23}}$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $a$ un réel non nul et $n$ un entier non nul.</p>
+<p>Écrire $a^{3n}(a^n)^4$ sous la forme d&rsquo;une puissance de $a$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Soit $a$ un nombre réel non nul et $n$ un entier non nul.
-À quelle expression est égale $a^{3n}(a^n)^4$ ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$a^{7n^2}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$a^{12n^2}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$a^{7n}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$a^{12n}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On applique la propriété du produit des puissances d&rsquo;un réel : <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On applique la propriété du produit des puissances d&rsquo;un réel : <br>
 Soient $n$ et $p$ deux entiers et $a$ un réel :  $a^n\times a^p=a^{n+p}$<br>
 et la propriété des puissances de puissances : <br>
 Pour tous entiers $n$ et $p$ et $a$ réel, on a :  $\left(a^{n}\right)^p=a^{np}$<br></p>
@@ -1534,334 +538,46 @@ $$
 \begin{aligned} a^{3n}(a^n)^4&=a^{3n}\times a^{4n}\\
 &=\boldsymbol{a^{7n}}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté l&rsquo;hyperbole d&rsquo;équation $y=\dfrac{1}{x}$.</p>
+<img src="graphe_c10_5_devoir.svg" alt="Hyperbole" style="display:block;margin:1rem auto;max-width:360px">
+<p>Résoudre sur $\mathbb{R}^*$ l&rsquo;inéquation $\dfrac{1}{x}>2$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On a représenté l&rsquo;hyperbole d&rsquo;équation $y=\dfrac{1}{x}$.
-On note $(I)$ l&rsquo;inéquation, sur $\mathbb{R}^*$, $\dfrac{1}{x}> 2$.
-<img src="graphe_c10_5_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L&rsquo;ensemble des solutions $S$ de cette inéquation est :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$S = \left]0\ ;\ 2\right[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$S = ]-\infty\ ;\ 0[ \cup \left]\dfrac{1}{2}\ ;\ +\infty\right[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$S = ]-\infty\ ;\ 0[ \cup \left]2\ ;\ +\infty\right[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$S = \left]0\ ;\ \dfrac{1}{2}\right[$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour résoudre graphiquement cette inéquation : <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour résoudre graphiquement cette inéquation : <br>
 $\bullet$ On trace l&rsquo;hyperbole d&rsquo;équation $y=\dfrac{1}{x}$. <br>
 $\bullet$ On trace la droite horizontale d&rsquo;équation $y=2$. Cette droite coupe l&rsquo;hyperbole en un point dont l&rsquo;abscisse est : $\dfrac{1}{2}$. <br>
 $\bullet$ Les solutions de l&rsquo;inéquation sont les abscisses des points de la courbe qui se situent strictement au-dessus de la droite.<br>
 <img src="corr_c10_5_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
-<p>Comme la fonction inverse est définie sur $\mathbb{R}^*$, $0$ est une valeur interdite et donc l&rsquo;ensemble des solutions de l&rsquo;inéquation $(I)$ est : $S = \left]0\,;\,\dfrac{1}{2}\right[$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
+<p>Comme la fonction inverse est définie sur $\mathbb{R}^*$, $0$ est une valeur interdite et donc l&rsquo;ensemble des solutions de l&rsquo;inéquation est : $S = \left]0\,;\,\dfrac{1}{2}\right[$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On donne ci-contre la courbe représentative $\mathscr{C}$ d&rsquo;une fonction $f$ définie sur $[-3\ ;\ 2]$.
-On s&rsquo;intéresse à l&rsquo;équation $f(x)=0$.
-Une seule de ces propositions est exacte :
-<img src="graphe_f04_4_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>L&rsquo;équation $f(x)=0$ n&rsquo;admet aucune solution.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>L&rsquo;équation $f(x)=0$ admet exactement deux solutions et ces solutions sont de signes contraires.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>L&rsquo;équation $f(x)=0$ admet exactement deux solutions et ces solutions sont négatives.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>L&rsquo;équation $f(x)=0$ admet exactement une solution.</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Il n&rsquo;y a aucun point d&rsquo;intersection entre la courbe et l&rsquo;axe des abscisses.<br>
-Par conséquent,   l&rsquo;équation $f(x)=0$ n&rsquo;admet aucune solution.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
   </div>
   
-</div>
+</article>
 
 
 
@@ -1871,150 +587,62 @@ La bonne réponse est la réponse <span class="rep">A</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On a représenté ci-contre une droite $\mathcal{D}$ dans un repère orthonormé.
-Une équation de la droite $\mathcal{D}$ est :
-<img src="graphe_f07_5_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On donne la courbe représentative $\mathscr{C}$ d&rsquo;une fonction $f$ définie sur $[-3\ ;\ 2]$.</p>
+<img src="graphe_f04_4_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Combien de solutions l&rsquo;équation $f(x)=0$ admet-elle ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$3x+4y+8=0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$y=-\dfrac{4}{3}x+2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$y=-\dfrac{3}{4}x+2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$y=\dfrac{3}{4}x+2$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    En prenant deux points $A$ et $B$ sur la droite, on obtient le coefficient directeur :<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Il n&rsquo;y a aucun point d&rsquo;intersection entre la courbe et l&rsquo;axe des abscisses.<br>
+Par conséquent,   l&rsquo;équation $f(x)=0$ n&rsquo;admet aucune solution.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté une droite $\mathcal{D}$ dans un repère orthonormé.</p>
+<img src="graphe_f07_5_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Donner l&rsquo;équation réduite de la droite $\mathcal{D}$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>En prenant deux points $A$ et $B$ sur la droite, on obtient le coefficient directeur :<br>
 $m=\dfrac{\boldsymbol{-3}}{\boldsymbol{4}}=\boldsymbol{-\dfrac{3}{4}}$.<br>
 L&rsquo;ordonnée à l&rsquo;origine est $p=2$.<br>
 L&rsquo;équation réduite de la droite est donc : $\boldsymbol{y=-\dfrac{3}{4}x+2}$.<br>
-<img src="corr_f07_5_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
-La bonne réponse est la réponse <span class="rep">C</span>.
+<img src="corr_f07_5_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -2049,10 +677,65 @@ La bonne réponse est la réponse <span class="rep">C</span>.
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2226,7 +909,7 @@ La bonne réponse est la réponse <span class="rep">C</span>.
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

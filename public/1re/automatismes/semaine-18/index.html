@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,32 +216,20 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 18 — Calcul en contexte et statistiques
-</div>
+  <div class="auto1-open" data-mode="seance">
 
 
 
@@ -242,576 +238,122 @@ Séance 18 — Calcul en contexte et statistiques
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Deux amis, Alice et Louis, décident d&rsquo;offrir un voyage d&rsquo;anniversaire à leur ami Charles. <br>
-Ils organisent les dépenses de la façon suivante :<br>
-$\bullet$ Alice règle les billets de train ; <br>
-$\bullet$
-Louis règle l&rsquo;hébergement.<br>
-Une fois le voyage terminé, ils souhaitent répartir équitablement toutes les dépenses entre eux deux, c&rsquo;est-à-dire que chacun doit finalement payer la même somme.<br>
-Les billets de train représentent $\dfrac{2}{9}$ de la dépense totale et l&rsquo;hébergement représente le reste.<br>
-Quelle fraction de la dépense totale Alice doit-elle donner à Louis pour que leurs contributions finales soient parfaitement équilibrées ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Alice et Louis offrent un voyage d&rsquo;anniversaire à leur ami Charles. Alice règle les billets de train et Louis règle l&rsquo;hébergement.</p>
+<p>Les billets de train représentent $\dfrac{2}{9}$ de la dépense totale, et l&rsquo;hébergement représente le reste. Une fois le voyage terminé, ils veulent que chacun ait finalement payé la même somme.</p>
+<p>Quelle fraction de la dépense totale Alice doit-elle donner à Louis ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{5}{18}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{5}{9}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{7}{9}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{2}{18}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>En notant $D$ la dépense totale, Alice a dépensé $\dfrac{2}{9}D$ et Louis, $\dfrac{7}{9}D$.</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>En notant $D$ la dépense totale, Alice a dépensé $\dfrac{2}{9}D$ et Louis, $\dfrac{7}{9}D$.</p>
 <p>Leur participation équilibrée doit être de $\dfrac{1}{2}D$ chacun.</p>
 <p>Alice doit donc donner à Louis la somme de $\dfrac{1}{2}D - \dfrac{2}{9}D = \dfrac{5}{18}D$.</p>
-<p>La fraction de la dépense totale que Alice doit donner à Louis est donc $\boldsymbol{\dfrac{5}{18}}$.<br></p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+<p>La fraction de la dépense totale que Alice doit donner à Louis est donc $\boldsymbol{\dfrac{5}{18}}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Soit $x$ un réel.
-À quelle expression est égale $-8x^2-16x-6$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\left( -4x+2\right)\left( 2x+3\right)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\left( -4x-2\right)\left( 2x+3\right)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\left( x+\dfrac{1}{2}\right)\left( 2x+3\right)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\left( -4x+2\right)\left( 2x-3\right)$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On cherche parmi les propositions, lesquelles peuvent donner, après développement, l&rsquo;expression de l&rsquo;énoncé.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $x$ un réel.</p>
+<p>Démontrer que $-8x^2-16x-6=(-4x-2)(2x+3)$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On développe le membre de droite :</p>
 <p>$\begin{aligned}
- \left (-4x-2\right)\left(2x+3\right)&=-8x^2-12x-4x-6\\
- &=-8x^2-16x-6\\
- \end{aligned}$
-<br>
-La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
+\left (-4x-2\right)\left(2x+3\right)&=-8x^2-12x-4x-6\\
+&=-8x^2-16x-6\\
+\end{aligned}$</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Le double du carré de $2$ est égal à :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$22$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$4^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$8$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Le carré de $2$ est $2^2 = 4$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Calculer le double du carré de $2$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Le carré de $2$ est $2^2 = 4$.</p>
 <p>Le double de $4$ est $2 \times 4 = 8$.</p>
 <p>Le double du carré de $2$ est égal à $\boldsymbol{8}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Voici la répartition des notes sur 20 d&rsquo;une classe de première.
-<img src="graphe_s04_1.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-Quel est l&rsquo;effectif total de cette classe ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$28$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$70$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$27$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$7$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la répartition des notes sur 20 d&rsquo;une classe de première.</p>
+<img src="graphe_s04_1.svg" alt="Diagramme en barres" style="display:block;margin:1rem auto;max-width:420px">
+<p>Quel est l&rsquo;effectif total de cette classe ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.</p>
 <p>On peut le calculer en additionnant les effectifs de chaque barre.</p>
 <p>Les effectifs sont : <br>
 $\bullet$ $3$ pour la note $7$ <br>
@@ -821,12 +363,11 @@ $\bullet$ $8$ pour la note $10$<br>
 $\bullet$ $4$ pour la note $11$<br>
 $\bullet$ $5$ pour la note $12$<br>
 $\bullet$ $1$ pour la note $13$.<br></p>
-<p>Ici, on trouve un effectif total de $\boldsymbol{27}$ élèves.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
+<p>Ici, on trouve un effectif total de $\boldsymbol{27}$ élèves.</p>
 </div>
+  </div>
+  
+</article>
 
 
 
@@ -836,645 +377,106 @@ La bonne réponse est la réponse <span class="rep">C</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    <p>On lance un dé à 4 faces. La probabilité d&rsquo;obtenir chacune des faces est donnée dans le tableau ci-dessous :</p>
-<table style="border-collapse: collapse; text-align: center;">
-<thead>
-<tr>
-<th style="border: 1px solid #B85C5C; padding: 8px;">Numéro de la face</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">1</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">2</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">3</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border: 1px solid #B85C5C; padding: 8px;">Probabilité</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$\frac{1}{6}$</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$0,3$</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$\frac{1}{5}$</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$x$</td>
-</tr>
-</tbody>
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On lance un dé à $4$ faces. La probabilité d&rsquo;obtenir chacune des faces est donnée dans le tableau ci-dessous.</p>
+<table style="border-collapse: collapse; text-align: center; margin: 1rem auto;">
+<thead><tr><th style="border: 1px solid #B85C5C; padding: 8px;">Numéro de la face</th><th style="border: 1px solid #B85C5C; padding: 8px;">1</th><th style="border: 1px solid #B85C5C; padding: 8px;">2</th><th style="border: 1px solid #B85C5C; padding: 8px;">3</th><th style="border: 1px solid #B85C5C; padding: 8px;">4</th></tr></thead>
+<tbody><tr><td style="border: 1px solid #B85C5C; padding: 8px;">Probabilité</td><td style="border: 1px solid #B85C5C; padding: 8px;">$\frac{1}{6}$</td><td style="border: 1px solid #B85C5C; padding: 8px;">$0{,}3$</td><td style="border: 1px solid #B85C5C; padding: 8px;">$\frac{1}{5}$</td><td style="border: 1px solid #B85C5C; padding: 8px;">$x$</td></tr></tbody>
 </table>
-On peut affirmer que :
-  </div>
+<p>Déterminer $x$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x=\dfrac{1}{3}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x=0{,}7$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x=\dfrac{19}{30}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x=\dfrac{2}{3}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La somme des probabilités doit être égale à 1.
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La somme des probabilités doit être égale à 1.
 Comme $0{,}3=\dfrac{3}{10}$, on a :</p>
 <p>$\begin{aligned}
- x&=1-\left(\dfrac{1}{6}+\dfrac{3}{10}+\dfrac{1}{5}\right)\\
- x&=1-\left(\dfrac{5}{30}+\dfrac{9}{30}+\dfrac{6}{30}\right)\\
- x&=1-\dfrac{2}{3}\\
- x&=\boldsymbol{\dfrac{1}{3}}
- \end{aligned}$</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+x&=1-\left(\dfrac{1}{6}+\dfrac{3}{10}+\dfrac{1}{5}\right)\\
+x&=1-\left(\dfrac{5}{30}+\dfrac{9}{30}+\dfrac{6}{30}\right)\\
+x&=1-\dfrac{2}{3}\\
+x&=\boldsymbol{\dfrac{1}{3}}
+\end{aligned}$</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On a représenté une courbe $\mathscr{C}$ d&rsquo;une fonction $f$.
-Les points $D, E, R \text{ et } V$ appartiennent à $\mathscr{C}$.
-Leurs abscisses sont notées respectivement $x_D, x_E, x_R \text{ et } x_V$.
-<img src="graphe_f02_8.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L&rsquo;inéquation $x\times f(x) > 0$ est vérifiée par :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x_E \text{ et } x_R$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x_D \text{ et } x_R$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x_D, x_E \text{ et } x_R$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x_E \text{ et } x_V$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;inéquation est vérifiée lorsque $x$ et $f(x)$ sont de même signe, c&rsquo;est-à-dire lorsque $x$ et $f(x)$ sont tous les deux positifs ou tous les deux négatifs.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté la courbe $\mathscr{C}$ d&rsquo;une fonction $f$. Les points $D$, $E$, $R$ et $V$ appartiennent à $\mathscr{C}$ ; leurs abscisses sont notées $x_D$, $x_E$, $x_R$ et $x_V$.</p>
+<img src="graphe_f02_8.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Parmi $x_D$, $x_E$, $x_R$ et $x_V$, lesquelles vérifient l&rsquo;inéquation $x\times f(x)>0$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;inéquation est vérifiée lorsque $x$ et $f(x)$ sont de même signe, c&rsquo;est-à-dire lorsque $x$ et $f(x)$ sont tous les deux positifs ou tous les deux négatifs.</p>
 <p>Ici, $x_D$ est négatif et $f(x_D)$ est négatif. Aussi, $x_R$ est positif et $f(x_R)$ est positif.</p>
 <p>L&rsquo;inéquation est donc vérifiée pour $\boldsymbol{x_D \text{ et } x_R}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+</div>
+  </div>
+  
+</article>
+
+</div>
+<div class="auto1-open" data-mode="devoir">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Alice et Louis offrent un voyage d&rsquo;anniversaire à leur ami Charles. Alice règle les billets de train et Louis règle l&rsquo;hébergement.</p>
+<p>Les billets de train représentent $\dfrac{3}{10}$ de la dépense totale, et l&rsquo;hébergement représente le reste. Une fois le voyage terminé, ils veulent que chacun ait finalement payé la même somme.</p>
+<p>Quelle fraction de la dépense totale Alice doit-elle donner à Louis ?</p>
 
   </div>
   
-</div>
-
-</div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 18 — Calcul en contexte et statistiques
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Deux amis, Alice et Louis, décident d&rsquo;offrir un voyage d&rsquo;anniversaire à leur ami Charles. <br>
-Ils organisent les dépenses de la façon suivante :<br>
-$\bullet$ Alice règle les billets de train ; <br>
-$\bullet$
-Louis règle l&rsquo;hébergement.<br>
-Une fois le voyage terminé, ils souhaitent répartir équitablement toutes les dépenses entre eux deux, c&rsquo;est-à-dire que chacun doit finalement payer la même somme.<br>
-Les billets de train représentent $\dfrac{3}{10}$ de la dépense totale et l&rsquo;hébergement représente le reste.<br>
-Quelle fraction de la dépense totale Alice doit-elle donner à Louis pour que leurs contributions finales soient parfaitement équilibrées ?<br>
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{3}{20}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{4}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{2}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{7}{10}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    En notant $D$ la dépense totale, Alice a dépensé $\dfrac{3}{10}D$ et Louis, $\dfrac{7}{10}D$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>En notant $D$ la dépense totale, Alice a dépensé $\dfrac{3}{10}D$ et Louis, $\dfrac{7}{10}D$.<br>
 Leur participation équilibrée doit être de $\dfrac{1}{2}D$ chacun.<br>
 Alice doit donc donner à Louis la somme de $\dfrac{1}{2}D - \dfrac{3}{10}D = \dfrac{2}{10}D$.<br>
-La fraction de la dépense totale que Alice doit donner à Louis est donc $\boldsymbol{\dfrac{2}{10}}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+La fraction de la dépense totale que Alice doit donner à Louis est donc $\boldsymbol{\dfrac{2}{10}}$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1484,129 +486,32 @@ La bonne réponse est la réponse <span class="rep">C</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Soit $x$ un réel.
-À quelle expression est égale $-3x^2-9x-6$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Soit $x$ un réel.</p>
+<p>Démontrer que $-3x^2-9x-6=(-3x-3)(x+2)$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\left( -3x+3\right)\left( x-2\right)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\left( -3x+3\right)\left( x+2\right)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\left( -3x-3\right)\left( x+2\right)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\left( x+1\right)\left( x+2\right)$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On cherche parmi les  propositions, lesquelles peuvent donner, après développement, l&rsquo;expression de l&rsquo;énoncé. <br></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On développe le membre de droite : <br></p>
 $$
 \begin{aligned}
 \left (-3x-3\right)\left(x+2\right)&=-3x^2-6x-3x-6\\
 &=-3x^2-9x-6\\
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
+$$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1616,256 +521,53 @@ $$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Le double de l&rsquo;inverse de $7$ est égal à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{1}{14}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$14$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{2}{7}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{7}{2}$</span>
-      </div>
-      
-      
-    
+  <div class="auto1re-enonce">
+    Calculer le double de l&rsquo;inverse de $7$.
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;inverse de $7$ est $\dfrac{1}{7}$. <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>L&rsquo;inverse de $7$ est $\dfrac{1}{7}$. <br>
 Le double  de $\dfrac{1}{7}$ est $\dfrac{2}{7}$.<br>
-Le double de l&rsquo;inverse  de $7$ est égal à    $\boldsymbol{\dfrac{2}{7}}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+Le double de l&rsquo;inverse  de $7$ est égal à    $\boldsymbol{\dfrac{2}{7}}$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la répartition des notes sur 20 d&rsquo;une classe de première.</p>
+<img src="graphe_s04_1_devoir.svg" alt="Diagramme en barres" style="display:block;margin:1rem auto;max-width:420px">
+<p>Quel est l&rsquo;effectif total de cette classe ?</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Voici la répartition des notes sur 20 d&rsquo;une classe de première.
-<img src="graphe_s04_1_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-Quel est l&rsquo;effectif total de cette classe ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$28$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$69$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$7$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$26$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.<br>
 On peut le calculer en additionnant les effectifs de chaque barre.<br>
 Les effectifs sont : $1$ pour la note $6$<br>
 $2$ pour la note $8$<br>
@@ -1874,11 +576,10 @@ $6$ pour la note $10$<br>
 $4$ pour la note $11$<br>
 $3$ pour la note $12$<br>
 $2$ pour la note $13$.<br>
-Ici, on trouve un effectif total de $\boldsymbol{26}$ élèves.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+Ici, on trouve un effectif total de $\boldsymbol{26}$ élèves.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1888,267 +589,27 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    <p>On lance un dé à 4 faces. La probabilité d&rsquo;obtenir chacune des faces est donnée dans le tableau ci-dessous :</p>
-<table style="border-collapse: collapse; text-align: center;">
-<thead>
-<tr>
-<th style="border: 1px solid #B85C5C; padding: 8px;">Numéro de la face</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">1</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">2</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">3</th>
-<th style="border: 1px solid #B85C5C; padding: 8px;">4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="border: 1px solid #B85C5C; padding: 8px;">Probabilité</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$\frac{3}{10}$</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$0,35$</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$0,1$</td>
-<td style="border: 1px solid #B85C5C; padding: 8px;">$x$</td>
-</tr>
-</tbody>
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On lance un dé à $4$ faces. La probabilité d&rsquo;obtenir chacune des faces est donnée dans le tableau ci-dessous.</p>
+<table style="border-collapse: collapse; text-align: center; margin: 1rem auto;">
+<thead><tr><th style="border: 1px solid #B85C5C; padding: 8px;">Numéro de la face</th><th style="border: 1px solid #B85C5C; padding: 8px;">1</th><th style="border: 1px solid #B85C5C; padding: 8px;">2</th><th style="border: 1px solid #B85C5C; padding: 8px;">3</th><th style="border: 1px solid #B85C5C; padding: 8px;">4</th></tr></thead>
+<tbody><tr><td style="border: 1px solid #B85C5C; padding: 8px;">Probabilité</td><td style="border: 1px solid #B85C5C; padding: 8px;">$\frac{3}{10}$</td><td style="border: 1px solid #B85C5C; padding: 8px;">$0{,}35$</td><td style="border: 1px solid #B85C5C; padding: 8px;">$0{,}1$</td><td style="border: 1px solid #B85C5C; padding: 8px;">$x$</td></tr></tbody>
 </table>
-On peut affirmer que :
-  </div>
+<p>Déterminer $x$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x=0{,}25$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x=\dfrac{7}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x=0{,}75$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x=0{,}55$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La somme des probabilités doit être égale à 1.  <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La somme des probabilités doit être égale à 1.  <br>
 Comme $\dfrac{3}{10}=0{,}3$, on a : <br></p>
 $$
 \begin{aligned}
@@ -2156,11 +617,10 @@ x&=1-\left(0{,}3+0{,}35+0{,}1\right)\\
 &=1-0{,}75\\
 &=\boldsymbol{0{,}25}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+$$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -2182,10 +642,6 @@ $$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
 
 
 
-
-  
-  
-  
 
   
   
@@ -2364,10 +820,65 @@ La bonne réponse est la réponse <span class="rep">D</span>.
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2541,7 +1052,7 @@ La bonne réponse est la réponse <span class="rep">D</span>.
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

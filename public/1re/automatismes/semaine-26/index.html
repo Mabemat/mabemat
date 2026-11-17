@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,443 +216,116 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 26 — Équations, statistiques et probabilités
+  <div class="auto1-open" data-mode="seance">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Résoudre l&rsquo;équation $\dfrac{x}{7}=126$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;équation $\dfrac{x}{7}=126$ est équivalente à $x=7\times 126$.</p>
+<p>Ainsi, la solution de l&rsquo;équation est $7\times 126=\boldsymbol{882}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    La solution de l&rsquo;équation $\dfrac{x}{7}=126$ est :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x=-882$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x=\dfrac{7}{126}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x=\dfrac{126}{7}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x=7 \times 126$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;équation $\dfrac{x}{7}=126$ est équivalente à $x=7\times 126$.</p>
-<p>Ainsi, la solution de l&rsquo;équation est $7\times 126$.</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la répartition des notes sur 20 d&rsquo;une classe de première.</p>
+<img src="graphe_s04-3_1.svg" alt="Diagramme en barres" style="display:block;margin:1rem auto;max-width:420px">
+<p>Quel pourcentage des élèves a obtenu au moins $10$ ?</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Voici la répartition des notes sur 20 d&rsquo;une classe de première.
-<img src="graphe_s04-3_1.svg" alt="Diagramme en barres des notes" style="display:block;margin:1rem auto;max-width:420px">
-Quel est le pourcentage d&rsquo;élèves ayant obtenu la moyenne ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$64~\%$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$49~\%$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$74~\%$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$84~\%$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Le pourcentage d&rsquo;élèves ayant obtenu la moyenne est calculé en divisant l&rsquo;effectif des élèves ayant obtenu une note supérieure ou égale à 10 par l&rsquo;effectif total, puis en multipliant par 100.</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Le pourcentage d&rsquo;élèves ayant obtenu la moyenne est calculé en divisant l&rsquo;effectif des élèves ayant obtenu une note supérieure ou égale à 10 par l&rsquo;effectif total, puis en multipliant par 100.</p>
 <p>L&rsquo;effectif total est : $2+4+3+7+6+2+1=25$ élèves.</p>
 <p>L&rsquo;effectif des élèves ayant obtenu au moins la moyenne (note $\geq 10$) est : $7+6+2+1=16$.</p>
 $$\dfrac{16}{25} \times 100 = 64$$<p>Donc le pourcentage est de $64~\%$.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On a représenté ci-dessous une parabole $\mathscr{P}$.
-Une seule des quatre fonctions ci-dessous est susceptible d&rsquo;être représentée par la parabole $\mathscr{P}$. Laquelle ?
-<img src="graphe_f02-13_1.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:360px">
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x\longmapsto 1{,}4(x+5)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x\longmapsto -1{,}4(x+5)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x\longmapsto 1{,}4(x-5)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x\longmapsto -1{,}4(x-5)^2+4$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Les paraboles proposées ont des équations de la forme $y=a(x-\alpha)^2+\beta$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>La parabole $\mathscr{P}$ ci-dessous représente une fonction $x\longmapsto a(x-\alpha)^2+\beta$.</p>
+<img src="graphe_f02-13_1.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:300px">
+<p>Donner le signe de $a$, de $\alpha$ et de $\beta$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Les fonctions considérées ont des expressions de la forme $y=a(x-\alpha)^2+\beta$.</p>
 <p>Le sommet de la parabole a pour coordonnées $(\alpha\,;\,\beta)$.</p>
 <p>La parabole $\mathscr{P}$ a les bras tournés vers le bas, on en déduit que $a < 0$.</p>
 <p>De plus, son sommet a une abscisse positive et une ordonnée positive, donc $\alpha > 0$ et $\beta > 0$.</p>
-<p>On en déduit que la seule fonction susceptible de représenter $\mathscr{P}$ est : $x\longmapsto -1{,}4(x-5)^2+4$.</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
+</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -654,465 +335,111 @@ Une seule des quatre fonctions ci-dessous est susceptible d&rsquo;être représe
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    <p>On donne ci-dessous le tableau de répartition des tailles de plants d&rsquo;une serre, rangées en classes.
-</p>
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne ci-dessous la répartition des tailles des plants d&rsquo;une serre, rangées en classes.</p>
 $$\begin{array}{|c|c|c|}
 \hline
 \text{Taille (cm)} & [3\,;\,7[ & [7\,;\,11[ \\
 \hline
 \text{Effectifs} & 3 & 1 \\
 \hline
-\end{array}$$<p>
-Quelle est la taille moyenne en cm des plants de cette serre ?</p>
+\end{array}$$<p>En utilisant le centre de chaque classe, calculer la taille moyenne, en cm, des plants de cette serre.</p>
 
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$7$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$6$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$5{,}5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour calculer la moyenne d&rsquo;une série rangée en classes, on calcule d&rsquo;abord le centre de chaque classe :</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour calculer la moyenne d&rsquo;une série rangée en classes, on calcule d&rsquo;abord le centre de chaque classe :</p>
 <ul>
 <li>Centre de $[3\,;\,7[$ : $\dfrac{3+7}{2}=5$ cm</li>
 <li>Centre de $[7\,;\,11[$ : $\dfrac{7+11}{2}=9$ cm</li>
 </ul>
 <p>On calcule ensuite la moyenne pondérée :</p>
 $$\dfrac{3\times 5 + 1\times 9}{3+1} = \dfrac{15+9}{4} = \dfrac{24}{4} = 6$$<p>La taille moyenne des plants est donc de $6$ cm.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On donne l&rsquo;arbre de probabilités ci-dessous :
-<img src="graphe_p05-4_1.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:420px">
-$P(A \cap C)=\ldots$
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{7}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{4}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{18}{25}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{17}{10}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On sait que :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne l&rsquo;arbre de probabilités ci-dessous.</p>
+<img src="graphe_p05-4_1.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
+<p>Calculer $P(A\cap C)$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On sait que :</p>
 $$\begin{aligned}
 P(A \cap C) &= P(A) \times P_A(C)\\
 &= \dfrac{9}{10} \times \dfrac{4}{5} \\
 &= \dfrac{18}{25}
-\end{aligned}$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+\end{aligned}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $x$ un réel non nul.</p>
+<p>Simplifier $\dfrac{16x^{4}}{\dfrac{4}{x^4}}$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{16x^{4}}{\dfrac{4}{x^4}}$ ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$4x^{8}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$16x^{0}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$16x^{8}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$4x^{0}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On simplifie l&rsquo;expression :</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On simplifie l&rsquo;expression :</p>
 $$\begin{aligned}
 \dfrac{16x^{4}}{\dfrac{4}{x^4}} &= 16x^{4} \times \dfrac{x^4}{4}\\
 &= \dfrac{16x^{8}}{4}\\
 &= 4x^{8}
-\end{aligned}$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+\end{aligned}$$</div>
   </div>
   
+</article>
+
 </div>
-
-</div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 26 — Équations, statistiques et probabilités
-</div>
+<div class="auto1-open" data-mode="devoir">
 
 
 
@@ -1121,271 +448,60 @@ Devoirs — Séance 26 — Équations, statistiques et probabilités
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    La solution de l&rsquo;équation $\dfrac{x}{7}=105$ est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x=\dfrac{7}{105}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x=\dfrac{105}{7}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x=7 \times 105$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x=-735$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    L&rsquo;équation $\dfrac{x}{7}=105$ est équivalente à $x=7\times 105$.<br>
-Ainsi, la solution de l&rsquo;équation est $\boldsymbol{7\times 105}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+  <div class="auto1re-enonce">
+    Résoudre l&rsquo;équation $\dfrac{x}{7}=105$.
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Voici la répartition des notes sur 20 d&rsquo;une classe de première.
-<img src="graphe_s04-3_1_devoir.svg" alt="Diagramme en barres des notes" style="display:block;margin:1rem auto;max-width:420px">
-Quel est le pourcentage d&rsquo;élèves ayant obtenu la moyenne ?
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>L&rsquo;équation $\dfrac{x}{7}=105$ est équivalente à $x=7\times 105$.<br>
+Ainsi, la solution de l&rsquo;équation est $7\times 105=\boldsymbol{735}$.</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$60~\%$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$40~\%$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$50~\%$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$70~\%$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Le pourcentage d&rsquo;élèves ayant obtenu la moyenne est calculé en divisant l&rsquo;effectif des élèves ayant obtenu une note supérieure ou égale à la moyenne par l&rsquo;effectif total, puis en multipliant par 100.<br>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la répartition des notes sur 20 d&rsquo;une classe de première.</p>
+<img src="graphe_s04-3_1_devoir.svg" alt="Diagramme en barres" style="display:block;margin:1rem auto;max-width:420px">
+<p>Quel pourcentage des élèves a obtenu au moins $10$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Le pourcentage d&rsquo;élèves ayant obtenu la moyenne est calculé en divisant l&rsquo;effectif des élèves ayant obtenu une note supérieure ou égale à la moyenne par l&rsquo;effectif total, puis en multipliant par 100.<br>
 L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.<br>
 Ici, on trouve un effectif total de $10$ élèves.<br>
 L&rsquo;effectif des élèves ayant obtenu une note supérieure ou égale à la moyenne est de $5$.<br>
 $\dfrac{5}{10} \times 100 = 50$.<br>
-Donc le pourcentage est de $50~\%$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+Donc le pourcentage est de $50~\%$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1395,146 +511,30 @@ La bonne réponse est la réponse <span class="rep">C</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On a représenté ci-dessous une parabole $\mathscr{P}$.
-Une seule des quatre fonctions ci-dessous est susceptible d&rsquo;être représentée par la parabole $\mathscr{P}$. Laquelle ?
-<img src="graphe_f02-13_1_devoir.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:360px">
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>La parabole $\mathscr{P}$ ci-dessous représente une fonction $x\longmapsto a(x-\alpha)^2+\beta$.</p>
+<img src="graphe_f02-13_1_devoir.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:300px">
+<p>Donner le signe de $a$, de $\alpha$ et de $\beta$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x\longmapsto -1{,}6(x+3)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$x\longmapsto -1{,}6(x-3)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$x\longmapsto 1{,}6(x-3)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x\longmapsto 1{,}6(x+3)^2+4$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Les paraboles proposées ont des équations de la forme $y=a(x-\alpha)^2+\beta$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Les fonctions considérées ont des expressions de la forme $y=a(x-\alpha)^2+\beta$.<br>
 Le sommet de la parabole a pour coordonnées $(\alpha\, ;\, \beta)$.<br>
 La parabole $\mathcal{P}$ a &ldquo;les bras&rdquo; tournés vers le haut, on en déduit que $a > 0$. <br>
-De plus, son sommet a une abscisse négative et une ordonnée positive, donc $\alpha < 0$ et $\beta > 0$.<br>
-On en déduit que la seule fonction susceptible de représenter $\mathcal{P}$ est : $\boldsymbol{x\longmapsto 1{,}6(x+3)^2+4}$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+De plus, son sommet a une abscisse négative et une ordonnée positive, donc $\alpha < 0$ et $\beta > 0$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1544,474 +544,111 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    <p>On donne ci-dessous le tableau de répartition des tailles de plants d&rsquo;une serre, rangées en classes.
-</p>
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne ci-dessous la répartition des tailles des plants d&rsquo;une serre, rangées en classes.</p>
 $$\begin{array}{|c|c|c|}
 \hline
 \text{Taille (cm)} & [2\,;\,6[ & [6\,;\,10[ \\
 \hline
 \text{Effectifs} & 3 & 1 \\
 \hline
-\end{array}$$<p>
-Quelle est la taille moyenne en cm des plants de cette serre ?</p>
+\end{array}$$<p>En utilisant le centre de chaque classe, calculer la taille moyenne, en cm, des plants de cette serre.</p>
 
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$5{,}5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$5$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour calculer la taille d&rsquo;une série rangée en classes, on calcule d&rsquo;abord la valeur centrale de chaque classe :<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour calculer la taille d&rsquo;une série rangée en classes, on calcule d&rsquo;abord la valeur centrale de chaque classe :<br>
 La première classe a pour centre $\dfrac{2 + 6}{2} = 4\text{ cm}$.<br>
 La seconde classe a pour centre $\dfrac{6 + 10}{2} = 8\text{ cm}$.<br>
 On calcule ensuite la moyenne pondérée des tailles, en multipliant chaque centre de classe par l&rsquo;effectif de la classe correspondante, puis en divisant par la somme des effectifs :<br>
 $\dfrac{3 \times 4 + 1 \times 8}{3 + 1} = \dfrac{20}{4} = 5$ .</p>
-<p>La taille moyenne des plants de cette serre est donc de $\boldsymbol{5}\text{ cm}$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
+<p>La taille moyenne des plants de cette serre est donc de $\boldsymbol{5}\text{ cm}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On donne l&rsquo;arbre de probabilités ci-dessous :
-<img src="graphe_p05-4_1_devoir.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:420px">
-$P(A \cap C)=\ldots$
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{7}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{1}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{7}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{49}{100}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On sait que <br></p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne l&rsquo;arbre de probabilités ci-dessous.</p>
+<img src="graphe_p05-4_1_devoir.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
+<p>Calculer $P(A\cap C)$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On sait que <br></p>
 $$
 \begin{aligned}
 P(A \cap C) &= P(A) \times P_A(C)\\
 &= \dfrac{7}{10} \times \dfrac{7}{10} \\
 &= \dfrac{49}{100}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $x$ un réel non nul.</p>
+<p>Simplifier $\dfrac{10x^{3}}{\dfrac{2}{x^5}}$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Soit $x$ un réel non nul. À quelle expression est égale $\dfrac{10x^{3}}{\dfrac{2}{x^5}}$ ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$5x^{-2}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$5x^{8}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$10x^{8}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$10x^{-2}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On peut simplifier l&rsquo;expression : <br></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On peut simplifier l&rsquo;expression : <br></p>
 $$
 \begin{aligned}
 \dfrac{10x^{3}}{\dfrac{2}{x^5}}&=10x^{3} \times \dfrac{x^5}{2}\\
 &=\dfrac{10x^{8}}{2}\\
 &=5x^{8}.
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
+$$</div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -2046,10 +683,65 @@ $$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2223,7 +915,7 @@ $$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

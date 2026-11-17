@@ -2,7 +2,7 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">5.1 Triangles semblables et longueurs</h2>
+<h2 class="subsection-title">4.1 Triangles semblables et longueurs</h2>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -60,7 +60,7 @@ Les rapports sont égaux, donc les triangles IJK et WXV sont semblables.
 1,8 est le coefficient qui permet de passer du triangle WXV au triangle IJK.
 </div>
 
-<h2 class="subsection-title">5.2 Triangles semblables et angles</h2>
+<h2 class="subsection-title">4.2 Triangles semblables et angles</h2>
 
 <div class="environment propriete">
 <div class="environment-title">Propriété :</div>

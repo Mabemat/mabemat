@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,32 +216,20 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 20 — Formules, fonctions et statistiques
-</div>
+  <div class="auto1-open" data-mode="seance">
 
 
 
@@ -242,704 +238,169 @@ Séance 20 — Formules, fonctions et statistiques
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On considère la relation $F=\dfrac{a}{b}+cd$.
-Lorsque $a=2$, $b=\dfrac{1}{7}$, $c=4$ et $d=\dfrac{3}{5}$, la valeur de $F$ est égale à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On considère la relation $F=\dfrac{a}{b}+cd$.</p>
+<p>Calculer $F$ lorsque $a=2$, $b=\dfrac{1}{7}$, $c=4$ et $d=\dfrac{3}{5}$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{94}{35}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{18}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{77}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{82}{5}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On remplace $a$, $b$, $c$ et $d$ par les valeurs données :</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On remplace $a$, $b$, $c$ et $d$ par les valeurs données :</p>
 <p>$\begin{aligned}
 F &= \dfrac{2}{\dfrac{1}{7}} +4 \times \dfrac{3}{5} \\
- &= 14 +\dfrac{12}{5}\\
- &= \boldsymbol{\dfrac{82}{5}}
+&= 14 +\dfrac{12}{5}\\
+&= \boldsymbol{\dfrac{82}{5}}
 \end{aligned}$</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On considère les trois fonctions définies par :
-$f_1\ :\ x \longmapsto x^2-(x+3)(x-5)\ \ \ \ \ \ \ \ f_2\ :\ x \longmapsto 5\sqrt{x}+3\ \ \ \ \ \ \ \ f_3\ :\ x \longmapsto\dfrac{3}{x}-6$<br>
-On peut affirmer que :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>Uniquement la fonction $f_1$ est affine</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>Toutes ces fonctions sont affines</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>Uniquement les fonctions $f_2$ et $f_3$ sont affines</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>Aucune de ces fonctions n&rsquo;est affine</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On cherche si les fonctions $f$ peuvent s&rsquo;écrire sous la forme $f(x)=mx+p$.
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère les trois fonctions définies par :</p>
+$$f_1\ :\ x \longmapsto x^2-(x+3)(x-5)\qquad f_2\ :\ x \longmapsto 5\sqrt{x}+3\qquad f_3\ :\ x \longmapsto\dfrac{3}{x}-6$$<p>Lesquelles de ces fonctions sont affines ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On cherche si les fonctions $f$ peuvent s&rsquo;écrire sous la forme $f(x)=mx+p$.
 $\bullet$ En développant, on obtient :</p>
 <p>$\begin{aligned}
- f_1(x)&=x^2-(x+3)(x-5)\\
- &=x^2-(x^2-5x+3x-15)\\
- &=x^2-x^2+5x-3x+15\\
- &=2x+15
- \end{aligned}$</p>
+f_1(x)&=x^2-(x+3)(x-5)\\
+&=x^2-(x^2-5x+3x-15)\\
+&=x^2-x^2+5x-3x+15\\
+&=2x+15
+\end{aligned}$</p>
 <p>On retrouve une forme $mx+p$, donc $f_1$ est une fonction affine.</p>
 <p>$\bullet$ $f_2(x)=5\sqrt{x}+3$</p>
 <p>Cette fonction contient un terme en $\sqrt{x}$, elle n&rsquo;est donc pas affine.
 $\bullet$ $f_3(x)=\dfrac{3}{x}-6$</p>
 <p>Cette fonction contient un terme en $\dfrac{1}{x}$, elle n&rsquo;est donc pas affine.</p>
 <p><strong>Uniquement la fonction $f_1$ est affine.</strong></p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Soit $n$ un entier non nul.
-À quelle expression est égale $\left(-1\right)^{n+4}$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\left(-1\right)^{n} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$-\left(-1\right)^{n} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\left(-1\right)^{n+1}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\left(-1\right)^{n-1}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>$\begin{aligned} \left(-1\right)^{n+4}&=\left(-1\right)^{4} \times \left(-1\right)^{n} \\
- &=1\times \left(-1\right)^{n} \\
- &=\boldsymbol{\left(-1\right)^{n}} 
- \end{aligned}$</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $n$ un entier non nul.</p>
+<p>Simplifier $\left(-1\right)^{n+4}$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    \begin{multicols}{2}
-On a représenté la courbe d&rsquo;équation $y=\sqrt{x}$.
-On note $(I)$ l&rsquo;inéquation, sur $[0\ ;\ +\infty[$, $\sqrt{x} \geqslant 2$.
-<img src="graphe_c10_6_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-\end{multicols}
-L&rsquo;ensemble des solutions $S$ de cette inéquation est :
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$\begin{aligned} \left(-1\right)^{n+4}&=\left(-1\right)^{4} \times \left(-1\right)^{n} \\
+&=1\times \left(-1\right)^{n} \\
+&=\boldsymbol{\left(-1\right)^{n}}
+\end{aligned}$</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$S = [1\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$S = [4\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$S = [2\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$S = [\sqrt{2}\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour résoudre graphiquement cette inéquation :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté la courbe d&rsquo;équation $y=\sqrt{x}$.</p>
+<img src="graphe_c10_6_devoir.svg" alt="Courbe racine carrée" style="display:block;margin:1rem auto;max-width:360px">
+<p>Résoudre sur $[0\ ;\ +\infty[$ l&rsquo;inéquation $\sqrt{x}\geqslant 2$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour résoudre graphiquement cette inéquation :</p>
 <p>$\bullet$ On trace la courbe d&rsquo;équation $y=\sqrt{x}$.</p>
 <p>$\bullet$ On trace la droite horizontale d&rsquo;équation $y=2$. Cette droite coupe la courbe en $2^2=4$.</p>
 <p>$\bullet$ Les solutions de l&rsquo;inéquation sont les abscisses des points de la courbe qui se situent sur ou au dessus de la droite.</p>
- <img src="graphe_c10_6_corr.png" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-<p>Comme la fonction racine carrée est définie sur $[0\ ;\ +\infty[$, l&rsquo;ensemble des solutions de l&rsquo;inéquation $(I)$ est : <strong>$S = [4\ ;\ +\infty[$</strong>.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
+<img src="graphe_c10_6_corr.png" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
+<p>Comme la fonction racine carrée est définie sur $[0\ ;\ +\infty[$, l&rsquo;ensemble des solutions de l&rsquo;inéquation est : <strong>$S = [4\ ;\ +\infty[$</strong>.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On donne la série statistique suivante : $7 ; 11 ; 15 ; 7 ; 5$.
-Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $10$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$17$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$15$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$16$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$14$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Appelons $x$ la valeur cherchée.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne la série statistique suivante : $7$ ; $11$ ; $15$ ; $7$ ; $5$.</p>
+<p>Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $10$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Appelons $x$ la valeur cherchée.</p>
 <p>On commence par calculer la somme des valeurs de la série de l&rsquo;énoncé :</p>
 <p>$7 + 11 + 15 + 7 + 5 = 45$.</p>
 <p>Comme la série de l&rsquo;énoncé contient $5$ valeurs, la nouvelle série avec $x$ en contient $6$.</p>
@@ -949,277 +410,72 @@ Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $1
 <p>$45 + x = 10 \times 6$</p>
 <p>$x = 10 \times 6 - 45$</p>
 <p>$x = \boldsymbol{15}$</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Dans un lycée, $160$ élèves étudient l&rsquo;Espagnol, ce qui représente $25\ $% du nombre d&rsquo;élèves inscrits dans ce lycée.
-Le nombre d&rsquo;élèves inscrits dans ce lycée est égal à :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$540$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$64$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$740$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$640$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>En notant $N$ le nombre total d&rsquo;élèves,
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans un lycée, $160$ élèves étudient l&rsquo;espagnol, ce qui représente $25\ $% des élèves inscrits.</p>
+<p>Combien d&rsquo;élèves sont inscrits dans ce lycée ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>En notant $N$ le nombre total d&rsquo;élèves,
 $25\ $% de $N$ est égal à $160$ élèves.</p>
 <p>Puisque $25\ $%$ =\dfrac{25}{100}=\dfrac{1}{4}$, alors $N$ est $4$ fois plus grand que $160$.</p>
 <p>Ainsi, $N=4\times 160$ élèves soit
 $\boldsymbol{640}$ élèves au total.</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+</div>
+  </div>
+  
+</article>
+
+</div>
+<div class="auto1-open" data-mode="devoir">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère la relation $F=a+\dfrac{b}{cd}$.</p>
+<p>Calculer $F$ lorsque $a=\dfrac{1}{7}$, $b=1$, $c=8$ et $d=-\dfrac{1}{8}$.</p>
 
   </div>
   
-</div>
-
-</div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 20 — Formules, fonctions et statistiques
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère la relation $F=a+\dfrac{b}{cd}$.
-Lorsque $a=\dfrac{1}{7}$, $b=1$, $c=8$ et $d=-\dfrac{1}{8}$, la valeur de $F$ est égale à :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$-\dfrac{6}{7}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$-\dfrac{48}{7}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{57}{448}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On remplace $a$, $b$, $c$ et $d$ par les valeurs données : <br></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On remplace $a$, $b$, $c$ et $d$ par les valeurs données : <br></p>
 $$
 \begin{aligned}
 F&=\dfrac{1}{7}+\dfrac{1}{8\times \left(-\dfrac{1}{8}\right)}\\
@@ -1227,144 +483,36 @@ F&=\dfrac{1}{7}+\dfrac{1}{8\times \left(-\dfrac{1}{8}\right)}\\
 &=\dfrac{1}{7}-1\\
 &=\boldsymbol{-\dfrac{6}{7}}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On considère les trois fonctions définies par :</p>
+$$f_1\ :\ x \longmapsto x^2-(x+2)(x-4)\qquad f_2\ :\ x \longmapsto 2\sqrt{x}+4\qquad f_3\ :\ x \longmapsto\dfrac{2}{x}-7$$<p>Lesquelles de ces fonctions sont affines ?</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On considère les trois fonctions définies par :
-$f_1\ :\ x \longmapsto x^2-(x+2)(x-4)\ \ \ \ \ \ \ \ f_2\ :\ x \longmapsto 2\sqrt{x}+4\ \ \ \ \ \ \ \ f_3\ :\ x \longmapsto\dfrac{2}{x}-7$ <br>
-On peut affirmer que :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>Uniquement la fonction $f_1$ est affine</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>Uniquement les fonctions $f_2$ et $f_3$ sont affines</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>Aucune de ces fonctions n&rsquo;est affine</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>Toutes ces fonctions sont affines</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On cherche si les fonctions $f$ peuvent s&rsquo;écrire sous la forme $f(x)=mx+p$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On cherche si les fonctions $f$ peuvent s&rsquo;écrire sous la forme $f(x)=mx+p$.<br>
 $\bullet$ En développant, on obtient :<br></p>
 $$
 \begin{aligned}
@@ -1378,142 +526,45 @@ $\bullet$ $f_2(x)=2\sqrt{x}+4$<br>
 Cette fonction contient un terme en $\sqrt{x}$, elle n&rsquo;est donc pas affine.<br>
 $\bullet$ $f_3(x)=\dfrac{2}{x}-7$<br>
 Cette fonction contient un terme en $\dfrac{1}{x}$, elle n&rsquo;est donc pas affine.<br>
-Uniquement la fonction $f_1$ est affine.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+Uniquement la fonction $f_1$ est affine.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Soit $n$ un entier non nul.
-À quelle expression est égale $\left(-1\right)^{n+6}$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$-\left(-1\right)^{n} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\left(-1\right)^{n-1}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\left(-1\right)^{n} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\left(-1\right)^{n+1}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    $$
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $n$ un entier non nul.</p>
+<p>Simplifier $\left(-1\right)^{n+6}$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$$
 \begin{aligned} \left(-1\right)^{n+6}&=\left(-1\right)^{6} \times \left(-1\right)^{n} \\
 &=1\times \left(-1\right)^{n} \\
 &=\boldsymbol{\left(-1\right)^{n}}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+$$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1523,287 +574,59 @@ $$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    \begin{multicols}{2}
-On a représenté la courbe d&rsquo;équation $y=\sqrt{x}$.
-On note $(I)$ l&rsquo;inéquation, sur $[0\ ;\ +\infty[$, $\sqrt{x}> 7$.
-<img src="graphe_c10_6_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-\end{multicols}
-L&rsquo;ensemble des solutions $S$ de cette inéquation est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté la courbe d&rsquo;équation $y=\sqrt{x}$.</p>
+<img src="graphe_c10_6_devoir.svg" alt="Courbe racine carrée" style="display:block;margin:1rem auto;max-width:360px">
+<p>Résoudre sur $[0\ ;\ +\infty[$ l&rsquo;inéquation $\sqrt{x}>7$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$S = ]3{,}5\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$S = ]7\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$S = ]49\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$S = ]\sqrt{7}\ ;\ +\infty[$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Pour résoudre graphiquement cette inéquation : <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Pour résoudre graphiquement cette inéquation : <br>
 $\bullet$ On trace la courbe d&rsquo;équation $y=\sqrt{x}$. <br>
 $\bullet$ On trace la droite horizontale d&rsquo;équation $y=7$. Cette droite coupe la courbe en $7^2=49$. <br>
 $\bullet$ Les solutions de l&rsquo;inéquation sont les abscisses des points de la courbe qui se situent strictement au dessus de la droite.<br>
 <img src="corr_c10_6_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
-<p>Comme la fonction racine carrée est définie sur $[0\,;\,+\infty[$, l&rsquo;ensemble des solutions de l&rsquo;inéquation $(I)$ est : $S = ]49\,;\,+\infty[$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
+<p>Comme la fonction racine carrée est définie sur $[0\,;\,+\infty[$, l&rsquo;ensemble des solutions de l&rsquo;inéquation est : $S = ]49\,;\,+\infty[$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On donne la série statistique suivante : $11 ; 15 ; 5 ; 14$.
-Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $10$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$5$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$6$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$4$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Appelons $x$ la valeur cherchée.<br>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne la série statistique suivante : $11$ ; $15$ ; $5$ ; $14$.</p>
+<p>Quelle valeur faut-il ajouter à la série pour que sa moyenne soit égale à $10$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Appelons $x$ la valeur cherchée.<br>
 On commence par calculer la somme des valeurs de la série de l&rsquo;énoncé :<br>
 $11 + 15 + 5 + 14 = 45$.<br>
 Comme la série de l&rsquo;énoncé contient $4$ valeurs, la nouvelle série avec $x$ en contient $5$.</p>
@@ -1812,146 +635,44 @@ Comme cette moyenne vaut $10$ d&rsquo;après l&rsquo;énoncé, il faut alors ré
 $\dfrac{45 + x}{5} = 10$</p>
 <p>$45 + x = 10 \times 5$</p>
 <p>$x = 10 \times 5 - 45$</p>
-<p>$x = \boldsymbol{5}$<br>
-La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+<p>$x = \boldsymbol{5}$</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Dans un lycée, $40$ élèves étudient le Grec, ce qui représente $4\ $% du nombre d&rsquo;élèves inscrits dans ce lycée.
-Le nombre d&rsquo;élèves inscrits dans ce lycée est égal à :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$100$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$1\ 000$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$1\ 100$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$900$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    En notant $N$ le nombre total d&rsquo;élèves,
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans un lycée, $40$ élèves étudient le grec, ce qui représente $4\ $% des élèves inscrits.</p>
+<p>Combien d&rsquo;élèves sont inscrits dans ce lycée ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>En notant $N$ le nombre total d&rsquo;élèves,
 $4\,\%$ de $N$ est égal à $40$ élèves.<br>
 Puisque $4\,\% =\dfrac{4}{100}=\dfrac{1}{25}$, alors $N$ est $25$ fois plus grand que $40$.<br>
 Ainsi,  $N=25\times 40$ élèves soit
-$\boldsymbol{1\,000}$ élèves au total.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+$\boldsymbol{1\,000}$ élèves au total.</div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -1986,10 +707,65 @@ La bonne réponse est la réponse <span class="rep">B</span>.
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2163,7 +939,7 @@ La bonne réponse est la réponse <span class="rep">B</span>.
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

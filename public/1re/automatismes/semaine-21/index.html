@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,32 +216,20 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 21 — Probabilités, fonctions et calcul
-</div>
+  <div class="auto1-open" data-mode="seance">
 
 
 
@@ -242,357 +238,83 @@ Séance 21 — Probabilités, fonctions et calcul
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère deux réels $a$ et $b$ strictement positifs. Si $a > b$ alors :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$a - b < 0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$a - b > 0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$a^2 < b^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\sqrt{a} < \sqrt{b}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Comme $a > b$, on a $a - b > 0$.</p>
-<p>Pour les autres propositions :
-$a - b < 0$ : Faux. Comme $a > b$, on a $a - b > 0$.
-$\sqrt{a} < \sqrt{b}$ : Faux. La fonction racine carrée est croissante sur $[0\,;+\infty[$, donc $\sqrt{a} > \sqrt{b}$.
-$a^2 < b^2$ : Faux. La fonction carré est croissante sur $[0\,;+\infty[$, donc $a^2 > b^2$.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+  <div class="auto1re-enonce">
+    <p>On considère deux réels $a$ et $b$ strictement positifs tels que $a>b$.</p>
+<p>Donner le signe de $a-b$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    La probabilité d&rsquo;un événement $A$ est $\dfrac{5}{8}$. Quelle est la probabilité de son événement contraire ?
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Comme $a > b$, on a $a - b > 0$.</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{8}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{3}{8}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$-\dfrac{5}{8}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{5}{8}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La relation entre la probabilité d&rsquo;un événement $A$ et celle de son contraire $\overline{A}$ est : $P(\overline{A})=1-P(A)$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>La probabilité d&rsquo;un événement $A$ est $\dfrac{5}{8}$.</p>
+<p>Quelle est la probabilité de son événement contraire ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La relation entre la probabilité d&rsquo;un événement $A$ et celle de son contraire $\overline{A}$ est : $P(\overline{A})=1-P(A)$.</p>
 <p>Ainsi : $P(\overline{A})=1-\dfrac{5}{8}=\dfrac{3}{8}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Sur $60$ arbres dans un parc, on distingue trois groupes : chênes ($20$ arbres), érables ($20$ arbres), autres essences (le reste). Quel diagramme circulaire représente la situation ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span><img src="graphe_s01_1_a.svg" alt="Diagramme A" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span><img src="graphe_s01_1_b.svg" alt="Diagramme B" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span><img src="graphe_s01_1_c.svg" alt="Diagramme C" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span><img src="graphe_s01_1_d.svg" alt="Diagramme D" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Les effectifs des $3$ groupes sont respectivement $20$, $20$ et $60-20-20=20$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Sur $60$ arbres dans un parc, on distingue trois groupes : chênes ($20$ arbres), érables ($20$ arbres) et autres essences (le reste).</p>
+<p>On veut représenter cette situation par un diagramme circulaire. Quelle est la mesure de l&rsquo;angle de chaque secteur ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Les effectifs des $3$ groupes sont respectivement $20$, $20$ et $60-20-20=20$.</p>
 $$\begin{array}{|c|c|c|c|}
 \hline
 \text{Groupe} & \text{chênes} & \text{érables} & \text{autres}\\
@@ -603,256 +325,73 @@ $$\begin{array}{|c|c|c|c|}
 \hline
 \text{Angle} & 120^{\circ} & 120^{\circ} & 120^{\circ}\\
 \hline
-\end{array}$$<p>Le bon diagramme est le seul avec trois angles égaux de $120^{\circ}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+\end{array}$$<p>Chacun des trois secteurs mesure $\boldsymbol{120^{\circ}}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Les coordonnées du point d&rsquo;intersection entre la droite d&rsquo;équation $y=\dfrac{x}{9}-5$ et l&rsquo;axe des abscisses sont :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$(9\,;\,0)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$(0\,;\,45)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$(45\,;\,0)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$(-5\,;\,0)$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;ordonnée de ce point est $0$ puisqu&rsquo;il se situe sur l&rsquo;axe des abscisses. Son abscisse est donc donnée par la solution de $\dfrac{x}{9}-5=0$, c&rsquo;est-à-dire $x=45$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Donner les coordonnées du point d&rsquo;intersection de la droite d&rsquo;équation $y=\dfrac{x}{9}-5$ avec l&rsquo;axe des abscisses.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;ordonnée de ce point est $0$ puisqu&rsquo;il se situe sur l&rsquo;axe des abscisses. Son abscisse est donc donnée par la solution de $\dfrac{x}{9}-5=0$, c&rsquo;est-à-dire $x=45$.</p>
 <p>Les coordonnées de ce point sont donc $(45\,;\,0)$.</p>
-<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Dans une région de France, le tarif de l&rsquo;eau est le suivant : un abonnement annuel de $50{,}80$,€ et $3{,}84$,€ par mètre cube consommé. Une famille a payé une facture de $373{,}36$,€ pour sa consommation annuelle. Le nombre de mètres cubes consommés est donné par le calcul :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{373{,}36-3{,}84}{50{,}80}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$50{,}80\times3{,}84-373{,}36$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$373{,}36-50{,}80\times 3{,}84$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{373{,}36-50{,}80}{3{,}84}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>En notant $a$ le nombre de mètres cubes consommés, la facture s&rsquo;écrit :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une région de France, le tarif de l&rsquo;eau est le suivant : un abonnement annuel de $50{,}80$ € et $3{,}84$ € par mètre cube consommé. Une famille a payé une facture de $373{,}36$ € pour sa consommation annuelle.</p>
+<p>Écrire un calcul qui donne le nombre de mètres cubes consommés.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>En notant $a$ le nombre de mètres cubes consommés, la facture s&rsquo;écrit :</p>
 $$\begin{aligned}
 50{,}80+3{,}84\times a &= 373{,}36\\
 a &= \dfrac{373{,}36-50{,}80}{3{,}84}
-\end{aligned}$$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
+\end{aligned}$$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -862,147 +401,33 @@ a &= \dfrac{373{,}36-50{,}80}{3{,}84}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On donne l&rsquo;arbre de probabilités ci-dessous :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne l&rsquo;arbre de probabilités ci-dessous.</p>
 <img src="graphe_p05_2.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
-On sait que $P(A \cap C)=\dfrac{6}{25}$. Calculer $P_A(\overline{C})$.
-  </div>
+<p>On sait que $P(A\cap C)=\dfrac{6}{25}$. Calculer $P_A(\overline{C})$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{3}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{9}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{1}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{2}{5}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On déduit de l&rsquo;arbre : $P(A)=1-P(\overline{A})=1-\dfrac{2}{5}=\dfrac{3}{5}$.</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On déduit de l&rsquo;arbre : $P(A)=1-P(\overline{A})=1-\dfrac{2}{5}=\dfrac{3}{5}$.</p>
 <p>Avec $P(A \cap C)=\dfrac{6}{25}$, on calcule :</p>
 $$P_A(C)=\dfrac{P(A \cap C)}{P(A)}=\dfrac{\dfrac{6}{25}}{\dfrac{3}{5}}=\dfrac{6}{25}\times\dfrac{5}{3}=\dfrac{2}{5}$$<p>On obtient alors :</p>
-$$P_A(\overline{C})=1-P_A(C)=1-\dfrac{2}{5}=\dfrac{3}{5}$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+$$P_A(\overline{C})=1-P_A(C)=1-\dfrac{2}{5}=\dfrac{3}{5}$$</div>
   </div>
   
+</article>
+
 </div>
-
-</div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 21 — Probabilités, fonctions et calcul
-</div>
+<div class="auto1-open" data-mode="devoir">
 
 
 
@@ -1011,250 +436,27 @@ Devoirs — Séance 21 — Probabilités, fonctions et calcul
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère deux réels $a$ et $b$ strictement positifs. Si $a > b$ alors :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$a - b < 0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$a - b > 0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$a^2 < b^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\sqrt{a} < \sqrt{b}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La bonne réponse est $\boldsymbol{\sqrt{a} > 1}$.<br>
-La fonction racine carrée est croissante : comme $a > 1$, $\sqrt{a} > \sqrt{1} = 1$.</p>
-<p>Pour les autres propositions :<br>
-$\sqrt{a} < 1$ : Faux. Comme $a > 1$, $\sqrt{a} > 1$.<br>
-$\dfrac{1}{a} > 1$ : Faux. La fonction inverse est décroissante : comme $a > 1$, on a $\dfrac{1}{a} < 1$.<br>
-$a^2 < 1$ : Faux. Comme $a^2 > a > 1$, on a $a^2 > 1$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.</p>
+  <div class="auto1re-enonce">
+    <p>On considère un réel $a$ tel que $a>1$.</p>
+<p>Comparer $\sqrt{a}$ et $1$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    La probabilité d&rsquo;un événement $A$ est $\dfrac{8}{9}$. Quelle est la probabilité de son événement contraire ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$-\dfrac{8}{9}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{1}{9}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{8}{9}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{9}{8}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    La relation entre la probabilité d&rsquo;un événement $A$ et celle de son contraire $\overline{A}$ est :  $P(\overline{A})=1-P(A)$.<br>
-Ainsi : $P(\overline{A})=1-\dfrac{8}{9}=\dfrac{1}{9}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>La fonction racine carrée est strictement croissante sur $[0\,;\,+\infty[$.<br>
+Comme $a>1$, on a $\sqrt{a}>\sqrt{1}$, c&rsquo;est-à-dire $\boldsymbol{\sqrt{a}>1}$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1264,116 +466,53 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Sur $160$ logements dans un quartier, on distingue trois groupes : appartements ($80$ logements), maisons individuelles ($40$ logements), autres types (le reste). Quel diagramme circulaire représente la situation ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>La probabilité d&rsquo;un événement $A$ est $\dfrac{8}{9}$.</p>
+<p>Quelle est la probabilité de son événement contraire ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span><img src="graphe_s01_1_devoir_a.svg" alt="Diagramme A" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span><img src="graphe_s01_1_devoir_b.svg" alt="Diagramme B" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span><img src="graphe_s01_1_devoir_c.svg" alt="Diagramme C" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span><img src="graphe_s01_1_devoir_d.svg" alt="Diagramme D" style="display:inline-block;vertical-align:middle;max-width:90px"></span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Les effectifs des 3 groupes sont respectivement $80$, $40$ et $160-80-40=40$.</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>La relation entre la probabilité d&rsquo;un événement $A$ et celle de son contraire $\overline{A}$ est :  $P(\overline{A})=1-P(A)$.<br>
+Ainsi : $P(\overline{A})=1-\dfrac{8}{9}=\dfrac{1}{9}$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Sur $160$ logements d&rsquo;un quartier, on distingue trois groupes : appartements ($80$ logements), maisons individuelles ($40$ logements) et autres types (le reste).</p>
+<p>On veut représenter cette situation par un diagramme circulaire. Quelle est la mesure de l&rsquo;angle de chaque secteur ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Les effectifs des 3 groupes sont respectivement $80$, $40$ et $160-80-40=40$.</p>
 $$
 \begin{array}{|c|c|c|c|}
 \hline
@@ -1386,268 +525,77 @@ $$
 \text{Angle} & 180° & 90° & 90°\\
 \hline
 \end{array}
-$$<p>Le bon diagramme a un secteur de $180°$ (appartements) et deux secteurs de $90°$ (maisons et autres).<br>
-La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
+$$<p>Le diagramme a un secteur de $\boldsymbol{180°}$ (appartements) et deux secteurs de $\boldsymbol{90°}$ (maisons et autres).</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Les coordonnées du point d&rsquo;intersection entre la droite d&rsquo;équation $y=\dfrac{x}{3}+5$ et l&rsquo;axe des abscisses sont :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$(-15\,;\,0)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$(15\,;\,0)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$(0\,;\,-15)$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$(3\,;\,0)$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;ordonnée de ce point est $0$ puisque le point d&rsquo;intersection se situe sur l&rsquo;axe des abscisses.<br>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Donner les coordonnées du point d&rsquo;intersection de la droite d&rsquo;équation $y=\dfrac{x}{3}+5$ avec l&rsquo;axe des abscisses.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;ordonnée de ce point est $0$ puisque le point d&rsquo;intersection se situe sur l&rsquo;axe des abscisses.<br>
 Son abscisse est donc donnée par la solution de l&rsquo;équation  $\dfrac{x}{3}+5=0$, c&rsquo;est-à-dire $x=-15$.</p>
-<p>Les coordonnées de ce   point sont donc : $(\boldsymbol{-15\,;\,0})$.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
+<p>Les coordonnées de ce   point sont donc : $(\boldsymbol{-15\,;\,0})$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Dans une région de France, le tarif de l&rsquo;eau est le suivant : un abonnement annuel de $49{,}30$,€ et $3{,}57$,€ par mètre cube consommé. Une famille a payé une facture de $313{,}48$,€ pour sa consommation annuelle. Le nombre de mètres cubes consommés est donné par le calcul :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$313{,}48-49{,}30\times 3{,}57$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$49{,}30\times3{,}57-313{,}48$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{313{,}48-3{,}57}{49{,}30}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{313{,}48-49{,}30}{3{,}57}$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La facture s&rsquo;élève à $313{,}48$,€~pour la consommation annuelle.<br>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Dans une région de France, le tarif de l&rsquo;eau est le suivant : un abonnement annuel de $49{,}30$ € et $3{,}57$ € par mètre cube consommé. Une famille a payé une facture de $313{,}48$ € pour sa consommation annuelle.</p>
+<p>Écrire un calcul qui donne le nombre de mètres cubes consommés.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La facture s&rsquo;élève à $313{,}48$,€~pour la consommation annuelle.<br>
 En notant $a$ le nombre de  mètres cubes consommés, on obtient : <br></p>
 $$
 \begin{aligned}
 49{,}3+3{,}57\times a &=313{,}48\\
 a&=\boldsymbol{\dfrac{313{,}48-49{,}30}{3{,}57}}
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
+$$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1657,138 +605,24 @@ $$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On donne l&rsquo;arbre de probabilités ci-dessous :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne l&rsquo;arbre de probabilités ci-dessous.</p>
 <img src="graphe_p05_2_devoir.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
-On sait que $P(A \cap C)=\dfrac{21}{50}$. Calculer $P_A(\overline{C})$.
-  </div>
+<p>On sait que $P(A\cap C)=\dfrac{21}{50}$. Calculer $P_A(\overline{C})$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{3}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{3}{5}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{1}{10}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{7}{10}$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On déduit de l&rsquo;énoncé<br></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On déduit de l&rsquo;énoncé<br></p>
 $$
 \begin{aligned}
 P(A)&=1-P(\overline{A})\\
@@ -1808,11 +642,10 @@ $$
 P_A(\overline{C})&=1-P_A(C)\\
 &=1-\dfrac{7}{10}\\
 &=\dfrac{3}{10} .\end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+$$</div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -1847,10 +680,65 @@ $$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2024,7 +912,7 @@ $$<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

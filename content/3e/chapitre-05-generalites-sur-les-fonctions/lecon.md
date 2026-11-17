@@ -2,9 +2,9 @@
 title: "Leçon complète"
 ---
 
-<h2 class="subsection-title">4.1 Vocabulaire sur les fonctions</h2>
+<h2 class="subsection-title">5.1 Vocabulaire sur les fonctions</h2>
 
-<h3 class="subsubsection-title">4.1.1 Définition</h3>
+<h3 class="subsubsection-title">5.1.1 Définition</h3>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -30,7 +30,7 @@ On dit que $f(x)=42x+77$ est une fonction.
 </div>
 </div>
 
-<h3 class="subsubsection-title">4.1.2 Image et antécédent</h3>
+<h3 class="subsubsection-title">5.1.2 Image et antécédent</h3>
 
 <div class="environment vocabulaire">
 <div class="environment-title">Vocabulaire</div>
@@ -43,9 +43,9 @@ Soit $f$ une fonction telle que $f(4) = 8$.
 </div>
 </div>
 
-<h2 class="subsection-title">4.2 Calculer l'image et les antécédents</h2>
+<h2 class="subsection-title">5.2 Calculer l'image et les antécédents</h2>
 
-<h3 class="subsubsection-title">4.2.1 Calcul de l'image</h3>
+<h3 class="subsubsection-title">5.2.1 Calcul de l'image</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthode - Calculer l'image d'un nombre par une fonction revient à remplacer $x$ par ce nombre.</div>
@@ -70,7 +70,7 @@ L'image de 3 par la fonction $f$ est 13.
 On obtient toujours un seul nombre à l'arrivée : l'image d'un nombre par une fonction est donc <strong>unique</strong> !
 </div>
 
-<h3 class="subsubsection-title">4.2.2 Calcul des antécédents</h3>
+<h3 class="subsubsection-title">5.2.2 Calcul des antécédents</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthode - Calculer le ou les antécédent(s) d'un nombre par une fonction revient à résoudre une équation.</div>
@@ -109,7 +109,7 @@ Donc 5 a deux antécédents par $g$ !
 </div>
 </div>
 
-<h2 class="subsection-title">4.3 Tableau de valeurs</h2>
+<h2 class="subsection-title">5.3 Tableau de valeurs</h2>
 
 Un tableau de valeurs d'une fonction est un tableau à deux lignes qui contient :
 <ul>
@@ -146,9 +146,9 @@ $ x $</th>
 </div>
 </div>
 
-<h2 class="subsection-title">4.4 Représentation graphique d'une fonction</h2>
+<h2 class="subsection-title">5.4 Représentation graphique d'une fonction</h2>
 
-<h3 class="subsubsection-title">4.4.1 Courbe représentative</h3>
+<h3 class="subsubsection-title">5.4.1 Courbe représentative</h3>
 
 <div class="environment definition">
 <div class="environment-title">Définition :</div>
@@ -180,7 +180,7 @@ Ici, $(3;-1)\notin C_f$ donc $f(3)\neq -1$.</li>
 </div>
 </div>
 
-<h3 class="subsubsection-title">4.4.2 Lectures graphiques</h3>
+<h3 class="subsubsection-title">5.4.2 Lectures graphiques</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthode - Lire graphiquement une image.</div>
@@ -215,7 +215,7 @@ Ici, $(3;-1)\notin C_f$ donc $f(3)\neq -1$.</li>
 </div>
 </div>
 
-<h3 class="subsubsection-title">4.4.3 Construire la courbe représentative d'une fonction</h3>
+<h3 class="subsubsection-title">5.4.3 Construire la courbe représentative d'une fonction</h3>
 
 <div class="environment methode">
 <div class="environment-title">Méthode :</div>

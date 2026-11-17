@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,303 +216,84 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 11 — Expressions algébriques et fonctions
+  <div class="auto1-open" data-mode="seance">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On additionne un nombre réel $x$ avec son triple, puis on élève le résultat au carré.</p>
+<p>Exprimer le résultat en fonction de $x$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On additionne d&rsquo;abord $x$ avec son triple $3x$ : $x + 3x = 4x$.</p>
+<p>Puis on élève le résultat au carré : $\boldsymbol{(4x)^2}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On additionne un nombre réel $x$ avec son triple, puis on élève le résultat au carré.
-On obtient :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$x + (3x)^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$4x^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$4x + x^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$(4x)^2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On additionne d&rsquo;abord $x$ avec son triple $3x$ : $x + 3x = 4x$.</p>
-<p>Puis on élève le résultat au carré : $\boldsymbol{(4x)^2}$.
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Une fonction affine $f$, de coefficient directeur $3$, a le tableau de signes ci-dessous.</p>
+<img src="graphe_c14_3.svg" alt="Tableau de signes" style="display:block;margin:1rem auto;max-width:360px">
+<p>Donner l&rsquo;expression de $f(x)$.</p>
 
   </div>
   
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>D&rsquo;après le tableau de signes, la fonction $f$ s&rsquo;annule en $1$.</p>
+<p>Comme $f$ est affine de coefficient directeur $3$, on a $f(x)=3x+p$, et $f(1)=0$ donne $3\times 1+p=0$, soit $p=-3$.</p>
+<p>On vérifie que le coefficient directeur $3$ est bien positif : $f$ est négative puis positive, comme dans le tableau.</p>
+<p>Ainsi $\boldsymbol{f(x)=3x-3}$.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On considère une fonction $f$ définie sur $\mathbb{R}$ dont le tableau de signes est donné ci-dessous.
-<img src="graphe_c14_3.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-Parmi les quatre expressions proposées pour la fonction $f$, une seule est possible.
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$f(x)=3x-3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$f(x)=x$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$f(x)=2x+2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$f(x)=-4x+4$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Parmi les réponses proposées, on cherche la fonction affine qui s&rsquo;annule en $1$ et dont le coefficient directeur est positif. En effet,
-la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d&rsquo;après le tableau de signes.</p>
-<p>Il s&rsquo;agit de la fonction $f$ définie par $\boldsymbol{f(x)=3x-3}$.
-La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
   </div>
   
-</div>
+</article>
 
 
 
@@ -514,539 +303,128 @@ La bonne réponse est la réponse <span class="rep">A</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    L&rsquo;ensemble des solutions $\mathscr{S}$ de l&rsquo;équation $2x^2+3x-5=-5$ est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\mathscr{S}=\left\lbrace-\dfrac{3}{2}\right\rbrace$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\mathscr{S}=\left\lbrace-\dfrac{2}{3}\ ;\ 0\right\rbrace$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\mathscr{S}=\left\lbrace0\ ;\ \dfrac{3}{2}\right\rbrace$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\mathscr{S}=\left\lbrace-\dfrac{3}{2}\ ;\ 0\right\rbrace$</span>
-      </div>
-      
-      
-    
+  <div class="auto1re-enonce">
+    Résoudre dans $\mathbb{R}$ l&rsquo;équation $2x^2+3x-5=-5$.
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>L&rsquo;équation $2x^2+3x-5=-5$ s&rsquo;écrit $2x^2+3x=0$.</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>L&rsquo;équation $2x^2+3x-5=-5$ s&rsquo;écrit $2x^2+3x=0$.</p>
 <p>En factorisant le premier membre (facteur commun $x$), on obtient $x(2x+3)=0$.</p>
 <p>On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{-3}{2}=-\dfrac{3}{2}$.</p>
-<p>$\mathscr{S}=\boldsymbol{\lbrace 0;-\dfrac{3}{2}\rbrace}$
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
+<p>$\mathscr{S}=\boldsymbol{\lbrace 0;-\dfrac{3}{2}\rbrace}$</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On donne les représentations graphiques de deux fonctions affines $g$ (en vert) et $h$ (en rouge) définies sur $\mathbb{R}$.
-<img src="graphe_f05_1.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur $\mathbb{R}$ est :
   </div>
-
-  <div class="qcm-opts qcm-opts-grid">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span><img src="graphe_f05_1_optA.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span><img src="graphe_f05_1_optB.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span><img src="graphe_f05_1_optC.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span><img src="graphe_f05_1_optD.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La fonction $g$ s&rsquo;annule en $-4$ et la fonction $h$ s&rsquo;annule en $3$.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne les représentations graphiques de deux fonctions affines $g$ (en vert) et $h$ (en rouge) définies sur $\mathbb{R}$.</p>
+<img src="graphe_f05_1.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=g(x)\times h(x)$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La fonction $g$ s&rsquo;annule en $-4$ et la fonction $h$ s&rsquo;annule en $3$.</p>
 <p>Quand la droite est en-dessous de l&rsquo;axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.</p>
 <p>On en déduit le tableau de signes de leur produit :<img src="graphe_f05_1_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></p>
-<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    On donne la représentation graphique d&rsquo;une fonction $f$.
-<img src="graphe_f04_2.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L&rsquo;équation $f(x)=3$ a :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$3$ solutions</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$1$ solution</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$0$ solution</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$2$ solutions</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Le nombre de solutions de l&rsquo;équation $f(x)=3$ est le nombre d&rsquo;antécédents de $3$ par la fonction $f$.</p>
-<p>Puisque la droite d&rsquo;équation $y = 3$ (droite hrizontale) coupe $3$ fois la courbe, on en déduit que l&rsquo;équation $f(x)=3$ admet $\boldsymbol{3}$ <strong>solutions</strong>.
-La bonne réponse est la réponse <span class="rep">A</span>.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne la représentation graphique d&rsquo;une fonction $f$.</p>
+<img src="graphe_f04_2.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Combien de solutions l&rsquo;équation $f(x)=3$ admet-elle ?</p>
 
   </div>
   
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Le nombre de solutions de l&rsquo;équation $f(x)=3$ est le nombre d&rsquo;antécédents de $3$ par la fonction $f$.</p>
+<p>Puisque la droite d&rsquo;équation $y = 3$ (droite hrizontale) coupe $3$ fois la courbe, on en déduit que l&rsquo;équation $f(x)=3$ admet $\boldsymbol{3}$ <strong>solutions</strong>.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    <img src="graphe_f07_4.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L'équation réduite de cette droite est :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$y=4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$y= x +4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$y= 4x-4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$y= -x+4$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Le coefficient directeur $m$ de la droite $(AB)$ est donné par :</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Donner l&rsquo;équation réduite de la droite ci-dessous.</p>
+<img src="graphe_f07_4.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Le coefficient directeur $m$ de la droite $(AB)$ est donné par :</p>
 <p>$m=\dfrac{\boldsymbol{2}}{\boldsymbol{2}}=1$. <br>
 Son ordonnée à l&rsquo;origine est $4$, ainsi l&rsquo;équation réduite de la droite est $\boldsymbol{y=x+4}$.
 <img src="graphe_f07_4_corr.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></p>
-<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
-  </div>
-  
 </div>
+  </div>
+  
+</article>
 
 </div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 11 — Expressions algébriques et fonctions
-</div>
+<div class="auto1-open" data-mode="devoir">
 
 
 
@@ -1055,267 +433,27 @@ Devoirs — Séance 11 — Expressions algébriques et fonctions
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On additionne un nombre réel $x$, avec son double et son carré.
-Le résultat est égal à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On additionne un nombre réel $x$, son double et son carré.</p>
+<p>Exprimer le résultat en fonction de $x$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$1 + 2x^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$(x + 2x)^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$3x + x^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$x + (2x)^2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    On additionne un nombre réel $x$, avec son double $2x$ et son carré $x^2$.<br>
-On obtient : $x + 2x + x^2 = \boldsymbol{3x + x^2}$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On considère une fonction $f$ définie sur $\mathbb{R}$ dont le tableau de signes est donné ci-dessous.
-<img src="graphe_c14_3_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-Parmi les quatre expressions proposées pour la fonction $f$, une seule est possible.
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$f(x)=2x+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$f(x)=x-2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$f(x)=2x$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$f(x)=-4x+8$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Parmi les réponses proposées, on cherche la fonction affine qui s&rsquo;annule en $2$ et dont le coefficient directeur est positif. En effet,
-la droite représentant la fonction $f$ est croissante car la fonction donne des images négatives puis positives d&rsquo;après le tableau de signes.<br>
-Il s&rsquo;agit de la fonction $f$ définie par $\boldsymbol{f(x)=x-2}$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>On additionne un nombre réel $x$, avec son double $2x$ et son carré $x^2$.<br>
+On obtient : $x + 2x + x^2 = \boldsymbol{3x + x^2}$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1325,119 +463,60 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    L&rsquo;ensemble des solutions $\mathscr{S}$ de l&rsquo;équation $-7x^2-3x-8=-8$ est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Une fonction affine $f$, de coefficient directeur $1$, a le tableau de signes ci-dessous.</p>
+<img src="graphe_c14_3_devoir.svg" alt="Tableau de signes" style="display:block;margin:1rem auto;max-width:360px">
+<p>Donner l&rsquo;expression de $f(x)$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\mathscr{S}=\left\lbrace-\dfrac{3}{7}\right\rbrace$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\mathscr{S}=\left\lbrace-\dfrac{3}{7}\ ;\ 0\right\rbrace$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\mathscr{S}=\left\lbrace0\ ;\ \dfrac{3}{7}\right\rbrace$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\mathscr{S}=\left\lbrace-\dfrac{7}{3}\ ;\ 0\right\rbrace$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    L&rsquo;équation $-7x^2-3x-8=-8$ s&rsquo;écrit $-7x^2-3x=0$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>D&rsquo;après le tableau de signes, la fonction $f$ s&rsquo;annule en $2$.<br>
+Comme $f$ est affine de coefficient directeur $1$, on a $f(x)=x+p$, et $f(2)=0$ donne $2+p=0$, soit $p=-2$.<br>
+On vérifie que le coefficient directeur $1$ est bien positif : $f$ est négative puis positive, comme dans le tableau.<br>
+Ainsi $\boldsymbol{f(x)=x-2}$.</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Résoudre dans $\mathbb{R}$ l&rsquo;équation $-7x^2-3x-8=-8$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>L&rsquo;équation $-7x^2-3x-8=-8$ s&rsquo;écrit $-7x^2-3x=0$.<br>
 En factorisant le premier membre (facteur commun $x$), on obtient $x(-7x-3)=0$.<br>
 On reconnaît une équation produit nul dont les solutions sont : $0$ et $\dfrac{3}{-7}=-\dfrac{3}{7}$.<br>
-$\mathcal{S}=\boldsymbol{\{0;-\dfrac{3}{7}\}}$<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+$\mathcal{S}=\boldsymbol{\{0;-\dfrac{3}{7}\}}$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1447,284 +526,61 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On donne les représentations graphiques de deux fonctions affines $g$ (en vert) et $h$ (en rouge) définies sur $\mathbb{R}$.
-<img src="graphe_f05_1_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-Le tableau de signes de la fonction $f$ définies par $f(x)=g(x)\times h(x)$ sur $\mathbb{R}$ est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On donne les représentations graphiques de deux fonctions affines $g$ (en vert) et $h$ (en rouge) définies sur $\mathbb{R}$.</p>
+<img src="graphe_f05_1_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Dresser le tableau de signes de la fonction $f$ définie sur $\mathbb{R}$ par $f(x)=g(x)\times h(x)$.</p>
 
-  <div class="qcm-opts qcm-opts-grid">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span><img src="graphe_f05_1_devoir_optA_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span><img src="graphe_f05_1_devoir_optB_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span><img src="graphe_f05_1_devoir_optC_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span><img src="graphe_f05_1_devoir_optD_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px"></span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La fonction $g$ s&rsquo;annule en $-1$ et la fonction $h$ s&rsquo;annule en $2$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>La fonction $g$ s&rsquo;annule en $-1$ et la fonction $h$ s&rsquo;annule en $2$.<br>
 Quand la droite est en-dessous de l&rsquo;axe des abscisses, la fonction est négative et quand elle est au-dessus, la fonction est positive.<br>
 On en déduit le tableau de signes de leur produit :
-<img src="corr_f05_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+<img src="corr_f05_1_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On donne la représentation graphique d&rsquo;une fonction $f$.</p>
+<img src="graphe_f04_2_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
+<p>Combien de solutions l&rsquo;équation $f(x)=2$ admet-elle ?</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On donne la représentation graphique d&rsquo;une fonction $f$.
-<img src="graphe_f04_2_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L&rsquo;équation $f(x)=2$ a :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$2$ solutions</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0$ solution</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$3$ solutions</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$1$ solution</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Le nombre de solutions de  l&rsquo;équation $f(x)=2$ est le nombre d&rsquo;antécédents de  $2$ par la fonction $f$.<br>
-Puisque la droite d&rsquo;équation $y = 2$ (droite hrizontale) coupe $1$ fois la courbe, on en déduit que l&rsquo;équation  $f(x)=2$ admet $\boldsymbol{1}$ solution..<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Le nombre de solutions de  l&rsquo;équation $f(x)=2$ est le nombre d&rsquo;antécédents de  $2$ par la fonction $f$.<br>
+Puisque la droite d&rsquo;équation $y = 2$ (droite hrizontale) coupe $1$ fois la courbe, on en déduit que l&rsquo;équation  $f(x)=2$ admet $\boldsymbol{1}$ solution..</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1734,126 +590,28 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    <img src="graphe_f07_4_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-L'équation réduite de cette droite est :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$y= 3x-3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$y=3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$y= x +3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$y= -x+3$</span>
-      </div>
-      
-      
-    
+  <div class="auto1re-enonce">
+    <p>Donner l&rsquo;équation réduite de la droite ci-dessous.</p>
+<img src="graphe_f07_4_devoir.svg" alt="Graphique" style="display:block;margin:1rem auto;max-width:360px">
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Le coefficient directeur $m$ de la droite $(AB)$ est donné par : <br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Le coefficient directeur $m$ de la droite $(AB)$ est donné par : <br>
 $m=\dfrac{\boldsymbol{3}}{\boldsymbol{3}}=\dfrac{1\boldsymbol{\times3} }{1\boldsymbol{\times3}}=1$.<br>
 Son ordonnée à l&rsquo;origine est $3$, ainsi l&rsquo;équation réduite de la droite est $\boldsymbol{y=x+3}$.<br>
-<img src="corr_f07_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px">
-La bonne réponse est la réponse <span class="rep">C</span>.
+<img src="corr_f07_4_devoir.svg" alt="Correction" style="display:block;margin:0.8rem auto;max-width:480px"></div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -1888,10 +646,65 @@ La bonne réponse est la réponse <span class="rep">C</span>.
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2065,7 +878,7 @@ La bonne réponse est la réponse <span class="rep">C</span>.
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

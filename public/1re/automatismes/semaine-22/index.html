@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,172 +216,51 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 22 — Probabilités et calculs
+  <div class="auto1-open" data-mode="seance">
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On dispose d&rsquo;une urne A contenant $4$ boules numérotées $2$ ; $13$ ; $26$ ; $30$ et d&rsquo;une urne B contenant $6$ boules numérotées $6$ ; $15$ ; $17$ ; $19$ ; $20$ ; $27$. Les boules sont indiscernables au toucher.</p>
+<p>Dans quelle urne la probabilité d&rsquo;obtenir une boule portant un nombre premier est-elle la plus grande ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Dans l&rsquo;urne A, les nombres premiers sont $2$ et $13$ : la probabilité est $\dfrac{2}{4}=\dfrac{1}{2}$.</p>
+<p>Dans l&rsquo;urne B, les nombres premiers sont $17$ et $19$ : la probabilité est $\dfrac{2}{6}=\dfrac{1}{3}$.</p>
+<p>Comme $\dfrac{1}{2}>\dfrac{1}{3}$, la probabilité d&rsquo;obtenir un nombre premier est plus grande avec l&rsquo;<strong>urne A</strong>.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On dispose d&rsquo;une urne A contenant $4$ boules numérotées : $2 ; 13 ; 26 ; 30$ et d&rsquo;une urne B contenant $6$ boules numérotées : $6 ; 15 ; 17 ; 19 ; 20 ; 27$. <br>
-Les boules sont indiscernables au toucher.
-Parmi les affirmations suivantes, laquelle est vraie ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un numéro impair est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un nombre premier est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un multiple de $3$ est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un numéro supérieur ou égal à $15$ est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    En testant chacune des affirmations, on constate que seule l&rsquo;affirmation correcte est : <br>
-La probabilité d&rsquo;obtenir une boule portant un nombre premier est plus grande en choisissant l&rsquo;urne A.<br>
-En effet :<br>
-Dans l&rsquo;urne A, les issues favorables sont : $2, 13$.<br>
-$P_A = \dfrac24 = \dfrac12$<br>
-Dans l&rsquo;urne B, les issues favorables sont : $17, 19$.<br>
-$P_B = \dfrac26 = \dfrac13$<br>
-On a $\dfrac12 = \dfrac36$ et $\dfrac13 = \dfrac26$ et comme $\dfrac12 > \dfrac13$, donc :<br>
-La probabilité d&rsquo;obtenir une boule portant un nombre premier est plus grande en choisissant l&rsquo;urne A.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
-</div>
+</article>
 
 
 
@@ -383,133 +270,29 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    On lance un dé cubique quatre fois de suite. Le dé est truqué. <br>
-La probabilité d&rsquo;obtenir au moins une fois $6$ lors des quatre lancers est égale à $0,518$.<br>
-On peut alors affirmer que la probabilité de n&rsquo;obtenir aucun $6$ lors des quatre lancers est égale à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On lance un dé cubique truqué quatre fois de suite. La probabilité d&rsquo;obtenir au moins une fois $6$ lors des quatre lancers est égale à $0{,}518$.</p>
+<p>Quelle est la probabilité de n&rsquo;obtenir aucun $6$ lors des quatre lancers ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0,83$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>On ne peut pas savoir</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$0,482$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$0,518$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    On note $A$ l&rsquo;événement &ldquo;obtenir au moins un 6&rdquo; et $B$ l&rsquo;événement &ldquo;n&rsquo;obtenir aucun 6&rdquo;.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>On note $A$ l&rsquo;événement &ldquo;obtenir au moins un 6&rdquo; et $B$ l&rsquo;événement &ldquo;n&rsquo;obtenir aucun 6&rdquo;.<br>
 Les événements $A$ et $B$ sont contraires.<br>
 Donc : $P(B) = 1 - P(A)$.<br>
-$P(B) = 1 - 0,518 = 0,482$<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+$P(B) = 1 - 0,518 = 0,482$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -519,243 +302,26 @@ La bonne réponse est la réponse <span class="rep">C</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Soit $n$ un entier non nul.
-À quelle expression est égale $4^n+4^n$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Soit $n$ un entier non nul.</p>
+<p>Simplifier $4^n+4^n$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$4^2n$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$2\times 4^n$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$4^n+1$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$8^n$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    $4^n+4^n=2\times 4^n$<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Combien de solutions réelles possède l&rsquo;équation $4=-x^2+15$ ?
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0$ solution</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$2$ solutions</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$1$ solution</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>Une infinité de solutions</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    L&rsquo;équation est équivalente à $-x^2=4-15$, soit $x^2=11$.<br>
-$11$ étant strictement positif, cette équation a $2$ solutions : $\sqrt11$ et  $-\sqrt11$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$4^n+4^n=2\times 4^n$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -765,254 +331,91 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    L&rsquo;aire en $\text{hm}^2$ d&rsquo;un carré de côté $300$ $\text{m}$ est égale à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$900$ $\text{hm}^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$90\,000$ $\text{hm}^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$12$ $\text{hm}^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$9$ $\text{hm}^2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    $300$ $\text {m}$ $= 3$ $\text{hm}$<br>
-L&rsquo;aire du carré est : $3 \text { hm}\times 3 \text { hm} = 9 \text{ hm}^2$ .<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+  <div class="auto1re-enonce">
+    Combien de solutions réelles l&rsquo;équation $4=-x^2+15$ possède-t-elle ?
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Voici la répartition des notes sur 10 d&rsquo;une classe de première.
-<img src="graphe_s04_2.png" alt="Graphe" style="display:block;margin:1rem auto;max-width:300px">
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>L&rsquo;équation est équivalente à $-x^2=4-15$, soit $x^2=11$.<br>
+$11$ étant strictement positif, cette équation a $2$ solutions : $\sqrt11$ et  $-\sqrt11$.</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$60$ %</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$75$ %</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$40$ %</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$50$ %</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Le pourcentage d&rsquo;élèves ayant obtenu la note 5 est calculé en divisant l&rsquo;effectif de cette note par l&rsquo;effectif total, puis en multipliant par 100.<br>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    Calculer, en $\text{hm}^2$, l&rsquo;aire d&rsquo;un carré de côté $300\ \text{m}$.
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$300$ $\text {m}$ $= 3$ $\text{hm}$<br>
+L&rsquo;aire du carré est : $3 \text { hm}\times 3 \text { hm} = 9 \text{ hm}^2$ .</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la répartition des notes sur 10 d&rsquo;une classe de première.</p>
+<img src="graphe_s04_2.png" alt="Diagramme en barres" style="display:block;margin:1rem auto;max-width:420px">
+<p>Quel pourcentage des élèves a obtenu la note $5$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Le pourcentage d&rsquo;élèves ayant obtenu la note 5 est calculé en divisant l&rsquo;effectif de cette note par l&rsquo;effectif total, puis en multipliant par 100.<br>
 L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.<br>
 Ici, on trouve un effectif total de $20$ élèves.<br>
 L&rsquo;effectif des élèves ayant obtenu la note 5 est de $12$.<br>
 $\dfrac1220 \times 100 = 60$<br>
-Donc le pourcentage est de $60$ %.<br>
-La bonne réponse est la réponse <span class="rep">A</span>.
+Donc le pourcentage est de $60$ %.</div>
   </div>
   
-</div>
+</article>
 
 </div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 22 — Probabilités et calculs
-</div>
+<div class="auto1-open" data-mode="devoir">
 
 
 
@@ -1021,138 +424,31 @@ Devoirs — Séance 22 — Probabilités et calculs
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On dispose d&rsquo;une urne A contenant $6$ boules numérotées : $6 ; 7 ; 9 ; 10 ; 15 ; 16$ et d&rsquo;une urne B contenant $5$ boules numérotées : $5 ; 12 ; 23 ; 25 ; 29$.<br>
-Les boules sont indiscernables au toucher.<br>
-Parmi les affirmations suivantes, laquelle est vraie ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On dispose d&rsquo;une urne A contenant $6$ boules numérotées $6$ ; $7$ ; $9$ ; $10$ ; $15$ ; $16$ et d&rsquo;une urne B contenant $5$ boules numérotées $5$ ; $12$ ; $23$ ; $25$ ; $29$. Les boules sont indiscernables au toucher.</p>
+<p>Dans quelle urne la probabilité d&rsquo;obtenir une boule portant un multiple de $3$ est-elle la plus grande ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un numéro supérieur ou égal à $15$ est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un numéro impair est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un nombre premier est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>La probabilité d&rsquo;obtenir une boule portant un multiple de $3$ est plus grande en choisissant l&rsquo;urne A plutôt que l&rsquo;urne B.</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    En testant chacune des affirmations, on constate que seule l&rsquo;affirmation correcte est : <br>
-La probabilité d&rsquo;obtenir une boule portant un multiple de 3 est plus grande en choisissant l&rsquo;urne A.<br>
-En effet :<br>
-Dans l&rsquo;urne A, les issues favorables sont : $6, 9, 15$.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Dans l&rsquo;urne A, les issues favorables sont : $6, 9, 15$.<br>
 $P_A = \dfrac{3}{6} = \dfrac{1}{2}$<br>
 Dans l&rsquo;urne B, il n&rsquo;y a qu&rsquo;une seule issue favorable : $12$.<br>
 $P_B = \dfrac{1}{5}$<br>
 On a $\dfrac{1}{2} = \dfrac{5}{10}$ et $\dfrac{1}{5} = \dfrac{2}{10}$ et comme $\dfrac{1}{2} > \dfrac{1}{5}$, donc :<br>
-La probabilité d&rsquo;obtenir une boule portant un multiple de 3 est plus grande en choisissant l&rsquo;urne A.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+La probabilité d&rsquo;obtenir une boule portant un multiple de 3 est plus grande en choisissant l&rsquo;urne A.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1162,133 +458,29 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Dans une production, $10$ % des pièces sont défectueuses. On prélève quatre pièces au hasard.<br>
-La probabilité qu&rsquo;aucune pièce ne soit défectueuse est environ $0,656$.<br>
-On peut alors affirmer que la probabilité qu&rsquo;au moins une pièce soit défectueuse est égale à :
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Dans une production, $10\ $% des pièces sont défectueuses. On prélève quatre pièces au hasard. La probabilité qu&rsquo;aucune pièce ne soit défectueuse est environ $0{,}656$.</p>
+<p>Quelle est la probabilité qu&rsquo;au moins une pièce soit défectueuse ?</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0,9$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0,344$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>On ne peut pas savoir</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$0,656$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    On note $A$ l&rsquo;événement «  au moins une pièce est défectueuse  » et $B$ l&rsquo;événement «  aucune pièce n&rsquo;est défectueuse  ».<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>On note $A$ l&rsquo;événement «  au moins une pièce est défectueuse  » et $B$ l&rsquo;événement «  aucune pièce n&rsquo;est défectueuse  ».<br>
 Les événements $A$ et $B$ sont contraires.<br>
 Donc : $P(A) = 1 - P(B)$.<br>
-$P(A) = 1 - 0{,}656 = 0{,}344$<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+$P(A) = 1 - 0{,}656 = 0{,}344$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1298,124 +490,28 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Soit $n$ un entier non nul. <br>
-À quelle expression est égale $3^n+3^n$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Soit $n$ un entier non nul.</p>
+<p>Simplifier $3^n+3^n$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$3^n+1$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$3^2n$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$2\times 3^n$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$6^n$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    $$
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$$
 \begin{aligned} 3^{n}+3^n&=2\times 3^{n}\end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+$$</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1425,237 +521,25 @@ $$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Combien de solutions réelles possède l&rsquo;équation $19=-x^2+9$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>Une infinité de solutions</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$1$ solution</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$2$ solutions</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$0$ solution</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    L&rsquo;équation est équivalente à $-x^2=19-9$, soit $x^2=-10$.<br>
-Cette équation a $\boldsymbol{0}$ solution réelle car $-10<0$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+  <div class="auto1re-enonce">
+    Combien de solutions réelles l&rsquo;équation $19=-x^2+9$ possède-t-elle ?
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    L&rsquo;aire en $\text{dam}^2$ d&rsquo;un carré de côté $80$ $\text{m}$ est égale à :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$8$ $\text{dam}^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0,8$ $\text{dam}^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$6\,400$ $\text{dam}^2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$64$ $\text{dam}^2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    $80$ $\text{ m}$ $= 8$ $\text{dam}$<br>
-L&rsquo;aire du carré est : $8 \text{ dam}\times 8 \text{ dam} = \boldsymbol{64\textbf{ dam}^2}$ .<br>
-La bonne réponse est la réponse <span class="rep">D</span>.
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>L&rsquo;équation est équivalente à $-x^2=19-9$, soit $x^2=-10$.<br>
+Cette équation a $\boldsymbol{0}$ solution réelle car $-10<0$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1665,124 +549,60 @@ La bonne réponse est la réponse <span class="rep">D</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Voici la répartition des notes sur 20 d&rsquo;une classe de première.
-<img src="graphe_s04_2_devoir.png" alt="Graphe" style="display:block;margin:1rem auto;max-width:300px">
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$4$ %</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$14$ %</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$24$ %</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$34$ %</span>
-      </div>
-      
-      
-    
+  <div class="auto1re-enonce">
+    Calculer, en $\text{dam}^2$, l&rsquo;aire d&rsquo;un carré de côté $80\ \text{m}$.
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    Le pourcentage d&rsquo;élèves ayant obtenu la note 9 est calculé en divisant l&rsquo;effectif de cette note par l&rsquo;effectif total, puis en multipliant par 100.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>$80$ $\text{ m}$ $= 8$ $\text{dam}$<br>
+L&rsquo;aire du carré est : $8 \text{ dam}\times 8 \text{ dam} = \boldsymbol{64\textbf{ dam}^2}$ .</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la répartition des notes sur 20 d&rsquo;une classe de première.</p>
+<img src="graphe_s04_2_devoir.png" alt="Diagramme en barres" style="display:block;margin:1rem auto;max-width:420px">
+<p>Quel pourcentage des élèves a obtenu la note $9$ ?</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Le pourcentage d&rsquo;élèves ayant obtenu la note 9 est calculé en divisant l&rsquo;effectif de cette note par l&rsquo;effectif total, puis en multipliant par 100.<br>
 L&rsquo;effectif total est le nombre de notes représentées dans l&rsquo;histogramme.<br>
 Ici, on trouve un effectif total de $25$ élèves.<br>
 L&rsquo;effectif des élèves ayant obtenu la note 9 est de $6$.<br>
 $\dfrac{6}{25} \times 100 = 24$<br>
-Donc le pourcentage est de $24~\%$.<br>
-La bonne réponse est la réponse <span class="rep">C</span>.
+Donc le pourcentage est de $24~\%$.</div>
   </div>
   
-</div>
+</article>
 
 </div>
 
@@ -1817,10 +637,65 @@ La bonne réponse est la réponse <span class="rep">C</span>.
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -1994,7 +869,7 @@ La bonne réponse est la réponse <span class="rep">C</span>.
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;

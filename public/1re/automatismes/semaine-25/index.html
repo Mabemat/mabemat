@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="lvl-1re">
-<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=49298&amp;path=mabemat/livereload" data-no-instant defer></script>
+<head><script src="/mabemat/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mabemat/livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
@@ -123,7 +123,7 @@ pre[style*="background-color"] {
 </head>
 <body>
   <header class="topbar">
-  <a href="http://localhost:49298/mabemat/" class="brand">
+  <a href="http://localhost:1313/mabemat/" class="brand">
     <span class="brand-text"><span class="brand-ma">Ma</span><span class="brand-bemat">Bémat</span></span>
   </a>
   <nav>
@@ -157,6 +157,14 @@ pre[style*="background-color"] {
 
 
 
+
+
+
+
+
+
+
+
   
   
 
@@ -166,7 +174,7 @@ pre[style*="background-color"] {
 
 <link rel="stylesheet" href="/mabemat/css/projection.29b8a71a9044c19091dd1ea56a19bb3dce48a2b766fc72193c04cac352ac57c0.css" integrity="sha256-KbinGpBEwZCR3R6lahm7Pc5Iordm/HIZPATKw1KsV8A=" crossorigin="anonymous">
 <div class="crumbs fade-up">
-  <a href="http://localhost:49298/mabemat/">Accueil</a>
+  <a href="http://localhost:1313/mabemat/">Accueil</a>
   <span class="sep">/</span>
   
   <a href="/mabemat/1re/">1ère Spécialité</a>
@@ -208,32 +216,20 @@ pre[style*="background-color"] {
   </div>
 </div>
 
+
 <section id="auto-panel-seance" class="mode-panel active fade-up d3">
-  <p class="mode-intro">QCM à réponse unique — choisis une proposition pour révéler la correction immédiatement.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-seance"></div></div>
-    <span class="score"><span class="cur" id="cur-seance">0</span><span class="tot">/6</span></span>
-  </div>
+  <p class="mode-intro">Questions à réponse courte, sans calculatrice : cherche d'abord sur ton cahier, puis déplie la correction question par question.</p>
   <div id="seance-cards"></div>
 </section>
 
 <section id="auto-panel-devoir" class="mode-panel">
-  <p class="mode-intro">Même QCM, sans correction — ton score apparaît une fois toutes les questions complétées.</p>
-  <div class="auto1re-progress">
-    <span class="lbl">Progression</span>
-    <div class="bar"><div class="fill" id="fill-devoir"></div></div>
-    <span class="score"><span class="cur" id="cur-devoir">0</span><span class="tot" id="tot-devoir">/6</span></span>
-  </div>
+  <p class="mode-intro">Mêmes thèmes, énoncés différents. Correction en classe.</p>
   <div id="devoir-cards"></div>
-  <div id="devoir-result" class="auto1re-result" style="display:none"></div>
 </section>
 
+
 <div id="auto1re-src" style="display:none">
-  <div class="qcm-container" data-no-score="true">
-<div style="background:#eef0ec;border-left:5px solid #819171;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Séance 25 — Probabilités conditionnelles et algèbre
-</div>
+  <div class="auto1-open" data-mode="seance">
 
 
 
@@ -242,126 +238,24 @@ Séance 25 — Probabilités conditionnelles et algèbre
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On donne l&rsquo;arbre de probabilités ci-dessous :
-<img src="p05_3.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-$P_C(A)=\ldots$
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On donne l&rsquo;arbre de probabilités ci-dessous.</p>
+<img src="p05_3.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
+<p>Calculer $P_C(A)$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{2}{5} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{1}{3}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{4}{5} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{2}{3} $</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$</p>
 <p>D&rsquo;après la formule des probabilités totales :</p>
 $$\begin{aligned}
 P(C)&=p(A\cap C)+p(\bar A \cap C)\\
@@ -372,570 +266,145 @@ P(C)&=p(A\cap C)+p(\bar A \cap C)\\
 \end{aligned}$$<p>Et donc :
 </p>
 $$\begin{aligned}
-    P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
-    &=\dfrac{P(A)\times P_A(C)}{P(C)}\\
-    &=\dfrac{\dfrac{2}{5}}{\dfrac{3}{5}}\\
-    &=\dfrac{2}{3}
-     \end{aligned}$$<p>
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
+P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
+&=\dfrac{P(A)\times P_A(C)}{P(C)}\\
+&=\dfrac{\dfrac{2}{5}}{\dfrac{3}{5}}\\
+&=\dfrac{2}{3}
+\end{aligned}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Une augmentation de $10\ $% du prix d&rsquo;un article entraîne une hausse de $24$ €.</p>
+<p>Quel était le prix de cet article avant l&rsquo;augmentation ?</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Une augmentation de $10$ %  d&rsquo;un article entraîne une augmentation du prix de $24$ €.
-Le prix de cet article avant l’augmentation est :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$240$ €</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$21{,}6$ €</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$26{,}4$ €</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$34$ €</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>$10\,$ % du prix représente $24$ €, donc $100$ % du prix représente $10$ fois plus que $24$ € (car $10\times 10=100$).</p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>$10\,$ % du prix représente $24$ €, donc $100$ % du prix représente $10$ fois plus que $24$ € (car $10\times 10=100$).</p>
 <p>Le prix de l&rsquo;article était donc : $10\times24=240$ €.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Voici la représentation graphique d&rsquo;une fonction $f$  définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.
-<img src="f02_12.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-À partir de cette représentation graphique, on a :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$a=-2$ et $b=-2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$a=3{,}5$ et $b=-2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$a=3$ et $b=2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$a=3$ et $b=-2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>La valeur de $b$ est donnée par l&rsquo;image de $0$ par $f$ (ordonnée du point d&rsquo;intersection entre la courbe et l&rsquo;axe des ordonnées).</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la représentation graphique d&rsquo;une fonction $f$ définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.</p>
+<img src="f02_12.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:360px">
+<p>Déterminer $a$ et $b$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>La valeur de $b$ est donnée par l&rsquo;image de $0$ par $f$ (ordonnée du point d&rsquo;intersection entre la courbe et l&rsquo;axe des ordonnées).</p>
 <p>Ainsi, $b=-2$.</p>
 <p>La valeur de $a$ s&rsquo;obtient (par exemple) grâce à l&rsquo;image de $1$ par la fonction $f$.</p>
 <p>On lit $f(1)=1$.</p>
 <p>D&rsquo;où, $a\times 1^2-2=1$, soit $a=3$.</p>
 <p>Ainsi, $f(x)=3x^2-2$.</p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Soit $x$ un réel.
-À quelle expression est égale $-4(x+4)^2+2$ ?
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$-4x^2 -32x-66$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$-4x^2 -16x-62$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$-4x^2 +32x-62$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$-4x^2 -32x-62$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On développe l&rsquo;expression de l&rsquo;énoncé.</p>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Soit $x$ un réel.</p>
+<p>Développer et réduire $-4(x+4)^2+2$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On développe l&rsquo;expression de l&rsquo;énoncé.</p>
 $$\begin{aligned}
-    -4(x+4)^2+2&=-4\left(x^2 +8x+16\right)+2\\
-    &=-4x^2 -32x-64 +2\\
-        &=-4x^2 -32x-62\\
-          \end{aligned}$$<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
+-4(x+4)^2+2&=-4\left(x^2 +8x+16\right)+2\\
+&=-4x^2 -32x-64 +2\\
+&=-4x^2 -32x-62\\
+\end{aligned}$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté ci-dessous une droite $D$ d&rsquo;équation $y=mx+p$.</p>
+<img src="f07_6.svg" alt="Droite" style="display:block;margin:1rem auto;max-width:300px">
+<p>Donner le signe de $m$ et le signe de $p$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On a représenté ci-contre une droite $D$.
-Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être représentée par la droite $D$ est :
-<img src="f07_6.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$y=x^2-(x+1)^2+4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$y=3x+3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$y=-3x+3$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$6x+2y-6=0$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On observe sur le graphique que le coefficient directeur est positif ($D$ représente une fonction affine croissante) et que l&rsquo;ordonnée à l&rsquo;origine est strictement positive ($D$ coupe l&rsquo;axe des ordonnées au-dessus de l&rsquo;origine).</p>
-<p>On écrit les équations qui ne sont pas forme réduite, sous forme réduite :</p>
-<p>• $y=3x+3$ est  sous forme réduite.<br>
-• $y=-3x+3$ est  sous forme réduite.<br>
-• $6x+2y-6=0$ s&rsquo;écrit $y=-3x+3$.<br>
-• $y=x^2-(x+1)^2+4$ s&rsquo;écrit $y=-2x+3$.<br></p>
-<p>La seule équation ayant un coefficient directeur positif et une ordonnée à l&rsquo;origine positive est : $y=3x+3$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.</p>
-
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>On observe sur le graphique que le coefficient directeur est positif ($D$ représente une fonction affine croissante) et que l&rsquo;ordonnée à l&rsquo;origine est strictement positive ($D$ coupe l&rsquo;axe des ordonnées au-dessus de l&rsquo;origine).</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -945,123 +414,27 @@ La bonne réponse est la réponse <span class="rep">B</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Quelle est l&rsquo;écriture décimale du nombre dont l&rsquo;écriture scientifique est $2{,}14\times 10^{-3}$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0{,}002\,14$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0{,}021\,4$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$0{,}000\,214$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$2\,140$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Multiplier par  $10^{-3}$ revient à multiplier par $0{,}001$,  donc l&rsquo;écriture décimale de $2{,}14\times 10^{-3}$ est : $0{,}002\,14$.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+  <div class="auto1re-enonce">
+    Donner l&rsquo;écriture décimale du nombre $2{,}14\times 10^{-3}$.
   </div>
   
-</div>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Multiplier par  $10^{-3}$ revient à multiplier par $0{,}001$,  donc l&rsquo;écriture décimale de $2{,}14\times 10^{-3}$ est : $0{,}002\,14$.</div>
+  </div>
+  
+</article>
 
 </div>
-<div class="qcm-container" data-mode="devoir" style="margin-top:2.5rem;">
-<div style="background:#f4f5f1;border-left:4px solid #c5ccbc;padding:0.7rem 1.2rem;margin-bottom:1.5rem;border-radius:0 6px 6px 0;font-size:1.05rem;font-weight:700;color:#3d4636;">
-Devoirs — Séance 25 — Probabilités conditionnelles et algèbre
-</div>
+<div class="auto1-open" data-mode="devoir">
 
 
 
@@ -1070,130 +443,24 @@ Devoirs — Séance 25 — Probabilités conditionnelles et algèbre
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    On donne l&rsquo;arbre de probabilités ci-dessous :
-<img src="p05_3_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-$P_C(A)=\ldots$
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">01</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>On donne l&rsquo;arbre de probabilités ci-dessous.</p>
+<img src="p05_3_devoir.svg" alt="Arbre de probabilités" style="display:block;margin:1rem auto;max-width:360px">
+<p>Calculer $P_C(A)$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$\dfrac{1}{2}$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$\dfrac{5}{8} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$\dfrac{7}{20} $</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$\dfrac{1}{2} $</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On sait que $ P_C(A)=\dfrac{P(A \cap C)}{P(C)}$<br>
 D&rsquo;après la formule des probabilités totales :<br></p>
 $$
 \begin{aligned}P(C)&=p(A\cap C)+p(\bar A \cap C)\\
@@ -1209,145 +476,36 @@ P_C(A)&=\dfrac{P(A \cap C)}{P(C)}\\
 &=\dfrac{\dfrac{7}{20}}{\dfrac{14}{25}}\\
 &=\dfrac{5}{8}\\
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">B</span>.</p>
+$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">02</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Parmi les $2\,000$ logements d&rsquo;une ville, $10\ $% sont des maisons et $80\ $% de celles-ci sont des T2.</p>
+<p>Combien y a-t-il de maisons de type T2 dans cette ville ?</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    Parmi les $2\,000$ logements que compte une ville, $10\,$ %   sont des maisons et $80\,$ %  de celles-ci sont des T2.
-Le nombre de maisons de type T2 dans cette ville est :
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$1\,600$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$16$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$1\,910$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$160$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Les maisons  représentent $10\%$   des logements.<br>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>Les maisons  représentent $10\%$   des logements.<br>
 Il y en a donc : $0{,}1\times 2\,000=200$.<br>
 Dans cette ville, il y a  $200$ maisons.<br>
 Parmi ces maisons, il y a $80\,\%$  de T2.<br>
@@ -1357,153 +515,45 @@ Il y a donc $\boldsymbol{160}$ maisons de type T2 dans cette ville.</p>
 Prendre $10\,\%$  d&rsquo;une quantité revient à la diviser par $10$. <br>
 Pour calculer $20\,\%$, $30\,\, \%$, $40\,\%$, &hellip;. d&rsquo;une quantité, on
 commence par calculer  $10\,\%$  de cette quantité en la divisant par $10$, puis on multiplie
-par $2$ ce résultat si on veut en calculer $20\, \%$, par $3$ si on veut en calculer $30\,\%$, &hellip;.<br></p>
-<p>La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
-  </div>
-  
+par $2$ ce résultat si on veut en calculer $20\, \%$, par $3$ si on veut en calculer $30\,\%$, &hellip;.</p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="1">
-  <div class="qcm-question">
-    Voici la représentation graphique d&rsquo;une fonction $f$  définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.
-<img src="f02_12_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-À partir de cette représentation graphique, on a :
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$a=2$ et $b=2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$a=3{,}5$ et $b=2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$a=3{,}5$ et $b=-2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$a=-3{,}5$ et $b=2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    La valeur de $b$ est donnée par l&rsquo;image de $0$ par $f$ (ordonnée du point d&rsquo;intersection entre la courbe et l&rsquo;axe des ordonnées).<br>
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">03</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>Voici la représentation graphique d&rsquo;une fonction $f$ définie sur $\mathbb{R}$ par $f(x)=ax^2+b$.</p>
+<img src="f02_12_devoir.svg" alt="Parabole" style="display:block;margin:1rem auto;max-width:360px">
+<p>Déterminer $a$ et $b$.</p>
+
+  </div>
+  
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>La valeur de $b$ est donnée par l&rsquo;image de $0$ par $f$ (ordonnée du point d&rsquo;intersection entre la courbe et l&rsquo;axe des ordonnées).<br>
 Ainsi, $b=\boldsymbol{2}$.<br>
 La valeur de $a$ s&rsquo;obtient (par exemple) grâce à l&rsquo;image de $1$ par la fonction $f$.<br>
 On lit $f(1)=5{,}5$. D&rsquo;où, $a\times 1^2+2=5{,}5$, soit $a=\boldsymbol{3{,}5}$.<br>
-Ainsi, $f(x)=3{,}5x^2+2$.<br>
-La bonne réponse est la réponse <span class="rep">B</span>.
+Ainsi, $f(x)=3{,}5x^2+2$.</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1513,290 +563,63 @@ La bonne réponse est la réponse <span class="rep">B</span>.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="2">
-  <div class="qcm-question">
-    Soit $x$ un réel.
-À quelle expression est égale $-4(x+2)^2-1$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">04</div>
+    <div class="auto1re-label">Question</div>
   </div>
+  <div class="auto1re-enonce">
+    <p>Soit $x$ un réel.</p>
+<p>Développer et réduire $-4(x+2)^2-1$.</p>
 
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$-4x^2 -8x-17$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$-4x^2 -16x-15$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$-4x^2 -16x-17$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$-4x^2 +16x-17$</span>
-      </div>
-      
-      
-    
   </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
   
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On développe l&rsquo;expression de l&rsquo;énoncé. <br></p>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div><p>On développe l&rsquo;expression de l&rsquo;énoncé. <br></p>
 $$
 \begin{aligned}
 -4(x+2)^2-1&=-4\left(x^2 +4x+4\right)-1\\
 &=-4x^2 -16x-16 -1\\
 &=\boldsymbol{-4x^2 -16x-17}\\
 \end{aligned}
-$$<p>La bonne réponse est la réponse <span class="rep">C</span>.</p>
+$$</div>
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">05</div>
+    <div class="auto1re-label">Question</div>
+  </div>
+  <div class="auto1re-enonce">
+    <p>On a représenté ci-dessous une droite $D$ d&rsquo;équation $y=mx+p$.</p>
+<img src="f07_6_devoir.svg" alt="Droite" style="display:block;margin:1rem auto;max-width:300px">
+<p>Donner le signe de $m$ et le signe de $p$.</p>
 
   </div>
   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="3">
-  <div class="qcm-question">
-    On a représenté ci-contre une droite $D$.
-Parmi les quatre équations ci-dessous, la seule susceptible d&rsquo;être représentée par la droite $D$ est :
-<img src="f07_6_devoir.svg" alt="Graphe" style="display:block;margin:1rem auto;max-width:360px">
-  </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$y=3x-2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$6x-2y-4=0$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$y=x^2-(x-2)^2+2$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$y=-3x-2$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l&rsquo;ordonnée à l&rsquo;origine est strictement négative ($D$ coupe l&rsquo;axe des ordonnées en dessous de l&rsquo;origine).<br>
-On écrit les équations qui ne sont pas forme réduite, sous forme réduite :<br>
-$\bullet\:$ $y=-3x-2$ est  sous forme réduite.<br>
-$\bullet\:$ $y=3x-2$ est  sous forme réduite.<br>
-$\bullet\:$ $6x-2y-4=0$ s&rsquo;écrit $y=3x-2$.<br>
-$\bullet\:$ $y=x^2-(x-2)^2+2$ s&rsquo;écrit $y=4x-2$.</p>
-<p>La seule équation ayant un coefficient directeur négatif et une ordonnée à l&rsquo;origine négative est : $\boldsymbol{y=-3x-2}$.<br>
-La bonne réponse est la réponse <span class="rep">D</span>.</p>
-
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>On observe sur le graphique que le coefficient directeur est négatif ($D$ représente une fonction affine décroissante) et que l&rsquo;ordonnée à l&rsquo;origine est strictement négative ($D$ coupe l&rsquo;axe des ordonnées en dessous de l&rsquo;origine).</div>
   </div>
   
-</div>
+</article>
 
 
 
@@ -1806,121 +629,24 @@ La bonne réponse est la réponse <span class="rep">D</span>.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-
-<div class="qcm-q qcm-auto" data-correct="0">
-  <div class="qcm-question">
-    Quelle est l&rsquo;écriture décimale du nombre dont l&rsquo;écriture scientifique est $9{,}41\times 10^{-4}$ ?
+<article class="auto1re-card">
+  <div class="auto1re-head">
+    <div class="auto1re-num">06</div>
+    <div class="auto1re-label">Question</div>
   </div>
-
-  <div class="qcm-opts">
-    
-    
-      
-      <div class="qcm-o" data-index="0" onclick="qcmCheck(this)">
-        <span class="qcm-letter">A.</span>
-        <span>$0{,}000\,941$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="1" onclick="qcmCheck(this)">
-        <span class="qcm-letter">B.</span>
-        <span>$0{,}000\,094\,1$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="2" onclick="qcmCheck(this)">
-        <span class="qcm-letter">C.</span>
-        <span>$94\,100$</span>
-      </div>
-      
-      
-    
-      
-      <div class="qcm-o" data-index="3" onclick="qcmCheck(this)">
-        <span class="qcm-letter">D.</span>
-        <span>$0{,}009\,41$</span>
-      </div>
-      
-      
-    
-  </div>
-
-  <div class="qcm-exp" style="display:none;margin-top:0.8rem;"></div>
-  
-  <div class="qcm-correction" style="display:none;margin-top:0.5rem;">
-    <p>Multiplier par  $10^{-4}$ revient à multiplier par $0{,}000\,1$,  donc l&rsquo;écriture décimale de $9{,}41\times 10^{-4}$ est : $\boldsymbol{0{,}000\,941}$.</p>
-<p>La bonne réponse est la réponse <span class="rep">A</span>.</p>
-
+  <div class="auto1re-enonce">
+    Donner l&rsquo;écriture décimale du nombre $9{,}41\times 10^{-4}$.
   </div>
   
-</div>
+  <button class="auto1re-toggle" type="button" aria-expanded="false">
+    <span class="arrow">▸</span><span class="t">Voir la correction</span>
+  </button>
+  <div class="auto1re-corr">
+    <span class="auto1re-corr-label">Correction</span>
+    <div>Multiplier par  $10^{-4}$ revient à multiplier par $0{,}000\,1$,  donc l&rsquo;écriture décimale de $9{,}41\times 10^{-4}$ est : $\boldsymbol{0{,}000\,941}$.</div>
+  </div>
+  
+</article>
 
 </div>
 
@@ -1955,10 +681,65 @@ La bonne réponse est la réponse <span class="rep">D</span>.</p>
     });
   });
 
-   
   var src = document.getElementById('auto1re-src');
   if (!src) return;
 
+   
+  var openBoxes = src.querySelectorAll('.auto1-open');
+  if (openBoxes.length) {
+    var showDevoirCorr =  false ;
+    openBoxes.forEach(function (box) {
+      var mode = box.dataset.mode;
+      var target = document.getElementById(mode === 'devoir' ? 'devoir-cards' : 'seance-cards');
+      if (!target) return;
+      box.querySelectorAll('.auto1re-card, .qcm-q.qcm-auto').forEach(function (card, idx) {
+         
+        if (card.classList.contains('qcm-q')) {
+          var correct = parseInt(card.dataset.correct, 10);
+          card = makeCard(card, idx, mode === 'devoir' ? 'Devoir' : 'Question');
+          var choices = card.querySelectorAll('.auto1re-choice');
+          var corrDiv = card.querySelector('.auto1re-corr');
+          var reveal = mode !== 'devoir' || showDevoirCorr;
+          choices.forEach(function (choice, ci) {
+            choice.addEventListener('click', function () {
+              if (card.classList.contains('answered')) return;
+              card.classList.add('answered');
+              if (!reveal) { choice.classList.add('picked-devoir'); return; }
+              choice.classList.add('picked');
+              if (ci === correct) { choice.classList.add('correct'); }
+              else { choice.classList.add('wrong'); if (choices[correct]) choices[correct].classList.add('correct'); }
+              if (corrDiv) corrDiv.classList.add('open');
+            });
+          });
+          target.appendChild(card);
+          return;
+        }
+        if (mode === 'devoir') {
+          var lbl = card.querySelector('.auto1re-label');
+          if (lbl) lbl.textContent = 'Devoir';
+          if (!showDevoirCorr) {
+            card.querySelectorAll('.auto1re-toggle, .auto1re-corr').forEach(function (el) { el.style.display = 'none'; });
+          }
+        }
+        target.appendChild(card);
+      });
+    });
+    document.querySelectorAll('#seance-cards .auto1re-toggle, #devoir-cards .auto1re-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.auto1re-card');
+        var corr = card.querySelector('.auto1re-corr');
+        var open = btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        card.classList.toggle('is-open', open);
+        if (corr) corr.classList.toggle('open', open);
+        var lbl = btn.querySelector('.t');
+        if (lbl) lbl.textContent = open ? 'Masquer la correction' : 'Voir la correction';
+      });
+    });
+    return;
+  }
+
+   
   var seanceBox = src.querySelector('.qcm-container[data-no-score="true"]');
   var devoirBox = src.querySelector('.qcm-container[data-mode="devoir"]');
 
@@ -2132,7 +913,7 @@ La bonne réponse est la réponse <span class="rep">D</span>.</p>
   </script>
   <script>
      
-    const BUILD_TS = '1794222764';
+    const BUILD_TS = '1794825735';
     document.querySelectorAll('img[src*="/figures/"]').forEach(function(img) {
       const base = img.src.split('?')[0];
       img.src = base + '?v=' + BUILD_TS;
