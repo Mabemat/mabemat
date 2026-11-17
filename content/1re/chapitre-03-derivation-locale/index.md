@@ -7,6 +7,7 @@ show_lecon: true
 has_cours: true
 has_exercices: true
 has_qcm: false
+has_correction: false
 has_revisions: true
 lien_revisions: "revision.pdf"
 competences:

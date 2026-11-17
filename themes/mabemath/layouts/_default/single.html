@@ -569,7 +569,7 @@ async function runPython() {
   </a>
   {{ end }}
 
-  {{ with .Resources.GetMatch "correction.pdf" }}
+  {{ if ne .Params.has_correction false }}{{ with .Resources.GetMatch "correction.pdf" }}
   <a class="res-card fade-up d4 js-pin-pdf" href="#" data-pdf="{{ (. | fingerprint "md5").RelPermalink }}">
     <div class="res-corner">PDF</div>
     <div>
@@ -622,7 +622,7 @@ async function runPython() {
     });
   })();
   </script>
-  {{ end }}
+  {{ end }}{{ end }}
   {{ if .Params.has_revisions }}
   <a class="res-card fade-up d4" href="{{ .Params.lien_revisions }}" target="_blank">
     <div class="res-corner">PDF</div>
