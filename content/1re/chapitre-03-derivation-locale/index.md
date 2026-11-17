@@ -7,6 +7,8 @@ show_lecon: true
 has_cours: true
 has_exercices: true
 has_qcm: false
+has_revisions: true
+lien_revisions: "revision.pdf"
 competences:
   - "Calculer le taux de variation d'une fonction en un point"
   - "Définir et interpréter le nombre dérivé $f'(a)$"
