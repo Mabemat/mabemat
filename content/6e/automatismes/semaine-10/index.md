@@ -11,7 +11,7 @@ weight: 10
 {{< auto6-exo num="Question 1" >}}
 ---Q---
 Quelle fraction de la figure est colorée ?<br>
-<img src="6auto-frac-rect-3-4.svg" alt="Rectangle partagé en 4 parts égales, 3 colorées" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="6auto-frac-rect-3-4.svg" alt="Rectangle partagé en 4 parts égales, 3 colorées" style="display:block;margin:0.8rem auto;max-width:100%;--fw:11em">
 ---CORR---
 ${\color{#D36740}\boldsymbol{\dfrac{3}{4}}}$ : $3$ parts colorées sur $4$ parts égales.
 {{< /auto6-exo >}}
@@ -72,17 +72,18 @@ ${\color{#D36740}\boldsymbol{4\,738}}$ : on lit tout ce qui est écrit jusqu'au 
 {{< auto6-exo num="Question 4" >}}
 ---Q---
 Donner l'abscisse du point $A$ sous forme de fraction.<br>
-<img src="6auto-grad-s29.svg" alt="Demi-droite graduée : unité partagée en 4, point A" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="6auto-grad-s29.svg" alt="Demi-droite graduée : unité partagée en 4, point A" style="display:block;margin:0.8rem auto;max-width:100%;--fw:18em">
 ---CORR---
 L'unité est partagée en $4$ : ${\color{#D36740}\boldsymbol{A\left(\dfrac{7}{4}\right)}}$
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 5" >}}
 ---Q---
-Un disque représente une unité. Colorier la part correspondant à $\dfrac{5}{6}$.<br>
-<img src="6auto-frac-disque-6.svg" alt="Disque partagé en 6 parts égales" style="display:block;margin:0.8rem auto;max-width:100%">
+Un disque représente une unité.<br>
+Colorier la part correspondant à $\dfrac{5}{6}$.<br>
+<img src="6auto-frac-disque-6.svg" alt="Disque partagé en 6 parts égales" style="display:block;margin:0.8rem auto;max-width:100%;--fw:6em">
 ---CORR---
-On colorie $5$ secteurs sur les $6$.<img src="6auto-frac-disque-5-6.svg" alt="Disque : 5 parts sur 6 coloriées" style="display:block;margin:0.8rem auto;max-width:100%">
+On colorie $5$ secteurs sur les $6$.<img src="6auto-frac-disque-5-6.svg" alt="Disque : 5 parts sur 6 coloriées" style="display:block;margin:0.8rem auto;max-width:100%;--fw:6em">
 {{< /auto6-exo >}}
 
 {{< /auto6-seance >}}
@@ -92,9 +93,9 @@ On colorie $5$ secteurs sur les $6$.<img src="6auto-frac-disque-5-6.svg" alt="Di
 {{< auto6-exo num="Question 1" >}}
 ---Q---
 Colorier les $\dfrac{2}{5}$ de la figure.<br>
-<img src="6auto-frac-rect-5.svg" alt="Rectangle partagé en 5 parts égales" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="6auto-frac-rect-5.svg" alt="Rectangle partagé en 5 parts égales" style="display:block;margin:0.8rem auto;max-width:100%;--fw:13em">
 ---CORR---
-On colorie $2$ parts sur les $5$.<img src="6auto-frac-rect-2-5.svg" alt="Rectangle : 2 parts sur 5 coloriées" style="display:block;margin:0.8rem auto;max-width:100%">
+On colorie $2$ parts sur les $5$.<img src="6auto-frac-rect-2-5.svg" alt="Rectangle : 2 parts sur 5 coloriées" style="display:block;margin:0.8rem auto;max-width:100%;--fw:13em">
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 2" >}}
@@ -107,7 +108,7 @@ Vrai ou faux : $1 - \dfrac{1}{4} = \dfrac{3}{4}$.
 {{< auto6-exo num="Question 3" >}}
 ---Q---
 Relier chaque calcul à son résultat.<br>
-<img src="6auto-relier-s30.svg" alt="3,5 + 1,5 ; 9 − 4,2 ; 6,4 + 1,3 à relier à 4,8 ; 7,7 ; 5" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="6auto-relier-s30.svg" alt="3,5 + 1,5 ; 9 − 4,2 ; 6,4 + 1,3 à relier à 4,8 ; 7,7 ; 5" style="display:block;margin:0.8rem auto;max-width:100%;--fw:16em">
 ---CORR---
 $3{,}5 + 1{,}5 = {\color{#D36740}\boldsymbol{5}}$ ; $9 - 4{,}2 = {\color{#D36740}\boldsymbol{4{,}8}}$ ; $6{,}4 + 1{,}3 = {\color{#D36740}\boldsymbol{7{,}7}}$
 {{< /auto6-exo >}}

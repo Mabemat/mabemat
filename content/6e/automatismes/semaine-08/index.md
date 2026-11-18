@@ -73,16 +73,18 @@ ${\color{#D36740}\boldsymbol{6}}$ élèves (colonne « Été »).
 
 {{< auto6-exo num="Question 4" >}}
 ---Q---
-Modes de transport des élèves (effectifs). Quel est le mode de transport le plus utilisé ?<br>
-<img src="6auto-barres-transport.svg" alt="Diagramme en barres : à pied 5, bus 6, vélo 8, trottinette 3" style="display:block;margin:0.8rem auto;max-width:100%">
+Modes de transport des élèves (effectifs).<br>
+Quel est le mode de transport le plus utilisé ?<br>
+<img src="6auto-barres-transport.svg" alt="Diagramme en barres : à pied 5, bus 6, vélo 8, trottinette 3" style="display:block;margin:0.8rem auto;max-width:100%;--fw:20em">
 ---CORR---
 <span class="rep">Le vélo</span> : $8$ élèves, c'est la barre la plus haute.
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 5" >}}
 ---Q---
-C'est le matin. Quelle heure est-il ?<br>
-<img src="6auto-horloge-7h15.svg" alt="Horloge : petite aiguille entre 7 et 8, grande aiguille sur 3" style="display:block;margin:0.8rem auto;max-width:100%">
+C'est le matin.<br>
+Quelle heure est-il ?<br>
+<img src="6auto-horloge-7h15.svg" alt="Horloge : petite aiguille entre 7 et 8, grande aiguille sur 3" style="display:block;margin:0.8rem auto;max-width:100%;--fw:7em">
 ---CORR---
 Il est ${\color{#D36740}\boldsymbol{7}}$ h ${\color{#D36740}\boldsymbol{15}}$ min.
 {{< /auto6-exo >}}
@@ -107,8 +109,9 @@ $35°$ <span class="rep">aigu</span> ; $90°$ <span class="rep">droit</span> ; $
 
 {{< auto6-exo num="Question 3" >}}
 ---Q---
-Hauteur de la mer au cours de la journée. Quelle est la hauteur d'eau à $4$ h ?<br>
-<img src="6auto-courbe-mer.svg" alt="Courbe de la hauteur de la mer en fonction de l'heure" style="display:block;margin:0.8rem auto;max-width:100%">
+Hauteur de la mer au cours de la journée.<br>
+Quelle est la hauteur d'eau à $4$ h ?<br>
+<img src="6auto-courbe-mer.svg" alt="Courbe de la hauteur de la mer en fonction de l'heure" style="display:block;margin:0.8rem auto;max-width:100%;--fw:22em">
 ---CORR---
 ${\color{#D36740}\boldsymbol{2}}$ m : on lit l'ordonnée du point de la courbe d'abscisse $4$.
 {{< /auto6-exo >}}

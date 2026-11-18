@@ -10,7 +10,8 @@ weight: 11
 
 {{< auto6-exo num="Question 1" >}}
 ---Q---
-Quel est le nombre qui, multiplié par $9$, donne $4$ ? Donner son écriture fractionnaire.
+Quel est le nombre qui, multiplié par $9$, donne $4$ ?<br>
+Donner son écriture fractionnaire.
 ---CORR---
 C'est ${\color{#D36740}\boldsymbol{\dfrac{4}{9}}}$ car $\dfrac{4}{9} \times 9 = 4$.
 {{< /auto6-exo >}}
@@ -57,23 +58,25 @@ $\dfrac{8}{9} {\color{#D36740}\boldsymbol{>}} \dfrac{5}{9}$ : même dénominateu
 {{< auto6-exo num="Question 2" >}}
 ---Q---
 Quelle fraction de la figure est colorée ?<br>
-<img src="6auto-frac-disque-5-8.svg" alt="Disque partagé en 8 parts égales, 5 colorées" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="6auto-frac-disque-5-8.svg" alt="Disque partagé en 8 parts égales, 5 colorées" style="display:block;margin:0.8rem auto;max-width:100%;--fw:6em">
 ---CORR---
 ${\color{#D36740}\boldsymbol{\dfrac{5}{8}}}$
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 3" >}}
 ---Q---
-Choix de LV2 dans un collège. Que représente le nombre $33$ ?<br>
-<table class="auto-tab"><tr><th></th><th>Espagnol</th><th>Allemand</th><th>Italien</th></tr><tr><td>Filles</td><td>42</td><td>36</td><td>27</td></tr><tr><td>Garçons</td><td>58</td><td>20</td><td>33</td></tr></table>
+Choix de LV2 dans un collège.<br>
+<table class="auto-tab"><tr><th></th><th>Espagnol</th><th>Allemand</th><th>Italien</th></tr><tr><td>Filles</td><td>42</td><td>36</td><td>27</td></tr><tr><td>Garçons</td><td>58</td><td>20</td><td>33</td></tr></table><br>
+Que représente le nombre $33$ ?
 ---CORR---
 <span class="rep">Le nombre de garçons</span> qui ont choisi italien.
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 4" >}}
 ---Q---
-Modes de transport des élèves (effectifs). Combien d'élèves ont répondu à l'enquête ?<br>
-<img src="6auto-barres-transport.svg" alt="Diagramme en barres : à pied 5, bus 6, vélo 8, trottinette 3" style="display:block;margin:0.8rem auto;max-width:100%">
+Modes de transport des élèves (effectifs).<br>
+Combien d'élèves ont répondu à l'enquête ?<br>
+<img src="6auto-barres-transport.svg" alt="Diagramme en barres : à pied 5, bus 6, vélo 8, trottinette 3" style="display:block;margin:0.8rem auto;max-width:100%;--fw:20em">
 ---CORR---
 $5 + 6 + 8 + 3 = {\color{#D36740}\boldsymbol{22}}$ élèves.
 {{< /auto6-exo >}}
@@ -91,7 +94,9 @@ $\dfrac{1}{2} + \dfrac{1}{4} = \dfrac{2}{4} + \dfrac{1}{4} = {\color{#D36740}\bo
 
 {{< auto6-exo num="Question 1" >}}
 ---Q---
-Un cercle a pour centre $O$ et pour rayon $4$ cm. On place $M$ tel que $OM = 4$ cm. Où se trouve $M$ ?
+Un cercle a pour centre $O$ et pour rayon $4$ cm.<br>
+On place $M$ tel que $OM = 4$ cm.<br>
+Où se trouve $M$ ?
 ---CORR---
 <span class="rep">Sur le cercle</span> : tous ses points sont à $4$ cm de $O$.
 {{< /auto6-exo >}}
@@ -99,7 +104,7 @@ Un cercle a pour centre $O$ et pour rayon $4$ cm. On place $M$ tel que $OM = 4$ 
 {{< auto6-exo num="Question 2" >}}
 ---Q---
 À l'aide du compas, déterminer quel segment est le plus long.<br>
-<img src="6auto-segments-ab-cd.svg" alt="Deux segments [AB] et [CD]" style="display:block;margin:0.8rem auto;max-width:100%">
+<img src="6auto-segments-ab-cd.svg" alt="Deux segments [AB] et [CD]" style="display:block;margin:0.8rem auto;max-width:100%;--fw:14em">
 ---CORR---
 On reporte la longueur $AB$ sur $[CD]$ au compas : $AB > CD$, le segment ${\color{#D36740}\boldsymbol{[AB]}}$ est le plus long.
 {{< /auto6-exo >}}
