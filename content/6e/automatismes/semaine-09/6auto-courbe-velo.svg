@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 222" width="330" height="222" role="img" aria-label="Distance parcourue en fonction de la durée">
+<defs><marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7z" fill="#2A2521"/></marker></defs>
+<line x1="34" y1="190" x2="34" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="56" y1="190" x2="56" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="78" y1="190" x2="78" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="100" y1="190" x2="100" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="122" y1="190" x2="122" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="144" y1="190" x2="144" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="166" y1="190" x2="166" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="188" y1="190" x2="188" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="210" y1="190" x2="210" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="232" y1="190" x2="232" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="254" y1="190" x2="254" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="190" x2="254" y2="190" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="170" x2="254" y2="170" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="150" x2="254" y2="150" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="130" x2="254" y2="130" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="110" x2="254" y2="110" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="90" x2="254" y2="90" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="70" x2="254" y2="70" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="50" x2="254" y2="50" stroke="#D9D2C6" stroke-width="0.7"/>
+<line x1="34" y1="30" x2="254" y2="30" stroke="#D9D2C6" stroke-width="0.7"/>
+<text x="34.0" y="205.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">0</text>
+<text x="78.0" y="205.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">2</text>
+<text x="122.0" y="205.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">4</text>
+<text x="166.0" y="205.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">6</text>
+<text x="210.0" y="205.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">8</text>
+<text x="254.0" y="205.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">10</text>
+<text x="27.0" y="194.0" text-anchor="end" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">0</text>
+<text x="27.0" y="154.0" text-anchor="end" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">2</text>
+<text x="27.0" y="114.0" text-anchor="end" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">4</text>
+<text x="27.0" y="74.0" text-anchor="end" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">6</text>
+<text x="27.0" y="34.0" text-anchor="end" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">8</text>
+<line x1="34" y1="190" x2="268" y2="190" stroke="#2A2521" stroke-width="1.2" marker-end="url(#ar)"/>
+<line x1="34" y1="190" x2="34" y2="16" stroke="#2A2521" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="272.0" y="194.0" text-anchor="start" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">Durée (h)</text>
+<text x="42.0" y="12.0" text-anchor="start" style="font-family:Georgia,'Times New Roman',serif;font-size:11px" fill="#2A2521">Distance (km)</text>
+<path d="M34.0 190.0 C41.3 183.3 63.3 161.7 78.0 150.0 C92.7 138.3 107.3 130.0 122.0 120.0 C136.7 110.0 151.3 98.3 166.0 90.0 C180.7 81.7 195.3 75.0 210.0 70.0 C224.7 65.0 246.7 61.7 254.0 60.0" fill="none" stroke="#C5607A" stroke-width="2.2"/>
+</svg>

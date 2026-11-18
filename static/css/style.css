@@ -1928,3 +1928,9 @@ pre code span[style*="user-select:none"] { border-right: 1px solid #bbb !importa
   .exercices-brevet { margin-top: 24px; }
 }
 
+
+/* Automatismes 6e : tableaux de donnees dans les enonces */
+.exo-enonce table.auto-tab { border-collapse: collapse; margin: 0.8rem auto; font-size: 15px; }
+.exo-enonce table.auto-tab th, .exo-enonce table.auto-tab td { border: 1px solid #D36740; padding: 0.3rem 0.7rem; text-align: center; }
+.exo-enonce table.auto-tab th { font-weight: 600; background: #FDF5F0; }
+.exo-enonce table.auto-tab td:first-child { text-align: left; }

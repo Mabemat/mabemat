@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 54" width="182" height="54" role="img" aria-label="Demi-droite graduée et point A">
+<defs><marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7z" fill="#2A2521"/></marker></defs>
+<line x1="14" y1="26" x2="170" y2="26" stroke="#2A2521" stroke-width="1.8" marker-end="url(#ar)"/>
+<line x1="22.0" y1="21" x2="22.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="37.0" y1="21" x2="37.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="52.0" y1="21" x2="52.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="67.0" y1="21" x2="67.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="82.0" y1="21" x2="82.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="97.0" y1="21" x2="97.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="112.0" y1="21" x2="112.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="127.0" y1="21" x2="127.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="142.0" y1="21" x2="142.0" y2="31" stroke="#2A2521" stroke-width="1"/>
+<line x1="22" y1="17" x2="22" y2="35" stroke="#2A2521" stroke-width="1.8"/>
+<text x="22.0" y="50.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#2A2521">0</text>
+<line x1="82" y1="17" x2="82" y2="35" stroke="#2A2521" stroke-width="1.8"/>
+<text x="82.0" y="50.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#2A2521">1</text>
+<line x1="142" y1="17" x2="142" y2="35" stroke="#2A2521" stroke-width="1.8"/>
+<text x="142.0" y="50.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#2A2521">2</text>
+<line x1="127.0" y1="14" x2="127.0" y2="38" stroke="#D36740" stroke-width="2.6"/>
+<text x="127.0" y="9.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#D36740">A</text>
+</svg>

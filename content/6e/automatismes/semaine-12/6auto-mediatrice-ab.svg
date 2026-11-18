@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 255" width="280" height="255" role="img" aria-label="Médiatrice de [AB] et cercle de centre O">
+<defs><marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7z" fill="#2A2521"/></marker></defs>
+<line x1="30" y1="125" x2="250" y2="125" stroke="#2A2521" stroke-width="1.6"/>
+<line x1="26" y1="121" x2="34" y2="129" stroke="#2A2521" stroke-width="1.6"/><line x1="26" y1="129" x2="34" y2="121" stroke="#2A2521" stroke-width="1.6"/>
+<line x1="246" y1="121" x2="254" y2="129" stroke="#2A2521" stroke-width="1.6"/><line x1="246" y1="129" x2="254" y2="121" stroke="#2A2521" stroke-width="1.6"/>
+<text x="22.0" y="143.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#2A2521">A</text>
+<text x="258.0" y="143.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#2A2521">B</text>
+<path d="M156.5 44.4 A150 150 0 0 0 120.0 5.0" fill="none" stroke="#9A8D91" stroke-width="1.2"/>
+<path d="M156.5 205.6 A150 150 0 0 1 120.0 245.0" fill="none" stroke="#9A8D91" stroke-width="1.2"/>
+<path d="M160.0 5.0 A150 150 0 0 0 123.5 44.4" fill="none" stroke="#9A8D91" stroke-width="1.2"/>
+<path d="M160.0 245.0 A150 150 0 0 1 123.5 205.6" fill="none" stroke="#9A8D91" stroke-width="1.2"/>
+<line x1="140" y1="13.0" x2="140" y2="237.0" stroke="#D36740" stroke-width="2"/>
+<circle cx="140" cy="125" r="110" fill="none" stroke="#C5607A" stroke-width="1.6" stroke-dasharray="5 4"/>
+<circle cx="140" cy="125" r="2.8" fill="#D36740"/>
+<text x="152.0" y="141.0" text-anchor="middle" style="font-family:Georgia,'Times New Roman',serif;font-size:13px" fill="#D36740">O</text>
+<path d="M83 119 L87 131 M85 119 L89 131" stroke="#2A2521" stroke-width="1.2"/><path d="M193 119 L197 131 M195 119 L199 131" stroke="#2A2521" stroke-width="1.2"/>
+<path d="M140 115 L150 115 L150 125" fill="none" stroke="#2A2521" stroke-width="1"/>
+</svg>
