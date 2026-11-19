@@ -69,7 +69,7 @@ $(130-80) \div (3+7)$ s'écrit : <span class="rep">le quotient de la différence
 
 {{< auto3-exo num="Exercice 3" >}}3
 ---Q---
-$RLV$ est un triangle quelconque. L'angle $\widehat{RLV}$ mesure $37^\circ$ et l'angle $\widehat{LRV}$ mesure $34^\circ$.<br>Quelle est la mesure de l'angle $\widehat{LVR}$ ?
+$RLV$ est un triangle quelconque.<br>L'angle $\widehat{RLV}$ mesure $37^\circ$ et l'angle $\widehat{LRV}$ mesure $34^\circ$.<br>Quelle est la mesure de l'angle $\widehat{LVR}$ ?
 ---CORR---
 Dans un triangle, la somme des angles est égale à $180^\circ$.<br>D'où : $\widehat{RLV} + \widehat{LVR} + \widehat{LRV}=180^\circ$.<br>D'où : $\widehat{LVR}=180- \left(\widehat{RLV} + \widehat{LRV}\right)$.<br>D'où : $\widehat{LVR}= 180^\circ-\left(37^\circ+34^\circ\right)=180^\circ-71^\circ={\color{#EB7F73}\boldsymbol{109^\circ}}$.
 {{< /auto3-exo >}}

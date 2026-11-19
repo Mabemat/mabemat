@@ -50,7 +50,7 @@ Le triangle $MNO$ est rectangle en $M$.<br>D'après le théorème de Pythagore, 
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Les points $R$, $O$ et $D$ sont les symétriques respectifs de $S$, $V$ et $Z$ par rapport à $O$. Les points $S$, $V$ et $Z$ sont alignés. Les points $R$, $O$ et $D$ le sont-ils ? Justifier.
+Les points $R$, $O$ et $D$ sont les symétriques respectifs de $S$, $V$ et $Z$ par rapport à $O$.<br>Les points $S$, $V$ et $Z$ sont alignés.<br>Les points $R$, $O$ et $D$ le sont-ils ? Justifier.
 <br>
 <img src="3auto_s28_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---

@@ -117,7 +117,7 @@ ${\color{#D36740}\boldsymbol{72\,400}}$
 
 {{< auto6-exo num="Question 4" >}}
 ---Q---
-Parmi $(MN)$, $[MN]$ et $[MN)$, laquelle désigne le segment ? Et la demi-droite d'origine $M$ ?
+Parmi $(MN)$, $[MN]$ et $[MN)$, laquelle désigne le segment ?<br>Et la demi-droite d'origine $M$ ?
 ---CORR---
 Le segment : ${\color{#D36740}\boldsymbol{[MN]}}$ &emsp; La demi-droite d'origine $M$ : ${\color{#D36740}\boldsymbol{[MN)}}$
 {{< /auto6-exo >}}

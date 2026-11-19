@@ -103,7 +103,7 @@ Ce sont des angles <span class="rep">opposés par le sommet</span>.
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Zacharie prépare un cocktail à base de sirop de fraise, de jus d'abricot et d'eau gazeuse pour ses amis. Il mélange les trois ingrédients dans le ratio $2:7:10$.<br>Il verse $40~\text{cL}$ de sirop de fraise. Quelle quantité de jus d'abricot et d'eau gazeuse doit-il ajouter et quelle quantité de cocktail obtiendra-t-il ?
+Zacharie prépare un cocktail à base de sirop de fraise, de jus d'abricot et d'eau gazeuse pour ses amis.<br>Il mélange les trois ingrédients dans le ratio $2:7:10$.<br>Il verse $40~\text{cL}$ de sirop de fraise.<br>Quelle quantité de jus d'abricot et d'eau gazeuse doit-il ajouter et quelle quantité de cocktail obtiendra-t-il ?
 ---CORR---
 $\dfrac{40~\text{cL}}{2}=20$, donc :<br>Volume de jus d'abricot : $20\times 7 = {\color{#EB7F73}\boldsymbol{140~\text{cL}}}$.<br>Volume d'eau gazeuse : $20\times 10 = {\color{#EB7F73}\boldsymbol{200~\text{cL}}}$.<br>Volume total de cocktail : $40+140+200 = {\color{#EB7F73}\boldsymbol{380~\text{cL}}}$.
 {{< /auto3-exo >}}

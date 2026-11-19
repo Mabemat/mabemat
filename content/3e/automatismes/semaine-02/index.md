@@ -90,7 +90,7 @@ $66{,}2~\text{cm}^2 = 66{,}2\div100\div100~\text{m}^2 = {\color{#EB7F73}\boldsym
 {{< auto3-exo num="Exercice 5" >}}
 ---Q---
 Un collège avait $900$ élèves en $2025$. <br>
-Depuis, le nombre d'élèves a augmenté de $8~\%$. Calculer le nombre d'élèves dans ce collège cette année.
+Depuis, le nombre d'élèves a augmenté de $8~\%$.<br>Calculer le nombre d'élèves dans ce collège cette année.
 ---CORR---
 Une augmentation de $8~\%$ revient à multiplier par $1{,}08$.<br>$900\times 1{,}08 = {\color{#EB7F73}\boldsymbol{972}}$ élèves.<br>Autre méthode : augmenter de $8~\%$, c'est calculer $8~\%$ du nombre de départ puis l'ajouter à ce nombre.<br>$\dfrac{8}{100}\times 900=\dfrac{8\times 900}{100}=\dfrac{8 \times {\color{#C5607A}\boldsymbol{100}} \times 9}{{\color{#C5607A}\boldsymbol{100}}}=8 \times 9=72$<br>$900 + 72 = {\color{#EB7F73}\boldsymbol{972}}$ élèves.
 {{< /auto3-exo >}}
@@ -130,7 +130,7 @@ $0{,}04~\text{km}^2 = 0{,}04\times100\times100\times100~\text{m}^2 = {\color{#EB
 
 {{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-En 2025, il y avait $600$ élèves dans un lycée. En 2026, ils sont $636$.<br>Exprimer la variation du nombre d'élèves de cet établissement en pourcentage.
+En 2025, il y avait $600$ élèves dans un lycée.<br>En 2026, ils sont $636$.<br>Exprimer la variation du nombre d'élèves de cet établissement en pourcentage.
 ---CORR---
 $636\div 600 = 1{,}06 = 106\% = 100\%+6\%$<br>Le nombre d'élèves a augmenté de ${\color{#EB7F73}\boldsymbol{6~\%}}$.
 {{< /auto3-exo >}}

@@ -67,7 +67,7 @@ Que signifie « $C \in (d)$ » ?
 
 {{< auto6-exo num="Question 3" >}}
 ---Q---
-Le double d'un nombre vaut $48$. Combien vaut son quart ?
+Le double d'un nombre vaut $48$.<br>Combien vaut son quart ?
 ---CORR---
 ${\color{#D36740}\boldsymbol{6}}$
 {{< /auto6-exo >}}

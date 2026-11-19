@@ -94,6 +94,27 @@
     return b;
   });
 
+  /* ── Typographie française : espace insécable avant ? ! : ; » et après «,
+        pour qu'un « ? » ne parte jamais seul à la ligne (hors formules KaTeX) ── */
+  function fixTypo(root) {
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        return (n.parentElement && n.parentElement.closest('.katex, script, style'))
+          ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [], n;
+    while ((n = w.nextNode())) nodes.push(n);
+    nodes.forEach(function (t) {
+      var v = t.nodeValue
+        .replace(/[ \u00A0]+([?!:;»])/g, '\u00A0$1')
+        .replace(/«[ \u00A0]+/g, '«\u00A0');
+      /* « ? » en tête de nœud texte, juste après une formule : on remplace l'espace précédente */
+      if (/^[?!:;»]/.test(v) && t.previousSibling && t.previousSibling.nodeType === 1) v = '\u00A0' + v;
+      if (v !== t.nodeValue) t.nodeValue = v;
+    });
+  }
+
   /* ── Rendu (lit le HTML rendu par KaTeX au moment de l'affichage) ── */
   function render() {
     var ex = data[seance].exos[q];
@@ -103,8 +124,9 @@
     numEl.textContent = ex.numEl ? ex.numEl.textContent.trim() : '';
     tagEl.textContent = data[seance].titre + ' · Question ' + (q + 1) + ' / ' + data[seance].exos.length;
     qEl.innerHTML = ex.qNode ? ex.qNode.innerHTML : '';
+    fixTypo(qEl);
     var isRev = !!revealed[seance + '-' + q];
-    if (isRev && corrHtml) { cBody.innerHTML = corrHtml; cEl.hidden = false; }
+    if (isRev && corrHtml) { cBody.innerHTML = corrHtml; fixTypo(cBody); cEl.hidden = false; }
     else { cEl.hidden = true; cBody.innerHTML = ''; }
     focusEl.style.cursor = corrHtml ? 'pointer' : 'default';
     pills.forEach(function (p, i) { p.classList.toggle('active', i === seance); });

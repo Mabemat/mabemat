@@ -17,7 +17,7 @@ Prendre $\dfrac{1}{6}$ d'une quantité revient à la diviser par $6$.<br>$\dfrac
 
 {{< auto3-exo num="Exercice 2" >}}2
 ---Q---
-Justifier si les nombres proposés sont des solutions de l'équation donnée ou non $80x-320=-20x^2+80x$ pour $x=-4$, $x=4$ puis $x=-1$.
+On considère l'équation $80x-320=-20x^2+80x$.<br>Les nombres $-4$, $4$ et $-1$ sont-ils solutions de cette équation ? Justifier.
 ---CORR---
 Pour $x=-4$ : <br>
 $80\times(-4)-320=-640$ 

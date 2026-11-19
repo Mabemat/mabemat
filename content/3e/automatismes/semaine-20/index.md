@@ -10,7 +10,7 @@ weight: 20
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Isabelle a repéré, à l'épicerie, des pots de cancoillotte qui l'intéressent.<br>Elle lit que $9$ pots de cancoillotte coûtent $27$€. Elle veut en acheter $11$. Combien va-t-elle dépenser ?
+Isabelle a repéré, à l'épicerie, des pots de cancoillotte qui l'intéressent.<br>Elle lit que $9$ pots de cancoillotte coûtent $27$€.<br>Elle veut en acheter $11$.<br>Combien va-t-elle dépenser ?
 
 ---CORR---
 $1$ pot de cancoillotte coûte $27\div 9 = {\color{#C5607A}\boldsymbol{3}}$€.<br>$11$ pots de cancoillotte coûtent ${\color{#C5607A}\boldsymbol{11}} \times {\color{#C5607A}\boldsymbol{3}} = {\color{#EB7F73}\boldsymbol{33}}$€.

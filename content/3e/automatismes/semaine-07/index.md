@@ -141,7 +141,7 @@ Le triangle $LMN$ est rectangle en $N$ : son cercle circonscrit a donc pour diam
 
 {{< auto3-exo num="Exercice 5" >}}5
 ---Q---
-Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$. Les points $Y$, $H$ et $O$ sont alignés. Les points $P$, $Z$ et $F$ le sont-ils ? Justifier.
+Les points $P$, $Z$ et $F$ sont les symétriques respectifs de $Y$, $H$ et $O$ par rapport à $(d)$.<br>Les points $Y$, $H$ et $O$ sont alignés.<br>Les points $P$, $Z$ et $F$ le sont-ils ? Justifier.
 <br>
 <img src="3auto_s21_q2.svg" alt="figure" style="display:block;margin:0.8rem auto;max-width:100%">
 ---CORR---

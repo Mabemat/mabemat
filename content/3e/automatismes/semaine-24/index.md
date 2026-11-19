@@ -55,7 +55,7 @@ a. Les angles $\widehat{SMC}$ et $\widehat{CME}$ sont supplémentaires, donc $\w
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Résoudre ce problème, lié à une échelle sur un plan.<br>Le plan du pays de la sœur de Gabrielle a une échelle de $\dfrac{1}{5\,000\,000}$. Gabrielle mesure, sur ce plan, un segment de $3{,}9~\text{cm}$.<br>À quelle distance réelle, ce segment correspond-il ?
+Résoudre ce problème, lié à une échelle sur un plan.<br>Le plan du pays de la sœur de Gabrielle a une échelle de $\dfrac{1}{5\,000\,000}$.<br>Gabrielle mesure, sur ce plan, un segment de $3{,}9~\text{cm}$.<br>À quelle distance réelle, ce segment correspond-il ?
 ---CORR---
 Une échelle de $\dfrac{1}{5\,000\,000}$ signifie que $1~\text{cm}$ sur le plan représente $5\,000\,000~\text{cm}$ en réalité, soit $50~\text{km}$.<br>$3{,}9~\text{cm}\times 50~\text{km} = {\color{#EB7F73}\boldsymbol{195~\text{km}}}$.
 {{< /auto3-exo >}}
@@ -82,7 +82,7 @@ $\mathcal{V}=\dfrac{1}{3} \times \mathcal{B} \times h=\dfrac{1}{3}\times(10~\tex
 
 {{< auto3-exo num="Exercice 4" >}}4
 ---Q---
-Voici les 3 premiers motifs d'une série de motifs figuratifs. Les motifs se succèdent selon une règle bien définie.<br>Quel sera le nombre d'étoiles dans le motif au rang $n$ en fonction de $n$ ?
+Voici les 3 premiers motifs d'une série de motifs figuratifs.<br>Les motifs se succèdent selon une règle bien définie.<br>Quel sera le nombre d'étoiles dans le motif au rang $n$ en fonction de $n$ ?
 <br>
 <div style="display:flex;justify-content:center;align-items:center;gap:1.5rem;flex-wrap:wrap;">
   <img src="3auto_s71_q1.svg" alt="figure" style="max-width:30%">

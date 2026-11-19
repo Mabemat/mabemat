@@ -106,7 +106,7 @@ C'est la <span class="rep">somme</span>.
 
 {{< auto6-exo num="Question 3" >}}
 ---Q---
-Deux angles adjacents mesurent $110°$ et $70°$. Que forment-ils ensemble ?
+Deux angles adjacents mesurent $110°$ et $70°$.<br>Que forment-ils ensemble ?
 ---CORR---
 $110° + 70° = 180°$ : ils forment un <span class="rep">angle plat</span>.
 {{< /auto6-exo >}}

@@ -58,7 +58,7 @@ Ce sont des angles <span class="rep">supplémentaires</span> car la somme de leu
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Benoît relève les prix des maquettes sur un catalogue par correspondance en fonction de la quantité saisie dans le panier. Il note les prix dans le tableau suivant :
+Benoît relève les prix des maquettes sur un catalogue par correspondance en fonction de la quantité saisie dans le panier.<br>Il note les prix dans le tableau suivant :
 <table style="border-collapse:collapse;margin:0.8rem auto;font-size:0.9rem">
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Maquettes</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$3$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$4$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$7$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$12$</td></tr>
 <tr><th style="background:#FDF2F4;color:#8B3C52;border:1px solid #ddb8c0;padding:6px 12px;font-weight:600">Prix (en €)</th><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$36$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$48$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$84$</td><td style="border:1px solid #ddb8c0;padding:6px 12px;text-align:center;color:#2D2226">$144$</td></tr>

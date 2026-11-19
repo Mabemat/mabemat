@@ -19,7 +19,7 @@ $180° - 68° = {\color{#D36740}\boldsymbol{112°}}$
 {{< auto6-exo num="Question 2" >}}
 ---Q---
 Deux angles sont opposés par le sommet.<br>
-L'un mesure $45°$. Et l'autre ?
+L'un mesure $45°$.<br>Et l'autre ?
 ---CORR---
 ${\color{#D36740}\boldsymbol{45°}}$ : deux angles opposés par le sommet ont <span class="rep">la même mesure</span>.
 {{< /auto6-exo >}}
@@ -53,14 +53,14 @@ $24 = 3 \times 8 = 4 \times 6$ : tables de ${\color{#D36740}\boldsymbol{3}}$, ${
 
 {{< auto6-exo num="Question 1" >}}
 ---Q---
-Combien mesure un angle plein ? un angle nul ?
+Combien mesure un angle plein ?<br>Et un angle nul ?
 ---CORR---
 Angle plein : ${\color{#D36740}\boldsymbol{360°}}$ ; angle nul : ${\color{#D36740}\boldsymbol{0°}}$.
 {{< /auto6-exo >}}
 
 {{< auto6-exo num="Question 2" >}}
 ---Q---
-Combien mesure un quart de tour ? et un demi-tour ?
+Combien mesure un quart de tour ?<br>Et un demi-tour ?
 ---CORR---
 Un quart de tour : ${\color{#D36740}\boldsymbol{90°}}$ ; un demi-tour : ${\color{#D36740}\boldsymbol{180°}}$.
 {{< /auto6-exo >}}
@@ -102,7 +102,7 @@ $180° - 90° = {\color{#D36740}\boldsymbol{90°}}$ : c'est aussi <span class="r
 
 {{< auto6-exo num="Question 2" >}}
 ---Q---
-Compléter la phrase :<br>\nla bissectrice d'un angle est la demi-droite qui partage cet angle en deux angles $\ldots$ et $\ldots$
+Compléter la phrase :<br>la bissectrice d'un angle est la demi-droite qui partage cet angle en deux angles $\ldots$ et $\ldots$
 ---CORR---
 … en deux angles <span class="rep">adjacents</span> et <span class="rep">de même mesure</span>.
 {{< /auto6-exo >}}

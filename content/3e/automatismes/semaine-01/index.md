@@ -134,7 +134,7 @@ $4~\text{dam}^3 = 4\times1\,000\times1\,000~\text{dm}^3 = {\color{#EB7F73}\bolds
 
 {{< auto3-exo num="Exercice 5" >}}
 ---Q---
-Nadia vient d'avoir $7$ ans cette année. Son père Pablo vient de fêter son $33$ème anniversaire.<br>L'âge de son père est-il proportionnel à l'âge de Nadia ?
+Nadia vient d'avoir $7$ ans cette année.<br>Son père Pablo vient de fêter son $33$ème anniversaire.<br>L'âge de son père est-il proportionnel à l'âge de Nadia ?
 ---CORR---
 Aujourd'hui, la différence d'âge entre Nadia et Pablo est de $26$ ans.<br>Nadia a $7$ ans aujourd'hui. Dans $7$ années, Nadia aura $14$ ans ($7+7$), c'est-à-dire le double d'aujourd'hui.<br>Son père Pablo qui a actuellement $33$ ans aura $40$ ans cette année-là ($33+7$).<br>Quand l'âge de Nadia double, l'âge de Pablo ne double pas, donc l'âge de Nadia et l'âge de son père <span class="rep">ne sont pas proportionnels</span>.<br>La différence d'âge reste constante : $40-14=26$.
 {{< /auto3-exo >}}

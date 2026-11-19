@@ -10,7 +10,7 @@ weight: 23
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Nawel veut réaliser une vinaigrette. Pour cela elle mélange du vinaigre et de l'huile d'olive selon le ratio $4:7$.<br>Elle utilise $21$ cuillères à soupe d'huile d'une contenance de $15~\text{mL}$ chacune.<br>a. Quel volume de vinaigre doit-elle utiliser ?<br>b. Quel volume de vinaigrette Nawel réalisera-t-elle ?
+Nawel veut réaliser une vinaigrette.<br>Pour cela elle mélange du vinaigre et de l'huile d'olive selon le ratio $4:7$.<br>Elle utilise $21$ cuillères à soupe d'huile d'une contenance de $15~\text{mL}$ chacune.<br>a. Quel volume de vinaigre doit-elle utiliser ?<br>b. Quel volume de vinaigrette Nawel réalisera-t-elle ?
 ---CORR---
 Volume total d'huile : $21\times 15 = 315~\text{mL}$. La part est $\dfrac{315}{7}=45$.<br>a. Volume de vinaigre : $45\times 4~\text{mL}={\color{#EB7F73}\boldsymbol{180~\text{mL}}}$.<br>b. Volume de vinaigrette : $45\times(4+7)~\text{mL}=45\times 11={\color{#EB7F73}\boldsymbol{495~\text{mL}}}$.
 {{< /auto3-exo >}}

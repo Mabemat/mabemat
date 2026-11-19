@@ -10,7 +10,7 @@ weight: 17
 
 {{< auto3-exo num="Exercice 1" >}}1
 ---Q---
-Ce matin, Schona a ouvert une bouteille d'eau.<br>Elle a bu $\dfrac{1}{5}$ de la bouteille. Puis à midi, elle a bu $\dfrac{1}{3}$ du reste.<br>Quelle fraction de la bouteille a-t-elle bu à midi ?
+Ce matin, Schona a ouvert une bouteille d'eau.<br>Elle a bu $\dfrac{1}{5}$ de la bouteille.<br>Puis à midi, elle a bu $\dfrac{1}{3}$ du reste.<br>Quelle fraction de la bouteille a-t-elle bu à midi ?
 ---CORR---
 Le matin, Schona a bu $\dfrac{1}{5}$ de la bouteille. Il reste alors $\dfrac{4}{5}$ de la bouteille.<br>À midi, elle a bu $\dfrac{1}{3}$ du reste.<br>Comme $\dfrac{1}{3}\times \dfrac{4}{5}=\dfrac{4}{15}$, elle a bu ${\color{#EB7F73}\boldsymbol{\dfrac{4}{15}}}$ de la bouteille à midi.
 {{< /auto3-exo >}}
