@@ -20,16 +20,17 @@ Prendre $\dfrac{1}{6}$ d'une quantité revient à la diviser par $6$.<br>$\dfrac
 Justifier si les nombres proposés sont des solutions de l'équation donnée ou non $80x-320=-20x^2+80x$ pour $x=-4$, $x=4$ puis $x=-1$.
 ---CORR---
 Pour $x=-4$ : <br>
-$80(-4)-320=-640$ 
-et $-20(-4)^2+80(-4)=0$ 
-<br>Comme $-640\neq 0$ : <span class="rep">non solution</span>.<br><br>
-Pour $x=4$ : $80(4)-320=0$ 
-et $-20(4)^2+80(4)=-640$ 
-<br>Comme $0\neq-640$ : <span class="rep">non solution</span>.<br><br>
+$80\times(-4)-320=-640$ 
+et $-20\times(-4)^2+80\times(-4)=-320-320=-640$ 
+<br>Comme $-640=-640$ : <span class="rep">solution</span>.<br><br>
+Pour $x=4$ : <br>
+$80\times 4-320=0$ 
+et $-20\times 4^2+80\times 4=-320+320=0$ 
+<br>Comme $0=0$ : <span class="rep">solution</span>.<br><br>
 Pour $x=-1$ : <br>
-$80(-1)-320=-400$ 
-et $-20(-1)^2+80(-1)=60$ 
-<br>Comme $-400\neq 60$ : <span class="rep">non solution</span>.
+$80\times(-1)-320=-400$ 
+et $-20\times(-1)^2+80\times(-1)=-20-80=-100$ 
+<br>Comme $-400\neq -100$ : <span class="rep">non solution</span>.
 {{< /auto3-exo >}}
 
 {{< auto3-exo num="Exercice 3" >}}3
